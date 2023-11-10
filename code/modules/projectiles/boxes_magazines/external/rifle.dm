@@ -140,7 +140,7 @@
 /obj/item/ammo_box/magazine/m762/ext/empty
 	start_empty = 1
 
-/obj/item/ammo_box/magazine/a473
+/obj/item/ammo_box/magazine/m473
 	name = "g11 magazine (4.73mm)"
 	icon_state = "473mm"
 	caliber = "a473"
@@ -148,19 +148,19 @@
 	max_ammo = 50
 	multiple_sprites = 2
 
-/obj/item/ammo_box/magazine/a473/explosive
+/obj/item/ammo_box/magazine/m473/explosive
 	name = "g11 magazine (4.73mm explosive)"
 	ammo_type = /obj/item/ammo_casing/caseless/a473/explosive
 
-/obj/item/ammo_box/magazine/a473/empty
+/obj/item/ammo_box/magazine/m473/empty
 	start_empty = 1
 
-/obj/item/ammo_box/magazine/a473/small
+/obj/item/ammo_box/magazine/m473/small
 	name = "4.7mm carbine magazine"
 	icon_state = "46x30mmt"
 	max_ammo = 20
 
-/obj/item/ammo_box/magazine/a473/small/empty
+/obj/item/ammo_box/magazine/m473/small/empty
 	start_empty = 1
 
 /obj/item/ammo_box/magazine/m2mm
