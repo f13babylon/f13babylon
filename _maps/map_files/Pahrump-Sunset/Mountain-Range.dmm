@@ -402,9 +402,14 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "dw" = (
-/obj/structure/table/glass,
-/obj/item/storage/backpack/duffelbag/med/surgery/alien,
-/turf/open/floor/plasteel/f13/vault_floor/dark,
+/obj/structure/fans/tiny/invisible,
+/obj/machinery/door/window/brigdoor{
+	req_access_txt = "256"
+	},
+/obj/machinery/door/poddoor/preopen{
+	id = "containment_cell_shutter"
+	},
+/turf/open/floor/engine,
 /area/f13/enclave)
 "dz" = (
 /obj/machinery/light{
@@ -1233,6 +1238,12 @@
 /obj/item/hemostat,
 /obj/item/retractor,
 /obj/structure/table/glass,
+/obj/item/storage/backpack/duffelbag/med/surgery/alien,
+/obj/item/clothing/gloves/color/latex/nitrile,
+/obj/item/scalpel,
+/obj/item/cautery,
+/obj/item/surgicaldrill,
+/obj/item/circular_saw,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
 "js" = (
@@ -1646,10 +1657,12 @@
 "my" = (
 /obj/structure/frame/machine,
 /obj/item/circuitboard/machine/clonepod/experimental,
+/obj/item/circuitboard/machine/clonepod,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
 "mz" = (
 /obj/item/circuitboard/computer/cloning/prototype,
+/obj/item/circuitboard/computer/cloning,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
 "mA" = (
@@ -1662,13 +1675,11 @@
 	},
 /area/f13/enclave)
 "mB" = (
-/obj/item/circular_saw,
-/obj/item/scalpel,
-/obj/item/surgicaldrill,
 /obj/structure/table/glass,
 /obj/machinery/light,
-/obj/item/cautery,
-/obj/item/clothing/gloves/color/latex/nitrile,
+/obj/machinery/button/door{
+	id = "containment_cell_shutter"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
 "mD" = (
@@ -2688,6 +2699,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/structure/closet/l3closet/scientist,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
 "ts" = (
@@ -4324,6 +4336,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/crate/large,
 /obj/machinery/manned_turret/m2/unanchored,
+/obj/item/ammo_box/magazine/mm762,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
 "EG" = (
@@ -5002,6 +5015,10 @@
 	icon_state = "outerturn"
 	},
 /area/f13/mountain_area)
+"JN" = (
+/obj/machinery/vending/coffee,
+/turf/open/floor/f13,
+/area/f13/enclave)
 "JS" = (
 /obj/structure/rack,
 /obj/item/defibrillator,
@@ -22610,7 +22627,7 @@ AW
 AW
 AW
 AW
-Jx
+JN
 Jx
 Dp
 Fc
@@ -31389,7 +31406,7 @@ pC
 pC
 pC
 mA
-dw
+kI
 SP
 SP
 SP
@@ -31903,7 +31920,7 @@ pC
 pC
 pC
 mA
-kI
+JZ
 SP
 SP
 mA
@@ -32159,8 +32176,8 @@ pC
 pC
 pC
 pC
-mA
-JZ
+dw
+SP
 SP
 SP
 SP
@@ -32926,10 +32943,10 @@ HA
 HA
 iT
 AW
-AS
-KI
 pC
-AS
+pC
+pC
+pC
 mA
 xC
 fJ
@@ -33183,10 +33200,10 @@ HA
 HA
 iT
 AW
-AW
-AW
-AW
-AW
+AS
+KI
+pC
+AS
 mA
 mA
 mA
@@ -33439,12 +33456,12 @@ HA
 HA
 HA
 iT
-iT
-iT
-iT
-iT
-iT
-iT
+AW
+AW
+AW
+AW
+AW
+mA
 iT
 iT
 iT
@@ -33695,14 +33712,14 @@ HA
 HA
 jv
 HA
-HA
-HA
-HA
-HA
-HA
-HA
-HA
-HA
+iT
+iT
+iT
+iT
+iT
+iT
+iT
+iT
 HA
 HA
 UE
