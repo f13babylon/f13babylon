@@ -56,17 +56,17 @@
 
 //5mm
 
-/obj/item/ammo_casing/m5mm
+/obj/item/ammo_casing/a5mm
 	name = "5mm FMJ bullet casing"
 	desc = "A 5mm bullet casing."
-	caliber = "m5mm"
-	projectile_type = /obj/item/projectile/bullet/m5mm
+	caliber = "a5mm"
+	projectile_type = /obj/item/projectile/bullet/a5mm
 
 
-/obj/item/ammo_casing/m5mm/shock
+/obj/item/ammo_casing/a5mm/shock
 	name = "5mm shock bullet casing"
 	desc = "A 5mm shock bullet casing."
-	projectile_type = /obj/item/projectile/bullet/m5mm/shock
+	projectile_type = /obj/item/projectile/bullet/a5mm/shock
 
 // 40mm (Grenade Launcher)
 /obj/item/ammo_casing/a40mmHE
