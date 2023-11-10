@@ -160,7 +160,7 @@ Head Paladin
 	name = "Ballistic Star Paladin"
 	backpack_contents = list(
 		/obj/item/minigunpackbal5mm = 1,
-		/obj/item/ammo_box/m5mmbox = 2,
+		/obj/item/ammo_box/magazine/cz53 = 2,
 	)
 
 /datum/outfit/loadout/sentlaser
