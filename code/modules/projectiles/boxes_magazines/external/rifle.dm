@@ -74,7 +74,7 @@
 /obj/item/ammo_box/magazine/m556/rifle/extended/empty
 	start_empty = 1
 
-/obj/item/ammo_box/magazine/a5mm
+/obj/item/ammo_box/magazine/m5mm
 	name = "Assault Rifle Magazine (5mm)"
 	icon_state = "r30"
 	caliber = "a5mm"
@@ -82,7 +82,7 @@
 	max_ammo = 30
 	multiple_sprites = 2
 
-/obj/item/ammo_box/magazine/a5mm/empty
+/obj/item/ammo_box/magazine/m5mm/empty
 	start_empty = 1
 
 /obj/item/ammo_box/magazine/garand308
