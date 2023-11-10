@@ -369,7 +369,7 @@
 		/obj/item/ammo_box/c4570box = 25,
 		/obj/item/ammo_box/m14mm = 15,
 		/obj/item/stock_parts/cell/ammo/ec = 12,
-		/obj/item/ammo_box/m473 = 10,
+		/obj/item/ammo_box/a473 = 10,
 		/obj/item/ammo_box/magazine/automag = 10,
 		/obj/item/stock_parts/cell/ammo/mfc = 10,
 		/obj/item/ammo_box/magazine/m22smg = 9,
