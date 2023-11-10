@@ -96,7 +96,7 @@
 	name = "Ranged Lead"
 	suit_store = /obj/item/gun/ballistic/automatic/g11/g11e
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m473 = 2,
+		/obj/item/ammo_box/magazine/a473 = 2,
 		/obj/item/gun/energy/laser/plasma/glock = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 1,
 		)
@@ -238,7 +238,7 @@
 	name = "Marksman"
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/g11 = 1,
-		/obj/item/ammo_box/magazine/m473 = 2,
+		/obj/item/ammo_box/magazine/a473 = 2,
 		)
 
 /datum/outfit/loadout/gysgt_melee
@@ -304,7 +304,7 @@
 	name = "Oppressor"
 	backpack_contents = list(
 		/obj/item/minigunpackbal5mm = 1,
-		/obj/item/ammo_box/m5mmbox = 2,
+		/obj/item/ammo_box/magazine/cz53 = 2,
 		)
 
 /datum/outfit/loadout/sgt_sniper
@@ -369,7 +369,7 @@
 	name = "Frontline Operator"
 	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m5mm = 2,
+		/obj/item/ammo_box/magazine/a5mm = 2,
 		)
 
 /datum/outfit/loadout/acpl_laser
@@ -496,7 +496,7 @@
 		/obj/item/clothing/mask/chameleon = 1,
 		/obj/item/card/id/syndicate/anyone =1,
 		/obj/item/gun/ballistic/automatic/assault_carbine/worn = 1,
-		/obj/item/ammo_box/magazine/m5mm = 2,
+		/obj/item/ammo_box/magazine/a5mm = 2,
 		/obj/item/clothing/head/f13/enclave/peacekeeper = 1
 		)
 
