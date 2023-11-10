@@ -466,7 +466,7 @@
 
 /datum/crafting_recipe/m5mmboxshock
 	name = "5mm ESD ammo box"
-	result = /obj/item/ammo_box/m5mmbox/shock
+	result = /obj/item/ammo_box/a5mmbox/shock
 	reqs = list(/obj/item/stack/crafting/metalparts = 1,
 	/obj/item/stack/sheet/mineral/titanium = 1,
 	/obj/item/stack/sheet/prewar = 1,
