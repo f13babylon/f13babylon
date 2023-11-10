@@ -47,7 +47,6 @@
 		recentpump = world.time + 2
 	else
 		recentpump = world.time + 10
-	return
 
 /obj/item/gun/ballistic/rifle/blow_up(mob/user)
 	. = 0
