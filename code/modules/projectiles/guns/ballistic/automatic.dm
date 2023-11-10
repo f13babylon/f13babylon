@@ -677,7 +677,7 @@
 	desc = "A WT-550 Personal Defense Weapon, manufactured by West Tek. It fires 4.73mm caseless rounds."
 	item_state = "m90"
 	icon_state = "WT550"
-	mag_type = /obj/item/ammo_box/magazine/m473/small
+	mag_type = /obj/item/ammo_box/magazine/a473/small
 	burst_size = 1
 	slowdown = 0.2
 	is_automatic = TRUE
@@ -1270,7 +1270,7 @@
 	icon_prefix = "assault_carbine"
 	slowdown = 0.25
 	slot_flags = 0
-	mag_type = /obj/item/ammo_box/magazine/m5mm
+	mag_type = /obj/item/ammo_box/magazine/a5mm
 	fire_delay = 2.5
 	burst_shot_delay = 1.8
 	is_automatic = TRUE
@@ -1361,7 +1361,7 @@
 	Given the rarity, it's usually seen in the hands of pre-war fanatics."
 	icon_state = "g11"
 	item_state = "arg"
-	mag_type = /obj/item/ammo_box/magazine/m473
+	mag_type = /obj/item/ammo_box/magazine/a473
 	burst_size = 1
 	fire_delay = 2
 	is_automatic = TRUE
