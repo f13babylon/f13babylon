@@ -50,8 +50,6 @@
 		recentpump = world.time + 2
 	else
 		recentpump = world.time + 10
-		if(istype(user))//CIT CHANGE - makes pumping shotguns cost a lil bit of stamina.
-			user.adjustStaminaLossBuffered(pump_stam_cost) //CIT CHANGE - DITTO. make this scale inversely to the strength stat when stats/skills are added
 	return
 
 /obj/item/gun/ballistic/rifle/blow_up(mob/user)
