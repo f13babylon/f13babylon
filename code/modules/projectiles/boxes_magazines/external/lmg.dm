@@ -51,8 +51,8 @@
 /obj/item/ammo_box/magazine/cz53
 	name = "ammo box (5mm)"
 	icon_state = "cz53"
-	ammo_type = /obj/item/ammo_casing/m5mm
-	caliber = "m5mm"
+	ammo_type = /obj/item/ammo_casing/a5mm
+	caliber = "a5mm"
 	max_ammo = 240
 	multiple_sprites = 2
 
@@ -62,8 +62,8 @@
 /obj/item/ammo_box/magazine/vindic
 	name = "ammo box (4.7mm)"
 	icon_state = "cz53"
-	ammo_type = /obj/item/ammo_casing/caseless/g11
-	caliber = "473mm"
+	ammo_type = /obj/item/ammo_casing/caseless/a473
+	caliber = "a473"
 	max_ammo = 240
 	multiple_sprites = 2
 
