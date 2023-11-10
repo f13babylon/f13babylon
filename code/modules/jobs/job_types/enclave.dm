@@ -51,7 +51,7 @@
 /datum/job/enclave/enclavecpt
 	title = "Enclave Captain"
 	flag = F13USLT
-	total_positions = 1
+	total_positions = 0
 	spawn_positions = 1
 	access = list(ACCESS_ENCLAVE, ACCESS_CHANGE_IDS, ACCESS_ENCLAVE_COMMAND, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
 	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. Your goal, primarily, is to collect organic material. Preferably alive, for the sake of testing. <br>\

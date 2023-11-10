@@ -101,7 +101,7 @@
 	name = "Legion Orator"
 
 /obj/effect/landmark/start/f13/immune
-	name = "Legion Immune"
+	name = "Legion Camp Follower"
 
 /obj/effect/landmark/start/f13/priestess
 	name = "Priestess of Mars"
@@ -313,10 +313,6 @@
 	name = "Outsider"
 	icon_state = "Detective"
 
-/obj/effect/landmark/start/f13/raider_boss
-	name = "Raider Captain"
-	icon_state = "Enforcer"
-
 /obj/effect/landmark/start/f13/enforcer
 	name = "Den Mob Enforcer"
 	icon_state = "Enforcer"
@@ -408,8 +404,8 @@
 	name = "Followers Doctor"
 	icon_state = "Medical Doctor"
 
-/obj/effect/landmark/start/f13/followerscholar
-	name = "Followers Scholar"
+/obj/effect/landmark/start/f13/followersguard
+	name = "Followers Guard"
 	icon_state = "Security Officer"
 
 /obj/effect/landmark/start/f13/followersvolunteer
@@ -429,30 +425,6 @@
 	return INITIALIZE_HINT_QDEL
 
 //Khans
-// OLD KHAN STUFF
-/obj/effect/landmark/start/f13/noyan
-	name = "Noyan"
-	icon_state = "Pusher"
-
-/obj/effect/landmark/start/f13/steward
-	name = "Steward"
-	icon_state = "Pusher"
-
-/obj/effect/landmark/start/f13/kheshig
-	name = "Kheshig"
-	icon_state = "Pusher"
-
-/obj/effect/landmark/start/f13/khorchin
-	name = "Khorchin"
-	icon_state = "Pusher"
-
-/obj/effect/landmark/start/f13/kipchak
-	name = "Kipchak"
-	icon_state = "Pusher"
-
-/obj/effect/landmark/start/f13/mangudai
-	name = "Mangudai"
-	icon_state = "Pusher"
 
 // Proper Khans
 /obj/effect/landmark/start/f13/khan

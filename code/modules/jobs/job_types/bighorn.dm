@@ -28,7 +28,7 @@ Will probably start phasing more of this to actual custom access as we go.
 /*
 Mayor
 */
-/*
+
 /datum/job/bighorn/f13mayor
 	title = "Mayor"
 	flag = F13MAYOR
@@ -48,8 +48,8 @@ Mayor
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_TECHNOPHREAK,  REF(src))
-	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, REF(src))
+	ADD_TRAIT(H, TRAIT_GENERIC, REF(src))
 
 /datum/outfit/job/bighorn/f13mayor
 	name = "Mayor"
@@ -115,11 +115,11 @@ Mayor
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
-	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
-	ADD_TRAIT(H, TRAIT_SELF_AWARE,  REF(src))
-	ADD_TRAIT(H, TRAIT_IRONFIST,  REF(src))
-	ADD_TRAIT(H, TRAIT_PA_WEAR,  REF(src))
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, REF(src))
+	ADD_TRAIT(H, TRAIT_LIFEGIVER, REF(src))
+	ADD_TRAIT(H, TRAIT_SELF_AWARE,REF(src))
+	ADD_TRAIT(H, TRAIT_IRONFIST, REF(src))
+	ADD_TRAIT(H, TRAIT_PA_WEAR, REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 
 /*--------------------------------------------------------------*/
@@ -163,100 +163,23 @@ Mayor
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, REF(src))
 
 /*--------------------------------------------------------------*/
 
-/datum/job/bighorn/shoprep
-	title = "Sierra Representative"
-	flag = F13BANKER
-	department_flag = DEP_BIGHORN
-	total_positions = 1
-	spawn_positions = 1
-	roleplay_exclusive_notify = 1
-	supervisors = "the free market, Sierra Trading Company, and Bighorn laws."
-	description = "As a representative of the Sierra Trading Company, you have both the authority and the means to hire mercenaries, form trade deals with other groups in the area, and represent the trading company in local (town) matters. Your focus is not the small-scale; you have shopkeepers for that. Your focus is not to do dungeons; you have mercenaries for that. You are here to run the economical side of the company's interests, and make sure that whatever comes, the Sierra Trading Company ends up on top, both in caps, and reputation."
-	selection_color = "#dcba97"
-	exp_requirements = 0
-	enforces = "You are in a Job meant for encouraging roleplay with others, do not abandon your post or hoard money unless absolutely necessary. Do not use the caps provided for yourself. DO NOT DO DUNGEONS.."
-	outfit = /datum/outfit/job/bighorn/shoprep
-	access = list(ACCESS_BAR, ACCESS_FORENSICS_LOCKERS, ACCESS_MINING, ACCESS_MINT_VAULT, ACCESS_CARGO_BOT, ACCESS_TOWN, ACCESS_SHOPKEEP)
-	minimal_access = list(ACCESS_BAR, ACCESS_FORENSICS_LOCKERS, ACCESS_MINING, ACCESS_MINT_VAULT, ACCESS_CARGO_BOT, ACCESS_TOWN, ACCESS_SHOPKEEP)
-
-/datum/outfit/job/bighorn/shoprep
-	name = "Sierra Representative"
-	jobtype = /datum/job/bighorn/shoprep
-	uniform = /obj/item/clothing/under/lawyer/blacksuit
-	suit = /obj/item/clothing/suit/armor/f13/leather_jacket/combat/sierra
-	neck =	/obj/item/storage/belt/holster
-	id = /obj/item/card/id/silver
-	ears = /obj/item/radio/headset/headset_town
-	shoes = /obj/item/clothing/shoes/f13/fancy
-	backpack = /obj/item/storage/backpack/satchel/leather
-	satchel = /obj/item/storage/backpack/satchel/leather
-	backpack_contents = list(
-		/obj/item/storage/bag/money/small/banker = 1,
-		/obj/item/gun/ballistic/automatic/pistol/pistol14/lildevil = 1,
-		/obj/item/ammo_box/magazine/m14mm = 2,
-		)
-
-/*--------------------------------------------------------------*/
-
-/datum/job/bighorn/shopmerc
-	title = "Mercenary"
-	flag = F13MERC
-	department_flag = DEP_BIGHORN
-	total_positions = 3
-	spawn_positions = 3
-	supervisors = "the shopkeeper, representative, Sierra Trading Company"
-	description = "You're one of the mercenaries hired on behalf of the Sierra Trading Company. Help them out, guard the shop, and obtain stock for them, but remember, they aren't entitled to give you free things. Remember, you can also be hired out to others in a pinch."
-	selection_color = "#dcba97"
-	exp_requirements = 0
-	outfit = /datum/outfit/job/bighorn/shopmerc
-	access = list(ACCESS_BAR, ACCESS_TOWN)
-	minimal_access = list(ACCESS_BAR, ACCESS_TOWN)
-
-/datum/outfit/job/bighorn/shopmerc
-	name = "Mercenary"
-	jobtype = /datum/job/bighorn/shopmerc
-	ears = /obj/item/radio/headset/headset_town
-	id =   /obj/item/card/id/silver
-	backpack = /obj/item/storage/backpack/satchel/explorer
-	satchel = /obj/item/storage/backpack/satchel/explorer
-	l_pocket = /obj/item/storage/bag/money/small/settler
-	r_pocket = /obj/item/flashlight/flare
-	r_hand = /obj/item/gun/ballistic/automatic/smg/mp5
-	suit = 	/obj/item/clothing/suit/armor/f13/combat/sierra
-	belt = /obj/item/gun/ballistic/automatic/pistol/mk23
-	shoes = /obj/item/clothing/shoes/f13/explorer
-	uniform = /obj/item/clothing/under/f13/merca
-	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m45exp = 2,
-		/obj/item/ammo_box/magazine/uzim9mm = 2,
-		/obj/item/melee/onehanded/knife/survival = 1,
-		)
-
-/datum/outfit/job/bighorn/shopmerc/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
-
-/*--------------------------------------------------------------*/
-*/
-/datum/job/khan/f13barkeep
-	title = "Khan Barkeep"
+/datum/job/bighorn/f13barkeep
+	title = "Town Barkeep"
 	flag = F13BARKEEP
 	department_flag = DEP_BIGHORN
 	total_positions = 2
 	spawn_positions = 2
 	roleplay_exclusive_notify = 1
-	supervisors = "the Kharuul and the Five Laws"
-	description = "You are a Khutsdag, a Khan bartender, and a proprietor of the Blue Oyster. You are responsible for ensuring both citizens and travellers in Bighorn can get some food, drink and rest. This town is run by your fellow Khans, and the farm within their compound could provide fresh supplies for your business, so try bartering with them if they are present."
+	supervisors = "the free market and Bighorn laws"
+	description = "As a proprietor of the Blue Oyster, you are responsible for ensuring both citizens and travellers in Bighorn can get some food, drink and rest. This town is usually run by the Great Khans, and the farm within their compound could provide fresh supplies for your business, so try negotiating with them if they are present."
 	enforces = "While you have dominion over your private business, your premium status as a citizen may be revoked if you are considered a danger to the populace or anger those in control of the town."
 	selection_color = "#dcba97"
 
-	outfit = /datum/outfit/job/khan
+	outfit = /datum/outfit/job/bighorn/f13barkeep
 
 	loadout_options = list(
 	/datum/outfit/loadout/rugged,
@@ -269,18 +192,16 @@ Mayor
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/bighorn,
-			/datum/job/khan,
 		),
 		/datum/matchmaking_pref/rival = list(
 			/datum/job/bighorn,
-			/datum/job/khan,
 		),
 	)
 
 
 /datum/outfit/job/bighorn/f13barkeep
 	name = "Barkeep"
-	jobtype = /datum/job/khan/f13barkeep
+	jobtype = /datum/job/bighorn/f13barkeep
 
 	uniform = /obj/item/clothing/under/f13/bartenderalt
 	id = /obj/item/card/id/dogtag/town
@@ -332,7 +253,7 @@ Mayor
 	shoes = /obj/item/clothing/shoes/f13/military/ncr
 
 /*-----------------------------------------------------*/
-/*
+
 /datum/job/bighorn/f13shopkeeper
 	title = "Shopkeeper"
 	flag = F13SHOPKEEPER
@@ -378,8 +299,8 @@ Mayor
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_TECHNOPHREAK,  REF(src))
-	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, REF(src))
+	ADD_TRAIT(H, TRAIT_GENERIC, REF(src))
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/policepistol)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/policerifle)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/steelbib/heavy)
@@ -405,7 +326,7 @@ Mayor
 		return
 
 /*--------------------------------------------------------------*/
-*/
+
 /datum/job/khan/citizen
 	title = "Bighorn Citizen"
 	flag = F13SETTLER
@@ -736,7 +657,7 @@ Mayor
 	)
 
 /*--------------------------------------------------------------*/
-/*
+
 /datum/job/bighorn/f13secretary
 	title = "Secretary"
 	flag = F13SECRETARY
@@ -762,6 +683,3 @@ Mayor
 	/obj/item/clothing/under/suit/black_really = 1,
 	/obj/item/clothing/gloves/evening = 1,
 	/obj/item/clothing/gloves/color/white = 1)
-
-/*--------------------------------------------------------------*/
-*/

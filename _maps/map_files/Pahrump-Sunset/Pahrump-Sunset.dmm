@@ -290,6 +290,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/effect/landmark/start/f13/khan_court,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/building)
 "abh" = (
@@ -14568,6 +14569,8 @@
 /area/f13/building/massfusion)
 "baf" = (
 /obj/item/storage/briefcase,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "bag" = (
@@ -17314,6 +17317,7 @@
 /area/f13/caves)
 "bka" = (
 /obj/structure/chair/wood,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
 /area/f13/city/bighorn)
 "bkf" = (
@@ -17345,6 +17349,7 @@
 "bkm" = (
 /obj/structure/table/wood,
 /obj/item/book/manual/wiki/security_space_law,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
 /area/f13/city/bighorn)
 "bkn" = (
@@ -17355,6 +17360,7 @@
 /obj/structure/decoration/clock/active{
 	pixel_x = 28
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
 /area/f13/city/bighorn)
 "bko" = (
@@ -17374,6 +17380,7 @@
 /obj/item/clothing/under/suit/checkered,
 /obj/item/clothing/accessory/waistcoat,
 /obj/item/storage/fancy/cigarettes/cigars,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
@@ -17400,6 +17407,7 @@
 	dir = 1;
 	light_color = "#e8eaff"
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "bkr" = (
@@ -17421,12 +17429,15 @@
 	pixel_x = 8;
 	pixel_y = 8
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "bkt" = (
 /obj/structure/simple_door/house{
 	name = "Bank of Bighorn"
 	},
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/wood/wood_common,
 /area/f13/city/bighorn)
 "bku" = (
@@ -17444,6 +17455,7 @@
 	pixel_y = 23
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "bkx" = (
@@ -17451,8 +17463,9 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/village)
 "bky" = (
-/obj/structure/closet/crate/bin,
-/turf/open/floor/wood/wood_common,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "bkz" = (
 /obj/structure/stone_tile/block{
@@ -17462,6 +17475,8 @@
 /area/f13/city/bighorn)
 "bkA" = (
 /obj/structure/chair/stool/retro/tan,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/green,
 /area/f13/city/bighorn)
 "bkB" = (
@@ -17470,6 +17485,8 @@
 	dir = 4;
 	termtag = "Business"
 	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/green,
 /area/f13/city/bighorn)
 "bkC" = (
@@ -17530,6 +17547,7 @@
 /obj/structure/table/wood,
 /obj/item/clipboard,
 /obj/item/clothing/mask/cigarette/cigar,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/green,
 /area/f13/city/bighorn)
 "bkL" = (
@@ -17571,6 +17589,7 @@
 	pixel_x = -8;
 	pixel_y = 23
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
 /area/f13/city/bighorn)
 "bkR" = (
@@ -17596,6 +17615,7 @@
 	name = "banker fountain pen";
 	pixel_y = 9
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/green,
 /area/f13/city/bighorn)
 "bkT" = (
@@ -17735,6 +17755,7 @@
 	pixel_y = -32;
 	req_one_access_txt = "52"
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
 /area/f13/city/bighorn)
 "blj" = (
@@ -17764,6 +17785,7 @@
 /obj/item/folder/white{
 	pixel_x = 8
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
 /area/f13/city/bighorn)
 "blo" = (
@@ -18398,17 +18420,8 @@
 /turf/open/floor/wood/wood_worn,
 /area/f13/city/bighorn)
 "bnZ" = (
-/mob/living/simple_animal/hostile/supermutant/meleemutant{
-	desc = "A large, docile supermutant. Adopted by Bighorn as a sort of watch dog for their brahmin herd.";
-	faction = list("neutral");
-	health = 1250;
-	icon_living = "hulk_brahmin_s";
-	icon_state = "hulk_brahmin_s";
-	name = "Brah-Min"
-	},
-/turf/open/indestructible/ground/outside/dirt{
-	icon_state = "dirt"
-	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/carpet/green,
 /area/f13/city/bighorn)
 "boc" = (
 /obj/structure/rack,
@@ -19112,6 +19125,7 @@
 	pixel_y = 30
 	},
 /obj/effect/decal/cleanable/generic,
+/obj/effect/landmark/start/f13/settler,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland/bighorn)
 "bsk" = (
@@ -20875,11 +20889,10 @@
 	},
 /area/f13/brotherhood/leisure)
 "bSg" = (
-/obj/effect/landmark/start/f13/settler,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticalleftborderleft0"
-	},
-/area/f13/wasteland/bighorn)
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood/wood_common,
+/area/f13/city/bighorn)
 "bSk" = (
 /obj/structure/closet/bus,
 /turf/open/indestructible/ground/outside/desert{
@@ -21471,6 +21484,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
 /area/f13/city/bighorn)
 "caq" = (
@@ -26254,6 +26268,7 @@
 /area/f13/wasteland/east)
 "evC" = (
 /obj/effect/landmark/start/f13/shoprep,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/green,
 /area/f13/city/bighorn)
 "evU" = (
@@ -27296,6 +27311,13 @@
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland/west)
+"fdA" = (
+/obj/effect/landmark/start/f13/khan_chemist,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
+/area/f13/building)
 "fdP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/remains/human,
@@ -27674,6 +27696,7 @@
 /area/f13/building/mall)
 "fpI" = (
 /obj/effect/landmark/start/f13/shopmerc,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
 /area/f13/city/bighorn)
 "fpL" = (
@@ -29286,6 +29309,7 @@
 "gpD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/unpowered/securedoor/bank_door,
+/obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/wood/wood_common,
 /area/f13/city/bighorn)
 "gpG" = (
@@ -36013,6 +36037,7 @@
 /area/f13/caves)
 "kAt" = (
 /obj/machinery/light,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "kAO" = (
@@ -40399,6 +40424,7 @@
 /area/f13/building/mall)
 "ndT" = (
 /obj/machinery/door/unpowered/securedoor/bank_door,
+/obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/wood/wood_common,
 /area/f13/city/bighorn)
 "nec" = (
@@ -46725,6 +46751,12 @@
 /obj/structure/lattice/catwalk,
 /turf/open/floor/plating,
 /area/f13/caves)
+"raK" = (
+/obj/effect/landmark/start/f13/shopmerc,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood/wood_common,
+/area/f13/city/bighorn)
 "raN" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid,
 /turf/open/floor/plasteel/f13{
@@ -49987,6 +50019,11 @@
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"sZa" = (
+/obj/structure/chair/stool/retro/tan,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/carpet/green,
+/area/f13/city/bighorn)
 "sZi" = (
 /obj/structure/chair/booth{
 	icon_state = "booth_west_north"
@@ -50546,6 +50583,13 @@
 	icon_state = "yellowrustysolid"
 	},
 /area/f13/building/massfusion)
+"trh" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/landmark/start/f13/settler,
+/turf/open/floor/wood/wood_wide,
+/area/f13/city/bighorn)
 "tro" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2-broken"
@@ -56691,6 +56735,11 @@
 /obj/structure/showcase/horrific_experiment,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building/museum)
+"wWm" = (
+/obj/effect/overlay/rockfloor_side,
+/obj/effect/landmark/start/f13/khan_court,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/building)
 "wWt" = (
 /obj/structure/chair,
 /obj/effect/decal/cleanable/dirt{
@@ -60301,7 +60350,7 @@ mUU
 nUK
 tMs
 tMs
-aVT
+trh
 kkw
 kkw
 tMs
@@ -61329,7 +61378,7 @@ mUU
 nUK
 tMs
 tMs
-aVT
+trh
 aVT
 kkw
 tMs
@@ -69542,7 +69591,7 @@ sub
 sub
 ydE
 lBQ
-ydE
+pse
 bUh
 bUm
 lUX
@@ -70312,7 +70361,7 @@ kYK
 kYK
 kYK
 kYK
-bSg
+kYK
 bSB
 rAq
 bji
@@ -76492,7 +76541,7 @@ pat
 bkt
 pat
 pat
-lUX
+blj
 ble
 pat
 blG
@@ -76746,8 +76795,8 @@ yjm
 bXI
 aZp
 pat
-lUX
-bky
+blj
+bmK
 pat
 bkQ
 bli
@@ -77003,10 +77052,10 @@ yjm
 yjm
 pat
 bka
-lUX
+bSg
 fpI
 bZL
-lUX
+blj
 lUX
 pat
 aoV
@@ -77260,11 +77309,11 @@ yjm
 yjm
 pat
 bkm
-lUX
-fpI
+bSg
+raK
 bZL
 caj
-lUX
+blj
 pat
 tcK
 yhP
@@ -77517,13 +77566,13 @@ yjm
 yjm
 pat
 bkn
-lUX
-lUX
+bSg
+bSg
 bZL
-lUX
+blj
 blm
 pat
-bnZ
+tcK
 yhP
 yhP
 yhP
@@ -78031,10 +78080,10 @@ yjm
 yjm
 cdQ
 bkp
-mig
+bky
 baf
-mig
-mig
+bky
+snk
 snk
 cdQ
 nwH
@@ -78288,8 +78337,8 @@ yjm
 yjm
 pat
 bkq
-mig
-bkA
+bky
+sZa
 bkA
 bkI
 kAt
@@ -78545,11 +78594,11 @@ yjm
 yjm
 cdQ
 bks
-mig
+bky
 bkB
 bkK
 bkS
-mig
+snk
 rNg
 pat
 wok
@@ -78805,7 +78854,7 @@ pat
 bkw
 evC
 bkL
-bkI
+bnZ
 blx
 pat
 pat
@@ -79061,8 +79110,8 @@ eus
 pat
 pat
 pat
-pat
-pat
+bzB
+bzB
 pat
 pat
 pat
@@ -91688,7 +91737,7 @@ ajF
 aMZ
 acC
 acC
-acC
+fdA
 acJ
 acJ
 ajF
@@ -98624,7 +98673,7 @@ qmV
 xyU
 xyU
 ffb
-abI
+wWm
 uaU
 qeT
 dAO

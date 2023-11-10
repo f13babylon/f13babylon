@@ -97,7 +97,7 @@ Head Paladin
 */
 
 /datum/job/bos/f13sentinel
-	title = "Star Paladin"
+	title = "Senior Paladin"
 	flag = F13SENTINEL
 	head_announce = list("Security")
 	total_positions = 1
@@ -136,7 +136,7 @@ Head Paladin
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 
 /datum/outfit/job/bos/f13sentinel
-	name = "Star Paladin"
+	name = "Senior Paladin"
 	jobtype = /datum/job/bos/f13sentinel
 	uniform = 		/obj/item/clothing/under/f13/recon
 	accessory = 	/obj/item/clothing/accessory/bos/sentinel
@@ -157,21 +157,21 @@ Head Paladin
 		)
 
 /datum/outfit/loadout/sentheavy
-	name = "Ballistic Star Paladin"
+	name = "Ballistic Senior Paladin"
 	backpack_contents = list(
 		/obj/item/minigunpackbal5mm = 1,
 		/obj/item/ammo_box/m5mmbox = 2,
 	)
 
 /datum/outfit/loadout/sentlaser
-	name = "Laser Star Paladin"
+	name = "Laser Senior Paladin"
 	backpack_contents = list(
 		/obj/item/minigunpack = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 3,
 	)
 
 /datum/outfit/loadout/sentmelee
-	name = "Melee Star Paladin"
+	name = "Melee Senior Paladin"
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 1, 
 		/obj/item/ammo_box/magazine/m14mm = 3,
@@ -182,7 +182,7 @@ Proctor
 */
 
 /datum/job/bos/f13headscribe
-	title = "Proctor"
+	title = "Head Scribe"
 	flag = F13HEADSCRIBE
 	head_announce = list("Security")
 	total_positions = 1
@@ -219,7 +219,7 @@ Proctor
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/R93)
 
 /datum/outfit/job/bos/f13headscribe
-	name = "Proctor"
+	name = "Head Scribe"
 	jobtype = /datum/job/bos/f13headscribe
 	chemwhiz = TRUE
 	gunsmith_one = TRUE
@@ -243,19 +243,19 @@ Proctor
 		)
 
 /*
-Star Knight
+Head Knight
 */
 
 /datum/job/bos/f13knightcap
-	title = "Knight-Captain"
+	title = "Head Knight"
 	flag = F13KNIGHTCAPTAIN
 	head_announce = list("Security")
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the Star Knight, leader of your respective caste in the Chapter. Your knowledge of pre-war tactics, and you have advanced combat training and experience. You are in charge of the detachment's internal security, and your Knights. Delegate to them as necessary."
+	description = "You are the Head Knight, leader of your respective caste in the Chapter. Your knowledge of pre-war tactics, and you have advanced combat training and experience. You are in charge of the detachment's internal security, and your Knights. Delegate to them as necessary."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Elders and the Star Paladins"
+	supervisors = "the Elders and the Head Paladin"
 	selection_color = "#7f8c8d"
 
 	exp_requirements = 0
@@ -287,7 +287,7 @@ Star Knight
 
 
 /datum/outfit/job/bos/f13knightcap
-	name = "Star Knight"
+	name = "Head Knight"
 	jobtype = /datum/job/bos/f13knightcap
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
@@ -344,7 +344,7 @@ Senior Paladin
 	description = "As the Chapter's senior offensive warrior, you have proven your service and dedication to the Brotherhood over your time as a Paladin. As your skills gained, however, you were deigned to be more useful as a commander and trainer. Your job is to coordinate the Paladins and ensure they work as a team, instilling discipline as you go."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Star Paladin"
+	supervisors = "the Head Paladin"
 	selection_color = "#95a5a6"
 
 	exp_requirements = 0 
@@ -430,10 +430,10 @@ Paladin
 	flag = F13PALADIN
 	total_positions = 2
 	spawn_positions = 2
-	description = "You answer directly to the Star Paladin. You are this Chapter's main line of defense and offense; highly trained in combat and weaponry though with little practical field experience, you are eager to prove your worth to the Brotherhood. Your primary duties are defense and surface operations. You may also be assigned an Initiate; or other Knights to lead in the field."
+	description = "You answer directly to the Head Paladin. You are this Chapter's main line of defense and offense; highly trained in combat and weaponry though with little practical field experience, you are eager to prove your worth to the Brotherhood. Your primary duties are defense and surface operations. You may also be assigned an Initiate; or other Knights to lead in the field."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Senior Paladins and the Star Paladins"
+	supervisors = "the Senior Paladins and the Head Paladin"
 	selection_color = "#95a5a6"
 	exp_requirements = 0
 
@@ -696,7 +696,7 @@ Senior Knight
 	flag = F13SENIORKNIGHT
 	total_positions = 2
 	spawn_positions = 2
-	description = "You report directly to the Star Knight. Having served the Knight Caste for some time now, you are versatile and experienced in both basic combat and repairs. As your seniormost Knight, you may be assigned initiates or Junior Knights to mentor, and Knights to lead."
+	description = "You report directly to the Head Knight. Having served the Knight Caste for some time now, you are versatile and experienced in both basic combat and repairs. As your seniormost Knight, you may be assigned initiates or Junior Knights to mentor, and Knights to lead."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Knight-Captains"

@@ -96,7 +96,6 @@
 #define F13RECRUITLEG	(1<<12)
 #define F13AUXILIA		(1<<13)
 #define F13LEGIONSLAVE	(1<<14)
-#define F13IMMUNE		(1<<15)
 #define F13CAMPFOLLOWER (1<<16)
 #define F13SLAVEMASTER	(1<<17)
 

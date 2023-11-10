@@ -50,7 +50,6 @@
 /datum/chemical_reaction/proc/chemical_mob_spawn(datum/reagents/holder, amount_to_spawn, reaction_name, mob_class = HOSTILE_SPAWN, mob_faction = "chemicalsummon")
 	if(holder && holder.my_atom)
 		var/atom/A = holder.my_atom
-		var/turf/T = get_turf(A)
 
 
 		playsound(get_turf(holder.my_atom), 'sound/effects/phasein.ogg', 100, 1)

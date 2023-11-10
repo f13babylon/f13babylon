@@ -519,7 +519,7 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 		"Legion Vexillarius",
 		"Legion Slavemaster",
 		"Legion Forgemaster",
-		"Legion Immune",
+		"Legion Camp Follower",
 		"Legion Auxilia",
 		"Legion Vexillarius",
 		)

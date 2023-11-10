@@ -23,9 +23,8 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	spawn_positions = -1
 	description = "You are an undesirable figure of some kind- perhaps a corrupt official, or a cannibalistic bartender, or a devious conman, to name a few examples. \
 	You have more freedom than anyone else in the wastes. \
-	You're not held by the same moral code as others, but though you may only be interested in self-gain, you still have a responsibility to make your time here interesting. \
-	(Adminhelp if you require help setting up your character for the round.)"
-	supervisors = "The Captain"
+	You're not held by the same moral code as others, but though you may only be interested in self-gain, you still have a responsibility to make your time here interesting."
+	supervisors = "No Gods, No Masters!"
 
 	outfit = /datum/outfit/job/raider/f13raider
 
@@ -106,7 +105,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_LONGPORKLOVER,  REF(src))
+	ADD_TRAIT(H, TRAIT_LONGPORKLOVER, REF(src))
 
 	H.social_faction = FACTION_RAIDERS
 
@@ -237,6 +236,8 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 		/obj/item/book/granter/crafting_recipe/scav_one = 1,
 		)
 
+/*
+Reason this is commented out: Not needed, may re-use loadouts later
 
 /datum/job/raider/outsiders
 	title = "Outsider"
@@ -371,75 +372,4 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 		/obj/item/ammo_box/magazine/greasegun = 1,
 		/obj/item/book/granter/trait/trekking = 1
 		)
-
-/datum/job/raider/raider_captain
-	title = "Raider Captain"
-	flag = F13RAIDER_BOSS
-	faction = FACTION_RAIDERS
-	social_faction = FACTION_RAIDERS
-	exp_requirements = 0
-	exp_type = EXP_TYPE_OUTLAW
-	total_positions = 1
-	spawn_positions = 1
-	description = "You're one of the most powerful figures in Wyoming. With a band of drug-addled psychopaths at your beck and call? \
-	There's nothing to stand in your way. \
-	Assure your thugs remain loyal, find new ways to terrorise the locals and retain your control. \
-	(Adminhelp if you require help setting up your character for the round.)"
-	supervisors = "Your desire to make things interesting and fun"
-
-	outfit = /datum/outfit/job/raider/raider_captain
-
-	access = list(ACCESS_RAIDER, ACCESS_RAIDER_BOSS)
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/patron = list(
-			/datum/job/raider/f13raider,
-		),
-		/datum/matchmaking_pref/protegee = list(
-			/datum/job/raider/f13raider,
-		),
-		/datum/matchmaking_pref/outlaw = list(
-			/datum/job/raider/f13raider,
-		),
-		/datum/matchmaking_pref/bounty_hunter = list(
-			/datum/job/raider/f13raider,
-		),
-	)
-
-/datum/outfit/job/raider/raider_captain
-	name = "Raider Captain"
-	jobtype = /datum/job/raider/raider_captain
-	id = /obj/item/card/id/boss_raider_tags
-
-	belt = 		null
-	backpack = /obj/item/storage/backpack/satchel/explorer
-	satchel = /obj/item/storage/backpack/satchel/explorer
-
-	ears = 			null
-	uniform = /obj/item/clothing/under/syndicate
-	shoes = /obj/item/clothing/shoes/jackboots
-	gloves = /obj/item/clothing/gloves/fingerless
-	neck =			/obj/item/storage/belt/holster/regulator// :)
-	mask = 			/obj/item/clothing/mask/bandana/skull
-	r_hand = 		/obj/item/clothing/suit/armor/f13/power_armor/t45d/raider
-	l_hand = 		/obj/item/clothing/head/helmet/f13/power_armor/t45d/raider
-	glasses =		/obj/item/clothing/glasses/sunglasses
-	l_pocket =		/obj/item/storage/bag/money/small/mayor//Shouldn't be doing anything but paying his boys and buying gear. Change if abused. - Carl
-	r_pocket = 		null
-
-	backpack_contents = list(
-		/obj/item/restraints/handcuffs=1, \
-		/obj/item/melee/classic_baton=1,
-		/obj/item/melee/onehanded/knife/survival = 1)
-
-/datum/outfit/job/raider/raider_captain/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
-	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
-	ADD_TRAIT(H, TRAIT_SELF_AWARE,  REF(src))
-	ADD_TRAIT(H, TRAIT_IRONFIST,  REF(src))
-	ADD_TRAIT(H, TRAIT_PA_WEAR,  REF(src))
-	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
-	add_verb(H, /mob/living/proc/creategang)
-	H.social_faction = FACTION_RAIDERS//Probably not needed twice, but may as well.
+*/

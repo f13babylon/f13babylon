@@ -141,8 +141,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	roleplay_exclusive_notify = 1
 	exp_requirements = 0
 
-
-
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13orator
 	name = "Orator"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13orator
@@ -954,21 +952,21 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 // Immunes are mostly an off-duty role meant to attend to the camp itself and the slaves or prisoners within.
 
-/datum/job/CaesarsLegion/Legionnaire/f13immune
-	title = "Legion Immune"
-	flag = F13IMMUNE
+/datum/job/CaesarsLegion/Legionnaire/f13campfollower
+	title = "Legion Camp Follower"
+	flag = F13CAMPFOLLOWER
 	total_positions = 3
 	spawn_positions = 1
 	description = "An Immune is a legionnaire temporarily assigned to keeping the camp in order, according to their tasking on any given week."
 	supervisors = "the Centurion."
 	display_order = JOB_DISPLAY_ORDER_IMMUNE
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13immune
+	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower
 	roleplay_exclusive_notify = 1
 	exp_requirements = 0
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13immune
-	name = "Immune"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13immune
+/datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower
+	name = "Camp Follower"
+	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13campfollower
 	id = /obj/item/card/id/dogtag/legimmune
 	mask = /obj/item/clothing/mask/bandana/legion/camp
 	uniform = /obj/item/clothing/under/f13/legskirt
@@ -981,7 +979,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/reagent_containers/pill/patch/healingpowder = 2
 		)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13immune/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -1298,7 +1296,7 @@ Venator  - Zero slots, role built on cloning vet ranger, linear just vastly bett
 		)
 */
 // Slavemaster
-
+/* - no
 /datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 	title = "Legion Slavemaster"
 	flag = F13SLAVEMASTER
@@ -1338,7 +1336,7 @@ Venator  - Zero slots, role built on cloning vet ranger, linear just vastly bett
 	ADD_TRAIT(H, TRAIT_TRIBAL,  REF(src))
 	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
-
+*/
 
 // Legion Citizen
 // Really only used for ID console

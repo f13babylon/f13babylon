@@ -48,7 +48,6 @@
 	icon_state = "deputy"
 	item_state = "badge-deputy"
 
-
 /obj/item/card/id/dogtag/deputy
 	name = "deputy's badge"
 	desc = "A silver badge which shows honour and dedication."
@@ -357,20 +356,6 @@
 	access = list(ACCESS_KHAN, ACCESS_BAR, ACCESS_CLINIC, ACCESS_GATEWAY, ACCESS_MINT_VAULT, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS, ACCESS_CLONING)
 
 /obj/item/card/id/khanleadertattoo/Initialize(mapload)
-	. = ..()
-	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
-
-/obj/item/card/id/khan_courttattoo
-	name = "Great Khan Courtesan tramp stamp"
-	desc = "A tattoo of the symbol of the Great Khans, placed just above the individual's rear."
-	icon = 'icons/fallout/clothing/khans.dmi'
-	icon_state = "khan_id"
-	item_state = null
-	assignment = "gang tattoo"
-	uses_overlays = FALSE
-	access = list(ACCESS_KHAN)
-
-/obj/item/card/id/khan_courttattoo/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
 
