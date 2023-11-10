@@ -10,12 +10,8 @@
 /turf/open/floor/f13,
 /area/f13/enclave)
 "af" = (
-/obj/structure/rack,
-/obj/item/key/vertibird,
-/obj/item/key/vertibird{
-	pixel_x = 6
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark,
+/obj/vertibird,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/enclave)
 "ak" = (
 /obj/structure/rack,
@@ -18454,7 +18450,7 @@ SP
 SP
 AW
 In
-af
+cV
 AW
 AD
 Mc
@@ -21282,7 +21278,7 @@ BO
 BO
 Hr
 BO
-BO
+af
 BO
 BO
 kX
