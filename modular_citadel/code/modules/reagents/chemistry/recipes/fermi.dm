@@ -348,7 +348,7 @@
 	HIonRelease 	= 0.01
 	RateUpLim 		= 15
 	FermiChem 		= TRUE
-/*
+
 /datum/chemical_reaction/fermi/eigenstate
 	name = "Eigenstasium"
 	id = /datum/reagent/fermi/eigenstate
@@ -380,7 +380,7 @@
 	if(location)
 		E.location_created = location
 		E.data["location_created"] = location
-
+/*
 /datum/chemical_reaction/fermi/plushmium // done
 	name = "Plushification serum"
 	id = /datum/reagent/fermi/plushmium
