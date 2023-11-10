@@ -531,7 +531,7 @@
 	name = "empty 30rd rifle magazine (5mm)"
 	id = "rifleassault5mm"
 	materials = list(/datum/material/iron = 8000)
-	build_path = /obj/item/ammo_box/magazine/a5mm/empty
+	build_path = /obj/item/ammo_box/magazine/m5mm/empty
 	category = list("initial", "Advanced Magazines")
 
 /datum/design/ammolathe/cz535mm
