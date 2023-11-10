@@ -18,14 +18,14 @@
 
 /obj/item/ammo_box/magazine/internal/minigunbal5mm
 	name = "minigun ammo pack"
-	ammo_type = /obj/item/ammo_casing/m5mm
-	caliber = "m5mm"
+	ammo_type = /obj/item/ammo_casing/a5mm
+	caliber = "a5mm"
 	max_ammo = 480
 
 /obj/item/ammo_box/magazine/internal/encminigunbal4mm
 	name = "minigun ammo pack"
-	ammo_type = /obj/item/ammo_casing/caseless/g11/minigun
-	caliber = "473mm"
+	ammo_type = /obj/item/ammo_casing/caseless/a473
+	caliber = "a473"
 	max_ammo = 480
 
 /obj/item/ammo_box/magazine/internal/m2flamethrower
