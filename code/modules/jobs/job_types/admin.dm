@@ -60,7 +60,7 @@
 	suit = /obj/item/clothing/head/helmet/f13/combat/mk2/dark
 	r_hand = /obj/item/gun/ballistic/automatic/g11
 	backpack_contents = list(
-							/obj/item/ammo_box/magazine/a473=2
+							/obj/item/ammo_box/magazine/m473=2
 							)
 
 /datum/outfit/loadout/retired_ranger
