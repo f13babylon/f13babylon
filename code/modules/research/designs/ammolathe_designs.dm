@@ -293,12 +293,19 @@
 	build_path = /obj/item/ammo_box/a556/rubber
 	category = list("initial", "Basic Ammo")
 
-/datum/design/ammolathe/m5mm
+/datum/design/ammolathe/a5mm
 	name = "5mm FMJ ammo box"
-	id = "m5mm"
+	id = "a5mm"
 	materials = list(/datum/material/iron = 24000, /datum/material/blackpowder = 1500)
-	build_path = /obj/item/ammo_box/m5mmbox
+	build_path = /obj/item/ammo_box/a5mmbox
 	category = list("initial", "Basic Ammo")
+
+/datum/design/ammolathe/a473esd
+	name = "5mm ESD ammo box"
+	id = "a5mmesd"
+	materials = list(/datum/material/iron = 14400, /datum/material/titanium = 1500, /datum/material/blackpowder = 1500)
+	build_path = /obj/item/ammo_box/a5mmbox/shock
+	category = list("initial", "Intermediate Ammo")
 
 /*
 /datum/design/ammolathe/magnumshot
@@ -531,7 +538,7 @@
 	name = "empty 30rd rifle magazine (5mm)"
 	id = "rifleassault5mm"
 	materials = list(/datum/material/iron = 8000)
-	build_path = /obj/item/ammo_box/magazine/m5mm/empty
+	build_path = /obj/item/ammo_box/magazine/a5mm/empty
 	category = list("initial", "Advanced Magazines")
 
 /datum/design/ammolathe/cz535mm
@@ -549,18 +556,18 @@
 	build_path = /obj/item/ammo_box/magazine/m556/rifle/extended/empty
 	category = list("initial", "Advanced Magazines")
 */
-/datum/design/ammolathe/m473
+/datum/design/ammolathe/a473
 	name = "empty g11 magazine (4.73mm)"
-	id = "m473"
+	id = "a473"
 	materials = list(/datum/material/iron = 6000)
-	build_path = /obj/item/ammo_box/magazine/m473/empty
+	build_path = /obj/item/ammo_box/magazine/a473/empty
 	category = list("initial", "Advanced Magazines")
 
-/datum/design/ammolathe/m473s
+/datum/design/ammolathe/a473s
 	name = "empty wt550 magazine (4.73mm)"
-	id = "m473s"
+	id = "a473s"
 	materials = list(/datum/material/iron = 2000)
-	build_path = /obj/item/ammo_box/magazine/m473/small/empty
+	build_path = /obj/item/ammo_box/magazine/a473/small/empty
 	category = list("initial", "Advanced Magazines")
 
 /datum/design/ammolathe/m762ext
@@ -606,55 +613,55 @@
 	build_path = /obj/item/ammo_box/magazine/m2mm
 	category = list("initial", "Advanced Ammo")
 
-/datum/design/ammolathe/m473fmj
+/datum/design/ammolathe/a473fmj
 	name = "4.73mm caseless ammo box"
-	id = "m473fmj"
+	id = "a473fmj"
 	materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 2000)
 	build_path = /obj/item/ammo_box/m473
 	category = list("initial", "Advanced Ammo")
 
-/datum/design/ammolathe/m473rubber
+/datum/design/ammolathe/a473rubber
 	name = "4.73mm caseless rubber ammo box"
-	id = "m473rubber"
+	id = "a473rubber"
 	materials = list(/datum/material/iron = 12000, /datum/material/blackpowder = 1000)
-	build_path = /obj/item/ammo_box/m473/rubber
+	build_path = /obj/item/ammo_box/a473/rubber
 	category = list("initial", "Advanced Ammo")
 
-/datum/design/ammolathe/m473incin
+/datum/design/ammolathe/a473incin
 	name = "4.73mm incendiary caseless ammo box"
-	id = "m473incin"
+	id = "a473incin"
 	materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 3000)
-	build_path = /obj/item/ammo_box/m473/incendiary
+	build_path = /obj/item/ammo_box/a473/incendiary
 	category = list("initial", "Advanced Ammo")
 
 /*
-/datum/design/ammolathe/m473u235
+/datum/design/ammolathe/a473u235
 	name = "4.73mm uranium-tipped caseless ammo box"
-	id = "m473u235"
+	id = "a473u235"
 	materials = list(/datum/material/titanium = 10000, /datum/material/blackpowder = 2000)
-	build_path = /obj/item/ammo_box/m473/uraniumtipped
+	build_path = /obj/item/ammo_box/a473/uraniumtipped
 	category = list("initial", "Advanced Ammo")
 */
 
-/datum/design/ammolathe/m473wound
+/datum/design/ammolathe/a473wound
 	name = "4.73mm flat-nose caseless ammo box"
-	id = "m473wound"
+	id = "a473wound"
 	materials = list(/datum/material/iron = 12000,/datum/material/titanium = 2000, /datum/material/blackpowder = 2000)
-	build_path = /obj/item/ammo_box/m473/dumdum
+	build_path = /obj/item/ammo_box/a473/dumdum
 	category = list("initial", "Advanced Ammo")
 
-/datum/design/ammolathe/m473esd
+/datum/design/ammolathe/a473esd
 	name = "4.73mm ESD caseless ammo box"
-	id = "m473esd"
+	id = "a473esd"
 	materials = list(/datum/material/iron = 12000, /datum/material/titanium = 2000, /datum/material/blackpowder = 2000)
-	build_path = /obj/item/ammo_box/m473/shock
+	build_path = /obj/item/ammo_box/a473/shock
 	category = list("initial", "Advanced Ammo")
 
-/datum/design/ammolathe/m473hv
+/datum/design/ammolathe/a473hv
 	name = "4.73mm high-velocity caseless ammo box"
-	id = "m473hv"
+	id = "a473hv"
 	materials = list(/datum/material/iron = 12000, /datum/material/titanium = 15000, /datum/material/blackpowder = 3000)
-	build_path = /obj/item/ammo_box/m473/hv
+	build_path = /obj/item/ammo_box/a473/hv
 	category = list("initial", "Advanced Ammo")
 
 /datum/design/ammolathe/a357ricochet
