@@ -570,6 +570,13 @@
 	build_path = /obj/item/ammo_box/magazine/a473/small/empty
 	category = list("initial", "Advanced Magazines")
 
+/datum/design/ammolathe/vindic
+	name = "empty 240rd vindicator pack (4.73mm)"
+	id = "vindic473"
+	materials = list(/datum/material/iron = 24000)
+	build_path = /obj/item/ammo_box/magazine/vindic/empty
+	category = list("initial", "Advanced Magazines")
+
 /datum/design/ammolathe/m762ext
 	name = "empty extended rifle magazine (7.62x51)"
 	id = "m762ext"
