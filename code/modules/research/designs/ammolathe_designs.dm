@@ -617,7 +617,7 @@
 	name = "4.73mm caseless ammo box"
 	id = "a473fmj"
 	materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 2000)
-	build_path = /obj/item/ammo_box/m473
+	build_path = /obj/item/ammo_box/a473
 	category = list("initial", "Advanced Ammo")
 
 /datum/design/ammolathe/a473rubber
