@@ -8,7 +8,7 @@ if [ ! -d ~/auxmos ]; then
 	git clone https://github.com/${AUXMOS_REPOSITORY} ~/auxmos
 	cd ~/auxmos
 else
-	cd ~/rust-g
+	cd ~/auxmos
 	git fetch origin
 fi
 git fetch --all
