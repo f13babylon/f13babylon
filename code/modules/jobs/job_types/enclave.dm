@@ -96,7 +96,7 @@
 	name = "Ranged Lead"
 	suit_store = /obj/item/gun/ballistic/automatic/g11/g11e
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/a473 = 2,
+		/obj/item/ammo_box/magazine/m473 = 2,
 		/obj/item/gun/energy/laser/plasma/glock = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 1,
 		)
@@ -238,7 +238,7 @@
 	name = "Marksman"
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/g11 = 1,
-		/obj/item/ammo_box/magazine/a473 = 2,
+		/obj/item/ammo_box/magazine/m473 = 2,
 		)
 
 /datum/outfit/loadout/gysgt_melee
