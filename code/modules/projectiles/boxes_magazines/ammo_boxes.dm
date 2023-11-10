@@ -302,22 +302,23 @@
 
 //5mm
 
-/obj/item/ammo_box/m5mmbox
+/obj/item/ammo_box/a5mmbox
 	name = "ammo box (5mm FMJ)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "5mmbox"
 	multiple_sprites = 2
-	caliber = "m5mm"
-	ammo_type = /obj/item/ammo_casing/m5mm
+	caliber = "a5mm"
+	ammo_type = /obj/item/ammo_casing/a5mm
 	max_ammo = 60
 	w_class = WEIGHT_CLASS_NORMAL
 	custom_materials = list(/datum/material/iron = 24000, /datum/material/blackpowder = 1500)
 
-/obj/item/ammo_box/m5mmbox/shock
+/obj/item/ammo_box/a5mmbox/shock
 	name = "ammo box (5mm ESD)"
 	desc = "Advanced 5mm bullets with electrostatic discharger tips."
-	ammo_type = /obj/item/ammo_casing/m5mm/shock
+	ammo_type = /obj/item/ammo_casing/a5mm/shock
 	custom_materials = list(/datum/material/iron = 24000, /datum/material/blackpowder = 1500, /datum/material/glass = 8000)
+
 //5.56x45
 /obj/item/ammo_box/a556
 	name = "ammo box (5.56 FMJ)"
@@ -472,42 +473,42 @@
 	ammo_type = /obj/item/ammo_casing/p14mm/contam
 
 //Misc.
-/obj/item/ammo_box/m473
+/obj/item/ammo_box/a473
 	name = "ammo box (4.73mm caseless)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "ammobox"
 	multiple_sprites = 2
-	ammo_type = /obj/item/ammo_casing/caseless/g11
+	ammo_type = /obj/item/ammo_casing/caseless/a473
 	max_ammo = 50
 
-/obj/item/ammo_box/m473/rubber
+/obj/item/ammo_box/a473/rubber
 	name = "ammo box (4.73mm less-than-lethal)"
-	ammo_type = /obj/item/ammo_casing/caseless/g11/rubber
+	ammo_type = /obj/item/ammo_casing/caseless/a473/rubber
 
-/obj/item/ammo_box/m473/incendiary
+/obj/item/ammo_box/a473/incendiary
 	name = "ammo box (4.73mm incendiary)"
-	ammo_type = /obj/item/ammo_casing/caseless/g11/incendiary
+	ammo_type = /obj/item/ammo_casing/caseless/a473/incendiary
 
-/obj/item/ammo_box/m473/uraniumtipped
+/obj/item/ammo_box/a473/uraniumtipped
 	name = "ammo box (4.73mm uranium-tipped)"
-	ammo_type = /obj/item/ammo_casing/caseless/g11/uraniumtipped
+	ammo_type = /obj/item/ammo_casing/caseless/a473/uraniumtipped
 
-/obj/item/ammo_box/m473/dumdum
+/obj/item/ammo_box/a473/dumdum
 	name = "ammo box (4.73mm flat-nose)"
-	ammo_type = /obj/item/ammo_casing/caseless/g11/dumdum
+	ammo_type = /obj/item/ammo_casing/caseless/a473/dumdum
 
-/obj/item/ammo_box/m473/explosive
+/obj/item/ammo_box/a473/explosive
 	name = "ammo box (4.73mm explosive)"
 	desc = "Explosive caseless rounds. Very safe."
-	ammo_type = /obj/item/ammo_casing/caseless/g11/explosive
+	ammo_type = /obj/item/ammo_casing/caseless/a473/explosive
 
-/obj/item/ammo_box/m473/shock
+/obj/item/ammo_box/a473/shock
 	name = "ammo box (4.73mm ESD)"
-	ammo_type = /obj/item/ammo_casing/caseless/g11/shock
+	ammo_type = /obj/item/ammo_casing/caseless/a473/shock
 
-/obj/item/ammo_box/m473/hv
+/obj/item/ammo_box/a473/hv
 	name = "ammo box (4.73mm high-velocity)"
-	ammo_type = /obj/item/ammo_casing/caseless/g11/hv
+	ammo_type = /obj/item/ammo_casing/caseless/a473/hv
 
 /obj/item/ammo_box/lasmusket
 	name = "Battery box (Laser musket)"
