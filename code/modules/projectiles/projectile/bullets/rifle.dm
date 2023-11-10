@@ -238,14 +238,12 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	damage = 6
 	stamina = 24
 	sharpness = SHARP_NONE
-	armour_penetration = 0.1
 	wound_bonus = 0
 	bare_wound_bonus = 0
 
 /obj/item/projectile/bullet/a473/incendiary
 	name = "4.73 tracer bullet"
 	damage = 16
-	armour_penetration = 0.1
 	var/fire_stacks = 3
 	zone_accuracy_factor = 100
 
@@ -261,13 +259,6 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	damage = 12
 	armour_penetration = 0.3
 	irradiate = 30
-
-/obj/item/projectile/bullet/a473/minigun
-	name = "4.73 FMJ bullet"
-	damage = 14
-	armour_penetration = 0
-	wound_bonus = 24
-	bare_wound_bonus = 32
 
 /obj/item/projectile/bullet/a473/dumdum
 	name = "4.73 flat-nose bullet"
@@ -291,7 +282,9 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a473/shock
 	name = "4.73mm shock bullet"
-	wound_bonus = 24
+	damage = 22 //70% of 32
+	wound_bonus = 0
+	bare_wound_bonus = 0
 	sharpness = SHARP_NONE
 
 /obj/item/projectile/bullet/a473/shock/on_hit(atom/target, blocked = FALSE)
@@ -301,14 +294,14 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 /obj/item/projectile/bullet/a473/hv
 	name = "4.73mm highvelocity bullet"
 	damage = 16
-	hitscan = TRUE
 	wound_bonus = 0
+	hitscan = TRUE
 
 //////////////////////////
 // 5 MM rifle			 //
 //////////////////////////
 
-/obj/item/projectile/bullet/m5mm  //for rifles// one of the only bullets to have integral AP
+/obj/item/projectile/bullet/a5mm  //for rifles// one of the only bullets to have integral AP
 	damage = 19
 	wound_bonus = 24
 	bare_wound_bonus = 10
@@ -317,28 +310,21 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	supereffective_damage = 10
 	supereffective_faction = list("hostile", "ant", "supermutant", "deathclaw", "cazador", "raider", "china", "gecko", "wastebot", "radscorpion")
 
-/obj/item/projectile/bullet/m5mm/simple //for simple mobs, separate to allow balancing
+/obj/item/projectile/bullet/a5mm/simple //for simple mobs, separate to allow balancing
 	name = "5mm bullet"
 	damage = 19
 	armour_penetration = 0.2
 
-/obj/item/projectile/bullet/m5mm/shock
+/obj/item/projectile/bullet/a5mm/shock
 	name = "5mm shock bullet"
 	damage = 13.3 //70% of 19
 	wound_bonus = 0
+	bare_wound_bonus = 0
 	sharpness = SHARP_NONE
 
-/obj/item/projectile/bullet/m5mm/shock/on_hit(atom/target, blocked = FALSE)
+/obj/item/projectile/bullet/a5mm/shock/on_hit(atom/target, blocked = FALSE)
 	..()
 	target.emp_act(15)//5 severity is very, very low
-
-//////////////////////////
-// 5 MM minigun special //
-//////////////////////////
-
-/obj/item/projectile/bullet/c5mm
-	damage = 19
-	armour_penetration = 0.5
 
 
 /////////////////////////
