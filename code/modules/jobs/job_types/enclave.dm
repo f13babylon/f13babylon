@@ -369,7 +369,7 @@
 	name = "Frontline Operator"
 	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/a5mm = 2,
+		/obj/item/ammo_box/magazine/m5mm = 2,
 		)
 
 /datum/outfit/loadout/acpl_laser
@@ -496,7 +496,7 @@
 		/obj/item/clothing/mask/chameleon = 1,
 		/obj/item/card/id/syndicate/anyone =1,
 		/obj/item/gun/ballistic/automatic/assault_carbine/worn = 1,
-		/obj/item/ammo_box/magazine/a5mm = 2,
+		/obj/item/ammo_box/magazine/m5mm = 2,
 		/obj/item/clothing/head/f13/enclave/peacekeeper = 1
 		)
 
