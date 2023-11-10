@@ -150,7 +150,7 @@
 
 /obj/item/ammo_box/magazine/a473/explosive
 	name = "g11 magazine (4.73mm explosive)"
-	ammo_type = /obj/item/ammo_casing/caseless/g11/explosive
+	ammo_type = /obj/item/ammo_casing/caseless/a473/explosive
 
 /obj/item/ammo_box/magazine/a473/empty
 	start_empty = 1
