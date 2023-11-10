@@ -300,13 +300,6 @@
 	build_path = /obj/item/ammo_box/a5mmbox
 	category = list("initial", "Basic Ammo")
 
-/datum/design/ammolathe/a473esd
-	name = "5mm ESD ammo box"
-	id = "a5mmesd"
-	materials = list(/datum/material/iron = 14400, /datum/material/titanium = 1500, /datum/material/blackpowder = 1500)
-	build_path = /obj/item/ammo_box/a5mmbox/shock
-	category = list("initial", "Intermediate Ammo")
-
 /*
 /datum/design/ammolathe/magnumshot
 	name = "magnum buckshot shotgun box"
