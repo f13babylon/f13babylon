@@ -556,7 +556,7 @@
 	build_path = /obj/item/ammo_box/magazine/m473/empty
 	category = list("initial", "Advanced Magazines")
 
-/datum/design/ammolathe/a473s
+/datum/design/ammolathe/m473s
 	name = "empty wt550 magazine (4.73mm)"
 	id = "m473s"
 	materials = list(/datum/material/iron = 2000)
