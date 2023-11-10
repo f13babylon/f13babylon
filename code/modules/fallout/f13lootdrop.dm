@@ -1275,7 +1275,7 @@
 	name = "assault carbine and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/assault_carbine,
-				/obj/item/ammo_box/magazine/m5mm
+				/obj/item/ammo_box/magazine/a5mm
 				)
 
 /obj/effect/spawner/bundle/f13/marksman
