@@ -182,7 +182,7 @@
 	casingtype = /obj/item/ammo_casing/shotgun
 	loot = list(/obj/effect/spawner/bundle/f13/trenchshotgun, /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1, /obj/item/stack/f13Cash/random/low, /obj/item/clothing/suit/armor/f13/plates)
 	robust_searching = TRUE
-	speak = list("Come get some!", "ON THE GROUND!", "GOING TO SHOVE THIS WHERE THE SUN DON'T SHINE!", "C'MERE, I GOT LEAD!", "RENEGADES REPRESENT!")
+	speak = list("GET SOME!", "ON THE GROUND!", "GOING TO SHOVE THIS WHERE THE SUN DON'T SHINE!", "C'MERE, I GOT LEAD!", "RENEGADES REPRESENT!")
 	speak_emote = list("says")
 	speak_chance = 1
 
@@ -205,7 +205,7 @@
 	attack_sound = 'sound/weapons/slam.ogg'
 	ranged_cooldown_time = 30
 	extra_projectiles = 5
-	projectiletype = /obj/item/projectile/bullet/m5mm/simple
+	projectiletype = /obj/item/projectile/bullet/a5mm/simple
 	projectilesound = 'sound/f13weapons/automaticrifle_BAR.ogg'
 	loot = list(/obj/item/stack/f13Cash/random/high, /obj/item/advanced_crafting_components/alloys, /obj/item/stack/sheet/plasteel/five)
 	speak = list("POWER TO THE ARMOR!", "I AM GOING TO BREAK YOU IN HALF!", "YEAH I COMPENSATE WITH BIG FUCKIN' GUNS", "DODGE THIS!", "PEAK RENEGADE PERFORMANCE!")
