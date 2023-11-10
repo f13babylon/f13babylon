@@ -317,7 +317,7 @@
 	name = "ammo box (5mm ESD)"
 	desc = "Advanced 5mm bullets with electrostatic discharger tips."
 	ammo_type = /obj/item/ammo_casing/a5mm/shock
-	custom_materials = list(/datum/material/iron = 24000, /datum/material/blackpowder = 1500, /datum/material/glass = 8000)
+	custom_materials = list(/datum/material/iron = 14400, /datum/material/titanium = 1500, /datum/material/blackpowder = 1500)
 
 //5.56x45
 /obj/item/ammo_box/a556
