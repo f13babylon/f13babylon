@@ -549,18 +549,18 @@
 	build_path = /obj/item/ammo_box/magazine/m556/rifle/extended/empty
 	category = list("initial", "Advanced Magazines")
 */
-/datum/design/ammolathe/a473
+/datum/design/ammolathe/m473
 	name = "empty g11 magazine (4.73mm)"
-	id = "a473"
+	id = "m473"
 	materials = list(/datum/material/iron = 6000)
-	build_path = /obj/item/ammo_box/magazine/a473/empty
+	build_path = /obj/item/ammo_box/magazine/m473/empty
 	category = list("initial", "Advanced Magazines")
 
 /datum/design/ammolathe/a473s
 	name = "empty wt550 magazine (4.73mm)"
-	id = "a473s"
+	id = "m473s"
 	materials = list(/datum/material/iron = 2000)
-	build_path = /obj/item/ammo_box/magazine/a473/small/empty
+	build_path = /obj/item/ammo_box/magazine/m473/small/empty
 	category = list("initial", "Advanced Magazines")
 
 /datum/design/ammolathe/vindic
