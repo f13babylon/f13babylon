@@ -351,7 +351,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine/policerifle
 	head = /obj/item/clothing/head/f13/ncr
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m5mm = 2,
+		/obj/item/ammo_box/magazine/a5mm = 2,
 		/obj/item/storage/box/ration/menu_two = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/flashlight/seclite = 1,
@@ -422,7 +422,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
 	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine/worn
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m5mm = 1,
+		/obj/item/ammo_box/magazine/a5mm = 1,
 		/obj/item/clothing/accessory/ncr/FSGT = 1
 		)
 
