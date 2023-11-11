@@ -16,7 +16,7 @@
 
 
 	// Config actually from the JSON - should default to Box
-	var/map_name = "Rawlins, Wyoming"
+	var/map_name = "La Verkin, Utah"
 	var/map_path = "map_files/Pahrump-Sunset"
 	var/map_file = list("Dungeons.dmm", "Pahrump-Sunset-Lower.dmm", "Pahrump-Sunset.dmm", "Pahrump-Sunset-Upper.dmm", "Pahrump-Sunset-Upper-2.dmm", "RockSprings.dmm", "RockSprings-Upper.dmm", "Warren.dmm", "Warren-Upper.dmm", "Mountain-Range.dmm")
 	var/list/added_jobs = list()     //Overrides the "none" faction using job name

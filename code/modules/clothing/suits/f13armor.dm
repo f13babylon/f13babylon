@@ -649,7 +649,7 @@
 	icon_state = "t51bpowerarmor"
 	item_state = "t51bpowerarmor"
 	slowdown = 0.25 //+0.05 from helmet = total 0.255
-	armor = list("melee" = 75, "bullet" = 75, "laser" = 65, "energy" = 40, "bomb" = 65, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 40, "wound" = 50)
+	armor = list("melee" = 70, "bullet" = 70, "laser" = 65, "energy" = 40, "bomb" = 65, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 40, "wound" = 50)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 25)
 	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t51b
 
@@ -737,7 +737,7 @@
 	icon_state = "x-01PA"
 	item_state = "x-01PA"
 	slowdown = 0.3//Worst slowdown of all combat sets.
-	armor = list("melee" = 80, "bullet" = 80, "laser" = 85, "energy" = 85, "bomb" = 70, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 50)
+	armor = list("melee" = 70, "bullet" = 70, "laser" = 70, "energy" = 70, "bomb" = 70, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 50)
 	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/x02 // Oh the misery
 
 /obj/item/clothing/suit/armor/f13/power_armor/tesla

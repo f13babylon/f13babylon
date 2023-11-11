@@ -21,8 +21,8 @@
 /obj/item/ammo_box/magazine/internal/bow/sturdy
 	max_ammo = 2 // 3 shots in total
 
-//Silver Bow Ammo
-/obj/item/ammo_box/magazine/internal/bow/silver
+//titanium Bow Ammo
+/obj/item/ammo_box/magazine/internal/bow/titanium
 	max_ammo = 3 // 6 shots in total
 
 //Crossbow Ammo

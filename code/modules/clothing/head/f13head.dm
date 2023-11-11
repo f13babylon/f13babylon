@@ -428,7 +428,7 @@
 	desc = "It's a T-51b power helmet, typically used by the Brotherhood. It looks somewhat charming."
 	icon_state = "t51bhelmet0"
 	item_state = "t51bhelmet0"
-	armor = list("melee" = 75, "bullet" = 75, "laser" = 65, "energy" = 40, "bomb" = 65, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 40, "wound" = 50)
+	armor = list("melee" = 70, "bullet" = 70, "laser" = 65, "energy" = 40, "bomb" = 65, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 40, "wound" = 50)
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 	salvaged_type = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t51b
 
@@ -524,7 +524,7 @@
 	icon_state = "x-01PA"
 	item_state = "x-01PA"
 	slowdown = 0.1
-	armor = list("melee" = 80, "bullet" = 80, "laser" = 85, "energy" = 85, "bomb" = 70, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 50)
+	armor = list("melee" = 80, "bullet" = 70, "laser" = 70, "energy" = 70, "bomb" = 70, "bio" = 100, "rad" = 100, "fire" = 70, "acid" = 50, "wound" = 50)
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 	salvaged_type = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/x02
 
