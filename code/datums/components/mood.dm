@@ -1,8 +1,10 @@
+/*
 #define ECSTATIC_SANITY_PEN -1
 #define SLIGHT_INSANITY_PEN 1
 #define MINOR_INSANITY_PEN 5
 #define MAJOR_INSANITY_PEN 10
 #define MOOD_INSANITY_MALUS 0.13 // 13% debuff per sanity_level above the default of 4 (higher is worser), overall a 39% debuff to skills at rock bottom depression.
+*/
 
 /datum/component/mood
 	var/mood //Real happiness
@@ -12,12 +14,14 @@
 	var/sanity_level = 3 //To track what stage of sanity they're on
 	var/mood_modifier = 1 //Modifier to allow certain mobs to be less affected by moodlets
 	var/list/datum/mood_event/mood_events = list()
-	var/insanity_effect = 0 //is the owner being punished for low mood? If so, how much?
 	var/obj/screen/mood/screen_obj
+	/*
+	var/insanity_effect = 0 //is the owner being punished for low mood? If so, how much?
 	var/datum/skill_modifier/bad_mood/malus
 	var/datum/skill_modifier/great_mood/bonus
 	var/static/malus_id = 0
 	var/static/list/free_maluses = list()
+	*/
 
 /datum/component/mood/Initialize()
 	if(!isliving(parent))
@@ -174,7 +178,9 @@
 	HandleNutrition(owner)
 
 /datum/component/mood/proc/setSanity(amount, minimum=SANITY_INSANE, maximum=SANITY_NEUTRAL)//I'm sure bunging this in here will have no negative repercussions.
+	/*
 	var/mob/living/master = parent
+	*/
 
 	if(amount == sanity)
 		return
@@ -184,40 +190,53 @@
 		amount = sanity + 0.5
 	else if(sanity > maximum && amount > sanity - 0.5)
 		amount = sanity - 0.5
-
+	
 	// Disturbed stops you from getting any more sane
 	if(HAS_TRAIT(master, TRAIT_UNSTABLE))
 		sanity = min(amount,sanity)
 	else
 		sanity = amount
-
+	/*
 	var/old_sanity_level = sanity_level
+	*/
 	switch(sanity)
 		if(-INFINITY to SANITY_CRAZY)
+			/*
 			setInsanityEffect(MAJOR_INSANITY_PEN)
 			master.add_movespeed_modifier(/datum/movespeed_modifier/sanity/insane)
+			*/
 			sanity_level = 6
 		if(SANITY_CRAZY to SANITY_UNSTABLE)
+			/*
 			setInsanityEffect(MINOR_INSANITY_PEN)
 			master.add_movespeed_modifier(/datum/movespeed_modifier/sanity/crazy)
+			*/
 			sanity_level = 5
 		if(SANITY_UNSTABLE to SANITY_DISTURBED)
+			/*
 			setInsanityEffect(SLIGHT_INSANITY_PEN)
 			master.add_movespeed_modifier(/datum/movespeed_modifier/sanity/disturbed)
+			*/
 			sanity_level = 4
 		if(SANITY_DISTURBED to SANITY_NEUTRAL)
+			/*
 			setInsanityEffect(0)
 			master.remove_movespeed_modifier(MOVESPEED_ID_SANITY)
+			*/
 			sanity_level = 3
 		if(SANITY_NEUTRAL+1 to SANITY_GREAT+1) //shitty hack but +1 to prevent it from responding to super small differences
+			/*
 			setInsanityEffect(0)
 			master.remove_movespeed_modifier(MOVESPEED_ID_SANITY)
+			*/
 			sanity_level = 2
 		if(SANITY_GREAT+1 to INFINITY)
+			/*
 			setInsanityEffect(ECSTATIC_SANITY_PEN) //It's not a penalty but w/e
 			master.remove_movespeed_modifier(MOVESPEED_ID_SANITY)
+			*/
 			sanity_level = 1
-
+/*
 	if(sanity_level != old_sanity_level)
 		if(sanity_level >= 4)
 			if(!malus)
@@ -240,6 +259,7 @@
 
 	//update_mood_icon()
 
+
 /datum/component/mood/proc/setInsanityEffect(newval)//More code so that the previous proc works
 	if(newval == insanity_effect)
 		return
@@ -252,6 +272,7 @@
 		bonus = null
 
 	insanity_effect = newval
+	*/
 
 /datum/component/mood/proc/modify_sanity(datum/source, amount, minimum = SANITY_INSANE, maximum = SANITY_AMAZING)
 	setSanity(sanity + amount, minimum, maximum)
@@ -377,9 +398,10 @@
 		return
 	remove_temp_moods()
 	setSanity(initial(sanity))
-
+/*
 #undef ECSTATIC_SANITY_PEN
 #undef SLIGHT_INSANITY_PEN
 #undef MINOR_INSANITY_PEN
 #undef MAJOR_INSANITY_PEN
 #undef MOOD_INSANITY_MALUS
+*/
