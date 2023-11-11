@@ -107,25 +107,6 @@
 	medical_record_text = "Patient scored highly on racewalking tests."
 */
 
-/datum/quirk/musician
-	name = "Musician"
-	desc = "You can tune handheld musical instruments to play melodies that clear certain negative effects and soothe the soul."
-	value = 1
-	mob_trait = TRAIT_MUSICIAN
-	gain_text = "<span class='notice'>You know everything about musical instruments.</span>"
-	lose_text = "<span class='danger'>You forget how musical instruments work.</span>"
-	medical_record_text = "Patient brain scans show a highly-developed auditory pathway."
-
-/datum/quirk/musician/on_spawn()
-	var/mob/living/carbon/human/H = quirk_holder
-	var/obj/item/choice_beacon/music/B = new(get_turf(H))
-	H.put_in_hands(B)
-	H.equip_to_slot_if_possible(B, SLOT_IN_BACKPACK)
-	var/obj/item/musicaltuner/musicaltuner = new(get_turf(H))
-	H.put_in_hands(musicaltuner)
-	H.equip_to_slot_if_possible(musicaltuner, SLOT_IN_BACKPACK)
-	H.regenerate_icons()
-
 /datum/quirk/photographer
 	name = "Photographer"
 	desc = "You know how to handle a camera, shortening the delay between each shot."
