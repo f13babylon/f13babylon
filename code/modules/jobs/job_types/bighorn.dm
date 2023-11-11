@@ -317,8 +317,6 @@ Mayor
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/frag_shrapnel)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/concussion)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/shrapnelmine)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/shotgunammoflechette)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/shotgunammomagnum)
 
 /datum/outfit/job/bighorn/f13shopkeeper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
