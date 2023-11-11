@@ -151,9 +151,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	req_admin_notify = 1
 	display_order = JOB_DISPLAY_ORDER_CAPTAIN_NCR
 	outfit = /datum/outfit/job/ncr/f13captain
-	exp_requirements = 0
+	exp_requirements = 600
 
-	loadout_options = list( 				
+	loadout_options = list(
 		/datum/outfit/loadout/ncrcptmelee,	// Lucky
 		/datum/outfit/loadout/ncrcptshotgun, // Pancor
 		)
@@ -791,7 +791,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/r84 = 1,
 		/obj/item/ammo_box/magazine/lmg = 3,
-		
+
 		)
 
 
@@ -958,7 +958,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 			),
 		)
 
-/datum/outfit/job/ncr/f13combatmedic		
+/datum/outfit/job/ncr/f13combatmedic
 	name = "NCR Combat Medic"
 	jobtype = /datum/job/ncr/f13combatmedic
 	id = /obj/item/card/id/dogtag/ncrtrooper
@@ -1061,7 +1061,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/ammo_box/magazine/m10mm_adv = 3
 		)
 
-/datum/outfit/loadout/corporalrifleman		
+/datum/outfit/loadout/corporalrifleman
 	name = "Squad Long Range Support"
 	head = /obj/item/clothing/head/f13/ncr
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
