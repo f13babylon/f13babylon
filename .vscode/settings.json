@@ -4,5 +4,5 @@
 	"files.insertFinalNewline": true,
 	"files.trimFinalNewlines": true,
 	"editor.formatOnSave": true,
-	"prettier.useTabs": true,
+	"prettier.useTabs": true
 }
