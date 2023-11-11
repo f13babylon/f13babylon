@@ -22,7 +22,7 @@
 	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("fish" = 1)
 
-/obj/item/reagent_containers/food/snacks/fishmeat/Initialize()
+/obj/item/reagent_containers/food/snacks/fishmeat/Initialize(mapload)
 	. = ..()
 	eatverb = pick("bite","chew","choke down","gnaw","swallow","chomp")
 
@@ -241,7 +241,7 @@
 	foodtype = MEAT | BREAKFAST
 	var/roasted = FALSE
 
-/obj/item/reagent_containers/food/snacks/sausage/Initialize()
+/obj/item/reagent_containers/food/snacks/sausage/Initialize(mapload)
 	. = ..()
 	eatverb = pick("bite","chew","nibble","deep throat","gobble","chomp")
 
@@ -350,7 +350,7 @@
 	tastes = list("soy" = 1, "vegetables" = 1)
 	foodtype = VEGETABLES
 
-/obj/item/reagent_containers/food/snacks/stewedsoymeat/Initialize()
+/obj/item/reagent_containers/food/snacks/stewedsoymeat/Initialize(mapload)
 	. = ..()
 	eatverb = pick("slurp","sip","suck","inhale","drink")
 
@@ -393,7 +393,7 @@
 	tastes = list("\"chicken\"" = 1)
 	foodtype = MEAT
 
-/obj/item/reagent_containers/food/snacks/nugget/Initialize()
+/obj/item/reagent_containers/food/snacks/nugget/Initialize(mapload)
 	. = ..()
 	var/shape = pick("lump", "star", "lizard", "corgi")
 	desc = "A 'chicken' nugget vaguely shaped like a [shape]."

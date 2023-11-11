@@ -68,7 +68,7 @@
 			if(initial(tempCheck.icon_state) != null)
 				critical_items += I
 
-/obj/machinery/rnd/experimentor/Initialize()
+/obj/machinery/rnd/experimentor/Initialize(mapload)
 	. = ..()
 
 	trackedIan = locate(/mob/living/simple_animal/pet/dog/corgi/Ian) in GLOB.mob_living_list
@@ -545,7 +545,7 @@
 	var/cooldownMax = 60
 	var/cooldown
 
-/obj/item/relic/Initialize()
+/obj/item/relic/Initialize(mapload)
 	. = ..()
 	icon_state = pick("shock_kit","armor-igniter-analyzer","infra-igniter0","infra-igniter1","radio-multitool","prox-radio1","radio-radio","timer-multitool0","radio-igniter-tank")
 	realName = "[pick("broken","twisted","spun","improved","silly","regular","badly made")] [pick("device","object","toy","illegal tech","weapon")]"

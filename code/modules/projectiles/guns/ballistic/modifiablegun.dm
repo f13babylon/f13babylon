@@ -14,7 +14,7 @@
 	//var/obj/item/gunpart/blacklistedparts[] = list("stock", "barrel", "receiver", "scope", "burstcam")
 	var/obj/item/gunpart/blacklistedparts[] = list()
 
-/obj/item/gun/ballistic/Initialize()
+/obj/item/gun/ballistic/Initialize(mapload)
 	. = ..()
 	if(modifiable)
 		if(w_class == WEIGHT_CLASS_SMALL && base_size == null)

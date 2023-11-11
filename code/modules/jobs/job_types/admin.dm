@@ -43,8 +43,8 @@
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
+	ADD_TRAIT(H, TRAIT_LIGHT_STEP,  REF(src))
 
 /datum/outfit/loadout/desert_ranger
 	name = "Desert Ranger"
@@ -106,5 +106,5 @@
 
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
+	ADD_TRAIT(H, TRAIT_LIGHT_STEP,  REF(src))

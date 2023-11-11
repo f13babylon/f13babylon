@@ -3982,11 +3982,6 @@
 /obj/structure/flora/grass/jungle,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/city)
-"dGC" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/start/f13/raider_boss,
-/turf/open/floor/f13/wood,
-/area/f13/raiders)
 "dHl" = (
 /obj/machinery/light{
 	dir = 1
@@ -63648,7 +63643,7 @@ unF
 unF
 vVX
 ntf
-dGC
+sNb
 wUT
 aaf
 wUT

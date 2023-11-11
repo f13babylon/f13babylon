@@ -614,6 +614,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cult,
 /area/f13/building)
+"azB" = (
+/obj/effect/landmark/start/f13/campfollower,
+/obj/effect/landmark/start/f13/immune,
+/turf/open/indestructible/ground/outside/graveldirt,
+/area/f13/wasteland/rocksprings)
 "azN" = (
 /turf/open/indestructible/ground/outside/dirt/harsh/corner,
 /area/f13/wasteland/rocksprings)
@@ -940,6 +945,14 @@
 	dir = 8
 	},
 /turf/open/indestructible/ground/outside/desert/harsh,
+/area/f13/wasteland/rocksprings)
+"aRA" = (
+/obj/effect/landmark/start/f13/campfollower,
+/obj/effect/landmark/start/f13/immune,
+/turf/open/indestructible/ground/outside/graveldirt{
+	dir = 6;
+	icon_state = "graveldirtedge"
+	},
 /area/f13/wasteland/rocksprings)
 "aSy" = (
 /obj/structure/closet/crate,
@@ -9408,6 +9421,14 @@
 "jrH" = (
 /obj/structure/obstacle/barbedwire,
 /turf/open/indestructible/ground/outside/desert/harsh,
+/area/f13/wasteland/rocksprings)
+"jsu" = (
+/obj/effect/landmark/start/f13/campfollower,
+/obj/effect/landmark/start/f13/immune,
+/turf/open/indestructible/ground/outside/graveldirt{
+	dir = 8;
+	icon_state = "graveldirtedge"
+	},
 /area/f13/wasteland/rocksprings)
 "juG" = (
 /obj/item/candle/tribal_torch{
@@ -34137,7 +34158,7 @@ rPW
 rPW
 rPW
 rPW
-hRH
+aRA
 hXy
 anP
 upH
@@ -36211,7 +36232,7 @@ hXy
 hXy
 anP
 hXy
-hXy
+azB
 iYE
 psz
 vTD
@@ -36458,13 +36479,13 @@ qyA
 qyA
 qyA
 qyA
-qyA
+jsu
 qyA
 qyA
 qyA
 qdO
 iDR
-qyA
+jsu
 cgm
 anP
 pzn

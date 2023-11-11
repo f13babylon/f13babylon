@@ -11,7 +11,7 @@
 /obj/structure/handrail/g_central/New()
 	layer = 4.2
 
-/obj/structure/handrail/g_central/Initialize() //window hack to make collision work
+/obj/structure/handrail/g_central/Initialize(mapload) //window hack to make collision work
 	. = ..()
 	switch(dir)
 		if(NORTH)

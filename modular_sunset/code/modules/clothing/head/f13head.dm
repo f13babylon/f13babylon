@@ -18,7 +18,7 @@ Just leaving this here for quick copy-pasting, for future contributors.
 	dynamic_hair_suffix = ""
 	flags_inv = HIDEHAIR|HIDEEARS
 
-/obj/item/clothing/head/helmet/f13/goner/Initialize()
+/obj/item/clothing/head/helmet/f13/goner/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 

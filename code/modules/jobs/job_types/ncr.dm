@@ -75,9 +75,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
+	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
+	ADD_TRAIT(H, TRAIT_PA_WEAR,  REF(src))
+	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
 
 /datum/outfit/job/ncr/f13colonel	// Sierra Power Armor, , Desert Eagle
 	name = "NCR Colonel"
@@ -116,8 +116,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
+	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
 
 /datum/outfit/job/ncr/f13aide	// NCR Flag, Desert Eagle
 	name = "NCR Personal Aide"
@@ -166,10 +166,10 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
+	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
+	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
+	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
+	ADD_TRAIT(H, TRAIT_SELF_AWARE,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 
 /datum/outfit/job/ncr/f13captain	// Binoculars, Trench knife
@@ -283,10 +283,10 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
+	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
+	ADD_TRAIT(H, TRAIT_SELF_AWARE,  REF(src))
+	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
+	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 
 
@@ -323,9 +323,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
+	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
+	ADD_TRAIT(H, TRAIT_SELF_AWARE,  REF(src))
+	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
 
 
 /datum/outfit/job/ncr/f13sergeant
@@ -483,8 +483,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
+	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
+	ADD_TRAIT(H, TRAIT_SELF_AWARE,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 
 /datum/outfit/job/ncr/f13representative
@@ -561,12 +561,12 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-	ADD_TRAIT(H, TRAIT_IRONFIST, src)
-	ADD_TRAIT(H, TRAIT_SILENT_STEP, src)
-	ADD_TRAIT(H, TRAIT_INSANE_AIM, src)
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
+	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
+	ADD_TRAIT(H, TRAIT_IRONFIST,  REF(src))
+	ADD_TRAIT(H, TRAIT_SILENT_STEP,  REF(src))
+	ADD_TRAIT(H, TRAIT_INSANE_AIM,  REF(src))
+	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
 	var/datum/martial_art/rangertakedown/RT = new
 	RT.teach(H)
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
@@ -642,9 +642,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	. = ..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
+	ADD_TRAIT(H, TRAIT_LIGHT_STEP,  REF(src))
+	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
 	var/datum/martial_art/rangertakedown/RT = new
 	RT.teach(H)
 
@@ -757,8 +757,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	. = ..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_IRONFIST, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
+	ADD_TRAIT(H, TRAIT_IRONFIST,  REF(src))
+	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
 
 /datum/outfit/job/ncr/f13heavytrooper	// Mk. 23, Bayonet, Heavy armor
 	name = "NCR Heavy Weapons"
@@ -843,7 +843,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingrifle)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingshotgun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1carbine)
-	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK,  REF(src))
 
 /datum/outfit/job/ncr/f13combatengineer
 	name = "NCR Combat Engineer"
@@ -931,7 +931,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	. = ..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_IRONFIST, src)
+	ADD_TRAIT(H, TRAIT_IRONFIST,  REF(src))
 
 
 // COMBAT MEDIC
@@ -1001,9 +1001,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	. = ..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
-	ADD_TRAIT(H, TRAIT_SURGERY_LOW, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_CHEMWHIZ,  REF(src))
+	ADD_TRAIT(H, TRAIT_SURGERY_LOW,  REF(src))
+	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
 
 
 
@@ -1272,8 +1272,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	. = ..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
-	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
+	ADD_TRAIT(H, TRAIT_CHEMWHIZ,  REF(src))
+	ADD_TRAIT(H, TRAIT_SURGERY_HIGH,  REF(src))
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/medx)
 
 
@@ -1320,7 +1320,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/marksmancarbine)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/servicerifle)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/scoutcarbine)
-	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK,  REF(src))
 
 /datum/outfit/job/ncr/f13logisticsofficer		// M1 Garand, 9mm sidearm, Survival knife, C-4 bomb, Extra materials, Full blueprints
 	name = "NCR Logistics Officer"

@@ -71,7 +71,7 @@
 	//buffs only happen when hearts are eaten, so this needs to be kept track separately
 	var/consumed_buff = 0
 
-/mob/living/simple_animal/slaughter/Initialize()
+/mob/living/simple_animal/slaughter/Initialize(mapload)
 	. = ..()
 	var/obj/effect/proc_holder/spell/bloodcrawl/bloodspell = new
 	AddSpell(bloodspell)

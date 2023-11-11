@@ -59,7 +59,7 @@
 
 
 
-/mob/living/simple_animal/hostile/mirelurk/baby/Initialize()
+/mob/living/simple_animal/hostile/mirelurk/baby/Initialize(mapload)
 	. = ..()
 
 /mob/living/simple_animal/hostile/mirelurk/baby/Aggro()

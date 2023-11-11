@@ -236,7 +236,7 @@ LINEN BINS
 	var/g_mouth
 	var/g_eyes
 
-/obj/item/bedsheet/gondola/Initialize()
+/obj/item/bedsheet/gondola/Initialize(mapload)
 	. = ..()
 	g_mouth = "sheetgondola_mouth[rand(1, 4)]"
 	g_eyes = "sheetgondola_eyes[rand(1, 4)]"
@@ -254,7 +254,7 @@ LINEN BINS
 	name = "random bedsheet"
 	desc = "If you're reading this description ingame, something has gone wrong! Honk!"
 
-/obj/item/bedsheet/random/Initialize()
+/obj/item/bedsheet/random/Initialize(mapload)
 	..()
 	var/type = pick(typesof(/obj/item/bedsheet) - list(/obj/item/bedsheet/random, /obj/item/bedsheet/chameleon))
 	new type(loc)

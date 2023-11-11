@@ -174,7 +174,7 @@ Contains:
 	light_range = 7
 	resistance_flags = ACID_PROOF
 
-/obj/item/clothing/head/helmet/space/hardsuit/ert/Initialize()
+/obj/item/clothing/head/helmet/space/hardsuit/ert/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, LOCKED_HELMET_TRAIT)
 
@@ -361,7 +361,7 @@ Contains:
 	actions_types = list()
 	mutantrace_variation = NONE
 
-/obj/item/clothing/head/helmet/space/hardsuit/carp/Initialize()
+/obj/item/clothing/head/helmet/space/hardsuit/carp/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, LOCKED_HELMET_TRAIT)
 
@@ -388,7 +388,7 @@ Contains:
 	mutantrace_variation = NONE
 	var/charges = INFINITY
 
-/obj/item/clothing/head/helmet/space/hardsuit/ert/paranormal/Initialize()
+/obj/item/clothing/head/helmet/space/hardsuit/ert/paranormal/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/anti_magic, FALSE, FALSE, TRUE, ITEM_SLOT_HEAD, charges, TRUE, null, CALLBACK(src, .proc/anti_magic_gone))
 
@@ -409,7 +409,7 @@ Contains:
 	resistance_flags = FIRE_PROOF
 	var/charges = INFINITY
 
-/obj/item/clothing/suit/space/hardsuit/ert/paranormal/Initialize()
+/obj/item/clothing/suit/space/hardsuit/ert/paranormal/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/anti_magic, TRUE, TRUE, FALSE, ITEM_SLOT_OCLOTHING, charges, TRUE, null, CALLBACK(src, .proc/anti_magic_gone))
 

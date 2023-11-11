@@ -31,7 +31,7 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 /obj/machinery/computer/card/centcom/get_jobs()
 	return get_all_centcom_jobs()
 
-/obj/machinery/computer/card/Initialize()
+/obj/machinery/computer/card/Initialize(mapload)
 	. = ..()
 	if(!job_list)
 		job_list = get_all_jobs()
@@ -440,7 +440,7 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 	icon_screen = "idminor"
 	circuit = /obj/item/circuitboard/computer/card/minor
 
-/obj/machinery/computer/card/minor/Initialize()
+/obj/machinery/computer/card/minor/Initialize(mapload)
 	. = ..()
 	var/obj/item/circuitboard/computer/card/minor/typed_circuit = circuit
 	if(target_dept)
@@ -519,7 +519,7 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 		"Legion Vexillarius",
 		"Legion Slavemaster",
 		"Legion Forgemaster",
-		"Legion Immune",
+		"Legion Camp Follower",
 		"Legion Auxilia",
 		"Legion Vexillarius",
 		)

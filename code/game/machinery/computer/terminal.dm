@@ -31,7 +31,7 @@
 	var/notehtml = ""
 	var/note = "ERR://null-data #236XF51"
 
-/obj/machinery/computer/terminal/Initialize()
+/obj/machinery/computer/terminal/Initialize(mapload)
 	. = ..()
 
 	if(!broken)

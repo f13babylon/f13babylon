@@ -7,7 +7,7 @@
 	invisibility = INVISIBILITY_ABSTRACT // nope cant see this shit
 	anchored = TRUE
 
-/obj/effect/step_trigger/Initialize()
+/obj/effect/step_trigger/Initialize(mapload)
 	. = ..()
 
 	var/static/list/loc_connections = list(
@@ -72,7 +72,7 @@
 	if(isliving(AM))
 		var/mob/living/M = AM
 		if(immobilize)
-			ADD_TRAIT(M, TRAIT_MOBILITY_NOMOVE, src)
+			ADD_TRAIT(M, TRAIT_MOBILITY_NOMOVE,  REF(src))
 			M.update_mobility()
 
 	affecting.Add(AM)
@@ -110,7 +110,7 @@
 	if(isliving(AM))
 		var/mob/living/M = AM
 		if(immobilize)
-			REMOVE_TRAIT(M, TRAIT_MOBILITY_NOMOVE, src)
+			REMOVE_TRAIT(M, TRAIT_MOBILITY_NOMOVE,  REF(src))
 			M.update_mobility()
 
 /* Stops things thrown by a thrower, doesn't do anything */

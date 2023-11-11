@@ -21,7 +21,7 @@
 	var/datum/action/item_action/toggle_helmet_flashlight/alight
 
 
-/obj/item/clothing/head/helmet/Initialize()
+/obj/item/clothing/head/helmet/Initialize(mapload)
 	. = ..()
 	if(attached_light)
 		alight = new(src)
@@ -100,7 +100,7 @@
 	can_flashlight = 1
 	dog_fashion = null
 
-/obj/item/clothing/head/helmet/alt/Initialize()
+/obj/item/clothing/head/helmet/alt/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -460,7 +460,7 @@
 	icon_state = "armyhelmet"
 	item_state = "armyhelmet"
 
-/obj/item/clothing/head/helmet/armyhelmet/Initialize()
+/obj/item/clothing/head/helmet/armyhelmet/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -473,7 +473,7 @@
 	slowdown = 0.025
 	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR|HIDESNOUT
 
-/obj/item/clothing/head/helmet/armyhelmet/heavy/Initialize()
+/obj/item/clothing/head/helmet/armyhelmet/heavy/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 

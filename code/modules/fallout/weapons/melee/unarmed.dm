@@ -21,7 +21,7 @@
 	throw_range = 5
 	attack_verb = list("punched", "jabbed", "whacked")
 
-/obj/item/melee/unarmed/Initialize()
+/obj/item/melee/unarmed/Initialize(mapload)
 	. = ..()
 	RegisterSignal(src, COMSIG_ITEM_EQUIPPED, .proc/on_equip)
 	RegisterSignal(src, COMSIG_ITEM_DROPPED, .proc/on_drop)

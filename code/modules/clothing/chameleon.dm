@@ -290,7 +290,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/clothing/under/chameleon)
 	icon_state = "engine"
 	item_state = "engi_suit"
 
-/obj/item/clothing/under/chameleon/Initialize()
+/obj/item/clothing/under/chameleon/Initialize(mapload)
 	. = ..()
 	chameleon_action = new(src)
 	chameleon_action.chameleon_type = /obj/item/clothing/under
@@ -304,7 +304,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/clothing/under/chameleon)
 		return
 	chameleon_action.emp_randomise()
 
-/obj/item/clothing/under/chameleon/broken/Initialize()
+/obj/item/clothing/under/chameleon/broken/Initialize(mapload)
 	. = ..()
 	chameleon_action.emp_randomise(INFINITY)
 
@@ -319,7 +319,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/clothing/suit/chameleon)
 
 	var/datum/action/item_action/chameleon/change/chameleon_action
 
-/obj/item/clothing/suit/chameleon/Initialize()
+/obj/item/clothing/suit/chameleon/Initialize(mapload)
 	. = ..()
 	chameleon_action = new(src)
 	chameleon_action.chameleon_type = /obj/item/clothing/suit
@@ -333,7 +333,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/clothing/suit/chameleon)
 		return
 	chameleon_action.emp_randomise()
 
-/obj/item/clothing/suit/chameleon/broken/Initialize()
+/obj/item/clothing/suit/chameleon/broken/Initialize(mapload)
 	. = ..()
 	chameleon_action.emp_randomise(INFINITY)
 
@@ -347,7 +347,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/clothing/glasses/chameleon)
 
 	var/datum/action/item_action/chameleon/change/chameleon_action
 
-/obj/item/clothing/glasses/chameleon/Initialize()
+/obj/item/clothing/glasses/chameleon/Initialize(mapload)
 	. = ..()
 	chameleon_action = new(src)
 	chameleon_action.chameleon_type = /obj/item/clothing/glasses
@@ -361,7 +361,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/clothing/glasses/chameleon)
 		return
 	chameleon_action.emp_randomise()
 
-/obj/item/clothing/glasses/chameleon/broken/Initialize()
+/obj/item/clothing/glasses/chameleon/broken/Initialize(mapload)
 	. = ..()
 	chameleon_action.emp_randomise(INFINITY)
 
@@ -379,7 +379,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/clothing/gloves/chameleon)
 CHAMELEON_CLOTHING_DEFINE(/obj/item/clothing/gloves/chameleon/insulated)
 	siemens_coefficient = 0
 
-/obj/item/clothing/gloves/chameleon/Initialize()
+/obj/item/clothing/gloves/chameleon/Initialize(mapload)
 	. = ..()
 	chameleon_action = new(src)
 	chameleon_action.chameleon_type = /obj/item/clothing/gloves
@@ -393,7 +393,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/clothing/gloves/chameleon/insulated)
 		return
 	chameleon_action.emp_randomise()
 
-/obj/item/clothing/gloves/chameleon/broken/Initialize()
+/obj/item/clothing/gloves/chameleon/broken/Initialize(mapload)
 	. = ..()
 	chameleon_action.emp_randomise(INFINITY)
 
@@ -407,7 +407,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/clothing/head/chameleon)
 
 	var/datum/action/item_action/chameleon/change/chameleon_action
 
-/obj/item/clothing/head/chameleon/Initialize()
+/obj/item/clothing/head/chameleon/Initialize(mapload)
 	. = ..()
 	chameleon_action = new(src)
 	chameleon_action.chameleon_type = /obj/item/clothing/head
@@ -421,7 +421,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/clothing/head/chameleon)
 		return
 	chameleon_action.emp_randomise()
 
-/obj/item/clothing/head/chameleon/broken/Initialize()
+/obj/item/clothing/head/chameleon/broken/Initialize(mapload)
 	. = ..()
 	chameleon_action.emp_randomise(INFINITY)
 
@@ -431,7 +431,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/clothing/head/chameleon)
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	// which means it offers no protection, it's just air and light
 
-/obj/item/clothing/head/chameleon/drone/Initialize()
+/obj/item/clothing/head/chameleon/drone/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, ABSTRACT_ITEM_TRAIT)
 	chameleon_action.random_look()
@@ -457,7 +457,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/clothing/mask/chameleon)
 
 	var/datum/action/item_action/chameleon/change/chameleon_action
 
-/obj/item/clothing/mask/chameleon/Initialize()
+/obj/item/clothing/mask/chameleon/Initialize(mapload)
 	. = ..()
 	chameleon_action = new(src)
 	chameleon_action.chameleon_type = /obj/item/clothing/mask
@@ -471,7 +471,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/clothing/mask/chameleon)
 		return
 	chameleon_action.emp_randomise()
 
-/obj/item/clothing/mask/chameleon/broken/Initialize()
+/obj/item/clothing/mask/chameleon/broken/Initialize(mapload)
 	. = ..()
 	chameleon_action.emp_randomise(INFINITY)
 
@@ -485,7 +485,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/clothing/mask/chameleon)
 	// Can drones use the voice changer part? Let's not find out.
 	voice_change = 0
 
-/obj/item/clothing/mask/chameleon/drone/Initialize()
+/obj/item/clothing/mask/chameleon/drone/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, ABSTRACT_ITEM_TRAIT)
 	chameleon_action.random_look()
@@ -508,7 +508,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/clothing/shoes/chameleon)
 
 	var/datum/action/item_action/chameleon/change/chameleon_action
 
-/obj/item/clothing/shoes/chameleon/Initialize()
+/obj/item/clothing/shoes/chameleon/Initialize(mapload)
 	. = ..()
 	chameleon_action = new(src)
 	chameleon_action.chameleon_type = /obj/item/clothing/shoes
@@ -528,7 +528,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/clothing/shoes/chameleon/noslip)
 	desc = "A pair of black shoes."
 	clothing_flags = NOSLIP
 
-/obj/item/clothing/shoes/chameleon/noslip/broken/Initialize()
+/obj/item/clothing/shoes/chameleon/noslip/broken/Initialize(mapload)
 	. = ..()
 	chameleon_action.emp_randomise(INFINITY)
 
@@ -536,7 +536,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/storage/backpack/chameleon)
 	name = "backpack"
 	var/datum/action/item_action/chameleon/change/chameleon_action
 
-/obj/item/storage/backpack/chameleon/Initialize()
+/obj/item/storage/backpack/chameleon/Initialize(mapload)
 	. = ..()
 	chameleon_action = new(src)
 	chameleon_action.chameleon_type = /obj/item/storage/backpack
@@ -549,7 +549,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/storage/backpack/chameleon)
 		return
 	chameleon_action.emp_randomise()
 
-/obj/item/storage/backpack/chameleon/broken/Initialize()
+/obj/item/storage/backpack/chameleon/broken/Initialize(mapload)
 	. = ..()
 	chameleon_action.emp_randomise(INFINITY)
 
@@ -558,7 +558,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/storage/belt/chameleon)
 	desc = "Holds tools."
 	var/datum/action/item_action/chameleon/change/chameleon_action
 
-/obj/item/storage/belt/chameleon/Initialize()
+/obj/item/storage/belt/chameleon/Initialize(mapload)
 	. = ..()
 
 	chameleon_action = new(src)
@@ -577,7 +577,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/storage/belt/chameleon)
 		return
 	chameleon_action.emp_randomise()
 
-/obj/item/storage/belt/chameleon/broken/Initialize()
+/obj/item/storage/belt/chameleon/broken/Initialize(mapload)
 	. = ..()
 	chameleon_action.emp_randomise(INFINITY)
 
@@ -585,7 +585,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/radio/headset/chameleon)
 	name = "radio headset"
 	var/datum/action/item_action/chameleon/change/chameleon_action
 
-/obj/item/radio/headset/chameleon/Initialize()
+/obj/item/radio/headset/chameleon/Initialize(mapload)
 	. = ..()
 	chameleon_action = new(src)
 	chameleon_action.chameleon_type = /obj/item/radio/headset
@@ -598,7 +598,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/radio/headset/chameleon)
 		return
 	chameleon_action.emp_randomise()
 
-/obj/item/radio/headset/chameleon/broken/Initialize()
+/obj/item/radio/headset/chameleon/broken/Initialize(mapload)
 	. = ..()
 	chameleon_action.emp_randomise(INFINITY)
 
@@ -606,7 +606,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/pda/chameleon)
 	name = "PDA"
 	var/datum/action/item_action/chameleon/change/pda/chameleon_action
 
-/obj/item/pda/chameleon/Initialize()
+/obj/item/pda/chameleon/Initialize(mapload)
 	. = ..()
 	chameleon_action = new(src)
 	chameleon_action.chameleon_type = /obj/item/pda
@@ -620,21 +620,21 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/pda/chameleon)
 		return
 	chameleon_action.emp_randomise()
 
-/obj/item/pda/chameleon/broken/Initialize()
+/obj/item/pda/chameleon/broken/Initialize(mapload)
 	. = ..()
 	chameleon_action.emp_randomise(INFINITY)
 
 CHAMELEON_CLOTHING_DEFINE(/obj/item/stamp/chameleon)
 	var/datum/action/item_action/chameleon/change/chameleon_action
 
-/obj/item/stamp/chameleon/Initialize()
+/obj/item/stamp/chameleon/Initialize(mapload)
 	. = ..()
 	chameleon_action = new(src)
 	chameleon_action.chameleon_type = /obj/item/stamp
 	chameleon_action.chameleon_name = "Stamp"
 	chameleon_action.initialize_disguises()
 
-/obj/item/stamp/chameleon/broken/Initialize()
+/obj/item/stamp/chameleon/broken/Initialize(mapload)
 	. = ..()
 	chameleon_action.emp_randomise(INFINITY)
 
@@ -649,7 +649,7 @@ CHAMELEON_CLOTHING_DEFINE(/obj/item/clothing/neck/cloak/chameleon)
 /obj/item/clothing/neck/cloak/chameleon
 	var/datum/action/item_action/chameleon/change/chameleon_action
 
-/obj/item/clothing/neck/cloak/chameleon/Initialize()
+/obj/item/clothing/neck/cloak/chameleon/Initialize(mapload)
 	. = ..()
 	chameleon_action = new(src)
 	chameleon_action.chameleon_type = /obj/item/clothing/neck

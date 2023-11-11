@@ -95,7 +95,7 @@
 	amount = 1000
 	merge_type = /obj/item/stack/f13Cash/caps
 
-/obj/item/stack/f13Cash/Initialize()
+/obj/item/stack/f13Cash/Initialize(mapload)
 	. = ..()
 	update_desc()
 	update_icon()
@@ -122,7 +122,7 @@
 	var/min_qty = LOW_MIN
 	var/max_qty = LOW_MAX
 
-/obj/item/stack/f13Cash/random/Initialize()
+/obj/item/stack/f13Cash/random/Initialize(mapload)
 	..()
 	spawn_money()
 	return INITIALIZE_HINT_QDEL

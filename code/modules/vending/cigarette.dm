@@ -31,7 +31,7 @@
 					/obj/item/storage/fancy/rollingpapers = 5)
 	payment_department = NO_FREEBIES
 
-/obj/machinery/vending/cigarette/syndicate/Initialize()
+/obj/machinery/vending/cigarette/syndicate/Initialize(mapload)
 	. = ..()
 	cost_multiplier_per_dept = list("[ACCESS_SYNDICATE]" = 0)
 

@@ -16,7 +16,7 @@
 	var/updating = FALSE
 	var/obj/machinery/camera/VertiCamera
 
-/obj/vertibird/Initialize()
+/obj/vertibird/Initialize(mapload)
 	. = ..()
 	var/obj/effect/landmark/vertibird/start = new
 	start.name = "Vertibird Hanger"

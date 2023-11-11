@@ -19,7 +19,7 @@
 	var/extra_reagent = null
 	var/decorated_adjective = "sprinkled"
 
-/obj/item/reagent_containers/food/snacks/donut/Initialize()
+/obj/item/reagent_containers/food/snacks/donut/Initialize(mapload)
 	. = ..()
 	if(prob(30))
 		decorate_donut()
@@ -56,7 +56,7 @@
 	bitesize = 10
 	tastes = list("donut" = 3, "chaos" = 1)
 
-/obj/item/reagent_containers/food/snacks/donut/chaos/Initialize()
+/obj/item/reagent_containers/food/snacks/donut/chaos/Initialize(mapload)
 	. = ..()
 	extra_reagent = pick(/datum/reagent/consumable/nutriment, /datum/reagent/consumable/capsaicin, /datum/reagent/consumable/frostoil,
 					/datum/reagent/drug/krokodil, /datum/reagent/toxin/plasma, /datum/reagent/consumable/coco,
@@ -165,7 +165,7 @@
 	tastes = list("jelly" = 1, "donut" = 3)
 	foodtype = JUNKFOOD | GRAIN | FRIED | FRUIT | SUGAR | BREAKFAST
 
-/obj/item/reagent_containers/food/snacks/donut/jelly/Initialize()
+/obj/item/reagent_containers/food/snacks/donut/jelly/Initialize(mapload)
 	. = ..()
 	if(extra_reagent)
 		reagents.add_reagent(extra_reagent, 3)
@@ -546,7 +546,7 @@
 	tastes = list("mushroom" = 1, "biscuit" = 1)
 	foodtype = GRAIN | VEGETABLES
 
-/obj/item/reagent_containers/food/snacks/plumphelmetbiscuit/Initialize()
+/obj/item/reagent_containers/food/snacks/plumphelmetbiscuit/Initialize(mapload)
 	var/fey = prob(10)
 	if(fey)
 		name = "exceptional plump helmet biscuit"
@@ -724,7 +724,7 @@
 	list_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 3)
 	tastes = list("pancakes" = 1, "chocolate" = 1)
 
-/obj/item/reagent_containers/food/snacks/pancakes/Initialize()
+/obj/item/reagent_containers/food/snacks/pancakes/Initialize(mapload)
 	. = ..()
 	update_icon()
 

@@ -89,7 +89,7 @@
 	if(weapon)
 		. += " <span class='warning'>Is that \a [weapon] taped to it...?</span>"
 
-/mob/living/simple_animal/bot/cleanbot/Initialize()
+/mob/living/simple_animal/bot/cleanbot/Initialize(mapload)
 	. = ..()
 	chosen_name = name
 	get_targets()

@@ -85,7 +85,7 @@ GLOBAL_LIST_EMPTY(network_holopads)
 	desc = "It's a floor-mounted device for projecting holographic images. This one will refuse to auto-connect incoming calls."
 	secure = TRUE
 
-/obj/machinery/holopad/secure/Initialize()
+/obj/machinery/holopad/secure/Initialize(mapload)
 	. = ..()
 	var/obj/item/circuitboard/machine/holopad/board = circuit
 	board.secure = TRUE
@@ -123,7 +123,7 @@ GLOBAL_LIST_EMPTY(network_holopads)
 	if(!replay_mode && (disk && disk.record))
 		replay_start()
 
-/obj/machinery/holopad/Initialize()
+/obj/machinery/holopad/Initialize(mapload)
 	. = ..()
 	if(on_network)
 		GLOB.network_holopads += src

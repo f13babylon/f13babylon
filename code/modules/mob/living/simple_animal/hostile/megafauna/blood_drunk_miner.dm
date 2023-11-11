@@ -78,7 +78,7 @@ Difficulty: Medium
 	icon_state = "ka_tracer"
 	range = MINER_DASH_RANGE
 
-/mob/living/simple_animal/hostile/megafauna/blood_drunk_miner/Initialize()
+/mob/living/simple_animal/hostile/megafauna/blood_drunk_miner/Initialize(mapload)
 	. = ..()
 	internal = new/obj/item/gps/internal/miner(src)
 	miner_saw = new(src)

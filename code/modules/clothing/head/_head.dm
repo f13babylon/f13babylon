@@ -12,7 +12,7 @@
 	var/list/speechspan = null
 	armor = list("melee" = 15, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 10)
 
-/obj/item/clothing/head/Initialize()
+/obj/item/clothing/head/Initialize(mapload)
 	. = ..()
 	if(ishuman(loc) && dynamic_hair_suffix)
 		var/mob/living/carbon/human/H = loc

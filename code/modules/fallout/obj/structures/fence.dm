@@ -26,7 +26,7 @@
 	max_integrity = 300 // juuuust about lower health than a door is.
 
 
-/obj/structure/fence/Initialize()
+/obj/structure/fence/Initialize(mapload)
 	. = ..()
 
 	update_cut_status()
@@ -166,7 +166,7 @@
 	cuttable = FALSE
 	var/open = FALSE
 
-/obj/structure/fence/door/Initialize()
+/obj/structure/fence/door/Initialize(mapload)
 	. = ..()
 
 	update_door_status()

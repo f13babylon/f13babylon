@@ -20,7 +20,7 @@
 	var/grace_count = 0
 	var/datum/looping_sound/geiger/soundloop
 
-/obj/item/clothing/head/helmet/space/hardsuit/Initialize()
+/obj/item/clothing/head/helmet/space/hardsuit/Initialize(mapload)
 	. = ..()
 	soundloop = new(src, FALSE, TRUE)
 	soundloop.volume = 5
@@ -105,7 +105,7 @@
 	var/hardsuit_type
 
 
-/obj/item/clothing/suit/space/hardsuit/Initialize()
+/obj/item/clothing/suit/space/hardsuit/Initialize(mapload)
 	if(jetpack && ispath(jetpack))
 		jetpack = new jetpack(src)
 	return ..()
@@ -239,7 +239,7 @@
 	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
 	light_range = 7
 
-/obj/item/clothing/head/helmet/space/hardsuit/mining/Initialize()
+/obj/item/clothing/head/helmet/space/hardsuit/mining/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -255,7 +255,7 @@
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_ALL_TAURIC
 
-/obj/item/clothing/suit/space/hardsuit/mining/Initialize()
+/obj/item/clothing/suit/space/hardsuit/mining/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -277,7 +277,7 @@
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/update_icon_state()
 	icon_state = "hardsuit[on]-[hardsuit_type]"
 
-/obj/item/clothing/head/helmet/space/hardsuit/syndi/Initialize()
+/obj/item/clothing/head/helmet/space/hardsuit/syndi/Initialize(mapload)
 	. = ..()
 	if(istype(loc, /obj/item/clothing/suit/space/hardsuit/syndi))
 		linkedsuit = loc
@@ -372,7 +372,7 @@
 
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/debug
 
-/obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/debug/Initialize()
+/obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/debug/Initialize(mapload)
 	. = ..()
 	soundloop.volume = 0
 
@@ -496,7 +496,7 @@
 	clothing_flags = STOPSPRESSUREDAMAGE | THICKMATERIAL | BLOCK_GAS_SMOKE_EFFECT | ALLOWINTERNALS | SCAN_REAGENTS
 	actions_types = list(/datum/action/item_action/toggle_helmet_light, /datum/action/item_action/toggle_research_scanner)
 
-/obj/item/clothing/head/helmet/space/hardsuit/rd/Initialize()
+/obj/item/clothing/head/helmet/space/hardsuit/rd/Initialize(mapload)
 	. = ..()
 	bomb_radar = new /obj/machinery/doppler_array/integrated(src)
 
@@ -540,7 +540,7 @@
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_ALL_TAURIC
 
-/obj/item/clothing/suit/space/hardsuit/security/Initialize()
+/obj/item/clothing/suit/space/hardsuit/security/Initialize(mapload)
 	. = ..()
 	allowed = GLOB.security_hardsuit_allowed
 
@@ -587,7 +587,7 @@
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT //this needed to be added a long fucking time ago
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/captain
 
-/obj/item/clothing/suit/space/hardsuit/captain/Initialize()
+/obj/item/clothing/suit/space/hardsuit/captain/Initialize(mapload)
 	. = ..()
 	allowed = GLOB.security_hardsuit_allowed
 
@@ -641,7 +641,7 @@
 	clothing_flags = STOPSPRESSUREDAMAGE | THICKMATERIAL | BLOCK_GAS_SMOKE_EFFECT | ALLOWINTERNALS | SCAN_REAGENTS
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 
-/obj/item/clothing/head/helmet/space/hardsuit/ancient/mason/Initialize()
+/obj/item/clothing/head/helmet/space/hardsuit/ancient/mason/Initialize(mapload)
 	. = ..()
 	bomb_radar = new /obj/machinery/doppler_array/integrated(src)
 
@@ -710,7 +710,7 @@
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/soviet
 	mutantrace_variation = NONE
 
-/obj/item/clothing/suit/space/hardsuit/soviet/Initialize()
+/obj/item/clothing/suit/space/hardsuit/soviet/Initialize(mapload)
 	. = ..()
 	allowed = GLOB.security_hardsuit_allowed
 
@@ -730,7 +730,7 @@
 	var/recharge_rate = 1 //How quickly the shield recharges once it starts charging
 	var/shield_state = "shield-old"
 
-/obj/item/clothing/suit/space/hardsuit/shielded/Initialize()
+/obj/item/clothing/suit/space/hardsuit/shielded/Initialize(mapload)
 	. = ..()
 	if(!allowed)
 		allowed = GLOB.advanced_hardsuit_allowed
@@ -755,7 +755,7 @@
 	slowdown = 0
 	max_charges = 5
 
-/obj/item/clothing/suit/space/hardsuit/shielded/ctf/Initialize()
+/obj/item/clothing/suit/space/hardsuit/shielded/ctf/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, CAPTURE_THE_FLAG_TRAIT)
 
@@ -807,7 +807,7 @@
 	slowdown = 0
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_ALL_TAURIC
 
-/obj/item/clothing/suit/space/hardsuit/shielded/syndi/Initialize()
+/obj/item/clothing/suit/space/hardsuit/shielded/syndi/Initialize(mapload)
 	jetpack = new /obj/item/tank/jetpack/suit(src)
 	. = ..()
 
@@ -863,7 +863,7 @@
 	var/energy_color = "#35FFF0"
 	mutantrace_variation = NONE
 
-/obj/item/clothing/head/helmet/space/hardsuit/lavaknight/Initialize()
+/obj/item/clothing/head/helmet/space/hardsuit/lavaknight/Initialize(mapload)
 	. = ..()
 	if(istype(loc, /obj/item/clothing/suit/space/hardsuit/lavaknight))
 		var/obj/item/clothing/suit/space/hardsuit/lavaknight/S = loc
@@ -904,7 +904,7 @@
 	light_on = TRUE
 	var/energy_color = "#35FFF0"
 
-/obj/item/clothing/suit/space/hardsuit/lavaknight/Initialize()
+/obj/item/clothing/suit/space/hardsuit/lavaknight/Initialize(mapload)
 	. = ..()
 	set_light_color(energy_color)
 	update_icon()

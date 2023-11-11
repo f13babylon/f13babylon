@@ -27,7 +27,7 @@
 	var/cleanspeed = 10 //small timer, not instant like mops
 	force_string = "robust... against germs"
 
-/obj/item/soap/Initialize()
+/obj/item/soap/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/slippery, 80)
 

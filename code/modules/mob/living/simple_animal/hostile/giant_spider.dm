@@ -57,7 +57,7 @@
 	var/datum/action/innate/spider/lay_web/lay_web
 	var/directive = "" //Message passed down to children, to relay the creator's orders
 
-/mob/living/simple_animal/hostile/poison/giant_spider/Initialize()
+/mob/living/simple_animal/hostile/poison/giant_spider/Initialize(mapload)
 	. = ..()
 	lay_web = new
 	lay_web.Grant(src)
@@ -120,7 +120,7 @@
 	var/datum/action/innate/spider/set_directive/set_directive
 	var/static/list/consumed_mobs = list() //the tags of mobs that have been consumed by nurse spiders to lay eggs
 
-/mob/living/simple_animal/hostile/poison/giant_spider/nurse/Initialize()
+/mob/living/simple_animal/hostile/poison/giant_spider/nurse/Initialize(mapload)
 	. = ..()
 	wrap = new
 	AddAbility(wrap)
@@ -206,7 +206,7 @@
 	var/datum/action/innate/spider/comm/letmetalkpls
 	gold_core_spawnable = NO_SPAWN
 
-/mob/living/simple_animal/hostile/poison/giant_spider/nurse/midwife/Initialize()
+/mob/living/simple_animal/hostile/poison/giant_spider/nurse/midwife/Initialize(mapload)
 	. = ..()
 	letmetalkpls = new
 	letmetalkpls.Grant(src)

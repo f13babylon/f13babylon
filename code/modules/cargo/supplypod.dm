@@ -74,7 +74,7 @@
 	holder.forceMove(pick(GLOB.holdingfacility)) // land in ninja jail
 	open(holder, forced = TRUE)
 
-/obj/structure/closet/supplypod/Initialize()
+/obj/structure/closet/supplypod/Initialize(mapload)
 	. = ..()
 	setStyle(style, TRUE) //Upon initialization, give the supplypod an iconstate, name, and description based on the "style" variable. This system is important for the centcom_podlauncher to function correctly
 

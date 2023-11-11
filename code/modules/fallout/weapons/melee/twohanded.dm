@@ -13,7 +13,7 @@
 	var/icon_prefix = null
 	var/wielded = FALSE
 
-/obj/item/twohanded/Initialize()
+/obj/item/twohanded/Initialize(mapload)
 	. = ..()
 	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, .proc/on_wield)
 	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, .proc/on_unwield)
@@ -973,7 +973,7 @@ CODE FOR POISON EFFECT
 			else
 				..()
 
-/obj/item/twohanded/bonespear/venom/Initialize()
+/obj/item/twohanded/bonespear/venom/Initialize(mapload)
 	. = ..()
 	create_reagents(72) //mix that causes quick incap without significant risk of death, at least with one attacker. 4-5 attacks on a single target typically causes histamine symptoms, fatigue, sleep, as well as minor suffocation, toxins, and possible liver damage
 	reagents.add_reagent(/datum/reagent/venom,12)

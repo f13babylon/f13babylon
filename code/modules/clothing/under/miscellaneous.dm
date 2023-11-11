@@ -687,7 +687,7 @@
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
 
-/obj/item/clothing/under/maid/Initialize()
+/obj/item/clothing/under/maid/Initialize(mapload)
 	. = ..()
 	var/obj/item/clothing/accessory/maidapron/A = new (src)
 	attach_accessory(A)

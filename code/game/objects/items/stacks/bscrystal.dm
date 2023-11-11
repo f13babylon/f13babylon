@@ -19,7 +19,7 @@
 	refined_type = null
 	merge_type = /obj/item/stack/ore/bluespace_crystal/refined
 
-/obj/item/stack/ore/bluespace_crystal/Initialize()
+/obj/item/stack/ore/bluespace_crystal/Initialize(mapload)
 	. = ..()
 	pixel_x = rand(-5, 5)
 	pixel_y = rand(-5, 5)

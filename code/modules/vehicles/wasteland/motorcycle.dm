@@ -17,7 +17,7 @@
 	engine_on_sound = 'sound/f13machines/bike_start.ogg'
 	engine_loop_sound = 'sound/f13machines/bike_loop.ogg'
 
-/obj/vehicle/ridden/fuel/motorcycle/Initialize()
+/obj/vehicle/ridden/fuel/motorcycle/Initialize(mapload)
 	. = ..()
 	update_icon()
 
@@ -69,7 +69,7 @@
 	desc = "A keyring with a small steel key.<br>By the look of the key cuts it likely belongs to a motorcycle."
 	icon = 'icons/fallout/vehicles/small_vehicles.dmi'
 
-/obj/item/key/motorcycle/Initialize()
+/obj/item/key/motorcycle/Initialize(mapload)
 	. = ..()
 	icon_state = pick("key-bike-r","key-bike-y","key-bike-g","key-bike-b")
 
@@ -81,7 +81,7 @@
 	icon_state = "bike_rust_med"
 //	D.vehicle_move_delay = 1.2
 
-/obj/vehicle/ridden/fuel/motorcycle/rusty/Initialize()
+/obj/vehicle/ridden/fuel/motorcycle/rusty/Initialize(mapload)
 	. = ..()
 	var/datum/component/riding/D = LoadComponent(/datum/component/riding)
 	D.vehicle_move_delay = 1.1//only 10% slower.
@@ -101,7 +101,7 @@
 	desc = "Scrambler is an old term for a dirt bike with a powerful engine that raced on dirt tracks with low jumps.<br>Something tells you it's better not to mess around with its owner."
 	icon_state = "bike_scrambler"
 
-/obj/vehicle/ridden/fuel/motorcycle/scrambler/Initialize()
+/obj/vehicle/ridden/fuel/motorcycle/scrambler/Initialize(mapload)
 	. = ..()
 	var/datum/component/riding/D = LoadComponent(/datum/component/riding)
 	D.vehicle_move_delay = 0.7
@@ -118,6 +118,6 @@
 	item_flags = ABSTRACT | NOBLUDGEON | DROPDEL
 	resistance_flags = FIRE_PROOF | UNACIDABLE | ACID_PROOF
 
-/obj/item/handlebars/Initialize()
+/obj/item/handlebars/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)

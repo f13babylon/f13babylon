@@ -15,7 +15,7 @@
 	var/check_antimagic = TRUE
 	var/check_holy = FALSE
 
-/obj/effect/clockwork/sigil/Initialize()
+/obj/effect/clockwork/sigil/Initialize(mapload)
 	. = ..()
 
 	var/static/list/loc_connections = list(
@@ -195,7 +195,7 @@
 	sigil_name = "Sigil of Transmission"
 	affects_servants = TRUE
 
-/obj/effect/clockwork/sigil/transmission/Initialize()
+/obj/effect/clockwork/sigil/transmission/Initialize(mapload)
 	. = ..()
 	update_icon()
 

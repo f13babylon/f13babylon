@@ -22,7 +22,7 @@
 	damage = 25
 	shrapnel_magnitude = 2
 
-/obj/item/projectile/bullet/rocket/a84mm_chem/Initialize()
+/obj/item/projectile/bullet/rocket/a84mm_chem/Initialize(mapload)
 	. = ..()
 	create_reagents(120, NO_REAGENTS_VALUE)
 	reagents.add_reagent(/datum/reagent/toxin/metabtoxin, 30)

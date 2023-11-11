@@ -91,7 +91,7 @@
 	deathmessage = "wails as its form shudders and violently comes to a stop."
 	death_sound = 'sound/voice/abomburning.ogg'
 
-/mob/living/simple_animal/hostile/abomination/Initialize()
+/mob/living/simple_animal/hostile/abomination/Initialize(mapload)
 	. = ..()
 	abom_sounds = list('sound/voice/abomination1.ogg', 'sound/voice/abomscream.ogg', 'sound/voice/abommoan.ogg', 'sound/voice/abomscream2.ogg', 'sound/voice/abomscream3.ogg')
 
@@ -160,7 +160,7 @@
 	speed = -1
 	deathmessage = "wails as its form shudders and violently comes to a stop."
 
-/mob/living/simple_animal/hostile/abomhorror/nsb/Initialize()
+/mob/living/simple_animal/hostile/abomhorror/nsb/Initialize(mapload)
 	. = ..()
 	abom_sounds = list('sound/voice/abomination1.ogg', 'sound/voice/abomscream.ogg', 'sound/voice/abommoan.ogg', 'sound/voice/abomscream2.ogg', 'sound/voice/abomscream3.ogg')
 

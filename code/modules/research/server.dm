@@ -34,7 +34,7 @@
 	LAZYREMOVE(SSresearch.servernets[research_id], src)
 	// todo: maybe delete (custom?) techwebs if we remove the last server one has? :thinking:
 
-/obj/machinery/rnd/server/Initialize()
+/obj/machinery/rnd/server/Initialize(mapload)
 	. = ..()
 	SSresearch.servers |= src // global rnd server list
 	init_server()

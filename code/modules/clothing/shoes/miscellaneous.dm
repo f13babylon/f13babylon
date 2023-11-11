@@ -184,7 +184,7 @@
 /obj/item/clothing/shoes/cult/alt/ghost
 	item_flags = DROPDEL
 
-/obj/item/clothing/shoes/cult/alt/ghost/Initialize()
+/obj/item/clothing/shoes/cult/alt/ghost/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, CULT_TRAIT)
 
@@ -267,7 +267,7 @@
 	var/wheelToggle = FALSE //False means wheels are not popped out
 	var/obj/vehicle/ridden/scooter/wheelys/W
 
-/obj/item/clothing/shoes/wheelys/Initialize()
+/obj/item/clothing/shoes/wheelys/Initialize(mapload)
 	. = ..()
 	W = new /obj/vehicle/ridden/scooter/wheelys(null)
 

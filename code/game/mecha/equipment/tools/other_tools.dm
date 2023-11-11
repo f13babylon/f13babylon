@@ -358,7 +358,7 @@
 	var/fuel_per_cycle_active = 200
 	var/power_per_cycle = 50
 
-/obj/item/mecha_parts/mecha_equipment/generator/Initialize()
+/obj/item/mecha_parts/mecha_equipment/generator/Initialize(mapload)
 	. = ..()
 	generator_init()
 

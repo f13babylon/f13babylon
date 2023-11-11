@@ -77,7 +77,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 /obj/item/katana/cursed
 	slot_flags = null
 
-/obj/item/katana/cursed/Initialize()
+/obj/item/katana/cursed/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
 
@@ -177,7 +177,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 /datum/block_parry_data/bokken/quick_parry/proj
 	parry_efficiency_perfect_override = list()
 
-/obj/item/melee/bokken/Initialize()
+/obj/item/melee/bokken/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/sword_point)
 	if(!harm) //if initialised in non-harm mode, setup force accordingly
@@ -433,7 +433,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	attack_verb = list("busted")
 	var/impressiveness = 45
 
-/obj/item/statuebust/Initialize()
+/obj/item/statuebust/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/art, impressiveness)
 	addtimer(CALLBACK(src, /datum.proc/_AddElement, list(/datum/element/beauty, 1000)), 0)
@@ -478,7 +478,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	var/list/strong_against
 	var/list/spider_panic
 
-/obj/item/melee/flyswatter/Initialize()
+/obj/item/melee/flyswatter/Initialize(mapload)
 	. = ..()
 	strong_against = typecacheof(list(
 					/mob/living/simple_animal/hostile/poison/bees/,
@@ -517,7 +517,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	item_flags = DROPDEL | ABSTRACT
 	attack_verb = list("bopped")
 
-/obj/item/circlegame/Initialize()
+/obj/item/circlegame/Initialize(mapload)
 	. = ..()
 	var/mob/living/owner = loc
 	if(!istype(owner))
@@ -677,7 +677,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	var/wielded = FALSE // track wielded status on item
 
-/obj/item/vibro_weapon/Initialize()
+/obj/item/vibro_weapon/Initialize(mapload)
 	. = ..()
 	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, .proc/on_wield)
 	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, .proc/on_unwield)
@@ -733,7 +733,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	resistance_flags = FIRE_PROOF
 	var/wielded = FALSE // track wielded status on item
 
-/obj/item/pitchfork/Initialize()
+/obj/item/pitchfork/Initialize(mapload)
 	. = ..()
 	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, .proc/on_wield)
 	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, .proc/on_unwield)

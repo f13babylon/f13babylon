@@ -57,7 +57,7 @@
 	state = EMITTER_WELDED
 	use_power = FALSE
 
-/obj/machinery/power/emitter/Initialize()
+/obj/machinery/power/emitter/Initialize(mapload)
 	. = ..()
 	RefreshParts()
 	wires = new /datum/wires/emitter(src)
@@ -459,7 +459,7 @@
 	resistance_flags = FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	var/delay = 0
 
-/obj/item/turret_control/Initialize()
+/obj/item/turret_control/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, ABSTRACT_ITEM_TRAIT)
 

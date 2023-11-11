@@ -10,7 +10,7 @@
 	layer = ABOVE_MOB_LAYER
 	resistance_flags = INDESTRUCTIBLE
 
-/obj/structure/statue_fal/Initialize()
+/obj/structure/statue_fal/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/largetransparency, x_size = 1, y_size = 2)
 

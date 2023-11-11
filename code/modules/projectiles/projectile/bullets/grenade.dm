@@ -25,7 +25,7 @@
 	pixels_per_second = TILES_TO_PIXELS(10) //slower than bullets
 	var/datum/effect_system/smoke_spread/bad/smoke
 
-/obj/item/projectile/bullet/a40mmCS/Initialize()
+/obj/item/projectile/bullet/a40mmCS/Initialize(mapload)
 	. = ..()
 	src.smoke = new /datum/effect_system/smoke_spread/teargas
 	src.smoke.attach(src)
@@ -63,7 +63,7 @@
 	pixels_per_second = TILES_TO_PIXELS(10) //slower than bullets
 	var/datum/effect_system/smoke_spread/bad/smoke
 
-/obj/item/projectile/bullet/a40mmS/Initialize()
+/obj/item/projectile/bullet/a40mmS/Initialize(mapload)
 	. = ..()
 	src.smoke = new /datum/effect_system/smoke_spread/teargas
 	src.smoke.attach(src)

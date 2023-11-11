@@ -388,7 +388,7 @@
 /obj/item/stack/medical/mesh/advanced/five
 	amount = 5
 
-/obj/item/stack/medical/mesh/Initialize()
+/obj/item/stack/medical/mesh/Initialize(mapload)
 	. = ..()
 	if(amount == max_amount)	 //only seal full mesh packs
 		is_open = FALSE
@@ -502,7 +502,7 @@
 	max_amount = 20
 	grind_results = list(/datum/reagent/consumable/aloejuice = 1)
 
-/obj/item/stack/medical/mesh/aloe/Initialize()
+/obj/item/stack/medical/mesh/aloe/Initialize(mapload)
 	. = ..()
 	if(amount == max_amount)	 //aloe starts open lol
 		is_open = TRUE

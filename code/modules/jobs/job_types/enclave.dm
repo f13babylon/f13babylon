@@ -41,9 +41,9 @@
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
-	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES, src)
+	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK,  REF(src))
+	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 
 
@@ -51,7 +51,7 @@
 /datum/job/enclave/enclavecpt
 	title = "Enclave Captain"
 	flag = F13USLT
-	total_positions = 1
+	total_positions = 0
 	spawn_positions = 1
 	access = list(ACCESS_ENCLAVE, ACCESS_CHANGE_IDS, ACCESS_ENCLAVE_COMMAND, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
 	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. Your goal, primarily, is to collect organic material. Preferably alive, for the sake of testing. <br>\
@@ -114,10 +114,10 @@
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-	ADD_TRAIT(H, TRAIT_RESEARCHER, src)
-	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES, src)
+	ADD_TRAIT(H, TRAIT_PA_WEAR,  REF(src))
+	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
+	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
+	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 
@@ -169,10 +169,10 @@
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-	ADD_TRAIT(H, TRAIT_RESEARCHER, src)
-	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES, src)
+	ADD_TRAIT(H, TRAIT_PA_WEAR,  REF(src))
+	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
+	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
+	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 
@@ -255,10 +255,10 @@
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-	ADD_TRAIT(H, TRAIT_RESEARCHER, src)
-	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES, src)
+	ADD_TRAIT(H, TRAIT_PA_WEAR,  REF(src))
+	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
+	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
+	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 
@@ -320,10 +320,10 @@
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
-	ADD_TRAIT(H, TRAIT_RESEARCHER, src)
-	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
+	ADD_TRAIT(H, TRAIT_PA_WEAR,  REF(src))
+	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
+	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 
@@ -391,10 +391,10 @@
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
-	ADD_TRAIT(H, TRAIT_RESEARCHER, src)
-	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
+	ADD_TRAIT(H, TRAIT_PA_WEAR,  REF(src))
+	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
+	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 
@@ -464,7 +464,7 @@
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES, src)
+	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 
 
@@ -504,7 +504,7 @@
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES, src)
+	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 
 //NON-COMBATANTS
@@ -548,15 +548,15 @@
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
-	ADD_TRAIT(H, TRAIT_CYBERNETICIST_EXPERT, src)
-	ADD_TRAIT(H, TRAIT_CYBERNETICIST, src)
-	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
-	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
-	ADD_TRAIT(H, TRAIT_RESEARCHER, src)
-	ADD_TRAIT(H, TRAIT_UNETHICAL_PRACTITIONER, src) // Brainwashing
-	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES, src)
-//	ADD_TRAIT(H, TRAIT_POOR_AIM, src)
+	ADD_TRAIT(H, TRAIT_MEDICALEXPERT,  REF(src))
+	ADD_TRAIT(H, TRAIT_CYBERNETICIST_EXPERT,  REF(src))
+	ADD_TRAIT(H, TRAIT_CYBERNETICIST,  REF(src))
+	ADD_TRAIT(H, TRAIT_SURGERY_HIGH,  REF(src))
+	ADD_TRAIT(H, TRAIT_CHEMWHIZ,  REF(src))
+	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
+	ADD_TRAIT(H, TRAIT_UNETHICAL_PRACTITIONER,  REF(src)) // Brainwashing
+	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
+//	ADD_TRAIT(H, TRAIT_POOR_AIM,  REF(src))
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/needle)
 
@@ -598,9 +598,9 @@
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_PILOT, src)
-	ADD_TRAIT(H, TRAIT_RESEARCHER, src)
-	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES, src)
+	ADD_TRAIT(H, TRAIT_PILOT,  REF(src))
+	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
+	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 
@@ -736,8 +736,8 @@
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
-	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES, src)
+	ADD_TRAIT(H, TRAIT_PA_WEAR,  REF(src))
+	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 

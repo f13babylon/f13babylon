@@ -13,7 +13,7 @@
 	item_state = "desert_ranger"
 	armor = list("melee" = 20, "bullet" = 30, "laser" = 10, "energy" = 20, "bomb" = 30, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
-/obj/item/clothing/suit/armor/f13/rangercombat/desert/whiskey/Initialize()
+/obj/item/clothing/suit/armor/f13/rangercombat/desert/whiskey/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -77,7 +77,7 @@
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 
 //Probably not needed, but we'll see.
-/obj/item/clothing/suit/armor/f13/rangercombat/desert/carl/Initialize()
+/obj/item/clothing/suit/armor/f13/rangercombat/desert/carl/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -93,7 +93,7 @@
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 
 //Probably not needed, but we'll see.
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat/desert/carl/Initialize()
+/obj/item/clothing/head/helmet/f13/ncr/rangercombat/desert/carl/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 

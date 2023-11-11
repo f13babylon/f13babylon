@@ -63,7 +63,7 @@
 /obj/machinery/computer/arcade/proc/Reset()
 	return
 
-/obj/machinery/computer/arcade/Initialize()
+/obj/machinery/computer/arcade/Initialize(mapload)
 	. = ..()
 	// If it's a generic arcade machine, pick a random arcade
 	// circuit board for it and make the new machine

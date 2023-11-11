@@ -14,7 +14,7 @@
 	armor = list("melee" = 20, "bullet" = 10, "laser" = 10, "bio" = 0, "bomb" = 10, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 10)
 	slowdown = 0
 
-/obj/item/clothing/head/Initialize()
+/obj/item/clothing/head/Initialize(mapload)
 	. = ..()
 	if(ishuman(loc) && dynamic_hair_suffix)
 		var/mob/living/carbon/human/H = loc
@@ -64,7 +64,7 @@
 	icon_state = "supafly"
 	item_state = "supafly"
 
-/obj/item/clothing/head/helmet/f13/raider/supafly/Initialize() //HQ parts reinforcement
+/obj/item/clothing/head/helmet/f13/raider/supafly/Initialize(mapload) //HQ parts reinforcement
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -75,7 +75,7 @@
 	item_state = "raider_wastehound_hood"
 	visor_flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDESNOUT
 
-/obj/item/clothing/head/helmet/f13/raider/wastehound/Initialize() //HQ parts reinforcement
+/obj/item/clothing/head/helmet/f13/raider/wastehound/Initialize(mapload) //HQ parts reinforcement
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -89,7 +89,7 @@
 	flash_protect = 2
 	tint = 0.5
 
-/obj/item/clothing/head/helmet/f13/raider/arclight/Initialize()
+/obj/item/clothing/head/helmet/f13/raider/arclight/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -102,7 +102,7 @@
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 
-/obj/item/clothing/head/helmet/f13/raider/blastmaster/Initialize()
+/obj/item/clothing/head/helmet/f13/raider/blastmaster/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -113,7 +113,7 @@
 	item_state = "yankee"
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDESNOUT|HIDEFACIALHAIR
 
-/obj/item/clothing/head/helmet/f13/raider/yankee/Initialize()
+/obj/item/clothing/head/helmet/f13/raider/yankee/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -129,7 +129,7 @@
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 
-/obj/item/clothing/head/helmet/f13/raider/eyebot/Initialize()
+/obj/item/clothing/head/helmet/f13/raider/eyebot/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -141,7 +141,7 @@
 	flags_cover = HEADCOVERSEYES
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
 
-/obj/item/clothing/head/helmet/f13/raider/psychotic/Initialize()
+/obj/item/clothing/head/helmet/f13/raider/psychotic/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -196,7 +196,7 @@
 	item_color = "enclave"
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 90)
 
-/obj/item/clothing/head/helmet/soft/f13/enclave/Initialize()
+/obj/item/clothing/head/helmet/soft/f13/enclave/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -251,7 +251,7 @@
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 40, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 50)
 
-/obj/item/clothing/head/helmet/f13/enclave/marine/Initialize()
+/obj/item/clothing/head/helmet/f13/enclave/marine/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -302,7 +302,7 @@
 	dynamic_fhair_suffix = ""
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 1)
 
-/obj/item/clothing/head/helmet/f13/legion/Initialize()
+/obj/item/clothing/head/helmet/f13/legion/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -500,7 +500,7 @@
 	unique_reskin = list("M1" = "ncr_old")
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 1)
 
-/obj/item/clothing/head/f13/ncr/Initialize()
+/obj/item/clothing/head/f13/ncr/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -677,7 +677,7 @@
 	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 12)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
 
-/obj/item/clothing/head/beret/ncr_recon_ranger/Initialize()
+/obj/item/clothing/head/beret/ncr_recon_ranger/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -689,7 +689,7 @@
 	armor = list("melee" = 35, "bullet" = 45, "laser" = 25, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
 
-/obj/item/clothing/head/f13/trailranger/Initialize()
+/obj/item/clothing/head/f13/trailranger/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -701,7 +701,7 @@
 	armor = list("melee" = 35, "bullet" = 45, "laser" = 25, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
 
-/obj/item/clothing/head/f13/ranger/Initialize()
+/obj/item/clothing/head/f13/ranger/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -715,7 +715,7 @@
 	armor = list("melee" = 35, "bullet" = 45, "laser" = 25, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
 
-/obj/item/clothing/head/helmet/f13/combat/ncr_patrol/Initialize()
+/obj/item/clothing/head/helmet/f13/combat/ncr_patrol/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -737,7 +737,7 @@
 	darkness_view = 24
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 3, /obj/item/clothing/glasses/night/polarizing = 1)
 
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat/Initialize()
+/obj/item/clothing/head/helmet/f13/ncr/rangercombat/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -854,7 +854,7 @@
 	icon_state = "deputyhat"
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 40,  "energy" = 35, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 50)
 
-/obj/item/clothing/head/f13/town/deputy/Initialize()
+/obj/item/clothing/head/f13/town/deputy/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -867,7 +867,7 @@
 	item_state = "police_officer"
 
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 35,  "energy" = 35, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 10)
-/obj/item/clothing/head/f13/town/officer/Initialize()
+/obj/item/clothing/head/f13/town/officer/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -877,7 +877,7 @@
 	icon_state = "sheriffhat"
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 45,  "energy" = 35, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 50)
 
-/obj/item/clothing/head/f13/town/sheriff/Initialize()
+/obj/item/clothing/head/f13/town/sheriff/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -890,7 +890,7 @@
 	item_state = "police_chief"
 	armor = list("melee" = 45, "bullet" = 60, "laser" = 40,  "energy" = 35, "bomb" = 40, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 10)
 
-/obj/item/clothing/head/f13/town/chief/Initialize()
+/obj/item/clothing/head/f13/town/chief/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -921,7 +921,7 @@
 	dynamic_hair_suffix = "+generic"
 	dynamic_fhair_suffix = null
 
-/obj/item/clothing/head/helmet/f13/khan/Initialize()
+/obj/item/clothing/head/helmet/f13/khan/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -931,7 +931,7 @@
 	icon_state = "khan_helmetpelt"
 	item_state = "khan_helmetpelt"
 
-/obj/item/clothing/head/helmet/f13/khan/pelt/Initialize()
+/obj/item/clothing/head/helmet/f13/khan/pelt/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -946,7 +946,7 @@
 	dynamic_fhair_suffix = null
 	var/helmettoggled = FALSE
 
-/obj/item/clothing/head/helmet/f13/khan/bandana/Initialize()
+/obj/item/clothing/head/helmet/f13/khan/bandana/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -990,7 +990,7 @@
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	strip_delay = 20
 
-/obj/item/clothing/head/helmet/f13/khan/fullhelm/Initialize()
+/obj/item/clothing/head/helmet/f13/khan/fullhelm/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 

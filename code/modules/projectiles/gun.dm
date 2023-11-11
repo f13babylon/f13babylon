@@ -255,7 +255,7 @@ ATTACHMENTS
 
 	var/automatic = 0 //can gun use it, 0 is no, anything above 0 is the delay between clicks in ds
 
-/obj/item/gun/Initialize()
+/obj/item/gun/Initialize(mapload)
 	. = ..()
 	if(no_pin_required)
 		pin = null
@@ -351,10 +351,6 @@ ATTACHMENTS
 /obj/item/gun/proc/shoot_live_shot(mob/living/user, pointblank = FALSE, mob/pbtarget, message = 1, stam_cost = 0)
 	if(recoil)
 		shake_camera(user, recoil + 1, recoil)
-
-	if(stam_cost) //CIT CHANGE - makes gun recoil cause staminaloss
-		var/safe_cost = clamp(stam_cost, 0, STAMINA_NEAR_CRIT - user.getStaminaLoss())*(firing && burst_size >= 2 ? 1/burst_size : 1)
-		user.adjustStaminaLossBuffered(safe_cost) //CIT CHANGE - ditto
 
 	if(suppressed)
 		playsound(user, fire_sound, 10, 1)
@@ -1196,7 +1192,7 @@ CODE FOR ASSAULT RIFE WITH GRENADE LAUNCHER ATTACHED
 	automatic_burst_overlay = FALSE
 	var/obj/item/gun/ballistic/revolver/grenadelauncher/underbarrel
 
-/obj/item/gun/ballistic/automatic/m90/Initialize()
+/obj/item/gun/ballistic/automatic/m90/Initialize(mapload)
 	. = ..()
 	underbarrel = new /obj/item/gun/ballistic/revolver/grenadelauncher(src)
 	update_icon()
@@ -1204,7 +1200,7 @@ CODE FOR ASSAULT RIFE WITH GRENADE LAUNCHER ATTACHED
 /obj/item/gun/ballistic/automatic/m90/unrestricted
 	pin = /obj/item/firing_pin
 
-/obj/item/gun/ballistic/automatic/m90/unrestricted/Initialize()
+/obj/item/gun/ballistic/automatic/m90/unrestricted/Initialize(mapload)
 	. = ..()
 	underbarrel = new /obj/item/gun/ballistic/revolver/grenadelauncher/unrestricted(src)
 	update_icon()

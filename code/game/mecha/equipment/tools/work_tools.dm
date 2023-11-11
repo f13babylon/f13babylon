@@ -183,7 +183,7 @@
 	range = MELEE|RANGED
 	mech_flags = EXOSUIT_MODULE_WORKING
 
-/obj/item/mecha_parts/mecha_equipment/extinguisher/Initialize()
+/obj/item/mecha_parts/mecha_equipment/extinguisher/Initialize(mapload)
 	. = ..()
 	create_reagents(1000)
 	reagents.add_reagent(/datum/reagent/water, 1000)
@@ -253,7 +253,7 @@
 	mech_flags = EXOSUIT_MODULE_RIPLEY
 	var/mode = 0 //0 - deconstruct, 1 - wall or floor, 2 - airlock.
 
-/obj/item/mecha_parts/mecha_equipment/rcd/Initialize()
+/obj/item/mecha_parts/mecha_equipment/rcd/Initialize(mapload)
 	. = ..()
 	GLOB.rcd_list += src
 
@@ -355,7 +355,7 @@
 	var/obj/item/stack/cable_coil/cable
 	var/max_cable = 1000
 
-/obj/item/mecha_parts/mecha_equipment/cable_layer/Initialize()
+/obj/item/mecha_parts/mecha_equipment/cable_layer/Initialize(mapload)
 	. = ..()
 	cable = new(src, 0)
 

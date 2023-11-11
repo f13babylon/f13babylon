@@ -43,7 +43,7 @@
 	name = "pressure plated mass driver"
 	var/drive_delay = 10
 
-/obj/machinery/mass_driver/pressure_plate/Initialize()
+/obj/machinery/mass_driver/pressure_plate/Initialize(mapload)
 	. = ..()
 
 	var/static/list/loc_connections = list(

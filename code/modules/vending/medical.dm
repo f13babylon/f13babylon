@@ -63,6 +63,6 @@
 	name = "\improper SyndiMed Plus"
 	payment_department = NO_FREEBIES
 
-/obj/machinery/vending/medical/syndicate_access/Initialize()
+/obj/machinery/vending/medical/syndicate_access/Initialize(mapload)
 	. = ..()
 	cost_multiplier_per_dept = list("[ACCESS_SYNDICATE]" = 0)

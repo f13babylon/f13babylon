@@ -92,7 +92,7 @@ Difficulty: Very Hard
 			INVOKE_ASYNC(src, .proc/alternating_dir_shots)
 
 
-/mob/living/simple_animal/hostile/megafauna/colossus/Initialize()
+/mob/living/simple_animal/hostile/megafauna/colossus/Initialize(mapload)
 	. = ..()
 	internal = new/obj/item/gps/internal/colossus(src)
 
@@ -259,7 +259,7 @@ Difficulty: Very Hard
 	return TRUE
 
 GLOBAL_DATUM(blackbox_fridge, /obj/machinery/smartfridge/black_box)
-/obj/machinery/smartfridge/black_box/Initialize()
+/obj/machinery/smartfridge/black_box/Initialize(mapload)
 	. = ..()
 	if(GLOB.blackbox_fridge && GLOB.blackbox_fridge != src)
 		qdel(src, force=TRUE)
@@ -433,7 +433,7 @@ GLOBAL_DATUM(blackbox_fridge, /obj/machinery/smartfridge/black_box)
 	var/list/NewFlora = list()
 	var/florachance = 8
 
-/obj/machinery/anomalous_crystal/theme_warp/Initialize()
+/obj/machinery/anomalous_crystal/theme_warp/Initialize(mapload)
 	. = ..()
 	terrain_theme = pick("lavaland","winter","jungle","ayy lmao")
 	observer_desc = "This crystal changes the area around it to match the theme of \"[terrain_theme]\"."
@@ -499,7 +499,7 @@ GLOBAL_DATUM(blackbox_fridge, /obj/machinery/smartfridge/black_box)
 	cooldown_add = 50
 	var/obj/item/projectile/generated_projectile = /obj/item/projectile/beam/emitter
 
-/obj/machinery/anomalous_crystal/emitter/Initialize()
+/obj/machinery/anomalous_crystal/emitter/Initialize(mapload)
 	. = ..()
 	generated_projectile = pick(/obj/item/projectile/colossus)
 
@@ -624,7 +624,7 @@ GLOBAL_DATUM(blackbox_fridge, /obj/machinery/smartfridge/black_box)
 	stop_automated_movement = 1
 	var/heal_power = 5
 
-/mob/living/simple_animal/hostile/lightgeist/Initialize()
+/mob/living/simple_animal/hostile/lightgeist/Initialize(mapload)
 	. = ..()
 	remove_verb(src, /mob/living/verb/pulled)
 	remove_verb(src, /mob/verb/me_verb)

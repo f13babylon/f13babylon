@@ -233,7 +233,7 @@
 /obj/structure/chair/booth/proc/update_overlay()
 		add_overlay(overlay)
 
-/obj/structure/chair/booth/Initialize()
+/obj/structure/chair/booth/Initialize(mapload)
 	overlay = GetOverlay()
 	overlay.layer = ABOVE_ALL_MOB_LAYER
 	overlay.plane = MOB_PLANE
@@ -259,7 +259,7 @@
 /obj/structure/chair/left/proc/update_overlay()
 		add_overlay(overlay)
 
-/obj/structure/chair/left/Initialize()
+/obj/structure/chair/left/Initialize(mapload)
 	overlay = GetOverlay()
 	overlay.layer = ABOVE_ALL_MOB_LAYER
 	overlay.plane = MOB_PLANE
@@ -282,7 +282,7 @@
 	item_chair = null
 	var/mutable_appearance/overlay
 
-/obj/structure/chair/left/Initialize()
+/obj/structure/chair/left/Initialize(mapload)
 	overlay = GetOverlay()
 	overlay.layer = ABOVE_ALL_MOB_LAYER
 	overlay.plane = MOB_PLANE
@@ -305,7 +305,7 @@
 /obj/structure/chair/middle/proc/update_overlay()
 		add_overlay(overlay)
 
-/obj/structure/chair/middle/Initialize()
+/obj/structure/chair/middle/Initialize(mapload)
 	overlay = GetOverlay()
 	overlay.layer = ABOVE_ALL_MOB_LAYER
 	overlay.plane = MOB_PLANE
@@ -331,7 +331,7 @@
 /obj/structure/chair/right/proc/update_overlay()
 		add_overlay(overlay)
 
-/obj/structure/chair/right/Initialize()
+/obj/structure/chair/right/Initialize(mapload)
 	overlay = GetOverlay()
 	overlay.layer = ABOVE_ALL_MOB_LAYER
 	overlay.plane = MOB_PLANE

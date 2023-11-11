@@ -59,15 +59,15 @@
 /obj/item/radio/headset/headset_den/virt
 	name = "Den VR Radio"
 
-/obj/item/radio/headset/headset_bos/virt/Initialize()
+/obj/item/radio/headset/headset_bos/virt/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
 
-/obj/item/radio/headset/headset_followers/virt/Initialize()
+/obj/item/radio/headset/headset_followers/virt/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
 
-/obj/item/radio/headset/headset_den/virt/Initialize()
+/obj/item/radio/headset/headset_den/virt/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
 

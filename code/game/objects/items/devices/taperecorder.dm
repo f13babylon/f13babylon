@@ -296,7 +296,7 @@
 			to_chat(user, "<span class='notice'>You wound the tape back in.</span>")
 			fix()
 
-/obj/item/tape/Initialize()
+/obj/item/tape/Initialize(mapload)
 	. = ..()
 	originalIconState = icon_state
 
@@ -342,7 +342,7 @@
 /obj/item/tape/random
 	icon_state = "random_tape"
 
-/obj/item/tape/random/Initialize()
+/obj/item/tape/random/Initialize(mapload)
 	icon_state = "tape_[pick("white", "blue", "red", "yellow", "purple")]"
 	return ..()
 

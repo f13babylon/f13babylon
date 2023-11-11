@@ -157,7 +157,7 @@
 	name = "slime processor"
 	desc = "An industrial grinder with a sticker saying appropriated for science department. Keep hands clear of intake area while operating."
 
-/obj/machinery/processor/slime/Initialize()
+/obj/machinery/processor/slime/Initialize(mapload)
 	. = ..()
 	var/obj/item/circuitboard/machine/B = new /obj/item/circuitboard/machine/processor/slime(null)
 	B.apply_default_parts(src)

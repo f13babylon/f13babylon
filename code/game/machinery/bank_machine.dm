@@ -12,7 +12,7 @@
 	var/syphoning_credits = 0
 	connectable = FALSE
 
-/obj/machinery/computer/bank_machine/Initialize()
+/obj/machinery/computer/bank_machine/Initialize(mapload)
 	. = ..()
 	radio = new(src)
 	radio.subspace_transmission = TRUE

@@ -72,7 +72,7 @@
 	var/mutable_appearance/hide_appearance
 	var/mutable_appearance/show_appearance
 
-/obj/screen/movable/action_button/hide_toggle/Initialize()
+/obj/screen/movable/action_button/hide_toggle/Initialize(mapload)
 	. = ..()
 	var/static/list/icon_cache = list()
 

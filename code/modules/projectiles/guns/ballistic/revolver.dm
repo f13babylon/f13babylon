@@ -18,7 +18,7 @@
 	var/select = 0
 	equipsound = 'sound/f13weapons/equipsounds/pistolequip.ogg'
 
-/obj/item/gun/ballistic/revolver/Initialize()
+/obj/item/gun/ballistic/revolver/Initialize(mapload)
 	. = ..()
 	if(!istype(magazine, /obj/item/ammo_box/magazine/internal/cylinder))
 		verbs += /obj/item/gun/ballistic/revolver/verb/spin
@@ -85,7 +85,7 @@
 	. = ..()
 	. += "[get_ammo(0,0)] of those are live rounds."
 
-/obj/item/gun/ballistic/revolver/detective/Initialize()
+/obj/item/gun/ballistic/revolver/detective/Initialize(mapload)
 	. = ..()
 	safe_calibers = magazine.caliber
 
@@ -432,7 +432,7 @@
 	. = ..()
 	spun = TRUE
 
-/obj/item/gun/ballistic/revolver/russian/Initialize()
+/obj/item/gun/ballistic/revolver/russian/Initialize(mapload)
 	. = ..()
 	do_spin()
 	spun = TRUE

@@ -18,7 +18,7 @@
 	var/list/initial_contents
 	var/visible_contents = TRUE
 
-/obj/machinery/smartfridge/Initialize()
+/obj/machinery/smartfridge/Initialize(mapload)
 	. = ..()
 	create_reagents(100, NO_REACT)
 
@@ -248,7 +248,7 @@
 	pass_flags_self = PASSTABLE | LETPASSTHROW
 	var/drying = FALSE
 
-/obj/machinery/smartfridge/drying_rack/Initialize()
+/obj/machinery/smartfridge/drying_rack/Initialize(mapload)
 	. = ..()
 	if(component_parts && component_parts.len)
 		component_parts.Cut()
@@ -453,7 +453,7 @@
 		/obj/item/reagent_containers/medspray/synthtissue = 1,
 		/obj/item/reagent_containers/medspray/sterilizine = 1)
 
-/obj/machinery/smartfridge/organ/preloaded/Initialize()
+/obj/machinery/smartfridge/organ/preloaded/Initialize(mapload)
 	. = ..()
 	var/list = list(/obj/item/organ/tongue, /obj/item/organ/brain, /obj/item/organ/heart, /obj/item/organ/liver, /obj/item/organ/ears, /obj/item/organ/eyes, /obj/item/organ/tail, /obj/item/organ/stomach)
 	var/newtype = pick(list)
@@ -550,7 +550,7 @@
 	//the chance_initial_contents will take each item and give it a 50 percent chance of not spawning
 	var/list/chance_initial_contents
 
-/obj/machinery/smartfridge/bottlerack/Initialize()
+/obj/machinery/smartfridge/bottlerack/Initialize(mapload)
 	. = ..()
 	if(component_parts && component_parts.len)
 		component_parts.Cut()

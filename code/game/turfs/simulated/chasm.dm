@@ -10,7 +10,7 @@
 	density = TRUE //This will prevent hostile mobs from pathing into chasms, while the canpass override will still let it function like an open turf
 	bullet_bounce_sound = null //abandon all hope ye who enter
 
-/turf/open/chasm/Initialize()
+/turf/open/chasm/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/chasm, SSmapping.get_turf_below(src))
 
@@ -121,7 +121,7 @@
 	light_range = 1.9
 	light_power = 0.65
 
-/turf/open/chasm/magic/Initialize()
+/turf/open/chasm/magic/Initialize(mapload)
 	. = ..()
 	var/turf/T = safepick(get_area_turfs(/area/fabric_of_reality))
 	if(T)
@@ -138,7 +138,7 @@
 	underlay_appearance.icon_state = "plating"
 	return TRUE
 
-/turf/open/chasm/elevator/Initialize()
+/turf/open/chasm/elevator/Initialize(mapload)
 	. = ..()
 	var/turf/T = safepick(get_area_turfs(/area/f13/vault_elevator))
 	if(T)
@@ -155,7 +155,7 @@
 	underlay_appearance.icon_state = "plating"
 	return TRUE
 
-/turf/open/chasm/elevator_enc/Initialize()
+/turf/open/chasm/elevator_enc/Initialize(mapload)
 	. = ..()
 	var/turf/T = safepick(get_area_turfs(/area/f13/enc_elevator))
 	if(T)

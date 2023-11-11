@@ -338,6 +338,7 @@
 /area/f13/tunnel/bighorn)
 "abp" = (
 /obj/structure/stairs/north,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
@@ -357,6 +358,7 @@
 	pixel_y = -8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
@@ -365,6 +367,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel/bighorn)
@@ -396,6 +399,7 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
@@ -427,6 +431,7 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
@@ -1117,6 +1122,7 @@
 "aKr" = (
 /obj/machinery/mineral/mint,
 /obj/item/stack/sheet/metal/fifty,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "darkredfull"
 	},
@@ -1125,6 +1131,8 @@
 /turf/open/floor/plasteel/dark,
 /area/f13/brotherhood/archives)
 "aLP" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "darkredfull"
 	},
@@ -6438,6 +6446,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel/bighorn)
 "cTf" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
@@ -7688,6 +7698,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/effect/landmark/start/f13/settler,
 /turf/open/floor/f13{
 	icon_state = "greenrustyfull"
 	},
@@ -7937,6 +7948,14 @@
 /obj/item/clothing/head/helmet/skull,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"eRn" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "floordirtysolid"
+	},
+/area/f13/tunnel/bighorn)
 "eRL" = (
 /obj/structure/table/reinforced,
 /obj/item/paper_bin,
@@ -8597,11 +8616,10 @@
 	},
 /area/f13/tunnel)
 "fUV" = (
-/obj/structure/rack/shelf_metal,
-/obj/item/stack/f13Cash/random/banker,
-/obj/item/stack/f13Cash/random/banker,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/f13/settler,
 /turf/open/floor/f13{
-	icon_state = "darkredfull"
+	icon_state = "greenrustyfull"
 	},
 /area/f13/tunnel/bighorn)
 "fVC" = (
@@ -9141,6 +9159,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
 /area/f13/brotherhood/reactor)
+"gPs" = (
+/obj/effect/landmark/start/f13/settler,
+/turf/open/floor/f13{
+	icon_state = "greenrustyfull"
+	},
+/area/f13/tunnel/bighorn)
 "gQf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light{
@@ -12544,6 +12568,8 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
@@ -14718,6 +14744,8 @@
 "oGw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel/bighorn)
 "oGI" = (
@@ -14886,6 +14914,7 @@
 /area/f13/brotherhood/armory)
 "oQo" = (
 /obj/structure/decoration/warning,
+/obj/effect/decal/cleanable/dirt,
 /turf/closed/indestructible/f13vaultrusted{
 	name = "rusty reinforced wall"
 	},
@@ -15616,6 +15645,7 @@
 /area/f13/building/museum)
 "pLZ" = (
 /obj/machinery/light/floor,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "darkredfull"
 	},
@@ -15674,6 +15704,7 @@
 /obj/item/stack/f13Cash/random/ncr/high,
 /obj/item/stack/f13Cash/random/ncr/high,
 /obj/item/stack/f13Cash/random/ncr/high,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "darkredfull"
 	},
@@ -15960,7 +15991,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/tunnel)
 "qkc" = (
-/obj/effect/landmark/start/f13/followerscholar,
+/obj/effect/landmark/start/f13/followersvolunteer,
+/obj/effect/landmark/start/f13/followersguard,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -18170,6 +18202,13 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/tunnel)
+"tfI" = (
+/obj/structure/chair/bench,
+/obj/effect/landmark/start/f13/settler,
+/turf/open/floor/f13{
+	icon_state = "greenrustyfull"
+	},
+/area/f13/tunnel/bighorn)
 "tgR" = (
 /obj/structure/closet/crate/bin,
 /obj/effect/decal/cleanable/dirt,
@@ -19286,6 +19325,16 @@
 	name = "stone floor"
 	},
 /area/f13/caves)
+"uRG" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/stack/f13Cash/random/banker,
+/obj/item/stack/f13Cash/random/banker,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "darkredfull"
+	},
+/area/f13/tunnel/bighorn)
 "uUw" = (
 /obj/structure/closet/secure_closet/goodies{
 	anchorable = 0;
@@ -20417,6 +20466,7 @@
 /obj/item/stack/f13Cash/random/denarius/high,
 /obj/item/stack/f13Cash/random/denarius/high,
 /obj/item/stack/f13Cash/random/denarius/high,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "darkredfull"
@@ -32232,7 +32282,7 @@ aoV
 boM
 xXW
 ggM
-lRd
+gPs
 lRd
 lRd
 lRd
@@ -32752,7 +32802,7 @@ lRd
 lRd
 eJs
 eJs
-eJs
+fUV
 xXW
 jyE
 eYJ
@@ -33293,7 +33343,7 @@ xXW
 xXW
 lRd
 eJs
-eJs
+fUV
 sxY
 sxY
 sxY
@@ -34037,7 +34087,7 @@ bjV
 nhJ
 bjV
 eJs
-eJs
+fUV
 uyK
 voH
 pkY
@@ -35062,7 +35112,7 @@ lRd
 hbX
 lRd
 lRd
-lRd
+gPs
 lRd
 lRd
 ybw
@@ -38950,7 +39000,7 @@ eJs
 abb
 uXv
 abv
-kau
+cTf
 abv
 uXv
 abb
@@ -39465,7 +39515,7 @@ abb
 uXv
 abp
 cTf
-kau
+eRn
 uXv
 abb
 fZl
@@ -39720,9 +39770,9 @@ lRd
 lRd
 abb
 uXv
-uXv
+sbd
+eRn
 kau
-cTf
 uXv
 abb
 fZl
@@ -39979,7 +40029,7 @@ abb
 uXv
 oQo
 lBD
-kau
+cTf
 uXv
 abb
 lao
@@ -40491,9 +40541,9 @@ jDJ
 eJs
 abb
 uXv
-fUV
-aLP
 iId
+mdL
+uRG
 uXv
 abb
 lao
@@ -40749,7 +40799,7 @@ lRd
 abb
 uXv
 pLZ
-mdL
+aLP
 pLZ
 uXv
 abb
@@ -40987,8 +41037,8 @@ wZj
 yjR
 aaW
 yle
-qkc
-qkc
+yle
+yle
 yle
 xkv
 spx
@@ -41246,7 +41296,7 @@ oBx
 rrI
 iym
 iym
-rrI
+qkc
 jsU
 yle
 yle
@@ -41503,7 +41553,7 @@ qRH
 rrI
 djT
 iym
-rrI
+qkc
 jsU
 yle
 yle
@@ -43296,7 +43346,7 @@ uXv
 uXv
 tao
 eJs
-bjV
+tfI
 eEP
 vDj
 hrS
@@ -43553,7 +43603,7 @@ aZt
 uXv
 eJs
 eJs
-bjV
+tfI
 oJK
 tKz
 cHS

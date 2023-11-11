@@ -51,7 +51,7 @@
 	if(obj_integrity <= 0)
 		qdel(src)
 
-/obj/structure/barricade/wooden/planks/pregame/Initialize() //Place these in the map maker to have a bit of randomization with boarded up windows/doors
+/obj/structure/barricade/wooden/planks/pregame/Initialize(mapload) //Place these in the map maker to have a bit of randomization with boarded up windows/doors
 	planks = rand(1, maxplanks)
 	checkplanks()
 	. = ..()

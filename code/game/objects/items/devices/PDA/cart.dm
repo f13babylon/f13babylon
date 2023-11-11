@@ -48,7 +48,7 @@
 	var/mob/living/simple_animal/bot/active_bot
 	var/list/botlist = list()
 
-/obj/item/cartridge/Initialize()
+/obj/item/cartridge/Initialize(mapload)
 	. = ..()
 	var/obj/item/pda/pda = loc
 	if(istype(pda))
@@ -127,7 +127,7 @@
 	icon_state = "cart-tox"
 	access = CART_REAGENT_SCANNER | CART_ATMOS
 
-/obj/item/cartridge/signal/Initialize()
+/obj/item/cartridge/signal/Initialize(mapload)
 	. = ..()
 	radio = new(src)
 
@@ -176,7 +176,7 @@
 	access = CART_MANIFEST | CART_STATUS_DISPLAY | CART_REAGENT_SCANNER | CART_ATMOS | CART_DRONEPHONE
 	bot_access_flags = FLOOR_BOT | CLEAN_BOT | MED_BOT | FIRE_BOT
 
-/obj/item/cartridge/rd/Initialize()
+/obj/item/cartridge/rd/Initialize(mapload)
 	. = ..()
 	radio = new(src)
 

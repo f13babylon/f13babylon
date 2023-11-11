@@ -113,7 +113,7 @@ SLEEPER CODE IS IN game/objects/items/devices/dogborg_sleeper.dm !
 /obj/item/soap/tongue/scrubpup
 	cleanspeed = 25 //slightly faster than a mop.
 
-/obj/item/soap/tongue/Initialize()
+/obj/item/soap/tongue/Initialize(mapload)
 	. = ..()
 	item_flags |= NOBLUDGEON //No more attack messages
 

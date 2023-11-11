@@ -64,7 +64,7 @@
 	possible_a_intents = list(INTENT_HELP, INTENT_HARM)
 	ranged = FALSE
 
-/mob/living/simple_animal/hostile/handy/Initialize()
+/mob/living/simple_animal/hostile/handy/Initialize(mapload)
 	. = ..()
 	add_overlay("eyes-[initial(icon_state)]")
 

@@ -2,7 +2,7 @@
 /obj/vehicle/ridden/space
 	name = "Generic Space Vehicle!"
 
-/obj/vehicle/ridden/space/Initialize()
+/obj/vehicle/ridden/space/Initialize(mapload)
 	. = ..()
 	var/datum/component/riding/D = LoadComponent(/datum/component/riding)
 	D.override_allow_spacemove = TRUE
@@ -15,7 +15,7 @@
 	var/cover_overlay_state = "cover_blue"
 	var/mutable_appearance/cover_overlay
 
-/obj/vehicle/ridden/space/speedbike/Initialize()
+/obj/vehicle/ridden/space/speedbike/Initialize(mapload)
 	. = ..()
 	cover_overlay = mutable_appearance(icon, cover_overlay_state, ABOVE_MOB_LAYER)
 	add_overlay(cover_overlay)
@@ -50,7 +50,7 @@
 	pixel_y = -48
 	pixel_x = -48
 
-/obj/vehicle/ridden/space/speedwagon/Initialize()
+/obj/vehicle/ridden/space/speedwagon/Initialize(mapload)
 	. = ..()
 	add_overlay(cover_overlay)
 	var/datum/component/riding/D = LoadComponent(/datum/component/riding)

@@ -81,7 +81,7 @@
 	"<span class='userdanger'>Abuse of drones will lead to them being rendered pacifists! Don't ruin it for everyone!</span>\n"+\
 	"<span class='warning'><u>If you do not have the regular drone laws, follow your laws to the best of your ability.</u></span>"
 
-/mob/living/simple_animal/drone/Initialize()
+/mob/living/simple_animal/drone/Initialize(mapload)
 	. = ..()
 	GLOB.drones_list += src
 	access_card = new /obj/item/card/id(src)

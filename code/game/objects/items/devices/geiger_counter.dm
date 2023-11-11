@@ -32,7 +32,7 @@
 	var/current_warning = 1
 	var/mob/listeningTo
 
-/obj/item/geiger_counter/Initialize()
+/obj/item/geiger_counter/Initialize(mapload)
 	. = ..()
 	START_PROCESSING(SSobj, src)
 

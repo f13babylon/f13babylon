@@ -4686,7 +4686,7 @@
 /area/f13/radiation)
 "Hz" = (
 /obj/effect/landmark/start/f13/explorer{
-	name = "Legion Immune"
+	name = "Legion Camp Follower"
 	},
 /turf/open/floor/f13/wood,
 /area/f13/legion)

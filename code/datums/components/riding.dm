@@ -222,7 +222,7 @@
 		H.remove_movespeed_modifier(/datum/movespeed_modifier/human_carry)
 	if(!fireman_carrying)
 		M.Daze(25)
-	REMOVE_TRAIT(M, TRAIT_MOBILITY_NOUSE, src)
+	REMOVE_TRAIT(M, TRAIT_MOBILITY_NOUSE,  REF(src))
 	return ..()
 
 /datum/component/riding/human/vehicle_mob_buckle(datum/source, mob/living/M, force = FALSE)
@@ -231,7 +231,7 @@
 	if(length(H.buckled_mobs))
 		H.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/human_carry, TRUE, fireman_carrying? FIREMAN_CARRY_SLOWDOWN : PIGGYBACK_CARRY_SLOWDOWN)
 	if(fireman_carrying)
-		ADD_TRAIT(M, TRAIT_MOBILITY_NOUSE, src)
+		ADD_TRAIT(M, TRAIT_MOBILITY_NOUSE,  REF(src))
 
 /datum/component/riding/human/proc/on_host_unarmed_melee(atom/target)
 	var/mob/living/carbon/human/H = parent

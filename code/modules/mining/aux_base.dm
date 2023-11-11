@@ -28,7 +28,7 @@ interface with the mining shuttle at the landing site if a mobile beacon is also
 	circuit = /obj/item/circuitboard/computer/auxillary_base
 	connectable = FALSE
 
-/obj/machinery/computer/auxillary_base/Initialize()
+/obj/machinery/computer/auxillary_base/Initialize(mapload)
 	. = ..()
 	locator = new(src)
 

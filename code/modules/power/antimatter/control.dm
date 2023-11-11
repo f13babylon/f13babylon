@@ -31,7 +31,7 @@
 	var/stored_power = 0//Power to deploy per tick
 	var/datum/looping_sound/supermatter/soundloop //fortuna edit. adds reactor sounds
 
-/obj/machinery/power/am_control_unit/Initialize()
+/obj/machinery/power/am_control_unit/Initialize(mapload)
 	. = ..()
 	linked_shielding = list()
 	linked_cores = list()

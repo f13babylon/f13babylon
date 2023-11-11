@@ -60,7 +60,7 @@
 /obj/effect/decal/cleanable/trail_holder/update_icon()
 	color = blood_DNA_to_color()
 
-/obj/effect/cleanable/trail_holder/Initialize()
+/obj/effect/cleanable/trail_holder/Initialize(mapload)
 	. = ..()
 	update_icon()
 
@@ -179,7 +179,7 @@
 	bloodiness = null
 	//var/blood_DNA = list()
 
-/obj/effect/decal/cleanable/cum/Initialize()
+/obj/effect/decal/cleanable/cum/Initialize(mapload)
 	. = ..()
 	dir = pick(1,2,4,8)
 	reagents.add_reagent(/datum/reagent/consumable/semen, rand(8,13))

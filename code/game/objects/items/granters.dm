@@ -1048,7 +1048,7 @@
 	return ..()
 
 
-/obj/item/book/granter/trait/medical/Initialize()
+/obj/item/book/granter/trait/medical/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
 
@@ -1092,7 +1092,7 @@
 	return ..()
 
 
-/obj/item/book/granter/trait/selection/Initialize()
+/obj/item/book/granter/trait/selection/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
 
@@ -1129,7 +1129,7 @@
 				traitname = "medium surgery"
 		return ..()
 
-/obj/item/book/granter/trait/selection/tribal/Initialize()
+/obj/item/book/granter/trait/selection/tribal/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
 

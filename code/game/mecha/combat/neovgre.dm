@@ -82,7 +82,7 @@
 			obj_integrity += min(max_integrity - obj_integrity, max_integrity / 200)
 		CHECK_TICK
 
-/obj/mecha/combat/neovgre/Initialize()
+/obj/mecha/combat/neovgre/Initialize(mapload)
 	.=..()
 	GLOB.neovgre_exists ++
 	var/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/heavy/neovgre/N = new

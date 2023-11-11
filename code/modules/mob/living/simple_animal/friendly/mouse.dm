@@ -31,7 +31,7 @@
 	var/chew_probability = 1
 	faction = list("rat")
 
-/mob/living/simple_animal/mouse/Initialize()
+/mob/living/simple_animal/mouse/Initialize(mapload)
 	. = ..()
 	if(!body_color)
 		body_color = pick(list("brown","gray","white"))
@@ -150,7 +150,7 @@ GLOBAL_VAR(tom_existed)
 	desc = "Jerry the cat is not amused."
 	gold_core_spawnable = NO_SPAWN
 
-/mob/living/simple_animal/mouse/brown/Tom/Initialize()
+/mob/living/simple_animal/mouse/brown/Tom/Initialize(mapload)
 	. = ..()
 	GLOB.tom_existed = TRUE
 

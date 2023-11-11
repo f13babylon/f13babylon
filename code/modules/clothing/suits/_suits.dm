@@ -16,7 +16,7 @@
 	var/mutable_appearance/accessory_overlay
 	var/dummy_thick = FALSE // is able to hold accessories on its item
 
-/obj/item/clothing/suit/Initialize()
+/obj/item/clothing/suit/Initialize(mapload)
 	. = ..()
 	if(!allowed)
 		allowed = GLOB.f13_coat_allowed

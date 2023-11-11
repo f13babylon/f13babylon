@@ -28,7 +28,7 @@
 	else
 		spear = locate(/obj/item/twohanded/spear) in parts_list
 
-/obj/structure/headpike/Initialize()
+/obj/structure/headpike/Initialize(mapload)
 	. = ..()
 	pixel_x = rand(-3, 3)
 	update_overlays()

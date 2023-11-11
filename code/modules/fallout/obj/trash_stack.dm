@@ -18,7 +18,7 @@
 		for(var/ii in i)
 			lootable_trash += ii
 
-/obj/item/storage/trash_stack/Initialize()
+/obj/item/storage/trash_stack/Initialize(mapload)
 	. = ..()
 	icon_state = "trash_[rand(1,3)]"
 	GLOB.trash_piles += src
@@ -69,7 +69,7 @@
 /obj/item/storage/money_stack/legion
 	pay = list(/obj/item/stack/f13Cash/random/denarius/med)
 
-/obj/item/storage/money_stack/Initialize()
+/obj/item/storage/money_stack/Initialize(mapload)
 	. = ..()
 	GLOB.money_piles += src
 

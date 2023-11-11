@@ -4,7 +4,7 @@
 	damage = 6
 	var/piercing = FALSE
 
-/obj/item/projectile/bullet/dart/Initialize()
+/obj/item/projectile/bullet/dart/Initialize(mapload)
 	. = ..()
 	create_reagents(50, NO_REACT, NO_REAGENTS_VALUE)
 
@@ -32,7 +32,7 @@
 /obj/item/projectile/bullet/dart/piercing
 	piercing = TRUE
 
-/obj/item/projectile/bullet/dart/metalfoam/Initialize()
+/obj/item/projectile/bullet/dart/metalfoam/Initialize(mapload)
 	. = ..()
 	reagents.add_reagent(/datum/reagent/aluminium, 15)
 	reagents.add_reagent(/datum/reagent/foaming_agent, 5)

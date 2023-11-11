@@ -356,7 +356,7 @@
 	ammo_type = /obj/item/ammo_casing/a556/uranium_tipped
 	custom_materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 1000)
 
-/obj/item/ammo_box/a556/uraniumtipped/Initialize()
+/obj/item/ammo_box/a556/uraniumtipped/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/radioactive, 5, src, 0, TRUE, TRUE) //half-life of 0 because we keep on going.
 	START_PROCESSING(SSradiation,src)
@@ -401,7 +401,7 @@
 	ammo_type = /obj/item/ammo_casing/a762/uraniumtipped
 	desc = "Not depleted uranium. Regular uranium."
 
-/obj/item/ammo_box/a762box/uraniumtipped/Initialize()
+/obj/item/ammo_box/a762box/uraniumtipped/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/radioactive, 5, src, 0, TRUE, TRUE) //half-life of 0 because we keep on going.
 	START_PROCESSING(SSradiation,src)

@@ -112,7 +112,7 @@
 	. = ..()
 	AddElement(/datum/element/empprotection, EMP_PROTECT_WIRES)
 
-/obj/item/mine/Initialize()
+/obj/item/mine/Initialize(mapload)
 	. = ..()
 	var/static/list/loc_connections = list(
 		COMSIG_ATOM_ENTERED = .proc/on_entered,

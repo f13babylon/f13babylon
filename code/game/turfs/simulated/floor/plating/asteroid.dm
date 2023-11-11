@@ -24,7 +24,7 @@
 	/// Whether the turf has been dug or not
 	var/dug
 
-/turf/open/floor/plating/asteroid/Initialize()
+/turf/open/floor/plating/asteroid/Initialize(mapload)
 	var/proper_name = name
 	. = ..()
 	name = proper_name
@@ -106,7 +106,7 @@
 	baseturfs = /turf/open/floor/plating/asteroid/airless
 	initial_gas_mix = AIRLESS_ATMOS
 
-/turf/open/floor/plating/asteroid/basalt/Initialize()
+/turf/open/floor/plating/asteroid/basalt/Initialize(mapload)
 	. = ..()
 	set_basalt_light(src)
 
@@ -225,7 +225,7 @@
 /turf/open/floor/plating/asteroid/airless/cave/snow/underground/has_data //subtype for producing a tunnel with given data
 	has_data = TRUE
 
-/turf/open/floor/plating/asteroid/airless/cave/Initialize()
+/turf/open/floor/plating/asteroid/airless/cave/Initialize(mapload)
 	if (!mob_spawn_list)
 		mob_spawn_list = list(/mob/living/simple_animal/hostile/asteroid/goldgrub = 1, /mob/living/simple_animal/hostile/asteroid/goliath = 5, /mob/living/simple_animal/hostile/asteroid/basilisk = 4, /mob/living/simple_animal/hostile/asteroid/hivelord = 3)
 	if (!megafauna_spawn_list)

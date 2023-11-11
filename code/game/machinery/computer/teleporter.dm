@@ -14,7 +14,7 @@
 	var/turf/target
 	var/obj/item/implant/imp_t
 
-/obj/machinery/computer/teleporter/Initialize()
+/obj/machinery/computer/teleporter/Initialize(mapload)
 	. = ..()
 	id = "[rand(1000, 9999)]"
 	link_power_station()
@@ -208,7 +208,7 @@
 	name = "VR Scenario Loader"
 	desc = "A virtual computer acting as an interface to transport digital avatars to specific scenarios."
 
-/obj/machinery/computer/teleporter/vr/Initialize()
+/obj/machinery/computer/teleporter/vr/Initialize(mapload)
 	. = ..()
 	// This cannot be allowed to be deconstructed. We don't want people escaping VR by making a normal teleporter console
 	flags_1 |= NODECONSTRUCT_1

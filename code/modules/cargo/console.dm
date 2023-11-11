@@ -26,7 +26,7 @@
 	circuit = /obj/item/circuitboard/computer/cargo/request
 	requestonly = TRUE
 
-/obj/machinery/computer/cargo/Initialize()
+/obj/machinery/computer/cargo/Initialize(mapload)
 	. = ..()
 	radio = new /obj/item/radio/headset/headset_cargo(src)
 	var/obj/item/circuitboard/computer/cargo/board = circuit

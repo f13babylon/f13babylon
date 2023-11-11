@@ -15,7 +15,7 @@
 	var/heat_stage = 0
 	var/heat_diffusion = 3 //How much heat is lost per tick
 
-/obj/item/minigunpackbal5mm/Initialize()
+/obj/item/minigunpackbal5mm/Initialize(mapload)
 	. = ..()
 	gun = new(src)
 	START_PROCESSING(SSobj, src)
@@ -123,7 +123,7 @@
 	var/obj/item/minigunpackbal5mm/ammo_pack
 	extra_damage = -9
 
-/obj/item/gun/ballistic/minigunbal5mm/Initialize()
+/obj/item/gun/ballistic/minigunbal5mm/Initialize(mapload)
 	if(istype(loc, /obj/item/minigunpackbal5mm)) //We should spawn inside an ammo pack so let's use that one.
 		ammo_pack = loc
 	else

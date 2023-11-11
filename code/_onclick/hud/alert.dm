@@ -347,7 +347,7 @@ or shoot a gun to move around via Newton's 3rd Law of Motion."
 	var/angle = 0
 	var/mob/living/simple_animal/hostile/construct/Cviewer = null
 
-/obj/screen/alert/bloodsense/Initialize()
+/obj/screen/alert/bloodsense/Initialize(mapload)
 	. = ..()
 	narnar = new('icons/mob/screen_alert.dmi', "mini_nar")
 	START_PROCESSING(SSprocessing, src)

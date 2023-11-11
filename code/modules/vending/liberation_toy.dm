@@ -29,6 +29,6 @@
 	extra_price = PRICE_EXPENSIVE
 	payment_department = NO_FREEBIES
 
-/obj/machinery/vending/toyliberationstation/Initialize()
+/obj/machinery/vending/toyliberationstation/Initialize(mapload)
 	. = ..()
 	cost_multiplier_per_dept = list("[ACCESS_SYNDICATE]" = 0)

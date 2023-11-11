@@ -33,7 +33,7 @@
 
 	light_color = LIGHT_COLOR_BROWN
 
-/obj/machinery/computer/slot_machine/Initialize()
+/obj/machinery/computer/slot_machine/Initialize(mapload)
 	. = ..()
 	var/obj/item/circuitboard/computer/slot_machine/crct = circuit
 	jackpots = rand(1, 4) //false hope

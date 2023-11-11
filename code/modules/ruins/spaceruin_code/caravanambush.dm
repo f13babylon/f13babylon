@@ -53,7 +53,7 @@
 	shuttleId = "caravantrade1"
 	possible_destinations = "caravantrade1_custom;caravantrade1_ambush"
 
-/obj/machinery/computer/camera_advanced/shuttle_docker/caravan/Initialize()
+/obj/machinery/computer/camera_advanced/shuttle_docker/caravan/Initialize(mapload)
 	. = ..()
 	GLOB.jam_on_wardec += src
 

@@ -20,7 +20,7 @@
 	var/goal = 45 SECONDS
 	var/ready = FALSE
 
-/obj/machinery/base_dispenser/Initialize()
+/obj/machinery/base_dispenser/Initialize(mapload)
 	. = ..()
 
 /obj/machinery/base_dispenser/process()

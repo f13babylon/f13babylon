@@ -26,7 +26,7 @@
 /obj/effect/landmark/dungeon_mark/bandit
 	name = "bandit bunker"
 
-/obj/effect/landmark/dungeon_mark/Initialize()
+/obj/effect/landmark/dungeon_mark/Initialize(mapload)
 	. = ..()
 	GLOB.dungeon_marks += src
 
@@ -41,7 +41,7 @@
 	var/id = null
 	var/list/templates	//list of template types to pick from
 
-/obj/effect/landmark/map_load_mark/Initialize()
+/obj/effect/landmark/map_load_mark/Initialize(mapload)
 	. = ..()
 	LAZYADD(SSmapping.map_load_marks,src)
 
@@ -60,7 +60,7 @@
 
 	layer = POINT_LAYER
 
-/obj/effect/baseturf_helper/Initialize()
+/obj/effect/baseturf_helper/Initialize(mapload)
 	. = ..()
 	return INITIALIZE_HINT_LATELOAD
 
@@ -135,7 +135,7 @@
 	icon_state = ""
 	var/late = FALSE
 
-/obj/effect/mapping_helpers/Initialize()
+/obj/effect/mapping_helpers/Initialize(mapload)
 	..()
 	return late ? INITIALIZE_HINT_LATELOAD : INITIALIZE_HINT_QDEL
 
@@ -188,7 +188,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/mapping_helpers/no_lava)
 /obj/effect/mapping_helpers/no_lava
 	icon_state = "no_lava"
 
-/obj/effect/mapping_helpers/no_lava/Initialize()
+/obj/effect/mapping_helpers/no_lava/Initialize(mapload)
 	. = ..()
 	var/turf/T = get_turf(src)
 	T.flags_1 |= NO_LAVA_GEN_1
@@ -200,7 +200,7 @@ GLOBAL_LIST_EMPTY(z_is_planet)
 	name = "planet z helper"
 	layer = POINT_LAYER
 
-/obj/effect/mapping_helpers/planet_z/Initialize()
+/obj/effect/mapping_helpers/planet_z/Initialize(mapload)
 	. = ..()
 	var/turf/T = get_turf(src)
 	GLOB.z_is_planet["[T.z]"] = TRUE

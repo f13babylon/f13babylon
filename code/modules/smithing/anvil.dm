@@ -86,7 +86,7 @@
 	RECIPE_THROWING = /obj/item/smithing/throwingknife,
 )
 
-/obj/structure/anvil/Initialize()
+/obj/structure/anvil/Initialize(mapload)
 	. = ..()
 	currentquality = anvilquality
 

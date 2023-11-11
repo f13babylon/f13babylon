@@ -8,7 +8,7 @@
 	/// We manually check to see if we've been triggered in case multiple atoms cross us in the time between the mine being triggered and it actually deleting, to avoid a race condition with multiple detonations
 	var/triggered = FALSE
 
-/obj/effect/mine/Initialize()
+/obj/effect/mine/Initialize(mapload)
 	. = ..()
 	var/static/list/loc_connections = list(
 		COMSIG_ATOM_ENTERED = .proc/on_entered,
@@ -56,7 +56,7 @@
 	density = FALSE
 	var/duration = 0
 
-/obj/effect/mine/pickup/Initialize()
+/obj/effect/mine/pickup/Initialize(mapload)
 	. = ..()
 	animate(src, pixel_y = 4, time = 20, loop = -1)
 

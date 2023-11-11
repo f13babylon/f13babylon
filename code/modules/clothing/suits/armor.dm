@@ -12,7 +12,7 @@
 	slowdown = 0.01
 	var/list/protected_zones = list(BODY_ZONE_CHEST, BODY_ZONE_PRECISE_GROIN, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
 
-/obj/item/clothing/suit/armor/Initialize()
+/obj/item/clothing/suit/armor/Initialize(mapload)
 	. = ..()
 	if(!allowed)
 		allowed = GLOB.security_vest_allowed
@@ -203,7 +203,7 @@
 	resistance_flags = FLAMMABLE
 	dog_fashion = null
 
-/obj/item/clothing/suit/armor/vest/det_suit/Initialize()
+/obj/item/clothing/suit/armor/vest/det_suit/Initialize(mapload)
 	. = ..()
 	allowed = GLOB.detective_vest_allowed
 

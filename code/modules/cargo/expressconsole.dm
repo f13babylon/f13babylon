@@ -9,7 +9,7 @@
 /obj/machinery/computer/cargo/express
 	name = "express supply console"
 	desc = "This console allows the user to purchase a package \
-		with 1/40th of the delivery time: made possible by NanoTrasen's new \"1500mm Orbital Railgun\".\
+		with 1/40th of the delivery time: made possible by Nanotrasen's new \"1500mm Orbital Railgun\".\
 		All sales are near instantaneous - please choose carefully"
 	icon_screen = "supply_express"
 	circuit = /obj/item/circuitboard/computer/cargo/express
@@ -26,7 +26,7 @@
 	var/locked = TRUE //is the console locked? unlock with ID
 	var/usingBeacon = FALSE //is the console in beacon mode? exists to let beacon know when a pod may come in
 
-/obj/machinery/computer/cargo/express/Initialize()
+/obj/machinery/computer/cargo/express/Initialize(mapload)
 	. = ..()
 	packin_up()
 

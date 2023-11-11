@@ -72,7 +72,7 @@
 	var/poster_item_type = /obj/item/poster
 	var/obj/item/poster/poster_item
 
-/obj/structure/sign/poster/Initialize()
+/obj/structure/sign/poster/Initialize(mapload)
 	. = ..()
 	if(random_basetype)
 		randomise(random_basetype)
@@ -794,7 +794,7 @@
 	icon = 'icons/obj/contraband.dmi'
 	var/list/posters = list()
 
-/obj/effect/landmark/poster_spawner/Initialize()
+/obj/effect/landmark/poster_spawner/Initialize(mapload)
 	. = ..()
 	var/poster_type = pick(posters)
 	var/obj/structure/sign/poster/P = new poster_type(loc)

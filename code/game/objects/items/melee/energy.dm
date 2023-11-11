@@ -10,7 +10,7 @@
 	var/sword_color
 	total_mass = 0.4 //Survival flashlights typically weigh around 5 ounces.
 
-/obj/item/melee/transforming/energy/Initialize()
+/obj/item/melee/transforming/energy/Initialize(mapload)
 	. = ..()
 	total_mass_on = (total_mass_on ? total_mass_on : (w_class_on * 0.75))
 	if(active)
@@ -292,7 +292,7 @@
 	light_color = "#37FFF7"
 	actions_types = list()
 
-/obj/item/melee/transforming/energy/sword/cx/Initialize()
+/obj/item/melee/transforming/energy/sword/cx/Initialize(mapload)
 	icon_state_on = icon_state
 	return ..()
 

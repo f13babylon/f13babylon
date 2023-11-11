@@ -5,7 +5,7 @@
 	invisibility = INVISIBILITY_ABSTRACT
 	var/id
 
-/obj/effect/landmark/vertibird/Initialize()
+/obj/effect/landmark/vertibird/Initialize(mapload)
 	. = ..()
 	GLOB.vertibirdLandZone += src
 
@@ -20,7 +20,7 @@
 	invisibility = INVISIBILITY_ABSTRACT
 	var/id
 
-/obj/effect/landmark/vertibird_enter/Initialize()
+/obj/effect/landmark/vertibird_enter/Initialize(mapload)
 	. = ..()
 	GLOB.vertibirdEnterZone = get_turf(src)
 
@@ -29,7 +29,7 @@
 		GLOB.vertibirdEnterZone = null
 	return ..()
 
-/obj/effect/landmark/vertibird/flare/Initialize()
+/obj/effect/landmark/vertibird/flare/Initialize(mapload)
 	. = ..()
 //	var/message = "Long-range scanners detected new emergency signal. Landing locations updated"
 	for(var/obj/machinery/computer/vertibird_console/C in GLOB.vertibird_console)

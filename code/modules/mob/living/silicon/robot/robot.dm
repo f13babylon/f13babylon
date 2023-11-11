@@ -701,7 +701,7 @@
 /mob/living/silicon/robot/modules
 	var/set_module = null
 
-/mob/living/silicon/robot/modules/Initialize()
+/mob/living/silicon/robot/modules/Initialize(mapload)
 	. = ..()
 	module.transform_to(set_module)
 
@@ -732,7 +732,7 @@
 	set_module = /obj/item/robot_module/assaultron
 	faction = list("wastebots") //Friendly to other robots?
 
-/mob/living/silicon/robot/modules/assaultron/Initialize()
+/mob/living/silicon/robot/modules/assaultron/Initialize(mapload)
 	. = ..()
 	cell = new /obj/item/stock_parts/cell/hyper(src, 25000)
 
@@ -762,7 +762,7 @@
 							<i>Help the operatives secure the disk at all costs!</i></b>"
 	set_module = /obj/item/robot_module/syndicate
 
-/mob/living/silicon/robot/modules/syndicate/Initialize()
+/mob/living/silicon/robot/modules/syndicate/Initialize(mapload)
 	. = ..()
 	cell = new /obj/item/stock_parts/cell/hyper(src, 25000)
 	radio = new /obj/item/radio/borg/syndicate(src)

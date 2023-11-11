@@ -13,7 +13,7 @@
 	var/point_regen_amount = 1
 
 
-/mob/living/simple_animal/hostile/boss/Initialize()
+/mob/living/simple_animal/hostile/boss/Initialize(mapload)
 	. = ..()
 
 	atb = new()

@@ -36,7 +36,7 @@
 	sunlight_state = SUNLIGHT_SOURCE
 
 /* Outside turfs get global lighting */
-/turf/open/floor/plating/f13/outside/Initialize()
+/turf/open/floor/plating/f13/outside/Initialize(mapload)
 	. = ..()
 	flags_2 |= GLOBAL_LIGHT_TURF_2
 
@@ -90,7 +90,7 @@
 	icon_state = "mountain0"
 	var/obj/structure/flora/turfPlant = null
 
-/turf/open/floor/plating/f13/inside/mountain/Initialize()
+/turf/open/floor/plating/f13/inside/mountain/Initialize(mapload)
 	. = ..()
 	icon_state = "mountain[rand(0,10)]"
 	//If no fences, machines, etc. try to plant mushrooms
@@ -491,7 +491,7 @@
 /turf/open/floor/plasteel/f13/tile/broken
 	icon_state = "grey_1"
 
-/turf/open/floor/plasteel/f13/tile/broken/Initialize()
+/turf/open/floor/plasteel/f13/tile/broken/Initialize(mapload)
 	. = ..()
 	if(icon_state == "grey_1")
 		icon_state = "grey_[rand(1,8)]"
@@ -502,7 +502,7 @@
 /turf/open/floor/plasteel/f13/tile/long/broken
 	icon_state = "grey_long_1"
 
-/turf/open/floor/plasteel/f13/tile/long/broken/Initialize()
+/turf/open/floor/plasteel/f13/tile/long/broken/Initialize(mapload)
 	. = ..()
 	if(icon_state == "grey_long1")
 		icon_state = "grey_long_[rand(1,6)]"
@@ -513,7 +513,7 @@
 /turf/open/floor/plasteel/f13/tile/blue/broken
 	icon_state = "blue_1"
 
-/turf/open/floor/plasteel/f13/tile/blue/broken/Initialize()
+/turf/open/floor/plasteel/f13/tile/blue/broken/Initialize(mapload)
 	. = ..()
 	if(icon_state == "blue_1")
 		icon_state = "blue_[rand(1,8)]"
@@ -524,7 +524,7 @@
 /turf/open/floor/plasteel/f13/tile/blue_long/broken
 	icon_state = "blue_long_1"
 
-/turf/open/floor/plasteel/f13/tile/blue_long/broken/Initialize()
+/turf/open/floor/plasteel/f13/tile/blue_long/broken/Initialize(mapload)
 	. = ..()
 	if(icon_state == "blue_long1")
 		icon_state = "blue_long_[rand(1,6)]"
@@ -535,7 +535,7 @@
 /turf/open/floor/plasteel/f13/tile/navy/broken
 	icon_state = "navy_1"
 
-/turf/open/floor/plasteel/f13/tile/navy/broken/Initialize()
+/turf/open/floor/plasteel/f13/tile/navy/broken/Initialize(mapload)
 	. = ..()
 	if(icon_state == "navy_1")
 		icon_state = "navy_[rand(1,7)]"
@@ -546,7 +546,7 @@
 /turf/open/floor/plasteel/f13/tile/brown/broken
 	icon_state = "brown_1"
 
-/turf/open/floor/plasteel/f13/tile/brown/broken/Initialize()
+/turf/open/floor/plasteel/f13/tile/brown/broken/Initialize(mapload)
 	. = ..()
 	if(icon_state == "brown_1")
 		icon_state = "brown_[rand(1,8)]"
@@ -557,7 +557,7 @@
 /turf/open/floor/plasteel/f13/tile/fancy/broken
 	icon_state = "fancy_1"
 
-/turf/open/floor/plasteel/f13/tile/fancy/broken/Initialize()
+/turf/open/floor/plasteel/f13/tile/fancy/broken/Initialize(mapload)
 	. = ..()
 	if(icon_state == "fancy_1")
 		icon_state = "fancy_[rand(1,7)]"
@@ -574,7 +574,7 @@
 /turf/open/floor/plasteel/f13/stone/ornate/broken
 	icon_state = "ornate_1"
 
-/turf/open/floor/plasteel/f13/stone/ornate/broken/Initialize()
+/turf/open/floor/plasteel/f13/stone/ornate/broken/Initialize(mapload)
 	. = ..()
 	if(icon_state == "ornate_1")
 		icon_state = "ornate_[rand(1,3)]"
@@ -585,7 +585,7 @@
 /turf/open/floor/plasteel/f13/stone/sierra/broken
 	icon_state = "sierra_1"
 
-/turf/open/floor/plasteel/f13/stone/sierra/broken/Initialize()
+/turf/open/floor/plasteel/f13/stone/sierra/broken/Initialize(mapload)
 	. = ..()
 	if(icon_state == "sierra_1")
 		icon_state = "ornate_[rand(1,3)]"
@@ -596,7 +596,7 @@
 /turf/open/floor/plasteel/f13/stone/ceramic/broken
 	icon_state = "ceramic_1"
 
-/turf/open/floor/plasteel/f13/stone/ceramic/broken/Initialize()
+/turf/open/floor/plasteel/f13/stone/ceramic/broken/Initialize(mapload)
 	. = ..()
 	if(icon_state == "ceramic_1")
 		icon_state = "ceramic_[rand(1,2)]"
@@ -607,7 +607,7 @@
 /turf/open/floor/plasteel/f13/stone/brick/broken
 	icon_state = "brick_1"
 
-/turf/open/floor/plasteel/f13/stone/brick/broken/Initialize()
+/turf/open/floor/plasteel/f13/stone/brick/broken/Initialize(mapload)
 	. = ..()
 	if(icon_state == "brick_1")
 		icon_state = "brick_[rand(1,8)]"

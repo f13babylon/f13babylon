@@ -368,9 +368,9 @@
 /obj/item/warpwhistle/proc/end_effect(mob/living/carbon/user)
 	user.invisibility = initial(user.invisibility)
 	user.status_flags &= ~GODMODE
-	REMOVE_TRAIT(user, TRAIT_MOBILITY_NOMOVE, src)
-	REMOVE_TRAIT(user, TRAIT_MOBILITY_NOUSE, src)
-	REMOVE_TRAIT(user, TRAIT_MOBILITY_NOPICKUP, src)
+	REMOVE_TRAIT(user, TRAIT_MOBILITY_NOMOVE,  REF(src))
+	REMOVE_TRAIT(user, TRAIT_MOBILITY_NOUSE,  REF(src))
+	REMOVE_TRAIT(user, TRAIT_MOBILITY_NOPICKUP,  REF(src))
 	user.update_mobility()
 
 /obj/item/warpwhistle/attack_self(mob/living/carbon/user)
@@ -384,9 +384,9 @@
 	on_cooldown = TRUE
 	last_user = user
 	playsound(T,'sound/magic/warpwhistle.ogg', 200, 1)
-	ADD_TRAIT(user, TRAIT_MOBILITY_NOMOVE, src)
-	ADD_TRAIT(user, TRAIT_MOBILITY_NOUSE, src)
-	ADD_TRAIT(user, TRAIT_MOBILITY_NOPICKUP, src)
+	ADD_TRAIT(user, TRAIT_MOBILITY_NOMOVE,  REF(src))
+	ADD_TRAIT(user, TRAIT_MOBILITY_NOUSE,  REF(src))
+	ADD_TRAIT(user, TRAIT_MOBILITY_NOPICKUP,  REF(src))
 	user.update_mobility()
 	new /obj/effect/temp_visual/tornado(T)
 	sleep(20)
@@ -436,6 +436,6 @@
 	duration = 40
 	pixel_x = 500
 
-/obj/effect/temp_visual/tornado/Initialize()
+/obj/effect/temp_visual/tornado/Initialize(mapload)
 	. = ..()
 	animate(src, pixel_x = -500, time = 40)

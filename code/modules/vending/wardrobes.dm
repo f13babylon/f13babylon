@@ -560,7 +560,7 @@
 	default_price = PRICE_ALMOST_EXPENSIVE
 	extra_price = PRICE_ABOVE_EXPENSIVE
 
-/obj/machinery/vending/wardrobe/cap_wardrobe/Initialize()
+/obj/machinery/vending/wardrobe/cap_wardrobe/Initialize(mapload)
 	. = ..()
 	cost_multiplier_per_dept = list("[ACCESS_CAPTAIN]" = 0)
 

@@ -8,7 +8,7 @@
 	var/datum/nanite_program/program
 	var/datum/techweb/linked_techweb // set by downloader
 
-/obj/item/disk/nanite_program/Initialize()
+/obj/item/disk/nanite_program/Initialize(mapload)
 	. = ..()
 	if(program_type)
 		program = new program_type

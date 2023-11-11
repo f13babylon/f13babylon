@@ -16,7 +16,7 @@
 	var/obj/machinery/field/generator/FG1 = null
 	var/obj/machinery/field/generator/FG2 = null
 
-/obj/machinery/field/containment/Initialize()
+/obj/machinery/field/containment/Initialize(mapload)
 	. = ..()
 	var/static/list/loc_connections = list(
 		COMSIG_ATOM_ENTERED = .proc/on_entered,

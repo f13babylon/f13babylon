@@ -249,7 +249,7 @@
 	armour_penetration = 0.4//Making them some manner of threat.
 	footstep_type = FOOTSTEP_MOB_BAREFOOT
 
-/mob/living/simple_animal/hostile/ghoul/rotting/Initialize()
+/mob/living/simple_animal/hostile/ghoul/rotting/Initialize(mapload)
 	. = ..()
 	resize = 1.2
 	update_transform()

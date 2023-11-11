@@ -94,7 +94,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "cave"
 	ambientsounds = RUINS
 
-/area/asteroid/artifactroom/Initialize()
+/area/asteroid/artifactroom/Initialize(mapload)
 	. = ..()
 	set_dynamic_lighting()
 

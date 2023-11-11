@@ -19,11 +19,11 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_TRIBAL, src)
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_TRAPPER, src)
-	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS, src)
-	ADD_TRAIT(H, TRAIT_AUTO_DRAW, src)
+	ADD_TRAIT(H, TRAIT_TRIBAL,  REF(src))
+	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
+	ADD_TRAIT(H, TRAIT_TRAPPER,  REF(src))
+	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS,  REF(src))
+	ADD_TRAIT(H, TRAIT_AUTO_DRAW,  REF(src))
 	H.grant_language(/datum/language/tribal)
 	var/list/recipes = list(
 		/datum/crafting_recipe/tribal_pa,

@@ -30,7 +30,7 @@
 /obj/structure/lamp_post/quadra
 	icon_state = "nvlamp-quadra"
 
-/obj/structure/lamp_post/Initialize()
+/obj/structure/lamp_post/Initialize(mapload)
 	. = ..()
 	GLOB.lamppost += src
 

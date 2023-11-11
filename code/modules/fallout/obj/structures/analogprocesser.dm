@@ -74,7 +74,7 @@
 	density = FALSE
 	circuit = null
 
-/obj/machinery/processor/chopping_block/Initialize()
+/obj/machinery/processor/chopping_block/Initialize(mapload)
 	. = ..()
 
 /obj/machinery/processor/chopping_block/Destroy()

@@ -11,7 +11,7 @@
 	var/color_to_apply = "#FFFFFF"
 	var/mutable_appearance/fill_overlay
 
-/obj/item/reagent_containers/blood/Initialize()
+/obj/item/reagent_containers/blood/Initialize(mapload)
 	. = ..()
 	if(blood_type != null)
 		reagents.add_reagent(/datum/reagent/blood, 200, list("donor"=null,"viruses"=null,"blood_DNA"=null,"bloodcolor"=bloodtype_to_color(blood_type), "blood_type"=blood_type,"resistances"=null,"trace_chem"=null))
@@ -44,7 +44,7 @@
 /obj/item/reagent_containers/blood/random
 	icon_state = "random_bloodpack"
 
-/obj/item/reagent_containers/blood/random/Initialize()
+/obj/item/reagent_containers/blood/random/Initialize(mapload)
 	icon_state = "bloodpack"
 	blood_type = pick("A+", "A-", "B+", "B-", "O+", "O-")
 	return ..()

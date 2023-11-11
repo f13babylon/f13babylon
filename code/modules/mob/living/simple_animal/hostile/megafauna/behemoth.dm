@@ -55,7 +55,7 @@
 	chosen_message = "<span class='colossus'>You are now screeching, disorienting targets around you.</span>"
 	chosen_attack_num = 3
 
-/mob/living/simple_animal/hostile/megafauna/behemoth/Initialize()
+/mob/living/simple_animal/hostile/megafauna/behemoth/Initialize(mapload)
 	. = ..()
 	starting = get_turf(src)
 

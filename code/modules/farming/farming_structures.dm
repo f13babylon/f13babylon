@@ -25,7 +25,7 @@
 	var/open = FALSE
 	var/speed_multiplier = 4 //How fast it distills. Defaults to 100% (1.0). Lower is better.
 
-/obj/structure/fermenting_barrel/Initialize()
+/obj/structure/fermenting_barrel/Initialize(mapload)
 	create_reagents(300, DRAINABLE | AMOUNT_VISIBLE) //Bluespace beakers, but without the portability or efficiency in circuits.
 	. = ..()
 
@@ -170,7 +170,7 @@
 	var/produce_default_value = 10
 	var/food_to_compost_scale = 0.2 // Meaning average (50 potency) foods will give 10 compost
 
-/obj/structure/reagent_dispensers/compostbin/Initialize()
+/obj/structure/reagent_dispensers/compostbin/Initialize(mapload)
 	. = ..()
 	reagents.clear_reagents()
 	reagents.add_reagent(reagent_id, 100)

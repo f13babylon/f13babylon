@@ -143,7 +143,7 @@
 	light_system = MOVABLE_LIGHT
 	light_range = 4
 
-/mob/living/simple_animal/hostile/syndicate/melee/sword/space/Initialize()
+/mob/living/simple_animal/hostile/syndicate/melee/sword/space/Initialize(mapload)
 	. = ..()
 	sord = new(src)
 
@@ -298,6 +298,6 @@
 	del_on_death = 1
 	deathmessage = "is smashed into pieces!"
 
-/mob/living/simple_animal/hostile/viscerator/Initialize()
+/mob/living/simple_animal/hostile/viscerator/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/swarming)

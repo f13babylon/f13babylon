@@ -62,7 +62,7 @@
 			INVOKE_ASYNC(src, .proc/triple_charge)
 			visible_message("<span class='colossus'>\"<b>YOUR RIDE IS OVER MUTIE, TIME TO DIE!</b>\"</span>")
 			
-/mob/living/simple_animal/hostile/megafauna/captainarlem/Initialize()
+/mob/living/simple_animal/hostile/megafauna/captainarlem/Initialize(mapload)
 	. = ..()
 	for(var/mob/living/simple_animal/hostile/megafauna/captainarlem/B in GLOB.mob_list)
 		if(B != src)

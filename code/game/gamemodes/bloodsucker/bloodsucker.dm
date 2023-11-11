@@ -1,4 +1,4 @@
-/obj/item/claymore/Initialize()
+/obj/item/claymore/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/butchering, 40, 105)
 	AddElement(/datum/element/sword_point)
@@ -20,7 +20,7 @@
 	var/notches = 0 //HOW MANY PEOPLE HAVE BEEN SLAIN WITH THIS BLADE
 	var/obj/item/disk/nuclear/nuke_disk //OUR STORED NUKE DISK
 
-/obj/item/claymore/highlander/Initialize()
+/obj/item/claymore/highlander/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, HIGHLANDER)
 	START_PROCESSING(SSobj, src)

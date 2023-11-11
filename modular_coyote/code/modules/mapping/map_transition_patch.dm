@@ -11,7 +11,7 @@
 	var/destination_x
 	var/destination_y
 
-/turf/closed/indestructible/f13/matrix/transition/Initialize()
+/turf/closed/indestructible/f13/matrix/transition/Initialize(mapload)
 	. = ..()
 
 /turf/closed/indestructible/f13/matrix/transition/is_transition_turf()

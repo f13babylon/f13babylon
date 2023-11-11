@@ -72,7 +72,7 @@
 	/// Items that are dropped on salvage; If it's empty - item can't salvaged
 	var/list/salvage_loot = list()
 
-/obj/item/clothing/Initialize()
+/obj/item/clothing/Initialize(mapload)
 	. = ..()
 	if(CHECK_BITFIELD(clothing_flags, VOICEBOX_TOGGLABLE))
 		actions_types += /datum/action/item_action/toggle_voice_box

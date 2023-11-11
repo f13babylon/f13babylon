@@ -140,7 +140,7 @@
 		S.color = "#810010"
 	my_atom.reagents.clear_reagents()
 	my_atom.visible_message("<span class='warning'>An horrifying tumoural mass forms in [my_atom]!</span>")
-
+/*
 /datum/chemical_reaction/fermi/astral
 	name = "Astrogen"
 	id = /datum/reagent/fermi/astral
@@ -162,8 +162,8 @@
 	FermiChem				= TRUE
 	FermiExplode 			= TRUE
 	PurityMin 				= 0.25
-
-
+*/
+/*
 /datum/chemical_reaction/fermi/enthrall //check this
 	name = "MKUltra"
 	id = /datum/reagent/fermi/enthrall
@@ -237,7 +237,7 @@
 
 //FOR INSTANT REACTIONS - DO NOT MULTIPLY LIMIT BY 10.
 //There's a weird rounding error or something ugh.
-
+*/
 //Nano-b-gone
 /datum/chemical_reaction/fermi/nanite_b_gone//done test
 	name = "Naninte bain"
@@ -308,7 +308,7 @@
 	HIonRelease 	= 0.01
 	RateUpLim 		= 15
 	FermiChem 		= TRUE
-
+/*
 /datum/chemical_reaction/fermi/yamerol//done test
 	name = "Yamerol"
 	id = /datum/reagent/fermi/yamerol
@@ -328,7 +328,7 @@
 	HIonRelease 	= 0.1
 	RateUpLim 		= 2
 	FermiChem 		= TRUE
-
+*/
 /datum/chemical_reaction/fermi/zeolites
 	name = "Zeolites"
 	id = /datum/reagent/fermi/zeolites

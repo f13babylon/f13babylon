@@ -16,7 +16,7 @@
 	var/range = 3
 	var/list/times
 
-/obj/item/grenade/homemade/Initialize()
+/obj/item/grenade/homemade/Initialize(mapload)
 	. = ..()
 	times = list("10" = 5, "-1" = 5, "[rand(25,35)]" = 60, "[rand(35,90)]" = 30)// "Premature, Dud, Short Fuse, Long Fuse"=[weighting value]
 	det_time = text2num(pickweight(times))
@@ -49,7 +49,7 @@
 	throw_range = 5
 	var/datum/looping_sound/reverse_bear_trap/soundloop
 
-/obj/item/grenade/homemade/coffeepotbomb/Initialize()
+/obj/item/grenade/homemade/coffeepotbomb/Initialize(mapload)
 	. = ..()
 	soundloop = new(src, FALSE)
 

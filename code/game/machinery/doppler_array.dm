@@ -14,7 +14,7 @@ GLOBAL_LIST_EMPTY(doppler_arrays)
 	verb_say = "states coldly"
 	var/list/message_log = list()
 
-/obj/machinery/doppler_array/Initialize()
+/obj/machinery/doppler_array/Initialize(mapload)
 	. = ..()
 	GLOB.doppler_arrays += src
 
@@ -180,7 +180,7 @@ GLOBAL_LIST_EMPTY(doppler_arrays)
 		say("Data already captured. Aborting.")
 		return
 
-/obj/machinery/doppler_array/research/Initialize()
+/obj/machinery/doppler_array/research/Initialize(mapload)
 	. = ..()
 	update_techweb()
 

@@ -21,7 +21,7 @@
 
 	var/obj/durand_shield/shield
 
-/obj/mecha/combat/durand/Initialize()
+/obj/mecha/combat/durand/Initialize(mapload)
 	shield = new/obj/durand_shield
 	shield.chassis = src
 	shield.layer = layer
@@ -142,7 +142,7 @@ own integrity back to max. Shield is automatically dropped if we run out of powe
 	var/switching = FALSE ///To keep track of things during the animation
 	anchored = TRUE
 
-/obj/durand_shield/Initialize()
+/obj/durand_shield/Initialize(mapload)
 	. = ..()
 	RegisterSignal(src, COMSIG_MECHA_ACTION_ACTIVATE, .proc/activate)
 

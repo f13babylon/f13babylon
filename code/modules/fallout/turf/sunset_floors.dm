@@ -18,7 +18,7 @@
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 
-/turf/open/floor/wood/wood_common/Initialize()
+/turf/open/floor/wood/wood_common/Initialize(mapload)
 	. = ..()
 	if(icon_state == "common1")
 		icon_state = "common[rand(1,3)]"
@@ -35,7 +35,7 @@
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 
-/turf/open/floor/wood/wood_common/wood_common_light/Initialize()
+/turf/open/floor/wood/wood_common/wood_common_light/Initialize(mapload)
 	. = ..()
 	if(icon_state == "common_light1")
 		icon_state = "common_light[rand(1,3)]"
@@ -52,7 +52,7 @@
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 
-/turf/open/floor/wood/wood_common/wood_common_dark/Initialize()
+/turf/open/floor/wood/wood_common/wood_common_dark/Initialize(mapload)
 	. = ..()
 	if(icon_state == "common_dark1")
 		icon_state = "common_dark[rand(1,3)]"
@@ -69,7 +69,7 @@
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 
-/turf/open/floor/wood/wood_worn/Initialize()
+/turf/open/floor/wood/wood_worn/Initialize(mapload)
 	. = ..()
 	if(icon_state == "worn1")
 		icon_state = "worn[rand(1,4)]"
@@ -86,7 +86,7 @@
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 
-/turf/open/floor/wood/wood_worn/wood_worn_light/Initialize()
+/turf/open/floor/wood/wood_worn/wood_worn_light/Initialize(mapload)
 	. = ..()
 	if(icon_state == "worn_light1")
 		icon_state = "worn_light[rand(1,4)]"
@@ -103,7 +103,7 @@
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 
-/turf/open/floor/wood/wood_worn/wood_worn_dark/Initialize()
+/turf/open/floor/wood/wood_worn/wood_worn_dark/Initialize(mapload)
 	. = ..()
 	if(icon_state == "worn_dark1")
 		icon_state = "worn_dark[rand(1,4)]"
@@ -122,7 +122,7 @@
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 
-/turf/open/floor/wood/wood_fancy/Initialize()
+/turf/open/floor/wood/wood_fancy/Initialize(mapload)
 	. = ..()
 	if(icon_state == "fancy1")
 		icon_state = "fancy[rand(1,1)]"
@@ -139,7 +139,7 @@
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 
-/turf/open/floor/wood/wood_fancy/wood_fancy_light/Initialize()
+/turf/open/floor/wood/wood_fancy/wood_fancy_light/Initialize(mapload)
 	. = ..()
 	if(icon_state == "fancy_light1")
 		icon_state = "fancy_light[rand(1,1)]"
@@ -157,7 +157,7 @@
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 
-/turf/open/floor/wood/wood_fancy/wood_fancy_dark/Initialize()
+/turf/open/floor/wood/wood_fancy/wood_fancy_dark/Initialize(mapload)
 	. = ..()
 	if(icon_state == "fancy_dark1")
 		icon_state = "fancy_dark[rand(1,1)]"
@@ -177,7 +177,7 @@
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 
-/turf/open/floor/wood/wood_wide/Initialize()
+/turf/open/floor/wood/wood_wide/Initialize(mapload)
 	. = ..()
 	if(icon_state == "wide1")
 		icon_state = "wide[rand(1,3)]"
@@ -194,7 +194,7 @@
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 
-/turf/open/floor/wood/wood_wide/wood_wide_light/Initialize()
+/turf/open/floor/wood/wood_wide/wood_wide_light/Initialize(mapload)
 	. = ..()
 	if(icon_state == "wide_light1")
 		icon_state = "wide_light[rand(1,3)]"
@@ -211,7 +211,7 @@
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 
-/turf/open/floor/wood/wood_wide/wood_wide_dark/Initialize()
+/turf/open/floor/wood/wood_wide/wood_wide_dark/Initialize(mapload)
 	. = ..()
 	if(icon_state == "wide_dark1")
 		icon_state = "wide_dark[rand(1,3)]"
@@ -230,7 +230,7 @@
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 
-/turf/open/floor/wood/wood_mosaic/Initialize()
+/turf/open/floor/wood/wood_mosaic/Initialize(mapload)
 	. = ..()
 	if(icon_state == "mosaic1")
 		icon_state = "mosaic[rand(1,3)]"
@@ -247,7 +247,7 @@
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 
-/turf/open/floor/wood/wood_mosaic/wood_mosaic_light/Initialize()
+/turf/open/floor/wood/wood_mosaic/wood_mosaic_light/Initialize(mapload)
 	. = ..()
 	if(icon_state == "mosaic_light1")
 		icon_state = "mosaic_light[rand(1,3)]"
@@ -264,7 +264,7 @@
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 
-/turf/open/floor/wood/wood_mosaic/wood_mosaic_dark/Initialize()
+/turf/open/floor/wood/wood_mosaic/wood_mosaic_dark/Initialize(mapload)
 	. = ..()
 	if(icon_state == "mosaic_dark1")
 		icon_state = "mosaic_dark[rand(1,3)]"

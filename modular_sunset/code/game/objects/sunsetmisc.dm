@@ -163,7 +163,7 @@ Nowhere else to really put this. Pulled from what I had done on Hyper. - Carl
 	light_color = LIGHT_COLOR_CYAN
 	dir = 8 //Less headache inducing :))
 
-/obj/structure/fluff/destroyed_nuclear_reactor/Initialize()
+/obj/structure/fluff/destroyed_nuclear_reactor/Initialize(mapload)
 	. = ..()
 	set_light(3)
 //	AddComponent(/datum/component/radioactive, 15000 , src)

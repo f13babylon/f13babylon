@@ -53,7 +53,7 @@
 	/// Base print speed
 	var/base_print_speed = 10
 
-/obj/machinery/autolathe/Initialize()
+/obj/machinery/autolathe/Initialize(mapload)
 	var/list/mats = allowed_materials
 	if(!mats)
 		mats = SSmaterials.materialtypes_by_category[MAT_CATEGORY_RIGID]
@@ -435,7 +435,7 @@
 			else
 				stored_research.remove_design(D)
 
-/obj/machinery/autolathe/hacked/Initialize()
+/obj/machinery/autolathe/hacked/Initialize(mapload)
 	. = ..()
 	adjust_hacked(TRUE)
 
@@ -470,6 +470,6 @@
 		/datum/material/plastic
 		)
 
-/obj/machinery/autolathe/toy/hacked/Initialize()
+/obj/machinery/autolathe/toy/hacked/Initialize(mapload)
 	. = ..()
 	adjust_hacked(TRUE)

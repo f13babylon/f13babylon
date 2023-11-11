@@ -90,7 +90,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 	lock_icon_state = "med_lock"
 
 /* Initialization */
-/obj/machinery/trading_machine/Initialize()
+/obj/machinery/trading_machine/Initialize(mapload)
 	. = ..()
 	if(create_lock)
 		lock = new /obj/item/lock_part()

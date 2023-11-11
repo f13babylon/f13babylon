@@ -291,7 +291,7 @@
 	footstep_type = FOOTSTEP_MOB_SHOE
 
 
-/mob/living/simple_animal/hostile/raider/junker/creator/Initialize()
+/mob/living/simple_animal/hostile/raider/junker/creator/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/spawner/ranged, mob_types, spawn_time, faction, spawn_text, max_mobs, _range = 7)
 

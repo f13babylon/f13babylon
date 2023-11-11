@@ -13,7 +13,7 @@
 	var/range = 2
 	var/intensity = 20
 
-/obj/effect/decal/waste/Initialize()
+/obj/effect/decal/waste/Initialize(mapload)
 	. = ..()
 	icon_state = "goo[rand(1,13)]"
 //	AddComponent(/datum/component/radioactive, 200, src, 0, TRUE, TRUE) //half-life of 0 because we keep on going.

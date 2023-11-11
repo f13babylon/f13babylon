@@ -18,7 +18,7 @@
 	icon_state = "supafly"
 	item_state = "supafly"
 
-/obj/item/clothing/suit/armor/f13/raider/supafly/Initialize() //HQ parts reinforcement
+/obj/item/clothing/suit/armor/f13/raider/supafly/Initialize(mapload) //HQ parts reinforcement
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -28,7 +28,7 @@
 	icon_state = "raider_rebel_icon"
 	item_state = "raider_rebel_armor"
 
-/obj/item/clothing/suit/armor/f13/raider/rebel/Initialize() //HQ parts reinforcement
+/obj/item/clothing/suit/armor/f13/raider/rebel/Initialize(mapload) //HQ parts reinforcement
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -38,7 +38,7 @@
 	icon_state = "sadist"
 	item_state = "sadist"
 
-/obj/item/clothing/suit/armor/f13/raider/sadist/Initialize()
+/obj/item/clothing/suit/armor/f13/raider/sadist/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -52,7 +52,7 @@
 	flash_protect = 2
 	slowdown = 0.12
 
-/obj/item/clothing/suit/armor/f13/raider/blastmaster/Initialize()
+/obj/item/clothing/suit/armor/f13/raider/blastmaster/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -62,7 +62,7 @@
 	icon_state = "yankee"
 	item_state = "yankee"
 
-/obj/item/clothing/suit/armor/f13/raider/yankee/Initialize()
+/obj/item/clothing/suit/armor/f13/raider/yankee/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -75,7 +75,7 @@
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 10)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
 
-/obj/item/clothing/suit/armor/f13/raider/badlands/Initialize()
+/obj/item/clothing/suit/armor/f13/raider/badlands/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -87,7 +87,7 @@
 	armor = list("melee" = 25, "bullet" = 30, "laser" = 15, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 15)
 	slowdown = 0.1
 
-/obj/item/clothing/suit/armor/f13/raider/painspike/Initialize()
+/obj/item/clothing/suit/armor/f13/raider/painspike/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -98,7 +98,7 @@
 	item_state = "iconoclast"
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "bio" = 0, "rad" = 60, "fire" = 25, "acid" = 25, "wound" = 10)
 
-/obj/item/clothing/suit/armor/f13/raider/iconoclast/Initialize()
+/obj/item/clothing/suit/armor/f13/raider/iconoclast/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -116,7 +116,7 @@
 	icon_state = "patrolduster"
 	item_state = "patrolduster"
 
-/obj/item/clothing/suit/armor/f13/raider/combatduster/Initialize()
+/obj/item/clothing/suit/armor/f13/raider/combatduster/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -136,7 +136,7 @@
 	icon_state = "ncrexile"
 	item_state = "ncrexile"
 
-/obj/item/clothing/suit/armor/f13/exile/ncrexile/Initialize()
+/obj/item/clothing/suit/armor/f13/exile/ncrexile/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -148,7 +148,7 @@
 	item_state = "legexile"
 	slowdown = 0.03
 
-/obj/item/clothing/suit/armor/f13/exile/legexile/Initialize()
+/obj/item/clothing/suit/armor/f13/exile/legexile/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -160,7 +160,7 @@
 	icon_state = "exile_bos"
 	item_state = "exile_bos"
 
-/obj/item/clothing/suit/armor/f13/exile/bosexile/Initialize()
+/obj/item/clothing/suit/armor/f13/exile/bosexile/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -202,7 +202,7 @@
 /datum/component/storage/concrete/pockets/tiny/legion
 	max_items = 3
 
-/obj/item/clothing/suit/armor/f13/legion/Initialize()
+/obj/item/clothing/suit/armor/f13/legion/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -386,7 +386,7 @@
 /datum/component/storage/concrete/pockets/utility
 	max_items = 4
 
-/obj/item/clothing/suit/armor/f13/utilityvest/Initialize()
+/obj/item/clothing/suit/armor/f13/utilityvest/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -396,7 +396,7 @@
 	armor = list("melee" = 15, "bullet" = 40, "laser" = 30, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 10)
 	slowdown = 0.1
 
-/obj/item/clothing/suit/armor/f13/utilityvest/logisticsofficer/Initialize()
+/obj/item/clothing/suit/armor/f13/utilityvest/logisticsofficer/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -414,7 +414,7 @@
 /datum/component/storage/concrete/pockets/bulletbelt/ncr
 	max_items = 2
 
-/obj/item/clothing/suit/armor/f13/ncrarmor/Initialize()
+/obj/item/clothing/suit/armor/f13/ncrarmor/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -536,7 +536,7 @@
 	slowdown = 0.05
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
 
-/obj/item/clothing/suit/toggle/armor/f13/rangerrecon/Initialize()
+/obj/item/clothing/suit/toggle/armor/f13/rangerrecon/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -549,7 +549,7 @@
 	slowdown = 0.03
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
 
-/obj/item/clothing/suit/armor/f13/trailranger/Initialize()
+/obj/item/clothing/suit/armor/f13/trailranger/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -562,7 +562,7 @@
 	slowdown = 0.05
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
 
-/obj/item/clothing/suit/armor/f13/modif_r_vest/Initialize()
+/obj/item/clothing/suit/armor/f13/modif_r_vest/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -573,7 +573,7 @@
 	item_state = "ncr_patrol"
 	armor = list("melee" = 30, "bullet" = 40, "laser" = 40, "energy" = 20, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 20)
 
-/obj/item/clothing/suit/armor/f13/combat/ncr_patrol/Initialize()
+/obj/item/clothing/suit/armor/f13/combat/ncr_patrol/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -599,7 +599,7 @@
 	armor = list("melee" = 30, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20, "wound" = 35)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 
-/obj/item/clothing/suit/armor/f13/rangercombat/Initialize()
+/obj/item/clothing/suit/armor/f13/rangercombat/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -726,7 +726,7 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small/holdout
 	slowdown = 0.1  //CA statline
 
-/obj/item/clothing/suit/armor/f13/town/chief/Initialize()
+/obj/item/clothing/suit/armor/f13/town/chief/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -737,7 +737,7 @@
 	armor = list("melee" = 45, "bullet" = 33, "laser" = 45,  "energy" = 35, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 10)
 	slowdown = 0.08 //combat armor but less slowdown
 
-/obj/item/clothing/suit/armor/f13/town/deputy/Initialize()
+/obj/item/clothing/suit/armor/f13/town/deputy/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -750,7 +750,7 @@
 	item_state = "blueshift"
 	slowdown = 0.02
 
-/obj/item/clothing/suit/armor/vest/oasis/Initialize()
+/obj/item/clothing/suit/armor/vest/oasis/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -763,7 +763,7 @@
 	slowdown = 0.2 //Literally almost craftable RCA. Sacrifice speed.
 	strip_delay = 5
 
-/obj/item/clothing/suit/armor/f13/metalarmor/steelbib/oasis/Initialize()
+/obj/item/clothing/suit/armor/f13/metalarmor/steelbib/oasis/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -777,7 +777,7 @@
 	slowdown = 0.05
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 
-/obj/item/clothing/suit/armor/khan_jacket/Initialize()
+/obj/item/clothing/suit/armor/khan_jacket/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -906,7 +906,7 @@
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 40, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 20)
 	slowdown = 0.1
 
-/obj/item/clothing/suit/armor/f13/enclave/marine/Initialize()
+/obj/item/clothing/suit/armor/f13/enclave/marine/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -919,7 +919,7 @@
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 40, "energy" = 22, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 10)
 
-/obj/item/clothing/suit/armor/f13/usmcriot/Initialize() //HQ parts reinforcement
+/obj/item/clothing/suit/armor/f13/usmcriot/Initialize(mapload) //HQ parts reinforcement
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -935,7 +935,7 @@
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 22, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 10)
 
-/obj/item/clothing/suit/armor/f13/enclavetrenchcoat/Initialize() //HQ parts reinforcement
+/obj/item/clothing/suit/armor/f13/enclavetrenchcoat/Initialize(mapload) //HQ parts reinforcement
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 

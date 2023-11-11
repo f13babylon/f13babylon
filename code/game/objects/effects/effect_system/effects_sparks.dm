@@ -27,7 +27,7 @@
 	light_range = MINIMUM_USEFUL_LIGHT_RANGE
 	light_color = LIGHT_COLOR_FIRE
 
-/obj/effect/particle_effect/sparks/Initialize()
+/obj/effect/particle_effect/sparks/Initialize(mapload)
 	. = ..()
 	flick(icon_state, src) // replay the animation
 	playsound(src, "sparks", 100, TRUE)
@@ -72,7 +72,7 @@
 	name = "lightning"
 	icon_state = "electricity"
 
-/obj/effect/particle_effect/fake_sparks/Initialize()
+/obj/effect/particle_effect/fake_sparks/Initialize(mapload)
 	. = ..()
 	flick(icon_state, src) // replay the animation
 	playsound(src, "sparks", 100, TRUE)
@@ -92,7 +92,7 @@
 	name = "sparks"
 	icon_state = "sparks"
 
-/obj/effect/particle_effect/smithing_sparks/Initialize()
+/obj/effect/particle_effect/smithing_sparks/Initialize(mapload)
 	. = ..()
 	flick(icon_state, src) // replay the animation
 	anchored = TRUE

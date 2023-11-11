@@ -132,12 +132,10 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Kipchak",
 
 "Raider",
-"Outsider",
-"Raider Captain",
 
 "Followers Administrator",
 "Followers Doctor",
-"Followers Scholar",
+"Followers Guard",
 "Followers Robot",
 
 "Cyborg",
@@ -194,7 +192,7 @@ GLOBAL_LIST_INIT(legion_positions, list(
 	"Prime Legionnaire",
 	"Recruit Legionnaire",
 	"Legion Forgemaster",
-	"Legion Immune",
+	"Legion Camp Follower",
 	"Legion Auxilia",
 	"Legion Slave",
 	"Legion Slavemaster"
@@ -243,26 +241,13 @@ GLOBAL_LIST_INIT(tribal_positions, list(
 
 GLOBAL_LIST_INIT(outlaw_positions, list(
 	"Raider",
-	"Outsider",
-	"Raider Captain",
 ))
 
-/*
-GLOBAL_LIST_INIT(khan_positions, list(
-	"Noyan",
-	"Steward",
-	"Kheshig",
-	"Khorchin",
-	"Kipchak",
-	"Mangudai",
-))
-*/
 GLOBAL_LIST_INIT(khan_positions, list(
 	"Khan Senior Enforcer",
 	"Khan Enforcer",
 	"Khan Chemist",
 	"Khan Smith",
-	"Khan Courtesan",
 ))
 
 GLOBAL_LIST_INIT(enclave_positions, list(
@@ -289,7 +274,7 @@ GLOBAL_LIST_INIT(silicon_positions, list(
 GLOBAL_LIST_INIT(followers_positions, list(
 	"Followers Administrator",
 	"Followers Doctor",
-	"Followers Scholar",
+	"Followers Guard",
 	"Followers Volunteer",
 	"Followers Scientist",
 	"Followers Robot",

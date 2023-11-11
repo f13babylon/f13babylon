@@ -236,7 +236,7 @@
 		to_chat(owner.current, "<span class='userdanger'>You have been provided with a standard uplink to accomplish your task. </span>")
 		to_chat(owner.current, "<span class='userdanger'>By no means reveal that you are a Syndicate agent. By no means reveal that your targets are being hunted.</span>")
 	else
-		to_chat(owner.current, "<span class='userdanger'>CAUTION: Your legal status as a citizen of NanoTrasen will be permanently revoked upon completion of your first contract.</span>")
+		to_chat(owner.current, "<span class='userdanger'>CAUTION: Your legal status as a citizen of Nanotrasen will be permanently revoked upon completion of your first contract.</span>")
 		to_chat(owner.current, "<span class='userdanger'>Your target has been suspected of [crime], and must be removed from this plane.</span>")
 		to_chat(owner.current, "<span class='userdanger'>While you have a license to kill, you are to eliminate your targets with no collateral or unrelated deaths.</span>")
 		to_chat(owner.current, "<span class='userdanger'>For the sake of plausable deniability, you have been equipped with captured Syndicate equipment via uplink.</span>")

@@ -13,7 +13,7 @@
 	var/datum/beepsky_fashion/beepsky_fashion //the associated datum for applying this to a secbot
 	var/list/speechspan = null
 
-/obj/item/clothing/head/Initialize()
+/obj/item/clothing/head/Initialize(mapload)
 	. = ..()
 	if(ishuman(loc) && dynamic_hair_suffix)
 		var/mob/living/carbon/human/H = loc
@@ -64,7 +64,7 @@
 /obj/item/clothing/head/helmet/f13/combat/dark
 	color = "#302E2E" // Dark Grey
 
-/obj/item/clothing/head/helmet/f13/combat/Initialize()
+/obj/item/clothing/head/helmet/f13/combat/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/spraycan_paintable)
 	START_PROCESSING(SSobj, src)
@@ -177,7 +177,7 @@
 	visor_flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	visor_flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDESNOUT
 
-/obj/item/clothing/head/helmet/f13/metalmask/Initialize()
+/obj/item/clothing/head/helmet/f13/metalmask/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/spraycan_paintable)
 	START_PROCESSING(SSobj, src)
@@ -619,7 +619,7 @@
 	flags_inv = HIDEMASK|HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	mutantrace_variation = STYLE_MUZZLE
 
-/obj/item/clothing/head/f13/headscarf/Initialize()
+/obj/item/clothing/head/f13/headscarf/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -641,7 +641,7 @@
 	flags_inv = HIDEHAIR
 	armor = list("melee" = 20, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 10)
 
-/obj/item/clothing/head/f13/cowboy/Initialize()
+/obj/item/clothing/head/f13/cowboy/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -654,7 +654,7 @@
 	flags_inv = HIDEHAIR
 	armor = list("melee" = 20, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 10)
 
-/obj/item/clothing/head/f13/bandit/Initialize()
+/obj/item/clothing/head/f13/bandit/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -666,7 +666,7 @@
 	flags_inv = HIDEHAIR
 	armor = list("melee" = 20, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 10)
 
-/obj/item/clothing/head/f13/gambler/Initialize()
+/obj/item/clothing/head/f13/gambler/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -681,7 +681,7 @@
 	flags_inv = HIDEMASK|HIDEEARS|HIDEHAIR
 	strip_delay = 10
 
-/obj/item/clothing/head/helmet/f13/motorcycle/Initialize()
+/obj/item/clothing/head/helmet/f13/motorcycle/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -717,7 +717,7 @@
 	armor = list("melee" = 35, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 10)
 	flags_inv = HIDEEARS|HIDEHAIR
 
-/obj/item/clothing/head/helmet/f13/wastewarhat/Initialize()
+/obj/item/clothing/head/helmet/f13/wastewarhat/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -740,7 +740,7 @@
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 10)
 	flags_inv = HIDEEARS|HIDEHAIR
 
-/obj/item/clothing/head/helmet/f13/brahmincowboyhat/Initialize()
+/obj/item/clothing/head/helmet/f13/brahmincowboyhat/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -752,7 +752,7 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 10)
 
-/obj/item/clothing/head/helmet/f13/rustedcowboyhat/Initialize()
+/obj/item/clothing/head/helmet/f13/rustedcowboyhat/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -911,7 +911,7 @@
 	item_state = "marlowhat"
 	flags_inv = HIDEEARS|HIDEHAIR
 
-/obj/item/clothing/head/helmet/f13/marlowhat/Initialize()
+/obj/item/clothing/head/helmet/f13/marlowhat/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -922,7 +922,7 @@
 	item_state = "ranger_grey_hat"
 	flags_inv = HIDEEARS|HIDEHAIR
 
-/obj/item/clothing/head/f13/ranger_hat/Initialize() //HQ parts reinforcement
+/obj/item/clothing/head/f13/ranger_hat/Initialize(mapload) //HQ parts reinforcement
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 

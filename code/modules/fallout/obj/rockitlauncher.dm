@@ -26,7 +26,7 @@
 		//Add things that we do not want in the launcher here
 	var/static/list/blacklist_typecache = typecacheof(/obj/item/throwing_star)
 
-/obj/item/rockitlauncher_pack/Initialize()
+/obj/item/rockitlauncher_pack/Initialize(mapload)
 	. = ..()
 	gun = new(src)
 	START_PROCESSING(SSobj, src)
@@ -227,7 +227,7 @@ Possible solution: Only add the minimum weight class of a stack (which is basica
 	var/speen = TRUE
 	var/settings = 1
 
-/obj/item/pneumatic_cannon/rockitlauncher/Initialize()
+/obj/item/pneumatic_cannon/rockitlauncher/Initialize(mapload)
 	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, .proc/on_wield)
 	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, .proc/on_unwield)
 

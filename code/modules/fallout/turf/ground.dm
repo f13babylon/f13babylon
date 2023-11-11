@@ -53,7 +53,7 @@
 /turf/open/indestructible/ground/outside
 	sunlight_state = SUNLIGHT_SOURCE
 
-/turf/open/indestructible/ground/outside/Initialize()
+/turf/open/indestructible/ground/outside/Initialize(mapload)
 	. = ..()
 	flags_2 |= GLOBAL_LIGHT_TURF_2
 
@@ -165,7 +165,7 @@
 	icon_state = "wasteland"
 	icon = 'icons/fallout/turfs/ground_harsh.dmi'
 
-/turf/open/indestructible/ground/outside/desert/Initialize()
+/turf/open/indestructible/ground/outside/desert/Initialize(mapload)
 	. = ..()
 	if(prob(2))
 		salvage = pickweight(loots)
@@ -379,7 +379,7 @@
 	clawfootstep = FOOTSTEP_WATER
 	heavyfootstep = FOOTSTEP_WATER
 
-/turf/open/indestructible/ground/outside/water/Initialize()
+/turf/open/indestructible/ground/outside/water/Initialize(mapload)
 	. = ..()
 	update_icon()
 
@@ -419,7 +419,7 @@
 	barefootstep = FOOTSTEP_SNOW
 	clawfootstep = FOOTSTEP_SNOW
 
-/turf/open/indestructible/ground/outside/snow/Initialize()
+/turf/open/indestructible/ground/outside/snow/Initialize(mapload)
 	. = ..()
 	if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
 		plantGrass()
@@ -481,7 +481,7 @@
 //	allowed_plants = list(/obj/item/seeds/glow)
 //	step_sounds = list("human" = "erikafootsteps")
 
-/turf/open/indestructible/ground/inside/mountain/Initialize()
+/turf/open/indestructible/ground/inside/mountain/Initialize(mapload)
 	. = ..()
 	//If no fences, machines, etc. try to plant mushrooms
 	if(!(\
@@ -545,7 +545,7 @@
 	icon = 'icons/fallout/turfs/ground.dmi'
 	icon_state = "railsnone"
 
-/turf/open/indestructible/ground/inside/subway/Initialize()
+/turf/open/indestructible/ground/inside/subway/Initialize(mapload)
 	. = ..()
 	for(var/direction in GLOB.cardinals)
 		var/turf/turf_to_check = get_step(src, direction)

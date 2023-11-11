@@ -44,7 +44,7 @@
 	sharpness = SHARP_EDGED
 	total_mass = TOTAL_MASS_HAND_REPLACEMENT
 
-/obj/item/melee/synthetic_arm_blade/Initialize()
+/obj/item/melee/synthetic_arm_blade/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/butchering, 60, 80) //very imprecise
 
@@ -80,7 +80,7 @@
 	parry_failed_stagger_duration = 3 SECONDS
 	parry_failed_clickcd_duration = 2 SECONDS
 
-/obj/item/melee/sabre/Initialize()
+/obj/item/melee/sabre/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/butchering, 30, 95, 5) //fast and effective, but as a sword, it might damage the results.
 	AddElement(/datum/element/sword_point)
@@ -206,7 +206,7 @@
 		. |= BLOCK_SHOULD_REDIRECT
 		return_list[BLOCK_RETURN_REDIRECT_METHOD] = REDIRECT_METHOD_DEFLECT
 
-/obj/item/melee/rapier/Initialize()
+/obj/item/melee/rapier/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/butchering, 20, 65, 0)
 
@@ -292,7 +292,7 @@
 	var/balanced = 1
 	force_string = "INFINITE"
 
-/obj/item/melee/supermatter_sword/Initialize()
+/obj/item/melee/supermatter_sword/Initialize(mapload)
 	. = ..()
 	shard = new /obj/machinery/power/supermatter_crystal(src)
 	qdel(shard.countdown)
@@ -379,7 +379,7 @@
 	var/datum/beam/beam
 	total_mass = 2.5
 
-/obj/item/melee/roastingstick/Initialize()
+/obj/item/melee/roastingstick/Initialize(mapload)
 	. = ..()
 	if (!ovens)
 		ovens = typecacheof(list(/obj/singularity, /obj/machinery/power/supermatter_crystal, /obj/structure/bonfire, /obj/structure/destructible/clockwork/massive/ratvar))
@@ -492,7 +492,7 @@
 	var/overlay_state = "mace_handle"
 	var/mutable_appearance/overlay
 
-/obj/item/melee/cleric_mace/Initialize()
+/obj/item/melee/cleric_mace/Initialize(mapload)
 	. = ..()
 	overlay = mutable_appearance(icon, overlay_state)
 	overlay.appearance_flags = RESET_COLOR

@@ -17,7 +17,7 @@
 	var/obj/screen/plane_master/lighting/cam_plane_master
 	var/obj/screen/background/cam_background
 
-/obj/machinery/computer/security/Initialize()
+/obj/machinery/computer/security/Initialize(mapload)
 	. = ..()
 	// Map name has to start and end with an A-Z character,
 	// and definitely NOT with a square bracket or even a number.
@@ -227,7 +227,7 @@
 	circuit = null
 	light_power = 0
 
-/obj/machinery/computer/security/telescreen/Initialize()
+/obj/machinery/computer/security/telescreen/Initialize(mapload)
 	. = ..()
 	var/turf/T = get_turf_pixel(src)
 	if(iswallturf(T))
@@ -250,7 +250,7 @@
 	var/icon_state_off = "entertainment_blank"
 	var/icon_state_on = "entertainment"
 
-/obj/machinery/computer/security/telescreen/entertainment/Initialize()
+/obj/machinery/computer/security/telescreen/entertainment/Initialize(mapload)
 	. = ..()
 	RegisterSignal(src, COMSIG_CLICK, .proc/BigClick)
 

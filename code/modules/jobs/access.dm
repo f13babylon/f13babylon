@@ -451,7 +451,7 @@
 				"NCR Captain", "NCR Lieutenant", "NCR Logistics Officer", "NCR Representative", "NCR Medical Officer", "NCR Heavy Trooper", "NCR Sergeant", "NCR Senior Enlisted Advisor",
 				"NCR Corporal", "NCR Combat Medic", "NCR Combat Engineer", "NCR Military Police", "NCR Trooper", "NCR Conscript", "NCR Rear Echelon", "NCR Veteran Ranger", "NCR Ranger",
 				"Legion Centurion", "Legion Orator", "Legion Recruit Decanus", "Legion Prime Decanus", "Legion Veteran Decanus", "Legion Vexillarius", "Legion Slavemaster", "Legion Explorer", "Legion Venator",
-				"Veteran Legionnaire", "Prime Legionnaire", "Recruit Legionnaire", "Legion Forgemaster", "Legion Immune", "Legion Auxilia", "Legion Slave")
+				"Veteran Legionnaire", "Prime Legionnaire", "Recruit Legionnaire", "Legion Forgemaster", "Legion Camp Follower", "Legion Auxilia", "Legion Slave")
 
 /proc/get_all_job_icons() //For all existing HUD icons
 	return get_all_jobs() + list("Prisoner")

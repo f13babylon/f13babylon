@@ -17,7 +17,7 @@
 	flags_1 = NODECONSTRUCT_1
 	canSmoothWith = list(/obj/structure/table/booth)
 
-/obj/structure/table/booth/Initialize()
+/obj/structure/table/booth/Initialize(mapload)
 	canSmoothWith += subtypesof(/turf/closed/wall/f13/wood) + subtypesof(/obj/structure/window/fulltile)
 	. = ..()
 

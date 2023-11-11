@@ -143,7 +143,7 @@
 	custom_materials = list(/datum/material/iron=6000)
 	resistance_flags = FIRE_PROOF
 
-/obj/item/melee/onehanded/knife/Initialize()
+/obj/item/melee/onehanded/knife/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/butchering, 80 - force, 100, force - 10) //bonus chance increases depending on force
 
@@ -241,7 +241,7 @@
 	var/extended_icon_state = "knife_switch_ext"
 	var/retracted_icon_state = "knife_switch"
 
-/obj/item/melee/onehanded/knife/switchblade/Initialize()
+/obj/item/melee/onehanded/knife/switchblade/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/butchering, 40, 105)
 
@@ -430,7 +430,7 @@
 	var/force_off // Damage when off - not stunning
 	var/weight_class_on // What is the new size class when turned on
 
-/obj/item/melee/classic_baton/Initialize()
+/obj/item/melee/classic_baton/Initialize(mapload)
 	. = ..()
 
 // Description for trying to stun when still on cooldown.

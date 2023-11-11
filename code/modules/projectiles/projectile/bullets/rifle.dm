@@ -198,7 +198,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	var/smoke_radius = 1
 	var/datum/effect_system/smoke_spread/chem/smoke_system
 
-/obj/item/projectile/bullet/a50MG/contam/Initialize()
+/obj/item/projectile/bullet/a50MG/contam/Initialize(mapload)
 	. = ..()
 	create_reagents(15, NO_REACT, NO_REAGENTS_VALUE)
 	smoke_system = new

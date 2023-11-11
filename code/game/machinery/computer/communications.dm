@@ -40,7 +40,7 @@
 		return FALSE
 	return TRUE
 
-/obj/machinery/computer/communications/Initialize()
+/obj/machinery/computer/communications/Initialize(mapload)
 	. = ..()
 	GLOB.shuttle_caller_list += src
 

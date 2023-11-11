@@ -27,7 +27,7 @@
 		/obj/item/his_grace))
 	var/datum/looping_sound/deep_fryer/fry_loop
 
-/obj/machinery/deepfryer/Initialize()
+/obj/machinery/deepfryer/Initialize(mapload)
 	. = ..()
 	create_reagents(50, OPENCONTAINER)
 	reagents.add_reagent(/datum/reagent/consumable/cooking_oil, 25)

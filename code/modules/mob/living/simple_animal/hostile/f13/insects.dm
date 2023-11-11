@@ -42,7 +42,7 @@
 	decompose = FALSE
 	blood_volume = 0
 
-/mob/living/simple_animal/hostile/giantant/Initialize()
+/mob/living/simple_animal/hostile/giantant/Initialize(mapload)
 	. = ..()
 
 /mob/living/simple_animal/hostile/giantant/Aggro()
@@ -87,7 +87,7 @@
 	a_intent = INTENT_HARM
 	blood_volume = 0
 
-/mob/living/simple_animal/hostile/fireant/Initialize()
+/mob/living/simple_animal/hostile/fireant/Initialize(mapload)
 	. = ..()
 
 /mob/living/simple_animal/hostile/fireant/Aggro()
@@ -150,7 +150,7 @@
 	blood_volume = 0
 
 
-/mob/living/simple_animal/hostile/giantantqueen/Initialize()
+/mob/living/simple_animal/hostile/giantantqueen/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/spawner/ranged, mob_types, spawn_time, faction, spawn_text, max_mobs, _range = 7)
 
@@ -223,7 +223,7 @@
 		var/mob/living/carbon/human/H = target
 		H.reagents.add_reagent(/datum/reagent/toxin, 5)
 
-/mob/living/simple_animal/hostile/radscorpion/Initialize()
+/mob/living/simple_animal/hostile/radscorpion/Initialize(mapload)
 	. = ..()
 	scorpion_randomify()
 	update_icons()
@@ -343,7 +343,7 @@
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/cazador_meat = 1, /obj/item/stack/sheet/animalhide/chitin = 1)
 	butcher_difficulty = 1.5
 
-/mob/living/simple_animal/hostile/cazador/young/Initialize()
+/mob/living/simple_animal/hostile/cazador/young/Initialize(mapload)
 	. = ..()
 	resize = 0.8
 	update_transform()

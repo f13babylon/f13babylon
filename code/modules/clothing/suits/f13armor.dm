@@ -11,7 +11,7 @@
 	resistance_flags = NONE
 
 
-/obj/item/clothing/suit/armor/Initialize()
+/obj/item/clothing/suit/armor/Initialize(mapload)
 	. = ..()
 	if(!allowed)
 		allowed = GLOB.security_vest_allowed
@@ -65,7 +65,7 @@
 	strip_delay = 30
 	slowdown = 0.025
 
-/obj/item/clothing/suit/armor/f13/kit/Initialize()
+/obj/item/clothing/suit/armor/f13/kit/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -79,7 +79,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
 	slowdown = 0.025
 
-/obj/item/clothing/suit/armor/f13/kit/punk/Initialize()
+/obj/item/clothing/suit/armor/f13/kit/punk/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -133,7 +133,7 @@
 	slowdown = 0.2
 	strip_delay = 10
 
-/obj/item/clothing/suit/armor/fluff/metalarmor/Initialize()
+/obj/item/clothing/suit/armor/fluff/metalarmor/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/spraycan_paintable)
 	START_PROCESSING(SSobj, src)
@@ -187,7 +187,7 @@
 	desc = "An old military grade pre war combat armor. Now in dark, and extra-crispy!"
 	color = "#514E4E"
 
-/obj/item/clothing/suit/armor/f13/combat/Initialize()
+/obj/item/clothing/suit/armor/f13/combat/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/spraycan_paintable)
 	START_PROCESSING(SSobj, src)
@@ -307,7 +307,7 @@
 	/// Used to track next tool required to salvage the suit
 	var/salvage_step = 0
 
-/obj/item/clothing/suit/armor/f13/power_armor/Initialize()
+/obj/item/clothing/suit/armor/f13/power_armor/Initialize(mapload)
 	. = ..()
 	if(ispath(cell))
 		cell = new cell(src)
@@ -993,7 +993,7 @@
 		H.update_inv_w_uniform()
 		H.update_body()
 
-/obj/item/clothing/suit/armor/f13/exile/cust0m/Initialize()
+/obj/item/clothing/suit/armor/f13/exile/cust0m/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -1010,7 +1010,7 @@
 	icon_state = "reptiliatenebris"
 	item_state = "reptiliatenebris"
 
-/obj/item/clothing/suit/armor/f13/raider/reptiliatenebris/Initialize()
+/obj/item/clothing/suit/armor/f13/raider/reptiliatenebris/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -1023,7 +1023,7 @@
 	armor = list("melee" = 30, "bullet" = 25, "laser" = 25, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 10)
 	strip_delay = 40
 
-/obj/item/clothing/suit/armor/f13/shankduster/Initialize()
+/obj/item/clothing/suit/armor/f13/shankduster/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -1090,7 +1090,7 @@
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 25, "energy" = 10, "bomb" = 15, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 10)
 	strip_delay = 40
 
-/obj/item/clothing/suit/armor/f13/herbertranger/Initialize() //HQ parts reinforcement, just like raider gear
+/obj/item/clothing/suit/armor/f13/herbertranger/Initialize(mapload) //HQ parts reinforcement, just like raider gear
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -1103,7 +1103,7 @@
 	armor = list("melee" = 30, "bullet" = 25, "laser" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 10)
 	strip_delay = 40
 
-/obj/item/clothing/suit/armor/f13/marlowsuit/Initialize()
+/obj/item/clothing/suit/armor/f13/marlowsuit/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -1113,7 +1113,7 @@
 	icon_state = "ikesuit"
 	item_state = "ikesuit"
 
-/obj/item/clothing/suit/armor/f13/ikesuit/Initialize()
+/obj/item/clothing/suit/armor/f13/ikesuit/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -1123,7 +1123,7 @@
 	icon_state = "masonsuit"
 	item_state = "masonsuit"
 
-/obj/item/clothing/suit/armor/f13/masonsuit/Initialize()
+/obj/item/clothing/suit/armor/f13/masonsuit/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 

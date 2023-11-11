@@ -18,7 +18,7 @@
 	var/heat_stage = 0
 	var/heat_diffusion = 3 //How much heat is lost per tick
 
-/obj/item/encencminigunbal4mm/Initialize()
+/obj/item/encencminigunbal4mm/Initialize(mapload)
 	. = ..()
 	gun = new(src)
 	START_PROCESSING(SSobj, src)
@@ -125,7 +125,7 @@
 	item_flags = SLOWS_WHILE_IN_HAND
 	var/obj/item/encencminigunbal4mm/ammo_pack
 
-/obj/item/gun/ballistic/encminigunbal4mm/Initialize()
+/obj/item/gun/ballistic/encminigunbal4mm/Initialize(mapload)
 	if(istype(loc, /obj/item/encencminigunbal4mm)) //We should spawn inside an ammo pack so let's use that one.
 		ammo_pack = loc
 	else
@@ -200,7 +200,7 @@
 	var/heat_stage = 0
 	var/heat_diffusion = 2 //How much heat is lost per tick
 
-/obj/item/encminigunpack/Initialize()
+/obj/item/encminigunpack/Initialize(mapload)
 	. = ..()
 	gun = new(src)
 	START_PROCESSING(SSobj, src)
@@ -304,7 +304,7 @@
 	item_flags = NEEDS_PERMIT | SLOWS_WHILE_IN_HAND
 	var/obj/item/encminigunpack/ammo_pack
 
-/obj/item/gun/energy/encminigun/Initialize()
+/obj/item/gun/energy/encminigun/Initialize(mapload)
 	if(istype(loc, /obj/item/encminigunpack)) //We should spawn inside an ammo pack so let's use that one.
 		ammo_pack = loc
 	else

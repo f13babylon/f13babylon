@@ -157,7 +157,7 @@
 
 	footstep_type = FOOTSTEP_MOB_SHOE
 
-/mob/living/simple_animal/cow/Initialize()
+/mob/living/simple_animal/cow/Initialize(mapload)
 	udder = new(null, milk_reagent)
 	. = ..()
 
@@ -238,7 +238,7 @@
 	name = "strange cow"
 	desc = "Something seems off about the milk this cow is producing."
 
-/mob/living/simple_animal/cow/random/Initialize()
+/mob/living/simple_animal/cow/random/Initialize(mapload)
 	milk_reagent = get_random_reagent_id() //this has a blacklist so don't worry about romerol cows, etc
 	return ..()
 
@@ -251,7 +251,7 @@
 	speak_chance = 10 //the cow is eager to share its wisdom! //but is wise enough to not lag  the server too bad
 	milk_reagent = /datum/reagent/medicine/liquid_wisdom
 
-/mob/living/simple_animal/cow/wisdom/Initialize()
+/mob/living/simple_animal/cow/wisdom/Initialize(mapload)
 	. = ..()
 	speak = GLOB.wisdoms //Done here so it's setup properly
 
@@ -296,7 +296,7 @@
 
 	footstep_type = FOOTSTEP_MOB_CLAW
 
-/mob/living/simple_animal/chick/Initialize()
+/mob/living/simple_animal/chick/Initialize(mapload)
 	. = ..()
 	pixel_x = rand(-6, 6)
 	pixel_y = rand(0, 10)
@@ -359,7 +359,7 @@
 
 	footstep_type = FOOTSTEP_MOB_CLAW
 
-/mob/living/simple_animal/chicken/Initialize()
+/mob/living/simple_animal/chicken/Initialize(mapload)
 	. = ..()
 	if(!body_color)
 		body_color = pick(validColors)
@@ -741,7 +741,7 @@
 	name = "brahmin calf"
 	is_calf = 1
 
-/mob/living/simple_animal/cow/brahmin/calf/Initialize()
+/mob/living/simple_animal/cow/brahmin/calf/Initialize(mapload)
 	. = ..()
 	resize = 0.7
 	update_transform()
@@ -882,7 +882,7 @@
 	name = "bighoner calf"
 	resize = 0.7
 
-/mob/living/simple_animal/hostile/retaliate/goat/bighorn/calf/Initialize() //calfs should not be a separate critter, they should just be a normal whatever with these vars
+/mob/living/simple_animal/hostile/retaliate/goat/bighorn/calf/Initialize(mapload) //calfs should not be a separate critter, they should just be a normal whatever with these vars
 	. = ..()
 	resize = 0.7
 	update_transform()

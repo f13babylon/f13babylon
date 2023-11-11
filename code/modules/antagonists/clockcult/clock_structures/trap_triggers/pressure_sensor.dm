@@ -7,7 +7,7 @@
 	icon_state = "pressure_sensor"
 	alpha = 50
 
-/obj/structure/destructible/clockwork/trap/trigger/pressure_sensor/Initialize()
+/obj/structure/destructible/clockwork/trap/trigger/pressure_sensor/Initialize(mapload)
 	. = ..()
 	var/static/list/loc_connections = list(
 		COMSIG_ATOM_ENTERED = .proc/on_entered,

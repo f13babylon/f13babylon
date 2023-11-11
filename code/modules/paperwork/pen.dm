@@ -113,7 +113,7 @@
 						)
 	embedding = list("embed_chance" = 75)
 
-/obj/item/pen/fountain/captain/Initialize()
+/obj/item/pen/fountain/captain/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/butchering, 200, 115) //the pen is mightier than the sword
 
@@ -186,7 +186,7 @@
 				reagents.trans_to(M, reagents.total_volume)
 
 
-/obj/item/pen/sleepy/Initialize()
+/obj/item/pen/sleepy/Initialize(mapload)
 	. = ..()
 	create_reagents(45, OPENCONTAINER)
 	reagents.add_reagent(/datum/reagent/toxin/chloralhydrate, 20)

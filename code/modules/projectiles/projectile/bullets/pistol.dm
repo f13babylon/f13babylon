@@ -83,7 +83,7 @@ Uranium, Contaminated
 	sharpness = SHARP_NONE
 	var/acid_type = /datum/reagent/toxin/acid/fluacid
 
-/obj/item/projectile/bullet/c38/acid/Initialize()
+/obj/item/projectile/bullet/c38/acid/Initialize(mapload)
 	. = ..()
 	create_reagents(5, NO_REACT, NO_REAGENTS_VALUE)
 	reagents.add_reagent(acid_type, 5)
@@ -138,7 +138,7 @@ Uranium, Contaminated
 	sharpness = SHARP_NONE
 	var/acid_type = /datum/reagent/toxin/acid/fluacid
 
-/obj/item/projectile/bullet/c9mm/acid/Initialize()
+/obj/item/projectile/bullet/c9mm/acid/Initialize(mapload)
 	. = ..()
 	create_reagents(2.5, NO_REACT, NO_REAGENTS_VALUE)
 	reagents.add_reagent(acid_type, 2.5)
@@ -272,7 +272,7 @@ Uranium, Contaminated
 	sharpness = SHARP_NONE
 	var/acid_type = /datum/reagent/toxin/acid/fluacid
 
-/obj/item/projectile/bullet/a357/acid/Initialize()
+/obj/item/projectile/bullet/a357/acid/Initialize(mapload)
 	. = ..()
 	create_reagents(5, NO_REACT, NO_REAGENTS_VALUE)
 	reagents.add_reagent(acid_type, 5)
@@ -353,7 +353,7 @@ Uranium, Contaminated
 	sharpness = SHARP_NONE
 	var/acid_type = /datum/reagent/toxin/acid/fluacid
 
-/obj/item/projectile/bullet/c4570/acid/Initialize()
+/obj/item/projectile/bullet/c4570/acid/Initialize(mapload)
 	. = ..()
 	create_reagents(10, NO_REACT, NO_REAGENTS_VALUE)
 	reagents.add_reagent(acid_type, 10)
@@ -395,7 +395,7 @@ Uranium, Contaminated
 	damage = 18
 	var/smoke_radius = 1
 
-/obj/item/projectile/bullet/mm14/contam/Initialize()
+/obj/item/projectile/bullet/mm14/contam/Initialize(mapload)
 	. = ..()
 	create_reagents(15, NO_REACT, NO_REAGENTS_VALUE)
 	reagents.add_reagent(/datum/reagent/toxin/metabtoxin, 15)
@@ -502,7 +502,7 @@ SYNDIE AMMO
 	range = 16
 
 NEEDLE INJECTION CODE
-/obj/item/projectile/bullet/needle/Initialize()
+/obj/item/projectile/bullet/needle/Initialize(mapload)
 	. = ..()
 	create_reagents(50, NO_REACT, NO_REAGENTS_VALUE)
 

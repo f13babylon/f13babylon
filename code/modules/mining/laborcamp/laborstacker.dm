@@ -15,7 +15,7 @@ GLOBAL_LIST(labor_sheet_values)
 	var/door_tag = "prisonshuttle"
 	var/obj/item/radio/Radio //needed to send messages to sec radio
 
-/obj/machinery/mineral/labor_claim_console/Initialize()
+/obj/machinery/mineral/labor_claim_console/Initialize(mapload)
 	. = ..()
 	Radio = new/obj/item/radio(src)
 	Radio.listening = FALSE

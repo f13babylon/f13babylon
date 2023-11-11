@@ -194,10 +194,10 @@
 	always_available = FALSE
 
 /datum/crafting_recipe/tribalwar/silverbow
-	name = "Silver Bow"
-	result = /obj/item/gun/ballistic/bow/silver
+	name = "Titanium Bow"
+	result = /obj/item/gun/ballistic/bow/titanium
 	time = 80
-	reqs = list(/obj/item/stack/sheet/mineral/silver = 10,
+	reqs = list(/obj/item/stack/sheet/mineral/titanium = 10,
 				/obj/item/stack/sheet/metal = 10,
 				/obj/item/stack/crafting/metalparts = 5)
 	category = CAT_TRIBAL

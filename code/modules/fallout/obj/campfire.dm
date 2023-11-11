@@ -16,7 +16,7 @@
 	icon = 'icons/fallout/objects/furniture/heating.dmi'
 	icon_state = "campfire"
 
-/obj/structure/campfire/Initialize()
+/obj/structure/campfire/Initialize(mapload)
 	. = ..()
 	var/static/list/loc_connections = list(
 		COMSIG_ATOM_ENTERED = .proc/on_entered,

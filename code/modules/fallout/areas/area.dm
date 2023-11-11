@@ -79,7 +79,7 @@
 	icon_state = "trainex"
 
 /area/f13/wasteland/nanotrasen
-	name = "NanoTrasen HQ Exterior"
+	name = "Nanotrasen HQ Exterior"
 	icon_state = "nanoex"
 
 /area/f13/wasteland/bighorn
@@ -185,7 +185,7 @@
 	icon_state = "train"
 
 /area/f13/building/nanotrasen
-	name = "NanoTrasen HQ"
+	name = "Nanotrasen HQ"
 	icon_state = "nano"
 
 /area/f13/building/khanfort

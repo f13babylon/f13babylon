@@ -2,8 +2,22 @@
 set -euo pipefail
 
 source dependencies.sh
+cwd=$(pwd)
 
-mkdir -p ~/.byond/bin
-wget -O ~/.byond/bin/librust_g.so "https://github.com/tgstation/rust-g/releases/download/$RUST_G_VERSION/librust_g.so"
-chmod +x ~/.byond/bin/librust_g.so
-ldd ~/.byond/bin/librust_g.so
+if [ ! -d ~/rust-g ]; then
+	git clone https://github.com/tgstation/rust-g ~/rust-g
+	cd ~/rust-g
+else
+	cd ~/rust-g
+	git fetch
+fi
+git reset --hard
+git checkout ${RUST_G_VERSION}
+
+rustup target add i686-unknown-linux-gnu
+export PKG_CONFIG_ALLOW_CROSS=1
+cargo build --release --target i686-unknown-linux-gnu
+cp target/i686-unknown-linux-gnu/release/librust_g.so "$cwd/librust_g.so"
+cd "$cwd"
+chmod +x librust_g.so
+ldd librust_g.so

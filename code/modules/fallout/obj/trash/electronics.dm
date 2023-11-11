@@ -19,7 +19,7 @@
 	var/max_item_size = WEIGHT_CLASS_TINY
 	var/list/toastables = list()
 
-/obj/item/trash/f13/electronic/toaster/Initialize()
+/obj/item/trash/f13/electronic/toaster/Initialize(mapload)
 	. = ..()
 	cell = new /obj/item/stock_parts/cell(src)
 

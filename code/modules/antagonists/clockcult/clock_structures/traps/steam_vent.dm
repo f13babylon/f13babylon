@@ -17,7 +17,7 @@
 	else
 		playsound(src, 'sound/machines/clockcult/integration_cog_install.ogg', 50, TRUE)
 
-/obj/structure/destructible/clockwork/trap/steam_vent/Initialize()
+/obj/structure/destructible/clockwork/trap/steam_vent/Initialize(mapload)
 	. = ..()
 	var/static/list/loc_connections = list(
 		COMSIG_ATOM_ENTERED = .proc/on_entered,

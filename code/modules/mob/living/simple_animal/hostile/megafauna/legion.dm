@@ -54,7 +54,7 @@ Difficulty: Medium
 	wound_bonus = -40
 	bare_wound_bonus = 20
 
-/mob/living/simple_animal/hostile/megafauna/legion/Initialize()
+/mob/living/simple_animal/hostile/megafauna/legion/Initialize(mapload)
 	. = ..()
 	internal = new/obj/item/gps/internal/legion(src)
 

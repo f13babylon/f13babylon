@@ -26,7 +26,7 @@
 	var/list/quirks = null
 	var/contains_sample = 0
 
-/obj/item/seeds/replicapod/Initialize()
+/obj/item/seeds/replicapod/Initialize(mapload)
 	. = ..()
 
 	create_reagents(volume, INJECTABLE | DRAWABLE)

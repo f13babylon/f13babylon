@@ -42,7 +42,7 @@
 	..()
 	w_class = mask_adjusted ? WEIGHT_CLASS_NORMAL : WEIGHT_CLASS_SMALL
 
-/obj/item/clothing/mask/gas/explorer/folded/Initialize()
+/obj/item/clothing/mask/gas/explorer/folded/Initialize(mapload)
 	. = ..()
 	adjustmask()
 
@@ -58,7 +58,7 @@
 	slowdown = 0
 	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
 
-/obj/item/clothing/suit/space/hostile_environment/Initialize()
+/obj/item/clothing/suit/space/hostile_environment/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/spraycan_paintable)
 	START_PROCESSING(SSobj, src)
@@ -87,7 +87,7 @@
 	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
 	resistance_flags = FIRE_PROOF | LAVA_PROOF
 
-/obj/item/clothing/head/helmet/space/hostile_environment/Initialize()
+/obj/item/clothing/head/helmet/space/hostile_environment/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/spraycan_paintable)
 	update_icon()

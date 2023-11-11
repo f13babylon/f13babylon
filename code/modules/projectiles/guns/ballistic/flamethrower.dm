@@ -15,7 +15,7 @@
 	var/overheat_max = 12
 	var/heat_diffusion = 1
 
-/obj/item/m2flamethrowertank/Initialize()
+/obj/item/m2flamethrowertank/Initialize(mapload)
 	. = ..()
 	gun = new(src)
 	START_PROCESSING(SSobj, src)
@@ -113,7 +113,7 @@
 	item_flags = SLOWS_WHILE_IN_HAND
 	var/obj/item/m2flamethrowertank/ammo_pack
 
-/obj/item/gun/ballistic/m2flamethrower/Initialize()
+/obj/item/gun/ballistic/m2flamethrower/Initialize(mapload)
 	if(istype(loc, /obj/item/m2flamethrowertank)) //We should spawn inside an ammo pack so let's use that one.
 		ammo_pack = loc
 	else

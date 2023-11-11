@@ -18,7 +18,7 @@
 	var/wielded_mult = 1
 	var/wield_force = 15
 
-/obj/item/melee/smith/Initialize()
+/obj/item/melee/smith/Initialize(mapload)
 	. = ..()
 	if(desc == "cringe")
 		desc = "A handmade [name]."
@@ -42,7 +42,7 @@
 	var/icon_prefix = null
 	var/wielded = FALSE
 
-/obj/item/melee/smith/twohand/Initialize()
+/obj/item/melee/smith/twohand/Initialize(mapload)
 	. = ..()
 	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, .proc/on_wield)
 	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, .proc/on_unwield)
@@ -97,7 +97,7 @@
 	item_state = "prospect_smith"
 	sharpness = SHARP_POINTY
 
-/obj/item/mining_scanner/prospector/Initialize()
+/obj/item/mining_scanner/prospector/Initialize(mapload)
 	. = ..()
 	var/mutable_appearance/overlay
 	desc = "A handmade [name]."
@@ -128,7 +128,7 @@
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_BACK
 	sharpness = SHARP_POINTY
 
-/obj/item/pickaxe/smithed/Initialize()
+/obj/item/pickaxe/smithed/Initialize(mapload)
 	. = ..()
 	desc = "A handmade [name]."
 	var/mutable_appearance/overlay
@@ -152,7 +152,7 @@
 	material_flags = MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
 	sharpness = SHARP_EDGED //it cuts through the earth
 
-/obj/item/shovel/smithed/Initialize()
+/obj/item/shovel/smithed/Initialize(mapload)
 	. = ..()
 	desc = "A handmade [name]."
 	var/mutable_appearance/overlay
@@ -171,7 +171,7 @@
 	force = 15
 	material_flags = MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
 
-/obj/item/crowbar/smithed/Initialize()
+/obj/item/crowbar/smithed/Initialize(mapload)
 	. = ..()
 	desc = "A handmade [name]."
 	var/mutable_appearance/overlay
@@ -191,7 +191,7 @@
 	material_flags = MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
 	force = 28
 
-/obj/item/crowbar/smithedunitool/Initialize()
+/obj/item/crowbar/smithedunitool/Initialize(mapload)
 	. = ..()
 	desc = "A bizarre combination of a crowbar and some sort of knifeblade."
 	var/mutable_appearance/overlay

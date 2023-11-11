@@ -171,7 +171,7 @@ GLOBAL_LIST_EMPTY_TYPED(dogbeds, /obj/structure/bed/dogbed)
 	buildstackamount = 10
 	var/mob/living/owner = null
 
-/obj/structure/bed/dogbed/Initialize()
+/obj/structure/bed/dogbed/Initialize(mapload)
 	. = ..()
 	GLOB.dogbeds += src
 

@@ -46,7 +46,7 @@
 	var/runetype
 	var/datum/action/innate/cult/create_rune/create_rune
 
-/mob/living/simple_animal/hostile/construct/Initialize()
+/mob/living/simple_animal/hostile/construct/Initialize(mapload)
 	. = ..()
 	update_health_hud()
 	var/spellnum = 1
@@ -380,7 +380,7 @@
 		return FALSE
 	. = ..()
 
-/mob/living/simple_animal/hostile/construct/harvester/Initialize()
+/mob/living/simple_animal/hostile/construct/harvester/Initialize(mapload)
 	. = ..()
 	var/datum/action/innate/seek_prey/seek = new()
 	seek.Grant(src)

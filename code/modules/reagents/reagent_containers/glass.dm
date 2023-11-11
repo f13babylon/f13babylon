@@ -128,7 +128,7 @@
 	possible_transfer_amounts = list(5,10,15,20,25,30,50,60)
 	container_flags = PH_WEAK|APTFT_ALTCLICK|APTFT_VERB
 
-/obj/item/reagent_containers/glass/beaker/Initialize()
+/obj/item/reagent_containers/glass/beaker/Initialize(mapload)
 	. = ..()
 	update_icon()
 
@@ -357,7 +357,7 @@
 		/obj/item/reagent_containers/pill/buffout,
 		/obj/item/reagent_containers/pill/patch/jet,
 	)
-/obj/item/reagent_containers/glass/mortar/Initialize()
+/obj/item/reagent_containers/glass/mortar/Initialize(mapload)
 	. = ..()
 	holdingitems = list()
 /obj/item/reagent_containers/glass/mortar/examine(mob/user)

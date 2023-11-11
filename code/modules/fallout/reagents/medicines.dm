@@ -292,14 +292,12 @@
 			M.vomit(30, 1, 1, 5, 0, 0, 0, 60)
 			M.Jitter(1000)
 			M.playsound_local(M, 'sound/effects/singlebeat.ogg', 100, 0)
-//			M.set_heartattack(TRUE)
 			M.visible_message("<span class='userdanger'>[M] grabs at their throat and vomits violently onto the ground, screaming as they have a seizure! They need medical attention immediately!</span>")
 			to_chat(M, "<span class='userdanger'>The sky splits in half, rays of golden light piercing down towards you. Mars reaches out of the sky above, the holy aura causing you to fall to your knees. He beckoning you to heaven, and you take his hand. Your whole body begins to seize up as you go in a glorious rapture. </span>")
 
-/datum/reagent/medicine/berserker/overdose_process(mob/living/carbon/M)
+/datum/reagent/medicine/berserker_powder/overdose_process(mob/living/carbon/M)
 	M.adjustToxLoss(5*REAGENTS_EFFECT_MULTIPLIER)
-	..()
-	. = TRUE
+	return TRUE
 
 // ---------------------------
 // BITTER DRINK REAGENT

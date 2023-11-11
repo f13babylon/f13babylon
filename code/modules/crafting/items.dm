@@ -3,7 +3,7 @@
 	desc = "What mysteries could this hold?"
 	icon = 'icons/obj/assemblies.dmi'
 
-/obj/item/scrap/research/Initialize()
+/obj/item/scrap/research/Initialize(mapload)
 	. = ..()
 	icon_state = pick("shock_kit","armor-igniter-analyzer","infra-igniter0","infra-igniter1","radio-multitool","prox-radio1","radio-radio","timer-multitool0","radio-igniter-tank")
 	name = "[pick("broken","twisted","spun","improved","silly","regular","badly made")] [pick("device","object","toy","illegal tech","weapon")]"
@@ -186,7 +186,7 @@ GLOBAL_LIST_INIT(blueprint_fluff, list(
 	icon ='icons/obj/bureaucracy.dmi'
 	icon_state = "docs_generic"
 
-/obj/item/blueprint/research/Initialize()
+/obj/item/blueprint/research/Initialize(mapload)
 	. = ..()
 	name = "[pick(GLOB.blueprint_fluff["prefixes"])] [pick(GLOB.blueprint_fluff["suffixes"])]"
 	icon_state = pick(GLOB.blueprint_fluff["iconstates"])

@@ -156,7 +156,7 @@
 	togglename = "wings"
 	actions_types = list(/datum/action/item_action/toggle_wings)
 
-/obj/item/clothing/suit/toggle/owlwings/Initialize()
+/obj/item/clothing/suit/toggle/owlwings/Initialize(mapload)
 	. = ..()
 	allowed = GLOB.security_vest_allowed
 
@@ -534,7 +534,7 @@
 	item_state = "coatcentcom"
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/centcom
 
-/obj/item/clothing/suit/hooded/wintercoat/centcom/Initialize()
+/obj/item/clothing/suit/hooded/wintercoat/centcom/Initialize(mapload)
 	. = ..()
 	allowed = GLOB.security_wintercoat_allowed
 
@@ -550,7 +550,7 @@
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/captain
 
-/obj/item/clothing/suit/hooded/wintercoat/captain/Initialize()
+/obj/item/clothing/suit/hooded/wintercoat/captain/Initialize(mapload)
 	. = ..()
 	allowed = GLOB.security_wintercoat_allowed
 
@@ -578,7 +578,7 @@
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/security
 
-/obj/item/clothing/suit/hooded/wintercoat/security/Initialize()
+/obj/item/clothing/suit/hooded/wintercoat/security/Initialize(mapload)
 	. = ..()
 	allowed = GLOB.security_wintercoat_allowed
 
@@ -596,7 +596,7 @@
 	armor = list("melee" = 45, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/hos
 
-/obj/item/clothing/suit/hooded/wintercoat/hos/Initialize()
+/obj/item/clothing/suit/hooded/wintercoat/hos/Initialize(mapload)
 	. = ..()
 	allowed = GLOB.security_wintercoat_allowed
 
@@ -891,7 +891,7 @@
 
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/durathread
 
-/obj/item/clothing/suit/hooded/wintercoat/durathread/Initialize()
+/obj/item/clothing/suit/hooded/wintercoat/durathread/Initialize(mapload)
 	. = ..()
 	allowed = GLOB.security_wintercoat_allowed
 

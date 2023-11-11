@@ -65,14 +65,14 @@
 					/obj/item/reagent_containers/food/drinks/ice = 1,
 					/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass = 4);
 
-/obj/machinery/vending/boozeomat/pubby_captain/Initialize()
+/obj/machinery/vending/boozeomat/pubby_captain/Initialize(mapload)
 	. = ..()
 	cost_multiplier_per_dept = list("[ACCESS_CAPTAIN]" = 0)
 
 /obj/machinery/vending/boozeomat/syndicate_access
 	payment_department = NO_FREEBIES
 
-/obj/machinery/vending/boozeomat/syndicate_access/Initialize()
+/obj/machinery/vending/boozeomat/syndicate_access/Initialize(mapload)
 	. = ..()
 	cost_multiplier_per_dept = list("[ACCESS_SYNDICATE]" = 0)
 

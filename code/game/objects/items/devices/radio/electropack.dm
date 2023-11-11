@@ -20,7 +20,7 @@
 	user.visible_message("<span class='suicide'>[user] hooks [user.p_them()]self to the electropack and spams the trigger! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	return (FIRELOSS)
 
-/obj/item/electropack/Initialize()
+/obj/item/electropack/Initialize(mapload)
 	. = ..()
 	set_frequency(frequency)
 
@@ -158,7 +158,7 @@
 	materials = list(/datum/material/iron = 5000, /datum/material/glass =2000)
 	category = list("hacked", "Misc")
 
-/obj/item/electropack/shockcollar/Initialize()
+/obj/item/electropack/shockcollar/Initialize(mapload)
 	. = ..()
 	set_frequency(pick(1441,1443,1445,1447,1449,1451,1453,1455,1457,1459))
 	code = rand(1,100)

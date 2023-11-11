@@ -11,7 +11,7 @@
 	var/idle_wasting = 0.5
 	var/move_wasting = 0.1
 
-/obj/vehicle/ridden/fuel/Initialize()
+/obj/vehicle/ridden/fuel/Initialize(mapload)
 	. = ..()
 	fuel_holder = new(max_fuel, fuel)
 
@@ -90,7 +90,7 @@
 	amount_per_transfer_from_this = 25
 	var/inside = 1
 
-/obj/item/reagent_containers/fuel_tank/Initialize(volume, fuel)
+/obj/item/reagent_containers/fuel_tank/Initialize(mapload, volume, fuel)
 	src.volume = volume
 	list_reagents = list(/datum/reagent/fuel = fuel)
 	. = ..()

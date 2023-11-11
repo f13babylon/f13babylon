@@ -16,7 +16,7 @@
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF //Destroying these just causes issues. Let's fucking not
 
 
-/obj/machinery/light/sign/Initialize()
+/obj/machinery/light/sign/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/largetransparency, x_size = 1, y_size = 1)
 
