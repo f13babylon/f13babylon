@@ -2143,6 +2143,9 @@
 "aio" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/mineral/wasteland_vendor/advcomponents,
+/obj/machinery/light/small{
+	dir = 8
+	},
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "aip" = (
@@ -2688,7 +2691,8 @@
 	pixel_x = 37;
 	pixel_y = -3
 	},
-/turf/open/transparent/glass/reinforced,
+/obj/item/kirbyplants/random,
+/turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "ako" = (
 /turf/open/indestructible/ground/outside/ruins{
@@ -3472,16 +3476,13 @@
 	},
 /area/f13/wasteland/massfusion)
 "anN" = (
-/obj/structure/noticeboard{
-	layer = 2.5;
-	pixel_y = 32
+/obj/machinery/light{
+	dir = 1
 	},
-/obj/machinery/button/door{
-	id = "shopouter";
-	name = "outer shutters";
-	pixel_y = 30
-	},
-/obj/effect/landmark/start/f13/shopkeeper,
+/obj/item/clothing/head/welding,
+/obj/item/clothing/head/welding,
+/obj/item/storage/belt/utility/full,
+/obj/item/storage/belt/utility/full,
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "anP" = (
@@ -5185,8 +5186,12 @@
 	},
 /area/f13/building)
 "auT" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/machinery/autolathe/ammo/unlocked,
+/obj/item/reagent_containers/glass/bottle/blackpowder,
+/obj/item/reagent_containers/glass/bottle/blackpowder,
+/obj/item/reagent_containers/glass/bottle/blackpowder,
+/obj/item/reagent_containers/glass/bottle/blackpowder,
+/obj/item/stack/ore/blackpowder/fifty,
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "auU" = (
@@ -16802,6 +16807,9 @@
 /area/f13/building/nanotrasen)
 "bis" = (
 /obj/machinery/base_dispenser/ammo,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "bit" = (
@@ -18254,10 +18262,10 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/item/kirbyplants/random,
 /obj/structure/railing{
 	dir = 8
 	},
+/obj/structure/chair/wood,
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "bnq" = (
@@ -18358,11 +18366,46 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/city/bighorn)
 "bnJ" = (
+/obj/effect/spawner/lootdrop/f13/junkspawners,
+/obj/effect/spawner/lootdrop/f13/junkspawners,
+/obj/effect/spawner/lootdrop/f13/resourcespawner,
+/obj/item/stack/sheet/hay/fifty,
+/obj/item/stack/sheet/hay/fifty,
+/obj/item/stack/sheet/hay/fifty,
+/obj/item/stack/sheet/cloth/ten,
+/obj/item/stack/sheet/cloth/ten,
+/obj/item/stack/sheet/cloth/ten,
+/obj/item/stack/sheet/cloth/ten,
+/obj/item/stack/sheet/cloth/ten,
+/obj/item/stack/sheet/leather/twenty,
+/obj/item/stack/sheet/leather/twenty,
+/obj/item/stack/sheet/leather/twenty,
+/obj/item/stack/sheet/leather/twenty,
+/obj/item/stack/sheet/leather/twenty,
+/obj/item/stack/sheet/leather/twenty,
+/obj/item/stack/sheet/leather/twenty,
+/obj/item/stack/sheet/leather/twenty,
+/obj/item/stack/sheet/leather/twenty,
+/obj/item/stack/sheet/leather/twenty,
+/obj/item/stack/sheet/leather/twenty,
+/obj/item/stack/sheet/cardboard/fifty,
+/obj/item/stack/sheet/cardboard/fifty,
+/obj/item/stack/sheet/cardboard/fifty,
+/obj/item/stack/sheet/cardboard/fifty,
+/obj/item/stack/sheet/prewar,
+/obj/item/stack/sheet/prewar,
+/obj/item/stack/sheet/prewar,
+/obj/item/stack/sheet/plastic/fifty,
+/obj/item/stack/sheet/plastic/fifty,
+/obj/item/stack/sheet/plastic/fifty,
+/obj/item/stack/sheet/plastic/fifty,
+/obj/item/stack/rods/fifty,
+/obj/item/stack/rods/fifty,
+/obj/item/stack/rods/fifty,
+/obj/item/stack/rods/fifty,
+/obj/item/stack/rods/fifty,
+/obj/item/stack/rods/fifty,
 /obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/highmid,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/lowmid,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "bnK" = (
@@ -18374,13 +18417,31 @@
 	},
 /area/f13/building)
 "bnL" = (
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
-/obj/machinery/light{
-	dir = 1
-	},
+/obj/machinery/workbench/advanced,
+/obj/item/salvage/tool,
+/obj/item/salvage/tool,
+/obj/item/salvage/tool,
+/obj/item/salvage/tool,
+/obj/item/salvage/tool,
+/obj/item/salvage/tool,
+/obj/item/salvage/tool,
+/obj/item/salvage/tool,
+/obj/item/salvage/tool,
+/obj/item/salvage/tool,
+/obj/item/salvage/tool,
+/obj/item/salvage/tool,
+/obj/item/salvage/high,
+/obj/item/salvage/high,
+/obj/item/salvage/high,
+/obj/item/salvage/high,
+/obj/item/salvage/high,
+/obj/item/salvage/high,
+/obj/item/salvage/high,
+/obj/item/salvage/high,
+/obj/item/salvage/high,
+/obj/item/salvage/high,
+/obj/item/salvage/high,
+/obj/item/salvage/high,
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "bnQ" = (
@@ -18452,10 +18513,49 @@
 /turf/closed/wall/f13/wood/interior,
 /area/f13/city/bighorn)
 "boj" = (
-/obj/effect/spawner/lootdrop/f13/armor/random,
-/obj/effect/spawner/lootdrop/f13/armor/random,
-/obj/effect/spawner/lootdrop/f13/armor/clothes,
-/obj/effect/spawner/lootdrop/f13/armor/clothes,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/plasteel/fifty,
+/obj/item/stack/sheet/plasteel/fifty,
+/obj/item/stack/sheet/plasteel/fifty,
+/obj/item/stack/sheet/plasteel/fifty,
+/obj/item/stack/sheet/plasteel/fifty,
+/obj/item/stack/sheet/plasteel/fifty,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/stack/sheet/mineral/sandstone/thirty,
+/obj/item/stack/sheet/mineral/sandstone/thirty,
+/obj/item/stack/sheet/mineral/sandstone/thirty,
+/obj/item/stack/sheet/mineral/sandstone/thirty,
+/obj/item/stack/sheet/mineral/sandstone/thirty,
 /obj/structure/rack,
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
@@ -18981,6 +19081,18 @@
 /obj/structure/railing{
 	dir = 8
 	},
+/obj/structure/table/wood/settler,
+/obj/item/paper_bin,
+/obj/item/pen/fountain,
+/obj/effect/spawner/lootdrop/f13/blueprintLowMid,
+/obj/effect/spawner/lootdrop/f13/blueprintLowMid,
+/obj/effect/spawner/lootdrop/f13/blueprintLowMid,
+/obj/effect/spawner/lootdrop/f13/blueprintLowMid,
+/obj/effect/spawner/lootdrop/f13/blueprintHigh,
+/obj/effect/spawner/lootdrop/f13/blueprintHigh,
+/obj/effect/spawner/lootdrop/f13/blueprintMid,
+/obj/item/book/granter/crafting_recipe/gunsmith_three,
+/obj/item/folder,
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "bqX" = (
@@ -19014,6 +19126,10 @@
 "bre" = (
 /obj/structure/table/reinforced,
 /obj/machinery/cell_charger,
+/obj/structure/curtain{
+	color = "#845f58";
+	pixel_y = -32
+	},
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "bri" = (
@@ -20124,6 +20240,10 @@
 "bzQ" = (
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
+/obj/structure/curtain{
+	color = "#845f58";
+	pixel_y = -32
+	},
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "bzT" = (
@@ -23546,6 +23666,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/item/kirbyplants/random,
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "cHw" = (
@@ -25526,6 +25647,10 @@
 	icon_state = "outerbordercorner"
 	},
 /area/f13/wasteland/east)
+"dWb" = (
+/obj/effect/landmark/start/f13/shopkeeper,
+/turf/open/transparent/glass/reinforced,
+/area/f13/city/bighorn)
 "dWw" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontalbottomborderbottom3"
@@ -26114,6 +26239,15 @@
 "eqs" = (
 /turf/open/indestructible/ground/outside/savannah/topleftcorner,
 /area/f13/caves)
+"eqJ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small{
+	dir = 4;
+	light_color = "red"
+	},
+/obj/machinery/workbench,
+/turf/open/floor/wood/wood_mosaic,
+/area/f13/city/bighorn)
 "eqP" = (
 /obj/structure/junk/small/disco{
 	pixel_y = 20
@@ -26348,11 +26482,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/white,
 /area/f13/building/museum)
 "eya" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small{
-	dir = 4;
-	light_color = "red"
-	},
+/obj/machinery/workbench/forge,
+/obj/item/traumapack,
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "eyP" = (
@@ -29231,14 +29362,8 @@
 	},
 /area/f13/building/mall)
 "gmd" = (
-/obj/structure/simple_door/house{
-	name = "Crimson Caravan"
-	},
-/obj/machinery/door/poddoor/shutters{
-	id = "storeshutters";
-	name = "store shutters"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/obj/structure/table/wood/settler,
+/turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "gml" = (
 /obj/structure/railing{
@@ -29351,8 +29476,10 @@
 	},
 /area/f13/wasteland/east)
 "grk" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/gear_painter,
+/obj/structure/curtain{
+	color = "#845f58";
+	pixel_y = -32
+	},
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "grn" = (
@@ -29580,6 +29707,12 @@
 	},
 /turf/open/floor/carpet/red,
 /area/f13/building/mall)
+"gzS" = (
+/obj/structure/curtain{
+	color = "#845f58"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/city/bighorn)
 "gzT" = (
 /mob/living/simple_animal/hostile/raider/junker,
 /turf/open/floor/plasteel/f13{
@@ -30207,6 +30340,19 @@
 	icon_state = "verticalinnermain0"
 	},
 /area/f13/wasteland/east)
+"gSu" = (
+/obj/structure/noticeboard{
+	layer = 2.5;
+	pixel_y = 32
+	},
+/obj/machinery/button/door{
+	id = "shopouter";
+	name = "outer shutters";
+	pixel_y = 30
+	},
+/obj/item/kirbyplants/random,
+/turf/open/floor/wood/wood_mosaic,
+/area/f13/city/bighorn)
 "gSw" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
@@ -34229,6 +34375,15 @@
 	},
 /turf/open/floor/wood/wood_worn,
 /area/f13/city/bighorn)
+"jlQ" = (
+/obj/structure/table/wood,
+/obj/structure/barricade/bars,
+/obj/machinery/door/poddoor/shutters{
+	id = "countershutters";
+	name = "counter shutters"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/city/bighorn)
 "jlU" = (
 /obj/item/toy/poolnoodle/blue,
 /obj/effect/decal/cleanable/dirt,
@@ -37990,6 +38145,23 @@
 	icon_state = "outerpavementcorner"
 	},
 /area/f13/wasteland/massfusion)
+"lHv" = (
+/obj/structure/window/fulltile/house{
+	dir = 2;
+	icon_state = "storewindowleft";
+	layer = 2
+	},
+/obj/structure/barricade/bars{
+	max_integrity = 1200;
+	name = "reinforced metal bars";
+	obj_integrity = 1200
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "storeshutters";
+	name = "store shutters"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/city/bighorn)
 "lIb" = (
 /obj/structure/bonfire,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -39839,6 +40011,12 @@
 /obj/structure/sink/deep_water,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/bighorn)
+"mJH" = (
+/obj/structure/chair/wood{
+	dir = 8
+	},
+/turf/open/floor/wood/wood_mosaic,
+/area/f13/city/bighorn)
 "mKp" = (
 /obj/structure/simple_door/interior,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -44263,6 +44441,15 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/caves)
+"pws" = (
+/obj/structure/table/reinforced,
+/obj/structure/barricade/bars,
+/obj/machinery/door/poddoor{
+	id = "shopouter";
+	layer = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/city/bighorn)
 "pwG" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/structure/flora/junglebush,
@@ -44505,6 +44692,16 @@
 	icon_state = "horizontaltopborderbottom2left"
 	},
 /area/f13/wasteland/bighorn)
+"pCj" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "storeshutters";
+	name = "store shutters"
+	},
+/obj/structure/simple_door/house{
+	name = "Crimson Caravan"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/city/bighorn)
 "pCk" = (
 /turf/open/indestructible/ground/outside/road{
 	dir = 8;
@@ -45506,6 +45703,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/building/mall)
+"qlT" = (
+/obj/machinery/autolathe,
+/turf/open/floor/wood/wood_mosaic,
+/area/f13/city/bighorn)
 "qmq" = (
 /obj/effect/turf_decal/arrows{
 	dir = 8
@@ -46491,6 +46692,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/item/kirbyplants/random,
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "qQz" = (
@@ -46716,6 +46918,13 @@
 	icon_state = "horizontaltopborderbottom0"
 	},
 /area/f13/wasteland/bighornbunker)
+"qZx" = (
+/obj/structure/curtain{
+	color = "#845f58";
+	pixel_y = 32
+	},
+/turf/open/floor/wood/wood_mosaic,
+/area/f13/city/bighorn)
 "qZF" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
@@ -48087,6 +48296,23 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"rPS" = (
+/obj/structure/barricade/bars{
+	max_integrity = 1200;
+	name = "reinforced metal bars";
+	obj_integrity = 1200
+	},
+/obj/structure/window/fulltile/house{
+	dir = 2;
+	icon_state = "storewindowleft";
+	layer = 2
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "storeshutters";
+	name = "store shutters"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/city/bighorn)
 "rQu" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -48759,7 +48985,7 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/bighorn)
 "skt" = (
-/obj/item/kirbyplants/random,
+/obj/machinery/workbench,
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "skB" = (
@@ -49508,6 +49734,22 @@
 	},
 /turf/open/floor/carpet/red,
 /area/f13/bar/heaven)
+"sHo" = (
+/obj/structure/window/fulltile/house{
+	icon_state = "storewindowright";
+	layer = 2
+	},
+/obj/structure/barricade/bars{
+	max_integrity = 1200;
+	name = "reinforced metal bars";
+	obj_integrity = 1200
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "storeshutters";
+	name = "store shutters"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/city/bighorn)
 "sHP" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/smartfridge/bottlerack/lootshelf/construction,
@@ -52323,6 +52565,12 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/building/massfusion)
+"urj" = (
+/obj/structure/chair/wood{
+	dir = 4
+	},
+/turf/open/floor/wood/wood_mosaic,
+/area/f13/city/bighorn)
 "urA" = (
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_6"
@@ -55402,6 +55650,22 @@
 	icon_state = "greenrustychess"
 	},
 /area/f13/building/massfusion)
+"wjz" = (
+/obj/structure/barricade/bars{
+	max_integrity = 1200;
+	name = "reinforced metal bars";
+	obj_integrity = 1200
+	},
+/obj/structure/window/fulltile/house{
+	icon_state = "storewindowright";
+	layer = 2
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "storeshutters";
+	name = "store shutters"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/city/bighorn)
 "wjA" = (
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/blood/gibs/human/core,
@@ -56267,6 +56531,10 @@
 /obj/item/clothing/under/dress/redeveninggown,
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
 /area/f13/building/mall)
+"wJx" = (
+/obj/machinery/gear_painter,
+/turf/open/floor/wood/wood_mosaic,
+/area/f13/city/bighorn)
 "wJA" = (
 /obj/item/mop,
 /obj/structure/janitorialcart,
@@ -56420,8 +56688,63 @@
 	},
 /area/f13/building/massfusion)
 "wOa" = (
-/obj/structure/rack/shelf_metal,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/lowmid,
+/obj/item/advanced_crafting_components/receiver,
+/obj/item/advanced_crafting_components/receiver,
+/obj/item/advanced_crafting_components/receiver,
+/obj/item/advanced_crafting_components/lenses,
+/obj/item/advanced_crafting_components/lenses,
+/obj/item/advanced_crafting_components/lenses,
+/obj/item/advanced_crafting_components/flux,
+/obj/item/advanced_crafting_components/flux,
+/obj/item/advanced_crafting_components/flux,
+/obj/item/advanced_crafting_components/conductors,
+/obj/item/advanced_crafting_components/conductors,
+/obj/item/advanced_crafting_components/conductors,
+/obj/item/advanced_crafting_components/assembly,
+/obj/item/advanced_crafting_components/assembly,
+/obj/item/advanced_crafting_components/assembly,
+/obj/item/advanced_crafting_components/alloys,
+/obj/item/advanced_crafting_components/alloys,
+/obj/item/advanced_crafting_components/alloys,
+/obj/item/advanced_crafting_components/alloys,
+/obj/item/advanced_crafting_components/assembly,
+/obj/item/advanced_crafting_components/conductors,
+/obj/item/advanced_crafting_components/flux,
+/obj/item/advanced_crafting_components/lenses,
+/obj/item/advanced_crafting_components/receiver,
+/obj/effect/spawner/lootdrop/f13/advcrafting,
+/obj/effect/spawner/lootdrop/f13/advcrafting,
+/obj/effect/spawner/lootdrop/f13/advcrafting,
+/obj/effect/spawner/lootdrop/f13/blueprintLow,
+/obj/effect/spawner/lootdrop/f13/blueprintLow,
+/obj/effect/spawner/lootdrop/f13/blueprintLow,
+/obj/effect/spawner/lootdrop/f13/blueprintLow,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/structure/rack,
+/obj/structure/curtain{
+	color = "#845f58";
+	pixel_y = -32
+	},
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "wOh" = (
@@ -76503,7 +76826,7 @@ aer
 gdZ
 jYk
 ygj
-eus
+pat
 pat
 pat
 pat
@@ -76760,7 +77083,7 @@ nWT
 pPr
 jYk
 ygj
-eus
+pat
 aaW
 aaW
 mig
@@ -77017,15 +77340,15 @@ ayn
 pPr
 jYk
 ygj
-eus
+pat
 bno
 bqR
 mig
-pat
-cEy
+bAl
 mig
-arA
-pat
+mig
+mig
+lHv
 ydE
 iQa
 wgT
@@ -77274,15 +77597,15 @@ qHt
 pPr
 jYk
 ygj
-eus
-wOa
+pat
+mig
+lWL
+mig
+pat
 mig
 mig
-bAl
-mig
-mig
-mig
-ant
+urj
+rPS
 ydE
 qAk
 bop
@@ -77530,15 +77853,15 @@ lKq
 uxj
 nzp
 jYk
-ygj
-eus
-wOa
+ahx
+pws
+qZx
+lWL
+grk
+jlQ
 mig
 mig
-pat
-mig
-mig
-mig
+gmd
 bVT
 wXY
 qAk
@@ -77789,13 +78112,13 @@ nzp
 pak
 ahx
 amw
-lWL
-lWL
-lWL
-bFL
+qZx
+dWb
+grk
+jlQ
 mig
 mig
-mig
+mJH
 pat
 haK
 qAk
@@ -78046,14 +78369,14 @@ aod
 pak
 ahx
 amw
+qZx
 lWL
-lWL
-lWL
+grk
 bFL
 mig
 mig
 mig
-pat
+pCj
 haK
 qAk
 iGB
@@ -78301,16 +78624,16 @@ aat
 ifg
 nuM
 pak
-ahx
-amw
-lWL
+ygj
+pat
+gSu
 lWL
 akn
-bFL
-mig
+pat
+cEy
 qQq
-mig
-gmd
+arA
+pat
 puU
 qAk
 jCv
@@ -78559,9 +78882,9 @@ ifg
 aod
 pak
 ygj
-pZd
-anN
-mig
+bzB
+pat
+gzS
 bvj
 pat
 pat
@@ -78816,7 +79139,7 @@ aeq
 nzp
 pak
 ygj
-pZd
+bzB
 bis
 mig
 skt
@@ -79073,13 +79396,13 @@ uxj
 nzp
 pak
 ygj
-eus
+pat
 bnJ
 mig
 bre
 ant
 bXh
-auT
+snk
 iPm
 ary
 ydE
@@ -79330,15 +79653,15 @@ uxj
 nzp
 pak
 ygj
-eus
+pat
 bnL
 mig
 bzQ
-bVT
+wjz
 lTY
 snk
 snk
-ary
+akX
 ydE
 ydE
 ydE
@@ -79587,15 +79910,15 @@ lKq
 nzp
 pak
 ygj
-eus
+pat
 boj
 mig
 wOa
-pat
+sHo
 bYu
-eya
-grk
-bzB
+snk
+snk
+ary
 glX
 ucT
 ydE
@@ -79844,14 +80167,14 @@ aeq
 nzp
 pak
 ygj
-ygj
-ygj
-ygj
-ygj
-ygj
-ygj
-bzB
 pat
+eya
+mig
+qlT
+pat
+pat
+eqJ
+wJx
 pat
 haK
 glX
@@ -80100,16 +80423,16 @@ bOA
 uxj
 nzp
 pak
-aae
-aaa
-aae
-aae
-aae
-aae
 ygj
-ygj
-ygj
-eus
+pat
+anN
+mig
+auT
+pat
+pat
+pat
+pat
+pat
 haK
 haK
 glX
@@ -80357,14 +80680,14 @@ bOA
 qHt
 nzp
 pak
-aae
-aaa
-aae
-aae
-aae
-aae
-aae
-aae
+ygj
+pat
+pat
+pat
+pat
+pat
+ygj
+ygj
 ygj
 eus
 eus
@@ -80614,13 +80937,13 @@ kYj
 uxj
 nzp
 pak
-aae
-aaa
-aaa
-aae
-aae
-aae
-aae
+ygj
+ygj
+ygj
+ygj
+ygj
+ygj
+ygj
 aae
 ygj
 ygj
