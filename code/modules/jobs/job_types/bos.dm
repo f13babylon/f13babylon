@@ -89,7 +89,7 @@ Elder
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/hunting = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
-		
+
 	)
 
 /*
@@ -166,14 +166,14 @@ Head Paladin
 /datum/outfit/loadout/sentlaser
 	name = "Laser Senior Paladin"
 	backpack_contents = list(
-		/obj/item/minigunpack = 1,
-		/obj/item/stock_parts/cell/ammo/ec = 3,
+		/obj/item/encminigunpack = 1,
+		/obj/item/stock_parts/cell/ammo/efc = 2,
 	)
 
 /datum/outfit/loadout/sentmelee
 	name = "Melee Senior Paladin"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 1, 
+		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 1,
 		/obj/item/ammo_box/magazine/m14mm = 3,
 		/obj/item/twohanded/inquis_spear = 1,
 	)
@@ -347,7 +347,7 @@ Senior Paladin
 	supervisors = "the Head Paladin"
 	selection_color = "#95a5a6"
 
-	exp_requirements = 0 
+	exp_requirements = 0
 	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
@@ -981,5 +981,3 @@ Off-Duty
 		/obj/item/encryptionkey/headset_bos=1,
 		/obj/item/melee/onehanded/knife/survival=1
 		)
-
-
