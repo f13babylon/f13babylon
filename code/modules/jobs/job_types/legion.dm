@@ -241,9 +241,11 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Paladin-Slayer Centurion"
 	suit = /obj/item/clothing/suit/armor/f13/legion/palacent
 	head = /obj/item/clothing/head/helmet/f13/legion/palacent
-	suit_store = /obj/item/gun/ballistic/automatic/m1919
+	// suit_store = /obj/item/gun/ballistic/automatic/m1919 - temporary removal until balanced
+	suit_store = /obj/item/gun/ballistic/automatic/lsw
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/mm762 = 1,
+		// /obj/item/ammo_box/magazine/mm762 = 1, - temporary removal until balanced
+		/obj/item/ammo_box/magazine/m556/rifle = 3
 		/obj/item/melee/onehanded/machete/spatha = 1,
 		)
 
