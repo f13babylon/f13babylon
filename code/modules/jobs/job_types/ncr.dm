@@ -887,7 +887,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/stack/sheet/plasteel/fifty = 1,
 		/obj/item/stack/sheet/rglass = 50,
 		/obj/item/stack/sheet/mineral/concrete = 25,
-		/datum/material/blackpowder = 50
+		/obj/item/stack/ore/blackpowder = 50	//Whoever made this loadout originally made this the fucking DATUM for black powder. Let this be his mark of shame.
 		)
 
 
