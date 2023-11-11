@@ -37,7 +37,7 @@ Mayor
 	spawn_positions = 1
 	roleplay_exclusive_notify = 1
 	supervisors = "Yourself"
-	description = "You are the benevolent tyrant of Bighorn, chosen by the people to represent and lead them. Pass laws to protect your citizens, distribute town funds and make deals with the powers present within the Region to better the people, and yourself, of course."
+	description = "You are the benevolent tyrant of La Verkin, chosen by the people to represent and lead them. Pass laws to protect your citizens, distribute town funds and make deals with the powers present within the Region to better the people, and yourself, of course."
 	selection_color = "#d7b088"
 	exp_requirements = 0
 	outfit = /datum/outfit/job/bighorn/f13mayor
@@ -174,8 +174,8 @@ Mayor
 	total_positions = 2
 	spawn_positions = 2
 	roleplay_exclusive_notify = 1
-	supervisors = "the free market and Bighorn laws"
-	description = "As a proprietor of the Blue Oyster, you are responsible for ensuring both citizens and travellers in Bighorn can get some food, drink and rest. This town is usually run by the Great Khans, and the farm within their compound could provide fresh supplies for your business, so try negotiating with them if they are present."
+	supervisors = "the free market and La Verkin laws"
+	description = "As a proprietor of the Blue Oyster, you are responsible for ensuring both citizens and travellers in La Verkin can get some food, drink and rest. This town is usually run by the Great Khans, and the farm within their compound could provide fresh supplies for your business, so try negotiating with them if they are present."
 	enforces = "While you have dominion over your private business, your premium status as a citizen may be revoked if you are considered a danger to the populace or anger those in control of the town."
 	selection_color = "#dcba97"
 
@@ -261,8 +261,8 @@ Mayor
 	total_positions = 2
 	spawn_positions = 2
 	roleplay_exclusive_notify = 1
-	supervisors = "the free market, Sierra Trading Company, and Bighorn laws"
-	description = "You are an Irgen, a Citizen of Bighorn under the protection of the Great Khanate, with ownership. Your store allows you to sell all kinds of merchandise, from dandy boy apples to laser rifles. Ensure you make a profit and retain enough capital for your day-to-day operations."
+	supervisors = "the free market, Sierra Trading Company, and La Verkin laws"
+	description = "You are one of the many workers who live in the city of La Verkin. Working with the town council you have rented out a space in the shop for you to make your living."
 	enforces = "While you have dominion over your private business, your premium status as a citizen may be revoked if you are considered a danger to the populace or anger those in control of the town."
 	selection_color = "#dcba97"
 	exp_requirements = 0
@@ -328,14 +328,14 @@ Mayor
 /*--------------------------------------------------------------*/
 
 /datum/job/khan/citizen
-	title = "Bighorn Citizen"
+	title = "La Verkin Citizen"
 	flag = F13SETTLER
 	department_flag = DEP_BIGHORN
 	total_positions = -1
 	spawn_positions = -1
 	roleplay_exclusive_notify = 1
 	supervisors = "the Kharuul and the Five Laws"
-	description = "You are an Irgen, a Citizen who was born in the Great Khanate settlement of Bighorn, though not necessarily to Khan parents. While you have not yet joined the ranks of the Bulchin or the Tsereg, or the Followers clinic, or even the New Canaanites at their church for reasons entirely your own to decide, you are no weakling, and have had an upbringing that left you rougher around the edges than the average Wastelander, as Khan children make for rough company. Take good care of your town, and consider picking up a trade to support the settlement - farming, hunting, or something more particular. One of the local businesses or the Khans themselves may have work if you require funds, and you can always produce, bottle, and sell booze for extra caps."
+	description = "You are a citizen living in La Verkin. Treat your town with respect and make sure to follow the laws in place, as your premium status may be revoked if you are considered a danger to the populace. One of the local businesses may have work if you require funds."
 	enforces = "Your premium status as a citizen may be revoked if you break the Five Laws too often or too severely. Khan justice is harsh, but typically also fair."
 	selection_color = "#dcba97"
 

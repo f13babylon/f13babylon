@@ -29,8 +29,8 @@
 	armor_modifiers = list("melee" = 0.2, "bullet" = 0.2, "laser" = 0, "energy" = 1, "bomb" = 0, "bio" = 0.2, "rad" = 0.2, "fire" = 1, "acid" = 0.2) // yeah ok
 
 /datum/material/blackpowder
-	name = "blackpowder"
-	desc = "blackpowder"
+	name = "gunpowder"
+	desc = "Cordite, ballistite, and other materials made for ignition. You want to put this in bullets."
 	color = "#000000"
 	alpha = 150
 	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)

@@ -15,6 +15,7 @@
 	time = 120
 	category = CAT_EXPLOSIVE
 
+/*
 /datum/crafting_recipe/chemical_payload
 	name = "Chemical Payload (C4)"
 	result = /obj/item/bombcore/chemical
@@ -26,6 +27,7 @@
 	parts = list(/obj/item/stock_parts/matter_bin = 1, /obj/item/grenade/chem_grenade = 2)
 	time = 60
 	category = CAT_EXPLOSIVE
+*/
 
 /datum/crafting_recipe/explosive/molotov
 	name = "Molotov Cocktail (empty)"
