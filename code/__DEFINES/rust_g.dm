@@ -19,6 +19,7 @@
 
 	try
 		world.log << "Rust-G: [rustg_get_version()]"
+		return __rust_g
 	catch
 		world.log << "Rust-G: Failed to load."
 
