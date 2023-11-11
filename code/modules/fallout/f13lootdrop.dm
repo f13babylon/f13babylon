@@ -827,7 +827,7 @@
 	name = "very low tier non-hobo ballistic gun"
 	loot = list(/obj/effect/spawner/bundle/f13/ninemil,
 				/obj/effect/spawner/bundle/f13/caravan_shotgun,
-				/obj/effect/spawner/bundle/f13/mosin,
+				// /obj/effect/spawner/bundle/f13/mosin,
 				/obj/effect/spawner/bundle/f13/remington,
 				/obj/effect/spawner/bundle/f13/widowmaker,
 				/obj/effect/spawner/bundle/f13/varmint
@@ -899,7 +899,7 @@
 	loot = list(/obj/effect/spawner/bundle/f13/amr = 10,
 				/obj/effect/spawner/bundle/f13/brushgun = 15,
 				/obj/effect/spawner/bundle/f13/rangemaster = 15,
-				/obj/effect/spawner/bundle/f13/fnfal = 10,
+				// /obj/effect/spawner/bundle/f13/fnfal = 10,
 				/obj/item/gun/ballistic/rocketlauncher = 10,
 				/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller = 10,
 				/obj/item/gun/ballistic/automatic/bozar = 10
