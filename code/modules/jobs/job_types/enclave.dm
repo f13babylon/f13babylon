@@ -94,9 +94,9 @@
 
 /datum/outfit/loadout/cpt_ballistics
 	name = "Ranged Lead"
-	suit_store = /obj/item/gun/ballistic/automatic/g11/g11e
+	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m473 = 2,
+		/obj/item/ammo_box/magazine/m5mm = 2,
 		/obj/item/gun/energy/laser/plasma/glock = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 1,
 		)
@@ -237,8 +237,8 @@
 /datum/outfit/loadout/gysgt_ballistics
 	name = "Marksman"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/g11 = 1,
-		/obj/item/ammo_box/magazine/m473 = 2,
+		/obj/item/gun/ballistic/automatic/assault_carbine = 1,
+		/obj/item/ammo_box/magazine/m5mm = 2,
 		)
 
 /datum/outfit/loadout/gysgt_melee
@@ -269,7 +269,7 @@
 	title = "Enclave Sergeant"
 	flag = F13USSGT
 	total_positions = 1
-	spawn_positions = 2
+	spawn_positions = 1
 	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. Entrusted with the command of the squads assigned to the bunker, your job is to assist the Lieutenant alongside the scientists."
 	supervisors = "The Lieutenant and the Gunnery Sergeant."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavesgt
@@ -332,8 +332,8 @@
 /datum/job/enclave/enclavecpl
 	title = "Enclave Armored Infantry"
 	flag = F13USCPL
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. Entrusted with the command of the squads assigned to the bunker, your job is to assist the Lieutenant alongside the scientists."
 	supervisors = "The Sergeants, Gunnery Sergeants, and Lieutenants."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavecpl
