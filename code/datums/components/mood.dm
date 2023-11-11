@@ -178,10 +178,8 @@
 	HandleNutrition(owner)
 
 /datum/component/mood/proc/setSanity(amount, minimum=SANITY_INSANE, maximum=SANITY_NEUTRAL)//I'm sure bunging this in here will have no negative repercussions.
-	/*
 	var/mob/living/master = parent
-	*/
-
+	
 	if(amount == sanity)
 		return
 	// If we're out of the acceptable minimum-maximum range move back towards it in steps of 0.5
