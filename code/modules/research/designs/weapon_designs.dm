@@ -407,6 +407,7 @@
 //Grenades/
 ///////////
 
+/*
 /datum/design/large_grenade
 	name = "Large Grenade"
 	desc = "A grenade that affects a larger area and use larger containers."
@@ -446,7 +447,7 @@
 	build_path = /obj/item/grenade/chem_grenade/adv_release
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY | DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE
-
+*/
 ///////////
 //Shields//
 ///////////
