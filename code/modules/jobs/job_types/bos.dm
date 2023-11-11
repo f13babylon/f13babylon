@@ -108,7 +108,7 @@ Head Paladin
 	supervisors = "the Elder"
 	selection_color = "#7f8c8d"
 
-	exp_requirements = 900
+	exp_requirements = 600
 	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
@@ -259,7 +259,7 @@ Head Knight
 	supervisors = "the Elders and the Head Paladin"
 	selection_color = "#7f8c8d"
 
-	exp_requirements = 600
+	exp_requirements = 0
 
 	loadout_options = list(
 	/datum/outfit/loadout/capstand, //P90
@@ -348,7 +348,7 @@ Senior Paladin
 	supervisors = "the Head Paladin"
 	selection_color = "#95a5a6"
 
-	exp_requirements = 600
+	exp_requirements = 0
 	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
