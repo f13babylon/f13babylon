@@ -202,6 +202,25 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 /datum/quirk/family_heirloom/on_clone(data)
 	heirloom = data
 
+/datum/quirk/musician
+	name = "Musician"
+	desc = "You can tune handheld musical instruments to play melodies that clear certain negative effects and soothe the soul."
+	value = 0
+	mob_trait = TRAIT_MUSICIAN
+	gain_text = "<span class='notice'>You know everything about musical instruments.</span>"
+	lose_text = "<span class='danger'>You forget how musical instruments work.</span>"
+	medical_record_text = "Patient brain scans show a highly-developed auditory pathway."
+
+/datum/quirk/musician/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	var/obj/item/choice_beacon/music/B = new(get_turf(H))
+	H.put_in_hands(B)
+	H.equip_to_slot_if_possible(B, SLOT_IN_BACKPACK)
+	var/obj/item/musicaltuner/musicaltuner = new(get_turf(H))
+	H.put_in_hands(musicaltuner)
+	H.equip_to_slot_if_possible(musicaltuner, SLOT_IN_BACKPACK)
+	H.regenerate_icons()
+
 /datum/quirk/fev //DOOM - Used in mob_tar creation && A secondary version for FEV-II exposure.
 	name = "Unstable FEV Exposure"
 	desc = "Be it accidental; the work of a mad scientist roaming the waste-land, or pre-war experiments that left an individual unable to die, this one has been exposed to an FEV Variation."
