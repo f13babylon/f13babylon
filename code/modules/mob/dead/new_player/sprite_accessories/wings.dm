@@ -278,7 +278,7 @@
 
 /datum/sprite_accessory/deco_wings/sepulchre
 	name = "Sepulchre - AltDragon"
-	icon_state = "dragon2"
+	icon_state = "dragon"
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_BLUE
 	extra = TRUE // Revelation Edit: Red-blue matrix handled on tertiary mutant color. Unfortunately the limit on what we can do.
