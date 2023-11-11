@@ -167,7 +167,7 @@ Head Paladin
 	name = "Laser Senior Paladin"
 	backpack_contents = list(
 		/obj/item/encminigunpack = 1,
-		/obj/item/stock_parts/cell/ammo/efc = 2,
+		/obj/item/stock_parts/cell/ammo/ecp = 2,
 	)
 
 /datum/outfit/loadout/sentmelee
