@@ -142,19 +142,17 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 ))
 
 GLOBAL_LIST_INIT(brotherhood_positions, list(
-	"Baron",
-	"Castellan",
-	"Knight-Commander",
-	"Keeper",
-	"Paladin Marshal",
+	"Head Paladin",
+	"Head Knight",
+	"Head Scribe",
+	"Senior Paladin",
 	"Paladin",
-	"Knight-Captain",
+	"Senior Knight",
 	"Knight",
-	"Librarian",
+	"Senior Scribe",
 	"Scribe",
-	"BoS Off-Duty",
 	"Initiate",
-	"Inquisitorial Acolyte",
+	"BoS Off-Duty"
 ))
 
 GLOBAL_LIST_INIT(bighorn_positions, list(
