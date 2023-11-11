@@ -548,7 +548,7 @@ Mayor
 
 /datum/outfit/job/bighorn/f13settler
 	name = "Citizen"
-	jobtype = /datum/job/khan/citizen
+	jobtype = /datum/job/bighorn/citizen
 	ears = /obj/item/radio/headset/headset_town
 	belt = null
 	id = /obj/item/card/id/dogtag/town
