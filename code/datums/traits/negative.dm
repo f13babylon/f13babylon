@@ -16,115 +16,6 @@
 	else
 		quirk_holder.blood_volume -= 0.2
 
-/datum/quirk/depression
-	name = "Depression"
-	desc = "You sometimes just hate life."
-	mob_trait = TRAIT_DEPRESSION
-	value = -1
-	gain_text = "<span class='danger'>You start feeling depressed.</span>"
-	lose_text = "<span class='notice'>You no longer feel depressed.</span>" //if only it were that easy!
-	medical_record_text = "Patient has a severe mood disorder, causing them to experience acute episodes of depression."
-	mood_quirk = TRUE
-
-/datum/quirk/depression/on_process()
-	if(prob(0.05))
-		SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, "depression", /datum/mood_event/depression)
-
-/datum/quirk/family_heirloom
-	name = "Family Heirloom"
-	desc = "You are the current owner of an heirloom, passed down for generations. You have to keep it safe!"
-	value = -1
-	mood_quirk = TRUE
-	medical_record_text = "Patient demonstrates an unnatural attachment to a family heirloom."
-	var/obj/item/heirloom
-	var/where
-
-GLOBAL_LIST_EMPTY(family_heirlooms)
-
-/datum/quirk/family_heirloom/on_spawn()
-	var/mob/living/carbon/human/H = quirk_holder
-	var/obj/item/heirloom_type
-	switch(quirk_holder.mind.assigned_role)
-		if("Scribe")
-			heirloom_type = pick(/obj/item/trash/f13/electronic/toaster, /obj/item/screwdriver/crude, /obj/item/toy/tragicthegarnering)
-		if("Knight")
-			heirloom_type = /obj/item/gun/ballistic/automatic/toy/pistol
-		if("BoS Off-Duty")
-			heirloom_type = /obj/item/toy/figure/borg
-		if("Sheriff")
-			heirloom_type = /obj/item/clothing/accessory/medal/silver
-		if("Deputy")
-			heirloom_type = /obj/item/clothing/accessory/medal/bronze_heart
-		if("Shopkeeper")
-			heirloom_type = /obj/item/coin/plasma
-		if("Followers Doctor")
-			heirloom_type = pick(/obj/item/clothing/neck/stethoscope,/obj/item/toy/tragicthegarnering)
-		if("Followers Administrator")
-			heirloom_type = pick(/obj/item/toy/nuke, /obj/item/wrench/medical, /obj/item/clothing/neck/tie/horrible)
-		if("Prime Legionnaire")
-			heirloom_type = pick(/obj/item/melee/onehanded/machete, /obj/item/melee/onehanded/club/warclub, /obj/item/clothing/accessory/talisman, /obj/item/toy/plush/mr_buckety)
-		if("Recruit Legionnaire")
-			heirloom_type = pick(/obj/item/melee/onehanded/machete, /obj/item/melee/onehanded/club/warclub, /obj/item/clothing/accessory/talisman,/obj/item/clothing/accessory/skullcodpiece/fake)
-		if("Den Mob Boss")
-			heirloom_type = /obj/item/lighter/gold
-		if("Den Doctor")
-			heirloom_type = /obj/item/card/id/dogtag/MDfakepermit
-		if("Farmer")
-			heirloom_type = pick(/obj/item/hatchet, /obj/item/shovel/spade, /obj/item/toy/plush/beeplushie)
-		if("Janitor")
-			heirloom_type = /obj/item/mop
-		if("Security Officer")
-			heirloom_type = /obj/item/clothing/accessory/medal/silver/valor
-		if("Scientist")
-			heirloom_type = /obj/item/toy/plush/slimeplushie
-		if("Assistant")
-			heirloom_type = /obj/item/clothing/gloves/cut/family
-		if("Chaplain")
-			heirloom_type = /obj/item/camera/spooky/family
-		if("Captain")
-			heirloom_type = /obj/item/clothing/accessory/medal/gold/captain/family
-	if(!heirloom_type)
-		heirloom_type = pick(
-		/obj/item/toy/cards/deck,
-		/obj/item/lighter,
-		/obj/item/card/id/rusted,
-		/obj/item/card/id/rusted/fadedvaultid,
-		/obj/item/clothing/gloves/ring/silver,
-		/obj/item/toy/figure/detective,
-		/obj/item/toy/tragicthegarnering,
-		)
-	heirloom = new heirloom_type(get_turf(quirk_holder))
-	GLOB.family_heirlooms += heirloom
-	var/list/slots = list(
-		"in your left pocket" = SLOT_L_STORE,
-		"in your right pocket" = SLOT_R_STORE,
-		"in your backpack" = SLOT_IN_BACKPACK
-	)
-	where = H.equip_in_one_of_slots(heirloom, slots, FALSE) || "at your feet"
-
-/datum/quirk/family_heirloom/post_add()
-	if(where == "in your backpack")
-		var/mob/living/carbon/human/H = quirk_holder
-		SEND_SIGNAL(H.back, COMSIG_TRY_STORAGE_SHOW, H)
-
-	to_chat(quirk_holder, "<span class='boldnotice'>There is a precious family [heirloom.name] [where], passed down from generation to generation. Keep it safe!</span>")
-	var/list/family_name = splittext(quirk_holder.real_name, " ")
-	heirloom.name = "\improper [family_name[family_name.len]] family [heirloom.name]"
-
-/datum/quirk/family_heirloom/on_process()
-	if(heirloom in quirk_holder.GetAllContents())
-		SEND_SIGNAL(quirk_holder, COMSIG_CLEAR_MOOD_EVENT, "family_heirloom_missing")
-		SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, "family_heirloom", /datum/mood_event/family_heirloom)
-	else
-		SEND_SIGNAL(quirk_holder, COMSIG_CLEAR_MOOD_EVENT, "family_heirloom")
-		SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, "family_heirloom_missing", /datum/mood_event/family_heirloom_missing)
-
-/datum/quirk/family_heirloom/clone_data()
-	return heirloom
-
-/datum/quirk/family_heirloom/on_clone(data)
-	heirloom = data
-
 /datum/quirk/heavy_sleeper
 	name = "Heavy Sleeper"
 	desc = "You sleep like a rock! Whenever you're put to sleep, you sleep for a little bit longer."
@@ -181,22 +72,6 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 		SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, "nyctophobia", /datum/mood_event/nyctophobia)
 	else
 		SEND_SIGNAL(quirk_holder, COMSIG_CLEAR_MOOD_EVENT, "nyctophobia")
-
-/datum/quirk/lightless
-	name = "Light Sensitivity"
-	desc = "Bright lights irritate you. Your eyes start to water, your skin feels itchy against the photon radiation, and your hair gets dry and frizzy. Maybe it's a medical condition."
-	value = -1
-	gain_text = "<span class='danger'>The safety of light feels off...</span>"
-	lose_text = "<span class='notice'>Enlightening.</span>"
-	medical_record_text = "Patient has acute phobia of light, and insists it is physically harmful."
-
-/datum/quirk/lightless/on_process()
-	var/turf/T = get_turf(quirk_holder)
-	var/lums = T.get_lumcount()
-	if(lums >= 0.8)
-		SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, "brightlight", /datum/mood_event/brightlight)
-	else
-		SEND_SIGNAL(quirk_holder, COMSIG_CLEAR_MOOD_EVENT, "brightlight")
 
 /datum/quirk/nonviolent
 	name = "Pacifist"
@@ -392,15 +267,6 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	var/mob/living/carbon/human/H = quirk_holder
 	H?.cure_trauma_type(mute, TRAUMA_RESILIENCE_ABSOLUTE)
 
-/datum/quirk/unstable
-	name = "Unstable"
-	desc = "Due to past troubles, you are unable to recover your sanity if you lose it. Be very careful managing your mood!"
-	value = -2
-	mob_trait = TRAIT_UNSTABLE
-	gain_text = "<span class='danger'>There's a lot on your mind right now.</span>"
-	lose_text = "<span class='notice'>Your mind finally feels calm.</span>"
-	medical_record_text = "Patient's mind is in a vulnerable state, and cannot recover from traumatic events."
-
 /datum/quirk/blindness
 	name = "Blind"
 	desc = "You are completely blind, nothing can counteract this."
@@ -449,6 +315,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	var/mob/living/carbon/human/H = quirk_holder
 	H?.cure_trauma_type(/datum/brain_trauma/severe/monophobia, TRAUMA_RESILIENCE_ABSOLUTE)
 
+/*
 /datum/quirk/no_smell
 	name = "Anosmia"
 	desc = "You can't smell anything! You won't be able to detect certain colorless gases."
@@ -457,7 +324,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	gain_text = "<span class='notice'>You can't smell anything!</span>"
 	lose_text = "<span class='notice'>You can smell again!</span>"
 	medical_record_text = "Patient suffers from anosmia and is incapable of smelling gases or particulates."
-/*
+
 /datum/quirk/cursed
 	name = "Cursed"
 	desc = "You've been cursed, to put it bluntly. Your time in this world is running short, with nothing you can do to change that."
