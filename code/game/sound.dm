@@ -59,6 +59,7 @@
 
 		S.volume -= max(distance - world.view, 0) * 2 //multiplicative falloff to add on top of natural audio falloff.
 
+		/*
 		if(pressure_affected)
 			//Atmosphere affects sound
 			var/pressure_factor = 1
@@ -79,6 +80,7 @@
 
 			S.volume *= pressure_factor
 			//End Atmosphere affecting sound
+		*/
 
 		if(S.volume <= 0)
 			return //No sound

@@ -74,6 +74,8 @@ SUBSYSTEM_DEF(air)
 	// If this is set to 0, monstermos won't process planet atmos
 	var/planet_equalize_enabled = 0
 
+	can_fire = 0
+
 /datum/controller/subsystem/air/stat_entry(msg)
 	msg += "C:{"
 	msg += "HP:[round(cost_highpressure,1)]|"
@@ -102,14 +104,15 @@ SUBSYSTEM_DEF(air)
 	msg += "MG:[get_max_gas_mixes()]"
 	return ..()
 
+//shit here is disabled due to atmos disabing, if not working pls fully disable and/or fix gas_reactions, equalization, and auxtools updating in here.
 /datum/controller/subsystem/air/Initialize(timeofday)
 	map_loading = FALSE
 	setup_allturfs()
 	setup_atmos_machinery()
 	setup_pipenets()
-	gas_reactions = init_gas_reactions()
+	/*gas_reactions = init_gas_reactions()
 	should_do_equalization = CONFIG_GET(flag/atmos_equalize_enabled)
-	auxtools_update_reactions()
+	auxtools_update_reactions()*/
 	return ..()
 
 /datum/controller/subsystem/air/proc/extools_update_ssair()

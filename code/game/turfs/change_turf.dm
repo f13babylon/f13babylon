@@ -155,6 +155,7 @@ GLOBAL_LIST_INIT(blacklisted_automated_baseturfs, typecacheof(list(
 
 	return W
 
+/*disabled due to atmos being disabled
 /turf/open/ChangeTurf(path, list/new_baseturfs, flags)
 	if ((flags & CHANGETURF_INHERIT_AIR) && ispath(path, /turf/open))
 		var/datum/gas_mixture/stashed_air = new()
@@ -178,7 +179,7 @@ GLOBAL_LIST_INIT(blacklisted_automated_baseturfs, typecacheof(list(
 			. = ..()
 			if(!istype(air,/datum/gas_mixture))
 				Initialize_Atmos(0)
-
+*/
 
 // Take off the top layer turf and replace it with the next baseturf down
 /turf/proc/ScrapeAway(amount=1, flags)

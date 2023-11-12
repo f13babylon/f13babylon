@@ -29,10 +29,10 @@
 
 /obj/machinery/atmospherics/components/unary/tank/air/New()
 	..()
-	var/datum/gas_mixture/air_contents = airs[1]
+	//var/datum/gas_mixture/air_contents = airs[1]
 
-	air_contents.set_moles(GAS_O2, AIR_CONTENTS * 0.21)
-	air_contents.set_moles(GAS_N2, AIR_CONTENTS * 0.79)
+	//air_contents.set_moles(GAS_O2, AIR_CONTENTS * 0.21)
+	//air_contents.set_moles(GAS_N2, AIR_CONTENTS * 0.79)
 
 
 /obj/machinery/atmospherics/components/unary/tank/carbon_dioxide
@@ -112,4 +112,3 @@
 /obj/machinery/atmospherics/components/unary/tank/nitrous_oxide
 	icon_state = "red_white"
 	gas_type = GAS_NITROUS
-

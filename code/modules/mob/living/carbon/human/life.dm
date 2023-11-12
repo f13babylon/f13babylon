@@ -63,6 +63,7 @@
 	if(!dna || !dna.species.handle_mutations_and_radiation(src))
 		..()
 
+/*
 /mob/living/carbon/human/breathe()
 	if(!dna.species.breathe(src))
 		..()
@@ -100,6 +101,7 @@
 
 /mob/living/carbon/human/handle_environment(datum/gas_mixture/environment)
 	dna.species.handle_environment(environment, src)
+*/
 
 ///FIRE CODE
 /mob/living/carbon/human/handle_fire()

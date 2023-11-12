@@ -12,7 +12,7 @@
 	//	src.health += (src.special_e*3)//SPECIAL Integration
 	//	update_special_speed((5-src.special_a)/20)//SPECIAL Integration
 	//	SPECIAL_SET = TRUE
-	
+
 	//SHOULD_NOT_SLEEP(TRUE)
 	if(mob_transforming)
 		return
@@ -99,11 +99,11 @@
 	if(!loc)
 		return FALSE
 
-	var/datum/gas_mixture/environment = loc.return_air()
+	//var/datum/gas_mixture/environment = loc.return_air()
 
 	//Handle temperature/pressure differences between body and environment
-	if(environment)
-		handle_environment(environment)
+	//if(environment)
+		//handle_environment(environment)
 
 	handle_fire()
 
