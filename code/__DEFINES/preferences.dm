@@ -71,8 +71,8 @@
 //f13 stuff
 #define EXP_TYPE_FALLOUT		"Fallout"
 #define EXP_TYPE_VAULT			"Vault"
-#define EXP_TYPE_BROTHERHOOD	"Bos"
-#define EXP_TYPE_NCR			"Ncr"
+#define EXP_TYPE_BROTHERHOOD	"BoS"
+#define EXP_TYPE_NCR			"NCR"
 #define EXP_TYPE_BIGHORN		"Bighorn"
 #define EXP_TYPE_LEGION			"Legion"
 #define EXP_TYPE_WASTELAND		"Wasteland"
