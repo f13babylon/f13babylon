@@ -66,7 +66,7 @@
 "aaj" = (
 /obj/effect/decal/riverbank,
 /mob/living/simple_animal/hostile/bloatfly,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "aak" = (
 /obj/structure/closet/crate/footlocker{
@@ -91,7 +91,7 @@
 	dir = 4;
 	pixel_y = -10
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "aap" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -181,7 +181,7 @@
 	dir = 5
 	},
 /obj/structure/flora/rock/jungle,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "adB" = (
 /obj/structure/chair/stool/retro/tan,
@@ -322,7 +322,7 @@
 	dir = 10
 	},
 /obj/structure/flora/junglebush,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "ani" = (
 /obj/structure/reagent_dispensers/barrel/old,
@@ -475,7 +475,7 @@
 	pixel_x = -7
 	},
 /obj/effect/decal/riverbank,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "atn" = (
 /obj/structure/flora/tree/tall,
@@ -556,7 +556,7 @@
 	dir = 10
 	},
 /obj/structure/flora/grass/jungle,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "axh" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -1187,7 +1187,7 @@
 /obj/structure/flora/rock/jungle{
 	icon_state = "rock5"
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "bie" = (
 /obj/structure/table/reinforced,
@@ -1522,7 +1522,7 @@
 /obj/structure/flora/junglebush/large{
 	pixel_y = 1
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "bxi" = (
 /obj/structure/rack/shelf_metal,
@@ -1665,7 +1665,7 @@
 	dir = 6
 	},
 /obj/structure/flora/grass/jungle,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "bER" = (
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
@@ -1718,7 +1718,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "bHt" = (
 /turf/open/indestructible/ground/outside/road{
@@ -1928,7 +1928,7 @@
 /area/f13/legion)
 "bQf" = (
 /obj/structure/flora/ausbushes/stalkybush,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "bQI" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1970,7 +1970,7 @@
 /obj/structure/flora/tree/jungle/small{
 	pixel_x = -19
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "bSp" = (
 /obj/structure/fence{
@@ -2511,7 +2511,7 @@
 	pixel_x = -18
 	},
 /obj/effect/decal/riverbank,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "cvX" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2801,7 +2801,7 @@
 	pixel_x = 13;
 	pixel_y = 1
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "cHZ" = (
 /obj/structure/legion_extractor,
@@ -3189,7 +3189,7 @@
 /obj/effect/decal/riverbank{
 	dir = 5
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "dby" = (
 /obj/structure/table,
@@ -3604,7 +3604,7 @@
 /obj/structure/fence/wooden{
 	pixel_x = 13
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "dwL" = (
 /obj/item/reagent_containers/glass/bucket/wood,
@@ -3656,7 +3656,7 @@
 /obj/structure/fence/wooden{
 	pixel_x = -14
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "dzp" = (
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
@@ -4105,7 +4105,7 @@
 	},
 /obj/structure/lattice/catwalk,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/legion)
 "eaF" = (
 /obj/structure/chair/wood,
@@ -4304,7 +4304,7 @@
 /obj/structure/fence/wooden{
 	pixel_x = -18
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "ejt" = (
 /obj/effect/overlay/turfs/sidewalk{
@@ -4316,7 +4316,7 @@
 /area/f13/wasteland/rocksprings)
 "ejS" = (
 /obj/structure/destructible/tribal_torch/wall/lit,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "ejX" = (
 /obj/machinery/door/poddoor/gate{
@@ -4478,7 +4478,7 @@
 	pixel_x = -18
 	},
 /obj/effect/decal/riverbank,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "erL" = (
 /obj/effect/decal/cleanable/blood/tracks,
@@ -4503,7 +4503,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "esP" = (
 /obj/effect/overlay/turfs/sidewalk{
@@ -4535,7 +4535,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "etG" = (
 /obj/structure/closet/crate/large,
@@ -4842,7 +4842,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "eGV" = (
 /obj/structure/closet/crate/bin/trashbin,
@@ -5403,7 +5403,7 @@
 /obj/structure/flora/rock/jungle{
 	icon_state = "rock5"
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "fjs" = (
 /obj/machinery/door/airlock/grunge,
@@ -5414,7 +5414,7 @@
 	dir = 4;
 	pixel_y = -10
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "fjY" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
@@ -6196,7 +6196,7 @@
 	dir = 1
 	},
 /obj/structure/destructible/tribal_torch/wall/lit,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "gck" = (
 /obj/effect/overlay/junk/oldpipes{
@@ -6313,7 +6313,7 @@
 	pixel_x = -10;
 	pixel_y = 10
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "gjz" = (
 /turf/open/floor/f13{
@@ -6377,7 +6377,7 @@
 "glW" = (
 /obj/structure/pondlily_small,
 /obj/effect/decal/riverbank,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "gmt" = (
 /obj/structure/chair/sofa/corp/left{
@@ -6399,7 +6399,7 @@
 /obj/effect/decal/riverbank{
 	dir = 9
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "gnE" = (
 /obj/structure/table/reinforced,
@@ -6585,13 +6585,6 @@
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"gxW" = (
-/obj/structure/fence{
-	color = "#515249";
-	dir = 1
-	},
-/turf/open/indestructible/ground/outside/desert/harsh,
-/area/f13/wasteland/rocksprings)
 "gyk" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -6614,11 +6607,15 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "gzl" = (
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 1;
-	pixel_y = 24
+/obj/structure/barricade/bars{
+	max_integrity = 1200;
+	name = "reinforced metal bars";
+	obj_integrity = 1200
 	},
-/turf/open/indestructible/ground/outside/desert/harsh,
+/turf/open/indestructible/ground/outside/dirt/harsh{
+	dir = 8;
+	icon_state = "dirt"
+	},
 /area/f13/wasteland/rocksprings)
 "gzy" = (
 /obj/item/chair/wood,
@@ -6669,10 +6666,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"gAV" = (
-/obj/structure/flora/rock/pile/largejungle,
-/turf/open/water,
-/area/f13/caves)
 "gBb" = (
 /turf/closed/wall/r_wall/rust,
 /area/f13/wasteland/rocksprings)
@@ -6715,7 +6708,7 @@
 /obj/structure/flora/rock/jungle{
 	icon_state = "rock5"
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "gDp" = (
 /obj/effect/decal/cleanable/dirt,
@@ -6735,7 +6728,7 @@
 /obj/structure/flora/rock/jungle{
 	icon_state = "rock5"
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "gFP" = (
 /obj/effect/turf_decal/weather/dirt,
@@ -7420,7 +7413,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "hnj" = (
 /mob/living/simple_animal/hostile/radscorpion/black,
@@ -7837,7 +7830,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "hMP" = (
 /obj/machinery/light/small{
@@ -7875,9 +7868,7 @@
 /area/f13/building)
 "hNQ" = (
 /obj/structure/flora/rock/pile/largejungle,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "verticalinnermain0"
-	},
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "hOC" = (
 /obj/item/restraints/handcuffs,
@@ -7925,7 +7916,7 @@
 	pixel_x = -2;
 	pixel_y = -1
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "hQX" = (
 /obj/structure/railing/corner{
@@ -8125,7 +8116,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "iaD" = (
 /obj/structure/railing/corner{
@@ -8266,7 +8257,7 @@
 	pixel_x = 13
 	},
 /obj/effect/decal/riverbank,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "igr" = (
 /obj/structure/table/wood,
@@ -8386,7 +8377,7 @@
 /area/f13/legion)
 "ilD" = (
 /obj/structure/pondlily_big,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "ima" = (
 /obj/structure/destructible/tribal_torch/lit,
@@ -8477,6 +8468,7 @@
 /area/f13/building)
 "ioD" = (
 /obj/structure/decoration/rag,
+/obj/machinery/door/unpowered/secure_legion,
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/wasteland/rocksprings)
 "ioY" = (
@@ -8492,7 +8484,7 @@
 /obj/effect/decal/riverbank{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "iqc" = (
 /obj/structure/junk/small/tv,
@@ -8547,7 +8539,7 @@
 	dir = 6
 	},
 /obj/structure/flora/ausbushes/stalkybush,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "iuQ" = (
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier1,
@@ -8888,7 +8880,7 @@
 	icon_state = "rock5"
 	},
 /obj/effect/decal/riverbank,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "iPD" = (
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -8928,7 +8920,7 @@
 /area/f13/wasteland/rocksprings)
 "iQz" = (
 /obj/effect/decal/riverbank,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "iQF" = (
 /obj/structure/junk/machinery,
@@ -9110,7 +9102,7 @@
 	pixel_x = 1
 	},
 /obj/structure/stone_tile/surrounding_tile,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "jam" = (
 /obj/effect/decal/marking{
@@ -9410,7 +9402,7 @@
 	layer = 3.6;
 	pixel_x = 13
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "jqV" = (
 /obj/effect/landmark/start/f13/outsider,
@@ -10030,7 +10022,7 @@
 	dir = 1;
 	pixel_y = 24
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "kde" = (
 /obj/structure/barricade/wooden,
@@ -10132,7 +10124,7 @@
 	pixel_x = -18
 	},
 /obj/structure/fence/wooden,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "kjp" = (
 /obj/structure/furnace,
@@ -10423,7 +10415,7 @@
 "kyo" = (
 /obj/effect/decal/riverbank,
 /obj/structure/flora/ausbushes/stalkybush,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "kyE" = (
 /obj/structure/chair/booth{
@@ -10669,7 +10661,7 @@
 /obj/effect/decal/riverbank{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "kNa" = (
 /obj/structure/nest/assaultron{
@@ -10747,7 +10739,7 @@
 /area/f13/building)
 "kSg" = (
 /obj/effect/spawner/lootdrop/trash,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "kSl" = (
 /obj/structure/fence/wooden{
@@ -10800,6 +10792,7 @@
 /area/f13/legion)
 "kTa" = (
 /obj/structure/decoration/rag,
+/obj/machinery/door/unpowered/secure_legion,
 /turf/open/indestructible/ground/outside/dirt/harsh{
 	icon_state = "dirt"
 	},
@@ -10859,7 +10852,7 @@
 	pixel_x = -14
 	},
 /obj/structure/fence/wooden,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "kXJ" = (
 /obj/machinery/door/poddoor/shutters{
@@ -11068,7 +11061,7 @@
 /area/f13/caves)
 "llH" = (
 /obj/structure/chair/bench,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/legion)
 "lmz" = (
 /obj/effect/overlay/junk/oldpipes{
@@ -11197,7 +11190,7 @@
 	pixel_y = -10
 	},
 /obj/effect/decal/riverbank,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "lsa" = (
 /obj/structure/stone_tile/block,
@@ -11322,7 +11315,7 @@
 "lzo" = (
 /obj/effect/decal/riverbank,
 /obj/structure/spacevine,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "lzs" = (
 /obj/structure/simple_door/bunker,
@@ -11364,7 +11357,7 @@
 /area/f13/building)
 "lBG" = (
 /obj/structure/flora/ausbushes/reedbush,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "lBH" = (
 /obj/structure/car/rubbish2{
@@ -11380,7 +11373,7 @@
 /obj/structure/fence/wooden{
 	pixel_x = -14
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "lCe" = (
 /obj/effect/overlay/junk/oldpipes{
@@ -11413,7 +11406,7 @@
 /obj/effect/turf_decal/weather/dirt,
 /obj/structure/flora/grass/jungle,
 /obj/structure/flora/junglebush,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "lDq" = (
 /obj/structure/table,
@@ -11571,9 +11564,10 @@
 /turf/open/indestructible/ground/outside/dirt/harsh,
 /area/f13/building)
 "lKV" = (
-/obj/structure/fence{
-	color = "#515249";
-	dir = 1
+/obj/structure/barricade/bars{
+	max_integrity = 1200;
+	name = "reinforced metal bars";
+	obj_integrity = 1200
 	},
 /turf/open/indestructible/ground/outside/dirt/harsh{
 	dir = 4;
@@ -11900,7 +11894,7 @@
 /obj/structure/flora/rock/jungle{
 	icon_state = "rock5"
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "mfm" = (
 /obj/structure/flora/ausbushes/ppflowers,
@@ -11963,7 +11957,7 @@
 	dir = 9
 	},
 /obj/structure/flora/rock/jungle,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "mix" = (
 /obj/item/storage/backpack/satchel/flat,
@@ -11997,7 +11991,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "mjF" = (
 /obj/structure/rack,
@@ -12105,7 +12099,7 @@
 /area/f13/wasteland/rocksprings)
 "mnL" = (
 /obj/structure/flora/grass/jungle,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "mnP" = (
 /obj/item/reagent_containers/glass/bucket{
@@ -12239,7 +12233,7 @@
 "mtB" = (
 /obj/effect/decal/riverbank,
 /obj/structure/flora/rock/jungle,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "mtK" = (
 /obj/effect/overlay/turfs/cliff{
@@ -12375,7 +12369,7 @@
 /obj/effect/decal/riverbankcorner{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "myN" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -12439,7 +12433,7 @@
 /obj/structure/fence/wooden{
 	pixel_x = -18
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "mCm" = (
 /obj/structure/table/reinforced{
@@ -12499,10 +12493,7 @@
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/wasteland/rocksprings)
 "mFE" = (
-/obj/structure/fence{
-	color = "#515249";
-	dir = 1
-	},
+/obj/machinery/door/unpowered/secure_legion,
 /turf/open/indestructible/ground/outside/dirt/harsh{
 	dir = 8;
 	icon_state = "dirtcorner"
@@ -12698,7 +12689,7 @@
 /obj/structure/fence/wooden{
 	pixel_x = 13
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "mQs" = (
 /obj/structure/fence/corner/wooden{
@@ -12750,7 +12741,7 @@
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/legion)
 "mTN" = (
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "mTT" = (
 /obj/item/kirbyplants{
@@ -12783,7 +12774,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "mUV" = (
 /obj/structure/reagent_dispensers/barrel/explosive{
@@ -13115,7 +13106,7 @@
 /obj/effect/decal/riverbank{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "nlm" = (
 /obj/structure/table/wood,
@@ -13220,7 +13211,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "nrE" = (
 /obj/effect/spawner/lootdrop/f13/foodspawner,
@@ -13376,7 +13367,7 @@
 	dir = 5
 	},
 /obj/structure/flora/junglebush,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "nwK" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -13711,7 +13702,7 @@
 	},
 /obj/structure/flora/rock/jungle,
 /obj/structure/flora/ausbushes/stalkybush,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "nNu" = (
 /obj/structure/debris/v3,
@@ -13956,7 +13947,7 @@
 	pixel_x = -12;
 	pixel_y = -10
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "nZC" = (
 /obj/machinery/light/small/broken{
@@ -14175,7 +14166,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "okw" = (
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/legion)
 "okN" = (
 /obj/structure/chair/wood{
@@ -14311,7 +14302,7 @@
 	pixel_x = -32;
 	pixel_y = -34
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "oqo" = (
 /obj/machinery/light/small{
@@ -14603,7 +14594,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "oDd" = (
 /obj/item/storage/trash_stack{
@@ -14642,7 +14633,7 @@
 /area/f13/building)
 "oDO" = (
 /obj/structure/flora/ausbushes/stalkybush,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "oDV" = (
 /obj/effect/overlay/turfs/cliff/corner{
@@ -14814,7 +14805,7 @@
 	dir = 9
 	},
 /obj/structure/flora/junglebush,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "oRl" = (
 /obj/effect/landmark/start/f13/tribal_temp,
@@ -14822,7 +14813,7 @@
 /area/f13/caves)
 "oRM" = (
 /obj/structure/flora/rock/jungle,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "oRW" = (
 /obj/structure/billboard/cola/pristine,
@@ -15114,7 +15105,7 @@
 /obj/effect/decal/riverbank{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "pcD" = (
 /obj/machinery/light{
@@ -15911,7 +15902,7 @@
 /obj/effect/decal/riverbank{
 	dir = 10
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "pQV" = (
 /obj/structure/railing{
@@ -15927,7 +15918,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "pRe" = (
 /obj/effect/landmark/start/f13/recleg,
@@ -15965,7 +15956,7 @@
 /area/f13/legion)
 "pTi" = (
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "pTn" = (
 /obj/structure/table/wood,
@@ -16308,7 +16299,7 @@
 /obj/structure/fence/wooden{
 	pixel_x = 13
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "qih" = (
 /turf/open/floor/carpet,
@@ -16396,7 +16387,7 @@
 	layer = 3.6;
 	pixel_x = 13
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "qqq" = (
 /obj/item/cultivator/rake,
@@ -16411,7 +16402,7 @@
 	pixel_x = 13
 	},
 /obj/structure/fence/wooden,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "qqZ" = (
 /obj/structure/flora/grass/wasteland{
@@ -16448,7 +16439,7 @@
 	dir = 9
 	},
 /obj/structure/flora/ausbushes/stalkybush,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "qtl" = (
 /obj/structure/table/wood,
@@ -16540,7 +16531,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "qyA" = (
 /turf/open/indestructible/ground/outside/graveldirt{
@@ -16617,14 +16608,14 @@
 	dir = 5
 	},
 /obj/structure/flora/junglebush,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "qDb" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
 /obj/structure/flora/grass/jungle,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "qDd" = (
 /obj/structure/rack,
@@ -16787,7 +16778,7 @@
 /obj/effect/decal/riverbankcorner{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "qLx" = (
 /obj/machinery/light/small/broken{
@@ -16901,7 +16892,7 @@
 /area/f13/wasteland/rocksprings)
 "qQu" = (
 /obj/structure/spacevine,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "qQR" = (
 /obj/structure/fence{
@@ -17257,7 +17248,7 @@
 "riG" = (
 /obj/structure/spacevine,
 /obj/structure/spacevine,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "rjf" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
@@ -17515,7 +17506,7 @@
 	dir = 1
 	},
 /obj/structure/flora/grass/jungle,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "rud" = (
 /obj/structure/flora/grass/wasteland{
@@ -17554,7 +17545,7 @@
 "rvd" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/structure/flora/grass/jungle,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "rwd" = (
 /obj/machinery/button/door{
@@ -17905,7 +17896,7 @@
 	dir = 8
 	},
 /obj/structure/flora/grass/jungle,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "rLm" = (
 /obj/structure/simple_door/metal/barred{
@@ -18064,7 +18055,7 @@
 	pixel_x = -6;
 	pixel_y = 6
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "rUa" = (
 /obj/structure/curtain{
@@ -18184,7 +18175,7 @@
 	dir = 10
 	},
 /obj/structure/flora/rock/jungle,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "rZx" = (
 /obj/structure/simple_door/dirtyglass,
@@ -18384,7 +18375,7 @@
 	dir = 5
 	},
 /obj/structure/flora/grass/jungle,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "skz" = (
 /obj/effect/overlay/turfs/cliff/corner{
@@ -18398,7 +18389,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "skQ" = (
 /obj/structure/simple_door/metal/iron,
@@ -18744,7 +18735,7 @@
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "szv" = (
 /obj/structure/railing/corner{
@@ -19180,7 +19171,7 @@
 /obj/structure/flora/rock/pile/largejungle{
 	icon_state = "bush3"
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "sSh" = (
 /obj/effect/decal/remains/human,
@@ -19403,7 +19394,7 @@
 	icon_state = "rock5"
 	},
 /obj/effect/decal/riverbank,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "tew" = (
 /obj/structure/table/wood,
@@ -19473,7 +19464,7 @@
 /area/f13/building)
 "tij" = (
 /obj/structure/flora/rock/jungle,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "tiO" = (
 /obj/structure/flora/grass/wasteland,
@@ -19572,7 +19563,7 @@
 	pixel_y = 1
 	},
 /obj/structure/fence/wooden,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "tmC" = (
 /obj/effect/decal/cleanable/dirt,
@@ -19962,7 +19953,7 @@
 	pixel_y = 1
 	},
 /obj/effect/decal/riverbank,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "tKX" = (
 /obj/structure/junk/small/bed,
@@ -19989,7 +19980,7 @@
 /area/f13/building)
 "tMV" = (
 /obj/structure/flora/tree/jungle/small,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "tNa" = (
 /obj/structure/spacevine{
@@ -20203,7 +20194,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "tZA" = (
 /obj/structure/junk/drawer,
@@ -20306,7 +20297,7 @@
 /obj/effect/decal/riverbank{
 	dir = 10
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "uge" = (
 /obj/effect/decal/cleanable/dirt,
@@ -20419,7 +20410,7 @@
 /area/f13/caves)
 "umX" = (
 /obj/effect/decal/riverbankcorner,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "unu" = (
 /obj/structure/closet/crate/mortar_shells,
@@ -20435,7 +20426,7 @@
 "unJ" = (
 /obj/effect/decal/riverbank,
 /obj/structure/flora/ausbushes/stalkybush,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "unO" = (
 /obj/machinery/door/unpowered/securedoor{
@@ -20527,7 +20518,7 @@
 /obj/structure/flora/rock/pile/largejungle{
 	icon_state = "bush3"
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "usc" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -20656,7 +20647,7 @@
 /obj/effect/decal/riverbankcorner{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "uwQ" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
@@ -20889,7 +20880,7 @@
 /obj/structure/flora/rock/jungle{
 	icon_state = "rock5"
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "uJg" = (
 /obj/item/trash/f13/dog,
@@ -21211,7 +21202,7 @@
 	layer = 3.6;
 	pixel_x = 13
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "uXQ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -21251,7 +21242,7 @@
 /obj/structure/flora/rock/jungle{
 	icon_state = "rock5"
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "vbo" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -21496,7 +21487,7 @@
 /obj/effect/turf_decal/weather/dirt,
 /obj/structure/flora/grass/jungle,
 /obj/structure/flora/grass/jungle,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "vmn" = (
 /turf/closed/wall/f13/store/constructed,
@@ -22008,7 +21999,7 @@
 	layer = 3.6;
 	pixel_x = 13
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "vJK" = (
 /obj/structure/chair/f13chair2,
@@ -22100,7 +22091,7 @@
 /obj/structure/fence/wooden{
 	pixel_x = -14
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "vOZ" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -22238,7 +22229,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "vUC" = (
 /obj/structure/debris/v4,
@@ -22401,7 +22392,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "wdu" = (
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "wdE" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
@@ -22617,7 +22608,7 @@
 /area/f13/legion)
 "wlX" = (
 /obj/structure/spacevine,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "wmy" = (
 /obj/structure/wreck/bus/blue{
@@ -22654,7 +22645,7 @@
 /area/f13/legion)
 "wns" = (
 /mob/living/simple_animal/hostile/bloatfly,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "wnw" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -22985,7 +22976,7 @@
 	dir = 4;
 	pixel_y = 7
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "wFn" = (
 /obj/structure/simple_door/metal,
@@ -23161,7 +23152,7 @@
 	dir = 4;
 	pixel_y = 7
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "wOr" = (
 /obj/structure/reagent_dispensers/barrel/explosive,
@@ -23691,7 +23682,7 @@
 /obj/structure/fence/wooden{
 	pixel_x = -18
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "xql" = (
 /obj/item/nullrod/tribal_knife{
@@ -23766,7 +23757,7 @@
 /area/f13/wasteland/rocksprings)
 "xvC" = (
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "xvG" = (
 /obj/structure/flora/tree/jungle,
@@ -24033,7 +24024,7 @@
 /obj/structure/fence/wooden{
 	pixel_x = -18
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "xIf" = (
 /obj/structure/fence/door,
@@ -24109,7 +24100,7 @@
 /area/f13/wasteland/rocksprings)
 "xLw" = (
 /obj/effect/decal/riverbank,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "xLP" = (
 /obj/structure/lattice,
@@ -24195,7 +24186,7 @@
 /obj/structure/fence/wooden{
 	pixel_x = -14
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "xQs" = (
 /obj/structure/fence/wooden{
@@ -24205,7 +24196,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "xQB" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -24506,7 +24497,7 @@
 /area/f13/legion)
 "yfM" = (
 /obj/item/bikehorn/rubberducky,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "ygC" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -32928,7 +32919,7 @@ vVx
 pnE
 lKV
 mFE
-hzQ
+gzl
 rfA
 rfA
 xLw
@@ -33424,8 +33415,8 @@ iDR
 lLp
 lLp
 iDR
-nsp
-nsp
+anP
+anP
 jLa
 vFs
 fOM
@@ -33681,8 +33672,8 @@ pnE
 hYe
 hYe
 pnE
-gxW
-gxW
+anP
+anP
 jLa
 jLa
 hgz
@@ -33938,10 +33929,10 @@ pnE
 hYe
 hYe
 pnE
-gzl
-hgP
-hgP
-hgP
+rNm
+anP
+psz
+vTD
 hgP
 hgP
 hgP
@@ -34195,9 +34186,9 @@ pnE
 hYe
 hYe
 pnE
-lof
-gNZ
-gNZ
+anP
+anP
+rnh
 gNZ
 gNZ
 gNZ
@@ -34452,7 +34443,7 @@ iDR
 lLp
 lLp
 iDR
-gct
+anP
 anP
 anP
 anP
@@ -50451,7 +50442,7 @@ ucY
 gbi
 mxM
 xtx
-gAV
+hNQ
 wdu
 hNQ
 tdZ
@@ -50965,7 +50956,7 @@ ucY
 dOp
 ulW
 tdw
-gAV
+hNQ
 wdu
 wdu
 aqp

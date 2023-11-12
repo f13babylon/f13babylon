@@ -1601,6 +1601,9 @@
 /area/f13/tunnel)
 "bwr" = (
 /obj/structure/table/reinforced,
+/obj/structure/barricade/bars{
+	layer = 3.5
+	},
 /turf/open/floor/plasteel/dark,
 /area/f13/brotherhood/armory)
 "bwx" = (
@@ -9706,7 +9709,10 @@
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/tunnel/bighorn)
 "hMq" = (
-/obj/structure/rack,
+/obj/machinery/door/airlock/hatch{
+	name = "Research";
+	req_access_txt = "120"
+	},
 /turf/open/floor/plasteel/dark,
 /area/f13/brotherhood/armory)
 "hMP" = (
@@ -14726,6 +14732,7 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superhigh,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superhigh,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superhigh,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/unique,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel/bighorn)
 "oUx" = (
@@ -17345,6 +17352,7 @@
 /obj/item/clothing/suit/armor/f13/harpercoat,
 /obj/item/clothing/suit/armored/medium/armoredcoat,
 /obj/effect/spawner/lootdrop/f13/armor/clothes,
+/obj/item/clothing/suit/armor/vest,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel/bighorn)
 "svy" = (
