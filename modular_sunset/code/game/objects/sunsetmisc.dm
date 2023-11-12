@@ -1,8 +1,8 @@
 // Sunset Flags
 
 /obj/item/bighorn_flag
-	name = "Bighorn flag"
-	desc = "A flag depicting the head of a bighorner. It's the symbol of the town of Bighorn."
+	name = "La Verkin flag"
+	desc = "A flag depicting the head of a bighorner. It's a symbol of the town of La Verkin."
 	icon = 'modular_sunset/icons/structures/bighorn_flag.dmi'
 	icon_state = "bighorn_flag"
 	item_state = "bighorn_flag"
@@ -176,7 +176,7 @@ Nowhere else to really put this. Pulled from what I had done on Hyper. - Carl
 /obj/structure/fluff/destroyed_nuclear_reactor/process()
 	if(QDELETED(src))
 		return PROCESS_KILL
-	
+
 	if(!z || !SSmobs.clients_by_zlevel[z].len) // we don't care about irradiating if no one is around to see it!
 		return
 
