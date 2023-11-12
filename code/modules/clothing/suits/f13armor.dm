@@ -734,8 +734,8 @@
 /obj/item/clothing/suit/armor/f13/power_armor/x02
 	name = "APA Mk II"
 	desc = "Upgraded pre-war power armor design used by the Enclave."
-	icon_state = "x-01PA"
-	item_state = "x-01PA"
+	icon_state = "APAmk2"
+	item_state = "APAmk2"
 	slowdown = 0.3//Worst slowdown of all combat sets.
 	armor = list("melee" = 70, "bullet" = 70, "laser" = 70, "energy" = 70, "bomb" = 70, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 50)
 	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/x02 // Oh the misery
