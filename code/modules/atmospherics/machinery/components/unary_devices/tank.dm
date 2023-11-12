@@ -14,13 +14,13 @@
 
 /obj/machinery/atmospherics/components/unary/tank/New()
 	..()
-	var/datum/gas_mixture/air_contents = airs[1]
-	air_contents.set_volume(volume)
-	air_contents.set_temperature(T20C)
-	if(gas_type)
-		air_contents.set_moles(gas_type,AIR_CONTENTS)
+	//var/datum/gas_mixture/air_contents = airs[1]
+	//air_contents.set_volume(volume)
+	//air_contents.set_temperature(T20C)
+	//if(gas_type)
+		//air_contents.set_moles(gas_type,AIR_CONTENTS)
 
-		name = "[name] ([GLOB.gas_data.names[gas_type]])"
+		//name = "[name] ([GLOB.gas_data.names[gas_type]])"
 	setPipingLayer(piping_layer)
 
 /obj/machinery/atmospherics/components/unary/tank/air
