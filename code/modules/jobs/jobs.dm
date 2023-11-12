@@ -116,16 +116,15 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Preacher",
 "La Verkin Citizen",
 
+"Enclave Captain",
 "Enclave Lieutenant",
 "Enclave Gunnery Sergeant",
 "Enclave Sergeant",
-"Enclave Internal Security",
 "Enclave Specialist",
 "Enclave Scientist",
-"Enclave Private",
 "Enclave Pilot Officer",
+"Enclave Regular",
 "Enclave Bunker Duty",
-"Synthetic",
 
 "Khan Senior Enforcer",
 "Khan Enforcer",
@@ -251,16 +250,15 @@ GLOBAL_LIST_INIT(khan_positions, list(
 ))
 
 GLOBAL_LIST_INIT(enclave_positions, list(
+	"Enclave Captain",
 	"Enclave Lieutenant",
-	"Enclave Platoon Sergeant",
+	"Enclave Gunnery Sergeant",
 	"Enclave Sergeant",
-	"Enclave Internal Security",
 	"Enclave Specialist",
 	"Enclave Scientist",
 	"Enclave Pilot Officer",
-	"Enclave Private",
+	"Enclave Regular",
 	"Enclave Bunker Duty",
-	"Synthetic",
 ))
 
 GLOBAL_LIST_INIT(security_positions, list(
