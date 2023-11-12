@@ -50,7 +50,7 @@
 	if(prob(0.05))
 		SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, "jolly", /datum/mood_event/jolly)
 
-	/datum/quirk/depression
+/datum/quirk/depression
 	name = "Depression"
 	desc = "You sometimes just hate life."
 	mob_trait = TRAIT_DEPRESSION
