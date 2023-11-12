@@ -411,7 +411,7 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 		/obj/item/melee/onehanded/knife/survival = 1,
 		/obj/item/melee/unarmed/yaoguaigauntlet = 1,
 		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
-		/obj/item/gun/ballistic/bow = 1,
+		/obj/item/gun/ballistic/bow/tribal = 1,
 		/obj/item/storage/belt/tribe_quiver = 1,
 		/obj/item/book/granter/crafting_recipe/tribal/sorrows = 1
 	)
