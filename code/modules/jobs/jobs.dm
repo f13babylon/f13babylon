@@ -123,7 +123,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Enclave Specialist",
 "Enclave Scientist",
 "Enclave Pilot Officer",
-"Enclave Regular",
+"Enclave Marine",
 "Enclave Bunker Duty",
 
 "Khan Senior Enforcer",
@@ -258,7 +258,7 @@ GLOBAL_LIST_INIT(enclave_positions, list(
 	"Enclave Specialist",
 	"Enclave Scientist",
 	"Enclave Pilot Officer",
-	"Enclave Regular",
+	"Enclave Marine",
 	"Enclave Bunker Duty",
 ))
 

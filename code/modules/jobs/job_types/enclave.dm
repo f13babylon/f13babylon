@@ -469,7 +469,7 @@
 
 //Regular
 /datum/job/enclave/enclavespy
-	title = "Enclave Private"
+	title = "Enclave Marine"
 	flag = F13USPRIVATE
 	total_positions = 4
 	spawn_positions = 4
@@ -479,7 +479,7 @@
 	exp_requirements = 0
 
 /datum/outfit/job/enclave/peacekeeper/enclavespy
-	name = "Enclave Private"
+	name = "Enclave Marine"
 	jobtype = /datum/job/enclave/enclavespy
 	accessory = /obj/item/clothing/accessory/enclave/private_firstclass
 	head = /obj/item/clothing/head/helmet/f13/combat/enclave
