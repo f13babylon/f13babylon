@@ -49,10 +49,7 @@ GLOBAL_LIST_INIT(nonhuman_positions, list(
 	))
 
 GLOBAL_LIST_INIT(command_positions, list(
-	"Baron",
-	"Castellan",
-	"Knight-Commander",
-	"Keeper",
+	"Head Paladin",
 
 	"NCR Captain",
 	"NCR Veteran Ranger",
@@ -60,7 +57,6 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Legion Centurion",
 
 	"Sheriff",
-	"Sierra Representative",
 	"Mayor",
 
 	"Enclave Lieutenant",
@@ -83,19 +79,17 @@ GLOBAL_LIST_INIT(silicon_whitelist_positions, list(
 //NCR Assistant and Legion Camp Follower re-added to whitelisting.  BoS Initiate removed from whitelist.
 
 GLOBAL_LIST_INIT(faction_whitelist_positions, list(
-"Baron",
-"Castellan",
-"Knight-Commander",
-"Keeper",
-"Paladin Marshal",
+"Head Paladin",
+"Head Knight",
+"Head Scribe",
+"Senior Paladin",
 "Paladin",
-"Knight-Captain",
+"Senior Knight",
 "Knight",
-"Librarian",
+"Senior Scribe",
 "Scribe",
 "Initiate",
 "BoS Off-Duty",
-"Inquisitorial Acolyte",
 
 "Legion Centurion",
 "Legion Venator",
@@ -110,9 +104,16 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Legion Auxilia",
 "Legion Slave",
 
-"Shopkeeper",
+"Mayor",
+"Secretary",
+"Sheriff",
+"Deputy",
 "Sierra Representative",
+"Shopkeeper",
 "Mercenary",
+"Barkeep",
+"Preacher",
+"Citizen",
 
 "Enclave Lieutenant",
 "Enclave Gunnery Sergeant",
@@ -125,11 +126,10 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Enclave Bunker Duty",
 "Synthetic",
 
-"Noyan",
-"Steward",
-"Kheshig",
-"Khorchin",
-"Kipchak",
+"Khan Senior Enforcer",
+"Khan Enforcer",
+"Khan Chemist",
+"Khan Smith",
 
 "Raider",
 
