@@ -456,7 +456,7 @@
 		/obj/item/ammo_box/magazine/m45exp = 2,
 		/obj/item/storage/belt/utility = 1,
 		/obj/item/gun/ballistic/revolver/grenadelauncher = 1,
-		/obj/item/ammo_box/a40mmHEDP = 1
+		/obj/item/ammo_box/a40mmHEDP = 1,
 	)
 
 /datum/outfit/job/enclave/peacekeeper/f13specialist/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
