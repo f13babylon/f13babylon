@@ -113,7 +113,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Mercenary",
 "Barkeep",
 "Preacher",
-"Citizen",
+"La Verkin Citizen",
 
 "Enclave Lieutenant",
 "Enclave Gunnery Sergeant",
@@ -165,7 +165,7 @@ GLOBAL_LIST_INIT(bighorn_positions, list(
 	"Mercenary",
 	"Barkeep",
 	"Preacher",
-	"Citizen",
+	"La Verkin Citizen",
 
 ))
 
