@@ -89,7 +89,7 @@ Elder
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/hunting = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
-		
+
 	)
 
 /*
@@ -147,7 +147,6 @@ Head Paladin
 	mask =			/obj/item/clothing/mask/gas/sechailer
 	ears =			/obj/item/radio/headset/headset_bos/command
 	id = 			/obj/item/card/id/dogtag
-	neck = 			/obj/item/clothing/neck/mantle/bos/paladin
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/hunting = 1,
 		/obj/item/melee/powerfist/f13 = 1,
@@ -173,7 +172,7 @@ Head Paladin
 /datum/outfit/loadout/sentmelee
 	name = "Melee Senior Paladin"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 1, 
+		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 1,
 		/obj/item/ammo_box/magazine/m14mm = 3,
 		/obj/item/twohanded/inquis_spear = 1,
 	)
@@ -347,7 +346,7 @@ Senior Paladin
 	supervisors = "the Head Paladin"
 	selection_color = "#95a5a6"
 
-	exp_requirements = 0 
+	exp_requirements = 0
 	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
@@ -388,7 +387,6 @@ Senior Paladin
 	uniform =	/obj/item/clothing/under/f13/recon
 	mask =	/obj/item/clothing/mask/gas/sechailer
 	belt =	/obj/item/storage/belt/military/assault
-	neck =	/obj/item/clothing/neck/mantle/bos/paladin
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
@@ -406,7 +404,7 @@ Senior Paladin
 /datum/outfit/loadout/spaladinb
 	name = "Senior Offensive Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/scatter,
+		/obj/item/gun/energy/laser/scatter = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/clothing/accessory/bos/paladin=1,
 		)
@@ -475,7 +473,6 @@ Paladin
 	uniform =	/obj/item/clothing/under/f13/recon
 	mask =	/obj/item/clothing/mask/gas/sechailer
 	belt =	/obj/item/storage/belt/military/assault
-	neck =	/obj/item/clothing/neck/mantle/bos/paladin
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak= 2,
 		/obj/item/melee/onehanded/knife/hunting = 1,
@@ -981,5 +978,3 @@ Off-Duty
 		/obj/item/encryptionkey/headset_bos=1,
 		/obj/item/melee/onehanded/knife/survival=1
 		)
-
-

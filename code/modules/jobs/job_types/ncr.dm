@@ -1145,7 +1145,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "Hunting Trooper"
 	suit_store = /obj/item/gun/ballistic/rifle/hunting
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/internal/boltaction/hunting = 3,
+		/obj/item/ammo_box/a308 = 2,
 		)
 
 
