@@ -52,6 +52,32 @@
 	air_contents.set_moles(GAS_NITROUS, (3*ONE_ATMOSPHERE)*volume/(R_IDEAL_GAS_EQUATION*T20C) * N2STANDARD)
 	return
 
+/obj/item/tank/internals/anesthetic/attack(mob/living/M, mob/user)
+	if(!istype(M))
+		return
+	if(user)
+		var/turf/T = get_turf(M)
+		if(do_after(user, 60, target = src))
+			if(M == user)
+				M.visible_message("[user] appears to be self-administering a dose of anesthesia!", "<span class='notice'>You begin to adjust the nozzle of the anesthetic tank with the mask placed over your mouth...</span>")
+			else
+				M.visible_message("[user] holds [src]'s attached mask over [M]'s mouth to prepare a dose of anesthesia.", "<span class='notice'>[user] holds a mask over your mouth and starts adjusting the nozzle on the anesthetic tank.</span>")
+			if(T && (M == user || do_mob(user, M, 100)))
+				if(user)
+					if (M == user)
+						if(do_after(user, 50, target = src))
+							to_chat(user, "<span class='notice'>You take a huff from [src].</span>")
+					else
+						M.visible_message("[user] has administered [M] a dose of anesthesia from [src].", "<span class='notice'>The event horizon of your mind comes to a close as your senses turn inward.</span>")
+					M.reagents.add_reagent(/datum/reagent/drug/space_drugs, 5)
+				else
+					to_chat(user, "<span class='warning'>[user] failed to administer the anesthetic to [M].</span>")
+
+				M.Sleeping(1000)
+				log_combat(user, M, "gave anesthesia to")
+		else
+			M.visible_message("[user] lowers [src] mask.", "<span class='notice'>[src] mask is lowered from your face.</span>")
+
 /*
  * Air
  */
