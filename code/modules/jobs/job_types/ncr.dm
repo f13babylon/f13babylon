@@ -866,7 +866,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
 		/obj/item/gun/ballistic/revolver/grenadelauncher = 1,
-		/obj/item/book/granter/trait/explosives = 1
+		/obj/item/book/granter/trait/explosives = 1,
+		/obj/item/ammo_box/a40mmHEDP = 2
 		)
 
 /datum/outfit/loadout/combatengineertrapper
