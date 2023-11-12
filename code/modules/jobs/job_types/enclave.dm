@@ -59,7 +59,7 @@
 	supervisors = "Enclave Upper Echelon."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavelt
 	req_admin_notify = 1
-	exp_requirements = 0
+	exp_requirements = 600
 
 	loadout_options = list(
 		/datum/outfit/loadout/cpt_ballistics, // G11E and Plasma Glock
@@ -451,13 +451,12 @@
 	mask = /obj/item/clothing/mask/gas/welding
 	gloves = /obj/item/clothing/gloves/color/yellow
 	head = /obj/item/clothing/head/hardhat/orange
-	suit_store = /obj/item/gun/ballistic/rocketlauncher
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 2,
 		/obj/item/storage/belt/utility = 1,
 		/obj/item/gun/ballistic/revolver/grenadelauncher = 1,
-		/obj/item/ammo_box/magazine/internal/grenadelauncher = 2
+		/obj/item/ammo_box/a40mmHEDP = 1,
 	)
 
 /datum/outfit/job/enclave/peacekeeper/f13specialist/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
