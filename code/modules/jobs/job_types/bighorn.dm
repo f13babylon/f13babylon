@@ -325,7 +325,7 @@ Mayor
 
 /*--------------------------------------------------------------*/
 
-/datum/job/bighorn/citizen
+/datum/job/bighorn/f13settler
 	title = "La Verkin Citizen"
 	flag = F13SETTLER
 	department_flag = DEP_BIGHORN
