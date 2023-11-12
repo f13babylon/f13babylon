@@ -1601,6 +1601,9 @@
 /area/f13/tunnel)
 "bwr" = (
 /obj/structure/table/reinforced,
+/obj/structure/barricade/bars{
+	layer = 3.5
+	},
 /turf/open/floor/plasteel/dark,
 /area/f13/brotherhood/armory)
 "bwx" = (
@@ -2258,22 +2261,11 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"bIw" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/machinery/portable_atmospherics/canister,
-/turf/open/floor/plating/tunnel,
-/area/f13/tunnel)
 "bIx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white,
 /area/f13/building/museum)
-"bIy" = (
-/obj/machinery/portable_atmospherics/canister,
-/turf/open/floor/plating/tunnel,
-/area/f13/tunnel)
 "bIz" = (
 /obj/effect/decal/waste,
 /turf/open/floor/plating/tunnel,
@@ -2282,7 +2274,6 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/machinery/portable_atmospherics/pump,
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "bIB" = (
@@ -2346,10 +2337,6 @@
 /obj/effect/decal/waste{
 	icon_state = "goo8"
 	},
-/turf/open/floor/plating/tunnel,
-/area/f13/tunnel)
-"bIU" = (
-/obj/machinery/portable_atmospherics/pump,
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "bIV" = (
@@ -2481,10 +2468,6 @@
 /turf/open/floor/plasteel/neutral/side{
 	dir = 8
 	},
-/area/f13/tunnel)
-"bJo" = (
-/obj/machinery/portable_atmospherics/scrubber,
-/turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "bJp" = (
 /obj/structure/window/spawner/east,
@@ -9706,7 +9689,10 @@
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/tunnel/bighorn)
 "hMq" = (
-/obj/structure/rack,
+/obj/machinery/door/airlock/hatch{
+	name = "Research";
+	req_access_txt = "120"
+	},
 /turf/open/floor/plasteel/dark,
 /area/f13/brotherhood/armory)
 "hMP" = (
@@ -14726,6 +14712,7 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superhigh,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superhigh,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superhigh,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/unique,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel/bighorn)
 "oUx" = (
@@ -17345,6 +17332,7 @@
 /obj/item/clothing/suit/armor/f13/harpercoat,
 /obj/item/clothing/suit/armored/medium/armoredcoat,
 /obj/effect/spawner/lootdrop/f13/armor/clothes,
+/obj/item/clothing/suit/armor/vest,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel/bighorn)
 "svy" = (
@@ -20046,13 +20034,6 @@
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
-"wsK" = (
-/obj/machinery/portable_atmospherics/scrubber,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/yellow,
-/area/f13/brotherhood)
 "wsL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
@@ -47391,11 +47372,11 @@ sGj
 bAY
 bAY
 apg
-bIw
+bIA
 bIS
 bJg
-bJo
-bJo
+bAY
+bAY
 apj
 aaa
 aae
@@ -47648,7 +47629,7 @@ bAY
 bHO
 bAY
 apg
-bIy
+bAY
 bAY
 bIJ
 pNc
@@ -48420,7 +48401,7 @@ bAY
 bAY
 apg
 bIA
-bIU
+bAY
 bJi
 bJq
 bJq
@@ -79437,7 +79418,7 @@ oVq
 dLM
 xTo
 jkI
-wsK
+tTH
 oVq
 sWt
 okh

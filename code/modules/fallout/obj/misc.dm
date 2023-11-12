@@ -186,8 +186,8 @@
 	anchored = 1
 
 /obj/item/flag/bighorn
-	name = "Bighorn flag"
-	desc = "A flag depicting the head of a bighorner. It's the symbol of the town of Bighorn."
+	name = "La Verkin flag"
+	desc = "A flag depicting the head of a bighorner. It's a symbol of the town of La Verkin."
 	icon_state = "bighornflag"
 	item_state = "bighornflag"
 	faction = FACTION_BIGHORN
@@ -281,8 +281,8 @@
 						faction = FACTION_LEGION
 						anchored = 1
 					if(FACTION_BIGHORN)
-						name = "Bighorn flag"
-						desc = "A flag depicting the head of a bighorner. It's the symbol of the town of Bighorn."
+						name = "La Verkin flag"
+						desc = "A flag depicting the head of a bighorner. It's a symbol of the town of La Verkin."
 						icon_state = "bighornflag"
 						item_state = "bighornflag"
 						faction = FACTION_BIGHORN

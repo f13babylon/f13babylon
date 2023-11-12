@@ -135,7 +135,7 @@
 	name = "black beret"
 	desc = "A black beret, perfect for war veterans and dark, brooding, anti-hero mimes."
 	icon_state = "beretblack"
-	
+
 /obj/item/clothing/head/beret/headband
 	name = "red headband"
 	desc = "A red headband fashioned out of some tattered sleeves. The fabric is soaked in sweat, dirt and blood."
@@ -165,7 +165,7 @@
 	name = "head of security cap"
 	desc = "The robust standard-issue cap of the Head of Security. For showing the officers who's in charge."
 	icon_state = "hoscap"
-	armor = list("melee" = 50, "bullet" = 40, "laser" = 5, "energy" = 10, "bomb" = 25, "bio" = 10, "rad" = 0, "fire" = 50, "acid" = 60)
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 25, "bio" = 10, "rad" = 0, "fire" = 50, "acid" = 60)
 	strip_delay = 80
 	dynamic_hair_suffix = ""
 
