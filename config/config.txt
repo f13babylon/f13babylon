@@ -60,7 +60,7 @@ ADMIN_LEGACY_SYSTEM
 #BAN_LEGACY_SYSTEM
 
 ## Comment this out to stop locally connected clients from being given the almost full access !localhost! admin rank
-#ENABLE_LOCALHOST_RANK
+ENABLE_LOCALHOST_RANK
 
 ## Comment this out if you want to use the SQL based mentor system, the legacy system uses mentors.txt.
 ## You need to set up your database to use the SQL based system.
