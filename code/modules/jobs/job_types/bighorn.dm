@@ -317,8 +317,6 @@ Mayor
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/frag_shrapnel)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/concussion)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/shrapnelmine)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/shotgunammoflechette)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/shotgunammomagnum)
 
 /datum/outfit/job/bighorn/f13shopkeeper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -327,16 +325,16 @@ Mayor
 
 /*--------------------------------------------------------------*/
 
-/datum/job/khan/citizen
+/datum/job/bighorn/citizen
 	title = "La Verkin Citizen"
 	flag = F13SETTLER
 	department_flag = DEP_BIGHORN
 	total_positions = -1
 	spawn_positions = -1
 	roleplay_exclusive_notify = 1
-	supervisors = "the Kharuul and the Five Laws"
+	supervisors = "La Verkin laws"
 	description = "You are a citizen living in La Verkin. Treat your town with respect and make sure to follow the laws in place, as your premium status may be revoked if you are considered a danger to the populace. One of the local businesses may have work if you require funds."
-	enforces = "Your premium status as a citizen may be revoked if you break the Five Laws too often or too severely. Khan justice is harsh, but typically also fair."
+	enforces = "Your premium status as a citizen may be revoked if you are considered a danger to the populace or anger those in control of the town"
 	selection_color = "#dcba97"
 
 	outfit = /datum/outfit/job/bighorn/f13settler
@@ -550,7 +548,7 @@ Mayor
 
 /datum/outfit/job/bighorn/f13settler
 	name = "Citizen"
-	jobtype = /datum/job/khan/citizen
+	jobtype = /datum/job/bighorn/citizen
 	ears = /obj/item/radio/headset/headset_town
 	belt = null
 	id = /obj/item/card/id/dogtag/town
