@@ -283,10 +283,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
-"cO" = (
-/obj/machinery/portable_atmospherics/scrubber,
-/turf/open/floor/plasteel/f13/vault_floor/yellow,
-/area/f13/enclave)
 "cS" = (
 /obj/structure/table/glass,
 /obj/machinery/recharger,
@@ -2695,7 +2691,6 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/structure/tank_dispenser/oxygen,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/enclave)
@@ -2847,7 +2842,6 @@
 /turf/open/floor/f13,
 /area/f13/enclave)
 "wk" = (
-/obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/enclave)
@@ -3980,12 +3974,6 @@
 /obj/item/melee/classic_baton/telescopic,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/enclave)
-"Fm" = (
-/obj/structure/railing{
-	dir = 1
-	},
-/turf/open/floor/f13,
-/area/f13/enclave)
 "Fz" = (
 /obj/machinery/iv_drip,
 /turf/open/floor/plasteel/f13/vault_floor/neutral,
@@ -4566,6 +4554,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
+/obj/effect/turf_decal/bot,
 /turf/open/floor/f13,
 /area/f13/enclave)
 "Kp" = (
@@ -5136,10 +5125,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral,
 /area/f13/enclave)
-"Pz" = (
-/obj/structure/railing,
-/turf/open/floor/f13,
-/area/f13/enclave)
 "PC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/recharge_station,
@@ -5443,9 +5428,6 @@
 "Sl" = (
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/mountain_area)
-"Sm" = (
-/turf/open/chasm/elevator_enc,
-/area/f13/enclave)
 "Sn" = (
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 9
@@ -15812,11 +15794,11 @@ Jx
 Jx
 AW
 fq
-Sm
-Fm
+Sx
+Jx
 Ko
-Pz
-Sm
+Jx
+Sx
 HP
 mA
 Jx
@@ -16069,11 +16051,11 @@ AW
 AW
 AW
 fq
-Sm
-Fm
+Sx
 Jx
-Pz
-Sm
+Jx
+Jx
+Sx
 HP
 mA
 Jx
@@ -16326,11 +16308,11 @@ Ih
 FX
 AW
 fq
-Sm
-Fm
+Sx
 Jx
-Pz
-Sm
+Jx
+Jx
+Sx
 HP
 mA
 Jx
@@ -20713,7 +20695,7 @@ AW
 EJ
 Zj
 ZI
-cO
+Gs
 AW
 RG
 Jx

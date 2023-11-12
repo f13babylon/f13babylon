@@ -2261,22 +2261,11 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"bIw" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/machinery/portable_atmospherics/canister,
-/turf/open/floor/plating/tunnel,
-/area/f13/tunnel)
 "bIx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white,
 /area/f13/building/museum)
-"bIy" = (
-/obj/machinery/portable_atmospherics/canister,
-/turf/open/floor/plating/tunnel,
-/area/f13/tunnel)
 "bIz" = (
 /obj/effect/decal/waste,
 /turf/open/floor/plating/tunnel,
@@ -2285,7 +2274,6 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/machinery/portable_atmospherics/pump,
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "bIB" = (
@@ -2349,10 +2337,6 @@
 /obj/effect/decal/waste{
 	icon_state = "goo8"
 	},
-/turf/open/floor/plating/tunnel,
-/area/f13/tunnel)
-"bIU" = (
-/obj/machinery/portable_atmospherics/pump,
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "bIV" = (
@@ -2484,10 +2468,6 @@
 /turf/open/floor/plasteel/neutral/side{
 	dir = 8
 	},
-/area/f13/tunnel)
-"bJo" = (
-/obj/machinery/portable_atmospherics/scrubber,
-/turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "bJp" = (
 /obj/structure/window/spawner/east,
@@ -20054,13 +20034,6 @@
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
-"wsK" = (
-/obj/machinery/portable_atmospherics/scrubber,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/yellow,
-/area/f13/brotherhood)
 "wsL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
@@ -47399,11 +47372,11 @@ sGj
 bAY
 bAY
 apg
-bIw
+bIA
 bIS
 bJg
-bJo
-bJo
+bAY
+bAY
 apj
 aaa
 aae
@@ -47656,7 +47629,7 @@ bAY
 bHO
 bAY
 apg
-bIy
+bAY
 bAY
 bIJ
 pNc
@@ -48428,7 +48401,7 @@ bAY
 bAY
 apg
 bIA
-bIU
+bAY
 bJi
 bJq
 bJq
@@ -79445,7 +79418,7 @@ oVq
 dLM
 xTo
 jkI
-wsK
+tTH
 oVq
 sWt
 okh

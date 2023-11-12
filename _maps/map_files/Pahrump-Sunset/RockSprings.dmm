@@ -8832,7 +8832,6 @@
 /turf/open/floor/wood/wood_common,
 /area/f13/building)
 "iJY" = (
-/obj/machinery/atmospherics/components/unary/tank/air,
 /obj/effect/decal/cleanable/oil{
 	icon_state = "floor6";
 	pixel_x = -28
@@ -12014,7 +12013,6 @@
 	},
 /area/f13/building)
 "mli" = (
-/obj/machinery/atmospherics/components/unary/tank/air,
 /obj/effect/decal/cleanable/oil{
 	pixel_x = -8
 	},
@@ -21822,12 +21820,6 @@
 	name = "stone tile"
 	},
 /area/f13/building)
-"vDR" = (
-/obj/machinery/atmospherics/components/unary/tank,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticalrightborderright2bottom"
-	},
-/area/f13/wasteland/rocksprings)
 "vEa" = (
 /turf/closed/wall/f13/sunset/brick_small_dark,
 /area/f13/building)
@@ -46741,7 +46733,7 @@ iwy
 peo
 peo
 tEy
-vDR
+frF
 kSK
 gfv
 tjk
@@ -47769,7 +47761,7 @@ iwy
 peo
 peo
 tEy
-vDR
+frF
 xAH
 peo
 peo
