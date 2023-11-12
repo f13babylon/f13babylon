@@ -189,7 +189,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	req_admin_notify = 1
 	display_order = JOB_DISPLAY_ORDER_CENTURION
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13centurion
-	exp_requirements = 0
+	exp_requirements = 600
 
 	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
@@ -457,7 +457,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/gun/ballistic/revolver/m29 = 1,
 		/obj/item/ammo_box/m44 = 2,
 		/obj/item/grenade/f13/he_grenade = 2,
-		/obj/item/ammo_box/magazine/internal/rocketlauncher = 2,
+		/obj/item/ammo_casing/caseless/rocket = 2,
 		)
 
 

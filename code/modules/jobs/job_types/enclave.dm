@@ -52,14 +52,14 @@
 	title = "Enclave Captain"
 	flag = F13USLT
 	total_positions = 0
-	spawn_positions = 1
+	spawn_positions = 0
 	access = list(ACCESS_ENCLAVE, ACCESS_CHANGE_IDS, ACCESS_ENCLAVE_COMMAND, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
 	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. Your goal, primarily, is to collect organic material. Preferably alive, for the sake of testing. <br>\
 	Now that the lore is out of the way, just make the round fun. You set the policies and the attitude of the Enclave this week."
 	supervisors = "Enclave Upper Echelon."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavelt
 	req_admin_notify = 1
-	exp_requirements = 0
+	exp_requirements = 600
 
 	loadout_options = list(
 		/datum/outfit/loadout/cpt_ballistics, // G11E and Plasma Glock
@@ -451,13 +451,12 @@
 	mask = /obj/item/clothing/mask/gas/welding
 	gloves = /obj/item/clothing/gloves/color/yellow
 	head = /obj/item/clothing/head/hardhat/orange
-	suit_store = /obj/item/gun/ballistic/rocketlauncher
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 2,
 		/obj/item/storage/belt/utility = 1,
 		/obj/item/gun/ballistic/revolver/grenadelauncher = 1,
-		/obj/item/ammo_box/magazine/internal/grenadelauncher = 2
+		/obj/item/ammo_box/a40mmHEDP = 1,
 	)
 
 /datum/outfit/job/enclave/peacekeeper/f13specialist/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -470,7 +469,7 @@
 
 //Regular
 /datum/job/enclave/enclavespy
-	title = "Enclave Regular"
+	title = "Enclave Marine"
 	flag = F13USPRIVATE
 	total_positions = 4
 	spawn_positions = 4
@@ -480,7 +479,7 @@
 	exp_requirements = 0
 
 /datum/outfit/job/enclave/peacekeeper/enclavespy
-	name = "Enclave Regular"
+	name = "Enclave Marine"
 	jobtype = /datum/job/enclave/enclavespy
 	accessory = /obj/item/clothing/accessory/enclave/private_firstclass
 	head = /obj/item/clothing/head/helmet/f13/combat/enclave

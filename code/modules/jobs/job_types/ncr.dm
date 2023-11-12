@@ -151,7 +151,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	req_admin_notify = 1
 	display_order = JOB_DISPLAY_ORDER_CAPTAIN_NCR
 	outfit = /datum/outfit/job/ncr/f13captain
-	exp_requirements = 0
+	exp_requirements = 600
 
 	loadout_options = list(
 		/datum/outfit/loadout/ncrcptmelee,	// Lucky
@@ -757,7 +757,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
 
 /datum/outfit/job/ncr/f13heavytrooper	// Mk. 23, Bayonet, Heavy armor
-	name = "NCR Heavy Weapons"
+	name = "NCR Heavy Gunner"
 	jobtype	= /datum/job/ncr/f13heavytrooper
 	id = /obj/item/card/id/dogtag/ncrtrooper
 	uniform = /obj/item/clothing/under/f13/ncr
@@ -866,7 +866,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
 		/obj/item/gun/ballistic/revolver/grenadelauncher = 1,
-		/obj/item/book/granter/trait/explosives = 1
+		/obj/item/book/granter/trait/explosives = 1,
+		/obj/item/ammo_box/a40mmHEDP = 2,
 		)
 
 /datum/outfit/loadout/combatengineertrapper
@@ -1127,9 +1128,10 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/trooperrifleman
 	name = "Trail Trooper"
-	suit_store = /obj/item/gun/ballistic/rifle/repeater/trail
+	suit_store = /obj/item/gun/ballistic/automatic/service
 	backpack_contents = list(
-		/obj/item/ammo_box/tube/m44 = 2,
+		/obj/item/ammo_box/magazine/m556/rifle = 3,
+		/obj/item/melee/onehanded/knife/bayonet = 1,
 		)
 
 /datum/outfit/loadout/trooperfiresupport
@@ -1145,7 +1147,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "Hunting Trooper"
 	suit_store = /obj/item/gun/ballistic/rifle/hunting
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/internal/boltaction/hunting = 3,
+		/obj/item/ammo_box/a308 = 2,
 		)
 
 
@@ -1191,9 +1193,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/conscriptvarmint
 	name = "Assault"
-	suit_store = /obj/item/gun/ballistic/rifle/repeater/trail
+	suit_store = /obj/item/gun/ballistic/automatic/service
 	backpack_contents = list(
-		/obj/item/ammo_box/tube/m44 = 2,
+		/obj/item/ammo_box/magazine/m556/rifle = 3,
 		/obj/item/melee/onehanded/knife/bayonet = 1,
 		/obj/item/storage/box/ration/menu_two = 1,
 		)
