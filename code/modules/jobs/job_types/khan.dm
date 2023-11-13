@@ -72,7 +72,7 @@
 	description = "You are a Khan, atop being the senior of all within this camp. Maintain some manner of control and assure the Chemist doesn't blow their hands off."
 	supervisors = "the Senior Enforcer"
 	selection_color = "#ff915e"
-	exp_requirements = 750
+	exp_requirements = 0
 	exp_type = EXP_TYPE_KHAN
 	outfit = /datum/outfit/job/khan/senior_enforcer
 
@@ -89,7 +89,7 @@
 	description = "You are a Khan, a member of the local band that the Chief has sent to scout these lands. Listen to the Chemist, and assure you've a steady supply of caps for the Chief."
 	supervisors = "the Senior Enforcer"
 	selection_color = "#ff915e"
-	exp_requirements = 240
+	exp_requirements = 0
 	exp_type = EXP_TYPE_WASTELAND
 	outfit = /datum/outfit/job/khan/enforcer
 
@@ -109,7 +109,7 @@
 	supervisors = "the Senior Enforcer"
 	selection_color = "#ff915e"
 	req_admin_notify = 1
-	exp_requirements = 750
+	exp_requirements = 0
 	exp_type = EXP_TYPE_KHAN
 	outfit = /datum/outfit/job/khan/chemist
 
