@@ -102,6 +102,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	damage = 34
 	wound_bonus = 28
 	bare_wound_bonus = 24
+	armour_penetration = 0.12
 
 //.308 Winchester
 /obj/item/projectile/bullet/a762/sport
@@ -146,13 +147,13 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 /////////			-Very heavy rifle round.
 
 /obj/item/projectile/bullet/a50MG
-	damage = 75
-	armour_penetration = 1
+	damage = 38
+	armour_penetration = 0.75
 	pixels_per_second = 4000
 	zone_accuracy_factor = 100
-	wound_bonus = 60
-	bare_wound_bonus = 80//Same as the HMG.
-	supereffective_damage = 125
+	wound_bonus = 30
+	bare_wound_bonus = 40//Same as the HMG.
+	supereffective_damage = 62
 	supereffective_faction = list("hostile", "ant", "supermutant", "deathclaw", "cazador", "raider", "china", "gecko", "wastebot", "radscorpion")
 
 /obj/item/projectile/bullet/a50MG/incendiary
