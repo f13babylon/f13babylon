@@ -137,6 +137,11 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	roleplay_exclusive_notify = 1
 	exp_requirements = 0
 
+	loadout_options = list(
+			/datum/outfit/loadout/oratorm,
+			/datum/outfit/loadout/oratorf
+			)
+
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13orator
 	name = "Orator"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13orator
@@ -154,12 +159,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	l_hand = null
 	backpack_contents = list(
 		/obj/item/binoculars = 1,
-		/obj/item/ammo_box/a357 = 2,
-		/obj/item/reagent_containers/pill/patch/bitterdrink = 2,
-		/obj/item/book/granter/trait/iron_fist = 1,
-		/obj/item/book/granter/trait/bigleagues = 1,
-		/obj/item/stack/f13Cash/random/denarius/high = 3,
-		/obj/item/stack/f13Cash/random/aureus/high = 2,
+		/obj/item/ammo_box/magazine/m14mm = 1,
+		/obj/item/reagent_containers/pill/patch/bitterdrink = 2
 		)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13orator/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -170,6 +171,31 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 
+/datum/outfit/loadout/oratorm
+	name = "Orator"
+	suit = /obj/item/clothing/suit/armor/f13/legion/orator
+	head = /obj/item/clothing/head/helmet/f13/legion/orator
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/pistol14/orator
+	shoes = /obj/item/clothing/shoes/f13/military/plated
+	backpack_contents = list(
+		/obj/item/book/granter/trait/iron_fist = 1,
+		/obj/item/book/granter/trait/bigleagues = 1,
+		/obj/item/stack/f13Cash/random/denarius/high = 3,
+		/obj/item/stack/f13Cash/random/aureus/high = 2
+		)
+
+/datum/outfit/loadout/priestess
+	name = "Priestess of Mars"
+	uniform = /obj/item/clothing/under/f13/pmarsrobe
+	head = /obj/item/clothing/head/helmet/f13/legion/orator
+	shoes = /obj/item/clothing/shoes/roman
+	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/pistol/pistol14/orator = 1,
+		/obj/item/book/granter/trait/midsurgery = 1,
+		/obj/item/book/granter/trait/chemistry = 1,
+		/obj/item/book/granter/trait/legionalchemy = 1,
+		/obj/item/stack/f13Cash/random/denarius/high = 1
+		)
 
 /////////////////
 //// Officers ///
