@@ -283,8 +283,8 @@
 /datum/outfit/job/enclave/peacekeeper/enclavesgt
 	name = "Enclave Sergeant"
 	jobtype = /datum/job/enclave/enclavesgt
-	head = /obj/item/clothing/head/helmet/f13/power_armor/tesla
-	suit = /obj/item/clothing/suit/armor/f13/power_armor/tesla
+	head = /obj/item/clothing/head/helmet/f13/power_armor/x02helmet
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/x02
 	accessory = /obj/item/clothing/accessory/enclave/sergeant
 	l_pocket = /obj/item/clothing/mask/chameleon
 
@@ -348,8 +348,8 @@
 /datum/outfit/job/enclave/peacekeeper/enclavecpl
 	name = "Enclave Armored Infantry"
 	jobtype = /datum/job/enclave/enclavecpl
-	head = /obj/item/clothing/head/helmet/f13/power_armor/tesla
-	suit = /obj/item/clothing/suit/armor/f13/power_armor/tesla
+	head = /obj/item/clothing/head/helmet/f13/power_armor/x02helmet
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/x02
 	accessory = /obj/item/clothing/accessory/enclave/corporal
 	l_pocket = /obj/item/clothing/mask/chameleon
 

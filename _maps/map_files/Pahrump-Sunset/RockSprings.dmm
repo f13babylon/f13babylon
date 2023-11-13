@@ -9868,12 +9868,6 @@
 	icon_state = "bar"
 	},
 /area/f13/building)
-"jWm" = (
-/obj/item/mine/shrapnel{
-	alpha = 65
-	},
-/turf/open/indestructible/ground/outside/desert/harsh,
-/area/f13/wasteland/rocksprings)
 "jXf" = (
 /obj/effect/overlay/turfs/cliff{
 	dir = 4;
@@ -68095,7 +68089,7 @@ hgP
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -68859,7 +68853,7 @@ hgP
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -69624,7 +69618,6 @@ hgP
 hgP
 hgP
 hgP
-jWm
 hgP
 hgP
 hgP
@@ -69636,14 +69629,15 @@ hgP
 hgP
 hgP
 hgP
-jWm
 hgP
 hgP
 hgP
 hgP
 hgP
 hgP
-jWm
+hgP
+hgP
+hgP
 hgP
 hgP
 hgP
@@ -71439,7 +71433,7 @@ gCB
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -74088,7 +74082,7 @@ rTl
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -74279,7 +74273,7 @@ hgP
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -74331,7 +74325,7 @@ psz
 vTD
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -74853,7 +74847,7 @@ hgP
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -75890,7 +75884,7 @@ hgP
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -76129,7 +76123,7 @@ hgP
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -76583,7 +76577,7 @@ hgP
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -76635,7 +76629,7 @@ aAf
 paT
 qWV
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -76668,7 +76662,7 @@ hgP
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -77104,7 +77098,7 @@ hgP
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -78120,7 +78114,7 @@ hgP
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -78464,7 +78458,7 @@ hgP
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -78639,7 +78633,7 @@ hgP
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -78729,7 +78723,7 @@ hgP
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 nzH
@@ -78953,7 +78947,7 @@ hgP
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 pHb
 hgP
@@ -79643,7 +79637,7 @@ hgP
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -79674,7 +79668,7 @@ hgP
 kLZ
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -79891,7 +79885,6 @@ nzH
 hgP
 hgP
 hgP
-jWm
 hgP
 hgP
 hgP
@@ -79908,7 +79901,8 @@ hgP
 hgP
 hgP
 hgP
-jWm
+hgP
+hgP
 hgP
 hgP
 hgP
@@ -79974,7 +79968,7 @@ nzH
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -80911,7 +80905,6 @@ hgP
 hgP
 hgP
 hgP
-jWm
 hgP
 hgP
 hgP
@@ -80942,7 +80935,8 @@ hgP
 hgP
 hgP
 hgP
-jWm
+hgP
+hgP
 hgP
 hgP
 lof
@@ -81960,7 +81954,7 @@ hgP
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -82200,14 +82194,14 @@ hgP
 hgP
 hgP
 hgP
-jWm
 hgP
 hgP
 hgP
 hgP
 hgP
 hgP
-jWm
+hgP
+hgP
 hgP
 hgP
 hgP
@@ -83251,7 +83245,7 @@ hgP
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -83772,7 +83766,7 @@ hgP
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -84526,7 +84520,7 @@ hgP
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -84773,7 +84767,7 @@ hgP
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP
@@ -85818,7 +85812,7 @@ hgP
 hgP
 hgP
 hgP
-jWm
+hgP
 hgP
 hgP
 hgP

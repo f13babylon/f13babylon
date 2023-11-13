@@ -166,8 +166,8 @@ Head Paladin
 /datum/outfit/loadout/sentlaser
 	name = "Laser Senior Paladin"
 	backpack_contents = list(
-		/obj/item/minigunpack = 1,
-		/obj/item/stock_parts/cell/ammo/ec = 3,
+		/obj/item/encminigunpack = 1,
+		/obj/item/stock_parts/cell/ammo/ecp = 2,
 	)
 
 /datum/outfit/loadout/sentmelee
@@ -557,6 +557,7 @@ Senior Scribe
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE
+	ears = /obj/item/radio/headset/headset_bos
 	uniform =	/obj/item/clothing/under/syndicate/brotherhood
 	shoes =	/obj/item/clothing/shoes/combat
 	belt =	/obj/item/storage/belt/utility/full/engi
@@ -633,12 +634,13 @@ Scribe
 /datum/outfit/job/bos/f13scribe
 	name = "Scribe"
 	jobtype = /datum/job/bos/f13scribe
+	ears = /obj/item/radio/headset/headset_bos
 	uniform =		/obj/item/clothing/under/syndicate/brotherhood
 	shoes = 		/obj/item/clothing/shoes/combat
 	belt = 			/obj/item/storage/belt/utility/full/engi
 	suit = 			/obj/item/clothing/suit/f13/scribe
-	id = 			/obj/item/card/id/dogtag
 	glasses =		/obj/item/clothing/glasses/sunglasses/big
+	id = 			/obj/item/card/id/dogtag
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/survival=1,
 		/obj/item/storage/firstaid/regular=1,
@@ -676,7 +678,6 @@ Scribe
 		/obj/item/book/granter/trait/chemistry = 1
 	)
 
-/datum/outfit/job/bos/f13scribe/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 
 /datum/outfit/loadout/scribed
 	name = "Junior Scribe"

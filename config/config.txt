@@ -60,7 +60,7 @@ ADMIN_LEGACY_SYSTEM
 #BAN_LEGACY_SYSTEM
 
 ## Comment this out to stop locally connected clients from being given the almost full access !localhost! admin rank
-# ENABLE_LOCALHOST_RANK
+ENABLE_LOCALHOST_RANK
 
 ## Comment this out if you want to use the SQL based mentor system, the legacy system uses mentors.txt.
 ## You need to set up your database to use the SQL based system.
@@ -78,7 +78,7 @@ ADMIN_LEGACY_SYSTEM
 #USE_AGE_RESTRICTION_FOR_JOBS
 
 ## Uncomment the following line to enable the role whitelisting system.  You will also need the table from role_whitelist.sql in the SQL directory.
-USE_ROLE_WHITELIST
+# USE_ROLE_WHITELIST
 
 ## Uncomment this to have the job system use the player's account creation date, rather than the when they first joined the server for job timers.
 #USE_ACCOUNT_AGE_FOR_JOBS
@@ -534,7 +534,7 @@ DEFAULT_VIEW 15x15
 ### NOTE FOR LINUX HOSTS: This requires manual setup of iptables. Beware that improper configuration of this can and will irreversibly fuck up a server, so please don't tinker with it if you don't know what you're doing.
 ## Enabled
 # FAIL2TOPIC_ENABLED
-## Minimum wait time in deciseconds between valid requests 
+## Minimum wait time in deciseconds between valid requests
 FAIL2TOPIC_RATE_LIMIT 10
 ## Number of requests after breaching rate limit that triggers a ban
 FAIL2TOPIC_MAX_FAILS 5
