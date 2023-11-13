@@ -184,7 +184,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/stack/f13Cash/random/aureus/high = 2
 		)
 
-/datum/outfit/loadout/priestess
+/datum/outfit/loadout/oratorf
 	name = "Priestess of Mars"
 	uniform = /obj/item/clothing/under/f13/pmarsrobe
 	head = /obj/item/clothing/head/helmet/f13/legion/orator
