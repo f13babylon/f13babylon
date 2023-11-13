@@ -26,6 +26,7 @@
 	var/engine_on = 0
 	var/engine_on_sound = null
 	var/engine_loop_sound = null//not used.
+	var/has_engine = 0
 	var/datum/looping_sound/motorcycle/soundloop //Given we only use motorbikes, for now, we'll just use this.
 
 /obj/vehicle/New()
@@ -120,7 +121,7 @@
 /obj/vehicle/proc/after_remove_occupant(mob/M)
 
 /obj/vehicle/relaymove(mob/user, direction)
-	if(!engine_on)
+	if(!engine_on && has_engine)
 		return
 	if(is_driver(user))
 		return driver_move(user, direction)
