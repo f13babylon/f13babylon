@@ -611,6 +611,14 @@
 
 //Brotherhood of Steel (PA in f13armor.dm)
 
+/obj/item/clothing/suit/armor/f13/headofcastecoat
+	name = "Head of Caste's trenchcoat"
+	desc = "A thick coat with a fur inlay and soft armor padding, perfect for intimidating subordinates and captives alike."
+	icon_state = "hoccoat"
+	item_state = "hoccoat"
+	body_parts_covered = CHEST|GROIN|ARMS|LEGS
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 22, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 10)
+
 /obj/item/clothing/suit/armor/f13/headscribe
 	name = "brotherhood head scribe robe"
 	desc = " A red cloth robe with gold trimmings, worn eclusively by the Head Scribe of a chapter."
