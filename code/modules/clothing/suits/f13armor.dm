@@ -21,6 +21,9 @@
 /obj/item/clothing/suit/armor/f13
 	mutantrace_variation = NONE
 
+/obj/item/clothing/suit/toggle/armor/f13
+	mutantrace_variation = NONE
+
 //Leather and metal
 /obj/item/clothing/suit/armor/f13/leather_jacket
 	name = "leather jacket"
