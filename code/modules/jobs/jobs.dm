@@ -101,6 +101,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Legion Prime Decanus",
 "Prime Legionnaire",
 "Legion Recruit Decanus",
+"Legion Camp Follower",
 "Legion Scout",
 "Legion Auxilia",
 "Legion Slave",
