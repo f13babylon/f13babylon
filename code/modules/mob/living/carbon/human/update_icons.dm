@@ -302,7 +302,7 @@ There are several things that need to be remembered:
 		var/variation_flag = NONE
 		if((DIGITIGRADE in dna.species.species_traits) && S.mutantrace_variation & STYLE_DIGITIGRADE && !(S.mutantrace_variation & STYLE_NO_ANTHRO_ICON))
 			alt_icon = S.anthro_mob_worn_overlay || 'icons/mob/clothing/feet_digi.dmi'
-			variation_flag |= STYLE_DIGITIGRADE
+		variation_flag |= STYLE_DIGITIGRADE
 
 		overlays_standing[SHOES_LAYER] = shoes.build_worn_icon(SHOES_LAYER, alt_icon, FALSE, NO_FEMALE_UNIFORM, S.icon_state, variation_flag, FALSE)
 		var/mutable_appearance/shoes_overlay = overlays_standing[SHOES_LAYER]
