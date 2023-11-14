@@ -1,4 +1,5 @@
-#define AUXMOS (world.system_type == MS_WINDOWS ? "auxmos.dll" : __detect_auxmos())
+//#define AUXMOS (world.system_type == MS_WINDOWS ? "auxmos.dll" : __detect_auxmos())
+// all my homies HATE atmos is my space-station game!!!!
 
 /proc/__detect_auxmos()
 	var/static/auxmos_path

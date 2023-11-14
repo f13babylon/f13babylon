@@ -240,7 +240,6 @@
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10)
 	salvage_tool_behavior = TOOL_WELDER
 	/// Projectiles below this damage will get deflected
-	var/deflect_damage = 18
 	/// If TRUE - it requires PA training trait to be worn
 	var/requires_training = TRUE
 	/// If TRUE - the suit will give its user specific traits when worn
@@ -272,13 +271,6 @@
 	if(slot == SLOT_HEAD)
 		return ..()
 	return
-
-/obj/item/clothing/head/helmet/f13/power_armor/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
-	if((attack_type == ATTACK_TYPE_PROJECTILE) && (def_zone in protected_zones))
-		if(prob(70) && (damage < deflect_damage))
-			block_return[BLOCK_RETURN_REDIRECT_METHOD] = REDIRECT_METHOD_DEFLECT
-			return BLOCK_SHOULD_REDIRECT | BLOCK_REDIRECTED | BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
-	return ..()
 
 /obj/item/clothing/head/helmet/f13/power_armor/attackby(obj/item/I, mob/living/carbon/human/user, params)
 	if(ispath(salvaged_type))
@@ -521,8 +513,8 @@
 /obj/item/clothing/head/helmet/f13/power_armor/x02helmet
 	name = "APA Mk II helmet"
 	desc = "The Enclave Mark II Powered Combat Armor helmet."
-	icon_state = "x-01PA"
-	item_state = "x-01PA"
+	icon_state = "APAmk2"
+	item_state = "APAmk2"
 	slowdown = 0.1
 	armor = list("melee" = 80, "bullet" = 70, "laser" = 70, "energy" = 70, "bomb" = 70, "bio" = 100, "rad" = 100, "fire" = 70, "acid" = 50, "wound" = 50)
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)

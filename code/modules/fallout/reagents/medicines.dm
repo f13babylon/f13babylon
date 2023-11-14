@@ -308,31 +308,13 @@
 	reagent_state = LIQUID
 	color ="#A9FBFB"
 	taste_description = "bitterness"
-	metabolization_rate = 0.21 * REAGENTS_METABOLISM //in between powder/stimpaks and poultice/superstims?
+	metabolization_rate = 0.5 * REAGENTS_METABOLISM //in between powder/stimpaks and poultice/superstims?
 	overdose_threshold = 31
 	var/heal_factor = -5 //Subtractive multiplier if you do not have the perk.
 	var/heal_factor_perk = -5.5 //Multiplier if you have the right perk.
 	ghoulfriendly = TRUE
-	var/clot_rate = 0.15 //Tribal medicine is like smoking a joint and suddenly healing from fatal wounds. It doesn't work very well.
-	/// If we have multiple bleeding wounds, we count the number of bleeding wounds, then multiply the clot rate by this^(n) before applying it to each cut, so more cuts = less clotting per cut (though still more total clotting)
-	var/clot_coeff_per_wound = 0.9
 
 /datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/carbon/M)
-	for(var/thing in M.all_wounds)
-		var/datum/wound/W = thing
-		var/obj/item/bodypart/wounded_part = W.limb
-		if(wounded_part)
-			wounded_part.heal_damage(1, 1)//Tribal meds are way less efficient at this.
-	..()
-//THIS CHUNK OF CODE HANDLES CLOTTING WOUNDS!! THE ABOVE CODE MAKES IT HEAL LIMBS FASTER//
-	var/effective_clot_rate = clot_rate
-	for(var/i in M.all_wounds)
-		var/datum/wound/iter_wound = i
-		if(iter_wound.blood_flow)
-			effective_clot_rate *= clot_coeff_per_wound
-	for(var/i in M.all_wounds)
-		var/datum/wound/iter_wound = i
-		iter_wound.blood_flow = max(0, iter_wound.blood_flow - effective_clot_rate)
 	var/is_tribal = FALSE
 	if(HAS_TRAIT(M, TRAIT_TRIBAL))
 		is_tribal = TRUE
@@ -346,9 +328,9 @@
 		. = TRUE
 	..()
 
-/datum/reagent/medicine/bitter_drink/overdose_process(mob/living/carbon/M)
-	M.adjustToxLoss(1*REAGENTS_EFFECT_MULTIPLIER)
-	M.adjustOxyLoss(2*REAGENTS_EFFECT_MULTIPLIER)
+/datum/reagent/medicine/bitter_drink/overdose_process(mob/living/M)
+	M.adjustToxLoss(2*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
+	M.adjustOxyLoss(2*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
 	..()
 	. = TRUE
 
@@ -362,9 +344,9 @@
 	reagent_state = SOLID
 	color = "#A9FBFB"
 	taste_description = "bitterness"
-	metabolization_rate = 0.2 * REAGENTS_METABOLISM
+	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	overdose_threshold = 30
-	var/heal_factor = -2 //Subtractive multiplier if you do not have the perk.
+	var/heal_factor = -1.5 //Subtractive multiplier if you do not have the perk.
 	var/heal_factor_perk = -2.2 //Multiplier if you have the right perk.
 	ghoulfriendly = TRUE
 
@@ -373,15 +355,14 @@
 	if(HAS_TRAIT(M, TRAIT_TRIBAL))
 		is_tribal = TRUE
 	var/heal_rate = (is_tribal ? heal_factor_perk : heal_factor) * REAGENTS_EFFECT_MULTIPLIER
-	M.adjustFireLoss(heal_rate)
-	M.adjustBruteLoss(heal_rate)
-	M.adjustOxyLoss(heal_rate)
-	M.adjustToxLoss(heal_rate)
+	M.adjustFireLoss(heal_rate, updating_health = FALSE)
+	M.adjustBruteLoss(heal_rate, updating_health = FALSE)
+	M.adjustToxLoss(heal_rate, updating_health = FALSE)
 	M.hallucination = max(M.hallucination, is_tribal ? 0 : 5)
-	. = TRUE
 	..()
+	return TRUE // update health at end of tick
 
-/datum/reagent/medicine/healing_powder/reaction_mob(mob/living/carbon/M, method=TOUCH, reac_volume, show_message = 1)
+/datum/reagent/medicine/healing_powder/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
 		if(method in list(INGEST, VAPOR, INJECT))
 			M.adjustToxLoss(3*reac_volume*REAGENTS_EFFECT_MULTIPLIER) //also increased from 0.5, reduced from 6
@@ -389,11 +370,11 @@
 				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
 	..()
 
-/datum/reagent/medicine/healing_powder/overdose_process(mob/living/carbon/M)
-	M.adjustToxLoss(2*REAGENTS_EFFECT_MULTIPLIER)
-	M.adjustOxyLoss(4*REAGENTS_EFFECT_MULTIPLIER)
+/datum/reagent/medicine/healing_powder/overdose_process(mob/living/M)
+	M.adjustToxLoss(2*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
+	M.adjustOxyLoss(4*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
 	..()
-	. = TRUE
+	return TRUE // update health at end of tick
 
 // ---------------------------
 // HEALING POULTICE REAGENT
@@ -403,8 +384,6 @@
 	description = "Restores limb condition and heals rapidly."
 	color = "#C8A5DC"
 	overdose_threshold = 20
-	heal_factor = -2
-	heal_factor_perk = -2.2
 	heal_factor = -3.0
 	heal_factor_perk = -3.5
 

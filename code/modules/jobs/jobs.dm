@@ -49,10 +49,7 @@ GLOBAL_LIST_INIT(nonhuman_positions, list(
 	))
 
 GLOBAL_LIST_INIT(command_positions, list(
-	"Baron",
-	"Castellan",
-	"Knight-Commander",
-	"Keeper",
+	"Head Paladin",
 
 	"NCR Captain",
 	"NCR Veteran Ranger",
@@ -60,7 +57,6 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Legion Centurion",
 
 	"Sheriff",
-	"Sierra Representative",
 	"Mayor",
 
 	"Enclave Lieutenant",
@@ -83,19 +79,18 @@ GLOBAL_LIST_INIT(silicon_whitelist_positions, list(
 //NCR Assistant and Legion Camp Follower re-added to whitelisting.  BoS Initiate removed from whitelist.
 
 GLOBAL_LIST_INIT(faction_whitelist_positions, list(
-"Baron",
-"Castellan",
-"Knight-Commander",
-"Keeper",
-"Paladin Marshal",
+"Elder",
+"Head Paladin",
+"Head Knight",
+"Head Scribe",
+"Senior Paladin",
 "Paladin",
-"Knight-Captain",
+"Senior Knight",
 "Knight",
-"Librarian",
+"Senior Scribe",
 "Scribe",
 "Initiate",
 "BoS Off-Duty",
-"Inquisitorial Acolyte",
 
 "Legion Centurion",
 "Legion Venator",
@@ -106,30 +101,36 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Legion Prime Decanus",
 "Prime Legionnaire",
 "Legion Recruit Decanus",
+"Legion Camp Follower",
 "Legion Scout",
 "Legion Auxilia",
 "Legion Slave",
 
-"Shopkeeper",
+"Mayor",
+"Secretary",
+"Sheriff",
+"Deputy",
 "Sierra Representative",
+"Shopkeeper",
 "Mercenary",
+"Barkeep",
+"Preacher",
+"La Verkin Citizen",
 
+"Enclave Captain",
 "Enclave Lieutenant",
 "Enclave Gunnery Sergeant",
 "Enclave Sergeant",
-"Enclave Internal Security",
 "Enclave Specialist",
 "Enclave Scientist",
-"Enclave Private",
 "Enclave Pilot Officer",
+"Enclave Marine",
 "Enclave Bunker Duty",
-"Synthetic",
 
-"Noyan",
-"Steward",
-"Kheshig",
-"Khorchin",
-"Kipchak",
+"Khan Senior Enforcer",
+"Khan Enforcer",
+"Khan Chemist",
+"Khan Smith",
 
 "Raider",
 
@@ -142,19 +143,18 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 ))
 
 GLOBAL_LIST_INIT(brotherhood_positions, list(
-	"Baron",
-	"Castellan",
-	"Knight-Commander",
-	"Keeper",
-	"Paladin Marshal",
+	"Elder",
+	"Head Paladin",
+	"Head Knight",
+	"Head Scribe",
+	"Senior Paladin",
 	"Paladin",
-	"Knight-Captain",
+	"Senior Knight",
 	"Knight",
-	"Librarian",
+	"Senior Scribe",
 	"Scribe",
-	"BoS Off-Duty",
 	"Initiate",
-	"Inquisitorial Acolyte",
+	"BoS Off-Duty"
 ))
 
 GLOBAL_LIST_INIT(bighorn_positions, list(
@@ -167,7 +167,7 @@ GLOBAL_LIST_INIT(bighorn_positions, list(
 	"Mercenary",
 	"Barkeep",
 	"Preacher",
-	"Citizen",
+	"La Verkin Citizen",
 
 ))
 
@@ -208,8 +208,7 @@ GLOBAL_LIST_INIT(ncr_positions, list(
 	"NCR Veteran Ranger",
 	"NCR Representative",
 	"NCR Ranger",
-	"NCR Sergeant First Class",
-	"NCR Heavy Trooper",
+	"NCR Heavy Gunner",
 	"NCR Military Police",
 	"NCR Senior Enlisted Advisor",
 	"NCR Sergeant",
@@ -219,6 +218,7 @@ GLOBAL_LIST_INIT(ncr_positions, list(
 	"NCR Trooper",
 	"NCR Conscript",
 	"NCR Medical Officer",
+	"NCR Quartermaster",
 	"NCR Logistics Officer",
 	"NCR Rear Echelon",
 ))
@@ -251,16 +251,15 @@ GLOBAL_LIST_INIT(khan_positions, list(
 ))
 
 GLOBAL_LIST_INIT(enclave_positions, list(
+	"Enclave Captain",
 	"Enclave Lieutenant",
-	"Enclave Platoon Sergeant",
+	"Enclave Gunnery Sergeant",
 	"Enclave Sergeant",
-	"Enclave Internal Security",
 	"Enclave Specialist",
 	"Enclave Scientist",
 	"Enclave Pilot Officer",
-	"Enclave Private",
+	"Enclave Marine",
 	"Enclave Bunker Duty",
-	"Synthetic",
 ))
 
 GLOBAL_LIST_INIT(security_positions, list(

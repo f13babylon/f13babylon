@@ -23,6 +23,7 @@ GLOBAL_LIST_INIT(auxtools_atmos_initialized,FALSE)
 	__gasmixture_register()
 
 /datum/gas_mixture/New(volume)
+	/*
 	if (!isnull(volume))
 		initial_volume = volume
 	if(!GLOB.auxtools_atmos_initialized)
@@ -31,6 +32,8 @@ GLOBAL_LIST_INIT(auxtools_atmos_initialized,FALSE)
 			GLOB.auxtools_atmos_initialized = TRUE
 	gasmixture_register_wrapper()
 	reaction_results = new
+	*/
+	return
 
 /datum/gas_mixture/vv_edit_var(var_name, var_value)
 	if(var_name == NAMEOF(src, _extools_pointer_gasmixture))

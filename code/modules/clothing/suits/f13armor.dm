@@ -294,8 +294,6 @@
 	var/no_power = FALSE
 	/// How much slowdown is added when suit is unpowered
 	var/unpowered_slowdown = 1.2
-	/// Projectiles below this damage will get deflected
-	var/deflect_damage = 18
 	/// If TRUE - it requires PA training trait to be worn
 	var/requires_training = TRUE
 	/// If TRUE - the suit will give its user specific traits when worn
@@ -570,13 +568,6 @@
 		to_chat(L, "<span class='warning'>Armor power reroute successful. All systems operational.</span>")
 		L.update_equipment_speed_mods()
 
-/obj/item/clothing/suit/armor/f13/power_armor/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
-	if((attack_type == ATTACK_TYPE_PROJECTILE) && (def_zone in protected_zones))
-		if(prob(70) && (damage < deflect_damage) && (armour_penetration <= 0)) // Weak projectiles like shrapnel get deflected
-			block_return[BLOCK_RETURN_REDIRECT_METHOD] = REDIRECT_METHOD_DEFLECT
-			return BLOCK_SHOULD_REDIRECT | BLOCK_REDIRECTED | BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
-	return ..()
-
 /obj/item/clothing/suit/armor/f13/power_armor/t45b
 	name = "T-45b power armor"
 	desc = "It's a set of early-model T-45 power armor with a custom air conditioning module and restored servomotors. Bulky, but almost as good as the real thing."
@@ -734,8 +725,8 @@
 /obj/item/clothing/suit/armor/f13/power_armor/x02
 	name = "APA Mk II"
 	desc = "Upgraded pre-war power armor design used by the Enclave."
-	icon_state = "x-01PA"
-	item_state = "x-01PA"
+	icon_state = "APAmk2"
+	item_state = "APAmk2"
 	slowdown = 0.3//Worst slowdown of all combat sets.
 	armor = list("melee" = 70, "bullet" = 70, "laser" = 70, "energy" = 70, "bomb" = 70, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 50)
 	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/x02 // Oh the misery

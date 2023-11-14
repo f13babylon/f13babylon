@@ -205,8 +205,8 @@
 
 /obj/item/projectile/bullet/pellet/magnum_buckshot
 	name = "magnum buckshot pellet"
-	damage = 15
-	armour_penetration = 0.15
+	damage = 13
+	armour_penetration = 0.10
 	wound_bonus = 10
 	bare_wound_bonus = 10
 

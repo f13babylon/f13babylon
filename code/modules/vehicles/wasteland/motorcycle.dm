@@ -15,6 +15,7 @@
 	var/static/mutable_appearance/motorcycle
 //	var/datum_type = /datum/riding/motorcycle
 	engine_on_sound = 'sound/f13machines/bike_start.ogg'
+	has_engine = 1
 	engine_loop_sound = 'sound/f13machines/bike_loop.ogg'
 
 /obj/vehicle/ridden/fuel/motorcycle/Initialize(mapload)

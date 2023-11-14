@@ -92,22 +92,6 @@
 
 //Sources; life.dm process_organs
 /obj/item/organ/proc/on_death() //Runs when outside AND inside.
-	decay()
-
-//Applys the slow damage over time decay
-/obj/item/organ/proc/decay()
-	if(!can_decay())
-		STOP_PROCESSING(SSobj, src)
-		return
-	is_cold()
-	if(organ_flags & ORGAN_FROZEN)
-		return
-	applyOrganDamage(maxHealth * decay_factor)
-
-/obj/item/organ/proc/can_decay()
-	if(CHECK_BITFIELD(organ_flags, ORGAN_NO_SPOIL | ORGAN_SYNTHETIC | ORGAN_FAILING))
-		return FALSE
-	return TRUE
 
 //Checks to see if the organ is frozen from temperature
 /obj/item/organ/proc/is_cold()

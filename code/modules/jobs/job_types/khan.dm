@@ -72,7 +72,7 @@
 	description = "You are a Khan, atop being the senior of all within this camp. Maintain some manner of control and assure the Chemist doesn't blow their hands off."
 	supervisors = "the Senior Enforcer"
 	selection_color = "#ff915e"
-	exp_requirements = 750
+	exp_requirements = 0
 	exp_type = EXP_TYPE_KHAN
 	outfit = /datum/outfit/job/khan/senior_enforcer
 
@@ -89,7 +89,7 @@
 	description = "You are a Khan, a member of the local band that the Chief has sent to scout these lands. Listen to the Chemist, and assure you've a steady supply of caps for the Chief."
 	supervisors = "the Senior Enforcer"
 	selection_color = "#ff915e"
-	exp_requirements = 240
+	exp_requirements = 0
 	exp_type = EXP_TYPE_WASTELAND
 	outfit = /datum/outfit/job/khan/enforcer
 
@@ -109,7 +109,7 @@
 	supervisors = "the Senior Enforcer"
 	selection_color = "#ff915e"
 	req_admin_notify = 1
-	exp_requirements = 750
+	exp_requirements = 0
 	exp_type = EXP_TYPE_KHAN
 	outfit = /datum/outfit/job/khan/chemist
 
@@ -231,16 +231,13 @@
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, REF(src))
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/dks)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gladius)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/spatha)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/lance)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/lever_action)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/grease_gun)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/brush)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingshotgun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/concussion)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/strongrocket)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/empgrenade)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/xbow)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/cheaparrow)

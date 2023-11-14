@@ -205,14 +205,16 @@
 /obj/machinery/portable_atmospherics/canister/New(loc, datum/gas_mixture/existing_mixture)
 	..()
 
-	if(existing_mixture)
-		air_contents.copy_from(existing_mixture)
-	else
-		create_gas()
-	update_icon()
+	//if(existing_mixture)
+	//	air_contents.copy_from(existing_mixture)
+	//else
+	//	create_gas()
+	//update_icon()
 
 
 /obj/machinery/portable_atmospherics/canister/proc/create_gas()
+	return TRUE
+	/*
 	if(gas_type)
 		// air_contents.add_gas(gas_type)
 		if(starter_temp)
@@ -224,7 +226,7 @@
 /obj/machinery/portable_atmospherics/canister/air/create_gas()
 	air_contents.set_moles(GAS_O2, (O2STANDARD * maximum_pressure * filled) * air_contents.return_volume() / (R_IDEAL_GAS_EQUATION * air_contents.return_temperature()))
 	air_contents.set_moles(GAS_N2, (N2STANDARD * maximum_pressure * filled) * air_contents.return_volume() / (R_IDEAL_GAS_EQUATION * air_contents.return_temperature()))
-
+*/
 /obj/machinery/portable_atmospherics/canister/update_icon_state()
 	if(stat & BROKEN)
 		icon_state = "[icon_state]-1"

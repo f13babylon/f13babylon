@@ -187,7 +187,7 @@
 	fire_delay = 10 //More or less the AMR's firing delay. To prevent instant reload firing.
 	force = 10
 	slowdown = 0.1
-	extra_damage = 5
+	extra_damage = 4
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 
 /obj/item/gun/ballistic/revolver/singleshotgun/axe
@@ -198,7 +198,7 @@
 	force = 35
 	armour_penetration = 0.1 //Not for the bullet. This is the gun.
 	wound_bonus = 15 //Same as above
-	extra_damage = 2.5 //Half of parent
+	extra_damage = 2 //Half of parent
 	icon_prefix = "pardneraxe"
 
 //Hunting shotgun				Keywords: Shotgun, Pump-action, 4 rounds
