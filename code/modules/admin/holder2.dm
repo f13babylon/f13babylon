@@ -126,9 +126,7 @@ GLOBAL_PROTECT(href_token)
 		return
 	if(owner)
 		GLOB.admins -= owner
-		if(check_rights(owner,R_ASAY)) //How it should have been done - Babylon change.
-			GLOB.adminchat -= owner //Babylon add
-			return
+		GLOB.adminchat -= owner //Babylon add
 		owner.remove_admin_verbs()
 		owner.init_verbs()
 		owner.holder = null
