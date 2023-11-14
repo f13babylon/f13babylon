@@ -153,7 +153,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	zone_accuracy_factor = 100
 	wound_bonus = 30
 	bare_wound_bonus = 40//Same as the HMG.
-	supereffective_damage = 62
+	supereffective_damage = 60
 	supereffective_faction = list("hostile", "ant", "supermutant", "deathclaw", "cazador", "raider", "china", "gecko", "wastebot", "radscorpion")
 
 /obj/item/projectile/bullet/a50MG/incendiary
