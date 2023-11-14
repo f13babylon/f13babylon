@@ -480,6 +480,6 @@
 
 /obj/item/clothing/head/helmet/armyhelmet/heavy/ncra
 	name = "NCR heavy steel helmet"
-	desc = "A visor'd steel helmet, inspired by pre-War designs. This one is coloured in tan, and is usually worn by Heavy Gunners of the New California Republic Army."
+	desc = "A reinforced NCR trooper helmet with a visor. Usually seen to be worn by Heavy Gunners of the New California Republic Army."
 	icon_state = "ncrarmyhelmetheavy"
 	item_state = "ncrarmyhelmetheavy"
