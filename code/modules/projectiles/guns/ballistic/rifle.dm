@@ -347,13 +347,6 @@
 	..()
 	if(HAS_TRAIT(user, TRAIT_FAST_PUMP))
 		src.pump(user)
-	if((prob(95) && !zoomed))
-		var/mob/living/carbon/human/H = user
-		playsound(loc, 'sound/f13effects/surrender.ogg', 100, 1)
-		shake_camera(user, recoil + 1, recoil)
-		to_chat(user, "<span class ='danger'>You attempt to fire the rifle from the hip unprepared, tossing you to the ground!</span>")
-		H.visible_message("<span class='danger'>[H] drops to the floor from recoil as they fire unprepared!</span>")
-		user.Knockdown(60)
 
 // BETA // Obsolete
 /obj/item/gun/ballistic/rifle/rifletesting
