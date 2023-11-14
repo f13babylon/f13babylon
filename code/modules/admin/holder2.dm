@@ -114,7 +114,9 @@ GLOBAL_PROTECT(href_token)
 		remove_verb(owner, /client/proc/readmin)
 		owner.init_verbs() //re-initialize the verb list
 		GLOB.admins |= C
-		GLOB.adminchat |= C //fortuna add
+		if(owner.check_rights(R_ASAY)) //How it should have been done - Babylon change.
+			GLOB.adminchat |= C //Babylon add
+			return
 
 /datum/admins/proc/disassociate()
 	if(IsAdminAdvancedProcCall())
@@ -124,7 +126,9 @@ GLOBAL_PROTECT(href_token)
 		return
 	if(owner)
 		GLOB.admins -= owner
-		GLOB.adminchat -= owner //fortuna add
+		if(owner.check_rights(R_ASAY)) //How it should have been done - Babylon change.
+			GLOB.adminchat -= owner //Babylon add
+			return
 		owner.remove_admin_verbs()
 		owner.init_verbs()
 		owner.holder = null
