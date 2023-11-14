@@ -10,7 +10,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 	var/default_color = "#FFFFFF"	// if alien colors are disabled, this is the color that will be used by that race
 
 	var/sexes = 1 // whether or not the race has sexual characteristics. at the moment this is only 0 for skeletons and shadows
-	var/has_field_of_vision = TRUE
+	var/has_field_of_vision = FALSE
 
 	//Species Icon Drawing Offsets - Pixel X, Pixel Y, Aka X = Horizontal and Y = Vertical, from bottom left corner
 	var/list/offset_features = list(
@@ -1421,7 +1421,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			if(2000 to 3000)
 				H.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/damage_slowdown, TRUE, multiplicative_slowdown = 1.5)
 			if(3000 to INFINITY)
-				H.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/damage_slowdown, TRUE, multiplicative_slowdown = 2.5)	
+				H.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/damage_slowdown, TRUE, multiplicative_slowdown = 2.5)
 
 	if(radiation > RAD_MOB_KNOCKDOWN && prob(RAD_MOB_KNOCKDOWN_PROB))
 		if(CHECK_MOBILITY(H, MOBILITY_STAND))
