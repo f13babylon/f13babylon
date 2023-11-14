@@ -19,7 +19,7 @@
 
 // Temporal fix until digitigrade-adapted sprites are done
 /obj/item/clothing/suit/armor/f13
-	mutantrace_variation = FALSE
+	mutantrace_variation = NONE
 
 //Leather and metal
 /obj/item/clothing/suit/armor/f13/leather_jacket

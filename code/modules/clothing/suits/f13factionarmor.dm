@@ -2,6 +2,7 @@
 //PLEASE PUT CUSTOM ARMORS IN f13armor.dm. All power armors are found in f13armor.dm.
 
 //Raider
+
 /obj/item/clothing/suit/armor/f13/raider
 	name = "base raider armor"
 	desc = "for testing"

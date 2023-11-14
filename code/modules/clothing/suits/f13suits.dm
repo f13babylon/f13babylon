@@ -12,7 +12,7 @@
 	var/togglename = null
 	var/suittoggled = FALSE
 	limb_integrity = 0 // disabled for most exo-suits
-	mutantrace_variation = STYLE_DIGITIGRADE
+	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/Initialize(mapload)
 	. = ..()
