@@ -114,7 +114,7 @@ GLOBAL_PROTECT(href_token)
 		remove_verb(owner, /client/proc/readmin)
 		owner.init_verbs() //re-initialize the verb list
 		GLOB.admins |= C
-		if(owner.check_rights(R_ASAY)) //How it should have been done - Babylon change.
+		if(owner.check_rights(owner,R_ASAY)) //How it should have been done - Babylon change.
 			GLOB.adminchat |= C //Babylon add
 			return
 
@@ -126,7 +126,7 @@ GLOBAL_PROTECT(href_token)
 		return
 	if(owner)
 		GLOB.admins -= owner
-		if(owner.check_rights(R_ASAY)) //How it should have been done - Babylon change.
+		if(check_rights(owner,R_ASAY)) //How it should have been done - Babylon change.
 			GLOB.adminchat -= owner //Babylon add
 			return
 		owner.remove_admin_verbs()
