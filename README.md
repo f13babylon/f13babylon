@@ -1,5 +1,5 @@
-## Sunset Wasteland
-Based and maintained from Citadel Station by way of Desert Rose, Fortuna and The Wasteland.
+## New Babylon
+Based and maintained from Citadel Station by way of Desert Rose, Fortuna, The Wasteland, and Sunset Wasteland.
 
 [![CI Suite](https://isitmaintained.com/project/sunset-wasteland/sunset-wasteland/actions/workflows/ci_suite.yml/badge.svg?branch=master&event=push)](https://isitmaintained.com/project/sunset-wasteland/sunset-wasteland/actions/workflows/ci_suite.yml)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/sunset-wasteland/sunset-wasteland.svg)](https://isitmaintained.com/project/sunset-wasteland/sunset-wasteland "Percentage of issues still open")
