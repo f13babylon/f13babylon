@@ -976,21 +976,21 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 // Immunes are mostly an off-duty role meant to attend to the camp itself and the slaves or prisoners within.
 
-/datum/job/CaesarsLegion/Legionnaire/f13campfollower
+/datum/job/CaesarsLegion/Legionnaire/immune
 	title = "Legion Camp Follower"
-	flag = F13CAMPFOLLOWER
-	total_positions = 3
+	flag = F13IMMUNE
+	total_positions = 4
 	spawn_positions = 1
 	description = "An Immune is a legionnaire temporarily assigned to keeping the camp in order, according to their tasking on any given week."
 	supervisors = "the Centurion."
 	display_order = JOB_DISPLAY_ORDER_IMMUNE
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower
+	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/immune
 	roleplay_exclusive_notify = 1
 	exp_requirements = 0
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower
+/datum/outfit/job/CaesarsLegion/Legionnaire/immune
 	name = "Camp Follower"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13campfollower
+	jobtype = /datum/job/CaesarsLegion/Legionnaire/immune
 	id = /obj/item/card/id/dogtag/legimmune
 	mask = /obj/item/clothing/mask/bandana/legion/camp
 	uniform = /obj/item/clothing/under/f13/legskirt
@@ -1003,7 +1003,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/reagent_containers/pill/patch/healingpowder = 2
 		)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionnaire/immune/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
