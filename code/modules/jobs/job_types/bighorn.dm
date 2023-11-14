@@ -168,7 +168,7 @@ Mayor
 /*--------------------------------------------------------------*/
 
 /datum/job/bighorn/f13barkeep
-	title = "Town Barkeep"
+	title = "Barkeep"
 	flag = F13BARKEEP
 	department_flag = DEP_BIGHORN
 	total_positions = 2
