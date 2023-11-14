@@ -52,7 +52,7 @@
 	title = "Enclave Captain"
 	flag = F13USLT
 	total_positions = 0
-	spawn_positions = 1
+	spawn_positions = 0
 	access = list(ACCESS_ENCLAVE, ACCESS_CHANGE_IDS, ACCESS_ENCLAVE_COMMAND, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
 	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. Your goal, primarily, is to collect organic material. Preferably alive, for the sake of testing. <br>\
 	Now that the lore is out of the way, just make the round fun. You set the policies and the attitude of the Enclave this week."
@@ -283,8 +283,8 @@
 /datum/outfit/job/enclave/peacekeeper/enclavesgt
 	name = "Enclave Sergeant"
 	jobtype = /datum/job/enclave/enclavesgt
-	head = /obj/item/clothing/head/helmet/f13/power_armor/tesla
-	suit = /obj/item/clothing/suit/armor/f13/power_armor/tesla
+	head = /obj/item/clothing/head/helmet/f13/power_armor/x02helmet
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/x02
 	accessory = /obj/item/clothing/accessory/enclave/sergeant
 	l_pocket = /obj/item/clothing/mask/chameleon
 
@@ -348,8 +348,8 @@
 /datum/outfit/job/enclave/peacekeeper/enclavecpl
 	name = "Enclave Armored Infantry"
 	jobtype = /datum/job/enclave/enclavecpl
-	head = /obj/item/clothing/head/helmet/f13/power_armor/tesla
-	suit = /obj/item/clothing/suit/armor/f13/power_armor/tesla
+	head = /obj/item/clothing/head/helmet/f13/power_armor/x02helmet
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/x02
 	accessory = /obj/item/clothing/accessory/enclave/corporal
 	l_pocket = /obj/item/clothing/mask/chameleon
 
@@ -469,7 +469,7 @@
 
 //Regular
 /datum/job/enclave/enclavespy
-	title = "Enclave Regular"
+	title = "Enclave Marine"
 	flag = F13USPRIVATE
 	total_positions = 4
 	spawn_positions = 4
@@ -479,7 +479,7 @@
 	exp_requirements = 0
 
 /datum/outfit/job/enclave/peacekeeper/enclavespy
-	name = "Enclave Regular"
+	name = "Enclave Marine"
 	jobtype = /datum/job/enclave/enclavespy
 	accessory = /obj/item/clothing/accessory/enclave/private_firstclass
 	head = /obj/item/clothing/head/helmet/f13/combat/enclave

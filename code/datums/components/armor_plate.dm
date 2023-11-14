@@ -88,3 +88,5 @@
 			overlay_string += "-open"
 		overlays += overlay_string
 
+/datum/component/armor_plate/weak
+	added_armor = list("melee" = 1, "bullet" = 1, "laser" = 1)

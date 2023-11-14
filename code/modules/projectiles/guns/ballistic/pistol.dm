@@ -381,13 +381,13 @@
 //Mortifer						Keywords: UNIQUE, 14mm, Semi-auto, 7 rounds, Heavy.
 /obj/item/gun/ballistic/automatic/pistol/pistol14/orator
 	name = "Mortifer"
-	desc = "A long-barreled SIG P-127 custom-built by an experienced Legion technician, used for executions. The black leather-wrapped handle has a golden laurel wreath on each side."
+	desc = "A long-barreled SIG P-127 custom-built by an experienced Legion technician, used for executions and ceremonies. The black leather-wrapped handle has a golden laurel wreath on each side."
 	icon_state = "mortifer"
 	mag_type = /obj/item/ammo_box/magazine/m14mm
+	force = 25
 	fire_delay = 15
 	icon_state = "nexus"
-	recoil = 5.5
-	extra_damage = 20
+	recoil = 2
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
 
 //Bible Dog M1911					Keywords: UNIQUE, .45, Semi-auto, 7 rounds, Heavy.

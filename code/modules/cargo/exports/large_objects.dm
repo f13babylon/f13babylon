@@ -85,7 +85,7 @@
 /datum/export/large/laser/gatlinglaser
 	cost = 3000
 	unit_name = "laser gatling gun"
-	export_types = list(/obj/item/gun/energy/minigun)
+	export_types = list(/obj/item/encminigunpack)
 
 /datum/export/large/fev/FEV_solution_one
 	cost = 9000

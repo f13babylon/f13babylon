@@ -79,6 +79,7 @@ GLOBAL_LIST_INIT(silicon_whitelist_positions, list(
 //NCR Assistant and Legion Camp Follower re-added to whitelisting.  BoS Initiate removed from whitelist.
 
 GLOBAL_LIST_INIT(faction_whitelist_positions, list(
+"Elder",
 "Head Paladin",
 "Head Knight",
 "Head Scribe",
@@ -100,6 +101,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Legion Prime Decanus",
 "Prime Legionnaire",
 "Legion Recruit Decanus",
+"Legion Camp Follower",
 "Legion Scout",
 "Legion Auxilia",
 "Legion Slave",
@@ -113,18 +115,17 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Mercenary",
 "Barkeep",
 "Preacher",
-"Citizen",
+"La Verkin Citizen",
 
+"Enclave Captain",
 "Enclave Lieutenant",
 "Enclave Gunnery Sergeant",
 "Enclave Sergeant",
-"Enclave Internal Security",
 "Enclave Specialist",
 "Enclave Scientist",
-"Enclave Private",
 "Enclave Pilot Officer",
+"Enclave Marine",
 "Enclave Bunker Duty",
-"Synthetic",
 
 "Khan Senior Enforcer",
 "Khan Enforcer",
@@ -142,6 +143,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 ))
 
 GLOBAL_LIST_INIT(brotherhood_positions, list(
+	"Elder",
 	"Head Paladin",
 	"Head Knight",
 	"Head Scribe",
@@ -165,7 +167,7 @@ GLOBAL_LIST_INIT(bighorn_positions, list(
 	"Mercenary",
 	"Barkeep",
 	"Preacher",
-	"Citizen",
+	"La Verkin Citizen",
 
 ))
 
@@ -206,8 +208,7 @@ GLOBAL_LIST_INIT(ncr_positions, list(
 	"NCR Veteran Ranger",
 	"NCR Representative",
 	"NCR Ranger",
-	"NCR Sergeant First Class",
-	"NCR Heavy Trooper",
+	"NCR Heavy Gunner",
 	"NCR Military Police",
 	"NCR Senior Enlisted Advisor",
 	"NCR Sergeant",
@@ -217,6 +218,7 @@ GLOBAL_LIST_INIT(ncr_positions, list(
 	"NCR Trooper",
 	"NCR Conscript",
 	"NCR Medical Officer",
+	"NCR Quartermaster",
 	"NCR Logistics Officer",
 	"NCR Rear Echelon",
 ))
@@ -249,16 +251,15 @@ GLOBAL_LIST_INIT(khan_positions, list(
 ))
 
 GLOBAL_LIST_INIT(enclave_positions, list(
+	"Enclave Captain",
 	"Enclave Lieutenant",
-	"Enclave Platoon Sergeant",
+	"Enclave Gunnery Sergeant",
 	"Enclave Sergeant",
-	"Enclave Internal Security",
 	"Enclave Specialist",
 	"Enclave Scientist",
 	"Enclave Pilot Officer",
-	"Enclave Private",
+	"Enclave Marine",
 	"Enclave Bunker Duty",
-	"Synthetic",
 ))
 
 GLOBAL_LIST_INIT(security_positions, list(

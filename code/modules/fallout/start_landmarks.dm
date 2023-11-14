@@ -20,7 +20,7 @@
 	icon_state = "NCR Lieutenant"
 
 /obj/effect/landmark/start/f13/ncrlogisticsofficer
-	name = "NCR Logistics Officer"
+	name = "NCR Quartermaster"
 	icon_state = "NCR Lieutenant"
 
 /obj/effect/landmark/start/f13/ncrmedofficer
@@ -40,7 +40,7 @@
 	icon_state = "NCR Sergeant"
 
 /obj/effect/landmark/start/f13/ncrheavytrooper
-	name = "NCR Heavy Trooper"
+	name = "NCR Heavy Gunner"
 	icon_state = "NCR Sergeant"
 
 /obj/effect/landmark/start/f13/ncrcorporal
@@ -160,31 +160,31 @@
 // Brotherhood of Steel
 
 /obj/effect/landmark/start/f13/elder
-	name = "Baron"
+	name = "Elder"
 	icon_state = "Elder"
 
 /obj/effect/landmark/start/f13/headscribe
-	name = "Keeper"
+	name = "Head Scribe"
 	icon_state = "Scribe"
 
 /obj/effect/landmark/start/f13/seniorscribe
-	name = "Librarian"
+	name = "Senior Scribe"
 	icon_state = "Scribe"
 
 /obj/effect/landmark/start/f13/sentinel
-	name = "Castellan"
+	name = "Head Paladin"
 	icon_state = "Paladin"
 
 /obj/effect/landmark/start/f13/knightcap
-	name = "Knight-Commander"
+	name = "Head Knight"
 	icon_state = "Knight"
 
 /obj/effect/landmark/start/f13/seniorknight
-	name = "Knight-Captain"
+	name = "Senior Knight"
 	icon_state = "Knight"
 
 /obj/effect/landmark/start/f13/seniorpaladin
-	name = "Paladin Marshal"
+	name = "Senior Paladin"
 	icon_state = "Knight"
 
 /obj/effect/landmark/start/f13/paladin
@@ -266,7 +266,7 @@
 	name = "Prospector"
 
 /obj/effect/landmark/start/f13/settler
-	name = "Citizen"
+	name = "La Verkin Citizen"
 	icon_state = "Settler"
 
 /obj/effect/landmark/start/f13/dendoc
@@ -338,7 +338,7 @@
 
 // Enclave
 /obj/effect/landmark/start/f13/usspy
-	name = "Enclave Private"
+	name = "Enclave Marine"
 	icon_state = "uspvt"
 
 /obj/effect/landmark/start/f13/uslt
@@ -362,7 +362,7 @@
 	icon_state = "usscientist"
 
 /obj/effect/landmark/start/f13/usgysgt
-	name = "Enclave Platoon Sergeant"
+	name = "Enclave Gunnery Sergeant"
 	icon_state = "usgunnery"
 
 /obj/effect/landmark/start/f13/uslightduty

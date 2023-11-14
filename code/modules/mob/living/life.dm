@@ -12,7 +12,7 @@
 	//	src.health += (src.special_e*3)//SPECIAL Integration
 	//	update_special_speed((5-src.special_a)/20)//SPECIAL Integration
 	//	SPECIAL_SET = TRUE
-	
+
 	//SHOULD_NOT_SLEEP(TRUE)
 	if(mob_transforming)
 		return
@@ -99,11 +99,11 @@
 	if(!loc)
 		return FALSE
 
-	var/datum/gas_mixture/environment = loc.return_air()
+	//var/datum/gas_mixture/environment = loc.return_air()
 
 	//Handle temperature/pressure differences between body and environment
-	if(environment)
-		handle_environment(environment)
+	//if(environment)
+		//handle_environment(environment)
 
 	handle_fire()
 
@@ -151,11 +151,11 @@
 		ExtinguishMob()
 		return
 	var/datum/gas_mixture/G = loc.return_air() // Check if we're standing in an oxygenless environment
-	if(!G.get_moles(GAS_O2, 1))
+	/*if(!G.get_moles(GAS_O2, 1))
 		ExtinguishMob() //If there's no oxygen in the tile we're on, put out the fire
 		return
 	var/turf/location = get_turf(src)
-	location.hotspot_expose(700, 10, 1)
+	location.hotspot_expose(700, 10, 1)*/
 
 /mob/living/proc/handle_stomach()
 	return

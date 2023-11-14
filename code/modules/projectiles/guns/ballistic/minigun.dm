@@ -146,20 +146,19 @@
 		if(ammo_pack.overheat > ammo_pack.overheat_max * (1 / 3) && ammo_pack.heat_stage < 1)
 			to_chat(user, "You feel warmth from the handle of the gun.")
 			ammo_pack.heat_stage += 1
-			..()
 
 		if(ammo_pack.overheat > ammo_pack.overheat_max * (2 / 3) && ammo_pack.heat_stage < 2)
 			to_chat(user, "The gun's heat sensor beeps rapidly as it reaches its limit!")
 			ammo_pack.heat_stage += 1
-			..()
 
 		if(ammo_pack.overheat < ammo_pack.overheat_max)
-			ammo_pack.overheat += burst_size
-			..()
+			if(user.IsWeaponDrawDelayed())
+				..()
+			else
+				..()
+				..()
+				ammo_pack.overheat += burst_size*2
 
-		if(ammo_pack.overheat < ammo_pack.overheat_max)
-			ammo_pack.overheat += burst_size
-			..()
 		else
 			to_chat(user, "The gun's heat sensor locked the trigger to prevent barrel damage.")
 
