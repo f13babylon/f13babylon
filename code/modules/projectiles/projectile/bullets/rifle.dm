@@ -147,8 +147,8 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 /////////			-Very heavy rifle round.
 
 /obj/item/projectile/bullet/a50MG
-	damage = 38
-	armour_penetration = 0.75
+	damage = 40
+	armour_penetration = 0.85
 	pixels_per_second = 4000
 	zone_accuracy_factor = 100
 	wound_bonus = 30
