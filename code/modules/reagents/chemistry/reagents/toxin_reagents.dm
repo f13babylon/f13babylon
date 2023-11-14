@@ -598,11 +598,6 @@
 	toxpwr = 0.2*volume
 	M.adjustBruteLoss((0.3*volume)*REM, updating_health = FALSE)
 	. = 1
-	if(prob(15))
-		M.reagents.add_reagent(/datum/reagent/toxin/histamine, pick(5,10))
-		M.reagents.remove_reagent(type, 1.1)
-	else
-		..()
 
 /datum/reagent/toxin/fentanyl
 	name = "Fentanyl"
