@@ -119,7 +119,7 @@ GLOBAL_PROTECT(href_token)
 		owner.init_verbs() //re-initialize the verb list
 		GLOB.admins |= C
 		GLOB.adminchat |= C //Babylon add
-			return
+		return
 
 /datum/admins/proc/disassociate()
 	if(IsAdminAdvancedProcCall())
