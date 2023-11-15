@@ -6,6 +6,8 @@
 	damage_type = BURN
 	flag = "energy"
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/ion
+	supereffective_damage = 36
+	supereffective_faction = list("wastebot")
 	var/emp_radius = 2
 
 /obj/item/projectile/ion/on_hit(atom/target, blocked = FALSE)

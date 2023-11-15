@@ -612,8 +612,8 @@
 
 //Brotherhood of Steel (PA in f13armor.dm)
 
-/obj/item/clothing/suit/armor/f13/headofcastecoat
-	name = "Head of Caste's trenchcoat"
+/obj/item/clothing/suit/armor/f13/headscribecoat
+	name = "Head Scribe's field coat"
 	desc = "A thick coat with a fur inlay and soft armor padding, perfect for intimidating subordinates and captives alike."
 	icon_state = "hoccoat"
 	item_state = "hoccoat"
