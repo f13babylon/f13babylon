@@ -794,7 +794,7 @@
 	value = REAGENT_VALUE_COMMON
 	water_level = 1.5
 
-/datum/reagent/consumable/peachjuice //Intended to be extremely rare due to being the limiting ingredients in the blazaam drink
+/datum/reagent/consumable/peachjuice
 	name = "Peach Juice"
 	description = "Just peachy."
 	color = "#E78108"

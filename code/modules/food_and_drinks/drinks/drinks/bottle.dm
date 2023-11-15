@@ -634,10 +634,6 @@
 	icon_state = "champagne_bottle"
 	name = "Sealed Champagne"
 
-/obj/item/export/bottle/blazaam
-	icon_state = "blazaambottle"
-	name = "Sealed Blazaam"
-
 /obj/item/export/bottle/trappist
 	icon_state = "trappistbottle"
 	name = "Sealed Trappist"
