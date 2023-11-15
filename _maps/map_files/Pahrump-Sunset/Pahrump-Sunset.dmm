@@ -3690,7 +3690,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/machinery/door/unpowered/securedoor/khandoor,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/carpet/red,
 /area/f13/bar/heaven)
 "aoD" = (
@@ -8083,7 +8083,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/machinery/door/unpowered/securedoor/khandoor,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/wood/wood_mosaic/wood_mosaic_dark,
 /area/f13/bar/heaven)
 "aEl" = (
@@ -10597,7 +10597,7 @@
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/wasteland/west)
 "aMI" = (
-/obj/machinery/door/unpowered/securedoor/khandoor,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/wood/wood_mosaic/wood_mosaic_dark,
 /area/f13/bar/heaven)
 "aMJ" = (
@@ -13958,7 +13958,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/machinery/door/unpowered/securedoor/khandoor,
+/obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/plasteel/f13,
 /area/f13/bar/heaven)
 "aXY" = (
@@ -29688,11 +29688,11 @@
 	},
 /area/f13/wasteland/firestation)
 "gqr" = (
-/obj/item/cigbutt/cigarbutt{
-	pixel_x = -4;
-	pixel_y = -2
-	},
+/obj/machinery/light/floor,
 /obj/structure/table/wood/settler,
+/obj/item/cigbutt/cigarbutt{
+	pixel_x = 1
+	},
 /turf/open/floor/carpet/red,
 /area/f13/bar/heaven)
 "gqs" = (
@@ -73611,7 +73611,7 @@ aHz
 gKb
 aXW
 aXW
-aXX
+bbB
 aXW
 baU
 bbB
@@ -76191,7 +76191,7 @@ oYn
 axZ
 sdg
 sdg
-aMV
+gqr
 cJN
 aXW
 hqc
@@ -76445,7 +76445,7 @@ baA
 baA
 gft
 mSq
-gqr
+axZ
 sdg
 sdg
 axZ

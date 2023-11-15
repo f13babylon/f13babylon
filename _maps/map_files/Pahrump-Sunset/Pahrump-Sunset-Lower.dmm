@@ -7276,8 +7276,11 @@
 /turf/open/floor/plating,
 /area/f13/tunnel/bighorn)
 "ehp" = (
-/turf/open/floor/plasteel/darkbrown/side{
-	dir = 8
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel/darkred/side{
+	dir = 9
 	},
 /area/f13/brotherhood)
 "eii" = (
@@ -74671,8 +74674,8 @@ aJq
 oVq
 oVq
 oVq
-nZR
-nZR
+oVq
+oVq
 uyb
 uyb
 uyb
@@ -74927,9 +74930,9 @@ ciN
 aJq
 oVq
 aVt
-tau
-ehp
-ehp
+fta
+fta
+fta
 tau
 fta
 fta
@@ -75698,7 +75701,7 @@ onW
 onW
 oVq
 oVq
-ixJ
+ehp
 mIf
 mIf
 wZq
