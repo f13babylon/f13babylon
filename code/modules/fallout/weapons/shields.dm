@@ -173,13 +173,12 @@
 	max_integrity = 3000
 
 /datum/block_parry_data/shield/tower
-	block_slowdown = 0.75
-	block_damage_multiplier = 0.7
+	block_slowdown = 0.8
+	block_damage_multiplier = 0.25
 	block_stamina_efficiency = 10
-	block_stamina_cost_per_second = 5
+	block_stamina_cost_per_second = 2
 	block_damage_absorption = 20
-	block_damage_limit = 160
-	block_start_delay = 10 //1 second to start blocking
+	block_start_delay = 15 //1.5 second to start blocking
 
 /obj/item/shield/riot/tower/scrap
 	name = "scrap-tower shield"
@@ -193,6 +192,6 @@
 	max_integrity = 1500
 
 /datum/block_parry_data/shield/tower/scrap
-	block_damage_multiplier = 0.6
+	block_damage_multiplier = 0.3
 	block_stamina_efficiency = 7.5
 	block_damage_absorption = 15

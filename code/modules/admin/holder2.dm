@@ -77,6 +77,10 @@ GLOBAL_PROTECT(href_token)
 	deadmined = FALSE
 	if (GLOB.directory[target])
 		associate(GLOB.directory[target])	//find the client for a ckey if they are connected and associate them with us
+		var/client/C
+		if ((C = owner) || (C = GLOB.directory[target]))
+			if(check_rights_for(C, R_ASAY)) //If said client has asay, assoc it iwth them
+				GLOB.adminchat |= src
 
 
 /datum/admins/proc/deactivate()
@@ -114,7 +118,8 @@ GLOBAL_PROTECT(href_token)
 		remove_verb(owner, /client/proc/readmin)
 		owner.init_verbs() //re-initialize the verb list
 		GLOB.admins |= C
-		GLOB.adminchat |= C //fortuna add
+		GLOB.adminchat |= C //Babylon add
+		return
 
 /datum/admins/proc/disassociate()
 	if(IsAdminAdvancedProcCall())
@@ -124,7 +129,7 @@ GLOBAL_PROTECT(href_token)
 		return
 	if(owner)
 		GLOB.admins -= owner
-		GLOB.adminchat -= owner //fortuna add
+		GLOB.adminchat -= owner //Babylon add
 		owner.remove_admin_verbs()
 		owner.init_verbs()
 		owner.holder = null

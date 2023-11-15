@@ -79,6 +79,8 @@ GLOBAL_PROTECT(protected_ranks)
 			flag = R_AUTOLOGIN
 		if("dbranks")
 			flag = R_DBRANKS
+		if("asay")
+			flag = R_ASAY
 		if("@","prev")
 			flag = previous_rights
 	return flag

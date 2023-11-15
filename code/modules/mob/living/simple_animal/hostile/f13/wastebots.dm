@@ -351,12 +351,6 @@
 	aggrosound = FALSE
 	idlesound = FALSE
 
-/mob/living/simple_animal/hostile/handy/assaultron/nsb //NSB + Raider Bunker specific.
-	name = "assaultron"
-	aggro_vision_range = 15
-	faction = list("raider")
-	obj_damage = 300
-
 /mob/living/simple_animal/hostile/handy/assaultron/playable
 	see_in_dark = 8
 	force_threshold = 15

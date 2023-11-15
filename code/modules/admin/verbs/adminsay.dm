@@ -6,7 +6,7 @@ GLOBAL_PROTECT(adminchat)
 	set category = "Special Verbs"
 	set name = "Asay" //Gave this shit a shorter name so you only have to time out "asay" rather than "admin say" to use it --NeoFite
 	set hidden = 1
-	if(!check_rights(R_ADMIN)) //fortuna change.
+	if(!check_rights(R_ASAY)) //How it should have been done - Babylon change.
 		return
 
 	msg = copytext_char(sanitize(msg), 1, MAX_MESSAGE_LEN)

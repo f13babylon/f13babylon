@@ -6793,6 +6793,10 @@
 	icon_state = "plating"
 	},
 /area/f13/building)
+"gIJ" = (
+/obj/machinery/manned_turret/m2/unanchored,
+/turf/open/floor/plasteel/f13/stone/rugged,
+/area/f13/legion)
 "gJf" = (
 /mob/living/simple_animal/hostile/bloatfly,
 /turf/open/indestructible/ground/outside/dirt/harsh,
@@ -12544,6 +12548,7 @@
 /obj/item/seeds/xander,
 /obj/item/seeds/poppy/broc,
 /obj/item/seeds/poppy/broc,
+/obj/item/seeds/ambrosia/gaia,
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/legion)
 "mIR" = (
@@ -31070,7 +31075,7 @@ yko
 qWV
 hgP
 hgP
-onR
+jIp
 xAx
 hXy
 hXy
@@ -31328,7 +31333,7 @@ qWV
 hgP
 hgP
 jIp
-xAx
+dTT
 anP
 hXy
 hXy
@@ -31584,8 +31589,8 @@ nsp
 vTD
 hgP
 hgP
-jIp
-dTT
+hgP
+kTa
 hXy
 hXy
 paT
@@ -32098,7 +32103,7 @@ yko
 qWV
 hgP
 hgP
-hgP
+onR
 dTT
 hXy
 hXy
@@ -43174,7 +43179,7 @@ dnA
 hAL
 hDv
 hAL
-gtX
+gIJ
 gtX
 rFl
 jLa

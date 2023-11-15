@@ -418,8 +418,8 @@
 /turf/open/indestructible/ground/outside/snow_plating,
 /area/f13/mountain_area)
 "dV" = (
-/obj/structure/nest/tunneler{
-	max_mobs = 2
+/obj/structure/nest/radroach{
+	max_mobs = 3
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/enclave)
