@@ -23863,7 +23863,7 @@
 	},
 /area/f13/building)
 "cLP" = (
-/mob/living/simple_animal/hostile/trog/tunneler,
+/mob/living/simple_animal/hostile/molerat,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/brotherhood)
 "cMI" = (
@@ -25699,9 +25699,10 @@
 	},
 /area/f13/wasteland/heaven)
 "dSE" = (
-/mob/living/simple_animal/hostile/trog/tunneler,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/molerat,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
+/area/f13/brotherhood)
 "dSJ" = (
 /obj/item/bighorn_flag,
 /turf/closed/wall/f13/wood/interior,
@@ -28184,14 +28185,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superlow,
 /turf/open/floor/f13/wood,
 /area/f13/village)
-"fup" = (
-/obj/machinery/light/broken{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/trog/tunneler,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/brotherhood)
 "fut" = (
 /obj/structure/table,
 /obj/item/reagent_containers/hypospray/medipen/stimpak,
@@ -30826,10 +30819,9 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland/west)
 "gYB" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/trog/tunneler,
+/mob/living/simple_animal/hostile/molerat,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/brotherhood)
+/area/f13/caves)
 "gYX" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/indestructible/ground/outside/road{
@@ -31734,10 +31726,6 @@
 	color = "#4b3a26"
 	},
 /area/f13/wasteland/valley)
-"hFF" = (
-/obj/structure/nest/tunneler,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/brotherhood)
 "hFT" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -104024,9 +104012,9 @@ aaa
 aaa
 pbO
 pal
-wEu
+cLP
 pal
-hFF
+wEu
 wEu
 pEe
 umS
@@ -104533,7 +104521,7 @@ aaa
 pbO
 nkB
 umS
-gYB
+umS
 rvx
 cyw
 pbO
@@ -105046,7 +105034,7 @@ umS
 sfO
 iCa
 umS
-umS
+dSE
 wEu
 wEu
 aos
@@ -105816,7 +105804,7 @@ aaa
 aae
 aae
 pbO
-fup
+tDa
 umS
 wEu
 umS
@@ -109157,8 +109145,8 @@ iJF
 tcr
 aaa
 aae
-dSE
 aaB
+gYB
 aaB
 aae
 aae

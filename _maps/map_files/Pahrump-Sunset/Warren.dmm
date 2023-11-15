@@ -1408,10 +1408,7 @@
 	},
 /area/f13/ncr)
 "blh" = (
-/obj/structure/table/wood,
-/obj/machinery/computer/terminal{
-	dir = 4
-	},
+/obj/structure/chair/wood,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
@@ -1686,6 +1683,15 @@
 "byH" = (
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_x = 30
+	},
+/obj/structure/table/wood,
+/obj/item/reagent_containers/spray/pepper{
+	pixel_x = 6;
+	pixel_y = -1
+	},
+/obj/item/grenade/f13/stinger{
+	pixel_x = -5;
+	pixel_y = 6
 	},
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
@@ -2144,6 +2150,10 @@
 	name = "tower shutters button";
 	pixel_x = -6;
 	pixel_y = -26
+	},
+/obj/structure/table/wood,
+/obj/machinery/computer/terminal{
+	dir = 8
 	},
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
@@ -8673,12 +8683,6 @@
 /obj/structure/table/booth,
 /turf/open/floor/wood/wood_common,
 /area/f13/city)
-"iiB" = (
-/obj/structure/table/wood,
-/turf/open/floor/f13{
-	icon_state = "darkdirtysolid"
-	},
-/area/f13/ncr)
 "iiF" = (
 /obj/item/kirbyplants/dead{
 	desc = "A mummified potted plant.";
@@ -11811,15 +11815,7 @@
 /turf/open/indestructible/ground/outside/savannah/bottomcenter,
 /area/f13/wasteland/warren)
 "llp" = (
-/obj/structure/table/wood,
-/obj/item/grenade/f13/stinger{
-	pixel_x = -5;
-	pixel_y = 6
-	},
-/obj/item/reagent_containers/spray/pepper{
-	pixel_x = 6;
-	pixel_y = -1
-	},
+/obj/machinery/manned_turret/m2/unanchored,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
@@ -14510,6 +14506,9 @@
 /obj/machinery/light{
 	dir = 4;
 	light_color = "#c1caff"
+	},
+/obj/structure/chair/wood{
+	dir = 1
 	},
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
@@ -25101,14 +25100,6 @@
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland/ncr)
-"xxr" = (
-/obj/structure/chair/wood{
-	dir = 8
-	},
-/turf/open/floor/f13{
-	icon_state = "darkdirtysolid"
-	},
-/area/f13/ncr)
 "xxM" = (
 /obj/effect/overlay/turfs/cliff{
 	pixel_y = -15
@@ -48800,13 +48791,13 @@ hgd
 xAc
 xAc
 xAc
-aLn
+ghE
 xTH
 xTH
 xTH
 xTH
 xTH
-aLn
+ghE
 hgd
 bYc
 jXh
@@ -49058,11 +49049,11 @@ xAc
 xAc
 ghE
 uDV
-ohF
-iiB
+aLn
 cJK
+llp
 cJK
-blh
+aLn
 uDV
 hgd
 bYc
@@ -49315,11 +49306,11 @@ xAc
 xAc
 xAc
 uDV
-llp
-xxr
+ohF
 cJK
 cJK
-xxr
+cJK
+cJK
 uDV
 hgd
 qjT
@@ -49576,7 +49567,7 @@ byH
 nQw
 cJK
 cJK
-cJK
+blh
 uDV
 hgd
 qjT
