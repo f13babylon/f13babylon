@@ -233,10 +233,10 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 	if(holder)
 		if(check_rights_for(src, R_ADMIN)) //Fortuna edit. Are they /really/ admins?
 			GLOB.admins |= src
-			if(check_rights_for(src, R_ASAY))
-				GLOB.adminchat |= src
 			holder.owner = src
 			connecting_admin = TRUE
+		if(check_rights_for(src, R_ASAY))
+			GLOB.adminchat |= src
 		//CITADEL EDIT
 		if(check_rights_for(src, R_DEBUG))
 			debug_tools_allowed = TRUE
