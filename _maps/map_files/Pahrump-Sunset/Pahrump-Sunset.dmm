@@ -10484,7 +10484,6 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/item/bot_assembly/cleanbot,
 /turf/open/floor/plasteel/f13{
 	icon_state = "plating"
 	},
@@ -23950,7 +23949,6 @@
 /obj/structure/displaycase,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/floor,
-/mob/living/simple_animal/bot/cleanbot,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -24606,7 +24604,6 @@
 "dmq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/bot/cleanbot,
 /turf/open/floor/plasteel/f13{
 	icon_state = "plating"
 	},
@@ -25156,7 +25153,6 @@
 /area/f13/tunnel/southeast)
 "dCD" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/bot_assembly/cleanbot,
 /obj/effect/landmark/poster_spawner/pinup{
 	pixel_y = 32
 	},
@@ -55437,7 +55433,6 @@
 /area/f13/wasteland/firestation)
 "vJJ" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/bot/cleanbot,
 /turf/open/floor/plasteel/f13{
 	icon_state = "plating"
 	},

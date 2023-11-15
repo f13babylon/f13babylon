@@ -9280,7 +9280,6 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/mob/living/simple_animal/bot/cleanbot,
 /turf/open/floor/plasteel/darkpurple,
 /area/f13/ncr)
 "iEK" = (
