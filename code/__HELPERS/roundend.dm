@@ -209,7 +209,14 @@
 	if(length(CONFIG_GET(keyed_list/cross_server)))
 		send_news_report()
 	//fortuna addition. list of random names for the roundend news author
-	var/list/publisher = list("Bighorn Publishing","Brotherhood News","Wyoming Publishing","FEV News")
+	var/list/publisher = list("Babylon Publishing",
+							  "FoA News",
+							  "Great Khan Storyteller",
+							  "Legion Orator",
+							  "NCR Intelligence",
+							  "Tribal Rumors",
+							  "BoS Survey Team",
+							  "Enclave Propaganda")
 	//tell the nice people on discord what went on before the salt cannon happens.
 	// send2chat sending the new round ping off
 	send2chat(" <@&922230570791108628> ", CONFIG_GET(string/discord_channel_serverstatus))
