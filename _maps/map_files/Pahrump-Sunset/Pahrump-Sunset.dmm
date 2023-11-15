@@ -293,7 +293,6 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/effect/landmark/start/f13/khan_court,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/building)
 "abh" = (
@@ -33931,9 +33930,6 @@
 	},
 /area/f13/building)
 "iUv" = (
-/obj/structure/flora/tree/tall{
-	icon_state = "tree_2"
-	},
 /obj/structure/railing/corner{
 	dir = 1
 	},
@@ -57694,11 +57690,6 @@
 /obj/structure/showcase/horrific_experiment,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building/museum)
-"wWm" = (
-/obj/effect/overlay/rockfloor_side,
-/obj/effect/landmark/start/f13/khan_court,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/building)
 "wWt" = (
 /obj/structure/chair,
 /obj/effect/decal/cleanable/dirt{
@@ -99680,7 +99671,7 @@ qmV
 xyU
 xyU
 ffb
-wWm
+abI
 uaU
 qeT
 dAO
