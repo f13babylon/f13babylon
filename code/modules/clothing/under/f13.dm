@@ -117,10 +117,10 @@
 /obj/item/clothing/under/f13/ncr/sniper
 	name = "NCR sniper fatigues"
 	desc = "A standard duty uniform for snipers of the New California Republic."
-	can_adjust = FALSE
-	icon_state = "ncr_snipermgs"
-	item_state = "ncr_snipermgs"
-	item_color = "ncr_snipermgs"
+	can_adjust = TRUE
+	icon_state = "ncr_sniper"
+	item_state = "ncr_sniper"
+	item_color = "ncr_sniper"
 
 /obj/item/clothing/under/f13/ncr/pants
 	name = "NCR fatigue pants"
