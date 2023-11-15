@@ -1,5 +1,5 @@
 <!-- Most valid html will work in here, excluding images. -->
 
-<h1>Welcome to Sunset Wasteland!</h1>
+<h1>Welcome to New Babylon!</h1>
 <br>
 The fourth furry-friendly Fallout server. We hope you have fun!<br>
