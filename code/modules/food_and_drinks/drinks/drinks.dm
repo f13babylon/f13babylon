@@ -303,7 +303,7 @@
 /obj/item/reagent_containers/food/drinks/mug/tea
 	name = "Duke Purple tea"
 	icon_state = "tea"
-	desc = "An insult to Duke Purple is an insult to the Space Queen! Any proper gentleman will fight you, if you sully this tea."
+	desc = "An insult to Duke Purple is an insult to the Queen! Any proper gentleman will fight you, if you sully this tea."
 	list_reagents = list(/datum/reagent/consumable/tea = 30)
 
 /obj/item/reagent_containers/food/drinks/mug/tea/red
@@ -333,7 +333,7 @@
 
 /obj/item/reagent_containers/food/drinks/mug/coco
 	name = "Dutch hot coco"
-	desc = "Made in Space South America."
+	desc = "Made in South America."
 	icon_state = "coco"
 	list_reagents = list(/datum/reagent/consumable/hot_coco = 30, /datum/reagent/consumable/sugar = 5)
 	foodtype = SUGAR
@@ -520,15 +520,15 @@
 	return ..()
 
 /obj/item/reagent_containers/food/drinks/soda_cans/cola
-	name = "Space Cola"
-	desc = "Cola. in space."
+	name = "Cola"
+	desc = "Regular cola."
 	icon_state = "cola"
-	list_reagents = list(/datum/reagent/consumable/space_cola = 30)
+	list_reagents = list(/datum/reagent/consumable/cola = 30)
 	foodtype = SUGAR
 
 /obj/item/reagent_containers/food/drinks/soda_cans/tonic
 	name = "T-Borg's tonic water"
-	desc = "Quinine tastes funny, but at least it'll keep that Space Malaria away."
+	desc = "Quinine tastes funny, but at least it'll keep that Malaria away."
 	icon_state = "tonic"
 	list_reagents = list(/datum/reagent/consumable/tonic = 50)
 
@@ -556,66 +556,18 @@
 	list_reagents = list(/datum/reagent/consumable/sol_dry = 30)
 	foodtype = SUGAR
 
-/obj/item/reagent_containers/food/drinks/soda_cans/space_up
-	name = "Space-Up!"
-	desc = "Tastes like a hull breach in your mouth."
-	icon_state = "space-up"
-	list_reagents = list(/datum/reagent/consumable/space_up = 30)
-	foodtype = SUGAR | JUNKFOOD
-
 /obj/item/reagent_containers/food/drinks/soda_cans/starkist
 	name = "Star-kist"
 	desc = "The taste of a star in liquid form. And, a bit of tuna...?"
 	icon_state = "starkist"
-	list_reagents = list(/datum/reagent/consumable/space_cola = 15, /datum/reagent/consumable/orangejuice = 15)
+	list_reagents = list(/datum/reagent/consumable/cola = 15, /datum/reagent/consumable/orangejuice = 15)
 	foodtype = SUGAR | FRUIT | JUNKFOOD
-
-/obj/item/reagent_containers/food/drinks/soda_cans/space_mountain_wind
-	name = "Space Mountain Wind"
-	desc = "Blows right through you like a space wind."
-	icon_state = "space_mountain_wind"
-	list_reagents = list(/datum/reagent/consumable/spacemountainwind = 30)
-	foodtype = SUGAR | JUNKFOOD
 
 /obj/item/reagent_containers/food/drinks/soda_cans/thirteenloko
 	name = "Thirteen Loko"
 	desc = "The CMO has advised crew members that consumption of Thirteen Loko may result in seizures, blindness, drunkenness, or even death. Please Drink Responsibly."
 	icon_state = "thirteen_loko"
 	list_reagents = list(/datum/reagent/consumable/ethanol/thirteenloko = 30)
-	foodtype = SUGAR | JUNKFOOD
-
-/obj/item/reagent_containers/food/drinks/soda_cans/dr_gibb
-	name = "Dr. Gibb"
-	desc = "A delicious mixture of 42 different flavors."
-	icon_state = "dr_gibb"
-	list_reagents = list(/datum/reagent/consumable/dr_gibb = 30)
-	foodtype = SUGAR | JUNKFOOD
-
-/obj/item/reagent_containers/food/drinks/soda_cans/pwr_game
-	name = "Pwr Game"
-	desc = "The only drink with the PWR that true gamers crave."
-	icon_state = "purple_can"
-	list_reagents = list(/datum/reagent/consumable/pwr_game = 30)
-
-/obj/item/reagent_containers/food/drinks/soda_cans/shamblers
-	name = "Shambler's juice"
-	desc = "~Shake me up some of that Shambler's Juice!~"
-	icon_state = "shamblers"
-	list_reagents = list(/datum/reagent/consumable/shamblers = 30)
-	foodtype = SUGAR | JUNKFOOD
-
-/obj/item/reagent_containers/food/drinks/soda_cans/buzz_fuzz
-	name = "Buzz Fuzz"
-	desc = "The sister drink of Shambler's Juice! Uses real honey, making it a sweet tooth's dream drink. The slogan reads ''A Hive of Flavour'', there's also a label about how it is adddicting."
-	icon_state = "honeysoda_can"
-	list_reagents = list(/datum/reagent/consumable/buzz_fuzz = 25, /datum/reagent/consumable/honey = 5)
-	foodtype = SUGAR | JUNKFOOD
-
-/obj/item/reagent_containers/food/drinks/soda_cans/grey_bull
-	name = "Grey Bull"
-	desc = "Grey Bull, it gives you gloves!"
-	icon_state = "energy_drink"
-	list_reagents = list(/datum/reagent/consumable/grey_bull = 20)
 	foodtype = SUGAR | JUNKFOOD
 
 /obj/item/reagent_containers/food/drinks/soda_cans/air

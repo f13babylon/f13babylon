@@ -86,8 +86,8 @@
 	list_reagents = list(/datum/reagent/consumable/sodawater = 50)
 
 /obj/item/reagent_containers/food/drinks/drinkingglass/filled/cola
-	name = "Space Cola"
-	list_reagents = list(/datum/reagent/consumable/space_cola = 50)
+	name = "Cola"
+	list_reagents = list(/datum/reagent/consumable/cola = 50)
 
 /obj/item/reagent_containers/food/drinks/drinkingglass/filled/nuka_cola
 	name = "Nuka Cola"
@@ -98,10 +98,6 @@
 	name = "Nuka Float"
 	list_reagents = list(/datum/reagent/consumable/nukafloat = 50)
 	foodtype = NUKA
-
-/obj/item/reagent_containers/food/drinks/drinkingglass/filled/syndicatebomb
-	name = "Syndicate Bomb"
-	list_reagents = list(/datum/reagent/consumable/ethanol/syndicatebomb = 50)
 
 /obj/item/reagent_containers/food/drinks/drinkingglass/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/reagent_containers/food/snacks/egg)) //breaking eggs
@@ -138,4 +134,3 @@
 		reagents.reaction(target, TOUCH)
 		reagents.clear_reagents()
 		return
-

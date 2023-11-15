@@ -815,7 +815,6 @@ GLOBAL_LIST_INIT(loot_alcohol, list(
 	/obj/item/reagent_containers/food/drinks/bottle/cognac,
 	/obj/item/reagent_containers/food/drinks/bottle/wine,
 	/obj/item/reagent_containers/food/drinks/bottle/absinthe,
-	/obj/item/reagent_containers/food/drinks/bottle/lizardwine,
 	/obj/item/reagent_containers/food/drinks/bottle/hcider,
 	/obj/item/reagent_containers/food/drinks/bottle/grappa,
 	/obj/item/reagent_containers/food/drinks/bottle/sake,

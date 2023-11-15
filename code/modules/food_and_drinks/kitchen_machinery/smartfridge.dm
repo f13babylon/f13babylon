@@ -773,7 +773,6 @@
 		/obj/item/reagent_containers/food/drinks/bottle/vermouth = 1,
 		/obj/item/reagent_containers/food/drinks/bottle/cognac = 1,
 		/obj/item/reagent_containers/food/drinks/bottle/absinthe = 1,
-		/obj/item/reagent_containers/food/drinks/bottle/lizardwine = 1,
 		/obj/item/reagent_containers/food/drinks/bottle/hcider = 1,
 		/obj/item/reagent_containers/food/drinks/bottle/grappa = 1,
 		/obj/item/reagent_containers/food/drinks/bottle/sake = 1,

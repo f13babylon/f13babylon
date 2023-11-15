@@ -299,13 +299,6 @@
 /obj/item/reagent_containers/food/drinks/bottle/absinthe/premium/redact()
 	return
 
-/obj/item/reagent_containers/food/drinks/bottle/lizardwine
-	name = "bottle of lizard wine"
-	desc = "An alcoholic beverage originally made in China by infusing lizard tails in ethanol, now? Much the same, but with geckos. Inexplicably popular among most higher ups."
-	icon_state = "lizardwine"
-	list_reagents = list(/datum/reagent/consumable/ethanol/lizardwine = 100)
-	foodtype = FRUIT | ALCOHOL
-
 /obj/item/reagent_containers/food/drinks/bottle/hcider
 	name = "Jian Hard Cider"
 	desc = "Apple juice for adults."
@@ -372,15 +365,6 @@
 	list_reagents = list(/datum/reagent/consumable/ethanol/champagne = 100)
 
 /obj/item/reagent_containers/food/drinks/bottle/champagne/empty
-	list_reagents = null
-
-/obj/item/reagent_containers/food/drinks/bottle/blazaam
-	name = "Ginbad's Blazaam"
-	desc = "You feel like you should give the bottle a good rub before opening."
-	icon_state = "blazaambottle"
-	list_reagents = list(/datum/reagent/consumable/ethanol/blazaam = 100)
-
-/obj/item/reagent_containers/food/drinks/bottle/blazaam/empty
 	list_reagents = null
 
 /obj/item/reagent_containers/food/drinks/bottle/trappist
