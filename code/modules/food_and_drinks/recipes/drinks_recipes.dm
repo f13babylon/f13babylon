@@ -256,7 +256,7 @@
 	name = "Demons Blood"
 	id = /datum/reagent/consumable/ethanol/demonsblood
 	results = list(/datum/reagent/consumable/ethanol/demonsblood = 4)
-	required_reagents = list(/datum/reagent/consumable/ethanol/rum = 1, /datum/reagent/blood = 1, /datum/reagent/consumable/cola = 1)
+	required_reagents = list(/datum/reagent/consumable/ethanol/rum = 1, /datum/reagent/blood = 1, /datum/reagent/consumable/grenadine = 1)
 
 /datum/chemical_reaction/booger
 	name = "Booger"
