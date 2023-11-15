@@ -13,6 +13,7 @@
 	shot_glass_icon_state = "shotglassred"
 	pH = 7.4
 	ghoulfriendly = TRUE
+	var/water_level = 1
 
 // FEED ME,SEYMOUR!
 /datum/reagent/blood/on_hydroponics_apply(obj/item/seeds/myseed, datum/reagents/chems, obj/machinery/hydroponics/mytray)
@@ -253,7 +254,7 @@
 	glass_desc = "The father of all refreshments."
 	shot_glass_icon_state = "shotglassclear"
 	ghoulfriendly = TRUE
-	var/water_level = 5
+	var/water_level = 2
 
 /datum/reagent/water/on_mob_life(mob/living/carbon/M)
 	. = ..()
@@ -266,20 +267,18 @@
 	name = "Dirty Water"
 	description = "This has visible debris floating around in it."
 	color = "#ACBCBD"
-	taste_description = "foul, brackish water"
+	taste_description = "foul water"
 	glass_icon_state = "glass_clear"
 	glass_name = "glass of dirty water"
 	glass_desc = "A rather foul smelling glass of water."
 	shot_glass_icon_state = "shotglassclear"
-	water_level = 3
+	water_level = 1
 
-/datum/reagent/water/dwater/on_mob_life(mob/living/M, mob/user)
+/datum/reagent/water/dwater/on_mob_life(mob/living/carbon/M)
 	if(ishuman(M))
-		M.apply_effect(1.5,EFFECT_IRRADIATE,0)
-		var/mob/living/carbon/human/H = M
-		if(prob(5))
-			H.vomit(1)
-			M.reagents.remove_all()
+		if(M.disgust < DISGUST_LEVEL_DISGUSTED)
+			if(prob(20))
+				M.adjust_disgust(20)
 	..()
 
 /datum/reagent/water/bwater
@@ -291,22 +290,17 @@
 	glass_name = "glass of boiled water"
 	glass_desc = "A glass of boiled water."
 	shot_glass_icon_state = "shotglassclear"
-	water_level = 4.5
+	water_level = 1.75
 
-/datum/reagent/water/bwater/on_mob_life(mob/living/M, mob/user)
+/datum/reagent/water/bwater/on_mob_life(mob/living/carbon/M)
 	if(ishuman(M))
-		M.apply_effect(0.1,EFFECT_IRRADIATE,0)//near nothing.
-		var/mob/living/carbon/human/H = M
-		if(prob(1))//Practically never. Safe to drink, except for rads.
-			H.emote("cough")
-			if(prob(5))//RNG within RNG.
-				H.vomit(1)
-				M.reagents.remove_all()
+		if(prob(5))
+			M.emote("cough")
 	..()
 
 /datum/reagent/watertabletpowder
 	name = "Water Purification Powder"
-	description = "This compound can be used to purify water"
+	description = "This compound can be used to purify water."
 	color = "#ACBCBD"
 	taste_description = "charred and metallic"
 	glass_icon_state = "glass_clear"
@@ -354,11 +348,6 @@
 		var/obj/item/reagent_containers/food/snacks/cube/cube = O
 		cube.Expand()
 
-	// Dehydrated carp
-	else if(istype(O, /obj/item/toy/plush/carpplushie/dehy_carp))
-		var/obj/item/toy/plush/carpplushie/dehy_carp/dehy = O
-		dehy.Swell() // Makes a carp
-
 	else if(istype(O, /obj/item/stack/sheet/hairlesshide))
 		var/obj/item/stack/sheet/hairlesshide/HH = O
 		new /obj/item/stack/sheet/wetleather(get_turf(HH), HH.amount)
@@ -396,11 +385,12 @@
 
 /datum/reagent/water/purified
 	name = "Purified Water"
-	description = "An ubiquitous chemical substance that is composed of hydrogen and oxygen. This one has been purified from radiation."
+	description = "An ubiquitous chemical substance that is composed of hydrogen and oxygen. This one has been purified."
 	color = "#C3DBDA66" // It's cleaner, kek
 	taste_description = "clean water"
 	value = REAGENT_VALUE_AMAZING
 	can_synth = FALSE
+	water_level = 3
 
 /datum/reagent/water/purified/on_mob_life(mob/living/carbon/M) // Pure water is very, very healthy
 	M.reagents.remove_all_type(/datum/reagent/toxin, 1)
@@ -419,7 +409,6 @@
 	description = "An ubiquitous chemical substance that is composed of hydrogen and oxygen, but it looks kinda hollow."
 	color = "#88878777"
 	taste_description = "emptyiness"
-
 
 /datum/reagent/water/holywater
 	name = "Holy Water"
@@ -2363,41 +2352,6 @@
 	if((ismonkey(M) || ishuman(M)) && current_cycle >= 10)
 		M.gorillize()
 
-/*
-/datum/reagent/growthserum
-	name = "Growth Serum"
-	description = "A commercial chemical designed to help older men in the bedroom."//not really it just makes you a giant
-	color = "#ff0000"//strong red. rgb 255, 0, 0
-	var/current_size = RESIZE_DEFAULT_SIZE
-	value = REAGENT_VALUE_COMMON
-	taste_description = "bitterness" // apparently what viagra tastes like
-
-/datum/reagent/growthserum/on_mob_life(mob/living/carbon/H)
-	var/newsize = current_size
-	switch(volume)
-		if(0 to 19)
-			newsize = 1.25*RESIZE_DEFAULT_SIZE
-		if(20 to 49)
-			newsize = 1.5*RESIZE_DEFAULT_SIZE
-		if(50 to 99)
-			newsize = 2*RESIZE_DEFAULT_SIZE
-		if(100 to 199)
-			newsize = 2.5*RESIZE_DEFAULT_SIZE
-		if(200 to INFINITY)
-			newsize = 3.5*RESIZE_DEFAULT_SIZE
-
-	H.resize = newsize/current_size
-	current_size = newsize
-	H.update_transform()
-	..()
-
-/datum/reagent/growthserum/on_mob_end_metabolize(mob/living/M)
-	M.resize = RESIZE_DEFAULT_SIZE/current_size
-	current_size = RESIZE_DEFAULT_SIZE
-	M.update_transform()
-	..()
-*/
-
 /datum/reagent/plastic_polymers
 	name = "plastic polymers"
 	description = "the petroleum based components of plastic."
@@ -2571,7 +2525,7 @@
 	ghoulfriendly = TRUE
 
 /datum/reagent/pax/catnip
-	name = "catnip"
+	name = "Catnip"
 	taste_description = "grass"
 	description = "A colorless liquid that makes people more peaceful and felines more happy."
 	metabolization_rate = 1.75 * REAGENTS_METABOLISM
