@@ -30,7 +30,7 @@
 	icon_state = "sniper_mag"
 	ammo_type = /obj/item/ammo_casing/a762
 	caliber = "a762"
-	max_ammo = 7
+	max_ammo = 10
 	multiple_sprites = 2
 
 /obj/item/ammo_box/magazine/w308/empty

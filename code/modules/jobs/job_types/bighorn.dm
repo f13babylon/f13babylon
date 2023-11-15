@@ -115,6 +115,8 @@ Mayor
 	..()
 	if(visualsOnly)
 		return
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/combatcarbine)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/combatrifle)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, REF(src))
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, REF(src))
 	ADD_TRAIT(H, TRAIT_SELF_AWARE,REF(src))
@@ -147,7 +149,7 @@ Mayor
 	l_pocket = /obj/item/storage/bag/money/small/settler
 	r_pocket = /obj/item/flashlight/flare
 	r_hand = /obj/item/gun/ballistic/rifle/repeater/trail
-	suit = 			/obj/item/clothing/suit/armor/vest/oasis
+	suit = 	/obj/item/clothing/suit/armor/vest/oasis
 	head =	/obj/item/clothing/head/f13/town/deputy
 	belt = /obj/item/gun/ballistic/revolver/colt357
 	shoes = 		/obj/item/clothing/shoes/f13/explorer
@@ -163,6 +165,8 @@ Mayor
 	..()
 	if(visualsOnly)
 		return
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/combatcarbine)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/combatrifle)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, REF(src))
 
 /*--------------------------------------------------------------*/

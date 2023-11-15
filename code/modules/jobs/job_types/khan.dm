@@ -35,11 +35,8 @@
 		return
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/set_vrboard/den)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/trail_carbine)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/grease_gun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/varmintrifle)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/typewriter)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/combatrifle) //Needs more thought.
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/uzi)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg10mm)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gate_khanate)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/scrapsabre_khan)
 
@@ -96,6 +93,7 @@
 	loadout_options = list(
 		/datum/outfit/loadout/soldier,
 		/datum/outfit/loadout/soldierb,
+		/datum/outfit/loadout/soldierc,
 		)
 
 /datum/job/khan/chemist
@@ -141,23 +139,35 @@
 /datum/outfit/loadout/soldier
 	name = "Heavy Enforcer"
 	belt = /obj/item/storage/backpack/spearquiver
-	l_hand = /obj/item/shield/riot/buckler/stop
-	r_hand = /obj/item/melee/onehanded/machete/scrapsabre/khan
+	r_hand = /obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/armored
 	head = /obj/item/clothing/head/helmet/f13/khan
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
+		/obj/item/melee/onehanded/knife/bayonet = 1,
 		/obj/item/book/granter/trait/bigleagues = 1)
 
 /datum/outfit/loadout/soldierb
-	name = "Light Enforcer"
+	name = "Grunt Enforcer"
 	belt = /obj/item/storage/belt/bandolier
-	r_hand = /obj/item/gun/ballistic/automatic/marksman/policerifle_khans
-	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/armored
+	l_hand = /obj/item/melee/onehanded/machete/scrapsabre/khan
+	r_hand = /obj/item/gun/ballistic/automatic/smg/greasegun
+	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
 	head = /obj/item/clothing/head/helmet/f13/khan/bandana
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle = 3,
+		/obj/item/ammo_box/magazine/greasegun/stick = 2,
 		/obj/item/book/granter/trait/trekking = 1)
+
+/datum/outfit/loadout/soldierc
+	name = "Scout Enforcer"
+	r_hand = /obj/item/gun/ballistic/rifle/repeater/trail
+	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
+	head = /obj/item/clothing/head/helmet/f13/khan/bandana
+	backpack_contents = list(
+		/obj/item/ammo_box/m44box = 2,
+		/obj/item/attachments/scope = 1,
+		/obj/item/book/granter/trait/trekking = 1)
+
 
 //CHEMIST =================================================================
 
@@ -166,6 +176,8 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat
 	belt = /obj/item/storage/belt/bandolier
 	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
+		/obj/item/ammo_box/magazine/m9mmds = 2,
 		/obj/item/book/granter/trait/chemistry = 1,
 		/obj/item/book/granter/trait/lowsurgery =1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3)
@@ -185,7 +197,7 @@
 /datum/outfit/loadout/senior
 	name = "True Enforcer"
 	belt = /obj/item/storage/belt/bandolier
-	r_hand = /obj/item/gun/ballistic/shotgun/automatic/combat/neostead
+	r_hand = /obj/item/gun/ballistic/automatic/shotgun/riot
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/coat
 	head = /obj/item/clothing/head/helmet/f13/khan/fullhelm
 	backpack_contents = list(
@@ -218,6 +230,8 @@
 	gloves = /obj/item/clothing/gloves/f13/blacksmith
 	r_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
+		/obj/item/ammo_box/magazine/m9mmds = 2,
 		/obj/item/stack/sheet/metal/twenty = 2,
 		/obj/item/stack/sheet/mineral/wood/twenty = 1,
 		/obj/item/stack/sheet/leather/twenty = 1,
@@ -235,7 +249,8 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/spatha)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/lance)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/lever_action)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/grease_gun)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg10mm)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/vance_gun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingshotgun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/concussion)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/empgrenade)

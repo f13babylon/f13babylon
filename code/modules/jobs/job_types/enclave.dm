@@ -332,7 +332,7 @@
 /datum/job/enclave/enclavecpl
 	title = "Enclave Armored Infantry"
 	flag = F13USCPL
-	total_positions = 1
+	total_positions = 0
 	spawn_positions = 1
 	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. Entrusted with the command of the squads assigned to the bunker, your job is to assist the Lieutenant alongside the scientists."
 	supervisors = "The Sergeants, Gunnery Sergeants, and Lieutenants."
@@ -471,7 +471,7 @@
 /datum/job/enclave/enclavespy
 	title = "Enclave Marine"
 	flag = F13USPRIVATE
-	total_positions = 4
+	total_positions = 2
 	spawn_positions = 4
 	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. You are an enlisted member of the Enclave. Obey your Lieutenant. They set the Enclave's policies. Unfortunately, you've not yet received your PA training."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavespy
@@ -512,7 +512,7 @@
 /datum/job/enclave/enclavesci
 	title = "Enclave Scientist"
 	flag = F13USSCIENTIST
-	total_positions = 2
+	total_positions = 1
 	spawn_positions = 2
 	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. You're responsible for the maintenance of the base and field studies, the knowledge you've accumulated over the years is the only thing keeping the remnants alive. You've dabbled in enough to be considered a Professor in your field of research, but they call you Doctor. Support your dwindling forces and listen to the Lieutenant."
 	supervisors = "Lieutenants, Captains and the Enclave Research & Development Division."
@@ -609,7 +609,7 @@
 /datum/job/enclave/f13BDUTY
 	title = "Enclave Vault Dweller"
 	flag = F13USBDUTY
-	total_positions = 3
+	total_positions = 4
 	spawn_positions = 6
 	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. You're a non-combatant, skilled in a field outside of exterior operations. Given your value, you aren't permitted to engage in conflict."
 	enforces = "You are not permited to leave the base. You are a non-combatant. You cannot join any raids or battles on the surface."

@@ -845,7 +845,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/greasegun = 2,
+		/obj/item/ammo_box/magazine/greasegun/stick = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		)
 
@@ -876,7 +876,7 @@
 		/obj/item/binoculars = 1,
 		/obj/item/restraints/legcuffs/bola/tactical = 1
 	)
-	
+
 /obj/effect/mob_spawn/human/fallout13/tribal/ranged
 	name = "Bow Hunter Spawn"
 	desc = "An entry point for bow hunters to join a battle."

@@ -436,7 +436,7 @@
 
 /obj/item/storage/box/bundlegunner/PopulateContents()
 	new /obj/item/gun/ballistic/automatic/smg/greasegun(src)
-	new /obj/item/ammo_box/magazine/greasegun(src)
+	new /obj/item/ammo_box/magazine/greasegun/stick(src)
 	new /obj/item/clothing/head/helmet/armyhelmet(src)
 	new /obj/item/storage/belt(src)
 	new /obj/item/clothing/under/f13/army(src)

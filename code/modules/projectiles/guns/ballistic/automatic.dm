@@ -251,17 +251,17 @@
 
 //Greasegun				Keywords: 9mm, Automatic, 30 rounds
 /obj/item/gun/ballistic/automatic/smg/greasegun
-	name = "9mm submachine gun"
-	desc = "An inexpensive submachine gun, chambered in 9mm. Very high rate of fire in bursts."
+	name = "Grease Gun"
+	desc = "An inexpensive submachine gun, chambered in .45 ACP. Very high rate of fire in bursts."
 	icon_state = "grease_gun"
 	item_state = "smg9mm"
-	mag_type = /obj/item/ammo_box/magazine/greasegun
+	mag_type = /obj/item/ammo_box/magazine/greasegun/stick
 	spread = 8
 	slowdown = 0.3
 	burst_shot_delay = 2.75
 	is_automatic = TRUE
 	automatic = 1
-	autofire_shot_delay = 2.5
+	autofire_shot_delay = 3
 	can_attachments = TRUE
 	suppressor_state = "uzi_suppressor"
 	suppressor_x_offset = 26
@@ -293,7 +293,7 @@
 	return
 
 /obj/item/gun/ballistic/automatic/smg/greasegun/worn
-	name = "beat up 9mm submachine gun"
+	name = "beat up Grease gun"
 	desc = "What was once an inexpensive, but reliable submachine gun is now an inexpensive piece of shit. It's impressive this thing still fires at all."
 	can_attachments = FALSE
 	spread = 16.5
@@ -322,6 +322,20 @@
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return
+
+/obj/item/gun/ballistic/automatic/smg/greasegun/vance
+	name = "Vance Special"
+	desc = "An inexpensive submachine gun crafted by Khan gunsmiths. Designed after the tales of the firearm used by the infamous couple Vikki and Vance, chambered in .45 ACP. A suppressed barrel has been added and the magwell has been modified to accept special drum magazines."
+	icon_state = "vance"
+	item_state = "smg9mm"
+	icon = 'icons/fallout/objects/guns/ballistic.dmi'
+	mag_type = /obj/item/ammo_box/magazine/greasegun
+	spread = 12
+	slowdown = 0.25
+	autofire_shot_delay = 2.5
+	can_attachments = FALSE
+	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
+
 
 //10mm SMG			Keywords: 10mm, Automatic, 12/24 rounds
 /obj/item/gun/ballistic/automatic/smg/smg10mm
@@ -785,19 +799,35 @@
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 	extra_penetration = 0.15
 
-//Combat Rifle		Keywords: .45 Caliber Rifle, BoS rifle
-/obj/item/gun/ballistic/automatic/combat
-	name = "Combat Rifle"
-	desc = "A .45 semi-automatic combat rifle, produced pre-war for National Guard forces."
-	icon_state = "combat_rifle"
+//Combat Carbine	Keywords: .45 Caliber Rifle, Town rifle
+/obj/item/gun/ballistic/automatic/combatcarbine
+	name = "Combat Carbine"
+	desc = "A .45 semi-automatic combat carbine, produced pre-war for National Guard forces."
+	icon_state = "combat_c"
 	item_state = "combatrifle"
 	icon_prefix = "combatrifle"
 	mag_type = /obj/item/ammo_box/magazine/tommygunm45/stick
-	fire_delay = 3
+	fire_delay = 2
 	burst_size = 1
 	spread = 1
 	slowdown = 0.25
 	extra_penetration = 0.1
+	automatic_burst_overlay = FALSE
+	semi_auto = TRUE
+	fire_sound = 'sound/weapons/gunshot_smg.ogg'
+
+	//Combat Rifle	Keywords: .308 Caliber Rifle, Town rifle
+/obj/item/gun/ballistic/automatic/combat
+	name = "Combat Rifle"
+	desc = "A .308 semi-automatic combat rifle, Modified from carbines produced pre-war for National Guard forces."
+	icon_state = "combat_rifle"
+	item_state = "combatrifle"
+	icon_prefix = "combatrifle"
+	mag_type = /obj/item/ammo_box/magazine/w308
+	fire_delay = 2
+	burst_size = 1
+	spread = 1
+	slowdown = 0.35
 	automatic_burst_overlay = FALSE
 	semi_auto = TRUE
 	fire_sound = 'sound/f13weapons/combatrifle.ogg'
@@ -1404,13 +1434,12 @@
 	slowdown = 1.25
 	recoil = 1
 	mag_type = /obj/item/ammo_box/magazine/lmg
-	fire_delay = 2.7
+	fire_delay = 2
 	burst_shot_delay = 3
 	is_automatic = TRUE
 	automatic = 1
 	autofire_shot_delay = 1.13
 	spread = 12
-	extra_speed = -80
 	can_attachments = FALSE
 	actions_types = null
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'

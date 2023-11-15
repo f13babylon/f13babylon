@@ -226,7 +226,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 	loadout_options = list(
 		/datum/outfit/loadout/palacent,		//Goliath, CQC, Carl Gustaf
-		/datum/outfit/loadout/rangerhunter,	// Hunting Revolver, Brushgun, Spatha
+		/datum/outfit/loadout/rangerhunter,	// Hunting Revolver, AMR, Spatha
 		/datum/outfit/loadout/centurion,	// M1919, Spatha
 		/datum/outfit/loadout/berserkercenturion,	// Love Tap, Berserker Martial Art
 		)
@@ -279,9 +279,9 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Ranger-Hunter Centurion"
 	suit = /obj/item/clothing/suit/armor/f13/legion/rangercent
 	head = /obj/item/clothing/head/helmet/f13/legion/rangercent
-	suit_store = /obj/item/gun/ballistic/rifle/repeater/brush
+	suit_store = /obj/item/gun/ballistic/rifle/mag/antimateriel
 	backpack_contents = list(
-		/obj/item/ammo_box/c4570 = 3,
+		/obj/item/ammo_box/magazine/amr = 2,
 		/obj/item/gun/ballistic/revolver/hunting = 1,
 		/obj/item/melee/onehanded/machete/spatha = 1,
 		)
@@ -408,7 +408,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/job/CaesarsLegion/Legionnaire/f13decan
 	title = "Legion Prime Decanus"
 	flag = F13DECAN
-	total_positions = 1
+	total_positions = 2
 	spawn_positions = 1
 	description = "A experienced officer, often commanding the camp. Give orders, lead patrols."
 	supervisors = "the Veteran Decanus and the Centurion"
@@ -481,13 +481,12 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		)
 
 /datum/outfit/loadout/decprimboom
-	name = "Demolition Prime Decanus"
-	suit_store = /obj/item/gun/ballistic/rocketlauncher
+	name = "Marksman Prime Decanus"
+	suit_store = /obj/item/gun/ballistic/automatic/rangemaster
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/m29 = 1,
 		/obj/item/ammo_box/m44 = 2,
-		/obj/item/grenade/f13/he_grenade = 2,
-		/obj/item/ammo_casing/caseless/rocket = 2,
+		/obj/item/ammo_box/magazine/m762 = 2,
 		)
 
 
@@ -496,7 +495,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/job/CaesarsLegion/Legionnaire/f13decanrec
 	title = "Legion Recruit Decanus"
 	flag = F13DECANREC
-	total_positions = 1
+	total_positions = 2
 	spawn_positions = 1
 	description = "The junior officer, you must train the recruits and test them, and if a suicide charge is needed, lead them to a glorious death."
 	supervisors = "the Prime/Veteran Decanus and the Centurion"
@@ -508,7 +507,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 	loadout_options = list(
 		/datum/outfit/loadout/recdeclegion,	// Uzi, Lance, Smokebomb
-		/datum/outfit/loadout/recdectribal,	// M1 Garand, Throwing spears, Reinforced machete, Bottlecap mine
+		/datum/outfit/loadout/recdectribal,	// Trail Carbine, Throwing spears, Reinforced machete, Bottlecap mine
 		)
 
 	matchmaking_allowed = list(
@@ -556,9 +555,9 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/loadout/recdectribal
 	name = "Blackliner Decanus"
-	suit_store = /obj/item/gun/ballistic/automatic/m1garand
+	suit_store = /obj/item/gun/ballistic/rifle/repeater/trail
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/garand308 = 2,
+		/obj/item/ammo_box/tube/m44 = 2,
 		/obj/item/melee/onehanded/machete/forgedmachete = 1,
 		/obj/item/storage/backpack/spearquiver = 1,
 		/obj/item/bottlecap_mine = 1,
@@ -576,7 +575,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/job/CaesarsLegion/Legionnaire/f13vexillarius
 	title = "Legion Vexillarius"
 	flag = F13VEXILLARIUS
-	total_positions = 2
+	total_positions = 1
 	spawn_positions = 2
 	description = "You are a Veteran of proven bravery. When not fighting, relay orders from the commander and act as a bodyguard."
 	supervisors = "the Veteran Decanus and Centurion"
@@ -722,10 +721,9 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/outfit/loadout/expsniper
 	name = "Sniper"
 	glasses = /obj/item/clothing/glasses/sunglasses/big
-	suit_store = /obj/item/gun/ballistic/rifle/repeater/trail
+	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper/snipervenator
 	backpack_contents = list(
-		/obj/item/ammo_box/tube/m44 = 2,
-		/obj/item/attachments/scope = 1,
+		/obj/item/ammo_box/magazine/w308 = 2,
 		/obj/item/gun/ballistic/revolver/revolver45 = 1,
 		/obj/item/ammo_box/c45rev = 1,
 		)
@@ -835,7 +833,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/job/CaesarsLegion/Legionnaire/f13legionary
 	title = "Prime Legionnaire"
 	flag = F13LEGIONARY
-	total_positions = 4
+	total_positions = 3
 	spawn_positions = 4
 	description = "A front line soldier who has shown ability to obey and fought in some battles. The Legions muscle, the young men who will build the future with their own blood and sacrifice, for Caesar."
 	supervisors = "the Decani and Centurion"
@@ -884,10 +882,10 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/loadout/primelancer
 	name = "Guardian"
-	suit_store = /obj/item/gun/ballistic/revolver/colt357
+	suit_store = /obj/item/gun/ballistic/revolver/m29
 	r_hand = /obj/item/shield/riot/legion
 	backpack_contents = list(
-		/obj/item/ammo_box/a357 = 3,
+		/obj/item/ammo_box/m44 = 2,
 		)
 
 /datum/outfit/loadout/primerifle
@@ -912,7 +910,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/job/CaesarsLegion/Legionnaire/f13recleg
 	title = "Recruit Legionnaire"
 	flag = F13RECRUITLEG
-	total_positions = 5
+	total_positions = 4
 	spawn_positions = 5
 	description = "You have recently been transfered or inducted into The Legion. You have minimal training, and are expected to follow every whim of the Decani and your Centurion. Respect every soldier of higher rank."
 	supervisors = "the Decani and Centurion."
@@ -959,15 +957,17 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Tribal Recruit"
 	suit_store = /obj/item/melee/onehanded/machete/gladius
 	backpack_contents = list(
+	/obj/item/gun/ballistic/revolver/colt357 = 1,
+		/obj/item/ammo_box/a357 = 2,
 		/obj/item/shield/riot/buckler = 1,
 		/obj/item/warpaint_bowl = 1,
 		)
 
 /datum/outfit/loadout/recruitlegion
 	name = "Born in the East"
-	suit_store = /obj/item/gun/ballistic/revolver/widowmaker
+	suit_store = /obj/item/gun/ballistic/rifle/repeater/cowboy
 	backpack_contents = list(
-		/obj/item/ammo_box/shotgun/buck = 3,
+		/obj/item/ammo_box/a357 = 2,
 		/obj/item/reagent_containers/food/drinks/bottle/molotov/filled = 2,
 		/obj/item/lighter/greyscale = 1,
 		)
@@ -1020,7 +1020,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	flag = F13CAMPFOLLOWER
 	total_positions = 1
 	spawn_positions = 2
-	description = "The Forgemaster makes weapons of all sorts and upgrades them, keeping order in the Forge and makes sure the camp is defended."
+	description = "The Forgemaster makes weapons of all sorts and upgrades them, keeping order in the Forge and makes sure the camp is defended as you should not leave it."
 	supervisors = "the Centurion."
 	display_order = JOB_DISPLAY_ORDER_CAMPFOLLOWER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower
@@ -1076,7 +1076,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/job/CaesarsLegion/auxilia
 	title = "Legion Auxilia"
 	flag = F13AUXILIA
-	total_positions = 3
+	total_positions = 2
 	spawn_positions = 3
 	description = "A non-combat position in the Legion for free citizens who perform tasks that need special training, such as surgery. They are loyal to the Legion even if they are not treated as equals to warriors."
 	supervisors = "the Centurion"

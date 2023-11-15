@@ -92,7 +92,7 @@
 	desc = "should not exist"
 	can_scope = TRUE
 	scope_state = "scope_long"
-	fire_delay = 3
+	fire_delay = 1
 	slowdown = 0.2
 	scope_x_offset = 5
 	scope_y_offset = 13
@@ -135,7 +135,7 @@
 	item_state = "brushgun"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube4570
 	extra_speed = 100
-	fire_delay = 3
+	fire_delay = 2
 	recoil = 0.15
 	fire_sound = 'sound/f13weapons/brushgunfire.ogg'
 	extra_penetration = 0.12

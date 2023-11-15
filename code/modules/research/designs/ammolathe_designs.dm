@@ -213,10 +213,10 @@
 	category = list("initial", "Basic Magazines")
 
 /datum/design/ammolathe/greasegunmag
-	name = "empty grease submachine gun magazine (9mm)"
+	name = "empty grease submachine gun magazine (.45 ACP)"
 	id = "greasegunmag"
 	materials = list(/datum/material/iron = 4000)
-	build_path = /obj/item/ammo_box/magazine/greasegun/empty
+	build_path = /obj/item/ammo_box/magazine/greasegun/stick/empty
 	category = list("initial", "Basic Magazines")
 
 /datum/design/ammolathe/mini_uzimag
@@ -425,6 +425,14 @@
 	materials = list(/datum/material/iron = 6000)
 	build_path = /obj/item/ammo_box/magazine/smg14/empty
 	category = list("initial", "Intermediate Magazines")
+
+/datum/design/ammolathe/greasegundrum
+	name = "empty grease submachine gun drum magazine (.45 ACP)"
+	id = "greasegundrummag"
+	materials = list(/datum/material/iron = 6000)
+	build_path = /obj/item/ammo_box/magazine/greasegun/empty
+	category = list("initial", "Intermediate Magazines")
+
 
 /datum/design/ammolathe/m22smg
 	name = "empty toploader magazine (.22lr)"
