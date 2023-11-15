@@ -11503,7 +11503,6 @@
 /obj/structure/window/reinforced/spawner,
 /obj/item/m2flamethrowertank,
 /obj/item/gun/ballistic/automatic/r84,
-/obj/effect/spawner/bundle/f13/fnfal,
 /obj/effect/spawner/bundle/f13/needler,
 /obj/effect/spawner/bundle/f13/needler,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier3,
