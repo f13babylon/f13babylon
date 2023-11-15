@@ -704,6 +704,9 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/warren)
+"aDL" = (
+/turf/closed/wall/f13/supermart,
+/area/f13/caves)
 "aEg" = (
 /obj/machinery/light/broken{
 	dir = 1
@@ -4525,6 +4528,22 @@
 	dir = 4
 	},
 /area/f13/wasteland/warren)
+"emT" = (
+/obj/structure/closet/cabinet,
+/obj/item/clothing/under/f13/ncr/conscript,
+/obj/item/clothing/under/f13/ncr/conscript,
+/obj/item/clothing/under/f13/ncr/conscript,
+/obj/item/clothing/under/f13/ncr/conscript,
+/obj/item/clothing/under/f13/ncr/conscript,
+/obj/item/clothing/under/f13/ncr/conscript,
+/obj/item/clothing/under/f13/ncr/conscript,
+/obj/item/clothing/under/f13/ncr/conscript,
+/obj/item/clothing/under/f13/ncr/conscript,
+/obj/item/clothing/under/f13/ncr/conscript,
+/turf/open/floor/plasteel/f13/vault_floor/dark{
+	icon_state = "darkdirty"
+	},
+/area/f13/ncr)
 "ena" = (
 /obj/structure/sign/poster/prewar/poster72,
 /turf/closed/wall/f13/vault{
@@ -7250,6 +7269,14 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/ncr)
+"gLV" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/ncr)
 "gMe" = (
 /obj/structure/table/wood,
 /turf/open/indestructible/ground/outside/sidewalk,
@@ -7262,12 +7289,19 @@
 	},
 /area/f13/city)
 "gMI" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/structure/barricade/bars,
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
+/obj/structure/closet/cabinet,
+/obj/item/clothing/under/f13/ncr/ncr_shorts,
+/obj/item/clothing/under/f13/ncr/ncr_shorts,
+/obj/item/clothing/under/f13/ncr/ncr_shorts,
+/obj/item/clothing/under/f13/ncr/ncr_shorts,
+/obj/item/clothing/under/f13/ncr/ncr_shorts,
+/obj/item/clothing/under/f13/ncr/pants,
+/obj/item/clothing/under/f13/ncr/pants,
+/obj/item/clothing/under/f13/ncr/pants,
+/obj/item/clothing/under/f13/ncr/pants,
+/obj/item/clothing/under/f13/ncr/pants,
+/turf/open/floor/plasteel/f13/vault_floor/dark{
+	icon_state = "darkdirty"
 	},
 /area/f13/ncr)
 "gNp" = (
@@ -20778,6 +20812,16 @@
 /obj/effect/decal/cleanable/glass,
 /turf/open/indestructible/ground/outside/savannah/bottomleft,
 /area/f13/wasteland/warren)
+"tLz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/ncr)
 "tLN" = (
 /obj/structure/reagent_dispensers/barrel/explosive{
 	pixel_x = -7
@@ -20803,6 +20847,23 @@
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/city)
+"tMz" = (
+/obj/structure/closet/cabinet,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/item/clothing/under/f13/ncr,
+/obj/machinery/light/small,
+/turf/open/floor/plasteel/f13/vault_floor/dark{
+	icon_state = "darkdirty"
+	},
+/area/f13/ncr)
 "tMG" = (
 /obj/machinery/smartfridge/bottlerack/drug_storage,
 /obj/effect/spawner/lootdrop/f13/bomb/tier1,
@@ -22980,6 +23041,15 @@
 	icon_state = "horizontaloutermain1"
 	},
 /area/f13/wasteland/warren)
+"vCM" = (
+/obj/structure/closet/crate{
+	anchored = 1;
+	can_be_unanchored = 1
+	},
+/obj/effect/spawner/lootdrop/f13/ncr_k_ration,
+/obj/machinery/light/small,
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "vCO" = (
 /obj/structure/barricade/tentclothedge{
 	dir = 8;
@@ -46581,15 +46651,15 @@ nkj
 uAm
 nkj
 nkj
-gMI
+hTM
 jAX
+tLz
 laS
-laS
 nkj
 nkj
-gMI
+hTM
 nkj
-nkj
+gLV
 nkj
 nkj
 plH
@@ -60730,7 +60800,7 @@ xaA
 otG
 rPr
 goE
-pLS
+goE
 qZx
 qZx
 "}
@@ -60986,8 +61056,8 @@ xQr
 baC
 guq
 lrJ
+gMI
 goE
-pLS
 qZx
 qZx
 "}
@@ -61243,8 +61313,8 @@ lrJ
 nRO
 lrJ
 lrJ
+tMz
 goE
-pLS
 qZx
 qZx
 "}
@@ -61496,12 +61566,12 @@ cJB
 lrJ
 nRO
 goE
-wMp
-rYD
-ggv
-gXJ
+nRO
+nRO
+nRO
+nRO
+emT
 goE
-pLS
 qZx
 qZx
 "}
@@ -61753,12 +61823,12 @@ cJB
 lrJ
 icS
 goE
+wMp
+rYD
+ggv
+gXJ
 goE
 goE
-goE
-goE
-goE
-pLS
 pLS
 qZx
 "}
@@ -62010,10 +62080,10 @@ goE
 vhR
 nRO
 goE
-dKQ
-rjq
-qFq
-xeU
+goE
+goE
+goE
+goE
 goE
 pLS
 pLS
@@ -62266,11 +62336,11 @@ cJB
 ehI
 nRO
 lrJ
-hpn
+goE
+dKQ
+rjq
 qFq
-qFq
-qFq
-wFO
+xeU
 goE
 pLS
 pLS
@@ -62523,11 +62593,11 @@ cJB
 erv
 nRO
 lrJ
-goE
-ybe
+hpn
 qFq
 qFq
-wFO
+qFq
+vCM
 goE
 pLS
 pLS
@@ -62781,10 +62851,10 @@ goE
 nRO
 nRO
 goE
-xeU
+ybe
 qFq
 qFq
-xeU
+wFO
 goE
 pLS
 pLS
@@ -63038,10 +63108,10 @@ goE
 duQ
 goE
 goE
-goE
-goE
-goE
-goE
+xeU
+qFq
+qFq
+xeU
 goE
 pLS
 pLS
@@ -63295,11 +63365,11 @@ xzR
 cJB
 uPe
 goE
-pLS
-pLS
-pLS
-pLS
-pLS
+aDL
+aDL
+aDL
+aDL
+aDL
 pLS
 qZx
 qZx
