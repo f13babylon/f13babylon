@@ -788,8 +788,6 @@
 							iter_wound.replace_wound(/datum/wound/slash/moderate)
 					else if (WOUND_SEVERITY_MODERATE)
 						iter_wound.remove_wound()
-					else
-						return
 
 	M.hallucination = max(M.hallucination, is_tribal ? 0 : 10)
 	..()
