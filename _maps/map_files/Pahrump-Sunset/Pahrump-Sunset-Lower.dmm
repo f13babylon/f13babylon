@@ -8746,6 +8746,7 @@
 	dir = 1;
 	light_color = "#e8eaff"
 	},
+/obj/item/glasswork/glass_base/glass_lens,
 /turf/open/floor/f13{
 	icon_state = "greenrustyfull"
 	},
@@ -14270,6 +14271,8 @@
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel/bighorn)
 "oHs" = (
