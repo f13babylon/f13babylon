@@ -11324,10 +11324,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"lAF" = (
-/mob/living/simple_animal/bot/cleanbot,
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/building)
 "lAU" = (
 /obj/structure/flora/grass/wasteland,
 /turf/open/indestructible/ground/outside/dirt/harsh{
@@ -72392,7 +72388,7 @@ pIm
 ifb
 bie
 vhd
-lAF
+vhd
 vSA
 uyG
 drm

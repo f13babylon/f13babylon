@@ -7568,11 +7568,6 @@
 "eBa" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/box,
-/obj/item/integrated_electronics/analyzer,
-/obj/item/integrated_electronics/debugger,
-/obj/item/integrated_electronics/detailer,
-/obj/item/integrated_electronics/wirer,
-/obj/item/integrated_circuit_printer,
 /turf/open/floor/plasteel/darkpurple/side{
 	dir = 9
 	},
@@ -12128,7 +12123,6 @@
 /area/f13/bunker)
 "lqA" = (
 /obj/structure/table,
-/obj/item/integrated_circuit_printer,
 /obj/machinery/light/broken,
 /turf/open/floor/plasteel/darkpurple/side,
 /area/f13/building/museum)
