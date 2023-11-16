@@ -74,13 +74,10 @@
 /turf/open/floor/plasteel/freezer,
 /area/f13/brotherhood)
 "aav" = (
-/obj/structure/barricade/bars{
-	max_integrity = 800;
-	obj_integrity = 800
-	},
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
+/obj/structure/simple_door/metal/ventilation,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "aaw" = (
@@ -117,7 +114,10 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "aaC" = (
-/obj/structure/timeddoor/sixtyminute,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/item/target/clown,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "aaD" = (
@@ -825,8 +825,9 @@
 	},
 /area/f13/building/massfusion)
 "ada" = (
-/obj/structure/timeddoor/sixtyminute,
-/turf/closed/indestructible/rock,
+/obj/structure/nest/scorpion,
+/obj/effect/decal/cleanable/oil/slippery,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "adb" = (
 /obj/effect/decal/cleanable/dirt,
@@ -23769,7 +23770,7 @@
 	},
 /area/f13/wasteland/massfusion)
 "cIb" = (
-/obj/machinery/chem_master,
+/obj/machinery/chem_master/advanced,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "cIK" = (
@@ -38563,10 +38564,9 @@
 	},
 /area/f13/building/massfusion)
 "lJl" = (
-/obj/structure/barricade/bars{
-	max_integrity = 800;
-	name = "strong metal bars";
-	obj_integrity = 800
+/obj/structure/simple_door/metal/ventilation,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
@@ -38630,6 +38630,13 @@
 /obj/effect/decal/remains/human,
 /turf/open/floor/f13/wood,
 /area/f13/building/museum)
+"lLi" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/mob/living/simple_animal/hostile/radscorpion/black,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/caves)
 "lLu" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 1;
@@ -49782,6 +49789,11 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland/west)
+"sqZ" = (
+/obj/effect/turf_decal/weather/dirt,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier4,
+/turf/open/indestructible/ground/outside/water,
+/area/f13/caves)
 "srb" = (
 /obj/structure/chair,
 /obj/effect/decal/cleanable/dirt,
@@ -50009,6 +50021,15 @@
 	dir = 1
 	},
 /area/f13/village)
+"sAu" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/indestructible/ground/outside/water,
+/area/f13/caves)
 "sAA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/caution/stand_clear/red{
@@ -55968,6 +55989,13 @@
 /obj/item/trash/candy,
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/building/hospital)
+"wbb" = (
+/obj/structure/sink/deep_water,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/turf/open/indestructible/ground/outside/water,
+/area/f13/caves)
 "wbh" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/red/line{
@@ -56997,6 +57025,10 @@
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland/bighorn)
+"wDX" = (
+/mob/living/simple_animal/hostile/radscorpion,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "wEd" = (
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland/west)
@@ -113797,10 +113829,10 @@ aaa
 aae
 aae
 aae
-ada
+aaa
+xpV
 aaC
-aaC
-ada
+aaa
 aaa
 aae
 aae
@@ -114055,9 +114087,9 @@ aaa
 aae
 aaa
 afn
-lTe
-lTe
-aaB
+sAu
+aaa
+aaa
 aaa
 aae
 aae
@@ -114310,10 +114342,10 @@ aaa
 aae
 aae
 aaa
-aaB
-aaB
-lTe
-aaB
+aaa
+aaa
+aaa
+aaa
 aae
 aaa
 aae
@@ -114567,9 +114599,9 @@ aaa
 aae
 aae
 aae
-aaB
-bfy
-lTe
+aaa
+wbb
+rhY
 afn
 aae
 aaa
@@ -114825,8 +114857,8 @@ aae
 aae
 aae
 afn
-lTe
-lTe
+xpV
+sqZ
 aae
 aae
 aaa
@@ -115082,8 +115114,8 @@ aae
 aae
 aae
 afn
-lTe
-lTe
+xpV
+nkd
 aae
 aae
 aae
@@ -115339,10 +115371,10 @@ aae
 aae
 aae
 afn
-lTe
-lTe
+xpV
+nkd
 aaB
-aaB
+wDX
 aae
 aae
 aae
@@ -115596,10 +115628,10 @@ aae
 aae
 aae
 aae
+ohZ
 lTe
-lTe
-lTe
-aaB
+rhY
+ada
 aaB
 aae
 aae
@@ -115854,10 +115886,10 @@ aae
 aae
 aae
 afn
+lLi
 lTe
-lTe
-lTe
-lTe
+kdn
+rhY
 afn
 ahz
 afn
@@ -116112,13 +116144,13 @@ aae
 aae
 aae
 afn
-lTe
+xpV
 lTe
 lTe
 lJl
-lTe
-lTe
-lTe
+kdn
+kdn
+rhY
 afn
 aaa
 aaa
@@ -116369,13 +116401,13 @@ aae
 aae
 aae
 afn
-lTe
-lTe
-lTe
+ohZ
+abO
+abO
 aav
 abO
 lTe
-lTe
+nkd
 afn
 aae
 aae
@@ -116633,7 +116665,7 @@ afn
 rMv
 ohZ
 lTe
-nkd
+rhY
 rMv
 aae
 aae
