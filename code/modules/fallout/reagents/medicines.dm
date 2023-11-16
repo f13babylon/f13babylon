@@ -777,7 +777,6 @@
 							iter_wound.replace_wound(/datum/wound/pierce/severe)
 						else
 							iter_wound.replace_wound(/datum/wound/slash/severe)
-
 					else if (WOUND_SEVERITY_SEVERE)
 						if (iter_wound.wound_type == WOUND_BLUNT)
 							iter_wound.replace_wound(/datum/wound/blunt/moderate)
@@ -787,10 +786,8 @@
 							iter_wound.replace_wound(/datum/wound/pierce/moderate)
 						else
 							iter_wound.replace_wound(/datum/wound/slash/moderate)
-
 					else if (WOUND_SEVERITY_MODERATE)
 						iter_wound.remove_wound()
-
 					else
 						return
 
