@@ -100,9 +100,9 @@
 
 /obj/item/gun/ballistic/minigunbal5mm
 	name = "CZ53 personal minigun"
-	desc = "Boasting an extreme rate of fire, the Rockwell CZ53 personal minigun is the perfect weapon for suppressing fire."
-	icon = 'icons/obj/guns/minigun.dmi'
-	icon_state = "minigunbal_spin"
+	desc = "Boasting an extreme rate of fire, the Rockwell CZ53 personal minigun is the perfect weapon for suppressing fire. Chambered in 5mm."
+	icon = 'icons/obj/guns/gunfruits2022/special.dmi'
+	icon_state = "cz53"
 	item_state = "minigun"
 	flags_1 = CONDUCT_1
 	slowdown = 1.8

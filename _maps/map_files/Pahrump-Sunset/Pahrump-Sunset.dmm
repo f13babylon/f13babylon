@@ -116,10 +116,6 @@
 "aaB" = (
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"aaC" = (
-/obj/structure/timeddoor/sixtyminute,
-/turf/open/indestructible/ground/outside/water,
-/area/f13/caves)
 "aaD" = (
 /turf/closed/wall/r_wall/rust,
 /area/f13/bunker)
@@ -824,10 +820,6 @@
 	icon_state = "horizontalinnermain0"
 	},
 /area/f13/building/massfusion)
-"ada" = (
-/obj/structure/timeddoor/sixtyminute,
-/turf/closed/indestructible/rock,
-/area/f13/caves)
 "adb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bedsheetbin,
@@ -4128,6 +4120,9 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
+/obj/machinery/light/sign/heaven{
+	pixel_y = 32
+	},
 /turf/open/floor/wood,
 /area/f13/bar/heaven)
 "aqz" = (
@@ -6642,12 +6637,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/village)
-"azD" = (
-/obj/structure/ladder/unbreakable{
-	id = "khanladder"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/bar/heaven)
 "azF" = (
 /obj/structure/rack,
 /turf/open/floor/f13/wood,
@@ -9870,7 +9859,7 @@
 /area/f13/wasteland/east)
 "aKi" = (
 /obj/machinery/light/small{
-	dir = 4
+	dir = 1
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bar/heaven)
@@ -10484,7 +10473,6 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/item/bot_assembly/cleanbot,
 /turf/open/floor/plasteel/f13{
 	icon_state = "plating"
 	},
@@ -11794,11 +11782,9 @@
 	},
 /area/f13/wasteland/west)
 "aQA" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/bar/heaven)
+/obj/machinery/vending/coffee,
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland/heaven)
 "aQB" = (
 /obj/structure/urinal{
 	dir = 8;
@@ -11946,10 +11932,6 @@
 	icon_state = "outerpavement"
 	},
 /area/f13/wasteland/east)
-"aQZ" = (
-/obj/item/metaldetector,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/bar/heaven)
 "aRa" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/simple_door/house,
@@ -14383,10 +14365,6 @@
 	name = "reinforced wooden wall"
 	},
 /area/f13/city/bighorn)
-"aZq" = (
-/obj/item/storage/trash_stack,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/bar/heaven)
 "aZr" = (
 /obj/machinery/vending/cola/starkist,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -23950,7 +23928,6 @@
 /obj/structure/displaycase,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/floor,
-/mob/living/simple_animal/bot/cleanbot,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -24606,7 +24583,6 @@
 "dmq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/bot/cleanbot,
 /turf/open/floor/plasteel/f13{
 	icon_state = "plating"
 	},
@@ -25156,7 +25132,6 @@
 /area/f13/tunnel/southeast)
 "dCD" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/bot_assembly/cleanbot,
 /obj/effect/landmark/poster_spawner/pinup{
 	pixel_y = 32
 	},
@@ -30887,10 +30862,6 @@
 	icon_state = "horizontaloutermain2"
 	},
 /area/f13/wasteland/bighorn)
-"haL" = (
-/obj/machinery/light/sign/chiken_ranch,
-/turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/wasteland/heaven)
 "haR" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -37643,16 +37614,6 @@
 /obj/item/clothing/under/misc/pinktutu,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"lhW" = (
-/obj/structure/decoration/rag{
-	icon_state = "flag_ncr";
-	name = "NCR banner";
-	pixel_y = 32
-	},
-/turf/open/indestructible/ground/outside/dirt{
-	icon_state = "dirt"
-	},
-/area/f13/wasteland/quarry)
 "lih" = (
 /obj/structure/fence,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -39589,12 +39550,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess/neutralchess2,
 /area/f13/building/firestation)
-"mkR" = (
-/obj/machinery/vending/coffee,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "horizontaloutermain2"
-	},
-/area/f13/wasteland/heaven)
 "mkU" = (
 /obj/structure/closet/fridge,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
@@ -41677,16 +41632,11 @@
 	},
 /area/f13/wasteland/nanotrasen)
 "nyh" = (
-/obj/structure/decoration/rag{
-	icon_state = "flag_ncr";
-	name = "NCR banner";
-	pixel_y = -32
+/obj/machinery/light/sign/heaven{
+	pixel_y = 32
 	},
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 1;
-	icon_state = "dirt"
-	},
-/area/f13/wasteland/quarry)
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland/heaven)
 "nyy" = (
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_6"
@@ -53363,7 +53313,7 @@
 /area/f13/wasteland/west)
 "uxq" = (
 /obj/structure/barricade/wooden,
-/obj/structure/timeddoor/onetwozerominutes,
+/obj/structure/timeddoor/sixtyminute,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "uxE" = (
@@ -55437,7 +55387,6 @@
 /area/f13/wasteland/firestation)
 "vJJ" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/bot/cleanbot,
 /turf/open/floor/plasteel/f13{
 	icon_state = "plating"
 	},
@@ -71797,8 +71746,8 @@ aYY
 aYY
 anx
 anx
-aHz
-aHz
+anx
+anx
 anx
 anx
 anx
@@ -72053,12 +72002,12 @@ anx
 aYY
 anx
 anx
-aHz
-aHz
-aHz
-aHz
-aHz
-aZq
+anx
+anx
+anx
+anx
+anx
+anx
 anx
 anx
 anx
@@ -72310,11 +72259,11 @@ anx
 anx
 anx
 anx
-aHz
-aKi
-aHz
+anx
 aHz
 aHz
+anx
+anx
 aXW
 aXW
 aXW
@@ -72566,11 +72515,11 @@ anx
 anx
 anx
 anx
+anx
 ans
+aKi
 aHz
-ans
 aHz
-ans
 aHz
 aXW
 aqf
@@ -72823,7 +72772,7 @@ anx
 anx
 anx
 anx
-azD
+anx
 aHz
 aHz
 aHz
@@ -73080,11 +73029,11 @@ anx
 anx
 anx
 anx
+anx
 ans
+aKi
 aHz
-ans
 aHz
-ans
 aHz
 aXW
 aqf
@@ -73338,11 +73287,11 @@ aYY
 aYY
 anx
 anx
-aQZ
-aQA
+anx
 aHz
+agw
 aHz
-aHz
+gKb
 aXW
 aqf
 bbB
@@ -73597,9 +73546,9 @@ anx
 anx
 anx
 anx
-agw
+aYl
 aHz
-gKb
+aYl
 aXW
 aXW
 bbB
@@ -74111,9 +74060,9 @@ anx
 anx
 anx
 anx
-aYl
-aHz
-aYl
+anx
+anx
+anx
 aXW
 aqv
 lGu
@@ -77722,7 +77671,7 @@ aXW
 aXW
 aXW
 aXW
-hqc
+nyh
 hqc
 hqc
 laM
@@ -77976,9 +77925,9 @@ hqc
 hqc
 hqc
 hqc
-hqc
+aQA
 cps
-mkR
+aXW
 cqZ
 hqc
 hqc
@@ -78493,7 +78442,7 @@ cqZ
 cqZ
 cqZ
 cqZ
-haL
+hqc
 hqc
 hqc
 nTX
@@ -102022,9 +101971,9 @@ aae
 aae
 aae
 adg
-lhW
+nrn
 xjM
-nyh
+prR
 adg
 aae
 aae
@@ -113802,10 +113751,10 @@ aaa
 aae
 aae
 aae
-ada
-aaC
-aaC
-ada
+aaa
+lTe
+lTe
+aaa
 aaa
 aae
 aae
