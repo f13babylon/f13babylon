@@ -26,10 +26,10 @@
 		if(get_dist(M, turf_source) <= maxdistance)
 			M.playsound_local(turf_source, soundin, vol, vary, frequency, falloff, channel, pressure_affected, S, soundenvwet, soundenvdry)
 
-/mob/proc/playsound_local(turf/turf_source, soundin, vol as num, vary, frequency, falloff, channel = 0, pressure_affected = TRUE, sound/S, envwet = -10000, envdry = 0, manual_x, manual_y, distance_multiplier = 1)
+/mob/proc/playsound_local(turf/turf_source, soundin, vol as num, vary, frequency, falloff, channel = 0, pressure_affected = FALSE, sound/S, envwet = -10000, envdry = 0, manual_x, manual_y, distance_multiplier = 1)
 	if(audiovisual_redirect)
 		var/turf/T = get_turf(src)
-		audiovisual_redirect.playsound_local(turf_source, soundin, vol, vary, frequency, falloff, channel, pressure_affected, S, 0, -1000, turf_source.x - T.x, turf_source.y - T.y, distance_multiplier)
+		audiovisual_redirect.playsound_local(turf_source, soundin, vol, vary, frequency, falloff, channel, S, 0, -1000, turf_source.x - T.x, turf_source.y - T.y, distance_multiplier)
 	if(!client || !can_hear())
 		return
 
@@ -59,7 +59,7 @@
 
 		S.volume -= max(distance - world.view, 0) * 2 //multiplicative falloff to add on top of natural audio falloff.
 
-		/*
+
 		if(pressure_affected)
 			//Atmosphere affects sound
 			var/pressure_factor = 1
@@ -71,7 +71,7 @@
 				if(pressure < ONE_ATMOSPHERE)
 					pressure_factor = max((pressure - SOUND_MINIMUM_PRESSURE)/(ONE_ATMOSPHERE - SOUND_MINIMUM_PRESSURE), 0)
 			else //space
-				pressure_factor = 0
+				pressure_factor = 1
 
 			S.echo = list(envdry, null, envwet, null, null, null, null, null, null, null, null, null, null, 1, 1, 1, null, null)
 
@@ -80,7 +80,7 @@
 
 			S.volume *= pressure_factor
 			//End Atmosphere affecting sound
-		*/
+
 
 		if(S.volume <= 0)
 			return //No sound
