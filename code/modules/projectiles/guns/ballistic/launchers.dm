@@ -2,10 +2,11 @@
 //Put handheld rocket launchers here if someone ever decides to make something so hilarious ~Paprika
 
 /obj/item/gun/ballistic/revolver/grenadelauncher
+	name = "grenade rifle"
 	desc = "A break-operated grenade rifle. Projectiles travel slowly."
-	name = "M79 grenade launcher"
-	icon_state = "dshotgun-sawn"
-	item_state = "gun"
+	icon = 'icons/obj/guns/gunfruits2022/special.dmi'
+	icon_state = "thumper"
+	item_state = "shotgunpump"
 	inaccuracy_modifier = 0.5
 	mag_type = /obj/item/ammo_box/magazine/internal/grenadelauncher
 	fire_sound = 'sound/weapons/grenadelaunch.ogg'
@@ -30,7 +31,7 @@
 	return
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/nonlethal
-	name = "M79-TG grenade launcher"
+	name = "riot grenade rifle"
 	desc = "A break-operated grenade launcher. This one appears modified for riot control."
 	mag_type = /obj/item/ammo_box/magazine/internal/grenadelauncher_nl
 	pin = /obj/item/firing_pin
@@ -81,10 +82,13 @@
 		chamber_round()
 
 /obj/item/gun/ballistic/rocketlauncher
-	name = "\improper rocket launcher"
-	desc = "Technically, this is actually a rocket propelled grenade launcher, rather than a true rocket launcher. The person you shot is unlikely to care much, though."
-	icon_state = "rocketlauncher"
+	name = "\improper missile launcher"
+	desc = "A pre-war US issue re-usable missile launcher in pristine condition, with the ability to load several types of ammunition."
+	icon_state = "rocketlauncha"
+	icon = 'icons/obj/guns/gunfruits2022/special.dmi'
 	item_state = "rocketlauncher"
+	lefthand_file = 'icons/obj/guns/gunfruits2022/inhands.dmi'
+	righthand_file = 'icons/obj/guns/gunfruits2022/inhands.dmi'
 	mag_type = /obj/item/ammo_box/magazine/internal/rocketlauncher
 	fire_sound = 'sound/weapons/rocketlaunch.ogg'
 	w_class = WEIGHT_CLASS_BULKY
