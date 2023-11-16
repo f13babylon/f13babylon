@@ -553,7 +553,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	glass_desc = "Dilluted FEV in a glass of absinthe, topped with a slice of lemon."
 	value = REAGENT_VALUE_UNCOMMON
 
-/datum/reagent/consumable/ethanol/narsour/on_mob_life(mob/living/carbon/M)
+/datum/reagent/consumable/ethanol/fevbath/on_mob_life(mob/living/carbon/M)
 	M.cultslurring = min(M.cultslurring + 3, 3)
 	M.stuttering = min(M.stuttering + 3, 3)
 	..()
@@ -570,7 +570,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	glass_desc = "Not even Maxson could withstand this! Ad victoriam!"
 	value = REAGENT_VALUE_UNCOMMON
 
-/datum/reagent/consumable/ethanol/cogchamp/on_mob_life(mob/living/carbon/M)
+/datum/reagent/consumable/ethanol/bosbrandy/on_mob_life(mob/living/carbon/M)
 	M.clockcultslurring = min(M.clockcultslurring + 3, 3)
 	M.stuttering = min(M.stuttering + 3, 3)
 	..()
