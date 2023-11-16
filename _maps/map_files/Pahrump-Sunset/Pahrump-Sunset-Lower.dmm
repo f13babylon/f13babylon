@@ -6100,8 +6100,13 @@
 	},
 /area/f13/tunnel)
 "cyX" = (
-/obj/machinery/iv_drip,
-/obj/machinery/iv_drip,
+/obj/structure/table,
+/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/gloves/color/latex,
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
 	},
@@ -7276,10 +7281,11 @@
 /turf/open/floor/plating,
 /area/f13/tunnel/bighorn)
 "ehp" = (
-/turf/open/floor/plasteel/darkbrown/side{
-	dir = 8
+/obj/machinery/iv_drip,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
 	},
-/area/f13/brotherhood)
+/area/f13/followers)
 "eii" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/darkred/side{
@@ -11032,6 +11038,14 @@
 /obj/effect/decal/cleanable/vomit,
 /turf/closed/mineral/random/low_chance,
 /area/f13/caves)
+"jNV" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel/darkred/side{
+	dir = 9
+	},
+/area/f13/brotherhood)
 "jOo" = (
 /obj/item/flag/bos{
 	density = 0
@@ -19863,6 +19877,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/machinery/iv_drip,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -42315,7 +42330,7 @@ myk
 pHi
 uAZ
 wHC
-yle
+ehp
 cyX
 yjR
 wZj
@@ -74671,8 +74686,8 @@ aJq
 oVq
 oVq
 oVq
-nZR
-nZR
+oVq
+oVq
 uyb
 uyb
 uyb
@@ -74927,9 +74942,9 @@ ciN
 aJq
 oVq
 aVt
-tau
-ehp
-ehp
+fta
+fta
+fta
 tau
 fta
 fta
@@ -75698,7 +75713,7 @@ onW
 onW
 oVq
 oVq
-ixJ
+jNV
 mIf
 mIf
 wZq
