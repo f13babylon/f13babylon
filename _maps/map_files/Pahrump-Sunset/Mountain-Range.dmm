@@ -2585,6 +2585,7 @@
 "uu" = (
 /obj/structure/rack,
 /obj/machinery/light/small,
+/obj/item/circuitboard/machine/hypnochair,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/enclave)
 "uA" = (
