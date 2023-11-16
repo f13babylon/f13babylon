@@ -92,7 +92,6 @@
 
 // ---------------------------
 // IMITATION STIMPAK FLUID REAGENT
-
 /datum/reagent/medicine/stimpakimitation
 	name = "Imitation Stimpak Fluid"
 	description = "Rapidly heals damage when injected. A poor man's stimpak."
