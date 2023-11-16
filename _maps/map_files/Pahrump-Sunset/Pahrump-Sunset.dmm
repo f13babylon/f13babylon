@@ -23914,6 +23914,12 @@
 	icon_state = "blueyellowfull"
 	},
 /area/f13/building/mall)
+"cNm" = (
+/obj/machinery/limbgrower,
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/followers)
 "cNs" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderleft0"
@@ -30622,6 +30628,18 @@
 	icon_state = "horizontalinnermain2right"
 	},
 /area/f13/wasteland/bighorn)
+"gTn" = (
+/obj/machinery/door/airlock/hatch{
+	id_tag = "brotherhoodmain1";
+	locked = 1;
+	name = "Brotherhood of Steel bunker";
+	req_access_txt = "120"
+	},
+/obj/effect/decal/cleanable/oil/slippery,
+/turf/open/floor/f13{
+	icon_state = "floordirtysolid"
+	},
+/area/f13/brotherhood)
 "gTt" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
@@ -31620,12 +31638,6 @@
 	icon_state = "horizontaloutermain1"
 	},
 /area/f13/wasteland/bighorn)
-"hBo" = (
-/obj/machinery/sleeper,
-/turf/open/floor/f13{
-	icon_state = "bluerustysolid"
-	},
-/area/f13/followers)
 "hBx" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress2";
@@ -40697,6 +40709,12 @@
 /obj/structure/barricade/wooden,
 /turf/closed/wall/f13/wood,
 /area/f13/building)
+"mSG" = (
+/obj/machinery/sleeper,
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/followers)
 "mSJ" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontalbottomborderbottom0"
@@ -45650,12 +45668,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/hobo,
 /turf/open/floor/f13/wood,
 /area/f13/village)
-"pSO" = (
-/obj/machinery/limbgrower,
-/turf/open/floor/f13{
-	icon_state = "bluerustysolid"
-	},
-/area/f13/followers)
 "pTl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/junk/jukebox,
@@ -78303,9 +78315,9 @@ rrO
 aoI
 bzd
 yjm
-hBo
+mSG
 qpv
-pSO
+cNm
 rky
 yjm
 lsP
@@ -106324,7 +106336,7 @@ pbO
 pbO
 pbO
 pbO
-snG
+gTn
 pbO
 snG
 pbO
