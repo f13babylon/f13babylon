@@ -2,10 +2,11 @@
 //Put handheld rocket launchers here if someone ever decides to make something so hilarious ~Paprika
 
 /obj/item/gun/ballistic/revolver/grenadelauncher
+	name = "grenade rifle"
 	desc = "A break-operated grenade rifle. Projectiles travel slowly."
-	name = "M79 grenade launcher"
-	icon_state = "dshotgun-sawn"
-	item_state = "gun"
+	icon = 'icons/obj/guns/gunfruits2022/special.dmi'
+	icon_state = "thumper"
+	item_state = "shotgunpump"
 	inaccuracy_modifier = 0.5
 	mag_type = /obj/item/ammo_box/magazine/internal/grenadelauncher
 	fire_sound = 'sound/weapons/grenadelaunch.ogg'
@@ -13,10 +14,30 @@
 	weapon_weight = WEAPON_HEAVY
 	pin = /obj/item/firing_pin
 
+/obj/item/gun/ballistic/revolver/grenadelauncher/attack_self(mob/living/user)
+	var/num_unloaded = 0
+	chambered = null
+	while (get_ammo() > 0)
+		var/obj/item/ammo_casing/CB
+		CB = magazine.get_round(0)
+		if(CB)
+			CB.forceMove(drop_location())
+			CB.bounce_away(FALSE, NONE)
+			num_unloaded++
+	if (num_unloaded)
+		to_chat(user, "<span class='notice'>You unload [num_unloaded] shell\s from [src].</span>")
+		update_icon()
+	else
+		to_chat(user, "<span class='warning'>[src] is empty!</span>")
+
 /obj/item/gun/ballistic/revolver/grenadelauncher/attackby(obj/item/A, mob/user, params)
 	..()
 	if(istype(A, /obj/item/ammo_box) || istype(A, /obj/item/ammo_casing))
 		chamber_round()
+		update_icon()
+
+/obj/item/gun/ballistic/revolver/grenadelauncher/update_icon_state()
+	icon_state = "[initial(icon_state)]-[chambered ? "1" : "e"]"
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/cyborg
 	desc = "A 6-shot grenade launcher."
@@ -30,7 +51,7 @@
 	return
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/nonlethal
-	name = "M79-TG grenade launcher"
+	name = "riot grenade rifle"
 	desc = "A break-operated grenade launcher. This one appears modified for riot control."
 	mag_type = /obj/item/ammo_box/magazine/internal/grenadelauncher_nl
 	pin = /obj/item/firing_pin
@@ -81,10 +102,13 @@
 		chamber_round()
 
 /obj/item/gun/ballistic/rocketlauncher
-	name = "\improper rocket launcher"
-	desc = "Technically, this is actually a rocket propelled grenade launcher, rather than a true rocket launcher. The person you shot is unlikely to care much, though."
-	icon_state = "rocketlauncher"
+	name = "\improper missile launcher"
+	desc = "A pre-war US issue re-usable missile launcher in pristine condition, with the ability to load several types of ammunition."
+	icon_state = "rocketlauncha"
+	icon = 'icons/obj/guns/gunfruits2022/special.dmi'
 	item_state = "rocketlauncher"
+	lefthand_file = 'icons/obj/guns/gunfruits2022/inhands.dmi'
+	righthand_file = 'icons/obj/guns/gunfruits2022/inhands.dmi'
 	mag_type = /obj/item/ammo_box/magazine/internal/rocketlauncher
 	fire_sound = 'sound/weapons/rocketlaunch.ogg'
 	w_class = WEIGHT_CLASS_BULKY
@@ -140,7 +164,7 @@
 			update_icon()
 
 /obj/item/gun/ballistic/rocketlauncher/update_icon_state()
-	icon_state = "[initial(icon_state)]-[chambered ? "1" : "0"]"
+	icon_state = "[initial(icon_state)]-[chambered ? "1" : "e"]"
 
 /obj/item/gun/ballistic/rocketlauncher/suicide_act(mob/living/user)
 	user.visible_message("<span class='warning'>[user] aims [src] at the ground! It looks like [user.p_theyre()] performing a sick rocket jump!</span>", \

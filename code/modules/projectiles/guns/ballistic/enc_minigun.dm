@@ -104,8 +104,8 @@
 /obj/item/gun/ballistic/encminigunbal4mm
 	name = "Vindicator minigun"
 	desc = "Boasting an extreme rate of fire, the Vindicator minigun is a monster."
-	icon = 'icons/obj/guns/minigun.dmi'
-	icon_state = "minigunbal_spin"
+	icon = 'icons/obj/guns/gunfruits2022/special.dmi'
+	icon_state = "vindicator"
 	item_state = "minigun"
 	flags_1 = CONDUCT_1
 	slowdown = 2
@@ -282,8 +282,8 @@
 	name = "\improper H&K L30"
 	desc = "An advanced laser cannon with an incredible rate of fire. \
 	Requires a bulky backpack power source to use, alongside being refitted for electron charge packs."
-	icon = 'icons/obj/guns/minigun.dmi'
-	icon_state = "minigun_spin"
+	icon = 'icons/obj/guns/gunfruits2022/special.dmi'
+	icon_state = "lasgat"
 	item_state = "minigun"
 	flags_1 = CONDUCT_1
 	slowdown = 1
