@@ -102,11 +102,13 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	damage = 34
 	wound_bonus = 28
 	bare_wound_bonus = 24
+	armour_penetration = 0.2
 
 //.308 Winchester
 /obj/item/projectile/bullet/a762/sport
 	name = ".308 bullet"
 	damage = 28
+	armour_penetration = 0.1
 	wound_bonus = 32
 	bare_wound_bonus = 32
 	supereffective_damage = 14
@@ -129,7 +131,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 /obj/item/projectile/bullet/a762/uraniumtipped
 	name = "7.62 uranium-tipped bullet"
 	damage = 30
-	armour_penetration = 0.2
+	armour_penetration = 0.35
 	irradiate = 30
 
 /obj/item/projectile/bullet/a762/microshrapnel
