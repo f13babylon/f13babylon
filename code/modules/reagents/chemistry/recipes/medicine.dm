@@ -421,14 +421,19 @@
 	required_reagents = list(/datum/reagent/consumable/ethanol/salgam = 10 , /datum/reagent/consumable/ethanol/brocbrew = 10 , /datum/reagent/consumable/sunset = 10 , /datum/reagent/consumable/ethanol/yellowpulque = 10)
 
 /datum/chemical_reaction/drinkneutralization
-	name = "Neutralization reaction"
+	name = "Bitter Drink neutralization reaction"
 	id = "drink_neutralization"
 	results = list(/datum/reagent/water = 1)
-	required_reagents = list(/datum/reagent/medicine/bitter_drink = 1, /datum/reagent/medicine/healing_powder/poultice = 1)
+	required_reagents = list(/datum/reagent/medicine/bitter_drink = 1, /datum/reagent/medicine/healing_powder = 1)
+
+/datum/chemical_reaction/medxneutralization
+	name = "Med-X neutralization reaction"
+	id = "medx_neutralization"
+	results = list(/datum/reagent/water = 1)
+	required_reagents = list(/datum/reagent/medicine/medx = 1, /datum/reagent/medicine/super_stimpak = 1)
 
 /datum/chemical_reaction/rehab
 	name = "Rehab"
 	id = "rehab"
 	results = list(/datum/reagent/medicine/rehab = 1)
 	required_reagents = list(/datum/reagent/medicine/stimpakimitation = 1, /datum/reagent/consumable/ethanol/pungajuice = 1, /datum/reagent/consumable/buffalojuice = 1, /datum/reagent/consumable/ferajuice = 1)
-
