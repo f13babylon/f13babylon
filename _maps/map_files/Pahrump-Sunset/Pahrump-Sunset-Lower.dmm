@@ -6166,17 +6166,6 @@
 /obj/item/clothing/mask/breath,
 /turf/open/floor/plasteel/freezer,
 /area/f13/brotherhood/medical)
-"cDz" = (
-/obj/machinery/light/small,
-/obj/structure/ladder/unbreakable{
-	height = 1;
-	id = "khanladder"
-	},
-/turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2"
-	},
-/area/f13/tunnel)
 "cDS" = (
 /obj/structure/sign/poster/contraband/have_a_puff{
 	pixel_y = 32
@@ -11099,13 +11088,6 @@
 /obj/item/wrench/crude,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkrusty"
-	},
-/area/f13/tunnel)
-"jUI" = (
-/obj/structure/simple_door/bunker,
-/turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2"
 	},
 /area/f13/tunnel)
 "jUU" = (
@@ -51875,9 +51857,9 @@ aaD
 aaD
 aaD
 boU
-bCt
-bCt
-bCt
+boU
+boU
+boU
 aae
 aae
 aae
@@ -52132,9 +52114,9 @@ aaD
 bBR
 abF
 boU
-jUI
-cDz
-bCt
+boU
+boU
+boU
 aae
 aae
 aae
@@ -52389,9 +52371,9 @@ aaD
 aaD
 aaD
 boU
-bCt
-bCt
-bCt
+boU
+boU
+boU
 aae
 aae
 aae
