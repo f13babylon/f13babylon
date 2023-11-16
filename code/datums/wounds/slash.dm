@@ -56,9 +56,9 @@
 	// how much life we have left in these bandages
 	switch(limb.current_gauze.absorption_capacity)
 		if(0 to 1.25)
-			msg += "nearly ruined "
+			msg += "blood-soaked "
 		if(1.25 to 2.75)
-			msg += "badly worn "
+			msg += "badly bloodied "
 		if(2.75 to 4)
 			msg += "slightly bloodied "
 		if(4 to INFINITY)
