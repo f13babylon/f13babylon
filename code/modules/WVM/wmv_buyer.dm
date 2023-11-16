@@ -51,7 +51,6 @@
 								/obj/item/export/bottle/fernet = 25,
 								/obj/item/export/bottle/applejack = 25,
 								/obj/item/export/bottle/champagne = 25,
-								/obj/item/export/bottle/blazaam = 25,
 								/obj/item/export/bottle/trappist = 25,
 								/obj/item/export/bottle/minikeg = 25,
 								/obj/item/export/bottle/nukashine = 100,

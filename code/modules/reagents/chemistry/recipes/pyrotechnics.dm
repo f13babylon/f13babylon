@@ -299,7 +299,7 @@
 	name = "sonic_powder"
 	id = /datum/reagent/sonic_powder
 	results = list(/datum/reagent/sonic_powder = 3)
-	required_reagents = list(/datum/reagent/oxygen = 1, /datum/reagent/consumable/space_cola = 1, /datum/reagent/phosphorus = 1)
+	required_reagents = list(/datum/reagent/oxygen = 1, /datum/reagent/consumable/cola = 1, /datum/reagent/phosphorus = 1)
 
 /datum/chemical_reaction/sonic_powder/on_reaction(datum/reagents/holder, multiplier)
 	if(holder.has_reagent(/datum/reagent/stabilizing_agent))

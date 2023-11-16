@@ -201,14 +201,6 @@
 				)
 	result = /obj/item/export/bottle/champagne
 
-/datum/crafting_recipe/bottle/export/blazaam
-	name = "Sealed bottle of blazaam"
-	reqs = list(/obj/item/stack/sheet/glass = 2,
-				/obj/item/stack/f13Cash = 1,
-				/datum/reagent/consumable/ethanol/blazaam = 50
-				)
-	result = /obj/item/export/bottle/blazaam
-
 /datum/crafting_recipe/bottle/export/trappist
 	name = "Sealed bottle of trappist"
 	reqs = list(/obj/item/stack/sheet/glass = 2,

@@ -306,7 +306,7 @@
 			visible_message("<span class='danger'>[src] destroys [exp_on], leaking dangerous gas!</span>")
 			chosenchem = pick(/datum/reagent/carbon,/datum/reagent/radium,/datum/reagent/toxin,
 							/datum/reagent/consumable/condensedcapsaicin,/datum/reagent/drug/mushroomhallucinogen,
-							/datum/reagent/drug/space_drugs,/datum/reagent/consumable/ethanol,/datum/reagent/consumable/ethanol/beepsky_smash)
+							/datum/reagent/drug/space_drugs,/datum/reagent/consumable/ethanol)
 			var/datum/reagents/R = new/datum/reagents(50)
 			R.my_atom = src
 			R.add_reagent(chosenchem , 50)

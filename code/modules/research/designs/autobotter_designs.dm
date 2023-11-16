@@ -124,12 +124,6 @@
 	id = "champagne"
 	build_path = /obj/item/reagent_containers/food/drinks/bottle/champagne/empty
 
-/datum/design/bottle/blazaam
-	name = "Bottle Design (Blazaam)"
-	desc = "Allows for the blowing of Blazaam bottles."
-	id = "blazaam"
-	build_path = /obj/item/reagent_containers/food/drinks/bottle/blazaam/empty
-
 /datum/design/bottle/trappist
 	name = "Bottle Design (Trappist)"
 	desc = "Allows for the blowing of Trappist bottles."
@@ -272,13 +266,6 @@
 	id = "champagne_export"
 	reagents_list = list(/datum/reagent/consumable/ethanol/champagne = 30, /datum/reagent/carbondioxide = 10)
 	build_path = /obj/item/export/bottle/champagne
-
-/datum/design/bottle/export/blazaam
-	name = "Export Design (Blazaam)"
-	desc = "Allows for the blowing, and bottling of Blazaam bottles."
-	id = "blazaam_export"
-	reagents_list = list(/datum/reagent/consumable/ethanol/blazaam = 40, /datum/reagent/water/holywater = 20)
-	build_path = /obj/item/export/bottle/blazaam
 
 /datum/design/bottle/export/trappist
 	name = "Export Design (Trappist)"

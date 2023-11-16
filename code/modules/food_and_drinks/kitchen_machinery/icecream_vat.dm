@@ -3,7 +3,6 @@
 #define ICECREAM_STRAWBERRY 3
 #define ICECREAM_PEACH 4
 #define ICECREAM_GRAPE 5
-#define ICECREAM_BLUE 6
 #define ICECREAM_CUSTOM 7
 #define CONE_WAFFLE 8
 #define CONE_CHOC 9
@@ -32,7 +31,6 @@
 		/datum/reagent/consumable/coco = 6,
 		/datum/reagent/consumable/vanilla = 6,
 		/datum/reagent/consumable/berryjuice = 6,
-		/datum/reagent/consumable/ethanol/singulo = 6,
 		/datum/reagent/consumable/peachjuice = 6,
 		/datum/reagent/consumable/grapejuice = 6)
 
@@ -48,8 +46,6 @@
 			return list(/datum/reagent/consumable/milk, /datum/reagent/consumable/ice, /datum/reagent/consumable/peachjuice)
 		if(ICECREAM_GRAPE)
 			return list(/datum/reagent/consumable/milk, /datum/reagent/consumable/ice, /datum/reagent/consumable/grapejuice)
-		if(ICECREAM_BLUE)
-			return list(/datum/reagent/consumable/milk, /datum/reagent/consumable/ice, /datum/reagent/consumable/ethanol/singulo)
 		if(CONE_WAFFLE)
 			return list(/datum/reagent/consumable/flour, /datum/reagent/consumable/sugar)
 		if(CONE_CHOC)
@@ -68,8 +64,6 @@
 			return "peach"
 		if(ICECREAM_GRAPE)
 			return "grape"
-		if(ICECREAM_BLUE)
-			return "blue"
 		if(ICECREAM_CUSTOM)
 			return "custom"
 		if(CONE_WAFFLE)
@@ -98,7 +92,6 @@
 	dat += "<b>Chocolate ice cream:</b> <a href='?src=[REF(src)];select=[ICECREAM_CHOCOLATE]'><b>Select</b></a> <a href='?src=[REF(src)];make=[ICECREAM_CHOCOLATE];amount=1'><b>Make</b></a> <a href='?src=[REF(src)];make=[ICECREAM_CHOCOLATE];amount=5'><b>x5</b></a> [product_types[ICECREAM_CHOCOLATE]] dollops left. (Ingredients: milk, ice, coco powder)<br>"
 	dat += "<b>Peach ice cream:</b> <a href='?src=[REF(src)];select=[ICECREAM_PEACH]'><b>Select</b></a> <a href='?src=[REF(src)];make=[ICECREAM_PEACH];amount=1'><b>Make</b></a> <a href='?src=[REF(src)];make=[ICECREAM_PEACH];amount=5'><b>x5</b></a> [product_types[ICECREAM_PEACH]] dollops left. (Ingredients: milk, ice, peach juice)<br>"
 	dat += "<b>Grape ice cream:</b> <a href='?src=[REF(src)];select=[ICECREAM_GRAPE]'><b>Select</b></a> <a href='?src=[REF(src)];make=[ICECREAM_GRAPE];amount=1'><b>Make</b></a> <a href='?src=[REF(src)];make=[ICECREAM_GRAPE];amount=5'><b>x5</b></a> [product_types[ICECREAM_GRAPE]] dollops left. (Ingredients: milk, ice, grape juice)<br>"
-	dat += "<b>Blue ice cream:</b> <a href='?src=[REF(src)];select=[ICECREAM_BLUE]'><b>Select</b></a> <a href='?src=[REF(src)];make=[ICECREAM_BLUE];amount=1'><b>Make</b></a> <a href='?src=[REF(src)];make=[ICECREAM_BLUE];amount=5'><b>x5</b></a> [product_types[ICECREAM_BLUE]] dollops left. (Ingredients: milk, ice, singulo)<br>"
 	dat += "<b>Custom ice cream:</b> <a href='?src=[REF(src)];select=[ICECREAM_CUSTOM]'><b>Select</b></a> <a href='?src=[REF(src)];make=[ICECREAM_CUSTOM];amount=1'><b>Make</b></a> <a href='?src=[REF(src)];make=[ICECREAM_CUSTOM];amount=5'><b>x5</b></a> [product_types[ICECREAM_CUSTOM]] dollops left. (Ingredients: milk, ice, optional flavoring)<br></div>"
 	dat += "<br><b>CONES</b><br><div class='statusDisplay'>"
 	dat += "<b>Waffle cones:</b> <a href='?src=[REF(src)];cone=[CONE_WAFFLE]'><b>Dispense</b></a> <a href='?src=[REF(src)];make=[CONE_WAFFLE];amount=1'><b>Make</b></a> <a href='?src=[REF(src)];make=[CONE_WAFFLE];amount=5'><b>x5</b></a> [product_types[CONE_WAFFLE]] cones left. (Ingredients: flour, sugar)<br>"
@@ -274,10 +267,6 @@
 			desc = "A delicious [cone_type] cone filled with grape ice cream. Surprisingly, made with real pink grape, likely not real sugarcanes used."
 			reagents.add_reagent(/datum/reagent/consumable/grapejuice, 3)
 			filling_color = "#FF1493"
-		if ("blue")
-			desc = "A delicious [cone_type] cone filled with blue ice cream. Made with real... blue?"
-			reagents.add_reagent(/datum/reagent/consumable/ethanol/singulo, 3)
-			filling_color = "#ACBCED"
 		if ("mob")
 			desc = "A suspicious [cone_type] cone filled with bright red ice cream. That's probably not strawberry..."
 			reagents.add_reagent(/datum/reagent/liquidgibs, 3)
@@ -333,7 +322,6 @@
 #undef ICECREAM_STRAWBERRY
 #undef ICECREAM_PEACH
 #undef ICECREAM_GRAPE
-#undef ICECREAM_BLUE
 #undef ICECREAM_CUSTOM
 #undef CONE_WAFFLE
 #undef CONE_CHOC
