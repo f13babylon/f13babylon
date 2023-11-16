@@ -500,14 +500,10 @@
 		/datum/reagent/consumable/coffee,
 		/datum/reagent/consumable/cream,
 		/datum/reagent/consumable/tea,
-		/datum/reagent/consumable/space_cola,
-		/datum/reagent/consumable/spacemountainwind,
-		/datum/reagent/consumable/dr_gibb,
-		/datum/reagent/consumable/space_up,
+		/datum/reagent/consumable/cola,
 		/datum/reagent/consumable/tonic,
 		/datum/reagent/consumable/sodawater,
 		/datum/reagent/consumable/lemon_lime,
-		/datum/reagent/consumable/pwr_game,
 		/datum/reagent/consumable/sugar,
 		/datum/reagent/consumable/pineapplejuice,
 		/datum/reagent/consumable/orangejuice,
@@ -542,7 +538,6 @@
 		/datum/reagent/toxin/staminatoxin,
 		/datum/reagent/medicine/cryoxadone,
 		/datum/reagent/iron,
-		/datum/reagent/consumable/shamblers,
 	)
 
 /obj/machinery/chem_dispenser/drinks/fullupgrade //fully ugpraded stock parts, emagged
@@ -606,7 +601,6 @@
 	emagged_reagents = list(
 		/datum/reagent/consumable/ethanol/alexander,
 		/datum/reagent/toxin/minttoxin,
-		/datum/reagent/consumable/ethanol/changelingsting,
 	)
 /obj/machinery/chem_dispenser/drinks/beer/fullupgrade //fully ugpraded stock parts, emagged
 	desc = "Contains a large reservoir of the good stuff. This model has had its safeties shorted out."

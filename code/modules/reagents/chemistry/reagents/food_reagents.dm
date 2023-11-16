@@ -162,6 +162,7 @@
 	overdose_threshold = 200 // Hyperglycaemic shock
 	taste_description = "sweetness"
 	value = REAGENT_VALUE_NONE
+	water_level = -1.75
 
 // Plants should not have sugar, they can't use it and it prevents them getting water/ nutients, it is good for mold though...
 /datum/reagent/consumable/sugar/on_hydroponics_apply(obj/item/seeds/myseed, datum/reagents/chems, obj/machinery/hydroponics/mytray, mob/user)
@@ -199,6 +200,7 @@
 	color = "#792300" // rgb: 121, 35, 0
 	taste_description = "umami"
 	value = REAGENT_VALUE_COMMON
+	water_level = -4
 
 /datum/reagent/consumable/ketchup
 	name = "Ketchup"
@@ -206,6 +208,7 @@
 	nutriment_factor = 3 * REAGENTS_METABOLISM
 	color = "#731008" // rgb: 115, 16, 8
 	taste_description = "ketchup"
+	water_level = -4
 
 /datum/reagent/consumable/mustard
 	name = "Mustard"
@@ -213,6 +216,7 @@
 	nutriment_factor = 3 * REAGENTS_METABOLISM
 	color = "#DDED26" // rgb: 221, 237, 38
 	taste_description = "mustard"
+	water_level = -4
 
 /datum/reagent/consumable/capsaicin
 	name = "Capsaicin Oil"
@@ -370,6 +374,7 @@
 	reagent_state = SOLID
 	color = "#FFFFFF" // rgb: 255,255,255
 	taste_description = "salt"
+	water_level = -4
 
 /datum/reagent/consumable/sodiumchloride/reaction_mob(mob/living/M, method=TOUCH, reac_volume)
 	if(!istype(M))
@@ -390,7 +395,7 @@
 	nutriment_factor = 1 * REAGENTS_METABOLISM
 	color = "#302000" // rgb: 48, 32, 0
 	taste_description = "flowers"
-	water_level = 0.5
+	water_level = 1.5
 
 /datum/reagent/consumable/brocjuice/on_mob_life(mob/living/carbon/M)
 	M.adjustOxyLoss(-1*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
@@ -403,7 +408,7 @@
 	nutriment_factor = 1 * REAGENTS_METABOLISM
 	color = "#302000" // rgb: 48, 32, 0
 	taste_description = "dirt"
-	water_level = 0.5
+	water_level = 1.5
 
 /datum/reagent/consumable/xanderjuice/on_mob_life(mob/living/carbon/M)
 	if(M.blood_volume < BLOOD_VOLUME_NORMAL)
@@ -416,7 +421,7 @@
 	nutriment_factor = 1 * REAGENTS_METABOLISM
 	color = "#BAE3B4"
 	taste_description = "plants"
-	water_level = 0.5
+	water_level = 1.5
 
 /datum/reagent/consumable/agavejuice/on_mob_life(mob/living/carbon/M)
 	M.adjustFireLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
@@ -428,7 +433,7 @@
 	nutriment_factor = 1 * REAGENTS_METABOLISM
 	color = "#E8E67E"
 	taste_description = "bitter"
-	water_level = 0.5
+	water_level = 1.5
 
 /datum/reagent/consumable/ferajuice/on_mob_life(mob/living/carbon/M)
 	if(M.health > 20)
@@ -442,7 +447,7 @@
 	nutriment_factor = 1 * REAGENTS_METABOLISM
 	color = "#ACDFCE"
 	taste_description = "bitter leaves"
-	water_level = 0.5
+	water_level = 1.5
 
 /datum/reagent/consumable/daturajuice/on_mob_life(mob/living/carbon/M)
 	M.set_drugginess(5)
@@ -455,7 +460,7 @@
 	nutriment_factor = 1 * REAGENTS_METABOLISM
 	color = "#168B64"
 	taste_description = "leaves"
-	water_level = 0.5
+	water_level = 1.5
 
 /datum/reagent/consumable/coyotejuice/on_mob_life(mob/living/carbon/M)
 	if(prob(10))
@@ -472,7 +477,7 @@
 	nutriment_factor = 1 * REAGENTS_METABOLISM
 	color = "#274E13"
 	taste_description = "nuts"
-	water_level = 0.5
+	water_level = 1.5
 
 /datum/reagent/consumable/cavefungusjuice/on_mob_life(mob/living/carbon/M)
 	M.adjustToxLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
@@ -485,8 +490,7 @@
 	nutriment_factor = 1 * REAGENTS_METABOLISM
 	color = "#274E13"
 	taste_description = "tato"
-
-
+	water_level = 1.5
 
 /datum/reagent/consumable/blackpepper
 	name = "Black Pepper"
@@ -511,7 +515,7 @@
 	glass_icon_state  = "chocolateglass"
 	glass_name = "glass of chocolate"
 	glass_desc = "Tasty."
-	water_level = 0.5
+	water_level = 1.5
 
 /datum/reagent/consumable/hot_coco/on_mob_life(mob/living/carbon/M)
 	M.adjust_bodytemperature(5 * TEMPERATURE_DAMAGE_COEFFICIENT, 0, BODYTEMP_NORMAL)
@@ -556,6 +560,7 @@
 	taste_description = "garlic"
 	metabolization_rate = 0.15 * REAGENTS_METABOLISM
 	value = REAGENT_VALUE_COMMON
+	water_level = -4
 
 /datum/reagent/consumable/garlic/on_mob_life(mob/living/carbon/M)
 	if(isvampire(M)) //incapacitating but not lethal. Unfortunately, vampires cannot vomit.
@@ -599,6 +604,7 @@
 	color = "#FF00FF" // rgb: 255, 0, 255
 	taste_description = "childhood whimsy"
 	value = REAGENT_VALUE_COMMON
+	water_level = -4
 
 /datum/reagent/consumable/sprinkles/on_mob_life(mob/living/carbon/M)
 	if(M.mind && HAS_TRAIT(M.mind, TRAIT_LAW_ENFORCEMENT_METABOLISM))
@@ -613,6 +619,7 @@
 	value = REAGENT_VALUE_UNCOMMON
 	nutriment_factor = 10 * REAGENTS_METABOLISM
 	taste_description = "peanuts"
+	water_level = -4
 
 /datum/reagent/consumable/cornoil
 	name = "Corn Oil"
@@ -646,6 +653,7 @@
 	reagent_state = SOLID
 	color = "#302000" // rgb: 48, 32, 0
 	taste_description = "dry and cheap noodles"
+	water_level = -4
 
 /datum/reagent/consumable/hot_ramen
 	name = "Hot Ramen"
@@ -653,6 +661,7 @@
 	nutriment_factor = 5 * REAGENTS_METABOLISM
 	color = "#302000" // rgb: 48, 32, 0
 	taste_description = "wet and cheap noodles"
+	water_level = 1.5
 
 /datum/reagent/consumable/hot_ramen/on_mob_life(mob/living/carbon/M)
 	M.adjust_bodytemperature(10 * TEMPERATURE_DAMAGE_COEFFICIENT, 0, BODYTEMP_NORMAL)
@@ -664,6 +673,7 @@
 	nutriment_factor = 5 * REAGENTS_METABOLISM
 	color = "#302000" // rgb: 48, 32, 0
 	taste_description = "wet and cheap noodles on fire"
+	water_level = 1.5
 
 /datum/reagent/consumable/hell_ramen/on_mob_life(mob/living/carbon/M)
 	M.adjust_bodytemperature(10 * TEMPERATURE_DAMAGE_COEFFICIENT)
@@ -675,6 +685,7 @@
 	reagent_state = SOLID
 	color = "#FFFFFF" // rgb: 0, 0, 0
 	taste_description = "chalky wheat"
+	water_level = -4
 
 /datum/reagent/consumable/flour/reaction_turf(turf/T, reac_volume)
 	if(!isspaceturf(T))
@@ -704,6 +715,7 @@
 	nutriment_factor = 3 * REAGENTS_METABOLISM
 	color = "#FFFFFF" // rgb: 0, 0, 0
 	taste_description = "rice"
+	water_level = -4
 
 /datum/reagent/consumable/vanilla
 	name = "Vanilla Powder"
@@ -713,6 +725,7 @@
 	nutriment_factor = 5 * REAGENTS_METABOLISM
 	color = "#FFFACD"
 	taste_description = "vanilla"
+	water_level = -3
 
 /datum/reagent/consumable/eggyolk
 	name = "Egg Yolk"
@@ -747,7 +760,6 @@
 	nutriment_factor = 10 * REAGENTS_METABOLISM
 	metabolization_rate = 1 * REAGENTS_METABOLISM
 	taste_description = "sweetness"
-	water_level = 1.5
 
 /datum/reagent/consumable/honey/on_mob_life(mob/living/carbon/M)
 	M.reagents.add_reagent(/datum/reagent/consumable/sugar,3)
@@ -773,6 +785,7 @@
 	color = "#DFDFDF"
 	taste_description = "mayonnaise"
 	value = REAGENT_VALUE_COMMON
+	water_level = -4
 
 /datum/reagent/consumable/tearjuice
 	name = "Tear Juice"
@@ -931,6 +944,7 @@
 	taste_description = "caramel"
 	reagent_state = SOLID
 	value = REAGENT_VALUE_COMMON
+	water_level = -4
 
 /datum/reagent/consumable/secretsauce
 	name = "secret sauce"
@@ -963,6 +977,7 @@
 	taste_description = "smoke"
 	overdose_threshold = 25
 	value = REAGENT_VALUE_COMMON
+	water_level = -5
 
 /datum/reagent/consumable/char/overdose_process(mob/living/carbon/M)
 	if(prob(10))
@@ -976,6 +991,7 @@
 	taste_mult = 2.5 //sugar's 1.5, capsacin's 1.5, so a good middle ground.
 	taste_description = "smokey sweetness"
 	value = REAGENT_VALUE_COMMON
+	water_level = -4
 
 /datum/reagent/consumable/laughsyrup
 	name = "Laughin' Syrup"
