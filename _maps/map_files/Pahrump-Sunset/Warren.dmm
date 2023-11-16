@@ -21139,6 +21139,15 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
+"tXc" = (
+/obj/machinery/door/airlock/security/glass{
+	name = "Prison";
+	req_access_txt = "121"
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/ncr)
 "tXj" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/flora/junglebush,
@@ -25012,7 +25021,10 @@
 /area/f13/wasteland/warren)
 "xnT" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/simple_door/metal/barred,
+/obj/machinery/door/airlock/security/glass{
+	name = "Prison";
+	req_access_txt = "121"
+	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -46913,7 +46925,7 @@ laS
 jAX
 nkj
 nkj
-pwC
+tXc
 nkj
 cJK
 cJK

@@ -6166,17 +6166,6 @@
 /obj/item/clothing/mask/breath,
 /turf/open/floor/plasteel/freezer,
 /area/f13/brotherhood/medical)
-"cDz" = (
-/obj/machinery/light/small,
-/obj/structure/ladder/unbreakable{
-	height = 1;
-	id = "khanladder"
-	},
-/turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2"
-	},
-/area/f13/tunnel)
 "cDS" = (
 /obj/structure/sign/poster/contraband/have_a_puff{
 	pixel_y = 32
@@ -8757,6 +8746,7 @@
 	dir = 1;
 	light_color = "#e8eaff"
 	},
+/obj/item/glasswork/glass_base/glass_lens,
 /turf/open/floor/f13{
 	icon_state = "greenrustyfull"
 	},
@@ -11099,13 +11089,6 @@
 /obj/item/wrench/crude,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkrusty"
-	},
-/area/f13/tunnel)
-"jUI" = (
-/obj/structure/simple_door/bunker,
-/turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2"
 	},
 /area/f13/tunnel)
 "jUU" = (
@@ -14288,6 +14271,8 @@
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel/bighorn)
 "oHs" = (
@@ -51875,9 +51860,9 @@ aaD
 aaD
 aaD
 boU
-bCt
-bCt
-bCt
+boU
+boU
+boU
 aae
 aae
 aae
@@ -52132,9 +52117,9 @@ aaD
 bBR
 abF
 boU
-jUI
-cDz
-bCt
+boU
+boU
+boU
 aae
 aae
 aae
@@ -52389,9 +52374,9 @@ aaD
 aaD
 aaD
 boU
-bCt
-bCt
-bCt
+boU
+boU
+boU
 aae
 aae
 aae
