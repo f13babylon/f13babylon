@@ -764,13 +764,42 @@
 	var/clot_coeff_per_wound = 0.9
 
 /datum/reagent/medicine/hydra/on_mob_life(mob/living/carbon/M)
-	for(var/thing in M.all_wounds)
-		var/datum/wound/W = thing
-		var/obj/item/bodypart/wounded_part = W.limb
-		if(wounded_part)
-			wounded_part.heal_damage(1.5, 1.5)//Hydra is meant to be decent at this
+	var/is_tribal = FALSE
+	if(HAS_TRAIT(M, TRAIT_TRIBAL))
+		is_tribal = TRUE
+		for(var/i in M.all_wounds)
+			var/datum/wound/iter_wound = i
+			if(prob(45))
+				switch(iter_wound.severity)
+					if (WOUND_SEVERITY_CRITICAL)
+						if (iter_wound.wound_type == WOUND_BLUNT)
+							iter_wound.replace_wound(/datum/wound/blunt/severe)
+						else if (iter_wound.wound_type == WOUND_BURN)
+							iter_wound.replace_wound(/datum/wound/burn/severe)
+						else if (iter_wound.wound_type == WOUND_PIERCE)
+							iter_wound.replace_wound(/datum/wound/pierce/severe)
+						else
+							iter_wound.replace_wound(/datum/wound/slash/severe)
+
+					else if (WOUND_SEVERITY_SEVERE)
+						if (iter_wound.wound_type == WOUND_BLUNT)
+							iter_wound.replace_wound(/datum/wound/blunt/moderate)
+						else if (iter_wound.wound_type == WOUND_BURN)
+							iter_wound.replace_wound(/datum/wound/burn/moderate)
+						else if (iter_wound.wound_type == WOUND_PIERCE)
+							iter_wound.replace_wound(/datum/wound/pierce/moderate)
+						else
+							iter_wound.replace_wound(/datum/wound/slash/moderate)
+
+					else if (WOUND_SEVERITY_MODERATE)
+						iter_wound.remove_wound()
+
+					else
+						return
+
+	M.hallucination = max(M.hallucination, is_tribal ? 0 : 10)
 	..()
-//THIS CHUNK OF CODE HANDLES CLOTTING WOUNDS!! THE ABOVE CODE MAKES IT HEAL LIMBS FASTER//
+//THIS CHUNK OF CODE HANDLES CLOTTING WOUNDS!! THE ABOVE CODE REDUCES SEVERITY OF WOUNDS//
 	var/effective_clot_rate = clot_rate
 	for(var/i in M.all_wounds)
 		var/datum/wound/iter_wound = i
