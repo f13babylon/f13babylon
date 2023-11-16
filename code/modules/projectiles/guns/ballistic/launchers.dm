@@ -13,10 +13,30 @@
 	weapon_weight = WEAPON_HEAVY
 	pin = /obj/item/firing_pin
 
+/obj/item/gun/ballistic/revolver/grenadelauncher/attack_self(mob/living/user)
+	var/num_unloaded = 0
+	chambered = null
+	while (get_ammo() > 0)
+		var/obj/item/ammo_casing/CB
+		CB = magazine.get_round(0)
+		if(CB)
+			CB.forceMove(drop_location())
+			CB.bounce_away(FALSE, NONE)
+			num_unloaded++
+	if (num_unloaded)
+		to_chat(user, "<span class='notice'>You unload [num_unloaded] shell\s from [src].</span>")
+		update_icon()
+	else
+		to_chat(user, "<span class='warning'>[src] is empty!</span>")
+
 /obj/item/gun/ballistic/revolver/grenadelauncher/attackby(obj/item/A, mob/user, params)
 	..()
 	if(istype(A, /obj/item/ammo_box) || istype(A, /obj/item/ammo_casing))
 		chamber_round()
+		update_icon()
+
+/obj/item/gun/ballistic/revolver/grenadelauncher/update_icon_state()
+	icon_state = "[initial(icon_state)]-[chambered ? "1" : "e"]"
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/cyborg
 	desc = "A 6-shot grenade launcher."
@@ -140,7 +160,7 @@
 			update_icon()
 
 /obj/item/gun/ballistic/rocketlauncher/update_icon_state()
-	icon_state = "[initial(icon_state)]-[chambered ? "1" : "0"]"
+	icon_state = "[initial(icon_state)]-[chambered ? "1" : "e"]"
 
 /obj/item/gun/ballistic/rocketlauncher/suicide_act(mob/living/user)
 	user.visible_message("<span class='warning'>[user] aims [src] at the ground! It looks like [user.p_theyre()] performing a sick rocket jump!</span>", \
