@@ -258,6 +258,22 @@
 	results = list(/datum/reagent/consumable/ethanol/demonsblood = 4)
 	required_reagents = list(/datum/reagent/consumable/ethanol/rum = 1, /datum/reagent/blood = 1, /datum/reagent/consumable/grenadine = 1)
 
+/datum/chemical_reaction/fevbath
+	name = "FEV Bath"
+	id = /datum/reagent/consumable/ethanol/fevbath
+	results = list(/datum/reagent/consumable/ethanol/fevbath = 1)
+	required_reagents = list(/datum/reagent/toxin/mutagen = 1, /datum/reagent/consumable/lemonjuice = 1, /datum/reagent/consumable/ethanol/absinthe = 1)
+	mix_message = "The mixture develops a sinister green glow."
+	mix_sound = 'sound/FermiChem/acidmelt.ogg'
+
+/datum/chemical_reaction/bosbrandy
+	name = "Brotherhood Brandy"
+	id = /datum/reagent/consumable/ethanol/bosbrandy
+	results = list(/datum/reagent/consumable/ethanol/bosbrandy = 3)
+	required_reagents = list(/datum/reagent/consumable/ethanol/cognac = 1, /datum/reagent/fuel = 1, /datum/reagent/iron = 1)
+	mix_message = "You hear faint sounds of metal clanking as it mixes."
+	mix_sound = 'sound/machines/clockcult/steam_whoosh.ogg'
+
 /datum/chemical_reaction/booger
 	name = "Booger"
 	id = /datum/reagent/consumable/ethanol/booger

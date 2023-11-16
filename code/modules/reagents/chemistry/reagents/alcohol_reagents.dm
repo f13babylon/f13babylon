@@ -541,6 +541,40 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	glass_name = "Screwdriver"
 	glass_desc = "A simple, yet superb mixture of Vodka and orange juice. Just the thing for the tired engineer."
 
+/datum/reagent/consumable/ethanol/fevbath
+	name = "FEV Bath"
+	description = "Side effects may include mutation and pledging allegiance to the Master."
+	color = "#00FF00"
+	boozepwr = 90
+	quality = DRINK_FANTASTIC
+	taste_description = "bubbling viruses"
+	glass_icon_state = "strongsludgeglass"
+	glass_name = "FEV Bath"
+	glass_desc = "Dilluted FEV in a glass of absinthe, topped with a slice of lemon."
+	value = REAGENT_VALUE_UNCOMMON
+
+/datum/reagent/consumable/ethanol/narsour/on_mob_life(mob/living/carbon/M)
+	M.cultslurring = min(M.cultslurring + 3, 3)
+	M.stuttering = min(M.stuttering + 3, 3)
+	..()
+
+/datum/reagent/consumable/ethanol/bosbrandy
+	name = "Brotherhood Brandy"
+	description = "A delicious brandy from the deepest levels of Brotherhood bunker complexes."
+	color = "#F8EBF1"
+	boozepwr = 60
+	quality = DRINK_FANTASTIC
+	taste_description = "brandy with a hint of metal"
+	glass_icon_state = "beepskysmashglass"
+	glass_name = "Brotherhood Brandy"
+	glass_desc = "Not even Maxson could withstand this! Ad victoriam!"
+	value = REAGENT_VALUE_UNCOMMON
+
+/datum/reagent/consumable/ethanol/cogchamp/on_mob_life(mob/living/carbon/M)
+	M.clockcultslurring = min(M.clockcultslurring + 3, 3)
+	M.stuttering = min(M.stuttering + 3, 3)
+	..()
+
 /datum/reagent/consumable/ethanol/booger
 	name = "Booger"
 	description = "Ewww..."
