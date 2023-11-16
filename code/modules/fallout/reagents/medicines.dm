@@ -159,9 +159,6 @@
 	for(var/i in M.all_wounds)
 		var/datum/wound/iter_wound = i
 		iter_wound.blood_flow = max(0, iter_wound.blood_flow - effective_clot_rate)
-	if(M.reagents.has_reagent(/datum/reagent/medicine/medx))
-		M.reagents.remove_reagent(/datum/reagent/medicine/medx, 15) //Removes 15u of Med-X if processing Superstims.
-		to_chat(M, "<span class='warning'>The Med-X And Superstim Fluid in your blood reacts violently!</span>")
 	if(M.health < 0)					//Functions as epinephrine.
 //		M.adjustToxLoss(-3*REAGENTS_EFFECT_MULTIPLIER, 0)
 		M.adjustBruteLoss(-3*REAGENTS_EFFECT_MULTIPLIER, 0)
