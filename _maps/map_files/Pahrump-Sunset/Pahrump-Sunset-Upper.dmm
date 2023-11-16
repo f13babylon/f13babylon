@@ -1055,6 +1055,17 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/building/mall)
+"awP" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small{
+	dir = 8;
+	light_color = "red";
+	bulb_colour = "#DE3163";
+	bulb_emergency_colour = "#DE3163";
+	nightshift_light_color = "#DE3163"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "axp" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -3221,6 +3232,13 @@
 	pixel_x = -15
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small{
+	dir = 4;
+	light_color = "red";
+	bulb_colour = "#DE3163";
+	bulb_emergency_colour = "#DE3163";
+	nightshift_light_color = "#DE3163"
+	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "fex" = (
@@ -6632,6 +6650,13 @@
 "mbm" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/cardboard,
+/obj/machinery/light/small{
+	dir = 8;
+	light_color = "red";
+	bulb_colour = "#DE3163";
+	bulb_emergency_colour = "#DE3163";
+	nightshift_light_color = "#DE3163"
+	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "mbu" = (
@@ -10582,6 +10607,16 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/building/mall)
+"tAf" = (
+/obj/machinery/light/small{
+	dir = 4;
+	light_color = "red";
+	bulb_colour = "#DE3163";
+	bulb_emergency_colour = "#DE3163";
+	nightshift_light_color = "#DE3163"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "tAr" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/mineral/random/low_chance,
@@ -12488,6 +12523,16 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/city/bighorn)
+"xzV" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small{
+	light_color = "red";
+	bulb_colour = "#DE3163";
+	bulb_emergency_colour = "#DE3163";
+	nightshift_light_color = "#DE3163"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "xAT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/ammo/fiftypercent,
@@ -54615,7 +54660,7 @@ hQm
 kOg
 qPV
 hQm
-kOg
+xzV
 uQx
 sem
 pSA
@@ -55385,7 +55430,7 @@ hQm
 lzi
 lzi
 uuw
-hQm
+tAf
 kOg
 lum
 lwE
@@ -55897,7 +55942,7 @@ oez
 oez
 uQx
 wMr
-kOg
+awP
 hQm
 jvG
 hQm
@@ -56931,7 +56976,7 @@ iYm
 ben
 iYm
 kOg
-hQm
+tAf
 uQx
 oez
 oez
