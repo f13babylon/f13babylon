@@ -8158,10 +8158,6 @@
 /obj/effect/spawner/lootdrop/f13/seedspawner,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/building/mall)
-"qDP" = (
-/mob/living/simple_animal/bot/cleanbot,
-/turf/open/floor/plasteel/f13/vault_floor/dark,
-/area/f13/building/mall)
 "qEi" = (
 /obj/effect/spawner/lootdrop/f13/medical/rnd/mid,
 /turf/open/floor/plasteel/f13{
@@ -8689,12 +8685,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/building/hospital)
-"rDK" = (
-/mob/living/simple_animal/bot/cleanbot,
-/turf/open/floor/plasteel/f13{
-	icon_state = "greenrustychess"
-	},
-/area/f13/building/massfusion)
 "rFa" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/decal/cleanable/dirt{
@@ -13695,7 +13685,7 @@ tEH
 cuI
 ovw
 tEH
-qDP
+fcS
 jMg
 cnX
 cnX
@@ -60967,7 +60957,7 @@ wMt
 wMt
 uiJ
 wMt
-rDK
+wMt
 wMt
 kfx
 aaw
