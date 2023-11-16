@@ -766,7 +766,7 @@
 		is_tribal = TRUE
 		for(var/i in M.all_wounds)
 			var/datum/wound/iter_wound = i
-			if(prob(45))
+			if(prob(33))
 				switch(iter_wound.severity)
 					if (WOUND_SEVERITY_CRITICAL)
 						if (iter_wound.wound_type == WOUND_BLUNT)
