@@ -876,7 +876,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "aex" = (
-/obj/item/reagent_containers/glass/bucket,
+/obj/machinery/chem_dispenser/mutagensaltpeter,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -2924,7 +2924,7 @@
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 8
 	},
-/obj/structure/reagent_dispensers/compostbin,
+/obj/machinery/vending/hydroseeds,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -8812,6 +8812,9 @@
 /obj/item/shovel/spade,
 /obj/item/cultivator,
 /obj/structure/rack/shelf_metal,
+/obj/item/reagent_containers/glass/bucket{
+	name = "water bucket"
+	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -10665,7 +10668,7 @@
 	},
 /area/f13/building/massfusion)
 "weR" = (
-/obj/structure/fermenting_barrel,
+/obj/machinery/vending/hydronutrients,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},

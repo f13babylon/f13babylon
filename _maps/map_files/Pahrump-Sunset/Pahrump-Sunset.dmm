@@ -31620,6 +31620,12 @@
 	icon_state = "horizontaloutermain1"
 	},
 /area/f13/wasteland/bighorn)
+"hBo" = (
+/obj/machinery/sleeper,
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/followers)
 "hBx" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress2";
@@ -45644,6 +45650,12 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/hobo,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"pSO" = (
+/obj/machinery/limbgrower,
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/followers)
 "pTl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/junk/jukebox,
@@ -47834,7 +47846,7 @@
 /turf/closed/wall/f13/tentwall,
 /area/f13/building)
 "rky" = (
-/obj/structure/table,
+/obj/machinery/bloodbankgen,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -78291,9 +78303,9 @@ rrO
 aoI
 bzd
 yjm
-dFh
+hBo
 qpv
-rky
+pSO
 rky
 yjm
 lsP
