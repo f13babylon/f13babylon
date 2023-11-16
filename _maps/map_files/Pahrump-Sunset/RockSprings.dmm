@@ -14757,7 +14757,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/structure/timeddoor/onetwozerominutes,
+/obj/structure/timeddoor/sixtyminute,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/building)
 "oMj" = (
@@ -20150,7 +20150,7 @@
 	},
 /area/f13/wasteland/rocksprings)
 "tWO" = (
-/obj/structure/timeddoor/onetwozerominutes,
+/obj/structure/timeddoor/sixtyminute,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/building)
 "tWX" = (

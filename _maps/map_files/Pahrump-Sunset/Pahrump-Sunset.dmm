@@ -53363,7 +53363,7 @@
 /area/f13/wasteland/west)
 "uxq" = (
 /obj/structure/barricade/wooden,
-/obj/structure/timeddoor/onetwozerominutes,
+/obj/structure/timeddoor/sixtyminute,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "uxE" = (
