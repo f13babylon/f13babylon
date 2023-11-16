@@ -829,20 +829,10 @@
 	},
 /area/f13/city)
 "aLn" = (
-/obj/structure/table/reinforced,
-/obj/structure/barricade/bars{
-	max_integrity = 800;
-	name = "strong metal bars";
-	obj_integrity = 800
+/obj/machinery/bloodbankgen,
+/turf/open/floor/f13{
+	icon_state = "darkdirtysolid"
 	},
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "ncrwatchtower";
-	name = "watchtower shutters"
-	},
-/obj/structure/decoration/rag{
-	icon_state = "skin"
-	},
-/turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/ncr)
 "aLV" = (
 /obj/structure/chair/stool{
@@ -938,6 +928,7 @@
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 4
 	},
+/obj/machinery/vending/hydroseeds,
 /turf/open/indestructible/ground/outside/savannah/cornersnew{
 	dir = 1
 	},
@@ -3971,6 +3962,24 @@
 /obj/structure/fermenting_barrel,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/caves)
+"dDr" = (
+/obj/structure/decoration/rag{
+	icon_state = "skin"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "ncrwatchtower";
+	name = "watchtower shutters"
+	},
+/obj/structure/barricade/bars{
+	max_integrity = 800;
+	name = "strong metal bars";
+	obj_integrity = 800
+	},
+/obj/structure/table/reinforced,
+/turf/open/floor/f13{
+	icon_state = "darkdirtysolid"
+	},
+/area/f13/ncr)
 "dDA" = (
 /obj/structure/simple_door/metal/store,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
@@ -5288,7 +5297,7 @@
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/wasteland/warren)
 "eYO" = (
-/obj/machinery/chem_master,
+/obj/machinery/chem_master/advanced,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/ncr)
 "eZK" = (
@@ -7003,6 +7012,13 @@
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/wasteland/warren)
+"gyK" = (
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4
+	},
+/obj/machinery/vending/hydronutrients,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/ncr)
 "gyW" = (
 /obj/structure/simple_door/dirtyglass,
 /turf/open/floor/plasteel/f13{
@@ -7188,6 +7204,7 @@
 /obj/item/clothing/under/rank/medical/doctor/blue,
 /obj/item/clothing/under/rank/medical/doctor/green,
 /obj/item/clothing/under/rank/medical/doctor/purple,
+/obj/item/circuitboard/machine/limbgrower,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -25703,6 +25720,24 @@
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/wasteland/ncr)
+"xTv" = (
+/obj/structure/barricade/bars{
+	max_integrity = 800;
+	name = "strong metal bars";
+	obj_integrity = 800
+	},
+/obj/structure/decoration/rag{
+	icon_state = "skin"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "ncrwatchtower";
+	name = "watchtower shutters"
+	},
+/obj/structure/table/reinforced,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticaloutermain0"
+	},
+/area/f13/ncr)
 "xTB" = (
 /obj/structure/junk/jukebox,
 /turf/open/floor/wood/wood_common,
@@ -48934,13 +48969,13 @@ hgd
 xAc
 xAc
 xAc
-ghE
+dDr
 xTH
 xTH
 xTH
 xTH
 xTH
-ghE
+xTv
 hgd
 bYc
 jXh
@@ -49192,11 +49227,11 @@ xAc
 xAc
 ghE
 uDV
-aLn
+cJK
 cJK
 llp
 cJK
-aLn
+cJK
 uDV
 hgd
 bYc
@@ -56163,7 +56198,7 @@ rFA
 nJZ
 eJX
 jIo
-cJK
+aLn
 cJK
 jiq
 bYF
@@ -58691,7 +58726,7 @@ osv
 gnU
 iHg
 dwA
-dsL
+gyK
 qto
 gWW
 iOM
