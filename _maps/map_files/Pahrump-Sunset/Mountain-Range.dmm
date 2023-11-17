@@ -204,11 +204,6 @@
 	icon_state = "redrustyfull"
 	},
 /area/f13/enclave)
-"cc" = (
-/turf/open/indestructible/ground/outside/ruins{
-	icon_state = "rubbleplate"
-	},
-/area/f13/enclave)
 "cd" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -330,9 +325,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
-"dl" = (
-/turf/closed/mineral/random/low_chance,
-/area/f13/enclave)
 "dp" = (
 /obj/machinery/light,
 /obj/structure/closet/wardrobe/virology_white,
@@ -390,6 +382,7 @@
 /area/f13/tunnel)
 "dH" = (
 /obj/structure/table,
+/obj/item/organ/ears/cat,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
 "dI" = (
@@ -3691,6 +3684,11 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"De" = (
+/turf/open/indestructible/ground/outside/ruins{
+	icon_state = "rubbleplate"
+	},
+/area/f13/enclave)
 "Df" = (
 /obj/machinery/light/small/broken,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -3846,9 +3844,6 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/enclave)
-"Eo" = (
-/turf/closed/indestructible/rock,
 /area/f13/enclave)
 "Eq" = (
 /obj/structure/window/reinforced{
@@ -4812,6 +4807,9 @@
 /obj/structure/dresser,
 /turf/open/floor/f13,
 /area/f13/enclave)
+"Nb" = (
+/turf/closed/mineral/random/low_chance,
+/area/f13/enclave)
 "Nc" = (
 /obj/effect/decal/marking,
 /obj/structure/car/rubbish3,
@@ -5054,6 +5052,9 @@
 	dir = 1
 	},
 /turf/open/floor/f13,
+/area/f13/enclave)
+"OS" = (
+/turf/closed/indestructible/rock,
 /area/f13/enclave)
 "OX" = (
 /obj/effect/landmark/vertibird{
@@ -20142,7 +20143,7 @@ iT
 AW
 fZ
 kC
-cc
+De
 AW
 AW
 AW
@@ -20396,7 +20397,7 @@ HA
 HA
 HA
 iT
-Eo
+OS
 fZ
 fZ
 fZ
@@ -20914,7 +20915,7 @@ HA
 HA
 aK
 aK
-dl
+Nb
 AW
 bX
 Jx
@@ -21170,8 +21171,8 @@ HA
 HA
 HA
 HA
-dl
-dl
+Nb
+Nb
 AW
 wZ
 Jx
@@ -21428,7 +21429,7 @@ HA
 HA
 HA
 HA
-dl
+Nb
 AW
 Jx
 Jx
