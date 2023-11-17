@@ -74,6 +74,7 @@
 	return ..()
 
 /obj/machinery/hydroponics/constructable/attackby(obj/item/I, mob/user, params)
+
 	if (user.a_intent != INTENT_HARM)
 		// handle opening the panel
 		if(default_deconstruction_screwdriver(user, icon_state, icon_state, I))
@@ -555,7 +556,15 @@
 		to_chat(user, "<span class='warning'>The pests seem to behave oddly, but quickly settle down...</span>")
 
 /obj/machinery/hydroponics/attackby(obj/item/O, mob/user, params)
-
+	//Called when mob user "attacks" it with object O
+	if(istype(O, /obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia))
+		if(!self_sustaining)
+			adjustSelfSuff(1)
+			to_chat(user, "You spread the gaia through the soil. ([self_sustainingprog] out of 7)")
+			qdel(O)
+			return
+		else
+			. = ..()
 	if(istype(O, /obj/item/reagent_containers) )  // Syringe stuff (and other reagent containers now too)
 		var/obj/item/reagent_containers/reagent_source = O
 
@@ -803,9 +812,11 @@
 	weedlevel = clamp(weedlevel + adjustamt, 0, 10)
 
 /obj/machinery/hydroponics/proc/adjustSelfSuff(adjustamt)
-	self_sustainingprog += adjustamt
-	if(self_sustainingprog>19 && !self_sustaining)
+	if(self_sustainingprog>=6)
 		become_self_sufficient()
+	else
+		self_sustainingprog += adjustamt
+
 /obj/machinery/hydroponics/proc/spawnplant() // why would you put strange reagent in a hydro tray you monster I bet you also feed them blood
 	var/list/livingplants = list(/mob/living/simple_animal/hostile/tree, /mob/living/simple_animal/hostile/killertomato)
 	var/chosen = pick(livingplants)
