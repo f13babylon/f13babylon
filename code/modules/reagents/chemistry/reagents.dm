@@ -246,12 +246,6 @@ GLOBAL_LIST_INIT(name2reagent, build_name2reagent())
 		return
 	return
 
-/datum/reagent/proc/on_hydroponics_add(obj/item/seeds/myseed, add_amount, obj/machinery/hydroponics/mytray, mob/user)
-	if(!mytray || !add_amount)
-		return
-	return
-
-
 /proc/pretty_string_from_reagent_list(list/reagent_list)
 	//Convert reagent list to a printable string for logging etc
 	var/list/rs = list()
