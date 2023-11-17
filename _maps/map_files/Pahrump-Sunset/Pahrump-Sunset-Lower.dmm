@@ -14393,6 +14393,10 @@
 	},
 /turf/open/floor/wood/wood_common,
 /area/f13/tunnel/bighorn)
+"oNn" = (
+/obj/item/stack/sheet/mineral/abductor/ten,
+/turf/closed/mineral/random/high_chance,
+/area/f13/caves)
 "oNF" = (
 /obj/structure/table,
 /obj/item/restraints/handcuffs,
@@ -43594,7 +43598,7 @@ aae
 aae
 aae
 aae
-aak
+oNn
 aak
 aae
 aae

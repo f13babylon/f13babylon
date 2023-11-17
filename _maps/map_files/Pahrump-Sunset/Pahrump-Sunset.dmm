@@ -59814,17 +59814,11 @@
 	},
 /area/f13/wasteland/east)
 "yme" = (
-/obj/machinery/door/airlock/hatch{
-	id_tag = "brotherhoodmain1";
-	locked = 1;
-	name = "Brotherhood of Steel bunker";
-	req_access_txt = "120"
+/obj/item/stack/sheet/mineral/abductor/ten,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalleftborderleft0"
 	},
-/obj/effect/decal/cleanable/oil/slippery,
-/turf/open/floor/f13{
-	icon_state = "floordirtysolid"
-	},
-/area/f13/brotherhood)
+/area/f13/wasteland/west)
 
 (1,1,1) = {"
 aaa
@@ -90013,7 +90007,7 @@ hRW
 lvp
 alM
 ttk
-ttk
+yme
 ttk
 nwr
 gKo
@@ -106317,7 +106311,7 @@ pbO
 pbO
 pbO
 pbO
-yme
+snG
 pbO
 snG
 pbO
