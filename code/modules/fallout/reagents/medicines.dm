@@ -754,16 +754,16 @@
 	overdose_threshold = 21
 	addiction_threshold = 21
 	self_consuming = TRUE
-	var/clot_rate = 0.5
+	var/clot_rate = 1
 
 /datum/reagent/medicine/hydra/on_mob_life(mob/living/carbon/M)
 	var/is_tribal = FALSE
 	if(HAS_TRAIT(M, TRAIT_TRIBAL))
 		is_tribal = TRUE
-		for(var/i in M.all_wounds)
-			var/datum/wound/iter_wound = i
-			var/affected_limb_name = iter_wound.limb.name
-			if(prob(33))
+		if(current_cycle > 0 && current_cycle % 5 == 0) //Every 5th cycle, reduce burn/bone wound severity by 1 tier, for puncture/slash wounds decrease blood_flow by clot_rate
+			for(var/i in M.all_wounds)
+				var/datum/wound/iter_wound = i
+				var/affected_limb_name = iter_wound.limb.name
 				switch(iter_wound.severity)
 					if (WOUND_SEVERITY_CRITICAL)
 						if (iter_wound.wound_type == WOUND_BLUNT)
@@ -778,7 +778,6 @@
 						else
 							iter_wound.blood_flow -= clot_rate
 							M.visible_message("<span class='notice'>The deep gashes on [M]'s [affected_limb_name] rapidly close up!</span>", "<span class='notice'>You feel the deep gashes on your [affected_limb_name] rapidly close up.</span>")
-						break
 					if (WOUND_SEVERITY_SEVERE)
 						if (iter_wound.wound_type == WOUND_BLUNT)
 							iter_wound.replace_wound(/datum/wound/blunt/moderate)
@@ -792,7 +791,6 @@
 						else
 							iter_wound.blood_flow -= clot_rate
 							M.visible_message("<span class='notice'>The large cuts on [M]'s [affected_limb_name] quickly mend!</span>", "<span class='notice'>You feel the large cuts on your [affected_limb_name] quickly mending.</span>")
-						break
 					if (WOUND_SEVERITY_MODERATE)
 						if (iter_wound.wound_type == WOUND_BLUNT)
 							iter_wound.remove_wound()
@@ -806,10 +804,10 @@
 	M.hallucination = max(M.hallucination, is_tribal ? 0 : 10)
 	..()
 
-/datum/reagent/medicine/hydra/overdose_process(mob/living/carbon/M) //Reverse effect, makes wounds worse with double the chance
+/datum/reagent/medicine/hydra/overdose_process(mob/living/carbon/M) //Reverse effect, makes wounds worse twice as fast
 	for(var/i in M.all_wounds)
 		var/datum/wound/iter_wound = i
-		if(prob(66))
+		if(current_cycle > 0 && current_cycle % 3 == 0)
 			switch(iter_wound.severity)
 				if (WOUND_SEVERITY_MODERATE)
 					if (iter_wound.wound_type == WOUND_BLUNT)
@@ -826,7 +824,6 @@
 							iter_wound.replace_wound(/datum/wound/slash/severe)
 						else
 							iter_wound.blood_flow += clot_rate
-					break
 				if (WOUND_SEVERITY_SEVERE)
 					if (iter_wound.wound_type == WOUND_BLUNT)
 						iter_wound.replace_wound(/datum/wound/blunt/critical)
@@ -842,7 +839,6 @@
 							iter_wound.replace_wound(/datum/wound/slash/critical)
 						else
 							iter_wound.blood_flow += clot_rate
-					break
 
 /datum/reagent/medicine/hydra/addiction_act_stage1(mob/living/carbon/M)
 	if(prob(33))
