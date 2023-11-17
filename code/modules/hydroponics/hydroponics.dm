@@ -9,7 +9,7 @@
 	idle_power_usage = 0
 	var/waterlevel = 100	//The amount of water in the tray (max 100)
 	var/maxwater = 100		//The maximum amount of water in the tray
-	var/nutridrain = 0.3      // How many units of nutrient will be drained in the tray //test //lowering it even further
+	var/nutridrain = 0.075      // How many units of nutrient will be drained in the tray //test //lowering it even further
 	var/maxnutri = 10		//The maximum nutrient of water in the tray
 	var/pestlevel = 0		//The amount of pests in the tray (max 10)
 	var/weedlevel = 0		//The amount of weeds in the tray (max 10)
@@ -21,7 +21,7 @@
 	var/plant_health		//Its health
 	var/lastproduce = 0		//Last time it was harvested
 	var/lastcycle = 0		//Used for timing of cycles.
-	var/cycledelay = 200	//About 10 seconds / cycle
+	var/cycledelay = 10 SECONDS	// 10 seconds / cycle
 	var/harvest = FALSE			//Ready to harvest?
 	var/obj/item/seeds/myseed = null	//The currently planted seed
 	var/rating = 1
@@ -104,9 +104,15 @@
 		myseed.forceMove(src)
 
 	else if(self_sustaining)
-		adjustWater(5)
+		adjustWater(10)
 		adjustWeeds(-5)
 		adjustPests(-5)
+
+
+	if(harvest)
+		cycledelay = initial(cycledelay) + 5 MINUTES
+	else if(cycledelay > 5 MINUTES)
+		cycledelay = initial(cycledelay)
 
 	if(world.time > (lastcycle + cycledelay))
 		lastcycle = world.time
@@ -127,6 +133,7 @@
 			else
 				reagents.remove_any(nutridrain)
 
+
 			// Lack of nutrients hurts non-weeds
 			if(reagents.total_volume <= 0 && !myseed.get_gene(/datum/plant_gene/trait/plant_type/weed_hardy))
 				adjustHealth(-rand(1,3))
@@ -145,7 +152,7 @@
 
 //Water//////////////////////////////////////////////////////////////////
 			// Drink random amount of water
-			adjustWater(-rand(1,3) / rating)//6
+			adjustWater(-rand(1,2) / rating)//6
 
 			// If the plant is dry, it loses health pretty fast, unless mushroom
 			if(waterlevel <= 10 && !myseed.get_gene(/datum/plant_gene/trait/plant_type/fungal_metabolism))
@@ -158,7 +165,7 @@
 				adjustHealth(rand(1,2) / rating)
 				if(myseed && prob(myseed.weed_chance))
 					adjustWeeds(myseed.weed_rate)
-				else if(prob(2))  //5 percent chance the weed population will increase
+				else if(prob(2))  //2 percent chance the weed population will increase
 					adjustWeeds(1 / rating)
 
 //Toxins/////////////////////////////////////////////////////////////////
@@ -223,7 +230,7 @@
 
 			// If the plant is too old, lose health fast
 			if(age > myseed.lifespan)
-				adjustHealth(-rand(1,5) / rating)
+				adjustHealth(-1 / rating)
 
 			// Harvest code
 			if(age > myseed.production && (age - lastproduce) > myseed.production && (!harvest && !dead))
@@ -447,6 +454,8 @@
 	age = 0
 	plant_health = myseed.endurance
 	lastcycle = world.time
+	if(cycledelay > 5 MINUTES)
+		cycledelay = initial(cycledelay)
 	harvest = 0
 	weedlevel = 0 // Reset
 	pestlevel = 0 // Reset
@@ -484,6 +493,8 @@
 	age = 0
 	plant_health = myseed.endurance
 	lastcycle = world.time
+	if(cycledelay > 5 MINUTES)
+		cycledelay = initial(cycledelay)
 	harvest = 0
 	weedlevel = 0 // Reset
 
@@ -504,6 +515,8 @@
 		age = 0
 		plant_health = myseed.endurance
 		lastcycle = world.time
+		if(cycledelay > 5 MINUTES)
+			cycledelay = initial(cycledelay)
 		harvest = 0
 		weedlevel = 0 // Reset
 
@@ -522,6 +535,8 @@
 /obj/machinery/hydroponics/proc/plantdies()
 	plant_health = 0
 	harvest = FALSE
+	if(cycledelay > 5 MINUTES)
+		cycledelay = initial(cycledelay)
 	pestlevel = 0 // Pests die
 	lastproduce = 0
 	STOP_PROCESSING(SSplants, src)
@@ -540,15 +555,7 @@
 		to_chat(user, "<span class='warning'>The pests seem to behave oddly, but quickly settle down...</span>")
 
 /obj/machinery/hydroponics/attackby(obj/item/O, mob/user, params)
-	//Called when mob user "attacks" it with object O
-	if(istype(O, /obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia))
-		if(!self_sustaining)
-			adjustSelfSuff(1)
-			to_chat(user, "You spread the gaia through the soil. ([self_sustainingprog] out of 7)")
-			qdel(O)
-			return
-		else
-			. = ..()
+
 	if(istype(O, /obj/item/reagent_containers) )  // Syringe stuff (and other reagent containers now too)
 		var/obj/item/reagent_containers/reagent_source = O
 
@@ -600,6 +607,8 @@
 			var/water_amt = temp_reagents.get_amount_of_type(/datum/reagent/water)
 			adjustWater(water_amt)
 			temp_reagents.del_reagents_of_subtypes(/datum/reagent/water) // We know we only have the amount used anyway.
+		for(var/datum/reagent/R in temp_reagents.reagent_list)
+			R.on_hydroponics_add(myseed, temp_reagents.get_amount_of_type(R), src, user)
 		// Move the rest to our actual holder and clean up.
 		temp_reagents.trans_to(reagents, transfer_amount)
 		qdel(temp_reagents)
@@ -689,6 +698,8 @@
 				plant_health = 0
 				if(harvest)
 					harvest = FALSE //To make sure they can't just put in another seed and insta-harvest it
+				if(cycledelay > 5 MINUTES)
+					cycledelay = initial(cycledelay)
 				qdel(myseed)
 				myseed = null
 				name = initial(name)
@@ -754,6 +765,8 @@
 
 /obj/machinery/hydroponics/proc/update_tray(mob/user)
 	harvest = FALSE
+	if(cycledelay > 5 MINUTES)
+		cycledelay = initial(cycledelay)
 	lastproduce = age
 	if(myseed.getYield() <= 0)
 		to_chat(user, "<span class='warning'>You fail to harvest anything useful!</span>")
@@ -790,11 +803,9 @@
 	weedlevel = clamp(weedlevel + adjustamt, 0, 10)
 
 /obj/machinery/hydroponics/proc/adjustSelfSuff(adjustamt)
-	if(self_sustainingprog>=6)
+	self_sustainingprog += adjustamt
+	if(self_sustainingprog>19 && !self_sustaining)
 		become_self_sufficient()
-	else
-		self_sustainingprog += adjustamt
-
 /obj/machinery/hydroponics/proc/spawnplant() // why would you put strange reagent in a hydro tray you monster I bet you also feed them blood
 	var/list/livingplants = list(/mob/living/simple_animal/hostile/tree, /mob/living/simple_animal/hostile/killertomato)
 	var/chosen = pick(livingplants)

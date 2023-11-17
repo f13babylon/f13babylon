@@ -1173,6 +1173,24 @@
 	},
 /turf/open/floor/wood/wood_fancy,
 /area/f13/ncr)
+"px" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/stack/sheet/metal{
+	amount = 50
+	},
+/obj/item/stack/sheet/metal{
+	amount = 50
+	},
+/obj/item/stack/sheet/metal{
+	amount = 50
+	},
+/obj/item/stack/sheet/metal{
+	amount = 50
+	},
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/ncr)
 "pz" = (
 /obj/structure/table,
 /obj/item/flashlight/lamp,
@@ -2456,21 +2474,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "FA" = (
-/obj/structure/rack/shelf_metal,
-/obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/metal{
-	amount = 50
-	},
-/obj/item/stack/sheet/metal{
-	amount = 50
-	},
-/obj/item/stack/sheet/metal{
-	amount = 50
-	},
-/obj/item/stack/sheet/metal{
-	amount = 50
-	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/resourcespawner,
+/obj/effect/spawner/lootdrop/f13/resourcespawner,
+/obj/structure/table/wood,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "FF" = (
@@ -2761,15 +2768,10 @@
 /turf/closed/indestructible/f13vaultrusted,
 /area/f13/ncr)
 "JR" = (
-/obj/structure/rack/shelf_metal,
-/obj/effect/spawner/lootdrop/f13/resourcespawner,
-/obj/effect/spawner/lootdrop/f13/resourcespawner,
-/obj/effect/spawner/lootdrop/f13/resourcespawner,
-/obj/effect/spawner/lootdrop/f13/resourcespawner,
-/obj/effect/spawner/lootdrop/f13/resourcespawner,
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/machinery/base_dispenser/ammo,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "JS" = (
@@ -3032,6 +3034,11 @@
 	icon_state = "darkdirty"
 	},
 /area/f13/ncr)
+"MZ" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/bundle/costume/nyangirl,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/ncr)
 "Nl" = (
 /obj/structure/chair/sofa/corp{
 	dir = 8
@@ -3239,6 +3246,11 @@
 	},
 /turf/open/transparent/openspace,
 /area/f13/wasteland/ncr)
+"Pv" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/gun/ballistic/automatic/smg/american180,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/ncr)
 "Pz" = (
 /obj/structure/simple_door/room{
 	name = "Logistics Officer"
@@ -3779,7 +3791,8 @@
 /turf/open/transparent/openspace,
 /area/f13/wasteland/ncr)
 "Wk" = (
-/obj/machinery/ammobench,
+/obj/effect/spawner/lootdrop/f13/resourcespawner,
+/obj/structure/table/wood,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "Wt" = (
@@ -30545,7 +30558,7 @@ Sg
 Sg
 lo
 Sg
-Sg
+um
 Ks
 FF
 sC
@@ -32858,7 +32871,7 @@ Sg
 Sg
 Sg
 Sg
-Sg
+Wk
 Ks
 Wg
 sC
@@ -33112,8 +33125,8 @@ JO
 qe
 Sg
 Si
-CQ
-CQ
+px
+fw
 Sg
 Wk
 IZ
@@ -33372,7 +33385,7 @@ lo
 Sg
 lo
 Sg
-lo
+FA
 IZ
 vA
 sC
@@ -33623,13 +33636,13 @@ sC
 sC
 sC
 JO
-FA
-Sg
-um
-JR
 EE
+Sg
+MZ
+JR
+Pv
 lo
-fw
+Wk
 Ks
 mu
 sC

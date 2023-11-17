@@ -99,16 +99,18 @@
 	display_name = "Advanced Cybernetic Implants"
 	description = "Upgraded and more powerful cybernetic implants."
 	prereq_ids = list("neural_programming", "cyber_implants","integrated_HUDs")
-	design_ids = list("ci-toolset", "ci-surgery", "ci-reviver", "ci-nutrimentplus")
+	design_ids = list("ci-toolset", "ci-surgery")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-
+/*
 /datum/techweb_node/combat_cyber_implants
 	id = "combat_cyber_implants"
 	display_name = "Combat Cybernetic Implants"
 	description = "Military grade combat implants to improve performance."
 	prereq_ids = list("adv_cyber_implants","weaponry","high_efficiency")
-	design_ids = list("ci-antidrop", "ci-antistun")
+	design_ids = list("ci-reviver", "ci-nutrimentplus", "ci-antidrop", "ci-antistun")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+
+*/
 
 /////////////////////////Advanced Surgery/////////////////////////
 /datum/techweb_node/imp_wt_surgery
@@ -145,8 +147,8 @@
 
 /datum/techweb_node/alien_surgery
 	id = "alien_surgery"
-	display_name = "Alien Surgery"
-	description = "Abductors did nothing wrong."
-	prereq_ids = list("exp_surgery", "alientech")
+	display_name = "Bleeding-Edge Surgery"
+	description = "The tech is bleeding(-edge), so your patients don't!"
+	prereq_ids = list("exp_surgery")
 	design_ids = list("surgery_brainwashing","surgery_zombie", "surgery_ext_dissection", "surgery_heal_combo_upgrade_femto")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 20000)

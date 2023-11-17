@@ -371,14 +371,9 @@
 		/obj/item/reagent_containers/food/snacks/rofflewaffles,
 		/obj/item/reagent_containers/food/snacks/donkpocket,
 		/obj/item/reagent_containers/food/drinks/soda_cans/cola,
-		/obj/item/reagent_containers/food/drinks/soda_cans/space_mountain_wind,
-		/obj/item/reagent_containers/food/drinks/soda_cans/dr_gibb,
 		/obj/item/reagent_containers/food/drinks/soda_cans/starkist,
-		/obj/item/reagent_containers/food/drinks/soda_cans/space_up,
-		/obj/item/reagent_containers/food/drinks/soda_cans/pwr_game,
 		/obj/item/reagent_containers/food/drinks/soda_cans/lemon_lime,
-		/obj/item/reagent_containers/food/drinks/drinkingglass/filled/nuka_cola,
-		/obj/item/reagent_containers/food/drinks/drinkingglass/filled/syndicatebomb
+		/obj/item/reagent_containers/food/drinks/drinkingglass/filled/nuka_cola
 		))
 		new rig_snacks(src)
 
@@ -744,4 +739,3 @@
 	attack_verb = list("bashed", "slashes", "prods", "pokes")
 	fitting_swords = list(/obj/item/melee/rapier)
 	starting_sword = /obj/item/melee/rapier
-

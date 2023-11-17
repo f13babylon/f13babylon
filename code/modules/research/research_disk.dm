@@ -30,21 +30,3 @@
 /obj/item/disk/tech_disk/major/Initialize(mapload)
 	. = ..()
 	stored_research = new /datum/techweb/bepis
-
-/obj/item/disk/tech_disk/illegal
-	name = "Illegal technology disk"
-	desc = "A technology disk containing schematics for syndicate inspired equipment."
-	custom_materials = null
-
-/obj/item/disk/tech_disk/illegal/Initialize(mapload)
-	. = ..()
-	stored_research = new /datum/techweb/syndicate
-
-/obj/item/disk/tech_disk/abductor
-	name = "Gray technology disk"
-	desc = "You feel like it's not Gray because of its color."
-	custom_materials = null
-
-/obj/item/disk/tech_disk/abductor/Initialize(mapload)
-	. = ..()
-	stored_research = new /datum/techweb/abductor

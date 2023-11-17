@@ -598,6 +598,7 @@
 	toxpwr = 0.2*volume
 	M.adjustBruteLoss((0.3*volume)*REM, updating_health = FALSE)
 	. = 1
+	..()
 
 /datum/reagent/toxin/fentanyl
 	name = "Fentanyl"

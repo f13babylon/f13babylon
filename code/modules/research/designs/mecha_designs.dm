@@ -34,81 +34,6 @@
 	category = list("Exosuit Modules")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
 
-/datum/design/board/gygax_main
-	name = "\"Gygax\" Central Control module"
-	desc = "Allows for the construction of a \"Gygax\" Central Control module."
-	id = "gygax_main"
-	build_path = /obj/item/circuitboard/mecha/gygax/main
-	category = list("Exosuit Modules")
-	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
-
-/datum/design/board/gygax_peri
-	name = "\"Gygax\" Peripherals Control module"
-	desc = "Allows for the construction of a \"Gygax\" Peripheral Control module."
-	id = "gygax_peri"
-	build_path = /obj/item/circuitboard/mecha/gygax/peripherals
-	category = list("Exosuit Modules")
-	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
-
-/datum/design/board/gygax_targ
-	name = "\"Gygax\" Weapons & Targeting Control module"
-	desc = "Allows for the construction of a \"Gygax\" Weapons & Targeting Control module."
-	id = "gygax_targ"
-	build_path = /obj/item/circuitboard/mecha/gygax/targeting
-	category = list("Exosuit Modules")
-	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
-
-/datum/design/board/durand_main
-	name = "\"Durand\" Central Control module"
-	desc = "Allows for the construction of a \"Durand\" Central Control module."
-	id = "durand_main"
-	build_path = /obj/item/circuitboard/mecha/durand/main
-	category = list("Exosuit Modules")
-	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
-
-/datum/design/board/durand_peri
-	name = "\"Durand\" Peripherals Control module"
-	desc = "Allows for the construction of a \"Durand\" Peripheral Control module."
-	id = "durand_peri"
-	build_path = /obj/item/circuitboard/mecha/durand/peripherals
-	category = list("Exosuit Modules")
-	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
-
-/datum/design/board/durand_targ
-	name = "\"Durand\" Weapons & Targeting Control module"
-	desc = "Allows for the construction of a \"Durand\" Weapons & Targeting Control module."
-	id = "durand_targ"
-	build_path = /obj/item/circuitboard/mecha/durand/targeting
-	category = list("Exosuit Modules")
-	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
-
-/datum/design/board/phazon_main
-	name = "\"Phazon\" Central Control module"
-	desc = "Allows for the construction of a \"Phazon\" Central Control module."
-	id = "phazon_main"
-	materials = list(/datum/material/glass = 1000, /datum/material/bluespace = 100)
-	build_path = /obj/item/circuitboard/mecha/phazon/main
-	category = list("Exosuit Modules")
-	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
-
-/datum/design/board/phazon_peri
-	name = "\"Phazon\" Peripherals Control module"
-	desc = "Allows for the construction of a \"Phazon\" Peripheral Control module."
-	id = "phazon_peri"
-	materials = list(/datum/material/glass = 1000, /datum/material/bluespace = 100)
-	build_path = /obj/item/circuitboard/mecha/phazon/peripherals
-	category = list("Exosuit Modules")
-	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
-
-/datum/design/board/phazon_targ
-	name = "\"Phazon\" Weapons & Targeting Control module"
-	desc = "Allows for the construction of a \"Phazon\" Weapons & Targeting Control module."
-	id = "phazon_targ"
-	materials = list(/datum/material/glass = 1000, /datum/material/bluespace = 100)
-	build_path = /obj/item/circuitboard/mecha/phazon/targeting
-	category = list("Exosuit Modules")
-	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
-
 /datum/design/board/clarke_main
 	name = "\"Clarke\" Central Control module"
 	desc = "Allows for the construction of a \"Clarke\" Central Control module."
@@ -122,30 +47,6 @@
 	desc = "Allows for the construction of a  \"Clarke\" Peripheral Control module."
 	id = "clarke_peri"
 	build_path = /obj/item/circuitboard/mecha/clarke/peripherals
-	category = list("Exosuit Modules")
-	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
-
-/datum/design/board/marauder_main
-	name = "\"Marauder\" Central Control module"
-	desc = "Allows for the construction of a \"Marauder\" Central Control module."
-	id = "marauder_main"
-	build_path = /obj/item/circuitboard/mecha/marauder/main
-	category = list("Exosuit Modules")
-	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
-
-/datum/design/board/marauder_peri
-	name = "\"Marauder\" Peripherals Control module"
-	desc = "Allows for the construction of a \"Marauder\" Peripheral Control module."
-	id = "marauder_peri"
-	build_path = /obj/item/circuitboard/mecha/marauder/peripherals
-	category = list("Exosuit Modules")
-	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
-
-/datum/design/board/marauder_targ
-	name = "\"marauder\" Weapons & Targeting Control module"
-	desc = "Allows for the construction of a \"Marauder\" Weapons & Targeting Control module."
-	id = "marauder_targ"
-	build_path = /obj/item/circuitboard/mecha/marauder/targeting
 	category = list("Exosuit Modules")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
 

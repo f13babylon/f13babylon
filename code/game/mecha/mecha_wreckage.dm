@@ -100,62 +100,6 @@
 	else
 		return ..()
 
-
-/obj/structure/mecha_wreckage/gygax
-	name = "\improper Gygax wreckage"
-	icon_state = "gygax-broken"
-
-/obj/structure/mecha_wreckage/gygax/Initialize(mapload)
-	. = ..()
-	var/list/parts = list(/obj/item/mecha_parts/part/gygax_torso,
-								/obj/item/mecha_parts/part/gygax_head,
-								/obj/item/mecha_parts/part/gygax_left_arm,
-								/obj/item/mecha_parts/part/gygax_right_arm,
-								/obj/item/mecha_parts/part/gygax_left_leg,
-								/obj/item/mecha_parts/part/gygax_right_leg)
-	for(var/i = 0; i < 2; i++)
-		if(parts.len && prob(40))
-			var/part = pick(parts)
-			welder_salvage += part
-			parts -= part
-
-
-
-/obj/structure/mecha_wreckage/gygax/dark
-	name = "\improper Dark Gygax wreckage"
-	icon_state = "darkgygax-broken"
-
-/obj/structure/mecha_wreckage/medigax
-	name = "\improper Medical Gygax wreckage"
-	icon_state = "medigax-broken"
-
-/obj/structure/mecha_wreckage/medigax/Initialize(mapload)
-	. = ..()
-	var/list/parts = list(/obj/item/mecha_parts/part/medigax_torso,
-								/obj/item/mecha_parts/part/medigax_head,
-								/obj/item/mecha_parts/part/medigax_left_arm,
-								/obj/item/mecha_parts/part/medigax_right_arm,
-								/obj/item/mecha_parts/part/medigax_left_leg,
-								/obj/item/mecha_parts/part/medigax_right_leg)
-	for(var/i = 0; i < 2; i++)
-		if(parts.len && prob(40))
-			var/part = pick(parts)
-			welder_salvage += part
-			parts -= part
-
-/obj/structure/mecha_wreckage/marauder
-	name = "\improper Marauder wreckage"
-	icon_state = "marauder-broken"
-
-/obj/structure/mecha_wreckage/mauler
-	name = "\improper Mauler wreckage"
-	icon_state = "mauler-broken"
-	desc = "The syndicate won't be very happy about this..."
-
-/obj/structure/mecha_wreckage/seraph
-	name = "\improper Seraph wreckage"
-	icon_state = "seraph-broken"
-
 /obj/structure/mecha_wreckage/ripley
 	name = "\improper Ripley wreckage"
 	icon_state = "ripley-broken"
@@ -196,31 +140,6 @@
 /obj/structure/mecha_wreckage/ripley/deathripley
 	name = "\improper Death-Ripley wreckage"
 	icon_state = "deathripley-broken"
-
-/obj/structure/mecha_wreckage/durand
-	name = "\improper Durand wreckage"
-	icon_state = "durand-broken"
-
-/obj/structure/mecha_wreckage/durand/Initialize(mapload)
-	. = ..()
-	var/list/parts = list(
-								/obj/item/mecha_parts/part/durand_torso,
-								/obj/item/mecha_parts/part/durand_head,
-								/obj/item/mecha_parts/part/durand_left_arm,
-								/obj/item/mecha_parts/part/durand_right_arm,
-								/obj/item/mecha_parts/part/durand_left_leg,
-								/obj/item/mecha_parts/part/durand_right_leg)
-	for(var/i = 0; i < 2; i++)
-		if(parts.len && prob(40))
-			var/part = pick(parts)
-			welder_salvage += part
-			parts -= part
-
-
-/obj/structure/mecha_wreckage/phazon
-	name = "\improper Phazon wreckage"
-	icon_state = "phazon-broken"
-
 
 /obj/structure/mecha_wreckage/odysseus
 	name = "\improper Odysseus wreckage"

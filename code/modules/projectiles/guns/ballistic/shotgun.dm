@@ -412,7 +412,6 @@
 	fire_delay = 4
 	autofire_shot_delay = 4.15
 	automatic = 1
-	recoil = 4.3
 	fire_sound = 'sound/f13weapons/riot_shotgun.ogg'
 
 

@@ -46,7 +46,7 @@
 	glass_name = "glass of lime juice"
 	glass_desc = "A glass of sweet-sour lime juice."
 	pH = 2.2
-	water_level = 1.5
+	water_level = -0.7
 
 /datum/reagent/consumable/limejuice/on_mob_life(mob/living/carbon/M)
 	if(M.getToxLoss() && prob(20))
@@ -103,7 +103,7 @@
 	glass_name = "glass of berry juice"
 	glass_desc = "Berry juice. Or maybe it's poison. Who cares?"
 	ghoulfriendly = TRUE
-	water_level = 1.5
+	water_level = -1
 
 /datum/reagent/consumable/poisonberryjuice/on_mob_life(mob/living/carbon/M)
 	M.adjustToxLoss(1, updating_health = FALSE)
@@ -129,7 +129,7 @@
 	glass_name = "glass of lemon juice"
 	glass_desc = "Sour..."
 	pH = 2
-	water_level = 1.5
+	water_level = -0.7
 
 /datum/reagent/consumable/banana
 	name = "Banana Juice"
@@ -193,7 +193,7 @@
 	glass_icon_state = "glass_brown"
 	glass_name = "glass of potato juice"
 	glass_desc = "Bleh..."
-	water_level = 1.5
+	water_level = 0.5
 
 /datum/reagent/consumable/grapejuice
 	name = "Grape Juice"
@@ -246,7 +246,7 @@
 	glass_name = "glass of soy milk"
 	glass_desc = "White and nutritious soy goodness!"
 	value = REAGENT_VALUE_VERY_COMMON
-	water_level = 1.5
+	water_level = 1.75
 
 /datum/reagent/consumable/soymilk/on_mob_life(mob/living/carbon/M)
 	if(M.getBruteLoss() && prob(20))
@@ -279,6 +279,7 @@
 	glass_icon_state  = "glass_white"
 	glass_name = "glass of cream"
 	glass_desc = "Ewwww..."
+	water_level = 0.5
 
 /datum/reagent/consumable/cream/on_mob_life(mob/living/carbon/M)
 	if(M.getBruteLoss() && prob(20))
@@ -296,7 +297,7 @@
 	glass_icon_state = "glass_brown"
 	glass_name = "glass of coffee"
 	glass_desc = "Don't drop it, or you'll send scalding liquid and glass shards everywhere."
-	water_level = 0.5
+	water_level = -1
 
 /datum/reagent/consumable/coffee/overdose_process(mob/living/M)
 	M.Jitter(5)
@@ -430,7 +431,7 @@
 	glass_desc = "This drink leaves you feeling nostalgic for some reason."
 	value = REAGENT_VALUE_VERY_COMMON
 	ghoulfriendly = TRUE
-	water_level = 1.5
+	water_level = 4 //Refreshing!
 
 /datum/reagent/consumable/tea/arnold_palmer
 	name = "Arnold Palmer"
@@ -452,14 +453,14 @@
 
 /datum/reagent/consumable/icecoffee
 	name = "Iced Coffee"
-	description = "Coffee and ice, refreshing and cool."
+	description = "Coffee and ice."
 	color = "#102838" // rgb: 16, 40, 56
 	nutriment_factor = 0
 	taste_description = "bitter coldness"
 	glass_icon_state = "icedcoffeeglass"
 	glass_name = "iced coffee"
-	glass_desc = "A drink to perk you up and refresh you!"
-	water_level = 0.5
+	glass_desc = "A drink to perk you up!"
+	water_level = -0.7
 
 /datum/reagent/consumable/icecoffee/on_mob_life(mob/living/carbon/M)
 	M.dizziness = max(0,M.dizziness-5)
@@ -479,7 +480,7 @@
 	glass_icon_state = "icedteaglass"
 	glass_name = "iced tea"
 	glass_desc = "All natural, antioxidant-rich flavour sensation."
-	water_level = 1.5
+	water_level = 1.75
 
 /datum/reagent/consumable/icetea/on_mob_life(mob/living/carbon/M)
 	M.dizziness = max(0,M.dizziness-2)
@@ -491,71 +492,20 @@
 	..()
 	. = 1
 
-/datum/reagent/consumable/space_cola
+/datum/reagent/consumable/cola
 	name = "Cola"
 	description = "A refreshing beverage."
 	nutriment_factor = 0.5 * REAGENTS_METABOLISM
 	color = "#100800" // rgb: 16, 8, 0
 	taste_description = "cola"
 	glass_icon_state  = "glass_brown"
-	glass_name = "glass of Space Cola"
-	glass_desc = "A glass of refreshing Space Cola."
+	glass_name = "glass of Cola"
+	glass_desc = "A glass of refreshing Cola."
 	water_level = 1.5
 
-/datum/reagent/consumable/space_cola/on_mob_life(mob/living/carbon/M)
+/datum/reagent/consumable/cola/on_mob_life(mob/living/carbon/M)
 	M.drowsyness = max(0,M.drowsyness-5)
 	M.adjust_bodytemperature(-5 * TEMPERATURE_DAMAGE_COEFFICIENT, BODYTEMP_NORMAL)
-	..()
-
-/datum/reagent/consumable/spacemountainwind
-	name = "SM Wind"
-	description = "Blows right through you like a space wind."
-	nutriment_factor = 0.5 * REAGENTS_METABOLISM
-	color = "#102000" // rgb: 16, 32, 0
-	taste_description = "sweet citrus soda"
-	glass_icon_state = "Space_mountain_wind_glass"
-	glass_name = "glass of Space Mountain Wind"
-	glass_desc = "Space Mountain Wind. As you know, there are no mountains in space, only wind."
-	water_level = 1.5
-
-/datum/reagent/consumable/spacemountainwind/on_mob_life(mob/living/carbon/M)
-	M.drowsyness = max(0,M.drowsyness-7)
-	M.AdjustSleeping(-20, FALSE)
-	M.adjust_bodytemperature(-5 * TEMPERATURE_DAMAGE_COEFFICIENT, BODYTEMP_NORMAL)
-	M.Jitter(5)
-	..()
-	. = 1
-
-/datum/reagent/consumable/dr_gibb
-	name = "Dr. Gibb"
-	description = "A delicious blend of 42 different flavours."
-	nutriment_factor = 0.5 * REAGENTS_METABOLISM
-	color = "#102000" // rgb: 16, 32, 0
-	taste_description = "cherry soda" // FALSE ADVERTISING
-	glass_icon_state = "dr_gibb_glass"
-	glass_name = "glass of Dr. Gibb"
-	glass_desc = "Dr. Gibb. Not as dangerous as the glass_name might imply."
-	water_level = 1.5
-
-/datum/reagent/consumable/dr_gibb/on_mob_life(mob/living/carbon/M)
-	M.drowsyness = max(0,M.drowsyness-6)
-	M.adjust_bodytemperature(-5 * TEMPERATURE_DAMAGE_COEFFICIENT, BODYTEMP_NORMAL)
-	..()
-
-/datum/reagent/consumable/space_up
-	name = "Space-Up"
-	description = "Tastes like a hull breach in your mouth."
-	nutriment_factor = 0.5 * REAGENTS_METABOLISM
-	color = "#00FF00" // rgb: 0, 255, 0
-	taste_description = "cherry soda"
-	glass_icon_state = "space-up_glass"
-	glass_name = "glass of Space-Up"
-	glass_desc = "Space-up. It helps you keep your cool."
-	water_level = 1.5
-
-
-/datum/reagent/consumable/space_up/on_mob_life(mob/living/carbon/M)
-	M.adjust_bodytemperature(-8 * TEMPERATURE_DAMAGE_COEFFICIENT, BODYTEMP_NORMAL)
 	..()
 
 /datum/reagent/consumable/lemon_lime
@@ -573,119 +523,6 @@
 	M.adjust_bodytemperature(-8 * TEMPERATURE_DAMAGE_COEFFICIENT, BODYTEMP_NORMAL)
 	..()
 
-/datum/reagent/consumable/pwr_game
-	name = "Pwr Game"
-	description = "The only drink with the PWR that true gamers crave."
-	nutriment_factor = 0.5 * REAGENTS_METABOLISM
-	color = "#9385bf" // rgb: 58, 52, 75
-	taste_description = "sweet and salty tang"
-	glass_icon_state = "glass_red"
-	glass_name = "glass of Pwr Game"
-	glass_desc = "Goes well with a Vlad's salad."
-	water_level = 1.5
-
-/datum/reagent/consumable/pwr_game/on_mob_life(mob/living/carbon/M)
-	M.adjust_bodytemperature(-8 * TEMPERATURE_DAMAGE_COEFFICIENT, BODYTEMP_NORMAL)
-	..()
-
-/datum/reagent/consumable/shamblers
-	name = "Shambler's Juice"
-	description = "~Shake me up some of that Shambler's Juice!~"
-	nutriment_factor = 0.5 * REAGENTS_METABOLISM
-	color = "#f00060" // rgb: 94, 0, 38
-	taste_description = "carbonated metallic soda"
-	glass_icon_state = "glass_red"
-	glass_name = "glass of Shambler's juice"
-	glass_desc = "Mmm mm, shambly."
-	water_level = 1.5
-
-/datum/reagent/consumable/shamblers/on_mob_life(mob/living/carbon/M)
-	M.adjust_bodytemperature(-8 * TEMPERATURE_DAMAGE_COEFFICIENT, BODYTEMP_NORMAL)
-	..()
-
-/datum/reagent/consumable/buzz_fuzz
-	name = "Buzz Fuzz"
-	description = "~A Hive of Flavour!~ NOTICE: Addicting."
-	nutriment_factor = 0
-	addiction_threshold = 26 //A can and a sip
-	color = "#8CFF00" // rgb: 135, 255, 0
-	taste_description = "carbonated honey and pollen"
-	glass_icon_state = "buzz_fuzz"
-	glass_name = "honeycomb of Buzz Fuzz"
-	glass_desc = "Stinging with flavour."
-	water_level = 1.5
-
-	//This drink seems to be just made for plants.. how curious.
-/datum/reagent/consumable/buzz_fuzz/on_hydroponics_apply(obj/item/seeds/myseed, datum/reagents/chems, obj/machinery/hydroponics/mytray, mob/user)
-	. = ..()
-	if(chems.has_reagent(src,1))
-		mytray.adjustPests(-rand(2,5))
-		mytray.adjustHealth(round(chems.get_reagent_amount(src.type) * 0.1))
-		if(myseed)
-			myseed.adjust_potency(round(chems.get_reagent_amount(src.type) * 0.5))
-
-/datum/reagent/consumable/buzz_fuzz/on_mob_life(mob/living/carbon/M)
-	M.reagents.add_reagent(/datum/reagent/consumable/sugar,1)
-	if(prob(5))
-		M.reagents.add_reagent(/datum/reagent/consumable/honey,1)
-	..()
-
-/datum/reagent/consumable/buzz_fuzz/reaction_mob(mob/living/M, method=TOUCH, reac_volume)
-	if(iscarbon(M) && (method in list(TOUCH, VAPOR, PATCH)))
-		var/mob/living/carbon/C = M
-		for(var/s in C.surgeries)
-			var/datum/surgery/S = s
-			S.success_multiplier = max(0.1, S.success_multiplier) // +10% success probability on each step, compared to bacchus' blessing's ~46%
-	..()
-
-/datum/reagent/consumable/buzz_fuzz/addiction_act_stage1(mob/living/M)
-	if(prob(5))
-		to_chat(M, "<span class = 'notice'>[pick("Buzz Buzz.", "Stinging with flavour.", "A Hive of Flavour")]</span>")
-	..()
-
-/datum/reagent/consumable/buzz_fuzz/addiction_act_stage2(mob/living/M)
-	if(prob(10))
-		to_chat(M, "<span class = 'notice'>[pick("Buzz Buzz.", "Stinging with flavour.", "A Hive of Flavour", "The Queen approved it!")]</span>")
-	..()
-
-/datum/reagent/consumable/buzz_fuzz/addiction_act_stage3(mob/living/M)
-	if(prob(15))
-		to_chat(M, "<span class = 'notice'>[pick("Buzz Buzz.", "Stinging with flavour.", "Ideal of the worker drone", "A Hive of Flavour", "The Queen approved it!")]</span>")
-	..()
-
-/datum/reagent/consumable/buzz_fuzz/addiction_act_stage4(mob/living/M)
-	if(prob(25))
-		to_chat(M, "<span class = 'notice'>[pick("Buzz Buzz.", "Stinging with flavour.", "Ideal of the worker drone", "A Hive of Flavour", "Sap back that missing energy!", "Got Honey?", "The Queen approved it!")]</span>")
-	..()
-
-/datum/reagent/consumable/grey_bull
-	name = "Grey Bull"
-	description = "Grey Bull, it gives you gloves!"
-	color = "#EEFF00" // rgb: 238, 255, 0
-	quality = DRINK_VERYGOOD
-	taste_description = "carbonated oil"
-	glass_icon_state = "grey_bull_glass"
-	glass_name = "glass of Grey Bull"
-	glass_desc = "Surprisingly it isnt grey."
-	value = REAGENT_VALUE_COMMON
-	water_level = 1.5
-
-/datum/reagent/consumable/grey_bull/on_mob_metabolize(mob/living/L)
-	..()
-	ADD_TRAIT(L, TRAIT_SHOCKIMMUNE, type)
-
-/datum/reagent/consumable/grey_bull/on_mob_end_metabolize(mob/living/L)
-	REMOVE_TRAIT(L, TRAIT_SHOCKIMMUNE, type)
-	..()
-
-/datum/reagent/consumable/grey_bull/on_mob_life(mob/living/carbon/M)
-	M.Jitter(20)
-	M.dizziness +=1
-	M.drowsyness = 0
-	M.AdjustSleeping(-40, FALSE)
-	M.adjust_bodytemperature(-5 * TEMPERATURE_DAMAGE_COEFFICIENT, BODYTEMP_NORMAL)
-	..()
-
 /datum/reagent/consumable/sodawater
 	name = "Soda Water"
 	description = "A can of club soda. Why not make a scotch and soda?"
@@ -695,7 +532,7 @@
 	glass_icon_state = "glass_clear"
 	glass_name = "glass of soda water"
 	glass_desc = "Soda water. Why not make a scotch and soda?"
-	water_level = 1.5
+	water_level = 2
 
 
 	// A variety of nutrients are dissolved in club soda, without sugar.
@@ -720,7 +557,7 @@
 	glass_icon_state = "glass_clear"
 	glass_name = "glass of tonic water"
 	glass_desc = "Quinine tastes funny, but at least it'll keep that Space Malaria away."
-	water_level = 1.5
+	water_level = -1
 
 /datum/reagent/consumable/tonic/on_mob_life(mob/living/carbon/M)
 	M.dizziness = max(0,M.dizziness-5)
@@ -740,7 +577,7 @@
 	glass_icon_state = "iceglass"
 	glass_name = "glass of ice"
 	glass_desc = "Generally, you're supposed to put something else in there too..."
-	water_level = 3
+	water_level = 1.5
 
 /datum/reagent/consumable/ice/on_mob_life(mob/living/carbon/M)
 	M.adjust_bodytemperature(-5 * TEMPERATURE_DAMAGE_COEFFICIENT, BODYTEMP_NORMAL)
@@ -748,14 +585,14 @@
 
 /datum/reagent/consumable/soy_latte
 	name = "Soy Latte"
-	description = "A nice and tasty beverage while you are reading your hippie books."
+	description = "A nice and tasty beverage while you are reading."
 	color = "#664300" // rgb: 102, 67, 0
 	quality = DRINK_NICE
 	taste_description = "creamy coffee"
 	glass_icon_state = "soy_latte"
 	glass_name = "soy latte"
-	glass_desc = "A nice and refreshing beverage while you're reading."
-	water_level = 0.1
+	glass_desc = "A nice and tasty beverage while you're reading."
+	water_level = -0.7
 	value = REAGENT_VALUE_VERY_COMMON
 
 /datum/reagent/consumable/soy_latte/on_mob_life(mob/living/carbon/M)
@@ -777,8 +614,8 @@
 	taste_description = "bitter cream"
 	glass_icon_state = "cafe_latte"
 	glass_name = "cafe latte"
-	glass_desc = "A nice, strong and refreshing beverage while you're reading."
-	water_level = 1.5
+	glass_desc = "A nice, strong and tasty beverage while you're reading."
+	water_level = -0.7
 	value = REAGENT_VALUE_VERY_COMMON
 
 /datum/reagent/consumable/cafe_latte/on_mob_life(mob/living/carbon/M)
@@ -801,7 +638,7 @@
 	glass_icon_state = "doctorsdelightglass"
 	glass_name = "Doctor's Delight"
 	glass_desc = "The follower's favorite. Guaranteed to restore bodily injury; side effects include cravings and hunger."
-	water_level = 1.5
+	water_level = 3
 	value = REAGENT_VALUE_COMMON
 
 /datum/reagent/consumable/doctor_delight/on_mob_life(mob/living/carbon/M)
@@ -874,21 +711,8 @@
 	glass_icon_state = "pumpkin_latte"
 	glass_name = "pumpkin latte"
 	glass_desc = "A mix of coffee and pumpkin juice."
-	water_level = 1.5
+	water_level = -0.7
 	value = REAGENT_VALUE_COMMON
-
-/datum/reagent/consumable/gibbfloats
-	name = "Gibb Floats"
-	description = "Ice cream on top of a Dr. Gibb glass."
-	color = "#B22222"
-	quality = DRINK_NICE
-	nutriment_factor = 1 * REAGENTS_METABOLISM
-	taste_description = "creamy cherry"
-	glass_icon_state = "gibbfloats"
-	glass_name = "Gibbfloat"
-	glass_desc = "Dr. Gibb with ice cream on top."
-	water_level = 1.5
-	value = REAGENT_VALUE_VERY_COMMON
 
 /datum/reagent/consumable/pumpkinjuice
 	name = "Pumpkin Juice"
@@ -914,7 +738,7 @@
 	glass_icon_state = "triplecitrus" //needs own sprite mine are trash
 	glass_name = "glass of triple citrus"
 	glass_desc = "A mixture of citrus juices. Tangy, yet smooth."
-	water_level = 1.5
+	water_level = -0.7
 
 /datum/reagent/consumable/grape_soda
 	name = "Grape soda"
@@ -946,6 +770,7 @@
 	glass_icon_state = "glass_green"
 	glass_name = "glass of menthol"
 	glass_desc = "Tastes naturally minty, and imparts a very mild numbing sensation."
+	water_level = -0.4
 
 /datum/reagent/consumable/menthol/on_mob_life(mob/living/L)
 	L.apply_status_effect(/datum/status_effect/throat_soothed)
@@ -958,6 +783,7 @@
 	taste_description = "sweet pomegranates"
 	glass_name = "glass of grenadine"
 	glass_desc = "Delicious flavored syrup."
+	water_level = -1
 
 /datum/reagent/consumable/parsnipjuice
 	name = "Parsnip Juice"
@@ -968,7 +794,7 @@
 	value = REAGENT_VALUE_COMMON
 	water_level = 1.5
 
-/datum/reagent/consumable/peachjuice //Intended to be extremely rare due to being the limiting ingredients in the blazaam drink
+/datum/reagent/consumable/peachjuice
 	name = "Peach Juice"
 	description = "Just peachy."
 	color = "#E78108"
@@ -983,7 +809,7 @@
 	taste_description = "pineapple"
 	glass_name = "glass of pineapple juice"
 	glass_desc = "Tart, tropical, and hotly debated."
-	water_level = 10
+	water_level = 1.5
 
 /datum/reagent/consumable/cream_soda
 	name = "Cream Soda"
@@ -1015,38 +841,6 @@
 /datum/reagent/consumable/sol_dry/on_mob_life(mob/living/carbon/M)
 	M.adjust_disgust(-5)
 	..()
-
-/*
-/datum/reagent/consumable/red_queen
-	name = "Red Queen"
-	description = "DRINK ME."
-	color = "#e6ddc3"
-	quality = DRINK_GOOD
-	taste_description = "wonder"
-	glass_icon_state = "red_queen"
-	glass_name = "Red Queen"
-	glass_desc = "DRINK ME."
-	value = REAGENT_VALUE_COMMON //growth serum.
-	var/current_size = RESIZE_DEFAULT_SIZE
-
-/datum/reagent/consumable/red_queen/on_mob_life(mob/living/carbon/H)
-	if(prob(75))
-		return ..()
-	var/newsize = pick(0.5, 0.75, 1, 1.50, 2)
-	newsize *= RESIZE_DEFAULT_SIZE
-	H.resize = newsize/current_size
-	current_size = newsize
-	H.update_transform()
-	if(prob(40))
-		H.emote("sneeze")
-	..()
-
-/datum/reagent/consumable/red_queen/on_mob_end_metabolize(mob/living/M)
-	M.resize = RESIZE_DEFAULT_SIZE/current_size
-	current_size = RESIZE_DEFAULT_SIZE
-	M.update_transform()
-	..()
-*/
 
 /datum/reagent/consumable/pinkmilk
 	name = "Strawberry Milk"
@@ -1107,7 +901,7 @@
 	glass_name = "glass of Monkey Energy"
 	glass_desc = "You can unleash the ape, but without the pop of the can?"
 	value = REAGENT_VALUE_COMMON
-	water_level = 1.5
+	water_level = 1
 
 /datum/reagent/consumable/monkey_energy/on_mob_life(mob/living/carbon/M)
 	M.Jitter(20)
@@ -1156,7 +950,7 @@
 	glass_name = "glass of banana peel pulp"
 	glass_desc = "Okay, so you put a banana peel in a grinder... Why, exactly?"
 	ghoulfriendly = TRUE
-	water_level = 1.5
+	water_level = 0.3
 
 /datum/reagent/consumable/baked_banana_peel
 	name = "Baked Banana Peel Powder"
@@ -1166,4 +960,4 @@
 	taste_description = "bitter powder"
 	glass_name = "glass of banana peel powder"
 	ghoulfriendly = TRUE
-	water_level = 1.5
+	water_level = 0.3

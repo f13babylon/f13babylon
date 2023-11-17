@@ -44,24 +44,6 @@
 		research_points[i] = INFINITY
 	hidden_nodes = list()
 
-/datum/techweb/syndicate
-	id = "SYNDICATE"
-	organization = "Syndicate"
-	create_roundstart = FALSE
-
-/datum/techweb/syndicate/New()
-	var/datum/techweb_node/syndicate_basic/Node = new()
-	research_node(Node, TRUE)
-
-/datum/techweb/abductor
-	id = "ABDUCTOR"
-	organization = "Aliens"
-	create_roundstart = FALSE
-
-/datum/techweb/abductor/New()
-	var/datum/techweb_node/alientech/Node = new()
-	research_node(Node, TRUE)
-
 /datum/techweb/unknown	//Global science techweb for RND consoles.
 	id = "UNKNOWN"
 	organization = "Unknown network"

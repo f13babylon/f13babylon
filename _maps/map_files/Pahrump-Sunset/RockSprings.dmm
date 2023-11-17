@@ -2675,6 +2675,14 @@
 /obj/structure/flora/grass/wasteland,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/rocksprings)
+"cCu" = (
+/obj/machinery/chem_dispenser/drinks/fullupgrade,
+/obj/structure/table/booth,
+/turf/open/indestructible/ground/outside/dirt/harsh{
+	dir = 1;
+	icon_state = "dirt"
+	},
+/area/f13/wasteland/rocksprings)
 "cCx" = (
 /obj/item/reagent_containers/glass/bucket,
 /turf/open/indestructible/ground/outside/dirt/harsh,
@@ -12545,6 +12553,12 @@
 /obj/item/seeds/poppy/broc,
 /obj/item/seeds/poppy/broc,
 /obj/item/seeds/ambrosia/gaia,
+/obj/item/seeds/punga,
+/obj/item/seeds/punga,
+/obj/item/seeds/fungus,
+/obj/item/seeds/fungus,
+/obj/item/seeds/buffalogourd,
+/obj/item/seeds/buffalogourd,
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/legion)
 "mIR" = (
@@ -17322,9 +17336,7 @@
 	},
 /obj/structure/table,
 /obj/machinery/chem_dispenser/drinks{
-	density = 0;
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/legion)
@@ -31068,7 +31080,7 @@ yko
 yko
 yko
 yko
-qWV
+cCu
 hgP
 hgP
 jIp

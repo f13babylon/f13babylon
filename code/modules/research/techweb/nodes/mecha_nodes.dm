@@ -49,51 +49,6 @@
 	"odysseus_main", "odysseus_peri")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 
-/datum/techweb_node/gygax
-	id = "mech_gygax"
-	display_name = "EXOSUIT: Gygax"
-	description = "Gygax exosuit designs"
-	prereq_ids = list("adv_mecha", "weaponry")
-	design_ids = list("gygax_chassis", "gygax_torso", "gygax_head", "gygax_left_arm", "gygax_right_arm", "gygax_left_leg", "gygax_right_leg", "gygax_main",
-	"gygax_peri", "gygax_targ", "gygax_armor")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
-
-/datum/techweb_node/medigax
-	id = "mech_medigax"
-	display_name = "EXOSUIT: Medical-Spec Gygax"
-	description = "Medical-Spec Gygax designs"
-	prereq_ids = list("mech_gygax", "mecha_odysseus")
-	design_ids = list("medigax_chassis", "medigax_torso", "medigax_head", "medigax_left_arm", "medigax_right_arm", "medigax_left_leg", "medigax_right_leg", "medigax_armor")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-
-/datum/techweb_node/durand
-	id = "mech_durand"
-	display_name = "EXOSUIT: Durand"
-	description = "Durand exosuit designs"
-	prereq_ids = list("adv_mecha", "adv_weaponry")
-	design_ids = list("durand_chassis", "durand_torso", "durand_head", "durand_left_arm", "durand_right_arm", "durand_left_leg", "durand_right_leg", "durand_main",
-	"durand_peri", "durand_targ", "durand_armor")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
-
-/datum/techweb_node/mech_marauder
-	id = "mech_marauder"
-	display_name = "EXOSUIT: Marauder"
-	description = "Marauder exosuit designs"
-	prereq_ids = list("adv_mecha", "adv_weaponry")
-	design_ids = list("marauder_chassis", "marauder_torso", "marauder_head", "marauder_left_arm", "marauder_right_arm", "marauder_left_leg", "marauder_right_leg", "marauder_main",
-	"marauder_peri", "marauder_targ", "marauder_armor")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
-
-/*
-/datum/techweb_node/phazon
-	id = "mecha_phazon"
-	display_name = "EXOSUIT: Phazon"
-	description = "Phazon exosuit designs"
-	prereq_ids = list("adv_mecha", "weaponry" , "adv_bluespace")
-	design_ids = list("phazon_chassis", "phazon_torso", "phazon_head", "phazon_left_arm", "phazon_right_arm", "phazon_left_leg", "phazon_right_leg", "phazon_main",
-	"phazon_peri", "phazon_targ", "phazon_armor")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
-*/
 /datum/techweb_node/adv_mecha_tools
 	id = "adv_mecha_tools"
 	display_name = "Advanced Exosuit Equipment"

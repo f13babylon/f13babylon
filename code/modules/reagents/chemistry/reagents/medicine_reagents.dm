@@ -1352,6 +1352,10 @@
 	pH = 11
 	value = REAGENT_VALUE_COMMON //not any higher. Ambrosia is a milestone for hydroponics already.
 
+/datum/reagent/medicine/earthsblood/on_hydroponics_add(obj/item/seeds/myseed, add_amount, obj/machinery/hydroponics/mytray, mob/user)
+	. = ..()
+	mytray.adjustSelfSuff(add_amount)
+
 
 //Earthsblood is still a wonderdrug. Just... don't expect to be able to mutate something that makes plants so healthy.
 /datum/reagent/medicine/earthsblood/on_hydroponics_apply(obj/item/seeds/myseed, datum/reagents/chems, obj/machinery/hydroponics/mytray, mob/user)

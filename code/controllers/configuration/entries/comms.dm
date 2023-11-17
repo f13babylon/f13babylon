@@ -45,3 +45,6 @@
 
 /datum/config_entry/flag/allow_cross_server_bunker_override
 	protection = CONFIG_ENTRY_LOCKED
+
+/datum/config_entry/string/discord_ping_role_id
+	protection = CONFIG_ENTRY_LOCKED

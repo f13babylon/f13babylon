@@ -91,7 +91,6 @@
 	icon_state = "patch_healingpoultice"
 	self_delay = 0
 
-
 // ---------------------------------
 // CUSTOM POWDER
 
