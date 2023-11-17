@@ -162,7 +162,7 @@
 	volume = 10
 	amount_per_transfer_from_this = 10
 	list_reagents = list(/datum/reagent/medicine/stimpak = 10)
-	self_delay = 10
+	var/self_delay = 10
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak/attack(mob/living/L, mob/user)
 	if(ishuman(L))
@@ -191,7 +191,7 @@
 	name = "imitation stimpak"
 	desc = "A syringe filled with a chemical which aims to replicate the effects of the fluid found in pre-war stimpaks, albeit less effective."
 	list_reagents = list(/datum/reagent/medicine/stimpakimitation = 10)
-	self_delay = 5
+	var/self_delay = 5
 
 // ---------------------------------
 // SUPER STIMPAK
@@ -202,7 +202,7 @@
 	icon_state = "hypo_superstimpak"
 	amount_per_transfer_from_this = 10
 	list_reagents = list(/datum/reagent/medicine/stimpaksuper = 10)
-	self_delay = 20
+	var/self_delay = 20
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super/custom
 	desc = "A large syringe with a leather strap attached to it, filled with a mysterious cocktail of chemicals."
@@ -221,7 +221,7 @@
 	volume = 15
 	amount_per_transfer_from_this = 5
 	list_reagents = list(/datum/reagent/medicine/medx = 15)
-	self_delay = 30
+	var/self_delay = 30
 
 // ---------------------------------
 // PSYCHO
@@ -234,7 +234,7 @@
 	volume = 10
 	amount_per_transfer_from_this = 10
 	list_reagents = list(/datum/reagent/drug/psycho = 10)
-	self_delay = 30
+	var/self_delay = 30
 
 // End Fallout -------------------------------------------------
 
