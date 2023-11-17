@@ -673,5 +673,8 @@
 		qdel(query_check_everything_ranks)
 
 /datum/controller/subsystem/ticker/proc/send_roundinfo()
-	world.TgsTargetedChatBroadcast(send_news_report(),FALSE)
-
+	var/news_report = send_news_report()
+	var/ping_role_id = CONFIG_GET(string/discord_ping_role_id)
+	if(ping_role_id)
+		news_report += "\n<@&[ping_role_id]>"
+	world.TgsTargetedChatBroadcast(new /datum/tgs_message_content(news_report), FALSE)
