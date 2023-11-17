@@ -3413,6 +3413,9 @@
 /obj/item/cultivator,
 /obj/item/reagent_containers/glass/bucket,
 /obj/item/shovel/spade,
+/obj/item/seeds/xander,
+/obj/item/seeds/poppy/broc,
+/obj/item/seeds/mutfruit,
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
@@ -8859,6 +8862,7 @@
 	dir = 8
 	},
 /obj/machinery/seed_extractor,
+/obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -9976,6 +9980,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/building/hospital)
+"usR" = (
+/obj/item/stack/sheet/mineral/abductor/ten,
+/turf/closed/mineral/random/low_chance,
+/area/f13/caves)
 "uth" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -10448,6 +10456,7 @@
 /area/f13/brotherhood)
 "vCM" = (
 /obj/machinery/seed_extractor,
+/obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia,
 /turf/open/floor/f13,
 /area/f13/brotherhood)
 "vDx" = (
@@ -67045,7 +67054,7 @@ abv
 abv
 abv
 abv
-abv
+usR
 abv
 abv
 abv

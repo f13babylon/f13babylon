@@ -2569,6 +2569,10 @@
 /area/f13/enclave)
 "uo" = (
 /obj/machinery/seed_extractor,
+/obj/item/seeds/xander,
+/obj/item/seeds/poppy/broc,
+/obj/item/seeds/mutfruit,
+/obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia,
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/enclave)
 "uq" = (
@@ -3154,6 +3158,9 @@
 /obj/item/seeds/wheat,
 /turf/open/floor/wood/wood_fancy,
 /area/f13/building)
+"yM" = (
+/turf/closed/mineral/random/low_chance,
+/area/f13/enclave)
 "yT" = (
 /obj/effect/overlay/junk/oldpipes{
 	dir = 9
@@ -3751,6 +3758,11 @@
 	dir = 4
 	},
 /turf/open/floor/f13,
+/area/f13/enclave)
+"DK" = (
+/turf/open/indestructible/ground/outside/ruins{
+	icon_state = "rubbleplate"
+	},
 /area/f13/enclave)
 "DL" = (
 /obj/item/cautery,
@@ -5342,6 +5354,9 @@
 	icon_state = "0-4"
 	},
 /turf/open/floor/plating,
+/area/f13/enclave)
+"RN" = (
+/turf/closed/indestructible/rock,
 /area/f13/enclave)
 "RO" = (
 /obj/effect/landmark/start/f13/usgysgt,
@@ -20125,9 +20140,9 @@ HA
 HA
 iT
 AW
-AW
-AW
-AW
+fZ
+kC
+DK
 AW
 AW
 AW
@@ -20381,11 +20396,11 @@ HA
 HA
 HA
 iT
-iT
-iT
-iT
-iT
-iT
+RN
+fZ
+fZ
+fZ
+aK
 AW
 AW
 AW
@@ -20638,11 +20653,11 @@ HA
 HA
 HA
 HA
-HA
-HA
-HA
-HA
-iT
+aK
+aK
+fZ
+fZ
+aK
 AW
 ba
 Jx
@@ -20897,9 +20912,9 @@ HA
 HA
 HA
 HA
-HA
-HA
-iT
+aK
+aK
+yM
 AW
 bX
 Jx
@@ -21155,8 +21170,8 @@ HA
 HA
 HA
 HA
-HA
-iT
+yM
+yM
 AW
 wZ
 Jx
@@ -21413,7 +21428,7 @@ HA
 HA
 HA
 HA
-iT
+yM
 AW
 Jx
 Jx

@@ -828,12 +828,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/city)
-"aLn" = (
-/obj/machinery/bloodbankgen,
-/turf/open/floor/f13{
-	icon_state = "darkdirtysolid"
-	},
-/area/f13/ncr)
 "aLV" = (
 /obj/structure/chair/stool{
 	dir = 1;
@@ -18869,6 +18863,7 @@
 	dir = 4;
 	light_color = "red"
 	},
+/obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia,
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/ncr)
 "rNY" = (
@@ -56198,7 +56193,7 @@ rFA
 nJZ
 eJX
 jIo
-aLn
+cJK
 cJK
 jiq
 bYF

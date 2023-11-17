@@ -25495,6 +25495,10 @@
 /area/f13/building/massfusion)
 "dLW" = (
 /obj/structure/legion_extractor,
+/obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia,
+/obj/item/seeds/poppy/broc,
+/obj/item/seeds/xander,
+/obj/item/seeds/mutfruit,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/building)
 "dMb" = (
@@ -46827,10 +46831,6 @@
 	icon_state = "verticalinnermain0"
 	},
 /area/f13/building/hospital)
-"qGu" = (
-/obj/structure/closet/crate/large,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland/quarry)
 "qGH" = (
 /obj/structure/closet/crate/freezer{
 	storage_capacity = 30
@@ -54431,25 +54431,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/city/bighorn)
 "van" = (
-/obj/machinery/smartfridge/bottlerack/seedbin,
-/obj/item/seeds/agave,
-/obj/item/seeds/agave,
-/obj/item/seeds/xander,
-/obj/item/seeds/xander,
-/obj/item/seeds/poppy/broc,
-/obj/item/seeds/poppy/broc,
-/obj/item/seeds/mutfruit,
-/obj/item/seeds/mutfruit,
-/obj/item/seeds/feracactus,
-/obj/item/seeds/feracactus,
-/obj/item/seeds/wheat,
-/obj/item/seeds/wheat,
-/obj/item/seeds/pumpkin,
-/obj/item/seeds/cannabis,
-/obj/item/seeds/cannabis,
-/obj/item/seeds/cotton,
-/obj/item/storage/bag/plants,
-/obj/item/storage/bag/plants,
+/obj/machinery/vending/hydroseeds,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/building)
 "vao" = (
@@ -58828,7 +58810,7 @@
 	},
 /area/f13/wasteland/museum)
 "xFX" = (
-/obj/machinery/smartfridge/bottlerack/grownbin,
+/obj/machinery/vending/hydronutrients,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/building)
 "xGe" = (
@@ -98930,7 +98912,7 @@ kZn
 prR
 puj
 cpq
-qGu
+cpq
 hIS
 aaF
 wfO

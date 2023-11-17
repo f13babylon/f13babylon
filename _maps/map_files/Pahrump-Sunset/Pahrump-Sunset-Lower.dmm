@@ -13828,6 +13828,7 @@
 /area/f13/tunnel)
 "nZP" = (
 /obj/machinery/rnd/destructive_analyzer,
+/obj/item/stack/sheet/mineral/abductor/ten,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
