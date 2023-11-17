@@ -2,24 +2,22 @@
 // STIMPAK FLUID REAGENT
 
 /datum/reagent/medicine/stimpak
-	name = "Stimpak Fluid"
-	description = "Rapidly heals damage when injected. Deals minor toxin damage if ingested."
+	name = "Stimpak fluid"
+	description = "A pre-war cocktail of healing agents and stimulants which bolster the body's natural regenerative abilities. Injecting this leads to swift recovery from most injuries."
 	reagent_state = LIQUID
-	color = "#eb0000"
+	color = "#df341f"
 	taste_description = "grossness"
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
-	overdose_threshold = 35
+	overdose_threshold = 31
 	addiction_threshold = 25
 	value = REAGENT_VALUE_RARE
 	ghoulfriendly = TRUE
-	var/clot_rate = 0.25
-	/// If we have multiple bleeding wounds, we count the number of bleeding wounds, then multiply the clot rate by this^(n) before applying it to each cut, so more cuts = less clotting per cut (though still more total clotting)
-	var/clot_coeff_per_wound = 0.9
+	var/clot_rate = 0.35	//35% as effective as Hydra at clotting bleeding wounds
 
-/datum/reagent/medicine/stimpak/reaction_mob(mob/living/carbon/M, method=TOUCH, reac_volume, show_message = 1)
+/datum/reagent/medicine/stimpak/reaction_mob(mob/living/carbon/M, method, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
 		if(method in list(INGEST, VAPOR))
-			M.adjustToxLoss(3.75*reac_volume*REAGENTS_EFFECT_MULTIPLIER) //increased from 0.5*reac_volume, which was amusingly low since stimpak heals toxins. now a pill at safe max crits and then heals back up to low health within a few seconds
+			M.adjustToxLoss(3.5 * reac_volume * REAGENTS_EFFECT_MULTIPLIER)
 			if(show_message)
 				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
 	..()
@@ -29,170 +27,233 @@
 	if(M.mind)
 		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
 		if(istype(job))
-			switch(job.faction)
-				if(FACTION_LEGION)
-					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
+			if(job.faction == FACTION_LEGION)
+				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
 
 /datum/reagent/medicine/stimpak/on_mob_life(mob/living/carbon/M)
-	for(var/thing in M.all_wounds)
-		var/datum/wound/W = thing
-		var/obj/item/bodypart/wounded_part = W.limb
-		if(wounded_part)
-			wounded_part.heal_damage(2, 2)//For future cooders, heal_damage does not heal wounds. It heals the limb itself (hence why it uses w.limb)
-	..()
-//THIS CHUNK OF CODE HANDLES STIMPACKS CLOTTING WOUNDS!! THE ABOVE CODE MAKES IT HEAL LIMBS FASTER//
-	var/effective_clot_rate = clot_rate
-	for(var/i in M.all_wounds)
-		var/datum/wound/iter_wound = i
-		if(iter_wound.blood_flow)
-			effective_clot_rate *= clot_coeff_per_wound
-	for(var/i in M.all_wounds)
-		var/datum/wound/iter_wound = i
-		iter_wound.blood_flow = max(0, iter_wound.blood_flow - effective_clot_rate)
+	if(M.mind)
+		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
+		if(istype(job))
+			if(job.faction == FACTION_LEGION)
+				M.set_disgust(max(M.disgust + 5, DISGUST_LEVEL_DISGUSTED))
+				M.hallucination = (max(M.hallucination, rand(10, 25)))
+			else if (job.faction == FACTION_TRIBAL)
+				M.adjust_disgust(1.5)
+				M.hallucination = (max(M.hallucination, rand(10, 25)))
 
-	if(M.health < 0)					//Functions as epinephrine.
-//		M.adjustToxLoss(-3*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustBruteLoss(-3*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustFireLoss(-2*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.AdjustStun(-2*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.AdjustKnockdown(-2*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustOxyLoss(-5*REAGENTS_EFFECT_MULTIPLIER,	0)
-		M.adjustStaminaLoss(-2*REAGENTS_EFFECT_MULTIPLIER)//This will probably be horribly unbalanced because of multipliers, but we will see.
-		M.heal_bodypart_damage(3,3, only_organic = FALSE, only_robotic = TRUE)
-	if(M.oxyloss > 35)
-		M.setOxyLoss(35, 0)
-	if(M.losebreath >= 4)
-		M.losebreath -= 2
-	if(M.losebreath < 0)
-		M.losebreath = 0
-	M.adjustStaminaLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, 0)
-	. = 1
-	if(prob(20))
-		M.AdjustAllImmobility(-20, 0)
-		M.AdjustUnconscious(-20, 0)
-	if(!M.reagents.has_reagent(/datum/reagent/medicine/healing_powder)) // We don't want these healing items to stack, so we only apply the healing if these chems aren't found.We only check for the less powerful chems, so the least powerful one always heals.
-		M.adjustBruteLoss(-3*REAGENTS_EFFECT_MULTIPLIER)
-		M.adjustFireLoss(-3*REAGENTS_EFFECT_MULTIPLIER)
-		M.AdjustStun(-2*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustOxyLoss(-2*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.AdjustKnockdown(-2*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustStaminaLoss(-2*REAGENTS_EFFECT_MULTIPLIER)
-		M.heal_bodypart_damage(3,3, only_organic = FALSE, only_robotic = TRUE)
-		//M.adjustToxLoss(-3*REAGENTS_EFFECT_MULTIPLIER, 0)
+	if(!M.reagents.has_reagent(/datum/reagent/medicine/bitterdrink) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpoultice) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpowder) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpakimitation))
+		//Clotting properties for pierce/slash wounds
+		if(current_cycle > 0 && current_cycle % 6 == 0)	//Every 6th cycle, reduce blood_flow for all pierce/slash wounds by clot_rate.
+			if(M.all_wounds.len >= 1)
+				for(var/datum/wound/iter_wound in M.all_wounds)
+					var/affected_limb_name = iter_wound.limb.name
+					switch(iter_wound.severity)
+						if (WOUND_SEVERITY_CRITICAL)
+							if (iter_wound.wound_type == WOUND_PIERCE)
+								iter_wound.blood_flow -= clot_rate
+								M.visible_message("<span class='notice'>The bleeding hole in [M]'s [affected_limb_name] fills with fresh tissue!</span>", "<span class='notice'>You feel the cavity in your [affected_limb_name] weaving back together.</span>")
+							else if (iter_wound.wound_type == WOUND_SLASH)
+								iter_wound.blood_flow -= clot_rate
+								M.visible_message("<span class='notice'>The deep gashes on [M]'s [affected_limb_name] close up!</span>", "<span class='notice'>You feel the deep gashes on your [affected_limb_name] close up.</span>")
+						if (WOUND_SEVERITY_SEVERE)
+							if (iter_wound.wound_type == WOUND_PIERCE)
+								iter_wound.blood_flow -= clot_rate
+								M.visible_message("<span class='notice'>The puncture wound on [M]'s [affected_limb_name] shrinks!</span>", "<span class='notice'>You feel the puncture wound on your [affected_limb_name] shrinking.</span>")
+							else if (iter_wound.wound_type == WOUND_SLASH)
+								iter_wound.blood_flow -= clot_rate
+								M.visible_message("<span class='notice'>The large cuts on [M]'s [affected_limb_name] mend!</span>", "<span class='notice'>You feel the large cuts on your [affected_limb_name] mending.</span>")
+						if (WOUND_SEVERITY_MODERATE)
+							if (iter_wound.wound_type == WOUND_PIERCE || iter_wound.wound_type == WOUND_SLASH)
+								iter_wound.blood_flow -= clot_rate
+
+		//Actual healing part starts here
+		M.adjustBruteLoss(-3*REAGENTS_EFFECT_MULTIPLIER, FALSE)
+		M.adjustFireLoss(-2.25*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//75% of brute healing
+		M.adjustOxyLoss(-2*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//66% of brute healing
+		M.AdjustStun(-2*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//66% of brute healing
+		M.AdjustKnockdown(-2*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//66% of brute healing
+		M.adjustStaminaLoss(-2*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//66% of brute healing
+		M.heal_bodypart_damage(3, 2.25, only_robotic = TRUE, only_organic = FALSE)
 		. = TRUE
 	..()
 
 /datum/reagent/medicine/stimpak/overdose_process(mob/living/carbon/M)
-	M.adjustToxLoss(5*REAGENTS_EFFECT_MULTIPLIER)
-	M.adjustOxyLoss(7*REAGENTS_EFFECT_MULTIPLIER)
+	M.adjustToxLoss(5*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing
+	M.adjustOxyLoss(7*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing + base oxy healing
 	M.drowsyness += 2*REAGENTS_EFFECT_MULTIPLIER
-	M.jitteriness += 3
-	..()
+	M.jitteriness += 3*REAGENTS_EFFECT_MULTIPLIER
 	. = TRUE
 
 // ---------------------------
-// IMITATION STIMPAK FLUID REAGENT
+// IMITATION STIMPAK FLUID REAGENT (75% as effective as regular Stimpak fluid)
+
 /datum/reagent/medicine/stimpakimitation
-	name = "Imitation Stimpak Fluid"
-	description = "Rapidly heals damage when injected. A poor man's stimpak."
+	name = "Imitation stimpak fluid"
+	description = "A chemical which aims to replicate the effects of the fluid found in pre-war stimpaks, albeit less effective."
 	reagent_state = LIQUID
-	color = "#FFA500"
-	ghoulfriendly = TRUE
-
-/datum/reagent/medicine/stimpakimitation/on_mob_life(mob/living/carbon/M)
-	for(var/thing in M.all_wounds)
-		var/datum/wound/W = thing
-		var/obj/item/bodypart/wounded_part = W.limb
-		if(wounded_part)
-			wounded_part.heal_damage(10, 10)//Does this even work? AAAAAAAAAAAAAAAAA Original .heal_damage(125, 125)
-	..()
-	M.adjustBruteLoss(-2*REAGENTS_EFFECT_MULTIPLIER)
-	M.adjustFireLoss(-2*REAGENTS_EFFECT_MULTIPLIER)
-	M.AdjustStun(-2*REAGENTS_EFFECT_MULTIPLIER, 0)
-	M.AdjustKnockdown(-2*REAGENTS_EFFECT_MULTIPLIER, 0)
-	M.adjustStaminaLoss(-2*REAGENTS_EFFECT_MULTIPLIER)
-	M.adjustOxyLoss(-1*REAGENTS_EFFECT_MULTIPLIER, 0)
-	M.heal_bodypart_damage(2,2, only_organic = FALSE, only_robotic = TRUE)
-	..()
-
-// ---------------------------
-// SUPER STIMPAK FLUID REAGENT
-
-/datum/reagent/medicine/super_stimpak
-	name = "super stim chemicals"
-
-	description = "Chemicals found in pre-war stimpaks."
-	reagent_state = LIQUID
-	color = "#e50d0d"
+	color = "#df5342"
+	taste_description = "grossness"
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
-	overdose_threshold = 25
-	addiction_threshold = 16
-	value = REAGENT_VALUE_VERY_RARE
+	overdose_threshold = 31
+	addiction_threshold = 25
+	value = REAGENT_VALUE_UNCOMMON
 	ghoulfriendly = TRUE
-	var/clot_rate = 0.50 //Superstims clot WAY faster
-	/// If we have multiple bleeding wounds, we count the number of bleeding wounds, then multiply the clot rate by this^(n) before applying it to each cut, so more cuts = less clotting per cut (though still more total clotting)
-	var/clot_coeff_per_wound = 0.9
+	var/clot_rate = 0.2625	//26.25% as effective as Hydra at clotting bleeding wounds
 
-/datum/reagent/medicine/super_stimpak/on_mob_add(mob/living/carbon/M)
+/datum/reagent/medicine/stimpak/reaction_mob(mob/living/carbon/M, method, reac_volume, show_message = 1)
+	if(iscarbon(M) && M.stat != DEAD)
+		if(method in list(INGEST, VAPOR))
+			M.adjustToxLoss(2.625 * reac_volume * REAGENTS_EFFECT_MULTIPLIER)
+			if(show_message)
+				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
+	..()
+
+/datum/reagent/medicine/stimpak/on_mob_add(mob/living/carbon/M)
 	. = ..()
 	if(M.mind)
 		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
 		if(istype(job))
-			switch(job.faction)
-				if(FACTION_LEGION)
-					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
+			if(job.faction == FACTION_LEGION)
+				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
 
-/datum/reagent/medicine/super_stimpak/on_mob_life(mob/living/carbon/M)
-	for(var/thing in M.all_wounds)
-		var/datum/wound/W = thing
-		var/obj/item/bodypart/wounded_part = W.limb
-		if(wounded_part)
-			wounded_part.heal_damage(3, 3)//Superstims heal you faster
-	..()
-//THIS CHUNK OF CODE HANDLES CLOTTING WOUNDS!! THE ABOVE CODE MAKES IT HEAL LIMBS FASTER//
-	var/effective_clot_rate = clot_rate
-	for(var/i in M.all_wounds)
-		var/datum/wound/iter_wound = i
-		if(iter_wound.blood_flow)
-			effective_clot_rate *= clot_coeff_per_wound
-	for(var/i in M.all_wounds)
-		var/datum/wound/iter_wound = i
-		iter_wound.blood_flow = max(0, iter_wound.blood_flow - effective_clot_rate)
-	if(M.health < 0)					//Functions as epinephrine.
-//		M.adjustToxLoss(-3*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustBruteLoss(-3*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustFireLoss(-2*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustOxyLoss(-5*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.AdjustStun(-2*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.AdjustKnockdown(-2*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustStaminaLoss(-2*REAGENTS_EFFECT_MULTIPLIER)
-		M.adjustToxLoss(-3*REAGENTS_EFFECT_MULTIPLIER, 0)//Same vars as stimpaks, but reagent effect multiplier <?>
-		M.heal_bodypart_damage(4,4, only_organic = FALSE, only_robotic = TRUE)
-	if(M.oxyloss > 35)
-		M.setOxyLoss(35, 0)
-	if(M.losebreath >= 4)
-		M.losebreath -= 2
-	if(M.losebreath < 0)
-		M.losebreath = 0
-	M.adjustStaminaLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, 0)
-	. = 1
-	if(prob(20))
-		M.AdjustAllImmobility(-20, 0)
-		M.AdjustUnconscious(-20, 0)
-	if(!M.reagents.has_reagent(/datum/reagent/medicine/healing_powder/poultice) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/healing_powder)) // We don't want these healing items to stack, so we only apply the healing if these chems aren't found. We only check for the less powerful chems, so the least powerful one always heals.
-		M.adjustBruteLoss(-7*REAGENTS_EFFECT_MULTIPLIER)
-		M.adjustFireLoss(-5*REAGENTS_EFFECT_MULTIPLIER)
-		M.AdjustStun(-5*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.AdjustKnockdown(-5*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustStaminaLoss(-3*REAGENTS_EFFECT_MULTIPLIER)
-		M.heal_bodypart_damage(6,6, only_organic = FALSE, only_robotic = TRUE)
+/datum/reagent/medicine/stimpak/on_mob_life(mob/living/carbon/M)
+	if(M.mind)
+		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
+		if(istype(job))
+			if(job.faction == FACTION_LEGION)
+				M.set_disgust(max(M.disgust + 2.5, DISGUST_LEVEL_DISGUSTED))
+				M.hallucination = (max(M.hallucination, rand(5, 20)))
+			else if (job.faction == FACTION_TRIBAL)
+				M.adjust_disgust(1)
+				M.hallucination = (max(M.hallucination, rand(5, 20)))
+
+	if(!M.reagents.has_reagent(/datum/reagent/medicine/bitterdrink) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpoultice) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpowder))
+		//Clotting properties for pierce/slash wounds
+		if(current_cycle > 0 && current_cycle % 6 == 0)	//Every 6th cycle, reduce blood_flow for all pierce/slash wounds by clot_rate.
+			if(M.all_wounds.len >= 1)
+				for(var/datum/wound/iter_wound in M.all_wounds)
+					var/affected_limb_name = iter_wound.limb.name
+					switch(iter_wound.severity)
+						if (WOUND_SEVERITY_CRITICAL)
+							if (iter_wound.wound_type == WOUND_PIERCE)
+								iter_wound.blood_flow -= clot_rate
+								M.visible_message("<span class='notice'>The bleeding hole in [M]'s [affected_limb_name] slowly fills with fresh tissue!</span>", "<span class='notice'>You feel the cavity in your [affected_limb_name] slowly weaving back together.</span>")
+							else if (iter_wound.wound_type == WOUND_SLASH)
+								iter_wound.blood_flow -= clot_rate
+								M.visible_message("<span class='notice'>The deep gashes on [M]'s [affected_limb_name] slowly close up!</span>", "<span class='notice'>You feel the deep gashes on your [affected_limb_name] slowly close up.</span>")
+						if (WOUND_SEVERITY_SEVERE)
+							if (iter_wound.wound_type == WOUND_PIERCE)
+								iter_wound.blood_flow -= clot_rate
+								M.visible_message("<span class='notice'>The puncture wound on [M]'s [affected_limb_name] slowly shrinks!</span>", "<span class='notice'>You feel the puncture wound on your [affected_limb_name] slowly shrinking.</span>")
+							else if (iter_wound.wound_type == WOUND_SLASH)
+								iter_wound.blood_flow -= clot_rate
+								M.visible_message("<span class='notice'>The large cuts on [M]'s [affected_limb_name] slowly mend!</span>", "<span class='notice'>You feel the large cuts on your [affected_limb_name] slowly mending.</span>")
+						if (WOUND_SEVERITY_MODERATE)
+							if (iter_wound.wound_type == WOUND_PIERCE || iter_wound.wound_type == WOUND_SLASH)
+								iter_wound.blood_flow -= clot_rate
+
+		//Actual healing part starts here
+		M.adjustBruteLoss(-2.25*REAGENTS_EFFECT_MULTIPLIER, FALSE)
+		M.adjustFireLoss(-1.7*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//75% of brute healing
+		M.adjustOxyLoss(-1.5*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//66% of brute healing
+		M.AdjustStun(-1.5*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//66% of brute healing
+		M.AdjustKnockdown(-1.5*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//66% of brute healing
+		M.adjustStaminaLoss(-1.5*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//66% of brute healing
+		M.heal_bodypart_damage(2.25, 1.7, only_robotic = TRUE, only_organic = FALSE)
 		. = TRUE
 	..()
 
-/datum/reagent/medicine/super_stimpak/overdose_process(mob/living/carbon/M)
-	M.adjustToxLoss(10*REAGENTS_EFFECT_MULTIPLIER)
-	M.adjustOxyLoss(10*REAGENTS_EFFECT_MULTIPLIER)
+/datum/reagent/medicine/stimpak/overdose_process(mob/living/carbon/M)
+	M.adjustToxLoss(3.75*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing
+	M.adjustOxyLoss(5.25*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing + base oxy healing
+	M.drowsyness += 2*REAGENTS_EFFECT_MULTIPLIER
+	M.jitteriness += 3*REAGENTS_EFFECT_MULTIPLIER
+	. = TRUE
+
+// ---------------------------
+// SUPER STIMPAK FLUID REAGENT (225% as effective as regular Stimpak fluid)
+
+/datum/reagent/medicine/stimpaksuper
+	name = "Super stimpak fluid"
+	description = "A powerful pre-war cocktail of healing agents and stimulants which bolster the body's natural regenerative abilities. Injecting this leads to near instant recovery from most injuries."
+	reagent_state = LIQUID
+	color = "#df341f"
+	taste_description = "grossness"
+	metabolization_rate = 0.5 * REAGENTS_METABOLISM
+	overdose_threshold = 31
+	addiction_threshold = 25
+	value = REAGENT_VALUE_VERY_RARE
+	ghoulfriendly = TRUE
+	var/clot_rate = 0.65	//65% as effective as Hydra at clotting bleeding wounds
+
+/datum/reagent/medicine/stimpak/reaction_mob(mob/living/carbon/M, method, reac_volume, show_message = 1)
+	if(iscarbon(M) && M.stat != DEAD)
+		if(method in list(INGEST, VAPOR))
+			M.adjustToxLoss(5.25 * reac_volume * REAGENTS_EFFECT_MULTIPLIER)
+			if(show_message)
+				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
 	..()
+
+/datum/reagent/medicine/stimpak/on_mob_add(mob/living/carbon/M)
+	. = ..()
+	if(M.mind)
+		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
+		if(istype(job))
+			if(job.faction == FACTION_LEGION)
+				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
+
+/datum/reagent/medicine/stimpak/on_mob_life(mob/living/carbon/M)
+	if(M.mind)
+		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
+		if(istype(job))
+			if(job.faction == FACTION_LEGION)
+				M.set_disgust(max(M.disgust + 10, DISGUST_LEVEL_DISGUSTED))
+				M.hallucination = (max(M.hallucination, rand(15, 30)))
+			else if (job.faction == FACTION_TRIBAL)
+				M.adjust_disgust(2)
+				M.hallucination = (max(M.hallucination, rand(15, 30)))
+
+	if(!M.reagents.has_reagent(/datum/reagent/medicine/bitterdrink) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpoultice) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpowder) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) &&!M.reagents.has_reagent(/datum/reagent/medicine/stimpakimitation))
+		//Clotting properties for pierce/slash wounds
+		if(current_cycle > 0 && current_cycle % 5 == 0)	//Every 5th cycle, reduce blood_flow for all pierce/slash wounds by clot_rate.
+			if(M.all_wounds.len >= 1)
+				for(var/datum/wound/iter_wound in M.all_wounds)
+					var/affected_limb_name = iter_wound.limb.name
+					switch(iter_wound.severity)
+						if (WOUND_SEVERITY_CRITICAL)
+							if (iter_wound.wound_type == WOUND_PIERCE)
+								iter_wound.blood_flow -= clot_rate
+								M.visible_message("<span class='notice'>The bleeding hole in [M]'s [affected_limb_name] rapidly fills with fresh tissue!</span>", "<span class='notice'>You feel the cavity in your [affected_limb_name] weaving back together.</span>")
+							else if (iter_wound.wound_type == WOUND_SLASH)
+								iter_wound.blood_flow -= clot_rate
+								M.visible_message("<span class='notice'>The deep gashes on [M]'s [affected_limb_name] rapidly close up!</span>", "<span class='notice'>You feel the deep gashes on your [affected_limb_name] close up.</span>")
+						if (WOUND_SEVERITY_SEVERE)
+							if (iter_wound.wound_type == WOUND_PIERCE)
+								iter_wound.blood_flow -= clot_rate
+								M.visible_message("<span class='notice'>The puncture wound on [M]'s [affected_limb_name] quickly shrinks!</span>", "<span class='notice'>You feel the puncture wound on your [affected_limb_name] shrinking.</span>")
+							else if (iter_wound.wound_type == WOUND_SLASH)
+								iter_wound.blood_flow -= clot_rate
+								M.visible_message("<span class='notice'>The large cuts on [M]'s [affected_limb_name] quickly mend!</span>", "<span class='notice'>You feel the large cuts on your [affected_limb_name] mending.</span>")
+						if (WOUND_SEVERITY_MODERATE)
+							if (iter_wound.wound_type == WOUND_PIERCE || iter_wound.wound_type == WOUND_SLASH)
+								iter_wound.blood_flow -= clot_rate
+
+		//Actual healing part starts here
+		M.adjustBruteLoss(-6.75*REAGENTS_EFFECT_MULTIPLIER, FALSE)
+		M.adjustFireLoss(-5*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//75% of brute healing
+		M.adjustOxyLoss(-4.5*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//66% of brute healing
+		M.AdjustStun(-4.5*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//66% of brute healing
+		M.AdjustKnockdown(-4.5*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//66% of brute healing
+		M.adjustStaminaLoss(-4.5*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//66% of brute healing
+		M.heal_bodypart_damage(6.75, 5, only_robotic = TRUE, only_organic = FALSE)
+		. = TRUE
+	..()
+
+/datum/reagent/medicine/stimpak/overdose_process(mob/living/carbon/M)
+	M.adjustToxLoss(11.25*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing
+	M.adjustOxyLoss(15.75*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing + base oxy healing
+	M.drowsyness += 2*REAGENTS_EFFECT_MULTIPLIER
+	M.jitteriness += 3*REAGENTS_EFFECT_MULTIPLIER
 	. = TRUE
 
 // ---------------------------
@@ -217,7 +278,7 @@
 	if(M.getBruteLoss() == 0 && M.getFireLoss() == 0)
 		metabolization_rate = 3 * REAGENTS_METABOLISM //metabolizes much quicker if not injured
 	var/longpork_heal_rate = (is_longporklover ? longpork_lover_healing : longpork_hurting) * REAGENTS_EFFECT_MULTIPLIER
-	if(!M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/healing_powder))
+	if(!M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpowder))
 		M.adjustFireLoss(longpork_heal_rate)
 		M.adjustBruteLoss(longpork_heal_rate)
 		M.adjustToxLoss(is_longporklover ? 0 : 3)
@@ -244,11 +305,11 @@
 		M.AdjustStun(-2*REAGENTS_EFFECT_MULTIPLIER, 0)
 		M.AdjustKnockdown(-5*REAGENTS_EFFECT_MULTIPLIER, 0)
 		M.AdjustUnconscious(-2*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustStaminaLoss(-2*REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.adjustStaminaLoss(-2*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
 	else
 		M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 8)
-		M.adjustToxLoss(5*REAGENTS_EFFECT_MULTIPLIER)
-		M.adjustOxyLoss(5*REAGENTS_EFFECT_MULTIPLIER)
+		M.adjustToxLoss(5*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
+		M.adjustOxyLoss(5*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
 	..()
 	. = TRUE
 
@@ -296,92 +357,169 @@
 	return TRUE
 
 // ---------------------------
-// BITTER DRINK REAGENT
+// BITTER DRINK REAGENT	(180% as effective as regular Stimpak fluid for Tribals / 133% for non-Tribals)
 
-/datum/reagent/medicine/bitter_drink
+/datum/reagent/medicine/bitterdrink
 	name = "Bitter drink"
-	description = "An herbal healing concoction which enables wounded soldiers and travelers to tend to their wounds without stopping during journeys."
+	description = "An herbal healing concoction which enables wounded soldiers and travelers to tend to their wounds without stopping during journeys. It derives its name from curing the wounds but leaving the 'bitter' pain from them."
 	reagent_state = LIQUID
-	color ="#A9FBFB"
-	taste_description = "bitterness"
-	metabolization_rate = 0.5 * REAGENTS_METABOLISM //in between powder/stimpaks and poultice/superstims?
-	overdose_threshold = 31
-	var/heal_factor = -5 //Subtractive multiplier if you do not have the perk.
-	var/heal_factor_perk = -5.5 //Multiplier if you have the right perk.
-	ghoulfriendly = TRUE
-
-/datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/carbon/M)
-	var/is_tribal = FALSE
-	if(HAS_TRAIT(M, TRAIT_TRIBAL))
-		is_tribal = TRUE
-	var/heal_rate = (is_tribal ? heal_factor_perk : heal_factor) * REAGENTS_EFFECT_MULTIPLIER
-	if(!M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/healing_powder/poultice) && !M.reagents.has_reagent(/datum/reagent/medicine/healing_powder) && !M.reagents.has_reagent(/datum/reagent/medicine/super_stimpak))
-		M.adjustFireLoss(heal_rate)
-		M.adjustBruteLoss(heal_rate)
-		M.adjustToxLoss(heal_rate)
-		M.hallucination = max(M.hallucination, is_tribal ? 0 : 5)
-		M.radiation -= min(M.radiation, 8)
-		. = TRUE
-	..()
-
-/datum/reagent/medicine/bitter_drink/overdose_process(mob/living/M)
-	M.adjustToxLoss(2*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
-	M.adjustOxyLoss(2*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
-	..()
-	. = TRUE
-
-
-// ---------------------------
-// HEALING POWDER REAGENT
-
-/datum/reagent/medicine/healing_powder
-	name = "Healing powder"
-	description = "A healing powder derived from a mix of ground broc flowers and xander roots. Consumed orally, and produces a euphoric high."
-	reagent_state = SOLID
-	color = "#A9FBFB"
-	taste_description = "bitterness"
+	color = "#773c00"
+	taste_description = "unbearable herbal bitterness"
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
-	overdose_threshold = 30
-	var/heal_factor = -1.5 //Subtractive multiplier if you do not have the perk.
-	var/heal_factor_perk = -2.2 //Multiplier if you have the right perk.
+	overdose_threshold = 31
+	value = REAGENT_VALUE_VERY_RARE
 	ghoulfriendly = TRUE
+	var/heal_factor_tribal = 5.4 //How much damage it will heal if the person has the Tribal trait
+	var/heal_factor = 4 //How much it will heal if the person does not have the Tribal trait (75% of the regular healing rate)
 
-/datum/reagent/medicine/healing_powder/on_mob_life(mob/living/carbon/M)
-	var/is_tribal = FALSE
-	if(HAS_TRAIT(M, TRAIT_TRIBAL))
-		is_tribal = TRUE
-	var/heal_rate = (is_tribal ? heal_factor_perk : heal_factor) * REAGENTS_EFFECT_MULTIPLIER
-	M.adjustFireLoss(heal_rate, updating_health = FALSE)
-	M.adjustBruteLoss(heal_rate, updating_health = FALSE)
-	M.adjustToxLoss(heal_rate, updating_health = FALSE)
-	M.hallucination = max(M.hallucination, is_tribal ? 0 : 5)
-	..()
-	return TRUE // update health at end of tick
-
-/datum/reagent/medicine/healing_powder/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1)
+/datum/reagent/medicine/healingpowder/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
 		if(method in list(INGEST, VAPOR, INJECT))
-			M.adjustToxLoss(3*reac_volume*REAGENTS_EFFECT_MULTIPLIER) //also increased from 0.5, reduced from 6
+			M.adjustToxLoss(2 * reac_volume * REAGENTS_EFFECT_MULTIPLIER)
+			M.adjustOxyLoss(2 * reac_volume * REAGENTS_EFFECT_MULTIPLIER)
 			if(show_message)
 				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
 	..()
 
-/datum/reagent/medicine/healing_powder/overdose_process(mob/living/M)
-	M.adjustToxLoss(2*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
-	M.adjustOxyLoss(4*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
+/datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/carbon/M)
+	var/is_tribal = HAS_TRAIT(M, TRAIT_TRIBAL)
+	var/heal_rate = (is_tribal ? heal_factor_tribal : heal_factor) * REAGENTS_EFFECT_MULTIPLIER
+	if(!M.reagents.has_reagent(/datum/reagent/medicine/healingpoultice) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpowder) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpaksuper) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpakimitation))
+		//Extra healing for each bodypart affected by wounds (results in bitter drink healing wounded bodyparts for 125% of super stimpak healing rate)
+		if(is_tribal)
+			if(M.all_wounds.len >= 1)
+				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
+					if(iter_bodypart.wounds.len >= 1)
+						M.adjustBruteLoss(-3, FALSE)
+						M.adjustFireLoss(-2.25, FALSE)	//75% of brute healing
+
+		//Actual healing part starts here
+		M.adjustBruteLoss(-heal_rate, FALSE)
+		M.adjustFireLoss(-heal_rate * 0.75, FALSE)	//75% of brute healing
+		M.adjustToxLoss(-heal_rate * 0.66, FALSE)	//66% of brute healing
+		M.adjustOxyLoss(-heal_rate * 0.66, FALSE)	//66% of brute healing
+		M.AdjustStun(-heal_rate * 0.66, FALSE)	//66% of brute healing
+		M.AdjustKnockdown(-heal_rate * 0.66, FALSE)	//66% of brute healing
+		M.adjustStaminaLoss(-heal_rate * 0.66, FALSE)	//66% of brute healing
+		. = TRUE
+
+	M.hallucination += is_tribal ? 0 : 5
+	M.adjust_disgust(is_tribal ? 0 : 10)
 	..()
-	return TRUE // update health at end of tick
+
+/datum/reagent/medicine/bitter_drink/overdose_process(mob/living/M)
+	M.adjustToxLoss((-heal_rate * 0.66 * 2.5 + (-heal_rate * 0.66))*REAGENTS_EFFECT_MULTIPLIER, FALSE)
+	M.adjustOxyLoss((-heal_rate * 0.66 * 2.5 + (-heal_rate * 0.66))*REAGENTS_EFFECT_MULTIPLIER, FALSE)
+	M.adjust_disgust(10)
+	. = TRUE
+	..()
 
 // ---------------------------
-// HEALING POULTICE REAGENT
+// HEALING POWDER REAGENT (75% as effective as regular Stimpak fluid for Tribals / 55% for non-Tribals)
 
-/datum/reagent/medicine/healing_powder/poultice
+/datum/reagent/medicine/healingpowder
+	name = "Healing powder"
+	description = "A healing powder derived from a mix of ground broc flowers and xander roots, commonly used by tribals and Legionaries. Applied on skin, it has an additional oxygenating effect."
+	reagent_state = SOLID
+	color = "#b88b5d"
+	taste_description = "weak herbal bitterness"
+	metabolization_rate = 0.5 * REAGENTS_METABOLISM
+	overdose_threshold = 31
+	value = REAGENT_VALUE_COMMON
+	ghoulfriendly = TRUE
+	var/heal_factor_tribal = 2.25 //How much damage it will heal if the person has the Tribal trait
+	var/heal_factor = 1.7 //How much it will heal if the person does not have the Tribal trait (75% of the regular healing rate)
+
+/datum/reagent/medicine/healingpowder/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1)
+	if(iscarbon(M) && M.stat != DEAD)
+		if(method in list(INGEST, VAPOR, INJECT))
+			M.adjustToxLoss(4 * reac_volume * REAGENTS_EFFECT_MULTIPLIER)
+			if(show_message)
+				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
+	..()
+
+/datum/reagent/medicine/healingpowder/on_mob_life(mob/living/carbon/M)
+	var/is_tribal = HAS_TRAIT(M, TRAIT_TRIBAL)
+	var/heal_rate = (is_tribal ? heal_factor_tribal : heal_factor) * REAGENTS_EFFECT_MULTIPLIER
+	if(!M.reagents.has_reagent(/datum/reagent/medicine/stimpaksuper) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpakimitation))
+		//Extra healing for each bodypart affected by wounds
+		if(is_tribal)
+			if(M.all_wounds.len >= 1)
+				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
+					if(iter_bodypart.wounds.len >= 1)
+						M.adjustBruteLoss(-1, FALSE)
+						M.adjustFireLoss(-0.75, FALSE)	//75% of brute healing
+
+		//Actual healing part starts here
+		M.adjustBruteLoss(-heal_rate, FALSE)
+		M.adjustFireLoss(-heal_rate * 0.75, FALSE)	//75% of brute healing
+		M.adjustOxyLoss(-heal_rate * 3, FALSE)	//300% of brute healing
+		M.AdjustStun(-heal_rate * 0.66, FALSE)	//66% of brute healing
+		M.AdjustKnockdown(-heal_rate * 0.66, FALSE)	//66% of brute healing
+		M.adjustStaminaLoss(-heal_rate * 0.66, FALSE)	//66% of brute healing
+		. = TRUE
+
+	M.hallucination += is_tribal ? 0 : 5
+	..()
+
+/datum/reagent/medicine/healingpowder/overdose_process(mob/living/M)
+	M.adjustToxLoss((-heal_rate * 3 + (-heal_rate * 0.66))*REAGENTS_EFFECT_MULTIPLIER, FALSE)
+	. = TRUE
+	..()
+
+// ---------------------------
+// HEALING POULTICE REAGENT (115% as effectve as regular Stimpak fluid for Tribals / 87.5% for non-Tribals)
+
+/datum/reagent/medicine/healingpoultice
 	name = "Healing poultice"
-	description = "Restores limb condition and heals rapidly."
-	color = "#C8A5DC"
-	overdose_threshold = 20
-	heal_factor = -3.0
-	heal_factor_perk = -3.5
+	description = "A healing poultice derived from an assortment of medicinal plants, commonly used by tribals and Legionaries. Applied on skin, it has as additional antitoxin and radiation-treating effect."
+	reagent_state = SOLID
+	color = "#9f9350"
+	taste_description = "herbal bitterness"
+	metabolization_rate = 0.5 * REAGENTS_METABOLISM
+	overdose_threshold = 31
+	value = REAGENT_VALUE_RARE
+	ghoulfriendly = TRUE
+	var/heal_factor_tribal = 3.5 //How much damage it will heal if the person has the Tribal trait
+	var/heal_factor = 2.625 //How much it will heal if the person does not have the Tribal trait (75% of the regular healing rate)
+
+/datum/reagent/medicine/healingpoultice/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1)
+	if(iscarbon(M) && M.stat != DEAD)
+		if(method in list(INGEST, VAPOR, INJECT))
+			M.adjustOxyLoss(4 * reac_volume * REAGENTS_EFFECT_MULTIPLIER)
+			if(show_message)
+				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
+	..()
+
+/datum/reagent/medicine/healingpoultice/on_mob_life(mob/living/carbon/M)
+	var/is_tribal = HAS_TRAIT(M, TRAIT_TRIBAL)
+	var/heal_rate = (is_tribal ? heal_factor_tribal : heal_factor) * REAGENTS_EFFECT_MULTIPLIER
+	if(!M.reagents.has_reagent(/datum/reagent/medicine/healingpowder) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpaksuper) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpakimitation))
+		//Extra healing for each bodypart affected by wounds
+		if(is_tribal)
+			if(M.all_wounds.len >= 1)
+				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
+					if(iter_bodypart.wounds.len >= 1)
+						M.adjustBruteLoss(-2, FALSE)
+						M.adjustFireLoss(-1.5, FALSE)	//75% of brute healing
+
+		//Actual healing part starts here
+		M.adjustBruteLoss(-heal_rate, FALSE)
+		M.adjustFireLoss(-heal_rate * 0.75, FALSE)	//75% of brute healing
+		M.adjustToxLoss(-heal_rate * 3, FALSE)	//300% of brute healing
+		M.radiation -= heal_rate * 3	//300% of brute healing
+		M.AdjustStun(-heal_rate * 0.66, FALSE)	//66% of brute healing
+		M.AdjustKnockdown(-heal_rate * 0.66, FALSE)	//66% of brute healing
+		M.adjustStaminaLoss(-heal_rate * 0.66, FALSE)	//66% of brute healing
+		. = TRUE
+
+	M.hallucination += is_tribal ? 0 : 5
+	..()
+
+/datum/reagent/medicine/healingpoultice/overdose_process(mob/living/M)
+	M.adjustOxyLoss((-heal_rate * 3	 + (-heal_rate * 0.66))*REAGENTS_EFFECT_MULTIPLIER, FALSE)
+	. = TRUE
+	..()
 
 // ---------------------------
 // RAD-X REAGENT
@@ -428,8 +566,7 @@
 
 /datum/reagent/medicine/medx
 	name = "Med-X"
-
-	description = "Med-X is a potent painkiller, allowing users to withstand high amounts of pain and continue functioning. Addictive. Prolonged presence in the body can cause seizures and organ damage."
+	description = "A potent painkiller, allowing users to withstand high amounts of pain and continue functioning. Addictive. Prolonged presence in the body can cause seizures and organ damage."
 	reagent_state = LIQUID
 	color = "#6D6374"
 	metabolization_rate = 0.25 * REAGENTS_METABOLISM
@@ -437,8 +574,12 @@
 	addiction_threshold = 6
 
 /datum/reagent/medicine/medx/on_mob_add(mob/living/carbon/human/M)
-	..()
-	if(isliving(M))
+	. = ..()
+	if(M.mind)
+		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
+		if(istype(job))
+			if(job.faction == FACTION_LEGION)
+				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
 		to_chat(M, "<span class='notice'>You feel tougher, able to shrug off pain more easily.</span>")
 		M.maxHealth += 50
 		M.health += 50
@@ -476,10 +617,9 @@
 			M.adjustOrganLoss(ORGAN_SLOT_EYES, 3)
 			M.Unconscious(400)
 			M.Jitter(1000)
-//			M.set_heartattack(TRUE)
+			M.set_heartattack(TRUE)
 			M.visible_message("<span class='userdanger'>[M] clutches at their chest as if their heart stopped!</span>")
 			to_chat(M, "<span class='danger'>Your vision goes black and your heart stops beating as the amount of drugs in your system shut down your organs one by one. Say hello to Elvis in the afterlife. </span>")
-
 	..()
 
 /datum/reagent/medicine/medx/on_mob_life(mob/living/carbon/M)
@@ -488,13 +628,6 @@
 	M.AdjustUnconscious(-30*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.adjustStaminaLoss(-5*REAGENTS_EFFECT_MULTIPLIER, 0)
 	..()
-	if(M.mind)
-		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
-		if(istype(job))
-			switch(job.faction)
-				if(FACTION_LEGION)
-					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
-	. = TRUE
 
 /datum/reagent/medicine/medx/overdose_process(mob/living/carbon/human/M)
 	M.set_blurriness(30)
@@ -540,31 +673,29 @@
 		M.Jitter(5)
 	..()
 
-/datum/reagent/medicine/legionmedx
-	name = "natural painkiller"
-
-	description = "Med-X is a potent painkiller, allowing users to withstand high amounts of pain and continue functioning."
-	reagent_state = LIQUID
+/datum/reagent/medicine/naturalpainkiller
+	name = "Natural painkiller"
+	description = "A yellow powder made from mixing toxic cactus fruit and cave fungus. Rubbed into the skin, it provides a powerful numbing effect."
+	reagent_state = SOLID
 	color = "#6D6374"
 	metabolization_rate = 0.7 * REAGENTS_METABOLISM
 	overdose_threshold = 14
-	addiction_threshold = 50
 
-/datum/reagent/medicine/legionmedx/on_mob_add(mob/M)
-	..()
+/datum/reagent/medicine/naturalpainkiller/on_mob_add(mob/M)
 	if(isliving(M))
 		var/mob/living/carbon/L = M
 		L.hal_screwyhud = SCREWYHUD_HEALTHY
 		ADD_TRAIT(L, TRAIT_IGNOREDAMAGESLOWDOWN, TRAIT_GENERIC)
+	.()
 
-/datum/reagent/medicine/legionmedx/on_mob_delete(mob/M)
+/datum/reagent/medicine/naturalpainkiller/on_mob_delete(mob/M)
 	if(isliving(M))
 		var/mob/living/carbon/L = M
 		L.hal_screwyhud = SCREWYHUD_NONE
 		REMOVE_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, TRAIT_GENERIC)
 	..()
 
-/datum/reagent/medicine/legionmedx/on_mob_life(mob/living/carbon/M)
+/datum/reagent/medicine/naturalpainkiller/on_mob_life(mob/living/carbon/M)
 	M.AdjustStun(-20*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.AdjustKnockdown(-20*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.AdjustUnconscious(-20*REAGENTS_EFFECT_MULTIPLIER, 0)
@@ -572,20 +703,20 @@
 	..()
 	. = TRUE
 
-/datum/reagent/medicine/legionmedx/overdose_process(mob/living/carbon/M)
+/datum/reagent/medicine/naturalpainkiller/overdose_process(mob/living/carbon/M)
 	if(prob(33))
 		M.drop_all_held_items()
 		M.Dizzy(2)
 		M.Jitter(2)
 	..()
 
-/datum/reagent/medicine/legionmedx/addiction_act_stage1(mob/living/carbon/M)
+/datum/reagent/medicine/naturalpainkiller/addiction_act_stage1(mob/living/carbon/M)
 	if(prob(33))
 		M.drop_all_held_items()
 		M.Jitter(2)
 	..()
 
-/datum/reagent/medicine/legionmedx/addiction_act_stage2(mob/living/carbon/M)
+/datum/reagent/medicine/naturalpainkiller/addiction_act_stage2(mob/living/carbon/M)
 	if(prob(33))
 		M.drop_all_held_items()
 		M.adjustToxLoss(1*REAGENTS_EFFECT_MULTIPLIER)
@@ -594,7 +725,7 @@
 		M.Jitter(3)
 	..()
 
-/datum/reagent/medicine/legionmedx/addiction_act_stage3(mob/living/carbon/M)
+/datum/reagent/medicine/naturalpainkiller/addiction_act_stage3(mob/living/carbon/M)
 	if(prob(33))
 		M.drop_all_held_items()
 		M.adjustToxLoss(2*REAGENTS_EFFECT_MULTIPLIER)
@@ -603,7 +734,7 @@
 		M.Jitter(4)
 	..()
 
-/datum/reagent/medicine/legionmedx/addiction_act_stage4(mob/living/carbon/M)
+/datum/reagent/medicine/naturalpainkiller/addiction_act_stage4(mob/living/carbon/M)
 	if(prob(33))
 		M.drop_all_held_items()
 		M.adjustToxLoss(3*REAGENTS_EFFECT_MULTIPLIER)
@@ -747,66 +878,64 @@
 
 /datum/reagent/medicine/hydra
 	name = "Hydra"
-	description = "Hydra is a drug developed from antivenom. Due to the Legion's disapproval of using modern medicine, some Legionaries attempted to develop a different means to help them heal damaged limbs."
+	description = "Hydra is a drug developed from radscorpion poison glands and cave fungus. Due to the Legion's disapproval of using modern medicine, some Legionaries attempted to develop a different means to help them heal damaged limbs."
 	reagent_state = LIQUID
 	color = "#6D6374"
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	overdose_threshold = 21
-	addiction_threshold = 21
 	self_consuming = TRUE
 	var/clot_rate = 1
 
 /datum/reagent/medicine/hydra/on_mob_life(mob/living/carbon/M)
-	var/is_tribal = FALSE
-	if(HAS_TRAIT(M, TRAIT_TRIBAL))
-		is_tribal = TRUE
+	var/is_tribal = HAS_TRAIT(M, TRAIT_TRIBAL)
+	if(is_tribal)
 		if(current_cycle > 0 && current_cycle % 5 == 0) //Every 5th cycle, reduce burn/bone wound severity by 1 tier, for puncture/slash wounds decrease blood_flow by clot_rate
-			for(var/i in M.all_wounds)
-				var/datum/wound/iter_wound = i
-				var/affected_limb_name = iter_wound.limb.name
-				switch(iter_wound.severity)
-					if (WOUND_SEVERITY_CRITICAL)
-						if (iter_wound.wound_type == WOUND_BLUNT)
-							iter_wound.replace_wound(/datum/wound/blunt/severe)
-							M.visible_message("<span class='notice'>The exposed bones on [M]'s [affected_limb_name] snap back together!</span>", "<span class='notice'>You feel the fractured bones in your [affected_limb_name] snap back together.</span>")
-						else if (iter_wound.wound_type == WOUND_BURN)
-							iter_wound.replace_wound(/datum/wound/burn/severe)
-							M.visible_message("<span class='notice'>The charred tissue on [M]'s [affected_limb_name] bubbles before regenerating!</span>", "<span class='notice'>You feel the catastrophic burns on your [affected_limb_name] rapidly regenerate.</span>")
-						else if (iter_wound.wound_type == WOUND_PIERCE)
-							iter_wound.blood_flow -= clot_rate
-							M.visible_message("<span class='notice'>The bleeding hole in [M]'s [affected_limb_name] rapidly fills with fresh tissue!</span>", "<span class='notice'>You feel the cavity in your [affected_limb_name] rapidly weaving back together.</span>")
-						else
-							iter_wound.blood_flow -= clot_rate
-							M.visible_message("<span class='notice'>The deep gashes on [M]'s [affected_limb_name] rapidly close up!</span>", "<span class='notice'>You feel the deep gashes on your [affected_limb_name] rapidly close up.</span>")
-					if (WOUND_SEVERITY_SEVERE)
-						if (iter_wound.wound_type == WOUND_BLUNT)
-							iter_wound.replace_wound(/datum/wound/blunt/moderate)
-							M.visible_message("<span class='notice'>The broken bones on [M]'s [affected_limb_name] fuse together!</span>", "<span class='notice'>You feel the broken bones on your [affected_limb_name] fuse together</span>")
-						else if (iter_wound.wound_type == WOUND_BURN)
-							iter_wound.replace_wound(/datum/wound/burn/moderate)
-							M.visible_message("<span class='notice'>The burns on [M]'s [affected_limb_name] scar over!</span>", "<span class='notice'>You feel the burns on your [affected_limb_name] scar over.</span>")
-						else if (iter_wound.wound_type == WOUND_PIERCE)
-							iter_wound.blood_flow -= clot_rate
-							M.visible_message("<span class='notice'>The puncture wound on [M]'s [affected_limb_name] quickly shrinks!</span>", "<span class='notice'>You feel the puncture wound on your [affected_limb_name] quickly shrinking.</span>")
-						else
-							iter_wound.blood_flow -= clot_rate
-							M.visible_message("<span class='notice'>The large cuts on [M]'s [affected_limb_name] quickly mend!</span>", "<span class='notice'>You feel the large cuts on your [affected_limb_name] quickly mending.</span>")
-					if (WOUND_SEVERITY_MODERATE)
-						if (iter_wound.wound_type == WOUND_BLUNT)
-							iter_wound.remove_wound()
-							to_chat(M, "<span class='green'>You feel the bones in your [affected_limb_name] pop back into place.</span>")
-						else if (iter_wound.wound_type == WOUND_BURN)
-							iter_wound.remove_wound()
-							to_chat(M, "<span class='green'>You feel the last burns on your [affected_limb_name] fade.</span>")
-						else if (iter_wound.wound_type == WOUND_PIERCE || iter_wound.wound_type == WOUND_SLASH)
-							iter_wound.blood_flow -= clot_rate
+			if(M.all_wounds.len >= 1)
+				for(var/datum/wound/iter_wound in M.all_wounds)
+					var/affected_limb_name = iter_wound.limb.name
+					switch(iter_wound.severity)
+						if (WOUND_SEVERITY_CRITICAL)
+							if (iter_wound.wound_type == WOUND_BLUNT)
+								iter_wound.replace_wound(/datum/wound/blunt/severe)
+								M.visible_message("<span class='notice'>The exposed bones on [M]'s [affected_limb_name] snap back together!</span>", "<span class='notice'>You feel the fractured bones in your [affected_limb_name] snap back together.</span>")
+							else if (iter_wound.wound_type == WOUND_BURN)
+								iter_wound.replace_wound(/datum/wound/burn/severe)
+								M.visible_message("<span class='notice'>The charred tissue on [M]'s [affected_limb_name] bubbles before regenerating!</span>", "<span class='notice'>You feel the catastrophic burns on your [affected_limb_name] rapidly regenerate.</span>")
+							else if (iter_wound.wound_type == WOUND_PIERCE)
+								iter_wound.blood_flow -= clot_rate
+								M.visible_message("<span class='notice'>The bleeding hole in [M]'s [affected_limb_name] rapidly fills with fresh tissue!</span>", "<span class='notice'>You feel the cavity in your [affected_limb_name] rapidly weaving back together.</span>")
+							else
+								iter_wound.blood_flow -= clot_rate
+								M.visible_message("<span class='notice'>The deep gashes on [M]'s [affected_limb_name] rapidly close up!</span>", "<span class='notice'>You feel the deep gashes on your [affected_limb_name] rapidly close up.</span>")
+						if (WOUND_SEVERITY_SEVERE)
+							if (iter_wound.wound_type == WOUND_BLUNT)
+								iter_wound.replace_wound(/datum/wound/blunt/moderate)
+								M.visible_message("<span class='notice'>The broken bones on [M]'s [affected_limb_name] fuse together!</span>", "<span class='notice'>You feel the broken bones on your [affected_limb_name] fuse together</span>")
+							else if (iter_wound.wound_type == WOUND_BURN)
+								iter_wound.replace_wound(/datum/wound/burn/moderate)
+								M.visible_message("<span class='notice'>The burns on [M]'s [affected_limb_name] scar over!</span>", "<span class='notice'>You feel the burns on your [affected_limb_name] scar over.</span>")
+							else if (iter_wound.wound_type == WOUND_PIERCE)
+								iter_wound.blood_flow -= clot_rate
+								M.visible_message("<span class='notice'>The puncture wound on [M]'s [affected_limb_name] quickly shrinks!</span>", "<span class='notice'>You feel the puncture wound on your [affected_limb_name] quickly shrinking.</span>")
+							else
+								iter_wound.blood_flow -= clot_rate
+								M.visible_message("<span class='notice'>The large cuts on [M]'s [affected_limb_name] quickly mend!</span>", "<span class='notice'>You feel the large cuts on your [affected_limb_name] quickly mending.</span>")
+						if (WOUND_SEVERITY_MODERATE)
+							if (iter_wound.wound_type == WOUND_BLUNT)
+								iter_wound.remove_wound()
+								to_chat(M, "<span class='green'>You feel the bones in your [affected_limb_name] pop back into place.</span>")
+							else if (iter_wound.wound_type == WOUND_BURN)
+								iter_wound.remove_wound()
+								to_chat(M, "<span class='green'>You feel the last burns on your [affected_limb_name] fade.</span>")
+							else if (iter_wound.wound_type == WOUND_PIERCE || iter_wound.wound_type == WOUND_SLASH)
+								iter_wound.blood_flow -= clot_rate
 
-	M.hallucination = max(M.hallucination, is_tribal ? 0 : 10)
+	M.hallucination += is_tribal ? 0 : 5
+	M.adjust_disgust(is_tribal ? 0 : 10)
 	..()
 
 /datum/reagent/medicine/hydra/overdose_process(mob/living/carbon/M) //Reverse effect, makes wounds worse twice as fast
-	for(var/i in M.all_wounds)
-		var/datum/wound/iter_wound = i
+	for(var/datum/wound/iter_wound in M.all_wounds)
 		if(current_cycle > 0 && current_cycle % 3 == 0)
 			switch(iter_wound.severity)
 				if (WOUND_SEVERITY_MODERATE)
@@ -839,6 +968,8 @@
 							iter_wound.replace_wound(/datum/wound/slash/critical)
 						else
 							iter_wound.blood_flow += clot_rate
+	M.hallucination += 5
+	M.adjust_disgust(10)
 
 /datum/reagent/medicine/hydra/addiction_act_stage1(mob/living/carbon/M)
 	if(prob(33))

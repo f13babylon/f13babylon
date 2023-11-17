@@ -37,7 +37,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legiongate)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/berserker_powder)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionmedx)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/naturalpainkiller)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/rip/crossexecution)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombatarmor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombathelmet)
