@@ -58,14 +58,14 @@
 /datum/crafting_recipe/bitterdrink
 	name = "Bottle bitterdrink"
 	result = /obj/item/reagent_containers/pill/patch/bitterdrink
-	reqs = list(/datum/reagent/medicine/bitter_drink = 15)
+	reqs = list(/datum/reagent/medicine/bitterdrink = 15)
 	time = 15
 	category = CAT_MEDICAL
 
 /datum/crafting_recipe/bitterdrink5
 	name = "Batch of bitterdrink (x5)"
 	result = /obj/item/storage/box/medicine/bitterdrink5
-	reqs = list(/datum/reagent/medicine/bitter_drink = 75)
+	reqs = list(/datum/reagent/medicine/bitterdrink = 75)
 	time = 20
 	category = CAT_MEDICAL
 

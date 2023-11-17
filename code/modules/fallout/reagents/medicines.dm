@@ -369,8 +369,10 @@
 	overdose_threshold = 31
 	value = REAGENT_VALUE_VERY_RARE
 	ghoulfriendly = TRUE
+	var/heal_rate = 0
 	var/heal_factor_tribal = 5.4 //How much damage it will heal if the person has the Tribal trait
 	var/heal_factor = 4 //How much it will heal if the person does not have the Tribal trait (75% of the regular healing rate)
+	var/is_on_tribal = FALSE
 
 /datum/reagent/medicine/healingpowder/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
@@ -381,9 +383,11 @@
 				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
 	..()
 
-/datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/carbon/M)
-	var/is_tribal = HAS_TRAIT(M, TRAIT_TRIBAL)
-	var/heal_rate = (is_tribal ? heal_factor_tribal : heal_factor) * REAGENTS_EFFECT_MULTIPLIER
+/datum/reagent/medicine/bitterdrink/on_mob_add(mob/living/carbon/M)
+	. = ..()
+	heal_rate = (HAS_TRAIT(M, TRAIT_TRIBAL) ? 5.4 : 4) * REAGENTS_EFFECT_MULTIPLIER
+
+/datum/reagent/medicine/bitterdrink/on_mob_life(mob/living/carbon/M)
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/healingpoultice) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpowder) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpaksuper) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpakimitation))
 		//Extra healing for each bodypart affected by wounds (results in bitter drink healing wounded bodyparts for 125% of super stimpak healing rate)
 		if(is_tribal)
@@ -407,7 +411,7 @@
 	M.adjust_disgust(is_tribal ? 0 : 10)
 	..()
 
-/datum/reagent/medicine/bitter_drink/overdose_process(mob/living/M)
+/datum/reagent/medicine/bitterdrink/overdose_process(mob/living/M)
 	M.adjustToxLoss((-heal_rate * 0.66 * 2.5 + (-heal_rate * 0.66))*REAGENTS_EFFECT_MULTIPLIER, FALSE)
 	M.adjustOxyLoss((-heal_rate * 0.66 * 2.5 + (-heal_rate * 0.66))*REAGENTS_EFFECT_MULTIPLIER, FALSE)
 	M.adjust_disgust(10)
@@ -427,8 +431,6 @@
 	overdose_threshold = 31
 	value = REAGENT_VALUE_COMMON
 	ghoulfriendly = TRUE
-	var/heal_factor_tribal = 2.25 //How much damage it will heal if the person has the Tribal trait
-	var/heal_factor = 1.7 //How much it will heal if the person does not have the Tribal trait (75% of the regular healing rate)
 
 /datum/reagent/medicine/healingpowder/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
@@ -438,9 +440,11 @@
 				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
 	..()
 
+/datum/reagent/medicine/healingpowder/on_mob_add(mob/living/carbon/M)
+	. = ..()
+	heal_rate = (HAS_TRAIT(M, TRAIT_TRIBAL) ? 2.25 : 1.7) * REAGENTS_EFFECT_MULTIPLIER
+
 /datum/reagent/medicine/healingpowder/on_mob_life(mob/living/carbon/M)
-	var/is_tribal = HAS_TRAIT(M, TRAIT_TRIBAL)
-	var/heal_rate = (is_tribal ? heal_factor_tribal : heal_factor) * REAGENTS_EFFECT_MULTIPLIER
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/stimpaksuper) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpakimitation))
 		//Extra healing for each bodypart affected by wounds
 		if(is_tribal)
@@ -480,8 +484,6 @@
 	overdose_threshold = 31
 	value = REAGENT_VALUE_RARE
 	ghoulfriendly = TRUE
-	var/heal_factor_tribal = 3.5 //How much damage it will heal if the person has the Tribal trait
-	var/heal_factor = 2.625 //How much it will heal if the person does not have the Tribal trait (75% of the regular healing rate)
 
 /datum/reagent/medicine/healingpoultice/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
@@ -491,9 +493,11 @@
 				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
 	..()
 
+/datum/reagent/medicine/healingpoultice/on_mob_add(mob/living/carbon/M)
+	. = ..()
+	heal_rate = (HAS_TRAIT(M, TRAIT_TRIBAL) ? 3.5 : 2.625) * REAGENTS_EFFECT_MULTIPLIER
+
 /datum/reagent/medicine/healingpoultice/on_mob_life(mob/living/carbon/M)
-	var/is_tribal = HAS_TRAIT(M, TRAIT_TRIBAL)
-	var/heal_rate = (is_tribal ? heal_factor_tribal : heal_factor) * REAGENTS_EFFECT_MULTIPLIER
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/healingpowder) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpaksuper) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpakimitation))
 		//Extra healing for each bodypart affected by wounds
 		if(is_tribal)

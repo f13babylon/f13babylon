@@ -107,7 +107,7 @@
 	desc = "A bottle filled with a strong medicinal drink, known for its bitterness. It derives its name from curing the wounds but leaving the 'bitter' pain from them."
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "patch_bitterdrink"
-	list_reagents = list(/datum/reagent/medicine/bitter_drink = 15)
+	list_reagents = list(/datum/reagent/medicine/bitter = 15)
 	self_delay = 15
 
 // ---------------------------------
