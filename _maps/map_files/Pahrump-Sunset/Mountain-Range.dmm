@@ -325,6 +325,9 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
+"dm" = (
+/turf/closed/indestructible/rock,
+/area/f13/enclave)
 "dp" = (
 /obj/machinery/light,
 /obj/structure/closet/wardrobe/virology_white,
@@ -791,6 +794,9 @@
 	icon_state = "horizontalinnermain0"
 	},
 /area/f13/tunnel)
+"gT" = (
+/turf/closed/mineral/random/low_chance,
+/area/f13/enclave)
 "gV" = (
 /obj/structure/rack/shelf_metal,
 /obj/structure/window/reinforced{
@@ -3158,9 +3164,6 @@
 /obj/item/seeds/wheat,
 /turf/open/floor/wood/wood_fancy,
 /area/f13/building)
-"yM" = (
-/turf/closed/mineral/random/low_chance,
-/area/f13/enclave)
 "yT" = (
 /obj/effect/overlay/junk/oldpipes{
 	dir = 9
@@ -3593,6 +3596,11 @@
 /obj/machinery/reagentgrinder,
 /turf/open/floor/plasteel/hydrofloor,
 /area/f13/enclave)
+"Cs" = (
+/turf/open/indestructible/ground/outside/ruins{
+	icon_state = "rubbleplate"
+	},
+/area/f13/enclave)
 "Ct" = (
 /obj/effect/turf_decal/loading_area,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -3758,11 +3766,6 @@
 	dir = 4
 	},
 /turf/open/floor/f13,
-/area/f13/enclave)
-"DK" = (
-/turf/open/indestructible/ground/outside/ruins{
-	icon_state = "rubbleplate"
-	},
 /area/f13/enclave)
 "DL" = (
 /obj/item/cautery,
@@ -4579,6 +4582,7 @@
 /area/f13/building)
 "KA" = (
 /obj/structure/frame/machine,
+/obj/item/storage/box/disks_plantgene,
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/enclave)
 "KB" = (
@@ -5354,9 +5358,6 @@
 	icon_state = "0-4"
 	},
 /turf/open/floor/plating,
-/area/f13/enclave)
-"RN" = (
-/turf/closed/indestructible/rock,
 /area/f13/enclave)
 "RO" = (
 /obj/effect/landmark/start/f13/usgysgt,
@@ -20142,7 +20143,7 @@ iT
 AW
 fZ
 kC
-DK
+Cs
 AW
 AW
 AW
@@ -20396,7 +20397,7 @@ HA
 HA
 HA
 iT
-RN
+dm
 fZ
 fZ
 fZ
@@ -20914,7 +20915,7 @@ HA
 HA
 aK
 aK
-yM
+gT
 AW
 bX
 Jx
@@ -21170,8 +21171,8 @@ HA
 HA
 HA
 HA
-yM
-yM
+gT
+gT
 AW
 wZ
 Jx
@@ -21428,7 +21429,7 @@ HA
 HA
 HA
 HA
-yM
+gT
 AW
 Jx
 Jx
