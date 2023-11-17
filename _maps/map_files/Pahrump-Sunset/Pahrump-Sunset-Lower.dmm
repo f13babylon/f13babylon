@@ -5227,7 +5227,7 @@
 /obj/structure/sign/poster/official/help_others{
 	pixel_x = 32
 	},
-/obj/machinery/mineral/wasteland_vendor/followerterminal,
+/obj/structure/closet,
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
 	},
@@ -8795,8 +8795,6 @@
 	dir = 4
 	},
 /obj/item/circuitboard/machine/medipen_refiller,
-/obj/item/circuitboard/machine/autolathe/ammo,
-/obj/item/circuitboard/machine/ore_silo,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
@@ -9887,12 +9885,6 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/tunnel)
-"ifO" = (
-/obj/machinery/bloodbankgen,
-/turf/closed/wall/r_wall/f13vault{
-	icon_state = "2-i"
-	},
-/area/f13/followers)
 "ihq" = (
 /obj/machinery/smartfridge/bottlerack/lootshelf/books,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
@@ -15798,6 +15790,7 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 8
 	},
+/obj/item/storage/box/stockparts/deluxe,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
@@ -37960,7 +37953,7 @@ lRd
 lRd
 fRB
 wZj
-ifO
+yjR
 cGq
 gLh
 gLh

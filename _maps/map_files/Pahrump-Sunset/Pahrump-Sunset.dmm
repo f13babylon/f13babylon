@@ -39142,6 +39142,7 @@
 /obj/structure/curtain{
 	pixel_y = 32
 	},
+/obj/effect/landmark/start/f13/followersadministrator,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
