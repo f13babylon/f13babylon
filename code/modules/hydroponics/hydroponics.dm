@@ -792,7 +792,7 @@
 	weedlevel = clamp(weedlevel + adjustamt, 0, 10)
 
 /obj/machinery/hydroponics/proc/adjustSelfSuff(adjustamt)
-	if(self_sustainingprog>=6)
+	if(self_sustainingprog>=6 && !self_sustaining)
 		become_self_sufficient()
 	else
 		self_sustainingprog += adjustamt
