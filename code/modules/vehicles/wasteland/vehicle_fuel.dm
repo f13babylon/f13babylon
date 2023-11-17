@@ -95,7 +95,7 @@
 
 /obj/item/reagent_containers/fuel_tank/Initialize(mapload, volume, fuel)
 	src.volume = 600
-	list_reagents = list(/datum/reagent/fuel = fuel)
+	reagents.add_reagent(/datum/reagent/fuel, fuel)
 	. = ..()
 
 /obj/item/reagent_containers/fuel_tank/attackby(obj/item/weapon/W, mob/user, params)
