@@ -84,7 +84,7 @@
 		H.reagents.remove_reagent(chem.type, REAGENTS_METABOLISM)
 	if(chem.type == /datum/reagent/medicine/stimpak)
 		H.adjustBruteLoss(1.5) //this is a very shitty way of making it so that they heal at a reduced rate for the emergency fix, i'll make the code cleaner tomorrow
-	if(chem.type == /datum/reagent/medicine/super_stimpak)
+	if(chem.type == /datum/reagent/medicine/stimpaksuper)
 		H.adjustBruteLoss(2.5)
 	return ..()
 

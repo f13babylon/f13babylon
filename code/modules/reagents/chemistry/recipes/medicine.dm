@@ -394,12 +394,12 @@
 
 /datum/chemical_reaction/superstimpak
 	name = "Super Stimpak Fluid"
-	id = /datum/reagent/medicine/super_stimpak
-	results = list(/datum/reagent/medicine/super_stimpak = 2)
+	id = /datum/reagent/medicine/stimpaksuper
+	results = list(/datum/reagent/medicine/stimpaksuper = 2)
 	required_reagents = list(/datum/reagent/blood = 1, /datum/reagent/medicine/stimpak = 1, /datum/reagent/consumable/mutjuice = 1) //1 mutfruit at 50 potency yields 6 mutfruit juice
 
 /datum/chemical_reaction/superstimpak/synthetic
-	id = "super_stimpak_synthetic"
+	id = "stimpaksuper_synthetic"
 	required_reagents = list(/datum/reagent/blood/synthetics = 1, /datum/reagent/medicine/stimpak = 1, /datum/reagent/consumable/mutjuice = 1) //1 mutfruit at 50 potency yields 6 mutfruit juice
 
 /datum/chemical_reaction/medx
@@ -431,7 +431,7 @@
 	name = "Med-X neutralization reaction"
 	id = "medx_neutralization"
 	results = list(/datum/reagent/water = 1)
-	required_reagents = list(/datum/reagent/medicine/medx = 1, /datum/reagent/medicine/super_stimpak = 1)
+	required_reagents = list(/datum/reagent/medicine/medx = 1, /datum/reagent/medicine/stimpaksuper = 1)
 
 /datum/chemical_reaction/rehab
 	name = "Rehab"
