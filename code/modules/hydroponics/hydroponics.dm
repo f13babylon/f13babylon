@@ -9,19 +9,19 @@
 	idle_power_usage = 0
 	var/waterlevel = 100	//The amount of water in the tray (max 100)
 	var/maxwater = 100		//The maximum amount of water in the tray
-	var/nutridrain = 0.075      // How many units of nutrient will be drained in the tray //test //lowering it even further
+	var/nutridrain = 0.15      // How many units of nutrient will be drained in the tray //test //lowering it even further
 	var/maxnutri = 10		//The maximum nutrient of water in the tray
 	var/pestlevel = 0		//The amount of pests in the tray (max 10)
 	var/weedlevel = 0		//The amount of weeds in the tray (max 10)
-	var/yieldmod = 1		//Nutriment's effect on yield
-	var/mutmod = 1			//Nutriment's effect on mutations
+	var/yieldmod = 1.2		//Nutriment's effect on yield
+	var/mutmod = 1.4		//Nutriment's effect on mutations - Wasteland is pretty radioactive by default...
 	var/toxic = 0			//Toxicity in the tray?
 	var/age = 0				//Current age
 	var/dead = FALSE			//Is it dead?
 	var/plant_health		//Its health
 	var/lastproduce = 0		//Last time it was harvested
 	var/lastcycle = 0		//Used for timing of cycles.
-	var/cycledelay = 10 SECONDS	// 10 seconds / cycle
+	var/cycledelay = 8.5 SECONDS	//8.5 seconds/cycle. Don't. Ask.
 	var/harvest = FALSE			//Ready to harvest?
 	var/obj/item/seeds/myseed = null	//The currently planted seed
 	var/rating = 1
@@ -74,7 +74,6 @@
 	return ..()
 
 /obj/machinery/hydroponics/constructable/attackby(obj/item/I, mob/user, params)
-
 	if (user.a_intent != INTENT_HARM)
 		// handle opening the panel
 		if(default_deconstruction_screwdriver(user, icon_state, icon_state, I))
@@ -109,12 +108,6 @@
 		adjustWeeds(-5)
 		adjustPests(-5)
 
-
-	if(harvest)
-		cycledelay = initial(cycledelay) + 5 MINUTES
-	else if(cycledelay > 5 MINUTES)
-		cycledelay = initial(cycledelay)
-
 	if(world.time > (lastcycle + cycledelay))
 		lastcycle = world.time
 		if(myseed && !dead)
@@ -134,7 +127,6 @@
 			else
 				reagents.remove_any(nutridrain)
 
-
 			// Lack of nutrients hurts non-weeds
 			if(reagents.total_volume <= 0 && !myseed.get_gene(/datum/plant_gene/trait/plant_type/weed_hardy))
 				adjustHealth(-rand(1,3))
@@ -153,7 +145,7 @@
 
 //Water//////////////////////////////////////////////////////////////////
 			// Drink random amount of water
-			adjustWater(-rand(1,2) / rating)//6
+			adjustWater(-rand(1,3) / rating)//6
 
 			// If the plant is dry, it loses health pretty fast, unless mushroom
 			if(waterlevel <= 10 && !myseed.get_gene(/datum/plant_gene/trait/plant_type/fungal_metabolism))
@@ -166,7 +158,7 @@
 				adjustHealth(rand(1,2) / rating)
 				if(myseed && prob(myseed.weed_chance))
 					adjustWeeds(myseed.weed_rate)
-				else if(prob(2))  //2 percent chance the weed population will increase
+				else if(prob(2))  //5 percent chance the weed population will increase
 					adjustWeeds(1 / rating)
 
 //Toxins/////////////////////////////////////////////////////////////////
@@ -231,7 +223,7 @@
 
 			// If the plant is too old, lose health fast
 			if(age > myseed.lifespan)
-				adjustHealth(-1 / rating)
+				adjustHealth(-rand(1,2.5) / rating)
 
 			// Harvest code
 			if(age > myseed.production && (age - lastproduce) > myseed.production && (!harvest && !dead))
@@ -455,8 +447,6 @@
 	age = 0
 	plant_health = myseed.endurance
 	lastcycle = world.time
-	if(cycledelay > 5 MINUTES)
-		cycledelay = initial(cycledelay)
 	harvest = 0
 	weedlevel = 0 // Reset
 	pestlevel = 0 // Reset
@@ -494,8 +484,6 @@
 	age = 0
 	plant_health = myseed.endurance
 	lastcycle = world.time
-	if(cycledelay > 5 MINUTES)
-		cycledelay = initial(cycledelay)
 	harvest = 0
 	weedlevel = 0 // Reset
 
@@ -516,8 +504,6 @@
 		age = 0
 		plant_health = myseed.endurance
 		lastcycle = world.time
-		if(cycledelay > 5 MINUTES)
-			cycledelay = initial(cycledelay)
 		harvest = 0
 		weedlevel = 0 // Reset
 
@@ -536,8 +522,6 @@
 /obj/machinery/hydroponics/proc/plantdies()
 	plant_health = 0
 	harvest = FALSE
-	if(cycledelay > 5 MINUTES)
-		cycledelay = initial(cycledelay)
 	pestlevel = 0 // Pests die
 	lastproduce = 0
 	STOP_PROCESSING(SSplants, src)
@@ -707,8 +691,6 @@
 				plant_health = 0
 				if(harvest)
 					harvest = FALSE //To make sure they can't just put in another seed and insta-harvest it
-				if(cycledelay > 5 MINUTES)
-					cycledelay = initial(cycledelay)
 				qdel(myseed)
 				myseed = null
 				name = initial(name)
@@ -774,8 +756,6 @@
 
 /obj/machinery/hydroponics/proc/update_tray(mob/user)
 	harvest = FALSE
-	if(cycledelay > 5 MINUTES)
-		cycledelay = initial(cycledelay)
 	lastproduce = age
 	if(myseed.getYield() <= 0)
 		to_chat(user, "<span class='warning'>You fail to harvest anything useful!</span>")
