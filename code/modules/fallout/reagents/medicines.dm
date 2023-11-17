@@ -3,7 +3,7 @@
 
 /datum/reagent/medicine/stimpak
 	name = "Stimpak fluid"
-	description = "A pre-war cocktail of healing agents and stimulants which bolster the body's natural regenerative abilities. Injecting this leads to swift recovery from most injuries."
+	description = "A pre-war cocktail of healing agents and stimulants which bolster the body's natural regenerative abilities. Injecting this leads to a swift recovery from most injuries."
 	reagent_state = LIQUID
 	color = "#df341f"
 	taste_description = "grossness"
@@ -85,7 +85,7 @@
 	. = TRUE
 
 // ---------------------------
-// IMITATION STIMPAK FLUID REAGENT (75% as effective as regular Stimpak fluid)
+// IMITATION STIMPAK FLUID REAGENT (75% as effective as regular stimpak fluid)
 
 /datum/reagent/medicine/stimpakimitation
 	name = "Imitation stimpak fluid"
@@ -171,7 +171,7 @@
 	. = TRUE
 
 // ---------------------------
-// SUPER STIMPAK FLUID REAGENT (225% as effective as regular Stimpak fluid)
+// SUPER STIMPAK FLUID REAGENT (225% as effective as regular stimpak fluid)
 
 /datum/reagent/medicine/stimpaksuper
 	name = "Super stimpak fluid"
@@ -357,7 +357,7 @@
 	return TRUE
 
 // ---------------------------
-// BITTER DRINK REAGENT	(180% as effective as regular Stimpak fluid for Tribals / 133% for non-Tribals)
+// BITTER DRINK REAGENT	(180% as effective as regular stimpak fluid for tribals / 133% for non-tribals)
 
 /datum/reagent/medicine/bitterdrink
 	name = "Bitter drink"
@@ -415,7 +415,7 @@
 	..()
 
 // ---------------------------
-// HEALING POWDER REAGENT (75% as effective as regular Stimpak fluid for Tribals / 55% for non-Tribals)
+// HEALING POWDER REAGENT (75% as effective as regular stimpak fluid for tribals / 55% for non-tribals)
 
 /datum/reagent/medicine/healingpowder
 	name = "Healing powder"
@@ -468,7 +468,7 @@
 	..()
 
 // ---------------------------
-// HEALING POULTICE REAGENT (115% as effectve as regular Stimpak fluid for Tribals / 87.5% for non-Tribals)
+// HEALING POULTICE REAGENT (115% as effectve as regular stimpak fluid for tribals / 87.5% for non-tribals)
 
 /datum/reagent/medicine/healingpoultice
 	name = "Healing poultice"

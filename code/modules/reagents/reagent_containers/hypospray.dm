@@ -156,13 +156,23 @@
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak
 	name = "stimpak"
-	desc = "A syringe filled with a pre-war cocktail of healing agents and stimulants which bolster the body's natural regenerative abilities. Injecting this leads to swift recovery from most injuries."
+	desc = "A syringe filled with a pre-war cocktail of healing agents and stimulants which bolster the body's natural regenerative abilities. Injecting this leads to a swift recovery from most injuries."
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "hypo_stimpak"
 	volume = 10
 	amount_per_transfer_from_this = 10
 	list_reagents = list(/datum/reagent/medicine/stimpak = 10)
 	self_delay = 10
+
+/obj/item/reagent_containers/hypospray/medipen/stimpak/attack(mob/living/L, mob/user)
+	if(ishuman(L))
+		var/obj/item/bodypart/affecting = L.get_bodypart(check_zone(user.zone_selected))
+		if(!affecting)
+			to_chat(user, "<span class='warning'>The limb is missing!</span>")
+			return
+		if(!L.can_inject(user, TRUE, user.zone_selected, FALSE, TRUE)) //stopped by clothing, not by species immunity.
+			return
+	..()
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak/on_reagent_change(changetype)
 	update_icon()

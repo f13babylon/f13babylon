@@ -31,7 +31,7 @@
 				/datum/reagent/medicine/silver_sulfadiazine = 10)
 	category = CAT_MEDICAL
 
-/datum/crafting_recipe/healpowder
+/datum/crafting_recipe/healingpowder
 	name = "Healing powder"
 	result = /obj/item/reagent_containers/pill/patch/healingpowder
 	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 2,
@@ -39,7 +39,7 @@
 	time = 15
 	category = CAT_MEDICAL
 
-/datum/crafting_recipe/healpowder5
+/datum/crafting_recipe/healingpowder5
 	name = "Batch of healing powders (x5)"
 	result = /obj/item/storage/box/medicine/powder5
 	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 10,
@@ -47,7 +47,7 @@
 	time = 20
 	category = CAT_MEDICAL
 
-/datum/crafting_recipe/healpowder50
+/datum/crafting_recipe/healingpowder50
 	name = "Batch of healing powders (x50)"
 	result = /obj/item/storage/box/medicine/powder50
 	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 100,
@@ -79,9 +79,9 @@
 	category = CAT_MEDICAL
 	always_available = FALSE
 
-/datum/crafting_recipe/healpoultice
+/datum/crafting_recipe/healingpoultice
 	name = "Healing poultice"
-	result = /obj/item/reagent_containers/pill/patch/healpoultice
+	result = /obj/item/reagent_containers/pill/patch/healingpoultice
 	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 2,
 				/obj/item/reagent_containers/food/snacks/grown/xander = 2,
 				/obj/item/reagent_containers/food/snacks/grown/feracactus = 2,
@@ -90,7 +90,7 @@
 	time = 15
 	category = CAT_MEDICAL
 
-/datum/crafting_recipe/healpoultice5
+/datum/crafting_recipe/healingpoultice5
 	name = "Batch of healing poultice (x5)"
 	result = /obj/item/storage/box/medicine/poultice5
 	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 10,
@@ -101,7 +101,7 @@
 	time = 20
 	category = CAT_MEDICAL
 
-/datum/crafting_recipe/healpoultice50
+/datum/crafting_recipe/healingpoultice50
 	name = "Batch of healing poultice (x50)"
 	result = /obj/item/storage/box/medicine/poultice50
 	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 100,

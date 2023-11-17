@@ -264,7 +264,7 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 	backpack_contents = list(
 		/obj/item/twohanded/fireaxe/bmprsword = 1,
 		/obj/item/restraints/legcuffs/bola = 2,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
+		/obj/item/reagent_containers/pill/patch/healingpoultice = 2,
 		/obj/item/stack/medical/gauze = 1,
 		)
 
@@ -341,7 +341,7 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 		/obj/item/clothing/under/f13/female/whitelegs = 1,
 		/obj/item/melee/unarmed/maceglove = 1,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
+		/obj/item/reagent_containers/pill/patch/healingpoultice = 1,
 	)
 
 /datum/outfit/loadout/whitelegsranged
@@ -352,7 +352,7 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 		/obj/item/clothing/under/f13/female/whitelegs = 1,
 		/obj/item/gun/ballistic/automatic/smg/tommygun/whitelegs = 1,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
+		/obj/item/reagent_containers/pill/patch/healingpoultice = 1,
 		/obj/item/ammo_box/magazine/tommygunm45/stick = 2
 	)
 
@@ -386,7 +386,7 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 		/obj/item/clothing/under/f13/female/deadhorses = 1,
 		/obj/item/gun/ballistic/automatic/pistol/m1911=1,
 		/obj/item/ammo_box/magazine/m45 = 2,
-		/obj/item/reagent_containers/pill/patch/healpoultice =2
+		/obj/item/reagent_containers/pill/patch/healingpoultice =2
 	)
 
 /datum/outfit/loadout/deadhorsesshaman
@@ -410,7 +410,7 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 		/obj/item/clothing/under/f13/female/sorrows = 1,
 		/obj/item/melee/onehanded/knife/survival = 1,
 		/obj/item/melee/unarmed/yaoguaigauntlet = 1,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
+		/obj/item/reagent_containers/pill/patch/healingpoultice = 2,
 		/obj/item/gun/ballistic/bow/tribal = 1,
 		/obj/item/storage/belt/tribe_quiver = 1,
 		/obj/item/book/granter/crafting_recipe/tribal/sorrows = 1
@@ -495,7 +495,7 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 		/obj/item/ammo_box/c10mm = 1,
 		/obj/item/circular_saw = 1,
 		/obj/item/storage/belt/utility/full = 1,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
+		/obj/item/reagent_containers/pill/patch/healingpoultice = 1,
 	)
 
 /datum/outfit/loadout/rustwalkersshaman
@@ -506,7 +506,7 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 		/obj/item/gun/ballistic/revolver/hobo/knucklegun = 1,
 		/obj/item/ammo_box/c45rev = 2,
 		/obj/item/circular_saw = 1,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
+		/obj/item/reagent_containers/pill/patch/healingpoultice = 2,
 		/obj/item/storage/belt/utility/full = 1,
 		/obj/item/book/granter/crafting_recipe/tribal/rustwalkers = 1
 
@@ -520,6 +520,6 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 		/obj/item/book/granter/crafting_recipe/tribal/bone = 1,
 		/obj/item/twohanded/spear/bonespear = 1,
 		/obj/item/warpaint_bowl=1,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 2
+		/obj/item/reagent_containers/pill/patch/healingpoultice = 2
 
 	)
