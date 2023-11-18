@@ -414,7 +414,7 @@
 	var/stun_stam_cost_coeff = 1.25
 	var/hardstun_ds = TRUE
 	var/softstun_ds = 0
-	var/stam_dmg = 30
+	var/stam_dmg = 10
 	var/cooldown_check = 0 // Used internally, you don't want to modify
 	var/cooldown = 13 // Default wait time until can stun again.
 	var/stun_time_silicon = 60 // How long it stuns silicons for - 6 seconds.

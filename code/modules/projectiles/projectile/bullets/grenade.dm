@@ -1,6 +1,6 @@
 // 40mm (Grenade Launcher
 
-/obj/item/projectile/rocket/a40mmHE
+/obj/item/projectile/bullet/rocket/a40mmHE
 	name ="40mm HE grenade"
 	desc = "Oh no."
 	icon_state= "bolter"
@@ -9,7 +9,7 @@
 	pixels_per_second = TILES_TO_PIXELS(10) //slower than bullets
 	shrapnel_magnitude = 4
 
-/obj/item/projectile/rocket/on_hit(atom/target, blocked = FALSE)
+/obj/item/projectile/bullet/rocket/on_hit(atom/target, blocked = FALSE)
 	..()
 	explosion(target, -1, -1, 0, 3, 0, flame_range = 3)
 	new /obj/effect/temp_visual/explosion(get_turf(target))
@@ -39,7 +39,7 @@
 
 // 40mm HEDP (Grenade Launcher
 
-/obj/item/projectile/rocket/a40mmHEDP
+/obj/item/projectile/bullet/rocket/a40mmHEDP
 	name ="40mm HEDP grenade"
 	desc = "Oh no."
 	icon_state= "bolter"
@@ -48,7 +48,7 @@
 	pixels_per_second = TILES_TO_PIXELS(10) //slower than bullets
 	shrapnel_magnitude = 4
 
-/obj/item/projectile/rocket/on_hit(atom/target, blocked = FALSE)
+/obj/item/projectile/bullet/rocket/on_hit(atom/target, blocked = FALSE)
 	..()
 	explosion(target, -1, -1, 0, 3, 0, flame_range = 3)
 	new /obj/effect/temp_visual/explosion(get_turf(target))
@@ -78,14 +78,14 @@
 
 // 40mm Baton
 
-/obj/item/projectile/rocket/a40mmM
+/obj/item/projectile/bullet/rocket/a40mmM
 	name ="40mm METAL grenade"
 	desc = "Oh no."
 	icon_state= "bolter"
 	damage = 80
 	pixels_per_second = TILES_TO_PIXELS(10) //slower than bullets
 
-/obj/item/projectile/rocket/on_hit(atom/target, blocked = FALSE)
+/obj/item/projectile/bullet/rocket/on_hit(atom/target, blocked = FALSE)
 	..()
 	explosion(target, -1, -1, 0, 0, 0, flame_range = 0)
 	new /obj/effect/temp_visual/explosion(get_turf(target))
@@ -93,14 +93,14 @@
 
 // 40mm Flashbang
 
-/obj/item/projectile/rocket/a40mmF
+/obj/item/projectile/bullet/rocket/a40mmF
 	name ="40mm Flash grenade"
 	desc = "Oh no."
 	icon_state= "bolter"
 	damage = 20
 	pixels_per_second = TILES_TO_PIXELS(10) //slower than bullets
 
-/obj/item/projectile/rocket/on_hit(atom/target, blocked = FALSE)
+/obj/item/projectile/bullet/rocket/on_hit(atom/target, blocked = FALSE)
 	..()
 	explosion(target, -1, -1, 0, 0, 5, flame_range = 0)
 	new /obj/effect/temp_visual/explosion(get_turf(target))
@@ -108,14 +108,14 @@
 
 // 40mm Incend
 
-/obj/item/projectile/rocket/a40mmI
+/obj/item/projectile/bullet/rocket/a40mmI
 	name ="40mm INCENDARY grenade"
 	desc = "Oh no."
 	icon_state= "bolter"
 	damage = 20
 	pixels_per_second = TILES_TO_PIXELS(10) //slower than bullets
 
-/obj/item/projectile/rocket/on_hit(atom/target, blocked = FALSE)
+/obj/item/projectile/bullet/rocket/on_hit(atom/target, blocked = FALSE)
 	..()
 	explosion(target, -1, -1, 0, 0, 0, flame_range = 8)
 	new /obj/effect/temp_visual/explosion(get_turf(target))
