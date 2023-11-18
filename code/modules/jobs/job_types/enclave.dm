@@ -608,12 +608,12 @@
 
 //Bunker Duty
 /datum/job/enclave/f13BDUTY
-	title = "Enclave Vault Dweller"
+	title = "Enclave Bunker Duty"
 	flag = F13USBDUTY
-	total_positions = 4
-	spawn_positions = 6
+	total_positions = 7
+	spawn_positions = 7
 	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. You're a non-combatant, skilled in a field outside of exterior operations. Given your value, you aren't permitted to engage in conflict."
-	enforces = "You are not permited to leave the base. You are a non-combatant. You cannot join any raids or battles on the surface."
+	enforces = "You are not permited to leave the base. You are a non-combatant. You cannot join any raids or battles on the surface. You cannot not run dungeons."
 	supervisors = "Everyone else."
 	outfit = /datum/outfit/job/enclave/noncombat/f13BDUTY
 	roleplay_exclusive_notify = 1
@@ -628,7 +628,7 @@
 		)
 
 /datum/outfit/job/enclave/noncombat/f13BDUTY
-	name = "Enclave Vault Dweller"
+	name = "Enclave Bunker Duty"
 	jobtype = /datum/job/enclave/f13BDUTY
 	id = /obj/item/card/id/dogtag/enclave/trooper
 	glasses = /obj/item/clothing/glasses/sunglasses/big
