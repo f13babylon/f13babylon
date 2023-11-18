@@ -881,7 +881,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		)
 /obj/machinery/mineral/wasteland_vendor/mineral
     name = "Mineral Vendor"
-	icon_state = "generic_idle"
+	icon_state = "med_idle"
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Silver",                    /obj/item/stack/ore/silver/fifteen,              250),
 		new /datum/data/wasteland_equipment("Gold",                      /obj/item/stack/ore/gold/fifteen,                500),
