@@ -125,6 +125,7 @@
 	extra_speed = 200
 	fire_sound = 'sound/f13weapons/44mag.ogg'
 	extra_damage = 4
+	fire_delay = 1.5
 
 
 //Brush gun								Keywords: .45-70, Lever action, 10 round internal, Long barrel

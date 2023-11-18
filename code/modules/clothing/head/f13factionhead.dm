@@ -1341,6 +1341,6 @@
 /obj/item/clothing/head/helmet/f13/combat/enclave
 	name = "enclave combat helmet"
 	desc = "An intimidating helmet that is issued with it's corresponding suit."
-	icon_state = "enclave_new"
-	item_state = "enclave_new"
+	icon_state = "remnant_helmet"
+	item_state = "remnant_helmet"
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 50)

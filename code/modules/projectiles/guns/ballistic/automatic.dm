@@ -240,13 +240,12 @@
 	is_automatic = TRUE
 	automatic = 1
 	autofire_shot_delay = 2.15 //It's so awfully inaccurate now that it's more of a gimmick than a buff
-	spread = 16
+	spread = 12
 	recoil = 0.85
 	can_attachments = TRUE
 	can_suppress = FALSE
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
-	extra_damage = -6
 	extra_penetration = 0.15
 
 //Greasegun				Keywords: 9mm, Automatic, 30 rounds
@@ -330,10 +329,13 @@
 	item_state = "smg9mm"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	mag_type = /obj/item/ammo_box/magazine/greasegun
-	spread = 12
+	spread = 10
 	slowdown = 0.25
 	autofire_shot_delay = 2.5
-	can_attachments = FALSE
+	suppressed = 1
+	can_attachments = TRUE
+	can_suppress = FALSE
+	can_unsuppress = FALSE
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 
 
@@ -349,7 +351,7 @@
 	is_automatic = TRUE
 	automatic = 1
 	autofire_shot_delay = 2.35
-	spread = 12
+	spread = 10
 	slowdown = 0.3
 	recoil = 0.5
 	fire_delay = 3.25
@@ -403,7 +405,7 @@
 	automatic = 1
 	slowdown = 0.3
 	autofire_shot_delay = 2
-	spread = 16
+	spread = 12
 	can_suppress = TRUE
 	can_attachments = TRUE
 	suppressor_state = "uzi_suppressor"
@@ -573,10 +575,10 @@
 	slowdown = 0.25
 	is_automatic = TRUE
 	automatic = 1
-	autofire_shot_delay = 2.15
+	autofire_shot_delay = 2
 	burst_shot_delay = 2
 	suppressed = 1
-	recoil = 0.05
+	recoil = 0.1
 	can_attachments = TRUE
 	can_suppress = FALSE
 	can_unsuppress = FALSE
@@ -870,24 +872,6 @@
 	extra_penetration = 0.1
 
 
-//Police rifle			Keywords: KHANS, 5.56mm, Semi-auto, 20 (10-50) round magazine
-/obj/item/gun/ballistic/automatic/marksman/policerifle_khans
-	name = "Kit Bashed Rifle"
-	desc = "A pre-war Rifle that has been constantly repaired and rebuilt by local Khan gunsmiths. Somehow, you feel safer holding this."
-	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
-	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
-	icon_prefix = "assault_carbine"
-	icon_state = "rifle-police"
-	item_state = "assault_carbine"
-	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	spread = 1.1
-	fire_delay = 2.5
-	can_suppress = FALSE
-	can_scope = TRUE
-	zoomable = FALSE
-
-
 //Marksman carbine			Keywords: 5.56mm, Semi-auto, 20 (10-50) round magazine, Small scope
 /obj/item/gun/ballistic/automatic/marksman
 	name = "marksman carbine"
@@ -942,6 +926,7 @@
 	scope_x_offset = 4
 	scope_y_offset = 11
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
+	extra_penetration = 0.2
 
 
 // Enfield SLR				Keywords: 7.62mm, Semi-auto, 10/20 round magazine

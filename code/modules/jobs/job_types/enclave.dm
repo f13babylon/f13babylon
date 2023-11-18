@@ -85,9 +85,6 @@
 		/obj/item/pda = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/survival = 1,
-		/obj/item/storage/pill_bottle/chem_tin/buffout = 1,
-		/obj/item/storage/pill_bottle/chem_tin/mentats = 1,
-		/obj/item/reagent_containers/hypospray/medipen/psycho = 1,
 		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/card/id/syndicate/anyone =1
 		)
@@ -158,7 +155,6 @@
 		/obj/item/pda = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/survival = 1,
-		/obj/item/reagent_containers/hypospray/medipen/psycho = 1,
 		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/card/id/syndicate/anyone = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2
@@ -209,7 +205,7 @@
 	exp_requirements = 0
 
 	loadout_options = list(
-		/datum/outfit/loadout/gysgt_ballistics, // G11
+		/datum/outfit/loadout/gysgt_ballistics, // Assault Carbine
 		/datum/outfit/loadout/gysgt_melee, // Citykiller+MK23
 		)
 
@@ -228,7 +224,6 @@
 		/obj/item/pda = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/survival = 1,
-		/obj/item/reagent_containers/hypospray/medipen/psycho = 1,
 		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/megaphone = 1,
 		/obj/item/card/id/syndicate/anyone = 1
@@ -278,6 +273,7 @@
 	loadout_options = list(
 		/datum/outfit/loadout/sgt_ballistics,	// Minigun
 		/datum/outfit/loadout/sgt_sniper, //MK23+Gauss
+		/datum/outfit/loadout/sgt_classic, // Plasma rifle+MK23
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavesgt
@@ -295,7 +291,6 @@
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/survival = 1,
 		/obj/item/clothing/head/f13/enclave/peacekeeper = 1,
-		/obj/item/reagent_containers/hypospray/medipen/psycho = 1,
 		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/card/id/syndicate/anyone =1
 		)
@@ -312,6 +307,15 @@
 	suit_store = /obj/item/gun/ballistic/automatic/m72
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m2mm = 2,
+		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
+		/obj/item/ammo_box/magazine/m45exp = 2,
+		)
+
+/datum/outfit/loadout/sgt_classic
+	name = "Classic"
+	suit_store = /obj/item/gun/energy/laser/plasma
+	backpack_contents = list(
+		/obj/item/stock_parts/cell/ammo/mfc = 3,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 2,
 		)
@@ -471,7 +475,7 @@
 /datum/job/enclave/enclavespy
 	title = "Enclave Marine"
 	flag = F13USPRIVATE
-	total_positions = 2
+	total_positions = 3
 	spawn_positions = 4
 	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. You are an enlisted member of the Enclave. Obey your Lieutenant. They set the Enclave's policies. Unfortunately, you've not yet received your PA training."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavespy
@@ -484,7 +488,7 @@
 	accessory = /obj/item/clothing/accessory/enclave/private_firstclass
 	head = /obj/item/clothing/head/helmet/f13/combat/enclave
 	suit = /obj/item/clothing/suit/armor/f13/combat/enclave
-	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
+	suit_store = /obj/item/gun/ballistic/automatic/smg/mp5
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
@@ -495,8 +499,7 @@
 		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/clothing/mask/chameleon = 1,
 		/obj/item/card/id/syndicate/anyone =1,
-		/obj/item/gun/ballistic/automatic/assault_carbine/worn = 1,
-		/obj/item/ammo_box/magazine/m5mm = 2,
+		/obj/item/ammo_box/magazine/uzim9mm = 2,
 		/obj/item/clothing/head/f13/enclave/peacekeeper = 1
 		)
 
