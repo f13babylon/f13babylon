@@ -57,6 +57,9 @@
 	var/crystal_type = /obj/item/stack/ore/bluespace_crystal/refined
 	merge_type = /obj/item/stack/sheet/bluespace_crystal
 
+/obj/item/stack/sheet/bluespace_crystal/fifteen
+    amount = 50
+
 /obj/item/stack/sheet/bluespace_crystal/attack_self(mob/user)// to prevent the construction menu from ever happening
 	to_chat(user, "<span class='warning'>You cannot crush the ultracite in-hand, try breaking one off.</span>")
 

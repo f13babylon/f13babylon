@@ -72,6 +72,9 @@
 	refined_type = /obj/item/stack/sheet/mineral/uranium
 	merge_type = /obj/item/stack/ore/uranium
 
+/obj/item/stack/ore/uranium/fifteen
+	amount = 50
+
 /obj/item/stack/ore/iron
 	name = "iron ore"
 	icon_state = "Iron ore"
@@ -192,6 +195,9 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	refined_type = /obj/item/stack/sheet/mineral/plasma
 	merge_type = /obj/item/stack/ore/plasma
 
+/obj/item/stack/ore/plasma/fifteen
+    amount = 50
+
 /obj/item/stack/ore/plasma/welder_act(mob/living/user, obj/item/I)
 	to_chat(user, "<span class='warning'>You can't hit a high enough temperature to smelt [src] properly!</span>")
 	return TRUE
@@ -206,6 +212,9 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	refined_type = /obj/item/stack/sheet/mineral/silver
 	merge_type = /obj/item/stack/ore/silver
 
+/obj/item/stack/ore/silver/fifteen
+    amount = 50
+
 /obj/item/stack/ore/gold
 	name = "gold ore"
 	icon_state = "Gold ore"
@@ -214,6 +223,9 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	custom_materials = list(/datum/material/gold=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/mineral/gold
 	merge_type = /obj/item/stack/ore/gold
+
+/obj/item/stack/ore/gold/fifteen
+    amount = 50
 
 /obj/item/stack/ore/diamond
 	name = "diamond ore"
@@ -225,6 +237,9 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	refined_type = /obj/item/stack/sheet/mineral/diamond
 	merge_type = /obj/item/stack/ore/diamond
 
+/obj/item/stack/ore/diamond/fifteen
+    amount = 50
+
 /obj/item/stack/ore/titanium
 	name = "titanium ore"
 	icon_state = "Titanium ore"
@@ -234,6 +249,9 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	custom_materials = list(/datum/material/titanium=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/mineral/titanium
 	merge_type = /obj/item/stack/ore/titanium
+
+/obj/item/stack/ore/titanium/fifteen
+	amount = 50
 
 /obj/item/stack/ore/slag
 	name = "slag"

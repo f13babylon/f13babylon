@@ -879,6 +879,18 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Spray Can",						/obj/item/toy/crayon/spraycan,										75),
 		new /datum/data/wasteland_equipment("Dean's Electronics",				/obj/item/book/granter/trait/techno,									600),
 		)
+/obj/machinery/mineral/wasteland_vendor/minera
+    name = "Mineral Vendor"
+	icon_state = "generic_idle"
+	prize_list = list(
+		new /datum/data/wasteland_equipment("Silver",                    /obj/item/stack/ore/silver/fifteen,              250),
+		new /datum/data/wasteland_equipment("Gold",                      /obj/item/stack/ore/gold/fifteen,                500),
+		new /datum/data/wasteland_equipment("Uranium",                   /obj/item/stack/ore/uranium/fifteen,             500),
+		new /datum/data/wasteland_equipment("Plasma",                    /obj/item/stack/ore/plasma/fifteen,              250),
+		new /datum/data/wasteland_equipment("Titanium",                  /obj/item/stack/ore/titanium/fifteen,            150),
+		new /datum/data/wasteland_equipment("Ultracite Crystals",        /obj/item/stack/sheet/bluespace_crystal/fifteen, 500),
+		new /datum/data/wasteland_equipment("Diamond",                   /obj/item/stack/ore/diamond/fifteen,             1000),
+	)
 
 /obj/machinery/mineral/wasteland_vendor/mining
 	name = "Wasteland Vending Machine - Mining"
