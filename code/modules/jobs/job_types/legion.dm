@@ -1021,7 +1021,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	flag = F13CAMPFOLLOWER
 	total_positions = 1
 	spawn_positions = 2
-	description = "The Forgemaster makes weapons of all sorts and upgrades them, keeping order in the Forge and makes sure the camp is defended as you should not leave it."
+	description = "The Forgemaster makes weapons of all sorts and upgrades them, keeping order in the Forge and makes sure the camp is defended."
 	supervisors = "the Centurion."
 	display_order = JOB_DISPLAY_ORDER_CAMPFOLLOWER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower
