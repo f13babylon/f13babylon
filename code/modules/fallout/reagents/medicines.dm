@@ -372,7 +372,7 @@
 	var/heal_rate = 0
 	var/is_on_tribal = FALSE
 
-/datum/reagent/medicine/healingpowder/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1)
+/datum/reagent/medicine/healingpowder/reaction_mob(mob/living/M, method, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
 		if(method in list(INGEST, VAPOR, INJECT))
 			M.adjustToxLoss(2 * reac_volume * REAGENTS_EFFECT_MULTIPLIER)
@@ -436,7 +436,7 @@
 	var/heal_rate = 0
 	var/is_on_tribal = FALSE
 
-/datum/reagent/medicine/healingpowder/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1)
+/datum/reagent/medicine/healingpowder/reaction_mob(mob/living/M, method, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
 		if(method in list(INGEST, VAPOR, INJECT))
 			M.adjustToxLoss(4 * reac_volume * REAGENTS_EFFECT_MULTIPLIER)
@@ -495,7 +495,7 @@
 	var/heal_rate = 0
 	var/is_on_tribal = FALSE
 
-/datum/reagent/medicine/healingpoultice/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1)
+/datum/reagent/medicine/healingpoultice/reaction_mob(mob/living/M, method, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
 		if(method in list(INGEST, VAPOR, INJECT))
 			M.adjustOxyLoss(4 * reac_volume * REAGENTS_EFFECT_MULTIPLIER)
@@ -704,7 +704,7 @@
 		var/mob/living/carbon/L = M
 		L.hal_screwyhud = SCREWYHUD_HEALTHY
 		ADD_TRAIT(L, TRAIT_IGNOREDAMAGESLOWDOWN, TRAIT_GENERIC)
-	.()
+	..()
 
 /datum/reagent/medicine/naturalpainkiller/on_mob_delete(mob/M)
 	if(isliving(M))
@@ -718,8 +718,8 @@
 	M.AdjustKnockdown(-20*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.AdjustUnconscious(-20*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.adjustStaminaLoss(-3*REAGENTS_EFFECT_MULTIPLIER, 0)
-	..()
 	. = TRUE
+	..()
 
 /datum/reagent/medicine/naturalpainkiller/overdose_process(mob/living/carbon/M)
 	if(prob(33))
