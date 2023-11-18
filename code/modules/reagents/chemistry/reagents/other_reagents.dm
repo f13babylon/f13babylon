@@ -419,7 +419,7 @@
 	glass_desc = "A glass of holy water."
 	pH = 7.5 //God is alkaline
 
-	// Holy water. Mostly the same as water, it also heals the plant a little with the power of the spirits. Also ALSO increases instability.
+// Holy water. Mostly the same as water, it also heals the plant a little with the power of the spirits. Also ALSO increases instability.
 /datum/reagent/water/holywater/on_hydroponics_apply(obj/item/seeds/myseed, datum/reagents/chems, obj/machinery/hydroponics/mytray)
 	if(chems.has_reagent(src.type, 1))
 		mytray.adjustWater(round(chems.get_reagent_amount(src.type) * 1))

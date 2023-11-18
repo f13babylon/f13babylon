@@ -393,7 +393,7 @@
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/healingpoultice) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpowder) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpaksuper) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpakimitation))
 		//Extra healing for each bodypart affected by wounds (results in bitter drink healing wounded bodyparts for 125% of super stimpak healing rate)
 		if(is_on_tribal)
-			if(M.all_wounds.len >= 1)
+			if(M.all_wounds && M.all_wounds.len >= 1)
 				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
 					if(iter_bodypart.wounds.len >= 1)
 						M.adjustBruteLoss(-3, FALSE)
@@ -456,7 +456,7 @@
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/stimpaksuper) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpakimitation))
 		//Extra healing for each bodypart affected by wounds
 		if(is_on_tribal)
-			if(M.all_wounds.len >= 1)
+			if(M.all_wounds && M.all_wounds.len >= 1)
 				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
 					if(iter_bodypart.wounds.len >= 1)
 						M.adjustBruteLoss(-1, FALSE)
@@ -515,7 +515,7 @@
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/healingpowder) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpaksuper) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpakimitation))
 		//Extra healing for each bodypart affected by wounds
 		if(is_on_tribal)
-			if(M.all_wounds.len >= 1)
+			if(M.all_wounds && M.all_wounds.len >= 1)
 				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
 					if(iter_bodypart.wounds.len >= 1)
 						M.adjustBruteLoss(-2, FALSE)
