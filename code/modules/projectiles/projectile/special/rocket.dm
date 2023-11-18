@@ -1,20 +1,21 @@
 //The parent of the rockets, so they can actually do pellet cloud stuff.
-/obj/item/projectile/bullet/rocket
+/obj/item/projectile/rocket
 	name = "dummy parent"
 	desc = "How do you see this? Yell at Carl."
 	var/shrapnel_type = /obj/item/projectile/bullet/shrapnel_launcher
 	var/shrapnel_magnitude = 0
+	pixels_per_second = TILES_TO_PIXELS(2.5) //Babylon Edit: Turns rockets into normal projs + fixes.
 
-/obj/item/projectile/bullet/rocket/ComponentInitialize()
+/obj/item/projectile/rocket/ComponentInitialize()
 	. = ..()
 	if (shrapnel_magnitude > 0)
 		AddComponent(/datum/component/pellet_cloud, projectile_type=shrapnel_type, magnitude=shrapnel_magnitude)
 
-/obj/item/projectile/bullet/rocket/on_hit(atom/target, blocked=0)
+/obj/item/projectile/rocket/on_hit(atom/target, blocked=0)
 	..()
 	SEND_SIGNAL(src, COMSIG_ROCKET_IMPACT)
 
-/obj/item/projectile/bullet/rocket/a84mm_chem
+/obj/item/projectile/rocket/a84mm_chem
 	name ="\improper chemical payload rocket"
 	desc = "Rocket propelled chemical warfare."
 	icon_state = "missile"
@@ -22,7 +23,7 @@
 	damage = 25
 	shrapnel_magnitude = 2
 
-/obj/item/projectile/bullet/rocket/a84mm_chem/Initialize(mapload)
+/obj/item/projectile/rocket/a84mm_chem/Initialize(mapload)
 	. = ..()
 	create_reagents(120, NO_REAGENTS_VALUE)
 	reagents.add_reagent(/datum/reagent/toxin/metabtoxin, 30)
@@ -30,7 +31,7 @@
 	reagents.add_reagent(/datum/reagent/toxin/cyanide, 30)
 	reagents.add_reagent(/datum/reagent/toxin/bungotoxin, 30)
 
-/obj/item/projectile/bullet/rocket/a84mm_chem/on_hit(atom/target, blocked=0)
+/obj/item/projectile/rocket/a84mm_chem/on_hit(atom/target, blocked=0)
 	var/turf/T = get_turf(target)
 	if(T)
 		var/datum/effect_system/smoke_spread/chem/smoke = new()
@@ -39,7 +40,7 @@
 	..(target, blocked)
 	return BULLET_ACT_HIT
 
-/obj/item/projectile/bullet/rocket/a84mm_he
+/obj/item/projectile/rocket/a84mm_he
 	name ="\improper low yield HE rocket"
 	desc = "Boom."
 	icon_state = "missile"
@@ -48,13 +49,13 @@
 	ricochets_max = 0 //it's a MISSILE
 	shrapnel_magnitude = 12
 
-/obj/item/projectile/bullet/rocket/a84mm_he/on_hit(atom/target, blocked=0)
+/obj/item/projectile/rocket/a84mm_he/on_hit(atom/target, blocked=0)
 	..()
 	explosion(target, 0, 1, 2, 4)
 	new /obj/effect/temp_visual/explosion(get_turf(target))
 	return BULLET_ACT_HIT
 
-/obj/item/projectile/bullet/rocket/a84mm_he_big
+/obj/item/projectile/rocket/a84mm_he_big
 	name ="\improper high yield HE rocket"
 	desc = "Boom plus."
 	icon_state = "missile"
@@ -63,14 +64,14 @@
 	ricochets_max = 0 //it's a MISSILE
 	shrapnel_magnitude = 24
 
-/obj/item/projectile/bullet/rocket/a84mm_he_big/on_hit(atom/target, blocked=0)
+/obj/item/projectile/rocket/a84mm_he_big/on_hit(atom/target, blocked=0)
 	..()
 	explosion(target, 0, 3, 5, 5)
 	new /obj/effect/temp_visual/explosion(get_turf(target))
 	return BULLET_ACT_HIT
 
 
-/obj/item/projectile/bullet/rocket/a84mm_incend
+/obj/item/projectile/rocket/a84mm_incend
 	name ="\improper incendiary rocket"
 	desc = "Fwoosh."
 	icon_state = "missile" //temp until sprites
@@ -80,7 +81,7 @@
 	damage_type = BURN
 	shrapnel_magnitude = 6
 
-/obj/item/projectile/bullet/rocket/a84mm_incend/on_hit(atom/target, blocked=0)
+/obj/item/projectile/rocket/a84mm_incend/on_hit(atom/target, blocked=0)
 	..()
 	explosion(target, -1, -1, -1, -1, 4, flame_range = 5)
 	if(iscarbon(target))
@@ -94,7 +95,7 @@
 			C.emote("scream")
 	return BULLET_ACT_HIT
 
-/obj/item/projectile/bullet/rocket/a84mm_incend/Move()
+/obj/item/projectile/rocket/a84mm_incend/Move()
 	. = ..()
 	var/turf/location = get_turf(src)
 	if(location)
@@ -110,7 +111,7 @@
 
 
 
-/obj/item/projectile/bullet/rocket/a84mm_br
+/obj/item/projectile/rocket/a84mm_br
 	name ="\improper APHE missile"
 	desc = "Boom."
 	icon_state = "missile"
@@ -132,7 +133,7 @@
 	w_class = WEIGHT_CLASS_TINY
 
 
-/obj/item/projectile/bullet/rocket/a84mm_br/on_hit(atom/target, blocked=0)
+/obj/item/projectile/rocket/a84mm_br/on_hit(atom/target, blocked=0)
 	..()
 	for(var/i in sturdy)
 		if(istype(target, i))
@@ -140,7 +141,7 @@
 			return BULLET_ACT_HIT
 	new /obj/item/broken_missile(get_turf(src), 1)
 
-/obj/item/projectile/bullet/rocket/gyro
+/obj/item/projectile/rocket/gyro
 	name ="explosive bolt"
 	icon_state= "bolter"
 	damage = 50
@@ -150,7 +151,7 @@
 	explosion(target, -1, 0, 2)
 	return BULLET_ACT_HIT
 
-/obj/item/projectile/bullet/rocket/a84mm
+/obj/item/projectile/rocket/a84mm
 	name ="\improper HEDP rocket"
 	desc = "USE A WEEL GUN"
 	icon_state= "84mm-hedp"
@@ -159,7 +160,7 @@
 	ricochets_max = 0
 	var/anti_armour_damage = 200
 
-/obj/item/projectile/bullet/rocket/a84mm/on_hit(atom/target, blocked = FALSE)
+/obj/item/projectile/rocket/a84mm/on_hit(atom/target, blocked = FALSE)
 	..()
 	explosion(target, -1, 1, 3, 1, 0, flame_range = 4)
 
