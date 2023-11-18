@@ -43,28 +43,27 @@
 
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/bitterdrink) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpoultice) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpowder) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpakimitation))
 		//Clotting properties for pierce/slash wounds
-		if(current_cycle > 0 && current_cycle % 6 == 0)	//Every 6th cycle, reduce blood_flow for all pierce/slash wounds by clot_rate.
-			if(M.all_wounds.len >= 1)
-				for(var/datum/wound/iter_wound in M.all_wounds)
-					var/affected_limb_name = iter_wound.limb.name
-					switch(iter_wound.severity)
-						if (WOUND_SEVERITY_CRITICAL)
-							if (iter_wound.wound_type == WOUND_PIERCE)
-								iter_wound.blood_flow -= clot_rate
-								M.visible_message("<span class='notice'>The bleeding hole in [M]'s [affected_limb_name] fills with fresh tissue!</span>", "<span class='notice'>You feel the cavity in your [affected_limb_name] weaving back together.</span>")
-							else if (iter_wound.wound_type == WOUND_SLASH)
-								iter_wound.blood_flow -= clot_rate
-								M.visible_message("<span class='notice'>The deep gashes on [M]'s [affected_limb_name] close up!</span>", "<span class='notice'>You feel the deep gashes on your [affected_limb_name] close up.</span>")
-						if (WOUND_SEVERITY_SEVERE)
-							if (iter_wound.wound_type == WOUND_PIERCE)
-								iter_wound.blood_flow -= clot_rate
-								M.visible_message("<span class='notice'>The puncture wound on [M]'s [affected_limb_name] shrinks!</span>", "<span class='notice'>You feel the puncture wound on your [affected_limb_name] shrinking.</span>")
-							else if (iter_wound.wound_type == WOUND_SLASH)
-								iter_wound.blood_flow -= clot_rate
-								M.visible_message("<span class='notice'>The large cuts on [M]'s [affected_limb_name] mend!</span>", "<span class='notice'>You feel the large cuts on your [affected_limb_name] mending.</span>")
-						if (WOUND_SEVERITY_MODERATE)
-							if (iter_wound.wound_type == WOUND_PIERCE || iter_wound.wound_type == WOUND_SLASH)
-								iter_wound.blood_flow -= clot_rate
+		if(current_cycle > 0 && current_cycle % 6 == 0 && M.all_wounds && M.all_wounds.len >= 1)	//Every 6th cycle, reduce blood_flow for all pierce/slash wounds by clot_rate.
+			for(var/datum/wound/iter_wound in M.all_wounds)
+				var/affected_limb_name = iter_wound.limb.name
+				switch(iter_wound.severity)
+					if (WOUND_SEVERITY_CRITICAL)
+						if (iter_wound.wound_type == WOUND_PIERCE)
+							iter_wound.blood_flow -= clot_rate
+							M.visible_message("<span class='notice'>The bleeding hole in [M]'s [affected_limb_name] fills with fresh tissue!</span>", "<span class='notice'>You feel the cavity in your [affected_limb_name] weaving back together.</span>")
+						else if (iter_wound.wound_type == WOUND_SLASH)
+							iter_wound.blood_flow -= clot_rate
+							M.visible_message("<span class='notice'>The deep gashes on [M]'s [affected_limb_name] close up!</span>", "<span class='notice'>You feel the deep gashes on your [affected_limb_name] close up.</span>")
+					if (WOUND_SEVERITY_SEVERE)
+						if (iter_wound.wound_type == WOUND_PIERCE)
+							iter_wound.blood_flow -= clot_rate
+							M.visible_message("<span class='notice'>The puncture wound on [M]'s [affected_limb_name] shrinks!</span>", "<span class='notice'>You feel the puncture wound on your [affected_limb_name] shrinking.</span>")
+						else if (iter_wound.wound_type == WOUND_SLASH)
+							iter_wound.blood_flow -= clot_rate
+							M.visible_message("<span class='notice'>The large cuts on [M]'s [affected_limb_name] mend!</span>", "<span class='notice'>You feel the large cuts on your [affected_limb_name] mending.</span>")
+					if (WOUND_SEVERITY_MODERATE)
+						if (iter_wound.wound_type == WOUND_PIERCE || iter_wound.wound_type == WOUND_SLASH)
+							iter_wound.blood_flow -= clot_rate
 
 		//Actual healing part starts here
 		M.adjustBruteLoss(-3*REAGENTS_EFFECT_MULTIPLIER, FALSE)
@@ -129,28 +128,27 @@
 
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/bitterdrink) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpoultice) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpowder))
 		//Clotting properties for pierce/slash wounds
-		if(current_cycle > 0 && current_cycle % 6 == 0)	//Every 6th cycle, reduce blood_flow for all pierce/slash wounds by clot_rate.
-			if(M.all_wounds.len >= 1)
-				for(var/datum/wound/iter_wound in M.all_wounds)
-					var/affected_limb_name = iter_wound.limb.name
-					switch(iter_wound.severity)
-						if (WOUND_SEVERITY_CRITICAL)
-							if (iter_wound.wound_type == WOUND_PIERCE)
-								iter_wound.blood_flow -= clot_rate
-								M.visible_message("<span class='notice'>The bleeding hole in [M]'s [affected_limb_name] slowly fills with fresh tissue!</span>", "<span class='notice'>You feel the cavity in your [affected_limb_name] slowly weaving back together.</span>")
-							else if (iter_wound.wound_type == WOUND_SLASH)
-								iter_wound.blood_flow -= clot_rate
-								M.visible_message("<span class='notice'>The deep gashes on [M]'s [affected_limb_name] slowly close up!</span>", "<span class='notice'>You feel the deep gashes on your [affected_limb_name] slowly close up.</span>")
-						if (WOUND_SEVERITY_SEVERE)
-							if (iter_wound.wound_type == WOUND_PIERCE)
-								iter_wound.blood_flow -= clot_rate
-								M.visible_message("<span class='notice'>The puncture wound on [M]'s [affected_limb_name] slowly shrinks!</span>", "<span class='notice'>You feel the puncture wound on your [affected_limb_name] slowly shrinking.</span>")
-							else if (iter_wound.wound_type == WOUND_SLASH)
-								iter_wound.blood_flow -= clot_rate
-								M.visible_message("<span class='notice'>The large cuts on [M]'s [affected_limb_name] slowly mend!</span>", "<span class='notice'>You feel the large cuts on your [affected_limb_name] slowly mending.</span>")
-						if (WOUND_SEVERITY_MODERATE)
-							if (iter_wound.wound_type == WOUND_PIERCE || iter_wound.wound_type == WOUND_SLASH)
-								iter_wound.blood_flow -= clot_rate
+		if(current_cycle > 0 && current_cycle % 6 == 0 && M.all_wounds && M.all_wounds.len >= 1)	//Every 6th cycle, reduce blood_flow for all pierce/slash wounds by clot_rate.
+			for(var/datum/wound/iter_wound in M.all_wounds)
+				var/affected_limb_name = iter_wound.limb.name
+				switch(iter_wound.severity)
+					if (WOUND_SEVERITY_CRITICAL)
+						if (iter_wound.wound_type == WOUND_PIERCE)
+							iter_wound.blood_flow -= clot_rate
+							M.visible_message("<span class='notice'>The bleeding hole in [M]'s [affected_limb_name] slowly fills with fresh tissue!</span>", "<span class='notice'>You feel the cavity in your [affected_limb_name] slowly weaving back together.</span>")
+						else if (iter_wound.wound_type == WOUND_SLASH)
+							iter_wound.blood_flow -= clot_rate
+							M.visible_message("<span class='notice'>The deep gashes on [M]'s [affected_limb_name] slowly close up!</span>", "<span class='notice'>You feel the deep gashes on your [affected_limb_name] slowly close up.</span>")
+					if (WOUND_SEVERITY_SEVERE)
+						if (iter_wound.wound_type == WOUND_PIERCE)
+							iter_wound.blood_flow -= clot_rate
+							M.visible_message("<span class='notice'>The puncture wound on [M]'s [affected_limb_name] slowly shrinks!</span>", "<span class='notice'>You feel the puncture wound on your [affected_limb_name] slowly shrinking.</span>")
+						else if (iter_wound.wound_type == WOUND_SLASH)
+							iter_wound.blood_flow -= clot_rate
+							M.visible_message("<span class='notice'>The large cuts on [M]'s [affected_limb_name] slowly mend!</span>", "<span class='notice'>You feel the large cuts on your [affected_limb_name] slowly mending.</span>")
+					if (WOUND_SEVERITY_MODERATE)
+						if (iter_wound.wound_type == WOUND_PIERCE || iter_wound.wound_type == WOUND_SLASH)
+							iter_wound.blood_flow -= clot_rate
 
 		//Actual healing part starts here
 		M.adjustBruteLoss(-2.25*REAGENTS_EFFECT_MULTIPLIER, FALSE)
@@ -215,28 +213,27 @@
 
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/bitterdrink) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpoultice) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpowder) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) &&!M.reagents.has_reagent(/datum/reagent/medicine/stimpakimitation))
 		//Clotting properties for pierce/slash wounds
-		if(current_cycle > 0 && current_cycle % 5 == 0)	//Every 5th cycle, reduce blood_flow for all pierce/slash wounds by clot_rate.
-			if(M.all_wounds.len >= 1)
-				for(var/datum/wound/iter_wound in M.all_wounds)
-					var/affected_limb_name = iter_wound.limb.name
-					switch(iter_wound.severity)
-						if (WOUND_SEVERITY_CRITICAL)
-							if (iter_wound.wound_type == WOUND_PIERCE)
-								iter_wound.blood_flow -= clot_rate
-								M.visible_message("<span class='notice'>The bleeding hole in [M]'s [affected_limb_name] rapidly fills with fresh tissue!</span>", "<span class='notice'>You feel the cavity in your [affected_limb_name] weaving back together.</span>")
-							else if (iter_wound.wound_type == WOUND_SLASH)
-								iter_wound.blood_flow -= clot_rate
-								M.visible_message("<span class='notice'>The deep gashes on [M]'s [affected_limb_name] rapidly close up!</span>", "<span class='notice'>You feel the deep gashes on your [affected_limb_name] close up.</span>")
-						if (WOUND_SEVERITY_SEVERE)
-							if (iter_wound.wound_type == WOUND_PIERCE)
-								iter_wound.blood_flow -= clot_rate
-								M.visible_message("<span class='notice'>The puncture wound on [M]'s [affected_limb_name] quickly shrinks!</span>", "<span class='notice'>You feel the puncture wound on your [affected_limb_name] shrinking.</span>")
-							else if (iter_wound.wound_type == WOUND_SLASH)
-								iter_wound.blood_flow -= clot_rate
-								M.visible_message("<span class='notice'>The large cuts on [M]'s [affected_limb_name] quickly mend!</span>", "<span class='notice'>You feel the large cuts on your [affected_limb_name] mending.</span>")
-						if (WOUND_SEVERITY_MODERATE)
-							if (iter_wound.wound_type == WOUND_PIERCE || iter_wound.wound_type == WOUND_SLASH)
-								iter_wound.blood_flow -= clot_rate
+		if(current_cycle > 0 && current_cycle % 5 == 0 && M.all_wounds && M.all_wounds.len >= 1)	//Every 5th cycle, reduce blood_flow for all pierce/slash wounds by clot_rate.
+			for(var/datum/wound/iter_wound in M.all_wounds)
+				var/affected_limb_name = iter_wound.limb.name
+				switch(iter_wound.severity)
+					if (WOUND_SEVERITY_CRITICAL)
+						if (iter_wound.wound_type == WOUND_PIERCE)
+							iter_wound.blood_flow -= clot_rate
+							M.visible_message("<span class='notice'>The bleeding hole in [M]'s [affected_limb_name] rapidly fills with fresh tissue!</span>", "<span class='notice'>You feel the cavity in your [affected_limb_name] weaving back together.</span>")
+						else if (iter_wound.wound_type == WOUND_SLASH)
+							iter_wound.blood_flow -= clot_rate
+							M.visible_message("<span class='notice'>The deep gashes on [M]'s [affected_limb_name] rapidly close up!</span>", "<span class='notice'>You feel the deep gashes on your [affected_limb_name] close up.</span>")
+					if (WOUND_SEVERITY_SEVERE)
+						if (iter_wound.wound_type == WOUND_PIERCE)
+							iter_wound.blood_flow -= clot_rate
+							M.visible_message("<span class='notice'>The puncture wound on [M]'s [affected_limb_name] quickly shrinks!</span>", "<span class='notice'>You feel the puncture wound on your [affected_limb_name] shrinking.</span>")
+						else if (iter_wound.wound_type == WOUND_SLASH)
+							iter_wound.blood_flow -= clot_rate
+							M.visible_message("<span class='notice'>The large cuts on [M]'s [affected_limb_name] quickly mend!</span>", "<span class='notice'>You feel the large cuts on your [affected_limb_name] mending.</span>")
+					if (WOUND_SEVERITY_MODERATE)
+						if (iter_wound.wound_type == WOUND_PIERCE || iter_wound.wound_type == WOUND_SLASH)
+							iter_wound.blood_flow -= clot_rate
 
 		//Actual healing part starts here
 		M.adjustBruteLoss(-6.75*REAGENTS_EFFECT_MULTIPLIER, FALSE)
@@ -395,7 +392,7 @@
 		if(is_on_tribal)
 			if(M.all_wounds && M.all_wounds.len >= 1)
 				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
-					if(iter_bodypart.wounds.len >= 1)
+					if(iter_bodypart.wounds && iter_bodypart.wounds.len >= 1)
 						M.adjustBruteLoss(-3, FALSE)
 						M.adjustFireLoss(-2.25, FALSE)	//75% of brute healing
 
@@ -458,7 +455,7 @@
 		if(is_on_tribal)
 			if(M.all_wounds && M.all_wounds.len >= 1)
 				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
-					if(iter_bodypart.wounds.len >= 1)
+					if(iter_bodypart.wounds && iter_bodypart.wounds.len >= 1)
 						M.adjustBruteLoss(-1, FALSE)
 						M.adjustFireLoss(-0.75, FALSE)	//75% of brute healing
 
@@ -907,54 +904,53 @@
 /datum/reagent/medicine/hydra/on_mob_life(mob/living/carbon/M)
 	var/is_tribal = HAS_TRAIT(M, TRAIT_TRIBAL)
 	if(is_tribal)
-		if(current_cycle > 0 && current_cycle % 5 == 0) //Every 5th cycle, reduce burn/bone wound severity by 1 tier, for puncture/slash wounds decrease blood_flow by clot_rate
-			if(M.all_wounds.len >= 1)
-				for(var/datum/wound/iter_wound in M.all_wounds)
-					var/affected_limb_name = iter_wound.limb.name
-					switch(iter_wound.severity)
-						if (WOUND_SEVERITY_CRITICAL)
-							if (iter_wound.wound_type == WOUND_BLUNT)
-								iter_wound.replace_wound(/datum/wound/blunt/severe)
-								M.visible_message("<span class='notice'>The exposed bones on [M]'s [affected_limb_name] snap back together!</span>", "<span class='notice'>You feel the fractured bones in your [affected_limb_name] snap back together.</span>")
-							else if (iter_wound.wound_type == WOUND_BURN)
-								iter_wound.replace_wound(/datum/wound/burn/severe)
-								M.visible_message("<span class='notice'>The charred tissue on [M]'s [affected_limb_name] bubbles before regenerating!</span>", "<span class='notice'>You feel the catastrophic burns on your [affected_limb_name] rapidly regenerate.</span>")
-							else if (iter_wound.wound_type == WOUND_PIERCE)
-								iter_wound.blood_flow -= clot_rate
-								M.visible_message("<span class='notice'>The bleeding hole in [M]'s [affected_limb_name] rapidly fills with fresh tissue!</span>", "<span class='notice'>You feel the cavity in your [affected_limb_name] rapidly weaving back together.</span>")
-							else
-								iter_wound.blood_flow -= clot_rate
-								M.visible_message("<span class='notice'>The deep gashes on [M]'s [affected_limb_name] rapidly close up!</span>", "<span class='notice'>You feel the deep gashes on your [affected_limb_name] rapidly close up.</span>")
-						if (WOUND_SEVERITY_SEVERE)
-							if (iter_wound.wound_type == WOUND_BLUNT)
-								iter_wound.replace_wound(/datum/wound/blunt/moderate)
-								M.visible_message("<span class='notice'>The broken bones on [M]'s [affected_limb_name] fuse together!</span>", "<span class='notice'>You feel the broken bones on your [affected_limb_name] fuse together</span>")
-							else if (iter_wound.wound_type == WOUND_BURN)
-								iter_wound.replace_wound(/datum/wound/burn/moderate)
-								M.visible_message("<span class='notice'>The burns on [M]'s [affected_limb_name] scar over!</span>", "<span class='notice'>You feel the burns on your [affected_limb_name] scar over.</span>")
-							else if (iter_wound.wound_type == WOUND_PIERCE)
-								iter_wound.blood_flow -= clot_rate
-								M.visible_message("<span class='notice'>The puncture wound on [M]'s [affected_limb_name] quickly shrinks!</span>", "<span class='notice'>You feel the puncture wound on your [affected_limb_name] quickly shrinking.</span>")
-							else
-								iter_wound.blood_flow -= clot_rate
-								M.visible_message("<span class='notice'>The large cuts on [M]'s [affected_limb_name] quickly mend!</span>", "<span class='notice'>You feel the large cuts on your [affected_limb_name] quickly mending.</span>")
-						if (WOUND_SEVERITY_MODERATE)
-							if (iter_wound.wound_type == WOUND_BLUNT)
-								iter_wound.remove_wound()
-								to_chat(M, "<span class='green'>You feel the bones in your [affected_limb_name] pop back into place.</span>")
-							else if (iter_wound.wound_type == WOUND_BURN)
-								iter_wound.remove_wound()
-								to_chat(M, "<span class='green'>You feel the last burns on your [affected_limb_name] fade.</span>")
-							else if (iter_wound.wound_type == WOUND_PIERCE || iter_wound.wound_type == WOUND_SLASH)
-								iter_wound.blood_flow -= clot_rate
+		if(current_cycle > 0 && current_cycle % 5 == 0 && M.all_wounds && M.all_wounds.len >= 1) //Every 5th cycle, reduce burn/bone wound severity by 1 tier, for puncture/slash wounds decrease blood_flow by clot_rate
+			for(var/datum/wound/iter_wound in M.all_wounds)
+				var/affected_limb_name = iter_wound.limb.name
+				switch(iter_wound.severity)
+					if (WOUND_SEVERITY_CRITICAL)
+						if (iter_wound.wound_type == WOUND_BLUNT)
+							iter_wound.replace_wound(/datum/wound/blunt/severe)
+							M.visible_message("<span class='notice'>The exposed bones on [M]'s [affected_limb_name] snap back together!</span>", "<span class='notice'>You feel the fractured bones in your [affected_limb_name] snap back together.</span>")
+						else if (iter_wound.wound_type == WOUND_BURN)
+							iter_wound.replace_wound(/datum/wound/burn/severe)
+							M.visible_message("<span class='notice'>The charred tissue on [M]'s [affected_limb_name] bubbles before regenerating!</span>", "<span class='notice'>You feel the catastrophic burns on your [affected_limb_name] rapidly regenerate.</span>")
+						else if (iter_wound.wound_type == WOUND_PIERCE)
+							iter_wound.blood_flow -= clot_rate
+							M.visible_message("<span class='notice'>The bleeding hole in [M]'s [affected_limb_name] rapidly fills with fresh tissue!</span>", "<span class='notice'>You feel the cavity in your [affected_limb_name] rapidly weaving back together.</span>")
+						else
+							iter_wound.blood_flow -= clot_rate
+							M.visible_message("<span class='notice'>The deep gashes on [M]'s [affected_limb_name] rapidly close up!</span>", "<span class='notice'>You feel the deep gashes on your [affected_limb_name] rapidly close up.</span>")
+					if (WOUND_SEVERITY_SEVERE)
+						if (iter_wound.wound_type == WOUND_BLUNT)
+							iter_wound.replace_wound(/datum/wound/blunt/moderate)
+							M.visible_message("<span class='notice'>The broken bones on [M]'s [affected_limb_name] fuse together!</span>", "<span class='notice'>You feel the broken bones on your [affected_limb_name] fuse together</span>")
+						else if (iter_wound.wound_type == WOUND_BURN)
+							iter_wound.replace_wound(/datum/wound/burn/moderate)
+							M.visible_message("<span class='notice'>The burns on [M]'s [affected_limb_name] scar over!</span>", "<span class='notice'>You feel the burns on your [affected_limb_name] scar over.</span>")
+						else if (iter_wound.wound_type == WOUND_PIERCE)
+							iter_wound.blood_flow -= clot_rate
+							M.visible_message("<span class='notice'>The puncture wound on [M]'s [affected_limb_name] quickly shrinks!</span>", "<span class='notice'>You feel the puncture wound on your [affected_limb_name] quickly shrinking.</span>")
+						else
+							iter_wound.blood_flow -= clot_rate
+							M.visible_message("<span class='notice'>The large cuts on [M]'s [affected_limb_name] quickly mend!</span>", "<span class='notice'>You feel the large cuts on your [affected_limb_name] quickly mending.</span>")
+					if (WOUND_SEVERITY_MODERATE)
+						if (iter_wound.wound_type == WOUND_BLUNT)
+							iter_wound.remove_wound()
+							to_chat(M, "<span class='green'>You feel the bones in your [affected_limb_name] pop back into place.</span>")
+						else if (iter_wound.wound_type == WOUND_BURN)
+							iter_wound.remove_wound()
+							to_chat(M, "<span class='green'>You feel the last burns on your [affected_limb_name] fade.</span>")
+						else if (iter_wound.wound_type == WOUND_PIERCE || iter_wound.wound_type == WOUND_SLASH)
+							iter_wound.blood_flow -= clot_rate
 
 	M.hallucination += is_tribal ? 0 : 5
 	M.adjust_disgust(is_tribal ? 0 : 10)
 	..()
 
-/datum/reagent/medicine/hydra/overdose_process(mob/living/carbon/M) //Reverse effect, makes wounds worse twice as fast
-	for(var/datum/wound/iter_wound in M.all_wounds)
-		if(current_cycle > 0 && current_cycle % 3 == 0)
+/datum/reagent/medicine/hydra/overdose_process(mob/living/carbon/M)
+	if(current_cycle > 0 && current_cycle % 5 == 0 && M.all_wounds && M.all_wounds.len >= 1) //Reverse effect, makes wounds worse twice as fast
+		for(var/datum/wound/iter_wound in M.all_wounds)
 			switch(iter_wound.severity)
 				if (WOUND_SEVERITY_MODERATE)
 					if (iter_wound.wound_type == WOUND_BLUNT)
