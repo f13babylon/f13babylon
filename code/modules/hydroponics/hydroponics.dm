@@ -21,7 +21,7 @@
 	var/plant_health		//Its health
 	var/lastproduce = 0		//Last time it was harvested
 	var/lastcycle = 0		//Used for timing of cycles.
-	var/cycledelay = 10 SECONDS	// 10 seconds / cycle
+	var/cycledelay = 20 SECONDS	// 10 seconds / cycle
 	var/harvest = FALSE			//Ready to harvest?
 	var/obj/item/seeds/myseed = null	//The currently planted seed
 	var/rating = 1
