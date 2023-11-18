@@ -332,7 +332,7 @@
 	icon_state = "amr"
 	item_state = "amr"
 	mag_type = /obj/item/ammo_box/magazine/amr
-	fire_delay = 12
+	fire_delay = 22
 	recoil = 10
 	slowdown = 1.45 //.20 higher than the M1919 MMG.
 	spread = 0
