@@ -167,7 +167,7 @@
 		if(job)
 			alert_embed.fields += new /datum/tgs_chat_embed/field("Job", job)
 		if(duration > 0)
-			alert_embed.fields += new /datum/tgs_chat_embed/field("Duration", DisplayTimeText(duration * MINUTES))
+			alert_embed.fields += new /datum/tgs_chat_embed/field("Duration", DisplayTimeText(duration MINUTES))
 		send2chat(alert_embed, tgs_relay_tag)
 
 	message_admins(msg,1)
