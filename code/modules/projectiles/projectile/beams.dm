@@ -493,7 +493,7 @@
 	wound_bonus = 45 //being hit with plasma is horrific
 	eyeblur = 0
 	is_reflectable = TRUE
-	pixels_per_second =  TILES_TO_PIXELS(10) //same as 40mm grenade
+	pixels_per_second =  TILES_TO_PIXELS(14) //same as 40mm grenade
 
 /obj/item/projectile/plasmacarbine //Plasma carbine
 	name = "plasma bolt"
