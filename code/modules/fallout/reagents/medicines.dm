@@ -73,7 +73,7 @@
 	M.jitteriness = max(M.jitteriness, is_on_tribal ? 0 : 20)
 	M.set_dizziness(max(M.dizziness, is_on_tribal ? 0 : 20))
 	M.confused = max(M.confused, is_on_tribal ? 0 : 20)
-	M.set_disgust = (max(M.disgust, is_on_tribal ? 0 : DISGUST_LEVEL_DISGUSTED))
+	M.set_disgust(max(M.disgust, is_on_tribal ? 0 : DISGUST_LEVEL_DISGUSTED))
 	..()
 
 /datum/reagent/medicine/stimpak/overdose_process(mob/living/carbon/M)
