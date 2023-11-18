@@ -164,14 +164,21 @@
 	list_reagents = list(/datum/reagent/medicine/stimpak = 10)
 	var/self_delay = 10
 
-/obj/item/reagent_containers/hypospray/medipen/stimpak/attack(mob/living/L, mob/user)
-	if(ishuman(L))
-		var/obj/item/bodypart/affecting = L.get_bodypart(check_zone(user.zone_selected))
-		if(!affecting)
-			to_chat(user, "<span class='warning'>The limb is missing!</span>")
-			return
-		if(!L.can_inject(user, TRUE, user.zone_selected, FALSE, TRUE)) //stopped by clothing, not by species immunity.
-			return
+/obj/item/reagent_containers/hypospray/medipen/stimpak/attack(mob/M, mob/user)
+	if(!reagents.total_volume)
+		to_chat(user, "<span class='warning'>[src] is empty!</span>")
+		return
+
+	if(M == user)
+		M.visible_message("<span class='danger'>[user] attempts to use [src] on themselves.</span>", \
+							"<span class='userdanger'>[user] attempts to use [src] on themselves.</span>")
+		if(!do_mob(user, M, self_delay))
+			return 0
+	else
+		M.visible_message("<span class='danger'>[user] attempts to use [src] on [M].</span>", \
+							"<span class='userdanger'>[user] attempts to use [src] on [M].</span>")
+		if(!do_mob(user, M))
+			return 0
 	..()
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak/on_reagent_change(changetype)
@@ -223,6 +230,23 @@
 	list_reagents = list(/datum/reagent/medicine/medx = 15)
 	var/self_delay = 30
 
+/obj/item/reagent_containers/hypospray/medipen/medx/attack(mob/living/M, mob/user)
+	if(!reagents.total_volume)
+		to_chat(user, "<span class='warning'>[src] is empty!</span>")
+		return
+
+	if(M == user)
+		M.visible_message("<span class='danger'>[user] attempts to use [src] on themselves.</span>", \
+							"<span class='userdanger'>[user] attempts to use [src] on themselves.</span>")
+		if(!do_mob(user, M, self_delay))
+			return 0
+	else
+		M.visible_message("<span class='danger'>[user] attempts to use [src] on [M].</span>", \
+							"<span class='userdanger'>[user] attempts to use [src] on [M].</span>")
+		if(!do_mob(user, M))
+			return 0
+	..()
+
 // ---------------------------------
 // PSYCHO
 
@@ -235,6 +259,23 @@
 	amount_per_transfer_from_this = 10
 	list_reagents = list(/datum/reagent/drug/psycho = 10)
 	var/self_delay = 30
+
+/obj/item/reagent_containers/hypospray/medipen/psycho/attack(mob/living/M, mob/user)
+	if(!reagents.total_volume)
+		to_chat(user, "<span class='warning'>[src] is empty!</span>")
+		return
+
+	if(M == user)
+		M.visible_message("<span class='danger'>[user] attempts to use [src] on themselves.</span>", \
+							"<span class='userdanger'>[user] attempts to use [src] on themselves.</span>")
+		if(!do_mob(user, M, self_delay))
+			return 0
+	else
+		M.visible_message("<span class='danger'>[user] attempts to use [src] on [M].</span>", \
+							"<span class='userdanger'>[user] attempts to use [src] on [M].</span>")
+		if(!do_mob(user, M))
+			return 0
+	..()
 
 // End Fallout -------------------------------------------------
 

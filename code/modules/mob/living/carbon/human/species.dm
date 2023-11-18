@@ -1402,6 +1402,8 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 /datum/species/proc/handle_mutations_and_radiation(mob/living/carbon/human/H)
 	. = FALSE
 	var/radiation = H.radiation
+	if(radiation < 0)
+		H.radiation = 0
 	if(HAS_TRAIT(H, TRAIT_RADIMMUNE))
 		return TRUE
 	if(HAS_TRAIT(H, TRAIT_FEV) || HAS_TRAIT(H, TRAIT_FEVII)) //FEV Slowdown based on rads

@@ -28,6 +28,9 @@
 		if(istype(job))
 			if(job.faction == FACTION_LEGION)
 				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
+				to_chat(M,"<span class='userdanger'>Your body has been defiled by the foul chemicals in your bloodstream!</span>")
+			else if (job.faction == FACTION_TRIBAL)
+				to_chat(M,"<span class='userdanger'>The cocktail of healing agents and stimulants makes your head spin!</span>")
 	..()
 
 /datum/reagent/medicine/stimpak/on_mob_life(mob/living/carbon/M)
@@ -35,11 +38,11 @@
 		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
 		if(istype(job))
 			if(job.faction == FACTION_LEGION)
-				M.set_disgust(max(M.disgust + 5, DISGUST_LEVEL_DISGUSTED))
-				M.hallucination = (max(M.hallucination, rand(10, 25)))
+				M.set_disgust(max(M.disgust + 1, DISGUST_LEVEL_DISGUSTED))
+				M.hallucination += 5
 			else if (job.faction == FACTION_TRIBAL)
-				M.adjust_disgust(1.5)
-				M.hallucination = (max(M.hallucination, rand(10, 25)))
+				M.adjust_disgust(1)
+				M.hallucination += 5
 
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/bitterdrink) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpoultice) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpowder) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpakimitation))
 		//Clotting properties for pierce/slash wounds
@@ -99,7 +102,7 @@
 	ghoulfriendly = TRUE
 	var/clot_rate = 0.2625	//26.25% as effective as Hydra at clotting bleeding wounds
 
-/datum/reagent/medicine/stimpak/reaction_mob(mob/living/carbon/M, method, reac_volume, show_message = 1)
+/datum/reagent/medicine/stimpakimitation/reaction_mob(mob/living/carbon/M, method, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
 		if(method in list(INGEST, VAPOR))
 			M.adjustToxLoss(2.625 * reac_volume * REAGENTS_EFFECT_MULTIPLIER)
@@ -107,24 +110,27 @@
 				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
 	..()
 
-/datum/reagent/medicine/stimpak/on_mob_add(mob/living/carbon/M)
+/datum/reagent/medicine/stimpakimitation/on_mob_add(mob/living/carbon/M)
 	if(M.mind)
 		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
 		if(istype(job))
 			if(job.faction == FACTION_LEGION)
 				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
+				to_chat(M,"<span class='userdanger'>Your body has been defiled by the foul chemicals in your bloodstream!</span>")
+			else if (job.faction == FACTION_TRIBAL)
+				to_chat(M,"<span class='userdanger'>The cocktail of healing agents and stimulants makes you dazed!</span>")
 	..()
 
-/datum/reagent/medicine/stimpak/on_mob_life(mob/living/carbon/M)
+/datum/reagent/medicine/stimpakimitation/on_mob_life(mob/living/carbon/M)
 	if(M.mind)
 		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
 		if(istype(job))
 			if(job.faction == FACTION_LEGION)
-				M.set_disgust(max(M.disgust + 2.5, DISGUST_LEVEL_DISGUSTED))
-				M.hallucination = (max(M.hallucination, rand(5, 20)))
+				M.set_disgust(max(M.disgust + 0.5, DISGUST_LEVEL_DISGUSTED))
+				M.hallucination += 2.5
 			else if (job.faction == FACTION_TRIBAL)
-				M.adjust_disgust(1)
-				M.hallucination = (max(M.hallucination, rand(5, 20)))
+				M.adjust_disgust(0.5)
+				M.hallucination += 2.5
 
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/bitterdrink) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpoultice) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpowder))
 		//Clotting properties for pierce/slash wounds
@@ -161,7 +167,7 @@
 		. = TRUE
 	..()
 
-/datum/reagent/medicine/stimpak/overdose_process(mob/living/carbon/M)
+/datum/reagent/medicine/stimpakimitation/overdose_process(mob/living/carbon/M)
 	M.adjustToxLoss(3.75*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing
 	M.adjustOxyLoss(5.25*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing + base oxy healing
 	M.drowsyness += 2*REAGENTS_EFFECT_MULTIPLIER
@@ -184,7 +190,7 @@
 	ghoulfriendly = TRUE
 	var/clot_rate = 0.65	//65% as effective as Hydra at clotting bleeding wounds
 
-/datum/reagent/medicine/stimpak/reaction_mob(mob/living/carbon/M, method, reac_volume, show_message = 1)
+/datum/reagent/medicine/stimpaksuper/reaction_mob(mob/living/carbon/M, method, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
 		if(method in list(INGEST, VAPOR))
 			M.adjustToxLoss(5.25 * reac_volume * REAGENTS_EFFECT_MULTIPLIER)
@@ -192,24 +198,27 @@
 				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
 	..()
 
-/datum/reagent/medicine/stimpak/on_mob_add(mob/living/carbon/M)
+/datum/reagent/medicine/stimpaksuper/on_mob_add(mob/living/carbon/M)
 	if(M.mind)
 		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
 		if(istype(job))
 			if(job.faction == FACTION_LEGION)
 				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
+				to_chat(M,"<span class='userdanger'>Your body has been defiled by the foul chemicals in your bloodstream!</span>")
+			else if (job.faction == FACTION_TRIBAL)
+				to_chat(M,"<span class='userdanger'>The powerful cocktail of healing agents and stimulants makes your stomach churn!</span>")
 	..()
 
-/datum/reagent/medicine/stimpak/on_mob_life(mob/living/carbon/M)
+/datum/reagent/medicine/stimpaksuper/on_mob_life(mob/living/carbon/M)
 	if(M.mind)
 		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
 		if(istype(job))
 			if(job.faction == FACTION_LEGION)
-				M.set_disgust(max(M.disgust + 10, DISGUST_LEVEL_DISGUSTED))
-				M.hallucination = (max(M.hallucination, rand(15, 30)))
+				M.set_disgust(max(M.disgust + 2, DISGUST_LEVEL_DISGUSTED))
+				M.hallucination += 5
 			else if (job.faction == FACTION_TRIBAL)
 				M.adjust_disgust(2)
-				M.hallucination = (max(M.hallucination, rand(15, 30)))
+				M.hallucination += 10
 
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/bitterdrink) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpoultice) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpowder) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) &&!M.reagents.has_reagent(/datum/reagent/medicine/stimpakimitation))
 		//Clotting properties for pierce/slash wounds
@@ -246,7 +255,7 @@
 		. = TRUE
 	..()
 
-/datum/reagent/medicine/stimpak/overdose_process(mob/living/carbon/M)
+/datum/reagent/medicine/stimpaksuper/overdose_process(mob/living/carbon/M)
 	M.adjustToxLoss(11.25*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing
 	M.adjustOxyLoss(15.75*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing + base oxy healing
 	M.drowsyness += 2*REAGENTS_EFFECT_MULTIPLIER
@@ -369,7 +378,7 @@
 	var/heal_rate = 0
 	var/is_on_tribal = FALSE
 
-/datum/reagent/medicine/healingpowder/reaction_mob(mob/living/M, method, reac_volume, show_message = 1)
+/datum/reagent/medicine/bitterdrink/reaction_mob(mob/living/M, method, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
 		if(method in list(INGEST, VAPOR, INJECT))
 			M.adjustToxLoss(2 * reac_volume * REAGENTS_EFFECT_MULTIPLIER)
@@ -528,7 +537,8 @@
 		M.adjustBruteLoss(-heal_rate, FALSE)
 		M.adjustFireLoss(-heal_rate * 0.75, FALSE)	//75% of brute healing
 		M.adjustToxLoss(-6.75, FALSE)	//Same as super stim fluid brute healing
-		M.radiation -= 6.75	//Same as super stim fluid brute healing
+		if(M.radiation > 0)
+			M.radiation -= 6.75	//Same as super stim fluid brute healing
 		M.AdjustStun(-heal_rate * 0.66, FALSE)	//66% of brute healing
 		M.AdjustKnockdown(-heal_rate * 0.66, FALSE)	//66% of brute healing
 		M.adjustStaminaLoss(-heal_rate * 0.66, FALSE)	//66% of brute healing

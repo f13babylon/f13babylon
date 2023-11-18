@@ -12,16 +12,12 @@
 	dissolvable = FALSE
 
 /obj/item/reagent_containers/pill/patch/attack(mob/living/L, mob/user)
-	if(ishuman(L))
-		var/obj/item/bodypart/affecting = L.get_bodypart(check_zone(user.zone_selected))
-		if(!affecting)
-			to_chat(user, "<span class='warning'>The limb is missing!</span>")
-			return
-		if(!L.can_inject(user, TRUE, user.zone_selected, FALSE, TRUE)) //stopped by clothing, not by species immunity.
-			return
-		if(affecting.status != BODYPART_ORGANIC)
-			to_chat(user, "<span class='notice'>Medicine won't work on a robotic limb!</span>")
-			return
+	if(L == user)
+		L.visible_message("<span class='danger'>[user] attempts to use [src] on themselves.</span>", \
+							"<span class='notice'>You attempt to use [src] on yourself.</span>")
+	else
+		L.visible_message("<span class='danger'>[user] attempts to use [src] on [L].</span>", \
+							"<span class='userdanger'>[user] attempts to use [src] on you.</span>")
 	..()
 
 /obj/item/reagent_containers/pill/patch/canconsume(mob/eater, mob/user)
