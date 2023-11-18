@@ -382,12 +382,12 @@
 	..()
 
 /datum/reagent/medicine/bitterdrink/on_mob_add(mob/living/carbon/M)
-	. = ..()
 	if(HAS_TRAIT(M, TRAIT_TRIBAL))
 		heal_rate =  5.4 * REAGENTS_EFFECT_MULTIPLIER
 		is_on_tribal = TRUE
 	else
 		heal_rate = 4 * REAGENTS_EFFECT_MULTIPLIER
+	..()
 
 /datum/reagent/medicine/bitterdrink/on_mob_life(mob/living/carbon/M)
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/healingpoultice) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpowder) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpaksuper) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpakimitation))
@@ -445,12 +445,12 @@
 	..()
 
 /datum/reagent/medicine/healingpowder/on_mob_add(mob/living/carbon/M)
-	. = ..()
 	if(HAS_TRAIT(M, TRAIT_TRIBAL))
 		heal_rate =  2.25 * REAGENTS_EFFECT_MULTIPLIER
 		is_on_tribal = TRUE
 	else
 		heal_rate = 1.7 * REAGENTS_EFFECT_MULTIPLIER
+	..()
 
 /datum/reagent/medicine/healingpowder/on_mob_life(mob/living/carbon/M)
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/stimpaksuper) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpakimitation))
@@ -504,12 +504,12 @@
 	..()
 
 /datum/reagent/medicine/healingpoultice/on_mob_add(mob/living/carbon/M)
-	. = ..()
 	if(HAS_TRAIT(M, TRAIT_TRIBAL))
 		heal_rate =  3.5 * REAGENTS_EFFECT_MULTIPLIER
 		is_on_tribal = TRUE
 	else
 		heal_rate = 2.625 * REAGENTS_EFFECT_MULTIPLIER
+	..()
 
 /datum/reagent/medicine/healingpoultice/on_mob_life(mob/living/carbon/M)
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/healingpowder) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpaksuper) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpakimitation))
