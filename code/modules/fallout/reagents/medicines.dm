@@ -370,8 +370,6 @@
 	value = REAGENT_VALUE_VERY_RARE
 	ghoulfriendly = TRUE
 	var/heal_rate = 0
-	var/heal_factor_tribal = 5.4 //How much damage it will heal if the person has the Tribal trait
-	var/heal_factor = 4 //How much it will heal if the person does not have the Tribal trait (75% of the regular healing rate)
 	var/is_on_tribal = FALSE
 
 /datum/reagent/medicine/healingpowder/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1)
@@ -385,12 +383,16 @@
 
 /datum/reagent/medicine/bitterdrink/on_mob_add(mob/living/carbon/M)
 	. = ..()
-	heal_rate = (HAS_TRAIT(M, TRAIT_TRIBAL) ? 5.4 : 4) * REAGENTS_EFFECT_MULTIPLIER
+	if(HAS_TRAIT(M, TRAIT_TRIBAL))
+		heal_rate =  5.4 * REAGENTS_EFFECT_MULTIPLIER
+		is_on_tribal = TRUE
+	else
+		heal_rate = 4 * REAGENTS_EFFECT_MULTIPLIER
 
 /datum/reagent/medicine/bitterdrink/on_mob_life(mob/living/carbon/M)
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/healingpoultice) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpowder) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpaksuper) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpakimitation))
 		//Extra healing for each bodypart affected by wounds (results in bitter drink healing wounded bodyparts for 125% of super stimpak healing rate)
-		if(is_tribal)
+		if(is_on_tribal)
 			if(M.all_wounds.len >= 1)
 				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
 					if(iter_bodypart.wounds.len >= 1)
@@ -407,8 +409,8 @@
 		M.adjustStaminaLoss(-heal_rate * 0.66, FALSE)	//66% of brute healing
 		. = TRUE
 
-	M.hallucination += is_tribal ? 0 : 5
-	M.adjust_disgust(is_tribal ? 0 : 10)
+	M.hallucination += is_on_tribal ? 0 : 5
+	M.adjust_disgust(is_on_tribal ? 0 : 10)
 	..()
 
 /datum/reagent/medicine/bitterdrink/overdose_process(mob/living/M)
@@ -431,6 +433,8 @@
 	overdose_threshold = 31
 	value = REAGENT_VALUE_COMMON
 	ghoulfriendly = TRUE
+	var/heal_rate = 0
+	var/is_on_tribal = FALSE
 
 /datum/reagent/medicine/healingpowder/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
@@ -442,12 +446,16 @@
 
 /datum/reagent/medicine/healingpowder/on_mob_add(mob/living/carbon/M)
 	. = ..()
-	heal_rate = (HAS_TRAIT(M, TRAIT_TRIBAL) ? 2.25 : 1.7) * REAGENTS_EFFECT_MULTIPLIER
+	if(HAS_TRAIT(M, TRAIT_TRIBAL))
+		heal_rate =  2.25 * REAGENTS_EFFECT_MULTIPLIER
+		is_on_tribal = TRUE
+	else
+		heal_rate = 1.7 * REAGENTS_EFFECT_MULTIPLIER
 
 /datum/reagent/medicine/healingpowder/on_mob_life(mob/living/carbon/M)
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/stimpaksuper) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpakimitation))
 		//Extra healing for each bodypart affected by wounds
-		if(is_tribal)
+		if(is_on_tribal)
 			if(M.all_wounds.len >= 1)
 				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
 					if(iter_bodypart.wounds.len >= 1)
@@ -463,7 +471,7 @@
 		M.adjustStaminaLoss(-heal_rate * 0.66, FALSE)	//66% of brute healing
 		. = TRUE
 
-	M.hallucination += is_tribal ? 0 : 5
+	M.hallucination += is_on_tribal ? 0 : 5
 	..()
 
 /datum/reagent/medicine/healingpowder/overdose_process(mob/living/M)
@@ -484,6 +492,8 @@
 	overdose_threshold = 31
 	value = REAGENT_VALUE_RARE
 	ghoulfriendly = TRUE
+	var/heal_rate = 0
+	var/is_on_tribal = FALSE
 
 /datum/reagent/medicine/healingpoultice/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
@@ -495,12 +505,16 @@
 
 /datum/reagent/medicine/healingpoultice/on_mob_add(mob/living/carbon/M)
 	. = ..()
-	heal_rate = (HAS_TRAIT(M, TRAIT_TRIBAL) ? 3.5 : 2.625) * REAGENTS_EFFECT_MULTIPLIER
+	if(HAS_TRAIT(M, TRAIT_TRIBAL))
+		heal_rate =  3.5 * REAGENTS_EFFECT_MULTIPLIER
+		is_on_tribal = TRUE
+	else
+		heal_rate = 2.625 * REAGENTS_EFFECT_MULTIPLIER
 
 /datum/reagent/medicine/healingpoultice/on_mob_life(mob/living/carbon/M)
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/healingpowder) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpaksuper) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpakimitation))
 		//Extra healing for each bodypart affected by wounds
-		if(is_tribal)
+		if(is_on_tribal)
 			if(M.all_wounds.len >= 1)
 				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
 					if(iter_bodypart.wounds.len >= 1)
@@ -517,7 +531,7 @@
 		M.adjustStaminaLoss(-heal_rate * 0.66, FALSE)	//66% of brute healing
 		. = TRUE
 
-	M.hallucination += is_tribal ? 0 : 5
+	M.hallucination += is_on_tribal ? 0 : 5
 	..()
 
 /datum/reagent/medicine/healingpoultice/overdose_process(mob/living/M)
