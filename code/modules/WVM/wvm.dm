@@ -879,7 +879,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Spray Can",						/obj/item/toy/crayon/spraycan,										75),
 		new /datum/data/wasteland_equipment("Dean's Electronics",				/obj/item/book/granter/trait/techno,									600),
 		)
-/obj/machinery/mineral/wasteland_vendor/minera
+/obj/machinery/mineral/wasteland_vendor/mineral
     name = "Mineral Vendor"
 	icon_state = "generic_idle"
 	prize_list = list(
