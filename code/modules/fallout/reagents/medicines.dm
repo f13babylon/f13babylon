@@ -69,19 +69,19 @@
 		M.adjustStaminaLoss(-2*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//66% of brute healing
 		M.heal_bodypart_damage(3, 2.25, only_robotic = TRUE, only_organic = FALSE)
 		. = TRUE
-	M.hallucination = max(M.hallucination, is_on_tribal ? 0 : 20)
-	M.jitteriness = max(M.jitteriness, is_on_tribal ? 0 : 20)
-	M.set_dizziness(max(M.dizziness, is_on_tribal ? 0 : 20))
-	M.confused = max(M.confused, is_on_tribal ? 0 : 20)
-	M.set_disgust(max(M.disgust, is_on_tribal ? 0 : DISGUST_LEVEL_DISGUSTED))
+	M.hallucination = max(M.hallucination, is_on_tribal ? 10 : 0)
+	M.jitteriness = max(M.jitteriness, is_on_tribal ? 10 : 0)
+	M.set_dizziness(max(M.dizziness, is_on_tribal ? 10 : 0))
+	M.confused = max(M.confused, is_on_tribal ? 10 : 0)
+	M.set_disgust(max(M.disgust, is_on_tribal ? DISGUST_LEVEL_DISGUSTED : 0))
 	..()
 
 /datum/reagent/medicine/stimpak/overdose_process(mob/living/carbon/M)
 	M.adjustToxLoss(5*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing
 	M.adjustOxyLoss(7*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing + base oxy healing
-	M.jitteriness = max(M.jitteriness, 50)
-	M.set_dizziness(max(M.dizziness, 50))
-	M.confused = max(M.confused, 50)
+	M.jitteriness = max(M.jitteriness, 10)
+	M.set_dizziness(max(M.dizziness, 10))
+	M.confused = max(M.confused, 10)
 	. = TRUE
 
 // ---------------------------
@@ -155,19 +155,19 @@
 		M.adjustStaminaLoss(-1.5*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//66% of brute healing
 		M.heal_bodypart_damage(2.25, 1.7, only_robotic = TRUE, only_organic = FALSE)
 		. = TRUE
-	M.hallucination = max(M.hallucination, is_on_tribal ? 0 : 10)
-	M.jitteriness = max(M.jitteriness, is_on_tribal ? 0 : 10)
-	M.set_dizziness(max(M.dizziness, is_on_tribal ? 0 : 10))
-	M.confused = max(M.confused, is_on_tribal ? 0 : 10)
-	M.set_disgust(max(M.disgust, is_on_tribal ? 0 : DISGUST_LEVEL_DISGUSTED))
+	M.hallucination = max(M.hallucination, is_on_tribal ? 7.5 : 0)
+	M.jitteriness = max(M.jitteriness, is_on_tribal ? 7.5 : 0)
+	M.set_dizziness(max(M.dizziness, is_on_tribal ? 7.5 : 0))
+	M.confused = max(M.confused, is_on_tribal ? 7.5 : 0)
+	M.set_disgust(max(M.disgust, is_on_tribal ? DISGUST_LEVEL_DISGUSTED : 0))
 	..()
 
 /datum/reagent/medicine/stimpakimitation/overdose_process(mob/living/carbon/M)
 	M.adjustToxLoss(3.75*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing
 	M.adjustOxyLoss(5.25*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing + base oxy healing
-	M.jitteriness = max(M.jitteriness, 25)
-	M.set_dizziness(max(M.dizziness, 25))
-	M.confused = max(M.confused, 25)
+	M.jitteriness = max(M.jitteriness, 7.5)
+	M.set_dizziness(max(M.dizziness, 7.5))
+	M.confused = max(M.confused, 7.5)
 	. = TRUE
 
 // ---------------------------
@@ -241,19 +241,19 @@
 		M.adjustStaminaLoss(-4.5*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//66% of brute healing
 		M.heal_bodypart_damage(6.75, 5, only_robotic = TRUE, only_organic = FALSE)
 		. = TRUE
-	M.hallucination = max(M.hallucination, is_on_tribal ? 0 : 50)
-	M.jitteriness = max(M.jitteriness, is_on_tribal ? 0 : 50)
-	M.set_dizziness(max(M.dizziness, is_on_tribal ? 0 : 50))
-	M.confused = max(M.confused, is_on_tribal ? 0 : 50)
-	M.set_disgust(max(M.disgust, is_on_tribal ? 0 : DISGUST_LEVEL_DISGUSTED))
+	M.hallucination = max(M.hallucination, is_on_tribal ? 22.5 : 0)
+	M.jitteriness = max(M.jitteriness, is_on_tribal ? 22.5 : 0)
+	M.set_dizziness(max(M.dizziness, is_on_tribal ? 22.5 : 0))
+	M.confused = max(M.confused, is_on_tribal ? 22.5 : 0)
+	M.set_disgust(max(M.disgust, is_on_tribal ? DISGUST_LEVEL_DISGUSTED : 0))
 	..()
 
 /datum/reagent/medicine/stimpaksuper/overdose_process(mob/living/carbon/M)
 	M.adjustToxLoss(11.25*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing
 	M.adjustOxyLoss(15.75*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing + base oxy healing
-	M.jitteriness = max(M.jitteriness, 125)
-	M.set_dizziness(max(M.dizziness, 125))
-	M.confused = max(M.confused, 125)
+	M.jitteriness = max(M.jitteriness, 22.5)
+	M.set_dizziness(max(M.dizziness, 22.5))
+	M.confused = max(M.confused, 22.5)
 	. = TRUE
 
 // ---------------------------
@@ -411,18 +411,18 @@
 		M.adjustStaminaLoss(-heal_rate * 0.66, FALSE)	//66% of brute healing
 		. = TRUE
 
-	M.hallucination = max(M.hallucination, is_on_tribal ? 0 : 50)
-	M.set_dizziness(max(M.dizziness, is_on_tribal ? 0 : 50))
-	M.confused = max(M.confused, is_on_tribal ? 0 : 50)
+	M.hallucination = max(M.hallucination, is_on_tribal ? 0 : 18)
+	M.set_dizziness(max(M.dizziness, is_on_tribal ? 0 : 18))
+	M.confused = max(M.confused, is_on_tribal ? 0 : 18)
 	M.set_disgust(max(M.disgust, is_on_tribal ? 0 : DISGUST_LEVEL_DISGUSTED))
 	..()
 
 /datum/reagent/medicine/bitterdrink/overdose_process(mob/living/carbon/M)
 	M.adjustToxLoss((heal_rate * 0.66 * 2.5 + (heal_rate * 0.66))*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of tox healing + base tox healing
 	M.adjustOxyLoss((heal_rate * 0.66 * 2.5 + (heal_rate * 0.66))*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing + base oxy healing
-	M.hallucination = max(M.hallucination, 125)
-	M.set_dizziness(max(M.dizziness, 125))
-	M.confused = max(M.confused, 125)
+	M.hallucination = max(M.hallucination, 18)
+	M.set_dizziness(max(M.dizziness, 18))
+	M.confused = max(M.confused, 18)
 	M.set_disgust(max(M.disgust, DISGUST_LEVEL_DISGUSTED))
 	. = TRUE
 	..()
@@ -480,16 +480,16 @@
 		M.adjustStaminaLoss(-heal_rate * 0.66, FALSE)	//66% of brute healing
 		. = TRUE
 
-	M.hallucination = max(M.hallucination, is_on_tribal ? 0 : 10)
-	M.set_dizziness(max(M.dizziness, is_on_tribal ? 0 : 10))
-	M.confused = max(M.confused, is_on_tribal ? 0 : 10)
+	M.hallucination = max(M.hallucination, is_on_tribal ? 0 : 7.5)
+	M.set_dizziness(max(M.dizziness, is_on_tribal ? 0 : 7.5))
+	M.confused = max(M.confused, is_on_tribal ? 0 : 7.5)
 	..()
 
 /datum/reagent/medicine/healingpowder/overdose_process(mob/living/carbon/M)
 	M.adjustToxLoss((6.75 * 2.5 + 6.75)*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing + base oxy healing
-	M.hallucination = max(M.hallucination, 25)
-	M.set_dizziness(max(M.dizziness, 25))
-	M.confused = max(M.confused, 25)
+	M.hallucination = max(M.hallucination, 7.5)
+	M.set_dizziness(max(M.dizziness, 7.5))
+	M.confused = max(M.confused, 7.5)
 	. = TRUE
 	..()
 
@@ -548,16 +548,16 @@
 		M.adjustStaminaLoss(-heal_rate * 0.66, FALSE)	//66% of brute healing
 		. = TRUE
 
-	M.hallucination = max(M.hallucination, is_on_tribal ? 0 : 20)
-	M.set_dizziness(max(M.dizziness, is_on_tribal ? 0 : 20))
-	M.confused = max(M.confused, is_on_tribal ? 0 : 20)
+	M.hallucination = max(M.hallucination, is_on_tribal ? 0 : 11.5)
+	M.set_dizziness(max(M.dizziness, is_on_tribal ? 0 : 11.5))
+	M.confused = max(M.confused, is_on_tribal ? 0 : 11.5)
 	..()
 
 /datum/reagent/medicine/healingpoultice/overdose_process(mob/living/carbon/M)
 	M.adjustOxyLoss((6.75 * 2.5 + 6.75)*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of tox healing + base tox healing
-	M.hallucination = max(M.hallucination, 50)
-	M.set_dizziness(max(M.dizziness, 50))
-	M.confused = max(M.confused, 50)
+	M.hallucination = max(M.hallucination, 11.5)
+	M.set_dizziness(max(M.dizziness, 11.5))
+	M.confused = max(M.confused, 11.5)
 	. = TRUE
 	..()
 
@@ -979,10 +979,10 @@
 					else if (iter_wound.wound_type == WOUND_PIERCE || iter_wound.wound_type == WOUND_SLASH)
 						iter_wound.blood_flow -= clot_rate
 
-	M.hallucination = max(M.hallucination, is_on_tribal ? 0 : 50)
-	M.set_dizziness(max(M.dizziness, is_on_tribal ? 0 : 50))
-	M.confused = max(M.confused, is_on_tribal ? 0 : 50)
-	M.jitteriness = max(M.jitteriness, is_on_tribal ? 0 : 50)
+	M.hallucination = max(M.hallucination, is_on_tribal ? 0 : 22.5)
+	M.set_dizziness(max(M.dizziness, is_on_tribal ? 0 : 22.5))
+	M.confused = max(M.confused, is_on_tribal ? 0 : 22.5)
+	M.jitteriness = max(M.jitteriness, is_on_tribal ? 0 : 22.5)
 	..()
 
 /datum/reagent/medicine/hydra/overdose_process(mob/living/carbon/M)
@@ -1020,10 +1020,10 @@
 							iter_wound.replace_wound(/datum/wound/slash/critical)
 						else
 							iter_wound.blood_flow += clot_rate
-	M.hallucination = max(M.hallucination, 125)
-	M.set_dizziness(max(M.dizziness, 125))
-	M.confused = max(M.confused, 125)
-	M.jitteriness = max(M.jitteriness, 125)
+	M.hallucination = max(M.hallucination, 22.5)
+	M.set_dizziness(max(M.dizziness, 22.5))
+	M.confused = max(M.confused, 22.5)
+	M.jitteriness = max(M.jitteriness, 22.5)
 
 /datum/reagent/medicine/hydra/addiction_act_stage1(mob/living/carbon/M)
 	if(prob(33))
