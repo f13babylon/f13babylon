@@ -171,14 +171,12 @@
 
 	if(M == user)
 		M.visible_message("<span class='danger'>[user] attempts to use [src] on themselves.</span>", \
-							"<span class='userdanger'>[user] attempts to use [src] on themselves.</span>")
+							"<span class='notice'>You attempt to use [src] on yourself.</span>")
 		if(!do_mob(user, M, self_delay))
 			return 0
 	else
 		M.visible_message("<span class='danger'>[user] attempts to use [src] on [M].</span>", \
-							"<span class='userdanger'>[user] attempts to use [src] on [M].</span>")
-		if(!do_mob(user, M))
-			return 0
+							"<span class='userdanger'>[user] attempts to use [src] on you.</span>")
 	..()
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak/on_reagent_change(changetype)
@@ -237,14 +235,12 @@
 
 	if(M == user)
 		M.visible_message("<span class='danger'>[user] attempts to use [src] on themselves.</span>", \
-							"<span class='userdanger'>[user] attempts to use [src] on themselves.</span>")
+							"<span class='notice'>You attempt to use [src] on yourself.</span>")
 		if(!do_mob(user, M, self_delay))
 			return 0
 	else
 		M.visible_message("<span class='danger'>[user] attempts to use [src] on [M].</span>", \
-							"<span class='userdanger'>[user] attempts to use [src] on [M].</span>")
-		if(!do_mob(user, M))
-			return 0
+							"<span class='userdanger'>[user] attempts to use [src] on you.</span>")
 	..()
 
 // ---------------------------------
@@ -267,14 +263,12 @@
 
 	if(M == user)
 		M.visible_message("<span class='danger'>[user] attempts to use [src] on themselves.</span>", \
-							"<span class='userdanger'>[user] attempts to use [src] on themselves.</span>")
+							"<span class='notice'>You attempt to use [src] on yourself.</span>")
 		if(!do_mob(user, M, self_delay))
 			return 0
 	else
 		M.visible_message("<span class='danger'>[user] attempts to use [src] on [M].</span>", \
-							"<span class='userdanger'>[user] attempts to use [src] on [M].</span>")
-		if(!do_mob(user, M))
-			return 0
+							"<span class='userdanger'>[user] attempts to use [src] on you.</span>")
 	..()
 
 // End Fallout -------------------------------------------------
