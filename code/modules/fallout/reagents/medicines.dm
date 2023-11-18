@@ -13,6 +13,7 @@
 	value = REAGENT_VALUE_RARE
 	ghoulfriendly = TRUE
 	var/clot_rate = 0.35	//35% as effective as Hydra at clotting bleeding wounds
+	var/is_on_tribal = FALSE
 
 /datum/reagent/medicine/stimpak/reaction_mob(mob/living/carbon/M, method, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
@@ -23,7 +24,8 @@
 	..()
 
 /datum/reagent/medicine/stimpak/on_mob_add(mob/living/carbon/M)
-	if(M.mind)
+	if(HAS_TRAIT(M, TRAIT_TRIBAL))
+		is_on_tribal = TRUE
 		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
 		if(istype(job))
 			if(job.faction == FACTION_LEGION)
@@ -34,16 +36,6 @@
 	..()
 
 /datum/reagent/medicine/stimpak/on_mob_life(mob/living/carbon/M)
-	if(M.mind)
-		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
-		if(istype(job))
-			if(job.faction == FACTION_LEGION)
-				M.set_disgust(max(M.disgust + 2, DISGUST_LEVEL_DISGUSTED))
-				M.hallucination += (max(M.hallucination + 2, 25))
-			else if (job.faction == FACTION_TRIBAL)
-				M.adjust_disgust(2)
-				M.hallucination += (max(M.hallucination + 2, 25))
-
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/bitterdrink) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpoultice) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpowder) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpakimitation))
 		//Clotting properties for pierce/slash wounds
 		if(current_cycle > 0 && current_cycle % 6 == 0 && M.all_wounds && M.all_wounds.len >= 1)	//Every 6th cycle, reduce blood_flow for all pierce/slash wounds by clot_rate.
@@ -77,13 +69,18 @@
 		M.adjustStaminaLoss(-2*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//66% of brute healing
 		M.heal_bodypart_damage(3, 2.25, only_robotic = TRUE, only_organic = FALSE)
 		. = TRUE
+	M.hallucination = max(M.hallucination, is_on_tribal ? 0 : 20)
+	M.dizziness = max(M.dizziness, is_on_tribal ? 0 : 20)
+	M.confusion = max(M.confusion, is_on_tribal ? 0 : 20)
+	M.disgust = max(M.disgust, is_on_tribal ? 0 : DISGUST_LEVEL_DISGUSTED)
 	..()
 
 /datum/reagent/medicine/stimpak/overdose_process(mob/living/carbon/M)
 	M.adjustToxLoss(5*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing
 	M.adjustOxyLoss(7*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing + base oxy healing
-	M.drowsyness += 2*REAGENTS_EFFECT_MULTIPLIER
-	M.jitteriness += 3*REAGENTS_EFFECT_MULTIPLIER
+	M.jitteriness = max(M.jitteriness, 50)
+	M.dizziness = max(M.dizziness, 50)
+	M.confusion = max(M.confusion, 50)
 	. = TRUE
 
 // ---------------------------
@@ -101,6 +98,7 @@
 	value = REAGENT_VALUE_UNCOMMON
 	ghoulfriendly = TRUE
 	var/clot_rate = 0.2625	//26.25% as effective as Hydra at clotting bleeding wounds
+	var/is_on_tribal = FALSE
 
 /datum/reagent/medicine/stimpakimitation/reaction_mob(mob/living/carbon/M, method, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
@@ -111,7 +109,8 @@
 	..()
 
 /datum/reagent/medicine/stimpakimitation/on_mob_add(mob/living/carbon/M)
-	if(M.mind)
+	if(HAS_TRAIT(M, TRAIT_TRIBAL))
+		is_on_tribal = TRUE
 		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
 		if(istype(job))
 			if(job.faction == FACTION_LEGION)
@@ -122,16 +121,6 @@
 	..()
 
 /datum/reagent/medicine/stimpakimitation/on_mob_life(mob/living/carbon/M)
-	if(M.mind)
-		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
-		if(istype(job))
-			if(job.faction == FACTION_LEGION)
-				M.set_disgust(max(M.disgust + 1.5, DISGUST_LEVEL_DISGUSTED))
-				M.hallucination += (max(M.hallucination + 1.5, 25))
-			else if (job.faction == FACTION_TRIBAL)
-				M.adjust_disgust(1.5)
-				M.hallucination += (max(M.hallucination + 1.5, 25))
-
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/bitterdrink) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpoultice) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpowder))
 		//Clotting properties for pierce/slash wounds
 		if(current_cycle > 0 && current_cycle % 6 == 0 && M.all_wounds && M.all_wounds.len >= 1)	//Every 6th cycle, reduce blood_flow for all pierce/slash wounds by clot_rate.
@@ -165,13 +154,18 @@
 		M.adjustStaminaLoss(-1.5*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//66% of brute healing
 		M.heal_bodypart_damage(2.25, 1.7, only_robotic = TRUE, only_organic = FALSE)
 		. = TRUE
+	M.hallucination = max(M.hallucination, is_on_tribal ? 0 : 10)
+	M.dizziness = max(M.dizziness, is_on_tribal ? 0 : 10)
+	M.confusion = max(M.confusion, is_on_tribal ? 0 : 10)
+	M.disgust = max(M.disgust, is_on_tribal ? 0 : DISGUST_LEVEL_DISGUSTED)
 	..()
 
 /datum/reagent/medicine/stimpakimitation/overdose_process(mob/living/carbon/M)
 	M.adjustToxLoss(3.75*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing
 	M.adjustOxyLoss(5.25*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing + base oxy healing
-	M.drowsyness += 2*REAGENTS_EFFECT_MULTIPLIER
-	M.jitteriness += 3*REAGENTS_EFFECT_MULTIPLIER
+	M.jitteriness = max(M.jitteriness, 25)
+	M.dizziness = max(M.dizziness, 25)
+	M.confusion = max(M.confusion, 25)
 	. = TRUE
 
 // ---------------------------
@@ -189,6 +183,7 @@
 	value = REAGENT_VALUE_VERY_RARE
 	ghoulfriendly = TRUE
 	var/clot_rate = 0.65	//65% as effective as Hydra at clotting bleeding wounds
+	var/is_on_tribal = FALSE
 
 /datum/reagent/medicine/stimpaksuper/reaction_mob(mob/living/carbon/M, method, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
@@ -199,7 +194,8 @@
 	..()
 
 /datum/reagent/medicine/stimpaksuper/on_mob_add(mob/living/carbon/M)
-	if(M.mind)
+	if(HAS_TRAIT(M, TRAIT_TRIBAL))
+		is_on_tribal = TRUE
 		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
 		if(istype(job))
 			if(job.faction == FACTION_LEGION)
@@ -210,16 +206,6 @@
 	..()
 
 /datum/reagent/medicine/stimpaksuper/on_mob_life(mob/living/carbon/M)
-	if(M.mind)
-		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
-		if(istype(job))
-			if(job.faction == FACTION_LEGION)
-				M.set_disgust(max(M.disgust + 4.5, DISGUST_LEVEL_DISGUSTED))
-				M.hallucination += (max(M.hallucination + 4.5, 25))
-			else if (job.faction == FACTION_TRIBAL)
-				M.adjust_disgust(4.5)
-				M.hallucination += (max(M.hallucination + 4.5, 25))
-
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/bitterdrink) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpoultice) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpowder) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) &&!M.reagents.has_reagent(/datum/reagent/medicine/stimpakimitation))
 		//Clotting properties for pierce/slash wounds
 		if(current_cycle > 0 && current_cycle % 5 == 0 && M.all_wounds && M.all_wounds.len >= 1)	//Every 5th cycle, reduce blood_flow for all pierce/slash wounds by clot_rate.
@@ -253,13 +239,18 @@
 		M.adjustStaminaLoss(-4.5*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//66% of brute healing
 		M.heal_bodypart_damage(6.75, 5, only_robotic = TRUE, only_organic = FALSE)
 		. = TRUE
+	M.hallucination = max(M.hallucination, is_on_tribal ? 0 : 50)
+	M.dizziness = max(M.dizziness, is_on_tribal ? 0 : 50)
+	M.confusion = max(M.confusion, is_on_tribal ? 0 : 50)
+	M.disgust = max(M.disgust, is_on_tribal ? 0 : DISGUST_LEVEL_DISGUSTED)
 	..()
 
 /datum/reagent/medicine/stimpaksuper/overdose_process(mob/living/carbon/M)
 	M.adjustToxLoss(11.25*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing
 	M.adjustOxyLoss(15.75*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing + base oxy healing
-	M.drowsyness += 2*REAGENTS_EFFECT_MULTIPLIER
-	M.jitteriness += 3*REAGENTS_EFFECT_MULTIPLIER
+	M.jitteriness = max(M.jitteriness, 125)
+	M.dizziness = max(M.dizziness, 125)
+	M.confusion = max(M.confusion, 125)
 	. = TRUE
 
 // ---------------------------
@@ -417,14 +408,19 @@
 		M.adjustStaminaLoss(-heal_rate * 0.66, FALSE)	//66% of brute healing
 		. = TRUE
 
-	M.hallucination += is_on_tribal ? 0 : heal_rate * 0.66
-	M.adjust_disgust(is_on_tribal ? 0 : heal_rate * 0.66)
+	M.hallucination = max(M.hallucination, is_on_tribal ? 0 : 50)
+	M.dizziness = max(M.dizziness, is_on_tribal ? 0 : 50)
+	M.confusion = max(M.confusion, is_on_tribal ? 0 : 50)
+	M.disgust = max(M.disgust, is_on_tribal ? 0 : DISGUST_LEVEL_DISGUSTED)
 	..()
 
 /datum/reagent/medicine/bitterdrink/overdose_process(mob/living/M)
 	M.adjustToxLoss((heal_rate * 0.66 * 2.5 + (heal_rate * 0.66))*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of tox healing + base tox healing
 	M.adjustOxyLoss((heal_rate * 0.66 * 2.5 + (heal_rate * 0.66))*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing + base oxy healing
-	M.adjust_disgust(10)
+	M.hallucination = max(M.hallucination, 125)
+	M.dizziness = max(M.dizziness, 125)
+	M.confusion = max(M.confusion, 125)
+	M.disgust = max(M.disgust, DISGUST_LEVEL_DISGUSTED)
 	. = TRUE
 	..()
 
@@ -481,11 +477,16 @@
 		M.adjustStaminaLoss(-heal_rate * 0.66, FALSE)	//66% of brute healing
 		. = TRUE
 
-	M.hallucination += is_on_tribal ? 0 : heal_rate * 0.66
+	M.hallucination = max(M.hallucination, is_on_tribal ? 0 : 10)
+	M.dizziness = max(M.dizziness, is_on_tribal ? 0 : 10)
+	M.confusion = max(M.confusion, is_on_tribal ? 0 : 10)
 	..()
 
 /datum/reagent/medicine/healingpowder/overdose_process(mob/living/M)
 	M.adjustToxLoss((6.75 * 2.5 + 6.75)*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing + base oxy healing
+	M.hallucination = max(M.hallucination, 25)
+	M.dizziness = max(M.dizziness, 25)
+	M.confusion = max(M.confusion, 25)
 	. = TRUE
 	..()
 
@@ -544,11 +545,16 @@
 		M.adjustStaminaLoss(-heal_rate * 0.66, FALSE)	//66% of brute healing
 		. = TRUE
 
-	M.hallucination += is_on_tribal ? 0 : heal_rate * 0.66
+	M.hallucination = max(M.hallucination, is_on_tribal ? 0 : 20)
+	M.dizziness = max(M.dizziness, is_on_tribal ? 0 : 20)
+	M.confusion = max(M.confusion, is_on_tribal ? 0 : 20)
 	..()
 
 /datum/reagent/medicine/healingpoultice/overdose_process(mob/living/M)
 	M.adjustOxyLoss((6.75 * 2.5 + 6.75)*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of tox healing + base tox healing
+	M.hallucination = max(M.hallucination, 50)
+	M.dizziness = max(M.dizziness, 50)
+	M.confusion = max(M.confusion, 50)
 	. = TRUE
 	..()
 
@@ -915,13 +921,22 @@
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	overdose_threshold = 21
 	self_consuming = TRUE
-	var/clot_rate = 0
+	var/clot_rate = 0	//The rate at which blood_flow will be reduced for pierce/slash wounds
+	var/is_on_tribal = FALSE
+	var/nth_cycle = 0	//On which cycle should Hydra trigger its effects
+
+/datum/reagent/medicine/hydra/on_mob_add(mob/living/carbon/M)
+	if(HAS_TRAIT(M, TRAIT_TRIBAL))
+		is_on_tribal = TRUE
+		clot_rate =  1
+		nth_cycle = 5
+	else
+		clot_rate = 0.35
+		nth_cycle = 8
+	..()
 
 /datum/reagent/medicine/hydra/on_mob_life(mob/living/carbon/M)
-	var/is_tribal = HAS_TRAIT(M, TRAIT_TRIBAL)
-	clot_rate = is_tribal ? 1 : 0.35
-	var/nth_cycle = is_tribal ? 5 : 8
-	if(current_cycle > 0 && current_cycle % nth_cycle == 0 && M.all_wounds && M.all_wounds.len >= 1) //Every 5th cycle, reduce burn/bone wound severity by 1 tier, for puncture/slash wounds decrease blood_flow by clot_rate
+	if(current_cycle > 0 && current_cycle % nth_cycle == 0 && M.all_wounds && M.all_wounds.len >= 1) //Every 5th (8th) cycle, reduce burn/bone wound severity by 1 tier, for puncture/slash wounds decrease blood_flow by clot_rate
 		for(var/datum/wound/iter_wound in M.all_wounds)
 			var/affected_limb_name = iter_wound.limb.name
 			switch(iter_wound.severity)
@@ -961,8 +976,10 @@
 					else if (iter_wound.wound_type == WOUND_PIERCE || iter_wound.wound_type == WOUND_SLASH)
 						iter_wound.blood_flow -= clot_rate
 
-	M.hallucination += is_tribal ? 0 : 5
-	M.adjust_disgust(is_tribal ? 0 : 5)
+	M.hallucination = max(M.hallucination, is_on_tribal ? 0 : 50)
+	M.dizziness = max(M.dizziness, is_on_tribal ? 0 : 50)
+	M.confusion = max(M.confusion, is_on_tribal ? 0 : 50)
+	M.jitteriness = max(M.jitteriness, is_on_tribal ? 0 : 50)
 	..()
 
 /datum/reagent/medicine/hydra/overdose_process(mob/living/carbon/M)
@@ -1000,8 +1017,10 @@
 							iter_wound.replace_wound(/datum/wound/slash/critical)
 						else
 							iter_wound.blood_flow += clot_rate
-	M.hallucination += 5
-	M.adjust_disgust(5)
+	M.hallucination = max(M.hallucination, 125)
+	M.dizziness = max(M.dizziness, 125)
+	M.confusion = max(M.confusion, 125)
+	M.jitteriness = max(M.jitteriness, 125)
 
 /datum/reagent/medicine/hydra/addiction_act_stage1(mob/living/carbon/M)
 	if(prob(33))
