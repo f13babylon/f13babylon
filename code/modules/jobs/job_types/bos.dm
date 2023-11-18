@@ -150,7 +150,7 @@ Head Paladin
 	id = 			/obj/item/card/id/dogtag
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/hunting = 1,
-		/obj/item/melee/powerfist/f13 = 1,
+		/obj/item/melee/f13powerfist = 1,
 		/obj/item/gun/ballistic/automatic/pistol/n99/crusader = 1,
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,

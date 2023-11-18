@@ -191,7 +191,7 @@
 	suit_store = /obj/item/gun/ballistic/automatic/smg/smg14
 	suit = /obj/item/clothing/suit/armor/f13/rangercombat/foxcustom
 	backpack_contents = list(
-		/obj/item/melee/powerfist/f13 = 1,
+		/obj/item/melee/f13powerfist = 1,
 		/obj/item/ammo_box/magazine/smg14 = 2
 	)
 

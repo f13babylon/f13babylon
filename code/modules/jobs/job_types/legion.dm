@@ -117,7 +117,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/pistol14
 	r_pocket = /obj/item/storage/bag/money/small/legion
 	l_pocket = /obj/item/flashlight/lantern
-	r_hand = /obj/item/melee/powerfist/f13/goliath
+	r_hand = /obj/item/melee/f13powerfist/goliath
 	l_hand = /obj/item/tank/internals/oxygen
 	backpack = null
 	satchel = null
@@ -291,7 +291,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	suit = /obj/item/clothing/suit/armor/f13/legion/centurion
 	head = /obj/item/clothing/head/helmet/f13/legion/centurion
 	backpack_contents = list(
-		/obj/item/melee/powerfist/f13/goliath = 1,
+		/obj/item/melee/f13powerfist/goliath = 1,
 		/obj/item/book/granter/martial/cqc = 1,
 		/obj/item/gun/ballistic/automatic/smg/cg45_two = 1,
 		/obj/item/ammo_box/magazine/cg45_two = 2,

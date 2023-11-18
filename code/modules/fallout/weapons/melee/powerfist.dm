@@ -3,7 +3,7 @@
 /////////////////		-Uses power (gas currently) for knockback. Heavy AP, specialized for attacking heavy armor
 
 // Power Fist			Throws targets. Max damage 44. Full AP.
-/obj/item/melee/powerfist/f13
+/obj/item/melee/f13powerfist
 	name = "power fist"
 	desc = "A metal gauntlet with a piston-powered ram on top for that extra 'oomph' in your punch."
 	icon_state = "powerfist"
@@ -20,6 +20,8 @@
 	var/transfer_prints = TRUE //prevents runtimes with forensics when held in glove slot
 	var/throw_distance = 1
 	attack_speed = CLICK_CD_MELEE
+/*
+No longer pathed as /obj/item/melee/powerfist
 
 /obj/item/melee/powerfist/f13/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/wrench))
@@ -54,9 +56,9 @@
 		return
 	var/atom/throw_target = get_edge_target_turf(target, get_dir(src, get_step_away(target, src)))
 	target.throw_at(throw_target, 2 * throw_distance, 0.5 + (throw_distance / 2))
-
+*/
 // Goliath				Throws targets far. Max damage 50.
-/obj/item/melee/powerfist/f13/goliath
+/obj/item/melee/f13powerfist/goliath
 	name = "Goliath"
 	desc = "A massive, experimental metal gauntlet captured by the Legion. The piston-powered ram on top is designed to throw targets very, very far."
 	icon = 'icons/fallout/objects/melee/melee.dmi'
@@ -88,8 +90,8 @@
 	var/transfer_prints = TRUE //prevents runtimes with forensics when held in glove slot
 
 
-// Mole Miner				
-/obj/item/melee/powerfist/f13/moleminer
+// Mole Miner
+/obj/item/melee/f13powerfist/moleminer
 	name = "mole miner gauntlet"
 	desc = "A hand-held mining and cutting implement, repurposed into a deadly melee weapon.  Its name origins are a mystery..."
 	icon_state = "mole_miner_g"
