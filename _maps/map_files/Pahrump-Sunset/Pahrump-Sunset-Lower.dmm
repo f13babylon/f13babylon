@@ -19298,7 +19298,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/structure/closet,
+/obj/machinery/mineral/wasteland_vendor/mineral,
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
 	},
