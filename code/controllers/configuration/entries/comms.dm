@@ -45,3 +45,7 @@
 
 /datum/config_entry/flag/allow_cross_server_bunker_override
 	protection = CONFIG_ENTRY_LOCKED
+
+/datum/config_entry/string/tgs_ban_relay_tag
+	config_entry_value = "ban-alert"
+	protection = CONFIG_ENTRY_LOCKED
