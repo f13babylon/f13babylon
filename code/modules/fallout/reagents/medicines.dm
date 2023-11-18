@@ -23,12 +23,12 @@
 	..()
 
 /datum/reagent/medicine/stimpak/on_mob_add(mob/living/carbon/M)
-	. = ..()
 	if(M.mind)
 		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
 		if(istype(job))
 			if(job.faction == FACTION_LEGION)
 				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
+	..()
 
 /datum/reagent/medicine/stimpak/on_mob_life(mob/living/carbon/M)
 	if(M.mind)
@@ -108,12 +108,12 @@
 	..()
 
 /datum/reagent/medicine/stimpak/on_mob_add(mob/living/carbon/M)
-	. = ..()
 	if(M.mind)
 		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
 		if(istype(job))
 			if(job.faction == FACTION_LEGION)
 				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
+	..()
 
 /datum/reagent/medicine/stimpak/on_mob_life(mob/living/carbon/M)
 	if(M.mind)
@@ -193,12 +193,12 @@
 	..()
 
 /datum/reagent/medicine/stimpak/on_mob_add(mob/living/carbon/M)
-	. = ..()
 	if(M.mind)
 		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
 		if(istype(job))
 			if(job.faction == FACTION_LEGION)
 				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
+	..()
 
 /datum/reagent/medicine/stimpak/on_mob_life(mob/living/carbon/M)
 	if(M.mind)
@@ -391,10 +391,12 @@
 		//Extra healing for each bodypart affected by wounds (results in bitter drink healing wounded bodyparts for 125% of super stimpak healing rate)
 		if(is_on_tribal)
 			if(M.all_wounds && M.all_wounds.len >= 1)
+				var/added_heal_rate = 3
 				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
 					if(iter_bodypart.wounds && iter_bodypart.wounds.len >= 1)
-						M.adjustBruteLoss(-3, FALSE)
-						M.adjustFireLoss(-2.25, FALSE)	//75% of brute healing
+						M.adjustBruteLoss(-added_heal_rate, FALSE)
+						M.adjustFireLoss(-added_heal_rate * 0.75, FALSE)	//75% of brute healing
+						added_heal_rate *= 0.5	//Reduce the additional healing amount by half for each wounded bodypart to keep the healing from getting too ridiculous
 
 		//Actual healing part starts here
 		M.adjustBruteLoss(-heal_rate, FALSE)
@@ -411,8 +413,8 @@
 	..()
 
 /datum/reagent/medicine/bitterdrink/overdose_process(mob/living/M)
-	M.adjustToxLoss((-heal_rate * 0.66 * 2.5 + (-heal_rate * 0.66))*REAGENTS_EFFECT_MULTIPLIER, FALSE)
-	M.adjustOxyLoss((-heal_rate * 0.66 * 2.5 + (-heal_rate * 0.66))*REAGENTS_EFFECT_MULTIPLIER, FALSE)
+	M.adjustToxLoss((heal_rate * 0.66 * 2.5 + (heal_rate * 0.66))*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of tox healing + base tox healing
+	M.adjustOxyLoss((heal_rate * 0.66 * 2.5 + (heal_rate * 0.66))*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing + base oxy healing
 	M.adjust_disgust(10)
 	. = TRUE
 	..()
@@ -454,15 +456,17 @@
 		//Extra healing for each bodypart affected by wounds
 		if(is_on_tribal)
 			if(M.all_wounds && M.all_wounds.len >= 1)
+				var/added_heal_rate = 1
 				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
 					if(iter_bodypart.wounds && iter_bodypart.wounds.len >= 1)
-						M.adjustBruteLoss(-1, FALSE)
-						M.adjustFireLoss(-0.75, FALSE)	//75% of brute healing
+						M.adjustBruteLoss(-added_heal_rate, FALSE)
+						M.adjustFireLoss(-added_heal_rate * 0.75, FALSE)	//75% of brute healing
+						added_heal_rate *= 0.5	//Reduce the additional healing amount by half for each wounded bodypart to keep the healing from getting too ridiculous
 
 		//Actual healing part starts here
 		M.adjustBruteLoss(-heal_rate, FALSE)
 		M.adjustFireLoss(-heal_rate * 0.75, FALSE)	//75% of brute healing
-		M.adjustOxyLoss(-heal_rate * 3, FALSE)	//300% of brute healing
+		M.adjustOxyLoss(-6.75, FALSE)	//300% of brute healing
 		M.AdjustStun(-heal_rate * 0.66, FALSE)	//66% of brute healing
 		M.AdjustKnockdown(-heal_rate * 0.66, FALSE)	//66% of brute healing
 		M.adjustStaminaLoss(-heal_rate * 0.66, FALSE)	//66% of brute healing
@@ -472,7 +476,7 @@
 	..()
 
 /datum/reagent/medicine/healingpowder/overdose_process(mob/living/M)
-	M.adjustToxLoss((-heal_rate * 3 + (-heal_rate * 0.66))*REAGENTS_EFFECT_MULTIPLIER, FALSE)
+	M.adjustToxLoss((6.75 * 2.5 + 6.75)*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy healing + base oxy healing
 	. = TRUE
 	..()
 
@@ -513,16 +517,18 @@
 		//Extra healing for each bodypart affected by wounds
 		if(is_on_tribal)
 			if(M.all_wounds && M.all_wounds.len >= 1)
+				var/added_heal_rate = 2
 				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
-					if(iter_bodypart.wounds.len >= 1)
-						M.adjustBruteLoss(-2, FALSE)
-						M.adjustFireLoss(-1.5, FALSE)	//75% of brute healing
+					if(iter_bodypart.wounds && iter_bodypart.wounds.len >= 1)
+						M.adjustBruteLoss(-added_heal_rate, FALSE)
+						M.adjustFireLoss(-added_heal_rate * 0.75, FALSE)	//75% of brute healing
+						added_heal_rate *= 0.5	//Reduce the additional healing amount by half for each bodypart affected by wounds to keep the healing from getting too ridiculous
 
 		//Actual healing part starts here
 		M.adjustBruteLoss(-heal_rate, FALSE)
 		M.adjustFireLoss(-heal_rate * 0.75, FALSE)	//75% of brute healing
-		M.adjustToxLoss(-heal_rate * 3, FALSE)	//300% of brute healing
-		M.radiation -= heal_rate * 3	//300% of brute healing
+		M.adjustToxLoss(-6.75, FALSE)	//Same as super stim fluid brute healing
+		M.radiation -= 6.75	//Same as super stim fluid brute healing
 		M.AdjustStun(-heal_rate * 0.66, FALSE)	//66% of brute healing
 		M.AdjustKnockdown(-heal_rate * 0.66, FALSE)	//66% of brute healing
 		M.adjustStaminaLoss(-heal_rate * 0.66, FALSE)	//66% of brute healing
@@ -532,7 +538,7 @@
 	..()
 
 /datum/reagent/medicine/healingpoultice/overdose_process(mob/living/M)
-	M.adjustOxyLoss((-heal_rate * 3	 + (-heal_rate * 0.66))*REAGENTS_EFFECT_MULTIPLIER, FALSE)
+	M.adjustOxyLoss((6.75 * 2.5 + 6.75)*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of tox healing + base tox healing
 	. = TRUE
 	..()
 
