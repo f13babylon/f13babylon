@@ -17,3 +17,6 @@
 #MEDAL_HUB_PASSWORD
 
 #TGS_BAN_RELAY_TAG ban-alert
+
+## Discord Role ID for round pings
+DISCORD_PING_ROLE_ID

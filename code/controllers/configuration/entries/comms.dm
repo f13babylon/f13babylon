@@ -49,3 +49,6 @@
 /datum/config_entry/string/tgs_ban_relay_tag
 	config_entry_value = "ban-alert"
 	protection = CONFIG_ENTRY_LOCKED
+
+/datum/config_entry/string/discord_ping_role_id
+	protection = CONFIG_ENTRY_LOCKED
