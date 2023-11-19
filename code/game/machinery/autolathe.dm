@@ -327,6 +327,8 @@
 				dat += " <a href='?src=[REF(src)];make=[D.id];multiplier=5'>x5</a>"
 			if(!disabled && can_build(D, 10))
 				dat += " <a href='?src=[REF(src)];make=[D.id];multiplier=10'>x10</a>"
+			if(!disabled && can_build(D, 50))
+				dat += " <a href='?src=[REF(src)];make=[D.id];multiplier=10'>x50</a>" //stimpak moment
 
 		dat += "[get_design_cost(D)]<br>"
 
