@@ -384,7 +384,6 @@
 /area/f13/tunnel)
 "dH" = (
 /obj/structure/table,
-/obj/item/organ/ears/cat,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
 "dI" = (
@@ -2574,10 +2573,6 @@
 /area/f13/enclave)
 "uo" = (
 /obj/machinery/seed_extractor,
-/obj/item/seeds/xander,
-/obj/item/seeds/poppy/broc,
-/obj/item/seeds/mutfruit,
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia,
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/enclave)
 "uq" = (
@@ -3688,11 +3683,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"De" = (
-/turf/open/indestructible/ground/outside/ruins{
-	icon_state = "rubbleplate"
-	},
-/area/f13/enclave)
 "Df" = (
 /obj/machinery/light/small/broken,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -4580,7 +4570,6 @@
 /area/f13/building)
 "KA" = (
 /obj/structure/frame/machine,
-/obj/item/storage/box/disks_plantgene,
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/enclave)
 "KB" = (
@@ -4810,9 +4799,6 @@
 "MV" = (
 /obj/structure/dresser,
 /turf/open/floor/f13,
-/area/f13/enclave)
-"Nb" = (
-/turf/closed/mineral/random/low_chance,
 /area/f13/enclave)
 "Nc" = (
 /obj/effect/decal/marking,
@@ -5056,9 +5042,6 @@
 	dir = 1
 	},
 /turf/open/floor/f13,
-/area/f13/enclave)
-"OS" = (
-/turf/closed/indestructible/rock,
 /area/f13/enclave)
 "OX" = (
 /obj/effect/landmark/vertibird{
@@ -20145,9 +20128,9 @@ HA
 HA
 iT
 AW
-fZ
-kC
-De
+AW
+AW
+AW
 AW
 AW
 AW
@@ -20401,11 +20384,11 @@ HA
 HA
 HA
 iT
-OS
-fZ
-fZ
-fZ
-aK
+iT
+iT
+iT
+iT
+iT
 AW
 AW
 AW
@@ -20658,11 +20641,11 @@ HA
 HA
 HA
 HA
-aK
-aK
-fZ
-fZ
-aK
+HA
+HA
+HA
+HA
+iT
 AW
 ba
 Jx
@@ -20917,9 +20900,9 @@ HA
 HA
 HA
 HA
-aK
-aK
-Nb
+HA
+HA
+iT
 AW
 bX
 Jx
@@ -21175,8 +21158,8 @@ HA
 HA
 HA
 HA
-Nb
-Nb
+HA
+iT
 AW
 wZ
 Jx
@@ -21433,7 +21416,7 @@ HA
 HA
 HA
 HA
-Nb
+iT
 AW
 Jx
 Jx

@@ -5327,6 +5327,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
+/obj/machinery/chem_dispenser/drinks/fullupgrade,
 /turf/open/floor/wood,
 /area/f13/bar/heaven)
 "avk" = (
@@ -25548,10 +25549,6 @@
 /area/f13/building/massfusion)
 "dLW" = (
 /obj/structure/legion_extractor,
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia,
-/obj/item/seeds/poppy/broc,
-/obj/item/seeds/xander,
-/obj/item/seeds/mutfruit,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/building)
 "dMb" = (
@@ -39483,7 +39480,6 @@
 /obj/structure/curtain{
 	pixel_y = 32
 	},
-/obj/effect/landmark/start/f13/followersadministrator,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -41278,12 +41274,6 @@
 	icon_state = "outerpavementcorner"
 	},
 /area/f13/wasteland/heaven)
-"mZs" = (
-/obj/machinery/limbgrower,
-/turf/open/floor/f13{
-	icon_state = "bluerustysolid"
-	},
-/area/f13/followers)
 "mZJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -47357,6 +47347,10 @@
 	icon_state = "verticalinnermain0"
 	},
 /area/f13/building/hospital)
+"qGu" = (
+/obj/structure/closet/crate/large,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland/quarry)
 "qGH" = (
 /obj/structure/closet/crate/freezer{
 	storage_capacity = 30
@@ -48383,7 +48377,7 @@
 /turf/closed/wall/f13/tentwall,
 /area/f13/building)
 "rky" = (
-/obj/machinery/bloodbankgen,
+/obj/structure/table,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -50324,12 +50318,6 @@
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland/museum)
-"sqt" = (
-/obj/machinery/sleeper,
-/turf/open/floor/f13{
-	icon_state = "bluerustysolid"
-	},
-/area/f13/followers)
 "sqA" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/structure/flora/ausbushes/grassybush,
@@ -55117,7 +55105,25 @@
 /turf/open/floor/f13/wood,
 /area/f13/city/bighorn)
 "van" = (
-/obj/machinery/vending/hydroseeds,
+/obj/machinery/smartfridge/bottlerack/seedbin,
+/obj/item/seeds/agave,
+/obj/item/seeds/agave,
+/obj/item/seeds/xander,
+/obj/item/seeds/xander,
+/obj/item/seeds/poppy/broc,
+/obj/item/seeds/poppy/broc,
+/obj/item/seeds/mutfruit,
+/obj/item/seeds/mutfruit,
+/obj/item/seeds/feracactus,
+/obj/item/seeds/feracactus,
+/obj/item/seeds/wheat,
+/obj/item/seeds/wheat,
+/obj/item/seeds/pumpkin,
+/obj/item/seeds/cannabis,
+/obj/item/seeds/cannabis,
+/obj/item/seeds/cotton,
+/obj/item/storage/bag/plants,
+/obj/item/storage/bag/plants,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/building)
 "vao" = (
@@ -59573,7 +59579,7 @@
 	},
 /area/f13/wasteland/museum)
 "xFX" = (
-/obj/machinery/vending/hydronutrients,
+/obj/machinery/smartfridge/bottlerack/grownbin,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/building)
 "xGe" = (
@@ -60582,12 +60588,6 @@
 	icon_state = "verticalleftborderlefttop"
 	},
 /area/f13/wasteland/east)
-"yme" = (
-/obj/item/stack/sheet/mineral/abductor/ten,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticalleftborderleft0"
-	},
-/area/f13/wasteland/west)
 
 (1,1,1) = {"
 aaa
@@ -79059,9 +79059,9 @@ rrO
 aoI
 bzd
 yjm
-sqt
+dFh
 qpv
-mZs
+rky
 rky
 yjm
 lsP
@@ -90776,7 +90776,7 @@ hRW
 lvp
 alM
 ttk
-yme
+ttk
 ttk
 nwr
 gKo
@@ -99675,7 +99675,7 @@ kZn
 prR
 puj
 cpq
-cpq
+qGu
 hIS
 aaF
 wfO
