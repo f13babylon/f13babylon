@@ -1181,7 +1181,7 @@
 	item_state = "fnfal"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	spread = 9
-	fire_delay = 3.5
+	fire_delay = 2.5
 	burst_shot_delay = 2
 	is_automatic = TRUE
 	automatic = 1
@@ -1543,7 +1543,7 @@
 	slot_flags = SLOT_BACK
 	mag_type = /obj/item/ammo_box/magazine/m2mm
 	burst_size = 1
-	fire_delay = 10
+	fire_delay = 12
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
