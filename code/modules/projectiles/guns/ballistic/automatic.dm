@@ -583,6 +583,7 @@
 	can_suppress = FALSE
 	can_unsuppress = FALSE
 	fire_sound = 'sound/weapons/Gunshot_silenced.ogg'
+	extra_penetration = 0.10
 
 
 //Ppsh-41				Keywords: 9mm, Automatic, 71 rounds.
