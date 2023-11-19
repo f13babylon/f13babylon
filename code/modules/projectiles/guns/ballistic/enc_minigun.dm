@@ -183,7 +183,7 @@
 
 //The ammo/gun is stored in a back slot item
 /obj/item/encminigunpack
-	name = "\improper H&K L30 backpack power source"
+	name = "\improper Laser gatling backpack power source"
 	desc = "The massive external power source for the laser gatling gun."
 	icon = 'icons/obj/guns/minigun.dmi'
 	icon_state = "holstered"
@@ -279,7 +279,7 @@
 	user.update_inv_back()
 
 /obj/item/gun/energy/encminigun
-	name = "\improper H&K L30"
+	name = "\improper Gatling laser"
 	desc = "An advanced laser cannon with an incredible rate of fire. \
 	Requires a bulky backpack power source to use, alongside being refitted for electron charge packs."
 	icon = 'icons/obj/guns/minigun.dmi'
@@ -293,8 +293,8 @@
 	burst_size = 1
 	burst_shot_delay = 1
 	automatic = 1
-	autofire_shot_delay = 1.2
-	spread = 8
+	autofire_shot_delay = 2.2
+	spread = 20
 	fire_delay = 1
 	weapon_weight = WEAPON_HEAVY
 	fire_sound = 'sound/f13weapons/WattzRifleFire.ogg'

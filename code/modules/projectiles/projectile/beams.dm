@@ -368,8 +368,8 @@
 
 /obj/item/projectile/beam/laser/gatling/betterhitscan //L30
 	name = "overcharged laser beam"
-	damage = 18
-	armour_penetration = 0.15
+	damage = 15
+	armour_penetration = 0.10
 	wound_bonus = 20
 	bare_wound_bonus = 5
 	hitscan = TRUE
