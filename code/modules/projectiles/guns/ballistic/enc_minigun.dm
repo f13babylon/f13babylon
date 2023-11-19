@@ -293,9 +293,9 @@
 	burst_size = 1
 	burst_shot_delay = 1
 	automatic = 1
-	autofire_shot_delay = 2.2
-	spread = 20
-	fire_delay = 1
+	autofire_shot_delay = 1
+	spread = 15
+	fire_delay = 1.8
 	weapon_weight = WEAPON_HEAVY
 	fire_sound = 'sound/f13weapons/WattzRifleFire.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/gatling/betterhitscan)
