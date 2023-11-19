@@ -220,3 +220,52 @@
 	. = ..()
 	if(!twohands)
 		return FALSE
+
+//FNV plasma caster
+//High damage, fast rate of fire,10rnd capacity
+//very heavy
+//deliberately OP
+/obj/item/gun/energy/laser/plasma/caster
+	name = "Plasma caster"
+	icon = 'icons/fallout/objects/guns/longguns.dmi'
+	item_state = "plasmacaster_fnv"
+	icon_state = "plasmacaster_fnv"
+	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
+
+	desc = "A model P94 plasma caster.An industrial-grade energy weapon, firing superheated bolts of plasma down a superconducting barrel.Some people call it a plasma rifle despite looking nothing like one."
+	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
+	ammo_type = list(/obj/item/ammo_casing/energy/plasma/caster)
+	cell_type = /obj/item/stock_parts/cell/ammo/mfc
+
+	slowdown = 1
+	w_class = WEIGHT_CLASS_BULKY
+	slot_flags = ITEM_SLOT_BACK
+	weapon_weight = WEAPON_LIGHT
+	fire_delay = 5 //yes, it is a fast weapon
+	var/twohands = FALSE
+
+/obj/item/gun/energy/laser/plasma/caster/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/two_handed, force_unwielded=20, force_wielded=40)
+	AddElement(/datum/element/update_icon_updates_onmob)
+	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, .proc/allow_fire)
+	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, .proc/deny_fire)
+
+
+/obj/item/gun/energy/laser/plasma/caster/proc/allow_fire()
+	twohands = TRUE
+
+/obj/item/gun/energy/laser/plasma/caster/proc/deny_fire()
+	twohands = FALSE
+
+
+/obj/item/gun/energy/laser/plasma/caster/Destroy()
+	UnregisterSignal(src, list(COMSIG_TWOHANDED_WIELD,
+								COMSIG_TWOHANDED_UNWIELD))
+	return ..()
+
+/obj/item/gun/energy/laser/plasma/caster/can_shoot()
+	. = ..()
+	if(!twohands)
+		return FALSE

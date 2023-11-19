@@ -499,7 +499,7 @@
 	wound_bonus = 45 //being hit with plasma is horrific
 	eyeblur = 0
 	is_reflectable = TRUE
-	pixels_per_second =  TILES_TO_PIXELS(14) //same as 40mm grenade
+	pixels_per_second =  TILES_TO_PIXELS(14)
 
 /obj/item/projectile/plasmacarbine //Plasma carbine
 	name = "plasma bolt"
@@ -665,6 +665,18 @@
 	name = "laser bolt"
 	damage = 40
 	armour_penetration = 0.6
+
+/obj/item/projectile/casterplasma //FNV plasma caster
+	name = "plasma bolt"
+	icon_state = "plasma_clot"
+	damage_type = BURN
+	damage = 26 //fucc you normies
+	armour_penetration = 0 //no AP, armor shouldnt have more than 20 resist against plasma unless its specialized
+	flag = "energy" //checks vs. energy protection
+	wound_bonus = 45 //being hit with plasma is horrific
+	eyeblur = 0
+	is_reflectable = TRUE
+	pixels_per_second =  TILES_TO_PIXELS(14) //same as 40mm grenade
 
 
 
