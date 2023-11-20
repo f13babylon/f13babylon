@@ -769,11 +769,11 @@
 /datum/job/enclave/encborg
 	title = "Synthetic"
 	flag = F13ENCCYBORG
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "Lieutenant and Science Officers"
-	minimal_player_age = 21
-	exp_requirements = 0
+	exp_type = EXP_TYPE_ENCLAVE
+	exp_requirements = 600
 
 /datum/job/enclave/encborg/equip(mob/living/carbon/human/H, visualsOnly = FALSE, announce = TRUE, latejoin = FALSE, datum/outfit/outfit_override = null, client/preference_source)
 	return H.Robotize(FALSE, latejoin)

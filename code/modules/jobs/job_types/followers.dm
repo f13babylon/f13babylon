@@ -377,8 +377,8 @@ Follower Volunteer
 	flag = F13FOLCYBORG
 	department_flag = FOLLOWERS
 	faction = "Followers"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "Administrator and Doctors, in that order"
 	exp_requirements = 0
 	description = "You are a Robotic unit assigned to this clinic. As a Robot for the Followers, you're bound to the orders of the Administrator and Doctors, in that order for priority. Should the Administrator declare something, you must follow it."
