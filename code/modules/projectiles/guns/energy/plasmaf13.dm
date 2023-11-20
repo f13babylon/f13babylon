@@ -247,7 +247,7 @@
 
 /obj/item/gun/energy/laser/plasma/caster/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded=20, force_wielded=40)
+	AddComponent(/datum/component/two_handed)
 	AddElement(/datum/element/update_icon_updates_onmob)
 	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, .proc/allow_fire)
 	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, .proc/deny_fire)
