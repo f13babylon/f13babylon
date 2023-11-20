@@ -131,7 +131,8 @@
 	supervisors = "The Captain, or the Supervisor (For IS!)."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavelt
 	req_admin_notify = 1
-	exp_requirements = 0
+	exp_type = EXP_TYPE_ENCLAVE
+	exp_requirements = 1440
 
 	loadout_options = list(
 		/datum/outfit/loadout/lt_is, // Special Plasma Pistol
@@ -202,7 +203,8 @@
 	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. Second in command after Lieutenant, your role is to direct their orders directly to the Sergeants and regular troops."
 	supervisors = "The Lieutenant."
 	outfit = /datum/outfit/job/enclave/peacekeeper/f13gysergeant
-	exp_requirements = 0
+	exp_type = EXP_TYPE_ENCLAVE
+	exp_requirements = 1020
 
 	loadout_options = list(
 		/datum/outfit/loadout/gysgt_ballistics, // Assault Carbine
@@ -268,7 +270,8 @@
 	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. Entrusted with the command of the squads assigned to the bunker, your job is to assist the Lieutenant alongside the scientists."
 	supervisors = "The Lieutenant and the Gunnery Sergeant."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavesgt
-	exp_requirements = 0
+	exp_type = EXP_TYPE_ENCLAVE
+	exp_requirements = 780
 
 	loadout_options = list(
 		/datum/outfit/loadout/sgt_ballistics,	// Minigun
@@ -337,7 +340,7 @@
 	title = "Enclave Armored Infantry"
 	flag = F13USCPL
 	total_positions = 0
-	spawn_positions = 1
+	spawn_positions = 0
 	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. Entrusted with the command of the squads assigned to the bunker, your job is to assist the Lieutenant alongside the scientists."
 	supervisors = "The Sergeants, Gunnery Sergeants, and Lieutenants."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavecpl
@@ -412,7 +415,8 @@
 	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. You are an operative for the remnants of the Enclave. You, unlike the normal Privates, have recieved specialist training in either engineering or medicine."
 	supervisors = "The Lieutenant and the Sergeants."
 	outfit = /datum/outfit/job/enclave/peacekeeper/f13specialist
-	exp_requirements = 0
+	exp_type = EXP_TYPE_ENCLAVE
+	exp_requirements = 780
 
 	loadout_options = list(
 		/datum/outfit/loadout/combatmedic, // MP5, Defib, medbooks
@@ -480,7 +484,7 @@
 	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. You are an enlisted member of the Enclave. Obey your Lieutenant. They set the Enclave's policies. Unfortunately, you've not yet received your PA training."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavespy
 	exp_type = EXP_TYPE_FALLOUT
-	exp_requirements = 0
+	exp_requirements = 600
 
 /datum/outfit/job/enclave/peacekeeper/enclavespy
 	name = "Enclave Marine"
@@ -521,7 +525,8 @@
 	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. You're responsible for the maintenance of the base and field studies, the knowledge you've accumulated over the years is the only thing keeping the remnants alive. You've dabbled in enough to be considered a Professor in your field of research, but they call you Doctor. Support your dwindling forces and listen to the Lieutenant."
 	supervisors = "Lieutenants, Captains and the Enclave Research & Development Division."
 	outfit = /datum/outfit/job/enclave/noncombat/enclavesci
-	exp_requirements = 0
+	exp_type = EXP_TYPE_FALLOUT
+	exp_requirements = 600
 	roleplay_exclusive_notify = 1
 	access = list(ACCESS_ENCLAVE, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
 
@@ -620,7 +625,8 @@
 	supervisors = "Everyone else."
 	outfit = /datum/outfit/job/enclave/noncombat/f13BDUTY
 	roleplay_exclusive_notify = 1
-	exp_requirements = 0
+	exp_type = EXP_TYPE_FALLOUT
+	exp_requirements = 600
 
 	loadout_options = list(
 		/datum/outfit/loadout/bunkerduty_pharma,

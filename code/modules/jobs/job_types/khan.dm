@@ -51,7 +51,8 @@
 	supervisors = "the Senior Enforcer"
 	selection_color = "#ff915e"
 	req_admin_notify = 1
-	exp_requirements = 750
+	exp_type = EXP_TYPE_KHAN
+	exp_requirements = 300
 	roleplay_exclusive_notify = 1
 	exp_type = EXP_TYPE_KHAN
 	outfit = /datum/outfit/job/khan/smith
@@ -69,7 +70,7 @@
 	description = "You are a Khan, atop being the senior of all within this camp. Maintain some manner of control and assure the Chemist doesn't blow their hands off."
 	supervisors = "the Senior Enforcer"
 	selection_color = "#ff915e"
-	exp_requirements = 0
+	exp_requirements = 840
 	exp_type = EXP_TYPE_KHAN
 	outfit = /datum/outfit/job/khan/senior_enforcer
 
@@ -107,7 +108,7 @@
 	supervisors = "the Senior Enforcer"
 	selection_color = "#ff915e"
 	req_admin_notify = 1
-	exp_requirements = 0
+	exp_requirements = 300
 	exp_type = EXP_TYPE_KHAN
 	outfit = /datum/outfit/job/khan/chemist
 

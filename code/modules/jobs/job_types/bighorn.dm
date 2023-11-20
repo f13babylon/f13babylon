@@ -39,7 +39,8 @@ Mayor
 	supervisors = "Yourself"
 	description = "You are the benevolent tyrant of La Verkin, chosen by the people to represent and lead them. Pass laws to protect your citizens, distribute town funds and make deals with the powers present within the Region to better the people, and yourself, of course."
 	selection_color = "#d7b088"
-	exp_requirements = 0
+	exp_type = EXP_TYPE_BIGHORN
+	exp_requirements = 1440
 	outfit = /datum/outfit/job/bighorn/f13mayor
 	access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_FORENSICS_LOCKERS, ACCESS_FUSION, ACCESS_TOWN)
 	minimal_access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_FORENSICS_LOCKERS, ACCESS_FUSION, ACCESS_TOWN)
@@ -81,7 +82,8 @@ Mayor
 	supervisors = "the mayor"
 	description = "As the chief law enforcer of the Town, your job is to keep the peace, settle local disputes, and keep your townsfolk safe and alive. Unfortunately, with the NCR and Legion closing in on the region, the Town is caught between a rock and a hard place, as with the war brings with it unsavory elements like the Khans and Outlaws. Sometimes the people you handle inside the town will be alive in cuffs, or dead on the street. Other times, they'll escape the limits of the town, to which you can put a bounty on their head for their capture, or have your deputies capture them. However, you must remember these three critical things: never leave the town undefended, keep the townsfolk alive and safe, and most importantly - keep your hand on your gun and don't you trust anyone."
 	selection_color = "#d7b088"
-	exp_requirements = 0
+	exp_type = EXP_TYPE_BIGHORN
+	exp_requirements = 1200
 	outfit = /datum/outfit/job/bighorn/f13sheriff
 	access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_FUSION, ACCESS_TOWN)
 	minimal_access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_FUSION, ACCESS_TOWN)
@@ -134,7 +136,8 @@ Mayor
 	supervisors = "the sheriff and the mayor"
 	description = "Working alongside the Sheriff you've known them for a while, having worked with them under the previous Sheriff - you bagged many a bandit and raider together on the road. These days you patrol the areas outside of town, tracking down bounties on the run and keeping the settlers safe from harm."
 	selection_color = "#dcba97"
-	exp_requirements = 0
+	exp_type = EXP_TYPE_BIGHORN
+	exp_requirements = 600
 	outfit = /datum/outfit/job/bighorn/f13deputy
 	access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_FUSION, ACCESS_TOWN)
 	minimal_access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_FUSION, ACCESS_TOWN)
@@ -182,6 +185,8 @@ Mayor
 	description = "As a proprietor of the Blue Oyster, you are responsible for ensuring both citizens and travellers in La Verkin can get some food, drink and rest. This town is usually run by the Great Khans, and the farm within their compound could provide fresh supplies for your business, so try negotiating with them if they are present."
 	enforces = "While you have dominion over your private business, your premium status as a citizen may be revoked if you are considered a danger to the populace or anger those in control of the town."
 	selection_color = "#dcba97"
+	exp_type = EXP_TYPE_BIGHORN
+	exp_requirements = 90
 
 	outfit = /datum/outfit/job/bighorn/f13barkeep
 
@@ -269,7 +274,8 @@ Mayor
 	description = "You are one of the many workers who live in the city of La Verkin. Working with the town council you have rented out a space in the shop for you to make your living."
 	enforces = "While you have dominion over your private business, your premium status as a citizen may be revoked if you are considered a danger to the populace or anger those in control of the town."
 	selection_color = "#dcba97"
-	exp_requirements = 0
+	exp_type = EXP_TYPE_BIGHORN
+	exp_requirements = 400
 
 	outfit = /datum/outfit/job/bighorn/f13shopkeeper
 	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_TOWN, ACCESS_SHOPKEEP)
@@ -375,6 +381,8 @@ Mayor
 	description = "You are a New Canaanite serving as a missionary to Bighorn, and a connection to other Mormons. While the town has no shortage of skepticism or biting remarks about Faith, you do what you can for the people of Bighorn, for God has love, even for the Gentiles. Sometimes this also means advocating on behalf of criminals, if the evidence against them is weak enough."
 	enforces = "Your premium status as a citizen may be revoked if you break the Five Laws too often or too severely. Khan justice is harsh, but typically also fair. However, your chapel is sacred ground, and you and your clergy have the right to protect it from bloodshed."
 	selection_color = "#dcba97"
+	exp_type = EXP_TYPE_BIGHORN
+	exp_requirements = 90
 
 	outfit = /datum/outfit/job/bighorn/f13preacher
 
@@ -670,7 +678,8 @@ Mayor
 	supervisors = "the mayor"
 	description = "Working alongside the Mayor, you've known them for a while. Your duties mainly consist of handling appointments and managing mundane tasks."
 	selection_color = "#dcba97"
-	exp_requirements = 0
+	exp_type = EXP_TYPE_BIGHORN
+	exp_requirements = 200
 	outfit = /datum/outfit/job/bighorn/f13secretary
 	access = list(ACCESS_BAR, ACCESS_FORENSICS_LOCKERS)
 	minimal_access = list(ACCESS_BAR, ACCESS_FORENSICS_LOCKERS)

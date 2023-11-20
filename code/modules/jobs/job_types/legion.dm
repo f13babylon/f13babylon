@@ -139,7 +139,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	roleplay_exclusive_notify = 1
-	exp_requirements = 0
+	exp_type = EXP_TYPE_LEGION
+	exp_requirements = 900
 
 	loadout_options = list(
 			/datum/outfit/loadout/oratorm,
@@ -219,7 +220,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	req_admin_notify = 1
 	display_order = JOB_DISPLAY_ORDER_CENTURION
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13centurion
-	exp_requirements = 600
+	exp_type = EXP_TYPE_LEGION
+	exp_requirements = 1440
 
 	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
@@ -318,7 +320,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	supervisors = "the Centurion"
 	display_order = JOB_DISPLAY_ORDER_DECANVET
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanvet
-	exp_requirements = 0
+	exp_type = EXP_TYPE_LEGION
+	exp_requirements = 900
 
 	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
@@ -416,7 +419,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
 	access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION,  ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
-	exp_requirements = 0
+	exp_type = EXP_TYPE_LEGION
+	exp_requirements = 780
 
 	loadout_options = list(	//ALL: Gladius, Smokebomb
 		/datum/outfit/loadout/decprimfront,	// .357 Revolver, Tower Shield, Throwing knives
@@ -496,14 +500,15 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	title = "Legion Recruit Decanus"
 	flag = F13DECANREC
 	total_positions = 2
-	spawn_positions = 1
+	spawn_positions = 2
 	description = "The junior officer, you must train the recruits and test them, and if a suicide charge is needed, lead them to a glorious death."
 	supervisors = "the Prime/Veteran Decanus and the Centurion"
 	display_order = JOB_DISPLAY_ORDER_DECANREC
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanrec
 	access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION,  ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
-	exp_requirements = 0
+	exp_type = EXP_TYPE_LEGION
+	exp_requirements = 540
 
 	loadout_options = list(
 		/datum/outfit/loadout/recdeclegion,	// Uzi, Lance, Smokebomb
@@ -583,7 +588,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13vexillarius
 	access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION,  ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
-	exp_requirements = 0
+	exp_type = EXP_TYPE_LEGION
+	exp_requirements = 1020
 
 	loadout_options = list(
 		/datum/outfit/loadout/vexbear,	//	Lever shotgun, Ripper
@@ -668,7 +674,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	supervisors = "the Veteran Decanus and Centurion must be obeyed, and as always, respect must be given to other Decanus. You are not a officer, but you are a specialist."
 	display_order = JOB_DISPLAY_ORDER_EXPLORER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
-	exp_requirements = 0
+	exp_type = EXP_TYPE_LEGION
+	exp_requirements = 300
 
 	loadout_options = list(
 		/datum/outfit/loadout/expambusher,	// lever-action shotgun, Machete
@@ -746,7 +753,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_VETLEGIONARY
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionnaire
-	exp_requirements = 0
+	exp_type = EXP_TYPE_LEGION
+	exp_requirements = 840
 
 	loadout_options = list(	//ALL: Gladius
 		/datum/outfit/loadout/vetaxe,	// Smoke nade, Axe, extra heal
@@ -834,11 +842,12 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	title = "Prime Legionnaire"
 	flag = F13LEGIONARY
 	total_positions = 3
-	spawn_positions = 4
+	spawn_positions = 3
 	description = "A front line soldier who has shown ability to obey and fought in some battles. The Legions muscle, the young men who will build the future with their own blood and sacrifice, for Caesar."
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_LEGIONARY
-	exp_requirements = 0
+	exp_type = EXP_TYPE_LEGION
+	exp_requirements = 180
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
 
 	loadout_options = list(	//ALL: Forged Machete
@@ -911,7 +920,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	title = "Recruit Legionnaire"
 	flag = F13RECRUITLEG
 	total_positions = 4
-	spawn_positions = 5
+	spawn_positions = 4
 	description = "You have recently been transfered or inducted into The Legion. You have minimal training, and are expected to follow every whim of the Decani and your Centurion. Respect every soldier of higher rank."
 	supervisors = "the Decani and Centurion."
 	display_order = JOB_DISPLAY_ORDER_RECRUITLEG
@@ -1078,7 +1087,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	title = "Legion Auxilia"
 	flag = F13AUXILIA
 	total_positions = 2
-	spawn_positions = 3
+	spawn_positions = 2
 	description = "A non-combat position in the Legion for free citizens who perform tasks that need special training, such as surgery. They are loyal to the Legion even if they are not treated as equals to warriors."
 	supervisors = "the Centurion"
 	display_order = JOB_DISPLAY_ORDER_AUXILIA
@@ -1182,7 +1191,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	title = "Legion Slave"
 	flag = F13LEGIONSLAVE
 	total_positions = 2
-	spawn_positions = 3
+	spawn_positions = 2
 	description = "A slave that survives the breaking camps is given a Legion appropriate name (latin-tribal inspired) and bull tattoo. Be obedient, respectful, stay inside the camp. Work the farm, mine, make food, clean and help injured men. Do NOT escape on your own, up to you how to handle it if forcibly freed by outside forces."
 	supervisors = "Officers and Slavemaster first, then Auxilia, then warriors."
 	display_order = JOB_DISPLAY_ORDER_LEGIONSLAVE
