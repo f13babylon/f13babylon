@@ -77,7 +77,7 @@
 	accessory = /obj/item/clothing/accessory/enclave/captain
 	id = /obj/item/card/id/dogtag/enclave/officer
 	ears = /obj/item/radio/headset/headset_enclave/command
-	// l_pocket = /obj/item/clothing/mask/chameleon
+	l_pocket = /obj/item/clothing/mask/chameleon
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 3,
@@ -151,7 +151,7 @@
 	accessory = /obj/item/clothing/accessory/enclave/second_lieutenant
 	id = /obj/item/card/id/dogtag/enclave/officer
 	ears = /obj/item/radio/headset/headset_enclave/command
-	// l_pocket = /obj/item/clothing/mask/chameleon
+	l_pocket = /obj/item/clothing/mask/chameleon
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 3,
@@ -222,7 +222,7 @@
 	suit = /obj/item/clothing/suit/armor/f13/enclave/marine
 	accessory = /obj/item/clothing/accessory/enclave/sergeant_firstclass
 	ears = /obj/item/radio/headset/headset_enclave/command
-	// l_pocket = /obj/item/clothing/mask/chameleon
+	l_pocket = /obj/item/clothing/mask/chameleon
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
@@ -289,7 +289,7 @@
 	head = /obj/item/clothing/head/helmet/f13/power_armor/x02helmet
 	suit = /obj/item/clothing/suit/armor/f13/power_armor/x02
 	accessory = /obj/item/clothing/accessory/enclave/sergeant
-	// l_pocket = /obj/item/clothing/mask/chameleon
+	l_pocket = /obj/item/clothing/mask/chameleon
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
@@ -355,7 +355,7 @@
 	head = /obj/item/clothing/head/helmet/f13/power_armor/x02helmet
 	suit = /obj/item/clothing/suit/armor/f13/power_armor/x02
 	accessory = /obj/item/clothing/accessory/enclave/corporal
-	// l_pocket = /obj/item/clothing/mask/chameleon
+	l_pocket = /obj/item/clothing/mask/chameleon
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
