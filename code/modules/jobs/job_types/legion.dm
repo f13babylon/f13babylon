@@ -351,6 +351,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	mask = /obj/item/clothing/mask/bandana/legion/legdecan
 	neck = /obj/item/storage/belt/holster
 	gloves = /obj/item/clothing/gloves/legion/plated
+	glasses = /obj/item/clothing/glasses/legiongoggles
 	ears = /obj/item/radio/headset/headset_legion/cent
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	shoes = /obj/item/clothing/shoes/f13/military/plated
