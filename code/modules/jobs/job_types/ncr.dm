@@ -278,7 +278,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "Frontliner"
 	suit_store = /obj/item/gun/ballistic/automatic/shotgun/riot
 	backpack_contents = list(
-		/obj/item/ammo_box/shotgun/incendiary = 1,
+		/obj/item/ammo_box/shotgun/buck = 2,
 		)
 
 /datum/outfit/job/ncr/f13lieutenant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
