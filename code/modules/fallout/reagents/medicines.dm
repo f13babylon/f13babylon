@@ -53,20 +53,20 @@
 					if (WOUND_SEVERITY_CRITICAL)
 						if (iter_wound.wound_type == WOUND_PIERCE)
 							iter_wound.blood_flow -= clot_rate
-							M.visible_message("<span class='notice'>The bleeding hole in [M]'s [affected_limb_name] fills with fresh tissue!</span>" \
+							M.visible_message("<span class='notice'>The bleeding hole in [M]'s [affected_limb_name] fills with fresh tissue!</span>", \
 											  "<span class='notice'>You feel the cavity in your [affected_limb_name] weaving back together.</span>")
 						else if (iter_wound.wound_type == WOUND_SLASH)
 							iter_wound.blood_flow -= clot_rate
-							M.visible_message("<span class='notice'>The deep gashes on [M]'s [affected_limb_name] close up!</span>" \
+							M.visible_message("<span class='notice'>The deep gashes on [M]'s [affected_limb_name] close up!</span>", \
 											  "<span class='notice'>You feel the deep gashes on your [affected_limb_name] close up.</span>")
 					if (WOUND_SEVERITY_SEVERE)
 						if (iter_wound.wound_type == WOUND_PIERCE)
 							iter_wound.blood_flow -= clot_rate
-							M.visible_message("<span class='notice'>The puncture wound on [M]'s [affected_limb_name] shrinks!</span>" \
+							M.visible_message("<span class='notice'>The puncture wound on [M]'s [affected_limb_name] shrinks!</span>", \
 											  "<span class='notice'>You feel the puncture wound on your [affected_limb_name] shrinking.</span>")
 						else if (iter_wound.wound_type == WOUND_SLASH)
 							iter_wound.blood_flow -= clot_rate
-							M.visible_message("<span class='notice'>The large cuts on [M]'s [affected_limb_name] mend!</span>" \
+							M.visible_message("<span class='notice'>The large cuts on [M]'s [affected_limb_name] mend!</span>", \
 											  "<span class='notice'>You feel the large cuts on your [affected_limb_name] mending.</span>")
 					if (WOUND_SEVERITY_MODERATE)
 						if (iter_wound.wound_type == WOUND_PIERCE || iter_wound.wound_type == WOUND_SLASH)
@@ -860,29 +860,37 @@
 				if (WOUND_SEVERITY_CRITICAL)
 					if (iter_wound.wound_type == WOUND_BLUNT)
 						iter_wound.replace_wound(/datum/wound/blunt/severe)
-						M.visible_message("<span class='notice'>The exposed bones on [M]'s [affected_limb_name] snap back together!</span>", "<span class='notice'>You feel the fractured bones in your [affected_limb_name] snap back together.</span>")
+						M.visible_message("<span class='notice'>The exposed bones on [M]'s [affected_limb_name] snap back together!</span>", \
+										  "<span class='notice'>You feel the fractured bones in your [affected_limb_name] snap back together.</span>")
 					else if (iter_wound.wound_type == WOUND_BURN)
 						iter_wound.replace_wound(/datum/wound/burn/severe)
-						M.visible_message("<span class='notice'>The charred tissue on [M]'s [affected_limb_name] bubbles before regenerating!</span>", "<span class='notice'>You feel the catastrophic burns on your [affected_limb_name] rapidly regenerate.</span>")
+						M.visible_message("<span class='notice'>The charred tissue on [M]'s [affected_limb_name] bubbles before regenerating!</span>", \
+										  "<span class='notice'>You feel the catastrophic burns on your [affected_limb_name] rapidly regenerate.</span>")
 					else if (iter_wound.wound_type == WOUND_PIERCE)
 						iter_wound.blood_flow -= clot_rate
-						M.visible_message("<span class='notice'>The bleeding hole in [M]'s [affected_limb_name] rapidly fills with fresh tissue!</span>", "<span class='notice'>You feel the cavity in your [affected_limb_name] rapidly weaving back together.</span>")
+						M.visible_message("<span class='notice'>The bleeding hole in [M]'s [affected_limb_name] rapidly fills with fresh tissue!</span>", \
+										  "<span class='notice'>You feel the cavity in your [affected_limb_name] rapidly weaving back together.</span>")
 					else
 						iter_wound.blood_flow -= clot_rate
-						M.visible_message("<span class='notice'>The deep gashes on [M]'s [affected_limb_name] rapidly close up!</span>", "<span class='notice'>You feel the deep gashes on your [affected_limb_name] rapidly close up.</span>")
+						M.visible_message("<span class='notice'>The deep gashes on [M]'s [affected_limb_name] rapidly close up!</span>", \
+										  "<span class='notice'>You feel the deep gashes on your [affected_limb_name] rapidly close up.</span>")
 				if (WOUND_SEVERITY_SEVERE)
 					if (iter_wound.wound_type == WOUND_BLUNT)
 						iter_wound.replace_wound(/datum/wound/blunt/moderate)
-						M.visible_message("<span class='notice'>The broken bones on [M]'s [affected_limb_name] fuse together!</span>", "<span class='notice'>You feel the broken bones on your [affected_limb_name] fuse together</span>")
+						M.visible_message("<span class='notice'>The broken bones on [M]'s [affected_limb_name] fuse together!</span>", \
+										  "<span class='notice'>You feel the broken bones on your [affected_limb_name] fuse together</span>")
 					else if (iter_wound.wound_type == WOUND_BURN)
 						iter_wound.replace_wound(/datum/wound/burn/moderate)
-						M.visible_message("<span class='notice'>The burns on [M]'s [affected_limb_name] scar over!</span>", "<span class='notice'>You feel the burns on your [affected_limb_name] scar over.</span>")
+						M.visible_message("<span class='notice'>The burns on [M]'s [affected_limb_name] scar over!</span>", \
+										  "<span class='notice'>You feel the burns on your [affected_limb_name] scar over.</span>")
 					else if (iter_wound.wound_type == WOUND_PIERCE)
 						iter_wound.blood_flow -= clot_rate
-						M.visible_message("<span class='notice'>The puncture wound on [M]'s [affected_limb_name] quickly shrinks!</span>", "<span class='notice'>You feel the puncture wound on your [affected_limb_name] quickly shrinking.</span>")
+						M.visible_message("<span class='notice'>The puncture wound on [M]'s [affected_limb_name] quickly shrinks!</span>", \
+										  "<span class='notice'>You feel the puncture wound on your [affected_limb_name] quickly shrinking.</span>")
 					else
 						iter_wound.blood_flow -= clot_rate
-						M.visible_message("<span class='notice'>The large cuts on [M]'s [affected_limb_name] quickly mend!</span>", "<span class='notice'>You feel the large cuts on your [affected_limb_name] quickly mending.</span>")
+						M.visible_message("<span class='notice'>The large cuts on [M]'s [affected_limb_name] quickly mend!</span>", \
+										  "<span class='notice'>You feel the large cuts on your [affected_limb_name] quickly mending.</span>")
 				if (WOUND_SEVERITY_MODERATE)
 					if (iter_wound.wound_type == WOUND_BLUNT)
 						iter_wound.remove_wound()
