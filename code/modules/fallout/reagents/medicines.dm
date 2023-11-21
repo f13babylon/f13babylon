@@ -308,7 +308,7 @@
 	..()
 
 /datum/reagent/medicine/bitterdrink/overdose_process(mob/living/carbon/M)
-	M.adjustToxLoss((damage_offset * 0.66 * 2.5 + (damage_offset * 0.66)) * EAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of tox damage_offset + base tox damage_offset
+	M.adjustToxLoss((damage_offset * 0.66 * 2.5 + (damage_offset * 0.66)) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of tox damage_offset + base tox damage_offset
 	M.adjustOxyLoss((damage_offset * 0.66 * 2.5 + (damage_offset * 0.66)) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy damage_offset + base oxy damage_offset
 	M.hallucination = max(M.hallucination, 18)
 	M.set_dizziness(max(M.dizziness, 18))
@@ -330,7 +330,7 @@
 	overdose_threshold = 31
 	value = REAGENT_VALUE_COMMON
 	ghoulfriendly = TRUE
-	reagent_blacklist = list(/datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak/superimitation ,/datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
+	var/reagent_blacklist = list(/datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak/superimitation ,/datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
 	var/damage_offset = 0
 	var/is_on_tribal = FALSE
 
