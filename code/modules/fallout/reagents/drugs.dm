@@ -210,16 +210,16 @@
 				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "used drugs", /datum/mood_event/used_drugs, name)
 			if(FACTION_LEGION)
 				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
-	ADD_TRAIT(L, TRAIT_SLEEPIMMUNE, "[type]")
-		rage = new()
-		M.gain_trauma(rage, TRAUMA_RESILIENCE_ABSOLUTE)
+	ADD_TRAIT(M, TRAIT_SLEEPIMMUNE, "[type]")
+	rage = new()
+	M.gain_trauma(rage, TRAUMA_RESILIENCE_ABSOLUTE)
 	if(HAS_TRAIT(M, TRAIT_STRAIGHT_EDGE))
 		affecting_straight_edge_mob = TRUE
 		to_chat(M, "<span class='userdanger'>You feel sick from the chems in your body!</span>")
 	..()
 
 /datum/reagent/drug/psycho/on_mob_delete(mob/living/carbon/M)
-	REMOVE_TRAIT(L, TRAIT_SLEEPIMMUNE, "[type]")
+	REMOVE_TRAIT(M, TRAIT_SLEEPIMMUNE, "[type]")
 	if(rage)
 		QDEL_NULL(rage)
 	..()
@@ -354,10 +354,8 @@
 	..()
 
 /datum/reagent/drug/buffout/overdose_process(mob/living/carbon/M)
-	if(iscarbon(M))
-		var/mob/living/carbon/C = M
-		rage = new()
-		C.gain_trauma(rage, TRAUMA_RESILIENCE_ABSOLUTE)
+	rage = new()
+	M.gain_trauma(rage, TRAUMA_RESILIENCE_ABSOLUTE)
 	var/datum/disease/D = new /datum/disease/heart_failure
 	M.ForceContractDisease(D)
 	if(prob(33))
