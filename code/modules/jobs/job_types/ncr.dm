@@ -194,7 +194,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 3,
 		/obj/item/lighter = 1,
 		/obj/item/reagent_containers/food/snacks/grown/tobacco/dried = 1,
-		/obj/item/stack/crafting/armor_plate = 5,
 		/obj/item/clothing/suit/armor/f13/ncrarmor/captain = 1,
 		/obj/item/storage/box/ration/menu_eight = 1,
 		)
@@ -264,7 +263,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 3,
 		/obj/item/grenade/syndieminibomb/concussion = 1,
-		/obj/item/stack/crafting/armor_plate = 5
 		)
 
 /datum/outfit/loadout/ncrltsniper
@@ -346,7 +344,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/gun/ballistic/automatic/pistol/m1911 = 1,
 		/obj/item/ammo_box/magazine/m45 = 3,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 1,
-		/obj/item/stack/crafting/armor_plate = 5,
 		/obj/item/clothing/accessory/ncr/SSGT = 1
 		)
 
@@ -432,8 +429,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/melee/onehanded/knife/bayonet = 1,
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/melee/classic_baton/telescopic = 1,
-		/obj/item/storage/box/ration/menu_two = 1,
-		/obj/item/stack/crafting/armor_plate = 5
+		/obj/item/storage/box/ration/menu_two = 1
 		)
 
 /datum/outfit/loadout/seatechnical
@@ -690,8 +686,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/clothing/mask/gas/ranger = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
-		/obj/item/grenade/smokebomb = 1,
-		/obj/item/stack/crafting/armor_plate = 5
+		/obj/item/grenade/smokebomb = 1
 		)
 
 /datum/outfit/loadout/rangerrecon
@@ -886,8 +881,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/shovel/trench = 1,
 		/obj/item/storage/bag/money/small/ncrenlisted = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
-		/obj/item/grenade/f13/frag = 1,
-		/obj/item/stack/crafting/armor_plate = 5
+		/obj/item/grenade/f13/frag = 1
 		)
 
 /datum/outfit/loadout/combatengineersapper
@@ -949,8 +943,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/ammo_box/magazine/m45 = 3,
 		/obj/item/storage/bag/money/small/ncrenlisted = 1,
 		/obj/item/ammo_box/shotgun/bean = 2,
-		/obj/item/melee/classic_baton/militarypolice = 1,
-		/obj/item/stack/crafting/armor_plate = 4,
+		/obj/item/melee/classic_baton/militarypolice = 1
 		)
 
 /datum/outfit/job/ncr/f13mp/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -1003,8 +996,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/storage/survivalkit_aid_adv = 1,
 		/obj/item/storage/bag/money/small/ncrenlisted = 1,
 		/obj/item/storage/firstaid/regular = 1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
-		/obj/item/stack/crafting/armor_plate = 4,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1
 		)
 
 /datum/outfit/loadout/ncrdocsmg
@@ -1076,7 +1068,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bayonet = 1,
 		/obj/item/storage/bag/money/small/ncrenlisted = 1,
-		/obj/item/stack/crafting/armor_plate = 5,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		/obj/item/grenade/f13/frag = 2,
 		/obj/item/storage/box/ration/menu_two = 1,
@@ -1143,7 +1134,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	glasses	= null
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/ncrenlisted = 1,
-		/obj/item/stack/crafting/armor_plate = 4,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		/obj/item/grenade/f13/frag = 1,
 		/obj/item/storage/box/ration/menu_eight = 1,
@@ -1287,7 +1277,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/storage/survivalkit_aid_adv = 1,
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/storage/firstaid/regular = 1,
-		/obj/item/stack/crafting/armor_plate = 5,
 		)
 
 /datum/outfit/job/ncr/f13medicalofficer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
