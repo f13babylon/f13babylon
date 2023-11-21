@@ -5224,10 +5224,10 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/structure/closet,
 /obj/structure/sign/poster/official/help_others{
 	pixel_x = 32
 	},
-/obj/structure/closet,
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
 	},
@@ -7255,12 +7255,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/tunnel/bighorn)
-"eej" = (
-/obj/machinery/chem_dispenser/mutagensaltpeter,
-/turf/open/floor/f13{
-	icon_state = "bluerustysolid"
-	},
-/area/f13/followers)
 "eek" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gibbear1"
@@ -8251,6 +8245,11 @@
 	},
 /turf/open/floor/wood/wood_common,
 /area/f13/tunnel/bighorn)
+"fEc" = (
+/obj/machinery/workbench,
+/obj/item/book/granter/crafting_recipe/scav,
+/turf/open/floor/plasteel/f13/vault_floor/yellow,
+/area/f13/tunnel)
 "fEQ" = (
 /obj/structure/barricade/wooden,
 /obj/effect/decal/cleanable/dirt,
@@ -8781,10 +8780,10 @@
 /obj/item/circuitboard/machine/cell_charger,
 /obj/item/circuitboard/machine/cell_charger,
 /obj/item/circuitboard/machine/bloodbankgen,
+/obj/item/circuitboard/machine/medipen_refiller,
 /obj/structure/window/reinforced/spawner{
 	dir = 4
 	},
-/obj/item/circuitboard/machine/medipen_refiller,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
@@ -8940,7 +8939,6 @@
 	dir = 8;
 	light_color = "#d8b1b1"
 	},
-/obj/item/modkit/trenchcoatfollowers,
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/followers)
 "gOh" = (
@@ -11343,6 +11341,10 @@
 	name = "reactor cooling pool"
 	},
 /area/f13/building/massfusion)
+"kqA" = (
+/obj/item/book/granter/crafting_recipe/scav,
+/turf/closed/indestructible/rock,
+/area/f13/caves)
 "krv" = (
 /obj/structure/table/reinforced,
 /obj/machinery/computer/terminal{
@@ -13059,6 +13061,7 @@
 /area/f13/tunnel)
 "mJb" = (
 /obj/machinery/workbench,
+/obj/item/book/granter/crafting_recipe/scav,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkdirtysolid"
 	},
@@ -13803,7 +13806,6 @@
 /area/f13/tunnel)
 "nZP" = (
 /obj/machinery/rnd/destructive_analyzer,
-/obj/item/stack/sheet/mineral/abductor/ten,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
@@ -14370,10 +14372,6 @@
 	},
 /turf/open/floor/wood/wood_common,
 /area/f13/tunnel/bighorn)
-"oNn" = (
-/obj/item/stack/sheet/mineral/abductor/ten,
-/turf/closed/mineral/random/high_chance,
-/area/f13/caves)
 "oNF" = (
 /obj/structure/table,
 /obj/item/restraints/handcuffs,
@@ -15417,6 +15415,10 @@
 	dir = 1
 	},
 /area/f13/brotherhood)
+"qgP" = (
+/obj/item/book/granter/crafting_recipe/scav,
+/turf/closed/mineral/random/low_chance,
+/area/f13/caves)
 "qhp" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 6
@@ -15775,7 +15777,6 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 8
 	},
-/obj/item/storage/box/stockparts/deluxe,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
@@ -36737,7 +36738,7 @@ aae
 aaa
 aaa
 aaa
-aae
+qgP
 aae
 aae
 boU
@@ -36994,7 +36995,7 @@ aae
 aae
 aae
 aaa
-aaa
+kqA
 aaa
 aae
 aae
@@ -37175,9 +37176,9 @@ yjR
 yjR
 yjR
 rpT
-vPG
-lnb
 oli
+lnb
+vPG
 yjR
 wZj
 wZj
@@ -37532,7 +37533,7 @@ aae
 aae
 aae
 bFx
-bHt
+fEc
 ceQ
 ceQ
 bFx
@@ -37690,7 +37691,7 @@ hAI
 yjR
 dAL
 txF
-eej
+txF
 oDj
 yjR
 gpd
@@ -38203,7 +38204,7 @@ ltk
 gLh
 yjR
 rpT
-vPG
+oli
 lnb
 txF
 yjR
@@ -43576,7 +43577,7 @@ aae
 aae
 aae
 aae
-oNn
+aak
 aak
 aae
 aae

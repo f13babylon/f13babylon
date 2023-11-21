@@ -233,7 +233,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 		/obj/item/melee/smith/hammer = 1,
 		/obj/item/stack/sheet/mineral/sandstone = 50,
 		/obj/item/book/granter/trait/techno = 1,
-		/obj/item/book/granter/crafting_recipe/scav_one = 1,
+		/obj/item/book/granter/crafting_recipe/scav = 1,
 		)
 
 /*

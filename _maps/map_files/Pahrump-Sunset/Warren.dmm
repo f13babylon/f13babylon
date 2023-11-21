@@ -828,6 +828,22 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/city)
+"aLn" = (
+/obj/structure/table/reinforced,
+/obj/structure/barricade/bars{
+	max_integrity = 800;
+	name = "strong metal bars";
+	obj_integrity = 800
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "ncrwatchtower";
+	name = "watchtower shutters"
+	},
+/obj/structure/decoration/rag{
+	icon_state = "skin"
+	},
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/ncr)
 "aLV" = (
 /obj/structure/chair/stool{
 	dir = 1;
@@ -922,7 +938,6 @@
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 4
 	},
-/obj/machinery/vending/hydroseeds,
 /turf/open/indestructible/ground/outside/savannah/cornersnew{
 	dir = 1
 	},
@@ -1833,6 +1848,15 @@
 /mob/living/simple_animal/hostile/wolf/playable,
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/wasteland/warren)
+"bGz" = (
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/turf/open/floor/plasteel/f13/vault_floor/red/white/whiteredchess/whiteredchess2,
+/area/f13/ncr)
 "bGY" = (
 /obj/structure/flora/tree/tall{
 	icon_state = "tree_2"
@@ -3956,24 +3980,6 @@
 /obj/structure/fermenting_barrel,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/caves)
-"dDr" = (
-/obj/structure/decoration/rag{
-	icon_state = "skin"
-	},
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "ncrwatchtower";
-	name = "watchtower shutters"
-	},
-/obj/structure/barricade/bars{
-	max_integrity = 800;
-	name = "strong metal bars";
-	obj_integrity = 800
-	},
-/obj/structure/table/reinforced,
-/turf/open/floor/f13{
-	icon_state = "darkdirtysolid"
-	},
-/area/f13/ncr)
 "dDA" = (
 /obj/structure/simple_door/metal/store,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
@@ -4652,7 +4658,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/ncr)
 "esx" = (
-/obj/structure/junk/jukebox,
+/obj/machinery/vending/cigarette,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
@@ -4886,7 +4892,6 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/machinery/bloodbankgen,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/ncr)
 "eFL" = (
@@ -5292,7 +5297,7 @@
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/wasteland/warren)
 "eYO" = (
-/obj/machinery/chem_master/advanced,
+/obj/machinery/chem_master,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/ncr)
 "eZK" = (
@@ -7007,13 +7012,6 @@
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/wasteland/warren)
-"gyK" = (
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 4
-	},
-/obj/machinery/vending/hydronutrients,
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/ncr)
 "gyW" = (
 /obj/structure/simple_door/dirtyglass,
 /turf/open/floor/plasteel/f13{
@@ -11719,6 +11717,10 @@
 	},
 /turf/open/floor/wood/wood_common,
 /area/f13/city)
+"lcV" = (
+/obj/machinery/processor,
+/turf/open/floor/plasteel/f13/vault_floor/red/white/whiteredchess/whiteredchess2,
+/area/f13/ncr)
 "lcZ" = (
 /turf/closed/wall/r_wall/rust,
 /area/f13/city)
@@ -15300,7 +15302,6 @@
 "oBi" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
-/obj/item/reagent_containers/food/condiment/enzyme,
 /turf/open/floor/plasteel/f13/vault_floor/red/white/whiteredchess/whiteredchess2,
 /area/f13/ncr)
 "oBs" = (
@@ -16596,6 +16597,7 @@
 "pPZ" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier3,
+/obj/item/book/granter/crafting_recipe/scav,
 /turf/open/floor/f13{
 	icon_state = "dark"
 	},
@@ -18863,7 +18865,6 @@
 	dir = 4;
 	light_color = "red"
 	},
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia,
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/ncr)
 "rNY" = (
@@ -20503,12 +20504,7 @@
 /area/f13/wasteland/warren)
 "twj" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/table,
-/obj/effect/spawner/lootdrop/f13/foodspawner,
-/obj/effect/spawner/lootdrop/f13/foodspawner,
-/obj/effect/spawner/lootdrop/f13/foodspawner,
-/obj/effect/spawner/lootdrop/f13/foodspawner,
-/obj/effect/spawner/lootdrop/f13/foodspawner,
+/obj/machinery/vending/wardrobe/chef_wardrobe,
 /turf/open/floor/plasteel/f13/vault_floor/red/white/whiteredchess/whiteredchess2,
 /area/f13/ncr)
 "tws" = (
@@ -21775,7 +21771,12 @@
 	},
 /area/f13/ncr)
 "uxw" = (
-/obj/machinery/smartfridge,
+/obj/structure/closet/secure_closet/freezer/kitchen,
+/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/reagent_containers/food/condiment/enzyme,
 /turf/open/floor/plasteel/f13/vault_floor/red/white/whiteredchess/whiteredchess2,
 /area/f13/ncr)
 "uxI" = (
@@ -25727,24 +25728,6 @@
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/wasteland/ncr)
-"xTv" = (
-/obj/structure/barricade/bars{
-	max_integrity = 800;
-	name = "strong metal bars";
-	obj_integrity = 800
-	},
-/obj/structure/decoration/rag{
-	icon_state = "skin"
-	},
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "ncrwatchtower";
-	name = "watchtower shutters"
-	},
-/obj/structure/table/reinforced,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticaloutermain0"
-	},
-/area/f13/ncr)
 "xTB" = (
 /obj/structure/junk/jukebox,
 /turf/open/floor/wood/wood_common,
@@ -48976,13 +48959,13 @@ hgd
 xAc
 xAc
 xAc
-dDr
+ghE
 xTH
 xTH
 xTH
 xTH
 xTH
-xTv
+ghE
 hgd
 bYc
 jXh
@@ -49234,11 +49217,11 @@ xAc
 xAc
 ghE
 uDV
-cJK
+aLn
 cJK
 llp
 cJK
-cJK
+aLn
 uDV
 hgd
 bYc
@@ -57454,7 +57437,7 @@ gWW
 vJC
 kht
 kXD
-oVA
+tRt
 qRa
 nRO
 nKA
@@ -57965,10 +57948,10 @@ aQW
 bJX
 kHs
 gWW
-tRt
+vbo
 kXD
 kht
-oVA
+bGz
 qRa
 nRO
 efS
@@ -58222,7 +58205,7 @@ xzG
 mwR
 qto
 gWW
-vbo
+lcV
 kht
 kIn
 gWW
@@ -58733,7 +58716,7 @@ osv
 gnU
 iHg
 dwA
-gyK
+dsL
 qto
 gWW
 iOM
