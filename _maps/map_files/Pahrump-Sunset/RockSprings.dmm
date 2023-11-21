@@ -10390,6 +10390,7 @@
 /area/f13/wasteland/rocksprings)
 "kxp" = (
 /obj/machinery/workbench,
+/obj/item/book/granter/crafting_recipe/scav,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/building)
 "kxD" = (
@@ -15105,6 +15106,7 @@
 	dir = 1
 	},
 /obj/machinery/autolathe/constructionlathe,
+/obj/item/book/granter/crafting_recipe/scav,
 /turf/open/floor/plasteel/f13{
 	icon_state = "greenrustychess"
 	},

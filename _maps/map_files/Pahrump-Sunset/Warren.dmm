@@ -16597,6 +16597,7 @@
 "pPZ" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier3,
+/obj/item/book/granter/crafting_recipe/scav,
 /turf/open/floor/f13{
 	icon_state = "dark"
 	},

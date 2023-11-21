@@ -8245,6 +8245,11 @@
 	},
 /turf/open/floor/wood/wood_common,
 /area/f13/tunnel/bighorn)
+"fEc" = (
+/obj/machinery/workbench,
+/obj/item/book/granter/crafting_recipe/scav,
+/turf/open/floor/plasteel/f13/vault_floor/yellow,
+/area/f13/tunnel)
 "fEQ" = (
 /obj/structure/barricade/wooden,
 /obj/effect/decal/cleanable/dirt,
@@ -11336,6 +11341,10 @@
 	name = "reactor cooling pool"
 	},
 /area/f13/building/massfusion)
+"kqA" = (
+/obj/item/book/granter/crafting_recipe/scav,
+/turf/closed/indestructible/rock,
+/area/f13/caves)
 "krv" = (
 /obj/structure/table/reinforced,
 /obj/machinery/computer/terminal{
@@ -13052,6 +13061,7 @@
 /area/f13/tunnel)
 "mJb" = (
 /obj/machinery/workbench,
+/obj/item/book/granter/crafting_recipe/scav,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkdirtysolid"
 	},
@@ -15405,6 +15415,10 @@
 	dir = 1
 	},
 /area/f13/brotherhood)
+"qgP" = (
+/obj/item/book/granter/crafting_recipe/scav,
+/turf/closed/mineral/random/low_chance,
+/area/f13/caves)
 "qhp" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 6
@@ -36724,7 +36738,7 @@ aae
 aaa
 aaa
 aaa
-aae
+qgP
 aae
 aae
 boU
@@ -36981,7 +36995,7 @@ aae
 aae
 aae
 aaa
-aaa
+kqA
 aaa
 aae
 aae
@@ -37519,7 +37533,7 @@ aae
 aae
 aae
 bFx
-bHt
+fEc
 ceQ
 ceQ
 bFx
