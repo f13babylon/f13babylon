@@ -101,7 +101,6 @@
 	var/list/ncr = list()
 	var/list/vault = list()
 	var/list/flw = list()
-	var/list/tribe = list()
 	var/list/was = list()
 	var/list/misc = list()
 	var/list/tri = list()
@@ -205,20 +204,25 @@
 		for(var/name in flw)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[flw[name]]</td></tr>"
 			even = !even
-	if(length(tribe))
-		dat += "<tr><th colspan=3>Wayfarer Tribe</th></tr>"
-		for(var/name in tribe)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[tribe[name]]</td></tr>"
+	if(length(tri))
+		dat += "<tr><th colspan=3>Tribals</th></tr>"
+		for(var/name in tri)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[tri[name]]</td></tr>"
 			even = !even
-	if(length(vault))
-		dat += "<tr><th colspan=3>Vault</th></tr>"
-		for(var/name in vault)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[vault[name]]</td></tr>"
+	if(length(out))
+		dat += "<tr><th colspan=3>Outlaws</th></tr>"
+		for(var/name in out)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[out[name]]</td></tr>"
 			even = !even
 	if(length(was))
 		dat += "<tr><th colspan=3>Wasteland</th></tr>"
 		for(var/name in was)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[was[name]]</td></tr>"
+			even = !even
+	if(length(vault))
+		dat += "<tr><th colspan=3>Vault</th></tr>"
+		for(var/name in vault)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[vault[name]]</td></tr>"
 			even = !even
 	// misc guys
 	if(length(misc))
