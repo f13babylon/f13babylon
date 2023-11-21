@@ -5,9 +5,9 @@
 	overdose_threshold = 20
 	addiction_threshold = 12.5
 	ghoulfriendly = TRUE
-	var/affecting_intolerant_mob = FALSE
+	var/affecting_straight_edge_mob = FALSE
 
-/datum/reagent/drug/jet/on_mob_add(mob/living/carbon/human/M)
+/datum/reagent/drug/jet/on_mob_add(mob/living/carbon/M)
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>You feel an incredible high! You just absolutely love life in this moment!</span>")
 	var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
@@ -23,7 +23,7 @@
 		to_chat(M, "<span class='userdanger'>You feel sick from the chems in your body!</span>")
 	..()
 
-/datum/reagent/drug/jet/on_mob_delete(mob/living/carbon/human/M)
+/datum/reagent/drug/jet/on_mob_delete(mob/living/carbon/M)
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>You come down from your high. The wild ride is unfortunately over...</span>")
 		M.confused += 2
@@ -46,23 +46,23 @@
 	. = TRUE
 	..()
 
-/datum/reagent/drug/jet/overdose_start(mob/living/M)
+/datum/reagent/drug/jet/overdose_start(mob/living/carbon/M)
 	to_chat(M, "<span class='userdanger'>You start tripping hard!</span>")
 	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "[type]_overdose", /datum/mood_event/overdose, name)
 
-/datum/reagent/drug/jet/overdose_process(mob/living/M)
+/datum/reagent/drug/jet/overdose_process(mob/living/carbon/M)
 	if(M.hallucination < volume && prob(20))
 		M.hallucination += 10
 		M.adjustToxLoss(10, updating_health = FALSE)
 		M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 60)
 	..()
 
-/datum/reagent/drug/jet/addiction_act_stage1(mob/living/M)
+/datum/reagent/drug/jet/addiction_act_stage1(mob/living/carbon/M)
 	if(prob(20))
 		M.emote(pick("twitch","drool","moan"))
 	..()
 
-/datum/reagent/drug/jet/addiction_act_stage2(mob/living/M)
+/datum/reagent/drug/jet/addiction_act_stage2(mob/living/carbon/M)
 	M.Dizzy(5)
 	M.adjustToxLoss(1, updating_health = FALSE)
 	if(prob(30))
@@ -70,7 +70,7 @@
 	..()
 	return TRUE // update health at end of tick
 
-/datum/reagent/drug/jet/addiction_act_stage3(mob/living/M)
+/datum/reagent/drug/jet/addiction_act_stage3(mob/living/carbon/M)
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !ismovableatom(M.loc) && !isspaceturf(M.loc))
 		for(var/i = 0, i < 4, i++)
 			step(M, pick(GLOB.cardinals))
@@ -83,7 +83,7 @@
 	..()
 	return TRUE // update health at end of tick
 
-/datum/reagent/drug/jet/addiction_act_stage4(mob/living/carbon/human/M)
+/datum/reagent/drug/jet/addiction_act_stage4(mob/living/carbon/M)
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !ismovableatom(M.loc) && !isspaceturf(M.loc))
 		for(var/i = 0, i < 8, i++)
 			step(M, pick(GLOB.cardinals))
@@ -107,7 +107,7 @@
 	ghoulfriendly = TRUE
 	var/affecting_straight_edge_mob = FALSE
 
-/datum/reagent/drug/turbo/on_mob_add(mob/M)
+/datum/reagent/drug/turbo/on_mob_add(mob/living/carbon/M)
 	var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
 	if(istype(job))
 		switch(job.faction)
@@ -121,7 +121,7 @@
 		to_chat(M, "<span class='userdanger'>You feel sick from the chems in your body!</span>")
 	..()
 
-/datum/reagent/drug/turbo/on_mob_delete(mob/M)
+/datum/reagent/drug/turbo/on_mob_delete(mob/living/carbon/M)
 	REMOVE_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
 	..()
 
@@ -142,7 +142,7 @@
 	. = TRUE
 	..()
 
-/datum/reagent/drug/turbo/overdose_process(mob/living/M)
+/datum/reagent/drug/turbo/overdose_process(mob/living/carbon/M)
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !ismovableatom(M.loc) && !isspaceturf(M.loc))
 		for(var/i in 1 to 4)
 			step(M, pick(GLOB.cardinals))
@@ -155,20 +155,20 @@
 	M.adjustToxLoss(2, updating_health = FALSE)
 	. = TRUE
 
-/datum/reagent/drug/turbo/addiction_act_stage1(mob/living/M)
+/datum/reagent/drug/turbo/addiction_act_stage1(mob/living/carbon/M)
 	M.Jitter(5)
 	if(prob(20))
 		M.emote(pick("twitch","drool","moan"))
 	..()
 
-/datum/reagent/drug/turbo/addiction_act_stage2(mob/living/M)
+/datum/reagent/drug/turbo/addiction_act_stage2(mob/living/carbon/M)
 	M.Jitter(10)
 	M.Dizzy(10)
 	if(prob(30))
 		M.emote(pick("twitch","drool","moan"))
 	..()
 
-/datum/reagent/drug/turbo/addiction_act_stage3(mob/living/M)
+/datum/reagent/drug/turbo/addiction_act_stage3(mob/living/carbon/M)
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !ismovableatom(M.loc) && !isspaceturf(M.loc))
 		for(var/i = 0, i < 4, i++)
 			step(M, pick(GLOB.cardinals))
@@ -178,7 +178,7 @@
 		M.emote(pick("twitch","drool","moan"))
 	..()
 
-/datum/reagent/drug/turbo/addiction_act_stage4(mob/living/carbon/human/M)
+/datum/reagent/drug/turbo/addiction_act_stage4(mob/living/carbon/M)
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !ismovableatom(M.loc) && !isspaceturf(M.loc))
 		for(var/i = 0, i < 8, i++)
 			step(M, pick(GLOB.cardinals))
@@ -202,7 +202,7 @@
 	ghoulfriendly = TRUE
 	var/affecting_straight_edge_mob = FALSE
 
-/datum/reagent/drug/psycho/on_mob_add(mob/living/L)
+/datum/reagent/drug/psycho/on_mob_add(mob/living/carbon/M)
 	var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
 	if(istype(job))
 		switch(job.faction)
@@ -211,16 +211,14 @@
 			if(FACTION_LEGION)
 				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
 	ADD_TRAIT(L, TRAIT_SLEEPIMMUNE, "[type]")
-	if(iscarbon(L))
-		var/mob/living/carbon/C = L
 		rage = new()
-		C.gain_trauma(rage, TRAUMA_RESILIENCE_ABSOLUTE)
+		M.gain_trauma(rage, TRAUMA_RESILIENCE_ABSOLUTE)
 	if(HAS_TRAIT(M, TRAIT_STRAIGHT_EDGE))
 		affecting_straight_edge_mob = TRUE
 		to_chat(M, "<span class='userdanger'>You feel sick from the chems in your body!</span>")
 	..()
 
-/datum/reagent/drug/psycho/on_mob_delete(mob/living/L)
+/datum/reagent/drug/psycho/on_mob_delete(mob/living/carbon/M)
 	REMOVE_TRAIT(L, TRAIT_SLEEPIMMUNE, "[type]")
 	if(rage)
 		QDEL_NULL(rage)
@@ -245,7 +243,7 @@
 	. = TRUE
 	..()
 
-/datum/reagent/drug/psycho/overdose_process(mob/living/carbon/human/M)
+/datum/reagent/drug/psycho/overdose_process(mob/living/carbon/M)
 	M.hallucination += 20
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !ismovableatom(M.loc) && !isspaceturf(M.loc))
 		for(var/i = 0, i < 8, i++)
@@ -259,7 +257,7 @@
 	..()
 	return TRUE
 
-/datum/reagent/drug/psycho/addiction_act_stage1(mob/living/M)
+/datum/reagent/drug/psycho/addiction_act_stage1(mob/living/carbon/M)
 	M.hallucination += 10
 	M.Jitter(5)
 	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 1)
@@ -267,7 +265,7 @@
 		M.emote(pick("twitch","scream","laugh"))
 	..()
 	return
-/datum/reagent/drug/psycho/addiction_act_stage2(mob/living/M)
+/datum/reagent/drug/psycho/addiction_act_stage2(mob/living/carbon/M)
 	M.hallucination += 20
 	M.Jitter(10)
 	M.Dizzy(10)
@@ -276,7 +274,7 @@
 		M.emote(pick("twitch","scream","laugh"))
 	..()
 	return
-/datum/reagent/drug/psycho/addiction_act_stage3(mob/living/M)
+/datum/reagent/drug/psycho/addiction_act_stage3(mob/living/carbon/M)
 	M.hallucination += 30
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !ismovableatom(M.loc) && !isspaceturf(M.loc))
 		for(var/i = 0, i < 2, i++)
@@ -288,7 +286,7 @@
 		M.emote(pick("twitch","scream","laugh"))
 	..()
 	return
-/datum/reagent/drug/psycho/addiction_act_stage4(mob/living/carbon/human/M)
+/datum/reagent/drug/psycho/addiction_act_stage4(mob/living/carbon/M)
 	M.hallucination += 40
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !ismovableatom(M.loc) && !isspaceturf(M.loc))
 		for(var/i = 0, i < 4, i++)
@@ -312,9 +310,9 @@
 	metabolization_rate = 1.25 * REAGENTS_METABOLISM
 	var/datum/brain_trauma/special/psychotic_brawling/bath_salts/rage
 	ghoulfriendly = TRUE
-	var/affecting_intolerant_mob = FALSE
+	var/affecting_straight_edge_mob = FALSE
 
-/datum/reagent/drug/buffout/on_mob_add(mob/living/carbon/human/M)
+/datum/reagent/drug/buffout/on_mob_add(mob/living/carbon/M)
 	var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
 	if(istype(job))
 		switch(job.faction)
@@ -333,7 +331,7 @@
 		to_chat(M, "<span class='userdanger'>You feel sick from the chems in your body!</span>")
 	..()
 
-/datum/reagent/drug/buffout/on_mob_delete(mob/living/carbon/human/M)
+/datum/reagent/drug/buffout/on_mob_delete(mob/living/carbon/M)
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>You feel weaker.</span>")
 		REMOVE_TRAIT(M, TRAIT_BUFFOUT_BUFF, "buffout")
@@ -355,7 +353,7 @@
 	. = TRUE
 	..()
 
-/datum/reagent/drug/buffout/overdose_process(mob/living/carbon/human/M)
+/datum/reagent/drug/buffout/overdose_process(mob/living/carbon/M)
 	if(iscarbon(M))
 		var/mob/living/carbon/C = M
 		rage = new()
@@ -368,7 +366,7 @@
 	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 2)
 	..()
 
-/datum/reagent/drug/buffout/addiction_act_stage1(mob/living/M)
+/datum/reagent/drug/buffout/addiction_act_stage1(mob/living/carbon/M)
 	to_chat(M, "<span class='notice'>Your muscles ache slightly.</span>")
 	M.adjustBruteLoss(1.5)
 	if(prob(15))
@@ -376,7 +374,7 @@
 	..()
 	return
 
-/datum/reagent/drug/buffout/addiction_act_stage2(mob/living/M)
+/datum/reagent/drug/buffout/addiction_act_stage2(mob/living/carbon/M)
 	to_chat(M, "<span class='notice'>Your muscles feel incredibly sore.</span>")
 	M.adjustBruteLoss(4)
 	if(prob(30))
@@ -386,7 +384,7 @@
 	..()
 	return
 
-/datum/reagent/drug/buffout/addiction_act_stage3(mob/living/M)
+/datum/reagent/drug/buffout/addiction_act_stage3(mob/living/carbon/M)
 	to_chat(M, "<span class='notice'>Your muscles start to hurt badly, and everything feels like it hurts more.</span>")
 	M.adjustBruteLoss(7.5)
 	M.maxHealth -= 1.5
@@ -398,7 +396,7 @@
 	..()
 	return
 
-/datum/reagent/drug/buffout/addiction_act_stage4(mob/living/M)
+/datum/reagent/drug/buffout/addiction_act_stage4(mob/living/carbon/M)
 	to_chat(M, "<span class='danger'>Your muscles are in incredible pain! When will it stop!?</span>")
 	M.adjustBruteLoss(12.5)
 	M.maxHealth -= 5
