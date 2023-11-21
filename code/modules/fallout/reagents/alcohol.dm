@@ -891,8 +891,7 @@
 	else
 		if(ishuman(M))
 			if(prob(98))
-				M.vomit(50)
-				M.adjustToxLoss(10*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
+				M.adjustToxLoss(0.5*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
 		..()
 	return TRUE // update health at end of tick
 
