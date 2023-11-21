@@ -5,17 +5,29 @@
 	overdose_threshold = 20
 	addiction_threshold = 12.5
 	ghoulfriendly = TRUE
+	var/affecting_intolerant_mob = FALSE
 
 /datum/reagent/drug/jet/on_mob_add(mob/living/carbon/human/M)
-	..()
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>You feel an incredible high! You just absolutely love life in this moment!</span>")
+	var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
+	if(istype(job))
+		switch(job.faction)
+			if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD)
+				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "used drugs", /datum/mood_event/used_drugs, name)
+			if(FACTION_LEGION)
+				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
+	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "jet euphoria", /datum/mood_event/jet_euphoria, name)
+	if(HAS_TRAIT(M, TRAIT_STRAIGHT_EDGE))
+		affecting_intolerant_mob = TRUE
+		to_chat(M, "<span class='userdanger'>You feel sick from the chems in your body!</span>")
+	..()
 
 /datum/reagent/drug/jet/on_mob_delete(mob/living/carbon/human/M)
-	..()
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>You come down from your high. The wild ride is unfortunately over...</span>")
 		M.confused += 2
+	..()
 
 /datum/reagent/drug/jet/on_mob_life(mob/living/carbon/M)
 	M.adjustStaminaLoss(-20, updating_health = FALSE)
@@ -24,17 +36,15 @@
 		step(M, pick(GLOB.cardinals))
 	if(prob(12))
 		M.emote(pick("twitch","drool","moan","giggle"))
-	if(M.mind)
-		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
-		if(istype(job))
-			switch(job.faction)
-				if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD)
-					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "used drugs", /datum/mood_event/used_drugs, name)
-				if(FACTION_LEGION)
-					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
-	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "jet euphoria", /datum/mood_event/jet_euphoria, name)
-	..()
+
+	//Debuffs applied to people with TRAIT_STRAIGHT_EDGE
+	M.hallucination = max(M.hallucination, affecting_straight_edge_mob ? 22.5 : 0)
+	M.jitteriness = max(M.jitteriness, affecting_straight_edge_mob ? 22.5 : 0)
+	M.set_dizziness(max(M.dizziness, affecting_straight_edge_mob ? 22.5 : 0))
+	M.confused = max(M.confused, affecting_straight_edge_mob ? 22.5 : 0)
+	M.set_disgust(max(M.disgust, affecting_straight_edge_mob ? DISGUST_LEVEL_DISGUSTED : 0))
 	. = TRUE
+	..()
 
 /datum/reagent/drug/jet/overdose_start(mob/living/M)
 	to_chat(M, "<span class='userdanger'>You start tripping hard!</span>")
@@ -95,10 +105,21 @@
 	addiction_threshold = 9
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	ghoulfriendly = TRUE
+	var/affecting_straight_edge_mob = FALSE
 
 /datum/reagent/drug/turbo/on_mob_add(mob/M)
-	..()
+	var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
+	if(istype(job))
+		switch(job.faction)
+			if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD)
+				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "used drugs", /datum/mood_event/used_drugs, name)
+			if(FACTION_LEGION)
+				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
 	ADD_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
+	if(HAS_TRAIT(M, TRAIT_STRAIGHT_EDGE))
+		affecting_straight_edge_mob = TRUE
+		to_chat(M, "<span class='userdanger'>You feel sick from the chems in your body!</span>")
+	..()
 
 /datum/reagent/drug/turbo/on_mob_delete(mob/M)
 	REMOVE_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
@@ -111,17 +132,15 @@
 	M.Jitter(2)
 	if(prob(5))
 		M.emote(pick("twitch", "shiver"))
-	if(M.mind)
-		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
-		if(istype(job))
-			switch(job.faction)
-				if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD)
-					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "used drugs", /datum/mood_event/used_drugs, name)
-				if(FACTION_LEGION)
-					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
-	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "jet euphoria", /datum/mood_event/jet_euphoria, name)
-	..()
+
+	//Debuffs applied to people with TRAIT_STRAIGHT_EDGE
+	M.hallucination = max(M.hallucination, affecting_straight_edge_mob ? 22.5 : 0)
+	M.jitteriness = max(M.jitteriness, affecting_straight_edge_mob ? 22.5 : 0)
+	M.set_dizziness(max(M.dizziness, affecting_straight_edge_mob ? 22.5 : 0))
+	M.confused = max(M.confused, affecting_straight_edge_mob ? 22.5 : 0)
+	M.set_disgust(max(M.disgust, affecting_straight_edge_mob ? DISGUST_LEVEL_DISGUSTED : 0))
 	. = TRUE
+	..()
 
 /datum/reagent/drug/turbo/overdose_process(mob/living/M)
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !ismovableatom(M.loc) && !isspaceturf(M.loc))
@@ -181,7 +200,31 @@
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	var/datum/brain_trauma/special/psychotic_brawling/bath_salts/rage
 	ghoulfriendly = TRUE
+	var/affecting_straight_edge_mob = FALSE
 
+/datum/reagent/drug/psycho/on_mob_add(mob/living/L)
+	var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
+	if(istype(job))
+		switch(job.faction)
+			if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD)
+				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "used drugs", /datum/mood_event/used_drugs, name)
+			if(FACTION_LEGION)
+				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
+	ADD_TRAIT(L, TRAIT_SLEEPIMMUNE, "[type]")
+	if(iscarbon(L))
+		var/mob/living/carbon/C = L
+		rage = new()
+		C.gain_trauma(rage, TRAUMA_RESILIENCE_ABSOLUTE)
+	if(HAS_TRAIT(M, TRAIT_STRAIGHT_EDGE))
+		affecting_straight_edge_mob = TRUE
+		to_chat(M, "<span class='userdanger'>You feel sick from the chems in your body!</span>")
+	..()
+
+/datum/reagent/drug/psycho/on_mob_delete(mob/living/L)
+	REMOVE_TRAIT(L, TRAIT_SLEEPIMMUNE, "[type]")
+	if(rage)
+		QDEL_NULL(rage)
+	..()
 
 /datum/reagent/drug/psycho/on_mob_life(mob/living/carbon/M)
 	var/high_message = pick("<br><font color='#FF0000'><b>FUCKING KILL!</b></font>", "<br><font color='#FF0000'><b>RAAAAR!</b></font>", "<br><font color='#FF0000'><b>BRING IT!</b></font>")
@@ -192,30 +235,14 @@
 	M.AdjustUnconscious(-25, 0)
 	M.adjustStaminaLoss(-5, updating_health = FALSE)
 	M.Jitter(2)
-	if(M.mind)
-		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
-		if(istype(job))
-			switch(job.faction)
-				if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD)
-					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "used drugs", /datum/mood_event/used_drugs, name)
-				if(FACTION_LEGION)
-					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
-	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "jet euphoria", /datum/mood_event/jet_euphoria, name)
-	..()
+
+	//Debuffs applied to people with TRAIT_STRAIGHT_EDGE
+	M.hallucination = max(M.hallucination, affecting_straight_edge_mob ? 22.5 : 0)
+	M.jitteriness = max(M.jitteriness, affecting_straight_edge_mob ? 22.5 : 0)
+	M.set_dizziness(max(M.dizziness, affecting_straight_edge_mob ? 22.5 : 0))
+	M.confused = max(M.confused, affecting_straight_edge_mob ? 22.5 : 0)
+	M.set_disgust(max(M.disgust, affecting_straight_edge_mob ? DISGUST_LEVEL_DISGUSTED : 0))
 	. = TRUE
-
-/datum/reagent/drug/psycho/on_mob_add(mob/living/L)
-	..()
-	ADD_TRAIT(L, TRAIT_SLEEPIMMUNE, "[type]")
-	if(iscarbon(L))
-		var/mob/living/carbon/C = L
-		rage = new()
-		C.gain_trauma(rage, TRAUMA_RESILIENCE_ABSOLUTE)
-
-/datum/reagent/drug/psycho/on_mob_delete(mob/living/L)
-	REMOVE_TRAIT(L, TRAIT_SLEEPIMMUNE, "[type]")
-	if(rage)
-		QDEL_NULL(rage)
 	..()
 
 /datum/reagent/drug/psycho/overdose_process(mob/living/carbon/human/M)
@@ -285,39 +312,48 @@
 	metabolization_rate = 1.25 * REAGENTS_METABOLISM
 	var/datum/brain_trauma/special/psychotic_brawling/bath_salts/rage
 	ghoulfriendly = TRUE
+	var/affecting_intolerant_mob = FALSE
 
 /datum/reagent/drug/buffout/on_mob_add(mob/living/carbon/human/M)
-	..()
+	var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
+	if(istype(job))
+		switch(job.faction)
+			if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD)
+				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "used drugs", /datum/mood_event/used_drugs, name)
+			if(FACTION_LEGION)
+				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>You feel stronger, and like you're able to endure more.</span>")
 		ADD_TRAIT(M, TRAIT_BUFFOUT_BUFF, "buffout")
 		ADD_TRAIT(M, TRAIT_PERFECT_ATTACKER, "buffout")
 		M.maxHealth += 25
 		M.health += 25
+	if(HAS_TRAIT(M, TRAIT_STRAIGHT_EDGE))
+		affecting_straight_edge_mob = TRUE
+		to_chat(M, "<span class='userdanger'>You feel sick from the chems in your body!</span>")
+	..()
 
 /datum/reagent/drug/buffout/on_mob_delete(mob/living/carbon/human/M)
-	..()
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>You feel weaker.</span>")
 		REMOVE_TRAIT(M, TRAIT_BUFFOUT_BUFF, "buffout")
 		REMOVE_TRAIT(M, TRAIT_PERFECT_ATTACKER, "buffout")
 		M.maxHealth -= 25
 		M.health -= 25
+	..()
 
 /datum/reagent/drug/buffout/on_mob_life(mob/living/carbon/M)
 	M.AdjustStun(-10*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.AdjustKnockdown(-10*REAGENTS_EFFECT_MULTIPLIER, 0)
-	if(M.mind)
-		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
-		if(istype(job))
-			switch(job.faction)
-				if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD)
-					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "used drugs", /datum/mood_event/used_drugs, name)
-				if(FACTION_LEGION)
-					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
-	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "jet euphoria", /datum/mood_event/jet_euphoria, name)
-	..()
+
+	//Debuffs applied to people with TRAIT_STRAIGHT_EDGE
+	M.hallucination = max(M.hallucination, affecting_straight_edge_mob ? 22.5 : 0)
+	M.jitteriness = max(M.jitteriness, affecting_straight_edge_mob ? 22.5 : 0)
+	M.set_dizziness(max(M.dizziness, affecting_straight_edge_mob ? 22.5 : 0))
+	M.confused = max(M.confused, affecting_straight_edge_mob ? 22.5 : 0)
+	M.set_disgust(max(M.disgust, affecting_straight_edge_mob ? DISGUST_LEVEL_DISGUSTED : 0))
 	. = TRUE
+	..()
 
 /datum/reagent/drug/buffout/overdose_process(mob/living/carbon/human/M)
 	if(iscarbon(M))

@@ -25,6 +25,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 	access = list(ACCESS_LEGION, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION, ACCESS_LEGION_SLAVE)
+	blacklisted_quirks = list(/datum/quirk/stim_intolerance, /datum/quirk/straight_edge)
 
 /datum/outfit/job/CaesarsLegion
 	ears = null
@@ -62,6 +63,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
 	ADD_TRAIT(H, TRAIT_FEARLESS,  REF(src)) //no phobias for legion!
 	ADD_TRAIT(H, TRAIT_BERSERKER,  REF(src))
+	ADD_TRAIT(H, TRAIT_STIM_INTOLERANCE, REF(src)) //Can't use stimpaks without getting sick
+	ADD_TRAIT(H, TRAIT_STRAIGHT_EDGE, REF(src)) //Can't use Fallout chems, such as Psycho, Med-X, Buffout, Turbo etc. without getting sick
 
 /obj/item/storage/box/legate
 	name = "legate belongings"

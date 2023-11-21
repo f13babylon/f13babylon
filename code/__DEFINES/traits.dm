@@ -279,6 +279,8 @@
 #define TRAIT_EXPLOSIVE_CRAFTING "explosive_crafting" //can craft explosives and bombs
 #define TRAIT_ADVANCED_EXPLOSIVE_CRAFTING "advanced explosive crafting" //can craft almost all kinds of explosives
 #define TRAIT_PILOT				"vb_pilot"//Can fly the VB.
+#define TRAIT_STIM_INTOLERANCE	"stim_intolerance" //Stims cause vomiting, make you jittery, dizzy and confused
+#define TRAIT_STRAIGHT_EDGE		"straight_edge"	//Fallout chems like Med-X, Psycho, Jet, Turbo etc. cause vomiting, make you jittery, dizzy and confused
 
 #define TRAIT_SURGERY_LOW		"lowsurgery"
 #define TRAIT_SURGERY_MID		"midsurgery"

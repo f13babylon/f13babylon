@@ -67,7 +67,7 @@
 
 /obj/item/reagent_containers/pill/patch/healingpowder
 	name = "healing powder"
-	desc = "A bag filled with coarse brown powder derived from a mix of ground broc flowers and xander roots, commonly used by tribals and Legionaries. Applied on skin, it has an additional oxygenating effect."
+	desc = "A bag which contains a coarse brown powder derived from a mix of ground broc flowers and xander roots. Applied on skin, it has an additional oxygenating effect."
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "patch_healingpowder"
 	list_reagents = list(/datum/reagent/medicine/healingpowder = 10)
@@ -78,7 +78,7 @@
 
 /obj/item/reagent_containers/pill/patch/healingpoultice
 	name = "healing poultice"
-	desc = "A bag filled with a olive-colored poultice derived from an assortment of medicinal plants. Applied on skin, it has as additional antitoxin and radiation-treating effect."
+	desc = "A bag which contains an olive-colored poultice derived from an assortment of medicinal plants. Applied on skin, it has as additional antitoxin and radiation-treating effect."
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	list_reagents = list(/datum/reagent/medicine/healingpoultice = 10)
 	icon_state = "patch_healingpoultice"
@@ -89,11 +89,12 @@
 
 /obj/item/reagent_containers/pill/patch/healingpowder/custom
 	name = "homebrew powder"
-	desc = "A bag filled with a mysterious mix of powders."
+	desc = "A bag which contains a mysterious mix of powders."
 	list_reagents = null
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "patch_healingpowder"
 	color = COLOR_PALE_GREEN_GRAY
+	self_delay = 30
 
 // ---------------------------------
 // BITTER DRINK
@@ -111,7 +112,7 @@
 
 /obj/item/reagent_containers/pill/patch/hydra
 	name = "Hydra"
-	desc = "A fruit drink bottle with three sealed glass vials taped around the middle. It is filled with Hydra, a powerful wound-mending agent."
+	desc = "A fruit drink bottle with three sealed glass vials taped around the middle. It is filled with Hydra, a powerful wound-mending agent, derived from venomous radscorpion glands."
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "patch_hydra"
 	list_reagents = list(/datum/reagent/medicine/hydra = 10)

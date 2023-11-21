@@ -384,8 +384,8 @@
 
 /datum/chemical_reaction/stimpak_imitation
 	name = "Imitation Stimpak Fluid"
-	id = /datum/reagent/medicine/stimpakimitation
-	results = list(/datum/reagent/medicine/stimpakimitation = 2)
+	id = /datum/reagent/medicine/stimpak/imitation
+	results = list(/datum/reagent/medicine/stimpak/imitation = 2)
 	required_reagents = list(/datum/reagent/consumable/brocjuice = 1, /datum/reagent/consumable/xanderjuice = 1)
 
 /datum/chemical_reaction/stimpak/synthetic
@@ -395,18 +395,24 @@
 /datum/chemical_reaction/superstimpak
 	name = "Super Stimpak Fluid"
 	id = /datum/reagent/medicine/stimpaksuper
-	results = list(/datum/reagent/medicine/stimpaksuper = 2)
+	results = list(/datum/reagent/medicine/stimpak/super = 2)
 	required_reagents = list(/datum/reagent/blood = 1, /datum/reagent/medicine/stimpak = 1, /datum/reagent/consumable/mutjuice = 1) //1 mutfruit at 50 potency yields 6 mutfruit juice
 
 /datum/chemical_reaction/superstimpak/synthetic
 	id = "stimpaksuper_synthetic"
 	required_reagents = list(/datum/reagent/blood/synthetics = 1, /datum/reagent/medicine/stimpak = 1, /datum/reagent/consumable/mutjuice = 1) //1 mutfruit at 50 potency yields 6 mutfruit juice
 
+/datum/chemical_reaction/superstimpakimitation
+	name = "Imitation Super Stimpak Fluid"
+	id = /datum/reagent/medicine/stimpak/superimitation
+	results = list(/datum/reagent/medicine/stimpak/superimitation = 2)
+	required_reagents = list(/datum/reagent/medicine/stimpak/imitation = 1, /datum/reagent/consumable/mutjuice = 1)
+
 /datum/chemical_reaction/medx
 	name = "Med-X"
 	id = /datum/reagent/medicine/medx
 	results = list(/datum/reagent/medicine/medx = 4)
-	required_reagents = list(/datum/reagent/drug/aranesp = 1, /datum/reagent/phenol = 1, /datum/reagent/drug/heroin = 1, /datum/reagent/medicine/stimpakimitation = 1)
+	required_reagents = list(/datum/reagent/drug/aranesp = 1, /datum/reagent/phenol = 1, /datum/reagent/drug/heroin = 1, /datum/reagent/medicine/stimpak/imitation = 1)
 
 /datum/chemical_reaction/mentats
 	name = "mentats"
@@ -437,4 +443,4 @@
 	name = "Rehab"
 	id = "rehab"
 	results = list(/datum/reagent/medicine/rehab = 1)
-	required_reagents = list(/datum/reagent/medicine/stimpakimitation = 1, /datum/reagent/consumable/ethanol/pungajuice = 1, /datum/reagent/consumable/buffalojuice = 1, /datum/reagent/consumable/ferajuice = 1)
+	required_reagents = list(/datum/reagent/medicine/stimpak/imitation = 1, /datum/reagent/consumable/ethanol/pungajuice = 1, /datum/reagent/consumable/buffalojuice = 1, /datum/reagent/consumable/ferajuice = 1)

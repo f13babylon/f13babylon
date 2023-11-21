@@ -156,7 +156,7 @@
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak
 	name = "stimpak"
-	desc = "A syringe filled with a pre-war cocktail of healing agents and stimulants which bolster the body's natural regenerative abilities. Injecting this leads to a swift recovery from most injuries."
+	desc = "A syringe filled with a pre-war cocktail of healing agents and stimulants which bolster the body's natural regenerative abilities."
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "hypo_stimpak"
 	volume = 10
@@ -191,11 +191,12 @@
 /obj/item/reagent_containers/hypospray/medipen/stimpak/custom
 	desc = "A syringe filled with a mysterious cocktail of chemicals."
 	list_reagents = null
+	self_delay = 20
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak/imitation
 	name = "imitation stimpak"
 	desc = "A syringe filled with a chemical which aims to replicate the effects of the fluid found in pre-war stimpaks, albeit less effective."
-	list_reagents = list(/datum/reagent/medicine/stimpakimitation = 10)
+	list_reagents = list(/datum/reagent/medicine/stimpak/imitation = 10)
 	self_delay = 5
 
 // ---------------------------------
@@ -203,10 +204,10 @@
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super
 	name = "super stimpak"
-	desc = "A large syringe with a leather strap attached to it, filled with a powerful pre-war cocktail of healing agents and stimulants which bolster the body's natural regenerative abilities. Injecting this leads to near instant recovery from most injuries."
+	desc = "A large syringe with a leather strap attached to it, filled with a powerful pre-war cocktail of healing agents and stimulants which bolster the body's natural regenerative abilities."
 	icon_state = "hypo_superstimpak"
 	amount_per_transfer_from_this = 10
-	list_reagents = list(/datum/reagent/medicine/stimpaksuper = 10)
+	list_reagents = list(/datum/reagent/medicine/stimpak/super = 10)
 	self_delay = 20
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super/custom
@@ -214,6 +215,7 @@
 	volume = 20
 	amount_per_transfer_from_this = 20
 	list_reagents = null
+	self_delay = 30
 
 // ---------------------------------
 // MED-X
