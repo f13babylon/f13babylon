@@ -995,7 +995,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	flag = F13IMMUNE
 	total_positions = 7
 	spawn_positions = 7
-	description = "An Immune is a legionnaire temporarily assigned to keeping the camp in order, according to their tasking on any given week."
+	description = "An Immune is a Legionary or free citizen temporarily assigned to keeping the camp in order, according to their tasking on any given week."
 	enforces = "You may leave the base, but you are not allowed to antagonize other factions or scavenge. You are a non-combatant. You cannot join any raids or battles on the surface. You cannot run dungeons."
 	supervisors = "the Centurion."
 	display_order = JOB_DISPLAY_ORDER_IMMUNE
