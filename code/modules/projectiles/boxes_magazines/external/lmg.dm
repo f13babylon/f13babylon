@@ -85,7 +85,7 @@
 	name = "ammo belt (.308)"
 	icon_state = "762belt"
 	ammo_type = /obj/item/ammo_casing/a762/sport
-	max_ammo = 80
+	max_ammo = 60
 	caliber = "a762"
 
 /obj/item/ammo_box/magazine/mm762/empty

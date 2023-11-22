@@ -242,7 +242,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK
 	weapon_weight = WEAPON_LIGHT
-	fire_delay = 5 //yes, it is a fast weapon
+	fire_delay = 3 //yes, it is a fast weapon
 	var/twohands = FALSE
 
 /obj/item/gun/energy/laser/plasma/caster/ComponentInitialize()
