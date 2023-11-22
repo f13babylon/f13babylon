@@ -304,7 +304,7 @@
 	M.jitteriness = max(M.jitteriness, affecting_tribal ? 0 : 100)
 	M.set_dizziness(max(M.dizziness, affecting_tribal ? 0 : 15))
 	M.confused = max(M.confused, affecting_tribal ? 0 : 10)
-	M.set_disgust(max(M.disgust, is_on_tribal ? 0 : DISGUST_LEVEL_DISGUSTED))
+	M.set_disgust(max(M.disgust, affecting_tribal ? 0 : DISGUST_LEVEL_DISGUSTED))
 	..()
 
 /datum/reagent/medicine/bitterdrink/overdose_process(mob/living/carbon/M)
@@ -849,12 +849,12 @@
 	overdose_threshold = 21
 	self_consuming = TRUE
 	var/clot_rate = 0	//The rate at which blood_flow will be reduced for pierce/slash wounds
-	var/is_on_tribal = FALSE
+	var/affecting_tribal = FALSE
 	var/nth_cycle = 0	//On which cycle should Hydra trigger its effects
 
 /datum/reagent/medicine/hydra/on_mob_add(mob/living/carbon/M)
 	if(HAS_TRAIT(M, TRAIT_TRIBAL))
-		is_on_tribal = TRUE
+		affecting_tribal = TRUE
 		clot_rate =  1
 		nth_cycle = 5
 	else
