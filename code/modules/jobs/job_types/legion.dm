@@ -141,11 +141,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	roleplay_exclusive_notify = 1
 	exp_requirements = 0
 
-	loadout_options = list(
-			/datum/outfit/loadout/oratorm,
-			/datum/outfit/loadout/oratorf
-			)
-
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13orator
 	name = "Orator"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13orator
@@ -153,18 +148,19 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	head = /obj/item/clothing/head/helmet/f13/legion/orator
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	neck = /obj/item/storage/belt/holster
-	shoes = null
 	id = /obj/item/card/id/dogtag/legorator
-	gloves = null
 	backpack = /obj/item/storage/backpack/legionr
-	suit_store = null
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/pistol14/orator
 	r_pocket = /obj/item/storage/bag/money/small/legofficers
 	l_pocket = /obj/item/flashlight/lantern
-	l_hand = null
 	backpack_contents = list(
 		/obj/item/binoculars = 1,
 		/obj/item/ammo_box/magazine/m14mm = 1,
-		/obj/item/reagent_containers/pill/patch/bitterdrink = 2
+		/obj/item/reagent_containers/pill/patch/bitterdrink = 2,
+		/obj/item/book/granter/trait/iron_fist = 1,
+		/obj/item/book/granter/trait/bigleagues = 1,
+		/obj/item/stack/f13Cash/random/denarius/high = 3,
+		/obj/item/stack/f13Cash/random/aureus/high = 2
 		)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13orator/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -175,31 +171,47 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 
-/datum/outfit/loadout/oratorm
-	name = "Orator"
-	suit = /obj/item/clothing/suit/armor/f13/legion/orator
-	head = /obj/item/clothing/head/helmet/f13/legion/orator
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/pistol14/orator
-	shoes = /obj/item/clothing/shoes/f13/military/plated
+// PRIESTESS
+
+/datum/job/CaesarsLegion/Legionnaire/f13priestess
+	title = "Legion Priestess"
+	flag = F13ORATOR
+	supervisors = "Centurion"
+	selection_color = "#ffdddd"
+	total_positions = 1
+	spawn_positions = 1
+	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13priestess
+	display_order = JOB_DISPLAY_ORDER_PRIESTESS
+	access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
+	minimal_access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
+	roleplay_exclusive_notify = 1
+	exp_requirements = 0
+
+/datum/outfit/job/CaesarsLegion/Legionnaire/f13priestess
+	name = "Priestess of Mars"
+	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13priestess
+	uniform = /obj/item/clothing/under/f13/pmarsrobe
+	head = /obj/item/clothing/head/helmet/f13/legion/marsheaddress
+	shoes = /obj/item/clothing/shoes/roman
+	belt = /obj/item/storage/belt/medical/primitive
+	backpack = /obj/item/storage/backpack/legionr
+	r_pocket = /obj/item/storage/bag/money/small/legofficers
+	l_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
-		/obj/item/book/granter/trait/iron_fist = 1,
-		/obj/item/book/granter/trait/bigleagues = 1,
-		/obj/item/stack/f13Cash/random/denarius/high = 3,
-		/obj/item/stack/f13Cash/random/aureus/high = 2
+		/obj/item/stack/f13Cash/random/denarius/high = 1,
+		/obj/item/storage/firstaid/ancient = 1,
+		/obj/item/stack/sticky_tape/surgical = 1,
+		/obj/item/stack/medical/bone_gel = 1,
 		)
 
-/datum/outfit/loadout/oratorf
-	name = "Priestess of Mars"
-	uniform = /obj/item/clothing/under/f13/pmarsrobe
-	head = /obj/item/clothing/head/helmet/f13/legion/orator
-	shoes = /obj/item/clothing/shoes/roman
-	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/pistol14/orator = 1,
-		/obj/item/book/granter/trait/midsurgery = 1,
-		/obj/item/book/granter/trait/chemistry = 1,
-		/obj/item/book/granter/trait/legionalchemy = 1,
-		/obj/item/stack/f13Cash/random/denarius/high = 1
-		)
+/datum/outfit/job/CaesarsLegion/Legionnaire/f13priestess/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_SURGERY_MID,  REF(src))
+	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
+	ADD_TRAIT(H, TRAIT_CHEMWHIZ,  REF(src))
+	ADD_TRAIT(H, TRAIT_MARS_TEACH,  REF(src))
 
 /////////////////
 //// Officers ///
