@@ -40,8 +40,8 @@
 /datum/reagent/medicine/stimpak/on_mob_life(mob/living/carbon/M)
 	var/is_blocked = FALSE
 	if(M.reagents)
-		for(var/iter_reagent in M.reagents)
-			if(iter_reagent in reagent_blacklist)
+		for(var/iter_blacklisted_reagent in reagent_blacklist)
+			if(M.reagents.has_reagent(iter_blacklisted_reagent))
 				is_blocked = TRUE
 				break
 	if(!is_blocked)
@@ -276,8 +276,8 @@
 /datum/reagent/medicine/bitterdrink/on_mob_life(mob/living/carbon/M)
 	var/is_blocked = FALSE
 	if(M.reagents)
-		for(var/iter_reagent in M.reagents)
-			if(iter_reagent in reagent_blacklist)
+		for(var/iter_blacklisted_reagent in reagent_blacklist)
+			if(M.reagents.has_reagent(iter_blacklisted_reagent))
 				is_blocked = TRUE
 				break
 	if(!is_blocked)
@@ -353,8 +353,8 @@
 /datum/reagent/medicine/healingpowder/on_mob_life(mob/living/carbon/M)
 	var/is_blocked = FALSE
 	if(M.reagents)
-		for(var/iter_reagent in M.reagents)
-			if(iter_reagent in reagent_blacklist)
+		for(var/iter_blacklisted_reagent in reagent_blacklist)
+			if(M.reagents.has_reagent(iter_blacklisted_reagent))
 				is_blocked = TRUE
 				break
 	if(!is_blocked)
@@ -426,8 +426,8 @@
 /datum/reagent/medicine/healingpoultice/on_mob_life(mob/living/carbon/M)
 	var/is_blocked = FALSE
 	if(M.reagents)
-		for(var/iter_reagent in M.reagents)
-			if(iter_reagent in reagent_blacklist)
+		for(var/iter_blacklisted_reagent in reagent_blacklist)
+			if(M.reagents.has_reagent(iter_blacklisted_reagent))
 				is_blocked = TRUE
 				break
 	if(!is_blocked)
