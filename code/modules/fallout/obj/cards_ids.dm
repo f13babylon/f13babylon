@@ -256,7 +256,7 @@
 	assignment = "explorer medallion"
 
 /obj/item/card/id/dogtag/legpriest
-	name = "priestess medallion"
+	name = "priest medallion"
 	desc = "A golden disc awarded to the trusted spiritual guide to the nearby Legion."
 	icon_state = "legionmedallioncent"
 	item_state = "card-id_leg2"
@@ -463,4 +463,3 @@ end of
 	item_state = "card-id_leg"
 	assignment = "US dogtags"
 	access = list(ACCESS_ENCLAVE)
-

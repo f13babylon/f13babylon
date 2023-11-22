@@ -386,8 +386,8 @@
 	can_adjust = TRUE
 
 /obj/item/clothing/under/f13/priestess
-	name = "priestess robes"
-	desc = "The robes worn by a Priestess of Mars."
+	name = "garments of mars"
+	desc = "The robes worn by a priest of Mars."
 	icon_state = "priestess"
 	item_state = "priestess"
 	item_color = "priestess"
@@ -395,8 +395,8 @@
 	can_adjust = FALSE
 
 /obj/item/clothing/under/f13/pmarsrobe
-	name = "priestess of mars robe"
-	desc = "A red robe decorated with bird feathers for the Priestess of Mars."
+	name = "garments of mars robe"
+	desc = "A red robe decorated with bird feathers for the priest of Mars."
 	icon_state = "pmars_robe"
 	item_state = "pmars_robe"
 	armor = list(melee = 0, bullet = 0, laser = 20, energy = 20, bomb = 5, bio = 0, rad = 0, fire = 100, acid = 0)

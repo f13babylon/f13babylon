@@ -307,7 +307,7 @@
 	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/helmet/f13/legion/marsheaddress
-	name = "priestess' headdress"
+	name = "garments of mars headdress"
 	desc = "A headdress made of feathers and decorated with two golden tassles."
 	icon_state = "legion-priestess"
 	item_state = "legion-priestess"

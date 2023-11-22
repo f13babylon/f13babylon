@@ -623,7 +623,7 @@
 		H.update_sight()
 
 /obj/item/clothing/glasses/sunglasses/fakeblindfold
-	name = "priestess blindfold"
+	name = "priest blindfold"
 	desc = "The coverings used to restrict the sight of the world, but see with the Sight of Mars."
 	icon_state = "legpriestess"
 	item_state = "legpriestess"
@@ -640,4 +640,3 @@
 			user.Knockdown(100)
 			user.blind_eyes(30)
 		return
-
