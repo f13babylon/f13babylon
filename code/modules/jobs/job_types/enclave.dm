@@ -309,10 +309,9 @@
 		)
 
 /datum/outfit/loadout/sgt_classic
-	name = "Classic"
-	suit_store = /obj/item/gun/energy/laser/plasma
+	name = "Close Quarters"
 	backpack_contents = list(
-		/obj/item/stock_parts/cell/ammo/mfc = 3,
+		/obj/item/twohanded/inquis_spear = 1,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 2,
 		)
