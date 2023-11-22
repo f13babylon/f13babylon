@@ -407,8 +407,7 @@ Senior Paladin
 /datum/outfit/loadout/spaladinb
 	name = "Senior Offensive Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/scatter = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 2,
+		/obj/item/encminigunpack = 1,
 		/obj/item/clothing/accessory/bos/paladin=1,
 		)
 
