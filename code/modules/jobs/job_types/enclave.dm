@@ -443,7 +443,6 @@
 		/obj/item/storage/firstaid/ancient = 1,
 		/obj/item/book/granter/trait/chemistry = 1,
 		/obj/item/book/granter/trait/midsurgery = 1,
-		/obj/item/storage/pill_bottle/chem_tin/mentats = 1,
 		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/ammo_box/magazine/uzim9mm = 2,
 		)
@@ -491,18 +490,15 @@
 	accessory = /obj/item/clothing/accessory/enclave/private_firstclass
 	head = /obj/item/clothing/head/helmet/f13/combat/enclave
 	suit = /obj/item/clothing/suit/armor/f13/combat/enclave
-	suit_store = /obj/item/gun/ballistic/automatic/smg/mp5
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/grenade/smokebomb = 1,
 		/obj/item/pda = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
-		/obj/item/storage/pill_bottle/chem_tin/mentats = 1,
 		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/clothing/mask/chameleon = 1,
 		/obj/item/card/id/syndicate/anyone =1,
-		/obj/item/ammo_box/magazine/uzim9mm = 2,
 		/obj/item/clothing/head/f13/enclave/peacekeeper = 1
 		)
 
