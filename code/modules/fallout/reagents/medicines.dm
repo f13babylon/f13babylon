@@ -911,10 +911,10 @@
 					else if (iter_wound.wound_type == WOUND_PIERCE || iter_wound.wound_type == WOUND_SLASH)
 						iter_wound.blood_flow -= clot_rate
 
-	M.hallucination = max(M.hallucination, is_on_tribal ? 0 : 22.5)
-	M.set_dizziness(max(M.dizziness, is_on_tribal ? 0 : 22.5))
-	M.confused = max(M.confused, is_on_tribal ? 0 : 22.5)
-	M.jitteriness = max(M.jitteriness, is_on_tribal ? 0 : 22.5)
+	M.hallucination = max(M.hallucination, affecting_tribal ? 0 : 25)
+	M.jitteriness = max(M.jitteriness, affecting_tribal ? 0 : 100)
+	M.set_dizziness(max(M.dizziness, affecting_tribal ? 0 : 15))
+	M.confused = max(M.confused, affecting_tribal ? 0 : 10)
 	..()
 
 /datum/reagent/medicine/hydra/overdose_process(mob/living/carbon/M)
@@ -952,10 +952,11 @@
 							iter_wound.replace_wound(/datum/wound/slash/critical)
 						else
 							iter_wound.blood_flow += clot_rate
-	M.hallucination = max(M.hallucination, 22.5)
-	M.set_dizziness(max(M.dizziness, 22.5))
-	M.confused = max(M.confused, 22.5)
-	M.jitteriness = max(M.jitteriness, 22.5)
+	M.hallucination = max(M.hallucination, 25)
+	M.jitteriness = max(M.jitteriness, 300)
+	M.druggy = max(M.druggy, 15)
+	M.set_dizziness(max(M.dizziness, 15))
+	M.confused = max(M.confused, 10)
 
 /datum/reagent/medicine/hydra/addiction_act_stage1(mob/living/carbon/M)
 	if(prob(33))
