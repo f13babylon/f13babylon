@@ -315,6 +315,12 @@
 	build_path = /obj/item/ammo_box/shotgun/slug
 	category = list("initial", "Basic Ammo")
 
+/datum/design/ammolathe/trainshot
+	name = "trainshot shotgun box"
+	id = "trainshot"
+	materials = list(/datum/material/iron = 8000, /datum/material/blackpowder = 1800)
+	build_path = /obj/item/ammo_box/shotgun/trainshot
+	category = list("initial", "Intermediate Ammo")
 
 /datum/design/ammolathe/a762
 	name = "7.62 FMJ ammo box"
