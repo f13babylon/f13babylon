@@ -39,10 +39,11 @@
 		M.emote(pick("twitch","drool","moan","giggle"))
 
 	//Debuffs applied to people with TRAIT_STRAIGHT_EDGE
-	M.hallucination = max(M.hallucination, affecting_straight_edge_mob ? 22.5 : 0)
-	M.jitteriness = max(M.jitteriness, affecting_straight_edge_mob ? 22.5 : 0)
-	M.set_dizziness(max(M.dizziness, affecting_straight_edge_mob ? 22.5 : 0))
-	M.confused = max(M.confused, affecting_straight_edge_mob ? 22.5 : 0)
+	M.hallucination = max(M.hallucination, affecting_straight_edge_mob ? 25 : 0)
+	M.jitteriness = max(M.jitteriness, affecting_straight_edge_mob ? 300 : 0)
+	M.set_dizziness(max(M.dizziness, affecting_straight_edge_mob ? 15 : 0))
+	M.druggy = max(M.druggy, affecting_straight_edge_mob ? 15 : 0)
+	M.confused = max(M.confused, affecting_straight_edge_mob ? 10 : 0)
 	M.set_disgust(max(M.disgust, affecting_straight_edge_mob ? DISGUST_LEVEL_DISGUSTED : 0))
 	. = TRUE
 	..()
@@ -136,10 +137,11 @@
 		M.emote(pick("twitch", "shiver"))
 
 	//Debuffs applied to people with TRAIT_STRAIGHT_EDGE
-	M.hallucination = max(M.hallucination, affecting_straight_edge_mob ? 22.5 : 0)
-	M.jitteriness = max(M.jitteriness, affecting_straight_edge_mob ? 22.5 : 0)
-	M.set_dizziness(max(M.dizziness, affecting_straight_edge_mob ? 22.5 : 0))
-	M.confused = max(M.confused, affecting_straight_edge_mob ? 22.5 : 0)
+	M.hallucination = max(M.hallucination, affecting_straight_edge_mob ? 25 : 0)
+	M.jitteriness = max(M.jitteriness, affecting_straight_edge_mob ? 300 : 0)
+	M.set_dizziness(max(M.dizziness, affecting_straight_edge_mob ? 15 : 0))
+	M.druggy = max(M.druggy, affecting_straight_edge_mob ? 15 : 0)
+	M.confused = max(M.confused, affecting_straight_edge_mob ? 10 : 0)
 	M.set_disgust(max(M.disgust, affecting_straight_edge_mob ? DISGUST_LEVEL_DISGUSTED : 0))
 	. = TRUE
 	..()
@@ -238,10 +240,11 @@
 	M.Jitter(2)
 
 	//Debuffs applied to people with TRAIT_STRAIGHT_EDGE
-	M.hallucination = max(M.hallucination, affecting_straight_edge_mob ? 22.5 : 0)
-	M.jitteriness = max(M.jitteriness, affecting_straight_edge_mob ? 22.5 : 0)
-	M.set_dizziness(max(M.dizziness, affecting_straight_edge_mob ? 22.5 : 0))
-	M.confused = max(M.confused, affecting_straight_edge_mob ? 22.5 : 0)
+	M.hallucination = max(M.hallucination, affecting_straight_edge_mob ? 25 : 0)
+	M.jitteriness = max(M.jitteriness, affecting_straight_edge_mob ? 300 : 0)
+	M.set_dizziness(max(M.dizziness, affecting_straight_edge_mob ? 15 : 0))
+	M.druggy = max(M.druggy, affecting_straight_edge_mob ? 15 : 0)
+	M.confused = max(M.confused, affecting_straight_edge_mob ? 10 : 0)
 	M.set_disgust(max(M.disgust, affecting_straight_edge_mob ? DISGUST_LEVEL_DISGUSTED : 0))
 	. = TRUE
 	..()
@@ -346,10 +349,11 @@
 	M.AdjustKnockdown(-10*REAGENTS_EFFECT_MULTIPLIER, 0)
 
 	//Debuffs applied to people with TRAIT_STRAIGHT_EDGE
-	M.hallucination = max(M.hallucination, affecting_straight_edge_mob ? 22.5 : 0)
-	M.jitteriness = max(M.jitteriness, affecting_straight_edge_mob ? 22.5 : 0)
-	M.set_dizziness(max(M.dizziness, affecting_straight_edge_mob ? 22.5 : 0))
-	M.confused = max(M.confused, affecting_straight_edge_mob ? 22.5 : 0)
+	M.hallucination = max(M.hallucination, affecting_straight_edge_mob ? 25 : 0)
+	M.jitteriness = max(M.jitteriness, affecting_straight_edge_mob ? 300 : 0)
+	M.set_dizziness(max(M.dizziness, affecting_straight_edge_mob ? 15 : 0))
+	M.druggy = max(M.druggy, affecting_straight_edge_mob ? 15 : 0)
+	M.confused = max(M.confused, affecting_straight_edge_mob ? 10 : 0)
 	M.set_disgust(max(M.disgust, affecting_straight_edge_mob ? DISGUST_LEVEL_DISGUSTED : 0))
 	. = TRUE
 	..()

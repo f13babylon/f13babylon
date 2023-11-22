@@ -15,7 +15,6 @@
 	var/list/reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder, /datum/reagent/medicine/stimpak/imitation)
 	var/affecting_intolerant_mob = FALSE	//If it is affecting a mob with TRAIT_STIM_INTOLERANCE
 	var/damage_offset = 3	//Value to offset damage by
-	var/debuff_rate = 10	//Value for debuffs for mobs with TRAIT_STIM_INTOLERANCE
 	var/inhale_toxloss_factor = 3.5	//Value to adjust toxloss by when inhaled/ingested
 	var/clot_rate = 0.35	//35% as effective as Hydra at clotting bleeding wounds
 
@@ -84,19 +83,21 @@
 		. = TRUE
 
 	//Debuffs applied to people with TRAIT_STIM_INTOLERANCE
-	M.hallucination = max(M.hallucination, affecting_intolerant_mob ? debuff_rate : 0)
-	M.jitteriness = max(M.jitteriness, affecting_intolerant_mob ? debuff_rate : 0)
-	M.set_dizziness(max(M.dizziness, affecting_intolerant_mob ? debuff_rate : 0))
-	M.confused = max(M.confused, affecting_intolerant_mob ? debuff_rate : 0)
+	M.hallucination = max(M.hallucination, affecting_intolerant_mob ? 25 : 0)
+	M.jitteriness = max(M.jitteriness, affecting_intolerant_mob ? 300 : 0)
+	M.set_dizziness(max(M.dizziness, affecting_intolerant_mob ? 15 : 0))
+	M.druggy = max(M.druggy, affecting_intolerant_mob ? 15 : 0)
+	M.confused = max(M.confused, affecting_intolerant_mob ? 10 : 0)
 	M.set_disgust(max(M.disgust, affecting_intolerant_mob ? DISGUST_LEVEL_DISGUSTED : 0))
 	..()
 
 /datum/reagent/medicine/stimpak/overdose_process(mob/living/carbon/M)
-	M.adjustToxLoss(damage_offset * 2.5 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxyloss offset
-	M.adjustOxyLoss((damage_offset * 2.5 + (damage_offset * 0.66)) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxyloss offset + base oxyloss offset
-	M.jitteriness = max(M.jitteriness, debuff_rate)
-	M.set_dizziness(max(M.dizziness, debuff_rate))
-	M.confused = max(M.confused, debuff_rate)
+	M.adjustToxLoss(damage_offset * 1.25 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//125% of oxyloss offset
+	M.adjustOxyLoss((damage_offset * 1.25 + (damage_offset * 0.66)) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//125% of oxyloss offset + base oxyloss offset
+	M.jitteriness = max(M.jitteriness, 300)
+	M.set_dizziness(max(M.dizziness, 15))
+	M.druggy = max(M.druggy, 15)
+	M.confused = max(M.confused, 10)
 	. = TRUE
 
 // ---------------------------
@@ -109,7 +110,6 @@
 	value = REAGENT_VALUE_UNCOMMON
 	reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder, /datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
 	damage_offset = 2.25	//How much damage will be offset in one tick
-	debuff_rate = 7.5	//What the value of debuffs for mobs with TRAIT_STIM_INTOLERANCE and currently ODing mobs will be
 	inhale_toxloss_factor = 2.625	//How much toxloss is multiplied by the volume of the chemical if ingested/inhaled
 	clot_rate = 0.26	//26% as effective as Hydra at clotting bleeding wounds
 
@@ -122,7 +122,6 @@
 	value = REAGENT_VALUE_VERY_RARE
 	reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder, /datum/reagent/medicine/stimpak/superimitation, /datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
 	damage_offset = 6.75	//How much damage will be offset in one tick
-	debuff_rate = 22.5	//What the value of debuffs for mobs with TRAIT_STIM_INTOLERANCE and currently ODing mobs will be
 	inhale_toxloss_factor = 5.25	//How much toxloss is multiplied by the volume of the chemical if ingested/inhaled
 	clot_rate = 0.65	//65% as effective as Hydra at clotting bleeding wounds
 
@@ -136,7 +135,6 @@
 	reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder, /datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
 	value = REAGENT_VALUE_RARE
 	damage_offset = 5	//How much damage will be offset in one tick
-	debuff_rate = 17	//What the value of debuffs for mobs with TRAIT_STIM_INTOLERANCE and currently ODing mobs will be
 	inhale_toxloss_factor = 4	//How much toxloss is multiplied by the volume of the chemical if ingested/inhaled
 	clot_rate = 0.49	//49% as effective as Hydra at clotting bleeding wounds
 
@@ -255,7 +253,7 @@
 	ghoulfriendly = TRUE
 	var/list/reagent_blacklist = list(/datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder,  /datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak/superimitation ,/datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
 	var/damage_offset = 0
-	var/is_on_tribal = FALSE
+	var/affecting_tribal = FALSE
 
 /datum/reagent/medicine/bitterdrink/reaction_mob(mob/living/M, method, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
@@ -269,7 +267,7 @@
 /datum/reagent/medicine/bitterdrink/on_mob_add(mob/living/carbon/M)
 	if(HAS_TRAIT(M, TRAIT_TRIBAL))
 		damage_offset =  5.4 * REAGENTS_EFFECT_MULTIPLIER
-		is_on_tribal = TRUE
+		affecting_tribal = TRUE
 	else
 		damage_offset = 4 * REAGENTS_EFFECT_MULTIPLIER
 	..()
@@ -283,7 +281,7 @@
 				break
 	if(!is_blocked)
 		//Extra healing for each bodypart affected by wounds
-		if(is_on_tribal)
+		if(affecting_tribal)
 			if(M.all_wounds && M.all_wounds.len >= 1)
 				var/added_damage_offset = 3
 				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
@@ -302,18 +300,21 @@
 		M.adjustStaminaLoss(-damage_offset * 0.66, FALSE)	//66% of damage_offset (3.6 / 2.64)
 		. = TRUE
 
-	M.hallucination = max(M.hallucination, is_on_tribal ? 0 : 18)
-	M.set_dizziness(max(M.dizziness, is_on_tribal ? 0 : 18))
-	M.confused = max(M.confused, is_on_tribal ? 0 : 18)
+	M.hallucination = max(M.hallucination, affecting_tribal ? 0 : 25)
+	M.jitteriness = max(M.jitteriness, affecting_tribal ? 0 : 100)
+	M.set_dizziness(max(M.dizziness, affecting_tribal ? 0 : 15))
+	M.confused = max(M.confused, affecting_tribal ? 0 : 10)
 	M.set_disgust(max(M.disgust, is_on_tribal ? 0 : DISGUST_LEVEL_DISGUSTED))
 	..()
 
 /datum/reagent/medicine/bitterdrink/overdose_process(mob/living/carbon/M)
-	M.adjustToxLoss((damage_offset * 0.66 * 2.5 + (damage_offset * 0.66)) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of tox damage_offset + base tox damage_offset
-	M.adjustOxyLoss((damage_offset * 0.66 * 2.5 + (damage_offset * 0.66)) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy damage_offset + base oxy damage_offset
-	M.hallucination = max(M.hallucination, 18)
-	M.set_dizziness(max(M.dizziness, 18))
-	M.confused = max(M.confused, 18)
+	M.adjustToxLoss((damage_offset * 0.66 * 1.25 + (damage_offset * 0.66)) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//125% of tox damage_offset + base tox damage_offset
+	M.adjustOxyLoss((damage_offset * 0.66 * 1.25 + (damage_offset * 0.66)) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//125% of oxy damage_offset + base oxy damage_offset
+	M.hallucination = max(M.hallucination, 25)
+	M.jitteriness = max(M.jitteriness, 300)
+	M.druggy = max(M.druggy, 15)
+	M.set_dizziness(max(M.dizziness, 15))
+	M.confused = max(M.confused, 10)
 	M.set_disgust(max(M.disgust, DISGUST_LEVEL_DISGUSTED))
 	. = TRUE
 	..()
@@ -333,7 +334,7 @@
 	ghoulfriendly = TRUE
 	var/list/reagent_blacklist = list(/datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak/superimitation ,/datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
 	var/damage_offset = 0
-	var/is_on_tribal = FALSE
+	var/affecting_tribal = FALSE
 
 /datum/reagent/medicine/healingpowder/reaction_mob(mob/living/M, method, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
@@ -346,7 +347,7 @@
 /datum/reagent/medicine/healingpowder/on_mob_add(mob/living/carbon/M)
 	if(HAS_TRAIT(M, TRAIT_TRIBAL))
 		damage_offset =  2.25 * REAGENTS_EFFECT_MULTIPLIER
-		is_on_tribal = TRUE
+		affecting_tribal = TRUE
 	else
 		damage_offset = 1.7 * REAGENTS_EFFECT_MULTIPLIER
 	..()
@@ -360,7 +361,7 @@
 				break
 	if(!is_blocked)
 		//Extra healing for each bodypart affected by wounds
-		if(is_on_tribal)
+		if(affecting_tribal)
 			if(M.all_wounds && M.all_wounds.len >= 1)
 				var/added_damage_offset = 1
 				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
@@ -378,16 +379,19 @@
 		M.adjustStaminaLoss(-damage_offset * 0.66, FALSE)	//66% of damage_offset (1.5 / 1.1)
 		. = TRUE
 
-	M.hallucination = max(M.hallucination, is_on_tribal ? 0 : 7.5)
-	M.set_dizziness(max(M.dizziness, is_on_tribal ? 0 : 7.5))
-	M.confused = max(M.confused, is_on_tribal ? 0 : 7.5)
+	M.hallucination = max(M.hallucination, affecting_tribal ? 0 : 25)
+	M.jitteriness = max(M.jitteriness, affecting_tribal ? 0 : 100)
+	M.set_dizziness(max(M.dizziness, affecting_tribal ? 0 : 15))
+	M.confused = max(M.confused, affecting_tribal ? 0 : 10)
 	..()
 
 /datum/reagent/medicine/healingpowder/overdose_process(mob/living/carbon/M)
-	M.adjustToxLoss((6.75 * 2.5 + 6.75) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of oxy damage_offset + base oxy damage_offset
-	M.hallucination = max(M.hallucination, 7.5)
-	M.set_dizziness(max(M.dizziness, 7.5))
-	M.confused = max(M.confused, 7.5)
+	M.adjustToxLoss((6.75 * 1.25 + 6.75) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//125% of oxy damage_offset + base oxy damage_offset
+	M.hallucination = max(M.hallucination, 25)
+	M.jitteriness = max(M.jitteriness, 300)
+	M.druggy = max(M.druggy, 15)
+	M.set_dizziness(max(M.dizziness, 15))
+	M.confused = max(M.confused, 10)
 	. = TRUE
 	..()
 
@@ -406,7 +410,7 @@
 	ghoulfriendly = TRUE
 	var/list/reagent_blacklist = list(/datum/reagent/medicine/healingpowder, /datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak/superimitation ,/datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
 	var/damage_offset = 0
-	var/is_on_tribal = FALSE
+	var/affecting_tribal = FALSE
 
 /datum/reagent/medicine/healingpoultice/reaction_mob(mob/living/M, method, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
@@ -419,7 +423,7 @@
 /datum/reagent/medicine/healingpoultice/on_mob_add(mob/living/carbon/M)
 	if(HAS_TRAIT(M, TRAIT_TRIBAL))
 		damage_offset =  3.5 * REAGENTS_EFFECT_MULTIPLIER
-		is_on_tribal = TRUE
+		affecting_tribal = TRUE
 	else
 		damage_offset = 2.6 * REAGENTS_EFFECT_MULTIPLIER //75% of damage_offset for mobs with TRAIT_TRIBAL
 	..()
@@ -433,7 +437,7 @@
 				break
 	if(!is_blocked)
 		//Extra healing for each bodypart affected by wounds
-		if(is_on_tribal)
+		if(affecting_tribal)
 			if(M.all_wounds && M.all_wounds.len >= 1)
 				var/added_damage_offset = 2
 				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
@@ -453,16 +457,19 @@
 		M.adjustStaminaLoss(-damage_offset * 0.66, FALSE)	//66% of damage_offset (2.3 / 1.7)
 		. = TRUE
 
-	M.hallucination = max(M.hallucination, is_on_tribal ? 0 : 11.5)
-	M.set_dizziness(max(M.dizziness, is_on_tribal ? 0 : 11.5))
-	M.confused = max(M.confused, is_on_tribal ? 0 : 11.5)
+	M.hallucination = max(M.hallucination, affecting_tribal ? 0 : 25)
+	M.jitteriness = max(M.jitteriness, affecting_tribal ? 0 : 100)
+	M.set_dizziness(max(M.dizziness, affecting_tribal ? 0 : 15))
+	M.confused = max(M.confused, affecting_tribal ? 0 : 10)
 	..()
 
 /datum/reagent/medicine/healingpoultice/overdose_process(mob/living/carbon/M)
-	M.adjustOxyLoss((6.75 * 2.5 + 6.75) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//250% of tox damage_offset + base tox damage_offset
-	M.hallucination = max(M.hallucination, 11.5)
-	M.set_dizziness(max(M.dizziness, 11.5))
-	M.confused = max(M.confused, 11.5)
+	M.adjustOxyLoss((6.75 * 1.25 + 6.75) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//125% of tox damage_offset + base tox damage_offset
+	M.hallucination = max(M.hallucination, 25)
+	M.jitteriness = max(M.jitteriness, 300)
+	M.druggy = max(M.druggy, 15)
+	M.set_dizziness(max(M.dizziness, 15))
+	M.confused = max(M.confused, 10)
 	. = TRUE
 	..()
 
