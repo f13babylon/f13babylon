@@ -18894,6 +18894,10 @@
 "bpv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/tracks,
+/obj/structure/ladder/unbreakable{
+	id = "Oasisraiderdeathclawbunker";
+	height = 1
+	},
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
 	},
@@ -43735,6 +43739,13 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"oxm" = (
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = "GAPADbunker"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "oxz" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottombordertop2"
@@ -56309,6 +56320,14 @@
 "vOV" = (
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/west)
+"vPi" = (
+/obj/effect/decal/remains/human,
+/obj/structure/ladder/unbreakable{
+	id = "Smallflytrapbunker";
+	height = 1
+	},
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "vPC" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -74320,7 +74339,7 @@ fZB
 fZB
 aaB
 qDz
-aaB
+oxm
 xND
 qDz
 guj
@@ -102884,7 +102903,7 @@ aaQ
 aaQ
 aaQ
 aWX
-gXC
+vPi
 pJF
 rHX
 xyU
