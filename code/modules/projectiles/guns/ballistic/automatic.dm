@@ -1185,7 +1185,7 @@
 	burst_shot_delay = 2
 	is_automatic = TRUE
 	automatic = 1
-	autofire_shot_delay = 2.5
+	autofire_shot_delay = 2
 	recoil = 0.6
 	can_suppress = FALSE
 	can_unsuppress = FALSE
@@ -1424,7 +1424,7 @@
 	burst_shot_delay = 3
 	is_automatic = TRUE
 	automatic = 1
-	autofire_shot_delay = 1.13
+	autofire_shot_delay = 1.5
 	spread = 12
 	can_attachments = FALSE
 	actions_types = null
