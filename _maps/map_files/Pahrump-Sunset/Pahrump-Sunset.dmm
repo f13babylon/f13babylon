@@ -206,7 +206,7 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
-	},
+	}, 
 /area/f13/building)
 "aaQ" = (
 /turf/closed/wall/f13/wood/house,
