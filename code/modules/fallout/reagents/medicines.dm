@@ -28,10 +28,11 @@
 	..()
 
 /datum/reagent/medicine/stimpak/on_mob_add(mob/living/carbon/M)
-	var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
-	if(istype(job))
-		if(job.faction == FACTION_LEGION)
-			SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
+	if(M.mind)
+		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
+		if(istype(job))
+			if(job.faction == FACTION_LEGION)
+				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
 	if(HAS_TRAIT(M, TRAIT_STIM_INTOLERANCE))
 		affecting_intolerant_mob = TRUE
 		to_chat(M, "<span class='userdanger'>You feel sick from the stimpak fluid in your body!</span>")
@@ -519,16 +520,18 @@
 	var/affecting_straight_edge_mob = FALSE
 
 /datum/reagent/medicine/medx/on_mob_add(mob/living/carbon/human/M)
-	var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
-	if(istype(job))
-		if(job.faction == FACTION_LEGION)
-			SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
-		to_chat(M, "<span class='notice'>You feel tougher, able to shrug off pain more easily.</span>")
-		M.maxHealth += 50
-		M.health += 50
+	if(M.mind)
+		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
+		if(istype(job))
+			if(job.faction == FACTION_LEGION)
+				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
 	if(HAS_TRAIT(M, TRAIT_STRAIGHT_EDGE))
 		affecting_straight_edge_mob = TRUE
 		to_chat(M, "<span class='userdanger'>You feel sick from the chems in your body!</span>")
+	else
+		to_chat(M, "<span class='notice'>You feel tougher, able to shrug off pain more easily.</span>")
+	M.maxHealth += 50
+	M.health += 50
 	..()
 
 /datum/reagent/medicine/medx/on_mob_delete(mob/living/carbon/human/M)

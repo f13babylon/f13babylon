@@ -8,19 +8,20 @@
 	var/affecting_straight_edge_mob = FALSE
 
 /datum/reagent/drug/jet/on_mob_add(mob/living/carbon/M)
-	if(isliving(M))
-		to_chat(M, "<span class='notice'>You feel an incredible high! You just absolutely love life in this moment!</span>")
-	var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
-	if(istype(job))
-		switch(job.faction)
-			if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD)
-				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "used drugs", /datum/mood_event/used_drugs, name)
-			if(FACTION_LEGION)
-				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
+	if(M.mind)
+		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
+		if(istype(job))
+			switch(job.faction)
+				if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD)
+					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "used drugs", /datum/mood_event/used_drugs, name)
+				if(FACTION_LEGION)
+					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
 	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "jet euphoria", /datum/mood_event/jet_euphoria, name)
 	if(HAS_TRAIT(M, TRAIT_STRAIGHT_EDGE))
 		affecting_straight_edge_mob = TRUE
 		to_chat(M, "<span class='userdanger'>You feel sick from the chems in your body!</span>")
+	else
+		to_chat(M, "<span class='notice'>You feel an incredible high! You just absolutely love life in this moment!</span>")
 	..()
 
 /datum/reagent/drug/jet/on_mob_delete(mob/living/carbon/M)
@@ -108,13 +109,14 @@
 	var/affecting_straight_edge_mob = FALSE
 
 /datum/reagent/drug/turbo/on_mob_add(mob/living/carbon/M)
-	var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
-	if(istype(job))
-		switch(job.faction)
-			if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD)
-				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "used drugs", /datum/mood_event/used_drugs, name)
-			if(FACTION_LEGION)
-				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
+	if(M.mind)
+		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
+		if(istype(job))
+			switch(job.faction)
+				if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD)
+					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "used drugs", /datum/mood_event/used_drugs, name)
+				if(FACTION_LEGION)
+					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
 	ADD_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
 	if(HAS_TRAIT(M, TRAIT_STRAIGHT_EDGE))
 		affecting_straight_edge_mob = TRUE
@@ -203,13 +205,14 @@
 	var/affecting_straight_edge_mob = FALSE
 
 /datum/reagent/drug/psycho/on_mob_add(mob/living/carbon/M)
-	var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
-	if(istype(job))
-		switch(job.faction)
-			if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD)
-				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "used drugs", /datum/mood_event/used_drugs, name)
-			if(FACTION_LEGION)
-				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
+	if(M.mind)
+		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
+		if(istype(job))
+			switch(job.faction)
+				if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD)
+					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "used drugs", /datum/mood_event/used_drugs, name)
+				if(FACTION_LEGION)
+					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
 	ADD_TRAIT(M, TRAIT_SLEEPIMMUNE, "[type]")
 	rage = new()
 	M.gain_trauma(rage, TRAUMA_RESILIENCE_ABSOLUTE)
@@ -313,31 +316,31 @@
 	var/affecting_straight_edge_mob = FALSE
 
 /datum/reagent/drug/buffout/on_mob_add(mob/living/carbon/M)
-	var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
-	if(istype(job))
-		switch(job.faction)
-			if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD)
-				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "used drugs", /datum/mood_event/used_drugs, name)
-			if(FACTION_LEGION)
-				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
-	if(isliving(M))
-		to_chat(M, "<span class='notice'>You feel stronger, and like you're able to endure more.</span>")
-		ADD_TRAIT(M, TRAIT_BUFFOUT_BUFF, "buffout")
-		ADD_TRAIT(M, TRAIT_PERFECT_ATTACKER, "buffout")
-		M.maxHealth += 25
-		M.health += 25
+	if(M.mind)
+		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
+		if(istype(job))
+			switch(job.faction)
+				if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD)
+					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "used drugs", /datum/mood_event/used_drugs, name)
+				if(FACTION_LEGION)
+					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
+	ADD_TRAIT(M, TRAIT_BUFFOUT_BUFF, "buffout")
+	ADD_TRAIT(M, TRAIT_PERFECT_ATTACKER, "buffout")
+	M.maxHealth += 25
+	M.health += 25
 	if(HAS_TRAIT(M, TRAIT_STRAIGHT_EDGE))
 		affecting_straight_edge_mob = TRUE
 		to_chat(M, "<span class='userdanger'>You feel sick from the chems in your body!</span>")
+	else
+		to_chat(M, "<span class='notice'>You feel stronger, and like you're able to endure more.</span>")
 	..()
 
 /datum/reagent/drug/buffout/on_mob_delete(mob/living/carbon/M)
-	if(isliving(M))
-		to_chat(M, "<span class='notice'>You feel weaker.</span>")
-		REMOVE_TRAIT(M, TRAIT_BUFFOUT_BUFF, "buffout")
-		REMOVE_TRAIT(M, TRAIT_PERFECT_ATTACKER, "buffout")
-		M.maxHealth -= 25
-		M.health -= 25
+	REMOVE_TRAIT(M, TRAIT_BUFFOUT_BUFF, "buffout")
+	REMOVE_TRAIT(M, TRAIT_PERFECT_ATTACKER, "buffout")
+	M.maxHealth -= 25
+	M.health -= 25
+	to_chat(M, "<span class='notice'>You feel weaker.</span>")
 	..()
 
 /datum/reagent/drug/buffout/on_mob_life(mob/living/carbon/M)
