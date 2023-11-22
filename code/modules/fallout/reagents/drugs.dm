@@ -94,8 +94,8 @@
 	M.Dizzy(15)
 	if(prob(50))
 		M.emote(pick("twitch","drool","moan"))
-	..()
 	. = TRUE
+	..()
 
 /datum/reagent/drug/turbo
 	name = "Turbo Inhalant"
@@ -153,9 +153,9 @@
 	if(prob(33))
 		M.visible_message("<span class='danger'>[M]'s hands flip out and flail everywhere!</span>")
 		M.drop_all_held_items()
-	..()
 	M.adjustToxLoss(2, updating_health = FALSE)
 	. = TRUE
+	..()
 
 /datum/reagent/drug/turbo/addiction_act_stage1(mob/living/carbon/M)
 	M.Jitter(5)
@@ -189,8 +189,8 @@
 	M.adjustToxLoss(6, updating_health = FALSE)
 	if(prob(50))
 		M.emote(pick("twitch","drool","moan"))
-	..()
 	. = TRUE
+	..()
 
 /datum/reagent/drug/psycho
 	name = "Psycho Fluid"
@@ -258,7 +258,6 @@
 	M.visible_message("<span class='userdanger'>[M] clutches at their chest as if their heart stopped!</span>")
 	to_chat(M, "<span class='danger'>Your vision goes black and your heart stops beating as the amount of drugs in your system shut down your organs one by one. Say hello to Elvis in the afterlife. </span>")
 	..()
-	return TRUE
 
 /datum/reagent/drug/psycho/addiction_act_stage1(mob/living/carbon/M)
 	M.hallucination += 10
@@ -267,7 +266,7 @@
 	if(prob(20))
 		M.emote(pick("twitch","scream","laugh"))
 	..()
-	return
+
 /datum/reagent/drug/psycho/addiction_act_stage2(mob/living/carbon/M)
 	M.hallucination += 20
 	M.Jitter(10)
@@ -276,7 +275,7 @@
 	if(prob(30))
 		M.emote(pick("twitch","scream","laugh"))
 	..()
-	return
+
 /datum/reagent/drug/psycho/addiction_act_stage3(mob/living/carbon/M)
 	M.hallucination += 30
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !ismovableatom(M.loc) && !isspaceturf(M.loc))
@@ -288,7 +287,7 @@
 	if(prob(40))
 		M.emote(pick("twitch","scream","laugh"))
 	..()
-	return
+
 /datum/reagent/drug/psycho/addiction_act_stage4(mob/living/carbon/M)
 	M.hallucination += 40
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !ismovableatom(M.loc) && !isspaceturf(M.loc))
@@ -301,7 +300,6 @@
 	if(prob(50))
 		M.emote(pick("twitch","scream","laugh"))
 	..()
-	return
 
 /datum/reagent/drug/buffout
 	name = "Buffout Powder"
@@ -373,7 +371,6 @@
 	if(prob(15))
 		M.emote(pick("twitch"))
 	..()
-	return
 
 /datum/reagent/drug/buffout/addiction_act_stage2(mob/living/carbon/M)
 	to_chat(M, "<span class='notice'>Your muscles feel incredibly sore.</span>")
@@ -383,7 +380,6 @@
 		M.drop_all_held_items()
 		M.emote(pick("twitch"))
 	..()
-	return
 
 /datum/reagent/drug/buffout/addiction_act_stage3(mob/living/carbon/M)
 	to_chat(M, "<span class='notice'>Your muscles start to hurt badly, and everything feels like it hurts more.</span>")
@@ -395,7 +391,6 @@
 		M.drop_all_held_items()
 		M.emote(pick("twitch"))
 	..()
-	return
 
 /datum/reagent/drug/buffout/addiction_act_stage4(mob/living/carbon/M)
 	to_chat(M, "<span class='danger'>Your muscles are in incredible pain! When will it stop!?</span>")
@@ -410,4 +405,3 @@
 		step(M, pick(GLOB.cardinals))
 	M.adjustOrganLoss(ORGAN_SLOT_HEART, 20)
 	..()
-	return
