@@ -52071,7 +52071,6 @@
 /area/f13/city/bighorn)
 "swu" = (
 /obj/machinery/vending/tool{
-	force_free = 1
 	},
 /turf/open/floor/wood/wood_wide,
 /area/f13/brotherhood)
@@ -61021,7 +61020,6 @@
 /area/f13/wasteland/bighorn)
 "xnx" = (
 /obj/machinery/vending/robotics{
-	force_free = 1
 	},
 /turf/open/floor/wood/wood_wide,
 /area/f13/brotherhood)
