@@ -790,7 +790,7 @@
 /obj/structure/sign/poster/contraband/ncrpropaganda
 	name = "Never Trust a Legionary"
 	desc = "A picture of a mustached man in a fedora tipping his fedora towards the viewer with the text: 'Never trust a dude who went Caesar's Legion unironically"
-	icon_state = "poster60"
+	icon_state = "poster95"
 
 #undef PLACE_SPEED
 
