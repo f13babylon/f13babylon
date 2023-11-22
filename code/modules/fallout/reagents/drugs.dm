@@ -19,7 +19,7 @@
 				SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
 	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "jet euphoria", /datum/mood_event/jet_euphoria, name)
 	if(HAS_TRAIT(M, TRAIT_STRAIGHT_EDGE))
-		affecting_intolerant_mob = TRUE
+		affecting_straight_edge_mob = TRUE
 		to_chat(M, "<span class='userdanger'>You feel sick from the chems in your body!</span>")
 	..()
 
