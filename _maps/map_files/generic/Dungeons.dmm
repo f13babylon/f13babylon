@@ -3391,8 +3391,10 @@
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
 "ri" = (
-/mob/living/simple_animal/hostile/deathclaw/legendary,
-/turf/open/floor/plating/f13/inside/mountain,
+/mob/living/simple_animal/hostile/deathclaw/power_armor,
+/turf/open/floor/plating/f13/inside/mountain{
+	icon_state = "mountain2"
+	},
 /area/f13/bunker)
 "rj" = (
 /obj/effect/decal/cleanable/dirt,
@@ -5156,8 +5158,6 @@
 "Ar" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
-/obj/item/clothing/head/helmet/f13/power_armor/t51b,
-/obj/item/clothing/suit/armor/f13/power_armor/t51green,
 /turf/open/floor/plasteel/dark,
 /area/f13/bunker)
 "As" = (
@@ -7346,6 +7346,8 @@
 /obj/structure/closet/crate,
 /obj/item/organ/ears/cat,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/superhigh,
+/obj/item/clothing/suit/armor/f13/power_armor/t51green,
+/obj/item/clothing/head/helmet/f13/power_armor/t51b,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "LF" = (
@@ -10035,6 +10037,7 @@
 /obj/effect/turf_decal/bot,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet,
+/obj/item/book/granter/trait/pa_wear,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 1
 	},
@@ -14299,8 +14302,8 @@ Qy
 Qy
 SU
 jA
+jA
 ri
-nK
 jA
 aZ
 Nm
