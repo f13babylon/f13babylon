@@ -52070,8 +52070,7 @@
 /turf/closed/wall/f13/wood/interior,
 /area/f13/city/bighorn)
 "swu" = (
-/obj/machinery/vending/tool{
-	},
+/obj/machinery/vending/tool,
 /turf/open/floor/wood/wood_wide,
 /area/f13/brotherhood)
 "swF" = (
@@ -61019,8 +61018,7 @@
 	},
 /area/f13/wasteland/bighorn)
 "xnx" = (
-/obj/machinery/vending/robotics{
-	},
+/obj/machinery/vending/robotics,
 /turf/open/floor/wood/wood_wide,
 /area/f13/brotherhood)
 "xoc" = (
