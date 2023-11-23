@@ -12,8 +12,8 @@ Contents:
 
 
 /obj/item/clothing/suit/space/space_ninja
-	name = "ninja suit"
-	desc = "A unique, vacuum-proof suit of nano-enhanced armor designed specifically for Spider Clan assassins."
+	name = "Stealth suit"
+	desc = "A repurposed chinese stealth suit, who knows what this thing is capable of, it has a small BoS logo on the back"
 	icon_state = "s-ninja"
 	item_state = "s-ninja_suit"
 	slowdown = 1
@@ -29,7 +29,6 @@ Contents:
 	var/datum/effect_system/spark_spread/spark_system
 	var/datum/techweb/stored_research
 	var/obj/item/disk/tech_disk/t_disk//To copy design onto disk.
-	var/obj/item/energy_katana/energyKatana //For teleporting the katana back to the ninja (It's an ability)
 
 		//Other articles of ninja gear worn together, used to easily reference them after initializing.
 	var/obj/item/clothing/head/helmet/space/space_ninja/n_hood
@@ -72,26 +71,9 @@ Contents:
 
 	//Cell Init
 	cell = new/obj/item/stock_parts/cell/high
-	cell.charge = 9000
-	cell.name = "black power cell"
+	cell.charge = 100000000
+	cell.name = "Advanced Fusion Cell"
 	cell.icon_state = "bscell"
-
-/obj/item/clothing/suit/space/space_ninja/Destroy()
-	QDEL_NULL(spark_system)
-	QDEL_NULL(n_hood)
-	QDEL_NULL(n_gloves)
-	QDEL_NULL(n_shoes)
-	QDEL_NULL(cell)
-	stored_research = null
-	affecting = null
-	return ..()
-
-//Simply deletes all the attachments and self, killing all related procs.
-/obj/item/clothing/suit/space/space_ninja/proc/terminate()
-	qdel(n_hood)
-	qdel(n_gloves)
-	qdel(n_shoes)
-	qdel(src)
 
 
 //Randomizes suit parameters.
