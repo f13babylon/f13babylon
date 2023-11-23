@@ -12,7 +12,7 @@ Contents:
 
 
 /obj/item/clothing/suit/space/space_ninja
-	name = "Stealth suit"
+	name = "ninja suit"
 	desc = "A repurposed chinese stealth suit, who knows what this thing is capable of, it has a small BoS logo on the back"
 	icon_state = "s-ninja"
 	item_state = "s-ninja_suit"
