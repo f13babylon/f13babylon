@@ -212,7 +212,7 @@ Proctor
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ,  REF(src))
 	ADD_TRAIT(H, TRAIT_SURGERY_HIGH,  REF(src))
 	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
-//	ADD_TRAIT(H, TRAIT_POOR_AIM,  REF(src))
+//	ADD_TRAIT(H, TRAIT_POOR_AIM,   REF(src))
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/AER9)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/AEP7)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/sniper)
