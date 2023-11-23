@@ -191,13 +191,11 @@
 /obj/item/reagent_containers/hypospray/medipen/stimpak/custom
 	desc = "A syringe filled with a mysterious cocktail of chemicals."
 	list_reagents = null
-	self_delay = 0
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak/imitation
 	name = "imitation stimpak"
 	desc = "A syringe filled with a chemical which aims to replicate the effects of the fluid found in pre-war stimpaks, albeit less effective."
 	list_reagents = list(/datum/reagent/medicine/stimpak/imitation = 10)
-	self_delay = 0
 
 // ---------------------------------
 // SUPER STIMPAK
@@ -208,14 +206,12 @@
 	icon_state = "hypo_superstimpak"
 	amount_per_transfer_from_this = 10
 	list_reagents = list(/datum/reagent/medicine/stimpak/super = 10)
-	self_delay = 0
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super/custom
 	desc = "A large syringe with a leather strap attached to it, filled with a mysterious cocktail of chemicals."
 	volume = 20
 	amount_per_transfer_from_this = 20
 	list_reagents = null
-	self_delay = 0
 
 // ---------------------------------
 // MED-X
