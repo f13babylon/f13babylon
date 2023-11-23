@@ -173,23 +173,23 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 // PRIESTESS
 
-/datum/job/CaesarsLegion/Legionnaire/f13priestess
+/datum/job/CaesarsLegion/f13priestess
 	title = "Legion Priestess"
 	flag = F13ORATOR
 	supervisors = "Centurion"
 	selection_color = "#ffdddd"
 	total_positions = 1
 	spawn_positions = 1
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13priestess
+	outfit = /datum/outfit/job/CaesarsLegion/f13priestess
 	display_order = JOB_DISPLAY_ORDER_PRIESTESS
 	access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	roleplay_exclusive_notify = 1
 	exp_requirements = 0
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13priestess
+/datum/outfit/job/CaesarsLegion/f13priestess
 	name = "Priestess of Mars"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13priestess
+	jobtype = /datum/job/CaesarsLegion/f13priestess
 	uniform = /obj/item/clothing/under/f13/pmarsrobe
 	head = /obj/item/clothing/head/helmet/f13/legion/marsheaddress
 	shoes = /obj/item/clothing/shoes/roman
@@ -204,7 +204,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/stack/medical/bone_gel = 1,
 		)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13priestess/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/f13priestess/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -212,6 +212,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ,  REF(src))
 	ADD_TRAIT(H, TRAIT_MARS_TEACH,  REF(src))
+	ADD_TRAIT(H, TRAIT_TRIBAL,  REF(src))
 
 /////////////////
 //// Officers ///
@@ -1138,6 +1139,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	ADD_TRAIT(H, TRAIT_SURGERY_LOW,  REF(src))
 	ADD_TRAIT(H, TRAIT_MARS_TEACH,  REF(src))
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK,  REF(src))
+	ADD_TRAIT(H, TRAIT_TRIBAL,  REF(src))
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tailor/legionuniform)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/warpaint)
 
