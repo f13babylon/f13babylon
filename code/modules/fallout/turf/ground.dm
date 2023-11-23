@@ -316,7 +316,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 //	step_sounds = list("human" = "erikafootsteps")
 
-/turf/open/indestructible/ground/outside/ruins/ex_act(severity, target)
+/*/turf/open/indestructible/ground/outside/ruins/ex_act(severity, target)
 	contents_explosion(severity, target)
 	switch(severity)
 		if(4)
@@ -329,7 +329,7 @@
 			if(prob(50))
 				ChangeTurf(baseturfs)
 		if(1)
-			ChangeTurf(baseturfs)
+			ChangeTurf(baseturfs)*/
 
 /turf/open/indestructible/ground/outside/wood
 	name = "\proper wood planks"

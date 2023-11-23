@@ -210,12 +210,12 @@
 		send_news_report()
 	//fortuna addition. list of random names for the roundend news author
 	var/list/publisher = list("Babylon Publishing",
-							  "FoA News",
+							  "Followers Administrator",
 							  "Great Khan Storyteller",
 							  "Legion Orator",
 							  "NCR Intelligence",
 							  "Tribal Rumors",
-							  "BoS Survey Team",
+							  "Brotherhood Survey Team",
 							  "Enclave Propaganda")
 	//tell the nice people on discord what went on before the salt cannon happens.
 	// send2chat sending the new round ping off
