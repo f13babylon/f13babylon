@@ -19285,6 +19285,11 @@
 	icon_state = "horizontaltopborderbottom0"
 	},
 /area/f13/underground/cave)
+"wJG" = (
+/obj/structure/table/booth,
+/obj/item/reagent_containers/food/snacks/salad/fruit,
+/turf/open/floor/f13/wood,
+/area/f13/city)
 "wJN" = (
 /obj/machinery/light{
 	dir = 4
@@ -31466,7 +31471,7 @@ qtj
 kiI
 sfc
 cUT
-skq
+wJG
 jKU
 akh
 akh
