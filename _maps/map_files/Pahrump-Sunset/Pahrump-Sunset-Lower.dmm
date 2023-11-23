@@ -19910,14 +19910,6 @@
 /obj/structure/sign/departments/security,
 /turf/closed/wall/r_wall/f13/vault,
 /area/f13/brotherhood/armory)
-"wJG" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/ladder/unbreakable{
-	height = 1;
-	id = "Bigchewchewbunker"
-	},
-/turf/open/floor/plating,
-/area/f13/building/museum)
 "wKh" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -57248,7 +57240,7 @@ sib
 bEi
 djZ
 qqW
-wJG
+wtX
 pqy
 vgq
 djZ
