@@ -51,6 +51,7 @@
 	list_reagents = list(/datum/reagent/drug/jet = 10)
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "patch_jet"
+	self_delay = 10
 
 // ---------------------------------
 // TURBO
@@ -61,6 +62,7 @@
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "patch_turbo"
 	list_reagents = list(/datum/reagent/drug/turbo = 5)
+	self_delay = 10
 
 // ---------------------------------
 // HEALING POWDER
@@ -71,7 +73,7 @@
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "patch_healingpowder"
 	list_reagents = list(/datum/reagent/medicine/healingpowder = 10)
-	self_delay = 5
+	self_delay = 0
 
 // ---------------------------------
 // HEALING POULTICE
@@ -82,7 +84,7 @@
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	list_reagents = list(/datum/reagent/medicine/healingpoultice = 10)
 	icon_state = "patch_healingpoultice"
-	self_delay = 10
+	self_delay = 0
 
 // ---------------------------------
 // CUSTOM POWDER
@@ -94,7 +96,7 @@
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "patch_healingpowder"
 	color = COLOR_PALE_GREEN_GRAY
-	self_delay = 30
+	self_delay = 0
 
 // ---------------------------------
 // BITTER DRINK
@@ -105,7 +107,7 @@
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "patch_bitterdrink"
 	list_reagents = list(/datum/reagent/medicine/bitterdrink = 15)
-	self_delay = 15
+	self_delay = 0
 
 // ---------------------------------
 // HYDRA
@@ -116,6 +118,7 @@
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "patch_hydra"
 	list_reagents = list(/datum/reagent/medicine/hydra = 10)
+	self_delay = 10
 
 // ---------------------------------
 // BERSERKER POWDER
@@ -126,6 +129,7 @@
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	list_reagents = list(/datum/reagent/medicine/berserker_powder = 10)
 	icon_state = "patch_berserkerpowder"
+	self_delay = 0
 
 // ---------------------------------
 // Natural Painkiller
@@ -136,3 +140,4 @@
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	list_reagents = list(/datum/reagent/medicine/naturalpainkiller = 10)
 	icon_state = "patch_naturalpainkiller"
+	self_delay = 0

@@ -162,7 +162,7 @@
 	volume = 10
 	amount_per_transfer_from_this = 10
 	list_reagents = list(/datum/reagent/medicine/stimpak = 10)
-	var/self_delay = 10
+	var/self_delay = 0
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak/attack(mob/M, mob/user)
 	if(!reagents.total_volume)
@@ -191,13 +191,13 @@
 /obj/item/reagent_containers/hypospray/medipen/stimpak/custom
 	desc = "A syringe filled with a mysterious cocktail of chemicals."
 	list_reagents = null
-	self_delay = 20
+	self_delay = 0
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak/imitation
 	name = "imitation stimpak"
 	desc = "A syringe filled with a chemical which aims to replicate the effects of the fluid found in pre-war stimpaks, albeit less effective."
 	list_reagents = list(/datum/reagent/medicine/stimpak/imitation = 10)
-	self_delay = 5
+	self_delay = 0
 
 // ---------------------------------
 // SUPER STIMPAK
@@ -208,14 +208,14 @@
 	icon_state = "hypo_superstimpak"
 	amount_per_transfer_from_this = 10
 	list_reagents = list(/datum/reagent/medicine/stimpak/super = 10)
-	self_delay = 20
+	self_delay = 0
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super/custom
 	desc = "A large syringe with a leather strap attached to it, filled with a mysterious cocktail of chemicals."
 	volume = 20
 	amount_per_transfer_from_this = 20
 	list_reagents = null
-	self_delay = 30
+	self_delay = 0
 
 // ---------------------------------
 // MED-X
@@ -228,7 +228,7 @@
 	volume = 15
 	amount_per_transfer_from_this = 5
 	list_reagents = list(/datum/reagent/medicine/medx = 15)
-	var/self_delay = 30
+	var/self_delay = 10
 
 /obj/item/reagent_containers/hypospray/medipen/medx/attack(mob/living/M, mob/user)
 	if(!reagents.total_volume)
@@ -256,7 +256,7 @@
 	volume = 10
 	amount_per_transfer_from_this = 10
 	list_reagents = list(/datum/reagent/drug/psycho = 10)
-	var/self_delay = 30
+	var/self_delay = 10
 
 /obj/item/reagent_containers/hypospray/medipen/psycho/attack(mob/living/M, mob/user)
 	if(!reagents.total_volume)
