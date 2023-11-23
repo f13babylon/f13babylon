@@ -37,6 +37,7 @@ Main doors: ACCESS_CAPTAIN 20
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK,  REF(src))
+	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
 	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/boscombatarmor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/boscombathelmet)
