@@ -11,7 +11,7 @@
 	name = "plating"
 	icon_state = "plating"
 	intact = FALSE
-	baseturfs = /turf/open/indestructible/ground/outside/desert
+	baseturfs = /turf/open/indestructible/ground/outside/ruins
 	footstep = FOOTSTEP_PLATING
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW

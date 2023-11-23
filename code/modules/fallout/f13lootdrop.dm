@@ -723,7 +723,6 @@
 	lootcount = 1
 
 	loot = list(/obj/item/twohanded/thermic_lance,
-				/obj/item/twohanded/chainsaw,
 				/obj/item/twohanded/sledgehammer/rockethammer,
 				/obj/item/melee/powered/ripper,
 				/obj/item/melee/powerfist/f13,
@@ -911,7 +910,6 @@
 				/obj/item/gun/ballistic/automatic/pistol/ninemil/maria,
 				/obj/item/gun/ballistic/rifle/hunting/paciencia,
 				/obj/item/gun/ballistic/automatic/varmint/ratslayer,
-				/obj/item/gun/ballistic/automatic/assault_rifle/infiltrator,
 				/obj/item/gun/ballistic/revolver/colt357/lucky,
 				/obj/item/gun/ballistic/automatic/m1garand/oldglory,
 				/obj/item/gun/ballistic/automatic/marksman/sniper/gold,

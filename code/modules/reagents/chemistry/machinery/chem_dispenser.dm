@@ -540,23 +540,22 @@
 		/datum/reagent/iron,
 	)
 
-/obj/machinery/chem_dispenser/drinks/fullupgrade //fully ugpraded stock parts, emagged
-	desc = "Contains a large reservoir of soft drinks. This model has had its safeties shorted out."
+/obj/machinery/chem_dispenser/drinks/fullupgrade //equivalent to fully ugpraded stock parts, emagged
+	desc = "An advanced self-contained dispenser for various kinds of soft drinks. This one is capable of producing some more esoteric selections."
+	circuit = /obj/item/circuitboard/machine/chem_dispenser/drinks/fullupgrade
+	powerefficiency = 0.2
+	recharge_amount = 40
 	obj_flags = CAN_BE_HIT | EMAGGED
-	flags_1 = NODECONSTRUCT_1
 
-/obj/machinery/chem_dispenser/drinks/fullupgrade/Initialize(mapload)
-	. = ..()
+/obj/machinery/chem_dispenser/drinks/fullupgrade/RefreshParts()
+	recharge_amount = initial(recharge_amount)
+	for(var/obj/item/stock_parts/cell/P in component_parts)
+		cell = P
+	dispensable_reagents |= upgrade_reagents
+	dispensable_reagents |= upgrade_reagents2
+	dispensable_reagents |= upgrade_reagents3
 	dispensable_reagents |= emagged_reagents //adds emagged reagents
-	component_parts = list()
-	component_parts += new /obj/item/circuitboard/machine/chem_dispenser/drinks(null)
-	component_parts += new /obj/item/stock_parts/matter_bin/bluespace(null)
-	component_parts += new /obj/item/stock_parts/matter_bin/bluespace(null)
-	component_parts += new /obj/item/stock_parts/capacitor/quadratic(null)
-	component_parts += new /obj/item/stock_parts/manipulator/femto(null)
-	component_parts += new /obj/item/stack/sheet/glass(null)
-	component_parts += new /obj/item/stock_parts/cell/bluespace(null)
-	RefreshParts()
+	powerefficiency = round(initial(powerefficiency), 0.01)
 
 /obj/machinery/chem_dispenser/drinks/beer
 	name = "booze dispenser"
@@ -602,23 +601,21 @@
 		/datum/reagent/consumable/ethanol/alexander,
 		/datum/reagent/toxin/minttoxin,
 	)
-/obj/machinery/chem_dispenser/drinks/beer/fullupgrade //fully ugpraded stock parts, emagged
-	desc = "Contains a large reservoir of the good stuff. This model has had its safeties shorted out."
+/obj/machinery/chem_dispenser/drinks/beer/fullupgrade //equivalent to fully ugpraded stock parts, emagged
+	desc = "An advanced self-contained dispenser for various kinds of hard drinks. This one is capable of producing some more esoteric concoctions."
+	circuit = /obj/item/circuitboard/machine/chem_dispenser/drinks/beer/fullupgrade
 	obj_flags = CAN_BE_HIT | EMAGGED
-	flags_1 = NODECONSTRUCT_1
 
-/obj/machinery/chem_dispenser/drinks/beer/fullupgrade/Initialize(mapload)
-	. = ..()
+/obj/machinery/chem_dispenser/drinks/beer/fullupgrade/RefreshParts()
+	recharge_amount = initial(recharge_amount)
+	for(var/obj/item/stock_parts/cell/P in component_parts)
+		cell = P
+	dispensable_reagents |= upgrade_reagents
+	dispensable_reagents |= upgrade_reagents2
+	dispensable_reagents |= upgrade_reagents3
 	dispensable_reagents |= emagged_reagents //adds emagged reagents
-	component_parts = list()
-	component_parts += new /obj/item/circuitboard/machine/chem_dispenser/drinks/beer(null)
-	component_parts += new /obj/item/stock_parts/matter_bin/bluespace(null)
-	component_parts += new /obj/item/stock_parts/matter_bin/bluespace(null)
-	component_parts += new /obj/item/stock_parts/capacitor/quadratic(null)
-	component_parts += new /obj/item/stock_parts/manipulator/femto(null)
-	component_parts += new /obj/item/stack/sheet/glass(null)
-	component_parts += new /obj/item/stock_parts/cell/bluespace(null)
-	RefreshParts()
+	powerefficiency = round(initial(powerefficiency), 0.01)
+
 
 /obj/machinery/chem_dispenser/mutagen
 	name = "mutagen dispenser"
@@ -664,23 +661,20 @@
 	component_parts += new /obj/item/stock_parts/cell/bluespace(null)
 	RefreshParts()
 
-/obj/machinery/chem_dispenser/fullupgrade //fully ugpraded stock parts, emagged
-	desc = "Creates and dispenses chemicals. This model has had its safeties shorted out."
+/obj/machinery/chem_dispenser/fullupgrade //equivalent to t4 stock parts, emagged
+	desc = "An advanced self-contained dispenser for various kinds of chemicals. This one is capable of producing some more esoteric types."
+	circuit = /obj/item/circuitboard/machine/chem_dispenser/fullupgrade
 	obj_flags = CAN_BE_HIT | EMAGGED
-	flags_1 = NODECONSTRUCT_1
 
-/obj/machinery/chem_dispenser/fullupgrade/Initialize(mapload)
-	. = ..()
+/obj/machinery/chem_dispenser/fullupgrade/RefreshParts()
+	recharge_amount = initial(recharge_amount)
+	for(var/obj/item/stock_parts/cell/P in component_parts)
+		cell = P
+	dispensable_reagents |= upgrade_reagents
+	dispensable_reagents |= upgrade_reagents2
+	dispensable_reagents |= upgrade_reagents3
 	dispensable_reagents |= emagged_reagents //adds emagged reagents
-	component_parts = list()
-	component_parts += new /obj/item/circuitboard/machine/chem_dispenser(null)
-	component_parts += new /obj/item/stock_parts/matter_bin/bluespace(null)
-	component_parts += new /obj/item/stock_parts/matter_bin/bluespace(null)
-	component_parts += new /obj/item/stock_parts/capacitor/quadratic(null)
-	component_parts += new /obj/item/stock_parts/manipulator/femto(null)
-	component_parts += new /obj/item/stack/sheet/glass(null)
-	component_parts += new /obj/item/stock_parts/cell/bluespace(null)
-	RefreshParts()
+	powerefficiency = round(initial(powerefficiency), 0.01)
 
 /obj/machinery/chem_dispenser/abductor
 	name = "reagent synthesizer"

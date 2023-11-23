@@ -787,6 +787,10 @@
 	desc = "A pin-up of a woman in a space suit that's definately NOT spaceproof."
 	icon_state = "poster59"
 
+/obj/structure/sign/poster/contraband/ncrpropaganda
+	name = "Never Trust a Legionary"
+	desc = "A picture of a mustached man in a fedora tipping his fedora towards the viewer with the text: 'Never trust a dude who went Caesar's Legion unironically"
+	icon_state = "poster95"
 
 #undef PLACE_SPEED
 
@@ -821,6 +825,7 @@
 		/obj/structure/sign/poster/prewar/poster82, /obj/structure/sign/poster/prewar/poster93,
 		/obj/structure/sign/poster/prewar/poster94, /obj/structure/sign/poster/prewar/corporate_espionage,
 		/obj/structure/sign/poster/prewar/protectron, /obj/structure/sign/poster/prewar/vault_tec,
+		/obj/structure/sign/poster/contraband/ncrpropaganda,
 		// SUNSET PREWAR POSTERS
 		/obj/structure/sign/poster/sunset/corporate/eyes, /obj/structure/sign/poster/sunset/enlist,
 		/obj/structure/sign/poster/sunset/dean, /obj/structure/sign/poster/sunset/corporate,
@@ -834,6 +839,7 @@
 		/obj/structure/sign/poster/contraband/pinup_bed, /obj/structure/sign/poster/contraband/pinup_pink,
 		/obj/structure/sign/poster/contraband/pinup_funk, /obj/structure/sign/poster/contraband/pinup_topless,
 		/obj/structure/sign/poster/contraband/pinup_shower, /obj/structure/sign/poster/contraband/pinup_vixen,
+		/obj/structure/sign/poster/contraband/ncrpropaganda,
 		// SUNSET PINUP POSTERS
 		/obj/structure/sign/poster/contraband/pinup_assaultron, /obj/structure/sign/poster/contraband/pinup_assaultron2,
 		/obj/structure/sign/poster/contraband/pinup_claw1, /obj/structure/sign/poster/contraband/pinup_claw2,

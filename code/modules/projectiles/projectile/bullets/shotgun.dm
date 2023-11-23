@@ -165,6 +165,8 @@
 	sharpness = SHARP_NONE //crunch
 	tile_dropoff = 0
 	tile_dropoff_s = 0
+	supereffective_damage = 15 //same damage vs mobs as regular slugs, epic
+	supereffective_faction = list("hostile", "ant", "supermutant", "deathclaw", "cazador", "raider", "gecko", "wastebot", "radscorpion")
 
 /obj/item/projectile/bullet/pellet/trainshot/on_hit(atom/target)
 	. = ..()
