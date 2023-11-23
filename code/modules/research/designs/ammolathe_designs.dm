@@ -359,13 +359,6 @@
 	build_path = /obj/item/ammo_box/c45/rubber
 	category = list("initial", "Basic Ammo")
 
-/datum/design/ammolathe/a10mmrubber
-	name = "10mm rubber ammo box"
-	id = "a10mmrubber"
-	materials = list(/datum/material/iron = 10000, /datum/material/blackpowder = 1500)
-	build_path = /obj/item/ammo_box/c10mm/rubber
-	category = list("initial", "Basic Ammo")
-
 /datum/design/ammolathe/a22rubber
 	name = ".22 rubber ammo box"
 	id = "m22rubber"
