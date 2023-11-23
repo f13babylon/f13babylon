@@ -114,7 +114,7 @@
 
 /mob/living/carbon/verb/toggle_arousal_state()
 	set category = "IC"
-	set name = "Toggle genital arousal"
+	set name = "Toggle arousal" //Minor IC verb change to just "Toggle Arousal"
 	set desc = "Allows you to toggle which genitals are showing signs of arousal."
 	var/list/genital_list = list()
 	for(var/obj/item/organ/genital/G in internal_organs)
