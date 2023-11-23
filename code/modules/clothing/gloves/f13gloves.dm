@@ -189,3 +189,16 @@
 	item_state = "legion_legate"
 	transfer_prints = FALSE
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 35, "energy" = 20, "bomb" = 35, "bio" = 35, "rad" = 35, "fire" = 0, "acid" = 0)
+
+//////////
+///Khan///
+//////////
+
+/obj/item/clothing/gloves/khan
+	name = "Khan raiding gloves"
+	desc = "Leather gloves covered in metal strips and cloth decorations"
+	icon = 'icons/fallout/clothing/khans.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/khaans.dmi'
+	icon_state = "khan_wargloves"
+	item_state = "khan_wargloves"
+	armor = list(melee = 20, bullet = 20, laser = 10, energy = 10, bomb = 20, bio = 0, rad = 0, fire = 20, acid = 0)

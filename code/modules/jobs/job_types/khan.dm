@@ -12,10 +12,8 @@
 /datum/outfit/job/khan
 	name = "Khan"
 	jobtype = /datum/job/khan
-	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
 	id = /obj/item/card/id/khantattoo
 	ears = /obj/item/radio/headset/headset_khans
-	head = /obj/item/clothing/head/helmet/f13/khan/bandana
 	shoes = /obj/item/clothing/shoes/f13/military/khan
 	backpack =	/obj/item/storage/backpack/satchel/explorer
 	satchel = 	/obj/item/storage/backpack/satchel/old
@@ -39,6 +37,8 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/varmintrifle)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gate_khanate)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/scrapsabre_khan)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/khanglove)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/khanwarboot)
 
 /datum/job/khan/smith
 	title = "Khan Smith"
@@ -75,7 +75,9 @@
 	outfit = /datum/outfit/job/khan/senior_enforcer
 
 	loadout_options = list(
-		/datum/outfit/loadout/senior,
+		/datum/outfit/loadout/seniora,
+		/datum/outfit/loadout/seniorb,
+		/datum/outfit/loadout/seniorc,
 		)
 
 /datum/job/khan/enforcer
@@ -133,7 +135,18 @@
 	gunsmith_four = TRUE
 
 /datum/outfit/job/khan/senior_enforcer
+	name = "Senior Enforcer"
 	jobtype = /datum/job/khan/senior_enforcer
+	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/leader
+	head = /obj/item/clothing/head/helmet/f13/khan/leader
+	belt = /obj/item/storage/belt/bandolier
+	backpack_contents = list(
+		/obj/item/storage/box/medicine/stimpaks/stimpaks5 = 1,
+		/obj/item/stack/f13Cash/caps/onezerozerozero = 1,//1k Caps.
+		/obj/item/pda,
+		/obj/item/card/id/selfassign
+		)
+
 
 //KHAN =================================================================
 
@@ -156,7 +169,7 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
 	head = /obj/item/clothing/head/helmet/f13/khan/bandana
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/greasegun/stick = 2,
+		/obj/item/ammo_box/magazine/greasegun = 2,
 		/obj/item/book/granter/trait/trekking = 1)
 
 /datum/outfit/loadout/soldierc
@@ -174,7 +187,8 @@
 
 /datum/outfit/loadout/chemist
 	name = "Chemist"
-	suit = /obj/item/clothing/suit/toggle/labcoat
+	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
+	head = /obj/item/clothing/head/helmet/f13/khan/bandana
 	belt = /obj/item/storage/belt/bandolier
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
@@ -185,7 +199,8 @@
 
 /datum/outfit/loadout/quack
 	name = "Quack Chemist"
-	suit = /obj/item/clothing/suit/jacket/leather/overcoat
+	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
+	head = /obj/item/clothing/head/helmet/f13/khan/bandana
 	glasses = /obj/item/clothing/glasses/sunglasses
 	belt = /obj/item/storage/belt/bandolier
 	backpack_contents = list(
@@ -195,19 +210,27 @@
 
 //SENIOR =================================================================
 
-/datum/outfit/loadout/senior
-	name = "True Enforcer"
-	belt = /obj/item/storage/belt/bandolier
-	r_hand = /obj/item/gun/ballistic/automatic/shotgun/riot
-	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/coat
-	head = /obj/item/clothing/head/helmet/f13/khan/fullhelm
+/datum/outfit/loadout/seniora
+	name = "Teachings of Regis"
+	suit_store = /obj/item/twohanded/sledgehammer/rockethammer
 	backpack_contents = list(
-		/obj/item/ammo_box/shotgun/trainshot = 3,
-		/obj/item/storage/box/medicine/stimpaks/stimpaks5 = 1,
-		/obj/item/stack/f13Cash/caps/onezerozerozero = 1,//1k Caps.
-		/obj/item/pda,
-		/obj/item/card/id/selfassign
+		/obj/item/grenade/smokebomb = 2,
 		)
+
+/datum/outfit/loadout/seniorb
+	name = "Teachings of Jessup"
+	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m10mm_adv/ext = 2,
+		)
+
+/datum/outfit/loadout/seniorc
+	name = "Teachings of Melissa"
+	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/w308 = 3,
+		)
+
 
 /datum/outfit/job/khan/senior_enforcer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -225,6 +248,8 @@
 
 /datum/outfit/loadout/smith
 	name = "Khan Smith"
+	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
+	head = /obj/item/clothing/head/helmet/f13/khan/bandana
 	glasses = /obj/item/clothing/glasses/welding
 	belt = /obj/item/storage/belt/utility/waster/forgemaster/khan
 	neck = /obj/item/clothing/neck/apron/labor/forge/khan
@@ -251,7 +276,6 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/lance)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/lever_action)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg10mm)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/vance_gun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingshotgun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/concussion)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/empgrenade)

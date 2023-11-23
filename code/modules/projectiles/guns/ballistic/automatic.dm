@@ -248,13 +248,13 @@
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
 	extra_penetration = 0.05
 
-//Greasegun				Keywords: 9mm, Automatic, 30 rounds
+//Greasegun				Keywords: .45, Automatic, 30 rounds
 /obj/item/gun/ballistic/automatic/smg/greasegun
 	name = "Grease Gun"
 	desc = "An inexpensive submachine gun, chambered in .45 ACP. Very high rate of fire in bursts."
 	icon_state = "grease_gun"
 	item_state = "smg9mm"
-	mag_type = /obj/item/ammo_box/magazine/greasegun/stick
+	mag_type = /obj/item/ammo_box/magazine/greasegun
 	spread = 8
 	slowdown = 0.3
 	burst_shot_delay = 2.75
@@ -322,22 +322,6 @@
 	update_icon()
 	return
 
-/obj/item/gun/ballistic/automatic/smg/greasegun/vance
-	name = "Vance Special"
-	desc = "An inexpensive submachine gun crafted by Khan gunsmiths. Designed after the tales of the firearm used by the infamous couple Vikki and Vance, chambered in .45 ACP. A suppressed barrel has been added and the magwell has been modified to accept special drum magazines."
-	icon_state = "vance"
-	item_state = "smg9mm"
-	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	mag_type = /obj/item/ammo_box/magazine/greasegun
-	spread = 10
-	slowdown = 0.25
-	autofire_shot_delay = 2.5
-	suppressed = 1
-	can_attachments = TRUE
-	can_suppress = FALSE
-	can_unsuppress = FALSE
-	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
-
 
 //10mm SMG			Keywords: 10mm, Automatic, 12/24 rounds
 /obj/item/gun/ballistic/automatic/smg/smg10mm
@@ -355,6 +339,7 @@
 	slowdown = 0.3
 	recoil = 0.5
 	fire_delay = 3.25
+	extra_damage = 2
 	can_attachments = TRUE
 	suppressor_state = "10mm_suppressor" //activate if sprited
 	suppressor_x_offset = 30
@@ -548,6 +533,7 @@
 	autofire_shot_delay = 2
 	burst_shot_delay = 2.5
 	recoil = 0.25
+	extra_damage = 2
 	can_suppress = TRUE
 	suppressor_state = "pistol_suppressor"
 	suppressor_x_offset = 29
@@ -583,7 +569,7 @@
 	can_suppress = FALSE
 	can_unsuppress = FALSE
 	fire_sound = 'sound/weapons/Gunshot_silenced.ogg'
-	extra_penetration = 0.10
+	extra_penetration = 0.1
 
 
 //Ppsh-41				Keywords: 9mm, Automatic, 71 rounds.

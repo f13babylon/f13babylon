@@ -1167,7 +1167,7 @@
 	name = "m3a1 grease gun and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/smg/greasegun,
-				/obj/item/ammo_box/magazine/greasegun/stick
+				/obj/item/ammo_box/magazine/greasegun
 				)
 
 /obj/effect/spawner/bundle/f13/guns/auto5
@@ -1580,7 +1580,7 @@
 				/obj/item/ammo_box/shotgun/buck,
 				/obj/item/ammo_box/magazine/uzim9mm,
 				/obj/item/ammo_box/magazine/m10mm_adv/simple,
-				/obj/item/ammo_box/magazine/greasegun/stick,
+				/obj/item/ammo_box/magazine/greasegun,
 				/obj/item/ammo_box/needle,
 				/obj/item/ammo_box/magazine/tommygunm45,
 				/obj/item/ammo_box/tube/m44,

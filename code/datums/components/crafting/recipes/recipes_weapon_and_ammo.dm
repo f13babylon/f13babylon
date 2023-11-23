@@ -1362,24 +1362,6 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
-//grease gun
-/datum/crafting_recipe/vance_gun
-	name = "Vance Special"
-	result = /obj/item/gun/ballistic/automatic/smg/greasegun/vance
-	reqs = list(/obj/item/stack/sheet/metal = 10,
-				/obj/item/stack/crafting/metalparts = 10,
-				/obj/item/suppressor = 1,
-				/obj/item/stack/crafting/goodparts = 6,
-				/obj/item/gun/ballistic/automatic/smg/greasegun = 1
-				)
-	tools = list(TOOL_WORKBENCH)
-	time = 120
-	category = CAT_WEAPONRY
-	subcategory = CAT_WEAPON
-	always_available = FALSE
-
-
-
 //brush gun
 /datum/crafting_recipe/brush
 	name = "Brush Gun"

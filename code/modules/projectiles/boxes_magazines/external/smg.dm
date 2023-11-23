@@ -27,20 +27,8 @@
 /obj/item/ammo_box/magazine/cg45_two/empty
 	start_empty = TRUE
 
+
 /obj/item/ammo_box/magazine/greasegun
-	name = "Grease gun drum magazine (.45 ACP)"
-	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "vance_mag"
-	ammo_type = /obj/item/ammo_casing/c45
-	caliber = ".45"
-	max_ammo = 40
-
-
-/obj/item/ammo_box/magazine/greasegun/empty
-	start_empty = 1
-
-
-/obj/item/ammo_box/magazine/greasegun/stick
 	name = "Grease gun magazine (.45 ACP)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "grease"
@@ -49,7 +37,7 @@
 	max_ammo = 30
 	multiple_sprites = 2
 
-/obj/item/ammo_box/magazine/greasegun/stick/empty
+/obj/item/ammo_box/magazine/greasegun/empty
 	start_empty = 1
 
 /obj/item/ammo_box/magazine/uzim9mm/rockwell
