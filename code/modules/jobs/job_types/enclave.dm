@@ -227,7 +227,6 @@
 		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/megaphone = 1,
 		/obj/item/card/id/syndicate/anyone = 1,
-		/obj/item/gun/energy/laser/plasma = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 3
 		)
 
@@ -236,10 +235,18 @@
 	head = /obj/item/clothing/head/helmet/f13/power_armor/x02helmet
 	suit = /obj/item/clothing/suit/armor/f13/power_armor/x02
 
+	backpack_contents = list(
+		/obj/item/gun/energy/laser/plasma = 1
+	)
+
 /datum/outfit/loadout/gysgt_melee
 	name = "Armored Cavalry SNCO"
 	suit = /obj/item/clothing/suit/armor/f13/enclave/marine
 	head = /obj/item/clothing/head/helmet/f13/enclave/marine
+
+	backpack_contents = list(
+		/obj/item/gun/energy/laser/plasma = 1
+	)
 
 
 /datum/outfit/job/enclave/peacekeeper/f13gysergeant/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
