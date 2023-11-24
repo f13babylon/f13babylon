@@ -5654,6 +5654,7 @@
 	req_access_txt = "68";
 	req_one_access_txt = "68"
 	},
+/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
 	},
@@ -5781,6 +5782,7 @@
 	name = "Clinic Storage";
 	req_access_txt = "68"
 	},
+/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
 	},
@@ -6279,6 +6281,7 @@
 "hBD" = (
 /obj/machinery/door/airlock/highsecurity,
 /obj/structure/barricade/wooden/planks/pregame,
+/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
 	},
@@ -15902,6 +15905,12 @@
 	name = "metal plating"
 	},
 /area/f13/bunker)
+"sMe" = (
+/obj/structure/barricade/wooden,
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
+	},
+/area/f13/city)
 "sNQ" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -16808,6 +16817,16 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
+"tTD" = (
+/obj/machinery/light{
+	dir = 8;
+	light_color = "#e8eaff"
+	},
+/obj/structure/barricade/wooden,
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
+	},
+/area/f13/city)
 "tTZ" = (
 /obj/structure/decoration/warning{
 	name = "WARNING: NO MANS LAND AHEAD PVP ZONE"
@@ -18311,7 +18330,7 @@
 "vuu" = (
 /obj/structure/chair/office/dark,
 /mob/living/simple_animal/hostile/deathclaw/power_armor{
-	faction = list("raider","hostile","supermutant","deathclaw")
+	faction = list("raider","hostile","supermutant","deathclaw"s)
 	},
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
@@ -18754,6 +18773,16 @@
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 6;
 	icon_state = "dirt"
+	},
+/area/f13/city)
+"vZX" = (
+/obj/machinery/door/airlock/medical{
+	name = "Clinic";
+	req_one_access_txt = "25"
+	},
+/obj/effect/mapping_helpers/airlock/locked,
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
 	},
 /area/f13/city)
 "wba" = (
@@ -37392,7 +37421,7 @@ hiB
 puk
 puk
 puk
-jhJ
+vZX
 puk
 puk
 puk
@@ -37655,8 +37684,8 @@ pYx
 dFB
 pYx
 pYx
-pYx
-dFB
+mVL
+tTD
 tGX
 tGX
 aTA
@@ -37912,8 +37941,8 @@ pYx
 pYx
 pYx
 pYx
-pYx
-mVL
+sMe
+sMe
 tGX
 tGX
 aTA
