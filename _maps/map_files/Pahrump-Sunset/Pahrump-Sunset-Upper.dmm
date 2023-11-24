@@ -1699,24 +1699,6 @@
 /obj/structure/chair/stool/retro/backed,
 /turf/open/floor/f13/wood,
 /area/f13/city/bighorn)
-"bDL" = (
-/obj/machinery/porta_turret/syndicate/vehicle_turret{
-	desc = "An improvised ballistic turret - it looks exceptionally shoddy, yet stil functional. Safe to assume it's a repaired security system from whatever this place once was";
-	faction = list("raider");
-	lethal_projectile = /obj/item/projectile/bullet/a762/sport/simple;
-	lethal_projectile_sound = 'sound/f13weapons/auto5.ogg';
-	name = "Repaired Turret";
-	scan_range = 9;
-	stun_projectile = /obj/item/projectile/bullet/a762/sport/simple;
-	stun_projectile_sound = 'sound/f13weapons/auto5.ogg';
-	throw_range = 9
-	},
-/obj/structure/table/reinforced,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark,
-/area/f13/building/mall)
 "bEx" = (
 /obj/machinery/hydroponics/constructable,
 /obj/structure/window/reinforced{
@@ -17306,7 +17288,7 @@ wNM
 fcS
 hSp
 iej
-bDL
+ijH
 fcS
 cwu
 bjh
