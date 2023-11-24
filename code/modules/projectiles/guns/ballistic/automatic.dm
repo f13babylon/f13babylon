@@ -1097,8 +1097,6 @@
 	item_state = "venator_sniper"
 	fire_delay = 2
 	slowdown = 0.12
-	zoom_amt = 15
-	zoom_out_amt = 17
 
 /obj/item/gun/ballistic/automatic/marksman/sniper/sniperranger
 	name = "compact sniper rifle"
