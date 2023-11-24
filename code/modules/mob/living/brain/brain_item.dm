@@ -230,44 +230,6 @@
 
 /obj/item/organ/brain/check_damage_thresholds(mob/M)
 	. = ..()
-	//if we're not more injured than before, return without gambling for a trauma
-	if(damage <= prev_damage)
-		if(damage < prev_damage && owner)
-			if(prev_damage > BRAIN_DAMAGE_MILD && damage <= BRAIN_DAMAGE_MILD)
-				REMOVE_SKILL_MODIFIER_BODY(/datum/skill_modifier/brain_damage, null, owner)
-			if(prev_damage > BRAIN_DAMAGE_SEVERE && damage <= BRAIN_DAMAGE_SEVERE)
-				REMOVE_SKILL_MODIFIER_BODY(/datum/skill_modifier/heavy_brain_damage, null, owner)
-		return
-	damage_delta = damage - prev_damage
-	if(damage > BRAIN_DAMAGE_MILD)
-		if(prob(damage_delta * (1 + max(0, (damage - BRAIN_DAMAGE_MILD)/100)))) //Base chance is the hit damage; for every point of damage past the threshold the chance is increased by 1% //learn how to do your bloody math properly goddamnit
-			gain_trauma_type(BRAIN_TRAUMA_MILD, natural_gain = TRUE)
-			if(prev_damage <= BRAIN_DAMAGE_MILD && owner)
-				var/datum/skill_modifier/S
-				ADD_SKILL_MODIFIER_BODY(/datum/skill_modifier/brain_damage, null, owner, S)
-	if(damage > BRAIN_DAMAGE_SEVERE)
-		if(prob(damage_delta * (1 + max(0, (damage - BRAIN_DAMAGE_SEVERE)/100)))) //Base chance is the hit damage; for every point of damage past the threshold the chance is increased by 1%
-			if(prob(20))
-				gain_trauma_type(BRAIN_TRAUMA_SPECIAL, natural_gain = TRUE)
-			else
-				gain_trauma_type(BRAIN_TRAUMA_SEVERE, natural_gain = TRUE)
-			if(prev_damage <= BRAIN_DAMAGE_SEVERE && owner)
-				var/datum/skill_modifier/S
-				ADD_SKILL_MODIFIER_BODY(/datum/skill_modifier/heavy_brain_damage, null, owner, S)
-	if (owner)
-		if(owner.stat < UNCONSCIOUS) //conscious or soft-crit
-			var/brain_message
-			if(prev_damage < BRAIN_DAMAGE_MILD && damage >= BRAIN_DAMAGE_MILD)
-				brain_message = "<span class='warning'>You feel lightheaded.</span>"
-			else if(prev_damage < BRAIN_DAMAGE_SEVERE && damage >= BRAIN_DAMAGE_SEVERE)
-				brain_message = "<span class='warning'>You feel less in control of your thoughts.</span>"
-			else if(prev_damage < (BRAIN_DAMAGE_DEATH - 20) && damage >= (BRAIN_DAMAGE_DEATH - 20))
-				brain_message = "<span class='warning'>You can feel your mind flickering on and off...</span>"
-
-			if(.)
-				. += "\n[brain_message]"
-			else
-				return brain_message
 
 /obj/item/organ/brain/Destroy() //copypasted from MMIs.
 	if(brainmob)
