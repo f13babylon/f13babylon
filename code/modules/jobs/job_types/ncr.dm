@@ -1368,7 +1368,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	flag = F13REARECHELON
 	total_positions = 7
 	spawn_positions = 7
-	description = "You are the support element sent to assist the Forward Camp Grassden garrison. You are essential specialized support staff to help sustain the base via supply or specialized skills. You are not allowed to leave base unless given an explicit order by the CO or the current acting CO."
+	description = "You are the support element sent to assist the Forward Camp Grassden garrison. You are essential specialized support staff to help sustain the base via supply or specialized skills."
 	supervisors = "Logistics/Medical officer first, regular chain of command after that."
 	enforces = "You may leave the base, but you are not allowed to antagonize other factions or scavenge. You are a non-combatant. You cannot join any raids or battles on the surface. You cannot not run dungeons."
 	selection_color = "#fff5cc"
