@@ -247,6 +247,9 @@
 	can_disasemble = TRUE
 	can_hold_padlock = TRUE
 
+/obj/structure/simple_door/house/add_debris_element()
+	AddElement(/datum/element/debris, DEBRIS_WOOD, -10, 5)
+
 // cleaned and repainted white
 /obj/structure/simple_door/house/clean
 	icon_state = "houseclean"
@@ -259,6 +262,8 @@
 	can_disasemble = TRUE
 	can_hold_padlock = TRUE
 
+/obj/structure/simple_door/wood/add_debris_element()
+	AddElement(/datum/element/debris, DEBRIS_WOOD, -10, 5)
 
 /obj/structure/simple_door/interior
 	icon_state = "interior"
@@ -266,11 +271,17 @@
 	can_disasemble = 1
 	can_hold_padlock = TRUE
 
+/obj/structure/simple_door/interior/add_debris_element()
+	AddElement(/datum/element/debris, DEBRIS_WOOD, -10, 5)
+
 /obj/structure/simple_door/room
 	icon_state = "room"
 	door_type = "room"
 	can_disasemble = TRUE
 	can_hold_padlock = TRUE
+
+/obj/structure/simple_door/room/add_debris_element()
+	AddElement(/datum/element/debris, DEBRIS_WOOD, -10, 5)
 
 /obj/structure/simple_door/room/dirty
 	icon_state = "room_d"
@@ -284,6 +295,8 @@
 	door_type = "room_repaired"
 	can_hold_padlock = TRUE
 
+/obj/structure/simple_door/repaired/add_debris_element()
+	AddElement(/datum/element/debris, DEBRIS_WOOD, -10, 5)
 
 // ---------------------------------------------
 //	TENT FLAPS
@@ -347,6 +360,9 @@
 	explosion_block = 1.5
 	material_count = 5
 
+/obj/structure/simple_door/metal/add_debris_element()
+	AddElement(/datum/element/debris, DEBRIS_SPARKS, -15, 8, 1)
+
 /obj/structure/simple_door/metal/iron
 	name = "iron door"
 	desc = "A heavy iron door."
@@ -377,6 +393,9 @@
 	door_type = "dirtyglass"
 	can_hold_padlock = TRUE
 
+/obj/structure/simple_door/dirtyglass/add_debris_element()
+	AddElement(/datum/element/debris, DEBRIS_GLASS, -10, 5)
+
 /obj/structure/simple_door/brokenglass
 	name = "shattered glass door"
 	desc = "It still opens and closes."
@@ -386,6 +405,9 @@
 	base_opacity = FALSE
 	can_hold_padlock = TRUE
 
+/obj/structure/simple_door/brokenglass/add_debris_element()
+	AddElement(/datum/element/debris, DEBRIS_WOOD, -10, 5)
+
 /obj/structure/simple_door/glass
 	desc = "The glass is quite clean, someone took care of this door."
 	icon_state = "glass"
@@ -394,12 +416,17 @@
 	base_opacity = FALSE
 	can_hold_padlock = TRUE
 
+/obj/structure/simple_door/glass/add_debris_element()
+	AddElement(/datum/element/debris, DEBRIS_GLASS, -10, 5)
 
 /obj/structure/simple_door/metal/dirtystore
 	desc = "A metal door with dirty glass, you can't see a thing behind it."
 	icon_state = "dirtystore"
 	door_type = "dirtystore"
 	can_hold_padlock = TRUE
+
+/obj/structure/simple_door/metal/dirtystore/add_debris_element()
+	AddElement(/datum/element/debris, DEBRIS_GLASS, -10, 5)
 
 /obj/structure/simple_door/metal/store
 	icon_state = "store"
@@ -409,6 +436,8 @@
 	can_disasemble = 1
 	can_hold_padlock = TRUE
 
+/obj/structure/simple_door/metal/store/add_debris_element()
+	AddElement(/datum/element/debris, DEBRIS_GLASS, -10, 5)
 
 // --------------------------------------
 //	BUNKER DOORS
@@ -453,6 +482,9 @@
 	opening_time = 30
 	closing_time = 20
 
+/obj/structure/simple_door/blast/add_debris_element()
+	AddElement(/datum/element/debris, DEBRIS_SPARKS, -15, 8, 1)
+
 /obj/structure/simple_door/bunker
 	name = "airlock"
 	desc = "An olive green painted airlock.<br>The door mechanism itself is a complex mix of an electic engine and hydraulic motion.<br>This particular door looks like a pre-War military tech."
@@ -462,6 +494,9 @@
 	open_sound = "sound/f13machines/doorairlock_open.ogg"
 	close_sound = "sound/f13machines/doorairlock_close.ogg"
 	explosion_block = 5
+
+/obj/structure/simple_door/bunker/add_debris_element()
+	AddElement(/datum/element/debris, DEBRIS_SPARKS, -15, 8, 1)
 
 /obj/structure/simple_door/bunker/glass
 	desc = "A olive green painted armored door with semi-transparent glass window.<br>The door mechanism itself is a complex mix of an elecrtic engine and hydraulic motion.<br>This particular door looks like a pre-War military tech."

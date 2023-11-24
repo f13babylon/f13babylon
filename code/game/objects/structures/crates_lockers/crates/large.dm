@@ -8,6 +8,9 @@
 	delivery_icon = "deliverybox"
 	integrity_failure = 0 //Makes the crate break when integrity reaches 0, instead of opening and becoming an invisible sprite.
 
+/obj/structure/closet/crate/large/add_debris_element()
+	AddElement(/datum/element/debris, DEBRIS_WOOD, -10, 5)
+
 /obj/structure/closet/crate/large/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
 	add_fingerprint(user)
 	if(manifest)
@@ -41,7 +44,7 @@
 			if(HAS_TRAIT(user, TRAIT_SKITTISH)) //for our stealthy skittish types to close crates after they've used them
 				close()
 			to_chat(user, "<span class='warning'>You need a crowbar to pry this open!</span>")
-			return FALSE 
+			return FALSE
 
 /obj/structure/closet/crate/large/CtrlShiftClick()
 	return ..()

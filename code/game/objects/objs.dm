@@ -74,6 +74,7 @@
 		var/turf/T = loc
 		T.add_blueprints_preround(src)
 
+	add_debris_element()
 
 /obj/Destroy(force=FALSE)
 	if(!ismachinery(src))

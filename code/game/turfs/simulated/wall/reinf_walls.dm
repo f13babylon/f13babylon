@@ -14,6 +14,9 @@
 	explosion_block = 2
 	rad_insulation = RAD_HEAVY_INSULATION
 
+/turf/closed/wall/r_wall/add_debris_element()
+	AddElement(/datum/element/debris, DEBRIS_SPARKS, -15, 8, 1)
+
 /turf/closed/wall/r_wall/deconstruction_hints(mob/user)
 	switch(d_state)
 		if(INTACT)
