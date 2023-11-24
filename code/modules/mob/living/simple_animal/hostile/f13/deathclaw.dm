@@ -11,7 +11,6 @@
 	icon_living = "deathclaw"
 	icon_dead = "deathclaw_dead"
 	icon_gib = "deathclaw_gib"
-	robust_searching = 1
 	maxHealth = 750
 	health = 750
 	obj_damage = 200

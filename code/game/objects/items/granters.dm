@@ -666,9 +666,9 @@
 	crafting_recipe_types = list(/datum/crafting_recipe/marksmancarbine)
 
 /obj/item/book/granter/crafting_recipe/blueprint/combatrifle
-	name = "combat rifle blueprint"
+	name = "combat carbine blueprint"
 	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/combatrifle)
+	crafting_recipe_types = list(/datum/crafting_recipe/combatcarbine)
 
 /obj/item/book/granter/crafting_recipe/blueprint/r84
 	name = "r84 lmg blueprint"

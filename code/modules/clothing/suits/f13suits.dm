@@ -277,7 +277,7 @@
 //Basic Jacket
 /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
 	name = "Great Khan jacket"
-	desc = "A black leather jacket. <br>There is an illustration on the back - an aggressive, red-eyed skull wearing a fur hat with horns.<br>The skull has a mongoloid moustache - it's obviously a Great Khans emblem."
+	desc = "A black leather jacket. <br>There is an illustration on the back - an aggressive, red-eyed skull wearing a fur hat with horns.<br>The skull has a mongoloid moustache - it's obviously a Great Khans emblem.(alt-click)"
 	icon = 'icons/fallout/clothing/khans.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/khaans.dmi'
 	icon_state = "khan_jacket"
@@ -294,43 +294,43 @@
 //Armored jacket
 /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/armored
 	name = "Great Khan armored jacket"
-	desc = "A black leather jacket with ballistic plates and a big Great Khan logo on the back. Some prefer to wear a leather vest (alt-click)."
-	icon_state = "khan_jacket_armored"
-	item_state = "khan_jacket_armored"
+	desc = "A black leather jacket with ballistic plates and a big Great Khan logo on the back.(alt-click)."
+	icon = 'icons/fallout/clothing/khans.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/khaans.dmi'
+	icon_state = "khan_light"
+	item_state = "khan_light"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS|HANDS|FEET
 	armor = list("melee" = 37, "bullet" = 37, "laser" = 40, "energy" = 25, "bomb" = 30, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 0, "wound" = 10)
 	slowdown = 0.08
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
 
-/obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/armored/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 //Battlecoat
 /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/coat
 	name = "Great Khan battle coat"
-	desc = "Heavy leather coat lined with a patchwork of metal plates on the inside. On the back the symbol of the Great Khans is displayed proudly."
-	icon_state = "khan_heavy"
-	item_state = "khan_heavy"
+	desc = "Heavy leather coat covering a think metal plate carrier. On the back the symbol of the Great Khans is displayed proudly. (alt-click)"
+	icon = 'icons/fallout/clothing/khans.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/khaans.dmi'
+	icon_state = "kharuul"
+	item_state = "kharuul"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS|HANDS|FEET
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 47, "energy" = 25, "bomb" = 35, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 0, "wound" = 20)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
 	slowdown = 0.1
 
-//Battlecoat/Goji
-/obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/coat/goji
-	name = "Golden Geckoskin jacket"
-	desc = "Heavy Geckoskin jacket lined with a bulletproof lining on the inside. On the back the symbol of the Great Khans is displayed proudly."
-	icon_state = "GojiSuit"
-	item_state = "GojiSuit"
-	body_parts_covered = CHEST|GROIN|ARMS|LEGS|HANDS|FEET
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 0, "wound" = 10)
-	slowdown = 0.05
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
 
-/obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/coat/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
+/obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/leader
+	name = "Great Khan Wargear"
+	desc = "Heavy metal plates drapped over a mixture of kevlar and leather. This armor is the pride of the khans most experienced warriors proudly displaying the symbol of the Great Khans painted on its back. (alt-click)"
+	icon = 'icons/fallout/clothing/khans.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/khaans.dmi'
+	icon_state = "turuuch"
+	item_state = "turuuch"
+	body_parts_covered = CHEST|GROIN|ARMS|LEGS|HANDS|FEET
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 50, "energy" = 25, "bomb" = 35, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 0, "wound" = 20)
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
+	slowdown = 0.15
+
 
 // --------------------------------------------------------------------------
 

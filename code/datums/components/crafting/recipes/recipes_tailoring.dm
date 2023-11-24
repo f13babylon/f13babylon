@@ -366,6 +366,28 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
 
+/datum/crafting_recipe/khanwarboot
+	name = "Khan Raiding Boots"
+	result = /obj/item/clothing/shoes/f13/military/khanwar
+	time = 100
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+				/obj/item/clothing/shoes/f13/military/khan = 1)
+	tools = list(TOOL_FORGE)
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOR
+	always_available = FALSE
+
+/datum/crafting_recipe/ncrsturdy
+	name = "NCR Sturdy Boots"
+	result = /obj/item/clothing/shoes/f13/military/ncr/sturdy
+	time = 100
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+				/obj/item/clothing/shoes/f13/military/ncr = 1)
+	tools = list(TOOL_FORGE)
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOR
+	always_available = FALSE
+
 //Gauntlets
 
 /datum/crafting_recipe/plateglove
@@ -377,6 +399,18 @@
 	tools = list(TOOL_FORGE)
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
+
+/datum/crafting_recipe/khanglove
+	name = "Khan Raiding Gloves"
+	result = /obj/item/clothing/gloves/khan
+	time = 100
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+				/obj/item/stack/sheet/cloth = 5)
+	tools = list(TOOL_FORGE)
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOR
+	always_available = FALSE
+
 
 /*CRAFT rework: removed for balance
 /datum/crafting_recipe/tesla_armor

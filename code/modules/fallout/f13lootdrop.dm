@@ -1165,7 +1165,7 @@
 	name = "m3a1 grease gun and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/smg/greasegun,
-				/obj/item/ammo_box/magazine/greasegun/
+				/obj/item/ammo_box/magazine/greasegun
 				)
 
 /obj/effect/spawner/bundle/f13/guns/auto5
@@ -1282,9 +1282,9 @@
 				)
 
 /obj/effect/spawner/bundle/f13/combat_rifle
-	name = "combat rifle and ammo spawner"
+	name = "combat carbine and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/combat,
+				/obj/item/gun/ballistic/automatic/combatcarbine,
 				/obj/item/ammo_box/magazine/tommygunm45/stick
 				)
 
@@ -1520,9 +1520,9 @@
 	)
 
 /obj/effect/spawner/bundle/f13/boscombatrifle
-	name = "BoS combat rifle and ammo spawner"
+	name = "combat carbine and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/combat,
+				/obj/item/gun/ballistic/automatic/combatcarbine,
 				/obj/item/ammo_box/magazine/tommygunm45/stick
 	)
 

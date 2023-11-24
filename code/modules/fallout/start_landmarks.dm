@@ -104,7 +104,7 @@
 	name = "Legion Camp Follower"
 
 /obj/effect/landmark/start/f13/priestess
-	name = "Priestess of Mars"
+	name = "Legion Priestess"
 
 /obj/effect/landmark/start/f13/decanvet
 	name = "Legion Veteran Decanus"

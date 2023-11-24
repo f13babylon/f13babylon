@@ -89,4 +89,4 @@
 	projectile_type = /obj/item/projectile/incendiary/flamethrower
 	e_cost = 0//For now.
 	pellets = 3
-	variance = 20
+	variance = 35

@@ -291,21 +291,27 @@
 //musket
 /obj/item/projectile/beam/laser/musket //musket
 	name = "laser beam"
-	damage = 45
+	damage = 32
+	armour_penetration = 0.1//It's a concentrated beam of light.
+	wound_bonus = 20//Ditto.
+	bare_wound_bonus = 5//As above.
 	hitscan = TRUE
-	armour_penetration = 0.5 //rare laser to have AP, to offset single-fire
-	pixels_per_second = TILES_TO_PIXELS(50)
+	tracer_type = /obj/effect/projectile/tracer/laser
+	muzzle_type = /obj/effect/projectile/muzzle/laser
+	impact_type = /obj/effect/projectile/impact/laser
 
 //plasma caster
 /obj/item/projectile/f13plasma/plasmacaster
 	name = "plasma bolt"
 	icon_state = "plasma_clot"
 	damage_type = BURN
-	damage = 60
-	flag = "energy"
+	damage = 25 //fucc you normies
+	armour_penetration = 0 //no AP, armor shouldnt have more than 20 resist against plasma unless its specialized
+	flag = "energy" //checks vs. energy protection
+	wound_bonus = 45 //being hit with plasma is horrific
 	eyeblur = 0
 	is_reflectable = TRUE
-	pixels_per_second = TILES_TO_PIXELS(50)
+	pixels_per_second =  TILES_TO_PIXELS(14)
 
 //Securitrons Beam
 /obj/item/projectile/beam/laser/pistol/ultraweak
@@ -362,8 +368,8 @@
 
 /obj/item/projectile/beam/laser/gatling/betterhitscan //L30
 	name = "overcharged laser beam"
-	damage = 18
-	armour_penetration = 0.15
+	damage = 15
+	armour_penetration = 0.10
 	wound_bonus = 20
 	bare_wound_bonus = 5
 	hitscan = TRUE
@@ -493,7 +499,7 @@
 	wound_bonus = 45 //being hit with plasma is horrific
 	eyeblur = 0
 	is_reflectable = TRUE
-	pixels_per_second =  TILES_TO_PIXELS(10) //same as 40mm grenade
+	pixels_per_second =  TILES_TO_PIXELS(14)
 
 /obj/item/projectile/plasmacarbine //Plasma carbine
 	name = "plasma bolt"
@@ -659,6 +665,18 @@
 	name = "laser bolt"
 	damage = 40
 	armour_penetration = 0.6
+
+/obj/item/projectile/casterplasma //FNV plasma caster
+	name = "plasma bolt"
+	icon_state = "plasma_clot"
+	damage_type = BURN
+	damage = 26 //fucc you normies
+	armour_penetration = 0 //no AP, armor shouldnt have more than 20 resist against plasma unless its specialized
+	flag = "energy" //checks vs. energy protection
+	wound_bonus = 45 //being hit with plasma is horrific
+	eyeblur = 0
+	is_reflectable = TRUE
+	pixels_per_second =  TILES_TO_PIXELS(16) //same as 40mm grenade
 
 
 

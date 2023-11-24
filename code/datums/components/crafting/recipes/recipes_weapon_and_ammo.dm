@@ -768,12 +768,25 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
-/datum/crafting_recipe/combatrifle
-	name = "Combat Rifle"
-	result = /obj/item/gun/ballistic/automatic/combat
+/datum/crafting_recipe/combatcarbine
+	name = "Combat carbine"
+	result = /obj/item/gun/ballistic/automatic/combatcarbine
 	reqs = list(/obj/item/stack/sheet/metal = 10,
 				/obj/item/advanced_crafting_components/assembly = 1,
 				/obj/item/stack/crafting/goodparts = 3
+				)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_available = FALSE
+
+/datum/crafting_recipe/combatrifle
+	name = "Combat Rifle"
+	result = /obj/item/gun/ballistic/automatic/combat
+	reqs = list(/obj/item/stack/sheet/metal = 20,
+				/obj/item/gun/ballistic/automatic/combatcarbine = 1,
+				/obj/item/stack/crafting/goodparts = 6
 				)
 	tools = list(TOOL_WORKBENCH)
 	time = 120
@@ -1056,7 +1069,7 @@
 
 //grease gun
 /datum/crafting_recipe/grease_gun
-	name = "9mm SMG"
+	name = "Grease Gun"
 	result = /obj/item/gun/ballistic/automatic/smg/greasegun
 	reqs = list(/obj/item/stack/sheet/metal = 10,
 				/obj/item/advanced_crafting_components/receiver = 1,
@@ -1081,6 +1094,20 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 	always_available = FALSE
+
+//sequoia bayonet
+/datum/crafting_recipe/bladedsequoia
+	name = "bladed ranger sequoia"
+	result = /obj/item/gun/ballistic/revolver/sequoia/bayonet
+	reqs = list(/obj/item/stack/crafting/goodparts = 2,
+				/obj/item/gun/ballistic/revolver/sequoia = 1
+				)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_available = FALSE
+
 
 //r91
 /datum/crafting_recipe/r91
