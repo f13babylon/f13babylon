@@ -58,6 +58,14 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	..()
 	if(visualsOnly)
 		return
+	if(H.gender == FEMALE)	//sorry babe, the legion /are/ gamers.
+		H.gender = MALE
+		H.real_name = random_unique_name(MALE)
+		H.name = H.real_name
+		if(H.wear_id)
+			var/obj/item/card/id/dogtag/L = H.wear_id
+			L.registered_name = H.name
+			L.update_label()
 	ADD_TRAIT(H, TRAIT_TRIBAL,  REF(src))
 	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
 	ADD_TRAIT(H, TRAIT_FEARLESS,  REF(src)) //no phobias for legion!
@@ -209,6 +217,14 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	..()
 	if(visualsOnly)
 		return
+	if(H.gender == MALE)	//femstatic role
+		H.gender = FEMALE
+		H.real_name = random_unique_name(FEMALE)
+		H.name = H.real_name
+		if(H.wear_id)
+			var/obj/item/card/id/dogtag/L = H.wear_id
+			L.registered_name = H.name
+			L.update_label()
 	ADD_TRAIT(H, TRAIT_SURGERY_MID,  REF(src))
 	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ,  REF(src))
@@ -1039,7 +1055,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 // FORGE MASTER
 
-/datum/job/CaesarsLegion/Legionnaire/f13campfollower	// Extra materials, Blueprints
+/datum/job/CaesarsLegion/f13campfollower	// Extra materials, Blueprints
 	title = "Legion Forgemaster"
 	flag = F13CAMPFOLLOWER
 	total_positions = 1
@@ -1047,11 +1063,11 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	description = "The Forgemaster makes weapons of all sorts and upgrades them, keeping order in the Forge and makes sure the camp is defended."
 	supervisors = "the Centurion."
 	display_order = JOB_DISPLAY_ORDER_CAMPFOLLOWER
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower
+	outfit = /datum/outfit/job/CaesarsLegion/f13campfollower
 	roleplay_exclusive_notify = 1
 	exp_requirements = 0
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower
+/datum/outfit/job/CaesarsLegion/f13campfollower
 	name = "Legion Forgemaster"
 	id = /obj/item/card/id/dogtag/legforgemaster
 	glasses = /obj/item/clothing/glasses/welding
@@ -1075,7 +1091,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/book/granter/trait/explosives_advanced = 1
 		)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/f13campfollower/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -1266,19 +1282,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/soap/homemade = 1,
 		/obj/item/lighter = 1,
 		)
-
-/datum/outfit/loadout/slaveservant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
-	if(H.gender == MALE)
-		H.gender = FEMALE
-		H.real_name = random_unique_name(FEMALE)
-		H.name = H.real_name
-		if(H.wear_id)
-			var/obj/item/card/id/dogtag/L = H.wear_id
-			L.registered_name = H.name
-			L.update_label()
 
 //Laborers farm and mine.
 /datum/outfit/loadout/slaveworker
