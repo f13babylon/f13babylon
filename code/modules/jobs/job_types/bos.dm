@@ -760,7 +760,7 @@ Scribe
 /datum/outfit/loadout/sknighta
 	name = "Footknight"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/r93 = 1,
+		/obj/item/gun/ballistic/automatic/bozar = 1,
 		/obj/item/ammo_box/magazine/m556/rifle/assault = 2,
 		/obj/item/gun/energy/laser/pistol = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 1
