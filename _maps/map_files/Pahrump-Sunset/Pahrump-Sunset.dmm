@@ -20672,12 +20672,6 @@
 /obj/structure/car/rubbish4,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland/east)
-"bFZ" = (
-/obj/machinery/gibber,
-/turf/open/floor/f13{
-	icon_state = "floorrustysolid"
-	},
-/area/f13/city/bighorn)
 "bGa" = (
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/outside/road{
@@ -70076,7 +70070,7 @@ iAa
 fJC
 bYF
 uGm
-bFZ
+bYF
 aTw
 pTl
 wFz
