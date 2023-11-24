@@ -5654,7 +5654,6 @@
 	req_access_txt = "68";
 	req_one_access_txt = "68"
 	},
-/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
 	},
@@ -5782,7 +5781,6 @@
 	name = "Clinic Storage";
 	req_access_txt = "68"
 	},
-/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
 	},
@@ -6279,9 +6277,11 @@
 	},
 /area/f13/ahs)
 "hBD" = (
-/obj/machinery/door/airlock/highsecurity,
 /obj/structure/barricade/wooden/planks/pregame,
-/obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/door/airlock/medical{
+	name = "Clinic";
+	req_one_access_txt = "25"
+	},
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
 	},
@@ -18773,16 +18773,6 @@
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 6;
 	icon_state = "dirt"
-	},
-/area/f13/city)
-"vZX" = (
-/obj/machinery/door/airlock/medical{
-	name = "Clinic";
-	req_one_access_txt = "25"
-	},
-/obj/effect/mapping_helpers/airlock/locked,
-/turf/open/floor/f13{
-	icon_state = "freezerfloor"
 	},
 /area/f13/city)
 "wba" = (
@@ -37421,7 +37411,7 @@ hiB
 puk
 puk
 puk
-vZX
+jhJ
 puk
 puk
 puk
