@@ -6278,6 +6278,7 @@
 /area/f13/ahs)
 "hBD" = (
 /obj/machinery/door/airlock/highsecurity,
+/obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
 	},
