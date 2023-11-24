@@ -49,7 +49,7 @@ GLOBAL_LIST_INIT(nonhuman_positions, list(
 	))
 
 GLOBAL_LIST_INIT(command_positions, list(
-	"Head Paladin",
+	"Head Scribe",
 
 	"NCR Captain",
 	"NCR Veteran Ranger",
@@ -173,14 +173,14 @@ GLOBAL_LIST_INIT(bighorn_positions, list(
 
 GLOBAL_LIST_INIT(legion_command_positions, list(
 	"Legate",
-	"Legion Orator",
 	"Legion Centurion",
 	"Legion Veteran Decanus",
 ))
 
 GLOBAL_LIST_INIT(legion_positions, list(
-	"Legion Orator",
 	"Legion Centurion",
+	"Legion Orator",
+	"Legion Priestess",
 	"Legion Venator",
 	"Legion Veteran Decanus",
 	"Legion Prime Decanus",
