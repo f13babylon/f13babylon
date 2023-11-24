@@ -18330,7 +18330,7 @@
 "vuu" = (
 /obj/structure/chair/office/dark,
 /mob/living/simple_animal/hostile/deathclaw/power_armor{
-	faction = list("raider","hostile","supermutant","deathclaw"s)
+	faction = list("raider","hostile","supermutant","deathclaw")
 	},
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
