@@ -21,6 +21,7 @@ GLOBAL_LIST_EMPTY(allTerminals)
 	icon = 'icons/obj/computer.dmi'
 	icon_state = "computer"
 	plane = ABOVE_WALL_PLANE
+	var/obj/item/radio/radio
 	var/terminalid = ""
 	var/beepsound = 'sound/effects/printer.ogg'
 	var/terminal = "Terminal" //The list of all terminals on the station (Determined from this variable on each unit) Set this to the same thing if you want several consoles in one terminal
@@ -74,8 +75,11 @@ GLOBAL_LIST_EMPTY(allTerminals)
 		if(3) // command reply terminals that we dont want listed
 			if("[terminal]" in GLOB.req_terminal)
 				GLOB.req_terminal -= terminal
+	radio = new /obj/item/radio(src)
+	radio.listening = FALSE
 
 /obj/machinery/msgterminal/Destroy()
+	QDEL_NULL(radio)
 	GLOB.allTerminals -= src
 	GLOB.req_terminal -= src
 	return ..()
@@ -193,24 +197,23 @@ GLOBAL_LIST_EMPTY(allTerminals)
 				var/mutable_appearance/flag = mutable_appearance('icons/obj/flags.dmi', "vtccflag")
 				var/message_span = "notice"
 				var/superiors = "Top Brass"
-				if(usr.mind)
-					switch(SSjob.GetJob(usr.mind.assigned_role).faction)
-						if(FACTION_NCR)
-							flag.icon_state = "ncrflag"
-							superiors = "Caliente Expeditionary Command"
-							message_span = get_radio_span(FREQ_NCR)
-						if(FACTION_LEGION)
-							flag.icon_state = "legionflag"
-							superiors = "Zion War Council"
-							message_span = get_radio_span(FREQ_LEGION)
-						if(FACTION_BROTHERHOOD)
-							flag.icon_state = "bosflag"
-							superiors = "Utah Council of Elders"
-							message_span = get_radio_span(FREQ_BOS)
-						if(FACTION_ENCLAVE)
-							flag.icon_state = "enclaveflag"
-							superiors = "West Temple HighComm"
-							message_span = get_radio_span(FREQ_ENCLAVE)
+				switch(terminalid)
+					if("ncr")
+						flag.icon_state = "ncrflag"
+						superiors = "Caliente Expeditionary Command"
+						message_span = get_radio_span(FREQ_NCR)
+					if("legion")
+						flag.icon_state = "legionflag"
+						superiors = "Zion War Council"
+						message_span = get_radio_span(FREQ_LEGION)
+					if("brotherhood")
+						flag.icon_state = "bosflag"
+						superiors = "Utah Council of Elders"
+						message_span = get_radio_span(FREQ_BOS)
+					if("enclave")
+						flag.icon_state = "enclaveflag"
+						superiors = "West Temple HighComm"
+						message_span = get_radio_span(FREQ_ENCLAVE)
 				var/admin_msg = "<span class='adminnotice'><span class='comradio'><b>[icon2html(flag, GLOB.admins)]COMMAND MESSAGE[superiors ? " to [superiors]" : ""]:</b></span> [ADMIN_FULLMONTY(usr)]:<span class=[message_span]><br>\"[message]\"</span> <br>Jump to the reply terminal:[ADMIN_JMP_MSGTERMINAL(src)]</span>"
 				log_terminal("[key_name(usr)] sent a Command message, '[message]' from the terminal at [AREACOORD(usr)].")
 				screen = 6
@@ -286,20 +289,41 @@ GLOBAL_LIST_EMPTY(allTerminals)
 			return
 
 		var/alert = ""
+		var/list/spans
+		var/list/radio_freqs
 		for(var/obj/machinery/msgterminal/C in GLOB.allTerminals)
 			if(ckey(C.terminal) != ckey(href_list["terminal"]))
 				continue
 			switch(priority)
 				if(HIGH_MESSAGE_PRIORITY)		//High priority
-					alert = "PRIORITY Alert from [terminal]"
+					alert = "New high priority message from [terminal]!"
+					spans = list(SPAN_ROBOT, SPAN_COMMAND)
 					C.createmessage(src, alert, sending, HIGH_MESSAGE_PRIORITY)
 				if(EXTREME_MESSAGE_PRIORITY)	// Extreme Priority
-					alert = "EXTREME PRIORITY Alert from [terminal]"
+					alert = "New EXTREME PRIORITY message from [terminal]!!"
+					spans = list(SPAN_ROBOT, SPAN_COMMAND)
 					C.createmessage(src, alert, sending, EXTREME_MESSAGE_PRIORITY)
 				else		// Normal priority
-					alert = "Message from [terminal]"
+					alert = "New message from [terminal]."
+					spans = list(SPAN_ROBOT)
 					C.createmessage(src, alert, sending, NORMAL_MESSAGE_PRIORITY)
+
+			switch(C.terminalid)
+				if("ncr")
+					radio_freqs = list(FREQ_NCR, FREQ_RANGER)
+				if("legion")
+					radio_freqs = list(FREQ_LEGION)
+				if("brotherhood")
+					radio_freqs = list(FREQ_BOS)
+				if("enclave")
+					radio_freqs = list(FREQ_ENCLAVE)
+				if("follower")
+					radio_freqs = list(FREQ_MEDICAL)
 			screen = 6 //if it ever gets here that means (c.terminal == href_ls["dept"])
+		if(radio_freqs)
+			for(var/iter_freq in radio_freqs)
+				radio.set_frequency(iter_freq)
+				radio.talk_into(src, "[alert]", iter_freq, spans)
 
 		//log to (this)
 		switch(priority)
