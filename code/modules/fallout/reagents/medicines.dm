@@ -92,8 +92,8 @@
 	..()
 
 /datum/reagent/medicine/stimpak/overdose_process(mob/living/carbon/M)
-	M.adjustToxLoss(damage_offset * 1.25 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//125% of oxyloss offset
-	M.adjustOxyLoss((damage_offset * 1.25 + (damage_offset * 0.66)) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//125% of oxyloss offset + base oxyloss offset
+	M.adjustToxLoss(damage_offset * 0.66 * 1.5 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//150% of oxyloss offset
+	M.adjustOxyLoss(((damage_offset * 0.66 * 1.5) + (damage_offset * 0.66)) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//150% of oxyloss offset + base oxyloss offset
 	M.jitteriness = max(M.jitteriness, 300)
 	M.set_dizziness(max(M.dizziness, 15))
 	M.druggy = max(M.druggy, 15)
@@ -181,13 +181,21 @@
 	taste_description = "heaven."
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	overdose_threshold = 30 //hard to OD on, besides if you use too much it kills you when it wears off
+	var/list/reagent_blacklist = list(/datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak/superimitation ,/datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
 
 /datum/reagent/medicine/berserker_powder/on_mob_life(mob/living/carbon/M)
 	if(HAS_TRAIT(M, TRAIT_BERSERKER))
-		M.AdjustStun(-2*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.AdjustKnockdown(-5*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.AdjustUnconscious(-2*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustStaminaLoss(-2*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
+		var/is_blocked = FALSE
+		if(M.reagents)
+			for(var/iter_blacklisted_reagent in reagent_blacklist)
+				if(M.reagents.has_reagent(iter_blacklisted_reagent))
+					is_blocked = TRUE
+					break
+		if(!is_blocked)
+			M.AdjustStun(-2*REAGENTS_EFFECT_MULTIPLIER, 0)
+			M.AdjustKnockdown(-5*REAGENTS_EFFECT_MULTIPLIER, 0)
+			M.AdjustUnconscious(-2*REAGENTS_EFFECT_MULTIPLIER, 0)
+			M.adjustStaminaLoss(-2*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
 	else
 		M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 8)
 		M.adjustToxLoss(5*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
@@ -265,7 +273,7 @@
 	..()
 
 /datum/reagent/medicine/bitterdrink/on_mob_add(mob/living/carbon/M)
-	if(HAS_TRAIT(M, TRAIT_TRIBAL))
+	if(HAS_TRAIT(M, TRAIT_HERBAL_AFFINITY))
 		damage_offset =  5.4 * REAGENTS_EFFECT_MULTIPLIER
 		affecting_tribal = TRUE
 	else
@@ -293,8 +301,8 @@
 		//Actual healing part starts here
 		M.adjustBruteLoss(-damage_offset, FALSE)	//100% of damage_offset (5.4 / 4)
 		M.adjustFireLoss(-damage_offset * 0.75, FALSE)	//75% of damage_offset (4 / 3)
-		M.adjustToxLoss(-damage_offset * 0.66, FALSE)	//66% of damage_offset (3.6 / 2.64)
-		M.adjustOxyLoss(-damage_offset * 0.66, FALSE)	//66% of damage_offset (3.6 / 2.64)
+		M.adjustToxLoss(-damage_offset * 0.33, FALSE)	//33% of damage_offset (1.8 / 1.35)
+		M.adjustOxyLoss(-damage_offset * 0.33, FALSE)	//33% of damage_offset (1.8 / 1.35)
 		M.AdjustStun(-damage_offset * 0.66, FALSE)	//66% of damage_offset (3.6 / 2.64)
 		M.AdjustKnockdown(-damage_offset * 0.66, FALSE)	//66% of damage_offset (3.6 / 2.64)
 		M.adjustStaminaLoss(-damage_offset * 0.66, FALSE)	//66% of damage_offset (3.6 / 2.64)
@@ -308,8 +316,8 @@
 	..()
 
 /datum/reagent/medicine/bitterdrink/overdose_process(mob/living/carbon/M)
-	M.adjustToxLoss((damage_offset * 0.66 * 1.25 + (damage_offset * 0.66)) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//125% of tox damage_offset + base tox damage_offset
-	M.adjustOxyLoss((damage_offset * 0.66 * 1.25 + (damage_offset * 0.66)) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//125% of oxy damage_offset + base oxy damage_offset
+	M.adjustToxLoss(((damage_offset * 0.33 * 1.5) + (damage_offset * 0.33)) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//150% of toxloss offset + base toxloss offset
+	M.adjustOxyLoss(((damage_offset * 0.33 * 1.5) + (damage_offset * 0.33)) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//150% of oxyloss offset + base oxyloss offset
 	M.hallucination = max(M.hallucination, 25)
 	M.jitteriness = max(M.jitteriness, 300)
 	M.druggy = max(M.druggy, 15)
@@ -317,7 +325,6 @@
 	M.confused = max(M.confused, 10)
 	M.set_disgust(max(M.disgust, DISGUST_LEVEL_DISGUSTED))
 	. = TRUE
-	..()
 
 // ---------------------------
 // HEALING POWDER REAGENT (75% as effective as regular stimpak fluid for tribals / 55% for non-tribals)
@@ -345,7 +352,7 @@
 	..()
 
 /datum/reagent/medicine/healingpowder/on_mob_add(mob/living/carbon/M)
-	if(HAS_TRAIT(M, TRAIT_TRIBAL))
+	if(HAS_TRAIT(M, TRAIT_HERBAL_AFFINITY))
 		damage_offset =  2.25 * REAGENTS_EFFECT_MULTIPLIER
 		affecting_tribal = TRUE
 	else
@@ -386,7 +393,7 @@
 	..()
 
 /datum/reagent/medicine/healingpowder/overdose_process(mob/living/carbon/M)
-	M.adjustToxLoss((6.75 * 1.25 + 6.75) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//125% of oxy damage_offset + base oxy damage_offset
+	M.adjustToxLoss((6.75 * 1.5 + 6.75) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//150% of toxloss offset + base toxloss offset
 	M.hallucination = max(M.hallucination, 25)
 	M.jitteriness = max(M.jitteriness, 300)
 	M.druggy = max(M.druggy, 15)
@@ -421,11 +428,11 @@
 	..()
 
 /datum/reagent/medicine/healingpoultice/on_mob_add(mob/living/carbon/M)
-	if(HAS_TRAIT(M, TRAIT_TRIBAL))
+	if(HAS_TRAIT(M, TRAIT_HERBAL_AFFINITY))
 		damage_offset =  3.5 * REAGENTS_EFFECT_MULTIPLIER
 		affecting_tribal = TRUE
 	else
-		damage_offset = 2.6 * REAGENTS_EFFECT_MULTIPLIER //75% of damage_offset for mobs with TRAIT_TRIBAL
+		damage_offset = 2.6 * REAGENTS_EFFECT_MULTIPLIER //75% of damage_offset for mobs with TRAIT_HERBAL_AFFINITY
 	..()
 
 /datum/reagent/medicine/healingpoultice/on_mob_life(mob/living/carbon/M)
@@ -464,14 +471,13 @@
 	..()
 
 /datum/reagent/medicine/healingpoultice/overdose_process(mob/living/carbon/M)
-	M.adjustOxyLoss((6.75 * 1.25 + 6.75) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//125% of tox damage_offset + base tox damage_offset
+	M.adjustOxyLoss((6.75 * 1.5 + 6.75) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//150% of oxyloss offset + base oxyloss offset
 	M.hallucination = max(M.hallucination, 25)
 	M.jitteriness = max(M.jitteriness, 300)
 	M.druggy = max(M.druggy, 15)
 	M.set_dizziness(max(M.dizziness, 15))
 	M.confused = max(M.confused, 10)
 	. = TRUE
-	..()
 
 // ---------------------------
 // RAD-X REAGENT
@@ -644,6 +650,7 @@
 	color = "#6D6374"
 	metabolization_rate = 0.7 * REAGENTS_METABOLISM
 	overdose_threshold = 14
+	var/list/reagent_blacklist = list(/datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak/superimitation ,/datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
 
 /datum/reagent/medicine/naturalpainkiller/on_mob_add(mob/M)
 	if(isliving(M))
@@ -660,10 +667,17 @@
 	..()
 
 /datum/reagent/medicine/naturalpainkiller/on_mob_life(mob/living/carbon/M)
-	M.AdjustStun(-20*REAGENTS_EFFECT_MULTIPLIER, 0)
-	M.AdjustKnockdown(-20*REAGENTS_EFFECT_MULTIPLIER, 0)
-	M.AdjustUnconscious(-20*REAGENTS_EFFECT_MULTIPLIER, 0)
-	M.adjustStaminaLoss(-3*REAGENTS_EFFECT_MULTIPLIER, 0)
+	var/is_blocked = FALSE
+	if(M.reagents)
+		for(var/iter_blacklisted_reagent in reagent_blacklist)
+			if(M.reagents.has_reagent(iter_blacklisted_reagent))
+				is_blocked = TRUE
+				break
+	if(!is_blocked)
+		M.AdjustStun(-20*REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.AdjustKnockdown(-20*REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.AdjustUnconscious(-20*REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.adjustStaminaLoss(-3*REAGENTS_EFFECT_MULTIPLIER, 0)
 	. = TRUE
 	..()
 
@@ -848,12 +862,13 @@
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	overdose_threshold = 21
 	self_consuming = TRUE
+	var/list/reagent_blacklist = list(/datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak/superimitation ,/datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
 	var/clot_rate = 0	//The rate at which blood_flow will be reduced for pierce/slash wounds
 	var/affecting_tribal = FALSE
 	var/nth_cycle = 0	//On which cycle should Hydra trigger its effects
 
 /datum/reagent/medicine/hydra/on_mob_add(mob/living/carbon/M)
-	if(HAS_TRAIT(M, TRAIT_TRIBAL))
+	if(HAS_TRAIT(M, TRAIT_HERBAL_AFFINITY))
 		affecting_tribal = TRUE
 		clot_rate =  1
 		nth_cycle = 5
@@ -863,7 +878,13 @@
 	..()
 
 /datum/reagent/medicine/hydra/on_mob_life(mob/living/carbon/M)
-	if(current_cycle > 0 && current_cycle % nth_cycle == 0 && M.all_wounds && M.all_wounds.len >= 1) //Every 5th (8th) cycle, reduce burn/bone wound severity by 1 tier, for puncture/slash wounds decrease blood_flow by clot_rate
+	var/is_blocked = FALSE
+	if(M.reagents)
+		for(var/iter_blacklisted_reagent in reagent_blacklist)
+			if(M.reagents.has_reagent(iter_blacklisted_reagent))
+				is_blocked = TRUE
+				break
+	if(!is_blocked && current_cycle > 0 && current_cycle % nth_cycle == 0 && M.all_wounds && M.all_wounds.len >= 1) //Every 5th (8th) cycle, reduce burn/bone wound severity by 1 tier, for puncture/slash wounds decrease blood_flow by clot_rate
 		for(var/datum/wound/iter_wound in M.all_wounds)
 			var/affected_limb_name = iter_wound.limb.name
 			switch(iter_wound.severity)

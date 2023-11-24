@@ -9,6 +9,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	faction = FACTION_TRIBAL
 	exp_type = EXP_TYPE_TRIBAL
 	access = list(ACCESS_TRIBE)
+	blacklisted_quirks = list(/datum/quirk/herbal_affinity)
 	social_faction = "Tribal"
 	description = "You're a member of one of many tribes, all brought together in a singular goal after the arrival of the Legion and NCR. Survival. \
 	Who you were no longer matters. What you do is prime. Especially so in the newfound faith, that of the machine spirits. Should you follow it. They surround you. \
@@ -19,8 +20,8 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_TRIBAL,  REF(src))
 	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
+	ADD_TRAIT(H, TRAIT_HERBAL_AFFINITY,  REF(src))
 	ADD_TRAIT(H, TRAIT_TRAPPER,  REF(src))
 	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS,  REF(src))
 	ADD_TRAIT(H, TRAIT_AUTO_DRAW,  REF(src))
