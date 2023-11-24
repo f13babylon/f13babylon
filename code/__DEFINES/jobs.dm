@@ -199,7 +199,7 @@
 #define JOB_UNAVAILABLE_WHITELIST 7
 
 #define DEFAULT_RELIGION "Christianity"
-#define DEFAULT_DEITY "Space Jesus"
+#define DEFAULT_DEITY "God"
 
 #define JOB_DISPLAY_ORDER_DEFAULT 0
 

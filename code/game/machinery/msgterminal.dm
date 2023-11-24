@@ -17,13 +17,13 @@ GLOBAL_LIST_EMPTY(allTerminals)
 
 /obj/machinery/msgterminal
 	name = "communications center"
-	desc = "Where mail is sent and received."
+	desc = "A terminal for receiving and sending messages throughout the secure communications network."
 	icon = 'icons/obj/computer.dmi'
 	icon_state = "computer"
 	plane = ABOVE_WALL_PLANE
 	var/terminalid = ""
 	var/beepsound = 'sound/effects/printer.ogg'
-	var/terminal = "terminal" //The list of all terminals on the station (Determined from this variable on each unit) Set this to the same thing if you want several consoles in one terminal
+	var/terminal = "Terminal" //The list of all terminals on the station (Determined from this variable on each unit) Set this to the same thing if you want several consoles in one terminal
 	var/list/messages = list() //List of all messages
 	var/terminalType = 2
 		// 1 = unused for now
@@ -110,13 +110,13 @@ GLOBAL_LIST_EMPTY(allTerminals)
 			dat += "<tr>"
 			dat += "<td width='55%'>"
 			if(src.terminalid == "brotherhood")
-				dat += "<br>Circle of Steel"
+				dat += "<br>Utah Council of Elders"
 			if(src.terminalid == "legion")
-				dat += "<br>Cohort War Council of Southwestern Arizona"
+				dat += "<br>Zion War Council"
 			if(src.terminalid == "ncr")
-				dat += "<br>Arizona Command Camp Alexander"
+				dat += "<br>Caliente Expeditionary Command"
 			if(src.terminalid == "enclave")
-				dat += "<br>Rocky Mountain Arsenal"
+				dat += "<br>West Temple HighComm"
 			dat += "</td>"
 			dat += "<td width='45%'>"
 			dat += "<br><A href='?src=[REF(src)];setScreen=11'>Send Message to Command</A><br>"
@@ -179,23 +179,49 @@ GLOBAL_LIST_EMPTY(allTerminals)
 		if(10) //unused for now but may be useful later
 			dat += "<b>Message to Command</b> <br><br>"
 			if(src.terminalid == "ncr")
-				dat += "<b>Arizona Command Camp Alexander</b> <br><br>"
+				dat += "<b>Caliente Expeditionary Command</b> <br><br>"
 			if(src.terminalid == "legion")
-				dat += "<b>Cohort War Council of Southwestern Arizona</b> <br><br>"
+				dat += "<b>Zion War Council</b> <br><br>"
 			if(src.terminalid == "brotherhood")
-				dat += "<b>Circle of Steel</b> <br><br>"
+				dat += "<b>Utah Council of Elders</b> <br><br>"
 			if(src.terminalid == "enclave")
-				dat += "<br>Rocky Mountain Arsenal"
+				dat += "<br>West Temple HighComm"
 			dat += "<a href='?src=[REF(src)];setScreen=11'>Send Message to Command</a> <br><br>"
 		if(11)
 			var/message = input(usr,"Send a message to command staff. Ensure it makes sense IC.","") as message|null
 			if(message)
-				message_admins("[ADMIN_LOOKUPFLW(usr)] has sent <font size=2>COMMAND MESSAGE</font> FROM terminal:[ADMIN_LOOKUPFLW(src)]. '[message]' <br>Jump to the reply terminal:[ADMIN_JMP_MSGTERMINAL(src)]")
-				log_terminal("[key_name(usr)] sent a COMMAND message, '[message]' from the terminal at [AREACOORD(usr)].")
+				var/mutable_appearance/flag = mutable_appearance('icons/obj/flags.dmi', "vtccflag")
+				var/message_span = "notice"
+				var/superiors = "Top Brass"
+				if(usr.mind)
+					switch(SSjob.GetJob(usr.mind.assigned_role).faction)
+						if(FACTION_NCR)
+							flag.icon_state = "ncrflag"
+							superiors = "Caliente Expeditionary Command"
+							message_span = get_radio_span(FREQ_NCR)
+						if(FACTION_LEGION)
+							flag.icon_state = "legionflag"
+							superiors = "Zion War Council"
+							message_span = get_radio_span(FREQ_LEGION)
+						if(FACTION_BROTHERHOOD)
+							flag.icon_state = "bosflag"
+							superiors = "Utah Council of Elders"
+							message_span = get_radio_span(FREQ_BOS)
+						if(FACTION_ENCLAVE)
+							flag.icon_state = "enclaveflag"
+							superiors = "West Temple HighComm"
+							message_span = get_radio_span(FREQ_ENCLAVE)
+				var/admin_msg = "<span class='adminnotice'><span class='comradio'><b>[icon2html(flag, GLOB.admins)]COMMAND MESSAGE[superiors ? " to [superiors]" : ""]:</b></span> [ADMIN_FULLMONTY(usr)]:<span class=[message_span]><br>\"[message]\"</span> <br>Jump to the reply terminal:[ADMIN_JMP_MSGTERMINAL(src)]</span>"
+				log_terminal("[key_name(usr)] sent a Command message, '[message]' from the terminal at [AREACOORD(usr)].")
 				screen = 6
 				dat += "<span class='good'>Message to Command delivered.</span><br><br>"
 				updateUsrDialog()
 				playsound(src, 'sound/f13machines/terminalmenuenter.ogg', 20, 1)
+				for(var/client/C in GLOB.admins)
+					if(C.prefs.chat_toggles & CHAT_COMM_CENTER)
+						to_chat(C, admin_msg)
+						if(C.prefs.toggles & SOUND_COMM_CENTER)
+							SEND_SOUND(C, sound('sound/items/stalker_pda_sos.ogg'))
 			else
 				screen = 7
 				dat += "<span class='bad'>Message to Command aborted.</span><br><br>"
@@ -414,24 +440,9 @@ GLOBAL_LIST_EMPTY(allTerminals)
 
 /obj/machinery/msgterminal/legion
 	terminalid = "legion"
-	icon = 'icons/obj/computer.dmi'
-	icon_state = "pigeoncrate"
-	terminal = "Legion Pigeon Carrier"
+	terminal = "Legion Terminal"
 	terminalType = 2
 
-/*
-/obj/machinery/msgterminal/pigeon
-	icon = 'icons/obj/computer.dmi'
-	icon_state = "pigeoncrate"
-	terminal = "PigeonCarrier"
-	terminalType = 2
-	beepsound = 'sound/f13effects/pigeons.ogg'
-
-
-/obj/machinery/msgterminal/machined
-	terminal = "Terminal"
-	terminalType = 2
-*/
 /obj/machinery/msgterminal/bighorn
 	terminalid = "bighorn"
 	terminal = "Bighorn Terminal"
@@ -446,6 +457,7 @@ GLOBAL_LIST_EMPTY(allTerminals)
 	terminalid = "brotherhood"
 	terminal = "Brotherhood Terminal"
 	terminalType = 2
+
 /obj/machinery/msgterminal/command
 	terminalid = "command"
 	terminal = "COMMAND"

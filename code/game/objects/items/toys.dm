@@ -515,7 +515,7 @@
 
 /obj/item/toy/snappop/Initialize(mapload)
 	. = ..()
-	
+
 	var/static/list/loc_connections = list(
 		COMSIG_ATOM_ENTERED = .proc/on_entered,
 	)
@@ -1371,7 +1371,7 @@
 /obj/item/toy/figure/chaplain
 	name = "Chaplain action figure"
 	icon_state = "chaplain"
-	toysay = "Praise Space Jesus!"
+	toysay = "Praise Jesus!"
 
 /obj/item/toy/figure/chef
 	name = "Chef action figure"
@@ -1547,7 +1547,7 @@
 	icon = 'icons/obj/toy.dmi'
 	icon_state = "deck_nanotrasen_full"
 	attack_verb = list("declares an attack against")
-	
+
 /obj/item/toy/tragicthegarnering/attack_self(mob/user)
 	if(Adjacent(user))
 		user.visible_message("<span class='notice'>[user] resists the urge to play with his deck of Tragic", \
