@@ -746,7 +746,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 // VETERAN
 
 /datum/job/CaesarsLegion/Legionnaire/vetlegionnaire
-	title = "Veteran Legionnaire"
+	title = "Veteran Legionary"
 	flag = F13VETLEGIONARY
 	total_positions = 3
 	spawn_positions = 3
@@ -781,7 +781,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	ADD_TRAIT(H, TRAIT_IRONFIST,  REF(src))
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionnaire
-	name = "Veteran Legionnaire"
+	name = "Veteran Legionary"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/vetlegionnaire
 	id = /obj/item/card/id/dogtag/legveteran
 	mask = /obj/item/clothing/mask/bandana/legion/legvet
@@ -840,7 +840,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 // PRIME
 
 /datum/job/CaesarsLegion/Legionnaire/f13legionary
-	title = "Prime Legionnaire"
+	title = "Prime Legionary"
 	flag = F13LEGIONARY
 	total_positions = 3
 	spawn_positions = 3
@@ -874,7 +874,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
-	name = "Prime Legionnaire"
+	name = "Prime Legionary"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13legionary
 	id = /obj/item/card/id/dogtag/legprime
 	mask = /obj/item/clothing/mask/bandana/legion/legprime
@@ -918,7 +918,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 // RECRUIT
 
 /datum/job/CaesarsLegion/Legionnaire/f13recleg
-	title = "Recruit Legionnaire"
+	title = "Recruit Legionary"
 	flag = F13RECRUITLEG
 	total_positions = 4
 	spawn_positions = 4
@@ -948,7 +948,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES,  REF(src))
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg
-	name = "Recruit Legionnaire"
+	name = "Recruit Legionary"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13recleg
 	id = /obj/item/card/id/dogtag/legrecruit
 	shoes = /obj/item/clothing/shoes/f13/military/leather
