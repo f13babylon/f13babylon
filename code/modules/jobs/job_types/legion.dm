@@ -185,7 +185,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	roleplay_exclusive_notify = 1
-	exp_requirements = 0
+	exp_type = EXP_TYPE_LEGION
+	exp_requirements = 900
 
 /datum/outfit/job/CaesarsLegion/f13priestess
 	name = "Priestess of Mars"
