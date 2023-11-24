@@ -753,7 +753,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 // HEAVY GUNNER
 
 /datum/job/ncr/f13heavytrooper
-	title = "NCR Heavy Gunner"
+	title = "NCR Heavy Trooper"
 	flag = F13HEAVYTROOPER
 	total_positions = 1
 	spawn_positions = 2
