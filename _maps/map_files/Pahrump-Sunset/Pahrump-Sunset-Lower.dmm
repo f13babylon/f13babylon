@@ -2222,7 +2222,6 @@
 /area/f13/tunnel)
 "bIf" = (
 /obj/machinery/light/small,
-/obj/effect/spawner/lootdrop/f13/armor/tier4,
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/tunnel)
 "bIg" = (
@@ -21034,6 +21033,11 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/tunnel)
+"xzq" = (
+/obj/item/clothing/suit/armor/f13/combat/riotpolice,
+/obj/item/clothing/head/helmet/f13/combat/rangerbroken,
+/turf/open/floor/plasteel/floorgrime,
+/area/f13/tunnel)
 "xzK" = (
 /obj/effect/spawner/lootdrop/f13/foodspawner,
 /obj/structure/table/wood/poker,
@@ -21468,6 +21472,10 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/tunnel/bighorn)
+"ybH" = (
+/obj/structure/simple_door/bunker,
+/turf/open/floor/plasteel/floorgrime,
+/area/f13/tunnel)
 "ycl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/fridge,
@@ -46359,12 +46367,12 @@ bGN
 apg
 apg
 apg
+ybH
 apg
 apg
 apg
 apg
-apg
-apg
+bBm
 apg
 apg
 apj
@@ -47130,7 +47138,7 @@ bDf
 bDf
 apg
 bHK
-bHK
+xzq
 bHK
 apg
 oiH
