@@ -393,7 +393,7 @@
 	..()
 
 /datum/reagent/medicine/healingpowder/overdose_process(mob/living/carbon/M)
-	M.adjustToxLoss((6.75 * 1.5 + 6.75) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//150% of toxloss offset + base toxloss offset
+	M.adjustToxLoss((6.75 * 1.5) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//150% of oxyloss offset
 	M.hallucination = max(M.hallucination, 25)
 	M.jitteriness = max(M.jitteriness, 300)
 	M.druggy = max(M.druggy, 15)
@@ -471,7 +471,7 @@
 	..()
 
 /datum/reagent/medicine/healingpoultice/overdose_process(mob/living/carbon/M)
-	M.adjustOxyLoss((6.75 * 1.5 + 6.75) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//150% of oxyloss offset + base oxyloss offset
+	M.adjustOxyLoss((6.75 * 1.5) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//150% of toxloss offset
 	M.hallucination = max(M.hallucination, 25)
 	M.jitteriness = max(M.jitteriness, 300)
 	M.druggy = max(M.druggy, 15)
