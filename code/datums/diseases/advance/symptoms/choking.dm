@@ -148,5 +148,4 @@ Bonus
 /datum/symptom/asphyxiation/proc/Asphyxiate_death(mob/living/M, datum/disease/advance/A)
 	var/get_damage = rand(25,35) * power
 	M.adjustOxyLoss(get_damage)
-	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, get_damage/2)
 	return 1
