@@ -169,12 +169,19 @@
 		file_data["wanted"] = list("author" = "[GLOB.news_network.wanted_issue.scannedUser]", "criminal" = "[GLOB.news_network.wanted_issue.criminal]", "description" = "[GLOB.news_network.wanted_issue.body]", "photo file" = "[GLOB.news_network.wanted_issue.photo_file]")
 	WRITE_FILE(json_file, json_encode(file_data))
 
+/datum/controller/subsystem/ticker/proc/send_to_discord_round_status(message)
+	var/tgs_channel_tag = CONFIG_GET(string/discord_round_status_channel)
+	if(!tgs_channel_tag)
+		return
+	var/datum/tgs_message_content/content = new(message)
+	send2chat(content, tgs_channel_tag)
+
 /datum/controller/subsystem/ticker/proc/declare_completion()
 	set waitfor = FALSE
 
 	to_chat(world, "<BR><BR><BR><span class='big bold'>The round has ended.</span>")
 	if(LAZYLEN(GLOB.round_end_notifiees))
-		world.TgsTargetedChatBroadcast("[GLOB.round_end_notifiees.Join(", ")] the round has ended.", FALSE)
+		send_to_discord_round_status("[GLOB.round_end_notifiees.Join(", ")] the round has ended.")
 
 	for(var/I in round_end_events)
 		var/datum/callback/cb = I
@@ -201,27 +208,20 @@
 
 	//Set news report and mode result
 	mode.set_round_result()
-
-	var/survival_rate = GLOB.joined_player_list.len ? "[PERCENT(popcount[POPCOUNT_SURVIVORS]/GLOB.joined_player_list.len)]%" : "there's literally no player"
-
-	send2irc("Server", "A round of [mode.name] just ended[mode_result == "undefined" ? "." : " with a [mode_result]."] Survival rate: [survival_rate]")
-
 	if(length(CONFIG_GET(keyed_list/cross_server)))
 		send_news_report()
-	//fortuna addition. list of random names for the roundend news author
-	var/list/publisher = list("Babylon Publishing",
-							  "FoA News",
-							  "Great Khan Storyteller",
-							  "Legion Orator",
-							  "NCR Intelligence",
-							  "Tribal Rumors",
-							  "BoS Survey Team",
-							  "Enclave Propaganda")
-	//tell the nice people on discord what went on before the salt cannon happens.
-	// send2chat sending the new round ping off
-	send2chat(" <@&922230570791108628> ", CONFIG_GET(string/discord_channel_serverstatus))
-	world.TgsTargetedChatBroadcast("The current round has ended. Please standby for your [pick(publisher)] report!", FALSE)
-	//lonestar edit. i'm adding a timer here because i'm tired of the messages being sent out of order
+
+	var/static/publisher = pick(
+		"Babylon Publishing",
+		"FoA News",
+		"Great Khan Storyteller",
+		"Legion Orator",
+		"NCR Intelligence",
+		"Tribal Rumors",
+		"BoS Survey Team",
+		"Enclave Propaganda",
+	)
+	send_to_discord_round_status("The current round has ended. Please standby for your [publisher] report.")
 	addtimer(CALLBACK(src, .proc/send_roundinfo), 3 SECONDS)
 
 	CHECK_TICK
@@ -262,7 +262,6 @@
 	var/time_to_end = CONFIG_GET(number/eorg_period)
 	to_chat(world, "<span class='info'>EORD in progress, game end delayed by [time_to_end * 0.1] seconds!</a></span>")
 	addtimer(CALLBACK(src, .proc/standard_reboot), time_to_end)
-
 
 /datum/controller/subsystem/ticker/proc/standard_reboot()
 	ready_for_reboot = TRUE
@@ -451,15 +450,7 @@
 		return "<div class='panel stationborder'>[parts.Join("<br>")]</div>"
 	else
 		return ""
-/*
-/datum/controller/subsystem/ticker/proc/goal_report()
-	var/list/parts = list()
-	if(mode.station_goals.len)
-		for(var/V in mode.station_goals)
-			var/datum/station_goal/G = V
-			parts += G.get_result()
-		return "<div class='panel stationborder'><ul>[parts.Join()]</ul></div>"
-*/
+
 /datum/controller/subsystem/ticker/proc/medal_report()
 	if(GLOB.commendations.len)
 		var/list/parts = list()
@@ -469,7 +460,6 @@
 		return "<div class='panel stationborder'>[parts.Join("<br>")]</div>"
 	return ""
 
-
 /datum/controller/subsystem/ticker/proc/matchmaking_report()
 	var/list/matches_log = SSmatchmaking.matches_log
 	if(!length(matches_log))
@@ -477,7 +467,6 @@
 	var/list/parts = list("<span class='header'>Matchmakings:</span>")
 	parts += matches_log
 	return "<div class='panel stationborder'>[parts.Join("<br>")]</div>"
-
 
 /datum/controller/subsystem/ticker/proc/antag_report()
 	var/list/result = list()
@@ -527,7 +516,6 @@
 
 /proc/cmp_antag_category(datum/antagonist/A,datum/antagonist/B)
 	return sorttext(B.roundend_category,A.roundend_category)
-
 
 /datum/controller/subsystem/ticker/proc/give_show_report_button(client/C)
 	var/datum/action/report/R = new
@@ -677,4 +665,4 @@
 	var/ping_role_id = CONFIG_GET(string/discord_ping_role_id)
 	if(ping_role_id)
 		news_report += "\n<@&[ping_role_id]>"
-	world.TgsTargetedChatBroadcast(new /datum/tgs_message_content(news_report), FALSE)
+	send_to_discord_round_status(news_report)

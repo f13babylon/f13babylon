@@ -157,24 +157,21 @@
 	to_chat(usr, "<span class='adminnotice'>Ban saved to database.</span>")
 	var/msg = "[key_name_admin(usr)] has added a [bantype_str] for [bankey] [(job)?"([job])":""] [(duration > 0)?"([duration] minutes)":""] with the reason: \"[reason]\" to the ban database."
 
-	var/tgs_relay_tag = CONFIG_GET(string/tgs_ban_relay_tag)
-	if(tgs_relay_tag)
-		var/datum/tgs_chat_embed/structure/alert_embed = new
-		alert_embed.timestamp = time2text(REALTIMEOFDAY, "YYYY-MM-DD hh:mm:ss")
-		alert_embed.fields += new /datum/tgs_chat_embed/field("Admin", key_name(usr))
-		alert_embed.fields += new /datum/tgs_chat_embed/field("Target", ckey)
-		alert_embed.fields += new /datum/tgs_chat_embed/field("Ban Type", bantype_str)
-		if(job)
-			alert_embed.fields += new /datum/tgs_chat_embed/field("Job", job)
-		if(duration > 0)
-			alert_embed.fields += new /datum/tgs_chat_embed/field("Duration", DisplayTimeText(duration * MINUTES))
-		send2chat(alert_embed, tgs_relay_tag)
+	// var/tgs_relay_tag = CONFIG_GET(string/tgs_ban_relay_tag)
+	// if(tgs_relay_tag)
+	// 	var/datum/tgs_chat_embed/structure/alert_embed = new
+	// 	alert_embed.timestamp = time2text(REALTIMEOFDAY, "YYYY-MM-DD hh:mm:ss")
+	// 	alert_embed.fields += new /datum/tgs_chat_embed/field("Admin", key_name(usr))
+	// 	alert_embed.fields += new /datum/tgs_chat_embed/field("Target", ckey)
+	// 	alert_embed.fields += new /datum/tgs_chat_embed/field("Ban Type", bantype_str)
+	// 	if(job)
+	// 		alert_embed.fields += new /datum/tgs_chat_embed/field("Job", job)
+	// 	if(duration > 0)
+	// 		alert_embed.fields += new /datum/tgs_chat_embed/field("Duration", DisplayTimeText(duration * MINUTES))
+	// 	send2chat(alert_embed, tgs_relay_tag)
 
 	message_admins(msg,1)
 	var/datum/admin_help/AH = admin_ticket_log(ckey, msg)
-
-	if(announceinirc)
-		send2irc("BAN ALERT","[a_key] applied a [bantype_str] on [bankey]")
 
 	if(kickbannedckey)
 		if(AH)

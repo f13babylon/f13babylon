@@ -52,3 +52,7 @@
 
 /datum/config_entry/string/discord_ping_role_id
 	protection = CONFIG_ENTRY_LOCKED
+
+/datum/config_entry/string/discord_round_status_channel
+	protection = CONFIG_ENTRY_LOCKED
+	config_entry_value = "round-status"
