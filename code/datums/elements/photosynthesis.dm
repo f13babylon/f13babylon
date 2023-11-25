@@ -64,6 +64,8 @@
 				L.adjust_nutrition(light_amount * light_nutrition_gain * attached_atoms[AM], NUTRITION_LEVEL_WELL_FED)
 			if(light_amount > bonus_lum || light_amount < malus_lum)
 				var/mult = ((light_amount > bonus_lum) ? 1 : -1) * attached_atoms[AM]
+				if(mult < 0 && prob(10))
+					to_chat(A, "<span class ='danger'>You feel yourself growing weaker without light.</span>")
 				if(light_bruteheal)
 					L.adjustBruteLoss(light_bruteheal * mult)
 				if(light_burnheal)

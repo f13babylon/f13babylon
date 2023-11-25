@@ -7,6 +7,8 @@
 	attack_verb = "slash"
 	attack_sound = 'sound/weapons/slice.ogg'
 	miss_sound = 'sound/weapons/slashmiss.ogg'
+	exotic_blood = /datum/reagent/plantnutriment/eznutriment
+	exotic_blood_color = "#376400"
 	burnmod = 1.25
 	heatmod = 1.5
 	meat = /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/plant
@@ -21,7 +23,7 @@
 
 	species_type = "plant"
 
-	allowed_limb_ids = list("pod","mush")
+	allowed_limb_ids = list("pod")
 
 /datum/species/pod/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	. = ..()
@@ -72,8 +74,8 @@
 	limbs_id = "pod"
 	brutemod = 1.25	//New Babylon change: from 1 to 1.25
 	light_nutrition_gain_factor = 2	//New Babylon change: from 3 to 2
-	light_bruteheal = -0.2
-	light_burnheal = -0.2
+	light_bruteheal = -0.1	//New Babylon change: from 0.2 to 0.1
+	light_burnheal = -0.1	//New Babylon change: from 0.2 to 0.1
 	light_toxheal = -0.1	//New Babylon change: from 0.7 to 0.1
 	light_oxyheal = 0	//New Babylon change: from 1 to 0
 
