@@ -209,9 +209,11 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
+/obj/structure/fans/tiny,
 /obj/machinery/door/airlock/hatch{
 	req_access = null;
-	req_access_txt = "134"
+	req_access_txt = "134";
+	name = "Lobster room"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/enclave)
@@ -528,9 +530,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
 "eH" = (
-/obj/structure/decoration/vent,
-/obj/item/locked_box/misc/seed,
-/turf/open/floor/plasteel/f13/vault_floor/dark,
+/mob/living/simple_animal/crab/evil/kreb{
+	name = "Encrab"
+	},
+/turf/open/water,
 /area/f13/enclave)
 "eL" = (
 /obj/effect/landmark/start/f13/uslt,
@@ -1102,8 +1105,10 @@
 /turf/closed/indestructible/rock,
 /area/f13/underground/cave)
 "jb" = (
-/obj/structure/wreck/trash/three_barrels,
-/turf/open/floor/plasteel/f13/vault_floor/dark,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/water,
 /area/f13/enclave)
 "jd" = (
 /obj/machinery/light{
@@ -2539,8 +2544,7 @@
 /area/f13/mountain_area)
 "ue" = (
 /obj/structure/decoration/vent,
-/obj/structure/wreck/trash/two_barrels,
-/turf/open/floor/plasteel/f13/vault_floor/dark,
+/turf/open/water,
 /area/f13/enclave)
 "uh" = (
 /obj/effect/turf_decal/weather/snow/corner{
@@ -2947,8 +2951,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
 /area/f13/enclave)
 "xh" = (
-/obj/item/locked_box/misc/seed,
-/turf/open/floor/plasteel/f13/vault_floor/dark,
+/turf/open/water,
 /area/f13/enclave)
 "xi" = (
 /obj/effect/turf_decal/weather/snow/corner{
@@ -3510,7 +3513,8 @@
 /area/f13/enclave)
 "BC" = (
 /obj/structure/decoration/vent,
-/turf/open/floor/plasteel/f13/vault_floor/dark,
+/obj/item/fishy/lobster,
+/turf/open/water,
 /area/f13/enclave)
 "BD" = (
 /mob/living/simple_animal/chicken{
@@ -3618,8 +3622,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
 /area/f13/enclave)
 "Cz" = (
-/obj/structure/wreck/trash/four_barrels,
-/turf/open/floor/plasteel/f13/vault_floor/dark,
+/obj/item/fishy/lobster,
+/turf/open/water,
 /area/f13/enclave)
 "CA" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -26347,7 +26351,7 @@ SP
 Lg
 ue
 Cz
-SP
+xh
 BC
 AW
 iT
@@ -26602,10 +26606,10 @@ SP
 SP
 SP
 Lg
-jb
 xh
-SP
-SP
+xh
+eH
+xh
 AW
 iT
 HA
@@ -26859,10 +26863,10 @@ SP
 SP
 Lq
 Lg
-eH
-SP
-Lq
-eH
+ue
+Cz
+jb
+BC
 AW
 iT
 HA

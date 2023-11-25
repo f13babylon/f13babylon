@@ -47,6 +47,7 @@
 	unsuitable_atmos_damage = 0
 	faction = list("plants")
 	guaranteed_butcher_results = list(/obj/item/stack/sheet/bone = 1)
+
 /mob/living/simple_animal/hostile/trog/tunneler
 	name = "tunneler"
 	desc = "A mutated creature that is sensitive to light, but can swarm and kill even Deathclaws."
@@ -79,4 +80,4 @@
 	. = ..()
 	if(. && ishuman(target))
 		var/mob/living/carbon/human/H = target
-		H.reagents.add_reagent(/datum/reagent/toxin/venom, 5)
+		H.reagents.add_reagent(/datum/reagent/toxin/venom, 1)

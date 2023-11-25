@@ -71,4 +71,3 @@
 		H.water = THIRST_LEVEL_FULL
 	if(H.water > THIRST_LEVEL_FULL)
 		H.water = THIRST_LEVEL_FULL
-

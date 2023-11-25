@@ -876,7 +876,7 @@
 		/obj/item/binoculars = 1,
 		/obj/item/restraints/legcuffs/bola/tactical = 1
 	)
-	
+
 /obj/effect/mob_spawn/human/fallout13/tribal/ranged
 	name = "Bow Hunter Spawn"
 	desc = "An entry point for bow hunters to join a battle."

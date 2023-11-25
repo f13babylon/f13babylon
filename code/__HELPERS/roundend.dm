@@ -210,12 +210,12 @@
 		send_news_report()
 	//fortuna addition. list of random names for the roundend news author
 	var/list/publisher = list("Babylon Publishing",
-							  "FoA News",
+							  "Followers Administrator",
 							  "Great Khan Storyteller",
 							  "Legion Orator",
 							  "NCR Intelligence",
 							  "Tribal Rumors",
-							  "BoS Survey Team",
+							  "Brotherhood Survey Team",
 							  "Enclave Propaganda")
 	//tell the nice people on discord what went on before the salt cannon happens.
 	// send2chat sending the new round ping off
@@ -673,5 +673,8 @@
 		qdel(query_check_everything_ranks)
 
 /datum/controller/subsystem/ticker/proc/send_roundinfo()
-	world.TgsTargetedChatBroadcast(send_news_report(),FALSE)
-
+	var/news_report = send_news_report()
+	var/ping_role_id = CONFIG_GET(string/discord_ping_role_id)
+	if(ping_role_id)
+		news_report += "\n<@&[ping_role_id]>"
+	world.TgsTargetedChatBroadcast(new /datum/tgs_message_content(news_report), FALSE)

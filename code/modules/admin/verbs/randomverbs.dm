@@ -68,20 +68,38 @@
 		to_chat(usr, "The person you are trying to contact is not wearing a headset.")
 		return
 
-	if (!sender)
-		sender = input("Who is the message from?", "Sender") as null|anything in list(RADIO_CHANNEL_CENTCOM,RADIO_CHANNEL_SYNDICATE)
+	if(!sender)
+		sender = input("Who is the message from?", "Sender") as null|anything in list(RADIO_CHANNEL_NCR, RADIO_CHANNEL_LEGION, RADIO_CHANNEL_BOS, RADIO_CHANNEL_ENCLAVE)
 		if(!sender)
 			return
 
+	var/sender_name = input("Specify a name (can be empty)", "Sender's name", "") as text|null
+	var/sender_full_info
+	var/radio_span
+	switch(sender)
+		if("NCR")
+			sender_full_info = "[sender_name ? "[sender_name] of the ": ""]Caliente Expeditionary Command"
+			radio_span = get_radio_span(FREQ_NCR)
+		if("Legion")
+			sender_full_info = "[sender_name ? "[sender_name] of the ": ""]Zion War Council"
+			radio_span = get_radio_span(FREQ_LEGION)
+		if("BOS")
+			sender_full_info = "[sender_name ? "[sender_name] of the ": ""]Utah Council of Elders"
+			radio_span = get_radio_span(FREQ_BOS)
+		if("Enclave")
+			sender_full_info = "[sender_name ? "[sender_name] of the ": ""]West Temple HighComm"
+			radio_span = get_radio_span(FREQ_ENCLAVE)
+
 	message_admins("[key_name_admin(src)] has started answering [key_name_admin(H)]'s [sender] request.")
-	var/input = input("Please enter a message to reply to [key_name(H)] via their headset.","Outgoing message from [sender]", "") as text|null
+	var/input = input("\"This is [sender_full_info], <your message goes here>\"","Message from [sender_full_info]", "") as text|null
 	if(!input)
 		message_admins("[key_name_admin(src)] decided not to answer [key_name_admin(H)]'s [sender] request.")
 		return
 
 	log_directed_talk(mob, H, input, LOG_ADMIN, "reply")
 	message_admins("[key_name_admin(src)] replied to [key_name_admin(H)]'s [sender] message with: \"[input]\"")
-	to_chat(H, "You hear something crackle in your ears for a moment before a voice speaks.  \"Please stand by for a message from [sender == "Syndicate" ? "your benefactor" : "Central Command"].  Message as follows[sender == "Syndicate" ? ", agent." : ":"] <span class='bold'>[input].</span> Message ends.\"")
+	SEND_SOUND(H, sound('sound/items/stalker_pda_news.ogg'))
+	to_chat(H, "<span class='notice'>You hear something crackle in your headset for a moment before a voice speaks.</span><br><span class=[radio_span]>\"This is <b>[sender_full_info]</b>, [input]\"</span>")
 
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Headset Message") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 

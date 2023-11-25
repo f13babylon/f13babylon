@@ -638,26 +638,12 @@
 	remarks = list("Always keep your gun well lubricated...", "Keep your barrel free of grime...", "Perfect fitment is the key to a good firearm...", "Maintain a proper trigger pull length...", "Keep your sights zeroed to proper range...")
 	crafting_recipe_types = list(/datum/crafting_recipe/flux, /datum/crafting_recipe/lenses, /datum/crafting_recipe/conductors, /datum/crafting_recipe/receiver, /datum/crafting_recipe/assembly, /datum/crafting_recipe/alloys)
 
-/obj/item/book/granter/crafting_recipe/scav_one
-	name = "SCAV! Issue 1"
-	desc = "A popular post-war comic series detailing the trials and tribulations of scavengers and their tools."
+/obj/item/book/granter/crafting_recipe/scav
+	name = "SCAV! Omnibus"
+	desc = "A popular post-war comic series detailing the trials and tribulations of scavengers and their tools. This is the omnibus edition, a great find that has all the comics from every single previously-released issue!."
 	oneuse = TRUE
 	remarks = list("And it was here that I stabbed a man over a desk fan...", "The paint was chipping, but that didn't matter when he lay dead...", "A tank here, a pipe there...", "A bit of duct tape wrapped around everything...", "My flamethrower spat fire! Wait, where are my eyebrows...")
-	crafting_recipe_types = list(/datum/crafting_recipe/chainsaw, /datum/crafting_recipe/tools/forged/entrenching_tool, /datum/crafting_recipe/durathread_vest, /datum/crafting_recipe/steeltower)
-
-/obj/item/book/granter/crafting_recipe/scav_two
-	name = "SCAV! Issue 2"
-	desc = "A popular post-war comic series detailing the trials and tribulations of scavengers and their tools."
-	oneuse = TRUE
-	remarks = list("And it was here that I stabbed a man over a desk fan...", "The paint was chipping, but that didn't matter when he lay dead...", "A tank here, a pipe there...", "A bit of duct tape wrapped around everything...", "My flamethrower spat fire! Wait, where are my eyebrows...")
-	crafting_recipe_types = list(/datum/crafting_recipe/steelsaw)
-
-/obj/item/book/granter/crafting_recipe/scav_three
-	name = "SCAV! Issue 3"
-	desc = "A popular post-war comic series detailing the trials and tribulations of scavengers and their tools."
-	oneuse = TRUE
-	remarks = list("And it was here that I stabbed a man over a desk fan...", "The paint was chipping, but that didn't matter when he lay dead...", "A tank here, a pipe there...", "A bit of duct tape wrapped around everything...", "My flamethrower spat fire! Wait, where are my eyebrows...")
-	crafting_recipe_types = list(/datum/crafting_recipe/autoaxe)
+	crafting_recipe_types = list(/datum/crafting_recipe/steelsaw, /datum/crafting_recipe/autoaxe, /datum/crafting_recipe/chainsaw, /datum/crafting_recipe/tools/forged/entrenching_tool, /datum/crafting_recipe/durathread_vest, /datum/crafting_recipe/steeltower)
 
 // New Blueprints, yay! -Superballs
 /obj/item/book/granter/crafting_recipe/blueprint
@@ -680,9 +666,9 @@
 	crafting_recipe_types = list(/datum/crafting_recipe/marksmancarbine)
 
 /obj/item/book/granter/crafting_recipe/blueprint/combatrifle
-	name = "combat rifle blueprint"
+	name = "combat carbine blueprint"
 	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/combatrifle)
+	crafting_recipe_types = list(/datum/crafting_recipe/combatcarbine)
 
 /obj/item/book/granter/crafting_recipe/blueprint/r84
 	name = "r84 lmg blueprint"

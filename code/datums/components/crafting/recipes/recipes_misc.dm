@@ -408,7 +408,7 @@
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
 	always_available = FALSE
-	
+
 
 /datum/crafting_recipe/plunger
 	name = "Plunger"
@@ -449,3 +449,16 @@
 	time = 60
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
+
+//Abraxo recipe after several requests
+
+/datum/crafting_recipe/abraxo
+	name = "Abraxo"
+	result = /obj/item/crafting/abraxo
+	time = 20
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/grown/pungafruit = 5,
+		/obj/item/soap = 1,
+		/datum/material/sand  = 1,
+		)
+	subcategory = CAT_MISCELLANEOUS

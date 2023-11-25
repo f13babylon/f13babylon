@@ -46,16 +46,6 @@
 	/// A list of categories that valid MECHFAB design datums will broadly categorise themselves under.
 	var/list/part_sets = list(
 								"Cyborg",
-								"Clarke",
-								"Ripley",
-							//	"Firefighter",
-								"Odysseus",
-								"Gygax",
-								"Medical-Spec Gygax",
-								"Durand",
-								"Marauder",
-							//	"H.O.N.K",
-							//	"Phazon",
 								"Exosuit Equipment",
 								"Exosuit Ammunition",
 								"Cyborg Upgrade Modules",
@@ -162,14 +152,7 @@
 					category_override += "Firefighter"
 				if(mech_types & EXOSUIT_MODULE_ODYSSEUS)
 					category_override += "Odysseus"
-				if(mech_types & EXOSUIT_MODULE_GYGAX_MED)
-					category_override += "Medical-Spec Gygax"
-				if(mech_types & EXOSUIT_MODULE_GYGAX)
-					category_override += "Gygax"
-				if(mech_types & EXOSUIT_MODULE_DURAND)
-					category_override += "Durand"
-				if(mech_types & EXOSUIT_MODULE_PHAZON)
-					category_override += "Phazon"
+
 
 
 	var/list/part = list(

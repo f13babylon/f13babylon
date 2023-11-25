@@ -355,47 +355,12 @@
 	unit_name = "working firefighter"
 	export_types = list(/obj/mecha/working/ripley/firefighter)
 
-/datum/export/large/mech/gygax
-	cost = 19000
-	unit_name = "working gygax"
-	export_types = list(/obj/mecha/combat/gygax)
-
-/datum/export/large/mech/durand
-	cost = 16000
-	unit_name = "working durand"
-	export_types = list(/obj/mecha/combat/durand)
-
-/datum/export/large/mech/phazon
-	cost = 35000 //Little over half due to needing a core
-	unit_name = "working phazon"
-	export_types = list(/obj/mecha/combat/phazon)
-
-/datum/export/large/mech/marauder
-	cost = 15000 //Still a Combat class mech - CC tech as well! 150% "normal" boundy price.
-	unit_name = "working marauder"
-	export_types = list(/obj/mecha/combat/marauder)
-
 /datum/export/large/mech/deathripley
 	cost = 18500 //Still a "Combat class" mech - Illegal tech as well! 165% "normal" boundy price.
 	unit_name = "working illegally modified"
 	export_types = list(/obj/mecha/working/ripley/deathripley)
 
-/datum/export/large/mech/gygaxdark
-	cost = 28500 //Still a Combat class mech - Illegal tech as well! 150% "normal" boundy price.
-	unit_name = "working illegally modified gygax"
-	export_types = list(/obj/mecha/combat/gygax/dark)
-
 /datum/export/large/mech/oldripley
 	cost = 6250 //old mech - Scrap metal ! 50% "normal" boundy price.
 	unit_name = "working miner ripley"
 	export_types = list(/obj/mecha/working/ripley/mining)
-
-/datum/export/large/mech/seraph
-	cost = 25500 //Still a Combat class mech - CC tech as well! 150% "normal" boundy price.
-	unit_name = "working seraph"
-	export_types = list(/obj/mecha/combat/marauder/seraph)
-
-/datum/export/large/mech/mauler
-	cost = 25000 //Still a Combat class mech - CC lethal weaponds.
-	unit_name = "working legally modified marauder"
-	export_types = list(/obj/mecha/combat/marauder/mauler)

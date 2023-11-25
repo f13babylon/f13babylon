@@ -1,4 +1,4 @@
-
+/*
 /datum/techweb_node/syndicate_basic
 	id = "syndicate_basic"
 	display_name = "Illegal Technology"
@@ -23,7 +23,7 @@
 	design_ids = list("bolt_clip")
 	prereq_ids = list("syndicate_basic")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 25000) //This gives sec lethal mags/clips for guns from traitors, space, or anything in between.
-
+*/
 //Helpers for debugging/balancing the techweb in its entirety!
 
 /proc/total_techweb_points()

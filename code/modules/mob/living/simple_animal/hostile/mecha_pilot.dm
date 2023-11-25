@@ -25,7 +25,7 @@ Featuring:
 	search_objects = 0
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
 
-	var/spawn_mecha_type = /obj/mecha/combat/marauder/mauler/loaded
+	var/spawn_mecha_type = /obj/mecha/
 	var/obj/mecha/mecha //Ref to pilot's mecha instance
 	var/required_mecha_charge = 7500 //If the pilot doesn't have a mecha, what charge does a potential Grand Theft Mecha need? (Defaults to half a battery)
 	var/mecha_charge_evacuate = 50 //Amount of charge at which the pilot tries to abandon the mecha
@@ -43,14 +43,6 @@ Featuring:
 /mob/living/simple_animal/hostile/syndicate/mecha_pilot/no_mech/Initialize(mapload)
 	. = ..()
 	wanted_objects = typecacheof(/obj/mecha/combat, TRUE)
-
-/mob/living/simple_animal/hostile/syndicate/mecha_pilot/nanotrasen //nanotrasen are syndies! no it's just a weird path.
-	name = "Nanotrasen Mecha Pilot"
-	desc = "Death to the Syndicate. This variant comes in MECHA DEATH flavour."
-	icon_living = "nanotrasen"
-	icon_state = "nanotrasen"
-	faction = list("nanotrasen")
-	spawn_mecha_type = /obj/mecha/combat/marauder/loaded
 
 /mob/living/simple_animal/hostile/syndicate/mecha_pilot/no_mech/nanotrasen
 	name = "Nanotrasen Mecha Pilot"
