@@ -2115,7 +2115,7 @@
 	},
 /area/f13/ahs)
 "cLi" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /turf/open/floor/f13,
 /area/f13/city)
@@ -2311,7 +2311,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "cVM" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
 /turf/open/floor/f13,
 /area/f13/city)
@@ -5615,7 +5615,7 @@
 	},
 /area/f13/underground/cave)
 "gPg" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
 /turf/open/floor/f13,
@@ -9176,7 +9176,7 @@
 	},
 /area/f13/ahs)
 "kXJ" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
 /obj/machinery/light{
 	dir = 4;
@@ -10872,6 +10872,11 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/vault)
+"nbv" = (
+/obj/structure/table/wood,
+/obj/structure/table/wood,
+/turf/open/floor/f13,
+/area/f13/wasteland)
 "nce" = (
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_4";
@@ -11001,7 +11006,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/bunker)
 "njL" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /turf/open/floor/f13,
 /area/f13/city)
@@ -11290,7 +11295,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/vault)
 "nAt" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /turf/open/floor/f13,
 /area/f13/city)
 "nAC" = (
@@ -24376,7 +24381,7 @@ bVH
 bVH
 bVH
 reC
-knQ
+nbv
 wbU
 qtm
 reC

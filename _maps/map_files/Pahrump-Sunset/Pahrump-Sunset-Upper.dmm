@@ -395,7 +395,7 @@
 /turf/closed/indestructible/rock,
 /area/f13/caves)
 "aby" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /turf/open/floor/wood/wood_worn,
 /area/f13/city/bighorn)
 "abD" = (
@@ -4861,7 +4861,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building/mall)
 "iaD" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /obj/item/paper_bin{
 	pixel_y = 6
 	},
@@ -9347,7 +9347,7 @@
 /turf/open/transparent/openspace,
 /area/f13/wasteland/valley)
 "qmn" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_worn,
 /area/f13/city/bighorn)
@@ -12632,7 +12632,7 @@
 	},
 /area/f13/building/massfusion)
 "wxI" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /obj/item/gavelblock{
 	pixel_y = 4
 	},

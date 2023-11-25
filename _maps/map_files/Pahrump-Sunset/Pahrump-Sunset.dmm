@@ -24262,7 +24262,7 @@
 	},
 /area/f13/building/mall)
 "cUD" = (
-/obj/structure/table/wood,
+/obj/structure/table/wood/bar,
 /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
 /obj/machinery/door/poddoor/shutters{
 	id = "barshutters"
@@ -28039,10 +28039,11 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/valley)
 "fjQ" = (
-/obj/structure/table/wood,
+/obj/structure/table/wood/bar,
 /obj/machinery/door/poddoor/shutters{
 	id = "barshutters"
 	},
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/city/bighorn)
 "fkb" = (

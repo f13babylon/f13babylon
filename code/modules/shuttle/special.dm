@@ -174,12 +174,12 @@
 /obj/structure/table/wood/bar
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	flags_1 = NODECONSTRUCT_1
-	max_integrity = 1000
+	max_integrity = 200	//New Babylon change, from 1000 to 200 (same as reinforced metal tables)
 	var/boot_dir = 1
 
 /obj/structure/table/wood/bar/Initialize(mapload)
 	. = ..()
-	
+
 	var/static/list/loc_connections = list(
 		COMSIG_ATOM_ENTERED = .proc/on_entered,
 	)

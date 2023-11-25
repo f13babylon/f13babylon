@@ -206,7 +206,7 @@
 	},
 /area/f13/ncr)
 "afJ" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/wood/wood_common,
 /area/f13/city)
@@ -2894,7 +2894,7 @@
 	},
 /area/f13/wasteland/ncr)
 "cEX" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /obj/item/pen,
 /obj/item/ammo_box/c10mm/improvised,
 /turf/open/floor/wood/wood_common,
@@ -6047,7 +6047,7 @@
 /turf/open/floor/wood/wood_fancy,
 /area/f13/city)
 "fFq" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /turf/open/floor/wood/wood_common,
 /area/f13/city)
 "fFC" = (
@@ -7831,7 +7831,7 @@
 	},
 /area/f13/ncr)
 "hpL" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /obj/item/paper,
 /turf/open/floor/wood/wood_common,
 /area/f13/city)
@@ -9166,7 +9166,7 @@
 /turf/closed/wall/rust,
 /area/f13/ncr)
 "izE" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
 /obj/item/melee/onehanded/knife/bowie,
 /turf/open/floor/wood/wood_common,
@@ -13551,7 +13551,7 @@
 /turf/open/floor/carpet,
 /area/f13/city)
 "mSs" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /obj/item/storage/box/cups,
 /turf/open/floor/f13/wood,
 /area/f13/raiders)
@@ -14111,7 +14111,7 @@
 	},
 /area/f13/ncr)
 "nor" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /obj/item/crafting/reloader,
 /turf/open/floor/wood/wood_common,
 /area/f13/city)
@@ -14369,7 +14369,7 @@
 	},
 /area/f13/city)
 "nEZ" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /obj/item/ammo_box/c45/improvised,
 /turf/open/floor/wood/wood_common,
 /area/f13/city)
@@ -14387,7 +14387,7 @@
 /turf/open/floor/wood/wood_common,
 /area/f13/city)
 "nFQ" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /obj/item/paper_bin,
 /turf/open/floor/wood/wood_common,
 /area/f13/city)
@@ -21542,7 +21542,7 @@
 /area/f13/caves)
 "umk" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /obj/item/flashlight/lamp,
 /turf/open/floor/wood/wood_common,
 /area/f13/city)
@@ -23648,7 +23648,7 @@
 /turf/open/floor/plasteel/darkbrown,
 /area/f13/city)
 "wba" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /obj/item/paper/crumpled,
 /turf/open/floor/wood/wood_common,
 /area/f13/city)
@@ -23783,7 +23783,7 @@
 	},
 /area/f13/wasteland/warren)
 "wiq" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /obj/item/pen,
 /turf/open/floor/wood/wood_common,
 /area/f13/city)
@@ -25402,7 +25402,7 @@
 	},
 /area/f13/wasteland/warren)
 "xCQ" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/hobo,
 /turf/open/floor/wood/wood_common,
 /area/f13/city)
@@ -25913,7 +25913,7 @@
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/wasteland/ncr)
 "ycx" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood,
 /obj/item/paper/crumpled,
 /obj/item/pen,
 /turf/open/floor/wood/wood_common,
