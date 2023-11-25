@@ -316,8 +316,8 @@
 	..()
 
 /datum/reagent/medicine/bitterdrink/overdose_process(mob/living/carbon/M)
-	M.adjustToxLoss(((damage_offset * 0.33) + (damage_offset * 0.33)) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//100% of toxloss offset + base toxloss offset
-	M.adjustOxyLoss(((damage_offset * 0.33 * 1.5) + (damage_offset * 0.33)) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//150% of oxyloss offset + base oxyloss offset
+	M.adjustToxLoss((damage_offset * 0.33 + damage_offset * 0.33) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//100% of toxloss offset + base toxloss offset
+	M.adjustOxyLoss((damage_offset * 0.33 * 1.5 + damage_offset * 0.33) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//150% of oxyloss offset + base oxyloss offset
 	M.hallucination = max(M.hallucination, 25)
 	M.jitteriness = max(M.jitteriness, 300)
 	M.druggy = max(M.druggy, 15)
@@ -393,7 +393,7 @@
 	..()
 
 /datum/reagent/medicine/healingpowder/overdose_process(mob/living/carbon/M)
-	M.adjustToxLoss(6.75 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//100% of oxyloss offset
+	M.adjustToxLoss(6.75 * 0.75 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//75% of oxyloss offset
 	M.hallucination = max(M.hallucination, 25)
 	M.jitteriness = max(M.jitteriness, 300)
 	M.druggy = max(M.druggy, 15)
@@ -471,7 +471,7 @@
 	..()
 
 /datum/reagent/medicine/healingpoultice/overdose_process(mob/living/carbon/M)
-	M.adjustOxyLoss((6.75 * 1.5) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//150% of toxloss offset
+	M.adjustOxyLoss(6.75 * 1.5 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//150% of toxloss offset
 	M.hallucination = max(M.hallucination, 25)
 	M.jitteriness = max(M.jitteriness, 300)
 	M.druggy = max(M.druggy, 15)
