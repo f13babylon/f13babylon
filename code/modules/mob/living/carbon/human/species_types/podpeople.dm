@@ -70,10 +70,11 @@
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,MUTCOLORS,CAN_SCAR,HAS_FLESH,HAS_BONE)
 	mutant_bodyparts = list("mcolor" = "FFFFFF","mcolor2" = "FFFFFF","mcolor3" = "FFFFFF", "mam_snouts" = "Husky", "mam_tail" = "Husky", "mam_ears" = "Husky", "mam_body_markings" = list(), "taur" = "None", "legs" = "Normal Legs")
 	limbs_id = "pod"
-	light_nutrition_gain_factor = 3
+	light_nutrition_gain_factor = 2	//New Babylon change: from 3 to 2
 	light_bruteheal = -0.2
 	light_burnheal = -0.2
-	light_toxheal = -0.7
+	light_toxheal = -0.1	//New Babylon change: from 0.7 to 0.1
+	light_oxyheal = 0	//New Babylon change: from 1 to 0
 
 	tail_type = "mam_tail"
 	wagging_type = "mam_waggingtail"
