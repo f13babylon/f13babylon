@@ -531,8 +531,8 @@
 
 	loot = list(
 				/obj/item/defibrillator/compact/combat/loaded,
-				/obj/item/reagent_containers/hypospray/combat,
-				/obj/item/clothing/glasses/hud/health/night,
+				/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+				/obj/item/clothing/glasses/hud/health,
 				///obj/item/disk/surgery/revival
 				)
 
@@ -723,7 +723,6 @@
 	lootcount = 1
 
 	loot = list(/obj/item/twohanded/thermic_lance,
-				/obj/item/twohanded/chainsaw,
 				/obj/item/twohanded/sledgehammer/rockethammer,
 				/obj/item/melee/powered/ripper,
 				/obj/item/melee/f13powerfist,
@@ -911,7 +910,6 @@
 				/obj/item/gun/ballistic/automatic/pistol/ninemil/maria,
 				/obj/item/gun/ballistic/rifle/hunting/paciencia,
 				/obj/item/gun/ballistic/automatic/varmint/ratslayer,
-				/obj/item/gun/ballistic/automatic/assault_rifle/infiltrator,
 				/obj/item/gun/ballistic/revolver/colt357/lucky,
 				/obj/item/gun/ballistic/automatic/m1garand/oldglory,
 				/obj/item/gun/ballistic/automatic/marksman/sniper/gold,
@@ -1167,7 +1165,7 @@
 	name = "m3a1 grease gun and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/smg/greasegun,
-				/obj/item/ammo_box/magazine/greasegun/
+				/obj/item/ammo_box/magazine/greasegun
 				)
 
 /obj/effect/spawner/bundle/f13/guns/auto5
@@ -1284,9 +1282,9 @@
 				)
 
 /obj/effect/spawner/bundle/f13/combat_rifle
-	name = "combat rifle and ammo spawner"
+	name = "combat carbine and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/combat,
+				/obj/item/gun/ballistic/automatic/combatcarbine,
 				/obj/item/ammo_box/magazine/tommygunm45/stick
 				)
 
@@ -1522,9 +1520,9 @@
 	)
 
 /obj/effect/spawner/bundle/f13/boscombatrifle
-	name = "BoS combat rifle and ammo spawner"
+	name = "combat carbine and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/combat,
+				/obj/item/gun/ballistic/automatic/combatcarbine,
 				/obj/item/ammo_box/magazine/tommygunm45/stick
 	)
 
@@ -2085,8 +2083,7 @@
 	loot = list(/obj/item/book/granter/trait/lowsurgery = 1,
 				/obj/item/book/granter/trait/chemistry = 1,
 				/obj/item/book/granter/trait/techno = 10,
-				/obj/item/book/granter/crafting_recipe/scav_one = 10,
-				/obj/item/book/granter/crafting_recipe/scav_two = 10,
+				/obj/item/book/granter/crafting_recipe/scav = 10,
 				/obj/item/book/granter/trait/explosives = 10,
 				/obj/item/book/granter/crafting_recipe/ODF = 10,
 				/obj/item/book/granter/action/drink_fling = 10,

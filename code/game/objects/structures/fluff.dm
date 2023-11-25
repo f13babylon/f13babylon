@@ -108,7 +108,7 @@
 
 /obj/structure/fluff/bus/passable/seat/driver
 	name = "driver's seat"
-	desc = "Space Jesus is my copilot."
+	desc = "Jesus is my copilot."
 	icon_state = "driverseat"
 
 /obj/structure/fluff/bus/passable/seat/driver/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)

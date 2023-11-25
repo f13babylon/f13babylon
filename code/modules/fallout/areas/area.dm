@@ -168,9 +168,8 @@
 	icon_state = "hospital"
 
 /area/f13/building/mall
-	name = "Mall of Wyoming"
+	name = "Mall of Utah"
 	icon_state = "mall"
-	requires_power = TRUE
 
 /area/f13/building/museum
 	name = "Museum of Technology"

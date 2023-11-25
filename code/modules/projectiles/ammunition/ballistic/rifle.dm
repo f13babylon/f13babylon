@@ -74,7 +74,7 @@
 	desc = "A cased high explosive grenade that can only be activated once fired out of a grenade launcher."
 	caliber = "40mm"
 	icon_state = "40mmHE"
-	projectile_type = /obj/item/projectile/rocket/a40mmHE
+	projectile_type = /obj/item/projectile/bullet/rocket/a40mmHE
 
 /obj/item/ammo_casing/a40mmCS
 	name = "40mm CS shell"
@@ -95,28 +95,28 @@
 	desc = "A cased high explosive grenade that can only be activated once fired out of a grenade launcher."
 	caliber = "40mm"
 	icon_state = "40mmHE"
-	projectile_type = /obj/item/projectile/rocket/a40mmHEDP
+	projectile_type = /obj/item/projectile/bullet/rocket/a40mmHEDP
 
 /obj/item/ammo_casing/a40mmM
 	name = "40mm METAL shell"
 	desc = "A cased high explosive grenade that can only be activated once fired out of a grenade launcher."
 	caliber = "40mm"
 	icon_state = "40mmHE"
-	projectile_type = /obj/item/projectile/rocket/a40mmM
+	projectile_type = /obj/item/projectile/bullet/rocket/a40mmM
 
 /obj/item/ammo_casing/a40mmF
 	name = "40mm FLASH shell"
 	desc = "A cased high explosive grenade that can only be activated once fired out of a grenade launcher."
 	caliber = "40mm"
 	icon_state = "40mmHE"
-	projectile_type = /obj/item/projectile/rocket/a40mmF
+	projectile_type = /obj/item/projectile/bullet/rocket/a40mmF
 
 /obj/item/ammo_casing/a40mmI
 	name = "40mm INCENDARY shell"
 	desc = "A cased high explosive grenade that can only be activated once fired out of a grenade launcher."
 	caliber = "40mm"
 	icon_state = "40mmHE"
-	projectile_type = /obj/item/projectile/rocket/a40mmI
+	projectile_type = /obj/item/projectile/bullet/rocket/a40mmI
 
 // 2mm EC
 /obj/item/ammo_casing/c2mm

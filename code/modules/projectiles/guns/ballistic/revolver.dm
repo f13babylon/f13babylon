@@ -3,7 +3,7 @@
 
 /obj/item/gun/ballistic/revolver
 	slowdown = 0.1
-	name = "revolver template" 
+	name = "revolver template"
 	desc = "should not exist."
 	icon_state = "revolver"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder
@@ -336,7 +336,7 @@
 	icon_state = "sequoia_b"
 	item_state = "sequoia"
 	icon = 'icons/obj/guns/gunfruits2022/pistols.dmi'
-	force = 25
+	force = 35
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev4570
 	fire_sound = 'sound/f13weapons/sequoia.ogg'
 

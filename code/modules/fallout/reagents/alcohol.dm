@@ -418,7 +418,7 @@
 	glass_desc = "An extremely blue and glowing combination of Nuka-Cola and (REDACTED)"
 	var/datum/brain_trauma/special/psychotic_brawling/bath_salts/rage
 	ghoulfriendly = TRUE
-	
+
 
 /datum/reagent/consumable/ethanol/nukaquantum/on_mob_life(mob/living/carbon/M)
 	M.drowsyness = 0
@@ -866,8 +866,7 @@
 	else
 		if(ishuman(M))
 			if(prob(80))
-				M.vomit(10)
-				M.adjustToxLoss(4*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
+				M.adjustToxLoss(0.5*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
 			..()
 	return TRUE // update health at end of tick
 
@@ -891,8 +890,7 @@
 	else
 		if(ishuman(M))
 			if(prob(98))
-				M.vomit(50)
-				M.adjustToxLoss(10*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
+				M.adjustToxLoss(0.5*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
 		..()
 	return TRUE // update health at end of tick
 
