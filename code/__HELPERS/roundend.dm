@@ -206,12 +206,12 @@
 
 	var/static/publisher = pick(
 		"Babylon Publishing",
-		"FoA News",
+		"Followers Administrator",
 		"Great Khan Storyteller",
 		"Legion Orator",
 		"NCR Intelligence",
 		"Tribal Rumors",
-		"BoS Survey Team",
+		"Brotherhood Survey Team",
 		"Enclave Propaganda",
 	)
 	SSdiscord.send_to_round_channel("The current round has ended. Please standby for your [publisher] report.")

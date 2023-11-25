@@ -88,7 +88,7 @@
 	var/transfer_prints = TRUE //prevents runtimes with forensics when held in glove slot
 
 
-// Mole Miner				
+// Mole Miner
 /obj/item/melee/powerfist/f13/moleminer
 	name = "mole miner gauntlet"
 	desc = "A hand-held mining and cutting implement, repurposed into a deadly melee weapon.  Its name origins are a mystery..."
@@ -203,6 +203,7 @@
 	toolspeed = 1.5
 	resistance_flags = FIRE_PROOF
 	hitsound = 'sound/weapons/chainsawhit.ogg'
+	var/bleed_stacks_on_hit = 1
 	var/on_item_state = "ripper_on"
 	var/off_item_state = "ripper"
 	var/weight_class_on = WEIGHT_CLASS_HUGE
@@ -217,7 +218,6 @@
 
 /obj/item/melee/powered/ripper/attack_self(mob/user)
 	on = !on
-	to_chat(user, description_on)
 	if(on)
 		to_chat(user, description_on)
 		icon_state = on_icon_state
@@ -237,6 +237,15 @@
 		attack_verb = list("poked", "scraped")
 	add_fingerprint(user)
 
+/obj/item/melee/powered/ripper/attack(mob/living/target, mob/living/user)
+	. = ..()
+	if(!isanimal(target))
+		return
+	var/datum/status_effect/stacking/saw_bleed/B = target.has_status_effect(/datum/status_effect/stacking/saw_bleed/ripper)
+	if(!B)
+		target.apply_status_effect(/datum/status_effect/stacking/saw_bleed/ripper,bleed_stacks_on_hit)
+	else
+		B.add_stacks(bleed_stacks_on_hit)
 
 //Warhammer chainsword			Keywords: Damage 10/50, Wound bonus, Block, Bonus AP + 0.15
 /obj/item/melee/powered/ripper/prewar

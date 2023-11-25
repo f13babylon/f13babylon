@@ -11,6 +11,8 @@ GLOBAL_PROTECT(admin_verbs_default)
 	/client/proc/investigate_show,		/*various admintools for investigation. Such as a singulo grief-log*/
 	/client/proc/debug_variables,		/*allows us to -see- the variables of any instance in the game. +VAREDIT needed to modify*/
 	/client/proc/toggleprayers,
+	/client/proc/togglecommcentermsg,
+	/client/proc/togglecommcentersound,
 	/client/proc/toggleadminhelpsound,
 	/client/proc/debugstatpanel,
 	)

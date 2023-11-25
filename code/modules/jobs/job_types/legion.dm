@@ -58,6 +58,14 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	..()
 	if(visualsOnly)
 		return
+	if(H.gender == FEMALE)	//sorry babe, the legion /are/ gamers.
+		H.gender = MALE
+		H.real_name = random_unique_name(MALE)
+		H.name = H.real_name
+		if(H.wear_id)
+			var/obj/item/card/id/dogtag/L = H.wear_id
+			L.registered_name = H.name
+			L.update_label()
 	ADD_TRAIT(H, TRAIT_TRIBAL,  REF(src))
 	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
 	ADD_TRAIT(H, TRAIT_FEARLESS,  REF(src)) //no phobias for legion!
@@ -139,12 +147,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	roleplay_exclusive_notify = 1
-	exp_requirements = 0
-
-	loadout_options = list(
-			/datum/outfit/loadout/oratorm,
-			/datum/outfit/loadout/oratorf
-			)
+	exp_type = EXP_TYPE_LEGION
+	exp_requirements = 900
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13orator
 	name = "Orator"
@@ -153,18 +157,20 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	head = /obj/item/clothing/head/helmet/f13/legion/orator
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	neck = /obj/item/storage/belt/holster
-	shoes = null
 	id = /obj/item/card/id/dogtag/legorator
-	gloves = null
 	backpack = /obj/item/storage/backpack/legionr
-	suit_store = null
 	r_pocket = /obj/item/storage/bag/money/small/legofficers
 	l_pocket = /obj/item/flashlight/lantern
-	l_hand = null
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/pistol14/orator
 	backpack_contents = list(
 		/obj/item/binoculars = 1,
 		/obj/item/ammo_box/magazine/m14mm = 1,
-		/obj/item/reagent_containers/pill/patch/bitterdrink = 2
+		/obj/item/reagent_containers/pill/patch/bitterdrink = 2,
+		/obj/item/reagent_containers/pill/patch/bitterdrink = 2,
+		/obj/item/book/granter/trait/iron_fist = 1,
+		/obj/item/book/granter/trait/bigleagues = 1,
+		/obj/item/stack/f13Cash/random/denarius/high = 3,
+		/obj/item/stack/f13Cash/random/aureus/high = 2
 		)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13orator/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -175,31 +181,55 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 
-/datum/outfit/loadout/oratorm
-	name = "Orator"
-	suit = /obj/item/clothing/suit/armor/f13/legion/orator
-	head = /obj/item/clothing/head/helmet/f13/legion/orator
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/pistol14/orator
-	shoes = /obj/item/clothing/shoes/f13/military/plated
-	backpack_contents = list(
-		/obj/item/book/granter/trait/iron_fist = 1,
-		/obj/item/book/granter/trait/bigleagues = 1,
-		/obj/item/stack/f13Cash/random/denarius/high = 3,
-		/obj/item/stack/f13Cash/random/aureus/high = 2
-		)
+/datum/job/CaesarsLegion/f13priestess
+	title = "Legion Priestess"
+	flag = F13PRIESTESS
+	supervisors = "Centurion"
+	selection_color = "#ffdddd"
+	total_positions = 1
+	spawn_positions = 1
+	outfit = /datum/outfit/job/CaesarsLegion/f13priestess
+	display_order = JOB_DISPLAY_ORDER_PRIESTESS
+	access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
+	minimal_access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
+	roleplay_exclusive_notify = 1
+	exp_type = EXP_TYPE_LEGION
+	exp_requirements = 900
 
-/datum/outfit/loadout/oratorf
+/datum/outfit/job/CaesarsLegion/f13priestess
 	name = "Priestess of Mars"
+	jobtype = /datum/job/CaesarsLegion/f13priestess
 	uniform = /obj/item/clothing/under/f13/pmarsrobe
-	head = /obj/item/clothing/head/helmet/f13/legion/orator
+	head = /obj/item/clothing/head/helmet/f13/legion/marsheaddress
 	shoes = /obj/item/clothing/shoes/roman
+	belt = /obj/item/storage/belt/medical/primitive
+	backpack = /obj/item/storage/backpack/legionr
+	r_pocket = /obj/item/storage/bag/money/small/legofficers
+	l_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/pistol14/orator = 1,
-		/obj/item/book/granter/trait/midsurgery = 1,
-		/obj/item/book/granter/trait/chemistry = 1,
-		/obj/item/book/granter/trait/legionalchemy = 1,
-		/obj/item/stack/f13Cash/random/denarius/high = 1
-		)
+		/obj/item/stack/f13Cash/random/denarius/high = 1,
+		/obj/item/storage/firstaid/ancient = 1,
+		/obj/item/stack/sticky_tape/surgical = 1,
+		/obj/item/stack/medical/bone_gel = 1
+	)
+
+/datum/outfit/job/CaesarsLegion/f13priestess/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	if(H.gender == MALE)	//femstatic role
+		H.gender = FEMALE
+		H.real_name = random_unique_name(FEMALE)
+		H.name = H.real_name
+		if(H.wear_id)
+			var/obj/item/card/id/dogtag/L = H.wear_id
+			L.registered_name = H.name
+			L.update_label()
+	ADD_TRAIT(H, TRAIT_SURGERY_MID,  REF(src))
+	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
+	ADD_TRAIT(H, TRAIT_CHEMWHIZ,  REF(src))
+	ADD_TRAIT(H, TRAIT_MARS_TEACH,  REF(src))
+	ADD_TRAIT(H, TRAIT_TRIBAL,  REF(src))
 
 /////////////////
 //// Officers ///
@@ -219,14 +249,15 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	req_admin_notify = 1
 	display_order = JOB_DISPLAY_ORDER_CENTURION
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13centurion
-	exp_requirements = 600
+	exp_type = EXP_TYPE_LEGION
+	exp_requirements = 1440
 
 	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 
 	loadout_options = list(
 		/datum/outfit/loadout/palacent,		//Goliath, CQC, Carl Gustaf
-		/datum/outfit/loadout/rangerhunter,	// Hunting Revolver, Brushgun, Spatha
+		/datum/outfit/loadout/rangerhunter,	// Hunting Revolver, AMR, Spatha
 		/datum/outfit/loadout/centurion,	// M1919, Spatha
 		/datum/outfit/loadout/berserkercenturion,	// Love Tap, Berserker Martial Art
 		)
@@ -268,10 +299,10 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	suit = /obj/item/clothing/suit/armor/f13/legion/palacent
 	head = /obj/item/clothing/head/helmet/f13/legion/palacent
 	// suit_store = /obj/item/gun/ballistic/automatic/m1919 - temporary removal until balanced
-	suit_store = /obj/item/gun/ballistic/automatic/lsw
+	suit_store = /obj/item/gun/ballistic/automatic/m1919
 	backpack_contents = list(
 		// /obj/item/ammo_box/magazine/mm762 = 1, - temporary removal until balanced
-		/obj/item/ammo_box/magazine/m556/rifle = 3,
+		/obj/item/ammo_box/magazine/mm762 = 1,
 		/obj/item/melee/onehanded/machete/spatha = 1,
 		)
 
@@ -279,9 +310,9 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Ranger-Hunter Centurion"
 	suit = /obj/item/clothing/suit/armor/f13/legion/rangercent
 	head = /obj/item/clothing/head/helmet/f13/legion/rangercent
-	suit_store = /obj/item/gun/ballistic/rifle/repeater/brush
+	suit_store = /obj/item/gun/ballistic/rifle/mag/antimateriel
 	backpack_contents = list(
-		/obj/item/ammo_box/c4570 = 3,
+		/obj/item/ammo_box/magazine/amr = 2,
 		/obj/item/gun/ballistic/revolver/hunting = 1,
 		/obj/item/melee/onehanded/machete/spatha = 1,
 		)
@@ -318,7 +349,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	supervisors = "the Centurion"
 	display_order = JOB_DISPLAY_ORDER_DECANVET
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanvet
-	exp_requirements = 0
+	exp_type = EXP_TYPE_LEGION
+	exp_requirements = 900
 
 	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
@@ -327,7 +359,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/datum/outfit/loadout/decvetbull,	// Towershield, 10mm SMG, Spatha
 		/datum/outfit/loadout/decvetwolf,	// Thermic lance, Carl Gustaf, Extra Bitters
 		/datum/outfit/loadout/decvetsnake, // Brush gun, Spatha, Extra Bitters
-		/datum/outfit/loadout/decvetbrave, // trench shotgun, 44 revolver, ballistic fist
+		/datum/outfit/loadout/decvetbrave, // Auto-5, 44 revolver, ballistic fist
 		)
 
 
@@ -348,6 +380,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	mask = /obj/item/clothing/mask/bandana/legion/legdecan
 	neck = /obj/item/storage/belt/holster
 	gloves = /obj/item/clothing/gloves/legion/plated
+	glasses = /obj/item/clothing/glasses/legiongoggles
 	ears = /obj/item/radio/headset/headset_legion/cent
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	shoes = /obj/item/clothing/shoes/f13/military/plated
@@ -364,7 +397,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/outfit/loadout/decvetbull
 	name = "Mark of The Bull"
 	head = /obj/item/clothing/head/helmet/f13/legion/heavy
-	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/pistol14
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv = 2,
 		/obj/item/melee/onehanded/machete/spatha = 1,
@@ -376,7 +409,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/decan
 	suit_store = /obj/item/twohanded/thermic_lance
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/smg/cg45 = 1,
+		/obj/item/ammo_box/magazine/m14mm = 1,
 		/obj/item/ammo_box/magazine/cg45 = 2,
 		/obj/item/reagent_containers/pill/patch/bitterdrink = 2,
 		)
@@ -394,7 +427,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/outfit/loadout/decvetbrave
 	name = "Mark of the Brave"
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/decan
-	suit_store = /obj/item/gun/ballistic/shotgun/trench
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/ballisticfist = 1,
 		/obj/item/ammo_box/shotgun/buck = 2,
@@ -416,7 +449,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
 	access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION,  ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
-	exp_requirements = 0
+	exp_type = EXP_TYPE_LEGION
+	exp_requirements = 780
 
 	loadout_options = list(	//ALL: Gladius, Smokebomb
 		/datum/outfit/loadout/decprimfront,	// .357 Revolver, Tower Shield, Throwing knives
@@ -481,13 +515,12 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		)
 
 /datum/outfit/loadout/decprimboom
-	name = "Demolition Prime Decanus"
-	suit_store = /obj/item/gun/ballistic/rocketlauncher
+	name = "Marksman Prime Decanus"
+	suit_store = /obj/item/gun/ballistic/automatic/rangemaster
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/m29 = 1,
 		/obj/item/ammo_box/m44 = 2,
-		/obj/item/grenade/f13/he_grenade = 2,
-		/obj/item/ammo_casing/caseless/rocket = 2,
+		/obj/item/ammo_box/magazine/m762 = 2,
 		)
 
 
@@ -496,19 +529,20 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/job/CaesarsLegion/Legionnaire/f13decanrec
 	title = "Legion Recruit Decanus"
 	flag = F13DECANREC
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	description = "The junior officer, you must train the recruits and test them, and if a suicide charge is needed, lead them to a glorious death."
 	supervisors = "the Prime/Veteran Decanus and the Centurion"
 	display_order = JOB_DISPLAY_ORDER_DECANREC
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanrec
 	access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION,  ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
-	exp_requirements = 0
+	exp_type = EXP_TYPE_LEGION
+	exp_requirements = 540
 
 	loadout_options = list(
 		/datum/outfit/loadout/recdeclegion,	// Uzi, Lance, Smokebomb
-		/datum/outfit/loadout/recdectribal,	// M1 Garand, Throwing spears, Reinforced machete, Bottlecap mine
+		/datum/outfit/loadout/recdectribal,	// Trail Carbine, Throwing spears, Reinforced machete, Bottlecap mine
 		)
 
 	matchmaking_allowed = list(
@@ -556,9 +590,9 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/loadout/recdectribal
 	name = "Blackliner Decanus"
-	suit_store = /obj/item/gun/ballistic/automatic/m1garand
+	suit_store = /obj/item/gun/ballistic/rifle/repeater/trail
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/garand308 = 2,
+		/obj/item/ammo_box/tube/m44 = 2,
 		/obj/item/melee/onehanded/machete/forgedmachete = 1,
 		/obj/item/storage/backpack/spearquiver = 1,
 		/obj/item/bottlecap_mine = 1,
@@ -584,7 +618,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13vexillarius
 	access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION,  ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
-	exp_requirements = 0
+	exp_type = EXP_TYPE_LEGION
+	exp_requirements = 1020
 
 	loadout_options = list(
 		/datum/outfit/loadout/vexbear,	//	Lever shotgun, Ripper
@@ -669,7 +704,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	supervisors = "the Veteran Decanus and Centurion must be obeyed, and as always, respect must be given to other Decanus. You are not a officer, but you are a specialist."
 	display_order = JOB_DISPLAY_ORDER_EXPLORER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
-	exp_requirements = 0
+	exp_type = EXP_TYPE_LEGION
+	exp_requirements = 300
 
 	loadout_options = list(
 		/datum/outfit/loadout/expambusher,	// lever-action shotgun, Machete
@@ -722,10 +758,9 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/outfit/loadout/expsniper
 	name = "Sniper"
 	glasses = /obj/item/clothing/glasses/sunglasses/big
-	suit_store = /obj/item/gun/ballistic/rifle/repeater/trail
+	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper/snipervenator
 	backpack_contents = list(
-		/obj/item/ammo_box/tube/m44 = 2,
-		/obj/item/attachments/scope = 1,
+		/obj/item/ammo_box/magazine/w308 = 2,
 		/obj/item/gun/ballistic/revolver/revolver45 = 1,
 		/obj/item/ammo_box/c45rev = 1,
 		)
@@ -740,7 +775,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 // VETERAN
 
 /datum/job/CaesarsLegion/Legionnaire/vetlegionnaire
-	title = "Veteran Legionnaire"
+	title = "Veteran Legionary"
 	flag = F13VETLEGIONARY
 	total_positions = 3
 	spawn_positions = 3
@@ -748,7 +783,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_VETLEGIONARY
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionnaire
-	exp_requirements = 0
+	exp_type = EXP_TYPE_LEGION
+	exp_requirements = 840
 
 	loadout_options = list(	//ALL: Gladius
 		/datum/outfit/loadout/vetaxe,	// Smoke nade, Axe, extra heal
@@ -774,7 +810,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	ADD_TRAIT(H, TRAIT_IRONFIST,  REF(src))
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionnaire
-	name = "Veteran Legionnaire"
+	name = "Veteran Legionary"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/vetlegionnaire
 	id = /obj/item/card/id/dogtag/legveteran
 	mask = /obj/item/clothing/mask/bandana/legion/legvet
@@ -833,14 +869,15 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 // PRIME
 
 /datum/job/CaesarsLegion/Legionnaire/f13legionary
-	title = "Prime Legionnaire"
+	title = "Prime Legionary"
 	flag = F13LEGIONARY
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 3
+	spawn_positions = 3
 	description = "A front line soldier who has shown ability to obey and fought in some battles. The Legions muscle, the young men who will build the future with their own blood and sacrifice, for Caesar."
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_LEGIONARY
-	exp_requirements = 0
+	exp_type = EXP_TYPE_LEGION
+	exp_requirements = 180
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
 
 	loadout_options = list(	//ALL: Forged Machete
@@ -866,7 +903,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
-	name = "Prime Legionnaire"
+	name = "Prime Legionary"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13legionary
 	id = /obj/item/card/id/dogtag/legprime
 	mask = /obj/item/clothing/mask/bandana/legion/legprime
@@ -884,10 +921,10 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/loadout/primelancer
 	name = "Guardian"
-	suit_store = /obj/item/gun/ballistic/revolver/colt357
+	suit_store = /obj/item/gun/ballistic/revolver/m29
 	r_hand = /obj/item/shield/riot/legion
 	backpack_contents = list(
-		/obj/item/ammo_box/a357 = 3,
+		/obj/item/ammo_box/m44 = 2,
 		)
 
 /datum/outfit/loadout/primerifle
@@ -910,10 +947,10 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 // RECRUIT
 
 /datum/job/CaesarsLegion/Legionnaire/f13recleg
-	title = "Recruit Legionnaire"
+	title = "Recruit Legionary"
 	flag = F13RECRUITLEG
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 4
+	spawn_positions = 4
 	description = "You have recently been transfered or inducted into The Legion. You have minimal training, and are expected to follow every whim of the Decani and your Centurion. Respect every soldier of higher rank."
 	supervisors = "the Decani and Centurion."
 	display_order = JOB_DISPLAY_ORDER_RECRUITLEG
@@ -940,7 +977,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES,  REF(src))
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg
-	name = "Recruit Legionnaire"
+	name = "Recruit Legionary"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13recleg
 	id = /obj/item/card/id/dogtag/legrecruit
 	shoes = /obj/item/clothing/shoes/f13/military/leather
@@ -959,15 +996,17 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Tribal Recruit"
 	suit_store = /obj/item/melee/onehanded/machete/gladius
 	backpack_contents = list(
+	/obj/item/gun/ballistic/revolver/colt357 = 1,
+		/obj/item/ammo_box/a357 = 2,
 		/obj/item/shield/riot/buckler = 1,
 		/obj/item/warpaint_bowl = 1,
 		)
 
 /datum/outfit/loadout/recruitlegion
 	name = "Born in the East"
-	suit_store = /obj/item/gun/ballistic/revolver/widowmaker
+	suit_store = /obj/item/gun/ballistic/rifle/repeater/cowboy
 	backpack_contents = list(
-		/obj/item/ammo_box/shotgun/buck = 3,
+		/obj/item/ammo_box/a357 = 2,
 		/obj/item/reagent_containers/food/drinks/bottle/molotov/filled = 2,
 		/obj/item/lighter/greyscale = 1,
 		)
@@ -983,9 +1022,10 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/job/CaesarsLegion/Legionnaire/immune
 	title = "Legion Camp Follower"
 	flag = F13IMMUNE
-	total_positions = 4
-	spawn_positions = 1
-	description = "An Immune is a legionnaire temporarily assigned to keeping the camp in order, according to their tasking on any given week."
+	total_positions = 7
+	spawn_positions = 7
+	description = "An Immune is a Legionary or free citizen temporarily assigned to keeping the camp in order, according to their tasking on any given week."
+	enforces = "You may leave the base, but you are not allowed to antagonize other factions or scavenge. You are a non-combatant. You cannot join any raids or battles on the surface. You cannot run dungeons."
 	supervisors = "the Centurion."
 	display_order = JOB_DISPLAY_ORDER_IMMUNE
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/immune
@@ -1015,7 +1055,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 // FORGE MASTER
 
-/datum/job/CaesarsLegion/Legionnaire/f13campfollower	// Extra materials, Blueprints
+/datum/job/CaesarsLegion/f13campfollower	// Extra materials, Blueprints
 	title = "Legion Forgemaster"
 	flag = F13CAMPFOLLOWER
 	total_positions = 1
@@ -1023,11 +1063,11 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	description = "The Forgemaster makes weapons of all sorts and upgrades them, keeping order in the Forge and makes sure the camp is defended."
 	supervisors = "the Centurion."
 	display_order = JOB_DISPLAY_ORDER_CAMPFOLLOWER
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower
+	outfit = /datum/outfit/job/CaesarsLegion/f13campfollower
 	roleplay_exclusive_notify = 1
 	exp_requirements = 0
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower
+/datum/outfit/job/CaesarsLegion/f13campfollower
 	name = "Legion Forgemaster"
 	id = /obj/item/card/id/dogtag/legforgemaster
 	glasses = /obj/item/clothing/glasses/welding
@@ -1051,7 +1091,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/book/granter/trait/explosives_advanced = 1
 		)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/f13campfollower/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -1061,7 +1101,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/spatha)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/lance)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionshield)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/lever_action)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/grease_gun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingshotgun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionlance)
@@ -1076,8 +1115,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/job/CaesarsLegion/auxilia
 	title = "Legion Auxilia"
 	flag = F13AUXILIA
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	description = "A non-combat position in the Legion for free citizens who perform tasks that need special training, such as surgery. They are loyal to the Legion even if they are not treated as equals to warriors."
 	supervisors = "the Centurion"
 	display_order = JOB_DISPLAY_ORDER_AUXILIA
@@ -1126,6 +1165,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	ADD_TRAIT(H, TRAIT_SURGERY_LOW,  REF(src))
 	ADD_TRAIT(H, TRAIT_MARS_TEACH,  REF(src))
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK,  REF(src))
+	ADD_TRAIT(H, TRAIT_TRIBAL,  REF(src))
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tailor/legionuniform)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/warpaint)
 
@@ -1181,7 +1221,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	title = "Legion Slave"
 	flag = F13LEGIONSLAVE
 	total_positions = 2
-	spawn_positions = 3
+	spawn_positions = 2
 	description = "A slave that survives the breaking camps is given a Legion appropriate name (latin-tribal inspired) and bull tattoo. Be obedient, respectful, stay inside the camp. Work the farm, mine, make food, clean and help injured men. Do NOT escape on your own, up to you how to handle it if forcibly freed by outside forces."
 	supervisors = "Officers and Slavemaster first, then Auxilia, then warriors."
 	display_order = JOB_DISPLAY_ORDER_LEGIONSLAVE
@@ -1242,19 +1282,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/soap/homemade = 1,
 		/obj/item/lighter = 1,
 		)
-
-/datum/outfit/loadout/slaveservant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
-	if(H.gender == MALE)
-		H.gender = FEMALE
-		H.real_name = random_unique_name(FEMALE)
-		H.name = H.real_name
-		if(H.wear_id)
-			var/obj/item/card/id/dogtag/L = H.wear_id
-			L.registered_name = H.name
-			L.update_label()
 
 //Laborers farm and mine.
 /datum/outfit/loadout/slaveworker

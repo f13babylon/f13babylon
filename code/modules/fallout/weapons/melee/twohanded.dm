@@ -764,6 +764,16 @@
 	AddComponent(/datum/component/butchering, 30, 100, 0, 'sound/weapons/chainsawhit.ogg', TRUE)
 	AddComponent(/datum/component/two_handed, force_unwielded = 8, force_wielded = 55, icon_wielded="[icon_prefix]2")
 
+/obj/item/twohanded/chainsaw/attack(mob/living/target, mob/living/user)
+	. = ..()
+	if(!isanimal(target))
+		return
+	var/datum/status_effect/stacking/saw_bleed/B = target.has_status_effect(/datum/status_effect/stacking/saw_bleed/chainsaw)
+	if(!B)
+		target.apply_status_effect(/datum/status_effect/stacking/saw_bleed/chainsaw,1)
+	else
+		B.add_stacks(1)
+
 /obj/item/twohanded/chainsaw/afterattack(atom/A, mob/living/user, proximity)
 	. = ..()
 	if(!proximity || !wielded || IS_STAMCRIT(user))
@@ -811,6 +821,8 @@
 	var/force_on = 27 //10 more dps than chainsaw, but less perhit
 	var/force_off = 10
 	var/on_sound = 'sound/weapons/chainsawhit.ogg'
+	var/datum/status_effect/stacking/saw_bleed/bleed_type = /datum/status_effect/stacking/saw_bleed/chainsaw
+	var/bleed_stacks_on_hit = 1
 
 /obj/item/twohanded/steelsaw/attack_self(mob/user)
 	on = !on
@@ -839,6 +851,16 @@
 	AddComponent(/datum/component/two_handed, require_twohands=TRUE)
 	update_icon()
 
+/obj/item/twohanded/steelsaw/attack(mob/living/target, mob/living/user)
+	. = ..()
+	if(!isanimal(target))
+		return
+	var/datum/status_effect/stacking/saw_bleed/B = target.has_status_effect(bleed_type)
+	if(!B)
+		target.apply_status_effect(bleed_type,bleed_stacks_on_hit)
+	else
+		B.add_stacks(bleed_stacks_on_hit)
+
 /obj/item/twohanded/steelsaw/afterattack(atom/A, mob/living/user, proximity)
 	. = ..()
 	if(!proximity || !wielded || IS_STAMCRIT(user))
@@ -863,22 +885,23 @@
 		playsound(src, 'sound/weapons/genhit1.ogg', 100, 1)
 	return(BRUTELOSS)
 
-//autoaxe		Keywords: Damage 10/29, 2x attackspeed, Wound Bonus, structure bonus damage, 0.3 AP
+//autoaxe		Keywords: Damage 10/30, 2x attackspeed, Wound Bonus, structure bonus damage, 0.3 AP
 /obj/item/twohanded/steelsaw/autoaxe
 	name = "auto axe"
 	desc = "A reinforced and heavier steel saw, upgraded using the parts of a car engine. A little heavy and ungainly to use as a tool, however."
 	icon_state = "autoaxe"
 	item_state = "autoaxe"
 	icon_prefix = "autoaxe"
-	force_on = 29
+	force_on = 30
 	attack_speed = CLICK_CD_MELEE * 1.5
 	armour_penetration = 0.3
 	on_icon_state = "autoaxe_on"
 	off_icon_state = "autoaxe"
 	on_item_state = "autoaxe_on"
 	off_item_state = "autoaxe"
-	toolspeed = 2
+	toolspeed = 0.2
 	structure_bonus_damage = 40
+	bleed_type = /datum/status_effect/stacking/saw_bleed/autoaxe
 
 /obj/item/twohanded/steelsaw/autoaxe/attack_self(mob/user)
 	on = !on
@@ -900,6 +923,8 @@
 		attack_verb = list("poked", "scraped")
 		attack_speed = CLICK_CD_MELEE * 1.5
 	add_fingerprint(user)
+
+
 /*
 CODE ARCHIVE
 

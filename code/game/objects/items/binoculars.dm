@@ -7,11 +7,13 @@
 	righthand_file = 'icons/mob/inhands/items_righthand.dmi'
 	slot_flags = ITEM_SLOT_BELT
 	w_class = WEIGHT_CLASS_SMALL
+	item_flags = SLOWS_WHILE_IN_HAND
 	var/mob/listeningTo
 	var/zoom_out_amt = 6
 	var/zoom_amt = 10
 	var/last_x = "UNKNOWN"
 	var/last_y = "UNKNOWN"
+	var/active_slowdown = 2
 
 /obj/item/binoculars/afterattack(atom/A, mob/living/user, adjacent, params) //handles coord obtaining
 	var/obj/item/weapon/maptool/mtool = locate() in user
@@ -39,7 +41,7 @@
 	return ..()
 
 /obj/item/binoculars/proc/on_wield(obj/item/source, mob/user)
-	RegisterSignal(user, COMSIG_MOVABLE_MOVED, .proc/unwield)
+	slowdown = active_slowdown
 	RegisterSignal(user, COMSIG_ATOM_DIR_CHANGE, .proc/rotate)
 	listeningTo = user
 	user.visible_message("<span class='notice'>[user] holds [src] up to [user.p_their()] eyes.</span>", "<span class='notice'>You hold [src] up to your eyes.</span>")
@@ -93,8 +95,8 @@
 	user.client.pixel_y = world.icon_size*_y
 
 /obj/item/binoculars/proc/unwield(mob/user)
+	slowdown = initial(slowdown)
 	if(listeningTo)
-		UnregisterSignal(user, COMSIG_MOVABLE_MOVED)
 		UnregisterSignal(user, COMSIG_ATOM_DIR_CHANGE)
 		listeningTo = null
 	user.visible_message("<span class='notice'>[user] lowers [src].</span>", "<span class='notice'>You lower [src].</span>")

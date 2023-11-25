@@ -80,7 +80,6 @@
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_BELTS
-	always_available = FALSE
 
 /datum/crafting_recipe/durathread_bandolier
 	name = "Durathread Bandolier"
@@ -90,7 +89,6 @@
 	time = 50
 	category = CAT_CLOTHING
 	subcategory = CAT_BELTS
-	always_available = FALSE
 
 /datum/crafting_recipe/durathread_wintercoat
 	name = "Durathread Winter Coat"
@@ -100,7 +98,6 @@
 	time = 70
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
-	always_available = FALSE
 
 /datum/crafting_recipe/heavysheath
 	name = "Heavy-Duty Sheath"

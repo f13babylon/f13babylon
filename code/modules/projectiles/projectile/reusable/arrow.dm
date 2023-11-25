@@ -98,4 +98,16 @@
 	sharpness = SHARP_EDGED
 	armour_penetration = 0.05
 	damage = 30
+	supereffective_damage = 20 //weaker upfront, but stronger if you can stack the bleed effect
+	supereffective_faction = list("hostile", "ant", "supermutant", "deathclaw", "cazador", "raider", "china", "gecko", "wastebot", "radscorpion")
 	ammo_type = /obj/item/ammo_casing/caseless/arrow/serrated
+
+/obj/item/projectile/bullet/reusable/arrow/serrated/on_hit(atom/target, blocked)
+	. = ..()
+	if(isanimal(target))
+		var/mob/living/simple_animal/SA = target
+		var/datum/status_effect/stacking/saw_bleed/B = SA.has_status_effect(/datum/status_effect/stacking/saw_bleed/serrated)
+		if(!B)
+			SA.apply_status_effect(/datum/status_effect/stacking/saw_bleed/serrated,1)
+		else
+			B.add_stacks(1)
