@@ -164,7 +164,7 @@
 
 /datum/quirk/herbal_affinity
 	name = "Herbal Affinity"
-	desc = "You are in-tune with your natural side. Tribal medicine has increased and you do not suffer any drawbacks from it."
+	desc = "You are in-tune with your natural side. Tribal medicine has increased healing and you do not suffer any drawbacks from it."
 	value = 1
 	mob_trait = TRAIT_HERBAL_AFFINITY
 	gain_text = "<span class='notice'>You feel a connection to traditional forms of medicine.</span>"
