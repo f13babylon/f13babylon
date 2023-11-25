@@ -32443,9 +32443,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "hnR" = (
-/obj/machinery/vending/tool{
-	force_free = 1
-	},
+/obj/machinery/vending/tool,
 /turf/open/floor/wood/wood_wide,
 /area/f13/brotherhood/leisure)
 "hon" = (
@@ -35156,9 +35154,7 @@
 	},
 /area/f13/caves)
 "iPk" = (
-/obj/machinery/vending/robotics{
-	force_free = 1
-	},
+/obj/machinery/vending/robotics,
 /turf/open/floor/wood/wood_wide,
 /area/f13/brotherhood/leisure)
 "iPl" = (
