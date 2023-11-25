@@ -727,6 +727,7 @@
 		/obj/item/stock_parts/cell = 1)
 	def_components = list(/obj/item/stock_parts/cell = /obj/item/stock_parts/cell/high)
 	needs_anchored = FALSE
+
 /obj/item/circuitboard/machine/chem_dispenser/apothecary
 	name = "Apotechary Chem Dispenser (Machine Board)"
 	build_path = /obj/machinery/chem_dispenser/apothecary
@@ -738,13 +739,40 @@
 		/obj/item/stock_parts/cell = 1)
 	def_components = list(/obj/item/stock_parts/cell = /obj/item/stock_parts/cell/upgraded/plus)
 
+/obj/item/circuitboard/machine/chem_dispenser/fullupgrade
+	name = "Advanced Chem Dispenser (Machine Board)"
+	build_path = /obj/machinery/chem_dispenser/fullupgrade
+	req_components = list(
+		/obj/item/stack/sheet/glass = 1,
+		/obj/item/stock_parts/cell = 1)
+	def_components = list(/obj/item/stock_parts/cell = /obj/item/stock_parts/cell/hyper)
+	needs_anchored = FALSE
+
 /obj/item/circuitboard/machine/chem_dispenser/drinks
 	name = "Soda Dispenser (Machine Board)"
 	build_path = /obj/machinery/chem_dispenser/drinks
 
+/obj/item/circuitboard/machine/chem_dispenser/drinks/fullupgrade
+	name = "Advanced Soda Dispenser (Machine Board)"
+	build_path = /obj/machinery/chem_dispenser/drinks/fullupgrade
+	req_components = list(
+		/obj/item/stack/sheet/glass = 1,
+		/obj/item/stock_parts/cell = 1)
+	def_components = list(/obj/item/stock_parts/cell = /obj/item/stock_parts/cell/hyper)
+	needs_anchored = FALSE
+
 /obj/item/circuitboard/machine/chem_dispenser/drinks/beer
 	name = "Booze Dispenser (Machine Board)"
 	build_path = /obj/machinery/chem_dispenser/drinks/beer
+
+/obj/item/circuitboard/machine/chem_dispenser/drinks/beer/fullupgrade
+	name = "Advanced Booze Dispenser (Machine Board)"
+	build_path = /obj/machinery/chem_dispenser/drinks/beer/fullupgrade
+	req_components = list(
+		/obj/item/stack/sheet/glass = 1,
+		/obj/item/stock_parts/cell = 1)
+	def_components = list(/obj/item/stock_parts/cell = /obj/item/stock_parts/cell/hyper)
+	needs_anchored = FALSE
 
 /obj/item/circuitboard/machine/chem_dispenser/abductor
 	name = "Reagent Synthetizer (Abductor Machine Board)"
@@ -1212,4 +1240,3 @@
 		/obj/item/stock_parts/manipulator = 1,
 		/obj/item/stack/cable_coil = 1,
 		/obj/item/stack/sheet/glass = 2)
-

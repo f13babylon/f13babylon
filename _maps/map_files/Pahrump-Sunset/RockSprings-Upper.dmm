@@ -3256,14 +3256,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"vy" = (
-/obj/structure/table/wood,
-/obj/item/toy/plush/slaggy{
-	desc = "A piece of slag with some googly eyes and a drawn on mouth. Someone's attached a sticker to the bottom that says 'Vidua'. What?";
-	name = "Vidua plushie"
-	},
-/turf/open/floor/wood/wood_mosaic,
-/area/f13/legion)
 "vz" = (
 /obj/machinery/shower{
 	dir = 8
@@ -25005,7 +24997,7 @@ Wi
 zF
 sP
 mu
-vy
+RO
 Wi
 Wi
 zF

@@ -81,10 +81,10 @@
 	HandlePlanes()
 
 /datum/hud/ghost/proc/HandlePlanes()
-	if(check_rights(R_ADMIN))
+	/*if(check_rights(R_ADMIN))              //Babylon Edit - restores ghost vision.
 		return
 	plane_masters["[OBJITEM_PLANE]"].Hide()
-	mymob.client.show_popup_menus = 0
+	mymob.client.show_popup_menus = 0*/
 
 /datum/hud/ghost/show_hud(version = 0, mob/viewmob)
 	// don't show this HUD if observing; show the HUD of the observee

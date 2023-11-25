@@ -613,7 +613,7 @@
 	icon_state = "t45lawman"
 	item_state = "t45lawman"
 	slowdown = 0.10//Alongside the helmet, this is a total of 0.20
-	armor = list("melee" = 75, "bullet" = 65, "laser" = 65, "energy" = 50, "bomb" = 85, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100, "wound" = 30)
+	armor = list("melee" = 65, "bullet" = 65, "laser" = 50, "energy" = 22, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
 //////
 // End of
 //////

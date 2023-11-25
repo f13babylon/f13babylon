@@ -162,6 +162,10 @@
 /obj/item/weldingtool/proc/get_fuel()
 	return reagents.get_reagent_amount(/datum/reagent/fuel)
 
+/obj/item/weldingtool/use_tool(atom/target, mob/living/user, delay, amount, volume, datum/callback/extra_checks, skill_gain_mult = STD_USE_TOOL_MULT)
+	target.add_overlay(GLOB.welding_sparks)
+	. = ..()
+	target.cut_overlay(GLOB.welding_sparks)
 
 // Uses fuel from the welding tool.
 /obj/item/weldingtool/use(used = 0)

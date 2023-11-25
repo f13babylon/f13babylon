@@ -70,3 +70,8 @@
 	icon_state = "neurotoxin"
 	fire_sound = 'sound/f13weapons/plasma_rifle.ogg'
 	e_cost = 200 //fourteen shots?
+
+/obj/item/ammo_casing/energy/plasma/caster
+	projectile_type = /obj/item/projectile/f13plasma
+	fire_sound = 'sound/f13weapons/plasmacaster_fnv.ogg'
+	e_cost = 200 //10 shots

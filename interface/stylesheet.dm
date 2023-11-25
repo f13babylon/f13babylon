@@ -127,6 +127,10 @@ h1.alert, h2.alert		{color: #000000;}
 .umbra_large			{color: #5000A0; font-size: 3; font-weight: bold; font-style: italic;}
 
 .deconversion_message	{color: #5000A0; font-size: 3; font-style: italic;}
+.prayer					{color: #000099;}
+.preacher_prayer		{color: #BE8700; font-size 3; font-weight: bold;}
+.cult_prayer			{color: #960000; font-size 3; font-weight: bold;}
+.spiritual_prayer		{color: #660099; font-weight: bold;}
 
 .brass					{color: #BE8700;}
 .heavy_brass			{color: #BE8700; font-weight: bold; font-style: italic;}
