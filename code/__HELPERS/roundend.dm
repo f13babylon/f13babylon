@@ -169,19 +169,12 @@
 		file_data["wanted"] = list("author" = "[GLOB.news_network.wanted_issue.scannedUser]", "criminal" = "[GLOB.news_network.wanted_issue.criminal]", "description" = "[GLOB.news_network.wanted_issue.body]", "photo file" = "[GLOB.news_network.wanted_issue.photo_file]")
 	WRITE_FILE(json_file, json_encode(file_data))
 
-/datum/controller/subsystem/ticker/proc/send_to_discord_round_status(message)
-	var/tgs_channel_tag = CONFIG_GET(string/discord_round_status_channel)
-	if(!tgs_channel_tag)
-		return
-	var/datum/tgs_message_content/content = new(message)
-	send2chat(content, tgs_channel_tag)
-
 /datum/controller/subsystem/ticker/proc/declare_completion()
 	set waitfor = FALSE
 
 	to_chat(world, "<BR><BR><BR><span class='big bold'>The round has ended.</span>")
 	if(LAZYLEN(GLOB.round_end_notifiees))
-		send_to_discord_round_status("[GLOB.round_end_notifiees.Join(", ")] the round has ended.")
+		SSdiscord.send_to_round_channel("[GLOB.round_end_notifiees.Join(", ")] the round has ended.")
 
 	for(var/I in round_end_events)
 		var/datum/callback/cb = I
@@ -221,7 +214,7 @@
 		"BoS Survey Team",
 		"Enclave Propaganda",
 	)
-	send_to_discord_round_status("The current round has ended. Please standby for your [publisher] report.")
+	SSdiscord.send_to_round_channel("The current round has ended. Please standby for your [publisher] report.")
 	addtimer(CALLBACK(src, .proc/send_roundinfo), 3 SECONDS)
 
 	CHECK_TICK
@@ -662,7 +655,7 @@
 
 /datum/controller/subsystem/ticker/proc/send_roundinfo()
 	var/news_report = send_news_report()
-	var/ping_role_id = CONFIG_GET(string/discord_ping_role_id)
+	var/ping_role_id = CONFIG_GET(string/discord_round_ping_role)
 	if(ping_role_id)
 		news_report += "\n<@&[ping_role_id]>"
-	send_to_discord_round_status(news_report)
+	SSdiscord.send_to_round_channel(news_report)

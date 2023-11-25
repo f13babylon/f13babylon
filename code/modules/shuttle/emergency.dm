@@ -400,10 +400,9 @@
 					return
 				mode = SHUTTLE_DOCKED
 				setTimer(SSshuttle.emergencyDockTime)
-				send2irc("Server", "The train has arrived at the station.")
+				SSdiscord.send_to_admin_channel("The train has arrived at the station.")
 				priority_announce("The train has arrived the station. You have [timeLeft(600)] minutes to board the train.", null, 'sound/f13/quest.ogg', "Vault-Tec")
 				ShuttleDBStuff()
-
 
 		if(SHUTTLE_DOCKED)
 			if(!train_whistled && time_left <= 60 SECONDS) // At a minute until depature, sound a train whistle
