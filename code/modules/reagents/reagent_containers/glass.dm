@@ -105,7 +105,7 @@
 		reagents.expose_temperature(hotness)
 		to_chat(user, "<span class='notice'>You heat [name] with [I]!</span>")
 
-	if(istype(I, /obj/item/reagent_containers/food/snacks/egg)) //breaking eggs
+	if(istype(I, /obj/item/reagent_containers/food/snacks/egg))	//breaking eggs
 		var/obj/item/reagent_containers/food/snacks/egg/E = I
 		if(reagents)
 			if(reagents.total_volume >= reagents.maximum_volume)
@@ -305,7 +305,7 @@
 	icon_state = "smallbottle"
 	item_state = "bottle"
 	custom_price = PRICE_CHEAP_AS_FREE
-	list_reagents = list(/datum/reagent/water = 49.5, /datum/reagent/fluorine = 0.5)//see desc, don't think about it too hard
+	list_reagents = list(/datum/reagent/water = 49.5, /datum/reagent/fluorine = 0.5)	//see desc, don't think about it too hard
 	custom_materials = list(/datum/material/glass=0)
 	volume = 50
 	amount_per_transfer_from_this = 10
