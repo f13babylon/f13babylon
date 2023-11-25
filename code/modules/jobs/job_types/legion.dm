@@ -209,6 +209,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	r_pocket = /obj/item/storage/bag/money/small/legofficers
 	l_pocket = /obj/item/flashlight/lantern
 	box = /obj/item/storage/survivalkit_tribal/chief
+	belt = /obj/item/storage/belt/military/assault/legion
 	backpack_contents = list(
 		/obj/item/stack/f13Cash/random/denarius/high = 1,
 		/obj/item/storage/firstaid/ancient = 1,
