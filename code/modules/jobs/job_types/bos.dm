@@ -381,6 +381,7 @@ Senior Paladin
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_PA_WEAR,  REF(src))
+	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 
 /datum/outfit/job/bos/f13seniorpaladin
@@ -469,6 +470,7 @@ Paladin
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_PA_WEAR,  REF(src))
+	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
 
 /datum/outfit/job/bos/f13paladin
 	name =	"Paladin"
@@ -735,6 +737,7 @@ Scribe
 	..()
 	if(visualsOnly)
 		return
+	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
 
 /datum/outfit/job/bos/f13seniorknight
 	name = "Senior Knight"

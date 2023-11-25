@@ -77,7 +77,7 @@
 
 /obj/effect/decal/cleanable/blood/gibs/old
 	name = "old rotting gibs"
-	desc = "Space Jesus, why didn't anyone clean this up?  It smells terrible."
+	desc = "Jesus, why didn't anyone clean this up?  It smells terrible."
 	bloodiness = 0
 
 /obj/effect/decal/cleanable/blood/gibs/old/Initialize(mapload, list/datum/disease/diseases)

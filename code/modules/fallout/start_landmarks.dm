@@ -115,7 +115,7 @@
 	icon_state = "Vexillarius"
 
 /obj/effect/landmark/start/f13/vetlegionary
-	name = "Veteran Legionnaire"
+	name = "Veteran Legionary"
 	icon_state = "Veteran Legionnaire"
 
 /obj/effect/landmark/start/f13/decan
@@ -123,7 +123,7 @@
 	icon_state = "Decanus"
 
 /obj/effect/landmark/start/f13/legionary
-	name = "Prime Legionnaire"
+	name = "Prime Legionary"
 	icon_state = "Veteran Legionnaire"
 
 /obj/effect/landmark/start/f13/decanrec
@@ -131,7 +131,7 @@
 	icon_state = "Decanus"
 
 /obj/effect/landmark/start/f13/recleg
-	name = "Recruit Legionnaire"
+	name = "Recruit Legionary"
 	icon_state = "Legionary"
 
 /obj/effect/landmark/start/f13/slavemaster

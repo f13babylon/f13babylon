@@ -78,7 +78,6 @@
 	name ="plasma rifle"
 	item_state = "plasma"
 	icon_state = "plasma"
-	armour_penetration = 0.1
 	slowdown = 0.65 //this is one of the worst slowdowns in the game
 	fire_delay = 5.2
 	desc = "A miniaturized plasma caster that fires bolts of magnetically accelerated toroidal plasma towards an unlucky target."

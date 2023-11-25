@@ -28,7 +28,7 @@
 /obj/effect/decal/waste/process()
 	if(QDELETED(src))
 		return PROCESS_KILL
-	
+
 	if(!z || !SSmobs.clients_by_zlevel[z].len) // we don't care about irradiating if no one is around to see it!
 		return
 
@@ -38,6 +38,18 @@
 	for(var/obj/item/geiger_counter/geiger in view(src,range))
 		if(istype(geiger))
 			geiger.rad_act(intensity)
+
+/obj/effect/decal/waste/attackby(obj/item/I, mob/user, params)
+	if(istype(I, /obj/item/crafting/abraxo))
+		user.show_message(span_notice("You start sprinkling \the [I.name] onto the puddle of goo..."), MSG_VISUAL)
+		if(do_after(user, 30, target = src))
+			user.show_message(span_notice("You neutralize the radioactive goo!"), MSG_VISUAL)
+			new /obj/effect/decal/cleanable/chem_pile(src.loc) //Leave behind some cleanable chemical powder
+			STOP_PROCESSING(SSradiation,src)
+			qdel(src)
+			qdel(I)
+	else
+		return ..()
 
 /obj/effect/decal/marking
 	name = "road marking"

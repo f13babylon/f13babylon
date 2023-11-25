@@ -24140,7 +24140,9 @@
 /turf/open/floor/wood/wood_worn/wood_worn_dark,
 /area/f13/wasteland/rocksprings)
 "xOs" = (
-/obj/machinery/msgterminal/legion,
+/obj/machinery/msgterminal/legion{
+	dir = 1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/legion)
 "xOG" = (

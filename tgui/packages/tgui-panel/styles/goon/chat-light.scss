@@ -3,7 +3,8 @@
  * SPDX-License-Identifier: MIT
  */
 
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   height: 100%;
@@ -11,7 +12,8 @@ html, body {
 }
 
 body {
-  background: #E0E0E0; /*CIT CHANGE - darkens chatbox a lil*/
+  background: #E0E0E0;
+  /*CIT CHANGE - darkens chatbox a lil*/
   font-family: Verdana, sans-serif;
   font-size: 13px;
   line-height: 1.2;
@@ -196,11 +198,9 @@ a.popt {
   padding: 2px 0;
 }
 
-.filterMessages input {
-}
+.filterMessages input {}
 
-.filterMessages label {
-}
+.filterMessages label {}
 
 .icon-stack {
   height: 1em;
@@ -272,7 +272,8 @@ a.popt {
 /* ADD HERE FOR ITALIC */
 
 
-.italic, .italics {
+.italic,
+.italics {
   font-style: italic;
 }
 
@@ -285,12 +286,18 @@ a.popt {
   background: yellow;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #0000ff;
   font-family: Georgia, Verdana, sans-serif;
 }
 
-h1.alert, h2.alert {
+h1.alert,
+h2.alert {
   color: #000000;
 }
 
@@ -355,8 +362,12 @@ em {
   font-weight: bold;
 }
 
-.say, .emote, .infoplain, .oocplain, .warningplain, .subtle {
-}
+.say,
+.emote,
+.infoplain,
+.oocplain,
+.warningplain,
+.subtle {}
 
 .deadsay {
   color: #5c00e6;
@@ -437,7 +448,7 @@ em {
   color: #d1ba22;
 }
 
-.vaultradio	{
+.vaultradio {
   color: #6eaa2c;
 
 }
@@ -447,7 +458,7 @@ em {
 }
 
 .rangerradio {
-  color:#83733c;
+  color: #83733c;
 }
 
 .khansradio {
@@ -482,7 +493,8 @@ em {
   color: #ff0000;
 }
 
-h1.alert, h2.alert {
+h1.alert,
+h2.alert {
   color: #000000;
 }
 
@@ -756,6 +768,34 @@ h1.alert, h2.alert {
   font-style: italic;
 }
 
+.prayer {
+  color: #000099;
+  font-weight: bold;
+}
+
+.preacher_prayer {
+  color: #BE8700;
+  font-size: 3;
+  font-weight: bold;
+}
+
+.legion_prayer {
+  color: #c24d44;
+  font-size: 3;
+  font-weight: bold;
+}
+
+.cult_prayer {
+  color: #960000;
+  font-size: 3;
+  font-weight: bold;
+}
+
+.spiritual_prayer {
+  color: #660099;
+  font-weight: bold;
+}
+
 /* coggers dosen't exist on tg :( */
 /* from decon_msg: font-size: 185% == font-size 3*/
 .brass {
@@ -771,7 +811,7 @@ h1.alert, h2.alert {
 .large_brass {
   color: #BE8700;
   font-size: 185%;
- }
+}
 
 .big_brass {
   color: #BE8700;
@@ -821,7 +861,7 @@ h1.alert, h2.alert {
   font-style: italic;
 }
 
-.sevtug	{
+.sevtug {
   color: #AF0AAF;
   font-weight: bold;
   font-style: italic;
@@ -838,7 +878,7 @@ h1.alert, h2.alert {
   font-style: italic;
 }
 
-.inathneq	{
+.inathneq {
   color: #1E8CE1;
   font-weight: bold;
   font-style: italic;
@@ -970,7 +1010,7 @@ h1.alert, h2.alert {
   font-size: 185%;
 }
 
-.yellowtext	{
+.yellowtext {
   color: #FFCC00;
   font-size: 185%;
 }
@@ -1001,7 +1041,7 @@ h1.alert, h2.alert {
 }
 
 .singing {
-  font-family:'Trebuchet MS', cursive, sans-serif;
+  font-family: 'Trebuchet MS', cursive, sans-serif;
   font-style: italic;
 }
 
@@ -1027,7 +1067,7 @@ h1.alert, h2.alert {
   }
 }
 
-.velvet	{
+.velvet {
   color: #660015;
   font-weight: bold;
   animation: velvet 5000ms infinite;
@@ -1035,19 +1075,23 @@ h1.alert, h2.alert {
 }
 
 @keyframes velvet {
-	0% {
+  0% {
     color: #400020;
   }
-	40% {
+
+  40% {
     color: #FF0000;
   }
-	50% {
+
+  50% {
     color: #FF8888;
   }
-	60% {
+
+  60% {
     color: #FF0000;
   }
-	100% {
+
+  100% {
     color: #400020;
   }
 }
