@@ -65,7 +65,7 @@
 	if(!can_run_emote(user))
 		return FALSE
 
-	user.log_message(message, LOG_EMOTE)
+	user.log_message(message, subtler ? LOG_SUBTLER : LOG_SUBTLE)
 	message = span_subtle("<b>[user]</b> " + "<i>[user.say_emphasis(message)]</i>")
 
 	// Everyone in range can see it

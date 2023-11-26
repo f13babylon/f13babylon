@@ -275,7 +275,26 @@
 						return
 					R.add_reagent(reagent, actual)
 					log_reagent("DISPENSER: ([COORD(src)]) ([REF(src)]) [key_name(usr)] dispensed [actual] of [reagent] to [beaker] ([REF(beaker)]).")
+					to_chat(usr, span_warning("You button the button."))
+					playsound(src, 'sound/machines/button.ogg', 100, TRUE, -1)
+					// playsound(
+					// 	source = src,
+					// 	soundin = 'sound', //sound locations, must use '
+					// 	vol = 100, //in percent of course
+					// 	vary = TRUE, //decides wether or not the really goofy pitch shift function happens
+					// 	extrarange = 0, //extra range in tiles from the source of the sound, starts at 17.  Adjust there in. Or use '= SOUND_DISTNACE(# of tiles)'
+					// 	ignore_walls = FALSE, //Is it loud enough to be heard like your parents making you a new sibling?
 
+					// 	falloff_exponent = SOUND_FALLOFF_EXPONENT, //From here down is generally unused
+					// 	frequency = null,
+					// 	channel = 0,
+					// 	pressure_affected = TRUE,
+					// 	falloff_distance = SOUND_DEFAULT_FALLOFF_DISTANCE,
+					// 	use_reverb = FALSE,
+					// 	distant_sound = null,
+					// 	distant_range = null,
+					// 	soundpref_index = null,
+					// )
 					work_animation()
 			else
 				recording_recipe[reagent_name] += amount
@@ -380,6 +399,7 @@
 			return
 		replace_beaker(user, B)
 		to_chat(user, "<span class='notice'>You add [B] to [src].</span>")
+		playsound(src, 'sound/machines/glassclink.ogg', 100, TRUE, -1)
 		updateUsrDialog()
 	else if(user.a_intent != INTENT_HARM && !istype(I, /obj/item/card/emag))
 		to_chat(user, "<span class='warning'>You can't load [I] into [src]!</span>")
@@ -604,6 +624,8 @@
 /obj/machinery/chem_dispenser/drinks/beer/fullupgrade //equivalent to fully ugpraded stock parts, emagged
 	desc = "An advanced self-contained dispenser for various kinds of hard drinks. This one is capable of producing some more esoteric concoctions."
 	circuit = /obj/item/circuitboard/machine/chem_dispenser/drinks/beer/fullupgrade
+	powerefficiency = 0.2
+	recharge_amount = 40
 	obj_flags = CAN_BE_HIT | EMAGGED
 
 /obj/machinery/chem_dispenser/drinks/beer/fullupgrade/RefreshParts()
@@ -664,6 +686,8 @@
 /obj/machinery/chem_dispenser/fullupgrade //equivalent to t4 stock parts, emagged
 	desc = "An advanced self-contained dispenser for various kinds of chemicals. This one is capable of producing some more esoteric types."
 	circuit = /obj/item/circuitboard/machine/chem_dispenser/fullupgrade
+	powerefficiency = 0.2
+	recharge_amount = 40
 	obj_flags = CAN_BE_HIT | EMAGGED
 
 /obj/machinery/chem_dispenser/fullupgrade/RefreshParts()

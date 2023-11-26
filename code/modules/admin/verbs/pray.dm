@@ -27,7 +27,7 @@
 		prayer_span = "preacher_prayer"
 		if(GLOB.deity)
 			deity = GLOB.deity
-	if(usr.job == "Legion Orator")
+	if(usr.job == "Legion Orator" || usr.job == "Legion Priestess")
 		icon = mutable_appearance('icons/obj/statue.dmi', "marsred")
 		prayer_type = "LEGION PRAYER"
 		prayer_span = "legion_prayer"
