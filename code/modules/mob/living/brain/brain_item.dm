@@ -111,7 +111,6 @@
 
 	if((organ_flags & ORGAN_FAILING) && O.is_drainable() && O.reagents.has_reagent(/datum/reagent/medicine/neurine)) //Neurine fixes dead brains
 		. = TRUE //don't do attack animation.
-		var/cached_Bdamage = brainmob?.health
 		var/datum/reagent/medicine/neurine/N = reagents.has_reagent(/datum/reagent/medicine/neurine)
 		var/datum/reagent/medicine/mannitol/M1 = reagents.has_reagent(/datum/reagent/medicine/mannitol)
 
