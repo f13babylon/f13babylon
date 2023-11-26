@@ -71,6 +71,10 @@
 /mob/living/simple_animal/hostile/deathclaw/mother
 	name = "mother deathclaw"
 	desc = "A massive, reptilian creature with powerful muscles, razor-sharp claws, and aggression to match. This one is an angry mother."
+	icon_state = "deathclaw_mother"
+	icon_living = "deathclaw_mother"
+	icon_dead = "deathclaw_mother_dead"
+	icon_gib = null
 	gender = FEMALE
 	maxHealth = 800
 	health = 800
@@ -79,7 +83,6 @@
 	melee_damage_upper = 55
 	armour_penetration = 0.7
 	footstep_type = FOOTSTEP_MOB_HEAVY
-	color = rgb(95,104,94)
 	guaranteed_butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/deathclaw = 6,
 							/obj/item/stack/sheet/animalhide/deathclaw = 3)
 
