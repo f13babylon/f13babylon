@@ -27,7 +27,7 @@
 	if(HAS_TRAIT(M, TRAIT_TOXINLOVER))
 		is_toxinlover = TRUE
 	var/toxin_heal_rate = (is_toxinlover ? toxin_lover_healing : toxin_hurting) * toxpwr
-	if(!M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/healingpowder))
+	if(!M.reagents.has_reagent(/datum/reagent/medicine/healingpoultice))
 		M.adjustFireLoss(toxin_heal_rate)
 		M.adjustBruteLoss(toxin_heal_rate)
 
