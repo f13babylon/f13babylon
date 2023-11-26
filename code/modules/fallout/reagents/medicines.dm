@@ -387,10 +387,6 @@
 			if(M.reagents.has_reagent(iter_blacklisted_reagent))
 				is_blocked = TRUE
 				break
-		if(M.reagents.has_reagent(/datum/reagent/medicine/bitterdrink))	//Turns Bitter drink into water at a rate of 1u Powder per 3u Bitter drink
-			M.reagents.remove_reagent(/datum/reagent/medicine/bitterdrink, 3)
-			M.reagents.remove_reagent(src, 1)
-			M.reagents.add_reagent(/datum/reagent/water, 3)
 
 	if(!is_blocked)
 		//Extra healing for each bodypart affected by wounds
@@ -441,7 +437,7 @@
 
 /datum/reagent/medicine/healingpoultice
 	name = "Healing poultice"
-	description = "A healing poultice derived from an assortment of medicinal plants, commonly used by tribals and Legionaries. Applied on skin, it has as additional antitoxin and radiation-treating effect."
+	description = "A healing poultice derived from an assortment of medicinal plants, commonly used by tribals and Legionaries. Applied on skin, it has as additional antitoxin and radiation-treating effect, purging Bitter drink from the body."
 	reagent_state = SOLID
 	color = "#9f9350"
 	taste_description = "herbal bitterness"
@@ -476,6 +472,10 @@
 			if(M.reagents.has_reagent(iter_blacklisted_reagent))
 				is_blocked = TRUE
 				break
+         if(M.reagents.has_reagent(/datum/reagent/medicine/bitterdrink))	//Turns Bitter drink into water at a rate of 1u Poultice per 3u Bitter drink
+			M.reagents.remove_reagent(/datum/reagent/medicine/bitterdrink, 3)
+			M.reagents.remove_reagent(src, 1)
+			M.reagents.add_reagent(/datum/reagent/water, 3)
 	if(!is_blocked)
 		//Extra healing for each bodypart affected by wounds
 		if(affecting_tribal)
