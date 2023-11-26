@@ -50,7 +50,7 @@
 	message = "clears their throat."
 	emote_type = EMOTE_AUDIBLE
 	sound = list('sound/emotes/male_clear_throat_1.ogg',
-				 'sound/emotes/male_clear_throat_2.ogg')
+				'sound/emotes/male_clear_throat_2.ogg')
 
 
 /datum/emote/living/carbon/clap/can_run_emote(mob/living/user, status_check, intentional)

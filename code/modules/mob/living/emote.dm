@@ -442,7 +442,7 @@
 	message = "yawns."
 	emote_type = EMOTE_AUDIBLE
 	sound = list("sound/emotes/yawn_m1.ogg",
-				 "sound/emotes/yawn_m2.ogg")
+				"sound/emotes/yawn_m2.ogg")
 
 /datum/emote/living/custom
 	key = "me"
