@@ -21295,6 +21295,7 @@
 /obj/machinery/light{
 	light_color = "#706891"
 	},
+/obj/effect/decal/remains/human,
 /turf/open/floor/wood/wood_wide,
 /area/f13/brotherhood)
 "bTN" = (
@@ -21991,7 +21992,7 @@
 /area/f13/caves)
 "ccH" = (
 /obj/machinery/door/unpowered/secure_bos{
-	name = "Old Oak Mountain Retreat"
+	name = "Great Oak Mountain Retreat"
 	},
 /turf/open/floor/wood/wood_wide,
 /area/f13/brotherhood/leisure)
@@ -24658,6 +24659,9 @@
 	name = "old hologram";
 	pixel_x = 16;
 	pixel_y = 1
+	},
+/obj/structure/fluff/railing{
+	dir = 1
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood/rnd)
@@ -27604,17 +27608,9 @@
 	},
 /area/f13/wasteland/east)
 "eHI" = (
-/obj/structure/table/reinforced,
-/obj/machinery/computer/security/bos{
-	circuit = /obj/item/circuitboard/computer/security;
-	dir = 8;
-	pixel_x = 7;
-	pixel_y = 8;
-	name = "Old Oak Mountain Retreat Camera System"
-	},
-/obj/item/pen,
-/turf/open/floor/plasteel/dark,
-/area/f13/brotherhood/leisure)
+/obj/effect/decal/remains/human,
+/turf/open/floor/wood/wood_wide,
+/area/f13/brotherhood)
 "eHJ" = (
 /turf/open/indestructible/ground/outside/ruins{
 	dir = 6;
@@ -29778,7 +29774,7 @@
 /area/f13/building/massfusion)
 "fOl" = (
 /obj/machinery/door/unpowered/secure_bos{
-	name = "Old Oak Mountain Retreat"
+	name = "Great Oak Mountain Retreat"
 	},
 /turf/open/floor/wood/wood_wide,
 /area/f13/brotherhood)
@@ -43007,9 +43003,6 @@
 /obj/structure/lattice/catwalk,
 /turf/open/floor/plating,
 /area/f13/caves)
-"mUK" = (
-/turf/closed/indestructible/rock,
-/area/f13/brotherhood/leisure)
 "mUN" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 8;
@@ -45867,6 +45860,9 @@
 	pixel_x = 11;
 	pixel_y = 9
 	},
+/obj/structure/fluff/railing{
+	dir = 8
+	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood/rnd)
 "oww" = (
@@ -46799,6 +46795,9 @@
 	layer = 2;
 	pixel_x = -4;
 	pixel_y = 1
+	},
+/obj/structure/fluff/railing{
+	dir = 1
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood/rnd)
@@ -48556,6 +48555,9 @@
 /obj/machinery/light/floor{
 	critical_machine = 1;
 	flicker_chance = 0
+	},
+/obj/structure/fluff/railing{
+	dir = 4
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood/rnd)
@@ -55055,6 +55057,9 @@
 /obj/structure/lattice{
 	layer = 3
 	},
+/obj/structure/fluff/railing{
+	dir = 5
+	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood/rnd)
 "tty" = (
@@ -57195,6 +57200,9 @@
 	},
 /obj/structure/lattice{
 	layer = 3
+	},
+/obj/structure/fluff/railing{
+	dir = 9
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood/rnd)
@@ -62654,23 +62662,16 @@
 /turf/open/floor/wood/wood_wide,
 /area/f13/brotherhood/leisure)
 "xqP" = (
-/obj/structure/fence{
-	dir = 1;
-	pixel_x = -10
+/obj/structure/lattice{
+	layer = 3
 	},
-/obj/item/reagent_containers/food/drinks/mug{
-	pixel_y = 3;
-	pixel_x = 5
+/obj/structure/fluff/railing{
+	dir = 1
 	},
-/obj/item/reagent_containers/food/drinks/mug{
-	pixel_y = 10;
-	pixel_x = 5
+/turf/open/floor/bronze{
+	name = "floor"
 	},
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticalrightborderright2"
-	},
-/turf/open/floor/wood/wood_wide,
-/area/f13/brotherhood)
+/area/f13/brotherhood/rnd)
 "xrH" = (
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 10
@@ -115707,11 +115708,11 @@ xKP
 xKP
 xKP
 xKP
-mUK
-mUK
-mUK
-mUK
-mUK
+jqa
+jqa
+jqa
+jqa
+jqa
 jqa
 jqa
 jqa
@@ -116210,9 +116211,9 @@ qOw
 eZu
 eZu
 eZu
-xqP
-xqP
-xqP
+eZu
+eZu
+eZu
 eZu
 juJ
 lNa
@@ -116739,7 +116740,7 @@ jqa
 cGx
 cGx
 lVP
-eHI
+lVP
 ten
 rLt
 umS
@@ -116993,8 +116994,8 @@ fcE
 ycy
 fcE
 jjl
-jqa
-jqa
+cGx
+cGx
 wAK
 wAK
 cGx
@@ -118795,7 +118796,7 @@ iKh
 ycy
 jqa
 eKD
-eKD
+eHI
 jqa
 jqa
 jqa
@@ -121653,7 +121654,7 @@ ulv
 tVc
 jxt
 mQN
-fRh
+xqP
 jxJ
 sAP
 aaa

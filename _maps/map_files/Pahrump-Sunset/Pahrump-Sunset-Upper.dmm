@@ -10401,6 +10401,11 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/followers)
+"rSQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/floor,
+/turf/open/floor/f13,
+/area/f13/brotherhood)
 "rVI" = (
 /obj/effect/decal/cleanable/generic,
 /obj/effect/decal/cleanable/dirt,
@@ -11057,6 +11062,12 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
+/area/f13/brotherhood)
+"tkn" = (
+/obj/machinery/light/floor,
+/turf/open/floor/f13{
+	icon_state = "floordirtysolid"
+	},
 /area/f13/brotherhood)
 "tkv" = (
 /obj/structure/railing/corner{
@@ -12240,6 +12251,13 @@
 	icon_state = "bluedirtychess"
 	},
 /area/f13/building/mall)
+"vor" = (
+/obj/structure/cargocrate,
+/obj/machinery/light/floor,
+/turf/open/floor/f13{
+	icon_state = "floordirtysolid"
+	},
+/area/f13/brotherhood)
 "voO" = (
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/building/mall)
@@ -74421,7 +74439,7 @@ slA
 lOK
 slA
 slA
-cjT
+rSQ
 pXR
 jlQ
 qmb
@@ -75449,8 +75467,8 @@ cjT
 lOK
 slA
 slA
-cjT
-lap
+rSQ
+vor
 jlQ
 qmb
 qmb
@@ -76220,8 +76238,8 @@ slA
 lOK
 slA
 slA
-slA
-abP
+lOK
+tkn
 jlQ
 qmb
 qmb
@@ -76991,7 +77009,7 @@ slA
 lOK
 slA
 slA
-slA
+lOK
 pXR
 jlQ
 qmb

@@ -7591,6 +7591,8 @@
 /obj/structure/closet,
 /obj/item/storage/bag/ore,
 /obj/item/storage/bag/ore,
+/obj/item/pickaxe/drill,
+/obj/item/pickaxe/drill,
 /turf/open/floor/f13{
 	color = "#818181";
 	icon_state = "floorrustysolid"
@@ -7717,6 +7719,8 @@
 /obj/item/storage/bag/ore,
 /obj/item/storage/bag/ore,
 /obj/machinery/light/small,
+/obj/item/pickaxe/drill,
+/obj/item/pickaxe/drill,
 /turf/open/floor/f13{
 	color = "#818181";
 	icon_state = "floorrustysolid"
