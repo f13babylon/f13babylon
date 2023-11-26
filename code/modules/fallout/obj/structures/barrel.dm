@@ -9,6 +9,9 @@
 	reagent_id = /datum/reagent/fluorine
 //	self_weight = 200
 
+/obj/structure/reagent_dispensers/barrel/add_debris_element()
+	AddElement(/datum/element/debris, DEBRIS_SPARKS, -15, 8, 1)
+
 /obj/structure/reagent_dispensers/barrel/dangerous
 	name = "waste barrel"
 	desc = "A rather odd-looking metal barrel, made of strange metal that somehow hasn't rusted after all this time.<br>There is a strange label on it, but you can't quite make it out..."

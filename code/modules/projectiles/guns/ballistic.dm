@@ -10,6 +10,8 @@
 	var/casing_ejector = TRUE //whether the gun ejects the chambered casing
 	var/magazine_wording = "magazine"
 	var/en_bloc = 0
+	/// Which direction do the casings fly out?
+	var/handedness = GUN_EJECTOR_RIGHT
 
 /obj/item/gun/ballistic/Initialize(mapload)
 	. = ..()
@@ -35,7 +37,7 @@
 	if(istype(AC)) //there's a chambered round
 		if(casing_ejector)
 			AC.forceMove(drop_location()) //Eject casing onto ground.
-			AC.bounce_away(TRUE)
+			AC.bounce_away(TRUE, toss_direction = get_ejector_direction(user))
 			chambered = null
 		else if(empty_chamber)
 			chambered = null
@@ -249,3 +251,14 @@
 /obj/item/suppressor/specialoffer
 	name = "cheap suppressor"
 	desc = "A foreign knock-off suppressor, it feels flimsy, cheap, and brittle. Still fits some weapons."
+
+/obj/item/gun/ballistic/proc/get_ejector_direction(mob/user)
+	if(user?.dir)
+		switch(handedness)
+			if(GUN_EJECTOR_RIGHT)
+				return turn(user.dir, -90)
+			if(GUN_EJECTOR_LEFT)
+				return turn(user.dir, -90)
+			if(GUN_EJECTOR_ANY)
+				return turn(user.dir, pick(-90, 90))
+	return angle2dir_cardinal(rand(0,360)) // something fucked up, just send a direction
