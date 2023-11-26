@@ -154,7 +154,7 @@
 /turf/closed/mineral/random
 	var/list/mineralSpawnChanceList = list(/turf/closed/mineral/uranium = 5, /turf/closed/mineral/diamond = 1, /turf/closed/mineral/gold = 10,
 		/turf/closed/mineral/silver = 12, /turf/closed/mineral/plasma = 20, /turf/closed/mineral/iron = 40, /turf/closed/mineral/titanium = 11,
-		/turf/closed/mineral/gibtonite = 4, /turf/open/floor/plating/asteroid/airless/cave = 2, /turf/closed/mineral/bscrystal = 1)
+		/*/turf/closed/mineral/gibtonite/volcanic = 4*/, /turf/open/floor/plating/asteroid/airless/cave = 2, /turf/closed/mineral/bscrystal = 1)
 		//Currently, Adamantine won't spawn as it has no uses. -Durandan
 	var/mineralChance = 13
 	var/display_icon_state = "rock"
@@ -162,7 +162,7 @@
 /turf/closed/mineral/random/more_caves
 	mineralSpawnChanceList = list(/turf/closed/mineral/uranium = 5, /turf/closed/mineral/diamond = 1, /turf/closed/mineral/gold = 10,
 		/turf/closed/mineral/silver = 12, /turf/closed/mineral/plasma = 20, /turf/closed/mineral/iron = 40, /turf/closed/mineral/titanium = 11,
-		/turf/closed/mineral/gibtonite = 4, /turf/open/floor/plating/asteroid/airless/cave = 15, /turf/closed/mineral/bscrystal = 1)
+		/*/turf/closed/mineral/gibtonite/volcanic = 4*/, /turf/open/floor/plating/asteroid/airless/cave = 15, /turf/closed/mineral/bscrystal = 1)
 
 /turf/closed/mineral/random/Initialize(mapload)
 
@@ -188,7 +188,7 @@
 /turf/closed/mineral/random/no_caves
 	mineralSpawnChanceList = list(/turf/closed/mineral/uranium = 5, /turf/closed/mineral/diamond = 1, /turf/closed/mineral/gold = 10,
 		/turf/closed/mineral/silver = 12, /turf/closed/mineral/plasma = 20, /turf/closed/mineral/iron = 40, /turf/closed/mineral/titanium = 11,
-		/turf/closed/mineral/gibtonite = 4, /turf/closed/mineral/bscrystal = 1)
+		/*/turf/closed/mineral/gibtonite/volcanic = 4*/, /turf/closed/mineral/bscrystal = 1)
 
 /turf/closed/mineral/random/no_caves/earth_like
 	icon_state = "rock_oxy"
@@ -196,7 +196,7 @@
 	baseturfs = /turf/open/floor/plating/asteroid
 	mineralSpawnChanceList = list(/turf/closed/mineral/uranium/earth_like = 5, /turf/closed/mineral/diamond/earth_like = 1, /turf/closed/mineral/gold/earth_like = 10,
 		/turf/closed/mineral/silver/earth_like = 12, /turf/closed/mineral/plasma/earth_like = 20, /turf/closed/mineral/iron/earth_like = 40,
-		/turf/closed/mineral/titanium/earth_like = 11, /turf/closed/mineral/gibtonite/earth_like = 4, /turf/closed/mineral/bscrystal/earth_like = 1)
+		/turf/closed/mineral/titanium/earth_like = 11, /*/turf/closed/mineral/gibtonite/volcanic = 4*/, /turf/closed/mineral/bscrystal/earth_like = 1)
 	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
 	defer_change = TRUE
 
@@ -251,13 +251,13 @@
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium = 2, /turf/closed/mineral/diamond = 1, /turf/closed/mineral/gold = 4, /turf/closed/mineral/titanium = 4,
 		/turf/closed/mineral/silver = 6, /turf/closed/mineral/plasma = 15, /turf/closed/mineral/iron = 40, /turf/closed/mineral/lead = 30, /turf/closed/mineral/limestone = 20,
-		/turf/closed/mineral/gibtonite = 2, /turf/closed/mineral/bscrystal = 1) //indestructable chance moved to child, /underground
+		/*/turf/closed/mineral/gibtonite/volcanic = 4*/, /turf/closed/mineral/bscrystal = 1) //indestructable chance moved to child, /underground
 
 /turf/closed/mineral/random/low_chance/underground
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium = 2, /turf/closed/mineral/diamond = 1, /turf/closed/mineral/gold = 4, /turf/closed/mineral/titanium = 4,
 		/turf/closed/mineral/silver = 6, /turf/closed/mineral/plasma = 15, /turf/closed/mineral/iron = 40, /turf/closed/mineral/lead = 30, /turf/closed/mineral/limestone = 20,
-		/turf/closed/mineral/gibtonite = 2, /turf/closed/mineral/bscrystal = 1, /turf/closed/mineral/indestructible = 50) //fortuna edit, indestructible rocks added to chance list
+		/*/turf/closed/mineral/gibtonite/volcanic = 4*/, /turf/closed/mineral/bscrystal = 1, /turf/closed/mineral/indestructible = 50) //fortuna edit, indestructible rocks added to chance list
 
 /turf/closed/mineral/random/low_chance/earth_like
 	icon_state = "rock_lowchance_oxy"
@@ -267,7 +267,7 @@
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium/earth_like = 2, /turf/closed/mineral/diamond/earth_like = 1, /turf/closed/mineral/gold/earth_like = 4,
 		/turf/closed/mineral/titanium/earth_like = 4, /turf/closed/mineral/silver/earth_like = 6, /turf/closed/mineral/plasma/earth_like = 15,
-		/turf/closed/mineral/iron/earth_like = 40, /turf/closed/mineral/gibtonite/earth_like = 2, /turf/closed/mineral/bscrystal/earth_like = 1)
+		/turf/closed/mineral/iron/earth_like = 40, /*/turf/closed/mineral/gibtonite/volcanic = 4*/, /turf/closed/mineral/bscrystal/earth_like = 1)
 	defer_change = TRUE
 
 /turf/closed/mineral/random/volcanic
@@ -281,13 +281,13 @@
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium/volcanic = 5, /turf/closed/mineral/diamond/volcanic = 1, /turf/closed/mineral/gold/volcanic = 10, /turf/closed/mineral/titanium/volcanic = 11,
 		/turf/closed/mineral/silver/volcanic = 12, /turf/closed/mineral/plasma/volcanic = 20, /turf/closed/mineral/iron/volcanic = 40,
-		/turf/closed/mineral/gibtonite/volcanic = 4, /turf/open/floor/plating/asteroid/airless/cave/volcanic = 1, /turf/closed/mineral/bscrystal/volcanic = 1)
+		/*/turf/closed/mineral/gibtonite/volcanic = 4*/, /turf/open/floor/plating/asteroid/airless/cave/volcanic = 1, /turf/closed/mineral/bscrystal/volcanic = 1)
 
 /turf/closed/mineral/random/volcanic/more_caves
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium/volcanic = 5, /turf/closed/mineral/diamond/volcanic = 1, /turf/closed/mineral/gold/volcanic = 10, /turf/closed/mineral/titanium/volcanic = 11,
 		/turf/closed/mineral/silver/volcanic = 12, /turf/closed/mineral/plasma/volcanic = 20, /turf/closed/mineral/iron/volcanic = 40,
-		/turf/closed/mineral/gibtonite/volcanic = 4, /turf/open/floor/plating/asteroid/airless/cave/volcanic = 15, /turf/closed/mineral/bscrystal/volcanic = 1)
+		/*/turf/closed/mineral/gibtonite/volcanic = 4*/, /turf/open/floor/plating/asteroid/airless/cave/volcanic = 15, /turf/closed/mineral/bscrystal/volcanic = 1)
 
 /turf/closed/mineral/random/snow
 	name = "snowy mountainside"
@@ -306,32 +306,32 @@
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium/ice/icemoon = 5, /turf/closed/mineral/diamond/ice/icemoon = 1, /turf/closed/mineral/gold/ice/icemoon = 10, /turf/closed/mineral/titanium/ice/icemoon = 11,
 		/turf/closed/mineral/silver/ice/icemoon = 12, /turf/closed/mineral/plasma/ice/icemoon = 20, /turf/closed/mineral/iron/ice/icemoon = 40,
-		/turf/closed/mineral/gibtonite/ice/icemoon = 4, /turf/open/floor/plating/asteroid/airless/cave/snow = 1, /turf/closed/mineral/bscrystal/ice/icemoon = 1)
+		/*/turf/closed/mineral/gibtonite/volcanic = 4*/ = 4, /turf/open/floor/plating/asteroid/airless/cave/snow = 1, /turf/closed/mineral/bscrystal/ice/icemoon = 1)
 
 /turf/closed/mineral/random/snow/no_caves
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium/ice/icemoon = 5, /turf/closed/mineral/diamond/ice/icemoon = 1, /turf/closed/mineral/gold/ice/icemoon = 10, /turf/closed/mineral/titanium/ice/icemoon = 11,
 		/turf/closed/mineral/silver/ice/icemoon = 12, /turf/closed/mineral/plasma/ice/icemoon = 20, /turf/closed/mineral/iron/ice/icemoon = 40,
-		/turf/closed/mineral/gibtonite/ice/icemoon = 4, /turf/closed/mineral/bscrystal/ice/icemoon = 1)
+		/*/turf/closed/mineral/gibtonite/volcanic = 4*/ = 4, /turf/closed/mineral/bscrystal/ice/icemoon = 1)
 
 /turf/closed/mineral/random/labormineral
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium = 3, /turf/closed/mineral/diamond = 1, /turf/closed/mineral/gold = 8, /turf/closed/mineral/titanium = 8,
 		/turf/closed/mineral/silver = 20, /turf/closed/mineral/plasma = 30, /turf/closed/mineral/iron = 95,
-		/turf/closed/mineral/gibtonite = 2)
+		/*/turf/closed/mineral/gibtonite/volcanic = 4*/)
 	icon_state = "rock_labor"
 
 /turf/closed/mineral/random/snow/underground
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium/ice/icemoon = 5, /turf/closed/mineral/diamond/ice/icemoon = 1, /turf/closed/mineral/gold/ice/icemoon = 10, /turf/closed/mineral/titanium/ice/icemoon = 11,
 		/turf/closed/mineral/silver/ice/icemoon = 12, /turf/closed/mineral/plasma/ice/icemoon = 20, /turf/closed/mineral/iron/ice/icemoon = 40,
-		/turf/closed/mineral/gibtonite/ice/icemoon = 4, /turf/open/floor/plating/asteroid/airless/cave/snow/underground = 1, /turf/closed/mineral/bscrystal/ice/icemoon = 1)
+		/*/turf/closed/mineral/gibtonite/volcanic = 4*/, /turf/open/floor/plating/asteroid/airless/cave/snow/underground = 1, /turf/closed/mineral/bscrystal/ice/icemoon = 1)
 
 /turf/closed/mineral/random/snow/more_caves
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium/ice/icemoon = 5, /turf/closed/mineral/diamond/ice/icemoon = 1, /turf/closed/mineral/gold/ice/icemoon = 10, /turf/closed/mineral/titanium/ice/icemoon = 11,
 		/turf/closed/mineral/silver/ice/icemoon = 12, /turf/closed/mineral/plasma/ice/icemoon = 20, /turf/closed/mineral/iron/ice/icemoon = 40,
-		/turf/closed/mineral/gibtonite/ice/icemoon = 4, /turf/open/floor/plating/asteroid/airless/cave/snow = 15, /turf/closed/mineral/bscrystal/ice/icemoon = 1)
+		/*/turf/closed/mineral/gibtonite/volcanic = 4*/, /turf/open/floor/plating/asteroid/airless/cave/snow = 15, /turf/closed/mineral/bscrystal/ice/icemoon = 1)
 
 
 /turf/closed/mineral/random/labormineral/volcanic
@@ -361,7 +361,7 @@
 
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium/ice/icemoon = 3, /turf/closed/mineral/diamond/ice/icemoon = 1, /turf/closed/mineral/gold/ice/icemoon = 8, /turf/closed/mineral/titanium/ice/icemoon = 8,
-		/turf/closed/mineral/silver/ice/icemoon = 20, /turf/closed/mineral/plasma/ice/icemoon = 30, /turf/closed/mineral/bscrystal/ice/icemoon = 1, /turf/closed/mineral/gibtonite/ice/icemoon = 2,
+		/turf/closed/mineral/silver/ice/icemoon = 20, /turf/closed/mineral/plasma/ice/icemoon = 30, /turf/closed/mineral/bscrystal/ice/icemoon = 1, /*/turf/closed/mineral/gibtonite/volcanic = 4*/,
 		/turf/closed/mineral/iron/ice/icemoon = 95)
 
 
