@@ -349,12 +349,21 @@
 	message = "sniffs."
 	emote_type = EMOTE_AUDIBLE
 
+/datum/emote/living/sniff/get_sound(mob/living/user)
+	if(iscarbon(user))
+		if(user.gender == MALE)
+			return 'sound/emotes/male_sniff.ogg'
+		return 'sound/emotes/female_sniff.ogg'
+	return
+
 /datum/emote/living/snore
 	key = "snore"
 	key_third_person = "snores"
 	message = "snores."
 	emote_type = EMOTE_AUDIBLE
 	stat_allowed = UNCONSCIOUS
+	sound_volume = 80
+	sound = 'sound/emotes/snore.ogg'
 
 /datum/emote/living/stare
 	key = "stare"

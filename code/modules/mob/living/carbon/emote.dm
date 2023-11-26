@@ -7,6 +7,7 @@
 	key = "blink"
 	key_third_person = "blinks"
 	message = "blinks."
+	sound = "sound/emotes/blink.ogg"
 
 /datum/emote/living/carbon/blink_r
 	key = "blink_r"
@@ -23,6 +24,24 @@
 				'sound/misc/clap2.ogg',
 				'sound/misc/clap3.ogg',
 				'sound/misc/clap4.ogg')
+
+
+/datum/emote/living/carbon/clap/can_run_emote(mob/living/user, status_check, intentional)
+	. = ..()
+	// Need hands to clap
+	if(!user.get_bodypart(BODY_ZONE_L_ARM) || !user.get_bodypart(BODY_ZONE_R_ARM))
+		return
+
+
+/datum/emote/living/carbon/clap1
+	key = "clap1"
+	key_third_person = "claps once"
+	message = "claps once."
+	emote_type = EMOTE_AUDIBLE
+	muzzle_ignore = TRUE
+	restraint_check = TRUE
+	sound = list('sound/emotes/claponce1.ogg',
+				'sound/emotes/claponce2.ogg')
 
 
 /datum/emote/living/carbon/clap/can_run_emote(mob/living/user, status_check, intentional)
