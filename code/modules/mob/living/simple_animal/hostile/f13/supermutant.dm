@@ -54,17 +54,6 @@
 	dextrous = TRUE
 	possible_a_intents = list(INTENT_HELP, INTENT_HARM)
 
-/mob/living/simple_animal/hostile/supermutant/Initialize()    //if the mob is enabled for human alt skin, 50% chance of that happening on spawn.
-	. = ..()
-	if (!alt_skin)
-		return
-	if(!prob(50))
-		return
-	icon_state = "[initial(icon_state)]_human"
-	icon_living = "[initial(icon_state)]_human"
-	icon_dead = "[initial(icon_state)]_human"
-
-
 /mob/living/simple_animal/hostile/supermutant/Aggro()
 	..()
 	summon_backup(15)
@@ -487,6 +476,7 @@
 	extra_projectiles = 4 //5 projectiles
 	ranged_cooldown_time = 30//From 120, and then 60, - 'Long cooldown due to damage output.'
 	loot = list(/obj/machinery/manned_turret/m2/unanchored)
+	alt_skin = FALSE
 
 /mob/living/simple_animal/hostile/supermutant/rangedmutant/heavy/death(gibbed)
 	icon = 'icons/fallout/mobs/supermutant_dead.dmi'

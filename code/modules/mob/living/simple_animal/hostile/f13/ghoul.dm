@@ -55,17 +55,6 @@
 	'sound/f13npc/ghoul_new/ghoul_death_04.ogg')
 	idlesound = list('sound/f13npc/ghoul/idle.ogg','sound/f13npc/ghoul_new/ghoul_seizure_long.ogg','sound/f13npc/ghoul_new/ghoul_seizure_short.ogg')
 
-/mob/living/simple_animal/hostile/ghoul/Initialize()    //if the mob is enabled for human alt skin, 50% chance of that happening on spawn.
-	. = ..()
-
-	if (!alt_skin)
-		return
-	if(!prob(50))
-		return
-	icon_state = "[initial(icon_state)]_human"
-	icon_living = "[initial(icon_state)]_human"
-	icon_dead = "[initial(icon_state)]_human"
-
 // Ghoul Reaver
 /mob/living/simple_animal/hostile/ghoul/reaver
 	name = "feral ghoul reaver"

@@ -73,6 +73,14 @@
 		targets_from = src
 	wanted_objects = typecacheof(wanted_objects)
 
+	if (!alt_skin) //if alt skin is enabled, 50% chance of enabling
+		return
+	if(!prob(50))
+		return
+	icon_state = "[initial(icon_state)]_human"
+	icon_living = "[initial(icon_state)]_human"
+	icon_dead = "[initial(icon_state)]_human_dead"
+
 
 /mob/living/simple_animal/hostile/Destroy()
 	targets_from = null
