@@ -83,21 +83,32 @@
 		. = TRUE
 
 	//Debuffs applied to people with TRAIT_STIM_INTOLERANCE
-	M.hallucination = max(M.hallucination, affecting_intolerant_mob ? 25 : 0)
-	M.jitteriness = max(M.jitteriness, affecting_intolerant_mob ? 300 : 0)
-	M.set_dizziness(max(M.dizziness, affecting_intolerant_mob ? 15 : 0))
-	M.druggy = max(M.druggy, affecting_intolerant_mob ? 15 : 0)
-	M.confused = max(M.confused, affecting_intolerant_mob ? 10 : 0)
-	M.set_disgust(max(M.disgust, affecting_intolerant_mob ? DISGUST_LEVEL_DISGUSTED : 0))
+	if(affecting_intolerant_mob)
+		if(M.jitteriness + 15 <= 300)
+			M.jitteriness += 15
+		if(M.disgust + 2.5 <= DISGUST_LEVEL_DISGUSTED)
+			M.disgust += 2.5
+		if(M.dizziness + 0.75 <= 15)
+			M.dizziness += 0.75
+		if(M.confused + 0.5 <= 10)
+			M.confused += 0.5
+		M.hallucination = 15
+		M.druggy = 15
 	..()
 
 /datum/reagent/medicine/stimpak/overdose_process(mob/living/carbon/M)
-	M.adjustToxLoss(damage_offset * 0.66 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//100% of oxyloss offset
-	M.adjustOxyLoss(((damage_offset * 0.66 * 1.5) + (damage_offset * 0.66)) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//150% of oxyloss offset + base oxyloss offset
-	M.jitteriness = max(M.jitteriness, 300)
-	M.set_dizziness(max(M.dizziness, 15))
-	M.druggy = max(M.druggy, 15)
-	M.confused = max(M.confused, 10)
+	M.adjustToxLoss(damage_offset * 0.5 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//50% of damage_offset (1.5)
+	M.adjustOxyLoss((damage_offset * 0.75 + damage_offset * 0.66) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//75% of damage_offset + base oxyloss offset (2.25)
+	if(M.jitteriness + 15 <= 300)
+		M.jitteriness += 15
+	if(M.disgust + 2.5 <= DISGUST_LEVEL_DISGUSTED)
+		M.disgust += 2.5
+	if(M.dizziness + 0.75 <= 15)
+		M.dizziness += 0.75
+	if(M.confused + 0.5 <= 10)
+		M.confused += 0.5
+	M.hallucination = 15
+	M.druggy = 15
 	. = TRUE
 
 // ---------------------------
@@ -308,22 +319,32 @@
 		M.adjustStaminaLoss(-damage_offset * 0.66, FALSE)	//66% of damage_offset (3.6 / 2.64)
 		. = TRUE
 
-	M.hallucination = max(M.hallucination, affecting_tribal ? 0 : 25)
-	M.jitteriness = max(M.jitteriness, affecting_tribal ? 0 : 100)
-	M.set_dizziness(max(M.dizziness, affecting_tribal ? 0 : 15))
-	M.confused = max(M.confused, affecting_tribal ? 0 : 10)
-	M.set_disgust(max(M.disgust, affecting_tribal ? 0 : DISGUST_LEVEL_DISGUSTED))
+	//Debuffs applied to people without TRAIT_HERBAL_AFFINITY
+	if(!affecting_tribal)
+		if(M.jitteriness + 15 <= 300)
+			M.jitteriness += 15
+		if(M.disgust + 2.5 <= DISGUST_LEVEL_DISGUSTED)	//"When you drink it, down it all in one shot, or your stomach's not going to want to keep going after the second drink."
+			M.disgust += 2.5
+		if(M.dizziness + 0.75 <= 15)
+			M.dizziness += 0.75
+		if(M.confused + 0.5 <= 10)
+			M.confused += 0.5
+		M.hallucination = 15
 	..()
 
 /datum/reagent/medicine/bitterdrink/overdose_process(mob/living/carbon/M)
-	M.adjustToxLoss((damage_offset * 0.33 + damage_offset * 0.33) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//100% of toxloss offset + base toxloss offset
-	M.adjustOxyLoss((damage_offset * 0.33 * 1.5 + damage_offset * 0.33) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//150% of oxyloss offset + base oxyloss offset
-	M.hallucination = max(M.hallucination, 25)
-	M.jitteriness = max(M.jitteriness, 300)
-	M.druggy = max(M.druggy, 15)
-	M.set_dizziness(max(M.dizziness, 15))
-	M.confused = max(M.confused, 10)
-	M.set_disgust(max(M.disgust, DISGUST_LEVEL_DISGUSTED))
+	M.adjustToxLoss((5.4 * 0.33  + 5.4 * 0.33) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//100% of toxloss offset + base toxloss offset (3.6)
+	M.adjustOxyLoss((5.4 * 0.33 * 1.5 + 5.4 * 0.33) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//150% of oxyloss offset + base oxyloss offset (4.46)
+	if(M.jitteriness + 15 <= 300)
+		M.jitteriness += 15
+	if(M.disgust + 2.5 <= DISGUST_LEVEL_DISGUSTED)	//"When you drink it, down it all in one shot, or your stomach's not going to want to keep going after the second drink."
+		M.disgust += 2.5
+	if(M.dizziness + 0.75 <= 15)
+		M.dizziness += 0.75
+	if(M.confused + 0.5 <= 10)
+		M.confused += 0.5
+	M.hallucination = 15
+	M.druggy = 15
 	. = TRUE
 
 // ---------------------------
@@ -380,25 +401,33 @@
 		//Actual healing part starts here
 		M.adjustBruteLoss(-damage_offset, FALSE)	//100% of damage_offset (2.25 / 1.7)
 		M.adjustFireLoss(-damage_offset * 0.75, FALSE)	//75% of damage_offset (1.7 / 1.3)
-		M.adjustOxyLoss(-6.75, FALSE)	//6.75, same as super stim base damage_offset
+		M.adjustOxyLoss(affecting_tribal ? -6.75 : -5, FALSE)	//6.75, same as super stim base damage_offset (5, same as 75% of super stim base damage_offset)
 		M.AdjustStun(-damage_offset * 0.66, FALSE)	//66% of damage_offset (1.5 / 1.1)
 		M.AdjustKnockdown(-damage_offset * 0.66, FALSE)	//66% of damage_offset (1.5 / 1.1)
 		M.adjustStaminaLoss(-damage_offset * 0.66, FALSE)	//66% of damage_offset (1.5 / 1.1)
 		. = TRUE
 
-	M.hallucination = max(M.hallucination, affecting_tribal ? 0 : 25)
-	M.jitteriness = max(M.jitteriness, affecting_tribal ? 0 : 100)
-	M.set_dizziness(max(M.dizziness, affecting_tribal ? 0 : 15))
-	M.confused = max(M.confused, affecting_tribal ? 0 : 10)
+	//Debuffs applied to people without TRAIT_HERBAL_AFFINITY
+	if(!affecting_tribal)
+		if(M.jitteriness + 6 <= 300)
+			M.jitteriness += 6
+		if(M.dizziness + 0.3 <= 15)
+			M.dizziness += 0.3
+		if(M.confused + 0.2 <= 10)
+			M.confused += 0.2
+		M.hallucination = 15
 	..()
 
 /datum/reagent/medicine/healingpowder/overdose_process(mob/living/carbon/M)
-	M.adjustToxLoss(6.75 * 0.75 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//75% of oxyloss offset
-	M.hallucination = max(M.hallucination, 25)
-	M.jitteriness = max(M.jitteriness, 300)
-	M.druggy = max(M.druggy, 15)
-	M.set_dizziness(max(M.dizziness, 15))
-	M.confused = max(M.confused, 10)
+	M.adjustToxLoss(6.75 * 0.3 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//30% of oxyloss offset (2)
+	if(M.jitteriness + 6 <= 300)
+		M.jitteriness += 6
+	if(M.dizziness + 0.3 <= 15)
+		M.dizziness += 0.3
+	if(M.confused + 0.2 <= 10)
+		M.confused += 0.2
+	M.hallucination = 15
+	M.druggy = 15
 	. = TRUE
 	..()
 
@@ -456,27 +485,35 @@
 		//Actual healing part starts here
 		M.adjustBruteLoss(-damage_offset, FALSE)	//100% of damage_offset (3.5 / 2.6)
 		M.adjustFireLoss(-damage_offset * 0.75, FALSE)	//75% of damage_offset (2.6 / 1.95)
-		M.adjustToxLoss(-6.75, FALSE)	//6.75, same as super stim base damage_offset
+		M.adjustToxLoss(affecting_tribal ? -6.75 : -5, FALSE)	//6.75, same as super stim base damage_offset (5, same as 75% of super stim base damage_offset)
 		if(M.radiation > 0)
-			M.radiation -= 6.75	//6.75, same as super stim base damage_offset
+			M.radiation -= affecting_tribal ? -6.75 : -5	//6.75, same as super stim base damage_offset (5, same as 75% of super stim base damage_offset)
 		M.AdjustStun(-damage_offset * 0.66, FALSE)	//66% of damage_offset (2.3 / 1.7)
 		M.AdjustKnockdown(-damage_offset * 0.66, FALSE)	//66% of damage_offset (2.3 / 1.7)
 		M.adjustStaminaLoss(-damage_offset * 0.66, FALSE)	//66% of damage_offset (2.3 / 1.7)
 		. = TRUE
 
-	M.hallucination = max(M.hallucination, affecting_tribal ? 0 : 25)
-	M.jitteriness = max(M.jitteriness, affecting_tribal ? 0 : 100)
-	M.set_dizziness(max(M.dizziness, affecting_tribal ? 0 : 15))
-	M.confused = max(M.confused, affecting_tribal ? 0 : 10)
+	//Debuffs applied to people without TRAIT_HERBAL_AFFINITY
+	if(!affecting_tribal)
+		if(M.jitteriness + 10 <= 300)
+			M.jitteriness += 10
+		if(M.dizziness + 0.5 <= 15)
+			M.dizziness += 0.5
+		if(M.confused + 0.33 <= 10)
+			M.confused += 0.33
+		M.hallucination = 15
 	..()
 
 /datum/reagent/medicine/healingpoultice/overdose_process(mob/living/carbon/M)
-	M.adjustOxyLoss(6.75 * 1.5 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//150% of toxloss offset
-	M.hallucination = max(M.hallucination, 25)
-	M.jitteriness = max(M.jitteriness, 300)
-	M.druggy = max(M.druggy, 15)
-	M.set_dizziness(max(M.dizziness, 15))
-	M.confused = max(M.confused, 10)
+	M.adjustOxyLoss(6.75 * 0.45 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//45% of toxloss offset (3)
+	if(M.jitteriness + 10 <= 300)
+		M.jitteriness += 10
+	if(M.dizziness + 0.5 <= 15)
+		M.dizziness += 0.5
+	if(M.confused + 0.33 <= 10)
+		M.confused += 0.33
+	M.hallucination = 15
+	M.druggy = 15
 	. = TRUE
 
 // ---------------------------
@@ -592,11 +629,17 @@
 	M.adjustStaminaLoss(-5*REAGENTS_EFFECT_MULTIPLIER, 0)
 
 	//Debuffs applied to people with TRAIT_STRAIGHT_EDGE
-	M.hallucination = max(M.hallucination, affecting_straight_edge_mob ? 22.5 : 0)
-	M.jitteriness = max(M.jitteriness, affecting_straight_edge_mob ? 22.5 : 0)
-	M.set_dizziness(max(M.dizziness, affecting_straight_edge_mob ? 22.5 : 0))
-	M.confused = max(M.confused, affecting_straight_edge_mob ? 22.5 : 0)
-	M.set_disgust(max(M.disgust, affecting_straight_edge_mob ? DISGUST_LEVEL_DISGUSTED : 0))
+	if(affecting_straight_edge_mob)
+		if(M.jitteriness + 15 <= 300)
+			M.jitteriness += 15
+		if(M.disgust + 2.5 <= DISGUST_LEVEL_DISGUSTED)
+			M.disgust += 2.5
+		if(M.dizziness + 0.75 <= 15)
+			M.dizziness += 0.75
+		if(M.confused + 0.5 <= 10)
+			M.confused += 0.5
+		M.hallucination = 15
+		M.druggy = 15
 	..()
 
 /datum/reagent/medicine/medx/overdose_process(mob/living/carbon/human/M)
@@ -932,10 +975,15 @@
 					else if (iter_wound.wound_type == WOUND_PIERCE || iter_wound.wound_type == WOUND_SLASH)
 						iter_wound.blood_flow -= clot_rate
 
-	M.hallucination = max(M.hallucination, affecting_tribal ? 0 : 25)
-	M.jitteriness = max(M.jitteriness, affecting_tribal ? 0 : 100)
-	M.set_dizziness(max(M.dizziness, affecting_tribal ? 0 : 15))
-	M.confused = max(M.confused, affecting_tribal ? 0 : 10)
+	//Debuffs applied to people without TRAIT_HERBAL_AFFINITY
+	if(!affecting_tribal)
+		if(M.jitteriness + 15 <= 300)
+			M.jitteriness += 15
+		if(M.dizziness + 0.75 <= 15)
+			M.dizziness += 0.75
+		if(M.confused + 0.5 <= 10)
+			M.confused += 0.5
+		M.hallucination = 15
 	..()
 
 /datum/reagent/medicine/hydra/overdose_process(mob/living/carbon/M)
@@ -973,11 +1021,15 @@
 							iter_wound.replace_wound(/datum/wound/slash/critical)
 						else
 							iter_wound.blood_flow += clot_rate
-	M.hallucination = max(M.hallucination, 25)
-	M.jitteriness = max(M.jitteriness, 300)
-	M.druggy = max(M.druggy, 15)
-	M.set_dizziness(max(M.dizziness, 15))
-	M.confused = max(M.confused, 10)
+
+	if(M.jitteriness + 15 <= 300)
+		M.jitteriness += 15
+	if(M.dizziness + 0.75 <= 15)
+		M.dizziness += 0.75
+	if(M.confused + 0.5 <= 10)
+		M.confused += 0.5
+	M.hallucination = 15
+	M.druggy = 15
 
 /datum/reagent/medicine/hydra/addiction_act_stage1(mob/living/carbon/M)
 	if(prob(33))
