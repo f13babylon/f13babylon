@@ -510,7 +510,7 @@ GLOBAL_DATUM_INIT(ahelp_tickets, /datum/admin_help_tickets, new)
 
 // Used for methods where input via arg doesn't work
 /client/proc/get_adminhelp()
-	message_admins("X----- [key_name(initiator)] is making an ahelp shortly, hold onto your butts.-----X")
+	message_admins("X----- [key]is making an ahelp shortly, hold onto your butts.-----X")
 	for(var/client/X in GLOB.admins)
 		if(X.prefs.toggles & SOUND_ADMINHELP)
 			SEND_SOUND(X, sound('sound/effects/adminnotification.ogg'))
