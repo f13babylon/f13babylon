@@ -160,7 +160,7 @@
 		log_admin("INVALID ADMIN PROC ACCESS: [key_name(usr)] tried to use cmd_admin_world_narrate() without admin perms.")
 		return
 
-	var/msg = input("Message:", text("Enter the text you wish to appear to everyone:")) as text|null
+	var/msg = multiline_input(usr, text("Enter the text you wish to appear to everyone:"), "Global Narrate")
 
 	if (!msg)
 		return
@@ -184,7 +184,7 @@
 	if(!M)
 		return
 
-	var/msg = input("Message:", text("Enter the text you wish to appear to your target:")) as text|null
+	var/msg = multiline_input(usr, text("Enter the text you wish to appear to your target:"), "Direct Narrate")
 
 	if( !msg )
 		return
@@ -206,10 +206,10 @@
 		return
 	if(!A)
 		return
-	var/range = input("Range:", "Narrate to mobs within how many tiles:", 50) as num|null
+	var/range = input("Range:", "Narrate to mobs within how many tiles:", 7) as num|null
 	if(!range)
 		return
-	var/msg = input("Message:", text("Enter the text you wish to appear to everyone within view:")) as text|null
+	var/msg = multiline_input(usr, text("Enter the text you wish to appear to everyone within view:"), "Local Narrate")
 	if (!msg)
 		return
 	for(var/mob/M in view(range,A))

@@ -293,3 +293,8 @@ GLOBAL_LIST_INIT(shove_disarming_types, typecacheof(list(
  * a "inefficiently" prefix will be added to the message.
  */
 #define FEEBLE_ATTACK_MSG_THRESHOLD 0.5
+
+/// Gun handedness defines -- for picking which direction to toss casings
+#define GUN_EJECTOR_RIGHT 1
+#define GUN_EJECTOR_LEFT 2
+#define GUN_EJECTOR_ANY 3

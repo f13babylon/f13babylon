@@ -7,6 +7,8 @@
 	attack_verb = "slash"
 	attack_sound = 'sound/weapons/slice.ogg'
 	miss_sound = 'sound/weapons/slashmiss.ogg'
+	exotic_blood = /datum/reagent/plantnutriment/eznutriment
+	exotic_blood_color = "#376400"
 	burnmod = 1.25
 	heatmod = 1.5
 	meat = /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/plant
@@ -21,7 +23,7 @@
 
 	species_type = "plant"
 
-	allowed_limb_ids = list("pod","mush")
+	allowed_limb_ids = list("pod")
 
 /datum/species/pod/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	. = ..()
@@ -70,10 +72,12 @@
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,MUTCOLORS,CAN_SCAR,HAS_FLESH,HAS_BONE)
 	mutant_bodyparts = list("mcolor" = "FFFFFF","mcolor2" = "FFFFFF","mcolor3" = "FFFFFF", "mam_snouts" = "Husky", "mam_tail" = "Husky", "mam_ears" = "Husky", "mam_body_markings" = list(), "taur" = "None", "legs" = "Normal Legs")
 	limbs_id = "pod"
-	light_nutrition_gain_factor = 3
-	light_bruteheal = -0.2
-	light_burnheal = -0.2
-	light_toxheal = -0.7
+	brutemod = 1.25
+	light_nutrition_gain_factor = 2
+	light_bruteheal = -0.1
+	light_burnheal = -0.1
+	light_toxheal = -0.1
+	light_oxyheal = 0
 
 	tail_type = "mam_tail"
 	wagging_type = "mam_waggingtail"

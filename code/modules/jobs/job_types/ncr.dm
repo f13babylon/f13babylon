@@ -889,7 +889,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "Combat Sapper"
 	belt = /obj/item/storage/belt/military/assault/ncr/engineer
 	glasses = /obj/item/clothing/glasses/welding
-	suit_store = /obj/item/ammo_box/magazine/uzim9mm
+	suit_store = /obj/item/gun/ballistic/automatic/smg/mini_uzi
 	backpack_contents = list(
 		/obj/item/grenade/plastic/x4 = 1,
 		/obj/item/book/granter/trait/explosives = 1,
@@ -900,7 +900,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/outfit/loadout/combatengineerbuilder
 	name = "Construction Specialist"
 	belt = /obj/item/storage/belt/military/assault/ncr/engineer
-	suit_store = /obj/item/ammo_box/magazine/uzim9mm
+	suit_store = /obj/item/gun/ballistic/automatic/smg/mini_uzi
 	backpack_contents = list(
 			/obj/item/ammo_box/magazine/uzim9mm = 3,
 		/obj/item/book/granter/trait/explosives = 1,
@@ -1022,7 +1022,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ,  REF(src))
-	ADD_TRAIT(H, TRAIT_SURGERY_LOW,  REF(src))
+	ADD_TRAIT(H, TRAIT_SURGERY_MID,  REF(src))
 	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
 
 
@@ -1286,7 +1286,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		return
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ,  REF(src))
 	ADD_TRAIT(H, TRAIT_SURGERY_HIGH,  REF(src))
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/medx)
 
 
 // LOGISTICS OFFICER

@@ -21,6 +21,13 @@
 	full_name = "Me (emote)"
 	clientside = "me"
 
+/datum/keybinding/client/communication/Do
+	hotkey_keys = list("CtrlK")
+	classic_keys = list("Unbound")
+	name = "Do"
+	full_name = "Do"
+	clientside = "do"
+
 //indicators
 /datum/keybinding/client/communication/say_with_indicator
 	hotkey_keys = list("T")
@@ -40,6 +47,16 @@
 /datum/keybinding/client/communication/me_with_indicator/down(client/user)
 	var/mob/M = user.mob
 	M.me_typing_indicator()
+	return TRUE
+
+/datum/keybinding/client/communication/do_with_indicator
+	hotkey_keys = list("K")
+	name = "do_with_indicator"
+	full_name = "Do with Typing Indicator"
+
+/datum/keybinding/client/communication/do_with_indicator/down(client/user)
+	var/mob/M = user.mob
+	M.do_typing_indicator()
 	return TRUE
 
 /datum/keybinding/client/communication/subtle
@@ -76,4 +93,3 @@
 	var/mob/M = user.mob
 	M.toggle_typing_indicator()
 	return TRUE
-

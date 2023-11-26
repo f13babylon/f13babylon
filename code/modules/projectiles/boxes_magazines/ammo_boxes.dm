@@ -48,7 +48,6 @@
 	name = "homemade shotgun shells"
 	desc = "Recycled paper, plastic, little pieces of metal and gunpowder. Loud but not very effective."
 	max_ammo = 8
-	multiple_sprites = 1
 	ammo_type = /obj/item/ammo_casing/shotgun/improvised
 	icon_state = "improvshotbag"
 
@@ -153,7 +152,6 @@
 	multiple_sprites = 3
 	ammo_type = /obj/item/ammo_casing/c38/improv
 
-
 //10mm
 /obj/item/ammo_box/c10mm
 	name = "ammo box (10mm)"
@@ -244,8 +242,7 @@
 	name = "bag with reloaded .44 bullets"
 	desc = "The casings are worn, the gunpowder some homebrew mix of dubious quality. At least it goes bang."
 	icon_state = "improvshotbag"
-	multiple_sprites = 1
-
+	multiple_sprites = 3
 
 // .45 ACP
 /obj/item/ammo_box/c45
@@ -275,8 +272,7 @@
 	name = "bag with reloaded .45 ACP bullets"
 	desc = "The casings are worn, the gunpowder some homebrew mix of dubious quality. At least it goes bang."
 	icon_state = "improvshotbag"
-	multiple_sprites = 1
-
+	multiple_sprites = 3
 
 //.45-70 Gov't
 /obj/item/ammo_box/c4570box

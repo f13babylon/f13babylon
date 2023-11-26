@@ -94,6 +94,16 @@
 	else
 		return trim(html_encode(name), max_length) //trim is "outside" because html_encode can expand single symbols into multiple symbols (such as turning < into &lt;)
 
+// Do NOT use this for regular procs, it is intentionally unsanitized. Allows for the usage of span classes in narrates from the admins
+/proc/multiline_input(mob/user, message = "", title = "", default = "", max_length=MAX_MESSAGE_LEN, no_trim=FALSE)
+	var/name = input(user, message, title, default) as message|null
+	if(isnull(name)) // Return null if canceled.
+		return null
+	if(no_trim)
+		return copytext(name, 1, max_length)
+	else
+		return trim(name, max_length)
+
 // Used to get a properly sanitized multiline input, of max_length
 /proc/stripped_multiline_input(mob/user, message = "", title = "", default = "", max_length=MAX_MESSAGE_LEN, no_trim=FALSE)
 	var/name = input(user, message, title, default) as message|null
