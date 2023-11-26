@@ -5,7 +5,7 @@
 /datum/gear/hands/backpack
 	name = "hiking backpack"
 	path = /obj/item/storage/backpack/old
-	cost = 3
+	cost = 2
 
 /datum/gear/hands/backpack/duffel
 	name = "duffelbag"
@@ -31,7 +31,7 @@
 /datum/gear/hands/backpack/sec
 	name = "security backpack"
 	path = /obj/item/storage/backpack/security
-	cost = 4
+	cost = 2
 
 /datum/gear/hands/backpack/sec/satchel
 	name = "security satchel"
@@ -40,7 +40,7 @@
 /datum/gear/hands/backpack/trophy
 	name = "trophy rack"
 	path = /obj/item/storage/backpack/cultpack
-	cost = 3
+	cost = 2
 
 /datum/gear/hands/briefcase/crafted
 	name = "briefcase"
@@ -83,7 +83,7 @@
 /datum/gear/hands/cane
 	name = "cane"
 	path = /obj/item/cane
-	
+
 /datum/gear/hands/cane
 	name = "spraycan"
 	path = /obj/item/toy/crayon/spraycan
