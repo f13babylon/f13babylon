@@ -1022,7 +1022,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ,  REF(src))
-	ADD_TRAIT(H, TRAIT_SURGERY_MED,  REF(src))
+	ADD_TRAIT(H, TRAIT_SURGERY_MID,  REF(src))
 	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
 
 
