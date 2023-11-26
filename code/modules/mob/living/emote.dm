@@ -348,6 +348,7 @@
 	key_third_person = "sniffs"
 	message = "sniffs."
 	emote_type = EMOTE_AUDIBLE
+	sound_volume = 30
 
 /datum/emote/living/sniff/get_sound(mob/living/user)
 	if(iscarbon(user))
@@ -362,7 +363,7 @@
 	message = "snores."
 	emote_type = EMOTE_AUDIBLE
 	stat_allowed = UNCONSCIOUS
-	sound_volume = 80
+	sound_volume = 30
 	sound = 'sound/emotes/snore.ogg'
 
 /datum/emote/living/stare
@@ -440,6 +441,8 @@
 	key_third_person = "yawns"
 	message = "yawns."
 	emote_type = EMOTE_AUDIBLE
+	sound = list("sound/emotes/yawn_m1.ogg",
+				 "sound/emotes/yawn_m2.ogg")
 
 /datum/emote/living/custom
 	key = "me"

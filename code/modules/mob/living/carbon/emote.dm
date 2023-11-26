@@ -40,6 +40,7 @@
 	emote_type = EMOTE_AUDIBLE
 	muzzle_ignore = TRUE
 	restraint_check = TRUE
+	sound_volume = 30
 	sound = list('sound/emotes/claponce1.ogg',
 				'sound/emotes/claponce2.ogg')
 
