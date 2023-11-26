@@ -49,9 +49,8 @@
 	key_third_person = "clears their throat"
 	message = "clears their throat."
 	emote_type = EMOTE_AUDIBLE
-	vary = TRUE
-	sound = list('sound/emotes/male_clear_throat_1',
-				 'sound/emotes/male_clear_throat_2')
+	sound = list('sound/emotes/male_clear_throat_1.ogg',
+				 'sound/emotes/male_clear_throat_2.ogg')
 
 
 /datum/emote/living/carbon/clap/can_run_emote(mob/living/user, status_check, intentional)
