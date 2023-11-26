@@ -88,7 +88,7 @@ Administrator
 	uniform =	/obj/item/clothing/under/f13/followers
 	suit=	/obj/item/clothing/suit/hooded/followerlight
 	shoes =	/obj/item/clothing/shoes/f13/brownie
-	/obj/item/storage/belt/utility/full/engi
+	belt = /obj/item/storage/belt/utility/full/engi
 	backpack =	/obj/item/storage/backpack/medic
 	satchel =	/obj/item/storage/backpack/satchel/med
 	duffelbag =	/obj/item/storage/backpack/duffelbag/med
