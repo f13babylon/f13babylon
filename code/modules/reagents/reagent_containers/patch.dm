@@ -80,7 +80,7 @@
 
 /obj/item/reagent_containers/pill/patch/healingpoultice
 	name = "healing poultice"
-	desc = "A bag which contains an olive-colored poultice derived from an assortment of medicinal plants. Applied on skin, it has as additional antitoxin and radiation-treating effect."
+	desc = "A bag which contains an olive-colored poultice derived from an assortment of medicinal plants. Applied on skin, it has as additional antitoxin and radiation-treating effect, purging Bitter drink from the body."
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	list_reagents = list(/datum/reagent/medicine/healingpoultice = 10)
 	icon_state = "patch_healingpoultice"
