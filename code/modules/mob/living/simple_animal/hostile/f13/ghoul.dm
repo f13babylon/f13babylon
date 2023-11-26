@@ -45,6 +45,7 @@
 		"screeches",
 		"charges")
 	taunt_chance = 30
+	alt_skin = TRUE
 
 	emote_taunt_sound = list('sound/f13npc/ghoul_new/ghoul_charge1.ogg','sound/f13npc/ghoul_new/ghoul_charge2.ogg','sound/f13npc/ghoul_new/ghoul_charge3.ogg')
 	aggrosound = list('sound/f13npc/ghoul/aggro1.ogg', 'sound/f13npc/ghoul/aggro2.ogg')
@@ -53,6 +54,17 @@
 	death_sound = list('sound/f13npc/ghoul_new/ghoul_death_01.ogg','sound/f13npc/ghoul_new/ghoul_death_02.ogg','sound/f13npc/ghoul_new/ghoul_death_03.ogg',\
 	'sound/f13npc/ghoul_new/ghoul_death_04.ogg')
 	idlesound = list('sound/f13npc/ghoul/idle.ogg','sound/f13npc/ghoul_new/ghoul_seizure_long.ogg','sound/f13npc/ghoul_new/ghoul_seizure_short.ogg')
+
+/mob/living/simple_animal/hostile/ghoul/Initialize()    //if the mob is enabled for human alt skin, 50% chance of that happening on spawn.
+	. = ..()
+
+	if (!alt_skin)
+		return
+	if(!prob(50))
+		return
+	icon_state = "[initial(icon_state)]_human"
+	icon_living = "[initial(icon_state)]_human"
+	icon_dead = "[initial(icon_state)]_human"
 
 // Ghoul Reaver
 /mob/living/simple_animal/hostile/ghoul/reaver
@@ -94,6 +106,7 @@
 	icon_living = "ghoulncr"
 	icon_dead = "ghoulncr_dead"
 	maxHealth = 80
+	alt_skin = FALSE
 
 /mob/living/simple_animal/hostile/ghoul/ncr/helmet
 	icon_state = "ghoulncrh"
@@ -124,6 +137,7 @@
 	melee_damage_upper = 15
 	unsuitable_atmos_damage = 0//shitty hack
 	footstep_type = FOOTSTEP_MOB_BAREFOOT
+	alt_skin = FALSE
 
 //Frozen Feral Ghoul
 /mob/living/simple_animal/hostile/ghoul/frozenreaver
@@ -140,6 +154,7 @@
 	melee_damage_upper = 15
 	unsuitable_atmos_damage = 0//shitty hack
 	footstep_type = FOOTSTEP_MOB_BAREFOOT
+	alt_skin = FALSE
 
 //Legendary Ghoul
 /mob/living/simple_animal/hostile/ghoul/legendary
@@ -248,6 +263,7 @@
 	melee_damage_upper = 45
 	armour_penetration = 0.4//Making them some manner of threat.
 	footstep_type = FOOTSTEP_MOB_BAREFOOT
+	alt_skin = FALSE
 
 /mob/living/simple_animal/hostile/ghoul/rotting/Initialize(mapload)
 	. = ..()
