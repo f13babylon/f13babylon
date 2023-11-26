@@ -160,6 +160,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13orator
 	suit = /obj/item/clothing/suit/armor/f13/legion/orator
 	head = /obj/item/clothing/head/helmet/f13/legion/orator
+	ears = /obj/item/radio/headset/headset_legion
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	neck = /obj/item/storage/belt/holster
 	id = /obj/item/card/id/dogtag/legorator
@@ -205,17 +206,21 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Priestess of Mars"
 	jobtype = /datum/job/CaesarsLegion/f13priestess
 	uniform = /obj/item/clothing/under/f13/pmarsrobe
-	head = /obj/item/clothing/head/helmet/f13/legion/marsheaddress
+	head = /obj/item/clothing/head/helmet/f13/legion/orator
+	ears = /obj/item/radio/headset/headset_legion
 	shoes = /obj/item/clothing/shoes/roman
-	belt = /obj/item/storage/belt/medical/primitive
+	id = /obj/item/card/id/dogtag/legpriest
 	backpack = /obj/item/storage/backpack/legionr
 	r_pocket = /obj/item/storage/bag/money/small/legofficers
 	l_pocket = /obj/item/flashlight/lantern
+	box = /obj/item/storage/survivalkit_tribal/chief
+	belt = /obj/item/storage/belt/military/assault/legion
 	backpack_contents = list(
 		/obj/item/stack/f13Cash/random/denarius/high = 1,
 		/obj/item/storage/firstaid/ancient = 1,
 		/obj/item/stack/sticky_tape/surgical = 1,
-		/obj/item/stack/medical/bone_gel = 1
+		/obj/item/stack/medical/bone_gel = 1,
+		/obj/item/warpaint_bowl = 1
 	)
 
 /datum/outfit/job/CaesarsLegion/f13priestess/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)

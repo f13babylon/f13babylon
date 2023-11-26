@@ -624,6 +624,8 @@
 /obj/machinery/chem_dispenser/drinks/beer/fullupgrade //equivalent to fully ugpraded stock parts, emagged
 	desc = "An advanced self-contained dispenser for various kinds of hard drinks. This one is capable of producing some more esoteric concoctions."
 	circuit = /obj/item/circuitboard/machine/chem_dispenser/drinks/beer/fullupgrade
+	powerefficiency = 0.2
+	recharge_amount = 40
 	obj_flags = CAN_BE_HIT | EMAGGED
 
 /obj/machinery/chem_dispenser/drinks/beer/fullupgrade/RefreshParts()
@@ -684,6 +686,8 @@
 /obj/machinery/chem_dispenser/fullupgrade //equivalent to t4 stock parts, emagged
 	desc = "An advanced self-contained dispenser for various kinds of chemicals. This one is capable of producing some more esoteric types."
 	circuit = /obj/item/circuitboard/machine/chem_dispenser/fullupgrade
+	powerefficiency = 0.2
+	recharge_amount = 40
 	obj_flags = CAN_BE_HIT | EMAGGED
 
 /obj/machinery/chem_dispenser/fullupgrade/RefreshParts()
