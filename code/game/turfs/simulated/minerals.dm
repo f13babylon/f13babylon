@@ -251,7 +251,7 @@
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium = 2, /turf/closed/mineral/diamond = 1, /turf/closed/mineral/gold = 4, /turf/closed/mineral/titanium = 4,
 		/turf/closed/mineral/silver = 6, /turf/closed/mineral/plasma = 15, /turf/closed/mineral/iron = 40, /turf/closed/mineral/lead = 30, /turf/closed/mineral/limestone = 20,
-		/*/turf/closed/mineral/gibtonite/volcanic = 4*/, /turf/closed/mineral/bscrystal = 1) //indestructable chance moved to child, /underground
+		/*/turf/closed/mineral/gibtonite/volcanic = 4,*/ /turf/closed/mineral/bscrystal = 1) //indestructable chance moved to child, /underground
 
 /turf/closed/mineral/random/low_chance/underground
 	mineralSpawnChanceList = list(
@@ -306,13 +306,13 @@
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium/ice/icemoon = 5, /turf/closed/mineral/diamond/ice/icemoon = 1, /turf/closed/mineral/gold/ice/icemoon = 10, /turf/closed/mineral/titanium/ice/icemoon = 11,
 		/turf/closed/mineral/silver/ice/icemoon = 12, /turf/closed/mineral/plasma/ice/icemoon = 20, /turf/closed/mineral/iron/ice/icemoon = 40,
-		/*/turf/closed/mineral/gibtonite/volcanic = 4*/ = 4, /turf/open/floor/plating/asteroid/airless/cave/snow = 1, /turf/closed/mineral/bscrystal/ice/icemoon = 1)
+		/*/turf/closed/mineral/gibtonite/volcanic = 4*/, /turf/open/floor/plating/asteroid/airless/cave/snow = 1, /turf/closed/mineral/bscrystal/ice/icemoon = 1)
 
 /turf/closed/mineral/random/snow/no_caves
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium/ice/icemoon = 5, /turf/closed/mineral/diamond/ice/icemoon = 1, /turf/closed/mineral/gold/ice/icemoon = 10, /turf/closed/mineral/titanium/ice/icemoon = 11,
 		/turf/closed/mineral/silver/ice/icemoon = 12, /turf/closed/mineral/plasma/ice/icemoon = 20, /turf/closed/mineral/iron/ice/icemoon = 40,
-		/*/turf/closed/mineral/gibtonite/volcanic = 4*/ = 4, /turf/closed/mineral/bscrystal/ice/icemoon = 1)
+		/*/turf/closed/mineral/gibtonite/volcanic = 4*/, /turf/closed/mineral/bscrystal/ice/icemoon = 1)
 
 /turf/closed/mineral/random/labormineral
 	mineralSpawnChanceList = list(
@@ -361,7 +361,7 @@
 
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium/ice/icemoon = 3, /turf/closed/mineral/diamond/ice/icemoon = 1, /turf/closed/mineral/gold/ice/icemoon = 8, /turf/closed/mineral/titanium/ice/icemoon = 8,
-		/turf/closed/mineral/silver/ice/icemoon = 20, /turf/closed/mineral/plasma/ice/icemoon = 30, /turf/closed/mineral/bscrystal/ice/icemoon = 1, /*/turf/closed/mineral/gibtonite/volcanic = 4*/,
+		/turf/closed/mineral/silver/ice/icemoon = 20, /turf/closed/mineral/plasma/ice/icemoon = 30, /turf/closed/mineral/bscrystal/ice/icemoon = 1, /*/turf/closed/mineral/gibtonite/volcanic = 4,*/
 		/turf/closed/mineral/iron/ice/icemoon = 95)
 
 
