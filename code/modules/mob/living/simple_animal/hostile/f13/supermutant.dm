@@ -39,6 +39,7 @@
 	wound_bonus = 0
 	bare_wound_bonus = 0
 	footstep_type = FOOTSTEP_MOB_HEAVY
+	alt_skin = TRUE
 
 /mob/living/simple_animal/hostile/supermutant/playable
 	health = 500
@@ -52,6 +53,16 @@
 	anchored = FALSE
 	dextrous = TRUE
 	possible_a_intents = list(INTENT_HELP, INTENT_HARM)
+
+/mob/living/simple_animal/hostile/supermutant/Initialize()    //if the mob is enabled for human alt skin, 50% chance of that happening on spawn.
+	. = ..()
+	if (!alt_skin)
+		return
+	if(!prob(50))
+		return
+	icon_state = "[initial(icon_state)]_human"
+	icon_living = "[initial(icon_state)]_human"
+	icon_dead = "[initial(icon_state)]_human"
 
 
 /mob/living/simple_animal/hostile/supermutant/Aggro()
