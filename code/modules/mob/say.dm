@@ -55,6 +55,7 @@
 	message = trim(copytext_char(sanitize(message), 1, MAX_MESSAGE_LEN))
 	clear_typing_indicator()		// clear it immediately!
 
+
 	usr.emote("me",1,message,TRUE)
 
 
