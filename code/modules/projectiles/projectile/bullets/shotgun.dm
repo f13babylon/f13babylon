@@ -47,8 +47,8 @@
 	light_color = LIGHT_COLOR_FIRE
 	damage_type = BURN
 	damage = 12 //slight damage on impact
-	wound_bonus = 60//Most wounds come from fire stacks, but this is insult to injury. :)
-	bare_wound_bonus = 80
+	wound_bonus = 20//Most wounds come from fire stacks, but this is insult to injury. :)
+	bare_wound_bonus = 40
 	range = 10
 
 /obj/item/projectile/incendiary/flamethrower/on_hit(atom/target)
@@ -165,6 +165,8 @@
 	sharpness = SHARP_NONE //crunch
 	tile_dropoff = 0
 	tile_dropoff_s = 0
+	supereffective_damage = 15 //same damage vs mobs as regular slugs, epic
+	supereffective_faction = list("hostile", "ant", "supermutant", "deathclaw", "cazador", "raider", "gecko", "wastebot", "radscorpion")
 
 /obj/item/projectile/bullet/pellet/trainshot/on_hit(atom/target)
 	. = ..()

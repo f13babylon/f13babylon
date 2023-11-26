@@ -49,7 +49,7 @@ GLOBAL_LIST_INIT(nonhuman_positions, list(
 	))
 
 GLOBAL_LIST_INIT(command_positions, list(
-	"Head Paladin",
+	"Head Scribe",
 
 	"NCR Captain",
 	"NCR Veteran Ranger",
@@ -97,9 +97,9 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Legion Explorer",
 "Legion Slavemaster",
 "Legion Veteran Decanus",
-"Veteran Legionnaire",
+"Veteran Legionary",
 "Legion Prime Decanus",
-"Prime Legionnaire",
+"Prime Legionary",
 "Legion Recruit Decanus",
 "Legion Camp Follower",
 "Legion Scout",
@@ -173,14 +173,14 @@ GLOBAL_LIST_INIT(bighorn_positions, list(
 
 GLOBAL_LIST_INIT(legion_command_positions, list(
 	"Legate",
-	"Legion Orator",
 	"Legion Centurion",
 	"Legion Veteran Decanus",
 ))
 
 GLOBAL_LIST_INIT(legion_positions, list(
-	"Legion Orator",
 	"Legion Centurion",
+	"Legion Orator",
+	"Legion Priestess",
 	"Legion Venator",
 	"Legion Veteran Decanus",
 	"Legion Prime Decanus",
@@ -188,9 +188,9 @@ GLOBAL_LIST_INIT(legion_positions, list(
 	"Legion Vexillarius",
 	"Legion Explorer",
 	"Legion Scout",
-	"Veteran Legionnaire",
-	"Prime Legionnaire",
-	"Recruit Legionnaire",
+	"Veteran Legionary",
+	"Prime Legionary",
+	"Recruit Legionary",
 	"Legion Forgemaster",
 	"Legion Camp Follower",
 	"Legion Auxilia",
@@ -208,7 +208,7 @@ GLOBAL_LIST_INIT(ncr_positions, list(
 	"NCR Veteran Ranger",
 	"NCR Representative",
 	"NCR Ranger",
-	"NCR Heavy Gunner",
+	"NCR Heavy Trooper",
 	"NCR Military Police",
 	"NCR Senior Enlisted Advisor",
 	"NCR Sergeant",

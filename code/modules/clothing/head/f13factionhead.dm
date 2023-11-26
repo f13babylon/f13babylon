@@ -914,7 +914,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/khaans.dmi'
 	icon_state = "khan_helmet"
 	item_state = "khan_helmet"
-	armor = list("melee" = 30, "bullet" = 25, "laser" = 25,  "energy" = 25, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 30)
+	armor = list("melee" = 37, "bullet" = 37, "laser" = 40, "energy" = 25, "bomb" = 30, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 0, "wound" = 10)
 	flags_inv = null
 	flags_cover = null
 	strip_delay = 20
@@ -931,24 +931,17 @@
 	icon_state = "khan_helmetpelt"
 	item_state = "khan_helmetpelt"
 
-/obj/item/clothing/head/helmet/f13/khan/pelt/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 
 /obj/item/clothing/head/helmet/f13/khan/bandana
 	name = "Great Khan bandana"
 	desc = "A bandana. Tougher than it looks. One side of the cloth is dark, the other red, so it can be reversed."
 	icon_state = "khan_bandana"
 	item_state = "khan_bandana"
+	armor = list("melee" = 30, "bullet" = 25, "laser" = 25,  "energy" = 25, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 30)
 	strip_delay = 10
 	dynamic_hair_suffix = null
 	dynamic_fhair_suffix = null
 	var/helmettoggled = FALSE
-
-/obj/item/clothing/head/helmet/f13/khan/bandana/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/helmet/f13/khan/bandana/AltClick(mob/user)
 	. = ..()
@@ -982,17 +975,60 @@
 
 /obj/item/clothing/head/helmet/f13/khan/fullhelm
 	name = "Great Khan full helmet"
-	desc = " A Khan helmet modified with steel horns and a full guard comprised of red sunglass lenses and a thick metal plate to conceal the lower face."
-	icon_state = "khan_fullhelmet"
-	item_state = "khan_fullhelmet"
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 45, "energy" = 25, "bomb" = 35, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 0, "wound" = 40)
+	desc = " A Khan helmet modified with steel horns and a full guard comprised of orange glass lenses and a thick metal plate to conceal the lower face."
+	icon_state = "kharuul_helm"
+	item_state = "kharuul_helm"
+	icon = 'icons/fallout/clothing/khans.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/khaans.dmi'
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 47, "energy" = 25, "bomb" = 35, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 0, "wound" = 20)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	strip_delay = 20
 
-/obj/item/clothing/head/helmet/f13/khan/fullhelm/Initialize(mapload)
+
+/obj/item/clothing/head/helmet/f13/khan/leader
+	name = "Great Khan full helmet"
+	desc = " A Khan helmet modified marked with a red plume and a full guard comprised of orange glass lenses and a thick metal plate to conceal the lower face. It seems the gaurd can be lifted up."
+	icon_state = "turuuch_helm"
+	item_state = "turuuch_helm"
+	icon = 'icons/fallout/clothing/khans.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/khaans.dmi'
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 50, "energy" = 25, "bomb" = 35, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 0, "wound" = 20)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
+	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	strip_delay = 20
+	var/helmettoggled = FALSE
+
+/obj/item/clothing/head/helmet/f13/khan/leader/AltClick(mob/user)
 	. = ..()
-	AddComponent(/datum/component/armor_plate)
+	if(!user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
+		return
+	helmet_toggle(user)
+	return TRUE
+
+/obj/item/clothing/head/helmet/f13/khan/leader/ui_action_click()
+	helmet_toggle()
+
+/obj/item/clothing/head/helmet/f13/khan/leader/proc/helmet_toggle()
+	set src in usr
+
+	if(!can_use(usr))
+		return 0
+
+	to_chat(usr, "<span class='notice'>You flip the visor.</span>")
+	if(src.helmettoggled)
+		src.icon_state = "[initial(icon_state)]"
+		src.item_state = "[initial(icon_state)]"
+		src.helmettoggled = FALSE
+	else if(!src.helmettoggled)
+		src.icon_state = "[initial(icon_state)]_t"
+		src.item_state = "[initial(icon_state)]_t"
+		src.helmettoggled = TRUE
+	usr.update_inv_head()
+	for(var/X in actions)
+		var/datum/action/A = X
+		A.UpdateButtonIcon()
+
 
 //Wayfarer
 /obj/item/clothing/head/helmet/f13/deathskull
@@ -1341,6 +1377,6 @@
 /obj/item/clothing/head/helmet/f13/combat/enclave
 	name = "enclave combat helmet"
 	desc = "An intimidating helmet that is issued with it's corresponding suit."
-	icon_state = "enclave_new"
-	item_state = "enclave_new"
+	icon_state = "remnant_helmet"
+	item_state = "remnant_helmet"
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 50)

@@ -625,7 +625,7 @@ SUBSYSTEM_DEF(ticker)
 	if(SSblackbox.first_death)
 		var/list/ded = SSblackbox.first_death
 		//fortuna addition. list of random names for the roundend news investigator
-		var/list/investigator = list("Oasis Investigators","A band of couriers","Patrolling rangers","A few mysterious strangers","The NCR","The Legion","The Brotherhood","The Den")
+		var/list/investigator = list("Roving merchants","Frenzied raiders","Wayfaring tribals","Patrolling rangers","NCR troopers","Legion explorers","Great Khan enforcers","Brotherhood knights","Followers volunteers","Babylon townsfolk")
 		if(ded.len)
 			news_message += "[pick(investigator)] discovered the corpse of a person of interest in the area. Their name was: [ded["name"]], the [ded["role"]], who died in a nearby [ded["area"]].[ded["last_words"] ? " Their last words were: \"[ded["last_words"]]\"" : ""]"
 		else

@@ -179,11 +179,9 @@ a.popt {
   padding: 2px 0;
 }
 
-.filterMessages input {
-}
+.filterMessages input {}
 
-.filterMessages label {
-}
+.filterMessages label {}
 
 .icon-stack {
   height: 1em;
@@ -254,7 +252,8 @@ a.popt {
 
 /* ADD HERE FOR ITALIC */
 
-.italic, .italics {
+.italic,
+.italics {
   font-style: italic;
 }
 
@@ -267,12 +266,18 @@ a.popt {
   background: yellow;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #a4bad6;
   font-family: Georgia, Verdana, sans-serif;
 }
 
-h1.alert, h2.alert {
+h1.alert,
+h2.alert {
   color: #a4bad6;
 }
 
@@ -337,8 +342,12 @@ em {
   font-weight: bold;
 }
 
-.say, .emote, .infoplain, .oocplain, .warningplain, .subtle {
-}
+.say,
+.emote,
+.infoplain,
+.oocplain,
+.warningplain,
+.subtle {}
 
 .deadsay {
   color: #e2c1ff;
@@ -352,7 +361,8 @@ em {
   color: #00ff00;
 }
 
-.binarysay a:active, .binarysay a:visited {
+.binarysay a:active,
+.binarysay a:visited {
   color: #88ff88;
 }
 
@@ -419,10 +429,11 @@ em {
   color: #fdfd34;
 }
 
-.vaultradio	{
+.vaultradio {
   color: #6eaa2c;
 
 }
+
 .ncrradio {
   color: #eaaa54;
 }
@@ -719,6 +730,34 @@ em {
   font-style: italic;
 }
 
+.prayer {
+  color: #000099;
+  font-weight: bold;
+}
+
+.preacher_prayer {
+  color: #BE8700;
+  font-size: 3;
+  font-weight: bold;
+}
+
+.legion_prayer {
+  color: #c24d44;
+  font-size: 3;
+  font-weight: bold;
+}
+
+.cult_prayer {
+  color: #960000;
+  font-size: 3;
+  font-weight: bold;
+}
+
+.spiritual_prayer {
+  color: #660099;
+  font-weight: bold;
+}
+
 /* coggers dosen't exist on tg :( */
 /* from decon_msg: font-size: 185% == font-size 3*/
 .brass {
@@ -734,7 +773,7 @@ em {
 .large_brass {
   color: #BE8700;
   font-size: 185%;
- }
+}
 
 .big_brass {
   color: #BE8700;
@@ -784,7 +823,7 @@ em {
   font-style: italic;
 }
 
-.sevtug	{
+.sevtug {
   color: #AF0AAF;
   font-weight: bold;
   font-style: italic;
@@ -801,7 +840,7 @@ em {
   font-style: italic;
 }
 
-.inathneq	{
+.inathneq {
   color: #1E8CE1;
   font-weight: bold;
   font-style: italic;
@@ -933,7 +972,7 @@ em {
   font-size: 185%;
 }
 
-.yellowtext	{
+.yellowtext {
   color: #FFCC00;
   font-size: 185%;
 }
@@ -964,7 +1003,7 @@ em {
 }
 
 .singing {
-  font-family:'Trebuchet MS', cursive, sans-serif;
+  font-family: 'Trebuchet MS', cursive, sans-serif;
   font-style: italic;
 }
 
@@ -990,7 +1029,7 @@ em {
   }
 }
 
-.velvet	{
+.velvet {
   color: #660015;
   font-weight: bold;
   animation: velvet 5000ms infinite;
@@ -998,19 +1037,23 @@ em {
 }
 
 @keyframes velvet {
-	0% {
+  0% {
     color: #400020;
   }
-	40% {
+
+  40% {
     color: #FF0000;
   }
-	50% {
+
+  50% {
     color: #FF8888;
   }
-	60% {
+
+  60% {
     color: #FF0000;
   }
-	100% {
+
+  100% {
     color: #400020;
   }
 }
@@ -1095,7 +1138,8 @@ em {
   font-size: 80%;
 }
 
-.connectionClosed, .fatalError {
+.connectionClosed,
+.fatalError {
   background: red;
   color: white;
   padding: 5px;

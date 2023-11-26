@@ -1848,6 +1848,15 @@
 /mob/living/simple_animal/hostile/wolf/playable,
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/wasteland/warren)
+"bGz" = (
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/turf/open/floor/plasteel/f13/vault_floor/red/white/whiteredchess/whiteredchess2,
+/area/f13/ncr)
 "bGY" = (
 /obj/structure/flora/tree/tall{
 	icon_state = "tree_2"
@@ -4649,7 +4658,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/ncr)
 "esx" = (
-/obj/structure/junk/jukebox,
+/obj/machinery/vending/cigarette,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
@@ -11708,6 +11717,10 @@
 	},
 /turf/open/floor/wood/wood_common,
 /area/f13/city)
+"lcV" = (
+/obj/machinery/processor,
+/turf/open/floor/plasteel/f13/vault_floor/red/white/whiteredchess/whiteredchess2,
+/area/f13/ncr)
 "lcZ" = (
 /turf/closed/wall/r_wall/rust,
 /area/f13/city)
@@ -15289,7 +15302,6 @@
 "oBi" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
-/obj/item/reagent_containers/food/condiment/enzyme,
 /turf/open/floor/plasteel/f13/vault_floor/red/white/whiteredchess/whiteredchess2,
 /area/f13/ncr)
 "oBs" = (
@@ -16585,6 +16597,7 @@
 "pPZ" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier3,
+/obj/item/book/granter/crafting_recipe/scav,
 /turf/open/floor/f13{
 	icon_state = "dark"
 	},
@@ -20491,12 +20504,7 @@
 /area/f13/wasteland/warren)
 "twj" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/table,
-/obj/effect/spawner/lootdrop/f13/foodspawner,
-/obj/effect/spawner/lootdrop/f13/foodspawner,
-/obj/effect/spawner/lootdrop/f13/foodspawner,
-/obj/effect/spawner/lootdrop/f13/foodspawner,
-/obj/effect/spawner/lootdrop/f13/foodspawner,
+/obj/machinery/vending/wardrobe/chef_wardrobe,
 /turf/open/floor/plasteel/f13/vault_floor/red/white/whiteredchess/whiteredchess2,
 /area/f13/ncr)
 "tws" = (
@@ -21763,7 +21771,12 @@
 	},
 /area/f13/ncr)
 "uxw" = (
-/obj/machinery/smartfridge,
+/obj/structure/closet/secure_closet/freezer/kitchen,
+/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/reagent_containers/food/condiment/enzyme,
 /turf/open/floor/plasteel/f13/vault_floor/red/white/whiteredchess/whiteredchess2,
 /area/f13/ncr)
 "uxI" = (
@@ -57424,7 +57437,7 @@ gWW
 vJC
 kht
 kXD
-oVA
+tRt
 qRa
 nRO
 nKA
@@ -57935,10 +57948,10 @@ aQW
 bJX
 kHs
 gWW
-tRt
+vbo
 kXD
 kht
-oVA
+bGz
 qRa
 nRO
 efS
@@ -58192,7 +58205,7 @@ xzG
 mwR
 qto
 gWW
-vbo
+lcV
 kht
 kIn
 gWW

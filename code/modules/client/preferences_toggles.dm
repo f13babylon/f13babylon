@@ -226,7 +226,6 @@ TOGGLE_CHECKBOX(/datum/verbs/menu/Settings/Sound, toggleprayersounds)()
 /datum/verbs/menu/Settings/Sound/toggleprayersounds/Get_checked(client/C)
 	return C.prefs.toggles & SOUND_PRAYERS
 
-
 /datum/verbs/menu/Settings/Sound/verb/stop_client_sounds()
 	set name = "Stop Sounds"
 	set category = "Preferences"
@@ -445,3 +444,25 @@ GLOBAL_LIST_INIT(ghost_orbits, list(GHOST_ORBIT_CIRCLE,GHOST_ORBIT_TRIANGLE,GHOS
 	prefs.save_preferences()
 	to_chat(src, "You will [(prefs.chat_toggles & CHAT_PRAYER) ? "now" : "no longer"] see prayerchat.")
 	SSblackbox.record_feedback("nested tally", "admin_toggle", 1, list("Toggle Prayer Visibility", "[prefs.chat_toggles & CHAT_PRAYER ? "Enabled" : "Disabled"]")) //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+
+/client/proc/togglecommcentermsg()
+	set name = "Show/Hide Communications Center Messages"
+	set category = "Preferences.Admin"
+	set desc = "Toggles seeing communications center messages"
+	if(!holder)
+		return
+	prefs.chat_toggles ^= CHAT_COMM_CENTER
+	prefs.save_preferences()
+	to_chat(src, "You will [(prefs.chat_toggles & CHAT_COMM_CENTER) ? "now" : "no longer"] see communications center messages.")
+	SSblackbox.record_feedback("nested tally", "admin_toggle", 1, list("Toggle Communications Center Visibility", "[prefs.chat_toggles & CHAT_COMM_CENTER ? "Enabled" : "Disabled"]")) //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+
+/client/proc/togglecommcentersound()
+	set name = "Hear/Silence Communications Center Sounds"
+	set category = "Preferences.Admin"
+	set desc = "Toggle hearing a notification when communications center messages are sent"
+	if(!holder)
+		return
+	prefs.toggles ^= SOUND_COMM_CENTER
+	prefs.save_preferences()
+	to_chat(usr, "You will [(prefs.toggles & SOUND_COMM_CENTER) ? "now" : "no longer"] hear a sound when communications center messages are sent.")
+	SSblackbox.record_feedback("nested tally", "admin_toggle", 1, list("Toggle Communications Center Sounds", "[prefs.toggles & SOUND_COMM_CENTER ? "Enabled" : "Disabled"]")) //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!

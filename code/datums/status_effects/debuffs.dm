@@ -698,6 +698,34 @@
 	max_stacks = 14
 	bleed_damage = 40
 
+/datum/status_effect/stacking/saw_bleed/chainsaw
+	id = "chainsawbleed"
+	delay_before_decay = 16
+	bleed_damage = 10 //100 damage/ 10 hits, essentially +10 damage per hit
+
+/datum/status_effect/stacking/saw_bleed/autoaxe
+	id = "autoaxebleed"
+	delay_before_decay = 16
+	bleed_damage = 15 //150 damage/ 10 hits, essentially +15 damage per hit
+
+/datum/status_effect/stacking/saw_bleed/ripper
+	id = "ripperbleed"
+	delay_before_decay = 16
+	overlay_state = "ripper"
+	underlay_state = "ripper"
+	stack_threshold = 5
+	max_stacks = 5
+	bleed_damage = 50 //50 damage/ 5 hits, essentially +10 damage per hit
+
+/datum/status_effect/stacking/saw_bleed/serrated
+	id = "serratedarrowbleed"
+	delay_before_decay = 16
+	stack_threshold = 2
+	max_stacks = 2
+	bleed_damage = 60 //60 damage / 3 hits, +20 on hit. a full bow magazine therefore does 30+20+20 * 3 = 210 damage
+	overlay_state = "serrated"
+	underlay_state = "serrated"
+
 /datum/status_effect/neck_slice
 	id = "neck_slice"
 	status_type = STATUS_EFFECT_UNIQUE

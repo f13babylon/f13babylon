@@ -176,8 +176,9 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/c10mm
 	name = "10mm FMJ bullet"
-	damage = 18
+	damage = 20
 	wound_bonus = 24
+	armour_penetration = 0.05
 
 /obj/item/projectile/bullet/c10mm/simple
 	name = "10mm FMJ bullet"
@@ -387,8 +388,8 @@ Uranium, Contaminated
 /obj/item/projectile/bullet/mm14
 	name = "14mm FMJ bullet"
 	damage = 32
-	wound_bonus = 42
-	bare_wound_bonus = 28
+	wound_bonus = 28
+	bare_wound_bonus = 42
 
 /obj/item/projectile/bullet/mm14/contam
 	name = "14mm contaiminated bullet"
