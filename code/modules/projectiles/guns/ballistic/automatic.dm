@@ -201,7 +201,7 @@
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	w_class = WEIGHT_CLASS_NORMAL
-	weapon_weight = WEAPON_HEAVY //Automatic fire and onehanded use mix poorly.
+	weapon_weight = WEAPON_HEAVY	//Automatic fire and onehanded use mix poorly.
 	slowdown = 0.4
 	fire_delay = 3.75
 	burst_shot_delay = 3
