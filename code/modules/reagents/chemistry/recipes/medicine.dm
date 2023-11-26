@@ -427,18 +427,6 @@
 	results = list(/datum/reagent/medicine/bitterdrink = 30)
 	required_reagents = list(/datum/reagent/consumable/ethanol/salgam = 10 , /datum/reagent/consumable/ethanol/brocbrew = 10 , /datum/reagent/consumable/sunset = 10 , /datum/reagent/consumable/ethanol/yellowpulque = 10)
 
-/datum/chemical_reaction/drinkneutralization
-	name = "Bitter Drink neutralization reaction"
-	id = "drink_neutralization"
-	results = list(/datum/reagent/water = 1)
-	required_reagents = list(/datum/reagent/medicine/bitterdrink = 1, /datum/reagent/medicine/healingpowder = 1)
-
-/datum/chemical_reaction/medxneutralization
-	name = "Med-X neutralization reaction"
-	id = "medx_neutralization"
-	results = list(/datum/reagent/water = 1)
-	required_reagents = list(/datum/reagent/medicine/medx = 1, /datum/reagent/medicine/stimpak/super = 1)
-
 /datum/chemical_reaction/rehab
 	name = "Rehab"
 	id = "rehab"

@@ -387,6 +387,11 @@
 			if(M.reagents.has_reagent(iter_blacklisted_reagent))
 				is_blocked = TRUE
 				break
+		if(M.reagents.has_reagent(/datum/reagent/medicine/bitterdrink))	//Turns Bitter drink into water at a rate of 1u Powder per 3u Bitter drink
+			M.reagents.remove_reagent(/datum/reagent/medicine/bitterdrink, 3)
+			M.reagents.remove_reagent(src, 1)
+			M.reagents.add_reagent(/datum/reagent/water, 3)
+
 	if(!is_blocked)
 		//Extra healing for each bodypart affected by wounds
 		if(affecting_tribal)
