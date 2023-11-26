@@ -492,7 +492,7 @@
 		M.adjustFireLoss(-damage_offset * 0.75, FALSE)	//75% of damage_offset (2.6 / 1.95)
 		M.adjustToxLoss(affecting_tribal ? -6.75 : -5, FALSE)	//6.75, same as super stim base damage_offset (5, same as 75% of super stim base damage_offset)
 		if(M.radiation > 0)
-			M.radiation -= affecting_tribal ? -6.75 : -5	//6.75, same as super stim base damage_offset (5, same as 75% of super stim base damage_offset)
+			M.radiation -= affecting_tribal ? 6.75 : 5	//6.75, same as super stim base damage_offset (5, same as 75% of super stim base damage_offset)
 		M.AdjustStun(-damage_offset * 0.66, FALSE)	//66% of damage_offset (2.3 / 1.7)
 		M.AdjustKnockdown(-damage_offset * 0.66, FALSE)	//66% of damage_offset (2.3 / 1.7)
 		M.adjustStaminaLoss(-damage_offset * 0.66, FALSE)	//66% of damage_offset (2.3 / 1.7)
