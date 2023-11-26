@@ -28,12 +28,15 @@
 	set hidden = TRUE
 	set category = "IC"
 	display_typing_indicator()
-	var/message = input(usr, "", "me") as message|null
+	var/message = stripped_multiline_input_or_reflect(usr, "", "me")
 	// If they don't type anything just drop the message.
-	clear_typing_indicator()		// clear it immediately!
+	clear_typing_indicator()
+	if(GLOB.say_disabled)
+		to_chat(usr, "<span class='danger'>Speech is currently admin-disabled.</span>")
+		return
 	if(!length(message))
 		return
-	return me_verb(message)
+	usr.emote("me",1,message,TRUE)
 
 /mob/verb/me_verb(message as message)
 	set name = "me"
@@ -43,7 +46,7 @@
 	if(GLOB.say_disabled)	//This is here to try to identify lag problems
 		to_chat(usr, "<span class='danger'>Speech is currently admin-disabled.</span>")
 		return
-	
+
 	if(length(message) > MAX_MESSAGE_LEN)
 		to_chat(usr, message)
 		to_chat(usr, "<span class='danger'>^^^----- The preceeding message has been DISCARDED for being over the maximum length of [MAX_MESSAGE_LEN]. It has NOT been sent! -----^^^</span>")
@@ -53,6 +56,39 @@
 	clear_typing_indicator()		// clear it immediately!
 
 	usr.emote("me",1,message,TRUE)
+
+
+/mob/verb/do_typing_indicator()
+	set name = "do_indicator"
+	set hidden = TRUE
+	set category = "IC"
+	display_typing_indicator()
+	var/message = stripped_multiline_input_or_reflect(usr, "", "do")
+
+	message = usr.say_emphasis(message)
+	message += " <span class='holoparasite bold'>([usr])</span>"
+	clear_typing_indicator()
+
+	if(!do_checks(message))
+		return
+
+	for(var/mob/M in view(usr.loc))
+		to_chat(M, message)
+
+/mob/verb/do_verb(message as message)
+	set name = "do"
+	set category = "IC"
+
+	message = trim(copytext_char(sanitize(message), 1, MAX_MESSAGE_LEN))
+	message = usr.say_emphasis(message)
+	message += " <b>([usr])</b>"
+	clear_typing_indicator()
+
+	if(!do_checks(message))
+		return
+
+	for(var/mob/M in view(usr.loc))
+		to_chat(M, message)
 
 /**
  * Ensure that the first word of a sentence gets transformed into lower case
