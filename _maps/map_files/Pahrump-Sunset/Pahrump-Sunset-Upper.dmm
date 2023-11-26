@@ -4252,7 +4252,6 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/effect/mob_spawn/human/skeleton/alive,
 /obj/item/clothing/under/rank/civilian/janitor{
 	pixel_x = 15;
 	pixel_y = 5
@@ -4261,6 +4260,7 @@
 	pixel_x = -8;
 	pixel_y = 15
 	},
+/obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/building/mall)
 "haB" = (
