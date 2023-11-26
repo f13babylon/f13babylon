@@ -472,7 +472,7 @@
 			if(M.reagents.has_reagent(iter_blacklisted_reagent))
 				is_blocked = TRUE
 				break
-         if(M.reagents.has_reagent(/datum/reagent/medicine/bitterdrink))	//Turns Bitter drink into water at a rate of 1u Poultice per 3u Bitter drink
+		if(M.reagents.has_reagent(/datum/reagent/medicine/bitterdrink))	//Turns Bitter drink into water at a rate of 1u Poultice per 3u Bitter drink
 			M.reagents.remove_reagent(/datum/reagent/medicine/bitterdrink, 3)
 			M.reagents.remove_reagent(src, 1)
 			M.reagents.add_reagent(/datum/reagent/water, 3)
