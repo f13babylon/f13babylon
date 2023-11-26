@@ -6345,17 +6345,6 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/tunnel)
-"dNs" = (
-/obj/structure/stairs/north{
-	dir = 4
-	},
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/open/floor/f13{
-	icon_state = "floordirtysolid"
-	},
-/area/f13/brotherhood)
 "dNM" = (
 /obj/structure/railing{
 	dir = 6
@@ -7122,9 +7111,6 @@
 /area/f13/tunnel)
 "ffG" = (
 /obj/item/circuitboard/machine/ore_redemption,
-/obj/machinery/light/small{
-	dir = 1
-	},
 /obj/structure/frame/machine,
 /turf/open/floor/f13{
 	color = "#818181";
@@ -13586,14 +13572,6 @@
 /obj/structure/table/wood,
 /turf/open/floor/f13/wood,
 /area/f13/followers)
-"rMI" = (
-/obj/structure/ore_box,
-/obj/machinery/light/small,
-/turf/open/floor/f13{
-	color = "#818181";
-	icon_state = "floorrustysolid"
-	},
-/area/f13/brotherhood)
 "rNn" = (
 /obj/machinery/smartfridge/bottlerack,
 /obj/structure/railing/wood{
@@ -14756,9 +14734,6 @@
 /obj/item/construction/rcd,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small{
-	dir = 1
-	},
 /turf/open/floor/f13,
 /area/f13/brotherhood)
 "tWi" = (
@@ -15509,7 +15484,6 @@
 /obj/structure/stairs/north{
 	dir = 4
 	},
-/obj/machinery/light/small,
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
@@ -70741,7 +70715,7 @@ frP
 mst
 cvx
 rOj
-omE
+qfa
 frP
 kKT
 xjH
@@ -71000,7 +70974,7 @@ xVA
 jNV
 qiR
 frP
-dNs
+vwE
 vwE
 frP
 aae
@@ -71769,7 +71743,7 @@ frP
 frP
 mpp
 qfa
-omE
+qfa
 oVq
 aae
 aae
@@ -72538,7 +72512,7 @@ dvB
 cOG
 tWa
 frP
-mpp
+sAM
 sAM
 saP
 oVq
@@ -73826,7 +73800,7 @@ frP
 ffG
 gdZ
 irV
-rMI
+irV
 frP
 aae
 aae

@@ -20889,8 +20889,18 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/building/mall)
 "bKB" = (
-/turf/closed/mineral/random/low_chance,
-/area/f13/brotherhood/reactor)
+/obj/effect/decal/cleanable/dirt,
+/obj/item/toy/plush/nukeplushie{
+	desc = "A stuffed toy that resembles a Chinese spy/ The tag claims operatives to be purely fictitious and not stealing your armory.";
+	name = "Knight-Captain Aryom";
+	pixel_x = 9
+	},
+/obj/machinery/light/small,
+/obj/structure/rack,
+/turf/open/floor/f13{
+	icon_state = "reddirtyfull"
+	},
+/area/f13/brotherhood/armory)
 "bKH" = (
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/outside/desert,
@@ -22537,8 +22547,15 @@
 	},
 /area/f13/brotherhood)
 "cmn" = (
-/turf/closed/wall/r_wall/f13/vault,
-/area/f13/brotherhood/armory)
+/obj/structure/table,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/stack/sheet/plastic/twenty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/turf/open/floor/plasteel/darkpurple,
+/area/f13/brotherhood/rnd)
 "cmo" = (
 /mob/living/simple_animal/cow/brahmin,
 /turf/open/indestructible/ground/outside/dirt{
@@ -24769,7 +24786,9 @@
 /area/f13/building/museum)
 "dfm" = (
 /obj/structure/simple_door/bunker/glass,
-/turf/open/floor/plasteel/f13/vault_floor/neutral/white,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "whitedirtysolid"
+	},
 /area/f13/brotherhood/medical)
 "dfu" = (
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -27608,9 +27627,16 @@
 	},
 /area/f13/wasteland/east)
 "eHI" = (
-/obj/effect/decal/remains/human,
-/turf/open/floor/wood/wood_wide,
-/area/f13/brotherhood)
+/obj/structure/lattice{
+	layer = 3
+	},
+/obj/structure/fluff/railing{
+	dir = 1
+	},
+/turf/open/floor/bronze{
+	name = "floor"
+	},
+/area/f13/brotherhood/rnd)
 "eHJ" = (
 /turf/open/indestructible/ground/outside/ruins{
 	dir = 6;
@@ -32438,10 +32464,6 @@
 /obj/item/clothing/head/bandana,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"hnR" = (
-/obj/machinery/vending/tool,
-/turf/open/floor/wood/wood_wide,
-/area/f13/brotherhood/leisure)
 "hon" = (
 /obj/structure/mirror{
 	pixel_y = 32
@@ -35093,14 +35115,11 @@
 	},
 /area/f13/tunnel/southeast)
 "iOa" = (
-/obj/structure/barricade/sandbags,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/light{
-	dir = 4;
-	light_color = "#c1caff"
+/obj/machinery/door/airlock/hatch{
+	req_access_txt = "120"
 	},
-/turf/open/floor/wood/wood_wide,
-/area/f13/brotherhood)
+/turf/open/floor/plasteel/dark,
+/area/f13/brotherhood/medical)
 "iOg" = (
 /turf/open/indestructible/ground/outside/ruins{
 	icon_state = "rubblepillar"
@@ -35150,7 +35169,16 @@
 	},
 /area/f13/caves)
 "iPk" = (
-/obj/machinery/vending/robotics,
+/obj/structure/table/reinforced{
+	alpha = 0;
+	desc = "Secure bolting to support the heavy weight of power armor.";
+	name = "frame support bolts"
+	},
+/obj/structure/kitchenspike_frame{
+	anchored = 1;
+	desc = "A robust, thick metal frame used to hold power armor upright during maintenance.";
+	name = "Trader power armor frame"
+	},
 /turf/open/floor/wood/wood_wide,
 /area/f13/brotherhood/leisure)
 "iPl" = (
@@ -35765,7 +35793,9 @@
 /obj/structure/window/fulltile/house{
 	icon_state = "storewindowright"
 	},
-/turf/open/floor/plasteel/darkpurple,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "whitedirtysolid"
+	},
 /area/f13/brotherhood/rnd)
 "jcF" = (
 /obj/machinery/light/small,
@@ -37209,11 +37239,9 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/west)
 "jTe" = (
-/obj/machinery/door/airlock/hatch{
-	req_access_txt = "120"
-	},
-/turf/open/floor/plasteel/dark,
-/area/f13/brotherhood/armory)
+/obj/effect/turf_decal/weather/dirt,
+/turf/closed/wall/f13/store,
+/area/f13/brotherhood/rnd)
 "jTf" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/food/drinks/bottle/tequila{
@@ -43003,6 +43031,10 @@
 /obj/structure/lattice/catwalk,
 /turf/open/floor/plating,
 /area/f13/caves)
+"mUK" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/wall/f13/store,
+/area/f13/brotherhood)
 "mUN" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 8;
@@ -43216,20 +43248,14 @@
 	critical_machine = 1;
 	flicker_chance = 0
 	},
-/turf/open/floor/plasteel/darkpurple,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "whitedirtysolid"
+	},
 /area/f13/brotherhood/rnd)
 "nbD" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/toy/plush/nukeplushie{
-	desc = "A stuffed toy that resembles a Chinese spy/ The tag claims operatives to be purely fictitious and not stealing your armory.";
-	name = "Knight-Captain Aryom";
-	pixel_x = 9
-	},
-/obj/machinery/light/small,
-/turf/open/floor/f13{
-	icon_state = "reddirtyfull"
-	},
-/area/f13/brotherhood/armory)
+/obj/effect/decal/remains/human,
+/turf/open/floor/wood/wood_wide,
+/area/f13/brotherhood)
 "nbT" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 8;
@@ -45337,11 +45363,7 @@
 /turf/closed/wall/r_wall/rust,
 /area/f13/building)
 "oje" = (
-/obj/structure/chair/bench{
-	dir = 4;
-	pixel_y = 1;
-	pixel_x = -7
-	},
+/obj/machinery/vending/snack,
 /turf/open/floor/carpet/blue,
 /area/f13/brotherhood/leisure)
 "ojo" = (
@@ -47564,19 +47586,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
-/obj/item/encryptionkey/headset_bos,
-/obj/item/encryptionkey/headset_bos,
-/obj/item/encryptionkey/headset_bos,
-/obj/item/encryptionkey/headset_bos,
-/obj/item/encryptionkey/headset_bos,
-/obj/item/encryptionkey/headset_bos,
-/obj/item/encryptionkey/headset_bos,
-/obj/item/encryptionkey/headset_bos,
-/obj/item/encryptionkey/headset_bos,
-/obj/item/encryptionkey/headset_bos,
-/obj/item/encryptionkey/headset_bos,
-/obj/item/encryptionkey/headset_bos,
-/obj/item/mmi/posibrain,
 /turf/open/floor/plasteel/darkpurple,
 /area/f13/brotherhood/rnd)
 "prH" = (
@@ -50023,12 +50032,16 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/building)
 "qJb" = (
-/obj/machinery/vending/snack,
 /obj/structure/curtain{
 	color = "#845f58";
 	pixel_x = -31
 	},
 /obj/machinery/light/floor,
+/obj/structure/chair/bench{
+	dir = 4;
+	pixel_y = 1;
+	pixel_x = -7
+	},
 /turf/open/floor/carpet/blue,
 /area/f13/brotherhood/leisure)
 "qJm" = (
@@ -51281,9 +51294,6 @@
 "rnR" = (
 /obj/structure/barricade/sandbags,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/light{
-	dir = 8
-	},
 /turf/open/floor/wood/wood_wide,
 /area/f13/brotherhood)
 "rob" = (
@@ -60100,7 +60110,9 @@
 /obj/structure/window/fulltile/house{
 	icon_state = "storewindowright"
 	},
-/turf/open/indestructible/ground/outside/desert,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "whitedirtysolid"
+	},
 /area/f13/brotherhood/medical)
 "waH" = (
 /obj/structure/table/wood,
@@ -62661,17 +62673,6 @@
 /obj/machinery/light/floor,
 /turf/open/floor/wood/wood_wide,
 /area/f13/brotherhood/leisure)
-"xqP" = (
-/obj/structure/lattice{
-	layer = 3
-	},
-/obj/structure/fluff/railing{
-	dir = 1
-	},
-/turf/open/floor/bronze{
-	name = "floor"
-	},
-/area/f13/brotherhood/rnd)
 "xrH" = (
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 10
@@ -114968,10 +114969,10 @@ aae
 aae
 aae
 aae
-aKD
-aKD
-aKD
-aKD
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -115217,21 +115218,21 @@ lNa
 lNa
 lNa
 lNa
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
 aKD
 aKD
 aKD
 aKD
-aKD
-aKD
-aKD
-aKD
-aKD
-cBt
-cBt
-aKD
-aKD
-aKD
-aKD
+aae
+aae
+aae
 aaa
 "}
 (199,1,1) = {"
@@ -115475,19 +115476,19 @@ vLW
 bJH
 lNa
 aKD
-imH
-pqq
-eaA
-qvA
-riw
-vgq
-rQH
-myp
-bWD
-bWD
-hdm
-uLR
-fTP
+aKD
+aKD
+aKD
+aKD
+aKD
+aKD
+aKD
+aKD
+cBt
+cBt
+aKD
+aKD
+aKD
 aKD
 aaa
 "}
@@ -115732,19 +115733,19 @@ aRR
 tbS
 nHl
 aKD
-hZu
-gJv
-gJv
-gJv
-gJv
-gJv
-gJv
-kSB
-dUv
-dUv
+imH
+pqq
+eaA
+qvA
+riw
+vgq
+rQH
+myp
+bWD
+bWD
 hdm
-hZu
-low
+uLR
+fTP
 aKD
 aaa
 "}
@@ -115989,19 +115990,19 @@ jQo
 tQk
 rUU
 aKD
-wgN
-pKR
-pKR
-lpt
-aRP
-hCh
-kKa
-nmE
+hZu
+gJv
+gJv
+gJv
+gJv
+gJv
+gJv
+kSB
 dUv
 dUv
 hdm
-qrj
-vuY
+hZu
+low
 aKD
 aaa
 "}
@@ -116246,19 +116247,19 @@ dQN
 hzO
 dpu
 aKD
-hZu
-gJv
-gJv
-gJv
+wgN
+pKR
+pKR
+lpt
+aRP
+hCh
 kKa
-kAd
-nQf
-dxV
-ggs
+nmE
+dUv
+dUv
 hdm
-iga
-hZu
-qlf
+qrj
+vuY
 aKD
 aaa
 "}
@@ -116503,19 +116504,19 @@ pal
 qdo
 atS
 aKD
-wgN
-pKR
-piX
-gFv
-iGv
-iGv
+hZu
+gJv
+gJv
+gJv
 kKa
-kxn
-oHB
-uAV
-pQN
-oKm
-fnw
+kAd
+nQf
+dxV
+ggs
+hdm
+iga
+hZu
+qlf
 aKD
 aaa
 "}
@@ -116758,21 +116759,21 @@ rcg
 pal
 pal
 bnx
-jVJ
-qRf
-gJv
-iMV
-iMV
-iMV
-kay
-kay
-gJv
-kay
-gJv
-oAh
+bQl
+aKD
+wgN
+pKR
+piX
+gFv
+iGv
+iGv
+kKa
+kxn
+oHB
+uAV
 pQN
-iMV
-nbD
+oKm
+fnw
 aKD
 aaa
 "}
@@ -117015,21 +117016,21 @@ rcg
 pal
 pal
 tnP
-bQl
-aKD
-xrH
-cwm
-xcZ
-rbR
-tyY
-hYh
+jVJ
+qRf
 gJv
-hqU
-uFy
-bRl
-aKD
-gVZ
-kaQ
+iMV
+iMV
+iMV
+kay
+kay
+gJv
+kay
+gJv
+oAh
+pQN
+iMV
+bKB
 aKD
 aaa
 "}
@@ -117274,19 +117275,19 @@ pal
 tnP
 bQl
 aKD
+xrH
+cwm
+xcZ
+rbR
+tyY
+hYh
+gJv
+hqU
+uFy
+bRl
 aKD
-pQN
-aKD
-aKD
-aKD
-aKD
-jTe
-aKD
-cmn
-aKD
-aKD
-aKD
-aKD
+gVZ
+kaQ
 aKD
 aaa
 "}
@@ -117530,21 +117531,21 @@ xGd
 xGd
 tnP
 bQl
-pal
-pal
-pal
+juJ
+juJ
+mUK
 rOg
 rOg
 rOg
 rOg
-jjV
+iOa
 rOg
+uXw
 gEU
-bKB
-bKB
-bKB
-bKB
-bKB
+gEU
+gEU
+gEU
+gEU
 aaa
 "}
 (208,1,1) = {"
@@ -118288,7 +118289,7 @@ lwz
 wHS
 uDT
 cPi
-hnR
+iPk
 jqa
 rcg
 iOv
@@ -118796,7 +118797,7 @@ iKh
 ycy
 jqa
 eKD
-eHI
+nbD
 jqa
 jqa
 jqa
@@ -119825,7 +119826,7 @@ eKD
 fOl
 jkW
 vNg
-iOa
+biN
 ycy
 nsK
 lNa
@@ -121654,7 +121655,7 @@ ulv
 tVc
 jxt
 mQN
-xqP
+eHI
 jxJ
 sAP
 aaa
@@ -122167,7 +122168,7 @@ vmr
 jNN
 sGg
 kpt
-aos
+cmn
 ttl
 pRC
 sAP
@@ -122931,7 +122932,7 @@ jVJ
 gch
 iEy
 hFO
-eeI
+jTe
 jcp
 erW
 lPA
