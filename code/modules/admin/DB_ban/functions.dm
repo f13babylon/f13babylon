@@ -160,7 +160,7 @@
 	message_admins("[key_name_admin(usr)] [base_message]")
 	var/datum/admin_help/AH = admin_ticket_log(ckey, "[key_name(usr)] [base_message]")
 	SSdiscord.send_to_ban_channel(
-		"`[key_name_admin(usr)]` has added a `[bantype_str]` for `[bankey]` [(job)?"(`[job]`)":""] [(duration > 0)?"(`[duration]` minutes)":""] with the reason: `[reason]` to the ban database."
+		"`[key_name(usr)]` has added a `[bantype_str]` for `[bankey]` [(job)?"(`[job]`)":""] [(duration > 0)?"(`[duration]` minutes)":""] with the reason: `[reason]` to the ban database."
 	)
 
 	if(kickbannedckey)
