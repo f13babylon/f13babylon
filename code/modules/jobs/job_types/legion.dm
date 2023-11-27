@@ -1152,7 +1152,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	jobtype = /datum/job/CaesarsLegion/auxilia
 	id = /obj/item/card/id/dogtag/legauxilia
 	uniform = /obj/item/clothing/under/f13/legauxiliaf
-	id = /obj/item/card/id/dogtag/legauxilia
 	gloves = null
 	belt = null
 	r_pocket = /obj/item/flashlight/lantern
