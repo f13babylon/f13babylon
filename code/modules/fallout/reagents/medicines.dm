@@ -9,19 +9,17 @@
 	taste_description = "grossness"
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	overdose_threshold = 31
-	addiction_threshold = 25
 	value = REAGENT_VALUE_RARE
 	ghoulfriendly = TRUE
 	var/list/reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder, /datum/reagent/medicine/stimpak/imitation)
 	var/affecting_intolerant_mob = FALSE	//If it is affecting a mob with TRAIT_STIM_INTOLERANCE
 	var/damage_offset = 3	//Value to offset damage by
-	var/inhale_toxloss_factor = 3.5	//Value to adjust toxloss by when inhaled/ingested
 	var/clot_rate = 0.35	//35% as effective as Hydra at clotting bleeding wounds
 
 /datum/reagent/medicine/stimpak/reaction_mob(mob/living/carbon/M, method, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
 		if(method in list(INGEST, VAPOR))
-			M.adjustToxLoss(inhale_toxloss_factor * reac_volume * REAGENTS_EFFECT_MULTIPLIER)
+			M.adjustToxLoss(damage_offset * 0.5 * reac_volume * REAGENTS_EFFECT_MULTIPLIER)
 			if(show_message)
 				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
 	..()
@@ -75,7 +73,6 @@
 		//Actual healing part starts here
 		M.adjustBruteLoss(-damage_offset * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//100% of damage_offset (3)
 		M.adjustFireLoss(-damage_offset * 0.75 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//75% of damage_offset (2.25)
-		M.adjustOxyLoss(-damage_offset * 0.66 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//66% of damage_offset (2)
 		M.AdjustStun(-damage_offset * 0.66 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//66% of damage_offset (2)
 		M.AdjustKnockdown(-damage_offset * 0.66 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//66% of damage_offset (2)
 		M.adjustStaminaLoss(-damage_offset * 0.66 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//66% of damage_offset (2)
@@ -86,7 +83,7 @@
 	if(affecting_intolerant_mob)
 		if(M.jitteriness + 15 <= 300)
 			M.jitteriness += 15
-		if(M.disgust + 2.5 <= DISGUST_LEVEL_DISGUSTED)
+		if(M.disgust + 2.5 <= DISGUST_LEVEL_DISGUSTED + 10)
 			M.disgust += 2.5
 		if(M.dizziness + 0.75 <= 15)
 			M.dizziness += 0.75
@@ -98,10 +95,9 @@
 
 /datum/reagent/medicine/stimpak/overdose_process(mob/living/carbon/M)
 	M.adjustToxLoss(damage_offset * 0.5 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//50% of damage_offset (1.5)
-	M.adjustOxyLoss((damage_offset * 0.75 + damage_offset * 0.66) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//75% of damage_offset + base oxyloss offset (2.25)
 	if(M.jitteriness + 15 <= 300)
 		M.jitteriness += 15
-	if(M.disgust + 2.5 <= DISGUST_LEVEL_DISGUSTED)
+	if(M.disgust + 2.5 <= DISGUST_LEVEL_DISGUSTED + 10)
 		M.disgust += 2.5
 	if(M.dizziness + 0.75 <= 15)
 		M.dizziness += 0.75
@@ -121,7 +117,6 @@
 	value = REAGENT_VALUE_UNCOMMON
 	reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder, /datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
 	damage_offset = 2.25	//How much damage will be offset in one tick
-	inhale_toxloss_factor = 2.625	//How much toxloss is multiplied by the volume of the chemical if ingested/inhaled
 	clot_rate = 0.26	//26% as effective as Hydra at clotting bleeding wounds
 
 // ---------------------------
@@ -133,7 +128,6 @@
 	value = REAGENT_VALUE_VERY_RARE
 	reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder, /datum/reagent/medicine/stimpak/superimitation, /datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
 	damage_offset = 6.75	//How much damage will be offset in one tick
-	inhale_toxloss_factor = 5.25	//How much toxloss is multiplied by the volume of the chemical if ingested/inhaled
 	clot_rate = 0.65	//65% as effective as Hydra at clotting bleeding wounds
 
 // ---------------------------
@@ -146,7 +140,6 @@
 	reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder, /datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
 	value = REAGENT_VALUE_RARE
 	damage_offset = 5	//How much damage will be offset in one tick
-	inhale_toxloss_factor = 4	//How much toxloss is multiplied by the volume of the chemical if ingested/inhaled
 	clot_rate = 0.49	//49% as effective as Hydra at clotting bleeding wounds
 
 // ---------------------------
@@ -277,8 +270,7 @@
 /datum/reagent/medicine/bitterdrink/reaction_mob(mob/living/M, method, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
 		if(method in list(INGEST, VAPOR, INJECT))
-			M.adjustToxLoss(2 * reac_volume * REAGENTS_EFFECT_MULTIPLIER)
-			M.adjustOxyLoss(2 * reac_volume * REAGENTS_EFFECT_MULTIPLIER)
+			M.adjustToxLoss(5.4 * 0.5 * reac_volume * REAGENTS_EFFECT_MULTIPLIER)
 			if(show_message)
 				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
 	..()
@@ -312,8 +304,6 @@
 		//Actual healing part starts here
 		M.adjustBruteLoss(-damage_offset, FALSE)	//100% of damage_offset (5.4 / 4)
 		M.adjustFireLoss(-damage_offset * 0.75, FALSE)	//75% of damage_offset (4 / 3)
-		M.adjustToxLoss(-damage_offset * 0.33, FALSE)	//33% of damage_offset (1.8 / 1.35)
-		M.adjustOxyLoss(-damage_offset * 0.33, FALSE)	//33% of damage_offset (1.8 / 1.35)
 		M.AdjustStun(-damage_offset * 0.66, FALSE)	//66% of damage_offset (3.6 / 2.64)
 		M.AdjustKnockdown(-damage_offset * 0.66, FALSE)	//66% of damage_offset (3.6 / 2.64)
 		M.adjustStaminaLoss(-damage_offset * 0.66, FALSE)	//66% of damage_offset (3.6 / 2.64)
@@ -323,7 +313,7 @@
 	if(!affecting_tribal)
 		if(M.jitteriness + 15 <= 300)
 			M.jitteriness += 15
-		if(M.disgust + 2.5 <= DISGUST_LEVEL_DISGUSTED)	//"When you drink it, down it all in one shot, or your stomach's not going to want to keep going after the second drink."
+		if(M.disgust + 2.5 <= DISGUST_LEVEL_DISGUSTED + 10)	//"When you drink it, down it all in one shot, or your stomach's not going to want to keep going after the second drink."
 			M.disgust += 2.5
 		if(M.dizziness + 0.75 <= 15)
 			M.dizziness += 0.75
@@ -333,11 +323,10 @@
 	..()
 
 /datum/reagent/medicine/bitterdrink/overdose_process(mob/living/carbon/M)
-	M.adjustToxLoss((5.4 * 0.33  + 5.4 * 0.33) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//100% of toxloss offset + base toxloss offset (3.6)
-	M.adjustOxyLoss((5.4 * 0.33 * 1.5 + 5.4 * 0.33) * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//150% of oxyloss offset + base oxyloss offset (4.46)
+	M.adjustToxLoss(5.4 * 0.5 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//50% of damage_offset (2.7)
 	if(M.jitteriness + 15 <= 300)
 		M.jitteriness += 15
-	if(M.disgust + 2.5 <= DISGUST_LEVEL_DISGUSTED)	//"When you drink it, down it all in one shot, or your stomach's not going to want to keep going after the second drink."
+	if(M.disgust + 2.5 <= DISGUST_LEVEL_DISGUSTED + 10)	//"When you drink it, down it all in one shot, or your stomach's not going to want to keep going after the second drink."
 		M.disgust += 2.5
 	if(M.dizziness + 0.75 <= 15)
 		M.dizziness += 0.75
@@ -352,7 +341,7 @@
 
 /datum/reagent/medicine/healingpowder
 	name = "Healing powder"
-	description = "A healing powder derived from a mix of ground broc flowers and xander roots, commonly used by tribals and Legionaries. Applied on skin, it has an additional oxygenating effect."
+	description = "A healing powder derived from broc flowers and xander roots. Applied on skin, it additionally alleviates poisoning and purges Bitter drink from the system."
 	reagent_state = SOLID
 	color = "#b88b5d"
 	taste_description = "weak herbal bitterness"
@@ -367,7 +356,7 @@
 /datum/reagent/medicine/healingpowder/reaction_mob(mob/living/M, method, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
 		if(method in list(INGEST, VAPOR, INJECT))
-			M.adjustToxLoss(4 * reac_volume * REAGENTS_EFFECT_MULTIPLIER)
+			M.adjustToxLoss(2.25 * reac_volume * REAGENTS_EFFECT_MULTIPLIER)
 			if(show_message)
 				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
 	..()
@@ -387,7 +376,10 @@
 			if(M.reagents.has_reagent(iter_blacklisted_reagent))
 				is_blocked = TRUE
 				break
-
+		if(M.reagents.has_reagent(/datum/reagent/medicine/bitterdrink))	//Turns Bitter drink into water at a rate of 1u Powder per 3u Bitter drink
+			M.reagents.remove_reagent(/datum/reagent/medicine/bitterdrink, 3)
+			M.reagents.remove_reagent(src, 1)
+			M.reagents.add_reagent(/datum/reagent/water, 3)
 	if(!is_blocked)
 		//Extra healing for each bodypart affected by wounds
 		if(affecting_tribal)
@@ -398,11 +390,10 @@
 						M.adjustBruteLoss(-added_damage_offset, FALSE)
 						M.adjustFireLoss(-added_damage_offset * 0.75, FALSE)	//75% of added_damage_offset
 						added_damage_offset *= 0.5	//Reduce the added_damage_offset by half for each wounded bodypart to keep the offset from getting too ridiculous
-
 		//Actual healing part starts here
 		M.adjustBruteLoss(-damage_offset, FALSE)	//100% of damage_offset (2.25 / 1.7)
 		M.adjustFireLoss(-damage_offset * 0.75, FALSE)	//75% of damage_offset (1.7 / 1.3)
-		M.adjustOxyLoss(affecting_tribal ? -6.75 : -5, FALSE)	//6.75, same as super stim base damage_offset (5, same as 75% of super stim base damage_offset)
+		M.adjustToxLoss(affecting_tribal ? -6.75 : -5, FALSE)	//6.75, same as super stim base damage_offset (5, same as 75% of super stim base damage_offset)
 		M.AdjustStun(-damage_offset * 0.66, FALSE)	//66% of damage_offset (1.5 / 1.1)
 		M.AdjustKnockdown(-damage_offset * 0.66, FALSE)	//66% of damage_offset (1.5 / 1.1)
 		M.adjustStaminaLoss(-damage_offset * 0.66, FALSE)	//66% of damage_offset (1.5 / 1.1)
@@ -420,7 +411,7 @@
 	..()
 
 /datum/reagent/medicine/healingpowder/overdose_process(mob/living/carbon/M)
-	M.adjustToxLoss(6.75 * 0.3 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//30% of oxyloss offset (2)
+	M.adjustOxyLoss(6.75 * 0.5 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//50% of toxloss offset (3.4)
 	if(M.jitteriness + 6 <= 300)
 		M.jitteriness += 6
 	if(M.dizziness + 0.3 <= 15)
@@ -437,7 +428,7 @@
 
 /datum/reagent/medicine/healingpoultice
 	name = "Healing poultice"
-	description = "A healing poultice derived from an assortment of medicinal plants, commonly used by tribals and Legionaries. Applied on skin, it has as additional antitoxin and radiation-treating effect, purging Bitter drink from the body."
+	description = "A healing poultice derived from an assortment of medicinal plants. Applied on skin, it has an additional oxygenating effect."
 	reagent_state = SOLID
 	color = "#9f9350"
 	taste_description = "herbal bitterness"
@@ -452,7 +443,7 @@
 /datum/reagent/medicine/healingpoultice/reaction_mob(mob/living/M, method, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
 		if(method in list(INGEST, VAPOR, INJECT))
-			M.adjustOxyLoss(4 * reac_volume * REAGENTS_EFFECT_MULTIPLIER)
+			M.adjustOxyLoss(3.5 * reac_volume * REAGENTS_EFFECT_MULTIPLIER)
 			if(show_message)
 				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
 	..()
@@ -472,10 +463,6 @@
 			if(M.reagents.has_reagent(iter_blacklisted_reagent))
 				is_blocked = TRUE
 				break
-		if(M.reagents.has_reagent(/datum/reagent/medicine/bitterdrink))	//Turns Bitter drink into water at a rate of 1u Poultice per 3u Bitter drink
-			M.reagents.remove_reagent(/datum/reagent/medicine/bitterdrink, 3)
-			M.reagents.remove_reagent(src, 1)
-			M.reagents.add_reagent(/datum/reagent/water, 3)
 	if(!is_blocked)
 		//Extra healing for each bodypart affected by wounds
 		if(affecting_tribal)
@@ -490,9 +477,7 @@
 		//Actual healing part starts here
 		M.adjustBruteLoss(-damage_offset, FALSE)	//100% of damage_offset (3.5 / 2.6)
 		M.adjustFireLoss(-damage_offset * 0.75, FALSE)	//75% of damage_offset (2.6 / 1.95)
-		M.adjustToxLoss(affecting_tribal ? -6.75 : -5, FALSE)	//6.75, same as super stim base damage_offset (5, same as 75% of super stim base damage_offset)
-		if(M.radiation > 0)
-			M.radiation -= affecting_tribal ? 6.75 : 5	//6.75, same as super stim base damage_offset (5, same as 75% of super stim base damage_offset)
+		M.adjustOxyLoss(affecting_tribal ? -6.75 : -5, FALSE)	//6.75, same as super stim base damage_offset (5, same as 75% of super stim base damage_offset)
 		M.AdjustStun(-damage_offset * 0.66, FALSE)	//66% of damage_offset (2.3 / 1.7)
 		M.AdjustKnockdown(-damage_offset * 0.66, FALSE)	//66% of damage_offset (2.3 / 1.7)
 		M.adjustStaminaLoss(-damage_offset * 0.66, FALSE)	//66% of damage_offset (2.3 / 1.7)
@@ -510,7 +495,7 @@
 	..()
 
 /datum/reagent/medicine/healingpoultice/overdose_process(mob/living/carbon/M)
-	M.adjustOxyLoss(6.75 * 0.45 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//45% of toxloss offset (3)
+	M.adjustToxLoss(6.75 * 0.3 * REAGENTS_EFFECT_MULTIPLIER, FALSE)	//30% of oxyloss offset (2)
 	if(M.jitteriness + 10 <= 300)
 		M.jitteriness += 10
 	if(M.dizziness + 0.5 <= 15)
@@ -545,8 +530,7 @@
 
 /datum/reagent/medicine/radaway
 	name = "Radaway"
-
-	description = "A potent anti-toxin drug."
+	description = "A potent anti-raditaion drug."
 	reagent_state = LIQUID
 	color = "#ff7200"
 	metabolization_rate = 2 * REAGENTS_METABOLISM
@@ -637,7 +621,7 @@
 	if(affecting_straight_edge_mob)
 		if(M.jitteriness + 15 <= 300)
 			M.jitteriness += 15
-		if(M.disgust + 2.5 <= DISGUST_LEVEL_DISGUSTED)
+		if(M.disgust + 2.5 <= DISGUST_LEVEL_DISGUSTED + 10)
 			M.disgust += 2.5
 		if(M.dizziness + 0.75 <= 15)
 			M.dizziness += 0.75

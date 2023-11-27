@@ -40,21 +40,6 @@
 		M.adjust_disgust(10)
 	return ..()
 
-/datum/reagent/consumable/ethanol/pungajuice
-	name = "punga juice"
-	description = "The fermented juice of the punga fruit, used to treat radiation sickness."
-	color = "#1B2E24"
-	boozepwr = 80
-	taste_description = "acidic slime"
-	glass_icon_state = "Space_mountain_wind_glass"
-	glass_name = "glass of punga juice"
-	glass_desc = "A glass of punga juice, used to treat radiation sickness."
-
-/datum/reagent/consumable/ethanol/pungajuice/on_mob_life(mob/living/carbon/M)
-	M.radiation = max(M.radiation-14,0)
-	//M.hallucination += 5
-	return ..()
-
 /datum/reagent/consumable/ethanol/purplecider
 	name = "Purple Cider"
 	description = "Refined and pressurised mutfruit cider."

@@ -69,7 +69,7 @@
 
 /obj/item/reagent_containers/pill/patch/healingpowder
 	name = "healing powder"
-	desc = "A bag which contains a coarse brown powder derived from a mix of ground broc flowers and xander roots. Applied on skin, it has an additional oxygenating effect."
+	desc = "A bag which contains a coarse brown powder derived from broc flowers and xander roots. Applied on skin, it additionally alleviates poisoning and purges Bitter drink from the system."
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "patch_healingpowder"
 	list_reagents = list(/datum/reagent/medicine/healingpowder = 10)
@@ -80,7 +80,7 @@
 
 /obj/item/reagent_containers/pill/patch/healingpoultice
 	name = "healing poultice"
-	desc = "A bag which contains an olive-colored poultice derived from an assortment of medicinal plants. Applied on skin, it has as additional antitoxin and radiation-treating effect, purging Bitter drink from the body."
+	desc = "A bag which contains an olive-colored poultice derived from an assortment of medicinal plants. Applied on skin, it has an additional oxygenating effect."
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	list_reagents = list(/datum/reagent/medicine/healingpoultice = 10)
 	icon_state = "patch_healingpoultice"

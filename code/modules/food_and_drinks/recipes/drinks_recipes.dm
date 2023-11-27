@@ -1009,7 +1009,7 @@
 	name = "Nuka Punch"
 	id = "nukapunch"
 	results = list(/datum/reagent/consumable/ethanol/nukapunch = 3)
-	required_reagents = list(/datum/reagent/consumable/ethanol/nukadark = 1, /datum/reagent/consumable/ethanol/deathroach = 1, /datum/reagent/consumable/ethanol/pungajuice = 1)
+	required_reagents = list(/datum/reagent/consumable/ethanol/nukadark = 1, /datum/reagent/consumable/ethanol/deathroach = 1, /datum/reagent/consumable/pungajuice = 1)
 
 /datum/chemical_reaction/nukasunrise
 	name = "Nuka Sunrise"

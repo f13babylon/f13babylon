@@ -42,7 +42,7 @@
 	if(affecting_straight_edge_mob)
 		if(M.jitteriness + 15 <= 300)
 			M.jitteriness += 15
-		if(M.disgust + 2.5 <= DISGUST_LEVEL_DISGUSTED)
+		if(M.disgust + 2.5 <= DISGUST_LEVEL_DISGUSTED + 10)
 			M.disgust += 2.5
 		if(M.dizziness + 0.75 <= 15)
 			M.dizziness += 0.75
@@ -145,7 +145,7 @@
 	if(affecting_straight_edge_mob)
 		if(M.jitteriness + 15 <= 300)
 			M.jitteriness += 15
-		if(M.disgust + 2.5 <= DISGUST_LEVEL_DISGUSTED)
+		if(M.disgust + 2.5 <= DISGUST_LEVEL_DISGUSTED + 10)
 			M.disgust += 2.5
 		if(M.dizziness + 0.75 <= 15)
 			M.dizziness += 0.75
@@ -253,7 +253,7 @@
 	if(affecting_straight_edge_mob)
 		if(M.jitteriness + 15 <= 300)
 			M.jitteriness += 15
-		if(M.disgust + 2.5 <= DISGUST_LEVEL_DISGUSTED)
+		if(M.disgust + 2.5 <= DISGUST_LEVEL_DISGUSTED + 10)
 			M.disgust += 2.5
 		if(M.dizziness + 0.75 <= 15)
 			M.dizziness += 0.75
@@ -367,7 +367,7 @@
 	if(affecting_straight_edge_mob)
 		if(M.jitteriness + 15 <= 300)
 			M.jitteriness += 15
-		if(M.disgust + 2.5 <= DISGUST_LEVEL_DISGUSTED)
+		if(M.disgust + 2.5 <= DISGUST_LEVEL_DISGUSTED + 10)
 			M.disgust += 2.5
 		if(M.dizziness + 0.75 <= 15)
 			M.dizziness += 0.75
