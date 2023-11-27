@@ -2296,8 +2296,10 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			return
 		if(thermal_protection >= FIRE_SUIT_MAX_TEMP_PROTECT && !no_protection)
 			H.adjust_bodytemperature(11)
+			H.take_overall_damage(burn = H.fire_stacks * 0.25)
 		else
 			H.adjust_bodytemperature(BODYTEMP_HEATING_MAX + (H.fire_stacks * 12))
+			H.take_overall_damage(burn = H.fire_stacks * 0.5)
 			SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "on_fire", /datum/mood_event/on_fire)
 
 /datum/species/proc/CanIgniteMob(mob/living/carbon/human/H)

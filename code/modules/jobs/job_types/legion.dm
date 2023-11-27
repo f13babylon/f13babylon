@@ -1120,10 +1120,9 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/job/CaesarsLegion/auxilia
 	title = "Legion Auxilia"
 	flag = F13AUXILIA
-	total_positions = 2
-	spawn_positions = 2
-	description = "A non-combat position in the Legion for free citizens, and aspiring free citizens, who perform tasks that need special training, such as surgery. They are loyal to the Legion even if they are not treated as equals to warriors."
-	enforces = "Auxilia-Servant is a roleplay focused loadout. If selected, you are expected to wear the slave clothing and shock collar."
+	total_positions = 3
+	spawn_positions = 3
+	description = "A non-combat position in the Legion for free citizens who perform tasks that need special training, such as surgery. They are loyal to the Legion even if they are not treated as equals to warriors."
 	supervisors = "the Centurion"
 	display_order = JOB_DISPLAY_ORDER_AUXILIA
 	outfit = /datum/outfit/job/CaesarsLegion/auxilia
@@ -1248,8 +1247,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/job/CaesarsLegion/slave
 	title = "Legion Slave"
 	flag = F13LEGIONSLAVE
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	description = "A slave that survives the breaking camps is given a Legion appropriate name (latin-tribal inspired) and bull tattoo. Be obedient, respectful, stay inside the camp. Work the farm, mine, make food, clean and help injured men. Do NOT escape on your own, up to you how to handle it if forcibly freed by outside forces."
 	supervisors = "Officers and Slavemaster first, then Auxilia, then warriors."
 	display_order = JOB_DISPLAY_ORDER_LEGIONSLAVE

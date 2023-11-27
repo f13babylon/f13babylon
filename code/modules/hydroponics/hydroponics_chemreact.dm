@@ -19,7 +19,7 @@
 			return
 		if(41 to 90)
 			if(myseed && !self_sustaining) //Stability
-				myseed.adjust_instability(5)
+				myseed.adjust_instability(10)
 				return
 		if(21 to 40)
 			visible_message("<span class='notice'>\The [myseed.plantname] appears unusually reactive...</span>")
