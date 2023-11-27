@@ -45,6 +45,7 @@
 		"screeches",
 		"charges")
 	taunt_chance = 30
+	alt_skin = TRUE
 
 	emote_taunt_sound = list('sound/f13npc/ghoul_new/ghoul_charge1.ogg','sound/f13npc/ghoul_new/ghoul_charge2.ogg','sound/f13npc/ghoul_new/ghoul_charge3.ogg')
 	aggrosound = list('sound/f13npc/ghoul/aggro1.ogg', 'sound/f13npc/ghoul/aggro2.ogg')
@@ -94,6 +95,7 @@
 	icon_living = "ghoulncr"
 	icon_dead = "ghoulncr_dead"
 	maxHealth = 80
+	alt_skin = FALSE
 
 /mob/living/simple_animal/hostile/ghoul/ncr/helmet
 	icon_state = "ghoulncrh"
@@ -124,6 +126,7 @@
 	melee_damage_upper = 15
 	unsuitable_atmos_damage = 0//shitty hack
 	footstep_type = FOOTSTEP_MOB_BAREFOOT
+	alt_skin = FALSE
 
 //Frozen Feral Ghoul
 /mob/living/simple_animal/hostile/ghoul/frozenreaver
@@ -140,6 +143,7 @@
 	melee_damage_upper = 15
 	unsuitable_atmos_damage = 0//shitty hack
 	footstep_type = FOOTSTEP_MOB_BAREFOOT
+	alt_skin = FALSE
 
 //Legendary Ghoul
 /mob/living/simple_animal/hostile/ghoul/legendary
@@ -248,6 +252,7 @@
 	melee_damage_upper = 45
 	armour_penetration = 0.4//Making them some manner of threat.
 	footstep_type = FOOTSTEP_MOB_BAREFOOT
+	alt_skin = FALSE
 
 /mob/living/simple_animal/hostile/ghoul/rotting/Initialize(mapload)
 	. = ..()
