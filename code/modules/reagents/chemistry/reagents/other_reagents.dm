@@ -1869,7 +1869,7 @@
 	ghoulfriendly = TRUE
 
 /datum/reagent/plantnutriment/on_mob_life(mob/living/carbon/M)
-	if(prob(tox_prob))
+	if(prob(tox_prob) && M.dna.species.species_type != "plant")	//New Babylon change: Podpeople do not get poisoned from plant nutrients
 		M.adjustToxLoss(1*REM, updating_health = FALSE)
 		. = 1
 	..()

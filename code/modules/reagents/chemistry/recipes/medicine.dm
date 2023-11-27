@@ -212,7 +212,7 @@
 /datum/chemical_reaction/epinephrine
 	name = "Epinephrine"
 	id = /datum/reagent/medicine/epinephrine
-	results = list(/datum/reagent/medicine/epinephrine = 3)
+	results = list(/datum/reagent/medicine/epinephrine = 6)
 	required_reagents = list(/datum/reagent/acetone = 1, /datum/reagent/diethylamine = 1, /datum/reagent/phenol = 1, /datum/reagent/oxygen = 1, /datum/reagent/hydrogen = 1, /datum/reagent/chlorine = 1)
 
 /datum/chemical_reaction/strange_reagent

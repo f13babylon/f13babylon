@@ -510,10 +510,15 @@ GLOBAL_DATUM_INIT(ahelp_tickets, /datum/admin_help_tickets, new)
 
 // Used for methods where input via arg doesn't work
 /client/proc/get_adminhelp()
-	message_admins("X-----A user is making an ahelp shortly, hold onto your butts.-----X")
+
+	if(src == null)
+		to_chat(usr, "<span class='danger'>You have returned a null or invalid CKey.</span>")
+		return
+
+	message_admins("X----- [src.ckey] is making an ahelp shortly.-----X")
 	for(var/client/X in GLOB.admins)
 		if(X.prefs.toggles & SOUND_ADMINHELP)
-			SEND_SOUND(X, sound('sound/effects/adminhelp.ogg'))
+			SEND_SOUND(X, sound('sound/effects/adminnotification.ogg'))
 	var/msg = input(src, "Please describe your problem concisely and an admin will help as soon as they're able.", "Adminhelp contents") as text
 	adminhelp(msg)
 
@@ -752,7 +757,7 @@ GLOBAL_DATUM_INIT(ahelp_tickets, /datum/admin_help_tickets, new)
 	message_admins(msg)
 	log_admin_private(msg)
 	AddInteraction("Approved by [key_name].")
-	Close(silent = FALSE)
+	Resolve(silent = FALSE)
 
 //Quick negative to yes or no questions
 /datum/admin_help/proc/Denied(key_name = key_name_admin(usr))
@@ -773,4 +778,4 @@ GLOBAL_DATUM_INIT(ahelp_tickets, /datum/admin_help_tickets, new)
 	message_admins(msg)
 	log_admin_private(msg)
 	AddInteraction("Denied by [key_name].")
-	Close(silent = FALSE)
+	Resolve(silent = FALSE)

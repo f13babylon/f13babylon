@@ -88,7 +88,7 @@ Administrator
 	uniform =	/obj/item/clothing/under/f13/followers
 	suit=	/obj/item/clothing/suit/hooded/followerlight
 	shoes =	/obj/item/clothing/shoes/f13/brownie
-	belt =	/obj/item/healthanalyzer/advanced
+	belt = /obj/item/storage/belt/utility/full/engi
 	backpack =	/obj/item/storage/backpack/medic
 	satchel =	/obj/item/storage/backpack/satchel/med
 	duffelbag =	/obj/item/storage/backpack/duffelbag/med
@@ -96,10 +96,10 @@ Administrator
 		/obj/item/reagent_containers/glass/beaker/bluespace = 1,
 		/obj/item/storage/firstaid/ancient = 1,
 		/obj/item/reagent_containers/medspray/synthflesh = 2,
-		/obj/item/reagent_containers/hypospray/combat = 1,
 		/obj/item/clothing/glasses/hud/health = 1,
 		/obj/item/book/granter/trait/chemistry = 1,
 		/obj/item/book/granter/trait/techno = 1,
+		/obj/item/healthanalyzer/advanced
 	)
 
 /*

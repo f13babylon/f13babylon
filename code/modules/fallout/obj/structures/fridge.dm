@@ -5,6 +5,9 @@
 	desc = "An old, pre-War refrigerator.<br>Despite being covered in rust and making noises straight out of a horror film, it still keeps your Nuka-Cola cold."
 	icon_state = "fridge"
 
+/obj/structure/closet/fridge/add_debris_element()
+	AddElement(/datum/element/debris, DEBRIS_SPARKS, -15, 8, 1)
+
 /obj/structure/closet/fridge/standard/New()
 	..()
 	for(var/i = 0, i < 4, i++)
@@ -30,4 +33,3 @@
 	desc = "An old, rusted freezer.<br>Despite going through a nuclear holocaust, it's somehow still good at keeping things cold."
 	name = "freezer"
 	icon_state = "freezer"
-
