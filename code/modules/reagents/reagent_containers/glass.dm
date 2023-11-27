@@ -129,6 +129,7 @@
 			var/turf/MT = get_turf(owner)
 			log_reagent("BEAKER SHOT: [key_name(owner)]'s beaker at [AREACOORD(MT)] was shot by [key_name(attacker)] at [AREACOORD(UT)]) - [R]")
 			reagents.clear_reagents()
+			playsound(src, get_sfx("shatter"), 100, 1)
 			qdel(src)
 			return BLOCK_SUCCESS | BLOCK_PHYSICAL_EXTERNAL
 	return ..()
