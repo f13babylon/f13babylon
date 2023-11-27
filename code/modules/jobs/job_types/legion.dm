@@ -1185,7 +1185,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/pen/fountain = 1,
 		/obj/item/storage/bag/money/small/legion = 1,
 		/obj/item/taperecorder = 1,
-		/obj/item/clothing/under/f13/legauxilia = 1,
 		)
 
 /datum/outfit/loadout/auxmedicus
