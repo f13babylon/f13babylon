@@ -450,20 +450,6 @@
 	name = "FEV-II bottle"
 	list_reagents = list(/datum/reagent/toxin/FEV_solution/two = 30)
 
-/obj/item/reagent_containers/glass/bottle/FEV_solution/curling
-	name = "Curling-13 bottle"
-	list_reagents = list(/datum/reagent/toxin/FEV_solution/curling = 30)
-
-//Curling 13 vaccine
-/obj/item/reagent_containers/glass/bottle/curling_vaccine
-	name = "Curling-13 vaccine bottle"
-	desc = "A vial with all reagents needed to prevent Curling-13 infection, intended for use by Enclave personnel."
-	list_reagents = list(
-					/datum/reagent/medicine/mutadone = 10,
-					/datum/reagent/medicine/haloperidol = 10,
-					/datum/reagent/medicine/spaceacillin = 10,
-					)
-
 /obj/item/reagent_containers/glass/bottle/gaia
 	name = "gaia bottle"
 	desc = "A large bottle containing gaia."
