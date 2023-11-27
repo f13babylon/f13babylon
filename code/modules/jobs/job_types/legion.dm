@@ -594,7 +594,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		)
 
 /datum/outfit/loadout/recdectribal
-	name = "Blackliner Decanus"
+	name = "Backliner Decanus"
 	suit_store = /obj/item/gun/ballistic/rifle/repeater/trail
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44 = 2,
@@ -1122,7 +1122,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	flag = F13AUXILIA
 	total_positions = 2
 	spawn_positions = 2
-	description = "A non-combat position in the Legion for free citizens who perform tasks that need special training, such as surgery. They are loyal to the Legion even if they are not treated as equals to warriors."
+	description = "A non-combat position in the Legion for free citizens, and aspiring free citizens, who perform tasks that need special training, such as surgery. They are loyal to the Legion even if they are not treated as equals to warriors."
+	enforces = "Auxilia-Servant is a roleplay focused loadout. If selected, you are expected to wear the slave clothing and shock collar."
 	supervisors = "the Centurion"
 	display_order = JOB_DISPLAY_ORDER_AUXILIA
 	outfit = /datum/outfit/job/CaesarsLegion/auxilia
@@ -1134,6 +1135,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/datum/outfit/loadout/auxassist, // Keep track of the money, handle trading beneath the warriors
 		/datum/outfit/loadout/auxmedicus, // Do surgery, medical tasks.
 		/datum/outfit/loadout/auxopifex, // Build defenses, craft necessary items
+		/datum/outfit/loadout/auxservant,
 		)
 
 	matchmaking_allowed = list(
@@ -1150,17 +1152,15 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Legion Auxilia"
 	jobtype = /datum/job/CaesarsLegion/auxilia
 	id = /obj/item/card/id/dogtag/legauxilia
-	head = /obj/item/clothing/head/f13/auxilia
 	uniform = /obj/item/clothing/under/f13/legauxiliaf
-	shoes = /obj/item/clothing/shoes/roman
-	ears = /obj/item/radio/headset/headset_legion
+	id = /obj/item/card/id/dogtag/legauxilia
 	gloves = null
 	belt = null
 	r_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healingpowder = 2,
 		/obj/item/reagent_containers/food/snacks/grown/ambrosia/deus = 1,
-		/obj/item/warpaint_bowl
+		/obj/item/warpaint_bowl = 1
 		)
 
 /datum/outfit/job/CaesarsLegion/auxilia/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -1178,6 +1178,9 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/outfit/loadout/auxassist
 	name = "Treasurer"
 	neck = /obj/item/clothing/neck/mantle/treasurer
+	head = /obj/item/clothing/head/f13/auxilia
+	shoes = /obj/item/clothing/shoes/roman
+	ears = /obj/item/radio/headset/headset_legion
 	backpack_contents = list(
 		/obj/item/folder/red = 1,
 		/obj/item/paper/natural = 2,
@@ -1192,17 +1195,24 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	neck = /obj/item/clothing/neck/apron/medicus
 	gloves = /obj/item/clothing/gloves/f13/crudemedical
 	belt = /obj/item/storage/belt/medical/primitive
+	head = /obj/item/clothing/head/f13/auxilia
+	uniform = /obj/item/clothing/under/f13/legauxiliaf
+	shoes = /obj/item/clothing/shoes/roman
+	ears = /obj/item/radio/headset/headset_legion
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/legenlisted = 1,
 		/obj/item/storage/firstaid/ancient = 1,
 		/obj/item/stack/sticky_tape/surgical = 1,
 		/obj/item/stack/medical/bone_gel = 1,
 		/obj/item/book/granter/trait/midsurgery = 1,
-		/obj/item/clothing/under/f13/legauxilia = 1,
 		)
 /datum/outfit/loadout/auxopifex
 	name = "Opifex (Artisan)"
 	neck = /obj/item/clothing/neck/apron/labor/forge
+	head = /obj/item/clothing/head/f13/auxilia
+	uniform = /obj/item/clothing/under/f13/legauxiliaf
+	shoes = /obj/item/clothing/shoes/roman
+	ears = /obj/item/radio/headset/headset_legion
 	gloves = /obj/item/clothing/gloves/legion/forgemaster
 	belt = /obj/item/storage/belt
 	glasses = /obj/item/clothing/glasses/welding
@@ -1217,6 +1227,19 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/stack/sheet/prewar/twenty = 1,
 		/obj/item/weldingtool = 1,
 		/obj/item/book/granter/trait/explosives = 1
+		)
+
+/datum/outfit/loadout/auxservant
+	name = "Auxilia-Servant"
+	neck = /obj/item/electropack/shockcollar
+	shoes =	null
+	backpack_contents = list(
+		/obj/item/storage/bag/plants = 1,
+		/obj/item/reagent_containers/food/snacks/grown/ambrosia/deus = 1,
+		/obj/item/cultivator = 1,
+		/obj/item/soap/homemade = 1,
+		/obj/item/shovel/spade = 1,
+		/obj/item/clothing/under/f13/legslavef = 1
 		)
 
 // LEGION SLAVES - Servant cook, and assist with medical, low surgery. Worker farm and mine.

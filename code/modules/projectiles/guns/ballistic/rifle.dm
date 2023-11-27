@@ -136,7 +136,7 @@
 	item_state = "brushgun"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube4570
 	extra_speed = 100
-	fire_delay = 2
+	fire_delay = 2.55
 	recoil = 0.15
 	fire_sound = 'sound/f13weapons/brushgunfire.ogg'
 	extra_penetration = 0.12
