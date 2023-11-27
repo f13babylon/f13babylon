@@ -390,6 +390,7 @@ Senior Paladin
 	accessory =	/obj/item/clothing/accessory/bos/seniorpaladin
 	uniform =	/obj/item/clothing/under/f13/recon
 	mask =	/obj/item/clothing/mask/gas/sechailer
+	neck = /obj/item/storage/belt/holster
 	belt =	/obj/item/storage/belt/military/assault
 
 	backpack_contents = list(
@@ -477,6 +478,7 @@ Paladin
 	head =	/obj/item/clothing/head/helmet/f13/power_armor/t45d/bos
 	uniform =	/obj/item/clothing/under/f13/recon
 	mask =	/obj/item/clothing/mask/gas/sechailer
+	neck = /obj/item/storage/belt/holster
 	belt =	/obj/item/storage/belt/military/assault
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak= 2,
