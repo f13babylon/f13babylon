@@ -122,6 +122,7 @@
 	source.end_parry_sequence()
 	var/mob/living/L = source
 	L.toggle_combat_mode()
+	L.remove_status_effect(/datum/status_effect/grouped/surrender, src)
 
 
 /// Toggles whether the user is intentionally in combat mode. THIS should be the proc you generally use! Has built in visual/to other player feedback, as well as an audible cue to ourselves.
