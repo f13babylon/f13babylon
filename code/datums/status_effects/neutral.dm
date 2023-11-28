@@ -83,3 +83,23 @@
 /datum/status_effect/throat_soothed/on_remove()
 	REMOVE_TRAIT(owner, TRAIT_SOOTHED_THROAT, "[STATUS_EFFECT_TRAIT]_[id]")
 	return ..()
+
+//this effect gives the user an alert they can use to surrender quickly
+/datum/status_effect/grouped/surrender
+	id = "surrender"
+	duration = -1
+	tick_interval = -1
+	status_type = STATUS_EFFECT_UNIQUE
+	alert_type = /obj/screen/alert/status_effect/surrender/
+
+/obj/screen/alert/status_effect/surrender
+	name = "Surrender"
+	desc = "Looks like you're in trouble now, bud. Click here to surrender. (Warning: You will be incapacitated.)"
+	icon = 'icons/mob/actions/actions_items.dmi'
+	icon_state = "surrender"
+	alerttooltipstyle = "hisgrace"
+
+/obj/screen/alert/status_effect/surrender/Click(location, control, params)
+	. = ..()
+	var/mob/living/C = usr
+	C.emote("surrender")

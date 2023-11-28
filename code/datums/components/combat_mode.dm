@@ -92,6 +92,7 @@
 	source.set_dir_on_move = FALSE
 	var/mob/living/L = source
 	L.toggle_combat_mode()
+	L.apply_status_effect(/datum/status_effect/grouped/surrender, src)
 
 /// Disables combat mode. Please use 'safe_disable_combat_mode' instead, if you wish to also disable the toggle flag.
 /datum/component/combat_mode/proc/disable_combat_mode(mob/living/source, silent = TRUE, forced = TRUE, visible = FALSE, locked = FALSE, playsound = FALSE)
@@ -202,3 +203,20 @@
 			flashy = mutable_appearance('icons/mob/screen_gen.dmi', "togglefull_flash")
 		flashy.color = user.client.prefs.hud_toggle_color
 		. += flashy //TODO - beg lummox jr for the ability to force mutable appearances or images to be created rendering from their first frame of animation rather than being based entirely around the client's frame count
+
+// surrender stuff
+/obj/screen/alert/status_effect/surrender/
+	desc = "You're either in combat or being held up. Click here to surrender and show that you don't wish to fight. You will be incapacitated. (You can also say '*surrender' at any time to do this.)"
+
+/datum/emote/living/surrender
+	message = "drops to the floor and raises their hands defensively! They surrender%s!"
+	stat_allowed = SOFT_CRIT
+
+/datum/emote/living/surrender/run_emote(mob/user, params, type_override, intentional)
+	. = ..()
+	if(. && isliving(user))
+		var/mob/living/living_user = user
+		var/mob/living/carbon/M = user
+		living_user.Paralyze(200)
+		living_user.remove_status_effect(/datum/status_effect/grouped/surrender, src)
+		SEND_SIGNAL(M, COMSIG_DISABLE_COMBAT_MODE)
