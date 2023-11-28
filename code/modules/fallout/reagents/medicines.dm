@@ -566,7 +566,7 @@
 
 /datum/reagent/medicine/radaway/on_mob_life(mob/living/carbon/human/M)
 	M.adjustToxLoss(-2*REAGENTS_EFFECT_MULTIPLIER)
-	M.radiation -= 14
+	M.radloss -= 14
 	if(prob(10))
 		M.confused = max(M.confused, 3)
 	. = TRUE

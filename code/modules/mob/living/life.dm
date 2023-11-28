@@ -117,7 +117,7 @@
 	return
 
 /mob/living/proc/handle_mutations_and_radiation()
-	radiation = 0 //so radiation don't accumulate in simple animals
+	radloss = 0 //so radiation don't accumulate in simple animals
 	return
 
 /mob/living/proc/handle_diseases()

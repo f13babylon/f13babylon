@@ -236,8 +236,8 @@
 
 /datum/reagent/fermi/zeolites/on_mob_life(mob/living/carbon/M)
 	var/datum/component/radioactive/contamination = M.GetComponent(/datum/component/radioactive)
-	if(M.radiation > 0)
-		M.radiation -= min(M.radiation, 60)
+	if(M.radloss > 0)
+		M.radloss -= min(M.radloss, 60)
 	if(contamination && contamination.strength > 0)
 		contamination.strength -= min(contamination.strength, 100)
 	..()

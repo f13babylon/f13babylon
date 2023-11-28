@@ -21,7 +21,7 @@
 
 /obj/item/dnainjector/proc/inject(mob/living/carbon/M, mob/user)
 	if(M.has_dna() && !HAS_TRAIT_NOT_FROM(M, TRAIT_RADIMMUNE,BLOODSUCKER_TRAIT) && !HAS_TRAIT(M, TRAIT_NOCLONE))
-		M.radiation += rand(20/(damage_coeff  ** 2),50/(damage_coeff  ** 2))
+		M.radloss += rand(20/(damage_coeff  ** 2),50/(damage_coeff  ** 2))
 		var/log_msg = "[key_name(user)] injected [key_name(M)] with the [name]"
 		for(var/HM in remove_mutations)
 			M.dna.remove_mutation(HM)
@@ -464,7 +464,7 @@
 		return FALSE
 
 	if(M.has_dna() && !(HAS_TRAIT(M, TRAIT_NOCLONE)))
-		M.radiation += rand(20/(damage_coeff  ** 2),50/(damage_coeff  ** 2))
+		M.radloss += rand(20/(damage_coeff  ** 2),50/(damage_coeff  ** 2))
 		var/log_msg = "[key_name(user)] injected [key_name(M)] with the [name]"
 		var/endtime = world.time+duration
 		for(var/mutation in remove_mutations)
@@ -526,7 +526,7 @@
 
 /obj/item/dnainjector/activator/inject(mob/living/carbon/M, mob/user)
 	if(M.has_dna() && !HAS_TRAIT_NOT_FROM(M, TRAIT_RADIMMUNE,BLOODSUCKER_TRAIT) && !HAS_TRAIT(M,TRAIT_NOCLONE))
-		M.radiation += rand(20/(damage_coeff  ** 2),50/(damage_coeff  ** 2))
+		M.radloss += rand(20/(damage_coeff  ** 2),50/(damage_coeff  ** 2))
 		var/log_msg = "[key_name(user)] injected [key_name(M)] with the [name]"
 		for(var/mutation in add_mutations)
 			var/datum/mutation/human/HM = mutation
@@ -547,4 +547,3 @@
 		log_attack("[log_msg] [loc_name(user)]")
 		return TRUE
 	return FALSE
-

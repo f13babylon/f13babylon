@@ -453,7 +453,7 @@
 
 /datum/reagent/consumable/pungajuice/on_mob_life(mob/living/carbon/M)
 	M.adjustToxLoss(-1*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//50% of radaway healing (results in the same amount of total toxin healed but slower than radaway)
-	M.radiation -= 7	//50% of radaway healing (results in the same amount of total radiation healed but slower than radaway)
+	M.radloss -= 7	//50% of radaway healing (results in the same amount of total radiation healed but slower than radaway)
 	M.hallucination = max(M.hallucination, 5)
 	. = TRUE
 	..()

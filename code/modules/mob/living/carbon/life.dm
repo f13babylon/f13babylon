@@ -444,11 +444,11 @@
 			if(HM && HM.timed)
 				dna.remove_mutation(HM.type)
 
-	if(HAS_TRAIT(src, TRAIT_GHOULMELEE))//Only process radiation on ghouls, so they can't stack it.
-		radiation -= min(radiation, RAD_LOSS_PER_TICK)
+	if(dna && dna.species.id == "ghoul")//Only process radiation on ghouls, so they can't stack it.
+		radloss -= min(radloss, RAD_LOSS_PER_TICK)
 
-	if(radiation > RAD_MOB_SAFE)
-		adjustToxLoss(log(radiation-RAD_MOB_SAFE)*RAD_TOX_COEFFICIENT)
+	if(radloss > RAD_MOB_SAFE)
+		adjustToxLoss(log(radloss-RAD_MOB_SAFE)*RAD_TOX_COEFFICIENT)
 
 /mob/living/carbon/handle_stomach()
 	set waitfor = 0

@@ -76,7 +76,7 @@
 	..()
 
 /datum/reagent/toxin/FEV_solution/one/on_mob_life(mob/living/carbon/C)
-	C.apply_effect(40,EFFECT_IRRADIATE,0)
+	C.apply_damage(40, RADIATION)
 	C.adjustCloneLoss(15,0) // ~5 units will get you near crit condition.
 	return ..()
 
@@ -89,7 +89,7 @@
 /datum/reagent/toxin/FEV_solution/two/overdose_process(mob/living/carbon/C)
 	C.adjustBruteLoss(6,0)
 	C.adjustFireLoss(15,0)
-	C.apply_effect(70,EFFECT_IRRADIATE,0) //FEV-II is radioactive.
+	C.apply_damage(70, RADIATION) //FEV-II is radioactive.
 	C.adjustCloneLoss(3,0) // ~10 units will crit you.
 	C.Jitter(30)
 	if(prob(1))
@@ -122,7 +122,7 @@
 	..()
 
 /datum/reagent/toxin/mutagen/on_mob_life(mob/living/carbon/C)
-	C.apply_effect(5,EFFECT_IRRADIATE,0)
+	C.apply_damage(5, RADIATION)
 	return ..()
 
 /datum/reagent/toxin/mutagen/on_hydroponics_apply(obj/item/seeds/myseed, datum/reagents/chems, obj/machinery/hydroponics/mytray, mob/user)
@@ -519,7 +519,7 @@
 	value = REAGENT_VALUE_VERY_RARE
 
 /datum/reagent/toxin/polonium/on_mob_life(mob/living/carbon/M)
-	M.radiation += 4
+	M.radloss += 4
 	..()
 
 /datum/reagent/toxin/histamine

@@ -95,7 +95,7 @@
 	if(H.stat == DEAD)
 		is_healing = FALSE
 		return
-	switch(H.radiation)
+	switch(H.radloss)
 		if(0)
 			healpwr = 0
 			is_healing = FALSE
