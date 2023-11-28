@@ -99,7 +99,8 @@ Administrator
 		/obj/item/clothing/glasses/hud/health = 1,
 		/obj/item/book/granter/trait/chemistry = 1,
 		/obj/item/book/granter/trait/techno = 1,
-		/obj/item/healthanalyzer/advanced
+		/obj/item/healthanalyzer/advanced = 1,
+		/obj/item/pda/medical = 1,
 	)
 
 /*
