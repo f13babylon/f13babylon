@@ -209,18 +209,16 @@
 
 /datum/reagent/medicine/berserker_powder/on_mob_add(mob/living/carbon/human/M)
 	..()
-	if(isliving(M))
-		to_chat(M, "<span class='notice'>The veil breaks, and the heavens spill out! The spirits of Mars float down from the heavens, and the deafining beat of the holy legion's wardrums fills your ears. Their ethereal forms are guiding you in battle!</span>")
-		M.maxHealth += 25
-		M.health += 25
-		ADD_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
+	to_chat(M, "<span class='notice'>The veil breaks, and the heavens spill out! The spirits of Mars float down from the heavens, and the deafining beat of the holy legion's wardrums fills your ears. Their ethereal forms are guiding you in battle!</span>")
+	M.maxHealth += 25
+	M.health += 25
+	ADD_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
 
 /datum/reagent/medicine/berserker_powder/on_mob_delete(mob/living/carbon/human/M)
-	if(isliving(M))
-		to_chat(M, "<span class='notice'>The veil comes back, blocking out the heavenly visions. You breathe a sigh of relief...</span>")
-		M.maxHealth -= 25
-		M.health -= 25
-		REMOVE_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
+	to_chat(M, "<span class='notice'>The veil comes back, blocking out the heavenly visions. You breathe a sigh of relief...</span>")
+	M.maxHealth -= 25
+	M.health -= 25
+	REMOVE_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
 
 	switch(current_cycle)
 		if(1 to 30)
@@ -511,18 +509,48 @@
 
 /datum/reagent/medicine/radx
 	name = "Rad-X"
-
-	description = "Reduces massive amounts of radiation and some toxin damage."
+	description = "A preventative anti-radiation medicine that bolsters the user's natural resistance to background radiation."
 	reagent_state = LIQUID
 	color = "#ff6100"
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	ghoulfriendly = TRUE
 
-/datum/reagent/medicine/radx/on_mob_life(mob/living/carbon/M)
-	if(M.radiation > 0)
-		M.radiation -= min(M.radiation, 8)
-	M.adjustToxLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER)
+/datum/reagent/medicine/radx/on_mob_add(mob/living/carbon/human/M)
+	M.dna.species.radmod *= 0.5	//50% radiation modifier
+	to_chat(M, "<span class='notice'>You feel more protected against radiation.</span>")
+	..()
+
+/datum/reagent/medicine/radx/on_mob_life(mob/living/carbon/human/M)
+	switch(current_cycle)
+		if(40 to 90)	//1 pill
+			if(M.eye_blurry + 0.2 <= 10)
+				M.eye_blurry += 0.2
+			if(prob(10))
+				M.confused = max(M.confused, 3)
+		if(90 to 140)	//2 pills
+			if(M.eye_blurry + 0.2 <= 20)
+				M.eye_blurry += 0.2
+			if(prob(20))
+				M.confused = max(M.confused, 3)
+			if(M.dizziness + 0.2 <= 10)
+				M.dizziness += 0.2
+		if(140 to INFINITY)	//3 or more pills
+			if(M.eye_blurry + 0.1 <= 25)
+				M.eye_blurry += 0.1
+			if(prob(25))
+				M.confused = max(M.confused, 3)
+			if(M.dizziness + 0.1 <= 15)
+				M.dizziness += 0.1
+			if(prob(10))
+				if(M.disgust + 15 <= DISGUST_LEVEL_DISGUSTED + 10)
+					M.disgust += 15
+				to_chat(M, "<span class='danger'>You feel sick from the Rad-X being in you for so long.</span>")
 	. = TRUE
+	..()
+
+/datum/reagent/medicine/radx/on_mob_delete(mob/living/carbon/human/M)
+	M.dna.species.radmod *= 2	//Return to 100% radiation modifier
+	to_chat(M, "<span class='danger'>You feel more vulnerable against radiation.</span>")
 	..()
 
 // ---------------------------
@@ -536,12 +564,11 @@
 	metabolization_rate = 2 * REAGENTS_METABOLISM
 	ghoulfriendly = TRUE
 
-/datum/reagent/medicine/radaway/on_mob_life(mob/living/carbon/M)
-	M.adjustToxLoss(-3*REAGENTS_EFFECT_MULTIPLIER)
-	M.radiation -= min(M.radiation, 16)
-	if(ishuman(M) && prob(7))
-		var/mob/living/carbon/human/H = M
-		H.confused = max(M.confused, 3)
+/datum/reagent/medicine/radaway/on_mob_life(mob/living/carbon/human/M)
+	M.adjustToxLoss(-2*REAGENTS_EFFECT_MULTIPLIER)
+	M.radiation -= 14
+	if(prob(10))
+		M.confused = max(M.confused, 3)
 	. = TRUE
 	..()
 

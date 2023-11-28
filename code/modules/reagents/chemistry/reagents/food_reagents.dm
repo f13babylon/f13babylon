@@ -442,8 +442,8 @@
 	..()
 
 /datum/reagent/consumable/pungajuice
-	name = "punga juice"
-	description = "The fermented juice of the punga fruit, used to treat radiation sickness."
+	name = "Punga juice"
+	description = "Punga fruit juice, used to treat radiation sickness."
 	color = "#1B2E24"
 	taste_description = "acidic slime"
 	glass_icon_state = "Space_mountain_wind_glass"
@@ -452,12 +452,11 @@
 	water_level = 1.5
 
 /datum/reagent/consumable/pungajuice/on_mob_life(mob/living/carbon/M)
-	if(M.radiation > 0)
-		M.radiation -= 3
-	M.adjustToxLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
-	M.hallucination = 5
+	M.adjustToxLoss(-1*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//50% of radaway healing (results in the same amount of total toxin healed but slower than radaway)
+	M.radiation -= 7	//50% of radaway healing (results in the same amount of total radiation healed but slower than radaway)
+	M.hallucination = max(M.hallucination, 5)
 	. = TRUE
-	return ..()
+	..()
 
 /datum/reagent/consumable/daturajuice
 	name = "Datura Juice"
