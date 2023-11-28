@@ -204,6 +204,7 @@ Practitioner
 		/obj/item/reagent_containers/medspray/synthflesh = 2,
 		/obj/item/pda/medical = 1,
 		/obj/item/healthanalyzer=1,
+		/obj/item/roller = 2,
 	)
 
 /datum/outfit/loadout/medical_researcher
@@ -274,6 +275,7 @@ Follower Volunteer
 	backpack_contents = list(
 		/obj/item/healthanalyzer = 1,
 		/obj/item/reagent_containers/medspray/synthflesh = 1,
+		/obj/item/roller = 2,
 	)
 
 /datum/outfit/loadout/volunteer_mechanic
