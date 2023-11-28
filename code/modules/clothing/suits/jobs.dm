@@ -72,7 +72,7 @@
 	icon_state = "detective"
 	item_state = "det_suit"
 	blood_overlay_type = "coat"
-	armor = list("melee" = 25, "bullet" = 15, "laser" = 33,"energy" = 15, "bomb" = 10, "bio" = 30, "rad" = 0, "fire" = 0, "acid" = 45)
+	armor = list("melee" = 25, "bullet" = 15, "laser" = 33,"energy" = 10, "bomb" = 10, "bio" = 30, "rad" = 0, "fire" = 0, "acid" = 45)
 	cold_protection = CHEST|GROIN|LEGS|ARMS
 	heat_protection = CHEST|GROIN|LEGS|ARMS
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON

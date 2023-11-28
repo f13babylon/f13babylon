@@ -18,7 +18,7 @@
 	desc = "The latest in Artificial Intelligences."
 	id = "mmi_posi"
 	build_type = PROTOLATHE | MECHFAB
-	materials = list(/datum/material/iron = 1700, /datum/material/glass = 1350, /datum/material/gold = 500) //Gold, because SWAG.
+	materials = list(/datum/material/iron = 1700, /datum/material/glass = 1350, /datum/material/gold = 500, /datum/material/adamantine = 12000) //Gold, because SWAG.
 	construction_time = 75
 	build_path = /obj/item/mmi/posibrain
 	category = list("Misc", "Medical Designs")
@@ -1121,4 +1121,3 @@
 	build_path = /obj/item/autosurgeon
 	category = list("Misc","Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE
-

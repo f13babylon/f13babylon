@@ -11,7 +11,7 @@
 	desc = "There are still some old asbestos fireman suits laying around from before the war. How about adding a ton of metal, plasteel and a combustion engine to one? The resulting armor is surprisingly effective at dissipating energy."
 	icon_state = "sulphite"
 	item_state = "sulphite"
-	armor = list("melee" = 55, "bullet" = 40, "laser" = 50, "energy" = 50, "bomb" = 30, "bio" = 25, "rad" = 30, "fire" = 95, "acid" = 15)
+	armor = list("melee" = 55, "bullet" = 40, "laser" = 50, "energy" = 20, "bomb" = 30, "bio" = 25, "rad" = 30, "fire" = 95, "acid" = 15)
 	resistance_flags = FIRE_PROOF
 
 /obj/item/clothing/suit/armored/heavy/metal
@@ -19,26 +19,26 @@
 	desc = "A suit of welded, fused metal plates. Bulky, but with great protection."
 	icon_state = "raider_metal"
 	item_state = "raider_metal"
-	armor = list("melee" = 60, "bullet" = 45, "laser" = 30, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 25, "fire" = 20, "acid" = 20, "wound" = 10)
+	armor = list("melee" = 60, "bullet" = 45, "laser" = 30, "energy" = 10, "bomb" = 30, "bio" = 10, "rad" = 25, "fire" = 20, "acid" = 20, "wound" = 10)
 
 /obj/item/clothing/suit/armored/heavy/recycled_power
 	name = "recycled power armor"
 	desc = "Taking pieces off from a wrecked power armor will at least give you thick plating, but don't expect too much of this shot up, piecemeal armor.."
 	icon_state = "recycled_power"
-	armor = list("melee" = 50, "bullet" = 45, "laser" = 30, "energy" = 25, "bomb" = 35, "bio" = 5, "rad" = 15, "fire" = 15, "acid" = 5, "wound" = 10)
+	armor = list("melee" = 50, "bullet" = 45, "laser" = 30, "energy" = 10, "bomb" = 35, "bio" = 5, "rad" = 15, "fire" = 15, "acid" = 5, "wound" = 10)
 
 /obj/item/clothing/suit/armored/heavy/raidermetal
 	name = "iron raider suit"
 	desc = "More rust than metal, with gaping holes in it, this armor looks like a pile of junk. Under the rust some quality steel still remains however."
 	icon_state = "raider_metal"
 	item_state = "raider_metal"
-	armor = list("melee" = 55, "bullet" = 40, "laser" = 15, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 15, "fire" = 20, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 55, "bullet" = 40, "laser" = 15, "energy" = 5, "bomb" = 25, "bio" = 0, "rad" = 15, "fire" = 20, "acid" = 0, "wound" = 10)
 
 /obj/item/clothing/suit/armored/heavy/wardenplate
 	name = "warden plates"
 	desc = "Thick metal breastplate with a decorative skull on the shoulder."
 	icon_state = "wardenplate"
-	armor = list("melee" = 55, "bullet" = 50, "laser" = 35, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 15, "fire" = 10, "acid" = 10, "wound" = 10)
+	armor = list("melee" = 55, "bullet" = 50, "laser" = 35, "energy" = 10, "bomb" = 30, "bio" = 0, "rad" = 15, "fire" = 10, "acid" = 10, "wound" = 10)
 
 /obj/item/clothing/suit/armored/heavy/bosexile
 	name = "modified Brotherhood armor"
@@ -52,7 +52,7 @@
 	icon_state = "bulletproof_heavy"
 	item_state = "bulletproof_heavy"
 	desc = "Heavy armor with ballistic inserts, sewn into a padded riot police coat."
-	armor = list("melee" = 70, "bullet" = 45, "laser" = 20, "energy" = 20, "bomb" = 45, "bio" = 35, "rad" = 10, "fire" = 50, "acid" = 10, "wound" = 10)
+	armor = list("melee" = 70, "bullet" = 45, "laser" = 20, "energy" = 5, "bomb" = 45, "bio" = 35, "rad" = 10, "fire" = 50, "acid" = 10, "wound" = 10)
 
 //Recipe bone armor + metal and leather
 /obj/item/clothing/suit/armored/heavy/tribal
@@ -60,7 +60,7 @@
 	desc = "Thick layers of leather and bone, with metal reinforcements, surely this will make the wearer tough and uncaring for claws and blades."
 	icon_state = "tribal_heavy"
 	item_state = "tribal_heavy"
-	armor = list("melee" = 55, "bullet" = 20, "laser" = 25, "energy" = 20, "bomb" = 45, "bio" = 5, "rad" = 10, "fire" = 30, "acid" = 10, "wound" = 10)
+	armor = list("melee" = 55, "bullet" = 20, "laser" = 25, "energy" = 5, "bomb" = 45, "bio" = 5, "rad" = 10, "fire" = 30, "acid" = 10, "wound" = 10)
 	allowed = list(/obj/item/twohanded, /obj/item/melee/onehanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand, /obj/item/shield)
 
 //////////////////////////
@@ -132,7 +132,7 @@
 	desc = "T-51b power armor with servomotors and all valuable components stripped out of it."
 	icon_state = "t51b_salvaged"
 	item_state = "t51b_salvaged"
-	armor = list("melee" = 75, "bullet" = 75, "laser" = 65, "energy" = 40, "bomb" = 65, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 40, "wound" = 50)
+	armor = list("melee" = 75, "bullet" = 75, "laser" = 65, "energy" = 15, "bomb" = 65, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 40, "wound" = 50)
 	slowdown = 0.4
 
 // Midwest
@@ -159,7 +159,7 @@
 	desc = "T-60a power armor with servomotors and all valuable components stripped out of it."
 	icon_state = "t60_salvaged"
 	item_state = "t60_salvaged"
-	armor = list("melee" = 75, "bullet" = 70, "laser" = 65, "energy" = 30, "bomb" = 55, "bio" = 70, "rad" = 60, "fire" = 80, "acid" = 35, "wound" = 50)
+	armor = list("melee" = 75, "bullet" = 70, "laser" = 65, "energy" = 25, "bomb" = 55, "bio" = 70, "rad" = 60, "fire" = 80, "acid" = 35, "wound" = 50)
 	slowdown = 0.35
 
 // X-02
@@ -168,7 +168,7 @@
 	desc = "X-02 power armor with servomotors and all valuable components stripped out of it."
 	icon_state = "advanced_salvaged"
 	item_state = "advanced_salvaged"
-	armor = list("melee" = 75, "bullet" = 75, "laser" = 85, "energy" = 85, "bomb" = 70, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 50)
+	armor = list("melee" = 75, "bullet" = 75, "laser" = 75, "energy" = 40, "bomb" = 70, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 50)
 	slowdown = 0.35
 
 ////////////
@@ -181,34 +181,36 @@
 	desc = "A suit with the standard metal reinforcements of a veteran and a patched bulletproof vest worn over it."
 	icon_state = "legion_heavy"
 	item_state = "legion_heavy"
-	armor = list("melee" = 65, "bullet" = 45, "laser" = 30, "energy" = 20, "bomb" = 30, "bio" = 20, "rad" = 25, "fire" = 30, "acid" = 5, "wound" = 10)
+	armor = list("melee" = 65, "bullet" = 45, "laser" = 30, "energy" = 10, "bomb" = 30, "bio" = 20, "rad" = 25, "fire" = 30, "acid" = 5, "wound" = 10)
 
 /obj/item/clothing/suit/armored/heavy/legion/centurion
 	name = "legion centurion armor"
 	desc = "The Legion centurion armor is by far the strongest suit of armor available to Caesar's Legion. The armor is composed from other pieces of armor taken from that of the wearer's defeated opponents in combat."
 	icon_state = "legion_centurion"
-	armor = list("melee" = 70, "bullet" = 50, "laser" = 35, "energy" = 35, "bomb" = 40, "bio" = 30, "rad" = 25, "fire" = 40, "acid" = 10, "wound" = 10)
+	armor = list("melee" = 60, "bullet" = 50, "laser" = 35, "energy" = 10, "bomb" = 45, "bio" = 20, "rad" = 20, "fire" = 45, "acid" = 45, "wound" = 32)
+	slowdown = 0.1
+	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10) // Rest in pieces
 
 /obj/item/clothing/suit/armored/heavy/legion/palacent
 	name = "paladin-slayer centurion armor"
 	desc = "The armor of a Centurion who has bested one or more Brotherhood Paladins, adding pieces of his prizes to his own defense. The symbol of the Legion is crudely painted on this once-marvelous suit of armor."
 	icon_state = "legion_palacent"
-	armor = list("melee" = 70, "bullet" = 60, "laser" = 50, "energy" = 40, "bomb" = 45, "bio" = 30, "rad" = 30, "fire" = 50, "acid" = 20, "wound" = 10)
+	armor = list("melee" = 55, "bullet" = 45, "laser" = 70, "energy" = 40, "bomb" = 55, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 45)
 
 /obj/item/clothing/suit/armored/heavy/legion/rangercent
 	name = "ranger-hunter centurion armor"
 	desc = "A suit of armor collected over the years by the deaths of countless NCR rangers."
 	icon_state = "legion_rangercent"
 	item_state = "legion_rangercent"
-	armor = list("melee" = 65, "bullet" = 50, "laser" = 30, "energy" = 30, "bomb" = 35, "bio" = 30, "rad" = 25, "fire" = 50, "acid" = 10, "wound" = 10)
-	slowdown = 0.05
+	armor = list("melee" = 40, "bullet" = 45, "laser" = 25, "energy" = 10, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20, "wound" = 35) //Mimics vet ranger stuff, higher melee and lower laser
+	slowdown = 0.03
 
 /obj/item/clothing/suit/armored/heavy/legion/legate
 	name = "legion legate armor"
 	desc = "The armor appears to be a full suit of heavy gauge steel and offers full body protection. It also has a cloak in excellent condition, but the armor itself bears numerous battle scars and the helmet is missing half of the left horn. The Legate's suit appears originally crafted, in contrast to other Legion armor which consists of repurposed pre-War sports equipment."
 	icon_state = "legion_legate"
-	armor = list("melee" = 70, "bullet" = 60, "laser" = 45, "energy" = 45, "bomb" = 45, "bio" = 50, "rad" = 30, "fire" = 70, "acid" = 20, "wound" = 10)
-
+	armor = list("melee" = 60, "bullet" = 60, "laser" = 40, "energy" = 10, "bomb" = 45, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0, "wound" = 10)
+	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 15) // Wouldn't it be hilarious if we just tore apart the Legate's armor?
 
 /*
 

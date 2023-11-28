@@ -249,7 +249,7 @@
 	item_state = "enclave_marine"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 40, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 50)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 50)
 
 /obj/item/clothing/head/helmet/f13/enclave/marine/Initialize(mapload)
 	. = ..()
@@ -262,7 +262,7 @@
 	item_state = "modified_usmc_riot"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 40, "energy" = 22, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 40)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 22, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 40)
 
 /obj/item/clothing/head/helmet/f13/enclave/usmcriot/armypilot
 	name = "enclave officer pilot helmet"
@@ -280,7 +280,8 @@
 	desc = "Wheeled hat with a cap made of light-weight armored alloys beneath."
 	icon_state = "hat_enclave_officer"
 	item_state = "hat_enclave_officer"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 22, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 55)
+	armor = list("melee" = 55, "bullet" = 55, "laser" = 60, "energy" = 30, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 20) //equivalent to HK
+
 
 
 //////////
@@ -1372,11 +1373,15 @@
 	desc = "A resistant, black forage cap issued to Enclave Officers."
 	icon_state = "enclave_cap"
 	item_state = "enclave_cap"
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 40) // On par with BoS Initiate
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 15, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 40) // On par with BoS Initiate
 
 /obj/item/clothing/head/helmet/f13/combat/enclave
 	name = "enclave combat helmet"
 	desc = "An intimidating helmet that is issued with it's corresponding suit."
 	icon_state = "remnant_helmet"
 	item_state = "remnant_helmet"
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 50)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 55, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 20)
+
+/obj/item/clothing/head/helmet/f13/combat/enclave/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
