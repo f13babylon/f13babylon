@@ -1110,10 +1110,7 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/building/massfusion)
 "bkS" = (
-/obj/structure/closet/crate/miningcar,
-/obj/machinery/light/small{
-	dir = 1
-	},
+/obj/machinery/mineral/ore_redemption,
 /turf/open/floor/f13{
 	color = "#818181";
 	icon_state = "floorrustysolid"
@@ -5708,12 +5705,6 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/tunnel)
-"cAN" = (
-/obj/machinery/door/airlock/hatch{
-	req_access_txt = "120"
-	},
-/turf/open/floor/f13,
-/area/f13/brotherhood/reactor)
 "cAX" = (
 /obj/docking_port/stationary/bosaway/nine{
 	name = "Near City Center"
@@ -7110,13 +7101,11 @@
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "ffG" = (
-/obj/item/circuitboard/machine/ore_redemption,
-/obj/structure/frame/machine,
-/turf/open/floor/f13{
-	color = "#818181";
-	icon_state = "floorrustysolid"
+/obj/machinery/door/airlock/hatch{
+	req_access_txt = "120"
 	},
-/area/f13/brotherhood)
+/turf/closed/wall/r_wall/f13/vault,
+/area/f13/brotherhood/reactor)
 "fgb" = (
 /obj/effect/turf_decal/huge{
 	dir = 1
@@ -72769,8 +72758,8 @@ oVq
 oVq
 oVq
 frP
-cAN
 frP
+ffG
 frP
 frP
 frP
@@ -73029,7 +73018,7 @@ frP
 gdZ
 gdZ
 gdZ
-ggn
+gdZ
 frP
 aae
 aae
@@ -73283,10 +73272,10 @@ aae
 aak
 aae
 frP
+lpl
+gdZ
+gdZ
 bkS
-gdZ
-gdZ
-gxc
 frP
 aae
 aae
@@ -73540,10 +73529,10 @@ aak
 aae
 aae
 frP
-lpl
+gxc
 gdZ
 gdZ
-ggn
+irV
 frP
 aae
 aae
@@ -73797,9 +73786,9 @@ aak
 aae
 aae
 frP
-ffG
+ggn
 gdZ
-irV
+gdZ
 irV
 frP
 aae
@@ -74055,8 +74044,8 @@ aae
 aae
 frP
 frP
-cgy
 frP
+cgy
 frP
 frP
 aae
