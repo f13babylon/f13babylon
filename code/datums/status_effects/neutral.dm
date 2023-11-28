@@ -97,7 +97,6 @@
 	desc = "Looks like you're in trouble now, bud. Click here to surrender. (Warning: You will be incapacitated.)"
 	icon = 'icons/mob/actions/actions_items.dmi'
 	icon_state = "surrender"
-	alerttooltipstyle = "hisgrace"
 
 /obj/screen/alert/status_effect/surrender/Click(location, control, params)
 	. = ..()

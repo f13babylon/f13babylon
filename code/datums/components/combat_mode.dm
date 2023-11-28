@@ -216,7 +216,6 @@
 	. = ..()
 	if(. && isliving(user))
 		var/mob/living/living_user = user
-		var/mob/living/carbon/M = user
 		living_user.Paralyze(200)
 		living_user.remove_status_effect(/datum/status_effect/grouped/surrender, src)
-		SEND_SIGNAL(M, COMSIG_DISABLE_COMBAT_MODE)
+		SEND_SIGNAL(user, COMSIG_DISABLE_COMBAT_MODE)
