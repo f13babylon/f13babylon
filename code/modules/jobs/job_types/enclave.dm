@@ -7,9 +7,9 @@
 	access = list(ACCESS_ENCLAVE, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
 	minimal_access = list(ACCESS_ENCLAVE, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
 	blacklisted_quirks = list(/datum/quirk/straight_edge)
-	forbids = "Enclave taboos: Aiding Brotherhood or Republic members in any way no matter how small."
-	enforces = "Enclave rules: Stay in uniform. Act mature and respectful. Obey orders and always remember you are fighting for the only true legitimate power in this land of savages. Wearing gasmasks outside the compound is encouraged but not required."
-	objectivesList = list("Department of Defense advisory: Collect resources, attrition is depleting our reserves.", "Science Divison advisory: Capture human subjects for experiments, alive.")
+	forbids = "Enclave taboos: Aiding the Brotherhood, NCR, or Legion in any way if it will not get you more than it gets them. Revealing your affiliation with the Enclave to outsiders if not directly ordered to. Killing fellow Americans."
+	enforces = "Enclave rules: Stay in uniform. Act mature and respectful. Obey orders given to you that do not harm fellow Americans. Maintain secrecy of your bunker's whereabouts."
+	objectivesList = list("Rapid Reaction Corps Logistics advisory: Collect resources, attrition is depleting our reserves.", "Rapid Reaction Corps Research advisory: Capture human subjects for experiments, alive.")
 
 /datum/outfit/job/enclave
 	id = null
@@ -127,17 +127,17 @@
 	total_positions = 1
 	spawn_positions = 1
 	access = list(ACCESS_ENCLAVE, ACCESS_CHANGE_IDS, ACCESS_ENCLAVE_COMMAND, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
-	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. Your goal, primarily, is to collect organic material. Preferably alive, for the sake of testing. <br>\
-	Now that the lore is out of the way, just make the round fun. You set the policies and the attitude of the Enclave this week. You can either be a commanding officer on the frontlines, or an IS advisor to the Captain; handling bunker matters and maybe diplomacy at his request. You don't supercede the Captain, though. If your Captain is acting unruly, complain to your supervisors."
-	supervisors = "The Captain, or the Supervisor (For IS!)."
+	description = "You're the commissioned commanding officer of a force of Enclave Remnant marines, part of the Rapid Reaction Corps. You may be an experienced soldier, or you may be a scientist or academic pushed into command. Your job is to direct your marine company to achieve Enclave goals. <br>\
+	You are the leader of the Enclave and set their mission for the round. This can be anything from getting a secret trade agreement with the town to capturing Brotherhood paladins for interrogation. Remember that you have precious little people to spare: every problem has to be approached carefully. Work with the Gunnery Sergeant to make plans."
+	supervisors = "Oversight, the well-protected command staff of the Rapid Reaction Corps."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavelt
 	req_admin_notify = 1
 	exp_type = EXP_TYPE_ENCLAVE
 	exp_requirements = 1440
 
 	loadout_options = list(
-		/datum/outfit/loadout/lt_is, // Special Plasma Pistol
-		/datum/outfit/loadout/lt_frontline // Powerfist + 14mm SMG
+		/datum/outfit/loadout/lt_is, // Plasma Glock, CIA Badge
+		/datum/outfit/loadout/lt_frontline // El Capitan pistol
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavelt
@@ -148,7 +148,6 @@
 	accessory = /obj/item/clothing/accessory/enclave/second_lieutenant
 	id = /obj/item/card/id/dogtag/enclave/officer
 	ears = /obj/item/radio/headset/headset_enclave/command
-	l_pocket = /obj/item/clothing/mask/chameleon
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 3,
@@ -157,7 +156,8 @@
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/card/id/syndicate/anyone = 1,
-		/obj/item/stock_parts/cell/ammo/ec = 2
+		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/clothing/mask/chameleon = 1
 		)
 
 
@@ -200,15 +200,15 @@
 	total_positions = 1
 	spawn_positions = 1
 	access = list(ACCESS_ENCLAVE, ACCESS_CHANGE_IDS, ACCESS_ENCLAVE_COMMAND, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
-	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. Second in command after Lieutenant, your role is to direct their orders directly to the Sergeants and regular troops."
+	description = "You're the second in command of a force of Enclave Remnant marines, part of the Rapid Reaction Corps. You are a hardened veteran, with a breadth of experience serving America.  Second in command after the Lieutenant, your role is to assist them in planning, issue their orders to the Sergeant and regular troops, and use your knowledge to ensure smooth operations for the company."
 	supervisors = "The Lieutenant."
 	outfit = /datum/outfit/job/enclave/peacekeeper/f13gysergeant
 	exp_type = EXP_TYPE_ENCLAVE
 	exp_requirements = 1020
 
 	loadout_options = list(
-		/datum/outfit/loadout/gysgt_ballistics, // Assault Carbine
-		/datum/outfit/loadout/gysgt_melee, // Citykiller+MK23
+		/datum/outfit/loadout/gysgt_ballistics, // APA
+		/datum/outfit/loadout/gysgt_melee, // MCA
 		)
 
 /datum/outfit/job/enclave/peacekeeper/f13gysergeant
@@ -216,7 +216,6 @@
 	jobtype = /datum/job/enclave/f13gysergeant
 	accessory = /obj/item/clothing/accessory/enclave/sergeant_firstclass
 	ears = /obj/item/radio/headset/headset_enclave/command
-	l_pocket = /obj/item/clothing/mask/chameleon
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
@@ -226,11 +225,12 @@
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/megaphone = 1,
 		/obj/item/card/id/syndicate/anyone = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 3
+		/obj/item/stock_parts/cell/ammo/mfc = 3,
+		/obj/item/clothing/mask/chameleon = 1
 		)
 
 /datum/outfit/loadout/gysgt_ballistics
-	name = "Artillery SNCO"
+	name = "Armored Rifleman"
 	head = /obj/item/clothing/head/helmet/f13/power_armor/x02helmet
 	suit = /obj/item/clothing/suit/armor/f13/power_armor/x02
 
@@ -239,7 +239,7 @@
 	)
 
 /datum/outfit/loadout/gysgt_melee
-	name = "Armored Cavalry SNCO"
+	name = "Mobile Rifleman"
 	suit = /obj/item/clothing/suit/armor/f13/enclave/marine
 	head = /obj/item/clothing/head/helmet/f13/enclave/marine
 
@@ -267,16 +267,16 @@
 	flag = F13USSGT
 	total_positions = 1
 	spawn_positions = 1
-	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. Entrusted with the command of the squads assigned to the bunker, your job is to assist the Lieutenant alongside the scientists."
+	description = "You're an NCO in a force of Enclave Remnant marines, part of the Rapid Reaction Corps. You are a well-trained soldier, entrusted with a valuable suit of Advanced Power Armor and heavy weapons. Depending on the mission, you may provide fire support in heavy combat or you may command covert teams in the field."
 	supervisors = "The Lieutenant and the Gunnery Sergeant."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavesgt
 	exp_type = EXP_TYPE_ENCLAVE
 	exp_requirements = 780
 
 	loadout_options = list(
-		/datum/outfit/loadout/sgt_plascaster,	// Minigun
+		/datum/outfit/loadout/sgt_plascaster,	// Plasma Caster
 		/datum/outfit/loadout/sgt_sniper, //MK23+Gauss
-		/datum/outfit/loadout/sgt_classic, // Plasma rifle+MK23
+		/datum/outfit/loadout/sgt_classic, // MK23+Plasma spear
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavesgt
@@ -285,7 +285,7 @@
 	head = /obj/item/clothing/head/helmet/f13/power_armor/x02helmet
 	suit = /obj/item/clothing/suit/armor/f13/power_armor/x02
 	accessory = /obj/item/clothing/accessory/enclave/sergeant
-	l_pocket = /obj/item/clothing/mask/chameleon
+
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
@@ -294,11 +294,12 @@
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/clothing/head/f13/enclave/peacekeeper = 1,
-		/obj/item/card/id/syndicate/anyone =1
+		/obj/item/card/id/syndicate/anyone = 1,
+		/obj/item/clothing/mask/chameleon = 1
 		)
 
 /datum/outfit/loadout/sgt_plascaster
-	name = "Caster"
+	name = "Close Quarters Assaultman"
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/plasma/caster = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 5
@@ -314,7 +315,7 @@
 		)
 
 /datum/outfit/loadout/sgt_classic
-	name = "Close Quarters"
+	name = "Point Defense Assaultman"
 	backpack_contents = list(
 		/obj/item/twohanded/inquis_spear = 1,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
@@ -408,7 +409,7 @@
 	flag = F13USSPECIALIST
 	total_positions = 2
 	spawn_positions = 2
-	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. You are an operative for the remnants of the Enclave. You, unlike the normal Privates, have recieved specialist training in either engineering or medicine."
+	description = "You're a support fighter in a force of Enclave Remnant marines, part of the Rapid Reaction Corps. You, unlike the average Privates, have recieved specialist training in either engineering or medicine."
 	supervisors = "The Lieutenant and the Sergeants."
 	outfit = /datum/outfit/job/enclave/peacekeeper/f13specialist
 	exp_type = EXP_TYPE_ENCLAVE
@@ -416,14 +417,14 @@
 
 	loadout_options = list(
 		/datum/outfit/loadout/combatmedic, // MP5, Defib, medbooks
-		/datum/outfit/loadout/combatengie, // grenade rifle, MK23, TOOLBELT
+		/datum/outfit/loadout/combatengie, // grenade rifle, MK23, Police shotgun, TOOLBELT
 		)
 
 /datum/outfit/job/enclave/peacekeeper/f13specialist
 	name = "Enclave Specialist"
 	jobtype = /datum/job/enclave/f13specialist
 	head = /obj/item/clothing/head/helmet/f13/combat/enclave
-	suit = /obj/item/clothing/suit/armor/f13/combat/enclave
+	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/enclave
 	accessory = /obj/item/clothing/accessory/enclave/specialist
 
 	backpack_contents = list(
@@ -476,7 +477,8 @@
 	flag = F13USPRIVATE
 	total_positions = 3
 	spawn_positions = 4
-	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. You are an enlisted member of the Enclave. Obey your Lieutenant. They set the Enclave's policies. Unfortunately, you've not yet received your PA training."
+	description = "You're a grunt in a force of Enclave Remnant marines, part of the Rapid Reaction Corps. You may be an experienced trooper, or you may be a fresh recruit in need of training, either from the Enclave's tiny population, the hidden, Enclave-controlled Vault 45, or from concealed Enclave cryostasis bunkers. Be careful not to do anything that will expose the Enclave's presence to its many enemies."
+	supervisors = "The Lieutenant, the Sergeants, and the Specialists."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavespy
 	exp_type = EXP_TYPE_FALLOUT
 	exp_requirements = 600
@@ -491,7 +493,7 @@
 	jobtype = /datum/job/enclave/enclavespy
 	accessory = /obj/item/clothing/accessory/enclave/private_firstclass
 	head = /obj/item/clothing/head/helmet/f13/combat/enclave
-	suit = /obj/item/clothing/suit/armor/f13/combat/enclave
+	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/enclave
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
@@ -504,14 +506,14 @@
 		)
 
 /datum/outfit/loadout/reconmarine
-	name = "1st Reconnaisance Marine"
+	name = "Pursuit Rifleman"
 	suit_store = /obj/item/gun/ballistic/automatic/smg/mp5
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/uzim9mm = 2,
 		)
 
 /datum/outfit/loadout/mobileartillery
-	name = "Mobile Artillery"
+	name = "Pointman Rifleman"
 	suit_store = /obj/item/gun/energy/laser/plasma/pistol
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/ec = 2,
@@ -532,8 +534,8 @@
 	flag = F13USSCIENTIST
 	total_positions = 2
 	spawn_positions = 2
-	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. You're responsible for the maintenance of the base and field studies, the knowledge you've accumulated over the years is the only thing keeping the remnants alive. You've dabbled in enough to be considered a Professor in your field of research, but they call you Doctor. Support your dwindling forces and listen to the Lieutenant."
-	supervisors = "Lieutenants, Captains and the Enclave Research & Development Division."
+	description = "You're a highly-trained academic working in a force of Enclave Remnant marines, part of the Rapid Reaction Corps. You're responsible for a wide array of non-combat tasks, from materials science research to medical treatment to biological weapons and augmentations testing. You've dabbled in enough to be considered a Professor in your field of research, but they call you Doctor. Support your fellow Americans, and avoid leaving the bunker alone if not absolutely necessary."
+	supervisors = "The Lieutenant and the Gunnery Sergeant."
 	outfit = /datum/outfit/job/enclave/noncombat/enclavesci
 	exp_type = EXP_TYPE_FALLOUT
 	exp_requirements = 600
@@ -554,8 +556,8 @@
 		/obj/item/storage/survivalkit_aid_adv = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/pda = 1,
-		/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
-		/obj/item/ammo_box/magazine/m10mm_adv/simple =2,
+		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
+		/obj/item/ammo_box/magazine/m45exp =2,
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/clothing/mask/chameleon = 1,
@@ -635,8 +637,8 @@
 	flag = F13USBDUTY
 	total_positions = 7
 	spawn_positions = 7
-	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. You're a non-combatant, skilled in a field outside of exterior operations. Given your value, you aren't permitted to engage in conflict."
-	enforces = "You are not permited to leave the base. You are a non-combatant. You cannot join any raids or battles on the surface. You cannot not run dungeons."
+	description = "You're either new meat or an off-duty member of a force of Enclave Remnant marines, part of the Rapid Reaction Corps. You're a non-combatant, and may be in training or just have a specialty not useful in combat, like nursing or maintenance."
+	enforces = "You are not permitted to leave the base. You are a non-combatant. You cannot join any raids or battles on the surface. You cannot run dungeons."
 	supervisors = "Everyone else."
 	outfit = /datum/outfit/job/enclave/noncombat/f13BDUTY
 	roleplay_exclusive_notify = 1

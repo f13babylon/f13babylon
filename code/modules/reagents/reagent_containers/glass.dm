@@ -105,7 +105,7 @@
 		reagents.expose_temperature(hotness)
 		to_chat(user, "<span class='notice'>You heat [name] with [I]!</span>")
 
-	if(istype(I, /obj/item/reagent_containers/food/snacks/egg)) //breaking eggs
+	if(istype(I, /obj/item/reagent_containers/food/snacks/egg))	//breaking eggs
 		var/obj/item/reagent_containers/food/snacks/egg/E = I
 		if(reagents)
 			if(reagents.total_volume >= reagents.maximum_volume)
@@ -116,6 +116,23 @@
 				qdel(E)
 			return
 	..()
+
+/obj/item/reagent_containers/glass/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
+	if(attack_type & ATTACK_TYPE_PROJECTILE)
+		var/obj/item/projectile/P = object
+		if(damage && !P.nodamage && (P.damage_type != STAMINA) && prob(15))
+			owner.visible_message("<span class='danger'>[attack_text] hits [owner]'s [src], breaking it apart! What a shot!</span>", \
+								  "<span class='userdanger'>The [src] breaks apart, splashing you with its contents!</span>")
+			var/R = reagents?.log_list()
+			reagents.reaction(owner, TOUCH)
+			var/turf/UT = get_turf(attacker)
+			var/turf/MT = get_turf(owner)
+			log_reagent("BEAKER SHOT: [key_name(owner)]'s beaker at [AREACOORD(MT)] was shot by [key_name(attacker)] at [AREACOORD(UT)]) - [R]")
+			reagents.clear_reagents()
+			playsound(src, get_sfx("shatter"), 100, 1)
+			qdel(src)
+			return BLOCK_SUCCESS | BLOCK_PHYSICAL_EXTERNAL
+	return ..()
 
 /obj/item/reagent_containers/glass/beaker
 	name = "beaker"
@@ -289,7 +306,7 @@
 	icon_state = "smallbottle"
 	item_state = "bottle"
 	custom_price = PRICE_CHEAP_AS_FREE
-	list_reagents = list(/datum/reagent/water = 49.5, /datum/reagent/fluorine = 0.5)//see desc, don't think about it too hard
+	list_reagents = list(/datum/reagent/water = 49.5, /datum/reagent/fluorine = 0.5)	//see desc, don't think about it too hard
 	custom_materials = list(/datum/material/glass=0)
 	volume = 50
 	amount_per_transfer_from_this = 10

@@ -40,7 +40,7 @@
 	. = ..()
 	if(myseed && chems.has_reagent(src.type, 1))
 		mytray.adjustHealth(-round(chems.get_reagent_amount(src.type) * 0.025))
-		myseed.adjust_instability(round(chems.get_reagent_amount(src.type) * 0.3))
+		myseed.adjust_instability(round(chems.get_reagent_amount(src.type) * 0.9))
 
 // Enduro Grow Tribal Edition
 /datum/reagent/fortifying_compost

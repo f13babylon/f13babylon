@@ -96,20 +96,6 @@
 		to_chat(C, "<span class='danger'>You feel your insides burning, holy shit!</span>")
 	return ..()
 
-//FEV - Curling 13: The murderous type
-/datum/reagent/toxin/FEV_solution/curling
-	name = "Curling-13 solution"
-	description = "A heavily modified version of FEV, produced with intent to kill all 'mutated' lifeforms."
-	fev_disease = /datum/disease/curling_thirteen
-	can_synth = FALSE
-
-/datum/reagent/toxin/FEV_solution/curling/on_mob_add(mob/living/L)
-	if(ishuman(L))
-		var/mob/living/carbon/human/H = L
-		overdose_process(H) // Disease
-		H.apply_effect(600,EFFECT_IRRADIATE,0) //Curling is mixed with a radioactive precursor to accelerate its lethality.
-		return
-
 /datum/reagent/toxin/mutagen
 	name = "Diluted Forced Evolutionary Virus"
 	description = "Causes unpredictable mutations in plants, animals and people."
