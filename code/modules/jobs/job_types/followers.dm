@@ -97,6 +97,7 @@ Administrator
 		/obj/item/storage/firstaid/ancient = 1,
 		/obj/item/reagent_containers/medspray/synthflesh = 2,
 		/obj/item/clothing/glasses/hud/health = 1,
+		/obj/item/pda/medical = 1,
 		/obj/item/book/granter/trait/chemistry = 1,
 		/obj/item/book/granter/trait/techno = 1,
 		/obj/item/healthanalyzer/advanced
