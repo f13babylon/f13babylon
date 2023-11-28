@@ -97,6 +97,12 @@
 	icon_state = "erin_boot"
 	item_state = "erin_boot"
 
+/obj/item/clothing/shoes/f13/military/oldserviceboots
+	name = old service boots"
+	desc = "Tall kevlar boots, visibly weathered and worn-down."
+	icon_state = "boots_enclave"
+	item_state = "boots_enclave"
+
 /obj/item/clothing/shoes/f13/military/ncr
 	name = "patrol boots"
 	desc = "A pair of standard issue brown boots, with a puttee."
