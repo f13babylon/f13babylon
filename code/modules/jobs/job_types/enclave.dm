@@ -224,7 +224,6 @@
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/megaphone = 1,
 		/obj/item/card/id/syndicate/anyone = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 3,
 		/obj/item/clothing/mask/chameleon = 1
 		)
 
@@ -234,7 +233,8 @@
 	suit = /obj/item/clothing/suit/armor/f13/power_armor/x02
 
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/plasma = 1
+		/obj/item/gun/energy/laser/plasma = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 3
 	)
 
 /datum/outfit/loadout/gysgt_melee
@@ -243,7 +243,8 @@
 	head = /obj/item/clothing/head/helmet/f13/enclave/marine
 
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/plasma = 1
+		/obj/item/gun/energy/laser/plasma = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 3
 	)
 
 
