@@ -9884,6 +9884,10 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/tunnel)
+"kUL" = (
+/obj/effect/decal/cleanable/greenglow/radioactive,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/sewer)
 "kVl" = (
 /obj/structure/wreck/trash/machinepile,
 /turf/open/floor/plasteel/f13/vault_floor/yellow{
@@ -12511,10 +12515,6 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/tunnel)
-"pRa" = (
-/obj/effect/decal/cleanable/greenglow/radioactive,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/sewer)
 "pRH" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -66166,7 +66166,7 @@ aae
 bQP
 bQA
 bQA
-pRa
+kUL
 bQA
 bQA
 bQA
@@ -67710,7 +67710,7 @@ bQM
 bQA
 bQA
 bQA
-pRa
+kUL
 bQA
 bQC
 bQC
@@ -69502,7 +69502,7 @@ bQN
 bQY
 bQC
 bQA
-pRa
+kUL
 bQA
 bQP
 bSn
@@ -69764,7 +69764,7 @@ bQA
 bQA
 bQA
 bQA
-pRa
+kUL
 bQA
 bQB
 bQB
