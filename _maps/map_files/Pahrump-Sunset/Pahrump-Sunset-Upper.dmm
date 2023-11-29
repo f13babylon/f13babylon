@@ -6115,12 +6115,6 @@
 	},
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/building/mall)
-"jCS" = (
-/turf/open/floor/f13/wood{
-	tag = "icon-housewood4-broken";
-	icon_state = "housewood4-broken"
-	},
-/area/f13/building)
 "jFv" = (
 /obj/structure/railing{
 	dir = 1
@@ -6529,7 +6523,6 @@
 /area/f13/building/mall)
 "kjV" = (
 /turf/open/floor/f13/wood{
-	tag = "icon-housewood3-broken";
 	icon_state = "housewood3-broken"
 	},
 /area/f13/building)
@@ -8178,7 +8171,6 @@
 /turf/open/floor/wood/wood_fancy,
 /area/f13/brotherhood)
 "mRe" = (
-/obj/structure/barricade/wooden,
 /turf/closed/wall/f13/wood/house,
 /area/f13/building)
 "mRX" = (
@@ -9760,8 +9752,7 @@
 	pixel_x = 18
 	},
 /turf/open/floor/f13/wood{
-	tag = "icon-housewood4-broken";
-	icon_state = "housewood4-broken"
+	icon_state = "housewood3-broken"
 	},
 /area/f13/building)
 "pyw" = (
@@ -9952,7 +9943,6 @@
 /turf/open/floor/f13/wood,
 /area/f13/building/mall)
 "pMz" = (
-/obj/structure/barricade/wooden,
 /turf/closed/wall/f13/wood/house/broken,
 /area/f13/building)
 "pNa" = (
@@ -13528,7 +13518,6 @@
 "vMe" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood{
-	tag = "icon-housewood3-broken";
 	icon_state = "housewood3-broken"
 	},
 /area/f13/building)
@@ -58606,8 +58595,8 @@ uQx
 hQm
 kOg
 fsC
-kOg
-jCS
+hQm
+hQm
 hQm
 mpm
 htF
