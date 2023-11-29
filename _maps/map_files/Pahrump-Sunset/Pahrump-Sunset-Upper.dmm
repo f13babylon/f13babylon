@@ -1550,7 +1550,7 @@
 /obj/structure/decoration/hatch{
 	dir = 1;
 	pixel_y = -12;
-	layer = 3.5;
+	layer = 3.0;
 	pixel_x = -1
 	},
 /obj/effect/decal/cleanable/generic,

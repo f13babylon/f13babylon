@@ -14816,7 +14816,7 @@
 /obj/structure/decoration/rag,
 /obj/structure/decoration/rag{
 	icon_state = "skulls";
-	layer = 3.5
+	layer = 3.0
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/outside/water,
@@ -19887,10 +19887,6 @@
 /area/f13/wasteland/east)
 "buV" = (
 /obj/structure/simple_door/metal/barred,
-/obj/structure/decoration/rag{
-	icon_state = "skulls";
-	layer = 3.5
-	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
 "bvc" = (
@@ -27855,7 +27851,7 @@
 	},
 /obj/structure/decoration/rag{
 	icon_state = "skulls";
-	layer = 3.5
+	layer = 3.0
 	},
 /turf/closed/wall/f13/wood,
 /area/f13/building)
@@ -29491,9 +29487,6 @@
 /area/f13/caves)
 "feE" = (
 /obj/structure/window/fulltile/wood,
-/obj/structure/decoration/rag{
-	icon_state = "skulls"
-	},
 /obj/structure/barricade/bars{
 	max_integrity = 800;
 	name = "strong metal bars";
@@ -31520,7 +31513,7 @@
 /obj/structure/decoration/hatch{
 	dir = 1;
 	pixel_y = -12;
-	layer = 3.5;
+	layer = 3.0;
 	pixel_x = -1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
@@ -33144,7 +33137,7 @@
 	pixel_y = -1;
 	pixel_x = -15;
 	light_on = 1;
-	anchored = 1s;
+	anchored = 1;
 	icon_state = "lantern-on";
 	on = 1
 	},
@@ -33291,10 +33284,6 @@
 /area/f13/building)
 "gWQ" = (
 /obj/structure/barricade/wooden,
-/obj/structure/decoration/rag{
-	icon_state = "skulls";
-	layer = 3.5
-	},
 /obj/structure/barricade/wooden/planks/pregame{
 	layer = 3.2
 	},
@@ -37441,9 +37430,9 @@
 /area/f13/building/mall)
 "iYZ" = (
 /obj/structure/barricade/wooden,
-/obj/structure/decoration/rag{
-	icon_state = "skulls";
-	layer = 3.5
+/obj/effect/overlay/barbed{
+	dir = 1;
+	pixel_y = 22
 	},
 /turf/closed/wall/f13/wood,
 /area/f13/building)
@@ -38375,12 +38364,12 @@
 	name = "strong metal bars";
 	obj_integrity = 800
 	},
-/obj/structure/decoration/rag{
-	icon_state = "skulls";
-	layer = 3.5
-	},
 /obj/structure/fence/wooden{
 	dir = 4
+	},
+/obj/structure/decoration/rag{
+	icon_state = "skulls";
+	layer = 3.0
 	},
 /turf/open/indestructible/ground/inside/subway{
 	name = "stone floor"
@@ -44314,7 +44303,7 @@
 	pixel_y = -2;
 	pixel_x = -18;
 	light_on = 1;
-	anchored = 1sssss;
+	anchored = 1;
 	icon_state = "lantern-on";
 	on = 1
 	},
@@ -55900,13 +55889,14 @@
 /obj/structure/fence/wooden{
 	dir = 4
 	},
-/obj/structure/decoration/rag{
-	icon_state = "skulls"
-	},
 /obj/effect/overlay/barbed{
 	dir = 4;
 	pixel_y = -7;
 	pixel_x = -5
+	},
+/obj/structure/decoration/rag{
+	icon_state = "skulls";
+	layer = 3.0
 	},
 /turf/closed/wall/f13/wood,
 /area/f13/building)
@@ -59234,7 +59224,8 @@
 "tkH" = (
 /obj/structure/barricade/wooden,
 /obj/structure/decoration/rag{
-	icon_state = "skulls"
+	icon_state = "skulls";
+	layer = 3.0
 	},
 /turf/closed/wall/f13/wood,
 /area/f13/building)
@@ -60661,14 +60652,14 @@
 /obj/item/defibrillator/primitive{
 	desc = "A Delco-brand pre-war car battery, with alligator clips and jumper cables to match. This could probably work as a makeshift defibrillator, in a pinch.";
 	name = "car battery";
-	layer = s;
+	layer = null;
 	pixel_y = 20;
 	pixel_x = -3
 	},
 /obj/item/defibrillator/primitive{
 	desc = "A Delco-brand pre-war car battery, with alligator clips and jumper cables to match. This could probably work as a makeshift defibrillator, in a pinch.";
 	name = "car battery";
-	layer = s;
+	layer = null;
 	pixel_y = 1;
 	pixel_x = -13
 	},
@@ -61053,7 +61044,7 @@
 	pixel_y = 12;
 	pixel_x = -18;
 	light_on = 1;
-	anchored = 1ssssss;
+	anchored = 1;
 	icon_state = "lantern-on";
 	on = 1
 	},
@@ -61465,24 +61456,6 @@
 	icon_state = "yellowrustychess"
 	},
 /area/f13/building/massfusion)
-"ump" = (
-/obj/structure/decoration/hatch{
-	dir = 1;
-	pixel_y = -12;
-	layer = 3.5;
-	pixel_x = -1
-	},
-/obj/structure/reagent_dispensers/rainwater_tank{
-	pixel_x = 1;
-	pixel_y = 22;
-	density = 0
-	},
-/obj/machinery/shower{
-	pixel_y = 9;
-	pixel_x = 9
-	},
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/building)
 "umx" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -64020,7 +63993,7 @@
 /obj/structure/decoration/rag,
 /obj/structure/decoration/rag{
 	icon_state = "skulls";
-	layer = 3.5
+	layer = 3.0
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/outside/water,
@@ -64367,12 +64340,6 @@
 /turf/open/floor/f13/wood,
 /area/f13/building/mall)
 "vBG" = (
-/obj/structure/decoration/hatch{
-	dir = 1;
-	pixel_y = -12;
-	layer = 3.5;
-	pixel_x = -1
-	},
 /obj/effect/decal/cleanable/semen/femcum,
 /obj/structure/reagent_dispensers/rainwater_tank{
 	pixel_x = 1;
@@ -64382,6 +64349,12 @@
 /obj/machinery/shower{
 	pixel_y = 9;
 	pixel_x = 9
+	},
+/obj/structure/decoration/hatch{
+	dir = 1;
+	pixel_y = -12;
+	layer = 3.0;
+	pixel_x = -1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/building)
@@ -66158,7 +66131,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
 /obj/structure/debris/v3{
-	layer = 4.5
+	layer = 4.0
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
@@ -67584,7 +67557,7 @@
 	},
 /obj/structure/decoration/rag{
 	icon_state = "skulls";
-	layer = 3.5
+	layer = 3.0
 	},
 /turf/closed/wall/f13/tentwall,
 /area/f13/building)
@@ -68874,10 +68847,6 @@
 "xIY" = (
 /turf/open/floor/wood/wood_worn,
 /area/f13/city/bighorn)
-"xJf" = (
-/obj/effect/decal/cleanable/blood/gibs/human/lizard,
-/turf/closed/wall/f13/tunnel,
-/area/f13/building/massfusion)
 "xJp" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 8;
@@ -106285,7 +106254,7 @@ acs
 qOS
 pXC
 dJL
-iYZ
+tkH
 ssp
 iqB
 krf
@@ -110895,7 +110864,7 @@ aaa
 (160,1,1) = {"
 aaa
 ral
-ump
+gds
 eTC
 jHl
 sAm
@@ -113233,7 +113202,7 @@ qRl
 xUm
 nVQ
 acl
-mSr
+iYZ
 uHf
 qYv
 prR
@@ -115028,7 +114997,7 @@ aae
 aae
 aae
 aae
-xJf
+nbZ
 cBj
 cBj
 eXI
