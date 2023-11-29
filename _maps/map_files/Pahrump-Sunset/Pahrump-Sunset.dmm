@@ -235,7 +235,7 @@
 /obj/machinery/light/broken{
 	dir = 1
 	},
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "darkrusty"
 	},
@@ -270,7 +270,7 @@
 /area/f13/bunker)
 "abb" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "darkrusty"
 	},
@@ -783,7 +783,7 @@
 /area/f13/radiation)
 "acU" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "darkrusty"
 	},
@@ -1319,7 +1319,7 @@
 /area/f13/wasteland/west)
 "afe" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/machinery/light/broken{
 	dir = 4
 	},
@@ -2183,7 +2183,7 @@
 	},
 /area/f13/wasteland/quarry)
 "aix" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 8;
 	icon_state = "dirt"
@@ -2452,7 +2452,7 @@
 /area/f13/wasteland/west)
 "ajs" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowrustysolid"
@@ -2669,7 +2669,7 @@
 	},
 /area/f13/wasteland/west)
 "akj" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/quarry)
 "akk" = (
@@ -3155,9 +3155,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city/bighorn)
 "amf" = (
-/obj/effect/decal/waste{
-	icon_state = "goo8"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderleft1"
 	},
@@ -3817,9 +3815,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "apa" = (
-/obj/effect/decal/waste{
-	icon_state = "goo8"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/structure/reagent_dispensers/barrel/three,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain2"
@@ -7134,9 +7130,7 @@
 "aBc" = (
 /obj/item/storage/toolbox/mechanical,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/waste{
-	icon_state = "goo5"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/building/mall)
 "aBd" = (
@@ -10237,9 +10231,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "aLu" = (
-/obj/effect/decal/waste{
-	icon_state = "goo5"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/ruins{
 	dir = 5;
 	icon_state = "rubble"
@@ -10316,9 +10308,7 @@
 	},
 /area/f13/building/massfusion)
 "aLJ" = (
-/obj/effect/decal/waste{
-	icon_state = "goo5"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/ruins{
 	dir = 10;
 	icon_state = "rubble"
@@ -13564,7 +13554,7 @@
 /obj/machinery/light/broken{
 	dir = 4
 	},
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "whitegreenrustychess"
 	},
@@ -14455,9 +14445,7 @@
 /area/f13/wasteland/bighorn)
 "aZH" = (
 /obj/structure/reagent_dispensers/barrel/three,
-/obj/effect/decal/waste{
-	icon_state = "goo12"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/west)
 "aZL" = (
@@ -14525,9 +14513,7 @@
 	},
 /area/f13/building/bighornbunker)
 "aZT" = (
-/obj/effect/decal/waste{
-	icon_state = "goo8"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/west)
 "aZU" = (
@@ -14567,9 +14553,7 @@
 /turf/open/indestructible/ground/outside/savannah/bottomright,
 /area/f13/building/nanotrasen)
 "bab" = (
-/obj/effect/decal/waste{
-	icon_state = "goo5"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/west)
 "bac" = (
@@ -20578,7 +20562,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/bighorn)
 "bDd" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaltopbordertop2"
 	},
@@ -20669,9 +20653,7 @@
 /area/f13/wasteland/museum)
 "bET" = (
 /obj/structure/car,
-/obj/effect/decal/waste{
-	icon_state = "goo5"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright0"
 	},
@@ -21148,9 +21130,7 @@
 /obj/machinery/washing_machine,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/waste{
-	icon_state = "goo5"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/building/mall)
 "bRl" = (
@@ -21237,7 +21217,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building/mall)
 "bSv" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "darkrustysolid"
 	},
@@ -21279,9 +21259,7 @@
 /turf/open/floor/plating,
 /area/f13/caves)
 "bTk" = (
-/obj/effect/decal/waste{
-	icon_state = "goo8"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain0"
@@ -22322,7 +22300,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "ciV" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "darkrusty"
 	},
@@ -23358,9 +23336,7 @@
 	},
 /area/f13/wasteland/east)
 "ctk" = (
-/obj/effect/decal/waste{
-	icon_state = "goo8"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright0"
 	},
@@ -24192,9 +24168,7 @@
 /obj/structure/chair{
 	dir = 4
 	},
-/obj/effect/decal/waste{
-	icon_state = "goo8"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -26402,7 +26376,7 @@
 /area/f13/wasteland/museum)
 "dZF" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "darkrustysolid"
 	},
@@ -27918,7 +27892,7 @@
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 1
 	},
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain0"
 	},
@@ -28243,9 +28217,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "faD" = (
-/obj/effect/decal/waste{
-	icon_state = "goo8"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom2"
 	},
@@ -28281,7 +28253,7 @@
 /area/f13/wasteland/east)
 "fbg" = (
 /obj/effect/decal/cleanable/generic,
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "darkrusty"
 	},
@@ -29073,7 +29045,7 @@
 /area/f13/wasteland/museum)
 "fxc" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowrustychess"
 	},
@@ -29694,7 +29666,7 @@
 	},
 /area/f13/building/massfusion)
 "fOe" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "greenrustychess"
 	},
@@ -29760,7 +29732,7 @@
 "fPS" = (
 /obj/effect/decal/cleanable/generic,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowrustysolid"
 	},
@@ -29836,7 +29808,7 @@
 /obj/machinery/light/broken{
 	dir = 1
 	},
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/plasteel/f13{
 	icon_state = "darkrusty"
@@ -31155,7 +31127,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/village)
 "gHD" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright0"
 	},
@@ -31559,7 +31531,7 @@
 /turf/open/floor/wood,
 /area/f13/brotherhood)
 "gSk" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaltopbordertop0"
 	},
@@ -32126,7 +32098,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood)
 "hgN" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowrustysolid"
@@ -35774,7 +35746,7 @@
 	},
 /area/f13/building/mall)
 "jeD" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain0"
 	},
@@ -36640,9 +36612,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland/bighorn)
 "jCz" = (
-/obj/effect/decal/waste{
-	icon_state = "goo8"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain0"
 	},
@@ -36787,7 +36757,7 @@
 	},
 /area/f13/village)
 "jHo" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "greenrustysolid"
 	},
@@ -37091,7 +37061,7 @@
 	},
 /area/f13/wasteland/bighorn)
 "jQY" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/building/massfusion)
 "jQZ" = (
@@ -37139,7 +37109,7 @@
 	},
 /area/f13/building/massfusion)
 "jSl" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom0"
 	},
@@ -38220,9 +38190,7 @@
 	},
 /area/f13/building/massfusion)
 "kAc" = (
-/obj/effect/decal/waste{
-	icon_state = "goo8"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 8;
 	icon_state = "outerpavement"
@@ -38277,9 +38245,7 @@
 /obj/machinery/light{
 	pixel_x = 16
 	},
-/obj/effect/decal/waste{
-	icon_state = "goo10"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13/vault_floor/red/white/side,
 /area/f13/building/mall)
 "kCd" = (
@@ -38308,7 +38274,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 7;
 	icon_state = "outerpavement"
@@ -39955,9 +39921,7 @@
 /area/f13/building)
 "ltZ" = (
 /obj/effect/decal/remains/human,
-/obj/effect/decal/waste{
-	icon_state = "goo8"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain2"
 	},
@@ -40320,7 +40284,7 @@
 "lDF" = (
 /obj/effect/decal/cleanable/generic,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "greenrustychess"
 	},
@@ -41054,9 +41018,7 @@
 /area/f13/wasteland/bighorn)
 "lUl" = (
 /obj/structure/reagent_dispensers/barrel/dangerous,
-/obj/effect/decal/waste{
-	icon_state = "goo8"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderleft1"
 	},
@@ -41562,7 +41524,7 @@
 "mhC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowrustysolid"
@@ -41929,7 +41891,7 @@
 	},
 /area/f13/building/mall)
 "mqx" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderleft0"
 	},
@@ -42196,9 +42158,7 @@
 /area/f13/brotherhood/rnd)
 "mxv" = (
 /obj/structure/reagent_dispensers/barrel/dangerous,
-/obj/effect/decal/waste{
-	icon_state = "goo8"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderleft2"
 	},
@@ -43329,7 +43289,7 @@
 	},
 /area/f13/building/mall)
 "neJ" = (
-/obj/effect/decal/waste{
+/obj/effect/decal/cleanable/greenglow/radioactive{
 	pixel_x = 20;
 	pixel_y = 1
 	},
@@ -43870,9 +43830,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/effect/decal/waste{
-	icon_state = "goo12"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/machinery/light/broken{
 	dir = 1;
 	pixel_x = 16
@@ -44105,7 +44063,7 @@
 /turf/open/floor/wood/wood_wide,
 /area/f13/brotherhood/leisure)
 "nzW" = (
-/obj/effect/decal/waste{
+/obj/effect/decal/cleanable/greenglow/radioactive{
 	pixel_x = 20;
 	pixel_y = 1
 	},
@@ -45448,7 +45406,7 @@
 	},
 /area/f13/building/massfusion)
 "oiJ" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "darkrusty"
 	},
@@ -45477,9 +45435,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/quarry)
 "ojE" = (
-/obj/effect/decal/waste{
-	icon_state = "goo8"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderright0"
 	},
@@ -47999,9 +47955,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid,
 /area/f13/building/mall)
 "pyJ" = (
-/obj/effect/decal/waste{
-	icon_state = "goo5"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/effect/decal/cleanable/robot_debris/limb,
 /obj/effect/turf_decal/box/white,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -49929,7 +49883,7 @@
 /area/f13/brotherhood/offices1st)
 "qBw" = (
 /obj/machinery/light/broken,
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowrustychess"
 	},
@@ -51495,7 +51449,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "rqJ" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 10;
 	icon_state = "outerpavement"
@@ -51572,7 +51526,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building/museum)
 "rsE" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderright0"
 	},
@@ -52035,9 +51989,7 @@
 	},
 /area/f13/wasteland/east)
 "rGn" = (
-/obj/effect/decal/waste{
-	icon_state = "goo8"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderleft0"
 	},
@@ -54207,9 +54159,7 @@
 	},
 /area/f13/building/museum)
 "sRn" = (
-/obj/effect/decal/waste{
-	icon_state = "goo12"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/brotherhood)
 "sRF" = (
@@ -54454,7 +54404,7 @@
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 1
 	},
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderright0"
 	},
@@ -54736,9 +54686,7 @@
 	},
 /area/f13/wasteland/west)
 "tfr" = (
-/obj/effect/decal/waste{
-	icon_state = "goo12"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland/east)
 "tfH" = (
@@ -55174,9 +55122,7 @@
 "tso" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/cardboard,
-/obj/effect/decal/waste{
-	icon_state = "goo10"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/item/trash/f13/electronic/toaster,
 /turf/open/floor/plasteel/f13/vault_floor/red/white/corner{
 	dir = 8
@@ -55685,7 +55631,7 @@
 	pixel_x = -31;
 	pixel_y = -11
 	},
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/west)
 "tDy" = (
@@ -56279,7 +56225,7 @@
 /area/f13/building/massfusion)
 "tTl" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowrustysolid"
 	},
@@ -57090,7 +57036,7 @@
 /turf/open/floor/wood/wood_wide,
 /area/f13/brotherhood)
 "upR" = (
-/obj/effect/decal/waste{
+/obj/effect/decal/cleanable/greenglow/radioactive{
 	pixel_x = 20;
 	pixel_y = 1
 	},
@@ -57970,7 +57916,7 @@
 	},
 /area/f13/brotherhood/armory)
 "uLZ" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/plasteel/f13{
 	icon_state = "greenrustychess"
@@ -63843,9 +63789,7 @@
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/building/mall)
 "xSK" = (
-/obj/effect/decal/waste{
-	icon_state = "goo5"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -64037,7 +63981,7 @@
 	},
 /area/f13/followers)
 "xYE" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain1"
 	},

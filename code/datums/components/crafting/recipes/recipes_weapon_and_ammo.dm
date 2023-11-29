@@ -586,6 +586,19 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
+//remington rifle
+/datum/crafting_recipe/remingtonhuntingrifle
+	name = "Hunting Rifle"
+	result = /obj/item/gun/ballistic/rifle/hunting/remington
+	reqs = list(/obj/item/stack/crafting/goodparts = 2,
+				/obj/item/stack/crafting/metalparts = 2,
+				/obj/item/gun/ballistic/rifle/hunting)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_available = FALSE
+
 //battle rifle
 /datum/crafting_recipe/m1garand
 	name = "M1 Garand"

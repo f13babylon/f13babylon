@@ -1329,6 +1329,10 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/marksmancarbine)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1garand)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/scoutcarbine)
+
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/receiver)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/assembly)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/alloys)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK,  REF(src))
 
 /datum/outfit/job/ncr/f13logisticsofficer		// M1 Garand, 9mm sidearm, Survival knife, C-4 bomb, Extra materials, Full blueprints
@@ -1347,7 +1351,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE
-	gunsmith_four = TRUE
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv = 2,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
