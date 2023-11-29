@@ -18,10 +18,11 @@
 
 /obj/effect/spawner/lootdrop/f13/armor
 	name = "armor spawners - DO NOT USE THIS"
-	icon_state = "armor_loot"
+	icon_state = "icon_error"
 
 /obj/effect/spawner/lootdrop/f13/armor/clothes
 	name = "pre-war clothes spawner"
+	icon_state = "clothes_loot"
 	loot = list(
 				/obj/effect/spawner/bundle/f13/worker,
 				/obj/effect/spawner/bundle/f13/plaidskirt,
@@ -139,6 +140,7 @@
 
 /obj/effect/spawner/lootdrop/f13/armor/costumes
 	name = "pre-war costumes spawner"
+	icon_state = "costume_loot"
 	loot = list(
 				/obj/effect/spawner/bundle/f13/soviet,
 				/obj/effect/spawner/bundle/f13/geisha,
@@ -223,6 +225,7 @@
 
 /obj/effect/spawner/lootdrop/f13/armor/tier1 //TIER 1 ARMOR
 	name = "tier 1 armor"
+	icon_state = "armort1_loot"
 	loot = list(
 				/obj/item/clothing/suit/armor/f13/leather_jacket,
 				/obj/item/clothing/suit/armor/f13/leatherarmor,
@@ -236,6 +239,7 @@
 				/obj/effect/spawner/bundle/f13/armor/combatduster,
 				/obj/item/clothing/suit/armor/f13/raider/iconoclast,
 				/obj/item/clothing/suit/armor/f13/plates,
+				/obj/effect/spawner/bundle/f13/armor/goner/green
 	)
 
 /obj/effect/spawner/bundle/f13/armor/supafly
@@ -289,6 +293,7 @@
 
 /obj/effect/spawner/lootdrop/f13/armor/tier2 //TIER 2 ARMOR
 	name = "tier 2 armor"
+	icon_state = "armort2_loot"
 	loot = list(
 				/obj/effect/spawner/bundle/f13/armor/knight,
 				/obj/effect/spawner/bundle/f13/armor/metal,
@@ -323,6 +328,7 @@
 
 /obj/effect/spawner/lootdrop/f13/armor/tier3 //TIER 3 ARMOR
 	name = "tier 3 armor"
+	icon_state = "armort3_loot"
 	loot = list(
 				/obj/effect/spawner/bundle/f13/armor/metal/reinforced,
 				/obj/effect/spawner/bundle/f13/armor/swat,
@@ -375,6 +381,7 @@
 
 /obj/effect/spawner/lootdrop/f13/armor/tier4 //TIER 4 ARMOR
 	name = "tier 4 armor"
+	icon_state = "armort4_loot"
 	loot = list(
 				/obj/effect/spawner/bundle/f13/armor/t45b_salvaged,
 				/obj/effect/spawner/bundle/f13/armor/riot,
@@ -434,6 +441,7 @@
 
 /obj/effect/spawner/lootdrop/f13/armor/tier5 //TIER 5 ARMOR
 	name = "tier 5 armor"
+	icon_state = "armort5_loot"
 	loot = list(
 				/obj/effect/spawner/bundle/f13/armor/t45d,
 				/obj/effect/spawner/bundle/f13/armor/t51b,
@@ -471,6 +479,7 @@
 
 /obj/effect/spawner/lootdrop/f13/armor/random
 	name = "random armor loot"
+	icon_state = "armorrandom_loot"
 	lootcount = 1
 
 	loot = list(
@@ -481,6 +490,7 @@
 
 /obj/effect/spawner/lootdrop/f13/armor/random_high
 	name = "high tier random armor loot"
+	icon_state = "armorrandomhigh_loot"
 	lootcount = 1
 
 	loot = list(
@@ -496,9 +506,11 @@
 
 /obj/effect/spawner/lootdrop/f13/medical
 	name = "medical spawners - DO NOT USE THIS"
+	icon_state = "icon_error"
 
 /obj/effect/spawner/lootdrop/f13/medical/surgical
 	name = "surgical item spawner"
+	icon_state = "surgery_loot"
 	lootcount = 1
 
 	loot = list(
@@ -517,16 +529,18 @@
 /obj/effect/spawner/lootdrop/f13/medical/surgical/blood
 	name = "blood spawner"
 	lootcount = 1
-
 	loot = list(
 				/obj/item/reagent_containers/blood/random
 				)
 
+
 /obj/effect/spawner/lootdrop/f13/medical/vault
 	name = "vault medical spawner - DO NOT USE"
+	icon_state = "icon_error"
 
 /obj/effect/spawner/lootdrop/f13/medical/vault/equipment
 	name = "vault medical equipment spawner"
+	icon_state = "equipment_loot"
 	lootcount = 1
 
 	loot = list(
@@ -538,6 +552,7 @@
 
 /obj/effect/spawner/lootdrop/f13/medical/vault/meds  //no drugs, didn't add
 	name = "vault medical meds spawner"
+	icon_state = "medicine_loot"
 	lootcount = 1
 
 	loot = list(
@@ -552,6 +567,7 @@
 
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds //remove equipment, has nothing on it
 	name = "wasteland meds spawner"
+	icon_state = "medicine_loot"
 	lootcount = 1
 
 	loot = list(/obj/item/reagent_containers/pill/patch/healingpowder,
@@ -566,6 +582,7 @@
 
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug //remove equipment, has nothing on it
 	name = "wasteland drugs spawner"
+	icon_state = "chem_loot"
 	lootcount = 1
 
 	loot = list(
@@ -580,6 +597,7 @@
 
 /obj/effect/spawner/lootdrop/f13/medical/rnd/mid
 	name = "mid dungeon science loot"	//to replace guns as treasure in slightly protected areas
+	icon_state = "rnd_loot"
 	lootcount = 1
 
 	loot = list(
@@ -595,6 +613,7 @@
 
 /obj/effect/spawner/lootdrop/f13/medical/rnd/good
 	name = "good dungeon science loot"	//to replace guns as treasure in heavily guarded areas
+	icon_state = "rndgood_loot"
 	lootcount = 1
 
 	loot = list( //Now out of 100
@@ -617,6 +636,7 @@
 
 /obj/effect/spawner/lootdrop/f13/medical/random_fev
 	name = "random FEV bottle"	//for when you can't decide what is worse
+	icon_state = "fev_loot"
 	lootcount = 1
 
 	loot = list(
@@ -630,7 +650,7 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon
 	name = "weapon spawners - DO NOT USE THIS"
-	icon_state = "gun_loot"
+	icon_state = "icon_error"
 
 /*	------------------------------------------------
 	-----------MELEE WEAPON SPAWNERS----------------
@@ -638,7 +658,7 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/melee
 	name = "melee spawners - DO NOT USE THIS"
-	icon_state = "melee_loot"
+	icon_state = "icon_error"
 
 /obj/effect/spawner/bundle/f13/throwingknife3
 	name = "throwing knife spawner - 3"
@@ -651,6 +671,7 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier1 //TIER 1 MELEE WEAPON
 	name = "tier 1 melee"
+	icon_state = "meleet1_loot"
 	lootcount = 1
 	loot = list(/obj/item/crowbar,
 				/obj/item/extinguisher,
@@ -671,6 +692,7 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier2 //TIER 2 MELEE WEAPON
 	name = "tier 2 melee"
+	icon_state = "meleet2_loot"
 	lootcount = 1
 
 	loot = list(/obj/effect/spawner/bundle/f13/throwingknife3,
@@ -689,6 +711,7 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier3 //TIER 3 MELEE WEAPON
 	name = "tier 3 melee"
+	icon_state = "meleet3_loot"
 	lootcount = 1
 
 	loot = list(/obj/effect/spawner/bundle/f13/throwingknife3,
@@ -704,6 +727,7 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier4 //TIER 4 MELEE WEAPON
 	name = "tier 4 melee"
+	icon_state = "meleet4_loot"
 	lootcount = 1
 
 	loot = list(/obj/item/twohanded/fireaxe,
@@ -718,6 +742,7 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier5 //TIER 5 MELEE WEAPON
 	name = "tier 5 melee"
+	icon_state = "meleet5_loot"
 	lootcount = 1
 
 	loot = list(/obj/item/twohanded/thermic_lance,
@@ -734,6 +759,7 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random
 	name = "random melee loot"
+	icon_state = "meleerandom_loot"
 	lootcount = 1
 
 	loot = list(
@@ -745,6 +771,7 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random_mid
 	name = "mid tier random melee loot"
+	icon_state = "meleerandommid_loot"
 	loot = list(
 			/obj/effect/spawner/lootdrop/f13/weapon/melee/tier3 = 20,
 			/obj/effect/spawner/lootdrop/f13/weapon/melee/tier4 = 10
@@ -752,6 +779,7 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random_high
 	name = "high tier random melee loot"
+	icon_state = "meleerandomgood_loot"
 	lootcount = 1
 	loot = list(/obj/effect/spawner/lootdrop/f13/weapon/melee/tier4 = 2,
 			/obj/effect/spawner/lootdrop/f13/weapon/melee/tier5 = 1
@@ -763,16 +791,18 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun
 	name = "gun spawners - DO NOT USE THIS"
-	icon_state = "gun_loot"
+	icon_state = "icon_error"
 
 //Energy Weapon Spawners
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/low
+	icon_state = "egunlow_loot"
 	name = "low tier energy gun"
 	loot = list(/obj/effect/spawner/bundle/f13/wattz = 40,
 				/obj/effect/spawner/bundle/f13/wattzm = 25
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid
+	icon_state = "egunmid_loot"
 	name = "mid tier energy gun"
 	loot = list(/obj/effect/spawner/bundle/f13/aer9 = 26,
 				/obj/effect/spawner/bundle/f13/laserpistol = 15,
@@ -781,12 +811,14 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/midhigh //overlaps with midtier
 	name = "mid-high tier energy gun"
+	icon_state = "egunmidhigh_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/aer12,
 				/obj/effect/spawner/bundle/f13/ionrifle,
 				/obj/effect/spawner/bundle/f13/aer14
 				)
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/high
 	name = "high tier energy gun"
+	icon_state = "egunhigh_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/tribeam = 10,
 				/obj/effect/spawner/bundle/f13/rcw = 20,
 				/obj/effect/spawner/bundle/f13/aer14 = 20,
@@ -796,11 +828,13 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/superhigh
 	name = "superhigh tier energy gun"
+	icon_state = "egunsuperhigh_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/multiplas,
 				/obj/item/gun/energy/laser/plasma/pistol/alien
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/unique
+	icon_state = "egununique_loot"
 	name = "unique tier energy gun"
 	lootcount = 1
 
@@ -810,6 +844,7 @@
 //Ballistic Weapon Spawners
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/hobo
 	name = "hobo tier ballistic gun"
+	icon_state = "gunhobo_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/pepperbox,
 				/obj/effect/spawner/bundle/weapon/piperifle,
 				/obj/effect/spawner/bundle/f13/zipgun,
@@ -822,6 +857,7 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superlow
 	name = "very low tier non-hobo ballistic gun"
+	icon_state = "gunverylow_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/ninemil,
 				/obj/effect/spawner/bundle/f13/caravan_shotgun,
 				/obj/effect/spawner/bundle/f13/remington,
@@ -832,6 +868,7 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low
 	name = "low tier ballistic gun"
+	icon_state = "gunlow_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/m1911,
 				/obj/effect/spawner/bundle/f13/thatgun,
 				/obj/effect/spawner/bundle/f13/n99,
@@ -845,6 +882,7 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/lowmid
 	name = "low-mid tier ballistic gun"
+	icon_state = "gunlowmid_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/n99,
 				/obj/effect/spawner/bundle/f13/cowboy,
 				/obj/effect/spawner/bundle/f13/mk23,
@@ -859,6 +897,7 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid
 	name = "mid tier ballistic gun"
+	icon_state = "gunmid_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/trail,
 				/obj/effect/spawner/bundle/f13/service,
 				/obj/effect/spawner/bundle/f13/miniuzi,
@@ -871,6 +910,7 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/highmid
 	name = "high-mid tier ballistic gun"
+	icon_state = "gunhighmid_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/mp5,
 				/obj/effect/spawner/bundle/f13/smg10mm,
 				/obj/effect/spawner/bundle/f13/needler,
@@ -883,6 +923,7 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/high
 	name = "high tier ballistic gun"
+	icon_state = "gunhigh_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/assault_rifle = 20,
 				/obj/effect/spawner/bundle/f13/r84 = 10,
 				/obj/effect/spawner/bundle/f13/dkssniper = 15,
@@ -892,6 +933,7 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superhigh
 	name = "superhigh tier ballistic gun"
+	icon_state = "gunsuperhigh_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/amr = 10,
 				/obj/effect/spawner/bundle/f13/brushgun = 15,
 				/obj/effect/spawner/bundle/f13/rangemaster = 15,
@@ -902,6 +944,7 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/unique
 	name = "unique tier ballistic gun"
+	icon_state = "gununique_loot"
 	lootcount = 1
 
 	loot = list(
@@ -919,6 +962,7 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/revolver44variants
 	name = "random spawner for .44 revolvers/variants"
+	icon_state = "m29_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/revolverm29,
 				/obj/effect/spawner/bundle/f13/revolverm29alt,
 				/obj/effect/spawner/bundle/f13/revolver44,
@@ -1530,10 +1574,11 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo
 	name = "ammo spawners - DO NOT USE THIS"
-	icon_state = "ammo_loot"
+	icon_state = "icon_error"
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1
 	name = "tier 1 ammo"
+	icon_state = "ammot1_loot"
 	lootcount = 2 //2 random ammo
 	lootdoubles = TRUE
 
@@ -1548,6 +1593,7 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2
 	name = "tier 2 ammo"
+	icon_state = "ammot2_loot"
 	lootdoubles = TRUE
 
 	loot = list(
@@ -1570,6 +1616,7 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3
 	name = "tier 3 ammo"
+	icon_state = "ammot3_loot"
 	lootdoubles = TRUE
 
 	loot = list(
@@ -1590,6 +1637,7 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4
 	name = "tier 4 ammo"
+	icon_state = "ammot4_loot"
 	lootdoubles = TRUE
 
 	loot = list(
@@ -1611,6 +1659,7 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5
 	name = "tier 5 ammo"
+	icon_state = "ammot5_loot"
 	lootdoubles = TRUE
 
 	loot = list(
@@ -1631,13 +1680,13 @@
 	. = ..()
 
 //BOMBS N GRENADES
-/obj/effect/spawner/loot/f13/bomb
+/obj/effect/spawner/lootdrop/f13/bomb
 	name = "DO NOT USE THIS BASIC SPAWNER"
-	icon_state = "ammo_loot"
+	icon_state = "icon_error"
 
 /obj/effect/spawner/lootdrop/f13/bomb/tier1
 	name = "tier 1 grenade spawner"
-	icon_state = "ammo_loot"
+	icon_state = "bombt1_loot"
 	lootdoubles = TRUE
 	lootcount = 2 //2 random grenades
 	loot = list(
@@ -1649,6 +1698,8 @@
 				)
 
 /obj/effect/spawner/lootdrop/f13/bomb/tier2
+	name = "tier 2 grenade spawner"
+	icon_state = "bombt2_loot"
 	loot = list(
 				/obj/item/grenade/f13/frag = 30,
 				/obj/item/grenade/flashbang,
@@ -1657,6 +1708,8 @@
 				)
 
 /obj/effect/spawner/lootdrop/f13/bomb/tier3
+	name = "tier 3 grenade spawner"
+	icon_state = "bombt3_loot"
 	loot = list(
 				/obj/item/grenade/syndieminibomb/concussion,
 				/obj/item/grenade/plastic/c4,
@@ -1667,6 +1720,8 @@
 				)
 
 /obj/effect/spawner/lootdrop/f13/bomb/top_tier
+	name = "tier 4 grenade spawner"
+	icon_state = "bombt4_loot"
 	lootcount = 1
 	loot = list(
 				/obj/item/grenade/f13/plasma,
@@ -1681,6 +1736,7 @@
 
 /obj/effect/spawner/lootdrop/f13/junkspawners //TIER 4 GARBAGE
 	name = "garbage spawner"
+	icon_state = "junk_loot"
 	lootcount = 2
 	fan_out_items = TRUE
 
@@ -1762,6 +1818,7 @@
 
 /obj/effect/spawner/lootdrop/f13/seedspawner
 	name = "seed spawner"
+	icon_state = "seed_loot"
 	lootdoubles = TRUE
 	fan_out_items = TRUE
 	lootcount = 4
@@ -1820,6 +1877,7 @@
 
 /obj/effect/spawner/lootdrop/f13/foodspawner
 	name = "food spawner"
+	icon_state = "food_loot"
 	lootdoubles = TRUE
 	fan_out_items = TRUE
 
@@ -1870,6 +1928,7 @@
 
 /obj/effect/spawner/lootdrop/f13/crafting
 	name = "crafting spawner"
+	icon_state = "crafting_loot"
 	lootdoubles = TRUE
 	fan_out_items = TRUE
 
@@ -1890,6 +1949,7 @@
 
 /obj/effect/spawner/lootdrop/f13/alcoholspawner //TIER 7 ALCOHOL
 	name = "alcoholspawner"
+	icon_state = "alcohol_loot"
 	lootdoubles = TRUE
 	fan_out_items = TRUE
 
@@ -1919,6 +1979,7 @@
 
 /obj/effect/spawner/lootdrop/f13/resourcespawner //now include R N G (TM) (higher number means it has a bigger spawn chance)
 	name = "resource spawner"
+	icon_state ="resource_loot"
 	lootcount = 2
 
 	loot = list(
@@ -1936,6 +1997,7 @@
 
 /obj/effect/spawner/lootdrop/f13/cash_random_low
 	name = "low value cash spawner"
+	icon_state = "caps_loot"
 	lootcount = 1
 
 	loot = list(
@@ -1947,6 +2009,7 @@
 
 /obj/effect/spawner/lootdrop/f13/cash_random_med
 	name = "medium value cash spawner"
+	icon_state = "caps_loot"
 	lootcount = 1
 
 	loot = list(
@@ -1966,6 +2029,7 @@
 
 /obj/effect/spawner/lootdrop/f13/cash_random_high
 	name = "high value cash spawner"
+	icon_state = "caps_loot"
 	lootcount = 1
 
 	loot = list(
@@ -1985,6 +2049,7 @@
 
 /obj/effect/spawner/lootdrop/f13/cash_legion_low
 	name = "low value legion cash spawner"
+	icon_state = "legion_loot"
 	lootcount = 1
 	loot = list(
 			/obj/item/stack/f13Cash/random/denarius/low = 50,
@@ -1997,6 +2062,7 @@
 
 /obj/effect/spawner/lootdrop/f13/cash_legion_med
 	name = "medium value legion cash spawner"
+	icon_state = "legion_loot"
 	lootcount = 1
 	loot = list(
 			/obj/item/stack/f13Cash/random/denarius/med = 50,
@@ -2012,6 +2078,7 @@
 
 /obj/effect/spawner/lootdrop/f13/cash_legion_high
 	name = "high value legion cash spawner"
+	icon_state = "legion_loot"
 	lootcount = 1
 	loot = list(
 		/obj/item/stack/f13Cash/random/denarius/high = 50,
@@ -2025,6 +2092,7 @@
 
 /obj/effect/spawner/lootdrop/f13/cash_ncr_low
 	name = "low value ncr cash spawner"
+	icon_state = "ncr_loot"
 	lootcount = 1
 	loot = list(
 			/obj/item/stack/f13Cash/random/ncr/low = 50,
@@ -2035,6 +2103,7 @@
 
 /obj/effect/spawner/lootdrop/f13/cash_ncr_med
 	name = "medium value ncr cash spawner"
+	icon_state = "ncr_loot"
 	lootcount = 1
 	loot = list(
 			/obj/item/stack/f13Cash/random/ncr/med = 50,
@@ -2045,6 +2114,7 @@
 
 /obj/effect/spawner/lootdrop/f13/cash_ncr_high
 	name = "high value ncr cash spawner"
+	icon_state = "ncr_loot"
 	lootcount = 1
 	loot = list(
 			/obj/item/stack/f13Cash/random/ncr/high = 50,
@@ -2060,6 +2130,7 @@
 
 /obj/effect/spawner/lootdrop/f13/traitbooks
 	name = "trait book spawner"
+	icon_state = "bookgood_loot"
 	lootcount = 1
 	loot = list(/obj/item/book/granter/trait/lowsurgery = 10,
 				/obj/item/book/granter/trait/chemistry = 10,
@@ -2077,6 +2148,7 @@
 
 /obj/effect/spawner/lootdrop/f13/traitbooks/low
 	name = "low trait book spawner"
+	icon_state = "book_loot"
 	lootcount = 1
 	loot = list(/obj/item/book/granter/trait/lowsurgery = 1,
 				/obj/item/book/granter/trait/chemistry = 1,
@@ -2088,6 +2160,7 @@
 				/obj/item/book/granter/crafting_recipe/gunsmith_one = 10,
 				/obj/item/book/granter/crafting_recipe/gunsmith_two = 5
 				)
+
 /obj/effect/spawner/lootdrop/f13/blueprintLow
 	name = "gun comps spawner"
 	icon_state = "blueprint_loot"
@@ -2204,7 +2277,8 @@
 	)
 
 /obj/effect/spawner/lootdrop/f13/advcrafting
-	name = "advanced_crafting"
+	name = "advanced crafting spawner"
+	icon_state = "advcrafting_loot"
 	lootcount = 1
 	lootdoubles = FALSE
 	loot = list(
@@ -2218,7 +2292,8 @@
 	)
 
 /obj/effect/spawner/lootdrop/f13/attachments
-	name = "attachments"
+	name = "attachments spawner"
+	icon_state = "attachment_loot"
 	lootcount = 1
 	lootdoubles = FALSE
 	loot = list(
@@ -2269,6 +2344,7 @@
 
 /obj/effect/spawner/lootdrop/f13/armor/bos_vault
 	name = "BoS roundstart vault loot"
+	icon_state = "random_loot"
 	lootcount = 1
 	loot = list(
 		/obj/effect/spawner/bundle/f13/armor/t51b_midwest = 2,
@@ -2283,6 +2359,7 @@
 
 /obj/effect/spawner/lootdrop/f13/armor/bos_vault_armor
 	name = "BoS roundstart power armor loot"
+	icon_state = "random_loot"
 	lootcount = 1
 	loot = list(
 		/obj/effect/spawner/bundle/f13/armor/t51b_midwest = 4,
@@ -2291,7 +2368,8 @@
 		)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/buyable
-	name = "mid tier energy gun"
+	name = "buyable energy gun"
+	icon_state = "egunbuyable_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/aer9 = 63,
 				/obj/effect/spawner/bundle/f13/aer12 = 20,
 				/obj/effect/spawner/bundle/f13/wattz2k = 10,
