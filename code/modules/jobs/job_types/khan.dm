@@ -48,7 +48,7 @@
 	spawn_positions = 1
 	description = "You are the smith, a mixture of an Electrician and Engineer through trial-and-error. Maintain the camp and assist the Senior Enforcer when possible."
 	enforces = "You have control over the forge, a valuable asset in maintaining your presence in the area."
-	supervisors = "the Senior Enforcer"
+	supervisors = "your fellow Khans"
 	selection_color = "#ff915e"
 	req_admin_notify = 1
 	exp_type = EXP_TYPE_KHAN
@@ -65,10 +65,10 @@
 	title = "Khan Senior Enforcer"
 	flag = F13KHANSEN
 	faction = FACTION_KHAN
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are a Khan, atop being the senior of all within this camp. Maintain some manner of control and assure the Chemist doesn't blow their hands off."
-	supervisors = "the Senior Enforcer"
+	supervisors = "your fellow Khans"
 	selection_color = "#ff915e"
 	exp_requirements = 840
 	exp_type = EXP_TYPE_KHAN
@@ -84,10 +84,10 @@
 	title = "Khan Enforcer"
 	flag = F13KHAN
 	faction = FACTION_KHAN
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 7
+	spawn_positions = 7
 	description = "You are a Khan, a member of the local band that the Chief has sent to scout these lands. Listen to the Chemist, and assure you've a steady supply of caps for the Chief."
-	supervisors = "the Senior Enforcer"
+	supervisors = "your fellow Khans"
 	selection_color = "#ff915e"
 	exp_requirements = 0
 	exp_type = EXP_TYPE_WASTELAND
@@ -107,7 +107,7 @@
 	spawn_positions = 2
 	description = "You are a Chemist, one of the few Khans present in this camp that can produce those sweet, sweet chems. Keep them flowing and assure a supply of caps, so you can send them back to the Chief."
 	enforces = "You have control over the lab, a valuable asset in generating profit."
-	supervisors = "the Senior Enforcer"
+	supervisors = "your fellow Khans"
 	selection_color = "#ff915e"
 	req_admin_notify = 1
 	exp_requirements = 300
@@ -142,7 +142,7 @@
 	belt = /obj/item/storage/belt/bandolier
 	backpack_contents = list(
 		/obj/item/storage/box/medicine/stimpaks/stimpaks5 = 1,
-		/obj/item/stack/f13Cash/caps/onezerozerozero = 1,//1k Caps.
+		/obj/item/stack/f13Cash/caps/threefivezero = 1,//350 caps
 		/obj/item/pda,
 		/obj/item/card/id/selfassign
 		)
@@ -153,7 +153,7 @@
 /datum/outfit/loadout/soldier
 	name = "Heavy Enforcer"
 	belt = /obj/item/storage/backpack/spearquiver
-	r_hand = /obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever
+	r_hand = /obj/item/gun/ballistic/shotgun/trench
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/armored
 	head = /obj/item/clothing/head/helmet/f13/khan
 	backpack_contents = list(
