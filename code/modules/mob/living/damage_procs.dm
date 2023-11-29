@@ -234,20 +234,10 @@
 	return staminaloss
 
 /mob/living/proc/adjustStaminaLoss(amount, updating_health = TRUE, forced = FALSE)
-	if(!forced && (status_flags & GODMODE))
-		return FALSE
-	staminaloss = clamp((staminaloss + (amount * CONFIG_GET(number/damage_multiplier))), 0, maxHealth * 2)
-	if(updating_health)
-		updatehealth()
-	return amount
+	return
 
 /mob/living/proc/setStaminaLoss(amount, updating_health = TRUE, forced = FALSE)
-	if(!forced && (status_flags & GODMODE))
-		return FALSE
-	staminaloss = amount
-	if(updating_health)
-		updatehealth()
-	return amount
+	return
 
 /mob/living/proc/getRadLoss()
 	return radloss
