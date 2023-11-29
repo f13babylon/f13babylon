@@ -31,7 +31,6 @@
 	..()
 	if(visualsOnly)
 		return
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/set_vrboard/den)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/trail_carbine)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/grease_gun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/varmintrifle)
@@ -48,7 +47,7 @@
 	spawn_positions = 0
 	description = "You are the smith, a mixture of an Electrician and Engineer through trial-and-error. Maintain the camp and assist the Senior Enforcer when possible."
 	enforces = "You have control over the forge, a valuable asset in maintaining your presence in the area."
-	supervisors = "your fellow Khans"
+	supervisors = "the Senior Enforcer"
 	selection_color = "#ff915e"
 	req_admin_notify = 1
 	exp_type = EXP_TYPE_KHAN
@@ -87,7 +86,7 @@
 	total_positions = 6
 	spawn_positions = 6
 	description = "You are a Khan, a member of the local band that the Chief has sent to scout these lands. Listen to the Chemist, and assure you've a steady supply of caps for the Chief."
-	supervisors = "your fellow Khans"
+	supervisors = "the Senior Enforcer"
 	selection_color = "#ff915e"
 	exp_requirements = 0
 	exp_type = EXP_TYPE_WASTELAND
@@ -107,7 +106,7 @@
 	spawn_positions = 2
 	description = "You are a Chemist, one of the few Khans present in this camp that can produce those sweet, sweet chems. Keep them flowing and assure a supply of caps, so you can send them back to the Chief."
 	enforces = "You have control over the lab, a valuable asset in generating profit."
-	supervisors = "your fellow Khans"
+	supervisors = "the Senior Enforcer"
 	selection_color = "#ff915e"
 	req_admin_notify = 1
 	exp_requirements = 300
