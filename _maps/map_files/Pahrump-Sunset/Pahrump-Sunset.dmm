@@ -25538,7 +25538,7 @@
 /area/f13/brotherhood/offices1st)
 "dAK" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/pill/patch/healpoultice,
+/obj/item/reagent_containers/pill/patch/healingpoultice,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "dAM" = (
@@ -32969,7 +32969,7 @@
 "hJU" = (
 /obj/structure/rack,
 /obj/item/storage/bag/trash,
-/obj/item/reagent_containers/pill/patch/healpoultice,
+/obj/item/reagent_containers/pill/patch/healingpoultice,
 /turf/open/floor/f13{
 	icon_state = "yellowrustyfull"
 	},
@@ -48367,7 +48367,6 @@
 /area/f13/wasteland/west)
 "pIH" = (
 /obj/structure/table/wood/poker,
-/obj/item/gun/ballistic/revolver/russian/soul,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "pJb" = (
@@ -52971,7 +52970,7 @@
 /area/f13/wasteland/massfusion)
 "sfy" = (
 /obj/structure/table,
-/obj/item/reagent_containers/pill/patch/healpoultice,
+/obj/item/reagent_containers/pill/patch/healingpoultice,
 /turf/open/floor/f13,
 /area/f13/building)
 "sfC" = (

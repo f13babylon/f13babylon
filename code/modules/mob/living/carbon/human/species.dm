@@ -62,6 +62,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 	var/coldmod = 1		// multiplier for cold damage
 	var/heatmod = 1		// multiplier for heat damage
 	var/stunmod = 1		// multiplier for stun duration
+	var/radmod = 1		// multiplier for radiation accumulation
 	var/punchdamagelow = 1       //lowest possible punch damage. if this is set to 0, punches will always miss
 	var/punchdamagehigh = 10      //highest possible punch damage
 	var/punchstunthreshold = 10//damage at which punches from this race will stun //yes it should be to the attacked race but it's not useful that way even if it's logical
@@ -1401,11 +1402,12 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 
 /datum/species/proc/handle_mutations_and_radiation(mob/living/carbon/human/H)
 	. = FALSE
-	var/radiation = H.radiation
+	if(H.radloss < 0)
+		H.radloss = 0
 	if(HAS_TRAIT(H, TRAIT_RADIMMUNE))
 		return TRUE
 	if(HAS_TRAIT(H, TRAIT_FEV) || HAS_TRAIT(H, TRAIT_FEVII)) //FEV Slowdown based on rads
-		switch(radiation)
+		switch(H.radloss)
 			if(1000 to 2000)
 				H.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/damage_slowdown, TRUE, multiplicative_slowdown = 1)
 			if(2000 to 3000)
@@ -1413,23 +1415,23 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			if(3000 to INFINITY)
 				H.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/damage_slowdown, TRUE, multiplicative_slowdown = 2.5)
 
-	if(radiation > RAD_MOB_KNOCKDOWN && prob(RAD_MOB_KNOCKDOWN_PROB))
+	if(H.radloss > RAD_MOB_KNOCKDOWN && prob(RAD_MOB_KNOCKDOWN_PROB))
 		if(CHECK_MOBILITY(H, MOBILITY_STAND))
 			H.emote("collapse")
 		H.DefaultCombatKnockdown(RAD_MOB_KNOCKDOWN_AMOUNT)
 		to_chat(H, "<span class='danger'>You feel weak.</span>")
 
-	if(radiation > RAD_MOB_VOMIT && prob(RAD_MOB_VOMIT_PROB))
+	if(H.radloss > RAD_MOB_VOMIT && prob(RAD_MOB_VOMIT_PROB))
 		H.vomit(10, TRUE)
 
-	if(radiation > RAD_MOB_MUTATE)
+	if(H.radloss > RAD_MOB_MUTATE)
 		if(prob(1))
 			to_chat(H, "<span class='danger'>You mutate!</span>")
 			H.easy_randmut(NEGATIVE+MINOR_NEGATIVE)
 			H.emote("gasp")
 			H.domutcheck()
 
-	if(radiation > RAD_MOB_HAIRLOSS)
+	if(H.radloss > RAD_MOB_HAIRLOSS)
 		if(prob(15) && !(H.hair_style == "Bald") && (HAIR in species_traits))
 			to_chat(H, "<span class='danger'>Your hair starts to fall out in clumps...</span>")
 			addtimer(CALLBACK(src, .proc/go_bald, H), 50)
@@ -2080,6 +2082,9 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		if(BRAIN)
 			var/damage_amount = forced ? damage : damage * hit_percent * H.physiology.brain_mod
 			H.adjustOrganLoss(ORGAN_SLOT_BRAIN, damage_amount)
+		if(RADIATION)
+			var/damage_amount = forced ? damage : damage * hit_percent * radmod * H.physiology.rad_mod
+			H.adjustRadLoss(damage_amount)
 	return 1
 
 /datum/species/proc/on_hit(obj/item/projectile/P, mob/living/carbon/human/H)

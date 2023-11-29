@@ -25,6 +25,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 	access = list(ACCESS_LEGION, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION, ACCESS_LEGION_SLAVE)
+	blacklisted_quirks = list(/datum/quirk/stim_intolerance, /datum/quirk/straight_edge, /datum/quirk/herbal_affinity)
 
 /datum/outfit/job/CaesarsLegion
 	ears = null
@@ -37,12 +38,16 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legiongate)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/berserker_powder)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionmedx)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/naturalpainkiller)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/rip/crossexecution)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombatarmor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombathelmet)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombatarmormk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombathelmetmk2)
+	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
+	ADD_TRAIT(H, TRAIT_STIM_INTOLERANCE, REF(src)) //Can't use stimpaks without getting sick
+	ADD_TRAIT(H, TRAIT_STRAIGHT_EDGE, REF(src)) //Can't use Fallout chems, such as Psycho, Med-X, Buffout, Turbo etc. without getting sick
+	ADD_TRAIT(H, TRAIT_HERBAL_AFFINITY, REF(src)) //Better tribal medicine healing rates and no drawbacks
 
 /datum/outfit/job/CaesarsLegion/Legionnaire
 	belt = /obj/item/storage/belt/military/assault/legion
@@ -66,7 +71,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 			var/obj/item/card/id/dogtag/L = H.wear_id
 			L.registered_name = H.name
 			L.update_label()
-	ADD_TRAIT(H, TRAIT_TRIBAL,  REF(src))
+	ADD_TRAIT(H, TRAIT_HERBAL_AFFINITY,  REF(src))
 	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
 	ADD_TRAIT(H, TRAIT_FEARLESS,  REF(src)) //no phobias for legion!
 	ADD_TRAIT(H, TRAIT_BERSERKER,  REF(src))
@@ -78,8 +83,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /obj/item/storage/box/legate/PopulateContents()
 	. = ..()
-	new /obj/item/reagent_containers/pill/patch/healpoultice(src)
-	new /obj/item/reagent_containers/pill/patch/healpoultice(src)
+	new /obj/item/reagent_containers/pill/patch/healingpoultice(src)
+	new /obj/item/reagent_containers/pill/patch/healingpoultice(src)
 	new /obj/item/ammo_box/magazine/m14mm(src)
 	new /obj/item/ammo_box/magazine/m14mm(src)
 	new /obj/item/ammo_box/magazine/m14mm(src)
@@ -125,7 +130,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/pistol14
 	r_pocket = /obj/item/storage/bag/money/small/legion
 	l_pocket = /obj/item/flashlight/lantern
-	r_hand = /obj/item/melee/powerfist/f13/goliath
+	r_hand = /obj/item/melee/f13powerfist/goliath
 	l_hand = /obj/item/tank/internals/oxygen
 	backpack = null
 	satchel = null
@@ -234,7 +239,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ,  REF(src))
 	ADD_TRAIT(H, TRAIT_MARS_TEACH,  REF(src))
-	ADD_TRAIT(H, TRAIT_TRIBAL,  REF(src))
 
 /////////////////
 //// Officers ///
@@ -327,7 +331,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	suit = /obj/item/clothing/suit/armor/f13/legion/centurion
 	head = /obj/item/clothing/head/helmet/f13/legion/centurion
 	backpack_contents = list(
-		/obj/item/melee/powerfist/f13/goliath = 1,
+		/obj/item/melee/f13powerfist/goliath = 1,
 		/obj/item/book/granter/martial/cqc = 1,
 		/obj/item/gun/ballistic/automatic/smg/cg45_two = 1,
 		/obj/item/ammo_box/magazine/cg45_two = 2,
@@ -579,7 +583,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	l_pocket = /obj/item/storage/survivalkit_tribal
 	backpack_contents = list(
 		/obj/item/melee/onehanded/machete/gladius = 1,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
+		/obj/item/reagent_containers/pill/patch/healingpoultice = 1,
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/storage/bag/money/small/legofficers = 1,
 		)
@@ -662,7 +666,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	gloves = /obj/item/clothing/gloves/legion/plated
 	r_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
+		/obj/item/reagent_containers/pill/patch/healingpoultice = 1,
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/megaphone/cornu = 1,
 		/obj/item/storage/bag/money/small/legenlisted = 1,
@@ -826,7 +830,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	r_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
+		/obj/item/reagent_containers/pill/patch/healingpoultice = 1,
 		/obj/item/storage/bag/money/small/legenlisted = 1,
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/melee/onehanded/machete/gladius = 1,
@@ -839,7 +843,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	suit_store = /obj/item/twohanded/legionaxe
 	backpack_contents = list(
 		/obj/item/grenade/smokebomb = 1,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
+		/obj/item/reagent_containers/pill/patch/healingpoultice = 1,
 		)
 
 /datum/outfit/loadout/vetsmg
@@ -920,7 +924,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	l_pocket = /obj/item/restraints/handcuffs
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/legenlisted = 1,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
+		/obj/item/reagent_containers/pill/patch/healingpoultice = 1,
 		/obj/item/melee/onehanded/machete/forgedmachete = 1,
 		)
 
@@ -1168,7 +1172,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	ADD_TRAIT(H, TRAIT_SURGERY_LOW,  REF(src))
 	ADD_TRAIT(H, TRAIT_MARS_TEACH,  REF(src))
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK,  REF(src))
-	ADD_TRAIT(H, TRAIT_TRIBAL,  REF(src))
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tailor/legionuniform)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/warpaint)
 
@@ -1296,7 +1299,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	r_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healingpowder = 2,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
+		/obj/item/reagent_containers/pill/patch/healingpoultice = 2,
 		/obj/item/smelling_salts = 1,
 		/obj/item/book/granter/trait/lowsurgery = 1,
 		/obj/item/reagent_containers/food/condiment/flour = 2,
@@ -1365,7 +1368,7 @@ Venator  - Zero slots, role built on cloning vet ranger, linear just vastly bett
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/w308 = 3,
 		/obj/item/melee/onehanded/machete/gladius = 1,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 3,
+		/obj/item/reagent_containers/pill/patch/healingpoultice = 3,
 		/obj/item/gun/ballistic/revolver/revolver45 = 1,
 		/obj/item/ammo_box/c45rev = 3,
 		)
@@ -1408,7 +1411,6 @@ Venator  - Zero slots, role built on cloning vet ranger, linear just vastly bett
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES,  REF(src))
-	ADD_TRAIT(H, TRAIT_TRIBAL,  REF(src))
 	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 */

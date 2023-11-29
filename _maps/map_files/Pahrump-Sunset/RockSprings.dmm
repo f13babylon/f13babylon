@@ -12410,10 +12410,10 @@
 	pixel_x = 32
 	},
 /obj/structure/table/wood,
-/obj/item/reagent_containers/pill/patch/healingpowder/legionmedx,
-/obj/item/reagent_containers/pill/patch/healingpowder/legionmedx,
-/obj/item/reagent_containers/pill/patch/healingpowder/legionmedx,
-/obj/item/reagent_containers/pill/patch/healingpowder/legionmedx,
+/obj/item/reagent_containers/pill/patch/healingpowder/naturalpainkiller,
+/obj/item/reagent_containers/pill/patch/healingpowder/naturalpainkiller,
+/obj/item/reagent_containers/pill/patch/healingpowder/naturalpainkiller,
+/obj/item/reagent_containers/pill/patch/healingpowder/naturalpainkiller,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/legion)
 "mBT" = (

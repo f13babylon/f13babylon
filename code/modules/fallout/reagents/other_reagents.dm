@@ -77,7 +77,7 @@
 /datum/chemical_reaction/alacritous_compost
 	id = /datum/reagent/alacritous_compost
 	results = list(/datum/reagent/alacritous_compost = 3)
-	required_reagents = list(/datum/reagent/ash = 1, /datum/reagent/consumable/ethanol/pungajuice = 1, /datum/reagent/compost = 1)
+	required_reagents = list(/datum/reagent/ash = 1, /datum/reagent/consumable/pungajuice = 1, /datum/reagent/compost = 1)
 	mix_message = "The compost starts smelling like manure"
 
 // If added to tray

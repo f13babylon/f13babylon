@@ -10,6 +10,7 @@ Main doors: ACCESS_CAPTAIN 20
 
 	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
+	blacklisted_quirks = list(/datum/quirk/straight_edge)
 	outfit = /datum/outfit/job/bos/
 	exp_type = EXP_TYPE_BROTHERHOOD
 
@@ -37,6 +38,7 @@ Main doors: ACCESS_CAPTAIN 20
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK,  REF(src))
+	ADD_TRAIT(H, TRAIT_STRAIGHT_EDGE,  REF(src))
 	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/boscombatarmor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/boscombathelmet)
@@ -150,7 +152,7 @@ Head Paladin
 	id = 			/obj/item/card/id/dogtag
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/hunting = 1,
-		/obj/item/melee/powerfist/f13 = 1,
+		/obj/item/melee/f13powerfist = 1,
 		/obj/item/gun/ballistic/automatic/pistol/n99/crusader = 1,
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,

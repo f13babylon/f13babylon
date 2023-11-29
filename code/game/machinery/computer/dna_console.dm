@@ -268,7 +268,7 @@
 	if(!ui)
 		ui = new(user, src, "DnaConsole")
 		ui.open()
-		
+
 /obj/machinery/computer/scan_consolenew/ui_assets()
 	. = ..() || list()
 	. += get_asset_datum(/datum/asset/simple/genetics)
@@ -307,7 +307,7 @@
 		else
 			data["subjectStatus"] = scanner_occupant.stat
 		data["subjectHealth"] = scanner_occupant.health
-		data["subjectRads"] = scanner_occupant.radiation/(RAD_MOB_SAFE/100)
+		data["subjectRads"] = scanner_occupant.radloss/(RAD_MOB_SAFE/100)
 		data["subjectEnzymes"] = scanner_occupant.dna.unique_enzymes
 		data["isMonkey"] = ismonkey(scanner_occupant)
 		data["subjectUNI"] = scanner_occupant.dna.uni_identity
@@ -409,7 +409,7 @@
 			scanner_occupant.dna.generate_dna_blocks()
 			scrambleready = world.time + SCRAMBLE_TIMEOUT
 			to_chat(usr,"<span class='notice'>DNA scrambled.</span>")
-			scanner_occupant.radiation += RADIATION_STRENGTH_MULTIPLIER*50/(connected_scanner.damage_coeff ** 2)
+			scanner_occupant.radloss += RADIATION_STRENGTH_MULTIPLIER*50/(connected_scanner.damage_coeff ** 2)
 			return
 
 		// Check whether a specific mutation is eligible for discovery within the
@@ -517,7 +517,7 @@
 			//  we've increased the occupant rads
 			sequence = copytext_char(sequence, 1, genepos) + newgene + copytext_char(sequence, genepos + 1)
 			scanner_occupant.dna.mutation_index[path] = sequence
-			scanner_occupant.radiation += RADIATION_STRENGTH_MULTIPLIER/connected_scanner.damage_coeff
+			scanner_occupant.radloss += RADIATION_STRENGTH_MULTIPLIER/connected_scanner.damage_coeff
 			scanner_occupant.domutcheck()
 
 			// GUARD CHECK - Modifying genetics can lead to edge cases where the
@@ -1450,7 +1450,7 @@
 				return FALSE
 			scanner_occupant.dna.uni_identity = buffer_slot["UI"]
 			scanner_occupant.updateappearance(mutations_overlay_update=1)
-			scanner_occupant.radiation += rad_increase
+			scanner_occupant.radloss += rad_increase
 			scanner_occupant.domutcheck()
 			return TRUE
 		if("ue")
@@ -1464,7 +1464,7 @@
 			scanner_occupant.name = buffer_slot["name"]
 			scanner_occupant.dna.unique_enzymes = buffer_slot["UE"]
 			scanner_occupant.dna.blood_type = buffer_slot["blood_type"]
-			scanner_occupant.radiation += rad_increase
+			scanner_occupant.radloss += rad_increase
 			scanner_occupant.domutcheck()
 			return TRUE
 		if("mixed")
@@ -1480,7 +1480,7 @@
 			scanner_occupant.name = buffer_slot["name"]
 			scanner_occupant.dna.unique_enzymes = buffer_slot["UE"]
 			scanner_occupant.dna.blood_type = buffer_slot["blood_type"]
-			scanner_occupant.radiation += rad_increase
+			scanner_occupant.radloss += rad_increase
 			scanner_occupant.domutcheck()
 			return TRUE
 

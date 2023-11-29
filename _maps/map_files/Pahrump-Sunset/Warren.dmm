@@ -13368,7 +13368,7 @@
 /area/f13/city)
 "mJo" = (
 /obj/structure/closet/crate/trashcart,
-/obj/item/reagent_containers/pill/patch/healpoultice,
+/obj/item/reagent_containers/pill/patch/healingpoultice,
 /obj/item/trash/f13/rotten,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland/warren)
