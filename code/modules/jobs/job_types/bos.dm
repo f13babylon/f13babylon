@@ -710,8 +710,8 @@ Scribe
 	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
-	/datum/outfit/loadout/sknighta, //R91
-	/datum/outfit/loadout/sknightb, //DKS
+	/datum/outfit/loadout/sknighta, //MP5
+	/datum/outfit/loadout/sknightb, //Wattz 2k
 	)
 
 	outfit = /datum/outfit/job/bos/f13seniorknight
@@ -763,8 +763,8 @@ Scribe
 /datum/outfit/loadout/sknighta
 	name = "Footknight"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/assault_rifle = 1,
-		/obj/item/ammo_box/magazine/m556/rifle/assault = 2,
+		/obj/item/gun/ballistic/automatic/smg/mp5 = 1,
+		/obj/item/ammo_box/magazine/uzim9mm = 2,
 		/obj/item/gun/energy/laser/pistol = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 1,
 		/obj/item/grenade/smokebomb = 1,
@@ -773,8 +773,8 @@ Scribe
 /datum/outfit/loadout/sknightb
 	name = "Knight Ranger"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/marksman/sniper = 1,
-		/obj/item/ammo_box/magazine/w308 = 2,
+		/obj/item/gun/energy/laser/wattz2k = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 2
 		)
