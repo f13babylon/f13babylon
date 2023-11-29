@@ -11,6 +11,7 @@
 	body_parts_covered = NECK
 	strip_delay = 60
 	equip_delay_other = 60
+	var/is_active = FALSE
 
 /obj/item/electropack/shockcollar/explosive/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/pen))
@@ -35,27 +36,27 @@
 			ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
 	return ..()*/
 
-/obj/item/electropack/shockcollar/explosive/receive_signal(datum/signal/signal) //this removes the "on" check
-	if(!signal || signal.data["code"] != code)
+/obj/item/electropack/shockcollar/explosive/receive_signal(datum/signal/signal)
+	if(!signal || signal.data["code"] != code || is_active)
 		return
+	playsound(src, 'sound/machines/triple_beep.ogg', 75)
+	is_active = TRUE
+	icon_state = initial(icon_state) + "_active"
+	item_state = initial(item_state) + "_active"
+	var/mob/living/carbon/M = loc
+	if(isliving(M) && M.get_item_by_slot(SLOT_NECK) == src)
+		M.visible_message("<span class='danger'>The [src] on [M]'s neck beeps loudly!</span>", "<span class='userdanger>The [src] on your neck beeps loudly!</span>")
+		M.update_inv_neck()
+	else
+		src.visible_message("<span class='danger'>The [src] beeps loudly!</span>")
+	addtimer(CALLBACK(src, .proc/boom, M), 20)
 
-	if(isliving(loc))
-		var/mob/living/L = loc
-		step(L, pick(GLOB.cardinals))
-		to_chat(L, "<span class='danger'>Beep beep</span>")
-		boom(L)
-
-	if(master)
-		master.receive_signal()
-	return
-
-/obj/item/electropack/shockcollar/explosive/proc/boom(mob/living/L)
-	explosion(get_turf(src),0,1,2, flame_range = 2)
-	if(!istype(L) || L != loc || L.get_item_by_slot(SLOT_NECK) != src)
-		return
-	var/obj/item/bodypart/head/victimhead = L.get_bodypart(BODY_ZONE_HEAD)
-	if(istype(victimhead))
-		victimhead.dismember()
+/obj/item/electropack/shockcollar/explosive/proc/boom(var/mob/living/carbon/collar_loc)
+	explosion(get_turf(src), 0,1,2)
+	if(isliving(collar_loc) && collar_loc.get_item_by_slot(SLOT_NECK) == src)
+		collar_loc.apply_damage(150, BRUTE, BODY_ZONE_HEAD)
+		collar_loc.apply_damage(75, BRUTE, BODY_ZONE_CHEST)
+	qdel(src)
 
 //Collar keys
 /obj/item/key/scollar
