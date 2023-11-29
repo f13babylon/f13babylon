@@ -45,7 +45,7 @@
 	item_state = initial(item_state) + "_active"
 	var/mob/living/carbon/M = loc
 	if(isliving(M) && M.get_item_by_slot(SLOT_NECK) == src)
-		M.visible_message("<span class='danger'>The [src] on [M]'s neck beeps loudly!</span>", "<span class='userdanger>The [src] on your neck beeps loudly!</span>")
+		M.visible_message("<span class='danger'>The [src] on [M]'s neck beeps loudly!</span>", "<span class='userdanger'>The [src] on your neck beeps loudly!</span>")
 		M.update_inv_neck()
 	else
 		src.visible_message("<span class='danger'>The [src] beeps loudly!</span>")
