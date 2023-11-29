@@ -44,8 +44,8 @@
 	title = "Khan Smith"
 	flag = F13KHANSMITH
 	faction = FACTION_KHAN
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are the smith, a mixture of an Electrician and Engineer through trial-and-error. Maintain the camp and assist the Senior Enforcer when possible."
 	enforces = "You have control over the forge, a valuable asset in maintaining your presence in the area."
 	supervisors = "your fellow Khans"
@@ -65,10 +65,10 @@
 	title = "Khan Senior Enforcer"
 	flag = F13KHANSEN
 	faction = FACTION_KHAN
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	description = "You are a Khan, atop being the senior of all within this camp. Maintain some manner of control and assure the Chemist doesn't blow their hands off."
-	supervisors = "your fellow Khans"
+	supervisors = "yourself"
 	selection_color = "#ff915e"
 	exp_requirements = 840
 	exp_type = EXP_TYPE_KHAN
@@ -84,8 +84,8 @@
 	title = "Khan Enforcer"
 	flag = F13KHAN
 	faction = FACTION_KHAN
-	total_positions = 7
-	spawn_positions = 7
+	total_positions = 6
+	spawn_positions = 6
 	description = "You are a Khan, a member of the local band that the Chief has sent to scout these lands. Listen to the Chemist, and assure you've a steady supply of caps for the Chief."
 	supervisors = "your fellow Khans"
 	selection_color = "#ff915e"
