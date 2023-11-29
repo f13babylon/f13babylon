@@ -135,6 +135,7 @@
 	var/knockdown_stamoverride
 	var/knockdown_stam_max
 	var/unconscious = 0
+	var/irradiate = 0
 	var/stutter = 0
 	var/slur = 0
 	var/eyeblur = 0
