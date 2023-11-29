@@ -429,7 +429,7 @@
 
 /datum/reagent/consumable/ferajuice
 	name = "Barrel Fruit Juice"
-	description = "Squeezed barrelfruit juice. Somewhat toxic."
+	description = "Squeezed barrelfruit juice. Heals damage caused by poisons and venoms."
 	nutriment_factor = 1 * REAGENTS_METABOLISM
 	color = "#E8E67E"
 	taste_description = "bitter"
@@ -437,25 +437,8 @@
 
 /datum/reagent/consumable/ferajuice/on_mob_life(mob/living/carbon/M)
 	if(M.health > 20)
-		M.adjustToxLoss(0.5*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
+		M.adjustToxLoss(-1*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
 		. = TRUE // update health at end of tick
-	..()
-
-/datum/reagent/consumable/pungajuice
-	name = "Punga juice"
-	description = "Punga fruit juice, used to treat radiation sickness."
-	color = "#1B2E24"
-	taste_description = "acidic slime"
-	glass_icon_state = "Space_mountain_wind_glass"
-	glass_name = "glass of punga juice"
-	glass_desc = "A glass of punga juice, used to treat radiation sickness."
-	water_level = 1.5
-
-/datum/reagent/consumable/pungajuice/on_mob_life(mob/living/carbon/M)
-	M.adjustToxLoss(-1*REAGENTS_EFFECT_MULTIPLIER, FALSE)	//50% of radaway healing (results in the same amount of total toxin healed but slower than radaway)
-	M.radloss -= 7	//50% of radaway healing (results in the same amount of total radiation healed but slower than radaway)
-	M.hallucination = max(M.hallucination, 5)
-	. = TRUE
 	..()
 
 /datum/reagent/consumable/daturajuice

@@ -668,7 +668,7 @@
 	. = ..()
 	if(!istype(M))
 		return
-	M.apply_damage(300, RADIATION)
+	M.apply_effect(300, EFFECT_IRRADIATE, 0)
 
 
 // War Mace			Keywords: TRIBAL, Damage 25/45, AP 0.2

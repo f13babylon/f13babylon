@@ -14,7 +14,7 @@
 	growthstages = 3
 	production = 5
 	maturation = 5
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.05, /datum/reagent/water = 0.075, /datum/reagent/consumable/nutriment = 0.075, /datum/reagent/radium = 0.15)
+	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.05, /datum/reagent/consumable/nutriment = 0.1, /datum/reagent/radium = 0.15)
 
 /obj/item/reagent_containers/food/snacks/grown/mutfruit
 	seed = /obj/item/seeds/mutfruit

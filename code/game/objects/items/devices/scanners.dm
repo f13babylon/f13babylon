@@ -359,9 +359,9 @@ GENETICS SCANNER
 			msg += "\t<span class='alert'><b>Subject's stomach is missing!</span>\n"
 
 
-		if(M.radloss)
+		if(M.radiation)
 			msg += "\t<span class='alert'>Subject is irradiated.</span>\n"
-			msg += "\t<span class='info'>Radiation Level: [M.radloss] rad</span>\n"
+			msg += "\t<span class='info'>Radiation Level: [M.radiation] rad</span>\n"
 
 
 
@@ -628,9 +628,9 @@ GENETICS SCANNER
 	var/turf/location = get_turf(user)
 	if(!istype(location))
 		return
-
+	
 	scan_turf(user, location)
-
+	
 /obj/item/analyzer/AltClick(mob/user) //Barometer output for measuring when the next storm happens
 	. = ..()
 

@@ -185,10 +185,10 @@
 
 	if(isliving(A))
 		var/mob/living/M = A
-		if(!M.radloss)
+		if(!M.radiation)
 			to_chat(user, "<span class='notice'>[icon2html(src, user)] Radiation levels within normal boundaries.</span>")
 		else
-			to_chat(user, "<span class='boldannounce'>[icon2html(src, user)] Subject is irradiated. Radiation levels: [M.radloss] rad.</span>")
+			to_chat(user, "<span class='boldannounce'>[icon2html(src, user)] Subject is irradiated. Radiation levels: [M.radiation] rad.</span>")
 
 	if(rad_strength)
 		to_chat(user, "<span class='boldannounce'>[icon2html(src, user)] Target contains radioactive contamination. Radioactive strength: [rad_strength]</span>")

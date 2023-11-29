@@ -244,7 +244,7 @@
 	STR.allow_quick_gather = TRUE
 	STR.click_gather = TRUE
 	CANHOLD_STATIC(STR, typecacheof(list(/obj/item/reagent_containers/pill, /obj/item/dice)))
-	CANTHOLD_STATIC(STR, typecacheof(list(/obj/item/reagent_containers/pill/patch/jet, /obj/item/reagent_containers/pill/patch/turbo, /obj/item/reagent_containers/pill/patch/healingpowder, /obj/item/reagent_containers/pill/patch/healingpoultice)))
+	CANTHOLD_STATIC(STR, typecacheof(list(/obj/item/reagent_containers/pill/patch/jet, /obj/item/reagent_containers/pill/patch/turbo, /obj/item/reagent_containers/pill/patch/healingpowder, /obj/item/reagent_containers/pill/patch/healpoultice)))
 
 /obj/item/storage/pill_bottle/AltClick(mob/living/carbon/user)
 	if(!istype(user) || !user.canUseTopic(src, BE_CLOSE, ismonkey(user)))

@@ -80,7 +80,7 @@
 					to_chat(C, "<span class='italics'>You hear a buzzing in your ears.</span>")
 					C.set_species(/datum/species/fly)
 					log_game("[C] ([key_name(C)]) was turned into a fly person")
-					C.apply_damage((rand(120 - accuracy * 40, 180 - accuracy * 60)), RADIATION, null, FALSE)
+					C.apply_effect((rand(120 - accuracy * 40, 180 - accuracy * 60)), EFFECT_IRRADIATE, 0)
 
 			calibrated = FALSE
 	return

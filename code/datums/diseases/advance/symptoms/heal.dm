@@ -465,7 +465,7 @@
 
 /datum/symptom/heal/radiation/CanHeal(datum/disease/advance/A)
 	var/mob/living/M = A.affected_mob
-	switch(M.radloss)
+	switch(M.radiation)
 		if(0)
 			return FALSE
 		if(1 to RAD_MOB_SAFE)

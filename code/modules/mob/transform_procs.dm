@@ -82,7 +82,7 @@
 		O.setOrganLoss(ORGAN_SLOT_BRAIN, getOrganLoss(ORGAN_SLOT_BRAIN), 0)
 		O.adjustStaminaLoss(getStaminaLoss(), updating_health = FALSE)//CIT CHANGE - makes monkey transformations inherit stamina
 		O.updatehealth()
-		O.radloss = radloss
+		O.radiation = radiation
 
 	//re-add implants to new mob
 	if (tr_flags & TR_KEEPIMPLANTS)
@@ -244,7 +244,7 @@
 		O.setOrganLoss(ORGAN_SLOT_BRAIN, getOrganLoss(ORGAN_SLOT_BRAIN), 0)
 		O.adjustStaminaLoss(getStaminaLoss(), updating_health = FALSE)//CIT CHANGE - makes monkey transformations inherit stamina
 		O.updatehealth()
-		O.radloss = radloss
+		O.radiation = radiation
 
 	//re-add implants to new mob
 	if (tr_flags & TR_KEEPIMPLANTS)

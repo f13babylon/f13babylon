@@ -126,8 +126,8 @@
 	singular_name = "medical gauze"
 	icon_state = "gauze"
 	heal_brute = 5
-	self_delay = 30
-	other_delay = 10
+	self_delay = 50
+	other_delay = 20
 	amount = 10
 	max_amount = 10
 	absorption_rate = 0.45
@@ -199,6 +199,8 @@
 	singular_name = "improvised gauze"
 	heal_brute = 0
 	desc = "A roll of cloth. Useful for staunching bleeding, healing burns, and reversing infection, but not THAT useful."
+	self_delay = 60
+	other_delay = 30
 	absorption_rate = 0.15
 	absorption_capacity = 4
 	merge_type = /obj/item/stack/medical/gauze/improvised
@@ -213,6 +215,8 @@
 	singular_name = "sterilized medical gauze"
 	desc = "A roll of elastic sterilized cloth that is extremely effective at stopping bleeding and covering burns. "
 	heal_brute = 6
+	self_delay = 45
+	other_delay = 15
 	absorption_rate = 0.4
 	absorption_capacity = 15
 	merge_type = /obj/item/stack/medical/gauze/adv
@@ -315,8 +319,8 @@
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
 	amount = 12
 	max_amount = 12
-	self_delay = 30
-	other_delay = 10
+	self_delay = 40
+	other_delay = 20
 	merge_type = /obj/item/stack/medical/ointment
 
 	heal_burn = 5
@@ -450,7 +454,7 @@
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
 
 	amount = 4
-	self_delay = 30
+	self_delay = 20
 	grind_results = list(/datum/reagent/medicine/bicaridine = 10)
 	novariants = TRUE
 
@@ -491,7 +495,7 @@
 	desc = "A healing paste you can apply on wounds."
 
 	icon_state = "aloe_paste"
-	self_delay = 30
+	self_delay = 20
 	other_delay = 10
 	novariants = TRUE
 	amount = 20
@@ -519,7 +523,7 @@
 	max_amount = 15
 	heal_brute = 10
 	heal_burn = 10
-	self_delay = 30
+	self_delay = 40
 	other_delay = 10
 	repeating = TRUE
 	merge_type = /obj/item/stack/medical/poultice

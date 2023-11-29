@@ -56,7 +56,7 @@
 				affected_mob.easy_randmut(NEGATIVE)
 				affected_mob.Unconscious(10)
 			if(!FEV1trait) //You need to cure it past this point; unlike FEV-II, FEV-I is unstable and will continue mutating you until you're dead.
-				if(affected_mob.radloss < 500) //FEV-I canonically kills you if you're too radioactive.
+				if(affected_mob.radiation < 500) //FEV-I canonically kills you if you're too radioactive.
 					to_chat(affected_mob, "<span class='danger'>Your skin twitches and swells...</span>")
 					affected_mob.Jitter(3)
 					affected_mob.add_quirk(/datum/quirk/fev)

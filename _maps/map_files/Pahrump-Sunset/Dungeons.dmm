@@ -4345,7 +4345,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/item/reagent_containers/pill/patch/healingpoultice,
+/obj/item/reagent_containers/pill/patch/healpoultice,
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirt"
 	},

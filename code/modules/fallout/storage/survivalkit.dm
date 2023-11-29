@@ -67,7 +67,7 @@
 	. = ..()
 	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
 	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
-	new /obj/item/reagent_containers/pill/patch/healingpoultice(src)
+	new /obj/item/reagent_containers/pill/patch/healpoultice(src)
 	new /obj/item/stack/medical/gauze(src)
 	new /obj/item/flashlight/flare/torch(src)
 	new /obj/item/reagent_containers/food/drinks/flask/survival(src)

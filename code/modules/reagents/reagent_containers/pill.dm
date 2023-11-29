@@ -278,10 +278,10 @@
 
 /obj/item/reagent_containers/pill/radx
 	name = "Rad-X pill"
-	desc = "A pill that bolsters the user's natural resistance to background radiation."
+	desc = "A pill that stabilizes radiation levels and treats small amounts of toxin damage."
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "pill_radx"
-	list_reagents = list(/datum/reagent/medicine/radx = 10)
+	list_reagents = list(/datum/reagent/medicine/radx = 20)
 
 /obj/item/reagent_containers/pill/buffout
 	name = "Buffout pill"

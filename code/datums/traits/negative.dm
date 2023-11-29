@@ -315,23 +315,6 @@
 	var/mob/living/carbon/human/H = quirk_holder
 	H?.cure_trauma_type(/datum/brain_trauma/severe/monophobia, TRAUMA_RESILIENCE_ABSOLUTE)
 
-/datum/quirk/stim_intolerance
-	name = "Stimfluid Intolerance"
-	desc = "You are intolerant to all types of stimfluid, making you very sick when it's in your system."
-	value = -2
-	mob_trait = TRAIT_STIM_INTOLERANCE
-	gain_text = "<span class='danger'>You feel sick just looking at a stimpak...</span>"
-	lose_text = "<span class='notice'>You feel like you're able to handle stims just fine.</span>"
-	medical_record_text = "Patient suffers from stimfluid intolerance, unable to process it without serious side effects."
-
-/datum/quirk/straight_edge
-	name = "Straight Edge"
-	desc = "Your body is intolerant to chems such as Psycho, Med-X, Jet, Turbo and Buffout, making you very sick when they're in your system."
-	value = -2
-	mob_trait = TRAIT_STRAIGHT_EDGE
-	gain_text = "<span class='danger'>Remember, winners don't do drugs!</span>"
-	lose_text = "<span class='notice'>Maybe just a little bit of drugs won't hurt...</span>"
-	medical_record_text = "Patient suffers from heavy side effects from potent narcotics."
 /*
 /datum/quirk/no_smell
 	name = "Anosmia"

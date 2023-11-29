@@ -38,12 +38,20 @@
 	if(victim.reagents)
 		if(victim.reagents.has_reagent(/datum/reagent/medicine/spaceacillin))
 			sanitization += 7
-		if(victim.reagents.has_reagent(/datum/reagent/abraxo_cleaner/sterilizine) || victim.reagents.has_reagent(/datum/reagent/consumable/ethanol))
-			sanitization += 5
-			flesh_healing -= 2 //Rubbing alcohol onto fresh burns will make it worse, but sterile
+		if(victim.reagents.has_reagent(/datum/reagent/abraxo_cleaner/sterilizine/))
+			sanitization += 4
 		if(victim.reagents.has_reagent(/datum/reagent/medicine/mine_salve))
 			sanitization += 4
 			flesh_healing += 1
+		if(victim.reagents.has_reagent(/datum/reagent/medicine/healing_powder))
+			sanitization -= 0.02 //you are rubbing dirty powder in your burns
+			flesh_healing += 0.1
+		if(victim.reagents.has_reagent(/datum/reagent/medicine/stimpak))
+			sanitization +=0.01
+			flesh_healing += 0.5
+		if(victim.reagents.has_reagent(/datum/reagent/medicine/bitter_drink))
+			sanitization +=0.5
+			flesh_healing +=0.3
 
 	if(limb.current_gauze)
 		limb.seep_gauze(WOUND_BURN_SANITIZATION_RATE)
@@ -125,9 +133,9 @@
 		var/bandage_condition
 		switch(limb.current_gauze.absorption_capacity)
 			if(0 to 1.25)
-				bandage_condition = "pus-soaked "
+				bandage_condition = "nearly ruined "
 			if(1.25 to 2.75)
-				bandage_condition = "badly pus-stained "
+				bandage_condition = "badly worn "
 			if(2.75 to 4)
 				bandage_condition = "slightly pus-stained "
 			if(4 to INFINITY)

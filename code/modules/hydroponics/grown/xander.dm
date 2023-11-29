@@ -15,7 +15,7 @@
 	icon_grow = "xander-grow"
 	icon_harvest = "xander-harvest"
 	icon_dead = "xander-dead"
-	reagents_add = list(/datum/reagent/medicine/salglu_solution = 0.2, /datum/reagent/consumable/nutriment = 0.06)
+	reagents_add = list(/datum/reagent/medicine/antitoxin = 0.2, /datum/reagent/medicine/salglu_solution = 0.05, /datum/reagent/consumable/nutriment = 0.1)
 
 /obj/item/reagent_containers/food/snacks/grown/xander
 	seed = /obj/item/seeds/xander

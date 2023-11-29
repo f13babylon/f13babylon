@@ -387,7 +387,7 @@
 	if(istype(AM, /mob/living))
 		var/mob/living/L = AM
 		L.update_water()
-		L.apply_damage(2, RADIATION)
+		L.apply_effect(2, EFFECT_IRRADIATE, 0)
 		if(L.check_submerged() <= 0)
 			return
 		if(!istype(oldloc, /turf/open/indestructible/ground/outside/water))
@@ -399,7 +399,7 @@
 	if(istype(AM, /mob/living))
 		var/mob/living/L = AM
 		L.update_water()
-		L.apply_damage(2, RADIATION)
+		L.apply_effect(2, EFFECT_IRRADIATE, 0)
 		if(L.check_submerged() <= 0)
 			return
 		if(!istype(newloc, /turf/open/indestructible/ground/outside/water))

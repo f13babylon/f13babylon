@@ -42,7 +42,7 @@
 /datum/quirk/tribal/add()
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS, "Former Tribal")
-	ADD_TRAIT(H, TRAIT_HERBAL_AFFINITY, "Former Tribal")
+	ADD_TRAIT(H, TRAIT_TRIBAL, "Former Tribal")
 	ADD_TRAIT(H, TRAIT_TRAPPER, "Former Tribal")
 
 /datum/quirk/tribal/remove()
@@ -50,7 +50,7 @@
 	if(!QDELETED(H))
 		REMOVE_TRAIT(H, TRAIT_MACHINE_SPIRITS, "Former Tribal")
 		REMOVE_TRAIT(H, TRAIT_TRAPPER, "Former Tribal")
-		REMOVE_TRAIT(H, TRAIT_HERBAL_AFFINITY, "Former Tribal")
+		REMOVE_TRAIT(H, TRAIT_TRIBAL, "Former Tribal")
 
 /datum/quirk/tribespeak
 	name = "Tribal Language Comprehension"
@@ -162,15 +162,6 @@
 	H.equip_to_slot(spraycan, SLOT_IN_BACKPACK)
 	H.regenerate_icons()
 
-/datum/quirk/herbal_affinity
-	name = "Herbal Affinity"
-	desc = "You are in-tune with your natural side. Tribal medicine has increased healing and you do not suffer any drawbacks from it."
-	value = 1
-	mob_trait = TRAIT_HERBAL_AFFINITY
-	gain_text = "<span class='notice'>You feel a connection to traditional forms of medicine.</span>"
-	lose_text = "<span class='danger'>You feel yourself unable to handle natural medicine.</span>"
-	medical_record_text = "Patient reports a keen interest in natural forms of treatment."
-
 /datum/quirk/voracious
 	name = "Voracious"
 	desc = "Nothing gets between you and your food. You eat twice as fast as everyone else!"
@@ -227,7 +218,7 @@
 	gain_text = "<span class='notice'>You want to buy the whole world a nuka-cola!</span>"
 	lose_text = "<span class='danger'>What's the big deal about nuka-cola?</span>"
 	medical_record_text = "Patient has an addiction to the soft drink Nuka-Cola. Somehow, their metabolism has adapted to the sugars and artifical flavorings."
-
+	
 /datum/quirk/nukalover/add()
 	var/mob/living/carbon/human/H = quirk_holder
 	var/datum/species/species = H.dna.species

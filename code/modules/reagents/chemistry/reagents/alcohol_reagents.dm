@@ -260,7 +260,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	pH = 8.1
 
 /datum/reagent/consumable/ethanol/vodka/on_mob_life(mob/living/carbon/M)
-	M.radloss = max(M.radloss-2,0)
+	M.radiation = max(M.radiation-2,0)
 	return ..()
 
 /datum/reagent/consumable/ethanol/bilk

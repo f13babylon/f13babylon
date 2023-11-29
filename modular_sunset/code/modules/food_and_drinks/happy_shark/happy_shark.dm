@@ -29,7 +29,7 @@
 	desc = "A uniquely mixed cola brought to you by Happy Sharky Co. - Ice not included."
 	icon = 'modular_sunset/icons/obj/food/happy_shark.dmi'
 	icon_state = "shark_drink"
-	list_reagents = list(/datum/reagent/consumable/nuka_cola = 15, /datum/reagent/consumable/sodawater = 15, /datum/reagent/medicine/bitterdrink = 1)
+	list_reagents = list(/datum/reagent/consumable/nuka_cola = 15, /datum/reagent/consumable/sodawater = 15, /datum/reagent/medicine/bitter_drink = 1)
 
 
 //Happy Sharky Jerky: 1 cutlet, 1 unit of tablesalt, 1 coyote tobacco leaf, 1 mesquite pod

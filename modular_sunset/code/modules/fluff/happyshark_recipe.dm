@@ -40,7 +40,7 @@
 	time = 40
 	reqs = list(
 		/datum/reagent/consumable/nuka_cola = 10,
-		/datum/reagent/medicine/bitterdrink = 10,
+		/datum/reagent/medicine/bitter_drink = 10,
 		/datum/reagent/consumable/sodawater = 5,
 		/datum/reagent/consumable/sugar = 5
 	)

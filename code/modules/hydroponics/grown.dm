@@ -16,12 +16,11 @@
 	// If you don't want a plant to be driable (watermelons) set this to null in the time definition.
 	resistance_flags = FLAMMABLE
 	reagent_value = HARVEST_REAGENTS_VALUE
-	var/dry_grind = FALSE	//If TRUE, this object needs to be dry to be ground up
-	var/can_distill = TRUE	//If FALSE, this object cannot be distilled into an alcohol.
-	var/distill_reagent		//If NULL and this object can be distilled, it uses a generic fruit_wine reagent and adjusts its variables.
-	var/wine_flavor			//If NULL, this is automatically set to the fruit's flavor. Determines the flavor of the wine if distill_reagent is NULL.
-	var/wine_power = 10		//Determines the boozepwr of the wine if distill_reagent is NULL.
-	var/juice_mult = 0.1	//Multiplier applied to potency to determine the amount of juice obtained
+	var/dry_grind = FALSE //If TRUE, this object needs to be dry to be ground up
+	var/can_distill = TRUE //If FALSE, this object cannot be distilled into an alcohol.
+	var/distill_reagent //If NULL and this object can be distilled, it uses a generic fruit_wine reagent and adjusts its variables.
+	var/wine_flavor //If NULL, this is automatically set to the fruit's flavor. Determines the flavor of the wine if distill_reagent is NULL.
+	var/wine_power = 10 //Determines the boozepwr of the wine if distill_reagent is NULL.
 
 /obj/item/reagent_containers/food/snacks/grown/Initialize(mapload, obj/item/seeds/new_seed)
 	. = ..()
@@ -154,9 +153,10 @@
 		reagents.del_reagent(/datum/reagent/consumable/nutriment/vitamin)
 
 /obj/item/reagent_containers/food/snacks/grown/on_juice()
+	var/nutriment = reagents.get_reagent_amount(/datum/reagent/consumable/nutriment)
 	if(juice_results&&juice_results.len)
 		for(var/i in 1 to juice_results.len)
-			juice_results[juice_results[i]] = juice_mult * seed.potency
+			juice_results[juice_results[i]] = nutriment
 		reagents.del_reagent(/datum/reagent/consumable/nutriment)
 		reagents.del_reagent(/datum/reagent/consumable/nutriment/vitamin)
 

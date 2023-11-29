@@ -9,7 +9,6 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	faction = FACTION_TRIBAL
 	exp_type = EXP_TYPE_TRIBAL
 	access = list(ACCESS_TRIBE)
-	blacklisted_quirks = list(/datum/quirk/herbal_affinity)
 	social_faction = "Tribal"
 	description = "You're a member of one of many tribes, all brought together in a singular goal after the arrival of the Legion and NCR. Survival. \
 	Who you were no longer matters. What you do is prime. Especially so in the newfound faith, that of the machine spirits. Should you follow it. They surround you. \
@@ -20,8 +19,8 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	..()
 	if(visualsOnly)
 		return
+	ADD_TRAIT(H, TRAIT_TRIBAL,  REF(src))
 	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
-	ADD_TRAIT(H, TRAIT_HERBAL_AFFINITY,  REF(src))
 	ADD_TRAIT(H, TRAIT_TRAPPER,  REF(src))
 	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS,  REF(src))
 	ADD_TRAIT(H, TRAIT_AUTO_DRAW,  REF(src))
@@ -266,7 +265,7 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 	backpack_contents = list(
 		/obj/item/twohanded/fireaxe/bmprsword = 1,
 		/obj/item/restraints/legcuffs/bola = 2,
-		/obj/item/reagent_containers/pill/patch/healingpoultice = 2,
+		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
 		/obj/item/stack/medical/gauze = 1,
 		)
 
@@ -343,7 +342,7 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 		/obj/item/clothing/under/f13/female/whitelegs = 1,
 		/obj/item/melee/unarmed/maceglove = 1,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
-		/obj/item/reagent_containers/pill/patch/healingpoultice = 1,
+		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
 	)
 
 /datum/outfit/loadout/whitelegsranged
@@ -354,7 +353,7 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 		/obj/item/clothing/under/f13/female/whitelegs = 1,
 		/obj/item/gun/ballistic/automatic/smg/tommygun/whitelegs = 1,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
-		/obj/item/reagent_containers/pill/patch/healingpoultice = 1,
+		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
 		/obj/item/ammo_box/magazine/tommygunm45/stick = 2
 	)
 
@@ -388,7 +387,7 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 		/obj/item/clothing/under/f13/female/deadhorses = 1,
 		/obj/item/gun/ballistic/automatic/pistol/m1911=1,
 		/obj/item/ammo_box/magazine/m45 = 2,
-		/obj/item/reagent_containers/pill/patch/healingpoultice =2
+		/obj/item/reagent_containers/pill/patch/healpoultice =2
 	)
 
 /datum/outfit/loadout/deadhorsesshaman
@@ -412,7 +411,7 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 		/obj/item/clothing/under/f13/female/sorrows = 1,
 		/obj/item/melee/onehanded/knife/survival = 1,
 		/obj/item/melee/unarmed/yaoguaigauntlet = 1,
-		/obj/item/reagent_containers/pill/patch/healingpoultice = 2,
+		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
 		/obj/item/gun/ballistic/bow/tribal = 1,
 		/obj/item/storage/belt/tribe_quiver = 1,
 		/obj/item/book/granter/crafting_recipe/tribal/sorrows = 1
@@ -497,7 +496,7 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 		/obj/item/ammo_box/c10mm = 1,
 		/obj/item/circular_saw = 1,
 		/obj/item/storage/belt/utility/full = 1,
-		/obj/item/reagent_containers/pill/patch/healingpoultice = 1,
+		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
 	)
 
 /datum/outfit/loadout/rustwalkersshaman
@@ -508,7 +507,7 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 		/obj/item/gun/ballistic/revolver/hobo/knucklegun = 1,
 		/obj/item/ammo_box/c45rev = 2,
 		/obj/item/circular_saw = 1,
-		/obj/item/reagent_containers/pill/patch/healingpoultice = 2,
+		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
 		/obj/item/storage/belt/utility/full = 1,
 		/obj/item/book/granter/crafting_recipe/tribal/rustwalkers = 1
 
@@ -522,6 +521,6 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 		/obj/item/book/granter/crafting_recipe/tribal/bone = 1,
 		/obj/item/twohanded/spear/bonespear = 1,
 		/obj/item/warpaint_bowl=1,
-		/obj/item/reagent_containers/pill/patch/healingpoultice = 2
+		/obj/item/reagent_containers/pill/patch/healpoultice = 2
 
 	)

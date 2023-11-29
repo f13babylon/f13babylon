@@ -240,7 +240,7 @@
 	var/image/radholder = hud_list[RAD_HUD]
 	radholder.pixel_y = bound_y ? (bound_y - world.icon_size) : 0
 	var/mob/living/M = src
-	var/rads = M.radloss
+	var/rads = M.radiation
 	switch(rads)
 		if(-INFINITY to RAD_MOB_SAFE)
 			radholder.icon_state = "hudradsafe"

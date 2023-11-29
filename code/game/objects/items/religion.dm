@@ -133,7 +133,7 @@
 	inspiration_available = FALSE
 
 /obj/item/banner/engineering/special_inspiration(mob/living/carbon/human/H)
-	H.radloss = 0
+	H.radiation = 0
 
 /obj/item/banner/command
 	name = "command banner"
