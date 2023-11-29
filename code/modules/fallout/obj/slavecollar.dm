@@ -51,7 +51,7 @@
 		src.visible_message("<span class='danger'>The [src] beeps loudly!</span>")
 	addtimer(CALLBACK(src, .proc/boom, M), 20)
 
-/obj/item/electropack/shockcollar/explosive/proc/boom(var/mob/living/carbon/collar_loc)
+/obj/item/electropack/shockcollar/explosive/proc/boom(mob/living/carbon/collar_loc)
 	explosion(get_turf(src), 0,1,2)
 	if(isliving(collar_loc) && collar_loc.get_item_by_slot(SLOT_NECK) == src)
 		collar_loc.apply_damage(150, BRUTE, BODY_ZONE_HEAD)
