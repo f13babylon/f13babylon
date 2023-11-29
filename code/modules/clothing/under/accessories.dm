@@ -653,95 +653,106 @@
 	item_color = "colonelrank"
 
 /* Enclave ranks */
-// Bunker duty
-/obj/item/clothing/accessory/enclave
-	name = "(E-2) Private rank pins"
-	desc = "A rank pin denoting its wearer as a Private within the United States Army."
-	icon_state = "private"
-	minimize_when_attached = TRUE
-
 // Private First Class
 /obj/item/clothing/accessory/enclave/private_firstclass
-	name = "(E-3) Private First Class rank pins"
-	desc = "A rank pin denoting its wearer as a Private First Class within the United States Army."
+	name = "(E-2) Private First Class rank pins"
+	desc = "A rank pin denoting its wearer as a Private First Class within the United States Marine Corps."
 	icon_state = "private-firstclass"
 
-// Specialist
-/obj/item/clothing/accessory/enclave/specialist
-	name = "(E-4) Specialist rank pins"
-	desc = "A rank pin denoting its wearer as a Specialist within the United States Army."
-	icon_state = "specialist"
+// Lance Corporal
+/obj/item/clothing/accessory/enclave/lance_corporal
+	name = "(E-3) Lance Corporal rank pins"
+	desc = "A rank pin denoting its wearer as a Lance Corporal within the United States Marine Corps."
+	icon_state = "lance-corporal"
 
 // Corporal
 /obj/item/clothing/accessory/enclave/corporal
 	name = "(E-4) Corporal rank pins"
-	desc = "A rank pin denoting its wearer as a Corporal within the United States Army."
+	desc = "A rank pin denoting its wearer as a Corporal within the United States Marine Corps."
 	icon_state = "corporal"
+
+// Petty Officer Third Class
+/obj/item/clothing/accessory/enclave/pettyofficer_thirdclass
+	name = "(E-4) Petty Officer Third Class rank pins"
+	desc = "A rank pin denoting its wearer as a Petty Officer Third Class within the United States Navy."
+	icon_state = "pettyofficer-thirdclass"
 
 // Sergeant
 /obj/item/clothing/accessory/enclave/sergeant
 	name = "(E-5) Sergeant rank pins"
-	desc = "A rank pin denoting its wearer as a Sergeant within the United States Army."
+	desc = "A rank pin denoting its wearer as a Sergeant within the United States Marine Corps."
 	icon_state = "sergeant"
 
 // Staff Sergeant
 /obj/item/clothing/accessory/enclave/staff_sergeant
 	name = "(E-6) Staff Sergeant rank pins"
-	desc = "A rank pin denoting its wearer as a Staff Sergeant within the United States Army."
+	desc = "A rank pin denoting its wearer as a Staff Sergeant within the United States Marine Corps."
 	icon_state = "staff-sergeant"
 
-// Sergeant First Class
-/obj/item/clothing/accessory/enclave/sergeant_firstclass
-	name = "(E-7) Sergeant First Class rank pins"
-	desc = "A rank pin denoting its wearer as a Sergeant First Class within the United States Army."
-	icon_state = "sergeant-firstclass"
+// Gunnery Sergeant
+/obj/item/clothing/accessory/enclave/gunnery_sergeant
+	name = "(E-7) Gunnery Sergeant rank pins"
+	desc = "A rank pin denoting its wearer as a Gunnery Sergeant within the United States Marine Corps."
+	icon_state = "gunnery-sergeant"
 
 // Master Sergeant
 /obj/item/clothing/accessory/enclave/master_sergeant
 	name = "(E-8) Master Sergeant rank pins"
-	desc = "A rank pin denoting its wearer as a Master Sergeant within the United States Army."
+	desc = "A rank pin denoting its wearer as a Master Sergeant within the United States Marine Corps."
 	icon_state = "master-sergeant"
+
+// First Sergeant
+/obj/item/clothing/accessory/enclave/first_sergeant
+	name = "(E-8) First Sergeant rank pins"
+	desc = "A rank pin denoting its wearer as a First Sergeant within the United States Marine Corps."
+	icon_state = "first-sergeant"
+
+// Master Gunnery Sergeant
+/obj/item/clothing/accessory/enclave/master_gunnerysergeant
+	name = "(E-9) Master Gunnery Sergeant rank pins"
+	desc = "A rank pin denoting its wearer as a Master Gunnery Sergeant within the United States Marine Corps."
+	icon_state = "master-gunnerysergeant"
 
 // Sergeant Major
 /obj/item/clothing/accessory/enclave/sergeant_major
 	name = "(E-9) Sergeant Major rank pins"
-	desc = "A rank pin denoting its wearer as a Sergeant Major within the United States Army."
+	desc = "A rank pin denoting its wearer as a Sergeant Major within the United States Marine Corps."
 	icon_state = "sergeant-major"
 
 // Second Lieutenant
 /obj/item/clothing/accessory/enclave/second_lieutenant
 	name = "(O-1) Second Lieutenant rank pins"
-	desc = "A rank pin denoting its wearer as a Second Lieutenant within the United States Army."
+	desc = "A rank pin denoting its wearer as a Second Lieutenant within the United States Marine Corps."
 	icon_state = "secondlieutenantrank"
 
 // First Lieutenant
 /obj/item/clothing/accessory/enclave/first_lieutenant
 	name = "(O-2) First Lieutenant rank pins"
-	desc = "A rank pin denoting its wearer as a First Lieutenant within the United States Army."
+	desc = "A rank pin denoting its wearer as a First Lieutenant within the United States Marine Corps."
 	icon_state = "firstlieutenantrank"
 
 // Captain
 /obj/item/clothing/accessory/enclave/captain
 	name = "(O-3) Captain rank pins"
-	desc = "A rank pin denoting its wearer as a Captain within the United States Army."
+	desc = "A rank pin denoting its wearer as a Captain within the United States Marine Corps."
 	icon_state = "captainrank"
 
 // Major
 /obj/item/clothing/accessory/enclave/major
 	name = "(O-4) Major rank pins"
-	desc = "A rank pin denoting its wearer as a Major within the United States Army."
+	desc = "A rank pin denoting its wearer as a Major within the United States Marine Corps."
 	icon_state = "majorrank"
 
 // Lieutenant Colonel
 /obj/item/clothing/accessory/enclave/lieutenant_colonel
 	name = "(O-5) Lieutenant Colonel rank pins"
-	desc = "A rank pin denoting its wearer as a Lieutenant Colonel within the United States Army."
+	desc = "A rank pin denoting its wearer as a Lieutenant Colonel within the United States Marine Corps."
 	icon_state = "lieutenantcolonelrank"
 
 // Colonel
 /obj/item/clothing/accessory/enclave/colonel
 	name = "(O-6) Colonel rank pins"
-	desc = "A rank pin denoting its wearer as a Colonel within the United States Army."
+	desc = "A rank pin denoting its wearer as a Colonel within the United States Marine Corps."
 	icon_state = "colonelrank"
 
 // Internal Security - Previously a Donator Item
