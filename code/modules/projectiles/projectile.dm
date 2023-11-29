@@ -135,7 +135,6 @@
 	var/knockdown_stamoverride
 	var/knockdown_stam_max
 	var/unconscious = 0
-	var/irradiate = 0
 	var/stutter = 0
 	var/slur = 0
 	var/eyeblur = 0
@@ -294,7 +293,7 @@
 	else
 		L.log_message("has been shot by [firer] with [src]", LOG_ATTACK, color="orange")
 
-	return L.apply_effects(stun, knockdown, unconscious, irradiate, slur, stutter, eyeblur, drowsy, blocked, stamina, jitter, knockdown_stamoverride, knockdown_stam_max)
+	return L.apply_effects(stun, knockdown, unconscious, slur, stutter, eyeblur, drowsy, blocked, stamina, jitter, knockdown_stamoverride, knockdown_stam_max)
 
 /obj/item/projectile/proc/vol_by_damage()
 	if(src.damage)
