@@ -293,8 +293,10 @@
 		log_combat(firer, L, "shot", src, reagent_note)
 	else
 		L.log_message("has been shot by [firer] with [src]", LOG_ATTACK, color="orange")
+	if(irradiate != 0)
+		L.apply_damage(irradiate, RADIATION)
 
-	return L.apply_effects(stun, knockdown, unconscious, irradiate, slur, stutter, eyeblur, drowsy, blocked, stamina, jitter, knockdown_stamoverride, knockdown_stam_max)
+	return L.apply_effects(stun, knockdown, unconscious, slur, stutter, eyeblur, drowsy, blocked, stamina, jitter, knockdown_stamoverride, knockdown_stam_max)
 
 /obj/item/projectile/proc/vol_by_damage()
 	if(src.damage)
