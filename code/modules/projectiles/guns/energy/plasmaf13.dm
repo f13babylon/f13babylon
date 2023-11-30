@@ -110,6 +110,7 @@
 /obj/item/gun/energy/laser/plasma/scatter
 	name = "multiplas rifle"
 	item_state = "multiplas"
+	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
 	icon_state = "multiplas"
 	fire_delay = 3
 	desc = "A heavily modified version of an urban plasma rifle equipped with a multi-caster attachment for a barrel. Fires bolts of plasma that form into toroids in the chamber, which are then sent down a split barrel and propelled by electromagnetic coils."
