@@ -6,6 +6,7 @@
 
 	access = list(ACCESS_ENCLAVE, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
 	minimal_access = list(ACCESS_ENCLAVE, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
+	blacklisted_quirks = list(/datum/quirk/straight_edge)
 	forbids = "Enclave taboos: Aiding the Brotherhood, NCR, or Legion in any way if it will not get you more than it gets them. Revealing your affiliation with the Enclave to outsiders if not directly ordered to. Killing fellow Americans."
 	enforces = "Enclave rules: Stay in uniform. Act mature and respectful. Obey orders given to you that do not harm fellow Americans. Maintain secrecy of your bunker's whereabouts."
 	objectivesList = list("Rapid Reaction Corps Logistics advisory: Collect resources, attrition is depleting our reserves.", "Rapid Reaction Corps Research advisory: Capture human subjects for experiments, alive.")
@@ -44,6 +45,7 @@
 	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK,  REF(src))
 	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
+	ADD_TRAIT(H, TRAIT_STRAIGHT_EDGE, REF(src))
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 
 
@@ -85,7 +87,6 @@
 		/obj/item/pda = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
-		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/card/id/syndicate/anyone =1
 		)
 
@@ -154,7 +155,6 @@
 		/obj/item/pda = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
-		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/card/id/syndicate/anyone = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/clothing/mask/chameleon = 1
@@ -188,7 +188,6 @@
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/deagle/elcapitan
 	suit = /obj/item/clothing/suit/armor/f13/usmcriot
 	backpack_contents = list(
-
 		/obj/item/ammo_box/magazine/m14mm  = 3
 	)
 
@@ -214,7 +213,7 @@
 /datum/outfit/job/enclave/peacekeeper/f13gysergeant
 	name = "Enclave Gunnery Sergeant"
 	jobtype = /datum/job/enclave/f13gysergeant
-	accessory = /obj/item/clothing/accessory/enclave/sergeant_firstclass
+	accessory = /obj/item/clothing/accessory/enclave/gunnery_sergeant
 	ears = /obj/item/radio/headset/headset_enclave/command
 
 	backpack_contents = list(
@@ -223,10 +222,8 @@
 		/obj/item/pda = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
-		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/megaphone = 1,
 		/obj/item/card/id/syndicate/anyone = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 3,
 		/obj/item/clothing/mask/chameleon = 1
 		)
 
@@ -236,7 +233,8 @@
 	suit = /obj/item/clothing/suit/armor/f13/power_armor/x02
 
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/plasma = 1
+		/obj/item/gun/energy/laser/plasma = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 3
 	)
 
 /datum/outfit/loadout/gysgt_melee
@@ -245,7 +243,8 @@
 	head = /obj/item/clothing/head/helmet/f13/enclave/marine
 
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/plasma = 1
+		/obj/item/gun/energy/laser/plasma = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 3
 	)
 
 
@@ -266,8 +265,8 @@
 /datum/job/enclave/enclavesgt
 	title = "Enclave Sergeant"
 	flag = F13USSGT
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	description = "You're an NCO in a force of Enclave Remnant marines, part of the Rapid Reaction Corps. You are a well-trained soldier, entrusted with a valuable suit of Advanced Power Armor and heavy weapons. Depending on the mission, you may provide fire support in heavy combat or you may command covert teams in the field."
 	supervisors = "The Lieutenant and the Gunnery Sergeant."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavesgt
@@ -295,7 +294,6 @@
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/clothing/head/f13/enclave/peacekeeper = 1,
-		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/card/id/syndicate/anyone = 1,
 		/obj/item/clothing/mask/chameleon = 1
 		)
@@ -368,8 +366,6 @@
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/clothing/head/f13/enclave/peacekeeper = 1,
-		/obj/item/reagent_containers/hypospray/medipen/psycho = 1,
-		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/card/id/syndicate/anyone =1
 		)
 
@@ -429,7 +425,7 @@
 	jobtype = /datum/job/enclave/f13specialist
 	head = /obj/item/clothing/head/helmet/f13/combat/enclave
 	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/enclave
-	accessory = /obj/item/clothing/accessory/enclave/specialist
+	accessory = /obj/item/clothing/accessory/enclave/corporal
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
@@ -450,7 +446,7 @@
 		/obj/item/storage/firstaid/ancient = 1,
 		/obj/item/book/granter/trait/chemistry = 1,
 		/obj/item/book/granter/trait/midsurgery = 1,
-		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
+		/obj/item/storage/pill_bottle/chem_tin/mentats = 1,
 		/obj/item/ammo_box/magazine/uzim9mm = 2,
 		)
 
@@ -479,8 +475,8 @@
 /datum/job/enclave/enclavespy
 	title = "Enclave Marine"
 	flag = F13USPRIVATE
-	total_positions = 3
-	spawn_positions = 4
+	total_positions = 5
+	spawn_positions = 5
 	description = "You're a grunt in a force of Enclave Remnant marines, part of the Rapid Reaction Corps. You may be an experienced trooper, or you may be a fresh recruit in need of training, either from the Enclave's tiny population, the hidden, Enclave-controlled Vault 45, or from concealed Enclave cryostasis bunkers. Be careful not to do anything that will expose the Enclave's presence to its many enemies."
 	supervisors = "The Lieutenant, the Sergeants, and the Specialists."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavespy
@@ -504,7 +500,6 @@
 		/obj/item/grenade/smokebomb = 1,
 		/obj/item/pda = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
-		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/clothing/mask/chameleon = 1,
 		/obj/item/card/id/syndicate/anyone =1,
 		/obj/item/clothing/head/f13/enclave/peacekeeper = 1
@@ -544,7 +539,6 @@
 	outfit = /datum/outfit/job/enclave/noncombat/enclavesci
 	exp_type = EXP_TYPE_FALLOUT
 	exp_requirements = 600
-	roleplay_exclusive_notify = 1
 	access = list(ACCESS_ENCLAVE, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
 
 /datum/outfit/job/enclave/noncombat/enclavesci
@@ -601,7 +595,6 @@
 	supervisors = "Enclave Upper Echelon, Air Force Division."
 	outfit = /datum/outfit/job/enclave/noncombat/enclavepilot
 	req_admin_notify = 1
-	roleplay_exclusive_notify = 1
 	exp_requirements = 1000
 	access = list(ACCESS_ENCLAVE, ACCESS_ENCLAVE_COMMAND, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
 
@@ -646,7 +639,6 @@
 	enforces = "You are not permitted to leave the base. You are a non-combatant. You cannot join any raids or battles on the surface. You cannot run dungeons."
 	supervisors = "Everyone else."
 	outfit = /datum/outfit/job/enclave/noncombat/f13BDUTY
-	roleplay_exclusive_notify = 1
 	exp_type = EXP_TYPE_FALLOUT
 	exp_requirements = 600
 
@@ -664,7 +656,6 @@
 	id = /obj/item/card/id/dogtag/enclave/trooper
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	uniform = /obj/item/clothing/under/f13/enclave/peacekeeper
-	accessory = /obj/item/clothing/accessory/enclave
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
@@ -737,7 +728,6 @@
 	supervisors = "United States Secret Service"
 	access = list(ACCESS_ENCLAVE, ACCESS_CHANGE_IDS, ACCESS_ENCLAVE_COMMAND, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
 	outfit = /datum/outfit/job/enclave/noncombat/enc_maj
-	roleplay_exclusive_notify = 1
 	req_admin_notify = 1
 	exp_requirements = 2500//Well above Lieutenant for good reason. It's RP exclusive, and comes with some heavy perks.
 

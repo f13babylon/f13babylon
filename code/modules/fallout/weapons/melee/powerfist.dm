@@ -3,7 +3,7 @@
 /////////////////		-Uses power (gas currently) for knockback. Heavy AP, specialized for attacking heavy armor
 
 // Power Fist			Throws targets. Max damage 44. Full AP.
-/obj/item/melee/powerfist/f13
+/obj/item/melee/f13powerfist
 	name = "power fist"
 	desc = "A metal gauntlet with a piston-powered ram on top for that extra 'oomph' in your punch."
 	icon_state = "powerfist"
@@ -13,6 +13,7 @@
 	flags_1 = CONDUCT_1
 	attack_verb = list("whacked", "fisted", "power-punched")
 	force = 22
+	armour_penetration = 0.25
 	throwforce = 10
 	throw_range = 3
 	w_class = WEIGHT_CLASS_NORMAL
@@ -21,42 +22,8 @@
 	var/throw_distance = 1
 	attack_speed = CLICK_CD_MELEE
 
-/obj/item/melee/powerfist/f13/attackby(obj/item/W, mob/user, params)
-	if(istype(W, /obj/item/wrench))
-		switch(fisto_setting)
-			if(1)
-				fisto_setting = 2
-			if(2)
-				fisto_setting = 1
-		W.play_tool_sound(src)
-		to_chat(user, "<span class='notice'>You tweak \the [src]'s piston valve to [fisto_setting].</span>")
-		attack_speed = CLICK_CD_MELEE * fisto_setting
-
-/obj/item/melee/powerfist/f13/updateTank(obj/item/tank/internals/thetank, removing = 0, mob/living/carbon/human/user)
-	return
-
-/obj/item/melee/powerfist/f13/attack(mob/living/target, mob/living/user, attackchain_flags = NONE)
-	if(HAS_TRAIT(user, TRAIT_PACIFISM))
-		to_chat(user, "<span class='warning'>You don't want to harm other living beings!</span>")
-		return FALSE
-	var/turf/T = get_turf(src)
-	if(!T)
-		return FALSE
-	var/totalitemdamage = target.pre_attacked_by(src, user)
-	target.visible_message("<span class='danger'>[user]'s powerfist lets out a loud hiss as [user.p_they()] punch[user.p_es()] [target.name]!</span>", \
-		"<span class='userdanger'>You cry out in pain as [user]'s punch flings you backwards!</span>")
-	target.apply_damage(totalitemdamage * fisto_setting, BRUTE, wound_bonus = -25*fisto_setting**2)
-	new /obj/effect/temp_visual/kinetic_blast(target.loc)
-	playsound(loc, 'sound/weapons/resonator_blast.ogg', 50, 1)
-	playsound(loc, 'sound/weapons/genhit2.ogg', 50, 1)
-	log_combat(user, target, "power fisted", src)
-	if(QDELETED(target))
-		return
-	var/atom/throw_target = get_edge_target_turf(target, get_dir(src, get_step_away(target, src)))
-	target.throw_at(throw_target, 2 * throw_distance, 0.5 + (throw_distance / 2))
-
 // Goliath				Throws targets far. Max damage 50.
-/obj/item/melee/powerfist/f13/goliath
+/obj/item/melee/f13powerfist/goliath
 	name = "Goliath"
 	desc = "A massive, experimental metal gauntlet captured by the Legion. The piston-powered ram on top is designed to throw targets very, very far."
 	icon = 'icons/fallout/objects/melee/melee.dmi'
@@ -89,7 +56,7 @@
 
 
 // Mole Miner
-/obj/item/melee/powerfist/f13/moleminer
+/obj/item/melee/f13powerfist/moleminer
 	name = "mole miner gauntlet"
 	desc = "A hand-held mining and cutting implement, repurposed into a deadly melee weapon.  Its name origins are a mystery..."
 	icon_state = "mole_miner_g"

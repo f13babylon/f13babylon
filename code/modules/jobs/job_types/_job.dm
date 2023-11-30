@@ -306,21 +306,38 @@
 
 	if(chemwhiz == TRUE)
 		ADD_TRAIT(H, TRAIT_CHEMWHIZ, "chemwhiz")
+		var/list/chem_types = list(/datum/crafting_recipe/jet, /datum/crafting_recipe/turbo, /datum/crafting_recipe/psycho, /datum/crafting_recipe/medx, /datum/crafting_recipe/buffout)
+		for(var/datum/crafting_recipe/R in chem_types)
+			H.mind.teach_crafting_recipe(R)
 
 	if(pa_wear == TRUE)
 		ADD_TRAIT(H, TRAIT_PA_WEAR, "pa_wear")
 
+	var/list/gun_types
 	if(gunsmith_one == TRUE)
 		ADD_TRAIT(H, TRAIT_GUNSMITH_ONE, "gunsmith_one")
+		gun_types = list(/datum/crafting_recipe/ninemil, /datum/crafting_recipe/huntingrifle, /datum/crafting_recipe/varmintrifle)
+		for(var/datum/crafting_recipe/R in gun_types)
+			H.mind.teach_crafting_recipe(R)
 
 	if(gunsmith_two == TRUE)
 		ADD_TRAIT(H, TRAIT_GUNSMITH_TWO, "gunsmith_two")
+		gun_types = list(/datum/crafting_recipe/n99, /datum/crafting_recipe/remingtonhuntingrifle, /datum/crafting_recipe/m1911, /datum/crafting_recipe/huntingshotgun)
+		for(var/datum/crafting_recipe/R in gun_types)
+			H.mind.teach_crafting_recipe(R)
 
 	if(gunsmith_three == TRUE)
 		ADD_TRAIT(H, TRAIT_GUNSMITH_THREE, "gunsmith_three")
+		gun_types = list(/datum/crafting_recipe/scope, /datum/crafting_recipe/suppressor, /datum/crafting_recipe/burst_improvement, /datum/crafting_recipe/recoil_decrease)
+		for(var/datum/crafting_recipe/R in gun_types)
+			H.mind.teach_crafting_recipe(R)
+
 
 	if(gunsmith_four == TRUE)
 		ADD_TRAIT(H, TRAIT_GUNSMITH_FOUR, "gunsmith_four")
+		gun_types = list(/datum/crafting_recipe/flux, /datum/crafting_recipe/lenses, /datum/crafting_recipe/conductors, /datum/crafting_recipe/receiver, /datum/crafting_recipe/assembly, /datum/crafting_recipe/alloys)
+		for(var/datum/crafting_recipe/R in gun_types)
+			H.mind.teach_crafting_recipe(R)
 
 	if(vb_pilot == TRUE)
 		ADD_TRAIT(H, TRAIT_PILOT, "vb_pilot")

@@ -122,7 +122,7 @@
 			M.reagents.remove_reagent(R.type,2.5)
 	if(M.health > 20)
 		M.adjustToxLoss(-3*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
-	M.radiation += 0.1
+	M.radloss += 0.1
 	M.dizziness = max(0,M.dizziness-2)
 	M.drowsyness = max(0,M.drowsyness-1)
 	M.jitteriness = max(0,M.jitteriness-3)

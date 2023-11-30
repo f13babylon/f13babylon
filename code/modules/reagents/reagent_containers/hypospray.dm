@@ -156,12 +156,28 @@
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak
 	name = "stimpak"
-	desc = "A handheld delivery system for medicine, used to rapidly heal physical damage to the body."
+	desc = "A syringe filled with a pre-war cocktail of healing agents and stimulants which bolster the body's natural regenerative abilities."
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "hypo_stimpak"
 	volume = 10
 	amount_per_transfer_from_this = 10
 	list_reagents = list(/datum/reagent/medicine/stimpak = 10)
+	var/self_delay = 0
+
+/obj/item/reagent_containers/hypospray/medipen/stimpak/attack(mob/M, mob/user)
+	if(!reagents.total_volume)
+		to_chat(user, "<span class='warning'>[src] is empty!</span>")
+		return
+
+	if(M == user)
+		M.visible_message("<span class='danger'>[user] attempts to use [src] on themselves.</span>", \
+							"<span class='notice'>You attempt to use [src] on yourself.</span>")
+		if(!do_mob(user, M, self_delay))
+			return 0
+	else
+		M.visible_message("<span class='danger'>[user] attempts to use [src] on [M].</span>", \
+							"<span class='userdanger'>[user] attempts to use [src] on you.</span>")
+	..()
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak/on_reagent_change(changetype)
 	update_icon()
@@ -173,26 +189,26 @@
 		. += stimpak_overlay
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak/custom
-	desc = "A handheld delivery system for medicine, this particular one will deliver a tailored cocktail."
+	desc = "A syringe filled with a mysterious cocktail of chemicals."
 	list_reagents = null
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak/imitation
 	name = "imitation stimpak"
-	desc = "A handheld delivery system for medicine. This one is filled with ground up flower juice, but hey, whatever gets you moving, right?"
-	list_reagents = list(/datum/reagent/medicine/stimpakimitation = 10)
+	desc = "A syringe filled with a chemical which aims to replicate the effects of the fluid found in pre-war stimpaks, albeit less effective."
+	list_reagents = list(/datum/reagent/medicine/stimpak/imitation = 10)
 
 // ---------------------------------
 // SUPER STIMPAK
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super
 	name = "super stimpak"
-	desc = "The super version comes in a hypodermic, but with an additional vial containing more powerful drugs than the basic model and a leather belt to strap the needle to the injured limb."
+	desc = "A large syringe with a leather strap attached to it, filled with a powerful pre-war cocktail of healing agents and stimulants which bolster the body's natural regenerative abilities."
 	icon_state = "hypo_superstimpak"
 	amount_per_transfer_from_this = 10
-	list_reagents = list(/datum/reagent/medicine/super_stimpak = 10)
+	list_reagents = list(/datum/reagent/medicine/stimpak/super = 10)
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super/custom
-	desc = "The super version comes in a hypodermic, but with an additional vial to inject more drugs than the basic model and a leather belt to strap the needle to a limb. This particular one will deliver a tailored cocktail."
+	desc = "A large syringe with a leather strap attached to it, filled with a mysterious cocktail of chemicals."
 	volume = 20
 	amount_per_transfer_from_this = 20
 	list_reagents = null
@@ -208,6 +224,22 @@
 	volume = 15
 	amount_per_transfer_from_this = 5
 	list_reagents = list(/datum/reagent/medicine/medx = 15)
+	var/self_delay = 10
+
+/obj/item/reagent_containers/hypospray/medipen/medx/attack(mob/living/M, mob/user)
+	if(!reagents.total_volume)
+		to_chat(user, "<span class='warning'>[src] is empty!</span>")
+		return
+
+	if(M == user)
+		M.visible_message("<span class='danger'>[user] attempts to use [src] on themselves.</span>", \
+							"<span class='notice'>You attempt to use [src] on yourself.</span>")
+		if(!do_mob(user, M, self_delay))
+			return 0
+	else
+		M.visible_message("<span class='danger'>[user] attempts to use [src] on [M].</span>", \
+							"<span class='userdanger'>[user] attempts to use [src] on you.</span>")
+	..()
 
 // ---------------------------------
 // PSYCHO
@@ -220,6 +252,22 @@
 	volume = 10
 	amount_per_transfer_from_this = 10
 	list_reagents = list(/datum/reagent/drug/psycho = 10)
+	var/self_delay = 10
+
+/obj/item/reagent_containers/hypospray/medipen/psycho/attack(mob/living/M, mob/user)
+	if(!reagents.total_volume)
+		to_chat(user, "<span class='warning'>[src] is empty!</span>")
+		return
+
+	if(M == user)
+		M.visible_message("<span class='danger'>[user] attempts to use [src] on themselves.</span>", \
+							"<span class='notice'>You attempt to use [src] on yourself.</span>")
+		if(!do_mob(user, M, self_delay))
+			return 0
+	else
+		M.visible_message("<span class='danger'>[user] attempts to use [src] on [M].</span>", \
+							"<span class='userdanger'>[user] attempts to use [src] on you.</span>")
+	..()
 
 // End Fallout -------------------------------------------------
 

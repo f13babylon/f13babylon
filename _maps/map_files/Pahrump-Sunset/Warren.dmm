@@ -902,7 +902,7 @@
 	},
 /area/f13/wasteland/warren)
 "aOT" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/structure/reagent_dispensers/barrel/dangerous,
 /obj/structure/spider/stickyweb,
 /turf/open/floor/plasteel/dark,
@@ -1568,9 +1568,7 @@
 	},
 /area/f13/ncr)
 "brf" = (
-/obj/effect/decal/waste{
-	icon_state = "goo8"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/mineral/uranium{
 	icon_state = "plating_rust";
 	name = "corroded metal floor covered in goo";
@@ -1820,7 +1818,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/raiders)
 "bFx" = (
-/obj/effect/decal/waste{
+/obj/effect/decal/cleanable/greenglow/radioactive{
 	pixel_x = -4;
 	pixel_y = -7
 	},
@@ -1953,9 +1951,7 @@
 	},
 /area/f13/ncr)
 "bMb" = (
-/obj/effect/decal/waste{
-	icon_state = "goo10"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/structure/spider/stickyweb,
 /turf/open/floor/plating/rust,
 /area/f13/caves)
@@ -3476,9 +3472,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "dhl" = (
-/obj/effect/decal/waste{
-	icon_state = "goo8"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 1;
 	icon_state = "outerbordercorner"
@@ -4360,7 +4354,7 @@
 	},
 /area/f13/city)
 "ece" = (
-/obj/effect/decal/waste{
+/obj/effect/decal/cleanable/greenglow/radioactive{
 	pixel_x = -4;
 	pixel_y = -7
 	},
@@ -4560,7 +4554,7 @@
 	},
 /area/f13/city)
 "ens" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/ruins{
 	icon_state = "rubbleslab"
 	},
@@ -5561,9 +5555,7 @@
 /turf/open/floor/wood/wood_common,
 /area/f13/city)
 "flZ" = (
-/obj/effect/decal/waste{
-	icon_state = "goo8"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderleft0"
 	},
@@ -6103,9 +6095,7 @@
 	},
 /area/f13/wasteland/warren)
 "fHR" = (
-/obj/effect/decal/waste{
-	icon_state = "goo12"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft0"
 	},
@@ -7908,7 +7898,7 @@
 	},
 /area/f13/wasteland/warren)
 "hsZ" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plating/f13/outside/road{
 	icon_state = "horizontaltopborderbottom1"
 	},
@@ -7962,7 +7952,7 @@
 	},
 /area/f13/ncr)
 "hvl" = (
-/obj/effect/decal/waste{
+/obj/effect/decal/cleanable/greenglow/radioactive{
 	pixel_x = -4;
 	pixel_y = -7
 	},
@@ -8778,9 +8768,7 @@
 /area/f13/wasteland/warren)
 "ijK" = (
 /obj/structure/reagent_dispensers/barrel/dangerous,
-/obj/effect/decal/waste{
-	icon_state = "goo10"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderleft0"
 	},
@@ -9037,7 +9025,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
 /area/f13/city)
 "itF" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/road{
 	dir = 8;
 	icon_state = "horizontalinnermain2left"
@@ -9863,7 +9851,7 @@
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/wasteland/warren)
 "jlS" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plating/rust,
 /area/f13/caves)
 "jlX" = (
@@ -10273,7 +10261,7 @@
 	},
 /area/f13/wasteland/warren)
 "jIy" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/dark,
 /area/f13/caves)
 "jJA" = (
@@ -10366,7 +10354,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/warren)
 "jOe" = (
-/obj/effect/decal/waste{
+/obj/effect/decal/cleanable/greenglow/radioactive{
 	pixel_x = 20;
 	pixel_y = 1
 	},
@@ -11546,7 +11534,7 @@
 	},
 /area/f13/wasteland/warren)
 "kYD" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/f13,
 /area/f13/city)
 "kYF" = (
@@ -11801,7 +11789,7 @@
 	},
 /area/f13/raiders)
 "lha" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/midhigh,
 /turf/open/floor/plasteel/dark,
 /area/f13/caves)
@@ -13368,7 +13356,7 @@
 /area/f13/city)
 "mJo" = (
 /obj/structure/closet/crate/trashcart,
-/obj/item/reagent_containers/pill/patch/healpoultice,
+/obj/item/reagent_containers/pill/patch/healingpoultice,
 /obj/item/trash/f13/rotten,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland/warren)
@@ -13406,7 +13394,7 @@
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/city)
 "mKO" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/city)
 "mKR" = (
@@ -13440,7 +13428,7 @@
 	},
 /area/f13/wasteland/warren)
 "mMA" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/effect/decal/fakelattice,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain2"
@@ -13782,9 +13770,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/warren)
 "naZ" = (
-/obj/effect/decal/waste{
-	icon_state = "goo10"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain2"
 	},
@@ -14333,9 +14319,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/ncr)
 "nBY" = (
-/obj/effect/decal/waste{
-	icon_state = "goo10"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/dark,
 /area/f13/caves)
 "nCF" = (
@@ -14430,7 +14414,7 @@
 	},
 /area/f13/wasteland/warren)
 "nHI" = (
-/obj/effect/decal/waste{
+/obj/effect/decal/cleanable/greenglow/radioactive{
 	pixel_x = -4;
 	pixel_y = -7
 	},
@@ -15472,9 +15456,7 @@
 /area/f13/city)
 "oME" = (
 /obj/structure/table/optable,
-/obj/effect/decal/waste{
-	icon_state = "goo5"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/machinery/light/fo13colored/Aqua{
 	desc = "A lighting fixture with cold blue lighting.";
 	dir = 1;
@@ -18260,7 +18242,7 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/ncr)
 "rme" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/wasteland/warren)
 "rmz" = (
@@ -20695,9 +20677,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/warren)
 "tGj" = (
-/obj/effect/decal/waste{
-	icon_state = "goo5"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/mineral/uranium{
 	icon_state = "plating_rust";
 	name = "corroded metal floor covered in goo";
@@ -21023,9 +21003,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
 "tRq" = (
-/obj/effect/decal/waste{
-	icon_state = "goo12"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/mineral/uranium{
 	icon_state = "plating_rust";
 	name = "corroded metal floor covered in goo";
@@ -22385,7 +22363,7 @@
 	},
 /area/f13/wasteland/warren)
 "vag" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /mob/living/simple_animal/hostile/renegade,
 /turf/open/floor/f13,
 /area/f13/city)
@@ -24627,9 +24605,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/red/redchess/redchess2,
 /area/f13/city)
 "wWL" = (
-/obj/effect/decal/waste{
-	icon_state = "goo5"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/dark,
 /area/f13/caves)
 "wXr" = (
@@ -25336,9 +25312,7 @@
 	},
 /area/f13/wasteland/warren)
 "xzv" = (
-/obj/effect/decal/waste{
-	icon_state = "goo12"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/machinery/iv_drip,
 /turf/open/floor/f13,
 /area/f13/city)

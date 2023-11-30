@@ -74,6 +74,7 @@ Administrator
 	ADD_TRAIT(H, TRAIT_GENERIC, REF(src))
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, REF(src))
 	ADD_TRAIT(H, TRAIT_RESEARCHER, REF(src))
+	ADD_TRAIT(H, TRAIT_MEDICALGRADUATE, REF(src))
 	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, REF(src))
 	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, REF(src))
 	ADD_TRAIT(H, TRAIT_RESEARCHER, REF(src))
@@ -99,7 +100,8 @@ Administrator
 		/obj/item/clothing/glasses/hud/health = 1,
 		/obj/item/book/granter/trait/chemistry = 1,
 		/obj/item/book/granter/trait/techno = 1,
-		/obj/item/healthanalyzer/advanced
+		/obj/item/healthanalyzer/advanced = 1,
+		/obj/item/pda/medical = 1,
 	)
 
 /*
@@ -204,6 +206,7 @@ Practitioner
 		/obj/item/reagent_containers/medspray/synthflesh = 2,
 		/obj/item/pda/medical = 1,
 		/obj/item/healthanalyzer=1,
+		/obj/item/roller = 2,
 	)
 
 /datum/outfit/loadout/medical_researcher
@@ -274,6 +277,7 @@ Follower Volunteer
 	backpack_contents = list(
 		/obj/item/healthanalyzer = 1,
 		/obj/item/reagent_containers/medspray/synthflesh = 1,
+		/obj/item/roller = 2,
 	)
 
 /datum/outfit/loadout/volunteer_mechanic

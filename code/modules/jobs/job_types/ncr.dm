@@ -24,6 +24,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 	access = list(ACCESS_NCR)
 	minimal_access = list(ACCESS_NCR)
+	blacklisted_quirks = list(/datum/quirk/straight_edge)
 	forbids = "The NCR forbids: Chem and drug use such as jet or alcohol while on duty. Execution of unarmed or otherwise subdued targets without authorisation."
 	enforces = "The NCR expects: Obeying the lawful orders of superiors. Proper treatment of prisoners.  Good conduct within the Republic's laws. Wearing the uniform."
 	objectivesList = list("Leadership recommends the following goal for this week: Establish an outpost at the radio tower","Leadership recommends the following goal for this week: Neutralize and capture dangerous criminals", "Leadership recommends the following goal for this week: Free slaves and establish good relations with unaligned individuals.")
@@ -46,6 +47,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	..()
 	if(visualsOnly)
 		return
+	ADD_TRAIT(H, TRAIT_STRAIGHT_EDGE,  REF(src))
+	ADD_TRAIT(H, TRAIT_GENERIC, REF(src))
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrgate)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrcombatarmor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrcombathelmet)
@@ -398,7 +401,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	display_order = JOB_DISPLAY_ORDER_SERGEANT
 	outfit = /datum/outfit/job/ncr/f13drillsergeant
-	roleplay_exclusive_notify = 1
 	exp_requirements = 0
 
 	loadout_options = list( // ALL: Bayonet
@@ -477,7 +479,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	supervisors = "The Captain and the NCR"
 	display_order = JOB_DISPLAY_ORDER_REPRESENTATIVE
 	outfit = /datum/outfit/job/ncr/f13representative
-	roleplay_exclusive_notify = 1
 	exp_type = EXP_TYPE_NCR
 	exp_requirements = 840
 
@@ -628,7 +629,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/vrcqc
 	name = "Veteran Ranger CQC"
-	suit_store = /obj/item/gun/ballistic/revolver/sequoia
+	suit_store = /obj/item/gun/ballistic/revolver/hunting/sequoia
 	backpack_contents = list(
 		/obj/item/ammo_box/c4570box/ = 2,
 		/obj/item/book/granter/trait/bigleagues = 1,
@@ -924,7 +925,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_TROOPER
 	outfit = /datum/outfit/job/ncr/f13mp
-	roleplay_exclusive_notify = 1
 	exp_requirements = 0
 
 /datum/outfit/job/ncr/f13mp		// .45 Pistol, Beanbag Shotgun, Military baton
@@ -1243,7 +1243,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	display_order = JOB_DISPLAY_ORDER_MEDICALOFFICER
 	outfit = /datum/outfit/job/ncr/f13medicalofficer
-	roleplay_exclusive_notify = 1
 	exp_type = EXP_TYPE_NCR
 	exp_requirements = 840
 	matchmaking_allowed = list(
@@ -1301,7 +1300,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_LOGISTICSOFFICER
 	outfit = /datum/outfit/job/ncr/f13logisticsofficer
-	roleplay_exclusive_notify = 1
 	exp_type = EXP_TYPE_NCR
 	exp_requirements = 840
 
@@ -1319,6 +1317,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/a180)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/uzi)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ninemil)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/rangemaster)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1911)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/n99)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/commando)
@@ -1326,6 +1325,10 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/marksmancarbine)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1garand)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/scoutcarbine)
+
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/receiver)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/assembly)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/alloys)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK,  REF(src))
 
 /datum/outfit/job/ncr/f13logisticsofficer		// M1 Garand, 9mm sidearm, Survival knife, C-4 bomb, Extra materials, Full blueprints
@@ -1344,11 +1347,10 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE
-	gunsmith_four = TRUE
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv = 2,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
-		/obj/item/ammo_box/magazine/m9mm = 2,
+		/obj/item/ammo_box/magazine/m9mmds = 2,
 		/obj/item/grenade/plastic/c4 = 1,
 		/obj/item/melee/onehanded/knife/survival = 1,
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
@@ -1374,7 +1376,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	exp_type = EXP_TYPE_NCR
 	display_order = JOB_DISPLAY_ORDER_REAR_ECHELON
 	outfit = /datum/outfit/job/ncr/f13rearechelon
-	roleplay_exclusive_notify = 1
 	exp_requirements = 0
 
 /datum/outfit/job/ncr/f13rearechelon

@@ -98,8 +98,12 @@
 
 	log_directed_talk(mob, H, input, LOG_ADMIN, "reply")
 	message_admins("[key_name_admin(src)] replied to [key_name_admin(H)]'s [sender] message with: \"[input]\"")
-	SEND_SOUND(H, sound('sound/items/stalker_pda_news.ogg'))
-	to_chat(H, "<span class='notice'>You hear something crackle in your headset for a moment before a voice speaks.</span><br><span class=[radio_span]>\"This is <b>[sender_full_info]</b>, [input]\"</span>")
+
+	var/sound/message_sound = sound(get_sfx('sound/items/stalker_pda_news.ogg'))
+	message_sound.volume = 50
+
+	SEND_SOUND(H, message_sound)
+	to_chat(H, "<span class='notice'>You hear something crackle in your headset for a moment before a voice speaks:</span><span class=[radio_span]>\"This is <b>[sender_full_info]</b>, [input]\"</span>")
 
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Headset Message") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 

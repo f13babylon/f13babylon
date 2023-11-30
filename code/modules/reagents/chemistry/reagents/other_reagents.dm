@@ -399,8 +399,8 @@
 	M.adjustOxyLoss(-0.5, updating_health = FALSE)
 	M.adjustToxLoss(-1, updating_health = FALSE, forced = TRUE)
 	M.adjustStaminaLoss(-0.5, updating_health = FALSE)
-	if(M.radiation > 0)
-		M.radiation -= min(M.radiation, 2)
+	if(M.radloss > 0)
+		M.radloss -= min(M.radloss, 2)
 	..()
 	return TRUE // update health at end of tick
 
@@ -419,7 +419,7 @@
 	glass_desc = "A glass of holy water."
 	pH = 7.5 //God is alkaline
 
-	// Holy water. Mostly the same as water, it also heals the plant a little with the power of the spirits. Also ALSO increases instability.
+// Holy water. Mostly the same as water, it also heals the plant a little with the power of the spirits. Also ALSO increases instability.
 /datum/reagent/water/holywater/on_hydroponics_apply(obj/item/seeds/myseed, datum/reagents/chems, obj/machinery/hydroponics/mytray)
 	if(chems.has_reagent(src.type, 1))
 		mytray.adjustWater(round(chems.get_reagent_amount(src.type) * 1))
@@ -1228,7 +1228,7 @@
 		mytray.adjustToxic(round(chems.get_reagent_amount(src.type) * 1))
 
 /datum/reagent/radium/on_mob_life(mob/living/carbon/M)
-	M.apply_effect(2*REM/M.metabolism_efficiency,EFFECT_IRRADIATE,0)
+	M.apply_damage(2*REM/M.metabolism_efficiency, RADIATION)
 	..()
 
 /datum/reagent/radium/reaction_turf(turf/T, reac_volume)
@@ -1342,7 +1342,7 @@
 	ghoulfriendly = TRUE
 
 /datum/reagent/uranium/on_mob_life(mob/living/carbon/M)
-	M.apply_effect(1/M.metabolism_efficiency,EFFECT_IRRADIATE,0)
+	M.apply_damage(1/M.metabolism_efficiency, RADIATION)
 	..()
 
 /datum/reagent/uranium/reaction_turf(turf/T, reac_volume)

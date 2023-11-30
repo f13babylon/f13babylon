@@ -342,7 +342,7 @@
 
 /datum/chemical_reaction/medsuture
 	id = "medsuture"
-	required_reagents = list(/datum/reagent/cellulose = 10, /datum/reagent/toxin/formaldehyde = 20, /datum/reagent/medicine/polypyr = 10) //This might be a bit much, reagent cost should be reviewed after implementation.
+	required_reagents = list(/datum/reagent/cellulose = 10, /datum/reagent/medicine/stimpak/imitation = 10, /datum/reagent/abraxo_cleaner/sterilizine = 5)
 
 /datum/chemical_reaction/medsuture/on_reaction(datum/reagents/holder, created_volume)
 	var/location = get_turf(holder.my_atom)
@@ -351,7 +351,7 @@
 
 /datum/chemical_reaction/medmesh
 	id = "medmesh"
-	required_reagents = list(/datum/reagent/cellulose = 10, /datum/reagent/consumable/aloejuice = 10, /datum/reagent/abraxo_cleaner/sterilizine = 10)
+	required_reagents = list(/datum/reagent/cellulose = 10, /datum/reagent/consumable/agavejuice = 10, /datum/reagent/abraxo_cleaner/sterilizine = 10)
 
 /datum/chemical_reaction/medmesh/on_reaction(datum/reagents/holder, created_volume)
 	var/location = get_turf(holder.my_atom)
@@ -384,8 +384,8 @@
 
 /datum/chemical_reaction/stimpak_imitation
 	name = "Imitation Stimpak Fluid"
-	id = /datum/reagent/medicine/stimpakimitation
-	results = list(/datum/reagent/medicine/stimpakimitation = 2)
+	id = /datum/reagent/medicine/stimpak/imitation
+	results = list(/datum/reagent/medicine/stimpak/imitation = 2)
 	required_reagents = list(/datum/reagent/consumable/brocjuice = 1, /datum/reagent/consumable/xanderjuice = 1)
 
 /datum/chemical_reaction/stimpak/synthetic
@@ -394,19 +394,25 @@
 
 /datum/chemical_reaction/superstimpak
 	name = "Super Stimpak Fluid"
-	id = /datum/reagent/medicine/super_stimpak
-	results = list(/datum/reagent/medicine/super_stimpak = 2)
+	id = /datum/reagent/medicine/stimpak/super
+	results = list(/datum/reagent/medicine/stimpak/super = 2)
 	required_reagents = list(/datum/reagent/blood = 1, /datum/reagent/medicine/stimpak = 1, /datum/reagent/consumable/mutjuice = 1) //1 mutfruit at 50 potency yields 6 mutfruit juice
 
 /datum/chemical_reaction/superstimpak/synthetic
-	id = "super_stimpak_synthetic"
+	id = "stimpaksuper_synthetic"
 	required_reagents = list(/datum/reagent/blood/synthetics = 1, /datum/reagent/medicine/stimpak = 1, /datum/reagent/consumable/mutjuice = 1) //1 mutfruit at 50 potency yields 6 mutfruit juice
+
+/datum/chemical_reaction/superstimpakimitation
+	name = "Imitation Super Stimpak Fluid"
+	id = /datum/reagent/medicine/stimpak/superimitation
+	results = list(/datum/reagent/medicine/stimpak/superimitation = 2)
+	required_reagents = list(/datum/reagent/medicine/stimpak/imitation = 1, /datum/reagent/consumable/mutjuice = 1)
 
 /datum/chemical_reaction/medx
 	name = "Med-X"
 	id = /datum/reagent/medicine/medx
 	results = list(/datum/reagent/medicine/medx = 4)
-	required_reagents = list(/datum/reagent/drug/aranesp = 1, /datum/reagent/phenol = 1, /datum/reagent/drug/heroin = 1, /datum/reagent/medicine/stimpakimitation = 1)
+	required_reagents = list(/datum/reagent/drug/aranesp = 1, /datum/reagent/phenol = 1, /datum/reagent/drug/heroin = 1, /datum/reagent/medicine/stimpak/imitation = 1)
 
 /datum/chemical_reaction/mentats
 	name = "mentats"
@@ -417,24 +423,13 @@
 
 /datum/chemical_reaction/bitterdrink
 	name = "Bitter drink"
-	id = /datum/reagent/medicine/bitter_drink
-	results = list(/datum/reagent/medicine/bitter_drink = 30)
+	id = /datum/reagent/medicine/bitterdrink
+	results = list(/datum/reagent/medicine/bitterdrink = 30)
 	required_reagents = list(/datum/reagent/consumable/ethanol/salgam = 10 , /datum/reagent/consumable/ethanol/brocbrew = 10 , /datum/reagent/consumable/sunset = 10 , /datum/reagent/consumable/ethanol/yellowpulque = 10)
-
-/datum/chemical_reaction/drinkneutralization
-	name = "Bitter Drink neutralization reaction"
-	id = "drink_neutralization"
-	results = list(/datum/reagent/water = 1)
-	required_reagents = list(/datum/reagent/medicine/bitter_drink = 1, /datum/reagent/medicine/healing_powder = 1)
-
-/datum/chemical_reaction/medxneutralization
-	name = "Med-X neutralization reaction"
-	id = "medx_neutralization"
-	results = list(/datum/reagent/water = 1)
-	required_reagents = list(/datum/reagent/medicine/medx = 1, /datum/reagent/medicine/super_stimpak = 1)
 
 /datum/chemical_reaction/rehab
 	name = "Rehab"
 	id = "rehab"
 	results = list(/datum/reagent/medicine/rehab = 1)
-	required_reagents = list(/datum/reagent/medicine/stimpakimitation = 1, /datum/reagent/consumable/ethanol/pungajuice = 1, /datum/reagent/consumable/buffalojuice = 1, /datum/reagent/consumable/ferajuice = 1)
+	required_reagents = list(/datum/reagent/medicine/stimpak/imitation = 1, /datum/reagent/consumable/pungajuice = 1, /datum/reagent/consumable/buffalojuice = 1, /datum/reagent/consumable/ferajuice = 1)
+

@@ -98,7 +98,7 @@
 			. += "Toxin Levels: [getToxLoss()]"
 			. += "Burn Severity: [getFireLoss()]"
 			. += "Brute Trauma: [getBruteLoss()]"
-			. += "Radiation Levels: [radiation] rad"
+			. += "Radiation Levels: [getRadLoss()] rad"
 			. += "Body Temperature: [bodytemperature-T0C] degrees C ([bodytemperature*1.8-459.67] degrees F)"
 
 			//Diseases

@@ -948,7 +948,7 @@
 "ajG" = (
 /obj/effect/spawner/lootdrop/ammo/fiftypercent,
 /obj/effect/spawner/lootdrop/ammo/rare,
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "darkrusty"
 	},
@@ -1999,7 +1999,7 @@
 	},
 /area/f13/building/mall)
 "ckP" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/plasteel/f13{
 	icon_state = "darkrusty"
@@ -2091,7 +2091,7 @@
 "cnU" = (
 /obj/effect/decal/cleanable/generic,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "greenrustychess"
 	},
@@ -3936,7 +3936,7 @@
 	},
 /area/f13/building/mall)
 "gfQ" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "darkrustysolid"
 	},
@@ -4656,7 +4656,7 @@
 	},
 /area/f13/building/mall)
 "huF" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "darkrusty"
 	},
@@ -7412,7 +7412,7 @@
 /area/f13/building/mall)
 "moH" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "darkrusty"
 	},
@@ -8959,7 +8959,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "oTC" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "greenrustychess"
 	},
@@ -10512,7 +10512,7 @@
 /turf/open/floor/plasteel/dark,
 /area/f13/brotherhood)
 "rLZ" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/building/massfusion)
 "rMz" = (
@@ -10599,7 +10599,7 @@
 "rVI" = (
 /obj/effect/decal/cleanable/generic,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "darkrusty"
 	},
@@ -11515,7 +11515,7 @@
 /area/f13/city/bighorn)
 "tAz" = (
 /obj/machinery/light/broken,
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "greenrustychess"
 	},
@@ -12711,7 +12711,7 @@
 /area/f13/building/mall)
 "vIb" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "greenrustychess"
 	},
@@ -12868,7 +12868,7 @@
 /obj/machinery/shower{
 	dir = 8
 	},
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13{
 	icon_state = "darkrusty"
 	},

@@ -196,7 +196,7 @@
 	. = ..()
 	if(. && ishuman(target))
 		var/mob/living/carbon/human/H = target
-		H.apply_effect(20, EFFECT_IRRADIATE, 0)
+		H.apply_damage(20, RADIATION)
 
 /mob/living/simple_animal/hostile/ghoul/glowing/handle_automated_action()
 	if(!..()) //AIStatus is off
@@ -432,7 +432,7 @@
 	. = ..()
 	if(. && ishuman(target))
 		var/mob/living/carbon/human/H = target
-		H.apply_effect(20, EFFECT_IRRADIATE, 0)
+		H.apply_damage(20, RADIATION)
 
 /mob/living/simple_animal/hostile/ghoul/zombie/legendary
 	name = "legendary ravenous ghoul"

@@ -317,37 +317,15 @@
 // .45-70 REVOLVERS //
 //////////////////////
 
-//Sequioa					Keywords: NCR, .45-70, 6 rounds cylinder, Double action, Heavy
-/obj/item/gun/ballistic/revolver/sequoia
-	name = "ranger sequoia"
-	desc = "This customized Magnum BFR revolver is a trademark weapon of the New California Republic Rangers. It features a dark finish with intricate engravings etched all around the weapon. Engraved along the barrel are the words 'For Honorable Service,' and 'Against All Tyrants.' The hand grip bears the symbol of the NCR Rangers, a bear, and a brass plate attached to the bottom that reads '20 Years.' "
-	icon_state = "sequoia"
-	item_state = "sequoia"
-	icon = 'icons/obj/guns/gunfruits2022/pistols.dmi'
-	weapon_weight = WEAPON_MEDIUM
-	recoil = 0.2
-	fire_delay = 1
-	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev4570
-	fire_sound = 'sound/f13weapons/sequoia.ogg'
-
-/obj/item/gun/ballistic/revolver/sequoia/bayonet
-	name = "bladed ranger sequoia"
-	desc = "This heavy revolver is a trademark weapon of the New California Republic Rangers. This one has a blade attached to the handle for a painful pistolwhip."
-	icon_state = "sequoia_b"
-	item_state = "sequoia"
-	icon = 'icons/obj/guns/gunfruits2022/pistols.dmi'
-	force = 35
-	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev4570
-	fire_sound = 'sound/f13weapons/sequoia.ogg'
-
-//Hunting revolver				Keywords: .45-70, Double action, 5 rounds cylinder, Heavy
+//Hunting revolver				Keywords: .45-70, 6 round cylinder, double action, scope
 /obj/item/gun/ballistic/revolver/hunting
 	name = "hunting revolver"
 	desc = "An incredibly heavy, unwieldy Magnum BFR revolver chambered for the equally large .45-70 Government round."
+	icon = 'icons/obj/guns/gunfruits2022/pistols.dmi'
 	icon_state = "hunting_revolver"
 	weapon_weight = WEAPON_MEDIUM
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev4570
-	recoil = 0.1
+	recoil = 0.2
 	can_scope = TRUE
 	scope_state = "revolver_scope"
 	fire_delay = 5.5
@@ -355,11 +333,24 @@
 	scope_y_offset = 20
 	fire_sound = 'sound/f13weapons/sequoia.ogg'
 	extra_damage = -2
-	icon = 'icons/obj/guns/gunfruits2022/pistols.dmi'
 
-/obj/item/gun/ballistic/revolver/hunting/klatue
-	name = "degraded hunting revolver"
-	desc = "A scoped double action revolver chambered in 45-70. This one is very worn."
+//Sequioa					Keywords: NCR, .45-70, 6 round cylinder, double action
+/obj/item/gun/ballistic/revolver/hunting/sequoia
+	name = "ranger sequoia"
+	desc = "This customized Magnum BFR revolver is a trademark weapon of the New California Republic Rangers. It features a dark finish with intricate engravings etched all around the weapon. Engraved along the barrel are the words 'For Honorable Service,' and 'Against All Tyrants.' The hand grip bears the symbol of the NCR Rangers, a bear, and a brass plate attached to the bottom that reads '20 Years.' "
+	icon_state = "sequoia"
+	item_state = "sequoia"
+	can_scope = FALSE
+	fire_delay = 1
+	extra_damage = 0
+
+/obj/item/gun/ballistic/revolver/hunting/sequoia/bayonet
+	name = "bladed ranger sequoia"
+	desc = "This heavy revolver is a trademark weapon of the New California Republic Rangers. This one has a blade attached to the handle for a painful pistolwhip."
+	icon_state = "sequoia_b"
+	item_state = "sequoia_b"
+	force = 35
+	sharpness = SHARP_POINTY
 
 /////////////////////
 // WEIRD REVOLVERS //

@@ -10,6 +10,7 @@ Main doors: ACCESS_CAPTAIN 20
 
 	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
+	blacklisted_quirks = list(/datum/quirk/straight_edge)
 	outfit = /datum/outfit/job/bos/
 	exp_type = EXP_TYPE_BROTHERHOOD
 
@@ -37,6 +38,7 @@ Main doors: ACCESS_CAPTAIN 20
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK,  REF(src))
+	ADD_TRAIT(H, TRAIT_STRAIGHT_EDGE,  REF(src))
 	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/boscombatarmor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/boscombathelmet)
@@ -56,7 +58,6 @@ Elder
 	supervisors = "the high elders"
 	selection_color = "#7f8c8d"
 	req_admin_notify = 1
-	roleplay_exclusive_notify = 1
 
 	exp_requirements = 0
 
@@ -150,7 +151,7 @@ Head Paladin
 	id = 			/obj/item/card/id/dogtag
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/hunting = 1,
-		/obj/item/melee/powerfist/f13 = 1,
+		/obj/item/melee/f13powerfist = 1,
 		/obj/item/gun/ballistic/automatic/pistol/n99/crusader = 1,
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
@@ -390,6 +391,7 @@ Senior Paladin
 	accessory =	/obj/item/clothing/accessory/bos/seniorpaladin
 	uniform =	/obj/item/clothing/under/f13/recon
 	mask =	/obj/item/clothing/mask/gas/sechailer
+	neck = /obj/item/storage/belt/holster
 	belt =	/obj/item/storage/belt/military/assault
 
 	backpack_contents = list(
@@ -477,6 +479,7 @@ Paladin
 	head =	/obj/item/clothing/head/helmet/f13/power_armor/t45d/bos
 	uniform =	/obj/item/clothing/under/f13/recon
 	mask =	/obj/item/clothing/mask/gas/sechailer
+	neck = /obj/item/storage/belt/holster
 	belt =	/obj/item/storage/belt/military/assault
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak= 2,
@@ -699,7 +702,7 @@ Scribe
 /datum/job/bos/f13seniorknight
 	title = "Senior Knight"
 	flag = F13SENIORKNIGHT
-	total_positions = 1
+	total_positions = 2
 	spawn_positions = 1
 	description = "You are the senior-most member of your caste in the chapter. Experienced in the fields of combat, reconnaissance and defense; you must lead your caste to victory. Assist Paladins, prepare defense. You are also the one who heads the internal security of the bunker - ensuring personnel are adhering to the Codex, and squashing insubordination."
 	forbids = "The Brotherhood of Steel Expects: Obeying superiors and respecting the Chain that Binds to a degree. Collection and safeguarding of HARMFUL technology from the wasteland. Expanding and making relations only at the benefit of the chapter. Experimentation, research and innovation."
@@ -710,8 +713,8 @@ Scribe
 	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
-	/datum/outfit/loadout/sknighta, //R91
-	/datum/outfit/loadout/sknightb, //DKS
+	/datum/outfit/loadout/sknighta, //MP5
+	/datum/outfit/loadout/sknightb, //Wattz 2k
 	)
 
 	outfit = /datum/outfit/job/bos/f13seniorknight
@@ -763,8 +766,8 @@ Scribe
 /datum/outfit/loadout/sknighta
 	name = "Footknight"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/assault_rifle = 1,
-		/obj/item/ammo_box/magazine/m556/rifle/assault = 2,
+		/obj/item/gun/ballistic/automatic/smg/mp5 = 1,
+		/obj/item/ammo_box/magazine/uzim9mm = 2,
 		/obj/item/gun/energy/laser/pistol = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 1,
 		/obj/item/grenade/smokebomb = 1,
@@ -773,8 +776,8 @@ Scribe
 /datum/outfit/loadout/sknightb
 	name = "Knight Ranger"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/marksman/sniper = 1,
-		/obj/item/ammo_box/magazine/w308 = 2,
+		/obj/item/gun/energy/laser/wattz2k = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 2
 		)
@@ -970,7 +973,6 @@ Off-Duty
 	enforces = "You are not permited to leave the base. You are a non-combatant. You cannot join any raids or battles on the surface. You cannot not run dungeons."
 	selection_color = "#95a5a6"
 	roleplay_exclusive_notify = 1
-	exp_requirements = 0
 	exp_type = EXP_TYPE_WASTELAND//So you can't sit on it and play Baron / Inquisitor. :)
 	outfit = /datum/outfit/job/bos/f13offdutybos
 	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)

@@ -37,6 +37,21 @@
 	name = "security satchel"
 	path = /obj/item/storage/backpack/satchel/sec
 
+/datum/gear/hands/backpack/satchel/old
+	name = "old satchel"
+	path = /obj/item/storage/backpack/satchel/old
+	cost = 2
+
+/datum/gear/hands/backpack/enclave
+	name = "service backpack"
+	path = /obj/item/storage/backpack/enclave
+	cost = 2
+
+/datum/gear/hands/backpack/satchel/enclave
+	name = "service satchel"
+	path = /obj/item/storage/backpack/satchel/enclave
+	cost = 2
+
 /datum/gear/hands/backpack/trophy
 	name = "trophy rack"
 	path = /obj/item/storage/backpack/cultpack
@@ -156,3 +171,7 @@
 /datum/gear/hands/lipstickblack
 	name = "black lipstick"
 	path = /obj/item/lipstick/black
+
+/datum/gear/hands/warpaintbowl
+	name = "warpaint bowl"
+	path = /obj/item/warpaint_bowl

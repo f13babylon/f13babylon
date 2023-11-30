@@ -759,7 +759,7 @@
 	desc = "Legends are told of the \"Ratslayer\", a custom-made souped-up varmint rifle with a sick paintjob. This is a pale imitation, made of chopped-up bits of other guns."
 	icon_state = "verminrifle"
 	item_state = "ratslayer"
-
+	fire_delay = 1.5 //50% higher than service rifle
 	suppressed = 1
 	zoomable = TRUE
 	zoom_amt = 10
@@ -767,7 +767,8 @@
 	can_unsuppress = FALSE
 	suppressor_state = "none"
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
-	extra_penetration = 0.05
+	extra_speed = 800 //pew
+
 
 //Ratslayer									Keywords: UNIQUE, 5.56, 10/20/30 round magazine, Suppressed, Scoped
 /obj/item/gun/ballistic/automatic/varmint/ratslayer
