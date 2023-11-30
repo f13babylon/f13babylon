@@ -1103,7 +1103,7 @@
 /area/fallout/mountain_area)
 "iT" = (
 /turf/closed/indestructible/rock,
-/area/fallout/underground/cave)
+/area/fallout/cave)
 "jb" = (
 /obj/machinery/light{
 	dir = 4
@@ -4372,7 +4372,7 @@
 "IC" = (
 /obj/structure/fans/tiny/invisible,
 /turf/closed/indestructible/rock,
-/area/fallout/underground/cave)
+/area/fallout/cave)
 "IE" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
@@ -6093,7 +6093,7 @@
 /area/fallout/enclave)
 "Yc" = (
 /turf/closed/indestructible/rock/snow,
-/area/fallout/underground/cave)
+/area/fallout/cave)
 "Yg" = (
 /obj/machinery/light/small{
 	brightness = 3;
