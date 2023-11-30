@@ -452,7 +452,7 @@
 	dir = 1
 	},
 /obj/item/clothing/head/helmet/f13/combat/enclave,
-/obj/item/clothing/suit/armor/f13/combat/enclave,
+/obj/item/clothing/suit/armor/f13/combat/mk2/enclave,
 /obj/item/clothing/suit/armor/f13/combat/swat,
 /obj/item/clothing/suit/armor/f13/enclave/armorvest,
 /obj/item/clothing/suit/armor/f13/kit,
@@ -946,9 +946,7 @@
 /area/awaymission/vr/bos/enclavebunker)
 "gn" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/waste{
-	icon_state = "goo10"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/inside/subway,
 /area/awaymission/vr/bos/enclavebunker)
 "gr" = (
@@ -1160,9 +1158,7 @@
 /turf/open/floor/plasteel/bluespace,
 /area/awaymission/vr/bos/deathmatch)
 "hP" = (
-/obj/effect/decal/waste{
-	icon_state = "goo5"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/inside/subway,
 /area/awaymission/vr/bos/enclavebunker)
 "hQ" = (
@@ -1429,9 +1425,7 @@
 	},
 /area/holodeck/followers/programs/medical)
 "ju" = (
-/obj/effect/decal/waste{
-	icon_state = "goo12"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/inside/dirt,
 /area/awaymission/vr/bos/enclavebunker)
 "jv" = (
@@ -2322,7 +2316,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/awaymission/vr/bos/enclavebunker)
 "oM" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/inside/subway,
 /area/awaymission/vr/bos/enclavebunker)
 "oO" = (
@@ -3725,9 +3719,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/holodeck/deathmatch/rooms/armory)
 "ze" = (
-/obj/effect/decal/waste{
-	icon_state = "goo8"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/inside/subway,
 /area/awaymission/vr/bos/enclavebunker)
 "zh" = (
@@ -6408,9 +6400,7 @@
 /turf/closed/indestructible/riveted,
 /area/awaymission/vr/public/deathmatch/red)
 "Vr" = (
-/obj/effect/decal/waste{
-	icon_state = "goo10"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/inside/subway,
 /area/awaymission/vr/bos/enclavebunker)
 "Vv" = (

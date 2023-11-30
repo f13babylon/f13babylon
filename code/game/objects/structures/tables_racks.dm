@@ -432,6 +432,9 @@
 	if(!total_override)
 		..()
 
+/obj/structure/table/wood/add_debris_element()
+	AddElement(/datum/element/debris, DEBRIS_WOOD, -10, 5)
+
 /obj/structure/table/wood/poker //No specialties, Just a mapping object.
 	name = "gambling table"
 	desc = "A seedy table for seedy dealings in seedy places."

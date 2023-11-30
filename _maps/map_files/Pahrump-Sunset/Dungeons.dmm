@@ -135,9 +135,7 @@
 	},
 /area/fallout/ahs)
 "afJ" = (
-/obj/effect/decal/waste{
-	icon_state = "goo8"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/barber{
 	icon_state = "platingdmg2"
 	},
@@ -212,6 +210,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/fallout/vault)
+"ajC" = (
+/mob/living/simple_animal/hostile/renegade/engie,
+/turf/open/floor/f13/wood,
+/area/fallout/city)
 "akg" = (
 /obj/structure/sign/warning/radiation{
 	pixel_y = 30
@@ -892,7 +894,7 @@
 	},
 /area/fallout/bunker)
 "bgC" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /mob/living/simple_animal/hostile/supermutant,
 /turf/open/floor/plating/tunnel,
 /area/fallout/bunker)
@@ -961,7 +963,7 @@
 /turf/open/floor/f13/wood,
 /area/fallout/vault)
 "bke" = (
-/mob/living/simple_animal/hostile/supermutant/legendary,
+/mob/living/simple_animal/hostile/renegade/grunt,
 /turf/open/floor/f13/wood,
 /area/fallout/city)
 "bks" = (
@@ -1418,18 +1420,14 @@
 /area/fallout/ahs)
 "bPT" = (
 /obj/effect/decal/remains/human,
-/obj/effect/decal/waste{
-	icon_state = "goo12"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/barber{
 	icon_state = "platingdmg2"
 	},
 /area/fallout/bunker)
 "bQl" = (
 /obj/structure/reagent_dispensers/barrel/dangerous,
-/obj/effect/decal/waste{
-	icon_state = "goo10"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/item/trash/f13/blamco_large,
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/glass,
@@ -1447,9 +1445,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/fallout/wasteland)
 "bRw" = (
-/obj/effect/decal/waste{
-	icon_state = "goo5"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/structure/reagent_dispensers/barrel/dangerous,
 /turf/open/floor/plating,
 /area/fallout/bunker)
@@ -1509,9 +1505,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
 /area/fallout/vault)
 "bUo" = (
-/obj/effect/decal/waste{
-	icon_state = "goo10"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/structure/reagent_dispensers/barrel/old,
 /turf/open/floor/plating/tunnel,
 /area/fallout/bunker)
@@ -1855,7 +1849,8 @@
 /area/fallout/bunker)
 "cqI" = (
 /obj/structure/closet/secure_closet/medical2,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
+/obj/item/book/granter/trait/midsurgery,
+/obj/item/book/granter/trait/chemistry,
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
 	},
@@ -3722,6 +3717,11 @@
 	icon_state = "plating"
 	},
 /area/fallout/bunker)
+"exu" = (
+/obj/structure/chair/bench,
+/mob/living/simple_animal/hostile/renegade/grunt,
+/turf/open/floor/f13/wood,
+/area/fallout/city)
 "exE" = (
 /obj/structure/decoration/hatch{
 	dir = 4
@@ -3794,7 +3794,7 @@
 	},
 /obj/item/trash/semki,
 /obj/item/storage/trash_stack,
-/obj/effect/decal/waste{
+/obj/effect/decal/cleanable/greenglow/radioactive{
 	pixel_x = 20;
 	pixel_y = 1
 	},
@@ -3872,9 +3872,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/fallout/vault)
 "eER" = (
-/obj/effect/decal/waste{
-	icon_state = "goo5"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/structure/reagent_dispensers/barrel/dangerous,
 /turf/open/floor/plating/tunnel,
 /area/fallout/bunker)
@@ -4335,7 +4333,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/item/reagent_containers/pill/patch/healpoultice,
+/obj/item/reagent_containers/pill/patch/healingpoultice,
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirt"
 	},
@@ -4388,7 +4386,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
 /area/fallout/vault)
 "fpS" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13/vault_floor/green/greenchess/greenchess2,
 /area/fallout/radiation)
 "fqR" = (
@@ -4493,9 +4491,7 @@
 	},
 /area/fallout/bunker)
 "fxg" = (
-/obj/effect/decal/waste{
-	icon_state = "goo8"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/barber{
 	icon_state = "plating"
 	},
@@ -5250,6 +5246,14 @@
 /obj/structure/bookcase,
 /turf/open/floor/f13/wood,
 /area/fallout/vault)
+"glJ" = (
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#e8eaff"
+	},
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/dirt,
+/area/fallout/wasteland)
 "gmu" = (
 /obj/item/clothing/suit/chaplain/holidaypriest,
 /turf/open/indestructible/ground/inside/mountain,
@@ -5470,6 +5474,12 @@
 	icon_state = "dirt"
 	},
 /area/fallout/wasteland)
+"gHe" = (
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/f13/resourcespawner,
+/obj/effect/spawner/lootdrop/f13/armor/random,
+/turf/open/floor/f13/wood,
+/area/fallout/city)
 "gHp" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/trash,
@@ -5589,6 +5599,10 @@
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/fallout/vault)
+"gLT" = (
+/mob/living/simple_animal/hostile/renegade,
+/turf/open/indestructible/ground/outside/dirt,
+/area/fallout/wasteland)
 "gMj" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
@@ -6229,7 +6243,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/fallout/vault)
 "hBc" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
@@ -6249,10 +6263,10 @@
 	},
 /area/fallout/ahs)
 "hBD" = (
+/obj/structure/barricade/wooden/planks/pregame,
 /obj/machinery/door/airlock/medical{
 	name = "Clinic";
-	req_access_txt = "45; 5";
-	req_one_access_txt = ""
+	req_one_access_txt = "25"
 	},
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
@@ -6341,9 +6355,7 @@
 /turf/open/floor/plasteel,
 /area/fallout/vault)
 "hJk" = (
-/obj/effect/decal/waste{
-	icon_state = "goo5"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/structure/reagent_dispensers/barrel/dangerous,
 /turf/open/floor/plasteel/barber{
 	icon_state = "platingdmg2"
@@ -6452,6 +6464,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/fallout/vault)
+"hQi" = (
+/mob/living/simple_animal/hostile/renegade/grunt,
+/turf/open/indestructible/ground/outside/dirt,
+/area/fallout/wasteland)
 "hQs" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
@@ -6512,6 +6528,11 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/fallout/bunker)
+"hTg" = (
+/obj/structure/closet,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superhigh,
+/turf/open/floor/f13/wood,
+/area/fallout/city)
 "hTF" = (
 /obj/structure/closet/crate/bin,
 /turf/open/floor/plasteel/darkpurple/side{
@@ -6607,6 +6628,7 @@
 /obj/machinery/light,
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/trophy,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/highmid,
 /turf/open/floor/f13/wood,
 /area/fallout/city)
 "hZC" = (
@@ -6634,6 +6656,11 @@
 	light_color = "#e8eaff"
 	},
 /turf/open/indestructible/ground/outside/dirt,
+/area/fallout/city)
+"iaG" = (
+/obj/structure/chair/bench,
+/mob/living/simple_animal/hostile/renegade/doc,
+/turf/open/floor/f13/wood,
 /area/fallout/city)
 "iba" = (
 /turf/closed/mineral/random/high_chance,
@@ -7064,6 +7091,11 @@
 	icon_state = "bluerustychess2"
 	},
 /area/fallout/bunker)
+"iCX" = (
+/obj/structure/chair/bench,
+/mob/living/simple_animal/hostile/renegade,
+/turf/open/floor/f13/wood,
+/area/fallout/city)
 "iDb" = (
 /mob/living/simple_animal/hostile/radscorpion,
 /turf/open/floor/plasteel/barber{
@@ -7631,6 +7663,11 @@
 	icon_state = "bluerustychess2"
 	},
 /area/fallout/bunker)
+"jip" = (
+/obj/structure/closet,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/unique,
+/turf/open/floor/f13/wood,
+/area/fallout/city)
 "jjC" = (
 /obj/structure/rack,
 /obj/item/storage/box/donkpockets,
@@ -7662,7 +7699,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/fallout/vault)
 "jlg" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/effect/spawner/lootdrop/f13/blueprintLow,
 /turf/open/floor/plating,
 /area/fallout/bunker)
@@ -7730,9 +7767,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/green/greenchess/greenchess2,
 /area/fallout/bunker)
 "jrR" = (
-/obj/effect/spawner/lootdrop/armory_contraband,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /obj/structure/closet,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superhigh,
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
 	},
@@ -7913,9 +7950,7 @@
 	},
 /area/fallout/bunker)
 "jBt" = (
-/obj/effect/decal/waste{
-	icon_state = "goo5"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/barber{
 	icon_state = "plating"
 	},
@@ -8021,7 +8056,7 @@
 /area/fallout/bunker)
 "jIV" = (
 /obj/structure/table,
-/obj/item/reagent_containers/food/drinks/bottle/nukashine,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/midhigh,
 /turf/open/floor/f13/wood,
 /area/fallout/city)
 "jJe" = (
@@ -8146,9 +8181,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/fallout/vault)
 "jPx" = (
-/obj/effect/decal/waste{
-	icon_state = "goo12"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/structure/closet,
 /turf/open/floor/plasteel/barber{
 	icon_state = "plating"
@@ -8355,7 +8388,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/fallout/tunnel)
 "kdT" = (
-/mob/living/simple_animal/hostile/deathclaw/legendary,
+/mob/living/simple_animal/hostile/renegade/doc,
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
 	},
@@ -8744,6 +8777,7 @@
 	},
 /obj/effect/spawner/lootdrop/f13/deadrodent_or_brainwashdisk,
 /obj/item/target/alien,
+/mob/living/simple_animal/hostile/renegade/grunt,
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
 	},
@@ -9050,7 +9084,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/fallout/bunker)
 "kSq" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/effect/decal/cleanable/oil/slippery,
 /turf/open/floor/plasteel/barber{
 	icon_state = "plating"
@@ -9288,6 +9322,11 @@
 "lcW" = (
 /turf/open/indestructible/ground/outside/dirt,
 /area/fallout/city)
+"ldm" = (
+/obj/machinery/hydroponics/soil/crafted,
+/mob/living/simple_animal/hostile/renegade/guardian,
+/turf/open/indestructible/ground/outside/dirt,
+/area/fallout/wasteland)
 "ldJ" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/bottle/vodka,
@@ -9390,9 +9429,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/fallout/wasteland)
 "lle" = (
-/obj/effect/decal/waste{
-	icon_state = "goo5"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/structure/reagent_dispensers/barrel/dangerous,
 /turf/open/floor/plasteel/barber{
 	icon_state = "plating"
@@ -9676,7 +9713,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/fallout/vault)
 "lDm" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/structure/reagent_dispensers/barrel/four,
 /turf/open/floor/plating/tunnel,
 /area/fallout/bunker)
@@ -9847,7 +9884,7 @@
 "lME" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/storage/trash_stack,
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
@@ -9891,6 +9928,10 @@
 /obj/effect/spawner/lootdrop/f13/armor/tier4,
 /obj/effect/spawner/lootdrop/f13/blueprintLow,
 /obj/effect/spawner/lootdrop/f13/blueprintLow,
+/turf/open/floor/f13/wood,
+/area/fallout/city)
+"lQs" = (
+/mob/living/simple_animal/hostile/renegade/doc,
 /turf/open/floor/f13/wood,
 /area/fallout/city)
 "lQY" = (
@@ -9943,6 +9984,7 @@
 	desc = "A comfortable, secure seat. It has a futuristic vouge feel.";
 	name = "prewar lounge chair"
 	},
+/mob/living/simple_animal/hostile/renegade/guardian,
 /turf/open/floor/f13/wood,
 /area/fallout/city)
 "lTB" = (
@@ -10031,9 +10073,7 @@
 	},
 /area/fallout/bunker)
 "lXK" = (
-/obj/effect/decal/waste{
-	icon_state = "goo5"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
 /turf/open/floor/plasteel/barber{
@@ -10412,9 +10452,7 @@
 /turf/open/floor/f13/wood,
 /area/fallout/city)
 "mxC" = (
-/obj/effect/decal/waste{
-	icon_state = "goo12"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/barber{
 	icon_state = "plating"
 	},
@@ -10667,9 +10705,7 @@
 /area/fallout/city)
 "mOC" = (
 /obj/structure/reagent_dispensers/barrel/dangerous,
-/obj/effect/decal/waste{
-	icon_state = "goo5"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/item/trash/can,
 /turf/open/indestructible/ground/outside/water,
 /area/fallout/underground/cave)
@@ -10778,6 +10814,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/fallout/vault)
+"mVL" = (
+/mob/living/simple_animal/hostile/renegade/soldier,
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
+	},
+/area/fallout/city)
 "mVU" = (
 /obj/item/storage/trash_stack,
 /turf/open/indestructible/ground/outside/water,
@@ -10838,7 +10880,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/fallout/bunker)
 "mZJ" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plating,
 /area/fallout/bunker)
 "nan" = (
@@ -10895,9 +10937,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/waste{
-	icon_state = "goo12"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13/vault_floor/green/greenchess/greenchess2,
 /area/fallout/radiation)
 "ndE" = (
@@ -11573,9 +11613,7 @@
 	},
 /area/fallout/bunker)
 "nRY" = (
-/obj/effect/decal/waste{
-	icon_state = "goo12"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/effect/spawner/lootdrop/f13/medical/rnd/good,
 /turf/open/floor/plasteel/barber{
 	icon_state = "plating"
@@ -12310,6 +12348,11 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/fallout/vault)
+"oGa" = (
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/f13/armor/tier4,
+/turf/open/floor/f13/wood,
+/area/fallout/city)
 "oGx" = (
 /obj/structure/table,
 /turf/open/floor/plasteel/barber{
@@ -12481,6 +12524,10 @@
 	name = "Reinforced utility tunnel"
 	},
 /area/fallout/caves)
+"oPn" = (
+/mob/living/simple_animal/hostile/renegade/meister,
+/turf/open/floor/f13/wood,
+/area/fallout/city)
 "oPw" = (
 /obj/effect/overlay/junk/oldpipes{
 	dir = 4
@@ -12890,6 +12937,10 @@
 	icon_state = "showroomfloor"
 	},
 /area/fallout/ahs)
+"phr" = (
+/mob/living/simple_animal/hostile/renegade/drifter,
+/turf/open/indestructible/ground/outside/desert,
+/area/fallout/wasteland)
 "phD" = (
 /obj/structure/bed,
 /obj/item/bedsheet/yellow,
@@ -13080,10 +13131,10 @@
 /turf/open/floor/plasteel/freezer,
 /area/fallout/ahs)
 "pth" = (
-/obj/machinery/light/small{
-	dir = 4
+/obj/structure/chair/left{
+	dir = 8
 	},
-/mob/living/simple_animal/hostile/supermutant/legendary,
+/mob/living/simple_animal/hostile/renegade,
 /turf/open/floor/f13/wood,
 /area/fallout/city)
 "pub" = (
@@ -13092,8 +13143,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/fallout/bunker)
 "puk" = (
-/mob/living/simple_animal/hostile/ghoul/legendary,
-/turf/open/floor/f13/wood,
+/turf/closed/indestructible/riveted{
+	desc = "A heavily reinforced utility tunnel  wall. You doubt anything short of a nuke would break it.";
+	icon = 'icons/fallout/turfs/walls/tunnel.dmi';
+	icon_state = "tunnel0";
+	icon_type_smooth = "tunnel";
+	name = "Reinforced utility tunnel"
+	},
 /area/fallout/city)
 "put" = (
 /obj/effect/overlay/junk/toilet{
@@ -13285,6 +13341,11 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/fallout/vault)
+"pIf" = (
+/obj/item/target/alien,
+/mob/living/simple_animal/hostile/renegade/soldier,
+/turf/open/indestructible/ground/outside/dirt,
+/area/fallout/wasteland)
 "pIs" = (
 /obj/structure/cable,
 /turf/open/floor/plasteel/f13{
@@ -13396,6 +13457,11 @@
 	icon_state = "showroomfloor"
 	},
 /area/fallout/ahs)
+"pOp" = (
+/obj/structure/closet,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid,
+/turf/open/floor/f13/wood,
+/area/fallout/city)
 "pOG" = (
 /obj/structure/toilet{
 	dir = 1
@@ -13482,6 +13548,13 @@
 	icon_state = "floorgrime"
 	},
 /area/fallout/ahs)
+"pSm" = (
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 5;
+	icon_state = "dirt"
+	},
+/area/fallout/wasteland)
 "pSB" = (
 /obj/effect/decal/cleanable/cobweb{
 	icon_state = "cobweb2"
@@ -13657,9 +13730,7 @@
 /turf/open/floor/plasteel,
 /area/fallout/vault)
 "qcw" = (
-/obj/effect/decal/waste{
-	icon_state = "goo10"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/structure/reagent_dispensers/barrel/old,
 /turf/open/floor/plating,
 /area/fallout/bunker)
@@ -13723,7 +13794,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/fallout/bunker)
 "qgK" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/effect/mob_spawn/human/corpse,
 /turf/open/indestructible/ground/outside/water,
 /area/fallout/underground/cave)
@@ -13741,9 +13812,7 @@
 	},
 /area/fallout/vault)
 "qhH" = (
-/obj/effect/decal/waste{
-	icon_state = "goo8"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/structure/reagent_dispensers/barrel/four,
 /turf/open/floor/plating,
 /area/fallout/bunker)
@@ -14143,6 +14212,11 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2,
 /area/fallout/vault)
+"qHp" = (
+/obj/structure/chair/f13foldupchair,
+/mob/living/simple_animal/hostile/renegade/defender,
+/turf/open/floor/f13/wood,
+/area/fallout/city)
 "qHs" = (
 /obj/structure/window/reinforced/fulltile,
 /obj/structure/barricade/bars,
@@ -14302,6 +14376,10 @@
 /obj/effect/decal/fakelattice,
 /turf/open/floor/plating/dirt,
 /area/fallout/bunker)
+"qRg" = (
+/mob/living/simple_animal/hostile/renegade/drifter,
+/turf/open/indestructible/ground/outside/dirt,
+/area/fallout/wasteland)
 "qRo" = (
 /obj/structure/flora/ausbushes/sparsegrass{
 	pixel_x = 14
@@ -14859,6 +14937,10 @@
 	dir = 1
 	},
 /area/fallout/vault)
+"rDA" = (
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/dirt,
+/area/fallout/wasteland)
 "rDW" = (
 /obj/machinery/vending/wardrobe/engi_wardrobe,
 /turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
@@ -14891,6 +14973,10 @@
 	icon_state = "dark"
 	},
 /area/fallout/ncr)
+"rFo" = (
+/mob/living/simple_animal/hostile/renegade/defender,
+/turf/open/floor/f13/wood,
+/area/fallout/city)
 "rGK" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
@@ -14987,7 +15073,7 @@
 /turf/open/floor/plasteel/dark,
 /area/fallout/vault)
 "rOh" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/effect/spawner/lootdrop/f13/medical/rnd/good,
 /turf/open/floor/plating/tunnel,
 /area/fallout/bunker)
@@ -15124,6 +15210,11 @@
 /obj/machinery/computer/med_data,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/fallout/vault)
+"rWK" = (
+/obj/structure/chair/bench,
+/mob/living/simple_animal/hostile/renegade/engie,
+/turf/open/floor/f13/wood,
+/area/fallout/city)
 "rXh" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -15202,6 +15293,10 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/fallout/caves)
+"scm" = (
+/mob/living/simple_animal/hostile/renegade,
+/turf/open/floor/f13/wood,
+/area/fallout/city)
 "scE" = (
 /obj/structure/chair/left{
 	dir = 4
@@ -15277,6 +15372,7 @@
 "sgq" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
+/obj/effect/spawner/lootdrop/f13/blueprintHigh,
 /turf/open/floor/f13/wood,
 /area/fallout/city)
 "shC" = (
@@ -15317,6 +15413,13 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/fallout/vault)
+"sjT" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/mob/living/simple_animal/hostile/renegade/soldier,
+/turf/open/floor/f13/wood,
+/area/fallout/city)
 "skf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/flashlight,
@@ -15530,7 +15633,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/fallout/vault)
 "swG" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/structure/closet/secure_closet/goodies{
 	anchorable = 0;
 	anchored = 1;
@@ -15542,7 +15645,7 @@
 /turf/open/floor/plating/tunnel,
 /area/fallout/bunker)
 "swM" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/structure/spider/stickyweb,
 /obj/machinery/light/small,
 /turf/open/floor/plating/tunnel{
@@ -15607,7 +15710,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/fallout/vault)
 "szL" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/barber{
 	icon_state = "plating"
 	},
@@ -15639,7 +15742,7 @@
 /area/fallout/wasteland)
 "sBC" = (
 /obj/structure/closet,
-/obj/effect/spawner/lootdrop/f13/blueprintMid,
+/obj/effect/spawner/lootdrop/f13/blueprintVHighBallistics,
 /turf/open/floor/f13/wood,
 /area/fallout/city)
 "sBJ" = (
@@ -15728,7 +15831,7 @@
 /turf/open/floor/plasteel/dark,
 /area/fallout/vault)
 "sIR" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/effect/decal/cleanable/blood/old,
 /obj/structure/spider/stickyweb,
 /turf/open/floor/plating/tunnel,
@@ -15766,6 +15869,12 @@
 	name = "metal plating"
 	},
 /area/fallout/bunker)
+"sMe" = (
+/obj/structure/barricade/wooden,
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
+	},
+/area/fallout/city)
 "sNQ" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -16041,6 +16150,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/fallout/vault)
+"teJ" = (
+/mob/living/simple_animal/hostile/renegade/meister,
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
+	},
+/area/fallout/city)
 "tfn" = (
 /obj/effect/turf_decal/caution,
 /turf/open/floor/f13/wood,
@@ -16184,6 +16299,11 @@
 /obj/effect/decal/cleanable/ash,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/fallout/bunker)
+"tpa" = (
+/obj/machinery/light,
+/mob/living/simple_animal/hostile/renegade/soldier,
+/turf/open/floor/f13/wood,
+/area/fallout/city)
 "tpo" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/loading_area/red{
@@ -16260,6 +16380,11 @@
 /obj/item/stack/crafting/electronicparts/three,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/fallout/vault)
+"ttV" = (
+/obj/structure/chair/bench,
+/mob/living/simple_animal/hostile/renegade/guardian,
+/turf/open/floor/f13/wood,
+/area/fallout/city)
 "tub" = (
 /obj/structure/barricade/bars,
 /obj/structure/barricade/wooden,
@@ -16440,6 +16565,7 @@
 /area/fallout/vault)
 "tFv" = (
 /obj/structure/chair/office/dark,
+/mob/living/simple_animal/hostile/renegade/defender,
 /turf/open/floor/f13/wood,
 /area/fallout/city)
 "tGF" = (
@@ -16577,6 +16703,12 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/fallout/caves)
+"tNk" = (
+/obj/structure/chair/f13foldupchair,
+/obj/effect/spawner/lootdrop/trash,
+/mob/living/simple_animal/hostile/renegade,
+/turf/open/floor/f13/wood,
+/area/fallout/city)
 "tNu" = (
 /obj/structure/simple_door/bunker,
 /turf/open/floor/f13{
@@ -16649,6 +16781,16 @@
 	icon_state = "bluerustychess2"
 	},
 /area/fallout/bunker)
+"tTD" = (
+/obj/machinery/light{
+	dir = 8;
+	light_color = "#e8eaff"
+	},
+/obj/structure/barricade/wooden,
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
+	},
+/area/fallout/city)
 "tTZ" = (
 /obj/structure/decoration/warning{
 	name = "WARNING: NO MANS LAND AHEAD PVP ZONE"
@@ -17147,9 +17289,8 @@
 /area/fallout/vault)
 "uul" = (
 /obj/structure/table,
-/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
-/obj/effect/spawner/lootdrop/f13/medical/vault/meds,
-/obj/effect/spawner/lootdrop/f13/medical/vault/meds,
+/obj/item/clothing/glasses/night/f13,
+/obj/item/storage/box/stockparts/deluxe,
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
 	},
@@ -17369,6 +17510,15 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/fallout/mountain_bunker)
+"uGl" = (
+/obj/structure/bed/roller,
+/obj/machinery/iv_drip,
+/obj/effect/spawner/lootdrop/trash,
+/mob/living/simple_animal/hostile/renegade/defender,
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
+	},
+/area/fallout/city)
 "uGI" = (
 /obj/machinery/light{
 	light_color = "#e8eaff"
@@ -17508,9 +17658,7 @@
 	},
 /area/fallout/bunker)
 "uOh" = (
-/obj/effect/decal/waste{
-	icon_state = "goo12"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/structure/closet/crate/solarpanel_small,
 /turf/open/floor/plasteel/barber{
 	icon_state = "plating"
@@ -18143,6 +18291,9 @@
 /area/fallout/vault)
 "vuu" = (
 /obj/structure/chair/office/dark,
+/mob/living/simple_animal/hostile/deathclaw/power_armor{
+	faction = list("raider","hostile","supermutant","deathclaw")
+	},
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
 	},
@@ -18277,6 +18428,10 @@
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/fallout/bunker)
+"vCf" = (
+/mob/living/simple_animal/hostile/renegade/soldier,
+/turf/open/indestructible/ground/outside/dirt,
+/area/fallout/wasteland)
 "vCq" = (
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
@@ -18413,7 +18568,7 @@
 "vNd" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/storage/trash_stack,
-/obj/effect/decal/waste{
+/obj/effect/decal/cleanable/greenglow/radioactive{
 	pixel_x = -4;
 	pixel_y = -7
 	},
@@ -18541,7 +18696,7 @@
 "vXA" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/storage/trash_stack,
-/obj/effect/decal/waste{
+/obj/effect/decal/cleanable/greenglow/radioactive{
 	pixel_x = 20;
 	pixel_y = 1
 	},
@@ -18799,6 +18954,11 @@
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/floor/f13/wood,
 /area/fallout/city)
+"wnM" = (
+/obj/structure/chair/f13foldupchair,
+/mob/living/simple_animal/hostile/renegade,
+/turf/open/floor/f13/wood,
+/area/fallout/city)
 "woi" = (
 /obj/structure/bonfire,
 /turf/open/indestructible/ground/outside/dirt{
@@ -18814,6 +18974,11 @@
 	icon_state = "floorgrime"
 	},
 /area/fallout/ahs)
+"wop" = (
+/obj/structure/table,
+/obj/item/storage/box/strange_seeds_10pack,
+/turf/open/floor/f13/wood,
+/area/fallout/city)
 "wow" = (
 /obj/effect/spawner/lootdrop/f13/cash_random_high,
 /turf/open/indestructible/ground/inside/mountain,
@@ -19102,6 +19267,11 @@
 	icon_state = "horizontaltopborderbottom0"
 	},
 /area/fallout/underground/cave)
+"wJG" = (
+/obj/structure/table/booth,
+/obj/item/reagent_containers/food/snacks/salad/fruit,
+/turf/open/floor/f13/wood,
+/area/fallout/city)
 "wJN" = (
 /obj/machinery/light{
 	dir = 4
@@ -19337,7 +19507,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/fallout/vault)
 "wWg" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/structure/spider/stickyweb,
 /turf/open/floor/plating/tunnel,
 /area/fallout/bunker)
@@ -19410,9 +19580,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/fallout/bunker)
 "wYa" = (
-/obj/effect/decal/waste{
-	icon_state = "goo8"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/structure/reagent_dispensers/barrel/four,
 /turf/open/floor/plating/tunnel,
 /area/fallout/bunker)
@@ -19764,11 +19932,11 @@
 /area/fallout/vault)
 "xwd" = (
 /obj/structure/table,
-/obj/effect/spawner/lootdrop/f13/medical,
 /obj/effect/spawner/lootdrop/f13/medical/vault/meds,
 /obj/effect/spawner/lootdrop/f13/medical/vault/meds,
 /obj/effect/spawner/lootdrop/f13/medical/vault/meds,
 /obj/effect/spawner/lootdrop/f13/medical/vault/meds,
+/obj/effect/spawner/bundle/f13/gauss,
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
 	},
@@ -20061,9 +20229,7 @@
 /area/fallout/ahs)
 "xSl" = (
 /obj/structure/reagent_dispensers/barrel/dangerous,
-/obj/effect/decal/waste{
-	icon_state = "goo8"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/item/trash/candy,
 /turf/open/indestructible/ground/outside/water,
 /area/fallout/underground/cave)
@@ -27172,8 +27338,8 @@ wUU
 wUU
 akh
 eNS
-akh
-iEs
+gLT
+pIf
 akh
 iEs
 lOD
@@ -27184,8 +27350,8 @@ sfc
 sfc
 ciA
 tGX
-bke
-fgd
+sfc
+sjT
 fgd
 gHL
 tGX
@@ -27427,7 +27593,7 @@ akh
 akh
 xbi
 akh
-akh
+rDA
 oPX
 akh
 akh
@@ -27442,9 +27608,9 @@ sfc
 sfc
 wVG
 sfc
-bke
 sfc
-gHL
+rFo
+pOp
 tGX
 tGX
 aTA
@@ -27700,8 +27866,8 @@ sfc
 tGX
 wba
 sfc
-sfc
-gHL
+oPn
+xHp
 tGX
 tGX
 aTA
@@ -27934,7 +28100,7 @@ tGX
 tGX
 wUU
 wUU
-wUU
+ldm
 wUU
 wUU
 wUU
@@ -27953,11 +28119,11 @@ sfc
 sfc
 pIZ
 nsN
-sfc
+bke
 tGX
 wba
-bke
 sfc
+bke
 sBC
 tGX
 tGX
@@ -28455,7 +28621,7 @@ akh
 djm
 akh
 akh
-akh
+rDA
 oPX
 khx
 akh
@@ -28469,9 +28635,9 @@ pIZ
 sfc
 sfc
 tGX
-xHp
+hTg
 vMb
-pth
+vMb
 gHL
 tGX
 tGX
@@ -28716,8 +28882,8 @@ akh
 eNS
 akh
 akh
-akh
-akh
+rDA
+rDA
 lOD
 lOD
 lOD
@@ -29229,15 +29395,15 @@ sfc
 egE
 obq
 uLm
-akh
-akh
+rDA
+rDA
 akh
 nph
 bVH
 aEb
 lOD
 sfc
-sfc
+bke
 sfc
 sfc
 szp
@@ -29744,7 +29910,7 @@ qlG
 mZp
 uLm
 akh
-akh
+qRg
 wmW
 nph
 bVH
@@ -29753,7 +29919,7 @@ lOD
 aOZ
 sfc
 mNS
-bke
+sfc
 mNS
 sfc
 uWG
@@ -29989,9 +30155,9 @@ aTA
 tGX
 tGX
 uLm
-pIZ
+wop
 sfc
-pyG
+tpa
 uLm
 sfc
 uLm
@@ -30253,7 +30419,7 @@ uLm
 sfc
 uLm
 sfc
-sfc
+bke
 egE
 acf
 uLm
@@ -30769,7 +30935,7 @@ huX
 kiI
 sfc
 qlG
-ati
+pth
 uLm
 akh
 akh
@@ -31030,7 +31196,7 @@ obq
 uLm
 akh
 wmW
-akh
+hQi
 lOD
 lOD
 lOD
@@ -31278,12 +31444,12 @@ qwP
 sfc
 sfc
 eGA
-sfc
+scm
 qtj
 kiI
 sfc
 cUT
-skq
+wJG
 jKU
 akh
 akh
@@ -31809,9 +31975,9 @@ itj
 uLm
 sfc
 tJs
-tJs
+qHp
 sfc
-sgq
+gHe
 sfc
 uLm
 tGX
@@ -32069,7 +32235,7 @@ sfc
 sfc
 sfc
 sgq
-sfc
+ajC
 fDW
 tGX
 tGX
@@ -32323,7 +32489,7 @@ itj
 uLm
 sfc
 tJs
-sVs
+tNk
 sfc
 oOq
 sfc
@@ -33086,7 +33252,7 @@ ati
 uLm
 akh
 akh
-akh
+hQi
 lOD
 lOD
 lOD
@@ -33607,7 +33773,7 @@ akh
 mxj
 sfc
 sfc
-cFz
+oGa
 pIZ
 oEm
 sfc
@@ -33851,7 +34017,7 @@ uLm
 tJs
 sfc
 sfc
-sfc
+bke
 kqt
 ati
 uLm
@@ -33861,7 +34027,7 @@ akh
 daU
 lfv
 leL
-lOD
+puk
 tij
 tFv
 pIZ
@@ -34118,7 +34284,7 @@ akh
 nph
 bVH
 bVH
-lOD
+puk
 sfc
 sfc
 oEm
@@ -34362,7 +34528,7 @@ sfc
 sfc
 ndM
 uLm
-tJs
+wnM
 sfc
 sfc
 sfc
@@ -34375,12 +34541,12 @@ akh
 nph
 bVH
 bVH
-lOD
-tJs
+puk
+wnM
 sfc
 pIZ
 sfc
-sfc
+lQs
 sfc
 qqV
 uLm
@@ -34616,7 +34782,7 @@ tGX
 tGX
 uLm
 lFv
-sfc
+scm
 sfc
 mxj
 sfc
@@ -34632,7 +34798,7 @@ akh
 nph
 kCV
 bVH
-lOD
+puk
 tJs
 sfc
 oEm
@@ -34884,12 +35050,12 @@ qlG
 ati
 uLm
 akh
-akh
+qRg
 akh
 nph
 bVH
 bVH
-lOD
+puk
 kZb
 sfc
 sfc
@@ -35140,13 +35306,13 @@ uLm
 uLm
 uLm
 uLm
-bed
-akh
+glJ
+rDA
 akh
 nph
 bVH
 bVH
-lOD
+puk
 tJs
 sfc
 sfc
@@ -35401,17 +35567,17 @@ akh
 akh
 akh
 hiB
-lOD
-lOD
-lOD
-lOD
-lOD
-lOD
-lOD
-lOD
-lOD
-lOD
-lOD
+puk
+puk
+puk
+puk
+puk
+puk
+puk
+puk
+puk
+puk
+puk
 tGX
 tGX
 aTA
@@ -35656,17 +35822,17 @@ mHF
 uRL
 akh
 akh
-akh
-soI
-lOD
+rDA
+pSm
+puk
 eII
 kIC
 kIC
 eII
-lOD
+puk
 xWB
 pYx
-lOD
+puk
 hag
 lpb
 tGX
@@ -35920,10 +36086,10 @@ pYx
 pYx
 pYx
 pYx
-lOD
+puk
 hjM
 ejd
-lOD
+puk
 uiH
 aOl
 tGX
@@ -36162,7 +36328,7 @@ uLm
 ixc
 sfc
 vdm
-vdm
+iaG
 bhN
 uLm
 ylV
@@ -36172,15 +36338,15 @@ akh
 akh
 akh
 daU
-lOD
+puk
 fRH
 rdM
 fRH
 pYx
-lOD
+puk
 bGB
 pYx
-lOD
+puk
 kdT
 tDv
 tGX
@@ -36414,13 +36580,13 @@ aTA
 tGX
 tGX
 uLm
-puk
 sfc
 sfc
-puk
+sfc
+sfc
 vdm
-vdm
-vdm
+rWK
+iCX
 uLm
 uLm
 gWc
@@ -36434,10 +36600,10 @@ pYx
 kzS
 pYx
 pYx
-lOD
+puk
 cqI
-pYx
-lOD
+kdT
+puk
 pYx
 jrR
 tGX
@@ -36676,7 +36842,7 @@ sfc
 pIZ
 sfc
 sfc
-puk
+sfc
 sfc
 sfc
 mxj
@@ -36691,10 +36857,10 @@ pYx
 pYx
 pYx
 pYx
-lOD
+puk
 aOl
 ejd
-lOD
+puk
 uiH
 rvz
 tGX
@@ -36948,10 +37114,10 @@ uUV
 pYx
 pYx
 uUV
-lOD
+puk
 lpb
 pYx
-lOD
+puk
 pYx
 cUl
 tGX
@@ -37185,12 +37351,12 @@ aTA
 tGX
 tGX
 tGX
-xHp
+jip
 sfc
 sfc
 sfc
 vdm
-vdm
+ttV
 vdm
 uLm
 uLm
@@ -37200,17 +37366,17 @@ khx
 akh
 akh
 hiB
-lOD
-lOD
-lOD
+puk
+puk
+puk
 jhJ
-lOD
-lOD
-lOD
+puk
+puk
+puk
 gPL
-lOD
+puk
 gYY
-lOD
+puk
 tGX
 tGX
 aTA
@@ -37445,9 +37611,9 @@ tGX
 tGX
 tGX
 rOp
-puk
+sfc
 vdm
-vdm
+exu
 hvr
 uLm
 ylV
@@ -37457,17 +37623,17 @@ akh
 akh
 akh
 nph
-lOD
+puk
 pYx
-dFB
-pYx
-pYx
-kdT
 dFB
 pYx
 pYx
 pYx
 dFB
+pYx
+pYx
+mVL
+tTD
 tGX
 tGX
 aTA
@@ -37714,7 +37880,7 @@ akh
 akh
 khx
 nph
-lOD
+puk
 pYx
 pYx
 pYx
@@ -37723,8 +37889,8 @@ pYx
 pYx
 pYx
 pYx
-pYx
-pYx
+sMe
+sMe
 tGX
 tGX
 aTA
@@ -37971,7 +38137,7 @@ akh
 akh
 akh
 nph
-lOD
+puk
 pYx
 gHp
 cfX
@@ -37979,9 +38145,9 @@ pYx
 fRH
 cfX
 pYx
-lOD
+puk
 hBD
-lOD
+puk
 tGX
 tGX
 aTA
@@ -38224,19 +38390,19 @@ crO
 bVH
 uRL
 khx
-akh
-akh
-akh
+rDA
+gLT
+vCf
 nph
-lOD
-pYx
+puk
+kdT
 cfX
 rdM
 pYx
-cfX
+uGl
 gHp
-pYx
-lOD
+kdT
+puk
 uiH
 eAR
 tGX
@@ -38471,7 +38637,7 @@ tGX
 tGX
 bVH
 bVH
-bVH
+xpR
 bVH
 bVH
 bVH
@@ -38481,19 +38647,19 @@ bVH
 bVH
 uRL
 akh
-akh
-akh
-akh
+rDA
+rDA
+rDA
 nph
-lOD
+puk
 pYx
 pYx
 pYx
+teJ
 pYx
 pYx
 pYx
-pYx
-lOD
+puk
 vuu
 nZo
 tGX
@@ -38727,7 +38893,7 @@ aTA
 tGX
 tGX
 bVH
-bVH
+phr
 crO
 bVH
 crO
@@ -38742,7 +38908,7 @@ akh
 akh
 akh
 nph
-lOD
+puk
 pYx
 fRH
 cfX
@@ -38750,7 +38916,7 @@ pYx
 rdM
 cfX
 pYx
-lOD
+puk
 pYx
 hKP
 tGX
@@ -38985,7 +39151,7 @@ tGX
 tGX
 bVH
 bVH
-bVH
+xpR
 bVH
 bVH
 bVH
@@ -38999,15 +39165,15 @@ akh
 akh
 akh
 nph
-lOD
+puk
 pYx
 cfX
 rdM
-pYx
+mVL
 cfX
 rdM
 pYx
-lOD
+puk
 pYx
 uul
 tGX
@@ -39256,7 +39422,7 @@ khx
 iEs
 akh
 hiB
-lOD
+puk
 pYx
 uUV
 pYx
@@ -39264,7 +39430,7 @@ pYx
 pYx
 uUV
 pYx
-lOD
+puk
 uiH
 xwd
 tGX

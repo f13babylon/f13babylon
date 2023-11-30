@@ -17,7 +17,7 @@
 	icon_dead = "mesquite-dead"
 	icon_harvest = "mesquite-harvest"
 	genes = list(/datum/plant_gene/trait/repeated_harvest)
-	reagents_add = list(/datum/reagent/consumable/honey = 0.1, /datum/reagent/consumable/nutriment = 0.05)
+	reagents_add = list(/datum/reagent/consumable/honey = 0.1, /datum/reagent/consumable/nutriment = 0.1)
 
 /obj/item/reagent_containers/food/snacks/grown/mesquite
 	seed = /obj/item/seeds/mesquite
@@ -28,6 +28,6 @@
 	filling_color = "#F0E68C"
 	bitesize_mod = 2
 	foodtype = VEGETABLES
-	juice_results = list(/datum/reagent/consumable/honey = 0.1)
+	juice_results = list(/datum/reagent/consumable/honey = 0)
 	tastes = list("crunchy sweetness" = 1)
 	distill_reagent = /datum/reagent/consumable/ethanol/wastemead

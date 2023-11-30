@@ -115,7 +115,7 @@
 	addtimer(CALLBACK(src, .proc/prime), isnull(delayoverride)? det_time : delayoverride)
 
 // for ticking sound until detonation
-/obj/item/grenade/proc/primetimer(mob/user, delayoverride, msg = TRUE, volume = 60) 
+/obj/item/grenade/proc/primetimer(mob/user, delayoverride, msg = TRUE, volume = 60)
 	var/turf/T = get_turf(src)
 	log_grenade(user, T) //Inbuilt admin procs already handle null users
 	if(user)
@@ -131,7 +131,7 @@
 	addtimer(CALLBACK(src, .proc/prime), isnull(delayoverride)? det_time : delayoverride)
 
 // For hissing fuse sound
-/obj/item/grenade/proc/primefuse(mob/user, delayoverride, msg = TRUE, volume = 60) 
+/obj/item/grenade/proc/primefuse(mob/user, delayoverride, msg = TRUE, volume = 60)
 	var/turf/T = get_turf(src)
 	log_grenade(user, T) //Inbuilt admin procs already handle null users
 	if(user)
@@ -194,7 +194,8 @@
 	if(attack_type & ATTACK_TYPE_PROJECTILE)
 		var/obj/item/projectile/P = object
 		if(damage && !P.nodamage && (P.damage_type != STAMINA) && prob(15))
-			owner.visible_message("<span class='danger'>[attack_text] hits [owner]'s [src], setting it off! What a shot!</span>")
+			owner.visible_message("<span class='danger'>[attack_text] hits [owner]'s [src], setting it off! What a shot!</span>", \
+								  "<span class='userdanger'>The [src] goes off in your face!</span>")
 			prime()
 			return BLOCK_SUCCESS | BLOCK_PHYSICAL_EXTERNAL
 	return ..()

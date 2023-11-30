@@ -9005,9 +9005,7 @@
 /turf/open/indestructible/binary,
 /area/fabric_of_reality)
 "Qp" = (
-/obj/effect/decal/waste{
-	icon_state = "goo10"
-	},
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/item/twohanded/sledgehammer/simple,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
@@ -9716,7 +9714,7 @@
 /turf/open/floor/plasteel,
 /area/centcom/supplypod/loading/four)
 "ZN" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
 "ZQ" = (

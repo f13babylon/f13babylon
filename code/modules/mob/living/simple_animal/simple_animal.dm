@@ -179,7 +179,7 @@
 	var/turf/T = get_turf(src)
 	if (T && AIStatus == AI_Z_OFF)
 		SSidlenpcpool.idle_mobs_by_zlevel[T.z] -= src
-	
+
 	QDEL_NULL(access_card)
 
 	return ..()
@@ -321,6 +321,9 @@
 		var/atom/Tsec = drop_location()
 		for(var/path in butcher_results)
 			for(var/i in 1 to butcher_results[path])
+				new path(Tsec)
+		for(var/path in guaranteed_butcher_results)//these are GUARANTEED why dont they drop??? bruh moment
+			for(var/i in 1 to guaranteed_butcher_results[path])
 				new path(Tsec)
 	..()
 

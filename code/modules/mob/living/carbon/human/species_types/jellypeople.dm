@@ -134,7 +134,7 @@
 		H.blood_volume -= 40*limbs_to_heal.len
 		to_chat(H, "<span class='notice'>...and after a moment you finish reforming!</span>")
 		return
-	else if(H.blood_volume >= 40)//We can partially heal some limbs
+	else if(H.blood_volume >= 40)	//We can partially heal some limbs
 		while(H.blood_volume >= (BLOOD_VOLUME_OKAY*H.blood_ratio)+40)
 			var/healed_limb = pick(limbs_to_heal)
 			H.regenerate_limb(healed_limb)

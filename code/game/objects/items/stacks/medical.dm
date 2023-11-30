@@ -126,8 +126,8 @@
 	singular_name = "medical gauze"
 	icon_state = "gauze"
 	heal_brute = 5
-	self_delay = 50
-	other_delay = 20
+	self_delay = 30
+	other_delay = 10
 	amount = 10
 	max_amount = 10
 	absorption_rate = 0.45
@@ -199,8 +199,6 @@
 	singular_name = "improvised gauze"
 	heal_brute = 0
 	desc = "A roll of cloth. Useful for staunching bleeding, healing burns, and reversing infection, but not THAT useful."
-	self_delay = 60
-	other_delay = 30
 	absorption_rate = 0.15
 	absorption_capacity = 4
 	merge_type = /obj/item/stack/medical/gauze/improvised
@@ -215,8 +213,6 @@
 	singular_name = "sterilized medical gauze"
 	desc = "A roll of elastic sterilized cloth that is extremely effective at stopping bleeding and covering burns. "
 	heal_brute = 6
-	self_delay = 45
-	other_delay = 15
 	absorption_rate = 0.4
 	absorption_capacity = 15
 	merge_type = /obj/item/stack/medical/gauze/adv
@@ -277,7 +273,7 @@
 	desc = "A suture infused with drugs that speed up wound healing of the treated laceration."
 	heal_brute = 15
 	stop_bleeding = 8
-	grind_results = list(/datum/reagent/medicine/polypyr = 2)
+	grind_results = list(/datum/reagent/medicine/stimpak/imitation = 2) //because broc and xander
 	merge_type = /obj/item/stack/medical/suture/medicated
 
 /obj/item/stack/medical/suture/medicated/five
@@ -319,8 +315,8 @@
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
 	amount = 12
 	max_amount = 12
-	self_delay = 40
-	other_delay = 20
+	self_delay = 30
+	other_delay = 10
 	merge_type = /obj/item/stack/medical/ointment
 
 	heal_burn = 5
@@ -372,14 +368,14 @@
 
 /obj/item/stack/medical/mesh/advanced
 	name = "advanced regenerative mesh"
-	desc = "An advanced mesh made with aloe extracts and sterilizing chemicals, used for the most critical burns. Also removes infection directly, unlike ointment. This is the kind of thing you would expect to see in a pre-war hospital for rich people."
+	desc = "An advanced mesh made with agave extracts and sterilizing chemicals, used for the most critical burns. Also removes infection directly, unlike ointment. This is the kind of thing you would expect to see in a pre-war hospital for rich people."
 	gender = PLURAL
 	singular_name = "advanced regenerative mesh"
 	icon_state = "aloe_mesh"
 	heal_burn = 15
 	sanitization = 6
 	flesh_regeneration = 12
-	grind_results = list(/datum/reagent/consumable/aloejuice = 1)
+	grind_results = list(/datum/reagent/consumable/agavejuice = 1)
 	merge_type = /obj/item/stack/medical/mesh/advanced
 
 /obj/item/stack/medical/mesh/advanced/one
@@ -454,7 +450,7 @@
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
 
 	amount = 4
-	self_delay = 20
+	self_delay = 30
 	grind_results = list(/datum/reagent/medicine/bicaridine = 10)
 	novariants = TRUE
 
@@ -495,7 +491,7 @@
 	desc = "A healing paste you can apply on wounds."
 
 	icon_state = "aloe_paste"
-	self_delay = 20
+	self_delay = 30
 	other_delay = 10
 	novariants = TRUE
 	amount = 20
@@ -523,7 +519,7 @@
 	max_amount = 15
 	heal_brute = 10
 	heal_burn = 10
-	self_delay = 40
+	self_delay = 30
 	other_delay = 10
 	repeating = TRUE
 	merge_type = /obj/item/stack/medical/poultice

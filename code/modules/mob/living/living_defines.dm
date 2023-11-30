@@ -28,6 +28,7 @@
 	var/fireloss = 0	//Burn damage caused by being way too hot, too cold or burnt.
 	var/cloneloss = 0	//Damage caused by being cloned or ejected from the cloner early. slimes also deal cloneloss damage to victims
 	var/staminaloss = 0		//Stamina damage, or exhaustion. You recover it slowly naturally, and are knocked down if it gets too high. Holodeck and hallucinations deal this.
+	var/radloss = 0
 	var/crit_threshold = HEALTH_THRESHOLD_CRIT // when the mob goes from "normal" to crit
 
 	var/mobility_flags = MOBILITY_FLAGS_DEFAULT
@@ -131,7 +132,6 @@
 
 	var/list/obj/effect/proc_holder/abilities = list()
 
-	var/radiation = 0 //If the mob is irradiated.
 	var/ventcrawl_layer = PIPING_LAYER_DEFAULT
 	var/losebreath = 0
 

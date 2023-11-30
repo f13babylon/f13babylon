@@ -32,6 +32,8 @@
 			adjustCloneLoss(damage_amount, forced = forced)
 		if(STAMINA)
 			adjustStaminaLoss(damage_amount, forced = forced)
+		if(RADIATION)
+			adjustRadLoss(damage_amount, forced = forced)
 	return 1
 
 /mob/living/proc/apply_damage_type(damage = 0, damagetype = BRUTE) //like apply damage except it always uses the damage procs
@@ -48,6 +50,8 @@
 			return adjustCloneLoss(damage)
 		if(STAMINA)
 			return adjustStaminaLoss(damage)
+		if(RADIATION)
+			return adjustRadLoss(damage)
 
 /mob/living/proc/get_damage_amount(damagetype = BRUTE)
 	switch(damagetype)
@@ -63,9 +67,11 @@
 			return getCloneLoss()
 		if(STAMINA)
 			return getStaminaLoss()
+		if(RADIATION)
+			return getRadLoss()
 
 
-/mob/living/proc/apply_damages(brute = 0, burn = 0, tox = 0, oxy = 0, clone = 0, def_zone = null, blocked = FALSE, stamina = 0, brain = 0)
+/mob/living/proc/apply_damages(brute = 0, burn = 0, tox = 0, oxy = 0, clone = 0, rad = 0, def_zone = null, blocked = FALSE, stamina = 0, brain = 0)
 	if(blocked >= 100)
 		return 0
 	if(brute)
@@ -82,6 +88,8 @@
 		apply_damage(stamina, STAMINA, def_zone, blocked)
 	if(brain)
 		apply_damage(brain, BRAIN, def_zone, blocked)
+	if(rad)
+		apply_damage(rad, RADIATION, def_zone, blocked)
 	return 1
 
 /mob/living/proc/apply_effect(effect = 0,effecttype = EFFECT_STUN, blocked = FALSE, knockdown_stamoverride, knockdown_stammax)
@@ -95,8 +103,6 @@
 			DefaultCombatKnockdown(effect * hit_percent, override_stamdmg = knockdown_stammax ? clamp(knockdown_stamoverride, 0, knockdown_stammax-getStaminaLoss()) : knockdown_stamoverride)
 		if(EFFECT_UNCONSCIOUS)
 			Unconscious(effect * hit_percent)
-		if(EFFECT_IRRADIATE)
-			radiation += max(effect * hit_percent, 0)
 		if(EFFECT_SLUR)
 			slurring = max(slurring,(effect * hit_percent))
 		if(EFFECT_STUTTER)
@@ -112,7 +118,7 @@
 	return 1
 
 
-/mob/living/proc/apply_effects(stun = 0, knockdown = 0, unconscious = 0, irradiate = 0, slur = 0, stutter = 0, eyeblur = 0, drowsy = 0, blocked = 0, stamina = 0, jitter = 0, kd_stamoverride, kd_stammax)
+/mob/living/proc/apply_effects(stun = 0, knockdown = 0, unconscious = 0, slur = 0, stutter = 0, eyeblur = 0, drowsy = 0, blocked = 0, stamina = 0, jitter = 0, kd_stamoverride, kd_stammax)
 	if(blocked >= 100)
 		return BULLET_ACT_BLOCK
 	if(stun)
@@ -121,8 +127,6 @@
 		apply_effect(knockdown, EFFECT_KNOCKDOWN, blocked, kd_stamoverride, kd_stammax)
 	if(unconscious)
 		apply_effect(unconscious, EFFECT_UNCONSCIOUS, blocked)
-	if(irradiate)
-		apply_effect(irradiate, EFFECT_IRRADIATE, blocked)
 	if(slur)
 		apply_effect(slur, EFFECT_SLUR, blocked)
 	if(stutter)
@@ -234,6 +238,25 @@
 
 /mob/living/proc/setStaminaLoss(amount, updating_health = TRUE, forced = FALSE)
 	return
+
+/mob/living/proc/getRadLoss()
+	return radloss
+
+/mob/living/proc/adjustRadLoss(amount, updating_health = TRUE, forced = FALSE)
+	if(!forced && (status_flags & GODMODE))
+		return FALSE
+	radloss += amount * CONFIG_GET(number/damage_multiplier)
+	if(updating_health)
+		updatehealth()
+	return amount
+
+/mob/living/proc/setRadLoss(amount, updating_health = TRUE, forced = FALSE)
+	if(!forced && (status_flags & GODMODE))
+		return FALSE
+	radloss = amount
+	if(updating_health)
+		updatehealth()
+	return amount
 
 // heal ONE external organ, organ gets randomly selected from damaged ones.
 /mob/living/proc/heal_bodypart_damage(brute = 0, burn = 0, stamina = 0, updating_health = TRUE)

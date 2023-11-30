@@ -24,6 +24,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 	access = list(ACCESS_NCR)
 	minimal_access = list(ACCESS_NCR)
+	blacklisted_quirks = list(/datum/quirk/straight_edge)
 	forbids = "The NCR forbids: Chem and drug use such as jet or alcohol while on duty. Execution of unarmed or otherwise subdued targets without authorisation."
 	enforces = "The NCR expects: Obeying the lawful orders of superiors. Proper treatment of prisoners.  Good conduct within the Republic's laws. Wearing the uniform."
 	objectivesList = list("Leadership recommends the following goal for this week: Establish an outpost at the radio tower","Leadership recommends the following goal for this week: Neutralize and capture dangerous criminals", "Leadership recommends the following goal for this week: Free slaves and establish good relations with unaligned individuals.")
@@ -46,6 +47,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	..()
 	if(visualsOnly)
 		return
+	ADD_TRAIT(H, TRAIT_STRAIGHT_EDGE,  REF(src))
+	ADD_TRAIT(H, TRAIT_GENERIC, REF(src))
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrgate)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrcombatarmor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrcombathelmet)
@@ -628,7 +631,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/vrcqc
 	name = "Veteran Ranger CQC"
-	suit_store = /obj/item/gun/ballistic/revolver/sequoia
+	suit_store = /obj/item/gun/ballistic/revolver/hunting/sequoia
 	backpack_contents = list(
 		/obj/item/ammo_box/c4570box/ = 2,
 		/obj/item/book/granter/trait/bigleagues = 1,
@@ -889,7 +892,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "Combat Sapper"
 	belt = /obj/item/storage/belt/military/assault/ncr/engineer
 	glasses = /obj/item/clothing/glasses/welding
-	suit_store = /obj/item/ammo_box/magazine/uzim9mm
+	suit_store = /obj/item/gun/ballistic/automatic/smg/mini_uzi
 	backpack_contents = list(
 		/obj/item/grenade/plastic/x4 = 1,
 		/obj/item/book/granter/trait/explosives = 1,
@@ -900,7 +903,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/outfit/loadout/combatengineerbuilder
 	name = "Construction Specialist"
 	belt = /obj/item/storage/belt/military/assault/ncr/engineer
-	suit_store = /obj/item/ammo_box/magazine/uzim9mm
+	suit_store = /obj/item/gun/ballistic/automatic/smg/mini_uzi
 	backpack_contents = list(
 			/obj/item/ammo_box/magazine/uzim9mm = 3,
 		/obj/item/book/granter/trait/explosives = 1,
@@ -1022,7 +1025,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ,  REF(src))
-	ADD_TRAIT(H, TRAIT_SURGERY_LOW,  REF(src))
+	ADD_TRAIT(H, TRAIT_SURGERY_MID,  REF(src))
 	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
 
 
@@ -1286,7 +1289,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		return
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ,  REF(src))
 	ADD_TRAIT(H, TRAIT_SURGERY_HIGH,  REF(src))
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/medx)
 
 
 // LOGISTICS OFFICER
@@ -1320,6 +1322,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/a180)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/uzi)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ninemil)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/rangemaster)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1911)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/n99)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/commando)
@@ -1327,6 +1330,10 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/marksmancarbine)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1garand)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/scoutcarbine)
+
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/receiver)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/assembly)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/alloys)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK,  REF(src))
 
 /datum/outfit/job/ncr/f13logisticsofficer		// M1 Garand, 9mm sidearm, Survival knife, C-4 bomb, Extra materials, Full blueprints
@@ -1345,7 +1352,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE
-	gunsmith_four = TRUE
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv = 2,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,

@@ -223,6 +223,9 @@
 	max_integrity = 200
 	rad_insulation = RAD_VERY_LIGHT_INSULATION
 
+/obj/structure/mineral_door/wood/add_debris_element()
+	AddElement(/datum/element/debris, DEBRIS_WOOD, -10, 5)
+
 /obj/structure/mineral_door/woodrustic
 	name = "rustic wood door"
 	icon_state = "woodrustic"
@@ -232,6 +235,9 @@
 	sheetAmount = 10
 	max_integrity = 200
 	rad_insulation = RAD_VERY_LIGHT_INSULATION
+
+/obj/structure/mineral_door/woodrustic/add_debris_element()
+	AddElement(/datum/element/debris, DEBRIS_WOOD, -10, 5)
 
 /obj/structure/mineral_door/paperframe
 	name = "paper frame door"

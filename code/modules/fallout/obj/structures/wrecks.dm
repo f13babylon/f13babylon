@@ -3,6 +3,9 @@
 	density = 1
 	layer = MOB_LAYER + 1
 
+/obj/structure/wreck/add_debris_element()
+	AddElement(/datum/element/debris, DEBRIS_SPARKS, -15, 8, 1)
+
 /obj/structure/wreck/car
 	name = "wrecked car"
 	desc = "An old pre-war car, rusted and destroyed with age and weathering."
@@ -367,6 +370,12 @@
 		var/modifier = 0
 		if(HAS_TRAIT(user,TRAIT_TECHNOPHREAK))
 			modifier = rand(1, 3)
+		var/obj/item/l = user.get_inactive_held_item()
+		if(istype(l,/obj/item/weldingtool))
+			var/obj/item/weldingtool/WO = l
+			if(WO.tool_start_check(user, amount=3))
+				WO.use(3)
+				modifier++
 		for(var/i2 in 1 to (3+modifier))
 			if(prob(25))
 				new /obj/item/salvage/low(usr_turf)
@@ -416,6 +425,12 @@
 		for(var/i2 in 1 to (3+modifier))
 			if(prob(25))
 				new /obj/item/salvage/low(usr_turf)
+		var/obj/item/l = user.get_inactive_held_item()
+		if(istype(l,/obj/item/weldingtool))
+			var/obj/item/weldingtool/WO = l
+			if(WO.tool_start_check(user, amount=3))
+				WO.use(3)
+				modifier++
 		for(var/i3 in 1 to (1+modifier)) //this is just less lines for the same thing
 			if(prob(10))
 				new /obj/item/salvage/high(usr_turf)

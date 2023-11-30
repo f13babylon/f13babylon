@@ -237,7 +237,7 @@
 	icon_state = "hubologist"
 	item_state = "wcoat"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
-	
+
 /obj/item/clothing/suit/f13/sexymaid
 	name = "sexy maid outfit"
 	desc = "A maid outfit that shows just a little more skin than needed for cleaning duties."
@@ -300,7 +300,7 @@
 	desc = "A worn-down white labcoat with some wiring hanging from the right side.<br>Upon closer inspection, you can see an ancient bloodstains that could tell an entire story about thrilling adventures of a previous owner."
 	icon_state = "followers"
 	item_state = "labcoat"
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 10, "bomb" = 0, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 10)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 10)
 
 /obj/item/clothing/suit/hooded/cloak/desert
 	name = "desert cloak"
@@ -336,7 +336,7 @@
 	name = "tattered red cloak"
 	icon_state = "goliath_cloak"
 	desc = "An old ragged, tattered red cloak that is covered in burns and bullet holes."
-	armor = list("melee" = 25, "bullet" = 20, "laser" = 10, "energy" = 20, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
+	armor = list("melee" = 25, "bullet" = 20, "laser" = 10, "energy" = 0, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
 	hoodtype = /obj/item/clothing/head/hooded/cloakhood/goliath/tattered
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 
@@ -345,7 +345,7 @@
 	name = "tattered red cloak hood"
 	icon_state = "golhood"
 	desc = "A tattered hood, better than nothing in the waste."
-	armor = list("melee" = 25, "bullet" = 10, "laser" = 10, "energy" = 20, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
+	armor = list("melee" = 25, "bullet" = 10, "laser" = 10, "energy" = 0, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
 
 
 

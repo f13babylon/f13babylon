@@ -40,7 +40,7 @@
 	. = ..()
 	if(myseed && chems.has_reagent(src.type, 1))
 		mytray.adjustHealth(-round(chems.get_reagent_amount(src.type) * 0.025))
-		myseed.adjust_instability(round(chems.get_reagent_amount(src.type) * 0.3))
+		myseed.adjust_instability(round(chems.get_reagent_amount(src.type) * 0.9))
 
 // Enduro Grow Tribal Edition
 /datum/reagent/fortifying_compost
@@ -77,7 +77,7 @@
 /datum/chemical_reaction/alacritous_compost
 	id = /datum/reagent/alacritous_compost
 	results = list(/datum/reagent/alacritous_compost = 3)
-	required_reagents = list(/datum/reagent/ash = 1, /datum/reagent/consumable/ethanol/pungajuice = 1, /datum/reagent/compost = 1)
+	required_reagents = list(/datum/reagent/ash = 1, /datum/reagent/consumable/pungajuice = 1, /datum/reagent/compost = 1)
 	mix_message = "The compost starts smelling like manure"
 
 // If added to tray

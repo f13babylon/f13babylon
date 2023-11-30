@@ -20,22 +20,26 @@
 	var/mutable_appearance/icon = mutable_appearance('icons/obj/storage.dmi', "bible")
 	var/prayer_type = "PRAYER"
 	var/prayer_span = "prayer"
+	var/sound/prayer_sound = sound(get_sfx('sound/effects/ghost2.ogg'))
 	var/deity
 	if(usr.job == "Preacher")
 		icon.icon_state = "kingyellow"
 		prayer_type = "PREACHER PRAYER"
 		prayer_span = "preacher_prayer"
+		prayer_sound = sound(get_sfx('sound/effects/pray_chaplain.ogg'))
 		if(GLOB.deity)
 			deity = GLOB.deity
-	if(usr.job == "Legion Orator")
+	if(usr.job == "Legion Orator" || usr.job == "Legion Priestess")
 		icon = mutable_appearance('icons/obj/statue.dmi', "marsred")
 		prayer_type = "LEGION PRAYER"
 		prayer_span = "legion_prayer"
+		prayer_sound = sound(get_sfx('sound/items/cornu.ogg'))
 		deity = "Mars"
 	else if(iscultist(usr))
 		icon.icon_state = "tome"
 		prayer_type = "CULTIST PRAYER"
 		prayer_span = "cult_prayer"
+		prayer_sound = sound(get_sfx('sound/hallucinations/i_see_you1.ogg'))
 		deity = "Nar'Sie"
 	else if(isliving(usr))
 		var/mob/living/L = usr
@@ -43,25 +47,18 @@
 			icon.icon_state = "holylight"
 			prayer_type = "SPIRITUAL PRAYER"
 			prayer_span = "spiritual_prayer"
+			prayer_sound = sound(get_sfx('sound/effects/pray.ogg'))
 
+	prayer_sound.volume = 50
 	var/msg_tmp = msg
-	msg = "<span class='adminnotice'><span class=[prayer_span]>[icon2html(icon, GLOB.admins)][prayer_type][deity ? " to [deity]" : ""]:</span> [ADMIN_FULLMONTY(src)] [ADMIN_SC(src)]:<span class='notice'><br>\"[msg]\"</span></span>"
+	msg = "<span class='adminnotice'><span class=[prayer_span]>[icon2html(icon, GLOB.admins)][prayer_type][deity ? " to [deity]" : ""]:</span> [ADMIN_FULLMONTY(src)] [ADMIN_SC(src)]:<span class='notice'>\"[msg]\"</span></span>"
 
 	for(var/client/C in GLOB.admins)
 		if(C.prefs.chat_toggles & CHAT_PRAYER)
 			to_chat(C, msg)
 			if(C.prefs.toggles & SOUND_PRAYERS)
-				switch(prayer_type)
-					if("PREACHER PRAYER")
-						SEND_SOUND(C, sound('sound/effects/pray_chaplain.ogg'))
-					if("LEGION PRAYER")
-						SEND_SOUND(C, sound('sound/items/cornu.ogg'))
-					if("SPIRITUAL PRAYER")
-						SEND_SOUND(C, sound('sound/effects/pray.ogg'))
-					if("CULTIST PRAYER")
-						SEND_SOUND(C, sound('sound/hallucinations/i_see_you1.ogg'))
-					else
-						SEND_SOUND(C, sound('sound/effects/ghost2.ogg'))
+				SEND_SOUND(C, prayer_sound)
+
 	to_chat(usr, "<span class='info'>You pray to the gods: \"[msg_tmp]\"</span>")
 
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Prayer") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!

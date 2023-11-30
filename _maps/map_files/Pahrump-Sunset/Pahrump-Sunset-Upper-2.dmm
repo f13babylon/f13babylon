@@ -250,9 +250,6 @@
 	},
 /area/fallout/wasteland)
 "ld" = (
-/obj/machinery/smoke_machine{
-	name = "ventilation machine"
-	},
 /turf/open/indestructible/ground/outside/roof{
 	icon_state = "floorrustysolid"
 	},
@@ -616,9 +613,6 @@
 /area/fallout/building/mall)
 "CP" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/smoke_machine{
-	name = "ventilation machine"
-	},
 /turf/open/indestructible/ground/outside/roof{
 	icon_state = "floorrustysolid"
 	},

@@ -49,7 +49,7 @@
 	permeability_coefficient = 0.5
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	slowdown = 1
-	armor = list("melee" = 15, "bullet" = 5, "laser" = 20, "energy" = 20, "bomb" = 20, "bio" = 10, "fire" = 100, "acid" = 50)
+	armor = list("melee" = 15, "bullet" = 5, "laser" = 20, "energy" = 5, "bomb" = 20, "bio" = 10, "fire" = 100, "acid" = 50)
 	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT|HIDETAUR
 	clothing_flags = STOPSPRESSUREDAMAGE | THICKMATERIAL
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
@@ -69,7 +69,7 @@
 	desc = "Use in case of bomb."
 	icon_state = "bombsuit"
 	clothing_flags = THICKMATERIAL
-	armor = list("melee" = 15, "bullet" = 5, "laser" = 20, "energy" = 20, "bomb" = 100, "bio" = 10, "fire" = 100, "acid" = 50)
+	armor = list("melee" = 15, "bullet" = 5, "laser" = 20, "energy" = 5, "bomb" = 100, "bio" = 10, "fire" = 100, "acid" = 50)
 	flags_inv = HIDEFACE|HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
@@ -95,7 +95,7 @@
 	clothing_flags = THICKMATERIAL
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	slowdown = 2
-	armor = list("melee" = 15, "bullet" = 5, "laser" = 20, "energy" = 20, "bomb" = 100, "bio" = 10, "fire" = 100, "acid" = 50)
+	armor = list("melee" = 15, "bullet" = 5, "laser" = 20, "energy" = 5, "bomb" = 100, "bio" = 10, "fire" = 100, "acid" = 50)
 	flags_inv = HIDEJUMPSUIT|HIDETAUR
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT

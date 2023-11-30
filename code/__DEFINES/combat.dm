@@ -10,6 +10,7 @@
 #define CLONE		"clone"
 #define STAMINA 	"stamina"
 #define BRAIN		"brain"
+#define RADIATION	"radiation"
 
 //bitflag damage defines used for suicide_act
 #define BRUTELOSS 		(1<<0)
@@ -22,7 +23,6 @@
 #define EFFECT_STUN		"stun"
 #define EFFECT_KNOCKDOWN		"knockdown"
 #define EFFECT_UNCONSCIOUS	"unconscious"
-#define EFFECT_IRRADIATE	"irradiate"
 #define EFFECT_STUTTER		"stutter"
 #define EFFECT_SLUR 		"slur"
 #define EFFECT_EYE_BLUR	"eye_blur"
@@ -293,3 +293,8 @@ GLOBAL_LIST_INIT(shove_disarming_types, typecacheof(list(
  * a "inefficiently" prefix will be added to the message.
  */
 #define FEEBLE_ATTACK_MSG_THRESHOLD 0.5
+
+/// Gun handedness defines -- for picking which direction to toss casings
+#define GUN_EJECTOR_RIGHT 1
+#define GUN_EJECTOR_LEFT 2
+#define GUN_EJECTOR_ANY 3

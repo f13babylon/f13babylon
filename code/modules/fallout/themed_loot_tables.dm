@@ -316,7 +316,7 @@
 		/obj/effect/spawner/bundle/f13/needler = 10,
 		/obj/item/gun/energy/laser/rcw = 10,
 		/obj/item/gun/ballistic/automatic/m72 =10,
-		/obj/item/melee/powerfist/f13/moleminer = 10,
+		/obj/item/melee/f13powerfist/moleminer = 10,
 		/obj/item/melee/transforming/energy/axe/protonaxe = 10,
 		/obj/item/gun/ballistic/revolver/ballisticfist = 5,
 		)

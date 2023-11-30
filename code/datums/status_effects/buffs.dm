@@ -602,8 +602,8 @@
 	owner.adjustToxLoss(-6, forced = TRUE)
 	M.cure_trauma_type(resilience = TRAUMA_RESILIENCE_BASIC)
 	//Purges 50 rads per tick
-	if(owner.radiation > 0)
-		owner.radiation -= min(owner.radiation, 50)
+	if(owner.radloss > 0)
+		owner.radloss -= min(owner.radloss, 50)
 	//Mutadone effects
 	owner.jitteriness = 0
 	if(owner.has_dna())
