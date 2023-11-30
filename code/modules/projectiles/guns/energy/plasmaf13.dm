@@ -69,7 +69,8 @@
 /obj/item/gun/energy/laser/plasma
 	name ="plasma rifle"
 	item_state = "plasma"
-	icon_state = "plasma"
+	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
+	icon_state = "plasrifle"
 	slowdown = 0.65
 	fire_delay = 5.2
 	desc = "An advanced man-portable Winchester plasma rifle based on an older military design. Fires bolts of plasma that form into toroids in the chamber, which are then sent down a superconducting barrel and propelled by electromagnetic claws."
