@@ -107,7 +107,7 @@
 		src.item_state = "ushankadown"
 		earflaps = 1
 		to_chat(user, "<span class='notice'>You lower the ear flaps on the ushanka.</span>")
-	
+
 /*
  * Black Ushanka
  */
@@ -188,7 +188,7 @@
 	icon_state = "cardborg_h"
 	item_state = "cardborg_h"
 	flags_cover = HEADCOVERSEYES
-	alternate_screams = list('modular_citadel/sound/voice/scream_silicon.ogg')
+	alternate_screams = list('modular_fallout/sound/voice/scream_silicon.ogg')
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
 
 	dog_fashion = /datum/dog_fashion/head/cardborg

@@ -5,7 +5,7 @@
 
 	telegraph_duration = 700
 	telegraph_message = "<span class='userdanger'>The skies slowly turn into a glowing green, distant distorted thunder can be heard as dark clouds approach.</span>"
-	telegraph_sound = 'modular_sunset/sound/weather/radstorm2.ogg'
+	telegraph_sound = 'modular_fallout/sound/weather/radstorm2.ogg'
 
 
 	weather_message = "<span class='userdanger'><i>You feel waves of heat wash over you! Find shelter!</i></span>"
@@ -13,7 +13,7 @@
 	weather_duration_lower = 1500
 	weather_duration_upper = 3000
 	weather_color = "green"
-	weather_sound = 'modular_sunset/sound/weather/radstorm.ogg'
+	weather_sound = 'modular_fallout/sound/weather/radstorm.ogg'
 
 	end_duration = 100
 	end_message = "<span class='userdanger'>The air seems to be cooling off again as the radiation storm passes, the sky returning to it's normal color.</span>"

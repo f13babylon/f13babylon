@@ -3,7 +3,7 @@
 *********** Xeno Dorsal Tubes *************
 *******************************************/
 /datum/sprite_accessory/xeno_dorsal
-	icon = 'modular_citadel/icons/mob/xeno_parts_greyscale.dmi'
+	icon = 'modular_fallout/icons/mob/xeno_parts_greyscale.dmi'
 	mutant_part_string = "xenodorsal"
 	relevant_layers = list(BODY_BEHIND_LAYER, BODY_FRONT_LAYER)
 
@@ -26,7 +26,7 @@
 ************* Xeno Tails ******************
 *******************************************/
 /datum/sprite_accessory/xeno_tail
-	icon = 'modular_citadel/icons/mob/xeno_parts_greyscale.dmi'
+	icon = 'modular_fallout/icons/mob/xeno_parts_greyscale.dmi'
 	mutant_part_string = "tail"
 	relevant_layers = list(BODY_BEHIND_LAYER, BODY_FRONT_LAYER)
 
@@ -45,7 +45,7 @@
 ************* Xeno Heads ******************
 *******************************************/
 /datum/sprite_accessory/xeno_head
-	icon = 'modular_citadel/icons/mob/xeno_parts_greyscale.dmi'
+	icon = 'modular_fallout/icons/mob/xeno_parts_greyscale.dmi'
 	mutant_part_string = "xhead"
 	relevant_layers = list(BODY_ADJ_LAYER)
 

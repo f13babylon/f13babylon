@@ -1,0 +1,71 @@
+/*
+Just leaving this here for quick copy-pasting, for future contributors.
+	icon = 'modular_fallout/icons/obj/clothing/suits.dmi'
+	mob_overlay_icon = 'modular_fallout/icons/mob/clothing/suit.dmi'
+	anthro_mob_worn_overlay = 'modular_fallout/icons/mob/clothing/suit_digi.dmi'
+	mutantrace_variation = STYLE_DIGITIGRADE
+	!!If you don't have digi-adapted sprites use `mutantrace_variation = NONE` instead. Should snap legs sprites to planti when related clothing is worn.
+	(unless suit doesn't cover legs in `body_parts_covered` var)
+*/
+
+/obj/item/clothing/suit/armor/hos/trenchcoat/cloak
+	name = "armored trenchcloak"
+	desc = "A trenchcoat enchanced with a special lightweight kevlar. This one appears to be designed to be draped over one's shoulders rather than worn normally.."
+	mob_overlay_icon = 'modular_fallout/icons/mob/citadel/suit.dmi'
+	icon_state = "hostrench"
+	item_state = "hostrench"
+	mutantrace_variation = NONE
+	body_parts_covered = CHEST|ARMS|LEGS
+
+/obj/item/clothing/suit/hooded/cloak/david
+	name = "red cloak"
+	icon_state = "goliath_cloak"
+	desc = "A grubby red cloak, it has gained its color from years of blood, dust, rust, and various stains."
+	hoodtype = /obj/item/clothing/head/hooded/cloakhood/david
+	body_parts_covered = CHEST|GROIN|ARMS
+	mutantrace_variation = NONE
+
+/obj/item/clothing/head/hooded/cloakhood/david
+	name = "red cloak hood"
+	icon_state = "golhood"
+	desc = "A simple hood, does it make you less or more suspicous?"
+	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
+	mutantrace_variation = NONE
+
+
+/obj/item/clothing/suit/f13/goner
+	name = "dev-patched dull trenchcoat"
+	desc = "A non-existent dull trenchcoat."
+	icon = 'modular_fallout/icons/obj/clothing/suits.dmi'
+	mob_overlay_icon = 'modular_fallout/icons/mob/clothing/suit.dmi'
+	anthro_mob_worn_overlay = 'modular_fallout/icons/mob/clothing/suit_digi.dmi'
+	icon_state = "goner_suit"
+	item_state = "ro_suit"
+	armor = list("melee" = 25, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 10)
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	mutantrace_variation = STYLE_DIGITIGRADE
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets
+
+/obj/item/clothing/suit/f13/goner/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/f13/goner/red
+	name = "red-patched drab trenchcoat"
+	desc = "An olive drab trenchcoat with red linings and arm patches.<br>Guess war can be boring too."
+	icon_state = "goner_suit_r"
+
+/obj/item/clothing/suit/f13/goner/green
+	name = "green-patched drab trenchcoat"
+	desc = "An olive drab trenchcoat with green linings and arm patches.<br>Guess war can be boring too."
+	icon_state = "goner_suit_g"
+
+/obj/item/clothing/suit/f13/goner/blue
+	name = "blue-patched drab trenchcoat"
+	desc = "An olive drab trenchcoat with blue linings and arm patches.<br>Guess war can be boring too."
+	icon_state = "goner_suit_b"
+
+/obj/item/clothing/suit/f13/goner/yellow
+	name = "yellow-patched drab trenchcoat"
+	desc = "An olive drab trenchcoat with yellow linings and arm patches.<br>Guess war can be boring too."
+	icon_state = "goner_suit_y"

@@ -1,4 +1,4 @@
-/*/client/verb/who() Commenting this file out to be overridden in modular_citadel
+/*/client/verb/who() Commenting this file out to be overridden in modular_fallout
 	set name = "Who"
 	set category = "OOC"
 

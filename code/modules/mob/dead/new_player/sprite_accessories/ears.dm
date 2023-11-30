@@ -20,7 +20,7 @@
 /datum/sprite_accessory/ears/human/axolotl
 	name = "Axolotl"
 	icon_state = "axolotl"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED
@@ -28,7 +28,7 @@
 /datum/sprite_accessory/ears/human/bat
 	name = "Bat"
 	icon_state = "bat"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
@@ -36,7 +36,7 @@
 /datum/sprite_accessory/ears/human/bear
 	name = "Bear"
 	icon_state = "bear"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED
@@ -44,7 +44,7 @@
 /datum/sprite_accessory/ears/human/bigwolf
 	name = "Big Wolf"
 	icon_state = "bigwolf"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_BLUE
@@ -52,7 +52,7 @@
 /datum/sprite_accessory/ears/human/bigwolfinner
 	name = "Big Wolf (ALT)"
 	icon_state = "bigwolfinner"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	extra = TRUE
@@ -62,7 +62,7 @@
 /datum/sprite_accessory/ears/human/bigwolfdark //alphabetical sort ignored here for ease-of-use
 	name = "Dark Big Wolf"
 	icon_state = "bigwolfdark"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 	matrixed_sections = MATRIX_RED_BLUE
 
 /datum/sprite_accessory/ears/human/bigwolfinnerdark
@@ -70,7 +70,7 @@
 	icon_state = "bigwolfinnerdark"
 	extra = TRUE
 	extra_color_src = NONE
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED
@@ -78,7 +78,7 @@
 /datum/sprite_accessory/ears/human/bunny
 	name = "Bunny"
 	icon_state = "bunny"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
@@ -86,7 +86,7 @@
 /datum/sprite_accessory/ears/human/bunnyalt
 	name = "Bunny (ALT)"
 	icon_state = "bunnyalt"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
@@ -102,7 +102,7 @@
 /datum/sprite_accessory/ears/human/catbig
 	name = "Cat, Big"
 	icon_state = "catbig"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
@@ -110,13 +110,13 @@
 /datum/sprite_accessory/ears/human/cobra
 	name = "Cobra Hood"
 	icon_state = "cobra"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 	color_src = SKINTONE
 
 /datum/sprite_accessory/ears/human/cow
 	name = "Cow"
 	icon_state = "cow"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED
@@ -129,7 +129,7 @@
 /datum/sprite_accessory/ears/human/deer
 	name = "Deer"
 	icon_state = "deer"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
@@ -137,7 +137,7 @@
 /datum/sprite_accessory/ears/human/dog
 	name = "Dog"
 	icon_state = "lab"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED
@@ -145,34 +145,34 @@
 /datum/sprite_accessory/ears/human/eevee
 	name = "Eevee"
 	icon_state = "eevee"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED
 
 /datum/sprite_accessory/ears/human/eeveealt
 	name = "Eevee Alt"
 	icon_state = "eeveealt"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED
 
 /datum/sprite_accessory/ears/human/eeveetorn
 	name = "Eeeve Torn"
 	icon_state = "eeveetorn"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED
 
 /datum/sprite_accessory/ears/human/elf
 	name = "Elf"
 	icon_state = "elf"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 	color_src = MUTCOLORS3
 
 /datum/sprite_accessory/ears/human/elephant
 	name = "Elephant"
 	icon_state = "elephant"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED
@@ -180,7 +180,7 @@
 /datum/sprite_accessory/ears/human/fennec
 	name = "Fennec"
 	icon_state = "fennec"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_BLUE
@@ -188,7 +188,7 @@
 /datum/sprite_accessory/ears/human/fennec2
 	name = "Fennec (ALT)"
 	icon_state = "fennec2"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_BLUE
@@ -196,7 +196,7 @@
 /datum/sprite_accessory/ears/human/fish
 	name = "Fish"
 	icon_state = "fish"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED
@@ -204,7 +204,7 @@
 /datum/sprite_accessory/ears/human/fox
 	name = "Fox"
 	icon_state = "fox"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
@@ -212,7 +212,7 @@
 /datum/sprite_accessory/ears/human/husky
 	name = "Husky"
 	icon_state = "wolf"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_BLUE
@@ -220,13 +220,13 @@
 /datum/sprite_accessory/ears/human/jellyfish
 	name = "Jellyfish"
 	icon_state = "jellyfish"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 	color_src = HAIR
 
 /datum/sprite_accessory/ears/human/kangaroo
 	name = "Kangaroo"
 	icon_state = "kangaroo"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
@@ -234,7 +234,7 @@
 /datum/sprite_accessory/ears/human/murid
 	name = "Murid"
 	icon_state = "murid"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
@@ -242,7 +242,7 @@
 /datum/sprite_accessory/ears/human/otie
 	name = "Otusian"
 	icon_state = "otie"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
@@ -250,7 +250,7 @@
 /datum/sprite_accessory/ears/human/rabbit
 	name = "Rabbit"
 	icon_state = "rabbit"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
@@ -258,7 +258,7 @@
 /datum/sprite_accessory/ears/human/rabbitalt
 	name = "Rabbit (ALT)"
 	icon_state = "rabbitalt"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_ALL
@@ -266,7 +266,7 @@
 /datum/sprite_accessory/ears/human/pede
 	name = "Scolipede"
 	icon_state = "pede"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
@@ -274,7 +274,7 @@
 /datum/sprite_accessory/ears/human/sergal
 	name = "Sergal"
 	icon_state = "sergal"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
@@ -282,7 +282,7 @@
 /datum/sprite_accessory/ears/human/skunk
 	name = "Skunk"
 	icon_state = "skunk"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
@@ -290,7 +290,7 @@
 /datum/sprite_accessory/ears/human/squirrel
 	name = "Squirrel"
 	icon_state = "squirrel"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
@@ -298,7 +298,7 @@
 /datum/sprite_accessory/ears/human/wolf
 	name = "Wolf"
 	icon_state = "wolf"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_BLUE
@@ -306,7 +306,7 @@
 /datum/sprite_accessory/ears/human/zorgoia
 	name = "Zorgoia"
 	icon_state = "zorgoia"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED
 
@@ -316,7 +316,7 @@
 *******************************************/
 
 /datum/sprite_accessory/ears/mam_ears
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 	color_src = MATRIXED
 	relevant_layers = list(BODY_BEHIND_LAYER, BODY_ADJ_LAYER, BODY_FRONT_LAYER)
 
@@ -394,7 +394,7 @@
 /datum/sprite_accessory/ears/mam_ears/cobra
 	name = "Cobra Hood"
 	icon_state = "cobra"
-	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	icon = 'modular_fallout/icons/mob/mam_ears.dmi'
 	color_src = SKINTONE
 
 /datum/sprite_accessory/ears/mam_ears/cow
@@ -529,4 +529,3 @@
 	icon_state = "zorgoia"
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED
-

@@ -574,7 +574,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 				var/icon/grad_s = null // temporary icon to apply to the MA
 				var/grad_style_ref = GLOB.hair_gradients[H.dna.features["grad_style"]]
 				if(grad_style_ref)
-					grad_s = new/icon("icon" = 'modular_citadel/icons/mob/hair_gradients.dmi', "icon_state" = grad_style_ref)
+					grad_s = new/icon("icon" = 'modular_fallout/icons/mob/hair_gradients.dmi', "icon_state" = grad_style_ref)
 					var/icon/hair_sprite = new/icon("icon" = hair_file, "icon_state" = hair_state)
 					grad_s.Blend(hair_sprite, ICON_AND)
 					grad_s.Blend("#[H.dna.features["grad_color"]]", ICON_MULTIPLY)

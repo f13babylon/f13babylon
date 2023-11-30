@@ -165,7 +165,7 @@
 /// The screen button.
 /obj/screen/combattoggle
 	name = "toggle combat mode"
-	icon = 'modular_citadel/icons/ui/screen_midnight.dmi'
+	icon = 'modular_fallout/icons/ui/screen_midnight.dmi'
 	icon_state = "combat_off"
 	var/mutable_appearance/flashy
 	var/combat_on = FALSE ///Wheter combat mode is enabled or not, so we don't have to store a reference.

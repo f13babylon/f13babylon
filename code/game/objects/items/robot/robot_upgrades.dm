@@ -461,7 +461,7 @@ as performing this in action() will cause the upgrade to end up in the borg inst
 	desc = "An upgrade to a cyborg's hypospray, allowing it to \
 		pierce armor and thick material."
 	icon_state = "cyborg_upgrade3"
-	module_flags = BORG_MODULE_MEDICAL //added line so it appears correctly in the Exo fab 
+	module_flags = BORG_MODULE_MEDICAL //added line so it appears correctly in the Exo fab
 
 /obj/item/borg/upgrade/piercing_hypospray/action(mob/living/silicon/robot/R, user = usr)
 	. = ..()
@@ -751,7 +751,7 @@ as performing this in action() will cause the upgrade to end up in the borg inst
 
 		if(added_channels.len)
 			to_chat(R, span_info("New radio decryptions installed."))
-				
+
 
 /obj/item/borg/upgrade/radio_transceiver/deactivate(mob/living/silicon/robot/R, user = usr)
 	. = ..()
@@ -769,11 +769,11 @@ as performing this in action() will cause the upgrade to end up in the borg inst
 			accesstxt = GLOB.accesstoradio["[access]"]
 			if(accesstxt)
 				added_channels |= accesstxt
-		playsound(src, "modular_sunset/sound/pipsounds/pip1.ogg", 40, 1)
+		playsound(src, "modular_fallout/sound/pipsounds/pip1.ogg", 40, 1)
 		to_chat(user, span_info("Transceiver decryptions set."))
 
 /obj/item/borg/upgrade/radio_transceiver/attack_self(mob/user)
 	. = ..()
 	added_channels = list()
-	playsound(src, "modular_sunset/sound/pipsounds/pip1.ogg", 40, 1)
+	playsound(src, "modular_fallout/sound/pipsounds/pip1.ogg", 40, 1)
 	to_chat(user, span_info("Transceiver decryptions reset."))

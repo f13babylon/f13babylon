@@ -112,7 +112,7 @@
 /obj/item/weapon/maptool
 	name = "Map tools"
 	desc = "A foldable map of the sector and a bundle of cartographic untensils. Used together with binoculars to calculate coordinates."
-	icon = 'modular_sunset/icons/structures/mortar.dmi'
+	icon = 'modular_fallout/icons/obj/structures/mortar.dmi'
 	icon_state = "maptools"
 	slot_flags = ITEM_SLOT_BELT
 	w_class = WEIGHT_CLASS_SMALL

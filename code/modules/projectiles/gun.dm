@@ -1064,7 +1064,7 @@ CITADEL MODULAR PISTOL CODE
 /obj/item/gun/ballistic/automatic/pistol/modular
 	name = "modular pistol"
 	desc = "A small, easily concealable 10mm handgun. Has a threaded barrel for suppressors."
-	icon = 'modular_citadel/icons/obj/guns/cit_guns.dmi'
+	icon = 'modular_fallout/icons/obj/guns/cit_guns.dmi'
 	icon_state = "cde"
 	can_unsuppress = TRUE
 	automatic_burst_overlay = FALSE

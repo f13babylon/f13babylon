@@ -2,7 +2,7 @@
 /datum/hud/var/obj/screen/staminabuffer/staminabuffer
 
 /obj/screen/staminas
-	icon = 'modular_citadel/icons/ui/screen_gen.dmi'
+	icon = 'modular_fallout/icons/ui/screen_gen.dmi'
 	name = "stamina"
 	icon_state = "stamina0"
 	screen_loc = ui_stamina
@@ -33,7 +33,7 @@
 
 //stam buffer
 /obj/screen/staminabuffer
-	icon = 'modular_citadel/icons/ui/screen_gen.dmi'
+	icon = 'modular_fallout/icons/ui/screen_gen.dmi'
 	name = "stamina buffer"
 	icon_state = "stambuffer0"
 	screen_loc = ui_stamina

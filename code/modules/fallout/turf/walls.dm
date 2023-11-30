@@ -235,7 +235,7 @@
 /turf/closed/wall/f13/sunset/brick_small
 	name = "brick wall"
 	desc = "A wall made out of solid brick."
-	icon = 'modular_sunset/icons/turfs/walls/brick_small.dmi'
+	icon = 'modular_fallout/icons/turfs/walls/brick_small.dmi'
 	icon_state = "brick0"
 	icon_type_smooth = "brick"
 	hardness = 80
@@ -247,7 +247,7 @@
 /turf/closed/wall/f13/sunset/brick_small_dark
 	name = "brick wall"
 	desc = "A wall made out of solid brick."
-	icon = 'modular_sunset/icons/turfs/walls/brick_small_dark.dmi'
+	icon = 'modular_fallout/icons/turfs/walls/brick_small_dark.dmi'
 	icon_state = "brick0"
 	icon_type_smooth = "brick"
 	hardness = 80
@@ -259,7 +259,7 @@
 /turf/closed/wall/f13/sunset/brick_small_light
 	name = "brick wall"
 	desc = "A wall made out of solid brick."
-	icon = 'modular_sunset/icons/turfs/walls/brick_small_light.dmi'
+	icon = 'modular_fallout/icons/turfs/walls/brick_small_light.dmi'
 	icon_state = "brick0"
 	icon_type_smooth = "brick"
 	hardness = 80

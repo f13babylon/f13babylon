@@ -3,7 +3,7 @@
 
 /turf/open/floor/wood   //placeholder - this shouldn't be used but has a few details so it at least doesn't look broken if it does
 	name = "wooden floor"
-	icon = 'modular_sunset/icons/turfs/wood_floor.dmi'
+	icon = 'modular_fallout/icons/turfs/wood_floor.dmi'
 	icon_state = "common1"
 
 /turf/open/floor/wood/wood_common
