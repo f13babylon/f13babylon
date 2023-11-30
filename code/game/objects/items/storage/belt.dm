@@ -652,7 +652,6 @@
 		/obj/item/ammo_box/a45lcrev,
 		/obj/item/gun/energy/laser/pistol/pewpew,
 		/obj/item/gun/energy/laser/pistol,
-		/obj/item/gun/energy/laser/auto,
 		/obj/item/gun/energy/laser/complianceregulator,
 		/obj/item/gun/energy/laser/plasma/pistol,
 		/obj/item/gun/energy/laser/plasma/glock,
