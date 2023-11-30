@@ -441,7 +441,7 @@
 	desc = "The helmet of an NCR ranger, refit to serve as a Centurions helmet."
 	icon_state = "legion-rangercent"
 	item_state = "legion-rangercent"
-	armor = list("melee" = 40, "bullet" = 45, "laser" = 25, "energy" = 15, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20, "wound" = 55)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 20, "energy" = 5, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20, "wound" = 55)
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 3)
 
