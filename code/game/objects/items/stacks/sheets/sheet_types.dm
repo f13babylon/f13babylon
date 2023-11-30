@@ -122,6 +122,12 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 		new /datum/stack_recipe("Black Bishop", /obj/structure/chess/blackbishop, 2, time = 10, one_per_turf = 1, on_floor = 1), \
 		new /datum/stack_recipe("Black Queen", /obj/structure/chess/blackqueen, 2, time = 10, one_per_turf = 1, on_floor = 1), \
 		new /datum/stack_recipe("Black King", /obj/structure/chess/blackking, 2, time = 10, one_per_turf = 1, on_floor = 1), \
+	)), \
+	new /datum/stack_recipe_list("electronic frames", list( \
+		new/datum/stack_recipe("reflector frame", /obj/structure/reflector, 5, time = 25, one_per_turf = TRUE, on_floor = TRUE), \
+		new/datum/stack_recipe("apc frame", /obj/item/wallframe/apc, 2), \
+		new/datum/stack_recipe("air alarm frame", /obj/item/wallframe/airalarm, 2), \
+		new/datum/stack_recipe("fire alarm frame", /obj/item/wallframe/firealarm, 2), \
 	)),
 ))
 
