@@ -348,6 +348,7 @@
 	name = "bladed ranger sequoia"
 	desc = "This heavy revolver is a trademark weapon of the New California Republic Rangers. This one has a blade attached to the handle for a painful pistolwhip."
 	icon_state = "sequoia_b"
+	item_state = "sequoia_b"
 	force = 35
 	sharpness = SHARP_POINTY
 
