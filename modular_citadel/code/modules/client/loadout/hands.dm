@@ -174,4 +174,4 @@
 
 /datum/gear/hands/warpaintbowl
 	name = "warpaint bowl"
-	path - /obj/item/warpaint_bowl
+	path = /obj/item/warpaint_bowl
