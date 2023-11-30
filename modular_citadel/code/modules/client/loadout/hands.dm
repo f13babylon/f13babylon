@@ -171,3 +171,7 @@
 /datum/gear/hands/lipstickblack
 	name = "black lipstick"
 	path = /obj/item/lipstick/black
+
+/datum/gear/hands/warpaintbowl
+	name = "warpaint bowl"
+	path - /obj/item/warpaint_bowl
