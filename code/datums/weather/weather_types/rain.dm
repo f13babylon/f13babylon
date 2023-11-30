@@ -16,7 +16,7 @@
 	end_duration = 250
 	end_message = "<span class='notice'><font size=2>You start to hear the last of the rain as the sky begins to clear up.</font></span>"
 	end_overlay = "rain_gathering"
-	area_types = list(/area/f13/wasteland, /area/f13/desert, /area/f13/farm, /area/f13/forest, /area/f13/ruins)
+	area_types = list(/area/fallout/wasteland, /area/fallout/desert, /area/fallout/farm, /area/fallout/forest, /area/fallout/ruins)
 	protected_areas = list(/area/shuttle)
 	target_trait = ZTRAIT_SURFACE
 	protect_indoors = TRUE
@@ -48,7 +48,7 @@
 	return ..()
 
 /datum/weather/rain/eventarea
-	area_types = list(/area/f13/wasteland/event)
+	area_types = list(/area/fallout/wasteland/event)
 	probability = 0
 	target_trait = ZTRAIT_AWAY
 	weather_duration_lower = 18000

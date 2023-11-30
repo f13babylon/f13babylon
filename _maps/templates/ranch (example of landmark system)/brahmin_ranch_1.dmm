@@ -1,84 +1,84 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "ab" = (
 /obj/structure/fence/corner{
 	dir = 9;
 	icon_state = "corner"
 	},
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "ac" = (
 /obj/structure/fence{
 	dir = 4;
 	icon_state = "straight"
 	},
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "ad" = (
 /turf/closed/wall/f13/wood/house,
-/area/f13/village)
+/area/fallout/village)
 "ae" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "housewindowbrokenvertical"
 	},
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "af" = (
 /obj/structure/fence{
 	dir = 8;
 	icon_state = "straight"
 	},
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "ag" = (
 /obj/structure/fence,
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "ah" = (
 /obj/structure/fermenting_barrel,
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirtcorner"
 	},
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "aj" = (
 /mob/living/simple_animal/cow/brahmin,
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "ak" = (
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "al" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 8;
 	icon_state = "dirtcorner"
 	},
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "am" = (
 /obj/structure/simple_door/house,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "an" = (
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "ao" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "ap" = (
 /obj/structure/sink/kitchen{
 	pixel_y = 28
 	},
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "aq" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -93,7 +93,7 @@
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "ar" = (
 /obj/structure/closet/fridge,
 /obj/item/reagent_containers/food/condiment/yeast,
@@ -101,16 +101,16 @@
 /obj/effect/spawner/lootdrop/f13/foodspawner,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "as" = (
 /turf/closed/wall/f13/wood/interior,
-/area/f13/village)
+/area/fallout/village)
 "at" = (
 /obj/structure/chair/wood/fancy{
 	dir = 4
 	},
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "au" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -125,13 +125,13 @@
 	},
 /obj/effect/spawner/lootdrop/three_course_meal,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "av" = (
 /obj/structure/chair/wood/fancy{
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "aw" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -147,149 +147,149 @@
 /obj/effect/spawner/lootdrop/minor/kittyears_or_rabbitears,
 /obj/effect/spawner/lootdrop/minor/bowler_or_that,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "ax" = (
 /obj/structure/bed,
 /obj/item/bedsheet{
 	icon_state = "sheethos"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "ay" = (
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirtcorner"
 	},
-/area/f13/farm)
+/area/fallout/farm)
 "az" = (
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirt"
 	},
-/area/f13/farm)
+/area/fallout/farm)
 "aA" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 8;
 	icon_state = "dirtcorner"
 	},
-/area/f13/farm)
+/area/fallout/farm)
 "aC" = (
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "aD" = (
 /mob/living/simple_animal/cow/brahmin,
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "aE" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 8;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "aF" = (
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "aG" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2-broken"
 	},
-/area/f13/village)
+/area/fallout/village)
 "aH" = (
 /obj/structure/sink/well,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 4;
 	icon_state = "dirt"
 	},
-/area/f13/farm)
+/area/fallout/farm)
 "aI" = (
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/farm)
+/area/fallout/farm)
 "aJ" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 8;
 	icon_state = "dirt"
 	},
-/area/f13/farm)
+/area/fallout/farm)
 "aK" = (
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirtcorner"
 	},
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "aM" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 9;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "aN" = (
 /mob/living/simple_animal/cow/brahmin,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 1;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "aO" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 1;
 	icon_state = "dirtcorner"
 	},
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "aP" = (
 /obj/structure/table/wood,
 /obj/machinery/reagentgrinder,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "aQ" = (
 /obj/machinery/microwave/stove,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "aR" = (
 /obj/structure/table/wood,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "aS" = (
 /obj/structure/table/wood,
 /obj/item/kitchen/rollingpin,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "aT" = (
 /obj/structure/kitchenspike,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "aU" = (
 /obj/structure/bookcase/random/adult,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "aV" = (
 /obj/machinery/light/small,
 /obj/structure/table/wood/settler,
 /obj/item/paper_bin,
 /obj/item/pen,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "aW" = (
 /obj/structure/chair/wood{
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "aX" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housewood3-broken"
 	},
-/area/f13/village)
+/area/fallout/village)
 "aY" = (
 /obj/structure/table/wood/fancy,
 /obj/item/restraints/handcuffs,
 /obj/item/melee/chainofcommand/tailwhip/kitty,
 /obj/item/dildo,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "aZ" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 4;
 	icon_state = "dirt"
 	},
-/area/f13/farm)
+/area/fallout/farm)
 "ba" = (
 /obj/structure/toilet,
 /obj/machinery/light/small{
@@ -299,24 +299,24 @@
 /obj/item/twohanded/sledgehammer,
 /obj/effect/decal/remains/human,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bb" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 4;
 	icon_state = "dirtcorner"
 	},
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "be" = (
 /obj/structure/simple_door/room,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bf" = (
 /obj/structure/fence/corner{
 	dir = 4;
 	icon_state = "end"
 	},
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "bg" = (
 /obj/structure/fence{
 	dir = 8;
@@ -326,11 +326,11 @@
 	dir = 4;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "bh" = (
 /obj/structure/simple_door/metal/fence,
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "bi" = (
 /obj/structure/fence{
 	dir = 8;
@@ -340,21 +340,21 @@
 	dir = 8;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "bj" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bk" = (
 /obj/structure/bed,
 /obj/machinery/light/small{
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bl" = (
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/blood/gibs/body,
@@ -363,11 +363,11 @@
 	},
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bm" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bn" = (
 /obj/structure/rack,
 /obj/item/seeds/poppy/broc,
@@ -384,7 +384,7 @@
 /obj/item/seeds/sugarcane,
 /obj/item/seeds/sugarcane,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bo" = (
 /obj/structure/rack,
 /obj/item/shovel/spade,
@@ -394,29 +394,29 @@
 /obj/item/storage/bag/plants,
 /obj/item/scythe,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bp" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 10;
 	icon_state = "dirt"
 	},
-/area/f13/farm)
+/area/fallout/farm)
 "bq" = (
 /obj/structure/chair/wood{
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "br" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 4;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "bs" = (
 /obj/structure/chair/wood,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bt" = (
 /obj/structure/window/fulltile/house{
 	dir = 2;
@@ -424,58 +424,58 @@
 	},
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bu" = (
 /obj/machinery/hydroponics/soil,
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/farm)
+/area/fallout/farm)
 "bv" = (
 /obj/structure/car,
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "bw" = (
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood3-broken"
 	},
-/area/f13/village)
+/area/fallout/village)
 "bx" = (
 /obj/effect/decal/cleanable/blood/gibs/body,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "by" = (
 /obj/structure/bed,
 /obj/item/bedsheet{
 	icon_state = "sheetgrey"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bz" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bA" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bB" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 10;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "bC" = (
 /obj/structure/table/wood/settler,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bD" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 6;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "bE" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -483,54 +483,54 @@
 /turf/open/floor/f13/wood{
 	icon_state = "housewood3-broken"
 	},
-/area/f13/village)
+/area/fallout/village)
 "bG" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bH" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 1;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "bI" = (
 /obj/structure/simple_door/room,
 /obj/structure/barricade/wooden/planks,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bJ" = (
 /obj/machinery/light/small,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bK" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood3-broken"
 	},
-/area/f13/village)
+/area/fallout/village)
 "bL" = (
 /obj/item/reagent_containers/glass/bucket,
 /obj/machinery/hydroponics/soil,
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/farm)
+/area/fallout/farm)
 "bM" = (
 /obj/structure/car/rubbish3,
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "bN" = (
 /obj/structure/bed/mattress,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bO" = (
 /obj/structure/table/wood/settler,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bP" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/armor/costumes,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bQ" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -538,12 +538,12 @@
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bR" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bS" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -551,68 +551,68 @@
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bT" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/armor/random,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bU" = (
 /obj/item/seeds/poppy/broc,
 /obj/machinery/hydroponics/soil,
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/farm)
+/area/fallout/farm)
 "bV" = (
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood4-broken"
 	},
-/area/f13/village)
+/area/fallout/village)
 "bW" = (
 /obj/structure/fermenting_barrel,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 4;
 	icon_state = "dirtcorner"
 	},
-/area/f13/farm)
+/area/fallout/farm)
 "bX" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "bY" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 1;
 	icon_state = "dirt"
 	},
-/area/f13/farm)
+/area/fallout/farm)
 "bZ" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 1;
 	icon_state = "dirtcorner"
 	},
-/area/f13/farm)
+/area/fallout/farm)
 "ca" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood4-broken"
 	},
-/area/f13/village)
+/area/fallout/village)
 "cb" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housewood4-broken"
 	},
-/area/f13/village)
+/area/fallout/village)
 "cc" = (
 /obj/effect/decal/cleanable/blood/gibs/limb,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 "cd" = (
 /obj/structure/bed/mattress,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/f13/wood,
-/area/f13/village)
+/area/fallout/village)
 
 (1,1,1) = {"
 aa

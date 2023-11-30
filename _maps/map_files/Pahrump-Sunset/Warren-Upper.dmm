@@ -2,7 +2,7 @@
 "ae" = (
 /obj/structure/noticeboard,
 /turf/closed/wall/f13/supermart,
-/area/f13/ncr)
+/area/fallout/ncr)
 "ag" = (
 /obj/machinery/door/unpowered/secure_steeldoor{
 	name = "Communications";
@@ -11,14 +11,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "an" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/green,
-/area/f13/ncr)
+/area/fallout/ncr)
 "av" = (
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "aD" = (
 /obj/item/storage/secure/safe{
 	pixel_x = 5;
@@ -28,7 +28,7 @@
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "aN" = (
 /obj/machinery/light{
 	dir = 8
@@ -37,19 +37,19 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "aP" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/lowmid,
 /turf/open/floor/wood/wood_wide/wood_wide_light,
-/area/f13/city)
+/area/fallout/city)
 "aW" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
 /obj/structure/decoration/vent,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/ncr)
+/area/fallout/ncr)
 "bd" = (
 /obj/structure/window/fulltile/store{
 	icon_state = "storewindowtop"
@@ -62,10 +62,10 @@
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "bg" = (
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "bq" = (
 /obj/structure/sign/plaques/ncr_cpt{
 	pixel_y = -32
@@ -73,18 +73,18 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "br" = (
 /obj/structure/railing{
 	dir = 8
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/warren)
+/area/fallout/wasteland/warren)
 "bA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "bB" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -93,7 +93,7 @@
 	name = "privacy shutters"
 	},
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "bH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -102,7 +102,7 @@
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/city)
+/area/fallout/city)
 "bN" = (
 /obj/structure/closet/crate/bin{
 	pixel_x = 6;
@@ -111,7 +111,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "bV" = (
 /obj/structure/chair/sofa/corp/right{
 	dir = 4
@@ -123,20 +123,20 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "cm" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "cq" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "cv" = (
 /turf/open/transparent/openspace,
-/area/f13/ncr)
+/area/fallout/ncr)
 "cD" = (
 /obj/structure/curtain{
 	color = "#1e549c";
@@ -154,7 +154,7 @@
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/city)
+/area/fallout/city)
 "cE" = (
 /obj/machinery/light/small/broken{
 	dir = 4
@@ -167,20 +167,20 @@
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/city)
+/area/fallout/city)
 "cG" = (
 /obj/structure/simple_door/room{
 	name = "Representative"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
-/area/f13/ncr)
+/area/fallout/ncr)
 "cQ" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "cV" = (
 /obj/structure/table,
 /obj/machinery/light{
@@ -191,7 +191,7 @@
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "df" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -199,19 +199,19 @@
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "dg" = (
 /obj/structure/chair/stool,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "dh" = (
 /obj/structure/railing{
 	dir = 8
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/ncr)
+/area/fallout/wasteland/ncr)
 "dj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -220,11 +220,11 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "dm" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "dx" = (
 /obj/machinery/light/small,
 /obj/structure/nest/radroach,
@@ -232,7 +232,7 @@
 /turf/open/floor/wood/wood_common{
 	icon_state = "common-broken6"
 	},
-/area/f13/city)
+/area/fallout/city)
 "dy" = (
 /obj/structure/closet/crate/secure/weapon,
 /obj/item/ammo_box/magazine/m556/rifle,
@@ -248,7 +248,7 @@
 	color = "#a67c33"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "dA" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
@@ -257,7 +257,7 @@
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "dB" = (
 /obj/structure/curtain{
 	color = "#e09634";
@@ -265,7 +265,7 @@
 	pixel_x = 32
 	},
 /turf/open/transparent/openspace,
-/area/f13/city)
+/area/fallout/city)
 "dQ" = (
 /obj/structure/closet,
 /obj/item/clothing/shoes/laceup,
@@ -274,19 +274,19 @@
 /obj/item/clothing/suit/armor/f13/ncrarmor/ncr_codressjack,
 /obj/item/clothing/head/beret/ncr_codresscap,
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "dW" = (
 /obj/structure/bed,
 /obj/item/bedsheet/brown,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "ec" = (
 /obj/structure/bookshelf{
 	icon_state = "book-5"
 	},
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "em" = (
 /obj/structure/sign/poster/ncr/irradiated_food{
 	pixel_y = 32
@@ -295,7 +295,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "eA" = (
 /obj/structure/railing/corner{
 	dir = 4
@@ -303,12 +303,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "eB" = (
 /obj/structure/junk/drawer,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "eC" = (
 /obj/machinery/light{
 	dir = 4;
@@ -317,7 +317,7 @@
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "eG" = (
 /obj/item/newspaper,
 /obj/structure/fluff/paper/stack{
@@ -325,21 +325,21 @@
 	pixel_y = 4
 	},
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "eJ" = (
 /obj/structure/table,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "eL" = (
 /obj/structure/table,
 /obj/machinery/computer/terminal{
 	pixel_y = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "eM" = (
 /turf/closed/wall/f13/sunset/brick_small_light,
-/area/f13/city)
+/area/fallout/city)
 "eO" = (
 /obj/structure/closet/locker/fridge,
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
@@ -355,7 +355,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "eV" = (
 /obj/machinery/button/door{
 	id = "ncrlogisticshutter";
@@ -363,7 +363,7 @@
 	pixel_x = -28
 	},
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "fd" = (
 /obj/item/storage/secure/safe{
 	pixel_x = 5;
@@ -372,24 +372,24 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "fe" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy{
 	icon_state = "fancy-broken4"
 	},
-/area/f13/city)
+/area/fallout/city)
 "ff" = (
 /turf/open/floor/wood/wood_fancy{
 	icon_state = "fancy-broken2"
 	},
-/area/f13/city)
+/area/fallout/city)
 "fm" = (
 /obj/machinery/light{
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "fw" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/advcrafting,
@@ -398,7 +398,7 @@
 /obj/effect/spawner/lootdrop/f13/attachments,
 /obj/effect/spawner/lootdrop/f13/attachments,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "fy" = (
 /obj/structure/chair/bench,
 /obj/effect/decal/cleanable/dirt,
@@ -408,10 +408,10 @@
 /turf/open/floor/f13{
 	icon_state = "bluechess2"
 	},
-/area/f13/city)
+/area/fallout/city)
 "fB" = (
 /turf/closed/indestructible/rock,
-/area/f13/wasteland/ncr)
+/area/fallout/wasteland/ncr)
 "fD" = (
 /obj/structure/barricade/bars{
 	max_integrity = 800;
@@ -421,7 +421,7 @@
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "fE" = (
 /obj/structure/window/fulltile/store{
 	icon_state = "storewindowbottom"
@@ -434,7 +434,7 @@
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "fF" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -442,10 +442,10 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "fO" = (
 /turf/open/floor/f13/wood,
-/area/f13/wasteland/ncr)
+/area/fallout/wasteland/ncr)
 "fQ" = (
 /obj/machinery/autolathe,
 /obj/machinery/light{
@@ -454,13 +454,13 @@
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "fV" = (
 /turf/open/floor/carpet/cyan,
-/area/f13/ncr)
+/area/fallout/ncr)
 "ga" = (
 /turf/closed/wall/f13/sunset/brick_small_dark,
-/area/f13/city)
+/area/fallout/city)
 "gc" = (
 /obj/item/storage/secure/safe{
 	pixel_x = 5;
@@ -468,20 +468,20 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "gl" = (
 /obj/structure/dresser,
 /obj/item/clothing/suit/armored/medium/painspike,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "gJ" = (
 /obj/structure/railing/corner,
 /turf/open/indestructible/ground/outside/roof,
-/area/f13/wasteland/ncr)
+/area/fallout/wasteland/ncr)
 "gQ" = (
 /turf/open/floor/carpet/cyan,
-/area/f13/city)
+/area/fallout/city)
 "ha" = (
 /obj/structure/curtain{
 	color = "#e09634";
@@ -495,18 +495,18 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "hd" = (
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "hn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "hu" = (
 /obj/structure/curtain,
 /obj/machinery/shower{
@@ -514,26 +514,26 @@
 	pixel_x = 2
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/ncr)
+/area/fallout/ncr)
 "hv" = (
 /obj/structure/table/glass,
 /obj/item/paper_bin,
 /turf/open/floor/carpet/orange,
-/area/f13/ncr)
+/area/fallout/ncr)
 "hx" = (
 /obj/structure/table/wood,
 /obj/machinery/computer/terminal{
 	pixel_y = 4
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "hz" = (
 /obj/machinery/light{
 	dir = 1;
 	light_color = "#706891"
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "hC" = (
 /obj/structure/window/fulltile/house{
 	dir = 2;
@@ -543,24 +543,24 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "hP" = (
 /obj/structure/railing{
 	dir = 4
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/warren)
+/area/fallout/wasteland/warren)
 "hY" = (
 /obj/structure/chair/office{
 	dir = 8
 	},
 /obj/effect/landmark/start/f13/ncrcaptain,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "ib" = (
 /obj/structure/barricade/sandbags,
 /turf/open/floor/wood/wood_wide/wood_wide_light,
-/area/f13/city)
+/area/fallout/city)
 "ij" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -569,13 +569,13 @@
 	name = "privacy shutters"
 	},
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "il" = (
 /obj/structure/railing,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/city)
+/area/fallout/city)
 "iy" = (
 /obj/structure/chair/stool/retro/black,
 /obj/effect/decal/cleanable/dirt,
@@ -583,7 +583,7 @@
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "iz" = (
 /obj/structure/table/glass,
 /obj/item/toy/cards/deck,
@@ -591,11 +591,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "iA" = (
 /obj/structure/window/fulltile/house,
 /turf/open/floor/wood/wood_wide/wood_wide_light,
-/area/f13/city)
+/area/fallout/city)
 "iB" = (
 /obj/structure/closet/crate,
 /obj/item/card/id/dogtag/town/ncr,
@@ -611,7 +611,7 @@
 /obj/item/card/id/dogtag/town/ncr,
 /obj/item/card/id/dogtag/town/ncr,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "iO" = (
 /obj/structure/sign/poster/contraband/space_cola{
 	pixel_y = 32
@@ -619,26 +619,26 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "iQ" = (
 /obj/structure/chair/wood{
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "iR" = (
 /obj/structure/chair/office,
 /obj/effect/landmark/start/f13/ncrlieutenant,
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "iU" = (
 /obj/structure/chair/f13foldupchair{
 	dir = 1
 	},
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "iY" = (
 /obj/structure/railing{
 	dir = 4
@@ -646,7 +646,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "iZ" = (
 /obj/item/kirbyplants{
 	icon_state = "plant-24"
@@ -654,53 +654,53 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "je" = (
 /obj/structure/simple_door/room,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "jn" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common{
 	icon_state = "common-broken1"
 	},
-/area/f13/city)
+/area/fallout/city)
 "jt" = (
 /obj/structure/railing{
 	dir = 1
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/warren)
+/area/fallout/wasteland/warren)
 "jx" = (
 /obj/structure/chair/f13foldupchair,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "jB" = (
 /turf/open/indestructible,
-/area/f13/wasteland/warren)
+/area/fallout/wasteland/warren)
 "jE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/city)
+/area/fallout/city)
 "jG" = (
 /obj/item/newspaper,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "jI" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "jM" = (
 /mob/living/simple_animal/hostile/raider/tribal,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "jN" = (
 /obj/structure/railing{
 	dir = 1
@@ -709,7 +709,7 @@
 	dir = 8
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/ncr)
+/area/fallout/wasteland/ncr)
 "jO" = (
 /obj/structure/railing/corner{
 	dir = 1
@@ -718,45 +718,45 @@
 	dir = 8
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/ncr)
+/area/fallout/wasteland/ncr)
 "jS" = (
 /obj/structure/closet/toolcloset,
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "jU" = (
 /obj/machinery/telecomms/relay/preset/telecomms,
 /turf/open/indestructible,
-/area/f13/wasteland/warren)
+/area/fallout/wasteland/warren)
 "jV" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "ki" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/ncr)
+/area/fallout/ncr)
 "km" = (
 /obj/structure/table,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "kr" = (
 /obj/machinery/vending/snack/random,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "ks" = (
 /obj/machinery/light,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "kv" = (
 /obj/structure/curtain{
 	color = "#e09634";
@@ -766,14 +766,14 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "ky" = (
 /turf/closed/wall/f13/wood/house,
-/area/f13/wasteland/warren)
+/area/fallout/wasteland/warren)
 "kz" = (
 /obj/structure/chair/office/dark,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "kD" = (
 /obj/structure/chair/office/dark{
 	dir = 8
@@ -782,32 +782,32 @@
 	dir = 4
 	},
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "kI" = (
 /obj/item/storage/secure/safe/ncr_rep{
 	pixel_x = 5;
 	pixel_y = -32
 	},
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "kW" = (
 /obj/structure/chair/office/dark{
 	dir = 4
 	},
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "la" = (
 /obj/machinery/light{
 	dir = 1
 	},
 /turf/open/transparent/openspace,
-/area/f13/ncr)
+/area/fallout/ncr)
 "lb" = (
 /obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "lc" = (
 /obj/machinery/light/broken{
 	dir = 1;
@@ -816,7 +816,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "lh" = (
 /obj/structure/filingcabinet{
 	density = 0;
@@ -824,14 +824,14 @@
 	pixel_y = 9
 	},
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "ll" = (
 /turf/closed/indestructible/riveted,
-/area/f13/wasteland/warren)
+/area/fallout/wasteland/warren)
 "lo" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "lu" = (
 /obj/structure/window/fulltile/house{
 	dir = 2;
@@ -839,12 +839,12 @@
 	},
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "lx" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superlow,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "lz" = (
 /obj/structure/curtain{
 	color = "#e09634";
@@ -853,16 +853,16 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "lC" = (
 /obj/structure/simple_door/metal,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "lR" = (
 /turf/open/floor/wood/wood_fancy{
 	icon_state = "fancy-broken6"
 	},
-/area/f13/city)
+/area/fallout/city)
 "lS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/debris/v2{
@@ -871,7 +871,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "lT" = (
 /obj/structure/toilet{
 	pixel_y = 17
@@ -879,13 +879,13 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "lV" = (
 /obj/structure/railing/corner{
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "lY" = (
 /obj/structure/filingcabinet{
 	density = 0;
@@ -893,7 +893,7 @@
 	pixel_y = 2
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "me" = (
 /obj/structure/chair/sofa/left{
 	dir = 4
@@ -903,36 +903,36 @@
 	pixel_x = -4
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "mf" = (
 /obj/item/wirecutters/basic,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "mk" = (
 /obj/structure/closet/crate/secure/engineering,
 /obj/item/circuitboard/computer/card/ncr,
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "mu" = (
 /obj/structure/railing/corner{
 	dir = 1
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/ncr)
+/area/fallout/wasteland/ncr)
 "mx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/remains/human,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "my" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "mL" = (
 /obj/structure/curtain{
 	color = "#e09634";
@@ -941,7 +941,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "mU" = (
 /obj/structure/railing/corner{
 	dir = 4
@@ -949,10 +949,10 @@
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "mW" = (
 /turf/open/floor/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "mY" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -961,29 +961,29 @@
 	name = "privacy shutters"
 	},
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "nu" = (
 /obj/machinery/radioterminal/ncr{
 	dir = 8
 	},
 /turf/open/floor/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "nv" = (
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "nB" = (
 /obj/machinery/light/small,
 /obj/structure/table/glass,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/lowmid,
 /turf/open/floor/wood/wood_wide/wood_wide_light,
-/area/f13/city)
+/area/fallout/city)
 "nD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "nJ" = (
 /obj/structure/nest/protectron{
 	max_mobs = 2
@@ -992,7 +992,7 @@
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "nO" = (
 /obj/structure/chair/sofa/corp{
 	dir = 4
@@ -1004,7 +1004,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "nQ" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/snacks/meat/slab/human/ghoul,
@@ -1012,7 +1012,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "nS" = (
 /obj/machinery/shower{
 	dir = 8
@@ -1022,23 +1022,23 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "nT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/broken,
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "nU" = (
 /obj/structure/filingcabinet/filingcabinet,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "nW" = (
 /obj/item/reagent_containers/spray/pestspray,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "nX" = (
 /obj/structure/chair/bench,
 /obj/structure/curtain{
@@ -1050,14 +1050,14 @@
 /turf/open/floor/f13{
 	icon_state = "bluechess2"
 	},
-/area/f13/city)
+/area/fallout/city)
 "nZ" = (
 /obj/structure/window/fulltile/house{
 	dir = 2;
 	icon_state = "housewindowvertical"
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "oa" = (
 /obj/structure/window/reinforced/fulltile,
 /obj/structure/grille,
@@ -1068,29 +1068,29 @@
 	name = "NCR Armory shutters"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "ob" = (
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "of" = (
 /obj/structure/chair/sofa/left,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "og" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy{
 	icon_state = "fancy-broken1"
 	},
-/area/f13/city)
+/area/fallout/city)
 "oi" = (
 /obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/city)
+/area/fallout/city)
 "ol" = (
 /obj/effect/decal/cleanable/blood{
 	icon_state = "drip5"
@@ -1102,11 +1102,11 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "op" = (
 /obj/item/paper,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "or" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "storewindowbottom"
@@ -1115,18 +1115,18 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "os" = (
 /obj/structure/table/wood,
 /obj/item/pda,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "ot" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superlow,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "oD" = (
 /obj/structure/table/wood,
 /obj/item/newspaper,
@@ -1137,14 +1137,14 @@
 	name = "rejected drafts"
 	},
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "oV" = (
 /turf/closed/wall/rust,
-/area/f13/wasteland/warren)
+/area/fallout/wasteland/warren)
 "oY" = (
 /obj/machinery/light,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "pd" = (
 /obj/structure/curtain{
 	color = "#e09634";
@@ -1161,31 +1161,31 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "pj" = (
 /turf/closed/wall/f13/vault{
 	name = "regulation wall"
 	},
-/area/f13/wasteland/warren)
+/area/fallout/wasteland/warren)
 "pw" = (
 /obj/structure/chair/f13foldupchair{
 	dir = 4
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "pz" = (
 /obj/structure/table,
 /obj/item/flashlight/lamp,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "pC" = (
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "pL" = (
 /obj/machinery/sheetifier,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "pM" = (
 /obj/machinery/light{
 	dir = 8
@@ -1193,19 +1193,19 @@
 /obj/item/stack/ore/blackpowder/twenty,
 /obj/machinery/autolathe/ammo/unlocked_basic,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "pN" = (
 /obj/structure/railing/corner{
 	dir = 4
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/warren)
+/area/fallout/wasteland/warren)
 "pT" = (
 /obj/structure/simple_door/room{
 	name = "Lieutenant"
 	},
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "qc" = (
 /obj/item/kirbyplants{
 	icon_state = "plant-02"
@@ -1217,17 +1217,17 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "qe" = (
 /obj/machinery/workbench/forge,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "qh" = (
 /obj/structure/railing/corner{
 	dir = 8
 	},
 /turf/open/indestructible/ground/outside/roof,
-/area/f13/wasteland/ncr)
+/area/fallout/wasteland/ncr)
 "qj" = (
 /obj/structure/closet/locker/fridge,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
@@ -1236,7 +1236,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "qo" = (
 /obj/effect/decal/cleanable/blood{
 	icon_state = "drip1"
@@ -1245,7 +1245,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "qu" = (
 /obj/structure/curtain{
 	color = "#e09634";
@@ -1254,14 +1254,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "qv" = (
 /obj/structure/table/glass,
 /obj/item/toy/cards/deck,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "qx" = (
 /obj/effect/decal/cleanable/vomit/old,
 /obj/structure/curtain{
@@ -1272,36 +1272,36 @@
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/city)
+/area/fallout/city)
 "qy" = (
 /obj/structure/simple_door/room,
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/city)
+/area/fallout/city)
 "qA" = (
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/transparent/openspace,
-/area/f13/city)
+/area/fallout/city)
 "qE" = (
 /obj/structure/bed/wooden,
 /obj/item/bedsheet/random,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "qM" = (
 /obj/structure/table,
 /obj/effect/decal/remains/human,
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "qZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "bluechess2"
 	},
-/area/f13/city)
+/area/fallout/city)
 "rb" = (
 /obj/structure/simple_door/room{
 	name = "Restroom"
@@ -1309,12 +1309,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "rc" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier3,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "re" = (
 /obj/structure/curtain{
 	color = "#1e549c";
@@ -1325,7 +1325,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "rh" = (
 /obj/structure/railing{
 	dir = 4
@@ -1334,7 +1334,7 @@
 	dir = 1
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/ncr)
+/area/fallout/wasteland/ncr)
 "rj" = (
 /obj/structure/table,
 /obj/machinery/light{
@@ -1354,7 +1354,7 @@
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "rr" = (
 /obj/machinery/workbench,
 /obj/effect/decal/cleanable/dirt,
@@ -1362,14 +1362,14 @@
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "ru" = (
 /turf/open/space,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "rK" = (
 /obj/structure/window/fulltile/house,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "rW" = (
 /obj/structure/curtain{
 	color = "#e09634";
@@ -1384,34 +1384,34 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "sd" = (
 /obj/structure/filingcabinet{
 	density = 0;
 	pixel_x = -10
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "sj" = (
 /obj/item/paper{
 	pixel_y = -6
 	},
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "sl" = (
 /obj/structure/chair/f13foldupchair,
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "sm" = (
 /obj/structure/chair/sofa/right,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "sq" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "ss" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -1419,26 +1419,26 @@
 /turf/open/floor/wood/wood_fancy{
 	icon_state = "fancy-broken6"
 	},
-/area/f13/city)
+/area/fallout/city)
 "sw" = (
 /obj/item/light/tube,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "sC" = (
 /turf/open/transparent/openspace,
-/area/f13/wasteland/ncr)
+/area/fallout/wasteland/ncr)
 "sE" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/ncr)
+/area/fallout/ncr)
 "sI" = (
 /obj/structure/table,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "sL" = (
 /obj/structure/sign/plaques/ncr_rep{
 	pixel_y = -32
@@ -1446,7 +1446,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "sO" = (
 /obj/structure/table,
 /obj/item/paper/crumpled/muddy/fluff/elephant_graveyard/rnd_notes{
@@ -1455,12 +1455,12 @@
 	name = "rejected drafts"
 	},
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "sV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/stack/tile/carpet/purple/ten,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "sX" = (
 /obj/structure/sign/poster/prewar/poster81{
 	pixel_x = 32
@@ -1468,14 +1468,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "ti" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
 /obj/structure/chair/office/dark,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "tj" = (
 /obj/structure/sign/plaques/ncr_lo{
 	pixel_y = -32
@@ -1483,7 +1483,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "tF" = (
 /obj/structure/railing{
 	dir = 4
@@ -1492,12 +1492,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "tK" = (
 /turf/open/floor/wood/wood_fancy{
 	icon_state = "fancy-broken3"
 	},
-/area/f13/city)
+/area/fallout/city)
 "tW" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/turf_decal/stripes/white/box{
@@ -1507,23 +1507,23 @@
 /obj/item/ammo_box/a556,
 /obj/item/ammo_box/a556,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "uh" = (
 /obj/machinery/light/broken,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "um" = (
 /obj/structure/closet/crate/mortar_shells,
 /obj/item/mortar_kit,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "uo" = (
 /obj/structure/bed,
 /obj/item/bedsheet/brown,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "uu" = (
 /obj/structure/sign/poster/ncr/democracy{
 	pixel_x = -32
@@ -1531,7 +1531,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "ux" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/turf_decal/stripes/white/box{
@@ -1542,7 +1542,7 @@
 /obj/item/ammo_box/shotgun/slug,
 /obj/item/ammo_box/shotgun/slug,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "uy" = (
 /obj/structure/closet,
 /obj/item/clothing/shoes/laceup,
@@ -1553,38 +1553,38 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/suit/armor/vest/blueshirt,
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "uD" = (
 /mob/living/simple_animal/hostile/renegade/grunt,
 /turf/open/floor/wood/wood_wide/wood_wide_light{
 	icon_state = "wide_light-broken4"
 	},
-/area/f13/city)
+/area/fallout/city)
 "uI" = (
 /obj/structure/table,
 /obj/machinery/computer/terminal{
 	dir = 4
 	},
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "uR" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/lowmid,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "uV" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "housewindowbrokenvertical"
 	},
 /turf/open/floor/wood/wood_wide/wood_wide_light,
-/area/f13/city)
+/area/fallout/city)
 "vb" = (
 /obj/structure/chair/office/dark{
 	dir = 8
 	},
 /obj/structure/fluff/paper/stack,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "vg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/curtain{
@@ -1594,7 +1594,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "vx" = (
 /obj/structure/closet/secure_closet/personal,
 /obj/effect/decal/cleanable/dirt,
@@ -1603,13 +1603,13 @@
 /turf/open/floor/f13{
 	icon_state = "bluechess2"
 	},
-/area/f13/city)
+/area/fallout/city)
 "vA" = (
 /obj/structure/railing{
 	dir = 1
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/ncr)
+/area/fallout/wasteland/ncr)
 "vD" = (
 /obj/item/folder/yellow{
 	pixel_y = 3
@@ -1632,7 +1632,7 @@
 	pixel_x = 32
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "vG" = (
 /obj/structure/simple_door/metal/barred{
 	max_integrity = 800;
@@ -1642,19 +1642,19 @@
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "vM" = (
 /obj/structure/railing/corner{
 	dir = 8
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/warren)
+/area/fallout/wasteland/warren)
 "vO" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "housewindowbrokenvertical"
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "vR" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/poster/ncr/loaded{
@@ -1663,7 +1663,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "vS" = (
 /obj/structure/curtain{
 	color = "#e09634";
@@ -1672,14 +1672,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "vU" = (
 /obj/effect/decal/cleanable/blood/gibs/human/lizard/body,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "vY" = (
 /obj/structure/toilet/secret/prison{
 	dir = 4
@@ -1688,7 +1688,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "wb" = (
 /obj/structure/curtain{
 	color = "#e09634";
@@ -1698,7 +1698,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "wd" = (
 /obj/structure/window/fulltile/store{
 	icon_state = "storewindowright"
@@ -1711,7 +1711,7 @@
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "wj" = (
 /obj/structure/simple_door/room{
 	name = "restroom"
@@ -1719,7 +1719,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "wm" = (
 /obj/structure/toilet{
 	dir = 8;
@@ -1731,13 +1731,13 @@
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/ncr)
+/area/fallout/ncr)
 "wo" = (
 /obj/structure/bookshelf{
 	icon_state = "book-2"
 	},
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "wp" = (
 /obj/structure/filingcabinet{
 	density = 0;
@@ -1745,7 +1745,7 @@
 	pixel_y = 11
 	},
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "wq" = (
 /obj/structure/chair/sofa/corp/right{
 	dir = 4
@@ -1754,31 +1754,31 @@
 /turf/open/floor/wood/wood_wide/wood_wide_light{
 	icon_state = "wide_light-broken3"
 	},
-/area/f13/city)
+/area/fallout/city)
 "ww" = (
 /obj/item/twohanded/required/kirbyplants/random,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/city)
+/area/fallout/city)
 "wx" = (
 /obj/structure/table,
 /obj/structure/fluff/paper/stack,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "wE" = (
 /obj/structure/railing{
 	layer = 4.1
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/warren)
+/area/fallout/wasteland/warren)
 "wH" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/blueprintLow,
 /obj/effect/spawner/lootdrop/f13/blueprintLow,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "wJ" = (
 /obj/structure/table,
 /obj/effect/decal/remains/human,
@@ -1786,7 +1786,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "wM" = (
 /obj/structure/table/wood,
 /obj/item/storage/lockbox,
@@ -1795,18 +1795,18 @@
 /obj/item/card/id/dogtag/ncrsergeant,
 /obj/item/card/id/dogtag/ncrsergeant,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "wQ" = (
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/city)
+/area/fallout/city)
 "wX" = (
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/city)
+/area/fallout/city)
 "xa" = (
 /obj/structure/sign/plaques/ncr_lt{
 	pixel_y = 32
@@ -1815,11 +1815,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "xc" = (
 /obj/structure/fluff/paper/stack,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "xh" = (
 /obj/structure/curtain{
 	color = "#e09634";
@@ -1831,7 +1831,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "xi" = (
 /obj/structure/curtain{
 	color = "#e09634";
@@ -1843,7 +1843,7 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5,
 /obj/structure/closet/crate/wooden,
 /turf/open/floor/carpet/cyan,
-/area/f13/city)
+/area/fallout/city)
 "xk" = (
 /obj/structure/nest/protectron{
 	max_mobs = 2
@@ -1851,21 +1851,21 @@
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/city)
+/area/fallout/city)
 "xo" = (
 /obj/structure/chair/sofa/corner{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "xr" = (
 /obj/effect/decal/cleanable/blood{
 	icon_state = "drip5"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "xu" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -1873,20 +1873,20 @@
 /turf/open/floor/f13{
 	icon_state = "bluechess2"
 	},
-/area/f13/city)
+/area/fallout/city)
 "xC" = (
 /obj/structure/simple_door/glass,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "xD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/floor/wood/wood_fancy{
 	icon_state = "fancy-broken1"
 	},
-/area/f13/city)
+/area/fallout/city)
 "xG" = (
 /obj/structure/sink{
 	pixel_y = 20
@@ -1896,7 +1896,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "xJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/railing{
@@ -1905,7 +1905,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "xR" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -1913,7 +1913,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "yf" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/clothing/suit/armored/light/vest/bulletproof,
@@ -1923,7 +1923,7 @@
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "yl" = (
 /obj/machinery/microwave/stove,
 /obj/structure/curtain{
@@ -1931,13 +1931,13 @@
 	pixel_y = 32
 	},
 /turf/open/floor/wood/wood_wide/wood_wide_light,
-/area/f13/city)
+/area/fallout/city)
 "ym" = (
 /mob/living/simple_animal/hostile/renegade/drifter,
 /turf/open/floor/wood/wood_wide/wood_wide_light{
 	icon_state = "wide_light-broken2"
 	},
-/area/f13/city)
+/area/fallout/city)
 "yq" = (
 /obj/machinery/light{
 	dir = 8
@@ -1945,7 +1945,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "yu" = (
 /obj/machinery/light{
 	dir = 1
@@ -1954,11 +1954,11 @@
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/city)
+/area/fallout/city)
 "yy" = (
 /obj/structure/railing,
 /turf/open/indestructible/ground/outside/roof,
-/area/f13/wasteland/ncr)
+/area/fallout/wasteland/ncr)
 "yA" = (
 /obj/structure/table,
 /obj/item/pda,
@@ -1966,34 +1966,34 @@
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "yB" = (
 /obj/structure/simple_door/room,
 /turf/open/floor/wood/wood_wide/wood_wide_light,
-/area/f13/city)
+/area/fallout/city)
 "yE" = (
 /obj/structure/simple_door/room{
 	name = "North River Apartments"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "yK" = (
 /obj/structure/chair/sofa/corp/corner,
 /turf/open/floor/wood/wood_wide/wood_wide_light,
-/area/f13/city)
+/area/fallout/city)
 "yT" = (
 /obj/structure/barricade/sandbags,
 /turf/open/floor/wood/wood_wide/wood_wide_light{
 	icon_state = "wide_light-broken2"
 	},
-/area/f13/city)
+/area/fallout/city)
 "yV" = (
 /obj/machinery/computer/card/ncr{
 	dir = 8
 	},
 /turf/open/floor/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "zd" = (
 /obj/structure/railing{
 	dir = 4
@@ -2001,7 +2001,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "zj" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -2010,12 +2010,12 @@
 	name = "privacy shutters"
 	},
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "zs" = (
 /turf/open/floor/wood/wood_common{
 	icon_state = "common-broken3"
 	},
-/area/f13/city)
+/area/fallout/city)
 "zt" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
@@ -2025,19 +2025,19 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "zu" = (
 /obj/effect/decal/cleanable/blood/gibs,
 /obj/item/reagent_containers/food/snacks/meat/slab/human/ghoul,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "zz" = (
 /obj/structure/simple_door/room{
 	name = "Senior Enlisted Advisor"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
-/area/f13/ncr)
+/area/fallout/ncr)
 "zA" = (
 /obj/structure/sign/poster/official/fruit_bowl{
 	pixel_y = -32
@@ -2046,23 +2046,23 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "zE" = (
 /turf/open/floor/f13/wood,
-/area/f13/wasteland/warren)
+/area/fallout/wasteland/warren)
 "zH" = (
 /obj/structure/simple_door/metal/store,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "zN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Af" = (
 /obj/structure/railing{
 	dir = 1
@@ -2070,7 +2070,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "Ah" = (
 /obj/structure/railing/corner{
 	dir = 4
@@ -2083,19 +2083,19 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "Al" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "An" = (
 /turf/open/floor/wood/wood_wide/wood_wide_light{
 	icon_state = "wide_light-broken3"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Az" = (
 /turf/open/indestructible/ground/outside/roof,
-/area/f13/wasteland/warren)
+/area/fallout/wasteland/warren)
 "AC" = (
 /obj/structure/chair/comfy/brown{
 	dir = 4
@@ -2103,7 +2103,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "AR" = (
 /obj/structure/closet,
 /obj/item/clothing/shoes/laceup,
@@ -2114,7 +2114,7 @@
 /obj/item/storage/lockbox/medal,
 /obj/item/storage/lockbox,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "Bl" = (
 /obj/structure/table,
 /obj/machinery/light{
@@ -2123,7 +2123,7 @@
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "Bs" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/storage/toolbox/mechanical,
@@ -2131,7 +2131,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Bt" = (
 /obj/machinery/photocopier,
 /obj/effect/decal/cleanable/dirt,
@@ -2139,7 +2139,7 @@
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Bw" = (
 /obj/effect/spawner/bundle/f13/trenchshotgun,
 /obj/effect/spawner/bundle/f13/trenchshotgun,
@@ -2153,7 +2153,7 @@
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Bx" = (
 /obj/structure/chair/sofa/corp/left{
 	dir = 8
@@ -2161,20 +2161,20 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "By" = (
 /obj/structure/chair/sofa/corp/left{
 	dir = 8
 	},
 /turf/open/floor/wood/wood_wide/wood_wide_light,
-/area/f13/city)
+/area/fallout/city)
 "Bz" = (
 /obj/structure/window/fulltile/wood,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "BQ" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "storewindowhorizontal";
@@ -2183,7 +2183,7 @@
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "BY" = (
 /obj/structure/closet/crate/secure/weapon,
 /obj/item/ammo_box/magazine/m9mm,
@@ -2199,12 +2199,12 @@
 	color = "#a67c33"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "BZ" = (
 /obj/item/toner,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "Cf" = (
 /obj/structure/railing{
 	dir = 4
@@ -2212,7 +2212,7 @@
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "Ch" = (
 /obj/structure/simple_door/room{
 	name = "Showers"
@@ -2220,7 +2220,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "Ci" = (
 /obj/structure/curtain{
 	color = "#1e549c";
@@ -2228,14 +2228,14 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "Cn" = (
 /obj/structure/table,
 /obj/item/pda,
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "Ct" = (
 /obj/effect/decal/cleanable/blood{
 	icon_state = "drip4"
@@ -2243,7 +2243,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Cw" = (
 /obj/structure/chair/sofa/left{
 	dir = 8
@@ -2252,30 +2252,30 @@
 	dir = 4
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "Cz" = (
 /obj/structure/railing,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "CL" = (
 /obj/structure/dresser,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "CQ" = (
 /obj/structure/rack/shelf_metal,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "CR" = (
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "CZ" = (
 /obj/effect/decal/cleanable/blood/gibs/human/torso,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "Dk" = (
 /obj/structure/railing{
 	dir = 4
@@ -2285,10 +2285,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "Dy" = (
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/ncr)
+/area/fallout/ncr)
 "DB" = (
 /obj/structure/chair/bench,
 /obj/structure/curtain{
@@ -2299,22 +2299,22 @@
 /turf/open/floor/f13{
 	icon_state = "bluechess2"
 	},
-/area/f13/city)
+/area/fallout/city)
 "DG" = (
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "DI" = (
 /obj/structure/shelf_wood,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "DO" = (
 /obj/structure/window/reinforced/spawner{
 	dir = 8
 	},
 /turf/open/floor/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "DR" = (
 /obj/structure/chair/sofa/corp/left,
 /obj/structure/curtain{
@@ -2324,7 +2324,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "Eb" = (
 /obj/structure/chair/office{
 	dir = 1
@@ -2334,12 +2334,12 @@
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "Ee" = (
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Ei" = (
 /obj/machinery/shower{
 	dir = 8;
@@ -2347,14 +2347,14 @@
 	},
 /obj/structure/curtain,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/ncr)
+/area/fallout/ncr)
 "El" = (
 /obj/structure/window/fulltile/wood,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Em" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -2363,7 +2363,7 @@
 	name = "privacy shutters"
 	},
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "Eu" = (
 /obj/structure/table,
 /obj/item/grenade/smokebomb,
@@ -2373,24 +2373,24 @@
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Ew" = (
 /obj/structure/chair/wood/dining{
 	dir = 8
 	},
 /turf/open/floor/wood/wood_wide/wood_wide_light,
-/area/f13/city)
+/area/fallout/city)
 "EA" = (
 /turf/closed/wall/f13/supermart,
-/area/f13/ncr)
+/area/fallout/ncr)
 "EE" = (
 /obj/structure/reagent_dispensers/barrel/explosive,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "EK" = (
 /obj/structure/railing,
 /turf/open/transparent/openspace,
-/area/f13/wasteland/ncr)
+/area/fallout/wasteland/ncr)
 "EM" = (
 /obj/machinery/light{
 	dir = 4;
@@ -2399,10 +2399,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "EO" = (
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/wasteland/warren)
+/area/fallout/wasteland/warren)
 "EP" = (
 /obj/structure/railing{
 	dir = 4
@@ -2411,7 +2411,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "EY" = (
 /obj/item/clothing/shoes/combat,
 /obj/structure/closet,
@@ -2420,19 +2420,19 @@
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Fc" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "Fe" = (
 /obj/machinery/vending/cola/random,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "Fi" = (
 /obj/structure/chair/sofa/corp,
 /obj/structure/curtain{
@@ -2441,7 +2441,7 @@
 	},
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/wood/wood_wide/wood_wide_light,
-/area/f13/city)
+/area/fallout/city)
 "Fx" = (
 /obj/effect/turf_decal/stripes/white/box{
 	color = "#a67c33"
@@ -2454,7 +2454,7 @@
 /obj/item/gun/ballistic/automatic/service,
 /obj/item/gun/ballistic/automatic/service,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "FA" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/stack/sheet/glass/fifty,
@@ -2472,33 +2472,33 @@
 	amount = 50
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "FF" = (
 /obj/structure/railing/corner{
 	dir = 4
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/ncr)
+/area/fallout/wasteland/ncr)
 "FL" = (
 /obj/structure/chair/stool,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/city)
+/area/fallout/city)
 "FW" = (
 /obj/structure/railing{
 	dir = 4
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/ncr)
+/area/fallout/wasteland/ncr)
 "Gd" = (
 /obj/structure/railing,
 /obj/structure/railing{
 	dir = 8
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/ncr)
+/area/fallout/wasteland/ncr)
 "Ge" = (
 /obj/structure/curtain{
 	color = "#e09634";
@@ -2506,12 +2506,12 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "Gg" = (
 /obj/machinery/photocopier,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "Gl" = (
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
 /obj/machinery/light/small{
@@ -2519,13 +2519,13 @@
 	light_color = "red"
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "Gm" = (
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Gq" = (
 /obj/structure/sink{
 	dir = 4;
@@ -2535,24 +2535,24 @@
 	pixel_x = 28
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/ncr)
+/area/fallout/ncr)
 "Gv" = (
 /turf/closed/wall/f13/tentwall,
-/area/f13/wasteland/warren)
+/area/fallout/wasteland/warren)
 "GB" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "GE" = (
 /obj/structure/chair/office,
 /obj/effect/landmark/start/f13/ncrdrillsergeant,
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "GH" = (
 /obj/machinery/light{
 	dir = 8
@@ -2560,7 +2560,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "GK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -2568,7 +2568,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "GS" = (
 /obj/structure/window/fulltile/house{
 	dir = 2;
@@ -2577,7 +2577,7 @@
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "GT" = (
 /obj/structure/toilet{
 	dir = 1
@@ -2585,17 +2585,17 @@
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/city)
+/area/fallout/city)
 "GU" = (
 /obj/structure/table,
 /obj/machinery/microwave,
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Hd" = (
 /turf/closed/indestructible/rock,
-/area/f13/wasteland/warren)
+/area/fallout/wasteland/warren)
 "He" = (
 /obj/item/paper{
 	pixel_x = -7;
@@ -2603,18 +2603,18 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "Hg" = (
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "Hj" = (
 /obj/structure/simple_door/room{
 	name = "Captain"
 	},
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "Hn" = (
 /obj/machinery/shower{
 	dir = 4;
@@ -2624,25 +2624,25 @@
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Hq" = (
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "HE" = (
 /obj/structure/table/glass,
 /obj/item/storage/fancy/donut_box,
 /turf/open/floor/carpet/cyan,
-/area/f13/ncr)
+/area/fallout/ncr)
 "HT" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "storewindowhorizontal";
 	layer = 3
 	},
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "HW" = (
 /turf/open/transparent/openspace,
-/area/f13/wasteland/warren)
+/area/fallout/wasteland/warren)
 "Ig" = (
 /obj/structure/sign/plaques/ncr_cpt{
 	pixel_y = 32
@@ -2650,21 +2650,21 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "Ii" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "IM" = (
 /obj/machinery/light,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "IN" = (
 /obj/machinery/light,
 /turf/open/transparent/openspace,
-/area/f13/ncr)
+/area/fallout/ncr)
 "IZ" = (
 /obj/structure/barricade/bars,
 /obj/structure/window/reinforced/fulltile,
@@ -2675,12 +2675,12 @@
 	},
 /obj/structure/grille,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "Ja" = (
 /obj/item/kirbyplants/random,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "Jj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/poster/ncr/keep_to_myself{
@@ -2689,7 +2689,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "Jm" = (
 /obj/structure/chair/sofa/corp,
 /obj/structure/curtain{
@@ -2699,13 +2699,13 @@
 /turf/open/floor/wood/wood_wide/wood_wide_light{
 	icon_state = "wide_light-broken1"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Jr" = (
 /obj/effect/decal/cleanable/blood{
 	icon_state = "drip1"
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "Jt" = (
 /obj/structure/curtain{
 	color = "#e09634";
@@ -2717,12 +2717,12 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Jv" = (
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Jw" = (
 /obj/structure/toilet{
 	dir = 4
@@ -2731,20 +2731,20 @@
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Jz" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/city)
+/area/fallout/city)
 "JA" = (
 /obj/structure/curtain{
 	color = "#e09634";
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/ncr)
+/area/fallout/ncr)
 "JG" = (
 /obj/structure/curtain{
 	color = "#e09634";
@@ -2752,14 +2752,14 @@
 	},
 /mob/living/simple_animal/hostile/renegade/grunt,
 /turf/open/floor/carpet/cyan,
-/area/f13/city)
+/area/fallout/city)
 "JI" = (
 /obj/machinery/workbench,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "JO" = (
 /turf/closed/indestructible/f13vaultrusted,
-/area/f13/ncr)
+/area/fallout/ncr)
 "JR" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
@@ -2771,7 +2771,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "JS" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/turf_decal/stripes/white/box{
@@ -2782,10 +2782,10 @@
 /obj/item/gun/ballistic/shotgun/trench,
 /obj/item/gun/ballistic/shotgun/trench,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "JU" = (
 /turf/closed/wall/f13/ruins,
-/area/f13/wasteland/warren)
+/area/fallout/wasteland/warren)
 "JV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -2796,7 +2796,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "JW" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/twohanded/required/kirbyplants/random,
@@ -2806,13 +2806,13 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Ke" = (
 /obj/structure/railing/corner,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "Ki" = (
 /obj/structure/closet/secure_closet/personal,
 /obj/machinery/light/broken{
@@ -2824,7 +2824,7 @@
 /turf/open/floor/f13{
 	icon_state = "bluechess2"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Kr" = (
 /obj/structure/closet/locker/fridge,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
@@ -2838,26 +2838,26 @@
 	pixel_y = 32
 	},
 /turf/open/floor/wood/wood_wide/wood_wide_light,
-/area/f13/city)
+/area/fallout/city)
 "Ks" = (
 /turf/closed/wall/r_wall,
-/area/f13/ncr)
+/area/fallout/ncr)
 "KB" = (
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "KK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/crafting,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "KN" = (
 /obj/structure/simple_door/metal,
 /turf/open/floor/wood/wood_wide/wood_wide_light,
-/area/f13/city)
+/area/fallout/city)
 "KP" = (
 /obj/structure/bed/wooden,
 /obj/item/bedsheet/random,
@@ -2871,7 +2871,7 @@
 	pixel_x = 32
 	},
 /turf/open/floor/carpet/cyan,
-/area/f13/city)
+/area/fallout/city)
 "KU" = (
 /obj/machinery/button/door{
 	id = "ncradvisorshutter";
@@ -2879,13 +2879,13 @@
 	pixel_x = -28
 	},
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "Lf" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "housewindowbroken"
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "Lk" = (
 /obj/structure/chair/sofa/corp/corner{
 	dir = 4
@@ -2896,31 +2896,31 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "Lp" = (
 /obj/item/twohanded/required/kirbyplants/random,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "bluechess2"
 	},
-/area/f13/city)
+/area/fallout/city)
 "LB" = (
 /obj/structure/railing{
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "LN" = (
 /obj/structure/railing/corner{
 	dir = 8
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/ncr)
+/area/fallout/wasteland/ncr)
 "LR" = (
 /obj/machinery/light/small/broken,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "LT" = (
 /obj/structure/simple_door/room{
 	name = "restroom"
@@ -2929,7 +2929,7 @@
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/city)
+/area/fallout/city)
 "LX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/remains/human,
@@ -2938,13 +2938,13 @@
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Mm" = (
 /obj/structure/railing/corner{
 	dir = 1
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/warren)
+/area/fallout/wasteland/warren)
 "Mp" = (
 /obj/structure/curtain{
 	color = "#1e549c";
@@ -2953,14 +2953,14 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Mr" = (
 /obj/effect/decal/remains/human,
 /obj/item/key,
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Mv" = (
 /obj/effect/overlay/junk/shower{
 	pixel_y = 12
@@ -2972,7 +2972,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Mx" = (
 /obj/item/clothing/shoes/combat,
 /obj/structure/closet,
@@ -2982,11 +2982,11 @@
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "MA" = (
 /obj/structure/shelf_wood,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "MB" = (
 /obj/structure/filingcabinet{
 	pixel_x = -8
@@ -2995,7 +2995,7 @@
 	pixel_x = 8
 	},
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "MD" = (
 /obj/structure/nest/protectron{
 	max_mobs = 2
@@ -3004,12 +3004,12 @@
 /turf/open/floor/f13{
 	icon_state = "bluechess2"
 	},
-/area/f13/city)
+/area/fallout/city)
 "MF" = (
 /obj/structure/table/glass,
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
 /turf/open/floor/wood/wood_wide/wood_wide_light,
-/area/f13/city)
+/area/fallout/city)
 "MQ" = (
 /obj/structure/chair/office{
 	dir = 1
@@ -3018,7 +3018,7 @@
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "MR" = (
 /obj/item/flashlight/lamp,
 /obj/effect/decal/cleanable/dirt,
@@ -3026,12 +3026,12 @@
 /turf/open/floor/wood/wood_common{
 	icon_state = "common-broken2"
 	},
-/area/f13/city)
+/area/fallout/city)
 "MX" = (
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "Nl" = (
 /obj/structure/chair/sofa/corp{
 	dir = 8
@@ -3043,11 +3043,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "Np" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/f13/sunset/brick_small_dark,
-/area/f13/city)
+/area/fallout/city)
 "Nr" = (
 /obj/structure/table,
 /obj/machinery/light,
@@ -3056,7 +3056,7 @@
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Nx" = (
 /obj/item/kirbyplants{
 	pixel_x = -7
@@ -3068,7 +3068,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "NA" = (
 /obj/structure/railing{
 	dir = 4
@@ -3078,7 +3078,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "ND" = (
 /obj/structure/filingcabinet/chestdrawer{
 	pixel_x = 7;
@@ -3086,40 +3086,40 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "NK" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "NX" = (
 /turf/open/floor/wood/wood_wide/wood_wide_light,
-/area/f13/city)
+/area/fallout/city)
 "NY" = (
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
 /obj/machinery/light/small{
 	dir = 8
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "Ob" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
 	dir = 8
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "Og" = (
 /obj/structure/closet/secure_closet/personal,
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13{
 	icon_state = "bluechess2"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Oi" = (
 /turf/open/floor/wood/wood_common{
 	icon_state = "common-broken4"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Ol" = (
 /obj/structure/curtain{
 	color = "#e09634";
@@ -3131,7 +3131,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "On" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress4"
@@ -3140,7 +3140,7 @@
 /obj/item/clothing/mask/muzzle,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "Oo" = (
 /obj/structure/simple_door/room{
 	name = "North River Apartments"
@@ -3148,7 +3148,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Ou" = (
 /obj/structure/railing{
 	dir = 1
@@ -3156,7 +3156,7 @@
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "Ov" = (
 /obj/structure/chair/sofa/corp/left,
 /obj/machinery/light{
@@ -3166,7 +3166,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Oz" = (
 /obj/structure/sign/poster/contraband/pinup_shower{
 	pixel_x = -32
@@ -3175,17 +3175,17 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "OD" = (
 /obj/structure/simple_door/glass,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "OF" = (
 /obj/structure/chair/stool,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/city)
+/area/fallout/city)
 "OI" = (
 /obj/structure/railing/corner{
 	dir = 8
@@ -3194,7 +3194,7 @@
 	dir = 4
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/ncr)
+/area/fallout/wasteland/ncr)
 "OM" = (
 /obj/structure/table,
 /obj/item/newspaper,
@@ -3202,7 +3202,7 @@
 	dir = 8
 	},
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "OW" = (
 /obj/structure/debris/v2{
 	pixel_x = -10
@@ -3210,7 +3210,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Pa" = (
 /obj/structure/chair/office/dark{
 	dir = 8
@@ -3220,37 +3220,37 @@
 	pixel_x = 32
 	},
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "Pg" = (
 /obj/structure/simple_door/room{
 	name = "North River Apartments"
 	},
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "Pr" = (
 /obj/structure/railing/corner,
 /turf/open/transparent/openspace,
-/area/f13/wasteland/warren)
+/area/fallout/wasteland/warren)
 "Pu" = (
 /obj/structure/railing,
 /obj/structure/railing{
 	dir = 4
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/ncr)
+/area/fallout/wasteland/ncr)
 "Pz" = (
 /obj/structure/simple_door/room{
 	name = "Logistics Officer"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
-/area/f13/ncr)
+/area/fallout/ncr)
 "PN" = (
 /obj/structure/simple_door/metal,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/city)
+/area/fallout/city)
 "PP" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -3258,7 +3258,7 @@
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/traitbooks/low,
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "PT" = (
 /obj/structure/table,
 /obj/item/pda,
@@ -3274,7 +3274,7 @@
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "PX" = (
 /obj/structure/railing{
 	dir = 1
@@ -3282,29 +3282,29 @@
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Qg" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy{
 	icon_state = "fancy-broken3"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Qi" = (
 /obj/structure/bed/wooden,
 /obj/item/bedsheet/random,
 /turf/open/floor/carpet/cyan,
-/area/f13/city)
+/area/fallout/city)
 "Qs" = (
 /obj/structure/closet/locker/fridge,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "Qt" = (
 /obj/structure/table/wood,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "QL" = (
 /obj/machinery/button/door{
 	id = "ncrrepshutter";
@@ -3312,7 +3312,7 @@
 	pixel_x = -28
 	},
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "QN" = (
 /obj/item/kirbyplants{
 	icon_state = "plant-12"
@@ -3324,13 +3324,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "QT" = (
 /obj/structure/chair/sofa/corp{
 	dir = 8
 	},
 /turf/open/floor/wood/wood_wide/wood_wide_light,
-/area/f13/city)
+/area/fallout/city)
 "QU" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -3338,13 +3338,13 @@
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/city)
+/area/fallout/city)
 "QZ" = (
 /obj/structure/table,
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Ra" = (
 /obj/machinery/button/door{
 	id = "ncrlieushutter";
@@ -3352,7 +3352,7 @@
 	pixel_x = -28
 	},
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "Rb" = (
 /obj/machinery/shower{
 	dir = 4;
@@ -3366,7 +3366,7 @@
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Rc" = (
 /obj/structure/junk/small/bed,
 /obj/effect/decal/cleanable/dirt,
@@ -3375,33 +3375,33 @@
 	dir = 4
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "Rf" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/ncr)
+/area/fallout/ncr)
 "RJ" = (
 /turf/open/indestructible/ground/outside/roof,
-/area/f13/wasteland/ncr)
+/area/fallout/wasteland/ncr)
 "Sf" = (
 /obj/structure/railing/corner,
 /turf/open/transparent/openspace,
-/area/f13/wasteland/ncr)
+/area/fallout/wasteland/ncr)
 "Sg" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "Si" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack/shelf_metal,
 /obj/item/mortar_shell/smoke,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "St" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Sv" = (
 /obj/structure/chair/wood/dining{
 	dir = 4
@@ -3409,7 +3409,7 @@
 /turf/open/floor/wood/wood_wide/wood_wide_light{
 	icon_state = "wide_light-broken6"
 	},
-/area/f13/city)
+/area/fallout/city)
 "SF" = (
 /obj/item/paper{
 	pixel_x = 9;
@@ -3417,13 +3417,13 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "SG" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "bluechess2"
 	},
-/area/f13/city)
+/area/fallout/city)
 "SJ" = (
 /obj/item/paper,
 /obj/item/paper{
@@ -3431,13 +3431,13 @@
 	pixel_y = 12
 	},
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "SK" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common{
 	icon_state = "common-broken4"
 	},
-/area/f13/city)
+/area/fallout/city)
 "SZ" = (
 /obj/structure/table,
 /obj/machinery/computer/terminal{
@@ -3447,14 +3447,14 @@
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "Tf" = (
 /obj/structure/chair/office/dark{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "Ti" = (
 /obj/structure/table,
 /obj/machinery/light{
@@ -3473,38 +3473,38 @@
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "Tp" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "Tx" = (
 /obj/machinery/light/small{
 	dir = 4;
 	pixel_x = 6
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/warren)
+/area/fallout/wasteland/warren)
 "TE" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "TJ" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy{
 	icon_state = "fancy-broken2"
 	},
-/area/f13/city)
+/area/fallout/city)
 "TM" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "housewindowbrokenvertical"
 	},
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "TT" = (
 /obj/structure/table,
 /obj/machinery/computer/terminal{
@@ -3514,17 +3514,17 @@
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "Ua" = (
 /turf/open/floor/carpet/green,
-/area/f13/ncr)
+/area/fallout/ncr)
 "Ue" = (
 /obj/structure/window/reinforced/spawner{
 	dir = 8
 	},
 /obj/machinery/msgterminal/ncr,
 /turf/open/floor/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "Uk" = (
 /obj/structure/curtain{
 	color = "#e09634";
@@ -3538,7 +3538,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/remains/human,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "Un" = (
 /obj/structure/showcase/machinery/tv{
 	name = "Pre-war television"
@@ -3546,17 +3546,17 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Up" = (
 /obj/structure/junk/drawer,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "Uq" = (
 /obj/item/newspaper,
 /turf/open/floor/wood/wood_common{
 	icon_state = "common-broken5"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Ur" = (
 /obj/structure/table,
 /obj/machinery/computer/terminal{
@@ -3566,7 +3566,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "Uv" = (
 /obj/structure/sign/poster/contraband/missing_gloves{
 	pixel_x = 12;
@@ -3575,7 +3575,7 @@
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/city)
+/area/fallout/city)
 "UB" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "storewindowhorizontal";
@@ -3585,23 +3585,23 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "UE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "UH" = (
 /turf/open/floor/wood/wood_fancy{
 	icon_state = "fancy-broken1"
 	},
-/area/f13/city)
+/area/fallout/city)
 "UL" = (
 /obj/structure/window/fulltile/wood,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "UU" = (
 /obj/structure/table,
 /obj/machinery/computer/terminal{
@@ -3612,7 +3612,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "UV" = (
 /obj/structure/curtain{
 	color = "#e09634";
@@ -3625,7 +3625,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "Vd" = (
 /obj/structure/table/wood,
 /obj/machinery/computer/terminal{
@@ -3635,7 +3635,7 @@
 	termtag = "Business"
 	},
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "Ve" = (
 /obj/structure/sink{
 	dir = 4;
@@ -3648,30 +3648,30 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Vg" = (
 /obj/structure/curtain{
 	color = "#1e549c";
 	pixel_y = 32
 	},
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "Vi" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "Vl" = (
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
 /turf/open/floor/wood/wood_wide/wood_wide_light,
-/area/f13/city)
+/area/fallout/city)
 "Vu" = (
 /obj/structure/sign/poster/official/twelve_gauge{
 	pixel_x = -32
 	},
 /obj/machinery/autolathe,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "Vw" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/turf_decal/stripes/white/box{
@@ -3682,13 +3682,13 @@
 /obj/item/gun/ballistic/automatic/pistol/ninemil,
 /obj/item/gun/ballistic/automatic/pistol/ninemil,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "VF" = (
 /obj/structure/chair/sofa/corp/right,
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "VG" = (
 /obj/structure/chair/sofa/corp/corner,
 /obj/machinery/light{
@@ -3698,7 +3698,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "VH" = (
 /obj/structure/curtain{
 	color = "#1e549c";
@@ -3711,13 +3711,13 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "VI" = (
 /obj/machinery/blackbox_recorder{
 	name = "data unit"
 	},
 /turf/open/floor/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "VM" = (
 /obj/structure/railing{
 	dir = 4
@@ -3727,7 +3727,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "VQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/kirbyplants/random,
@@ -3739,7 +3739,7 @@
 	light_color = "#e8eaff"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "VV" = (
 /obj/machinery/light{
 	dir = 1
@@ -3747,19 +3747,19 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "VX" = (
 /obj/item/rack_parts,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "VY" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/crafting,
 /turf/open/floor/wood/wood_fancy{
 	icon_state = "fancy-broken2"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Wf" = (
 /obj/machinery/light/broken{
 	dir = 1
@@ -3768,7 +3768,7 @@
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Wg" = (
 /obj/structure/railing/corner{
 	dir = 1
@@ -3777,11 +3777,11 @@
 	dir = 4
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/ncr)
+/area/fallout/wasteland/ncr)
 "Wk" = (
 /obj/machinery/ammobench,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "Wt" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Gatehouse";
@@ -3790,7 +3790,7 @@
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "WA" = (
 /obj/structure/chair/sofa/corp/right,
 /obj/structure/curtain{
@@ -3800,7 +3800,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "WB" = (
 /obj/structure/closet/secure_closet/personal,
 /obj/structure/sign/warning/securearea{
@@ -3810,7 +3810,7 @@
 /turf/open/floor/f13{
 	icon_state = "bluechess2"
 	},
-/area/f13/city)
+/area/fallout/city)
 "WG" = (
 /obj/structure/curtain{
 	color = "#1e549c";
@@ -3819,7 +3819,7 @@
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/city)
+/area/fallout/city)
 "WJ" = (
 /obj/item/bedsheet/random,
 /obj/effect/decal/cleanable/dirt,
@@ -3827,7 +3827,7 @@
 /turf/open/floor/wood/wood_fancy{
 	icon_state = "fancy-broken5"
 	},
-/area/f13/city)
+/area/fallout/city)
 "WK" = (
 /obj/structure/filingcabinet{
 	density = 0;
@@ -3836,7 +3836,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "WM" = (
 /obj/structure/curtain{
 	color = "#1e549c";
@@ -3844,10 +3844,10 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "WZ" = (
 /turf/open/transparent/openspace,
-/area/f13/city)
+/area/fallout/city)
 "Xb" = (
 /obj/effect/decal/cleanable/blood{
 	icon_state = "floor6"
@@ -3858,10 +3858,10 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Xi" = (
 /turf/closed/wall/f13/sunset/brick_small,
-/area/f13/city)
+/area/fallout/city)
 "Xm" = (
 /obj/machinery/light,
 /obj/structure/sign/poster/ncr/keep_to_myself{
@@ -3870,11 +3870,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "Xn" = (
 /obj/structure/table,
 /turf/open/floor/wood/wood_wide/wood_wide_light,
-/area/f13/city)
+/area/fallout/city)
 "Xo" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/turf_decal/stripes/white/box{
@@ -3885,20 +3885,20 @@
 /obj/item/ammo_box/c9mm,
 /obj/item/ammo_box/a357box,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "Xs" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "housewindowbroken"
 	},
 /turf/open/floor/wood/wood_wide/wood_wide_light,
-/area/f13/city)
+/area/fallout/city)
 "Xz" = (
 /obj/effect/decal/cleanable/blood{
 	icon_state = "drip3"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "XA" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
@@ -3906,7 +3906,7 @@
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "XC" = (
 /obj/structure/railing{
 	dir = 1
@@ -3914,10 +3914,10 @@
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "XH" = (
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
+/area/fallout/city)
 "XL" = (
 /obj/structure/table,
 /obj/machinery/microwave,
@@ -3927,7 +3927,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "XO" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/snacks/meat/slab/human,
@@ -3935,7 +3935,7 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "XQ" = (
 /obj/structure/table,
 /obj/machinery/computer/terminal{
@@ -3945,7 +3945,7 @@
 	termtag = "Business"
 	},
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "XU" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/storage/toolbox/electrical,
@@ -3953,7 +3953,7 @@
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/city)
+/area/fallout/city)
 "XZ" = (
 /obj/structure/curtain{
 	color = "#1e549c";
@@ -3963,7 +3963,7 @@
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Yh" = (
 /obj/structure/window/fulltile/store{
 	icon_state = "storewindowleft"
@@ -3976,7 +3976,7 @@
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Yp" = (
 /obj/structure/sink{
 	dir = 4;
@@ -3988,7 +3988,7 @@
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Ys" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "storewindowbottom"
@@ -3996,16 +3996,16 @@
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "Yw" = (
 /turf/open/floor/carpet/orange,
-/area/f13/ncr)
+/area/fallout/ncr)
 "YA" = (
 /obj/machinery/microwave/stove,
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "YF" = (
 /obj/machinery/door/unpowered/secure_steeldoor{
 	max_integrity = 1400;
@@ -4014,7 +4014,7 @@
 	req_one_access_txt = "121"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/area/fallout/ncr)
 "YM" = (
 /obj/structure/chair/sofa/corp/corner{
 	dir = 4
@@ -4023,7 +4023,7 @@
 	dir = 1
 	},
 /turf/open/floor/wood/wood_wide/wood_wide_light,
-/area/f13/city)
+/area/fallout/city)
 "YO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -4031,19 +4031,19 @@
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Ze" = (
 /obj/machinery/autolathe/ammo,
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Zt" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "Zy" = (
 /obj/machinery/photocopier,
 /obj/machinery/light/small{
@@ -4052,7 +4052,7 @@
 	},
 /obj/item/toner,
 /turf/open/floor/wood/wood_common,
-/area/f13/city)
+/area/fallout/city)
 "ZA" = (
 /obj/structure/railing{
 	dir = 4
@@ -4061,14 +4061,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "ZC" = (
 /obj/structure/table,
 /obj/machinery/processor/chopping_block,
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
-/area/f13/city)
+/area/fallout/city)
 "ZI" = (
 /obj/structure/sign/plaques/ncr_sea{
 	name = "senior enlisted advisor";
@@ -4077,7 +4077,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "ZO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/curtain{
@@ -4087,7 +4087,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "ZR" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -4095,7 +4095,7 @@
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 "ZT" = (
 /obj/structure/filingcabinet{
 	density = 0;
@@ -4104,7 +4104,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/vault,
-/area/f13/ncr)
+/area/fallout/ncr)
 "ZW" = (
 /obj/structure/chair/sofa/corp,
 /obj/structure/curtain{
@@ -4114,7 +4114,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
-/area/f13/ncr)
+/area/fallout/ncr)
 
 (1,1,1) = {"
 ru

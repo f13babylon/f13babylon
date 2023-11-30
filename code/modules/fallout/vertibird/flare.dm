@@ -43,7 +43,7 @@
 	if(!isarea(T.loc))
 		to_chat(user, "<span class='warning'>This location isn't visible on GPS!!</span>")
 		return
-	if(!istype(T.loc, /area/f13/wasteland))
+	if(!istype(T.loc, /area/fallout/wasteland))
 		to_chat(user, "<span class='warning'>This LZ is unreachable, find a clear area!!</span>")
 		return
 

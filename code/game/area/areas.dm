@@ -83,6 +83,7 @@
 	var/parallax_movedir = 0
 
 	var/list/ambientsounds = GENERIC
+	var/list/ambientmusic
 	flags_1 = CAN_BE_DIRTY_1
 
 	var/list/firedoors
@@ -541,15 +542,18 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 		return //General ambience check is below the ship ambience so one can play without the other
 	var/sound //fortuna edit. lets make this its own variable for convenience
 	if(prob(35))
-		sound = pick(ambientsounds)
+		if(prob(50)) //fortuna add. re-implements ambient music
+			sound = pick(ambientmusic)
+		else
+			sound = pick(ambientsounds)
 
-	if(prob(35)) //fortuna add. re-implements ambient music
-		sound = pick(ambientmusic)
+	if(!sound)
+		return
 
-		if(!L.client.played)
-			SEND_SOUND(L, sound(sound, repeat = 0, wait = 0, volume = 25, channel = CHANNEL_AMBIENCE))
-			L.client.played = TRUE
-			addtimer(CALLBACK(L.client, /client/proc/ResetAmbiencePlayed), 600)
+	if(!L.client?.played)
+		SEND_SOUND(L, sound(sound, repeat = FALSE, wait = FALSE, volume = 25, channel = CHANNEL_AMBIENCE))
+		L.client?.played = TRUE
+		addtimer(CALLBACK(L.client, /client/proc/ResetAmbiencePlayed), 60 SECONDS)
 
 ///Divides total beauty in the room by roomsize to allow us to get an average beauty per tile.
 /area/proc/update_beauty()

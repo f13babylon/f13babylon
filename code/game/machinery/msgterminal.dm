@@ -494,5 +494,5 @@ GLOBAL_LIST_EMPTY(allTerminals)
 
 
 // so admins can easily jump-to-area
-/area/f13/commandconsole
+/area/fallout/commandconsole
 	name = "Command Communications"

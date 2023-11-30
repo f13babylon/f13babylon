@@ -1,742 +1,1049 @@
-//Fallout 13 specific areas directory
+/**
+ * Fallout-specific areas
+ */
 
-/area
-	var/open_space = 0
-	var/list/ambientmusic = list('sound/misc/null.ogg')
-//	var/ambience_area =  list('sound/f13ambience/wasteland.ogg')
-	ambientsounds = list('sound/misc/null.ogg')
-	var/environment = -1
-	var/grow_chance = 100
+/area/fallout
+	name = "base area type - if you see this, report it!"
+	icon = 'icons/turf/areas.dmi'
+	has_gravity = STANDARD_GRAVITY
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	requires_power = FALSE // Enable on specific subtypes, until we get a working power plant added.
 
-/area/f13
-	name = "error"
-	icon_state = "error"
-	has_gravity = 1
-//	requires_power = 0
+/**
+ *	Wasteland generic areas
+ *	Ambigen sound tips for ambientsounds:
+ *		1 - 2 : outside the ruined buildings,
+ *		3 - 9 : inside the wasteland buildings,
+ *		10 - 14 : vaults and bunkers specific,
+ *		15-19 : caves
+ */
 
-//Wasteland generic areas
-
-//Ambigen sound tips for ambientsounds: 1 - 2 : outside the ruined buildings, 3 - 9 : inside the wasteland buildings, 10 - 14 : vaults and bunkers specific, 15-19 : caves
-
-/area/f13/wasteland
+/area/fallout/wasteland
 	name = "Wasteland"
 	icon_state = "wasteland"
-//	ambience_area =  list('sound/f13ambience/wasteland.ogg')
-	ambientmusic = WASTELAND_AMBIENCE
-	ambientsounds = list('sound/f13ambience/battle_1.ogg','sound/f13ambience/battle_2.ogg','sound/f13ambience/battle_3.ogg', \
-	'sound/f13ambience/rattlesnake_1.ogg','sound/f13ambience/rattlesnake_2.ogg','sound/f13ambience/rattlesnake_3.ogg','sound/f13ambience/bird_1.ogg','sound/f13ambience/bird_2.ogg','sound/f13ambience/bird_3.ogg','sound/f13ambience/bird_4.ogg')
-	outdoors = 1
-	open_space = 1
-	blob_allowed = 0
-	environment = 19
-	grow_chance = 45
 
-/area/f13/wasteland/event
+	ambientsounds = list(
+		'sound/f13ambience/battle_1.ogg',
+		'sound/f13ambience/battle_2.ogg',
+		'sound/f13ambience/battle_3.ogg',
+		'sound/f13ambience/rattlesnake_1.ogg',
+		'sound/f13ambience/rattlesnake_2.ogg',
+		'sound/f13ambience/rattlesnake_3.ogg',
+		'sound/f13ambience/bird_1.ogg',
+		'sound/f13ambience/bird_2.ogg',
+		'sound/f13ambience/bird_3.ogg',
+		'sound/f13ambience/bird_4.ogg',
+	)
+
+	outdoors = TRUE
+
+/area/fallout/wasteland/event
 	name = "Wasteland (Event)"
 
-/area/f13/wasteland/east
+/area/fallout/wasteland/east
 	name = "Eastern Yuma"
-	icon_state = "yumaeast"
+	icon_state = "yuma_east"
 
-/area/f13/wasteland/west
+/area/fallout/wasteland/west
 	name = "Western Yuma"
-	icon_state = "yumawest"
+	icon_state = "yuma_west"
 
-/area/f13/wasteland/quarry
+/area/fallout/wasteland/quarry
 	name = "Quarry"
 	icon_state = "quarry"
 
-/area/f13/wasteland/valley
+/area/fallout/wasteland/valley
 	name = "Corocotta Valley"
 	icon_state = "valley"
 
-/area/f13/wasteland/massfusion
+/area/fallout/wasteland/mass_fusion
 	name = "Mass Fusion Exterior"
-	icon_state = "massfusionout"
+	icon_state = "fusion_ext"
 
-/area/f13/wasteland/mall
+/area/fallout/wasteland/mall
 	name = "Mall of Wyoming Exterior"
-	icon_state = "mallex"
+	icon_state = "mall_ext"
 
-/area/f13/wasteland/hospital
+/area/fallout/wasteland/hospital
 	name = "Sheridan County Hospital Exterior"
-	icon_state = "hospitalex"
+	icon_state = "hospital_ext"
 
-/area/f13/wasteland/museum
+/area/fallout/wasteland/museum
 	name = "Museum of Technology Exterior"
-	icon_state = "museumex"
+	icon_state = "museum_ext"
 
-/area/f13/wasteland/firestation
+/area/fallout/wasteland/fire_station
 	name = "Fire Station Exterior"
-	icon_state = "fireex"
+	icon_state = "fire_ext"
 
-/area/f13/wasteland/heaven
+/area/fallout/wasteland/heaven
 	name = "Heaven's Night Exterior"
-	icon_state = "heavenex"
+	icon_state = "heaven_ext"
 
-/area/f13/wasteland/train
+/area/fallout/wasteland/train
 	name = "Train Station Exterior"
-	icon_state = "trainex"
+	icon_state = "train_ext"
 
-/area/f13/wasteland/nanotrasen
+/area/fallout/wasteland/nanotrasen
 	name = "Nanotrasen HQ Exterior"
-	icon_state = "nanoex"
+	icon_state = "nano_ext"
 
-/area/f13/wasteland/bighorn
+/area/fallout/wasteland/bighorn
 	name = "Bighorn Exterior"
-	icon_state = "bighornex"
+	icon_state = "bighorn_ext"
 	requires_power = TRUE
 
-/area/f13/wasteland/khanfort
+/area/fallout/wasteland/khan_fort
 	name = "Khan Fortress Exterior"
-	icon_state = "khanfortex"
+	icon_state = "khanfort_ext"
 
-/area/f13/wasteland/followers
+/area/fallout/wasteland/followers
 	name = "Followers Exterior"
-	icon_state = "followersex" //lol
+	icon_state = "followers_ext"
 
-/area/f13/wasteland/bighornbunker
+/area/fallout/wasteland/bighorn_bunker
 	name = "Bighorn Bunker Exterior"
-	icon_state = "bighornbunkerex"
+	icon_state = "bighornbunker_ext"
 
-/area/f13/wasteland/ncr
+/area/fallout/wasteland/ncr
 	name = "NCR Outpost Exterior"
-	icon_state = "ncrex"
+	icon_state = "ncr_ext"
 
-/area/f13/wasteland/legion
+/area/fallout/wasteland/legion
 	name = "Legion Fortress Exterior"
-	icon_state = "legionex"
+	icon_state = "legion_ext"
 
-/area/f13/wasteland/rocksprings
+/area/fallout/wasteland/rock_springs
 	name = "Rock Springs"
 
-/area/f13/wasteland/warren
+/area/fallout/wasteland/warren
 	name = "Warren"
 
-/area/f13/forest
+
+/**
+ *  General outdoors areas
+ */
+
+/area/fallout/forest
 	name = "Forest"
 	icon_state = "forest"
-//	ambience_area =  list('sound/f13ambience/wasteland.ogg')
-//	ambientmusic = list('sound/f13music/fo2_wasteland.ogg','sound/f13music/fo2_chapel.ogg','sound/f13music/fo2_world.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/bird_1.ogg','sound/f13ambience/bird_2.ogg','sound/f13ambience/bird_3.ogg','sound/f13ambience/bird_4.ogg','sound/f13ambience/bird_5.ogg','sound/f13ambience/bird_6.ogg','sound/f13ambience/bird_7.ogg','sound/f13ambience/bird_8.ogg', \
-	'sound/f13ambience/rattlesnake_1.ogg','sound/f13ambience/rattlesnake_2.ogg','sound/f13ambience/rattlesnake_3.ogg')
-	outdoors = 1
-	open_space = 1
-	blob_allowed = 0
-	environment = 15
-	grow_chance = 75
+	ambientsounds = list(
+		'sound/f13ambience/bird_1.ogg',
+		'sound/f13ambience/bird_2.ogg',
+		'sound/f13ambience/bird_3.ogg',
+		'sound/f13ambience/bird_4.ogg',
+		'sound/f13ambience/bird_5.ogg',
+		'sound/f13ambience/bird_6.ogg',
+		'sound/f13ambience/bird_7.ogg',
+		'sound/f13ambience/bird_8.ogg',
+		'sound/f13ambience/rattlesnake_1.ogg',
+		'sound/f13ambience/rattlesnake_2.ogg',
+		'sound/f13ambience/rattlesnake_3.ogg',
+	)
+	outdoors = TRUE
 
-/area/f13/ruins
+/area/fallout/ruins
 	name = "Ruins"
 	icon_state = "ruins"
-//	ambience_area =  list('sound/f13ambience/wasteland.ogg')
-//	ambientmusic = list('sound/f13music/fo2_ruins.ogg','sound/f13music/fo2_necropolis.ogg','sound/f13music/fo2_raider.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/ambigen_1.ogg','sound/f13ambience/ambigen_2.ogg','sound/f13ambience/dog_distant_1.ogg','sound/f13ambience/dog_distant_2.ogg','sound/f13ambience/dog_distant_3.ogg', \
-	'sound/f13ambience/rattlesnake_1.ogg','sound/f13ambience/rattlesnake_2.ogg','sound/f13ambience/rattlesnake_3.ogg')
-	outdoors = 1
-	open_space = 1
-	blob_allowed = 0
-	environment = 5
-	grow_chance = 5
+	ambientsounds = list(
+		'sound/f13ambience/ambigen_1.ogg',
+		'sound/f13ambience/ambigen_2.ogg',
+		'sound/f13ambience/dog_distant_1.ogg',
+		'sound/f13ambience/dog_distant_2.ogg',
+		'sound/f13ambience/dog_distant_3.ogg',
+		'sound/f13ambience/rattlesnake_1.ogg',
+		'sound/f13ambience/rattlesnake_2.ogg',
+		'sound/f13ambience/rattlesnake_3.ogg',
+	)
+	outdoors = TRUE
 
-/area/f13/shack
+/area/fallout/shack
 	name = "Shack"
 	icon_state = "shack"
-//	ambience_area =  list('sound/f13ambience/shack.ogg')
-//	ambientmusic = list('sound/f13music/fo2_ruins.ogg','sound/f13music/fo2_city.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/ambigen_3.ogg','sound/f13ambience/ambigen_4.ogg','sound/f13ambience/ambigen_5.ogg', \
-	'sound/f13ambience/ambigen_6.ogg','sound/f13ambience/ambigen_7.ogg','sound/f13ambience/ambigen_8.ogg','sound/f13ambience/ambigen_15.ogg','sound/f13ambience/ambigen_16.ogg')
-	environment = 2
-	grow_chance = 5
+	ambientsounds = list(
+		'sound/f13ambience/ambigen_3.ogg',
+		'sound/f13ambience/ambigen_4.ogg',
+		'sound/f13ambience/ambigen_5.ogg',
+		'sound/f13ambience/ambigen_6.ogg',
+		'sound/f13ambience/ambigen_7.ogg',
+		'sound/f13ambience/ambigen_8.ogg',
+		'sound/f13ambience/ambigen_15.ogg',
+		'sound/f13ambience/ambigen_16.ogg',
+	)
 
-/area/f13/building
+/area/fallout/farm
+	name = "Farm"
+	icon_state = "farm"
+	ambientsounds = list(
+		'sound/f13ambience/dog_distant_1.ogg',
+		'sound/f13ambience/dog_distant_2.ogg',
+		'sound/f13ambience/dog_distant_3.ogg',
+		'sound/f13ambience/bird_1.ogg',
+		'sound/f13ambience/bird_2.ogg',
+		'sound/f13ambience/bird_3.ogg',
+		'sound/f13ambience/bird_4.ogg',
+		'sound/f13ambience/bird_5.ogg',
+		'sound/f13ambience/bird_6.ogg',
+		'sound/f13ambience/bird_7.ogg',
+		'sound/f13ambience/bird_8.ogg',
+	)
+	outdoors = TRUE
+
+/area/fallout/tribe
+	name = "Tribe"
+	icon_state = "tribe"
+	ambientsounds = list(
+		'sound/f13ambience/dog_distant_1.ogg',
+		'sound/f13ambience/dog_distant_2.ogg',
+		'sound/f13ambience/dog_distant_3.ogg',
+		'sound/f13ambience/bird_1.ogg',
+		'sound/f13ambience/bird_2.ogg',
+		'sound/f13ambience/bird_3.ogg',
+		'sound/f13ambience/bird_4.ogg',
+		'sound/f13ambience/bird_5.ogg',
+		'sound/f13ambience/bird_6.ogg',
+		'sound/f13ambience/bird_7.ogg',
+		'sound/f13ambience/bird_8.ogg',
+	)
+	outdoors = TRUE
+
+
+/**
+ * Building areas
+ */
+
+/area/fallout/building
 	name = "Building"
 	icon_state = "building"
-//	ambience_area =  list('sound/f13ambience/building.ogg')
-//	ambientmusic = list('sound/f13music/fo2_tunnels.ogg','sound/f13music/fo2_ruins.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/ambigen_3.ogg','sound/f13ambience/ambigen_4.ogg','sound/f13ambience/ambigen_5.ogg', \
-	'sound/f13ambience/ambigen_6.ogg','sound/f13ambience/ambigen_7.ogg','sound/f13ambience/ambigen_8.ogg','sound/f13ambience/ambigen_9.ogg')
-	environment = 2
-	grow_chance = 5
+	ambientsounds = list(
+		'sound/f13ambience/ambigen_3.ogg',
+		'sound/f13ambience/ambigen_4.ogg',
+		'sound/f13ambience/ambigen_5.ogg',
+		'sound/f13ambience/ambigen_6.ogg',
+		'sound/f13ambience/ambigen_7.ogg',
+		'sound/f13ambience/ambigen_8.ogg',
+		'sound/f13ambience/ambigen_9.ogg',
+	)
 
-/area/f13/building/massfusion
+/area/fallout/building/mass_fusion
 	name = "Mass Fusion Plant"
-	icon_state = "massfusionin"
+	icon_state = "fusion_int"
 
-/area/f13/building/hospital
+/area/fallout/building/hospital
 	name = "Sheridan County Hospital"
 	icon_state = "hospital"
 
-/area/f13/building/mall
+/area/fallout/building/mall
 	name = "Mall of Utah"
 	icon_state = "mall"
 
-/area/f13/building/museum
+/area/fallout/building/museum
 	name = "Museum of Technology"
 	icon_state = "museum"
 
-/area/f13/building/firestation
+/area/fallout/building/fire_station
 	name = "Fire Station"
 	icon_state = "fire"
 
-/area/f13/building/trainstation
+/area/fallout/building/train_station
 	name = "Train Station"
 	icon_state = "train"
 
-/area/f13/building/nanotrasen
+/area/fallout/building/nanotrasen
 	name = "Nanotrasen HQ"
 	icon_state = "nano"
 
-/area/f13/building/khanfort
+/area/fallout/building/khan_fort
 	name = "Khan Fortress"
-	icon_state = "khanfort"
+	icon_state = "khan_fort"
 
-/area/f13/building/bighornbunker
+/area/fallout/building/bighorn_bunker
 	name = "Bighorn Bunker"
-	icon_state = "bighornbunker"
+	icon_state = "bighorn_bunker"
 
-/area/f13/farm
-	name = "Farm"
-	icon_state = "farm"
-//	ambience_area =  list('sound/f13ambience/wasteland.ogg')
-//	ambientmusic = list('sound/f13music/fo2_village.ogg','sound/f13music/fo2_wasteland.ogg','sound/f13music/fo2_chapel.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/dog_distant_1.ogg','sound/f13ambience/dog_distant_2.ogg','sound/f13ambience/dog_distant_3.ogg', \
-	'sound/f13ambience/bird_1.ogg','sound/f13ambience/bird_2.ogg','sound/f13ambience/bird_3.ogg','sound/f13ambience/bird_4.ogg','sound/f13ambience/bird_5.ogg','sound/f13ambience/bird_6.ogg','sound/f13ambience/bird_7.ogg','sound/f13ambience/bird_8.ogg')
-	outdoors = 1
-	open_space = 1
-	blob_allowed = 0
-	environment = 15
-	grow_chance = 50
-
-/area/f13/tribe
-	name = "Tribe"
-	icon_state = "tribe"
-//	ambience_area =  list('sound/f13ambience/wasteland.ogg')
-//	ambientmusic = list('sound/f13music/fo2_village.ogg','sound/f13music/fo2_wasteland.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/dog_distant_1.ogg','sound/f13ambience/dog_distant_2.ogg','sound/f13ambience/dog_distant_3.ogg', \
-	'sound/f13ambience/bird_1.ogg','sound/f13ambience/bird_2.ogg','sound/f13ambience/bird_3.ogg','sound/f13ambience/bird_4.ogg','sound/f13ambience/bird_5.ogg','sound/f13ambience/bird_6.ogg','sound/f13ambience/bird_7.ogg','sound/f13ambience/bird_8.ogg')
-	outdoors = 1
-	open_space = 1
-	blob_allowed = 0
-	environment = 15
-	grow_chance = 5
-
-/area/f13/village
+/area/fallout/village
 	name = "Village"
 	icon_state = "village"
-//	ambience_area =  list('sound/f13ambience/wasteland.ogg')
-//	ambientmusic = list('sound/f13music/fo2_village.ogg','sound/f13music/fo2_wasteland.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/dog_distant_1.ogg','sound/f13ambience/dog_distant_2.ogg','sound/f13ambience/dog_distant_3.ogg', \
-	'sound/f13ambience/bird_1.ogg','sound/f13ambience/bird_2.ogg','sound/f13ambience/bird_3.ogg','sound/f13ambience/bird_4.ogg')
-	blob_allowed = 0
-	environment = 15
-	grow_chance = 5
+	ambientsounds = list(
+		'sound/f13ambience/dog_distant_1.ogg',
+		'sound/f13ambience/dog_distant_2.ogg',
+		'sound/f13ambience/dog_distant_3.ogg',
+		'sound/f13ambience/bird_1.ogg',
+		'sound/f13ambience/bird_2.ogg',
+		'sound/f13ambience/bird_3.ogg',
+		'sound/f13ambience/bird_4.ogg',
+	)
 
-/area/f13/outpost
+/area/fallout/outpost
 	name = "Outpost"
 	icon_state = "outpost"
-//	ambience_area =  list('sound/f13ambience/wasteland.ogg')
-//	ambientmusic = list('sound/f13music/fo2_outpost.ogg','sound/f13music/fo2_brotherhood.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/battle_1.ogg','sound/f13ambience/battle_2.ogg','sound/f13ambience/battle_3.ogg', \
-	'sound/f13ambience/bird_1.ogg','sound/f13ambience/bird_2.ogg','sound/f13ambience/bird_3.ogg','sound/f13ambience/bird_4.ogg')
-	blob_allowed = 0
-	environment = 16
-	grow_chance = 5
+	ambientsounds = list(
+		'sound/f13ambience/battle_1.ogg',
+		'sound/f13ambience/battle_2.ogg',
+		'sound/f13ambience/battle_3.ogg',
+		'sound/f13ambience/bird_1.ogg',
+		'sound/f13ambience/bird_2.ogg',
+		'sound/f13ambience/bird_3.ogg',
+		'sound/f13ambience/bird_4.ogg',
+	)
 
-/area/f13/hub
+/area/fallout/hub
 	name = "Hub"
 	icon_state = "hub"
-//	ambience_area =  list('sound/f13ambience/wasteland.ogg')
-//	ambientmusic = list('sound/f13music/fo2_hub.ogg','sound/f13music/fo2_village.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/dog_distant_1.ogg','sound/f13ambience/dog_distant_2.ogg','sound/f13ambience/dog_distant_3.ogg', \
-	'sound/f13ambience/rattlesnake_1.ogg','sound/f13ambience/rattlesnake_2.ogg','sound/f13ambience/rattlesnake_3.ogg')
-	outdoors = 1
-	open_space = 1
-	blob_allowed = 0
-	environment = 16
-	grow_chance = 5
+	ambientsounds = list(
+		'sound/f13ambience/dog_distant_1.ogg',
+		'sound/f13ambience/dog_distant_2.ogg',
+		'sound/f13ambience/dog_distant_3.ogg',
+		'sound/f13ambience/rattlesnake_1.ogg',
+		'sound/f13ambience/rattlesnake_2.ogg',
+		'sound/f13ambience/rattlesnake_3.ogg',
+	)
+	outdoors = TRUE
 
-/area/f13/city
+
+/**
+ * City areas
+ */
+
+/area/fallout/city
 	name = "City"
 	icon_state = "city"
-//	ambience_area =  list('sound/f13ambience/wasteland.ogg')
-//	ambientmusic = list('sound/f13music/fo2_city.ogg','sound/f13music/fo2_hub.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/dog_distant_1.ogg','sound/f13ambience/dog_distant_2.ogg','sound/f13ambience/dog_distant_3.ogg', \
-	'sound/f13ambience/ambigen_1.ogg','sound/f13ambience/ambigen_2.ogg')
-	outdoors = 1
-	open_space = 1
-	blob_allowed = 0
-	environment = 16
-	grow_chance = 5
+	ambientsounds = list(
+		'sound/f13ambience/dog_distant_1.ogg',
+		'sound/f13ambience/dog_distant_2.ogg',
+		'sound/f13ambience/dog_distant_3.ogg',
+		'sound/f13ambience/ambigen_1.ogg',
+		'sound/f13ambience/ambigen_2.ogg',
+	)
+	outdoors = TRUE
 
-/area/f13/city/museum
+/area/fallout/city/museum
 	name = "Museum"
 	outdoors = FALSE
 
-/area/f13/city/bighorn
+/area/fallout/city/bighorn
 	name = "Bighorn"
 	icon_state = "bighorn"
 	requires_power = TRUE
 
-/area/f13/citycaves
+/area/fallout/city_caves
 	name = "City Caves"
-	icon_state = "citycaves"
-//	ambience_area =  list('sound/f13ambience/cave.ogg')
-//	ambientmusic = list('sound/f13music/fo2_city.ogg','sound/f13music/fo2_hub.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/ambigen_15.ogg','sound/f13ambience/ambigen_16.ogg','sound/f13ambience/dog_distant_1.ogg','sound/f13ambience/dog_distant_2.ogg','sound/f13ambience/dog_distant_3.ogg')
-	environment = 8
-	grow_chance = 25
+	icon_state = "city_caves"
+	ambientsounds = list(
+		'sound/f13ambience/ambigen_15.ogg',
+		'sound/f13ambience/ambigen_16.ogg',
+		'sound/f13ambience/dog_distant_1.ogg',
+		'sound/f13ambience/dog_distant_2.ogg',
+		'sound/f13ambience/dog_distant_3.ogg',
+	)
 
-/area/f13/chapel
+
+/area/fallout/chapel
 	name = "Chapel"
 	icon_state = "chapel"
-//	ambience_area =  list('sound/f13ambience/building.ogg')
-//	ambientmusic = list('sound/f13music/fo2_chapel.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/ambience/ambicha1.ogg','sound/ambience/ambicha2.ogg','sound/ambience/ambicha3.ogg','sound/ambience/ambicha4.ogg')
-	environment = 5
-	grow_chance = 5
+	ambientsounds = list(
+		'sound/ambience/ambicha1.ogg',
+		'sound/ambience/ambicha2.ogg',
+		'sound/ambience/ambicha3.ogg',
+		'sound/ambience/ambicha4.ogg',
+	)
 
-/area/f13/bar
+
+/area/fallout/mountain_area
+	name = "Unknown"
+	icon_state = "forest"
+	ambientsounds = list(
+		'sound/f13ambience/bird_1.ogg',
+		'sound/f13ambience/bird_2.ogg',
+		'sound/f13ambience/bird_3.ogg',
+		'sound/f13ambience/bird_4.ogg',
+		'sound/f13ambience/bird_5.ogg',
+		'sound/f13ambience/bird_6.ogg',
+		'sound/f13ambience/bird_7.ogg',
+		'sound/f13ambience/bird_8.ogg',
+	)
+	outdoors = TRUE
+
+
+/area/fallout/bar
 	name = "Bar"
 	icon_state = "bar"
-//	ambience_area =  list('sound/f13ambience/building.ogg')
-//	ambientmusic = list('sound/f13music/fo2_bar.ogg','sound/f13music/fo2_outpost.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/ambigen_1.ogg','sound/f13ambience/ambigen_2.ogg')
-	environment = 2
-	grow_chance = 5
+	ambientsounds = list(
+		'sound/f13ambience/ambigen_1.ogg',
+		'sound/f13ambience/ambigen_2.ogg',
+	)
 
-/area/f13/bar/heaven
+/area/fallout/bar/heaven
 	name = "Heaven's Night"
 	icon_state = "heaven"
 
-/area/f13/casino
+
+/area/fallout/casino
 	name = "Casino"
 	icon_state = "casino"
-//	ambience_area =  list('sound/f13ambience/warehouse.ogg')
-//	ambientmusic = list('sound/f13music/fo2_bar.ogg','sound/f13music/fo2_raiders.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/ambigen_3.ogg','sound/f13ambience/ambigen_4.ogg','sound/f13ambience/ambigen_5.ogg', \
-	'sound/f13ambience/ambigen_6.ogg','sound/f13ambience/ambigen_7.ogg','sound/f13ambience/ambigen_8.ogg')
-	environment = 6
-	grow_chance = 5
+	ambientsounds = list(
+		'sound/f13ambience/ambigen_3.ogg',
+		'sound/f13ambience/ambigen_4.ogg',
+		'sound/f13ambience/ambigen_5.ogg',
+		'sound/f13ambience/ambigen_6.ogg',
+		'sound/f13ambience/ambigen_7.ogg',
+		'sound/f13ambience/ambigen_8.ogg',
+	)
 
-/area/f13/clinic
+
+/area/fallout/clinic
 	name = "Clinic"
 	icon_state = "clinic"
-//	ambience_area =  list('sound/f13ambience/warehouse.ogg')
-//	ambientmusic = list('sound/f13music/fo2_necropolis.ogg','sound/f13music/fo2_ruins.ogg','sound/f13music/fo2_tunnels.ogg','sound/f13music/fo2_caves.ogg','sound/f13music/fo2_desert.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/ambigen_1.ogg','sound/f13ambience/ambigen_2.ogg','sound/f13ambience/ambigen_3.ogg','sound/f13ambience/ambigen_4.ogg', \
-	'sound/f13ambience/ambigen_5.ogg','sound/f13ambience/ambigen_6.ogg','sound/f13ambience/ambigen_7.ogg','sound/f13ambience/ambigen_8.ogg','sound/f13ambience/ambigen_9.ogg','sound/f13ambience/ambigen_17.ogg','sound/f13ambience/ambigen_18.ogg','sound/f13ambience/ambigen_19.ogg')
-	environment = 6
-	grow_chance = 5
+	ambientsounds = list(
+		'sound/f13ambience/ambigen_1.ogg',
+		'sound/f13ambience/ambigen_2.ogg',
+		'sound/f13ambience/ambigen_3.ogg',
+		'sound/f13ambience/ambigen_4.ogg',
+		'sound/f13ambience/ambigen_5.ogg',
+		'sound/f13ambience/ambigen_6.ogg',
+		'sound/f13ambience/ambigen_7.ogg',
+		'sound/f13ambience/ambigen_8.ogg',
+		'sound/f13ambience/ambigen_9.ogg',
+		'sound/f13ambience/ambigen_17.ogg',
+		'sound/f13ambience/ambigen_18.ogg',
+		'sound/f13ambience/ambigen_19.ogg',
+	)
 
-/area/f13/office
+
+/area/fallout/office
 	name = "Office"
 	icon_state = "office"
-//	ambience_area =  list('sound/f13ambience/warehouse.ogg')
-//	ambientmusic = list('sound/f13music/fo2_city.ogg','sound/f13music/fo2_ruins.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/ambigen_3.ogg','sound/f13ambience/ambigen_4.ogg','sound/f13ambience/ambigen_5.ogg', \
-	'sound/f13ambience/ambigen_6.ogg','sound/f13ambience/ambigen_7.ogg','sound/f13ambience/ambigen_8.ogg')
-	environment = 2
-	grow_chance = 5
+	ambientsounds = list(
+		'sound/f13ambience/ambigen_3.ogg',
+		'sound/f13ambience/ambigen_4.ogg',
+		'sound/f13ambience/ambigen_5.ogg',
+		'sound/f13ambience/ambigen_6.ogg',
+		'sound/f13ambience/ambigen_7.ogg',
+		'sound/f13ambience/ambigen_8.ogg',
+	)
 
-/area/f13/store
+
+/area/fallout/store
 	name = "Store"
 	icon_state = "store"
-//	ambience_area =  list('sound/f13ambience/building.ogg')
-//	ambientmusic = list('sound/f13music/fo2_bar.ogg','sound/f13music/fo2_outpost.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/ambigen_3.ogg','sound/f13ambience/ambigen_4.ogg','sound/f13ambience/ambigen_5.ogg', \
-	'sound/f13ambience/ambigen_6.ogg','sound/f13ambience/ambigen_7.ogg','sound/f13ambience/ambigen_8.ogg')
-	environment = 4
-	grow_chance = 5
+	ambientsounds = list(
+		'sound/f13ambience/ambigen_3.ogg',
+		'sound/f13ambience/ambigen_4.ogg',
+		'sound/f13ambience/ambigen_5.ogg',
+		'sound/f13ambience/ambigen_6.ogg',
+		'sound/f13ambience/ambigen_7.ogg',
+		'sound/f13ambience/ambigen_8.ogg',
+	)
 
-/area/f13/bunker
+
+/**
+ * Bunker areas
+ */
+
+/area/fallout/bunker
 	name = "Bunker"
 	icon_state = "bunker"
-//	ambience_area =  list('sound/f13ambience/building.ogg')
-//	ambientmusic = list('sound/f13music/fo2_vats.ogg','sound/f13music/fo2_outpost.ogg','sound/f13music/fo2_ruins.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/ambigen_1.ogg','sound/f13ambience/ambigen_2.ogg','sound/f13ambience/ambigen_9.ogg','sound/f13ambience/ambigen_10.ogg','sound/f13ambience/ambigen_11.ogg', \
-	'sound/f13ambience/ambigen_12.ogg','sound/f13ambience/ambigen_13.ogg')
-	environment = 11
-	grow_chance = 5
+	ambientsounds = list(
+		'sound/f13ambience/ambigen_1.ogg',
+		'sound/f13ambience/ambigen_2.ogg',
+		'sound/f13ambience/ambigen_9.ogg',
+		'sound/f13ambience/ambigen_10.ogg',
+		'sound/f13ambience/ambigen_11.ogg',
+		'sound/f13ambience/ambigen_12.ogg',
+		'sound/f13ambience/ambigen_13.ogg',
+	)
 
-/area/f13/bunker/bunkertwo
+/area/fallout/bunker/bunker_two
 	name = "Bunker Two"
 
-/area/f13/bunker/museum
+/area/fallout/bunker/museum
 	name = "Bunker Museum"
 
-/area/f13/bunker/bighornbunker
+/area/fallout/bunker/bighorn_bunker
 	name = "Bighorn Bunker"
-	icon_state = "bighornbunker2"
+	icon_state = "bighorn_bunker2"
 
-/area/f13/tunnel
+
+/**
+ * Tunnel areas
+ */
+
+/area/fallout/tunnel
 	name = "Tunnel"
 	icon_state = "tunnel"
-//	ambience_area =  list('sound/f13ambience/cave.ogg')
-//	ambientmusic = list('sound/f13music/fo2_tunnels.ogg','sound/f13music/fo2_caves.ogg','sound/f13music/fo2_vats.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/ambigen_9.ogg','sound/f13ambience/ambigen_12.ogg','sound/f13ambience/ambigen_15.ogg','sound/f13ambience/ambigen_16.ogg','sound/f13effects/steam_short.ogg','sound/f13effects/steam_long.ogg')
-	environment = 21
-	grow_chance = 25
+	ambientsounds = list(
+		'sound/f13ambience/ambigen_9.ogg',
+		'sound/f13ambience/ambigen_12.ogg',
+		'sound/f13ambience/ambigen_15.ogg',
+		'sound/f13ambience/ambigen_16.ogg',
+		'sound/f13effects/steam_short.ogg',
+		'sound/f13effects/steam_long.ogg',
+	)
 
-/area/f13/tunnel/northeast
+/area/fallout/tunnel/north_east
 	name = "North-Eastern Tunnel"
-	icon_state = "tunnelne"
+	icon_state = "tunnel_ne"
 
-/area/f13/tunnel/northwest
+/area/fallout/tunnel/north_west
 	name = "North-Western Tunnel"
-	icon_state = "tunnelnw"
+	icon_state = "tunnel_nw"
 
-/area/f13/tunnel/southeast
+/area/fallout/tunnel/south_east
 	name = "South-Eastern Tunnel"
-	icon_state = "tunnelse"
+	icon_state = "tunnel_se"
 
-/area/f13/tunnel/southwest
+/area/fallout/tunnel/south_west
 	name = "South-Western Tunnel"
-	icon_state = "tunnelsw"
+	icon_state = "tunnel_sw"
 
-/area/f13/tunnel/southeastbighorn
+/area/fallout/tunnel/southeast_bighorn
 	name = "Bighorn Eastern Sewers"
-	icon_state = "tunnelse"
+	icon_state = "tunnel_e"
 
-/area/f13/tunnel/southwestbighorn
+/area/fallout/tunnel/southwest_bighorn
 	name = "Bighorn Western Sewers"
-	icon_state = "tunnelsw"
+	icon_state = "tunnel_w"
 
-/area/f13/tunnel/sub
+/area/fallout/tunnel/subway
 	name = "Subway Tunnel"
-	icon_state = "tunnelsub"
+	icon_state = "tunnel_train"
 
-/area/f13/tunnel/khanfort
+/area/fallout/tunnel/khan_fort
 	name = "Khan Fortress Tunnel"
-	icon_state = "tunnelkhan"
+	icon_state = "tunnel_khan"
 
-/area/f13/tunnel/bighorn
+/area/fallout/tunnel/bighorn
 	name = "Bighorn Underground"
 	icon_state = "tunnel"
 	requires_power = TRUE
 
-/area/f13/trainstation
+
+/area/fallout/train_station
 	name = "Tunnel"
 	icon_state = "tunnel"
-//	ambience_area =  list('sound/f13ambience/cave.ogg')
-//	ambientmusic = list('sound/f13music/fo2_tunnels.ogg','sound/f13music/fo2_caves.ogg','sound/f13music/fo2_vats.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/ambigen_9.ogg','sound/f13ambience/ambigen_12.ogg','sound/f13ambience/ambigen_15.ogg','sound/f13ambience/ambigen_16.ogg','sound/f13effects/steam_short.ogg','sound/f13effects/steam_long.ogg')
-	environment = 21
-	grow_chance = 25
+	ambientsounds = list(
+		'sound/f13ambience/ambigen_9.ogg',
+		'sound/f13ambience/ambigen_12.ogg',
+		'sound/f13ambience/ambigen_15.ogg',
+		'sound/f13ambience/ambigen_16.ogg',
+		'sound/f13effects/steam_short.ogg',
+		'sound/f13effects/steam_long.ogg',
+	)
 
-/area/f13/sewer
+
+/area/fallout/sewer
 	name = "Sewer"
 	icon_state = "sewer"
-//	ambience_area =  list('sound/f13ambience/sewer.ogg')
-//	ambientmusic = list('sound/f13music/fo2_tunnels.ogg','sound/f13music/fo2_caves.ogg','sound/f13music/fo2_desert.ogg','sound/f13music/fo2_vats.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/ambigen_9.ogg','sound/f13effects/steam_short.ogg','sound/f13effects/steam_long.ogg')
-	environment = 21
-	grow_chance = 50
+	ambientsounds = list(
+		'sound/f13ambience/ambigen_9.ogg',
+		'sound/f13effects/steam_short.ogg',
+		'sound/f13effects/steam_long.ogg',
+	)
 
-/area/f13/caves
+
+/area/fallout/caves
 	name = "Caves"
 	icon_state = "caves"
-//	ambience_area =  list('sound/f13ambience/cave.ogg')
-//	ambientmusic = list('sound/f13music/fo2_caves.ogg','sound/f13music/fo2_desert.ogg','sound/f13music/fo2_necropolis.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/ambigen_15.ogg','sound/f13ambience/ambigen_16.ogg','sound/f13ambience/ambigen_17.ogg','sound/f13ambience/ambigen_18.ogg','sound/f13ambience/ambigen_19.ogg')
-	environment = 8
-	grow_chance = 75
+	ambientsounds = list(
+		'sound/f13ambience/ambigen_15.ogg',
+		'sound/f13ambience/ambigen_16.ogg',
+		'sound/f13ambience/ambigen_17.ogg',
+		'sound/f13ambience/ambigen_18.ogg',
+		'sound/f13ambience/ambigen_19.ogg',
+	)
 
-/area/f13/subway
+
+/area/fallout/subway
 	name = "Subway"
 	icon_state = "subway"
-//	ambience_area =  list('sound/f13ambience/cave.ogg')
-//	ambientmusic = list('sound/f13music/fo2_tunnels.ogg','sound/f13music/fo2_caves.ogg','sound/f13music/fo2_vats.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/ambigen_1.ogg','sound/f13ambience/ambigen_2.ogg','sound/f13ambience/ambigen_9.ogg','sound/f13ambience/ambigen_12.ogg')
-	environment = 21
-	grow_chance = 25
+	ambientsounds = list(
+		'sound/f13ambience/ambigen_1.ogg',
+		'sound/f13ambience/ambigen_2.ogg',
+		'sound/f13ambience/ambigen_9.ogg',
+		'sound/f13ambience/ambigen_12.ogg',
+	)
 
-/area/f13/secret
+/area/fallout/secret
 	name = "Secret"
 	icon_state = "secret"
-//	ambience_area =  list('sound/f13ambience/building.ogg')
-//	ambientmusic = list('sound/f13music/fo2_chapel.ogg','sound/f13music/fo2_city.ogg','sound/f13music/fo2_outpost.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/ambience/signal.ogg','sound/f13ambience/ambigen_10.ogg','sound/f13ambience/ambigen_11.ogg', \
-	'sound/f13ambience/ambigen_12.ogg','sound/f13ambience/ambigen_13.ogg')
-	environment = 11
-	grow_chance = 0
+	ambientsounds = list(
+		'sound/ambience/signal.ogg',
+		'sound/f13ambience/ambigen_10.ogg',
+		'sound/f13ambience/ambigen_11.ogg',
+		'sound/f13ambience/ambigen_12.ogg',
+		'sound/f13ambience/ambigen_13.ogg',
+	)
 
-/area/f13/radiation
+
+/area/fallout/radiation
 	name = "Radiation"
 	icon_state = "radiation"
-//	ambience_area =  list('sound/f13ambience/wasteland.ogg')
-//	ambientmusic = list('sound/f13music/fo2_wasteland.ogg','sound/f13music/fo2_desert.ogg','sound/f13music/fo2_world.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/rattlesnake_1.ogg','sound/f13ambience/rattlesnake_2.ogg','sound/f13ambience/rattlesnake_3.ogg')
-	environment = 19
-	grow_chance = 5
+	ambientsounds = list(
+		'sound/f13ambience/rattlesnake_1.ogg',
+		'sound/f13ambience/rattlesnake_2.ogg',
+		'sound/f13ambience/rattlesnake_3.ogg',
+	)
 
-//Faction related areas
 
-/area/f13/raiders
+/**
+ * Faction areas
+ */
+
+/area/fallout/raiders
 	name = "Raiders"
 	icon_state = "raiders"
-//	ambience_area =  list('sound/f13ambience/wasteland.ogg')
-//	ambientmusic = list('sound/f13music/fo2_raider.ogg','sound/f13music/fo2_raiders.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/ambigen_1.ogg','sound/f13ambience/ambigen_2.ogg','sound/f13ambience/dog_distant_1.ogg','sound/f13ambience/dog_distant_2.ogg','sound/f13ambience/dog_distant_3.ogg', \
-	'sound/f13ambience/battle_1.ogg','sound/f13ambience/battle_2.ogg','sound/f13ambience/battle_3.ogg')
-	outdoors = 1
-	open_space = 1
-	blob_allowed = 0
-	environment = 6
-	grow_chance = 5
+	ambientsounds = list(
+		'sound/f13ambience/ambigen_1.ogg',
+		'sound/f13ambience/ambigen_2.ogg',
+		'sound/f13ambience/dog_distant_1.ogg',
+		'sound/f13ambience/dog_distant_2.ogg',
+		'sound/f13ambience/dog_distant_3.ogg',
+		'sound/f13ambience/battle_1.ogg',
+		'sound/f13ambience/battle_2.ogg',
+		'sound/f13ambience/battle_3.ogg',
+	)
+	outdoors = TRUE
 
-/area/f13/vault
-	name = "Vault"
-	icon_state = "vaulttec"
-//	ambience_area =  list('sound/f13ambience/vaulttec_vault.ogg')
-//	ambientmusic = list('sound/f13music/fo2_vats.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/ambigen_10.ogg','sound/f13ambience/ambigen_11.ogg','sound/f13ambience/ambigen_12.ogg', \
-	'sound/f13ambience/ambigen_13.ogg','sound/f13ambience/ambigen_14.ogg','sound/f13effects/steam_short.ogg','sound/f13effects/steam_long.ogg')
-	blob_allowed = 0
-	environment = 6
-	grow_chance = 5
+/area/fallout/enclave
+	name = "Enclave Bunker"
+	icon_state = "enclave"
+	ambientsounds = list(
+		'sound/f13ambience/ambigen_10.ogg',
+		'sound/f13ambience/ambigen_11.ogg',
+		'sound/f13ambience/ambigen_12.ogg',
+		'sound/f13ambience/ambigen_13.ogg',
+		'sound/f13ambience/ambigen_14.ogg',
+		'sound/f13ambience/enclave_vault.ogg',
+		'sound/ambience/signal.ogg',
+	)
 	requires_power = TRUE
 
-/area/f13/vault/reactor
-	name = "Reactor"
-	icon_state = "engine"
+/area/fallout/ahs
+	name = "Adepts of Hubology Studies"
+	icon_state = "ahs"
+	ambientsounds = list(
+		'sound/f13ambience/ambigen_10.ogg',
+		'sound/f13ambience/ambigen_11.ogg',
+		'sound/f13ambience/ambigen_12.ogg',
+		'sound/f13ambience/ambigen_13.ogg',
+		'sound/ambience/signal.ogg',
+	)
 
-/area/f13/vault/storage
+/area/fallout/ncr
+	name = "NCR Outpost"
+	icon_state = "ncr"
+	ambientsounds = list(
+		'sound/f13ambience/ambigen_3.ogg',
+		'sound/f13ambience/ambigen_4.ogg',
+		'sound/f13ambience/ambigen_5.ogg',
+		'sound/f13ambience/ambigen_6.ogg',
+		'sound/f13ambience/ambigen_7.ogg',
+		'sound/f13ambience/ambigen_8.ogg',
+		'sound/f13ambience/ambigen_9.ogg',
+		'sound/f13ambience/ambigen_10.ogg',
+		'sound/f13ambience/ambigen_11.ogg',
+		'sound/f13ambience/ambigen_12.ogg',
+	)
+	requires_power = FALSE
+
+/area/fallout/legion
+	name = "Legion Fortress"
+	icon_state = "legion"
+	ambientsounds = list(
+		'sound/f13ambience/ambigen_3.ogg',
+		'sound/f13ambience/ambigen_4.ogg',
+		'sound/f13ambience/ambigen_15.ogg',
+		'sound/f13ambience/ambigen_16.ogg',
+		'sound/f13ambience/dog_distant_1.ogg',
+		'sound/f13ambience/dog_distant_2.ogg',
+		'sound/f13ambience/dog_distant_3.ogg',
+	)
+
+/area/fallout/followers
+	name = "Followers of the Apocalypse Clinic"
+	icon_state = "followers"
+	ambientsounds = list(
+		'sound/f13ambience/ambigen_10.ogg',
+		'sound/f13ambience/ambigen_11.ogg',
+		'sound/f13ambience/ambigen_12.ogg',
+		'sound/f13ambience/ambigen_13.ogg',
+		'sound/ambience/signal.ogg',
+	)
+	requires_power = TRUE
+
+/area/fallout/wasteland/khans
+	name = "Great Khan Encampment"
+	icon_state = "khans"
+
+
+/**
+ * Vault-tec
+ */
+/area/fallout/vault
+	name = "Vault"
+	icon_state = "vault_tec"
+	ambientsounds = list(
+		'sound/f13ambience/ambigen_10.ogg',
+		'sound/f13ambience/ambigen_11.ogg',
+		'sound/f13ambience/ambigen_12.ogg',
+		'sound/f13ambience/ambigen_13.ogg',
+		'sound/f13ambience/ambigen_14.ogg',
+		'sound/f13effects/steam_short.ogg',
+		'sound/f13effects/steam_long.ogg',
+	)
+	requires_power = TRUE
+
+/area/fallout/vault/reactor
+	name = "Reactor"
+	icon_state = "reactor"
+
+/area/fallout/vault/storage
 	name = "Storage"
 	icon_state = "storage"
 
-/area/f13/vault/storageoffice
+/area/fallout/vault/storage_office
 	name = "Storage Office"
-	icon_state = "storage_wing"
+	icon_state = "storage_office"
 
-/area/f13/vault/overseer
-	name = "Overseer"
+/area/fallout/vault/overseer
+	name = "Overseer's Office"
 	icon_state = "overseer_office"
 
-/area/f13/vault/chiefoffice
-	name = "Chief Office"
-	icon_state = "sec_hos"
+/area/fallout/vault/chief_office
+	name = "Chief's Office"
+	icon_state = "chief_office"
 
-/area/f13/vault/idcontrol
+/area/fallout/vault/id_control
 	name = "ID Control Office"
-	icon_state = "hop_office"
+	icon_state = "id_control"
 
-/area/f13/vault/vents
+/area/fallout/vault/vents
 	name = "Vents"
-	icon_state = "red"
+	icon_state = "vents"
 
-/area/f13/vault/botcontrol
+/area/fallout/vault/bot_control
 	name = "Bot Control"
-	icon_state = "mechbay"
+	icon_state = "bot_control"
 
-/area/f13/vault/atrium
+/area/fallout/vault/atrium
 	name = "Vault Atrium"
-	icon_state = "vault_atrium_upper"
+	icon_state = "vault_atrium"
 
-/area/f13/vault/security
+/area/fallout/vault/security
 	name = "Brig"
 	icon_state = "brig"
 
-/area/f13/vault/security/checkpoint
+/area/fallout/vault/checkpoint
 	name = "Security Checkpoint"
-	icon_state = "checkpoint1"
+	icon_state = "checkpoint"
 
-/area/f13/vault/security/armory
+/area/fallout/vault/armory
 	name = "Armory"
 	icon_state = "armory"
 
-/area/f13/vault/medical
+/area/fallout/vault/medical
 	name = "Medical Center"
-	icon_state = "medbay"
+	icon_state = "med_center"
 
-/area/f13/vault/medical/surgery
+/area/fallout/vault/surgery
 	name = "Surgery"
-	icon_state = "surgery"
+	icon_state = "med_surgery"
 
-/area/f13/vault/medical/breakroom
+/area/fallout/vault/medical_breakroom
 	name = "Break Room"
-	icon_state = "medbay2"
+	icon_state = "med_break_room"
 
-/area/f13/vault/medical/morgue
+/area/fallout/vault/morgue
 	name = "Morgue"
 	icon_state = "morgue"
 
-/area/f13/vault/medical/chemistry
+/area/fallout/vault/chemistry
 	name = "Chemistry"
 	icon_state = "chem"
 
-/area/f13/vault/science
+/area/fallout/vault/science
 	name = "Science"
-	icon_state = "purple"
+	icon_state = "science"
 
-/area/f13/vault/science/biology
+/area/fallout/vault/biology
 	name = "Biology"
-	icon_state = "purple"
+	icon_state = "biology"
 
-/area/f13/vault/garden
+/area/fallout/vault/garden
 	name = "Garden"
 	icon_state = "garden"
 
-/area/f13/vault/diner
+/area/fallout/vault/diner
 	name = "Dining Hall"
 	icon_state = "cafeteria"
 
-/area/f13/vault/custodial
+/area/fallout/vault/custodial
 	name = "Custodial Closet"
-	icon_state = "auxstorage"
+	icon_state = "custodial_closet"
 
-/area/f13/vault/dormitory
+/area/fallout/vault/dormitory
 	name = "Dormitory"
-	icon_state = "crew_quarters"
+	icon_state = "dormitory"
 
-/area/f13/vault/lavatory
-	name = "Lavatory"
+/area/fallout/vault/restrooms
+	name = "Restrooms"
 	icon_state = "restrooms"
 
-/area/f13/brotherhood
-	name = "Brotherhood of Steel Bunker"//Brother Hood
-	icon_state = "brotherhood"
-//	ambience_area =  list('sound/f13ambience/enclave_vault.ogg')
-//	ambientmusic = list('sound/f13music/fo2_brotherhood.ogg','sound/f13music/fo2_outpost.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/ambigen_9.ogg','sound/f13ambience/ambigen_10.ogg','sound/f13ambience/ambigen_11.ogg', \
-	'sound/f13ambience/ambigen_12.ogg','sound/f13ambience/ambigen_13.ogg')
-	blob_allowed = 0
-	environment = 6
-	grow_chance = 5
+
+/**
+ * Brotherhood of Steel
+ */
+/area/fallout/brotherhood
+	name = "Brotherhood of Steel Bunker"
+	icon_state = "bhood"
+	ambientsounds = list(
+		'sound/f13ambience/ambigen_9.ogg',
+		'sound/f13ambience/ambigen_10.ogg',
+		'sound/f13ambience/ambigen_11.ogg',
+		'sound/f13ambience/ambigen_12.ogg',
+		'sound/f13ambience/ambigen_13.ogg',
+	)
 	requires_power = TRUE
 
-/area/f13/brotherhood/rnd
-	name = "Brotherhood of Steel RnD Department"//Brother Hood
-	icon_state = "brotherhoodrnddepartment"
+/area/fallout/brotherhood/rnd
+	name = "Brotherhood of Steel RnD Department"
+	icon_state = "bhood_rnd"
 
-/area/f13/brotherhood/offices1st
-	name = "Brotherhood of Steel 1st Floor Offices"//Brother Hood
-	icon_state = "brotherhoodoffices1st"
+/area/fallout/brotherhood/offices_first
+	name = "Brotherhood of Steel 1st Floor Offices"
+	icon_state = "bhood_offices"
 
-/area/f13/brotherhood/offices2nd
-	name = "Brotherhood of Steel 1st Floor Offices"//Brother Hood
-	icon_state = "brotherhoodoffices2nd"
+/area/fallout/brotherhood/offices_second
+	name = "Brotherhood of Steel 2nd Floor Offices"
+	icon_state = "bhood_officess2"
 
-/area/f13/brotherhood/surface
-	name = "Brotherhood of Steel Surface Outpost"//Brother Hood
-	icon_state = "brotherhood"
+/area/fallout/brotherhood/surface
+	name = "Brotherhood of Steel Surface Outpost"
+	icon_state = "bhood_surface"
 
-/area/f13/brotherhood/medical
-	name = "Brotherhood of Steel Medbay"//Brother Hood
-	icon_state = "brotherhoodmedbay"
+/area/fallout/brotherhood/medical
+	name = "Brotherhood of Steel Medbay"
+	icon_state = "bhood_med"
 
-/area/f13/brotherhood/operating
-	name = "Brotherhood of Steel Operating Room"//Brother Hood
-	icon_state = "brotherhoodoperating"
+/area/fallout/brotherhood/operating
+	name = "Brotherhood of Steel Operating Room"
+	icon_state = "bhood_surgery"
 
-/area/f13/brotherhood/chemistry
-	name = "Brotherhood of Steel Chemistry Lab"//Brother Hood
-	icon_state = "brotherhoodchemistry"
+/area/fallout/brotherhood/chemistry
+	name = "Brotherhood of Steel Chemistry Lab"
+	icon_state = "bhood_chem"
 
-/area/f13/brotherhood/dorms
-	name = "Brotherhood of Steel Dormitories"//Brother Hood
-	icon_state = "brotherhooddorms"
+/area/fallout/brotherhood/dorms
+	name = "Brotherhood of Steel Dormitories"
+	icon_state = "bhood_dorms"
 
-/area/f13/brotherhood/armory
-	name = "Brotherhood of Steel Armory"//Brother Hood
-	icon_state = "brotherhoodarmory"
+/area/fallout/brotherhood/armory
+	name = "Brotherhood of Steel Armory"
+	icon_state = "bhood_armory"
 
-/area/f13/brotherhood/archives
-	name = "Brotherhood of Steel Archives"//Brother Hood
-	icon_state = "brotherhoodarchives"
+/area/fallout/brotherhood/archives
+	name = "Brotherhood of Steel Archives"
+	icon_state = "bhood_archives"
 
-/area/f13/brotherhood/operations
-	name = "Brotherhood of Steel Operations Department"//Brother Hood
-	icon_state = "brotherhoodoperationsdepartment"
+/area/fallout/brotherhood/operations
+	name = "Brotherhood of Steel Operations Department"
+	icon_state = "bhood_operations"
 
-/area/f13/brotherhood/leisure
-	name = "Brotherhood of Steel Leisure Areas"//Brother Hood
-	icon_state = "brotherhoodleisure"
+/area/fallout/brotherhood/leisure
+	name = "Brotherhood of Steel Leisure Areas"
+	icon_state = "bhood_leisure"
 
-/area/f13/brotherhood/reactor
-	name = "Brotherhood of Steel Reactor"//Brother Hood
-	icon_state = "brotherhoodreactor"
+/area/fallout/brotherhood/reactor
+	name = "Brotherhood of Steel Reactor"
+	icon_state = "bhood_reactor"
 
-/area/f13/brotherhood/mining
-	name = "Brotherhood of Steel Mining"//Brother Hood
-	icon_state = "brotherhoodmining"
+/area/fallout/brotherhood/mining
+	name = "Brotherhood of Steel Mining"
+	icon_state = "bhood_mining"
 
-/area/f13/enclave
-	name = "Enclave Bunker"
-	icon_state = "enclave"
-//	ambience_area =  list('sound/f13ambience/enclave_vault.ogg')
-//	ambientmusic = list('sound/f13music/fo2_vats.ogg','sound/f13music/fo2_outpost.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/ambigen_10.ogg','sound/f13ambience/ambigen_11.ogg','sound/f13ambience/ambigen_12.ogg', \
-	'sound/f13ambience/ambigen_13.ogg','sound/f13ambience/ambigen_14.ogg','sound/ambience/signal.ogg','sound/f13ambience/enclave_vault.ogg')
-	blob_allowed = 0
-	environment = 6
-	grow_chance = 5
-	requires_power = TRUE
 
-/area/f13/ahs
-	name = "Adepts of Hubology Studies"
-	icon_state = "ahs"
-//	ambience_area =  list('sound/f13ambience/enclave_vault.ogg')
-//	ambientmusic = list('sound/f13music/fo2_vats.ogg','sound/f13music/fo2_outpost.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/ambigen_10.ogg','sound/f13ambience/ambigen_11.ogg','sound/f13ambience/ambigen_12.ogg', \
-	'sound/f13ambience/ambigen_13.ogg','sound/ambience/signal.ogg')
-	blob_allowed = 0
-	environment = 5
-	grow_chance = 5
+/**
+ * Special
+ */
 
-/area/f13/ncr
-	name = "NCR Outpost"
-	icon_state = "ncr"
-//	ambience_area =  list('sound/f13ambience/warehouse.ogg')
-//	ambientmusic = list('sound/f13music/fo2_city.ogg','sound/f13music/fo2_outpost.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/ambigen_3.ogg','sound/f13ambience/ambigen_4.ogg','sound/f13ambience/ambigen_5.ogg','sound/f13ambience/ambigen_6.ogg','sound/f13ambience/ambigen_7.ogg', \
-	'sound/f13ambience/ambigen_8.ogg','sound/f13ambience/ambigen_9.ogg','sound/f13ambience/ambigen_10.ogg','sound/f13ambience/ambigen_11.ogg','sound/f13ambience/ambigen_12.ogg')
-	blob_allowed = 0
-	environment = 4
-	grow_chance = 5
+/area/fallout/vault_elevator
+	name = "elevator shaft"
+	icon_state = "vault_elevator"
+
+/area/fallout/enclave_elevator
+	name = "elevator shaft"
+	icon_state = "enclave_elevator"
+
+
+/**
+ *
+ * TODO
+ *
+ */
+
+
+/area/fallout/admeme
+	icon_state = "secret"
 	requires_power = FALSE
 
-/area/f13/legion
-	name = "Legion Fortress"
-	icon_state = "legion"
-//	ambience_area =  list('sound/f13ambience/building.ogg')
-//	ambientmusic = list('sound/f13music/fo2_hub.ogg','sound/f13music/fo2_outpost.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/ambigen_3.ogg','sound/f13ambience/ambigen_4.ogg','sound/f13ambience/ambigen_15.ogg','sound/f13ambience/ambigen_16.ogg', \
-	'sound/f13ambience/dog_distant_1.ogg','sound/f13ambience/dog_distant_2.ogg','sound/f13ambience/dog_distant_3.ogg')
-	blob_allowed = 0
-	environment = 4
-	grow_chance = 5
 
-/area/f13/followers
-	name = "Followers of the Apocalypse Clinic"
-	icon_state = "followers"
-//	ambience_area =  list('sound/f13ambience/warehouse.ogg')
-//	ambientmusic = list('sound/f13music/fo2_vats.ogg','sound/f13music/fo2_outpost.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/ambigen_10.ogg','sound/f13ambience/ambigen_11.ogg','sound/f13ambience/ambigen_12.ogg', \
-	'sound/f13ambience/ambigen_13.ogg','sound/ambience/signal.ogg')
-	blob_allowed = 0
-	environment = 5
-	grow_chance = 5
+/area/fallout/bos_underground
+	name = "Brotherhood of Steel Underground"
+	icon_state = "bhood_underground"
+	flags_1 = NONE // cannot be dirty
+
+
+/area/fallout/mountain_underground
+	name = "mountain"
+	icon_state = "cave"
+
+
+/area/fallout/tcoms
+	name = "tcomms"
+	icon_state = "tcomms"
+	requires_power = FALSE
+
+
+/area/fallout/desert
+	name = "Desert"
+	icon_state = "desert"
+
+	ambientsounds = list(
+		'sound/f13ambience/wasteland.ogg',
+		'sound/f13ambience/sewer.ogg',
+	)
+
+	requires_power = FALSE
+	poweralm = FALSE
+	power_environ = FALSE
+	power_equip = FALSE
+	outdoors = TRUE
+	lightswitch = FALSE //no. just no
+	flags_1 = NONE //>desert >>has destroyed robo dirt on it
+
+
+/area/fallout/sunny_dale
+	name = "Sunny Dale"
+	icon_state = "sunny_dale"
+
+/area/fallout/ncr_main
+	name = "NCR Mainbase"
+	icon_state = "ncr_main"
+
+/area/fallout/raider_mall
+	name = "Raider Mall"
+	icon_state = "raider_mall"
+
+/area/fallout/mountain_bunker
+	name = "Mountain Bunker"
+	icon_state = "mountain_bunker"
+
+/area/fallout/prison
+	name = "prison"
+	icon_state = "prison"
+
+/area/fallout/klamat
+	name = "Klamat"
+	icon_state = "klamat"
+
+/area/fallout/klamat/mine
+	name = "Klamat mine"
+	icon_state = "klamat_mine"
+
+/area/fallout/deep_mine
+	name = "Klamat deep mine"
+	icon_state = "klamat_mine_deep"
+
+/area/fallout/farmhouse
+	name = "Farmhouse"
+	icon_state = "farmhouse"
+
+/area/fallout/farmhouse_south
+	name = "Farmhouse (South)"
+	icon_state = "farmhouse_south"
+
+/area/fallout/legion_camp
+	name = "Legion Camp"
+	icon_state = "legion_camp"
+
+/area/fallout/power_plant
+	name = "Power Plant"
+	icon_state = "power_plant"
+	ambientsounds = ENGINEERING
+
+/area/fallout/enclave_base
+	name = "Enclave Base"
+	icon_state = "enclave_base"
+	ambientsounds = list('sound/f13ambience/enclave_vault.ogg')
+
+/area/fallout/den
+	name = "Den"
+	icon_state = "den"
+
+/area/fallout/overseer_office
+	name = "Overseer's Office"
+	icon_state = "overseer_office"
+	ambientsounds = list('sound/f13ambience/vaulttec_vault.ogg')
+
+/area/fallout/vault_atrium_upper
+	name = "Vault Atrium Upper"
+	icon_state = "vault_atrium_upper"
 	requires_power = TRUE
+	ambientsounds = list('sound/f13ambience/vaulttec_vault.ogg')
 
-/area/f13/wasteland/khans
-	name = "Great Khan Encampment"
-	icon_state = "tribe"
+/area/fallout/vault_atrium_Lower
+	name = "Vault Atrium Lower"
+	icon_state = "vault_atrium_lower"
+	requires_power = TRUE
+	ambientsounds = list('sound/f13ambience/vaulttec_vault.ogg')
 
-/area/f13/mountain_area
-	name = "Unknown"
-	icon_state = "forest"
-	ambientsounds = list('sound/f13ambience/bird_1.ogg','sound/f13ambience/bird_2.ogg','sound/f13ambience/bird_3.ogg','sound/f13ambience/bird_4.ogg','sound/f13ambience/bird_5.ogg','sound/f13ambience/bird_6.ogg','sound/f13ambience/bird_7.ogg','sound/f13ambience/bird_8.ogg')
-	outdoors = 1
-	open_space = 1
-	environment = 15
-	grow_chance = 0
+/area/shuttle/vault_elevator
+	name = "Vault Elevator"
 
-//special
-/area/f13/vault_elevator
-	name = "elevator shaft"
-	icon_state = "error"
+/area/shuttle/enclavefort_elevator
+	name = "Enclave Fort Elevator"
 
-/area/f13/enc_elevator
-	name = "elevator shaft"
-	icon_state = "error"
+/area/shuttle/bos_elevator
+	name = "BOS Elevator"
+
+/area/shuttle/bunker_elevator
+	name = "Bunker Elevator"
+
+/area/shuttle/entrance_elevator
+	name = "Entrance Elevator"
+
+/area/shuttle/north_bunker_elevator
+	name = "North Bunker Elevator"
+
+/area/shuttle/south_bunker_elevator
+	name = "South Bunker Elevator"
+
+/area/shuttle/vault_113_elevator
+	name = "Vault 113 Elevator"
+	ambientsounds = list('sound/f13ambience/vaulttec_vault.ogg')
+
+/area/shuttle/mining_elevator
+	name = "Mining Elevator"
+
+/area/shuttle/bos_foyer
+	name = "Brotherhood of Steel Foyer"
+
+
+/**
+ * Underground
+ */
+
+/area/fallout/cave
+	name = "Cave"
+	icon_state = "cave"
+	outdoors = TRUE
+
+/area/fallout/cave/vault
+	name = "Vault Mine"
+	icon_state = "vault_mine"
+	outdoors = TRUE
+
+/area/fallout/cave/vault/fourfivefour
+	name = "Vault 454"
+	icon_state = "vaulttec"
+	outdoors = FALSE

@@ -126,7 +126,7 @@
 /area/survivalpod)
 "Q" = (
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "R" = (
 /obj/item/bedsheet/cult,
 /obj/structure/bed,

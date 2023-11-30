@@ -1,17 +1,17 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
 /turf/closed/indestructible/rock,
-/area/f13/underground/cave)
+/area/fallout/underground/cave)
 "Aw" = (
 /obj/machinery/telecomms/relay/preset/telecomms,
 /turf/open/indestructible,
-/area/f13/tcoms)
+/area/fallout/tcoms)
 "Tn" = (
 /turf/open/indestructible,
-/area/f13/tcoms)
+/area/fallout/tcoms)
 "YF" = (
 /turf/closed/indestructible/riveted,
-/area/f13/tcoms)
+/area/fallout/tcoms)
 
 (1,1,1) = {"
 aa

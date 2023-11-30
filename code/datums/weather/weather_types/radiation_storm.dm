@@ -18,7 +18,7 @@
 	end_duration = 100
 	end_message = "<span class='userdanger'>The air seems to be cooling off again as the radiation storm passes, the sky returning to it's normal color.</span>"
 
-	area_types = list(/area/f13/wasteland, /area/f13/desert, /area/f13/farm, /area/f13/forest, /area/f13/ruins)
+	area_types = list(/area/fallout/wasteland, /area/fallout/desert, /area/fallout/farm, /area/fallout/forest, /area/fallout/ruins)
 	protected_areas = list(/area/maintenance, /area/ai_monitored/turret_protected/ai_upload, /area/ai_monitored/turret_protected/ai_upload_foyer,
 	/area/ai_monitored/turret_protected/ai, /area/storage/emergency/starboard, /area/storage/emergency/port, /area/shuttle, /area/security/prison, /area/ruin, /area/space/nearstation, /area/icemoon)
 	target_trait = ZTRAIT_SURFACE

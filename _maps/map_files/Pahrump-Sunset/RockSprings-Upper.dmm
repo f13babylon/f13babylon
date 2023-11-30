@@ -12,21 +12,21 @@
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/building)
+/area/fallout/building)
 "ab" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/renegade/defender,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "ac" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/start/f13/explorer,
 /turf/open/floor/carpet/black,
-/area/f13/legion)
+/area/fallout/legion)
 "ad" = (
 /obj/effect/landmark/start/f13/explorer,
 /turf/open/floor/carpet/black,
-/area/f13/legion)
+/area/fallout/legion)
 "ae" = (
 /obj/effect/decal/cleanable/blood/old{
 	pixel_x = 12
@@ -37,7 +37,7 @@
 /turf/open/floor/wood/wood_common{
 	icon_state = "common-broken4"
 	},
-/area/f13/building)
+/area/fallout/building)
 "af" = (
 /obj/structure/nest/protectron{
 	layer = 3;
@@ -45,16 +45,16 @@
 	pixel_y = 20
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "ag" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/ghoul/reaver,
 /turf/open/floor/wood/wood_common/wood_common_light,
-/area/f13/building)
+/area/fallout/building)
 "ah" = (
 /mob/living/simple_animal/hostile/handy/protectron,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "ak" = (
 /obj/machinery/door/unpowered/securedoor{
 	damage_deflection = 28;
@@ -64,36 +64,36 @@
 	req_access_txt = "123"
 	},
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/legion)
+/area/fallout/legion)
 "aq" = (
 /obj/structure/curtain{
 	color = "#845f58";
 	pixel_x = -32
 	},
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "ar" = (
 /obj/structure/window/fulltile/wood,
 /turf/open/floor/plasteel/f13/stone/rugged,
-/area/f13/legion)
+/area/fallout/legion)
 "at" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/ammo_box/c45/improvised,
 /turf/open/floor/f13{
 	icon_state = "floordirty"
 	},
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "av" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "ax" = (
 /obj/structure/closet/locker/oldstyle,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/lowmid,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "az" = (
 /obj/effect/decal/cleanable/glass,
 /obj/item/shard{
@@ -105,12 +105,12 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common/wood_common_light,
-/area/f13/building)
+/area/fallout/building)
 "aB" = (
 /obj/item/stack/sheet/mineral/wood/twenty,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "aC" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -121,7 +121,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "aH" = (
 /obj/item/kirbyplants/random,
 /obj/structure/curtain{
@@ -129,31 +129,31 @@
 	pixel_x = -32
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "aJ" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "aM" = (
 /obj/structure/chair/wood{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "aN" = (
 /obj/structure/chair/bench,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "aO" = (
 /obj/machinery/light/small{
 	dir = 4
 	},
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "aQ" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
@@ -161,14 +161,14 @@
 /turf/open/floor/f13{
 	icon_state = "bar"
 	},
-/area/f13/building)
+/area/fallout/building)
 "aY" = (
 /obj/machinery/recycler,
 /obj/machinery/conveyor{
 	dir = 4
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "aZ" = (
 /obj/structure/toilet/secret/high_loot{
 	dir = 4
@@ -176,7 +176,7 @@
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/building)
+/area/fallout/building)
 "bd" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress2"
@@ -185,32 +185,32 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/restraints/handcuffs,
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/building)
+/area/fallout/building)
 "bn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/start/f13/venator,
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/legion)
+/area/fallout/legion)
 "bo" = (
 /obj/structure/table/optable,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "bp" = (
 /obj/structure/barricade/sandbags,
 /obj/machinery/light/small{
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "bq" = (
 /obj/machinery/vending/medical,
 /turf/open/floor/plasteel/showroomfloor{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "bu" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -218,7 +218,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "bv" = (
 /obj/effect/overlay/junk/shower{
 	dir = 8
@@ -231,17 +231,17 @@
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/building)
+/area/fallout/building)
 "by" = (
 /obj/structure/chair/f13chair2{
 	dir = 4
 	},
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "bz" = (
 /obj/structure/weightlifter,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "bA" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -250,10 +250,10 @@
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/bundle/f13/armor/combat/mk2,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/building)
+/area/fallout/building)
 "bC" = (
 /turf/closed/indestructible/rock,
-/area/f13/building)
+/area/fallout/building)
 "bF" = (
 /obj/structure/sink{
 	dir = 8;
@@ -272,29 +272,29 @@
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/building)
+/area/fallout/building)
 "bJ" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "bK" = (
 /obj/structure/showcase/horrific_experiment,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "bN" = (
 /obj/item/chair/wood,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "bO" = (
 /obj/structure/table/wood,
 /obj/item/toy/cards/deck,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "bQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/broken{
@@ -303,7 +303,7 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_light{
 	icon_state = "fancy_light-broken6"
 	},
-/area/f13/building)
+/area/fallout/building)
 "bV" = (
 /obj/effect/decal/cleanable/glass,
 /obj/item/shard{
@@ -328,41 +328,41 @@
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
-/area/f13/building)
+/area/fallout/building)
 "bW" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4;
 	light_color = "#f4e3b0"
 	},
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/legion)
+/area/fallout/legion)
 "bZ" = (
 /obj/structure/railing{
 	color = "#A47449";
 	dir = 1
 	},
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "cc" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/f13chair2{
 	dir = 4
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "ce" = (
 /obj/structure/closet/crate/freezer/blood/anchored,
 /turf/open/floor/plasteel/showroomfloor{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "cf" = (
 /obj/machinery/door/poddoor/shutters/old,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "ch" = (
 /obj/structure/table/optable,
 /obj/effect/decal/cleanable/dirt{
@@ -378,26 +378,26 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "cn" = (
 /obj/structure/railing/corner{
 	color = "#A47449";
 	dir = 4
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "co" = (
 /obj/structure/window/fulltile/wood/broken,
 /obj/structure/barricade/wooden/planks,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "cq" = (
 /obj/structure/simple_door/room,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "cs" = (
 /obj/structure/fence/wooden{
 	density = 0;
@@ -405,16 +405,16 @@
 	name = "wood post"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "cu" = (
 /turf/closed/mineral/random/high_chance,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "cw" = (
 /obj/machinery/computer,
 /turf/open/floor/plasteel/f13/vault_floor/blue{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "cx" = (
 /obj/structure/closet/cabinet,
 /obj/item/storage/belt/utility/gardener,
@@ -422,39 +422,39 @@
 /obj/item/clothing/under/f13/cowboyt,
 /obj/item/binoculars,
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "cy" = (
 /obj/structure/railing{
 	color = "#A47449";
 	dir = 5
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "cB" = (
 /obj/structure/bed/wooden{
 	pixel_y = 11
 	},
 /obj/structure/bed/wooden,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "cF" = (
 /obj/structure/simple_door/repaired,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "cI" = (
 /obj/structure/closet/cabinet,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "cL" = (
 /obj/item/flag/legion,
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "cW" = (
 /obj/structure/railing{
 	color = "#A47449"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "cX" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "floor2";
@@ -467,12 +467,12 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "db" = (
 /obj/structure/bed/wooden,
 /obj/item/bedsheet/brown,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/building)
+/area/fallout/building)
 "dh" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/pickaxe,
@@ -487,12 +487,12 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "dj" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "dl" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -502,25 +502,25 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier3,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "dm" = (
 /obj/structure/bed,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "dp" = (
 /obj/structure/bed/wooden,
 /obj/item/bedsheet/black,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "dq" = (
 /obj/effect/landmark/start/f13/centurion,
 /turf/open/floor/carpet/red,
-/area/f13/legion)
+/area/fallout/legion)
 "dr" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/radroach,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "dt" = (
 /obj/item/kirbyplants/random,
 /obj/structure/curtain{
@@ -528,11 +528,11 @@
 	pixel_x = 32
 	},
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "dv" = (
 /obj/machinery/light/small/broken,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "dA" = (
 /obj/structure/chair/f13chair2{
 	dir = 8
@@ -551,7 +551,7 @@
 	},
 /mob/living/simple_animal/hostile/renegade/soldier,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "dC" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/blueprintVHigh,
@@ -560,15 +560,15 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "dF" = (
 /obj/machinery/light/small,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "dJ" = (
 /obj/structure/frame/machine,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "dK" = (
 /obj/structure/sign/poster/contraband/pinup_shower,
 /turf/closed/indestructible/riveted{
@@ -578,21 +578,21 @@
 	icon_type_smooth = "tunnel";
 	name = "Reinforced utility tunnel"
 	},
-/area/f13/building)
+/area/fallout/building)
 "dL" = (
 /obj/structure/window/fulltile/wood,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "dO" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "dP" = (
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "dR" = (
 /obj/machinery/door/poddoor/shutters/old/preopen{
 	id = 23000;
@@ -602,14 +602,14 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "dS" = (
 /obj/structure/table/wood,
 /obj/item/radio/tribal{
 	pixel_y = 6
 	},
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "dX" = (
 /obj/structure/curtain{
 	color = "#845f58";
@@ -620,17 +620,17 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "ej" = (
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken4"
 	},
-/area/f13/building)
+/area/fallout/building)
 "eo" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "ep" = (
 /obj/structure/curtain{
 	color = "#c40e0e";
@@ -639,7 +639,7 @@
 /obj/structure/bed/old,
 /obj/item/bedsheet,
 /turf/open/floor/wood/wood_common,
-/area/f13/legion)
+/area/fallout/legion)
 "es" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -649,7 +649,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "ez" = (
 /obj/structure/railing/corner{
 	dir = 8
@@ -658,7 +658,7 @@
 	dir = 1
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "eA" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4;
@@ -667,53 +667,53 @@
 /turf/open/floor/plasteel/f13/vault_floor/red/white/side{
 	dir = 4
 	},
-/area/f13/legion)
+/area/fallout/legion)
 "eE" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red/white/side{
 	dir = 5
 	},
-/area/f13/legion)
+/area/fallout/legion)
 "eN" = (
 /obj/structure/railing/corner{
 	color = "#A47449"
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "eP" = (
 /obj/item/paper/fluff/ruins/deepstorage/water_concern{
 	info = "A reminder that regular monthly maintenace must be done on the experimental underground irrigation system to keep the system functional. Contact the below number to organize a scheduled upkeep regime from our technicians; As the system is still in it's experimental phase you will receive a 50% discount on any additional maintenance fees not covered by the contract.";
 	name = "irrigation system notice"
 	},
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "eQ" = (
 /obj/structure/stone_tile/block{
 	dir = 4
 	},
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "eU" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "eV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "fa" = (
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "fd" = (
 /obj/structure/curtain{
 	color = "#363636";
 	pixel_x = 32
 	},
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "fg" = (
 /obj/structure/bed/old,
 /obj/effect/spawner/lootdrop/bedsheet,
@@ -721,7 +721,7 @@
 	pixel_y = 32
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/building)
+/area/fallout/building)
 "fh" = (
 /obj/structure/closet/cabinet{
 	anchored = 1
@@ -733,14 +733,14 @@
 /obj/item/storage/bag/trash,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/building)
+/area/fallout/building)
 "fi" = (
 /obj/structure/railing/corner{
 	color = "#A47449";
 	dir = 8
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "fl" = (
 /obj/vehicle/ridden/wheelchair,
 /obj/machinery/light{
@@ -749,7 +749,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "fm" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -757,7 +757,7 @@
 /turf/open/floor/plasteel/showroomfloor{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "fo" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -766,19 +766,19 @@
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/bundle/f13/armor/combat,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/building)
+/area/fallout/building)
 "fs" = (
 /obj/machinery/photocopier,
 /obj/machinery/light/small{
 	dir = 8
 	},
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "ft" = (
 /obj/item/kirbyplants/random,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "fv" = (
 /obj/structure/fence/wooden{
 	dir = 4;
@@ -786,7 +786,7 @@
 	},
 /obj/structure/barricade/wooden/strong,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "fy" = (
 /obj/structure/closet/cabinet,
 /obj/item/pda,
@@ -799,13 +799,13 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common/wood_common_light,
-/area/f13/building)
+/area/fallout/building)
 "fz" = (
 /obj/structure/railing{
 	color = "#A47449"
 	},
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "fA" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/blood/drip,
@@ -815,18 +815,18 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "fJ" = (
 /obj/effect/landmark/start/f13/vetlegionary,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/black,
-/area/f13/legion)
+/area/fallout/legion)
 "fP" = (
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/lootdrop/f13/armor/tier3,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/lowmid,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "fW" = (
 /obj/structure/chair/office/dark{
 	dir = 1
@@ -839,16 +839,16 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "fX" = (
 /obj/item/storage/trash_stack,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "gc" = (
 /obj/structure/chair/stool/retro/tan,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "gd" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress5"
@@ -856,7 +856,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/building)
+/area/fallout/building)
 "ge" = (
 /obj/structure/sign/poster/contraband/pinup_anthro15,
 /turf/closed/indestructible/riveted{
@@ -866,17 +866,17 @@
 	icon_type_smooth = "tunnel";
 	name = "Reinforced utility tunnel"
 	},
-/area/f13/building)
+/area/fallout/building)
 "gi" = (
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "gj" = (
 /obj/structure/railing/corner{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
-/area/f13/legion)
+/area/fallout/legion)
 "gr" = (
 /obj/machinery/light/fo13colored/Red{
 	dir = 1
@@ -885,7 +885,7 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "gv" = (
 /obj/structure/sink{
 	dir = 8;
@@ -897,7 +897,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/red/white/side{
 	dir = 9
 	},
-/area/f13/legion)
+/area/fallout/legion)
 "gw" = (
 /obj/structure/railing/corner{
 	color = "#A47449";
@@ -908,7 +908,7 @@
 	dir = 4
 	},
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "gy" = (
 /obj/item/kirbyplants/random,
 /obj/structure/railing{
@@ -916,11 +916,11 @@
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "gz" = (
 /obj/structure/simple_door/metal,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "gB" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -928,7 +928,7 @@
 	},
 /obj/structure/closet/crate,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "gD" = (
 /obj/machinery/door/unpowered/celldoor,
 /obj/machinery/door/poddoor/shutters/old/preopen{
@@ -940,7 +940,7 @@
 	name = "Maximum Security Lockdown"
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "gF" = (
 /obj/structure/toilet{
 	dir = 4
@@ -952,7 +952,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/red/white/side{
 	dir = 10
 	},
-/area/f13/legion)
+/area/fallout/legion)
 "gG" = (
 /obj/machinery/shower{
 	dir = 4
@@ -962,7 +962,7 @@
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "gH" = (
 /obj/machinery/light{
 	dir = 1
@@ -970,22 +970,22 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "gJ" = (
 /obj/structure/table/snooker,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "gN" = (
 /obj/machinery/light,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "gQ" = (
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "gU" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -995,43 +995,43 @@
 	dir = 8
 	},
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "gW" = (
 /obj/structure/simple_door/wood{
 	name = "recovery room"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
-/area/f13/legion)
+/area/fallout/legion)
 "gZ" = (
 /obj/structure/camera_assembly{
 	dir = 5
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "ha" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/red,
-/area/f13/legion)
+/area/fallout/legion)
 "hc" = (
 /obj/structure/chair/sofa/corp/corner{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/green,
-/area/f13/building)
+/area/fallout/building)
 "hf" = (
 /obj/machinery/vending/cigarette,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "hk" = (
 /obj/structure/junk/drawer,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "hl" = (
 /obj/structure/simple_door/wood,
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "hu" = (
 /obj/structure/sink{
 	dir = 8;
@@ -1041,7 +1041,7 @@
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "hv" = (
 /obj/machinery/blackbox_recorder{
 	name = "data unit"
@@ -1049,11 +1049,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "hw" = (
 /obj/structure/simple_door/interior,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "hx" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -1061,7 +1061,7 @@
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/building)
+/area/fallout/building)
 "hz" = (
 /obj/structure/debris/v3,
 /turf/closed/indestructible/riveted{
@@ -1071,14 +1071,14 @@
 	icon_type_smooth = "supermart";
 	name = "Reinforced prison wall"
 	},
-/area/f13/building)
+/area/fallout/building)
 "hA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/sofa/right,
 /turf/open/floor/f13{
 	icon_state = "floordirty"
 	},
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "hC" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 28
@@ -1088,26 +1088,26 @@
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "hD" = (
 /obj/structure/bookcase{
 	icon_state = "book-3"
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "hE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken1"
 	},
-/area/f13/building)
+/area/fallout/building)
 "hF" = (
 /obj/structure/bookcase,
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "hG" = (
 /obj/structure/chair/f13chair2{
 	dir = 4
@@ -1117,7 +1117,7 @@
 	name = "Renegade Lieutenant"
 	},
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "hH" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "floor2";
@@ -1127,7 +1127,7 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "hJ" = (
 /obj/structure/curtain{
 	color = "#c40e0e";
@@ -1139,7 +1139,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "hK" = (
 /obj/structure/barricade/bars{
 	max_integrity = 800;
@@ -1148,7 +1148,7 @@
 	},
 /obj/structure/barricade/concrete,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "hN" = (
 /obj/structure/sign/departments/chemistry,
 /turf/closed/indestructible/riveted{
@@ -1158,24 +1158,24 @@
 	icon_type_smooth = "supermart";
 	name = "Reinforced prison wall"
 	},
-/area/f13/building)
+/area/fallout/building)
 "hP" = (
 /obj/structure/railing/corner{
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
-/area/f13/legion)
+/area/fallout/legion)
 "hS" = (
 /obj/machinery/iv_drip,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "hT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/broken,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "hU" = (
 /obj/structure/toilet/secret/prison{
 	dir = 8
@@ -1184,14 +1184,14 @@
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "hW" = (
 /turf/open/floor/wood/wood_fancy,
-/area/f13/building)
+/area/fallout/building)
 "hZ" = (
 /obj/structure/simple_door/wood,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "ie" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/cleanable/blood/tracks{
@@ -1202,10 +1202,10 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "ig" = (
 /turf/open/floor/carpet/green,
-/area/f13/building)
+/area/fallout/building)
 "ik" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -1213,7 +1213,7 @@
 	},
 /obj/structure/stone_tile/block,
 /turf/open/transparent/openspace,
-/area/f13/building)
+/area/fallout/building)
 "im" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -1221,7 +1221,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "in" = (
 /obj/machinery/button/door{
 	id = 23555;
@@ -1235,14 +1235,14 @@
 	icon_type_smooth = "supermart";
 	name = "Reinforced prison wall"
 	},
-/area/f13/building)
+/area/fallout/building)
 "io" = (
 /turf/open/floor/wood/wood_common,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "ir" = (
 /obj/structure/junk/small,
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "iu" = (
 /obj/machinery/iv_drip,
 /obj/machinery/iv_drip,
@@ -1255,11 +1255,11 @@
 /turf/open/floor/plasteel/showroomfloor{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "iv" = (
 /obj/structure/simple_door/wood,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "iw" = (
 /obj/machinery/button/door{
 	id = 56545;
@@ -1270,26 +1270,26 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "ix" = (
 /obj/machinery/light/fo13colored/Red{
 	dir = 4
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "iy" = (
 /obj/structure/table/snooker{
 	dir = 5
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "iB" = (
 /obj/structure/railing/corner{
 	color = "#A47449";
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "iC" = (
 /obj/structure/sign/poster/contraband/pinup_topless,
 /turf/closed/indestructible/riveted{
@@ -1299,14 +1299,14 @@
 	icon_type_smooth = "tunnel";
 	name = "Reinforced utility tunnel"
 	},
-/area/f13/building)
+/area/fallout/building)
 "iD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/ammo_box/c10mm/improvised,
 /turf/open/floor/f13{
 	icon_state = "floordirty"
 	},
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "iF" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -1316,14 +1316,14 @@
 /turf/open/floor/wood/wood_common/wood_common_light{
 	icon_state = "common_light-broken3"
 	},
-/area/f13/building)
+/area/fallout/building)
 "iG" = (
 /obj/structure/curtain{
 	color = "#c40e0e";
 	pixel_x = 32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
-/area/f13/legion)
+/area/fallout/legion)
 "iM" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
@@ -1332,33 +1332,33 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "iO" = (
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 4
 	},
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "iR" = (
 /obj/machinery/autolathe,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "iT" = (
 /obj/structure/simple_door/bunker{
 	name = "Interrogation"
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/building)
+/area/fallout/building)
 "iU" = (
 /obj/structure/simple_door/wood,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "iV" = (
 /obj/machinery/light{
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "iX" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -1368,7 +1368,7 @@
 /turf/open/floor/f13{
 	icon_state = "whitebluerustychess"
 	},
-/area/f13/building)
+/area/fallout/building)
 "iZ" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -1380,7 +1380,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "jf" = (
 /obj/structure/simple_door/bunker{
 	name = "Medbay Access"
@@ -1388,19 +1388,19 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "jh" = (
 /obj/structure/closet/cabinet/anchored,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superlow,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "ji" = (
 /obj/structure/stone_tile/surrounding_tile,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "jo" = (
 /obj/structure/railing/corner{
 	color = "#A47449"
@@ -1410,19 +1410,19 @@
 	dir = 8
 	},
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "jt" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8
 	},
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "jx" = (
 /obj/structure/chair/wood/dining{
 	dir = 8
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "jy" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -1431,7 +1431,7 @@
 /obj/structure/table/wood,
 /obj/item/binoculars,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "jB" = (
 /obj/structure/table/wood,
 /obj/machinery/computer/terminal{
@@ -1439,39 +1439,39 @@
 	termtag = "Business"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "jC" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/radiation)
+/area/fallout/radiation)
 "jG" = (
 /obj/structure/window/fulltile/wood,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "jJ" = (
 /obj/structure/curtain{
 	color = "#363636";
 	pixel_y = 32
 	},
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "jL" = (
 /obj/structure/table/wood,
 /obj/item/weapon/maptool,
 /turf/open/floor/plating/f13/inside/gravel,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "jN" = (
 /obj/machinery/light/small/broken{
 	dir = 4
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "jO" = (
 /obj/structure/window/fulltile/wood/broken,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "jQ" = (
 /obj/machinery/power/apc,
 /turf/closed/indestructible/riveted{
@@ -1481,26 +1481,26 @@
 	icon_type_smooth = "tunnel";
 	name = "Reinforced utility tunnel"
 	},
-/area/f13/building)
+/area/fallout/building)
 "jX" = (
 /obj/structure/bed/old,
 /obj/effect/spawner/lootdrop/bedsheet,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/building)
+/area/fallout/building)
 "jY" = (
 /obj/structure/chair/bench,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "kc" = (
 /obj/structure/table,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "kf" = (
 /obj/structure/debris/v3,
 /turf/open/floor/plasteel/stairs{
 	dir = 4
 	},
-/area/f13/building)
+/area/fallout/building)
 "ki" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -1509,21 +1509,21 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "kj" = (
 /obj/structure/railing{
 	color = "#A47449";
 	dir = 4
 	},
 /turf/open/floor/f13/wood,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "kk" = (
 /obj/structure/railing{
 	color = "#A47449"
 	},
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "kl" = (
 /obj/structure/bed/wooden,
 /obj/item/bedsheet/black,
@@ -1534,7 +1534,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "km" = (
 /obj/item/stack/sheet/metal/fifty,
 /obj/item/stack/sheet/glass/fifty,
@@ -1543,13 +1543,13 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "kq" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "ku" = (
 /obj/effect/overlay/junk/toilet{
 	dir = 8
@@ -1563,41 +1563,41 @@
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/building)
+/area/fallout/building)
 "kv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/broken{
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "kx" = (
 /turf/closed/wall/f13/sunset/brick_small,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "ky" = (
 /obj/item/toy/beach_ball/holoball,
 /obj/effect/turf_decal/trimline/neutral/line{
 	dir = 4
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "kA" = (
 /obj/structure/fermenting_barrel,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "kC" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
 /turf/open/floor/f13{
 	icon_state = "bar"
 	},
-/area/f13/building)
+/area/fallout/building)
 "kD" = (
 /obj/structure/timeddoor,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "kF" = (
 /obj/structure/sign/poster/contraband/pinup_anthro2,
 /turf/closed/indestructible/riveted{
@@ -1607,7 +1607,7 @@
 	icon_type_smooth = "tunnel";
 	name = "Reinforced utility tunnel"
 	},
-/area/f13/building)
+/area/fallout/building)
 "kI" = (
 /obj/structure/camera_assembly{
 	dir = 8
@@ -1615,7 +1615,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "kQ" = (
 /obj/machinery/smartfridge/bottlerack/drug_storage,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
@@ -1623,20 +1623,20 @@
 /turf/open/floor/plasteel/showroomfloor{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "kS" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8;
 	light_color = "#f4e3b0"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "kT" = (
 /obj/structure/chair/comfy/brown{
 	dir = 8
 	},
 /turf/open/floor/carpet/red,
-/area/f13/legion)
+/area/fallout/legion)
 "kX" = (
 /obj/machinery/shower{
 	dir = 8
@@ -1650,11 +1650,11 @@
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "ld" = (
 /obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "lh" = (
 /obj/machinery/door/unpowered/securedoor{
 	damage_deflection = 28;
@@ -1664,12 +1664,12 @@
 	req_access_txt = "123"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "li" = (
 /turf/open/floor/wood/wood_common{
 	icon_state = "common-broken3"
 	},
-/area/f13/building)
+/area/fallout/building)
 "lm" = (
 /obj/machinery/chem_heater,
 /obj/structure/camera_assembly{
@@ -1678,7 +1678,7 @@
 /turf/open/floor/plasteel/showroomfloor{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "lo" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/clothing/suit/straight_jacket,
@@ -1706,7 +1706,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "lq" = (
 /obj/structure/sign/poster/prewar/poster73,
 /turf/closed/indestructible/riveted{
@@ -1716,24 +1716,24 @@
 	icon_type_smooth = "tunnel";
 	name = "Reinforced utility tunnel"
 	},
-/area/f13/building)
+/area/fallout/building)
 "ls" = (
 /obj/machinery/smartfridge/bottlerack,
 /turf/open/floor/f13{
 	icon_state = "bar"
 	},
-/area/f13/building)
+/area/fallout/building)
 "lu" = (
 /obj/structure/railing{
 	dir = 1
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "lv" = (
 /obj/structure/closet/locker/oldstyle,
 /obj/item/gun/ballistic/automatic/pistol/mk23,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "lw" = (
 /obj/machinery/shower{
 	dir = 4
@@ -1742,14 +1742,14 @@
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
-/area/f13/building)
+/area/fallout/building)
 "lx" = (
 /obj/structure/chair/wood{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "lA" = (
 /obj/structure/camera_assembly,
 /obj/structure/nest/protectron{
@@ -1758,13 +1758,13 @@
 	pixel_y = 20
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "lF" = (
 /obj/structure/fluff/railing/corner{
 	dir = 8
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "lG" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -1772,17 +1772,17 @@
 	},
 /obj/structure/stone_tile/slab,
 /turf/open/transparent/openspace,
-/area/f13/building)
+/area/fallout/building)
 "lH" = (
 /obj/structure/railing{
 	color = "#A47449";
 	dir = 8
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "lJ" = (
 /turf/open/floor/carpet/black,
-/area/f13/building)
+/area/fallout/building)
 "lL" = (
 /obj/structure/railing{
 	color = "#A47449"
@@ -1790,14 +1790,14 @@
 /turf/open/floor/f13/wood{
 	icon_state = "housewood4-broken"
 	},
-/area/f13/building)
+/area/fallout/building)
 "lM" = (
 /obj/machinery/shower{
 	dir = 4
 	},
 /obj/structure/drain,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "lO" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -1806,7 +1806,7 @@
 /turf/open/floor/plasteel/showroomfloor{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "lR" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -1815,11 +1815,11 @@
 /turf/open/floor/f13{
 	icon_state = "whitebluerustychess"
 	},
-/area/f13/building)
+/area/fallout/building)
 "lW" = (
 /obj/structure/junk/small/tv,
 /turf/open/floor/carpet/green,
-/area/f13/building)
+/area/fallout/building)
 "mb" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -1838,14 +1838,14 @@
 	light_color = "red"
 	},
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "mc" = (
 /obj/structure/chair/wood/dining{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "mh" = (
 /obj/structure/curtain{
 	color = "#c40e0e";
@@ -1854,26 +1854,26 @@
 /obj/structure/bed/wooden,
 /obj/item/bedsheet/black,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "mk" = (
 /obj/structure/lattice,
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "mq" = (
 /obj/item/stack/cable_coil/cyan,
 /obj/item/multitool,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common/wood_common_light,
-/area/f13/building)
+/area/fallout/building)
 "mu" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/traitbooks/low,
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/legion)
+/area/fallout/legion)
 "mv" = (
 /obj/structure/fluff/railing/corner,
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "my" = (
 /obj/effect/overlay/junk/shower{
 	dir = 4
@@ -1883,28 +1883,28 @@
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "mz" = (
 /obj/structure/junk/cabinet,
 /obj/structure/sign/poster/contraband/free_tonto{
 	pixel_y = 32
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "mA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "floordirty"
 	},
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "mE" = (
 /obj/structure/railing{
 	color = "#A47449";
 	dir = 8
 	},
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "mF" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 9
@@ -1912,7 +1912,7 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "mH" = (
 /obj/machinery/chem_dispenser/low_power,
 /obj/machinery/light{
@@ -1921,12 +1921,12 @@
 /turf/open/floor/plasteel/showroomfloor{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "mL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "mM" = (
 /obj/machinery/button/door{
 	id = 56545;
@@ -1939,14 +1939,14 @@
 	icon_type_smooth = "tunnel";
 	name = "Reinforced utility tunnel"
 	},
-/area/f13/building)
+/area/fallout/building)
 "mR" = (
 /obj/structure/curtain{
 	color = "#c40e0e";
 	pixel_x = -32
 	},
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/legion)
+/area/fallout/legion)
 "mY" = (
 /obj/machinery/door/unpowered/securedoor{
 	damage_deflection = 28;
@@ -1956,16 +1956,16 @@
 	req_access_txt = "123"
 	},
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/legion)
+/area/fallout/legion)
 "na" = (
 /obj/structure/debris/v2,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "nb" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housewood3-broken"
 	},
-/area/f13/building)
+/area/fallout/building)
 "nc" = (
 /obj/structure/closet/locker/oldstyle,
 /obj/item/clothing/under/rank/prisoner,
@@ -1986,13 +1986,13 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "nd" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "ng" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -2000,20 +2000,20 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "nh" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
 /obj/effect/spawner/lootdrop/f13/cash_ncr_med,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "no" = (
 /obj/structure/railing{
 	color = "#A47449";
 	dir = 10
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "np" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -2022,11 +2022,11 @@
 /obj/structure/table,
 /obj/item/stack/circuit_stack,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "nq" = (
 /obj/structure/chair/wood/dining,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "nr" = (
 /obj/item/chair/wood,
 /obj/structure/curtain{
@@ -2034,18 +2034,18 @@
 	pixel_y = -32
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "nt" = (
 /obj/structure/barricade/wooden,
 /obj/structure/decoration/rag,
 /turf/closed/wall/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "nx" = (
 /obj/structure/dresser,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "ny" = (
 /obj/structure/barricade/wooden/strong,
 /obj/structure/fence/wooden{
@@ -2056,7 +2056,7 @@
 	name = "vines"
 	},
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "nI" = (
 /obj/machinery/light/small{
 	dir = 8;
@@ -2066,32 +2066,32 @@
 	dir = 5
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "nL" = (
 /obj/structure/dresser,
 /obj/item/pda,
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/legion)
+/area/fallout/legion)
 "nM" = (
 /obj/machinery/door/airlock/highsecurity{
 	armor = list("melee"=55,"bullet"=30,"laser"=20,"energy"=20,"bomb"=10,"bio"=100,"rad"=100,"fire"=80,"acid"=70);
 	name = "Guard Station"
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "nO" = (
 /obj/structure/debris/v1,
 /turf/open/floor/plasteel/stairs{
 	dir = 4
 	},
-/area/f13/building)
+/area/fallout/building)
 "nP" = (
 /obj/structure/railing{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "nQ" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/clothing/shoes/ballandchain,
@@ -2103,20 +2103,20 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "nS" = (
 /obj/structure/fluff/railing/corner{
 	dir = 1
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "nT" = (
 /obj/structure/curtain{
 	color = "#363636";
 	pixel_x = -32
 	},
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "nV" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -2133,14 +2133,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "nW" = (
 /obj/structure/window/fulltile/wood,
 /obj/structure/barricade/wooden/planks{
 	icon_state = "board-1"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "nX" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -2151,12 +2151,12 @@
 	dir = 4
 	},
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "oc" = (
 /obj/structure/chair/wood,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "od" = (
 /obj/structure/simple_door/bunker{
 	name = "Medical Storage"
@@ -2164,14 +2164,14 @@
 /turf/open/floor/plasteel/showroomfloor{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "of" = (
 /obj/structure/railing/corner{
 	color = "#A47449";
 	dir = 4
 	},
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "oj" = (
 /obj/structure/chair/stool,
 /obj/structure/curtain{
@@ -2180,7 +2180,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "om" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/bottle/applejack,
@@ -2193,26 +2193,26 @@
 /turf/open/floor/f13{
 	icon_state = "bar"
 	},
-/area/f13/building)
+/area/fallout/building)
 "op" = (
 /obj/structure/bed/wooden,
 /obj/item/bedsheet/brown,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "or" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/f13/wood/house,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "ov" = (
 /obj/structure/nest/ghoul,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "ow" = (
 /obj/structure/simple_door/wood{
 	name = "Washroom"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
-/area/f13/legion)
+/area/fallout/legion)
 "ox" = (
 /obj/structure/closet/crate/footchest,
 /obj/effect/spawner/lootdrop/techstorage/engineering,
@@ -2221,7 +2221,7 @@
 	pixel_y = 32
 	},
 /turf/open/floor/wood/wood_common/wood_common_light,
-/area/f13/building)
+/area/fallout/building)
 "oB" = (
 /obj/effect/decal/cleanable/glass,
 /obj/item/shard{
@@ -2233,7 +2233,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "oG" = (
 /obj/structure/table,
 /obj/item/crafting/abraxo{
@@ -2245,37 +2245,37 @@
 /turf/open/floor/f13{
 	icon_state = "whitebluerustychess"
 	},
-/area/f13/building)
+/area/fallout/building)
 "oI" = (
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "oK" = (
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken1"
 	},
-/area/f13/building)
+/area/fallout/building)
 "oO" = (
 /obj/effect/spawner/lootdrop/gambling,
 /turf/open/floor/f13/wood{
 	icon_state = "housebase"
 	},
-/area/f13/building)
+/area/fallout/building)
 "oP" = (
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "oT" = (
 /obj/structure/junk/arcade,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common/wood_common_light,
-/area/f13/building)
+/area/fallout/building)
 "pa" = (
 /obj/structure/railing{
 	color = "#A47449";
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "pb" = (
 /obj/structure/chair/wood/dining{
 	dir = 4
@@ -2283,13 +2283,13 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "pf" = (
 /obj/machinery/light/small/broken{
 	dir = 8
 	},
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "pj" = (
 /obj/structure/table,
 /obj/item/integrated_circuit/logic/binary/and,
@@ -2305,11 +2305,11 @@
 	pixel_x = -32
 	},
 /turf/open/floor/wood/wood_common/wood_common_light,
-/area/f13/building)
+/area/fallout/building)
 "pk" = (
 /obj/effect/landmark/start/f13/orator,
 /turf/open/floor/carpet/red,
-/area/f13/legion)
+/area/fallout/legion)
 "pl" = (
 /obj/structure/table,
 /obj/item/seeds/apple{
@@ -2321,23 +2321,23 @@
 /turf/open/floor/f13{
 	icon_state = "bar"
 	},
-/area/f13/building)
+/area/fallout/building)
 "pn" = (
 /obj/structure/junk/drawer{
 	icon_state = "junk_bench"
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "pq" = (
 /obj/machinery/smartfridge/bottlerack/lootshelf/construction,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "ps" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "bar"
 	},
-/area/f13/building)
+/area/fallout/building)
 "pt" = (
 /obj/structure/nest/protectron{
 	layer = 3;
@@ -2347,38 +2347,38 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "py" = (
 /obj/structure/simple_door/glass,
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
-/area/f13/building)
+/area/fallout/building)
 "pz" = (
 /obj/structure/bed/wooden,
 /obj/item/bedsheet/black,
 /turf/open/floor/wood/wood_fancy{
 	icon_state = "fancy-broken3"
 	},
-/area/f13/building)
+/area/fallout/building)
 "pB" = (
 /obj/machinery/vending/wardrobe/sec_wardrobe,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "pD" = (
 /obj/structure/junk/small/tv,
 /turf/open/floor/wood/wood_common/wood_common_light,
-/area/f13/building)
+/area/fallout/building)
 "pE" = (
 /obj/machinery/smartfridge/bottlerack/lootshelf/diy,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "pG" = (
 /obj/machinery/light/small/broken{
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "pI" = (
 /obj/structure/sink{
 	dir = 8;
@@ -2391,18 +2391,18 @@
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "pN" = (
 /obj/machinery/power/rtg,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/radiation)
+/area/fallout/radiation)
 "pR" = (
 /obj/structure/railing{
 	color = "#A47449";
 	dir = 6
 	},
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "pS" = (
 /obj/structure/bed/wooden,
 /obj/item/bedsheet/brown,
@@ -2410,29 +2410,29 @@
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken3"
 	},
-/area/f13/building)
+/area/fallout/building)
 "pT" = (
 /turf/closed/indestructible/rock,
-/area/f13/caves)
+/area/fallout/caves)
 "pV" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken5"
 	},
-/area/f13/building)
+/area/fallout/building)
 "pW" = (
 /obj/structure/curtain{
 	color = "#5c131b"
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "pY" = (
 /obj/structure/curtain{
 	color = "#363636";
 	pixel_y = -32
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "qd" = (
 /obj/structure/simple_door/bunker{
 	name = "Pharmacy"
@@ -2445,13 +2445,13 @@
 	icon_state = "showroomfloor";
 	name = "tile"
 	},
-/area/f13/building)
+/area/fallout/building)
 "qj" = (
 /obj/structure/junk/small/table,
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "qk" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -2459,17 +2459,17 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "ql" = (
 /obj/item/stack/sheet/mineral/sandbags,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "qp" = (
 /obj/machinery/light/small{
 	dir = 4
 	},
 /turf/open/floor/carpet/black,
-/area/f13/building)
+/area/fallout/building)
 "qr" = (
 /obj/structure/sign/warning/radiation,
 /turf/closed/indestructible/riveted{
@@ -2479,7 +2479,7 @@
 	icon_type_smooth = "tunnel";
 	name = "Reinforced utility tunnel"
 	},
-/area/f13/building)
+/area/fallout/building)
 "qt" = (
 /obj/machinery/door/unpowered/celldoor,
 /obj/machinery/door/poddoor/shutters/old/preopen{
@@ -2487,7 +2487,7 @@
 	name = "Prison Lockdown"
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "qu" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -2496,7 +2496,7 @@
 	dir = 4
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "qx" = (
 /obj/structure/curtain{
 	color = "#845f58";
@@ -2506,7 +2506,7 @@
 /obj/item/bedsheet/brown,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "qy" = (
 /obj/structure/table/reinforced,
 /obj/machinery/computer/terminal{
@@ -2517,25 +2517,25 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "qA" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/radroach,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "qB" = (
 /obj/structure/stone_tile/block{
 	dir = 1
 	},
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "qC" = (
 /obj/machinery/light/small/broken{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "qD" = (
 /obj/machinery/door/poddoor/shutters/old/preopen{
 	id = 23000;
@@ -2544,21 +2544,21 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "qE" = (
 /obj/machinery/door/unpowered/celldoor,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "qF" = (
 /obj/structure/railing{
 	dir = 8
 	},
 /obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "qG" = (
 /obj/item/chair/wood,
 /obj/effect/decal/cleanable/glass,
@@ -2567,13 +2567,13 @@
 	pixel_y = 32
 	},
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "qI" = (
 /obj/structure/table/snooker{
 	dir = 9
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "qM" = (
 /obj/machinery/door/unpowered/securedoor{
 	damage_deflection = 28;
@@ -2583,36 +2583,36 @@
 	req_access_txt = "123"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "qN" = (
 /obj/structure/closet/crate/footlocker{
 	anchored = 1;
 	pixel_x = 5
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "qO" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "qP" = (
 /obj/structure/bed,
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "rb" = (
 /obj/structure/simple_door/wood,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "rd" = (
 /obj/structure/railing,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "re" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -2620,25 +2620,25 @@
 	},
 /obj/structure/stone_tile/slab,
 /turf/open/transparent/openspace,
-/area/f13/building)
+/area/fallout/building)
 "rf" = (
 /obj/structure/table/snooker{
 	dir = 1
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "rh" = (
 /obj/structure/curtain{
 	color = "#363636";
 	pixel_y = -32
 	},
 /turf/open/transparent/openspace,
-/area/f13/building)
+/area/fallout/building)
 "ri" = (
 /obj/item/tape/random,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/green,
-/area/f13/building)
+/area/fallout/building)
 "rl" = (
 /obj/structure/closet/crate/footlocker{
 	anchored = 1;
@@ -2646,20 +2646,20 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "rm" = (
 /obj/structure/railing{
 	color = "#A47449";
 	dir = 4
 	},
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "rn" = (
 /obj/structure/bookcase{
 	icon_state = "book-3"
 	},
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/legion)
+/area/fallout/legion)
 "ro" = (
 /obj/structure/lattice,
 /turf/closed/indestructible/rock{
@@ -2670,12 +2670,12 @@
 	name = "Concrete wall";
 	smooth = 1
 	},
-/area/f13/building)
+/area/fallout/building)
 "rq" = (
 /obj/effect/decal/cleanable/glass,
 /obj/structure/barricade/sandbags,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "ru" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gibbearcore"
@@ -2689,19 +2689,19 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "rv" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/backpack/duffelbag/med/surgery,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "rw" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "ry" = (
 /obj/machinery/shower{
 	dir = 4
@@ -2710,70 +2710,70 @@
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/building)
+/area/fallout/building)
 "rz" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common/wood_common_light{
 	icon_state = "common_light-broken1"
 	},
-/area/f13/building)
+/area/fallout/building)
 "rB" = (
 /obj/structure/window/fulltile/wood/broken,
 /obj/structure/barricade/wooden/planks{
 	icon_state = "board-2"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "rD" = (
 /obj/structure/bookcase{
 	icon_state = "book-4"
 	},
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/legion)
+/area/fallout/legion)
 "rQ" = (
 /obj/structure/railing{
 	layer = 4.1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
-/area/f13/legion)
+/area/fallout/legion)
 "rU" = (
 /obj/structure/closet/crate{
 	anchored = 1;
 	can_be_unanchored = 1
 	},
 /turf/open/floor/wood/wood_common,
-/area/f13/legion)
+/area/fallout/legion)
 "rX" = (
 /obj/structure/chair/wood,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "rY" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "sc" = (
 /obj/structure/bed/mattress/pregame,
 /obj/structure/camera_assembly,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "sd" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
-/area/f13/building)
+/area/fallout/building)
 "se" = (
 /obj/structure/wreck/trash/engine,
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "sg" = (
 /obj/structure/chair/comfy/brown{
 	dir = 1
 	},
 /turf/open/floor/carpet/red,
-/area/f13/legion)
+/area/fallout/legion)
 "sl" = (
 /obj/structure/curtain{
 	color = "#c40e0e";
@@ -2782,17 +2782,17 @@
 /obj/structure/chair/stool,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
-/area/f13/legion)
+/area/fallout/legion)
 "sq" = (
 /obj/structure/wreck/trash/machinepiletwo,
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "sy" = (
 /obj/effect/turf_decal/trimline/neutral/line{
 	dir = 4
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "sF" = (
 /obj/structure/camera_assembly{
 	dir = 10
@@ -2800,14 +2800,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "sJ" = (
 /obj/structure/table/optable,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "sK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -2815,11 +2815,11 @@
 /turf/open/floor/wood/wood_common{
 	icon_state = "common-broken5"
 	},
-/area/f13/building)
+/area/fallout/building)
 "sL" = (
 /obj/structure/camera_assembly,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "sO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/broken{
@@ -2828,17 +2828,17 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_light{
 	icon_state = "fancy_light-broken1"
 	},
-/area/f13/building)
+/area/fallout/building)
 "sP" = (
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/legion)
+/area/fallout/legion)
 "sQ" = (
 /turf/closed/mineral/random/low_chance,
-/area/f13/legion)
+/area/fallout/legion)
 "sT" = (
 /obj/structure/simple_door/repaired,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "sU" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4;
@@ -2846,10 +2846,10 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
-/area/f13/legion)
+/area/fallout/legion)
 "sW" = (
 /turf/closed/indestructible/f13/obsidian,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "sY" = (
 /obj/machinery/light{
 	dir = 1
@@ -2860,7 +2860,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "ta" = (
 /obj/structure/fence/wooden{
 	density = 0;
@@ -2871,7 +2871,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/barricade/sandbags,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "tb" = (
 /obj/structure/table,
 /obj/item/kitchen/rollingpin,
@@ -2880,31 +2880,31 @@
 /turf/open/floor/f13{
 	icon_state = "bar"
 	},
-/area/f13/building)
+/area/fallout/building)
 "td" = (
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "ti" = (
 /obj/machinery/light/small/broken,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "tj" = (
 /obj/structure/railing/corner{
 	color = "#A47449";
 	dir = 1
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "tl" = (
 /obj/effect/spawner/lootdrop/trash,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "tn" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -2915,27 +2915,27 @@
 	pixel_x = 31
 	},
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "tq" = (
 /obj/structure/chair/comfy/beige{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "tr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common/wood_common_light,
-/area/f13/building)
+/area/fallout/building)
 "tt" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
 	dir = 1
 	},
 /turf/open/floor/carpet/green,
-/area/f13/building)
+/area/fallout/building)
 "tv" = (
 /obj/machinery/shower{
 	dir = 8;
@@ -2943,27 +2943,27 @@
 	},
 /obj/structure/drain,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "tz" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/building)
+/area/fallout/building)
 "tB" = (
 /obj/structure/chair/wood,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "tE" = (
 /obj/structure/railing{
 	color = "#A47449"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "tF" = (
 /obj/structure/fluff/railing{
 	dir = 1
@@ -2972,7 +2972,7 @@
 	dir = 1
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "tG" = (
 /obj/structure/railing/corner{
 	color = "#A47449";
@@ -2984,7 +2984,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "tH" = (
 /obj/structure/bed/wooden,
 /obj/item/bedsheet/black,
@@ -2994,14 +2994,14 @@
 	pixel_y = 24
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "tI" = (
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
-/area/f13/legion)
+/area/fallout/legion)
 "tN" = (
 /obj/structure/table/wood,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "tO" = (
 /obj/structure/barricade/wooden/strong,
 /obj/structure/fence/wooden{
@@ -3009,7 +3009,7 @@
 	icon_state = "post_wood"
 	},
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "uf" = (
 /obj/machinery/door/poddoor{
 	id = 5654
@@ -3022,7 +3022,7 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "ug" = (
 /obj/structure/decoration/vent{
 	icon_state = "ventrusty"
@@ -3032,22 +3032,22 @@
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "ui" = (
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier3,
 /turf/open/floor/f13/wood{
 	icon_state = "housebase"
 	},
-/area/f13/building)
+/area/fallout/building)
 "uj" = (
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken3"
 	},
-/area/f13/building)
+/area/fallout/building)
 "un" = (
 /obj/structure/table/wood,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "up" = (
 /obj/effect/decal/cleanable/glass,
 /obj/item/shard,
@@ -3059,37 +3059,37 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_light{
 	icon_state = "fancy_light-broken1"
 	},
-/area/f13/building)
+/area/fallout/building)
 "ur" = (
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "us" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood4-broken"
 	},
-/area/f13/building)
+/area/fallout/building)
 "uw" = (
 /obj/structure/barricade/wooden,
 /turf/closed/mineral/random/low_chance,
-/area/f13/legion)
+/area/fallout/legion)
 "uz" = (
 /obj/structure/bed/wooden,
 /turf/open/floor/wood/wood_fancy{
 	icon_state = "fancy-broken1"
 	},
-/area/f13/building)
+/area/fallout/building)
 "uB" = (
 /obj/structure/junk/drawer,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "uF" = (
 /obj/structure/railing{
 	color = "#A47449";
 	dir = 4
 	},
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "uH" = (
 /obj/structure/simple_door/bunker{
 	name = "Service Ladder"
@@ -3099,20 +3099,20 @@
 	name = "Prison Lockdown"
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "uI" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8;
 	light_color = "#f4e3b0"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
-/area/f13/legion)
+/area/fallout/legion)
 "uL" = (
 /mob/living/simple_animal/hostile/handy/protectron,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "uM" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/old{
@@ -3125,7 +3125,7 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "uN" = (
 /obj/structure/fence/wooden{
 	density = 0;
@@ -3134,20 +3134,20 @@
 	pixel_x = 15
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "uO" = (
 /obj/structure/table/wood,
 /obj/item/paper_bin,
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/legion)
+/area/fallout/legion)
 "uT" = (
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "uW" = (
 /obj/structure/railing/corner,
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "uZ" = (
 /obj/structure/curtain{
 	color = "#c40e0e";
@@ -3157,17 +3157,17 @@
 /obj/item/bedsheet/black,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "vd" = (
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "ve" = (
 /obj/structure/chair/wood{
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "vg" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/highmid,
@@ -3175,17 +3175,17 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "vh" = (
 /turf/open/floor/wood/wood_fancy/wood_fancy_light{
 	icon_state = "fancy_light-broken5"
 	},
-/area/f13/building)
+/area/fallout/building)
 "vi" = (
 /obj/machinery/light/small/broken,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "vj" = (
 /obj/structure/toilet/secret/high_loot{
 	dir = 8
@@ -3195,38 +3195,38 @@
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "vk" = (
 /obj/structure/camera_assembly,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "vl" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "vn" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "vo" = (
 /obj/structure/bed/mattress/pregame,
 /obj/structure/camera_assembly{
 	dir = 10
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "vp" = (
 /obj/item/broken_bottle,
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "vq" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/grenade/f13/dynamite,
@@ -3246,7 +3246,7 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "vs" = (
 /obj/structure/railing/corner{
 	dir = 1
@@ -3255,7 +3255,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "vz" = (
 /obj/machinery/shower{
 	dir = 8
@@ -3264,7 +3264,7 @@
 /turf/open/floor/f13{
 	icon_state = "whitebluerustychess"
 	},
-/area/f13/building)
+/area/fallout/building)
 "vA" = (
 /obj/effect/overlay/junk/sink{
 	dir = 4;
@@ -3277,7 +3277,7 @@
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "vF" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -3286,7 +3286,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "vH" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4;
@@ -3294,25 +3294,25 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "vJ" = (
 /obj/machinery/chem_master,
 /turf/open/floor/plasteel/showroomfloor{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "vM" = (
 /obj/structure/chair/wood{
 	dir = 1
 	},
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "vN" = (
 /mob/living/simple_animal/hostile/renegade/grunt,
 /turf/open/floor/wood/wood_fancy{
 	icon_state = "fancy-broken6"
 	},
-/area/f13/building)
+/area/fallout/building)
 "vS" = (
 /obj/machinery/porta_turret/syndicate/vehicle_turret{
 	desc = "An improvised ballistic turret - it looks exceptionally shoddy, yet stil functional. Safe to assume it's a repaired security system from whatever this place once was";
@@ -3329,7 +3329,7 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "wc" = (
 /obj/structure/sink{
 	dir = 4;
@@ -3342,36 +3342,36 @@
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "wd" = (
 /obj/structure/stone_tile/block{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "wk" = (
 /obj/structure/simple_door/bunker{
 	name = "Machine Shop & Generator"
 	},
 /obj/structure/barricade/wooden/planks,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "wo" = (
 /obj/structure/chair/wood/dining{
 	dir = 4
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "wq" = (
 /obj/structure/table/wood,
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "wv" = (
 /turf/closed/wall/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "wy" = (
 /obj/structure/stone_tile/block{
 	dir = 4
@@ -3379,22 +3379,22 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "wz" = (
 /obj/structure/bed,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "wD" = (
 /obj/structure/closet/cabinet,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "wE" = (
 /obj/structure/lattice/catwalk,
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "wH" = (
 /obj/structure/table/glass,
 /obj/effect/decal/cleanable/dirt{
@@ -3407,7 +3407,7 @@
 /turf/open/floor/plasteel/showroomfloor{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "wI" = (
 /obj/structure/toilet/secret/low_loot{
 	dir = 8
@@ -3417,7 +3417,7 @@
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "wJ" = (
 /obj/structure/barricade/bars{
 	max_integrity = 1200;
@@ -3426,7 +3426,7 @@
 	},
 /obj/structure/window/fulltile/wood,
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "wN" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -3435,26 +3435,26 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_light{
 	icon_state = "fancy_light-broken3"
 	},
-/area/f13/building)
+/area/fallout/building)
 "wO" = (
 /obj/structure/table/wood,
 /obj/item/storage/toolbox/electrical,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common/wood_common_light,
-/area/f13/building)
+/area/fallout/building)
 "wQ" = (
 /obj/structure/window/fulltile/wood,
 /obj/structure/barricade/wooden/planks{
 	icon_state = "board-2"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "wR" = (
 /obj/structure/fluff/railing{
 	dir = 1
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "wS" = (
 /obj/structure/lattice,
 /obj/structure/railing{
@@ -3462,7 +3462,7 @@
 	dir = 1
 	},
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "wT" = (
 /obj/structure/table/glass,
 /obj/effect/decal/cleanable/dirt{
@@ -3475,7 +3475,7 @@
 /turf/open/floor/plasteel/showroomfloor{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "wU" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -3489,7 +3489,7 @@
 /turf/open/floor/plasteel/showroomfloor{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "wV" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -3500,14 +3500,14 @@
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken1"
 	},
-/area/f13/building)
+/area/fallout/building)
 "wW" = (
 /obj/structure/railing{
 	color = "#A47449";
 	dir = 6
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "wY" = (
 /obj/structure/sign/poster/prewar/corporate_espionage,
 /turf/closed/indestructible/riveted{
@@ -3517,12 +3517,12 @@
 	icon_type_smooth = "tunnel";
 	name = "Reinforced utility tunnel"
 	},
-/area/f13/building)
+/area/fallout/building)
 "xc" = (
 /obj/structure/bed/wooden,
 /obj/item/bedsheet/hos,
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/legion)
+/area/fallout/legion)
 "xd" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/railing/corner{
@@ -3541,25 +3541,25 @@
 	color = "#A47449"
 	},
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "xf" = (
 /obj/structure/chair/wood/fancy,
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "xg" = (
 /obj/structure/fluff/railing/corner{
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "xj" = (
 /obj/structure/stone_tile/block,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "xk" = (
 /obj/structure/sign/warning/explosives,
 /turf/closed/indestructible/riveted{
@@ -3569,13 +3569,13 @@
 	icon_type_smooth = "supermart";
 	name = "Reinforced prison wall"
 	},
-/area/f13/building)
+/area/fallout/building)
 "xn" = (
 /obj/structure/simple_door/wood,
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken6"
 	},
-/area/f13/building)
+/area/fallout/building)
 "xo" = (
 /obj/structure/chair/wood{
 	dir = 4
@@ -3586,11 +3586,11 @@
 	pixel_y = 24
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "xt" = (
 /obj/structure/junk/micro,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "xu" = (
 /obj/structure/curtain{
 	color = "#c40e0e";
@@ -3603,7 +3603,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/legion)
+/area/fallout/legion)
 "xx" = (
 /obj/structure/simple_door/glass{
 	name = "Psychology Office"
@@ -3611,22 +3611,22 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "xy" = (
 /obj/structure/wreck/trash/brokenvendor,
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "xz" = (
 /obj/structure/table/wood,
 /obj/machinery/microwave,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "xB" = (
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 1
 	},
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "xD" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "floor6-old"
@@ -3635,7 +3635,7 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "xG" = (
 /obj/structure/curtain{
 	color = "#845f58";
@@ -3644,13 +3644,13 @@
 /obj/structure/table/wood,
 /obj/item/toy/cards/deck,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "xH" = (
 /obj/structure/camera_assembly{
 	dir = 10
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "xJ" = (
 /obj/structure/fence/wooden{
 	density = 0;
@@ -3660,7 +3660,7 @@
 	},
 /obj/structure/barricade/sandbags,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "xN" = (
 /obj/item/ingot/adamantine,
 /obj/structure/showcase/horrific_experiment,
@@ -3668,13 +3668,13 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "xQ" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "xR" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -3685,7 +3685,7 @@
 	dir = 8
 	},
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "ye" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -3695,25 +3695,25 @@
 	dir = 4
 	},
 /turf/open/transparent/openspace,
-/area/f13/building)
+/area/fallout/building)
 "yf" = (
 /obj/machinery/vending/tool,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "yh" = (
 /obj/item/kirbyplants/random,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "bar"
 	},
-/area/f13/building)
+/area/fallout/building)
 "yj" = (
 /turf/closed/mineral/random/low_chance,
-/area/f13/caves)
+/area/fallout/caves)
 "ym" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "yo" = (
 /obj/structure/bed/mattress/pregame,
 /obj/machinery/light/small,
@@ -3721,12 +3721,12 @@
 	dir = 10
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "yp" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "yr" = (
 /obj/structure/curtain{
 	color = "#c40e0e";
@@ -3737,7 +3737,7 @@
 	pixel_x = 5
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "yt" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -3747,7 +3747,7 @@
 	name = "renegade telecomms server"
 	},
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "yB" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -3759,14 +3759,14 @@
 /turf/open/floor/plasteel/showroomfloor{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "yC" = (
 /obj/structure/railing/corner{
 	color = "#A47449";
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "yE" = (
 /obj/structure/bed/wooden{
 	pixel_y = 11
@@ -3776,7 +3776,7 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_light{
 	icon_state = "fancy_light-broken5"
 	},
-/area/f13/building)
+/area/fallout/building)
 "yH" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -3786,33 +3786,33 @@
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2-broken"
 	},
-/area/f13/building)
+/area/fallout/building)
 "yJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/wreck/trash/machinepiletwo,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "yM" = (
 /obj/structure/janitorialcart,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "yP" = (
 /obj/item/paper/fluff/jobs/medical/hippocratic,
 /obj/structure/table/glass,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "yT" = (
 /obj/structure/stone_tile/block,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "yW" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "yX" = (
 /obj/structure/table/wood/poker,
 /obj/item/storage/box/dice,
@@ -3820,7 +3820,7 @@
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "yY" = (
 /obj/structure/curtain{
 	color = "#845f58";
@@ -3829,7 +3829,7 @@
 /obj/structure/bed/wooden,
 /obj/item/bedsheet/brown,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "yZ" = (
 /obj/structure/curtain{
 	color = "#845f58";
@@ -3837,20 +3837,20 @@
 	},
 /obj/structure/chair/stool/retro/tan,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "zc" = (
 /obj/effect/turf_decal/trimline/neutral/line{
 	dir = 6
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "zd" = (
 /obj/structure/railing/corner{
 	color = "#A47449";
 	dir = 8
 	},
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "zj" = (
 /obj/structure/nest/protectron{
 	layer = 3;
@@ -3861,7 +3861,7 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "zk" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "floor1-old"
@@ -3870,7 +3870,7 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "zn" = (
 /obj/item/wallframe/intercom,
 /turf/closed/indestructible/riveted{
@@ -3880,7 +3880,7 @@
 	icon_type_smooth = "tunnel";
 	name = "Reinforced utility tunnel"
 	},
-/area/f13/building)
+/area/fallout/building)
 "zt" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -3888,62 +3888,62 @@
 	},
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "zA" = (
 /obj/structure/chair/comfy/beige,
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "zB" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/start/f13/decanvet,
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/legion)
+/area/fallout/legion)
 "zC" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "zF" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/legion)
+/area/fallout/legion)
 "zH" = (
 /obj/structure/chair/wood,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "zJ" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "zR" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/radroach,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "zS" = (
 /obj/machinery/processor,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "bar"
 	},
-/area/f13/building)
+/area/fallout/building)
 "zU" = (
 /turf/closed/wall/f13/wood/house,
-/area/f13/building)
+/area/fallout/building)
 "zV" = (
 /obj/structure/railing{
 	color = "#A47449"
 	},
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "zX" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "zZ" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -3957,28 +3957,28 @@
 	dir = 4
 	},
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "Ad" = (
 /obj/machinery/door/unpowered/celldoor,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Af" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/blueprintMid,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Ag" = (
 /obj/structure/railing/corner{
 	dir = 4
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "Ai" = (
 /obj/machinery/camera,
 /mob/living/simple_animal/hostile/handy/protectron,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Ak" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -3987,64 +3987,64 @@
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "Al" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common{
 	icon_state = "common-broken6"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Ap" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "floordirty"
 	},
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "Aq" = (
 /obj/structure/simple_door/wood,
 /obj/structure/barricade/wooden/planks{
 	icon_state = "board-2"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "As" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/crafting,
 /obj/effect/spawner/lootdrop/f13/crafting,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "Aw" = (
 /obj/effect/decal/cleanable/blood/footprints,
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "Ax" = (
 /obj/structure/chair/wood,
 /obj/item/broken_bottle,
 /obj/effect/decal/cleanable/glass,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "Az" = (
 /obj/structure/table/wood,
 /obj/item/binoculars,
 /turf/open/floor/plating/f13/inside/gravel,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "AB" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/druggie_pill,
 /turf/open/floor/plasteel/showroomfloor{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "AE" = (
 /obj/structure/sign/poster/contraband/pinup_anthro6{
 	pixel_x = -32
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/building)
+/area/fallout/building)
 "AF" = (
 /obj/machinery/light{
 	dir = 4
@@ -4052,21 +4052,21 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "AI" = (
 /turf/closed/mineral/random/low_chance,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "AK" = (
 /obj/machinery/workbench/forge,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "AR" = (
 /obj/structure/railing{
 	color = "#A47449";
 	dir = 1
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "AT" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -4074,7 +4074,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "AZ" = (
 /obj/structure/table/wood,
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -4082,14 +4082,14 @@
 	light_color = "#f4e3b0"
 	},
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/legion)
+/area/fallout/legion)
 "Bb" = (
 /obj/structure/curtain{
 	color = "#363636";
 	pixel_x = 31
 	},
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "Be" = (
 /obj/structure/toilet/secret/low_loot{
 	dir = 4
@@ -4098,11 +4098,11 @@
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Bg" = (
 /obj/machinery/power/port_gen/pacman/super,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/radiation)
+/area/fallout/radiation)
 "Bl" = (
 /obj/machinery/shower{
 	dir = 4
@@ -4110,26 +4110,26 @@
 /obj/item/soap,
 /obj/structure/drain,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Bm" = (
 /obj/structure/junk/locker,
 /turf/open/floor/plasteel/showroomfloor{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "Bp" = (
 /obj/machinery/microwave/stove,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "bar"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Bq" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "Br" = (
 /obj/machinery/door/unpowered/securedoor{
 	damage_deflection = 28;
@@ -4139,7 +4139,7 @@
 	req_access_txt = "123"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "Bx" = (
 /obj/structure/barricade/bars{
 	max_integrity = 800;
@@ -4147,13 +4147,13 @@
 	obj_integrity = 800
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "By" = (
 /obj/structure/bed/club,
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "BB" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -4166,36 +4166,36 @@
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/building)
+/area/fallout/building)
 "BE" = (
 /obj/structure/bed/wooden,
 /obj/item/bedsheet/brown,
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "BI" = (
 /obj/item/kirbyplants/random,
 /obj/machinery/light/small/broken{
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "BK" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common/wood_common_light{
 	icon_state = "common_light-broken2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "BM" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/broken{
 	dir = 8
 	},
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "BN" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/legion)
+/area/fallout/legion)
 "BP" = (
 /obj/machinery/vending/wallmed,
 /turf/closed/indestructible/riveted{
@@ -4205,7 +4205,7 @@
 	icon_type_smooth = "supermart";
 	name = "Reinforced prison wall"
 	},
-/area/f13/building)
+/area/fallout/building)
 "BQ" = (
 /obj/structure/fence/wooden{
 	density = 0;
@@ -4215,14 +4215,14 @@
 	},
 /obj/structure/barricade/sandbags,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "BR" = (
 /obj/structure/simple_door/repaired,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "BS" = (
 /turf/open/floor/carpet/black,
-/area/f13/legion)
+/area/fallout/legion)
 "BV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/storage/trash_stack{
@@ -4231,7 +4231,7 @@
 /turf/open/floor/f13{
 	icon_state = "floordirty"
 	},
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "BY" = (
 /obj/structure/curtain{
 	color = "#845f58";
@@ -4241,7 +4241,7 @@
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Cb" = (
 /obj/machinery/door/unpowered/securedoor{
 	damage_deflection = 28;
@@ -4251,45 +4251,45 @@
 	req_access_txt = "123"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "Cd" = (
 /obj/structure/window/fulltile/house,
 /turf/closed/wall/f13/wood/house,
-/area/f13/building)
+/area/fallout/building)
 "Ce" = (
 /obj/structure/destructible/tribal_torch/wall/lit,
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "Cl" = (
 /obj/machinery/blackbox_recorder,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "Co" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Cr" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
-/area/f13/legion)
+/area/fallout/legion)
 "Cs" = (
 /turf/closed/wall/f13/wood/house,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "Cx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/bench{
 	pixel_y = 11
 	},
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "CA" = (
 /obj/structure/railing{
 	color = "#A47449"
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "CB" = (
 /obj/structure/ladder/unbreakable{
 	height = 1;
@@ -4298,28 +4298,28 @@
 	name = "Service Ladder"
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "CC" = (
 /obj/structure/debris/v3,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "CG" = (
 /obj/structure/chair/bench{
 	pixel_y = 11
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "CL" = (
 /obj/machinery/workbench,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "CQ" = (
 /obj/machinery/smartfridge/chemistry/preloaded,
 /turf/open/floor/plasteel/showroomfloor{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "CR" = (
 /obj/structure/closet/crate{
 	anchored = 1;
@@ -4327,7 +4327,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/legion)
+/area/fallout/legion)
 "CS" = (
 /obj/item/kirbyplants/random,
 /obj/effect/decal/cleanable/glass,
@@ -4337,7 +4337,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "CU" = (
 /obj/structure/closet/crate/footlocker{
 	anchored = 1;
@@ -4345,7 +4345,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "CY" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -4353,22 +4353,22 @@
 /turf/open/floor/f13{
 	icon_state = "floordirty"
 	},
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "Dd" = (
 /obj/structure/railing{
 	color = "#A47449";
 	dir = 4
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "De" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/lowmid,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Di" = (
 /obj/structure/nest/ghoul,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/radiation)
+/area/fallout/radiation)
 "Dj" = (
 /obj/structure/table/wood,
 /obj/machinery/computer/terminal{
@@ -4376,13 +4376,13 @@
 	termtag = "Business"
 	},
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "Dl" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8
 	},
 /turf/open/transparent/openspace,
-/area/f13/building)
+/area/fallout/building)
 "Dn" = (
 /obj/structure/sign/poster/contraband/pinup_anthro10,
 /turf/closed/indestructible/riveted{
@@ -4392,12 +4392,12 @@
 	icon_type_smooth = "tunnel";
 	name = "Reinforced utility tunnel"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Dq" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "Dt" = (
 /obj/effect/decal/cleanable/glass,
 /obj/structure/curtain{
@@ -4405,7 +4405,7 @@
 	pixel_y = -32
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Dw" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -4414,19 +4414,19 @@
 /obj/effect/decal/cleanable/glass,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Dx" = (
 /obj/machinery/light/small,
 /obj/structure/closet/crate/bin/trashbin,
 /turf/open/floor/f13{
 	icon_state = "floordirty"
 	},
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "DF" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2-broken"
 	},
-/area/f13/building)
+/area/fallout/building)
 "DG" = (
 /turf/closed/indestructible/rock{
 	desc = "A pre-War wall made of solid concrete.";
@@ -4436,10 +4436,10 @@
 	name = "Concrete wall";
 	smooth = 1
 	},
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "DH" = (
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "DK" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -4447,7 +4447,7 @@
 	},
 /obj/structure/stone_tile/slab,
 /turf/open/transparent/openspace,
-/area/f13/building)
+/area/fallout/building)
 "DM" = (
 /obj/machinery/iv_drip,
 /obj/machinery/light{
@@ -4456,59 +4456,59 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "DV" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Ea" = (
 /obj/structure/table/wood,
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "Ec" = (
 /turf/open/floor/f13{
 	icon_state = "bar"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Ed" = (
 /obj/structure/railing/corner{
 	dir = 1
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "Eg" = (
 /obj/structure/railing{
 	color = "#A47449";
 	dir = 8
 	},
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "Eh" = (
 /obj/structure/curtain{
 	color = "#363636";
 	pixel_x = -32
 	},
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "Ei" = (
 /obj/item/storage/trash_stack{
 	icon_state = "trash_2"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "Es" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/ghoul/reaver,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "EF" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "EG" = (
 /obj/effect/decal/cleanable/blood/old{
 	pixel_x = 12
@@ -4523,7 +4523,7 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "EH" = (
 /obj/structure/table,
 /obj/item/integrated_circuit/power,
@@ -4533,12 +4533,12 @@
 /obj/item/screwdriver,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common/wood_common_light,
-/area/f13/building)
+/area/fallout/building)
 "EJ" = (
 /turf/open/floor/wood/wood_common{
 	icon_state = "common-broken4"
 	},
-/area/f13/building)
+/area/fallout/building)
 "EK" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -4546,22 +4546,22 @@
 	},
 /obj/structure/stone_tile/slab,
 /turf/open/transparent/openspace,
-/area/f13/building)
+/area/fallout/building)
 "EL" = (
 /obj/structure/chair/sofa/corp{
 	dir = 1
 	},
 /turf/open/floor/carpet/green,
-/area/f13/building)
+/area/fallout/building)
 "EP" = (
 /obj/structure/closet/cabinet,
 /obj/item/storage/box/drinkingglasses,
 /obj/item/storage/box/drinkingglasses,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "EV" = (
 /turf/closed/indestructible/rock,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "Fm" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/shaker,
@@ -4570,13 +4570,13 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "Fr" = (
 /obj/structure/spacevine{
 	name = "vines"
 	},
 /turf/closed/wall/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "FA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/wood,
@@ -4584,40 +4584,40 @@
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "FC" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/advcrafting,
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken6"
 	},
-/area/f13/building)
+/area/fallout/building)
 "FJ" = (
 /obj/structure/railing/corner{
 	color = "#A47449";
 	dir = 1
 	},
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "Gf" = (
 /obj/structure/stone_tile/block{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "Gh" = (
 /obj/item/clothing/suit/bio_suit/f13/hazmat,
 /obj/structure/rack/shelf_metal,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Gi" = (
 /obj/item/kirbyplants/random,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy/wood_fancy_light{
 	icon_state = "fancy_light-broken5"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Gj" = (
 /obj/structure/barricade/bars{
 	max_integrity = 800;
@@ -4628,20 +4628,20 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "GB" = (
 /obj/structure/table/wood,
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken6"
 	},
-/area/f13/building)
+/area/fallout/building)
 "GK" = (
 /obj/structure/railing{
 	color = "#A47449";
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "GO" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -4651,7 +4651,7 @@
 	dir = 8
 	},
 /turf/open/transparent/openspace,
-/area/f13/building)
+/area/fallout/building)
 "GS" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "floor6-old"
@@ -4665,28 +4665,28 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Hi" = (
 /obj/structure/railing{
 	dir = 8
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "Hj" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/radiation)
+/area/fallout/radiation)
 "Hz" = (
 /obj/effect/landmark/start/f13/explorer{
 	name = "Legion Camp Follower"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "HG" = (
 /obj/structure/fermenting_barrel,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "HH" = (
 /obj/machinery/defibrillator_mount,
 /turf/closed/indestructible/riveted{
@@ -4696,13 +4696,13 @@
 	icon_type_smooth = "tunnel";
 	name = "Reinforced utility tunnel"
 	},
-/area/f13/building)
+/area/fallout/building)
 "HQ" = (
 /obj/structure/railing{
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "HR" = (
 /obj/structure/closet/fridge,
 /obj/item/reagent_containers/food/drinks/bottle/applejack,
@@ -4715,14 +4715,14 @@
 /turf/open/floor/f13{
 	icon_state = "bar"
 	},
-/area/f13/building)
+/area/fallout/building)
 "HT" = (
 /turf/closed/wall/f13/wood,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "Ij" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "Im" = (
 /obj/structure/spacevine{
 	name = "vines"
@@ -4731,7 +4731,7 @@
 	name = "vines"
 	},
 /turf/closed/wall/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Iu" = (
 /obj/structure/sink{
 	dir = 8;
@@ -4743,7 +4743,7 @@
 /turf/open/floor/f13{
 	icon_state = "whitebluerustychess"
 	},
-/area/f13/building)
+/area/fallout/building)
 "IE" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -4762,12 +4762,12 @@
 	icon_state = "showroomfloor";
 	name = "tile"
 	},
-/area/f13/building)
+/area/fallout/building)
 "IL" = (
 /obj/structure/table/wood,
 /obj/structure/stone_tile/slab,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "IM" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -4775,16 +4775,16 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "IP" = (
 /turf/closed/wall/f13/sunset/brick_small,
-/area/f13/legion)
+/area/fallout/legion)
 "IR" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy/wood_fancy_light{
 	icon_state = "fancy_light-broken6"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Jd" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/old{
@@ -4794,42 +4794,42 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Jk" = (
 /obj/structure/curtain{
 	color = "#363636";
 	pixel_y = 32
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Jm" = (
 /obj/structure/window/fulltile/house,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Jn" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "Jo" = (
 /obj/machinery/light/small/broken{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "Jp" = (
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "Js" = (
 /obj/structure/bed/wooden,
 /obj/effect/spawner/lootdrop/bedsheet,
 /turf/open/floor/wood/wood_common/wood_common_light,
-/area/f13/building)
+/area/fallout/building)
 "Jt" = (
 /obj/machinery/light/fo13colored/Red{
 	dir = 8
@@ -4838,7 +4838,7 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Jw" = (
 /obj/machinery/blackbox_recorder{
 	name = "data unit"
@@ -4846,7 +4846,7 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "JA" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4;
@@ -4854,22 +4854,22 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "JB" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housewood4-broken"
 	},
-/area/f13/building)
+/area/fallout/building)
 "JC" = (
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken6"
 	},
-/area/f13/building)
+/area/fallout/building)
 "JD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "JG" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4;
@@ -4877,32 +4877,32 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/legion)
+/area/fallout/legion)
 "JJ" = (
 /obj/structure/railing{
 	color = "#A47449";
 	dir = 5
 	},
 /turf/open/floor/f13/wood,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "JO" = (
 /obj/structure/simple_door/room,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "JP" = (
 /obj/machinery/autolathe/ammo/unlocked_basic,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "JQ" = (
 /obj/structure/railing{
 	layer = 4.1
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
-/area/f13/legion)
+/area/fallout/legion)
 "JR" = (
 /obj/structure/railing/corner{
 	color = "#A47449";
@@ -4910,7 +4910,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "JS" = (
 /obj/structure/curtain{
 	color = "#c40e0e";
@@ -4918,10 +4918,10 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "JV" = (
 /turf/open/indestructible/ground/outside/roof,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "JX" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -4932,13 +4932,13 @@
 /turf/open/floor/plasteel/showroomfloor{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "JY" = (
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 8
 	},
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "JZ" = (
 /obj/machinery/door/airlock/highsecurity{
 	armor = list("melee"=55,"bullet"=30,"laser"=20,"energy"=20,"bomb"=10,"bio"=100,"rad"=100,"fire"=80,"acid"=70);
@@ -4951,7 +4951,7 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "Ka" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gibmid1"
@@ -4961,18 +4961,18 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Kb" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housebase"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Kc" = (
 /obj/structure/railing/handrail/rusty/underlayer{
 	pixel_y = -4
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Kd" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier5,
@@ -4981,17 +4981,17 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Ke" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy/wood_fancy_light{
 	icon_state = "fancy_light-broken4"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Kl" = (
 /turf/open/floor/wood/wood_common,
-/area/f13/legion)
+/area/fallout/legion)
 "Kp" = (
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/planks,
@@ -5001,20 +5001,20 @@
 	icon_state = "vaultrust";
 	name = "reinforced plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Kr" = (
 /obj/structure/window/fulltile/wood,
 /obj/structure/barricade/wooden/planks,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Kv" = (
 /mob/living/simple_animal/hostile/renegade/grunt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Kw" = (
 /obj/structure/wreck/trash/machinepile,
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "Ky" = (
 /obj/structure/bed/wooden,
 /obj/effect/spawner/lootdrop/bedsheet,
@@ -5022,10 +5022,10 @@
 	pixel_y = 32
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Kz" = (
 /turf/open/floor/plating/f13/inside/gravel,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "KA" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -5036,7 +5036,7 @@
 	light_color = "#f4e3b0"
 	},
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "KB" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -5044,22 +5044,22 @@
 /turf/open/floor/f13{
 	icon_state = "floordirty"
 	},
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "KE" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "KG" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/renegade/drifter,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "KH" = (
 /turf/open/floor/f13{
 	icon_state = "floordirty"
 	},
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "KI" = (
 /obj/structure/table/reinforced,
 /obj/item/ingot/adamantine,
@@ -5067,7 +5067,7 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "KJ" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gibbear1"
@@ -5077,7 +5077,7 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "KL" = (
 /obj/machinery/light/small/broken{
 	dir = 4
@@ -5087,13 +5087,13 @@
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "KM" = (
 /obj/structure/table/wood,
 /obj/item/melee/onehanded/knife/bowie,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "KT" = (
 /obj/structure/table/wood,
 /obj/item/radio/tribal{
@@ -5102,14 +5102,14 @@
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "KU" = (
 /obj/structure/railing{
 	color = "#A47449"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "La" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -5118,7 +5118,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Lb" = (
 /obj/structure/curtain{
 	color = "#845f58";
@@ -5127,7 +5127,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "Lc" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -5144,10 +5144,10 @@
 	dir = 8
 	},
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "Lf" = (
 /turf/closed/indestructible/f13/obsidian,
-/area/f13/caves)
+/area/fallout/caves)
 "Lg" = (
 /obj/machinery/button/door{
 	id = 5654;
@@ -5160,7 +5160,7 @@
 	icon_type_smooth = "supermart";
 	name = "Reinforced prison wall"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Li" = (
 /mob/living/simple_animal/hostile/centaur{
 	desc = "The misbegotten son of a she-devil and a beast. It's very existence makes you sick.";
@@ -5171,7 +5171,7 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Lj" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt,
@@ -5181,24 +5181,24 @@
 /obj/item/paper_bin,
 /obj/item/pen,
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "Lk" = (
 /obj/structure/chair/wood{
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Lm" = (
 /mob/living/simple_animal/hostile/handy/protectron,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Lo" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Lp" = (
 /obj/machinery/door/poddoor/shutters/old/preopen{
 	id = 23000;
@@ -5208,7 +5208,7 @@
 	name = "Isolation Cell"
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Lr" = (
 /obj/machinery/light/fo13colored/Red{
 	dir = 1;
@@ -5218,7 +5218,7 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Ls" = (
 /obj/machinery/door/poddoor/shutters/old/preopen{
 	id = 23000;
@@ -5226,54 +5226,54 @@
 	},
 /obj/machinery/door/unpowered/celldoor,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Lt" = (
 /obj/effect/turf_decal/trimline/neutral/line{
 	dir = 5
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Lx" = (
 /obj/machinery/light/small/broken{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Ly" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/sofa/left,
 /turf/open/floor/f13{
 	icon_state = "floordirty"
 	},
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "Lz" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/bottle/applejack,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "LA" = (
 /obj/structure/table/wood/poker,
 /obj/item/toy/cards/deck/unum,
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "LG" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "LN" = (
 /obj/machinery/computer/terminal,
 /obj/structure/table/wood,
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "LP" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -5283,80 +5283,80 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_light{
 	icon_state = "fancy_light-broken1"
 	},
-/area/f13/building)
+/area/fallout/building)
 "LQ" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "whitebluerustychess"
 	},
-/area/f13/building)
+/area/fallout/building)
 "LS" = (
 /obj/structure/railing/corner{
 	color = "#A47449";
 	dir = 8
 	},
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "LT" = (
 /obj/structure/closet/locker/oldstyle,
 /obj/item/gun/ballistic/automatic/pistol/m1911,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "LU" = (
 /mob/living/simple_animal/hostile/handy/gutsy,
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "Mc" = (
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/lootdrop/f13/medical/vault/meds,
 /obj/effect/spawner/lootdrop/f13/medical/vault/meds,
 /obj/effect/spawner/lootdrop/f13/medical/vault/meds,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Me" = (
 /obj/machinery/vending/wardrobe/engi_wardrobe,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Mf" = (
 /obj/structure/chair/bench{
 	pixel_y = 11
 	},
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "Mh" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier2,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "Mj" = (
 /obj/structure/barricade/sandbags,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Mm" = (
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
-/area/f13/legion)
+/area/fallout/legion)
 "Mr" = (
 /obj/structure/railing{
 	color = "#A47449";
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "Ms" = (
 /obj/machinery/vending/games,
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "MA" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/bottle/applejack,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "MB" = (
 /obj/structure/curtain{
 	color = "#845f58";
@@ -5364,23 +5364,23 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "MC" = (
 /obj/machinery/hypnochair,
 /turf/open/floor/plasteel/f13/vault_floor/blue{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "MD" = (
 /turf/open/transparent/openspace,
-/area/f13/building)
+/area/fallout/building)
 "ME" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common{
 	icon_state = "common-broken1"
 	},
-/area/f13/building)
+/area/fallout/building)
 "MH" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8
@@ -5388,13 +5388,13 @@
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken4"
 	},
-/area/f13/building)
+/area/fallout/building)
 "MJ" = (
 /obj/structure/fluff/railing{
 	dir = 9
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "MK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -5402,54 +5402,54 @@
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "MN" = (
 /turf/open/floor/wood/wood_worn,
-/area/f13/building)
+/area/fallout/building)
 "MQ" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_worn,
-/area/f13/building)
+/area/fallout/building)
 "MT" = (
 /turf/open/floor/carpet/red,
-/area/f13/legion)
+/area/fallout/legion)
 "MV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
 	dir = 4
 	},
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "MX" = (
 /obj/machinery/door/poddoor/shutters/old/preopen{
 	id = 1853;
 	name = "Yard Shutters"
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "MY" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/junk/small/tv,
 /obj/structure/table/wood,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "MZ" = (
 /obj/structure/chair/sofa/corp/left{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/green,
-/area/f13/building)
+/area/fallout/building)
 "Na" = (
 /obj/structure/sign/poster/contraband/hacking_guide{
 	pixel_x = 32
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common/wood_common_light,
-/area/f13/building)
+/area/fallout/building)
 "Nf" = (
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "Nh" = (
 /obj/structure/table/wood,
 /obj/item/clothing/head/f13/cowboy,
@@ -5462,22 +5462,22 @@
 	pixel_x = -32
 	},
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "No" = (
 /obj/structure/railing,
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "Np" = (
 /obj/structure/chair/f13chair2{
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Nt" = (
 /obj/structure/table/wood,
 /obj/item/key/motorcycle,
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/legion)
+/area/fallout/legion)
 "Nu" = (
 /obj/effect/decal/cleanable/glass,
 /obj/structure/curtain{
@@ -5486,13 +5486,13 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "NE" = (
 /obj/structure/stone_tile/block{
 	dir = 8
 	},
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "NG" = (
 /obj/machinery/button/door{
 	id = 23001;
@@ -5505,7 +5505,7 @@
 	icon_type_smooth = "supermart";
 	name = "Reinforced prison wall"
 	},
-/area/f13/building)
+/area/fallout/building)
 "NH" = (
 /obj/structure/closet/locker/oldstyle,
 /obj/item/clothing/under/rank/medical/doctor/purple,
@@ -5517,18 +5517,18 @@
 /turf/open/floor/plasteel/showroomfloor{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "NK" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/toolsgood,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/radiation)
+/area/fallout/radiation)
 "NP" = (
 /obj/structure/table/snooker{
 	dir = 6
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "NR" = (
 /obj/structure/curtain{
 	color = "#c40e0e";
@@ -5536,7 +5536,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/legion)
+/area/fallout/legion)
 "NS" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "floor3"
@@ -5545,26 +5545,26 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "NU" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "NW" = (
 /obj/structure/simple_door/glass,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "NY" = (
 /obj/structure/chair/stool,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
-/area/f13/legion)
+/area/fallout/legion)
 "NZ" = (
 /obj/structure/bed/wooden,
 /obj/item/bedsheet/black,
 /turf/open/floor/wood/wood_fancy{
 	icon_state = "fancy-broken1"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Oc" = (
 /obj/structure/camera_assembly{
 	dir = 8
@@ -5572,15 +5572,15 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "Og" = (
 /obj/structure/junk/machinery,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Oi" = (
 /obj/structure/lattice,
 /turf/open/transparent/openspace,
-/area/f13/building)
+/area/fallout/building)
 "Oo" = (
 /obj/structure/bookshelf{
 	density = 1;
@@ -5590,7 +5590,7 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "Oz" = (
 /obj/structure/camera_assembly{
 	dir = 8
@@ -5599,17 +5599,17 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "OC" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
-/area/f13/legion)
+/area/fallout/legion)
 "OE" = (
 /obj/structure/table/wood/poker,
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "OI" = (
 /turf/closed/indestructible/riveted{
 	desc = "A heavily reinforced utility tunnel  wall. You doubt anything short of a nuke would break it.";
@@ -5618,7 +5618,7 @@
 	icon_type_smooth = "tunnel";
 	name = "Reinforced utility tunnel"
 	},
-/area/f13/building)
+/area/fallout/building)
 "OK" = (
 /obj/structure/table/wood,
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -5626,7 +5626,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "OL" = (
 /obj/machinery/smartfridge/bottlerack,
 /obj/structure/curtain{
@@ -5637,7 +5637,7 @@
 /turf/open/floor/f13{
 	icon_state = "bar"
 	},
-/area/f13/building)
+/area/fallout/building)
 "OQ" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -5645,11 +5645,11 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "OU" = (
 /obj/structure/reagent_dispensers/barrel/explosive,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Pd" = (
 /obj/structure/toilet{
 	dir = 8
@@ -5657,7 +5657,7 @@
 /turf/open/floor/f13{
 	icon_state = "whitebluerustychess"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Pe" = (
 /obj/structure/curtain{
 	color = "#c40e0e";
@@ -5669,7 +5669,7 @@
 	pixel_y = 24
 	},
 /turf/open/floor/wood/wood_common,
-/area/f13/legion)
+/area/fallout/legion)
 "Pf" = (
 /obj/structure/table,
 /obj/machinery/computer/terminal{
@@ -5681,43 +5681,43 @@
 	pixel_x = -32
 	},
 /turf/open/floor/wood/wood_common/wood_common_light,
-/area/f13/building)
+/area/fallout/building)
 "Pj" = (
 /obj/structure/table/wood,
 /obj/structure/stone_tile/surrounding_tile,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "Pm" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common{
 	icon_state = "common-broken2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Po" = (
 /obj/structure/table/wood/club,
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken1"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Ps" = (
 /obj/structure/table,
 /obj/item/documents{
 	desc = "Documents containing operational intelligence of the Renegades."
 	},
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "Pu" = (
 /obj/machinery/conveyor{
 	dir = 4
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Pw" = (
 /turf/open/floor/plasteel/f13/vault_floor/blue{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "Pz" = (
 /obj/structure/railing{
 	dir = 1
@@ -5725,15 +5725,15 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "PA" = (
 /obj/structure/table/wood,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "PB" = (
 /obj/machinery/light/small/broken,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "PE" = (
 /obj/structure/lattice,
 /obj/structure/railing{
@@ -5741,7 +5741,7 @@
 	dir = 8
 	},
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "PH" = (
 /obj/structure/fence/wooden{
 	density = 0;
@@ -5751,13 +5751,13 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "PJ" = (
 /obj/structure/railing{
 	dir = 4
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "PM" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/backpack/duffelbag/med/surgery,
@@ -5765,7 +5765,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "PP" = (
 /turf/closed/indestructible/riveted{
 	desc = "A heavily reinforced prison wall. You doubt anything short of a nuke would break it.";
@@ -5774,13 +5774,13 @@
 	icon_type_smooth = "supermart";
 	name = "Reinforced prison wall"
 	},
-/area/f13/building)
+/area/fallout/building)
 "PR" = (
 /obj/structure/railing{
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
-/area/f13/legion)
+/area/fallout/legion)
 "PX" = (
 /mob/living/simple_animal/hostile/abomination{
 	faction = list("MCfailed");
@@ -5791,12 +5791,12 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "PY" = (
 /obj/structure/bed/wooden,
 /obj/effect/spawner/lootdrop/bedsheet,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/building)
+/area/fallout/building)
 "Qc" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8;
@@ -5804,43 +5804,43 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "Qd" = (
 /obj/structure/bookcase{
 	icon_state = "book-1"
 	},
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/legion)
+/area/fallout/legion)
 "Qg" = (
 /turf/open/floor/plasteel/showroomfloor{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "Qi" = (
 /obj/structure/toilet/secret/low_loot{
 	dir = 1
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Qm" = (
 /obj/structure/bed/mattress/pregame,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Qn" = (
 /obj/structure/bookcase,
 /obj/structure/bookcase{
 	icon_state = "book-3"
 	},
 /turf/open/floor/carpet/green,
-/area/f13/building)
+/area/fallout/building)
 "Qp" = (
 /turf/closed/indestructible/riveted,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "Qr" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/lattice/catwalk,
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "Qs" = (
 /obj/machinery/door/unpowered/celldoor,
 /obj/machinery/door/poddoor/ert{
@@ -5848,20 +5848,20 @@
 	name = "Maximum Security Lockdown"
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Qv" = (
 /obj/structure/railing{
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
-/area/f13/legion)
+/area/fallout/legion)
 "Qx" = (
 /obj/machinery/workbench,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "QD" = (
 /obj/machinery/button/flasher{
 	id = null;
@@ -5880,13 +5880,13 @@
 	icon_type_smooth = "supermart";
 	name = "Reinforced prison wall"
 	},
-/area/f13/building)
+/area/fallout/building)
 "QF" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy/wood_fancy_light{
 	icon_state = "fancy_light-broken2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "QK" = (
 /obj/effect/overlay/junk/toilet{
 	dir = 8
@@ -5895,14 +5895,14 @@
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "QP" = (
 /obj/item/radio/intercom{
 	pixel_x = 26;
 	pixel_y = -28
 	},
 /turf/open/floor/f13/wood,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "QQ" = (
 /obj/structure/sink{
 	pixel_y = 15
@@ -5917,14 +5917,14 @@
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
-/area/f13/building)
+/area/fallout/building)
 "QS" = (
 /obj/machinery/computer/terminal,
 /obj/structure/table/reinforced,
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "QW" = (
 /obj/machinery/light{
 	dir = 1
@@ -5932,7 +5932,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "QX" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -5941,10 +5941,10 @@
 /turf/open/floor/plasteel/showroomfloor{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "Rg" = (
 /turf/closed/wall/f13/tunnel,
-/area/f13/building)
+/area/fallout/building)
 "Rk" = (
 /obj/structure/junk/small/table,
 /obj/effect/spawner/lootdrop/f13/medical/rnd/good,
@@ -5952,7 +5952,7 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Rq" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/trophy/silver_cup{
@@ -5960,13 +5960,13 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "Rr" = (
 /obj/structure/table/snooker{
 	dir = 10
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Rt" = (
 /obj/machinery/light{
 	dir = 1
@@ -5975,22 +5975,22 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Ru" = (
 /obj/structure/chair/wood/dining,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "Rv" = (
 /obj/structure/table/wood/poker,
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "Rz" = (
 /obj/machinery/vending/nukacolavendfull,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "RB" = (
 /obj/structure/sign/warning/securearea{
 	name = "Restricted Area"
@@ -6002,7 +6002,7 @@
 	icon_type_smooth = "tunnel";
 	name = "Reinforced utility tunnel"
 	},
-/area/f13/building)
+/area/fallout/building)
 "RG" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /obj/machinery/light/small/broken{
@@ -6012,18 +6012,18 @@
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken1"
 	},
-/area/f13/building)
+/area/fallout/building)
 "RM" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bookcase{
 	icon_state = "book-1"
 	},
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/legion)
+/area/fallout/legion)
 "RO" = (
 /obj/structure/table/wood,
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/legion)
+/area/fallout/legion)
 "RP" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -6031,12 +6031,12 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "RQ" = (
 /obj/structure/punching_bag,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "RS" = (
 /obj/structure/debris/v2,
 /obj/structure/debris/v3,
@@ -6047,7 +6047,7 @@
 	icon_type_smooth = "supermart";
 	name = "Reinforced prison wall"
 	},
-/area/f13/building)
+/area/fallout/building)
 "RU" = (
 /obj/structure/barricade/bars{
 	max_integrity = 800;
@@ -6059,18 +6059,18 @@
 	name = "Maximum Security Lockdown"
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "RW" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "RY" = (
 /obj/structure/fluff/railing,
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "RZ" = (
 /obj/structure/chair/office/dark{
 	dir = 1
@@ -6078,14 +6078,14 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "Sd" = (
 /obj/structure/chair/wood/dining{
 	dir = 8
 	},
 /mob/living/simple_animal/hostile/radroach,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "Sg" = (
 /obj/structure/lattice,
 /obj/structure/railing{
@@ -6093,17 +6093,17 @@
 	dir = 4
 	},
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "Sl" = (
 /obj/structure/toilet/secret/low_loot,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Sr" = (
 /obj/structure/simple_door/metal/barred{
 	name = "Slave Keep"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "Ss" = (
 /turf/closed/indestructible/rock{
 	desc = "A pre-War wall made of solid concrete.";
@@ -6113,7 +6113,7 @@
 	name = "Concrete wall";
 	smooth = 1
 	},
-/area/f13/building)
+/area/fallout/building)
 "Su" = (
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/bundle/f13/trail,
@@ -6121,20 +6121,20 @@
 /obj/item/clothing/shoes/f13/cowboy,
 /obj/item/clothing/under/f13/cowboyb,
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "Sv" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "Sx" = (
 /obj/machinery/light/fo13colored/Red{
 	dir = 1
 	},
 /obj/structure/filingcabinet/chestdrawer,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "SC" = (
 /obj/structure/railing{
 	color = "#A47449"
@@ -6143,40 +6143,40 @@
 	dir = 1
 	},
 /turf/open/transparent/openspace,
-/area/f13/building)
+/area/fallout/building)
 "SF" = (
 /obj/machinery/light{
 	dir = 4
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "SG" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 1;
 	pixel_y = 24
 	},
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "SI" = (
 /obj/machinery/power/smes,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/radiation)
+/area/fallout/radiation)
 "SJ" = (
 /obj/effect/decal/cleanable/greenglow,
 /obj/structure/reagent_dispensers/barrel/dangerous,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/radiation)
+/area/fallout/radiation)
 "SK" = (
 /obj/structure/chair/office{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common/wood_common_light,
-/area/f13/building)
+/area/fallout/building)
 "SR" = (
 /obj/structure/flora/grass/wasteland,
 /turf/closed/wall/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "ST" = (
 /obj/structure/bed/wooden,
 /obj/item/bedsheet/black,
@@ -6186,54 +6186,54 @@
 	},
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Tc" = (
 /obj/structure/railing{
 	color = "#A47449"
 	},
 /turf/open/transparent/openspace,
-/area/f13/building)
+/area/fallout/building)
 "Td" = (
 /obj/structure/holohoop{
 	dir = 4
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Te" = (
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Tf" = (
 /obj/machinery/telecomms/relay/preset/telecomms,
 /turf/open/indestructible,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "Tl" = (
 /obj/structure/simple_door/dirtyglass,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "Tn" = (
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "To" = (
 /obj/structure/frame/computer,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Ts" = (
 /obj/structure/table,
 /obj/machinery/computer/terminal{
 	dir = 8
 	},
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "Tv" = (
 /obj/structure/fluff/railing{
 	dir = 8
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "Ty" = (
 /obj/item/clothing/under/f13/psychologist,
 /obj/structure/closet/cabinet/anchored,
@@ -6241,19 +6241,19 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "TD" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red/white/side{
 	dir = 8
 	},
-/area/f13/legion)
+/area/fallout/legion)
 "TE" = (
 /obj/machinery/light/small/broken{
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "TF" = (
 /obj/structure/table/reinforced,
 /obj/structure/table/reinforced,
@@ -6261,7 +6261,7 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "TH" = (
 /obj/structure/chair/office/dark{
 	dir = 4
@@ -6277,19 +6277,19 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "TI" = (
 /obj/structure/simple_door/bunker{
 	name = "Medbay Access"
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "TM" = (
 /obj/machinery/light/small{
 	dir = 4
 	},
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "TN" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -6297,14 +6297,14 @@
 /turf/open/floor/wood/wood_fancy{
 	icon_state = "fancy-broken1"
 	},
-/area/f13/building)
+/area/fallout/building)
 "TS" = (
 /obj/structure/railing{
 	color = "#A47449";
 	dir = 4
 	},
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "TV" = (
 /obj/structure/toilet{
 	dir = 4
@@ -6318,20 +6318,20 @@
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
-/area/f13/building)
+/area/fallout/building)
 "TZ" = (
 /obj/structure/filingcabinet/filingcabinet,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Ub" = (
 /obj/structure/railing/corner{
 	color = "#A47449"
 	},
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "Ug" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -6339,21 +6339,21 @@
 	},
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "Ui" = (
 /obj/structure/chair/wood{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Uk" = (
 /obj/machinery/light,
 /obj/structure/table/reinforced,
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "Um" = (
 /obj/machinery/door/unpowered/securedoor{
 	damage_deflection = 28;
@@ -6363,14 +6363,14 @@
 	req_access_txt = "123"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "Uo" = (
 /obj/structure/table,
 /obj/item/stack/cable_coil/cyan,
 /obj/item/electronics/apc,
 /obj/item/assembly/signaler,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "Uq" = (
 /obj/structure/table,
 /obj/item/electronic_assembly/medium/radio{
@@ -6379,14 +6379,14 @@
 	pixel_y = 4
 	},
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "Uu" = (
 /obj/structure/curtain{
 	color = "#c40e0e";
 	pixel_x = -32
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "Uv" = (
 /obj/item/trash/f13/c_ration_1,
 /obj/item/trash/f13/c_ration_2{
@@ -6398,7 +6398,7 @@
 	pixel_x = -32
 	},
 /turf/open/floor/wood/wood_common/wood_common_light,
-/area/f13/building)
+/area/fallout/building)
 "Uw" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
@@ -6406,7 +6406,7 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "UC" = (
 /obj/structure/table/glass,
 /obj/machinery/computer/terminal{
@@ -6417,14 +6417,14 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "UD" = (
 /obj/structure/chair/f13chair2{
 	dir = 8
 	},
 /mob/living/simple_animal/hostile/renegade/soldier,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "UG" = (
 /obj/structure/closet/locker/oldstyle,
 /obj/item/clothing/under/rank/medical/chemist,
@@ -6438,11 +6438,11 @@
 /turf/open/floor/plasteel/showroomfloor{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "UI" = (
 /obj/effect/landmark/start/f13/vetlegionary,
 /turf/open/floor/carpet/black,
-/area/f13/legion)
+/area/fallout/legion)
 "UJ" = (
 /obj/machinery/autolathe,
 /obj/machinery/light,
@@ -6450,10 +6450,10 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "UL" = (
 /turf/open/floor/f13/wood,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "UP" = (
 /obj/item/stack/tile/carpet/cyan/ten,
 /obj/item/screwdriver,
@@ -6462,27 +6462,27 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "UQ" = (
 /obj/structure/railing/corner{
 	color = "#A47449"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "UX" = (
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "Va" = (
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "Ve" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "Vf" = (
 /obj/machinery/shower{
 	dir = 8
@@ -6495,7 +6495,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/red/white/side{
 	dir = 6
 	},
-/area/f13/legion)
+/area/fallout/legion)
 "Vg" = (
 /obj/structure/debris/v2,
 /turf/closed/indestructible/riveted{
@@ -6505,24 +6505,24 @@
 	icon_type_smooth = "supermart";
 	name = "Reinforced prison wall"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Vh" = (
 /turf/open/floor/wood/wood_common{
 	icon_state = "common-broken2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Vj" = (
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/lowmid,
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "Vk" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4;
 	light_color = "#f4e3b0"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "Vl" = (
 /obj/structure/sign/poster/contraband/pinup_anthro4,
 /turf/closed/indestructible/riveted{
@@ -6532,20 +6532,20 @@
 	icon_type_smooth = "tunnel";
 	name = "Reinforced utility tunnel"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Vm" = (
 /obj/structure/fluff/railing{
 	dir = 4
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "Vq" = (
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Vs" = (
 /obj/machinery/door/unpowered/securedoor{
 	damage_deflection = 28;
@@ -6555,17 +6555,17 @@
 	req_access_txt = "123"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "Vu" = (
 /obj/machinery/door/poddoor/shutters/radiation,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Vx" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "VC" = (
 /obj/machinery/light/fo13colored/Red{
 	dir = 4
@@ -6574,7 +6574,7 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "VE" = (
 /obj/structure/table,
 /obj/structure/curtain{
@@ -6583,10 +6583,10 @@
 	},
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "VG" = (
 /turf/closed/mineral/random/low_chance,
-/area/f13/building)
+/area/fallout/building)
 "VJ" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/stack/sheet/glass/ten,
@@ -6597,7 +6597,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "VQ" = (
 /obj/machinery/door/poddoor{
 	id = 56545
@@ -6606,7 +6606,7 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "VV" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -6615,11 +6615,11 @@
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/highmid,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "VX" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/building)
+/area/fallout/building)
 "Wa" = (
 /obj/structure/bed/mattress/pregame,
 /obj/machinery/light/small{
@@ -6628,43 +6628,43 @@
 	},
 /obj/structure/camera_assembly,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Wc" = (
 /obj/structure/railing,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken1"
 	},
-/area/f13/building)
+/area/fallout/building)
 "We" = (
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/building)
+/area/fallout/building)
 "Wf" = (
 /obj/structure/railing/corner{
 	dir = 8
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "Wi" = (
 /turf/closed/wall/f13/sunset/brick_small_dark,
-/area/f13/legion)
+/area/fallout/legion)
 "Wm" = (
 /obj/machinery/light/small{
 	dir = 4;
 	light_color = "red"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Wr" = (
 /turf/open/transparent/openspace,
-/area/f13/caves)
+/area/fallout/caves)
 "Ws" = (
 /obj/structure/filingcabinet{
 	pixel_x = 7
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "Wt" = (
 /obj/structure/chair/stool,
 /obj/structure/curtain{
@@ -6674,18 +6674,18 @@
 /obj/effect/decal/cleanable/glass,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "Wx" = (
 /obj/structure/fluff/railing/corner{
 	dir = 4
 	},
 /turf/open/transparent/openspace,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "Wz" = (
 /obj/structure/railing,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "WG" = (
 /obj/structure/bookshelf{
 	density = 1;
@@ -6695,19 +6695,19 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "WJ" = (
 /obj/structure/stone_tile/block{
 	dir = 4
 	},
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "WK" = (
 /obj/machinery/light/fo13colored/Red{
 	dir = 8
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "WM" = (
 /obj/machinery/light/fo13colored/Red{
 	pixel_x = -16
@@ -6716,7 +6716,7 @@
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
 	},
-/area/f13/building)
+/area/fallout/building)
 "WR" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -6727,14 +6727,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "WT" = (
 /turf/open/indestructible,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "WV" = (
 /obj/structure/dresser,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "WW" = (
 /obj/structure/lattice,
 /obj/structure/railing{
@@ -6746,7 +6746,7 @@
 	dir = 8
 	},
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "Xe" = (
 /obj/structure/bookshelf{
 	density = 1;
@@ -6756,21 +6756,21 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "Xf" = (
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "Xh" = (
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "Xm" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/barricade/sandbags,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Xo" = (
 /obj/structure/chair/wood/dining{
 	dir = 8
@@ -6778,24 +6778,24 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "Xp" = (
 /obj/structure/railing/corner{
 	color = "#A47449";
 	dir = 4
 	},
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "Xq" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "Xs" = (
 /obj/item/chair/wood,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Xt" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -6805,10 +6805,10 @@
 /obj/item/paper_bin,
 /obj/item/pen,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "Xu" = (
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/radiation)
+/area/fallout/radiation)
 "Xw" = (
 /obj/machinery/door/poddoor/shutters/old/preopen{
 	id = 23000;
@@ -6818,28 +6818,28 @@
 	name = "The Hole"
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Xz" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/green,
-/area/f13/building)
+/area/fallout/building)
 "XD" = (
 /obj/structure/simple_door/room,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "XE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "bar"
 	},
-/area/f13/building)
+/area/fallout/building)
 "XG" = (
 /obj/structure/debris/v4,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "XH" = (
 /obj/structure/barricade/bars{
 	max_integrity = 800;
@@ -6855,18 +6855,18 @@
 	name = "Maximum Security Lockdown"
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "XK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/kirbyplants/random,
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "XL" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "XP" = (
 /obj/structure/curtain{
 	color = "#845f58";
@@ -6878,23 +6878,23 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "XR" = (
 /obj/structure/table/wood,
 /turf/open/floor/f13/wood,
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "XU" = (
 /obj/machinery/msgterminal{
 	dir = 4
 	},
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "XZ" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy/wood_fancy_light{
 	icon_state = "fancy_light-broken4"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Ye" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8;
@@ -6902,7 +6902,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
-/area/f13/legion)
+/area/fallout/legion)
 "Yg" = (
 /obj/structure/table/wood/poker,
 /obj/item/stack/spacecash/random,
@@ -6912,20 +6912,20 @@
 	pixel_y = 9
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Yi" = (
 /obj/structure/railing/corner{
 	color = "#A47449"
 	},
 /turf/open/floor/plasteel/cult,
-/area/f13/building)
+/area/fallout/building)
 "Yk" = (
 /obj/structure/chair/sofa/corp/left{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/green,
-/area/f13/building)
+/area/fallout/building)
 "Yl" = (
 /obj/machinery/vending/wallmed,
 /turf/closed/indestructible/riveted{
@@ -6935,34 +6935,34 @@
 	icon_type_smooth = "tunnel";
 	name = "Reinforced utility tunnel"
 	},
-/area/f13/building)
+/area/fallout/building)
 "Yn" = (
 /obj/item/storage/trash_stack{
 	icon_state = "trash_2"
 	},
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "Yq" = (
 /obj/structure/window/fulltile/wood/broken,
 /obj/structure/barricade/wooden/planks{
 	icon_state = "board-1"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Yr" = (
 /obj/structure/railing{
 	color = "#A47449";
 	dir = 5
 	},
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "Ys" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/broken{
 	dir = 4
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "YC" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -6970,7 +6970,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "YD" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -6989,7 +6989,7 @@
 	dir = 8
 	},
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
+/area/fallout/building)
 "YQ" = (
 /obj/item/storage/trash_stack{
 	icon_state = "trash_2"
@@ -6997,7 +6997,7 @@
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "YR" = (
 /obj/machinery/defibrillator_mount/loaded,
 /turf/closed/indestructible/riveted{
@@ -7007,21 +7007,21 @@
 	icon_type_smooth = "supermart";
 	name = "Reinforced prison wall"
 	},
-/area/f13/building)
+/area/fallout/building)
 "YS" = (
 /obj/machinery/door/poddoor/shutters/radiation,
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "YW" = (
 /obj/structure/bed/old,
 /obj/item/bedsheet/brown,
 /turf/open/floor/wood/wood_fancy{
 	icon_state = "fancy-broken4"
 	},
-/area/f13/building)
+/area/fallout/building)
 "YZ" = (
 /obj/structure/closet/locker/oldstyle,
 /obj/item/clothing/mask/surgical,
@@ -7039,14 +7039,14 @@
 /turf/open/floor/plasteel/showroomfloor{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk
 	},
-/area/f13/building)
+/area/fallout/building)
 "Zb" = (
 /obj/structure/curtain{
 	color = "#845f58";
 	pixel_x = 32
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Ze" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
@@ -7055,7 +7055,7 @@
 /turf/open/floor/f13{
 	icon_state = "floordirty"
 	},
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "Zf" = (
 /obj/structure/lattice,
 /obj/structure/railing{
@@ -7067,22 +7067,22 @@
 	dir = 4
 	},
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "Zh" = (
 /obj/structure/railing{
 	color = "#A47449";
 	dir = 10
 	},
 /turf/open/transparent/openspace,
-/area/f13/legion)
+/area/fallout/legion)
 "Zl" = (
 /mob/living/simple_animal/hostile/ghoul/glowing/strong,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/radiation)
+/area/fallout/radiation)
 "Zn" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "Zo" = (
 /obj/structure/dresser,
 /obj/item/toy/figure/engineer{
@@ -7093,19 +7093,19 @@
 	dir = 8
 	},
 /turf/open/floor/wood/wood_common/wood_common_light,
-/area/f13/building)
+/area/fallout/building)
 "Zp" = (
 /obj/structure/dresser,
 /obj/item/storage/belt/utility/gardener,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
-/area/f13/building)
+/area/fallout/building)
 "Zt" = (
 /obj/structure/closet/cabinet/anchored,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superlow,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "Zw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/wood,
@@ -7120,23 +7120,23 @@
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
-/area/f13/wasteland/rocksprings)
+/area/fallout/wasteland/rocksprings)
 "Zx" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/renegade,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
-/area/f13/building)
+/area/fallout/building)
 "ZA" = (
 /obj/structure/anvil/obtainable/table,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "ZD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/wreck/trash/machinepiletwo,
 /turf/open/floor/wood/wood_common,
-/area/f13/building)
+/area/fallout/building)
 "ZI" = (
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
@@ -7144,7 +7144,7 @@
 /turf/open/floor/f13{
 	icon_state = "bar"
 	},
-/area/f13/building)
+/area/fallout/building)
 "ZJ" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -7155,14 +7155,14 @@
 	pixel_y = 24
 	},
 /turf/open/floor/wood/wood_fancy,
-/area/f13/legion)
+/area/fallout/legion)
 "ZL" = (
 /obj/machinery/conveyor_switch/oneway,
 /obj/machinery/light/fo13colored/Red{
 	dir = 4
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
+/area/fallout/building)
 "ZN" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 1;
@@ -7171,7 +7171,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
-/area/f13/legion)
+/area/fallout/legion)
 "ZQ" = (
 /obj/item/kirbyplants/random,
 /obj/structure/curtain{
@@ -7179,18 +7179,18 @@
 	pixel_y = 32
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/fallout/building)
 "ZT" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/black,
-/area/f13/legion)
+/area/fallout/legion)
 "ZW" = (
 /obj/effect/decal/cleanable/glass,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common{
 	icon_state = "common-broken2"
 	},
-/area/f13/building)
+/area/fallout/building)
 
 (1,1,1) = {"
 sW

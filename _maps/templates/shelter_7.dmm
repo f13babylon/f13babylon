@@ -4,11 +4,11 @@
 	dir = 8
 	},
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "e" = (
 /obj/item/shovel,
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "f" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
@@ -18,7 +18,7 @@
 "g" = (
 /obj/structure/fence/corner/wooden,
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "i" = (
 /obj/structure/fermenting_barrel,
 /turf/open/floor/f13/wood,
@@ -26,7 +26,7 @@
 "j" = (
 /obj/item/reagent_containers/glass/bucket,
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "l" = (
 /obj/structure/table/wood,
 /obj/item/kitchen/knife,
@@ -35,17 +35,17 @@
 /area/survivalpod)
 "m" = (
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "n" = (
 /obj/structure/fence/wooden{
 	pixel_y = 2
 	},
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "p" = (
 /obj/structure/legion_extractor,
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "r" = (
 /obj/structure/bed,
 /obj/item/bedsheet/brown,
@@ -54,7 +54,7 @@
 "s" = (
 /obj/structure/sink/puddle,
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "u" = (
 /obj/structure/table/wood,
 /obj/machinery/microwave,
@@ -62,26 +62,26 @@
 /area/survivalpod)
 "v" = (
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "y" = (
 /turf/closed/wall/f13/tentwall,
 /area/survivalpod)
 "A" = (
 /obj/machinery/biogenerator,
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "B" = (
 /obj/structure/fence/wooden{
 	pixel_y = -8
 	},
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "D" = (
 /obj/structure/fence/wooden{
 	dir = 4
 	},
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "E" = (
 /obj/structure/fence/wooden{
 	pixel_y = -8
@@ -90,15 +90,15 @@
 	pixel_y = 2
 	},
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "F" = (
 /obj/structure/reagent_dispensers/compostbin,
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "G" = (
 /obj/machinery/hydroponics/soil,
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "H" = (
 /obj/machinery/vending/hydronutrients,
 /turf/open/floor/f13/wood,
@@ -114,13 +114,13 @@
 	dir = 4;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "M" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 8;
 	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "O" = (
 /turf/open/floor/f13/wood,
 /area/survivalpod)
@@ -129,7 +129,7 @@
 	dir = 4
 	},
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "S" = (
 /obj/item/reagent_containers/food/snacks/grown/wheat,
 /obj/item/reagent_containers/food/snacks/grown/wheat,
@@ -147,11 +147,11 @@
 	pixel_y = 2
 	},
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "V" = (
 /mob/living/simple_animal/cow/brahmin,
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "X" = (
 /obj/machinery/smartfridge/bottlerack/seedbin,
 /turf/open/floor/f13/wood,
@@ -161,7 +161,7 @@
 	dir = 8
 	},
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/area/fallout/wasteland)
 "Z" = (
 /obj/machinery/vending/hydroseeds,
 /turf/open/floor/f13/wood,

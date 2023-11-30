@@ -16,7 +16,7 @@
 	end_message = "<span class='boldannounce'>The snowfall dies down, it should be safe to go outside again.</span>"
 	end_overlay = "light_snow"
 
-	area_types = list(/area/f13/mountain_area)
+	area_types = list(/area/fallout/mountain_area)
 	protect_indoors = TRUE
 //	target_trait = ZTRAIT_SNOWSTORM
 	target_trait = ZTRAIT_SURFACE
@@ -28,4 +28,3 @@
 
 /datum/weather/snow_storm/weather_act(mob/living/L)
 	L.adjust_bodytemperature(-rand(15,25))//raised from 5 - 15
-

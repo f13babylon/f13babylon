@@ -140,7 +140,7 @@
 
 /turf/open/chasm/elevator/Initialize(mapload)
 	. = ..()
-	var/turf/T = safepick(get_area_turfs(/area/f13/vault_elevator))
+	var/turf/T = safepick(get_area_turfs(/area/fallout/vault_elevator))
 	if(T)
 		set_target(T)
 
@@ -157,6 +157,6 @@
 
 /turf/open/chasm/elevator_enc/Initialize(mapload)
 	. = ..()
-	var/turf/T = safepick(get_area_turfs(/area/f13/enc_elevator))
+	var/turf/T = safepick(get_area_turfs(/area/fallout/enclave_elevator))
 	if(T)
 		set_target(T)
