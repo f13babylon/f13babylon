@@ -751,7 +751,7 @@
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/melee/classic_baton = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
-		/obj/item/gun/energy/laser/plasma/pistol/remnant/is = 1,
+		/obj/item/gun/energy/laser/plasma/pistol = 1,
 		/obj/item/storage/belt/holster = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/storage/survivalkit_aid_adv = 1,
