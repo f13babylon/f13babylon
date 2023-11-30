@@ -6407,10 +6407,6 @@
 	},
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/building/mall)
-"kav" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13/wood,
-/area/f13/wasteland)
 "kaE" = (
 /turf/open/transparent/openspace,
 /area/f13/city/bighorn)
@@ -12529,9 +12525,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/purple,
 /area/f13/building/hospital)
-"ufg" = (
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/wasteland)
 "ugT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -51873,8 +51866,8 @@ oez
 oez
 oez
 oez
-nKH
-nKH
+oez
+oez
 nKH
 nKH
 nKH
@@ -56492,7 +56485,7 @@ abv
 abv
 nhu
 ewI
-kav
+nhu
 rJS
 oez
 oez
@@ -56749,7 +56742,7 @@ abv
 abv
 rJm
 rJm
-ufg
+aeq
 rJS
 oez
 oez
@@ -57030,7 +57023,7 @@ oez
 oez
 oez
 oez
-oez
+abv
 abv
 abv
 abv
