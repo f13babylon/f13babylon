@@ -125,7 +125,7 @@ also: most hitscan weapons have more charge than their normal projectile counter
 
 /obj/item/ammo_casing/energy/laser/pistol/hitscan/pewpew
 	projectile_type = /obj/item/projectile/beam/laser/pistol/hitscan/pewpew
-	e_cost = 213 //~7 shots
+	e_cost = 600 //2 shots
 
 /obj/item/ammo_casing/energy/laser/ultra_pistol
 	projectile_type = /obj/item/projectile/beam/laser/ultra_pistol

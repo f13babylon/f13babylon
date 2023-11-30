@@ -392,10 +392,10 @@
 
 /obj/item/projectile/beam/laser/pistol/hitscan/pewpew
 	name = "overtuned laser beam"
-	damage = 35
+	damage = 45
 	wound_bonus = 15
 	bare_wound_bonus = 25
-	armour_penetration = 0.25
+	armour_penetration = 0.45
 	tracer_type = /obj/effect/projectile/tracer/pulse
 	muzzle_type = /obj/effect/projectile/muzzle/pulse
 	impact_type = /obj/effect/projectile/impact/pulse
