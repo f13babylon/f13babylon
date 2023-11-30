@@ -98,7 +98,6 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	exp_requirements = 0
 	total_positions = -1
 	spawn_positions = -1
-	roleplay_exclusive_notify = 1
 
 	outfit = /datum/outfit/job/tribal/gatherer
 
@@ -132,7 +131,6 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	exp_requirements = 300
 	total_positions = 1
 	spawn_positions = 1
-	roleplay_exclusive_notify = 1
 
 	outfit = /datum/outfit/job/tribal/shaman
 
