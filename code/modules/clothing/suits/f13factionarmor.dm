@@ -324,7 +324,7 @@
 	desc = "Centurions who have led many patrols and ambushes against NCR Rangers have a distinct look from the many looted pieces of Ranger armor, and are often experienced in skirmishing."
 	icon_state = "legion_rangercent"
 	item_state = "legion_rangercent"
-	armor = list("melee" = 35, "bullet" = 55, "laser" = 25, "energy" = 10, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20, "wound" = 35) //Mostly mimics vet ranger stuff, higher melee and lower laser
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 20, "energy" = 5, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20, "wound" = 35) //Laser tradeoff for melee armor
 	slowdown = 0.03
 
 /obj/item/clothing/suit/armor/f13/legion/legate
