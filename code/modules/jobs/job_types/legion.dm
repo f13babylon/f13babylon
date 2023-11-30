@@ -1075,11 +1075,14 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	outfit = /datum/outfit/job/CaesarsLegion/f13campfollower
 	roleplay_exclusive_notify = 1
 	exp_requirements = 0
+	access = list(ACCESS_LEGION, ACCESS_LEGION_SLAVE, ACCESS_LEGION_COMMAND) // they can disable headsets but not change IDs
+	minimal_access = list(ACCESS_LEGION, ACCESS_LEGION_SLAVE, ACCESS_LEGION_COMMAND)
 
 /datum/outfit/job/CaesarsLegion/f13campfollower
 	name = "Legion Forgemaster"
 	id = /obj/item/card/id/dogtag/legforgemaster
 	glasses = /obj/item/clothing/glasses/welding
+	ears = /obj/item/radio/headset/headset_legion
 	belt = /obj/item/storage/belt/utility/waster/forgemaster
 	neck = /obj/item/clothing/neck/apron/labor/forge
 	gloves = /obj/item/clothing/gloves/legion/forgemaster

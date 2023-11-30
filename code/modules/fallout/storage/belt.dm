@@ -46,14 +46,23 @@
 /obj/item/storage/belt/utility/waster/forgemaster/PopulateContents()
 	new /obj/item/crowbar(src)
 	new /obj/item/wrench(src)
-	new /obj/item/screwdriver/basic(src)
-	new /obj/item/weldingtool/basic(src)
-	new /obj/item/wirecutters/basic(src)
+	new /obj/item/screwdriver/bronze(src)
+	new /obj/item/weldingtool/bronze(src)
+	new /obj/item/wirecutters/bronze(src)
 	new /obj/item/melee/smith/hammer/premade(src)
 	new /obj/item/twohanded/chainsaw(src)
 
 /obj/item/storage/belt/utility/waster/forgemaster/khan
 	name = "smith toolbelt"
+
+/obj/item/storage/belt/utility/waster/forgemaster/khan/PopulateContents()
+	new /obj/item/crowbar(src)
+	new /obj/item/wrench(src)
+	new /obj/item/screwdriver/basic(src)
+	new /obj/item/weldingtool/basic(src)
+	new /obj/item/wirecutters/basic(src)
+	new /obj/item/melee/smith/hammer/premade(src)
+	new /obj/item/twohanded/chainsaw(src)
 
 // Gardener belt. Hold farming stuff thats small, also flasks (think hip flasks, not bottles as such)
 /obj/item/storage/belt/utility/gardener
