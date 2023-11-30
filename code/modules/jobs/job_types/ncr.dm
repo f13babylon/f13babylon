@@ -401,7 +401,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	display_order = JOB_DISPLAY_ORDER_SERGEANT
 	outfit = /datum/outfit/job/ncr/f13drillsergeant
-	roleplay_exclusive_notify = 1
 	exp_requirements = 0
 
 	loadout_options = list( // ALL: Bayonet
@@ -480,7 +479,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	supervisors = "The Captain and the NCR"
 	display_order = JOB_DISPLAY_ORDER_REPRESENTATIVE
 	outfit = /datum/outfit/job/ncr/f13representative
-	roleplay_exclusive_notify = 1
 	exp_type = EXP_TYPE_NCR
 	exp_requirements = 840
 
@@ -927,7 +925,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_TROOPER
 	outfit = /datum/outfit/job/ncr/f13mp
-	roleplay_exclusive_notify = 1
 	exp_requirements = 0
 
 /datum/outfit/job/ncr/f13mp		// .45 Pistol, Beanbag Shotgun, Military baton
@@ -1246,7 +1243,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	display_order = JOB_DISPLAY_ORDER_MEDICALOFFICER
 	outfit = /datum/outfit/job/ncr/f13medicalofficer
-	roleplay_exclusive_notify = 1
 	exp_type = EXP_TYPE_NCR
 	exp_requirements = 840
 	matchmaking_allowed = list(
@@ -1304,7 +1300,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_LOGISTICSOFFICER
 	outfit = /datum/outfit/job/ncr/f13logisticsofficer
-	roleplay_exclusive_notify = 1
 	exp_type = EXP_TYPE_NCR
 	exp_requirements = 840
 
@@ -1355,7 +1350,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv = 2,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
-		/obj/item/ammo_box/magazine/m9mm = 2,
+		/obj/item/ammo_box/magazine/m9mmds = 2,
 		/obj/item/grenade/plastic/c4 = 1,
 		/obj/item/melee/onehanded/knife/survival = 1,
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
@@ -1381,7 +1376,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	exp_type = EXP_TYPE_NCR
 	display_order = JOB_DISPLAY_ORDER_REAR_ECHELON
 	outfit = /datum/outfit/job/ncr/f13rearechelon
-	roleplay_exclusive_notify = 1
 	exp_requirements = 0
 
 /datum/outfit/job/ncr/f13rearechelon

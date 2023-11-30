@@ -539,7 +539,6 @@
 	outfit = /datum/outfit/job/enclave/noncombat/enclavesci
 	exp_type = EXP_TYPE_FALLOUT
 	exp_requirements = 600
-	roleplay_exclusive_notify = 1
 	access = list(ACCESS_ENCLAVE, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
 
 /datum/outfit/job/enclave/noncombat/enclavesci
@@ -596,7 +595,6 @@
 	supervisors = "Enclave Upper Echelon, Air Force Division."
 	outfit = /datum/outfit/job/enclave/noncombat/enclavepilot
 	req_admin_notify = 1
-	roleplay_exclusive_notify = 1
 	exp_requirements = 1000
 	access = list(ACCESS_ENCLAVE, ACCESS_ENCLAVE_COMMAND, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
 
@@ -641,7 +639,6 @@
 	enforces = "You are not permitted to leave the base. You are a non-combatant. You cannot join any raids or battles on the surface. You cannot run dungeons."
 	supervisors = "Everyone else."
 	outfit = /datum/outfit/job/enclave/noncombat/f13BDUTY
-	roleplay_exclusive_notify = 1
 	exp_type = EXP_TYPE_FALLOUT
 	exp_requirements = 600
 
@@ -731,7 +728,6 @@
 	supervisors = "United States Secret Service"
 	access = list(ACCESS_ENCLAVE, ACCESS_CHANGE_IDS, ACCESS_ENCLAVE_COMMAND, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
 	outfit = /datum/outfit/job/enclave/noncombat/enc_maj
-	roleplay_exclusive_notify = 1
 	req_admin_notify = 1
 	exp_requirements = 2500//Well above Lieutenant for good reason. It's RP exclusive, and comes with some heavy perks.
 
