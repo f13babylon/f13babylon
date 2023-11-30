@@ -837,8 +837,7 @@
 	icon_state = "egununique_loot"
 	name = "unique tier energy gun"
 	lootcount = 1
-
-	loot = /obj/item/gun/energy/laser/pistol/pewpew
+	loot = list(/obj/item/gun/energy/laser/pistol/pewpew
 				)
 
 //Ballistic Weapon Spawners
