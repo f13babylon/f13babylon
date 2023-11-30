@@ -58,7 +58,6 @@ Elder
 	supervisors = "the high elders"
 	selection_color = "#7f8c8d"
 	req_admin_notify = 1
-	roleplay_exclusive_notify = 1
 
 	exp_requirements = 0
 
@@ -974,7 +973,6 @@ Off-Duty
 	enforces = "You are not permited to leave the base. You are a non-combatant. You cannot join any raids or battles on the surface. You cannot not run dungeons."
 	selection_color = "#95a5a6"
 	roleplay_exclusive_notify = 1
-	exp_requirements = 0
 	exp_type = EXP_TYPE_WASTELAND//So you can't sit on it and play Baron / Inquisitor. :)
 	outfit = /datum/outfit/job/bos/f13offdutybos
 	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
