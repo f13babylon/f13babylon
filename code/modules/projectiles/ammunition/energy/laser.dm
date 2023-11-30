@@ -123,6 +123,10 @@ also: most hitscan weapons have more charge than their normal projectile counter
 	projectile_type = /obj/item/projectile/beam/laser/pistol/hitscan
 	e_cost = 53.33 //30 shots, as per FNV
 
+/obj/item/ammo_casing/energy/laser/pistol/hitscan/pewpew
+	projectile_type = /obj/item/projectile/beam/laser/pistol/hitscan/pewpew
+	e_cost = 213 //~7 shots
+
 /obj/item/ammo_casing/energy/laser/ultra_pistol
 	projectile_type = /obj/item/projectile/beam/laser/ultra_pistol
 	e_cost = 80 //20 shots
