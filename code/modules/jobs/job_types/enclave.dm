@@ -213,7 +213,7 @@
 /datum/outfit/job/enclave/peacekeeper/f13gysergeant
 	name = "Enclave Gunnery Sergeant"
 	jobtype = /datum/job/enclave/f13gysergeant
-	accessory = /obj/item/clothing/accessory/enclave/sergeant_firstclass
+	accessory = /obj/item/clothing/accessory/enclave/gunnery_sergeant
 	ears = /obj/item/radio/headset/headset_enclave/command
 
 	backpack_contents = list(
@@ -425,7 +425,7 @@
 	jobtype = /datum/job/enclave/f13specialist
 	head = /obj/item/clothing/head/helmet/f13/combat/enclave
 	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/enclave
-	accessory = /obj/item/clothing/accessory/enclave/specialist
+	accessory = /obj/item/clothing/accessory/enclave/corporal
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
@@ -659,7 +659,6 @@
 	id = /obj/item/card/id/dogtag/enclave/trooper
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	uniform = /obj/item/clothing/under/f13/enclave/peacekeeper
-	accessory = /obj/item/clothing/accessory/enclave
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,

@@ -244,11 +244,11 @@
 	switch(rads)
 		if(-INFINITY to RAD_MOB_SAFE)
 			radholder.icon_state = "hudradsafe"
-		if((RAD_MOB_SAFE+1) to RAD_MOB_MUTATE)
+		if((RAD_MOB_SAFE + 1) to RAD_MOB_VOMIT)
 			radholder.icon_state = "hudraddanger"
-		if((RAD_MOB_MUTATE+1) to RAD_MOB_VOMIT)
+		if((RAD_MOB_VOMIT + 1) to RAD_MOB_MUTATE)
 			radholder.icon_state = "hudradlethal"
-		if((RAD_MOB_VOMIT+1) to INFINITY)
+		if((RAD_MOB_MUTATE + 1) to INFINITY)
 			radholder.icon_state = "hudradnuke"
 
 /***********************************************

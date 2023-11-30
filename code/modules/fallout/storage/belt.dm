@@ -162,13 +162,13 @@
 	new /obj/item/ammo_box/c45rev(src)
 
 /obj/item/storage/belt/holster/ranger4570/PopulateContents()
-	new /obj/item/gun/ballistic/revolver/sequoia(src)
+	new /obj/item/gun/ballistic/revolver/hunting/sequoia(src)
 	new /obj/item/ammo_box/c4570(src)
 	new /obj/item/ammo_box/c4570(src)
 	new /obj/item/ammo_box/c4570(src)
 
 /obj/item/storage/belt/holster/ranger4570bayonet/PopulateContents()
-	new /obj/item/gun/ballistic/revolver/sequoia/bayonet(src)
+	new /obj/item/gun/ballistic/revolver/hunting/sequoia/bayonet(src)
 	new /obj/item/ammo_box/c4570(src)
 	new /obj/item/ammo_box/c4570(src)
 	new /obj/item/ammo_box/c4570(src)

@@ -1108,9 +1108,9 @@
 //sequoia bayonet
 /datum/crafting_recipe/bladedsequoia
 	name = "bladed ranger sequoia"
-	result = /obj/item/gun/ballistic/revolver/sequoia/bayonet
-	reqs = list(/obj/item/stack/crafting/goodparts = 2,
-				/obj/item/gun/ballistic/revolver/sequoia = 1
+	result = /obj/item/gun/ballistic/revolver/hunting/sequoia/bayonet
+	reqs = list(/obj/item/gun/ballistic/revolver/hunting/sequoia = 1,
+				/obj/item/melee/onehanded/knife/bayonet = 1
 				)
 	tools = list(TOOL_WORKBENCH)
 	time = 120

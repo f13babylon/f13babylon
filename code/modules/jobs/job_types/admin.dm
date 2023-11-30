@@ -65,7 +65,7 @@
 
 /datum/outfit/loadout/retired_ranger
 	name = "Retired Veteran"
-	r_hand = /obj/item/gun/ballistic/revolver/sequoia
+	r_hand = /obj/item/gun/ballistic/revolver/hunting/sequoia
 	backpack_contents = list(
 							/obj/item/ammo_box/c4570/explosive=2
 							)

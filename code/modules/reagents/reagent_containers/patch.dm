@@ -118,7 +118,7 @@
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "patch_hydra"
 	list_reagents = list(/datum/reagent/medicine/hydra = 10)
-	self_delay = 10
+	self_delay = 0
 
 // ---------------------------------
 // BERSERKER POWDER

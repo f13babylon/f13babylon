@@ -572,6 +572,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 			set_lit(TRUE)
 			if(fancy)
 				user.visible_message("Without even breaking stride, [user] flips open and lights [src] in one smooth movement.", "<span class='notice'>Without even breaking stride, you flip open and light [src] in one smooth movement.</span>")
+				playsound(src, 'sound/f13items/zippo2_open.ogg', 80)
 			else
 				var/prot = FALSE
 				var/mob/living/carbon/human/H = user
@@ -590,13 +591,16 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 					user.apply_damage(5, BURN, hitzone)
 					user.visible_message("<span class='warning'>After a few attempts, [user] manages to light [src] - however, [user.p_they()] burn [user.p_their()] finger in the process.</span>", "<span class='warning'>You burn yourself while lighting the lighter!</span>")
 					SEND_SIGNAL(user, COMSIG_ADD_MOOD_EVENT, "burnt_thumb", /datum/mood_event/burnt_thumb)
+				playsound(src, 'sound/f13items/lighter_on.ogg', 80)
 
 		else
 			set_lit(FALSE)
 			if(fancy)
 				user.visible_message("You hear a quiet click, as [user] shuts off [src] without even looking at what [user.p_theyre()] doing. Wow.", "<span class='notice'>You quietly shut off [src] without even looking at what you're doing. Wow.</span>")
+				playsound(src, 'sound/f13items/zippo2_close.ogg', 20, 1, 1)
 			else
 				user.visible_message("[user] quietly shuts off [src].", "<span class='notice'>You quietly shut off [src].</span>")
+				playsound(src, 'sound/f13items/lighter_off.ogg', 20, 1, 1)
 	else
 		. = ..()
 

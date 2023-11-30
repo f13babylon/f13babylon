@@ -631,7 +631,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/vrcqc
 	name = "Veteran Ranger CQC"
-	suit_store = /obj/item/gun/ballistic/revolver/sequoia
+	suit_store = /obj/item/gun/ballistic/revolver/hunting/sequoia
 	backpack_contents = list(
 		/obj/item/ammo_box/c4570box/ = 2,
 		/obj/item/book/granter/trait/bigleagues = 1,

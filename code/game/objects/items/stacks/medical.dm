@@ -273,7 +273,7 @@
 	desc = "A suture infused with drugs that speed up wound healing of the treated laceration."
 	heal_brute = 15
 	stop_bleeding = 8
-	grind_results = list(/datum/reagent/medicine/polypyr = 2)
+	grind_results = list(/datum/reagent/medicine/stimpak/imitation = 2) //because broc and xander
 	merge_type = /obj/item/stack/medical/suture/medicated
 
 /obj/item/stack/medical/suture/medicated/five
@@ -368,14 +368,14 @@
 
 /obj/item/stack/medical/mesh/advanced
 	name = "advanced regenerative mesh"
-	desc = "An advanced mesh made with aloe extracts and sterilizing chemicals, used for the most critical burns. Also removes infection directly, unlike ointment. This is the kind of thing you would expect to see in a pre-war hospital for rich people."
+	desc = "An advanced mesh made with agave extracts and sterilizing chemicals, used for the most critical burns. Also removes infection directly, unlike ointment. This is the kind of thing you would expect to see in a pre-war hospital for rich people."
 	gender = PLURAL
 	singular_name = "advanced regenerative mesh"
 	icon_state = "aloe_mesh"
 	heal_burn = 15
 	sanitization = 6
 	flesh_regeneration = 12
-	grind_results = list(/datum/reagent/consumable/aloejuice = 1)
+	grind_results = list(/datum/reagent/consumable/agavejuice = 1)
 	merge_type = /obj/item/stack/medical/mesh/advanced
 
 /obj/item/stack/medical/mesh/advanced/one
