@@ -1,20 +1,20 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
 /turf/open/space/basic,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "ab" = (
 /turf/closed/indestructible/riveted,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "ac" = (
 /obj/structure/window/reinforced,
 /turf/closed/indestructible/riveted,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "ad" = (
 /turf/open/space,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "ae" = (
 /turf/open/space/transit,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "af" = (
 /turf/open/floor/holofloor/snow,
 /area/holodeck/rec_center/winterwonderland)
@@ -23,7 +23,7 @@
 	dir = 4
 	},
 /turf/closed/indestructible/riveted,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "ah" = (
 /obj/structure/foamedmetal,
 /obj/structure/window{
@@ -119,7 +119,7 @@
 	dir = 8
 	},
 /turf/closed/indestructible/riveted,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "aw" = (
 /turf/closed/indestructible/rock,
 /area/vertibird_interior)
@@ -371,7 +371,7 @@
 	dir = 8
 	},
 /turf/closed/indestructible/riveted,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "bk" = (
 /obj/effect/holodeck_effect/mobspawner/bee,
 /turf/open/floor/holofloor/asteroid,
@@ -1889,7 +1889,7 @@
 	width = 3
 	},
 /turf/open/space,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "fy" = (
 /obj/machinery/igniter/on,
 /obj/effect/turf_decal/delivery,
@@ -2180,7 +2180,7 @@
 /turf/closed/indestructible/fakedoor{
 	name = "CentCom Warehouse"
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "gZ" = (
 /obj/machinery/computer/camera_advanced/verti,
 /turf/open/floor/f13{
@@ -2439,11 +2439,11 @@
 	name = "cargo display"
 	},
 /turf/closed/indestructible/riveted,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "iG" = (
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "iH" = (
 /obj/machinery/light{
 	dir = 8
@@ -2483,7 +2483,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "iO" = (
 /obj/machinery/light{
 	dir = 1
@@ -2491,12 +2491,12 @@
 /turf/open/floor/plasteel/brown{
 	dir = 1
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "iP" = (
 /turf/open/floor/plasteel/brown{
 	dir = 1
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "iQ" = (
 /obj/machinery/firealarm{
 	dir = 4;
@@ -2505,14 +2505,14 @@
 /turf/open/floor/plasteel/brown{
 	dir = 5
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "iR" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "iS" = (
 /turf/open/floor/plasteel/neutral,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "iT" = (
 /turf/closed/indestructible/fakedoor{
 	name = "Thunderdome Admin"
@@ -2540,12 +2540,12 @@
 /turf/open/floor/plasteel/brown{
 	dir = 4
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "iY" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/sign/warning/vacuum/external,
 /turf/open/floor/plating,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "iZ" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -2555,7 +2555,7 @@
 	id = "XCCQMLoad2"
 	},
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "ja" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/light{
@@ -2572,12 +2572,12 @@
 /turf/open/floor/plasteel/brown{
 	dir = 8
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jc" = (
 /turf/open/floor/plasteel/yellowsiding{
 	dir = 1
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jd" = (
 /obj/machinery/light{
 	dir = 4
@@ -2585,7 +2585,7 @@
 /turf/open/floor/plasteel/brown{
 	dir = 4
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "je" = (
 /obj/machinery/door/poddoor{
 	id = "XCCQMLoaddoor2";
@@ -2599,7 +2599,7 @@
 	id = "XCCQMLoad2"
 	},
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jf" = (
 /obj/structure/plasticflaps,
 /obj/effect/turf_decal/stripes/line,
@@ -2608,7 +2608,7 @@
 	id = "XCCQMLoad2"
 	},
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jg" = (
 /obj/machinery/computer/secure_data,
 /obj/effect/turf_decal/stripes/line,
@@ -2653,7 +2653,7 @@
 	id = "XCCQMLoad2"
 	},
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jl" = (
 /obj/effect/turf_decal/stripes/end,
 /obj/machinery/conveyor/inverted{
@@ -2661,24 +2661,24 @@
 	id = "XCCQMLoad2"
 	},
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jm" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jn" = (
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jo" = (
 /obj/item/stack/packageWrap,
 /obj/item/hand_labeler,
 /obj/structure/table,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jp" = (
 /obj/machinery/door/airlock/external{
 	name = "Supply Shuttle";
@@ -2688,24 +2688,24 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jq" = (
 /obj/structure/fans/tiny,
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jr" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "js" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/filingcabinet/filingcabinet,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jt" = (
 /obj/machinery/button/door{
 	id = "XCCQMLoaddoor";
@@ -2726,13 +2726,13 @@
 	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "ju" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 8
 	},
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jv" = (
 /obj/structure/filingcabinet/security,
 /obj/effect/turf_decal/stripes/line{
@@ -2750,7 +2750,7 @@
 "jy" = (
 /obj/machinery/status_display,
 /turf/closed/indestructible/riveted,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jz" = (
 /obj/structure/flora/tree/jungle/small,
 /turf/open/floor/grass,
@@ -2787,7 +2787,7 @@
 	width = 3
 	},
 /turf/open/space,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jD" = (
 /obj/machinery/door/poddoor{
 	id = "XCCQMLoaddoor";
@@ -2801,7 +2801,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jE" = (
 /obj/structure/plasticflaps,
 /obj/machinery/conveyor{
@@ -2810,7 +2810,7 @@
 	},
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jF" = (
 /obj/structure/flora/tree/joshua,
 /turf/open/floor/grass,
@@ -2845,7 +2845,7 @@
 	},
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jJ" = (
 /obj/effect/turf_decal/stripes/end{
 	dir = 1
@@ -2855,18 +2855,18 @@
 	id = "XCCQMLoad2"
 	},
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jK" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jL" = (
 /obj/structure/closet/wardrobe/cargotech,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jM" = (
 /obj/machinery/conveyor_switch/oneway{
 	dir = 8;
@@ -2876,7 +2876,7 @@
 /turf/open/floor/plasteel/brown{
 	dir = 8
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jN" = (
 /obj/structure/closet/secure_closet/quartermaster,
 /obj/machinery/airalarm{
@@ -2885,15 +2885,15 @@
 	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jP" = (
 /turf/open/floor/plasteel/brown{
 	dir = 8
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jQ" = (
 /turf/open/floor/plasteel/yellowsiding,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "jR" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -3010,7 +3010,7 @@
 "kj" = (
 /obj/machinery/light,
 /turf/open/floor/plasteel/brown,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "kk" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -3040,7 +3040,7 @@
 /area/centcom/evac)
 "kw" = (
 /turf/open/floor/plasteel/brown,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "kx" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -3185,12 +3185,12 @@
 	pixel_y = -26
 	},
 /turf/open/floor/plasteel/brown,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "lo" = (
 /turf/open/floor/plasteel/brown{
 	dir = 6
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "lp" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Shuttle Control Office";
@@ -3198,7 +3198,7 @@
 	},
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "lq" = (
 /obj/machinery/door/airlock/centcom{
 	name = "CentCom Supply";
@@ -3206,7 +3206,7 @@
 	},
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "lr" = (
 /obj/machinery/status_display/ai,
 /turf/closed/wall/f13/vault,
@@ -3282,13 +3282,13 @@
 /area/vertibird_interior)
 "lI" = (
 /turf/open/indestructible/binary,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "lJ" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/vault{
 	dir = 8
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "lK" = (
 /obj/machinery/computer/auxillary_base{
 	pixel_y = 32
@@ -3300,7 +3300,7 @@
 /turf/open/floor/plasteel/vault{
 	dir = 8
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "lL" = (
 /obj/structure/table/wood,
 /obj/item/taperecorder,
@@ -3410,14 +3410,14 @@
 	dir = 10
 	},
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "mc" = (
 /obj/machinery/computer/shuttle/mining,
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "md" = (
 /obj/machinery/light{
 	dir = 1
@@ -3429,12 +3429,12 @@
 /turf/open/floor/plasteel/vault{
 	dir = 8
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "me" = (
 /turf/open/floor/plasteel/vault{
 	dir = 8
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "mf" = (
 /obj/machinery/airalarm{
 	dir = 8;
@@ -3444,12 +3444,12 @@
 /turf/open/floor/plasteel/vault{
 	dir = 8
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "mg" = (
 /turf/open/floor/plasteel/brown{
 	dir = 9
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "mh" = (
 /obj/machinery/airalarm{
 	dir = 8;
@@ -3458,11 +3458,11 @@
 /turf/open/floor/plasteel/brown{
 	dir = 5
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "mi" = (
 /obj/machinery/status_display/ai,
 /turf/closed/indestructible/riveted,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "mj" = (
 /obj/machinery/computer/cargo{
 	dir = 4
@@ -3471,7 +3471,7 @@
 	dir = 5
 	},
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "mk" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
@@ -3514,7 +3514,7 @@
 /turf/open/floor/plasteel/brown{
 	dir = 9
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "mE" = (
 /obj/machinery/button/flasher{
 	id = "tdomeflash"
@@ -3531,7 +3531,7 @@
 /turf/open/floor/plasteel/brown{
 	dir = 1
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "mG" = (
 /obj/structure/noticeboard{
 	dir = 8;
@@ -3540,7 +3540,7 @@
 /turf/open/floor/plasteel/brown{
 	dir = 5
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "mH" = (
 /obj/machinery/computer/security/mining{
 	dir = 4
@@ -3549,16 +3549,16 @@
 	dir = 6
 	},
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "mI" = (
 /turf/open/floor/plasteel/brown{
 	dir = 10
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "mJ" = (
 /obj/structure/chair/office/dark,
 /turf/open/floor/plasteel/brown,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "mK" = (
 /obj/item/storage/briefcase{
 	pixel_x = -3;
@@ -3678,7 +3678,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "nm" = (
 /obj/item/clipboard,
 /obj/item/stamp/denied{
@@ -3690,7 +3690,7 @@
 /turf/open/floor/plasteel/vault{
 	dir = 8
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "nn" = (
 /obj/machinery/keycard_auth{
 	pixel_y = -24
@@ -3702,7 +3702,7 @@
 /turf/open/floor/plasteel/vault{
 	dir = 8
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "no" = (
 /obj/machinery/newscaster/security_unit{
 	pixel_y = -32
@@ -3714,7 +3714,7 @@
 	dir = 9
 	},
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "np" = (
 /obj/structure/bookcase/random,
 /obj/machinery/light{
@@ -3816,14 +3816,14 @@
 	dir = 5
 	},
 /turf/open/floor/plasteel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "nE" = (
 /obj/machinery/light,
 /obj/structure/filingcabinet/chestdrawer,
 /turf/open/floor/plasteel/vault{
 	dir = 8
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "nF" = (
 /obj/machinery/firealarm{
 	dir = 1;
@@ -3836,7 +3836,7 @@
 /turf/open/floor/plasteel/vault{
 	dir = 4
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "nG" = (
 /obj/machinery/firealarm{
 	dir = 1;
@@ -3845,7 +3845,7 @@
 /turf/open/floor/plasteel/brown{
 	dir = 6
 	},
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "nH" = (
 /obj/vehicle/ridden/atv,
 /turf/open/floor/plasteel,
@@ -5025,7 +5025,7 @@
 /area/centcom/evac)
 "rb" = (
 /turf/closed/indestructible/rock,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "rk" = (
 /obj/structure/table/wood,
 /obj/item/storage/box/drinkingglasses,
@@ -5571,7 +5571,7 @@
 /area/centcom/evac)
 "tc" = (
 /turf/closed/wall/f13/tunnel,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "td" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/line,
@@ -5580,13 +5580,13 @@
 "tj" = (
 /obj/structure/fluff/rails,
 /turf/open/indestructible/ground/inside/subway,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "tk" = (
 /turf/closed/wall/f13,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "tl" = (
 /turf/open/indestructible/ground/inside/subway,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "tm" = (
 /obj/structure/fluff/rails,
 /turf/open/indestructible/ground/inside/subway,
@@ -6311,7 +6311,7 @@
 	width = 3
 	},
 /turf/open/space,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "vf" = (
 /turf/open/floor/plasteel/blue/side,
 /area/centcom/evac)
@@ -6336,7 +6336,7 @@
 	},
 /obj/structure/window/reinforced,
 /turf/closed/indestructible/riveted,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "vo" = (
 /obj/item/storage/firstaid/toxin,
 /obj/item/storage/firstaid/o2{
@@ -6809,7 +6809,7 @@
 	width = 5
 	},
 /turf/open/space,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "xc" = (
 /turf/closed/wall/f13,
 /area/centcom/evac)
@@ -7354,13 +7354,13 @@
 /area/centcom/evac)
 "BP" = (
 /turf/closed/indestructible/opshuttle,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "BT" = (
 /turf/open/floor/plasteel/dark,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "BU" = (
 /turf/open/floor/plasteel/stairs,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "BZ" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 8
@@ -7853,7 +7853,7 @@
 "FU" = (
 /obj/structure/speaking_tile,
 /turf/closed/mineral/ash_rock,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "Ga" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -8528,11 +8528,11 @@
 	dir = 1
 	},
 /turf/closed/indestructible/riveted,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "KM" = (
 /obj/effect/landmark/shuttle_import,
 /turf/open/space/basic,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "KN" = (
 /obj/structure/window/reinforced,
 /obj/structure/shuttle/engine/heater{
@@ -8710,7 +8710,7 @@
 	width = 20
 	},
 /turf/open/space,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "Lt" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/centcom/evac)
@@ -8911,7 +8911,7 @@
 	dir = 8
 	},
 /turf/open/indestructible/ground/inside/subway,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "NY" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/line,
@@ -9035,7 +9035,7 @@
 	width = 5
 	},
 /turf/open/indestructible/ground/inside/subway,
-//area/fallout/mountain_underground)
+/area/fallout/mountain_underground)
 "QD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/decoration/rag,
