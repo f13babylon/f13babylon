@@ -1038,7 +1038,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	outfit = /datum/outfit/job/CaesarsLegion/immune
 	exp_requirements = 0
 
-/datum/outfit/job/CaesarsLegionimmune
+/datum/outfit/job/CaesarsLegion/immune
 	name = "Camp Follower"
 	jobtype = /datum/job/CaesarsLegion/immune
 	id = /obj/item/card/id/dogtag/legimmune
