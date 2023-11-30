@@ -102,8 +102,8 @@
 	title = "Khan Chemist"
 	flag = F13KHANCHEMIST
 	faction = FACTION_KHAN
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 	description = "You are a Chemist, one of the few Khans present in this camp that can produce those sweet, sweet chems. Keep them flowing and assure a supply of caps, so you can send them back to the Chief."
 	enforces = "You have control over the lab, a valuable asset in generating profit."
 	supervisors = "the Senior Enforcer"
