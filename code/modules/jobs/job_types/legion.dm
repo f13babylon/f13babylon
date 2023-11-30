@@ -151,7 +151,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	display_order = JOB_DISPLAY_ORDER_ORATOR
 	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
-	roleplay_exclusive_notify = 1
 	exp_type = EXP_TYPE_LEGION
 	exp_requirements = 900
 
@@ -198,7 +197,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	display_order = JOB_DISPLAY_ORDER_PRIESTESS
 	access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
-	roleplay_exclusive_notify = 1
 	exp_type = EXP_TYPE_LEGION
 	exp_requirements = 900
 
@@ -1038,7 +1036,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	supervisors = "the Centurion."
 	display_order = JOB_DISPLAY_ORDER_IMMUNE
 	outfit = /datum/outfit/job/CaesarsLegion/immune
-	roleplay_exclusive_notify = 1
 	exp_requirements = 0
 
 /datum/outfit/job/CaesarsLegionimmune
@@ -1073,7 +1070,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	supervisors = "the Centurion."
 	display_order = JOB_DISPLAY_ORDER_CAMPFOLLOWER
 	outfit = /datum/outfit/job/CaesarsLegion/f13campfollower
-	roleplay_exclusive_notify = 1
 	exp_requirements = 0
 
 /datum/outfit/job/CaesarsLegion/f13campfollower
@@ -1134,7 +1130,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	supervisors = "the Centurion"
 	display_order = JOB_DISPLAY_ORDER_AUXILIA
 	outfit = /datum/outfit/job/CaesarsLegion/auxilia
-	roleplay_exclusive_notify = 1
 	exp_requirements = 0
 	exp_type = EXP_TYPE_WASTELAND//So you can't sit on it and play Centurion. :)
 
@@ -1257,7 +1252,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	display_order = JOB_DISPLAY_ORDER_LEGIONSLAVE
 	exp_requirements = 0
 	outfit = /datum/outfit/job/CaesarsLegion/slave
-	roleplay_exclusive_notify = 1
 	exp_type = EXP_TYPE_WASTELAND//So you can't sit on it and play Centurion. :)
 
 	access = list(ACCESS_LEGION_SLAVE)
@@ -1386,7 +1380,6 @@ Venator  - Zero slots, role built on cloning vet ranger, linear just vastly bett
 	spawn_positions = 1
 	description = "You are the feared and respected disciplinary corps of the Legion. Acting as both master of the Slaves and de-facto executioner of the Centurion's will within his ranks, you are a faceless and undoubtedly cruel torturer... but be careful to not let your hubris and malice lead to a strikeback from those you thought broken."
 	supervisors = "the Decani and Centurion"
-	roleplay_exclusive_notify = 1
 	exp_requirements = 0
 	display_order = JOB_DISPLAY_ORDER_SLAVEMASTER
 
