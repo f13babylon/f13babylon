@@ -53,32 +53,6 @@
 	new /obj/item/ammo_box/magazine/m9mmds(src)
 	new /obj/item/melee/rapier(src)
 
-/datum/gear/donator/kits/sugga
-	name = "Suggas box"
-	path = /obj/item/storage/box/large/custom_kit/sugga
-	ckeywhitelist = list("sugga")
-
-/obj/item/storage/box/large/custom_kit/klatue/PopulateContents()
-	new /obj/item/storage/belt/holster(src)
-	new /obj/item/gun/ballistic/revolver/hunting/klatue(src)
-	new /obj/item/gun/ballistic/revolver/hunting/klatue(src)
-	new /obj/item/ammo_box/c4570(src)
-	new /obj/item/ammo_box/c4570(src)
-	new /obj/item/clothing/suit/armor/hos/trenchcoat(src)
-	new /obj/item/clothing/head/helmet/riot(src)
-
-/datum/gear/donator/kits/klatue
-	name = "Klatue box"
-	path = /obj/item/storage/box/large/custom_kit/klatue
-	ckeywhitelist = list("klatue9")
-
-/obj/item/storage/box/large/custom_kit/vaktus/PopulateContents()
-	new /obj/item/clothing/suit/armor/f13/combat/riotpolice(src)
-	new /obj/item/clothing/head/helmet/f13/ncr/rangercombat/desert(src)
-	new /obj/item/storage/belt/military(src)
-	new /obj/item/melee/onehanded/knife/survival(src)
-
-
 /datum/gear/donator/kits/vaktus
 	name = "Vaks goods"
 	path = /obj/item/storage/box/large/custom_kit/vaktus
@@ -268,12 +242,12 @@
 	if(!ishuman(player)) //This should never be true, but who knows.
 		return
 	implant(player, new /obj/item/organ/tongue/robot/gen2synth(src)) //Robotic voice.
-	implant(player, new /obj/item/organ/ears/cybernetic(src))  
+	implant(player, new /obj/item/organ/ears/cybernetic(src))
 	implant(player, new /obj/item/organ/cyberimp/brain/protogen(src))  //For EMP luls
-	implant(player, new /obj/item/organ/lungs/cybernetic/tier2(src)) 
-	implant(player, new /obj/item/organ/liver/cybernetic/upgraded(src)) 
-	implant(player, new /obj/item/organ/heart/cybernetic/upgraded(src)) 
-	implant(player, new /obj/item/organ/cyberimp/arm/toolset(src)) 
+	implant(player, new /obj/item/organ/lungs/cybernetic/tier2(src))
+	implant(player, new /obj/item/organ/liver/cybernetic/upgraded(src))
+	implant(player, new /obj/item/organ/heart/cybernetic/upgraded(src))
+	implant(player, new /obj/item/organ/cyberimp/arm/toolset(src))
 	implant(player, new /obj/item/organ/cyberimp/chest/nutriment/plus(src)) //Simulates current synth hunger mechanics.
 	implant(player, new /obj/item/organ/eyes/robotic/shield(src))
 	qdel(src)
