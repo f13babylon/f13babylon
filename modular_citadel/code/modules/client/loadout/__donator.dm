@@ -53,16 +53,10 @@
 	new /obj/item/ammo_box/magazine/m9mmds(src)
 	new /obj/item/melee/rapier(src)
 
-/datum/gear/donator/kits/vaktus
-	name = "Vaks goods"
-	path = /obj/item/storage/box/large/custom_kit/vaktus
-	ckeywhitelist = list("vaktus4")
-
 /obj/item/storage/box/large/custom_kit/burningcold/PopulateContents()
 	new /obj/item/clothing/gloves/f13/leather/fingerless(src)
 	new /obj/item/clothing/mask/bandana/blue(src)
 	new /obj/item/clothing/suit/armored/light/kit/punk(src)
-
 
 /datum/gear/donator/kits/burningcold
 	name = "Burnings Goods"
