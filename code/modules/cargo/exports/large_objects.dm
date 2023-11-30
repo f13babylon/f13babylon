@@ -47,16 +47,6 @@
 	unit_name = "AER9 laser rifle"
 	export_types = list(/obj/item/gun/energy/laser/aer9)
 
-/datum/export/large/laser/aer9focused
-	cost = 1000
-	unit_name = "AER9 focused laser rifle"
-	export_types = list(/obj/item/gun/energy/laser/aer9/focused)
-
-/datum/export/large/laser/ultra_rifle
-	cost = 4000
-	unit_name = "Ultracite laser rifle"
-	export_types = list(/obj/item/gun/energy/laser/ultra_rifle)
-
 /datum/export/large/laser/scatter
 	cost = 3000
 	unit_name = "tribeam laser rifle"
