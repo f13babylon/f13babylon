@@ -597,7 +597,7 @@ GLOBAL_LIST_INIT(loot_unique_range, list(
 	/obj/item/gun/ballistic/revolver/colt357/lucky,
 	/obj/item/gun/ballistic/automatic/pistol/ninemil/maria,
 	/obj/item/gun/ballistic/rifle/hunting/paciencia,
-	/obj/item/gun/energy/laser/solar,
+	/obj/item/gun/energy/laser/pistol/pewpew,
 	/obj/item/gun/energy/laser/plasma/pistol/alien
 ))
 
