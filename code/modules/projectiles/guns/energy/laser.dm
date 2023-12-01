@@ -273,7 +273,7 @@
 
 /obj/item/gun/energy/laser/complianceregulator
 	name = "compliance regulator laser pistol"
-	desc = "An AEP-7 pistol that has been modified for non-lethal work, formally addressed to as the AEP-5 Compliance Regulator. It fires concentrated beams of light that aren't intense enough to burn skin, but cause muscle tissue to stiffen involuntarily."
+	desc = "An AEP-7 pistol that has been modified for non-lethal work, formally referred to as the AEP-5 Compliance Regulator. It fires concentrated beams of light that aren't intense enough to burn skin, but cause muscle tissue to stiffen involuntarily."
 	slowdown = 0.2
 	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
