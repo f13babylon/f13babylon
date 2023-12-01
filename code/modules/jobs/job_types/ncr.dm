@@ -892,7 +892,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	glasses = /obj/item/clothing/glasses/welding
 	suit_store = /obj/item/gun/ballistic/automatic/smg/mini_uzi
 	backpack_contents = list(
-		/obj/item/grenade/plastic/x4 = 1,
+		/obj/item/grenade/plastic/c4 = 2,
 		/obj/item/book/granter/trait/explosives = 1,
 		/obj/item/book/granter/trait/explosives_advanced = 1,
 		/obj/item/ammo_box/magazine/uzim9mm = 3,
@@ -904,12 +904,10 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit_store = /obj/item/gun/ballistic/automatic/smg/mini_uzi
 	backpack_contents = list(
 			/obj/item/ammo_box/magazine/uzim9mm = 3,
-		/obj/item/book/granter/trait/explosives = 1,
 		/obj/item/book/granter/crafting_recipe/blueprint/trapper = 1,
 		/obj/item/stack/sheet/plasteel/fifty = 1,
 		/obj/item/stack/sheet/rglass = 50,
-		/obj/item/stack/sheet/mineral/concrete = 25,
-		/obj/item/stack/ore/blackpowder = 50	//Whoever made this loadout originally made this the fucking DATUM for black powder. Let this be his mark of shame.
+		/obj/item/stack/sheet/mineral/concrete = 25
 		)
 
 
@@ -1359,6 +1357,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/book/granter/trait/explosives = 1,
 		/obj/item/book/granter/trait/explosives_advanced = 1,
 		/obj/item/book/granter/crafting_recipe/blueprint/trapper = 1,
+		/obj/item/book/granter/trait/explosives = 1,
 		)
 
 
