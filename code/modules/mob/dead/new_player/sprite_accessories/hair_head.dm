@@ -401,6 +401,10 @@
 	name = "Fluffy (Long)"
 	icon_state = "hair_fluffy_long"
 
+/datum/sprite_accessory/hair/fluffy_short
+	name = "Fluffy (Short)"
+	icon_state = "hair_fluffy_short"
+
 /datum/sprite_accessory/hair/gelled
 	name = "Gelled Back"
 	icon_state = "hair_gelled"
@@ -420,6 +424,34 @@
 /datum/sprite_accessory/hair/gentle
 	name = "Gentle (Alt)"
 	icon_state = "gentle21"
+
+/datum/sprite_accessory/hair/gloomy_medium
+	name = "Gloomy (Medium)"
+	icon_state = "hair_gloomy_medium"
+
+/datum/sprite_accessory/hair/gloomy_long
+	name = "Gloomy (Long)"
+	icon_state = "hair_gloomy_long"
+
+/datum/sprite_accessory/hair/gloomylongmessy
+	name = "Gloomy (Long Messy)"
+	icon_state = "hair_gloomylongmessy"
+
+/datum/sprite_accessory/hair/gloomycurly
+	name = "Gloomy (Curly)"
+	icon_state = "hair_gloomycurly"
+
+/datum/sprite_accessory/hair/gloomylongerbedhead
+	name = "Gloomy (Bedhead)"
+	icon_state = "hair_gloomy_medium"
+
+/datum/sprite_accessory/hair/gloomyrockstar
+	name = "Gloomy (Rockstar)"
+	icon_state = "hair_gloomyrockstar"
+
+/datum/sprite_accessory/hair/gloomy_skank
+	name = "Gloomy (Skank)"
+	icon_state = "hair_gloomyskank"
 
 /datum/sprite_accessory/hair/hairfre
 	name = "Hairfre"
@@ -528,6 +560,10 @@
 /datum/sprite_accessory/hair/legion
 	name = "Legion Shave"
 	icon_state = "hair_legion"
+
+/datum/sprite_accessory/hair/loose_slicked
+	name = "Loose Slicked"
+	icon_state = "hair_loose_slicked"
 
 /datum/sprite_accessory/hair/long
 	name = "Long Hair 1"
@@ -748,6 +784,10 @@
 /datum/sprite_accessory/hair/ponytail8_thin
 	name = "Ponytail 8 (Thin)"
 	icon_state = "hair_thin_ponytail"
+
+/datum/sprite_accessory/hair/ponytail9
+	name = "Ponytail 9"
+	icon_state = "hair_"
 
 /datum/sprite_accessory/hair/highponytail
 	name = "Ponytail (High)"
@@ -1028,6 +1068,10 @@
 /datum/sprite_accessory/hair/longer
 	name = "Very Long Hair"
 	icon_state = "hair_vlong"
+
+/datum/sprite_accessory/hair/viper
+	name = "Viper"
+	icon_state = "hair_viper"
 
 /datum/sprite_accessory/hair/violet
 	name = "Violet"
