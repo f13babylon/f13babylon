@@ -444,6 +444,7 @@
 /obj/item/clothing/suit/armor/f13/ncrarmor/conscript/ncrwarrior
 	name = "NCR desert warrior vest"
 	desc = "A modified version of the utility vest with shoulder paddings and a white piece of cloth with a red stripe, to let everyone know God is on your side."
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
 	icon_state = "ncr_warrior_vest"
 	item_state = "ncr_warrior_vest"
 	armor = list("melee" = 30, "bullet" = 25, "laser" = 20, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 20, "fire" = 30, "acid" = 0, "wound" = 10)
