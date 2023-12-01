@@ -210,7 +210,7 @@
 
 //Laser musket
 /obj/item/gun/ballistic/rifle/hobo/lasmusket
-	name = "Laser Musket"
+	name = "laser musket"
 	desc = "In the wasteland, one must make do, and this weapon's wielder certainly does. Made from metal scraps, electronic parts, an old rifle stock and a bottle full of dreams, the Laser Musket is sure to stop anything in its tracks and make those raiders think twice."
 	icon_state = "lasermusket"
 	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
@@ -234,7 +234,7 @@
 
 //Plasma musket.
 /obj/item/gun/ballistic/rifle/hobo/plasmacaster
-	name = "Plasma Musket"
+	name = "plasma musket"
 	desc = "The cooling looks dubious and is that a empty can of beans used as a safety valve? Pray the plasma goes towards the enemy and not your face when you pull the trigger."
 	icon_state = "plasmamusket"
 	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
