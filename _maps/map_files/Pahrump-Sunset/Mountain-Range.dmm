@@ -1062,7 +1062,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/enclave)
 "iE" = (
-/obj/item/flag/enclave/america,
 /turf/closed/wall/r_wall/f13/vault,
 /area/f13/mountain_area)
 "iH" = (
@@ -5171,6 +5170,14 @@
 "Qe" = (
 /obj/machinery/hydroponics/constructable,
 /turf/open/floor/plasteel/f13/vault_floor/green,
+/area/f13/enclave)
+"Qm" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/door/airlock/hatch{
+	req_access = null;
+	req_access_txt = "134"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
 "Qp" = (
 /obj/structure/sign/departments/examroom,
@@ -11630,17 +11637,17 @@ Vr
 Vr
 Vr
 ez
-xu
-ez
-hr
-hr
 ez
 ez
 hr
 hr
 ez
 ez
-xu
+hr
+hr
+ez
+ez
+ez
 pl
 iT
 HA
@@ -17041,7 +17048,7 @@ Im
 it
 lG
 IP
-TI
+Qm
 fN
 cu
 TI
@@ -17298,7 +17305,7 @@ OH
 BO
 oz
 IP
-cu
+Qm
 TI
 TI
 TI
@@ -30891,19 +30898,19 @@ ez
 ez
 ez
 ez
-xu
 ez
-ez
-hr
-hr
-hr
 ez
 ez
 hr
 hr
 hr
 ez
-xu
+ez
+hr
+hr
+hr
+ez
+ez
 pl
 iT
 HA
