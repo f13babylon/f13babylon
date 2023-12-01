@@ -160,10 +160,9 @@
 	message_admins("[key_name_admin(usr)] [base_message]")
 	var/datum/admin_help/AH = admin_ticket_log(ckey, "[key_name(usr)] [base_message]")
 
-	var/is_temp_ban = bantype in list(BANTYPE_JOB_TEMP, BANTYPE_TEMP)
-	var/is_job_ban = bantype in list(BANTYPE_JOB_PERMA, BANTYPE_JOB_TEMP)
+	var/is_temp_ban = duration == -1
 	SSdiscord.send_to_ban_channel(
-		"**BAN** | [bankey] | [(is_temp_ban ? "TEMP | [duration]m" : "PERM")] | [(is_job_ban ? job : "SERVER")] | ADMIN `[key_name(usr)]` | [reason]"
+		"**BAN** | `[bankey]` | [(is_temp_ban ? "TEMP | [duration]m" : "PERM")] | [(job || "SERVER")] | ADMIN `[key_name(usr, include_name = FALSE)]` | [reason]"
 	)
 
 	if(kickbannedckey)
@@ -374,7 +373,7 @@
 	qdel(query_unban)
 
 	message_admins("[key_name_admin(usr)] has lifted a ban for [p_key].")
-	SSdiscord.send_to_ban_channel("UNBAN | `[p_key]` | ADMIN `[key_name(usr)]`")
+	SSdiscord.send_to_ban_channel("UNBAN | `[p_key]` | ADMIN `[key_name(usr, include_name = FALSE)]`")
 
 /client/proc/DB_ban_panel()
 	set category = "Admin"
