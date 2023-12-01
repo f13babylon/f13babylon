@@ -1234,7 +1234,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/melee/onehanded/machete = 1,
 		/obj/item/storage/box/ration/menu_eight = 1,
 		/obj/item/clothing/head/f13/headscarfncr = 1,
-		/obj/item/clothing/suit/armored/light/ncrarmorwarri = 1,
+		/obj/item/clothing/suit/armor/f13/ncrarmor/conscript/ncrwarrior = 1,
 		)
 
 
