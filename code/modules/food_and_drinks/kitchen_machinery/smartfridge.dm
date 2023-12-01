@@ -41,22 +41,23 @@
 
 /obj/machinery/smartfridge/update_icon_state()
 	SSvis_overlays.remove_vis_overlay(src, managed_vis_overlays)
-	if(!stat)
-		SSvis_overlays.add_vis_overlay(src, icon, "smartfridge-light-mask", EMISSIVE_LAYER, EMISSIVE_PLANE, dir, alpha)
-		if(visible_contents)
-			switch(contents.len)
-				if(0)
-					icon_state = "[initial(icon_state)]"
-				if(1 to 25)
-					icon_state = "[initial(icon_state)]-1"
-				if(26 to 75)
-					icon_state = "[initial(icon_state)]-2"
-				if(76 to INFINITY)
-					icon_state = "[initial(icon_state)]-3"
-		else
-			icon_state = "[initial(icon_state)]"
-	else
+	if(stat)
 		icon_state = "[initial(icon_state)]-off"
+		return
+	SSvis_overlays.add_vis_overlay(src, icon, "smartfridge-light-mask", EMISSIVE_LAYER, EMISSIVE_PLANE, dir, alpha)
+	if(!visible_contents)
+		icon_state = "[initial(icon_state)]"
+		return
+
+	switch(contents.len)
+		if(0)
+			icon_state = "[initial(icon_state)]"
+		if(1 to 25)
+			icon_state = "[initial(icon_state)]-1"
+		if(26 to 75)
+			icon_state = "[initial(icon_state)]-2"
+		if(76 to INFINITY)
+			icon_state = "[initial(icon_state)]-3"
 
 
 
@@ -543,7 +544,6 @@
 	icon = 'icons/obj/rack.dmi'
 	icon_state = "rack"
 	layer = BELOW_OBJ_LAYER
-	density = TRUE
 	use_power = NO_POWER_USE
 	max_n_of_items = 30
 	//remember, you have initial_contents, which gets loaded by citadel, and ALWAYS spawns those items
@@ -571,7 +571,9 @@
 	new /obj/item/stack/sheet/mineral/wood(drop_location(), 10)
 	..()
 
-//god, don't just put the procs, at least put a return there!
+/obj/machinery/smartfridge/bottlerack/update_icon_state()
+	return
+
 /obj/machinery/smartfridge/bottlerack/RefreshParts()
 	return //because we don't want the parent refresh parts giving us a shit ton of space
 
@@ -592,6 +594,22 @@
 		return FALSE
 	if(istype(O, /obj/item/reagent_containers/glass) || istype(O, /obj/item/reagent_containers/food/drinks) || istype(O, /obj/item/reagent_containers/food/condiment))
 		return TRUE
+
+/obj/machinery/smartfridge/bottlerack/update_overlays()
+	. = ..()
+	var/filled_percentage = (contents.len / max_n_of_items) * 100
+	switch(filled_percentage)
+		if(-INFINITY to 20)
+			. += "[initial(icon_state)]-1"
+		if(21 to 40)
+			. += "[initial(icon_state)]-2"
+		if(41 to 60)
+			. += "[initial(icon_state)]-3"
+		if(61 to 80)
+			. += "[initial(icon_state)]-4"
+		if(81 to INFINITY)
+			. += "[initial(icon_state)]-5"
+
 
 // -------------------------
 //  Gardentool Rack
@@ -639,25 +657,22 @@
 	icon = 'icons/fallout/farming/farming_structures.dmi'
 	icon_state = "seedbin"
 	max_n_of_items = 400
-	barricade = TRUE
-	proj_pass_rate = 70
 	pass_flags_self = PASSTABLE | LETPASSTHROW
-	var/climbable = TRUE
 
-/obj/machinery/smartfridge/bottlerack/seedbin/accept_check(obj/item/O)
-	if(istype(O, /obj/item/seeds))
-		return TRUE
-	return FALSE
+/obj/machinery/smartfridge/bottlerack/seedbin/accept_check(obj/item/inserted_item)
+	if(!istype(inserted_item, /obj/item/seeds))
+		return FALSE
 
 // Preloaded primitive seedbin for mapping. A little too complete for my taste but with the current farming economy its fine.
 /obj/machinery/smartfridge/bottlerack/seedbin/primitive
 	initial_contents = list(
-		/obj/item/seeds/wheat = 3,
-		/obj/item/seeds/poppy/broc = 2,
-		/obj/item/seeds/xander = 2,
 		/obj/item/seeds/feracactus = 1,
 		/obj/item/seeds/fungus = 1,
-		/obj/item/seeds/punga = 1,)
+		/obj/item/seeds/poppy/broc = 2,
+		/obj/item/seeds/punga = 1,
+		/obj/item/seeds/wheat = 3,
+		/obj/item/seeds/xander = 2,
+	)
 
 //-------------------------
 // Grownbin
