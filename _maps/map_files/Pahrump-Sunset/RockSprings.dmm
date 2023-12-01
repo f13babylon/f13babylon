@@ -4606,6 +4606,10 @@
 	},
 /turf/open/floor/plasteel/cult,
 /area/f13/building)
+"evH" = (
+/obj/structure/nest/scorpion,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "ewv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/cobweb{
@@ -6879,7 +6883,7 @@
 /turf/open/indestructible/ground/outside/gravel,
 /area/f13/wasteland/rocksprings)
 "gNb" = (
-/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/caves)
 "gNg" = (
@@ -10397,8 +10401,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/locker,
-/obj/item/clothing/suit/armor/f13/combat/enclave,
-/obj/item/clothing/suit/armor/f13/combat/enclave,
+/obj/item/clothing/suit/armor/f13/combat/mk2/enclave,
+/obj/item/clothing/suit/armor/f13/combat/mk2/enclave,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building)
 "kxT" = (
@@ -12410,10 +12414,10 @@
 	pixel_x = 32
 	},
 /obj/structure/table/wood,
-/obj/item/reagent_containers/pill/patch/healingpowder/legionmedx,
-/obj/item/reagent_containers/pill/patch/healingpowder/legionmedx,
-/obj/item/reagent_containers/pill/patch/healingpowder/legionmedx,
-/obj/item/reagent_containers/pill/patch/healingpowder/legionmedx,
+/obj/item/reagent_containers/pill/patch/healingpowder/naturalpainkiller,
+/obj/item/reagent_containers/pill/patch/healingpowder/naturalpainkiller,
+/obj/item/reagent_containers/pill/patch/healingpowder/naturalpainkiller,
+/obj/item/reagent_containers/pill/patch/healingpowder/naturalpainkiller,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/legion)
 "mBT" = (
@@ -54225,7 +54229,7 @@ rPW
 rPW
 rPW
 rPW
-rPW
+lOb
 rPW
 rPW
 rPW
@@ -54481,14 +54485,14 @@ hgP
 rPW
 rPW
 rPW
-rPW
-rPW
-rPW
+lOb
+evH
+lOb
 rPW
 rPW
 lqw
 lqw
-rPW
+lOb
 rPW
 rPW
 rPW
@@ -54739,14 +54743,14 @@ hgP
 rPW
 rPW
 rPW
+lOb
+lOb
 rPW
 rPW
-rPW
-rPW
-rPW
-rPW
-rPW
-rPW
+lOb
+lOb
+evH
+lOb
 rPW
 lOb
 iBZ
@@ -54997,12 +55001,12 @@ rqF
 rPW
 rPW
 rPW
+lOb
+lOb
+lOb
+lOb
 rPW
-rPW
-rPW
-rPW
-rPW
-rPW
+lOb
 rPW
 rPW
 pwF
@@ -55255,7 +55259,7 @@ gNZ
 rqF
 rPW
 rPW
-rPW
+lOb
 rPW
 rPW
 rPW
@@ -55512,7 +55516,7 @@ paT
 rnh
 rqF
 rPW
-rPW
+lOb
 rPW
 rPW
 rPW
@@ -55769,7 +55773,7 @@ paT
 paT
 rnh
 rqF
-rPW
+lOb
 rPW
 rPW
 rPW
@@ -80381,8 +80385,8 @@ rPW
 rPW
 rPW
 rPW
-rPW
-rPW
+lOb
+lOb
 rPW
 rPW
 rPW
@@ -80637,10 +80641,10 @@ rPW
 lqw
 rPW
 rPW
-rPW
-rPW
-rPW
-rPW
+lOb
+lOb
+evH
+lOb
 rPW
 rPW
 rPW
@@ -80892,12 +80896,12 @@ rPW
 rPW
 rPW
 rPW
+lOb
 rPW
 rPW
-rPW
-rPW
-rPW
-rPW
+lOb
+lOb
+lOb
 rPW
 rPW
 rPW
@@ -81148,13 +81152,13 @@ rPW
 rPW
 rPW
 rPW
+lOb
+lOb
+lOb
 rPW
 rPW
-rPW
-rPW
-rPW
-rPW
-rPW
+lOb
+lOb
 rPW
 rPW
 hgP
@@ -81404,13 +81408,13 @@ rPW
 rPW
 rPW
 rPW
-rPW
-rPW
-rPW
-rPW
-rPW
-rPW
-rPW
+evH
+lOb
+lOb
+lOb
+lOb
+lOb
+lOb
 rPW
 rPW
 hgP
@@ -81661,15 +81665,15 @@ rPW
 rPW
 rPW
 rPW
+lOb
+lOb
+evH
+lOb
 rPW
 rPW
-rPW
-rPW
-rPW
-rPW
-rPW
-rPW
-rPW
+lOb
+lOb
+lOb
 hgP
 hgP
 hgP
@@ -81920,7 +81924,7 @@ rPW
 rPW
 rPW
 rPW
-rPW
+lOb
 rPW
 rPW
 rPW

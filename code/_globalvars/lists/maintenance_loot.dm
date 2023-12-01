@@ -480,13 +480,13 @@ GLOBAL_LIST_INIT(loot_t5_melee, list(
 	/obj/item/twohanded/chainsaw,
 	/obj/item/melee/transforming/energy/axe/protonaxe,
 	/obj/item/melee/powered/ripper,
-	/obj/item/melee/powerfist/f13,
+	/obj/item/melee/f13powerfist,
 	/obj/item/twohanded/sledgehammer/rockethammer,
 	/obj/item/gun/ballistic/revolver/ballisticfist,
 	/obj/item/twohanded/sledgehammer/supersledge,
 	/obj/item/shishkebabpack,
 	/obj/item/melee/unarmed/deathclawgauntlet,
-	/obj/item/melee/powerfist/f13/moleminer
+	/obj/item/melee/f13powerfist/moleminer
 ))
 
 GLOBAL_LIST_INIT(loot_t1_range, list(

@@ -12,16 +12,12 @@
 	dissolvable = FALSE
 
 /obj/item/reagent_containers/pill/patch/attack(mob/living/L, mob/user)
-	if(ishuman(L))
-		var/obj/item/bodypart/affecting = L.get_bodypart(check_zone(user.zone_selected))
-		if(!affecting)
-			to_chat(user, "<span class='warning'>The limb is missing!</span>")
-			return
-		if(!L.can_inject(user, TRUE, user.zone_selected, FALSE, TRUE)) //stopped by clothing, not by species immunity.
-			return
-		if(affecting.status != BODYPART_ORGANIC)
-			to_chat(user, "<span class='notice'>Medicine won't work on a robotic limb!</span>")
-			return
+	if(L == user)
+		L.visible_message("<span class='danger'>[user] attempts to use [src] on themselves.</span>", \
+							"<span class='notice'>You attempt to use [src] on yourself.</span>")
+	else
+		L.visible_message("<span class='danger'>[user] attempts to use [src] on [L].</span>", \
+							"<span class='userdanger'>[user] attempts to use [src] on you.</span>")
 	..()
 
 /obj/item/reagent_containers/pill/patch/canconsume(mob/eater, mob/user)
@@ -46,7 +42,6 @@
 /obj/item/reagent_containers/pill/patch/get_belt_overlay()
 	return mutable_appearance('icons/obj/clothing/belt_overlays.dmi', "pouch")
 
-
 // ---------------------------------
 // JET
 
@@ -56,7 +51,7 @@
 	list_reagents = list(/datum/reagent/drug/jet = 10)
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "patch_jet"
-
+	self_delay = 10
 
 // ---------------------------------
 // TURBO
@@ -67,27 +62,27 @@
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "patch_turbo"
 	list_reagents = list(/datum/reagent/drug/turbo = 5)
-
+	self_delay = 10
 
 // ---------------------------------
 // HEALING POWDER
 
 /obj/item/reagent_containers/pill/patch/healingpowder
-	name = "Healing powder"
-	desc = "A powder used to heal physical wounds derived from ground broc flowers and xander roots, commonly used by tribals."
+	name = "healing powder"
+	desc = "A bag which contains a coarse brown powder derived from broc flowers and xander roots. Applied on skin, it additionally alleviates poisoning and purges Bitter drink from the system."
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "patch_healingpowder"
-	list_reagents = list(/datum/reagent/medicine/healing_powder = 10)
+	list_reagents = list(/datum/reagent/medicine/healingpowder = 10)
 	self_delay = 0
 
 // ---------------------------------
 // HEALING POULTICE
 
-/obj/item/reagent_containers/pill/patch/healpoultice
-	name = "Healing poultice"
-	desc = "A concoction of broc flower, cave fungus, agrave fruit and xander root."
+/obj/item/reagent_containers/pill/patch/healingpoultice
+	name = "healing poultice"
+	desc = "A bag which contains an olive-colored poultice derived from an assortment of medicinal plants. Applied on skin, it has an additional oxygenating effect."
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
-	list_reagents = list(/datum/reagent/medicine/healing_powder/poultice = 10)
+	list_reagents = list(/datum/reagent/medicine/healingpoultice = 10)
 	icon_state = "patch_healingpoultice"
 	self_delay = 0
 
@@ -95,23 +90,23 @@
 // CUSTOM POWDER
 
 /obj/item/reagent_containers/pill/patch/healingpowder/custom
-	name = "Homebrew powder"
-	desc = "A mysterious mix of powders."
+	name = "homebrew powder"
+	desc = "A bag which contains a mysterious mix of powders."
 	list_reagents = null
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "patch_healingpowder"
-	self_delay = 0
 	color = COLOR_PALE_GREEN_GRAY
+	self_delay = 0
 
 // ---------------------------------
 // BITTER DRINK
 
 /obj/item/reagent_containers/pill/patch/bitterdrink
-	name = "Bitter drink"
-	desc = "A strong herbal healing concoction which enables wounded soldiers and travelers to tend to their wounds without stopping during journeys."
+	name = "bitter drink"
+	desc = "A bottle filled with a strong medicinal drink, known for its bitterness. It derives its name from curing the wounds but leaving the 'bitter' pain from them."
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "patch_bitterdrink"
-	list_reagents = list(/datum/reagent/medicine/bitter_drink = 15)
+	list_reagents = list(/datum/reagent/medicine/bitterdrink = 15)
 	self_delay = 0
 
 // ---------------------------------
@@ -119,30 +114,30 @@
 
 /obj/item/reagent_containers/pill/patch/hydra
 	name = "Hydra"
-	desc = "Hydra is a drug developed from antivenom. Due to the Legion's disapproval of using modern medicine, some Legionaries attempted to develop a different means to help them heal damaged limbs. To do that, they combined cave fungus, nightstalker blood and the poison from a radscorpion poison gland with antivenom before use. This resulted in the development of Hydra, a curative agent that both anesthetizes and restores crippled limbs over time."
+	desc = "A fruit drink bottle with three sealed glass vials taped around the middle. It is filled with Hydra, a powerful wound-mending agent, derived from venomous radscorpion glands."
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "patch_hydra"
 	list_reagents = list(/datum/reagent/medicine/hydra = 10)
+	self_delay = 0
 
-// -----------------
-// BERSERKER POWDER - Was pulled for rebalance summer of 2020 and never looked at. Remove I guess. (Admin died to it and removed it)
-// ------------------
+// ---------------------------------
+// BERSERKER POWDER
 
 /obj/item/reagent_containers/pill/patch/healingpowder/berserker
-	name = "Berserker powder"
+	name = "berserker powder"
 	desc = "A combination of psychadelic mushrooms and tribal drugs used by legion berserkers. Induces a trancelike state, allowing them much greater pain resistance. Extremely dangerous, even for those who are trained to use it. It's a really bad idea to use this if you're not a berserker. Even if you are, taking it for too long causes extreme symptoms when the trance ends."
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	list_reagents = list(/datum/reagent/medicine/berserker_powder = 10)
 	icon_state = "patch_berserkerpowder"
 	self_delay = 0
 
-// -----------------
+// ---------------------------------
 // Natural Painkiller
-// ------------------
 
-/obj/item/reagent_containers/pill/patch/healingpowder/legionmedx
-	name = "Natural Painkiller"
-	desc = "A disgusting mix of wasteland flora to create a natural painkiller in a paste-like state. This stinks beyond description."
+/obj/item/reagent_containers/pill/patch/healingpowder/naturalpainkiller
+	name = "natural painkiller"
+	desc = "A bag filled with foul-smelling yellow powder made from mixing toxic cactus fruit and cave fungus. Rubbed into the skin, it provides a powerful numbing effect."
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
-	list_reagents = list(/datum/reagent/medicine/legionmedx = 10)
-	icon_state = "patch_legionmedx"
+	list_reagents = list(/datum/reagent/medicine/naturalpainkiller = 10)
+	icon_state = "patch_naturalpainkiller"
+	self_delay = 0

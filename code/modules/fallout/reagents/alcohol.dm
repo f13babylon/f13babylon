@@ -22,7 +22,7 @@
 /datum/reagent/consumable/ethanol/tatovodka/on_mob_life(mob/living/carbon/M)
 	if(prob(10))
 		M.vomit(10)
-	M.radiation = max(M.radiation-3,0)
+	M.radloss = max(M.radloss-3,0)
 	return ..()
 
 /datum/reagent/consumable/ethanol/buffalo
@@ -38,21 +38,6 @@
 /datum/reagent/consumable/ethanol/buffalo/on_mob_life(mob/living/carbon/M)
 	if(M.disgust < 80)
 		M.adjust_disgust(10)
-	return ..()
-
-/datum/reagent/consumable/ethanol/pungajuice
-	name = "punga juice"
-	description = "The fermented juice of the punga fruit, used to treat radiation sickness."
-	color = "#1B2E24"
-	boozepwr = 80
-	taste_description = "acidic slime"
-	glass_icon_state = "Space_mountain_wind_glass"
-	glass_name = "glass of punga juice"
-	glass_desc = "A glass of punga juice, used to treat radiation sickness."
-
-/datum/reagent/consumable/ethanol/pungajuice/on_mob_life(mob/living/carbon/M)
-	M.radiation = max(M.radiation-14,0)
-	//M.hallucination += 5
 	return ..()
 
 /datum/reagent/consumable/ethanol/purplecider
@@ -215,7 +200,7 @@
 	if(M.health > 20)
 		M.adjustToxLoss(0.5*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
 		. = TRUE
-	M.radiation += 0.1
+	M.radloss += 0.1
 	return ..() || .
 
 /datum/reagent/consumable/ethanol/salgam
@@ -1180,7 +1165,7 @@
 		M.playsound_local(M, 'sound/f13ambience/bird_6.ogg', 100, 0)
 	if(prob(50))
 		M.playsound_local(M, 'sound/effects/his_grace_awaken.ogg', 100, 0)
-	M.radiation = max(M.radiation-5,0)
+	M.radloss = max(M.radloss-5,0)
 	M.adjustToxLoss(-4*REAGENTS_EFFECT_MULTIPLIER, updating_health = FALSE)
 	M.set_drugginess(100)
 	M.hallucination += 100

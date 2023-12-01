@@ -8,6 +8,7 @@
 	icon_state = "thumper"
 	item_state = "shotgunpump"
 	inaccuracy_modifier = 0.5
+	slowdown = 0.75
 	mag_type = /obj/item/ammo_box/magazine/internal/grenadelauncher
 	fire_sound = 'sound/weapons/grenadelaunch.ogg'
 	w_class = WEIGHT_CLASS_BULKY

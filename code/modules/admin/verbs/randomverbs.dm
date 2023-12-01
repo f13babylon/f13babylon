@@ -98,8 +98,12 @@
 
 	log_directed_talk(mob, H, input, LOG_ADMIN, "reply")
 	message_admins("[key_name_admin(src)] replied to [key_name_admin(H)]'s [sender] message with: \"[input]\"")
-	SEND_SOUND(H, sound('sound/items/stalker_pda_news.ogg'))
-	to_chat(H, "<span class='notice'>You hear something crackle in your headset for a moment before a voice speaks.</span><br><span class=[radio_span]>\"This is <b>[sender_full_info]</b>, [input]\"</span>")
+
+	var/sound/message_sound = sound(get_sfx('sound/items/stalker_pda_news.ogg'))
+	message_sound.volume = 50
+
+	SEND_SOUND(H, message_sound)
+	to_chat(H, "<span class='notice'>You hear something crackle in your headset for a moment before a voice speaks:</span><span class=[radio_span]>\"This is <b>[sender_full_info]</b>, [input]\"</span>")
 
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Headset Message") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
@@ -160,7 +164,7 @@
 		log_admin("INVALID ADMIN PROC ACCESS: [key_name(usr)] tried to use cmd_admin_world_narrate() without admin perms.")
 		return
 
-	var/msg = input("Message:", text("Enter the text you wish to appear to everyone:")) as text|null
+	var/msg = multiline_input(usr, text("Enter the text you wish to appear to everyone:"), "Global Narrate")
 
 	if (!msg)
 		return
@@ -184,7 +188,7 @@
 	if(!M)
 		return
 
-	var/msg = input("Message:", text("Enter the text you wish to appear to your target:")) as text|null
+	var/msg = multiline_input(usr, text("Enter the text you wish to appear to your target:"), "Direct Narrate")
 
 	if( !msg )
 		return
@@ -206,10 +210,10 @@
 		return
 	if(!A)
 		return
-	var/range = input("Range:", "Narrate to mobs within how many tiles:", 50) as num|null
+	var/range = input("Range:", "Narrate to mobs within how many tiles:", 7) as num|null
 	if(!range)
 		return
-	var/msg = input("Message:", text("Enter the text you wish to appear to everyone within view:")) as text|null
+	var/msg = multiline_input(usr, text("Enter the text you wish to appear to everyone within view:"), "Local Narrate")
 	if (!msg)
 		return
 	for(var/mob/M in view(range,A))

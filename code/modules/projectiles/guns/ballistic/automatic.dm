@@ -201,7 +201,7 @@
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	w_class = WEIGHT_CLASS_NORMAL
-	weapon_weight = WEAPON_HEAVY //Automatic fire and onehanded use mix poorly.
+	weapon_weight = WEAPON_HEAVY	//Automatic fire and onehanded use mix poorly.
 	slowdown = 0.4
 	fire_delay = 3.75
 	burst_shot_delay = 3
@@ -438,7 +438,6 @@
 	can_suppress = FALSE
 	can_attachments = TRUE
 	extra_damage = -4
-	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_prefix = "micro"
 
 //Carl Gustaf			Keywords: 10mm, Automatic, 36 rounds
@@ -498,8 +497,6 @@
 /obj/item/gun/ballistic/automatic/smg/tommygun/whitelegs
 	name = "Storm Drum"
 	desc = "A recovered ancient Thompson from an armory far up North. Commonly used by raiders of the White Legs tribe."
-	mag_type = /obj/item/ammo_box/magazine/tommygunm45
-	init_mag_type = /obj/item/ammo_box/magazine/tommygunm45/stick
 	fire_delay = 3.75
 	spread = 19
 
@@ -507,14 +504,11 @@
 /obj/item/gun/ballistic/automatic/smg/tommygun/chicago
 	name = "M1928 Chicago Typewriter"
 	desc = "A powerful submachinegun chambered in .45 ACP, this weapon fires at a blistering rate with a heavy pistol cartridge, popular for its use by gangs of the Old World. This model was more expensive and stopped being produced."
-	mag_type = /obj/item/ammo_box/magazine/tommygunm45
 	init_mag_type = /obj/item/ammo_box/magazine/tommygunm45
 	autofire_shot_delay = 1.25
 	spread = 28		// RATTLE 'EM, BOYS!
 	slowdown = 0.6	//Higher
 	icon_state = "typewriter"
-	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	icon_prefix = "typewriter"
 	extra_damage = -5
 
 //P90				Keywords: 10mm, Automatic, 50 rounds. Special modifiers: damage +1
@@ -765,7 +759,7 @@
 	desc = "Legends are told of the \"Ratslayer\", a custom-made souped-up varmint rifle with a sick paintjob. This is a pale imitation, made of chopped-up bits of other guns."
 	icon_state = "verminrifle"
 	item_state = "ratslayer"
-
+	fire_delay = 1.5 //50% higher than service rifle
 	suppressed = 1
 	zoomable = TRUE
 	zoom_amt = 10
@@ -773,7 +767,8 @@
 	can_unsuppress = FALSE
 	suppressor_state = "none"
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
-	extra_penetration = 0.05
+	extra_speed = 800 //pew
+
 
 //Ratslayer									Keywords: UNIQUE, 5.56, 10/20/30 round magazine, Suppressed, Scoped
 /obj/item/gun/ballistic/automatic/varmint/ratslayer

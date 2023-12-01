@@ -571,6 +571,7 @@
 		return
 	health = maxHealth - getOxyLoss() - getToxLoss() - getFireLoss() - getBruteLoss() - getCloneLoss()
 	staminaloss = getStaminaLoss()
+	radloss = getRadLoss()
 	update_stat()
 	med_hud_set_health()
 	med_hud_set_status()
@@ -613,11 +614,11 @@
 	setOxyLoss(0, 0)
 	setCloneLoss(0, 0)
 	setStaminaLoss(0, 0)
+	setRadLoss(0, 0)
 	SetUnconscious(0, FALSE)
 	set_disgust(0)
 	SetAllImmobility(0, FALSE)
 	SetSleeping(0, FALSE)
-	radiation = 0
 	set_nutrition(NUTRITION_LEVEL_FED + 50)
 	bodytemperature = BODYTEMP_NORMAL
 	set_blindness(0)
@@ -626,6 +627,8 @@
 	cure_blind()
 	cure_husk()
 	hallucination = 0
+	druggy = 0
+	jitteriness = 0
 	heal_overall_damage(INFINITY, INFINITY, INFINITY, FALSE, FALSE, TRUE) //heal brute and burn dmg on both organic and robotic limbs, and update health right away.
 	ExtinguishMob()
 	fire_stacks = 0
@@ -1119,7 +1122,7 @@
 	amount -= RAD_BACKGROUND_RADIATION // This will always be at least 1 because of how skin protection is calculated
 
 	var/blocked = getarmor(null, "rad")
-	apply_effect((amount*RAD_MOB_COEFFICIENT)/max(1, (radiation**2)*RAD_OVERDOSE_REDUCTION), EFFECT_IRRADIATE, blocked)
+	apply_damage((amount*RAD_MOB_COEFFICIENT)/max(1, (radloss**2)*RAD_OVERDOSE_REDUCTION), RADIATION, null, blocked)
 	if(HAS_TRAIT(src,TRAIT_RADIMMUNE)) //prevents you from being burned by rads if radimmune but you can still accumulate
 		return
 	if(amount > RAD_BURN_THRESHOLD)

@@ -94,6 +94,11 @@
 	path = /obj/item/clothing/shoes/f13/military 
 	cost = 2
 
+/datum/gear/shoes/military/oldserviceboots
+	name = "old service boots"
+	path = /obj/item/clothing/shoes/f13/military/oldserviceboots
+	cost = 2
+
 /datum/gear/shoes/leather
 	name = "leather combat boots"
 	path = /obj/item/clothing/shoes/f13/military/leather 

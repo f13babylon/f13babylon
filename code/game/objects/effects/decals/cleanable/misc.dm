@@ -98,6 +98,55 @@
 /obj/effect/decal/cleanable/greenglow/ex_act()
 	return
 
+/obj/effect/decal/cleanable/greenglow/radioactive
+	name = "glowing goo"
+	desc = "Jeez. I hope that's not for lunch."
+	light_power = 3
+	light_range = 3
+	beauty = -450
+	var/range = 2
+	var/intensity = 20
+
+
+
+/obj/effect/decal/cleanable/greenglow/radioactive/Initialize(mapload)
+	. = ..()
+	reagents.add_reagent(/datum/reagent/uranium, rand(5,15))
+//	AddComponent(/datum/component/radioactive, 200, src, 0, TRUE, TRUE) //half-life of 0 because we keep on going.
+//NO BAD. The radiation component SUCKS ASS - these components self-propagate into 500+ "radiation waves"
+	START_PROCESSING(SSradiation,src) //Let's do this in a far more reasonable way- radiate players around us on a pulse. That's it.
+
+/obj/effect/decal/cleanable/greenglow/radioactive/Destroy()
+	STOP_PROCESSING(SSradiation,src)
+	return ..()
+
+//Bing bang boom done
+/obj/effect/decal/cleanable/greenglow/radioactive/process()
+	if(QDELETED(src))
+		return PROCESS_KILL
+
+	if(!z || !SSmobs.clients_by_zlevel[z].len) // we don't care about irradiating if no one is around to see it!
+		return
+
+	for(var/mob/living/carbon/human/victim in view(src,range))
+		if(istype(victim) && victim.stat != DEAD)
+			victim.rad_act(intensity)
+	for(var/obj/item/geiger_counter/geiger in view(src,range))
+		if(istype(geiger))
+			geiger.rad_act(intensity)
+
+/obj/effect/decal/cleanable/greenglow/radioactive/attackby(obj/item/I, mob/user, params)
+	if(istype(I, /obj/item/crafting/abraxo))
+		user.show_message(span_notice("You start sprinkling \the [I.name] onto the puddle of goo..."), MSG_VISUAL)
+		if(do_after(user, 30, target = src))
+			user.show_message(span_notice("You neutralize the radioactive goo!"), MSG_VISUAL)
+			new /obj/effect/decal/cleanable/chem_pile(src.loc) //Leave behind some cleanable chemical powder
+			STOP_PROCESSING(SSradiation,src)
+			qdel(src)
+			qdel(I)
+	else
+		return ..()
+
 /obj/effect/decal/cleanable/cobweb
 	name = "cobweb"
 	desc = "Somebody should remove that."

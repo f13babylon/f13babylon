@@ -27,7 +27,7 @@
 	if(HAS_TRAIT(M, TRAIT_TOXINLOVER))
 		is_toxinlover = TRUE
 	var/toxin_heal_rate = (is_toxinlover ? toxin_lover_healing : toxin_hurting) * toxpwr
-	if(!M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/healing_powder))
+	if(!M.reagents.has_reagent(/datum/reagent/medicine/healingpowder))
 		M.adjustFireLoss(toxin_heal_rate)
 		M.adjustBruteLoss(toxin_heal_rate)
 
@@ -76,7 +76,7 @@
 	..()
 
 /datum/reagent/toxin/FEV_solution/one/on_mob_life(mob/living/carbon/C)
-	C.apply_effect(40,EFFECT_IRRADIATE,0)
+	C.apply_damage(40, RADIATION)
 	C.adjustCloneLoss(15,0) // ~5 units will get you near crit condition.
 	return ..()
 
@@ -89,26 +89,12 @@
 /datum/reagent/toxin/FEV_solution/two/overdose_process(mob/living/carbon/C)
 	C.adjustBruteLoss(6,0)
 	C.adjustFireLoss(15,0)
-	C.apply_effect(70,EFFECT_IRRADIATE,0) //FEV-II is radioactive.
+	C.apply_damage(70, RADIATION) //FEV-II is radioactive.
 	C.adjustCloneLoss(3,0) // ~10 units will crit you.
 	C.Jitter(30)
 	if(prob(1))
 		to_chat(C, "<span class='danger'>You feel your insides burning, holy shit!</span>")
 	return ..()
-
-//FEV - Curling 13: The murderous type
-/datum/reagent/toxin/FEV_solution/curling
-	name = "Curling-13 solution"
-	description = "A heavily modified version of FEV, produced with intent to kill all 'mutated' lifeforms."
-	fev_disease = /datum/disease/curling_thirteen
-	can_synth = FALSE
-
-/datum/reagent/toxin/FEV_solution/curling/on_mob_add(mob/living/L)
-	if(ishuman(L))
-		var/mob/living/carbon/human/H = L
-		overdose_process(H) // Disease
-		H.apply_effect(600,EFFECT_IRRADIATE,0) //Curling is mixed with a radioactive precursor to accelerate its lethality.
-		return
 
 /datum/reagent/toxin/mutagen
 	name = "Diluted Forced Evolutionary Virus"
@@ -136,7 +122,7 @@
 	..()
 
 /datum/reagent/toxin/mutagen/on_mob_life(mob/living/carbon/C)
-	C.apply_effect(5,EFFECT_IRRADIATE,0)
+	C.apply_damage(5, RADIATION)
 	return ..()
 
 /datum/reagent/toxin/mutagen/on_hydroponics_apply(obj/item/seeds/myseed, datum/reagents/chems, obj/machinery/hydroponics/mytray, mob/user)
@@ -533,7 +519,7 @@
 	value = REAGENT_VALUE_VERY_RARE
 
 /datum/reagent/toxin/polonium/on_mob_life(mob/living/carbon/M)
-	M.radiation += 4
+	M.radloss += 4
 	..()
 
 /datum/reagent/toxin/histamine

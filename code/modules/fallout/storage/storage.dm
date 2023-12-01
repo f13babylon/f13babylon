@@ -530,7 +530,7 @@
 
 /obj/item/storage/box/medicine/poultice5/PopulateContents()
 	for(var/i in 1 to 5)
-		new /obj/item/reagent_containers/pill/patch/healpoultice(src)
+		new /obj/item/reagent_containers/pill/patch/healingpoultice(src)
 
 /obj/item/storage/box/medicine/poultice50
 	name = "box of fifty poultices"
@@ -541,7 +541,7 @@
 
 /obj/item/storage/box/medicine/poultice50/PopulateContents()
 	for(var/i in 1 to 50)
-		new /obj/item/reagent_containers/pill/patch/healpoultice(src)
+		new /obj/item/reagent_containers/pill/patch/healingpoultice(src)
 
 // -----------------------------------
 // BITTER DRINK BOX

@@ -6,7 +6,7 @@
 	blood_overlay_type = "coat"
 	body_parts_covered = CHEST|ARMS
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/medical
-	armor = list("melee" = 10, "bullet" = 10, "laser" = 25,"energy" = 15, "bomb" = 10, "bio" = 70, "rad" = 20, "fire" = 50, "acid" = 50)
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 25,"energy" = 5, "bomb" = 10, "bio" = 70, "rad" = 20, "fire" = 50, "acid" = 50)
 	togglename = "buttons"
 	species_exception = list(/datum/species/golem)
 

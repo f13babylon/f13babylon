@@ -5,7 +5,7 @@
 /datum/gear/hands/backpack
 	name = "hiking backpack"
 	path = /obj/item/storage/backpack/old
-	cost = 3
+	cost = 2
 
 /datum/gear/hands/backpack/duffel
 	name = "duffelbag"
@@ -31,16 +31,31 @@
 /datum/gear/hands/backpack/sec
 	name = "security backpack"
 	path = /obj/item/storage/backpack/security
-	cost = 4
+	cost = 2
 
 /datum/gear/hands/backpack/sec/satchel
 	name = "security satchel"
 	path = /obj/item/storage/backpack/satchel/sec
 
+/datum/gear/hands/backpack/satchel/old
+	name = "old satchel"
+	path = /obj/item/storage/backpack/satchel/old
+	cost = 2
+
+/datum/gear/hands/backpack/enclave
+	name = "service backpack"
+	path = /obj/item/storage/backpack/enclave
+	cost = 2
+
+/datum/gear/hands/backpack/satchel/enclave
+	name = "service satchel"
+	path = /obj/item/storage/backpack/satchel/enclave
+	cost = 2
+
 /datum/gear/hands/backpack/trophy
 	name = "trophy rack"
 	path = /obj/item/storage/backpack/cultpack
-	cost = 3
+	cost = 2
 
 /datum/gear/hands/briefcase/crafted
 	name = "briefcase"
@@ -83,7 +98,7 @@
 /datum/gear/hands/cane
 	name = "cane"
 	path = /obj/item/cane
-	
+
 /datum/gear/hands/cane
 	name = "spraycan"
 	path = /obj/item/toy/crayon/spraycan
@@ -156,3 +171,7 @@
 /datum/gear/hands/lipstickblack
 	name = "black lipstick"
 	path = /obj/item/lipstick/black
+
+/datum/gear/hands/warpaintbowl
+	name = "warpaint bowl"
+	path = /obj/item/warpaint_bowl

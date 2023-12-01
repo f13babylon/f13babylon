@@ -3,6 +3,7 @@ You can climb onto a table by dragging yourself onto one. This takes time and dr
 You can drag other players onto yourself to open the strip menu, letting you remove their equipment or force them to wear something. Note that armor or helmets will block your access to the clothing beneath them, and that certain items take longer to strip or put on than others.
 Clicking on a windoor rather then bumping into it will keep it open, you can click it again to close it.
 You can change the control scheme by pressing tab. One is WASD, the other is the arrow keys. Keep in mind that hotkeys are also changed with this.
+Want to describe something that wouldn't particularly make sense in the context of an emote? Use the Do verb! The default key for it is 'K'.
 Glass shards can be welded to make glass, and metal rods can be welded to make metal. Ores can be welded too, but this takes a lot of fuel.
 If you need to drag multiple people to safety, or a grave bring a locker or crate over and stuff them all in before hauling them off.
 You can grab someone by clicking on them with the grab intent, then upgrade the grab by clicking on them once more. An aggressive grab will momentarily stun someone, allow you to place Mekhi on a table by clicking on it, or throw them by toggling on throwing.

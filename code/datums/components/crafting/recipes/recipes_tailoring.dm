@@ -57,6 +57,17 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
 
+/datum/crafting_recipe/armor_plate_plastit_5
+	name = "Armor Plate Stack (x5)"
+	result = /obj/item/stack/crafting/armor_plate/five
+	reqs = list(/obj/item/stack/sheet/prewar = 10,
+				/obj/item/stack/crafting/goodparts = 5,
+				/obj/item/stack/crafting/metalparts = 10)
+	tools = list(TOOL_WORKBENCH)
+	time = 60
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOR
+
 /datum/crafting_recipe/leatherarmor
 	name = "Leather Armor"
 	result = /obj/item/clothing/suit/armor/f13/leatherarmor

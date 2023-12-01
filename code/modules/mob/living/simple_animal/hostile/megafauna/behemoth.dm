@@ -40,6 +40,7 @@
 	var/stored_move_dirs = 0
 	/// If the behemoth is allowed to move
 	var/can_move = TRUE
+	alt_skin = TRUE
 
 /datum/action/innate/megafauna_attack/heavy_stomp
 	name = "Heavy Stomp"

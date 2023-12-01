@@ -25,6 +25,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 	access = list(ACCESS_LEGION, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION, ACCESS_LEGION_SLAVE)
+	blacklisted_quirks = list(/datum/quirk/stim_intolerance, /datum/quirk/straight_edge, /datum/quirk/herbal_affinity)
 
 /datum/outfit/job/CaesarsLegion
 	ears = null
@@ -37,12 +38,16 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legiongate)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/berserker_powder)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionmedx)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/naturalpainkiller)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/rip/crossexecution)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombatarmor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombathelmet)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombatarmormk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombathelmetmk2)
+	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
+	ADD_TRAIT(H, TRAIT_STIM_INTOLERANCE, REF(src)) //Can't use stimpaks without getting sick
+	ADD_TRAIT(H, TRAIT_STRAIGHT_EDGE, REF(src)) //Can't use Fallout chems, such as Psycho, Med-X, Buffout, Turbo etc. without getting sick
+	ADD_TRAIT(H, TRAIT_HERBAL_AFFINITY, REF(src)) //Better tribal medicine healing rates and no drawbacks
 
 /datum/outfit/job/CaesarsLegion/Legionnaire
 	belt = /obj/item/storage/belt/military/assault/legion
@@ -66,7 +71,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 			var/obj/item/card/id/dogtag/L = H.wear_id
 			L.registered_name = H.name
 			L.update_label()
-	ADD_TRAIT(H, TRAIT_TRIBAL,  REF(src))
+	ADD_TRAIT(H, TRAIT_HERBAL_AFFINITY,  REF(src))
 	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
 	ADD_TRAIT(H, TRAIT_FEARLESS,  REF(src)) //no phobias for legion!
 	ADD_TRAIT(H, TRAIT_BERSERKER,  REF(src))
@@ -78,8 +83,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /obj/item/storage/box/legate/PopulateContents()
 	. = ..()
-	new /obj/item/reagent_containers/pill/patch/healpoultice(src)
-	new /obj/item/reagent_containers/pill/patch/healpoultice(src)
+	new /obj/item/reagent_containers/pill/patch/healingpoultice(src)
+	new /obj/item/reagent_containers/pill/patch/healingpoultice(src)
 	new /obj/item/ammo_box/magazine/m14mm(src)
 	new /obj/item/ammo_box/magazine/m14mm(src)
 	new /obj/item/ammo_box/magazine/m14mm(src)
@@ -125,7 +130,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/pistol14
 	r_pocket = /obj/item/storage/bag/money/small/legion
 	l_pocket = /obj/item/flashlight/lantern
-	r_hand = /obj/item/melee/powerfist/f13/goliath
+	r_hand = /obj/item/melee/f13powerfist/goliath
 	l_hand = /obj/item/tank/internals/oxygen
 	backpack = null
 	satchel = null
@@ -146,7 +151,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	display_order = JOB_DISPLAY_ORDER_ORATOR
 	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
-	roleplay_exclusive_notify = 1
 	exp_type = EXP_TYPE_LEGION
 	exp_requirements = 900
 
@@ -155,6 +159,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13orator
 	suit = /obj/item/clothing/suit/armor/f13/legion/orator
 	head = /obj/item/clothing/head/helmet/f13/legion/orator
+	ears = /obj/item/radio/headset/headset_legion
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	neck = /obj/item/storage/belt/holster
 	id = /obj/item/card/id/dogtag/legorator
@@ -192,7 +197,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	display_order = JOB_DISPLAY_ORDER_PRIESTESS
 	access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 	minimal_access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
-	roleplay_exclusive_notify = 1
 	exp_type = EXP_TYPE_LEGION
 	exp_requirements = 900
 
@@ -200,17 +204,21 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Priestess of Mars"
 	jobtype = /datum/job/CaesarsLegion/f13priestess
 	uniform = /obj/item/clothing/under/f13/pmarsrobe
-	head = /obj/item/clothing/head/helmet/f13/legion/marsheaddress
+	head = /obj/item/clothing/head/helmet/f13/legion/orator
+	ears = /obj/item/radio/headset/headset_legion
 	shoes = /obj/item/clothing/shoes/roman
-	belt = /obj/item/storage/belt/medical/primitive
+	id = /obj/item/card/id/dogtag/legpriest
 	backpack = /obj/item/storage/backpack/legionr
 	r_pocket = /obj/item/storage/bag/money/small/legofficers
 	l_pocket = /obj/item/flashlight/lantern
+	box = /obj/item/storage/survivalkit_tribal/chief
+	belt = /obj/item/storage/belt/military/assault/legion
 	backpack_contents = list(
 		/obj/item/stack/f13Cash/random/denarius/high = 1,
 		/obj/item/storage/firstaid/ancient = 1,
 		/obj/item/stack/sticky_tape/surgical = 1,
-		/obj/item/stack/medical/bone_gel = 1
+		/obj/item/stack/medical/bone_gel = 1,
+		/obj/item/warpaint_bowl = 1
 	)
 
 /datum/outfit/job/CaesarsLegion/f13priestess/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -229,7 +237,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ,  REF(src))
 	ADD_TRAIT(H, TRAIT_MARS_TEACH,  REF(src))
-	ADD_TRAIT(H, TRAIT_TRIBAL,  REF(src))
 
 /////////////////
 //// Officers ///
@@ -322,7 +329,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	suit = /obj/item/clothing/suit/armor/f13/legion/centurion
 	head = /obj/item/clothing/head/helmet/f13/legion/centurion
 	backpack_contents = list(
-		/obj/item/melee/powerfist/f13/goliath = 1,
+		/obj/item/melee/f13powerfist/goliath = 1,
 		/obj/item/book/granter/martial/cqc = 1,
 		/obj/item/gun/ballistic/automatic/smg/cg45_two = 1,
 		/obj/item/ammo_box/magazine/cg45_two = 2,
@@ -574,7 +581,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	l_pocket = /obj/item/storage/survivalkit_tribal
 	backpack_contents = list(
 		/obj/item/melee/onehanded/machete/gladius = 1,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
+		/obj/item/reagent_containers/pill/patch/healingpoultice = 1,
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/storage/bag/money/small/legofficers = 1,
 		)
@@ -589,7 +596,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		)
 
 /datum/outfit/loadout/recdectribal
-	name = "Blackliner Decanus"
+	name = "Backliner Decanus"
 	suit_store = /obj/item/gun/ballistic/rifle/repeater/trail
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44 = 2,
@@ -657,7 +664,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	gloves = /obj/item/clothing/gloves/legion/plated
 	r_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
+		/obj/item/reagent_containers/pill/patch/healingpoultice = 1,
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/megaphone/cornu = 1,
 		/obj/item/storage/bag/money/small/legenlisted = 1,
@@ -821,7 +828,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	r_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
+		/obj/item/reagent_containers/pill/patch/healingpoultice = 1,
 		/obj/item/storage/bag/money/small/legenlisted = 1,
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/melee/onehanded/machete/gladius = 1,
@@ -834,7 +841,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	suit_store = /obj/item/twohanded/legionaxe
 	backpack_contents = list(
 		/obj/item/grenade/smokebomb = 1,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
+		/obj/item/reagent_containers/pill/patch/healingpoultice = 1,
 		)
 
 /datum/outfit/loadout/vetsmg
@@ -915,7 +922,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	l_pocket = /obj/item/restraints/handcuffs
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/legenlisted = 1,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
+		/obj/item/reagent_containers/pill/patch/healingpoultice = 1,
 		/obj/item/melee/onehanded/machete/forgedmachete = 1,
 		)
 
@@ -1019,7 +1026,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 // Immunes are mostly an off-duty role meant to attend to the camp itself and the slaves or prisoners within.
 
-/datum/job/CaesarsLegion/Legionnaire/immune
+/datum/job/CaesarsLegion/immune
 	title = "Legion Camp Follower"
 	flag = F13IMMUNE
 	total_positions = 7
@@ -1028,13 +1035,12 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	enforces = "You may leave the base, but you are not allowed to antagonize other factions or scavenge. You are a non-combatant. You cannot join any raids or battles on the surface. You cannot run dungeons."
 	supervisors = "the Centurion."
 	display_order = JOB_DISPLAY_ORDER_IMMUNE
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/immune
-	roleplay_exclusive_notify = 1
+	outfit = /datum/outfit/job/CaesarsLegion/immune
 	exp_requirements = 0
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/immune
+/datum/outfit/job/CaesarsLegion/immune
 	name = "Camp Follower"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/immune
+	jobtype = /datum/job/CaesarsLegion/immune
 	id = /obj/item/card/id/dogtag/legimmune
 	mask = /obj/item/clothing/mask/bandana/legion/camp
 	uniform = /obj/item/clothing/under/f13/legskirt
@@ -1047,7 +1053,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/reagent_containers/pill/patch/healingpowder = 2
 		)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/immune/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/immune/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -1064,7 +1070,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	supervisors = "the Centurion."
 	display_order = JOB_DISPLAY_ORDER_CAMPFOLLOWER
 	outfit = /datum/outfit/job/CaesarsLegion/f13campfollower
-	roleplay_exclusive_notify = 1
 	exp_requirements = 0
 
 /datum/outfit/job/CaesarsLegion/f13campfollower
@@ -1079,7 +1084,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE
-	gunsmith_four = TRUE
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/legenlisted = 1,
 		/obj/item/stack/sheet/metal/twenty = 2,
@@ -1109,19 +1113,23 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/cheaparrow)
 
 
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/receiver)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/assembly)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/alloys)
+
+
 
 // AUXILIA - Civilians with special training. Can sow new uniforms for soldiers who lost theirs, and are loyal so they would never abuse this.
 
 /datum/job/CaesarsLegion/auxilia
 	title = "Legion Auxilia"
 	flag = F13AUXILIA
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 	description = "A non-combat position in the Legion for free citizens who perform tasks that need special training, such as surgery. They are loyal to the Legion even if they are not treated as equals to warriors."
 	supervisors = "the Centurion"
 	display_order = JOB_DISPLAY_ORDER_AUXILIA
 	outfit = /datum/outfit/job/CaesarsLegion/auxilia
-	roleplay_exclusive_notify = 1
 	exp_requirements = 0
 	exp_type = EXP_TYPE_WASTELAND//So you can't sit on it and play Centurion. :)
 
@@ -1129,6 +1137,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/datum/outfit/loadout/auxassist, // Keep track of the money, handle trading beneath the warriors
 		/datum/outfit/loadout/auxmedicus, // Do surgery, medical tasks.
 		/datum/outfit/loadout/auxopifex, // Build defenses, craft necessary items
+		/datum/outfit/loadout/auxservant,
 		)
 
 	matchmaking_allowed = list(
@@ -1145,17 +1154,14 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Legion Auxilia"
 	jobtype = /datum/job/CaesarsLegion/auxilia
 	id = /obj/item/card/id/dogtag/legauxilia
-	head = /obj/item/clothing/head/f13/auxilia
 	uniform = /obj/item/clothing/under/f13/legauxiliaf
-	shoes = /obj/item/clothing/shoes/roman
-	ears = /obj/item/radio/headset/headset_legion
 	gloves = null
 	belt = null
 	r_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healingpowder = 2,
 		/obj/item/reagent_containers/food/snacks/grown/ambrosia/deus = 1,
-		/obj/item/warpaint_bowl
+		/obj/item/warpaint_bowl = 1
 		)
 
 /datum/outfit/job/CaesarsLegion/auxilia/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -1165,7 +1171,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	ADD_TRAIT(H, TRAIT_SURGERY_LOW,  REF(src))
 	ADD_TRAIT(H, TRAIT_MARS_TEACH,  REF(src))
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK,  REF(src))
-	ADD_TRAIT(H, TRAIT_TRIBAL,  REF(src))
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tailor/legionuniform)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/warpaint)
 
@@ -1173,13 +1178,15 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/outfit/loadout/auxassist
 	name = "Treasurer"
 	neck = /obj/item/clothing/neck/mantle/treasurer
+	head = /obj/item/clothing/head/f13/auxilia
+	shoes = /obj/item/clothing/shoes/roman
+	ears = /obj/item/radio/headset/headset_legion
 	backpack_contents = list(
 		/obj/item/folder/red = 1,
 		/obj/item/paper/natural = 2,
 		/obj/item/pen/fountain = 1,
 		/obj/item/storage/bag/money/small/legion = 1,
 		/obj/item/taperecorder = 1,
-		/obj/item/clothing/under/f13/legauxilia = 1,
 		)
 
 /datum/outfit/loadout/auxmedicus
@@ -1187,17 +1194,22 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	neck = /obj/item/clothing/neck/apron/medicus
 	gloves = /obj/item/clothing/gloves/f13/crudemedical
 	belt = /obj/item/storage/belt/medical/primitive
+	head = /obj/item/clothing/head/f13/auxilia
+	shoes = /obj/item/clothing/shoes/roman
+	ears = /obj/item/radio/headset/headset_legion
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/legenlisted = 1,
 		/obj/item/storage/firstaid/ancient = 1,
 		/obj/item/stack/sticky_tape/surgical = 1,
 		/obj/item/stack/medical/bone_gel = 1,
 		/obj/item/book/granter/trait/midsurgery = 1,
-		/obj/item/clothing/under/f13/legauxilia = 1,
 		)
 /datum/outfit/loadout/auxopifex
 	name = "Opifex (Artisan)"
 	neck = /obj/item/clothing/neck/apron/labor/forge
+	head = /obj/item/clothing/head/f13/auxilia
+	shoes = /obj/item/clothing/shoes/roman
+	ears = /obj/item/radio/headset/headset_legion
 	gloves = /obj/item/clothing/gloves/legion/forgemaster
 	belt = /obj/item/storage/belt
 	glasses = /obj/item/clothing/glasses/welding
@@ -1214,20 +1226,32 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/book/granter/trait/explosives = 1
 		)
 
+/datum/outfit/loadout/auxservant
+	name = "Auxilia-Servant"
+	neck = /obj/item/electropack/shockcollar
+	shoes =	null
+	backpack_contents = list(
+		/obj/item/storage/bag/plants = 1,
+		/obj/item/reagent_containers/food/snacks/grown/ambrosia/deus = 1,
+		/obj/item/cultivator = 1,
+		/obj/item/soap/homemade = 1,
+		/obj/item/shovel/spade = 1,
+		/obj/item/clothing/under/f13/legslavef = 1
+		)
+
 // LEGION SLAVES - Servant cook, and assist with medical, low surgery. Worker farm and mine.
 // Both get Mars teachings to help out when normal work is done.
 
 /datum/job/CaesarsLegion/slave
 	title = "Legion Slave"
 	flag = F13LEGIONSLAVE
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	description = "A slave that survives the breaking camps is given a Legion appropriate name (latin-tribal inspired) and bull tattoo. Be obedient, respectful, stay inside the camp. Work the farm, mine, make food, clean and help injured men. Do NOT escape on your own, up to you how to handle it if forcibly freed by outside forces."
 	supervisors = "Officers and Slavemaster first, then Auxilia, then warriors."
 	display_order = JOB_DISPLAY_ORDER_LEGIONSLAVE
 	exp_requirements = 0
 	outfit = /datum/outfit/job/CaesarsLegion/slave
-	roleplay_exclusive_notify = 1
 	exp_type = EXP_TYPE_WASTELAND//So you can't sit on it and play Centurion. :)
 
 	access = list(ACCESS_LEGION_SLAVE)
@@ -1273,7 +1297,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	r_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healingpowder = 2,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
+		/obj/item/reagent_containers/pill/patch/healingpoultice = 2,
 		/obj/item/smelling_salts = 1,
 		/obj/item/book/granter/trait/lowsurgery = 1,
 		/obj/item/reagent_containers/food/condiment/flour = 2,
@@ -1342,7 +1366,7 @@ Venator  - Zero slots, role built on cloning vet ranger, linear just vastly bett
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/w308 = 3,
 		/obj/item/melee/onehanded/machete/gladius = 1,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 3,
+		/obj/item/reagent_containers/pill/patch/healingpoultice = 3,
 		/obj/item/gun/ballistic/revolver/revolver45 = 1,
 		/obj/item/ammo_box/c45rev = 3,
 		)
@@ -1356,7 +1380,6 @@ Venator  - Zero slots, role built on cloning vet ranger, linear just vastly bett
 	spawn_positions = 1
 	description = "You are the feared and respected disciplinary corps of the Legion. Acting as both master of the Slaves and de-facto executioner of the Centurion's will within his ranks, you are a faceless and undoubtedly cruel torturer... but be careful to not let your hubris and malice lead to a strikeback from those you thought broken."
 	supervisors = "the Decani and Centurion"
-	roleplay_exclusive_notify = 1
 	exp_requirements = 0
 	display_order = JOB_DISPLAY_ORDER_SLAVEMASTER
 
@@ -1385,7 +1408,6 @@ Venator  - Zero slots, role built on cloning vet ranger, linear just vastly bett
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES,  REF(src))
-	ADD_TRAIT(H, TRAIT_TRIBAL,  REF(src))
 	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 */

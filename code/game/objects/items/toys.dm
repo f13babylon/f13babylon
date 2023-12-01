@@ -835,7 +835,7 @@
 			icon_state = "deck_[deckstyle]_full"
 		if(0.25 to 0.5)
 			icon_state = "deck_[deckstyle]_half"
-		if(1 to 0.25)
+		if(0.1 to 0.25)
 			icon_state = "deck_[deckstyle]_low"
 		else
 			icon_state = "deck_[deckstyle]_empty"

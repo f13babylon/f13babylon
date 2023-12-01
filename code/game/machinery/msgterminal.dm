@@ -196,7 +196,9 @@ GLOBAL_LIST_EMPTY(allTerminals)
 			if(message)
 				var/mutable_appearance/flag = mutable_appearance('icons/obj/flags.dmi', "vtccflag")
 				var/message_span = "notice"
+				var/sound/message_sound = sound(get_sfx('sound/items/stalker_pda_sos.ogg'))
 				var/superiors = "Top Brass"
+
 				switch(terminalid)
 					if("ncr")
 						flag.icon_state = "ncrflag"
@@ -206,6 +208,7 @@ GLOBAL_LIST_EMPTY(allTerminals)
 						flag.icon_state = "legionflag"
 						superiors = "Zion War Council"
 						message_span = get_radio_span(FREQ_LEGION)
+						message_sound = sound(get_sfx('sound/items/cornu.ogg'))
 					if("brotherhood")
 						flag.icon_state = "bosflag"
 						superiors = "Utah Council of Elders"
@@ -214,7 +217,10 @@ GLOBAL_LIST_EMPTY(allTerminals)
 						flag.icon_state = "enclaveflag"
 						superiors = "West Temple HighComm"
 						message_span = get_radio_span(FREQ_ENCLAVE)
-				var/admin_msg = "<span class='adminnotice'><span class='comradio'><b>[icon2html(flag, GLOB.admins)]COMMAND MESSAGE[superiors ? " to [superiors]" : ""]:</b></span> [ADMIN_FULLMONTY(usr)]:<span class=[message_span]><br>\"[message]\"</span> <br>Jump to the reply terminal:[ADMIN_JMP_MSGTERMINAL(src)]</span>"
+
+				message_sound.volume = 50
+
+				var/admin_msg = "<span class='adminnotice'><span class=[message_span]><b>[icon2html(flag, GLOB.admins)]Message[superiors ? " to [superiors]" : ""]:</b></span> [ADMIN_FULLMONTY(usr)]:<span class=[message_span]>\"[message]\"</span> <br>Jump to the reply terminal:[ADMIN_JMP_MSGTERMINAL(src)]</span>"
 				log_terminal("[key_name(usr)] sent a Command message, '[message]' from the terminal at [AREACOORD(usr)].")
 				screen = 6
 				dat += "<span class='good'>Message to Command delivered.</span><br><br>"
@@ -224,7 +230,7 @@ GLOBAL_LIST_EMPTY(allTerminals)
 					if(C.prefs.chat_toggles & CHAT_COMM_CENTER)
 						to_chat(C, admin_msg)
 						if(C.prefs.toggles & SOUND_COMM_CENTER)
-							SEND_SOUND(C, sound('sound/items/stalker_pda_sos.ogg'))
+							SEND_SOUND(C, message_sound)
 			else
 				screen = 7
 				dat += "<span class='bad'>Message to Command aborted.</span><br><br>"

@@ -194,7 +194,7 @@
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
 	speak_chance = 0
 	turns_per_move = 5
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/radscorpion_meat = 2)
+	butcher_results = list(/obj/item/stack/sheet/animalhide/chitin = 1, /obj/item/stack/sheet/sinew = 1, /obj/item/reagent_containers/food/snacks/meat/slab/radscorpion_meat = 4)
 	response_help_simple = "pets"
 	response_disarm_simple = "gently pushes aside"
 	response_harm_simple = "hits"

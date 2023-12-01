@@ -399,8 +399,8 @@
 	M.adjustOxyLoss(-0.5, updating_health = FALSE)
 	M.adjustToxLoss(-1, updating_health = FALSE, forced = TRUE)
 	M.adjustStaminaLoss(-0.5, updating_health = FALSE)
-	if(M.radiation > 0)
-		M.radiation -= min(M.radiation, 2)
+	if(M.radloss > 0)
+		M.radloss -= min(M.radloss, 2)
 	..()
 	return TRUE // update health at end of tick
 
@@ -419,13 +419,13 @@
 	glass_desc = "A glass of holy water."
 	pH = 7.5 //God is alkaline
 
-	// Holy water. Mostly the same as water, it also heals the plant a little with the power of the spirits. Also ALSO increases instability.
+// Holy water. Mostly the same as water, it also heals the plant a little with the power of the spirits. Also ALSO increases instability.
 /datum/reagent/water/holywater/on_hydroponics_apply(obj/item/seeds/myseed, datum/reagents/chems, obj/machinery/hydroponics/mytray)
 	if(chems.has_reagent(src.type, 1))
 		mytray.adjustWater(round(chems.get_reagent_amount(src.type) * 1))
 		mytray.adjustHealth(round(chems.get_reagent_amount(src.type) * 0.1))
 		if(myseed)
-			myseed.adjust_instability(round(chems.get_reagent_amount(src.type) * 0.15))
+			myseed.adjust_instability(round(chems.get_reagent_amount(src.type) * 0.45))
 
 /datum/reagent/water/holywater/on_mob_metabolize(mob/living/L)
 	. = ..()
@@ -504,7 +504,7 @@
 	mytray.adjustWater(round(chems.get_reagent_amount(src.type) * 1))
 	mytray.adjustHealth(round(chems.get_reagent_amount(src.type) * 0.1))
 	if(myseed)
-		myseed.adjust_instability(round(chems.get_reagent_amount(src.type) * 0.15))
+		myseed.adjust_instability(round(chems.get_reagent_amount(src.type) * 0.45))
 
 /datum/reagent/fuel/unholywater	//if you somehow managed to extract this from someone, dont splash it on yourself and have a smoke
 	name = "Unholy Water"
@@ -1228,7 +1228,7 @@
 		mytray.adjustToxic(round(chems.get_reagent_amount(src.type) * 1))
 
 /datum/reagent/radium/on_mob_life(mob/living/carbon/M)
-	M.apply_effect(2*REM/M.metabolism_efficiency,EFFECT_IRRADIATE,0)
+	M.apply_damage(2*REM/M.metabolism_efficiency, RADIATION)
 	..()
 
 /datum/reagent/radium/reaction_turf(turf/T, reac_volume)
@@ -1342,7 +1342,7 @@
 	ghoulfriendly = TRUE
 
 /datum/reagent/uranium/on_mob_life(mob/living/carbon/M)
-	M.apply_effect(1/M.metabolism_efficiency,EFFECT_IRRADIATE,0)
+	M.apply_damage(1/M.metabolism_efficiency, RADIATION)
 	..()
 
 /datum/reagent/uranium/reaction_turf(turf/T, reac_volume)
@@ -1654,7 +1654,7 @@
 		mytray.adjustHealth(round(chems.get_reagent_amount(src.type) * 0.12))
 		if(myseed && prob(10))
 			myseed.adjust_yield(1)
-			myseed.adjust_instability(1)
+			myseed.adjust_instability(3)
 
 /datum/reagent/ammonia/reaction_mob(mob/living/M, method=TOUCH, reac_volume, touch_protection)
 	if(method == VAPOR)
@@ -1688,7 +1688,7 @@
 		mytray.adjustPests(-rand(1,2))
 		if(myseed)
 			myseed.adjust_yield(round(chems.get_reagent_amount(src.type) * 1))
-			myseed.adjust_instability(-round(chems.get_reagent_amount(src.type) * 1))
+			myseed.adjust_instability(-round(chems.get_reagent_amount(src.type) * 3))
 
 /datum/reagent/carbondioxide
 	name = "Carbon Dioxide"
@@ -1869,7 +1869,7 @@
 	ghoulfriendly = TRUE
 
 /datum/reagent/plantnutriment/on_mob_life(mob/living/carbon/M)
-	if(prob(tox_prob))
+	if(prob(tox_prob) && M.dna.species.species_type != "plant")	//New Babylon change: Podpeople do not get poisoned from plant nutrients
 		M.adjustToxLoss(1*REM, updating_health = FALSE)
 		. = 1
 	..()
@@ -1898,7 +1898,7 @@
 	. = ..()
 	if(myseed && chems.has_reagent(src.type, 1))
 		mytray.adjustHealth(round(chems.get_reagent_amount(src.type) * 0.1))
-		myseed.adjust_instability(round(chems.get_reagent_amount(src.type) * 0.2))
+		myseed.adjust_instability(round(chems.get_reagent_amount(src.type) * 0.6))
 
 /datum/reagent/plantnutriment/robustharvestnutriment
 	name = "Robust Harvest"
@@ -1910,7 +1910,7 @@
 /datum/reagent/plantnutriment/robustharvestnutriment/on_hydroponics_apply(obj/item/seeds/myseed, datum/reagents/chems, obj/machinery/hydroponics/mytray)
 	. = ..()
 	if(myseed && chems.has_reagent(src.type, 1))
-		myseed.adjust_instability(-0.25)
+		myseed.adjust_instability(-0.75)
 		myseed.adjust_potency(round(chems.get_reagent_amount(src.type) * 0.1))
 		myseed.adjust_yield(round(chems.get_reagent_amount(src.type) * 0.2))
 
