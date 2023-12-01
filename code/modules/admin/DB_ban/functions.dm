@@ -163,7 +163,7 @@
 	var/is_temp_ban = bantype in list(BANTYPE_JOB_TEMP, BANTYPE_TEMP)
 	var/is_job_ban = bantype in list(BANTYPE_JOB_PERMA, BANTYPE_JOB_TEMP)
 	SSdiscord.send_to_ban_channel(
-		"**BAN** | [bankey] | [(is_temp_ban ? "TEMP | [duration]m" : "PERM")] | [(is_job_ban ? job: "SERVER")] | ADMIN `[key_name(usr)]` | [reason]"
+		"**BAN** | [bankey] | [(is_temp_ban ? "TEMP | [duration]m" : "PERM")] | [(is_job_ban ? job : "SERVER")] | ADMIN `[key_name(usr)]` | [reason]"
 	)
 
 	if(kickbannedckey)
