@@ -1182,6 +1182,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	loadout_options = list(
 		/datum/outfit/loadout/conscriptvarmint, // Service
 		/datum/outfit/loadout/conscripthunting, // Hunting rifle, Trench tool, Sandbags
+		/datum/outfit/loadout/conscripthalal, // M45, Machete
 		)
 
 	matchmaking_allowed = list(
@@ -1223,6 +1224,17 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/shovel/trench = 1,
 		/obj/item/stack/sheet/mineral/sandbags = 7,
 		/obj/item/storage/box/ration/menu_eight = 1,
+		)
+
+/datum/outfit/loadout/conscripthalal
+	name = "Desert Warrior"
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/m1911
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m45 = 3,
+		/obj/item/melee/onehanded/machete = 1,
+		/obj/item/storage/box/ration/menu_eight = 1,
+		/obj/item/clothing/head/f13/headscarfncr = 1,
+		/obj/item/clothing/suit/armored/light/ncrarmorwarri = 1,
 		)
 
 
