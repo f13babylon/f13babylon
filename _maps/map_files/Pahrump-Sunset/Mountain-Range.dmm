@@ -5177,6 +5177,7 @@
 	req_access = null;
 	req_access_txt = "134"
 	},
+/obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
 "Qp" = (
