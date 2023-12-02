@@ -5856,8 +5856,8 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "cZy" = (
-/obj/structure/wreck/trash/machinepiletwo,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/wreck/trash/brokenvendor,
 /turf/open/floor/f13{
 	dir = 10;
 	icon_state = "redmark"
@@ -7048,7 +7048,7 @@
 /obj/machinery/door/airlock/hatch{
 	req_access_txt = "120"
 	},
-/turf/closed/wall/r_wall/f13/vault,
+/turf/open/floor/f13,
 /area/f13/brotherhood/reactor)
 "fgb" = (
 /obj/effect/turf_decal/huge{
@@ -7504,9 +7504,6 @@
 /obj/item/gps/mining,
 /obj/item/clothing/glasses/meson,
 /obj/item/clothing/glasses/meson,
-/obj/item/clothing/glasses/meson,
-/obj/item/clothing/glasses/meson,
-/obj/item/clothing/glasses/meson,
 /obj/structure/closet,
 /obj/item/storage/bag/ore,
 /obj/item/storage/bag/ore,
@@ -7629,9 +7626,6 @@
 /obj/item/gps/mining,
 /obj/item/gps/mining,
 /obj/item/gps/mining,
-/obj/item/clothing/glasses/meson,
-/obj/item/clothing/glasses/meson,
-/obj/item/clothing/glasses/meson,
 /obj/item/clothing/glasses/meson,
 /obj/item/clothing/glasses/meson,
 /obj/structure/closet,
@@ -7903,7 +7897,7 @@
 	},
 /area/f13/tunnel)
 "gUu" = (
-/obj/structure/wreck/trash/machinepiletwo,
+/obj/structure/wreck/trash/brokenvendor,
 /turf/open/floor/f13{
 	icon_state = "bluerustyfull"
 	},
@@ -8970,10 +8964,10 @@
 /turf/open/floor/plasteel/f13,
 /area/f13/tunnel)
 "jdX" = (
-/obj/structure/wreck/trash/machinepiletwo,
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/structure/wreck/trash/brokenvendor,
 /turf/open/floor/f13{
 	icon_state = "bluerustyfull"
 	},
@@ -14596,7 +14590,7 @@
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/tunnel/bighorn)
 "tTH" = (
-/obj/structure/wreck/trash/machinepiletwo,
+/obj/structure/wreck/trash/brokenvendor,
 /turf/open/floor/f13{
 	dir = 10;
 	icon_state = "redmark"
