@@ -850,7 +850,6 @@
 	scope_y_offset = 15
 	suppressor_x_offset = 26
 	suppressor_y_offset = 28
-	extra_damage = -3
 	extra_penetration = 0.1
 
 
@@ -993,10 +992,8 @@
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
-	fire_delay = 0.5
+	fire_delay = 1.5
 	can_scope = FALSE
-	automatic = 1
-	autofire_shot_delay = 2.15
 	extra_penetration = 0.1
 	extra_damage = -3
 
@@ -1028,7 +1025,7 @@
 	icon_state = "sks"
 	item_state = "sks"
 	mag_type = /obj/item/ammo_box/magazine/sks
-	fire_delay = 2
+	fire_delay = 2.2
 	extra_speed = 100
 	bayonet_state = "bayonet"
 	knife_x_offset = 24
