@@ -24,7 +24,7 @@ Everything below this New Babylon entry comes from the original /tg/ documentati
 All contributions should be formatted well and follow traditional SS13 code standards you might find on /tg/. Failure to maintain code standards will result in your Pull Request being reviewed with 'requested changes', where you will have around 7 days to correct any errors before the request is closed on our end. Note, just because we close out your request doesn't mean you can't continue your work! If you cannot make the requested changes within that time window, speak to a maintainer or simply work at your own pace on your fork and open another Pull Request when you are ready for another review.
 
 **Modularization**
-While there is no requirement to adhere to the modularisation procedures you may find in a traditional upstream-downstream relationship, the more modular your code is the more maintainable it tends to be. As a result, unnecessarily splintered code may be requested to be consolidated within a module. Modularity comments, however, are not required.
+While there is no requirement to adhere to the modularisation procedures you may find in a traditional upstream-downstream relationship - due to the outdated nature of the code, as well as the lack of a direct upstream - the more modular your code is the more maintainable it tends to be. As a result, unnecessarily splintered code may be requested to be consolidated within a module. Modularity comments, however, are not required.
 
 # From hereon is the /tg/station contribution guide
 
