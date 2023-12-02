@@ -283,7 +283,7 @@
 	desc = " Worn by Vexillarius, this armor has been reinforced with circular metal plates on the chest and a back mounted pole for the flag of the Bull, making the wearer easy to see at a distance."
 	icon_state = "legion_vex"
 	item_state = "legion_vex"
-	armor = list("melee" = 60, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 30, "bio" = 30, "rad" = 30, "fire" = 30, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 60, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 30, "bio" = 30, "rad" = 30, "fire" = 30, "acid" = 0, "wound" = 25)
 	slowdown = 0.08
 
 /obj/item/clothing/suit/armor/f13/legion/venator			//UNUSED
