@@ -52,7 +52,6 @@
 	req_admin_notify = 1
 	exp_type = EXP_TYPE_KHAN
 	exp_requirements = 300
-	exp_type = EXP_TYPE_KHAN
 	outfit = /datum/outfit/job/khan/smith
 
 	loadout_options = list(

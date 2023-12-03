@@ -791,7 +791,7 @@
 	desc = "The symbol of the greatest pushers."
 	icon_state = "khan_jacket"
 	item_state = "khan_jacket"
-	armor = list("melee" = 30, "bullet" = 25, "laser" = 25,  "energy" = 10, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 10)
+	armor = list("melee" = 30, "bullet" = 25, "laser" = 25,  "energy" = 10, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 20)
 	slowdown = 0.05
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 
