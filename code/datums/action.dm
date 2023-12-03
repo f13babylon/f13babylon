@@ -65,7 +65,12 @@
 			if(bitfield & bitflag)
 				if(button == null)
 					button = new
-				button.id = bitflag
+					button.linked_action = src
+					button.name = name
+					button.actiontooltipstyle = buttontooltipstyle
+					if(desc)
+						button.desc = desc
+					button.id = bitflag
 				break
 			bitflag *= 2
 
