@@ -63,6 +63,8 @@
 		var/bitflag = 1
 		for(var/i in 1 to (counter + 1))
 			if(bitfield & bitflag)
+				if(button == null)
+					button = new
 				button.id = bitflag
 				break
 			bitflag *= 2
