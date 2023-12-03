@@ -40,7 +40,7 @@
 	icon_state = "NCR Sergeant"
 
 /obj/effect/landmark/start/f13/ncrheavytrooper
-	name = "NCR Heavy Gunner"
+	name = "NCR Heavy Trooper"
 	icon_state = "NCR Sergeant"
 
 /obj/effect/landmark/start/f13/ncrcorporal
