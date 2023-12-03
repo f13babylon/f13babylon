@@ -978,17 +978,12 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "hX" = (
-/obj/effect/turf_decal/loading_area{
-	dir = 1
-	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/camera/autoname{
-	dir = 8;
-	name = "Shutter Camera";
-	network = list("Enclave");
-	pixel_x = -1
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#c1caff"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
 "ib" = (
 /obj/effect/turf_decal/stripes/red/line{
@@ -3318,7 +3313,7 @@
 "zg" = (
 /obj/structure/closet/crate/radiation,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/light/small/broken{
+/obj/machinery/light/small{
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
@@ -5184,6 +5179,12 @@
 "OH" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/camera/autoname{
+	dir = 8;
+	name = "Shutter Camera";
+	network = list("Enclave");
+	pixel_x = -1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
 "OJ" = (
@@ -17498,7 +17499,7 @@ in
 OH
 BO
 oz
-hX
+IP
 Qm
 TI
 TI
@@ -17762,7 +17763,7 @@ AW
 iu
 zf
 AW
-zQ
+hX
 TI
 AW
 XO
