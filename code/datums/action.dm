@@ -70,7 +70,7 @@
 					button.actiontooltipstyle = buttontooltipstyle
 					if(desc)
 						button.desc = desc
-					button.id = bitflag
+				button.id = bitflag
 				break
 			bitflag *= 2
 
