@@ -1869,6 +1869,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/lootdrop/weapons/oldarmyelite,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/innerchp)
 "nV" = (
@@ -5878,10 +5879,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/enclave/prison)
-"RZ" = (
-/obj/effect/spawner/lootdrop/weapons/oldarmyelite,
-/turf/open/indestructible/ground/outside/snow_plating,
-/area/f13/mountain_area)
 "Sb" = (
 /obj/effect/landmark/start/f13/usscientist,
 /turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
@@ -15544,7 +15541,7 @@ tt
 va
 EG
 tt
-RZ
+tt
 tt
 tt
 Ev
