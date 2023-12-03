@@ -234,6 +234,11 @@ GLOBAL_LIST_INIT(ghost_accs_options, list(GHOST_ACCS_NONE, GHOST_ACCS_DIR, GHOST
 #define GHOST_OTHERS_DEFAULT_SPRITE_NAME 	"default sprites"
 #define GHOST_OTHERS_THEIR_SETTING_NAME 	"their setting"
 
+//Bobstation ghost port - Alpha of ghost apperances copying the original path
+#define GHOST_COPY_ALPHA 127
+//Bobstation ghost port - Maximum motion blur a ghost can accumulate in the X or Y axis
+#define GHOST_MAX_MOTION_BLUR 3
+
 #define GHOST_OTHERS_DEFAULT_OPTION			GHOST_OTHERS_THEIR_SETTING
 
 #define GHOST_MAX_VIEW_RANGE_DEFAULT 10
