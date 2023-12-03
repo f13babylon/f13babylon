@@ -214,14 +214,7 @@
 		stam_mobility_mult = LYING_DAMAGE_PENALTY
 	. *= stam_mobility_mult
 
-	var/bad_trait
-	if(!(I.item_flags & NO_COMBAT_MODE_FORCE_MODIFIER))
-		if(SEND_SIGNAL(user, COMSIG_COMBAT_MODE_CHECK, COMBAT_MODE_INACTIVE))
-			bad_trait = SKILL_COMBAT_MODE //blacklist combat skills.
-			if(SEND_SIGNAL(src, COMSIG_COMBAT_MODE_CHECK, COMBAT_MODE_ACTIVE))
-				. *= 0.8
-		else if(SEND_SIGNAL(src, COMSIG_COMBAT_MODE_CHECK, COMBAT_MODE_INACTIVE))
-			. *= 1.2
+	var/bad_trait // empty trait -- used to be used to initialize bonus damage while in combat mode, and negative damage while outside of it
 
 	if(!user.mind || !I.used_skills)
 		return
