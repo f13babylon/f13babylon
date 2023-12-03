@@ -4043,7 +4043,6 @@
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/mountain_area)
 "Gh" = (
-/obj/machinery/smoke_machine,
 /turf/open/floor/f13,
 /area/f13/enclave)
 "Gj" = (
