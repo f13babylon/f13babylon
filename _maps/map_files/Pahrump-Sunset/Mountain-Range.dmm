@@ -117,6 +117,13 @@
 /obj/structure/curtain,
 /turf/open/floor/f13,
 /area/f13/enclave)
+"bo" = (
+/obj/machinery/camera/autoname{
+	network = list("Enclave");
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/neutral,
+/area/f13/enclave)
 "bp" = (
 /obj/structure/sign/departments/chemistry,
 /turf/closed/wall/r_wall/f13/vault,
@@ -135,6 +142,10 @@
 /obj/item/reagent_containers/food/drinks/soda_cans/sodawater,
 /turf/open/floor/f13,
 /area/f13/enclave)
+"bx" = (
+/obj/structure/car/rubbish4,
+/turf/open/indestructible/ground/outside/snow_plating,
+/area/f13/mountain_area)
 "bz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/computer/pandemic,
@@ -270,6 +281,13 @@
 "cy" = (
 /turf/open/indestructible,
 /area/f13/tcoms)
+"cD" = (
+/obj/machinery/camera/autoname{
+	dir = 10;
+	network = list("Enclave")
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/enclave)
 "cE" = (
 /obj/item/storage/trash_stack,
 /turf/open/floor/f13/wood,
@@ -805,6 +823,13 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/enclave)
+"gY" = (
+/obj/machinery/camera/autoname{
+	dir = 8;
+	network = list("Enclave")
+	},
+/turf/open/floor/f13,
+/area/f13/enclave)
 "hb" = (
 /obj/structure/rack/shelf_metal,
 /obj/structure/window/reinforced{
@@ -825,6 +850,13 @@
 	},
 /turf/open/indestructible/ground/outside/snow_plating,
 /area/f13/mountain_area)
+"hp" = (
+/obj/machinery/camera/autoname{
+	dir = 5;
+	network = list("Enclave")
+	},
+/turf/open/floor/plasteel/f13/vault_floor/neutral,
+/area/f13/enclave)
 "hq" = (
 /obj/machinery/light,
 /turf/open/floor/f13,
@@ -908,6 +940,10 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/machinery/camera/autoname{
+	dir = 5;
+	network = list("Enclave")
+	},
 /turf/open/floor/f13,
 /area/f13/enclave)
 "hP" = (
@@ -941,6 +977,19 @@
 /obj/structure/fans/tiny/invisible,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"hX" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/camera/autoname{
+	dir = 8;
+	name = "Shutter Camera";
+	network = list("Enclave");
+	pixel_x = -1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/enclave)
 "ib" = (
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 10
@@ -1136,6 +1185,10 @@
 /area/f13/mountain_area)
 "js" = (
 /obj/machinery/light,
+/obj/machinery/camera/autoname{
+	dir = 5;
+	network = list("Enclave")
+	},
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/enclave)
 "jt" = (
@@ -1314,6 +1367,9 @@
 	req_access_txt = "134"
 	},
 /obj/effect/turf_decal/bot,
+/obj/machinery/camera/autoname{
+	network = list("Enclave")
+	},
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/enclave)
 "kF" = (
@@ -1340,6 +1396,10 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/wood_worn,
 /area/f13/building)
+"kU" = (
+/obj/structure/car/rubbish3,
+/turf/open/indestructible/ground/outside/snow_plating,
+/area/f13/mountain_area)
 "kX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/line{
@@ -1544,11 +1604,16 @@
 /area/f13/tunnel)
 "mO" = (
 /obj/structure/table/glass,
+/obj/machinery/computer/security/enclave,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/enclave)
 "mR" = (
 /obj/structure/decoration/shock{
 	pixel_x = 32
+	},
+/obj/machinery/camera/autoname{
+	dir = 8;
+	network = list("Enclave")
 	},
 /turf/open/floor/f13,
 /area/f13/enclave)
@@ -1608,6 +1673,16 @@
 "nm" = (
 /obj/structure/sign/departments/science,
 /turf/closed/wall/r_wall/f13/vault,
+/area/f13/enclave)
+"no" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/camera/autoname{
+	dir = 8;
+	name = "Exterior Camera";
+	network = list("Enclave");
+	pixel_x = -1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
 "np" = (
 /obj/machinery/gear_painter,
@@ -1943,7 +2018,11 @@
 /area/f13/enclave)
 "pV" = (
 /obj/structure/table/reinforced,
-/obj/item/stamp/enclave,
+/obj/machinery/computer/terminal{
+	termtag = "Private";
+	dir = 1;
+	pixel_y = 5
+	},
 /turf/open/floor/f13,
 /area/f13/enclave)
 "pW" = (
@@ -2590,6 +2669,12 @@
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/enclave)
+"uv" = (
+/obj/machinery/camera/autoname{
+	network = list("Enclave")
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
+/area/f13/enclave)
 "uA" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/trash/f13/k_ration,
@@ -2704,6 +2789,13 @@
 	icon_state = "horizontalinnermain0"
 	},
 /area/f13/tunnel)
+"vt" = (
+/obj/machinery/camera/autoname{
+	dir = 8;
+	network = list("Enclave")
+	},
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/enclave)
 "vv" = (
 /obj/effect/turf_decal/weather/snow/corner,
 /obj/structure/junk/locker,
@@ -2743,6 +2835,13 @@
 	pixel_x = -32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
+/area/f13/enclave)
+"vJ" = (
+/obj/machinery/camera/autoname{
+	network = list("Enclave");
+	dir = 1
+	},
+/turf/open/floor/f13,
 /area/f13/enclave)
 "vK" = (
 /obj/effect/turf_decal/stripes/line{
@@ -2948,6 +3047,16 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
+/area/f13/enclave)
+"xf" = (
+/obj/structure/table/reinforced,
+/obj/item/paper_bin,
+/obj/item/pen,
+/obj/item/stamp/enclave{
+	pixel_y = 5;
+	pixel_x = 5
+	},
+/turf/open/floor/f13,
 /area/f13/enclave)
 "xh" = (
 /turf/open/water,
@@ -3155,6 +3264,13 @@
 /obj/item/seeds/wheat,
 /turf/open/floor/wood/wood_fancy,
 /area/f13/building)
+"yO" = (
+/obj/machinery/camera/autoname{
+	dir = 8;
+	network = list("Enclave")
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
+/area/f13/enclave)
 "yT" = (
 /obj/effect/overlay/junk/oldpipes{
 	dir = 9
@@ -3402,6 +3518,13 @@
 	light_color = "#c1caff"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
+/area/f13/enclave)
+"AF" = (
+/obj/machinery/camera/autoname{
+	dir = 5;
+	network = list("Enclave")
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
 /area/f13/enclave)
 "AH" = (
 /obj/structure/cable{
@@ -3828,6 +3951,10 @@
 	light_color = "#c1caff"
 	},
 /obj/machinery/icecream_vat,
+/obj/machinery/camera/autoname{
+	dir = 8;
+	network = list("Enclave")
+	},
 /turf/open/floor/plasteel/hydrofloor,
 /area/f13/enclave)
 "Ei" = (
@@ -3962,8 +4089,15 @@
 "Fj" = (
 /obj/structure/table/glass,
 /obj/item/melee/classic_baton/telescopic,
+/obj/machinery/computer/security/enclave{
+	dir = 8
+	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/enclave)
+"Fo" = (
+/obj/structure/car/rubbish3,
+/turf/open/indestructible/ground/outside/snow,
+/area/f13/mountain_area)
 "Fz" = (
 /obj/machinery/iv_drip,
 /turf/open/floor/plasteel/f13/vault_floor/neutral,
@@ -4035,6 +4169,15 @@
 /obj/structure/loot_pile,
 /turf/open/floor/f13,
 /area/f13/enclave)
+"Gf" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/camera/autoname{
+	network = list("Enclave");
+	dir = 1;
+	pixel_x = -4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
+/area/f13/enclave)
 "Gg" = (
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 5
@@ -4068,6 +4211,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
+"Gq" = (
+/obj/structure/car/rubbish4,
+/turf/open/indestructible/ground/outside/snow,
+/area/f13/mountain_area)
 "Gr" = (
 /obj/machinery/door/airlock/hatch{
 	req_access = null;
@@ -4128,9 +4275,9 @@
 /area/f13/enclave)
 "Hb" = (
 /obj/structure/table/reinforced,
-/obj/machinery/computer/terminal{
+/obj/machinery/computer/security/enclave{
 	dir = 4;
-	termtag = "Business"
+	pixel_y = 5
 	},
 /turf/open/floor/f13,
 /area/f13/enclave)
@@ -4582,6 +4729,10 @@
 	destination_z = 4
 	},
 /area/f13/tunnel)
+"KH" = (
+/obj/structure/car/rubbish2,
+/turf/open/indestructible/ground/outside/snow,
+/area/f13/mountain_area)
 "KQ" = (
 /obj/effect/decal/remains/human{
 	desc = "Those are definitely the remains of a person, the skull seems to have a small hole in the left temple, and the right side of it is flat out blown out.  You can guess how that happened.";
@@ -4789,6 +4940,17 @@
 "MJ" = (
 /obj/structure/reagent_dispensers/watertank/high,
 /turf/open/floor/plasteel/f13/vault_floor/green,
+/area/f13/enclave)
+"MP" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/camera/autoname{
+	dir = 5;
+	network = list("Enclave")
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
 "MS" = (
 /obj/structure/cable{
@@ -5351,6 +5513,12 @@
 	},
 /turf/open/floor/f13,
 /area/f13/enclave)
+"RH" = (
+/obj/machinery/camera/autoname{
+	network = list("Enclave")
+	},
+/turf/open/floor/f13,
+/area/f13/enclave)
 "RI" = (
 /obj/effect/spawner/structure/window/plastitanium,
 /obj/structure/cable{
@@ -5442,6 +5610,12 @@
 /obj/item/storage/trash_stack,
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/mountain_area)
+"Su" = (
+/obj/machinery/camera/autoname{
+	network = list("Enclave")
+	},
+/turf/open/floor/plasteel/f13/vault_floor/green,
+/area/f13/enclave)
 "Sw" = (
 /obj/structure/chair/office/dark{
 	dir = 1
@@ -5665,6 +5839,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/outside/snow_plating,
 /area/f13/mountain_area)
+"Ud" = (
+/obj/machinery/camera/autoname{
+	dir = 5;
+	network = list("Enclave")
+	},
+/turf/open/floor/f13,
+/area/f13/enclave)
 "Ue" = (
 /obj/structure/rack,
 /obj/item/circuitboard/computer/prisoner,
@@ -5756,6 +5937,10 @@
 /area/f13/mountain_area)
 "Vd" = (
 /obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/camera/autoname{
+	network = list("Enclave");
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
@@ -5881,6 +6066,10 @@
 	icon_state = "reddirtyfull"
 	},
 /area/f13/enclave)
+"Wa" = (
+/obj/structure/car/rubbish1,
+/turf/open/indestructible/ground/outside/snow,
+/area/f13/mountain_area)
 "Wc" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 1
@@ -11647,7 +11836,7 @@ ez
 hr
 hr
 ez
-ez
+Gq
 hr
 hr
 ez
@@ -11902,7 +12091,7 @@ Vr
 ez
 ez
 hr
-ez
+Fo
 ez
 ez
 ez
@@ -13166,7 +13355,7 @@ ez
 ez
 Zt
 ez
-ez
+KH
 ez
 ez
 ez
@@ -13679,7 +13868,7 @@ ez
 ez
 ez
 ez
-ez
+KH
 ez
 ez
 ez
@@ -14459,7 +14648,7 @@ tt
 tt
 tt
 tt
-tt
+qy
 tt
 tt
 tt
@@ -14968,7 +15157,7 @@ ez
 ez
 ez
 qd
-tt
+qy
 tt
 tt
 va
@@ -16311,7 +16500,7 @@ Sx
 Sx
 Jx
 mA
-Ny
+Su
 Ny
 Ny
 Ny
@@ -16774,7 +16963,7 @@ tt
 tt
 tt
 tt
-tt
+bx
 tt
 dI
 bC
@@ -17028,14 +17217,14 @@ tt
 tt
 va
 tt
-tt
+qy
 tt
 tt
 tt
 tt
 dI
 tt
-tt
+kU
 tt
 tt
 tt
@@ -17073,7 +17262,7 @@ Ih
 qA
 Jx
 wm
-Jx
+Ud
 Jx
 Aa
 Jx
@@ -17301,7 +17490,7 @@ tt
 zO
 zO
 Ct
-eE
+no
 Ak
 Tf
 RU
@@ -17309,7 +17498,7 @@ in
 OH
 BO
 oz
-IP
+hX
 Qm
 TI
 TI
@@ -17317,7 +17506,7 @@ TI
 gs
 mJ
 TI
-TI
+Gf
 AW
 iy
 nP
@@ -19130,7 +19319,7 @@ oO
 fq
 BO
 BO
-BO
+cD
 AW
 wZ
 FC
@@ -19337,7 +19526,7 @@ ez
 ez
 ez
 ez
-ez
+Gq
 ez
 ez
 ez
@@ -19592,7 +19781,7 @@ ez
 ez
 ez
 ez
-ez
+KH
 ez
 ez
 ez
@@ -19678,7 +19867,7 @@ AO
 FS
 FS
 FS
-FS
+MP
 FS
 FS
 FS
@@ -20181,7 +20370,7 @@ WR
 vE
 kl
 oY
-SP
+yO
 SP
 In
 SP
@@ -20663,7 +20852,7 @@ ba
 Jx
 qN
 Kd
-Jx
+Ud
 CJ
 Eq
 Rk
@@ -21726,7 +21915,7 @@ Jx
 og
 Jx
 SX
-Jx
+Hb
 Jx
 dC
 wf
@@ -21947,7 +22136,7 @@ AW
 AW
 AW
 AW
-Jx
+RH
 Jx
 Dp
 Fc
@@ -22222,7 +22411,7 @@ nk
 iI
 iI
 fB
-iI
+AF
 iI
 iI
 iI
@@ -23237,7 +23426,7 @@ uY
 qr
 cs
 RG
-Jx
+Ud
 Jx
 Jx
 Jx
@@ -24212,8 +24401,8 @@ ez
 ez
 ez
 ez
-ez
-ez
+Wa
+Wa
 ez
 ez
 Vr
@@ -24779,7 +24968,7 @@ zK
 AW
 Jx
 RG
-Jx
+vJ
 AW
 RE
 Jx
@@ -24821,7 +25010,7 @@ SP
 Lg
 iL
 Pd
-Zo
+vt
 IG
 AW
 iT
@@ -25296,7 +25485,7 @@ Nu
 vc
 AW
 Um
-Jx
+gY
 Oq
 WL
 AW
@@ -25306,7 +25495,7 @@ lT
 lT
 lT
 lT
-lT
+bo
 Qp
 tP
 lT
@@ -25328,7 +25517,7 @@ Jx
 Jx
 tY
 AW
-SP
+uv
 SP
 SP
 SP
@@ -26063,7 +26252,7 @@ AW
 rm
 lT
 lT
-lT
+hp
 lT
 lT
 lT
@@ -26082,7 +26271,7 @@ AW
 AW
 Hb
 Jb
-yo
+xf
 At
 AW
 Jx
@@ -29881,7 +30070,7 @@ ez
 ez
 ez
 ez
-ez
+Gq
 ez
 ez
 ez
@@ -30398,7 +30587,7 @@ ez
 ez
 ez
 ez
-ez
+Wa
 ez
 ez
 ez
@@ -31424,9 +31613,9 @@ ez
 ez
 ez
 ez
+Fo
 ez
-ez
-ez
+KH
 ez
 ez
 ez
@@ -31683,7 +31872,7 @@ ez
 ez
 ez
 ez
-ez
+KH
 ez
 ez
 ez
@@ -64807,10 +64996,6 @@ NV
 ez
 Zb
 Ry
-AX
-Ry
-Ry
-AX
 Ry
 Ry
 Ry
@@ -64821,10 +65006,14 @@ Ry
 Ry
 Ry
 Ry
-iv
 Ry
-AX
-AX
+Ry
+Ry
+Ry
+Ry
+Ry
+Ry
+Ry
 vf
 ez
 ez
@@ -65077,7 +65266,7 @@ Ry
 Ry
 Ry
 Ry
-SZ
+Ry
 Ry
 iv
 Ry
@@ -65590,12 +65779,12 @@ SZ
 Ry
 KQ
 Ry
-NM
 Ry
 Ry
 Ry
-NM
-NM
+Ry
+Ry
+Ry
 vf
 ez
 ez
@@ -65837,12 +66026,12 @@ Zb
 Ry
 Ry
 Ry
-iv
 Ry
 Ry
 Ry
 Ry
-AX
+Ry
+Ry
 Ry
 Ry
 QX
@@ -66356,7 +66545,7 @@ Ry
 Ry
 Ry
 Ry
-AX
+Ry
 Ry
 Ry
 Ry
@@ -66609,7 +66798,7 @@ Ry
 iv
 Ry
 Ry
-AX
+Ry
 Ry
 Ry
 Ry
@@ -66865,7 +67054,6 @@ Zb
 Ry
 Ry
 Ry
-iv
 Ry
 Ry
 Ry
@@ -66878,9 +67066,10 @@ Ry
 Ry
 Ry
 Ry
-SZ
 Ry
-SZ
+Ry
+Ry
+Ry
 vf
 ez
 ez

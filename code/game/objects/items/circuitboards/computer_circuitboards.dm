@@ -454,3 +454,7 @@
 /obj/item/circuitboard/computer/bos
 	name = "Brotherhood Monitor (Computer Board)"
 	build_path = /obj/machinery/computer/security/bos
+
+/obj/item/circuitboard/computer/enclave
+	name = "Enclave Monitor (Computer Board)"
+	build_path = /obj/machinery/computer/security/enclave
