@@ -18,7 +18,6 @@
 	backpack =	/obj/item/storage/backpack/satchel/explorer
 	satchel = 	/obj/item/storage/backpack/satchel/old
 	uniform = /obj/item/clothing/under/f13/khan
-	r_hand = /obj/item/book/granter/trait/selection
 	r_pocket = /obj/item/flashlight/flare
 	l_pocket = /obj/item/storage/survivalkit_khan
 	gloves = /obj/item/melee/unarmed/brass/spiked
@@ -32,21 +31,21 @@
 	if(visualsOnly)
 		return
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/set_vrboard/den)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/trail_carbine)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/grease_gun)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/microuzi)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/varmintrifle)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingshotgun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gate_khanate)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/scrapsabre_khan)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/khanglove)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/khanwarboot)
 
 /datum/job/khan/smith
-	title = "Khan Smith"
+	title = "Khan Armorer"
 	flag = F13KHANSMITH
 	faction = FACTION_KHAN
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the smith, a mixture of an Electrician and Engineer through trial-and-error. Maintain the camp and assist the Senior Enforcer when possible."
+	description = "You are the armorer, a mixture of an Electrician and Engineer through trial-and-error. Maintain the camp and assist the Senior Enforcer when possible."
 	enforces = "You have control over the forge, a valuable asset in maintaining your presence in the area."
 	supervisors = "the Senior Enforcer"
 	selection_color = "#ff915e"
@@ -79,6 +78,7 @@
 		/datum/outfit/loadout/seniorc,
 		)
 
+// Enforcers - the mainline combat role of the Khans.
 /datum/job/khan/enforcer
 	title = "Khan Enforcer"
 	flag = F13KHAN
@@ -98,6 +98,7 @@
 		/datum/outfit/loadout/soldierc,
 		)
 
+// Chemists - the medical and/or explosive constructor of the faction. Still a combatant, akin toa  combat medic, but with a focus on drug production as well.
 /datum/job/khan/chemist
 	title = "Khan Chemist"
 	flag = F13KHANCHEMIST
@@ -131,7 +132,6 @@
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE
-	gunsmith_four = TRUE
 
 /datum/outfit/job/khan/senior_enforcer
 	name = "Senior Enforcer"
@@ -141,7 +141,7 @@
 	belt = /obj/item/storage/belt/bandolier
 	backpack_contents = list(
 		/obj/item/storage/box/medicine/stimpaks/stimpaks5 = 1,
-		/obj/item/stack/f13Cash/caps/onezerozerozero = 1,//1k Caps.
+		/obj/item/stack/f13Cash/caps/fivezerozero = 1,//500 Caps.
 		/obj/item/pda,
 		/obj/item/card/id/selfassign
 		)
@@ -152,13 +152,14 @@
 /datum/outfit/loadout/soldier
 	name = "Heavy Enforcer"
 	belt = /obj/item/storage/backpack/spearquiver
-	r_hand = /obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever
+	r_hand = /obj/item/gun/ballistic/shotgun/automatic/combat/auto5
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/armored
 	head = /obj/item/clothing/head/helmet/f13/khan
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
 		/obj/item/melee/onehanded/knife/bayonet = 1,
-		/obj/item/book/granter/trait/bigleagues = 1)
+		/obj/item/book/granter/trait/bigleagues = 1,
+		/obj/item/book/granter/trait/selection = 1)
 
 /datum/outfit/loadout/soldierb
 	name = "Grunt Enforcer"
@@ -169,7 +170,8 @@
 	head = /obj/item/clothing/head/helmet/f13/khan/bandana
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/greasegun = 2,
-		/obj/item/book/granter/trait/trekking = 1)
+		/obj/item/book/granter/trait/trekking = 1,
+		/obj/item/book/granter/trait/selection = 1)
 
 /datum/outfit/loadout/soldierc
 	name = "Scout Enforcer"
@@ -179,7 +181,8 @@
 	backpack_contents = list(
 		/obj/item/ammo_box/m44box = 2,
 		/obj/item/attachments/scope = 1,
-		/obj/item/book/granter/trait/trekking = 1)
+		/obj/item/book/granter/trait/trekking = 1,
+		/obj/item/book/granter/trait/selection = 1)
 
 
 //CHEMIST =================================================================
@@ -188,12 +191,12 @@
 	name = "Chemist"
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
 	head = /obj/item/clothing/head/helmet/f13/khan/bandana
-	belt = /obj/item/storage/belt/bandolier
+	belt = /obj/item/storage/belt/medical/primitive
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
 		/obj/item/ammo_box/magazine/m9mmds = 2,
 		/obj/item/book/granter/trait/chemistry = 1,
-		/obj/item/book/granter/trait/lowsurgery =1,
+		/obj/item/book/granter/trait/midsurgery = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3)
 
 /datum/outfit/loadout/quack
@@ -204,7 +207,7 @@
 	belt = /obj/item/storage/belt/bandolier
 	backpack_contents = list(
 		/obj/item/book/granter/trait/chemistry = 1,
-		/obj/item/book/granter/trait/explosives =1,
+		/obj/item/book/granter/trait/explosives_advanced = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3)
 
 //SENIOR =================================================================
@@ -246,7 +249,7 @@
 //SMITH =================================================================
 
 /datum/outfit/loadout/smith
-	name = "Khan Smith"
+	name = "Khan Armorer"
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
 	head = /obj/item/clothing/head/helmet/f13/khan/bandana
 	glasses = /obj/item/clothing/glasses/welding
@@ -262,9 +265,10 @@
 		/obj/item/stack/sheet/leather/twenty = 1,
 		/obj/item/stack/sheet/cloth/thirty = 1,
 		/obj/item/stack/sheet/prewar/twenty = 1,
-		/obj/item/book/granter/trait/explosives = 1,
+		/obj/item/book/granter/trait/selection = 1,
 		)
 
+// Smith should, ideally, be a mimick of Legion's forgemaster minus the explosives, since Chemists do that. In return they get extra gun blueprints than Legion in trade.
 /datum/outfit/job/khan/smith/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
@@ -273,9 +277,15 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gladius)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/spatha)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/lance)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg10mm)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingshotgun)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/concussion)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/empgrenade)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/xbow)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/cheaparrow)
+
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg10mm)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/grease_gun)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/auto5)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/trail_carbine)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/remingtonhuntingrifle)
+
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/receiver)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/assembly)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/alloys)
