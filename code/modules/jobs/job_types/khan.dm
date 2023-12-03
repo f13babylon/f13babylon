@@ -156,7 +156,7 @@
 	head = /obj/item/clothing/head/helmet/f13/khan
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
-		/obj/item/melee/onehanded/knife/bayonet = 1,
+		/obj/item/twohanded/baseball/spiked = 1,
 		/obj/item/book/granter/trait/bigleagues = 1,
 		/obj/item/book/granter/trait/selection = 1)
 
@@ -215,7 +215,9 @@
 	name = "Teachings of Regis"
 	suit_store = /obj/item/twohanded/sledgehammer/rockethammer
 	backpack_contents = list(
-		/obj/item/grenade/smokebomb = 2,
+		/obj/item/gun/ballistic/automatic/pistol/deagle = 1,
+		/obj/item/ammo_box/magazine/m44 = 2,
+		/obj/item/grenade/smokebomb = 1,
 		)
 
 /datum/outfit/loadout/seniorb
