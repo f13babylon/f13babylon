@@ -60,6 +60,9 @@
 	max_ammo = 50
 	w_class = WEIGHT_CLASS_NORMAL
 
+/obj/item/ammo_box/magazine/rpd/empty
+	start_empty = 1
+
 /obj/item/ammo_box/magazine/cz53
 	name = "ammo box (5mm)"
 	icon_state = "cz53"
