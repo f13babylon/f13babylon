@@ -214,12 +214,10 @@
 		stam_mobility_mult = LYING_DAMAGE_PENALTY
 	. *= stam_mobility_mult
 
-	var/bad_trait // empty trait -- used to be used to initialize bonus damage while in combat mode, and negative damage while outside of it
-
 	if(!user.mind || !I.used_skills)
 		return
 	if(.)
-		. = user.mind.item_action_skills_mod(I, ., I.skill_difficulty, SKILL_ATTACK_MOB, bad_trait)
+		. = user.mind.item_action_skills_mod(I, ., I.skill_difficulty, SKILL_ATTACK_MOB)
 	for(var/skill in I.used_skills)
 		if(!(SKILL_TRAIN_ATTACK_MOB in I.used_skills[skill]))
 			continue
