@@ -4037,11 +4037,6 @@
 /obj/structure/junk/small/table,
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/mountain_area)
-"Gh" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/twohanded/required/kirbyplants/random,
-/turf/open/floor/f13,
-/area/f13/enclave)
 "Gj" = (
 /obj/effect/spawner/structure/window/plastitanium,
 /obj/structure/cable{
@@ -24805,7 +24800,7 @@ AW
 AW
 AW
 AW
-Gh
+KX
 Jx
 Jx
 Jx
