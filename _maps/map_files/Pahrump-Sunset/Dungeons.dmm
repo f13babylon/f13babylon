@@ -101,6 +101,12 @@
 /obj/machinery/chem_dispenser/drinks,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/bunker)
+"adl" = (
+/mob/living/simple_animal/hostile/renegade/guardian{
+	extra_projectiles = 2
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "aey" = (
 /obj/structure/table,
 /obj/item/stock_parts/cell/high,
@@ -3757,7 +3763,8 @@
 	melee_damage_lower = 10;
 	melee_damage_upper = 20;
 	rapid_melee = 2;
-	health = 200
+	health = 200;
+	maxHealth = 200
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
@@ -5664,7 +5671,8 @@
 	melee_damage_lower = 10;
 	melee_damage_upper = 20;
 	rapid_melee = 2;
-	health = 200
+	health = 200;
+	maxHealth = 200
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -6291,6 +6299,16 @@
 "hyL" = (
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/bunker)
+"hAm" = (
+/obj/machinery/hydroponics/soil/crafted,
+/mob/living/simple_animal/hostile/renegade/drifter{
+	vision_range = 15;
+	minimum_distance = 8;
+	health = 300;
+	check_friendly_fire = 0
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "hAx" = (
 /obj/structure/chair,
 /turf/open/floor/plasteel/barber{
@@ -6338,11 +6356,8 @@
 	},
 /area/f13/ahs)
 "hBD" = (
-/obj/structure/barricade/wooden/planks/pregame,
-/obj/machinery/door/airlock/medical{
-	name = "Clinic";
-	req_one_access_txt = "25"
-	},
+/obj/item/shard,
+/obj/item/stack/sheet/metal/five,
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
 	},
@@ -6378,6 +6393,12 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/ahs)
+"hEL" = (
+/obj/structure/barricade/wooden,
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
+	},
+/area/f13/city)
 "hFd" = (
 /mob/living/simple_animal/hostile/handy/gutsy,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
@@ -6743,7 +6764,9 @@
 /area/f13/city)
 "iaG" = (
 /obj/structure/chair/bench,
-/mob/living/simple_animal/hostile/renegade/doc,
+/mob/living/simple_animal/hostile/renegade/doc{
+	extra_projectiles = 2
+	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "iba" = (
@@ -8054,7 +8077,8 @@
 	melee_damage_lower = 10;
 	melee_damage_upper = 20;
 	rapid_melee = 2;
-	health = 200
+	health = 200;
+	maxHealth = 200
 	},
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
@@ -8493,7 +8517,9 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "kdT" = (
-/mob/living/simple_animal/hostile/renegade/doc,
+/mob/living/simple_animal/hostile/renegade/doc{
+	extra_projectiles = 2
+	},
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
 	},
@@ -10066,7 +10092,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "lQs" = (
-/mob/living/simple_animal/hostile/renegade/doc,
+/mob/living/simple_animal/hostile/renegade/doc{
+	extra_projectiles = 2
+	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "lQY" = (
@@ -17008,7 +17036,9 @@
 	name = "The Boss";
 	obj_damage = 500;
 	retreat_distance = 0;
-	melee_damage_upper = 40
+	melee_damage_upper = 40;
+	maxHealth = 1000;
+	health = 1000
 	},
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
@@ -17816,6 +17846,13 @@
 /obj/machinery/recharge_station,
 /turf/open/floor/plasteel/dark,
 /area/f13/vault)
+"uJD" = (
+/obj/structure/table_frame,
+/obj/structure/barricade/bars,
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
+	},
+/area/f13/city)
 "uJZ" = (
 /obj/structure/closet/crate/medical,
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super,
@@ -19840,7 +19877,8 @@
 	melee_damage_lower = 10;
 	melee_damage_upper = 20;
 	rapid_melee = 2;
-	health = 200
+	health = 200;
+	maxHealth = 200
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
@@ -28112,7 +28150,7 @@ aTA
 tGX
 tGX
 wUU
-wUU
+hAm
 wUU
 wUU
 wUU
@@ -31971,7 +32009,7 @@ hou
 rOp
 sfc
 uBL
-sfc
+wYa
 mQN
 kiI
 sfc
@@ -32228,7 +32266,7 @@ uLm
 uLm
 uLm
 uLm
-wYa
+sfc
 wEe
 kiI
 wYa
@@ -37901,7 +37939,7 @@ pYx
 pYx
 dFB
 pYx
-pYx
+gYY
 mVL
 dFB
 tGX
@@ -38158,7 +38196,7 @@ pYx
 pYx
 jBt
 pYx
-pYx
+hEL
 pYx
 pYx
 tGX
@@ -38417,7 +38455,7 @@ cfX
 pYx
 puk
 hBD
-puk
+uJD
 tGX
 tGX
 aTA
@@ -38906,7 +38944,7 @@ aTA
 tGX
 tGX
 bVH
-bVH
+adl
 xpR
 bVH
 bVH
