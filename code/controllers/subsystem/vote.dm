@@ -710,15 +710,17 @@ SUBSYSTEM_DEF(vote)
 				CONFIG_SET(flag/allow_vote_mode, !CONFIG_GET(flag/allow_vote_mode))
 		if("restart")
 			var/min_restart_time = CONFIG_GET(number/min_end_vote_time)
+			var/real_round_time = world.timeofday - SSticker.real_round_start_time
 			if(CONFIG_GET(flag/allow_vote_restart) || usr.client.holder)
-				if(min_restart_time < world.time)
+				if(min_restart_time < real_round_time)
 					initiate_vote("restart",usr.key)
 				else
 					to_chat(usr.client, "<span style='boldannounce'>Restart can only initiate after [DisplayTimeText(min_restart_time)].</span>")
 		if("transfer")
 			var/min_transfer_time = CONFIG_GET(number/min_end_vote_time)
+			var/real_round_time = world.timeofday - SSticker.real_round_start_time
 			if(CONFIG_GET(flag/allow_vote_transfer) || usr.client.holder)
-				if(min_transfer_time < world.time)
+				if(min_transfer_time < real_round_time)
 					initiate_vote("transfer",usr.key)
 				else
 					to_chat(usr.client, "<span style='boldannounce'>Transfer can only initiate after [DisplayTimeText(min_transfer_time)].</span>")

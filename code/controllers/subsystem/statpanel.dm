@@ -8,6 +8,7 @@ SUBSYSTEM_DEF(statpanels)
 	var/encoded_global_data
 	var/mc_data_encoded
 	var/list/cached_images = list()
+	var/real_round_time = world.timeofday - SSticker.real_round_start_time
 
 /datum/controller/subsystem/statpanels/fire(resumed = FALSE)
 	if (!resumed)
@@ -18,6 +19,7 @@ SUBSYSTEM_DEF(statpanels)
 			"Round ID: [GLOB.round_id ? GLOB.round_id : "NULL"]",
 			"Server Time: [time2text(world.timeofday, "YYYY-MM-DD hh:mm:ss")]",
 			"Round Time: [ROUND_TIME]",
+			"Actual Round Time: [time2text(real_round_time, "hh:mm:ss", 0)]",
 			"Station Time: [STATION_TIME_TIMESTAMP(FALSE, world.time)]",
 			"Time Dilation: [round(SStime_track.time_dilation_current,1)]% AVG:([round(SStime_track.time_dilation_avg_fast,1)]%, [round(SStime_track.time_dilation_avg,1)]%, [round(SStime_track.time_dilation_avg_slow,1)]%)"
 		)
