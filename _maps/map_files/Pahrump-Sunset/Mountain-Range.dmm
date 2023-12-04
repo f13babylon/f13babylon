@@ -2336,11 +2336,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/neutral,
 /area/f13/enclave)
 "sH" = (
-/obj/structure/ladder/unbreakable{
-	height = 2;
-	id = "ENCLAVENML"
-	},
-/obj/effect/turf_decal/stripes/box,
+/obj/machinery/vending/games,
 /turf/open/floor/f13,
 /area/f13/enclave)
 "sK" = (
@@ -2537,8 +2533,6 @@
 /area/f13/enclave)
 "tY" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/bot,
-/obj/structure/closet/secure_closet/personal,
 /turf/open/floor/f13,
 /area/f13/enclave)
 "ua" = (
@@ -2652,11 +2646,6 @@
 	icon_type_smooth = "vaultrwall";
 	name = "vault reinforced wall"
 	},
-/area/f13/enclave)
-"uR" = (
-/obj/effect/turf_decal/bot,
-/obj/structure/closet/secure_closet/personal,
-/turf/open/floor/f13,
 /area/f13/enclave)
 "uT" = (
 /obj/machinery/light/floor,
@@ -4049,9 +4038,8 @@
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/mountain_area)
 "Gh" = (
-/obj/machinery/light,
-/obj/effect/turf_decal/bot,
-/obj/structure/closet/secure_closet/personal,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/f13,
 /area/f13/enclave)
 "Gj" = (
@@ -4461,7 +4449,6 @@
 /obj/structure/decoration/cctv{
 	pixel_y = 32
 	},
-/obj/machinery/vending/games,
 /turf/open/floor/f13,
 /area/f13/enclave)
 "Jq" = (
@@ -5366,12 +5353,6 @@
 	icon_state = "0-4"
 	},
 /turf/open/floor/plating,
-/area/f13/enclave)
-"RN" = (
-/obj/structure/decoration/warning{
-	name = "WARNING: NO MANS LAND AHEAD PVP ZONE"
-	},
-/turf/closed/wall/r_wall/f13/vault,
 /area/f13/enclave)
 "RO" = (
 /obj/effect/landmark/start/f13/usgysgt,
@@ -23285,7 +23266,7 @@ AW
 PC
 Jx
 At
-KX
+Jx
 AW
 SP
 SP
@@ -24567,7 +24548,7 @@ hG
 sO
 Jx
 AW
-zW
+Jx
 Jx
 Jx
 Ks
@@ -24824,10 +24805,10 @@ AW
 AW
 AW
 AW
-pv
-RN
-ml
-RN
+Gh
+Jx
+Jx
+Jx
 AW
 SP
 SP
@@ -25081,10 +25062,10 @@ Vy
 Jx
 Jb
 AW
+zW
 Jx
 Jx
-Jx
-Gh
+hq
 AW
 HT
 SP
@@ -25598,7 +25579,7 @@ og
 Jx
 wa
 Jx
-uR
+Jx
 AW
 SP
 kn
