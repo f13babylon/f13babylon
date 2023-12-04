@@ -310,7 +310,7 @@
 	},
 /area/f13/tunnel)
 "dg" = (
-/obj/effect/landmark/start/f13/enclave_synthetic,
+/obj/effect/landmark/start/f13/encborg,
 /turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
 /area/f13/enclave)
 "dh" = (
@@ -4043,7 +4043,6 @@
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/mountain_area)
 "Gh" = (
-/obj/machinery/smoke_machine,
 /turf/open/floor/f13,
 /area/f13/enclave)
 "Gj" = (

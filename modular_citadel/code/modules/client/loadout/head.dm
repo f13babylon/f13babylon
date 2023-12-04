@@ -294,6 +294,7 @@
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
+							"NCR Conscript",
 							"NCR Rear Echelon",
 							"NCR Off-Duty"
 						)
@@ -315,6 +316,7 @@
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
+							"NCR Conscript",
 						)
 
 /datum/gear/head/steelpot_gambler
@@ -334,6 +336,7 @@
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
+							"NCR Conscript",
 						)
 
 /datum/gear/head/steelpot_bandolier
@@ -353,6 +356,7 @@
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
+							"NCR Conscript",
 						)
 
 
@@ -374,6 +378,7 @@
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
+							"NCR Conscript",
 							"NCR Rear Echelon",
 							"NCR Off-Duty"
 						)
@@ -395,6 +400,7 @@
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
+							"NCR Conscript",
 							"NCR Rear Echelon",
 							"NCR Off-Duty"
 						)
