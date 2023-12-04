@@ -2647,6 +2647,11 @@
 	name = "vault reinforced wall"
 	},
 /area/f13/enclave)
+"uR" = (
+/obj/item/twohanded/required/kirbyplants/random,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13,
+/area/f13/enclave)
 "uT" = (
 /obj/machinery/light/floor,
 /turf/open/floor/f13,
@@ -24800,7 +24805,7 @@ AW
 AW
 AW
 AW
-KX
+uR
 Jx
 Jx
 Jx
