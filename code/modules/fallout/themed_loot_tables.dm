@@ -316,7 +316,6 @@
 		/obj/item/gun/ballistic/revolver/m29/peacekeeper = 10,
 		/obj/item/encminigunpack = 10,
 		/obj/item/gun/ballistic/automatic/smg/p90 = 10,
-		/obj/item/gun/ballistic/automatic/xl70e3 = 10,
 		)
 
 
