@@ -305,10 +305,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Paladin-Slayer Centurion"
 	suit = /obj/item/clothing/suit/armor/f13/legion/palacent
 	head = /obj/item/clothing/head/helmet/f13/legion/palacent
-	// suit_store = /obj/item/gun/ballistic/automatic/m1919 - temporary removal until balanced
 	suit_store = /obj/item/gun/ballistic/automatic/m1919
 	backpack_contents = list(
-		// /obj/item/ammo_box/magazine/mm762 = 1, - temporary removal until balanced
 		/obj/item/ammo_box/magazine/mm762 = 1,
 		/obj/item/melee/onehanded/machete/spatha = 1,
 		)
@@ -630,8 +628,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 	loadout_options = list(
 		/datum/outfit/loadout/vexbear,	//	Lever shotgun, Ripper
-		/datum/outfit/loadout/vexfox,	//	14mm SMG, Spartha
-		/datum/outfit/loadout/vexnight, //  Trailcarbine, Gladius
+		/datum/outfit/loadout/vexfox,	//	Chinese LMG, Spartha
 		)
 
 	matchmaking_allowed = list(
@@ -684,20 +681,10 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/outfit/loadout/vexfox
 	name = "Desert Fox"
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/vexil
-	suit_store = /obj/item/gun/ballistic/automatic/smg/smg14
+	suit_store = /obj/item/gun/ballistic/automatic/rpd
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/smg14 = 2,
+		/obj/item/ammo_box/magazine/rpd = 1,
 		/obj/item/melee/onehanded/machete/spatha = 1,
-		)
-
-/datum/outfit/loadout/vexnight
-	name = "Night Stalker"
-	head = /obj/item/clothing/head/helmet/f13/legion/vet/nightvexil
-	suit_store = /obj/item/gun/ballistic/rifle/repeater/trail
-	backpack_contents = list(
-		/obj/item/ammo_box/tube/m44 = 2,
-		/obj/item/melee/onehanded/machete/gladius = 1,
-		/obj/item/book/granter/trait/rifleman = 1,
 		)
 
 //EXPLORER
