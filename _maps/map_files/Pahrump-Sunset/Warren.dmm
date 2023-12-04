@@ -19843,8 +19843,8 @@
 "sFQ" = (
 /obj/structure/barricade/wooden/planks/pregame,
 /obj/structure/decoration/rag,
-/obj/structure/barricade/wooden/strong,
 /obj/effect/decal/cleanable/blood/tracks,
+/obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/wasteland/warren)
 "sHc" = (

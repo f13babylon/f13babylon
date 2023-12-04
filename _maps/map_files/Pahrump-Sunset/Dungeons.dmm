@@ -12415,10 +12415,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
 "oBR" = (
-/obj/structure/barricade/wooden/strong,
 /obj/structure/decoration/rag{
 	icon_state = "skin"
 	},
+/obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "oCt" = (
@@ -16072,12 +16072,6 @@
 	name = "metal plating"
 	},
 /area/f13/bunker)
-"sMe" = (
-/obj/structure/barricade/wooden,
-/turf/open/floor/f13{
-	icon_state = "freezerfloor"
-	},
-/area/f13/city)
 "sNQ" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -17004,11 +16998,18 @@
 	},
 /area/f13/bunker)
 "tTD" = (
-/obj/machinery/light{
-	dir = 8;
-	light_color = "#e8eaff"
+/mob/living/simple_animal/hostile/raider/junker/boss{
+	faction = list("raider","wastebot","hostile","supermutant","ghoul");
+	aggro_vision_range = 15;
+	vision_range = 15;
+	minimum_distance = 1;
+	extra_projectiles = 4;
+	rapid_melee = 2;
+	name = "The Boss";
+	obj_damage = 500;
+	retreat_distance = 0;
+	melee_damage_upper = 40
 	},
-/obj/structure/barricade/wooden,
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
 	},
@@ -18533,15 +18534,6 @@
 /area/f13/vault)
 "vuu" = (
 /obj/structure/chair/office/dark,
-/mob/living/simple_animal/hostile/deathclaw/power_armor{
-	faction = list("raider","hostile","supermutant","deathclaw");
-	rapid_melee = 2;
-	melee_damage_lower = 20;
-	melee_damage_upper = 30;
-	obj_damage = 500;
-	name = "Kebab Kehmist";
-	desc = "A massive, reptilian creature with powerful muscles, razor-sharp claws, and aggression to match. Someone had managed to put power armor on him, alongside unusual gauntlets that seem to speed up his hands further"
-	},
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
 	},
@@ -37911,7 +37903,7 @@ dFB
 pYx
 pYx
 mVL
-tTD
+dFB
 tGX
 tGX
 aTA
@@ -38167,8 +38159,8 @@ pYx
 jBt
 pYx
 pYx
-sMe
-sMe
+pYx
+pYx
 tGX
 tGX
 aTA
@@ -39195,7 +39187,7 @@ rdM
 cfX
 pYx
 puk
-pYx
+tTD
 hKP
 tGX
 tGX
