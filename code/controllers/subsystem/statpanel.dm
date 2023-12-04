@@ -8,11 +8,12 @@ SUBSYSTEM_DEF(statpanels)
 	var/encoded_global_data
 	var/mc_data_encoded
 	var/list/cached_images = list()
-	var/real_round_time = world.timeofday - SSticker.real_round_start_time
+
 
 /datum/controller/subsystem/statpanels/fire(resumed = FALSE)
 	if (!resumed)
 		var/datum/map_config/cached = SSmapping.next_map_config
+		var/real_round_time = world.timeofday - SSticker.real_round_start_time
 		var/list/global_data = list(
 			"Map: [SSmapping.config?.map_name || "Loading..."]",
 			cached ? "Next Map: [cached.map_name]" : null,

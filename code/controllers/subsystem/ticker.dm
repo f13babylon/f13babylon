@@ -75,6 +75,8 @@ SUBSYSTEM_DEF(ticker)
 
 	var/station_integrity = 100				// stored at roundend for use in some antag goals
 
+	var/real_round_start_time = 0
+
 /datum/controller/subsystem/ticker/Initialize(timeofday)
 	load_mode()
 
