@@ -443,9 +443,9 @@
 
 /proc/get_all_jobs()
 	return list("Wastelander", "Raider", "Outsider", "Raider Captain", "Tribal", "Tribal Hunter", "Tribal Gatherer", "Tribal Shaman",
-				"Mayor", "Sheriff", "Deputy", "Banker", "Barkeep", "Shopkeeper", "Citizen", "Preacher", "Secretary",
+				"Mayor", "Sheriff", "Deputy", "Banker", "Barkeep", "Shopkeeper", "La Verkin Citizen", "Preacher", "Secretary",
 				"Baron", "Castellan","Keeper", "Knight-Commander", "Paladin Marshal", "Paladin", "Librarian", "Scribe", "Knight-Captain", "Knight", "Initiate", "BoS Off-Duty", "Inquisitorial Acolyte",
-				"Enclave Internal Security", "Enclave Lieutenant", "Enclave Platoon Sergeant", "Enclave Sergeant", "Enclave Specialist", ,"Enclave Private", "Enclave Scientist", "Enclave Pilot Officer", "Enclave Bunker Duty",
+				"Enclave Internal Security", "Enclave Lieutenant", "Enclave Platoon Sergeant", "Enclave Sergeant", "Enclave Specialist", "Enclave Synthetic","Enclave Private", "Enclave Scientist", "Enclave Pilot Officer", "Enclave Bunker Duty",
 				"Followers Administrator", "Followers Doctor", "Followers Volunteer", "Followers Guard", "Followers Robot",
 				"Khan Senior Enforcer", "Khan Enforcer", "Khan Chemist", "Khan Smith", "Khan Courtesan",
 				"NCR Captain", "NCR Lieutenant", "NCR Logistics Officer", "NCR Representative", "NCR Medical Officer", "NCR Heavy Trooper", "NCR Sergeant", "NCR Senior Enlisted Advisor",

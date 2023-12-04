@@ -363,6 +363,11 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 	grind_results = list(/datum/reagent/cellulose = 20)
 	walltype = /turf/closed/wall/mineral/wood
 
+/obj/item/stack/sheet/mineral/wood/cyborg
+	custom_materials = null
+	is_cyborg = 1
+	cost = 500
+
 /obj/item/stack/sheet/mineral/wood/attackby(obj/item/W, mob/user, params) // NOTE: sheet_types.dm is where the WOOD stack lives. Maybe move this over there.
 	// Taken from /obj/item/stack/rods/attackby in [rods.dm]
 	if(W.get_sharpness())

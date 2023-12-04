@@ -347,7 +347,7 @@
 	desc = "An advanced shotgun with two separate magazine tubes, allowing you to quickly toggle between ammo types."
 	icon_state = "neostead"
 	item_state = "shotguncity"
-	fire_delay = 5
+	fire_delay = 2 //why was this worse than the leveraction?
 	recoil = 1.3
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube
 	force = 10

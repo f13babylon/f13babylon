@@ -610,11 +610,12 @@
 	var/digrange = 1
 	var/attacksound = "sound/f13effects/explosion_distant_2.ogg"
 	var/sound = "sound/f13effects/explosion_distant_2.ogg"
+	var/knockback = 1
 
 /obj/item/twohanded/sledgehammer/rockethammer/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/two_handed, force_unwielded = 20, force_wielded = 52, icon_wielded="[icon_prefix]2")
-	AddComponent(/datum/component/knockback, 1, FALSE, TRUE)
+	AddComponent(/datum/component/knockback, knockback, FALSE, TRUE)
 
 /obj/item/twohanded/sledgehammer/rockethammer/afterattack(atom/A, mob/living/user, proximity)
 	. = ..()
@@ -628,6 +629,18 @@
 		playsound(loc, hitsound, 80, TRUE)
 	else if(istype(A, /turf/closed))
 		playsound(loc, hitsound, 80, TRUE)
+
+// Robot rocket sledge, 12 less damage, no kb but mines better
+/obj/item/twohanded/sledgehammer/rockethammer/robot
+	name = "mounted rocket-assisted sledgehammer"
+	desc = "This pre-War model was originally used by construction robots for demolition. Fitted with a rocket booster at the head, \
+	the sledgehammer would behave like a normal tool until it reached a certain acceleration point, when the booster would activate  \
+	and deliver a tremendously powerful impact, easily crushing concrete."
+	digrange = 2
+
+/obj/item/twohanded/sledgehammer/rockethammer/robot/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/two_handed, force_unwielded = 20, force_wielded = 40, icon_wielded="[icon_prefix]2")
 
 // The Court Martial	Keywords: UNIQUE, Damage 20/52, Inferior mining
 /obj/item/twohanded/sledgehammer/rockethammer/courtmartial

@@ -4,6 +4,7 @@
 	icon = 'icons/mob/robots.dmi'
 	icon_state = "robot"
 	bubble_icon = "robot"
+	faction = list("silicon", "wastebot")
 	var/laser = FALSE
 	var/disabler = FALSE
 
@@ -138,22 +139,15 @@
 	if(!CONFIG_GET(flag/disable_secborg) && GLOB.security_level < CONFIG_GET(number/minimum_secborg_alert))
 		to_chat(src, "<span class='notice'>NOTICE: Due to local station regulations, the security cyborg module and its variants are only available during [NUM2SECLEVEL(CONFIG_GET(number/minimum_secborg_alert))] alert and greater.</span>")
 
-	var/list/modulelist = list(/*"Standard" = /obj/item/robot_module/standard, \
-	"Engineering" = /obj/item/robot_module/engineering, \
-	"Medical" = /obj/item/robot_module/medical, \
-	"Miner" = /obj/item/robot_module/miner, \
-	"Service" = /obj/item/robot_module/butler,*/
+	var/list/modulelist = list("Standard" = /obj/item/robot_module/standard,
+	"Engineering" = /obj/item/robot_module/engineering,
+	"Medical" = /obj/item/robot_module/medical,
+	"Miner" = /obj/item/robot_module/miner,
+	"Service" = /obj/item/robot_module/butler,
 	"Gutsy" = /obj/item/robot_module/gutsy,
-	"Assaultron" = /obj/item/robot_module/assaultron,
-	"Medical" = /obj/item/robot_module/assaultron/medical
+	"Security" = /obj/item/robot_module/security
 	)
 
-	//modulelist += get_cit_modules() //Citadel change - adds Citadel's borg modules.
-
-	if(!CONFIG_GET(flag/disable_peaceborg))
-		modulelist["Peacekeeper"] = /obj/item/robot_module/peacekeeper
-	if(BORG_SEC_AVAILABLE)
-		modulelist["Security"] = /obj/item/robot_module/security
 
 	var/input_module = input("Please, select a module!", "Robot", null, null) as null|anything in modulelist
 	if(!input_module || module.type != /obj/item/robot_module)
@@ -700,10 +694,12 @@
 
 /mob/living/silicon/robot/modules
 	var/set_module = null
+	faction = list("silicon", "wastebot")
 
 /mob/living/silicon/robot/modules/Initialize(mapload)
 	. = ..()
 	module.transform_to(set_module)
+	cell = new /obj/item/stock_parts/cell/hyper(src)
 
 /mob/living/silicon/robot/modules/standard
 	set_module = /obj/item/robot_module/standard
@@ -725,28 +721,6 @@
 
 /mob/living/silicon/robot/modules/gutsy
 	set_module = /obj/item/robot_module/gutsy
-	faction = list("wastebots") //Friendly to other robots?
-
-/mob/living/silicon/robot/modules/assaultron //F13 stuff, better Handy.
-	name = "Assaultron"
-	set_module = /obj/item/robot_module/assaultron
-	faction = list("wastebots") //Friendly to other robots?
-
-/mob/living/silicon/robot/modules/assaultron/Initialize(mapload)
-	. = ..()
-	cell = new /obj/item/stock_parts/cell/hyper(src, 25000)
-
-/mob/living/silicon/robot/modules/assaultron/medical
-	name = "Medical Assaultron"
-	set_module = /obj/item/robot_module/assaultron/medical
-
-/mob/living/silicon/robot/modules/assaultron/medical/sase
-	name = "SA-S-E"
-	desc = "An assaultron modified for the medical field, SA-S-E forgoes the weaponry and deadliness of her military countarparts to save lives. \
-	Painted white with blue highlights, and a blue cross on the front of her visor, this robot comes equipped with what looks like modified medical gear. \
-	Her head has no eye-laser, instead a gently pulsing blue eye that scans people the analyze their health, a defibrilator on her back, and articulated hands to be able \
-	to use the myriad medical tools strapped to parts of her body under protective cases all show this model is meant to save lives. She's stockier than other assaultrons \
-	due to all the added gear, and her legs seem much thicker than normal due to reinforced servos and gears."
 
 /mob/living/silicon/robot/modules/syndicate
 	icon_state = "synd_sec"

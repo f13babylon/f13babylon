@@ -400,4 +400,4 @@ Follower Volunteer
 	ADD_TRAIT(R, TRAIT_TECHNOPHREAK, TRAIT_GENERIC)
 	R.apply_pref_name("human", M.client)
 	R.gender = NEUTER
-	R.forceMove(pick(GLOB.special_borg_start))
+	R.forceMove(pick(GLOB.followers_borg_start))

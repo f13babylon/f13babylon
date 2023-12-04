@@ -2783,10 +2783,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/legion)
-"sq" = (
-/obj/structure/wreck/trash/machinepiletwo,
-/turf/open/floor/f13/wood,
-/area/f13/legion)
 "sy" = (
 /obj/effect/turf_decal/trimline/neutral/line{
 	dir = 4
@@ -5011,10 +5007,6 @@
 /mob/living/simple_animal/hostile/renegade/grunt,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"Kw" = (
-/obj/structure/wreck/trash/machinepile,
-/turf/open/floor/f13/wood,
-/area/f13/legion)
 "Ky" = (
 /obj/structure/bed/wooden,
 /obj/effect/spawner/lootdrop/bedsheet,
@@ -19826,9 +19818,9 @@ TS
 pR
 uT
 Va
-sq
+xy
 se
-Kw
+uT
 bZ
 Wi
 UL
@@ -20083,9 +20075,9 @@ wE
 wE
 Va
 uT
-Kw
+Va
 uT
-xy
+Va
 wS
 Wi
 UL
@@ -20852,11 +20844,11 @@ gi
 gi
 gi
 fz
-sq
+Va
 uT
 Va
 uT
-Kw
+xy
 bZ
 Wi
 UL
@@ -21109,11 +21101,11 @@ gi
 gi
 gi
 fz
-Kw
+Va
 Va
 Va
 uT
-xy
+uT
 bZ
 Wi
 UL
@@ -21623,7 +21615,7 @@ gi
 gi
 gi
 fz
-sq
+Va
 uT
 Va
 Va
@@ -21884,7 +21876,7 @@ xy
 Va
 uT
 Va
-Va
+xy
 wS
 Wi
 UL

@@ -1081,6 +1081,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	gloves = /obj/item/clothing/gloves/legion/forgemaster
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	r_pocket = /obj/item/flashlight/lantern
+	ears = /obj/item/radio/headset/headset_legion
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE
@@ -1105,13 +1106,16 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/spatha)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/lance)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionshield)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/grease_gun)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingshotgun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionlance)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/concussion)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/xbow)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/cheaparrow)
 
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/sks)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/grease_gun)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/commando)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingrifle)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingshotgun)
 
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/receiver)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/assembly)

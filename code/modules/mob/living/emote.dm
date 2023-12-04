@@ -402,6 +402,9 @@
 		L.Knockdown(200)
 		L.Paralyze(200)
 
+		var/mutable_appearance/overlay = mutable_appearance('icons/mob/talk.dmi', "surrender", ABOVE_MOB_LAYER)
+		user.flick_overlay_static(overlay, 200)
+
 /datum/emote/living/sway
 	key = "sway"
 	key_third_person = "sways"

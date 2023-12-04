@@ -1,10 +1,10 @@
 /obj/item/gun/energy/ionrifle
-	name = "YK-42b Pulse Rifle"
-	desc = "The YK42B rifle is an electrical pulse weapon that was developed by the Yuma Flats Energy Consortium. It excels in damage against heavily armored opponents, especially power armor."
-	icon = 'icons/fallout/objects/guns/energy.dmi'
+	name = "pulse rifle"
+	desc = "A military-issue YK-42b rifle based on a weaker pistol model, an magnetic pulse weapon that was developed by the Yuma Flats Energy Consortium to sabotage electronic devices the likes of communications, power armor, aircraft, and so on. It excels in damage against heavily armored opponents, especially power armor."
+	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
 	lefthand_file = 'icons/mob/inhands/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/guns_righthand.dmi'
-	icon_state = "yk42"
+	icon_state = "pulse"
 	item_state = "yk42"
 	can_flashlight = 1
 	w_class = WEIGHT_CLASS_BULKY
@@ -381,13 +381,14 @@
 //Gutsy flamethrower
 /obj/item/gun/energy/gutsy_flamethrower
 	name = "integrated flamethrower"
-	desc = "An energy-based laser gun that draws power from the cyborg's internal energy cell directly. So this is what freedom looks like?"
+	desc = "A flamethrower integrated directly into a Mr. Gutsy. This one has limiters to prevent rapid depletion of charge."
 	icon = 'icons/obj/guns/flamethrower.dmi'
 	icon_state = "m2_flamethrower_on"
 	item_state = "m2flamethrower"
 	can_charge = FALSE
 	selfcharge = EGUN_SELFCHARGE_BORG
 	cell_type = /obj/item/stock_parts/cell/secborg
+	fire_delay = 10
 	charge_delay = 3
 	ammo_type = list(/obj/item/ammo_casing/energy/flamethrower)
 

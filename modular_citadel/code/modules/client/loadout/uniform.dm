@@ -598,6 +598,7 @@
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
+							"NCR Conscript",
 							"NCR Rear Echelon",
 							"NCR Off-Duty",
 							"NCR Ranger"
@@ -620,6 +621,7 @@
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
+							"NCR Conscript",
 							"NCR Rear Echelon",
 							"NCR Off-Duty",
 							"NCR Ranger"
@@ -677,7 +679,7 @@
 							"Secretary",
 							"Sheriff",
 							"Doctor",
-							"Citizen",
+							"La Verkin Citizen",
 							"Deputy",
 							"Shopkeeper",
 							"Farmer",

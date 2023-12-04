@@ -857,11 +857,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	. = ..()
 	if(visualsOnly)
 		return
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/servicerifle)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/scoutcarbine)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedarmorconversion)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tools/forged/entrenching_tool)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedhelmetconversion)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ninemil)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1911)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingrifle)
@@ -892,7 +888,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	glasses = /obj/item/clothing/glasses/welding
 	suit_store = /obj/item/gun/ballistic/automatic/smg/mini_uzi
 	backpack_contents = list(
-		/obj/item/grenade/plastic/x4 = 1,
+		/obj/item/grenade/plastic/c4 = 2,
 		/obj/item/book/granter/trait/explosives = 1,
 		/obj/item/book/granter/trait/explosives_advanced = 1,
 		/obj/item/ammo_box/magazine/uzim9mm = 3,
@@ -904,12 +900,10 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit_store = /obj/item/gun/ballistic/automatic/smg/mini_uzi
 	backpack_contents = list(
 			/obj/item/ammo_box/magazine/uzim9mm = 3,
-		/obj/item/book/granter/trait/explosives = 1,
 		/obj/item/book/granter/crafting_recipe/blueprint/trapper = 1,
 		/obj/item/stack/sheet/plasteel/fifty = 1,
 		/obj/item/stack/sheet/rglass = 50,
-		/obj/item/stack/sheet/mineral/concrete = 25,
-		/obj/item/stack/ore/blackpowder = 50	//Whoever made this loadout originally made this the fucking DATUM for black powder. Let this be his mark of shame.
+		/obj/item/stack/sheet/mineral/concrete = 25
 		)
 
 
@@ -1048,8 +1042,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	exp_requirements = 540
 
 	loadout_options = list(
-		/datum/outfit/loadout/corporalsmg,	 // 10mm SMG
-		/datum/outfit/loadout/corporalrifleman,				 // R82
+		/datum/outfit/loadout/corporalsmg,	 				// 10mm SMG
+		/datum/outfit/loadout/corporalrifleman,				// Service Carbine
 		)
 
 	matchmaking_allowed = list(
@@ -1088,7 +1082,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "Squad rifleman Support"
 	head = /obj/item/clothing/head/f13/ncr
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
-	suit_store = /obj/item/gun/ballistic/automatic/service/r82
+	suit_store = /obj/item/gun/ballistic/automatic/service/carbine
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle = 3,
 		/obj/item/grenade/smokebomb = 1
@@ -1182,6 +1176,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	loadout_options = list(
 		/datum/outfit/loadout/conscriptvarmint, // Service
 		/datum/outfit/loadout/conscripthunting, // Hunting rifle, Trench tool, Sandbags
+		/datum/outfit/loadout/conscripthalal, // M45, Machete
 		)
 
 	matchmaking_allowed = list(
@@ -1223,6 +1218,18 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/shovel/trench = 1,
 		/obj/item/stack/sheet/mineral/sandbags = 7,
 		/obj/item/storage/box/ration/menu_eight = 1,
+		)
+
+/datum/outfit/loadout/conscripthalal
+	name = "Desert Warrior"
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/m1911
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m45 = 3,
+		/obj/item/melee/onehanded/machete = 1,
+		/obj/item/storage/box/ration/menu_eight = 1,
+		/obj/item/clothing/head/f13/headscarfncr = 1,
+		/obj/item/clothing/suit/armor/f13/ncrarmor/conscript/ncrwarrior = 1,
+		/obj/item/book/granter/trait/bigleagues = 1
 		)
 
 
@@ -1352,7 +1359,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
 		/obj/item/ammo_box/magazine/m9mmds = 2,
 		/obj/item/grenade/plastic/c4 = 1,
-		/obj/item/melee/onehanded/knife/survival = 1,
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/stack/sheet/metal/twenty = 2,
 		/obj/item/stack/sheet/glass/ten = 2,
@@ -1393,8 +1399,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	if(visualsOnly)
 		return
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tailor/ncruniform)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedarmorconversion)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedhelmetconversion)
 
 // NCR Citizen
 // Really only used for ID console

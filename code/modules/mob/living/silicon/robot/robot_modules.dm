@@ -8,7 +8,7 @@
 	righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'
 	flags_1 = CONDUCT_1
 
-	var/borghealth = 150 //Slight buff, 100 -> 150
+	var/borghealth = 300
 
 	var/list/basic_modules = list() //a list of paths, converted to a list of instances on New()
 	var/list/emag_modules = list() //ditto
@@ -108,6 +108,10 @@
 			var/obj/item/stack/sheet/rglass/cyborg/G = S
 			G.source = get_or_create_estorage(/datum/robot_energy_storage/metal)
 			G.glasource = get_or_create_estorage(/datum/robot_energy_storage/glass)
+
+		else if(istype(S, /obj/item/stack/sheet/mineral/wood))
+			S.cost = 500
+			S.source = get_or_create_estorage(/datum/robot_energy_storage/wood)
 
 		else if(istype(S, /obj/item/stack/medical))
 			S.cost = 250
@@ -291,7 +295,7 @@
 		/obj/item/clockwork/slab/cyborg,
 		/obj/item/clockwork/weapon/ratvarian_spear,
 		/obj/item/clockwork/replica_fabricator/cyborg)
-	moduleselect_icon = "standard"
+	moduleselect_icon = "robot"
 	hat_offset = -3
 
 /obj/item/robot_module/medical
@@ -319,7 +323,8 @@
 		/obj/item/stack/medical/bone_gel/cyborg,
 		/obj/item/organ_storage,
 		/obj/item/borg/lollipop,
-		/obj/item/shockpaddles/cyborg)
+		/obj/item/shockpaddles/cyborg,
+		/obj/item/melee/unarmed/punchdagger/cyborg)
 	emag_modules = list(/obj/item/reagent_containers/borghypo/hacked)
 	ratvar_modules = list(
 		/obj/item/clockwork/slab/cyborg/medical,
@@ -333,16 +338,36 @@
 	var/static/list/med_icons
 	if(!med_icons)
 		med_icons = list(
-		"Default" = image(icon = 'icons/mob/robots.dmi', icon_state = "medical")
+		"Default" = image(icon = 'icons/mob/robots.dmi', icon_state = "medical"),
+		"Medical Assaultron" = image(icon = 'icons/mob/robots.dmi', icon_state = "assaultron_sase")
 		)
 		med_icons = sortList(med_icons)
 	var/med_borg_icon = show_radial_menu(R, R , med_icons, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE)
 	switch(med_borg_icon)
 		if("Default")
 			cyborg_base_icon = "medical"
+		if("Medical Assaultron")
+			cyborg_base_icon = "assaultron_sase"
 		else
 			return FALSE
 	return ..()
+
+/obj/item/robot_module/medical/rebuild_modules()
+	..()
+	var/mob/living/silicon/robot/medical = loc
+	ADD_TRAIT(medical, TRAIT_MEDICALGRADUATE, ref(src))
+	ADD_TRAIT(medical, TRAIT_SURGERY_MID, ref(src))
+	ADD_TRAIT(medical, TRAIT_SURGEON, ref(src))
+	ADD_TRAIT(medical, TRAIT_CYBERNETICIST, ref(src))
+
+/obj/item/robot_module/medical/remove_module(obj/item/I, delete_after)
+	..()
+	var/mob/living/silicon/robot/medical = loc
+	REMOVE_TRAIT(medical, TRAIT_MEDICALGRADUATE, ref(src))
+	REMOVE_TRAIT(medical, TRAIT_SURGERY_MID, ref(src))
+	REMOVE_TRAIT(medical, TRAIT_SURGEON, ref(src))
+	REMOVE_TRAIT(medical, TRAIT_CYBERNETICIST, ref(src))
+
 
 /obj/item/robot_module/engineering
 	name = "Engineering"
@@ -359,6 +384,7 @@
 		/obj/item/multitool/cyborg,
 		/obj/item/t_scanner,
 		/obj/item/analyzer,
+		/obj/item/storage/bag/salvage/cyborg,
 		/obj/item/storage/part_replacer/cyborg,
 		/obj/item/holosign_creator/combifan,
 		/obj/item/weapon/gripper,
@@ -372,8 +398,9 @@
 		/obj/item/stack/sheet/rglass/cyborg,
 		/obj/item/stack/rods/cyborg,
 		/obj/item/stack/tile/plasteel/cyborg,
-		/obj/item/stack/cable_coil/cyborg)
-	emag_modules = list(/obj/item/borg/stun)
+		/obj/item/stack/cable_coil/cyborg,
+		/obj/item/stack/sheet/mineral/wood/cyborg)
+	emag_modules = list(/obj/item/twohanded/sledgehammer/rockethammer/robot)
 	ratvar_modules = list(
 		/obj/item/clockwork/slab/cyborg/engineer,
 		/obj/item/clockwork/replica_fabricator/cyborg)
@@ -398,41 +425,54 @@
 			return FALSE
 	return ..()
 
+/obj/item/robot_module/medical/rebuild_modules()
+	..()
+	var/mob/living/silicon/robot/medical = loc
+	ADD_TRAIT(medical, TRAIT_TECHNOPHREAK, ref(src))
+
+
+/obj/item/robot_module/medical/remove_module(obj/item/I, delete_after)
+	..()
+	var/mob/living/silicon/robot/medical = loc
+	REMOVE_TRAIT(medical, TRAIT_TECHNOPHREAK, ref(src))
+
+
 /obj/item/robot_module/security
 	name = "Security"
 	basic_modules = list(
+		/obj/item/melee/unarmed/punchdagger/cyborg,
 		/obj/item/assembly/flash/cyborg,
 		/obj/item/extinguisher/mini,
 		/obj/item/crowbar/cyborg,
 		/obj/item/restraints/handcuffs/cable/zipties,
 		/obj/item/melee/classic_baton/police,
 		/obj/item/gun/energy/disabler/cyborg,
+		/obj/item/gun/energy/laser/pistol/cyborg,
 		/obj/item/clothing/mask/gas/sechailer/cyborg,
 		/obj/item/pinpointer/crew)
 	emag_modules = list(/obj/item/gun/energy/laser/cyborg)
 	ratvar_modules = list(/obj/item/clockwork/slab/cyborg/security,
 		/obj/item/clockwork/weapon/ratvarian_spear)
-	cyborg_base_icon = "sec"
+	cyborg_base_icon = "peace"
+	borghealth = 450
 	moduleselect_icon = "security"
 	hat_offset = 3
-
-/obj/item/robot_module/security/do_transform_animation()
-	..()
-	to_chat(loc, "<span class='userdanger'>While you have picked the security module, you still have to follow your laws, NOT Space Law. \
-	For Crewsimov, this means you must follow criminals' orders unless there is a law 1 reason not to.</span>")
 
 /obj/item/robot_module/security/be_transformed_to(obj/item/robot_module/old_module)
 	var/mob/living/silicon/robot/R = loc
 	var/static/list/sec_icons
 	if(!sec_icons)
 		sec_icons = list(
-		"Default" = image(icon = 'icons/mob/robots.dmi', icon_state = "sec"),
+		"Default" = image(icon = 'icons/mob/robots.dmi', icon_state = "peace"),
+		"Assaultron" = image(icon = 'icons/mob/robots.dmi', icon_state = "assaultron"),
 		)
 		sec_icons = sortList(sec_icons)
 	var/sec_borg_icon = show_radial_menu(R, R , sec_icons, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE)
 	switch(sec_borg_icon)
 		if("Default")
-			cyborg_base_icon = "sec"
+			cyborg_base_icon = "peace"
+		if("Assaultron")
+			cyborg_base_icon = "assaultron"
 		else
 			return FALSE
 	return ..()
@@ -466,11 +506,6 @@
 	moduleselect_icon = "standard"
 	borghealth = 300
 	hat_offset = -2
-
-/obj/item/robot_module/peacekeeper/do_transform_animation()
-	..()
-	to_chat(loc, "<span class='userdanger'>Under ASIMOV/CREWSIMOV, you are an enforcer of the PEACE. \
-	You are not a security module and you are expected to follow orders to the best of your abilities without causing harm. Space law means nothing to you.</span>")
 
 /obj/item/robot_module/peacekeeper/be_transformed_to(obj/item/robot_module/old_module)
 	var/mob/living/silicon/robot/R = loc
@@ -576,27 +611,10 @@
 	var/static/list/service_icons
 	if(!service_icons)
 		service_icons = list(
-		"(Service) Waitress" = image(icon = 'icons/mob/robots.dmi', icon_state = "service_f"),
-		"(Service) Butler" = image(icon = 'icons/mob/robots.dmi', icon_state = "service_m"),
-		"(Service) Bro" = image(icon = 'icons/mob/robots.dmi', icon_state = "brobot"),
-		"(Service) Can" = image(icon = 'icons/mob/robots.dmi', icon_state = "kent"),
 		"(Service) Tophat" = image(icon = 'icons/mob/robots.dmi', icon_state = "tophat"),
 		)
 	var/service_robot_icon = show_radial_menu(R, R , service_icons, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE)
 	switch(service_robot_icon)
-		if("(Service) Waitress")
-			cyborg_base_icon = "service_f"
-			special_light_key = "service"
-		if("(Service) Butler")
-			cyborg_base_icon = "service_m"
-			special_light_key = "service"
-		if("(Service) Bro")
-			cyborg_base_icon = "brobot"
-			special_light_key = "service"
-		if("(Service) Can")
-			cyborg_base_icon = "kent"
-			special_light_key = "medical"
-			hat_offset = 3
 		if("(Service) Tophat")
 			cyborg_base_icon = "tophat"
 			special_light_key = null
@@ -614,6 +632,7 @@
 		/obj/item/borg/sight/meson,
 		/obj/item/storage/bag/ore/cyborg,
 		/obj/item/pickaxe/drill/cyborg,
+		/obj/item/shovel,
 		/obj/item/kinetic_crusher/cyborg,
 		/obj/item/weldingtool/mini,
 		/obj/item/storage/bag/sheetsnatcher/borg,
@@ -624,14 +643,14 @@
 		/obj/item/weapon/gripper/mining,
 		/obj/item/cyborg_clamp,
 		/obj/item/stack/marker_beacon,
-		/obj/item/destTagger,
-		/obj/item/stack/packageWrap)
-	emag_modules = list(/obj/item/borg/stun)
+		/obj/item/metaldetector/cyborg)
+	emag_modules = list(/obj/item/twohanded/sledgehammer/rockethammer/robot)
 	ratvar_modules = list(
 		/obj/item/clockwork/slab/cyborg/miner,
 		/obj/item/clockwork/weapon/ratvarian_spear,
 		/obj/item/borg/sight/xray/truesight_lens)
 	cyborg_base_icon = "miner"
+	borghealth = 450
 	moduleselect_icon = "miner"
 	hat_offset = 0
 
@@ -640,14 +659,14 @@
 	var/static/list/mining_icons
 	if(!mining_icons)
 		mining_icons = list(
-		"Lavaland" = image(icon = 'icons/mob/robots.dmi', icon_state = "miner"),
-		"Asteroid" = image(icon = 'icons/mob/robots.dmi', icon_state = "minerOLD")
+		"Default" = image(icon = 'icons/mob/robots.dmi', icon_state = "miner"),
+		"Treaded" = image(icon = 'icons/mob/robots.dmi', icon_state = "minerOLD")
 		)
 	var/mining_borg_icon = show_radial_menu(R, R , mining_icons, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE)
 	switch(mining_borg_icon)
-		if("Lavaland")
+		if("Default")
 			cyborg_base_icon = "miner"
-		if("Asteroid")
+		if("Treaded  ")
 			cyborg_base_icon = "minerOLD"
 			special_light_key = "miner"
 		else
@@ -671,84 +690,10 @@
 	emag_modules = list(/obj/item/gun/energy/laser/cyborg)
 	ratvar_modules = list(/obj/item/clockwork/slab/cyborg/security,
 		/obj/item/clockwork/weapon/ratvarian_spear)
-	borghealth = 300
+	borghealth = 450
 	cyborg_base_icon = "gutsy"
 	moduleselect_icon = "standard"
 	hat_offset = -2
-
-/obj/item/robot_module/gutsy/rebuild_modules()
-	..()
-	var/mob/living/silicon/robot/gutsy = loc
-	gutsy.faction += "wastebots" //So other bots don't gank you for existing.
-
-/obj/item/robot_module/gutsy/remove_module(obj/item/I, delete_after)
-	..()
-	var/mob/living/silicon/robot/gutsy = loc
-	gutsy.faction -= "wastebots" //Removes the faction if the module is removed.
-
-/obj/item/robot_module/assaultron
-	name = "Assaultron"
-	basic_modules = list( //Security borg
-		/obj/item/assembly/flash/cyborg,
-		/obj/item/extinguisher/mini,
-		/obj/item/crowbar/cyborg,
-		/obj/item/restraints/handcuffs/cable/zipties,
-		/obj/item/melee/unarmed/punchdagger/cyborg,
-		/obj/item/gun/energy/laser/pistol/cyborg,
-		/obj/item/clothing/mask/gas/sechailer/cyborg,
-		/obj/item/pinpointer/crew)
-	emag_modules = list(/obj/item/gun/energy/laser/cyborg)
-	ratvar_modules = list(/obj/item/clockwork/slab/cyborg/security,
-		/obj/item/clockwork/weapon/ratvarian_spear)
-	borghealth = 450
-	cyborg_base_icon = "assaultron"
-	moduleselect_icon = "security"
-	hat_offset = 3
-
-/obj/item/robot_module/assaultron/rebuild_modules()
-	..()
-	var/mob/living/silicon/robot/assault = loc
-	assault.faction += "wastebots" //So other assaultrons don't gank you for existing.
-
-/obj/item/robot_module/assaultron/remove_module(obj/item/I, delete_after)
-	..()
-	var/mob/living/silicon/robot/assault = loc
-	assault.faction -= "wastebots" //Removes the faction if the module is removed.
-
-/obj/item/robot_module/assaultron/medical
-	name = "Medical Assaultron"
-	basic_modules = list(
-		/obj/item/assembly/flash/cyborg,
-		/obj/item/extinguisher/mini,
-		/obj/item/crowbar/cyborg,
-		/obj/item/healthanalyzer,
-		/obj/item/reagent_containers/borghypo,
-		/obj/item/weapon/gripper/medical,
-		/obj/item/reagent_containers/dropper,
-		/obj/item/reagent_containers/syringe,
-		/obj/item/surgical_drapes,
-		/obj/item/retractor,
-		/obj/item/hemostat,
-		/obj/item/cautery,
-		/obj/item/surgicaldrill,
-		/obj/item/scalpel,
-		/obj/item/circular_saw,
-		/obj/item/bonesetter,
-		/obj/item/roller/robo,
-		/obj/item/borg/cyborghug/medical,
-		/obj/item/stack/medical/gauze/cyborg,
-		/obj/item/stack/medical/bone_gel/cyborg,
-		/obj/item/organ_storage,
-		/obj/item/borg/lollipop,
-		/obj/item/shockpaddles/cyborg,
-		/obj/item/melee/unarmed/punchdagger/cyborg
-		)
-	emag_modules = list(/obj/item/reagent_containers/borghypo/hacked)
-	ratvar_modules = list(
-		/obj/item/clockwork/slab/cyborg/medical,
-		/obj/item/clockwork/weapon/ratvarian_spear)
-	borghealth = 300
-	cyborg_base_icon = "assaultron_sase"
 
 /obj/item/robot_module/syndicate
 	name = "Syndicate Assault"
@@ -834,6 +779,7 @@
 		/obj/item/stack/sheet/rglass/cyborg,
 		/obj/item/stack/rods/cyborg,
 		/obj/item/stack/tile/plasteel/cyborg,
+		/obj/item/stack/sheet/mineral/wood/cyborg,
 		/obj/item/destTagger/borg,
 		/obj/item/stack/cable_coil/cyborg,
 		/obj/item/pinpointer/syndicate_cyborg,
@@ -879,6 +825,9 @@
 
 /datum/robot_energy_storage/glass
 	name = "Glass Synthesizer"
+
+/datum/robot_energy_storage/wood
+	name = "Wood Synthesizer"
 
 /datum/robot_energy_storage/wire
 	max_energy = 50

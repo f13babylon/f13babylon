@@ -281,24 +281,16 @@ SUBSYSTEM_DEF(ticker)
 	if(!GLOB.Debug2)
 		if(!can_continue)
 			log_game("[mode.name] failed pre_setup, cause: [mode.setup_error]")
-			send2irc("SSticker", "[mode.name] failed pre_setup, cause: [mode.setup_error]")
+			SSdiscord.send_to_admin_channel("[mode.name] failed pre_setup, cause: [mode.setup_error]")
 			message_admins("<span class='notice'>[mode.name] failed pre_setup, cause: [mode.setup_error]</span>")
 			QDEL_NULL(mode)
 			to_chat(world, "<B>Error setting up [GLOB.master_mode].</B> Reverting to pre-game lobby.")
 			SSjob.ResetOccupations()
-			return 0
+			return FALSE
 	else
 		message_admins("<span class='notice'>DEBUG: Bypassing prestart checks...</span>")
 
 	CHECK_TICK
-	/*if(hide_mode) CIT CHANGE - comments this section out to obfuscate gamemodes. Quit self-antagging during extended just because "hurrrrr no antaggs!!!!!! i giv sec thing 2 do!!!!!!!!!" it's bullshit and everyone hates it
-		var/list/modes = new
-		for (var/datum/game_mode/M in runnable_modes)
-			modes += M.name
-		modes = sortList(modes)
-		to_chat(world, "<b>The gamemode is: secret!\nPossibilities:</B> [english_list(modes)]")
-	else
-		mode.announce()*/
 
 	if(!CONFIG_GET(flag/ooc_during_round))
 		toggle_ooc(FALSE) // Turn it off
@@ -347,7 +339,7 @@ SUBSYSTEM_DEF(ticker)
 
 	var/list/adm = get_admin_counts()
 	var/list/allmins = adm["present"]
-	send2irc("Server", "Round [GLOB.round_id ? "#[GLOB.round_id]:" : "of"] [hide_mode ? "secret":"[mode.name]"] has started[allmins.len ? ".":" with no active admins online!"]")
+	SSdiscord.send_to_admin_channel("Round [GLOB.round_id ? "#[GLOB.round_id]:" : "of"] [hide_mode ? "secret":"[mode.name]"] has started[allmins.len ? ".":" with no active admins online!"]")
 	setup_done = TRUE
 
 	for(var/i in GLOB.start_landmarks_list)

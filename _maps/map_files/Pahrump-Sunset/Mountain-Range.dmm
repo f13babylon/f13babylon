@@ -310,7 +310,7 @@
 	},
 /area/f13/tunnel)
 "dg" = (
-/obj/structure/frame/machine,
+/obj/effect/landmark/start/f13/encborg,
 /turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
 /area/f13/enclave)
 "dh" = (
@@ -1062,7 +1062,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/enclave)
 "iE" = (
-/obj/item/flag/enclave/america,
 /turf/closed/wall/r_wall/f13/vault,
 /area/f13/mountain_area)
 "iH" = (
@@ -2072,12 +2071,12 @@
 "qW" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/turf_decal/bot,
-/obj/item/card/id/syndicate/anyone,
-/obj/item/card/id/syndicate/anyone,
-/obj/item/card/id/syndicate/anyone,
-/obj/item/card/id/syndicate/anyone,
-/obj/item/card/id/syndicate/anyone,
-/obj/item/card/id/syndicate/anyone,
+/obj/item/card/id/syndicate,
+/obj/item/card/id/syndicate,
+/obj/item/card/id/syndicate,
+/obj/item/card/id/syndicate,
+/obj/item/card/id/syndicate,
+/obj/item/card/id/syndicate,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/enclave)
 "qY" = (
@@ -3673,6 +3672,10 @@
 	},
 /turf/open/floor/f13,
 /area/f13/enclave)
+"CW" = (
+/obj/machinery/recharge_station,
+/turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
+/area/f13/enclave)
 "CX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/junk/small/tv,
@@ -4040,7 +4043,6 @@
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/mountain_area)
 "Gh" = (
-/obj/machinery/smoke_machine,
 /turf/open/floor/f13,
 /area/f13/enclave)
 "Gj" = (
@@ -5171,6 +5173,15 @@
 "Qe" = (
 /obj/machinery/hydroponics/constructable,
 /turf/open/floor/plasteel/f13/vault_floor/green,
+/area/f13/enclave)
+"Qm" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/door/airlock/hatch{
+	req_access = null;
+	req_access_txt = "134"
+	},
+/obj/structure/barricade/wooden/planks/pregame,
+/turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
 "Qp" = (
 /obj/structure/sign/departments/examroom,
@@ -11630,17 +11641,17 @@ Vr
 Vr
 Vr
 ez
-xu
-ez
-hr
-hr
 ez
 ez
 hr
 hr
 ez
 ez
-xu
+hr
+hr
+ez
+ez
+ez
 pl
 iT
 HA
@@ -17041,7 +17052,7 @@ Im
 it
 lG
 IP
-TI
+Qm
 fN
 cu
 TI
@@ -17298,7 +17309,7 @@ OH
 BO
 oz
 IP
-cu
+Qm
 TI
 TI
 TI
@@ -23235,7 +23246,7 @@ Jj
 Jx
 Jx
 nm
-dg
+EI
 iI
 iI
 Sb
@@ -23492,8 +23503,8 @@ gm
 Hs
 CT
 AW
-EI
-iI
+CW
+dg
 Cx
 iI
 iI
@@ -30891,19 +30902,19 @@ ez
 ez
 ez
 ez
-xu
 ez
-ez
-hr
-hr
-hr
 ez
 ez
 hr
 hr
 hr
 ez
-xu
+ez
+hr
+hr
+hr
+ez
+ez
 pl
 iT
 HA

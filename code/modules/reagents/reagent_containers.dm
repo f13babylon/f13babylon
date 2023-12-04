@@ -40,17 +40,17 @@
 /obj/item/reagent_containers/AltClick(mob/user)
 	. = ..()
 	if(container_flags & APTFT_ALTCLICK && length(possible_transfer_amounts) > 1 && user.canUseTopic(src, BE_CLOSE, NO_DEXTERY))
-		set_APTFT()
+		set_APTFT(user)
 		return TRUE
 
-/obj/item/reagent_containers/proc/set_APTFT() //set amount_per_transfer_from_this
+/obj/item/reagent_containers/proc/set_APTFT(mob/user) //set amount_per_transfer_from_this
 	set name = "Set Transfer Amount"
 	set category = "Object"
 	set waitfor = FALSE
 	var/N = input("Amount per transfer from this:","[src]") as null|anything in possible_transfer_amounts
 	if(N)
 		amount_per_transfer_from_this = N
-		to_chat(usr, "<span class='notice'>[src]'s transfer amount is now [amount_per_transfer_from_this] units.</span>")
+		balloon_alert(user, "transferring [amount_per_transfer_from_this]u")
 
 /obj/item/reagent_containers/proc/add_initial_reagents()
 	if(list_reagents)
@@ -66,7 +66,7 @@
 					amount_per_transfer_from_this = possible_transfer_amounts[i+1]
 				else
 					amount_per_transfer_from_this = possible_transfer_amounts[1]
-				to_chat(user, "<span class='notice'>[src]'s transfer amount is now [amount_per_transfer_from_this] units.</span>")
+				balloon_alert(user, "transferring [amount_per_transfer_from_this]u")
 				return
 
 /obj/item/reagent_containers/attack(mob/living/M, mob/living/user, attackchain_flags = NONE, damage_multiplier = 1)

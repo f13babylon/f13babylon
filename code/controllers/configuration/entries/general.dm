@@ -517,11 +517,5 @@
 
 /datum/config_entry/string/centcom_ban_db	// URL for the CentCom Galactic Ban DB API
 
-
 /datum/config_entry/flag/atmos_equalize_enabled
 	default = FALSE
-
-// for tgs to ping certain channels. if the channel is tagged with server_status in tgs, it will send a message to that
-// via send2chat("Hello world.", CONFIG_GET(string/discord_channel_serverstatus))
-/datum/config_entry/string/discord_channel_serverstatus
-	config_entry_value = "server_status"

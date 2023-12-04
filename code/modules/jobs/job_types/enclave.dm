@@ -87,7 +87,7 @@
 		/obj/item/pda = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
-		/obj/item/card/id/syndicate/anyone =1
+		/obj/item/card/id/syndicate =1
 		)
 
 /datum/outfit/loadout/cpt_ballistics
@@ -155,7 +155,7 @@
 		/obj/item/pda = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
-		/obj/item/card/id/syndicate/anyone = 1,
+		/obj/item/card/id/syndicate = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/clothing/mask/chameleon = 1
 		)
@@ -206,14 +206,17 @@
 	exp_requirements = 1020
 
 	loadout_options = list(
-		/datum/outfit/loadout/gysgt_ballistics, // APA
-		/datum/outfit/loadout/gysgt_melee, // MCA
+		/datum/outfit/loadout/gysgt_caster,
+		/datum/outfit/loadout/gysgt_gauss,
+		/datum/outfit/loadout/gysgt_spear
 		)
 
 /datum/outfit/job/enclave/peacekeeper/f13gysergeant
 	name = "Enclave Gunnery Sergeant"
 	jobtype = /datum/job/enclave/f13gysergeant
 	accessory = /obj/item/clothing/accessory/enclave/gunnery_sergeant
+	head = /obj/item/clothing/head/helmet/f13/enclave/marine
+	suit = /obj/item/clothing/suit/armor/f13/enclave/marine
 	ears = /obj/item/radio/headset/headset_enclave/command
 
 	backpack_contents = list(
@@ -223,30 +226,38 @@
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/megaphone = 1,
-		/obj/item/card/id/syndicate/anyone = 1,
+		/obj/item/card/id/syndicate = 1,
 		/obj/item/clothing/mask/chameleon = 1
 		)
 
-/datum/outfit/loadout/gysgt_ballistics
-	name = "Armored Rifleman"
-	head = /obj/item/clothing/head/helmet/f13/power_armor/x02helmet
-	suit = /obj/item/clothing/suit/armor/f13/power_armor/x02
-
+/datum/outfit/loadout/gysgt_caster
+	name = "Close Quarters Assaultman"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/plasma = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 3
-	)
+		/obj/item/gun/energy/laser/plasma/caster = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 5,
+		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
+		/obj/item/ammo_box/magazine/m45exp = 2,
+		/obj/item/grenade/f13/frag = 1
+		)
 
-/datum/outfit/loadout/gysgt_melee
-	name = "Mobile Rifleman"
-	suit = /obj/item/clothing/suit/armor/f13/enclave/marine
-	head = /obj/item/clothing/head/helmet/f13/enclave/marine
-
+/datum/outfit/loadout/gysgt_gauss
+	name = "Scout Sniper"
+	suit_store = /obj/item/gun/ballistic/automatic/m72
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/plasma = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 3
-	)
+		/obj/item/ammo_box/magazine/m2mm = 2,
+		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
+		/obj/item/ammo_box/magazine/m45exp = 2,
+		/obj/item/grenade/smokebomb = 2
+		)
 
+/datum/outfit/loadout/gysgt_spear
+	name = "Point Defense Assaultman"
+	backpack_contents = list(
+		/obj/item/twohanded/inquis_spear = 1,
+		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
+		/obj/item/ammo_box/magazine/m45exp = 2,
+		/obj/item/grenade/f13/incendiary = 1
+		)
 
 /datum/outfit/job/enclave/peacekeeper/f13gysergeant/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -274,9 +285,9 @@
 	exp_requirements = 780
 
 	loadout_options = list(
-		/datum/outfit/loadout/sgt_plascaster,	// Plasma Caster
-		/datum/outfit/loadout/sgt_sniper, //MK23+Gauss
-		/datum/outfit/loadout/sgt_classic, // MK23+Plasma spear
+		/datum/outfit/loadout/sgt_plasrifle,	// Plasma rifle + Mk23
+		/datum/outfit/loadout/sgt_cqc, //Neostead + Plaspistol
+		/datum/outfit/loadout/sgt_classic, // Assault carbine + Plaspistol
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavesgt
@@ -294,32 +305,45 @@
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/clothing/head/f13/enclave/peacekeeper = 1,
-		/obj/item/card/id/syndicate/anyone = 1,
+		/obj/item/card/id/syndicate = 1,
 		/obj/item/clothing/mask/chameleon = 1
 		)
 
-/datum/outfit/loadout/sgt_plascaster
-	name = "Close Quarters Assaultman"
+/datum/outfit/loadout/sgt_plasrifle
+	name = "Frontline Assaultman"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/plasma/caster = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 5
-		)
-
-/datum/outfit/loadout/sgt_sniper
-	name = "Scout Sniper"
-	suit_store = /obj/item/gun/ballistic/automatic/m72
-	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m2mm = 2,
+		/obj/item/gun/energy/laser/plasma = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 5,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 2,
+		/obj/item/grenade/f13/frag = 1,
+		/obj/item/grenade/smokebomb = 1
+		)
+
+/datum/outfit/loadout/sgt_cqc
+	name = "Close Quarters Assaultman"
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/neostead
+	backpack_contents = list(
+		/obj/item/ammo_box/shotgun/slug = 2,
+		/obj/item/ammo_box/shotgun/buck = 2,
+		/obj/item/ammo_box/shotgun/incendiary = 1,
+		/obj/item/gun/energy/laser/plasma/pistol = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/grenade/f13/frag = 1,
+		/obj/item/grenade/smokebomb = 1
 		)
 
 /datum/outfit/loadout/sgt_classic
-	name = "Point Defense Assaultman"
+	name = "Tactical Assaultman"
 	backpack_contents = list(
-		/obj/item/twohanded/inquis_spear = 1,
-		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
-		/obj/item/ammo_box/magazine/m45exp = 2,
+		/obj/item/gun/ballistic/automatic/assault_carbine = 1,
+		/obj/item/ammo_box/magazine/m5mm = 4,
+		/obj/item/attachments/scope = 1,
+		/obj/item/suppressor = 1, //they get a flashlight in their bag
+		/obj/item/gun/energy/laser/plasma/pistol = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/grenade/f13/plasma = 2,
+		/obj/item/grenade/smokebomb = 2
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavesgt/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -366,7 +390,7 @@
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/clothing/head/f13/enclave/peacekeeper = 1,
-		/obj/item/card/id/syndicate/anyone =1
+		/obj/item/card/id/syndicate =1
 		)
 
 /datum/outfit/loadout/acpl_ballistics
@@ -433,7 +457,7 @@
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/clothing/mask/chameleon = 1,
-		/obj/item/card/id/syndicate/anyone =1
+		/obj/item/card/id/syndicate =1
 		)
 
 /datum/outfit/loadout/combatmedic
@@ -448,6 +472,8 @@
 		/obj/item/book/granter/trait/midsurgery = 1,
 		/obj/item/storage/pill_bottle/chem_tin/mentats = 1,
 		/obj/item/ammo_box/magazine/uzim9mm = 2,
+		/obj/item/gun/energy/laser/plasma/pistol/light = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 2
 		)
 
 /datum/outfit/loadout/combatengie
@@ -456,8 +482,8 @@
 	gloves = /obj/item/clothing/gloves/color/yellow
 	head = /obj/item/clothing/head/hardhat/orange
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
-		/obj/item/ammo_box/magazine/m45exp = 2,
+		/obj/item/gun/energy/laser/plasma/pistol/light = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/storage/belt/utility = 1,
 		/obj/item/gun/ballistic/shotgun/police = 1,
 		/obj/item/ammo_box/shotgun/buck = 2,
@@ -501,7 +527,7 @@
 		/obj/item/pda = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/clothing/mask/chameleon = 1,
-		/obj/item/card/id/syndicate/anyone =1,
+		/obj/item/card/id/syndicate =1,
 		/obj/item/clothing/head/f13/enclave/peacekeeper = 1
 		)
 
@@ -510,6 +536,8 @@
 	suit_store = /obj/item/gun/ballistic/automatic/smg/mp5
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/uzim9mm = 2,
+		/obj/item/gun/energy/laser/plasma/pistol/light = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 2
 		)
 
 /datum/outfit/loadout/mobileartillery
@@ -517,6 +545,8 @@
 	suit_store = /obj/item/gun/energy/laser/plasma/pistol
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
+		/obj/item/ammo_box/magazine/m45exp = 2
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavespy/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -560,7 +590,7 @@
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/clothing/mask/chameleon = 1,
-		/obj/item/card/id/syndicate/anyone = 1,
+		/obj/item/card/id/syndicate = 1,
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1,
 		/obj/item/book/granter/crafting_recipe/gunsmith_four=1
 		)
@@ -614,7 +644,7 @@
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/survival = 1,
 		/obj/item/clothing/mask/chameleon = 1,
-		/obj/item/card/id/syndicate/anyone =1
+		/obj/item/card/id/syndicate =1
 		)
 
 /datum/outfit/job/enclave/noncombat/enclavepilot/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -747,7 +777,7 @@
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/melee/classic_baton = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
-		/obj/item/gun/energy/laser/plasma/pistol/remnant/is = 1,
+		/obj/item/gun/energy/laser/plasma/pistol = 1,
 		/obj/item/storage/belt/holster = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/storage/survivalkit_aid_adv = 1,
@@ -779,7 +809,7 @@
 
 // Special - 'Borg
 /datum/job/enclave/encborg
-	title = "Synthetic"
+	title = "Enclave Synthetic"
 	flag = F13ENCCYBORG
 	total_positions = 1
 	spawn_positions = 1
@@ -795,3 +825,4 @@
 	ADD_TRAIT(R, TRAIT_TECHNOPHREAK, TRAIT_GENERIC)
 	R.apply_pref_name("cyborg", M.client)
 	R.gender = NEUTER
+	R.forceMove(pick(GLOB.enclave_borg_start))
