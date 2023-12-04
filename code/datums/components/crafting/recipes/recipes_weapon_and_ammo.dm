@@ -924,6 +924,11 @@
 				/obj/item/advanced_crafting_components/receiver = 1,
 				/obj/item/stack/crafting/metalparts = 2,
 				)
+	tools = list(WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_available = FALSE
 
 //aep7
 /datum/crafting_recipe/AEP7
