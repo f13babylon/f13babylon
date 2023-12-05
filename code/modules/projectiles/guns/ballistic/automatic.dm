@@ -1436,7 +1436,7 @@
 	desc = "A salvaged AN/M2 variant of the M1919 Browning initially meant for use in aircraft that has been turned into a man-portable killing machine. It has a shoulder stock cut from a brush gun with the addition of rear sights and a bipod from a different machine gun, as well as a solenoid trigger. The Legion's infamous bull is carved on the receiver."
 	icon = 'icons/obj/guns/gunfruits2022/lmg.dmi'
 	icon_state = "hmg"
-	item_state = "hmg"
+	item_state = "M38"
 	slot_flags = 0
 	slowdown = 1.5
 	mag_type = /obj/item/ammo_box/magazine/mm762
