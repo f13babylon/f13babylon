@@ -18,6 +18,7 @@
 	slowdown = 0.1
 	icon_state = "supafly"
 	item_state = "supafly"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/raider/supafly/Initialize(mapload) //HQ parts reinforcement
 	. = ..()
@@ -38,6 +39,7 @@
 	desc = "A bunch of metal chaps adorned with severed hands at the waist with a leather plate worn on the left shoulder. Very intimidating."
 	icon_state = "sadist"
 	item_state = "sadist"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/raider/sadist/Initialize(mapload)
 	. = ..()
@@ -52,6 +54,7 @@
 	armor = list("melee" = 30, "bullet" = 25, "laser" = 15, "bio" = 0, "bomb" = 60, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 25)
 	flash_protect = 2
 	slowdown = 0.12
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/raider/blastmaster/Initialize(mapload)
 	. = ..()
@@ -62,6 +65,7 @@
 	desc = "A set of armor made from bulky plastic and rubber. A faded sports team logo is printed in various places. Go Desert Rats!"
 	icon_state = "yankee"
 	item_state = "yankee"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/raider/yankee/Initialize(mapload)
 	. = ..()
@@ -75,6 +79,7 @@
 	item_state = "badlands"
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 10)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/raider/badlands/Initialize(mapload)
 	. = ..()
@@ -87,6 +92,7 @@
 	item_state = "painspike"
 	armor = list("melee" = 25, "bullet" = 30, "laser" = 15, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 15)
 	slowdown = 0.1
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/raider/painspike/Initialize(mapload)
 	. = ..()
@@ -110,6 +116,7 @@
 	icon_state = "combatduster"
 	item_state = "combatduster"
 	slowdown = 0.07
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/raider/combatduster/patrolduster
 	name = "Patrol Duster"
@@ -582,6 +589,7 @@
 	icon_state = "ncr_patrol"
 	item_state = "ncr_patrol"
 	armor = list("melee" = 30, "bullet" = 40, "laser" = 40, "energy" = 15, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 20)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/combat/ncr_patrol/Initialize(mapload)
 	. = ..()
@@ -608,6 +616,7 @@
 	slowdown = 0.03
 	armor = list("melee" = 30, "bullet" = 45, "laser" = 35, "energy" = 10, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20, "wound" = 35)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/rangercombat/Initialize(mapload)
 	. = ..()
@@ -694,6 +703,7 @@
 	item_state = "brotherhood_armor"
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 15, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10, "wound" = 10)
 	slowdown = 0.13
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate/mk2
 	name = "reinforced knight armor"
@@ -702,6 +712,7 @@
 	item_state = "brotherhood_armor_mk2"
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 55, "energy" = 25, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 20)
 	slowdown = 0.15
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/outcast
 	name = "brotherhood armor" //unused?
@@ -718,6 +729,7 @@
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	armor = list("melee" = 33, "bullet" = 25, "laser" = 33,  "energy" = 25, "bomb" = 20, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 10)
 	slowdown = 0.025 // zoom zoom
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 
 /obj/item/clothing/suit/armor/f13/town/mayor
@@ -732,6 +744,7 @@
 	icon_state = "towntrench_heavy"
 	armor = list("melee" = 45, "bullet" = 50, "laser" = 45,  "energy" = 15, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 20)
 	slowdown = 0.12
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/town/chief
 	name = "BPD Chief's jacket"
@@ -754,6 +767,7 @@
 	icon_state = "towntrench_medium"
 	armor = list("melee" = 45, "bullet" = 33, "laser" = 45,  "energy" = 15, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 10)
 	slowdown = 0.08 //combat armor but less slowdown
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/town/deputy/Initialize(mapload)
 	. = ..()
@@ -861,6 +875,7 @@
 	slowdown = 0.3
 	requires_training = FALSE
 	powered = FALSE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 
 //Vault
@@ -883,6 +898,7 @@
 	icon_state = "police_officer"
 	item_state = "police_officer"
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/f13/police/lieutenant
 	name = "police lieutenant's jacket"
@@ -892,6 +908,7 @@
 	icon_state = "police_lieutenant"
 	item_state = "police_lieutenant"
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/f13/police/chief
 	name = "police chief's jacket"
@@ -901,6 +918,7 @@
 	icon_state = "police_chief"
 	item_state = "police_chief"
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 //SWAT
 
@@ -952,6 +970,7 @@
 	item_state = "armor_enclave_officer"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	armor = list("melee" = 55, "bullet" = 55, "laser" = 55, "energy" = 30, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 20) //equivalent to HK
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 
 /obj/item/clothing/suit/armor/f13/enclavetrenchcoat/Initialize(mapload) //HQ parts reinforcement
@@ -998,6 +1017,7 @@
 	desc = "This is the original armor the NCR Ranger Combat armor was based off of. An awe inspiring suit of armor used by the legendary Desert Rangers."
 	icon_state = "desert_ranger"
 	item_state = "desert_ranger"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 //NCR
 

@@ -580,6 +580,7 @@
 	desc = "A matte grey set of ultralight composite above a carefully padded noise-absorbant suit. This unit, used by Chinese special forces during the great war, looks to have had it's fusion matrix removed, and is all but a fashion statement now."
 	icon_state = "stealthsuit"
 	item_state = "stealthsuit"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/bearvest //This is being used as Donator gear, check as to whether MidgetDragon still donating before using for anything else.
 	name = "Great Bear Vest"
@@ -1010,6 +1011,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/uniform.dmi'
 	icon_state = "police_officer"
 	item_state = "police_officer"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/police/lieutenant
 	name = "police lieutenant's uniform"
@@ -1018,6 +1020,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/uniform.dmi'
 	icon_state = "police_lieutenant"
 	item_state = "police_lieutenant"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/police/chief
 	name = "police chief's uniform"
@@ -1026,6 +1029,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/uniform.dmi'
 	icon_state = "police_chief"
 	item_state = "police_chief"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/police/formal
 	name = "police formal uniform"
