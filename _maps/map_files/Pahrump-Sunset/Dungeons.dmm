@@ -17030,7 +17030,7 @@
 	faction = list("raider","wastebot","hostile","supermutant","ghoul");
 	aggro_vision_range = 15;
 	vision_range = 15;
-	minimum_distance = 8;
+	minimum_distance = 0;
 	extra_projectiles = 4;
 	rapid_melee = 2;
 	name = "The Boss";
