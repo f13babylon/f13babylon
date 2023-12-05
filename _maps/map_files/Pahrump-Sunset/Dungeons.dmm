@@ -17030,7 +17030,7 @@
 	faction = list("raider","wastebot","hostile","supermutant","ghoul");
 	aggro_vision_range = 15;
 	vision_range = 15;
-	minimum_distance = 1;
+	minimum_distance = 8;
 	extra_projectiles = 4;
 	rapid_melee = 2;
 	name = "The Boss";
@@ -17038,7 +17038,8 @@
 	retreat_distance = 0;
 	melee_damage_upper = 40;
 	maxHealth = 1000;
-	health = 1000
+	health = 1000;
+	environment_smash = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
@@ -27657,7 +27658,7 @@ sfc
 sfc
 sfc
 ciA
-tGX
+lOD
 sfc
 sjT
 fgd
@@ -28171,7 +28172,7 @@ sfc
 cFz
 sfc
 sfc
-tGX
+lOD
 wba
 sfc
 oPn
@@ -28428,7 +28429,7 @@ sfc
 pIZ
 nsN
 bke
-tGX
+lOD
 wba
 sfc
 bke
@@ -28685,7 +28686,7 @@ sfc
 tVF
 sfc
 ciA
-tGX
+lOD
 wba
 wYa
 sfc
@@ -28942,7 +28943,7 @@ sfc
 pIZ
 sfc
 sfc
-tGX
+lOD
 hTg
 vMb
 vMb
@@ -29199,11 +29200,11 @@ lOD
 uLm
 mxj
 mxj
-tGX
-tGX
-tGX
-tGX
-tGX
+lOD
+lOD
+lOD
+lOD
+lOD
 tGX
 tGX
 aTA
@@ -34335,7 +34336,7 @@ akh
 daU
 lfv
 leL
-puk
+lOD
 tij
 tFv
 pIZ
@@ -34592,7 +34593,7 @@ akh
 nph
 bVH
 bVH
-puk
+lOD
 sfc
 sfc
 oEm
@@ -34849,7 +34850,7 @@ akh
 nph
 bVH
 bVH
-puk
+lOD
 tJs
 wYa
 pIZ
@@ -35106,7 +35107,7 @@ akh
 nph
 kCV
 bVH
-puk
+lOD
 tJs
 sfc
 oEm
@@ -35363,7 +35364,7 @@ akh
 nph
 bVH
 bVH
-puk
+lOD
 kZb
 sfc
 sfc
@@ -35620,7 +35621,7 @@ akh
 nph
 bVH
 bVH
-puk
+lOD
 tJs
 sfc
 sfc
@@ -35875,17 +35876,17 @@ akh
 akh
 akh
 hiB
-puk
-puk
-puk
-puk
-puk
-puk
-puk
-puk
-puk
-puk
-puk
+lOD
+lOD
+lOD
+lOD
+lOD
+lOD
+lOD
+lOD
+lOD
+lOD
+lOD
 tGX
 tGX
 aTA
@@ -36132,15 +36133,15 @@ akh
 akh
 rDA
 pSm
-puk
+lOD
 eII
 kIC
 kIC
 eII
-puk
+lOD
 xWB
 pYx
-puk
+lOD
 hag
 lpb
 tGX
@@ -36394,10 +36395,10 @@ pYx
 pYx
 pYx
 pYx
-puk
+lOD
 hjM
 ejd
-puk
+lOD
 uiH
 aOl
 tGX
@@ -36646,15 +36647,15 @@ akh
 akh
 akh
 daU
-puk
+lOD
 fRH
 rdM
 fRH
 pYx
-puk
+lOD
 bGB
 pYx
-puk
+lOD
 kdT
 tDv
 tGX
@@ -36908,10 +36909,10 @@ pYx
 kzS
 pYx
 pYx
-puk
+lOD
 cqI
 kdT
-puk
+lOD
 pYx
 jrR
 tGX
@@ -37165,10 +37166,10 @@ pYx
 pYx
 jBt
 pYx
-puk
+lOD
 aOl
 ejd
-puk
+lOD
 uiH
 rvz
 tGX
@@ -37422,10 +37423,10 @@ uUV
 pYx
 pYx
 uUV
-puk
+lOD
 lpb
 pYx
-puk
+lOD
 pYx
 cUl
 tGX
@@ -37674,15 +37675,15 @@ khx
 akh
 akh
 hiB
-puk
-puk
-puk
+lOD
+lOD
+lOD
 jhJ
-puk
-puk
-puk
+lOD
+lOD
+lOD
 gPL
-puk
+lOD
 gYY
 puk
 tGX
@@ -37931,7 +37932,7 @@ akh
 akh
 akh
 nph
-puk
+lOD
 pYx
 dFB
 pYx
@@ -38188,7 +38189,7 @@ akh
 akh
 khx
 nph
-puk
+lOD
 pYx
 pYx
 pYx
@@ -38445,7 +38446,7 @@ akh
 akh
 akh
 nph
-puk
+lOD
 pYx
 gHp
 cfX
@@ -38453,7 +38454,7 @@ pYx
 fRH
 cfX
 pYx
-puk
+lOD
 hBD
 uJD
 tGX
@@ -38702,7 +38703,7 @@ rDA
 gLT
 vCf
 nph
-puk
+lOD
 kdT
 cfX
 rdM
@@ -38710,7 +38711,7 @@ pYx
 uGl
 gHp
 kdT
-puk
+lOD
 uiH
 eAR
 tGX
@@ -38959,7 +38960,7 @@ rDA
 rDA
 rDA
 nph
-puk
+lOD
 pYx
 pYx
 pYx
@@ -38967,7 +38968,7 @@ teJ
 pYx
 pYx
 pYx
-puk
+jcA
 vuu
 nZo
 tGX
@@ -39216,7 +39217,7 @@ akh
 akh
 akh
 nph
-puk
+lOD
 pYx
 fRH
 cfX
@@ -39224,7 +39225,7 @@ pYx
 rdM
 cfX
 pYx
-puk
+lOD
 tTD
 hKP
 tGX
@@ -39473,7 +39474,7 @@ akh
 akh
 akh
 nph
-puk
+lOD
 pYx
 cfX
 rdM
@@ -39481,7 +39482,7 @@ mVL
 cfX
 rdM
 pYx
-puk
+jcA
 pYx
 uul
 tGX
@@ -39730,7 +39731,7 @@ khx
 iEs
 akh
 hiB
-puk
+lOD
 pYx
 uUV
 pYx
@@ -39738,7 +39739,7 @@ pYx
 pYx
 uUV
 pYx
-puk
+lOD
 uiH
 xwd
 tGX
