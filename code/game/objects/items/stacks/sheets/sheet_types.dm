@@ -344,6 +344,11 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 	null, \
 	new/datum/stack_recipe("apiary", /obj/structure/beebox, 40, time = 60, one_per_turf = TRUE, on_floor = TRUE),\
 	new/datum/stack_recipe("honey frame", /obj/item/honey_frame, 5, time = 15, one_per_turf = TRUE, on_floor = TRUE),\
+	null, \
+	new/datum/stack_recipe("picture frame", /obj/item/wallframe/picture, 2, time = 5),\
+	new/datum/stack_recipe("painting frame", /obj/item/wallframe/painting, 2, time = 5),\
+	new/datum/stack_recipe("easel", /obj/structure/easel, 5, time = 15, one_per_turf = TRUE, on_floor = TRUE),\
+	null, \
 	))
 
 /obj/item/stack/sheet/mineral/wood
