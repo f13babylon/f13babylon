@@ -348,7 +348,6 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 	new/datum/stack_recipe("picture frame", /obj/item/wallframe/picture, 2, time = 5),\
 	new/datum/stack_recipe("painting frame", /obj/item/wallframe/painting, 2, time = 5),\
 	new/datum/stack_recipe("easel", /obj/structure/easel, 5, time = 15, one_per_turf = TRUE, on_floor = TRUE),\
-	null, \
 	))
 
 /obj/item/stack/sheet/mineral/wood
