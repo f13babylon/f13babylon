@@ -282,7 +282,7 @@
 	body_parts_covered = CHEST|GROIN
 	can_adjust = FALSE
 	fitted = FEMALE_UNIFORM_TOP
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/costume/qipao/white
 	name = "White Qipao"
@@ -303,7 +303,7 @@
 	item_state = "cheong"
 	body_parts_covered = CHEST|GROIN
 	can_adjust = FALSE
-	mutantrace_variation = USE_TAUR_CLIP_MASK
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/costume/cheongsam/white
 	name = "White Cheongsam"
@@ -312,7 +312,6 @@
 	item_state = "cheongw"
 	body_parts_covered = CHEST|GROIN
 	can_adjust = FALSE
-	mutantrace_variation = NONE
 
 /obj/item/clothing/under/costume/cheongsam/red
 	name = "Red Cheongsam"
