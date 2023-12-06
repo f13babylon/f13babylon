@@ -176,6 +176,31 @@
 	reqs = list(/obj/item/circuitboard/machine/vr_sleeper = 1)
 	tools = list(/obj/item/multitool)
 
+/datum/crafting_recipe/scooter
+	name = "Scooter"
+	reqs = list(/obj/item/stack/sheet/plasteel = 15,
+				/obj/item/stack/cable_coil = 10,
+				/obj/item/stack/crafting/electronicparts = 3,
+				/obj/item/stack/crafting/goodparts = 3,
+				/obj/item/stack/crafting/metalparts = 5,
+				/obj/item/stack/sheet/glass = 3,
+				/obj/item/stack/sheet/metal = 20
+				)
+	result = /obj/vehicle/ridden/fuel/motorcycle/scooter
+	tools = list(TOOL_SCREWDRIVER, TOOL_MULTITOOL, TOOL_WIRECUTTER, TOOL_WELDER, TOOL_WRENCH)
+	time = 60 SECONDS
+	category = CAT_CRAFTING
+	subcategory = CAT_SCAVENGING
+
+/datum/crafting_recipe/scooter_key
+	name = "Scooter Key"
+	reqs = list(/obj/item/stack/crafting/goodparts = 1)
+	tools = list(TOOL_WIRECUTTER, TOOL_WELDER)
+	result = /obj/item/key/scooter
+	time = 5 SECONDS
+	category = CAT_CRAFTING
+	subcategory = CAT_SCAVENGING
+
 //////////////////////
 //Burial & Execution//
 //////////////////////
