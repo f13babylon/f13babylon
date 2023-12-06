@@ -58,7 +58,6 @@
 
 /turf/closed/wall/f13/wood/house/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/soap))
-		var/obj/item/soap/I = W
 		if(!do_after(user, 5 SECONDS, FALSE, src))
 			to_chat(user, "<span class='warning'>You must stand still to clean the wall!</span>")
 			return
