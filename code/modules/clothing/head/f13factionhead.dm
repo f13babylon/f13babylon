@@ -510,7 +510,8 @@
 	desc = "A standard issue NCR steel helmet, issued with an additional pair of storm goggles for weather resistance."
 	icon_state = "steelpot_goggles"
 	item_state = "steelpot_goggles"
-	alt_toggle_message = "You push the goggles down "
+	toggle_message = "You pull the goggles up on the"
+	alt_toggle_message = "You push the goggles down on the"
 	can_toggle = 1
 	flags_inv = HIDEEARS
 	actions_types = list(/datum/action/item_action/toggle)
@@ -529,7 +530,7 @@
 			flags_inv ^= visor_flags_inv
 			flags_cover ^= visor_flags_cover
 			icon_state = "[initial(icon_state)][up ? "up" : ""]"
-			to_chat(user, "[up ? alt_toggle_message : toggle_message] \the [src]")
+			to_chat(user, "[up ? alt_toggle_message : toggle_message] \the [src].")
 
 			user.update_inv_head()
 			if(iscarbon(user))
@@ -1315,8 +1316,8 @@
 	desc = "A standard issue NCR Infantry helmet, with a pair of goggles attached to it."
 	icon_state = "ncr_goggles_helmet"
 	item_state = "ncr_goggles_helmet"
-	toggle_message = "You pull the goggles down under "
-	alt_toggle_message = "You push the goggles up onto the "
+	toggle_message = "You pull the goggles up on the"
+	alt_toggle_message = "You push the goggles down on the"
 	can_toggle = 1
 	flags_inv = HIDEEARS
 	actions_types = list(/datum/action/item_action/toggle)
@@ -1335,7 +1336,7 @@
 			flags_inv ^= visor_flags_inv
 			flags_cover ^= visor_flags_cover
 			icon_state = "[initial(icon_state)][up ? "up" : ""]"
-			to_chat(user, "[up ? alt_toggle_message : toggle_message] \the [src]")
+			to_chat(user, "[up ? alt_toggle_message : toggle_message] \the [src].")
 
 			user.update_inv_head()
 			if(iscarbon(user))
