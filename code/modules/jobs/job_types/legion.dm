@@ -361,7 +361,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 
 	loadout_options = list(
-		/datum/outfit/loadout/decvetbull,	// Towershield, 10mm SMG, Spatha
+		/datum/outfit/loadout/decvetbull,	// Chinese LMG, Advanced 9mm pistol, Extra Bitters
 		/datum/outfit/loadout/decvetwolf,	// Thermic lance, Carl Gustaf, Extra Bitters
 		/datum/outfit/loadout/decvetsnake, // Brush gun, Spatha, Extra Bitters
 		/datum/outfit/loadout/decvetbrave, // Auto-5, 44 revolver, ballistic fist
@@ -392,8 +392,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	r_pocket = /obj/item/flashlight/lantern
 	box = /obj/item/storage/survivalkit_tribal/chief
 	backpack_contents = list(
-		/obj/item/ammo_box/a357 = 1,
-		/obj/item/gun/ballistic/revolver/colt357 = 1,
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/storage/bag/money/small/legofficers = 1,
 		/obj/item/binoculars = 1,
@@ -401,12 +399,13 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/loadout/decvetbull
 	name = "Mark of The Bull"
-	head = /obj/item/clothing/head/helmet/f13/legion/heavy
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/pistol14
+	head = /obj/item/clothing/head/helmet/f13/legion/vet/decan
+	suit_store = /obj/item/gun/ballistic/automatic/rpd
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m10mm_adv = 2,
-		/obj/item/melee/onehanded/machete/spatha = 1,
-		/obj/item/shield/riot/tower = 1
+		/obj/item/ammo_box/magazine/rpd = 1,
+		/obj/item/gun/ballistic/automatic/pistol/beretta = 1,
+		/obj/item/ammo_box/magazine/m9mmds = 2,
+		/obj/item/reagent_containers/pill/patch/bitterdrink = 2
 		)
 
 /datum/outfit/loadout/decvetwolf
@@ -628,7 +627,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 	loadout_options = list(
 		/datum/outfit/loadout/vexbear,	//	Lever shotgun, Ripper
-		/datum/outfit/loadout/vexfox,	//	Chinese LMG, Spartha
+		/datum/outfit/loadout/vexfox,	//	14mm SMG, Spatha
 		)
 
 	matchmaking_allowed = list(
@@ -681,9 +680,9 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/outfit/loadout/vexfox
 	name = "Desert Fox"
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/vexil
-	suit_store = /obj/item/gun/ballistic/automatic/rpd
+	suit_store = /obj/item/gun/ballistic/automatic/smg/smg14
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/rpd = 1,
+		/obj/item/ammo_box/magazine/smg14 = 2,
 		/obj/item/melee/onehanded/machete/spatha = 1,
 		)
 
