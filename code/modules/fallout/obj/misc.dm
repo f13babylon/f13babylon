@@ -332,14 +332,29 @@
 			update_icon()
 			removing = FALSE
 		else
-			return removing = FALSE
+			removing = FALSE
+			..()
 
+/*
 /obj/item/flag/dropped(mob/user)
 	..()
 	anchored = 1
+*/
 
 /obj/item/flag/throw_at(atom/target, range, speed, mob/thrower, spin=1, diagonals_first)
 	dropped(thrower)
+
+/obj/item/flag/AltClick(mob/user)
+	. = ..()
+	if(!user.canUseTopic(src, BE_CLOSE))
+		return
+
+	visible_message("<span class='notice'>[user] [anchored ? "un" : ""]secures the flag pole.</span>")
+	anchored = !anchored
+
+/obj/item/flag/examine(mob/user)
+	. = ..()
+	. += "<span class='boldnotice'>Alt click to [anchored ? "un" : ""]secure the flag.</span>"
 ////////Viper stuff////// subject to change, but this way was simple
 /obj/item/viper_venom
 	name = "Viper venom"
