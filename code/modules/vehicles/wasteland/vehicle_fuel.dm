@@ -44,7 +44,8 @@
 	fuel_holder.reagents.remove_reagent(/datum/reagent/fuel,fuel_wasting)
 
 	if(!fuel_holder.reagents.get_reagent_amount(/datum/reagent/fuel))
-		StopEngine()
+		visible_message("<span class='warning'>The [src]'s engine shudders and dies!</span>")
+		stop_engine()
 
 /obj/vehicle/ridden/fuel/start_engine()
 	if(!fuel_holder.reagents.get_reagent_amount(/datum/reagent/fuel))
