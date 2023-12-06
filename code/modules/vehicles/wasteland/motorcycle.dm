@@ -107,6 +107,36 @@
 	var/datum/component/riding/D = LoadComponent(/datum/component/riding)
 	D.vehicle_move_delay = 0.7
 
+/obj/vehicle/ridden/fuel/motorcycle/scooter
+	name = "scooter"
+	desc = "A scooter that has seen some use. The worn engine chews through fuel, but can still get you where you need to go."
+	icon_state = "scooter"
+	idle_wasting = 0.65 //normally 0.5
+	move_wasting = 0.25 //normally 0.1
+	fuel = 600 //normally 600
+	max_fuel = 600
+	key_type = /obj/item/key/scooter
+
+/obj/vehicle/ridden/fuel/motorcycle/scooter/Initialize(mapload)
+	. = ..()
+	var/datum/component/riding/D = LoadComponent(/datum/component/riding)
+	D.vehicle_move_delay = 1.1 //Normal motorbike(s) have a move delay of 1. Higher = slower speed, so the scooter is not as fast as a good bike.
+
+	D.set_riding_offsets(RIDING_OFFSET_ALL, list(TEXT_NORTH = list(0, 4), TEXT_SOUTH = list(0, 5), TEXT_EAST = list(-2, 8), TEXT_WEST = list(-1, 8)))
+	D.set_vehicle_dir_offsets(NORTH, -16, -16)
+	D.set_vehicle_dir_offsets(SOUTH, -16, -16)
+	D.set_vehicle_dir_offsets(EAST, -18, 0)
+	D.set_vehicle_dir_offsets(WEST, -18, 0)
+
+/obj/item/key/scooter
+	name = "scooter key"
+	desc = "A keyring with a small steel key.<br>By the look of the key cuts it likely belongs to a scooter."
+	icon = 'icons/fallout/vehicles/small_vehicles.dmi'
+
+/obj/item/key/scooter/Initialize(mapload)
+	. = ..()
+	icon_state = pick("key-bike-r","key-bike-y","key-bike-g","key-bike-b")
+
 /*
  * Handlebars
  */
