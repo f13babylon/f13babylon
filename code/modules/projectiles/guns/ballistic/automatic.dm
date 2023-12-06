@@ -1365,11 +1365,13 @@
 	burst_shot_delay = 3
 	is_automatic = TRUE
 	automatic = 1
-	autofire_shot_delay = 2
-	spread = 18
+	autofire_shot_delay = 1.5
+	spread = 12
 	can_attachments = FALSE
 	actions_types = null
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
+	extra_damage = -7
+	extra_penetration = 0.1
 
 //BAR
 /obj/item/gun/ballistic/automatic/bar
@@ -1399,17 +1401,17 @@
 	autofire_shot_delay = 2.45
 	spread = 5
 	recoil = 0.2
-	extra_speed = 100
+	extra_speed = 250
 	zoomable = TRUE
 	zoom_amt = 8
 	zoom_out_amt = 9
 	icon_state = "MONITOR"
 	item_state = "BAR"
-	extra_damage = -4	//For 30 total
-	extra_penetration = 0.15
+	extra_damage = -3
+	extra_penetration = 0.17
 
 //CHINESE LMG
-/obj/item/gun/ballistic/automatic/rpd
+/obj/item/gun/ballistic/automatic/rpd		//Hi, I don't spawn anywhere. Put me in a loot pool!
 	name = "chinese light machine gun"
 	desc = "A restored variant of the chinese assault rifle re-chambered to 5mm that feeds from drums, featuring a heavy barrel and a full stock to go with its improved internal mechanism."
 	icon = 'icons/obj/guns/gunfruits2022/lmg.dmi'
@@ -1438,14 +1440,15 @@
 	icon_state = "hmg"
 	item_state = "M38"
 	slot_flags = 0
-	slowdown = 1.5
+	slowdown = 1.3
 	mag_type = /obj/item/ammo_box/magazine/mm762
 	burst_shot_delay = 1.5
 	is_automatic = TRUE
 	automatic = 1
 	autofire_shot_delay = 2
 	fire_delay = 2
-	spread = 20
+	spread = 12
+	extra_damage = -5
 	can_attachments = FALSE
 	var/cover_open = FALSE
 	var/require_twohands = FALSE
