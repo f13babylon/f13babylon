@@ -1370,6 +1370,7 @@
 	can_attachments = FALSE
 	actions_types = null
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
+	extra_penetration = 0.05
 
 //BAR
 /obj/item/gun/ballistic/automatic/bar
