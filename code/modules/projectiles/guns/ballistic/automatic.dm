@@ -1415,8 +1415,8 @@
 	icon = 'icons/obj/guns/gunfruits2022/lmg.dmi'
 	icon_state = "rpd"
 	item_state = "handmade_rifle"
-	slowdown = 1
-	recoil = 0.85
+	slowdown = 0.6
+	recoil = 0.5
 	mag_type = /obj/item/ammo_box/magazine/rpd
 	fire_delay = 2
 	burst_shot_delay = 3
