@@ -197,7 +197,7 @@
 /obj/machinery/door/airlock/hatch{
 	req_access_txt = "120"
 	},
-/turf/open/indestructible/ground/inside/mountain,
+/turf/open/floor/plating/tunnel,
 /area/f13/underground/cave)
 "aiH" = (
 /obj/structure/chair{
@@ -2422,6 +2422,15 @@
 "cZa" = (
 /turf/open/floor/f13/wood,
 /area/f13/legion)
+"cZe" = (
+/obj/machinery/light{
+	light_color = "#e8eaff"
+	},
+/obj/structure/nest/ghoul{
+	max_mobs = 4
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/city)
 "cZR" = (
 /obj/structure/rack,
 /obj/machinery/light/small{
@@ -3317,6 +3326,9 @@
 /obj/item/stock_parts/cell/ammo/mfc,
 /turf/open/floor/plasteel/darkred/side,
 /area/f13/vault)
+"dXi" = (
+/turf/open/floor/plating/tunnel,
+/area/f13/underground/cave)
 "dXl" = (
 /obj/structure/flora/ausbushes/palebush,
 /obj/structure/flora/ausbushes/fullgrass{
@@ -3764,7 +3776,8 @@
 	melee_damage_upper = 20;
 	rapid_melee = 2;
 	health = 200;
-	maxHealth = 200
+	maxHealth = 200;
+	armour_penetration = 0.3
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
@@ -3826,6 +3839,18 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/caves)
+"eAw" = (
+/mob/living/simple_animal/hostile/renegade/meister{
+	retreat_distance = 1;
+	check_friendly_fire = 0;
+	aggro_vision_range = 14;
+	armour_penetration = 0.5;
+	extra_projectiles = 6
+	},
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
+	},
+/area/f13/city)
 "eAI" = (
 /obj/machinery/chem_dispenser,
 /turf/open/floor/f13{
@@ -4756,10 +4781,7 @@
 	},
 /area/f13/caves)
 "fHk" = (
-/obj/structure/closet,
-/obj/effect/spawner/lootdrop/f13/armor/tier4,
-/obj/effect/spawner/lootdrop/f13/weapon/melee/random_high,
-/obj/effect/spawner/lootdrop/f13/weapon/melee/random_high,
+/obj/structure/nest/supermutant,
 /turf/open/floor/f13,
 /area/f13/city)
 "fHH" = (
@@ -4868,6 +4890,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
+"fOO" = (
+/obj/structure/closet,
+/obj/effect/spawner/lootdrop/f13/armor/tier4,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/random_high,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/random_mid,
+/obj/effect/spawner/lootdrop/f13/armor/tier4,
+/turf/open/floor/f13,
+/area/f13/city)
 "fPw" = (
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/bunker)
@@ -5450,9 +5480,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/vault)
 "gCg" = (
-/obj/structure/car/rubbish3,
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess2"
+	},
+/area/f13/underground/cave)
 "gCl" = (
 /obj/machinery/door/window{
 	dir = 4
@@ -5672,7 +5703,8 @@
 	melee_damage_upper = 20;
 	rapid_melee = 2;
 	health = 200;
-	maxHealth = 200
+	maxHealth = 200;
+	armour_penetration = 0.3
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -6299,6 +6331,10 @@
 "hyL" = (
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/bunker)
+"hzc" = (
+/obj/item/renegade_flag,
+/turf/closed/wall/mineral/wood,
+/area/f13/city)
 "hAm" = (
 /obj/machinery/hydroponics/soil/crafted,
 /mob/living/simple_animal/hostile/renegade/drifter{
@@ -7682,6 +7718,10 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
+"jcW" = (
+/obj/item/renegade_flag,
+/turf/closed/indestructible/f13vaultrusted,
+/area/f13/city)
 "jda" = (
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -8078,7 +8118,8 @@
 	melee_damage_upper = 20;
 	rapid_melee = 2;
 	health = 200;
-	maxHealth = 200
+	maxHealth = 200;
+	armour_penetration = 0.3
 	},
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
@@ -8092,6 +8133,12 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
+"jBC" = (
+/obj/machinery/porta_turret/syndicate{
+	faction = list("raider","hostile","ghoul","supermutant")
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/city)
 "jBP" = (
 /obj/structure/spider/stickyweb,
 /turf/open/floor/plasteel/barber{
@@ -8939,6 +8986,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/vault)
+"kCw" = (
+/obj/structure/nest/supermutant/ranged,
+/turf/open/floor/f13,
+/area/f13/city)
 "kCE" = (
 /obj/machinery/light{
 	dir = 8;
@@ -11136,7 +11187,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "nfN" = (
-/obj/machinery/porta_turret/syndicate,
+/obj/machinery/porta_turret/syndicate{
+	faction = list("raider","hostile","ghoul","supermutant")
+	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "ngb" = (
@@ -11227,7 +11280,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/vault)
 "nlL" = (
-/mob/living/simple_animal/hostile/ghoul/legendary,
+/mob/living/simple_animal/hostile/ghoul/legendary{
+	obj_damage = 500
+	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/city)
 "nlM" = (
@@ -12727,9 +12782,11 @@
 /area/f13/caves)
 "oPn" = (
 /mob/living/simple_animal/hostile/renegade/meister{
-	retreat_distance = 0;
+	retreat_distance = 1;
 	check_friendly_fire = 0;
-	aggro_vision_range = 14
+	aggro_vision_range = 14;
+	armour_penetration = 0.5;
+	extra_projectiles = 6
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
@@ -13616,6 +13673,18 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
+"pMm" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/porta_turret/syndicate{
+	faction = list("raider","hostile","ghoul","supermutant")
+	},
+/turf/open/floor/f13{
+	dir = 1;
+	icon_state = "yellowsiding"
+	},
+/area/f13/city)
 "pMy" = (
 /obj/structure/rack,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
@@ -14230,7 +14299,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "qtm" = (
-/mob/living/simple_animal/hostile/ghoul/legendary,
+/mob/living/simple_animal/hostile/ghoul/legendary{
+	obj_damage = 500
+	},
 /turf/open/floor/f13,
 /area/f13/wasteland)
 "qtK" = (
@@ -14437,7 +14508,9 @@
 /area/f13/vault)
 "qHp" = (
 /obj/structure/chair/f13foldupchair,
-/mob/living/simple_animal/hostile/renegade/defender,
+/mob/living/simple_animal/hostile/renegade/defender{
+	armour_penetration = 0.4
+	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "qHs" = (
@@ -15202,7 +15275,9 @@
 	},
 /area/f13/ncr)
 "rFo" = (
-/mob/living/simple_animal/hostile/renegade/defender,
+/mob/living/simple_animal/hostile/renegade/defender{
+	armour_penetration = 0.4
+	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "rGK" = (
@@ -15540,9 +15615,9 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "sdU" = (
-/obj/structure/car/rubbish4,
+/obj/structure/window/fulltile/ruins,
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
+/area/f13/city)
 "sdW" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/broken{
@@ -15595,6 +15670,16 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/ahs)
+"sgd" = (
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#e8eaff"
+	},
+/obj/structure/nest/ghoul{
+	max_mobs = 4
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/city)
 "sgg" = (
 /obj/machinery/vending/cola/space_up,
 /turf/open/floor/f13/wood,
@@ -16189,6 +16274,10 @@
 /mob/living/simple_animal/hostile/raider/ranged,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/caves)
+"sTw" = (
+/obj/item/renegade_flag,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "sUw" = (
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
@@ -16376,15 +16465,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/vault)
 "teJ" = (
-/mob/living/simple_animal/hostile/renegade/meister{
-	retreat_distance = 0;
-	check_friendly_fire = 0;
-	aggro_vision_range = 14
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelrusty"
 	},
-/turf/open/floor/f13{
-	icon_state = "freezerfloor"
-	},
-/area/f13/city)
+/area/f13/underground/cave)
 "tfn" = (
 /obj/effect/turf_decal/caution,
 /turf/open/floor/f13/wood,
@@ -16802,7 +16886,9 @@
 /area/f13/vault)
 "tFv" = (
 /obj/structure/chair/office/dark,
-/mob/living/simple_animal/hostile/renegade/defender,
+/mob/living/simple_animal/hostile/renegade/defender{
+	armour_penetration = 0.4
+	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "tGF" = (
@@ -17039,7 +17125,8 @@
 	melee_damage_upper = 40;
 	maxHealth = 1000;
 	health = 1000;
-	environment_smash = 4
+	environment_smash = 4;
+	armour_penetration = 0.4
 	},
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
@@ -17167,7 +17254,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/vault)
 "uba" = (
-/mob/living/simple_animal/hostile/supermutant/legendary,
+/mob/living/simple_animal/hostile/supermutant/legendary{
+	obj_damage = 500
+	},
 /turf/open/floor/f13,
 /area/f13/city)
 "ubM" = (
@@ -17776,7 +17865,9 @@
 /obj/structure/bed/roller,
 /obj/machinery/iv_drip,
 /obj/effect/spawner/lootdrop/trash,
-/mob/living/simple_animal/hostile/renegade/defender,
+/mob/living/simple_animal/hostile/renegade/defender{
+	armour_penetration = 0.4
+	},
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
 	},
@@ -17810,6 +17901,10 @@
 	icon_state = "tunnelchess"
 	},
 /area/f13/bunker)
+"uHG" = (
+/mob/living/simple_animal/hostile/ghoul/glowing,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/city)
 "uHR" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/barber{
@@ -18562,10 +18657,11 @@
 	},
 /area/f13/vault)
 "vto" = (
-/obj/structure/debris/v4,
-/obj/effect/decal/cleanable/oil,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/underground/cave)
 "vty" = (
 /obj/machinery/vending/medical,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
@@ -19879,7 +19975,8 @@
 	melee_damage_upper = 20;
 	rapid_melee = 2;
 	health = 200;
-	maxHealth = 200
+	maxHealth = 200;
+	armour_penetration = 0.3
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
@@ -19925,6 +20022,9 @@
 	},
 /area/f13/bunker)
 "xaJ" = (
+/obj/machinery/porta_turret/syndicate{
+	faction = list("raider","hostile","ghoul","supermutant")
+	},
 /turf/open/floor/f13{
 	dir = 10;
 	icon_state = "yellowsiding"
@@ -20408,6 +20508,14 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/vault)
+"xKA" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelrusty"
+	},
+/area/f13/underground/cave)
 "xLo" = (
 /obj/machinery/door/airlock{
 	name = "Vault 223 storage"
@@ -23548,12 +23656,12 @@ bVH
 bVH
 bVH
 bVH
-vrM
 bVH
 bVH
 bVH
 bVH
-vrM
+bVH
+bVH
 xpR
 bVH
 bVH
@@ -24817,7 +24925,7 @@ bVH
 bVH
 bVH
 bVH
-bRc
+bVH
 bVH
 bVH
 bVH
@@ -25339,7 +25447,7 @@ akh
 akh
 akh
 akh
-gCg
+akh
 akh
 akh
 akh
@@ -26118,7 +26226,7 @@ bVH
 bVH
 bVH
 bVH
-uUX
+bVH
 bVH
 bVH
 bVH
@@ -26355,7 +26463,7 @@ wgF
 wgF
 bVH
 bVH
-bRc
+bVH
 bVH
 bVH
 bVH
@@ -26598,7 +26706,7 @@ bVH
 bVH
 bVH
 uhr
-bVH
+xpR
 xpR
 bVH
 aTA
@@ -26854,8 +26962,8 @@ bVH
 uhr
 bVH
 bVH
-bVH
-bVH
+xpR
+nfN
 xpR
 bVH
 aTA
@@ -27112,9 +27220,9 @@ xpR
 xpR
 xpR
 xpR
-bVH
 xpR
 bVH
+bVH
 aTA
 aTA
 aTA
@@ -27132,13 +27240,13 @@ tGX
 tGX
 tGX
 tGX
-tGX
+jcW
 rgF
 rgF
 rgF
 rgF
 tGX
-tGX
+jcW
 tGX
 tGX
 tGX
@@ -28200,8 +28308,8 @@ jdd
 jdd
 jdd
 jdd
-oQR
-oQR
+jdd
+jdd
 jdd
 jdd
 jdd
@@ -28452,7 +28560,7 @@ sQz
 jdd
 kFM
 sQz
-oQR
+jdd
 sQz
 sQz
 uba
@@ -28709,7 +28817,7 @@ sQz
 jdd
 kFM
 sQz
-oQR
+jdd
 sQz
 sQz
 sQz
@@ -29227,7 +29335,7 @@ jdd
 sQz
 vzd
 oFc
-sQz
+kCw
 sQz
 vzd
 sQz
@@ -29236,7 +29344,7 @@ drj
 sQz
 sQz
 sQz
-sQz
+fHk
 jVk
 sQz
 aJE
@@ -29446,13 +29554,13 @@ uLm
 uLm
 uLm
 uLm
-uLm
+hzc
 bed
 akh
 akh
 nph
 lkS
-bVH
+sTw
 lOD
 sfc
 sfc
@@ -30005,7 +30113,7 @@ xBo
 jdd
 dMF
 sQz
-uba
+sQz
 sQz
 sQz
 sQz
@@ -30252,10 +30360,10 @@ jdd
 kFM
 wqw
 jdd
+fOO
 sQz
 sQz
 sQz
-fHk
 sQz
 sQz
 sQz
@@ -30513,7 +30621,7 @@ jdd
 jdd
 jdd
 jdd
-jdd
+oQR
 jdd
 jdd
 jdd
@@ -30774,9 +30882,9 @@ sQz
 bKu
 jdd
 bKu
-uba
-jdd
 sQz
+jdd
+kCw
 sQz
 sQz
 sQz
@@ -31023,7 +31131,7 @@ jdd
 kFM
 wqw
 jdd
-uba
+sQz
 sQz
 sQz
 jdd
@@ -31031,7 +31139,7 @@ sQz
 ygP
 jdd
 fmO
-sQz
+uba
 oQR
 sQz
 sQz
@@ -32056,7 +32164,7 @@ sQz
 sQz
 nAt
 sQz
-sQz
+fHk
 jdd
 jdd
 jdd
@@ -32784,7 +32892,7 @@ mxj
 sfc
 uLm
 sfc
-wYa
+sfc
 qlG
 ati
 uLm
@@ -32799,7 +32907,7 @@ uLm
 sfc
 tJs
 sVs
-sfc
+wYa
 oOq
 sfc
 uLm
@@ -33041,7 +33149,7 @@ uLm
 uLm
 uLm
 sfc
-sfc
+wYa
 scE
 acf
 uLm
@@ -33056,7 +33164,7 @@ uLm
 hYX
 tJs
 tJs
-wYa
+sfc
 sfc
 sfc
 uLm
@@ -33847,7 +33955,7 @@ gXX
 sQz
 sQz
 jdd
-cIa
+pMm
 sQz
 bGK
 bGK
@@ -34560,7 +34668,7 @@ tvn
 gbD
 pEV
 lcW
-lcW
+jBC
 gbD
 vnO
 bVH
@@ -35614,13 +35722,13 @@ uLm
 uLm
 uLm
 uLm
-uLm
+hzc
 glJ
 rDA
 akh
 nph
 bVH
-bVH
+sTw
 lOD
 tJs
 sfc
@@ -36083,7 +36191,7 @@ uRL
 akh
 akh
 xrg
-xrg
+sdU
 xrg
 lcW
 lcW
@@ -36092,7 +36200,7 @@ pEV
 lcW
 lcW
 lcW
-nlL
+lcW
 lcW
 lcW
 lcW
@@ -36100,7 +36208,7 @@ pEV
 lcW
 xrg
 xrg
-xrg
+sdU
 xrg
 akh
 akh
@@ -37368,7 +37476,7 @@ uRL
 akh
 nGZ
 xrg
-iax
+sgd
 lcW
 lcW
 lcW
@@ -37634,7 +37742,7 @@ lcW
 mAT
 tWx
 svk
-lcW
+uHG
 tWx
 nxB
 lcW
@@ -37642,7 +37750,7 @@ lcW
 lcW
 lcW
 lcW
-hqv
+cZe
 xrg
 akh
 akh
@@ -38700,7 +38808,7 @@ bVH
 uRL
 khx
 rDA
-gLT
+akh
 vCf
 nph
 lOD
@@ -38910,24 +39018,24 @@ uRL
 akh
 akh
 xrg
+sdU
+xrg
+lcW
+lcW
+lcW
+lcW
+lcW
+lcW
+lcW
+lcW
+lcW
+lcW
+lcW
+lcW
+lcW
 xrg
 xrg
-lcW
-lcW
-lcW
-lcW
-lcW
-lcW
-lcW
-lcW
-lcW
-lcW
-lcW
-lcW
-lcW
-xrg
-xrg
-xrg
+sdU
 xrg
 akh
 akh
@@ -38963,8 +39071,8 @@ nph
 lOD
 pYx
 pYx
+eAw
 pYx
-teJ
 pYx
 pYx
 pYx
@@ -39176,7 +39284,7 @@ gbD
 lcW
 lcW
 lcW
-nlL
+lcW
 lcW
 lcW
 gbD
@@ -40239,13 +40347,13 @@ tGX
 tGX
 tGX
 tGX
-tGX
+jcW
 rgF
 rgF
 rgF
 rgF
 tGX
-tGX
+jcW
 tGX
 tGX
 tGX
@@ -40450,7 +40558,7 @@ bVH
 bVH
 qjs
 gbD
-lcW
+jBC
 lcW
 lcW
 gbD
@@ -40471,7 +40579,7 @@ tvn
 gbD
 lcW
 lcW
-pEV
+lcW
 gbD
 vnO
 bVH
@@ -41019,7 +41127,7 @@ nph
 bVH
 bVH
 bVH
-vrM
+bVH
 bVH
 bVH
 bVH
@@ -41522,7 +41630,7 @@ bVH
 bVH
 bVH
 bVH
-vrM
+bVH
 bVH
 uRL
 akh
@@ -42578,7 +42686,7 @@ wgF
 aTA
 bVH
 bVH
-xpR
+bVH
 xpR
 xpR
 xpR
@@ -42836,8 +42944,8 @@ aTA
 bVH
 bVH
 xpR
-uhr
-bVH
+nfN
+xpR
 bVH
 cQP
 bVH
@@ -43068,7 +43176,7 @@ bVH
 bVH
 uRL
 akh
-sdU
+akh
 akh
 akh
 nph
@@ -43093,7 +43201,7 @@ aTA
 bVH
 bVH
 xpR
-uhr
+xpR
 uhr
 bVH
 bVH
@@ -43350,8 +43458,8 @@ aTA
 bVH
 bVH
 vrM
-bVH
-bVH
+uhr
+uhr
 bVH
 bVH
 bVH
@@ -43829,9 +43937,9 @@ aTA
 aTA
 bVH
 bVH
-vrM
 bVH
-uUX
+bVH
+bVH
 bVH
 bVH
 tYp
@@ -44085,9 +44193,9 @@ bVH
 bVH
 bVH
 bVH
-uUX
 bVH
-vto
+bVH
+bVH
 bVH
 bVH
 cQP
@@ -45638,7 +45746,7 @@ bVH
 bVH
 bVH
 xpR
-bVH
+nfN
 bVH
 bVH
 bVH
@@ -45913,9 +46021,9 @@ aTA
 aTA
 aTA
 ldZ
-wgF
-wgF
-wgF
+iCX
+dXi
+xKA
 ldZ
 bVH
 bVH
@@ -46170,9 +46278,9 @@ aTA
 aTA
 aTA
 ldZ
-wgF
-wgF
-wgF
+dXi
+gCg
+gCg
 ldZ
 shC
 bVH
@@ -46409,7 +46517,7 @@ bVH
 bVH
 bVH
 xpR
-nfN
+bVH
 bVH
 bVH
 bVH
@@ -46427,9 +46535,9 @@ aTA
 aTA
 aTA
 ldZ
-wgF
-wgF
-wgF
+dXi
+teJ
+dXi
 ldZ
 shC
 shC
@@ -46684,9 +46792,9 @@ aTA
 aTA
 aTA
 ldZ
-wgF
-wgF
-wgF
+dXi
+teJ
+dXi
 ldZ
 shC
 shC
@@ -46941,9 +47049,9 @@ aTA
 aTA
 aTA
 ldZ
-wgF
-wgF
-wgF
+teJ
+dXi
+gCg
 huB
 wgF
 wgF
@@ -47198,9 +47306,9 @@ aTA
 aTA
 aTA
 ldZ
-wgF
-wgF
-wgF
+vto
+iCX
+iCX
 huB
 wgF
 wgF
@@ -47455,10 +47563,10 @@ aTA
 aTA
 aTA
 ldZ
-shC
+dTc
 tai
 tai
-shC
+dTc
 shC
 shC
 shC
