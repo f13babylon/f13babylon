@@ -4,7 +4,6 @@
 	damage_type = BRUTE
 	damage = 10
 	range = 4
-	dismemberment = 20
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/purple_laser
 	var/pressure_decrease_active = FALSE
 	var/pressure_decrease = 0.25
@@ -49,7 +48,6 @@
 	pass_flags = PASSTABLE | PASSGLASS | PASSGRILLE
 
 /obj/item/projectile/plasma/weak
-	dismemberment = 0
 	damage = 10
 	range = 4
 	mine_range = 0
