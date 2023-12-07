@@ -31,6 +31,8 @@
 			playsound(src, 'sound/weapons/Genhit.ogg', 50, 1)
 			to_chat(user, "<span class='notice'>You build a floor.</span>")
 			ChangeTurf(/turf/open/floor/plating)
+			if(user.a_intent == INTENT_HARM) //This will result in a tile that has sunlight. Place in any other intent if you wish for darkness.
+				smooth_sunlight_border()
 		else
 			to_chat(user, "<span class='warning'>You need one floor tile to build a floor!</span>")
 	else
