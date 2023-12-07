@@ -23,14 +23,24 @@
 
 /turf/open/indestructible/ground/attack_paw(mob/user)
 	return src.attack_hand(user)
-
 /turf/open/indestructible/ground/attackby(obj/item/C, mob/user, params)
 	if(istype(C,/obj/item/stack/tile/plasteel))
 		var/obj/item/stack/tile/plasteel/S = C
 		if(S.use(1))
 			playsound(src, 'sound/weapons/Genhit.ogg', 50, 1)
 			to_chat(user, "<span class='notice'>You build a floor.</span>")
+			var/atom/movable/sunlight/copy_light
+			var/copy_state
+			if(src.vis_contents)
+				for(var/I in vis_contents)
+					if(istype(I, /atom/movable/sunlight))
+						copy_light = I
+						copy_state = sunlight_state
 			ChangeTurf(/turf/open/floor/plating)
+			if(user.a_intent == INTENT_HARM) //This will result in a tile that has sunlight. Place in any other intent if you wish for darkness.
+				if(copy_light != null)
+					sunlight_state = copy_state
+					vis_contents += copy_light
 		else
 			to_chat(user, "<span class='warning'>You need one floor tile to build a floor!</span>")
 	else
