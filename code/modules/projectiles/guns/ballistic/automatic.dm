@@ -1428,7 +1428,6 @@
 	can_attachments = FALSE
 	actions_types = null
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
-	extra_damage = -5 //For a total of 15
 	extra_penetration = -0.15 //For a total of 30%
 
 //M1919 Machinegun				Keywords: LEGION, .308, Automatic, 80 round belt.
