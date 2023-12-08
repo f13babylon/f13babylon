@@ -235,7 +235,7 @@
 	name = "MP-5 SD"
 	desc = "An integrally suppressed submachinegun chambered in 9mm."
 	icon_state = "mp5"
-	item_state = "fnfal"
+	item_state = "shotgun"
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 	mag_type = /obj/item/ammo_box/magazine/msmg9mm
 	suppressed = 1
@@ -247,8 +247,9 @@
 	desc = "A lightweight, burst-fire submachine gun, for when you really want someone dead. Uses 9mm rounds."
 	icon_state = "calico"
 	item_state = "calico"
+	fire_sound = 'sound/f13weapons/9mm.ogg'
 	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_MEDIUM
+	weapon_weight = WEAPON_HEAVY
 	mag_type = /obj/item/ammo_box/magazine/mcalico
 
 //10mm SMG			Keywords: 10mm, 30 Rounds
@@ -278,7 +279,7 @@
 	item_state = "thompson"
 	fire_sound = 'sound/weapons/Gunshot.ogg'
 	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_MEDIUM
+	weapon_weight = WEAPON_HEAVY
 	mag_type = /obj/item/ammo_box/magazine/mthompson
 
 //P90			Keywords: 5mm, 50 Rounds
@@ -288,7 +289,7 @@
 	icon_state = "p90"
 	item_state = "p90"
 	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_MEDIUM
+	weapon_weight = WEAPON_HEAVY
 	mag_type = /obj/item/ammo_box/magazine/mp90
 	fire_sound = 'sound/weapons/Gunshot_smg.ogg'
 	slowdown = 0.2
@@ -301,7 +302,7 @@
 	item_state = "smg14mm"
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
 	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_MEDIUM
+	weapon_weight = WEAPON_HEAVY
 	mag_type = /obj/item/ammo_box/magazine/msmg14mm
 	autofire_shot_delay = 2.15
 	spread = 12
