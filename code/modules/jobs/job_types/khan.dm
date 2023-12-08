@@ -168,7 +168,7 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
 	head = /obj/item/clothing/head/helmet/f13/khan/bandana
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/greasegun = 2,
+		/obj/item/ammo_box/magazine/mgreasegun = 2,
 		/obj/item/book/granter/trait/trekking = 1,
 		/obj/item/book/granter/trait/selection = 1)
 

@@ -2255,16 +2255,13 @@
 	dir = 4
 	},
 /obj/structure/rack,
-/obj/item/gun/ballistic/automatic/smg/american180,
-/obj/item/gun/ballistic/automatic/smg/cg45,
+/obj/item/gun/ballistic/automatic/smg/smg22,
 /obj/item/gun/ballistic/automatic/smg/greasegun,
-/obj/item/gun/ballistic/automatic/smg/mini_uzi,
+/obj/item/gun/ballistic/automatic/smg/uzi,
 /obj/item/gun/ballistic/automatic/smg/mp5,
 /obj/item/gun/ballistic/automatic/smg/p90,
-/obj/item/gun/ballistic/automatic/smg/ppsh,
-/obj/item/gun/ballistic/automatic/smg/greasegun,
 /obj/item/gun/ballistic/automatic/smg/smg10mm,
-/obj/item/gun/ballistic/automatic/smg/tommygun,
+/obj/item/gun/ballistic/automatic/smg/thompson,
 /turf/open/floor/holofloor/plating,
 /area/holodeck/den/programs/armory)
 "on" = (

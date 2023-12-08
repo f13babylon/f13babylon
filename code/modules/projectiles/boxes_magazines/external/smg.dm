@@ -2,147 +2,123 @@
 // SMG MAGAZINES //
 ///////////////////
 
-
-/obj/item/ammo_box/magazine/cg45
-	name = "Carl Gustaf magazine (10mm)"
+/obj/item/ammo_box/magazine/msmg22
+	name = "toploader submachinegun magazine (.22 LR)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "cg45"
-	ammo_type = /obj/item/ammo_casing/c10mm
-	caliber = "10mm"
-	max_ammo = 36
-	multiple_sprites = 2
-
-/obj/item/ammo_box/magazine/cg45/empty
-	start_empty = TRUE
-
-/obj/item/ammo_box/magazine/cg45_two
-	name = "Carl Gustaf magazine (.45 ACP)"
-	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "cg45"
-	ammo_type = /obj/item/ammo_casing/c45
-	caliber = ".45"
-	max_ammo = 36
-	multiple_sprites = 2
-
-/obj/item/ammo_box/magazine/cg45_two/empty
-	start_empty = TRUE
-
-
-/obj/item/ammo_box/magazine/greasegun
-	name = "Grease gun magazine (.45 ACP)"
-	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "grease"
-	ammo_type = /obj/item/ammo_casing/c45
-	caliber = ".45"
-	max_ammo = 30
-	multiple_sprites = 2
-
-/obj/item/ammo_box/magazine/greasegun/empty
-	start_empty = 1
-
-/obj/item/ammo_box/magazine/uzim9mm/rockwell
-	name = "Rockwell magazine (9mm)"
-	icon_state = "rock"
-	ammo_type = /obj/item/ammo_casing/c9mm
-	caliber = "9mm"
-	max_ammo = 20
-
-/obj/item/ammo_box/magazine/uzim9mm/rockwell/empty
-	start_empty = TRUE
-
-/obj/item/ammo_box/magazine/uzim9mm
-	name = "Uzi magazine (9mm)"
-	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "uzi9mm"
-	ammo_type = /obj/item/ammo_casing/c9mm
-	caliber = "9mm"
-	max_ammo = 32
-
-/obj/item/ammo_box/magazine/uzim9mm/update_icon()
-	..()
-	icon_state = "[initial(icon_state)]-[round(ammo_count(),4)]"
-
-/obj/item/ammo_box/magazine/uzim9mm/empty
-	start_empty = 1
-
-/obj/item/ammo_box/magazine/pps9mm
-	name = "PPSh magazine (9mm)"
-	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "ppshDrum"
-	ammo_type = /obj/item/ammo_casing/c9mm
-	caliber = "9mm"
-	max_ammo = 71
-	multiple_sprites = 2
-
-/obj/item/ammo_box/magazine/pps9mm/empty
-	start_empty = 1
-
-/obj/item/ammo_box/magazine/m22smg
-	name = "toploader magazine (.22lr)"
-	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "smg22"
-	ammo_type = /obj/item/ammo_casing/a22
+	icon_state = "msmg22"
 	caliber = ".22lr"
+	ammo_type = /obj/item/ammo_casing/a22
 	max_ammo = 180
 	multiple_sprites = 2
 
-/obj/item/ammo_box/magazine/m22smg/empty
+/obj/item/ammo_box/magazine/msmg22/empty
 	start_empty = 1
 
-/obj/item/ammo_box/magazine/tommygunm45
-	name = "Thompson drum magazine (.45)"
+/obj/item/ammo_box/magazine/msmg9mm
+	name = "submachinegun magazine (9mm)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "tommydrum"
-	ammo_type = /obj/item/ammo_casing/c45
-	caliber = ".45"
-	max_ammo = 50
+	icon_state = "msmg9mm"
+	caliber = "9mm"
+	ammo_type = /obj/item/ammo_casing/c9mm
+	max_ammo = 32
 
-/obj/item/ammo_box/magazine/tommygunm45/stick
-	name = "Thompson stick magazine (.45)"
+/obj/item/ammo_box/magazine/msmg9mm/update_icon()
+	..()
+	icon_state = "[initial(icon_state)]-[round(ammo_count(),4)]"
+
+/obj/item/ammo_box/magazine/msmg9mm/empty
+	start_empty = 1
+
+/obj/item/ammo_box/magazine/msmg9mm/drum
+	name = "submachinegun drum magazine (9mm)"
+	icon_state = "mdrum"
+	max_ammo = 50
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/msmg9mm/drum/update_icon()
+	..()
+
+/obj/item/ammo_box/magazine/msmg9mm/drum/empty
+	start_empty = 1
+
+/obj/item/ammo_box/magazine/mcalico
+	name = "helical submachinegun magazine (9mm)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "tommystick"
+	icon_state = "mcalico"
+	caliber = "9mm"
+	ammo_type = /obj/item/ammo_casing/c9mm
+	max_ammo = 70
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/mcalico/empty
+	start_empty = 1
+
+/obj/item/ammo_box/magazine/msmg10mm
+	name = "submachinegun magazine (10mm)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "msmg10mm"
+	caliber = "10mm"
+	ammo_type = /obj/item/ammo_casing/c10mm
+	max_ammo = 30
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/msmg10mm/empty
+	start_empty = 1
+
+/obj/item/ammo_box/magazine/mgreasegun
+	name = "grease gun magazine (.45 ACP)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "mgreasegun"
+	caliber = ".45"
+	ammo_type = /obj/item/ammo_casing/c45
+	max_ammo = 30
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/mgreasegun/empty
+	start_empty = 1
+
+/obj/item/ammo_box/magazine/mthompson
+	name = "thompson magazine (.45 ACP)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "mthompsonstick"
 	ammo_type = /obj/item/ammo_casing/c45
 	caliber = ".45"
 	max_ammo = 30
 	multiple_sprites = 2
 
-/obj/item/ammo_box/magazine/tommygunm45/empty
-	start_empty = 1
+/obj/item/ammo_box/magazine/mthompson/drum
+	name = "thompson drum magazine (.45 ACP)"
+	icon_state = "mdrum"
+	max_ammo = 50
 
-/obj/item/ammo_box/magazine/tommygunm45/stick/empty
-	start_empty = 1
-
-/obj/item/ammo_box/magazine/smg14
-	name = "14mm smg magazine"
+/obj/item/ammo_box/magazine/mp90
+	name = "submachinegun magazine (5mm)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "14smg"
-	ammo_type = /obj/item/ammo_casing/p14mm
-	caliber = "14"
-	max_ammo = 21
-
-/obj/item/ammo_box/magazine/smg14/empty
-	start_empty = 1
-
-/obj/item/ammo_box/magazine/smg14/stacked
-	name = "14mm smg stacked magazine"
-	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "14smge"
-	ammo_type = /obj/item/ammo_casing/p14mm
-	caliber = "14"
-	max_ammo = 27
-	multiple_sprites = 2
-
-/obj/item/ammo_box/magazine/smg14/stacked/empty
-	start_empty = 1
-
-/obj/item/ammo_box/magazine/m10mm_p90
-	name = "toploader magazine (10mm)"
-	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "5.56m"
-	ammo_type = /obj/item/ammo_casing/c10mm
-	caliber = "10mm"
+	icon_state = "mp90"
+	ammo_type = /obj/item/ammo_casing/a5mm
+	caliber = "a5mm"
 	max_ammo = 50
 	multiple_sprites = 2
 
-/obj/item/ammo_box/magazine/m10mm_p90/empty
+/obj/item/ammo_box/magazine/mp90/empty
+	start_empty = 1
+
+/obj/item/ammo_box/magazine/msmg14mm
+	name = "submachinegun magazine (14mm)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "msmg14mm"
+	caliber = "14"
+	ammo_type = /obj/item/ammo_casing/p14mm
+	max_ammo = 21
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/msmg14mm/empty
+	start_empty = 1
+
+/obj/item/ammo_box/magazine/msmg14mm/extended
+	name = "submachinegun extended magazine (14mm)"
+	icon_state = "msmg14mmext"
+	max_ammo = 27
+
+/obj/item/ammo_box/magazine/msmg14mm/extended/empty
 	start_empty = 1

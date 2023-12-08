@@ -134,7 +134,7 @@
 		/obj/item/gun/ballistic/revolver/m29/snub = 7,
 		/obj/effect/spawner/bundle/f13/smg10mm = 5,
 		/obj/item/gun/energy/laser/wattz = 5,
-		/obj/item/gun/ballistic/automatic/smg/american180 = 1,
+		/obj/item/gun/ballistic/automatic/smg/smg22 = 1,
 		/obj/effect/spawner/bundle/f13/deagle = 1,
 		/obj/item/gun/ballistic/automatic/pistol/pistol14/compact = 1,
 		/obj/item/melee/onehanded/knife/survival = 10,
@@ -200,10 +200,10 @@
 		/obj/item/gun/ballistic/automatic/pistol/type17 = 16,
 		/obj/effect/spawner/bundle/f13/single_shotgun = 13,
 		/obj/item/gun/ballistic/revolver/thatgun = 8,
-		/obj/effect/spawner/bundle/f13/miniuzi = 4,
+		/obj/effect/spawner/bundle/f13/uzi = 4,
 		/obj/item/gun/ballistic/revolver/hobo/knifegun = 4,
 		/obj/item/gun/ballistic/revolver/hobo/knucklegun = 3,
-		/obj/effect/spawner/bundle/f13/guns/tommygun = 2,
+		/obj/effect/spawner/bundle/f13/guns/thompson = 2,
 		/obj/item/gun/ballistic/automatic/hobo/destroyer = 1,
 		/obj/item/gun/ballistic/revolver/russian = 1,
 		/obj/item/twohanded/baseball/spiked = 8,
@@ -282,8 +282,6 @@
 		/obj/effect/spawner/bundle/f13/sig = 12,
 		/obj/effect/spawner/bundle/f13/beretta/select = 8,
 		/obj/effect/spawner/bundle/f13/brushgun = 8,
-		/obj/item/gun/ballistic/automatic/smg/cg45 = 5,
-		/obj/item/gun/ballistic/automatic/smg/ppsh = 3,
 		/obj/item/gun/ballistic/automatic/type93 = 3,
 		/obj/item/gun/ballistic/automatic/fnfal = 2,
 		/obj/effect/spawner/bundle/f13/guns/p90 = 2,
@@ -372,7 +370,7 @@
 		/obj/item/ammo_box/a473 = 10,
 		/obj/item/ammo_box/magazine/automag = 10,
 		/obj/item/stock_parts/cell/ammo/mfc = 10,
-		/obj/item/ammo_box/magazine/m22smg = 9,
+		/obj/item/ammo_box/magazine/msmg22 = 9,
 		/obj/item/ammo_box/magazine/amr/incindiary = 6,
 		/obj/item/ammo_box/a45lcbox = 3,
 		)
@@ -470,5 +468,5 @@
 	name = "worn 10mm SMG and ammo spawner"
 	items = list(
 		/obj/item/gun/ballistic/automatic/smg/smg10mm/worn,
-		/obj/item/ammo_box/magazine/m10mm_adv/empty,
+		/obj/item/ammo_box/magazine/m10mm/empty,
 		)

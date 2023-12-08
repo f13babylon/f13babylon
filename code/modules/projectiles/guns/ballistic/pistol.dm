@@ -20,7 +20,7 @@
 	weapon_weight = WEAPON_MEDIUM //can only dual wield small pistols
 	slot_flags = ITEM_SLOT_BELT
 	force = 12 //Pistol whip
-	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
+	mag_type = /obj/item/ammo_box/magazine/m10mm
 	spread = 2
 	burst_size = 1
 	fire_delay = 0
@@ -70,7 +70,7 @@
 	name = "10mm pistol"
 	desc = "The Colt N99, an easily maintained, large-framed, long-barreled combat pistol in use by the US Army before the war. Comes with an integrated laser sight module."
 	icon_state = "n99"
-	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
+	mag_type = /obj/item/ammo_box/magazine/m10mm
 	fire_delay = 1
 	recoil = 0.05
 	can_attachments = TRUE
@@ -115,7 +115,7 @@
 	name = "Chinese pistol"
 	desc = "A standard issue Chinese Type-17 combat pistol, hacked apart and turned into a magazine-fed 10mm self-loader."
 	icon_state = "chinapistol"
-	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
+	mag_type = /obj/item/ammo_box/magazine/m10mm
 	fire_delay = 1
 	recoil = 0.1
 	spread = 3
@@ -405,4 +405,3 @@
 	name = "pistol"
 	extra_damage = 18
 	mag_type = /obj/item/ammo_box/magazine/testbullet
-

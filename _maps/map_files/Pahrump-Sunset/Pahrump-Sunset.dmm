@@ -19116,12 +19116,6 @@
 /area/f13/city/bighorn)
 "bqe" = (
 /obj/structure/rack/shelf_metal,
-/obj/item/gun/ballistic/automatic/smg/cg45_two,
-/obj/item/gun/ballistic/automatic/smg/cg45_two,
-/obj/item/gun/ballistic/automatic/smg/cg45_two,
-/obj/item/gun/ballistic/automatic/smg/cg45_two,
-/obj/item/gun/ballistic/automatic/smg/cg45_two,
-/obj/item/gun/ballistic/automatic/smg/cg45_two,
 /turf/open/floor/wood/wood_worn,
 /area/f13/city/bighorn)
 "bqf" = (
@@ -29756,14 +29750,14 @@
 /area/f13/building/massfusion)
 "fpp" = (
 /obj/structure/rack/shelf_metal,
-/obj/item/gun/ballistic/automatic/smg/mini_uzi,
-/obj/item/gun/ballistic/automatic/smg/mini_uzi,
-/obj/item/gun/ballistic/automatic/smg/mini_uzi,
-/obj/item/ammo_box/magazine/uzim9mm,
-/obj/item/ammo_box/magazine/uzim9mm,
-/obj/item/ammo_box/magazine/uzim9mm,
-/obj/item/ammo_box/magazine/uzim9mm,
-/obj/item/ammo_box/magazine/uzim9mm,
+/obj/item/gun/ballistic/automatic/smg/uzi,
+/obj/item/gun/ballistic/automatic/smg/uzi,
+/obj/item/gun/ballistic/automatic/smg/uzi,
+/obj/item/ammo_box/magazine/m9mmsmg,
+/obj/item/ammo_box/magazine/m9mmsmg,
+/obj/item/ammo_box/magazine/m9mmsmg,
+/obj/item/ammo_box/magazine/m9mmsmg,
+/obj/item/ammo_box/magazine/m9mmsmg,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
 "fpt" = (
@@ -30769,12 +30763,6 @@
 /area/f13/building)
 "fNF" = (
 /obj/structure/rack/shelf_metal,
-/obj/item/ammo_box/magazine/cg45_two,
-/obj/item/ammo_box/magazine/cg45_two,
-/obj/item/ammo_box/magazine/cg45_two,
-/obj/item/ammo_box/magazine/cg45_two,
-/obj/item/ammo_box/magazine/cg45_two,
-/obj/item/ammo_box/magazine/cg45_two,
 /turf/open/floor/wood/wood_worn,
 /area/f13/city/bighorn)
 "fNV" = (

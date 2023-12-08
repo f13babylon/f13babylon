@@ -263,7 +263,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 
 	loadout_options = list(
-		/datum/outfit/loadout/palacent,		//Goliath, CQC, Carl Gustaf
+		/datum/outfit/loadout/palacent,		//Goliath, CQC, 10mm SMG
 		/datum/outfit/loadout/rangerhunter,	// Hunting Revolver, AMR, Spatha
 		/datum/outfit/loadout/centurion,	// M1919, Spatha
 		/datum/outfit/loadout/berserkercenturion,	// Love Tap, Berserker Martial Art
@@ -331,8 +331,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	backpack_contents = list(
 		/obj/item/melee/f13powerfist/goliath = 1,
 		/obj/item/book/granter/martial/cqc = 1,
-		/obj/item/gun/ballistic/automatic/smg/cg45_two = 1,
-		/obj/item/ammo_box/magazine/cg45_two = 2,
+		/obj/item/gun/ballistic/automatic/smg/smg10mm = 1,
+		/obj/item/ammo_box/magazine/msmg10mm = 2,
 		)
 
 /datum/outfit/loadout/berserkercenturion
@@ -364,7 +364,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 	loadout_options = list(
 		/datum/outfit/loadout/decvetbull,	// Towershield, 10mm SMG, Spatha
-		/datum/outfit/loadout/decvetwolf,	// Thermic lance, Carl Gustaf, Extra Bitters
+		/datum/outfit/loadout/decvetwolf,	// Thermic lance, 10mm SMG, Extra Bitters
 		/datum/outfit/loadout/decvetsnake, // Brush gun, Spatha, Extra Bitters
 		/datum/outfit/loadout/decvetbrave, // Auto-5, 44 revolver, ballistic fist
 		)
@@ -406,7 +406,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	head = /obj/item/clothing/head/helmet/f13/legion/heavy
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/pistol14
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m10mm_adv = 2,
+		/obj/item/ammo_box/magazine/m10mm = 2,
 		/obj/item/melee/onehanded/machete/spatha = 1,
 		/obj/item/shield/riot/tower = 1
 		)
@@ -416,8 +416,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/decan
 	suit_store = /obj/item/twohanded/thermic_lance
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m14mm = 1,
-		/obj/item/ammo_box/magazine/cg45 = 2,
+		/obj/item/gun/ballistic/automatic/smg/smg10mm = 1,
+		/obj/item/ammo_box/magazine/msmg10mm = 2,
 		/obj/item/reagent_containers/pill/patch/bitterdrink = 2,
 		)
 
@@ -591,8 +591,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	suit_store = /obj/item/twohanded/spear/lance
 	backpack_contents = list(
 		/obj/item/grenade/smokebomb = 1,
-		/obj/item/gun/ballistic/automatic/smg/mini_uzi = 1,
-		/obj/item/ammo_box/magazine/uzim9mm = 3,
+		/obj/item/gun/ballistic/automatic/smg/uzi = 1,
+		/obj/item/ammo_box/magazine/msmg9mm = 3,
 		)
 
 /datum/outfit/loadout/recdectribal
@@ -630,7 +630,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 	loadout_options = list(
 		/datum/outfit/loadout/vexbear,	//	Lever shotgun, Ripper
-		/datum/outfit/loadout/vexfox,	//	14mm SMG, Spartha
+		/datum/outfit/loadout/vexfox,	//	P90, Spartha
 		/datum/outfit/loadout/vexnight, //  Trailcarbine, Gladius
 		)
 
@@ -684,9 +684,9 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/outfit/loadout/vexfox
 	name = "Desert Fox"
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/vexil
-	suit_store = /obj/item/gun/ballistic/automatic/smg/smg14
+	suit_store = /obj/item/gun/ballistic/automatic/smg/p90
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/smg14 = 2,
+		/obj/item/ammo_box/magazine/mp90 = 2,
 		/obj/item/melee/onehanded/machete/spatha = 1,
 		)
 
@@ -795,7 +795,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 	loadout_options = list(	//ALL: Gladius
 		/datum/outfit/loadout/vetaxe,	// Smoke nade, Axe, extra heal
-		/datum/outfit/loadout/vetsmg,	// Carl Gustaf, Shield
+		/datum/outfit/loadout/vetsmg,	// 10mm SMG, Shield
 		/datum/outfit/loadout/vetberserker,	// Lever shotgun, Bola, Legion Lance
 		/datum/outfit/loadout/vetrifle,		// Trail gun, .357 Revolver
 		)
@@ -846,10 +846,10 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/loadout/vetsmg
 	name = "Flanker"
-	suit_store = /obj/item/gun/ballistic/automatic/smg/cg45
+	/obj/item/gun/ballistic/automatic/smg/smg10mm = 1,
 	backpack_contents = list(
 		/obj/item/shield/riot/legion,
-		/obj/item/ammo_box/magazine/cg45 = 2,
+		/obj/item/ammo_box/magazine/msmg10mm = 2,
 		)
 
 /datum/outfit/loadout/vetberserker

@@ -350,10 +350,10 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 	backpack_contents = list(
 		/obj/item/clothing/under/f13/whitelegs = 1,
 		/obj/item/clothing/under/f13/female/whitelegs = 1,
-		/obj/item/gun/ballistic/automatic/smg/tommygun/whitelegs = 1,
+		/obj/item/gun/ballistic/automatic/smg/thompson = 1,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
 		/obj/item/reagent_containers/pill/patch/healingpoultice = 1,
-		/obj/item/ammo_box/magazine/tommygunm45/stick = 2
+		/obj/item/ammo_box/magazine/mthompson = 2
 	)
 
 /datum/outfit/loadout/whitelegsshaman
@@ -455,7 +455,7 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 		/obj/item/gun/ballistic/revolver/single_shotgun = 1,
 		/obj/item/ammo_box/shotgun/buck = 1,
 		/obj/item/gun/ballistic/automatic/smg/greasegun/worn = 1,
-		/obj/item/ammo_box/magazine/greasegun = 2,
+		/obj/item/ammo_box/magazine/mgreasegun = 2,
 		/obj/item/reagent_containers/pill/patch/healingpowder = 2
 	)
 

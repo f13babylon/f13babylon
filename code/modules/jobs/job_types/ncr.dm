@@ -740,7 +740,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	belt = /obj/item/storage/belt/military/assault/ncr
 	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m10mm_adv/ext = 2,
+		/obj/item/ammo_box/magazine/msmg10mm = 2,
 		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,
 		/obj/item/gun/ballistic/revolver/m29/snub = 1,
 		/obj/item/ammo_box/m44box = 1,
@@ -886,20 +886,20 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "Combat Sapper"
 	belt = /obj/item/storage/belt/military/assault/ncr/engineer
 	glasses = /obj/item/clothing/glasses/welding
-	suit_store = /obj/item/gun/ballistic/automatic/smg/mini_uzi
+	suit_store = /obj/item/gun/ballistic/automatic/smg/uzi
 	backpack_contents = list(
 		/obj/item/grenade/plastic/c4 = 2,
 		/obj/item/book/granter/trait/explosives = 1,
 		/obj/item/book/granter/trait/explosives_advanced = 1,
-		/obj/item/ammo_box/magazine/uzim9mm = 3,
+		/obj/item/ammo_box/magazine/msmg9mm = 3,
 		)
 
 /datum/outfit/loadout/combatengineerbuilder
 	name = "Construction Specialist"
 	belt = /obj/item/storage/belt/military/assault/ncr/engineer
-	suit_store = /obj/item/gun/ballistic/automatic/smg/mini_uzi
+	suit_store = /obj/item/gun/ballistic/automatic/smg/uzi
 	backpack_contents = list(
-			/obj/item/ammo_box/magazine/uzim9mm = 3,
+			/obj/item/ammo_box/magazine/msmg9mm = 3,
 		/obj/item/book/granter/crafting_recipe/blueprint/trapper = 1,
 		/obj/item/stack/sheet/plasteel/fifty = 1,
 		/obj/item/stack/sheet/rglass = 50,
@@ -996,9 +996,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/ncrdocsmg
 	name = "Combat Medic"
-	suit_store = /obj/item/gun/ballistic/automatic/smg/mini_uzi
+	suit_store = /obj/item/gun/ballistic/automatic/smg/uzi
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/uzim9mm = 3,
+		/obj/item/ammo_box/magazine/msmg9mm = 3,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		)
 
@@ -1006,7 +1006,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "Support Medic"
 	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/compact
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
+		/obj/item/ammo_box/magazine/m10mm = 2,
 		/obj/item/seeds/poppy/broc = 2,
 		/obj/item/seeds/xander = 2
 		)
@@ -1075,7 +1075,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	head = /obj/item/clothing/head/f13/ncr/steelpot_bandolier
 	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m10mm_adv = 3
+		/obj/item/ammo_box/magazine/m10mm = 3
 		)
 
 /datum/outfit/loadout/corporalrifleman
@@ -1355,7 +1355,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m10mm_adv = 2,
+		/obj/item/ammo_box/magazine/m10mm = 2,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
 		/obj/item/ammo_box/magazine/m9mmds = 2,
 		/obj/item/grenade/plastic/c4 = 1,

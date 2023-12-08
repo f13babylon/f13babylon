@@ -193,402 +193,120 @@
 
 
 //SMG TEMPLATE
-/obj/item/gun/ballistic/automatic/smg/
+/obj/item/gun/ballistic/automatic/smg
 	name = "SMG TEMPLATE"
 	desc = "should not exist"
-	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	icon_prefix = "uzi"
+	icon = 'icons/obj/guns/gunfruits2022/smgs.dmi'
+	icon_state = "MP5"
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	w_class = WEIGHT_CLASS_NORMAL
-	weapon_weight = WEAPON_HEAVY	//Automatic fire and onehanded use mix poorly.
+	weapon_weight = WEAPON_LIGHT
 	slowdown = 0.4
-	fire_delay = 3.75
-	burst_shot_delay = 3
+	automatic = 1
+	autofire_shot_delay = 1.5
+	fire_delay = 1.5
 	spread = 10
 	force = 12
-	actions_types = list(/datum/action/item_action/toggle_firemode)
 
-//American 180				Keywords: .22 LR, Automatic, 180 rounds
-/obj/item/gun/ballistic/automatic/smg/american180
-	name = "American 180"
+//American 180			Keywords: .22 LR, Supressed, 180 Round drum
+/obj/item/gun/ballistic/automatic/smg/smg22
+	name = ".22 LR submachinegun"
 	desc = "An integrally suppressed submachinegun chambered in the common .22 long rifle. Top loaded drum magazine."
 	icon_state = "smg22"
-	item_state = "shotgun"
-	slowdown = 0.25
+	item_state = "smg22"
+	fire_sound = 'sound/f13weapons/smg22.ogg'
 	w_class = WEIGHT_CLASS_BULKY
-	mag_type = /obj/item/ammo_box/magazine/m22smg
-	can_unsuppress = FALSE
-	is_automatic = TRUE
-	automatic = 1
-	autofire_shot_delay = 1.75
-	spread = 18
-	burst_shot_delay = 1.5
+	weapon_weight = WEAPON_HEAVY
+	mag_type = /obj/item/ammo_box/magazine/msmg22
 	suppressed = 1
-	actions_types = null
-	fire_sound = 'sound/f13weapons/american180.ogg'
+	can_unsuppress = FALSE
 
-
-//14mm SMG Keywords: 14mm, Automatic, 21 rounds
-/obj/item/gun/ballistic/automatic/smg/smg14
-	name = "14mm SMG"
-	desc = "A heavy-duty SMG designed to tear through most forms of armor."
-	icon_state = "14smg"
-	item_state = "14toploader"
-	w_class = WEIGHT_CLASS_BULKY
-	mag_type = /obj/item/ammo_box/magazine/smg14
-	is_automatic = TRUE
-	automatic = 1
-	autofire_shot_delay = 2.15 //It's so awfully inaccurate now that it's more of a gimmick than a buff
-	spread = 12
-	recoil = 0.85
-	can_attachments = TRUE
-	can_suppress = FALSE
-	actions_types = list(/datum/action/item_action/toggle_firemode)
-	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
-	extra_penetration = 0.05
-
-//Greasegun				Keywords: .45, Automatic, 30 rounds
-/obj/item/gun/ballistic/automatic/smg/greasegun
-	name = "Grease Gun"
-	desc = "An inexpensive submachine gun, chambered in .45 ACP. Very high rate of fire in bursts."
-	icon_state = "grease_gun"
-	item_state = "smg9mm"
-	mag_type = /obj/item/ammo_box/magazine/greasegun
-	spread = 8
-	slowdown = 0.3
-	burst_shot_delay = 2.75
-	is_automatic = TRUE
-	automatic = 1
-	autofire_shot_delay = 3
-	can_attachments = TRUE
-	suppressor_state = "uzi_suppressor"
-	suppressor_x_offset = 26
-	suppressor_y_offset = 19
-	actions_types = list(/datum/action/item_action/toggle_firemode)
-	fire_sound = 'sound/f13weapons/greasegun.ogg'
-
-/obj/item/gun/ballistic/automatic/smg/greasegun/auto_select()
-	var/mob/living/carbon/human/user = usr
-	switch(select)
-		if(0)
-			select += 1
-			automatic = 1
-			spread = 14
-			fire_delay = 3.25
-			recoil = 0.1
-			weapon_weight = WEAPON_HEAVY
-			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
-			enable_burst()
-		if(1)
-			select = 0
-			automatic = 0
-			fire_delay = 3.25
-			spread = 2
-			weapon_weight = WEAPON_MEDIUM
-			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
-	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
-	update_icon()
-	return
-
-/obj/item/gun/ballistic/automatic/smg/greasegun/worn
-	name = "beat up Grease gun"
-	desc = "What was once an inexpensive, but reliable submachine gun is now an inexpensive piece of shit. It's impressive this thing still fires at all."
-	can_attachments = FALSE
-	spread = 16.5
-	recoil = 0.3
-
-/obj/item/gun/ballistic/automatic/smg/greasegun/worn/auto_select()
-	var/mob/living/carbon/human/user = usr
-	switch(select)
-		if(0)
-			select += 1
-			automatic = 1
-			spread = 16.5
-			fire_delay = 3.75
-			recoil = 0.3
-			weapon_weight = WEAPON_HEAVY
-			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
-			enable_burst()
-		if(1)
-			select = 0
-			automatic = 0
-			fire_delay = 3.75
-			spread = 2
-			weapon_weight = WEAPON_HEAVY
-			recoil = 0.2
-			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
-	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
-	update_icon()
-	return
-
-
-//10mm SMG			Keywords: 10mm, Automatic, 12/24 rounds
-/obj/item/gun/ballistic/automatic/smg/smg10mm
-	name = "10mm submachine gun"
-	desc = "One of the most common personal-defense weapons of the Great War, a sturdy and reliable open-bolt 10mm submachine gun."
-	icon_state = "smg10mm"
-	item_state = "smg10mm"
-	icon_prefix = "smg10mm"
-	mag_type = /obj/item/ammo_box/magazine/m10mm_adv
-	init_mag_type = /obj/item/ammo_box/magazine/m10mm_adv/ext
-	is_automatic = TRUE
-	automatic = 1
-	autofire_shot_delay = 2.35
-	spread = 10
-	slowdown = 0.3
-	recoil = 0.5
-	fire_delay = 3.25
-	extra_damage = 2
-	can_attachments = TRUE
-	suppressor_state = "10mm_suppressor" //activate if sprited
-	suppressor_x_offset = 30
-	suppressor_y_offset = 16
-	actions_types = list(/datum/action/item_action/toggle_firemode)
-	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
-
-/obj/item/gun/ballistic/automatic/smg/smg10mm/worn
-	name = "worn-out 10mm submachine gun"
-	desc = "Mass-produced weapon from the Great War, this one has seen use ever since. Grip is wrapped in tape to keep the plastic from crumbling, the metals are oxidizing, but the gun still works."
-	init_mag_type = /obj/item/ammo_box/magazine/m10mm_adv/ext
-	worn_out = TRUE
-	spread = 10
-
-/obj/item/gun/ballistic/automatic/smg/smg10mm/auto_select()
-	var/mob/living/carbon/human/user = usr
-	switch(select)
-		if(0)
-			select += 1
-			automatic = 1
-			spread = 12
-			fire_delay = 3.25
-			recoil = 0.1
-			weapon_weight = WEAPON_HEAVY
-			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
-			enable_burst()
-		if(1)
-			select = 0
-			automatic = 0
-			fire_delay = 3.25
-			spread = 2
-			weapon_weight = WEAPON_MEDIUM
-			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
-	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
-	update_icon()
-	return
-
-//Uzi				Keywords: 9mm, Automatic, 32 rounds
-/obj/item/gun/ballistic/automatic/smg/mini_uzi
+//Uzi			Keywords: 9mm, 32/50 rounds
+/obj/item/gun/ballistic/automatic/smg/uzi
 	name = "Uzi"
 	desc = "A lightweight, burst-fire submachine gun, for when you really want someone dead. Uses 9mm rounds."
 	icon_state = "uzi"
 	item_state = "uzi"
-	mag_type = /obj/item/ammo_box/magazine/uzim9mm
-	fire_delay = 3
-	burst_shot_delay = 2.2
-	is_automatic = TRUE
-	automatic = 1
-	slowdown = 0.3
-	autofire_shot_delay = 2
-	spread = 12
-	can_suppress = TRUE
-	can_attachments = TRUE
-	suppressor_state = "uzi_suppressor"
-	suppressor_x_offset = 29
-	suppressor_y_offset = 16
-	actions_types = list(/datum/action/item_action/toggle_firemode)
+	mag_type = /obj/item/ammo_box/magazine/msmg9mm
 
-/obj/item/gun/ballistic/automatic/smg/mini_uzi/auto_select()
-	var/mob/living/carbon/human/user = usr
-	switch(select)
-		if(0)
-			select += 1
-			automatic = 1
-			spread = 16
-			fire_delay = 3
-			recoil = 0.1
-			weapon_weight = WEAPON_HEAVY
-			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
-			enable_burst()
-		if(1)
-			select = 0
-			automatic = 0
-			fire_delay = 3
-			spread = 3
-			weapon_weight = WEAPON_MEDIUM
-			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
-	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
-	update_icon()
-	return
-
-/obj/item/gun/ballistic/automatic/smg/micro_uzi
-	name = "Micro-Uzi"
-	desc = "An even more lightweight version of the Uzi. It shoots fast and it's extremely inaccurate. Handle with care."
-	icon_state = "micro"
-	item_state = "uzi"
-	mag_type = /obj/item/ammo_box/magazine/uzim9mm
-	fire_delay = 3
-	recoil = 4
-	burst_shot_delay = 2.2
-	is_automatic = TRUE
-	automatic = 1
-	slowdown = 0.2
-	autofire_shot_delay = 1
-	spread = 24
-	can_suppress = FALSE
-	can_attachments = TRUE
-	extra_damage = -4
-	icon_prefix = "micro"
-
-//Carl Gustaf			Keywords: 10mm, Automatic, 36 rounds
-/obj/item/gun/ballistic/automatic/smg/cg45
-	name = "Carl Gustaf 10mm"
-	desc = "Post-war submachine gun made in workshops in Phoenix, a copy of a simple old foreign design."
-	icon_state = "cg45"
-	item_state = "cg45"
-	mag_type = /obj/item/ammo_box/magazine/cg45
-	is_automatic = TRUE
-	automatic = 1
-	slowdown = 0.35
-	autofire_shot_delay = 2.5
-	spread = 12
-	fire_delay = 3.5
-	recoil = 0.1
-	can_attachments = TRUE
-	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
-
-//Carl Gustaf			Keywords: .45 ACP, Automatic, 36 rounds
-/obj/item/gun/ballistic/automatic/smg/cg45_two
-	name = "Carl Gustaf .45 ACP"
-	desc = "An odd submachine gun, designed in Phoenix and repurposed by the locals. This appears to be chambered in .45 ACP."
-	icon_state = "cg45"
-	item_state = "cg45"
-	mag_type = /obj/item/ammo_box/magazine/cg45_two
-	is_automatic = TRUE
-	automatic = 1
-	slowdown = 0.35
-	autofire_shot_delay = 3
-	spread = 18
-	fire_delay = 3.5
-	recoil = 0.2
-	can_attachments = TRUE
-	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
-
-//Tommygun			Keywords: .45 ACP, Automatic, 30/50 rounds.
-/obj/item/gun/ballistic/automatic/smg/tommygun
-	name = "Thompson SMG"
-	desc = "A powerful submachinegun chambered in .45 ACP, this weapon fires at a blistering rate with a heavy pistol cartridge, and can accept very high capacity magazines, to boot."
-	icon_state = "tommygun"
-	item_state = "shotgun"
-	slowdown = 0.4
-	w_class = WEIGHT_CLASS_BULKY
-	mag_type = /obj/item/ammo_box/magazine/tommygunm45
-	init_mag_type = /obj/item/ammo_box/magazine/tommygunm45/stick
-	fire_sound = 'sound/weapons/gunshot_smg.ogg'
-	is_automatic = TRUE
-	automatic = 1
-	autofire_shot_delay = 2.25
-	burst_shot_delay = 2.75
-	fire_delay = 3.75
-	spread = 15
-	recoil = 0.5
-
-//White Legs Tommygun			Keywords: .45 ACP, Automatic, 30/50 rounds
-/obj/item/gun/ballistic/automatic/smg/tommygun/whitelegs
-	name = "Storm Drum"
-	desc = "A recovered ancient Thompson from an armory far up North. Commonly used by raiders of the White Legs tribe."
-	fire_delay = 3.75
-	spread = 19
-
-//M1928
-/obj/item/gun/ballistic/automatic/smg/tommygun/chicago
-	name = "M1928 Chicago Typewriter"
-	desc = "A powerful submachinegun chambered in .45 ACP, this weapon fires at a blistering rate with a heavy pistol cartridge, popular for its use by gangs of the Old World. This model was more expensive and stopped being produced."
-	init_mag_type = /obj/item/ammo_box/magazine/tommygunm45
-	autofire_shot_delay = 1.25
-	spread = 28		// RATTLE 'EM, BOYS!
-	slowdown = 0.6	//Higher
-	icon_state = "typewriter"
-	extra_damage = -5
-
-//P90				Keywords: 10mm, Automatic, 50 rounds. Special modifiers: damage +1
-/obj/item/gun/ballistic/automatic/smg/p90
-	name = "FN P90c"
-	desc = "The Fabrique Nationale P90c was just coming into use at the time of the war. The weapon's bullpup layout, and compact design, make it easy to control. The durable P90c is prized for its reliability, and high firepower in a ruggedly-compact package. Chambered in 10mm."
-	icon_state = "p90"
-	item_state = "m90"
-	w_class = WEIGHT_CLASS_NORMAL
-	mag_type = /obj/item/ammo_box/magazine/m10mm_p90
-	burst_size = 1
-	fire_delay = 3
-	spread = 14
-	is_automatic = TRUE
-	automatic = 1
-	autofire_shot_delay = 2
-	burst_shot_delay = 2.5
-	recoil = 0.25
-	extra_damage = 2
-	can_suppress = TRUE
-	suppressor_state = "pistol_suppressor"
-	suppressor_x_offset = 29
-	suppressor_y_offset = 16
-	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
-	slowdown = 0.2
-
-/obj/item/gun/ballistic/automatic/smg/p90/worn
-	name = "Worn FN P90c"
-	desc = "A FN P90 manufactured by Fabrique Nationale. This one is beat to hell but still works."
-	autofire_shot_delay = 2.25
-	spread = 16
-	slowdown = 0.35
-
-
-//MP-5 SD				Keywords: 9mm, Automatic, 32 rounds, Suppressed
+//MP5			Keywords: 9mm, Suppressed, 32/50 Rounds
 /obj/item/gun/ballistic/automatic/smg/mp5
 	name = "MP-5 SD"
 	desc = "An integrally suppressed submachinegun chambered in 9mm."
 	icon_state = "mp5"
 	item_state = "fnfal"
-	mag_type = /obj/item/ammo_box/magazine/uzim9mm
-	spread = 6
-	fire_delay = 3.5
-	slowdown = 0.25
-	is_automatic = TRUE
-	automatic = 1
-	autofire_shot_delay = 2
-	burst_shot_delay = 2
+	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
+	mag_type = /obj/item/ammo_box/magazine/msmg9mm
 	suppressed = 1
-	recoil = 0.1
-	can_attachments = TRUE
-	can_suppress = FALSE
 	can_unsuppress = FALSE
-	fire_sound = 'sound/weapons/Gunshot_silenced.ogg'
-	extra_penetration = 0.1
 
-
-//Ppsh-41				Keywords: 9mm, Automatic, 71 rounds.
-/obj/item/gun/ballistic/automatic/smg/ppsh
-	name = "Ppsh-41"
-	desc = "An extremely fast firing, inaccurate submachine gun from World War 2. Low muzzle velocity. Uses 9mm rounds."
-	icon_state = "pps"
-	slowdown = 0.3
+//Calico			Keywords: 9mm, 70 rounds
+/obj/item/gun/ballistic/automatic/smg/calico
+	name = "helical 9mm submachine gun"
+	desc = "A lightweight, burst-fire submachine gun, for when you really want someone dead. Uses 9mm rounds."
+	icon_state = "calico"
+	item_state = "uzi"
 	w_class = WEIGHT_CLASS_BULKY
-	mag_type = /obj/item/ammo_box/magazine/pps9mm
-	spread = 20
-	fire_delay = 6
-	is_automatic = TRUE
-	automatic = 1
-	autofire_shot_delay = 2.25
-	burst_shot_delay = 1.5
+	weapon_weight = WEAPON_NORMAL
+	mag_type = /obj/item/ammo_box/magazine/mcalico
 
-	recoil = 0.25
-	can_attachments = TRUE
-	can_scope = TRUE
-	scope_state = "AEP7_scope"
-	scope_x_offset = 9
-	scope_y_offset = 21
+//10mm SMG			Keywords: 10mm, 30 Rounds
+/obj/item/gun/ballistic/automatic/smg/smg10mm
+	name = "10mm submachine gun"
+	desc = "One of the most common personal-defense weapons of the Great War, a sturdy and reliable open-bolt 10mm submachine gun."
+	icon_state = "smg10mm"
+	item_state = "smg10mm"
+	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
+	mag_type = /obj/item/ammo_box/magazine/msmg10mm
 
+//Grease Gun			Keywords: .45 ACP, 30 Rounds
+/obj/item/gun/ballistic/automatic/smg/greasegun
+	name = "Grease Gun"
+	desc = "An inexpensive submachine gun, chambered in .45 ACP. Very high rate of fire in bursts."
+	icon_state = "grease_gun"
+	item_state = "grease_gun"
+	fire_sound = 'sound/f13weapons/greasegun.ogg'
+	weapon_weight = WEAPON_NORMAL
+	mag_type = /obj/item/ammo_box/magazine/mgreasegun
 
+//Thompson			Keywords: .45 ACP, 30/50 Rounds
+/obj/item/gun/ballistic/automatic/smg/thompson
+	name = "Thompson SMG"
+	desc = "A powerful submachinegun chambered in .45 ACP, this weapon fires at a blistering rate with a heavy pistol cartridge, and can accept very high capacity magazines, to boot."
+	icon_state = "thompson"
+	item_state = "thompson"
+	fire_sound = 'sound/weapons/Gunshot.ogg'
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_NORMAL
+	mag_type = /obj/item/ammo_box/magazine/mthompson
+
+//P90			Keywords: 5mm, 50 Rounds
+/obj/item/gun/ballistic/automatic/smg/p90
+	name = "FN P90c"
+	desc = "The Fabrique Nationale P90c was just coming into use at the time of the war. The weapon's bullpup layout, and compact design, make it easy to control. The durable P90c is prized for its reliability, and high firepower in a ruggedly-compact package. Chambered in 10mm."
+	icon_state = "p90"
+	item_state = "p90"
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_NORMAL
+	mag_type = /obj/item/ammo_box/magazine/mp90
+	fire_sound = 'sound/weapons/Gunshot_smg.ogg'
+	slowdown = 0.2
+
+//14mm SMG 			Keywords: 14mm, 21/27 rounds
+/obj/item/gun/ballistic/automatic/smg/smg14mm
+	name = "14mm SMG"
+	desc = "A heavy-duty SMG designed to tear through most forms of armor."
+	icon_state = "smg14mm"
+	item_state = "smg14mm"
+	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_NORMAL
+	mag_type = /obj/item/ammo_box/magazine/msmg14mm
+	autofire_shot_delay = 2.15
+	spread = 12
+	recoil = 0.85
+	extra_penetration = 0.05
 
 ////////////
 //CARBINES//
@@ -600,7 +318,7 @@
 	desc = "The M1 Carbine was mass produced during some old war, and at some point NCR found stockpiles and rechambered them to 10mm to make up for the fact their service rifle production can't keep up with demand."
 	icon_state = "m1carbine"
 	item_state = "rifle"
-	mag_type = /obj/item/ammo_box/magazine/m10mm_adv
+	mag_type = /obj/item/ammo_box/magazine/m10mm
 	burst_size = 1
 	fire_delay = 3
 	spread = 2
@@ -790,7 +508,7 @@
 	icon_state = "combat_c"
 	item_state = "combatrifle"
 	icon_prefix = "combatrifle"
-	mag_type = /obj/item/ammo_box/magazine/tommygunm45/stick
+	mag_type = /obj/item/ammo_box/magazine/mthompson
 	fire_delay = 2
 	burst_size = 1
 	spread = 1

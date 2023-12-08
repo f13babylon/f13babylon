@@ -587,7 +587,7 @@ Mayor
 	shoes = /obj/item/clothing/shoes/f13/explorer
 	backpack_contents = list(/obj/item/reagent_containers/food/drinks/flask = 1,
 	/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
-	/obj/item/ammo_box/magazine/m10mm_adv/simple = 1,
+	/obj/item/ammo_box/magazine/m10mm = 1,
 	)
 
 /datum/outfit/loadout/groundskeeper
@@ -612,7 +612,7 @@ Mayor
 		/obj/item/hatchet=1,
 		/obj/item/shovel/spade=1,
 		/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
-		/obj/item/ammo_box/magazine/m10mm_adv/simple = 1,
+		/obj/item/ammo_box/magazine/m10mm = 1,
 		)
 
 /datum/outfit/loadout/artisan
