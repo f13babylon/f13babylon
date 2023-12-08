@@ -21,10 +21,7 @@
 	caliber = "9mm"
 	ammo_type = /obj/item/ammo_casing/c9mm
 	max_ammo = 32
-
-/obj/item/ammo_box/magazine/msmg9mm/update_icon()
-	..()
-	icon_state = "[initial(icon_state)]-[round(ammo_count(),4)]"
+	multiple_sprites = 2
 
 /obj/item/ammo_box/magazine/msmg9mm/empty
 	start_empty = 1
@@ -33,10 +30,6 @@
 	name = "submachinegun drum magazine (9mm)"
 	icon_state = "mdrum"
 	max_ammo = 50
-	multiple_sprites = 2
-
-/obj/item/ammo_box/magazine/msmg9mm/drum/update_icon()
-	..()
 
 /obj/item/ammo_box/magazine/msmg9mm/drum/empty
 	start_empty = 1

@@ -246,7 +246,7 @@
 	name = "helical 9mm submachine gun"
 	desc = "A lightweight, burst-fire submachine gun, for when you really want someone dead. Uses 9mm rounds."
 	icon_state = "calico"
-	item_state = "uzi"
+	item_state = "calico"
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_MEDIUM
 	mag_type = /obj/item/ammo_box/magazine/mcalico
