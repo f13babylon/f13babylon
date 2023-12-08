@@ -31058,10 +31058,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/obj/structure/fence/wooden{
-	density = 0;
-	pixel_y = 28
-	},
+/obj/structure/fence/wooden,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood)
 "fUB" = (
@@ -37171,6 +37168,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
+/obj/structure/fence/wooden,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood)
 "iSC" = (
@@ -37807,12 +37805,8 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/weather/dirt,
-/obj/structure/fence/wooden{
-	density = 0;
-	pixel_y = 28
-	},
 /obj/structure/fence/corner/wooden{
-	dir = 8
+	dir = 1
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood)
@@ -38486,10 +38480,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/obj/structure/fence/wooden{
-	density = 0;
-	pixel_y = 28
-	},
+/obj/structure/fence/wooden,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood)
 "jxi" = (
@@ -40508,13 +40499,6 @@
 /obj/structure/wreck/trash/two_barrels,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"kCg" = (
-/obj/structure/fence/wooden{
-	density = 0;
-	pixel_y = 28
-	},
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/brotherhood)
 "kCD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/car/rubbish2,
@@ -42725,6 +42709,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
+/obj/structure/fence/wooden,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood)
 "lAx" = (
@@ -52209,16 +52194,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"pMW" = (
-/obj/structure/fence/wooden{
-	density = 0;
-	pixel_y = 28
-	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 8
-	},
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/brotherhood)
 "pMY" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontalbottomborderbottom0"
@@ -54435,13 +54410,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
-/obj/structure/fence/corner/wooden{
-	dir = 4
-	},
-/obj/structure/fence/wooden{
-	density = 0;
-	pixel_y = 28
-	},
+/obj/structure/fence/corner/wooden,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood)
 "qOU" = (
@@ -55200,14 +55169,7 @@
 /turf/open/indestructible/ground/outside/road,
 /area/f13/building)
 "rge" = (
-/obj/structure/fence/wooden{
-	density = 0;
-	pixel_y = 28
-	},
-/obj/structure/fence/wooden{
-	density = 0;
-	pixel_y = 28
-	},
+/obj/structure/fence/wooden,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood)
 "rgf" = (
@@ -59523,13 +59485,7 @@
 /area/f13/wasteland/museum)
 "tjK" = (
 /obj/effect/turf_decal/weather/dirt,
-/obj/structure/fence/corner/wooden{
-	dir = 4
-	},
-/obj/structure/fence/wooden{
-	density = 0;
-	pixel_y = 28
-	},
+/obj/structure/fence/corner/wooden,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood)
 "tkc" = (
@@ -66890,11 +66846,7 @@
 	dir = 10
 	},
 /obj/structure/fence/corner/wooden{
-	dir = 8
-	},
-/obj/structure/fence/wooden{
-	density = 0;
-	pixel_y = 28
+	dir = 1
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood)
@@ -134774,10 +134726,10 @@ mZe
 usB
 vpy
 neg
-bQS
 jwU
 jwU
-pMW
+jwU
+jwU
 wCt
 qJp
 eIg
@@ -135802,9 +135754,9 @@ rcg
 rcg
 rcg
 rcg
-kOz
-kCg
-kCg
+rge
+rge
+rge
 rge
 tjK
 sGk
