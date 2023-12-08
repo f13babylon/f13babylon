@@ -228,6 +228,7 @@
 	desc = "A lightweight, burst-fire submachine gun, for when you really want someone dead. Uses 9mm rounds."
 	icon_state = "uzi"
 	item_state = "uzi"
+	fire_sound = 'sound/f13weapons/9mm.ogg'
 	mag_type = /obj/item/ammo_box/magazine/msmg9mm
 
 //MP5			Keywords: 9mm, Suppressed, 32/50 Rounds
@@ -247,7 +248,7 @@
 	desc = "A lightweight, burst-fire submachine gun, for when you really want someone dead. Uses 9mm rounds."
 	icon_state = "calico"
 	item_state = "calico"
-	fire_sound = 'sound/f13weapons/9mm.ogg'
+	fire_sound = 'sound/f13weapons/smg_loud.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	mag_type = /obj/item/ammo_box/magazine/mcalico
@@ -267,7 +268,7 @@
 	desc = "An inexpensive submachine gun, chambered in .45 ACP. Very high rate of fire in bursts."
 	icon_state = "grease_gun"
 	item_state = "grease_gun"
-	fire_sound = 'sound/f13weapons/greasegun.ogg'
+	fire_sound = 'sound/f13weapons/smg_dull.ogg'
 	weapon_weight = WEAPON_MEDIUM
 	mag_type = /obj/item/ammo_box/magazine/mgreasegun
 
@@ -277,7 +278,7 @@
 	desc = "A powerful submachinegun chambered in .45 ACP, this weapon fires at a blistering rate with a heavy pistol cartridge, and can accept very high capacity magazines, to boot."
 	icon_state = "thompson"
 	item_state = "thompson"
-	fire_sound = 'sound/weapons/Gunshot.ogg'
+	fire_sound = 'sound/f13weapons/smg_dull.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	mag_type = /obj/item/ammo_box/magazine/mthompson
@@ -291,7 +292,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	mag_type = /obj/item/ammo_box/magazine/mp90
-	fire_sound = 'sound/weapons/Gunshot_smg.ogg'
+	fire_sound = 'sound/f13weapons/smg_loud.ogg'
 	slowdown = 0.2
 
 //14mm SMG 			Keywords: 14mm, AP, 21/27 rounds
