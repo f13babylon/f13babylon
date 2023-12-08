@@ -289,11 +289,10 @@
 	desc = "The Fabrique Nationale P90c was just coming into use at the time of the war. The weapon's bullpup layout, and compact design, make it easy to control. The durable P90c is prized for its reliability, and high firepower in a ruggedly-compact package. Chambered in 10mm."
 	icon_state = "p90"
 	item_state = "p90"
+	fire_sound = 'sound/f13weapons/smg_loud.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	mag_type = /obj/item/ammo_box/magazine/mp90
-	fire_sound = 'sound/f13weapons/smg_loud.ogg'
-	slowdown = 0.2
 
 //14mm SMG 			Keywords: 14mm, AP, 21/27 rounds
 /obj/item/gun/ballistic/automatic/smg/smg14mm
