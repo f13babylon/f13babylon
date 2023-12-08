@@ -299,6 +299,7 @@
 /obj/item/gun/ballistic/automatic/smg/smg14mm
 	name = "14mm SMG"
 	desc = "A heavy-duty SMG designed to tear through most forms of armor."
+	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "smg14mm"
 	item_state = "smg14mm"
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
