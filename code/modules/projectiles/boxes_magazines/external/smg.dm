@@ -86,10 +86,16 @@
 	max_ammo = 30
 	multiple_sprites = 2
 
+/obj/item/ammo_box/magazine/mthompson/empty
+	start_empty = 1
+
 /obj/item/ammo_box/magazine/mthompson/drum
 	name = "thompson drum magazine (.45 ACP)"
 	icon_state = "mdrum"
 	max_ammo = 50
+
+/obj/item/ammo_box/magazine/mthompson/drum/empty
+	start_empty = 1
 
 /obj/item/ammo_box/magazine/mp90
 	name = "submachinegun magazine (5mm)"

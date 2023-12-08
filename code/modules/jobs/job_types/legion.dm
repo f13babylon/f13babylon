@@ -846,7 +846,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/loadout/vetsmg
 	name = "Flanker"
-	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm = 1,
+	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
 	backpack_contents = list(
 		/obj/item/shield/riot/legion,
 		/obj/item/ammo_box/magazine/msmg10mm = 2,

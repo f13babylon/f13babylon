@@ -168,28 +168,7 @@
 /obj/item/gun/ballistic/automatic/smg/smg10mm/high/disable_burst()
 	. = ..()
 	spread = 0
-/*
-/obj/item/gun/ballistic/automatic/smg/smg10mm/high/attackby(obj/item/W, mob/user, params)
-	if(istype(W,/obj/item/screwdriver))
-		var/obj/item/A = new /obj/item/prefabs/complex/screw
-		var/obj/item/B = new /obj/item/prefabs/complex/trigger
-		var/obj/item/C = new /obj/item/prefabs/complex/bolt/simple
-		var/obj/item/D = new /obj/item/prefabs/complex/action/auto
-		var/obj/item/E = new /obj/item/prefabs/complex/barrel/mm10
-		var/obj/item/F = new /obj/item/prefabs/complex/stock/mid
-		var/obj/item/G = new /obj/item/prefabs/complex/complexWeaponFrame/high
-		var/obj/item/H = new /obj/item/advanced_crafting_components/receiver
-		A.forceMove(usr.loc)
-		B.forceMove(usr.loc)
-		C.forceMove(usr.loc)
-		D.forceMove(usr.loc)
-		E.forceMove(usr.loc)
-		F.forceMove(usr.loc)
-		G.forceMove(usr.loc)
-		H.forceMove(usr.loc)
-		qdel(src)
-		to_chat(usr,"You dissasemble the [src].")
-	. = ..()
+
 /*
 /obj/item/gun/ballistic/automatic/smg/uzi/attackby(obj/item/W, mob/user, params)
 	if(istype(W,/obj/item/screwdriver))

@@ -215,7 +215,7 @@
 	desc = "An integrally suppressed submachinegun chambered in the common .22 long rifle. Top loaded drum magazine."
 	icon_state = "smg22"
 	item_state = "smg22"
-	fire_sound = 'sound/f13weapons/smg22.ogg'
+	fire_sound = 'sound/f13weapons/american180.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	mag_type = /obj/item/ammo_box/magazine/msmg22
@@ -248,7 +248,7 @@
 	icon_state = "calico"
 	item_state = "uzi"
 	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_NORMAL
+	weapon_weight = WEAPON_MEDIUM
 	mag_type = /obj/item/ammo_box/magazine/mcalico
 
 //10mm SMG			Keywords: 10mm, 30 Rounds
@@ -267,7 +267,7 @@
 	icon_state = "grease_gun"
 	item_state = "grease_gun"
 	fire_sound = 'sound/f13weapons/greasegun.ogg'
-	weapon_weight = WEAPON_NORMAL
+	weapon_weight = WEAPON_MEDIUM
 	mag_type = /obj/item/ammo_box/magazine/mgreasegun
 
 //Thompson			Keywords: .45 ACP, 30/50 Rounds
@@ -278,7 +278,7 @@
 	item_state = "thompson"
 	fire_sound = 'sound/weapons/Gunshot.ogg'
 	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_NORMAL
+	weapon_weight = WEAPON_MEDIUM
 	mag_type = /obj/item/ammo_box/magazine/mthompson
 
 //P90			Keywords: 5mm, 50 Rounds
@@ -288,12 +288,12 @@
 	icon_state = "p90"
 	item_state = "p90"
 	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_NORMAL
+	weapon_weight = WEAPON_MEDIUM
 	mag_type = /obj/item/ammo_box/magazine/mp90
 	fire_sound = 'sound/weapons/Gunshot_smg.ogg'
 	slowdown = 0.2
 
-//14mm SMG 			Keywords: 14mm, 21/27 rounds
+//14mm SMG 			Keywords: 14mm, AP, 21/27 rounds
 /obj/item/gun/ballistic/automatic/smg/smg14mm
 	name = "14mm SMG"
 	desc = "A heavy-duty SMG designed to tear through most forms of armor."
@@ -301,7 +301,7 @@
 	item_state = "smg14mm"
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
 	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_NORMAL
+	weapon_weight = WEAPON_MEDIUM
 	mag_type = /obj/item/ammo_box/magazine/msmg14mm
 	autofire_shot_delay = 2.15
 	spread = 12

@@ -158,7 +158,6 @@
 		/obj/item/gun/ballistic/revolver/winchesterrebored = 4,
 		/obj/item/gun/ballistic/automatic/pistol/m1911 = 4,
 		/obj/effect/spawner/bundle/f13/revolverm29 = 4,
-		/obj/effect/spawner/bundle/weapon/worn10mmsmg = 1,
 		/obj/effect/spawner/bundle/weapon/lasmusket = 1,
 		/obj/item/melee/onehanded/machete = 5,
 		/obj/item/twohanded/baseball = 4,
@@ -462,11 +461,4 @@
 	items = list(
 		/obj/item/gun/ballistic/revolver/hobo/pepperbox,
 		/obj/item/ammo_box/c10mm/improvised,
-		)
-
-/obj/effect/spawner/bundle/weapon/worn10mmsmg
-	name = "worn 10mm SMG and ammo spawner"
-	items = list(
-		/obj/item/gun/ballistic/automatic/smg/smg10mm/worn,
-		/obj/item/ammo_box/magazine/m10mm/empty,
 		)
