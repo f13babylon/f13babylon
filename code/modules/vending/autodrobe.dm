@@ -51,6 +51,8 @@
 						/obj/item/clothing/under/costume/griffin = 1,
 						/obj/item/clothing/shoes/griffin = 1,
 						/obj/item/clothing/head/griffin = 1,
+						/obj/item/clothing/suit/bunnysuit = 1,
+						/obj/item/clothing/head/bunnyhead = 1,
 						/obj/item/clothing/neck/apron/labor = 1,
 						/obj/item/clothing/under/suit/waiter = 1,
 						/obj/item/clothing/suit/jacket/miljacket = 1,
