@@ -27455,6 +27455,15 @@
 	icon_state = "topshadowleft"
 	},
 /area/f13/wasteland/east)
+"ejT" = (
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#706891"
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/followers)
 "ekc" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 9;
@@ -86823,7 +86832,7 @@ jgV
 yjm
 lsP
 blo
-lsP
+ifH
 gZn
 sub
 ydE
@@ -88621,7 +88630,7 @@ aoK
 ubz
 yjm
 lsP
-lsP
+vwZ
 yjm
 bXI
 aZp
@@ -89135,7 +89144,7 @@ dFh
 dFh
 bwB
 lsP
-vwZ
+lsP
 yjm
 yjm
 pat
@@ -89648,8 +89657,8 @@ dFh
 dFh
 vgM
 yjm
-lsP
-lsP
+ejT
+vwZ
 yjm
 yjm
 pat
