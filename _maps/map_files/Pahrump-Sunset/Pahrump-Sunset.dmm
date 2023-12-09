@@ -29753,11 +29753,11 @@
 /obj/item/gun/ballistic/automatic/smg/uzi,
 /obj/item/gun/ballistic/automatic/smg/uzi,
 /obj/item/gun/ballistic/automatic/smg/uzi,
-/obj/item/ammo_box/magazine/m9mmsmg,
-/obj/item/ammo_box/magazine/m9mmsmg,
-/obj/item/ammo_box/magazine/m9mmsmg,
-/obj/item/ammo_box/magazine/m9mmsmg,
-/obj/item/ammo_box/magazine/m9mmsmg,
+/obj/item/ammo_box/magazine/msmg9mm,
+/obj/item/ammo_box/magazine/msmg9mm,
+/obj/item/ammo_box/magazine/msmg9mm,
+/obj/item/ammo_box/magazine/msmg9mm,
+/obj/item/ammo_box/magazine/msmg9mm,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
 "fpt" = (
