@@ -715,20 +715,30 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/lightplasmapistol)
 
-/obj/item/book/granter/crafting_recipe/blueprint/uzi
-	name = "mini uzi blueprint"
+/obj/item/book/granter/crafting_recipe/blueprint/greasegun
+	name = "grease gun blueprint "
 	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/uzi)
+	crafting_recipe_types = list(/datum/crafting_recipe/greasegun)
 
 /obj/item/book/granter/crafting_recipe/blueprint/smg10mm
 	name = "10mm smg blueprint"
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/smg10mm)
 
-/obj/item/book/granter/crafting_recipe/blueprint/greasegun
-	name = "m3a1 grease gun blueprint"
+/obj/item/book/granter/crafting_recipe/blueprint/uzi
+	name = "uzi blueprint"
 	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/grease_gun)
+	crafting_recipe_types = list(/datum/crafting_recipe/uzi)
+
+/obj/item/book/granter/crafting_recipe/blueprint/mp5
+	name = "mp5 blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/mp5)
+
+/obj/item/book/granter/crafting_recipe/blueprint/thompson
+	name = "thompson blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/thompson)
 
 /obj/item/book/granter/crafting_recipe/blueprint/brushgun
 	name = "brush gun blueprint"
