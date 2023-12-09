@@ -282,7 +282,7 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/cheaparrow)
 
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg10mm)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/grease_gun)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/greasegun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/auto5)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/trail_carbine)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/remingtonhuntingrifle)
