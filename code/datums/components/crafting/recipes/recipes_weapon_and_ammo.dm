@@ -1093,7 +1093,7 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
-//MP5
+//Thompson
 /datum/crafting_recipe/thompson
 	name = "Thompson"
 	result = /obj/item/gun/ballistic/automatic/smg/thompson
