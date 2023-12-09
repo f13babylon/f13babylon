@@ -273,6 +273,9 @@
 "cs" = (
 /obj/machinery/autolathe/ammo/unlocked,
 /obj/effect/turf_decal/bot,
+/obj/item/stack/sheet/metal/ten,
+/obj/item/stack/ore/blackpowder/five,
+/obj/item/stack/ore/blackpowder/five,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/enclave/armory)
 "ct" = (
@@ -536,6 +539,10 @@
 /obj/item/clothing/shoes/combat/coldres,
 /obj/item/clothing/shoes/combat/coldres,
 /obj/effect/turf_decal/bot,
+/obj/item/storage/belt/holster,
+/obj/item/storage/belt/holster,
+/obj/item/storage/belt/holster,
+/obj/item/storage/belt/holster,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/enclave/armory)
 "ej" = (
@@ -888,6 +895,7 @@
 /obj/item/clothing/head/helmet/f13/combat/enclave,
 /obj/item/storage/belt/military,
 /obj/effect/turf_decal/bot,
+/obj/item/storage/belt/military,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/enclave/armory)
 "gY" = (
@@ -2054,6 +2062,7 @@
 /obj/item/clothing/head/helmet/f13/combat/enclave,
 /obj/item/storage/belt/military,
 /obj/effect/turf_decal/bot,
+/obj/item/storage/belt/military,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/enclave/armory)
 "pd" = (
@@ -2382,9 +2391,12 @@
 /area/f13/enclave)
 "ry" = (
 /obj/structure/rack,
-/obj/item/stack/sheet/metal/ten,
-/obj/item/stack/sheet/glass/ten,
 /obj/item/storage/part_replacer,
+/obj/item/stack/sheet/metal/twenty,
+/obj/item/stack/sheet/metal/five,
+/obj/item/stack/sheet/glass/five,
+/obj/item/stack/sheet/glass/ten,
+/obj/item/stack/sheet/glass/ten,
 /turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
 /area/f13/enclave/rnd)
 "rB" = (
@@ -2822,6 +2834,9 @@
 "uu" = (
 /obj/structure/rack,
 /obj/machinery/light/small,
+/obj/item/storage/belt/utility/full,
+/obj/item/storage/belt/utility/full,
+/obj/item/storage/belt/utility/full,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/enclave)
 "uv" = (
@@ -3802,7 +3817,6 @@
 "Bw" = (
 /obj/structure/rack,
 /obj/item/stack/sheet/mineral/abductor/ten,
-/obj/item/storage/belt/utility/full/engi,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/enclave)
 "BC" = (
@@ -4447,6 +4461,8 @@
 "GG" = (
 /obj/machinery/autolathe/hacked,
 /obj/effect/turf_decal/bot,
+/obj/item/stack/sheet/glass/ten,
+/obj/item/stack/sheet/metal/ten,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/enclave/armory)
 "GH" = (
@@ -4861,8 +4877,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/enclave)
 "Jx" = (
+/obj/item/storage/money_stack,
 /turf/open/floor/f13,
-/area/f13/enclave)
+/area/f13/enclave/armory)
 "Jy" = (
 /obj/structure/decoration/clock{
 	pixel_y = 30
@@ -5553,6 +5570,14 @@
 "Pr" = (
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"Ps" = (
+/obj/structure/table,
+/obj/machinery/defibrillator_mount/loaded{
+	pixel_x = -32;
+	pixel_y = -3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/neutral,
+/area/f13/enclave/medbay)
 "Pt" = (
 /obj/structure/table/reinforced,
 /obj/item/cigbutt/cigarbutt,
@@ -5597,6 +5622,21 @@
 	icon_state = "reddirtyfull"
 	},
 /area/f13/enclave/prison)
+"PK" = (
+/obj/machinery/button/door{
+	id = "pneumatic_door2";
+	name = "Primary Blastdoor";
+	pixel_x = 30;
+	pixel_y = -5
+	},
+/obj/machinery/button/door{
+	id = "pneumatic_door2t";
+	name = "Outer Blastdoor";
+	pixel_x = 30;
+	pixel_y = 5
+	},
+/turf/open/floor/f13,
+/area/f13/enclave/command)
 "PM" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/junk/small/table,
@@ -15059,10 +15099,10 @@ TI
 TI
 AW
 Tm
-Jx
+Gh
 Qx
-Jx
-Jx
+Gh
+Gh
 AW
 mH
 tI
@@ -15072,11 +15112,11 @@ tI
 tI
 RW
 mA
-Jx
-Jx
-Jx
-Jx
-Jx
+Gh
+Gh
+Gh
+Gh
+Gh
 mA
 mA
 mA
@@ -15315,11 +15355,11 @@ TI
 TI
 TI
 AW
-Jx
+Gh
 oO
 oO
 oO
-Jx
+Gh
 AW
 hT
 tI
@@ -15329,11 +15369,11 @@ tI
 tI
 ks
 mA
-Jx
+Gh
 Sx
 Sx
 Sx
-Jx
+Gh
 SB
 of
 mA
@@ -15572,11 +15612,11 @@ Rb
 Rb
 vX
 AW
-Jx
+Gh
 WT
 UX
 JE
-Jx
+Gh
 AW
 hs
 tI
@@ -15586,11 +15626,11 @@ tI
 tI
 zL
 mA
-Jx
-Jx
-Jx
-Jx
-Jx
+Gh
+Gh
+Gh
+Gh
+Gh
 Jw
 of
 mA
@@ -15829,11 +15869,11 @@ TI
 TI
 TI
 AW
-Jx
+Gh
 wI
 Pt
 zG
-Jx
+Gh
 AW
 vG
 tI
@@ -15843,11 +15883,11 @@ OZ
 tI
 zq
 mA
-Jx
+Gh
 Sx
 Sx
 Sx
-Jx
+Gh
 mA
 mA
 mA
@@ -16086,25 +16126,25 @@ Rb
 Rb
 TI
 AW
-Jx
+Gh
 oO
 PO
 oO
-Jx
+Gh
 AW
 nb
 Bf
 DJ
-Jx
+Gh
 Pa
 Bf
 yJ
 mA
-Jx
-Jx
-Jx
-Jx
-Jx
+Gh
+Gh
+Gh
+Gh
+Gh
 mA
 uo
 cl
@@ -16343,25 +16383,25 @@ TI
 TI
 TI
 AW
-Jx
-Jx
-Jx
-Jx
-Jx
+Gh
+Gh
+Gh
+Gh
+Gh
 AW
 fq
 Sx
-Jx
+Gh
 Ko
-Jx
+Gh
 Sx
 HP
 mA
-Jx
+Gh
 Sx
 Sx
 Sx
-Jx
+Gh
 mA
 Ny
 Ny
@@ -16608,17 +16648,17 @@ AW
 AW
 fq
 Sx
-Jx
-Jx
-Jx
+Gh
+Gh
+Gh
 Sx
 HP
 mA
-Jx
-Jx
-Jx
-Jx
-Jx
+Gh
+Gh
+Gh
+Gh
+Gh
 mA
 KA
 Ny
@@ -16865,17 +16905,17 @@ FX
 AW
 fq
 Sx
-Jx
-Jx
-Jx
+Gh
+Gh
+Gh
 Sx
 HP
 mA
-Jx
+Gh
 Sx
 Sx
 Sx
-Jx
+Gh
 mA
 Su
 Ny
@@ -17129,9 +17169,9 @@ PF
 zE
 mA
 DU
-Jx
-Jx
-Jx
+Gh
+Gh
+Gh
 DU
 mA
 yE
@@ -18417,7 +18457,7 @@ JF
 JF
 AW
 vH
-Jx
+Gh
 AW
 Yg
 AW
@@ -18665,7 +18705,7 @@ AW
 Dz
 dz
 Dz
-Jx
+Gh
 At
 qI
 lk
@@ -18922,8 +18962,8 @@ AW
 oO
 oO
 oO
-Jx
-Jx
+Gh
+Gh
 kh
 bw
 AW
@@ -18931,14 +18971,14 @@ JF
 JF
 AW
 vH
-Jx
+Gh
 gp
-Jx
-Jx
-Jx
+Gh
+Gh
+Gh
 At
-Jx
-Jx
+Gh
+Gh
 gp
 JF
 JF
@@ -19170,11 +19210,11 @@ TI
 TI
 TI
 AW
-Jx
-Jx
-Jx
-Jx
-Jx
+Gh
+Gh
+Gh
+Gh
+Gh
 AW
 oO
 im
@@ -19188,14 +19228,14 @@ JF
 JF
 AW
 vH
-Jx
+Gh
 AW
 ox
 ox
 ox
 ox
-Jx
-Jx
+Gh
+Gh
 tw
 JF
 JF
@@ -19427,11 +19467,11 @@ iA
 UU
 TI
 AW
-Jx
+Gh
 oO
 Sy
 oO
-Jx
+Gh
 AW
 oO
 oO
@@ -19684,11 +19724,11 @@ TI
 TI
 TI
 AW
-Jx
+Gh
 wI
 ax
 mx
-Jx
+Gh
 AW
 oO
 ay
@@ -19941,11 +19981,11 @@ tk
 XD
 vX
 AW
-Jx
+Gh
 WT
 hP
 kz
-Jx
+Gh
 AW
 oO
 oO
@@ -20198,11 +20238,11 @@ TI
 TI
 TI
 AW
-Jx
+Gh
 oO
 oO
 oO
-Jx
+Gh
 AW
 oO
 ay
@@ -20455,19 +20495,19 @@ LU
 sa
 TI
 AW
-Jx
-Jx
-Jx
-Jx
-Jx
+Gh
+Gh
+Gh
+Gh
+Gh
 AW
 oO
 oO
 oO
-Jx
-Jx
-Jx
-Jx
+Gh
+Gh
+Gh
+Gh
 ml
 JF
 Id
@@ -20716,15 +20756,15 @@ Tm
 ax
 sh
 ax
-Jx
+Gh
 AW
-Jx
+Gh
 It
 uq
-Jx
+Gh
 TX
 oj
-Jx
+Gh
 AW
 JF
 IE
@@ -23834,9 +23874,9 @@ Zx
 AW
 AW
 PC
-Jx
+Gh
 At
-Jx
+Gh
 AW
 SP
 SP
@@ -24091,8 +24131,8 @@ JF
 np
 AW
 Jm
-Jx
-Jx
+Gh
+Gh
 Ks
 AW
 kn
@@ -24347,9 +24387,9 @@ JF
 JF
 JF
 Gr
-Jx
-Jx
-Jx
+Gh
+Gh
+Gh
 uL
 FG
 SP
@@ -24605,8 +24645,8 @@ JF
 JF
 AW
 Rj
-Jx
-Jx
+Gh
+Gh
 Vd
 gk
 CK
@@ -24861,9 +24901,9 @@ JF
 JF
 JF
 Gr
-Jx
-Jx
-Jx
+Gh
+Gh
+Gh
 yr
 FG
 SP
@@ -25118,9 +25158,9 @@ hG
 sO
 JF
 AW
-Jx
-Jx
-Jx
+Gh
+Gh
+Gh
 Ks
 AW
 SP
@@ -25343,7 +25383,7 @@ sg
 FJ
 zK
 AW
-fl
+Jx
 Ot
 vJ
 AW
@@ -25363,7 +25403,7 @@ Qp
 rf
 hp
 hR
-Se
+Ps
 AW
 AW
 JF
@@ -25376,9 +25416,9 @@ AW
 AW
 AW
 uR
-Jx
-Jx
-Jx
+Gh
+Gh
+Gh
 AW
 SP
 SP
@@ -25633,8 +25673,8 @@ hz
 Jb
 AW
 zW
-Jx
-Jx
+Gh
+Gh
 hq
 AW
 HT
@@ -25890,8 +25930,8 @@ RF
 DI
 AW
 sH
-Jx
-Jx
+Gh
+Gh
 tY
 AW
 uv
@@ -26148,8 +26188,8 @@ MV
 og
 Gh
 wa
-Jx
-Jx
+Gh
+Gh
 AW
 SP
 kn
@@ -27419,7 +27459,7 @@ AW
 Yv
 Ii
 hz
-hz
+PK
 hz
 Ir
 JF

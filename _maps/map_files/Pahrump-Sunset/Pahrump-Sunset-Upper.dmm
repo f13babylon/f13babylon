@@ -361,9 +361,6 @@
 /area/f13/wasteland)
 "abp" = (
 /obj/machinery/hydroponics/constructable,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
 /obj/effect/turf_decal/trimline/brown/filled/corner{
 	dir = 8
 	},
@@ -814,9 +811,6 @@
 /area/f13/city/bighorn)
 "acZ" = (
 /obj/machinery/hydroponics/constructable,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/effect/turf_decal/trimline/brown/filled/corner{
 	dir = 4
 	},
@@ -862,9 +856,6 @@
 /area/f13/building/hospital)
 "adx" = (
 /obj/machinery/hydroponics/constructable,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
 /obj/effect/turf_decal/trimline/brown/filled/corner{
 	dir = 1
 	},
@@ -1795,9 +1786,6 @@
 /area/f13/city/bighorn)
 "bEx" = (
 /obj/machinery/hydroponics/constructable,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/effect/turf_decal/trimline/brown/filled/corner,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
@@ -5388,9 +5376,6 @@
 /area/f13/building/mall)
 "icS" = (
 /obj/machinery/hydroponics/constructable,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/effect/turf_decal/trimline/brown/filled/corner,
 /obj/effect/turf_decal/trimline/brown/filled/corner{
 	dir = 4
@@ -7232,9 +7217,6 @@
 /area/f13/building/hospital)
 "lqH" = (
 /obj/machinery/hydroponics/constructable,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
 /obj/effect/turf_decal/trimline/brown/filled/corner{
 	dir = 1
 	},
@@ -12659,9 +12641,6 @@
 /area/f13/followers)
 "ulq" = (
 /obj/machinery/hydroponics/constructable,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
 /obj/effect/turf_decal/trimline/brown/filled/corner{
 	dir = 8
 	},
@@ -14401,9 +14380,6 @@
 /area/f13/building/mall)
 "xzm" = (
 /obj/machinery/hydroponics/constructable,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
@@ -14522,12 +14498,9 @@
 	},
 /area/f13/followers)
 "xGw" = (
-/obj/machinery/hydroponics/constructable,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
+/obj/machinery/smartfridge/bottlerack/grownbin,
 /turf/open/floor/f13{
-	icon_state = "darkdirtysolid"
+	icon_state = "floorrusty"
 	},
 /area/f13/followers)
 "xGW" = (
@@ -30543,8 +30516,8 @@ reH
 kse
 reH
 reH
-reH
-reH
+deg
+vfQ
 rqH
 oez
 oez
@@ -30799,8 +30772,8 @@ rqH
 rqH
 rqH
 reH
+reH
 deg
-vfQ
 vfQ
 rqH
 oez
@@ -31056,9 +31029,9 @@ reH
 mpI
 rqH
 reH
-deg
-vfQ
-vfQ
+reH
+qBC
+aED
 rqH
 oez
 vqz
@@ -31313,8 +31286,8 @@ nnr
 reH
 kse
 reH
-qBC
-aED
+reH
+reH
 rqH
 rqH
 oez
@@ -34650,13 +34623,13 @@ oez
 rqH
 adx
 kpx
-xGw
+xzm
 kpx
-xGw
+xzm
 kpx
-xGw
+xzm
 kpx
-xGw
+xzm
 rqH
 abc
 abc
@@ -35425,7 +35398,7 @@ dQN
 iVC
 reH
 rnx
-reH
+xGw
 dfn
 weR
 rqH

@@ -4769,6 +4769,9 @@
 /obj/structure/sign/poster/official/help_others{
 	pixel_x = 32
 	},
+/obj/item/radio/headset/headset_followers,
+/obj/item/radio/headset/headset_followers,
+/obj/item/radio/headset/headset_followers,
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
 	},
@@ -6563,14 +6566,14 @@
 	},
 /area/f13/tunnel)
 "emK" = (
-/obj/structure/rack/shelf_metal,
 /obj/structure/window/reinforced/spawner,
 /obj/structure/window/reinforced/spawner{
 	dir = 4
 	},
-/obj/effect/spawner/lootdrop/f13/advcrafting,
-/obj/effect/spawner/lootdrop/f13/advcrafting,
 /obj/machinery/light,
+/obj/structure/guncase{
+	anchored = 1
+	},
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
@@ -7139,7 +7142,8 @@
 "fqy" = (
 /obj/machinery/light,
 /obj/structure/closet/secure_closet/medical1{
-	anchored = 1
+	anchored = 1;
+	req_one_access_txt = "124"
 	},
 /obj/item/storage/firstaid/o2,
 /obj/item/storage/firstaid/o2,
@@ -8551,7 +8555,7 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 1
 	},
-/obj/machinery/mineral/wasteland_vendor/pipboy,
+/obj/machinery/vending/snack/blue,
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
 	},
@@ -8950,10 +8954,8 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/structure/guncase{
-	anchored = 1
-	},
 /obj/effect/turf_decal/delivery/white,
+/obj/item/storage/money_stack,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -8998,6 +9000,8 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 8
 	},
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
 /obj/effect/spawner/lootdrop/f13/crafting,
 /obj/effect/spawner/lootdrop/f13/crafting,
 /turf/open/floor/f13{
@@ -9899,6 +9903,10 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 4
 	},
+/obj/item/stack/ore/blackpowder/five,
+/obj/item/stack/ore/blackpowder/five,
+/obj/item/stack/sheet/metal/ten,
+/obj/item/stack/sheet/metal/five,
 /turf/open/floor/f13{
 	icon_state = "dark"
 	},
@@ -10275,11 +10283,19 @@
 /area/f13/tunnel)
 "lDM" = (
 /obj/structure/rack/shelf_metal,
-/obj/effect/spawner/lootdrop/f13/advcrafting,
-/obj/effect/spawner/lootdrop/f13/advcrafting,
 /obj/structure/window/reinforced/spawner{
 	dir = 4
 	},
+/obj/effect/spawner/bundle/f13/n99,
+/obj/effect/spawner/bundle/f13/n99,
+/obj/effect/spawner/bundle/f13/n99,
+/obj/effect/spawner/bundle/f13/n99,
+/obj/item/reagent_containers/spray/pepper,
+/obj/item/reagent_containers/spray/pepper,
+/obj/item/reagent_containers/spray/pepper,
+/obj/item/reagent_containers/spray/pepper,
+/obj/item/reagent_containers/spray/pepper,
+/obj/item/reagent_containers/spray/pepper,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
@@ -10589,7 +10605,11 @@
 	dir = 1;
 	light_color = "#706891"
 	},
-/obj/item/kirbyplants/random,
+/obj/structure/table,
+/obj/machinery/microwave{
+	pixel_x = -1;
+	pixel_y = 2
+	},
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
 	},
@@ -10763,6 +10783,10 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 8
 	},
+/obj/effect/spawner/lootdrop/f13/advcrafting,
+/obj/effect/spawner/lootdrop/f13/advcrafting,
+/obj/effect/spawner/lootdrop/f13/advcrafting,
+/obj/effect/spawner/lootdrop/f13/advcrafting,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
@@ -13815,7 +13839,7 @@
 /area/f13/building)
 "spx" = (
 /obj/machinery/door/airlock/medical{
-	name = "Clinic Morgue";
+	name = "Clinic Research";
 	req_one_access_txt = "124"
 	},
 /obj/effect/turf_decal/stripes/white/corner{
@@ -13946,6 +13970,8 @@
 /obj/item/stack/sheet/glass/ten,
 /obj/item/stack/sheet/mineral/wood/twenty,
 /obj/item/storage/belt/utility/full,
+/obj/item/stack/sheet/metal/twenty,
+/obj/item/stack/sheet/glass/ten,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
@@ -15635,6 +15661,12 @@
 	dir = 8
 	},
 /obj/structure/closet,
+/obj/item/clothing/under/f13/followers,
+/obj/item/clothing/under/f13/followers,
+/obj/item/clothing/under/f13/followers,
+/obj/item/clothing/suit/hooded/followerlight,
+/obj/item/clothing/suit/hooded/followerlight,
+/obj/item/clothing/suit/hooded/followerlight,
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
 	},
@@ -15656,24 +15688,6 @@
 /obj/machinery/reagentgrinder/constructed,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
-	},
-/area/f13/followers)
-"vPI" = (
-/obj/structure/guncase{
-	anchored = 1
-	},
-/obj/effect/spawner/bundle/f13/smg10mm,
-/obj/effect/spawner/bundle/f13/n99,
-/obj/effect/spawner/bundle/f13/n99,
-/obj/effect/spawner/bundle/f13/n99,
-/obj/item/reagent_containers/spray/pepper,
-/obj/item/reagent_containers/spray/pepper,
-/obj/item/reagent_containers/spray/pepper,
-/obj/item/reagent_containers/spray/pepper,
-/obj/item/reagent_containers/spray/pepper,
-/obj/item/reagent_containers/spray/pepper,
-/turf/open/floor/f13{
-	icon_state = "purplefull"
 	},
 /area/f13/followers)
 "vQn" = (
@@ -16014,8 +16028,8 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 4
 	},
-/obj/effect/spawner/lootdrop/f13/crafting,
-/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/item/storage/belt/utility/full,
+/obj/item/storage/belt/utility/full,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
@@ -36419,7 +36433,7 @@ qkc
 jsU
 yle
 yle
-vPI
+yle
 wml
 yle
 yle

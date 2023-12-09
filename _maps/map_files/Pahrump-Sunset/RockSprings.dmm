@@ -294,6 +294,8 @@
 /obj/item/stack/sheet/glass{
 	amount = 50
 	},
+/obj/item/stack/sheet/glass/ten,
+/obj/item/stack/sheet/glass/ten,
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/legion)
 "amr" = (
@@ -22676,6 +22678,13 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/building)
+"wpg" = (
+/obj/structure/rack,
+/obj/item/storage/belt/utility/full,
+/obj/item/storage/belt/utility/waster,
+/obj/item/storage/belt/utility/waster,
+/turf/open/floor/plasteel/f13/stone/rugged,
+/area/f13/legion)
 "wps" = (
 /obj/structure/chair/stool/retro/black,
 /obj/effect/decal/cleanable/dirt,
@@ -41923,7 +41932,7 @@ lvP
 fCY
 jLa
 kEh
-hAL
+wpg
 gtX
 hAL
 jLa
