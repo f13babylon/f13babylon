@@ -298,6 +298,12 @@
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
 
+/datum/sprite_accessory/tails/human/feathertail
+	name = "Feather"
+	icon_state = "feathertail"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_ALL
+
 /datum/sprite_accessory/tails/human/fennec
 	name = "Fennec"
 	icon_state = "fennec"
@@ -352,6 +358,18 @@
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
 
+/datum/sprite_accessory/tails/human/furret
+	name = "Furret"
+	icon_state = "furret"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails/human/gecko
+	name = "Gecko"
+	icon_state = "gecko"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_RED
+
 /datum/sprite_accessory/tails/human/horse
 	name = "Horse"
 	icon_state = "horse"
@@ -404,6 +422,12 @@
 	icon_state = "kitsune"
 	color_src = MATRIXED
 	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails/human/leafeon
+	name = "Leafeon"
+	icon_state = "leaf"
+	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
 
 /datum/sprite_accessory/tails/human/ltiger
@@ -468,6 +492,18 @@
 	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
 	matrixed_sections = MATRIX_RED
 
+/datum/sprite_accessory/tails/human/femalepeacock
+	name = "Peacock Female"
+	icon_state = "peacockfemale"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_ALL
+
+/datum/sprite_accessory/tails/human/malepeacock
+	name = "Peacock Male"
+	icon_state = "peacockmale"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_ALL
+
 /datum/sprite_accessory/tails/human/pony
 	name = "Pony"
 	icon_state = "pony"
@@ -505,6 +541,12 @@
 	icon_state = "raccoonalt"
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails/human/raptor
+	name = "Raptor"
+	icon_state = "raptor"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_RED_BLUE
 
 /datum/sprite_accessory/tails/human/ailurus
 	name = "Red Panda"
@@ -602,6 +644,18 @@
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED
 
+/datum/sprite_accessory/tails/human/snep
+	name = "Snep"
+	icon_state = "snep"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails_animated/human/snep
+	name = "Snep"
+	icon_state = "snep"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_RED_GREEN
+
 /datum/sprite_accessory/tails/human/spikes
 	name = "Spikes"
 	icon_state = "spikes"
@@ -631,6 +685,16 @@
 	color_src = MATRIXED
 	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
 	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails/human/tailmaw
+	name = "Tail Maw"
+	icon_state = "tailmaw"
+	color_src = MUTCOLORS
+
+/datum/sprite_accessory/tails_animated/human/tailmaw
+	name = "Tail Maw"
+	icon_state = "tailmaw"
+	color_src = MUTCOLORS
 
 /datum/sprite_accessory/tails/human/tamamo_kitsune
 	name = "Tamamo Kitsune Tails" //Tamamo-no-Tiro, let it be known!
@@ -771,7 +835,6 @@
 /******************************************
 ************** Furry Tails ****************
 *******************************************/
-
 /datum/sprite_accessory/tails/mam_tails
 	color_src = MATRIXED
 	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
@@ -851,6 +914,24 @@
 	icon_state = "bee"
 	matrixed_sections = MATRIX_RED_GREEN
 
+/datum/sprite_accessory/tails/mam_tails/bee2
+	name = "Bee w/ Stinger"
+	icon_state = "bee2"
+	matrixed_sections = MATRIX_ALL
+
+/datum/sprite_accessory/tails_animated/mam_tails_animated/bee2
+	name = "Bee w/ Stinger"
+	icon_state = "bee2"
+	matrixed_sections = MATRIX_ALL
+
+/datum/sprite_accessory/tails/mam_tails/bigring
+	name = "Big Ring"
+	icon_state = "bigring"
+	matrixed_sections = MATRIX_RED_GREEN
+	dimension_x = 64
+	icon = 'modular_citadel/icons/mob/mam_tails_big.dmi'
+	center = TRUE
+
 /datum/sprite_accessory/tails/mam_tails/cat
 	name = "Cat"
 	icon_state = "cat"
@@ -881,9 +962,29 @@
 	icon_state = "twocat"
 	matrixed_sections = MATRIX_RED
 
+/datum/sprite_accessory/tails/mam_tails/slugcat
+	name = "Cat Slug"
+	icon_state = "slugcat"
+	matrixed_sections = MATRIX_RED
+
 /datum/sprite_accessory/tails/mam_tails/charmander
 	name = "Charmander"
 	icon_state = "charmander"
+
+/datum/sprite_accessory/tails/mam_tails/clubtail
+	name = "Club"
+	icon_state = "clubtail"
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails/mam_tails/corgi
+	name = "Corgi"
+	icon_state = "corgi"
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails_animated/mam_tails_animated/corgi
+	name = "Corgi"
+	icon_state = "corgi"
+	matrixed_sections = MATRIX_RED
 
 /datum/sprite_accessory/tails/mam_tails/corvid
 	name = "Corvid"
@@ -905,6 +1006,18 @@
 	icon_state = "cow"
 	matrixed_sections = MATRIX_RED
 
+/datum/sprite_accessory/tails/mam_tails/shark/datashark
+	name = "DataShark"
+	icon_state = "datashark"
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	matrixed_sections = MATRIX_RED_BLUE
+
+/datum/sprite_accessory/tails_animated/mam_tails_animated/shark/datashark
+	name = "DataShark"
+	icon_state = "datashark"
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	matrixed_sections = MATRIX_RED_BLUE
+
 /datum/sprite_accessory/tails/mam_tails/dtiger
 	name = "Dark Tiger"
 	icon_state = "dtiger"
@@ -917,6 +1030,66 @@
 	color_src = MUTCOLORS
 	icon = 'icons/mob/mutant_bodyparts.dmi'
 
+/datum/sprite_accessory/tails/mam_tails/deathclaw
+	name = "Deathclaw"
+	icon_state = "deathclaw"
+	color_src = MATRIXED
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails_animated/mam_tails/deathclaw
+	name = "Deathclaw"
+	icon_state = "deathclaw"
+	color_src = MATRIXED
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails/mam_tails/deer
+	name = "Deer"
+	icon_state = "deer"
+	color_src = MATRIXED
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails_animated/mam_tails/deer
+	name = "Deer"
+	icon_state = "deer"
+	color_src = MATRIXED
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails/mam_tails/spade
+	name = "Demon Spade"
+	icon_state = "spade"
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails_animated/mam_tails_animated/spade
+	name = "Demon Spade"
+	icon_state = "spade"
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails/mam_tails/double
+	name = "Double Fox"
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	icon_state = "doublefox"
+	matrixed_sections = MATRIX_ALL
+
+/datum/sprite_accessory/tails_animated/mam_tails_animated/doublefox
+	name = "Double Fox"
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	icon_state = "doublefox"
+	matrixed_sections = MATRIX_ALL
+
+/datum/sprite_accessory/tails/mam_tails/easterndragon
+	name = "Eastern Dragon"
+	icon_state = "easternd"
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails_animated/mam_tails_animated/easterndragon
+	name = "Eastern Dragon"
+	icon_state = "easternd"
+	matrixed_sections = MATRIX_RED_GREEN
+
 /datum/sprite_accessory/tails/mam_tails/eevee
 	name = "Eevee"
 	icon_state = "eevee"
@@ -926,6 +1099,12 @@
 	name = "Eevee"
 	icon_state = "eevee"
 	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails/mam_tails/feathertail
+	name = "Feather"
+	icon_state = "feathertail"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_ALL
 
 /datum/sprite_accessory/tails/mam_tails/fennec
 	name = "Fennec"
@@ -959,6 +1138,17 @@
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED
 
+/datum/sprite_accessory/tails/mam_tails/fluffy
+	name = "Fluffy"
+	icon_state = "fluffy"
+	color_src = MUTCOLORS
+
+/datum/sprite_accessory/tails/mam_tails/furret
+	name = "Furret"
+	icon_state = "furret"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_RED_GREEN
+
 /datum/sprite_accessory/tails/mam_tails/fox
 	name = "Fox"
 	icon_state = "fox"
@@ -969,6 +1159,27 @@
 	icon_state = "fox"
 	matrixed_sections = MATRIX_RED_GREEN
 
+/datum/sprite_accessory/tails/mam_tails/gecko
+	name = "Gecko"
+	icon_state = "gecko"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails/mam_tails/geckobig
+	name = "Gecko Big"
+	icon_state = "fatgecko"
+	matrixed_sections = MATRIX_ALL
+
+/datum/sprite_accessory/tails_animated/mam_tails_animated/geckobig
+	name = "Gecko Big"
+	icon_state = "fatgecko"
+	matrixed_sections = MATRIX_ALL
+
+/datum/sprite_accessory/tails/mam_tails/glaceon
+	name = "Glaceon"
+	icon_state = "glaceon"
+	matrixed_sections = MATRIX_RED_GREEN
+
 /datum/sprite_accessory/tails/mam_tails/hawk
 	name = "Hawk"
 	icon_state = "hawk"
@@ -977,6 +1188,16 @@
 /datum/sprite_accessory/tails_animated/mam_tails_animated/hawk
 	name = "Hawk"
 	icon_state = "hawk"
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails/mam_tails/shorthawk
+	name = "Hawk - Short"
+	icon_state = "shorthawk"
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails_animated/mam_tails_animated/shorthawk
+	name = "Hawk - Short"
+	icon_state = "shorthawk"
 	matrixed_sections = MATRIX_RED
 
 /datum/sprite_accessory/tails/mam_tails/horse
@@ -1009,6 +1230,26 @@
 	icon_state = "insect"
 	matrixed_sections = MATRIX_RED
 
+/datum/sprite_accessory/tails/mam_tails/bug2tone
+	name = "Insect - 2-tone"
+	icon_state = "bug2tone"
+	matrixed_sections = MATRIX_RED_BLUE
+
+/datum/sprite_accessory/tails_animated/mam_tails_animated/bug2tone
+	name = "Insect - 2-tone"
+	icon_state = "bug2tone"
+	matrixed_sections = MATRIX_RED_BLUE
+
+/datum/sprite_accessory/tails/mam_tails/jackal
+	name = "Jackal"
+	icon_state = "jackal"
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails_animated/mam_tails_animated/jackal
+	name = "Jackal"
+	icon_state = "jackal"
+	matrixed_sections = MATRIX_RED_GREEN
+
 /datum/sprite_accessory/tails/mam_tails/kangaroo
 	name = "Kangaroo"
 	icon_state = "kangaroo"
@@ -1018,6 +1259,22 @@
 	name = "Kangaroo"
 	icon_state = "kangaroo"
 	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails/mam_tails/kangaroo/alt
+	name = "Kangaroo (Large)"
+	icon_state = "kangaroo"
+	dimension_x = 64
+	icon = 'modular_citadel/icons/mob/mam_tails_big.dmi'
+	center = TRUE
+	color_src = MUTCOLORS
+
+/datum/sprite_accessory/tails_animated/mam_tails_animated/kangaroo/alt
+	name = "Kangaroo (Large)"
+	icon_state = "kangaroo"
+	dimension_x = 64
+	icon = 'modular_citadel/icons/mob/mam_tails_big.dmi'
+	center = TRUE
+	color_src = MUTCOLORS
 
 /datum/sprite_accessory/tails/mam_tails/kitsune
 	name = "Kitsune"
@@ -1038,6 +1295,12 @@
 	name = "Lab"
 	icon_state = "lab"
 	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails/mam_tails/leafeon
+	name = "Leafeon"
+	icon_state = "leaf"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_RED_GREEN
 
 /datum/sprite_accessory/tails/mam_tails/leopard
 	name = "Leopard"
@@ -1061,6 +1324,34 @@
 	color_src = MUTCOLORS
 	icon = 'icons/mob/mutant_bodyparts.dmi'
 
+/datum/sprite_accessory/tails/mam_tails/roiz
+	name = "Lizard (Large)"
+	icon_state = "roiz"
+	color_src = MUTCOLORS
+	dimension_x = 64
+	icon = 'modular_citadel/icons/mob/mam_tails_big.dmi'
+	center = TRUE
+
+/datum/sprite_accessory/tails/mam_tails/longfluff
+	name = "Long Fluff"
+	icon_state = "longfluff"
+	matrixed_sections = MATRIX_RED_GREEN
+	dimension_x = 64
+	icon = 'modular_citadel/icons/mob/mam_tails_big.dmi'
+	center = TRUE
+
+/datum/sprite_accessory/tails/mam_tails/lunasune
+	name = "Lunasune"
+	icon_state = "lunasune"
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails_animated/mam_tails_animated/lunasune
+	name = "Lunasune"
+	icon_state = "lunasune"
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	matrixed_sections = MATRIX_RED
+
 /datum/sprite_accessory/tails/mam_tails/murid
 	name = "Murid"
 	icon_state = "murid"
@@ -1083,6 +1374,24 @@
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
 
+/datum/sprite_accessory/tails/mam_tails/longstalker
+	name = "Nightstalker (Large)"
+	icon_state = "longstalker"
+	matrixed_sections = MATRIX_RED_GREEN
+	dimension_x = 64
+	icon = 'modular_citadel/icons/mob/mam_tails_big.dmi'
+	center = TRUE
+
+/datum/sprite_accessory/tails/mam_tails/ninetailsalt
+	name = "Ninetales"
+	icon_state = "ninetails"
+	color_src = MUTCOLORS
+
+/datum/sprite_accessory/tails/mam_tails/tent
+	name = "Octopus"
+	icon_state = "tent"
+	color_src = MUTCOLORS
+
 /datum/sprite_accessory/tails/mam_tails/orca
 	name = "Orca"
 	icon_state = "orca"
@@ -1103,11 +1412,65 @@
 	icon_state = "otie"
 	matrixed_sections = MATRIX_RED
 
+/datum/sprite_accessory/tails/mam_tails/malepeacock
+	name = "Peacock Male"
+	icon_state = "peacockmale"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_ALL
+
+/datum/sprite_accessory/tails/mam_tails/femalepeacock
+	name = "Peacock Female"
+	icon_state = "peacockfemale"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_ALL
+
+/datum/sprite_accessory/tails/mam_tails/pig
+	name = "Pig"
+	icon_state = "pig"
+	color_src = MATRIXED
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails/mam_tails/longpigeon
+	name = "Pigeon - Long"
+	icon_state = "longpigeon"
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails_animated/mam_tails_animated/longpigeon
+	name = "Pigeon - Long"
+	icon_state = "longpigeon"
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails/mam_tails/shortpigeon
+	name = "Pigeon - Short"
+	icon_state = "shortpigeon"
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails_animated/mam_tails_animated/shortpigeon
+	name = "Pigeon - Short"
+	icon_state = "shortpigeon"
+	matrixed_sections = MATRIX_RED
+
 /datum/sprite_accessory/tails/mam_tails/pony
 	name = "Pony"
 	icon_state = "pony"
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails/mam_tails/ponytail1
+	name = "Pony (Alt 1)"
+	icon_state = "pony1"
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails/mam_tails/ponytail2
+	name = "Pony (Alt 2)"
+	icon_state = "pony2"
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails/mam_tails/ponytail3
+	name = "Pony (Alt 3)"
+	icon_state = "pony3"
+	matrixed_sections = MATRIX_RED
 
 /datum/sprite_accessory/tails/mam_tails/poss
 	name = "Possum"
@@ -1137,6 +1500,12 @@
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
 
+/datum/sprite_accessory/tails/mam_tails/raptor
+	name = "Raptor"
+	icon_state = "raptor"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_RED_BLUE
+
 /datum/sprite_accessory/tails/mam_tails/ailurus
 	name = "Red Panda"
 	icon_state = "wah"
@@ -1158,6 +1527,18 @@
 	name = "Scolipede"
 	icon_state = "pede"
 	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails/mam_tails/sabresune
+	name = "Sabresune"
+	icon_state = "sabresune"
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails_animated/mam_tails_animated/sabresune
+	name = "Sabresune"
+	icon_state = "sabresune"
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	matrixed_sections = MATRIX_RED_GREEN
 
 /datum/sprite_accessory/tails/mam_tails/sergal
 	name = "Sergal"
@@ -1195,6 +1576,18 @@
 	icon_state = "shepherd"
 	matrixed_sections = MATRIX_GREEN_BLUE
 
+/datum/sprite_accessory/tails/mam_tails/snep
+	name = "Snep"
+	icon_state = "snep"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails_animated/mam_tails/snep
+	name = "Snep"
+	icon_state = "snep"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_RED_GREEN
+
 /datum/sprite_accessory/tails/mam_tails/snaketail
 	name = "Snake"
 	icon_state = "snaketail"
@@ -1228,6 +1621,29 @@
 	icon_state = "smooth"
 	color_src = MUTCOLORS
 	icon = 'icons/mob/mutant_bodyparts.dmi'
+
+/datum/sprite_accessory/tails/mam_tails/snakelarge
+	name = "Snake (Large)"
+	icon_state = "snakelarge"
+	color_src = MATRIXED
+	dimension_x = 64
+	icon = 'modular_citadel/icons/mob/mam_tails_big.dmi'
+	center = TRUE
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails_animated/mam_tails/snakelarge
+	name = "Snake (Large)"
+	icon_state = "snakelarge"
+	color_src = MATRIXED
+	dimension_x = 64
+	icon = 'modular_citadel/icons/mob/mam_tails_big.dmi'
+	center = TRUE
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails/mam_tails/spiketail
+	name = "Spike"
+	icon_state = "spiketail"
+	matrixed_sections = MATRIX_RED_GREEN
 
 /datum/sprite_accessory/tails_animated/mam_tails_animated/spikes
 	name = "Spikes"
@@ -1270,6 +1686,41 @@
 	name = "Squirrel"
 	icon_state = "squirrel"
 	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails/mam_tails/succubus
+	name = "Succubus"
+	icon_state = "succubus"
+	color_src = MUTCOLORS
+
+/datum/sprite_accessory/tails/mam_tails/swallow
+	name = "Swallow"
+	icon_state = "swallow"
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails_animated/mam_tails_animated/swallow
+	name = "Swallow"
+	icon_state = "swallow"
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails/mam_tails/swallowstripped
+	name = "Swallow - Striped"
+	icon_state = "swallowstriped"
+	matrixed_sections = MATRIX_GREEN_BLUE
+
+/datum/sprite_accessory/tails_animated/mam_tails_animated/swallowstripped
+	name = "Swallow - Striped"
+	icon_state = "swallowstriped"
+	matrixed_sections = MATRIX_GREEN_BLUE
+
+/datum/sprite_accessory/tails/mam_tails/tailmaw
+	name = "Tail Maw"
+	icon_state = "tailmaw"
+	color_src = MUTCOLORS
+
+/datum/sprite_accessory/tails_animated/mam_tails/tailmaw
+	name = "Tail Maw"
+	icon_state = "tailmaw"
+	color_src = MUTCOLORS
 
 /datum/sprite_accessory/tails/mam_tails/tamamo_kitsune
 	name = "Tamamo Kitsune Tails"
@@ -1321,82 +1772,10 @@
 	icon_state = "tiger"
 	matrixed_sections = MATRIX_ALL
 
-/datum/sprite_accessory/tails/mam_tails/vap
-	name = "Vaporeon"
-	icon_state = "vap"
-
-/datum/sprite_accessory/tails/mam_tails/wolf
-	name = "Wolf"
-	icon_state = "wolf"
-	matrixed_sections = MATRIX_RED
-
-/datum/sprite_accessory/tails_animated/mam_tails_animated/wolf
-	name = "Wolf"
-	icon_state = "wolf"
-	matrixed_sections = MATRIX_RED
-
-/datum/sprite_accessory/tails/mam_tails/zorgia
-	name = "Zorgoia"
-	icon_state = "zorgoia"
-	color_src = MATRIXED
-	matrixed_sections = MATRIX_ALL
-
-/datum/sprite_accessory/tails/mam_tails/jackal
-	name = "Jackal"
-	icon_state = "jackal"
-	matrixed_sections = MATRIX_RED_GREEN
-
-/datum/sprite_accessory/tails_animated/mam_tails_animated/jackal
-	name = "Jackal"
-	icon_state = "jackal"
-	matrixed_sections = MATRIX_RED_GREEN
-
-/datum/sprite_accessory/tails/mam_tails/deer
-	name = "Deer"
-	icon_state = "deer"
-	color_src = MATRIXED
-	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
-	matrixed_sections = MATRIX_RED
-
-/datum/sprite_accessory/tails_animated/mam_tails/deer
-	name = "Deer"
-	icon_state = "deer"
-	color_src = MATRIXED
-	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
-	matrixed_sections = MATRIX_RED
-
-/datum/sprite_accessory/tails/mam_tails/deathclaw
-	name = "Deathclaw"
-	icon_state = "deathclaw"
-	color_src = MATRIXED
-	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
-	matrixed_sections = MATRIX_RED
-
-/datum/sprite_accessory/tails_animated/mam_tails/deathclaw
-	name = "Deathclaw"
-	icon_state = "deathclaw"
-	color_src = MATRIXED
-	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
-	matrixed_sections = MATRIX_RED
-
-/datum/sprite_accessory/tails/mam_tails/double
-	name = "Double Fox"
-	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
-	icon_state = "doublefox"
-	matrixed_sections = MATRIX_ALL
-
-/datum/sprite_accessory/tails_animated/mam_tails_animated/doublefox
-	name = "Double Fox"
-	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
-	icon_state = "doublefox"
-	matrixed_sections = MATRIX_ALL
-
-/datum/sprite_accessory/tails/mam_tails/pig
-	name = "Pig"
-	icon_state = "pig"
-	color_src = MATRIXED
-	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
-	matrixed_sections = MATRIX_RED
+/datum/sprite_accessory/tails/mam_tails/turkey
+	name = "Turkey"
+	icon_state = "turkey"
+	color_src = MUTCOLORS
 
 /datum/sprite_accessory/tails/mam_tails/umbreon
 	name = "Umbreon"
@@ -1410,38 +1789,43 @@
 	icon_state = "umbreon"
 	matrixed_sections = MATRIX_RED_GREEN
 
-/datum/sprite_accessory/tails/mam_tails/shark/datashark
-	name = "DataShark"
-	icon_state = "datashark"
-	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
-	matrixed_sections = MATRIX_RED_BLUE
+/datum/sprite_accessory/tails/mam_tails/vap
+	name = "Vaporeon"
+	icon_state = "vap"
 
-/datum/sprite_accessory/tails_animated/mam_tails_animated/shark/datashark
-	name = "DataShark"
-	icon_state = "datashark"
-	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
-	matrixed_sections = MATRIX_RED_BLUE
-
-/datum/sprite_accessory/tails/mam_tails/sabresune
-	name = "Sabresune"
-	icon_state = "sabresune"
-	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+/datum/sprite_accessory/tails/mam_tails/westerndragon
+	name = "Western Dragon (Large)"
+	icon_state = "westerndragon"
+	dimension_x = 64
+	icon = 'modular_citadel/icons/mob/mam_tails_big.dmi'
+	center = TRUE
 	matrixed_sections = MATRIX_RED_GREEN
 
-/datum/sprite_accessory/tails_animated/mam_tails_animated/sabresune
-	name = "Sabresune"
-	icon_state = "sabresune"
-	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+/datum/sprite_accessory/tails_animated/mam_tails_animated/westerndragon
+	name = "Western Dragon (Large)"
+	icon_state = "westerndragon"
+	dimension_x = 64
+	icon = 'modular_citadel/icons/mob/mam_tails_big.dmi'
+	center = TRUE
 	matrixed_sections = MATRIX_RED_GREEN
 
-/datum/sprite_accessory/tails/mam_tails/lunasune
-	name = "Lunasune"
-	icon_state = "lunasune"
-	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+/datum/sprite_accessory/tails/mam_tails/wolf
+	name = "Wolf"
+	icon_state = "wolf"
 	matrixed_sections = MATRIX_RED
 
-/datum/sprite_accessory/tails_animated/mam_tails_animated/lunasune
-	name = "Lunasune"
-	icon_state = "lunasune"
-	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+/datum/sprite_accessory/tails_animated/mam_tails_animated/wolf
+	name = "Wolf"
+	icon_state = "wolf"
 	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails/mam_tails/xeno
+	name = "Xeno"
+	icon_state = "xeno"
+	color_src = MUTCOLORS
+
+/datum/sprite_accessory/tails/mam_tails/zorgia
+	name = "Zorgoia"
+	icon_state = "zorgoia"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_ALL
