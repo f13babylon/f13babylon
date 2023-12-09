@@ -44,6 +44,11 @@
 	icon_state = "backsail_chest"
 	covered_limbs = list("Chest" = MATRIX_RED_GREEN)
 
+/datum/sprite_accessory/mam_body_markings/bands
+	name = "Bands"
+	icon_state = "bands"
+	covered_limbs = list("Left Leg" = MATRIX_RED, "Right Leg" = MATRIX_RED, "Left Arm" = MATRIX_RED, "Right Arm" = MATRIX_RED)
+
 /datum/sprite_accessory/mam_body_markings/bat
 	name = "Bat"
 	icon_state = "bat"
@@ -52,12 +57,11 @@
 /datum/sprite_accessory/mam_body_markings/bee
 	name = "Bee"
 	icon_state = "bee"
-	icon = 'modular_citadel/icons/mob/markings_notmammals.dmi'
 	covered_limbs = list("Head" = MATRIX_RED_GREEN, "Chest" = MATRIX_GREEN, "Left Leg" = MATRIX_GREEN, "Right Leg" = MATRIX_GREEN, "Left Arm" = MATRIX_GREEN, "Right Arm" = MATRIX_GREEN)
 
 /datum/sprite_accessory/mam_body_markings/bee_alt
 	name = "Bee (Alt)"
-	icon_state = "bee"
+	icon_state = "beealt"
 	recommended_species = list("insect")
 	covered_limbs = list("Chest" = MATRIX_ALL, "Right Arm" = MATRIX_GREEN, "Left Arm" = MATRIX_GREEN, "Right Leg" = MATRIX_GREEN, "Left Leg" = MATRIX_GREEN)
 
@@ -76,19 +80,37 @@
 /datum/sprite_accessory/mam_body_markings/belly
 	name = "Belly"
 	icon_state = "belly"
-	icon = 'modular_citadel/icons/mob/markings_notmammals.dmi'
 	covered_limbs = list("Head" = MATRIX_RED_GREEN, "Chest" = MATRIX_GREEN, "Left Leg" = MATRIX_RED, "Right Leg" = MATRIX_RED)
 
-/datum/sprite_accessory/mam_body_markings/lbelly
-	name = "Belly (Light)"
-	icon_state = "lbelly"
-	covered_limbs = list("Head" = MATRIX_RED, "Chest" = MATRIX_RED, "Left Leg" = MATRIX_RED, "Right Leg" = MATRIX_RED, "Left Arm" = MATRIX_RED, "Right Arm" = MATRIX_RED)
+/datum/sprite_accessory/mam_body_markings/bellyfur
+	name = "Belly (Fur)"
+	icon_state = "floof"
+	covered_limbs = list("Chest" = MATRIX_RED)
+
+/datum/sprite_accessory/mam_body_markings/scutesbelly
+	name = "Belly (Scutes)"
+	icon_state = "scutesbelly"
+	covered_limbs = list("Chest" = MATRIX_RED)
 
 /datum/sprite_accessory/mam_body_markings/bellyslim
-	name = "Bellyslim"
+	name = "Belly (Slim)"
 	icon_state = "bellyslim"
-	icon = 'modular_citadel/icons/mob/markings_notmammals.dmi'
 	covered_limbs = list("Head" = MATRIX_RED_GREEN, "Chest" = MATRIX_RED_GREEN, "Left Leg" = MATRIX_RED, "Right Leg" = MATRIX_RED, "Left Arm" = MATRIX_RED, "Right Arm" = MATRIX_RED)
+
+/datum/sprite_accessory/mam_body_markings/tajbelly
+	name = "Belly (Tajaran)"
+	icon_state = "tajbelly"
+	covered_limbs = list("Chest" = MATRIX_RED)
+
+/datum/sprite_accessory/mam_body_markings/tajbellyfull
+	name = "Belly (Tajaran Full)"
+	icon_state = "tajbellyfull"
+	covered_limbs = list("Chest" = MATRIX_RED)
+
+/datum/sprite_accessory/mam_body_markings/gloss
+	name = "Body Gloss"
+	icon_state = "gloss"
+	covered_limbs = list("Chest" = MATRIX_RED, "Right Arm" = MATRIX_RED, "Left Arm" = MATRIX_RED, "Right Leg" = MATRIX_RED, "Left Leg" = MATRIX_RED, "Head" = MATRIX_RED)
 
 /datum/sprite_accessory/mam_body_markings/cow
 	name = "Bovine"
@@ -145,11 +167,6 @@
 	icon_state = "Fennec"
 	covered_limbs = list("Head" = MATRIX_RED_GREEN, "Chest" = MATRIX_RED_GREEN, "Left Leg" = MATRIX_RED_GREEN, "Right Leg" = MATRIX_RED_GREEN, "Left Arm" = MATRIX_RED_GREEN, "Right Arm" = MATRIX_RED_GREEN)
 
-/datum/sprite_accessory/mam_body_markings/floofer
-	name = "Floofer"
-	icon_state = "floofer"
-	covered_limbs = list("Head" = MATRIX_GREEN, "Chest" = MATRIX_GREEN, "Left Leg" = MATRIX_BLUE, "Right Leg" = MATRIX_BLUE, "Left Arm" = MATRIX_BLUE, "Right Arm" = MATRIX_BLUE)
-
 /datum/sprite_accessory/mam_body_markings/fox
 	name = "Fox"
 	icon_state = "fox"
@@ -158,7 +175,6 @@
 /datum/sprite_accessory/mam_body_markings/frog
 	name = "Frog"
 	icon_state = "frog"
-	icon = 'modular_citadel/icons/mob/markings_notmammals.dmi'
 	covered_limbs = list("Head" = MATRIX_RED_GREEN, "Chest" = MATRIX_GREEN, "Left Leg" = MATRIX_GREEN, "Right Leg" = MATRIX_GREEN, "Left Arm" = MATRIX_GREEN, "Right Arm" = MATRIX_GREEN)
 
 /datum/sprite_accessory/mam_body_markings/goat
@@ -169,13 +185,11 @@
 /datum/sprite_accessory/mam_body_markings/guilmon
 	name = "Guilmon"
 	icon_state = "guilmon"
-	icon = 'modular_citadel/icons/mob/markings_notmammals.dmi'
 	covered_limbs = list("Head" = MATRIX_RED_BLUE, "Chest" = MATRIX_ALL, "Left Leg" = MATRIX_BLUE, "Right Leg" = MATRIX_BLUE, "Left Arm" = MATRIX_ALL, "Right Arm" = MATRIX_ALL)
 
 /datum/sprite_accessory/mam_body_markings/handsfeet
 	name = "Handsfeet"
 	icon_state = "handsfeet"
-	icon = 'modular_citadel/icons/mob/markings_notmammals.dmi'
 	covered_limbs = list("Head" = MATRIX_RED, "Chest" = MATRIX_RED, "Left Leg" = MATRIX_RED_GREEN, "Right Leg" = MATRIX_RED_GREEN, "Left Arm" = MATRIX_RED_GREEN, "Right Arm" = MATRIX_RED_GREEN)
 
 /datum/sprite_accessory/mam_body_markings/harlequin
@@ -203,25 +217,15 @@
 	icon_state = "hyena"
 	covered_limbs = list("Head" = MATRIX_ALL, "Chest" = MATRIX_ALL, "Left Leg" = MATRIX_RED_GREEN, "Right Leg" = MATRIX_RED_GREEN, "Left Arm" = MATRIX_RED_GREEN, "Right Arm" = MATRIX_RED_GREEN)
 
-/datum/sprite_accessory/mam_body_markings/insect
-	name = "Insect"
-	icon_state = "insect"
-	icon = 'modular_citadel/icons/mob/markings_notmammals.dmi'
-
-/datum/sprite_accessory/mam_body_markings/jackalp
-	name = "Jackal Backpattern"
-	icon_state = "jackalp"
-	covered_limbs = list("Chest" = MATRIX_GREEN, "Left Leg" = MATRIX_GREEN, "Right Leg" = MATRIX_GREEN, "Left Arm" = MATRIX_GREEN, "Right Arm" = MATRIX_GREEN)
-
 /datum/sprite_accessory/mam_body_markings/jackalb
-	name = "Jackal Bareback"
+	name = "Jackal (Bareback)"
 	icon_state = "jackalb"
 	covered_limbs = list("Chest" = MATRIX_GREEN, "Left Leg" = MATRIX_GREEN, "Right Leg" = MATRIX_GREEN, "Left Arm" = MATRIX_GREEN, "Right Arm" = MATRIX_GREEN)
 
-/datum/sprite_accessory/mam_body_markings/lab
-	name = "Lab"
-	icon_state = "lab"
-	covered_limbs = list("Head" = MATRIX_RED, "Chest" = MATRIX_RED, "Left Leg" = MATRIX_RED, "Right Leg" = MATRIX_RED, "Left Arm" = MATRIX_RED, "Right Arm" = MATRIX_RED)
+/datum/sprite_accessory/mam_body_markings/jackalp
+	name = "Jackal (Backpattern)"
+	icon_state = "jackalp"
+	covered_limbs = list("Chest" = MATRIX_GREEN, "Left Leg" = MATRIX_GREEN, "Right Leg" = MATRIX_GREEN, "Left Arm" = MATRIX_GREEN, "Right Arm" = MATRIX_GREEN)
 
 /datum/sprite_accessory/mam_body_markings/leopard1
 	name = "Leopard"
@@ -259,6 +263,16 @@
 	icon_state = "panther"
 	covered_limbs = list("Head" = MATRIX_RED_GREEN, "Chest" = MATRIX_RED_GREEN, "Left Leg" = MATRIX_RED_GREEN, "Right Leg" = MATRIX_RED_GREEN, "Left Arm" = MATRIX_RED_GREEN, "Right Arm" = MATRIX_RED_GREEN)
 
+/datum/sprite_accessory/mam_body_markings/patches
+	name = "Patches"
+	icon_state = "patches"
+	covered_limbs = list("Left Leg" = MATRIX_RED, "Right Leg" = MATRIX_RED, "Left Arm" = MATRIX_RED, "Right Arm" = MATRIX_RED, "Chest" = MATRIX_RED)
+
+/datum/sprite_accessory/mam_body_markings/paw_socks
+	name = "Paw Socks"
+	icon_state = "pawsocks"
+	covered_limbs = list("Left Leg" = MATRIX_RED, "Right Leg" = MATRIX_RED, "Left Arm" = MATRIX_RED, "Right Arm" = MATRIX_RED, "Chest" = MATRIX_RED)
+
 /datum/sprite_accessory/mam_body_markings/pigeon
 	name = "Pigeon"
 	icon_state = "pigeon"
@@ -267,7 +281,6 @@
 /datum/sprite_accessory/mam_body_markings/plain
 	name = "Plain"
 	icon_state = "plain"
-	icon = 'modular_citadel/icons/mob/markings_notmammals.dmi'
 	covered_limbs = list("Head" = MATRIX_RED, "Chest" = MATRIX_RED, "Left Leg" = MATRIX_RED, "Right Leg" = MATRIX_RED, "Left Arm" = MATRIX_RED, "Right Arm" = MATRIX_RED)
 
 /datum/sprite_accessory/mam_body_markings/possum
@@ -308,7 +321,6 @@
 /datum/sprite_accessory/mam_body_markings/pede
 	name = "Scolipede"
 	icon_state = "scolipede"
-	icon = 'modular_citadel/icons/mob/markings_notmammals.dmi'
 	covered_limbs = list("Head" = MATRIX_GREEN, "Chest" = MATRIX_ALL, "Left Leg" = MATRIX_GREEN, "Right Leg" = MATRIX_GREEN, "Left Arm" = MATRIX_GREEN, "Right Arm" = MATRIX_GREEN)
 
 /datum/sprite_accessory/mam_body_markings/sergal
@@ -336,45 +348,60 @@
 	icon_state = "skunk"
 	covered_limbs = list("Head" = MATRIX_RED_GREEN, "Chest" = MATRIX_RED_GREEN, "Left Leg" = MATRIX_RED_GREEN, "Right Leg" = MATRIX_RED_GREEN, "Left Arm" = MATRIX_RED, "Right Arm" = MATRIX_RED)
 
+/datum/sprite_accessory/mam_body_markings/stegoplatechest
+	name = "Stego Chestplate"
+	icon_state = "stegoplate_chest"
+	covered_limbs = list("Chest" = MATRIX_RED_GREEN)
+
+/datum/sprite_accessory/mam_body_markings/backstripe
+	name = "Stripe Back"
+	icon_state = "backstripe"
+	covered_limbs = list("Chest" = MATRIX_RED)
+
+/datum/sprite_accessory/mam_body_markings/tigerstripes
+	name = "Stripe Tiger"
+	icon_state = "tiger"
+	covered_limbs = list("Left Leg" = MATRIX_RED, "Right Leg" = MATRIX_RED, "Left Arm" = MATRIX_RED, "Right Arm" = MATRIX_RED, "Chest" = MATRIX_RED)
+
 /datum/sprite_accessory/mam_body_markings/tajaran
 	name = "Tajaran"
 	icon_state = "tajaran"
 	covered_limbs = list("Head" = MATRIX_RED_GREEN, "Chest" = MATRIX_RED_GREEN, "Left Leg" = MATRIX_RED, "Right Leg" = MATRIX_RED, "Left Arm" = MATRIX_RED, "Right Arm" = MATRIX_RED)
-
-/datum/sprite_accessory/mam_body_markings/tattiger
-	name = "Tattoo Tiger"
-	icon_state = "tattiger"
-	covered_limbs = list("Right Arm" = MATRIX_RED, "Left Arm" = MATRIX_RED, "Chest" = MATRIX_RED)
-
-/datum/sprite_accessory/mam_body_markings/tatsilverburgh
-	name = "Tattoo Silverburgh"
-	icon_state = "tatsilverburgh"
-	covered_limbs = list("Right Leg" = MATRIX_RED, "Left Leg" = MATRIX_RED)
-
-/datum/sprite_accessory/mam_body_markings/tatlips
-	name = "Tattoo Lip"
-	icon_state = "lips"
-	covered_limbs = list("Head" = MATRIX_RED)
 
 /datum/sprite_accessory/mam_body_markings/tatblush
 	name = "Tattoo Blush"
 	icon_state = "blush"
 	covered_limbs = list("Head" = MATRIX_RED)
 
+/datum/sprite_accessory/mam_body_markings/tatcampbell
+	name = "Tattoo Campbell"
+	icon_state = "tatcampbell"
+	covered_limbs = list("Right Arm" = MATRIX_RED, "Left Arm" = MATRIX_RED, "Right Leg" = MATRIX_RED, "Left Leg" = MATRIX_RED)
+
+/datum/sprite_accessory/mam_body_markings/tatlips
+	name = "Tattoo Lip"
+	icon_state = "lips"
+	covered_limbs = list("Head" = MATRIX_RED)
+
+/datum/sprite_accessory/mam_body_markings/tatnightling
+	name = "Tattoo Nightling"
+	icon_state = "tatnightling"
+	covered_limbs = list("Chest" = MATRIX_RED)
+
+/datum/sprite_accessory/mam_body_markings/tatsilverburgh
+	name = "Tattoo Silverburgh"
+	icon_state = "tatsilverburgh"
+	covered_limbs = list("Right Leg" = MATRIX_RED, "Left Leg" = MATRIX_RED)
+
+/datum/sprite_accessory/mam_body_markings/tattiger
+	name = "Tattoo Tiger"
+	icon_state = "tattiger"
+	covered_limbs = list("Right Arm" = MATRIX_RED, "Left Arm" = MATRIX_RED, "Chest" = MATRIX_RED)
+
 /datum/sprite_accessory/mam_body_markings/tiger
 	name = "Tiger"
 	icon_state = "tiger"
 	covered_limbs = list("Head" = MATRIX_ALL, "Chest" = MATRIX_ALL, "Left Leg" = MATRIX_ALL, "Right Leg" = MATRIX_ALL, "Left Arm" = MATRIX_RED_BLUE, "Right Arm" = MATRIX_RED_BLUE)
-
-/datum/sprite_accessory/mam_body_markings/dtiger
-	name = "Tiger Body (Dark)"
-	icon_state = "dtiger"
-	covered_limbs = list("Head" = MATRIX_RED, "Chest" = MATRIX_RED, "Left Leg" = MATRIX_RED, "Right Leg" = MATRIX_RED, "Left Arm" = MATRIX_RED, "Right Arm" = MATRIX_RED)
-
-/datum/sprite_accessory/mam_body_markings/ltiger
-	name = "Tiger Body (Light)"
-	icon_state = "ltiger"
-	covered_limbs = list("Head" = MATRIX_RED, "Chest" = MATRIX_RED, "Left Leg" = MATRIX_RED, "Right Leg" = MATRIX_RED, "Left Arm" = MATRIX_RED, "Right Arm" = MATRIX_RED)
 
 /datum/sprite_accessory/mam_body_markings/trikebeakhead
 	name = "Trike Beak"
@@ -389,7 +416,6 @@
 /datum/sprite_accessory/mam_body_markings/turian
 	name = "Turian"
 	icon_state = "turian"
-	icon = 'modular_citadel/icons/mob/markings_notmammals.dmi'
 	covered_limbs = list("Head" = MATRIX_RED_GREEN, "Chest" = MATRIX_RED, "Left Leg" = MATRIX_RED, "Right Leg" = MATRIX_RED, "Left Arm" = MATRIX_RED, "Right Arm" = MATRIX_RED)
 
 /datum/sprite_accessory/mam_body_markings/umbreon
@@ -405,8 +431,8 @@
 /datum/sprite_accessory/mam_body_markings/xeno
 	name = "Xeno"
 	icon_state = "xeno"
-	icon = 'modular_citadel/icons/mob/markings_notmammals.dmi'
 	covered_limbs = list("Head" = MATRIX_BLUE, "Chest" = MATRIX_GREEN, "Left Leg" = MATRIX_BLUE, "Right Leg" = MATRIX_BLUE, "Left Arm" = MATRIX_BLUE, "Right Arm" = MATRIX_BLUE)
+
 /******************************************
 ************* Insect Markings *************
 *******************************************/
