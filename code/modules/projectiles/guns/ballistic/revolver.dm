@@ -267,7 +267,7 @@
 	icon_state = "mysterious_m29"
 	icon = 'icons/obj/guns/gunfruits2022/pistols.dmi'
 	automatic = 1
-	autofire_shot_delay = 1
+	autofire_shot_delay = 2.8
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	can_scope = FALSE
 

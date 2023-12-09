@@ -285,9 +285,8 @@
 	min_qty = HIGH_MIN / CASH_NCR
 	max_qty = HIGH_MAX / CASH_NCR
 
-/obj/item/stack/f13Cash/onezerozerozero
+/obj/item/stack/f13Cash/ncr/onezerozerozero
 	amount = 1000
-	merge_type = /obj/item/stack/f13Cash/ncr
 
 #undef maxCoinIcon
 #undef CASH_CAP
