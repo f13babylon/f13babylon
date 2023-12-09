@@ -202,14 +202,13 @@
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_LIGHT
-	slowdown = 0.4
 	automatic = 1
-	autofire_shot_delay = 1.5
-	fire_delay = 1.5
-	spread = 10
+	autofire_shot_delay = 2
+	slowdown = 0.15
+	spread = 14
 	force = 12
 
-//American 180			Keywords: .22 LR, Supressed, 180 Round drum
+//American 180			Keywords: .22 LR, Supressed, Bullethose, 180 Round drum
 /obj/item/gun/ballistic/automatic/smg/smg22
 	name = ".22 LR submachinegun"
 	desc = "An integrally suppressed submachinegun chambered in the common .22 long rifle. Top loaded drum magazine."
@@ -219,10 +218,14 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	mag_type = /obj/item/ammo_box/magazine/msmg22
+	autofire_shot_delay = 1
+	slowdown = 0.25
+	spread = 18
+	extra_speed = -200
 	suppressed = 1
-	can_unsuppress = FALSE
+	can_unsuppress = TRUE	//Without can_suppress only results in a better examine message
 
-//Uzi			Keywords: 9mm, 32/50 rounds
+//Uzi			Keywords: 9mm, Dual-wieldable, Bullethose, 32/50 rounds
 /obj/item/gun/ballistic/automatic/smg/uzi
 	name = "Uzi"
 	desc = "A lightweight, burst-fire submachine gun, for when you really want someone dead. Uses 9mm rounds."
@@ -230,6 +233,11 @@
 	item_state = "uzi"
 	fire_sound = 'sound/f13weapons/9mm.ogg'
 	mag_type = /obj/item/ammo_box/magazine/msmg9mm
+	autofire_shot_delay = 1
+	slowdown = 0.12
+	spread = 20
+	extra_speed = -100
+	extra_damage = -3
 
 //MP5			Keywords: 9mm, Suppressed, 32/50 Rounds
 /obj/item/gun/ballistic/automatic/smg/mp5
@@ -238,11 +246,14 @@
 	icon_state = "mp5"
 	item_state = "shotgun"
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
+	weapon_weight = WEAPON_MEDIUM
 	mag_type = /obj/item/ammo_box/magazine/msmg9mm
+	autofire_shot_delay = 1.3
+	spread = 4
 	suppressed = 1
-	can_unsuppress = FALSE
+	can_unsuppress = TRUE	//Without can_suppress only results in a better examine message
 
-//Calico			Keywords: 9mm, 70 rounds
+//Calico			Keywords: 9mm, Bullethose, 70 rounds
 /obj/item/gun/ballistic/automatic/smg/calico
 	name = "helical 9mm submachine gun"
 	desc = "A lightweight, burst-fire submachine gun, for when you really want someone dead. Uses 9mm rounds."
@@ -252,8 +263,12 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	mag_type = /obj/item/ammo_box/magazine/mcalico
+	autofire_shot_delay = 1
+	slowdown = 0.3
+	spread = 18
+	extra_damage = -2
 
-//10mm SMG			Keywords: 10mm, 30 Rounds
+//10mm SMG			Keywords: 10mm, Dual-wieldable, 30 Rounds
 /obj/item/gun/ballistic/automatic/smg/smg10mm
 	name = "10mm submachine gun"
 	desc = "One of the most common personal-defense weapons of the Great War, a sturdy and reliable open-bolt 10mm submachine gun."
@@ -271,6 +286,9 @@
 	fire_sound = 'sound/f13weapons/smg_dull.ogg'
 	weapon_weight = WEAPON_MEDIUM
 	mag_type = /obj/item/ammo_box/magazine/mgreasegun
+	slowdown = 0.2
+	spread = 16
+	extra_damage = -2
 
 //Thompson			Keywords: .45 ACP, 30/50 Rounds
 /obj/item/gun/ballistic/automatic/smg/thompson
@@ -282,8 +300,10 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	mag_type = /obj/item/ammo_box/magazine/mthompson
+	slowdown = 0.3
+	spread = 13
 
-//P90			Keywords: 5mm, 50 Rounds
+//P90			Keywords: 5mm, AP, 50 Rounds
 /obj/item/gun/ballistic/automatic/smg/p90
 	name = "FN P90c"
 	desc = "The Fabrique Nationale P90c was just coming into use at the time of the war. The weapon's bullpup layout, and compact design, make it easy to control. The durable P90c is prized for its reliability, and high firepower in a ruggedly-compact package. Chambered in 10mm."
@@ -293,6 +313,11 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	mag_type = /obj/item/ammo_box/magazine/mp90
+	autofire_shot_delay = 1.3
+	spread = 13
+	slowdown = 0.2
+	extra_damage = -2
+	extra_penetration = -0.15
 
 //14mm SMG 			Keywords: 14mm, AP, 21/27 rounds
 /obj/item/gun/ballistic/automatic/smg/smg14mm
