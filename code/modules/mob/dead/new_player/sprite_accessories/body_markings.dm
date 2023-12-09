@@ -41,7 +41,7 @@
 
 /datum/sprite_accessory/mam_body_markings/backsailchest
 	name = "Backsail"
-	icon_state = "backsail_chest"
+	icon_state = "backsail"
 	covered_limbs = list("Chest" = MATRIX_RED_GREEN)
 
 /datum/sprite_accessory/mam_body_markings/bands
@@ -144,7 +144,7 @@
 
 /datum/sprite_accessory/mam_body_markings/dinohornhead
 	name = "Dino Head"
-	icon_state = "dinohorn_head"
+	icon_state = "dinohorn"
 	covered_limbs = list("Head" = MATRIX_RED_GREEN)
 
 /datum/sprite_accessory/mam_body_markings/dog
@@ -350,7 +350,7 @@
 
 /datum/sprite_accessory/mam_body_markings/stegoplatechest
 	name = "Stego Chestplate"
-	icon_state = "stegoplate_chest"
+	icon_state = "stegoplate"
 	covered_limbs = list("Chest" = MATRIX_RED_GREEN)
 
 /datum/sprite_accessory/mam_body_markings/backstripe
@@ -405,12 +405,12 @@
 
 /datum/sprite_accessory/mam_body_markings/trikebeakhead
 	name = "Trike Beak"
-	icon_state = "trikebeak_head"
+	icon_state = "trikebeak"
 	covered_limbs = list("Head" = MATRIX_RED_GREEN)
 
 /datum/sprite_accessory/mam_body_markings/trikehornhead
 	name = "Trike Horn"
-	icon_state = "trikehorn_head"
+	icon_state = "trikehorn"
 	covered_limbs = list("Head" = MATRIX_RED_GREEN)
 
 /datum/sprite_accessory/mam_body_markings/turian
