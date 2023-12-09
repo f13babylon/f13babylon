@@ -144,13 +144,50 @@
 	name = "Harpy"
 	icon_state = "harpy"
 
+/datum/sprite_accessory/deco_wings/harpyarm
+	name = "Harpy Arm Wings"
+	icon = 'icons/mob/wings_large.dmi'
+	icon_state = "harpywings"
+
+/datum/sprite_accessory/deco_wings/harpyarmalt
+	name = "Harpy Arm Wings (Alt)"
+	icon = 'icons/mob/wings_large.dmi'
+	icon_state = "harpywingsalt"
+
+/datum/sprite_accessory/deco_wings/harpyarmcollar
+	name = "Harpy Arm Wings (Alt Collar)"
+	icon = 'icons/mob/wings_large.dmi'
+	icon_state = "harpywingsaltcollar"
+
+/datum/sprite_accessory/deco_wings/harpyarmbat
+	name = "Harpy Arm Wings (Bat)"
+	icon = 'icons/mob/wings_large.dmi'
+	icon_state = "harpywingsbat"
+
+/datum/sprite_accessory/deco_wings/harpyarmbatcollar
+	name = "Harpy Arm Wings (Bat Collar)"
+	icon = 'icons/mob/wings_large.dmi'
+	icon_state = "harpywingsbatcollar"
+
 /datum/sprite_accessory/deco_wings/insect
 	name = "Insect"
 	icon_state = "insect"
 
+/datum/sprite_accessory/deco_wings/lugia
+	name = "Lugia"
+	icon = 'icons/mob/wings_large.dmi'
+	icon_state = "seal"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_RED_BLUE
+
 /datum/sprite_accessory/deco_wings/mantis
 	name = "Mantis Arms"
 	icon_state = "mantis"
+
+/datum/sprite_accessory/deco_wings/angelmoth
+	name = "Moth - Angel"
+	icon = 'icons/mob/wings_large.dmi'
+	icon_state = "angelmoth"
 
 /datum/sprite_accessory/deco_wings/aspen
 	name = "Moth - Aspen"
@@ -263,6 +300,10 @@
 /datum/sprite_accessory/deco_wings/nevrean2
 	name = "Nevrean - No Tail"
 	icon_state = "nevrean2"
+
+/datum/sprite_accessory/deco_wings/pterodactyl
+	name = "Pterodactyl"
+	icon_state = "pterodactyl"
 
 /datum/sprite_accessory/deco_wings/robotic
 	name = "Robotic"
