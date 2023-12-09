@@ -390,7 +390,7 @@
 	category = list("initial", "Intermediate Magazines")
 
 /datum/design/ammolathe/m22smg
-	name = "empty toploader submachinegun magazine (.22 LR)"
+	name = "empty submachinegun drum magazine (.22 LR)"
 	id = "m22smg"
 	materials = list(/datum/material/iron = 6000)
 	build_path = /obj/item/ammo_box/magazine/msmg22/empty
@@ -491,7 +491,7 @@
 	category = list("initial", "Advanced Magazines")
 
 /datum/design/ammolathe/msmg14mmext
-	name = "empty submachinegun extended magazine (14mm)"
+	name = "empty extended submachinegun magazine (14mm)"
 	id = "msmg14mmext"
 	materials = list(/datum/material/iron = 8000)
 	build_path = /obj/item/ammo_box/magazine/msmg14mm/extended/empty

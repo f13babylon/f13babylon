@@ -3,7 +3,7 @@
 ///////////////////
 
 /obj/item/ammo_box/magazine/msmg22
-	name = "toploader submachinegun magazine (.22 LR)"
+	name = "submachinegun drum magazine (.22 LR)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "msmg22"
 	caliber = ".22lr"
@@ -115,7 +115,7 @@
 	start_empty = 1
 
 /obj/item/ammo_box/magazine/msmg14mm/extended
-	name = "submachinegun extended magazine (14mm)"
+	name = "extended submachinegun magazine (14mm)"
 	icon_state = "msmg14mmext"
 	max_ammo = 27
 

@@ -237,7 +237,7 @@
 	slowdown = 0.12
 	spread = 20
 	extra_speed = -100
-	extra_damage = -3
+	extra_damage = -3	//Results in 13 damage
 
 //MP5			Keywords: 9mm, Suppressed, 32/50 Rounds
 /obj/item/gun/ballistic/automatic/smg/mp5
@@ -288,7 +288,7 @@
 	mag_type = /obj/item/ammo_box/magazine/mgreasegun
 	slowdown = 0.2
 	spread = 16
-	extra_damage = -2
+	extra_damage = -2	//Results in 22 damage
 
 //Thompson			Keywords: .45 ACP, 30/50 Rounds
 /obj/item/gun/ballistic/automatic/smg/thompson
@@ -316,8 +316,8 @@
 	autofire_shot_delay = 1.3
 	spread = 13
 	slowdown = 0.2
-	extra_damage = -2
-	extra_penetration = -0.15
+	extra_damage = -2	//Results in 17 damage
+	extra_penetration = -0.15	//Results in 30% AP
 
 //14mm SMG 			Keywords: 14mm, AP, 21/27 rounds
 /obj/item/gun/ballistic/automatic/smg/smg14mm
