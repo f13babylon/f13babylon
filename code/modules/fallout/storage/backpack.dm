@@ -13,7 +13,7 @@
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_items = 7
-	CANHOLD_STATIC(STR, typecacheof(list(/obj/item/throwing_star/spear, /obj/item/restraints/legcuffs/bola)))
+	CANHOLD_STATIC(STR, typecacheof(list(/obj/item/throwing_star/spear, /obj/item/melee/smith/javelin, /obj/item/restraints/legcuffs/bola)))
 
 /obj/item/storage/backpack/spearquiver/PopulateContents()
 	new /obj/item/throwing_star/spear(src)
@@ -36,7 +36,13 @@
 	if(L)
 		SEND_SIGNAL(src, COMSIG_TRY_STORAGE_TAKE, L, user)
 		user.put_in_hands(L)
-		to_chat(user, "<span class='notice'>You take a spear out of the quiver.</span>")
+		to_chat(user, "<span class='notice'>You take a throwing spear out of the quiver.</span>")
+		return TRUE
+	var/obj/item/melee/smith/javelin/J = locate() in contents
+	if(J)
+		SEND_SIGNAL(src, COMSIG_TRY_STORAGE_TAKE, J, user)
+		user.put_in_hands(J)
+		to_chat(user, "<span class='notice'>You take a javelin out of the quiver.</span>")
 		return TRUE
 	var/obj/item/restraints/legcuffs/W = locate() in contents
 	if(W && contents.len > 0)
