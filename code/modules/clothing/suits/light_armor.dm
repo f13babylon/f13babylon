@@ -144,6 +144,7 @@
 	item_state = "wastewar"
 	resistance_flags = FLAMMABLE
 	armor = list("melee" = 25, "bullet" = 5, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = -10, "acid" = 0, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 // Outlaw
 /obj/item/clothing/suit/toggle/armored/khanlight
@@ -161,6 +162,7 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 	heat_protection = CHEST | GROIN | LEGS| ARMS | HEAD
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 10, "energy" = 5, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 0, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armored/light/tribalraider
 	name = "tribal raider wear"
@@ -206,6 +208,7 @@
 	heat_protection = CHEST | GROIN | LEGS| ARMS | HEAD
 	siemens_coefficient = 1.1
 	armor = list("melee" = 15, "bullet" = 25, "laser" = 10, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armored/light/kit/punk
 	name = "armor kit"
@@ -305,6 +308,7 @@
 	icon_state = "towntrench"
 	item_state = "hostrench"
 	armor = list("melee" = 20, "bullet" = 15, "laser" = 10, "energy" = 0, "bomb" = 15, "bio" = 10, "rad" = 0, "fire" = 20, "acid" = 5, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armored/light/town/mayor
 	name = "mayor trenchcoat"

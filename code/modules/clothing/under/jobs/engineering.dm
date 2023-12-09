@@ -48,6 +48,7 @@
 	icon_state = "mechanic"
 	item_state = "mechanic"
 	can_adjust = FALSE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/rank/engineering/engineer/util
 	name = "engineering utility uniform"

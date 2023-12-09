@@ -214,19 +214,10 @@
 		stam_mobility_mult = LYING_DAMAGE_PENALTY
 	. *= stam_mobility_mult
 
-	var/bad_trait
-	if(!(I.item_flags & NO_COMBAT_MODE_FORCE_MODIFIER))
-		if(SEND_SIGNAL(user, COMSIG_COMBAT_MODE_CHECK, COMBAT_MODE_INACTIVE))
-			bad_trait = SKILL_COMBAT_MODE //blacklist combat skills.
-			if(SEND_SIGNAL(src, COMSIG_COMBAT_MODE_CHECK, COMBAT_MODE_ACTIVE))
-				. *= 0.8
-		else if(SEND_SIGNAL(src, COMSIG_COMBAT_MODE_CHECK, COMBAT_MODE_INACTIVE))
-			. *= 1.2
-
 	if(!user.mind || !I.used_skills)
 		return
 	if(.)
-		. = user.mind.item_action_skills_mod(I, ., I.skill_difficulty, SKILL_ATTACK_MOB, bad_trait)
+		. = user.mind.item_action_skills_mod(I, ., I.skill_difficulty, SKILL_ATTACK_MOB)
 	for(var/skill in I.used_skills)
 		if(!(SKILL_TRAIN_ATTACK_MOB in I.used_skills[skill]))
 			continue

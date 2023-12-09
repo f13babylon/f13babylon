@@ -252,7 +252,7 @@
 				)
 	result = /obj/machinery/door/poddoor/shutters/old/preopen
 	tools = list(TOOL_SCREWDRIVER, TOOL_MULTITOOL, TOOL_WIRECUTTER, TOOL_WELDER)
-	time = 120 SECONDS
+	time = 60 SECONDS
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
 
@@ -264,7 +264,19 @@
 				)
 	result = /obj/machinery/door/poddoor/preopen
 	tools = list(TOOL_SCREWDRIVER, TOOL_MULTITOOL, TOOL_WIRECUTTER, TOOL_WELDER)
-	time = 160 SECONDS
+	time = 120 SECONDS
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_MISC
+
+/datum/crafting_recipe/city_gate
+	name = "City Gate"
+	reqs = list(/obj/item/stack/sheet/plasteel = 30, //Three times as wide as a shutter, so 3x the cost. STILL ACTS AS A SINGLE SHUTTER THOUGH
+				/obj/item/stack/cable_coil = 30,
+				/obj/item/electronics/airlock = 1
+				)
+	result = /obj/machinery/door/poddoor/gate/buildable
+	tools = list(TOOL_SCREWDRIVER, TOOL_MULTITOOL, TOOL_WIRECUTTER, TOOL_WELDER)
+	time = 120 SECONDS
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
 

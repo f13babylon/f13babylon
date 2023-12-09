@@ -809,7 +809,7 @@
 
 // Special - 'Borg
 /datum/job/enclave/encborg
-	title = "Synthetic"
+	title = "Enclave Synthetic"
 	flag = F13ENCCYBORG
 	total_positions = 1
 	spawn_positions = 1
@@ -825,3 +825,4 @@
 	ADD_TRAIT(R, TRAIT_TECHNOPHREAK, TRAIT_GENERIC)
 	R.apply_pref_name("cyborg", M.client)
 	R.gender = NEUTER
+	R.forceMove(pick(GLOB.enclave_borg_start))

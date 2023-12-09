@@ -45,6 +45,7 @@ GLOBAL_LIST_INIT(nonhuman_positions, list(
 	"AI",
 	"Cyborg",
 	"Followers Robot",
+	"Enclave Synthetic",
 	ROLE_PAI,
 	))
 
@@ -126,11 +127,12 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Enclave Pilot Officer",
 "Enclave Marine",
 "Enclave Bunker Duty",
+"Enclave Synthetic",
 
 "Khan Senior Enforcer",
 "Khan Enforcer",
 "Khan Chemist",
-"Khan Smith",
+"Khan Armorer",
 
 "Raider",
 
@@ -247,7 +249,7 @@ GLOBAL_LIST_INIT(khan_positions, list(
 	"Khan Senior Enforcer",
 	"Khan Enforcer",
 	"Khan Chemist",
-	"Khan Smith",
+	"Khan Armorer",
 ))
 
 GLOBAL_LIST_INIT(enclave_positions, list(
@@ -260,6 +262,7 @@ GLOBAL_LIST_INIT(enclave_positions, list(
 	"Enclave Pilot Officer",
 	"Enclave Marine",
 	"Enclave Bunker Duty",
+	"Enclave Synthetic",
 ))
 
 GLOBAL_LIST_INIT(security_positions, list(

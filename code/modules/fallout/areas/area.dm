@@ -673,6 +673,58 @@
 	grow_chance = 5
 	requires_power = TRUE
 
+/area/f13/enclave/armory
+	name = "Enclave Armory"
+	icon_state = "enclave"
+
+/area/f13/enclave/prison
+	name = "Enclave Prison"
+	icon_state = "enclave"
+
+/area/f13/enclave/rnd
+	name = "Enclave Research Lab"
+	icon_state = "enclave"
+
+/area/f13/enclave/hydroponics
+	name = "Enclave Hydroponics"
+	icon_state = "enclave"
+
+/area/f13/enclave/briefing
+	name = "Enclave Briefing Room"
+	icon_state = "enclave"
+
+/area/f13/enclave/vertibird
+	name = "Enclave Vertibird Hangar"
+	icon_state = "enclave"
+
+/area/f13/enclave/medbay
+	name = "Enclave Med-Bay"
+	icon_state = "enclave"
+
+/area/f13/enclave/virology
+	name = "Enclave Virology"
+	icon_state = "enclave"
+
+/area/f13/enclave/innerchp
+	name = "Enclave Inner Checkpoint"
+	icon_state = "enclave"
+
+/area/f13/enclave/reactor
+	name = "Enclave Reactor"
+	icon_state = "enclave"
+
+/area/f13/enclave/command
+	name = "Enclave Command Offices"
+	icon_state = "enclave"
+
+/area/f13/enclave/hallways
+	name = "Enclave Main Hallways"
+	icon_state = "enclave"
+
+/area/f13/enclave/mess
+	name = "Enclave Mess Hall"
+	icon_state = "enclave"
+
 /area/f13/ahs
 	name = "Adepts of Hubology Studies"
 	icon_state = "ahs"

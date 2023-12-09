@@ -116,6 +116,7 @@
 	item_state = "tribal_power_armor"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	armor = list("melee" = 65, "bullet" = 65, "laser" = 50, "energy" = 22, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 // T-45D
 /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d
