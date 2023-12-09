@@ -1378,3 +1378,70 @@
 	color_src = MATRIXED
 	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
 	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails/mam_tails/double
+	name = "Double Fox"
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	icon_state = "doublefox"
+	matrixed_sections = MATRIX_ALL
+
+/datum/sprite_accessory/tails_animated/mam_tails_animated/doublefox
+	name = "Double Fox"
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	icon_state = "doublefox"
+	matrixed_sections = MATRIX_ALL
+
+/datum/sprite_accessory/tails/mam_tails/pig
+	name = "Pig"
+	icon_state = "pig"
+	color_src = MATRIXED
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails/mam_tails/umbreon
+	name = "Umbreon"
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	icon_state = "umbreon"
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails_animated/mam_tails_animated/umbreon
+	name = "Umbreon"
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	icon_state = "umbreon"
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails/mam_tails/shark/datashark
+	name = "DataShark"
+	icon_state = "datashark"
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	matrixed_sections = MATRIX_RED_BLUE
+
+/datum/sprite_accessory/tails_animated/mam_tails_animated/shark/datashark
+	name = "DataShark"
+	icon_state = "datashark"
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	matrixed_sections = MATRIX_RED_BLUE
+
+/datum/sprite_accessory/tails/mam_tails/sabresune
+	name = "Sabresune"
+	icon_state = "sabresune"
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails_animated/mam_tails_animated/sabresune
+	name = "Sabresune"
+	icon_state = "sabresune"
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails/mam_tails/lunasune
+	name = "Lunasune"
+	icon_state = "lunasune"
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails_animated/mam_tails_animated/lunasune
+	name = "Lunasune"
+	icon_state = "lunasune"
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	matrixed_sections = MATRIX_RED
