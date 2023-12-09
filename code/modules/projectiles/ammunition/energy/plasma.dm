@@ -20,7 +20,7 @@
 	e_cost = 100
 
 /obj/item/ammo_casing/energy/plasmacarbine
-	projectile_type = /obj/item/projectile/plasmacarbine
+	projectile_type = /obj/item/projectile/f13plasma/carbine
 	select_name = "plasma burst"
 	icon_state = "neurotoxin"
 	fire_sound = 'sound/f13weapons/plasma_rifle.ogg'
@@ -72,6 +72,6 @@
 	e_cost = 200 //fourteen shots?
 
 /obj/item/ammo_casing/energy/plasma/caster
-	projectile_type = /obj/item/projectile/f13plasma
+	projectile_type = /obj/item/projectile/f13plasma/caster
 	fire_sound = 'sound/f13weapons/plasmacaster_fnv.ogg'
 	e_cost = 200 //10 shots

@@ -27060,6 +27060,12 @@
 	icon_state = "topshadowright"
 	},
 /area/f13/wasteland/museum)
+"dYA" = (
+/obj/structure/car/rubbish3,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontaltopborderbottom0"
+	},
+/area/f13/wasteland/museum)
 "dYE" = (
 /obj/machinery/light/small/broken{
 	dir = 1
@@ -30430,6 +30436,12 @@
 	icon_state = "verticalinnermain1"
 	},
 /area/f13/wasteland/train)
+"fFa" = (
+/obj/structure/car/rubbish4,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
+/area/f13/wasteland/museum)
 "fFd" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/barricade/bars{
@@ -31720,6 +31732,12 @@
 /obj/structure/railing/handrail,
 /turf/open/floor/plasteel/white/side,
 /area/f13/brotherhood)
+"gmw" = (
+/obj/structure/car/rubbish4,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
+/area/f13/wasteland/bighornbunker)
 "gmB" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -33765,6 +33783,13 @@
 	name = "concrete wall"
 	},
 /area/f13/building/museum)
+"hlk" = (
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	id = "BOSNML"
+	},
+/turf/open/floor/plasteel/dark,
+/area/f13/brotherhood)
 "hlr" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticaloutermain0"
@@ -35624,6 +35649,7 @@
 /obj/structure/fence/wooden{
 	dir = 4
 	},
+/obj/effect/turf_decal/weather/dirt,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood)
 "iln" = (
@@ -36452,6 +36478,10 @@
 /obj/structure/flora/stump,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/quarry)
+"iDp" = (
+/obj/structure/car/rubbish3,
+/turf/open/indestructible/ground/outside/road,
+/area/f13/wasteland/heaven)
 "iDu" = (
 /obj/structure/reagent_dispensers/barrel/four,
 /turf/open/indestructible/ground/outside/desert,
@@ -37984,6 +38014,11 @@
 /obj/structure/closet/cabinet,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"jjD" = (
+/obj/effect/decal/cleanable/greenglow/radioactive,
+/obj/structure/car/rubbish1,
+/turf/open/indestructible/ground/outside/road,
+/area/f13/wasteland/east)
 "jjG" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -43736,6 +43771,12 @@
 /obj/item/melee/onehanded/machete/training,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/caves)
+"lVL" = (
+/obj/structure/car/rubbish1,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontalbottomborderbottom2right"
+	},
+/area/f13/wasteland/west)
 "lVN" = (
 /obj/structure/table/reinforced,
 /obj/item/weldingtool/mini{
@@ -46416,6 +46457,12 @@
 /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
 /turf/open/floor/wood/wood_common,
 /area/f13/city/bighorn)
+"njj" = (
+/obj/structure/decoration/warning{
+	name = "WARNING: NO MANS LAND AHEAD PVP ZONE"
+	},
+/turf/closed/wall/r_wall/f13/vault,
+/area/f13/brotherhood)
 "njq" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontalbottomborderbottom2"
@@ -46788,6 +46835,10 @@
 "nqE" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/caves)
+"nqM" = (
+/obj/structure/car/rubbish4,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland/east)
 "nqR" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "outerpavementcorner"
@@ -48145,6 +48196,12 @@
 	icon_state = "rampdowntop"
 	},
 /area/f13/city/bighorn)
+"nWr" = (
+/obj/structure/car/rubbish2,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain2"
+	},
+/area/f13/wasteland/east)
 "nWA" = (
 /obj/structure/chair/stool/retro,
 /obj/effect/decal/cleanable/shreds,
@@ -48696,6 +48753,12 @@
 	icon_state = "verticalleftborderright0"
 	},
 /area/f13/building/massfusion)
+"ojO" = (
+/obj/structure/car/rubbish3,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain1"
+	},
+/area/f13/wasteland/bighornbunker)
 "ojS" = (
 /turf/open/indestructible/ground/outside/road{
 	dir = 8;
@@ -52158,6 +52221,12 @@
 	icon_state = "verticalrightborderright1"
 	},
 /area/f13/wasteland/hospital)
+"pLm" = (
+/obj/structure/car/rubbish4,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaltopbordertop0"
+	},
+/area/f13/wasteland/west)
 "pLo" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "hole"
@@ -53998,6 +54067,12 @@
 	dir = 8
 	},
 /area/f13/building/hospital)
+"qEl" = (
+/obj/structure/car/rubbish2,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalbottombordertop0"
+	},
+/area/f13/wasteland/bighornbunker)
 "qEH" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "housewindowvertical"
@@ -55187,6 +55262,15 @@
 	},
 /turf/open/indestructible/ground/outside/road,
 /area/f13/building)
+"rfU" = (
+/obj/effect/decal/marking{
+	icon_state = "dottedverticalcorroded"
+	},
+/obj/structure/car/rubbish2,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
+/area/f13/wasteland/museum)
 "rge" = (
 /obj/structure/fence/wooden{
 	density = 0;
@@ -55841,6 +55925,10 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood)
+"rwb" = (
+/obj/structure/car/rubbish4,
+/turf/open/indestructible/ground/outside/road,
+/area/f13/wasteland/heaven)
 "rwg" = (
 /obj/structure/barricade/wooden,
 /obj/effect/decal/cleanable/dirt,
@@ -59067,6 +59155,12 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building/mall)
+"sYQ" = (
+/obj/structure/car/rubbish3,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalrightborderleft0"
+	},
+/area/f13/wasteland/museum)
 "sYR" = (
 /obj/machinery/vending/clothing/heaven{
 	name = "Khan's Harem ClothesMate"
@@ -67947,6 +68041,12 @@
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/wasteland/hospital)
+"xbb" = (
+/obj/structure/car/rubbish3,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontalbottomborderbottom0"
+	},
+/area/f13/wasteland/west)
 "xbq" = (
 /obj/machinery/autolathe/constructionlathe,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -68473,6 +68573,10 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/building/massfusion)
+"xnc" = (
+/obj/structure/car/rubbish3,
+/turf/open/indestructible/ground/outside/road,
+/area/f13/wasteland/east)
 "xnl" = (
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland/nanotrasen)
@@ -68547,6 +68651,13 @@
 	icon_state = "housewood4-broken"
 	},
 /area/f13/village)
+"xqt" = (
+/obj/structure/car/rubbish3,
+/turf/open/indestructible/ground/outside/sidewalk{
+	dir = 1;
+	icon_state = "horizontaloutermain1"
+	},
+/area/f13/wasteland/bighornbunker)
 "xqw" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/food/drinks/bottle/champagne/empty{
@@ -75857,7 +75968,7 @@ qML
 qZu
 oLb
 ivb
-yeY
+qEl
 mSJ
 ozv
 lVH
@@ -76113,7 +76224,7 @@ icm
 qML
 qZu
 uNJ
-oLb
+ojO
 yeY
 mSJ
 ozv
@@ -77393,7 +77504,7 @@ aae
 bjV
 bjV
 eVt
-eVt
+xqt
 eVt
 qML
 bDA
@@ -80224,7 +80335,7 @@ tRk
 tRk
 tRk
 wxw
-wxw
+gmw
 wxw
 wxw
 bfI
@@ -87157,7 +87268,7 @@ hqc
 pjb
 fWZ
 bdX
-ibe
+iDp
 pBa
 ocq
 ocq
@@ -88699,7 +88810,7 @@ oRI
 pjb
 fWZ
 eMz
-ibe
+rwb
 ibe
 ibe
 ibe
@@ -95796,7 +95907,7 @@ ycB
 tKu
 dMb
 mbv
-itl
+lVL
 azd
 kZH
 daa
@@ -96053,7 +96164,7 @@ rma
 kyv
 kYj
 dMb
-nzp
+xbb
 rma
 azu
 azR
@@ -96311,7 +96422,7 @@ kyv
 kYj
 uxj
 nzp
-rma
+pLm
 kyv
 azS
 kmn
@@ -107756,7 +107867,7 @@ hDo
 hDo
 hDo
 bGA
-qpD
+dYA
 qOB
 frP
 kBk
@@ -108014,7 +108125,7 @@ izZ
 izZ
 izZ
 xZN
-xZN
+fFa
 cqC
 kBk
 wdP
@@ -110581,7 +110692,7 @@ jUo
 qpD
 xZN
 fUM
-xZN
+fFa
 xZN
 jOi
 xZN
@@ -110838,7 +110949,7 @@ jUo
 nRZ
 qIh
 bzp
-qIh
+rfU
 xZN
 xZN
 xZN
@@ -111094,7 +111205,7 @@ abP
 jUo
 dYy
 kSu
-kSu
+sYQ
 kSu
 kSu
 kSu
@@ -118763,8 +118874,8 @@ wyN
 cpx
 cpx
 cpx
-cpx
-cpx
+aTb
+nqM
 dny
 dYH
 grH
@@ -119279,7 +119390,7 @@ pxv
 pxv
 dYH
 eiK
-eiK
+nWr
 eiK
 ahQ
 pMY
@@ -120849,7 +120960,7 @@ pgy
 pgy
 ael
 pgy
-tfr
+jjD
 bdY
 pgy
 xvO
@@ -121105,7 +121216,7 @@ jPD
 wnj
 cwU
 pgy
-pgy
+xnc
 fUa
 mXl
 mXl
@@ -135025,7 +135136,7 @@ kOz
 kOz
 iky
 qJp
-eIg
+xja
 xKP
 xKP
 xKP
@@ -135282,10 +135393,10 @@ kOz
 kOz
 rWO
 nDh
-xja
-xKP
-xKP
-xKP
+eIg
+njj
+rcg
+rcg
 xKP
 xKP
 xKP
@@ -135538,11 +135649,11 @@ kOz
 kOz
 sFw
 rYF
-nDh
+qJp
 eIg
-xKP
-xKP
-xKP
+kxP
+hlk
+rcg
 xKP
 xKP
 xKP
@@ -135795,11 +135906,11 @@ kCg
 kCg
 rge
 tjK
-sGk
-sGk
-xKP
-xKP
-xKP
+qJp
+eIg
+njj
+rcg
+rcg
 xKP
 xKP
 xKP
@@ -136052,8 +136163,8 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
+mMa
+mMa
 aaa
 aaa
 aaa

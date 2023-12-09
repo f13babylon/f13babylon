@@ -159,7 +159,7 @@
 	sharpness = SHARP_EDGED
 	inaccuracy_modifier = 0.25
 	can_charge = 0
-
+	slowdown = 0
 	heat = 3800
 	usesound = list('sound/items/welder.ogg', 'sound/items/welder2.ogg')
 	tool_behaviour = TOOL_WELDER

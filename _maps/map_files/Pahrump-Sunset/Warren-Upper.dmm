@@ -296,6 +296,9 @@
 	icon_state = "darkdirty"
 	},
 /area/f13/ncr)
+"ew" = (
+/turf/closed/mineral/random/low_chance,
+/area/f13/wasteland/warren)
 "eA" = (
 /obj/structure/railing/corner{
 	dir = 4
@@ -1358,7 +1361,7 @@
 "rr" = (
 /obj/machinery/workbench,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/unique,
+/obj/item/gun/ballistic/shotgun/police,
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
@@ -26839,7 +26842,7 @@ ru
 ru
 ru
 Hd
-HW
+ew
 HW
 HW
 HW
@@ -27096,11 +27099,11 @@ ru
 ru
 ru
 Hd
-HW
-HW
-HW
-HW
-HW
+ew
+ew
+ew
+ew
+ew
 HW
 HW
 HW
@@ -27353,11 +27356,11 @@ ru
 ru
 ru
 Hd
-HW
-HW
-HW
-HW
-HW
+ew
+ew
+ew
+ew
+ew
 HW
 HW
 HW
@@ -27610,11 +27613,11 @@ ru
 ru
 ru
 Hd
-HW
-HW
-HW
-HW
-HW
+ew
+ew
+Hd
+Hd
+ew
 HW
 HW
 HW
@@ -27867,11 +27870,11 @@ ru
 ru
 ru
 Hd
-HW
-HW
-HW
-HW
-HW
+ew
+ew
+Hd
+Hd
+ew
 HW
 HW
 HW
@@ -28124,11 +28127,11 @@ ru
 ru
 ru
 Hd
-HW
-HW
-HW
-HW
-HW
+ew
+ew
+Hd
+ew
+ew
 HW
 HW
 HW
@@ -28381,11 +28384,11 @@ ru
 ru
 ru
 Hd
-HW
-HW
-HW
-HW
-HW
+ew
+ew
+Hd
+ew
+ew
 HW
 HW
 HW
@@ -28638,10 +28641,10 @@ ru
 ru
 ru
 Hd
-HW
-HW
-HW
-HW
+ew
+ew
+Hd
+Hd
 HW
 HW
 HW
@@ -28895,10 +28898,10 @@ ru
 ru
 ru
 Hd
-HW
-HW
-HW
-HW
+ew
+ew
+ew
+ew
 HW
 HW
 HW
@@ -29152,9 +29155,9 @@ ru
 ru
 ru
 Hd
-HW
-HW
-HW
+ew
+ew
+ew
 HW
 HW
 HW
@@ -29409,8 +29412,8 @@ ru
 ru
 ru
 Hd
-HW
-HW
+ew
+ew
 HW
 HW
 HW
@@ -29666,7 +29669,7 @@ ru
 ru
 ru
 Hd
-HW
+ew
 HW
 HW
 HW

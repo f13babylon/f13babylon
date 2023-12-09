@@ -394,6 +394,10 @@
 /area/f13/wasteland/warren)
 "api" = (
 /obj/structure/chair/stool/retro/backed,
+/obj/structure/curtain{
+	color = "#363636";
+	pixel_x = -32
+	},
 /turf/open/floor/f13/wood,
 /area/f13/raiders)
 "apj" = (
@@ -1306,7 +1310,7 @@
 	},
 /area/f13/ncr)
 "bga" = (
-/obj/machinery/door/unpowered/securedoor/outlaw/boss,
+/obj/structure/simple_door/wood,
 /turf/open/floor/f13/wood,
 /area/f13/raiders)
 "bgq" = (
@@ -1485,12 +1489,15 @@
 	},
 /area/f13/city)
 "bom" = (
-/obj/structure/rack/shelf_metal,
-/obj/item/stack/sheet/mineral/wood/twenty,
-/obj/item/flashlight/flare,
-/obj/item/flashlight/flare,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/raiders)
+/obj/effect/decal/cleanable/blood/drip,
+/obj/effect/decal/cleanable/greenglow/radioactive{
+	pixel_x = -4;
+	pixel_y = -7
+	},
+/turf/open/indestructible/ground/outside/graveldirt{
+	dir = 4
+	},
+/area/f13/wasteland/warren)
 "boQ" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft0"
@@ -3964,6 +3971,11 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/city)
+"dCy" = (
+/obj/structure/table,
+/obj/item/binoculars,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/raiders)
 "dCD" = (
 /obj/structure/fence/end,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -4846,6 +4858,13 @@
 	icon_state = "verticalrightborderleft2"
 	},
 /area/f13/wasteland/warren)
+"eEF" = (
+/obj/structure/barricade/wooden/strong,
+/obj/structure/decoration/rag{
+	icon_state = "skin"
+	},
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/wasteland/warren)
 "eEJ" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/red/redchess,
@@ -5253,6 +5272,12 @@
 	dir = 1
 	},
 /area/f13/wasteland/ncr)
+"eXF" = (
+/obj/machinery/chem_master,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/raiders)
 "eXQ" = (
 /obj/effect/overlay/turfs/cliff/alt{
 	dir = 9;
@@ -5426,10 +5451,7 @@
 	},
 /area/f13/ncr)
 "fgU" = (
-/obj/machinery/chem_heater{
-	pixel_x = -6;
-	pixel_y = 12
-	},
+/obj/machinery/chem_heater,
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
@@ -7161,10 +7183,7 @@
 "gFW" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
-/obj/item/ammo_box/magazine/d12g,
-/obj/item/ammo_box/magazine/d12g,
-/obj/item/ammo_box/magazine/d12g,
-/obj/item/gun/ballistic/automatic/shotgun/riot/boss,
+/obj/item/twohanded/baseball/louisville,
 /turf/open/floor/f13/wood,
 /area/f13/raiders)
 "gHK" = (
@@ -8415,6 +8434,11 @@
 	icon_state = "horizontaloutermain2left"
 	},
 /area/f13/wasteland/warren)
+"hOM" = (
+/obj/structure/table/wood/poker,
+/obj/item/toy/cards/deck,
+/turf/open/floor/f13/wood,
+/area/f13/raiders)
 "hPg" = (
 /obj/structure/sink{
 	pixel_y = 20
@@ -9520,8 +9544,10 @@
 /area/f13/raiders)
 "iRl" = (
 /obj/structure/rack/shelf_metal,
-/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/raider,
-/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/raider,
+/obj/effect/spawner/bundle/f13/armor/badlands,
+/obj/effect/spawner/bundle/f13/armor/blastmaster,
+/obj/effect/spawner/bundle/f13/armor/supafly,
+/obj/effect/spawner/bundle/f13/armor/yankee,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/raiders)
 "iRp" = (
@@ -9565,6 +9591,13 @@
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticaloutermain2"
+	},
+/area/f13/wasteland/warren)
+"iUv" = (
+/obj/effect/decal/marking,
+/obj/structure/car/rubbish2,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
 	},
 /area/f13/wasteland/warren)
 "iUx" = (
@@ -9766,6 +9799,14 @@
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/wasteland/warren)
+"jgk" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/curtain{
+	color = "#363636";
+	pixel_x = -32
+	},
+/turf/open/floor/f13/wood,
+/area/f13/raiders)
 "jgp" = (
 /obj/item/storage/toolbox/electrical,
 /obj/structure/table,
@@ -9840,6 +9881,15 @@
 /obj/effect/landmark/start/f13/ncrcorporal,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland/ncr)
+"jkU" = (
+/obj/structure/table/wood/fancy,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/curtain{
+	color = "#363636";
+	pixel_x = -32
+	},
+/turf/open/floor/f13/wood,
+/area/f13/raiders)
 "jla" = (
 /obj/effect/decal/fakelattice,
 /turf/open/floor/plating/tunnel,
@@ -9915,6 +9965,10 @@
 /obj/item/reagent_containers/glass/bottle/napalm,
 /obj/item/reagent_containers/food/drinks/bottle/molotov,
 /obj/item/reagent_containers/food/drinks/bottle/molotov,
+/obj/structure/curtain{
+	color = "#363636";
+	pixel_x = -32
+	},
 /turf/open/floor/f13/wood,
 /area/f13/raiders)
 "jpP" = (
@@ -9978,6 +10032,14 @@
 "juF" = (
 /turf/open/floor/plasteel/dark,
 /area/f13/city)
+"juH" = (
+/obj/machinery/reagentgrinder,
+/obj/structure/table/wood,
+/turf/open/indestructible/ground/outside/graveldirt{
+	dir = 8;
+	icon_state = "graveldirtedge"
+	},
+/area/f13/raiders)
 "juT" = (
 /obj/structure/bookshelf{
 	icon_state = "book-2"
@@ -12352,7 +12414,7 @@
 /turf/open/floor/wood/wood_wide,
 /area/f13/city)
 "lMI" = (
-/obj/structure/junk/small/tv,
+/obj/effect/decal/cleanable/blood/tracks,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontalbottomborderbottom0"
 	},
@@ -13031,6 +13093,15 @@
 	name = "bathroom tiles"
 	},
 /area/f13/city)
+"mva" = (
+/obj/structure/curtain{
+	color = "#363636";
+	pixel_y = -32
+	},
+/turf/open/indestructible/ground/outside/graveldirt{
+	dir = 8
+	},
+/area/f13/raiders)
 "mvf" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/glass{
@@ -13322,6 +13393,11 @@
 	icon_state = "rubble"
 	},
 /area/f13/wasteland/warren)
+"mHo" = (
+/obj/structure/table/wood/poker,
+/obj/item/storage/box/dice,
+/turf/open/floor/f13/wood,
+/area/f13/raiders)
 "mHu" = (
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_5"
@@ -14111,6 +14187,17 @@
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland/warren)
+"noX" = (
+/obj/effect/decal/marking{
+	icon_state = "dottedverticalcorroded"
+	},
+/obj/structure/car/rubbish3{
+	pixel_x = -5
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
+/area/f13/wasteland/warren)
 "nqk" = (
 /turf/open/indestructible/ground/outside/savannah/toprightcorner,
 /area/f13/wasteland/ncr)
@@ -14316,9 +14403,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/ncr)
 "nBY" = (
-/obj/effect/decal/cleanable/greenglow/radioactive,
-/turf/open/floor/plasteel/dark,
-/area/f13/caves)
+/obj/effect/decal/cleanable/blood/drip,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/wasteland/warren)
 "nCF" = (
 /obj/structure/fence,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -14864,6 +14951,15 @@
 	pixel_y = 9
 	},
 /turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland/warren)
+"odu" = (
+/obj/structure/car/rubbish1{
+	pixel_x = -7;
+	pixel_y = -14
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaloutermain2left"
+	},
 /area/f13/wasteland/warren)
 "odK" = (
 /obj/structure/wreck/trash/brokenvendor,
@@ -18484,6 +18580,13 @@
 	},
 /turf/open/floor/wood/wood_fancy,
 /area/f13/city)
+"rxf" = (
+/obj/effect/decal/marking,
+/obj/structure/car/rubbish4,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
+/area/f13/wasteland/warren)
 "rxE" = (
 /obj/structure/fence/cut/large{
 	dir = 4
@@ -18530,6 +18633,10 @@
 /obj/item/ammo_box/m44box/improvised,
 /obj/item/ammo_box/shotgun/improvised,
 /obj/item/ammo_box/shotgun/improvised,
+/obj/structure/curtain{
+	color = "#363636";
+	pixel_x = -32
+	},
 /turf/open/floor/f13/wood,
 /area/f13/raiders)
 "ryu" = (
@@ -19733,6 +19840,13 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/closed/wall/rust,
 /area/f13/raiders)
+"sFQ" = (
+/obj/structure/barricade/wooden/planks/pregame,
+/obj/structure/decoration/rag,
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/structure/barricade/wooden,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/wasteland/warren)
 "sHc" = (
 /obj/item/chair/greyscale{
 	pixel_x = 8;
@@ -19795,6 +19909,7 @@
 /area/f13/wasteland/warren)
 "sKf" = (
 /obj/structure/junk/locker,
+/obj/item/reagent_containers/blood/radaway,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain0"
 	},
@@ -20674,13 +20789,11 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/warren)
 "tGj" = (
-/obj/effect/decal/cleanable/greenglow/radioactive,
-/turf/open/floor/mineral/uranium{
-	icon_state = "plating_rust";
-	name = "corroded metal floor covered in goo";
-	slowdown = 2
+/obj/effect/decal/cleanable/blood/drip,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaloutermain0"
 	},
-/area/f13/caves)
+/area/f13/wasteland/warren)
 "tGs" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
@@ -20876,6 +20989,15 @@
 /obj/effect/spawner/lootdrop/wastelootgood,
 /turf/open/floor/wood/wood_common,
 /area/f13/city)
+"tNh" = (
+/obj/structure/curtain{
+	color = "#363636";
+	pixel_y = -32
+	},
+/turf/open/indestructible/ground/outside/graveldirt{
+	dir = 1
+	},
+/area/f13/raiders)
 "tNj" = (
 /obj/structure/table,
 /obj/machinery/light{
@@ -21000,13 +21122,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
 "tRq" = (
-/obj/effect/decal/cleanable/greenglow/radioactive,
-/turf/open/floor/mineral/uranium{
-	icon_state = "plating_rust";
-	name = "corroded metal floor covered in goo";
-	slowdown = 2
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	id = "raidermb"
 	},
-/area/f13/caves)
+/turf/open/indestructible/ground/outside/graveldirt{
+	dir = 4
+	},
+/area/f13/wasteland/warren)
 "tRt" = (
 /obj/structure/table,
 /obj/machinery/chem_dispenser/drinks,
@@ -22523,6 +22646,12 @@
 /obj/structure/janitorialcart,
 /turf/open/floor/plasteel/darkpurple,
 /area/f13/ncr)
+"vht" = (
+/obj/structure/car/rubbish4,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaloutermain0"
+	},
+/area/f13/wasteland/warren)
 "vhJ" = (
 /obj/structure/fence{
 	dir = 4
@@ -24602,9 +24731,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/red/redchess/redchess2,
 /area/f13/city)
 "wWL" = (
-/obj/effect/decal/cleanable/greenglow/radioactive,
-/turf/open/floor/plasteel/dark,
-/area/f13/caves)
+/obj/structure/curtain{
+	color = "#363636";
+	pixel_x = -32
+	},
+/turf/open/floor/f13/wood,
+/area/f13/raiders)
 "wXr" = (
 /obj/item/chair/wood,
 /obj/effect/decal/cleanable/dirt,
@@ -24825,6 +24957,7 @@
 /obj/structure/closet,
 /obj/item/clothing/gloves/f13/crudemedical,
 /obj/item/reagent_containers/pill/patch/jet,
+/obj/item/reagent_containers/blood/radaway,
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
 	},
@@ -24892,6 +25025,12 @@
 /obj/structure/flora/ausbushes/fernybush,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/city)
+"xjp" = (
+/obj/machinery/chem_dispenser,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/raiders)
 "xjr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
@@ -25960,12 +26099,7 @@
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/wasteland/warren)
 "yfO" = (
-/obj/structure/car/rubbish3{
-	pixel_x = -5
-	},
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain0"
-	},
+/turf/open/indestructible/ground/inside/subway,
 /area/f13/wasteland/warren)
 "yfP" = (
 /obj/structure/railing/corner{
@@ -35210,7 +35344,7 @@ hZy
 nTE
 pGE
 pGE
-wWL
+jIy
 wAO
 pGE
 hZy
@@ -35469,7 +35603,7 @@ pGE
 vtc
 ycy
 nNH
-nBY
+jIy
 hZy
 pLS
 pLS
@@ -37014,7 +37148,7 @@ pLS
 hZy
 nHI
 wAO
-tRq
+brf
 pGE
 pGE
 poQ
@@ -39583,7 +39717,7 @@ hZy
 pGE
 hZy
 hZy
-tGj
+brf
 hZy
 jOK
 tsy
@@ -40347,7 +40481,7 @@ jLg
 jLg
 qZx
 pcK
-tGj
+brf
 pcK
 vtc
 hZy
@@ -41760,9 +41894,9 @@ yfE
 wXB
 uch
 mdW
-bwc
-bwc
-tjK
+iUv
+rxf
+noX
 pbp
 pbp
 lMO
@@ -42274,7 +42408,7 @@ rZI
 wXB
 ipp
 lHY
-yfO
+pbp
 pbp
 lMO
 pbp
@@ -45516,8 +45650,8 @@ pLS
 pLS
 pLS
 vol
-uch
-nFf
+gRk
+vVp
 jfK
 suN
 vuD
@@ -49600,8 +49734,8 @@ jLg
 qZx
 dlr
 lez
-lez
-lez
+eEF
+bom
 lez
 wXB
 gIo
@@ -49857,8 +49991,8 @@ jLg
 qZx
 lez
 lez
-lez
-lez
+yfO
+tRq
 lez
 wXB
 nEk
@@ -50114,7 +50248,7 @@ jLg
 qZx
 lez
 lez
-lez
+yfO
 lez
 lez
 wXB
@@ -50371,7 +50505,7 @@ jLg
 qZx
 lez
 lez
-lez
+nBY
 lez
 mQE
 qzI
@@ -50628,7 +50762,7 @@ jLg
 qZx
 dlr
 lez
-lez
+nBY
 lez
 hNx
 sKf
@@ -50885,10 +51019,10 @@ jLg
 qZx
 dlr
 lez
-lez
-lez
+yfO
+sFQ
 lMI
-sfe
+tGj
 vgk
 sfe
 uch
@@ -52188,7 +52322,7 @@ jfK
 wXB
 wvb
 bQk
-sfe
+vht
 sfe
 sfe
 sfe
@@ -52445,7 +52579,7 @@ snq
 wXB
 cjT
 ttq
-wvb
+odu
 sfe
 sfe
 sfe
@@ -53477,7 +53611,7 @@ xph
 pLS
 qZx
 sfe
-sfe
+qHF
 wIM
 ceg
 avr
@@ -53718,10 +53852,10 @@ jAI
 ttA
 vVX
 nhk
+wWL
 wUT
-wUT
-wUT
-wUT
+wWL
+wWL
 dXE
 lhG
 gzs
@@ -53734,8 +53868,8 @@ jla
 pLS
 qZx
 sfe
-sfe
-uch
+vht
+nqM
 ceg
 ceg
 ceg
@@ -54233,7 +54367,7 @@ mfU
 vVX
 wUT
 sBE
-sBE
+mHo
 sBE
 wUT
 rAJ
@@ -54490,7 +54624,7 @@ mfU
 xuB
 wUT
 sBE
-sBE
+hOM
 sBE
 sNb
 wUT
@@ -54739,7 +54873,7 @@ jLg
 jLg
 qZx
 xqa
-mfU
+dCy
 unF
 unF
 unF
@@ -54997,7 +55131,7 @@ jLg
 qZx
 xqa
 iRl
-bom
+mfU
 mfU
 rmz
 rmz
@@ -56294,10 +56428,10 @@ nxO
 snh
 lRa
 vsO
-wOg
+xjp
 fgU
 oaU
-wOg
+eXF
 njw
 xph
 xph
@@ -59111,7 +59245,7 @@ isU
 swo
 kEw
 xbI
-eqS
+juH
 hYD
 pKl
 cNe
@@ -59633,7 +59767,7 @@ nxO
 snh
 nxO
 nxO
-snh
+tNh
 wCg
 oOo
 unF
@@ -59890,7 +60024,7 @@ snh
 lRa
 eqS
 nbD
-nxO
+mva
 wCg
 iuQ
 unF
@@ -60399,11 +60533,11 @@ xJu
 jpD
 ryp
 sNb
-sNb
+jgk
 wUT
-sNb
+jgk
 api
-eQt
+jkU
 mSs
 yln
 rXL
