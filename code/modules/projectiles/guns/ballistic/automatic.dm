@@ -244,7 +244,7 @@
 	name = "MP-5 SD"
 	desc = "An integrally suppressed submachinegun chambered in 9mm."
 	icon_state = "mp5"
-	item_state = "shotgun"
+	item_state = "fnfal"
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 	weapon_weight = WEAPON_MEDIUM
 	mag_type = /obj/item/ammo_box/magazine/msmg9mm
