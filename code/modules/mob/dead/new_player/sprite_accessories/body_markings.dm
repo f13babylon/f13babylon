@@ -300,6 +300,11 @@
 	icon_state = "redpanda"
 	covered_limbs = list("Head" = MATRIX_ALL, "Chest" = MATRIX_RED_GREEN, "Left Leg" = MATRIX_RED_GREEN, "Right Leg" = MATRIX_RED_GREEN, "Left Arm" = MATRIX_RED_GREEN, "Right Arm" = MATRIX_RED_GREEN)
 
+/datum/sprite_accessory/mam_body_markings/sabresune
+	name = "Sabresune"
+	icon_state = "sabresune"
+	covered_limbs = list("Head" = MATRIX_RED_GREEN, "Chest" = MATRIX_RED_GREEN, "Left Leg" = MATRIX_RED_GREEN, "Right Leg" = MATRIX_RED_GREEN, "Left Arm" = MATRIX_RED_GREEN, "Right Arm" = MATRIX_RED_GREEN)
+
 /datum/sprite_accessory/mam_body_markings/pede
 	name = "Scolipede"
 	icon_state = "scolipede"
