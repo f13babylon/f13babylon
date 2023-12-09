@@ -239,7 +239,7 @@
 	extra_speed = -100
 	extra_damage = -3	//Results in 13 damage
 
-//MP5			Keywords: 9mm, Suppressed, 32/50 Rounds
+//MP5			Keywords: 9mm, Suppressed, AP, Accurate, 32/50 Rounds
 /obj/item/gun/ballistic/automatic/smg/mp5
 	name = "MP-5 SD"
 	desc = "An integrally suppressed submachinegun chambered in 9mm."
@@ -250,6 +250,8 @@
 	mag_type = /obj/item/ammo_box/magazine/msmg9mm
 	autofire_shot_delay = 1.3
 	spread = 4
+	extra_damage = 2	//Results in 18 damage
+	extra_penetration = 0.05	//Results in 5 AP
 	suppressed = 1
 	can_unsuppress = TRUE	//Without can_suppress only results in a better examine message
 
