@@ -184,19 +184,24 @@
 				continue
 			. += hostile_obj
 	else
-		. = oview(vision_range, targets_from)
+		. = list() // The following code is only very slightly slower than just returning oview(vision_range, targets_from), but it saves us much more work down the line, particularly when bees are involved
+		for (var/obj/A in oview(vision_range, targets_from))
+			. += A
+		for (var/mob/living/A in oview(vision_range, targets_from)) //mob/dead/observers arent possible targets
+			. += A
 
 /mob/living/simple_animal/hostile/proc/FindTarget(list/possible_targets)//Step 2, filter down possible targets to things we actually care about
 	. = list()
 	if (peaceful == FALSE)
 		if(isnull(possible_targets))
 			possible_targets = ListTargets()
-		for(var/atom/target_candidate as anything in possible_targets)
-			if(Found(target_candidate))//Just in case people want to override targetting
-				. = list(target_candidate)
+		for(var/pos_targ in possible_targets)
+			var/atom/A = pos_targ
+			if(Found(A))//Just in case people want to override targetting
+				. = list(A)
 				break
-			if(CanAttack(target_candidate))//Can we attack it?
-				. += target_candidate
+			if(CanAttack(A))//Can we attack it?
+				. += A
 				continue
 		var/Target = PickTarget(.)
 		GiveTarget(Target)
@@ -206,12 +211,13 @@
 
 /mob/living/simple_animal/hostile/proc/PossibleThreats()
 	. = list()
-	for(var/atom/target_candidate as anything in ListTargets())
-		if(Found(target_candidate))
-			. = list(target_candidate)
+	for(var/pos_targ in ListTargets())
+		var/atom/A = pos_targ
+		if(Found(A))
+			. = list(A)
 			break
-		if(CanAttack(target_candidate))
-			. += target_candidate
+		if(CanAttack(A))
+			. += A
 			continue
 
 
@@ -221,11 +227,12 @@
 
 /mob/living/simple_animal/hostile/proc/PickTarget(list/Targets)//Step 3, pick amongst the possible, attackable targets
 	if(target != null)//If we already have a target, but are told to pick again, calculate the lowest distance between all possible, and pick from the lowest distance targets
-		for(var/atom/target_candidate as anything in Targets)
-			var/target_dist = get_dist(targets_from, target)
-			var/possible_target_distance = get_dist(targets_from, target_candidate)
+		for(var/pos_targ in Targets)
+			var/atom/A = pos_targ
+			var/target_dist = get_dist(targets_from, A)
+			var/possible_target_distance = get_dist(targets_from, A)
 			if(target_dist < possible_target_distance)
-				Targets -= target_candidate
+				Targets -= A
 	if(!Targets.len)//We didnt find nothin!
 		return
 	var/chosen_target = pick(Targets)//Pick the remaining targets (if any) at random
