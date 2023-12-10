@@ -39,6 +39,17 @@ Uranium, Contaminated
 	name = ".22lr bullet"
 	damage = 12
 	wound_bonus = 6
+	var/dmg_dropoff_per_tile = damage * 0.5 / 10	//In 10 tiles (roughly a screen and half away), it will lose half of its initial damage
+	var/stam_dropoff_per_tile = stamina * 0.5 / 10	//In 10 tiles (roughly a screen and half away), it will lose half of its initial stam damage
+
+/obj/item/projectile/bullet/c22/Range()
+	..()
+	if(damage > 0)
+		damage -= dmg_dropoff_per_tile
+	if(stamina > 0)
+		stamina -= stam_dropoff_per_tile
+	if(damage < 0 && stamina < 0)
+		qdel(src)
 
 /obj/item/projectile/bullet/c22/rubber
 	name = ".22lr rubber bullet"
@@ -65,6 +76,17 @@ Uranium, Contaminated
 	name = ".38 bullet"
 	damage = 14
 	wound_bonus = 12
+	var/dmg_dropoff_per_tile = damage * 0.5 / 10	//In 10 tiles (roughly a screen and half away), it will lose half of its initial damage
+	var/stam_dropoff_per_tile = stamina * 0.5 / 10	//In 10 tiles (roughly a screen and half away), it will lose half of its initial stam damage
+
+/obj/item/projectile/bullet/c38/Range()
+	..()
+	if(damage > 0)
+		damage -= dmg_dropoff_per_tile
+	if(stamina > 0)
+		stamina -= stam_dropoff_per_tile
+	if(damage < 0 && stamina < 0)
+		qdel(src)
 
 /obj/item/projectile/bullet/c38/rubber
 	name = ".38 rubber bullet"
@@ -118,10 +140,23 @@ Uranium, Contaminated
 	name = "9mm FMJ bullet"
 	damage = 16
 	wound_bonus = 10
+	var/dmg_dropoff_per_tile = damage * 0.5 / 10	//In 10 tiles (roughly a screen and half away), it will lose half of its initial damage
+	var/stam_dropoff_per_tile = stamina * 0.5 / 10	//In 10 tiles (roughly a screen and half away), it will lose half of its initial stam damage
+
+/obj/item/projectile/bullet/c9mm/Range()
+	..()
+	if(damage > 0)
+		damage -= dmg_dropoff_per_tile
+	if(stamina > 0)
+		stamina -= stam_dropoff_per_tile
+	if(damage < 0 && stamina < 0)
+		qdel(src)
 
 /obj/item/projectile/bullet/c9mm/op
 	name = "9mm +P bullet"
 	damage = 18
+	dmg_dropoff_per_tile = 0
+	stam_dropoff_per_tile = 0
 	var/extra_speed = 500
 
 /obj/item/projectile/bullet/c9mm/rubber
@@ -179,12 +214,25 @@ Uranium, Contaminated
 	damage = 20
 	wound_bonus = 24
 	armour_penetration = 0.05
+	var/dmg_dropoff_per_tile = damage * 0.25 / 10	//In 10 tiles (roughly a screen and half away), it will lose a quarter of its initial damage
+	var/stam_dropoff_per_tile = stamina * 0.25 / 10	//In 10 tiles (roughly a screen and half away), it will lose a quarter of its initial stam damage
+
+/obj/item/projectile/bullet/c10mm/Range()
+	..()
+	if(damage > 0)
+		damage -= dmg_dropoff_per_tile
+	if(stamina > 0)
+		stamina -= stam_dropoff_per_tile
+	if(damage < 0 && stamina < 0)
+		qdel(src)
 
 /obj/item/projectile/bullet/c10mm/simple
 	name = "10mm FMJ bullet"
 	damage = 20
 	armour_penetration = 0.1
 	wound_bonus = 24
+	dmg_dropoff_per_tile = 0
+	stam_dropoff_per_tile = 0
 
 /obj/item/projectile/bullet/c10mm/rubber
 	name = "10mm rubber bullet"
@@ -215,16 +263,31 @@ Uranium, Contaminated
 	name = ".45 FMJ bullet"
 	damage = 24
 	wound_bonus = 15
+	var/dmg_dropoff_per_tile = damage * 0.25 / 10	//In 10 tiles (roughly a screen and half away), it will lose a quarter of its initial damage
+	var/stam_dropoff_per_tile = stamina * 0.25 / 10	//In 10 tiles (roughly a screen and half away), it will lose a quarter of its initial stam damage
+
+/obj/item/projectile/bullet/c45/Range()
+	..()
+	if(damage > 0)
+		damage -= dmg_dropoff_per_tile
+	if(stamina > 0)
+		stamina -= stam_dropoff_per_tile
+	if(damage < 0 && stamina < 0)
+		qdel(src)
 
 /obj/item/projectile/bullet/c45/simple
 	name = ".45 FMJ bullet"
 	damage = 24
 	wound_bonus = 15
+	dmg_dropoff_per_tile = 0
+	stam_dropoff_per_tile = 0
 
 /obj/item/projectile/bullet/c45/op
 	name = ".45 +P bullet"
 	damage = 28
 	var/extra_speed = 500
+	dmg_dropoff_per_tile = 0
+	stam_dropoff_per_tile = 0
 
 /obj/item/projectile/bullet/c45/rubber
 	name = ".45 rubber bullet"
