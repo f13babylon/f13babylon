@@ -628,15 +628,17 @@ GLOBAL_LIST_INIT(loot_t3_ammo, list(
 	/obj/item/ammo_box/shotgun/buck,
 	/obj/item/ammo_box/magazine/msmg9mm,
 	/obj/item/ammo_box/magazine/m10mm,
+	/obj/item/ammo_box/magazine/msmg10mm,
 	/obj/item/ammo_box/magazine/mgreasegun,
 	/obj/item/ammo_box/needle,
-	/obj/item/ammo_box/magazine/mthompson/drum,
+	/obj/item/ammo_box/magazine/mthompson,
 	/obj/item/ammo_box/tube/m44,
-	/obj/item/ammo_box/magazine/msmg10mm,
 	/obj/item/stock_parts/cell/ammo/ec
 ))
 
 GLOBAL_LIST_INIT(loot_t4_ammo, list(
+	/obj/item/ammo_box/magazine/msmg9mm/drum,
+	/obj/item/ammo_box/magazine/mthompson/drum,
 	/obj/item/ammo_box/magazine/d12g,
 	/obj/item/ammo_box/magazine/m44,
 	/obj/item/ammo_box/magazine/m556/rifle,
