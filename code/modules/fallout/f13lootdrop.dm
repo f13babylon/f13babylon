@@ -798,32 +798,33 @@
 	icon_state = "egunlow_loot"
 	name = "low tier energy gun"
 	loot = list(/obj/effect/spawner/bundle/f13/wattz = 40,
-				/obj/effect/spawner/bundle/f13/wattzm = 25
+				/obj/effect/spawner/bundle/f13/wattzm = 5,
+				/obj/effect/spawner/bundle/f13/laserpistol = 20,
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid
 	icon_state = "egunmid_loot"
 	name = "mid tier energy gun"
-	loot = list(/obj/effect/spawner/bundle/f13/aer9 = 26,
-				/obj/effect/spawner/bundle/f13/laserpistol = 15,
-				/obj/effect/spawner/bundle/f13/ionrifle = 5
+	loot = list(/obj/effect/spawner/bundle/f13/aer9 = 40,
+				/obj/effect/spawner/bundle/f13/plasmapistol = 20,
+				/obj/effect/spawner/bundle/f13/wattz2k = 5,
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/midhigh //overlaps with midtier
 	name = "mid-high tier energy gun"
 	icon_state = "egunmidhigh_loot"
-	loot = list(/obj/effect/spawner/bundle/f13/aer12,
-				/obj/effect/spawner/bundle/f13/ionrifle,
-				/obj/effect/spawner/bundle/f13/aer14
+	loot = list(/obj/effect/spawner/bundle/f13/aer9 = 40,
+				/obj/effect/spawner/bundle/f13/ionrifle = 5,
+				/obj/effect/spawner/bundle/f13/aer12 = 20,
 				)
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/high
 	name = "high tier energy gun"
 	icon_state = "egunhigh_loot"
-	loot = list(/obj/effect/spawner/bundle/f13/tribeam = 10,
+	loot = list(/obj/effect/spawner/bundle/f13/tribeam = 20,
 				/obj/effect/spawner/bundle/f13/rcw = 20,
-				/obj/effect/spawner/bundle/f13/aer14 = 20,
-				/obj/effect/spawner/bundle/f13/wattz2k = 26,
-				/obj/effect/spawner/bundle/f13/wattz2kext = 15,
+				/obj/effect/spawner/bundle/f13/aer14 = 10,
+				/obj/effect/spawner/bundle/f13/plasmarifle = 20,
+				/obj/effect/spawner/bundle/f13/wattz2kext = 20,
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/superhigh
@@ -837,8 +838,7 @@
 	icon_state = "egununique_loot"
 	name = "unique tier energy gun"
 	lootcount = 1
-
-	loot = list(/obj/item/gun/energy/laser/solar
+	loot = list(/obj/item/gun/energy/laser/pistol/pewpew
 				)
 
 //Ballistic Weapon Spawners

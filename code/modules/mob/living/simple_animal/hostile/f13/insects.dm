@@ -423,7 +423,7 @@
 /obj/item/projectile/bloatfly
 	name = "bloatfly projectile"
 	damage = 15
-	armour_penetration = 5
+	armour_penetration = 0.5
 	icon_state = "toxin"
 
 //////////////

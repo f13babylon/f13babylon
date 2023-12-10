@@ -17,4 +17,13 @@
 #MEDAL_HUB_PASSWORD
 
 ## Discord Role ID for round pings
-DISCORD_PING_ROLE_ID
+#DISCORD_ROUND_PING_ROLE
+
+## TGS Channel Tag for round alerts
+#DISCORD_ROUND_CHANNEL round-relay
+
+## TGS Channel Tag for admin alerts, not including bans
+#DISCORD_ADMIN_CHANNEL admin-relay
+
+## TGS Channel Tag for ban alerts
+#DISCORD_BAN_CHANNEL ban-relay

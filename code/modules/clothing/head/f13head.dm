@@ -615,6 +615,18 @@
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
+/obj/item/clothing/head/f13/headscarfncr
+	name = "NCR headscarf"
+	desc = "A piece of cloth worn on the head for a variety of purposes. This one has a white band around it, with NCR symbolism on the front. Clearly, the purpose of this one is to make sure nobody forgets the NCR owns this sand."
+	icon_state = "headscarf_ncr"
+	item_state = "headscarf_ncr"
+	flags_inv = HIDEMASK|HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
+	mutantrace_variation = STYLE_MUZZLE
+
+/obj/item/clothing/head/f13/headscarfncr/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
 /obj/item/clothing/head/f13/pot
 	name = "metal cooking pot"
 	desc = "Step one: Start with the sauce.<br>Step two: Add the noodles.<br>Step three: Stir the pasta.<br>Step four: Turn up the heat.<br>Step five: Burn the house."

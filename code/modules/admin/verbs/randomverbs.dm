@@ -81,7 +81,7 @@
 			sender_full_info = "[sender_name ? "[sender_name] of the ": ""]Caliente Expeditionary Command"
 			radio_span = get_radio_span(FREQ_NCR)
 		if("Legion")
-			sender_full_info = "[sender_name ? "[sender_name] of the ": ""]Zion War Council"
+			sender_full_info = "[sender_name ? "[sender_name] of the ": ""]Blackrock Fortress"
 			radio_span = get_radio_span(FREQ_LEGION)
 		if("BOS")
 			sender_full_info = "[sender_name ? "[sender_name] of the ": ""]Utah Council of Elders"

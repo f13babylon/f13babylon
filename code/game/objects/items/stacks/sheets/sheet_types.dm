@@ -344,6 +344,10 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 	null, \
 	new/datum/stack_recipe("apiary", /obj/structure/beebox, 40, time = 60, one_per_turf = TRUE, on_floor = TRUE),\
 	new/datum/stack_recipe("honey frame", /obj/item/honey_frame, 5, time = 15, one_per_turf = TRUE, on_floor = TRUE),\
+	null, \
+	new/datum/stack_recipe("picture frame", /obj/item/wallframe/picture, 2, time = 5),\
+	new/datum/stack_recipe("painting frame", /obj/item/wallframe/painting, 2, time = 5),\
+	new/datum/stack_recipe("easel", /obj/structure/easel, 5, time = 15, one_per_turf = TRUE, on_floor = TRUE),\
 	))
 
 /obj/item/stack/sheet/mineral/wood
@@ -362,6 +366,11 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 	material_type = /datum/material/wood
 	grind_results = list(/datum/reagent/cellulose = 20)
 	walltype = /turf/closed/wall/mineral/wood
+
+/obj/item/stack/sheet/mineral/wood/cyborg
+	custom_materials = null
+	is_cyborg = 1
+	cost = 500
 
 /obj/item/stack/sheet/mineral/wood/attackby(obj/item/W, mob/user, params) // NOTE: sheet_types.dm is where the WOOD stack lives. Maybe move this over there.
 	// Taken from /obj/item/stack/rods/attackby in [rods.dm]

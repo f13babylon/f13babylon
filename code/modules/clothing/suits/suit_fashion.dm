@@ -24,12 +24,14 @@
 	desc = "A suit that protects against the weather, and looks stylish, but not much else."
 	icon_state = "fieldscribe"
 	armor = list("melee" = 25, "bullet" = 20, "laser" = 20, "energy" = 10, "bomb" = 16, "bio" = 30, "rad" = 20, "fire" = 10, "acid" = 40)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/toggle/labcoat/scribecoat
 	name = "fieldscribe coat"
 	desc = "A heavy-duty coat and chestrig fitted with tons of pockets for every scribe's storage needs."
 	icon_state = "scribecoat"
 	armor = list("melee" = 25, "bullet" = 20, "laser" = 20, "energy" = 10, "bomb" = 16, "bio" = 30, "rad" = 20, "fire" = 10, "acid" = 40)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/cyborg_suit
 	name = "cyborg suit"
@@ -208,12 +210,14 @@
 	desc = "A modified scribe coat fitted with lightweight meshes and plates for protection during expeditions outside of the bunker."
 	icon_state = "fieldscribe"
 	armor = list("melee" = 25, "bullet" = 30, "laser" = 40, "energy" = 10, "bomb" = 16, "bio" = 30, "rad" = 20, "fire" = 10, "acid" = 40)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/toggle/labcoat/scribecoat
 	name = "fieldscribe coat"
 	desc = "A heavy-duty coat and chestrig fitted with tons of pockets for every scribe's storage needs."
 	icon_state = "scribecoat"
 	armor = list("melee" = 25, "bullet" = 30, "laser" = 40, "energy" = 10, "bomb" = 16, "bio" = 30, "rad" = 20, "fire" = 10, "acid" = 40)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/slavelabor
 	name = "old leather strips"

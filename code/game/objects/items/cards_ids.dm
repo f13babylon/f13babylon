@@ -435,7 +435,7 @@
 /obj/item/card/id/syndicate
 	name = "agent card"
 	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE)
-	var/anyone = FALSE //Can anyone forge the ID or just syndicate?
+	var/datum/weakref/linked_mob
 	var/forged = FALSE //have we set a custom name and job assignment, or will we use what we're given when we chameleon change?
 
 /obj/item/card/id/syndicate/Initialize(mapload)
@@ -444,8 +444,7 @@
 	chameleon_action.chameleon_type = /obj/item/card/id
 	chameleon_action.chameleon_name = "ID Card"
 	chameleon_action.initialize_disguises()
-	if(!anyone)
-		AddComponent(/datum/component/identification/syndicate, ID_COMPONENT_DEL_ON_IDENTIFY, ID_COMPONENT_EFFECT_NO_ACTIONS, NONE)		//no deconstructive analyzer usage.
+
 
 /obj/item/card/id/syndicate/afterattack(obj/item/O, mob/user, proximity)
 	if(!proximity)
@@ -453,27 +452,27 @@
 	if(istype(O, /obj/item/card/id))
 		var/obj/item/card/id/I = O
 		src.access |= I.access
-		if(isliving(user) && user.mind)
-			if(user.mind.special_role || anyone)
+		if(isliving(user) && user)
+			if(linked_mob.resolve() == user)
 				to_chat(usr, "<span class='notice'>The card's microscanners activate as you pass it over the ID, copying its access.</span>")
 
 /obj/item/card/id/syndicate/attack_self(mob/user)
-	if(isliving(user) && user.mind)
+	if(isliving(user))
 		var/first_use = registered_name ? FALSE : TRUE
-		if(!(user.mind.special_role || anyone)) //Unless anyone is allowed, only syndies can use the card, to stop metagaming.
-			if(first_use) //If a non-syndie is the first to forge an unassigned agent ID, then anyone can forge it.
-				anyone = TRUE
-			else
-				return ..()
+		if(first_use)
+			linked_mob = WEAKREF(user)
+			to_chat(user, "<span class='notice'>The card locks to your DNA.</span>") //its not actual dna because i dont want to support genetics. sorry
+		if(linked_mob.resolve() != user)
+			return ..()
 
 		var/popup_input
 		if(bank_support == ID_FREE_BANK_ACCOUNT)
-			popup_input = alert(user, "Choose Action", "Agent ID", "Show", "Forge/Reset", "Change Account ID")
+			popup_input = alert(user, "Choose Action", "Agent ID", "Show", "Forge/Reset Identity", "Change Account ID")
 		else
-			popup_input = alert(user, "Choose Action", "Agent ID", "Show", "Forge/Reset")
+			popup_input = alert(user, "Choose Action", "Agent ID", "Show", "Forge/Reset Identity")
 		if(!user.canUseTopic(src, BE_CLOSE, FALSE))
 			return
-		if(popup_input == "Forge/Reset" && !forged)
+		if(popup_input == "Forge/Reset Identity" && !forged)
 			var/input_name = stripped_input(user, "What name would you like to put on this card? Leave blank to randomise.", "Agent card name", registered_name ? registered_name : (ishuman(user) ? user.real_name : user.name), MAX_NAME_LEN)
 			input_name = reject_bad_name(input_name)
 			if(!input_name)
@@ -507,7 +506,7 @@
 							registered_account = account
 							to_chat(user, "<span class='notice'>Your account number has been automatically assigned.</span>")
 			return
-		else if (popup_input == "Forge/Reset" && forged)
+		else if (popup_input == "Forge/Reset Identity" && forged)
 			registered_name = initial(registered_name)
 			assignment = initial(assignment)
 			log_game("[key_name(user)] has reset \the [initial(name)] named \"[src]\" to default.")
@@ -520,8 +519,11 @@
 			return
 	return ..()
 
-/obj/item/card/id/syndicate/anyone
-	anyone = TRUE
+/obj/item/card/id/syndicate/AltClick(mob/living/user)
+	. = ..()
+	if(linked_mob)
+		linked_mob = null
+		to_chat(user, "<span class='notice'>You successfully reset the DNA lock on the card.</span>")
 
 /obj/item/card/id/syndicate/nuke_leader
 	name = "lead agent card"

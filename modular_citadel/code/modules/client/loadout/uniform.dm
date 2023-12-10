@@ -598,6 +598,7 @@
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
+							"NCR Conscript",
 							"NCR Rear Echelon",
 							"NCR Off-Duty",
 							"NCR Ranger"
@@ -620,6 +621,7 @@
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
+							"NCR Conscript",
 							"NCR Rear Echelon",
 							"NCR Off-Duty",
 							"NCR Ranger"
@@ -677,7 +679,7 @@
 							"Secretary",
 							"Sheriff",
 							"Doctor",
-							"Citizen",
+							"La Verkin Citizen",
 							"Deputy",
 							"Shopkeeper",
 							"Farmer",
@@ -693,14 +695,22 @@
 	path = /obj/item/clothing/under/f13/khan/shorts
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
 	restricted_desc = "KHAN"
-	restricted_roles = list("Great Khan")
+	restricted_roles = list("Khan Senior Enforcer",
+							"Khan Armorer",
+							"Khan Chemist",
+							"Khan Enforcer",
+							)
 
 /datum/gear/uniform/khans/booty
 	name = "great khans booty shorts"
 	path = /obj/item/clothing/under/f13/khan/booty
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
 	restricted_desc = "KHAN"
-	restricted_roles = list("Great Khan")
+	restricted_roles = list("Khan Senior Enforcer",
+							"Khan Armorer",
+							"Khan Chemist",
+							"Khan Enforcer",
+							)
 
 //Skirts
 

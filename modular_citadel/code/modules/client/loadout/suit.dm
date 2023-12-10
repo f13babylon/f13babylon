@@ -184,7 +184,7 @@
 							"Secretary",
 							"Sheriff",
 							"Doctor",
-							"Citizen",
+							"La Verkin Citizen",
 							"Deputy",
 							"Shopkeeper",
 							"Farmer",

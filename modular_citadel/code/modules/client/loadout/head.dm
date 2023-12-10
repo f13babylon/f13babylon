@@ -294,6 +294,7 @@
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
+							"NCR Conscript",
 							"NCR Rear Echelon",
 							"NCR Off-Duty"
 						)
@@ -315,6 +316,7 @@
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
+							"NCR Conscript",
 						)
 
 /datum/gear/head/steelpot_gambler
@@ -334,6 +336,7 @@
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
+							"NCR Conscript",
 						)
 
 /datum/gear/head/steelpot_bandolier
@@ -353,6 +356,7 @@
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
+							"NCR Conscript",
 						)
 
 
@@ -374,6 +378,7 @@
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
+							"NCR Conscript",
 							"NCR Rear Echelon",
 							"NCR Off-Duty"
 						)
@@ -395,6 +400,7 @@
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
+							"NCR Conscript",
 							"NCR Rear Echelon",
 							"NCR Off-Duty"
 						)
@@ -438,7 +444,11 @@
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_FACTIONS
 	cost = 2
 	restricted_desc = "KHAN"
-	restricted_roles = list("Great Khan")
+	restricted_roles = list("Khan Senior Enforcer",
+							"Khan Armorer",
+							"Khan Chemist",
+							"Khan Enforcer",
+							)
 
 /datum/gear/head/khan_furtrimmed
 	name = "Great Khan fur-trimmed helmet"
@@ -446,7 +456,11 @@
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_FACTIONS
 	cost = 2
 	restricted_desc = "KHAN"
-	restricted_roles = list("Great Khan")
+	restricted_roles = list("Khan Senior Enforcer",
+							"Khan Armorer",
+							"Khan Chemist",
+							"Khan Enforcer",
+							)
 
 /datum/gear/head/oasishelmet
 	name = "light security helmet"

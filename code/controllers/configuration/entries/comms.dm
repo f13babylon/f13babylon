@@ -46,5 +46,21 @@
 /datum/config_entry/flag/allow_cross_server_bunker_override
 	protection = CONFIG_ENTRY_LOCKED
 
-/datum/config_entry/string/discord_ping_role_id
+/datum/config_entry/string/tgs_ban_relay_tag
+	config_entry_value = "ban-alert"
 	protection = CONFIG_ENTRY_LOCKED
+
+/datum/config_entry/string/discord_round_ping_role
+	protection = CONFIG_ENTRY_LOCKED
+
+/datum/config_entry/string/discord_round_channel
+	protection = CONFIG_ENTRY_LOCKED
+	config_entry_value = "round-relay"
+
+/datum/config_entry/string/discord_admin_channel
+	protection = CONFIG_ENTRY_LOCKED
+	config_entry_value = "admin-relay"
+
+/datum/config_entry/string/discord_ban_channel
+	protection = CONFIG_ENTRY_LOCKED
+	config_entry_value = "ban-relay"

@@ -1080,7 +1080,7 @@ Nothing else in the console has ID requirements.
 /obj/machinery/computer/rdconsole/ui_interact(mob/user)
 	. = ..()
 
-	if(!HAS_TRAIT(user, TRAIT_RESEARCHER))
+	if(!HAS_TRAIT(user, TRAIT_RESEARCHER) && !issilicon(user))
 		to_chat(user, span_warning("Try as you might, you have no clue how to work this thing."))
 		return
 

@@ -12,7 +12,7 @@
 
 /datum/gear/gloves/grey
 	name = "grey gloves"
-	path = /obj/item/clothing/gloves/color/grey 
+	path = /obj/item/clothing/gloves/color/grey
 
 /datum/gear/gloves/leather
 	name = "leather gloves"
@@ -20,12 +20,12 @@
 
 /datum/gear/gloves/military
 	name = "military gloves"
-	path = /obj/item/clothing/gloves/f13/military 
+	path = /obj/item/clothing/gloves/f13/military
 	cost = 2
 
 /datum/gear/gloves/latex
 	name = "latex gloves"
-	path = /obj/item/clothing/gloves/color/latex 
+	path = /obj/item/clothing/gloves/color/latex
 
 /datum/gear/gloves/handwraps
 	name = "handwraps"

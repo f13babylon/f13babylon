@@ -155,19 +155,23 @@
 		return
 	qdel(query_add_ban)
 	to_chat(usr, "<span class='adminnotice'>Ban saved to database.</span>")
-	var/msg = "[key_name_admin(usr)] has added a [bantype_str] for [bankey] [(job)?"([job])":""] [(duration > 0)?"([duration] minutes)":""] with the reason: \"[reason]\" to the ban database."
-	message_admins(msg,1)
-	var/datum/admin_help/AH = admin_ticket_log(ckey, msg)
 
-	if(announceinirc)
-		send2irc("BAN ALERT","[a_key] applied a [bantype_str] on [bankey]")
+	var/base_message = " has added a [bantype_str] for [bankey] [(job)?"([job])":""] [(duration > 0)?"([duration] minutes)":""] with the reason: \"[reason]\" to the ban database."
+	message_admins("[key_name_admin(usr)] [base_message]")
+	var/datum/admin_help/AH = admin_ticket_log(ckey, "[key_name(usr)] [base_message]")
+
+	var/is_temp_ban = duration != -1
+	SSdiscord.send_to_ban_channel(
+		"**BAN** | `[bankey]` | [(is_temp_ban ? "TEMP | [duration]m" : "PERM")] | [(job || "SERVER")] | ADMIN `[key_name(usr, include_name = FALSE)]` | [reason]"
+	)
 
 	if(kickbannedckey)
 		if(AH)
 			AH.Resolve()	//with prejudice
 		if(banned_client && banned_client.ckey == ckey)
 			qdel(banned_client)
-	return 1
+
+	return TRUE
 
 /datum/admins/proc/DB_ban_unban(ckey, bantype, job = "")
 
@@ -367,7 +371,9 @@
 		qdel(query_unban)
 		return
 	qdel(query_unban)
-	message_admins("[key_name_admin(usr)] has lifted [p_key]'s ban.")
+
+	message_admins("[key_name_admin(usr)] has lifted a ban for [p_key].")
+	SSdiscord.send_to_ban_channel("UNBAN | `[p_key]` | ADMIN `[key_name(usr, include_name = FALSE)]`")
 
 /client/proc/DB_ban_panel()
 	set category = "Admin"

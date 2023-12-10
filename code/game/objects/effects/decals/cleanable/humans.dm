@@ -89,7 +89,7 @@
 
 /obj/effect/decal/cleanable/blood/footprints/Initialize(mapload, list/datum/disease/diseases)
 	. = ..()
-	
+
 	var/static/list/loc_connections = list(
 		COMSIG_ATOM_ENTERED = .proc/on_entered,
 		COMSIG_ATOM_EXITED = .proc/on_exit,
@@ -162,69 +162,3 @@
 	if((blood_state != BLOOD_STATE_OIL) && (blood_state != BLOOD_STATE_NOT_BLOODY))
 		return TRUE
 	return FALSE
-
-//cleanable here
-
-/obj/effect/decal/cleanable/cum
-	name = "cum"
-	desc = "It's pie cream from a cream pie. Or not..."
-	gender = PLURAL
-	layer = ABOVE_NORMAL_TURF_LAYER
-	density = 0
-	icon = 'honk/icons/effects/cum.dmi'
-	icon_state = "cum1"
-	random_icon_states = list("cum1", "cum3", "cum4", "cum5", "cum6", "cum7", "cum8", "cum9", "cum10", "cum11", "cum12")
-	mergeable_decal = TRUE
-	blood_state = null
-	bloodiness = null
-	//var/blood_DNA = list()
-
-/obj/effect/decal/cleanable/cum/Initialize(mapload)
-	. = ..()
-	dir = pick(1,2,4,8)
-	reagents.add_reagent(/datum/reagent/consumable/semen, rand(8,13))
-	add_blood_DNA(list("Unknown DNA" = "O+"))
-
-/* Eventually TODO: make snowflake trails like baycode's
-/obj/effect/decal/cleanable/blood/footprints/tracks/shoe
-	name = "footprints"
-	desc = "They look like tracks left by footwear."
-	icon_state = FOOTPRINT_SHOE
-	print_state = FOOTPRINT_SHOE
-
-/obj/effect/decal/cleanable/blood/footprints/tracks/foot
-	name = "footprints"
-	desc = "They look like tracks left by a bare foot."
-	icon_state = FOOTPRINT_FOOT
-	print_state = FOOTPRINT_FOOT
-
-/obj/effect/decal/cleanable/blood/footprints/tracks/snake
-	name = "tracks"
-	desc = "They look like tracks left by a giant snake."
-	icon_state = FOOTPRINT_SNAKE
-	print_state = FOOTPRINT_SNAKE
-
-/obj/effect/decal/cleanable/blood/footprints/tracks/paw
-	name = "footprints"
-	desc = "They look like tracks left by paws."
-	icon_state = FOOTPRINT_PAW
-	print_state = FOOTPRINT_PAW
-
-/obj/effect/decal/cleanable/blood/footprints/tracks/claw
-	name = "footprints"
-	desc = "They look like tracks left by claws."
-	icon_state = FOOTPRINT_CLAW
-	print_state = FOOTPRINT_CLAW
-
-/obj/effect/decal/cleanable/blood/footprints/tracks/wheels
-	name = "tracks"
-	desc = "They look like tracks left by wheels."
-	gender = PLURAL
-	icon_state = FOOTPRINT_WHEEL
-	print_state = FOOTPRINT_WHEEL
-
-/obj/effect/decal/cleanable/blood/footprints/tracks/body
-	name = "trails"
-	desc = "A trail left by something being dragged."
-	icon_state = FOOTPRINT_DRAG
-	print_state = FOOTPRINT_DRAG */

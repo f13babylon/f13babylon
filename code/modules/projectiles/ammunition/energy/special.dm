@@ -87,6 +87,6 @@
 	select_name = "OH GOD OH FUCK"
 	fire_sound = 'sound/weapons/flamethrower.ogg'
 	projectile_type = /obj/item/projectile/incendiary/flamethrower
-	e_cost = 0//For now.
-	pellets = 3
+	e_cost = 50
+	pellets = 2
 	variance = 35

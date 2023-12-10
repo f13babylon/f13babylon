@@ -1,4 +1,4 @@
-/obj/item/gun/energy/laser/practice
+/obj/item/gun/energy/laser/practice				//SCROLL DOWN FOR FALLOUT 13 CONTENT
 	name = "practice laser gun"
 	icon_state = "laser-p"
 	desc = "A modified version of the basic laser gun, this one fires less concentrated energy bolts designed for target practice."
@@ -131,7 +131,7 @@
 
 
 
-//Fallout
+//	v	FALLOUT 13 CONTENT STARTS HERE	v
 
 
 /obj/item/gun/energy/laser
@@ -199,9 +199,9 @@
 
 //Wattz 1000 Laser pistol
 /obj/item/gun/energy/laser/wattz
-	name = "Wattz 1000 laser pistol"
-	desc = "A Wattz 1000 Laser Pistol. Civilian model, so the wattage is lower than military or police versions. Uses small energy cells."
-	icon = 'icons/fallout/objects/guns/energy.dmi'
+	name = "civilian laser pistol"
+	desc = "A Wattz 1000 laser pistol intended for civilian use. Fires less concentrated beams of light that are usually incapable of penetrating armor."
+	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	icon_state = "wattz1000"
@@ -215,11 +215,11 @@
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
 
-//Watss 1000 Magneto-laser pistol
+//Upgraded Wattz 1000
 /obj/item/gun/energy/laser/wattz/magneto
-	name = "Wattz 1000 magneto-laser pistol"
-	desc = "This Wattz 1000 laser pistol has been upgraded with a magnetic field targeting system that tightens the laser emission, giving this pistol extra penetrating power."
-	icon_state = "magnetowattz"
+	name = "magnetic laser pistol"
+	desc = "An upgraded variant of the Wattz 1000 laser pistol originally intended for police use. Fires concentrated beams of light that are capable of penetrating common armor."
+	icon_state = "wattzplus"
 	fire_delay = 0
 	item_state = "laser-pistol"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/wattz/magneto/hitscan)
@@ -231,6 +231,7 @@
 	can_charge = 0
 	selfcharge = 1
 	icon_state = "rechargerpistol"
+	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
 	w_class = WEIGHT_CLASS_SMALL
 	weapon_weight = WEAPON_MEDIUM
 	slot_flags = ITEM_SLOT_BELT
@@ -238,27 +239,13 @@
 	cell_type = /obj/item/stock_parts/cell/ammo/breeder
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
 
-/obj/item/gun/energy/laser/wattz/recharger/Walker
-	name = "Walker's Recharger Pistol"
-	desc = "A recharger pistol procured and modified by the scribes under Walker. It charges its capacitor banks over time using radioactive decay. Only a few of these weapons exist."
-	can_remove = 0
-	can_charge = 0
-	selfcharge = 1
-	icon_state = "wattz1000"
-	item_state = "laser-pistol"
-	w_class = WEIGHT_CLASS_SMALL
-	weapon_weight = WEAPON_MEDIUM
-	slot_flags = ITEM_SLOT_BELT
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/recharger/hitscan/walker)
-	cell_type = /obj/item/stock_parts/cell/ammo/breeder
-	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
-
 //AEP 7 Laser pistol
 /obj/item/gun/energy/laser/pistol
-	name = "\improper AEP7 laser pistol"
-	desc = "A basic energy-based laser gun that fires concentrated beams of light."
+	name = "laser pistol"
+	desc = "A military-grade AEP7 laser pistol that fires concentrated beams of light."
 	slowdown = 0.2
-	icon_state = "AEP7"
+	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
+	icon_state = "aep7"
 	item_state = "laser-pistol"
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_MEDIUM
@@ -267,13 +254,10 @@
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
 	fire_delay = 0
 	can_scope = FALSE
-	scope_state = "AEP7_scope"
-	scope_x_offset = 7
-	scope_y_offset = 22
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
 
 /obj/item/gun/energy/laser/pistol/cyborg
-	name = "\improper assaultron AEP7 laser eye"
+	name = "\improper integrated AEP7 laser pistol"
 	desc = "A basic energy-based laser projector that fires concentrated beams of light from your eye! It draws power from your cell so try not to go crazy."
 	can_scope = FALSE
 	can_charge = FALSE
@@ -288,13 +272,13 @@
 //Compliance Regulator
 
 /obj/item/gun/energy/laser/complianceregulator
-	name = "AEP5-CR Disabling Beam Pistol"
-	desc = "A laser pistol that has been modified for less-than-lethal work."
+	name = "compliance regulator laser pistol"
+	desc = "An AEP-7 pistol that has been modified for non-lethal work, formally referred to as the AEP-5 Compliance Regulator. It fires concentrated beams of light that aren't intense enough to burn skin, but cause muscle tissue to stiffen involuntarily."
 	slowdown = 0.2
-	icon = 'icons/fallout/objects/guns/energy.dmi'
+	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
-	icon_state = "AEP5CR"
+	icon_state = "aep5"
 	item_state = "AEP5CR"
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_MEDIUM
@@ -303,72 +287,17 @@
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
 	fire_delay = 0
 	can_scope = FALSE
-	scope_state = "AEP7_scope"
-	scope_x_offset = 7
-	scope_y_offset = 22
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
 
-//Solar Scorcher
-/obj/item/gun/energy/laser/solar
-	name = "\improper Solar Scorcher"
-	slowdown = 0.2
-	desc = "This modified AEP7 laser pistol takes its power from the sun, recharging slowly using stored solar energy. However, it cannot be recharged manually as a result."
-	icon_state = "solarscorcher"
-	item_state = "solarscorcher"
-	weapon_weight = WEAPON_MEDIUM
-	w_class = WEIGHT_CLASS_NORMAL
-	slot_flags = ITEM_SLOT_BELT
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/solar/hitscan) //27 dmg, .15 AP
-	cell_type = /obj/item/stock_parts/cell/ammo/ec //16 shots, self-charges
-	can_charge = 0
-	selfcharge = 1 //selfcharging adds 100 a shot
-	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
-
-//autolaser, recycled from SS13
-
-/obj/item/gun/energy/laser/auto
-	name = "compact autolaser"
-	desc = "A beefed-up laser pistol manufactured by West Tek, reinforced to allow it to withstand the thermal load of sustained fire."
-	icon = 'icons/fallout/objects/guns/energy.dmi'
-	icon_state = "protolaser"
-	item_state = "laser"
-	w_class = WEIGHT_CLASS_NORMAL
-	weapon_weight = WEAPON_LIGHT //dual wielding
-	slowdown = 0.3
-	cell_type = /obj/item/stock_parts/cell/ammo/ecp
-	ammo_type =  list(/obj/item/ammo_casing/energy/laser/autolaser) //7dmg, 0 AP, but essentially fires a pinpoint beam
-	automatic = 1
-	autofire_shot_delay = 0.75 //pew pew pew
-	spread = 2
-	can_scope = FALSE
-
-// OASIS autolaser
-/obj/item/gun/energy/laser/auto/oasis
-	name = "autoshock tesla pistol"
-	desc = "This pistol has been unwisely modified by the OPD to fire bolts of electricty. And they beheld Satan as he fell from heaven like lightning."
-	ammo_type =  list(/obj/item/ammo_casing/energy/laser/autolaser/shock) //8dmg + 10 Stamina, flagged as "energy" so very few armors can reduce it below 5-6 dmg, has a very high bare wound bonus, so anyone with no armor on will be crippled
-	slowdown = 0.35
-	weapon_weight = WEAPON_MEDIUM //DO NOT DUAL WIELD
-
-//Ultracite Laser pistol
-/obj/item/gun/energy/laser/ultra_pistol
-	name = "\improper Ultracite laser pistol"
-	desc = "An ultracite enhanced energy-based laser gun that fires concentrated beams of light."
-	slowdown = 0.2
-	icon_state = "ultra_pistol"
-	item_state = "laser-pistol"
-	w_class = WEIGHT_CLASS_NORMAL
-	weapon_weight = WEAPON_MEDIUM
-	slot_flags = ITEM_SLOT_BELT
-	fire_delay = 2
-	scope_x_offset = 7
-	scope_y_offset = 22
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/ultra_pistol)
-	cell_type = /obj/item/stock_parts/cell/ammo/ec
-	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
-
-
-
+/obj/item/gun/energy/laser/pistol/pewpew
+	name = "Pew Pew"
+	desc = "An especially modified AEP-7 pistol that seems to have been previously owned by some kind of aficionado. The focus adjustment knob on the rear of the gun has a Sunset Sarsaparilla bottle cap with a crudely drawn star attached by a screw. Underneath the bottle cap are the words 'HAD IT COMING' etched into the casing."
+	icon_state = "pewpew"
+	weapon_weight = WEAPON_LIGHT
+	slowdown = 0.05
+	equipsound = 'sound/f13weapons/equipsounds/aer14equip.ogg'
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/hitscan/pewpew)
+	
 ////////////////
 //LASER RIFLES//
 ////////////////
@@ -376,10 +305,10 @@
 
 //Wattz 2000 Laser rifle
 /obj/item/gun/energy/laser/wattz2k
-	name = "wattz 2000"
-	desc = "Wattz 2000 Laser Rifle. Uses micro fusion cells for more powerful lasers, and an extended barrel for additional range."
+	name = "laser sniper rifle"
+	desc = "A devastating U.S. Marine Corps issue Wattz 2000 laser rifle, equipped with uniquely powerful parts and a long-range scope."
 	slowdown = 0.3
-	icon = 'icons/fallout/objects/guns/energy.dmi'
+	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	icon_state = "wattz2k"
@@ -392,11 +321,11 @@
 	zoom_out_amt = 13
 	equipsound = 'sound/f13weapons/equipsounds/aer14equip.ogg'
 
-//Wattz 2000 Extended
+//Wattz 3000
 /obj/item/gun/energy/laser/wattz2k/extended
-	name = "wattz 2000e"
-	desc = "This Wattz 2000 laser rifle has had its recharging system upgraded and a special recycling chip installed that reduces the drain on the micro fusion cell by 50%."
-	icon_state = "wattz2k_ext"
+	name = "advanced laser sniper rifle"
+	desc = "A rare Wattz 3000 laser rifle equipped with an advanced targetting system and a recycling chip that allows for better energy efficiency. It's been fitted with a pistol grip separate from the stock."
+	icon_state = "wattz3k"
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	item_state = "sniper_rifle"
@@ -411,9 +340,10 @@
 
 //AER9 Laser rifle
 /obj/item/gun/energy/laser/aer9
-	name = "\improper AER9 laser rifle"
-	desc = "A sturdy pre-war laser rifle. Emits beams of concentrated light to kill targets. Fast firing, but not very powerful."
-	icon_state = "laser"
+	name = "laser rifle"
+	desc = "A military-grade General Atomics AER-9 laser rifle. Fires powerful concentrated beams of lights capable of burning through flesh and bone with the effectiveness of an infantry rifle."
+	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
+	icon_state = "aer9"
 	item_state = "laser-rifle9"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
@@ -422,12 +352,6 @@
 	scope_x_offset = 12
 	scope_y_offset = 20
 	equipsound = 'sound/f13weapons/equipsounds/aer9equip.ogg'
-
-/obj/item/gun/energy/laser/aer9/focused
-	name = "\improper Hot-wired AER9 laser rifle"
-	desc = "A sturdy pre-war laser rifle. Emits beams of concentrated light to kill targets. This one has been jury-rigged against common sense to dump more power into its shots."
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun/hitscan/focused)
-	fire_delay = 5
 
 /obj/item/gun/energy/laser/aer9/recharger
 	name = "gen-3 recharger rifle"
@@ -446,25 +370,11 @@
 	scope_y_offset = 22
 	equipsound = 'sound/f13weapons/equipsounds/aer9equip.ogg'
 
-//Ultracite Laser rifle
-/obj/item/gun/energy/laser/ultra_rifle
-	name = "\improper Ultracite laser rifle"
-	desc = "A sturdy and advanced military grade pre-war service laser rifle, now enhanced with ultracite"
-	icon_state = "ultra_rifle"
-	item_state = "laser-rifle9"
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun)
-	cell_type = /obj/item/stock_parts/cell/ammo/ultracite
-	fire_delay = 3
-	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
-	equipsound = 'sound/f13weapons/equipsounds/aer9equip.ogg'
-
-
 //Tribeam Laser rifle
 /obj/item/gun/energy/laser/scatter
 	name = "tribeam laser rifle"
-	desc = "A modified AER9 equipped with a refraction kit that divides the laser shot into three separate beams. While powerful, it has a reputation for friendly fire."
+	desc = "A military-grade General Atomics AER-9T scattershot laser rifle. Fires powerful concentrated beams of lights capable of burning through flesh and bone with the effectiveness of a shotgun."
+	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
 	icon_state = "tribeam"
 	item_state = "laser-rifle9"
 	fire_delay = 3
@@ -475,9 +385,10 @@
 
 //AER12 Laser rifle
 /obj/item/gun/energy/laser/aer12
-	name = "\improper AER12 laser rifle"
-	desc = "A cutting-edge, pre-war laser rifle. Its focusing crystal array is housed in gold alloy, making it difficult to maintain."
+	name = "advanced laser rifle"
+	desc = "A modern military-grade General Atomics AER-12 advanced laser rifle. Fires powerful concentrated beams of lights capable of burning through flesh, bone, and most armor with the effectiveness of a battle rifle."
 	icon_state = "aer12"
+	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
 	item_state = "laser-rifle9"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer12/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
@@ -489,9 +400,10 @@
 
 //AER14 Laser rifle
 /obj/item/gun/energy/laser/aer14
-	name = "\improper AER14 laser rifle"
-	desc = "A bleeding-edge, pre-war laser rifle. Extremely powerful, but eats MFCs like nothing else."
+	name = "experimental laser rifle"
+	desc = "A cutting-edge General Atomics AER-14 prototype laser rifle. Fires extremely powerful concentrated beams of lights capable of burning through flesh, bone, and most armor with the effectiveness of a high-power marksman rifle. Due to the experimental tuning, it has very bad ammo efficiency."
 	icon_state = "aer14"
+	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
 	item_state = "laser-rifle9"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer14/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
@@ -501,19 +413,12 @@
 	scope_y_offset = 20
 	equipsound = 'sound/f13weapons/equipsounds/aer14equip.ogg'
 
-//Fluff AER14
-/obj/item/gun/energy/laser/aer14/refurb
-	name = "\improper Refurbished AER14 laser rifle"
-	desc = "A bleeding-edge, pre-war laser rifle. Or, at least, it was at one point. \
-	This one appears to have a cracked and dirty focusing lense, requiring reconfiguration in a workshop. \
-	Additionally, it appears as if it's using a makeshift array, significantly reducing the power of each bolt, but increasing the number of available discharges."
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun/hitscan)
-
 //LAER Energy rifle
 /obj/item/gun/energy/laser/laer
-	name = "\improper LAER"
-	desc = "The Laser Assister Energy Rifle is a powerful pre-war weapon developed just before the turn of the Great War. Due to its incredible rarity and unprecedented firepower, the weapon is coveted and nearly solely possesed by the Brotherhood of Steel; typically held by an Elder as a status symbol."
+	name = "laser-assisted energy rifle"
+	desc = "An extremely powerful experimental energy rifle developed by the Yuma Flats Energy Consumption after their research on pulse weaponry. Due to its incredible rarity and unprecedented firepower, the weapon is rarely seen in the hands of anyone but the wasteland's most highly regarded individuals."
 	icon_state = "laer"
+	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
 	item_state = "laer"
 	fire_delay = 3
 	burst_size = 1
@@ -522,11 +427,12 @@
 	equipsound = 'sound/f13weapons/equipsounds/laerequip.ogg'
 
 
-//Fallout 4 laser tommy gun.
+//Laser RCW
 /obj/item/gun/energy/laser/rcw
-	name = "laser RCW"
-	desc = "A rapid-fire laser rifle modeled after the familiar \"Thompson\" SMG. It features high-accuracy burst fire that will whittle down targets in a matter of seconds."
-	icon_state = "lasercw"
+	name = "laser rapid capacitor weapon"
+	desc = "A rapid-fire machine laser modeled after the .45 Auto SMG. It houses six capacitor banks that surround its port, fit for an electron charge pack. While it's extremely fast firing, its shots are not as powerful as those of your standard laser rifle."
+	icon_state = "rcw"
+	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
 	item_state = "rcw"
 	fire_delay = 3
 	burst_size = 1

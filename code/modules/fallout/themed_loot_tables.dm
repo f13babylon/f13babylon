@@ -289,7 +289,7 @@
 		/obj/effect/spawner/bundle/f13/guns/p90 = 2,
 		/obj/effect/spawner/bundle/f13/guns/commando = 2,
 		/obj/item/gun/ballistic/revolver/revolver45/gunslinger = 1,
-		/obj/item/gun/energy/laser/solar = 1,
+		/obj/item/gun/energy/laser/pistol/pewpew = 1,
 		/obj/item/gun/energy/gammagun = 1,
 		)
 
@@ -312,13 +312,10 @@
 /obj/effect/spawner/lootdrop/weapons/experimental
 	name = "weaponspawner experimental"
 	loot = list(
-		/obj/item/gun/ballistic/automatic/g11 = 15,
-		/obj/effect/spawner/bundle/f13/needler = 10,
-		/obj/item/gun/energy/laser/rcw = 10,
-		/obj/item/gun/ballistic/automatic/m72 =10,
-		/obj/item/melee/f13powerfist/moleminer = 10,
-		/obj/item/melee/transforming/energy/axe/protonaxe = 10,
-		/obj/item/gun/ballistic/revolver/ballisticfist = 5,
+		/obj/item/gun/ballistic/automatic/m72 = 10,
+		/obj/item/gun/ballistic/revolver/m29/peacekeeper = 10,
+		/obj/item/encminigunpack = 10,
+		/obj/item/gun/ballistic/automatic/smg/p90 = 10,
 		)
 
 

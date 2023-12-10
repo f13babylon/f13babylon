@@ -1613,7 +1613,7 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 	var/list/channels_to_use = list()
 	for(var/I in world.TgsChatChannelInfo())
 		var/datum/tgs_chat_channel/channel = I
-		if(channel.tag == config_setting)
+		if(channel.custom_tag == config_setting)
 			channels_to_use += channel
 
 	if(length(channels_to_use))

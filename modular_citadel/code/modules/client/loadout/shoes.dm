@@ -30,7 +30,7 @@
 
 /datum/gear/shoes/pelt
 	name = "pelt boots"
-	path = /obj/item/clothing/shoes/f13/peltboots 
+	path = /obj/item/clothing/shoes/f13/peltboots
 
 /datum/gear/shoes/footcloths
 	name = "footcloths"
@@ -42,7 +42,7 @@
 
 /datum/gear/shoes/wraps
 	name = "golden leg wraps"
-	path = /obj/item/clothing/shoes/wraps 
+	path = /obj/item/clothing/shoes/wraps
 	cost = 2
 
 /datum/gear/shoes/wrapssilver
@@ -52,12 +52,12 @@
 
 /datum/gear/shoes/wrapsblue
 	name = "blue leg wraps"
-	path = /obj/item/clothing/shoes/wraps/blue 
+	path = /obj/item/clothing/shoes/wraps/blue
 	cost = 2
 
 /datum/gear/shoes/wrapsred
 	name = "red leg wraps"
-	path = /obj/item/clothing/shoes/wraps/red 
+	path = /obj/item/clothing/shoes/wraps/red
 	cost = 2
 
 /datum/gear/shoes/wornboots
@@ -72,9 +72,9 @@
 	name = "cowboy boots"
 	path = /obj/item/clothing/shoes/f13/cowboy
 
-/datum/gear/shoes/cowboy/obj/item/clothing/shoes/cowboyboots/black 
+/datum/gear/shoes/cowboy/obj/item/clothing/shoes/cowboyboots/black
 	name = "black cowboy boots"
-	path = /obj/item/clothing/shoes/cowboyboots/black 
+	path = /obj/item/clothing/shoes/cowboyboots/black
 
 /datum/gear/shoes/diesel
 	name = "male diesel boots"
@@ -91,7 +91,7 @@
 
 /datum/gear/shoes/military
 	name = "military boots"
-	path = /obj/item/clothing/shoes/f13/military 
+	path = /obj/item/clothing/shoes/f13/military
 	cost = 2
 
 /datum/gear/shoes/military/oldserviceboots
@@ -101,12 +101,12 @@
 
 /datum/gear/shoes/leather
 	name = "leather combat boots"
-	path = /obj/item/clothing/shoes/f13/military/leather 
+	path = /obj/item/clothing/shoes/f13/military/leather
 	cost = 2
 
 /datum/gear/shoes/desert
 	name = "desert combat boots"
-	path = /obj/item/clothing/shoes/f13/military/desert 
+	path = /obj/item/clothing/shoes/f13/military/desert
 	cost = 2
 
 /datum/gear/shoes/plated
@@ -122,7 +122,7 @@
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
 							"NCR Lieutenant",
-							"NCR Veteran Ranger", 
+							"NCR Veteran Ranger",
 							"NCR Ranger",
 							"NCR Medical Officer",
 							"NCR Sergeant First Class",
@@ -133,6 +133,7 @@
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
+							"NCR Conscript",
 							"NCR Rear Echelon",
 							"NCR Off-Duty"
 						)
@@ -143,4 +144,8 @@
 	cost = 2
 	subcategory = LOADOUT_SUBCATEGORY_SHOES_FACTIONS
 	restricted_desc = "KHAN"
-	restricted_roles = list("Great Khan")
+	restricted_roles = list("Khan Senior Enforcer",
+							"Khan Armorer",
+							"Khan Chemist",
+							"Khan Enforcer",
+							)

@@ -3,12 +3,13 @@
 	embedding = list(embed_chance=0, ignore_throwspeed_threshold=FALSE, fall_chance=0, embed_chance_turf_mod=0, payload = /obj/item/shrapnel)
 	custom_materials = list(/datum/material/iron=50)
 	damage = 35
-	armour_penetration = 0.8
+	armour_penetration = 0.2
 	damage_type = BURN
-	range = 30
+	range = 7
 	dismemberment = 0
 	ricochets_max = 0
 	ricochet_chance = 0
+	flag = "energy"
 	ricochet_incidence_leeway = 0
 	sharpness = SHARP_EDGED
 	wound_bonus = 60
@@ -30,6 +31,7 @@
 	dismemberment = 15//This is a HORRIBLE idea, but by god it'll be funny. - Carl
 	icon = 'icons/obj/shards.dmi'
 	icon_state = "tiny"
+	flag = "bullet"
 	armour_penetration = 1//Identical with this. :)
 	ricochets_max = 0
 	ricochet_chance = 0

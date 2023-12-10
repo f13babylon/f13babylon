@@ -293,29 +293,16 @@
 	name = "laser beam"
 	damage = 32
 	armour_penetration = 0.1//It's a concentrated beam of light.
-	wound_bonus = 20//Ditto.
-	bare_wound_bonus = 5//As above.
+	bare_wound_bonus = 18//As above.
 	hitscan = TRUE
 	tracer_type = /obj/effect/projectile/tracer/laser
 	muzzle_type = /obj/effect/projectile/muzzle/laser
 	impact_type = /obj/effect/projectile/impact/laser
 
-//plasma caster
-/obj/item/projectile/f13plasma/plasmacaster
-	name = "plasma bolt"
-	icon_state = "plasma_clot"
-	damage_type = BURN
-	damage = 25 //fucc you normies
-	armour_penetration = 0 //no AP, armor shouldnt have more than 20 resist against plasma unless its specialized
-	flag = "energy" //checks vs. energy protection
-	wound_bonus = 45 //being hit with plasma is horrific
-	eyeblur = 0
-	is_reflectable = TRUE
-	pixels_per_second =  TILES_TO_PIXELS(14)
-
 //Securitrons Beam
 /obj/item/projectile/beam/laser/pistol/ultraweak
 	damage = 15 //quantity over quality
+
 
 //Alrem's plasmacaster
 /obj/item/projectile/f13plasma/plasmacaster/arlem
@@ -337,8 +324,7 @@
 	name = "laser beam"
 	damage = 32
 	armour_penetration = 0.1//It's a concentrated beam of light.
-	wound_bonus = 20//Ditto.
-	bare_wound_bonus = 5//As above.
+	bare_wound_bonus = 18//As above.
 	hitscan = TRUE
 	tracer_type = /obj/effect/projectile/tracer/laser
 	muzzle_type = /obj/effect/projectile/muzzle/laser
@@ -370,7 +356,6 @@
 	name = "overcharged laser beam"
 	damage = 15
 	armour_penetration = 0.10
-	wound_bonus = 20
 	bare_wound_bonus = 5
 	hitscan = TRUE
 	light_color = LIGHT_COLOR_BLOOD_MAGIC
@@ -384,11 +369,19 @@
 	damage = 24
 	hitscan = TRUE
 	armour_penetration = 0.08//Less concentrated beam of light.
-	wound_bonus = 5//Ditto.
-	bare_wound_bonus = 2//As above.
+	bare_wound_bonus = 6//As above.
 	tracer_type = /obj/effect/projectile/tracer/laser
 	muzzle_type = /obj/effect/projectile/muzzle/laser
 	impact_type = /obj/effect/projectile/impact/laser
+
+/obj/item/projectile/beam/laser/pistol/hitscan/pewpew
+	name = "overtuned laser beam"
+	damage = 45
+	bare_wound_bonus = 25
+	armour_penetration = 0.45
+	tracer_type = /obj/effect/projectile/tracer/pulse
+	muzzle_type = /obj/effect/projectile/muzzle/pulse
+	impact_type = /obj/effect/projectile/impact/pulse
 
 /obj/item/projectile/beam/laser/pistol/hitscan/stun //compliance regulator beam
 	name = "compliance beam"
@@ -484,7 +477,7 @@
 	name = "tribeam laser"
 	damage = 25 //if all bullets connect, this will do 75.
 	hitscan = TRUE
-	bare_wound_bonus = 5 //tribeam is bad at wounding, as basically its only real downside
+	bare_wound_bonus = -5 //tribeam is bad at wounding, as basically its only real downside
 	tracer_type = /obj/effect/projectile/tracer/laser
 	muzzle_type = /obj/effect/projectile/muzzle/laser
 	impact_type = /obj/effect/projectile/impact/laser
@@ -493,41 +486,35 @@
 	name = "plasma bolt"
 	icon_state = "plasma_clot"
 	damage_type = BURN
-	damage = 22 //fucc you normies
+	damage = 24 //fucc you normies
 	armour_penetration = 0 //no AP, armor shouldnt have more than 20 resist against plasma unless its specialized
 	flag = "energy" //checks vs. energy protection
 	wound_bonus = 45 //being hit with plasma is horrific
 	eyeblur = 0
 	is_reflectable = TRUE
-	pixels_per_second =  TILES_TO_PIXELS(14)
+	supereffective_faction = list("hostile", "ant", "supermutant", "deathclaw", "cazador", "raider", "china", "gecko", "wastebot", "radscorpion")
+	supereffective_damage = 36
+	pixels_per_second =  TILES_TO_PIXELS(20)
 
-/obj/item/projectile/plasmacarbine //Plasma carbine
-	name = "plasma bolt"
-	icon_state = "plasma_clot"
-	damage_type = BURN
-	damage = 35
-	flag = "energy" //checks vs. energy protection
-	wound_bonus = 0 //let's not make the carbine horrifying
-	eyeblur = 0
-	is_reflectable = TRUE
-	pixels_per_second = TILES_TO_PIXELS(10)
+/obj/item/projectile/f13plasma/caster
+	name = "caster bolt"
+	damage = 20 //rapid fire
+	wound_bonus = 35 //being hit with plasma is horrific
+/obj/item/projectile/f13plasma/carbine //Plasma carbine
+	pixels_per_second = TILES_TO_PIXELS(15)
 
 /obj/item/projectile/f13plasma/repeater //Plasma repeater
 	name = "plasma stream"
 	icon_state = "plasma_clot"
 	damage_type = BURN
 	damage = 35
-	flag = "energy" //checks vs. energy protection
-	eyeblur = 0
-	is_reflectable = FALSE
 
 /obj/item/projectile/f13plasma/repeater/mining
 	name = "mining plasma stream"
 	icon_state = "plasma_clot"
 	damage_type = BURN
-	damage = 35
-	flag = "energy"
-	eyeblur = 0
+	damage = 5
+	wound_bonus = 5
 	is_reflectable = FALSE
 
 /obj/item/projectile/f13plasma/repeater/mining/on_hit(atom/target)
@@ -537,13 +524,14 @@
 		M.gets_drilled(firer)
 
 /obj/item/projectile/f13plasma/pistol //Plasma pistol
-	damage = 18
+	damage = 20
+	supereffective_damage = 20
 
 /obj/item/projectile/f13plasma/pistol/worn
-	damage = 16
+	damage = 18
 
 /obj/item/projectile/f13plasma/pistol/glock //Glock (streamlined plasma pistol)
-	damage = 20
+	damage = 22
 
 /obj/item/projectile/f13plasma/scatter //Multiplas, fires 3 shots, will melt you
 	damage = 25
@@ -602,7 +590,6 @@
 
 /obj/item/projectile/beam/laser/aer14/hitscan
 	damage = 36
-	wound_bonus = 25
 	armour_penetration = 0.2
 	hitscan = TRUE
 	tracer_type = /obj/effect/projectile/tracer/xray
@@ -629,7 +616,6 @@
 /obj/item/projectile/beam/laser/aer12/hitscan
 	name = "laser beam"
 	damage = 34
-	wound_bonus = 20
 	armour_penetration = 0.15
 	hitscan = TRUE
 	tracer_type = /obj/effect/projectile/tracer/pulse
@@ -653,7 +639,6 @@
 /obj/item/projectile/beam/laser/wattz2k/hitscan
 	name = "sniper laser bolt"
 	damage = 38
-	wound_bonus = 20
 	bare_wound_bonus = 20
 	armour_penetration = 0.2
 	tracer_type = /obj/effect/projectile/tracer/heavy_laser
@@ -665,19 +650,6 @@
 	name = "laser bolt"
 	damage = 40
 	armour_penetration = 0.6
-
-/obj/item/projectile/casterplasma //FNV plasma caster
-	name = "plasma bolt"
-	icon_state = "plasma_clot"
-	damage_type = BURN
-	damage = 26 //fucc you normies
-	armour_penetration = 0 //no AP, armor shouldnt have more than 20 resist against plasma unless its specialized
-	flag = "energy" //checks vs. energy protection
-	wound_bonus = 45 //being hit with plasma is horrific
-	eyeblur = 0
-	is_reflectable = TRUE
-	pixels_per_second =  TILES_TO_PIXELS(16) //same as 40mm grenade
-
 
 
 // BETA // Obsolete

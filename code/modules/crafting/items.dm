@@ -13,11 +13,12 @@
 	desc = "Detects burried salvage in a 5 tile radius."
 	icon = 'icons/fallout/objects/items.dmi'
 	icon_state = "metaldetect"
+	var/range = 5
 
 /obj/item/metaldetector/attack_self(mob/user)
 	. = ..()
 	var/turf/t = get_turf(src)
-	salvage_scan_pulse(t, 5)
+	salvage_scan_pulse(t, range)
 
 /obj/item/metaldetector/proc/salvage_scan_pulse(turf/T, range = world.view)
 	var/list/salvage = list()
@@ -30,6 +31,11 @@
 			if(oldC)
 				qdel(oldC)
 			new /obj/effect/temp_visual/detector_overlay(M)
+
+/obj/item/metaldetector/cyborg
+	name = "integrated metal detector"
+	desc = "Detects burried salvage in a 7 tile radius."
+	range = 7
 
 /obj/effect/temp_visual/detector_overlay
 	plane = FULLSCREEN_PLANE
@@ -319,4 +325,3 @@ GLOBAL_LIST_INIT(blueprint_fluff, list(
 				/obj/item/advanced_crafting_components/lenses,
 				/obj/item/advanced_crafting_components/flux,
 				/obj/item/blueprint/research)
-

@@ -44,7 +44,6 @@
 /obj/structure/chair/f13chair2{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/cum,
 /obj/effect/decal/remains/human,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/building)
@@ -3032,6 +3031,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"cUE" = (
+/obj/structure/car/rubbish2,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
+/area/f13/wasteland/rocksprings)
 "cUF" = (
 /obj/machinery/vending/boozeomat,
 /obj/effect/decal/cleanable/dirt{
@@ -10032,6 +10037,12 @@
 	icon_state = "greenrusty"
 	},
 /area/f13/building)
+"kdB" = (
+/obj/structure/car/rubbish4,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
+/area/f13/wasteland/rocksprings)
 "kdH" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -11280,10 +11291,7 @@
 	},
 /area/f13/building)
 "lwU" = (
-/obj/structure/barricade/wooden/strong{
-	icon_state = "boarded";
-	opacity = 1
-	},
+/obj/structure/simple_door/bunker/glass,
 /turf/open/floor/plasteel/barber{
 	icon_state = "plating"
 	},
@@ -11861,10 +11869,7 @@
 	},
 /area/f13/caves)
 "mdG" = (
-/obj/structure/barricade/wooden/strong{
-	icon_state = "boarded";
-	opacity = 1
-	},
+/obj/structure/simple_door/bunker/glass,
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/building)
 "meE" = (
@@ -14388,6 +14393,12 @@
 	icon_state = "greendirtysolid"
 	},
 /area/f13/building)
+"ouo" = (
+/obj/structure/car/rubbish3,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain2bottom"
+	},
+/area/f13/wasteland/rocksprings)
 "ouy" = (
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
@@ -16457,6 +16468,12 @@
 	icon_state = "common-broken4"
 	},
 /area/f13/building)
+"quO" = (
+/obj/structure/car/rubbish1,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
+/area/f13/wasteland/rocksprings)
 "quY" = (
 /turf/open/indestructible/ground/outside/dirt/harsh/corner{
 	dir = 8
@@ -21683,12 +21700,12 @@
 /turf/open/indestructible/ground/outside/dirt/harsh,
 /area/f13/wasteland/rocksprings)
 "vvH" = (
-/obj/structure/barricade/wooden/strong{
-	icon_state = "boarded";
-	opacity = 1
+/obj/effect/decal/marking,
+/obj/structure/car/rubbish4,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain0"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/building)
+/area/f13/wasteland/rocksprings)
 "vvZ" = (
 /obj/structure/fence/wooden{
 	dir = 4;
@@ -23077,6 +23094,7 @@
 	icon_state = "floor5";
 	pixel_x = -17
 	},
+/obj/structure/car/rubbish1,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 4;
 	icon_state = "outerturn"
@@ -24439,6 +24457,13 @@
 /obj/effect/spawner/lootdrop/f13/cash_legion_low,
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/legion)
+"ydW" = (
+/obj/structure/car/rubbish4,
+/turf/open/indestructible/ground/outside/road{
+	dir = 8;
+	icon_state = "horizontalinnermain2left"
+	},
+/area/f13/wasteland/rocksprings)
 "yej" = (
 /obj/item/storage/toolbox/mechanical,
 /obj/effect/decal/cleanable/dirt,
@@ -46738,7 +46763,7 @@ peo
 tEy
 frF
 kSK
-gfv
+ydW
 tjk
 peo
 cwx
@@ -55882,7 +55907,7 @@ gos
 hwx
 hwx
 hwx
-hwx
+hoG
 mkw
 jEL
 jEL
@@ -56135,12 +56160,12 @@ bWo
 dKc
 nUF
 nUF
-gos
+ouo
 edx
 hwx
 hwx
 hwx
-jEL
+quO
 jEL
 jEL
 gpA
@@ -57934,7 +57959,7 @@ bWo
 dKc
 tPI
 tPI
-tPI
+vvH
 tPI
 hwx
 hwx
@@ -58192,7 +58217,7 @@ olf
 hwx
 hwx
 yhR
-hwx
+jzi
 hwx
 nbp
 hwx
@@ -71308,7 +71333,7 @@ jEL
 jEL
 qYz
 jEL
-vQb
+cUE
 jEL
 hiG
 kcs
@@ -71822,7 +71847,7 @@ eCA
 jEL
 tKY
 jEL
-jEL
+kdB
 jEL
 xwn
 kcs
@@ -72078,7 +72103,7 @@ jEL
 bHt
 jEL
 tKY
-jEL
+mkw
 jEL
 jEL
 hiG
@@ -72332,7 +72357,7 @@ hgP
 fee
 efV
 jEL
-jEL
+mkw
 jEL
 tKY
 jEL
@@ -80093,8 +80118,8 @@ tgY
 xsC
 drm
 drm
-vvH
-vvH
+lzs
+lzs
 drm
 drm
 drm
@@ -85419,7 +85444,7 @@ hwx
 hwx
 hwx
 hwx
-tPI
+vvH
 tPI
 kcs
 hgP

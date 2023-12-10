@@ -114,7 +114,7 @@
 
 
 /datum/species/ghoul/glowing
-	name = "Glowing Ghoul"
+	name = "Glowing One"
 	id = "glowing ghoul"
 	limbs_id = "glowghoul"
 	armor = -30

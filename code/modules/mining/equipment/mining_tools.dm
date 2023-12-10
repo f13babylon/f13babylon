@@ -146,7 +146,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	force = 8
 	tool_behaviour = TOOL_SHOVEL
-	toolspeed = 0.1 //Can only dig ash and thats about it, out classed by the picks and drills no more!
+	toolspeed = 0.1
 	usesound = 'sound/effects/shovel_dig.ogg'
 	throwforce = 4
 	item_state = "shovel"
