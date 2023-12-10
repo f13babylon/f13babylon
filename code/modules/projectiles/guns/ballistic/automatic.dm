@@ -268,7 +268,7 @@
 	autofire_shot_delay = 1
 	slowdown = 0.3
 	spread = 18
-	extra_damage = -2
+	extra_damage = -2	//Results in 14 damage
 
 //10mm SMG			Keywords: 10mm, Dual-wieldable, 30 Rounds
 /obj/item/gun/ballistic/automatic/smg/smg10mm
@@ -319,7 +319,7 @@
 	spread = 13
 	slowdown = 0.2
 	extra_damage = -2	//Results in 17 damage
-	extra_penetration = -0.15	//Results in 30% AP
+	extra_penetration = -0.15	//Results in 30 AP
 
 //14mm SMG 			Keywords: 14mm, AP, 21/27 rounds
 /obj/item/gun/ballistic/automatic/smg/smg14mm
@@ -335,7 +335,7 @@
 	autofire_shot_delay = 2.15
 	spread = 12
 	recoil = 0.85
-	extra_penetration = 0.05
+	extra_penetration = 0.05	//Results in 5 AP
 
 ////////////
 //CARBINES//
