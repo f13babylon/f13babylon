@@ -220,7 +220,7 @@
 	mag_type = /obj/item/ammo_box/magazine/msmg22
 	autofire_shot_delay = 1
 	slowdown = 0.25
-	spread = 18
+	spread = 25
 	suppressed = 1
 	can_unsuppress = TRUE	//Without can_suppress only results in a better examine message
 
@@ -235,6 +235,7 @@
 	autofire_shot_delay = 1
 	slowdown = 0.12
 	spread = 20
+	extra_damage = -2	//Results in 14 damage
 
 //MP5			Keywords: 9mm, Suppressed, AP, Accurate, 32/50 Rounds
 /obj/item/gun/ballistic/automatic/smg/mp5
@@ -264,7 +265,7 @@
 	mag_type = /obj/item/ammo_box/magazine/mcalico
 	autofire_shot_delay = 1
 	slowdown = 0.3
-	spread = 18
+	spread = 16
 
 //10mm SMG			Keywords: 10mm, Dual-wieldable, 30 Rounds
 /obj/item/gun/ballistic/automatic/smg/smg10mm
