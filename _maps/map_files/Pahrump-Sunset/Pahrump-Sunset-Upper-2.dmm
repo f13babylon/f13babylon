@@ -249,11 +249,6 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/wasteland)
-"ld" = (
-/turf/open/indestructible/ground/outside/roof{
-	icon_state = "floorrustysolid"
-	},
-/area/f13/wasteland)
 "lh" = (
 /obj/machinery/door/unpowered/securedoor/mayoral_door,
 /turf/open/floor/wood/wood_wide,
@@ -611,12 +606,6 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building/mall)
-"CP" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/indestructible/ground/outside/roof{
-	icon_state = "floorrustysolid"
-	},
-/area/f13/wasteland)
 "Dh" = (
 /obj/structure/fence/wooden{
 	pixel_x = -18
@@ -4571,11 +4560,11 @@ lb
 Mi
 FC
 SK
-ld
+VU
 KJ
 JW
 SK
-ld
+VU
 JW
 FC
 SK
@@ -4587,11 +4576,11 @@ SK
 KJ
 oB
 SK
-ld
+VU
 SK
 SK
 SK
-ld
+VU
 SK
 KJ
 Mi
@@ -4828,11 +4817,11 @@ lb
 FC
 SK
 SK
-ld
+VU
 SK
 Io
 SK
-ld
+VU
 SK
 KJ
 FC
@@ -4844,11 +4833,11 @@ SK
 SK
 SK
 SK
-ld
+VU
 SK
 SK
 SK
-ld
+VU
 SK
 SK
 FC
@@ -5856,11 +5845,11 @@ ya
 SK
 SK
 SK
-ld
+VU
 SK
 SK
 SK
-ld
+VU
 SK
 SK
 SK
@@ -5872,11 +5861,11 @@ Io
 SK
 SK
 SK
-ld
+VU
 SK
 KJ
 oB
-ld
+VU
 SK
 SK
 SK
@@ -6113,11 +6102,11 @@ lb
 bF
 SK
 SK
-ld
+VU
 KJ
 JW
 FC
-ld
+VU
 SK
 SK
 FC
@@ -6129,11 +6118,11 @@ SK
 SK
 SK
 JW
-ld
+VU
 SK
 FC
 SK
-ld
+VU
 SK
 SK
 SK
@@ -10482,7 +10471,7 @@ ya
 SK
 Io
 JW
-ld
+VU
 SK
 SK
 kn
@@ -10498,11 +10487,11 @@ xk
 KJ
 oB
 SK
-ld
+VU
 FC
 xt
 SK
-ld
+VU
 SK
 SK
 KJ
@@ -10739,7 +10728,7 @@ ya
 SK
 FC
 SK
-ld
+VU
 SK
 SK
 oB
@@ -10755,11 +10744,11 @@ xk
 KJ
 FC
 oB
-CP
+rX
 SK
 SK
 FC
-ld
+VU
 SK
 SK
 FC
@@ -11767,7 +11756,7 @@ lb
 FC
 SK
 JW
-ld
+VU
 SK
 SK
 oB
@@ -11783,11 +11772,11 @@ Mi
 KJ
 oB
 SK
-ld
+VU
 SK
 FC
 SK
-ld
+VU
 SK
 KJ
 SK
@@ -12024,7 +12013,7 @@ ya
 SK
 oB
 SK
-ld
+VU
 SK
 qt
 SK
@@ -12040,11 +12029,11 @@ oB
 BO
 SK
 SK
-ld
+VU
 SK
 SK
 SK
-ld
+VU
 Mi
 Iv
 SK

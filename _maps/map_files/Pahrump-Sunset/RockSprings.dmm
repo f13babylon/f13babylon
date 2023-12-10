@@ -593,13 +593,6 @@
 	icon_state = "dirtcorner"
 	},
 /area/f13/wasteland/rocksprings)
-"azo" = (
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/indestructible/ground/outside/dirt/harsh{
-	dir = 1;
-	icon_state = "dirt"
-	},
-/area/f13/wasteland/rocksprings)
 "azr" = (
 /obj/structure/closet/crate/large,
 /turf/open/floor/plasteel/f13/stone/rugged,
@@ -638,7 +631,6 @@
 /turf/open/indestructible/ground/outside/dirt/harsh,
 /area/f13/wasteland/rocksprings)
 "aBw" = (
-/obj/effect/spawner/lootdrop/trash,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -821,8 +813,6 @@
 /area/f13/building)
 "aLr" = (
 /obj/structure/closet/crate/bin/trashbin,
-/obj/effect/spawner/lootdrop/trash,
-/obj/effect/spawner/lootdrop/trash,
 /obj/structure/camera_assembly{
 	dir = 8
 	},
@@ -1228,7 +1218,6 @@
 /area/f13/building)
 "bjw" = (
 /obj/structure/table/reinforced,
-/obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/building)
 "bjP" = (
@@ -1956,13 +1945,6 @@
 /obj/structure/rack/shelf_metal,
 /turf/open/floor/plasteel/f13{
 	icon_state = "greendirtysolid"
-	},
-/area/f13/building)
-"bRW" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/f13{
-	icon_state = "yellowrustychess"
 	},
 /area/f13/building)
 "bSi" = (
@@ -2830,13 +2812,6 @@
 	},
 /turf/open/floor/carpet/black,
 /area/f13/legion)
-"cKQ" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/f13/wood,
-/area/f13/building)
 "cLm" = (
 /obj/structure/chair/f13chair2{
 	dir = 1
@@ -2943,10 +2918,6 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/legion)
-"cPV" = (
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/indestructible/ground/outside/dirt/harsh,
-/area/f13/wasteland/rocksprings)
 "cPX" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
@@ -4855,7 +4826,6 @@
 /area/f13/wasteland/rocksprings)
 "eGV" = (
 /obj/structure/closet/crate/bin/trashbin,
-/obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/building)
 "eGZ" = (
@@ -5206,12 +5176,6 @@
 	icon_state = "bar"
 	},
 /area/f13/building)
-"fbl" = (
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticaloutermain0"
-	},
-/area/f13/caves)
 "fby" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -5384,7 +5348,6 @@
 /turf/open/floor/plasteel/cult,
 /area/f13/building)
 "fhR" = (
-/obj/effect/spawner/lootdrop/trash,
 /obj/structure/simple_door/glass{
 	name = "Federal Penetentiary"
 	},
@@ -6020,12 +5983,6 @@
 /obj/effect/spawner/lootdrop/f13/armor/tier1,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"fPD" = (
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "horizontalbottomborderbottom0"
-	},
-/area/f13/wasteland/rocksprings)
 "fQB" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 4;
@@ -6523,10 +6480,6 @@
 	},
 /turf/open/floor/plasteel/cult,
 /area/f13/building)
-"gsX" = (
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/indestructible/ground/outside/desert/harsh,
-/area/f13/wasteland/rocksprings)
 "gtE" = (
 /obj/structure/fence/corner{
 	dir = 8
@@ -6590,10 +6543,6 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland/rocksprings)
-"gxU" = (
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "gyk" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -7284,11 +7233,6 @@
 	},
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/legion)
-"hgH" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/f13/wood,
-/area/f13/building)
 "hgP" = (
 /turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
@@ -7461,8 +7405,6 @@
 	dir = 5
 	},
 /obj/structure/closet/crate/bin/trashbin,
-/obj/effect/spawner/lootdrop/trash,
-/obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/building)
 "hoG" = (
@@ -8695,10 +8637,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/building)
-"iBR" = (
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/building)
 "iBZ" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/mountain,
@@ -8815,12 +8753,6 @@
 	name = "salvaged wall"
 	},
 /area/f13/building)
-"iGX" = (
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "verticalinnermain0"
-	},
-/area/f13/wasteland/rocksprings)
 "iHa" = (
 /obj/structure/bed/old,
 /turf/open/indestructible/ground/outside/dirt/harsh,
@@ -9654,12 +9586,6 @@
 	icon_state = "horizontalbottomborderbottom3"
 	},
 /area/f13/wasteland/rocksprings)
-"jIP" = (
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "verticalinnermain0"
-	},
-/area/f13/caves)
 "jJQ" = (
 /obj/machinery/door/poddoor/preopen{
 	armor = list("melee"=70,"bullet"=100,"laser"=100,"energy"=100,"bomb"=65,"bio"=100,"rad"=100,"fire"=100,"acid"=70);
@@ -9682,10 +9608,6 @@
 "jLa" = (
 /turf/closed/wall/f13/sunset/brick_small_dark,
 /area/f13/legion)
-"jLe" = (
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/f13/wood,
-/area/f13/building)
 "jLk" = (
 /obj/effect/overlay/turfs/sidewalk{
 	dir = 4
@@ -10750,10 +10672,6 @@
 	icon_state = "savannah6"
 	},
 /area/f13/building)
-"kSg" = (
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/indestructible/ground/outside/water,
-/area/f13/wasteland/rocksprings)
 "kSl" = (
 /obj/structure/fence/wooden{
 	dir = 4
@@ -10824,18 +10742,6 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/caves)
-"kVt" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/f13{
-	icon_state = "bluedirtychess2"
-	},
-/area/f13/building)
 "kVH" = (
 /mob/living/simple_animal/hostile/raider/ranged/boss{
 	name = "Jimmy Razor"
@@ -11020,7 +10926,6 @@
 /area/f13/building)
 "ljd" = (
 /obj/structure/closet/cabinet,
-/obj/effect/spawner/lootdrop/clothing_low,
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -11796,15 +11701,6 @@
 /obj/structure/flora/tree/jungle/small,
 /turf/open/indestructible/ground/outside/dirt/harsh,
 /area/f13/wasteland/rocksprings)
-"lXa" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/f13{
-	icon_state = "bluedirtychess2"
-	},
-/area/f13/building)
 "lXB" = (
 /obj/structure/camera_assembly{
 	dir = 10
@@ -13280,8 +13176,6 @@
 "ntR" = (
 /obj/structure/closet/crate/trashcart,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
-/obj/effect/spawner/lootdrop/trash,
-/obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland/rocksprings)
 "nuj" = (
@@ -15279,7 +15173,6 @@
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_7"
 	},
-/obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
 "pnd" = (
@@ -17983,12 +17876,6 @@
 	icon_state = "greenrusty"
 	},
 /area/f13/building)
-"rPb" = (
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/indestructible/ground/outside/dirt/harsh{
-	icon_state = "dirt"
-	},
-/area/f13/wasteland/rocksprings)
 "rPW" = (
 /turf/closed/mineral/random/low_chance,
 /area/f13/caves)
@@ -18373,13 +18260,6 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/building)
-"sjH" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/f13{
-	icon_state = "floordirty"
-	},
-/area/f13/building)
 "sjR" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
@@ -18634,10 +18514,6 @@
 	icon_state = "wide_light-broken2"
 	},
 /area/f13/wasteland/rocksprings)
-"suz" = (
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
 "suQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
@@ -19415,7 +19291,6 @@
 "tew" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/cash_legion_low,
-/obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/legion)
 "teV" = (
@@ -19780,11 +19655,6 @@
 	icon_state = "bluerustysolid"
 	},
 /area/f13/legion)
-"tzj" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/building)
 "tzw" = (
 /mob/living/simple_animal/radstag,
 /turf/open/indestructible/ground/outside/desert/harsh,
@@ -21612,13 +21482,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/legion)
-"vrH" = (
-/obj/effect/spawner/lootdrop/trash,
-/obj/machinery/door/poddoor/shutters/old/preopen{
-	name = "General Population Riot Shutters"
-	},
-/turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
 "vrS" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -23120,10 +22983,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
 /area/f13/building)
-"wLD" = (
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/plasteel/cafeteria,
-/area/f13/building)
 "wLH" = (
 /obj/effect/decal/cleanable/blood/old,
 /mob/living/simple_animal/hostile/raider/junker{
@@ -23614,16 +23473,6 @@
 	icon_state = "savannah7"
 	},
 /area/f13/wasteland/rocksprings)
-"xnX" = (
-/obj/structure/table/reinforced,
-/obj/structure/barricade/bars{
-	max_integrity = 800;
-	name = "strong metal bars";
-	obj_integrity = 800
-	},
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/building)
 "xnY" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/structure/flora/grass/wasteland{
@@ -23827,12 +23676,6 @@
 /obj/structure/decoration/rag,
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/legion)
-"xzq" = (
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/f13{
-	icon_state = "bluedirtychess2"
-	},
-/area/f13/building)
 "xzy" = (
 /obj/machinery/smartfridge/bottlerack/alchemy_rack,
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -24404,11 +24247,6 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland/rocksprings)
-"ycs" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "ycA" = (
 /obj/effect/overlay/junk/toilet{
 	dir = 8
@@ -28331,7 +28169,7 @@ wlX
 rPW
 rPW
 rPW
-kSg
+mTN
 mTN
 mTN
 rfA
@@ -28886,7 +28724,7 @@ hZH
 hZH
 wzK
 bwJ
-bRW
+bwJ
 wVp
 hZH
 hgP
@@ -31702,7 +31540,7 @@ upX
 rYr
 rRu
 sIV
-gsX
+hgP
 pPg
 paT
 paT
@@ -32448,7 +32286,7 @@ hgP
 hgP
 mTN
 rPW
-kSg
+mTN
 mTN
 rfA
 rfA
@@ -33245,7 +33083,7 @@ hZH
 kOr
 adB
 tFx
-hgH
+tFx
 hZH
 lof
 gct
@@ -36335,7 +36173,7 @@ hgP
 aIl
 paT
 paT
-azo
+qWV
 hgP
 hgP
 rTl
@@ -43532,7 +43370,7 @@ hgP
 iAF
 toe
 paT
-cPV
+paT
 paT
 paT
 qWV
@@ -47342,7 +47180,7 @@ rSn
 rPW
 lOb
 iBZ
-ycs
+iBZ
 hIL
 lOb
 lOb
@@ -48361,7 +48199,7 @@ rPW
 rPW
 rPW
 lOb
-ycs
+iBZ
 knC
 lOb
 hqA
@@ -48399,14 +48237,14 @@ rPW
 rPW
 oXV
 bOx
-jLe
+coX
 vHn
 coX
 vHn
 cGg
 qcs
 pWa
-jLe
+coX
 cGg
 pWa
 oXV
@@ -49697,7 +49535,7 @@ dOp
 dOp
 dOp
 dOp
-jIP
+dOp
 dOp
 wIO
 dOp
@@ -50075,7 +49913,7 @@ qzU
 (100,1,1) = {"
 qzU
 npk
-jIP
+dOp
 dOp
 dOp
 dOp
@@ -50196,7 +50034,7 @@ gbi
 gbi
 xFN
 dOp
-jIP
+dOp
 xtx
 cYN
 npk
@@ -50361,7 +50199,7 @@ hwx
 hwx
 hwx
 hwx
-iGX
+hwx
 hwx
 hwx
 hwx
@@ -50629,8 +50467,8 @@ oIr
 gKs
 dJz
 aXD
-iGX
-iGX
+hwx
+hwx
 dJz
 aXD
 aXD
@@ -51123,7 +50961,7 @@ gos
 hwx
 hwx
 hwx
-iGX
+hwx
 hwx
 hwx
 hwx
@@ -51555,7 +51393,7 @@ hwx
 hwx
 hwx
 hwx
-iGX
+hwx
 hwx
 hwx
 hwx
@@ -51594,7 +51432,7 @@ hwx
 hwx
 hwx
 hwx
-iGX
+hwx
 hwx
 hwx
 hwx
@@ -51625,7 +51463,7 @@ hwx
 hwx
 hwx
 hwx
-iGX
+hwx
 hwx
 hwx
 hwx
@@ -51724,7 +51562,7 @@ hwx
 hwx
 hwx
 hwx
-iGX
+hwx
 hwx
 hwx
 hwx
@@ -51747,7 +51585,7 @@ mIR
 dOp
 gbi
 dOp
-jIP
+dOp
 dOp
 dOp
 dOp
@@ -51766,7 +51604,7 @@ jEL
 hwx
 hwx
 hwx
-iGX
+hwx
 hwx
 hwx
 wWC
@@ -52057,7 +51895,7 @@ hwx
 hwx
 hwx
 hwx
-iGX
+hwx
 hwx
 hwx
 mVe
@@ -52080,7 +51918,7 @@ hwx
 hwx
 hwx
 hwx
-iGX
+hwx
 hwx
 hwx
 hwx
@@ -52510,7 +52348,7 @@ uMy
 uMy
 uMy
 uMy
-fbl
+uMy
 uMy
 uMy
 uMy
@@ -53034,7 +52872,7 @@ cNI
 gbi
 dOp
 gbi
-jIP
+dOp
 rPW
 rPW
 rPW
@@ -53241,7 +53079,7 @@ rPW
 rPW
 rPW
 iBZ
-ycs
+iBZ
 rPW
 haf
 lOb
@@ -53278,7 +53116,7 @@ oXV
 fIY
 kSw
 fYd
-xzq
+lKu
 fIY
 kSw
 fYd
@@ -53536,7 +53374,7 @@ lKu
 lgz
 lgz
 mYH
-kVt
+mYH
 mYH
 lgz
 lgz
@@ -53796,7 +53634,7 @@ lKu
 lKu
 lKu
 lgz
-lXa
+lgz
 lgz
 lgz
 rHK
@@ -53846,7 +53684,7 @@ mkD
 oet
 mwo
 iGr
-sjH
+iGr
 iGr
 mTX
 vGk
@@ -55811,7 +55649,7 @@ rPW
 rPW
 rPW
 iBZ
-ycs
+iBZ
 rPW
 rPW
 rPW
@@ -58515,7 +58353,7 @@ lof
 gct
 paT
 paT
-cPV
+paT
 paT
 paT
 qWV
@@ -58742,7 +58580,7 @@ tKY
 jEL
 jEL
 jEL
-fPD
+hiG
 kcs
 hgP
 hgP
@@ -62646,7 +62484,7 @@ hZH
 rfA
 rfA
 lOb
-gxU
+lOb
 lOb
 lOb
 rfA
@@ -66606,7 +66444,7 @@ hgP
 hgP
 hgP
 hgP
-rPb
+pPg
 paT
 paT
 qWV
@@ -77812,7 +77650,7 @@ suX
 hDD
 vSA
 vhd
-tzj
+vSA
 miO
 suX
 suX
@@ -78992,7 +78830,7 @@ hgP
 hgP
 xql
 hgP
-gsX
+hgP
 sJx
 kJM
 fuH
@@ -79360,7 +79198,7 @@ uFM
 hHa
 wZy
 xWh
-tzj
+vSA
 vSA
 vhd
 xsC
@@ -79605,7 +79443,7 @@ xsC
 ani
 vhd
 vhd
-iBR
+vhd
 vhd
 vhd
 vhd
@@ -79768,7 +79606,7 @@ hgP
 psq
 pdc
 hgP
-gsX
+hgP
 hgP
 pHb
 hgP
@@ -80537,7 +80375,7 @@ wfR
 vft
 kCG
 mMS
-suz
+bWo
 png
 bWo
 bWo
@@ -80903,7 +80741,7 @@ xsC
 fvJ
 vSA
 vhd
-iBR
+vhd
 uge
 xsC
 tgY
@@ -81061,7 +80899,7 @@ bTC
 jRg
 aMS
 bWo
-suz
+bWo
 nWm
 kCG
 aah
@@ -81324,7 +81162,7 @@ kCG
 uWY
 bWo
 bWo
-suz
+bWo
 qfd
 kCG
 fee
@@ -81827,7 +81665,7 @@ wpM
 bWo
 bWo
 png
-suz
+bWo
 bTC
 kCG
 kCG
@@ -82081,13 +81919,13 @@ kCG
 aYb
 bWo
 png
-suz
+bWo
 bWo
 wpM
 wfR
 vft
 kCG
-suz
+bWo
 bWo
 bWo
 miQ
@@ -82187,7 +82025,7 @@ qiB
 xsC
 dLE
 vSA
-iBR
+vhd
 nnr
 uhI
 xsC
@@ -82330,7 +82168,7 @@ kCG
 kCG
 kCG
 ssm
-vrH
+ssm
 kCG
 kCG
 kCG
@@ -82597,13 +82435,13 @@ bWo
 bWo
 bWo
 bWo
-suz
+bWo
 bWo
 bWo
 kCG
 bWo
 bWo
-suz
+bWo
 bWo
 kCG
 rQi
@@ -83107,7 +82945,7 @@ ycR
 wxt
 kCG
 bWo
-suz
+bWo
 epy
 yeA
 bWo
@@ -83138,7 +82976,7 @@ hwx
 hwx
 hwx
 hwx
-iGX
+hwx
 hwx
 hwx
 hwx
@@ -83614,7 +83452,7 @@ kCG
 nde
 bWo
 png
-suz
+bWo
 bWo
 kCG
 wZW
@@ -84169,7 +84007,7 @@ hwx
 nbp
 hwx
 hwx
-iGX
+hwx
 hwx
 hwx
 hwx
@@ -84838,7 +84676,7 @@ hgP
 hgP
 hgP
 aDQ
-cKQ
+cGu
 oXV
 ers
 oXV
@@ -85418,14 +85256,14 @@ vWl
 xRC
 ktf
 bWo
-suz
+bWo
 icL
 qBd
-wLD
 qBd
 qBd
 qBd
-wLD
+qBd
+qBd
 qBd
 qBd
 csI
@@ -85686,7 +85524,7 @@ qBd
 owb
 owb
 qBd
-xnX
+srK
 mmo
 kfd
 kCG
