@@ -103,7 +103,7 @@
 /obj/item/clothing/shoes/f13/military/desert
 	name = "desert combat boots"
 	desc = "An old pair of desert combat boots. This one seems to have a tighter fit, and a padded interior."
-	icon_state = "erin_boot"
+	icon_state = "laced"
 	item_state = "erin_boot"
 
 /obj/item/clothing/shoes/f13/military/oldserviceboots
