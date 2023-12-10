@@ -1050,7 +1050,7 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
-//grease gun
+//Grease gun
 /datum/crafting_recipe/greasegun
 	name = "Grease Gun"
 	result = /obj/item/gun/ballistic/automatic/smg/greasegun
@@ -1215,9 +1215,9 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
-//smg22
+//.22 LR SMG
 /datum/crafting_recipe/smg22
-	name = "2"
+	name = ".22 LR SMG"
 	result = /obj/item/gun/ballistic/automatic/smg/smg22
 	reqs = list(/obj/item/stack/sheet/metal = 15,
 				/obj/item/stack/crafting/metalparts = 15,

@@ -1441,7 +1441,7 @@
 	)
 
 /obj/effect/spawner/bundle/f13/calico
-	name = "Calico and ammo spawner"
+	name = "calico and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/smg/calico,
 				/obj/item/ammo_box/magazine/mcalico
