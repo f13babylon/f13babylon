@@ -398,6 +398,8 @@
 	return target.attack_animal(src)
 
 /mob/living/simple_animal/hostile/proc/Aggro()
+	if(ckey)
+		return TRUE
 	vision_range = aggro_vision_range
 	if(target && LAZYLEN(emote_taunt) && prob(taunt_chance))
 		INVOKE_ASYNC(src, .proc/emote, "me", EMOTE_VISIBLE, "[pick(emote_taunt)] at [target].")
@@ -430,13 +432,12 @@
 	playsound(loc, 'sound/machines/chime.ogg', 50, 1, -1)
 	for(var/mob/living/simple_animal/hostile/M in oview(distance, targets_from))
 		if(faction_check_mob(M, TRUE))
-			if(M.AIStatus == AI_OFF || M.stat == DEAD)
+			if(M.AIStatus == AI_OFF || M.stat == DEAD || M.ckey)
 				return
-			else
-				M.Goto(src,M.move_to_delay,M.minimum_distance)
+			M.Goto(src,M.move_to_delay,M.minimum_distance)
 
 /mob/living/simple_animal/hostile/proc/CheckFriendlyFire(atom/A)
-	if(check_friendly_fire)
+	if(check_friendly_fire && !ckey)
 		for(var/turf/T in getline(src,A)) // Not 100% reliable but this is faster than simulating actual trajectory
 			for(var/mob/living/L in T)
 				if(L == src || L == A)
@@ -631,8 +632,7 @@
 	if(AIStatus == AI_IDLE && FindTarget(tlist))
 		if(cheap_search) //Try again with full effort
 			FindTarget()
-		if(target) // Only activate if we still have a target.
-			toggle_ai(AI_ON)
+		toggle_ai(AI_ON)
 
 /mob/living/simple_animal/hostile/proc/ListTargetsLazy(_Z)//Step 1, find out what we can see
 	var/static/hostile_locs = typecacheof(list(/obj/mecha))
