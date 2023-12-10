@@ -550,7 +550,7 @@ Senior Scribe
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_SURGERY_LOW,  REF(src))
+	ADD_TRAIT(H, TRAIT_SURGERY_MID,  REF(src))
 	ADD_TRAIT(H, TRAIT_CYBERNETICIST,  REF(src))
 	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
 //	ADD_TRAIT(H, TRAIT_POOR_AIM,  REF(src))

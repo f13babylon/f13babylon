@@ -48,6 +48,7 @@
 /obj/item/clothing/under/dress/sundress/white
 	name = "white sundress"
 	icon_state = "sundress_white"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/dress/green
 	name = "green dress"

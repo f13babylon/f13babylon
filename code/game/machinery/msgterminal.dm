@@ -116,7 +116,7 @@ GLOBAL_LIST_EMPTY(allTerminals)
 			if(src.terminalid == "brotherhood")
 				dat += "<br>Utah Council of Elders"
 			if(src.terminalid == "legion")
-				dat += "<br>Zion War Council"
+				dat += "<br>Blackrock Stronghold"
 			if(src.terminalid == "ncr")
 				dat += "<br>Caliente Expeditionary Command"
 			if(src.terminalid == "enclave")

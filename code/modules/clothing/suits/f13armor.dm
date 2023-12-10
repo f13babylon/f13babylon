@@ -67,6 +67,7 @@
 	armor = list("melee" = 12.5, "bullet" = 12.5, "laser" = 7.5, "energy" = 2.5, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
 	strip_delay = 30
 	slowdown = 0.025
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/kit/Initialize(mapload)
 	. = ..()
@@ -135,6 +136,7 @@
 	armor = list("melee" = 38, "bullet" = 38, "laser" = 72, "energy" = 35, "bomb" = 45, "bio" = 30, "rad" = 15, "fire" = 60, "acid" = 0, "wound" = 40)
 	slowdown = 0.2
 	strip_delay = 10
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/fluff/metalarmor/Initialize(mapload)
 	. = ..()
@@ -179,6 +181,7 @@
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 15, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 20)
 	slowdown = 0.12
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 5)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/combat/laserproof
 	name = "ablative combat armor"
@@ -216,6 +219,7 @@
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 22, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 20)
 	slowdown = 0.15
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/dark
 	name = "reinforced combat armor"
@@ -266,7 +270,9 @@
 	desc = "An old set of reinforced combat armor with some parts supplanted with painspike armor. It seems less protective than a mint-condition set of combat armor."
 	armor = list("melee" = 35, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 10)
 	slowdown = 0.05
+	icon_state = "combat_armor_raider"
 	item_state = "combat_armor_raider"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /////////////////
 // Power armor //
@@ -573,10 +579,13 @@
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45b
 	name = "T-45b power armor"
+	icon_state = "t45bpowerarmor"
+	item_state = "t45bpowerarmor"
 	desc = "It's a set of early-model T-45 power armor with a custom air conditioning module and restored servomotors. Bulky, but almost as good as the real thing."
 	armor = list("melee" = 55, "bullet" = 60, "laser" = 45, "energy" = 25, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
 	slowdown = 0.5
 	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d
 	name = "T-45d power armor"
@@ -586,6 +595,7 @@
 	slowdown = 0.4
 	armor = list("melee" = 65, "bullet" = 65, "laser" = 50, "energy" = 30, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
 	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 //Fluff Suit
 /obj/item/clothing/suit/armor/f13/power_armor/t45d/refurb
@@ -603,6 +613,7 @@
 	icon_state = "raiderpa"
 	item_state = "raiderpa"
 	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/raider
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 //////
 // Sheriff's Suit
@@ -646,6 +657,7 @@
 	armor = list("melee" = 70, "bullet" = 70, "laser" = 60, "energy" = 35, "bomb" = 65, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 40, "wound" = 50)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 25)
 	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t51b
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51green
 	name = "Hardened T-51b power armor"
@@ -654,6 +666,7 @@
 	item_state = "t51green"
 	slowdown = 0.25 //+0.05 from helmet = total 0.255
 	armor = list("melee" = 70, "bullet" = 75, "laser" = 70, "energy" = 40, "bomb" = 65, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 40, "wound" = 50)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/power_armor/midwest
 	name = "Midwestern T-51b power armor"
@@ -768,6 +781,7 @@
 	icon_state = "armor_enclave_peacekeeper"
 	item_state = "armor_enclave_peacekeeper"
 	armor = list("melee" = 35, "bullet" = 50, "laser" = 30, "energy" = 10, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 
 //Generic Tribal - For Wayfarer specific, see f13factionhead.dm
@@ -876,6 +890,7 @@
 	item_state = "wastewar"
 	armor = list("melee" = 35, "bullet" = 25, "laser" = 25, "energy" = 5, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 10)
 	slowdown = 0.07
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/slam
 	name = "slammer raider armor"
@@ -1073,6 +1088,7 @@
 	icon_state = "ranger_cloak"
 	item_state = "ranger_cloak"
 	armor = list("melee" = 30, "bullet" = 25, "laser" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 
 /obj/item/clothing/suit/armor/f13/herbertranger //Armor wise, it's reskinned raider armor.
@@ -1219,6 +1235,7 @@
 	item_state = "rustwalkers_armour_light"
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 15, "energy" = 5, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/f13/tribal/rustwalkers
 	name = "Rustwalkers armor"
@@ -1228,6 +1245,7 @@
 	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 5, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 20)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
 	slowdown = 0.1
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/f13/tribal/heavy/rustwalkers
 	name = "Rustwalkers heavy armor"
@@ -1237,6 +1255,7 @@
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 15, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 30)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
 	slowdown = 0.15
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/f13/tribal/light/whitelegs
 	name = "White Legs light armour"
@@ -1257,6 +1276,7 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/tiny
 	icon_state = "white_legs_armour_heavy"
 	item_state = "white_legs_armour_heavy"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/f13/tribal/light/eighties
 	name = "80s light armour"
@@ -1264,6 +1284,7 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 	icon_state = "80s_armour_light"
 	item_state = "80s_armour_light"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/f13/tribal/eighties
 	name = "80s armour"
@@ -1271,6 +1292,7 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 	icon_state = "80s_armour"
 	item_state = "80s_armour"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/f13/tribal/heavy/eighties
 	name = "80s heavy armour"
@@ -1278,9 +1300,9 @@
 	icon_state = "80s_armour_heavy"
 	item_state = "80s_armour_heavy"
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
-
 	armor = list("melee" = 35, "bullet" = 45, "laser" = 25, "energy" = 10, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 20)
 	slowdown = 0.1
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/f13/tribal/light/deadhorses
 	name = "Dead Horses light armour"
@@ -1290,6 +1312,7 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
 	armor = list("melee" = 25, "bullet" = 20, "laser" = 20, "energy" = 5, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 10)
 	slowdown = 0.01
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 
 /obj/item/clothing/suit/f13/tribal/deadhorses
@@ -1300,6 +1323,7 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
 	armor = list("melee" = 35, "bullet" = 25, "laser" = 25, "energy" = 5, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 10)
 	slowdown = 0.025
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/f13/tribal/heavy/deadhorses
 	name = "Dead Horses heavy armour"
@@ -1309,6 +1333,7 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 10, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 10)
 	slowdown = 0.05
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/f13/tribal/light/sorrows
 	name = "Sorrows armour"
@@ -1317,6 +1342,7 @@
 	item_state = "sorrows_armour"
 	armor = list("melee" = 20, "bullet" = 45, "laser" = 20, "energy" = 5, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 10)
 	slowdown = 0.08
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/f13/tribal/light/bone
 	name = "Bone armor"
@@ -1327,6 +1353,7 @@
 	armor = list("melee" = 30, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 10)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/f13/tribal/bone
 	name = "Reinforced Bone armor"
@@ -1338,6 +1365,7 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 	slowdown = 0.025
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/f13/tribal/heavy/bone
 	name = "Heavy Bone armor"
@@ -1349,6 +1377,7 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 	slowdown = 0.05
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/f13/tribal/light/westernwayfarer
 	name = "Western Wayfarer salvaged armor"

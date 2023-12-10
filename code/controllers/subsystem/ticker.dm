@@ -75,6 +75,8 @@ SUBSYSTEM_DEF(ticker)
 
 	var/station_integrity = 100				// stored at roundend for use in some antag goals
 
+	var/real_round_start_time = 0
+
 /datum/controller/subsystem/ticker/Initialize(timeofday)
 	load_mode()
 
@@ -312,6 +314,7 @@ SUBSYSTEM_DEF(ticker)
 
 	log_world("Game start took [(world.timeofday - init_start)/10]s")
 	round_start_time = world.time
+	real_round_start_time = REALTIMEOFDAY
 	SSdbcore.SetRoundStart()
 
 	to_chat(world, "<span class='notice'><B>Welcome to [station_name()], enjoy your stay!</B></span>")

@@ -600,6 +600,7 @@
 	icon_state = "jeanbshorts"
 	item_color = "jeanbshorts"
 	can_adjust = FALSE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/darkbshorts
 	name = "dark booty shorts"
@@ -607,6 +608,7 @@
 	icon_state = "darkbshorts"
 	item_color = "darkbshorts"
 	can_adjust = FALSE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/blackbshorts
 	name = "black booty shorts"
@@ -614,6 +616,7 @@
 	icon_state = "blackbshorts"
 	item_color = "blackbshorts"
 	can_adjust = FALSE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/brownbshorts
 	name = "Cargo booty shorts"
@@ -621,7 +624,7 @@
 	icon_state = "brownbshorts"
 	item_color = "brownbshorts"
 	can_adjust = FALSE
-
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/sailor
 	name = "sailor suit"

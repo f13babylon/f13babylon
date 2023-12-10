@@ -351,3 +351,12 @@
 	icon_screen = "terminal_on_alt"
 	network = list("BoS")
 	circuit = /obj/item/circuitboard/computer/bos
+
+/obj/machinery/computer/security/enclave
+	name = "enclave bunker camera terminal"
+	desc = "Used to access the various cameras inside the bunker"
+	icon_state = "terminal"
+	icon_keyboard = "terminal_key"
+	icon_screen = "terminal_on_alt"
+	network = list("Enclave")
+	circuit = /obj/item/circuitboard/computer/enclave

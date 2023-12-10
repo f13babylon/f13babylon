@@ -445,7 +445,7 @@
 	icon_state = "Boss"
 
 /obj/effect/landmark/start/f13/khan_smith
-	name = "Khan Smith"
+	name = "Khan Armorer"
 	icon_state = "Pusher"
 
 /obj/effect/landmark/start/f13/khan_court
