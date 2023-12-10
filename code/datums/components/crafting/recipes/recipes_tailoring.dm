@@ -1320,7 +1320,7 @@
 /datum/crafting_recipe/follower_light
 	name = "Follower Insignia Stitching"
 	result = /obj/item/clothing/suit/hooded/followerlight
-	reqs = list(/obj/item/clothing/suit/toggle/labcoat,
+	reqs = list(/obj/item/clothing/suit/toggle/labcoat = 1,
 				/obj/item/stack/sheet/cloth = 1)
 	tools = list(TOOL_WORKBENCH)
 	time = 30
@@ -1331,7 +1331,7 @@
 /datum/crafting_recipe/follower_medium
 	name = "Follower Labcoat Plating"
 	result = /obj/item/clothing/suit/hooded/followermedium
-	reqs = list(/obj/item/clothing/suit/hooded/followerlight,
+	reqs = list(/obj/item/clothing/suit/hooded/followerlight = 1,
 				/obj/item/stack/sheet/cloth = 1,
 				/obj/item/stack/crafting/armor_plate = 2,
 				/obj/item/stack/crafting/metalparts = 5,
@@ -1345,9 +1345,9 @@
 /datum/crafting_recipe/follower_heavy
 	name = "Follower Labcoat Reforging"
 	result = /obj/item/clothing/suit/hooded/followerheavy
-	reqs = list(/obj/item/clothing/suit/hooded/followermedium,
+	reqs = list(/obj/item/clothing/suit/hooded/followermedium = 1,
 				/obj/item/stack/sheet/cloth = 1,
-				/obj/item/clothing/suit/armor/f13/metalarmor,
+				/obj/item/clothing/suit/armor/f13/metalarmor = 1,
 				/obj/item/stack/crafting/metalparts = 5,
 				/obj/item/stack/crafting/goodparts = 2)
 	tools = list(TOOL_WORKBENCH)
