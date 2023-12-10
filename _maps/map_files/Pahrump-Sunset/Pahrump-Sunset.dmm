@@ -19116,6 +19116,12 @@
 /area/f13/city/bighorn)
 "bqe" = (
 /obj/structure/rack/shelf_metal,
+/obj/item/gun/ballistic/automatic/smg/greasegun,
+/obj/item/gun/ballistic/automatic/smg/greasegun,
+/obj/item/gun/ballistic/automatic/smg/greasegun,
+/obj/item/gun/ballistic/automatic/smg/greasegun,
+/obj/item/gun/ballistic/automatic/smg/greasegun,
+/obj/item/gun/ballistic/automatic/smg/greasegun,
 /turf/open/floor/wood/wood_worn,
 /area/f13/city/bighorn)
 "bqf" = (
@@ -30775,6 +30781,12 @@
 /area/f13/building)
 "fNF" = (
 /obj/structure/rack/shelf_metal,
+/obj/item/ammo_box/magazine/mgreasegun,
+/obj/item/ammo_box/magazine/mgreasegun,
+/obj/item/ammo_box/magazine/mgreasegun,
+/obj/item/ammo_box/magazine/mgreasegun,
+/obj/item/ammo_box/magazine/mgreasegun,
+/obj/item/ammo_box/magazine/mgreasegun,
 /turf/open/floor/wood/wood_worn,
 /area/f13/city/bighorn)
 "fNV" = (
