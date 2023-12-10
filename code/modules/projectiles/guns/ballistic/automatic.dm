@@ -329,6 +329,7 @@
 	weapon_weight = WEAPON_HEAVY
 	mag_type = /obj/item/ammo_box/magazine/msmg14mm
 	autofire_shot_delay = 2.15
+	slowdown = 0.4
 	spread = 12
 	recoil = 0.85
 	extra_penetration = 0.05	//Results in 5 AP
