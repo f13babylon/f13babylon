@@ -51,7 +51,7 @@
 	category = list("initial", "Simple Magazines")
 
 /datum/design/ammolathe/m45
-	name = "empty  pistol magazine (10mm)"
+	name = "empty pistol magazine (10mm)"
 	id = "m10mm_adv"
 	materials = list(/datum/material/iron = 2000)
 	build_path = /obj/item/ammo_box/magazine/m10mm/empty
@@ -100,6 +100,20 @@
 	category = list("initial", "Simple Magazines")
 
 //Tier 1 Ammo
+/datum/design/ammolathe/lethalshot
+	name = "buckshot shotgun box"
+	id = "lethalshot"
+	materials = list(/datum/material/iron = 8000, /datum/material/blackpowder = 1000)
+	build_path = /obj/item/ammo_box/shotgun/buck
+	category = list("initial", "Simple Ammo")
+
+/datum/design/ammolathe/incendshot
+	name = "incendiary shotgun box"
+	id = "incendshot"
+	materials = list (/datum/material/iron = 12000, /datum/material/blackpowder = 5000)
+	build_path = /obj/item/ammo_box/shotgun/incendiary
+	category = list("initial", "Simple Ammo")
+
 /datum/design/ammolathe/beanbag
 	name = "beanbag shotgun box"
 	id = "beanbag"
@@ -113,6 +127,13 @@
 	materials = list(/datum/material/iron = 8000, /datum/material/blackpowder = 1000)
 	build_path = /obj/item/ammo_box/shotgun/rubber
 	category = list("initial", "Simple Ammo")
+
+/datum/design/ammolathe/a9mmfmj
+	name = "9mm FMJ ammo box"
+	id = "a9mmfmj"
+	build_path = /obj/item/ammo_box/c9mm
+	materials = list(/datum/material/iron = 15000, /datum/material/blackpowder = 1500)
+	category = list("initial", "Basic Ammo")
 
 /datum/design/ammolathe/c9mm/rubber
 	name = "9mm rubber ammo box"
@@ -133,20 +154,6 @@
 	id = "c10mmrubber_lathe"
 	materials = list(/datum/material/iron = 10000, /datum/material/blackpowder = 1000)
 	build_path = /obj/item/ammo_box/c10mm/rubber
-	category = list("initial", "Simple Ammo")
-
-/datum/design/ammolathe/lethalshot
-	name = "buckshot shotgun box"
-	id = "lethalshot"
-	materials = list(/datum/material/iron = 8000, /datum/material/blackpowder = 1000)
-	build_path = /obj/item/ammo_box/shotgun/buck
-	category = list("initial", "Simple Ammo")
-
-/datum/design/ammolathe/incendshot
-	name = "incendiary shotgun box"
-	id = "incendshot"
-	materials = list (/datum/material/iron = 12000, /datum/material/blackpowder = 5000)
-	build_path = /obj/item/ammo_box/shotgun/incendiary
 	category = list("initial", "Simple Ammo")
 
 /datum/design/ammolathe/a308
@@ -307,13 +314,6 @@
 	id = "a22"
 	build_path = /obj/item/ammo_box/m22
 	materials = list(/datum/material/iron = 6000, /datum/material/blackpowder = 1500)
-	category = list("initial", "Basic Ammo")
-
-/datum/design/ammolathe/a9mmfmj
-	name = "9mm FMJ ammo box"
-	id = "a9mmfmj"
-	build_path = /obj/item/ammo_box/c9mm
-	materials = list(/datum/material/iron = 15000, /datum/material/blackpowder = 1500)
 	category = list("initial", "Basic Ammo")
 
 /datum/design/ammolathe/a45fmj
