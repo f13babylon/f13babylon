@@ -2899,6 +2899,7 @@
 /turf/open/transparent/openspace,
 /area/f13/wasteland/rocksprings)
 "tl" = (
+/obj/effect/spawner/lootdrop/trash,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken2"
@@ -3138,6 +3139,10 @@
 /obj/structure/table/wood,
 /obj/item/paper_bin,
 /turf/open/floor/wood/wood_mosaic,
+/area/f13/legion)
+"uT" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/f13/wood,
 /area/f13/legion)
 "uW" = (
 /obj/structure/railing/corner,
@@ -19819,7 +19824,7 @@ TS
 TS
 TS
 pR
-Va
+uT
 Va
 sq
 se
@@ -20077,9 +20082,9 @@ wE
 wE
 wE
 Va
-Va
+uT
 Kw
-Va
+uT
 xy
 wS
 Wi
@@ -20334,10 +20339,10 @@ Eg
 Eg
 Zh
 Va
+uT
 Va
 Va
-Va
-Va
+uT
 bZ
 Wi
 UL
@@ -20848,9 +20853,9 @@ gi
 gi
 fz
 sq
+uT
 Va
-Va
-Va
+uT
 Kw
 bZ
 Wi
@@ -21107,7 +21112,7 @@ fz
 Kw
 Va
 Va
-Va
+uT
 xy
 bZ
 Wi
@@ -21619,10 +21624,10 @@ gi
 gi
 fz
 sq
+uT
 Va
 Va
-Va
-Va
+uT
 bZ
 Wi
 UL
@@ -21877,7 +21882,7 @@ gi
 fz
 xy
 Va
-Va
+uT
 Va
 Va
 wS
@@ -22132,11 +22137,11 @@ gi
 gi
 gi
 fz
+uT
 Va
+uT
 Va
-Va
-Va
-Va
+uT
 bZ
 Wi
 UL

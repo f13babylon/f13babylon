@@ -775,6 +775,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
+"gM" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/f13,
+/area/f13/enclave)
 "gR" = (
 /obj/effect/spawner/lootdrop/f13/crafting,
 /obj/effect/turf_decal/weather/snow/corner{
@@ -1979,6 +1983,7 @@
 /area/f13/enclave)
 "qo" = (
 /obj/structure/table/snooker,
+/obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13,
 /area/f13/enclave)
 "qp" = (
@@ -20933,7 +20938,7 @@ Jx
 MA
 Jx
 At
-Jx
+gM
 TC
 AW
 Yv
@@ -21188,7 +21193,7 @@ RG
 Jx
 Jx
 Jx
-Jx
+gM
 Jx
 Jx
 kh
@@ -22218,7 +22223,7 @@ Jx
 Jx
 jt
 KU
-Jx
+gM
 Jx
 AW
 Jx
@@ -22986,10 +22991,10 @@ gp
 RG
 Jx
 Jx
+gM
 Jx
 Jx
-Jx
-Jx
+gM
 Jx
 AW
 AW

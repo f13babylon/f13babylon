@@ -98,6 +98,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
@@ -499,6 +500,12 @@
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
+/area/f13/city)
+"hn" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/wood/wood_common,
 /area/f13/city)
 "hu" = (
 /obj/structure/curtain,
@@ -1591,6 +1598,8 @@
 "vx" = (
 /obj/structure/closet/secure_closet/personal,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/trash,
+/obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13{
 	icon_state = "bluechess2"
 	},
@@ -1792,6 +1801,12 @@
 	icon_state = "white"
 	},
 /area/f13/city)
+"wX" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/city)
 "xa" = (
 /obj/structure/sign/plaques/ncr_lt{
 	pixel_y = 32
@@ -1850,6 +1865,14 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
+/area/f13/city)
+"xu" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/f13{
+	icon_state = "bluechess2"
+	},
 /area/f13/city)
 "xC" = (
 /obj/structure/simple_door/glass,
@@ -2246,6 +2269,7 @@
 /area/f13/ncr)
 "CR" = (
 /obj/structure/closet/cabinet,
+/obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/wood/wood_fancy,
 /area/f13/ncr)
 "CZ" = (
@@ -3028,6 +3052,7 @@
 /obj/structure/table,
 /obj/machinery/light,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -3085,6 +3110,7 @@
 /area/f13/city)
 "Og" = (
 /obj/structure/closet/secure_closet/personal,
+/obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13{
 	icon_state = "bluechess2"
 	},
@@ -3681,6 +3707,7 @@
 /obj/structure/closet/locker/fridge,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
+/obj/effect/spawner/lootdrop/food,
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
@@ -8602,7 +8629,7 @@ HW
 ga
 wo
 bA
-bA
+hn
 mx
 nD
 ga
@@ -9891,7 +9918,7 @@ UE
 OF
 ga
 vx
-qZ
+xu
 nX
 wd
 jt
@@ -11429,7 +11456,7 @@ vM
 ga
 oi
 Jv
-Jv
+wX
 Jv
 ob
 Zt
