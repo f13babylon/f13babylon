@@ -221,7 +221,6 @@
 	autofire_shot_delay = 1
 	slowdown = 0.25
 	spread = 18
-	extra_speed = -200
 	suppressed = 1
 	can_unsuppress = TRUE	//Without can_suppress only results in a better examine message
 
@@ -236,8 +235,6 @@
 	autofire_shot_delay = 1
 	slowdown = 0.12
 	spread = 20
-	extra_speed = -100
-	extra_damage = -3	//Results in 13 damage
 
 //MP5			Keywords: 9mm, Suppressed, AP, Accurate, 32/50 Rounds
 /obj/item/gun/ballistic/automatic/smg/mp5
@@ -251,7 +248,7 @@
 	autofire_shot_delay = 1.3
 	spread = 4
 	extra_damage = 2	//Results in 18 damage
-	extra_penetration = 0.05	//Results in 5 AP
+	extra_penetration = 0.15	//Results in 15 AP
 	suppressed = 1
 	can_unsuppress = TRUE	//Without can_suppress only results in a better examine message
 
@@ -268,7 +265,6 @@
 	autofire_shot_delay = 1
 	slowdown = 0.3
 	spread = 18
-	extra_damage = -2	//Results in 14 damage
 
 //10mm SMG			Keywords: 10mm, Dual-wieldable, 30 Rounds
 /obj/item/gun/ballistic/automatic/smg/smg10mm
