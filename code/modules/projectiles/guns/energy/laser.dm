@@ -230,7 +230,7 @@
 	can_remove = 0
 	can_charge = 0
 	selfcharge = 1
-	icon_state = "rechargerpistol"
+	icon_state = "wattz1000"
 	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
 	w_class = WEIGHT_CLASS_SMALL
 	weapon_weight = WEAPON_MEDIUM
@@ -297,7 +297,7 @@
 	slowdown = 0.05
 	equipsound = 'sound/f13weapons/equipsounds/aer14equip.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/hitscan/pewpew)
-	
+
 ////////////////
 //LASER RIFLES//
 ////////////////
