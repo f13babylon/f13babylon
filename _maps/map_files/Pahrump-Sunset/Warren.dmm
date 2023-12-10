@@ -11695,7 +11695,7 @@
 /obj/structure/table/reinforced{
 	color = "#c1b6a5"
 	},
-/obj/item/clothing/head/welding/weldingfire,
+/obj/item/clothing/head/welding/f13/fire,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"

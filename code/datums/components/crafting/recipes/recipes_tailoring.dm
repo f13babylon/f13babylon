@@ -315,9 +315,19 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
 
-/datum/crafting_recipe/salvageweld
-	name = "Salvaged Welding Mask"
+/datum/crafting_recipe/salvageweldfire
+	name = "Salvaged Welding Mask - Cremator"
 	result = /obj/item/clothing/head/welding/f13/fire
+	time = 600
+	reqs = list(/obj/item/stack/sheet/metal = 4,
+				/obj/item/stack/sheet/cloth = 1)
+	tools = list(TOOL_FORGE)
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOR
+
+/datum/crafting_recipe/salvageweldjapan
+	name = "Salvaged Welding Mask - Oriental"
+	result = /obj/item/clothing/head/welding/f13/japan
 	time = 600
 	reqs = list(/obj/item/stack/sheet/metal = 4,
 				/obj/item/stack/sheet/cloth = 1)
