@@ -728,17 +728,5 @@
 		/obj/structure/sign/poster/contraband/pinup_bed, /obj/structure/sign/poster/contraband/pinup_pink,
 		/obj/structure/sign/poster/contraband/pinup_funk, /obj/structure/sign/poster/contraband/pinup_topless,
 		/obj/structure/sign/poster/contraband/pinup_shower, /obj/structure/sign/poster/contraband/pinup_vixen,
-		/obj/structure/sign/poster/contraband/ncrpropaganda,
-		// SUNSET PINUP POSTERS
-		/obj/structure/sign/poster/contraband/pinup_assaultron, /obj/structure/sign/poster/contraband/pinup_assaultron2,
-		/obj/structure/sign/poster/contraband/pinup_claw1, /obj/structure/sign/poster/contraband/pinup_claw2,
-		/obj/structure/sign/poster/contraband/pinup_claw3, /obj/structure/sign/poster/contraband/pinup_claw4,
-		/obj/structure/sign/poster/contraband/pinup_anthro1, /obj/structure/sign/poster/contraband/pinup_anthro2,
-		/obj/structure/sign/poster/contraband/pinup_anthro3, /obj/structure/sign/poster/contraband/pinup_anthro4,
-		/obj/structure/sign/poster/contraband/pinup_anthro5, /obj/structure/sign/poster/contraband/pinup_anthro6,
-		/obj/structure/sign/poster/contraband/pinup_anthro7, /obj/structure/sign/poster/contraband/pinup_anthro8,
-		/obj/structure/sign/poster/contraband/pinup_anthro9, /obj/structure/sign/poster/contraband/pinup_anthro10,
-		/obj/structure/sign/poster/contraband/pinup_anthro11, /obj/structure/sign/poster/contraband/pinup_anthro12,
-		/obj/structure/sign/poster/contraband/pinup_anthro13, /obj/structure/sign/poster/contraband/pinup_anthro14,
-		/obj/structure/sign/poster/contraband/pinup_anthro15, /obj/structure/sign/poster/contraband/pinup_anthro16
+		/obj/structure/sign/poster/contraband/ncrpropaganda
 		)
