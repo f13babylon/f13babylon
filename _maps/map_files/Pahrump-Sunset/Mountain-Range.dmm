@@ -2836,7 +2836,7 @@
 /obj/machinery/light/small,
 /obj/item/storage/belt/utility/full,
 /obj/item/storage/belt/utility/full,
-/obj/item/storage/belt/utility/full,
+/obj/item/storage/belt/utility/full/engi,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/enclave)
 "uv" = (
