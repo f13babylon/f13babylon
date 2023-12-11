@@ -104,14 +104,6 @@
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
 
-/datum/crafting_recipe/fireplace
-	name = "Fireplace"
-	reqs = list(/obj/item/stack/sheet/mineral/sandstone = 5,
-				/obj/item/stack/sheet/metal = 5)
-	result = /obj/structure/fireplace
-	subcategory = CAT_MISCELLANEOUS
-	category = CAT_MISC
-
 /datum/crafting_recipe/dogbed
 	name = "Dog Bed"
 	result = /obj/structure/bed/dogbed
