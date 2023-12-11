@@ -182,6 +182,11 @@
 	icon_state = "goat"
 	covered_limbs = list("Head" = MATRIX_RED, "Chest" = MATRIX_RED, "Left Leg" = MATRIX_RED_BLUE, "Right Leg" = MATRIX_RED_BLUE, "Left Arm" = MATRIX_RED_BLUE, "Right Arm" = MATRIX_RED_BLUE)
 
+/datum/sprite_accessory/mam_body_markings/gradient
+	name = "Gradient"
+	icon_state = "gradient"
+	covered_limbs = list("Left Leg" = MATRIX_RED_GREEN, "Right Leg" = MATRIX_RED_GREEN, "Left Arm" = MATRIX_RED_GREEN, "Right Arm" = MATRIX_RED_GREEN)
+
 /datum/sprite_accessory/mam_body_markings/guilmon
 	name = "Guilmon"
 	icon_state = "guilmon"
