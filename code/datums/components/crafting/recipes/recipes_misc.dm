@@ -12,6 +12,15 @@
 //Large Objects//
 /////////////////
 
+/datum/crafting_recipe/river_water
+	name = "river water"
+	result = /turf/open/indestructible/ground/outside/water
+	reqs = list(/datum/reagent/water = 200)
+	tools = list(TOOL_SHOVEL)
+	time = 400
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_MISC
+
 /datum/crafting_recipe/ncrgate
 	name = "NCR reinforced door"
 	result = /obj/machinery/door/unpowered/secure_NCR
