@@ -120,6 +120,11 @@
 						/obj/item/clothing/mask/muzzle = 2,
 						/obj/item/clothing/under/syndicate/camo/cosmetic = 3)
 	premium = list(/obj/item/clothing/suit/pirate/captain = 2,
+					/obj/item/clothing/head/helmet/roman/fake = 1,
+					/obj/item/clothing/head/helmet/roman/legionnaire/fake = 1,
+					/obj/item/clothing/under/costume/roman = 1,
+					/obj/item/clothing/shoes/roman = 1,
+					/obj/item/shield/riot/roman/fake = 1,
 					/obj/item/clothing/head/pirate/captain = 2,
 					/obj/item/clothing/under/costume/lobster = 1,
 					/obj/item/clothing/head/lobsterhat = 1,
