@@ -25,6 +25,10 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	null, \
 	new/datum/stack_recipe("heavy iron door", /obj/structure/simple_door/metal/iron, 20, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("simple metal door", /obj/structure/simple_door/metal, 10, one_per_turf = TRUE, on_floor = TRUE), \
+	new/datum/stack_recipe("store metal door", /obj/structure/simple_door/metal/store, 10, one_per_turf = TRUE, on_floor = TRUE), \
+	new/datum/stack_recipe("bunker door", /obj/structure/simple_door/bunker, 10, one_per_turf = TRUE, on_floor = TRUE), \
+	new/datum/stack_recipe("glass bunker door", /obj/structure/simple_door/bunker/glass, 10, one_per_turf = TRUE, on_floor = TRUE), \
+	new/datum/stack_recipe("ventilation hatch", /obj/structure/simple_door/metal/ventilation, 10, one_per_turf = TRUE, on_floor = TRUE), \
 	null, \
 	new/datum/stack_recipe("metal rod", /obj/item/stack/rods, 1, 2, 60), \
 	new/datum/stack_recipe("iron ingot", /obj/item/ingot/iron, 6, time = 100), \
@@ -80,6 +84,8 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	new/datum/stack_recipe("shelf parts", /obj/item/rack_parts), \
 	new/datum/stack_recipe("closet", /obj/structure/closet, 2, time = 15, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("trash bin", /obj/structure/closet/crate/bin, 10, time = 15, one_per_turf = TRUE, on_floor = TRUE),\
+	new/datum/stack_recipe("filing cabinet", /obj/structure/filingcabinet, 3, time = 15, one_per_turf = TRUE, on_floor = TRUE),\
+	new/datum/stack_recipe("chest drawer", /obj/structure/filingcabinet/chestdrawer, 3, time = 15, one_per_turf = TRUE, on_floor = TRUE),\
 	null, \
 	new/datum/stack_recipe("computer frame", /obj/structure/frame/computer, 5, time = 25, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("modular console", /obj/machinery/modular_computer/console/buildable/, 10, time = 25, one_per_turf = TRUE, on_floor = TRUE), \
@@ -334,6 +340,7 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 	new/datum/stack_recipe("wooden door", /obj/structure/simple_door/room, 10, time = 100, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("interior wooden door", /obj/structure/simple_door/interior, 10, time = 100, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("wooden house door", /obj/structure/simple_door/house, 10, time = 100, one_per_turf = TRUE, on_floor = TRUE), \
+	new/datum/stack_recipe("wooden glass door", /obj/structure/simple_door/glass, 10, time = 100, one_per_turf = TRUE, on_floor = TRUE), \
 	null, \
 	new/datum/stack_recipe("ore box", /obj/structure/ore_box, 4, time = 50, one_per_turf = TRUE, on_floor = TRUE),\
 	new/datum/stack_recipe("wooden crate", /obj/structure/closet/crate/wooden, 6, time = 50, one_per_turf = TRUE, on_floor = TRUE),\
