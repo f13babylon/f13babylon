@@ -13,7 +13,7 @@
 /////////////////
 
 /datum/crafting_recipe/river_water
-	name = "river water"
+	name = "River water"
 	result = /turf/open/indestructible/ground/outside/water
 	reqs = list(/datum/reagent/water = 200)
 	tools = list(TOOL_SHOVEL)
