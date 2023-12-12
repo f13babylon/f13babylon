@@ -93,7 +93,7 @@
 	covered_limbs = list("Chest" = MATRIX_RED)
 
 /datum/sprite_accessory/mam_body_markings/bellyslim
-	name = "Belly (Slim)"
+	name = "Bellyslim"
 	icon_state = "bellyslim"
 	covered_limbs = list("Head" = MATRIX_RED_GREEN, "Chest" = MATRIX_RED_GREEN, "Left Leg" = MATRIX_RED, "Right Leg" = MATRIX_RED, "Left Arm" = MATRIX_RED, "Right Arm" = MATRIX_RED)
 
@@ -223,12 +223,12 @@
 	covered_limbs = list("Head" = MATRIX_ALL, "Chest" = MATRIX_ALL, "Left Leg" = MATRIX_RED_GREEN, "Right Leg" = MATRIX_RED_GREEN, "Left Arm" = MATRIX_RED_GREEN, "Right Arm" = MATRIX_RED_GREEN)
 
 /datum/sprite_accessory/mam_body_markings/jackalb
-	name = "Jackal (Bareback)"
+	name = "Jackal Bareback"
 	icon_state = "jackalb"
 	covered_limbs = list("Chest" = MATRIX_GREEN, "Left Leg" = MATRIX_GREEN, "Right Leg" = MATRIX_GREEN, "Left Arm" = MATRIX_GREEN, "Right Arm" = MATRIX_GREEN)
 
 /datum/sprite_accessory/mam_body_markings/jackalp
-	name = "Jackal (Backpattern)"
+	name = "Jackal Backpattern"
 	icon_state = "jackalp"
 	covered_limbs = list("Chest" = MATRIX_GREEN, "Left Leg" = MATRIX_GREEN, "Right Leg" = MATRIX_GREEN, "Left Arm" = MATRIX_GREEN, "Right Arm" = MATRIX_GREEN)
 
@@ -238,7 +238,7 @@
 	covered_limbs = list("Chest" = MATRIX_ALL, "Left Leg" = MATRIX_ALL, "Right Leg" = MATRIX_ALL, "Left Arm" = MATRIX_ALL, "Right Arm" = MATRIX_ALL)
 
 /datum/sprite_accessory/mam_body_markings/leopard2
-	name = "Leopard (Alt)"
+	name = "Leopard Alt"
 	icon_state = "leopard2"
 	covered_limbs = list("Chest" = MATRIX_ALL, "Left Leg" = MATRIX_ALL, "Right Leg" = MATRIX_ALL, "Left Arm" = MATRIX_ALL, "Right Arm" = MATRIX_ALL)
 
@@ -314,7 +314,7 @@
 	covered_limbs = list("Head" = MATRIX_ALL, "Chest" = MATRIX_ALL, "Left Leg" = MATRIX_ALL, "Right Leg" = MATRIX_ALL, "Left Arm" = MATRIX_ALL, "Right Arm" = MATRIX_ALL)
 
 /datum/sprite_accessory/mam_body_markings/redpanda
-	name = "Red Panda"
+	name = "Redpanda"
 	icon_state = "redpanda"
 	covered_limbs = list("Head" = MATRIX_ALL, "Chest" = MATRIX_RED_GREEN, "Left Leg" = MATRIX_RED_GREEN, "Right Leg" = MATRIX_RED_GREEN, "Left Arm" = MATRIX_RED_GREEN, "Right Arm" = MATRIX_RED_GREEN)
 
