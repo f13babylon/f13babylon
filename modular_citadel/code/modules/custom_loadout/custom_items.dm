@@ -94,6 +94,7 @@
 	item_state = "stalker"
 	mob_overlay_icon = 'icons/mob/clothing/custom_w.dmi'
 	icon_state = "stalker"
+	mutantrace_variation = null
 
 /obj/item/reagent_containers/food/drinks/flask/steel
 	name = "The End"

@@ -61,7 +61,7 @@
 	var/datum/progressbar/progbar
 	if(living_user)
 		if(!(do_after_flags & DO_AFTER_NO_PROGRESSBAR))
-			progbar = new(living_user, delay, target)
+			progbar = new(living_user, delay, living_user) //progress bar is always above the user. why was it above the target before? nobody knows
 	// MAIN LOOP
 	. = TRUE
 	if(!delay)

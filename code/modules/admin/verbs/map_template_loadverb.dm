@@ -68,6 +68,8 @@
 	var/map = input(src, "Choose a Map Template to upload to template storage","Upload Map Template") as null|file
 	if(!map)
 		return
+	if(map == null)
+		to_chat(src, span_warning("Map template is null!"))
 	if(copytext("[map]", -4) != ".dmm")//4 == length(".dmm")
 		to_chat(src, "<span class='warning'>Filename must end in '.dmm': [map]</span>")
 		return
