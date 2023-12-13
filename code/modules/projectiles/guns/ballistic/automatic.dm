@@ -246,7 +246,7 @@
 	weapon_weight = WEAPON_MEDIUM
 	mag_type = /obj/item/ammo_box/magazine/msmg9mm
 	autofire_shot_delay = 1.3
-	slowdown = 0.15
+	slowdown = 0.1
 	spread = 4
 	extra_penetration = 0.10	//10% AP
 	suppressed = 1
