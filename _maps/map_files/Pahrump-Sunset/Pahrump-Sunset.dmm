@@ -35258,9 +35258,6 @@
 /obj/machinery/recharger{
 	pixel_y = 7
 	},
-/obj/structure/sign/poster/contraband/pinup_assaultron{
-	pixel_y = -32
-	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "greenrustychess"
 	},
@@ -37406,9 +37403,6 @@
 "iWb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
-/obj/structure/sign/poster/contraband/pinup_assaultron2{
-	pixel_y = -32
-	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "greenrustychess"
 	},
@@ -64209,7 +64203,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/building/mall)
 "vng" = (
-/obj/structure/sign/poster/contraband/pinup_assaultron2,
 /turf/closed/wall/mineral/wood,
 /area/f13/building)
 "vnl" = (

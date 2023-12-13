@@ -6506,9 +6506,6 @@
 	},
 /area/f13/building)
 "gsH" = (
-/obj/structure/sign/poster/contraband/pinup_assaultron{
-	pixel_y = 32
-	},
 /turf/open/floor/plasteel/barber{
 	icon_state = "plating"
 	},
@@ -21080,9 +21077,6 @@
 	},
 /area/f13/building)
 "uQR" = (
-/obj/structure/sign/poster/contraband/pinup_assaultron2{
-	pixel_x = -32
-	},
 /turf/open/indestructible/ground/outside/dirt/harsh,
 /area/f13/building)
 "uQT" = (
