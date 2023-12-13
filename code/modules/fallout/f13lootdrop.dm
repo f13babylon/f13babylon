@@ -892,8 +892,8 @@
 				/obj/effect/spawner/bundle/f13/m1carbine,
 				/obj/effect/spawner/bundle/f13/huntingshotgun,
 				/obj/effect/spawner/bundle/f13/revolver45,
-				/obj/effect/spawner/bundle/f13/smg22
-				/obj/effect/spawner/bundle/f13/greasegun,
+				/obj/effect/spawner/bundle/f13/smg22,
+				/obj/effect/spawner/bundle/f13/greasegun
 		)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid
