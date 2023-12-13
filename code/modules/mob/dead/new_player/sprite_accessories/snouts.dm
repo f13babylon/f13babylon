@@ -338,6 +338,11 @@
 	icon_state = "hpanda"
 	matrixed_sections = MATRIX_RED_GREEN
 
+/datum/sprite_accessory/snouts/mam_snouts/leporid
+	name = "Leporid"
+	icon_state = "leporid"
+	matrixed_sections = MATRIX_RED_GREEN
+
 /******************************************
 **************** Snouts *******************
 *************but higher up*****************/
