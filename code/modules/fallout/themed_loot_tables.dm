@@ -267,7 +267,6 @@
 		/obj/effect/spawner/bundle/f13/combat_rifle = 6,
 		/obj/effect/spawner/bundle/f13/bozar = 5,
 		/obj/item/gun/ballistic/automatic/m1919 = 2,
-		/obj/item/gun/ballistic/automatic/lsw = 1,
 		/obj/item/twohanded/sledgehammer/supersledge = 5,
 		/obj/item/melee/powerfist = 5,
 		/obj/item/twohanded/thermic_lance = 2,
@@ -445,8 +444,7 @@
 /obj/effect/spawner/bundle/weapon/lasmusket
 	name = "laskmusket and ammo spawner"
 	items = list(
-		/obj/item/gun/ballistic/rifle/hobo/lasmusket,
-		/obj/item/ammo_box/lasmusket,
+		/obj/item/gun/energy/lasmusket
 		)
 
 /obj/effect/spawner/bundle/weapon/piperifle

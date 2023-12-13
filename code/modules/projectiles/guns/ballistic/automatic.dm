@@ -997,23 +997,6 @@
 	extra_penetration = 0.1
 	extra_damage = -3
 
-//HT battle rifle
-/obj/item/gun/ballistic/automatic/bar/glowie
-	name = "Colt Monitor"
-	desc = "A special modified heavy battle rifle built on the BAR, featuring an added pistol grip and a Cutts recoil compensator. This one features a long-range scope and its receiver bears a red star."
-	slowdown = 1.35
-	autofire_shot_delay = 2.45
-	spread = 8
-	recoil = 0.2
-	extra_speed = 250 //Get a load of this guy.
-	zoomable = TRUE
-	zoom_amt = 8
-	zoom_out_amt = 9
-	icon_state = "MONITOR"
-	item_state = "BAR"
-	extra_damage = -3
-	extra_penetration = 0.17
-
 
 //SKS				Keywords: LEGION, .308, Semi-auto, 10 rounds internal, Penetration +0.1
 /obj/item/gun/ballistic/automatic/m1garand/sks
@@ -1327,25 +1310,6 @@
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 
-/obj/item/gun/ballistic/automatic/bar
-	name = "FN Model D"
-	desc = "An exceedingly heavy machine gun based on the BAR, featuring the blessing of Belgian gunsmithing. It's the last, and best of its kind in regards to model."
-	icon = 'icons/fallout/objects/guns/bar.dmi'
-	slot_flags = ITEM_SLOT_BACK
-	icon_state = "BAR"
-	item_state = "BAR"
-	icon_prefix = "rifle"
-	automatic = 1
-	mag_type = /obj/item/ammo_box/magazine/m762/ext
-	force = 24 //club
-	slowdown = 1.5 //really goddamn big
-	autofire_shot_delay = 1.7
-	spread = 10
-	recoil = 0.85
-	actions_types = list(/datum/action/item_action/toggle_firemode)
-	fire_sound = 'sound/f13weapons/automaticrifle_BAR.ogg'
-	extra_penetration = 0.25
-
 //H&K G11				Keywords: 4.73mm, Automatic, 50 round magazine
 /obj/item/gun/ballistic/automatic/g11
 	name = "G11"
@@ -1387,85 +1351,115 @@
 ////////////////
 
 
-//R84 Light machinegun				Keywords: NCR, 5.56mm, Automatic, 60 rounds, Damage decrease (bullethose)
+//R84 Light machinegun				Keywords: NCR, 5.56mm, Automatic, 60 rounds
 /obj/item/gun/ballistic/automatic/r84
-	name = "R84 LMG"
-	desc = "A light machinegun using 60 round belts fed from an ammobox, its one of the few heavy weapons designs NCR has produced."
-	icon_state = "R84"
+	name = "light machine gun"
+	desc = "An NCR-made FN R84 SAW chambered in 5.56mm, made for sustained fire. It's loaded with 60-round ammo boxes and it's as heavy as the people usually seen carrying one."
+	icon = 'icons/obj/guns/gunfruits2022/lmg.dmi'
+	icon_state = "r84"
 	item_state = "R84"
 	slowdown = 1.25
-	recoil = 1
+	recoil = 0.5
 	mag_type = /obj/item/ammo_box/magazine/lmg
 	fire_delay = 2
 	burst_shot_delay = 3
 	is_automatic = TRUE
 	automatic = 1
-	autofire_shot_delay = 1.5
-	spread = 12
+	autofire_shot_delay = 2
+	spread = 18
 	can_attachments = FALSE
 	actions_types = null
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
-	extra_damage = -7
-	extra_penetration = 0.1
+	extra_penetration = 0.05
 
-//LSW Squad Support Weapon				Keywords: 5.56mm, Automatic, 20 (10-50) round magazine, Scoped, Damage decrease (bullethose)
-/obj/item/gun/ballistic/automatic/lsw
-	name = "Light Support Weapon"
-	desc = "This squad-level support weapon has a bullpup design. The bullpup design makes it difficult to use while lying down. Because of this it was remanded to National Guard units. It, however, earned a reputation as a reliable weapon that packs a lot of punch for its size."
-	icon = 'icons/obj/guns/projectile.dmi'
-	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
-	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
-	icon_state = "lsw"
-	item_state = "lsw"
-	slowdown = 1
-	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_delay = 4.5
-	burst_shot_delay = 2
-	is_automatic = TRUE
+//BAR
+/obj/item/gun/ballistic/automatic/bar
+	name = "FN Model D"
+	desc = "An exceedingly heavy light machine gun based on the BAR platform, featuring the blessing of Belgian gunsmithing. It's the last, and best of its kind in regards to quality and reliability."
+	icon = 'icons/fallout/objects/guns/bar.dmi'
+	slot_flags = ITEM_SLOT_BACK
+	icon_state = "BAR"
+	item_state = "BAR"
+	icon_prefix = "rifle"
 	automatic = 1
-	spread = 12
-	spawnwithmagazine = TRUE
-	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
-	can_attachments = TRUE
-	can_scope = FALSE
+	mag_type = /obj/item/ammo_box/magazine/m762/ext
+	force = 24
+	slowdown = 1.5
+	autofire_shot_delay = 1.7
+	spread = 10
+	recoil = 0.85
 	actions_types = list(/datum/action/item_action/toggle_firemode)
-	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
-	extra_damage = -5
+	fire_sound = 'sound/f13weapons/automaticrifle_BAR.ogg'
+	extra_penetration = 0.25
+
+//HT BAR
+/obj/item/gun/ballistic/automatic/bar/glowie
+	name = "Colt Monitor"
+	desc = "An especially modified light machine gun built on the BAR with an added pistol grip and a Cutts recoil compensator. This one features a West-Tek marksman scope and its receiver bears a red star."
+	slowdown = 1.35
+	autofire_shot_delay = 2.45
+	spread = 5
+	recoil = 0.2
+	extra_speed = 100
+	zoomable = TRUE
+	zoom_amt = 8
+	zoom_out_amt = 9
+	icon_state = "MONITOR"
+	item_state = "BAR"
+	extra_damage = -4	//For 30 total
 	extra_penetration = 0.15
 
+//CHINESE LMG
+/obj/item/gun/ballistic/automatic/rpd
+	name = "chinese light machine gun"
+	desc = "A restored variant of the chinese assault rifle re-chambered to 5mm that feeds from drums, featuring a heavy barrel and a full stock to go with its improved internal mechanism."
+	icon = 'icons/obj/guns/gunfruits2022/lmg.dmi'
+	icon_state = "rpd"
+	item_state = "handmade_rifle"
+	slowdown = 0.6
+	recoil = 0.5
+	mag_type = /obj/item/ammo_box/magazine/rpd
+	fire_delay = 2
+	burst_shot_delay = 3
+	is_automatic = TRUE
+	automatic = 1
+	autofire_shot_delay = 1.9
+	spread = 20
+	can_attachments = FALSE
+	actions_types = null
+	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
+	extra_penetration = -0.15 //For a total of 30%
 
 //M1919 Machinegun				Keywords: LEGION, .308, Automatic, 80 round belt.
 /obj/item/gun/ballistic/automatic/m1919
-	name = "Browning M1919"
-	desc = "This ancient machine gun has been dug up and put into working order by the Legion Forgemasters. It's loud, heavy and terrifying."
-	icon_state = "M38"
+	name = "stinger heavy machine gun"
+	desc = "A salvaged AN/M2 variant of the M1919 Browning initially meant for use in aircraft that has been turned into a man-portable killing machine. It has a shoulder stock cut from a brush gun with the addition of rear sights and a bipod from a different machine gun, as well as a solenoid trigger. The Legion's infamous bull is carved on the receiver."
+	icon = 'icons/obj/guns/gunfruits2022/lmg.dmi'
+	icon_state = "hmg"
 	item_state = "M38"
 	slot_flags = 0
-	slowdown = 1.3
+	slowdown = 1.5
 	mag_type = /obj/item/ammo_box/magazine/mm762
 	burst_shot_delay = 1.5
 	is_automatic = TRUE
 	automatic = 1
 	autofire_shot_delay = 2
 	fire_delay = 2
-	spread = 12
-	extra_damage = -5
+	spread = 20
 	can_attachments = FALSE
 	var/cover_open = FALSE
 	var/require_twohands = FALSE
 	actions_types = null
-	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
+	fire_sound = 'sound/f13weapons/automaticrifle_BAR.ogg'
 
 /obj/item/gun/ballistic/automatic/m1919/update_icon()
-	icon_state = "M38[cover_open ? "open" : "closed"][magazine ? CEILING(get_ammo(0)/20, 1)*20 : "-empty"]"
-	item_state = "M38[cover_open ? "open" : "closed"][magazine ? "mag" : "nomag"]"
+	icon_state = "hmg[cover_open ? "open" : "closed"][magazine ? CEILING(get_ammo(0)/20, 1)*20 : "-empty"]"
+	item_state = "hmg[cover_open ? "open" : "closed"][magazine ? "mag" : "nomag"]"
 
 /obj/item/gun/ballistic/automatic/m1919/examine(mob/user)
 	. = ..()
 	if(cover_open && magazine)
-		. += "<span class='notice'>It seems like you could use an <b>empty hand</b> to remove the magazine.</span>"
+		. += "<span class='notice'>It seems like you could use an <b>empty hand</b> to remove the ammo belt.</span>"
 
 /obj/item/gun/ballistic/automatic/m1919/attack_self(mob/user)
 	cover_open = !cover_open
@@ -1478,7 +1472,7 @@
 
 /obj/item/gun/ballistic/automatic/m1919/afterattack(atom/target as mob|obj|turf, mob/living/user as mob|obj, flag, params) //what I tried to do here is just add a check to see if the cover is open or not and add an icon_state change because I can't figure out how c-20rs do it with overlays
 	if(cover_open)
-		to_chat(user, "<span class='warning'>[src]'s cover is open! Close it before firing!</span>")
+		to_chat(user, "<span class='warning'>[src]'s cover is open! Close it to fire!</span>")
 	else
 		. = ..()
 		update_icon()
@@ -1496,12 +1490,12 @@
 		user.put_in_hands(magazine)
 		magazine = null
 		update_icon()
-		to_chat(user, "<span class='notice'>You remove the magazine from [src].</span>")
+		to_chat(user, "<span class='notice'>You remove the ammo belt from [src].</span>")
 		playsound(user, 'sound/weapons/magout.ogg', 60, 1)
 
 /obj/item/gun/ballistic/automatic/m1919/attackby(obj/item/A, mob/user, params)
 	if(!cover_open && istype(A, mag_type))
-		to_chat(user, "<span class='warning'>[src]'s cover is closed! You can't insert a new mag.</span>")
+		to_chat(user, "<span class='warning'>[src]'s cover is closed! You can't swap out the ammo belts.</span>")
 		return
 	..()
 
@@ -1527,24 +1521,3 @@
 	recoil = 2
 	semi_auto = TRUE
 	fire_sound = 'sound/f13weapons/gauss_rifle.ogg'
-
-/obj/item/gun/ballistic/automatic/xl70e3
-	name = "xl70e3"
-	desc = "This was an experimental weapon at the time of the war. Manufactured, primarily, from high-strength polymers, the weapon is almost indestructible. It's light, fast firing, accurate, and can be broken down without the use of any tools. Chamebered in 5.56mm."
-	icon_state = "xl70e3"
-	item_state = "xl70e3"
-	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_delay = 2
-	burst_shot_delay = 2
-	is_automatic = TRUE
-	automatic = 1
-	autofire_shot_delay = 2
-	spawnwithmagazine = TRUE
-	spread = 8
-	can_attachments = TRUE
-	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
-	can_scope = FALSE
-	slowdown = 0.12
-	extra_penetration = 0.05
