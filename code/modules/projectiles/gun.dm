@@ -410,6 +410,8 @@ ATTACHMENTS
 
 	var/stamloss = user.getStaminaLoss()
 	if(flag)
+		if(target in user.contents) //can't shoot stuff inside us.
+			return
 		if(iscarbon(target))
 			var/mob/living/carbon/C = target
 			for(var/i in C.all_wounds)
