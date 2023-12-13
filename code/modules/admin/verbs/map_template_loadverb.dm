@@ -69,7 +69,7 @@
 	if(!map)
 		return
 	if(map == null)
-		to_chat(src, "<span class='warning'>Map template is null!")
+		to_chat(src, span_warning("Map template is null!"))
 	if(copytext("[map]", -4) != ".dmm")//4 == length(".dmm")
 		to_chat(src, "<span class='warning'>Filename must end in '.dmm': [map]</span>")
 		return
