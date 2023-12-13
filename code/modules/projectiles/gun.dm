@@ -405,7 +405,7 @@ ATTACHMENTS
 	if(firing)
 		return
 	var/user_turf = get_turf(user)
-	if(target == user_turf || (target == user && user.a_intent == INTENT_HELP))
+	if(target == user_turf || (ismob(target) && user.a_intent == INTENT_HELP))
 		return
 
 	var/stamloss = user.getStaminaLoss()
