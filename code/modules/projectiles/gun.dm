@@ -405,7 +405,7 @@ ATTACHMENTS
 	if(firing)
 		return
 	var/user_turf = get_turf(user)
-	if(target == user_turf)
+	if(target == user_turf || (target == user && user.a_intent == INTENT_HELP))
 		return
 
 	var/stamloss = user.getStaminaLoss()
@@ -427,8 +427,6 @@ ATTACHMENTS
 		return
 
 	if(flag)
-		if(target == user && user.a_intent == INTENT_HELP)
-			return
 		if(ishuman(user) && ishuman(target) && user.zone_selected == BODY_ZONE_PRECISE_MOUTH)
 			user.DelayNextAction(attack_speed)
 			handle_suicide(user, target, params)
