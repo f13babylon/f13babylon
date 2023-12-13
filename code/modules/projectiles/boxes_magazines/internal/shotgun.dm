@@ -94,14 +94,6 @@
 	name = "medicine stick tube magazine"
 	max_ammo = 8
 
-/obj/item/ammo_box/magazine/internal/shot/lasmusket
-	name = "lasmusket magazine"
-	desc = "Oh god, this shouldn't be here"
-	ammo_type = /obj/item/ammo_casing/caseless/lasermusket
-	caliber = "lasmusket"
-	max_ammo = 6
-	multiload = 1
-
 /obj/item/ammo_box/magazine/internal/shot/pardner
 	name = "single shotgun internal tube"
 	ammo_type = /obj/item/ammo_casing/shotgun/buckshot
@@ -110,7 +102,7 @@
 /obj/item/ammo_box/magazine/internal/plasmacaster
 	name = "plasmacaster magazine"
 	desc = "Oh god, this shouldn't be here"
-	ammo_type = /obj/item/ammo_casing/caseless/plasmacaster
+	ammo_type = /obj/item/ammo_casing/caseless/plasma_musket
 	caliber = "plasmacaster"
 	max_ammo = 2
 	multiload = 1

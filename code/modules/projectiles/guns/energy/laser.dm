@@ -139,7 +139,7 @@
 	desc = "Should not exists. Bugreport."
 	icon_state = "laser"
 	item_state = "laser"
-	slowdown = 0.3
+	slowdown = 0.2
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	custom_materials = list(/datum/material/iron=2000)
@@ -207,7 +207,6 @@
 	icon_state = "wattz1000"
 	item_state = "laser-pistol"
 	fire_delay = 0
-	slowdown = 0.2
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_LIGHT //Can dual wield, which makes up for the meh damage. Especially so with the Magneto.
 	slot_flags = ITEM_SLOT_BELT
@@ -303,7 +302,6 @@
 ////////////////
 
 
-//Wattz 2000 Laser rifle
 /obj/item/gun/energy/laser/wattz2k
 	name = "laser sniper rifle"
 	desc = "A devastating U.S. Marine Corps issue Wattz 2000 laser rifle, equipped with uniquely powerful parts and a long-range scope."
@@ -459,7 +457,6 @@
 //Alien Blaster
 /obj/item/gun/energy/laser/plasma/pistol/alien
 	name = "alien blaster"
-	slowdown = 0.2
 	item_state = "alienblaster"
 	icon_state = "alienblaster"
 	desc = "This weapon is unlike any other you've ever seen before, and appears to be made out of metals not usually found on Earth. It certainly packs a punch, though."
