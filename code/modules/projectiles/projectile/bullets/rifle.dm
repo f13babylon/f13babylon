@@ -146,13 +146,14 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 /////////			-Very heavy rifle round.
 
 /obj/item/projectile/bullet/a50MG
-	damage = 40
-	armour_penetration = 0.85
+	name = ".50 MG bullet"
+	damage = 50
+	armour_penetration = 0.75
 	pixels_per_second = 4000
 	zone_accuracy_factor = 100
-	wound_bonus = 30
-	bare_wound_bonus = 40//Same as the HMG.
-	supereffective_damage = 60
+	wound_bonus = 50
+	bare_wound_bonus = 80
+	supereffective_damage = 150
 	supereffective_faction = list("hostile", "ant", "supermutant", "deathclaw", "cazador", "raider", "china", "gecko", "wastebot", "radscorpion")
 
 /obj/item/projectile/bullet/a50MG/incendiary
