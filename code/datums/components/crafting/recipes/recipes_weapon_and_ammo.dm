@@ -1021,12 +1021,12 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
-//10mm SMG
-/datum/crafting_recipe/smg10mm
-	name = "10mm SMG"
-	result = /obj/item/gun/ballistic/automatic/smg/smg10mm
+//Grease gun
+/datum/crafting_recipe/greasegun
+	name = "Grease Gun"
+	result = /obj/item/gun/ballistic/automatic/smg/greasegun
 	reqs = list(/obj/item/stack/sheet/metal = 5,
-				/obj/item/advanced_crafting_components/receiver = 1
+				/obj/item/stack/crafting/metalparts = 3,
 				)
 	tools = list(TOOL_WORKBENCH)
 	time = 120
@@ -1034,12 +1034,12 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
-//Grease gun
-/datum/crafting_recipe/greasegun
-	name = "Grease Gun"
-	result = /obj/item/gun/ballistic/automatic/smg/greasegun
+//10mm SMG
+/datum/crafting_recipe/smg10mm
+	name = "10mm SMG"
+	result = /obj/item/gun/ballistic/automatic/smg/smg10mm
 	reqs = list(/obj/item/stack/sheet/metal = 5,
-				/obj/item/advanced_crafting_components/receiver = 1,
+				/obj/item/advanced_crafting_components/receiver = 1
 				)
 	tools = list(TOOL_WORKBENCH)
 	time = 120

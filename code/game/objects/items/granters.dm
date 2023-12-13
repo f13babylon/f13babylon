@@ -715,11 +715,6 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/lightplasmapistol)
 
-/obj/item/book/granter/crafting_recipe/blueprint/greasegun
-	name = "grease gun blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/greasegun)
-
 /obj/item/book/granter/crafting_recipe/blueprint/smg10mm
 	name = "10mm smg blueprint"
 	icon_state = "blueprint2"

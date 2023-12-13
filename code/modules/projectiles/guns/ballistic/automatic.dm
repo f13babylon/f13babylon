@@ -224,7 +224,7 @@
 	suppressed = 1
 	can_unsuppress = TRUE	//Without can_suppress only results in a better examine message
 
-//Uzi			Keywords: 9mm, Dual-wieldable, Bullethose, 32/50 rounds
+//Uzi			Keywords: 9mm, Dual-wieldable, Bullethose, 32/50 Rounds
 /obj/item/gun/ballistic/automatic/smg/uzi
 	name = "9mm submachine gun"
 	desc = "A compact and reliable Israeli Uzi SMG chambered for 9mm, best paired with a .45 longslide with laser sighting."
@@ -235,6 +235,7 @@
 	autofire_shot_delay = 1
 	slowdown = 0.12
 	spread = 20
+	extra_damage = -2	//14 DAM
 
 //MP5			Keywords: 9mm, Suppressed, AP, Accurate, 32/50 Rounds
 /obj/item/gun/ballistic/automatic/smg/mp5
@@ -246,9 +247,9 @@
 	weapon_weight = WEAPON_MEDIUM
 	mag_type = /obj/item/ammo_box/magazine/msmg9mm
 	autofire_shot_delay = 1.3
-	slowdown = 0.1
 	spread = 4
-	extra_penetration = 0.10	//10% AP
+	extra_damage = 2	//18 DAM
+	extra_penetration = 0.15	//15% AP
 	suppressed = 1
 	can_unsuppress = TRUE	//Without can_suppress only results in a better examine message
 
@@ -275,14 +276,13 @@
 	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
 	mag_type = /obj/item/ammo_box/magazine/msmg10mm
 
-//Grease Gun			Keywords: .45 ACP, 30 Rounds
+//Grease Gun			Keywords: .45 ACP, Dual-wieldable, 30 Rounds
 /obj/item/gun/ballistic/automatic/smg/greasegun
 	name = "cheap .45 Auto SMG"
 	desc = "A rather inexpensive M3A1 Grease Gun with the absolute simplest of designs."
 	icon_state = "grease_gun"
 	item_state = "grease_gun"
 	fire_sound = 'sound/f13weapons/smg_dull.ogg'
-	weapon_weight = WEAPON_MEDIUM
 	mag_type = /obj/item/ammo_box/magazine/mgreasegun
 	spread = 18
 	extra_damage = -4		//20 damage

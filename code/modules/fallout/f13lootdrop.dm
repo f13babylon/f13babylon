@@ -893,6 +893,7 @@
 				/obj/effect/spawner/bundle/f13/huntingshotgun,
 				/obj/effect/spawner/bundle/f13/revolver45,
 				/obj/effect/spawner/bundle/f13/smg22
+				/obj/effect/spawner/bundle/f13/greasegun,
 		)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid
@@ -901,7 +902,6 @@
 	loot = list(/obj/effect/spawner/bundle/f13/trail,
 				/obj/effect/spawner/bundle/f13/service,
 				/obj/effect/spawner/bundle/f13/smg10mm,
-				/obj/effect/spawner/bundle/f13/greasegun,
 				/obj/effect/spawner/bundle/f13/auto5,
 				/obj/effect/spawner/bundle/f13/marksman,
 				/obj/effect/spawner/bundle/f13/m1garand,
@@ -1626,7 +1626,8 @@
 				/obj/item/ammo_box/m44,
 				/obj/item/ammo_box/tube/a357,
 				/obj/item/ammo_box/a357,
-				/obj/item/ammo_box/magazine/m556/rifle/small
+				/obj/item/ammo_box/magazine/m556/rifle/small,
+				/obj/item/ammo_box/magazine/mgreasegun
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2/Initialize(mapload) //on mapload, pick how many shit to spawn
@@ -1642,7 +1643,6 @@
 				/obj/item/ammo_box/shotgun/buck,
 				/obj/item/ammo_box/magazine/msmg9mm,
 				/obj/item/ammo_box/magazine/m10mm,
-				/obj/item/ammo_box/magazine/mgreasegun,
 				/obj/item/ammo_box/needle,
 				/obj/item/ammo_box/magazine/mthompson,
 				/obj/item/ammo_box/tube/m44,
@@ -2234,7 +2234,6 @@
 		/obj/item/book/granter/crafting_recipe/blueprint/r82,
 		/obj/item/book/granter/crafting_recipe/blueprint/service,
 		/obj/item/book/granter/crafting_recipe/blueprint/trailcarbine,
-		/obj/item/book/granter/crafting_recipe/blueprint/greasegun,
 		/obj/item/book/granter/crafting_recipe/blueprint/smg10mm,
 		/obj/item/book/granter/crafting_recipe/blueprint/aep7,
 		/obj/item/book/granter/crafting_recipe/blueprint/scoutcarbine,
