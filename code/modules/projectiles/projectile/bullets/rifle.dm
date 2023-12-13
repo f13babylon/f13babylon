@@ -148,6 +148,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 /obj/item/projectile/bullet/a50MG
 	name = ".50 MG bullet"
 	damage = 50
+	stamina = 45
 	armour_penetration = 0.75
 	pixels_per_second = 4000
 	zone_accuracy_factor = 100
