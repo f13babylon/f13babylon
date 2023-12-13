@@ -793,22 +793,6 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
-//lsw lmg
-/datum/crafting_recipe/gun/lsw
-	name = "LSW LMG"
-	result = /obj/item/gun/ballistic/automatic/lsw
-	reqs = list(/obj/item/stack/sheet/metal = 5,
-				/obj/item/advanced_crafting_components/assembly = 1,
-				/obj/item/advanced_crafting_components/alloys = 1,
-				/obj/item/stack/crafting/goodparts = 5,
-				/obj/item/attachments/scope = 1
-				)
-	tools = list(TOOL_WORKBENCH)
-	time = 120
-	category = CAT_WEAPONRY
-	subcategory = CAT_WEAPON
-	always_available = FALSE
-
 
 //service rifle
 /datum/crafting_recipe/servicerifle

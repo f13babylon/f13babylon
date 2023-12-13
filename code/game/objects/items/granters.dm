@@ -810,11 +810,6 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/infiltrator)
 
-/obj/item/book/granter/crafting_recipe/blueprint/lsw
-	name = "lsw blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/gun/lsw)
-
 /obj/item/book/granter/crafting_recipe/blueprint/m1carbine
 	name = "m1 carbine blueprint"
 	icon_state = "blueprint2"

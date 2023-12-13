@@ -144,4 +144,8 @@
 	cost = 2
 	subcategory = LOADOUT_SUBCATEGORY_SHOES_FACTIONS
 	restricted_desc = "KHAN"
-	restricted_roles = list("Great Khan")
+	restricted_roles = list("Khan Senior Enforcer",
+							"Khan Armorer",
+							"Khan Chemist",
+							"Khan Enforcer",
+							)

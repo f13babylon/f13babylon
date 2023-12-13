@@ -10775,6 +10775,17 @@
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/raiders)
+"keU" = (
+/obj/structure/table/reinforced{
+	color = "#c1b6a5"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/clothing/head/welding/f13/japan,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/city)
 "keZ" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/clothing/suit/bio_suit/f13/hazmat,
@@ -11695,11 +11706,11 @@
 /obj/structure/table/reinforced{
 	color = "#c1b6a5"
 	},
-/obj/item/clothing/head/welding/weldingfire,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
+/obj/item/clothing/head/welding/f13/fire,
 /turf/open/floor/f13{
 	color = "#818181";
 	icon_state = "floorrustysolid"
@@ -28429,7 +28440,7 @@ uUe
 wPk
 vaY
 aUa
-vHx
+keU
 laX
 abG
 eQA

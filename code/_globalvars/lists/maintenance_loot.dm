@@ -899,7 +899,6 @@ GLOBAL_LIST_INIT(loot_t2_blueprint, list(
 	/obj/item/book/granter/crafting_recipe/blueprint/sniper,
 	/obj/item/book/granter/crafting_recipe/blueprint/riotshotgun,
 	/obj/item/book/granter/crafting_recipe/blueprint/thatgun,
-	/obj/item/book/granter/crafting_recipe/blueprint/lsw,
 	/obj/item/book/granter/crafting_recipe/blueprint/deagle
 ))
 

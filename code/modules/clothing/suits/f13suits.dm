@@ -242,11 +242,12 @@
 	desc = "My star, my perfect silence."
 	icon = 'icons/fallout/clothing/hats.dmi'
 	icon_state = "hazmat"
-	item_state = "hazmat_helmet"
+	item_state = "hazmat"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
 	resistance_flags = ACID_PROOF
 	armor = list("melee" = 30, "bullet" = 10, "laser" = 30, "energy" = 25, "bomb" = 16, "bio" = 100, "rad" = 100, "fire" = 35, "acid" = 100)
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
+	mutantrace_variation = null
 
 //Fallout 13 toggle apparel directory
 /obj/item/clothing/suit/toggle/labcoat/f13/emergency
