@@ -440,8 +440,7 @@
 /obj/effect/spawner/bundle/weapon/lasmusket
 	name = "laskmusket and ammo spawner"
 	items = list(
-		/obj/item/gun/ballistic/rifle/hobo/lasmusket,
-		/obj/item/ammo_box/lasmusket,
+		/obj/item/gun/energy/lasmusket
 		)
 
 /obj/effect/spawner/bundle/weapon/piperifle

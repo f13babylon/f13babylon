@@ -328,7 +328,7 @@ Fence
 						/obj/item/gun/ballistic/revolver/widowmaker = 10,
 						/obj/item/gun/ballistic/revolver/winchesterrebored = 10,
 						/obj/item/gun/ballistic/automatic/autopipe = 15,
-						/obj/item/gun/ballistic/rifle/hobo/lasmusket = 15,
+						/obj/item/gun/energy/lasmusket = 15,
 						/obj/item/stack/crafting/armor_plate = 20,
 						)
 

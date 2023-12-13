@@ -506,22 +506,13 @@
 	name = "ammo box (4.73mm high-velocity)"
 	ammo_type = /obj/item/ammo_casing/caseless/a473/hv
 
-/obj/item/ammo_box/lasmusket
-	name = "Battery box (Laser musket)"
-	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "lasmusketbox"
-	multiple_sprites = 2
-	ammo_type = /obj/item/ammo_casing/caseless/lasermusket
-	max_ammo = 18
-	w_class = WEIGHT_CLASS_NORMAL
-
 /obj/item/ammo_box/plasmamusket
 	name = "Canister box (Plasma musket)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "plasmusketbox"
 	multiple_sprites = 2
-	ammo_type = /obj/item/ammo_casing/caseless/plasmacaster
-	max_ammo = 6
+	ammo_type = /obj/item/ammo_casing/caseless/plasma_musket
+	max_ammo = 12
 	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/ammo_box/a40mmHE
