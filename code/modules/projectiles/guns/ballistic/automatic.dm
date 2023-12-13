@@ -210,8 +210,8 @@
 
 //American 180			Keywords: .22 LR, Supressed, Bullethose, 180 Round drum
 /obj/item/gun/ballistic/automatic/smg/smg22
-	name = ".22 LR submachinegun"
-	desc = "An integrally suppressed submachinegun chambered in the common .22 long rifle. Top loaded drum magazine."
+	name = "silenced .22 SMG"
+	desc = "An integrally suppressed American 180 riot suppression submachine gun chambered in .22 LR, feeding from top-loaded pan magazines."
 	icon_state = "smg22"
 	item_state = "smg22"
 	fire_sound = 'sound/f13weapons/american180.ogg'
@@ -226,8 +226,8 @@
 
 //Uzi			Keywords: 9mm, Dual-wieldable, Bullethose, 32/50 rounds
 /obj/item/gun/ballistic/automatic/smg/uzi
-	name = "Uzi"
-	desc = "A lightweight, burst-fire submachine gun, for when you really want someone dead. Uses 9mm rounds."
+	name = "9mm submachine gun"
+	desc = "A compact and reliable Israeli Uzi SMG chambered for 9mm, best paired with a .45 longslide with laser sighting."
 	icon_state = "uzi"
 	item_state = "uzi"
 	fire_sound = 'sound/f13weapons/9mm.ogg'
@@ -235,28 +235,27 @@
 	autofire_shot_delay = 1
 	slowdown = 0.12
 	spread = 20
-	extra_damage = -2	//Results in 14 damage
 
 //MP5			Keywords: 9mm, Suppressed, AP, Accurate, 32/50 Rounds
 /obj/item/gun/ballistic/automatic/smg/mp5
-	name = "MP-5 SD"
-	desc = "An integrally suppressed submachinegun chambered in 9mm."
+	name = "advanced 9mm SMG"
+	desc = "An integrally suppressed MP5SD6 made by Heckler & Koch, renowned for its accuracy in comparison to other machine guns of its type."
 	icon_state = "mp5"
 	item_state = "fnfal"
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 	weapon_weight = WEAPON_MEDIUM
 	mag_type = /obj/item/ammo_box/magazine/msmg9mm
 	autofire_shot_delay = 1.3
+	slowdown = 0.15
 	spread = 4
-	extra_damage = 2	//Results in 18 damage
-	extra_penetration = 0.15	//Results in 15 AP
+	extra_penetration = 0.10	//10% AP
 	suppressed = 1
 	can_unsuppress = TRUE	//Without can_suppress only results in a better examine message
 
 //Calico			Keywords: 9mm, Bullethose, 70 rounds
 /obj/item/gun/ballistic/automatic/smg/calico
-	name = "helical 9mm submachine gun"
-	desc = "A lightweight, burst-fire submachine gun, for when you really want someone dead. Uses 9mm rounds."
+	name = "9mm machine gun"
+	desc = "A roller-delayed Calico M960A machine gun that feeds from a proprietary helical magazine, chambered for 9mm."
 	icon_state = "calico"
 	item_state = "calico"
 	fire_sound = 'sound/f13weapons/smg_loud.ogg'
@@ -270,7 +269,7 @@
 //10mm SMG			Keywords: 10mm, Dual-wieldable, 30 Rounds
 /obj/item/gun/ballistic/automatic/smg/smg10mm
 	name = "10mm submachine gun"
-	desc = "One of the most common personal-defense weapons of the Great War, a sturdy and reliable open-bolt 10mm submachine gun."
+	desc = "An open-bolt Heckler & Koch MP9 that saw extensive use in military and police units prior to the war, chambered in 10mm despite its name."
 	icon_state = "smg10mm"
 	item_state = "smg10mm"
 	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
@@ -278,21 +277,20 @@
 
 //Grease Gun			Keywords: .45 ACP, 30 Rounds
 /obj/item/gun/ballistic/automatic/smg/greasegun
-	name = "Grease Gun"
-	desc = "An inexpensive submachine gun, chambered in .45 ACP. Very high rate of fire in bursts."
+	name = "cheap .45 Auto SMG"
+	desc = "A rather inexpensive M3A1 Grease Gun with the absolute simplest of designs."
 	icon_state = "grease_gun"
 	item_state = "grease_gun"
 	fire_sound = 'sound/f13weapons/smg_dull.ogg'
 	weapon_weight = WEAPON_MEDIUM
 	mag_type = /obj/item/ammo_box/magazine/mgreasegun
-	slowdown = 0.2
-	spread = 16
-	extra_damage = -2	//Results in 22 damage
+	spread = 18
+	extra_damage = -4		//20 damage
 
 //Thompson			Keywords: .45 ACP, 30/50 Rounds
 /obj/item/gun/ballistic/automatic/smg/thompson
-	name = "Thompson SMG"
-	desc = "A powerful submachinegun chambered in .45 ACP, this weapon fires at a blistering rate with a heavy pistol cartridge, and can accept very high capacity magazines, to boot."
+	name = ".45 Auto submachine gun"
+	desc = "A classic, American-made Thompson M1A1 submachine gun chambered in .45 Auto. It can feed from a straight stick magazine or a fifty-round drum."
 	icon_state = "thompson"
 	item_state = "thompson"
 	fire_sound = 'sound/f13weapons/smg_dull.ogg'
@@ -304,8 +302,8 @@
 
 //P90			Keywords: 5mm, AP, 50 Rounds
 /obj/item/gun/ballistic/automatic/smg/p90
-	name = "FN P90c"
-	desc = "The Fabrique Nationale P90c was just coming into use at the time of the war. The weapon's bullpup layout, and compact design, make it easy to control. The durable P90c is prized for its reliability, and high firepower in a ruggedly-compact package. Chambered in 10mm."
+	name = "5mm submachine gun"
+	desc = "A uniquely powerful and lightweight personal defense weapon developed by FN Herstal, chambered for 5mm and feeding from fifty-round translucent box magazines."
 	icon_state = "p90"
 	item_state = "p90"
 	fire_sound = 'sound/f13weapons/smg_loud.ogg'
@@ -315,13 +313,13 @@
 	autofire_shot_delay = 1.3
 	spread = 13
 	slowdown = 0.2
-	extra_damage = -2	//Results in 17 damage
-	extra_penetration = -0.15	//Results in 30 AP
+	extra_damage = -5		//15 DAM
+	extra_penetration = -0.15	//30% AP
 
 //14mm SMG 			Keywords: 14mm, AP, 21/27 rounds
 /obj/item/gun/ballistic/automatic/smg/smg14mm
-	name = "14mm SMG"
-	desc = "A heavy-duty SMG designed to tear through most forms of armor."
+	name = "14mm submachine gun"
+	desc = "A SIG-made hand-cannon chambered for the 14mm hunting cartridge, loading from top-mounted magazines and benefitting from an unique recoil reduction system."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "smg14mm"
 	item_state = "smg14mm"
@@ -333,7 +331,7 @@
 	slowdown = 0.4
 	spread = 12
 	recoil = 0.85
-	extra_penetration = 0.05	//Results in 5 AP
+	extra_penetration = 0.05	//5% AP
 
 ////////////
 //CARBINES//
@@ -411,28 +409,6 @@
 
 /obj/item/gun/ballistic/automatic/m1carbine/compact/update_icon_state()
 	icon_state = "[initial(icon_state)][magazine ? "-[magazine.max_ammo]" : ""][chambered ? "" : "-e"][stock ? "" : "-f"]"
-
-
-//WT-550								4.7mm, 20 round magazine
-/obj/item/gun/ballistic/automatic/wt550
-	name = "4.73mm carbine"
-	desc = "A WT-550 Personal Defense Weapon, manufactured by West Tek. It fires 4.73mm caseless rounds."
-	item_state = "m90"
-	icon_state = "WT550"
-	mag_type = /obj/item/ammo_box/magazine/m473/small
-	burst_size = 1
-	slowdown = 0.2
-	is_automatic = TRUE
-	automatic = TRUE
-	autofire_shot_delay = 1.75
-
-	w_class = WEIGHT_CLASS_NORMAL
-	weapon_weight = WEAPON_MEDIUM
-	spread = 3 //foregrip
-	fire_delay = 1
-	can_bayonet = TRUE
-	knife_x_offset = 25
-	knife_y_offset = 12
 
 
 ////////////////////
