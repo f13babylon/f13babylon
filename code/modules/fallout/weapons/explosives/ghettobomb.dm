@@ -84,7 +84,7 @@
 	shrapnel_radius = 4
 	var/datum/looping_sound/pipebomb/soundloop
 
-/obj/item/grenade/homemade/pipebomb/Initialize()
+/obj/item/grenade/homemade/pipebomb/Initialize(mapload)
 	. = ..()
 	soundloop = new(list(src), FALSE)
 
@@ -115,7 +115,7 @@
 	icon_state = "dynamite"
 	var/datum/looping_sound/dynamite/soundloop
 
-/obj/item/grenade/homemade/dynamite/Initialize()
+/obj/item/grenade/homemade/dynamite/Initialize(mapload)
 	. = ..()
 	soundloop = new(list(src), FALSE)
 
