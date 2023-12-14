@@ -753,7 +753,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	suit_store = /obj/item/gun/ballistic/automatic/smg/mp5
 	backpack_contents = list(
 		/obj/item/grenade/smokebomb = 1,
-		/obj/item/ammo_box/smg9mm = 2,
+		/obj/item/ammo_box/magazine/msmg9mm = 2,
 	)
 
 /datum/outfit/loadout/expsniper
