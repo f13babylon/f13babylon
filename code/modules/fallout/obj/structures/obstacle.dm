@@ -52,8 +52,8 @@
 	name = "barbed wire"
 	desc = "Don't walk into this."
 	icon_state = "barbed"
-	density = FALSE
-	max_integrity = 75
+	max_integrity = 100
+	pass_flags_self = LETPASSTHROW
 	var/slowdown = 40
 	var/buildstacktype = /obj/item/stack/rods
 	var/buildstackamount = 10
@@ -64,6 +64,9 @@
 /obj/structure/obstacle/barbedwire/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/caltrop, 20, 30, 100, CALTROP_BYPASS_SHOES)
+
+/obj/structure/obstacle/barbedwire/CanPass(atom/movable/mover, border_dir)
+	return ishuman(mover) ? TRUE : ..()
 
 /obj/structure/obstacle/barbedwire/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/wirecutters))
