@@ -405,12 +405,12 @@ ATTACHMENTS
 	if(firing)
 		return
 	var/user_turf = get_turf(user)
-	if(target == user_turf || ((ismob(target) || isobj(target)) && (user.a_intent == INTENT_HELP || user.a_intent == INTENT_DISARM)))
+	if(target == user_turf)
 		return
 
 	var/stamloss = user.getStaminaLoss()
 	if(flag)
-		if(target in user.contents) //can't shoot stuff inside us.
+		if(target in user.contents || ((ismob(target) || isobj(target)) && (user.a_intent == INTENT_HELP || user.a_intent == INTENT_DISARM))) //can't shoot stuff inside us or on help/disarm intent.
 			return
 		if(iscarbon(target))
 			var/mob/living/carbon/C = target
