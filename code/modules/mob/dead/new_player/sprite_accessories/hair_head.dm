@@ -905,10 +905,6 @@
 	name = "Ponytail 8 (Thin)"
 	icon_state = "hair_thin_ponytail"
 
-/datum/sprite_accessory/hair/ponytail9
-	name = "Ponytail 9"
-	icon_state = "hair_"
-
 /datum/sprite_accessory/hair/highponytail
 	name = "Ponytail (High)"
 	icon_state = "hair_highponytail"
