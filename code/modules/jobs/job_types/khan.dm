@@ -164,11 +164,11 @@
 	name = "Grunt Enforcer"
 	belt = /obj/item/storage/belt/bandolier
 	l_hand = /obj/item/melee/onehanded/machete/scrapsabre/khan
-	r_hand = /obj/item/gun/ballistic/automatic/smg/greasegun
+	r_hand = /obj/item/gun/ballistic/automatic/smg/smg10mm
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
 	head = /obj/item/clothing/head/helmet/f13/khan/bandana
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/mgreasegun = 2,
+		/obj/item/ammo_box/magazine/msmg10mm = 2,
 		/obj/item/book/granter/trait/trekking = 1,
 		/obj/item/book/granter/trait/selection = 1)
 
