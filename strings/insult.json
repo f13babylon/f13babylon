@@ -1,5 +1,5 @@
 {
-	"insult_gen":[
+	"insult_gen": [
 		"yells, ''I'm going to @pick(verbs_use) you, you @pick(adjective_insult) @pick(nouns_insult)!''",
 		"yells, ''Rend and @pick(verbs_touch), Rend and @pick(verbs_use)!''",
 		"yells, ''You @pick(nouns_insult), I'm going to @pick(verbs_use) you right in the @pick(nouns_body). <B>JUST YOU WAIT!</B>''",
@@ -9,9 +9,8 @@
 		"yells, ''Hippity hoppity, get off of my property, you @pick(nouns_insult)!''",
 		"yells, ''@pick(curse_words), what am I meant to do with this @pick(adjective_insult) @pick(nouns_objects).''"
 	],
-	
-    "verbs_use": [
-        "touch",
+	"verbs_use": [
+		"touch",
 		"hold",
 		"poke",
 		"punch",
@@ -28,49 +27,46 @@
 		"scavenge",
 		"stab",
 		"shoot"
-    ],
-
-    "verbs_touch": [
-        "pat",
-        "mess with",
-        "absorb",
-        "sneeze on",
-        "inject",
-        "rip",
-        "slap",
-        "grab",
+	],
+	"verbs_touch": [
+		"pat",
+		"mess with",
+		"absorb",
+		"sneeze on",
+		"inject",
+		"rip",
+		"slap",
+		"grab",
 		"choke",
 		"slam",
 		"stab",
 		"whack",
 		"beat"
-    ],
-	
-    "verbs_move": [
+	],
+	"verbs_move": [
 		"run",
-        "jog",
-        "leg it",
-        "slide",
-        "cheese it",
-        "walk",
-        "stroll",
-        "fly",
+		"jog",
+		"leg it",
+		"slide",
+		"cheese it",
+		"walk",
+		"stroll",
+		"fly",
 		"scoot",
 		"yakkety",
 		"speed",
 		"fuck off",
 		"escape"
-    ],
-
-    "nouns_insult": [
-        "brahmin-sniffer",
-        "raider",
-        "noob",
-        "dummy",
-        "cuck",
-        "scum-sucker",
-        "mutie",
-        "headass",
+	],
+	"nouns_insult": [
+		"brahmin-sniffer",
+		"raider",
+		"noob",
+		"dummy",
+		"cuck",
+		"scum-sucker",
+		"mutie",
+		"headass",
 		"bitch",
 		"whorelord",
 		"dumbass",
@@ -83,12 +79,10 @@
 		"oaf-lookin' schooner",
 		"worm-eyed hotten blaugh",
 		"vile stoochie",
-		"tribal",
-		"Kitten looking ass"
-    ],
-
-    "nouns_generic": [
-        "you",
+		"tribal"
+	],
+	"nouns_generic": [
+		"you",
 		"you there",
 		"guy",
 		"person",
@@ -98,9 +92,8 @@
 		"schooner",
 		"shilpit",
 		"smooth brain"
-    ],
-
-    "nouns_objects": [
+	],
+	"nouns_objects": [
 		"thing",
 		"tool",
 		"whatever",
@@ -109,74 +102,69 @@
 		"toy",
 		"device",
 		"whatever",
-        "squid",
+		"squid",
 		"dildo",
 		"plush"
-    ],
-
-    "nouns_body": [
-        "ass",
-        "head",
-        "face",
-        "arms",
-        "fingers",
-        "toes",
-        "chest",
-        "eyes",
+	],
+	"nouns_body": [
+		"ass",
+		"head",
+		"face",
+		"arms",
+		"fingers",
+		"toes",
+		"chest",
+		"eyes",
 		"nails",
 		"groin",
 		"stomach",
 		"intestines",
 		"knees"
-    ],
-
-    "adjective_insult": [
-        "ugly",
-        "repulsive",
-        "dumb",
-        "asinine",
-        "mongoloid",
-        "childish",
-        "Knight-like",
-        "whoreish",
+	],
+	"adjective_insult": [
+		"ugly",
+		"repulsive",
+		"dumb",
+		"asinine",
+		"mongoloid",
+		"childish",
+		"Knight-like",
+		"whoreish",
 		"dimwit",
 		"jerk-face",
 		"vomit-inducer",
 		"virgin",
 		"wannabe chad"
-    ],
-
-    "adjective_objects": [
-        "big",
-        "small",
-        "tiny",
-        "round",
-        "square",
-        "oblong",
-        "colorful",
-        "dull",
+	],
+	"adjective_objects": [
+		"big",
+		"small",
+		"tiny",
+		"round",
+		"square",
+		"oblong",
+		"colorful",
+		"dull",
 		"shiny",
 		"sparkling",
 		"blinking",
 		"awful",
 		"fuck-face"
-    ],
-
-    "adjective_generic": [
-        "nice",
-        "pretty",
-        "ugly",
-        "bad",
-        "okay",
-        "stupid",
+	],
+	"adjective_generic": [
+		"nice",
+		"pretty",
+		"ugly",
+		"bad",
+		"okay",
+		"stupid",
 		"dumb"
-    ],
-	
-    "curse_words": [
-        "damn",
-        "shit",
-        "arse",
-        "ass",
+	],
+	"curse_words": [
+		"damn",
+		"shit",
+		"arse",
+		"ass",
 		"wank",
 		"jerk",
 		"bitch",
@@ -185,5 +173,5 @@
 		"fuck",
 		"bitch",
 		"woman"
-    ]
+	]
 }

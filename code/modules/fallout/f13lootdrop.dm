@@ -937,7 +937,7 @@
 	loot = list(/obj/effect/spawner/bundle/f13/amr = 10,
 				/obj/effect/spawner/bundle/f13/brushgun = 15,
 				/obj/effect/spawner/bundle/f13/rangemaster = 15,
-				/obj/item/gun/ballistic/rocketlauncher = 10,
+				///obj/item/gun/ballistic/rocketlauncher = 10,
 				/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller = 10,
 				/obj/item/gun/ballistic/automatic/bozar = 10
 				)
@@ -1543,14 +1543,14 @@
 /obj/effect/spawner/bundle/f13/rocketlauncher
 	name = "rocket launcher and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/rocketlauncher,
+				///obj/item/gun/ballistic/rocketlauncher,
 				/obj/item/ammo_casing/caseless/rocket
 	)
 
 /obj/effect/spawner/bundle/f13/grenadelauncher
 	name = "grenade launcher and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/revolver/grenadelauncher,
+				///obj/item/gun/ballistic/revolver/grenadelauncher,
 				/obj/item/ammo_box/a40mmHE
 	)
 
@@ -1716,7 +1716,7 @@
 				/obj/item/grenade/empgrenade,
 				/obj/item/grenade/f13/radiation,
 				/obj/item/grenade/f13/frag,
-				/obj/effect/spawner/bundle/f13/grenadelauncher,
+				///obj/effect/spawner/bundle/f13/grenadelauncher,
 				)
 
 /obj/effect/spawner/lootdrop/f13/bomb/top_tier
@@ -1730,7 +1730,7 @@
 				/obj/item/grenade/f13/he_grenade,
 				/obj/item/grenade/plastic/x4,
 				/obj/item/grenade/stingbang/shred = 1,
-				/obj/effect/spawner/bundle/f13/rocketlauncher,
+				///obj/effect/spawner/bundle/f13/rocketlauncher,
 				)
 
 

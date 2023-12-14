@@ -333,6 +333,7 @@
 	slowdown = 0.25
 	recoil = 2.1
 	w_class = WEIGHT_CLASS_NORMAL
+	weapon_weight = WEAPON_MEDIUM
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_BACK
 	fire_sound = 'sound/f13weapons/shotgun.ogg'
 	can_bayonet = TRUE
