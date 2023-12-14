@@ -347,13 +347,13 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 /datum/outfit/loadout/whitelegsranged
 	name = "White Legs Storm-Drummer"
 	suit = /obj/item/clothing/suit/f13/tribal/whitelegs
+	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
 	backpack_contents = list(
 		/obj/item/clothing/under/f13/whitelegs = 1,
 		/obj/item/clothing/under/f13/female/whitelegs = 1,
-		/obj/item/gun/ballistic/automatic/smg/thompson = 1,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
 		/obj/item/reagent_containers/pill/patch/healingpoultice = 1,
-		/obj/item/ammo_box/magazine/mthompson = 2
+		/obj/item/ammo_box/magazine/msmg10mm = 2
 	)
 
 /datum/outfit/loadout/whitelegsshaman
