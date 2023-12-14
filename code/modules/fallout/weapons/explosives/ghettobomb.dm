@@ -82,18 +82,18 @@
 	det_time = 60
 	shrapnel_type = /obj/item/projectile/bullet/shrapnel/nail
 	shrapnel_radius = 4
-	var/datum/looping_sound/pipebomb/soundloop
+	//var/datum/looping_sound/pipebomb/soundloop
 
 /obj/item/grenade/homemade/pipebomb/Initialize(mapload)
 	. = ..()
-	soundloop = new(list(src), FALSE)
+	//soundloop = new(list(src), FALSE)
 
 /obj/item/grenade/homemade/pipebomb/attack_self(mob/user) //
 	if(!active)
 		if(!botch_check(user))
 			to_chat(user, "<span class='warning'>You light [src] on fire!")
 			primefuse(user, null, FALSE)
-			soundloop.start()
+			//soundloop.start()
 
 /obj/item/grenade/homemade/pipebomb/prime(mob/living/lanced_by)
 	. = ..()
@@ -113,18 +113,18 @@
 	display_timer = 0
 	det_time = 30
 	icon_state = "dynamite"
-	var/datum/looping_sound/dynamite/soundloop
+	//var/datum/looping_sound/dynamite/soundloop
 
 /obj/item/grenade/homemade/dynamite/Initialize(mapload)
 	. = ..()
-	soundloop = new(list(src), FALSE)
+	//soundloop = new(list(src), FALSE)
 
 /obj/item/grenade/homemade/dynamite/attack_self(mob/user) //
 	if(!active)
 		if(!botch_check(user))
 			to_chat(user, "<span class='warning'>You light [src] on fire!")
 			primefuse(user, null, FALSE)
-			soundloop.start()
+			//soundloop.start()
 
 /obj/item/grenade/homemade/dynamite/prime(mob/living/lanced_by)
 	. = ..()
