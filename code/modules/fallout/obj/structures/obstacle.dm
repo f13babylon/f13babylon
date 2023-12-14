@@ -52,11 +52,11 @@
 	name = "barbed wire"
 	desc = "Don't walk into this."
 	icon_state = "barbed"
-	max_integrity = 100
+	max_integrity = 75
 	pass_flags_self = LETPASSTHROW
 	var/slowdown = 40
 	var/buildstacktype = /obj/item/stack/rods
-	var/buildstackamount = 10
+	var/buildstackamount = 5
 
 /obj/structure/obstacle/barbedwire/end
 	icon_state = "barbed_end"
