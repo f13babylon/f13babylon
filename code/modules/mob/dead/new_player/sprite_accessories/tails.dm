@@ -236,6 +236,20 @@
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED
 
+/datum/sprite_accessory/tails/human/pede
+	name = "Centipede"
+	icon_state = "pede"
+	color_src = MATRIXED
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails_animated/human/pede
+	name = "Centipede"
+	icon_state = "pede"
+	color_src = MATRIXED
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	matrixed_sections = MATRIX_RED
+
 /datum/sprite_accessory/tails/human/corvid
 	name = "Corvid"
 	icon_state = "crow"
@@ -608,20 +622,6 @@
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
 
-/datum/sprite_accessory/tails/human/pede
-	name = "Scolipede"
-	icon_state = "pede"
-	color_src = MATRIXED
-	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
-	matrixed_sections = MATRIX_RED
-
-/datum/sprite_accessory/tails_animated/human/pede
-	name = "Scolipede"
-	icon_state = "pede"
-	color_src = MATRIXED
-	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
-	matrixed_sections = MATRIX_RED
-
 /datum/sprite_accessory/tails/human/sergal
 	name = "Sergal"
 	icon_state = "sergal"
@@ -970,6 +970,16 @@
 /datum/sprite_accessory/tails/mam_tails/slugcat
 	name = "Cat Slug"
 	icon_state = "slugcat"
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails/mam_tails/pede
+	name = "Centipede"
+	icon_state = "pede"
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails_animated/mam_tails_animated/pede
+	name = "Centipede"
+	icon_state = "pede"
 	matrixed_sections = MATRIX_RED
 
 /datum/sprite_accessory/tails/mam_tails/clubtail
@@ -1538,16 +1548,6 @@
 	icon_state = "wah"
 	extra = TRUE
 	matrixed_sections = MATRIX_RED_GREEN
-
-/datum/sprite_accessory/tails/mam_tails/pede
-	name = "Scolipede"
-	icon_state = "pede"
-	matrixed_sections = MATRIX_RED
-
-/datum/sprite_accessory/tails_animated/mam_tails_animated/pede
-	name = "Scolipede"
-	icon_state = "pede"
-	matrixed_sections = MATRIX_RED
 
 /datum/sprite_accessory/tails/mam_tails/sabresune
 	name = "Sabresune"

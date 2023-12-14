@@ -171,6 +171,11 @@
 	icon_state = "catbig"
 	matrixed_sections = MATRIX_RED_GREEN
 
+/datum/sprite_accessory/ears/mam_ears/pede
+	name = "Centipede"
+	icon_state = "pede"
+	matrixed_sections = MATRIX_RED_GREEN
+
 /datum/sprite_accessory/ears/mam_ears/cobra
 	name = "Cobra Hood"
 	icon_state = "cobra"
@@ -397,11 +402,6 @@
 	name = "Sandfox (Tall)"
 	icon = 'icons/mob/mutant_bodyparts_large.dmi'
 	icon_state = "sandfox"
-	matrixed_sections = MATRIX_RED_GREEN
-
-/datum/sprite_accessory/ears/mam_ears/pede
-	name = "Scolipede"
-	icon_state = "pede"
 	matrixed_sections = MATRIX_RED_GREEN
 
 /datum/sprite_accessory/ears/mam_ears/sergal

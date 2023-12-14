@@ -92,6 +92,16 @@
 	extra2 = TRUE
 	extra2_color_src = MUTCOLORS3
 
+/datum/sprite_accessory/snouts/mam_snouts/pede
+	name = "Centipede"
+	icon_state = "pede"
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/snouts/mam_snouts/fpede
+	name = "Centipede (Top)"
+	icon_state = "fpede"
+	matrixed_sections = MATRIX_RED_GREEN
+
 /datum/sprite_accessory/snouts/mam_snouts/cow
 	name = "Cow"
 	icon_state = "cow"
@@ -366,16 +376,6 @@
 	name = "Round + Light (Top)"
 	icon_state = "froundlight"
 	color_src = MUTCOLORS
-
-/datum/sprite_accessory/snouts/mam_snouts/pede
-	name = "Scolipede"
-	icon_state = "pede"
-	matrixed_sections = MATRIX_RED_GREEN
-
-/datum/sprite_accessory/snouts/mam_snouts/fpede
-	name = "Scolipede (Top)"
-	icon_state = "fpede"
-	matrixed_sections = MATRIX_RED_GREEN
 
 /datum/sprite_accessory/snouts/mam_snouts/sergal
 	name = "Sergal"

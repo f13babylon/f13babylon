@@ -117,6 +117,11 @@
 	icon_state = "bovine"
 	covered_limbs = list("Head" = MATRIX_ALL, "Chest" = MATRIX_RED_GREEN, "Left Leg" = MATRIX_ALL, "Right Leg" = MATRIX_ALL, "Left Arm" = MATRIX_RED_GREEN, "Right Arm" = MATRIX_RED_GREEN)
 
+/datum/sprite_accessory/mam_body_markings/pede
+	name = "Centipede"
+	icon_state = "centipede"
+	covered_limbs = list("Head" = MATRIX_GREEN, "Chest" = MATRIX_ALL, "Left Leg" = MATRIX_GREEN, "Right Leg" = MATRIX_GREEN, "Left Arm" = MATRIX_GREEN, "Right Arm" = MATRIX_GREEN)
+
 /datum/sprite_accessory/mam_body_markings/corgi
 	name = "Corgi"
 	icon_state = "corgi"
@@ -327,11 +332,6 @@
 	name = "Sabresune"
 	icon_state = "sabresune"
 	covered_limbs = list("Head" = MATRIX_RED_GREEN, "Chest" = MATRIX_RED_GREEN, "Left Leg" = MATRIX_RED_GREEN, "Right Leg" = MATRIX_RED_GREEN, "Left Arm" = MATRIX_RED_GREEN, "Right Arm" = MATRIX_RED_GREEN)
-
-/datum/sprite_accessory/mam_body_markings/pede
-	name = "Scolipede"
-	icon_state = "scolipede"
-	covered_limbs = list("Head" = MATRIX_GREEN, "Chest" = MATRIX_ALL, "Left Leg" = MATRIX_GREEN, "Right Leg" = MATRIX_GREEN, "Left Arm" = MATRIX_GREEN, "Right Arm" = MATRIX_GREEN)
 
 /datum/sprite_accessory/mam_body_markings/sergal
 	name = "Sergal"
