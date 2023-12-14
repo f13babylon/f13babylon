@@ -717,9 +717,6 @@
 "fg" = (
 /obj/structure/bed/old,
 /obj/effect/spawner/lootdrop/bedsheet,
-/obj/structure/sign/poster/contraband/pinup_anthro8{
-	pixel_y = 32
-	},
 /turf/open/floor/wood/wood_fancy,
 /area/f13/building)
 "fh" = (
@@ -794,9 +791,6 @@
 /obj/item/poster/random_contraband,
 /obj/item/poster/random_contraband,
 /obj/item/poster/random_contraband,
-/obj/structure/sign/poster/contraband/pinup_anthro3{
-	pixel_x = 32
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common/wood_common_light,
 /area/f13/building)
@@ -858,7 +852,6 @@
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/building)
 "ge" = (
-/obj/structure/sign/poster/contraband/pinup_anthro15,
 /turf/closed/indestructible/riveted{
 	desc = "A heavily reinforced utility tunnel  wall. You doubt anything short of a nuke would break it.";
 	icon = 'icons/fallout/turfs/walls/tunnel.dmi';
@@ -1599,7 +1592,6 @@
 	},
 /area/f13/building)
 "kF" = (
-/obj/structure/sign/poster/contraband/pinup_anthro2,
 /turf/closed/indestructible/riveted{
 	desc = "A heavily reinforced utility tunnel  wall. You doubt anything short of a nuke would break it.";
 	icon = 'icons/fallout/turfs/walls/tunnel.dmi';
@@ -2217,9 +2209,6 @@
 /obj/structure/closet/crate/footchest,
 /obj/effect/spawner/lootdrop/techstorage/engineering,
 /obj/item/integrated_circuit_printer,
-/obj/structure/sign/poster/contraband/pinup_anthro4{
-	pixel_y = 32
-	},
 /turf/open/floor/wood/wood_common/wood_common_light,
 /area/f13/building)
 "oB" = (
@@ -2300,9 +2289,6 @@
 /obj/item/integrated_circuit/logic/binary/greater_than{
 	pixel_x = -4;
 	pixel_y = 9
-	},
-/obj/structure/sign/poster/contraband/pinup_anthro6{
-	pixel_x = -32
 	},
 /turf/open/floor/wood/wood_common/wood_common_light,
 /area/f13/building)
@@ -2895,7 +2881,6 @@
 /turf/open/transparent/openspace,
 /area/f13/wasteland/rocksprings)
 "tl" = (
-/obj/effect/spawner/lootdrop/trash,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken2"
@@ -3135,10 +3120,6 @@
 /obj/structure/table/wood,
 /obj/item/paper_bin,
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/legion)
-"uT" = (
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/f13/wood,
 /area/f13/legion)
 "uW" = (
 /obj/structure/railing/corner,
@@ -4035,9 +4016,6 @@
 	},
 /area/f13/building)
 "AE" = (
-/obj/structure/sign/poster/contraband/pinup_anthro6{
-	pixel_x = -32
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
 /area/f13/building)
@@ -4154,9 +4132,6 @@
 /obj/structure/curtain{
 	color = "#363636";
 	pixel_y = 32
-	},
-/obj/structure/sign/poster/contraband/pinup_anthro14{
-	pixel_x = 32
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -4380,7 +4355,6 @@
 /turf/open/transparent/openspace,
 /area/f13/building)
 "Dn" = (
-/obj/structure/sign/poster/contraband/pinup_anthro10,
 /turf/closed/indestructible/riveted{
 	desc = "A heavily reinforced utility tunnel  wall. You doubt anything short of a nuke would break it.";
 	icon = 'icons/fallout/turfs/walls/tunnel.dmi';
@@ -5010,9 +4984,6 @@
 "Ky" = (
 /obj/structure/bed/wooden,
 /obj/effect/spawner/lootdrop/bedsheet,
-/obj/structure/sign/poster/contraband/pinup_anthro14{
-	pixel_y = 32
-	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "Kz" = (
@@ -6516,7 +6487,6 @@
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "Vl" = (
-/obj/structure/sign/poster/contraband/pinup_anthro4,
 /turf/closed/indestructible/riveted{
 	desc = "A heavily reinforced utility tunnel  wall. You doubt anything short of a nuke would break it.";
 	icon = 'icons/fallout/turfs/walls/tunnel.dmi';
@@ -19816,11 +19786,11 @@ TS
 TS
 TS
 pR
-uT
+Va
 Va
 xy
 se
-uT
+Va
 bZ
 Wi
 UL
@@ -20074,9 +20044,9 @@ wE
 wE
 wE
 Va
-uT
 Va
-uT
+Va
+Va
 Va
 wS
 Wi
@@ -20331,10 +20301,10 @@ Eg
 Eg
 Zh
 Va
-uT
 Va
 Va
-uT
+Va
+Va
 bZ
 Wi
 UL
@@ -20845,9 +20815,9 @@ gi
 gi
 fz
 Va
-uT
 Va
-uT
+Va
+Va
 xy
 bZ
 Wi
@@ -21104,8 +21074,8 @@ fz
 Va
 Va
 Va
-uT
-uT
+Va
+Va
 bZ
 Wi
 UL
@@ -21616,10 +21586,10 @@ gi
 gi
 fz
 Va
-uT
 Va
 Va
-uT
+Va
+Va
 bZ
 Wi
 UL
@@ -21874,7 +21844,7 @@ gi
 fz
 xy
 Va
-uT
+Va
 Va
 xy
 wS
@@ -22129,11 +22099,11 @@ gi
 gi
 gi
 fz
-uT
 Va
-uT
 Va
-uT
+Va
+Va
+Va
 bZ
 Wi
 UL

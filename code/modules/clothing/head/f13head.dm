@@ -870,12 +870,21 @@
 	icon_state = "jasonmask"
 	item_state = "jasonmask"
 
+/obj/item/clothing/head/welding/f13 //dont use
+	icon_state = ""
+	mutantrace_variation = null
+
 /obj/item/clothing/head/welding/f13/fire
 	name = "cremator welding helmet"
 	desc = "A welding helmet with flames painted on it.<br>It sure is creepy but also badass."
 	icon_state = "welding_fire"
-	item_state = "welding"
-	tint = 1
+	item_state = "welding_fire"
+
+/obj/item/clothing/head/welding/f13/japan
+	name = "oriental welding helmet"
+	desc = "A welding helmet with a white and red oriental design."
+	icon_state = "welding_japan"
+	item_state = "welding_japan"
 
 /obj/item/clothing/head/helmet/f13/atombeliever
 	name = "believer headdress"

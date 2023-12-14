@@ -107,7 +107,7 @@
 		src.item_state = "ushankadown"
 		earflaps = 1
 		to_chat(user, "<span class='notice'>You lower the ear flaps on the ushanka.</span>")
-	
+
 /*
  * Black Ushanka
  */
@@ -204,15 +204,6 @@
 /obj/item/clothing/head/cardborg/dropped(mob/living/user)
 	..()
 	user.remove_alt_appearance("standard_borg_disguise")
-
-
-/obj/item/clothing/head/welding/weldingfire
-	icon_state = "weldingfire"
-	item_state = "weldingfire"
-
-/obj/item/clothing/head/welding/weldingjapan
-	icon_state = "weldingjapan"
-	item_state = "weldingjapan"
 
 /obj/item/clothing/head/wig
 	name = "wig"

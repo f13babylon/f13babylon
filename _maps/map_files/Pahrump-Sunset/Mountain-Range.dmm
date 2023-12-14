@@ -857,10 +857,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/vertibird)
-"gM" = (
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/f13,
-/area/f13/enclave/hallways)
 "gP" = (
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/enclave/armory)
@@ -2189,7 +2185,6 @@
 /area/f13/enclave/prison)
 "qo" = (
 /obj/structure/table/snooker,
-/obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13,
 /area/f13/enclave/hallways)
 "qp" = (
@@ -4387,9 +4382,6 @@
 /obj/structure/junk/small/table,
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/mountain_area)
-"Gh" = (
-/turf/open/floor/f13,
-/area/f13/enclave)
 "Gj" = (
 /obj/effect/spawner/structure/window/plastitanium,
 /obj/structure/cable{
@@ -21516,7 +21508,7 @@ JF
 MA
 JF
 Rz
-gM
+JF
 TC
 AW
 Yv
@@ -21771,7 +21763,7 @@ RG
 JF
 JF
 JF
-gM
+JF
 JF
 JF
 gy
@@ -22801,7 +22793,7 @@ JF
 JF
 jt
 KU
-gM
+JF
 JF
 AW
 hz
@@ -23569,10 +23561,10 @@ Ro
 RG
 JF
 JF
-gM
 JF
 JF
-gM
+JF
+JF
 JF
 AW
 AW
@@ -26146,7 +26138,7 @@ yo
 hz
 MV
 og
-Gh
+Jx
 wa
 Jx
 Jx

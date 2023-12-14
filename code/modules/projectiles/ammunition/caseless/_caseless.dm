@@ -28,16 +28,8 @@
 	caliber = "musketball"
 	projectile_type = /obj/item/projectile/bullet/F13/musketball
 
-/obj/item/ammo_casing/caseless/lasermusket
-	name = "Battery"
-	desc = "A single use battery for the lasmusket."
-	caliber = "lasmusket"
-	icon_state = "lasmusketbat"
-	projectile_type = /obj/item/projectile/beam/laser/musket
-	firing_effect_type = /obj/effect/temp_visual/dir_setting/firing_effect/energy
-
-/obj/item/ammo_casing/caseless/plasmacaster
-	name = "Plasma can"
+/obj/item/ammo_casing/caseless/plasma_musket
+	name = "plasma can"
 	desc = "A single use can of plasma for the plasma musket."
 	caliber = "plasmacaster"
 	icon_state = "plasmacan"

@@ -1,5 +1,6 @@
 GLOBAL_LIST_INIT(fish_rates, list(
 	/obj/item/fishy/carp		=15,
+	/obj/item/fishy/lobster		=15,
 	/obj/item/fishy/salmon		=15
 ))
 //I have tried to have variables be highly influential so that customization can happen
@@ -94,7 +95,7 @@ GLOBAL_LIST_INIT(fish_rates, list(
 				new /obj/item/salvage/low(current_turf)
 				if(prob(5))
 					new /obj/item/salvage/high(current_turf)
-				return 1			
+				return 1
 			return 2
 		if(TRUE)
 			var/pick_fish = pickweight(GLOB.fish_rates) //add your in the global list
