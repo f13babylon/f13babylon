@@ -130,7 +130,7 @@
 				new M.sheet_type(loc, FLOOR(custom_materials[M] / MINERAL_MATERIAL_AMOUNT, 1))
 	..()
 
-/obj/structure/junk/machinerylocker
+/obj/structure/junk/machinery
 	name = "rusting machine"
 	desc = "Some sort of machine rusted solid."
 	icon_state = "junk_machine"
