@@ -5,7 +5,7 @@
 	sharpness = SHARP_POINTY
 	wound_bonus = 45
 	bare_wound_bonus = 0
-	armour_penetration = 0.1
+	armour_penetration = 0.15
 	spread = 2
 	wound_falloff_tile = -7.5
 	supereffective_damage = 35
