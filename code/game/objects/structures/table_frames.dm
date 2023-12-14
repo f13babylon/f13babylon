@@ -36,25 +36,25 @@
 	if(isstack(I))
 		var/obj/item/stack/material = I
 		if(material.tableVariant)
-			if(material.get_amount() < 1)
-				to_chat(user, span_warning("You need one [material.name] sheet to do this!"))
+			if(material.get_amount() < 2)
+				to_chat(user, span_warning("You need two [material.name] sheet to do this!"))
 				return
 			if(locate(/obj/structure/table) in loc)
 				to_chat(user, span_warning("There's already a table built here!"))
 				return
 			to_chat(user, span_notice("You start adding [material] to [src]..."))
-			if(!do_after(user, 2 SECONDS, target = src) || !material.use(1) || (locate(/obj/structure/table) in loc))
+			if(!do_after(user, 2 SECONDS, target = src) || !material.use(2) || (locate(/obj/structure/table) in loc))
 				return
 			make_new_table(material.tableVariant)
 		else if(istype(material, /obj/item/stack/sheet))
-			if(material.get_amount() < 1)
-				to_chat(user, span_warning("You need one sheet to do this!"))
+			if(material.get_amount() < 2)
+				to_chat(user, span_warning("You need two sheet to do this!"))
 				return
 			if(locate(/obj/structure/table) in loc)
 				to_chat(user, span_warning("There's already a table built here!"))
 				return
 			to_chat(user, span_notice("You start adding [material] to [src]..."))
-			if(!do_after(user, 2 SECONDS, target = src) || !material.use(1) || (locate(/obj/structure/table) in loc))
+			if(!do_after(user, 2 SECONDS, target = src) || !material.use(2) || (locate(/obj/structure/table) in loc))
 				return
 			var/list/material_list = list()
 			if(material.material_type)
@@ -106,11 +106,11 @@
 			toConstruct = /obj/structure/table/wood/poker
 			carpet_type = I.type
 		if (toConstruct)
-			if(material.get_amount() < 1)
-				to_chat(user, span_warning("You need one [material.name] sheet to do this!"))
+			if(material.get_amount() < 2)
+				to_chat(user, span_warning("You need two [material.name] to do this!"))
 				return
 			to_chat(user, span_notice("You start adding [material] to [src]..."))
-			if(do_after(user, 20, target = src) && material.use(1))
+			if(do_after(user, 20, target = src) && material.use(2))
 				make_new_table(toConstruct, null, carpet_type)
 	else
 		return ..()
@@ -138,11 +138,11 @@
 /obj/structure/table_frame/brass/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/stack/tile/brass))
 		var/obj/item/stack/tile/brass/W = I
-		if(W.get_amount() < 1)
-			to_chat(user, "<span class='warning'>You need one brass sheet to do this!</span>")
+		if(W.get_amount() < 2)
+			to_chat(user, "<span class='warning'>You need two brass sheets to do this!</span>")
 			return
 		to_chat(user, "<span class='notice'>You start adding [W] to [src]...</span>")
-		if(do_after(user, 20, target = src) && W.use(1))
+		if(do_after(user, 20, target = src) && W.use(2))
 			make_new_table(/obj/structure/table/reinforced/brass)
 	else
 		return ..()
