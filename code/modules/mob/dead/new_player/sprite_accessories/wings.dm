@@ -173,13 +173,6 @@
 	name = "Insect"
 	icon_state = "insect"
 
-/datum/sprite_accessory/deco_wings/lugia
-	name = "Lugia"
-	icon = 'icons/mob/wings_large.dmi'
-	icon_state = "seal"
-	color_src = MATRIXED
-	matrixed_sections = MATRIX_RED_BLUE
-
 /datum/sprite_accessory/deco_wings/mantis
 	name = "Mantis Arms"
 	icon_state = "mantis"

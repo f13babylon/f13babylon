@@ -102,11 +102,6 @@
 	icon_state = "deer"
 	matrixed_sections = MATRIX_RED
 
-/datum/sprite_accessory/snouts/mam_snouts/deoxys
-	name = "Deoxys"
-	icon_state = "deoxys"
-	matrixed_sections = MATRIX_ALL
-
 /datum/sprite_accessory/snouts/mam_snouts/duck
 	name = "Duck"
 	icon_state = "duck"

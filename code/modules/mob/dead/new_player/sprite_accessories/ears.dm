@@ -166,7 +166,6 @@
 	icon_state = "catnormal"
 	matrixed_sections = MATRIX_RED_GREEN
 
-
 /datum/sprite_accessory/ears/mam_ears/catbig
 	name = "Cat, (Big)"
 	icon_state = "catbig"
@@ -209,23 +208,6 @@
 	icon_state = "easternd"
 	matrixed_sections = MATRIX_RED_BLUE
 
-/datum/sprite_accessory/ears/mam_ears/eevee
-	name = "Eevee"
-	icon_state = "eevee"
-	matrixed_sections = MATRIX_RED
-
-/datum/sprite_accessory/ears/mam_ears/eeveealt
-	name = "Eevee Alt"
-	icon_state = "eeveealt"
-	color_src = MATRIXED
-	matrixed_sections = MATRIX_RED
-
-/datum/sprite_accessory/ears/mam_ears/eeveetorn
-	name = "Eeeve Torn"
-	icon_state = "eeveetorn"
-	color_src = MATRIXED
-	matrixed_sections = MATRIX_RED
-
 /datum/sprite_accessory/ears/mam_ears/elf
 	name = "Elf"
 	icon_state = "elf"
@@ -251,6 +233,34 @@
 	name = "Fennec (ALT)"
 	icon_state = "fennec2"
 	matrixed_sections = MATRIX_RED_BLUE
+
+/datum/sprite_accessory/ears/mam_ears/fennec3
+	name = "Fennec (ALT 2)"
+	icon_state = "eevee"
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/ears/mam_ears/fennec4
+	name = "Fennec (ALT 3)"
+	icon_state = "eeveealt"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/ears/mam_ears/fennec5
+	name = "Fennec (ALT 4)"
+	icon_state = "eeveetorn"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/ears/mam_ears/fennec6
+	name = "Fennec (ALT 5)"
+	icon = 'icons/mob/mutant_bodyparts_large.dmi'
+	icon_state = "umbreon"
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/ears/mam_ears/fennec7
+	name = "Fennec (ALT 6)"
+	icon_state = "vap"
+	matrixed_sections = MATRIX_ALL
 
 /datum/sprite_accessory/ears/mam_ears/fish
 	name = "Fish"
@@ -444,17 +454,6 @@
 	icon_state = "trike"
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED
-
-/datum/sprite_accessory/ears/mam_ears/umbreon
-	name = "Umbreon"
-	icon = 'icons/mob/mutant_bodyparts_large.dmi'
-	icon_state = "umbreon"
-	matrixed_sections = MATRIX_RED_GREEN
-
-/datum/sprite_accessory/ears/mam_ears/vap
-	name = "Vaporeon"
-	icon_state = "vap"
-	matrixed_sections = MATRIX_ALL
 
 /datum/sprite_accessory/ears/mam_ears/wolf
 	name = "Wolf"

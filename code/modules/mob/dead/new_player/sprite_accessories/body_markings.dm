@@ -187,11 +187,6 @@
 	icon_state = "gradient"
 	covered_limbs = list("Left Leg" = MATRIX_RED_GREEN, "Right Leg" = MATRIX_RED_GREEN, "Left Arm" = MATRIX_RED_GREEN, "Right Arm" = MATRIX_RED_GREEN)
 
-/datum/sprite_accessory/mam_body_markings/guilmon
-	name = "Guilmon"
-	icon_state = "guilmon"
-	covered_limbs = list("Head" = MATRIX_RED_BLUE, "Chest" = MATRIX_ALL, "Left Leg" = MATRIX_BLUE, "Right Leg" = MATRIX_BLUE, "Left Arm" = MATRIX_ALL, "Right Arm" = MATRIX_ALL)
-
 /datum/sprite_accessory/mam_body_markings/handsfeet
 	name = "Handsfeet"
 	icon_state = "handsfeet"
@@ -247,6 +242,11 @@
 	icon_state = "moth"
 	recommended_species = list("insect")
 	covered_limbs = list("Head" = MATRIX_BLUE, "Chest" = MATRIX_RED_GREEN, "Right Arm" = MATRIX_RED_GREEN, "Left Arm" = MATRIX_RED_GREEN, "Right Leg" = MATRIX_RED, "Left Leg" = MATRIX_RED)
+
+/datum/sprite_accessory/mam_body_markings/mutant
+	name = "Mutant"
+	icon_state = "mutant"
+	covered_limbs = list("Head" = MATRIX_BLUE, "Chest" = MATRIX_GREEN, "Left Leg" = MATRIX_BLUE, "Right Leg" = MATRIX_BLUE, "Left Arm" = MATRIX_BLUE, "Right Arm" = MATRIX_BLUE)
 
 /datum/sprite_accessory/mam_body_markings/orca
 	name = "Orca"
@@ -318,6 +318,11 @@
 	icon_state = "redpanda"
 	covered_limbs = list("Head" = MATRIX_ALL, "Chest" = MATRIX_RED_GREEN, "Left Leg" = MATRIX_RED_GREEN, "Right Leg" = MATRIX_RED_GREEN, "Left Arm" = MATRIX_RED_GREEN, "Right Arm" = MATRIX_RED_GREEN)
 
+/datum/sprite_accessory/mam_body_markings/reptilian
+	name = "Reptilian"
+	icon_state = "reptilian"
+	covered_limbs = list("Head" = MATRIX_RED_BLUE, "Chest" = MATRIX_ALL, "Left Leg" = MATRIX_BLUE, "Right Leg" = MATRIX_BLUE, "Left Arm" = MATRIX_ALL, "Right Arm" = MATRIX_ALL)
+
 /datum/sprite_accessory/mam_body_markings/sabresune
 	name = "Sabresune"
 	icon_state = "sabresune"
@@ -388,6 +393,11 @@
 	icon_state = "lips"
 	covered_limbs = list("Head" = MATRIX_RED)
 
+/datum/sprite_accessory/mam_body_markings/tatmarking
+	name = "Tattoo Markings"
+	icon_state = "tatmarking"
+	covered_limbs = list("Left Leg" = MATRIX_RED, "Right Leg" = MATRIX_RED, "Left Arm" = MATRIX_RED, "Right Arm" = MATRIX_RED, "Head" = MATRIX_RED)
+
 /datum/sprite_accessory/mam_body_markings/tatnightling
 	name = "Tattoo Nightling"
 	icon_state = "tatnightling"
@@ -423,21 +433,10 @@
 	icon_state = "turian"
 	covered_limbs = list("Head" = MATRIX_RED_GREEN, "Chest" = MATRIX_RED, "Left Leg" = MATRIX_RED, "Right Leg" = MATRIX_RED, "Left Arm" = MATRIX_RED, "Right Arm" = MATRIX_RED)
 
-/datum/sprite_accessory/mam_body_markings/umbreon
-	name = "Umbreon"
-	icon_state = "umbreon"
-	covered_limbs = list("Left Leg" = MATRIX_RED, "Right Leg" = MATRIX_RED, "Left Arm" = MATRIX_RED, "Right Arm" = MATRIX_RED, "Head" = MATRIX_RED)
-
 /datum/sprite_accessory/mam_body_markings/wolf
 	name = "Wolf"
 	icon_state = "wolf"
 	covered_limbs = list("Head" = MATRIX_ALL, "Chest" = MATRIX_ALL, "Left Leg" = MATRIX_RED_BLUE, "Right Leg" = MATRIX_RED_BLUE, "Left Arm" = MATRIX_RED_BLUE, "Right Arm" = MATRIX_RED_BLUE)
-
-/datum/sprite_accessory/mam_body_markings/xeno
-	name = "Xeno"
-	icon_state = "xeno"
-	covered_limbs = list("Head" = MATRIX_BLUE, "Chest" = MATRIX_GREEN, "Left Leg" = MATRIX_BLUE, "Right Leg" = MATRIX_BLUE, "Left Arm" = MATRIX_BLUE, "Right Arm" = MATRIX_BLUE)
-
 /******************************************
 ************* Insect Markings *************
 *******************************************/
