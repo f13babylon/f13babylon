@@ -7,10 +7,9 @@
 	density = TRUE
 	anchored = TRUE
 	pass_flags_self = LETPASSTHROW
-	/// armor more or less consistent with grille. max_integrity about one time and a half that of a grille.
-	armor = list("melee" = 50, "bullet" = 70, "laser" = 70, "energy" = 100, "bomb" = 10, "bio" = 0, "fire" = 0, "acid" = 0)
 
-	max_integrity = 75
+	max_integrity = 75	//Half of metal bars
+	proj_pass_rate = 90	//Same as metal bars
 
 	climbable = TRUE
 	///Initial direction of the railing.
@@ -125,4 +124,3 @@
 /obj/structure/railing/proc/check_anchored(checked_anchored)
 	if(anchored == checked_anchored)
 		return TRUE
-
