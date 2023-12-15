@@ -229,7 +229,7 @@
 	automatic = !automatic
 	playsound(usr, 'sound/weapons/empty.ogg', 100, 1)
 
-//American 180			Keywords: .22 LR, Supressed, Bullethose, 180 Round drum, Low-mid tier
+//American 180			Keywords: .22 LR, Supressed, Bullethose, 180 Round drum, Bulky, Low-mid tier
 /obj/item/gun/ballistic/automatic/smg/smg22
 	name = "silenced .22 SMG"
 	desc = "An integrally suppressed American 180 riot suppression submachine gun chambered in .22 LR, feeding from top-loaded pan magazines."
@@ -245,7 +245,7 @@
 	suppressed = 1
 	can_unsuppress = TRUE	//Without can_suppress only results in a better examine message
 
-//Uzi			Keywords: 9mm, Bullethose, Dual-wieldable on semi-auto, 32/50 Rounds, High-mid tier
+//Uzi			Keywords: 9mm, Bullethose, Dual-wieldable on semi-auto, 32/50 Rounds, Normal, High-mid tier
 /obj/item/gun/ballistic/automatic/smg/uzi
 	name = "9mm submachine gun"
 	desc = "A compact and reliable Israeli Uzi SMG chambered for 9mm, best paired with a .45 longslide with laser sighting."
@@ -260,7 +260,7 @@
 	extra_damage = -2	//14 DAM
 	recoil = 0.85
 
-//MP5			Keywords: 9mm, Suppressed, Dual-wieldable on semi-auto, AP, Accurate, 32/50 Rounds, High-mid tier
+//MP5			Keywords: 9mm, Suppressed, Dual-wieldable on semi-auto, AP, Accurate, 32/50 Rounds, Normal, High-mid tier
 /obj/item/gun/ballistic/automatic/smg/mp5
 	name = "advanced 9mm SMG"
 	desc = "An integrally suppressed MP5SD6 made by Heckler & Koch, renowned for its accuracy in comparison to other machine guns of its type."
@@ -275,7 +275,7 @@
 	can_unsuppress = TRUE	//Without can_suppress only results in a better examine message
 	recoil = 0.55
 
-//Calico			Keywords: 9mm, Bullethose, 70 rounds, Superhigh tier
+//Calico			Keywords: 9mm, Bullethose, 70 rounds, Bulky, Superhigh tier
 /obj/item/gun/ballistic/automatic/smg/calico
 	name = "9mm machine gun"
 	desc = "A roller-delayed Calico M960A machine gun that feeds from a proprietary helical magazine, chambered for 9mm."
@@ -289,7 +289,7 @@
 	slowdown = 0.3
 	spread = 16
 
-//10mm SMG			Keywords: 10mm, Dual-wieldable on semi-auto, 30 Rounds, Mid tier
+//10mm SMG			Keywords: 10mm, Dual-wieldable on semi-auto, 30 Rounds, Normal, Mid tier
 /obj/item/gun/ballistic/automatic/smg/smg10mm
 	name = "10mm submachine gun"
 	desc = "An open-bolt Heckler & Koch MP9 that saw extensive use in military and police units prior to the war, chambered in 10mm despite its name."
@@ -298,7 +298,7 @@
 	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
 	mag_type = /obj/item/ammo_box/magazine/msmg10mm
 
-//Grease Gun			Keywords: .45 ACP, Dual-wieldable on semi-auto, 30 Rounds, Low-mid tier
+//Grease Gun			Keywords: .45 ACP, Dual-wieldable on semi-auto, 30 Rounds, Normal, Low-mid tier
 /obj/item/gun/ballistic/automatic/smg/greasegun
 	name = "cheap .45 Auto SMG"
 	desc = "A rather inexpensive M3A1 Grease Gun with the absolute simplest of designs."
@@ -309,7 +309,7 @@
 	spread = 18
 	extra_damage = -4	//20 DAM
 
-//Thompson			Keywords: .45 ACP, 30/50 Rounds, High-mid tier
+//Thompson			Keywords: .45 ACP, 30/50 Rounds, Bulky, High-mid tier
 /obj/item/gun/ballistic/automatic/smg/thompson
 	name = ".45 Auto submachine gun"
 	desc = "A classic, American-made Thompson M1A1 submachine gun chambered in .45 Auto. It can feed from a straight stick magazine or a fifty-round drum."
@@ -321,7 +321,7 @@
 	slowdown = 0.3
 	spread = 13
 
-//P90			Keywords: 5mm, AP, 50 Rounds, Superhigh tier
+//P90			Keywords: 5mm, AP, 50 Rounds, Bulky, Superhigh tier
 /obj/item/gun/ballistic/automatic/smg/p90
 	name = "5mm submachine gun"
 	desc = "A uniquely powerful and lightweight personal defense weapon developed by FN Herstal, chambered for 5mm and feeding from fifty-round translucent box magazines."
@@ -335,7 +335,7 @@
 	extra_damage = -5		//15 DAM
 	extra_penetration = -0.15	//30% AP
 
-//14mm SMG 			Keywords: 14mm, AP, 21/27 rounds, Superhigh tier
+//14mm SMG 			Keywords: 14mm, AP, 21/27 rounds, Bulky, Superhigh tier
 /obj/item/gun/ballistic/automatic/smg/smg14mm
 	name = "14mm submachine gun"
 	desc = "A SIG-made hand-cannon chambered for the 14mm hunting cartridge, loading from top-mounted magazines and benefitting from an unique recoil reduction system."
