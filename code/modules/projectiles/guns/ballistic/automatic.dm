@@ -1187,7 +1187,7 @@
 	item_state = "handmade_rifle"
 	icon_prefix = "handmade_rifle"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_delay = 6
+	fire_delay = 4
 	spread = 10
 	is_automatic = TRUE
 	automatic = 1
