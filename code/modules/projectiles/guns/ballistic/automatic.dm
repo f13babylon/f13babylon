@@ -694,34 +694,6 @@
 //SEMI-AUTO RIFLES//
 ////////////////////
 
-
-//Varmint rifle								Keywords: 5.56, 10/20/30 round magazine, 30dmg
-/obj/item/gun/ballistic/automatic/varmint
-	name = "varmint rifle"
-	desc = "A simple bolt action rifle in 5.56mm calibre. Easy to use and maintain."
-	icon_state = "varmint"
-	item_state = "varmintrifle"
-	force = 23
-	slowdown = 0.05
-	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
-	fire_delay = 3.5
-	burst_size = 1
-	spread = 0
-
-	can_bayonet = FALSE
-	semi_auto = TRUE
-	automatic_burst_overlay = FALSE
-	scope_state = "scope_short"
-	scope_x_offset = 4
-	scope_y_offset = 12
-	can_suppress = TRUE
-	suppressor_state = "rifle_suppressor"
-	suppressor_x_offset = 27
-	suppressor_y_offset = 31
-	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
-	can_scope = TRUE
-
 //De Lisle carbine							Keywords: Pre-war, 9mm, Long barrel, Suppressed
 /obj/item/gun/ballistic/automatic/delisle
 	name = "De Lisle carbine"
@@ -752,37 +724,6 @@
 	scope_x_offset = 6
 	scope_y_offset = 14
 
-//'Verminkiller'									Keywords: 5.56, 10/20/30 round magazine, Suppressed, Scoped
-//Basically an obtainable ratslayer
-/obj/item/gun/ballistic/automatic/varmint/verminkiller
-	name = "verminkiller rifle"
-	desc = "Legends are told of the \"Ratslayer\", a custom-made souped-up varmint rifle with a sick paintjob. This is a pale imitation, made of chopped-up bits of other guns."
-	icon_state = "verminrifle"
-	item_state = "ratslayer"
-	fire_delay = 1.5 //50% higher than service rifle
-	suppressed = 1
-	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
-	can_unsuppress = FALSE
-	suppressor_state = "none"
-	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
-	extra_speed = 800 //pew
-
-
-//Ratslayer									Keywords: UNIQUE, 5.56, 10/20/30 round magazine, Suppressed, Scoped
-/obj/item/gun/ballistic/automatic/varmint/ratslayer
-	name = "Ratslayer"
-	desc = "A modified varmint rifle with better stopping power, a scope, and suppressor. Oh, don't forget the sick paint job."
-	icon_state = "ratslayer"
-	item_state = "ratslayer"
-	suppressed = 1
-	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
-	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
-	extra_penetration = 0.15
-
 //Combat Carbine	Keywords: .45 Caliber Rifle, Town rifle
 /obj/item/gun/ballistic/automatic/combatcarbine
 	name = "Combat Carbine"
@@ -791,7 +732,7 @@
 	item_state = "combatrifle"
 	icon_prefix = "combatrifle"
 	mag_type = /obj/item/ammo_box/magazine/tommygunm45/stick
-	fire_delay = 2
+	fire_delay = 3
 	burst_size = 1
 	spread = 1
 	slowdown = 0.25
@@ -808,7 +749,7 @@
 	item_state = "combatrifle"
 	icon_prefix = "combatrifle"
 	mag_type = /obj/item/ammo_box/magazine/w308
-	fire_delay = 2
+	fire_delay = 4
 	burst_size = 1
 	spread = 1
 	slowdown = 0.35
@@ -860,7 +801,7 @@
 	icon_state = "marksman_rifle"
 	item_state = "marksman"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_delay = 3
+	fire_delay = 4
 	slowdown = 0.3
 	burst_size = 1
 	spread = 1
@@ -881,6 +822,7 @@
 	suppressor_y_offset = 15
 	fire_sound = 'sound/f13weapons/marksman_rifle.ogg'
 	extra_penetration = 0.2
+	extra_damage = 2
 
 //Colt Rangemaster				Keywords: 7.62mm, Semi-auto, 10/20 round magazine, 35dmg
 /obj/item/gun/ballistic/automatic/rangemaster
@@ -1112,7 +1054,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	fire_delay = 3
 	slowdown = 0.35
-	spread = 10
+	spread = 6
 	recoil = 0.1
 	is_automatic = TRUE
 	automatic = 1
@@ -1128,8 +1070,6 @@
 	suppressor_state = "ar_suppressor"
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
-	extra_damage = -3
-	extra_penetration = 0.05
 
 
 //Infiltrator			Keywords: 5.56mm, Automatic, 20 (10-50) round magazine, Suppressed, Small scope, Pistol grip
@@ -1139,7 +1079,7 @@
 	icon_state = "infiltrator"
 	item_state = "fnfal"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	spread = 9
+	spread = 7
 	fire_delay = 4
 	burst_shot_delay = 2
 	is_automatic = TRUE
