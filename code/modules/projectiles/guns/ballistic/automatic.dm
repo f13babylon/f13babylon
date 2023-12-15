@@ -825,7 +825,7 @@
 	icon_prefix = "servicerifle"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	slowdown = 0.15
-	fire_delay = 1
+	fire_delay = 4
 	burst_size = 1
 	spread = 1
 	can_attachments = TRUE
@@ -860,7 +860,7 @@
 	icon_state = "marksman_rifle"
 	item_state = "marksman"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_delay = 2
+	fire_delay = 3
 	slowdown = 0.3
 	burst_size = 1
 	spread = 1
@@ -892,7 +892,7 @@
 	force = 20
 	mag_type = /obj/item/ammo_box/magazine/m762
 	burst_size = 1
-	fire_delay = 4
+	fire_delay = 6
 	slowdown = 0.3
 	spread = 1
 	automatic_burst_overlay = FALSE
@@ -922,7 +922,7 @@
 	force = 20
 	mag_type = /obj/item/ammo_box/magazine/m762
 	burst_size = 1
-	fire_delay = 2
+	fire_delay = 6
 	slowdown = 0.25
 	spread = 1
 	automatic_burst_overlay = FALSE
@@ -949,7 +949,7 @@
 	force = 20
 	slowdown = 0.2
 	mag_type = /obj/item/ammo_box/magazine/garand308
-	fire_delay = 2
+	fire_delay = 5
 	burst_size = 1
 	spread = 1
 	en_bloc = 1
@@ -1008,7 +1008,7 @@
 	icon_state = "sks"
 	item_state = "sks"
 	mag_type = /obj/item/ammo_box/magazine/sks
-	fire_delay = 2.2
+	fire_delay = 4
 	extra_speed = 100
 	bayonet_state = "bayonet"
 	knife_x_offset = 24
@@ -1028,7 +1028,7 @@
 	icon_state = "sniper_rifle"
 	item_state = "sniper_rifle"
 	mag_type = /obj/item/ammo_box/magazine/w308
-	fire_delay = 3
+	fire_delay = 7
 	burst_size = 1
 	extra_speed = 900
 	slowdown = 0.3
@@ -1047,7 +1047,7 @@
 	icon_state = "gold_sniper"
 	item_state = "gold_sniper"
 	slowdown = 0
-	fire_delay = 2.60
+	fire_delay = 5
 	can_bayonet = TRUE
 
 /obj/item/gun/ballistic/automatic/marksman/sniper/america
@@ -1056,7 +1056,7 @@
 	icon_state = "gold_sniper_america"
 	item_state = "gold_sniper_america"
 	slowdown = 0.19
-	fire_delay = 2.8
+	fire_delay = 5
 	can_bayonet = TRUE
 	zoom_amt = 12
 	zoom_out_amt = 14
@@ -1070,14 +1070,14 @@
 	mob_overlay_icon = 'icons/fallout/onmob/backslot_weapon.dmi'
 	icon_state = "venator_sniper"
 	item_state = "venator_sniper"
-	fire_delay = 2
+	fire_delay = 5
 	slowdown = 0.12
 
 /obj/item/gun/ballistic/automatic/marksman/sniper/sniperranger
 	name = "compact sniper rifle"
 	desc = "A DKS 501, chambered in .308 Winchester.  With a light polymer body, it's suited for long treks through the desert. This particular model is lighter and faster."
 	slowdown = 0.25
-	fire_delay = 2
+	fire_delay = 5
 
 //////////////////
 //ASSAULT RIFLES//
@@ -1091,7 +1091,7 @@
 	icon_state = "m16a1"
 	item_state = "servicerifle"
 	icon_prefix = "m16a1"
-	fire_delay = 2.5
+	fire_delay = 4
 	is_automatic = TRUE
 	slowdown = 0.3
 	automatic = 1
@@ -1110,7 +1110,7 @@
 	icon_state = "assault_rifle"
 	item_state = "fnfal"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_delay = 2.5
+	fire_delay = 3
 	slowdown = 0.35
 	spread = 10
 	recoil = 0.1
@@ -1140,7 +1140,7 @@
 	item_state = "fnfal"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	spread = 9
-	fire_delay = 2.5
+	fire_delay = 4
 	burst_shot_delay = 2
 	is_automatic = TRUE
 	automatic = 1
@@ -1165,7 +1165,7 @@
 	icon_state = "r93"
 	item_state = "r93"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_delay = 1.15
+	fire_delay = 3
 	spread = 1
 	burst_size = 1
 	can_attachments = FALSE
@@ -1187,7 +1187,7 @@
 	item_state = "handmade_rifle"
 	icon_prefix = "handmade_rifle"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_delay = 4
+	fire_delay = 6
 	spread = 10
 	is_automatic = TRUE
 	automatic = 1
@@ -1223,7 +1223,7 @@
 	automatic = 1
 	autofire_shot_delay = 2
 	burst_shot_delay = 1.5
-	fire_delay = 3
+	fire_delay = 5
 	spread = 8
 	recoil = 0.1
 	can_attachments = FALSE
@@ -1246,7 +1246,7 @@
 	slowdown = 0.25
 	slot_flags = 0
 	mag_type = /obj/item/ammo_box/magazine/m5mm
-	fire_delay = 2.5
+	fire_delay = 4
 	burst_shot_delay = 1.8
 	is_automatic = TRUE
 	automatic = 1
@@ -1286,7 +1286,7 @@
 	name = "worn assault carbine"
 	desc = "The U.S. army carbine version of the R91, made by Colt and issued to special forces. This one is beat-up and falling apart."
 	icon_state = "assault_carbine"
-	fire_delay = 3.5
+	fire_delay = 5
 	burst_shot_delay = 2.2
 	spread = 18
 	autofire_shot_delay = 1.85
@@ -1300,7 +1300,7 @@
 	item_state = "fnfal"
 	force = 20
 	extra_speed = 100
-	fire_delay = 3.5
+	fire_delay = 5
 	is_automatic = TRUE
 	automatic = 1
 	autofire_shot_delay = 1.9
@@ -1319,7 +1319,7 @@
 	item_state = "arg"
 	mag_type = /obj/item/ammo_box/magazine/m473
 	burst_size = 1
-	fire_delay = 2
+	fire_delay = 4
 	is_automatic = TRUE
 	automatic = 1
 	autofire_shot_delay = 1.5
@@ -1361,7 +1361,7 @@
 	slowdown = 1.25
 	recoil = 0.5
 	mag_type = /obj/item/ammo_box/magazine/lmg
-	fire_delay = 2
+	fire_delay = 3
 	burst_shot_delay = 3
 	is_automatic = TRUE
 	automatic = 1
@@ -1419,7 +1419,7 @@
 	slowdown = 0.6
 	recoil = 0.5
 	mag_type = /obj/item/ammo_box/magazine/rpd
-	fire_delay = 2
+	fire_delay = 4
 	burst_shot_delay = 3
 	is_automatic = TRUE
 	automatic = 1
@@ -1444,7 +1444,7 @@
 	is_automatic = TRUE
 	automatic = 1
 	autofire_shot_delay = 2
-	fire_delay = 2
+	fire_delay = 3
 	spread = 20
 	can_attachments = FALSE
 	var/cover_open = FALSE

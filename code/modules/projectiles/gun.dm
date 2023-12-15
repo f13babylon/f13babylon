@@ -151,7 +151,6 @@ ATTACHMENTS
 	force = 5
 	item_flags = NEEDS_PERMIT | SLOWS_WHILE_IN_HAND
 	attack_verb = list("struck", "hit", "bashed")
-	var/ranged_attack_speed = CLICK_CD_RANGE
 	var/fire_sound = "gunshot"
 	var/recoil = 0						//boom boom shake the room
 	var/clumsy_check = TRUE
@@ -448,7 +447,7 @@ ATTACHMENTS
 		return
 
 	if (automatic == 0)
-		user.DelayNextAction(ranged_attack_speed)
+		user.DelayNextAction(fire_delay)
 	if (automatic == 1)
 		user.DelayNextAction(autofire_shot_delay)
 
@@ -490,7 +489,7 @@ ATTACHMENTS
 
 /obj/item/gun/proc/get_clickcd()
 	if (automatic == 0)
-		return isnull(chambered?.click_cooldown_override)? CLICK_CD_RANGE : chambered.click_cooldown_override
+		return isnull(chambered?.click_cooldown_override)? fire_delay : chambered.click_cooldown_override
 	if (automatic == 1)
 		return isnull(chambered?.click_cooldown_override)? autofire_shot_delay : chambered.click_cooldown_override
 

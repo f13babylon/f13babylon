@@ -313,7 +313,7 @@
 /obj/item/gun/ballistic/shotgun/automatic/combat/auto5
 	name = "Browning Auto-5"
 	desc = "A semi automatic shotgun with a four round tube."
-	fire_delay = 2.7
+	fire_delay = 3
 	recoil = 2
 	icon_state = "auto5"
 	item_state = "shotgunauto5"
@@ -451,7 +451,7 @@
 	mag_type = /obj/item/ammo_box/magazine/d12g
 	is_automatic = TRUE
 	autofire_shot_delay = 3.55
-	fire_delay = 2.85
+	fire_delay = 3
 	recoil = 1.35
 	automatic = 1
 	w_class = WEIGHT_CLASS_BULKY
