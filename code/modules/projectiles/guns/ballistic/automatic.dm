@@ -201,12 +201,31 @@
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	w_class = WEIGHT_CLASS_NORMAL
-	weapon_weight = WEAPON_LIGHT
-	automatic = 1
+	weapon_weight = WEAPON_HEAVY
+	automatic = TRUE
+	is_automatic = TRUE
 	autofire_shot_delay = 2
 	slowdown = 0.15
 	spread = 14
 	force = 12
+	actions_types = list(/datum/action/item_action/toggle_firemode)
+
+/obj/item/gun/ballistic/automatic/smg/auto_select()
+	if(!automatic)
+		spread *= 1.2
+		recoil *= 1.2
+		if(w_class != WEIGHT_CLASS_BULKY)
+			weapon_weight = WEAPON_HEAVY
+		to_chat(usr, "<span class='notice'>You switch to automatic fire.</span>")
+	else
+		spread /= 1.2
+		recoil /= 1.2
+		if(w_class != WEIGHT_CLASS_BULKY)
+			weapon_weight = WEAPON_MEDIUM
+		to_chat(usr, "<span class='notice'>You switch to semi-auto.</span>")
+
+	automatic = !automatic
+	playsound(usr, 'sound/weapons/empty.ogg', 100, 1)
 
 //American 180			Keywords: .22 LR, Supressed, Bullethose, 180 Round drum
 /obj/item/gun/ballistic/automatic/smg/smg22
@@ -216,7 +235,6 @@
 	item_state = "smg22"
 	fire_sound = 'sound/f13weapons/american180.ogg'
 	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
 	mag_type = /obj/item/ammo_box/magazine/msmg22
 	autofire_shot_delay = 1
 	slowdown = 0.25
@@ -224,7 +242,7 @@
 	suppressed = 1
 	can_unsuppress = TRUE	//Without can_suppress only results in a better examine message
 
-//Uzi			Keywords: 9mm, Dual-wieldable, Bullethose, 32/50 Rounds
+//Uzi			Keywords: 9mm, Bullethose, 32/50 Rounds
 /obj/item/gun/ballistic/automatic/smg/uzi
 	name = "9mm submachine gun"
 	desc = "A compact and reliable Israeli Uzi SMG chambered for 9mm, best paired with a .45 longslide with laser sighting."
@@ -236,6 +254,7 @@
 	slowdown = 0.12
 	spread = 20
 	extra_damage = -2	//14 DAM
+	recoil = 0.85
 
 //MP5			Keywords: 9mm, Suppressed, AP, Accurate, 32/50 Rounds
 /obj/item/gun/ballistic/automatic/smg/mp5
@@ -244,9 +263,7 @@
 	icon_state = "mp5"
 	item_state = "fnfal"
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
-	weapon_weight = WEAPON_MEDIUM
 	mag_type = /obj/item/ammo_box/magazine/msmg9mm
-	autofire_shot_delay = 1.3
 	spread = 4
 	extra_damage = 2	//18 DAM
 	extra_penetration = 0.15	//15% AP
@@ -261,13 +278,13 @@
 	item_state = "calico"
 	fire_sound = 'sound/f13weapons/smg_loud.ogg'
 	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
 	mag_type = /obj/item/ammo_box/magazine/mcalico
 	autofire_shot_delay = 1
 	slowdown = 0.3
 	spread = 16
+	recoil = 0.55
 
-//10mm SMG			Keywords: 10mm, Dual-wieldable, 30 Rounds
+//10mm SMG			Keywords: 10mm, 30 Rounds
 /obj/item/gun/ballistic/automatic/smg/smg10mm
 	name = "10mm submachine gun"
 	desc = "An open-bolt Heckler & Koch MP9 that saw extensive use in military and police units prior to the war, chambered in 10mm despite its name."
@@ -276,7 +293,7 @@
 	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
 	mag_type = /obj/item/ammo_box/magazine/msmg10mm
 
-//Grease Gun			Keywords: .45 ACP, Dual-wieldable, 30 Rounds
+//Grease Gun			Keywords: .45 ACP, 30 Rounds
 /obj/item/gun/ballistic/automatic/smg/greasegun
 	name = "cheap .45 Auto SMG"
 	desc = "A rather inexpensive M3A1 Grease Gun with the absolute simplest of designs."
@@ -295,7 +312,6 @@
 	item_state = "thompson"
 	fire_sound = 'sound/f13weapons/smg_dull.ogg'
 	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
 	mag_type = /obj/item/ammo_box/magazine/mthompson
 	slowdown = 0.3
 	spread = 13
@@ -308,9 +324,7 @@
 	item_state = "p90"
 	fire_sound = 'sound/f13weapons/smg_loud.ogg'
 	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
 	mag_type = /obj/item/ammo_box/magazine/mp90
-	autofire_shot_delay = 1.3
 	spread = 13
 	slowdown = 0.2
 	extra_damage = -5		//15 DAM
@@ -325,7 +339,6 @@
 	item_state = "smg14mm"
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
 	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
 	mag_type = /obj/item/ammo_box/magazine/msmg14mm
 	autofire_shot_delay = 2.15
 	slowdown = 0.4
