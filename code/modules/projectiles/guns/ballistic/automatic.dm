@@ -268,7 +268,7 @@
 	item_state = "fnfal"
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 	mag_type = /obj/item/ammo_box/magazine/msmg9mm
-	spread = 8
+	spread = 6
 	extra_damage = 2	//18 DAM
 	extra_penetration = 0.15	//15% AP
 	suppressed = 1
