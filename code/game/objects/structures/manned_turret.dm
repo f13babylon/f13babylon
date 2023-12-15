@@ -34,7 +34,7 @@
 	else if(!can_buckle)	//We have wrenched it but haven't welded it yet
 		. += "<span class='notice'>The bolts are <b>secured</b>, but the anchor must be <i>welded</i> to the floor before use.</span>"
 	else	//We have wrenched and welded it, it's ready to be used
-		. += "<span class='notice'>The anchor is <b>welded</b> to the floor and the gun is ready to be used.</span>"
+		. += "<span class='notice'>The anchor is <b>welded</b> to the floor and the gun is ready to be used. Time to let 'er rip!</span>"
 
 /obj/machinery/manned_turret/wrench_act(mob/living/user, obj/item/I)
 	. = TRUE
