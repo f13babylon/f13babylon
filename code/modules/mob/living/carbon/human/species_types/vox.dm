@@ -1,7 +1,7 @@
 //Nobody tell Ducky Momo.
 
 /datum/species/vox
-	name = "Vox"
+	name = "Anthromorphic Maniraptoran"
 	id = "vox"
 	default_color = "4B4B4B"
 	say_mod = "screeches"
@@ -16,8 +16,8 @@
 	meat = /obj/item/reagent_containers/food/snacks/meat/slab/chicken
 
 	// resistant to the cold
-	coldmod = 0.7
-	heatmod = 1.3
+	coldmod = 0.8
+	heatmod = 1.2
 
 	limbs_id = "vox"
 	tail_type = "mam_tail"
