@@ -11,6 +11,7 @@
 
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	layer = GASFIRE_LAYER
+	plane = MOB_PLANE
 	anchored = TRUE
 	max_integrity = 750
 	opacity = 0
@@ -47,6 +48,7 @@
 	opacity = 0
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	layer = GASFIRE_LAYER
+	plane = MOB_PLANE
 
 	pixel_x = -32
 

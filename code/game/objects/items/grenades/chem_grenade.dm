@@ -49,7 +49,7 @@
 		else
 			..()
 
-
+/*	- Disables the ability to disassemble chem grenades. Allows for chem-nades to be used and crafted, but not disassembled into completely custom chem bombs.
 /obj/item/grenade/chem_grenade/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/screwdriver))
 		if(stage == WIRED)
@@ -130,7 +130,7 @@
 		to_chat(user, "<span class='notice'>You remove the activation mechanism from the [initial(name)] assembly.</span>")
 	else
 		return ..()
-
+*/
 /obj/item/grenade/chem_grenade/proc/stage_change(N)
 	if(N)
 		stage = N

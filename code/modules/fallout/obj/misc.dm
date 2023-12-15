@@ -150,7 +150,8 @@
 	anchored = 1
 	w_class = 4
 
-	layer = 4.1
+	layer = ABOVE_MOB_LAYER
+	plane = MOB_PLANE
 	icon = 'icons/obj/flags.dmi'
 	icon_state = "emptyflag"
 	item_state = "emptyflag"

@@ -205,6 +205,11 @@
 	icon_state = "hjackal"
 	matrixed_sections = MATRIX_RED_GREEN
 
+/datum/sprite_accessory/snouts/mam_snouts/leporid
+	name = "Leporid"
+	icon_state = "leporid"
+	matrixed_sections = MATRIX_RED_GREEN
+
 /datum/sprite_accessory/snouts/mam_snouts/magus
 	name = "Magus"
 	icon_state = "magus"
