@@ -898,7 +898,7 @@ ATTACHMENTS
 		chambered.BB.damage *= 5
 
 	if (automatic == 0)
-		user.DelayNextAction(ranged_attack_speed)
+		user.DelayNextAction(fire_delay)
 	if (automatic == 1)
 		user.DelayNextAction(autofire_shot_delay)
 
