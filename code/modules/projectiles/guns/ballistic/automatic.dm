@@ -204,6 +204,7 @@
 	weapon_weight = WEAPON_HEAVY
 	automatic = TRUE
 	is_automatic = TRUE
+	fire_delay = 3
 	autofire_shot_delay = 2
 	slowdown = 0.15
 	spread = 14
@@ -216,13 +217,13 @@
 		spread *= 1.2
 		recoil *= 1.2
 		if(w_class != WEIGHT_CLASS_BULKY)
-			weapon_weight = WEAPON_HEAVY
+			weapon_weight = WEAPON_LIGHT
 		to_chat(usr, "<span class='notice'>You switch to automatic fire.</span>")
 	else
 		spread /= 1.2
 		recoil /= 1.2
 		if(w_class != WEIGHT_CLASS_BULKY)
-			weapon_weight = WEAPON_MEDIUM
+			weapon_weight = WEAPON_LIGHT
 		to_chat(usr, "<span class='notice'>You switch to semi-auto.</span>")
 
 	automatic = !automatic
@@ -237,6 +238,7 @@
 	fire_sound = 'sound/f13weapons/american180.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	mag_type = /obj/item/ammo_box/magazine/msmg22
+	fire_delay = 2
 	autofire_shot_delay = 1
 	slowdown = 0.25
 	spread = 25
@@ -251,6 +253,7 @@
 	item_state = "uzi"
 	fire_sound = 'sound/f13weapons/9mm.ogg'
 	mag_type = /obj/item/ammo_box/magazine/msmg9mm
+	fire_delay = 2
 	autofire_shot_delay = 1
 	slowdown = 0.12
 	spread = 20
@@ -280,6 +283,7 @@
 	fire_sound = 'sound/f13weapons/smg_loud.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	mag_type = /obj/item/ammo_box/magazine/mcalico
+	fire_delay = 2
 	autofire_shot_delay = 1
 	slowdown = 0.3
 	spread = 16
@@ -341,7 +345,8 @@
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	mag_type = /obj/item/ammo_box/magazine/msmg14mm
-	autofire_shot_delay = 2.15
+	fire_delay = 4
+	autofire_shot_delay = 3
 	slowdown = 0.4
 	spread = 12
 	recoil = 0.85
