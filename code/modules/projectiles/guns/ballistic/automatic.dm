@@ -245,7 +245,7 @@
 	suppressed = 1
 	can_unsuppress = TRUE	//Without can_suppress only results in a better examine message
 
-//Uzi			Keywords: 9mm, Bullethose, 32/50 Rounds
+//Uzi			Keywords: 9mm, Bullethose, Dual-wieldable on semi-auto, 32/50 Rounds
 /obj/item/gun/ballistic/automatic/smg/uzi
 	name = "9mm submachine gun"
 	desc = "A compact and reliable Israeli Uzi SMG chambered for 9mm, best paired with a .45 longslide with laser sighting."
@@ -260,7 +260,7 @@
 	extra_damage = -2	//14 DAM
 	recoil = 0.85
 
-//MP5			Keywords: 9mm, Suppressed, AP, Accurate, 32/50 Rounds
+//MP5			Keywords: 9mm, Suppressed, Dual-wieldable on semi-auto, AP, Accurate, 32/50 Rounds
 /obj/item/gun/ballistic/automatic/smg/mp5
 	name = "advanced 9mm SMG"
 	desc = "An integrally suppressed MP5SD6 made by Heckler & Koch, renowned for its accuracy in comparison to other machine guns of its type."
@@ -289,7 +289,7 @@
 	spread = 16
 	recoil = 0.55
 
-//10mm SMG			Keywords: 10mm, 30 Rounds
+//10mm SMG			Keywords: 10mm, Dual-wieldable on semi-auto, 30 Rounds
 /obj/item/gun/ballistic/automatic/smg/smg10mm
 	name = "10mm submachine gun"
 	desc = "An open-bolt Heckler & Koch MP9 that saw extensive use in military and police units prior to the war, chambered in 10mm despite its name."
@@ -298,7 +298,7 @@
 	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
 	mag_type = /obj/item/ammo_box/magazine/msmg10mm
 
-//Grease Gun			Keywords: .45 ACP, 30 Rounds
+//Grease Gun			Keywords: .45 ACP, Dual-wieldable on semi-auto, 30 Rounds
 /obj/item/gun/ballistic/automatic/smg/greasegun
 	name = "cheap .45 Auto SMG"
 	desc = "A rather inexpensive M3A1 Grease Gun with the absolute simplest of designs."
