@@ -242,7 +242,6 @@
 	cooldown_duration = 2
 	max_integrity = 1250//can't be destroyed by stray bullets by on 'accident'.
 
-//Unanchored, for use with a mob dropping it, so it anchors when used afterwards.
 /obj/machinery/manned_turret/m2/unanchored
 	can_buckle = FALSE
 	anchored = FALSE
