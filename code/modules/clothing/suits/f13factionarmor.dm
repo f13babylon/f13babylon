@@ -1076,7 +1076,7 @@
 	desc = "An old set of pre-war combat armor, painted black."
 	icon_state = "enclave_new"
 	item_state = "enclave_new"
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 50, "bio" = 60, "rad" = 40, "fire" = 60, "acid" = 20, "wound" = 20)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 30, "bomb" = 50, "bio" = 60, "rad" = 40, "fire" = 60, "acid" = 20, "wound" = 20)
 	slowdown = 0.1
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/enclave/ComponentInitialize(mapload) //HQ parts reinforcement
