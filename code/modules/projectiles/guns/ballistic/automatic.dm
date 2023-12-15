@@ -330,8 +330,8 @@
 	fire_sound = 'sound/f13weapons/smg_loud.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	mag_type = /obj/item/ammo_box/magazine/mp90
-	spread = 13
 	slowdown = 0.2
+	spread = 13
 	extra_damage = -5		//15 DAM
 	extra_penetration = -0.15	//30% AP
 
