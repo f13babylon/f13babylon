@@ -7,7 +7,7 @@
 	say_mod = "screeches"
 	species_traits = list(MUTCOLORS,EYECOLOR,HAIR,FACEHAIR,HAS_FLESH,HAS_BONE)
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID
-	mutant_bodyparts = list("mcolor" = "FFFFFF","mcolor2" = "FFFFFF","mcolor3" = "FFFFFF", "mam_snouts" = "Vox Beak", "mam_tail" = "Vox", "mam_body_markings" = "None", "legs" = "Avian", "taur" = "None")
+	mutant_bodyparts = list("mcolor" = "FFFFFF","mcolor2" = "FFFFFF","mcolor3" = "FFFFFF", "mam_snouts" = "Maniraptoran", "mam_tail" = "Maniraptoran", "mam_body_markings" = "None", "legs" = "Avian", "taur" = "None")
 
 	attack_verb = "claw"
 	attack_sound = 'sound/weapons/slash.ogg'
