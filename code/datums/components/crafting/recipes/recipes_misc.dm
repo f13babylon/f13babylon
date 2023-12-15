@@ -17,7 +17,7 @@
 	result = /turf/open/indestructible/ground/outside/water/no_rads
 	reqs = list(/datum/reagent/water = 200)
 	tools = list(TOOL_SHOVEL)
-	time = 200
+	time = 20 SECONDS
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
 
