@@ -679,6 +679,21 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
+//mp5sd
+/datum/crafting_recipe/mp5sd
+	name = "MP5-SD"
+	result = /obj/item/gun/ballistic/automatic/smg/mp5
+	reqs = list(/obj/item/stack/crafting/metalparts = 1,
+				/obj/item/stack/sheet/mineral/wood = 1,
+				/obj/item/stack/sheet/metal = 2,
+				/obj/item/advanced_crafting_components/assembly = 1,
+				/obj/item/stack/crafting/goodparts = 1)
+	tools = list(TOOL_AWORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_available = TRUE
+
 //rangemaster
 /datum/crafting_recipe/rangemaster
 	name = "Colt Rangemaster"
