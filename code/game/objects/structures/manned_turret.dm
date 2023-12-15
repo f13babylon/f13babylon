@@ -5,7 +5,7 @@
 	desc = "While the trigger is held down, this gun will redistribute recoil to allow its user to easily shift targets."
 	icon = 'icons/obj/turrets.dmi'
 	icon_state = "machinegun"
-	can_buckle = TRUE
+	can_buckle = FALSE
 	anchored = FALSE
 	density = TRUE
 	max_integrity = 100
@@ -27,6 +27,56 @@
 	target_turf = null
 	return ..()
 
+/obj/machinery/manned_turret/examine(mob/user)
+	. = ..()
+	if(!anchored)	//We haven't wrenched it yet
+		. += "<span class='notice'>The bolts are <i>loosened</i>, allowing it to be moved.</span>"
+	else if(!can_buckle)	//We have wrenched it but haven't welded it yet
+		. += "<span class='notice'>The bolts are <b>secured</b>, but the anchor must be <i>welded</i> to the floor before use.</span>"
+	else	//We have wrenched and welded it, it's ready to be used
+		. += "<span class='notice'>The anchor is <b>welded</b> to the floor and the gun is ready to be used.</span>"
+
+/obj/machinery/manned_turret/wrench_act(mob/living/user, obj/item/I)
+	. = TRUE
+	if(can_buckle)		//We haven't unwelded it yet
+		to_chat(user, "<span class='warning'>You have to unweld [src] from the floor first.</span>")
+		return
+
+	else if(anchored)	//We have wrenched it already
+		to_chat(user, "<span class='notice'>You start unsecuring [src]...</span>")
+		if(I.use_tool(src, user, 4 SECONDS, volume=100))
+			to_chat(user, "<span class='notice'>You unsecure [src].</span>")
+			anchored = FALSE
+
+	else				//We haven't wrenched it yet
+		to_chat(user, "<span class='notice'>You start securing [src]...</span>")
+		if(I.use_tool(src, user, 4 SECONDS, volume=100))
+			to_chat(user, "<span class='notice'>You secure [src].</span>")
+			anchored = TRUE
+
+/obj/machinery/manned_turret/welder_act(mob/living/user, obj/item/I)
+	. = TRUE
+	if(!anchored)		//We haven't wrenched it yet
+		to_chat(user, "<span class='warning'>You have to secure [src] first.</span>")
+		return
+
+	if(can_buckle)		//We have welded it already
+		to_chat(user, "<span class='notice'>You start unwelding [src] from the floor...</span>")
+		if(I.use_tool(src, user, 4 SECONDS, volume=50, amount=2))
+			user.visible_message("<span class='notice'>[user] unwelds [src] from the floor.</span>",\
+								 "<span class='notice'>You unweld [src] from the floor.</span>")
+			unbuckle_all_mobs(TRUE)
+			can_buckle = FALSE
+			playsound(loc, 'sound/items/deconstruct.ogg', 50, TRUE)
+
+	else if(anchored)	//We have wrenched it already
+		to_chat(user, "<span class='notice'>You start welding [src] to the floor...</span>")
+		if(I.use_tool(src, user, 4 SECONDS, volume=50, amount=2))
+			user.visible_message("<span class='warning'>[user] welds [src] to the floor.</span>",\
+								 "<span class='notice'>You weld [src] to the floor.</span>")
+			can_buckle = TRUE
+			playsound(loc, 'sound/items/deconstruct.ogg', 50, TRUE)
+
 //BUCKLE HOOKS
 
 /obj/machinery/manned_turret/unbuckle_mob(mob/living/buckled_mob,force = FALSE)
@@ -39,7 +89,6 @@
 		buckled_mob.pixel_y = 0
 		if(buckled_mob.client)
 			buckled_mob.client.change_view(CONFIG_GET(string/default_view))
-	anchored = TRUE//from false
 	. = ..()
 	STOP_PROCESSING(SSfastprocess, src)
 
@@ -63,7 +112,6 @@
 	layer = ABOVE_MOB_LAYER
 	setDir(SOUTH)
 	playsound(src,'sound/mecha/mechmove01.ogg', 50, 1)
-	anchored = TRUE
 	if(M.client)
 		M.client.change_view(view_range)
 	START_PROCESSING(SSfastprocess, src)
@@ -180,9 +228,8 @@
 // M2
 /////////
 /obj/machinery/manned_turret/m2
-	name = "M2 Browning"
-	desc = "A heavy machine gun developed in 1918 and still in use right up until the outbreak of war.\
-	You could easily punch through anything with what this lobs downrange."
+	name = "heavy machine gun"
+	desc = "An M2 Browning heavy machine gun developed long before the bombs fell. Still as powerful as it was all those years ago."
 	icon = 'icons/obj/turrets.dmi'
 	icon_state = "turret"//We pulled this from TGMC, but it's only temp. Thank you, lads. We'll remove it if you wish. Lacking some directionals, but it works for now.
 	can_buckle = TRUE
@@ -197,7 +244,9 @@
 
 //Unanchored, for use with a mob dropping it, so it anchors when used afterwards.
 /obj/machinery/manned_turret/m2/unanchored
+	can_buckle = FALSE
 	anchored = FALSE
+
 /////////
 // M2 End
 /////////
