@@ -167,7 +167,7 @@
 	item_state = "308"
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/hunting
 	sawn_desc = "A hunting rifle, crudely shortened with a saw. It's far from accurate, but the short barrel makes it quite portable."
-	fire_delay = 4
+	fire_delay = 6
 	extra_speed = 800
 	spread = 0
 	force = 18
@@ -192,7 +192,7 @@
 	name = "Remington rifle"
 	desc = "A militarized hunting rifle rechambered to 7.62. This one has had the barrel floated with shims to increase accuracy."
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/hunting/remington
-	fire_delay = 2
+	fire_delay = 4
 	extra_speed = 800
 	force = 18
 
@@ -333,7 +333,7 @@
 	icon_state = "amr"
 	item_state = "amr"
 	mag_type = /obj/item/ammo_box/magazine/amr
-	fire_delay = 12
+	fire_delay = 18
 	recoil = 10
 	slowdown = 1.45 //.20 higher than the M1919 MMG.
 	spread = 0
