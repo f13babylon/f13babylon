@@ -105,7 +105,7 @@
 			if(M.dropItemToGround(I))
 				var/obj/item/gun_control/TC = new(src)
 				M.put_in_hands(TC)
-		else	//Entries in the list should only ever be items or null, so if it's not an item, we can assume it's an empty hand
+		else	//Entries in the list should only ever be items or null, so if it's not an item we can assume it's an empty hand
 			var/obj/item/gun_control/TC = new(src)
 			M.put_in_hands(TC)
 	M.pixel_y = 14
