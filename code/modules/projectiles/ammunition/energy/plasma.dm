@@ -49,7 +49,7 @@
 	e_cost = 160 //10 shots
 
 /obj/item/ammo_casing/energy/plasma/pistol/glock/extended
-	e_cost = 80 //20 shots
+	e_cost = 200 //10 shots
 
 /obj/item/ammo_casing/energy/plasma/pistol/alien
 	projectile_type = /obj/item/projectile/f13plasma/pistol/alien
