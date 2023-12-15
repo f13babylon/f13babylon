@@ -111,6 +111,7 @@
 	item_state = "cowboyrepeater"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube357
 	extra_speed = 300
+	fire_delay = 4
 	fire_sound = 'sound/f13weapons/cowboyrepeaterfire.ogg'
 	extra_damage = 4
 
@@ -124,7 +125,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube44
 	extra_speed = 200
 	fire_sound = 'sound/f13weapons/44mag.ogg'
-	extra_damage = 4
+	extra_damage = 5
 	fire_delay = 2
 
 
@@ -136,7 +137,7 @@
 	item_state = "brushgun"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube4570
 	extra_speed = 100
-	fire_delay = 4
+	fire_delay = 6
 	recoil = 0.15
 	fire_sound = 'sound/f13weapons/brushgunfire.ogg'
 	extra_penetration = 0.12
@@ -148,7 +149,7 @@
 	icon_state = "medistick"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube4570/medicine
 	extra_speed = 150
-	fire_delay = 3
+	fire_delay = 5
 	recoil = 0.10
 	fire_sound = 'sound/f13weapons/brushgunfire.ogg'
 	extra_penetration = 0.15
