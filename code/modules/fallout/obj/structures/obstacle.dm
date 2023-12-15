@@ -54,7 +54,7 @@
 	icon_state = "barbed"
 	max_integrity = 75
 	pass_flags_self = LETPASSTHROW
-	proj_pass_rate = 50
+	proj_pass_rate = 75
 	var/slowdown = 40
 	var/buildstacktype = /obj/item/stack/rods
 	var/buildstackamount = 5
