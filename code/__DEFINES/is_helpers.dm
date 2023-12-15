@@ -94,6 +94,7 @@ GLOBAL_LIST_INIT(turfs_without_ground, typecacheof(list(
 #define isghoul(A) (is_species(A, /datum/species/ghoul) || is_species(A, /datum/species/ghoul/anthropomorph))
 //#define isghoul(A) (is_species(A, /datum/species/ghoul/glowing))
 //#definte issmutant(A) (is_pecies(A, /datum/species/smutant))
+#define isvox(A) (is_species(A, /datum/species/vox))
 
 //more carbon mobs
 #define ismonkey(A) (istype(A, /mob/living/carbon/monkey))
