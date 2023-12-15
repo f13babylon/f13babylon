@@ -528,7 +528,7 @@
 	supereffective_damage = 20
 
 /obj/item/projectile/f13plasma/pistol/worn
-	damage = 22
+	damage = 20
 
 /obj/item/projectile/f13plasma/pistol/glock //Glock (streamlined plasma pistol)
 	damage = 27
