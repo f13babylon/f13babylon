@@ -249,6 +249,28 @@
 	subcategory = CAT_ARMOR
 	always_available = FALSE
 
+/datum/crafting_recipe/enclavecombatarmor
+	name = "enclave combat armor"
+	result = /obj/item/clothing/suit/armor/f13/combat/mk2/enclave
+	blacklist = list(/obj/item/clothing/suit/armor/f13/combat)
+	reqs = list(/obj/item/clothing/suit/armor/f13/combat/mk2 = 1,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOR
+	always_available = FALSE
+
+/datum/crafting_recipe/enclavecombathelmet
+	name = "enclave combat helmet"
+	result = /obj/item/clothing/head/helmet/f13/combat/enclave
+	blacklist = list(/obj/item/clothing/head/helmet/f13/combat)
+	reqs = list(/obj/item/clothing/head/helmet/f13/combat/mk2 = 1,
+				/obj/item/toy/crayon/spraycan)
+	time = 30
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOR
+	always_available = FALSE
+
 ///////////
 //HELMETS//
 ///////////

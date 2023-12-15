@@ -74,4 +74,4 @@
 /obj/item/ammo_casing/energy/plasma/caster
 	projectile_type = /obj/item/projectile/f13plasma/caster
 	fire_sound = 'sound/f13weapons/plasmacaster_fnv.ogg'
-	e_cost = 200 //10 shots
+	e_cost = 80 //25 shots

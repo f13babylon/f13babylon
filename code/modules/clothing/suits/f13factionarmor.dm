@@ -935,12 +935,12 @@
 
 /obj/item/clothing/suit/armor/f13/enclave/marine
 	name = "old United States Marine Corp Armor"
-	desc = "An advanced model of combat armor worn by marines aboard the USS Democracy, second only to power armor in protection used by the USCM For various tasks and operations, it's handled the nuclear wasteland somewhat better than the rest of the armors you've seen."
+	desc = "An advanced model of combat armor worn by marines aboard the USS Democracy, second only to power armor in protection used by the USMC For various tasks and operations, it's handled the nuclear wasteland somewhat better than the rest of the armors you've seen."
 	icon_state = "enclave_marine"
 	item_state = "enclave_marine"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 40, "energy" = 10, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 20)
-	slowdown = 0.1
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 45, "energy" = 35, "bomb" = 55, "bio" = 60, "rad" = 50, "fire" = 60, "acid" = 20, "wound" = 20)
+	slowdown = 0.12
 
 /obj/item/clothing/suit/armor/f13/enclave/marine/Initialize(mapload)
 	. = ..()
@@ -953,7 +953,7 @@
 	icon_state = "usmc_riot_gear"
 	item_state = "usmc_riot_gear"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 40, "energy" = 20, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 10)
+	armor = list("melee" = 55, "bullet" = 55, "laser" = 40, "energy" = 30, "bomb" = 55, "bio" = 60, "rad" = 30, "fire" = 60, "acid" = 20, "wound" = 20)
 
 /obj/item/clothing/suit/armor/f13/usmcriot/Initialize(mapload) //HQ parts reinforcement
 	. = ..()
@@ -969,7 +969,7 @@
 	icon_state = "armor_enclave_officer"
 	item_state = "armor_enclave_officer"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	armor = list("melee" = 55, "bullet" = 55, "laser" = 55, "energy" = 30, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 20) //equivalent to HK
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 45, "energy" = 35, "bomb" = 55, "bio" = 60, "rad" = 25, "fire" = 60, "acid" = 20, "wound" = 20) //equivalent to HK
 	mutantrace_variation = STYLE_DIGITIGRADE
 
 
@@ -1076,8 +1076,8 @@
 	desc = "An old set of pre-war combat armor, painted black."
 	icon_state = "enclave_new"
 	item_state = "enclave_new"
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 20)
-	slowdown = 0.12
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 40, "energy" = 30, "bomb" = 50, "bio" = 60, "rad" = 40, "fire" = 60, "acid" = 20, "wound" = 20)
+	slowdown = 0.1
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/enclave/ComponentInitialize(mapload) //HQ parts reinforcement
 	. = ..()

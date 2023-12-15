@@ -116,8 +116,15 @@
 	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
 	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
 	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
+	ADD_TRAIT(H, TRAIT_CHEMWHIZ,  REF(src))
+	ADD_TRAIT(H, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/plasmarifle)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/plasmapistol)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/neostead)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombatarmor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombathelmet)
 
 
 //Lieutenant
@@ -170,8 +177,14 @@
 	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
 	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ,  REF(src))
+	ADD_TRAIT(H, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/plasmarifle)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/plasmapistol)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/neostead)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombatarmor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombathelmet)
 
 /datum/outfit/loadout/lt_is
 	name = "Internal Security Advisor"
@@ -605,14 +618,19 @@
 	ADD_TRAIT(H, TRAIT_SURGERY_HIGH,  REF(src))
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ,  REF(src))
 	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
+	ADD_TRAIT(H, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING,  REF(src))
 	// ADD_TRAIT(H, TRAIT_UNETHICAL_PRACTITIONER,  REF(src)) // Brainwashing
 	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
 //	ADD_TRAIT(H, TRAIT_POOR_AIM,  REF(src))
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/needle)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gun/plasmamusket)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/lightplasmapistol)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/USAeyebot)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/plasmarifle)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/plasmapistol)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/neostead)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombatarmor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombathelmet)
 
 /*
 //Pilot
