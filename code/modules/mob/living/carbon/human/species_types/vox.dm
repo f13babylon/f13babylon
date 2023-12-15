@@ -15,7 +15,7 @@
 
 	meat = /obj/item/reagent_containers/food/snacks/meat/slab/chicken
 
-    // resistant to the cold
+	// resistant to the cold
 	coldmod = 0.7
 	heatmod = 1.3
 
