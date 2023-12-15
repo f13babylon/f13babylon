@@ -1,5 +1,5 @@
 /*
-IN THIS DOCUMENT: Universal Gun system rules/keywords. Universal gun template and procs/vars.
+IN THIS DOCUMENT: Universal Gun system rules/keywords. Universal gun template and procs/vars. Tasty.
 
 /////////////////////////////////////
 //UNIVERSAL GUN KEYWORDS AND SYSTEM//
