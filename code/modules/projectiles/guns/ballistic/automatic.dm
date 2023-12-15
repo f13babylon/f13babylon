@@ -208,6 +208,7 @@
 	slowdown = 0.15
 	spread = 14
 	force = 12
+	recoil = 0.65
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 
 /obj/item/gun/ballistic/automatic/smg/auto_select()
