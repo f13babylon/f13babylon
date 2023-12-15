@@ -64,7 +64,7 @@
 		to_chat(user, "<span class='notice'>You start unwelding [src] from the floor...</span>")
 		if(I.use_tool(src, user, 4 SECONDS, volume=50, amount=2))
 			user.visible_message("<span class='notice'>[user] unwelds [src] from the floor.</span>",\
-								 "<span class='notice'>You unweld [src] from the floor.</span>")
+								"<span class='notice'>You unweld [src] from the floor.</span>")
 			unbuckle_all_mobs(TRUE)
 			can_buckle = FALSE
 			playsound(loc, 'sound/items/deconstruct.ogg', 50, TRUE)
@@ -73,7 +73,7 @@
 		to_chat(user, "<span class='notice'>You start welding [src] to the floor...</span>")
 		if(I.use_tool(src, user, 4 SECONDS, volume=50, amount=2))
 			user.visible_message("<span class='warning'>[user] welds [src] to the floor.</span>",\
-								 "<span class='notice'>You weld [src] to the floor.</span>")
+								"<span class='notice'>You weld [src] to the floor.</span>")
 			can_buckle = TRUE
 			playsound(loc, 'sound/items/deconstruct.ogg', 50, TRUE)
 
