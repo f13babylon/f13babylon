@@ -400,17 +400,15 @@ ATTACHMENTS
 	process_afterattack(target, user, flag, params)
 
 /obj/item/gun/proc/process_afterattack(atom/target, mob/living/user, flag, params)
-	if(!target)
+	if(!target || !user || firing)
 		return
-	if(firing)
-		return
+
 	var/user_turf = get_turf(user)
 	if(target == user_turf)
 		return
 
-	var/stamloss = user.getStaminaLoss()
 	if(flag)
-		if(target in user.contents || ((ismob(target) || isobj(target)) && (user.a_intent == INTENT_HELP || user.a_intent == INTENT_DISARM))) //can't shoot stuff inside us or on help/disarm intent.
+		if(!isturf(target.loc) || ((ismob(target) || isobj(target)) && (user.a_intent == INTENT_HELP || user.a_intent == INTENT_DISARM)))
 			return
 		if(iscarbon(target))
 			var/mob/living/carbon/C = target
@@ -457,9 +455,10 @@ ATTACHMENTS
 	var/bonus_spread = 0
 	var/loop_counter = 0
 
-	if(user)
-		bonus_spread = getinaccuracy(user, bonus_spread, stamloss) //CIT CHANGE - adds bonus spread while not aiming
+	var/stamloss = user.getStaminaLoss()
+
 	if(ishuman(user) && user.a_intent == INTENT_HARM && weapon_weight <= WEAPON_LIGHT)
+		bonus_spread = getinaccuracy(user, bonus_spread, stamloss) //CIT CHANGE - adds bonus spread while not aiming
 		var/mob/living/carbon/human/H = user
 		for(var/obj/item/gun/G in H.held_items)
 			if(G == src || G.weapon_weight >= WEAPON_MEDIUM)
