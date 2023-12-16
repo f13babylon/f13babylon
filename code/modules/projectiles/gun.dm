@@ -393,13 +393,13 @@ ATTACHMENTS
 	if(!(. & DISCARD_LAST_ACTION))
 		user.DelayNextAction(attack_speed)
 
-/obj/item/gun/afterattack(atom/target, mob/living/user, flag, params)
+/obj/item/gun/afterattack(atom/target, mob/living/user, proximity_flag, params)
 	. = ..()
 	if(!CheckAttackCooldown(user, target))
 		return
-	process_afterattack(target, user, flag, params)
+	process_afterattack(target, user, proximity_flag, params)
 
-/obj/item/gun/proc/process_afterattack(atom/target, mob/living/user, flag, params)
+/obj/item/gun/proc/process_afterattack(atom/target, mob/living/user, proximity_flag, params)
 	if(!target || !user || firing)
 		return
 
@@ -407,7 +407,7 @@ ATTACHMENTS
 	if(target == user_turf)
 		return
 
-	if(flag)
+	if(proximity_flag)
 		if(!isturf(target.loc) || ((ismob(target) || isobj(target)) && (user.a_intent == INTENT_HELP || user.a_intent == INTENT_DISARM)))
 			return
 		if(iscarbon(target))
@@ -426,7 +426,7 @@ ATTACHMENTS
 		shoot_with_empty_chamber(user)
 		return
 
-	if(flag)
+	if(proximity_flag)
 		if(ishuman(user) && ishuman(target) && user.zone_selected == BODY_ZONE_PRECISE_MOUTH)
 			user.DelayNextAction(attack_speed)
 			handle_suicide(user, target, params)
