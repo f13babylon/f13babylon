@@ -390,7 +390,7 @@
 	item_state = "laser-rifle9"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer12/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
-	fire_delay = 3
+	fire_delay = 4
 	scope_state = "AEP7_scope"
 	scope_x_offset = 12
 	scope_y_offset = 20
@@ -418,7 +418,7 @@
 	icon_state = "laer"
 	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
 	item_state = "laer"
-	fire_delay = 2
+	fire_delay = 3
 	burst_size = 1
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/laer/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
