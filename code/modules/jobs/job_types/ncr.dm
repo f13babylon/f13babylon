@@ -998,7 +998,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "Combat Medic"
 	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/msmg10mmn = 2,
+		/obj/item/ammo_box/magazine/msmg10mm = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		)
 
