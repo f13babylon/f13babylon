@@ -182,18 +182,14 @@
 	random_icon_states = list("vomit_1", "vomit_2", "vomit_3", "vomit_4")
 	beauty = -150
 
+
 /obj/effect/decal/cleanable/vomit/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
 	if(ishuman(user))
 		var/mob/living/carbon/human/H = user
 		if(isflyperson(H))
 			playsound(get_turf(src), 'sound/items/drink.ogg', 50, 1) //slurp
 			H.visible_message("<span class='alert'>[H] extends a small proboscis into the vomit pool, sucking it with a slurping sound.</span>")
-			if(reagents)
-				for(var/datum/reagent/consumable/R in reagents.reagent_list)
-					if(R.nutriment_factor > 0)
-						H.adjust_nutrition(R.nutriment_factor * R.volume)
-						reagents.del_reagent(R.type)
-			reagents.trans_to(H, reagents.total_volume)
+			H.adjust_nutrition(10)
 			qdel(src)
 
 /obj/effect/decal/cleanable/vomit/old

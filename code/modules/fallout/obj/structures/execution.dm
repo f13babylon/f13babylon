@@ -10,7 +10,8 @@
 	buckle_lying = 0
 	can_buckle = 1
 	max_integrity = 250
-	bound_height = 64
+	layer = ABOVE_MOB_LAYER
+	plane = MOB_PLANE
 
 /obj/structure/cross/crowbar_act(mob/living/user, obj/item/I)
 	if(has_buckled_mobs())
@@ -40,6 +41,7 @@
 			playsound(src.loc, "sound/effects/crossed.ogg", 20, 1) // thanks hippie
 			L.visible_message("<span class='danger'>[user] ties [L] to the cross!</span>", "<span class='userdanger'>[user] ties you to the cross!</span>")
 			L.forceMove(drop_location())
+			L.plane = -2
 			L.emote("scream")
 			if(iscarbon(L))
 				var/mob/living/carbon/C = L
@@ -60,7 +62,7 @@
 
 /obj/structure/cross/user_buckle_mob(mob/living/M, mob/living/user)
 	return
-	
+
 /obj/structure/cross/user_unbuckle_mob(mob/living/buckled_mob, mob/living/carbon/human/user)
 	if(buckled_mob && buckled_mob.buckled == src)
 		var/mob/living/M = buckled_mob
@@ -95,6 +97,7 @@
 	M.adjustBruteLoss(15)
 	src.visible_message(text("<span class='danger'>[M] falls free of [src]!</span>"))
 	unbuckle_mob(M,force=1)
+	M.plane = -3
 	INVOKE_ASYNC(M, /mob/proc/emote, "collapse")
 	M.overlays -= image('icons/obj/cross.dmi', "lashing")
 

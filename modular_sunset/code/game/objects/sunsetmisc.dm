@@ -124,6 +124,7 @@
 	anchored = 1
 	w_class = 4
 	layer = 5
+	bound_width = 64
 
 /obj/item/trade_sign
 	name = "Trade sign"
@@ -135,6 +136,7 @@
 	anchored = 1
 	w_class = 4
 	layer = 5
+	bound_width = 64
 
 /datum/weather/ash_storm/sandstorm
 	telegraph_message = "<span class='userdanger'>A sandstorm is coming to the area, decreasing overall visibility outside.</span>"
