@@ -585,7 +585,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
 	ADD_TRAIT(H, TRAIT_IRONFIST,  REF(src))
 	ADD_TRAIT(H, TRAIT_SILENT_STEP,  REF(src))
-	ADD_TRAIT(H, TRAIT_INSANE_AIM,  REF(src))
 	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
 	var/datum/martial_art/rangertakedown/RT = new
 	RT.teach(H)
@@ -618,6 +617,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit_store = /obj/item/gun/ballistic/rifle/mag/antimateriel
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/amr = 2,
+		/obj/item/gun/ballistic/automatic/pistol/deagle = 1,
+		/obj/item/ammo_box/magazine/m44 = 2,
 		)
 
 /datum/outfit/loadout/vrlite
@@ -625,6 +626,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit_store = /obj/item/gun/ballistic/rifle/repeater/brush/medistick
 	backpack_contents = list(
 		/obj/item/ammo_box/c4570box/ = 2,
+		/obj/item/book/granter/trait/insane_aim,
 		)
 
 /datum/outfit/loadout/vrcqc
@@ -1368,19 +1370,20 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 
-// REAR ECHELON
+// OFF-DUTY - Was Rear Echelon before but issues arose between on v off duty
 
+// This job is an off-duty job despite the path name. The reason the path name is unchanged is due to tracking play time. (This should still prob be changed if non-issue.)
 /datum/job/ncr/f13rearechelon
-	title = "NCR Rear Echelon"
-	flag = F13REARECHELON
+	title = "NCR Off-Duty"
+	flag = F13NCROFFDUTY
 	total_positions = 7
 	spawn_positions = 7
-	description = "You are the support element sent to assist the Forward Camp Grassden garrison. You are essential specialized support staff to help sustain the base via supply or specialized skills."
-	supervisors = "Logistics/Medical officer first, regular chain of command after that."
-	enforces = "You may leave the base, but you are not allowed to antagonize other factions or scavenge. You are a non-combatant. You cannot join any raids or battles on the surface. You cannot not run dungeons."
+	description = "You are off-duty NCR-A personnel in the Yuma Region. Despite being out of uniform and off-duty you are still expected to follow NCR COMJ and represent the uniform properly. Failure to abide by this will result in disciplinary action."
+	supervisors = "All NCOs and COs"
+	enforces = "You may aid around the base with tasks such as clean up, fortification building, crop growing, or other non-combat related needs. You should not leave the base for any reason unless permitted by an on-duty Captain."
 	selection_color = "#fff5cc"
 	exp_type = EXP_TYPE_NCR
-	display_order = JOB_DISPLAY_ORDER_REAR_ECHELON
+	display_order = JOB_DISPLAY_ORDER_NCR_OFF_DUTY
 	outfit = /datum/outfit/job/ncr/f13rearechelon
 	exp_requirements = 0
 
@@ -1391,8 +1394,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	accessory =	/obj/item/clothing/accessory/ncr/TPR
 	head = /obj/item/clothing/head/f13/ncr/ncr_cap
 	suit = /obj/item/clothing/suit/armor/f13/utilityvest
-	belt = /obj/item/storage/belt/military/NCR_Bandolier
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/m1911
 
 /datum/outfit/job/ncr/f13rearechelon/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()

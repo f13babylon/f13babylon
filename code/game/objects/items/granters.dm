@@ -960,6 +960,14 @@
 	traitname = "trekking"
 	remarks = list("Tribes and gangs often hide the best loot in the back room.", "Radiation is best avoided entirely, but it helps to carry spare rad-x.", "Whether ancient or recent, landmines are still a threat, and readers should look out for them.", "Injuries and open bleeding make it harder to travel, always carry spare medical supplies.", "Most animals are simple-minded, and can be led into easy lines of fire.")
 
+/obj/item/book/granter/trait/insane_aim
+	name = "Reality Bending: You v. The World"
+	desc = "This odd book seems to imply you can somehow bend reality to your will. You hope it's satire, but somehow it promises you can curve bullets.."
+	oneuse = TRUE
+	granted_trait = TRAIT_INSANE_AIM
+	traitname = "insane_aim"
+	remarks = list("The antichrist is real and is after you, he is a government agent.", "Curving bullet theory is real, the nice man on the pip-net told you so.", "You hate the anti-christ.", "We are past phrase 'go', calling all true American patriots.", "You shouldn't drink the water.")
+
 /obj/item/book/granter/trait/research
 	name = "Research and You"
 	desc = "A battered purple-blue handbook, detailing lessons to use research equipment."
