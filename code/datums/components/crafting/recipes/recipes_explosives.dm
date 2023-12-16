@@ -15,19 +15,35 @@
 	time = 120
 	category = CAT_EXPLOSIVE
 
-/*
 /datum/crafting_recipe/chemical_payload
 	name = "Chemical Payload (C4)"
 	result = /obj/item/bombcore/chemical
 	reqs = list(
 		/obj/item/stock_parts/matter_bin = 1,
 		/obj/item/grenade/plastic/c4 = 1,
-		/obj/item/grenade/chem_grenade = 2
+		/obj/item/stack/crafting/goodparts = 2,
+		/obj/item/stack/sheet/glass = 6,
 	)
-	parts = list(/obj/item/stock_parts/matter_bin = 1, /obj/item/grenade/chem_grenade = 2)
 	time = 60
 	category = CAT_EXPLOSIVE
-*/
+	always_available = FALSE
+	granting_trait = TRAIT_ADVANCED_EXPLOSIVE_CRAFTING
+
+/datum/crafting_recipe/explosive/c4
+	name = "Plastic Explosive"
+	result = /obj/item/grenade/plastic/c4
+	reqs = list(/datum/reagent/blackpowder = 90,
+				/datum/reagent/nitroglycerin = 30,
+				/obj/item/stack/cable_coil = 1,
+				/obj/item/stack/crafting/metalparts = 4,
+				/obj/item/stack/crafting/goodparts = 2,
+				/obj/item/stack/crafting/electronicparts = 1,
+				/obj/item/assembly/igniter = 1,
+				/obj/item/assembly/timer = 1)
+	time = 60
+	subcategory = CAT_EXPLOSIVE
+	always_available = FALSE
+	granting_trait = TRAIT_ADVANCED_EXPLOSIVE_CRAFTING
 
 /datum/crafting_recipe/explosive/molotov
 	name = "Molotov Cocktail (empty)"
@@ -58,6 +74,28 @@
 	time = 120
 	category = CAT_EXPLOSIVE
 
+/datum/crafting_recipe/explosive/pipebomb
+	name = "Pipebomb"
+	result = /obj/item/grenade/homemade/pipebomb
+	reqs = list(/datum/reagent/blackpowder = 80,
+				/obj/item/stack/sheet/metal = 15,
+				/obj/item/stack/crafting/goodparts = 3,
+				/obj/item/stack/cable_coil = 1,
+				/obj/item/stack/sheet/cloth = 1)
+	time = 70
+	category = CAT_EXPLOSIVE
+
+/datum/crafting_recipe/explosive/dynamite
+	name = "Dynamite Stick"
+	result = /obj/item/grenade/homemade/dynamite
+	reqs = list(/datum/reagent/blackpowder = 70,
+				/obj/item/stack/crafting/metalparts = 2,
+				/obj/item/stack/cable_coil = 1,
+				/obj/item/stack/sheet/cloth = 5)
+	time = 60
+	subcategory = CAT_EXPLOSIVE
+	always_available = FALSE
+
 /datum/crafting_recipe/explosive/bottlecap_mine
 	name = "Bottlecap Mine"
 	result = /obj/item/bottlecap_mine
@@ -68,6 +106,7 @@
 			/obj/item/stack/f13Cash/caps = 200)
 	time = 150
 	category = CAT_EXPLOSIVE
+
 /datum/crafting_recipe/explosive/shrapnelmine
 	name = "Shrapnel Mine"
 	result = /obj/item/mine/shrapnel/random

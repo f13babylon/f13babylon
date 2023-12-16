@@ -757,16 +757,6 @@
 	for(var/i in 1 to 7)
 		new /obj/item/ammo_casing/shotgun(src)
 
-/obj/item/storage/box/stunslug
-	name = "box of stun slugs"
-	desc = "A box full of stun 12g slugs."
-	icon_state = "stunslug_box"
-	illustration = null
-
-/obj/item/storage/box/stunslug/PopulateContents()
-	for(var/i in 1 to 7)
-		new /obj/item/ammo_casing/shotgun/stunslug(src)
-
 /obj/item/storage/box/techsslug
 	name = "box of tech shotgun shells"
 	desc = "A box full of tech shotgun shells."
