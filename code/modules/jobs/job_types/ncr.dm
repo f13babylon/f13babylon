@@ -1378,7 +1378,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	flag = F13NCROFFDUTY
 	total_positions = 7
 	spawn_positions = 7
-	description = "You are off-duty NCR-A personnel in the Yuma Region. Despite being out of uniform and off-duty you are still expected to follow NCR COMJ and represent the uniform properly. Failure to abide by this will result in disciplinary action."
+	description = "You are off-duty NCR personnel in the Utah Region. Despite being out of uniform and off-duty you are still expected to follow NCR COMJ and represent the uniform properly. Failure to abide by this will result in disciplinary action."
 	supervisors = "All NCOs and COs"
 	enforces = "You may aid around the base with tasks such as clean up, fortification building, crop growing, or other non-combat related needs. You should not leave the base for any reason unless permitted by an on-duty Captain."
 	selection_color = "#fff5cc"
