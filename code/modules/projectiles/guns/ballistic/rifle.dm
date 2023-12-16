@@ -137,7 +137,7 @@
 	item_state = "brushgun"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube4570
 	extra_speed = 100
-	fire_delay = 6
+	fire_delay = 5
 	recoil = 0.15
 	fire_sound = 'sound/f13weapons/brushgunfire.ogg'
 	extra_penetration = 0.12
@@ -149,7 +149,7 @@
 	icon_state = "medistick"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube4570/medicine
 	extra_speed = 150
-	fire_delay = 5
+	fire_delay = 4
 	recoil = 0.10
 	fire_sound = 'sound/f13weapons/brushgunfire.ogg'
 	extra_penetration = 0.15
@@ -366,7 +366,7 @@
 	icon_state = "amr"
 	item_state = "amr"
 	mag_type = /obj/item/ammo_box/magazine/amr
-	fire_delay = 18
+	fire_delay = 5
 	recoil = 10
 	slowdown = 1.45 //.20 higher than the M1919 MMG.
 	spread = 0

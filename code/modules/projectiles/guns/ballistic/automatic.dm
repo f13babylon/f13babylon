@@ -1454,7 +1454,7 @@
 	slot_flags = SLOT_BACK
 	mag_type = /obj/item/ammo_box/magazine/m2mm
 	burst_size = 1
-	fire_delay = 16
+	fire_delay = 11
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
