@@ -408,7 +408,9 @@ ATTACHMENTS
 		return
 
 	if(proximity_flag)
-		if(!isturf(target.loc) || ((ismob(target) || isobj(target)) && (user.a_intent == INTENT_HELP || user.a_intent == INTENT_DISARM)))
+		if(!isturf(target) && !isturf(target.loc))
+			return
+		if((ismob(target) || isobj(target)) && (user.a_intent == INTENT_HELP || user.a_intent == INTENT_DISARM))
 			return
 		if(iscarbon(target))
 			var/mob/living/carbon/C = target
