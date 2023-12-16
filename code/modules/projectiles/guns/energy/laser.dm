@@ -206,7 +206,7 @@
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	icon_state = "wattz1000"
 	item_state = "laser-pistol"
-	fire_delay = 3
+	fire_delay = 4
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_LIGHT //Can dual wield, which makes up for the meh damage. Especially so with the Magneto.
 	slot_flags = ITEM_SLOT_BELT
@@ -219,7 +219,7 @@
 	name = "magnetic laser pistol"
 	desc = "An upgraded variant of the Wattz 1000 laser pistol originally intended for police use. Fires concentrated beams of light that are capable of penetrating common armor."
 	icon_state = "wattzplus"
-	fire_delay = 2
+	fire_delay = 3
 	item_state = "laser-pistol"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/wattz/magneto/hitscan)
 
@@ -251,7 +251,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
-	fire_delay = 2
+	fire_delay = 3
 	can_scope = FALSE
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
 
