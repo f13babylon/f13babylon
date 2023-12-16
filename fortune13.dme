@@ -2582,7 +2582,6 @@
 #include "code\modules\mob\dead\new_player\sprite_accessories\alienpeople.dm"
 #include "code\modules\mob\dead\new_player\sprite_accessories\body_markings.dm"
 #include "code\modules\mob\dead\new_player\sprite_accessories\caps.dm"
-#include "code\modules\mob\dead\new_player\sprite_accessories\Citadel_Snowflake.dm"
 #include "code\modules\mob\dead\new_player\sprite_accessories\ears.dm"
 #include "code\modules\mob\dead\new_player\sprite_accessories\frills.dm"
 #include "code\modules\mob\dead\new_player\sprite_accessories\hair_face.dm"

@@ -43,33 +43,17 @@
 	name = "Beard (Chinstrap)"
 	icon_state = "facial_chin"
 
-/datum/sprite_accessory/facial_hair/dwarf
-	name = "Beard Full (Miner)"
-	icon_state = "facial_dwarf"
-
 /datum/sprite_accessory/facial_hair/fullbeard
 	name = "Beard (Full)"
 	icon_state = "facial_fullbeard"
 
-/datum/sprite_accessory/facial_hair/gt
-	name = "Short beard (Goatee)"
-	icon_state = "facial_gt"
-
-/datum/sprite_accessory/facial_hair/goatee
-	name = "Short beard (Goatee alt)"
-	icon_state = "facial_goatee"
-
-/datum/sprite_accessory/facial_hair/hip
-	name = "Short beard (Hipster)"
-	icon_state = "facial_hip"
-
-/datum/sprite_accessory/facial_hair/jensen
-	name = "Short beard (Jensen)"
-	icon_state = "facial_jensen"
-
 /datum/sprite_accessory/facial_hair/martialartist
 	name = "Beard (Martial Artist)"
 	icon_state = "facial_martialartist"
+
+/datum/sprite_accessory/facial_hair/dwarf
+	name = "Beard (Miner)"
+	icon_state = "facial_dwarf"
 
 /datum/sprite_accessory/facial_hair/moonshiner
 	name = "Beard (Moonshiner)"
@@ -79,21 +63,37 @@
 	name = "Beard (Neckbeard)"
 	icon_state = "facial_neckbeard"
 
+/datum/sprite_accessory/facial_hair/longbeard
+	name = "Beard (Pretty Long)"
+	icon_state = "facial_longbeard"
+
 /datum/sprite_accessory/facial_hair/tribeard
 	name = "Beard (Tribeard)"
 	icon_state = "facial_tribeard"
 
 /datum/sprite_accessory/facial_hair/vlongbeard
-	name = "Very long beard"
+	name = "Beard (Very Long)"
 	icon_state = "facial_verylong"
 
-/datum/sprite_accessory/facial_hair/volaju
-	name = "Short beard (Volaju)"
-	icon_state = "facial_volaju"
+/datum/sprite_accessory/facial_hair/gt
+	name = "Short Beard (Goatee)"
+	icon_state = "facial_gt"
 
-/datum/sprite_accessory/facial_hair/longbeard
-	name = "Beard (Pretty Long)"
-	icon_state = "facial_longbeard"
+/datum/sprite_accessory/facial_hair/goatee
+	name = "Short Beard (Goatee Alt)"
+	icon_state = "facial_goatee"
+
+/datum/sprite_accessory/facial_hair/hip
+	name = "Short Beard (Hipster)"
+	icon_state = "facial_hip"
+
+/datum/sprite_accessory/facial_hair/jensen
+	name = "Short Beard (Jensen)"
+	icon_state = "facial_jensen"
+
+/datum/sprite_accessory/facial_hair/volaju
+	name = "Short Beard (Volaju)"
+	icon_state = "facial_volaju"
 
 /datum/sprite_accessory/facial_hair/moustache
 	name = "Moustache (Absurdist)"
@@ -132,11 +132,11 @@
 	icon_state = "facial_watson"
 
 /datum/sprite_accessory/facial_hair/mutton
-	name = "Mutton Chopsp (Basic)"
+	name = "Mutton Chops (Basic)"
 	icon_state = "facial_mutton"
 
 /datum/sprite_accessory/facial_hair/muttonmus
-	name = "Mutton Chops with Moustache"
+	name = "Mutton Chops (Moustache)"
 	icon_state = "facial_muttonmus"
 
 /datum/sprite_accessory/facial_hair/sideburn
@@ -146,3 +146,39 @@
 /datum/sprite_accessory/facial_hair/elvis
 	name = "Sideburns (Elvis)"
 	icon_state = "facial_elvis"
+
+/datum/sprite_accessory/facial_hair/hornschin
+	name = "Horns (Chin)"
+	icon_state = "facial_chinhorns"
+
+/datum/sprite_accessory/facial_hair/hornsface
+	name = "Horns (Face)"
+	icon_state = "facial_hornadorns"
+
+/datum/sprite_accessory/facial_hair/faciallizardlick
+	name = "Lizard Lick"
+	icon_state = "facial_lizardlick"
+
+/datum/sprite_accessory/facial_hair/faciallizardlickfast
+	name = "Lizard Lick (Fast)"
+	icon_state = "facial_lizardlickfast"
+
+/datum/sprite_accessory/facial_hair/faciallizardlickslow
+	name = "Lizard Lick (Slow)"
+	icon_state = "facial_lizardlickslow"
+
+/datum/sprite_accessory/facial_hair/noselick
+	name = "Nose Lick"
+	icon_state = "facial_noselick"
+
+/datum/sprite_accessory/facial_hair/noselickfast
+	name = "Nose Lick (Fast)"
+	icon_state = "facial_noselickfast"
+
+/datum/sprite_accessory/facial_hair/noselickslow
+	name = "Nose Lick (Slow)"
+	icon_state = "facial_noselickslow"
+
+/datum/sprite_accessory/facial_hair/tusks
+	name = "Tusks"
+	icon_state = "facial_tusks"
