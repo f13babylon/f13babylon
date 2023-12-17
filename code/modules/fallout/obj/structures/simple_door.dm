@@ -17,6 +17,7 @@
 	density = TRUE
 	anchored = TRUE
 	layer = CLOSED_DOOR_LAYER
+	plane = MOB_PLANE
 	explosion_block = 0.5
 	var/can_hold_padlock = FALSE
 	var/obj/item/lock_construct/padlock
@@ -193,7 +194,7 @@
 		return FALSE
 	if(isliving(user))
 		var/mob/living/M = user
-		if(locate(/obj/structure/barricade) in get_turf(src))
+		if(locate(/obj/structure/barricade/wooden) in get_turf(src))
 			to_chat(M, span_warning("It won't budge!"))
 			return FALSE
 		if(M.client)

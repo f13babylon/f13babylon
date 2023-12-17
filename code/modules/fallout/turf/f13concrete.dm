@@ -211,6 +211,8 @@ GLOBAL_LIST_INIT(concrete_recipes, list ( \
 	pass_flags_self = LETPASSTHROW
 	climbable = TRUE
 	smooth = SMOOTH_TRUE
+	layer = BELOW_OBJ_LAYER
+	plane = GAME_PLANE
 
 /obj/structure/barricade/concrete/attackby(obj/item/I, mob/user)
 	if(istype(I,/obj/item/stack/sheet/mineral/concrete))
