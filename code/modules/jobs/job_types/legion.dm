@@ -1088,6 +1088,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		return
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES,  REF(src))
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK,  REF(src))
+	ADD_TRAIT(H, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING, REF(src))
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gladius)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/spatha)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/lance)
