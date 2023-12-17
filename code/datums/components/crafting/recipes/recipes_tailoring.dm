@@ -1229,7 +1229,7 @@
 /datum/crafting_recipe/legioncombatarmor
 	name = "Legion combat armor"
 	result = /obj/item/clothing/suit/armor/f13/combat/legion
-	blacklist = list(/obj/item/clothing/suit/armor/f13/combat/mk2)
+	blacklist = list(/obj/item/clothing/suit/armor/f13/combat/mk2, /obj/item/clothing/suit/armor/f13/combat/mk2/legion)
 	reqs = list(/obj/item/clothing/suit/armor/f13/combat = 1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
@@ -1240,7 +1240,7 @@
 /datum/crafting_recipe/legioncombathelmet
 	name = "legion combat helmet"
 	result = /obj/item/clothing/head/helmet/f13/combat/legion
-	blacklist = list(/obj/item/clothing/head/helmet/f13/combat/mk2)
+	blacklist = list(/obj/item/clothing/head/helmet/f13/combat/mk2, /obj/item/clothing/head/helmet/f13/combat/mk2/legion)
 	reqs = list(/obj/item/clothing/head/helmet/f13/combat = 1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
