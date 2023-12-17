@@ -132,7 +132,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	suit = /obj/item/clothing/suit/armor/f13/raider/supafly
 	head = /obj/item/clothing/head/helmet/f13/raider/supafly
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/varmint = 1,
+		/obj/item/gun/ballistic/rifle/mag/varmint = 1,
 		/obj/item/ammo_box/magazine/m556/rifle/assault = 1,
 		/obj/item/gun/ballistic/revolver/hobo/knucklegun = 1,
 		/obj/item/ammo_box/c45rev = 2,

@@ -758,9 +758,11 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/loadout/expsniper
 	name = "Sniper"
-	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper/snipervenator
+	glasses = /obj/item/clothing/glasses/sunglasses/big
+	suit_store = /obj/item/gun/ballistic/rifle/hunting/remington
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/w308 = 2,
+		/obj/item/attachments/scope = 1,
+		/obj/item/ammo_box/a762 = 4,
 		/obj/item/gun/ballistic/revolver/revolver45 = 1,
 		/obj/item/ammo_box/c45rev = 1,
 	)

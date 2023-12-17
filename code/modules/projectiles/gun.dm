@@ -1,5 +1,5 @@
 /*
-IN THIS DOCUMENT: Universal Gun system rules/keywords. Universal gun template and procs/vars.
+IN THIS DOCUMENT: Universal Gun system rules/keywords. Universal gun template and procs/vars. Tasty.
 
 /////////////////////////////////////
 //UNIVERSAL GUN KEYWORDS AND SYSTEM//
@@ -151,7 +151,6 @@ ATTACHMENTS
 	force = 5
 	item_flags = NEEDS_PERMIT | SLOWS_WHILE_IN_HAND
 	attack_verb = list("struck", "hit", "bashed")
-	var/ranged_attack_speed = CLICK_CD_RANGE
 	var/fire_sound = "gunshot"
 	var/recoil = 0						//boom boom shake the room
 	var/clumsy_check = TRUE
@@ -393,24 +392,24 @@ ATTACHMENTS
 	if(!(. & DISCARD_LAST_ACTION))
 		user.DelayNextAction(attack_speed)
 
-/obj/item/gun/afterattack(atom/target, mob/living/user, flag, params)
+/obj/item/gun/afterattack(atom/target, mob/living/user, proximity_flag, params)
 	. = ..()
 	if(!CheckAttackCooldown(user, target))
 		return
-	process_afterattack(target, user, flag, params)
+	process_afterattack(target, user, proximity_flag, params)
 
-/obj/item/gun/proc/process_afterattack(atom/target, mob/living/user, flag, params)
-	if(!target)
+/obj/item/gun/proc/process_afterattack(atom/target, mob/living/user, proximity_flag, params)
+	if(!target || !user || firing)
 		return
-	if(firing)
-		return
+
 	var/user_turf = get_turf(user)
 	if(target == user_turf)
 		return
 
-	var/stamloss = user.getStaminaLoss()
-	if(flag)
-		if(target in user.contents || ((ismob(target) || isobj(target)) && (user.a_intent == INTENT_HELP || user.a_intent == INTENT_DISARM))) //can't shoot stuff inside us or on help/disarm intent.
+	if(proximity_flag)
+		if(!isturf(target) && !isturf(target.loc))
+			return
+		if((ismob(target) || isobj(target)) && (user.a_intent == INTENT_HELP || user.a_intent == INTENT_DISARM))
 			return
 		if(iscarbon(target))
 			var/mob/living/carbon/C = target
@@ -428,7 +427,7 @@ ATTACHMENTS
 		shoot_with_empty_chamber(user)
 		return
 
-	if(flag)
+	if(proximity_flag)
 		if(ishuman(user) && ishuman(target) && user.zone_selected == BODY_ZONE_PRECISE_MOUTH)
 			user.DelayNextAction(attack_speed)
 			handle_suicide(user, target, params)
@@ -449,7 +448,7 @@ ATTACHMENTS
 		return
 
 	if (automatic == 0)
-		user.DelayNextAction(ranged_attack_speed)
+		user.DelayNextAction(fire_delay)
 	if (automatic == 1)
 		user.DelayNextAction(autofire_shot_delay)
 
@@ -457,9 +456,10 @@ ATTACHMENTS
 	var/bonus_spread = 0
 	var/loop_counter = 0
 
-	if(user)
-		bonus_spread = getinaccuracy(user, bonus_spread, stamloss) //CIT CHANGE - adds bonus spread while not aiming
+	var/stamloss = user.getStaminaLoss()
+
 	if(ishuman(user) && user.a_intent == INTENT_HARM && weapon_weight <= WEAPON_LIGHT)
+		bonus_spread = getinaccuracy(user, bonus_spread, stamloss) //CIT CHANGE - adds bonus spread while not aiming
 		var/mob/living/carbon/human/H = user
 		for(var/obj/item/gun/G in H.held_items)
 			if(G == src || G.weapon_weight >= WEAPON_MEDIUM)
@@ -491,7 +491,7 @@ ATTACHMENTS
 
 /obj/item/gun/proc/get_clickcd()
 	if (automatic == 0)
-		return isnull(chambered?.click_cooldown_override)? CLICK_CD_RANGE : chambered.click_cooldown_override
+		return isnull(chambered?.click_cooldown_override)? fire_delay : chambered.click_cooldown_override
 	if (automatic == 1)
 		return isnull(chambered?.click_cooldown_override)? autofire_shot_delay : chambered.click_cooldown_override
 
@@ -899,7 +899,7 @@ ATTACHMENTS
 		chambered.BB.damage *= 5
 
 	if (automatic == 0)
-		user.DelayNextAction(ranged_attack_speed)
+		user.DelayNextAction(fire_delay)
 	if (automatic == 1)
 		user.DelayNextAction(autofire_shot_delay)
 
