@@ -251,7 +251,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
-	fire_delay = 3
+	fire_delay = 4
 	can_scope = FALSE
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
 
@@ -262,7 +262,7 @@
 	can_charge = FALSE
 	selfcharge = EGUN_SELFCHARGE_BORG
 	cell_type = /obj/item/stock_parts/cell/secborg
-	charge_delay = 3
+	charge_delay = 4
 
 /obj/item/gun/energy/laser/pistol/cyborg/gutsy
 	name = "\improper integrated laser pistol"
@@ -345,7 +345,7 @@
 	item_state = "laser-rifle9"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
-	fire_delay = 4
+	fire_delay = 5
 	scope_state = "AEP7_scope"
 	scope_x_offset = 12
 	scope_y_offset = 20
@@ -375,7 +375,7 @@
 	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
 	icon_state = "tribeam"
 	item_state = "laser-rifle9"
-	fire_delay = 3
+	fire_delay = 5
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/scatter/tribeam/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	equipsound = 'sound/f13weapons/equipsounds/tribeamequip.ogg'
@@ -390,7 +390,7 @@
 	item_state = "laser-rifle9"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer12/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
-	fire_delay = 4
+	fire_delay = 5
 	scope_state = "AEP7_scope"
 	scope_x_offset = 12
 	scope_y_offset = 20
