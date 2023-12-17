@@ -207,7 +207,7 @@
 	var/repair_material = /obj/item/stack/sheet/plastic
 	var/can_shatter = FALSE
 	shield_flags = SHIELD_FLAGS_DEFAULT | SHIELD_TRANSPARENT
-	max_integrity = 2250
+	max_integrity = 600
 
 /datum/block_parry_data/shield/riot
 	block_damage_multiplier = 0.35
