@@ -393,24 +393,24 @@ ATTACHMENTS
 	if(!(. & DISCARD_LAST_ACTION))
 		user.DelayNextAction(attack_speed)
 
-/obj/item/gun/afterattack(atom/target, mob/living/user, flag, params)
+/obj/item/gun/afterattack(atom/target, mob/living/user, proximity_flag, params)
 	. = ..()
 	if(!CheckAttackCooldown(user, target))
 		return
-	process_afterattack(target, user, flag, params)
+	process_afterattack(target, user, proximity_flag, params)
 
-/obj/item/gun/proc/process_afterattack(atom/target, mob/living/user, flag, params)
-	if(!target)
+/obj/item/gun/proc/process_afterattack(atom/target, mob/living/user, proximity_flag, params)
+	if(!target || !user || firing)
 		return
-	if(firing)
-		return
+
 	var/user_turf = get_turf(user)
 	if(target == user_turf)
 		return
 
-	var/stamloss = user.getStaminaLoss()
-	if(flag)
-		if(target in user.contents || ((ismob(target) || isobj(target)) && (user.a_intent == INTENT_HELP || user.a_intent == INTENT_DISARM))) //can't shoot stuff inside us or on help/disarm intent.
+	if(proximity_flag)
+		if(!isturf(target) && !isturf(target.loc))
+			return
+		if((ismob(target) || isobj(target)) && (user.a_intent == INTENT_HELP || user.a_intent == INTENT_DISARM))
 			return
 		if(iscarbon(target))
 			var/mob/living/carbon/C = target
@@ -428,7 +428,7 @@ ATTACHMENTS
 		shoot_with_empty_chamber(user)
 		return
 
-	if(flag)
+	if(proximity_flag)
 		if(ishuman(user) && ishuman(target) && user.zone_selected == BODY_ZONE_PRECISE_MOUTH)
 			user.DelayNextAction(attack_speed)
 			handle_suicide(user, target, params)
@@ -457,9 +457,10 @@ ATTACHMENTS
 	var/bonus_spread = 0
 	var/loop_counter = 0
 
-	if(user)
-		bonus_spread = getinaccuracy(user, bonus_spread, stamloss) //CIT CHANGE - adds bonus spread while not aiming
+	var/stamloss = user.getStaminaLoss()
+
 	if(ishuman(user) && user.a_intent == INTENT_HARM && weapon_weight <= WEAPON_LIGHT)
+		bonus_spread = getinaccuracy(user, bonus_spread, stamloss) //CIT CHANGE - adds bonus spread while not aiming
 		var/mob/living/carbon/human/H = user
 		for(var/obj/item/gun/G in H.held_items)
 			if(G == src || G.weapon_weight >= WEAPON_MEDIUM)
