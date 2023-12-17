@@ -175,7 +175,7 @@
 /datum/block_parry_data/shield/tower
 	block_slowdown = 0.8
 	block_damage_multiplier = 0.25
-	block_stamina_efficiency = 1
+	block_stamina_efficiency = 10
 	block_stamina_cost_per_second = 2
 	block_damage_absorption = 20
 	block_start_delay = 15 //1.5 second to start blocking
@@ -193,5 +193,5 @@
 
 /datum/block_parry_data/shield/tower/scrap
 	block_damage_multiplier = 0.3
-	block_stamina_efficiency = 1
+	block_stamina_efficiency = 7.5
 	block_damage_absorption = 15

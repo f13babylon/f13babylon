@@ -211,7 +211,7 @@
 
 /datum/block_parry_data/shield/riot
 	block_damage_multiplier = 0.35
-	block_stamina_efficiency = 2.5
+	block_stamina_efficiency = 5
 	block_stamina_cost_per_second = 1
 	block_damage_absorption = 7.5
 
