@@ -116,7 +116,7 @@
 	name = "Chinese pistol"
 	desc = "A standard issue Chinese Type-17 combat pistol, hacked apart and turned into a magazine-fed 10mm self-loader."
 	icon_state = "chinapistol"
-	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
+	mag_type = /obj/item/ammo_box/magazine/m10mm
 	fire_delay = 1
 	recoil = 0.1
 	spread = 3
