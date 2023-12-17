@@ -214,11 +214,9 @@ Proctor
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ,  REF(src))
 	ADD_TRAIT(H, TRAIT_SURGERY_HIGH,  REF(src))
 	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
-//	ADD_TRAIT(H, TRAIT_POOR_AIM,  REF(src))
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/AER9)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/AEP7)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/sniper)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/R93)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/r91)
 
 /datum/outfit/job/bos/f13headscribe
 	name = "Head Scribe"
@@ -553,7 +551,6 @@ Senior Scribe
 	ADD_TRAIT(H, TRAIT_SURGERY_MID,  REF(src))
 	ADD_TRAIT(H, TRAIT_CYBERNETICIST,  REF(src))
 	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
-//	ADD_TRAIT(H, TRAIT_POOR_AIM,  REF(src))
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/AER9)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/AEP7)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/wattz1k)
@@ -583,7 +580,6 @@ Senior Scribe
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/aer9/recharger = 1,
 		/obj/item/stock_parts/cell/ammo/breeder = 2,
-		/obj/item/book/granter/crafting_recipe/blueprint/sniper = 1,
 		/obj/item/book/granter/crafting_recipe/blueprint/marksman = 1,
 		/obj/item/storage/belt/utility/full/engi,
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1,
@@ -665,7 +661,6 @@ Scribe
 	ADD_TRAIT(H, TRAIT_SURGERY_MID,  REF(src))
 	ADD_TRAIT(H, TRAIT_MEDICALGRADUATE,  REF(src))
 	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
-//	ADD_TRAIT(H, TRAIT_POOR_AIM,  REF(src))
 
 /datum/outfit/loadout/scribeb
 	name = "Sword Scribe"
