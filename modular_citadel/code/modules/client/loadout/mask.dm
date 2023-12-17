@@ -72,6 +72,10 @@
 	name = "russian balaclava"
 	path = /obj/item/clothing/mask/russian_balaclava
 
+/datum/gear/mask/sbalaclava
+	name = "skull balaclava"
+	path = /obj/item/clothing/mask/sbalaclava
+
 /// Bandanas ///
 
 /datum/gear/mask/bandana/
