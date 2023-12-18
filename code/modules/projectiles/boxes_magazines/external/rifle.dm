@@ -104,8 +104,8 @@
 	start_empty = 1
 
 /obj/item/ammo_box/magazine/sks
-	name = "7.62mm clip (SKS)"
-	icon_state = "enbloc-10"
+	name = "SKS clip (7.62mm)"
+	icon_state = "sks-10"
 	ammo_type = /obj/item/ammo_casing/a762
 	caliber = "a762"
 	max_ammo = 10
@@ -113,9 +113,9 @@
 /obj/item/ammo_box/magazine/sks/update_icon()
 	..()
 	if (ammo_count() >= 10)
-		icon_state = "enbloc-10"
+		icon_state = "sks-10"
 	else
-		icon_state = "enbloc-[ammo_count()]"
+		icon_state = "sks-[ammo_count()]"
 
 /obj/item/ammo_box/magazine/sks/empty
 	start_empty = 1
