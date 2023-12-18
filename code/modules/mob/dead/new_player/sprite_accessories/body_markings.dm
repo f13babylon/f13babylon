@@ -34,6 +34,11 @@ datum/sprite_accessory/mam_body_markings/necklace
 	icon_state = "necklace"
 	covered_limbs = list("Chest" = MATRIX_RED)
 
+datum/sprite_accessory/mam_body_markings/earrings
+	name = "Earrings"
+	icon_state = "earrings"
+	covered_limbs = list("Head" = MATRIX_RED)
+
 datum/sprite_accessory/mam_body_markings/necklace2
 	name = "Necklace 2-tone"
 	icon_state = "necklace2"
