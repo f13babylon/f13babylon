@@ -362,7 +362,7 @@
 	desc = "The M1 Carbine was mass produced during some old war, and at some point NCR found stockpiles and rechambered them to 10mm to make up for the fact their service rifle production can't keep up with demand."
 	icon_state = "m1carbine"
 	item_state = "rifle"
-	mag_type = /obj/item/ammo_box/magazine/m10mm
+	mag_type = /obj/item/ammo_box/magazine/smg10mm
 	burst_size = 1
 	fire_delay = 3
 	spread = 2
@@ -387,7 +387,7 @@
 	extra_damage = 6
 
 
-//M1/n Carbine				Keywords: NCR, 10mm, Semi-auto, 12/24 rounds, Long barrel, Damage +1
+//M1/n Carbine				Keywords: NCR, 10mm, Semi-auto, 30 rounds, Long barrel, Damage +1
 /obj/item/gun/ballistic/automatic/m1carbine/m1n
 	name = "M1/N carbine"
 	desc = "An M1 Carbine with markings identifying it as issued to the NCR Mojave Expedtionary Force. Looks beat up but functional."
@@ -396,7 +396,7 @@
 	item_state = "rifle"
 
 
-//M1A1 Carbine				Keywords: 10mm, Semi-auto, 12/24 rounds, Long barrel, Folding stock.
+//M1A1 Carbine				Keywords: 10mm, Semi-auto, 30 rounds, Long barrel, Folding stock.
 /obj/item/gun/ballistic/automatic/m1carbine/compact
 	name = "M1A1 carbine"
 	desc = "The M1A1 carbine is an improvement of the original, with this particular model having a folding stock allowing for greater mobility. Chambered in 10mm."
