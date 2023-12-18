@@ -356,13 +356,13 @@
 //CARBINES//
 ////////////
 
-//M1 Carbine				Keywords: 10mm, Semi-auto, 12/24 rounds, Long barrel
+//M1 Carbine				Keywords: 10mm, Semi-auto, 30 rounds, Long barrel
 /obj/item/gun/ballistic/automatic/m1carbine
 	name = "M1 carbine"
 	desc = "The M1 Carbine was mass produced during some old war, and at some point NCR found stockpiles and rechambered them to 10mm to make up for the fact their service rifle production can't keep up with demand."
 	icon_state = "m1carbine"
 	item_state = "rifle"
-	mag_type = /obj/item/ammo_box/magazine/smg10mm
+	mag_type = /obj/item/ammo_box/magazine/msmg10mm
 	burst_size = 1
 	fire_delay = 3
 	spread = 2
