@@ -29,7 +29,7 @@
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
 	equipsound = 'sound/f13weapons/equipsounds/pistolplasequip.ogg'
 	slowdown = 0
-	fire_delay = 3
+	fire_delay = 4
 
 //BoS knight craftable plasma pistol
 /obj/item/gun/energy/laser/plasma/pistol/light
@@ -68,7 +68,7 @@
 //Glock 86 A Plasma pistol
 /obj/item/gun/energy/laser/plasma/glock/extended
 	name ="glock 86a"
-	fire_delay = 1.5
+	fire_delay = 3
 	item_state = "plasma-pistol"
 	icon_state = "betterglock"
 	desc = "A bleeding edge Glock 86 plasma pistol, designed by the Gaston Glock AI Supercomputer. Fires bolts of plasma that form into toroids in the chamber, which are then sent down a superconducting barrel lined with electromagnetic coils. This one has been fitted with a targetting system and higher quality parts."
@@ -84,7 +84,7 @@
 	desc = "A militarized Winchester P-94 plasma caster, featuring a firearm-styled housing complete with a stock, rail, and pistol grip. Replaced by the urban plasma rifle not long before the war, this model remained in use due to its ability for rapid fire. Fires bolts of plasma that form into toroids in the chamber, which are then sent down a superconducting barrel and propelled by electromagnetic claws."
 	ammo_type = list(/obj/item/ammo_casing/energy/plasmacarbine)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
-	fire_delay = 1.5
+	fire_delay = 2
 	weapon_weight = WEAPON_MEDIUM
 	burst_size = 2
 	burst_shot_delay = 1.5
