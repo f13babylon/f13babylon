@@ -103,7 +103,8 @@
 /area/f13/bunker)
 "adl" = (
 /mob/living/simple_animal/hostile/renegade/guardian{
-	extra_projectiles = 2
+	extra_projectiles = 2;
+	melee_queue_distance = 2
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
@@ -9472,7 +9473,8 @@
 "ldm" = (
 /obj/machinery/hydroponics/soil/crafted,
 /mob/living/simple_animal/hostile/renegade/guardian{
-	extra_projectiles = 2
+	extra_projectiles = 2;
+	melee_queue_distance = 2
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -10157,7 +10159,8 @@
 	name = "prewar lounge chair"
 	},
 /mob/living/simple_animal/hostile/renegade/guardian{
-	extra_projectiles = 2
+	extra_projectiles = 2;
+	melee_queue_distance = 2
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
@@ -16645,7 +16648,8 @@
 "ttV" = (
 /obj/structure/chair/bench,
 /mob/living/simple_animal/hostile/renegade/guardian{
-	extra_projectiles = 2
+	extra_projectiles = 2;
+	melee_queue_distance = 2
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
