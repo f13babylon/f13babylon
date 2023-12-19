@@ -44,6 +44,7 @@
 	item_state = "powerfist"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
+	fire_delay = 2
 	force = 30
 	armour_penetration = 0.45
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/dual

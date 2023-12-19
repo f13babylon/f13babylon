@@ -1175,8 +1175,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	outfit = /datum/outfit/job/ncr/f13conscript
 
 	loadout_options = list(
-		/datum/outfit/loadout/conscriptvarmint, // Service
-		/datum/outfit/loadout/conscripthunting, // Hunting rifle, Trench tool, Sandbags
+		/datum/outfit/loadout/conscriptvarmint, // Varmint rifle, Trench tool, Sandbags
 		/datum/outfit/loadout/conscripthalal, // M45, Machete
 		)
 
@@ -1203,19 +1202,10 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 /datum/outfit/loadout/conscriptvarmint
-	name = "Assault"
-	suit_store = /obj/item/gun/ballistic/automatic/service
-	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle = 3,
-		/obj/item/melee/onehanded/knife/bayonet = 1,
-		/obj/item/storage/box/ration/menu_two = 1,
-		)
-
-/datum/outfit/loadout/conscripthunting
 	name = "Reservist"
-	suit_store = /obj/item/gun/ballistic/rifle/hunting
+	suit_store = /obj/item/gun/ballistic/rifle/mag/varmint
 	backpack_contents = list(
-		/obj/item/ammo_box/a308 = 2,
+		/obj/item/ammo_box/magazine/m556/rifle = 2,
 		/obj/item/shovel/trench = 1,
 		/obj/item/stack/sheet/mineral/sandbags = 7,
 		/obj/item/storage/box/ration/menu_eight = 1,
@@ -1416,7 +1406,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	head = /obj/item/clothing/head/f13/cowboy
 	gloves = /obj/item/clothing/gloves/color/brown
 	id = /obj/item/card/id/dogtag/town/ncr
-	l_hand = /obj/item/gun/ballistic/automatic/varmint
+	l_hand = /obj/item/gun/ballistic/rifle/mag/varmint
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle=2,
 		)
