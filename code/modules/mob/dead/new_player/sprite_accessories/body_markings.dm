@@ -24,32 +24,32 @@
 	relevant_layers = null
 	matrixed_sections = 0
 
-datum/sprite_accessory/mam_body_markings/watch
+/datum/sprite_accessory/mam_body_markings/watch
 	name = "Watch"
 	icon_state = "watch"
 	covered_limbs = list("Left Arm" = MATRIX_RED_GREEN)
 
-datum/sprite_accessory/mam_body_markings/necklace
+/datum/sprite_accessory/mam_body_markings/necklace
 	name = "Necklace"
 	icon_state = "necklace"
 	covered_limbs = list("Chest" = MATRIX_RED)
 
-datum/sprite_accessory/mam_body_markings/earrings
+/datum/sprite_accessory/mam_body_markings/earrings
 	name = "Earrings"
 	icon_state = "earrings"
 	covered_limbs = list("Head" = MATRIX_RED)
 
-datum/sprite_accessory/mam_body_markings/eyeliner
+/datum/sprite_accessory/mam_body_markings/eyeliner
 	name = "Eyeliner"
 	icon_state = "eyeliner"
 	covered_limbs = list("Head" = MATRIX_RED)
 
-datum/sprite_accessory/mam_body_markings/eyebrows
+/datum/sprite_accessory/mam_body_markings/eyebrows
 	name = "Eyebrows"
 	icon_state = "eyebrows"
 	covered_limbs = list("Head" = MATRIX_RED)
 
-datum/sprite_accessory/mam_body_markings/necklace2
+/datum/sprite_accessory/mam_body_markings/necklace2
 	name = "Necklace 2-tone"
 	icon_state = "necklace2"
 	covered_limbs = list("Chest" = MATRIX_RED_GREEN)
