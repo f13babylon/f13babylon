@@ -30,7 +30,7 @@ GLOBAL_LIST_INIT(blocking_structures, typecacheof(list(
 	max_integrity = 100
 //	var/proj_pass_rate = 50 //How many projectiles will pass the cover. Lower means stronger cover
 	var/bar_material = METAL
-	layer = FLY_LAYER
+	layer = SIGN_LAYER
 	plane = MOB_PLANE
 
 /obj/structure/barricade/deconstruct(disassembled = TRUE)
