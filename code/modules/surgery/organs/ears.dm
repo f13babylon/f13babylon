@@ -34,7 +34,7 @@
 	if(owner && HAS_TRAIT(owner, TRAIT_DEAF))
 		deaf = max(deaf, 1)
 	else if(.) // if this organ is failing, do not clear deaf stacks.
-		deaf = max(deaf - 1, 0)
+		deaf = max(deaf - 5, 0)
 		if(prob(damage / 20) && (damage > low_threshold))
 			adjustEarDamage(0, 4)
 			SEND_SOUND(owner, sound('sound/weapons/flash_ring.ogg'))
