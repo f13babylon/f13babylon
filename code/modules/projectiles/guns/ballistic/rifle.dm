@@ -111,6 +111,7 @@
 	item_state = "cowboyrepeater"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube357
 	extra_speed = 300
+	fire_delay = 4
 	fire_sound = 'sound/f13weapons/cowboyrepeaterfire.ogg'
 	extra_damage = 4
 
@@ -124,8 +125,8 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube44
 	extra_speed = 200
 	fire_sound = 'sound/f13weapons/44mag.ogg'
-	extra_damage = 4
-	fire_delay = 1.5
+	extra_damage = 5
+	fire_delay = 5
 
 
 //Brush gun								Keywords: .45-70, Lever action, 10 round internal, Long barrel
@@ -136,7 +137,7 @@
 	item_state = "brushgun"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube4570
 	extra_speed = 100
-	fire_delay = 2.55
+	fire_delay = 5
 	recoil = 0.15
 	fire_sound = 'sound/f13weapons/brushgunfire.ogg'
 	extra_penetration = 0.12
@@ -148,7 +149,7 @@
 	icon_state = "medistick"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube4570/medicine
 	extra_speed = 150
-	fire_delay = 2.25
+	fire_delay = 4
 	recoil = 0.10
 	fire_sound = 'sound/f13weapons/brushgunfire.ogg'
 	extra_penetration = 0.15
@@ -158,7 +159,6 @@
 // BOLT ACTION RIFLES //
 ////////////////////////
 
-
 //Hunting Rifle							Keywords: .308, Bolt-action, 5 rounds internal
 /obj/item/gun/ballistic/rifle/hunting
 	name = "hunting rifle"
@@ -167,8 +167,10 @@
 	item_state = "308"
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/hunting
 	sawn_desc = "A hunting rifle, crudely shortened with a saw. It's far from accurate, but the short barrel makes it quite portable."
-	fire_delay = 4
-	extra_speed = 800
+	fire_delay = 5
+	extra_speed = 600
+	extra_damage = 4
+	extra_penetration = 0.15
 	spread = 0
 	force = 18
 	can_scope = TRUE
@@ -192,8 +194,10 @@
 	name = "Remington rifle"
 	desc = "A militarized hunting rifle rechambered to 7.62. This one has had the barrel floated with shims to increase accuracy."
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/hunting/remington
-	fire_delay = 2
+	fire_delay = 5
 	extra_speed = 800
+	extra_damage = 10
+	extra_penetration = 0.3
 	force = 18
 
 /obj/item/gun/ballistic/rifle/hunting/remington/attackby(obj/item/A, mob/user, params) //DO NOT BUBBA YOUR STANDARD ISSUE RIFLE SOLDIER!
@@ -233,8 +237,7 @@
 	else
 		..()
 
-
-//Mosin-Nagant							Keywords: 7.62, Bolt-action, 5 rounds internal. Better pen than the Enfield, lower damage.
+//Mosin-Nagant							Keywords: LEFT-OVER FOR RUSSIAN MOBS, 7.62, Bolt-action, 5 rounds internal. Better pen than the Enfield, lower damage.
 /obj/item/gun/ballistic/rifle/mosin
 	name = "Mosin-Nagant m38"
 	desc = "A rusty old Russian bolt action chambered in 7.62."
@@ -256,34 +259,6 @@
 	knife_y_offset = 21
 	pump_sound = 'sound/weapons/boltpump.ogg'
 	fire_sound = 'sound/f13weapons/boltfire.ogg'
-
-//Lee-Enfield,SMLE 						Keywords: 7.62, Bolt-action, 10 rounds internal, very fast firing rate, high stamina cost on working bolt
-/obj/item/gun/ballistic/rifle/enfield
-	name = "Lee-Enfield rifle"
-	desc = "A british rifle sometimes known as the SMLE. It seems to have been re-chambered in .308."
-	icon_state = "enfield2"
-	item_state = "308"
-	mag_type = /obj/item/ammo_box/magazine/internal/boltaction_enfield
-	extra_speed = 600
-	fire_delay = 1
-	slowdown = 0.35
-	force = 16
-	extra_penetration = 0.6
-	extra_damage = 12
-	can_scope = TRUE
-	scope_state = "scope_mosin"
-	scope_x_offset = 3
-	scope_y_offset = 13
-	can_bayonet = TRUE
-	bayonet_state = "bayonet"
-	knife_x_offset = 22
-	knife_y_offset = 21
-	pump_sound = 'sound/weapons/boltpump.ogg'
-	fire_sound = 'sound/f13weapons/boltfire.ogg'
-	pump_stam_cost = 15
-
-
-
 
 /////////////////////////////////////
 // MAGAZINE FED BOLT-ACTION RIFLES //
@@ -325,15 +300,73 @@
 /obj/item/gun/ballistic/rifle/mag/update_icon_state()
 	icon_state = "[initial(icon_state)][magazine ? "-[magazine.max_ammo]" : ""][chambered ? "" : "-e"]"
 
+//Varmint rifle							Keywords: 5.56, Bolt-action, 10/20/30 round magazine
+/obj/item/gun/ballistic/rifle/mag/varmint
+	name = "varmint rifle"
+	desc = "A simple bolt action rifle in 5.56mm calibre. Easy to use and maintain."
+	icon_state = "varmint"
+	item_state = "varmintrifle"
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
+	fire_delay = 4
+	extra_speed = 200
+	extra_penetration = 0.1
+	spread = 1
+
+	can_bayonet = FALSE
+	scope_state = "scope_short"
+	scope_x_offset = 4
+	scope_y_offset = 12
+	can_suppress = TRUE
+	suppressor_state = "rifle_suppressor"
+	suppressor_x_offset = 27
+	suppressor_y_offset = 31
+	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
+	pump_sound = 'sound/weapons/boltpump.ogg'
+	can_scope = TRUE
+
+//'Verminkiller'									Keywords: 5.56, Bolt-action, 10/20/30 round magazine, Suppressed, Scoped
+//Basically an obtainable ratslayer
+/obj/item/gun/ballistic/rifle/mag/varmint/verminkiller
+	name = "verminkiller rifle"
+	desc = "Legends are told of the \"Ratslayer\", a custom-made souped-up varmint rifle with a sick paintjob. This is a pale imitation, made of chopped-up bits of other guns."
+	icon_state = "verminrifle"
+	item_state = "ratslayer"
+	fire_delay = 3 //25% higher than service rifle/varmint
+	extra_penetration = 0.15
+	extra_damage = 4
+	suppressed = 1
+	zoomable = TRUE
+	zoom_amt = 10
+	zoom_out_amt = 13
+	can_unsuppress = FALSE
+	suppressor_state = "none"
+	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
+	extra_speed = 800 //pew
+
+//Ratslayer									Keywords: UNIQUE, 5.56, Bolt-action, 10/20/30 round magazine, Suppressed, Scoped
+/obj/item/gun/ballistic/rifle/mag/varmint/ratslayer
+	name = "Ratslayer"
+	desc = "A modified varmint rifle with better stopping power, a scope, and suppressor. Oh, don't forget the sick paint job."
+	icon_state = "ratslayer"
+	item_state = "ratslayer"
+	suppressed = 1
+	zoomable = TRUE
+	zoom_amt = 10
+	zoom_out_amt = 13
+	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
+	extra_penetration = 0.3
+	extra_damage = 10
+	extra_speed = 800 //pew
 
 //Anti-Material Rifle						Keywords: .50, Bolt-action, 8 round magazine
 /obj/item/gun/ballistic/rifle/mag/antimateriel
-	name = "\improper Hécate II AMR"
+	name = "anti-materiel rifle"
 	desc = "The Hécate II is a heavy, high-powered bolt action sniper rifle chambered in .50 caliber ammunition. Lacks an iron sight."
 	icon_state = "amr"
 	item_state = "amr"
 	mag_type = /obj/item/ammo_box/magazine/amr
-	fire_delay = 12
+	fire_delay = 10
 	recoil = 10
 	slowdown = 1.45 //.20 higher than the M1919 MMG.
 	spread = 0
