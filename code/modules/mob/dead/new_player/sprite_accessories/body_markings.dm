@@ -39,6 +39,16 @@ datum/sprite_accessory/mam_body_markings/earrings
 	icon_state = "earrings"
 	covered_limbs = list("Head" = MATRIX_RED)
 
+datum/sprite_accessory/mam_body_markings/eyeliner
+	name = "Eyeliner"
+	icon_state = "eyeliner"
+	covered_limbs = list("Head" = MATRIX_RED)
+
+datum/sprite_accessory/mam_body_markings/eyebrows
+	name = "Eyebrows"
+	icon_state = "eyebrows"
+	covered_limbs = list("Head" = MATRIX_RED)
+
 datum/sprite_accessory/mam_body_markings/necklace2
 	name = "Necklace 2-tone"
 	icon_state = "necklace2"
