@@ -221,9 +221,9 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	name = ".50 DU-bullet"
 	damage = 15//Fire rate is absurd. Makes up for it.
 	armour_penetration = 1//:)
-	wound_bonus = 60//Makes up for the low damage. Not to mention that it works well with the fire rate.
-	bare_wound_bonus = 80//As above.
-
+	wound_bonus = 30
+	bare_wound_bonus = 40
+	stamina = 0
 //////////////////////
 // 4.73 MM CASELESS //
 //////////////////////			-Small rifle bullet
