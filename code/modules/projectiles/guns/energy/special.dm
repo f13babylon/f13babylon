@@ -6,6 +6,7 @@
 	righthand_file = 'icons/mob/inhands/weapons/guns_righthand.dmi'
 	icon_state = "pulse"
 	item_state = "yk42"
+	fire_delay = 4
 	can_flashlight = 1
 	w_class = WEIGHT_CLASS_BULKY
 	flags_1 =  CONDUCT_1
