@@ -21,7 +21,7 @@
 
 /datum/sprite_accessory/penis/nondescript
 	icon_state = "nondescript"
-	name = "nondescript"
+	name = "Nondescript"
 
 /datum/sprite_accessory/penis/knotted
 	icon_state = "knotted"
