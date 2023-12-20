@@ -11,7 +11,7 @@
 	overdose_threshold = 31
 	value = REAGENT_VALUE_RARE
 	ghoulfriendly = TRUE
-	var/list/reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder, /datum/reagent/medicine/stimpak/imitation, /datum/reagent/medicine/medx, /datum/reagent/medicine/bicaridine, /datum/reagent/medicine/sal_acid, /datum/reagent/medicine/kelotane, /datum/reagent/medicine/oxandrolone, /datum/reagent/medicine/morphine, /datum/reagent/medicine/mine_salve, /datum/reagent/medicine/tricordrazine)
+	var/list/reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder, /datum/reagent/medicine/stimpak/imitation, /datum/reagent/medicine/bicaridine, /datum/reagent/medicine/sal_acid, /datum/reagent/medicine/kelotane, /datum/reagent/medicine/oxandrolone, /datum/reagent/medicine/morphine, /datum/reagent/medicine/mine_salve, /datum/reagent/medicine/tricordrazine)
 	var/affecting_intolerant_mob = FALSE	//If it is affecting a mob with TRAIT_STIM_INTOLERANCE
 	var/damage_offset = 3	//Value to offset damage by
 	var/clot_rate = 0.35	//35% as effective as Hydra at clotting bleeding wounds
@@ -115,7 +115,7 @@
 	description = "A chemical which aims to replicate the effects of the fluid found in pre-war stimpaks, albeit less effective."
 	color = "#df5342"
 	value = REAGENT_VALUE_UNCOMMON
-	reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder, /datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation, /datum/reagent/medicine/medx, /datum/reagent/medicine/bicaridine, /datum/reagent/medicine/sal_acid, /datum/reagent/medicine/kelotane, /datum/reagent/medicine/oxandrolone, /datum/reagent/medicine/morphine, /datum/reagent/medicine/mine_salve, /datum/reagent/medicine/tricordrazine)
+	reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder, /datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation, /datum/reagent/medicine/bicaridine, /datum/reagent/medicine/sal_acid, /datum/reagent/medicine/kelotane, /datum/reagent/medicine/oxandrolone, /datum/reagent/medicine/morphine, /datum/reagent/medicine/mine_salve, /datum/reagent/medicine/tricordrazine)
 	damage_offset = 2.25	//How much damage will be offset in one tick
 	clot_rate = 0.26	//26% as effective as Hydra at clotting bleeding wounds
 
@@ -185,7 +185,7 @@
 	taste_description = "heaven."
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	overdose_threshold = 30 //hard to OD on, besides if you use too much it kills you when it wears off
-	var/list/reagent_blacklist = list(/datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak/superimitation ,/datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation, /datum/reagent/medicine/medx, /datum/reagent/medicine/bicaridine, /datum/reagent/medicine/sal_acid, /datum/reagent/medicine/kelotane, /datum/reagent/medicine/oxandrolone, /datum/reagent/medicine/morphine, /datum/reagent/medicine/mine_salve, /datum/reagent/medicine/tricordrazine, /datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder)
+	var/list/reagent_blacklist = list(/datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak/superimitation ,/datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation, /datum/reagent/medicine/medx, /datum/reagent/medicine/bicaridine, /datum/reagent/medicine/sal_acid, /datum/reagent/medicine/kelotane, /datum/reagent/medicine/oxandrolone, /datum/reagent/medicine/morphine, /datum/reagent/medicine/mine_salve, /datum/reagent/medicine/tricordrazine, /datum/reagent/medicine/bitterdrink)
 
 /datum/reagent/medicine/berserker_powder/on_mob_life(mob/living/carbon/M)
 	if(HAS_TRAIT(M, TRAIT_BERSERKER))
