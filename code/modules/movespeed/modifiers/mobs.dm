@@ -1,5 +1,5 @@
 /datum/movespeed_modifier/obesity
-	multiplicative_slowdown = 1.5
+	multiplicative_slowdown = 0
 
 /datum/movespeed_modifier/monkey_reagent_speedmod
 	blacklisted_movetypes = FLOATING
