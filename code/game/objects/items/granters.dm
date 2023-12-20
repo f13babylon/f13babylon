@@ -932,7 +932,7 @@
 	desc = "A well preserved book detailing the foundation of modern surgical practices."
 	oneuse = TRUE
 	granted_trait = TRAIT_SURGERY_HIGH
-	trautname = "complex surgery"
+	traitname = "complex surgery"
 
 /obj/item/book/granter/trait/techno
 	name = "Dean's Electronics"
