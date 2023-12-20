@@ -87,6 +87,11 @@
 	caliber = "a556"
 	max_ammo = 5
 
+/obj/item/ammo_box/magazine/internal/cylinder/colt6520
+	name = "10mm pistol cylinder"
+	ammo_type = /obj/item/ammo_casing/c10mm
+	max_ammo = 12
+
 /obj/item/ammo_box/magazine/internal/cylinder/rev44
 	name = "44 magnum cylinder"
 	ammo_type = /obj/item/ammo_casing/m44

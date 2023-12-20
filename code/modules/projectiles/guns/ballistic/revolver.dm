@@ -383,6 +383,18 @@
 	extra_damage = 9
 	extra_penetration = 0.08
 
+//Colt 6520 Revolver			Keywords: 10mm, Semi-Automatic, 12 rounds internal, Revolver - Somehow! (Balanced around N99 - that can take attach, this can't)
+/obj/item/gun/ballistic/revolver/colt6250
+	name = "Colt 6520 revolver"
+	desc = "A Colt 6520 'automatic' revolver. This oddity was developed by Colt prior to the Great War, featuring a slide mechanism working in tandum with the revolving cylander. This weapon manages to eject its shells automatically!"
+	icon_state = "colt6520"
+	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/colt6520
+	fire_sound = 'sound/f13weapons/10mm_fire_02.ogg'
+	var/semi_auto = TRUE	// In OG Fallout 1 design docs this gun was an automatic revolver. Based concept, lets use it like originally intended!
+	//casing_ejector = TRUE	//Auto-ejects casings!
+	recoil = 0.3
+	fire_delay = 3		// Slightly higher than the n99
+	extra_damage = 10	// +4 damage compared to n99
 
 
 /////////////
