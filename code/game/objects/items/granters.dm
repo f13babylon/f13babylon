@@ -927,6 +927,13 @@
 		return TRUE
 	return ..()
 
+/obj/item/book/granter/trait/highsurgery
+	name = "M.D William Stewart Halsted's Memiors"
+	desc = "A well preserved book detailing the foundation of modern surgical practices."
+	oneuse = TRUE
+	granted_trait = TRAIT_SURGERY_HIGH
+	trautname = "complex surgery"
+
 /obj/item/book/granter/trait/techno
 	name = "Dean's Electronics"
 	desc = "A study book on the field of electronics. A note on the cover says that it is for the budding young electrician in everyone!"

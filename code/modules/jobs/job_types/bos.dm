@@ -552,7 +552,7 @@ Senior Scribe
 	ADD_TRAIT(H, TRAIT_SURGERY_MID,  REF(src))
 	ADD_TRAIT(H, TRAIT_CYBERNETICIST,  REF(src))
 	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
-	ADD_TRAIT(H, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING, REF(src))
+	ADD_TRAIT(H, TRAIT_EXPLOSIVE_CRAFTING, REF(src))
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/AER9)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/AEP7)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/wattz1k)
@@ -583,17 +583,18 @@ Senior Scribe
 		/obj/item/gun/energy/laser/aer9/recharger = 1,
 		/obj/item/stock_parts/cell/ammo/breeder = 2,
 		/obj/item/book/granter/crafting_recipe/blueprint/marksman = 1,
-		/obj/item/storage/belt/utility/full/engi,
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1,
-		/obj/item/book/granter/crafting_recipe/gunsmith_four=1
+		/obj/item/book/granter/crafting_recipe/gunsmith_four=1,
+		/obj/item/book/granter/trait/explosives_advanced = 1
 	)
 /datum/outfit/loadout/sscribec
 	name = "Shield Senior Scribe"
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/plasma/pistol = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/storage/belt/utility/full/engi = 1,
 		/obj/item/reagent_containers/hypospray/CMO = 1,
-		/obj/item/book/granter/trait/midsurgery = 1
+		/obj/item/book/granter/trait/highsurgery = 1
 	)
 /*
 Scribe
@@ -641,6 +642,7 @@ Scribe
 /datum/outfit/job/bos/f13scribe
 	name = "Scribe"
 	jobtype = /datum/job/bos/f13scribe
+	chemwhiz =	TRUE
 	ears = /obj/item/radio/headset/headset_bos
 	uniform =		/obj/item/clothing/under/syndicate/brotherhood
 	shoes = 		/obj/item/clothing/shoes/combat
@@ -681,8 +683,7 @@ Scribe
 		/obj/item/gun/energy/laser/wattz/magneto = 1,
 		/obj/item/clothing/accessory/bos/scribe = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
-		/obj/item/storage/belt/utility/full/engi = 1,
-		/obj/item/book/granter/trait/chemistry = 1
+		/obj/item/storage/belt/utility/full/engi = 1
 	)
 
 
@@ -941,6 +942,8 @@ Initiate
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/pistol=1,
 		/obj/item/stock_parts/cell/ammo/ec=1,
+		/obj/item/book/granter/crafting_recipe/gunsmith_one=1,
+		/obj/item/book/granter/crafting_recipe/gunsmith_two=1,
 		/obj/item/clothing/accessory/bos/initiateK=1,
 		)
 
@@ -953,9 +956,8 @@ Initiate
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=1,
 		/obj/item/book/granter/trait/chemistry=1,
+		/obj/item/book/granter/trait/lowsurgery=1,
 		/obj/item/clothing/accessory/bos/initiateS=1,
-		/obj/item/book/granter/crafting_recipe/gunsmith_one=1,
-		/obj/item/book/granter/crafting_recipe/gunsmith_two=1
 		)
 
 /*

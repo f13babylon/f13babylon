@@ -841,7 +841,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 	loadout_options = list( // ALL: Trench tool, Limited blueprints
 		/datum/outfit/loadout/combatengineerbuilder, // Minelaying, Extra materials
-		/datum/outfit/loadout/combatengineersapper, //  Explosive Crafting
+		/datum/outfit/loadout/combatengineersapper, //  Advanced Explosive Crafting
 		)
 
 	matchmaking_allowed = list(
@@ -890,7 +890,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit_store = /obj/item/gun/ballistic/automatic/smg/mini_uzi
 	backpack_contents = list(
 		/obj/item/grenade/plastic/c4 = 2,
-		/obj/item/book/granter/trait/explosives = 1,
 		/obj/item/book/granter/trait/explosives_advanced = 1,
 		/obj/item/ammo_box/magazine/uzim9mm = 3,
 		)
