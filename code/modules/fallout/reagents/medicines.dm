@@ -185,7 +185,7 @@
 	taste_description = "heaven."
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	overdose_threshold = 30 //hard to OD on, besides if you use too much it kills you when it wears off
-	var/list/reagent_blacklist = list(/datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak/superimitation ,/datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation, /datum/reagent/medicine/medx, /datum/reagent/medicine/bicaridine, /datum/reagent/medicine/sal_acid, /datum/reagent/medicine/kelotane, /datum/reagent/medicine/oxandrolone, /datum/reagent/medicine/morphine, /datum/reagent/medicine/mine_salve, /datum/reagent/medicine/tricordrazine)
+	var/list/reagent_blacklist = list(/datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak/superimitation ,/datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation, /datum/reagent/medicine/medx, /datum/reagent/medicine/bicaridine, /datum/reagent/medicine/sal_acid, /datum/reagent/medicine/kelotane, /datum/reagent/medicine/oxandrolone, /datum/reagent/medicine/morphine, /datum/reagent/medicine/mine_salve, /datum/reagent/medicine/tricordrazine, /datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder)
 
 /datum/reagent/medicine/berserker_powder/on_mob_life(mob/living/carbon/M)
 	if(HAS_TRAIT(M, TRAIT_BERSERKER))
@@ -709,7 +709,7 @@
 	color = "#6D6374"
 	metabolization_rate = 0.7 * REAGENTS_METABOLISM
 	overdose_threshold = 14
-	var/list/reagent_blacklist = list(/datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak/superimitation ,/datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
+	var/list/reagent_blacklist = list(/datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak/superimitation ,/datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation, /datum/reagent/medicine/berserker_powder)
 
 /datum/reagent/medicine/naturalpainkiller/on_mob_add(mob/M)
 	if(isliving(M))
