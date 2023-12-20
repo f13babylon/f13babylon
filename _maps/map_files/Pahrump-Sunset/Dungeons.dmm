@@ -13091,10 +13091,10 @@
 /obj/structure/guncase,
 /obj/structure/window/reinforced/spawner/east,
 /obj/structure/window/reinforced/spawner/north,
-/obj/item/gun/ballistic/rifle/mosin,
-/obj/item/gun/ballistic/rifle/mosin,
-/obj/item/gun/ballistic/rifle/mosin,
-/obj/item/gun/ballistic/rifle/mosin,
+/obj/item/gun/ballistic/rifle/hunting,
+/obj/item/gun/ballistic/rifle/hunting,
+/obj/item/gun/ballistic/rifle/hunting,
+/obj/item/gun/ballistic/rifle/hunting,
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
 	},

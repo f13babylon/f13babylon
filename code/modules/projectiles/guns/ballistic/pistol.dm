@@ -299,9 +299,10 @@
 	fire_delay = 4
 	force = 15
 	extra_speed = 300
+	slowdown = 0.1
 	recoil = 3.5 //Debilitating
 	spread = 6
-	extra_damage = 12
+	extra_damage = 6
 	extra_penetration = 0.12
 	can_suppress = FALSE
 	automatic_burst_overlay = FALSE
