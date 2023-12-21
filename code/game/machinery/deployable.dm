@@ -11,10 +11,8 @@
 GLOBAL_LIST_INIT(blocking_structures, typecacheof(list(
 		/obj/structure/table,
 		/obj/structure/table_frame,
-		/obj/structure/barricade/concrete,
-		/obj/structure/barricade/sandbags,
-		/obj/structure/barricade/wooden,
-		/obj/structure/obstacle/barbedwire,
+		/obj/structure/barricade,
+		/obj/structure/obstacle,
 		/obj/structure/grille,
 		/obj/structure/fence
 )))
@@ -99,7 +97,16 @@ GLOBAL_LIST_INIT(blocking_structures, typecacheof(list(
 	bar_material = SAND
 	climbable = TRUE
 	smooth = SMOOTH_TRUE
-	canSmoothWith = list(/obj/structure/barricade/sandbags, /turf/closed/wall, /turf/closed/wall/r_wall, /obj/structure/falsewall, /obj/structure/falsewall/reinforced, /turf/closed/wall/rust, /turf/closed/wall/r_wall/rust, /obj/structure/barricade/security)
+	canSmoothWith = list(
+		/obj/structure/barricade/sandbags,
+		/turf/closed/wall,
+		/turf/closed/wall/r_wall,
+		/obj/structure/falsewall,
+		/obj/structure/falsewall/reinforced,
+		/turf/closed/wall/rust,
+		/turf/closed/wall/r_wall/rust,
+		/obj/structure/barricade/security
+	)
 	var/drop_amount = 1
 
 /obj/structure/barricade/sandbags/attack_hand(mob/user)
