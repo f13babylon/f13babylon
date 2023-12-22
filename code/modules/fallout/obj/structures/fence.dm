@@ -18,12 +18,12 @@
 	icon = 'icons/fallout/structures/fences.dmi'
 	icon_state = "straight"
 	barricade = TRUE
-	proj_pass_rate = 95
+	proj_pass_rate = 85
 	var/cuttable = TRUE
 	var/hole_size= NO_HOLE
 	var/invulnerable = FALSE
 	var/hole_visuals = TRUE //Whether the fence piece has visuals for being cut. Used in update_cut_status()
-	max_integrity = 300 // juuuust about lower health than a door is.
+	max_integrity = 200
 
 
 /obj/structure/fence/Initialize(mapload)
@@ -98,7 +98,7 @@
 				return TRUE
 		return FALSE
 
-		
+
 	if(istype(W, /obj/item/stack/rods))
 		var/obj/item/stack/rods/rods = W
 		switch(hole_size)
@@ -219,7 +219,7 @@
 	can_hold_padlock = TRUE
 	opening_time = 3
 	closing_time = 2
-	hard_open = 0	
+	hard_open = 0
 
 //Obsolete handrails, railing is better
 /obj/structure/fence/handrail_end
@@ -270,7 +270,7 @@
 	icon_state = "straight_wood"
 	cuttable = FALSE
 	climbable = TRUE
-	proj_pass_rate = 80
+	max_integrity = 150
 
 /obj/structure/fence/end/wooden
 	icon = 'icons/obj/fence.dmi'
@@ -296,4 +296,3 @@
 	desc = "A pole, commonly used in traditional fertility rituals. Or by degenerates."
 	cuttable = FALSE
 	density = FALSE
-

@@ -24,6 +24,46 @@
 	relevant_layers = null
 	matrixed_sections = 0
 
+/datum/sprite_accessory/mam_body_markings/watch
+	name = "Watch"
+	icon_state = "watch"
+	covered_limbs = list("Left Arm" = MATRIX_RED_GREEN)
+
+/datum/sprite_accessory/mam_body_markings/necklace
+	name = "Necklace"
+	icon_state = "necklace"
+	covered_limbs = list("Chest" = MATRIX_RED)
+
+/datum/sprite_accessory/mam_body_markings/earrings
+	name = "Earrings"
+	icon_state = "earrings"
+	covered_limbs = list("Head" = MATRIX_RED)
+
+/datum/sprite_accessory/mam_body_markings/eyeliner
+	name = "Eyeliner"
+	icon_state = "eyeliner"
+	covered_limbs = list("Head" = MATRIX_RED)
+
+/datum/sprite_accessory/mam_body_markings/eyebrows
+	name = "Eyebrows"
+	icon_state = "eyebrows"
+	covered_limbs = list("Head" = MATRIX_RED)
+
+/datum/sprite_accessory/mam_body_markings/necklace2
+	name = "Necklace 2-tone"
+	icon_state = "necklace2"
+	covered_limbs = list("Chest" = MATRIX_RED_GREEN)
+
+/datum/sprite_accessory/mam_body_markings/claws
+	name = "Claws"
+	icon_state = "claw"
+	covered_limbs = list("Right Arm" = MATRIX_RED, "Left Arm" = MATRIX_RED)
+
+/datum/sprite_accessory/mam_body_markings/talons
+	name = "Talons"
+	icon_state = "talon"
+	covered_limbs = list("Right Leg" = MATRIX_RED, "Left Leg" = MATRIX_RED)
+
 /datum/sprite_accessory/mam_body_markings/abs
 	name = "Abdominals"
 	icon_state = "abs"
@@ -342,6 +382,16 @@
 	name = "Shark"
 	icon_state = "shark"
 	covered_limbs = list("Head" = MATRIX_RED_GREEN, "Chest" = MATRIX_RED, "Left Leg" = MATRIX_RED, "Right Leg" = MATRIX_RED_GREEN, "Left Arm" = MATRIX_RED_GREEN, "Right Arm" = MATRIX_RED_GREEN)
+
+/datum/sprite_accessory/mam_body_markings/sharkfin
+	name = "Shark Elbow Fins"
+	icon_state = "sharkfin"
+	covered_limbs = list("Right Arm" = MATRIX_RED, "Left Arm" = MATRIX_RED)
+
+/datum/sprite_accessory/mam_body_markings/sharkfin2
+	name = "Shark Elbow Fins 2-tone"
+	icon_state = "sharkfin2"
+	covered_limbs = list("Right Arm" = MATRIX_RED_GREEN, "Left Arm" = MATRIX_RED_GREEN)
 
 /datum/sprite_accessory/mam_body_markings/shepherd
 	name = "Shepherd"

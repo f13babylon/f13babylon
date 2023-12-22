@@ -655,7 +655,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	/datum/outfit/loadout/rangerrecon, // compact sniper, .45 Revolver
 	/datum/outfit/loadout/rangertrail, // Trail Carbine, 2 x .357 Revolvers
 	/datum/outfit/loadout/rangerpatrol, // R91 Assault Rifle, .44 SA Revolver
-	/datum/outfit/loadout/rangerpatrolcqb, // 10mm SMG, .44 Snubnose revolver
+	/datum/outfit/loadout/rangerpatrolcqb, // MP5, .44 Snubnose revolver
 	)
 
 /datum/outfit/job/ncr/f13ranger/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -738,9 +738,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	head = /obj/item/clothing/head/f13/ranger
 	uniform	= /obj/item/clothing/under/f13/ranger/patrol
 	belt = /obj/item/storage/belt/military/assault/ncr
-	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
+	suit_store = /obj/item/gun/ballistic/automatic/smg/mp5
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m10mm_adv/ext = 2,
+		/obj/item/ammo_box/magazine/msmg9mm = 2,
 		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,
 		/obj/item/gun/ballistic/revolver/m29/snub = 1,
 		/obj/item/ammo_box/m44box = 1,
@@ -885,20 +885,20 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "Combat Sapper"
 	belt = /obj/item/storage/belt/military/assault/ncr/engineer
 	glasses = /obj/item/clothing/glasses/welding
-	suit_store = /obj/item/gun/ballistic/automatic/smg/mini_uzi
+	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
 	backpack_contents = list(
 		/obj/item/grenade/plastic/c4 = 2,
 		/obj/item/book/granter/trait/explosives = 1,
 		/obj/item/book/granter/trait/explosives_advanced = 1,
-		/obj/item/ammo_box/magazine/uzim9mm = 3,
+		/obj/item/ammo_box/magazine/msmg10mm = 2,
 		)
 
 /datum/outfit/loadout/combatengineerbuilder
 	name = "Construction Specialist"
 	belt = /obj/item/storage/belt/military/assault/ncr/engineer
-	suit_store = /obj/item/gun/ballistic/automatic/smg/mini_uzi
+	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
 	backpack_contents = list(
-			/obj/item/ammo_box/magazine/uzim9mm = 3,
+		/obj/item/ammo_box/magazine/msmg10mm = 2,
 		/obj/item/book/granter/crafting_recipe/blueprint/trapper = 1,
 		/obj/item/stack/sheet/plasteel/fifty = 1,
 		/obj/item/stack/sheet/rglass = 50,
@@ -963,7 +963,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	exp_requirements = 420
 
 	loadout_options = list(
-		/datum/outfit/loadout/ncrdocsmg,	 // uzi+stims
+		/datum/outfit/loadout/ncrdocsmg,	 // 10mm SMG+stims
 		/datum/outfit/loadout/ncrdocrifle,	 // M1A1+seeds, REPLACE STIMS WITH SEEDS(2broc, 2xander)
 		)
 
@@ -995,9 +995,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/ncrdocsmg
 	name = "Combat Medic"
-	suit_store = /obj/item/gun/ballistic/automatic/smg/mini_uzi
+	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/uzim9mm = 3,
+		/obj/item/ammo_box/magazine/msmg10mm = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		)
 
@@ -1074,7 +1074,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	head = /obj/item/clothing/head/f13/ncr/steelpot_bandolier
 	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m10mm_adv = 3
+		/obj/item/ammo_box/magazine/msmg10mm = 2,
 		)
 
 /datum/outfit/loadout/corporalrifleman
@@ -1310,7 +1310,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/incendiaryrocket)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/empgrenade)
 	//guns
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/a180)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg22)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/uzi)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ninemil)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/rangemaster)
@@ -1344,7 +1344,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m10mm_adv = 2,
+		/obj/item/ammo_box/magazine/m10mm = 2,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
 		/obj/item/ammo_box/magazine/m9mmds = 2,
 		/obj/item/grenade/plastic/c4 = 1,

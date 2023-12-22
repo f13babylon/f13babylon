@@ -180,7 +180,7 @@
 	name = "Uzi"
 	id = "uzi"
 	cost = 300
-	item_path = /obj/effect/spawner/bundle/f13/miniuzi
+	item_path = /obj/effect/spawner/bundle/f13/uzi
 
 /datum/gang_item/weapon/type17
 	name = "Type 17 Pistol"
@@ -193,7 +193,7 @@
 	desc = "Imported but still great."
 
 /obj/item/storage/box/bundletype17kit/PopulateContents()
-	new /obj/item/ammo_box/magazine/m10mm_adv/simple(src)
+	new /obj/item/ammo_box/magazine/m10mm(src)
 	new /obj/item/gun/ballistic/automatic/pistol/type17(src)
 
 /datum/gang_item/weapon/ninemil
@@ -436,7 +436,7 @@
 
 /obj/item/storage/box/bundlegunner/PopulateContents()
 	new /obj/item/gun/ballistic/automatic/smg/greasegun(src)
-	new /obj/item/ammo_box/magazine/greasegun(src)
+	new /obj/item/ammo_box/magazine/mgreasegun(src)
 	new /obj/item/clothing/head/helmet/armyhelmet(src)
 	new /obj/item/storage/belt(src)
 	new /obj/item/clothing/under/f13/army(src)
@@ -480,7 +480,7 @@
 	icon_state = "gun_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/trail,
 				/obj/effect/spawner/bundle/f13/service,
-				/obj/effect/spawner/bundle/f13/miniuzi,
+				/obj/effect/spawner/bundle/f13/uzi,
 				/obj/effect/spawner/bundle/f13/auto5,
 				/obj/effect/spawner/bundle/f13/marksman,
 				/obj/effect/spawner/bundle/f13/m1garand,

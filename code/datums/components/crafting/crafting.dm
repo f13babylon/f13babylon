@@ -210,6 +210,12 @@
 			if(!check_tools(a, R, contents))
 				return ", missing tool."
 			var/list/parts = del_reqs(R, a)
+
+			if(ispath(R.result, /turf))
+				var/turf/T = usr.drop_location()
+				T.PlaceOnTop(R.result, flags = CHANGETURF_INHERIT_AIR)
+				return R.result
+
 			var/atom/movable/I = new R.result (get_turf(a.loc))
 			I.CheckParts(parts, R)
 			if(send_feedback)
@@ -425,7 +431,7 @@
 			if(!istext(result)) //We made an item and didn't get a fail message
 				if(ismob(user) && isitem(result)) //In case the user is actually possessing a non mob like a machine
 					user.put_in_hands(result)
-				else
+				else if(!ispath(result, /turf))
 					result.forceMove(user.drop_location())
 				to_chat(user, "<span class='notice'>[TR.name] constructed.</span>")
 			else
