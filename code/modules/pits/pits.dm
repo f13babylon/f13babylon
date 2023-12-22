@@ -80,6 +80,11 @@
 			storedindex--
 			I.forceMove(get_turf(M))
 
+	if(mypit && !dug && !length(mypit.contents))
+		to_chat(M, "<span class='notice'>You smooth the sand, removing the sand mound.</span>")
+		qdel(mypit)
+		mypit = null
+
 /turf/open/indestructible/ground/outside/desert/proc/finishBury(mob/user)
 	if(!(gravebody in src.loc))
 		gravebody = null

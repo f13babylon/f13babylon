@@ -153,7 +153,7 @@ Head Paladin
 		/obj/item/melee/onehanded/knife/hunting = 1,
 		/obj/item/melee/f13powerfist = 1,
 		/obj/item/gun/ballistic/automatic/pistol/n99/crusader = 1,
-		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
+		/obj/item/ammo_box/magazine/m10mm = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
 		)
 
@@ -325,7 +325,7 @@ Head Knight
 	name = "Close Support"
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/smg/p90 = 1,
-		/obj/item/ammo_box/magazine/m10mm_p90 = 2
+		/obj/item/ammo_box/magazine/mp90 = 2
 	)
 
 /datum/outfit/loadout/capmelee
@@ -767,7 +767,7 @@ Scribe
 	name = "Footknight"
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/smg/mp5 = 1,
-		/obj/item/ammo_box/magazine/uzim9mm = 2,
+		/obj/item/ammo_box/magazine/msmg9mm = 2,
 		/obj/item/gun/energy/laser/pistol = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 1,
 		/obj/item/grenade/smokebomb = 1,

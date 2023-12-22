@@ -60,40 +60,17 @@
 /obj/item/ammo_box/magazine/m9mmds/empty
 	start_empty = 1
 
-//10mm template
+//10mm
 /obj/item/ammo_box/magazine/m10mm
-	name = "pistol magazine (10mm)"
-	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	desc = "A gun magazine."
-	caliber = "10mm"
-
-//10mm small
-/obj/item/ammo_box/magazine/m10mm_adv
 	name = "10mm pistol magazine (10mm)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "m10mm"
+	caliber = "10mm"
 	ammo_type = /obj/item/ammo_casing/c10mm
 	max_ammo = 12
 	multiple_sprites = 2
-	caliber = "10mm"
 
-/obj/item/ammo_box/magazine/m10mm_adv/empty
-	start_empty = 1
-
-/obj/item/ammo_box/magazine/m10mm_adv/simple
-
-/obj/item/ammo_box/magazine/m10mm_adv/simple/empty
-	start_empty = 1
-
-//10mm extended
-/obj/item/ammo_box/magazine/m10mm_adv/ext
-	name = "10mm extended magazine (10mm)"
-	icon_state = "smg10mm"
-	ammo_type = /obj/item/ammo_casing/c10mm
-	max_ammo = 24
-	multiple_sprites = 2
-
-/obj/item/ammo_box/magazine/m10mm_adv/ext/empty
+/obj/item/ammo_box/magazine/m10mm/empty
 	start_empty = 1
 
 //.45

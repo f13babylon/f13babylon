@@ -185,6 +185,22 @@
 	new /obj/item/stock_parts/cell/ammo/ec(src)
 	new /obj/item/stock_parts/cell/ammo/ec(src)
 
+/obj/item/storage/belt/holster/paladincape
+	name = "short shoulder cape"
+	desc = "A short, red cape with a holster attached to carry a handgun and ammo."
+	icon = 'icons/fallout/clothing/belts.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/belt.dmi'
+	icon_state = "newboscape"
+	item_state = "newboscape"
+
+/obj/item/storage/belt/holster/paladinlongcape
+	name = "long shoulder cape"
+	desc = "A long, red cape with a holster attached to carry a handgun and ammo."
+	icon = 'icons/fallout/clothing/belts.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/belt.dmi'
+	icon_state = "newboslcape"
+	item_state = "newboslcape"
+
 /obj/item/storage/belt/holster/legholster
 	name = "leg holster"
 	desc = "A holster to carry a handgun and ammo worn on the leg."

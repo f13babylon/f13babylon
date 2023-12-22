@@ -3,6 +3,26 @@
 	subcategory = LOADOUT_SUBCATEGORY_NECK_GENERAL
 	slot = SLOT_NECK
 
+/datum/gear/neck/paladincape
+	name = "short shoulder cape"
+	path = /obj/item/storage/belt/holster/paladincape
+	cost = 2
+	restricted_desc = "Paladins"
+	restricted_roles = list("Head Paladin",
+							"Senior Paladin",
+							"Paladin"
+						)
+
+/datum/gear/neck/paladinlongcape
+	name = "long shoulder cape"
+	path = /obj/item/storage/belt/holster/paladinlongcape
+	cost = 2
+	restricted_desc = "Paladins"
+	restricted_roles = list("Head Paladin",
+							"Senior Paladin",
+							"Paladin"
+						)
+
 /datum/gear/neck/poncho
 	name = "poncho"
 	path = /obj/item/clothing/neck/mantle/poncho

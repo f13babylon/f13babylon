@@ -233,7 +233,7 @@
 	desc = "There are many ways to describe this, very few of them nice. This is a .45 silenced bolt action Carbine - that via the expertise of a gun runner mainlining 50 liters of psycho, mentats, and turbo - has been converted into a semi auto."
 	icon_state = "destroyer-carbine"
 	item_state = "varmintrifle"
-	mag_type = /obj/item/ammo_box/magazine/greasegun
+	mag_type = /obj/item/ammo_box/magazine/mgreasegun
 	fire_delay = 5
 	burst_size = 1
 	can_attachments = FALSE

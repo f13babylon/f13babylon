@@ -54,7 +54,7 @@
 	name = "ammo box (5mm)"
 	desc = "An ammo box meant to be loaded into a chinese light machine gun."
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "tommydrum"
+	icon_state = "mdrum"
 	ammo_type = /obj/item/ammo_casing/a5mm
 	caliber = "a5mm"
 	max_ammo = 50
