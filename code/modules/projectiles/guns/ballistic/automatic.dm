@@ -594,6 +594,7 @@
 //CARBINES//
 ////////////
 
+//Unused category rn, M1 Carbine is a meh 10mm tier rifle, pistols are objectively better than it.
 //M1 Carbine				Keywords: 10mm, Semi-auto, 12/24 rounds, Long barrel
 /obj/item/gun/ballistic/automatic/m1carbine
 	name = "M1 carbine"

@@ -72,7 +72,7 @@
 	desc = "The Colt N99, an easily maintained, large-framed, long-barreled combat pistol in use by the US Army before the war. Comes with an integrated laser sight module."
 	icon_state = "n99"
 	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
-	fire_delay = 2
+	fire_delay = 3
 	recoil = 0.05
 	can_attachments = TRUE
 	can_automatic = TRUE
@@ -122,6 +122,7 @@
 	spread = 3
 	can_suppress = FALSE
 	fire_sound = 'sound/f13weapons/10mm_fire_02.ogg'
+	extra_damage = 2
 
 //Browning Hi-power						Keywords: 9mm, Semi-auto
 /obj/item/gun/ballistic/automatic/pistol/ninemil
@@ -153,9 +154,9 @@
 	name = "Maria"
 	desc = "An ornately-decorated pre-war Browning Hi-power 9mm pistol with a pearl grip that displays a rendition of the Virgin Mary. Prone to give someone an eighteen-karat run of bad luck."
 	icon_state = "maria"
-	fire_delay = 1
+	fire_delay = 2
 	extra_damage = 10
-	extra_penetration = 0.12
+	extra_penetration = 0.15
 
 
 //Sig Sauer P220						Keywords: 9mm, Semi-auto, 10 round magazine
@@ -259,8 +260,7 @@
 	desc = "A heavily modified Colt M1911A1 pistol, with a scraped-down frame, reinforced slide, a checkered front strap, an enlarged front sight, a ring hammer, an extended thumb safety and slide-stop, a whittled-down trigger guard base, it has a long easy-access trigger, a filed-down magazine catch, a flat mainspring housing, stepping, and cocking serrations to the top of the slide - This is a tool made by a pro, for pros. No doubt."
 	icon_state = "m1911_custom"
 	recoil = 0.05
-	fire_delay = 1
-	extra_damage = 7
+	fire_delay = 2
 
 
 //Mk. 23								Keywords: .45 ACP, Semi-auto, Long barrel (lasersight), 12 round magazine, Flashlight
@@ -324,10 +324,10 @@
 	icon_state = "elcapitan"
 	item_state = "deagle"
 	mag_type = /obj/item/ammo_box/magazine/m14mm
-	fire_delay = 2
+	fire_delay = 3
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
-	extra_damage = 7
-	extra_penetration = 0.05
+	spread = 4
+	extra_penetration = 0.2
 
 //Automag			Keywords: .44 Magnum, Semi-auto, Long barrel, 7 rounds, Heavy. Special modifiers: bullet speed +300
 /obj/item/gun/ballistic/automatic/pistol/automag

@@ -219,12 +219,10 @@
 	name = "weaponspawner security"
 	loot = list(
 		/obj/item/gun/ballistic/revolver/police = 16,
-		/obj/item/gun/ballistic/automatic/m1carbine = 12,
 		/obj/item/gun/ballistic/shotgun/police = 12,
 		/obj/effect/spawner/bundle/f13/beretta = 12,
 		/obj/effect/spawner/bundle/f13/mk23 = 6,
 		/obj/item/gun/energy/laser/pistol = 7,
-		/obj/item/gun/ballistic/automatic/m1carbine/compact = 2,
 		/obj/item/gun/ballistic/automatic/pistol/automag = 2,
 		/obj/effect/spawner/bundle/f13/mp5 = 1,
 		/obj/item/gun/ballistic/shotgun/automatic/combat/auto5 = 2,

@@ -12,7 +12,7 @@
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	flags_1 = CONDUCT_1
 	attack_verb = list("whacked", "fisted", "power-punched")
-	force = 22
+	force = 25
 	armour_penetration = 0.25
 	throwforce = 10
 	throw_range = 3
@@ -21,6 +21,7 @@
 	var/transfer_prints = TRUE //prevents runtimes with forensics when held in glove slot
 	var/throw_distance = 1
 	attack_speed = CLICK_CD_MELEE
+	var/knockback = 1			//This is for bootleg powerfist wrenching.
 
 // Goliath				Throws targets far. Max damage 50.
 /obj/item/melee/f13powerfist/goliath
@@ -31,7 +32,8 @@
 	righthand_file = 'icons/fallout/onmob/weapons/melee1h_righthand.dmi'
 	icon_state = "goliath"
 	item_state = "goliath"
-	force = 25
+	force = 30
+	armour_penetration = 0.3
 	throw_distance = 3
 
 
@@ -46,7 +48,7 @@
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	fire_delay = 2
 	force = 30
-	armour_penetration = 0.45
+	armour_penetration = 0.3
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/dual
 	fire_sound = 'sound/f13weapons/caravan_shotgun.ogg'
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_GLOVES
@@ -66,7 +68,9 @@
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	flags_1 = CONDUCT_1
-	force = 15
+	force = 20
+	armour_penetration = 0.25
+	wound_bonus = 20
 	throwforce = 10
 	throw_range = 7
 	attack_verb = list("slashed", "sliced", "torn", "ripped", "diced", "cut")

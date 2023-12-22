@@ -2214,8 +2214,6 @@
 /obj/item/gun/ballistic/automatic/assault_rifle/infiltrator,
 /obj/item/gun/ballistic/automatic/autopipe,
 /obj/item/gun/ballistic/automatic/hobo/destroyer,
-/obj/item/gun/ballistic/automatic/m1carbine,
-/obj/item/gun/ballistic/automatic/m1carbine/compact,
 /obj/item/gun/ballistic/automatic/m1garand,
 /obj/item/gun/ballistic/automatic/m1garand/sks,
 /obj/item/gun/ballistic/automatic/marksman,
