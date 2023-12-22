@@ -356,6 +356,17 @@
 	icon_state = "horizontalinnermain1"
 	},
 /area/f13/city)
+"amM" = (
+/obj/item/trash/coal,
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -13;
+	layer = 6
+	},
+/turf/open/indestructible/ground/outside/graveldirt{
+	dir = 8
+	},
+/area/f13/raiders)
 "amS" = (
 /obj/machinery/chem_heater,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
@@ -1704,6 +1715,22 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/ncr)
+"bzl" = (
+/obj/item/choice_beacon/box/plushie,
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -13;
+	layer = 6
+	},
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -9;
+	layer = 5
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain1"
+	},
+/area/f13/wasteland/ncr)
 "bzE" = (
 /obj/effect/landmark/vertibird{
 	name = "Warren North"
@@ -4328,6 +4355,19 @@
 	icon_state = "horizontaloutermain1"
 	},
 /area/f13/wasteland/warren)
+"dZu" = (
+/obj/item/book/granter/crafting_recipe/blueprint/mp5,
+/obj/item/trash/coal{
+	pixel_x = -11;
+	pixel_y = -13;
+	layer = 6
+	},
+/obj/item/trash/coal,
+/obj/item/toy/figure/hop,
+/turf/open/indestructible/ground/outside/graveldirt{
+	dir = 4
+	},
+/area/f13/raiders)
 "eax" = (
 /obj/structure/railing/wood{
 	dir = 4;
@@ -5925,9 +5965,7 @@
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/wasteland/warren)
 "fyW" = (
-/obj/structure/flora/tree/tall{
-	icon_state = "tree_2"
-	},
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/savannah/edgesnew{
 	dir = 8
 	},
@@ -10037,6 +10075,32 @@
 /obj/effect/landmark/start/f13/ncrtrooper,
 /turf/open/floor/plasteel/vault,
 /area/f13/ncr)
+"jwq" = (
+/obj/structure/table/wood,
+/obj/item/clothing/suit/hooded/wintercoat/christmascoatr,
+/obj/item/clothing/suit/hooded/wintercoat/christmascoatr,
+/obj/item/clothing/under/costume/christmas/croptop,
+/obj/item/clothing/under/costume/christmas/croptop,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain0"
+	},
+/area/f13/wasteland/ncr)
 "jws" = (
 /obj/machinery/light{
 	dir = 1;
@@ -10611,6 +10675,17 @@
 	icon_state = "verticalrightborderright0"
 	},
 /area/f13/wasteland/warren)
+"jWu" = (
+/obj/item/toy/figure/assistant{
+	pixel_y = 14
+	},
+/obj/item/trash/coal{
+	pixel_x = 12
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain2"
+	},
+/area/f13/wasteland/ncr)
 "jWv" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "innermaincornerinner"
@@ -11724,6 +11799,30 @@
 /obj/structure/reagent_dispensers/barrel/explosive,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
+"lcn" = (
+/obj/structure/table/wood,
+/obj/item/clothing/suit/hooded/wintercoat/christmascoatr,
+/obj/item/clothing/suit/hooded/wintercoat/christmascoatr,
+/obj/item/clothing/under/costume/christmas/croptop,
+/obj/item/clothing/under/costume/christmas/croptop,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
+/turf/open/indestructible/ground/outside/graveldirt,
+/area/f13/raiders)
 "lcu" = (
 /obj/structure/wreck/trash/one_tire,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -12275,6 +12374,13 @@
 	icon_state = "outerbordercorner"
 	},
 /area/f13/wasteland/warren)
+"lHs" = (
+/obj/item/book/granter/crafting_recipe/blueprint/r84,
+/obj/item/toy/figure/qm,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain2"
+	},
+/area/f13/wasteland/ncr)
 "lHx" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt,
@@ -15814,6 +15920,32 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/city)
+"oZb" = (
+/obj/structure/table/wood,
+/obj/item/clothing/suit/snowman,
+/obj/item/clothing/head/snowman,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/turf/open/indestructible/ground/outside/graveldirt,
+/area/f13/raiders)
 "oZe" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -16110,7 +16242,7 @@
 	},
 /area/f13/wasteland/warren)
 "poH" = (
-/obj/structure/flora/tree/jungle/small,
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/ncr)
 "poQ" = (
@@ -16184,6 +16316,12 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/ncr)
+"pwY" = (
+/obj/structure/flora/tree/pine/xmas,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain1"
+	},
+/area/f13/wasteland/ncr)
 "pxl" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom0"
@@ -16761,6 +16899,20 @@
 /obj/structure/wreck/car/bike,
 /turf/open/indestructible/ground/outside/savannah/edgesnew,
 /area/f13/wasteland/warren)
+"pVw" = (
+/obj/item/toy/figure/secofficer{
+	pixel_y = 12;
+	pixel_x = -17
+	},
+/obj/item/trash/coal{
+	pixel_x = -11;
+	pixel_y = -13;
+	layer = 4
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain1"
+	},
+/area/f13/wasteland/ncr)
 "pVF" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
@@ -17970,7 +18122,7 @@
 	},
 /area/f13/city)
 "qYZ" = (
-/obj/structure/flora/tree/jungle,
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/floor/grass,
 /area/f13/wasteland/ncr)
 "qZj" = (
@@ -18718,6 +18870,12 @@
 	icon_state = "darkdirty"
 	},
 /area/f13/ncr)
+"rCq" = (
+/obj/structure/flora/tree/pine/xmas,
+/turf/open/indestructible/ground/outside/graveldirt{
+	dir = 8
+	},
+/area/f13/raiders)
 "rCH" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13{
@@ -18784,6 +18942,12 @@
 	icon_state = "cafeteria"
 	},
 /area/f13/city)
+"rFT" = (
+/obj/item/trash/coal,
+/turf/open/indestructible/ground/outside/graveldirt{
+	dir = 4
+	},
+/area/f13/raiders)
 "rGu" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
@@ -19521,9 +19685,7 @@
 	},
 /area/f13/caves)
 "suF" = (
-/obj/structure/flora/tree/tall{
-	icon_state = "tree_2"
-	},
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/savannah/edgesnew,
 /area/f13/wasteland/ncr)
 "suK" = (
@@ -20301,6 +20463,24 @@
 /obj/item/clothing/neck/necklace/dope,
 /turf/open/floor/plasteel/dark,
 /area/f13/city)
+"tfi" = (
+/obj/item/trash/coal{
+	pixel_x = -11;
+	pixel_y = -13;
+	layer = 6
+	},
+/obj/item/trash/coal,
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -13;
+	layer = 6
+	},
+/obj/item/toy/figure/wizard,
+/obj/effect/spawner/lootdrop/plush,
+/turf/open/indestructible/ground/outside/graveldirt{
+	dir = 1
+	},
+/area/f13/raiders)
 "tft" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chalkboard,
@@ -22320,13 +22500,26 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/ncr)
 "uVo" = (
-/obj/structure/flora/tree/jungle,
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/ncr)
 "uVr" = (
 /obj/structure/wreck/trash/machinepile,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/city)
+"uVG" = (
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -13;
+	layer = 6
+	},
+/obj/item/trash/coal,
+/obj/item/toy/figure/borg,
+/obj/effect/spawner/lootdrop/plush,
+/turf/open/indestructible/ground/outside/graveldirt{
+	dir = 1
+	},
+/area/f13/raiders)
 "uVI" = (
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/ncr)
@@ -22706,6 +22899,23 @@
 	icon_state = "asteroidfloor"
 	},
 /area/f13/city)
+"vnc" = (
+/obj/item/choice_beacon/box/plushie,
+/obj/item/toy/figure/ian,
+/obj/item/trash/coal{
+	pixel_x = -3;
+	pixel_y = -10;
+	layer = 6
+	},
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -9;
+	layer = 5
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain1"
+	},
+/area/f13/wasteland/ncr)
 "vnn" = (
 /obj/structure/table,
 /obj/item/stack/f13Cash/random/ncr/med,
@@ -24750,9 +24960,7 @@
 /turf/closed/wall/f13/wood/house,
 /area/f13/city)
 "xcy" = (
-/obj/structure/flora/tree/tall{
-	icon_state = "tree_2"
-	},
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/savannah/edgesnew,
 /area/f13/caves)
 "xcW" = (
@@ -25423,6 +25631,34 @@
 	icon_state = "verticalrightborderleft0"
 	},
 /area/f13/wasteland/warren)
+"xCi" = (
+/obj/structure/table/wood,
+/obj/item/clothing/suit/snowman,
+/obj/item/clothing/head/snowman,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain1"
+	},
+/area/f13/wasteland/ncr)
 "xCQ" = (
 /obj/structure/table/wood/bar,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/hobo,
@@ -52848,9 +53084,9 @@ jXh
 jXh
 gaL
 jXh
-mhw
-mhw
-bVp
+xCi
+bzl
+jWu
 bVp
 gVr
 gVr
@@ -53106,8 +53342,8 @@ gaL
 gaL
 gaL
 mhw
-mhw
-bVp
+pwY
+lHs
 mhw
 gVr
 gVr
@@ -53362,9 +53598,9 @@ jXh
 gaL
 taf
 gaL
-mhw
-mhw
-mhw
+jwq
+vnc
+pVw
 mhw
 gVr
 gVr
@@ -58905,9 +59141,9 @@ swo
 nxO
 swo
 snh
-nxO
-snh
-swo
+oZb
+uVG
+rFT
 fRH
 vVX
 xOC
@@ -59163,8 +59399,8 @@ pKl
 cNe
 nxO
 snh
-nxO
-swo
+rCq
+dZu
 fRH
 vVX
 ixi
@@ -59419,9 +59655,9 @@ jdx
 iCp
 rcO
 snh
-nxO
-snh
-nxO
+lcn
+tfi
+amM
 ajd
 vVX
 vVX

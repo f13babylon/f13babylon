@@ -635,10 +635,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "acs" = (
-/obj/structure/flora/tree/tall{
-	icon_state = "tree_2";
-	layer = 4
-	},
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 8;
 	icon_state = "dirtcorner"
@@ -13702,8 +13699,22 @@
 	},
 /area/f13/building/massfusion)
 "aWX" = (
-/turf/closed/wall/mineral/wood,
-/area/f13/building)
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -13;
+	layer = 6
+	},
+/obj/item/toy/figure/warden{
+	pixel_y = -15;
+	pixel_x = 9;
+	layer = 7
+	},
+/obj/item/choice_beacon/box/plushie,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/brotherhood)
 "aWY" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderleft0"
@@ -19184,11 +19195,7 @@
 	pixel_x = -6;
 	pixel_y = 13
 	},
-/obj/structure/flora/tree/tall{
-	icon_state = "tree_3";
-	pixel_x = -19;
-	pixel_y = 9
-	},
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderlefttop"
 	},
@@ -19688,17 +19695,13 @@
 /turf/open/floor/wood/wood_common,
 /area/f13/city/bighorn)
 "buB" = (
-/obj/structure/flora/tree/tall{
-	icon_state = "tree_3";
-	pixel_y = 12
-	},
-/obj/structure/flora/grass/wasteland{
-	icon_state = "tall_grass_4";
+/obj/item/toy/figure/chef,
+/obj/item/trash/coal{
+	pixel_x = -11;
+	pixel_y = -13;
 	layer = 6
 	},
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "hole"
-	},
+/turf/open/floor/plating/f13/inside/gravel,
 /area/f13/wasteland/bighorn)
 "buC" = (
 /obj/effect/decal/cleanable/dirt,
@@ -20288,14 +20291,11 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/city/bighorn)
 "byU" = (
-/obj/structure/flora/tree/tall{
-	pixel_x = -14;
-	pixel_y = 3
-	},
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_4";
 	layer = 6
 	},
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "hole"
 	},
@@ -20312,10 +20312,7 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland/bighorn)
 "byY" = (
-/obj/structure/flora/tree/wasteland{
-	pixel_x = -9;
-	pixel_y = 20
-	},
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/desert{
 	icon_state = "wasteland32"
 	},
@@ -21275,6 +21272,31 @@
 	icon_state = "wasteland32"
 	},
 /area/f13/wasteland/massfusion)
+"bPR" = (
+/obj/structure/table/wood,
+/obj/item/clothing/suit/hooded/wintercoat/christmascoatr,
+/obj/item/clothing/suit/hooded/wintercoat/christmascoatr,
+/obj/item/clothing/under/costume/christmas/croptop,
+/obj/item/clothing/under/costume/christmas/croptop,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/brotherhood)
 "bQa" = (
 /obj/structure/fermenting_barrel{
 	name = "BROC"
@@ -22428,6 +22450,29 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/building/massfusion)
+"cfv" = (
+/obj/item/book/granter/crafting_recipe/blueprint/citykiller,
+/obj/item/toy/figure/ninja,
+/obj/item/trash/coal{
+	pixel_x = -11;
+	pixel_y = -13;
+	layer = 6
+	},
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -13;
+	layer = 6
+	},
+/obj/item/trash/coal{
+	pixel_x = -11;
+	pixel_y = -13;
+	layer = 6
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 6;
+	icon_state = "dirt"
+	},
+/area/f13/wasteland/quarry)
 "cfz" = (
 /obj/structure/stone_tile/slab/cracked,
 /obj/effect/decal/cleanable/dirt,
@@ -22717,6 +22762,25 @@
 /obj/structure/chair/wood,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/west)
+"clh" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/toy/figure/bartender{
+	pixel_x = 16;
+	pixel_y = 11
+	},
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -9;
+	layer = 6
+	},
+/obj/item/trash/coal{
+	pixel_x = 12
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 10;
+	icon_state = "dirt"
+	},
+/area/f13/wasteland/quarry)
 "clk" = (
 /obj/structure/sign/poster/contraband/pinup_vixen{
 	pixel_y = 32
@@ -24338,6 +24402,13 @@
 	icon_state = "horizontalinnermain0"
 	},
 /area/f13/wasteland/massfusion)
+"cHY" = (
+/obj/item/toy/figure/ian,
+/obj/item/toy/figure/hos{
+	pixel_x = 10
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/brotherhood)
 "cIb" = (
 /obj/machinery/smartfridge/bottlerack/seedbin,
 /obj/effect/turf_decal/weather/dirt,
@@ -24517,7 +24588,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "cNi" = (
-/obj/structure/flora/tree/jungle,
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/savannah{
 	icon_state = "savannah4"
 	},
@@ -25473,7 +25544,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "dns" = (
-/obj/structure/flora/tree/tall,
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland/quarry)
 "dnt" = (
@@ -26231,7 +26302,7 @@
 "dET" = (
 /obj/structure/flora/grass/jungle,
 /obj/structure/flora/grass/jungle,
-/obj/structure/flora/tree/jungle,
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/savannah{
 	icon_state = "savannah2"
 	},
@@ -26502,6 +26573,33 @@
 /obj/effect/turf_decal/delivery,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/bunker)
+"dKx" = (
+/obj/structure/table/wood,
+/obj/item/clothing/suit/snowman,
+/obj/item/clothing/head/snowman,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 9;
+	icon_state = "dirt"
+	},
+/area/f13/wasteland/quarry)
 "dKE" = (
 /obj/structure/chair/bench{
 	dir = 4;
@@ -29825,6 +29923,9 @@
 "fsG" = (
 /obj/structure/table/wood/junk,
 /obj/item/brahminbrand,
+/obj/item/toy/figure/bartender{
+	pixel_x = -2
+	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/bighorn)
 "ftc" = (
@@ -32137,14 +32238,11 @@
 	},
 /area/f13/brotherhood)
 "gAn" = (
-/obj/structure/flora/tree/tall{
-	icon_state = "tree_3";
-	pixel_y = 12
-	},
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_4";
 	layer = 5
 	},
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/desert{
 	icon_state = "wasteland32"
 	},
@@ -36565,6 +36663,36 @@
 	icon_state = "greenrustysolid"
 	},
 /area/f13/building/massfusion)
+"iGW" = (
+/obj/structure/table/wood,
+/obj/item/clothing/suit/snowman,
+/obj/item/clothing/head/snowman,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/toy/figure/lawyer{
+	pixel_y = 7;
+	pixel_x = -9
+	},
+/turf/open/floor/plating/f13/inside/gravel,
+/area/f13/wasteland/bighorn)
 "iHd" = (
 /turf/closed/indestructible/f13/matrix/transition{
 	destination_x = 254;
@@ -37137,15 +37265,9 @@
 	},
 /area/f13/wasteland/hospital)
 "iSQ" = (
-/obj/structure/flora/tree/cactus{
-	pixel_x = -13;
-	pixel_y = -17
-	},
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 1;
-	icon_state = "dirt"
-	},
-/area/f13/wasteland/quarry)
+/obj/structure/flora/tree/pine/xmas,
+/turf/open/indestructible/ground/outside/graveldirt,
+/area/f13/wasteland/bighorn)
 "iTd" = (
 /obj/structure/car/rubbish4,
 /turf/open/indestructible/ground/outside/road,
@@ -38253,10 +38375,8 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/obj/structure/flora/tree/tall{
-	icon_state = "tree_2"
-	},
 /obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland/quarry)
 "jst" = (
@@ -38626,14 +38746,7 @@
 /turf/closed/wall/rust,
 /area/f13/building)
 "jCv" = (
-/obj/structure/flora/tree/wasteland{
-	pixel_x = -9;
-	pixel_y = 20
-	},
-/obj/structure/flora/tree/wasteland{
-	pixel_x = -9;
-	pixel_y = 20
-	},
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland/bighorn)
 "jCz" = (
@@ -38958,10 +39071,7 @@
 	layer = 4.2;
 	pixel_x = -3
 	},
-/obj/structure/flora/tree/tall{
-	layer = 4;
-	pixel_y = 9
-	},
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/desert{
 	icon_state = "wasteland33"
 	},
@@ -41777,6 +41887,15 @@
 /obj/item/reagent_containers/food/snacks/grown/wheat,
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/building)
+"lgB" = (
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -13;
+	layer = 6
+	},
+/obj/effect/spawner/lootdrop/plush,
+/turf/open/indestructible/ground/outside/graveldirt,
+/area/f13/wasteland/bighorn)
 "lgD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
@@ -42834,10 +42953,10 @@
 	},
 /area/f13/building/massfusion)
 "lDU" = (
-/obj/structure/flora/tree/wasteland,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/brotherhood)
 "lEk" = (
@@ -44918,6 +45037,33 @@
 	icon_state = "verticalrightborderleft2"
 	},
 /area/f13/building/massfusion)
+"mxL" = (
+/obj/structure/table/wood,
+/obj/item/clothing/suit/snowman,
+/obj/item/clothing/head/snowman,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/brotherhood)
 "mya" = (
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/bars{
@@ -48886,6 +49032,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood)
 "oph" = (
@@ -54139,6 +54286,11 @@
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_4"
 	},
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -9
+	},
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirtcorner"
 	},
@@ -54927,9 +55079,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/obj/structure/flora/tree/tall{
-	icon_state = "tree_2"
-	},
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 8;
 	icon_state = "dirt"
@@ -55092,6 +55242,22 @@
 	icon_state = "verticaloutermain2"
 	},
 /area/f13/wasteland/museum)
+"rec" = (
+/obj/item/toy/figure/chemist,
+/obj/item/toy/figure/ce{
+	pixel_y = -11;
+	pixel_x = -3
+	},
+/obj/item/trash/coal{
+	pixel_x = -11;
+	pixel_y = -13;
+	layer = 6
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 6;
+	icon_state = "dirt"
+	},
+/area/f13/wasteland/quarry)
 "reu" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13{
@@ -57730,6 +57896,19 @@
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland/museum)
+"sqp" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/trash/coal{
+	pixel_x = -11;
+	pixel_y = -13;
+	layer = 4
+	},
+/obj/item/choice_beacon/box/plushie,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/brotherhood)
 "sqA" = (
 /obj/effect/decal/marking,
 /turf/open/indestructible/ground/outside/road,
@@ -57915,6 +58094,35 @@
 	pixel_x = 18
 	},
 /turf/open/indestructible/ground/outside/water,
+/area/f13/wasteland/bighorn)
+"swV" = (
+/obj/structure/table/wood,
+/obj/item/clothing/suit/hooded/wintercoat/christmascoatr,
+/obj/item/clothing/suit/hooded/wintercoat/christmascoatr,
+/obj/item/clothing/under/costume/christmas/croptop,
+/obj/item/clothing/under/costume/christmas/croptop,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/toy/figure/detective{
+	pixel_x = 10;
+	pixel_y = 9
+	},
+/obj/effect/spawner/lootdrop/plush,
+/turf/open/floor/plating/f13/inside/gravel,
 /area/f13/wasteland/bighorn)
 "swX" = (
 /obj/effect/decal/cleanable/dirt{
@@ -59382,7 +59590,7 @@
 /obj/structure/destructible/tribal_torch/wall{
 	dir = 8
 	},
-/obj/structure/flora/tree/jungle,
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/brotherhood)
 "ths" = (
@@ -59821,6 +60029,33 @@
 	dir = 8
 	},
 /area/f13/building/mall)
+"tss" = (
+/obj/structure/table/wood,
+/obj/item/clothing/suit/hooded/wintercoat/christmascoatr,
+/obj/item/clothing/suit/hooded/wintercoat/christmascoatr,
+/obj/item/clothing/under/costume/christmas/croptop,
+/obj/item/clothing/under/costume/christmas/croptop,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 5;
+	icon_state = "dirt"
+	},
+/area/f13/wasteland/quarry)
 "tsK" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontalbottomborderbottomleft"
@@ -60922,7 +61157,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/bighorn)
 "tSz" = (
-/obj/structure/flora/tree/jungle/small,
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/savannah{
 	icon_state = "savannah6"
 	},
@@ -61127,6 +61362,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/brotherhood)
+"tVA" = (
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -9
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland/quarry)
 "tVG" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -62446,12 +62688,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/building/mall)
 "uAs" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/f13/junkspawners,
-/turf/open/floor/plasteel/f13{
-	icon_state = "greenrustychess"
+/obj/item/toy/figure/roboticist{
+	pixel_y = 10;
+	pixel_x = -11;
+	layer = 5
 	},
-/area/f13/building/massfusion)
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/brotherhood)
 "uAw" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
@@ -65259,7 +65502,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "vRM" = (
-/obj/structure/flora/tree/tall,
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/desert{
 	icon_state = "wasteland32"
 	},
@@ -66696,12 +66939,12 @@
 "wzf" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/effect/turf_decal/weather/dirt,
-/obj/structure/flora/tree/jungle/small,
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood)
 "wzk" = (
 /obj/effect/turf_decal/weather/dirt,
-/obj/structure/flora/tree/jungle/small,
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/savannah{
 	icon_state = "savannah7"
 	},
@@ -69219,6 +69462,22 @@
 	icon_state = "verticalleftborderleft0"
 	},
 /area/f13/wasteland/bighornbunker)
+"xGS" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/book/granter/crafting_recipe/blueprint/tribeam,
+/obj/item/toy/figure/borg,
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -9;
+	layer = 5
+	},
+/obj/item/trash/coal{
+	pixel_x = -11;
+	pixel_y = -13;
+	layer = 6
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/brotherhood)
 "xGX" = (
 /obj/structure/window/fulltile/house/broken,
 /obj/effect/decal/cleanable/dirt,
@@ -69613,6 +69872,16 @@
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_7";
 	layer = 2.8
+	},
+/obj/item/toy/figure/secofficer{
+	pixel_y = -12;
+	pixel_x = 7
+	},
+/obj/item/choice_beacon/box/plushie,
+/obj/item/trash/coal{
+	pixel_x = -11;
+	pixel_y = -13;
+	layer = 4
 	},
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 8;
@@ -74610,8 +74879,8 @@ qof
 qof
 qof
 qof
-qof
-qof
+iGW
+lgB
 qof
 diz
 nVn
@@ -74868,7 +75137,7 @@ qof
 qof
 qof
 qof
-qof
+iSQ
 qof
 diz
 cFl
@@ -75124,8 +75393,8 @@ byd
 byd
 byd
 byd
-byd
-byd
+swV
+buB
 byd
 cCT
 nVn
@@ -83578,7 +83847,7 @@ aTw
 ydE
 txf
 mHp
-buB
+byU
 bwa
 bwG
 bxT
@@ -109979,7 +110248,7 @@ oUj
 aRk
 aaQ
 tbf
-aWX
+vng
 cmP
 aaT
 qkl
@@ -110235,7 +110504,7 @@ aaQ
 aHy
 aaQ
 abP
-aWX
+vng
 hpb
 aaT
 aaT
@@ -110363,9 +110632,9 @@ had
 xrQ
 lEw
 kCd
-dqx
+dKx
 xQJ
-eXx
+clh
 kCd
 nsh
 xjM
@@ -110620,9 +110889,9 @@ acl
 rff
 uyZ
 kCd
-iSQ
+prR
 qJB
-iQb
+cfv
 kCd
 kCd
 xjM
@@ -110877,9 +111146,9 @@ ack
 wOn
 abg
 kCd
-crm
-iQb
-xjM
+tss
+rec
+tVA
 oJW
 xjM
 xjM
@@ -112292,8 +112561,8 @@ cmh
 aaQ
 aaT
 csf
-aWX
-aWX
+vng
+vng
 uAf
 mhJ
 sdn
@@ -112437,7 +112706,7 @@ nWD
 cpq
 cpq
 cpq
-cCA
+dns
 aae
 adb
 adb
@@ -112547,7 +112816,7 @@ aVM
 aaQ
 vkA
 aaQ
-aWX
+vng
 fRF
 xfj
 smT
@@ -112804,7 +113073,7 @@ ltX
 aaQ
 aaQ
 aaQ
-aWX
+vng
 gXC
 pJF
 rHX
@@ -113230,10 +113499,10 @@ scc
 scc
 scc
 scc
-aWX
-aWX
+vng
+vng
 fCh
-aWX
+vng
 ltO
 kfs
 bnE
@@ -114258,7 +114527,7 @@ xjM
 xjM
 xjM
 kad
-aWX
+vng
 arR
 rCy
 jKl
@@ -114515,16 +114784,16 @@ xUZ
 xjM
 xjM
 oEy
-aWX
-aWX
-aWX
-aWX
+vng
+vng
+vng
+vng
 ltO
-aWX
+vng
 kDl
 xyU
 xyU
-aWX
+vng
 wFA
 gGg
 ejj
@@ -116316,13 +116585,13 @@ xjM
 prR
 kRj
 ocT
-aWX
+vng
 faB
 rqI
 aWx
 rqI
 rqI
-aWX
+vng
 iPm
 cjo
 kVp
@@ -119887,7 +120156,7 @@ wSN
 wSN
 fOe
 gzj
-uAs
+iWb
 cIK
 rcw
 aLI
@@ -125550,7 +125819,7 @@ aae
 aae
 aae
 vVo
-uAs
+iWb
 wSN
 sEY
 wSN
@@ -127540,9 +127809,9 @@ wTf
 jVJ
 kEn
 wbm
-cAa
-hfr
-kOz
+mxL
+aWX
+cHY
 hUv
 jVJ
 jVJ
@@ -127799,7 +128068,7 @@ ovr
 wbm
 cAa
 opa
-eMQ
+xGS
 bmw
 jVJ
 jVJ
@@ -128054,9 +128323,9 @@ wTf
 jVJ
 ovr
 wbm
-cAa
-hfr
-kOz
+bPR
+sqp
+uAs
 hUv
 jVJ
 jVJ

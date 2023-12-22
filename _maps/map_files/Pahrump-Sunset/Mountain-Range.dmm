@@ -745,6 +745,33 @@
 	icon_state = "horizontalinnermain0"
 	},
 /area/f13/mountain_area)
+"ge" = (
+/obj/structure/table/wood,
+/obj/item/clothing/suit/snowman,
+/obj/item/clothing/head/snowman,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/effect/spawner/lootdrop/plush,
+/turf/open/floor/f13,
+/area/f13/enclave/hallways)
 "gh" = (
 /obj/structure/obstacle/barbedwire{
 	dir = 4
@@ -773,6 +800,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/enclave/armory)
+"go" = (
+/obj/structure/flora/tree/pine/xmas,
+/turf/open/floor/f13,
+/area/f13/enclave/hallways)
 "gp" = (
 /obj/machinery/door/airlock/hatch{
 	req_access = null;
@@ -1235,6 +1266,20 @@
 	},
 /turf/open/water,
 /area/f13/enclave)
+"jc" = (
+/obj/item/trash/coal{
+	pixel_x = -11;
+	pixel_y = -13;
+	layer = 6
+	},
+/obj/item/toy/figure/virologist,
+/obj/effect/spawner/lootdrop/plush,
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -9
+	},
+/turf/open/floor/f13,
+/area/f13/enclave/hallways)
 "jd" = (
 /obj/machinery/light{
 	light_color = "#c1caff"
@@ -1593,6 +1638,30 @@
 	density = 0;
 	pixel_y = 30
 	},
+/turf/open/floor/f13,
+/area/f13/enclave/hallways)
+"lM" = (
+/obj/structure/table/wood,
+/obj/item/clothing/suit/hooded/wintercoat/christmascoatr,
+/obj/item/clothing/suit/hooded/wintercoat/christmascoatr,
+/obj/item/clothing/under/costume/christmas/croptop,
+/obj/item/clothing/under/costume/christmas/croptop,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
 /turf/open/floor/f13,
 /area/f13/enclave/hallways)
 "lR" = (
@@ -2220,6 +2289,13 @@
 /obj/machinery/vending/dinnerware,
 /turf/open/floor/plasteel/hydrofloor,
 /area/f13/enclave/mess)
+"qx" = (
+/obj/item/book/granter/crafting_recipe/blueprint/plasmarifle,
+/obj/item/toy/figure/syndie{
+	pixel_y = 6
+	},
+/turf/open/floor/f13,
+/area/f13/enclave/hallways)
 "qy" = (
 /obj/structure/car/rubbish2,
 /turf/open/indestructible/ground/outside/snow_plating,
@@ -2470,6 +2546,20 @@
 /obj/structure/frame/machine,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
+"sc" = (
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -13;
+	layer = 6
+	},
+/obj/item/toy/figure/chemist,
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -9;
+	layer = 5
+	},
+/turf/open/floor/f13,
+/area/f13/enclave/hallways)
 "sg" = (
 /obj/structure/rack/shelf_metal,
 /obj/structure/window/reinforced{
@@ -4769,6 +4859,17 @@
 	},
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/mountain_area)
+"IJ" = (
+/obj/item/toy/plush/mammal/fox,
+/obj/item/trash/coal{
+	pixel_x = 12
+	},
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -9
+	},
+/turf/open/floor/f13,
+/area/f13/enclave/hallways)
 "IO" = (
 /obj/effect/turf_decal/loading_area,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -5831,6 +5932,18 @@
 	},
 /turf/open/floor/plating,
 /area/f13/enclave)
+"RL" = (
+/obj/item/toy/figure/cmo,
+/obj/item/trash/coal{
+	pixel_x = 12
+	},
+/obj/item/trash/coal{
+	pixel_x = -11;
+	pixel_y = -13;
+	layer = 6
+	},
+/turf/open/floor/f13,
+/area/f13/enclave/hallways)
 "RO" = (
 /obj/effect/landmark/start/f13/usgysgt,
 /turf/open/floor/f13,
@@ -23048,9 +23161,9 @@ BS
 JF
 JF
 JF
-JF
-JF
-JF
+ge
+sc
+IJ
 JF
 AW
 hz
@@ -23306,8 +23419,8 @@ JF
 JF
 JF
 tz
-JF
-JF
+go
+qx
 JF
 AW
 ln
@@ -23562,9 +23675,9 @@ RG
 JF
 JF
 JF
-JF
-JF
-JF
+lM
+jc
+RL
 JF
 AW
 AW
