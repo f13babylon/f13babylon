@@ -754,8 +754,8 @@
 	always_available = FALSE
 
 /datum/crafting_recipe/smg22
-	name = "American 180"
-	result = /obj/item/gun/ballistic/automatic/smg/american180
+	name = "silenced .22 SMG"
+	result = /obj/item/gun/ballistic/automatic/smg/smg22
 	reqs = list(/obj/item/stack/sheet/metal = 5,
 				/obj/item/stack/sheet/mineral/wood = 1,
 				/obj/item/advanced_crafting_components/receiver = 1,
