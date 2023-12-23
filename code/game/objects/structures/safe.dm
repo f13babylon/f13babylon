@@ -6,7 +6,7 @@
 //SAFES
 /obj/structure/safe
 	name = "safe"
-	desc = "A huge chunk of metal with a dial embedded in it. Fine print on the dial reads \"Scarborough Arms - 2 tumbler safe, guaranteed thermite resistant, explosion resistant, and assistant resistant.\""
+	desc = "A RobCo Industries secure dial safe for guaranteed protection of valuables."
 	icon = 'icons/obj/structures.dmi'
 	icon_state = "safe"
 	anchored = TRUE
@@ -16,7 +16,7 @@
 	/// The maximum combined w_class of stuff in the safe
 	var/maxspace = 24
 	/// The amount of tumblers that will be generated
-	var/number_of_tumblers = 2
+	var/number_of_tumblers = 3
 	/// Whether the safe is open or not
 	var/open = FALSE
 	/// Whether the safe is locked or not
@@ -52,6 +52,7 @@
 
 /obj/structure/safe/update_icon_state()
 	icon_state = "[initial(icon_state)][open ? "-open" : null]"
+	playsound(loc, 'sound/machines/click.ogg', 15, 1, -3)
 	return ..()
 
 /obj/structure/safe/attackby(obj/item/attacking_item, mob/user, params)
@@ -223,12 +224,14 @@
  * Called every dial turn to provide feedback if possible.
  */
 /obj/structure/safe/proc/notify_user(user, canhear, sounds, total_ticks, current_tick)
-	if(!canhear)
-		return
 	if(current_tick == 2)
-		to_chat(user, "<span class='italics'>The sounds from [src] are too fast and blend together.</span>")
+		playsound(loc, 'sound/machines/doorclick2.ogg', 50, 1, -3)
+		if(canhear)
+			to_chat(user, "<span class='italics'>The sounds from [src] are too fast and blend together.</span>")
 	if(total_ticks == 1 || prob(SOUND_CHANCE))
-		balloon_alert(user, pick(sounds))
+		playsound(loc, 'sound/machines/doorclick.ogg', 50, 1, -3)
+		if(canhear)
+			balloon_alert(user, pick(sounds))
 
 //FLOOR SAFES
 /obj/structure/safe/floor
@@ -236,6 +239,10 @@
 	icon_state = "floorsafe"
 	density = FALSE
 	layer = LOW_OBJ_LAYER
+
+/obj/structure/safe/wall
+	name = "wall safe"
+	icon_state = "floorsafe"
 
 #undef SOUND_CHANCE
 #undef BROKEN_THRESHOLD
