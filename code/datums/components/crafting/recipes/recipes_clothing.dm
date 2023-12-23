@@ -66,6 +66,7 @@
 	name = "NCR Ranger Cape"
 	result = /obj/item/clothing/neck/mantle/ranger
 	reqs = list(/obj/item/storage/belt/holster = 1,
+				/obj/item/stack/sheet/cloth = 3,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
 	category = CAT_CLOTHING
