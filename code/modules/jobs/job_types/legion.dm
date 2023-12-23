@@ -44,6 +44,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombathelmet)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombatarmormk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombathelmetmk2)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionrangercape)
 	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
 	ADD_TRAIT(H, TRAIT_STIM_INTOLERANCE, REF(src)) //Can't use stimpaks without getting sick
 	ADD_TRAIT(H, TRAIT_STRAIGHT_EDGE, REF(src)) //Can't use Fallout chems, such as Psycho, Med-X, Buffout, Turbo etc. without getting sick
