@@ -54,11 +54,11 @@ Uranium, Contaminated
 /obj/item/projectile/bullet/c22/rubber
 	name = ".22lr rubber bullet"
 	damage = 2
-	stamina = 22
+	stamina = 6
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 	dmg_dropoff_per_tile = 2 * 0.5 / 10
-	stam_dropoff_per_tile = 22 * 0.5 / 10
+	stam_dropoff_per_tile = 6 * 0.5 / 10
 
 /obj/item/projectile/bullet/c22/shock
 	name = ".22lr shock bullet"
