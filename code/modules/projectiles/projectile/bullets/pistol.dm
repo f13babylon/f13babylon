@@ -51,15 +51,6 @@ Uranium, Contaminated
 	if(damage < 0 && stamina < 0)
 		qdel(src)
 
-/obj/item/projectile/bullet/c22/rubber
-	name = ".22lr rubber bullet"
-	damage = 2
-	stamina = 6
-	wound_bonus = 0
-	sharpness = SHARP_NONE
-	dmg_dropoff_per_tile = 2 * 0.5 / 10
-	stam_dropoff_per_tile = 6 * 0.5 / 10
-
 /obj/item/projectile/bullet/c22/shock
 	name = ".22lr shock bullet"
 	damage = 8
@@ -90,15 +81,6 @@ Uranium, Contaminated
 		stamina -= stam_dropoff_per_tile
 	if(damage < 0 && stamina < 0)
 		qdel(src)
-
-/obj/item/projectile/bullet/c38/rubber
-	name = ".38 rubber bullet"
-	damage = 4
-	stamina = 32
-	wound_bonus = 0
-	sharpness = SHARP_NONE
-	dmg_dropoff_per_tile = 4 * 0.5 / 10
-	stam_dropoff_per_tile = 32 * 0.5 / 10
 
 /obj/item/projectile/bullet/c38/improv
 	damage = 12
@@ -165,15 +147,6 @@ Uranium, Contaminated
 	damage = 18
 	dmg_dropoff_per_tile = 0
 	var/extra_speed = 500
-
-/obj/item/projectile/bullet/c9mm/rubber
-	name = "9mm rubber bullet"
-	damage = 6
-	stamina = 25
-	wound_bonus = 0
-	sharpness = SHARP_NONE
-	dmg_dropoff_per_tile = 6 * 0.5 / 10
-	stam_dropoff_per_tile = 25 * 0.5 / 10
 
 /obj/item/projectile/bullet/c9mm/acid
 	name = "9mm acid-tipped bullet"
@@ -246,15 +219,6 @@ Uranium, Contaminated
 	wound_bonus = 24
 	dmg_dropoff_per_tile = 0
 
-/obj/item/projectile/bullet/c10mm/rubber
-	name = "10mm rubber bullet"
-	damage = 8
-	stamina = 26
-	wound_bonus = 0
-	sharpness = SHARP_NONE
-	dmg_dropoff_per_tile = 8 * 0.25 / 10
-	stam_dropoff_per_tile = 26 * 0.25 / 10
-
 /obj/item/projectile/bullet/c10mm/incendiary
 	name = "10mm incendiary bullet"
 	damage = 5
@@ -301,15 +265,6 @@ Uranium, Contaminated
 	damage = 28
 	var/extra_speed = 500
 	dmg_dropoff_per_tile = 0
-
-/obj/item/projectile/bullet/c45/rubber
-	name = ".45 rubber bullet"
-	damage = 6
-	stamina = 24
-	sharpness = SHARP_NONE
-	wound_bonus = 0
-	dmg_dropoff_per_tile = 6 * 0.25 / 10
-	stam_dropoff_per_tile = 24 * 0.25 / 10
 
 /obj/item/projectile/bullet/c45/incendiary
 	name = ".45 incendiary bullet"
