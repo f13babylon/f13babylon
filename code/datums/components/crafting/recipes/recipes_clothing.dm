@@ -68,7 +68,7 @@
 	reqs = list(/obj/item/storage/belt/holster = 1,
 				/obj/item/stack/sheet/cloth = 3,
 				/obj/item/toy/crayon/spraycan)
-	time = 30
+	time = 15
 	category = CAT_CLOTHING
 	subcategory = CAT_BELTS
 	always_available = FALSE
@@ -78,7 +78,7 @@
 	result = /obj/item/clothing/neck/mantle/legion/rangercent
 	reqs = list(/obj/item/clothing/neck/mantle/ranger = 1,
 				/obj/item/toy/crayon/spraycan)
-	time = 30
+	time = 15
 	category = CAT_CLOTHING
 	subcategory = CAT_BELTS
 	always_available = FALSE
