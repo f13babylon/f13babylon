@@ -318,7 +318,7 @@
 						anchored = 1
 					if("America")
 						name = "America flag"
-							desc = "A flag reminding us of the Old World. It fills you with an odd sense of pride as you stand at attention to it."
+						desc = "A flag reminding us of the Old World. It fills you with an odd sense of pride as you stand at attention to it."
 						icon_state = "enclaveflag_america"
 						item_state = "enclaveflag_america"
 						faction = FACTION_ENCLAVE
