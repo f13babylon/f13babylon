@@ -3531,6 +3531,8 @@
 	layer = 6
 	},
 /obj/effect/spawner/lootdrop/plush,
+/obj/item/gun/ballistic/automatic/smg/thompson,
+/obj/item/ammo_box/magazine/mthompson/drum,
 /turf/open/floor/plating/f13/inside/gravel,
 /area/f13/wasteland/rocksprings)
 "dtm" = (
@@ -7162,7 +7164,6 @@
 /area/f13/wasteland/rocksprings)
 "gYk" = (
 /obj/item/book/granter/crafting_recipe/blueprint/infiltrator,
-/obj/item/toy/figure/ninja,
 /obj/item/trash/coal{
 	pixel_x = 12;
 	pixel_y = -9
@@ -7170,6 +7171,8 @@
 /obj/item/trash/coal{
 	pixel_x = 12
 	},
+/obj/item/gun/ballistic/automatic/assault_rifle/infiltrator,
+/obj/item/toy/figure/ninja,
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/wasteland/rocksprings)
 "gYS" = (

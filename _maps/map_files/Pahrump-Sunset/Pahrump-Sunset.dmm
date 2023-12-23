@@ -22451,8 +22451,6 @@
 	},
 /area/f13/building/massfusion)
 "cfv" = (
-/obj/item/book/granter/crafting_recipe/blueprint/citykiller,
-/obj/item/toy/figure/ninja,
 /obj/item/trash/coal{
 	pixel_x = -11;
 	pixel_y = -13;
@@ -22467,6 +22465,12 @@
 	pixel_x = -11;
 	pixel_y = -13;
 	layer = 6
+	},
+/obj/item/book/granter/crafting_recipe/blueprint/riotshotgun,
+/obj/item/gun/ballistic/automatic/shotgun/riot,
+/obj/item/toy/figure/ninja{
+	pixel_y = 9;
+	pixel_x = -3
 	},
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 6;
@@ -69476,6 +69480,7 @@
 	pixel_y = -13;
 	layer = 6
 	},
+/obj/effect/spawner/bundle/f13/tribeam,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood)
 "xGX" = (

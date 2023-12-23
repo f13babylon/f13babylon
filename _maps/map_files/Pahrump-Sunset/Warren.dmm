@@ -4362,8 +4362,11 @@
 	pixel_y = -13;
 	layer = 6
 	},
-/obj/item/trash/coal,
-/obj/item/toy/figure/hop,
+/obj/item/gun/ballistic/automatic/smg/mp5,
+/obj/item/toy/figure/hop{
+	pixel_x = 1;
+	pixel_y = 10
+	},
 /turf/open/indestructible/ground/outside/graveldirt{
 	dir = 4
 	},
@@ -12376,7 +12379,10 @@
 /area/f13/wasteland/warren)
 "lHs" = (
 /obj/item/book/granter/crafting_recipe/blueprint/r84,
-/obj/item/toy/figure/qm,
+/obj/item/gun/ballistic/automatic/r84,
+/obj/item/toy/figure/qm{
+	pixel_y = 11
+	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain2"
 	},

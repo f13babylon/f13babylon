@@ -2290,7 +2290,8 @@
 /turf/open/floor/plasteel/hydrofloor,
 /area/f13/enclave/mess)
 "qx" = (
-/obj/item/book/granter/crafting_recipe/blueprint/plasmarifle,
+/obj/item/book/granter/crafting_recipe/blueprint/sniper,
+/obj/item/gun/ballistic/automatic/marksman/sniper/america,
 /obj/item/toy/figure/syndie{
 	pixel_y = 6
 	},
@@ -6691,6 +6692,10 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/wood_fancy,
 /area/f13/building)
+"Xu" = (
+/obj/item/toy/figure/ninja,
+/turf/open/floor/f13,
+/area/f13/enclave/hallways)
 "XB" = (
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/enclave/briefing)
@@ -22906,7 +22911,7 @@ JF
 JF
 jt
 KU
-JF
+Xu
 JF
 AW
 hz
