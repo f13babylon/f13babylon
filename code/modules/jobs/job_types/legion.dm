@@ -285,7 +285,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	id = /obj/item/card/id/dogtag/legcenturion
 	mask = /obj/item/clothing/mask/bandana/legion/legcenturion
 	ears = /obj/item/radio/headset/headset_legion/cent
-	neck = /obj/item/clothing/neck/mantle/legion
 	gloves = /obj/item/clothing/gloves/legion/plated
 	glasses = /obj/item/clothing/glasses/night/polarizing
 	shoes = /obj/item/clothing/shoes/f13/military/plated
@@ -305,6 +304,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Paladin-Slayer Centurion"
 	suit = /obj/item/clothing/suit/armor/f13/legion/palacent
 	head = /obj/item/clothing/head/helmet/f13/legion/palacent
+	neck = /obj/item/clothing/neck/mantle/legion
 	suit_store = /obj/item/gun/ballistic/automatic/m1919
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/mm762 = 1,
@@ -315,6 +315,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Ranger-Hunter Centurion"
 	suit = /obj/item/clothing/suit/armor/f13/legion/rangercent
 	head = /obj/item/clothing/head/helmet/f13/legion/rangercent
+	neck = /obj/item/clothing/neck/mantle/legion/rangercent
 	suit_store = /obj/item/gun/ballistic/rifle/mag/antimateriel
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/amr = 2,
@@ -326,6 +327,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Warlord Centurion"
 	suit = /obj/item/clothing/suit/armor/f13/legion/centurion
 	head = /obj/item/clothing/head/helmet/f13/legion/centurion
+	neck = /obj/item/clothing/neck/mantle/legion
 	suit_store = /obj/item/gun/ballistic/automatic/smg/uzi
 	backpack_contents = list(
 		/obj/item/melee/f13powerfist/goliath = 1,
@@ -337,6 +339,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Praetorian Candidate"
 	suit = /obj/item/clothing/suit/armor/f13/legion/centurion
 	head = /obj/item/clothing/head/helmet/f13/legion/centurion
+	neck = /obj/item/clothing/neck/mantle/legion
 	backpack_contents = list(
 		/obj/item/melee/unarmed/brass/lovetap = 1,
 		/obj/item/book/granter/martial/berserker = 1,
