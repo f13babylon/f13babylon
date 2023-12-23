@@ -52,7 +52,7 @@
 //PELLET SHELLS
 /obj/item/projectile/bullet/pellet
 	var/tile_dropoff = 0.45
-	var/tile_dropoff_s = 1.25
+	var/tile_dropoff_s = 2.5
 
 /obj/item/projectile/bullet/pellet/shotgun_buckshot
 	name = "buckshot pellet"
