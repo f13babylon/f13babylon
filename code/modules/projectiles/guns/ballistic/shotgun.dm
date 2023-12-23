@@ -111,8 +111,6 @@
 	sawn_desc = "Short and concealable, terribly uncomfortable to fire, but worse on the other end."
 	fire_sound = 'sound/f13weapons/caravan_shotgun.ogg'
 	recoil = 1.55
-	extra_damage = 3
-	extra_penetration = 0.05
 
 /obj/item/gun/ballistic/revolver/caravan_shotgun/attackby(obj/item/A, mob/user, params)
 	..()
@@ -151,8 +149,6 @@
 	sawn_desc = "Someone took the time to chop the last few inches off the barrel and stock of this shotgun. Now, the wide spread of this hand-cannon's short-barreled shots makes it perfect for short-range crowd control."
 	fire_sound = 'sound/f13weapons/max_sawn_off.ogg'
 	recoil = 0.55
-	extra_damage = 2
-	extra_penetration = 0.15
 
 /obj/item/gun/ballistic/revolver/widowmaker/attackby(obj/item/A, mob/user, params)
 	..()
@@ -188,6 +184,7 @@
 	force = 10
 	slowdown = 0.1
 	extra_damage = 4
+	extra_penetration = 0.05
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 
 /obj/item/gun/ballistic/revolver/singleshotgun/axe
@@ -209,7 +206,7 @@
 	item_state = "shotgunpump"
 	icon_prefix = "shotgunpump"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/lethal
-	fire_delay = 1
+	fire_delay = 3
 
 /obj/item/gun/ballistic/shotgun/hunting/update_icon_state()
 	if(sawn_off)
@@ -231,7 +228,7 @@
 	sawn_desc = "Portable but with a poor recoil managment."
 	w_class = WEIGHT_CLASS_NORMAL
 	recoil = 0.5
-	fire_delay = 1
+	fire_delay = 3
 	var/stock = FALSE
 	can_flashlight = TRUE
 	gunlight_state = "flightangle"
@@ -313,7 +310,7 @@
 /obj/item/gun/ballistic/shotgun/automatic/combat/auto5
 	name = "Browning Auto-5"
 	desc = "A semi automatic shotgun with a four round tube."
-	fire_delay = 2.7
+	fire_delay = 5
 	recoil = 2
 	icon_state = "auto5"
 	item_state = "shotgunauto5"
@@ -329,10 +326,11 @@
 	item_state = "shotgunlever"
 	icon_prefix = "shotgunlever"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/trench
-	fire_delay = 3
+	fire_delay = 6
 	slowdown = 0.25
 	recoil = 2.1
 	w_class = WEIGHT_CLASS_NORMAL
+	weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_BACK
 	fire_sound = 'sound/f13weapons/shotgun.ogg'
 	can_bayonet = TRUE
@@ -347,7 +345,7 @@
 	desc = "An advanced shotgun with two separate magazine tubes, allowing you to quickly toggle between ammo types."
 	icon_state = "neostead"
 	item_state = "shotguncity"
-	fire_delay = 2 //why was this worse than the leveraction?
+	fire_delay = 5 //why was this worse than the leveraction?
 	recoil = 1.3
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube
 	force = 10
@@ -409,7 +407,7 @@
 	icon_state = "citykiller"
 	item_state = "shotguncity"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/com/citykiller
-	fire_delay = 4
+	fire_delay = 5
 	autofire_shot_delay = 4.15
 	automatic = 1
 	fire_sound = 'sound/f13weapons/riot_shotgun.ogg'
@@ -426,7 +424,7 @@
 	item_state = "shotgunriot"
 	w_class = WEIGHT_CLASS_BULKY
 	mag_type = /obj/item/ammo_box/magazine/d12g
-	fire_delay = 3
+	fire_delay = 4
 	burst_size = 1
 	recoil = 1.1
 	automatic_burst_overlay = FALSE
@@ -438,7 +436,7 @@
 	name = "Left Hand"
 	desc = "A compact riot shotgun with a large ammo drum and semi-automatic fire, designed to fight in close quarters. \
 	This one has engravings, dedicated to a 'Captain' of some sort. Odd."
-	fire_delay = 2
+	fire_delay = 3
 	recoil = 1
 
 /obj/item/gun/ballistic/automatic/shotgun/pancor
@@ -450,7 +448,7 @@
 	mag_type = /obj/item/ammo_box/magazine/d12g
 	is_automatic = TRUE
 	autofire_shot_delay = 3.55
-	fire_delay = 2.85
+	fire_delay = 4
 	recoil = 1.35
 	automatic = 1
 	w_class = WEIGHT_CLASS_BULKY

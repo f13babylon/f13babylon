@@ -9,6 +9,10 @@
 	item_flags = DROPDEL
 	sharpness = SHARP_EDGED
 
+/obj/item/shrapnel/nail
+	name = "nail"
+	embedding = list(embed_chance=50, ignore_throwspeed_threshold=TRUE, fall_chance=4, embed_chance_turf_mod=-100)
+
 /obj/item/shrapnel/stingball // stingbang grenades
 	name = "stingball"
 	icon_state = "tiny"
@@ -31,7 +35,7 @@
 	name = "flying shrapnel shard"
 	damage = 14
 	range = 20
-	armour_penetration = -1
+	armour_penetration = 0.3
 	dismemberment = 5
 	ricochets_max = 2
 	ricochet_chance = 70
@@ -48,6 +52,18 @@
 	ricochet_chance = 130
 	ricochet_incidence_leeway = 0
 	ricochet_decay_chance = 0.9
+
+/obj/item/projectile/bullet/shrapnel/nail
+	name = "flying nail"
+	damage = 10
+	range = 15
+	armour_penetration = 0.1
+	dismemberment = 0
+	ricochets_max = 1
+	ricochet_chance = 50
+	ricochet_incidence_leeway = 20
+	wound_bonus = 75
+	embedding = list(embed_chance=50, fall_chance=20, ignore_throwspeed_threshold=TRUE, rip_time=15, embed_chance_turf_mod=-100, projectile_payload = /obj/item/shrapnel/nail)
 
 /obj/item/projectile/bullet/pellet/stingball
 	name = "stingball pellet"

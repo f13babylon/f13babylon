@@ -1621,7 +1621,7 @@
 /obj/item/gun/ballistic/automatic/marksman/sniper/gold,
 /obj/item/gun/ballistic/automatic/rangemaster/scoped/high,
 /obj/item/gun/ballistic/revolver/colt357/lucky,
-/obj/item/gun/ballistic/automatic/varmint/ratslayer,
+/obj/item/gun/ballistic/rifle/mag/varmint/ratslayer,
 /turf/open/floor/holofloor/plating,
 /area/holodeck/den/programs/armory)
 "kR" = (
@@ -1954,7 +1954,7 @@
 /obj/item/gun/ballistic/rifle/hunting/paciencia,
 /obj/item/gun/ballistic/rifle/hunting/remington,
 /obj/item/gun/ballistic/rifle/mag/antimateriel,
-/obj/item/gun/ballistic/automatic/varmint,
+/obj/item/gun/ballistic/rifle/mag/varmint,
 /obj/item/gun/ballistic/rifle/mosin,
 /obj/item/gun/ballistic/rifle/repeater/brush,
 /obj/item/gun/ballistic/rifle/repeater/cowboy,
@@ -2255,16 +2255,13 @@
 	dir = 4
 	},
 /obj/structure/rack,
-/obj/item/gun/ballistic/automatic/smg/american180,
-/obj/item/gun/ballistic/automatic/smg/cg45,
+/obj/item/gun/ballistic/automatic/smg/smg22,
 /obj/item/gun/ballistic/automatic/smg/greasegun,
-/obj/item/gun/ballistic/automatic/smg/mini_uzi,
+/obj/item/gun/ballistic/automatic/smg/uzi,
 /obj/item/gun/ballistic/automatic/smg/mp5,
 /obj/item/gun/ballistic/automatic/smg/p90,
-/obj/item/gun/ballistic/automatic/smg/ppsh,
-/obj/item/gun/ballistic/automatic/smg/greasegun,
 /obj/item/gun/ballistic/automatic/smg/smg10mm,
-/obj/item/gun/ballistic/automatic/smg/tommygun,
+/obj/item/gun/ballistic/automatic/smg/thompson,
 /turf/open/floor/holofloor/plating,
 /area/holodeck/den/programs/armory)
 "on" = (

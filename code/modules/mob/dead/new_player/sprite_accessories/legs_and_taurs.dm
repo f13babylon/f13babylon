@@ -57,6 +57,14 @@
 	color_src = MUTCOLORS
 	extra = TRUE
 
+/datum/sprite_accessory/taur/pede
+	name = "Centipede"
+	icon_state = "pede"
+	taur_mode = STYLE_PAW_TAURIC
+	color_src = MUTCOLORS
+	extra = TRUE
+	extra2 = TRUE
+
 /datum/sprite_accessory/taur/cow
 	name = "Cow"
 	icon_state = "cow"
@@ -131,14 +139,6 @@
 	icon_state = "otie"
 	taur_mode = STYLE_PAW_TAURIC
 	matrixed_sections = MATRIX_ALL
-
-/datum/sprite_accessory/taur/pede
-	name = "Scolipede"
-	icon_state = "pede"
-	taur_mode = STYLE_PAW_TAURIC
-	color_src = MUTCOLORS
-	extra = TRUE
-	extra2 = TRUE
 
 /datum/sprite_accessory/taur/tentacle
 	name = "Tentacle"

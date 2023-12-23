@@ -116,7 +116,6 @@
 	autofire_shot_delay = 1
 	burst_shot_delay = 1
 	fire_delay = 2
-	ranged_attack_speed = CLICK_CD_RAPID
 	spread = 18
 	weapon_weight = WEAPON_HEAVY
 	fire_sound = 'sound/f13weapons/boltfire.ogg'
@@ -295,7 +294,7 @@
 	automatic = 1
 	autofire_shot_delay = 1.8
 	spread = 15
-	fire_delay = 1.8
+	fire_delay = 2
 	weapon_weight = WEAPON_HEAVY
 	fire_sound = 'sound/f13weapons/WattzRifleFire.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/gatling/betterhitscan)

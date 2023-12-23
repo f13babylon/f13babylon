@@ -11,5 +11,5 @@
 	gloves = /obj/item/clothing/gloves/fingerless
 	backpack_contents = list(
 			/obj/item/gun/ballistic/automatic/smg/greasegun=1,
-			/obj/item/ammo_box/magazine/greasegun/stick=2
+			/obj/item/ammo_box/magazine/mgreasegun=2
 		)

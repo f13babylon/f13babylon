@@ -1342,8 +1342,8 @@ Records disabled until a use for them is found
 				quirk_conflict = TRUE
 			if(has_quirk)
 				if(quirk_conflict)
-					to_chat(user, "<span class='danger'>Your quirks have conflicts and will <b>NOT</b> function! Correct them before closing the menu.</span>")	
-					isconflicting = TRUE	
+					to_chat(user, "<span class='danger'>Your quirks have conflicts and will <b>NOT</b> function! Correct them before closing the menu.</span>")
+					isconflicting = TRUE
 				else
 					quirk_cost *= -1 //invert it back, since we'd be regaining this amount
 			if(quirk_cost > 0)
@@ -2435,7 +2435,7 @@ Records disabled until a use for them is found
 					// remove the specified marking
 					var/index = text2num(href_list["marking_index"])
 					var/marking_type = href_list["marking_type"]
-					if(index > 0 && marking_type && index < length(features[marking_type]))
+					if(index > 0 && marking_type && index <= length(features[marking_type]))
 						// because linters are just absolutely awful:
 						var/list/L = features[marking_type]
 						L.Cut(index, index + 1)

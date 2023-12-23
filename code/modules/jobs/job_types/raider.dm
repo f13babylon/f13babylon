@@ -132,7 +132,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	suit = /obj/item/clothing/suit/armor/f13/raider/supafly
 	head = /obj/item/clothing/head/helmet/f13/raider/supafly
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/varmint = 1,
+		/obj/item/gun/ballistic/rifle/mag/varmint = 1,
 		/obj/item/ammo_box/magazine/m556/rifle/assault = 1,
 		/obj/item/gun/ballistic/revolver/hobo/knucklegun = 1,
 		/obj/item/ammo_box/c45rev = 2,
@@ -318,7 +318,7 @@ Reason this is commented out: Not needed, may re-use loadouts later
 	id = /obj/item/card/id/rusted/fadedvaultid
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/smg/smg10mm = 1,
-		/obj/item/ammo_box/magazine/m10mm_adv/ext = 3,
+		/obj/item/ammo_box/magazine/msmg10mm = 3,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak/imitation = 2,
 		)
 
@@ -369,7 +369,7 @@ Reason this is commented out: Not needed, may re-use loadouts later
 		/obj/item/melee/onehanded/machete/gladius = 1,
 		/obj/item/storage/backpack/spearquiver = 1,
 		/obj/item/gun/ballistic/automatic/smg/greasegun = 1,
-		/obj/item/ammo_box/magazine/greasegun = 1,
+		/obj/item/ammo_box/magazine/mgreasegun = 1,
 		/obj/item/book/granter/trait/trekking = 1
 		)
 */

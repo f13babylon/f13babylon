@@ -6,7 +6,8 @@
 	icon_state = "null"
 	density = 1
 	anchored = 1
-	layer = 5
+	layer = FLY_LAYER
+	plane = MOB_PLANE
 	icon = 'icons/obj/Ritas.dmi'
 	bound_width = 64
 	resistance_flags = INDESTRUCTIBLE

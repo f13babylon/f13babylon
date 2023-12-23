@@ -87,8 +87,8 @@
 	dat += "Silver Bars: 5 caps<br>"
 	dat += "Gold Bars: 10 caps<br>"
 	dat += "Cut Diamonds : 20 caps<br>"
-	dat += "Jet/Psycho/MedX : 10/20/100 caps<br>"
-	dat += "Healing Powder/Healing Paultice : 30/50 caps<br>"
+	dat += "Jet/Psycho/MedX : 10/20/75 caps<br>"
+	dat += "Healing Powder/Healing Poultice : 30/50 caps<br>"
 	dat += "Sealed Bottle of Alcohol: 25-100 caps<br>"
 	dat += ""
 	dat += "</div>"
@@ -328,7 +328,7 @@ Fence
 						/obj/item/gun/ballistic/revolver/widowmaker = 10,
 						/obj/item/gun/ballistic/revolver/winchesterrebored = 10,
 						/obj/item/gun/ballistic/automatic/autopipe = 15,
-						/obj/item/gun/ballistic/rifle/hobo/lasmusket = 15,
+						/obj/item/gun/energy/lasmusket = 15,
 						/obj/item/stack/crafting/armor_plate = 20,
 						)
 

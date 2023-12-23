@@ -98,7 +98,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
@@ -296,6 +295,9 @@
 	icon_state = "darkdirty"
 	},
 /area/f13/ncr)
+"ew" = (
+/turf/closed/mineral/random/low_chance,
+/area/f13/wasteland/warren)
 "eA" = (
 /obj/structure/railing/corner{
 	dir = 4
@@ -500,12 +502,6 @@
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
-"hn" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/wood/wood_common,
 /area/f13/city)
 "hu" = (
 /obj/structure/curtain,
@@ -1358,7 +1354,7 @@
 "rr" = (
 /obj/machinery/workbench,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/unique,
+/obj/item/gun/ballistic/shotgun/police,
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
 	},
@@ -1598,8 +1594,6 @@
 "vx" = (
 /obj/structure/closet/secure_closet/personal,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/trash,
-/obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13{
 	icon_state = "bluechess2"
 	},
@@ -1801,12 +1795,6 @@
 	icon_state = "white"
 	},
 /area/f13/city)
-"wX" = (
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
-	},
-/area/f13/city)
 "xa" = (
 /obj/structure/sign/plaques/ncr_lt{
 	pixel_y = 32
@@ -1865,14 +1853,6 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
-/area/f13/city)
-"xu" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/f13{
-	icon_state = "bluechess2"
-	},
 /area/f13/city)
 "xC" = (
 /obj/structure/simple_door/glass,
@@ -2269,7 +2249,6 @@
 /area/f13/ncr)
 "CR" = (
 /obj/structure/closet/cabinet,
-/obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/wood/wood_fancy,
 /area/f13/ncr)
 "CZ" = (
@@ -3052,7 +3031,6 @@
 /obj/structure/table,
 /obj/machinery/light,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -3110,7 +3088,6 @@
 /area/f13/city)
 "Og" = (
 /obj/structure/closet/secure_closet/personal,
-/obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13{
 	icon_state = "bluechess2"
 	},
@@ -3707,7 +3684,6 @@
 /obj/structure/closet/locker/fridge,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
-/obj/effect/spawner/lootdrop/food,
 /turf/open/floor/f13{
 	icon_state = "cafeteria"
 	},
@@ -8629,7 +8605,7 @@ HW
 ga
 wo
 bA
-hn
+bA
 mx
 nD
 ga
@@ -9918,7 +9894,7 @@ UE
 OF
 ga
 vx
-xu
+qZ
 nX
 wd
 jt
@@ -11456,7 +11432,7 @@ vM
 ga
 oi
 Jv
-wX
+Jv
 Jv
 ob
 Zt
@@ -26839,7 +26815,7 @@ ru
 ru
 ru
 Hd
-HW
+ew
 HW
 HW
 HW
@@ -27096,11 +27072,11 @@ ru
 ru
 ru
 Hd
-HW
-HW
-HW
-HW
-HW
+ew
+ew
+ew
+ew
+ew
 HW
 HW
 HW
@@ -27353,11 +27329,11 @@ ru
 ru
 ru
 Hd
-HW
-HW
-HW
-HW
-HW
+ew
+ew
+ew
+ew
+ew
 HW
 HW
 HW
@@ -27610,11 +27586,11 @@ ru
 ru
 ru
 Hd
-HW
-HW
-HW
-HW
-HW
+ew
+ew
+Hd
+Hd
+ew
 HW
 HW
 HW
@@ -27867,11 +27843,11 @@ ru
 ru
 ru
 Hd
-HW
-HW
-HW
-HW
-HW
+ew
+ew
+Hd
+Hd
+ew
 HW
 HW
 HW
@@ -28124,11 +28100,11 @@ ru
 ru
 ru
 Hd
-HW
-HW
-HW
-HW
-HW
+ew
+ew
+Hd
+ew
+ew
 HW
 HW
 HW
@@ -28381,11 +28357,11 @@ ru
 ru
 ru
 Hd
-HW
-HW
-HW
-HW
-HW
+ew
+ew
+Hd
+ew
+ew
 HW
 HW
 HW
@@ -28638,10 +28614,10 @@ ru
 ru
 ru
 Hd
-HW
-HW
-HW
-HW
+ew
+ew
+Hd
+Hd
 HW
 HW
 HW
@@ -28895,10 +28871,10 @@ ru
 ru
 ru
 Hd
-HW
-HW
-HW
-HW
+ew
+ew
+ew
+ew
 HW
 HW
 HW
@@ -29152,9 +29128,9 @@ ru
 ru
 ru
 Hd
-HW
-HW
-HW
+ew
+ew
+ew
 HW
 HW
 HW
@@ -29409,8 +29385,8 @@ ru
 ru
 ru
 Hd
-HW
-HW
+ew
+ew
 HW
 HW
 HW
@@ -29666,7 +29642,7 @@ ru
 ru
 ru
 Hd
-HW
+ew
 HW
 HW
 HW

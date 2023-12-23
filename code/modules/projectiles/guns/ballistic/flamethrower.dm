@@ -105,7 +105,7 @@
 	burst_size = 2
 	burst_shot_delay = 1
 	//automatic = 0
-	fire_delay = 2
+	fire_delay = 6
 	weapon_weight = WEAPON_HEAVY
 	fire_sound = 'sound/weapons/flamethrower.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/m2flamethrower

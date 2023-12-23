@@ -205,9 +205,8 @@ GLOBAL_LIST_INIT(concrete_recipes, list ( \
 	desc = "A small concrete barricade. Could be turned into a concrete wall with some more concrete."
 	icon = 'icons/obj/fallout/concretebarricade.dmi'
 	icon_state = "concrete_barricade"
-	obj_integrity = 450
-	max_integrity = 450 //170 integ stronger than sandbags.
-	proj_pass_rate = 30
+	max_integrity = 450
+	proj_pass_rate = 20
 	pass_flags_self = LETPASSTHROW
 	climbable = TRUE
 	smooth = SMOOTH_TRUE

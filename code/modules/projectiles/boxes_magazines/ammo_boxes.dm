@@ -26,12 +26,6 @@
 	ammo_type = /obj/item/ammo_casing/shotgun/buckshot
 	icon_state = "gbox"
 
-/obj/item/ammo_box/shotgun/magnum
-	name = "Magnum buckshot shotgun ammo box"
-	desc = "A box full of shotgun shells."
-	ammo_type = /obj/item/ammo_casing/shotgun/magnumshot
-	icon_state = "mbox"
-
 /obj/item/ammo_box/shotgun/bean
 	name = "Beanbag shotgun ammo box"
 	desc = "A box full of shotgun shells."
@@ -56,18 +50,6 @@
 	desc = "A box full of incendiary shotgun shells."
 	ammo_type = /obj/item/ammo_casing/shotgun/incendiary
 	icon_state = "mbox"
-
-/obj/item/ammo_box/shotgun/trainshot
-	name = "trainshot shotshell ammo box"
-	desc = "A box full of trainshot shells. For hunting trains, you suppose."
-	ammo_type = /obj/item/ammo_casing/shotgun/trainshot
-	icon_state = "trainshotbox"
-
-/obj/item/ammo_box/shotgun/flechette
-	name = "flechette shotshell ammo box"
-	desc = "A box full of flechette shells. Point at wall."
-	ammo_type = /obj/item/ammo_casing/shotgun/flechette
-	icon_state = "trainshotbox"
 
 //.22 LR
 /obj/item/ammo_box/m22
@@ -506,22 +488,13 @@
 	name = "ammo box (4.73mm high-velocity)"
 	ammo_type = /obj/item/ammo_casing/caseless/a473/hv
 
-/obj/item/ammo_box/lasmusket
-	name = "Battery box (Laser musket)"
-	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "lasmusketbox"
-	multiple_sprites = 2
-	ammo_type = /obj/item/ammo_casing/caseless/lasermusket
-	max_ammo = 18
-	w_class = WEIGHT_CLASS_NORMAL
-
 /obj/item/ammo_box/plasmamusket
 	name = "Canister box (Plasma musket)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "plasmusketbox"
 	multiple_sprites = 2
-	ammo_type = /obj/item/ammo_casing/caseless/plasmacaster
-	max_ammo = 6
+	ammo_type = /obj/item/ammo_casing/caseless/plasma_musket
+	max_ammo = 12
 	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/ammo_box/a40mmHE
@@ -768,14 +741,6 @@
 
 /obj/item/ammo_box/clip/shotgun/loaded
 	start_empty = FALSE
-
-/obj/item/ammo_box/clip/shotgun/loaded/flechette
-	name = "stripper clip (flechette)"
-	ammo_type = /obj/item/ammo_casing/shotgun/flechette
-
-/obj/item/ammo_box/clip/shotgun/loaded/magnum
-	name = "stripper clip (magnum)"
-	ammo_type = /obj/item/ammo_casing/shotgun/magnumshot
 
 /obj/item/ammo_box/clip/shotgun/loaded/rubbershot
 	name = "stripper clip (rubbershot)"

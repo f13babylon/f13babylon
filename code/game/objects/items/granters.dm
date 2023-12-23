@@ -715,20 +715,25 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/lightplasmapistol)
 
-/obj/item/book/granter/crafting_recipe/blueprint/uzi
-	name = "mini uzi blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/uzi)
-
 /obj/item/book/granter/crafting_recipe/blueprint/smg10mm
 	name = "10mm smg blueprint"
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/smg10mm)
 
-/obj/item/book/granter/crafting_recipe/blueprint/greasegun
-	name = "m3a1 grease gun blueprint"
+/obj/item/book/granter/crafting_recipe/blueprint/uzi
+	name = "uzi blueprint"
 	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/grease_gun)
+	crafting_recipe_types = list(/datum/crafting_recipe/uzi)
+
+/obj/item/book/granter/crafting_recipe/blueprint/mp5
+	name = "mp5 blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/mp5)
+
+/obj/item/book/granter/crafting_recipe/blueprint/thompson
+	name = "thompson blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/thompson)
 
 /obj/item/book/granter/crafting_recipe/blueprint/brushgun
 	name = "brush gun blueprint"
@@ -800,20 +805,10 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/infiltrator)
 
-/obj/item/book/granter/crafting_recipe/blueprint/lsw
-	name = "lsw blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/gun/lsw)
-
 /obj/item/book/granter/crafting_recipe/blueprint/m1carbine
 	name = "m1 carbine blueprint"
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/m1carbine)
-
-/obj/item/book/granter/crafting_recipe/blueprint/pps
-	name = "ppsh-41 blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/pps)
 
 /obj/item/book/granter/crafting_recipe/blueprint/commando
 	name = "commando carbine blueprint"
@@ -979,8 +974,8 @@
 	granted_trait = TRAIT_EXPLOSIVE_CRAFTING
 	traitname = "explosive crafting"
 	remarks = list("If you want to get started making bombs, you're going to need a lot of igniters and black powder.", "Did a Follower write this book, or something?", "All thermite takes is some aluminum and iron.", "Coconut shells make acceptable grenade casings in a pinch.")
-	crafting_recipe_types = list(/datum/crafting_recipe/frag_shrapnel, /datum/crafting_recipe/stinger, /datum/crafting_recipe/flashbang,
-/datum/crafting_recipe/smokebomb, /datum/crafting_recipe/rocket_base, /datum/crafting_recipe/weakrocket)
+	crafting_recipe_types = list(/datum/crafting_recipe/frag_shrapnel, /datum/crafting_recipe/stinger, /datum/crafting_recipe/flashbang, /datum/crafting_recipe/explosive/dynamite,
+/datum/crafting_recipe/smokebomb, /datum/crafting_recipe/rocket_base, /datum/crafting_recipe/weakrocket, /datum/crafting_recipe/explosive/pipebomb)
 
 /obj/item/book/granter/trait/explosives_advanced
 	name = "Advanced Techniques for Winning at Postal Chess"
@@ -990,7 +985,7 @@
 	traitname = "advanced explosive crafting"
 	remarks = list("Is this actually a legal chess move...?", "If you hook electronic parts up to a flux capacitor-oh, that makes a lot of sense, actually.", "Radium? What would you use radium f-oh no.", "Why would anyone actually publish this?")
 	crafting_recipe_types = list(/datum/crafting_recipe/incendiary, /datum/crafting_recipe/concussion, /datum/crafting_recipe/radgrenade, /datum/crafting_recipe/empgrenade, /datum/crafting_recipe/incendiaryrocket, /datum/crafting_recipe/strongrocket, /datum/crafting_recipe/frag_shrapnel, /datum/crafting_recipe/stinger, /datum/crafting_recipe/flashbang,
-/datum/crafting_recipe/smokebomb, /datum/crafting_recipe/rocket_base, /datum/crafting_recipe/weakrocket)
+/datum/crafting_recipe/smokebomb, /datum/crafting_recipe/rocket_base, /datum/crafting_recipe/weakrocket, /datum/crafting_recipe/explosive/c4, /datum/crafting_recipe/chemical_payload)
 
 /obj/item/book/granter/trait/gunslinger
 	name = "Tycho: Life of a Lawman"

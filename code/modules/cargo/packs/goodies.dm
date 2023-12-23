@@ -22,8 +22,7 @@
 	name = "Laser musket"
 	desc = "Contains one laser musket, homemade, if you are to lazy to make one."
 	cost = 3000
-	contains = list(/obj/item/gun/ballistic/rifle/hobo/lasmusket,
-					/obj/item/ammo_box/lasmusket)
+	contains = list(/obj/item/gun/energy/lasmusket)
 
 /datum/supply_pack/goody/sharpenerf13
 	name = "Weapon Sharpener" //Possibly the most broken item in the entirety of cargo.

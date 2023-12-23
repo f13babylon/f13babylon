@@ -207,11 +207,11 @@
 	var/repair_material = /obj/item/stack/sheet/plastic
 	var/can_shatter = FALSE
 	shield_flags = SHIELD_FLAGS_DEFAULT | SHIELD_TRANSPARENT
-	max_integrity = 2250
+	max_integrity = 600
 
 /datum/block_parry_data/shield/riot
 	block_damage_multiplier = 0.35
-	block_stamina_efficiency = 5
+	block_stamina_efficiency = 2.5
 	block_stamina_cost_per_second = 1
 	block_damage_absorption = 7.5
 
@@ -266,6 +266,7 @@
 	name = "telescopic shield"
 	desc = "An advanced riot shield made of lightweight materials that collapses for easy storage."
 	icon_state = "teleriot0"
+	item_state = "teleriot0"
 	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/shields_righthand.dmi'
 	slot_flags = null
@@ -287,6 +288,7 @@
 /obj/item/shield/riot/tele/attack_self(mob/living/user)
 	active = !active
 	icon_state = "teleriot[active]"
+	item_state = "teleriot[active]"
 	playsound(src.loc, 'sound/weapons/batonextend.ogg', 50, TRUE)
 	if(active)
 		force = 8

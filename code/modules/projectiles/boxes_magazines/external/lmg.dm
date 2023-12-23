@@ -39,13 +39,28 @@
 
 /obj/item/ammo_box/magazine/lmg
 	name = "ammo box (5.56)"
+	desc = "An ammo box meant to be loaded into a light machine gun."
 	icon_state = "r80"
 	ammo_type = /obj/item/ammo_casing/a556
 	caliber = "a556"
 	max_ammo = 60
 	multiple_sprites = 2
+	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/ammo_box/magazine/lmg/empty
+	start_empty = 1
+
+/obj/item/ammo_box/magazine/rpd
+	name = "ammo box (5mm)"
+	desc = "An ammo box meant to be loaded into a chinese light machine gun."
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "mdrum"
+	ammo_type = /obj/item/ammo_casing/a5mm
+	caliber = "a5mm"
+	max_ammo = 50
+	w_class = WEIGHT_CLASS_NORMAL
+
+/obj/item/ammo_box/magazine/rpd/empty
 	start_empty = 1
 
 /obj/item/ammo_box/magazine/cz53
@@ -82,11 +97,13 @@
 	start_empty = 1
 
 /obj/item/ammo_box/magazine/mm762
-	name = "ammo belt (.308)"
+	name = "ammo belt (7.62)"
+	desc = "An ammo belt meant to be loaded into an M1919 pattern machine gun."
 	icon_state = "762belt"
 	ammo_type = /obj/item/ammo_casing/a762/sport
-	max_ammo = 60
+	max_ammo = 80
 	caliber = "a762"
+	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/ammo_box/magazine/mm762/empty
 	start_empty = 1

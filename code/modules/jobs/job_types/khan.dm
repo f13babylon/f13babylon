@@ -31,7 +31,7 @@
 	if(visualsOnly)
 		return
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/set_vrboard/den)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/microuzi)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/uzi)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/varmintrifle)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingshotgun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gate_khanate)
@@ -164,11 +164,11 @@
 	name = "Grunt Enforcer"
 	belt = /obj/item/storage/belt/bandolier
 	l_hand = /obj/item/melee/onehanded/machete/scrapsabre/khan
-	r_hand = /obj/item/gun/ballistic/automatic/smg/greasegun
+	r_hand = /obj/item/gun/ballistic/automatic/smg/smg10mm
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
 	head = /obj/item/clothing/head/helmet/f13/khan/bandana
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/greasegun = 2,
+		/obj/item/ammo_box/magazine/msmg10mm = 2,
 		/obj/item/book/granter/trait/trekking = 1,
 		/obj/item/book/granter/trait/selection = 1)
 
@@ -282,7 +282,7 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/cheaparrow)
 
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg10mm)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/grease_gun)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/greasegun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/auto5)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/trail_carbine)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/remingtonhuntingrifle)
