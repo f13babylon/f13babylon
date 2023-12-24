@@ -1357,6 +1357,40 @@
 /obj/item/stack/sheet/mineral/concrete/ten,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/building)
+"brM" = (
+/obj/structure/table/wood,
+/obj/item/clothing/suit/hooded/wintercoat/christmascoatr,
+/obj/item/clothing/suit/hooded/wintercoat/christmascoatr,
+/obj/item/clothing/under/costume/christmas/croptop,
+/obj/item/clothing/under/costume/christmas/croptop,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/trash/coal{
+	pixel_x = -11;
+	pixel_y = -13;
+	layer = 6
+	},
+/obj/item/toy/figure/chef{
+	pixel_y = 10;
+	pixel_x = 9
+	},
+/obj/effect/spawner/lootdrop/plush,
+/turf/open/indestructible/ground/outside/graveldirt,
+/area/f13/wasteland/rocksprings)
 "brT" = (
 /obj/structure/simple_door/room,
 /obj/effect/decal/cleanable/dirt,
@@ -1948,9 +1982,7 @@
 	},
 /area/f13/building)
 "bSi" = (
-/obj/structure/flora/tree/jungle/small{
-	pixel_x = -19
-	},
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland/rocksprings)
 "bSp" = (
@@ -3588,6 +3620,13 @@
 	dir = 9;
 	icon_state = "dirt"
 	},
+/area/f13/wasteland/rocksprings)
+"dxe" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/structure/flora/tree/pine/xmas,
+/turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/rocksprings)
 "dye" = (
 /obj/structure/fence/wooden,
@@ -5713,6 +5752,7 @@
 	dir = 6
 	},
 /obj/structure/flora/grass/jungle,
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/rocksprings)
 "fDX" = (
@@ -6080,6 +6120,43 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/building)
+"fUj" = (
+/obj/structure/table/wood,
+/obj/item/clothing/suit/snowman,
+/obj/item/clothing/head/snowman,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -13;
+	layer = 6
+	},
+/obj/item/toy/plush/beeplushie,
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -13;
+	layer = 6
+	},
+/turf/open/indestructible/ground/outside/graveldirt,
+/area/f13/wasteland/rocksprings)
 "fUp" = (
 /obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
@@ -8878,6 +8955,19 @@
 	},
 /turf/open/floor/wood/wood_wide,
 /area/f13/building)
+"iRK" = (
+/obj/item/book/granter/crafting_recipe/blueprint/infiltrator,
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -9
+	},
+/obj/item/trash/coal{
+	pixel_x = 12
+	},
+/obj/item/gun/ballistic/automatic/assault_rifle/infiltrator,
+/obj/item/toy/figure/ninja,
+/turf/open/indestructible/ground/outside/graveldirt,
+/area/f13/wasteland/rocksprings)
 "iUa" = (
 /obj/structure/table,
 /obj/machinery/processor/chopping_block,
@@ -9422,6 +9512,34 @@
 	},
 /turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
+"jAh" = (
+/obj/structure/table/wood,
+/obj/item/clothing/suit/snowman,
+/obj/item/clothing/head/snowman,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/obj/item/projectile/snowball,
+/turf/open/indestructible/ground/outside/savannah{
+	icon_state = "savannah6"
+	},
+/area/f13/wasteland/rocksprings)
 "jAv" = (
 /mob/living/simple_animal/hostile/raider{
 	name = "Razor Twins Raider"
@@ -9491,6 +9609,19 @@
 	dir = 9;
 	icon_state = "dirt"
 	},
+/area/f13/wasteland/rocksprings)
+"jDG" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -13;
+	layer = 6
+	},
+/obj/item/toy/figure/ninja,
+/obj/effect/spawner/lootdrop/plush,
+/turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/rocksprings)
 "jDQ" = (
 /obj/structure/wreck/trash/two_tire,
@@ -10020,6 +10151,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/savannah{
 	icon_state = "savannah6"
 	},
@@ -10152,6 +10284,10 @@
 /turf/open/indestructible/ground/outside/dirt/harsh{
 	icon_state = "dirtcorner"
 	},
+/area/f13/wasteland/rocksprings)
+"kol" = (
+/obj/structure/flora/tree/pine/xmas,
+/turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/wasteland/rocksprings)
 "kos" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -11713,6 +11849,23 @@
 	icon_state = "verticalinnermain0"
 	},
 /area/f13/caves)
+"lZa" = (
+/obj/item/book/granter/crafting_recipe/blueprint/thompson,
+/obj/item/trash/coal{
+	pixel_x = -11;
+	pixel_y = -13;
+	layer = 6
+	},
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -13;
+	layer = 6
+	},
+/obj/effect/spawner/lootdrop/plush,
+/obj/item/gun/ballistic/automatic/smg/thompson,
+/obj/item/ammo_box/magazine/mthompson/drum,
+/turf/open/floor/plating/f13/inside/gravel,
+/area/f13/wasteland/rocksprings)
 "lZA" = (
 /obj/structure/destructible/tribal_torch/wall/lit,
 /turf/open/floor/plasteel/f13/stone/rugged,
@@ -13510,6 +13663,10 @@
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/building)
+"nKJ" = (
+/obj/item/toy/figure/chaplain,
+/turf/open/floor/plating/f13/inside/gravel,
+/area/f13/wasteland/rocksprings)
 "nLg" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "housewindowbroken"
@@ -14110,6 +14267,11 @@
 	},
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/legion)
+"omM" = (
+/obj/effect/turf_decal/weather/dirt,
+/obj/structure/flora/tree/pine/xmas,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland/rocksprings)
 "onu" = (
 /obj/structure/table,
 /obj/item/book/granter/trait/techno{
@@ -15395,6 +15557,33 @@
 	icon_state = "outerpavement"
 	},
 /area/f13/wasteland/rocksprings)
+"pxl" = (
+/obj/structure/table/wood,
+/obj/item/clothing/suit/hooded/wintercoat/christmascoatr,
+/obj/item/clothing/suit/hooded/wintercoat/christmascoatr,
+/obj/item/clothing/under/costume/christmas/croptop,
+/obj/item/clothing/under/costume/christmas/croptop,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/under/costume/christmas,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/shoes/winterboots/christmasbootsr,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/head/christmashat,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/item/clothing/neck/scarf/christmas,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland/rocksprings)
 "pxO" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/traitbooks/low,
@@ -16364,6 +16553,10 @@
 	dir = 8
 	},
 /area/f13/wasteland/rocksprings)
+"qvg" = (
+/obj/structure/flora/tree/pine/xmas,
+/turf/open/indestructible/ground/outside/dirt/harsh,
+/area/f13/wasteland/rocksprings)
 "qvK" = (
 /obj/item/storage/toolbox/mechanical,
 /turf/open/indestructible/ground/outside/desert/harsh,
@@ -16399,6 +16592,28 @@
 	icon_state = "common-broken5"
 	},
 /area/f13/building)
+"qwA" = (
+/obj/item/toy/figure/syndie{
+	pixel_y = 6
+	},
+/obj/item/choice_beacon/box/plushie,
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -9;
+	layer = 5
+	},
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -13;
+	layer = 6
+	},
+/obj/item/trash/coal{
+	pixel_x = 12;
+	pixel_y = -13;
+	layer = 6
+	},
+/turf/open/indestructible/ground/outside/graveldirt,
+/area/f13/wasteland/rocksprings)
 "qxT" = (
 /obj/structure/bed/old{
 	pixel_y = 12
@@ -16744,6 +16959,17 @@
 	dir = 10;
 	icon_state = "dirt"
 	},
+/area/f13/wasteland/rocksprings)
+"qNu" = (
+/obj/item/trash/coal{
+	pixel_x = -11;
+	pixel_y = -13;
+	layer = 6
+	},
+/obj/item/toy/figure/curator{
+	pixel_x = 8
+	},
+/turf/open/floor/plating/f13/inside/gravel,
 /area/f13/wasteland/rocksprings)
 "qNI" = (
 /obj/item/kirbyplants/random,
@@ -19861,8 +20087,11 @@
 	},
 /area/f13/building)
 "tMV" = (
-/obj/structure/flora/tree/jungle/small,
-/turf/open/indestructible/ground/outside/water,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/structure/flora/tree/pine/xmas,
+/turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/rocksprings)
 "tNa" = (
 /obj/structure/spacevine{
@@ -21450,6 +21679,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
+/obj/item/toy/figure/miner,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/rocksprings)
 "vrt" = (
@@ -21895,6 +22125,13 @@
 /obj/structure/flora/ausbushes/grassybush{
 	icon_state = "firstbush_1"
 	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland/rocksprings)
+"vMv" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/obj/structure/flora/tree/pine/xmas,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/rocksprings)
 "vMy" = (
@@ -24341,6 +24578,18 @@
 "yeK" = (
 /obj/item/trash/f13/crisps,
 /turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland/rocksprings)
+"yft" = (
+/obj/item/toy/figure/dsquad{
+	pixel_y = 10
+	},
+/obj/item/trash/coal{
+	pixel_x = -11;
+	pixel_y = -13;
+	layer = 4
+	},
+/obj/item/trash/coal,
+/turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/wasteland/rocksprings)
 "yfL" = (
 /obj/structure/table/wood,
@@ -28632,7 +28881,7 @@ nYC
 mTN
 mTN
 mTN
-tMV
+bSi
 mTN
 nYC
 mTN
@@ -29139,10 +29388,10 @@ dFm
 paT
 xLw
 mTN
-tMV
+bSi
 mTN
 paT
-hNn
+qvg
 paT
 mTN
 mTN
@@ -30171,7 +30420,7 @@ hXy
 paT
 xLw
 mTN
-tMV
+bSi
 mTN
 mTN
 paT
@@ -30680,8 +30929,8 @@ jIp
 jIp
 hqh
 xAx
-anP
-hXy
+fUj
+qwA
 xMi
 paT
 igl
@@ -30937,8 +31186,8 @@ hgP
 hgP
 jIp
 xAx
-hXy
-hXy
+kol
+iRK
 anP
 hXy
 xhD
@@ -31194,8 +31443,8 @@ hgP
 hgP
 jIp
 dTT
-anP
-hXy
+brM
+yft
 hXy
 hXy
 xhD
@@ -32485,7 +32734,7 @@ paT
 xLw
 mTN
 mTN
-tMV
+bSi
 hXy
 hXy
 jLa
@@ -33668,8 +33917,8 @@ nBU
 cQh
 mzy
 cDb
-cvw
-gXH
+jAh
+jDG
 vqK
 wgU
 tDB
@@ -33927,7 +34176,7 @@ mzy
 mzy
 cvw
 fDy
-wgU
+lZa
 wgU
 tDB
 tiX
@@ -34182,9 +34431,9 @@ cyc
 bOq
 mzy
 mMf
-jgq
-wgU
-wgU
+pxl
+qNu
+nKJ
 wgU
 tDB
 net
@@ -34453,7 +34702,7 @@ lBX
 dza
 lSB
 hZH
-okP
+tMV
 wgU
 wgU
 ezB
@@ -36510,11 +36759,11 @@ bHk
 mTN
 pTi
 ezB
-ber
+omM
 wgU
 wgU
 wgU
-tvg
+vMv
 eaf
 lVr
 mzy
@@ -36596,7 +36845,7 @@ pPg
 paT
 dFm
 xLw
-tMV
+bSi
 dFm
 qWV
 hgP
@@ -39080,11 +39329,11 @@ tIc
 tIc
 sMt
 sMt
-jgq
+dxe
 wgU
 wgU
 wgU
-tvg
+vMv
 ber
 qCH
 qDb
@@ -39165,7 +39414,7 @@ rPW
 rPW
 paT
 xLw
-tMV
+bSi
 mTN
 dFm
 qWV
