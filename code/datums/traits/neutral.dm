@@ -50,6 +50,22 @@
 	if(prob(0.05))
 		SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, "jolly", /datum/mood_event/jolly)
 
+/datum/quirk/dwarfism
+	name = "Dwarfism"
+	desc = "Due to a genetic mutation, you've learnt to appreciate the smaller things in life."
+	value = 0
+	medical_record_text = "Patient has dwarfism."
+
+/datum/quirk/dwarfism/add()
+	ADD_TRAIT(quirk_holder, TRAIT_DWARF, GENETIC_MUTATION) //better here than mob trait to add genetic mutation
+	quirk_holder.AddElement(/datum/element/dwarfism, COMSIG_HUMAN_MUTATION_LOSS, src)
+	passtable_on(quirk_holder, GENETIC_MUTATION)
+
+/datum/quirk/dwarfism/remove()
+	REMOVE_TRAIT(quirk_holder, TRAIT_DWARF, GENETIC_MUTATION)
+	quirk_holder.RemoveElement(/datum/element/dwarfism, COMSIG_HUMAN_MUTATION_LOSS, src)
+	passtable_off(quirk_holder, GENETIC_MUTATION)
+
 /datum/quirk/depression
 	name = "Depression"
 	desc = "You sometimes just hate life."
@@ -227,7 +243,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	value = 0 // Locked
 	gain_text = span_notice("You feel a burning pain as your DNA is ripped apart, and sewn back together.")
 	lose_text = span_notice("The dull metronome of pain that defined your existence has faded.")
-	medical_record_text = "Patient appears to have 'perfect' DNA - if 'perfect' was a Wastelanders idea of beauty." 
+	medical_record_text = "Patient appears to have 'perfect' DNA - if 'perfect' was a Wastelanders idea of beauty."
 	mob_trait = TRAIT_FEV
 	locked = TRUE
 
@@ -257,7 +273,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	mob_tar.maxHealth -= 5 //Mutie rage.
 	mob_tar.health -= 5
 	mob_tar.dna.species.punchdamagelow -= 6
-	mob_tar.dna.species.punchdamagehigh -= 8 
+	mob_tar.dna.species.punchdamagehigh -= 8
 	mob_tar.resize -= 0.05
 	mob_tar.update_transform()
 
@@ -267,7 +283,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	value = 0 //Never unlockable naturally.
 	gain_text = span_notice("You feel a burning pain as your DNA is ripped apart, and sewn back together.")
 	lose_text = span_notice("The dull metronome of pain that defined your existence has faded.")
-	medical_record_text = "Patient has been exposed to FEV-II, with clear signs of triple-helix DNA present." 
+	medical_record_text = "Patient has been exposed to FEV-II, with clear signs of triple-helix DNA present."
 	mob_trait = TRAIT_FEVII
 	locked = TRUE
 
