@@ -12,7 +12,7 @@
 	color_src = MATRIXED
 	gender_specific = 0
 	icon = 'modular_citadel/icons/mob/mam_markings.dmi'
-	recommended_species = list("mammal", "xeno", "slimeperson", "podweak")
+	recommended_species = list("mammal", "xeno", "slimeperson", "podweak", "synthanthro")
 	matrixed_sections = MATRIX_ALL // this value is used if there is no value in covered_limbs, don't rely on it, it's a backup value
 	var/list/covered_limbs = list("Head", "Chest", "Left Leg", "Right Leg", "Left Arm", "Right Arm")
 
@@ -102,19 +102,16 @@
 /datum/sprite_accessory/mam_body_markings/bee_alt
 	name = "Bee (Alt)"
 	icon_state = "beealt"
-	recommended_species = list("insect")
 	covered_limbs = list("Chest" = MATRIX_ALL, "Right Arm" = MATRIX_GREEN, "Left Arm" = MATRIX_GREEN, "Right Leg" = MATRIX_GREEN, "Left Leg" = MATRIX_GREEN)
 
 /datum/sprite_accessory/mam_body_markings/bee_fluff
 	name = "Bee (Fluffy)"
 	icon_state = "bee_fluff"
-	recommended_species = list("insect")
 	covered_limbs = list("Chest" = MATRIX_ALL, "Right Arm" = MATRIX_GREEN_BLUE, "Left Arm" = MATRIX_GREEN_BLUE, "Right Leg" = MATRIX_GREEN, "Left Leg" = MATRIX_GREEN)
 
 /datum/sprite_accessory/mam_body_markings/bug3tone
 	name = "Beetle"
 	icon_state = "bug3tone"
-	recommended_species = list("insect")
 	covered_limbs = list("Chest" = MATRIX_GREEN_BLUE)
 
 /datum/sprite_accessory/mam_body_markings/belly
@@ -285,7 +282,6 @@
 /datum/sprite_accessory/mam_body_markings/moth
 	name = "Moth"
 	icon_state = "moth"
-	recommended_species = list("insect")
 	covered_limbs = list("Head" = MATRIX_BLUE, "Chest" = MATRIX_RED_GREEN, "Right Arm" = MATRIX_RED_GREEN, "Left Arm" = MATRIX_RED_GREEN, "Right Leg" = MATRIX_RED, "Left Leg" = MATRIX_RED)
 
 /datum/sprite_accessory/mam_body_markings/mutant
