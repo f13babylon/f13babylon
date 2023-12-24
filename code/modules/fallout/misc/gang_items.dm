@@ -214,20 +214,6 @@
 	cost = 110
 	item_path = /obj/effect/spawner/bundle/f13/varmint
 
-/datum/gang_item/weapon/type93
-	name = "Worn Type 93"
-	id = "worntype93"
-	cost = 250
-	item_path = /obj/item/storage/box/bundletype93kit
-
-/obj/item/storage/box/bundletype93kit
-	name = "type 93 kit"
-	desc = "Rule the wasteland, one bullet at a time."
-
-/obj/item/storage/box/bundletype93kit/PopulateContents()
-	new /obj/item/gun/ballistic/automatic/type93/worn(src)
-	new /obj/item/ammo_box/magazine/m556/rifle(src)
-
 /datum/gang_item/weapon/energylow
 	name = "Unknown Energy Gun"
 	id = "gangenergygun"
@@ -378,7 +364,7 @@
 	desc = "Rule the underworld like the Den Mob of old."
 
 /obj/item/storage/box/bundledenboss/PopulateContents()
-	new /obj/item/gun/ballistic/automatic/type93/worn(src)
+	new /obj/item/gun/ballistic/automatic/smg/thompson(src)
 	new /obj/item/reagent_containers/hypospray/medipen/medx(src)
 	new /obj/item/reagent_containers/hypospray/medipen/medx(src)
 	new /obj/item/reagent_containers/hypospray/medipen/medx(src)

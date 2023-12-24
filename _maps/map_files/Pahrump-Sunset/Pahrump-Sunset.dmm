@@ -8567,7 +8567,7 @@
 	},
 /area/f13/wasteland/west)
 "aFv" = (
-/obj/item/ammo_casing/a556,
+/obj/item/ammo_casing/a556mm,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontalbottomborderbottom0"
 	},
@@ -28944,12 +28944,12 @@
 /area/f13/building/mall)
 "eWn" = (
 /obj/structure/rack/shelf_metal,
-/obj/item/gun/ballistic/automatic/assault_carbine/policerifle,
-/obj/item/gun/ballistic/automatic/assault_carbine/policerifle,
-/obj/item/gun/ballistic/automatic/assault_carbine/policerifle,
-/obj/item/gun/ballistic/automatic/assault_carbine/policerifle,
-/obj/item/gun/ballistic/automatic/assault_carbine/policerifle,
-/obj/item/gun/ballistic/automatic/assault_carbine/policerifle,
+/obj/item/gun/ballistic/automatic/assault_rifle/type93,
+/obj/item/gun/ballistic/automatic/assault_rifle/type93,
+/obj/item/gun/ballistic/automatic/assault_rifle/type93,
+/obj/item/gun/ballistic/automatic/assault_rifle/type93,
+/obj/item/gun/ballistic/automatic/assault_rifle/type93,
+/obj/item/gun/ballistic/automatic/assault_rifle/type93,
 /turf/open/floor/wood/wood_worn,
 /area/f13/city/bighorn)
 "eWr" = (
@@ -37528,8 +37528,8 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/item/ammo_box/magazine/m556/rifle/small,
-/obj/item/ammo_box/magazine/m556/rifle/small,
+/obj/item/ammo_box/magazine/m556mm/small,
+/obj/item/ammo_box/magazine/m556mm/small,
 /turf/open/floor/f13/wood,
 /area/f13/building/mall)
 "jbb" = (

@@ -1,6 +1,7 @@
 //////////////////////////////////////
 // ENCLAVE - CARBON COPY MORE-OR-LESS
 //////////////////////////////////////
+/*
 /obj/item/encencminigunbal4mm
 	name = "Vindicator minigun ammo belt"
 	desc = "The massive ammo belt for the Vindicator minigun."
@@ -175,7 +176,7 @@
 /obj/item/gun/ballistic/encminigunbal4mm/dropped(mob/living/user)
 	. = ..()
 	ammo_pack.attach_gun(user)
-
+*/
 //////////////////////////////////////
 // ENCLAVE - CARBON COPY MORE-OR-LESS
 //////////////////////////////////////

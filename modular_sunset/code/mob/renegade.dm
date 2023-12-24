@@ -154,8 +154,8 @@
 	retreat_distance = 10
 	minimum_distance = 6
 	ranged_cooldown_time = 10
-	projectiletype = /obj/item/projectile/bullet/a762/sport/simple
-	projectilesound = 'sound/f13weapons/bozar_fire.ogg'
+	projectiletype = /obj/item/projectile/bullet/a762mm/simple/ap
+	projectilesound = 'sound/f13weapons/762rifle.ogg'
 	loot = list(/obj/item/stack/f13Cash/random/high, /obj/effect/spawner/bundle/f13/remington, /obj/effect/spawner/lootdrop/f13/armor/random)
 	robust_searching = TRUE
 	speak = list("Come get some!", "I am the shadow!", "One shot, one kill.", "Adjusting my scope.", "Renegades represent!")

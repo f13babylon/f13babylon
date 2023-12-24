@@ -222,9 +222,9 @@
 
 /datum/outfit/loadout/seniorb
 	name = "Teachings of Jessup"
-	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle/infiltrator
+	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle/r91/infiltrator
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle = 2,
+		/obj/item/ammo_box/magazine/m556mm = 2,
 		)
 
 /datum/outfit/loadout/seniorc

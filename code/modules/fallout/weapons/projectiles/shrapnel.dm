@@ -16,10 +16,10 @@
 	icon = 'icons/obj/projectiles.dmi'
 	icon_state = "plasma1"
 
-/obj/item/shrapnel/bullet/a556/microshrapnel
+/obj/item/shrapnel/bullet/a556mm/microshrapnel
 	name = "\improper 5.56mm microshrapnel bullet"
 
-/obj/item/shrapnel/bullet/a762/microshrapnel
+/obj/item/shrapnel/bullet/a762mm/microshrapnel
 	name = "\improper 7.62mm microshrapnel bullet"
 
 // HE Rockets / GRENADES - Identical to stingball for embedding. Mostly.

@@ -455,7 +455,7 @@
 		var/obj/item/B = new /obj/item/prefabs/complex/trigger
 		var/obj/item/C = new /obj/item/prefabs/complex/bolt/high
 		var/obj/item/D = new /obj/item/prefabs/complex/action/simple
-		var/obj/item/E = new /obj/item/prefabs/complex/barrel/m762
+		var/obj/item/E = new /obj/item/prefabs/complex/barrel/m762mm
 		var/obj/item/F = new /obj/item/prefabs/complex/stock/mid
 		var/obj/item/G = new /obj/item/prefabs/complex/complexWeaponFrame/low
 		var/obj/item/H = new /obj/item/advanced_crafting_components/receiver
@@ -484,7 +484,7 @@
 		var/obj/item/B = new /obj/item/prefabs/complex/trigger
 		var/obj/item/C = new /obj/item/prefabs/complex/bolt/high
 		var/obj/item/D = new /obj/item/prefabs/complex/action/simple
-		var/obj/item/E = new /obj/item/prefabs/complex/barrel/m762
+		var/obj/item/E = new /obj/item/prefabs/complex/barrel/m762mm
 		var/obj/item/F = new /obj/item/prefabs/complex/stock/mid
 		var/obj/item/G = new /obj/item/prefabs/complex/complexWeaponFrame/mid
 		var/obj/item/H = new /obj/item/advanced_crafting_components/receiver
@@ -514,7 +514,7 @@
 		var/obj/item/B = new /obj/item/prefabs/complex/trigger
 		var/obj/item/C = new /obj/item/prefabs/complex/bolt/high
 		var/obj/item/D = new /obj/item/prefabs/complex/action/simple
-		var/obj/item/E = new /obj/item/prefabs/complex/barrel/m762
+		var/obj/item/E = new /obj/item/prefabs/complex/barrel/m762mm
 		var/obj/item/F = new /obj/item/prefabs/complex/stock/mid
 		var/obj/item/G = new /obj/item/prefabs/complex/complexWeaponFrame/high
 		var/obj/item/H = new /obj/item/advanced_crafting_components/receiver

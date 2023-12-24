@@ -309,7 +309,7 @@ Mayor
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, REF(src))
 	ADD_TRAIT(H, TRAIT_GENERIC, REF(src))
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/policepistol)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/policerifle)
+
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/steelbib/heavy)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/armyhelmetheavy)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/trail_carbine)
@@ -598,7 +598,7 @@ Mayor
 	gloves = /obj/item/clothing/gloves/color/yellow
 	backpack_contents = list(/obj/item/storage/bag/trash = 1, /obj/item/reagent_containers/spray/cleaner = 1,
 	/obj/item/gun/ballistic/revolver/hobo/piperifle = 1,
-	/obj/item/ammo_box/a556/stripper = 2,
+	/obj/item/ammo_box/a556mm/stripper = 2,
 	)
 
 /datum/outfit/loadout/farmer

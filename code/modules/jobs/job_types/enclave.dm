@@ -64,7 +64,7 @@
 	exp_requirements = 600
 
 	loadout_options = list(
-		/datum/outfit/loadout/cpt_ballistics, // G11E and Plasma Glock
+		/datum/outfit/loadout/cpt_ballistics, // Assault Carbine and Plasma Glock
 		/datum/outfit/loadout/cpt_flamer, //Flamer+el captain
 		)
 
@@ -92,7 +92,7 @@
 
 /datum/outfit/loadout/cpt_ballistics
 	name = "Ranged Lead"
-	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
+	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle/assault_carbine
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m5mm = 2,
 		/obj/item/gun/energy/laser/plasma/glock = 1,
@@ -336,7 +336,7 @@
 /datum/outfit/loadout/sgt_classic
 	name = "Tactical Assaultman"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/assault_carbine = 1,
+		/obj/item/gun/ballistic/automatic/assault_rifle/assault_carbine = 1,
 		/obj/item/ammo_box/magazine/m5mm = 4,
 		/obj/item/attachments/scope = 1,
 		/obj/item/suppressor = 1, //they get a flashlight in their bag
@@ -395,7 +395,7 @@
 
 /datum/outfit/loadout/acpl_ballistics
 	name = "Frontline Operator"
-	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
+	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle/assault_carbine
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m5mm = 2,
 		)

@@ -15,8 +15,8 @@
 /obj/item/ammo_box/magazine/m556
 	name = "toploader magazine (5.56mm)"
 	icon_state = "5.56m"
-	ammo_type = /obj/item/ammo_casing/a556
-	caliber = "a556"
+	ammo_type = /obj/item/ammo_casing/a556mm
+	caliber = "a556mm"
 	max_ammo = 30
 	multiple_sprites = 2
 
@@ -40,58 +40,69 @@
 	..()
 	icon_state = "autopipe_belt-[round(ammo_count(),9)]"
 
-/obj/item/ammo_box/magazine/m556/rifle
+/obj/item/ammo_box/magazine/m556mm
 	name = "rifle magazine (5.56mm)"
-	icon_state = "r20"
-	caliber = "a556"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "mrifle"
+	ammo_type = /obj/item/ammo_casing/a556mm
+	caliber = "a556mm"
 	max_ammo = 20
 	multiple_sprites = 2
 
-/obj/item/ammo_box/magazine/m556/rifle/empty
+/obj/item/ammo_box/magazine/m556mm/empty
 	start_empty = 1
 
-/obj/item/ammo_box/magazine/m556/rifle/small
+/obj/item/ammo_box/magazine/m556mm/small
 	name = "small rifle magazine (5.56mm)"
-	icon_state = "r10"
+	icon_state = "mriflesmall"
 	max_ammo = 10
 
-/obj/item/ammo_box/magazine/m556/rifle/small/empty
+/obj/item/ammo_box/magazine/m556mm/small/empty
 	start_empty = 1
 
-/obj/item/ammo_box/magazine/m556/rifle/assault
-	name = "rifle magazine (5.56mm)"
-	icon_state = "r30"
+/obj/item/ammo_box/magazine/m556mm/extended
+	name = "extended rifle magazine (5.56mm)"
+	icon_state = "mrifleext"
 	max_ammo = 30
 
-/obj/item/ammo_box/magazine/m556/rifle/assault/empty
+/obj/item/ammo_box/magazine/m556mm/extended/empty
 	start_empty = 1
 
-/obj/item/ammo_box/magazine/m556/rifle/extended
-	name = "extended rifle magazine (5.56mm)"
-	icon_state = "r50"
+/obj/item/ammo_box/magazine/m556mm/drum
+	name = "rifle drum magazine (5mm)"
+	icon_state = "mdrum"
 	max_ammo = 50
 
-/obj/item/ammo_box/magazine/m556/rifle/extended/empty
+/obj/item/ammo_box/magazine/m556mm/drum/empty
 	start_empty = 1
 
 /obj/item/ammo_box/magazine/m5mm
-	name = "Assault Rifle Magazine (5mm)"
-	icon_state = "r30"
-	caliber = "a5mm"
+	name = "rifle magazine (5mm)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "mrifleext"
 	ammo_type = /obj/item/ammo_casing/a5mm
+	caliber = "a5mm"
 	max_ammo = 30
 	multiple_sprites = 2
 
 /obj/item/ammo_box/magazine/m5mm/empty
 	start_empty = 1
 
-/obj/item/ammo_box/magazine/garand308
-	name = "en-bloc clip (7.62x51mm)"
-	icon_state = "enbloc-8"
-	ammo_type = /obj/item/ammo_casing/a762
-	caliber = "a762"
-	max_ammo = 8
+/obj/item/ammo_box/magazine/m5mm/drum
+	name = "rifle drum magazine (5mm)"
+	icon_state = "mdrum"
+	max_ammo = 50
 
+/obj/item/ammo_box/magazine/m5mm/drum/empty
+	start_empty = 1
+
+/obj/item/ammo_box/magazine/garand308
+	name = "garand en-bloc clip (7.62mm)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "enbloc-8"
+	ammo_type = /obj/item/ammo_casing/a762mm
+	caliber = "a762mm"
+	max_ammo = 8
 
 /obj/item/ammo_box/magazine/garand308/update_icon()
 	..()
@@ -104,10 +115,10 @@
 	start_empty = 1
 
 /obj/item/ammo_box/magazine/sks
-	name = "7.62mm clip (SKS)"
+	name = "sks en-bloc clip (7.62mm)"
 	icon_state = "enbloc-10"
-	ammo_type = /obj/item/ammo_casing/a762
-	caliber = "a762"
+	ammo_type = /obj/item/ammo_casing/a762mm
+	caliber = "a762mm"
 	max_ammo = 10
 
 /obj/item/ammo_box/magazine/sks/update_icon()
@@ -120,47 +131,24 @@
 /obj/item/ammo_box/magazine/sks/empty
 	start_empty = 1
 
-/obj/item/ammo_box/magazine/m762
-	name = "rifle magazine (7.62x51)"
-	icon_state = "mag308"
-	ammo_type = /obj/item/ammo_casing/a762
-	caliber = "a762"
+/obj/item/ammo_box/magazine/m762mm
+	name = "rifle magazine (7.62mm)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "m762mm"
+	ammo_type = /obj/item/ammo_casing/a762mm
+	caliber = "a762mm"
 	max_ammo = 10
 	multiple_sprites = 2
 
-/obj/item/ammo_box/magazine/m762/empty
+/obj/item/ammo_box/magazine/m762mm/empty
 	start_empty = 1
 
-/obj/item/ammo_box/magazine/m762/ext
-	name = "extended rifle magazine (7.62x51)"
-	icon_state = "extmag308"
-	max_ammo = 20
-	multiple_sprites = 2
-
-/obj/item/ammo_box/magazine/m762/ext/empty
-	start_empty = 1
-
-/obj/item/ammo_box/magazine/m473
-	name = "g11 magazine (4.73mm)"
-	icon_state = "473mm"
-	caliber = "a473"
-	ammo_type = /obj/item/ammo_casing/caseless/a473
-	max_ammo = 50
-	multiple_sprites = 2
-
-/obj/item/ammo_box/magazine/m473/explosive
-	name = "g11 magazine (4.73mm explosive)"
-	ammo_type = /obj/item/ammo_casing/caseless/a473/explosive
-
-/obj/item/ammo_box/magazine/m473/empty
-	start_empty = 1
-
-/obj/item/ammo_box/magazine/m473/small
-	name = "4.7mm carbine magazine"
-	icon_state = "46x30mmt"
+/obj/item/ammo_box/magazine/m762mm/extended
+	name = "extended rifle magazine (7.62mm)"
+	icon_state = "m762mmext"
 	max_ammo = 20
 
-/obj/item/ammo_box/magazine/m473/small/empty
+/obj/item/ammo_box/magazine/m762mm/extended/empty
 	start_empty = 1
 
 /obj/item/ammo_box/magazine/m2mm

@@ -115,7 +115,7 @@
 	fire_delay = 1
 	spread = 12
 	weapon_weight = WEAPON_HEAVY
-	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
+	fire_sound = 'sound/f13weapons/assault_rifle.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/minigunbal5mm
 	casing_ejector = FALSE//For now.
 	item_flags = SLOWS_WHILE_IN_HAND

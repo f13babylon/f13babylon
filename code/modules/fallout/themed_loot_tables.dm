@@ -240,14 +240,14 @@
 	loot = list(
 		/obj/effect/spawner/bundle/f13/m1911 = 18,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 15,
-		/obj/effect/spawner/bundle/f13/assault_rifle = 10,
+		/obj/effect/spawner/bundle/f13/r91 = 10,
 		/obj/item/gun/ballistic/automatic/marksman/sniper = 8,
 		/obj/effect/spawner/bundle/f13/marksman = 6,
 		/obj/item/gun/ballistic/shotgun/trench = 6,
 		/obj/effect/spawner/bundle/f13/rangemaster = 5,
 		/obj/effect/spawner/bundle/f13/remington = 4,
 		/obj/item/gun/energy/laser/aer9 = 4,
-		/obj/item/gun/ballistic/automatic/assault_carbine = 3,
+		/obj/item/gun/ballistic/automatic/assault_rifle/assault_carbine = 3,
 		/obj/item/gun/energy/laser/wattz2k = 3,
 		/obj/effect/spawner/bundle/f13/infiltrator = 1,
 		/obj/item/melee/onehanded/knife/bayonet = 10,
@@ -280,8 +280,8 @@
 		/obj/effect/spawner/bundle/f13/sig = 12,
 		/obj/effect/spawner/bundle/f13/beretta/select = 8,
 		/obj/effect/spawner/bundle/f13/brushgun = 8,
-		/obj/item/gun/ballistic/automatic/type93 = 3,
-		/obj/item/gun/ballistic/automatic/fnfal = 2,
+		/obj/item/gun/ballistic/automatic/assault_rifle/type93 = 3,
+		/obj/item/gun/ballistic/automatic/assault_rifle/fal = 2,
 		/obj/effect/spawner/bundle/f13/p90 = 2,
 		/obj/effect/spawner/bundle/f13/guns/commando = 2,
 		/obj/item/gun/ballistic/revolver/revolver45/gunslinger = 1,
@@ -325,7 +325,7 @@
 		/obj/item/ammo_box/shotgun/improvised = 10,
 		/obj/item/ammo_box/c38box/improvised = 10,
 		/obj/item/ammo_box/m44box/improvised = 10,
-		/obj/item/ammo_box/a556/sport/improvised = 5,
+		/obj/item/ammo_box/a556mmbox/sport = 5,
 		/obj/item/ammo_box/c45/improvised = 5,
 		/obj/item/ammo_box/shotgun/buck = 5,
 		/obj/item/ammo_box/shotgun/bean = 5,
@@ -333,10 +333,10 @@
 		/obj/item/ammo_box/m22 = 5,
 		/obj/item/ammo_box/c9mm = 5,
 		/obj/item/ammo_box/a308 = 5,
-		/obj/item/ammo_box/a556/sport = 5,
+		/obj/item/ammo_box/a556mmbox/sport = 5,
 		/obj/item/ammo_box/c10mm = 5,
 		/obj/item/stock_parts/cell/ammo/ec = 3,
-		/obj/item/ammo_box/a308box = 3,
+		/obj/item/ammo_box/a762mmbox/sport = 3,
 		/obj/item/ammo_box/a357box = 2,
 		/obj/item/ammo_box/m44box = 2,
 		)
@@ -347,11 +347,11 @@
 		/obj/item/ammo_box/c45 = 15,
 		/obj/item/ammo_box/shotgun/slug = 15,
 		/obj/item/stock_parts/cell/ammo/ec = 15,
-		/obj/item/ammo_box/a556 = 15,
-		/obj/item/ammo_box/a762 = 10,
-		/obj/item/ammo_box/a762box = 10,
-		/obj/item/ammo_box/magazine/m556/rifle/extended/empty = 8,
-		/obj/item/ammo_box/magazine/m762/ext/empty = 7,
+		/obj/item/ammo_box/a556mm = 15,
+		/obj/item/ammo_box/a762mm = 10,
+		/obj/item/ammo_box/a762mmbox = 10,
+		/obj/item/ammo_box/magazine/m556mm/extended/empty = 8,
+		/obj/item/ammo_box/magazine/m762mm/extended/empty = 7,
 		/obj/item/ammo_box/a50MGbox = 5,
 		)
 
@@ -361,7 +361,6 @@
 		/obj/item/ammo_box/c4570box = 25,
 		/obj/item/ammo_box/m14mm = 15,
 		/obj/item/stock_parts/cell/ammo/ec = 12,
-		/obj/item/ammo_box/a473 = 10,
 		/obj/item/ammo_box/magazine/automag = 10,
 		/obj/item/stock_parts/cell/ammo/mfc = 10,
 		/obj/item/ammo_box/magazine/msmg22 = 9,
@@ -447,7 +446,7 @@
 	name = "piperifle and ammo spawner"
 	items = list(
 		/obj/item/gun/ballistic/revolver/hobo/piperifle,
-		/obj/item/ammo_box/a556/sport/improvised,
+		/obj/item/ammo_box/a556mmbox/sport,
 		)
 
 /obj/effect/spawner/bundle/weapon/pepperbox

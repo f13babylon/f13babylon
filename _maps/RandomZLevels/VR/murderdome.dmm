@@ -179,8 +179,8 @@
 /area/awaymission/vr/murderdome)
 "D" = (
 /obj/structure/rack,
-/obj/item/gun/ballistic/automatic/assault_rifle/infiltrator,
-/obj/item/gun/ballistic/automatic/assault_rifle/infiltrator,
+/obj/item/gun/ballistic/automatic/assault_rifle/r91/infiltrator,
+/obj/item/gun/ballistic/automatic/assault_rifle/r91/infiltrator,
 /obj/machinery/light,
 /turf/open/indestructible,
 /area/awaymission/vr/murderdome)

@@ -39,24 +39,6 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 
-///////security rifles special ammo///////
-
-/obj/item/ammo_casing/c46x30mm/rubber
-	name = "4.6x30mm rubberbullet casing"
-	desc = "A 4.6x30mm rubberbullet casing."
-	caliber = "4.6x30mm"
-	projectile_type = /obj/item/projectile/bullet/c46x30mm/rubber
-
-/obj/item/ammo_box/magazine/wt550m9/wtrubber
-	name = "wt550 magazine (Rubber bullets 4.6x30mm)"
-	icon_state = "46x30mmtA-20"
-	ammo_type = /obj/item/ammo_casing/c46x30mm/rubber
-
-/obj/item/projectile/bullet/c46x30mm/rubber
-	name = "4.6x30mm bullet"
-	damage = 5
-	stamina = 30
-
 ///toy memes///
 
 /obj/item/ammo_box/magazine/toy/x9

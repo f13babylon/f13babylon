@@ -525,7 +525,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/m29 = 1,
 		/obj/item/ammo_box/m44 = 2,
-		/obj/item/ammo_box/magazine/m762 = 2,
+		/obj/item/ammo_box/magazine/m762mm = 2,
 		)
 
 
@@ -766,7 +766,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	suit_store = /obj/item/gun/ballistic/rifle/hunting/remington
 	backpack_contents = list(
 		/obj/item/attachments/scope = 1,
-		/obj/item/ammo_box/a762 = 4,
+		/obj/item/ammo_box/a762mm = 4,
 		/obj/item/gun/ballistic/revolver/revolver45 = 1,
 		/obj/item/ammo_box/c45rev = 1,
 	)
