@@ -1,22 +1,27 @@
-## New Babylon
-Based and maintained from Citadel Station by way of Desert Rose, Fortuna, The Wasteland, and Sunset Wasteland.
+## Fallout: New Babylon
+Based and maintained from /tg/ & Citadel Station by way of Desert Rose, Fortuna, The Wasteland, and Sunset Wasteland.
 
-[![CI Suite](https://isitmaintained.com/project/sunset-wasteland/sunset-wasteland/actions/workflows/ci_suite.yml/badge.svg?branch=master&event=push)](https://isitmaintained.com/project/sunset-wasteland/sunset-wasteland/actions/workflows/ci_suite.yml)
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/sunset-wasteland/sunset-wasteland.svg)](https://isitmaintained.com/project/sunset-wasteland/sunset-wasteland "Percentage of issues still open")
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/sunset-wasteland/sunset-wasteland.svg)](https://isitmaintained.com/project/sunset-wasteland/sunset-wasteland "Average time to resolve an issue")
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/f13babylon/f13babylon.svg)](http://isitmaintained.com/project/f13babylon/f13babylon "Percentage of issues still open")
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/f13babylon/f13babylon.svg)](http://isitmaintained.com/project/f13babylon/f13babylon "Average time to resolve an issue")
 
-[![forthebadge](http://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/pretty-risque.svg)](https://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](http://forthebadge.com) [![forinfinityandbyond](https://user-images.githubusercontent.com/5211576/29499758-4efff304-85e6-11e7-8267-62919c3688a9.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
+[![forthebadge](https://forthebadge.com/images/badges/ages-18.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/contains-technical-debt.svg)](https://forthebadge.com)[![forthebadge](http://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/pretty-risque.svg)](https://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](http://forthebadge.com) [![forinfinityandbyond](https://user-images.githubusercontent.com/5211576/29499758-4efff304-85e6-11e7-8267-62919c3688a9.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
+
+[![forthebadge](https://forthebadge.com/images/featured/featured-built-with-love.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/for-you.svg)](https://forthebadge.com)
+
+**Fallout: New Babylon Information**
+* **Code:** <https://github.com/f13babylon/f13babylon>
+* **Discord:** <https://discord.gg/UdRnzwrtuT>
 
 **Sunset Wasteland Information**
 * **Code:** <https://github.com/sunset-wasteland/sunset-wasteland>
-* **Wiki:** <https://sunsetwasteland.com/index.php/Main_Page>
 * **Discord:** <https://discord.gg/h5UDdCMHhm>
 
 **The Wasteland Information**  
 * **Code:** <https://github.com/ogrigbe/thewasteland>
-* **Wiki:** <>
 * **Discord:** <https://discord.gg/xCgEwJTppx>
-All relevant forum content takes place on the Discord!
+
+**Fortuna Information**
+* **Code:** <https://github.com/FortunaSS13/Fortuna>
 
 **Desert Rose Information**
 * **Code** <https://github.com/DesertRose2/desertrose>
@@ -127,35 +132,18 @@ the new version.
 ## HOSTING
 
 If you'd like a more robust server hosting option for tgstation and its
-derivatives. Check out our server tools suite at 
+derivatives. Check out /tg/'s server tools suite at 
 https://github.com/tgstation/tgstation-server
 
 ## MAPS
 
-/tg/station currently comes equipped with five maps.
-
-* [BoxStation (default)](http://tgstation13.org/wiki/Boxstation)
-* [MetaStation](https://tgstation13.org/wiki/MetaStation)
-* [DeltaStation](https://tgstation13.org/wiki/DeltaStation)
-* [OmegaStation](https://tgstation13.org/wiki/OmegaStation)
-* [PubbyStation](https://tgstation13.org/wiki/PubbyStation)
-
-
-All maps have their own code file that is in the base of the _maps directory. Maps are loaded dynamically when the game starts. Follow this guideline when adding your own map, to your fork, for easy compatibility.
+Maps have their own code file that is in the base of the _maps directory. Maps are loaded dynamically when the game starts. Follow this guideline when adding your own map, to your fork, for easy compatibility.
 
 The map that will be loaded for the upcoming round is determined by reading data/next_map.json, which is a copy of the json files found in the _maps tree. If this file does not exist, the default map from config/maps.txt will be loaded. Failing that, BoxStation will be loaded. If you want to set a specific map to load next round you can use the Change Map verb in game before restarting the server or copy a json from _maps to data/next_map.json before starting the server. Also, for debugging purposes, ticking a corresponding map's code file in Dream Maker will force that map to load every round.
 
 If you are hosting a server, and want randomly picked maps to be played each round, you can enable map rotation in [config.txt](config/config.txt) and then set the maps to be picked in the [maps.txt](config/maps.txt) file.
 
 **Anytime you want to make changes to a map it's imperative you use the [Map Merging tools](http://tgstation13.org/wiki/Map_Merger).**
-
-## AWAY MISSIONS
-
-/tg/station supports loading away missions however they are disabled by default.
-
-Map files for away missions are located in the _maps/RandomZLevels directory. Each away mission includes it's own code definitions located in /code/modules/awaymissions/mission_code. These files must be included and compiled with the server beforehand otherwise the server will crash upon trying to load away missions that lack their code.
-
-To enable an away mission open `config/awaymissionconfig.txt` and uncomment one of the .dmm lines by removing the #. If more than one away mission is uncommented then the away mission loader will randomly select one the enabled ones to load.
 
 ## SQL SETUP
 
@@ -172,7 +160,11 @@ Web delivery of game resources makes it quicker for players to join and reduces 
 
 ## CONTRIBUTING
 
-Please see [CONTRIBUTING.md](.github/CONTRIBUTING.md)
+Please see our community discord for information on contributing! Also, contributing.md.
+
+## DISCLAIMER
+
+Note: This is not associated with Bethesda Softworks in any way! Fallout: New Babylon is neither a trademark, nor a commercial product. 2023 Bethesda Softworks LLC. Trademarks belong to their respective owners.
 
 ## LICENSE
 
