@@ -916,7 +916,7 @@
 	recoil = 0.65
 	actions_types = null
 
-//R84 Light Machine Gun				Keywords: 5.56mm, 60 rounds
+//R84 Light Machine Gun			Keywords: 5.56mm, 60 Rounds, High Tier
 /obj/item/gun/ballistic/automatic/lmg/r84
 	name = "light machine gun"
 	desc = "An FN R84 SAW chambered in 5.56mm, made for sustained fire. It's loaded with 60-round ammo boxes and it's as heavy as the people usually seen carrying one."
@@ -925,7 +925,7 @@
 	fire_sound = 'sound/f13weapons/assault_rifle.ogg'
 	mag_type = /obj/item/ammo_box/magazine/lmg
 
-//HT BAR
+//Colt Monitor		Keywords: 7.62mm, Damage Malus, Extra AP, Extra Speed, Scoped, Accurate, 10/20 Rounds, Heavy Gunner Exclusive
 /obj/item/gun/ballistic/automatic/lmg/monitor
 	name = "\improper Colt Monitor"
 	desc = "An especially modified light machine gun built on the BAR platform with an added pistol grip and a Cutts recoil compensator. This one features a West-Tek marksman scope and its receiver bears a red star."
@@ -941,12 +941,12 @@
 	recoil = 0.45
 	extra_damage = -5			//30 DAM
 	extra_penetration = 0.15	//15% AP
-	extra_speed = 200
+	extra_speed = 200			//200 Extra Speed
 	zoomable = TRUE
 	zoom_amt = 8
 	zoom_out_amt = 11
 
-//RPD Light Machine Gun
+//RPD Light Machine Gun		Keywords: 5mm, 50 Rounds, High Tier
 /obj/item/gun/ballistic/automatic/lmg/rpd
 	name = "chinese light machine gun"
 	desc = "A restored variant of the chinese assault rifle re-chambered to 5mm that feeds from drums, featuring a heavy barrel and a full stock to go with its improved internal mechanism."
@@ -958,7 +958,7 @@
 	spread = 20
 	extra_penetration = -0.15 //30% AP
 
-//M1919 Machinegun				Keywords: LEGION, .308, Automatic, 80 round belt.
+//M1919		Keywords: 7.62mm, 80 Rounds, Centurion Exclusive
 /obj/item/gun/ballistic/automatic/lmg/m1919
 	name = "stinger heavy machine gun"
 	desc = "A salvaged AN/M2 variant of the M1919 Browning initially meant for use in aircraft that has been turned into a man-portable killing machine. It has a shoulder stock cut from a brush gun with the addition of rear sights and a bipod from a different machine gun, as well as a solenoid trigger. The Legion's infamous bull is carved on the receiver."
@@ -970,7 +970,6 @@
 	slowdown = 1.5
 	spread = 20
 	var/cover_open = FALSE
-	var/require_twohands = FALSE
 
 /obj/item/gun/ballistic/automatic/lmg/m1919/update_icon()
 	icon_state = "hmg[cover_open ? "open" : "closed"][magazine ? CEILING(get_ammo(0)/20, 1)*20 : "-empty"]"
@@ -1018,8 +1017,6 @@
 		to_chat(user, "<span class='warning'>[src]'s cover is closed! You can't swap out the ammo belts.</span>")
 		return
 	..()
-
-
 
 ////////
 //MISC//
