@@ -395,7 +395,6 @@
 	icon_state = "boarded";
 	opacity = 1
 	},
-/obj/structure/timeddoor/onetwozerominutes,
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/tunnel)
 "du" = (
@@ -738,12 +737,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/enclave/hallways)
 "gd" = (
-/obj/structure/obstacle/barbedwire/end{
-	dir = 4
-	},
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain0"
-	},
+/obj/structure/nest/coldghouls,
+/turf/open/indestructible/ground/outside/snow,
 /area/f13/mountain_area)
 "ge" = (
 /obj/structure/table/wood,
@@ -956,6 +951,8 @@
 /area/f13/enclave/medbay)
 "hq" = (
 /obj/machinery/light,
+/obj/structure/closet,
+/obj/effect/turf_decal/bot,
 /turf/open/floor/f13,
 /area/f13/enclave)
 "hr" = (
@@ -1388,7 +1385,6 @@
 	icon_state = "boarded";
 	opacity = 1
 	},
-/obj/structure/timeddoor/onetwozerominutes,
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/tunnel)
 "jT" = (
@@ -2853,6 +2849,8 @@
 /area/f13/enclave/armory)
 "tY" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/closet,
+/obj/effect/turf_decal/bot,
 /turf/open/floor/f13,
 /area/f13/enclave)
 "ua" = (
@@ -2974,8 +2972,8 @@
 	},
 /area/f13/enclave)
 "uR" = (
-/obj/item/twohanded/required/kirbyplants/random,
-/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet,
+/obj/effect/turf_decal/bot,
 /turf/open/floor/f13,
 /area/f13/enclave)
 "uT" = (
@@ -3108,7 +3106,6 @@
 	icon_state = "boarded";
 	opacity = 1
 	},
-/obj/structure/timeddoor/onetwozerominutes,
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/tunnel)
 "vS" = (
@@ -4544,13 +4541,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/enclave/hallways)
 "GS" = (
-/obj/structure/obstacle/barbedwire/end{
-	dir = 8
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	id = "ENCLAVENML"
 	},
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain0"
-	},
-/area/f13/mountain_area)
+/obj/effect/turf_decal/bot,
+/turf/open/floor/f13,
+/area/f13/enclave)
 "GU" = (
 /turf/closed/indestructible/riveted,
 /area/f13/tcoms)
@@ -4793,7 +4790,9 @@
 /turf/open/floor/f13,
 /area/f13/enclave)
 "Iv" = (
-/obj/structure/nest/coldghouls,
+/obj/structure/nest/coldghouls{
+	max_mobs = 2
+	},
 /turf/open/indestructible/ground/outside/snow_plating,
 /area/f13/mountain_area)
 "Iw" = (
@@ -5513,7 +5512,6 @@
 	icon_state = "boarded";
 	opacity = 1
 	},
-/obj/structure/timeddoor/onetwozerominutes,
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/tunnel)
 "Oq" = (
@@ -6385,6 +6383,7 @@
 	network = list("Enclave");
 	dir = 1
 	},
+/obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/enclave)
 "Vf" = (
@@ -6395,16 +6394,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/vertibird)
 "Vg" = (
-/obj/effect/decal/marking{
-	icon_state = "doublevertical"
+/obj/structure/decoration/warning{
+	name = "WARNING: NO MANS LAND AHEAD PVP ZONE"
 	},
-/obj/structure/obstacle/barbedwire{
-	dir = 4
-	},
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain0"
-	},
-/area/f13/mountain_area)
+/turf/closed/wall/r_wall/f13/vault,
+/area/f13/enclave)
 "Vk" = (
 /obj/effect/decal/remains/human,
 /turf/open/indestructible/ground/outside/snow_plating,
@@ -6917,8 +6911,7 @@
 /area/f13/enclave/virology)
 "Zt" = (
 /obj/structure/nest/coldghouls{
-	max_mobs = 2;
-	spawn_time = 40
+	max_mobs = 2
 	},
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/mountain_area)
@@ -23946,7 +23939,7 @@ AW
 PC
 Jx
 At
-Jx
+sH
 AW
 SP
 SP
@@ -25228,7 +25221,7 @@ hG
 sO
 JF
 AW
-Jx
+zW
 Jx
 Jx
 Ks
@@ -25485,10 +25478,10 @@ AW
 AW
 AW
 AW
-uR
-Jx
-Jx
-Jx
+pv
+Vg
+ml
+Vg
 AW
 SP
 SP
@@ -25742,7 +25735,7 @@ Vy
 hz
 Jb
 AW
-zW
+Jx
 Jx
 Jx
 hq
@@ -25999,8 +25992,8 @@ Vy
 RF
 DI
 AW
-sH
 Jx
+GS
 Jx
 tY
 AW
@@ -26259,7 +26252,7 @@ og
 Jx
 wa
 Jx
-Jx
+uR
 AW
 SP
 kn
@@ -49682,7 +49675,7 @@ ez
 ez
 ez
 ez
-Zt
+gd
 ez
 ez
 ez
@@ -51239,7 +51232,7 @@ Sl
 Er
 ez
 ez
-Zt
+gd
 ez
 hy
 WE
@@ -51253,8 +51246,8 @@ SA
 Er
 ez
 ez
+gd
 ez
-Zt
 ez
 ez
 ez
@@ -57658,7 +57651,7 @@ ez
 ez
 ez
 ez
-Zt
+gd
 ez
 ez
 ez
@@ -57903,7 +57896,7 @@ ez
 ez
 ez
 ez
-Zt
+gd
 ez
 SA
 Sl
@@ -69883,7 +69876,7 @@ Ry
 ic
 jo
 Ry
-gd
+Ry
 Ry
 ex
 ie
@@ -70140,7 +70133,7 @@ mV
 mV
 HO
 mV
-Vg
+mV
 rt
 mK
 pd
@@ -70397,7 +70390,7 @@ Ry
 Ry
 jo
 Ry
-GS
+Ry
 Ry
 iH
 ie

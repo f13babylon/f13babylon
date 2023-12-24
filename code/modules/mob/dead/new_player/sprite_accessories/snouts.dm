@@ -362,6 +362,11 @@
 	icon_state = "frodent"
 	matrixed_sections = MATRIX_RED
 
+/datum/sprite_accessory/snouts/mam_snouts/rodent_thick
+	name = "Rodent (Thick)"
+	icon_state = "rodentthick"
+	matrixed_sections = MATRIX_RED_GREEN
+
 /datum/sprite_accessory/snouts/mam_snouts/round
 	name = "Round"
 	icon_state = "round"

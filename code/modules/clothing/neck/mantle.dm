@@ -62,13 +62,18 @@
 
 /obj/item/clothing/neck/mantle/legion
 	name = "Legion Cape"
-	desc = "A deep crimson cape woven by fine legionnaire craftsmanship. A shoulder holster is added beneath for utility."
+	desc = "A deep crimson cape woven by fine legionnaire craftsmanship. A shoulder holster is added for utility."
 	icon_state = "legion"
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bos/paladin
 
+/obj/item/clothing/neck/mantle/legion/rangercent
+	name = "ranger-hunter cape"
+	desc = "A defaced NCR Ranger cape that now bears the Legion's golden bull. A shoulder holster is added for utility."
+	icon_state = "legionrangercape"
+
 /obj/item/clothing/neck/mantle/ranger
-	name = "NCR ranger cape"
-	desc = "Ranger cape made from what looks like old poncho fitted with star, stripes and a bear. Most likely has a holster hidden underneath."
+	name = "NCR Ranger cape"
+	desc = "A cape made from an old poncho, decorated by a red star and white stripes. A shoulder holster is added for utility."
 	icon_state = "rangercape"
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bos/paladin
 

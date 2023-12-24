@@ -675,7 +675,6 @@
 /obj/item/ammo_box/a45lcrev/empty
 	start_empty = 1
 
-
 //.45-70 Gov't
 /obj/item/ammo_box/c4570
 	name = "speed loader (.45-70)"

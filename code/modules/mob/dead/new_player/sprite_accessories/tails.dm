@@ -18,7 +18,17 @@
 /datum/sprite_accessory/tails_animated/lizard/is_not_visible(mob/living/carbon/human/H, tauric)
 	return (((H.wear_suit && (H.wear_suit.flags_inv & HIDETAUR)) || tauric) || H.dna.species.mutant_bodyparts["tail_lizard"])
 
-//this goes first regardless of alphabetical order
+/datum/sprite_accessory/tails/lizard
+	color_src = MATRIXED
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	recommended_species = list("mammal", "slimeperson", "podweak", "felinid", "insect")
+	relevant_layers = list(BODY_BEHIND_LAYER, BODY_FRONT_LAYER)
+
+/datum/sprite_accessory/tails_animated/lizard
+	color_src = MATRIXED
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	relevant_layers = list(BODY_BEHIND_LAYER, BODY_FRONT_LAYER)
+
 /datum/sprite_accessory/tails/lizard/none
 	name = "None"
 	icon_state = "None"
@@ -32,110 +42,203 @@
 /datum/sprite_accessory/tails/lizard/axolotl
 	name = "Axolotl"
 	icon_state = "axolotl"
-	color_src = MATRIXED
-	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
 	matrixed_sections = MATRIX_RED
 
 /datum/sprite_accessory/tails_animated/lizard/axolotl
 	name = "Axolotl"
 	icon_state = "axolotl"
-	color_src = MATRIXED
-	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
 	matrixed_sections = MATRIX_RED
-
-/datum/sprite_accessory/tails/lizard/furdragon
-	name = "Furred Dragon"
-	icon_state = "fluffydragon"
-	color_src = MATRIXED
-	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
-	matrixed_sections = MATRIX_RED_GREEN
-
-/datum/sprite_accessory/tails_animated/lizard/furdragon
-	name = "Furred Dragon"
-	icon_state = "fluffydragon"
-	color_src = MATRIXED
-	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
-	matrixed_sections = MATRIX_RED_GREEN
 
 /datum/sprite_accessory/tails/lizard/dtiger
 	name = "Dark Tiger"
 	icon_state = "dtiger"
+	color_src = MUTCOLORS
+	icon = 'icons/mob/mutant_bodyparts.dmi'
 
 /datum/sprite_accessory/tails_animated/lizard/dtiger
 	name = "Dark Tiger"
 	icon_state = "dtiger"
 
+/datum/sprite_accessory/tails/lizard/deathclaw
+	name = "Deathclaw"
+	icon_state = "deathclaw"
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails_animated/lizard/deathclaw
+	name = "Deathclaw"
+	icon_state = "deathclaw"
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails/lizard/easterndragon
+	name = "Eastern Dragon"
+	icon_state = "easternd"
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails_animated/lizard/easterndragon
+	name = "Eastern Dragon"
+	icon_state = "easternd"
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails/lizard/furdragon
+	name = "Furred Dragon"
+	icon_state = "fluffydragon"
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails_animated/lizard/furdragon
+	name = "Furred Dragon"
+	icon_state = "fluffydragon"
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails/lizard/gecko
+	name = "Gecko"
+	icon_state = "gecko"
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails/lizard/geckobig
+	name = "Gecko Big"
+	icon_state = "fatgecko"
+	matrixed_sections = MATRIX_ALL
+
+/datum/sprite_accessory/tails_animated/lizard/geckobig
+	name = "Gecko Big"
+	icon_state = "fatgecko"
+	matrixed_sections = MATRIX_ALL
+
 /datum/sprite_accessory/tails/lizard/ltiger
 	name = "Light Tiger"
 	icon_state = "ltiger"
+	color_src = MUTCOLORS
+	icon = 'icons/mob/mutant_bodyparts.dmi'
 
 /datum/sprite_accessory/tails_animated/lizard/ltiger
 	name = "Light Tiger"
 	icon_state = "ltiger"
+	color_src = MUTCOLORS
+	icon = 'icons/mob/mutant_bodyparts.dmi'
+
+/datum/sprite_accessory/tails/lizard/roiz
+	name = "Lizard (Large)"
+	icon_state = "roiz"
+	color_src = MUTCOLORS
+	dimension_x = 64
+	icon = 'modular_citadel/icons/mob/mam_tails_big.dmi'
+	center = TRUE
 
 /datum/sprite_accessory/tails/lizard/nightstalker
 	name = "Nightstalker"
 	icon_state = "nightstalker"
-	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
 
 /datum/sprite_accessory/tails_animated/lizard/nightstalker
 	name = "Nightstalker"
 	icon_state = "nightstalker"
-	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails/lizard/longstalker
+	name = "Nightstalker (Large)"
+	icon_state = "longstalker"
+	matrixed_sections = MATRIX_RED_GREEN
+	dimension_x = 64
+	icon = 'modular_citadel/icons/mob/mam_tails_big.dmi'
+	center = TRUE
+
+/datum/sprite_accessory/tails/lizard/raptor
+	name = "Raptor"
+	icon_state = "raptor"
+	matrixed_sections = MATRIX_RED_BLUE
 
 /datum/sprite_accessory/tails/lizard/reptilian
 	name = "Reptilian"
 	icon_state = "guilmon"
-	color_src = MATRIXED
-	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
 	matrixed_sections = MATRIX_RED
 
 /datum/sprite_accessory/tails_animated/lizard/reptilian
 	name = "Reptilian"
 	icon_state = "guilmon"
-	color_src = MATRIXED
-	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
 	matrixed_sections = MATRIX_RED
 
 /datum/sprite_accessory/tails/lizard/smooth
 	name = "Smooth"
 	icon_state = "smooth"
+	color_src = MUTCOLORS
+	icon = 'icons/mob/mutant_bodyparts.dmi'
 
 /datum/sprite_accessory/tails_animated/lizard/smooth
 	name = "Smooth"
 	icon_state = "smooth"
+	color_src = MUTCOLORS
+	icon = 'icons/mob/mutant_bodyparts.dmi'
+
+/datum/sprite_accessory/tails/lizard/snaketail
+	name = "Snake"
+	icon_state = "snaketail"
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/tails/lizard/snakelarge
+	name = "Snake (Large)"
+	icon_state = "snakelarge"
+	dimension_x = 64
+	icon = 'modular_citadel/icons/mob/mam_tails_big.dmi'
+	center = TRUE
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails_animated/lizard/snakelarge
+	name = "Snake (Large)"
+	icon_state = "snakelarge"
+	dimension_x = 64
+	icon = 'modular_citadel/icons/mob/mam_tails_big.dmi'
+	center = TRUE
+	matrixed_sections = MATRIX_RED_GREEN
 
 /datum/sprite_accessory/tails/lizard/spikes
 	name = "Spikes"
 	icon_state = "spikes"
+	color_src = MUTCOLORS
+	icon = 'icons/mob/mutant_bodyparts.dmi'
 
 /datum/sprite_accessory/tails_animated/lizard/spikes
 	name = "Spikes"
 	icon_state = "spikes"
+	color_src = MUTCOLORS
+	icon = 'icons/mob/mutant_bodyparts.dmi'
 
 /datum/sprite_accessory/tails/lizard/thick
 	name = "Thick"
 	icon_state = "thick"
+	color_src = MUTCOLORS
+	icon = 'icons/mob/mutant_bodyparts.dmi'
 
 /datum/sprite_accessory/tails_animated/lizard/thick
 	name = "Thick"
 	icon_state = "thick"
+	color_src = MUTCOLORS
+	icon = 'icons/mob/mutant_bodyparts.dmi'
 
 /datum/sprite_accessory/tails/lizard/viper
 	name = "Viper"
-	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
 	icon_state = "seviper"
-	color_src = MATRIXED
 	matrixed_sections = MATRIX_ALL
 
 /datum/sprite_accessory/tails_animated/lizard/viper
 	name = "Viper"
-	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
 	icon_state = "seviper"
-	color_src = MATRIXED
 	matrixed_sections = MATRIX_ALL
+
+/datum/sprite_accessory/tails/lizard/westerndragon
+	name = "Western Dragon (Large)"
+	icon_state = "westerndragon"
+	dimension_x = 64
+	icon = 'modular_citadel/icons/mob/mam_tails_big.dmi'
+	center = TRUE
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails_animated/lizard/westerndragon
+	name = "Western Dragon (Large)"
+	icon_state = "westerndragon"
+	dimension_x = 64
+	icon = 'modular_citadel/icons/mob/mam_tails_big.dmi'
+	center = TRUE
+	matrixed_sections = MATRIX_RED_GREEN
 
 /******************************************
 ************** Human Tails ****************
@@ -493,10 +596,6 @@
 /datum/sprite_accessory/tails_animated/human/ltiger
 	name = "Light Tiger"
 	icon_state = "ltiger"
-
-/datum/sprite_accessory/tails/human/lizardalt
-	name = "Lizard"
-	icon_state = "charmander"
 
 /datum/sprite_accessory/tails/human/murid
 	name = "Murid"
@@ -1350,10 +1449,6 @@
 	icon_state = "ltiger"
 	color_src = MUTCOLORS
 	icon = 'icons/mob/mutant_bodyparts.dmi'
-
-/datum/sprite_accessory/tails/mam_tails/lizardalt
-	name = "Lizard"
-	icon_state = "charmander"
 
 /datum/sprite_accessory/tails/mam_tails/roiz
 	name = "Lizard (Large)"
