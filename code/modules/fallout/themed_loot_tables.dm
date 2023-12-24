@@ -265,7 +265,7 @@
 		/obj/item/gun/energy/laser/aer12 = 10,
 		/obj/effect/spawner/bundle/f13/combat_rifle = 6,
 		/obj/effect/spawner/bundle/f13/bozar = 5,
-		/obj/item/gun/ballistic/automatic/m1919 = 2,
+		/obj/item/gun/ballistic/automatic/lmg/m1919 = 2,
 		/obj/item/twohanded/sledgehammer/supersledge = 5,
 		/obj/item/melee/powerfist = 5,
 		/obj/item/twohanded/thermic_lance = 2,

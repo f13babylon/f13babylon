@@ -17,8 +17,8 @@
 /area/awaymission/vr/murderdome)
 "d" = (
 /obj/structure/rack,
-/obj/item/gun/ballistic/automatic/r84,
-/obj/item/gun/ballistic/automatic/r84,
+/obj/item/gun/ballistic/automatic/lmg/r84,
+/obj/item/gun/ballistic/automatic/lmg/r84,
 /turf/open/indestructible,
 /area/awaymission/vr/murderdome)
 "e" = (

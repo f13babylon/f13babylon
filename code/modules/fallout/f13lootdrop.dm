@@ -903,7 +903,6 @@
 				/obj/effect/spawner/bundle/f13/service,
 				/obj/effect/spawner/bundle/f13/smg10mm,
 				/obj/effect/spawner/bundle/f13/auto5,
-				/obj/effect/spawner/bundle/f13/marksman,
 				/obj/effect/spawner/bundle/f13/m1garand,
 				/obj/effect/spawner/bundle/f13/deagle,
 				/obj/effect/spawner/bundle/f13/automag,
@@ -1314,14 +1313,14 @@
 /obj/effect/spawner/bundle/f13/r84
 	name = "light machine gun and ammo spawner"
 	items = list(
-		/obj/item/gun/ballistic/automatic/r84,
+		/obj/item/gun/ballistic/automatic/lmg/r84,
 		/obj/item/ammo_box/magazine/lmg
 )
 
 /obj/effect/spawner/bundle/f13/rpd
 	name = "chinese light machine gun and ammo spawner"
 	items = list(
-		/obj/item/gun/ballistic/automatic/rpd,
+		/obj/item/gun/ballistic/automatic/lmg/rpd,
 		/obj/item/ammo_box/magazine/rpd
 )
 
@@ -1568,13 +1567,6 @@
 	items = list(
 				/obj/item/gun/ballistic/automatic/m72,
 				/obj/item/ammo_box/magazine/m2mm
-	)
-
-/obj/effect/spawner/bundle/f13/bar
-	name = "automatic rifle and ammo spawner"
-	items = list(
-			/obj/item/gun/ballistic/automatic/bar,
-			/obj/item/ammo_box/magazine/m762mm,
 	)
 
 /obj/effect/spawner/bundle/f13/rocketlauncher

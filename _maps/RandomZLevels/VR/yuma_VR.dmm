@@ -2220,7 +2220,7 @@
 /obj/item/gun/ballistic/automatic/m1garand/sks,
 /obj/item/gun/ballistic/automatic/marksman,
 /obj/item/gun/ballistic/automatic/marksman/sniper,
-/obj/item/gun/ballistic/automatic/r84,
+/obj/item/gun/ballistic/automatic/lmg/r84,
 /obj/item/gun/ballistic/automatic/rangemaster,
 /obj/item/gun/ballistic/automatic/rangemaster/scoped,
 /obj/item/gun/ballistic/automatic/rangemaster/scoped/mid,

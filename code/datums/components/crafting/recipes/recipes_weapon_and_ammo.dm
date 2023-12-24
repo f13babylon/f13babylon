@@ -1073,7 +1073,7 @@
 //R84 LMG
 /datum/crafting_recipe/r84
 	name = "R84 LMG"
-	result = /obj/item/gun/ballistic/automatic/r84
+	result = /obj/item/gun/ballistic/automatic/lmg/r84
 	reqs = list(/obj/item/stack/sheet/metal = 10,
 				/obj/item/advanced_crafting_components/assembly = 1,
 				/obj/item/advanced_crafting_components/receiver = 1,
@@ -1089,7 +1089,7 @@
 //RPD LMG
 /datum/crafting_recipe/rpd
 	name = "RPD LMG"
-	result = /obj/item/gun/ballistic/automatic/rpd
+	result = /obj/item/gun/ballistic/automatic/lmg/rpd
 	reqs = list(/obj/item/stack/sheet/metal = 20,
 				/obj/item/advanced_crafting_components/assembly = 1,
 				/obj/item/advanced_crafting_components/alloys = 1,
