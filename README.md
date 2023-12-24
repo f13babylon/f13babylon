@@ -160,7 +160,7 @@ Web delivery of game resources makes it quicker for players to join and reduces 
 
 ## CONTRIBUTING
 
-Please see our community discord for information on contributing! Also, contributing.md.
+Please see (.github/CONTRIBUTING.md) OR our Discord!
 
 ## DISCLAIMER
 
