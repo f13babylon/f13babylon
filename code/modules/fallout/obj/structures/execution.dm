@@ -31,7 +31,7 @@
 		if(HAS_TRAIT(user, TRAIT_PACIFISM) && L.stat != DEAD)
 			to_chat(user, "<span class='warning'>You don't want to hurt a living creature!</span>")
 			return
-		L.visible_message("<span class='danger'>[user] is tying [L] on [src]!</span>", "<span class='userdanger'>[user] is tying you on [src]!</span>")
+		L.visible_message("<span class='danger'>[user] is tying [L] to [src]!</span>", "<span class='userdanger'>[user] is tying you to [src]!</span>")
 		if(do_mob(user, src, 120))
 			if(has_buckled_mobs()) //                to prevent spam/queing up attacks
 				return
