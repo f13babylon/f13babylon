@@ -59,12 +59,10 @@
 /datum/quirk/dwarfism/add()
 	ADD_TRAIT(quirk_holder, TRAIT_DWARF, GENETIC_MUTATION) //better here than mob trait to add genetic mutation
 	quirk_holder.AddElement(/datum/element/dwarfism, COMSIG_HUMAN_MUTATION_LOSS, src)
-	passtable_on(quirk_holder, GENETIC_MUTATION)
 
 /datum/quirk/dwarfism/remove()
 	REMOVE_TRAIT(quirk_holder, TRAIT_DWARF, GENETIC_MUTATION)
 	quirk_holder.RemoveElement(/datum/element/dwarfism, COMSIG_HUMAN_MUTATION_LOSS, src)
-	passtable_off(quirk_holder, GENETIC_MUTATION)
 
 /datum/quirk/depression
 	name = "Depression"
