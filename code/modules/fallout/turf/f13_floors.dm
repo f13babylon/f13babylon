@@ -56,20 +56,9 @@
 	desc = "Small pebbles, lots of them."
 	icon = 'icons/fallout/turfs/ground.dmi'
 	icon_state = "gravel"
-
-/turf/open/floor/plating/f13/inside/gravel/edge
-	icon_state = "graveledge"
-
-/turf/open/floor/plating/f13/inside/gravel/corner
-	icon_state = "gravelcorner"
-
-
-//GRAVEL OUTDOORS
-/turf/open/floor/plating/f13/inside/gravel
-	name = "gravel"
-	desc = "Small pebbles, lots of them."
-	icon = 'icons/fallout/turfs/ground.dmi'
-	icon_state = "gravel"
+	footstep = FOOTSTEP_GRAVEL
+	barefootstep = FOOTSTEP_GRAVEL
+	clawfootstep = FOOTSTEP_GRAVEL
 	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/plating/f13/inside/gravel/edge
@@ -77,9 +66,6 @@
 
 /turf/open/floor/plating/f13/inside/gravel/corner
 	icon_state = "gravelcorner"
-
-
-//New standard wood floor for most areas, oak for Legion and pure log cabins only, maple for NCR and mayor only, maybe a diner.
 
 #define SHROOM_SPAWN	1
 

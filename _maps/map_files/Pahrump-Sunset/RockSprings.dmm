@@ -6462,11 +6462,6 @@
 	icon_state = "savannah4"
 	},
 /area/f13/building)
-"gsH" = (
-/turf/open/floor/plasteel/barber{
-	icon_state = "plating"
-	},
-/area/f13/building)
 "gsQ" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -16866,8 +16861,12 @@
 /turf/closed/wall/f13/wood,
 /area/f13/building)
 "qTr" = (
-/turf/open/indestructible/ground/outside/dirt/harsh,
-/area/f13/building)
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 8
+	},
+/obj/machinery/gear_painter,
+/turf/open/floor/plasteel/f13/stone/rugged,
+/area/f13/legion)
 "qTz" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /obj/effect/decal/cleanable/dirt{
@@ -30601,11 +30600,11 @@ wgU
 wgU
 ezB
 rBc
-qTr
+uQR
 lVx
 lVx
 lVx
-qTr
+uQR
 bIb
 jgq
 wgU
@@ -31629,11 +31628,11 @@ wgU
 fmg
 gXH
 rBc
-qTr
+uQR
 oKS
 vLX
 oKS
-qTr
+uQR
 bIb
 rLV
 wgU
@@ -42006,7 +42005,7 @@ gtX
 hfe
 dRc
 gtX
-hwN
+qTr
 gtX
 gtX
 gtX
@@ -58092,7 +58091,7 @@ paT
 qWV
 hZH
 cPJ
-qTr
+uQR
 hgP
 hgP
 hgP
@@ -58349,7 +58348,7 @@ paT
 qWV
 hZH
 vId
-qTr
+uQR
 hgP
 wEo
 hgP
@@ -63431,7 +63430,7 @@ hgP
 crJ
 nWu
 lKP
-qTr
+uQR
 whm
 kCc
 agS
@@ -63687,9 +63686,9 @@ hgP
 pgy
 crJ
 egn
-qTr
-qTr
-qTr
+uQR
+uQR
+uQR
 lKP
 qHs
 crJ
@@ -63944,10 +63943,10 @@ hgP
 hgP
 crJ
 pKu
-qTr
-qTr
+uQR
+uQR
 pUK
-qTr
+uQR
 pGl
 crJ
 nzH
@@ -65223,7 +65222,7 @@ hgP
 hgP
 crJ
 uve
-qTr
+uQR
 vTz
 cxQ
 crJ
@@ -65480,8 +65479,8 @@ hgP
 hgP
 crJ
 cDj
-qTr
-qTr
+uQR
+uQR
 pUK
 crJ
 gct
@@ -65738,8 +65737,8 @@ hgP
 crJ
 vTA
 lKP
-qTr
-qTr
+uQR
+uQR
 cti
 paT
 paT
@@ -65994,8 +65993,8 @@ hgP
 hgP
 crJ
 okN
-qTr
-qTr
+uQR
+uQR
 lxK
 crJ
 toe
@@ -66251,8 +66250,8 @@ hgP
 hgP
 crJ
 tUp
-qTr
-qTr
+uQR
+uQR
 sJa
 crJ
 iAF
@@ -66268,7 +66267,7 @@ lof
 rqF
 lof
 crJ
-qTr
+uQR
 osN
 sSK
 fee
@@ -66525,8 +66524,8 @@ iAF
 vTD
 pPg
 cti
-qTr
-qTr
+uQR
+uQR
 uSS
 fee
 efV
@@ -67281,12 +67280,12 @@ agk
 hgP
 crJ
 bNn
-qTr
+uQR
 aUa
 nFg
 oBy
 pUK
-qTr
+uQR
 iQF
 cCx
 swE
@@ -67537,11 +67536,11 @@ rTl
 agk
 hgP
 crJ
-qTr
+uQR
 cto
 tUr
 wyA
-qTr
+uQR
 kPg
 tUr
 olr
@@ -76865,7 +76864,7 @@ drm
 fLq
 xsC
 lHr
-qTr
+uQR
 aru
 xsC
 xsC
@@ -79438,8 +79437,8 @@ vhd
 vhd
 vhd
 vhd
-qTr
-qTr
+uQR
+uQR
 vhd
 oZB
 vhd
@@ -79698,7 +79697,7 @@ oqo
 vhd
 sNV
 hNI
-qTr
+uQR
 brZ
 fgA
 vhd
@@ -82007,7 +82006,7 @@ rPW
 rPW
 tgY
 xsC
-gsH
+fgA
 vIJ
 vIJ
 tgY

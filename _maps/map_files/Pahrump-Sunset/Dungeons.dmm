@@ -103,7 +103,8 @@
 /area/f13/bunker)
 "adl" = (
 /mob/living/simple_animal/hostile/renegade/guardian{
-	extra_projectiles = 2
+	extra_projectiles = 2;
+	melee_queue_distance = 2
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
@@ -194,9 +195,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/vault)
 "ahT" = (
-/obj/machinery/door/airlock/hatch{
-	req_access_txt = "120"
-	},
+/obj/machinery/door/unpowered/secure_bos,
 /turf/open/floor/plating/tunnel,
 /area/f13/underground/cave)
 "aiH" = (
@@ -1411,6 +1410,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/vault)
+"bNM" = (
+/obj/machinery/door/unpowered/secure_NCR,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
 "bNV" = (
 /obj/structure/cargocrate,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -2565,6 +2568,11 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/f13/vault)
+"dgI" = (
+/obj/structure/timeddoor/sixtyminute,
+/obj/machinery/door/unpowered/secure_bos,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
 "dgM" = (
 /mob/living/simple_animal/hostile/supermutant/rangedmutant,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
@@ -3341,6 +3349,12 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
+"ebu" = (
+/obj/machinery/door/unpowered/secure_bos,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess2"
+	},
+/area/f13/underground/cave)
 "ebv" = (
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier5,
 /turf/open/indestructible/ground/outside/dirt,
@@ -6268,6 +6282,11 @@
 /obj/structure/barricade/bars,
 /turf/open/floor/plasteel/f13/vault_floor/green/side,
 /area/f13/bunker)
+"hyk" = (
+/obj/structure/barricade/sandbags,
+/obj/structure/timeddoor/sixtyminute,
+/turf/closed/indestructible/rock,
+/area/f13/underground/cave)
 "hyK" = (
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/barber{
@@ -6472,6 +6491,10 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/ahs)
+"hLo" = (
+/obj/structure/timeddoor/sixtyminute,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/underground/cave)
 "hLv" = (
 /obj/effect/decal/remains/human,
 /obj/structure/closet,
@@ -6482,7 +6505,7 @@
 	},
 /area/f13/bunker)
 "hLU" = (
-/obj/structure/simple_door/bunker,
+/obj/machinery/door/unpowered/securedoor/legion,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "hNR" = (
@@ -8795,6 +8818,7 @@
 /obj/machinery/computer/shuttle/southbunkerelevator{
 	dir = 4
 	},
+/obj/structure/timeddoor,
 /turf/open/floor/plasteel/f13/vault_floor/green/corner{
 	dir = 4
 	},
@@ -9449,7 +9473,8 @@
 "ldm" = (
 /obj/machinery/hydroponics/soil/crafted,
 /mob/living/simple_animal/hostile/renegade/guardian{
-	extra_projectiles = 2
+	extra_projectiles = 2;
+	melee_queue_distance = 2
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -10134,7 +10159,8 @@
 	name = "prewar lounge chair"
 	},
 /mob/living/simple_animal/hostile/renegade/guardian{
-	extra_projectiles = 2
+	extra_projectiles = 2;
+	melee_queue_distance = 2
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
@@ -10773,6 +10799,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/vault)
 "mHk" = (
+/obj/structure/timeddoor,
 /turf/open/floor/plasteel/f13/vault_floor/green/side{
 	dir = 4
 	},
@@ -11221,6 +11248,10 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/bunker)
+"nlP" = (
+/obj/structure/timeddoor/sixtyminute,
+/turf/closed/wall/f13/vault,
+/area/f13/underground/cave)
 "nlT" = (
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -11255,6 +11286,7 @@
 	dir = 1;
 	light_color = "#706891"
 	},
+/obj/structure/barricade/sandbags,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "nnM" = (
@@ -12267,9 +12299,11 @@
 	},
 /area/f13/ahs)
 "orZ" = (
-/obj/structure/simple_door/metal/barred,
-/turf/open/floor/f13/wood,
-/area/f13/legion)
+/obj/machinery/door/unpowered/secure_steeldoor{
+	req_access_txt = "134"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
 "osj" = (
 /obj/structure/flora/stump,
 /turf/open/indestructible/ground/outside/dirt{
@@ -12317,6 +12351,14 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/vault)
+"ovo" = (
+/obj/machinery/door/unpowered/secure_steeldoor{
+	req_access_txt = "134"
+	},
+/turf/open/floor/f13{
+	icon_state = "darkdirtysolid"
+	},
+/area/f13/underground/cave)
 "ovp" = (
 /obj/item/clothing/under/patriotsuit,
 /obj/effect/decal/cleanable/cobweb,
@@ -12354,6 +12396,11 @@
 	icon_state = "showroomfloor"
 	},
 /area/f13/ahs)
+"oyK" = (
+/obj/structure/barricade/sandbags,
+/obj/structure/timeddoor/sixtyminute,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
 "oyW" = (
 /obj/item/stack/sheet/glass/ten,
 /obj/structure/rack,
@@ -13304,6 +13351,10 @@
 	icon_state = "redrustyfull"
 	},
 /area/f13/ahs)
+"prO" = (
+/obj/machinery/door/unpowered/secure_NCR,
+/turf/open/floor/plasteel/grimy,
+/area/f13/ncr)
 "pte" = (
 /obj/machinery/door/airlock/silver{
 	name = "Bathroom"
@@ -16044,6 +16095,13 @@
 /obj/effect/landmark/start/f13/vaultscientist,
 /turf/open/floor/plasteel/dark,
 /area/f13/vault)
+"sIJ" = (
+/obj/structure/simple_door/metal/barred,
+/obj/structure/timeddoor/sixtyminute,
+/turf/open/floor/f13{
+	icon_state = "darkdirtysolid"
+	},
+/area/f13/mountain_bunker)
 "sIR" = (
 /obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/effect/decal/cleanable/blood/old,
@@ -16590,7 +16648,8 @@
 "ttV" = (
 /obj/structure/chair/bench,
 /mob/living/simple_animal/hostile/renegade/guardian{
-	extra_projectiles = 2
+	extra_projectiles = 2;
+	melee_queue_distance = 2
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
@@ -16629,6 +16688,7 @@
 /obj/effect/turf_decal/caution/stand_clear{
 	dir = 4
 	},
+/obj/structure/timeddoor,
 /turf/open/floor/plasteel/f13/vault_floor/green/side{
 	dir = 4
 	},
@@ -18871,6 +18931,10 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/caves)
+"vQX" = (
+/obj/machinery/door/unpowered/securedoor/legion,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
 "vRa" = (
 /obj/item/twohanded/required/kirbyplants{
 	icon_state = "plant-21"
@@ -19636,6 +19700,7 @@
 /area/f13/bunker)
 "wQG" = (
 /obj/structure/reagent_dispensers/barrel/three,
+/obj/structure/timeddoor,
 /turf/open/floor/plasteel/f13/vault_floor/green/corner,
 /area/f13/bunker)
 "wRn" = (
@@ -19946,6 +20011,13 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/caves)
+"xfd" = (
+/obj/machinery/door/unpowered/secure_NCR,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
+/area/f13/ncr)
 "xgO" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
@@ -20138,6 +20210,13 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/ahs)
+"xrN" = (
+/obj/structure/timeddoor/sixtyminute,
+/obj/machinery/door/unpowered/secure_steeldoor{
+	req_access_txt = "134"
+	},
+/turf/closed/mineral/random/low_chance,
+/area/f13/underground/cave)
 "xsb" = (
 /obj/machinery/door/airlock/wood{
 	id_tag = "vaultd3";
@@ -20606,6 +20685,9 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/caves)
+"yde" = (
+/turf/closed/wall/mineral/wood,
+/area/f13/underground/cave)
 "ydV" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superlow,
 /turf/open/indestructible/ground/inside/mountain,
@@ -21698,6 +21780,18 @@ gRX
 dFr
 shC
 shC
+wgF
+wgF
+wgF
+wgF
+wgF
+wgF
+wgF
+wgF
+wgF
+wgF
+wgF
+shC
 shC
 aTA
 aTA
@@ -21739,25 +21833,13 @@ aTA
 aTA
 aTA
 aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
+shC
+wgF
+wgF
+fxg
+wgF
+wgF
+wgF
 aTA
 aTA
 aTA
@@ -21941,10 +22023,10 @@ bVH
 aTA
 aTA
 aTA
-aTA
-shC
-shC
-shC
+wgF
+wgF
+wgF
+huB
 lix
 kHC
 vmb
@@ -21953,6 +22035,21 @@ xHM
 lix
 tNu
 lix
+huB
+wgF
+wgF
+wgF
+shC
+shC
+shC
+shC
+shC
+shC
+shC
+shC
+wgF
+wgF
+wgF
 shC
 aTA
 aTA
@@ -21987,35 +22084,20 @@ aTA
 aTA
 aTA
 aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
+wgF
+wgF
+wgF
+wgF
+wgF
+wgF
+orZ
+wgF
+wgF
+wgF
+wgF
+wgF
+wgF
+wgF
 aTA
 aTA
 aTA
@@ -22167,9 +22249,9 @@ shC
 shC
 aTA
 aTA
-aTA
-aTA
-aTA
+shC
+shC
+shC
 aTA
 bVH
 bVH
@@ -22198,10 +22280,10 @@ bVH
 bVH
 bVH
 bVH
-aTA
-shC
-shC
-shC
+ehW
+wgF
+wgF
+huB
 lix
 uFK
 vmb
@@ -22210,6 +22292,9 @@ xHM
 xHM
 xHM
 lix
+huB
+wgF
+shC
 shC
 aTA
 aTA
@@ -22219,13 +22304,10 @@ aTA
 aTA
 aTA
 aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
+shC
+shC
+ehW
+shC
 aTA
 aTA
 aTA
@@ -22258,24 +22340,24 @@ aTA
 aTA
 aTA
 aTA
+wgF
+wgF
+fxg
+fxg
+wgF
+wgF
 aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
-aTA
+shC
+shC
+orZ
+gvq
+shC
+shC
+wgF
+wgF
+wgF
+wgF
+wgF
 opi
 scm
 iCX
@@ -22423,10 +22505,10 @@ shC
 shC
 shC
 aTA
-aTA
-aTA
-aTA
-aTA
+shC
+shC
+wgF
+bNM
 bVH
 bVH
 bVH
@@ -22458,18 +22540,18 @@ bVH
 bVH
 shC
 shC
+huB
+sIJ
+xHM
+xHM
+xHM
+xHM
+xHM
+xHM
+sIJ
+huB
 shC
-lix
-xHM
-xHM
-xHM
-xHM
-xHM
-xHM
-lix
 shC
-aTA
-aTA
 bVH
 bVH
 bVH
@@ -22515,26 +22597,26 @@ bVH
 bVH
 bVH
 aTA
+wgF
+wgF
+wgF
+wgF
+wgF
 aTA
 aTA
 aTA
 aTA
+wgF
 aTA
 aTA
+shC
 aTA
 aTA
-bVH
-bVH
-bVH
-bVH
-aTA
-aTA
-aTA
-aTA
+wgF
 fxg
 wgF
 huB
-afj
+ovo
 iCX
 xGR
 iCX
@@ -22679,11 +22761,11 @@ shC
 shC
 shC
 shC
-aTA
-aTA
-aTA
-aTA
-aTA
+shC
+shC
+wgF
+wgF
+yde
 bVH
 bVH
 bVH
@@ -22724,9 +22806,9 @@ xHM
 xHM
 xHM
 lix
+huB
 shC
 aTA
-aTA
 bVH
 rVX
 bVH
@@ -22771,27 +22853,27 @@ bVH
 bVH
 bVH
 bVH
+wgF
+wgF
 aTA
 aTA
 aTA
-aTA
-aTA
-aTA
-bVH
-bVH
-bVH
-bVH
-bVH
+wgF
 bVH
 bVH
 aTA
 aTA
+wgF
+wgF
+wgF
+shC
+shC
 aTA
 wgF
 fxg
 wgF
 huB
-afj
+ovo
 iCX
 xGR
 iCX
@@ -22936,11 +23018,11 @@ shC
 shC
 shC
 shC
-aTA
-aTA
-aTA
-aTA
-aTA
+shC
+wgF
+wgF
+shC
+shC
 bVH
 bVH
 bVH
@@ -22981,8 +23063,8 @@ hHG
 xHM
 xHM
 lix
+huB
 shC
-aTA
 aTA
 bVH
 bVH
@@ -23037,17 +23119,17 @@ bVH
 bVH
 bVH
 bVH
-bVH
-bVH
-bVH
-bVH
-bVH
+aTA
+aTA
 aTA
 wgF
+aTA
+shC
 wgF
 wgF
 wgF
-opi
+wgF
+huB
 scm
 iCX
 ixz
@@ -23193,10 +23275,10 @@ shC
 shC
 shC
 shC
-aTA
-aTA
-aTA
-aTA
+wgF
+wgF
+wgF
+shC
 bVH
 bVH
 bVH
@@ -23238,73 +23320,73 @@ hHG
 xHM
 xHM
 lix
+huB
 shC
 aTA
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+xpR
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+xpR
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
+bVH
 aTA
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-xpR
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-xpR
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
 wgF
-fxg
-aTA
-aTA
-opi
+wgF
+shC
+gvq
+orZ
+shC
+shC
+huB
 gvq
 gvq
 gvq
@@ -23450,10 +23532,10 @@ shC
 shC
 shC
 shC
-aTA
-aTA
-aTA
-aTA
+wgF
+wgF
+shC
+shC
 bVH
 bVH
 bVH
@@ -23495,9 +23577,9 @@ xHM
 xHM
 xHM
 lix
+huB
 shC
 aTA
-aTA
 bVH
 rVX
 bVH
@@ -23554,16 +23636,16 @@ bVH
 bVH
 bVH
 bVH
-bVH
-bVH
-bVH
-bVH
-bVH
 aTA
+wgF
+wgF
+wgF
+wgF
 aTA
-opi
-aTA
-aTA
+shC
+huB
+wgF
+wgF
 gvq
 llw
 iCX
@@ -23707,7 +23789,7 @@ dhw
 dhw
 dhw
 dhw
-dhw
+prO
 dhw
 dhw
 dhw
@@ -23752,8 +23834,8 @@ lix
 lix
 lix
 lix
+huB
 shC
-aTA
 rVX
 rVX
 bVH
@@ -23812,15 +23894,15 @@ bVH
 bVH
 bVH
 bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-opi
 aTA
 aTA
+aTA
+wgF
+wgF
+shC
+ldZ
+shC
+wgF
 gvq
 gvq
 gvq
@@ -23964,7 +24046,7 @@ dhw
 dhw
 dhw
 dhw
-dhw
+prO
 dhw
 dhw
 dhw
@@ -24009,8 +24091,8 @@ huB
 shC
 shC
 shC
+ehW
 shC
-aTA
 nfN
 bVH
 bVH
@@ -24071,14 +24153,14 @@ bVH
 bVH
 bVH
 bVH
-bVH
-bVH
-bVH
-bVH
-fcd
-opi
-opi
-opi
+aTA
+wgF
+wgF
+aTA
+hLo
+ldZ
+xrN
+ldZ
 opi
 opi
 opi
@@ -24265,8 +24347,8 @@ wgF
 wgF
 aTA
 aTA
-aTA
-aTA
+shC
+wgF
 xpR
 xpR
 xpR
@@ -24330,15 +24412,15 @@ bVH
 bVH
 bVH
 bVH
-bVH
-bVH
-bVH
-bVH
-bVH
-bVH
 aTA
 aTA
-aTA
+wgF
+wgF
+wgF
+wgF
+wgF
+wgF
+wgF
 aTA
 shC
 "}
@@ -24522,8 +24604,8 @@ wgF
 wgF
 aTA
 aTA
-aTA
-aTA
+shC
+wgF
 bVH
 bVH
 bVH
@@ -24589,13 +24671,13 @@ bVH
 bVH
 bVH
 bVH
-bVH
-bVH
-bVH
-bVH
+aTA
+wgF
 aTA
 aTA
 aTA
+wgF
+wgF
 aTA
 shC
 "}
@@ -24851,7 +24933,7 @@ bVH
 bVH
 bVH
 aTA
-aTA
+wgF
 aTA
 aTA
 shC
@@ -25000,7 +25082,7 @@ emc
 bgU
 mON
 mON
-isz
+xfd
 rEK
 rEK
 rEK
@@ -25108,7 +25190,7 @@ bVH
 bVH
 bVH
 aTA
-aTA
+wgF
 aTA
 aTA
 shC
@@ -25257,7 +25339,7 @@ emc
 bgU
 mON
 mON
-isz
+xfd
 rEK
 rEK
 rEK
@@ -25364,8 +25446,8 @@ bVH
 bVH
 bVH
 bVH
-aTA
-aTA
+wgF
+wgF
 aTA
 aTA
 shC
@@ -26277,7 +26359,7 @@ dhw
 dhw
 dhw
 dhw
-dhw
+prO
 dhw
 dhw
 dhw
@@ -26534,7 +26616,7 @@ dhw
 dhw
 dhw
 dhw
-dhw
+prO
 dhw
 dhw
 dhw
@@ -26790,9 +26872,9 @@ shC
 shC
 shC
 shC
+wgF
+wgF
 shC
-aTA
-aTA
 bVH
 bVH
 bVH
@@ -27047,9 +27129,9 @@ shC
 shC
 shC
 shC
+wgF
+wgF
 shC
-aTA
-aTA
 bVH
 bVH
 bVH
@@ -27305,8 +27387,8 @@ shC
 shC
 shC
 shC
-aTA
-aTA
+wgF
+yde
 bVH
 bVH
 bVH
@@ -27562,8 +27644,8 @@ shC
 shC
 shC
 shC
-aTA
-aTA
+wgF
+bNM
 bVH
 bVH
 bVH
@@ -27819,8 +27901,8 @@ shC
 shC
 shC
 shC
-opi
-opi
+ldZ
+ldZ
 fcd
 fcd
 fcd
@@ -41289,11 +41371,11 @@ nph
 bVH
 bVH
 bVH
-aTA
-aTA
-shC
-shC
-shC
+wgF
+wgF
+vQX
+wgF
+wgF
 shC
 shC
 shC
@@ -41546,13 +41628,13 @@ nph
 cQP
 bVH
 bVH
-aTA
-aTA
-shC
-shC
-shC
-shC
-shC
+wgF
+wgF
+yde
+wgF
+wgF
+wgF
+wgF
 shC
 shC
 shC
@@ -41807,9 +41889,9 @@ aTA
 shC
 shC
 shC
-shC
-shC
-shC
+wgF
+wgF
+wgF
 shC
 shC
 shC
@@ -42053,8 +42135,8 @@ akh
 akh
 imZ
 tCu
-orZ
-orZ
+hLU
+hLU
 tCu
 imZ
 akh
@@ -42066,7 +42148,7 @@ wWG
 wWG
 wWG
 wWG
-wWG
+hLU
 wWG
 wWG
 wWG
@@ -42323,7 +42405,7 @@ wWG
 wWG
 wWG
 wWG
-wWG
+hLU
 wWG
 wWG
 wWG
@@ -43345,7 +43427,7 @@ cZa
 cZa
 cZa
 cZa
-orZ
+hLU
 cZa
 maT
 dMI
@@ -43602,7 +43684,7 @@ cZa
 cZa
 cZa
 cZa
-orZ
+hLU
 cZa
 maT
 dMI
@@ -44335,7 +44417,7 @@ bVH
 bVH
 bVH
 bVH
-opi
+aTA
 aTA
 aTA
 aTA
@@ -44592,7 +44674,7 @@ bVH
 bVH
 bVH
 bVH
-opi
+aTA
 aTA
 aTA
 aTA
@@ -44636,7 +44718,7 @@ wWG
 wWG
 wWG
 wWG
-wWG
+hLU
 wWG
 wWG
 wWG
@@ -44849,7 +44931,7 @@ bVH
 bVH
 bVH
 bVH
-opi
+aTA
 aTA
 aTA
 aTA
@@ -44880,8 +44962,8 @@ akh
 akh
 imZ
 tCu
-orZ
-orZ
+hLU
+hLU
 tCu
 imZ
 akh
@@ -44893,7 +44975,7 @@ wWG
 wWG
 wWG
 wWG
-wWG
+hLU
 wWG
 wWG
 wWG
@@ -45106,15 +45188,15 @@ bVH
 rVX
 bVH
 aTA
-opi
 aTA
-aTA
-aTA
-opi
+ldZ
+ldZ
+ldZ
+ldZ
 huB
 huB
 huB
-opi
+ldZ
 bVH
 bVH
 xpR
@@ -45149,8 +45231,8 @@ shC
 shC
 shC
 shC
-shC
-shC
+wgF
+wgF
 shC
 shC
 shC
@@ -45364,14 +45446,14 @@ bVH
 bVH
 bVH
 bVH
-aTA
-aTA
-aTA
-opi
+nlP
+wgF
+shC
+shC
 kEJ
 wgF
 kEJ
-opi
+ldZ
 bVH
 bVH
 xpR
@@ -45405,9 +45487,9 @@ bVH
 aTA
 shC
 shC
-shC
-shC
-shC
+wgF
+wgF
+wgF
 shC
 shC
 shC
@@ -45621,10 +45703,10 @@ rVX
 bVH
 bVH
 bVH
-aTA
-aTA
-aTA
-ldZ
+dgI
+wgF
+wgF
+shC
 gvq
 ahT
 gvq
@@ -45658,12 +45740,12 @@ bVH
 bVH
 bVH
 bVH
-aTA
-aTA
-shC
-shC
-shC
-shC
+wgF
+wgF
+yde
+wgF
+wgF
+wgF
 shC
 shC
 shC
@@ -45878,10 +45960,10 @@ bVH
 bVH
 bVH
 rVX
-aTA
-aTA
-aTA
-ldZ
+nlP
+fxg
+wgF
+fxg
 iCX
 dXi
 xKA
@@ -45915,11 +45997,11 @@ bVH
 bVH
 bVH
 bVH
-aTA
-aTA
-shC
-shC
-shC
+wgF
+wgF
+vQX
+wgF
+wgF
 shC
 shC
 shC
@@ -46135,10 +46217,10 @@ bVH
 bVH
 bVH
 bVH
-aTA
-aTA
-aTA
 ldZ
+aTA
+dXi
+dXi
 dXi
 gCg
 gCg
@@ -46392,16 +46474,16 @@ bVH
 rVX
 bVH
 bVH
-aTA
-aTA
-aTA
 ldZ
+aTA
+aTA
+dXi
 dXi
 teJ
 dXi
 ldZ
-shC
-shC
+ldZ
+hyk
 bVH
 bVH
 bVH
@@ -46649,17 +46731,17 @@ bVH
 bVH
 bVH
 bVH
-aTA
-aTA
-aTA
 ldZ
+aTA
+aTA
+aTA
 dXi
 teJ
 dXi
-ldZ
 shC
 shC
-shC
+huB
+huB
 bVH
 bVH
 bVH
@@ -46906,19 +46988,19 @@ rVX
 bVH
 bVH
 bVH
-aTA
-aTA
-aTA
 ldZ
+aTA
+aTA
+aTA
 teJ
 dXi
 gCg
+gCg
+ebu
+wgF
+oyK
 huB
-wgF
-wgF
-shC
-shC
-shC
+ldZ
 bVH
 bVH
 bVH
@@ -47163,19 +47245,19 @@ aTA
 aTA
 aTA
 aTA
-aTA
-aTA
-aTA
 ldZ
+aTA
+aTA
+aTA
 vto
 iCX
 iCX
-huB
-wgF
+gCg
+gvq
 wgF
 wgF
 shC
-shC
+ldZ
 aTA
 aTA
 bVH
@@ -47420,10 +47502,10 @@ aTA
 aTA
 aTA
 aTA
-aTA
-aTA
-aTA
 ldZ
+aTA
+aTA
+aTA
 dTc
 tai
 tai
@@ -47432,7 +47514,7 @@ shC
 shC
 shC
 shC
-shC
+ldZ
 shC
 shC
 shC
@@ -47677,10 +47759,10 @@ aTA
 aTA
 aTA
 aTA
-aTA
-aTA
-aTA
 ldZ
+aTA
+aTA
+aTA
 tTZ
 iVr
 iVr
@@ -47689,7 +47771,7 @@ shC
 shC
 shC
 shC
-shC
+ldZ
 shC
 shC
 shC
@@ -57502,14 +57584,14 @@ shC
 shC
 shC
 shC
-oqm
-oqm
-oqm
-oqm
-oqm
-oqm
-oqm
-oqm
+jNS
+jNS
+jNS
+jNS
+jNS
+jNS
+jNS
+jNS
 shC
 shC
 shC
@@ -57759,14 +57841,14 @@ shC
 shC
 shC
 shC
-oqm
+jNS
 ugX
 ugX
 ugX
 ugX
 ugX
 ugX
-oqm
+jNS
 shC
 shC
 shC
@@ -58016,14 +58098,14 @@ shC
 shC
 shC
 shC
-oqm
+jNS
 ugX
 fPw
 fPw
 fPw
 fPw
 ugX
-oqm
+jNS
 shC
 shC
 shC
@@ -58273,14 +58355,14 @@ shC
 shC
 shC
 shC
-oqm
+jNS
 ugX
 fPw
 fPw
 fPw
 fPw
 ugX
-oqm
+jNS
 shC
 shC
 shC
@@ -58530,14 +58612,14 @@ shC
 shC
 shC
 shC
-oqm
+jNS
 ugX
 fPw
 fPw
 pfs
 fPw
 ugX
-oqm
+jNS
 shC
 shC
 shC
@@ -58787,14 +58869,14 @@ shC
 shC
 shC
 shC
-oqm
+jNS
 ugX
 dfi
 avk
 avk
 dfi
 ugX
-oqm
+jNS
 shC
 shC
 shC
@@ -59044,14 +59126,14 @@ shC
 shC
 shC
 shC
-oqm
+jNS
 wQG
 mHk
 tvB
 tvB
 mHk
 kuu
-oqm
+jNS
 shC
 shC
 shC
