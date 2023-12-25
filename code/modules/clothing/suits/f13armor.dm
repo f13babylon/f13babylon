@@ -653,7 +653,7 @@
 	desc = "The pinnacle of pre-war technology armour. This suit of power armor provides substantial protection to the wearer."
 	icon_state = "t51bpowerarmor"
 	item_state = "t51bpowerarmor"
-	slowdown = 0.25 //+0.05 from helmet = total 0.255
+	slowdown = 0.25 //+0.05 from helmet = total 0.3
 	armor = list("melee" = 70, "bullet" = 75, "laser" = 70, "energy" = 35, "bomb" = 65, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 40, "wound" = 50)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 25)
 	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t51b
