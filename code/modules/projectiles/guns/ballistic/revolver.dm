@@ -390,8 +390,6 @@
 	icon_state = "colt6520"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/colt6520
 	fire_sound = 'sound/f13weapons/10mm_fire_02.ogg'
-	var/semi_auto = TRUE	// In OG Fallout 1 design docs this gun was an automatic revolver. Based concept, lets use it like originally intended!
-	//casing_ejector = TRUE	//Auto-ejects casings!
 	recoil = 0.3
 	fire_delay = 4		// Slightly higher than the n99
 	extra_damage = 10	// +4 damage compared to n99

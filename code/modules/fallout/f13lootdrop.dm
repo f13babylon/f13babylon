@@ -891,6 +891,7 @@
 				/obj/effect/spawner/bundle/f13/huntingshotgun,
 				/obj/effect/spawner/bundle/f13/revolver45,
 				/obj/effect/spawner/bundle/f13/smg22,
+				/obj/effect/spawner/bundle/f13/uzi,
 				/obj/effect/spawner/bundle/f13/greasegun
 		)
 
@@ -911,20 +912,20 @@
 	name = "high-mid tier ballistic gun"
 	icon_state = "gunhighmid_loot"
 	loot = list(
-				/obj/effect/spawner/bundle/f13/uzi,
 				/obj/effect/spawner/bundle/f13/mp5,
 				/obj/effect/spawner/bundle/f13/thompson,
 				/obj/effect/spawner/bundle/f13/needler,
 				/obj/effect/spawner/bundle/f13/marksman,
 				/obj/effect/spawner/bundle/f13/shotgunlever,
-				/obj/effect/spawner/bundle/f13/infiltrator,
-				/obj/effect/spawner/bundle/f13/brushgun,
+				/obj/effect/spawner/bundle/f13/assault_rifle,
+				/obj/effect/spawner/bundle/f13/ak112,
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/high
 	name = "high tier ballistic gun"
 	icon_state = "gunhigh_loot"
-	loot = list(/obj/effect/spawner/bundle/f13/assault_rifle = 20,
+	loot = list(/obj/effect/spawner/bundle/f13/brushgun = 20,
+				/obj/effect/spawner/bundle/f13/infiltrator = 15,
 				/obj/effect/spawner/bundle/f13/r84 = 10,
 				/obj/effect/spawner/bundle/f13/dkssniper = 15,
 				/obj/effect/spawner/bundle/f13/pistol14 = 15,
@@ -1316,6 +1317,13 @@
 	name = "assault carbine and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/assault_carbine,
+				/obj/item/ammo_box/magazine/m5mm
+				)
+
+/obj/effect/spawner/bundle/f13/ak112
+	name = "ak112 and ammo spawner"
+	items = list(
+				/obj/item/gun/ballistic/automatic/ak112,
 				/obj/item/ammo_box/magazine/m5mm
 				)
 

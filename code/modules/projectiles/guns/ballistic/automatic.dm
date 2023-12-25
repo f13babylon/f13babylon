@@ -809,10 +809,11 @@
 /obj/item/gun/ballistic/automatic/assault_carbine/ak112
 	name = "old assault rifle"
 	desc = "An old Colt branded AK-112 assault carbine, out of date even before the Great War started. Somehow it's held up well, despite its aging."
+	icon = 'icons/obj/guns/gunfruits2022/rifle.dmi'
 	icon_state = "ak112"
-	item_state = "ak112"
-	icon_prefix = "ak112"
-	autofire_shot_delay = 2
+	item_state = "handmade_rifle"
+	icon_prefix = "handmade_rifle"
+	autofire_shot_delay = 2.5
 	spread = 20 //brrrrrt
 	can_scope = FALSE
 	can_suppress = FALSE
