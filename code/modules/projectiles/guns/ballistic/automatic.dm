@@ -266,7 +266,7 @@
 	name = "advanced 9mm SMG"
 	desc = "An integrally suppressed MP5SD6 made by Heckler & Koch, renowned for its accuracy in comparison to other machine guns of its type."
 	icon_state = "mp5"
-	item_state = "fal"
+	item_state = "mp5"
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 	mag_type = /obj/item/ammo_box/magazine/msmg9mm
 	spread = 6
