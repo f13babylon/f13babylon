@@ -238,7 +238,7 @@
 		)
 
 /datum/outfit/loadout/gysgt_caster
-	name = "Close Quarters Assaultman"
+	name = "Point Defense Assaultman"
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/plasma/caster = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 5,
@@ -258,11 +258,12 @@
 		)
 
 /datum/outfit/loadout/gysgt_spear
-	name = "Point Defense Assaultman"
+	name = "Spearhead Assaultman"
 	backpack_contents = list(
-		/obj/item/twohanded/inquis_spear = 1,
-		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
-		/obj/item/ammo_box/magazine/m45exp = 2,
+		/obj/item/gun/ballistic/revolver/ballisticfist = 1,
+		/obj/item/ammo_box/shotgun/slug = 1,
+		/obj/item/gun/energy/laser/plasma/glock = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 1,
 		/obj/item/grenade/f13/incendiary = 1
 		)
 
