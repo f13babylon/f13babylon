@@ -206,7 +206,7 @@
 	ranged_cooldown_time = 30
 	extra_projectiles = 5
 	projectiletype = /obj/item/projectile/bullet/a5mm/simple
-	projectilesound = 'sound/f13weapons/automaticrifle_BAR.ogg'
+	projectilesound = 'sound/f13weapons/762lmg.ogg'
 	loot = list(/obj/item/stack/f13Cash/random/high, /obj/item/advanced_crafting_components/alloys, /obj/item/stack/sheet/plasteel/five)
 	speak = list("POWER TO THE ARMOR!", "I AM GOING TO BREAK YOU IN HALF!", "YEAH I COMPENSATE WITH BIG FUCKIN' GUNS", "DODGE THIS!", "PEAK RENEGADE PERFORMANCE!")
 	speak_emote = list("says")

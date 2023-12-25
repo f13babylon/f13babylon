@@ -493,6 +493,13 @@
 	build_path = /obj/item/ammo_box/magazine/msmg14mm/extended/empty
 	category = list("initial", "Advanced Magazines")
 
+/datum/design/ammolathe/mg11
+	name = "empty g11 magazine (5mm)"
+	id = "mg11"
+	materials = list(/datum/material/iron = 8000)
+	build_path = /obj/item/ammo_box/magazine/mg11/empty
+	category = list("initial", "Advanced Magazines")
+
 /datum/design/ammolathe/cz535mm
 	name = "empty 240rd cz53 pack (5mm)"
 	id = "cz535mm"

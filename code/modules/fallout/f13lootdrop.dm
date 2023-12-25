@@ -948,6 +948,7 @@
 				/obj/effect/spawner/bundle/f13/smg14mm,
 				/obj/effect/spawner/bundle/f13/bozar,
 				/obj/effect/spawner/bundle/f13/assault_carbine,
+				/obj/effect/spawner/bundle/f13/g11,
 				/obj/effect/spawner/bundle/f13/fal,
 	)
 
@@ -1338,11 +1339,24 @@
 				/obj/item/ammo_box/magazine/m556mm
 	)
 
+/obj/effect/spawner/bundle/f13/bozar
+	name = "bozar and ammo spawner"
+	items = list(
+				/obj/item/gun/ballistic/automatic/assault_rifle/bozar,
+				/obj/item/ammo_box/magazine/m556mm/extended
+	)
+
 /obj/effect/spawner/bundle/f13/assault_carbine
 	name = "assault carbine and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/assault_rifle/assault_carbine,
-				/obj/item/ammo_box/magazine/m5mm/extended
+				/obj/item/ammo_box/magazine/m5mm
+	)
+/obj/effect/spawner/bundle/f13/g11
+	name = "g11 and ammo spawner"
+	items = list(
+				/obj/item/gun/ballistic/automatic/assault_rifle/g11,
+				/obj/item/ammo_box/magazine/mg11
 	)
 
 /obj/effect/spawner/bundle/f13/fal
@@ -1356,13 +1370,6 @@
 	name = "infiltrator assault rifle and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/assault_rifle/r91/infiltrator,
-				/obj/item/ammo_box/magazine/m556mm/extended
-	)
-
-/obj/effect/spawner/bundle/f13/bozar
-	name = "bozar and ammo spawner"
-	items = list(
-				/obj/item/gun/ballistic/automatic/assault_rifle/bozar,
 				/obj/item/ammo_box/magazine/m556mm/extended
 	)
 
@@ -1693,6 +1700,7 @@
 				/obj/item/ammo_box/magazine/msmg14mm/extended = 2,
 				/obj/item/ammo_box/magazine/m556mm/drum = 2,
 				/obj/item/ammo_box/magazine/m5mm/drum = 2,
+				/obj/item/ammo_box/magazine/mg11 = 2,
 				/obj/item/ammo_box/magazine/m762mm/extended = 2,
 				/obj/item/ammo_box/magazine/lmg = 2,
 				/obj/item/ammo_box/magazine/rpd = 2,

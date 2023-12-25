@@ -243,7 +243,7 @@
 	autofire_shot_delay = 1
 	slowdown = 0.25
 	spread = 25
-	suppressed = 1
+	suppressed = TRUE
 	can_unsuppress = FALSE
 
 //Uzi			Keywords: 9mm, Bullethose, Dual-wieldable on semi-auto, 32/50 Rounds, Normal, High-mid tier
@@ -271,8 +271,8 @@
 	mag_type = /obj/item/ammo_box/magazine/msmg9mm
 	spread = 6
 	extra_damage = 2	//18 DAM
-	extra_penetration = 0.15	//15% AP
-	suppressed = 1
+	extra_penetration = 0.2	//20% AP
+	suppressed = TRUE
 	can_unsuppress = FALSE
 	recoil = 0.55
 
@@ -448,7 +448,7 @@
 	spread = 0
 	can_scope = FALSE
 	can_unsuppress = FALSE
-	suppressed = 1
+	suppressed = TRUE
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 
 //Commando carbine (BoS De Lisle variant)							Keywords: BoS, .45 ACP, 12 round magazine, Long barrel, Suppressed
@@ -786,7 +786,7 @@
 	slowdown = 0.4
 	spread = 8
 	force = 20
-	recoil = 0.65
+	recoil = 0.7
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 
 /obj/item/gun/ballistic/automatic/assault_rifle/auto_select()
@@ -820,8 +820,7 @@
 	fire_sound = 'sound/f13weapons/bozar.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m556mm
 	init_mag_type = /obj/item/ammo_box/magazine/m556mm/extended
-	slowdown = 0.8
-	recoil = 0.85
+	slowdown = 1.1
 	extra_speed = 400	//600 Extra Speed
 	zoomable = TRUE
 	zoom_amt = 10
@@ -836,12 +835,12 @@
 	fire_sound = 'sound/f13weapons/infiltrator.ogg'
 	init_mag_type = /obj/item/ammo_box/magazine/m556mm/extended
 	spread = 4
-	recoil = 0.45
+	recoil = 0.5
 	extra_penetration = 0.3		//30% AP
 	zoomable = TRUE
 	zoom_amt = 8
 	zoom_out_amt = 11
-	suppressed = 1
+	suppressed = TRUE
 	can_unsuppress = FALSE
 
 //Type 93 Assault Rifle		Keywords: 5mm, Burst, AP, 30/50 Rounds, High tier
@@ -882,11 +881,28 @@
 	item_state = "assault_carbine"
 	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m5mm
-	init_mag_type = /obj/item/ammo_box/magazine/m5mm/extended
 	fire_delay = 3
 	autofire_shot_delay = 2
 	spread = 13
 	recoil = 0.5
+
+//G11		Keywords: 5mm, Caseless, Long Scope, AP, Accurate, 50 Rounds, Superhigh tier
+/obj/item/gun/ballistic/automatic/assault_rifle/g11
+	name = "WIP"
+	desc = "WIP."
+	icon_state = "g11"
+	item_state = "g11"
+	fire_sound = 'sound/f13weapons/g11.ogg'
+	mag_type = /obj/item/ammo_box/magazine/mg11
+	burst_size = 3
+	fire_delay = 4
+	spread = 2
+	recoil = 0.5
+	extra_speed = 600	//800 Extra Speed
+	zoomable = TRUE
+	zoom_amt = 10
+	zoom_out_amt = 13
+	casing_ejector = FALSE
 
 //FAL		Keywords: 7.62, 10/20 Rounds, Superhigh tier
 /obj/item/gun/ballistic/automatic/assault_rifle/fal
@@ -894,11 +910,11 @@
 	desc = "WIP."
 	icon_state = "fal"
 	item_state = "fal"
-	fire_sound = 'sound/f13weapons/762rifle.ogg'
+	fire_sound = 'sound/f13weapons/762assault_rifle.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m762mm
 	init_mag_type = /obj/item/ammo_box/magazine/m762mm/extended
 	slowdown = 0.6
-	spread = 12
+	spread = 10
 	recoil = 0.8
 
 ////////////////
@@ -921,7 +937,7 @@
 	slowdown = 1.25
 	spread = 18
 	force = 25
-	recoil = 0.65
+	recoil = 0.7
 	actions_types = null
 
 //R84 Light Machine Gun			Keywords: 5.56mm, 60 Rounds, High Tier
@@ -932,27 +948,6 @@
 	item_state = "R84"
 	fire_sound = 'sound/f13weapons/assault_rifle.ogg'
 	mag_type = /obj/item/ammo_box/magazine/lmg
-
-//Colt Monitor		Keywords: 7.62mm, Damage Malus, Extra AP, Extra Speed, Scoped, Accurate, 10/20 Rounds, Heavy Gunner Exclusive
-/obj/item/gun/ballistic/automatic/lmg/monitor
-	name = "\improper Colt Monitor"
-	desc = "An especially modified light machine gun built on the BAR platform with an added pistol grip and a Cutts recoil compensator. This one features a West-Tek marksman scope and its receiver bears a red star."
-	icon = 'icons/fallout/objects/guns/bar.dmi'
-	icon_state = "MONITOR"
-	item_state = "BAR"
-	fire_sound = 'sound/f13weapons/automaticrifle_BAR.ogg'
-	mag_type = /obj/item/ammo_box/magazine/m762mm
-	init_mag_type = /obj/item/ammo_box/magazine/m762mm/extended
-	autofire_shot_delay = 3
-	slowdown = 1.35
-	spread = 5
-	recoil = 0.45
-	extra_damage = -5			//30 DAM
-	extra_penetration = 0.15	//15% AP
-	extra_speed = 200			//200 Extra Speed
-	zoomable = TRUE
-	zoom_amt = 8
-	zoom_out_amt = 11
 
 //RPD Light Machine Gun		Keywords: 5mm, 50 Rounds, High Tier
 /obj/item/gun/ballistic/automatic/lmg/rpd
@@ -966,22 +961,42 @@
 	spread = 20
 	extra_penetration = -0.1 //30% AP
 
+//Colt Monitor		Keywords: 7.62mm, Damage Malus, AP, Extra Projectile Speed, Medium Scope, Accurate, 10/20 Rounds, Heavy Gunner Exclusive
+/obj/item/gun/ballistic/automatic/lmg/monitor
+	name = "\improper Colt Monitor"
+	desc = "An especially modified light machine gun built on the BAR platform with an added pistol grip and a Cutts recoil compensator. This one features a West-Tek marksman scope and its receiver bears a red star."
+	icon = 'icons/fallout/objects/guns/bar.dmi'
+	icon_state = "monitor"
+	item_state = "monitor"
+	fire_sound = 'sound/f13weapons/762lmg.ogg'
+	mag_type = /obj/item/ammo_box/magazine/m762mm
+	init_mag_type = /obj/item/ammo_box/magazine/m762mm/extended
+	autofire_shot_delay = 3
+	slowdown = 1.35
+	spread = 5
+	recoil = 0.5
+	extra_damage = -5			//30 DAM
+	extra_penetration = 0.2		//20% AP
+	extra_speed = 200			//200 Extra Speed
+	zoomable = TRUE
+	zoom_amt = 8
+	zoom_out_amt = 11
+
 //M1919		Keywords: 7.62mm, 80 Rounds, Centurion Exclusive
 /obj/item/gun/ballistic/automatic/lmg/m1919
 	name = "stinger heavy machine gun"
 	desc = "A salvaged AN/M2 variant of the M1919 Browning initially meant for use in aircraft that has been turned into a man-portable killing machine. It has a shoulder stock cut from a brush gun with the addition of rear sights and a bipod from a different machine gun, as well as a solenoid trigger. The Legion's infamous bull is carved on the receiver."
 	icon_state = "hmg"
 	item_state = "M38"
-	fire_sound = 'sound/f13weapons/automaticrifle_BAR.ogg'
+	fire_sound = 'sound/f13weapons/762lmg.ogg'
 	mag_type = /obj/item/ammo_box/magazine/mm762
-	autofire_shot_delay = 3
 	slowdown = 1.5
 	spread = 20
 	var/cover_open = FALSE
 
 /obj/item/gun/ballistic/automatic/lmg/m1919/update_icon()
 	icon_state = "hmg[cover_open ? "open" : "closed"][magazine ? CEILING(get_ammo(0)/20, 1)*20 : "-empty"]"
-	item_state = "hmg[cover_open ? "open" : "closed"][magazine ? "mag" : "nomag"]"
+	item_state = "M38[cover_open ? "open" : "closed"][magazine ? "mag" : "nomag"]"
 
 /obj/item/gun/ballistic/automatic/lmg/m1919/examine(mob/user)
 	. = ..()

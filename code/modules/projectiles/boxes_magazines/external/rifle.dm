@@ -96,6 +96,18 @@
 /obj/item/ammo_box/magazine/m5mm/drum/empty
 	start_empty = 1
 
+/obj/item/ammo_box/magazine/mg11
+	name = "g11 magazine (5mm)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "mg11"
+	ammo_type = /obj/item/ammo_casing/a5mm
+	caliber = "a5mm"
+	max_ammo = 50
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/mg11/empty
+	start_empty = 1
+
 /obj/item/ammo_box/magazine/garand308
 	name = "garand en-bloc clip (7.62mm)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
