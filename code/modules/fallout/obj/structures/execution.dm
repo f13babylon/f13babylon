@@ -15,7 +15,7 @@
 
 /obj/structure/cross/crowbar_act(mob/living/user, obj/item/I)
 	if(has_buckled_mobs())
-		to_chat(user, "<span class='notice'>You can't do that while something's on the cross!</span>")
+		to_chat(user, "<span class='notice'>You can't do that while something's on [src]!</span>")
 		return FALSE
 	if(I.use_tool(src, user, 20, volume=100))
 		deconstruct(TRUE)
@@ -31,6 +31,7 @@
 		if(HAS_TRAIT(user, TRAIT_PACIFISM) && L.stat != DEAD)
 			to_chat(user, "<span class='warning'>You don't want to hurt a living creature!</span>")
 			return
+		L.visible_message("<span class='danger'>[user] is tying [L] to [src]!</span>", "<span class='userdanger'>[user] is tying you to [src]!</span>")
 		if(do_mob(user, src, 120))
 			if(has_buckled_mobs()) //                to prevent spam/queing up attacks
 				return
@@ -39,7 +40,7 @@
 			if(user.pulling != L)
 				return
 			playsound(src.loc, "sound/effects/crossed.ogg", 20, 1) // thanks hippie
-			L.visible_message("<span class='danger'>[user] ties [L] to the cross!</span>", "<span class='userdanger'>[user] ties you to the cross!</span>")
+			L.visible_message("<span class='danger'>[user] ties [L] to [src]!</span>", "<span class='userdanger'>[user] ties you to [src]!</span>")
 			L.forceMove(drop_location())
 			L.plane = -2
 			L.emote("scream")
@@ -53,7 +54,6 @@
 			buckle_mob(L, force=1)
 			L.pixel_y = 26
 			L.overlays += image('icons/obj/cross.dmi', "lashing")
-		to_chat(user, "<span class='danger'>You can't use that on the cross!</span>")
 	else if (has_buckled_mobs())
 		for(var/mob/living/L in buckled_mobs)
 			user_unbuckle_mob(L, user)
@@ -68,20 +68,20 @@
 		var/mob/living/M = buckled_mob
 		if(M != user)
 			M.visible_message(\
-				"[user] tries to pull [M] free of the [src]!",\
-				"<span class='notice'>[user.name] is trying to pull you off the [src], opening up fresh wounds!</span>",\
+				"[user] tries to pull [M] free from [src]!",\
+				"<span class='notice'>[user.name] is trying to pull you off [src], opening up fresh wounds!</span>",\
 				"<span class='italics'>You hear rope being unraveled.</span>")
 			if(!do_after(user, 300, target = src))
 				if(M && M.buckled)
 					M.visible_message(\
-					"[user] fails to free [M]!",\
-					"<span class='notice'>[user] fails to pull you off of the [src].</span>")
+					"[user] fails to free [M] from [src]!",\
+					"<span class='notice'>[user] fails to pull you off [src].</span>")
 				return
 
 		else
 			M.visible_message(\
-			"<span class='warning'>[M] struggles to break free from the [src]!</span>",\
-			"<span class='notice'>You struggle to break free from the [src], exacerbating your wounds! (Stay still for two minutes.)</span>",\
+			"<span class='warning'>[M] struggles to break free from [src]!</span>",\
+			"<span class='notice'>You struggle to break free from [src], exacerbating your wounds! (Stay still for two minutes.)</span>",\
 			"<span class='italics'>You hear violent scraping and struggling.</span>")
 			M.adjustBruteLoss(20)
 			if(!do_after(M, 1200, target = src))
@@ -95,7 +95,7 @@
 /obj/structure/cross/proc/untie_mob(mob/living/M)
 	M.pixel_y = M.get_standard_pixel_y_offset()
 	M.adjustBruteLoss(15)
-	src.visible_message(text("<span class='danger'>[M] falls free of [src]!</span>"))
+	src.visible_message(text("<span class='danger'>[M] falls free from [src]!</span>"))
 	unbuckle_mob(M,force=1)
 	M.plane = -3
 	INVOKE_ASYNC(M, /mob/proc/emote, "collapse")
@@ -121,7 +121,7 @@
 
 /obj/structure/gallow/crowbar_act(mob/living/user, obj/item/I)
 	if(has_buckled_mobs())
-		to_chat(user, "<span class='notice'>You can't do that while something's on the gallow!</span>")
+		to_chat(user, "<span class='notice'>You can't do that while something's on [src]!</span>")
 		return FALSE
 	if(I.use_tool(src, user, 20, volume=100))
 		deconstruct()
@@ -137,6 +137,7 @@
 		if(HAS_TRAIT(user, TRAIT_PACIFISM) && L.stat != DEAD)
 			to_chat(user, "<span class='warning'>You don't want to hurt a living creature!</span>")
 			return
+		L.visible_message("<span class='danger'>[user] is hanging [L] on [src]!</span>", "<span class='userdanger'>[user] is hanging you on [src]!</span>")
 		if(do_mob(user, src, 120))
 			if(has_buckled_mobs()) //to prevent spam/queing up attacks
 				return
@@ -145,7 +146,7 @@
 			if(user.pulling != L)
 				return
 			playsound(src.loc, "sound/effects/crossed.ogg", 20, 1) // thanks hippie
-			L.visible_message("<span class='danger'>[user] hangs [L] on the gallow!</span>", "<span class='userdanger'>[user] hangs you on the gallow!</span>")
+			L.visible_message("<span class='danger'>[user] hangs [L] on [src]!</span>", "<span class='userdanger'>[user] hangs you on [src]!</span>")
 			L.forceMove(drop_location())
 			L.setDir(2)
 			buckle_mob(L, force=1)
@@ -154,7 +155,6 @@
 			L.overlays += image('icons/obj/gallows.dmi', "noose")
 			L.adjustOxyLoss(80)
 			L.losebreath = 200 //there's a noose around your neck, goodluck breathing
-		to_chat(user, "<span class='danger'>You can't use that on the gallow!</span>")
 	else if (has_buckled_mobs())
 		for(var/mob/living/L in buckled_mobs)
 			user_unbuckle_mob(L, user)
@@ -166,20 +166,20 @@
 		var/mob/living/M = buckled_mob
 		if(M != user)
 			M.visible_message(\
-				"[user] tries to unhang [M] from the [src]!",\
-				"<span class='notice'>[user.name] is trying to unhang you off the [src]!</span>",\
+				"[user] tries to unhang [M] from [src]!",\
+				"<span class='notice'>[user.name] is trying to unhang you from [src]!</span>",\
 				"<span class='italics'>You hear rope being unraveled.</span>")
 			if(!do_after(user, 300, target = src))
 				if(M && M.buckled)
 					M.visible_message(\
-					"[user] fails to free [M]!",\
-					"<span class='notice'>[user] fails to unhang you off of the [src].</span>")
+					"[user] fails to free [M] from [src]!",\
+					"<span class='notice'>[user] fails to unhang you from [src].</span>")
 				return
 
 		else
 			M.visible_message(\
-			"<span class='warning'>[M] struggles to break free from the [src]!</span>",\
-			"<span class='notice'>You struggle to break free from the [src], tightening the rope around your neck! (Stay still for two minutes.)</span>",\
+			"<span class='warning'>[M] struggles to break free from [src]!</span>",\
+			"<span class='notice'>You struggle to break free from [src], tightening the rope around your neck! (Stay still for two minutes.)</span>",\
 			"<span class='italics'>You hear violent choking and struggling.</span>")
 			M.adjustOxyLoss(40)
 			if(!do_after(M, 1200, target = src))
@@ -192,7 +192,7 @@
 
 /obj/structure/gallow/proc/untie_mob(mob/living/M)
 	M.pixel_y = M.get_standard_pixel_y_offset()
-	src.visible_message(text("<span class='danger'>[M] falls free of [src]!</span>"))
+	src.visible_message(text("<span class='danger'>[M] falls free from [src]!</span>"))
 	unbuckle_mob(M,force=1)
 	M.losebreath = 0
 	INVOKE_ASYNC(M, /mob/proc/emote, "collapse")
