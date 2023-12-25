@@ -1323,7 +1323,7 @@
 /obj/effect/spawner/bundle/f13/ak112
 	name = "ak112 and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/ak112,
+				/obj/item/gun/ballistic/automatic/assault_carbine/ak112,
 				/obj/item/ammo_box/magazine/m5mm
 				)
 
