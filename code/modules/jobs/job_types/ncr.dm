@@ -200,13 +200,15 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/reagent_containers/food/snacks/grown/tobacco/dried = 1,
 		/obj/item/clothing/suit/armor/f13/ncrarmor/captain = 1,
 		/obj/item/storage/box/ration/menu_eight = 1,
+		/obj/item/gun/ballistic/automatic/pistol/m1911/custom = 1,
+		/obj/item/ammo_box/magazine/m45 = 2,
 		)
 
 /datum/outfit/loadout/ncrcptmelee
 	name = "Backline Support"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/colt357/lucky = 1,
-		/obj/item/ammo_box/a357box = 2,
+		/obj/item/gun/ballistic/revolver/m29/peacekeeper = 1,
+		/obj/item/ammo_box/m44box = 2,
 		)
 
 /datum/outfit/loadout/ncrcptshotgun
