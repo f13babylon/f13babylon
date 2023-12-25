@@ -216,7 +216,7 @@
 					/obj/item/clothing/mask/gas/sechailer)
 	crate_name = "security clothing crate"
 	can_private_buy = TRUE
-
+/*
 /datum/supply_pack/security/baton
 	name = "Stun Batons Crate"
 	desc = "Arm the Civil Protection Forces with three stun batons. Batteries included. Requires Security access to open."
@@ -234,7 +234,7 @@
 					/obj/item/gun/energy/laser/complianceregulator,
 					/obj/item/gun/energy/laser/complianceregulator)
 	crate_name = "taser crate"
-
+*/
 /datum/supply_pack/security/wall_flash
 	name = "Wall-Mounted Flash Crate"
 	desc = "Contains four wall-mounted flashes. Requires Security access to open."
@@ -271,4 +271,3 @@
 	desc = "Contains one \"stingbang\" grenade, perfect for playing meanhearted pranks. Requires Security access to open."
 	cost = 1400
 	contains = list(/obj/item/grenade/stingbang)
-

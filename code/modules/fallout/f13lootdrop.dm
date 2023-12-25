@@ -882,7 +882,7 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/lowmid
 	name = "low-mid tier ballistic gun"
 	icon_state = "gunlowmid_loot"
-	loot = list(/obj/effect/spawner/bundle/f13/n99,
+	loot = list(/obj/effect/spawner/bundle/f13/colt6520,
 				/obj/effect/spawner/bundle/f13/cowboy,
 				/obj/effect/spawner/bundle/f13/mk23,
 				/obj/effect/spawner/bundle/f13/hunting,
@@ -1129,6 +1129,13 @@
 				/obj/item/gun/ballistic/revolver/colt357,
 				/obj/item/ammo_box/a357
 				)
+
+/obj/effect/spawner/bundle/f13/colt6520
+	name = "colt 6250 and ammo spawner"
+	items = list(
+		/obj/item/gun/ballistic/revolver/colt6520,
+		/obj/item/ammo_box/l10mm
+	)
 
 /obj/effect/spawner/bundle/f13/service
 	name = "NCR service rifle and ammo spawner"

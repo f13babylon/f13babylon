@@ -859,6 +859,19 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
+/datum/crafting_recipe/pshotgun
+	name = "police shotgun"
+	result = /obj/item/gun/ballistic/shotgun/police
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+				/obj/item/advanced_crafting_components/receiver = 1,
+				/obj/item/stack/crafting/metalparts = 2,
+				)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_available = FALSE
+
 //aep7
 /datum/crafting_recipe/AEP7
 	name = "AEP-7"
@@ -1375,22 +1388,6 @@
 				/obj/item/advanced_crafting_components/assembly = 1,
 				/obj/item/stack/crafting/goodparts = 5,
 				/obj/item/stack/sheet/metal = 3)
-	tools = list(TOOL_WORKBENCH)
-	time = 120
-	category = CAT_WEAPONRY
-	subcategory = CAT_WEAPON
-	always_available = FALSE
-
-//R82 heavy service rifle
-/datum/crafting_recipe/R82
-	name = "R82 heavy service rifle"
-	result = /obj/item/gun/ballistic/automatic/service/r82
-	reqs = list(/obj/item/stack/sheet/metal = 5,
-				/obj/item/advanced_crafting_components/assembly = 1,
-				/obj/item/advanced_crafting_components/receiver = 1,
-				/obj/item/stack/sheet/mineral/wood = 5,
-				/obj/item/stack/crafting/goodparts = 5
-				)
 	tools = list(TOOL_WORKBENCH)
 	time = 120
 	category = CAT_WEAPONRY

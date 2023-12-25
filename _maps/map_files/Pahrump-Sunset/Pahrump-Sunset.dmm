@@ -6364,8 +6364,6 @@
 /obj/structure/rack/shelf_metal,
 /obj/item/shield/riot/bullet_proof,
 /obj/item/shield/riot/bullet_proof,
-/obj/item/melee/baton/loaded,
-/obj/item/melee/baton/loaded,
 /turf/open/floor/wood/wood_worn,
 /area/f13/city/bighorn)
 "ays" = (
@@ -28944,12 +28942,9 @@
 /area/f13/building/mall)
 "eWn" = (
 /obj/structure/rack/shelf_metal,
-/obj/item/gun/ballistic/automatic/assault_carbine/policerifle,
-/obj/item/gun/ballistic/automatic/assault_carbine/policerifle,
-/obj/item/gun/ballistic/automatic/assault_carbine/policerifle,
-/obj/item/gun/ballistic/automatic/assault_carbine/policerifle,
-/obj/item/gun/ballistic/automatic/assault_carbine/policerifle,
-/obj/item/gun/ballistic/automatic/assault_carbine/policerifle,
+/obj/item/gun/ballistic/automatic/assault_carbine/ak112,
+/obj/item/gun/ballistic/automatic/assault_carbine/ak112,
+/obj/item/gun/ballistic/automatic/assault_carbine/ak112,
 /turf/open/floor/wood/wood_worn,
 /area/f13/city/bighorn)
 "eWr" = (
@@ -33110,14 +33105,6 @@
 /area/f13/building/mall)
 "gVZ" = (
 /obj/structure/rack,
-/obj/item/melee/classic_baton/telescopic{
-	pixel_x = -4;
-	pixel_y = 11
-	},
-/obj/item/melee/classic_baton/telescopic{
-	pixel_x = -4;
-	pixel_y = 8
-	},
 /obj/item/reagent_containers/spray/pepper{
 	pixel_x = -10;
 	pixel_y = -10
@@ -35909,7 +35896,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
-/obj/item/melee/classic_baton,
 /obj/effect/spawner/lootdrop/f13/cash_legion_med,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
@@ -42445,7 +42431,6 @@
 /area/f13/brotherhood)
 "luM" = (
 /obj/structure/table/wood/settler,
-/obj/item/melee/classic_baton,
 /obj/item/storage/fancy/cigarettes/cigpack_cannabis{
 	pixel_x = -3;
 	pixel_y = 8

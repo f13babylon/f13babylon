@@ -59,7 +59,7 @@
 	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. Your goal, primarily, is to collect organic material. Preferably alive, for the sake of testing. <br>\
 	Now that the lore is out of the way, just make the round fun. You set the policies and the attitude of the Enclave this week."
 	supervisors = "Enclave Upper Echelon."
-	outfit = /datum/outfit/job/enclave/peacekeeper/enclavelt
+	outfit = /datum/outfit/job/enclave/peacekeeper/enclavecpt
 	req_admin_notify = 1
 	exp_requirements = 600
 
@@ -108,7 +108,7 @@
 		)
 
 
-/datum/outfit/job/enclave/peacekeeper/enclavelt/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/enclave/peacekeeper/enclavecpt/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -172,6 +172,13 @@
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/marksmancarbine)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg10mm)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/pshotgun)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg22)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/plasmapistol)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombatarmor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombathelmet)
 
 /datum/outfit/loadout/lt_is
 	name = "Internal Security Advisor"
@@ -487,6 +494,7 @@
 		/obj/item/storage/belt/utility = 1,
 		/obj/item/gun/ballistic/shotgun/police = 1,
 		/obj/item/ammo_box/shotgun/buck = 2,
+		/obj/item/book/granter/trait/explosives = 1,
 	)
 
 /datum/outfit/job/enclave/peacekeeper/f13specialist/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -605,14 +613,21 @@
 	ADD_TRAIT(H, TRAIT_SURGERY_HIGH,  REF(src))
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ,  REF(src))
 	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
+	ADD_TRAIT(H, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING,  REF(src))
 	// ADD_TRAIT(H, TRAIT_UNETHICAL_PRACTITIONER,  REF(src)) // Brainwashing
 	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
 //	ADD_TRAIT(H, TRAIT_POOR_AIM,  REF(src))
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/needle)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gun/plasmamusket)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/lightplasmapistol)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/USAeyebot)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/marksmancarbine)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg10mm)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/pshotgun)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg22)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/plasmapistol)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombatarmor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombathelmet)
 
 /*
 //Pilot

@@ -11778,7 +11778,6 @@
 	},
 /area/f13/building)
 "meY" = (
-/obj/item/melee/classic_baton,
 /obj/effect/decal/remains/human,
 /obj/machinery/light{
 	dir = 4
@@ -21505,7 +21504,6 @@
 /obj/item/shield/riot,
 /obj/item/clothing/head/helmet/riot,
 /obj/item/clothing/suit/armor/riot,
-/obj/item/melee/classic_baton/police,
 /obj/structure/camera_assembly,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/building)
@@ -22604,7 +22602,6 @@
 /obj/item/shield/riot,
 /obj/item/clothing/head/helmet/riot,
 /obj/item/clothing/suit/armor/riot,
-/obj/item/melee/classic_baton/police,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/building)
 "wsT" = (
@@ -22615,7 +22612,6 @@
 	},
 /area/f13/wasteland/rocksprings)
 "wth" = (
-/obj/item/melee/classic_baton,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
 /obj/structure/rack/shelf_metal,
 /turf/open/floor/plasteel/f13{

@@ -593,7 +593,7 @@
 	icon_state = "t45dpowerarmor"
 	item_state = "t45dpowerarmor"
 	slowdown = 0.4
-	armor = list("melee" = 65, "bullet" = 65, "laser" = 50, "energy" = 30, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
+	armor = list("melee" = 70, "bullet" = 70, "laser" = 60, "energy" = 15, "bomb" = 45, "bio" = 65, "rad" = 40, "fire" = 70, "acid" = 25, "wound" = 50)
 	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d
 	mutantrace_variation = STYLE_DIGITIGRADE
 

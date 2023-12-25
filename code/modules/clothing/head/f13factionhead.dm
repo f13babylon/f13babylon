@@ -249,7 +249,7 @@
 	item_state = "enclave_marine"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 50)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 30, "fire" = 60, "acid" = 20, "wound" = 50)
 
 /obj/item/clothing/head/helmet/f13/enclave/marine/Initialize(mapload)
 	. = ..()
@@ -1381,7 +1381,7 @@
 	desc = "An intimidating helmet that is issued with it's corresponding suit."
 	icon_state = "remnant_helmet"
 	item_state = "remnant_helmet"
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 55, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 20)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 55, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 30, "fire" = 60, "acid" = 20, "wound" = 20)
 
 /obj/item/clothing/head/helmet/f13/combat/enclave/ComponentInitialize()
 	. = ..()

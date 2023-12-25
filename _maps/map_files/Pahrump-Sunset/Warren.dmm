@@ -8641,7 +8641,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
-/obj/item/melee/classic_baton/police,
 /obj/item/gun/energy/laser/complianceregulator,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)

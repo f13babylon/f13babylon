@@ -521,6 +521,8 @@ GLOBAL_LIST_INIT(loot_t2_range, list(
 	/obj/item/gun/ballistic/rifle/repeater/cowboy,
 	/obj/item/ammo_box/a357,
 	/obj/item/ammo_box/a357,
+	/obj/item/gun/ballistic/revolver/colt6520,
+	/obj/item/ammo_box/l10mm,
 	/obj/item/gun/ballistic/revolver/colt357,
 	/obj/item/gun/ballistic/revolver/single_shotgun,
 	/obj/item/ammo_box/a357,

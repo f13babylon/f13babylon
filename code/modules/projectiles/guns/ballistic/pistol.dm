@@ -71,7 +71,7 @@
 	name = "10mm pistol"
 	desc = "The Colt N99, an easily maintained, large-framed, long-barreled combat pistol in use by the US Army before the war. Comes with an integrated laser sight module."
 	icon_state = "n99"
-	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
+	mag_type = /obj/item/ammo_box/magazine/m10mm
 	fire_delay = 3
 	recoil = 0.05
 	can_attachments = TRUE

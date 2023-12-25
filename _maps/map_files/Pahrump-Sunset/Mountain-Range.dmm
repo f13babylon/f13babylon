@@ -2178,9 +2178,6 @@
 	dir = 4
 	},
 /obj/structure/window/reinforced,
-/obj/item/melee/classic_baton/telescopic,
-/obj/item/melee/classic_baton/telescopic,
-/obj/item/melee/classic_baton/telescopic,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/enclave/prison)
 "qo" = (
@@ -4278,7 +4275,6 @@
 /area/f13/enclave/command)
 "Fj" = (
 /obj/structure/table/glass,
-/obj/item/melee/classic_baton/telescopic,
 /obj/machinery/computer/security/enclave{
 	dir = 8
 	},

@@ -655,11 +655,6 @@
 	oneuse = TRUE
 	remarks = list()
 
-/obj/item/book/granter/crafting_recipe/blueprint/r82
-	name = "r82 heavy service rifle blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/R82)
-
 /obj/item/book/granter/crafting_recipe/blueprint/marksman
 	name = "marksman carbine blueprint"
 	icon_state = "blueprint2"
