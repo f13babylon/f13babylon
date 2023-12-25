@@ -315,9 +315,9 @@ ATTACHMENTS
 		else
 			. += "It has a bayonet lug, suitable for a <b>bayonet</b>."
 	if (suppressed)
-		. += "It has a [can_unsuppress ? "built-in " : ""]suppressor mounted on its muzzle."
+		. += "It has a [can_unsuppress ? "" : "built-in "]suppressor mounted on its muzzle."
 	else if (can_suppress)
-		. += "It has a threaded barrel exterior suitable for installing a <b>[can_unsuppress ? "permanent " : ""]suppressor</b>."
+		. += "It has a threaded barrel exterior suitable for installing a <b>[can_unsuppress ? "" : "permanent "]suppressor</b>."
 	if (can_attachments)
 		var/free_slots = 2 // update if more are added, or refactor this to use a list of attachments
 		if(burst_improvement)

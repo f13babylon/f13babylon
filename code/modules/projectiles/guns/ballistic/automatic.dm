@@ -230,7 +230,7 @@
 	automatic = !automatic
 	playsound(usr, 'sound/weapons/empty.ogg', 100, 1)
 
-//American 180			Keywords: .22 LR, Supressed, Bullethose, 180 Round drum, Bulky, Low-mid tier
+//American 180			Keywords: .22 LR, Suppressed, Bullethose, 180 Round drum, Bulky, Low-mid tier
 /obj/item/gun/ballistic/automatic/smg/smg22
 	name = "silenced .22 SMG"
 	desc = "An integrally suppressed American 180 riot suppression submachine gun chambered in .22 LR, feeding from top-loaded pan magazines."
@@ -244,7 +244,7 @@
 	slowdown = 0.25
 	spread = 25
 	suppressed = 1
-	can_unsuppress = TRUE	//Without can_suppress only results in a better examine message
+	can_unsuppress = FALSE
 
 //Uzi			Keywords: 9mm, Bullethose, Dual-wieldable on semi-auto, 32/50 Rounds, Normal, High-mid tier
 /obj/item/gun/ballistic/automatic/smg/uzi
@@ -273,7 +273,7 @@
 	extra_damage = 2	//18 DAM
 	extra_penetration = 0.15	//15% AP
 	suppressed = 1
-	can_unsuppress = TRUE	//Without can_suppress only results in a better examine message
+	can_unsuppress = FALSE
 	recoil = 0.55
 
 //Calico			Keywords: 9mm, Bullethose, 70 rounds, Bulky, Superhigh tier
@@ -827,7 +827,7 @@
 	zoom_amt = 10
 	zoom_out_amt = 13
 
-//Infiltrator		Keywords: 5.56, Supressed, Medium Scope, AP, Accurate, 10/20/30/50 Rounds, Unique tier
+//Infiltrator		Keywords: 5.56, Suppressed, Medium Scope, AP, Accurate, 10/20/30/50 Rounds, Unique tier
 /obj/item/gun/ballistic/automatic/assault_rifle/r91/infiltrator
 	name = "\improper Infiltrator"
 	desc = "WIP."
@@ -842,7 +842,7 @@
 	zoom_amt = 8
 	zoom_out_amt = 11
 	suppressed = 1
-	can_unsuppress = TRUE	//Without can_suppress only results in a better examine message
+	can_unsuppress = FALSE
 
 //Type 93 Assault Rifle		Keywords: 5mm, Burst, AP, 30/50 Rounds, High tier
 /obj/item/gun/ballistic/automatic/assault_rifle/type93
@@ -902,9 +902,10 @@
 	recoil = 0.8
 
 ////////////////
-//MACHINE-GUNS//
+//MACHINE GUNS//
 ////////////////
 
+//MACHINE GUN TEMPLATE
 /obj/item/gun/ballistic/automatic/lmg
 	name = "LMG TEMPLATE"
 	desc = "You're not supposed to see this."
