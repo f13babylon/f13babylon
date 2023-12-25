@@ -178,7 +178,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	damage = 20
 	wound_bonus = 15
 	bare_wound_bonus = 20
-	armour_penetration = 0.45
+	armour_penetration = 0.4
 	var/extra_speed = 200
 	supereffective_damage = 10
 	supereffective_faction = list("hostile", "ant", "deathclaw", "cazador", "china", "gecko", "radscorpion")

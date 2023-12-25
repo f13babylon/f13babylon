@@ -332,9 +332,9 @@
 	w_class = WEIGHT_CLASS_BULKY
 	mag_type = /obj/item/ammo_box/magazine/mp90
 	slowdown = 0.2
-	spread = 13
+	spread = 16
 	extra_damage = -5		//15 DAM
-	extra_penetration = -0.15	//30% AP
+	extra_penetration = -0.1	//30% AP
 
 //14mm SMG 			Keywords: 14mm, AP, 21/27 rounds, Bulky, Superhigh tier
 /obj/item/gun/ballistic/automatic/smg/smg14mm
@@ -351,7 +351,7 @@
 	slowdown = 0.4
 	spread = 15
 	recoil = 0.85
-	extra_penetration = 0.05	//5% AP
+	extra_penetration = 0.1	//10% AP
 
 ////////////
 //CARBINES//
@@ -811,23 +811,7 @@
 	fire_sound = 'sound/f13weapons/assault_rifle.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m556mm
 
-//Infiltrator		Keywords: 5.56, Supressed, Medium Scope, AP, Accurate, 10/20/30/50 Rounds, Unique tier
-/obj/item/gun/ballistic/automatic/assault_rifle/r91/infiltrator
-	name = "\improper Infiltrator"
-	desc = "WIP."
-	icon_state = "infiltrator"
-	item_state = "infiltrator"
-	fire_sound = 'sound/f13weapons/infiltrator.ogg'
-	spread = 4
-	recoil = 0.45
-	extra_penetration = 0.35	//35% AP
-	zoomable = TRUE
-	zoom_amt = 8
-	zoom_out_amt = 11
-	suppressed = 1
-	can_unsuppress = TRUE	//Without can_suppress only results in a better examine message
-
-//Bozar		Keywords: 5.56, Long Scope, Extra Projectile Speed, 10/20/30/50 Rounds, Unique tier
+//Bozar		Keywords: 5.56, Long Scope, Extra Projectile Speed, 10/20/30/50 Rounds, Superhigh tier
 /obj/item/gun/ballistic/automatic/assault_rifle/bozar
 	name = "\improper Bozar"
 	desc = "WIP."
@@ -835,12 +819,30 @@
 	item_state = "amr"
 	fire_sound = 'sound/f13weapons/bozar.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m556mm
+	init_mag_type = /obj/item/ammo_box/magazine/m556mm/extended
 	slowdown = 0.8
 	recoil = 0.85
 	extra_speed = 400	//600 Extra Speed
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
+
+//Infiltrator		Keywords: 5.56, Supressed, Medium Scope, AP, Accurate, 10/20/30/50 Rounds, Unique tier
+/obj/item/gun/ballistic/automatic/assault_rifle/r91/infiltrator
+	name = "\improper Infiltrator"
+	desc = "WIP."
+	icon_state = "infiltrator"
+	item_state = "infiltrator"
+	fire_sound = 'sound/f13weapons/infiltrator.ogg'
+	init_mag_type = /obj/item/ammo_box/magazine/m556mm/extended
+	spread = 4
+	recoil = 0.45
+	extra_penetration = 0.3		//30% AP
+	zoomable = TRUE
+	zoom_amt = 8
+	zoom_out_amt = 11
+	suppressed = 1
+	can_unsuppress = TRUE	//Without can_suppress only results in a better examine message
 
 //Type 93 Assault Rifle		Keywords: 5mm, Burst, AP, 30/50 Rounds, High tier
 /obj/item/gun/ballistic/automatic/assault_rifle/type93
@@ -880,7 +882,11 @@
 	item_state = "assault_carbine"
 	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m5mm
-	recoil = 0.45
+	init_mag_type = /obj/item/ammo_box/magazine/m5mm/extended
+	fire_delay = 3
+	autofire_shot_delay = 2
+	spread = 13
+	recoil = 0.5
 
 //FAL		Keywords: 7.62, 10/20 Rounds, Superhigh tier
 /obj/item/gun/ballistic/automatic/assault_rifle/fal
@@ -890,9 +896,10 @@
 	item_state = "fal"
 	fire_sound = 'sound/f13weapons/762rifle.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m762mm
+	init_mag_type = /obj/item/ammo_box/magazine/m762mm/extended
 	slowdown = 0.6
 	spread = 12
-	recoil = 0.85
+	recoil = 0.8
 
 ////////////////
 //MACHINE-GUNS//
@@ -956,7 +963,7 @@
 	mag_type = /obj/item/ammo_box/magazine/rpd
 	slowdown = 0.6
 	spread = 20
-	extra_penetration = -0.15 //30% AP
+	extra_penetration = -0.1 //30% AP
 
 //M1919		Keywords: 7.62mm, 80 Rounds, Centurion Exclusive
 /obj/item/gun/ballistic/automatic/lmg/m1919

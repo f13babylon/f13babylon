@@ -899,14 +899,15 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid
 	name = "mid tier ballistic gun"
 	icon_state = "gunmid_loot"
-	loot = list(/obj/effect/spawner/bundle/f13/trail,
+	loot = list(
+				/obj/effect/spawner/bundle/f13/trail,
 				/obj/effect/spawner/bundle/f13/service,
 				/obj/effect/spawner/bundle/f13/smg10mm,
 				/obj/effect/spawner/bundle/f13/auto5,
 				/obj/effect/spawner/bundle/f13/m1garand,
 				/obj/effect/spawner/bundle/f13/deagle,
 				/obj/effect/spawner/bundle/f13/automag,
-				)
+	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/highmid
 	name = "high-mid tier ballistic gun"
@@ -945,6 +946,7 @@
 				/obj/effect/spawner/bundle/f13/p90,
 				/obj/effect/spawner/bundle/f13/calico,
 				/obj/effect/spawner/bundle/f13/smg14mm,
+				/obj/effect/spawner/bundle/f13/bozar,
 				/obj/effect/spawner/bundle/f13/assault_carbine,
 				/obj/effect/spawner/bundle/f13/fal,
 	)
@@ -962,9 +964,7 @@
 				/obj/item/gun/ballistic/automatic/marksman/sniper/gold,
 				/obj/item/gun/ballistic/automatic/pistol/pistol14/lildevil,
 				/obj/effect/spawner/bundle/f13/infiltrator,
-				/obj/effect/spawner/bundle/f13/bozar,
 	)
-
 
 //Random-pick pools so that regular spawners aren't super diluted with shit like 3 .44 revolver variants
 
@@ -1342,28 +1342,28 @@
 	name = "assault carbine and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/assault_rifle/assault_carbine,
-				/obj/item/ammo_box/magazine/m5mm
+				/obj/item/ammo_box/magazine/m5mm/extended
 	)
 
 /obj/effect/spawner/bundle/f13/fal
 	name = "automatic battle rifle and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/assault_rifle/fal,
-				/obj/item/ammo_box/magazine/m762mm
+				/obj/item/ammo_box/magazine/m762mm/extended
 	)
 
 /obj/effect/spawner/bundle/f13/infiltrator
 	name = "infiltrator assault rifle and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/assault_rifle/r91/infiltrator,
-				/obj/item/ammo_box/magazine/m556mm
+				/obj/item/ammo_box/magazine/m556mm/extended
 	)
 
 /obj/effect/spawner/bundle/f13/bozar
 	name = "bozar and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/assault_rifle/bozar,
-				/obj/item/ammo_box/magazine/m556mm
+				/obj/item/ammo_box/magazine/m556mm/extended
 	)
 
 /obj/effect/spawner/bundle/f13/marksman
