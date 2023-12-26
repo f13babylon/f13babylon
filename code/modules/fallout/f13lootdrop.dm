@@ -875,7 +875,6 @@
 				/obj/effect/spawner/bundle/f13/colt357,
 				/obj/effect/spawner/bundle/f13/huntingshotgun,
 				/obj/effect/spawner/bundle/f13/police_pistol,
-				/obj/effect/spawner/bundle/f13/guns/commando,
 				/obj/effect/spawner/bundle/f13/beretta/select,
 				)
 
@@ -1157,13 +1156,6 @@
 	items = list(
 				/obj/item/gun/energy/laser/pistol,
 				/obj/item/stock_parts/cell/ammo/ec
-	)
-
-/obj/effect/spawner/bundle/f13/guns/commando
-	name = "de lisle carbine and ammo spawner"
-	items = list(
-				/obj/item/gun/ballistic/automatic/delisle,
-				/obj/item/ammo_box/magazine/m9mmds
 	)
 
 /obj/effect/spawner/bundle/f13/mk23
@@ -2228,8 +2220,9 @@
 	icon_state = "blueprint_loot"
 	lootcount = 1
 	loot = list(
-		/obj/item/book/granter/crafting_recipe/blueprint/thatgun,
-		/obj/item/book/granter/crafting_recipe/blueprint/commando,
+		/obj/item/book/granter/crafting_recipe/blueprint/aep7,
+		/obj/item/book/granter/crafting_recipe/blueprint/uzi,
+		/obj/item/book/granter/crafting_recipe/blueprint/wattz1k,
 	)
 /obj/effect/spawner/lootdrop/f13/blueprintMid
 	name = "blueprint-tier(Mid) item spawner"
@@ -2239,9 +2232,9 @@
 		/obj/item/book/granter/crafting_recipe/blueprint/service,
 		/obj/item/book/granter/crafting_recipe/blueprint/trailcarbine,
 		/obj/item/book/granter/crafting_recipe/blueprint/smg10mm,
-		/obj/item/book/granter/crafting_recipe/blueprint/aep7,
 		/obj/item/book/granter/crafting_recipe/blueprint/scoutcarbine,
-		/obj/item/book/granter/crafting_recipe/blueprint/sniper,
+		/obj/item/book/granter/crafting_recipe/blueprint/combatrifle,
+		/obj/item/book/granter/crafting_recipe/blueprint/mp5,
 	)
 
 /obj/effect/spawner/lootdrop/f13/blueprintHigh
@@ -2251,15 +2244,10 @@
 	loot = list(
 		/obj/item/book/granter/crafting_recipe/blueprint/leveraction,
 		/obj/item/book/granter/crafting_recipe/blueprint/r91,
-		/obj/item/book/granter/crafting_recipe/blueprint/r84,
-		/obj/item/book/granter/crafting_recipe/blueprint/uzi,
-		/obj/item/book/granter/crafting_recipe/blueprint/mp5,
-		/obj/item/book/granter/crafting_recipe/blueprint/thompson,
-		/obj/item/book/granter/crafting_recipe/blueprint/deagle,
+		/obj/item/book/granter/crafting_recipe/blueprint/thatgun,
 		/obj/item/book/granter/crafting_recipe/blueprint/marksman,
-		/obj/item/book/granter/crafting_recipe/blueprint/combatrifle,
 		/obj/item/book/granter/crafting_recipe/blueprint/plasmapistol,
-		/obj/item/book/granter/crafting_recipe/blueprint/brushgun,
+		/obj/item/book/granter/crafting_recipe/blueprint/aer9,
 	)
 
 /obj/effect/spawner/lootdrop/f13/blueprintVHigh
@@ -2269,7 +2257,11 @@
 	loot = list(
 		/obj/item/book/granter/crafting_recipe/blueprint/neostead,
 		/obj/item/book/granter/crafting_recipe/blueprint/riotshotgun,
-		/obj/item/book/granter/crafting_recipe/blueprint/aer9,
+		/obj/item/book/granter/crafting_recipe/blueprint/sniper,
+		/obj/item/book/granter/crafting_recipe/blueprint/brushgun,
+		/obj/item/book/granter/crafting_recipe/blueprint/thompson,
+		/obj/item/book/granter/crafting_recipe/blueprint/r84,
+		/obj/item/book/granter/crafting_recipe/blueprint/deagle,
 	)
 
 /obj/effect/spawner/lootdrop/f13/blueprintVHighBallistics
@@ -2281,7 +2273,7 @@
 //		/obj/item/book/granter/crafting_recipe/blueprint/am_rifle,
 		/obj/item/book/granter/crafting_recipe/blueprint/citykiller,
 		/obj/item/book/granter/crafting_recipe/blueprint/rangemaster,
-//		/obj/item/book/granter/crafting_recipe/blueprint/bozar
+		/obj/item/book/granter/crafting_recipe/blueprint/bozar
 	)
 
 /obj/effect/spawner/lootdrop/f13/blueprintVHighPartsWeighted

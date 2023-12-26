@@ -281,7 +281,6 @@
 		/obj/item/gun/ballistic/automatic/type93 = 3,
 		/obj/item/gun/ballistic/automatic/fnfal = 2,
 		/obj/effect/spawner/bundle/f13/p90 = 2,
-		/obj/effect/spawner/bundle/f13/guns/commando = 2,
 		/obj/item/gun/ballistic/revolver/revolver45/gunslinger = 1,
 		/obj/item/gun/energy/laser/pistol/pewpew = 1,
 		/obj/item/gun/energy/gammagun = 1,

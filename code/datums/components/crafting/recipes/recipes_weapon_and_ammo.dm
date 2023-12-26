@@ -682,19 +682,6 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
-/datum/crafting_recipe/commando
-	name = "DeLisle Commando Carbine"
-	result = /obj/item/gun/ballistic/automatic/delisle/commando
-	reqs = list(/obj/item/stack/sheet/metal = 5,
-				/obj/item/advanced_crafting_components/receiver = 1,
-				/obj/item/stack/crafting/metalparts = 2
-				)
-	tools = list(TOOL_WORKBENCH)
-	time = 120
-	category = CAT_WEAPONRY
-	subcategory = CAT_WEAPON
-	always_available = FALSE
-
 //infiltrator
 /datum/crafting_recipe/infiltrator
 	name = "Infiltrator Carbine"
