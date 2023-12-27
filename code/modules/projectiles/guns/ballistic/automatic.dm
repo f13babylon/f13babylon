@@ -912,6 +912,7 @@
 	mag_type = /obj/item/ammo_box/magazine/mg11
 	burst_size = 3
 	fire_delay = 4
+	slowdown = 0.8
 	spread = 3
 	recoil = 0.8
 	extra_speed = 700	//700 Extra Speed
@@ -968,7 +969,7 @@
 //RPD Light Machine Gun		Keywords: 5mm, 50 Rounds, High Tier
 /obj/item/gun/ballistic/automatic/lmg/rpd
 	name = "chinese light machine gun"
-	desc = "A restored variant of the chinese assault rifle re-chambered to 5mm that feeds from drums, featuring a heavy barrel and a full stock to go with its improved internal mechanism."
+	desc = "A restored variant of the chinese light machine gun chambered in 5mm that feeds from drums, featuring a heavy barrel and a full stock to go with its robust internal mechanism."
 	icon_state = "rpd"
 	item_state = "handmade_rifle"
 	fire_sound = 'sound/f13weapons/chinese_assault_rifle.ogg'
