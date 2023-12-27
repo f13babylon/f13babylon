@@ -503,9 +503,9 @@
 /obj/item/gun/ballistic/automatic/service
 	name = "service rifle"
 	desc = "A 5.56x45 semi-automatic service rifle manufactured by the NCR and issued to all combat personnel."
+	icon = 'icons/obj/guns/gunfruits2022/rifles.dmi'
 	icon_state = "service_rifle"
 	item_state = "servicerifle"
-	icon_prefix = "servicerifle"
 	mag_type = /obj/item/ammo_box/magazine/m556mm
 	slowdown = 0.15
 	fire_delay = 4
@@ -524,6 +524,7 @@
 /obj/item/gun/ballistic/automatic/service/carbine
 	name = "scout carbine"
 	desc = "A cut down version of the standard-issue service rifle tapped with mounting holes for a scope. Shorter barrel, lower muzzle velocity."
+	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "scout_carbine"
 	spread = 1.2
 	slowdown = 0.05
@@ -540,7 +541,8 @@
 /obj/item/gun/ballistic/automatic/marksman
 	name = "marksman carbine"
 	desc = "A marksman carbine built off the AR platform chambered in 5.56x45. Seen heavy usage in pre-war conflicts. This particular model is a civilian version and is semi-auto only."
-	icon_state = "marksman_rifle"
+	icon = 'icons/obj/guns/gunfruits2022/rifles.dmi'
+	icon_state = "marksman_carbine"
 	item_state = "marksman"
 	mag_type = /obj/item/ammo_box/magazine/m556mm
 	fire_delay = 4
@@ -708,6 +710,7 @@
 /obj/item/gun/ballistic/automatic/marksman/sniper
 	name = "sniper rifle"
 	desc = "A DKS 501, chambered in .308 Winchester.  With a light polymer body, it's suited for long treks through the desert."
+	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_prefix = "sniperrifle"
 	icon_state = "sniper_rifle"
 	item_state = "sniper_rifle"
