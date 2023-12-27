@@ -14,6 +14,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	//non-preference stuff
 	var/muted = 0
+	var/age_verified = 0
 	var/last_ip
 	var/last_id
 	var/log_clicks = FALSE

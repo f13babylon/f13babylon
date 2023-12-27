@@ -1473,6 +1473,13 @@
 			return
 		cmd_admin_mute(href_list["mute"], text2num(href_list["mute_type"]))
 
+	else if(href_list["verify"])
+		if(!check_rights(R_ADMIN))
+			message_admins("[ADMIN_TPMONTY(usr)] tried to use /datum/admins/proc/CheckAdminHref(): verify without admin perms.")
+			log_admin("INVALID ADMIN PROC ACCESS: [key_name(usr)] tried to use /datum/admins/proc/CheckAdminHref(): verify without admin perms.")
+			return
+		cmd_admin_verify(href_list["verify"])
+
 	else if(href_list["c_mode"])
 		return HandleCMode()
 

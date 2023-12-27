@@ -126,6 +126,17 @@
 			(<a href='?src=[ref];mute=[M.ckey];mute_type=[MUTE_ALL]'><font color='[(muted & MUTE_ALL) ? "#ff5e5e" : "white"]'>ALL</font></a>)
 		"}
 
+	if(M.client)
+		var/verified = M.client.prefs.age_verified
+		if(verified)
+			body += {"<br><b>Age Verification: </b>
+					<a href='?src=[ref];verify=[M.ckey]'><font color='[(verified) ? "#ff5e5e" : "#5e84ff"]'>Unverify</font></a>
+					"}
+		else
+			body += {"<br><b>Age Verification: </b>
+					<a href='?src=[ref];verify=[M.ckey]'><font color='[(verified) ? "#ff5e5e" : "#5e84ff"]'>Verify</font></a>
+					"}
+
 	body += {"
 		<br><br>
 		<a href='?src=[ref];jumpto=[ref_mob]'>Jump to</A> |
