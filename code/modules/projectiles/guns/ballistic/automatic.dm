@@ -503,9 +503,9 @@
 /obj/item/gun/ballistic/automatic/service
 	name = "service rifle"
 	desc = "A 5.56x45 semi-automatic service rifle manufactured by the NCR and issued to all combat personnel."
+	icon = 'icons/obj/guns/gunfruits2022/rifles.dmi'
 	icon_state = "service_rifle"
 	item_state = "servicerifle"
-	icon_prefix = "servicerifle"
 	mag_type = /obj/item/ammo_box/magazine/m556mm
 	slowdown = 0.15
 	fire_delay = 4
@@ -524,6 +524,7 @@
 /obj/item/gun/ballistic/automatic/service/carbine
 	name = "scout carbine"
 	desc = "A cut down version of the standard-issue service rifle tapped with mounting holes for a scope. Shorter barrel, lower muzzle velocity."
+	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "scout_carbine"
 	spread = 1.2
 	slowdown = 0.05
@@ -540,7 +541,8 @@
 /obj/item/gun/ballistic/automatic/marksman
 	name = "marksman carbine"
 	desc = "A marksman carbine built off the AR platform chambered in 5.56x45. Seen heavy usage in pre-war conflicts. This particular model is a civilian version and is semi-auto only."
-	icon_state = "marksman_rifle"
+	icon = 'icons/obj/guns/gunfruits2022/rifles.dmi'
+	icon_state = "marksman_carbine"
 	item_state = "marksman"
 	mag_type = /obj/item/ammo_box/magazine/m556mm
 	fire_delay = 4
@@ -708,6 +710,7 @@
 /obj/item/gun/ballistic/automatic/marksman/sniper
 	name = "sniper rifle"
 	desc = "A DKS 501, chambered in .308 Winchester.  With a light polymer body, it's suited for long treks through the desert."
+	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_prefix = "sniperrifle"
 	icon_state = "sniper_rifle"
 	item_state = "sniper_rifle"
@@ -821,6 +824,8 @@
 	fire_sound = 'sound/f13weapons/bozar.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m556mm
 	init_mag_type = /obj/item/ammo_box/magazine/m556mm/extended
+	fire_delay = 3
+	autofire_shot_delay = 2
 	slowdown = 1.1
 	extra_speed = 500	//500 Extra Speed
 	zoomable = TRUE
@@ -909,8 +914,9 @@
 	mag_type = /obj/item/ammo_box/magazine/mg11
 	burst_size = 3
 	fire_delay = 4
+	slowdown = 0.8
 	spread = 3
-	recoil = 0.8
+	recoil = 0.6
 	extra_speed = 700	//700 Extra Speed
 	zoomable = TRUE
 	zoom_amt = 10
@@ -965,7 +971,7 @@
 //RPD Light Machine Gun		Keywords: 5mm, 50 Rounds, High Tier
 /obj/item/gun/ballistic/automatic/lmg/rpd
 	name = "chinese light machine gun"
-	desc = "A restored variant of the chinese assault rifle re-chambered to 5mm that feeds from drums, featuring a heavy barrel and a full stock to go with its improved internal mechanism."
+	desc = "A restored variant of the chinese light machine gun chambered in 5mm that feeds from drums, featuring a heavy barrel and a full stock to go with its robust internal mechanism."
 	icon_state = "rpd"
 	item_state = "handmade_rifle"
 	fire_sound = 'sound/f13weapons/chinese_assault_rifle.ogg'
