@@ -11863,7 +11863,6 @@
 /area/f13/city)
 "ljq" = (
 /obj/structure/table,
-/obj/item/reagent_containers/syringe/stimulants,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "tealwhrustychess"

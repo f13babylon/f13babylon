@@ -2390,7 +2390,7 @@
 	description = "blue sparkles that get everywhere"
 	color = "#4040FF" //A blueish color
 	glitter_type = /obj/effect/decal/cleanable/glitter/blue
-
+/*
 /datum/reagent/pax
 	name = "pax"
 	description = "A colorless liquid that suppresses violence on the subjects."
@@ -2409,7 +2409,7 @@
 /datum/reagent/pax/on_mob_end_metabolize(mob/living/L)
 	REMOVE_TRAIT(L, TRAIT_PACIFISM, type)
 	..()
-
+*/
 /datum/reagent/bz_metabolites
 	name = "BZ metabolites"
 	description = "A harmless metabolite of BZ gas"
@@ -2433,7 +2433,7 @@
 		if(changeling)
 			changeling.chem_charges = max(changeling.chem_charges-2, 0)
 	return ..()
-
+/*
 /datum/reagent/pax/peaceborg
 	name = "synth-pax"
 	description = "A colorless liquid that suppresses violence on the subjects. Cheaper to synthetize, but wears out faster than normal Pax."
@@ -2473,15 +2473,7 @@
 	if(prob(30))
 		to_chat(M, "You should sit down and take a rest...")
 	..()
-
-/datum/reagent/moonsugar
-	name = "Moonsugar"
-	description = "An unstable slurry consisting of moonshine and sugar, made by stirring at high speeds."
-	color = "#FAEAFF"
-	taste_description = "sugar and moonshine"
-	value = REAGENT_VALUE_UNCOMMON
-	ghoulfriendly = TRUE
-
+*/
 /datum/reagent/changeling_string
 	name = "UNKNOWN"
 	description = "404: Chemical not found."
@@ -2538,7 +2530,6 @@
 	color = "#f7685e"
 	metabolization_rate = REAGENTS_METABOLISM * 0.25
 	ghoulfriendly = TRUE
-
 
 /datum/reagent/wittel
 	name = "Wittel"
@@ -2604,7 +2595,7 @@
 /datum/reagent/gravitum/on_mob_end_metabolize(mob/living/L)
 	L.RemoveElement(/datum/element/forced_gravity, 0)
 
-
+/*
 //body bluids
 /datum/reagent/consumable/semen
 	name = "Semen"
@@ -2665,7 +2656,7 @@
 	random_icon_states = list("fem1", "fem2", "fem3", "fem4")
 	blood_state = null
 	bloodiness = null
-
+*/
 /datum/reagent/determination
 	name = "Determination"
 	description = "For when you need to push on a little more. Do NOT allow near plants."
@@ -2856,7 +2847,7 @@
 /datum/reagent/nutracid/on_mob_life(mob/living/carbon/M)
 	M.adjust_nutrition(-5)
 	..()
-
+/*
 /datum/reagent/breast_enlarger
 	name = "Succubus milk"
 	description = "A volatile collodial mixture derived from milk that encourages mammary production via a potent estrogen mix."
@@ -3047,3 +3038,4 @@
 
 	P.modify_size(-0.1)
 	..()
+*/

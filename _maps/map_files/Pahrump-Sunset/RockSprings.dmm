@@ -8117,7 +8117,7 @@
 /obj/structure/destructible/tribal_torch/wall/lit,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/wood,
-/obj/item/storage/firstaid/emergency,
+/obj/item/storage/firstaid/regular,
 /turf/open/floor/wood/wood_wide,
 /area/f13/building)
 "idk" = (

@@ -2240,7 +2240,6 @@
 /area/f13/enclave/hallways)
 "qI" = (
 /obj/structure/table/glass,
-/obj/item/reagent_containers/syringe/stimulants,
 /turf/open/floor/f13,
 /area/f13/enclave)
 "qN" = (

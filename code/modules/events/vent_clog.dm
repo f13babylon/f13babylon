@@ -41,8 +41,6 @@
 		/datum/reagent/concentrated_barbers_aid,
 		/datum/reagent/baldium,
 		/datum/reagent/colorful_reagent,
-		/datum/reagent/peaceborg_confuse,
-		/datum/reagent/peaceborg_tire,
 		/datum/reagent/consumable/sodiumchloride,
 		/datum/reagent/consumable/ethanol/beer,
 		/datum/reagent/hair_dye,

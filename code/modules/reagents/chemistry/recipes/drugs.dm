@@ -1,9 +1,9 @@
 /datum/chemical_reaction/space_drugs
-	name = "Space Drugs"
+	name = "Liquid THC"
 	id = /datum/reagent/drug/space_drugs
 	results = list(/datum/reagent/drug/space_drugs = 3)
 	required_reagents = list(/datum/reagent/mercury = 1, /datum/reagent/consumable/sugar = 1, /datum/reagent/lithium = 1)
-
+/*
 /datum/chemical_reaction/crank
 	name = "Crank"
 	id = /datum/reagent/drug/crank
@@ -34,7 +34,7 @@
 	results = list(/datum/reagent/drug/methamphetamine = 4)
 	required_reagents = list(/datum/reagent/medicine/ephedrine = 1, /datum/reagent/iodine = 1, /datum/reagent/phosphorus = 1, /datum/reagent/hydrogen = 1)
 	required_temp = 374
-
+*/
 /datum/chemical_reaction/bath_salts
 	name = "bath_salts"
 	id = /datum/reagent/drug/bath_salts
@@ -54,21 +54,6 @@
 	results = list(/datum/reagent/drug/happiness = 4)
 	required_reagents = list(/datum/reagent/nitrous_oxide = 2, /datum/reagent/medicine/epinephrine = 1, /datum/reagent/consumable/ethanol = 1)
 	required_catalysts = list(/datum/reagent/toxin/plasma = 5)
-
-/datum/chemical_reaction/skooma
-	name = "Getaway"
-	id = /datum/reagent/drug/skooma
-	results = list(/datum/reagent/drug/skooma = 2, /datum/reagent/consumable/ethanol/moonshine = 4, /datum/reagent/consumable/sugar = 4)
-	required_temp = 280
-	is_cold_recipe = TRUE
-	required_reagents = list(/datum/reagent/moonsugar = 10, /datum/reagent/medicine/morphine = 5)
-
-/datum/chemical_reaction/skoomarevert
-	name = "skoomarevert"
-	id = "skoomarevert"
-	results = list(/datum/reagent/moonsugar = 1, /datum/reagent/medicine/morphine = 2.5)
-	required_temp = 315 //a little above normal body temperature
-	required_reagents = list(/datum/reagent/drug/skooma = 1)
 
 /datum/chemical_reaction/aphro
 	name = "crocin"
@@ -125,4 +110,3 @@
 	id = /datum/reagent/drug/buffout
 	results = list(/datum/reagent/drug/buffout = 10)
 	required_reagents = list(/datum/reagent/consumable/sugar = 1, /datum/reagent/phosphorus = 1, /datum/reagent/sulfur = 1, /datum/reagent/drug/crank = 1, /datum/reagent/carbondioxide = 1, /datum/reagent/nitrous_oxide = 1, /datum/reagent/consumable/yuccajuice = 1)
-

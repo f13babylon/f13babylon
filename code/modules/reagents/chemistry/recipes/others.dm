@@ -892,7 +892,7 @@
 	id = "nutracid_vit"
 	results = list(/datum/reagent/nutracid = 1)
 	required_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 1, /datum/reagent/nutracid = 1)
-
+/*
 /datum/chemical_reaction/breast_enlarger
 	name = "Succubus Milk"
 	id = "/datum/reagent/breast_enlarger"
@@ -920,7 +920,7 @@
 	results = list(/datum/reagent/PEsmaller = 2)
 	required_reagents = list(/datum/reagent/medicine/salglu_solution = 2, /datum/reagent/blood = 5, /datum/reagent/medicine/synthflesh = 2, /datum/reagent/carbon = 2, /datum/reagent/drug/anaphrodisiac = 2)
 	required_temp = 200
-
+*/
 // Fallout Stuff
 
 /datum/chemical_reaction/saltingboild

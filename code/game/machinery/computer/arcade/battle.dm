@@ -7,7 +7,7 @@
 	icon_state = "arcade"
 	circuit = /obj/item/circuitboard/computer/arcade/battle
 	var/enemy_name = "Space Villain"
-	var/temp = "Winners don't use space drugs" //Temporary message, for attack messages, etc
+	var/temp = "Winners don't use drugs" //Temporary message, for attack messages, etc
 	var/player_hp = 30 //Player health/attack points
 	var/player_mp = 10
 	var/enemy_hp = 45 //Enemy health/attack points

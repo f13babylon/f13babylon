@@ -221,7 +221,7 @@ Burning extracts:
 
 /obj/item/slimecross/burning/pink/do_effect(mob/user)
 	user.visible_message("<span class='notice'>[src] shrinks into a small, gel-filled pellet!</span>")
-	new /obj/item/slimecrossbeaker/pax(get_turf(user))
+	//new /obj/item/slimecrossbeaker/pax(get_turf(user))
 	..()
 
 /obj/item/slimecross/burning/gold

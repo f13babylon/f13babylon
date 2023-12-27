@@ -313,9 +313,3 @@
 			var/amount = beaker.reagents.get_reagent_amount(/datum/reagent/consumable/eggyolk)
 			beaker.reagents.remove_reagent(/datum/reagent/consumable/eggyolk, amount)
 			beaker.reagents.add_reagent(/datum/reagent/consumable/mayonnaise, amount)
-		//Moonsugar for skooma
-		if(beaker.reagents.has_reagent(/datum/reagent/consumable/sugar) && beaker.reagents.has_reagent(/datum/reagent/consumable/ethanol/moonshine))
-			var/amount = min(beaker.reagents.get_reagent_amount(/datum/reagent/consumable/sugar), beaker.reagents.get_reagent_amount(/datum/reagent/consumable/ethanol/moonshine))
-			beaker.reagents.remove_reagent(/datum/reagent/consumable/sugar, amount)
-			beaker.reagents.remove_reagent(/datum/reagent/consumable/ethanol/moonshine, amount)
-			beaker.reagents.add_reagent(/datum/reagent/moonsugar, amount*2)
