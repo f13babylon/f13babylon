@@ -581,6 +581,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	if(visualsOnly)
 		return
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bladedsequoia)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/rangercape)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
 	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
 	ADD_TRAIT(H, TRAIT_IRONFIST,  REF(src))
@@ -662,6 +663,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	. = ..()
 	if(visualsOnly)
 		return
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/rangercape)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
 	ADD_TRAIT(H, TRAIT_LIGHT_STEP,  REF(src))
 	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))

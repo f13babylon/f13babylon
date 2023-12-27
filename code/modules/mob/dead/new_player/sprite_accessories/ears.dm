@@ -119,6 +119,12 @@
 	extra_color_src = NONE
 	matrixed_sections = MATRIX_RED
 
+/datum/sprite_accessory/ears/mam_ears/bigwolfsplayed
+	name = "Big Wolf (Splayed)"
+	icon_state = "bigwolfsplayed"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_RED_BLUE
+
 /datum/sprite_accessory/ears/mam_ears/bunny
 	name = "Bunny"
 	icon_state = "bunny"
@@ -169,6 +175,11 @@
 /datum/sprite_accessory/ears/mam_ears/catbig
 	name = "Cat, (Big)"
 	icon_state = "catbig"
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/ears/mam_ears/catbigsplayed
+	name = "Cat (Big Splayed)"
+	icon_state = "catbigsplayed"
 	matrixed_sections = MATRIX_RED_GREEN
 
 /datum/sprite_accessory/ears/mam_ears/pede
@@ -267,14 +278,31 @@
 	icon_state = "vap"
 	matrixed_sections = MATRIX_ALL
 
+/datum/sprite_accessory/ears/mam_ears/fennecsplayed
+	name = "Fennec (Splayed)"
+	icon_state = "fennecsplayed"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_RED_BLUE
+
 /datum/sprite_accessory/ears/mam_ears/fish
 	name = "Fish"
 	icon_state = "fish"
 	matrixed_sections = MATRIX_RED
 
+/datum/sprite_accessory/ears/mam_ears/foldedback
+	name = "Folded Back"
+	icon_state = "foldedback"
+	color_src = MUTCOLORS
+
 /datum/sprite_accessory/ears/mam_ears/fox
 	name = "Fox"
 	icon_state = "fox"
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/ears/mam_ears/foxsplayed
+	name = "Fox (Splayed)"
+	icon_state = "foxsplayed"
+	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN
 
 /datum/sprite_accessory/ears/mam_ears/frills/full

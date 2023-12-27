@@ -601,7 +601,9 @@
 	name = "gravel"
 	icon_state = "graveldirt"
 	icon = 'icons/fallout/turfs/ground.dmi'
-//	step_sounds = list("human" = "erikafootsteps")
+	footstep = FOOTSTEP_GRAVEL
+	barefootstep = FOOTSTEP_GRAVEL
+	clawfootstep = FOOTSTEP_GRAVEL
 
 // New gravel, organized. Use directions for control. - Pebbles
 /turf/open/indestructible/ground/outside/gravel
@@ -611,10 +613,6 @@
 	footstep = FOOTSTEP_GRAVEL
 	barefootstep = FOOTSTEP_GRAVEL
 	clawfootstep = FOOTSTEP_GRAVEL
-
-/turf/open/indestructible/ground/outside/gravel/alt
-	name = "gravel"
-	icon_state = "gravel_alt"
 
 /turf/open/indestructible/ground/outside/gravel/path_desert
 	name = "gravel path"
