@@ -2409,8 +2409,8 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/item/gun/ballistic/automatic/assault_carbine,
-/obj/item/gun/ballistic/automatic/assault_carbine,
+/obj/item/gun/ballistic/automatic/assault_carbine/ak112,
+/obj/item/gun/ballistic/automatic/assault_carbine/ak112,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/enclave/armory)

@@ -905,13 +905,14 @@
 				/obj/effect/spawner/bundle/f13/m1garand,
 				/obj/effect/spawner/bundle/f13/deagle,
 				/obj/effect/spawner/bundle/f13/automag,
+				/obj/effect/spawner/bundle/f13/mp5,
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/highmid
 	name = "high-mid tier ballistic gun"
 	icon_state = "gunhighmid_loot"
 	loot = list(
-				/obj/effect/spawner/bundle/f13/mp5,
+				/obj/effect/spawner/bundle/f13/deagle,
 				/obj/effect/spawner/bundle/f13/thompson,
 				/obj/effect/spawner/bundle/f13/needler,
 				/obj/effect/spawner/bundle/f13/marksman,
@@ -935,13 +936,13 @@
 	name = "superhigh tier ballistic gun"
 	icon_state = "gunsuperhigh_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/amr = 10,
-				/obj/effect/spawner/bundle/f13/brushgun = 15,
+				/obj/effect/spawner/bundle/f13/assault_carbine = 10,
 				/obj/effect/spawner/bundle/f13/rangemaster = 15,
 				///obj/item/gun/ballistic/rocketlauncher = 10,
 				/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller = 10,
 				/obj/item/gun/ballistic/automatic/bozar = 10,
 				/obj/effect/spawner/bundle/f13/p90 = 10,
-				/obj/effect/spawner/bundle/f13/calico = 10,
+				/obj/effect/spawner/bundle/f13/calico = 15,
 				/obj/effect/spawner/bundle/f13/smg14mm = 10,
 				)
 

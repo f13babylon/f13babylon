@@ -222,8 +222,8 @@
 	name = "Enclave Gunnery Sergeant"
 	jobtype = /datum/job/enclave/f13gysergeant
 	accessory = /obj/item/clothing/accessory/enclave/gunnery_sergeant
-	head = /obj/item/clothing/head/helmet/f13/enclave/marine
-	suit = /obj/item/clothing/suit/armor/f13/enclave/marine
+	head = /obj/item/clothing/head/helmet/f13/power_armor/advanced
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/advanced
 	ears = /obj/item/radio/headset/headset_enclave/command
 
 	backpack_contents = list(
@@ -240,8 +240,8 @@
 /datum/outfit/loadout/gysgt_caster
 	name = "Point Defense Assaultman"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/plasma/caster = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 5,
+		/obj/item/gun/ballistic/automatic/g11 = 1,
+		/obj/item/ammo_box/magazine/m473 = 2,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 2,
 		/obj/item/grenade/f13/frag = 1
@@ -295,14 +295,14 @@
 	loadout_options = list(
 		/datum/outfit/loadout/sgt_plasrifle,	// Plasma rifle + Mk23
 		/datum/outfit/loadout/sgt_cqc, //Neostead + Plaspistol
-		/datum/outfit/loadout/sgt_classic, // Assault carbine + Plaspistol
+		/datum/outfit/loadout/sgt_classic, // AK-112 + Plaspistol
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavesgt
 	name = "Enclave Sergeant"
 	jobtype = /datum/job/enclave/enclavesgt
-	head = /obj/item/clothing/head/helmet/f13/power_armor/x02helmet
-	suit = /obj/item/clothing/suit/armor/f13/power_armor/x02
+	suit = /obj/item/clothing/suit/armor/f13/enclave/marine
+	head = /obj/item/clothing/head/helmet/f13/enclave/marine
 	accessory = /obj/item/clothing/accessory/enclave/sergeant
 
 
@@ -344,7 +344,7 @@
 /datum/outfit/loadout/sgt_classic
 	name = "Tactical Assaultman"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/assault_carbine = 1,
+		/obj/item/gun/ballistic/automatic/assault_carbine/ak112 = 1,
 		/obj/item/ammo_box/magazine/m5mm = 4,
 		/obj/item/attachments/scope = 1,
 		/obj/item/suppressor = 1, //they get a flashlight in their bag
@@ -362,7 +362,6 @@
 	ADD_TRAIT(H, TRAIT_PA_WEAR,  REF(src))
 	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
 	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
-	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 
 //Armoured Infantry
@@ -370,17 +369,16 @@
 /datum/job/enclave/enclavecpl
 	title = "Enclave Armored Infantry"
 	flag = F13USCPL
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. Entrusted with the command of the squads assigned to the bunker, your job is to assist the Lieutenant alongside the scientists."
 	supervisors = "The Sergeants, Gunnery Sergeants, and Lieutenants."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavecpl
-	exp_requirements = 0
+	exp_requirements = 780
 
 	loadout_options = list(
-		/datum/outfit/loadout/acpl_ballistics,	// Assault Carbine
-		/datum/outfit/loadout/acpl_laser, 	// Plasma
-		/datum/outfit/loadout/acpl_fool, 	// Ripper+10mm WICH CUNT REMOVED THE 10mm PISTOL
+		/datum/outfit/loadout/acpl_ballistics,	// Minigun
+		/datum/outfit/loadout/acpl_laser, 	// Plasmacaster
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavecpl
@@ -402,25 +400,17 @@
 		)
 
 /datum/outfit/loadout/acpl_ballistics
-	name = "Frontline Operator"
-	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
+	name = "Heavy Gunner"
+	suit_store = /obj/item/encminigunpack
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m5mm = 2,
+		/obj/item/melee/powered/ripper = 1,
 		)
 
 /datum/outfit/loadout/acpl_laser
-	name = "Support Rifleman"
-	suit_store = /obj/item/gun/energy/laser/plasma
+	name = "Support Gunner"
+	suit_store = /obj/item/gun/energy/laser/plasma/caster
 	backpack_contents = list(
-		/obj/item/stock_parts/cell/ammo/mfc = 2,
-		)
-
-/datum/outfit/loadout/acpl_fool
-	name = "Fool"
-	suit_store = /obj/item/melee/powered/ripper
-	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/type17 = 1,
-		/obj/item/ammo_box/magazine/m10mm = 3,
+		/obj/item/stock_parts/cell/ammo/mfc = 5,
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavecpl/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -431,7 +421,6 @@
 	ADD_TRAIT(H, TRAIT_PA_WEAR,  REF(src))
 	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
 	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
-	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 
 //Specialist
@@ -439,8 +428,8 @@
 /datum/job/enclave/f13specialist
 	title = "Enclave Specialist"
 	flag = F13USSPECIALIST
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	description = "You're a support fighter in a force of Enclave Remnant marines, part of the Rapid Reaction Corps. You, unlike the average Privates, have recieved specialist training in either engineering or medicine."
 	supervisors = "The Lieutenant and the Sergeants."
 	outfit = /datum/outfit/job/enclave/peacekeeper/f13specialist
@@ -510,8 +499,8 @@
 /datum/job/enclave/enclavespy
 	title = "Enclave Marine"
 	flag = F13USPRIVATE
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 3
+	spawn_positions = 3
 	description = "You're a grunt in a force of Enclave Remnant marines, part of the Rapid Reaction Corps. You may be an experienced trooper, or you may be a fresh recruit in need of training, either from the Enclave's tiny population, the hidden, Enclave-controlled Vault 45, or from concealed Enclave cryostasis bunkers. Be careful not to do anything that will expose the Enclave's presence to its many enemies."
 	supervisors = "The Lieutenant, the Sergeants, and the Specialists."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavespy
@@ -519,8 +508,8 @@
 	exp_requirements = 600
 
 	loadout_options = list(
-		/datum/outfit/loadout/reconmarine, // MP5
-		/datum/outfit/loadout/mobileartillery, // Plasma Pistol
+		/datum/outfit/loadout/reconmarine, // R-93
+		/datum/outfit/loadout/mobileartillery, // Trench gun
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavespy
@@ -541,19 +530,19 @@
 		)
 
 /datum/outfit/loadout/reconmarine
-	name = "Pursuit Rifleman"
-	suit_store = /obj/item/gun/ballistic/automatic/smg/mp5
+	name = "Pointman Rifleman"
+	suit_store = /obj/item/gun/ballistic/automatic/r93
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/msmg9mm = 2,
+		/obj/item/ammo_box/magazine/m5mm = 2,
 		/obj/item/gun/energy/laser/plasma/pistol/light = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2
 		)
 
 /datum/outfit/loadout/mobileartillery
-	name = "Pointman Rifleman"
-	suit_store = /obj/item/gun/energy/laser/plasma/pistol
+	name = "Pursuit Rifleman"
+	suit_store = /obj/item/gun/ballistic/shotgun/trench
 	backpack_contents = list(
-		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/ammo_box/shotgun/buck = 2,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 2
 		)

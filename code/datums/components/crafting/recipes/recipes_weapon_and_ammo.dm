@@ -1381,7 +1381,7 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
-//R82 heavy service rifle
+//R93 Enclave rifle
 /datum/crafting_recipe/R93
 	name = "R93 PDW"
 	result = /obj/item/gun/ballistic/automatic/r93

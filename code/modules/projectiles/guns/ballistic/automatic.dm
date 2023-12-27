@@ -743,6 +743,28 @@
 	fire_sound = 'sound/f13weapons/bozar_fire.ogg'
 	extra_damage = -3
 
+
+//R93 PDW		Keywords: Enclave, 5mm, Semi-Automatic, 30 round magazine, Pistol grip
+/obj/item/gun/ballistic/automatic/r93
+	name = "R93 PDW"
+	desc = "A lightweight assault rifle manufactured by the Brotherhood of Steel with a folding stock, based on weapons from the R-series platforms. It is generally issued to Brotherhood Knights for scouting missions."
+	icon_state = "r93"
+	item_state = "r93"
+	mag_type = /obj/item/ammo_box/magazine/m5mm
+	fire_delay = 4
+	spread = 2
+	burst_size = 1
+	can_attachments = FALSE
+	semi_auto = TRUE
+	automatic_burst_overlay = FALSE
+	can_scope = FALSE
+	zoomable = TRUE
+	zoom_amt = 6
+	zoom_out_amt = 9
+	can_bayonet = TRUE
+	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
+	slowdown = 0.15
+
 //Assault Carbine				Keywords: 5mm, Automatic, 30 round magazine, Flashlight, 20dmg/0.50AP
 /obj/item/gun/ballistic/automatic/assault_carbine
 	name = "assault carbine"
@@ -830,13 +852,12 @@
 	icon_state = "g11"
 	item_state = "arg"
 	mag_type = /obj/item/ammo_box/magazine/m473
-	burst_size = 1
+	burst_size = 3
 	fire_delay = 4
-	is_automatic = TRUE
+	is_automatic = FALSE
 	automatic = 1
-	autofire_shot_delay = 1.5
 	burst_shot_delay = 1.5
-	spread = 8
+	spread = 5
 	recoil = 0.1
 	can_attachments = TRUE
 	semi_auto = TRUE
@@ -1042,27 +1063,6 @@
 
 //Guns in this section are, for code purposes, still existing. However, they shouldn't be spawned and won't be upkept.
 //This is incase of
-
-//R93 PDW		Keywords: 5.56mm, Semi-Automatic, 20 (10-50) round magazine, Pistol grip
-/obj/item/gun/ballistic/automatic/r93
-	name = "R93 PDW"
-	desc = "A lightweight assault rifle manufactured by the Brotherhood of Steel with a folding stock, based on weapons from the R-series platforms. It is generally issued to Brotherhood Knights for scouting missions."
-	icon_state = "r93"
-	item_state = "r93"
-	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_delay = 3
-	spread = 1
-	burst_size = 1
-	can_attachments = FALSE
-	semi_auto = TRUE
-	automatic_burst_overlay = FALSE
-	can_scope = FALSE
-	zoomable = TRUE
-	zoom_amt = 6
-	zoom_out_amt = 9
-	can_bayonet = TRUE
-	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
-	slowdown = 0.15
 
 // Enfield SLR				Keywords: 7.62mm, Semi-auto, 10/20 round magazine
 /obj/item/gun/ballistic/automatic/slr

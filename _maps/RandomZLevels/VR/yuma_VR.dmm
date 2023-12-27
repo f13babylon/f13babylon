@@ -2210,6 +2210,7 @@
 	dir = 8
 	},
 /obj/item/gun/ballistic/automatic/assault_carbine,
+/obj/item/gun/ballistic/automatic/assault_carbine/ak112,
 /obj/item/gun/ballistic/automatic/assault_rifle,
 /obj/item/gun/ballistic/automatic/assault_rifle/infiltrator,
 /obj/item/gun/ballistic/automatic/autopipe,

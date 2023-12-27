@@ -124,8 +124,8 @@
 	desc = "T-45d power armor with servomotors and all valuable components stripped out of it."
 	icon_state = "t45d_salvaged"
 	item_state = "t45d_salvaged"
-	armor = list("melee" = 70, "bullet" = 70, "laser" = 60, "energy" = 15, "bomb" = 45, "bio" = 65, "rad" = 40, "fire" = 70, "acid" = 25, "wound" = 50)
-	slowdown = 0.5
+	armor = list("melee" = 65, "bullet" = 65, "laser" = 50, "energy" = 30, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
+	slowdown = 0.4	//When helmeted, 0.5
 
 // T-51B
 /obj/item/clothing/suit/armored/heavy/salvaged_pa/t51b

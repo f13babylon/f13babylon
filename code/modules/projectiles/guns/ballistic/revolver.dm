@@ -267,7 +267,7 @@
 	icon_state = "mysterious_m29"
 	icon = 'icons/obj/guns/gunfruits2022/pistols.dmi'
 	automatic = 1
-	autofire_shot_delay = 2.8
+	autofire_shot_delay = 3.6
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	can_scope = FALSE
 
@@ -393,7 +393,6 @@
 	recoil = 0.3
 	fire_delay = 4		// Slightly higher than the n99
 	extra_damage = 10	// +4 damage compared to n99
-
 
 /////////////
 // NEEDLER //
