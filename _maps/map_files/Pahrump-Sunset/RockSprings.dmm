@@ -51,7 +51,6 @@
 /obj/structure/chair/f13chair2{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/semen/femcum,
 /obj/effect/decal/remains/human,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/building)

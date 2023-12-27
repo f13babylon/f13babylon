@@ -9762,10 +9762,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building/mall)
 "pxX" = (
-/obj/effect/decal/cleanable/semen{
-	pixel_y = -16;
-	pixel_x = 18
-	},
 /turf/open/floor/f13/wood{
 	icon_state = "housewood3-broken"
 	},

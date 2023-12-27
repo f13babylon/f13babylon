@@ -57124,7 +57124,6 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
-/obj/effect/decal/cleanable/semen,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/building)
 "rZT" = (
@@ -67189,7 +67188,6 @@
 	},
 /area/f13/brotherhood/leisure)
 "wKS" = (
-/obj/effect/decal/cleanable/semen/femcum,
 /obj/structure/reagent_dispensers/rainwater_tank{
 	pixel_x = 1;
 	pixel_y = 22;
