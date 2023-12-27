@@ -210,7 +210,7 @@
 	slowdown = 0.15
 	spread = 14
 	force = 15
-	recoil = 0.65
+	recoil = 0.6
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 
 /obj/item/gun/ballistic/automatic/smg/auto_select()
@@ -259,7 +259,7 @@
 	slowdown = 0.12
 	spread = 20
 	extra_damage = -2	//14 DAM
-	recoil = 0.85
+	recoil = 0.8
 
 //MP5			Keywords: 9mm, Suppressed, Dual-wieldable on semi-auto, AP, Accurate, 32/50 Rounds, Normal, High-mid tier
 /obj/item/gun/ballistic/automatic/smg/mp5
@@ -274,7 +274,7 @@
 	extra_penetration = 0.2	//20% AP
 	suppressed = TRUE
 	can_unsuppress = FALSE
-	recoil = 0.55
+	recoil = 0.5
 
 //Calico			Keywords: 9mm, Bullethose, 70 rounds, Bulky, Superhigh tier
 /obj/item/gun/ballistic/automatic/smg/calico
@@ -349,9 +349,10 @@
 	fire_delay = 4
 	autofire_shot_delay = 3
 	slowdown = 0.4
-	spread = 15
-	recoil = 0.85
-	extra_penetration = 0.1	//10% AP
+	spread = 14
+	recoil = 0.8
+	extra_damage = -7		//25 DAM
+	extra_penetration = 0.2	//20% AP
 
 ////////////
 //CARBINES//
@@ -821,7 +822,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m556mm
 	init_mag_type = /obj/item/ammo_box/magazine/m556mm/extended
 	slowdown = 1.1
-	extra_speed = 400	//600 Extra Speed
+	extra_speed = 500	//500 Extra Speed
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
@@ -835,13 +836,26 @@
 	fire_sound = 'sound/f13weapons/infiltrator.ogg'
 	init_mag_type = /obj/item/ammo_box/magazine/m556mm/extended
 	spread = 4
-	recoil = 0.5
+	recoil = 0.6
 	extra_penetration = 0.3		//30% AP
 	zoomable = TRUE
 	zoom_amt = 8
 	zoom_out_amt = 11
 	suppressed = TRUE
 	can_unsuppress = FALSE
+
+//AK-112		Keywords: 5.56, 10/20/30/50 Rounds, High-mid tier
+/obj/item/gun/ballistic/automatic/assault_rifle/ak112
+	name = "old assault rifle"
+	desc = "WIP."
+	icon_state = "ak112"
+	item_state = "handmade_rifle"
+	fire_sound = 'sound/f13weapons/chinese_assault_rifle.ogg'
+	mag_type = /obj/item/ammo_box/magazine/m5mm
+	fire_delay = 3
+	autofire_shot_delay = 2
+	extra_damage = -5
+	spread = 20
 
 //Type 93 Assault Rifle		Keywords: 5mm, Burst, AP, 30/50 Rounds, High tier
 /obj/item/gun/ballistic/automatic/assault_rifle/type93
@@ -884,7 +898,6 @@
 	fire_delay = 3
 	autofire_shot_delay = 2
 	spread = 13
-	recoil = 0.5
 
 //G11		Keywords: 5mm, Caseless, Long Scope, AP, Accurate, 50 Rounds, Superhigh tier
 /obj/item/gun/ballistic/automatic/assault_rifle/g11
@@ -896,9 +909,9 @@
 	mag_type = /obj/item/ammo_box/magazine/mg11
 	burst_size = 3
 	fire_delay = 4
-	spread = 2
-	recoil = 0.5
-	extra_speed = 600	//800 Extra Speed
+	spread = 3
+	recoil = 0.8
+	extra_speed = 700	//700 Extra Speed
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
@@ -913,7 +926,7 @@
 	fire_sound = 'sound/f13weapons/762assault_rifle.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m762mm
 	init_mag_type = /obj/item/ammo_box/magazine/m762mm/extended
-	slowdown = 0.6
+	slowdown = 0.5
 	spread = 10
 	recoil = 0.8
 
@@ -973,8 +986,8 @@
 	init_mag_type = /obj/item/ammo_box/magazine/m762mm/extended
 	autofire_shot_delay = 3
 	slowdown = 1.35
-	spread = 5
-	recoil = 0.5
+	spread = 6
+	recoil = 0.6
 	extra_damage = -5			//30 DAM
 	extra_penetration = 0.2		//20% AP
 	extra_speed = 200			//200 Extra Speed
