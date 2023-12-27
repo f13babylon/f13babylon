@@ -535,6 +535,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/backslot_weapon.dmi'
 	item_state = "plasma"
 	icon_state = "plasma"
+	icon_prefix = "plasma"
 	damtype = BURN
 	sharpness = SHARP_POINTY
 	slot_flags = ITEM_SLOT_BACK

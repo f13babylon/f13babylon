@@ -315,9 +315,19 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
 
-/datum/crafting_recipe/salvageweld
-	name = "Salvaged Welding Mask"
+/datum/crafting_recipe/salvageweldfire
+	name = "Salvaged Welding Mask - Cremator"
 	result = /obj/item/clothing/head/welding/f13/fire
+	time = 600
+	reqs = list(/obj/item/stack/sheet/metal = 4,
+				/obj/item/stack/sheet/cloth = 1)
+	tools = list(TOOL_FORGE)
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOR
+
+/datum/crafting_recipe/salvageweldjapan
+	name = "Salvaged Welding Mask - Oriental"
+	result = /obj/item/clothing/head/welding/f13/japan
 	time = 600
 	reqs = list(/obj/item/stack/sheet/metal = 4,
 				/obj/item/stack/sheet/cloth = 1)
@@ -1320,7 +1330,7 @@
 /datum/crafting_recipe/follower_light
 	name = "Follower Insignia Stitching"
 	result = /obj/item/clothing/suit/hooded/followerlight
-	reqs = list(/obj/item/clothing/suit/toggle/labcoat,
+	reqs = list(/obj/item/clothing/suit/toggle/labcoat = 1,
 				/obj/item/stack/sheet/cloth = 1)
 	tools = list(TOOL_WORKBENCH)
 	time = 30
@@ -1331,7 +1341,7 @@
 /datum/crafting_recipe/follower_medium
 	name = "Follower Labcoat Plating"
 	result = /obj/item/clothing/suit/hooded/followermedium
-	reqs = list(/obj/item/clothing/suit/hooded/followerlight,
+	reqs = list(/obj/item/clothing/suit/hooded/followerlight = 1,
 				/obj/item/stack/sheet/cloth = 1,
 				/obj/item/stack/crafting/armor_plate = 2,
 				/obj/item/stack/crafting/metalparts = 5,
@@ -1345,9 +1355,9 @@
 /datum/crafting_recipe/follower_heavy
 	name = "Follower Labcoat Reforging"
 	result = /obj/item/clothing/suit/hooded/followerheavy
-	reqs = list(/obj/item/clothing/suit/hooded/followermedium,
+	reqs = list(/obj/item/clothing/suit/hooded/followermedium = 1,
 				/obj/item/stack/sheet/cloth = 1,
-				/obj/item/clothing/suit/armor/f13/metalarmor,
+				/obj/item/clothing/suit/armor/f13/metalarmor = 1,
 				/obj/item/stack/crafting/metalparts = 5,
 				/obj/item/stack/crafting/goodparts = 2)
 	tools = list(TOOL_WORKBENCH)

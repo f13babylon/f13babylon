@@ -133,8 +133,8 @@
 	health = 180
 	retreat_distance = 4
 	minimum_distance = 6
-	projectiletype = /obj/item/projectile/bullet/a762/sport/simple
-	projectilesound = 'sound/f13weapons/hunting_rifle.ogg'
+	projectiletype = /obj/item/projectile/bullet/a762mm/simple
+	projectilesound = 'sound/f13weapons/762rifle.ogg'
 	loot = list(/obj/item/ammo_box/a308)
 	footstep_type = FOOTSTEP_MOB_HEAVY
 
@@ -211,9 +211,9 @@
 	extra_projectiles = 1
 	retreat_distance = 4
 	minimum_distance = 6
-	projectiletype = /obj/item/projectile/bullet/a556/simple
-	projectilesound = 'sound/f13weapons/assaultrifle_fire.ogg'
-	loot = list(/obj/item/ammo_box/magazine/m556/rifle)
+	projectiletype = /obj/item/projectile/bullet/a556mm/simple
+	projectilesound = 'sound/f13weapons/assault_rifle.ogg'
+	loot = list(/obj/item/ammo_box/magazine/m556mm)
 	footstep_type = FOOTSTEP_MOB_HEAVY
 
 /mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant/Aggro()

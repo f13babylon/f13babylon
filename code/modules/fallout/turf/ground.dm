@@ -363,6 +363,7 @@
 	barefootstep = FOOTSTEP_WATER
 	clawfootstep = FOOTSTEP_WATER
 	heavyfootstep = FOOTSTEP_WATER
+	var/apply_rads = TRUE
 
 /turf/open/indestructible/ground/outside/water/running
 	gender = PLURAL
@@ -379,6 +380,11 @@
 	clawfootstep = FOOTSTEP_WATER
 	heavyfootstep = FOOTSTEP_WATER
 
+/turf/open/indestructible/ground/outside/water/no_rads
+	name = "constructed river water"
+	desc = "Shallow river water. The water appears cleaner than normal."
+	apply_rads = FALSE
+
 /turf/open/indestructible/ground/outside/water/Initialize(mapload)
 	. = ..()
 	update_icon()
@@ -387,7 +393,8 @@
 	if(istype(AM, /mob/living))
 		var/mob/living/L = AM
 		L.update_water()
-		L.apply_damage(2, RADIATION)
+		if(apply_rads)
+			L.apply_damage(2, RADIATION)
 		if(L.check_submerged() <= 0)
 			return
 		if(!istype(oldloc, /turf/open/indestructible/ground/outside/water))
@@ -399,7 +406,8 @@
 	if(istype(AM, /mob/living))
 		var/mob/living/L = AM
 		L.update_water()
-		L.apply_damage(2, RADIATION)
+		if(apply_rads)
+			L.apply_damage(2, RADIATION)
 		if(L.check_submerged() <= 0)
 			return
 		if(!istype(newloc, /turf/open/indestructible/ground/outside/water))
@@ -593,7 +601,9 @@
 	name = "gravel"
 	icon_state = "graveldirt"
 	icon = 'icons/fallout/turfs/ground.dmi'
-//	step_sounds = list("human" = "erikafootsteps")
+	footstep = FOOTSTEP_GRAVEL
+	barefootstep = FOOTSTEP_GRAVEL
+	clawfootstep = FOOTSTEP_GRAVEL
 
 // New gravel, organized. Use directions for control. - Pebbles
 /turf/open/indestructible/ground/outside/gravel
@@ -603,10 +613,6 @@
 	footstep = FOOTSTEP_GRAVEL
 	barefootstep = FOOTSTEP_GRAVEL
 	clawfootstep = FOOTSTEP_GRAVEL
-
-/turf/open/indestructible/ground/outside/gravel/alt
-	name = "gravel"
-	icon_state = "gravel_alt"
 
 /turf/open/indestructible/ground/outside/gravel/path_desert
 	name = "gravel path"

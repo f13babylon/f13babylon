@@ -1,5 +1,5 @@
 /*
-IN THIS DOCUMENT: Universal Gun system rules/keywords. Universal gun template and procs/vars.
+IN THIS DOCUMENT: Universal Gun system rules/keywords. Universal gun template and procs/vars. Tasty.
 
 /////////////////////////////////////
 //UNIVERSAL GUN KEYWORDS AND SYSTEM//
@@ -151,7 +151,6 @@ ATTACHMENTS
 	force = 5
 	item_flags = NEEDS_PERMIT | SLOWS_WHILE_IN_HAND
 	attack_verb = list("struck", "hit", "bashed")
-	var/ranged_attack_speed = CLICK_CD_RANGE
 	var/fire_sound = "gunshot"
 	var/recoil = 0						//boom boom shake the room
 	var/clumsy_check = TRUE
@@ -316,9 +315,9 @@ ATTACHMENTS
 		else
 			. += "It has a bayonet lug, suitable for a <b>bayonet</b>."
 	if (suppressed)
-		. += "It has a [can_unsuppress ? "built-in " : ""]suppressor mounted on its muzzle."
+		. += "It has a [can_unsuppress ? "" : "built-in "]suppressor mounted on its muzzle."
 	else if (can_suppress)
-		. += "It has a threaded barrel exterior suitable for installing a <b>[can_unsuppress ? "permanent " : ""]suppressor</b>."
+		. += "It has a threaded barrel exterior suitable for installing a <b>[can_unsuppress ? "" : "permanent "]suppressor</b>."
 	if (can_attachments)
 		var/free_slots = 2 // update if more are added, or refactor this to use a list of attachments
 		if(burst_improvement)
@@ -378,7 +377,7 @@ ATTACHMENTS
 			O.emp_act(severity)
 
 /obj/item/gun/attack(mob/living/M, mob/user)
-	if(bayonet && user.a_intent == INTENT_HARM)
+	if(bayonet && user.a_intent != INTENT_HELP)
 		M.attackby(bayonet, user) // handles cooldown
 		return
 	. = ..()
@@ -386,31 +385,31 @@ ATTACHMENTS
 		user.DelayNextAction(attack_speed)
 
 /obj/item/gun/attack_obj(obj/O, mob/user)
-	if(bayonet && user.a_intent == INTENT_HARM) // Must run BEFORE parent call, so we don't smack them with the gun body too.
+	if(bayonet && user.a_intent != INTENT_HELP) // Must run BEFORE parent call, so we don't smack them with the gun body too.
 		O.attackby(bayonet, user) // handles cooldown
 		return
 	. = ..()
 	if(!(. & DISCARD_LAST_ACTION))
 		user.DelayNextAction(attack_speed)
 
-/obj/item/gun/afterattack(atom/target, mob/living/user, flag, params)
+/obj/item/gun/afterattack(atom/target, mob/living/user, proximity_flag, params)
 	. = ..()
 	if(!CheckAttackCooldown(user, target))
 		return
-	process_afterattack(target, user, flag, params)
+	process_afterattack(target, user, proximity_flag, params)
 
-/obj/item/gun/proc/process_afterattack(atom/target, mob/living/user, flag, params)
-	if(!target)
+/obj/item/gun/proc/process_afterattack(atom/target, mob/living/user, proximity_flag, params)
+	if(!target || !user || firing)
 		return
-	if(firing)
+
+	var/user_turf = get_turf(user)
+	if(target == user_turf)
 		return
-	var/stamloss = user.getStaminaLoss()
-	if(flag) //It's adjacent, is the user, or is on the user's person
-		if(target in user.contents) //can't shoot stuff inside us.
+
+	if(proximity_flag)
+		if(!isturf(target) && !isturf(target.loc))
 			return
-		if(!ismob(target) || user.a_intent == INTENT_HARM) //melee attack
-			return
-		if(target == user && user.zone_selected != BODY_ZONE_PRECISE_MOUTH && (user.a_intent != INTENT_DISARM)) //so we can't shoot ourselves (unless mouth selected or disarm intent)
+		if((ismob(target) || isobj(target)) && (user.a_intent == INTENT_HELP || user.a_intent == INTENT_DISARM))
 			return
 		if(iscarbon(target))
 			var/mob/living/carbon/C = target
@@ -428,8 +427,9 @@ ATTACHMENTS
 		shoot_with_empty_chamber(user)
 		return
 
-	if(flag)
-		if(user.zone_selected == BODY_ZONE_PRECISE_MOUTH)
+	if(proximity_flag)
+		if(ishuman(user) && ishuman(target) && user.zone_selected == BODY_ZONE_PRECISE_MOUTH)
+			user.DelayNextAction(attack_speed)
 			handle_suicide(user, target, params)
 			return
 
@@ -448,7 +448,7 @@ ATTACHMENTS
 		return
 
 	if (automatic == 0)
-		user.DelayNextAction(ranged_attack_speed)
+		user.DelayNextAction(fire_delay)
 	if (automatic == 1)
 		user.DelayNextAction(autofire_shot_delay)
 
@@ -456,9 +456,10 @@ ATTACHMENTS
 	var/bonus_spread = 0
 	var/loop_counter = 0
 
-	if(user)
-		bonus_spread = getinaccuracy(user, bonus_spread, stamloss) //CIT CHANGE - adds bonus spread while not aiming
+	var/stamloss = user.getStaminaLoss()
+
 	if(ishuman(user) && user.a_intent == INTENT_HARM && weapon_weight <= WEAPON_LIGHT)
+		bonus_spread = getinaccuracy(user, bonus_spread, stamloss) //CIT CHANGE - adds bonus spread while not aiming
 		var/mob/living/carbon/human/H = user
 		for(var/obj/item/gun/G in H.held_items)
 			if(G == src || G.weapon_weight >= WEAPON_MEDIUM)
@@ -484,13 +485,13 @@ ATTACHMENTS
 		return FALSE
 
 /obj/item/gun/CheckAttackCooldown(mob/user, atom/target)
-	if((user.a_intent == INTENT_HARM || user.a_intent == INTENT_HELP) && user.Adjacent(target))		//melee
+	if(user.Adjacent(target) && !isturf(target))		//melee
 		return user.CheckActionCooldown(CLICK_CD_MELEE)
 	return user.CheckActionCooldown(get_clickcd())
 
 /obj/item/gun/proc/get_clickcd()
 	if (automatic == 0)
-		return isnull(chambered?.click_cooldown_override)? CLICK_CD_RANGE : chambered.click_cooldown_override
+		return isnull(chambered?.click_cooldown_override)? fire_delay : chambered.click_cooldown_override
 	if (automatic == 1)
 		return isnull(chambered?.click_cooldown_override)? autofire_shot_delay : chambered.click_cooldown_override
 
@@ -563,7 +564,7 @@ ATTACHMENTS
 				shoot_with_empty_chamber(user)
 				return
 			else
-				if(get_dist(user, target) <= 1) //Making sure whether the target is in vicinity for the pointblank shot
+				if(get_dist(user, target) <= 1 && !isturf(target)) //Making sure whether the target is in vicinity for the pointblank shot
 					shoot_live_shot(user, 1, target, message, stam_cost)
 				else
 					shoot_live_shot(user, 0, target, message, stam_cost)
@@ -867,9 +868,6 @@ ATTACHMENTS
 	return ..()
 
 /obj/item/gun/proc/handle_suicide(mob/living/carbon/human/user, mob/living/carbon/human/target, params, bypass_timer)
-	if(!ishuman(user) || !ishuman(target))
-		return
-
 	if(on_cooldown())
 		return
 
@@ -899,6 +897,11 @@ ATTACHMENTS
 
 	if(chambered && chambered.BB)
 		chambered.BB.damage *= 5
+
+	if (automatic == 0)
+		user.DelayNextAction(fire_delay)
+	if (automatic == 1)
+		user.DelayNextAction(autofire_shot_delay)
 
 	process_fire(target, user, TRUE, params, stam_cost = getstamcost(user))
 

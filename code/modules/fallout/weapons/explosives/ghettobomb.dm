@@ -70,6 +70,67 @@
 	explosion(src.loc, 1, 2, 2, 3, 0, flame_range = 1)
 	qdel(src)
 
+///////////////
+// PIPE BOMB //
+///////////////		Weaker frag grenade
+/obj/item/grenade/homemade/pipebomb
+	name = "pipebomb"
+	desc = "A makeshift tube filled with gunpowder and nails, perfect gift throught mail."
+	icon_state = "pipebomb"
+	throw_range = 4
+	display_timer = 0
+	det_time = 60
+	shrapnel_type = /obj/item/projectile/bullet/shrapnel/nail
+	shrapnel_radius = 4
+	//var/datum/looping_sound/pipebomb/soundloop
+
+/obj/item/grenade/homemade/pipebomb/Initialize(mapload)
+	. = ..()
+	//soundloop = new(list(src), FALSE)
+
+/obj/item/grenade/homemade/pipebomb/attack_self(mob/user) //
+	if(!active)
+		if(!botch_check(user))
+			to_chat(user, "<span class='warning'>You light [src] on fire!")
+			primefuse(user, null, FALSE)
+			//soundloop.start()
+
+/obj/item/grenade/homemade/pipebomb/prime(mob/living/lanced_by)
+	. = ..()
+	update_mob()
+	explosion(src.loc, 0, 1, 2, 0, 0, flame_range = 0)
+	qdel(src)
+
+////////////////////
+// DYNAMITE STICK //
+////////////////////	Weaker C4-esc throwable
+
+/obj/item/grenade/homemade/dynamite
+	name = "dynamite stick"
+	desc = "A stick of industrial-grade mining dynamite, it's brand is withered away from the time spent in the desert."
+	throw_speed = 2
+	throw_range = 6
+	display_timer = 0
+	det_time = 30
+	icon_state = "dynamite"
+	//var/datum/looping_sound/dynamite/soundloop
+
+/obj/item/grenade/homemade/dynamite/Initialize(mapload)
+	. = ..()
+	//soundloop = new(list(src), FALSE)
+
+/obj/item/grenade/homemade/dynamite/attack_self(mob/user) //
+	if(!active)
+		if(!botch_check(user))
+			to_chat(user, "<span class='warning'>You light [src] on fire!")
+			primefuse(user, null, FALSE)
+			//soundloop.start()
+
+/obj/item/grenade/homemade/dynamite/prime(mob/living/lanced_by)
+	. = ..()
+	update_mob()
+	explosion(src.loc, 0, 1, 2, 3, 0, flame_range = 0)
+	qdel(src)
 
 //////////////
 // FIREBOMB //
@@ -187,5 +248,5 @@
 
 /obj/item/reagent_containers/glass/bottle/napalm
 	name = "napalm mix"
-	desc = "Add this mix to the molotov cocktail before lighting it." 
+	desc = "Add this mix to the molotov cocktail before lighting it."
 	list_reagents = list(/datum/reagent/napalm = 30)

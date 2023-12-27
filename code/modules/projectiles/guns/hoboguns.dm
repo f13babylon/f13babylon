@@ -207,31 +207,6 @@
 //PREMIUM HOBO GUNS//
 /////////////////////
 
-
-//Laser musket
-/obj/item/gun/ballistic/rifle/hobo/lasmusket
-	name = "laser musket"
-	desc = "In the wasteland, one must make do, and this weapon's wielder certainly does. Made from metal scraps, electronic parts, an old rifle stock and a bottle full of dreams, the Laser Musket is sure to stop anything in its tracks and make those raiders think twice."
-	icon_state = "lasermusket"
-	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
-	item_state = "lasmusket"
-	mag_type = /obj/item/ammo_box/magazine/internal/shot/lasmusket
-	fire_delay = 15
-	dryfire_sound = 'sound/f13weapons/noammoenergy.ogg'
-	dryfire_text = "*power failure*"
-	var/bolt_open = FALSE
-	can_bayonet = TRUE
-	knife_x_offset = 22
-	knife_y_offset = 20
-	bayonet_state = "bayonet"
-	scope_state = "scope_long"
-	scope_x_offset = 11
-	scope_y_offset = 14
-	fire_sound = 'sound/f13weapons/lasmusket_fire.ogg'
-	pump_sound = 'sound/f13weapons/lasmusket_crank.ogg'
-	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
-
-
 //Plasma musket.
 /obj/item/gun/ballistic/rifle/hobo/plasmacaster
 	name = "plasma musket"
@@ -258,7 +233,7 @@
 	desc = "There are many ways to describe this, very few of them nice. This is a .45 silenced bolt action Carbine - that via the expertise of a gun runner mainlining 50 liters of psycho, mentats, and turbo - has been converted into a semi auto."
 	icon_state = "destroyer-carbine"
 	item_state = "varmintrifle"
-	mag_type = /obj/item/ammo_box/magazine/greasegun
+	mag_type = /obj/item/ammo_box/magazine/mgreasegun
 	fire_delay = 5
 	burst_size = 1
 	can_attachments = FALSE

@@ -150,7 +150,8 @@
 	anchored = 1
 	w_class = 4
 
-	layer = 4.1
+	layer = ABOVE_MOB_LAYER
+	plane = MOB_PLANE
 	icon = 'icons/obj/flags.dmi'
 	icon_state = "emptyflag"
 	item_state = "emptyflag"
@@ -202,11 +203,11 @@
 	anchored = 1
 
 /obj/item/flag/locust
-	name = "Locust flag"
-	desc = "A flag with a skull, the symbol of Locusts."
+	name = "Raider flag"
+	desc = "A flag with a skull, a common symbol of Raiders."
 	icon_state = "locustflag"
 	item_state = "locustflag"
-	faction = "Locust"
+	faction = FACTION_RAIDERS
 	anchored = 1
 
 /obj/item/flag/yuma
@@ -263,7 +264,7 @@
 		if(do_after(user, 60, target = src))
 			var/obj/item/stack/sheet/leather/H = I
 			if(H.use(1))
-				var/list/choices = list("NCR", "Legion", "Bighorn", "BOS", "Followers", "Great Khans")
+				var/list/choices = list("NCR", "Legion", "Bighorn", "BOS", "Enclave", "America", "Followers", "Great Khans", "Raiders", "Renegade")
 				var/flag = input("Please choose which faction flag you wish to create.") in choices
 				switch(flag)
 					if(FACTION_NCR)
@@ -314,6 +315,27 @@
 						icon_state = "enclaveflag"
 						item_state = "enclaveflag"
 						faction = FACTION_ENCLAVE
+						anchored = 1
+					if("America")
+						name = "America flag"
+						desc = "A flag reminding us of the Old World. It fills you with an odd sense of pride as you stand at attention to it."
+						icon_state = "enclaveflag_america"
+						item_state = "enclaveflag_america"
+						faction = FACTION_ENCLAVE
+						anchored = 1
+					if("Raiders")
+						name = "Raider flag"
+						desc = "A flag with a skull, a common symbol of Raiders."
+						icon_state = "locustflag"
+						item_state = "locustflag"
+						faction = FACTION_RAIDERS
+						anchored = 1
+					if("Renegade")
+						name = "Renegade Corps flag"
+						desc = "A flag marking territory belonging to the Renegade Corps mercenaries."
+						icon_state = "renegade_flag"
+						item_state = "renegade_flag"
+						faction = "Renegade"
 						anchored = 1
 				update_icon()
 	else

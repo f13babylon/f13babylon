@@ -101,7 +101,8 @@ Administrator
 		/obj/item/book/granter/trait/chemistry = 1,
 		/obj/item/book/granter/trait/techno = 1,
 		/obj/item/healthanalyzer/advanced = 1,
-		/obj/item/pda/medical = 1,
+		/obj/item/pda = 1,
+		/obj/item/gun/energy/laser/complianceregulator = 1,
 	)
 
 /*

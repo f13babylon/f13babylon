@@ -64,7 +64,7 @@
 	exp_requirements = 600
 
 	loadout_options = list(
-		/datum/outfit/loadout/cpt_ballistics, // G11E and Plasma Glock
+		/datum/outfit/loadout/cpt_ballistics, // Assault Carbine and Plasma Glock
 		/datum/outfit/loadout/cpt_flamer, //Flamer+el captain
 		)
 
@@ -92,7 +92,7 @@
 
 /datum/outfit/loadout/cpt_ballistics
 	name = "Ranged Lead"
-	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
+	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle/assault_carbine
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m5mm = 2,
 		/obj/item/gun/energy/laser/plasma/glock = 1,
@@ -336,7 +336,7 @@
 /datum/outfit/loadout/sgt_classic
 	name = "Tactical Assaultman"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/assault_carbine = 1,
+		/obj/item/gun/ballistic/automatic/assault_rifle/assault_carbine = 1,
 		/obj/item/ammo_box/magazine/m5mm = 4,
 		/obj/item/attachments/scope = 1,
 		/obj/item/suppressor = 1, //they get a flashlight in their bag
@@ -395,7 +395,7 @@
 
 /datum/outfit/loadout/acpl_ballistics
 	name = "Frontline Operator"
-	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
+	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle/assault_carbine
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m5mm = 2,
 		)
@@ -412,7 +412,7 @@
 	suit_store = /obj/item/melee/powered/ripper
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/type17 = 1,
-		/obj/item/ammo_box/magazine/m10mm_adv/simple = 3,
+		/obj/item/ammo_box/magazine/m10mm = 3,
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavecpl/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -471,7 +471,7 @@
 		/obj/item/book/granter/trait/chemistry = 1,
 		/obj/item/book/granter/trait/midsurgery = 1,
 		/obj/item/storage/pill_bottle/chem_tin/mentats = 1,
-		/obj/item/ammo_box/magazine/uzim9mm = 2,
+		/obj/item/ammo_box/magazine/msmg9mm = 2,
 		/obj/item/gun/energy/laser/plasma/pistol/light = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2
 		)
@@ -535,7 +535,7 @@
 	name = "Pursuit Rifleman"
 	suit_store = /obj/item/gun/ballistic/automatic/smg/mp5
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/uzim9mm = 2,
+		/obj/item/ammo_box/magazine/msmg9mm = 2,
 		/obj/item/gun/energy/laser/plasma/pistol/light = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2
 		)

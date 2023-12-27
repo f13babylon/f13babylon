@@ -56,20 +56,9 @@
 	desc = "Small pebbles, lots of them."
 	icon = 'icons/fallout/turfs/ground.dmi'
 	icon_state = "gravel"
-
-/turf/open/floor/plating/f13/inside/gravel/edge
-	icon_state = "graveledge"
-
-/turf/open/floor/plating/f13/inside/gravel/corner
-	icon_state = "gravelcorner"
-
-
-//GRAVEL OUTDOORS
-/turf/open/floor/plating/f13/inside/gravel
-	name = "gravel"
-	desc = "Small pebbles, lots of them."
-	icon = 'icons/fallout/turfs/ground.dmi'
-	icon_state = "gravel"
+	footstep = FOOTSTEP_GRAVEL
+	barefootstep = FOOTSTEP_GRAVEL
+	clawfootstep = FOOTSTEP_GRAVEL
 	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/plating/f13/inside/gravel/edge
@@ -77,9 +66,6 @@
 
 /turf/open/floor/plating/f13/inside/gravel/corner
 	icon_state = "gravelcorner"
-
-
-//New standard wood floor for most areas, oak for Legion and pure log cabins only, maple for NCR and mayor only, maybe a diner.
 
 #define SHROOM_SPAWN	1
 
@@ -352,9 +338,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/corner
 	icon_state = "rarecorner"
 
-/turf/open/floor/plasteel/f13/vault_floor/misc/recharge
-	icon_state = "recharge"
-
 /turf/open/floor/plasteel/f13/vault_floor/misc/plaque
 	icon_state = "plaque"
 
@@ -364,253 +347,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1
 	icon_state = "vault1"
 
-////Metal Floors////
-
-/turf/open/floor/plasteel/f13/metal
-	footstep = FOOTSTEP_PLATING //clonk
-	barefootstep = FOOTSTEP_HARD_BAREFOOT
-	clawfootstep = FOOTSTEP_HARD_CLAW
-	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	icon_state = "steel_industrial"
-	desc = "Metal flooring."
-
-/turf/open/floor/plasteel/f13/metal/plate
-	icon_state = "steel_solid"
-
-/turf/open/floor/plasteel/f13/metal/border
-	icon_state = "steel_industrial_b"
-
-/turf/open/floor/plasteel/f13/metal/border/corner
-	icon_state = "steel_industrial_b_corner"
-
-/turf/open/floor/plasteel/f13/metal/border/sides
-	icon_state = "steel_industrial_b_sides"
-
-/turf/open/floor/plasteel/f13/metal/border/end
-	icon_state = "steel_industrial_b_end"
-
-/turf/open/floor/plasteel/f13/metal/grate
-	icon_state = "steel_grate"
-
-/turf/open/floor/plasteel/f13/metal/grate/alt
-	icon_state = "steel_grate_alt"
-
-/turf/open/floor/plasteel/f13/metal/grate/border
-	icon_state = "steel_grate_border"
-
-/turf/open/floor/plasteel/f13/metal/grate/border/warning
-	icon_state = "steel_grate_warning"
-
-/turf/open/floor/plasteel/f13/metal/warning
-	icon_state = "steel_warning"
-
-/turf/open/floor/plasteel/f13/metal/stayclear
-	icon_state = "steel_stayclear"
-
-////Concrete Floors////
-
-/turf/open/floor/plasteel/f13/concrete
-	icon_state = "concrete_big"
-	desc = "Concrete slabs."
-
-/turf/open/floor/plasteel/f13/concrete/small
-	icon_state = "concrete_small"
-
-/turf/open/floor/plasteel/f13/concrete/industrial
-	icon_state = "concrete_industrial"
-	desc = "Heavy duty concrete slabs." //DAS CONCRETE BABY
-
-/turf/open/floor/plasteel/f13/concrete/industrial/alt
-	icon_state = "concrete_industrial_alt"
-
-/turf/open/floor/plasteel/f13/concrete/industrial/split
-	icon_state = "concrete_industrial_split"
-
-/turf/open/floor/plasteel/f13/concrete/industrial/walkway
-	icon_state = "concrete_walkway"
-
-/turf/open/floor/plasteel/f13/concrete/industrial/walkway/corner
-	icon_state = "concrete_walkway_corner"
-
-/turf/open/floor/plasteel/f13/concrete/industrial/walkway/end
-	icon_state = "concrete_walkway_end"
-
-/turf/open/floor/plasteel/f13/concrete/industrial/walkway
-	icon_state = "concrete_walkway"
-
-/turf/open/floor/plasteel/f13/concrete/industrial/walkway/corner
-	icon_state = "concrete_walkway_corner"
-
-/turf/open/floor/plasteel/f13/concrete/industrial/walkway/end
-	icon_state = "concrete_walkway_end"
-
-////Hybrid Floors////
-
-/turf/open/floor/plasteel/f13/concrete/cable
-	icon_state = "concrete_cable_straight"
-	desc = "Heavy duty cabling embedded in industrial grade concrete."
-
-/turf/open/floor/plasteel/f13/concrete/cable/curved
-	icon_state = "concrete_cable_curve"
-
-/turf/open/floor/plasteel/f13/concrete/cable/merge
-	icon_state = "concrete_cable_merge"
-
-/turf/open/floor/plasteel/f13/concrete/cable/intersection
-	icon_state = "concrete_cable_intersection"
-
-/turf/open/floor/plasteel/f13/concrete/cable/box
-	icon_state = "concrete_cable_box"
-
-/turf/open/floor/plasteel/f13/concrete/cable/node
-	icon_state = "concrete_cable_node"
-
-/turf/open/floor/plasteel/f13/metal/pipe
-	icon_state = "pipe_straight"
-
-/turf/open/floor/plasteel/f13/metal/pipe/Entered(mob/living/M)
-	. = ..()
-	if(!istype(M))
-		return
-
-	if(prob(30))
-		M.slip(5, M.loc, GALOSHES_DONT_HELP, 0, FALSE)
-		playsound(M, 'sound/effects/bang.ogg', 10, 1)
-		to_chat(usr, "<span class='warning'>You trip on the pipes!</span>")
-		return
-
-/turf/open/floor/plasteel/f13/metal/pipe/corner
-	icon_state = "pipe_corner"
-
-/turf/open/floor/plasteel/f13/metal/pipe/intersection
-	icon_state = "pipe_intersection"
-
-/turf/open/floor/plasteel/f13/tile
-	icon_state = "grey"
-
-/turf/open/floor/plasteel/f13/tile/broken
-	icon_state = "grey_1"
-
-/turf/open/floor/plasteel/f13/tile/broken/Initialize(mapload)
-	. = ..()
-	if(icon_state == "grey_1")
-		icon_state = "grey_[rand(1,8)]"
-
-/turf/open/floor/plasteel/f13/tile/long
-	icon_state = "grey_long"
-
-/turf/open/floor/plasteel/f13/tile/long/broken
-	icon_state = "grey_long_1"
-
-/turf/open/floor/plasteel/f13/tile/long/broken/Initialize(mapload)
-	. = ..()
-	if(icon_state == "grey_long1")
-		icon_state = "grey_long_[rand(1,6)]"
-
-/turf/open/floor/plasteel/f13/tile/blue
-	icon_state = "bluetile"
-
-/turf/open/floor/plasteel/f13/tile/blue/broken
-	icon_state = "blue_1"
-
-/turf/open/floor/plasteel/f13/tile/blue/broken/Initialize(mapload)
-	. = ..()
-	if(icon_state == "blue_1")
-		icon_state = "blue_[rand(1,8)]"
-
-/turf/open/floor/plasteel/f13/tile/blue_long
-	icon_state = "blue_long"
-
-/turf/open/floor/plasteel/f13/tile/blue_long/broken
-	icon_state = "blue_long_1"
-
-/turf/open/floor/plasteel/f13/tile/blue_long/broken/Initialize(mapload)
-	. = ..()
-	if(icon_state == "blue_long1")
-		icon_state = "blue_long_[rand(1,6)]"
-
-/turf/open/floor/plasteel/f13/tile/navy
-	icon_state = "navy"
-
-/turf/open/floor/plasteel/f13/tile/navy/broken
-	icon_state = "navy_1"
-
-/turf/open/floor/plasteel/f13/tile/navy/broken/Initialize(mapload)
-	. = ..()
-	if(icon_state == "navy_1")
-		icon_state = "navy_[rand(1,7)]"
-
-/turf/open/floor/plasteel/f13/tile/brown
-	icon_state = "browntile"
-
-/turf/open/floor/plasteel/f13/tile/brown/broken
-	icon_state = "brown_1"
-
-/turf/open/floor/plasteel/f13/tile/brown/broken/Initialize(mapload)
-	. = ..()
-	if(icon_state == "brown_1")
-		icon_state = "brown_[rand(1,8)]"
-
-/turf/open/floor/plasteel/f13/tile/fancy
-	icon_state = "fancy"
-
-/turf/open/floor/plasteel/f13/tile/fancy/broken
-	icon_state = "fancy_1"
-
-/turf/open/floor/plasteel/f13/tile/fancy/broken/Initialize(mapload)
-	. = ..()
-	if(icon_state == "fancy_1")
-		icon_state = "fancy_[rand(1,7)]"
-
-
-
 /turf/open/floor/plasteel/f13/stone
 	name = "stone floor"
 	icon = 'icons/turf/f13floors2.dmi'
-
-/turf/open/floor/plasteel/f13/stone/ornate
-	icon_state = "ornate"
-
-/turf/open/floor/plasteel/f13/stone/ornate/broken
-	icon_state = "ornate_1"
-
-/turf/open/floor/plasteel/f13/stone/ornate/broken/Initialize(mapload)
-	. = ..()
-	if(icon_state == "ornate_1")
-		icon_state = "ornate_[rand(1,3)]"
-
-/turf/open/floor/plasteel/f13/stone/sierra
-	icon_state = "sierra"
-
-/turf/open/floor/plasteel/f13/stone/sierra/broken
-	icon_state = "sierra_1"
-
-/turf/open/floor/plasteel/f13/stone/sierra/broken/Initialize(mapload)
-	. = ..()
-	if(icon_state == "sierra_1")
-		icon_state = "ornate_[rand(1,3)]"
-
-/turf/open/floor/plasteel/f13/stone/ceramic
-	icon_state = "ceramic"
-
-/turf/open/floor/plasteel/f13/stone/ceramic/broken
-	icon_state = "ceramic_1"
-
-/turf/open/floor/plasteel/f13/stone/ceramic/broken/Initialize(mapload)
-	. = ..()
-	if(icon_state == "ceramic_1")
-		icon_state = "ceramic_[rand(1,2)]"
-
-/turf/open/floor/plasteel/f13/stone/brick
-	icon_state = "brick"
-
-/turf/open/floor/plasteel/f13/stone/brick/broken
-	icon_state = "brick_1"
-
-/turf/open/floor/plasteel/f13/stone/brick/broken/Initialize(mapload)
-	. = ..()
-	if(icon_state == "brick_1")
-		icon_state = "brick_[rand(1,8)]"
 
 /turf/open/floor/plasteel/f13/stone/rugged
 	icon_state = "khanstone"

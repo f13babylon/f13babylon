@@ -500,7 +500,7 @@
 	if(HAS_TRAIT(src, TRAIT_NOHUNGER))
 		return 1
 
-	if(nutrition < 100 && !blood)
+	if(nutrition < 100 && !blood && !isflyperson(src))
 		if(message)
 			visible_message("<span class='warning'>[src] dry heaves!</span>", \
 							"<span class='userdanger'>You try to throw up, but there's nothing in your stomach!</span>")

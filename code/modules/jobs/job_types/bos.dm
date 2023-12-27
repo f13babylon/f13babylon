@@ -153,7 +153,7 @@ Head Paladin
 		/obj/item/melee/onehanded/knife/hunting = 1,
 		/obj/item/melee/f13powerfist = 1,
 		/obj/item/gun/ballistic/automatic/pistol/n99/crusader = 1,
-		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
+		/obj/item/ammo_box/magazine/m10mm = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
 		)
 
@@ -218,7 +218,6 @@ Proctor
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/AER9)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/AEP7)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/sniper)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/R93)
 
 /datum/outfit/job/bos/f13headscribe
 	name = "Head Scribe"
@@ -286,7 +285,6 @@ Head Knight
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_PA_WEAR,  REF(src))
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/R93)
 
 
 /datum/outfit/job/bos/f13knightcap
@@ -325,7 +323,7 @@ Head Knight
 	name = "Close Support"
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/smg/p90 = 1,
-		/obj/item/ammo_box/magazine/m10mm_p90 = 2
+		/obj/item/ammo_box/magazine/mp90 = 2
 	)
 
 /datum/outfit/loadout/capmelee
@@ -492,7 +490,7 @@ Paladin
 	name = "Tactical Paladin"
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/assault_rifle = 1,
-		/obj/item/ammo_box/magazine/m556/rifle/assault = 2,
+		/obj/item/ammo_box/magazine/m556mm/drum = 2,
 		/obj/item/clothing/accessory/bos/paladin = 1,
 		/obj/item/clothing/accessory/bos/juniorpaladin = 1,
 		)
@@ -767,7 +765,7 @@ Scribe
 	name = "Footknight"
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/smg/mp5 = 1,
-		/obj/item/ammo_box/magazine/uzim9mm = 2,
+		/obj/item/ammo_box/magazine/msmg9mm = 2,
 		/obj/item/gun/energy/laser/pistol = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 1,
 		/obj/item/grenade/smokebomb = 1,
@@ -868,7 +866,7 @@ Knight
 		/obj/item/clothing/accessory/bos/juniorknight = 1,
 		/obj/item/clothing/accessory/bos/knight = 1,
 		/obj/item/gun/ballistic/automatic/marksman = 1,
-		/obj/item/ammo_box/magazine/m556/rifle = 2,
+		/obj/item/ammo_box/magazine/m556mm = 2,
 		/obj/item/gun/energy/laser/pistol = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 1
 		)

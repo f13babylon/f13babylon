@@ -17,7 +17,7 @@
 	if(!path && mappath)
 		path = mappath
 	if(mappath)
-		preload_size(mappath)
+		preload_size(mappath, cache)
 	if(rename)
 		name = rename
 	if(!name && id)
@@ -198,7 +198,7 @@
 	if(turfs_to_clean.len)
 		var/list/kill_these = list()
 		for(var/i in turfs_to_clean)
-			var/turf/T = i			
+			var/turf/T = i
 			kill_these += T.contents
 		for(var/i in kill_these)
 			if(istype(i,/obj/effect/landmark/dungeon_mark))

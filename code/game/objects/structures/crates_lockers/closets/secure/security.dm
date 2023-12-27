@@ -244,7 +244,7 @@
 	icon_state = "tac"
 /obj/structure/closet/secure_closet/tac/PopulateContents()
 	..()
-	new /obj/item/gun/ballistic/automatic/assault_rifle/infiltrator(src)
+	new /obj/item/gun/ballistic/automatic/assault_rifle/r91/infiltrator(src)
 	new /obj/item/clothing/head/helmet/alt(src)
 	new /obj/item/clothing/mask/gas/sechailer(src)
 	new /obj/item/clothing/suit/armor/bulletproof(src)

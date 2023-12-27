@@ -24,7 +24,7 @@
 	center = TRUE
 	dimension_x = 64
 	color_src = MATRIXED
-	recommended_species = list("human", "lizard", "insect", "mammal", "xeno", "jelly", "slimeperson", "podweak")
+	recommended_species = list("human", "lizard", "insect", "mammal", "xeno", "jelly", "slimeperson", "podweak", "synthanthro")
 	relevant_layers = list(BODY_ADJ_UPPER_LAYER, BODY_FRONT_LAYER)
 	var/taur_mode = NONE //Must be a single specific tauric suit variation bitflag. Don't do FLAG_1|FLAG_2
 	var/alt_taur_mode = NONE //Same as above.
@@ -56,6 +56,14 @@
 	taur_mode = STYLE_PAW_TAURIC
 	color_src = MUTCOLORS
 	extra = TRUE
+
+/datum/sprite_accessory/taur/pede
+	name = "Centipede"
+	icon_state = "pede"
+	taur_mode = STYLE_PAW_TAURIC
+	color_src = MUTCOLORS
+	extra = TRUE
+	extra2 = TRUE
 
 /datum/sprite_accessory/taur/cow
 	name = "Cow"
@@ -131,14 +139,6 @@
 	icon_state = "otie"
 	taur_mode = STYLE_PAW_TAURIC
 	matrixed_sections = MATRIX_ALL
-
-/datum/sprite_accessory/taur/pede
-	name = "Scolipede"
-	icon_state = "pede"
-	taur_mode = STYLE_PAW_TAURIC
-	color_src = MUTCOLORS
-	extra = TRUE
-	extra2 = TRUE
 
 /datum/sprite_accessory/taur/tentacle
 	name = "Tentacle"

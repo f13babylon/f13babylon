@@ -100,16 +100,16 @@
 	icon = 'icons/obj/guns/toy.dmi'
 	can_suppress = FALSE
 	item_flags = NONE
-	mag_type = /obj/item/ammo_box/magazine/toy/m762/riot
+	mag_type = /obj/item/ammo_box/magazine/toy/m762mm/riot
 	casing_ejector = FALSE
 	clumsy_check = FALSE
 
 /obj/item/gun/ballistic/automatic/l6_saw/toy/unrestricted //Use this for actual toys
 	pin = /obj/item/firing_pin
-	mag_type = /obj/item/ammo_box/magazine/toy/m762
+	mag_type = /obj/item/ammo_box/magazine/toy/m762mm
 
 /obj/item/gun/ballistic/automatic/l6_saw/toy/unrestricted/riot
-	mag_type = /obj/item/ammo_box/magazine/toy/m762/riot
+	mag_type = /obj/item/ammo_box/magazine/toy/m762mm/riot
 
 /obj/item/gun/ballistic/automatic/toy/magrifle
 	name = "foamag rifle"
