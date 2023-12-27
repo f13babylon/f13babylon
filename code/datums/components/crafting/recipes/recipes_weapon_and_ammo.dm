@@ -147,7 +147,7 @@
 	subcategory = CAT_AMMO
 
 /datum/crafting_recipe/batteryboxplasma //plasmamusket ammo
-	name = "plasma can box"
+	name = "Plasma Can Box"
 	result = /obj/item/ammo_box/plasmamusket
 	reqs = list(/obj/item/stack/crafting/electronicparts = 2,
 				/obj/item/stack/sheet/glass = 3,
@@ -291,7 +291,7 @@
 	subcategory = CAT_AMMO
 
 /datum/crafting_recipe/a556
-	name = ".223  handloaded ammo bag"
+	name = ".223 handloaded ammo bag"
 	result = /obj/item/ammo_box/a556/sport/improvised
 	reqs = list(/obj/item/stack/sheet/metal = 6,
 	/obj/item/stack/ore/blackpowder = 1
@@ -303,7 +303,7 @@
 
 //Needle Ammo
 /datum/crafting_recipe/needle
-	name = "Needle Ammo"
+	name = "Needle ammo"
 	result = /obj/item/ammo_box/needle
 	reqs = list(/obj/item/stack/crafting/metalparts = 1,
 				/obj/item/stack/sheet/prewar = 1,
@@ -418,7 +418,7 @@
 	subcategory = CAT_WEAPON
 
 /datum/crafting_recipe/m29snub
-	name = "snubnose .44 magnum revolver"
+	name = "Snubnose .44 Magnum Revolver"
 	result = /obj/item/gun/ballistic/revolver/m29/snub
 	reqs = list(
 		/obj/item/gun/ballistic/revolver/m29 = 1,
@@ -430,7 +430,7 @@
 	subcategory = CAT_WEAPON
 
 /datum/crafting_recipe/gun/plasmamusket
-	name = "Plasma musket"
+	name = "Plasma Musket"
 	result = /obj/item/gun/ballistic/rifle/hobo/plasmacaster
 	reqs = list(/obj/item/gun/energy/lasmusket = 1,
 				/obj/item/stack/crafting/electronicparts = 2,
@@ -441,7 +441,7 @@
 	subcategory = CAT_WEAPON
 
 /datum/crafting_recipe/gun/lasmusket
-	name = "Laser musket"
+	name = "Laser Musket"
 	result = /obj/item/gun/energy/lasmusket
 	reqs = list(/obj/item/stack/crafting/electronicparts = 5,
 				/obj/item/gun/ballistic/revolver/hobo/piperifle = 1,
@@ -740,7 +740,7 @@
 	always_available = FALSE
 
 /datum/crafting_recipe/combatcarbine
-	name = "Combat carbine"
+	name = "Combat Carbine"
 	result = /obj/item/gun/ballistic/automatic/combatcarbine
 	reqs = list(/obj/item/stack/sheet/metal = 10,
 				/obj/item/advanced_crafting_components/assembly = 1,
@@ -861,7 +861,7 @@
 
 //aep7
 /datum/crafting_recipe/AEP7
-	name = "AEP-7"
+	name = "Laser Pistol"
 	result = /obj/item/gun/energy/laser/pistol
 	reqs = list(/obj/item/stack/sheet/metal = 5,
 				/obj/item/advanced_crafting_components/lenses = 1,
@@ -876,7 +876,7 @@
 
 //wattz1k
 /datum/crafting_recipe/wattz1k
-	name = "Wattz 1000"
+	name = "Civilian Laser Pistol"
 	result = /obj/item/gun/energy/laser/wattz
 	reqs = list(/obj/item/stack/sheet/metal = 5,
 				/obj/item/advanced_crafting_components/lenses = 2,
@@ -891,7 +891,7 @@
 
 //recharger weapons, followers of the apocalypse
 /datum/crafting_recipe/rechargerpistol
-	name = "recharger pistol"
+	name = "Recharger pistol"
 	result = /obj/item/gun/energy/laser/wattz/recharger
 	reqs = list(/obj/item/stack/sheet/metal = 5,
 				/obj/item/advanced_crafting_components/lenses = 1,
@@ -908,7 +908,7 @@
 	always_available = FALSE
 
 /datum/crafting_recipe/rechargerrifle //Intentionally expensive. Not giving this to guards round-start, they'll make it once materials have come in.
-	name = "recharger rifle"
+	name = "Recharger Rifle"
 	result = /obj/item/gun/energy/laser/aer9/recharger
 	reqs = list(/obj/item/stack/sheet/metal = 5,
 				/obj/item/advanced_crafting_components/lenses = 1,
@@ -1098,7 +1098,7 @@
 
 //sequoia bayonet
 /datum/crafting_recipe/bladedsequoia
-	name = "bladed ranger sequoia"
+	name = "Bladed Ranger Sequoia"
 	result = /obj/item/gun/ballistic/revolver/hunting/sequoia/bayonet
 	reqs = list(/obj/item/gun/ballistic/revolver/hunting/sequoia = 1,
 				/obj/item/melee/onehanded/knife/bayonet = 1
@@ -1205,7 +1205,7 @@
 
 //aer9
 /datum/crafting_recipe/AER9
-	name = "AER-9"
+	name = "Laser Rifle"
 	result = /obj/item/gun/energy/laser/aer9
 	reqs = list(/obj/item/stack/sheet/metal = 15,
 				/obj/item/advanced_crafting_components/lenses = 1,
@@ -1338,7 +1338,7 @@
 
 //wattz2000
 /datum/crafting_recipe/gun/energy/wattz2k
-	name = "Wattz 2000 Laser Rifle"
+	name = "Laser Sniper Rifle"
 	result = /obj/item/gun/energy/laser/wattz2k
 	reqs = list(/obj/item/stack/sheet/metal = 15,
 				/obj/item/advanced_crafting_components/conductors = 1,
@@ -1355,7 +1355,7 @@
 
 //magneto
 /datum/crafting_recipe/magnetowattz
-	name = "Wattz 1000 Magneto-laser Pistol"
+	name = "Magnetic Laser Pistol"
 	result = /obj/item/gun/energy/laser/wattz/magneto
 	reqs = list(/obj/item/gun/energy/laser/wattz = 1,
 				/obj/item/stack/crafting/electronicparts = 2)
@@ -1396,7 +1396,7 @@
 
 //R82 heavy service rifle
 /datum/crafting_recipe/R82
-	name = "R82 heavy service rifle"
+	name = "R82 Heavy Service Rifle"
 	result = /obj/item/gun/ballistic/automatic/service/r82
 	reqs = list(/obj/item/stack/sheet/metal = 5,
 				/obj/item/advanced_crafting_components/assembly = 1,
@@ -1431,7 +1431,7 @@
 ///GUN ATTACHMENT/PARTS CRAFTING//
 //////////////////////////////////
 /datum/crafting_recipe/scope
-	name = "Weapon Optics"
+	name = "Weapon optics"
 	result = /obj/item/attachments/scope
 	reqs = list(
 				/obj/item/stack/sheet/metal = 3,
@@ -1461,7 +1461,7 @@
 	always_available = FALSE
 
 /datum/crafting_recipe/burst_improvement
-	name = "Burst Cam"
+	name = "Burst cam"
 	result = /obj/item/attachments/burst_improvement
 	reqs = list(
 				/obj/item/stack/sheet/metal = 5,
@@ -1475,7 +1475,7 @@
 	always_available = FALSE
 
 /datum/crafting_recipe/recoil_decrease
-	name = "Recoil Compensator"
+	name = "Recoil compensator"
 	result = /obj/item/attachments/recoil_decrease
 	reqs = list(
 				/obj/item/stack/sheet/metal = 5,
@@ -1489,7 +1489,7 @@
 	always_available = FALSE
 
 /datum/crafting_recipe/automatic_sear
-	name = "Automatic Sear"
+	name = "Automatic sear"
 	result = /obj/item/attachments/auto_sear
 	reqs = list(
 				/obj/item/stack/sheet/metal = 8,
