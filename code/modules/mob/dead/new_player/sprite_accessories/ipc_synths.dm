@@ -155,6 +155,26 @@
 	name = "Cyberhead"
 	icon_state = "cyberhead"
 
+/datum/sprite_accessory/antenna/drone_eyes
+	name = "Drone Eyes"
+	icon_state = "droneeyes"
+	color_src = null
+
+/datum/sprite_accessory/antenna/light
+	name = "Head Light"
+	icon_state = "light"
+	color_src = null
+
+/datum/sprite_accessory/antenna/side_lights
+	name = "Side Lights"
+	icon_state = "sidelights"
+	color_src = null
+
+/datum/sprite_accessory/antenna/tesla
+	name = "Tesla"
+	icon_state = "tesla"
+	color_src = null
+
 /datum/sprite_accessory/antenna/tvantennae
 	name = "TV Antennae"
 	icon_state = "tvantennae"
