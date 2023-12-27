@@ -919,6 +919,7 @@
 				/obj/effect/spawner/bundle/f13/needler,
 				/obj/effect/spawner/bundle/f13/marksman,
 				/obj/effect/spawner/bundle/f13/shotgunlever,
+				/obj/effect/spawner/bundle/f13/ak112,
 	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/high
@@ -933,7 +934,7 @@
 				/obj/effect/spawner/bundle/f13/r84,
 				/obj/effect/spawner/bundle/f13/rpd,
 				/obj/effect/spawner/bundle/f13/r91,
-				/obj/effect/spawner/bundle/f13/chinese_rifle,
+				/obj/effect/spawner/bundle/f13/type93,
 	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superhigh
@@ -1332,11 +1333,18 @@
 				/obj/item/ammo_box/magazine/m556mm
 	)
 
-/obj/effect/spawner/bundle/f13/chinese_rifle
+/obj/effect/spawner/bundle/f13/ak112
+	name = "old assault rifle and ammo spawner"
+	items = list(
+				/obj/item/gun/ballistic/automatic/assault_rifle/ak112,
+				/obj/item/ammo_box/magazine/m5mm
+	)
+
+/obj/effect/spawner/bundle/f13/type93
 	name = "chinese assault rifle and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/assault_rifle/type93,
-				/obj/item/ammo_box/magazine/m556mm
+				/obj/item/ammo_box/magazine/m5mm
 	)
 
 /obj/effect/spawner/bundle/f13/bozar
@@ -2276,7 +2284,7 @@
 	loot = list(
 		/obj/item/book/granter/crafting_recipe/blueprint/leveraction,
 		/obj/item/book/granter/crafting_recipe/blueprint/r91,
-		/obj/item/book/granter/crafting_recipe/blueprint/chinese_rifle,
+		/obj/item/book/granter/crafting_recipe/blueprint/type93,
 		/obj/item/book/granter/crafting_recipe/blueprint/r84,
 		/obj/item/book/granter/crafting_recipe/blueprint/rpd,
 		/obj/item/book/granter/crafting_recipe/blueprint/uzi,

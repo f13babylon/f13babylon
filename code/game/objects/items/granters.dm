@@ -736,10 +736,15 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/r91)
 
-/obj/item/book/granter/crafting_recipe/blueprint/chinese_rifle
+/obj/item/book/granter/crafting_recipe/blueprint/ak112
+	name = "old assault rifle blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/ak112)
+
+/obj/item/book/granter/crafting_recipe/blueprint/type93
 	name = "chinese assault rifle blueprint"
 	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/chinese_rifle)
+	crafting_recipe_types = list(/datum/crafting_recipe/type93)
 
 /obj/item/book/granter/crafting_recipe/blueprint/r84
 	name = "light machine gun blueprint"

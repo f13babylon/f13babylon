@@ -1038,6 +1038,21 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
+//AK-112 Assault Rifle
+/datum/crafting_recipe/ak112
+	name = "AK-112 Assault Rifle"
+	result = /obj/item/gun/ballistic/automatic/assault_rifle/ak112
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+				/obj/item/advanced_crafting_components/assembly = 1,
+				/obj/item/stack/sheet/mineral/wood = 5,
+				/obj/item/stack/crafting/metalparts = 3,
+				)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_available = FALSE
+
 
 //R91 Assault Rifle
 /datum/crafting_recipe/r91
@@ -1056,7 +1071,7 @@
 	always_available = FALSE
 
 //Type 93 Assault Rifle
-/datum/crafting_recipe/chinese_rifle
+/datum/crafting_recipe/type93
 	name = "Type 93 Assault Rifle"
 	result = /obj/item/gun/ballistic/automatic/assault_rifle/type93
 	reqs = list(/obj/item/stack/sheet/metal = 10,
