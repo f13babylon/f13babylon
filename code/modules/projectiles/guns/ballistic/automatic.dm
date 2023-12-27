@@ -824,6 +824,8 @@
 	fire_sound = 'sound/f13weapons/bozar.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m556mm
 	init_mag_type = /obj/item/ammo_box/magazine/m556mm/extended
+	fire_delay = 3
+	autofire_shot_delay = 2
 	slowdown = 1.1
 	extra_speed = 500	//500 Extra Speed
 	zoomable = TRUE
