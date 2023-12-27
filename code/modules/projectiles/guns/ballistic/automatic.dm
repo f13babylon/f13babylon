@@ -916,7 +916,7 @@
 	fire_delay = 4
 	slowdown = 0.8
 	spread = 3
-	recoil = 0.8
+	recoil = 0.6
 	extra_speed = 700	//700 Extra Speed
 	zoomable = TRUE
 	zoom_amt = 10
