@@ -39,13 +39,12 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	damage = 30
 	wound_bonus = 20
 	bare_wound_bonus = 25
-	var/extra_speed = 200
 
 /obj/item/projectile/bullet/a556mm/sport
 	name = ".223 bullet"
 	damage = 25
 	wound_bonus = 25
-	bare_wound_bonus = 35
+	bare_wound_bonus = 30
 	supereffective_damage = 15
 	supereffective_faction = list("hostile", "ant", "deathclaw", "cazador", "china", "gecko", "radscorpion") //5.56 being effective against the Chinese is a funny code joke that someone will look at like 4 years from now on and cry about.
 
@@ -179,9 +178,8 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	wound_bonus = 15
 	bare_wound_bonus = 20
 	armour_penetration = 0.4
-	var/extra_speed = 200
-	supereffective_damage = 10
-	supereffective_faction = list("hostile", "ant", "deathclaw", "cazador", "china", "gecko", "radscorpion")
+	supereffective_damage = 15
+	supereffective_faction = list("wastebot")
 
 /obj/item/projectile/bullet/a5mm/simple		//for simple mobs
 	name = "5mm bullet"
