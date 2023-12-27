@@ -327,7 +327,7 @@
 	fire_delay = 3
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
 	spread = 4
-	extra_penetration = 0.2
+	extra_penetration = 0.1
 
 //Automag			Keywords: .44 Magnum, Semi-auto, Long barrel, 7 rounds, Heavy. Special modifiers: bullet speed +300
 /obj/item/gun/ballistic/automatic/pistol/automag
