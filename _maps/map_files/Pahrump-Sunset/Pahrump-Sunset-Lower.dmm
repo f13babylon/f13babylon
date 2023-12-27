@@ -831,7 +831,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel/bighorn)
 "awh" = (
-/obj/item/storage/trash_stack,
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	id = "digsite"
+	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "axw" = (
@@ -1013,6 +1016,15 @@
 "aZt" = (
 /turf/open/floor/f13/wood,
 /area/f13/tunnel/bighorn)
+"aZA" = (
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	id = "undergroundcasino"
+	},
+/turf/open/floor/f13{
+	icon_state = "reddirtyfull"
+	},
+/area/f13/bunker)
 "baR" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1074,12 +1086,6 @@
 "bhT" = (
 /obj/structure/chair/wood{
 	dir = 8
-	},
-/turf/open/floor/f13/wood,
-/area/f13/building)
-"biD" = (
-/obj/structure/nest/ghoul{
-	max_mobs = 2
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -2753,6 +2759,7 @@
 /area/f13/tunnel)
 "bLQ" = (
 /obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/planks/pregame,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/building)
 "bLR" = (
@@ -17877,7 +17884,7 @@ aae
 abP
 abP
 abP
-alc
+bNA
 btN
 alc
 bsK
@@ -18136,7 +18143,7 @@ aae
 abP
 btN
 cgV
-biD
+alc
 sph
 abP
 alc
@@ -19164,8 +19171,8 @@ aae
 aae
 aae
 aae
-boU
-boU
+bpQ
+bpQ
 aae
 aae
 aae
@@ -59553,7 +59560,7 @@ aae
 aae
 rYZ
 sGn
-bPs
+aZA
 iDZ
 sGn
 sGn

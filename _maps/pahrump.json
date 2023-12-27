@@ -3,6 +3,7 @@
 	"map_path": "map_files/Pahrump-Sunset",
 	"map_file": [
 		"Dungeons.dmm",
+		"Dungeons2.dmm",
 		"Pahrump-Sunset-Lower.dmm",
 		"Pahrump-Sunset.dmm",
 		"Pahrump-Sunset-Upper.dmm",
@@ -29,6 +30,14 @@
 			"No Parallax": true,
 			"Linkage" : null,
 			"Name": "Dungeons"
+		},
+		{
+			"Gravity": true,
+			"Baseturf": "/turf/open/indestructible/ground/inside/mountain",
+			"Up": 1,
+			"No Parallax": true,
+			"Linkage" : null,
+			"Name": "Dungeons2"
 		},
 		{
 			"Gravity": true,

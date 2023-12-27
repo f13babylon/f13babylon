@@ -37316,13 +37316,6 @@
 	icon_state = "outerpavement"
 	},
 /area/f13/wasteland/east)
-"iWb" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/f13/junkspawners,
-/turf/open/floor/plasteel/f13{
-	icon_state = "greenrustychess"
-	},
-/area/f13/building/massfusion)
 "iWe" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
@@ -64111,9 +64104,6 @@
 /obj/structure/chair/f13chair2,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/building/mall)
-"vng" = (
-/turf/closed/wall/mineral/wood,
-/area/f13/building)
 "vnl" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood{
@@ -113487,7 +113477,7 @@ xgu
 aMZ
 xjM
 lPH
-vng
+aWX
 uxq
 ajt
 xyU
@@ -126582,7 +126572,7 @@ wSN
 xNI
 wSN
 rcw
-iWb
+uAs
 vVo
 aae
 vVo
