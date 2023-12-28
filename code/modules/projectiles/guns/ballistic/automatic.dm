@@ -806,6 +806,22 @@
 	automatic = !automatic
 	playsound(usr, 'sound/weapons/empty.ogg', 100, 1)
 
+/obj/item/gun/ballistic/automatic/assault_rifle/burst_select()
+	if(burst_size != 3)
+		spread *= 1.2
+		recoil *= 1.2
+		burst_size = 3
+		fire_delay++
+		to_chat(usr, "<span class='notice'>You switch to burst fire.</span>")
+	else
+		spread /= 1.2
+		recoil /= 1.2
+		burst_size = 1
+		fire_delay--
+		to_chat(usr, "<span class='notice'>You switch to semi-auto.</span>")
+
+	playsound(usr, 'sound/weapons/empty.ogg', 100, 1)
+
 //R91		Keywords: 5.56, 10/20/30/50 Rounds, High tier
 /obj/item/gun/ballistic/automatic/assault_rifle/r91
 	name = "assault rifle"
@@ -814,23 +830,6 @@
 	item_state = "fal_wood"
 	fire_sound = 'sound/f13weapons/assault_rifle.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m556mm
-
-//Bozar		Keywords: 5.56, Long Scope, Extra Projectile Speed, 10/20/30/50 Rounds, Superhigh tier
-/obj/item/gun/ballistic/automatic/assault_rifle/bozar
-	name = "\improper Bozar"
-	desc = "WIP."
-	icon_state = "bozar"
-	item_state = "bozar"
-	fire_sound = 'sound/f13weapons/bozar.ogg'
-	mag_type = /obj/item/ammo_box/magazine/m556mm
-	init_mag_type = /obj/item/ammo_box/magazine/m556mm/extended
-	fire_delay = 3
-	autofire_shot_delay = 2
-	slowdown = 1.1
-	extra_speed = 500	//500 Extra Speed
-	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
 
 //Infiltrator		Keywords: 5.56, Suppressed, Medium Scope, AP, Accurate, 10/20/30/50 Rounds, Unique tier
 /obj/item/gun/ballistic/automatic/assault_rifle/r91/infiltrator
@@ -876,22 +875,6 @@
 	fire_delay = 5
 	spread = 12
 
-/obj/item/gun/ballistic/automatic/assault_rifle/type93/burst_select()
-	if(burst_size != 3)
-		spread *= 1.2
-		recoil *= 1.2
-		burst_size = 3
-		fire_delay = 5
-		to_chat(usr, "<span class='notice'>You switch to burst fire.</span>")
-	else
-		spread /= 1.2
-		recoil /= 1.2
-		burst_size = 1
-		fire_delay = 4
-		to_chat(usr, "<span class='notice'>You switch to semi-auto.</span>")
-
-	playsound(usr, 'sound/weapons/empty.ogg', 100, 1)
-
 //Assault Carbine		Keywords: 5mm, AP, 30/50 Rounds, Superhigh tier
 /obj/item/gun/ballistic/automatic/assault_rifle/assault_carbine
 	name = "assault carbine"
@@ -912,6 +895,8 @@
 	item_state = "g11"
 	fire_sound = 'sound/f13weapons/g11.ogg'
 	mag_type = /obj/item/ammo_box/magazine/mg11
+	automatic = FALSE
+	is_automatic = FALSE
 	burst_size = 3
 	fire_delay = 4
 	slowdown = 0.8
@@ -944,7 +929,7 @@
 /obj/item/gun/ballistic/automatic/lmg
 	name = "LMG TEMPLATE"
 	desc = "You're not supposed to see this."
-	icon = 'icons/obj/guns/gunfruits2022/lmg.dmi'
+	icon = 'icons/obj/guns/gunfruits2022/lmgs.dmi'
 	icon_state = "LIGHT MACHINE GUN"
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
@@ -968,7 +953,22 @@
 	fire_sound = 'sound/f13weapons/assault_rifle.ogg'
 	mag_type = /obj/item/ammo_box/magazine/lmg
 
-//RPD Light Machine Gun		Keywords: 5mm, 50 Rounds, High Tier
+//Bozar		Keywords: 5.56, Long Scope, Extra Projectile Speed, 10/20/30/50 Rounds, Superhigh tier
+/obj/item/gun/ballistic/automatic/lmg/bozar
+	name = "\improper Bozar"
+	desc = "WIP."
+	icon_state = "bozar"
+	item_state = "bozar"
+	fire_sound = 'sound/f13weapons/bozar.ogg'
+	mag_type = /obj/item/ammo_box/magazine/m556mm
+	init_mag_type = /obj/item/ammo_box/magazine/m556mm/extended
+	spread = 8
+	extra_speed = 500	//500 Extra Speed
+	zoomable = TRUE
+	zoom_amt = 10
+	zoom_out_amt = 13
+
+//Chinese Light Machine Gun		Keywords: 5mm, 50 Rounds, High Tier
 /obj/item/gun/ballistic/automatic/lmg/rpd
 	name = "chinese light machine gun"
 	desc = "A restored variant of the chinese light machine gun chambered in 5mm that feeds from drums, featuring a heavy barrel and a full stock to go with its robust internal mechanism."
