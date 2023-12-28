@@ -854,8 +854,8 @@
 	mag_type = /obj/item/ammo_box/magazine/m473
 	burst_size = 3
 	fire_delay = 4
-	is_automatic = FALSE
-	automatic = 1
+	is_automatic = TRUE
+	automatic = 0
 	burst_shot_delay = 1.5
 	spread = 5
 	recoil = 0.1
