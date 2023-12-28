@@ -502,7 +502,7 @@
 //Service rifle			Keywords: NCR, 5.56mm, Semi-auto, 20 (10-50) round magazine, 25dmg
 /obj/item/gun/ballistic/automatic/service
 	name = "service rifle"
-	desc = "A 5.56x45 semi-automatic service rifle manufactured by the NCR and issued to all combat personnel."
+	desc = "A semi-automatic service rifle manufactured by the Gun Runners and based off of pre-war designs. Chambered in 5.56mm."
 	icon = 'icons/obj/guns/gunfruits2022/rifles.dmi'
 	icon_state = "service_rifle"
 	item_state = "servicerifle"
@@ -523,7 +523,7 @@
 //Infantry Rifle		Keywords: 5mm, Semi-auto, 30/50 Rounds magazine
 /obj/item/gun/ballistic/automatic/infantry_rifle
 	name = "infantry rifle"
-	desc = "WIP."
+	desc = "A semi-automatic version of the XM-177 carbine manufactured by Colt. Intended for use by military garrison troops. Chambered in 5mm."
 	icon = 'icons/obj/guns/gunfruits2022/rifles.dmi'
 	icon_state = "infantry_rifle"
 	item_state = "assault_carbine"
@@ -554,7 +554,7 @@
 //Marksman carbine			Keywords: 5.56mm, Semi-auto, 20 (10-50) round magazine, Small scope
 /obj/item/gun/ballistic/automatic/marksman
 	name = "marksman carbine"
-	desc = "A marksman carbine built off the AR platform chambered in 5.56x45. Seen heavy usage in pre-war conflicts. This particular model is a civilian version and is semi-auto only."
+	desc = "A semi-automatic marksman carbine manufactured by Colt. Based on the R91 pattern of rifles. Chambered in 5.56mm."
 	icon = 'icons/obj/guns/gunfruits2022/rifles.dmi'
 	icon_state = "marksman_carbine"
 	item_state = "marksman"
@@ -839,7 +839,7 @@
 //R91		Keywords: 5.56mm, 10/20/30/50 Rounds, High tier
 /obj/item/gun/ballistic/automatic/assault_rifle/r91
 	name = "assault rifle"
-	desc = "WIP."
+	desc = "A fully-automatic R91 assault rifle manufactured by Stent Security Solutions. In use by the National Guard pre-war. Chambered in 5.56mm."
 	icon_state = "r91"
 	item_state = "r91"
 	fire_sound = 'sound/f13weapons/assault_rifle.ogg'
@@ -848,7 +848,7 @@
 //Infiltrator		Keywords: 5.56mm, Suppressed, Medium Scope, AP, Accurate, 10/20/30/50 Rounds, Unique tier
 /obj/item/gun/ballistic/automatic/assault_rifle/r91/infiltrator
 	name = "\improper Infiltrator"
-	desc = "WIP."
+	desc = "A fully-automatic R91 assault rifle manufactured by Stent Security Solutions. This one has been specially tuned and modified. Chambered in 5.56mm."
 	icon_state = "infiltrator"
 	item_state = "infiltrator"
 	fire_sound = 'sound/f13weapons/infiltrator.ogg'
@@ -864,8 +864,8 @@
 
 //AK-112		Keywords: 5mm, 30/50 Rounds, High-mid tier
 /obj/item/gun/ballistic/automatic/assault_rifle/ak112
-	name = "old assault rifle"
-	desc = "WIP."
+	name = "cheap assault rifle"
+	desc = "A fully-automatic AK-112 assault rifle manufactured by Colt with imported designs. Was outdated by the time of the war. Chambered in 5mm."
 	icon_state = "ak112"
 	item_state = "handmade_rifle"
 	fire_sound = 'sound/f13weapons/chinese_assault_rifle.ogg'
@@ -876,7 +876,7 @@
 //Type 93 Assault Rifle		Keywords: 5mm, Burst, AP, 30/50 Rounds, High tier
 /obj/item/gun/ballistic/automatic/assault_rifle/type93
 	name = "chinese assault rifle"
-	desc = "WIP."
+	desc = "A burst-fire Type 93 assault rifle manufactured by a Chinese industrial conglomerate. The plastic parts don't instill confidence. Chambered in 5mm."
 	icon_state = "type93"
 	item_state = "handmade_rifle"
 	fire_sound = 'sound/f13weapons/chinese_assault_rifle.ogg'
@@ -890,7 +890,7 @@
 //Assault Carbine		Keywords: 5mm, AP, 30/50 Rounds, Superhigh tier
 /obj/item/gun/ballistic/automatic/assault_rifle/assault_carbine
 	name = "assault carbine"
-	desc = "WIP."
+	desc = "A fully-automatic XM-177 carbine manufactured by Colt. Intended for use by paratroopers and special forces. Chambered in 5mm."
 	icon_state = "assault_carbine"
 	item_state = "assault_carbine"
 	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
@@ -901,8 +901,8 @@
 
 //G11		Keywords: 5mm, Caseless, Long Scope, AP, Accurate, 50 Rounds, Superhigh tier
 /obj/item/gun/ballistic/automatic/assault_rifle/g11
-	name = "WIP"
-	desc = "WIP."
+	name = "prototype assault rifle"
+	desc = "A burst-fire G11 assault rifle manufactured in small numbers by Heckler & Koch. Equipped for a scope for longer ranges. Chambered in 5mm."
 	icon_state = "g11"
 	item_state = "g11"
 	fire_sound = 'sound/f13weapons/g11.ogg'
@@ -910,7 +910,7 @@
 	automatic = FALSE
 	is_automatic = FALSE
 	burst_size = 3
-	fire_delay = 4
+	fire_delay = 5
 	slowdown = 0.8
 	spread = 3
 	recoil = 0.6
@@ -923,7 +923,7 @@
 //FAL		Keywords: 7.62mm, 10/20 Rounds, Superhigh tier
 /obj/item/gun/ballistic/automatic/assault_rifle/fal
 	name = "automatic battle rifle"
-	desc = "WIP."
+	desc = "A fully-automatic FAL PARA battle rifle produced by FN Herstal. Intended for use by paratroopers and special forces. Chambered in 7.62mm."
 	icon_state = "fal"
 	item_state = "fal"
 	fire_sound = 'sound/f13weapons/762assault_rifle.ogg'
@@ -959,7 +959,7 @@
 //R84 Light Machine Gun			Keywords: 5.56mm, 60 Rounds, High Tier
 /obj/item/gun/ballistic/automatic/lmg/r84
 	name = "light machine gun"
-	desc = "An FN R84 SAW chambered in 5.56mm, made for sustained fire. It's loaded with 60-round ammo boxes and it's as heavy as the people usually seen carrying one."
+	desc = "A fully-automatic R84 light machine gun manufactured by FN Herstal. Intended for suppressive fire. Chambered in 5.56mm."
 	icon_state = "r84"
 	item_state = "r84"
 	fire_sound = 'sound/f13weapons/assault_rifle.ogg'
@@ -968,7 +968,7 @@
 //Bozar		Keywords: 5.56mm, Long Scope, Extra Projectile Speed, 10/20/30/50 Rounds, Superhigh tier
 /obj/item/gun/ballistic/automatic/lmg/bozar
 	name = "\improper Bozar"
-	desc = "WIP."
+	desc = "A fully-automatic XM67 light machine gun manufactured in small numbers by Heckler & Koch. The ultimate refinement of the sniper's art. Chambered in 5.56mm."
 	icon_state = "bozar"
 	item_state = "bozar"
 	fire_sound = 'sound/f13weapons/bozar.ogg'
@@ -984,7 +984,7 @@
 //Chinese Light Machine Gun		Keywords: 5mm, 50 Rounds, High Tier
 /obj/item/gun/ballistic/automatic/lmg/rpd
 	name = "chinese light machine gun"
-	desc = "A restored variant of the chinese light machine gun chambered in 5mm that feeds from drums, featuring a heavy barrel and a full stock to go with its robust internal mechanism."
+	desc = "A fully-automatic Type-88 light machine gun manufactured by a Chinese industrial conglomerate. Sports a robust operating mechanism and reinforced stock. Chambered in 5mm."
 	icon_state = "rpd"
 	item_state = "handmade_rifle"
 	fire_sound = 'sound/f13weapons/chinese_assault_rifle.ogg'
