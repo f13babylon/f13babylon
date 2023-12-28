@@ -392,7 +392,8 @@
 //Needler						Keywords: Needler, Double action, 10 rounds internal
 /obj/item/gun/ballistic/revolver/needler
 	name = "Needler pistol"
-	desc = "You suspect this Bringham needler pistol was once used in scientific field studies. It uses small hard-plastic hypodermic darts as ammo. "
+	desc = "You suspect this Bringham needler pistol was once used in scientific field studies. It uses small hard-plastic hypodermic darts as ammo."
+	icon = 'icons/obj/guns/gunfruits2022/pistols.dmi'
 	icon_state = "needler"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/revneedler
 	fire_sound = 'sound/weapons/gunshot_silenced.ogg'
