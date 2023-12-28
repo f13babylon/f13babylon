@@ -858,7 +858,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m5mm
 	fire_delay = 3
 	autofire_shot_delay = 2
-	extra_damage = -5
+	extra_damage = -5	//15 DAM
 	spread = 20
 
 //Type 93 Assault Rifle		Keywords: 5mm, Burst, AP, 30/50 Rounds, High tier
