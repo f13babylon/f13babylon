@@ -328,7 +328,7 @@
 	desc = "A uniquely powerful and lightweight personal defense weapon developed by FN Herstal, chambered for 5mm and feeding from fifty-round translucent box magazines."
 	icon_state = "p90"
 	item_state = "p90"
-	fire_sound = 'sound/f13weapons/smg_loud.ogg'
+	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	mag_type = /obj/item/ammo_box/magazine/mp90
 	slowdown = 0.2
@@ -822,16 +822,16 @@
 
 	playsound(usr, 'sound/weapons/empty.ogg', 100, 1)
 
-//R91		Keywords: 5.56, 10/20/30/50 Rounds, High tier
+//R91		Keywords: 5.56mm, 10/20/30/50 Rounds, High tier
 /obj/item/gun/ballistic/automatic/assault_rifle/r91
 	name = "assault rifle"
 	desc = "WIP."
 	icon_state = "r91"
-	item_state = "fal_wood"
+	item_state = "r91"
 	fire_sound = 'sound/f13weapons/assault_rifle.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m556mm
 
-//Infiltrator		Keywords: 5.56, Suppressed, Medium Scope, AP, Accurate, 10/20/30/50 Rounds, Unique tier
+//Infiltrator		Keywords: 5.56mm, Suppressed, Medium Scope, AP, Accurate, 10/20/30/50 Rounds, Unique tier
 /obj/item/gun/ballistic/automatic/assault_rifle/r91/infiltrator
 	name = "\improper Infiltrator"
 	desc = "WIP."
@@ -848,7 +848,7 @@
 	suppressed = TRUE
 	can_unsuppress = FALSE
 
-//AK-112		Keywords: 5.56, 10/20/30/50 Rounds, High-mid tier
+//AK-112		Keywords: 5.56mm, 10/20/30/50 Rounds, High-mid tier
 /obj/item/gun/ballistic/automatic/assault_rifle/ak112
 	name = "old assault rifle"
 	desc = "WIP."
@@ -908,7 +908,7 @@
 	zoom_out_amt = 13
 	casing_ejector = FALSE
 
-//FAL		Keywords: 7.62, 10/20 Rounds, Superhigh tier
+//FAL		Keywords: 7.62mm, 10/20 Rounds, Superhigh tier
 /obj/item/gun/ballistic/automatic/assault_rifle/fal
 	name = "automatic battle rifle"
 	desc = "WIP."
@@ -953,7 +953,7 @@
 	fire_sound = 'sound/f13weapons/assault_rifle.ogg'
 	mag_type = /obj/item/ammo_box/magazine/lmg
 
-//Bozar		Keywords: 5.56, Long Scope, Extra Projectile Speed, 10/20/30/50 Rounds, Superhigh tier
+//Bozar		Keywords: 5.56mm, Long Scope, Extra Projectile Speed, 10/20/30/50 Rounds, Superhigh tier
 /obj/item/gun/ballistic/automatic/lmg/bozar
 	name = "\improper Bozar"
 	desc = "WIP."
