@@ -20,6 +20,12 @@
 	path = /obj/item/clothing/accessory/cia_badge
 	ckeywhitelist = list("monke1818")
 
+/datum/gear/donator/saxycape
+	name = "Captured Ranger Cape"
+	slot = SLOT_IN_BACKPACK
+	path = /obj/item/clothing/neck/mantle/legion/rangercent
+	ckeywhitelist = list("mrsaxyman")
+
 /////////////////////
 ///Loadout Boxes///// See kits.dm, use this model for loadouts that have more than one item per character.
 /////////////////////
