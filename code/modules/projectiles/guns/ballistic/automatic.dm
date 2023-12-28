@@ -964,7 +964,7 @@
 	name = "light machine gun"
 	desc = "An FN R84 SAW chambered in 5.56mm, made for sustained fire. It's loaded with 60-round ammo boxes and it's as heavy as the people usually seen carrying one."
 	icon_state = "r84"
-	item_state = "R84"
+	item_state = "r84"
 	fire_sound = 'sound/f13weapons/assault_rifle.ogg'
 	mag_type = /obj/item/ammo_box/magazine/lmg
 
