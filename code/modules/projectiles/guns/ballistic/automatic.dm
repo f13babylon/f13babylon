@@ -502,7 +502,7 @@
 //Service rifle			Keywords: NCR, 5.56mm, Semi-auto, 20 (10-50) round magazine, 25dmg
 /obj/item/gun/ballistic/automatic/service
 	name = "service rifle"
-	desc = "A semi-automatic service rifle manufactured by the Gun Runners and based off of pre-war designs. Chambered in 5.56mm."
+	desc = "A semi-automatic service rifle manufactured by the Gun Runners. Based off of old pre-war designs. Chambered in 5.56mm."
 	icon = 'icons/obj/guns/gunfruits2022/rifles.dmi'
 	icon_state = "service_rifle"
 	item_state = "servicerifle"
@@ -876,7 +876,7 @@
 //Type 93 Assault Rifle		Keywords: 5mm, Burst, AP, 30/50 Rounds, High tier
 /obj/item/gun/ballistic/automatic/assault_rifle/type93
 	name = "chinese assault rifle"
-	desc = "A burst-fire Type 93 assault rifle manufactured by a Chinese industrial conglomerate. The plastic parts don't instill confidence. Chambered in 5mm."
+	desc = "A burst-fire Type 93 assault rifle manufactured by a Chinese industrial conglomerate. The cheap plastic doesn't instill confidence. Chambered in 5mm."
 	icon_state = "type93"
 	item_state = "handmade_rifle"
 	fire_sound = 'sound/f13weapons/chinese_assault_rifle.ogg'
@@ -984,7 +984,7 @@
 //Chinese Light Machine Gun		Keywords: 5mm, 50 Rounds, High Tier
 /obj/item/gun/ballistic/automatic/lmg/rpd
 	name = "chinese light machine gun"
-	desc = "A fully-automatic Type-88 light machine gun manufactured by a Chinese industrial conglomerate. Sports a robust operating mechanism and reinforced stock. Chambered in 5mm."
+	desc = "A fully-automatic Type 88 light machine gun manufactured by a Chinese industrial conglomerate. Sports a robust operating mechanism and reinforced stock. Chambered in 5mm."
 	icon_state = "rpd"
 	item_state = "handmade_rifle"
 	fire_sound = 'sound/f13weapons/chinese_assault_rifle.ogg'
