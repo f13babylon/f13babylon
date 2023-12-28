@@ -1615,7 +1615,7 @@
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 8
 	},
-/obj/item/gun/ballistic/automatic/assault_rifle/bozar,
+/obj/item/gun/ballistic/automatic/lmg/bozar,
 /obj/item/gun/ballistic/automatic/m1garand/oldglory,
 /obj/item/gun/ballistic/automatic/m1garand/republicspride,
 /obj/item/gun/ballistic/automatic/marksman/sniper/gold,

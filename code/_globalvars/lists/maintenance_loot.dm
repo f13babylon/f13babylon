@@ -590,7 +590,7 @@ GLOBAL_LIST_INIT(loot_t5_range, list(
 	/obj/item/gun/ballistic/automatic/shotgun/riot,
 	/obj/item/gun/energy/laser/scatter,
 	/obj/item/gun/ballistic/revolver/hunting,
-	/obj/item/gun/ballistic/automatic/assault_rifle/bozar
+	/obj/item/gun/ballistic/automatic/lmg/bozar
 ))
 
 GLOBAL_LIST_INIT(loot_unique_range, list(

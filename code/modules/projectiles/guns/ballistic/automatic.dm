@@ -520,6 +520,20 @@
 	knife_y_offset = 21
 	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
 
+//Infantry Rifle		Keywords: 5mm, Semi-auto, 30/50 Rounds magazine
+/obj/item/gun/ballistic/automatic/infantry_rifle
+	name = "infantry rifle"
+	desc = "WIP."
+	icon = 'icons/obj/guns/gunfruits2022/rifles.dmi'
+	icon_state = "infantry_rifle"
+	item_state = "assault_carbine"
+	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
+	mag_type = /obj/item/ammo_box/magazine/m5mm
+	fire_delay = 4
+	slowdown = 0.2
+	spread = 2
+	actions_types = null
+
 //Scout carbine			Keywords: NCR, 5.56mm, Semi-auto, 20 (10-50) round magazine. Special modifiers: spread -1
 /obj/item/gun/ballistic/automatic/service/carbine
 	name = "scout carbine"
@@ -848,7 +862,7 @@
 	suppressed = TRUE
 	can_unsuppress = FALSE
 
-//AK-112		Keywords: 5.56mm, 10/20/30/50 Rounds, High-mid tier
+//AK-112		Keywords: 5mm, 30/50 Rounds, High-mid tier
 /obj/item/gun/ballistic/automatic/assault_rifle/ak112
 	name = "old assault rifle"
 	desc = "WIP."
@@ -856,10 +870,8 @@
 	item_state = "handmade_rifle"
 	fire_sound = 'sound/f13weapons/chinese_assault_rifle.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m5mm
-	fire_delay = 3
-	autofire_shot_delay = 2
 	extra_damage = -5	//15 DAM
-	spread = 20
+	spread = 16
 
 //Type 93 Assault Rifle		Keywords: 5mm, Burst, AP, 30/50 Rounds, High tier
 /obj/item/gun/ballistic/automatic/assault_rifle/type93

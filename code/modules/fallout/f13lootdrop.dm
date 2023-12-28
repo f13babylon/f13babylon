@@ -1326,6 +1326,13 @@
 		/obj/item/ammo_box/magazine/rpd
 )
 
+/obj/effect/spawner/bundle/f13/bozar
+	name = "bozar and ammo spawner"
+	items = list(
+				/obj/item/gun/ballistic/automatic/lmg/bozar,
+				/obj/item/ammo_box/magazine/m556mm/extended
+	)
+
 /obj/effect/spawner/bundle/f13/r91
 	name = "assault rifle and ammo spawner"
 	items = list(
@@ -1345,13 +1352,6 @@
 	items = list(
 				/obj/item/gun/ballistic/automatic/assault_rifle/type93,
 				/obj/item/ammo_box/magazine/m5mm
-	)
-
-/obj/effect/spawner/bundle/f13/bozar
-	name = "bozar and ammo spawner"
-	items = list(
-				/obj/item/gun/ballistic/automatic/assault_rifle/bozar,
-				/obj/item/ammo_box/magazine/m556mm/extended
 	)
 
 /obj/effect/spawner/bundle/f13/assault_carbine
