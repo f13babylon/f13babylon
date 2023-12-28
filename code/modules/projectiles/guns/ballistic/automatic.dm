@@ -820,7 +820,7 @@
 	name = "\improper Bozar"
 	desc = "WIP."
 	icon_state = "bozar"
-	item_state = "amr"
+	item_state = "bozar"
 	fire_sound = 'sound/f13weapons/bozar.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m556mm
 	init_mag_type = /obj/item/ammo_box/magazine/m556mm/extended
