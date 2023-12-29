@@ -574,7 +574,7 @@
 	scope_x_offset = 4
 	scope_y_offset = 12
 	auto_eject_sound = 'sound/weapons/magout.ogg'
-	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
+	fire_sound = 'sound/f13weapons/762rifle.ogg'
 
 
 //DKS 501 sniper rifle				Keywords: .308, Semi-auto, 7 round magazine, Scoped, Extra speed +500, Fire delay +1, 43dmg
@@ -967,7 +967,7 @@
 	icon_state = "slr"
 	item_state = "slr"
 	force = 20
-	mag_type = /obj/item/ammo_box/magazine/m762
+	mag_type = /obj/item/ammo_box/magazine/m762mm
 	burst_size = 1
 	fire_delay = 6
 	slowdown = 0.25
@@ -983,7 +983,7 @@
 	scope_state = "scope_long"
 	scope_x_offset = 4
 	scope_y_offset = 11
-	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
+	fire_sound = 'sound/f13weapons/762rifle.ogg'
 
 //M1 Carbine				Keywords: 10mm, Semi-auto, 12/24 rounds, Long barrel
 /obj/item/gun/ballistic/automatic/m1carbine
