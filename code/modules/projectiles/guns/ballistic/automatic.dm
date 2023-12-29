@@ -241,7 +241,7 @@
 	mag_type = /obj/item/ammo_box/magazine/msmg22
 	fire_delay = 2
 	autofire_shot_delay = 1
-	slowdown = 0.25
+	slowdown = 0.4
 	spread = 25
 	suppressed = TRUE
 	can_unsuppress = FALSE
@@ -256,7 +256,6 @@
 	mag_type = /obj/item/ammo_box/magazine/msmg9mm
 	fire_delay = 2
 	autofire_shot_delay = 1
-	slowdown = 0.12
 	spread = 20
 	extra_damage = -2	//14 DAM
 	recoil = 0.8
@@ -270,7 +269,6 @@
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 	mag_type = /obj/item/ammo_box/magazine/msmg9mm
 	spread = 6
-	extra_damage = 2	//18 DAM
 	extra_penetration = 0.2	//20% AP
 	suppressed = TRUE
 	can_unsuppress = FALSE
@@ -287,7 +285,7 @@
 	mag_type = /obj/item/ammo_box/magazine/mcalico
 	fire_delay = 2
 	autofire_shot_delay = 1
-	slowdown = 0.3
+	slowdown = 0.4
 	spread = 16
 
 //10mm SMG			Keywords: 10mm, Dual-wieldable on semi-auto, 30 Rounds, Normal, Mid tier
@@ -331,7 +329,7 @@
 	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	mag_type = /obj/item/ammo_box/magazine/mp90
-	slowdown = 0.2
+	slowdown = 0.3
 	spread = 16
 	extra_damage = -5		//15 DAM
 	extra_penetration = -0.1	//30% AP
