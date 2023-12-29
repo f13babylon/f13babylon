@@ -51,7 +51,6 @@
 /obj/structure/chair/f13chair2{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/semen/femcum,
 /obj/effect/decal/remains/human,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/building)
@@ -8117,7 +8116,7 @@
 /obj/structure/destructible/tribal_torch/wall/lit,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/wood,
-/obj/item/storage/firstaid/emergency,
+/obj/item/storage/firstaid/regular,
 /turf/open/floor/wood/wood_wide,
 /area/f13/building)
 "idk" = (
@@ -11773,7 +11772,6 @@
 	},
 /area/f13/building)
 "meY" = (
-/obj/item/melee/classic_baton,
 /obj/effect/decal/remains/human,
 /obj/machinery/light{
 	dir = 4
@@ -21504,7 +21502,6 @@
 /obj/item/shield/riot,
 /obj/item/clothing/head/helmet/riot,
 /obj/item/clothing/suit/armor/riot,
-/obj/item/melee/classic_baton/police,
 /obj/structure/camera_assembly,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/building)
@@ -22603,7 +22600,6 @@
 /obj/item/shield/riot,
 /obj/item/clothing/head/helmet/riot,
 /obj/item/clothing/suit/armor/riot,
-/obj/item/melee/classic_baton/police,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/building)
 "wsT" = (
@@ -22613,14 +22609,6 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland/rocksprings)
-"wth" = (
-/obj/item/melee/classic_baton,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
-/obj/structure/rack/shelf_metal,
-/turf/open/floor/plasteel/f13{
-	icon_state = "greendirtysolid"
-	},
-/area/f13/building)
 "wuc" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4;
@@ -63053,7 +63041,7 @@ iFW
 mJt
 tiY
 tiY
-wth
+oYi
 pVt
 ydp
 gOt

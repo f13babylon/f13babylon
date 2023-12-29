@@ -115,13 +115,13 @@ To add a crossbreed:
 	desc = "A sphere of liquid blood, somehow managing to stay together."
 	color = "#FF0000"
 	list_reagents = list(/datum/reagent/blood = 50)
-
+/*
 /obj/item/slimecrossbeaker/pax //5u synthpax.
 	name = "peace-inducing extract"
 	desc = "A small blob of synthetic pax."
 	color = "#FFCCCC"
 	list_reagents = list(/datum/reagent/pax/peaceborg = 5)
-
+*/
 /obj/item/slimecrossbeaker/omnizine //15u omnizine.
 	name = "healing extract"
 	desc = "A gelatinous extract of pure omnizine."
@@ -169,7 +169,7 @@ To add a crossbreed:
 	desc = "A sphere of slime jelly. It seems to stick to your skin, but avoids other surfaces."
 	color = "#00FF00"
 	list_reagents = list(/datum/reagent/toxin/slimejelly = 50)
-
+/*
 /obj/item/slimecrossbeaker/autoinjector/peaceandlove
 	name = "peaceful distillation"
 	desc = "A light pink gooey sphere. Simply touching it makes you a little dizzy."
@@ -179,7 +179,7 @@ To add a crossbreed:
 /obj/item/slimecrossbeaker/autoinjector/peaceandlove/Initialize(mapload)
 	. = ..()
 	reagents.reagents_holder_flags = NONE // It won't be *that* easy to get your hands on pax.
-
+*/
 /obj/item/slimecrossbeaker/autoinjector/slimestimulant
 	name = "invigorating gel"
 	desc = "A bubbling purple mixture, designed to heal and boost movement."

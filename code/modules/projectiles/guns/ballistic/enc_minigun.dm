@@ -116,7 +116,7 @@
 	autofire_shot_delay = 1
 	burst_shot_delay = 1
 	fire_delay = 2
-	spread = 18
+	spread = 20
 	weapon_weight = WEAPON_HEAVY
 	fire_sound = 'sound/f13weapons/boltfire.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/encminigunbal4mm
@@ -293,7 +293,7 @@
 	burst_shot_delay = 1
 	automatic = 1
 	autofire_shot_delay = 1.8
-	spread = 15
+	spread = 20
 	fire_delay = 2
 	weapon_weight = WEAPON_HEAVY
 	fire_sound = 'sound/f13weapons/WattzRifleFire.ogg'

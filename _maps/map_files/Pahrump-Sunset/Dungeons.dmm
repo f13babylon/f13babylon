@@ -12441,11 +12441,11 @@
 	},
 /area/f13/caves)
 "oBe" = (
-/obj/item/storage/firstaid/emergency,
-/obj/item/storage/firstaid/emergency,
-/obj/item/storage/firstaid/emergency,
-/obj/item/storage/firstaid/emergency,
 /obj/structure/rack/shelf_metal,
+/obj/item/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
@@ -13135,13 +13135,13 @@
 /area/f13/vault)
 "pgv" = (
 /obj/effect/turf_decal/stripes/red/full,
-/obj/structure/guncase,
 /obj/structure/window/reinforced/spawner/east,
 /obj/structure/window/reinforced/spawner/north,
-/obj/item/gun/ballistic/rifle/mosin,
-/obj/item/gun/ballistic/rifle/mosin,
-/obj/item/gun/ballistic/rifle/mosin,
-/obj/item/gun/ballistic/rifle/mosin,
+/obj/structure/guncase/shotgun,
+/obj/item/gun/ballistic/rifle/hunting,
+/obj/item/gun/ballistic/rifle/hunting,
+/obj/item/gun/ballistic/rifle/hunting,
+/obj/item/gun/ballistic/rifle/hunting,
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
 	},

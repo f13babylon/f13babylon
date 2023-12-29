@@ -455,7 +455,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
 	icon_state = "ncr_warrior_vest"
 	item_state = "ncr_warrior_vest"
-	armor = list("melee" = 30, "bullet" = 25, "laser" = 20, "energy" = 5, "bomb" = 15, "bio" = 10, "rad" = 20, "fire" = 30, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 30, "bullet" = 25, "laser" = 20, "energy" = 5, "bomb" = 15, "bio" = 10, "rad" = 20, "fire" = 30, "acid" = 0, "wound" = 15)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/reinforced
 	name = "NCR reinforced patrol vest"
@@ -499,7 +499,7 @@
 	desc = "A reinforced set of NCR mantle armour, with added padding on the groin, neck and shoulders. Intended for use by the officer class."
 	icon_state = "ncr_lt_armour"
 	item_state = "ncr_lt_armour"
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 35, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 20)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/treasurer
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/captain/ncr_officer_coat
@@ -549,7 +549,7 @@
 	desc = "A thicker than average duster worn by NCR recon rangers out in the field. It's not heavily armored by any means, but is easy to move around in and provides excellent protection from the harsh desert environment."
 	icon_state = "duster_recon"
 	item_state = "duster_recon"
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 15)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 20)
 	slowdown = 0.05
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
 
@@ -562,7 +562,7 @@
 	desc = "A quaint little jacket and scarf worn by NCR trail rangers. It's fast but provides little in the way of protection."
 	icon_state = "cowboyrang"
 	item_state = "cowboyrang"
-	armor = list("melee" = 25, "bullet" = 30, "laser" = 27.5, "energy" = 5, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 5)
+	armor = list("melee" = 25, "bullet" = 30, "laser" = 27.5, "energy" = 5, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 15)
 	slowdown = 0.03
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
 
@@ -575,7 +575,7 @@
 	desc = "A quaint little jacket and scarf worn by NCR trail rangers. This one has the leather bleached and the scarf dyed black."
 	icon_state = "modif_r_vest"
 	item_state = "modif_r_vest"
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 10, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 10, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 20)
 	slowdown = 0.05
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
 
@@ -940,11 +940,11 @@
 
 /obj/item/clothing/suit/armor/f13/enclave/marine
 	name = "old United States Marine Corp Armor"
-	desc = "An advanced model of combat armor worn by marines aboard the USS Democracy, second only to power armor in protection used by the USCM For various tasks and operations, it's handled the nuclear wasteland somewhat better than the rest of the armors you've seen."
+	desc = "An advanced model of combat armor worn by marines aboard the USS Democracy, second only to power armor in protection used by the USMC For various tasks and operations, it's handled the nuclear wasteland somewhat better than the rest of the armors you've seen."
 	icon_state = "enclave_marine"
 	item_state = "enclave_marine"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 40, "energy" = 10, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 20)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 40, "energy" = 20, "bomb" = 55, "bio" = 60, "rad" = 30, "fire" = 60, "acid" = 20, "wound" = 20)
 	slowdown = 0.1
 
 /obj/item/clothing/suit/armor/f13/enclave/marine/Initialize(mapload)
@@ -958,7 +958,7 @@
 	icon_state = "usmc_riot_gear"
 	item_state = "usmc_riot_gear"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 40, "energy" = 20, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 10)
+	armor = list("melee" = 55, "bullet" = 55, "laser" = 40, "energy" = 30, "bomb" = 55, "bio" = 60, "rad" = 30, "fire" = 60, "acid" = 20, "wound" = 20)
 
 /obj/item/clothing/suit/armor/f13/usmcriot/Initialize(mapload) //HQ parts reinforcement
 	. = ..()
@@ -974,7 +974,7 @@
 	icon_state = "armor_enclave_officer"
 	item_state = "armor_enclave_officer"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	armor = list("melee" = 55, "bullet" = 55, "laser" = 55, "energy" = 30, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 20) //equivalent to HK
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 45, "energy" = 35, "bomb" = 55, "bio" = 60, "rad" = 25, "fire" = 60, "acid" = 20, "wound" = 20) //equivalent to HK
 	mutantrace_variation = STYLE_DIGITIGRADE
 
 

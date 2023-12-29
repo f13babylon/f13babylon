@@ -71,6 +71,13 @@
 	build_path = /obj/item/ammo_box/c38/empty
 	category = list("initial", "Simple Magazines")
 
+/datum/design/ammolathe/speedloader10
+	name = "empty speed loader (10mm)"
+	id = "speedloader10"
+	materials = list(/datum/material/iron = 2000)
+	build_path = /obj/item/ammo_box/l10mm/empty
+	category = list("initial", "Simple Magazines")
+
 /datum/design/ammolathe/speedloader44
 	name = "empty speed loader (.44 Magnum)"
 	id = "speedloader44"
@@ -258,14 +265,12 @@
 	build_path = /obj/item/ammo_box/m44box
 	category = list("initial", "Basic Ammo")
 
-
 /datum/design/ammolathe/a357
 	name = ".357 Magnum FMJ ammo box"
 	id = "a357_lathe"
 	materials = list(/datum/material/iron = 16000, /datum/material/blackpowder = 1500)
 	build_path = /obj/item/ammo_box/a357box
 	category = list("initial", "Basic Ammo")
-
 
 /datum/design/ammolathe/a556
 	name = "5.56mm FMJ ammo box"

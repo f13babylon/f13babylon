@@ -352,117 +352,9 @@
 	recoil = 0.85
 	extra_penetration = 0.05	//5% AP
 
-////////////
-//CARBINES//
-////////////
-
-//M1 Carbine				Keywords: 10mm, Semi-auto, 30 rounds, Long barrel
-/obj/item/gun/ballistic/automatic/m1carbine
-	name = "M1 carbine"
-	desc = "The M1 Carbine was mass produced during some old war, and at some point NCR found stockpiles and rechambered them to 10mm to make up for the fact their service rifle production can't keep up with demand."
-	icon_state = "m1carbine"
-	item_state = "rifle"
-	mag_type = /obj/item/ammo_box/magazine/msmg10mm
-	burst_size = 1
-	fire_delay = 3
-	spread = 2
-	slowdown = 0.05
-	automatic_burst_overlay = FALSE
-	can_bayonet = TRUE
-	bayonet_state = "bayonet"
-	knife_x_offset = 22
-	knife_y_offset = 21
-	can_scope = TRUE
-	scope_state = "scope_medium"
-	scope_x_offset = 5
-	scope_y_offset = 14
-	can_attachments = TRUE
-	can_automatic = TRUE
-	semi_auto = TRUE
-	can_suppress = TRUE
-	suppressor_state = "rifle_suppressor"
-	suppressor_x_offset = 26
-	suppressor_y_offset = 31
-	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
-	extra_damage = 6
-
-
-//M1/n Carbine				Keywords: NCR, 10mm, Semi-auto, 30 rounds, Long barrel, Damage +1
-/obj/item/gun/ballistic/automatic/m1carbine/m1n
-	name = "M1/N carbine"
-	desc = "An M1 Carbine with markings identifying it as issued to the NCR Mojave Expedtionary Force. Looks beat up but functional."
-	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	icon_state = "ncr-m1carbine"
-	item_state = "rifle"
-
-
-//M1A1 Carbine				Keywords: 10mm, Semi-auto, 30 rounds, Long barrel, Folding stock.
-/obj/item/gun/ballistic/automatic/m1carbine/compact
-	name = "M1A1 carbine"
-	desc = "The M1A1 carbine is an improvement of the original, with this particular model having a folding stock allowing for greater mobility. Chambered in 10mm."
-	icon_state = "m1a1carbine"
-	var/stock = FALSE
-	w_class = WEIGHT_CLASS_NORMAL
-
-/obj/item/gun/ballistic/automatic/m1carbine/compact/AltClick(mob/user)
-	if(!istype(user) || !user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
-		return
-	toggle_stock(user)
-
-/obj/item/gun/ballistic/automatic/m1carbine/compact/examine(mob/user)
-	. = ..()
-	. += "<span class='notice'>Alt-click to toggle the stock.</span>"
-
-/obj/item/gun/ballistic/automatic/m1carbine/compact/proc/toggle_stock(mob/living/user)
-	stock = !stock
-	if(stock)
-		w_class = WEIGHT_CLASS_BULKY
-		to_chat(user, "You unfold the stock.")
-		spread = 2
-	else
-		w_class = WEIGHT_CLASS_NORMAL
-		to_chat(user, "You fold the stock.")
-		recoil = 0.5
-		spread = 5
-	update_icon()
-
-/obj/item/gun/ballistic/automatic/m1carbine/compact/update_icon_state()
-	icon_state = "[initial(icon_state)][magazine ? "-[magazine.max_ammo]" : ""][chambered ? "" : "-e"][stock ? "" : "-f"]"
-
-
 ////////////////////
 //SEMI-AUTO RIFLES//
 ////////////////////
-
-//De Lisle carbine							Keywords: Pre-war, 9mm, Long barrel, Suppressed
-/obj/item/gun/ballistic/automatic/delisle
-	name = "De Lisle carbine"
-	desc = "A integrally suppressed carbine, known for being one of the quietest firearms ever made. Chambered in 9mm."
-	icon_state = "delisle"
-	item_state = "varmintrifle"
-	mag_type = /obj/item/ammo_box/magazine/m9mmds
-	slowdown = 0.05
-	fire_delay = 4
-	burst_size = 1
-	spread = 0
-	can_scope = FALSE
-	can_unsuppress = FALSE
-	suppressed = 1
-	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
-
-//Commando carbine (BoS De Lisle variant)							Keywords: BoS, .45 ACP, 12 round magazine, Long barrel, Suppressed
-/obj/item/gun/ballistic/automatic/delisle/commando
-	name = "commando carbine"
-	desc = "A integrally suppressed carbine, known for being one of the quietest firearms ever made. This modified version is often used by the Brotherhood of Steel. Its stock has been replaced by post-war polymer furniture, with space to mount a scope. Chambered in .45 ACP."
-	icon_state = "commando"
-	item_state = "commando"
-	mag_type = /obj/item/ammo_box/magazine/m45exp
-	can_scope = TRUE
-	semi_auto = TRUE
-	automatic_burst_overlay = FALSE
-	scope_state = "scope_medium"
-	scope_x_offset = 6
-	scope_y_offset = 14
 
 //Combat Carbine	Keywords: .45 Caliber Rifle, Town rifle
 /obj/item/gun/ballistic/automatic/combatcarbine
@@ -481,7 +373,7 @@
 	semi_auto = TRUE
 	fire_sound = 'sound/weapons/gunshot_smg.ogg'
 
-	//Combat Rifle	Keywords: .308 Caliber Rifle, Town rifle
+//Combat Rifle	Keywords: .308 Caliber Rifle, Town rifle
 /obj/item/gun/ballistic/automatic/combat
 	name = "Combat Rifle"
 	desc = "A .308 semi-automatic combat rifle, Modified from carbines produced pre-war for National Guard forces."
@@ -532,7 +424,6 @@
 	suppressor_x_offset = 26
 	suppressor_y_offset = 28
 	extra_penetration = 0.1
-
 
 //Marksman carbine			Keywords: 5.56mm, Semi-auto, 20 (10-50) round magazine, Small scope
 /obj/item/gun/ballistic/automatic/marksman
@@ -591,36 +482,6 @@
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
 	extra_penetration = 0.2
 
-
-// Enfield SLR				Keywords: 7.62mm, Semi-auto, 10/20 round magazine
-/obj/item/gun/ballistic/automatic/slr
-	name = "Enfield SLR"
-	desc = "A self-loading rifle in 7.62mm NATO. Semi-auto only."
-	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
-	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
-	icon_state = "slr"
-	item_state = "slr"
-	force = 20
-	mag_type = /obj/item/ammo_box/magazine/m762
-	burst_size = 1
-	fire_delay = 6
-	slowdown = 0.25
-	spread = 1
-	automatic_burst_overlay = FALSE
-	semi_auto = TRUE
-	can_attachments = TRUE
-	can_scope = TRUE
-	can_bayonet = TRUE
-	bayonet_state = "bayonet"
-	knife_x_offset = 24
-	knife_y_offset = 21
-	scope_state = "scope_long"
-	scope_x_offset = 4
-	scope_y_offset = 11
-	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
-
-
 //M1 Garand					Keywords: .308, Semi-auto, 8 rounds internal
 /obj/item/gun/ballistic/automatic/m1garand
 	name = "M1 Garand"
@@ -665,7 +526,7 @@
 	extra_damage = 10
 	extra_penetration = 0.12
 
-//Republics Pride			Keywords: UNIQUE, 7.62mm, Semi-auto, 8 rounds internal, Scoped, Damage +8, Penetration +0.1
+//Republics Pride			Keywords: UNIQUE, 7.62mm, Semi-auto, 8 rounds internal, Scoped, Damage -3, Penetration +0.1
 /obj/item/gun/ballistic/automatic/m1garand/republicspride
 	name = "Republic's Pride"
 	desc = "A well-tuned scoped M1C rifle crafted by master gunsmith from the Gunrunners. Chambered in 7.62x51."
@@ -674,11 +535,10 @@
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
-	fire_delay = 1.5
+	fire_delay = 2
 	can_scope = FALSE
 	extra_penetration = 0.1
 	extra_damage = -3
-
 
 //SKS				Keywords: LEGION, .308, Semi-auto, 10 rounds internal, Penetration +0.1
 /obj/item/gun/ballistic/automatic/m1garand/sks
@@ -701,7 +561,6 @@
 	auto_eject_sound = 'sound/weapons/magout.ogg'
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
 
-
 //DKS 501 sniper rifle				Keywords: .308, Semi-auto, 7 round magazine, Scoped, Extra speed +500, Fire delay +1, 43dmg
 /obj/item/gun/ballistic/automatic/marksman/sniper
 	name = "sniper rifle"
@@ -710,7 +569,7 @@
 	icon_state = "sniper_rifle"
 	item_state = "sniper_rifle"
 	mag_type = /obj/item/ammo_box/magazine/w308
-	fire_delay = 7
+	fire_delay = 8
 	burst_size = 1
 	extra_speed = 900
 	slowdown = 0.3
@@ -765,26 +624,6 @@
 //ASSAULT RIFLES//
 //////////////////
 
-
-//HEAVY SERVICE RIFLE				Keywords: 5.56mm, Semi-auto, 20 (10-50) round magazine	NOW CANON!
-/obj/item/gun/ballistic/automatic/service/r82
-	name = "upgraded service rifle"
-	desc = "A fully-automatic service rifle with a heavier barrel, and upgraded recoil springs. Issued to high-ranking troopers and specialized units. Chambered in 5.56."
-	icon_state = "m16a1"
-	item_state = "servicerifle"
-	icon_prefix = "m16a1"
-	fire_delay = 4
-	is_automatic = TRUE
-	slowdown = 0.3
-	automatic = 1
-	autofire_shot_delay = 3
-	spread = 10
-	can_suppress = TRUE
-	suppressor_state = "rifle_suppressor"
-	suppressor_x_offset = 27
-	suppressor_y_offset = 28
-
-
 //R91 assault rifle				Keywords: 5.56mm, Automatic, 20 (10-50) round magazine, 25dmg
 /obj/item/gun/ballistic/automatic/assault_rifle
 	name = "r91 assault rifle"
@@ -811,6 +650,16 @@
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
 
+//Worn R91 assault rifle
+/obj/item/gun/ballistic/automatic/assault_carbine/worn
+	name = "worn assault carbine"
+	desc = "The U.S. army carbine version of the R91, made by Colt and issued to special forces. This one is beat-up and falling apart."
+	icon_state = "assault_carbine"
+	fire_delay = 5
+	burst_shot_delay = 2.2
+	spread = 18
+	autofire_shot_delay = 1.85
+	extra_penetration = -0.05
 
 //Infiltrator			Keywords: 5.56mm, Automatic, 20 (10-50) round magazine, Suppressed, Small scope, Pistol grip
 /obj/item/gun/ballistic/automatic/assault_rifle/infiltrator
@@ -837,28 +686,6 @@
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 
-
-//R93 PDW		Keywords: 5.56mm, Semi-Automatic, 20 (10-50) round magazine, Pistol grip
-/obj/item/gun/ballistic/automatic/r93
-	name = "R93 PDW"
-	desc = "A lightweight assault rifle manufactured by the Brotherhood of Steel with a folding stock, based on weapons from the R-series platforms. It is generally issued to Brotherhood Knights for scouting missions."
-	icon_state = "r93"
-	item_state = "r93"
-	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_delay = 3
-	spread = 1
-	burst_size = 1
-	can_attachments = FALSE
-	semi_auto = TRUE
-	automatic_burst_overlay = FALSE
-	can_scope = FALSE
-	zoomable = TRUE
-	zoom_amt = 6
-	zoom_out_amt = 9
-	can_bayonet = TRUE
-	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
-	slowdown = 0.15
-
 //Type 93 Chinese rifle				Keywords: 5.56mm, Automatic, 20 (10-50) round magazine, 26dmg
 /obj/item/gun/ballistic/automatic/type93
 	name = "type 93 assault rifle"
@@ -880,6 +707,7 @@
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 
+//Worn Type 93 Chinese rifle
 /obj/item/gun/ballistic/automatic/type93/worn //24dmg
 	name = "\improper Worn Type 93"
 	desc = "This Type 93 Chinese assault rifle looks like it has been made in a garage. The bore is shot to hell, the threading is destroyed, but atleast it works."
@@ -889,7 +717,6 @@
 	fire_delay = 5
 	spread = 13
 	can_suppress = FALSE
-
 
 //Bozar					Keywords: 5.56mm, Automatic, 20 (10-50) round magazine
 /obj/item/gun/ballistic/automatic/bozar
@@ -915,6 +742,26 @@
 	fire_sound = 'sound/f13weapons/bozar_fire.ogg'
 	extra_damage = -3
 
+//R93 PDW		Keywords: Enclave, 5mm, Semi-Automatic, 30 round magazine, Pistol grip
+/obj/item/gun/ballistic/automatic/r93
+	name = "R93 PDW"
+	desc = "A lightweight assault rifle manufactured by the US Army with a folding stock, based on weapons from the R-series platforms."
+	icon_state = "r93"
+	item_state = "r93"
+	mag_type = /obj/item/ammo_box/magazine/m5mm
+	fire_delay = 4
+	spread = 2
+	burst_size = 1
+	can_attachments = FALSE
+	semi_auto = TRUE
+	automatic_burst_overlay = FALSE
+	can_scope = FALSE
+	zoomable = TRUE
+	zoom_amt = 6
+	zoom_out_amt = 9
+	can_bayonet = TRUE
+	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
+	slowdown = 0.15
 
 //Assault Carbine				Keywords: 5mm, Automatic, 30 round magazine, Flashlight, 20dmg/0.50AP
 /obj/item/gun/ballistic/automatic/assault_carbine
@@ -948,7 +795,22 @@
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
 
-	//Renamed Police Rifle			Keywords: NCR, 5mm, Semi-auto, 30 round magazine
+//AK-112						Keywords: 5mm, Automatic, 30 round magazine, 15dmg/0.40 AP, 'Worse' Assault Carbine
+/obj/item/gun/ballistic/automatic/assault_carbine/ak112
+	name = "old assault rifle"
+	desc = "An old Colt branded AK-112 assault carbine, out of date even before the Great War started. Somehow it's held up well, despite its aging."
+	icon = 'icons/obj/guns/gunfruits2022/rifle.dmi'
+	icon_state = "ak112"
+	item_state = "handmade_rifle"
+	icon_prefix = "handmade_rifle"
+	autofire_shot_delay = 2.5
+	spread = 20 //brrrrrt
+	can_scope = FALSE
+	can_suppress = FALSE
+	can_flashlight = FALSE
+	extra_damage = -5			//It's meant to be a cheap Assault Carbine
+
+//Renamed Police Rifle			Keywords: NCR, 5mm, Semi-auto, 30 round magazine
 /obj/item/gun/ballistic/automatic/assault_carbine/policerifle
 	name = "R92 Assault Rifle"
 	desc = "A pre-War rifle maintained and upkept by the Gun Runners. This one has seen a fair few battles."
@@ -961,16 +823,6 @@
 	can_scope = TRUE
 	extra_penetration = -0.15
 	extra_damage = -3
-
-/obj/item/gun/ballistic/automatic/assault_carbine/worn
-	name = "worn assault carbine"
-	desc = "The U.S. army carbine version of the R91, made by Colt and issued to special forces. This one is beat-up and falling apart."
-	icon_state = "assault_carbine"
-	fire_delay = 5
-	burst_shot_delay = 2.2
-	spread = 18
-	autofire_shot_delay = 1.85
-	extra_penetration = -0.05
 
 //FN-FAL				Keywords: 7.62mm, Automatic, 10/20 round magazine
 /obj/item/gun/ballistic/automatic/fnfal
@@ -998,13 +850,12 @@
 	icon_state = "g11"
 	item_state = "arg"
 	mag_type = /obj/item/ammo_box/magazine/m473
-	burst_size = 1
+	burst_size = 3
 	fire_delay = 4
 	is_automatic = TRUE
-	automatic = 1
-	autofire_shot_delay = 1.5
+	automatic = 0
 	burst_shot_delay = 1.5
-	spread = 8
+	spread = 5
 	recoil = 0.1
 	can_attachments = TRUE
 	semi_auto = TRUE
@@ -1201,3 +1052,157 @@
 	recoil = 2
 	semi_auto = TRUE
 	fire_sound = 'sound/f13weapons/gauss_rifle.ogg'
+
+///////////////////////
+// G R A V E Y A R D //
+///////////////////////
+
+//Guns in this section are, for code purposes, still existing. However, they shouldn't be spawned and won't be upkept.
+//This is incase of
+
+// Enfield SLR				Keywords: 7.62mm, Semi-auto, 10/20 round magazine
+/obj/item/gun/ballistic/automatic/slr
+	name = "Enfield SLR"
+	desc = "A self-loading rifle in 7.62mm NATO. Semi-auto only."
+	icon = 'icons/fallout/objects/guns/ballistic.dmi'
+	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
+	icon_state = "slr"
+	item_state = "slr"
+	force = 20
+	mag_type = /obj/item/ammo_box/magazine/m762
+	burst_size = 1
+	fire_delay = 6
+	slowdown = 0.25
+	spread = 1
+	automatic_burst_overlay = FALSE
+	semi_auto = TRUE
+	can_attachments = TRUE
+	can_scope = TRUE
+	can_bayonet = TRUE
+	bayonet_state = "bayonet"
+	knife_x_offset = 24
+	knife_y_offset = 21
+	scope_state = "scope_long"
+	scope_x_offset = 4
+	scope_y_offset = 11
+	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
+
+//M1 Carbine				Keywords: 10mm, Semi-auto, 12/24 rounds, Long barrel
+/obj/item/gun/ballistic/automatic/m1carbine
+	name = "M1 carbine"
+	desc = "The M1 Carbine was mass produced during some old war, and at some point NCR found stockpiles and rechambered them to 10mm to make up for the fact their service rifle production can't keep up with demand."
+	icon_state = "m1carbine"
+	item_state = "rifle"
+	mag_type = /obj/item/ammo_box/magazine/msmg10mm
+	burst_size = 1
+	fire_delay = 3
+	spread = 2
+	slowdown = 0.05
+	automatic_burst_overlay = FALSE
+	can_bayonet = TRUE
+	bayonet_state = "bayonet"
+	knife_x_offset = 22
+	knife_y_offset = 21
+	can_scope = TRUE
+	scope_state = "scope_medium"
+	scope_x_offset = 5
+	scope_y_offset = 14
+	can_attachments = TRUE
+	can_automatic = TRUE
+	semi_auto = TRUE
+	can_suppress = TRUE
+	suppressor_state = "rifle_suppressor"
+	suppressor_x_offset = 26
+	suppressor_y_offset = 31
+	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
+	extra_damage = 6
+
+//M1/n Carbine				Keywords: NCR, 10mm, Semi-auto, 30 rounds, Long barrel, Damage +1
+/obj/item/gun/ballistic/automatic/m1carbine/m1n
+	name = "M1/N carbine"
+	desc = "An M1 Carbine with markings identifying it as issued to the NCR Mojave Expedtionary Force. Looks beat up but functional."
+	icon = 'icons/fallout/objects/guns/ballistic.dmi'
+	icon_state = "ncr-m1carbine"
+	item_state = "rifle"
+
+//M1A1 Carbine				Keywords: 10mm, Semi-auto, 30 rounds, Long barrel, Folding stock.
+/obj/item/gun/ballistic/automatic/m1carbine/compact
+	name = "M1A1 carbine"
+	desc = "The M1A1 carbine is an improvement of the original, with this particular model having a folding stock allowing for greater mobility. Chambered in 10mm."
+	icon_state = "m1a1carbine"
+	var/stock = FALSE
+	w_class = WEIGHT_CLASS_NORMAL
+
+/obj/item/gun/ballistic/automatic/m1carbine/compact/AltClick(mob/user)
+	if(!istype(user) || !user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
+		return
+	toggle_stock(user)
+
+/obj/item/gun/ballistic/automatic/m1carbine/compact/examine(mob/user)
+	. = ..()
+	. += "<span class='notice'>Alt-click to toggle the stock.</span>"
+
+/obj/item/gun/ballistic/automatic/m1carbine/compact/proc/toggle_stock(mob/living/user)
+	stock = !stock
+	if(stock)
+		w_class = WEIGHT_CLASS_BULKY
+		to_chat(user, "You unfold the stock.")
+		spread = 2
+	else
+		w_class = WEIGHT_CLASS_NORMAL
+		to_chat(user, "You fold the stock.")
+		recoil = 0.5
+		spread = 5
+	update_icon()
+
+/obj/item/gun/ballistic/automatic/m1carbine/compact/update_icon_state()
+	icon_state = "[initial(icon_state)][magazine ? "-[magazine.max_ammo]" : ""][chambered ? "" : "-e"][stock ? "" : "-f"]"
+
+//HEAVY SERVICE RIFLE				Keywords: 5.56mm, Semi-auto, 20 (10-50) round magazine	NOW CANON!
+/obj/item/gun/ballistic/automatic/service/r82
+	name = "upgraded service rifle"
+	desc = "A fully-automatic service rifle with a heavier barrel, and upgraded recoil springs. Issued to high-ranking troopers and specialized units. Chambered in 5.56."
+	icon_state = "m16a1"
+	item_state = "servicerifle"
+	icon_prefix = "m16a1"
+	fire_delay = 4
+	is_automatic = TRUE
+	slowdown = 0.3
+	automatic = 1
+	autofire_shot_delay = 3
+	spread = 10
+	can_suppress = TRUE
+	suppressor_state = "rifle_suppressor"
+	suppressor_x_offset = 27
+	suppressor_y_offset = 28
+
+//De Lisle carbine							Keywords: Pre-war, 9mm, Long barrel, Suppressed
+/obj/item/gun/ballistic/automatic/delisle
+	name = "De Lisle carbine"
+	desc = "A integrally suppressed carbine, known for being one of the quietest firearms ever made. Chambered in 9mm."
+	icon_state = "delisle"
+	item_state = "varmintrifle"
+	mag_type = /obj/item/ammo_box/magazine/m9mmds
+	slowdown = 0.05
+	fire_delay = 4
+	burst_size = 1
+	spread = 0
+	can_scope = FALSE
+	can_unsuppress = FALSE
+	suppressed = 1
+	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
+
+//Commando carbine (BoS De Lisle variant)							Keywords: BoS, .45 ACP, 12 round magazine, Long barrel, Suppressed
+/obj/item/gun/ballistic/automatic/delisle/commando
+	name = "commando carbine"
+	desc = "A integrally suppressed carbine, known for being one of the quietest firearms ever made. This modified version is often used by the Brotherhood of Steel. Its stock has been replaced by post-war polymer furniture, with space to mount a scope. Chambered in .45 ACP."
+	icon_state = "commando"
+	item_state = "commando"
+	mag_type = /obj/item/ammo_box/magazine/m45exp
+	can_scope = TRUE
+	semi_auto = TRUE
+	automatic_burst_overlay = FALSE
+	scope_state = "scope_medium"
+	scope_x_offset = 6
+	scope_y_offset = 14

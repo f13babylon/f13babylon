@@ -655,11 +655,6 @@
 	oneuse = TRUE
 	remarks = list()
 
-/obj/item/book/granter/crafting_recipe/blueprint/r82
-	name = "r82 heavy service rifle blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/R82)
-
 /obj/item/book/granter/crafting_recipe/blueprint/marksman
 	name = "marksman carbine blueprint"
 	icon_state = "blueprint2"
@@ -805,16 +800,6 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/infiltrator)
 
-/obj/item/book/granter/crafting_recipe/blueprint/m1carbine
-	name = "m1 carbine blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/m1carbine)
-
-/obj/item/book/granter/crafting_recipe/blueprint/commando
-	name = "commando carbine blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/commando)
-
 /obj/item/book/granter/crafting_recipe/blueprint/trapper
 	name = "guide to minelaying"
 	icon_state = "blueprint2"
@@ -927,6 +912,13 @@
 		return TRUE
 	return ..()
 
+/obj/item/book/granter/trait/highsurgery
+	name = "M.D William Stewart Halsted's Memiors"
+	desc = "A well preserved book detailing the foundation of modern surgical practices."
+	oneuse = TRUE
+	granted_trait = TRAIT_SURGERY_HIGH
+	traitname = "complex surgery"
+
 /obj/item/book/granter/trait/techno
 	name = "Dean's Electronics"
 	desc = "A study book on the field of electronics. A note on the cover says that it is for the budding young electrician in everyone!"
@@ -959,6 +951,14 @@
 	granted_trait = TRAIT_HARD_YARDS
 	traitname = "trekking"
 	remarks = list("Tribes and gangs often hide the best loot in the back room.", "Radiation is best avoided entirely, but it helps to carry spare rad-x.", "Whether ancient or recent, landmines are still a threat, and readers should look out for them.", "Injuries and open bleeding make it harder to travel, always carry spare medical supplies.", "Most animals are simple-minded, and can be led into easy lines of fire.")
+
+/obj/item/book/granter/trait/insane_aim
+	name = "Reality Bending: You v. The World"
+	desc = "This odd book seems to imply you can somehow bend reality to your will. You hope it's satire, but somehow it promises you can curve bullets.."
+	oneuse = TRUE
+	granted_trait = TRAIT_INSANE_AIM
+	traitname = "insane_aim"
+	remarks = list("The antichrist is real and is after you, he is a government agent.", "Curving bullet theory is real, the nice man on the pip-net told you so.", "You hate the anti-christ.", "We are past phrase 'go', calling all true American patriots.", "You shouldn't drink the water.")
 
 /obj/item/book/granter/trait/research
 	name = "Research and You"

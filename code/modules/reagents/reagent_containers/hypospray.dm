@@ -338,7 +338,7 @@
 	name = "holy water autoinjector"
 	desc = "A modified air-needle autoinjector for use in combat situations. Prefilled with 5 doses of a holy water mixture."
 	volume = 250
-	list_reagents = list(/datum/reagent/water/holywater = 150, /datum/reagent/peaceborg_tire = 50, /datum/reagent/peaceborg_confuse = 50)
+	list_reagents = list(/datum/reagent/water/holywater = 150)
 	amount_per_transfer_from_this = 50
 
 #define HYPO_SPRAY 0

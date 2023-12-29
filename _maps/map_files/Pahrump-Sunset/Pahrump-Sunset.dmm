@@ -6364,8 +6364,6 @@
 /obj/structure/rack/shelf_metal,
 /obj/item/shield/riot/bullet_proof,
 /obj/item/shield/riot/bullet_proof,
-/obj/item/melee/baton/loaded,
-/obj/item/melee/baton/loaded,
 /turf/open/floor/wood/wood_worn,
 /area/f13/city/bighorn)
 "ays" = (
@@ -13701,9 +13699,6 @@
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/building/massfusion)
-"aWX" = (
-/turf/closed/wall/mineral/wood,
-/area/f13/building)
 "aWY" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderleft0"
@@ -28944,12 +28939,10 @@
 /area/f13/building/mall)
 "eWn" = (
 /obj/structure/rack/shelf_metal,
-/obj/item/gun/ballistic/automatic/assault_carbine/policerifle,
-/obj/item/gun/ballistic/automatic/assault_carbine/policerifle,
-/obj/item/gun/ballistic/automatic/assault_carbine/policerifle,
-/obj/item/gun/ballistic/automatic/assault_carbine/policerifle,
-/obj/item/gun/ballistic/automatic/assault_carbine/policerifle,
-/obj/item/gun/ballistic/automatic/assault_carbine/policerifle,
+/obj/item/gun/ballistic/rifle/repeater/trail,
+/obj/item/gun/ballistic/rifle/repeater/trail,
+/obj/item/gun/ballistic/rifle/repeater/brush,
+/obj/item/gun/ballistic/rifle/repeater/cowboy,
 /turf/open/floor/wood/wood_worn,
 /area/f13/city/bighorn)
 "eWr" = (
@@ -33110,14 +33103,6 @@
 /area/f13/building/mall)
 "gVZ" = (
 /obj/structure/rack,
-/obj/item/melee/classic_baton/telescopic{
-	pixel_x = -4;
-	pixel_y = 11
-	},
-/obj/item/melee/classic_baton/telescopic{
-	pixel_x = -4;
-	pixel_y = 8
-	},
 /obj/item/reagent_containers/spray/pepper{
 	pixel_x = -10;
 	pixel_y = -10
@@ -35909,7 +35894,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
-/obj/item/melee/classic_baton,
 /obj/effect/spawner/lootdrop/f13/cash_legion_med,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
@@ -37316,13 +37300,6 @@
 	icon_state = "outerpavement"
 	},
 /area/f13/wasteland/east)
-"iWb" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/f13/junkspawners,
-/turf/open/floor/plasteel/f13{
-	icon_state = "greenrustychess"
-	},
-/area/f13/building/massfusion)
 "iWe" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
@@ -42445,7 +42422,6 @@
 /area/f13/brotherhood)
 "luM" = (
 /obj/structure/table/wood/settler,
-/obj/item/melee/classic_baton,
 /obj/item/storage/fancy/cigarettes/cigpack_cannabis{
 	pixel_x = -3;
 	pixel_y = 8
@@ -57124,7 +57100,6 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
-/obj/effect/decal/cleanable/semen,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/building)
 "rZT" = (
@@ -67188,25 +67163,6 @@
 	icon_state = "savannah6"
 	},
 /area/f13/brotherhood/leisure)
-"wKS" = (
-/obj/effect/decal/cleanable/semen/femcum,
-/obj/structure/reagent_dispensers/rainwater_tank{
-	pixel_x = 1;
-	pixel_y = 22;
-	density = 0
-	},
-/obj/machinery/shower{
-	pixel_y = 9;
-	pixel_x = 9
-	},
-/obj/structure/decoration/hatch{
-	dir = 1;
-	pixel_y = -12;
-	layer = 3.0;
-	pixel_x = -1
-	},
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/building)
 "wLc" = (
 /obj/structure/sign/warning/securearea{
 	pixel_x = 32;
@@ -109979,7 +109935,7 @@ oUj
 aRk
 aaQ
 tbf
-aWX
+vng
 cmP
 aaT
 qkl
@@ -110235,7 +110191,7 @@ aaQ
 aHy
 aaQ
 abP
-aWX
+vng
 hpb
 aaT
 aaT
@@ -111120,7 +111076,7 @@ aaa
 (159,1,1) = {"
 aaa
 ral
-wKS
+oQN
 juU
 kXz
 abI
@@ -112292,8 +112248,8 @@ cmh
 aaQ
 aaT
 csf
-aWX
-aWX
+vng
+vng
 uAf
 mhJ
 sdn
@@ -112547,7 +112503,7 @@ aVM
 aaQ
 vkA
 aaQ
-aWX
+vng
 fRF
 xfj
 smT
@@ -112804,7 +112760,7 @@ ltX
 aaQ
 aaQ
 aaQ
-aWX
+vng
 gXC
 pJF
 rHX
@@ -113230,10 +113186,10 @@ scc
 scc
 scc
 scc
-aWX
-aWX
+vng
+vng
 fCh
-aWX
+vng
 ltO
 kfs
 bnE
@@ -114258,7 +114214,7 @@ xjM
 xjM
 xjM
 kad
-aWX
+vng
 arR
 rCy
 jKl
@@ -114515,16 +114471,16 @@ xUZ
 xjM
 xjM
 oEy
-aWX
-aWX
-aWX
-aWX
+vng
+vng
+vng
+vng
 ltO
-aWX
+vng
 kDl
 xyU
 xyU
-aWX
+vng
 wFA
 gGg
 ejj
@@ -116316,13 +116272,13 @@ xjM
 prR
 kRj
 ocT
-aWX
+vng
 faB
 rqI
 aWx
 rqI
 rqI
-aWX
+vng
 iPm
 cjo
 kVp
@@ -126582,7 +126538,7 @@ wSN
 xNI
 wSN
 rcw
-iWb
+uAs
 vVo
 aae
 vVo

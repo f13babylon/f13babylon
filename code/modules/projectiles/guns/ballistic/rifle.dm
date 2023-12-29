@@ -21,7 +21,7 @@
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_BACK
 	can_automatic = FALSE
-	slowdown = 0.5
+	slowdown = 0.2
 	fire_delay = 6
 	spread = 0
 	force = 15 //Decent clubs generally speaking
@@ -309,9 +309,10 @@
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
 	fire_delay = 4
-	extra_speed = 200
+	extra_speed = 300
 	extra_penetration = 0.1
 	spread = 1
+	slowdown = 0.2
 
 	can_bayonet = FALSE
 	scope_state = "scope_short"
