@@ -408,6 +408,9 @@
 	fire_sound = 'sound/weapons/gunshot_silenced.ogg'
 	w_class = WEIGHT_CLASS_SMALL
 
+/obj/item/gun/ballistic/revolver/needler/update_icon_state()
+	icon_state = "[initial(icon_state)][chambered ? "" : "-e"]"
+
 /obj/item/gun/ballistic/revolver/needler/ultra
 	name = "Ultracite needler"
 	desc = "An ultracite enhanced needler pistol." //Sounds like lame bethesda stuff to me
