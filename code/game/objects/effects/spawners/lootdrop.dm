@@ -425,8 +425,6 @@
 /obj/effect/spawner/lootdrop/druggie_pill
 	lootcount = 1
 	loot = list(
-				/obj/item/reagent_containers/pill/stimulant    = 1,
-				/obj/item/reagent_containers/pill/zoom   = 9,
 				/obj/item/reagent_containers/pill/happy   = 10,
 				/obj/item/reagent_containers/pill/lsd   = 15,
 				/obj/item/reagent_containers/pill/aranesp  = 25,

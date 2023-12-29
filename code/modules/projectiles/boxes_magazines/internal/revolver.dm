@@ -17,12 +17,6 @@
 	caliber = "357"
 	max_ammo = 6
 
-/obj/item/ammo_box/magazine/internal/cylinder/rev6520
-	name = "6520 10mm cylinder"
-	ammo_type = /obj/item/ammo_casing/c10mm
-	caliber = "10mm"
-	max_ammo = 12
-
 /obj/item/ammo_box/magazine/internal/cylinder/rev4570
 	name = "4570 cylinder"
 	ammo_type = /obj/item/ammo_casing/c4570
@@ -86,6 +80,12 @@
 	ammo_type = /obj/item/ammo_casing/a556mm
 	caliber = "a556mm"
 	max_ammo = 5
+
+/obj/item/ammo_box/magazine/internal/cylinder/colt6520
+	name = "10mm pistol cylinder"
+	ammo_type = /obj/item/ammo_casing/c10mm
+	caliber = "10mm"
+	max_ammo = 12
 
 /obj/item/ammo_box/magazine/internal/cylinder/rev44
 	name = "44 magnum cylinder"

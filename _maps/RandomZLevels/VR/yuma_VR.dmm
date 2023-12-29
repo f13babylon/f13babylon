@@ -300,13 +300,6 @@
 /obj/item/mine/shrapnel/sting,
 /turf/open/floor/carpet/green,
 /area/awaymission/vr/bos/casino)
-"cA" = (
-/obj/item/ammo_casing/c9mm,
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/awaymission/vr/bos/casino)
 "cB" = (
 /obj/structure/junk/small/bed2,
 /obj/machinery/light/small{
@@ -401,12 +394,6 @@
 	icon_state = "redrustyfull"
 	},
 /area/awaymission/vr/bos/enclavebunker)
-"dn" = (
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/awaymission/vr/bos/casino)
 "do" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/suit/armor/f13/rangercombat/eliteriot{
@@ -1157,10 +1144,6 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/bluespace,
 /area/awaymission/vr/bos/deathmatch)
-"hP" = (
-/obj/effect/decal/cleanable/greenglow/radioactive,
-/turf/open/indestructible/ground/inside/subway,
-/area/awaymission/vr/bos/enclavebunker)
 "hQ" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
@@ -1632,7 +1615,6 @@
 	},
 /obj/item/gun/energy/laser/wattz,
 /obj/item/gun/energy/laser/wattz/magneto,
-/obj/item/gun/ballistic/rifle/hobo/lasmusket,
 /obj/item/gun/ballistic/rifle/hobo/plasmacaster,
 /obj/item/gun/energy/laser/plasma/glock,
 /obj/item/gun/energy/laser/plasma/glock/extended,
@@ -1985,10 +1967,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/pod/dark,
 /area/awaymission/vr/bos/casino)
-"mq" = (
-/obj/item/ammo_casing/shotgun/executioner,
-/turf/open/floor/pod,
-/area/awaymission/vr/bos/casino)
 "ms" = (
 /obj/effect/decal/fakelattice,
 /obj/structure/fluff/railing/corner,
@@ -2126,23 +2104,6 @@
 	icon_state = "reddirtyfull"
 	},
 /area/awaymission/vr/bos/enclavebunker)
-"nx" = (
-/mob/living/simple_animal/hostile/ghoul/wyomingghost{
-	desc = "A happily proud Enclave commander, mutated and boiled alive by the forced evolutionary virus. His armor looks to be sunken into his flesh.";
-	faction = list("wastebot");
-	health = 1500;
-	maxHealth = 1500;
-	name = "Commander Dirsk";
-	speak = list("For the Enclave!","Long live America!","Die, mutie!","AAAAAGGH!!","AUGUHGHHH!");
-	speak_chance = 10;
-	speed = -1;
-	unarmed_attack_speed = 2
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	icon_state = "reddirtyfull"
-	},
-/area/awaymission/vr/bos/enclavebunker)
 "ny" = (
 /obj/effect/turf_decal/bot_red,
 /obj/effect/turf_decal/stripes/red/line{
@@ -2214,8 +2175,6 @@
 /obj/item/gun/ballistic/automatic/assault_rifle/r91/infiltrator,
 /obj/item/gun/ballistic/automatic/autopipe,
 /obj/item/gun/ballistic/automatic/hobo/destroyer,
-/obj/item/gun/ballistic/automatic/m1carbine,
-/obj/item/gun/ballistic/automatic/m1carbine/compact,
 /obj/item/gun/ballistic/automatic/m1garand,
 /obj/item/gun/ballistic/automatic/m1garand/sks,
 /obj/item/gun/ballistic/automatic/marksman,
@@ -2225,7 +2184,10 @@
 /obj/item/gun/ballistic/automatic/rangemaster/scoped,
 /obj/item/gun/ballistic/automatic/rangemaster/scoped/mid,
 /obj/item/gun/ballistic/automatic/service,
+<<<<<<< HEAD
 /obj/item/gun/ballistic/automatic/assault_rifle/type93,
+=======
+>>>>>>> main
 /turf/open/floor/holofloor/plating,
 /area/holodeck/den/programs/armory)
 "of" = (
@@ -2308,10 +2270,6 @@
 /area/holodeck/den/programs/medical)
 "oL" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/indestructible/ground/inside/subway,
-/area/awaymission/vr/bos/enclavebunker)
-"oM" = (
-/obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/indestructible/ground/inside/subway,
 /area/awaymission/vr/bos/enclavebunker)
 "oO" = (
@@ -2904,13 +2862,6 @@
 "sT" = (
 /turf/open/floor/plasteel/dark,
 /area/awaymission/vr/bos/deathmatch)
-"ta" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2"
-	},
-/area/awaymission/vr/bos/casino)
 "td" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
@@ -4124,10 +4075,6 @@
 /area/awaymission/vr/bos/enclavebunker)
 "CC" = (
 /turf/closed/indestructible/f13,
-/area/awaymission/vr/bos/casino)
-"CD" = (
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/carpet/green,
 /area/awaymission/vr/bos/casino)
 "CG" = (
 /obj/effect/decal/cleanable/dirt,
@@ -6338,12 +6285,9 @@
 	icon_state = "redrustyfull"
 	},
 /area/awaymission/vr/bos/enclavebunker)
-"Va" = (
-/obj/item/ammo_casing/a762mm,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/carpet/green,
-/area/awaymission/vr/bos/casino)
+<<<<<<< HEAD
+=======
+>>>>>>> main
 "Vc" = (
 /obj/item/chair,
 /turf/open/indestructible/ground/inside/subway,
@@ -6394,10 +6338,6 @@
 /obj/effect/vr_clean_master,
 /turf/closed/indestructible/riveted,
 /area/awaymission/vr/public/deathmatch/red)
-"Vr" = (
-/obj/effect/decal/cleanable/greenglow/radioactive,
-/turf/open/indestructible/ground/inside/subway,
-/area/awaymission/vr/bos/enclavebunker)
 "Vv" = (
 /obj/structure/debris/v3,
 /turf/open/floor/carpet/green,
@@ -6999,11 +6939,6 @@
 	dir = 4
 	},
 /area/awaymission/vr/public/deathmatch)
-"ZU" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/carpet/green,
-/area/awaymission/vr/bos/casino)
 "ZW" = (
 /turf/open/floor/plasteel/red,
 /area/awaymission/vr/public/deathmatch)
@@ -14431,7 +14366,7 @@ rb
 rb
 ma
 Qh
-nx
+ku
 Qh
 KT
 ow
@@ -17269,7 +17204,7 @@ Qh
 jB
 ma
 rb
-Vr
+ze
 oL
 rT
 rb
@@ -20109,7 +20044,7 @@ rT
 oL
 rT
 Wb
-oM
+ze
 rT
 us
 rb
@@ -20875,7 +20810,7 @@ Ls
 us
 UP
 Wb
-hP
+ze
 SB
 rT
 rb
@@ -23701,7 +23636,7 @@ rt
 Si
 Sm
 xr
-ZU
+uP
 uP
 xr
 Sm
@@ -24188,7 +24123,7 @@ PG
 uP
 uP
 uP
-ZU
+uP
 uP
 uP
 Yr
@@ -24200,7 +24135,7 @@ St
 St
 tB
 St
-dn
+Si
 Sm
 xV
 uP
@@ -24977,7 +24912,7 @@ Yr
 Oi
 Yr
 Yr
-CD
+Yr
 ex
 UF
 Wf
@@ -25212,7 +25147,7 @@ zx
 Yr
 rQ
 uP
-Va
+te
 uP
 uP
 KL
@@ -25507,7 +25442,7 @@ fD
 dR
 uP
 uP
-CD
+Yr
 xV
 Mf
 uP
@@ -25737,7 +25672,7 @@ Oi
 Yr
 Si
 as
-cA
+fD
 Si
 St
 ga
@@ -25756,7 +25691,7 @@ Si
 Si
 uj
 fD
-CD
+Yr
 uP
 Yr
 Yr
@@ -28297,7 +28232,7 @@ vB
 Ya
 vB
 mQ
-dn
+Si
 Oi
 uP
 uP
@@ -28848,7 +28783,7 @@ uP
 iy
 uP
 Si
-ZU
+uP
 Ua
 vl
 pD
@@ -29834,7 +29769,7 @@ CC
 St
 St
 St
-dn
+Si
 xd
 GB
 ZJ
@@ -29843,7 +29778,7 @@ Sx
 Yr
 uP
 Ru
-ta
+zx
 Si
 St
 St
@@ -31127,7 +31062,7 @@ zx
 zx
 Yr
 uP
-CD
+Yr
 Si
 Si
 St
@@ -31155,7 +31090,7 @@ Yr
 uP
 rQ
 St
-dn
+Si
 zx
 uP
 Yr
@@ -31909,7 +31844,7 @@ Yr
 Si
 St
 pM
-mq
+vo
 St
 Si
 zx
@@ -33212,7 +33147,7 @@ Yr
 uP
 Yr
 Si
-ta
+zx
 XI
 Pq
 Mb
@@ -33448,7 +33383,7 @@ Kp
 Yr
 uP
 Yr
-CD
+Yr
 pP
 ij
 IF
@@ -33730,7 +33665,7 @@ Yr
 Yr
 Yr
 hZ
-CD
+Yr
 uP
 Yr
 rg
@@ -33950,7 +33885,7 @@ Si
 Si
 Sm
 xr
-ZU
+uP
 uP
 xr
 Mf

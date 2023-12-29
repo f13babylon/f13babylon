@@ -119,13 +119,6 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	..()
 	explosion(target, 0, 1, 1, 1)
 
-/obj/item/projectile/bullet/a50MG/rubber
-	name = ".50 rubber bullet"
-	damage = 25
-	stamina = 100
-	armour_penetration = 0
-	sharpness = SHARP_NONE
-
 /obj/item/projectile/bullet/a50MG/penetrator
 	name = ".50 penetrator round"
 	damage = 50

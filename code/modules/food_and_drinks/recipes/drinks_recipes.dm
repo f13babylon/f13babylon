@@ -785,12 +785,13 @@
 	results = list(/datum/reagent/consumable/pinktea = 5)
 	required_reagents = list(/datum/reagent/consumable/strawberryjuice = 1, /datum/reagent/consumable/tea/arnold_palmer = 1, /datum/reagent/consumable/sugar = 1)
 
+/*
 /datum/chemical_reaction/catnip_tea
 	name = "Catnip Tea"
 	id = /datum/reagent/consumable/catnip_tea
 	results = list(/datum/reagent/consumable/catnip_tea = 3)
 	required_reagents = list(/datum/reagent/consumable/tea = 5, /datum/reagent/pax/catnip = 2)
-
+*/
 
 ////////////////////////////////////////// Race Base Drinks //////////////////////////////////////
 
@@ -848,12 +849,14 @@
 	results = list(/datum/reagent/consumable/ethanol/species_drink/hollow_bone = 10)
 	required_reagents = list(/datum/reagent/toxin/bonehurtingjuice = 5,  /datum/reagent/consumable/milk = 10, /datum/reagent/consumable/coconutmilk = 10)
 
+/*
 /datum/chemical_reaction/frisky_kitty
 	name = "Frisky Kitty"
 	id = /datum/reagent/consumable/ethanol/species_drink/frisky_kitty
 	results = list(/datum/reagent/consumable/ethanol/species_drink/frisky_kitty = 2)
 	required_reagents = list(/datum/reagent/consumable/catnip_tea = 1,  /datum/reagent/consumable/milk = 1)
 	required_temp = 296 //Just above room temp (22.85'C)
+*/
 
 /datum/chemical_reaction/jell_wyrm
 	name = "Jell Wyrm"

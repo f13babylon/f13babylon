@@ -257,6 +257,7 @@ GLOBAL_LIST_INIT(enclave_positions, list(
 	"Enclave Lieutenant",
 	"Enclave Gunnery Sergeant",
 	"Enclave Sergeant",
+	"Enclave Armored Infantry",
 	"Enclave Specialist",
 	"Enclave Scientist",
 	"Enclave Pilot Officer",

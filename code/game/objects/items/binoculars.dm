@@ -76,6 +76,8 @@
 	C.pixel_y = world.icon_size*_y
 
 /obj/item/binoculars/proc/rotate(mob/living/user, old_dir, direction = FALSE)
+	if(!user?.client)
+		return
 	var/_x = 0
 	var/_y = 0
 	switch(direction)

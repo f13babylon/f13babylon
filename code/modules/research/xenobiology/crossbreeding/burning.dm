@@ -221,7 +221,7 @@ Burning extracts:
 
 /obj/item/slimecross/burning/pink/do_effect(mob/user)
 	user.visible_message("<span class='notice'>[src] shrinks into a small, gel-filled pellet!</span>")
-	new /obj/item/slimecrossbeaker/pax(get_turf(user))
+	//new /obj/item/slimecrossbeaker/pax(get_turf(user))
 	..()
 
 /obj/item/slimecross/burning/gold
@@ -265,11 +265,13 @@ Burning extracts:
 /obj/item/slimecross/burning/lightpink
 	colour = "light pink"
 
+/*
 /obj/item/slimecross/burning/lightpink/do_effect(mob/user)
 	user.visible_message("<span class='danger'>[src] lets off a hypnotizing pink glow!</span>")
 	for(var/mob/living/carbon/C in view(7, get_turf(user)))
 		C.reagents.add_reagent(/datum/reagent/pax, 5)
 	..()
+*/
 
 /obj/item/slimecross/burning/adamantine
 	colour = "adamantine"

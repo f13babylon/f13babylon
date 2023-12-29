@@ -365,6 +365,10 @@
 	name = "Enclave Gunnery Sergeant"
 	icon_state = "usgunnery"
 
+/obj/effect/landmark/start/f13/uscpl
+	name = "Enclave Armored Infantry"
+	icon_state = "usgunnery"
+
 /obj/effect/landmark/start/f13/uslightduty
 	name = "Enclave Bunker Duty"
 	icon_state = "usoffduty"

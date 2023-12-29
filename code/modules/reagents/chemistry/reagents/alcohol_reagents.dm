@@ -1890,6 +1890,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	glass_desc = "Mixing of milk and bone hurting juice for the enjoyment of rather skinny people."
 	species_required = "skeleton"
 
+/*
 /datum/reagent/consumable/ethanol/species_drink/frisky_kitty
 	name = "Frisky Kitty"
 	color = "#FCF7D4" //(252, 247, 212)
@@ -1900,6 +1901,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	glass_name = "cup of Drisky Kitty"
 	glass_desc = "Warm milk and some catnip."
 	species_required = "furry"
+*/
 
 /datum/reagent/consumable/ethanol/species_drink/jell_wyrm
 	name = "Jell Wyrm"

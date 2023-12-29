@@ -62,11 +62,6 @@
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/iron = 6000, /datum/material/blackpowder = 1000)
 
-/obj/item/ammo_box/m22/rubber
-	name = "ammo box (.22lr rubber)"
-	desc = "A box of .22 rubber rounds. For when you want to be useless."
-	ammo_type = /obj/item/ammo_casing/a22/rubber
-
 /obj/item/ammo_box/m22/shock
 	name = "ammo box (.22lr electroshock)"
 	icon_state = "22shockbox"
@@ -83,14 +78,6 @@
 	ammo_type = /obj/item/ammo_casing/c9mm
 	max_ammo = 30
 	custom_materials = list(/datum/material/iron = 15000, /datum/material/blackpowder = 1000)
-
-/obj/item/ammo_box/c9mm/rubber
-	name = "ammo box (9mm rubber)"
-	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "9mmbox"
-	multiple_sprites = 2
-	caliber = "9mm"
-	ammo_type = /obj/item/ammo_casing/c9mm/rubber
 
 /obj/item/ammo_box/c9mm/incendiary
 	name = "ammo box (9mm incendiary-tipped)"
@@ -114,13 +101,6 @@
 	ammo_type = /obj/item/ammo_casing/c38
 	max_ammo = 30
 	custom_materials = list(/datum/material/iron = 10000, /datum/material/blackpowder = 1000)
-
-/obj/item/ammo_box/c38box/rubber
-	name = "ammo box (.38 rubber)"
-	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "38box"
-	multiple_sprites = 2
-	ammo_type = /obj/item/ammo_casing/c38/rubber
 
 /obj/item/ammo_box/c38box/incendiary
 	name = "ammo box (.38 incendiary-tipped)"
@@ -151,10 +131,6 @@
 	desc = "A box of 10mm incendiary-tipped rounds. This'll burn."
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	ammo_type = /obj/item/ammo_casing/c10mm/incendiary
-
-/obj/item/ammo_box/c10mm/rubber
-	name = "ammo box (10mm rubber)"
-	ammo_type = /obj/item/ammo_casing/c10mm/rubber
 
 /obj/item/ammo_box/c10mm/improvised
 	name = "bag with reloaded 10mm bullets"
@@ -236,14 +212,6 @@
 	ammo_type = /obj/item/ammo_casing/c45
 	max_ammo = 30
 	custom_materials = list(/datum/material/iron = 10000, /datum/material/blackpowder = 1000)
-
-/obj/item/ammo_box/c45/rubber
-	name = "ammo box (.45 rubber)"
-	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	caliber = ".45"
-	multiple_sprites = 2
-	icon_state = "45box"
-	ammo_type = /obj/item/ammo_casing/c45/rubber
 
 /obj/item/ammo_box/c45/incendiary
 	name = "ammo box (.45 incendiary-tipped)"
@@ -335,14 +303,6 @@
 	max_ammo = 25
 	w_class = WEIGHT_CLASS_NORMAL
 	custom_materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 1500)
-
-/obj/item/ammo_box/a50MGbox/rubber
-	name = "ammo box (.50 rubber)"
-	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "50box"
-	multiple_sprites = 2
-	caliber = "a50MG"
-	ammo_type = /obj/item/ammo_casing/a50MG/rubber
 
 /obj/item/ammo_box/a50MGbox/contam
 	name = "ammo box (12.7mm contaminated)"
@@ -460,7 +420,7 @@
 /obj/item/ammo_box/l10mm
 	name = "speed loader (10mm)"
 	desc = "Designed to quickly reload revolvers."
-	icon_state = "10mm2"
+	icon_state = "10mm"
 	caliber = "10mm"
 	ammo_type = /obj/item/ammo_casing/c10mm
 	max_ammo = 12

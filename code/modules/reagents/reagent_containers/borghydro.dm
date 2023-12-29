@@ -244,7 +244,7 @@ Borg Shaker
 	recharge_time = 3
 	accepts_reagent_upgrades = FALSE
 	reagent_ids = list(/datum/reagent/toxin/fakebeer, /datum/reagent/consumable/ethanol/fernet)
-
+/*
 /obj/item/reagent_containers/borghypo/peace
 	name = "Peace Hypospray"
 
@@ -258,7 +258,7 @@ Borg Shaker
 					/datum/reagent/toxin/staminatoxin,/datum/reagent/toxin/sulfonal,/datum/reagent/toxin/sodium_thiopental,
 					/datum/reagent/toxin/cyanide,/datum/reagent/toxin/fentanyl)
 	accepts_reagent_upgrades = FALSE
-
+*/
 /obj/item/reagent_containers/borghypo/epi
 	name = "Stabilizer injector"
 	desc = "An advanced chemical synthesizer and injection system, designed to stabilize patients."

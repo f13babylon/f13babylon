@@ -628,7 +628,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 	loadout_options = list(
 		/datum/outfit/loadout/vexbear,	//	Lever shotgun, Ripper
-		/datum/outfit/loadout/vexfox,	//	P90, Spatha
+		/datum/outfit/loadout/vexfox,	//	AK-112, Spatha
 		)
 
 	matchmaking_allowed = list(
@@ -682,10 +682,10 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/outfit/loadout/vexfox
 	name = "Desert Fox"
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/vexil
-	suit_store = /obj/item/gun/ballistic/automatic/smg/p90
+	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine/ak112
 	backpack_contents = list(
 		/obj/item/melee/onehanded/machete/spatha = 1,
-		/obj/item/ammo_box/magazine/mp90 = 2,
+		/obj/item/ammo_box/magazine/m5mm = 2,
 	)
 
 //EXPLORER
@@ -1111,8 +1111,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/sks)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/greasegun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg10mm)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/commando)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingrifle)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/remingtonhuntingrifle)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingshotgun)
 
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/receiver)

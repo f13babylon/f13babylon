@@ -493,7 +493,6 @@ GLOBAL_LIST_INIT(loot_t1_range, list(
 	/obj/item/ammo_box/shotgun/bean,
 	/obj/item/gun/ballistic/revolver/caravan_shotgun,
 	/obj/item/ammo_box/shotgun/bean,
-	/obj/item/gun/ballistic/rifle/mosin,
 	/obj/item/ammo_box/a762mm,
 	/obj/item/gun/ballistic/revolver/police,
 	/obj/item/ammo_box/c38,
@@ -522,17 +521,15 @@ GLOBAL_LIST_INIT(loot_t2_range, list(
 	/obj/item/gun/ballistic/rifle/repeater/cowboy,
 	/obj/item/ammo_box/a357,
 	/obj/item/ammo_box/a357,
+	/obj/item/gun/ballistic/revolver/colt6520,
+	/obj/item/ammo_box/l10mm,
 	/obj/item/gun/ballistic/revolver/colt357,
 	/obj/item/gun/ballistic/revolver/single_shotgun,
 	/obj/item/ammo_box/a357,
 	/obj/item/gun/ballistic/automatic/service,
 	/obj/item/ammo_box/magazine/m556mm,
 	/obj/item/gun/energy/laser/pistol,
-	/obj/item/stock_parts/cell/ammo/ec,
-	/obj/item/gun/ballistic/automatic/m1carbine,
-	/obj/item/ammo_box/magazine/m10mm,
-	/obj/item/gun/ballistic/automatic/delisle,
-	/obj/item/ammo_box/magazine/m9mmds
+	/obj/item/stock_parts/cell/ammo/ec
 ))
 
 GLOBAL_LIST_INIT(loot_t3_range, list(

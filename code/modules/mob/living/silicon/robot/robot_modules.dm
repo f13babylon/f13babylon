@@ -493,12 +493,10 @@
 		/obj/item/crowbar/cyborg,
 		/obj/item/cookiesynth,
 		/obj/item/harmalarm,
-		/obj/item/reagent_containers/borghypo/peace,
 		/obj/item/holosign_creator/cyborg,
 		/obj/item/borg/cyborghug/peacekeeper,
 		/obj/item/megaphone,
 		/obj/item/borg/projectile_dampen)
-	emag_modules = list(/obj/item/reagent_containers/borghypo/peace/hacked)
 	ratvar_modules = list(
 		/obj/item/clockwork/slab/cyborg/peacekeeper,
 		/obj/item/clockwork/weapon/ratvarian_spear)

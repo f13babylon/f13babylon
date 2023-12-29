@@ -358,7 +358,7 @@ Reason this is commented out: Not needed, may re-use loadouts later
 		/obj/item/ammo_box/magazine/m556mm=2,
 		/obj/item/melee/onehanded/knife/bayonet = 1,
 		/obj/item/storage/box/ration/ranger_breakfast = 1,
-		/obj/item/book/granter/crafting_recipe/blueprint/r82 = 1)
+		/obj/item/book/granter/crafting_recipe/blueprint/service = 1)
 
 /datum/outfit/loadout/raider_legion
 	name = "Disgraced Legionnaire"

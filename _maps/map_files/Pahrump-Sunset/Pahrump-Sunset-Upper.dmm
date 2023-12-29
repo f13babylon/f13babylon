@@ -9142,11 +9142,6 @@
 "ovc" = (
 /turf/closed/wall/r_wall/rust,
 /area/f13/caves)
-"ovw" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/melee/classic_baton/police,
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/building/mall)
 "ovT" = (
 /obj/structure/debris/v4{
 	pixel_y = -2;
@@ -9761,15 +9756,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building/mall)
-"pxX" = (
-/obj/effect/decal/cleanable/semen{
-	pixel_y = -16;
-	pixel_x = 18
-	},
-/turf/open/floor/f13/wood{
-	icon_state = "housewood3-broken"
-	},
-/area/f13/building)
 "pyw" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/crafting,
@@ -16889,7 +16875,7 @@ ayR
 ayR
 xgb
 cuI
-ovw
+xWc
 iej
 wNM
 wNM
@@ -60077,7 +60063,7 @@ oez
 fOo
 hQm
 peK
-pxX
+peK
 uQx
 cmV
 bMR

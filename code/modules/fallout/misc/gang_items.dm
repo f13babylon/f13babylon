@@ -451,7 +451,6 @@
 	icon_state = "gun_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/thatgun,
 				/obj/effect/spawner/bundle/f13/huntingshotgun,
-				/obj/effect/spawner/bundle/f13/m1carbine,
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/gang/lowmid
@@ -459,7 +458,6 @@
 	icon_state = "gun_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/cowboy,
 				/obj/effect/spawner/bundle/f13/trenchshotgun,
-				/obj/effect/spawner/bundle/f13/m1carbine,
 				/obj/effect/spawner/bundle/f13/huntingshotgun,
 		)
 
