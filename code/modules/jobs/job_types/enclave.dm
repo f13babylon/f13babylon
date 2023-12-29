@@ -47,7 +47,7 @@
 	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
 	ADD_TRAIT(H, TRAIT_STRAIGHT_EDGE, REF(src))
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/R93)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/infantry_rifle)
 
 
 //Captain
@@ -240,9 +240,9 @@
 
 /datum/outfit/loadout/gysgt_caster
 	name = "Point Defense Assaultman"
+	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle/g11
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/g11 = 1,
-		/obj/item/ammo_box/magazine/m473 = 2,
+		/obj/item/ammo_box/magazine/mg11 = 2,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 2,
 		/obj/item/grenade/f13/frag = 1
@@ -532,7 +532,7 @@
 
 /datum/outfit/loadout/reconmarine
 	name = "Pointman Rifleman"
-	suit_store = /obj/item/gun/ballistic/automatic/r93
+	suit_store = /obj/item/gun/ballistic/automatic/infantry_rifle
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m5mm = 2,
 		/obj/item/gun/energy/laser/plasma/pistol/light = 1,
