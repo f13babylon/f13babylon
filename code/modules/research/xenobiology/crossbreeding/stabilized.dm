@@ -149,8 +149,8 @@ Stabilized extracts:
 /obj/item/slimecross/stabilized/lightpink
 	colour = "light pink"
 
-/obj/item/slimecross/stabilized/adamantine
-	colour = "adamantine"
+/obj/item/slimecross/stabilized/saturnite
+	colour = "saturnite"
 
 /obj/item/slimecross/stabilized/rainbow
 	colour = "rainbow"

@@ -20,22 +20,22 @@
 /obj/item/organ/vocal_cords/proc/handle_speech(message) //actually say the message
 	owner.say(message, spans = spans, sanitize = FALSE)
 
-/obj/item/organ/adamantine_resonator
-	name = "adamantine resonator"
-	desc = "Fragments of adamantine exist in all golems, stemming from their origins as purely magical constructs. These are used to \"hear\" messages from their leaders."
+/obj/item/organ/saturnite_resonator
+	name = "saturnite resonator"
+	desc = "Fragments of saturnite exist in all golems, stemming from their origins as purely magical constructs. These are used to \"hear\" messages from their leaders."
 	zone = BODY_ZONE_HEAD
-	slot = ORGAN_SLOT_ADAMANTINE_RESONATOR
+	slot = ORGAN_SLOT_SATURNITE_RESONATOR
 	icon_state = "adamantine_resonator"
 	decay_factor = 0
 
-/obj/item/organ/vocal_cords/adamantine
-	name = "adamantine vocal cords"
-	desc = "When adamantine resonates, it causes all nearby pieces of adamantine to resonate as well. Adamantine golems use this to broadcast messages to nearby golems."
-	actions_types = list(/datum/action/item_action/organ_action/use/adamantine_vocal_cords)
+/obj/item/organ/vocal_cords/saturnite
+	name = "saturnite vocal cords"
+	desc = "When saturnite resonates, it causes all nearby pieces of saturnite to resonate as well. saturnite golems use this to broadcast messages to nearby golems."
+	actions_types = list(/datum/action/item_action/organ_action/use/saturnite_vocal_cords)
 	icon_state = "adamantine_cords"
 	decay_factor = 0
 
-/datum/action/item_action/organ_action/use/adamantine_vocal_cords/Trigger()
+/datum/action/item_action/organ_action/use/saturnite_vocal_cords/Trigger()
 	if(!IsAvailable())
 		return
 	var/message = input(owner, "Resonate a message to all nearby golems.", "Resonate")
@@ -43,12 +43,12 @@
 		return
 	owner.say(".x[message]")
 
-/obj/item/organ/vocal_cords/adamantine/handle_speech(message)
+/obj/item/organ/vocal_cords/saturnite/handle_speech(message)
 	var/msg = "<span class='resonate'><span class='name'>[owner.real_name]</span> <span class='message'>resonates, \"[message]\"</span></span>"
 	for(var/m in GLOB.player_list)
 		if(iscarbon(m))
 			var/mob/living/carbon/C = m
-			if(C.getorganslot(ORGAN_SLOT_ADAMANTINE_RESONATOR))
+			if(C.getorganslot(ORGAN_SLOT_SATURNITE_RESONATOR))
 				to_chat(C, msg)
 		if(isobserver(m))
 			var/link = FOLLOW_LINK(m, owner)
