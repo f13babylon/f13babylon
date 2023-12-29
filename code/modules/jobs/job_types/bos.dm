@@ -489,7 +489,7 @@ Paladin
 /datum/outfit/loadout/paladinb
 	name = "Tactical Paladin"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/assault_rifle = 1,
+		/obj/item/gun/ballistic/automatic/assault_rifle/r91 = 1,
 		/obj/item/ammo_box/magazine/m556mm/drum = 2,
 		/obj/item/clothing/accessory/bos/paladin = 1,
 		/obj/item/clothing/accessory/bos/juniorpaladin = 1,

@@ -554,7 +554,7 @@ GLOBAL_LIST_INIT(loot_t3_range, list(
 ))
 
 GLOBAL_LIST_INIT(loot_t4_range, list(
-	/obj/item/gun/ballistic/automatic/assault_rifle,
+	/obj/item/gun/ballistic/automatic/assault_rifle/r91,
 	/obj/item/ammo_box/magazine/m556mm/drum,
 	/obj/item/gun/ballistic/automatic/marksman,
 	/obj/item/ammo_box/magazine/m556mm,
@@ -566,7 +566,6 @@ GLOBAL_LIST_INIT(loot_t4_range, list(
 	/obj/item/stock_parts/cell/ammo/ec,
 	/obj/item/gun/energy/laser/aer9,
 	/obj/item/stock_parts/cell/ammo/mfc,
-	/obj/item/gun/ballistic/automatic/assault_rifle/r91/infiltrator,
 	/obj/item/ammo_box/magazine/m556mm,
 	/obj/item/gun/ballistic/rifle/repeater/brush,
 	/obj/item/ammo_box/tube/c4570,
@@ -596,6 +595,7 @@ GLOBAL_LIST_INIT(loot_unique_range, list(
 	/obj/item/gun/ballistic/rifle/hunting/paciencia,
 	/obj/item/gun/energy/laser/pistol/pewpew,
 	/obj/item/gun/energy/laser/plasma/pistol/alien
+	/obj/item/gun/ballistic/automatic/assault_rifle/r91/infiltrator,
 ))
 
 GLOBAL_LIST_INIT(loot_t1_ammo, list(

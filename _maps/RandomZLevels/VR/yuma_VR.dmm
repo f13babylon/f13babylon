@@ -2171,7 +2171,7 @@
 	dir = 8
 	},
 /obj/item/gun/ballistic/automatic/assault_rifle/assault_carbine,
-/obj/item/gun/ballistic/automatic/assault_rifle,
+/obj/item/gun/ballistic/automatic/assault_rifle/r91,
 /obj/item/gun/ballistic/automatic/assault_rifle/r91/infiltrator,
 /obj/item/gun/ballistic/automatic/autopipe,
 /obj/item/gun/ballistic/automatic/hobo/destroyer,
@@ -2184,10 +2184,7 @@
 /obj/item/gun/ballistic/automatic/rangemaster/scoped,
 /obj/item/gun/ballistic/automatic/rangemaster/scoped/mid,
 /obj/item/gun/ballistic/automatic/service,
-<<<<<<< HEAD
 /obj/item/gun/ballistic/automatic/assault_rifle/type93,
-=======
->>>>>>> main
 /turf/open/floor/holofloor/plating,
 /area/holodeck/den/programs/armory)
 "of" = (
