@@ -313,7 +313,7 @@
 		qdel(src)
 		to_chat(usr,"You dissasemble the [src].")
 	. = ..()
-*/
+
 /obj/item/gun/ballistic/automatic/assault_rifle/mid
 	name = "enhanced r91 assault rifle"
 	fire_delay = 3
@@ -328,7 +328,7 @@
 /obj/item/gun/ballistic/automatic/assault_rifle/mid/disable_burst()
 	. = ..()
 	spread = 0
-/*
+
 /obj/item/gun/ballistic/automatic/assault_rifle/mid/attackby(obj/item/W, mob/user, params)
 	if(istype(W,/obj/item/screwdriver))
 		var/obj/item/A = new /obj/item/prefabs/complex/screw
@@ -352,7 +352,7 @@
 		qdel(src)
 		to_chat(usr,"You dissasemble the [src].")
 	. = ..()
-*/
+
 /obj/item/gun/ballistic/automatic/assault_rifle/high
 	name = "advanced r91 assault rifle"
 	fire_delay = 3
@@ -368,7 +368,7 @@
 /obj/item/gun/ballistic/automatic/assault_rifle/high/disable_burst()
 	. = ..()
 	spread = 0
-/*
+
 /obj/item/gun/ballistic/automatic/assault_rifle/high/attackby(obj/item/W, mob/user, params)
 	if(istype(W,/obj/item/screwdriver))
 		var/obj/item/A = new /obj/item/prefabs/complex/screw
