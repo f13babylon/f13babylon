@@ -16,7 +16,6 @@
 	H.quick_equip()
 	return TRUE
 
-/*
 /datum/keybinding/human/quick_equipbelt
 	hotkey_keys = list("ShiftE")
 	name = "quick_equipbelt"
@@ -38,4 +37,3 @@
 	var/mob/living/carbon/human/H = user.mob
 	H.smart_equipbag()
 	return TRUE
-*/
