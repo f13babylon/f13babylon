@@ -50,7 +50,7 @@
 /obj/item/ammo_box/magazine/lmg/empty
 	start_empty = 1
 
-/obj/item/ammo_box/magazine/rpd
+/obj/item/ammo_box/magazine/type88
 	name = "ammo box (5mm)"
 	desc = "An ammo box meant to be loaded into a chinese light machine gun."
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
@@ -60,7 +60,7 @@
 	max_ammo = 50
 	w_class = WEIGHT_CLASS_NORMAL
 
-/obj/item/ammo_box/magazine/rpd/empty
+/obj/item/ammo_box/magazine/type88/empty
 	start_empty = 1
 
 /obj/item/ammo_box/magazine/cz53

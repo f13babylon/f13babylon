@@ -518,7 +518,7 @@
 	name = "empty ammo box (5mm)"
 	id = "lmg5mm"
 	materials = list(/datum/material/iron = 8000)
-	build_path = /obj/item/ammo_box/magazine/rpd/empty
+	build_path = /obj/item/ammo_box/magazine/type88/empty
 	category = list("initial", "Advanced Magazines")
 
 /datum/design/ammolathe/mm762

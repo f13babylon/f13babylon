@@ -1101,10 +1101,10 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
-//Chinese LMG
-/datum/crafting_recipe/rpd
-	name = "Chinese LMG"
-	result = /obj/item/gun/ballistic/automatic/lmg/rpd
+//Type 88 LMG
+/datum/crafting_recipe/type88
+	name = "Type 88 LMG"
+	result = /obj/item/gun/ballistic/automatic/lmg/type88
 	reqs = list(/obj/item/stack/sheet/metal = 20,
 				/obj/item/advanced_crafting_components/assembly = 1,
 				/obj/item/advanced_crafting_components/alloys = 1,

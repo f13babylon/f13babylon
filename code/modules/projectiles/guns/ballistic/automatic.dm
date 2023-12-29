@@ -965,7 +965,7 @@
 	fire_sound = 'sound/f13weapons/assault_rifle.ogg'
 	mag_type = /obj/item/ammo_box/magazine/lmg
 
-//Bozar		Keywords: 5.56mm, Long Scope, Extra Projectile Speed, 10/20/30/50 Rounds, Superhigh tier
+//Bozar		Keywords: 5.56mm, Long Scope, Extra Projectile Speed, Accurate, 10/20/30/50 Rounds, Superhigh tier
 /obj/item/gun/ballistic/automatic/lmg/bozar
 	name = "\improper Bozar"
 	desc = "A fully-automatic XM67 light machine gun manufactured in small numbers by Heckler & Koch. The ultimate refinement of the sniper's art. Chambered in 5.56mm."
@@ -981,17 +981,16 @@
 	zoom_amt = 10
 	zoom_out_amt = 13
 
-//Chinese Light Machine Gun		Keywords: 5mm, 50 Rounds, High Tier
-/obj/item/gun/ballistic/automatic/lmg/rpd
+//Type 88 Machine Gun		Keywords: 5mm, 50 Rounds, High Tier
+/obj/item/gun/ballistic/automatic/lmg/type88
 	name = "chinese light machine gun"
 	desc = "A fully-automatic Type 88 light machine gun manufactured by a Chinese industrial conglomerate. Sports a robust operating mechanism and reinforced stock. Chambered in 5mm."
-	icon_state = "rpd"
+	icon_state = "type88"
 	item_state = "handmade_rifle"
 	fire_sound = 'sound/f13weapons/chinese_assault_rifle.ogg'
-	mag_type = /obj/item/ammo_box/magazine/rpd
-	slowdown = 0.6
+	mag_type = /obj/item/ammo_box/magazine/type88
+	slowdown = 1
 	spread = 20
-	extra_penetration = -0.1 //30% AP
 
 //Colt Monitor		Keywords: 7.62mm, Damage Malus, AP, Extra Projectile Speed, Medium Scope, Accurate, 10/20 Rounds, Heavy Gunner Exclusive
 /obj/item/gun/ballistic/automatic/lmg/monitor

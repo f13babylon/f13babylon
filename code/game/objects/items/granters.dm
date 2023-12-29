@@ -751,10 +751,10 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/r84)
 
-/obj/item/book/granter/crafting_recipe/blueprint/rpd
+/obj/item/book/granter/crafting_recipe/blueprint/type88
 	name = "chinese light machine gun blueprint"
 	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/rpd)
+	crafting_recipe_types = list(/datum/crafting_recipe/type88)
 
 /obj/item/book/granter/crafting_recipe/blueprint/riotshotgun
 	name = "riot shotgun blueprint"

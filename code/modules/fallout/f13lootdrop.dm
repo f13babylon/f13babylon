@@ -932,7 +932,7 @@
 				/obj/effect/spawner/bundle/f13/brushgun,
 				/obj/effect/spawner/bundle/f13/rangemaster,
 				/obj/effect/spawner/bundle/f13/r84,
-				/obj/effect/spawner/bundle/f13/rpd,
+				/obj/effect/spawner/bundle/f13/type88,
 				/obj/effect/spawner/bundle/f13/r91,
 				/obj/effect/spawner/bundle/f13/type93,
 	)
@@ -1319,11 +1319,11 @@
 		/obj/item/ammo_box/magazine/lmg
 )
 
-/obj/effect/spawner/bundle/f13/rpd
+/obj/effect/spawner/bundle/f13/type88
 	name = "chinese light machine gun and ammo spawner"
 	items = list(
-		/obj/item/gun/ballistic/automatic/lmg/rpd,
-		/obj/item/ammo_box/magazine/rpd
+		/obj/item/gun/ballistic/automatic/lmg/type88,
+		/obj/item/ammo_box/magazine/type88
 )
 
 /obj/effect/spawner/bundle/f13/bozar
@@ -1711,7 +1711,7 @@
 				/obj/item/ammo_box/magazine/mg11 = 2,
 				/obj/item/ammo_box/magazine/m762mm/extended = 2,
 				/obj/item/ammo_box/magazine/lmg = 2,
-				/obj/item/ammo_box/magazine/rpd = 2,
+				/obj/item/ammo_box/magazine/type88 = 2,
 				/obj/item/stock_parts/cell/ammo/mfc,
 				/obj/item/ammo_casing/caseless/rocket,
 				/obj/item/ammo_box/a40mmHE,
@@ -2286,7 +2286,7 @@
 		/obj/item/book/granter/crafting_recipe/blueprint/r91,
 		/obj/item/book/granter/crafting_recipe/blueprint/type93,
 		/obj/item/book/granter/crafting_recipe/blueprint/r84,
-		/obj/item/book/granter/crafting_recipe/blueprint/rpd,
+		/obj/item/book/granter/crafting_recipe/blueprint/type88,
 		/obj/item/book/granter/crafting_recipe/blueprint/uzi,
 		/obj/item/book/granter/crafting_recipe/blueprint/mp5,
 		/obj/item/book/granter/crafting_recipe/blueprint/thompson,
