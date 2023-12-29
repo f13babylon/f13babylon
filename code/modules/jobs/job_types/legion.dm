@@ -628,7 +628,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 	loadout_options = list(
 		/datum/outfit/loadout/vexbear,	//	Lever shotgun, Ripper
-		/datum/outfit/loadout/vexfox,	//	AK-112, Spatha
+		/datum/outfit/loadout/vexfox,	//	Type 93, Spatha
 		)
 
 	matchmaking_allowed = list(

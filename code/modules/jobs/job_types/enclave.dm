@@ -509,8 +509,8 @@
 	exp_requirements = 600
 
 	loadout_options = list(
-		/datum/outfit/loadout/reconmarine, // R-93
-		/datum/outfit/loadout/mobileartillery, // Trench gun
+		/datum/outfit/loadout/reconmarine, // Infantry Rifle
+		/datum/outfit/loadout/mobileartillery, // Trench Shotgun
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavespy
