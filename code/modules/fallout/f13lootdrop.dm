@@ -1735,8 +1735,9 @@
 				/obj/item/ammo_box/magazine/lmg = 2,
 				/obj/item/ammo_box/magazine/type88 = 2,
 				/obj/item/stock_parts/cell/ammo/mfc,
-				/obj/item/ammo_casing/caseless/rocket,
-				/obj/item/ammo_box/a40mmHE,
+				// /obj/item/ammo_casing/caseless/rocket,
+				// /obj/item/ammo_box/a40mmHE,
+				// /obj/item/ammo_casing/a40mmS,
 	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4/Initialize(mapload) //on mapload, pick how many shit to spawn
@@ -1750,10 +1751,13 @@
 	loot = list(
 				/obj/item/ammo_box/a50MG/incendiary,
 				/obj/item/ammo_box/a50MG/penetrator,
-				/obj/item/ammo_casing/caseless/rocket/big,
-				/obj/item/ammo_casing/caseless/rocket/incendiary = 10,
-				/obj/item/ammo_casing/caseless/rocket/chem = 3,
-				/obj/item/ammo_box/a40mmHE
+				// /obj/item/ammo_casing/caseless/rocket/big,
+				// /obj/item/ammo_casing/caseless/rocket/incendiary = 10,
+				// /obj/item/ammo_casing/caseless/rocket/chem = 3,
+				// /obj/item/ammo_box/a40mmHEDP,
+				// /obj/item/ammo_box/a40mmM,
+				// /obj/item/ammo_casing/a40mmCS = 3,
+				// /obj/item/ammo_box/a40mmI = 10,
 	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5/Initialize(mapload) //on mapload, pick how many shit to spawn
