@@ -794,23 +794,23 @@
 /obj/item/clothing/head/soft/f13/utility
 	name = "grey utility cover"
 	desc = "An eight-pointed hat, with a visor similar to a baseball cap, known as utility cover, also called the utility cap or eight-pointed cover."
-	icon_state = "utility_g"
-	item_color = "utility_g"
+	icon_state = "utilitygsoft"
+	soft_type = "utilityg"
 
 /obj/item/clothing/head/soft/f13/utility/navy
 	name = "navy utility cover"
-	icon_state = "utility_n"
-	item_color = "utility_n"
+	icon_state = "utilitynsoft"
+	soft_type = "utilityn"
 
 /obj/item/clothing/head/soft/f13/utility/olive
 	name = "olive utility cover"
-	icon_state = "utility_o"
-	item_color = "utility_o"
+	icon_state = "utilityosoft"
+	soft_type = "utilityo"
 
 /obj/item/clothing/head/soft/f13/utility/tan
 	name = "tan utility cover"
-	icon_state = "utility_t"
-	item_color = "utility_t"
+	icon_state = "utilitytsoft"
+	soft_type = "utilityt"
 
 //DONOR, PATREON AND CUSTOM
 
