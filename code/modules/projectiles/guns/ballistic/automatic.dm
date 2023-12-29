@@ -989,7 +989,7 @@
 	item_state = "handmade_rifle"
 	fire_sound = 'sound/f13weapons/chinese_assault_rifle.ogg'
 	mag_type = /obj/item/ammo_box/magazine/type88
-	slowdown = 1
+	slowdown = 0.9
 	spread = 20
 
 //Colt Monitor		Keywords: 7.62mm, Damage Malus, AP, Extra Projectile Speed, Medium Scope, Accurate, 10/20 Rounds, Heavy Gunner Exclusive
