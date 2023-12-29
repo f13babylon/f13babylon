@@ -1738,6 +1738,7 @@
 				// /obj/item/ammo_casing/caseless/rocket,
 				// /obj/item/ammo_box/a40mmHE,
 				// /obj/item/ammo_casing/a40mmS,
+				// /obj/item/ammo_casing/a40mmF,
 	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4/Initialize(mapload) //on mapload, pick how many shit to spawn
