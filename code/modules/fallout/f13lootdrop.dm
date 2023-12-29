@@ -900,6 +900,7 @@
 	loot = list(
 				/obj/effect/spawner/bundle/f13/trail,
 				/obj/effect/spawner/bundle/f13/service,
+				/obj/effect/spawner/bundle/f13/infantry_rifle,
 				/obj/effect/spawner/bundle/f13/smg10mm,
 				/obj/effect/spawner/bundle/f13/auto5,
 				/obj/effect/spawner/bundle/f13/m1garand,
@@ -1142,11 +1143,18 @@
 	)
 
 /obj/effect/spawner/bundle/f13/service
-	name = "NCR service rifle and ammo spawner"
+	name = "service rifle and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/service,
 				/obj/item/ammo_box/magazine/m556mm
-				)
+	)
+
+	/obj/effect/spawner/bundle/f13/infantry_rifle
+	name = "infantry rifle and ammo spawner"
+	items = list(
+				/obj/item/gun/ballistic/automatic/infantry_rifle,
+				/obj/item/ammo_box/magazine/m5mm
+	)
 
 /obj/effect/spawner/bundle/f13/police_pistol
 	name = "police revolver and ammo spawner"
@@ -1374,7 +1382,7 @@
 /obj/effect/spawner/bundle/f13/ak112
 	name = "ak112 and ammo spawner"
 	items = list(
-				/obj/item/gun/ballistic/automatic/assault_carbine/ak112,
+				/obj/item/gun/ballistic/automatic/assault_rifle/ak112,
 				/obj/item/ammo_box/magazine/m5mm
 	)
 /obj/effect/spawner/bundle/f13/g11
@@ -2287,6 +2295,7 @@
 	lootcount = 1
 	loot = list(
 		/obj/item/book/granter/crafting_recipe/blueprint/service,
+		/obj/item/book/granter/crafting_recipe/blueprint/infantry_rifle,
 		/obj/item/book/granter/crafting_recipe/blueprint/trailcarbine,
 		/obj/item/book/granter/crafting_recipe/blueprint/smg10mm,
 		/obj/item/book/granter/crafting_recipe/blueprint/scoutcarbine,

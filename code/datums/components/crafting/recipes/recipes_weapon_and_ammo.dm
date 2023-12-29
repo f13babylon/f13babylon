@@ -700,11 +700,25 @@
 
 //service rifle
 /datum/crafting_recipe/servicerifle
-	name = "Service Rifle 5.56mm"
+	name = "Service Rifle"
 	result = /obj/item/gun/ballistic/automatic/service
 	reqs = list(/obj/item/stack/sheet/metal = 10,
 				/obj/item/stack/crafting/metalparts = 10,
 				/obj/item/stack/sheet/mineral/wood = 5,
+				/obj/item/stack/crafting/goodparts = 5
+				)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_available = FALSE
+
+//Infantry Rifle
+/datum/crafting_recipe/infantry_rifle
+	name = "Infantry Rifle"
+	result = /obj/item/gun/ballistic/automatic/infantry_rifle
+	reqs = list(/obj/item/stack/sheet/metal = 15,
+				/obj/item/stack/crafting/metalparts = 10,
 				/obj/item/stack/crafting/goodparts = 5
 				)
 	tools = list(TOOL_WORKBENCH)
