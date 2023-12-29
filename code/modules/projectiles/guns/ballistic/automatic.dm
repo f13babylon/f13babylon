@@ -870,8 +870,8 @@
 	item_state = "handmade_rifle"
 	fire_sound = 'sound/f13weapons/chinese_assault_rifle.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m5mm
-	extra_damage = -5	//15 DAM
 	spread = 16
+	extra_damage = -5	//15 DAM
 
 //Type 93 Assault Rifle		Keywords: 5mm, Burst, AP, 30/50 Rounds, High tier
 /obj/item/gun/ballistic/automatic/assault_rifle/type93
