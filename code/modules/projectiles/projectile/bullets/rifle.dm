@@ -36,13 +36,13 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a556mm
 	name = "5.56 FMJ bullet"
-	damage = 30
+	damage = 25
 	wound_bonus = 20
 	bare_wound_bonus = 25
 
 /obj/item/projectile/bullet/a556mm/sport
 	name = ".223 bullet"
-	damage = 25
+	damage = 20
 	wound_bonus = 25
 	bare_wound_bonus = 30
 	supereffective_damage = 15
@@ -67,21 +67,20 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	wound_bonus = 30
 	bare_wound_bonus = 35
 
-//.308 Winchester
 /obj/item/projectile/bullet/a762mm/sport
 	name = ".308 bullet"
 	damage = 30
 	wound_bonus = 35
 	bare_wound_bonus = 40
-	supereffective_damage = 20
+	supereffective_damage = 15
 	supereffective_faction = list("hostile", "ant", "deathclaw", "cazador", "gecko", "radscorpion")
 
 /obj/item/projectile/bullet/a762mm/simple		//for simple mobs
-	name = ".7.62 FMJ bullet"
+	name = "7.62 FMJ bullet"
 	damage = 30
 
 /obj/item/projectile/bullet/a762mm/simple/ap	//for simple mobs
-	name = ".7.62 AP bullet"
+	name = "7.62 AP bullet"
 	damage = 30
 	armour_penetration = 0.1
 
@@ -168,6 +167,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	wound_bonus = 30
 	bare_wound_bonus = 40
 	stamina = 0
+	supereffective_damage = 15
 
 //////////
 // 5 MM	//		- 5mm: Low-medium damage, Low-medium wound bonus, Extra AP
