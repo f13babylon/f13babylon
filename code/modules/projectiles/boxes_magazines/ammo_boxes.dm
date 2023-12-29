@@ -272,6 +272,7 @@
 
 /obj/item/ammo_box/a556mmbox/sport
 	name = "ammo box (.223)"
+	icon_state = "a223box"
 	ammo_type = /obj/item/ammo_casing/a556mm/sport
 	custom_materials = list(/datum/material/iron = 18000, /datum/material/blackpowder = 1000)
 
@@ -289,6 +290,7 @@
 
 /obj/item/ammo_box/a762mmbox/sport
 	name = "ammo box (.308)"
+	icon_state = "a308box"
 	ammo_type = /obj/item/ammo_casing/a762mm/sport
 	custom_materials = list(/datum/material/iron = 18000, /datum/material/blackpowder = 1000)
 
