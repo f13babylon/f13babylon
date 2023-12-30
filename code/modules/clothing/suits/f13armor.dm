@@ -701,6 +701,8 @@
 	desc = "The pinnacle of pre-war technology, appropriated by the Brotherhood of Steel. Commonly worn by top-ranking Paladins."
 	icon_state = "t51bpowerarmor_bos"
 	item_state = "t51bpowerarmor_bos"
+	obj_flags = UNIQUE_RENAME
+	unique_reskin = list("M1" = "t51green")
 
 /obj/item/clothing/suit/armor/f13/power_armor/t60
 	name = "T-60a Power Armor"

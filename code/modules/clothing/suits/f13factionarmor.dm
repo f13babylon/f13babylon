@@ -618,7 +618,8 @@
 	unique_reskin = list("M1" = "ranger_old",
 						"M2" = "foxranger",
 						"M3" = "price_ranger",
-						"M4" = "desert_ranger")
+						"M4" = "desert_ranger",
+						"M5" = "elite_riot")
 	armor = list("melee" = 30, "bullet" = 45, "laser" = 35, "energy" = 10, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20, "wound" = 35)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 	mutantrace_variation = STYLE_DIGITIGRADE

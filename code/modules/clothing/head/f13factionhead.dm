@@ -281,6 +281,8 @@
 	icon_state = "hat_enclave_officer"
 	item_state = "hat_enclave_officer"
 	armor = list("melee" = 55, "bullet" = 55, "laser" = 60, "energy" = 30, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 20) //equivalent to HK
+	obj_flags = UNIQUE_RENAME
+	unique_reskin = list("M1" = "hosberetblack")
 
 
 
@@ -737,7 +739,8 @@
 	unique_reskin = list("M1" = "ranger_old",
 						"M2" = "foxranger",
 						"M3" = "price_ranger",
-						"M4" = "desert_ranger")
+						"M4" = "desert_ranger",
+						"M5" = "elite_riot")
 	flash_protect = 1
 	glass_colour_type = /datum/client_colour/glass_colour/red
 	lighting_alpha = LIGHTING_PLANE_ALPHA_NV_TRAIT
