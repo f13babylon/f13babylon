@@ -102,7 +102,7 @@
 
 /obj/item/stack/f13Cash/proc/update_desc()
 	var/total_worth = get_item_credit_value()
-	desc = "It's worth [total_worth] [singular_name][ (latin) ? (( amount > 1 ) ? "i" : "us") : (( amount > 1 ) ? "s each" : "")].\n[flavor_desc]"
+	desc = "It's worth [total_worth] caps.\n[flavor_desc]"
 
 /obj/item/stack/f13Cash/get_item_credit_value()
 	return (amount*value)
@@ -113,6 +113,11 @@
 	update_icon()
 
 /obj/item/stack/f13Cash/use(used, transfer = FALSE, check = TRUE)
+	. = ..()
+	update_desc()
+	update_icon()
+
+/obj/item/stack/f13Cash/attackby(obj/item/stack/S, mob/user, params)
 	. = ..()
 	update_desc()
 	update_icon()
@@ -132,9 +137,11 @@
 	stack.loc = loc
 	stack.amount = round(rand(min_qty, max_qty))
 	stack.update_icon()
+	stack.update_desc()
 
 /* we have 6 icons, so we will use our own, instead of stack's   */
 /obj/item/stack/f13Cash/update_icon()
+	update_desc()
 	switch(amount)
 		if(1)
 			icon_state = "[initial(icon_state)]"
