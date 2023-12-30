@@ -97,7 +97,6 @@
 
 /obj/item/stack/f13Cash/Initialize(mapload)
 	. = ..()
-	update_desc()
 	update_icon()
 
 /obj/item/stack/f13Cash/proc/update_desc()
@@ -109,17 +108,10 @@
 
 /obj/item/stack/f13Cash/merge(obj/item/stack/S)
 	. = ..()
-	update_desc()
 	update_icon()
 
 /obj/item/stack/f13Cash/use(used, transfer = FALSE, check = TRUE)
 	. = ..()
-	update_desc()
-	update_icon()
-
-/obj/item/stack/f13Cash/attackby(obj/item/stack/S, mob/user, params)
-	. = ..()
-	update_desc()
 	update_icon()
 
 /obj/item/stack/f13Cash/random
@@ -137,7 +129,6 @@
 	stack.loc = loc
 	stack.amount = round(rand(min_qty, max_qty))
 	stack.update_icon()
-	stack.update_desc()
 
 /* we have 6 icons, so we will use our own, instead of stack's   */
 /obj/item/stack/f13Cash/update_icon()
@@ -249,6 +240,7 @@
 	merge_type = /obj/item/stack/f13Cash/ncr
 
 /obj/item/stack/f13Cash/ncr/update_icon()
+	update_desc()
 	switch(amount)
 		if(1  to 9)
 			icon_state = "[initial(icon_state)]"
