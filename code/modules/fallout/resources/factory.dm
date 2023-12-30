@@ -144,7 +144,6 @@
 			"5mm" = image(icon = 'icons/fallout/objects/guns/ammo.dmi', icon_state = "5mmbox"),
 			"mfc" = image(icon = 'icons/fallout/objects/powercells.dmi', icon_state = "mfc-full"),
 			"4.73mm" = image(icon = 'icons/fallout/objects/guns/ammo.dmi', icon_state = "ammobox"),
-			"Rubber 4.73mm" = image(icon = 'icons/fallout/objects/guns/ammo.dmi', icon_state = "ammobox")
 			)
 		var/list/choice = show_radial_menu(user, src, choices, custom_check = CALLBACK(src, .proc/check_menu, user), require_near = TRUE)
 		switch(choice)
@@ -178,9 +177,6 @@
 			if("4.73mm")
 				to_chat(user, "You chose 4.73mm.")
 				new /obj/item/ammo_box/a473(drop_location)
-			if("Rubber 4.73mm")
-				to_chat(user, "You chose rubber 4.73mm.")
-				new /obj/item/ammo_box/a473/rubber(drop_location)
 			else
 				return
 		flick("research_key_off", src)
@@ -193,4 +189,3 @@
 		return
 	else
 		to_chat(user, "[goal - progress] until an item is ready to be dispensed.")
-

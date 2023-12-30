@@ -452,6 +452,16 @@
 	heat_protection = HEAD
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
+//////////////////////////
+// BROTHERHOOD OF STEEL //
+//////////////////////////
+
+/obj/item/clothing/suit/armored/light/bos_scout
+	name = "brotherhood scout armour"
+	icon_state = "bos_scout"
+	item_state = "bos_scout"
+	desc = "A combat armor set made by the Brotherhood of Steel, standard issue for all Knights. This one has had its extra protective padding removed, making it lighter yet less durable."
+	armor = list("melee" = 25, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 10)
 
 ///////////
 // MISC. //

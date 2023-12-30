@@ -34,11 +34,6 @@
 	caliber = "38"
 	projectile_type = /obj/item/projectile/bullet/c38/improv
 
-/obj/item/ammo_casing/c38/rubber
-	name = ".38 special rubber bullet casing"
-	desc = "A .38 specia rubber bullet casing. For when you want to be extra useless."
-	projectile_type = /obj/item/projectile/bullet/c38/rubber
-
 /obj/item/ammo_casing/c38/incendiary
 	name = ".38 special incendiary bullet casing"
 	desc = "A .38 special incendiary bullet casing. For when you want to be slightly less useless."

@@ -4,7 +4,7 @@
 
 /datum/gear/hands/backpack
 	name = "hiking backpack"
-	path = /obj/item/storage/backpack/old
+	path = /obj/item/storage/backpack
 	cost = 2
 
 /datum/gear/hands/backpack/duffel

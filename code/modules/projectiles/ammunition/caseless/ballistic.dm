@@ -5,10 +5,6 @@
 	icon_state = "762-casing"
 	projectile_type = /obj/item/projectile/bullet/a473
 
-/obj/item/ammo_casing/caseless/a473/rubber
-	name = "4.73mm polyurethane cartridge"
-	projectile_type  = /obj/item/projectile/bullet/a473/rubber
-
 /obj/item/ammo_casing/caseless/a473/incendiary
 	name = "4.73mm tracer cartridge"
 	projectile_type  = /obj/item/projectile/bullet/a473/incendiary
