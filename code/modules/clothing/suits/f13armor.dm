@@ -658,8 +658,6 @@
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 25)
 	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t51b
 	mutantrace_variation = STYLE_DIGITIGRADE
-	obj_flags = UNIQUE_RENAME
-	unique_reskin = list("M1" = "t51green")
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51green
 	name = "Hardened T-51b power armor"
