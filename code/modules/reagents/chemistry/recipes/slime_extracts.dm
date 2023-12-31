@@ -496,16 +496,16 @@
 	..()
 
 
-//Adamantine
-/datum/chemical_reaction/slime/adamantine
-	name = "Adamantine"
-	id = "adamantine"
+//saturnite
+/datum/chemical_reaction/slime/saturnite
+	name = "Saturnite"
+	id = "saturnite"
 	required_reagents = list(/datum/reagent/toxin/plasma = 1)
-	required_container = /obj/item/slime_extract/adamantine
+	required_container = /obj/item/slime_extract/saturnite
 	required_other = TRUE
 
-/datum/chemical_reaction/slime/adamantine/on_reaction(datum/reagents/holder)
-	new /obj/item/stack/sheet/mineral/adamantine(get_turf(holder.my_atom))
+/datum/chemical_reaction/slime/saturnite/on_reaction(datum/reagents/holder)
+	new /obj/item/stack/sheet/mineral/saturnite(get_turf(holder.my_atom))
 	..()
 
 //Bluespace

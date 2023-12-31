@@ -131,9 +131,9 @@ Self-sustaining extracts:
 	extract_type = /obj/item/slime_extract/lightpink
 	colour = "light pink"
 
-/obj/item/slimecross/selfsustaining/adamantine
-	extract_type = /obj/item/slime_extract/adamantine
-	colour = "adamantine"
+/obj/item/slimecross/selfsustaining/saturnite
+	extract_type = /obj/item/slime_extract/saturnite
+	colour = "saturnite"
 
 /obj/item/slimecross/selfsustaining/rainbow
 	extract_type = /obj/item/slime_extract/rainbow

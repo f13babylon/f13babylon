@@ -410,18 +410,18 @@ Consuming extracts:
 /obj/item/slime_cookie/lightpink/do_effect(mob/living/M, mob/user)
 	M.apply_status_effect(/datum/status_effect/peacecookie)
 
-/obj/item/slimecross/consuming/adamantine
-	colour = "adamantine"
-	cookietype = /obj/item/slime_cookie/adamantine
+/obj/item/slimecross/consuming/saturnite
+	colour = "saturnite"
+	cookietype = /obj/item/slime_cookie/saturnite
 
-/obj/item/slime_cookie/adamantine
+/obj/item/slime_cookie/saturnite
 	name = "crystal cookie"
 	desc = "A translucent rock candy in the shape of a cookie. Surprisingly chewy."
-	icon_state = "adamantine"
+	icon_state = "saturnite"
 	taste = "crystalline sugar and metal"
 
-/obj/item/slime_cookie/adamantine/do_effect(mob/living/M, mob/user)
-	M.apply_status_effect(/datum/status_effect/adamantinecookie)
+/obj/item/slime_cookie/saturnite/do_effect(mob/living/M, mob/user)
+	M.apply_status_effect(/datum/status_effect/saturnitecookie)
 
 /obj/item/slimecross/consuming/rainbow
 	colour = "rainbow"

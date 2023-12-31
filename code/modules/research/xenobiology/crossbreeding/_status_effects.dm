@@ -30,7 +30,7 @@
 	return ..()
 
 /obj/screen/alert/status_effect/slimeskin
-	name = "Adamantine Slimeskin"
+	name = "Saturnite Slimeskin"
 	desc = "You are covered in a thick, non-neutonian gel."
 	icon_state = "slime_stoneskin"
 
@@ -432,19 +432,19 @@
 	REMOVE_TRAIT(owner, TRAIT_PACIFISM, "peacecookie")
 	return ..()
 
-/datum/status_effect/adamantinecookie
-	id = "adamantinecookie"
+/datum/status_effect/saturnitecookie
+	id = "saturnitecookie"
 	status_type = STATUS_EFFECT_REPLACE
 	alert_type = null
 	duration = 100
 
-/datum/status_effect/adamantinecookie/on_apply()
+/datum/status_effect/saturnitecookie/on_apply()
 	if(ishuman(owner))
 		var/mob/living/carbon/human/H = owner
 		H.physiology.burn_mod *= 0.9
 	return ..()
 
-/datum/status_effect/adamantinecookie/on_remove()
+/datum/status_effect/saturnitecookie/on_remove()
 	if(ishuman(owner))
 		var/mob/living/carbon/human/H = owner
 		H.physiology.burn_mod /= 0.9
@@ -943,9 +943,9 @@
 	REMOVE_TRAIT(owner, TRAIT_FREESPRINT, "stabilized_slime")
 	return ..()
 
-/datum/status_effect/stabilized/adamantine
-	id = "stabilizedadamantine"
-	colour = "adamantine"
+/datum/status_effect/stabilized/saturnite
+	id = "stabilizedsaturnite"
+	colour = "saturnite"
 	examine_text = "<span class='warning'>SUBJECTPRONOUN has a strange metallic coating on their skin.</span>"
 
 /datum/status_effect/stabilized/gold
@@ -974,13 +974,13 @@
 		qdel(familiar)
 	return ..()
 
-/datum/status_effect/stabilized/adamantine/on_apply()
+/datum/status_effect/stabilized/saturnite/on_apply()
 	if(ishuman(owner))
 		var/mob/living/carbon/human/H = owner
 		H.physiology.damage_resistance += 5
 	return ..()
 
-/datum/status_effect/stabilized/adamantine/on_remove()
+/datum/status_effect/stabilized/saturnite/on_remove()
 	if(ishuman(owner))
 		var/mob/living/carbon/human/H = owner
 		H.physiology.damage_resistance -= 5

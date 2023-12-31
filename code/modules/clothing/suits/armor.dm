@@ -421,7 +421,7 @@ Suits. 0-10 in its primary value, slowdown 0, various utility
 	slowdown = 0.1
 
 
-// Toggle armor
+//Toggle armor
 /obj/item/clothing/suit/toggle/armored
 	body_parts_covered = CHEST|GROIN
 	cold_protection = CHEST|GROIN
