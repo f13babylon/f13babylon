@@ -135,7 +135,6 @@
 	slot_flags = ITEM_SLOT_BACK
 	weapon_weight = WEAPON_LIGHT
 	slowdown = 0.4
-	automatic = TRUE
 	fire_delay = 8
 	var/twohands = FALSE
 
