@@ -60,15 +60,6 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	supereffective_damage = 15
 	supereffective_faction = list("hostile", "ant", "deathclaw", "cazador", "china", "gecko", "radscorpion") //5.56 being effective against the Chinese is a funny code joke that someone will look at like 4 years from now on and cry about.
 
-/obj/item/projectile/bullet/a556/rubber
-	name = "5.56 rubber bullet"
-	damage = 8
-	stamina = 32
-	sharpness = SHARP_NONE
-	armour_penetration = 0
-	wound_bonus = 0
-	bare_wound_bonus = 0
-
 /obj/item/projectile/bullet/a556/microshrapnel
 	name = "5.56 microshrapnel bullet"
 	damage = 12
@@ -111,15 +102,6 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	bare_wound_bonus = 32
 	supereffective_damage = 14
 	supereffective_faction = list("hostile", "ant", "deathclaw", "cazador", "gecko", "radscorpion")
-
-/obj/item/projectile/bullet/a762/rubber
-	name = "7.62 rubber bullet"
-	damage = 12
-	stamina = 30
-	sharpness = SHARP_NONE
-	armour_penetration = 0
-	wound_bonus = 0
-	bare_wound_bonus = 0
 
 /obj/item/projectile/bullet/a762/sport/simple //for simple mobs, separate to allow balancing
 	name = ".308 bullet"
@@ -176,13 +158,6 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	..()
 	explosion(target, 0, 1, 1, 1)
 
-/obj/item/projectile/bullet/a50MG/rubber
-	name = ".50 rubber bullet"
-	damage = 25
-	stamina = 100
-	armour_penetration = 0
-	sharpness = SHARP_NONE
-
 /obj/item/projectile/bullet/a50MG/penetrator
 	name = ".50 penetrator round"
 	damage = 50
@@ -234,14 +209,6 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	armour_penetration = 0.1
 	wound_bonus = 8
 	bare_wound_bonus = 12
-
-/obj/item/projectile/bullet/a473/rubber
-	name = "4.73 polyurethane bullet"
-	damage = 6
-	stamina = 24
-	sharpness = SHARP_NONE
-	wound_bonus = 0
-	bare_wound_bonus = 0
 
 /obj/item/projectile/bullet/a473/incendiary
 	name = "4.73 tracer bullet"

@@ -77,10 +77,10 @@
 	export_types = list(/obj/item/stack/sheet/glass, /obj/item/stack/ore,
 		/obj/item/shard)
 
-/datum/export/material/adamantine
+/datum/export/material/saturnite
 	cost = 300
-	material_id = /datum/material/adamantine
-	message = "cm3 of adamantine"
+	material_id = /datum/material/saturnite
+	message = "cm3 of saturnite"
 
 /datum/export/material/mythril
 	cost = 1000

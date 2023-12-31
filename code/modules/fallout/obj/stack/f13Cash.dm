@@ -97,24 +97,21 @@
 
 /obj/item/stack/f13Cash/Initialize(mapload)
 	. = ..()
-	update_desc()
 	update_icon()
 
 /obj/item/stack/f13Cash/proc/update_desc()
 	var/total_worth = get_item_credit_value()
-	desc = "It's worth [total_worth] [singular_name][ (latin) ? (( amount > 1 ) ? "i" : "us") : (( amount > 1 ) ? "s each" : "")].\n[flavor_desc]"
+	desc = "It's worth [total_worth] caps.\n[flavor_desc]"
 
 /obj/item/stack/f13Cash/get_item_credit_value()
 	return (amount*value)
 
 /obj/item/stack/f13Cash/merge(obj/item/stack/S)
 	. = ..()
-	update_desc()
 	update_icon()
 
 /obj/item/stack/f13Cash/use(used, transfer = FALSE, check = TRUE)
 	. = ..()
-	update_desc()
 	update_icon()
 
 /obj/item/stack/f13Cash/random
@@ -135,6 +132,7 @@
 
 /* we have 6 icons, so we will use our own, instead of stack's   */
 /obj/item/stack/f13Cash/update_icon()
+	update_desc()
 	switch(amount)
 		if(1)
 			icon_state = "[initial(icon_state)]"
@@ -242,6 +240,7 @@
 	merge_type = /obj/item/stack/f13Cash/ncr
 
 /obj/item/stack/f13Cash/ncr/update_icon()
+	update_desc()
 	switch(amount)
 		if(1  to 9)
 			icon_state = "[initial(icon_state)]"

@@ -968,8 +968,8 @@
 /mob/living/carbon/human/species/golem/random
 	race = /datum/species/golem/random
 
-/mob/living/carbon/human/species/golem/adamantine
-	race = /datum/species/golem/adamantine
+/mob/living/carbon/human/species/golem/saturnite
+	race = /datum/species/golem/saturnite
 
 /mob/living/carbon/human/species/golem/plasma
 	race = /datum/species/golem/plasma

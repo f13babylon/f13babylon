@@ -204,13 +204,13 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 		wooden.resistance_flags &= ~FLAMMABLE
 
 ///Stronk force increase
-/datum/material/adamantine
-	name = "adamantine"
-	desc = "A powerful material made out of magic, I mean science!"
+/datum/material/saturnite
+	name = "saturnite"
+	desc = "A ceramic-like polymer alloy used in the production of several experimental products."
 	color = "#6d7e8e"
 	strength_modifier = 1.3
 	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
-	sheet_type = /obj/item/stack/sheet/mineral/adamantine
+	sheet_type = /obj/item/stack/sheet/mineral/saturnite
 	value_per_unit = 0.25
 	beauty_modifier = 0.4
 	armor_modifiers = list("melee" = 1.5, "bullet" = 1.5, "laser" = 1.3, "energy" = 1.3, "bomb" = 1, "bio" = 1, "rad" = 1, "fire" = 2.5, "acid" = 1)

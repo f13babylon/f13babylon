@@ -21,23 +21,12 @@
 	desc = "Not depleted uranium. Regular uranium."
 	projectile_type = /obj/item/projectile/bullet/a762/uraniumtipped
 
-
-/obj/item/ammo_casing/a762/rubber
-	name = "7.62 rubber bullet casing"
-	desc = "A 7.62 rubber bullet casing, for training purposes."
-	projectile_type = /obj/item/projectile/bullet/a762/rubber
-
 // 5.56mm
 /obj/item/ammo_casing/a556
 	name = "5.56mm FMJ bullet casing"
 	desc = "A 5.56mm bullet casing."
 	caliber = "a556"
 	projectile_type = /obj/item/projectile/bullet/a556
-
-/obj/item/ammo_casing/a556/rubber
-	name = "5.56mm rubber bullet casing"
-	desc = "A 5.56mm rubber bullet casing, for training purposes."
-	projectile_type = /obj/item/projectile/bullet/a556/rubber
 
 /obj/item/ammo_casing/a556/microshrapnel
 	name = "5.56mm microshrapnel bullet casing"
@@ -61,7 +50,6 @@
 	desc = "A 5mm bullet casing."
 	caliber = "a5mm"
 	projectile_type = /obj/item/projectile/bullet/a5mm
-
 
 /obj/item/ammo_casing/a5mm/shock
 	name = "5mm shock bullet casing"

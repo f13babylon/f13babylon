@@ -127,9 +127,9 @@ Recurring extracts:
 	extract_type = /obj/item/slime_extract/lightpink
 	colour = "light pink"
 
-/obj/item/slimecross/recurring/adamantine
-	extract_type = /obj/item/slime_extract/adamantine
-	colour = "adamantine"
+/obj/item/slimecross/recurring/saturnite
+	extract_type = /obj/item/slime_extract/saturnite
+	colour = "saturnite"
 	max_cooldown = 10
 
 /obj/item/slimecross/recurring/rainbow

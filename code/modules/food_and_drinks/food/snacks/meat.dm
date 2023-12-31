@@ -104,9 +104,9 @@
 	tastes = list("rock" = 1)
 	foodtype = MEAT | RAW | GROSS
 
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/golem/adamantine
+/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/golem/saturnite
 	icon_state = "agolemmeat"
-	desc = "From the slime pen to the rune to the kitchen, science."
+	desc = "A chunk of saturnite which resembles raw flesh. What?"
 	filling_color = "#66CDAA"
 	foodtype = MEAT | RAW | GROSS
 

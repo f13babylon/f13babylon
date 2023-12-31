@@ -80,7 +80,7 @@ To add a crossbreed:
 			itemcolor = "#000000"
 		if("light pink")
 			itemcolor = "#FFB6C1"
-		if("adamantine")
+		if("saturnite")
 			itemcolor = "#008B8B"
 	add_atom_colour(itemcolor, FIXED_COLOUR_PRIORITY)
 

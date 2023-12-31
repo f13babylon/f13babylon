@@ -582,7 +582,7 @@ Senior Scribe
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/aer9/recharger = 1,
 		/obj/item/stock_parts/cell/ammo/breeder = 2,
-		/obj/item/book/granter/crafting_recipe/blueprint/marksman = 1,,
+		/obj/item/book/granter/crafting_recipe/blueprint/marksman = 1,
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1,
 		/obj/item/book/granter/crafting_recipe/gunsmith_four=1,
 		/obj/item/book/granter/trait/explosives_advanced = 1
@@ -832,7 +832,6 @@ Knight
 /datum/outfit/job/bos/f13knight
 	name = "Knight"
 	jobtype = /datum/job/bos/f13knight
-	suit = 			/obj/item/clothing/suit/armor/f13/combat/brotherhood
 	uniform =		/obj/item/clothing/under/syndicate/brotherhood
 	mask =			/obj/item/clothing/mask/gas/sechailer
 	belt = 			/obj/item/storage/belt/military/assault
@@ -858,7 +857,8 @@ Knight
 		/obj/item/gun/energy/laser/aer9 = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/gun/energy/laser/pistol = 1,
-		/obj/item/stock_parts/cell/ammo/ec = 1
+		/obj/item/stock_parts/cell/ammo/ec = 1,
+		/obj/item/clothing/suit/armor/f13/combat/brotherhood = 1
 		)
 
 /datum/outfit/loadout/knightb
@@ -869,7 +869,8 @@ Knight
 		/obj/item/gun/ballistic/automatic/marksman = 1,
 		/obj/item/ammo_box/magazine/m556/rifle = 2,
 		/obj/item/gun/energy/laser/pistol = 1,
-		/obj/item/stock_parts/cell/ammo/ec = 1
+		/obj/item/stock_parts/cell/ammo/ec = 1,
+		/obj/item/clothing/suit/armored/light/bos_scout = 1
 		)
 
 /datum/outfit/loadout/knightc
@@ -879,7 +880,8 @@ Knight
 		/obj/item/clothing/accessory/bos/knight = 1,
 		/obj/item/melee/powered/ripper = 1,
 		/obj/item/gun/energy/laser/pistol = 1,
-		/obj/item/stock_parts/cell/ammo/ec = 3
+		/obj/item/stock_parts/cell/ammo/ec = 3,
+		/obj/item/clothing/suit/armored/light/bos_scout = 1
 		)
 
 /*

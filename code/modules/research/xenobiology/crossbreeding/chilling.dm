@@ -288,12 +288,12 @@ Chilling extracts:
 	new /obj/item/clothing/head/peaceflower(get_turf(user))
 	..()
 
-/obj/item/slimecross/chilling/adamantine
-	colour = "adamantine"
+/obj/item/slimecross/chilling/saturnite
+	colour = "saturnite"
 
-/obj/item/slimecross/chilling/adamantine/do_effect(mob/user)
+/obj/item/slimecross/chilling/saturnite/do_effect(mob/user)
 	user.visible_message("<span class='notice'>[src] creaks and breaks as it shifts into a heavy set of armor!</span>")
-	new /obj/item/clothing/suit/armor/heavy/adamantine(get_turf(user))
+	new /obj/item/clothing/suit/armor/heavy/saturnite(get_turf(user))
 	..()
 
 /obj/item/slimecross/chilling/rainbow
