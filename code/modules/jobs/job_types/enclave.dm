@@ -826,6 +826,10 @@
 /datum/job/enclave/encborg/equip(mob/living/carbon/human/H, visualsOnly = FALSE, announce = TRUE, latejoin = FALSE, datum/outfit/outfit_override = null, client/preference_source)
 	return H.Robotize(FALSE, latejoin)
 
+
+/datum/job/enclave/encborg/override_latejoin_spawn()
+	return TRUE
+
 /datum/job/enclave/encborg/after_spawn(mob/living/silicon/robot/R, mob/M)
 	. = ..()
 	ADD_TRAIT(R, TRAIT_TECHNOPHREAK, TRAIT_GENERIC)
