@@ -48,7 +48,7 @@
 		"ferry" = "ferry_fancy",
 		"emergency" = "emergency_pahrump")
 
-	var/year_offset = 260 //2284 - 2024
+	var/year_offset = 259 //2283 - 2024
 
 	// "fun things"
 	/// Orientation to load in by default.
