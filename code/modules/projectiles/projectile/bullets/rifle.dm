@@ -31,8 +31,8 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 
 ////////////////////
-// 5.56 MM & .223 //		- 5.56mm: Medium damage, Medium wound bonus, Extra speed
-////////////////////		- .223: Less damage, More wound bonus, Extra speed, More damage against simple mobs
+// 5.56 MM & .223 //		- 5.56mm: Medium damage, Medium wound bonus
+////////////////////		- .223: Less damage, More wound bonus, More damage against simple mobs
 
 /obj/item/projectile/bullet/a556mm
 	name = "5.56 FMJ bullet"
@@ -57,7 +57,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 ////////////////////
 // 7.62 MM & .308 //		- 7.62mm: High damage, High wound bonus
-////////////////////		- .223: Less damage, More wound bonus, More damage against simple mobs
+////////////////////		- .308: Less damage, More wound bonus, More damage against simple mobs
 
 /obj/item/projectile/bullet/a762mm
 	name = "7.62 FMJ bullet"
