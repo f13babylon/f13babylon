@@ -849,7 +849,7 @@
 	slowdown = 0.9
 	spread = 20
 
-//Colt Monitor		Keywords: 7.62mm, Damage Malus, AP, Extra Projectile Speed, Medium Scope, Accurate, 10/20 Rounds, Heavy Gunner Exclusive
+//Colt Monitor		Keywords: 7.62mm, AP, Extra Projectile Speed, Medium Scope, Accurate, 10/20 Rounds, Heavy Gunner Exclusive
 /obj/item/gun/ballistic/automatic/lmg/monitor
 	name = "\improper Colt Monitor"
 	desc = "An especially modified light machine gun built on the BAR platform with an added pistol grip and a Cutts recoil compensator. This one features a West-Tek marksman scope and its receiver bears a red star."
