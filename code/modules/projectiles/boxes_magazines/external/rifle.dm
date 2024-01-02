@@ -72,7 +72,6 @@
 	name = "rifle drum magazine (5mm)"
 	icon_state = "mdrum"
 	max_ammo = 50
-	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/ammo_box/magazine/m556mm/drum/empty
 	start_empty = 1
@@ -93,7 +92,6 @@
 	name = "rifle drum magazine (5mm)"
 	icon_state = "mdrum"
 	max_ammo = 50
-	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/ammo_box/magazine/m5mm/drum/empty
 	start_empty = 1
