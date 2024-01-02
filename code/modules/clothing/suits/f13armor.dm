@@ -743,8 +743,8 @@
 	desc = "Upgraded pre-war power armor design used by the Enclave."
 	icon_state = "APAmk2"
 	item_state = "APAmk2"
-	slowdown = 0.3//Worst slowdown of all combat sets.
-	armor = list("melee" = 75, "bullet" = 75, "laser" = 75, "energy" = 50, "bomb" = 75, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 50)
+	slowdown = 0.25
+	armor = list("melee" = 70, "bullet" = 70, "laser" = 60, "energy" = 35, "bomb" = 65, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 40, "wound" = 50)	//Same at T-51
 	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/x02 // Oh the misery
 
 /obj/item/clothing/suit/armor/f13/power_armor/tesla
@@ -752,17 +752,17 @@
 	desc = "Upgraded pre-war power armor used by the Enclave, rigged with heavy electronics."
 	icon_state = "x-01tesla"
 	item_state = "x-01tesla"
-	slowdown = 0.3//Worst slowdown of all combat sets.
-	armor = list("melee" = 75, "bullet" = 75, "laser" = 95, "energy" = 95, "bomb" = 70, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 50)
-	var/hit_reflect_chance = 35
-
+	slowdown = 0.25
+	armor = list("melee" = 70, "bullet" = 70, "laser" = 80, "energy" = 80, "bomb" = 70, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 50)	//T-51 with better laser and bomb
+	//var/hit_reflect_chance = 35	- Nah
+/*
 /obj/item/clothing/suit/armor/f13/power_armor/tesla/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
 	if(is_energy_reflectable_projectile(object) && (attack_type == ATTACK_TYPE_PROJECTILE) && (def_zone in protected_zones))
 		if(prob(hit_reflect_chance))
 			block_return[BLOCK_RETURN_REDIRECT_METHOD] = REDIRECT_METHOD_DEFLECT
 			return BLOCK_SHOULD_REDIRECT | BLOCK_REDIRECTED | BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
 	return ..()
-
+*/
 /obj/item/clothing/suit/armor/f13/power_armor/x02/eastcoast
 	name = "X-02 power armor"
 	desc = "A very rare suit of X-02 power armor."

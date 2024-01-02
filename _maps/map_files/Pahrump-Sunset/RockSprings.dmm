@@ -10325,8 +10325,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/locker,
-/obj/item/clothing/suit/armor/f13/combat/mk2/enclave,
-/obj/item/clothing/suit/armor/f13/combat/mk2/enclave,
+/obj/item/clothing/suit/armor/f13/combat/enclave,
+/obj/item/clothing/suit/armor/f13/combat/enclave,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building)
 "kxT" = (

@@ -47,7 +47,10 @@
 	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
 	ADD_TRAIT(H, TRAIT_STRAIGHT_EDGE, REF(src))
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/R93)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavemarinearmor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavemarinehelmet)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombatarmor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombathelmet)
 
 
 //Captain
@@ -178,8 +181,6 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/pshotgun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg22)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/plasmapistol)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombatarmor)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombathelmet)
 
 /datum/outfit/loadout/lt_is
 	name = "Internal Security Advisor"
@@ -223,8 +224,8 @@
 	name = "Enclave Gunnery Sergeant"
 	jobtype = /datum/job/enclave/f13gysergeant
 	accessory = /obj/item/clothing/accessory/enclave/gunnery_sergeant
-	head = /obj/item/clothing/head/helmet/f13/power_armor/advanced
-	suit = /obj/item/clothing/suit/armor/f13/power_armor/advanced
+	head = /obj/item/clothing/head/helmet/f13/power_armor/tesla
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/tesla
 	ears = /obj/item/radio/headset/headset_enclave/command
 
 	backpack_contents = list(
@@ -302,8 +303,8 @@
 /datum/outfit/job/enclave/peacekeeper/enclavesgt
 	name = "Enclave Sergeant"
 	jobtype = /datum/job/enclave/enclavesgt
-	suit = /obj/item/clothing/suit/armor/f13/enclave/marine
-	head = /obj/item/clothing/head/helmet/f13/enclave/marine
+	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/enclave
+	head = /obj/item/clothing/head/helmet/f13/combat/mk2/enclave
 	accessory = /obj/item/clothing/accessory/enclave/sergeant
 
 
@@ -446,7 +447,7 @@
 	name = "Enclave Specialist"
 	jobtype = /datum/job/enclave/f13specialist
 	head = /obj/item/clothing/head/helmet/f13/combat/enclave
-	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/enclave
+	suit = /obj/item/clothing/suit/armor/f13/combat/enclave
 	accessory = /obj/item/clothing/accessory/enclave/corporal
 
 	backpack_contents = list(
@@ -518,7 +519,7 @@
 	jobtype = /datum/job/enclave/enclavespy
 	accessory = /obj/item/clothing/accessory/enclave/private_firstclass
 	head = /obj/item/clothing/head/helmet/f13/combat/enclave
-	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/enclave
+	suit = /obj/item/clothing/suit/armor/f13/combat/enclave
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
@@ -617,8 +618,6 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/pshotgun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg22)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/plasmapistol)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombatarmor)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombathelmet)
 
 /*
 //Pilot
