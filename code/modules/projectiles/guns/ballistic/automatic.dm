@@ -391,7 +391,7 @@
 //Service rifle			Keywords: NCR, 5.56mm, Semi-auto, 20 (10-50) round magazine, 25dmg
 /obj/item/gun/ballistic/automatic/service
 	name = "service rifle"
-	desc = "A Pre-War AR-15 sporting rifle maintained by the Gun Runners and used as the primary infantry weapon of the NCRA. Chambered in 5.56mm."
+	desc = "A pre-war AR-15 sporting rifle maintained by the Gun Runners and used as the primary infantry weapon of the NCRA. Chambered in 5.56mm."
 	icon = 'icons/obj/guns/gunfruits2022/rifles.dmi'
 	icon_state = "service_rifle"
 	item_state = "servicerifle"
@@ -412,7 +412,7 @@
 //Infantry Rifle		Keywords: 5mm, Semi-auto, 30/50 Rounds magazine
 /obj/item/gun/ballistic/automatic/infantry_rifle
 	name = "infantry rifle"
-	desc = "A long-barreled, semi-automatic variant of the Colt XM-177 assault carbine intended for use by military garrison troops. Chambered in 5mm."
+	desc = "A long-barreled semi-automatic variant of the Colt XM-177 assault carbine intended for use by military garrison troops. Chambered in 5mm."
 	icon = 'icons/obj/guns/gunfruits2022/rifles.dmi'
 	icon_state = "infantry_rifle"
 	item_state = "assault_carbine"
@@ -442,7 +442,7 @@
 //Marksman carbine			Keywords: 5.56mm, Semi-auto, 20 (10-50) round magazine, Small scope
 /obj/item/gun/ballistic/automatic/marksman
 	name = "marksman carbine"
-	desc = "A semi-automatic Colt R91 that has been especially modified for paratrooper marksmen. It's been fitted with a precision stock and a West-Tek combat gunsight. Chambered in 5.56mm."
+	desc = "A semi-automatic Colt R91 rifle that has been especially modified for paratrooper marksmen. It's been fitted with a precision stock and a West-Tek combat gunsight. Chambered in 5.56mm."
 	icon = 'icons/obj/guns/gunfruits2022/rifles.dmi'
 	icon_state = "marksman_carbine"
 	item_state = "marksman"
@@ -696,7 +696,7 @@
 //R91		Keywords: 5.56mm, 10/20/30/50 Rounds, High tier
 /obj/item/gun/ballistic/automatic/assault_rifle/r91
 	name = "assault rifle"
-	desc = "A fully-automatic R91 assault rifle manufactured by Stent Security Solutions. In use by the National Guard pre-war. Chambered in 5.56mm."
+	desc = "A pre-war Colt R91 rifle made for the U.S. National Guard, famous for being reliable and lightweight. It holds its own in any fight, even today. Chambered in 5.56mm."
 	icon_state = "r91"
 	item_state = "r91"
 	fire_sound = 'sound/f13weapons/assault_rifle.ogg'
@@ -722,7 +722,7 @@
 //AK-112		Keywords: 5mm, 30/50 Rounds, High-mid tier
 /obj/item/gun/ballistic/automatic/assault_rifle/ak112
 	name = "cheap assault rifle"
-	desc = "A Kalashnikov AK-112 rifle manufactured by Colt with designs imported from the Soviet Union. It was replaced by the Colt R91 in the US Army before the war, and then replaced with the service rifle by the NCR after the war. Chambered in 5mm."
+	desc = "A Kalashnikov AK-112 rifle manufactured by Colt with designs imported from the Soviet Union. It was replaced by the Colt R91 in the U.S. Army before the war, and then replaced with the service rifle in the NCR after the war. Chambered in 5mm."
 	icon_state = "ak112"
 	item_state = "handmade_rifle"
 	fire_sound = 'sound/f13weapons/chinese_assault_rifle.ogg'
@@ -758,8 +758,8 @@
 
 //G11		Keywords: 5mm, Caseless, Long Scope, AP, Accurate, 50 Rounds, Superhigh tier
 /obj/item/gun/ballistic/automatic/assault_rifle/g11
-	name = "space-age assault rifle"
-	desc = "A prototype Heckler & Koch G11 developed for use in the Bundeswehr prior to the collapse of the European Commonwealth, fitted with a proprietary Hensoldt scope. Everything about this firearm is alien and foreign, and if anything broke in it's odd clockwork mechanism the user should lament the fact that no-one alive can fix it. Chambered in 5mm."
+	name = "advanced assault rifle"
+	desc = "A prototype Heckler & Koch G11 developed for use in the Bundeswehr prior to the collapse of the European Commonwealth, fitted with a proprietary Hensoldt scope. Everything about this firearm is alien and foreign, and if anything broke in its archaic space-age clockwork mechanism the user should lament the fact that no one alive can fix it. Chambered in 5mm."
 	icon_state = "g11"
 	item_state = "g11"
 	fire_sound = 'sound/f13weapons/g11.ogg'
@@ -780,7 +780,7 @@
 //FAL		Keywords: 7.62mm, 10/20 Rounds, Superhigh tier
 /obj/item/gun/ballistic/automatic/assault_rifle/fal
 	name = "belgian battle rifle"
-	desc = "An uniquely powerful Pre-War FAL 50.63 battle rifle developed by FN Herstal. Fitted with a shorter barrel and a lightweight folding stock, intended to be used by paratroopers across the European Commonwealth. Chambered in 7.62mm."
+	desc = "An uniquely powerful pre-war FAL 50.63 battle rifle developed by FN Herstal. Fitted with a shorter barrel and a lightweight folding stock (that is unfortunately stuck), intended to be used by paratroopers across the European Commonwealth. Chambered in 7.62mm."
 	icon_state = "fal"
 	item_state = "fal"
 	fire_sound = 'sound/f13weapons/762assault_rifle.ogg'
@@ -816,7 +816,7 @@
 //R84 Light Machine Gun			Keywords: 5.56mm, 60 Rounds, High Tier
 /obj/item/gun/ballistic/automatic/lmg/r84
 	name = "light machine gun"
-	desc = "A Pre-War R84 light machine gun designed by FN Herstal and now manufactured by the NCR, commonly issued to Heavy Troopers. Intended for suppressive fire. Chambered in 5.56mm."
+	desc = "A pre-war R84 light machine gun designed by FN Herstal and now manufactured by the NCR, commonly issued to Heavy Troopers. Intended for suppressive fire. Chambered in 5.56mm."
 	icon_state = "r84"
 	item_state = "r84"
 	fire_sound = 'sound/f13weapons/assault_rifle.ogg'
@@ -824,8 +824,8 @@
 
 //Bozar		Keywords: 5.56mm, Long Scope, Extra Projectile Speed, Accurate, 10/20/30/50 Rounds, Superhigh tier
 /obj/item/gun/ballistic/automatic/lmg/bozar
-	name = "\improper Bozar"
-	desc = "A bullpup Walther XM67 machine sniper rifle that has been designed from the ground up for non-stationary shooting, fitted with a collapsible stock, long-range scope, and reciprocating barrel. The ultimate refinement of the sniper's art. Chambered in 5.56mm."
+	name = "machine sniper rifle"
+	desc = "A bullpup Walther XM67 machine sniper rifle that has been designed from the ground up for non-stationary shooting, fitted with a collapsible stock, long-range scope, and reciprocating barrel. The 'Bozar' is the ultimate refinement of the sniper's art. Chambered in 5.56mm."
 	icon_state = "bozar"
 	item_state = "bozar"
 	fire_sound = 'sound/f13weapons/bozar.ogg'
@@ -841,7 +841,7 @@
 //Type 88 Machine Gun		Keywords: 5mm, 50 Rounds, High Tier
 /obj/item/gun/ballistic/automatic/lmg/type88
 	name = "chinese light machine gun"
-	desc = "A Type 88 light machine gun of Chinese design, based on the original success of the Type 93 rifle. It sports a robust operating mechanism and a barrel meant to withstand extreme abuse, on top of it's improved frame. Chambered in 5mm."
+	desc = "A Type 88 light machine gun of Chinese design, based on the original success of the Type 93 rifle. It sports a robust operating mechanism and a barrel meant to withstand extreme abuse, on top of its improved frame. Chambered in 5mm."
 	icon_state = "type88"
 	item_state = "handmade_rifle"
 	fire_sound = 'sound/f13weapons/chinese_assault_rifle.ogg'
@@ -852,7 +852,7 @@
 //Colt Monitor		Keywords: 7.62mm, AP, Extra Projectile Speed, Medium Scope, Accurate, 10/20 Rounds, Heavy Gunner Exclusive
 /obj/item/gun/ballistic/automatic/lmg/monitor
 	name = "heavy battle rifle"
-	desc = "An especially modified Pre-War machine gun made for the Federal Bureau of Investigation, built on the famous BAR platform with an added pistol grip and a Cutts recoil compensator. This one has a West-Tek optical gunsight mounted to it's receiver for optimal accuracy. Chambered in 7.62mm."
+	desc = "An especially modified pre-war machine gun made for the Federal Bureau of Investigation, built on the famous BAR platform with an added pistol grip and a Cutts recoil compensator. This one has a West-Tek optical gunsight mounted to it's receiver for optimal accuracy. Chambered in 7.62mm."
 	icon = 'icons/fallout/objects/guns/bar.dmi'
 	icon_state = "monitor"
 	item_state = "monitor"
