@@ -854,7 +854,7 @@
 	burst_size = 3
 	fire_delay = 4
 	automatic = 0
-	burst_shot_delay = 3
+	burst_shot_delay = 2
 	spread = 5
 	recoil = 0.1
 	automatic_burst_overlay = TRUE
