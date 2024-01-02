@@ -19,6 +19,8 @@
 	can_bayonet = TRUE
 	knife_x_offset = 20
 	knife_y_offset = 12
+	can_charge = 0
+	can_remove = 0
 
 	var/max_mod_capacity = 100
 	var/list/modkits = list()

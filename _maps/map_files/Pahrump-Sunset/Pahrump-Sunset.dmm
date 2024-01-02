@@ -12872,7 +12872,7 @@
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 8
 	},
-/obj/item/ingot/adamantine,
+/obj/item/ingot/saturnite,
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowrustychess"
 	},

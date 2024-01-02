@@ -21,7 +21,7 @@
 /datum/sprite_accessory/tails/lizard
 	color_src = MATRIXED
 	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
-	recommended_species = list("mammal", "slimeperson", "podweak", "felinid", "insect", "synthanthro")
+	recommended_species = list("mammal", "slimeperson", "podweak", "felinid", "insect", "synthanthro", "ghoulanthro")
 	relevant_layers = list(BODY_BEHIND_LAYER, BODY_FRONT_LAYER)
 
 /datum/sprite_accessory/tails_animated/lizard
@@ -937,7 +937,7 @@
 /datum/sprite_accessory/tails/mam_tails
 	color_src = MATRIXED
 	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
-	recommended_species = list("mammal", "slimeperson", "podweak", "felinid", "insect", "synthanthro")
+	recommended_species = list("mammal", "slimeperson", "podweak", "felinid", "insect", "synthanthro", "ghoulanthro")
 	relevant_layers = list(BODY_BEHIND_LAYER, BODY_FRONT_LAYER)
 
 /datum/sprite_accessory/tails/mam_tails/none

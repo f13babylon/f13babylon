@@ -67,12 +67,8 @@
 /obj/item/ingot/titanium
 	custom_materials = list(/datum/material/titanium=12000)
 
-// Adapted to suit FO so it can be used.
-/obj/item/ingot/adamantine
-	custom_materials = list(/datum/material/adamantine=12000)
-	name = "pre-war steel ingot"
-	desc = "Top quality steel from the old world."
-	material_flags = MATERIAL_COLOR
+/obj/item/ingot/saturnite
+	custom_materials = list(/datum/material/saturnite=12000)
 
 /obj/item/ingot/cult
 	custom_materials = list(/datum/material/runedmetal=12000)
@@ -290,7 +286,7 @@
 	if(quality > 0)
 		finalforreal.toolspeed = max(0.05,(1-(quality/10)))
 	else
-		finalforreal.toolspeed *= max(1, (quality * -1))	
+		finalforreal.toolspeed *= max(1, (quality * -1))
 	finalitem = finalforreal
 	..()
 
@@ -636,5 +632,3 @@
 	finalforreal.throwforce = finalforreal.force*1.4
 	finalitem = finalforreal
 	..()
-
-

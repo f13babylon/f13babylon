@@ -2380,7 +2380,7 @@
 		/obj/item/advanced_crafting_components/receiver,
 		/obj/item/advanced_crafting_components/assembly,
 		/obj/item/advanced_crafting_components/alloys,
-		/obj/item/ingot/adamantine, // Valuable for smithing
+		/obj/item/ingot/saturnite, // Valuable for smithing
 	)
 
 /obj/effect/spawner/lootdrop/f13/attachments

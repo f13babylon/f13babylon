@@ -3639,7 +3639,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "xN" = (
-/obj/item/ingot/adamantine,
+/obj/item/ingot/saturnite,
 /obj/structure/showcase/horrific_experiment,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
@@ -5025,7 +5025,7 @@
 /area/f13/wasteland/rocksprings)
 "KI" = (
 /obj/structure/table/reinforced,
-/obj/item/ingot/adamantine,
+/obj/item/ingot/saturnite,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"

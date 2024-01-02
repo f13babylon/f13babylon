@@ -51,7 +51,7 @@ SUBSYSTEM_DEF(research)
 	/obj/item/slime_extract/pink                   = list(TECHWEB_POINT_TYPE_GENERIC = 1250),
 	/obj/item/slime_extract/gold                   = list(TECHWEB_POINT_TYPE_GENERIC = 1250),
 	/obj/item/slime_extract/black                  = list(TECHWEB_POINT_TYPE_GENERIC = 1500),
-	/obj/item/slime_extract/adamantine             = list(TECHWEB_POINT_TYPE_GENERIC = 1500),
+	/obj/item/slime_extract/saturnite             = list(TECHWEB_POINT_TYPE_GENERIC = 1500),
 	/obj/item/slime_extract/oil                    = list(TECHWEB_POINT_TYPE_GENERIC = 1500),
 	/obj/item/slime_extract/lightpink              = list(TECHWEB_POINT_TYPE_GENERIC = 1500),
 	/obj/item/slime_extract/rainbow                = list(TECHWEB_POINT_TYPE_GENERIC = 2500),
@@ -76,7 +76,7 @@ SUBSYSTEM_DEF(research)
 	/obj/item/slimecross/reproductive/oil          = list(TECHWEB_POINT_TYPE_GENERIC = 2500),
 	/obj/item/slimecross/reproductive/black        = list(TECHWEB_POINT_TYPE_GENERIC = 2500),
 	/obj/item/slimecross/reproductive/lightpink    = list(TECHWEB_POINT_TYPE_GENERIC = 2500),
-	/obj/item/slimecross/reproductive/adamantine   = list(TECHWEB_POINT_TYPE_GENERIC = 2500),
+	/obj/item/slimecross/reproductive/saturnite   = list(TECHWEB_POINT_TYPE_GENERIC = 2500),
 	/obj/item/slimecross/reproductive/rainbow      = list(TECHWEB_POINT_TYPE_GENERIC = 2750),
 	//  Burning -    Crossbreading Cores!    - (Orange Cores)
 	/obj/item/slimecross/burning/grey              = list(TECHWEB_POINT_TYPE_GENERIC = 2000),
@@ -99,7 +99,7 @@ SUBSYSTEM_DEF(research)
 	/obj/item/slimecross/burning/oil               = list(TECHWEB_POINT_TYPE_GENERIC = 3500),
 	/obj/item/slimecross/burning/black             = list(TECHWEB_POINT_TYPE_GENERIC = 3500),
 	/obj/item/slimecross/burning/lightpink         = list(TECHWEB_POINT_TYPE_GENERIC = 3500),
-	/obj/item/slimecross/burning/adamantine        = list(TECHWEB_POINT_TYPE_GENERIC = 3500),
+	/obj/item/slimecross/burning/saturnite        = list(TECHWEB_POINT_TYPE_GENERIC = 3500),
 	/obj/item/slimecross/burning/rainbow           = list(TECHWEB_POINT_TYPE_GENERIC = 3750),
 		//  Regenerative -    Crossbreading Cores!    - (Purple Cores)
 	/obj/item/slimecross/regenerative/grey         = list(TECHWEB_POINT_TYPE_GENERIC = 2000),
@@ -122,7 +122,7 @@ SUBSYSTEM_DEF(research)
 	/obj/item/slimecross/regenerative/oil          = list(TECHWEB_POINT_TYPE_GENERIC = 3500),
 	/obj/item/slimecross/regenerative/black        = list(TECHWEB_POINT_TYPE_GENERIC = 3500),
 	/obj/item/slimecross/regenerative/lightpink    = list(TECHWEB_POINT_TYPE_GENERIC = 3500),
-	/obj/item/slimecross/regenerative/adamantine   = list(TECHWEB_POINT_TYPE_GENERIC = 3500),
+	/obj/item/slimecross/regenerative/saturnite   = list(TECHWEB_POINT_TYPE_GENERIC = 3500),
 	/obj/item/slimecross/regenerative/rainbow      = list(TECHWEB_POINT_TYPE_GENERIC = 3750),
 		//  Stabilized -    Crossbreading Cores!    - (Blue Cores)
 	/obj/item/slimecross/stabilized/grey           = list(TECHWEB_POINT_TYPE_GENERIC = 2000),
@@ -145,7 +145,7 @@ SUBSYSTEM_DEF(research)
 	/obj/item/slimecross/stabilized/oil            = list(TECHWEB_POINT_TYPE_GENERIC = 3500),
 	/obj/item/slimecross/stabilized/black          = list(TECHWEB_POINT_TYPE_GENERIC = 3500),
 	/obj/item/slimecross/stabilized/lightpink      = list(TECHWEB_POINT_TYPE_GENERIC = 3500),
-	/obj/item/slimecross/stabilized/adamantine     = list(TECHWEB_POINT_TYPE_GENERIC = 3500),
+	/obj/item/slimecross/stabilized/saturnite     = list(TECHWEB_POINT_TYPE_GENERIC = 3500),
 	/obj/item/slimecross/stabilized/rainbow        = list(TECHWEB_POINT_TYPE_GENERIC = 3750),
 		//  Industrial -    Crossbreading Cores!    - (Metal Cores)
 	/obj/item/slimecross/industrial/grey           = list(TECHWEB_POINT_TYPE_GENERIC = 2000),
@@ -168,7 +168,7 @@ SUBSYSTEM_DEF(research)
 	/obj/item/slimecross/industrial/oil            = list(TECHWEB_POINT_TYPE_GENERIC = 3500),
 	/obj/item/slimecross/industrial/black          = list(TECHWEB_POINT_TYPE_GENERIC = 3500),
 	/obj/item/slimecross/industrial/lightpink      = list(TECHWEB_POINT_TYPE_GENERIC = 3500),
-	/obj/item/slimecross/industrial/adamantine     = list(TECHWEB_POINT_TYPE_GENERIC = 3500),
+	/obj/item/slimecross/industrial/saturnite     = list(TECHWEB_POINT_TYPE_GENERIC = 3500),
 	/obj/item/slimecross/industrial/rainbow        = list(TECHWEB_POINT_TYPE_GENERIC = 3750),
 		//  Charged -    Crossbreading Cores!    - (Yellow Cores)
 	/obj/item/slimecross/charged/grey              = list(TECHWEB_POINT_TYPE_GENERIC = 2250),
@@ -191,7 +191,7 @@ SUBSYSTEM_DEF(research)
 	/obj/item/slimecross/charged/oil               = list(TECHWEB_POINT_TYPE_GENERIC = 3750),
 	/obj/item/slimecross/charged/black             = list(TECHWEB_POINT_TYPE_GENERIC = 3750),
 	/obj/item/slimecross/charged/lightpink         = list(TECHWEB_POINT_TYPE_GENERIC = 3750),
-	/obj/item/slimecross/charged/adamantine        = list(TECHWEB_POINT_TYPE_GENERIC = 3750),
+	/obj/item/slimecross/charged/saturnite        = list(TECHWEB_POINT_TYPE_GENERIC = 3750),
 	/obj/item/slimecross/charged/rainbow           = list(TECHWEB_POINT_TYPE_GENERIC = 4000),
 			//  Selfsustaining -    Crossbreading Cores!    - (Dark Purple Cores)
 	/obj/item/slimecross/selfsustaining/grey       = list(TECHWEB_POINT_TYPE_GENERIC = 2250),
@@ -214,7 +214,7 @@ SUBSYSTEM_DEF(research)
 	/obj/item/slimecross/selfsustaining/oil        = list(TECHWEB_POINT_TYPE_GENERIC = 3750),
 	/obj/item/slimecross/selfsustaining/black      = list(TECHWEB_POINT_TYPE_GENERIC = 3750),
 	/obj/item/slimecross/selfsustaining/lightpink  = list(TECHWEB_POINT_TYPE_GENERIC = 3750),
-	/obj/item/slimecross/selfsustaining/adamantine = list(TECHWEB_POINT_TYPE_GENERIC = 3750),
+	/obj/item/slimecross/selfsustaining/saturnite = list(TECHWEB_POINT_TYPE_GENERIC = 3750),
 	/obj/item/slimecross/selfsustaining/rainbow    = list(TECHWEB_POINT_TYPE_GENERIC = 4000),
 			//  Consuming -    Crossbreading Cores!    - (Sliver Cores)
 	/obj/item/slimecross/consuming/grey            = list(TECHWEB_POINT_TYPE_GENERIC = 2250),
@@ -237,7 +237,7 @@ SUBSYSTEM_DEF(research)
 	/obj/item/slimecross/consuming/oil             = list(TECHWEB_POINT_TYPE_GENERIC = 3750),
 	/obj/item/slimecross/consuming/black           = list(TECHWEB_POINT_TYPE_GENERIC = 3750),
 	/obj/item/slimecross/consuming/lightpink       = list(TECHWEB_POINT_TYPE_GENERIC = 3750),
-	/obj/item/slimecross/consuming/adamantine      = list(TECHWEB_POINT_TYPE_GENERIC = 3750),
+	/obj/item/slimecross/consuming/saturnite      = list(TECHWEB_POINT_TYPE_GENERIC = 3750),
 	/obj/item/slimecross/consuming/rainbow         = list(TECHWEB_POINT_TYPE_GENERIC = 4000),
 		//  Prismatic -    Crossbreading Cores!    - (Pyrite Cores)
 	/obj/item/slimecross/prismatic/grey            = list(TECHWEB_POINT_TYPE_GENERIC = 2500),
@@ -260,7 +260,7 @@ SUBSYSTEM_DEF(research)
 	/obj/item/slimecross/prismatic/oil             = list(TECHWEB_POINT_TYPE_GENERIC = 4000),
 	/obj/item/slimecross/prismatic/black           = list(TECHWEB_POINT_TYPE_GENERIC = 4000),
 	/obj/item/slimecross/prismatic/lightpink       = list(TECHWEB_POINT_TYPE_GENERIC = 4000),
-	/obj/item/slimecross/prismatic/adamantine      = list(TECHWEB_POINT_TYPE_GENERIC = 4000),
+	/obj/item/slimecross/prismatic/saturnite      = list(TECHWEB_POINT_TYPE_GENERIC = 4000),
 	/obj/item/slimecross/prismatic/rainbow         = list(TECHWEB_POINT_TYPE_GENERIC = 4250),
 		//  Recurring -    Crossbreading Cores!    - (Cerulean Cores)
 	/obj/item/slimecross/recurring/grey            = list(TECHWEB_POINT_TYPE_GENERIC = 2500),
@@ -283,7 +283,7 @@ SUBSYSTEM_DEF(research)
 	/obj/item/slimecross/recurring/oil             = list(TECHWEB_POINT_TYPE_GENERIC = 4000),
 	/obj/item/slimecross/recurring/black           = list(TECHWEB_POINT_TYPE_GENERIC = 4000),
 	/obj/item/slimecross/recurring/lightpink       = list(TECHWEB_POINT_TYPE_GENERIC = 4000),
-	/obj/item/slimecross/recurring/adamantine      = list(TECHWEB_POINT_TYPE_GENERIC = 4000),
+	/obj/item/slimecross/recurring/saturnite      = list(TECHWEB_POINT_TYPE_GENERIC = 4000),
 	/obj/item/slimecross/recurring/rainbow         = list(TECHWEB_POINT_TYPE_GENERIC = 4250)
 	)
 	var/list/errored_datums = list()

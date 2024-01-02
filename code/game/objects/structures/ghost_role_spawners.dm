@@ -208,12 +208,12 @@
 	job_description = "Servant Golem"
 
 
-/obj/effect/mob_spawn/human/golem/adamantine
+/obj/effect/mob_spawn/human/golem/saturnite
 	name = "dust-caked free golem shell"
 	desc = "A humanoid shape, empty, lifeless, and full of potential."
 	mob_name = "a free golem"
 	can_transfer = FALSE
-	mob_species = /datum/species/golem/adamantine
+	mob_species = /datum/species/golem/saturnite
 
 //Malfunctioning cryostasis sleepers: Spawns in makeshift shelters in lavaland. Ghosts become hermits with knowledge of how they got to where they are now.
 /obj/effect/mob_spawn/human/hermit

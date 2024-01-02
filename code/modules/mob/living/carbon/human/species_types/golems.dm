@@ -5,7 +5,7 @@
 	species_traits = list(NOBLOOD,MUTCOLORS,NO_UNDERWEAR,NOGENITALS,NOAROUSAL)
 	inherent_traits = list(TRAIT_RESISTHEAT,TRAIT_NOBREATH,TRAIT_RESISTCOLD,TRAIT_RESISTHIGHPRESSURE,TRAIT_RESISTLOWPRESSURE,TRAIT_NOFIRE,TRAIT_CHUNKYFINGERS,TRAIT_RADIMMUNE,TRAIT_PIERCEIMMUNE,TRAIT_NODISMEMBER)
 	inherent_biotypes = MOB_HUMANOID|MOB_MINERAL
-	mutant_organs = list(/obj/item/organ/adamantine_resonator)
+	mutant_organs = list(/obj/item/organ/saturnite_resonator)
 	speedmod = 2
 	armor = 55
 	siemens_coeff = 0
@@ -69,21 +69,21 @@
 	H.set_species(golem_type)
 	to_chat(H, "[initial(golem_type.info_text)]")
 
-/datum/species/golem/adamantine
-	name = "Adamantine Golem"
-	id = "adamantine golem"
-	meat = /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/golem/adamantine
-	mutant_organs = list(/obj/item/organ/adamantine_resonator, /obj/item/organ/vocal_cords/adamantine)
+/datum/species/golem/saturnite
+	name = "Saturnite Golem"
+	id = "saturnite golem"
+	meat = /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/golem/saturnite
+	mutant_organs = list(/obj/item/organ/saturnite_resonator, /obj/item/organ/vocal_cords/saturnite)
 	fixed_mut_color = "4ed"
-	info_text = "As an <span class='danger'>Adamantine Golem</span>, you possess special vocal cords allowing you to \"resonate\" messages to all golems. Your unique mineral makeup makes you immune to most types of magic."
-	prefix = "Adamantine"
+	info_text = "As an <span class='danger'>Saturnite Golem</span>, you possess special vocal cords allowing you to \"resonate\" messages to all golems. Your unique mineral makeup makes you immune to most types of magic."
+	prefix = "Saturnite"
 	special_names = null
 
-/datum/species/golem/adamantine/on_species_gain(mob/living/carbon/C, datum/species/old_species)
+/datum/species/golem/saturnite/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	..()
 	ADD_TRAIT(C, TRAIT_ANTIMAGIC, SPECIES_TRAIT)
 
-/datum/species/golem/adamantine/on_species_loss(mob/living/carbon/C)
+/datum/species/golem/saturnite/on_species_loss(mob/living/carbon/C)
 	REMOVE_TRAIT(C, TRAIT_ANTIMAGIC, SPECIES_TRAIT)
 	..()
 

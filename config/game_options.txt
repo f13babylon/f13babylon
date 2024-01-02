@@ -462,7 +462,7 @@ ROUNDSTART_RACES dwarf
 ## Races that are better than humans in some ways, but worse in others
 #ROUNDSTART_RACES jelly
 #ROUNDSTART_RACES golem
-#ROUNDSTART_RACES adamantine
+#ROUNDSTART_RACES saturnite
 #ROUNDSTART_RACES plasma
 #ROUNDSTART_RACES diamond
 #ROUNDSTART_RACES gold

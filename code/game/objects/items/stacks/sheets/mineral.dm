@@ -12,7 +12,7 @@ Mineral Sheets
 		- Titanium
 		- Plastitanium
 	Others:
-		- Adamantine
+		- saturnite
 		- Mythril
 		- Snow
 		- Abductor
@@ -337,24 +337,23 @@ GLOBAL_LIST_INIT(plastitanium_recipes, list ( \
 /****************************** Others ****************************/
 
 /*
- * Adamantine
+ * saturnite
  */
-GLOBAL_LIST_INIT(adamantine_recipes, list(
-	new /datum/stack_recipe("incomplete servant golem shell", /obj/item/golem_shell/servant, req_amount=1, res_amount=1),
-	new/datum/stack_recipe("adamant ingot", /obj/item/ingot/adamantine, 6, time = 100), \
+GLOBAL_LIST_INIT(saturnite_recipes, list(
+	new/datum/stack_recipe("saturnite ingot", /obj/item/ingot/saturnite, 6, time = 100), \
 	))
 
-/obj/item/stack/sheet/mineral/adamantine
-	name = "adamantine"
+/obj/item/stack/sheet/mineral/saturnite
+	name = "saturnite"
 	icon_state = "sheet-adamantine"
 	item_state = "sheet-adamantine"
-	singular_name = "adamantine sheet"
-	custom_materials = list(/datum/material/adamantine=MINERAL_MATERIAL_AMOUNT)
-	merge_type = /obj/item/stack/sheet/mineral/adamantine
+	singular_name = "saturnite sheet"
+	custom_materials = list(/datum/material/saturnite=MINERAL_MATERIAL_AMOUNT)
+	merge_type = /obj/item/stack/sheet/mineral/saturnite
 
-/obj/item/stack/sheet/mineral/adamantine/get_main_recipes()
+/obj/item/stack/sheet/mineral/saturnite/get_main_recipes()
 	. = ..()
-	. += GLOB.adamantine_recipes
+	. += GLOB.saturnite_recipes
 
 /*
  * Runite

@@ -581,7 +581,7 @@ Senior Scribe
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/aer9/recharger = 1,
 		/obj/item/stock_parts/cell/ammo/breeder = 2,
-		/obj/item/book/granter/crafting_recipe/blueprint/marksman = 1,,
+		/obj/item/book/granter/crafting_recipe/blueprint/marksman = 1,
 		/obj/item/book/granter/crafting_recipe/gunsmith_three=1,
 		/obj/item/book/granter/crafting_recipe/gunsmith_four=1,
 		/obj/item/book/granter/trait/explosives_advanced = 1

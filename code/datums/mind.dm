@@ -57,7 +57,7 @@
 	var/hasSoul = TRUE // If false, renders the character unable to sell their soul.
 	var/isholy = FALSE //is this person a chaplain or admin role allowed to use bibles
 
-	var/mob/living/enslaved_to //If this mind's master is another mob (i.e. adamantine golems)
+	var/mob/living/enslaved_to //If this mind's master is another mob (i.e. saturnite golems)
 	var/datum/language_holder/language_holder
 	var/unconvertable = FALSE
 	var/late_joiner = FALSE
