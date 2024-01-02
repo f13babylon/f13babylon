@@ -159,7 +159,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	supereffective_damage = 15
 
 //////////
-// 5 MM	//		- 5mm: Low-medium damage, Low-medium wound bonus, Extra AP
+// 5 MM	//		- 5mm: Low-medium damage, Low-medium wound bonus, High AP
 //////////
 
 /obj/item/projectile/bullet/a5mm
