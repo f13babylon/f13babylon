@@ -167,6 +167,7 @@
 	materials = list(/datum/material/iron = 18000, /datum/material/blackpowder = 1000)
 	build_path = /obj/item/ammo_box/a762mmbox/sport
 	category = list("initial", "Simple Ammo")
+
 /* --Tier 2 Ammo And Magazines-- */
 //Tier 2 Magazines
 /datum/design/ammolathe/m45expmagazine
