@@ -256,8 +256,8 @@
 	mag_type = /obj/item/ammo_box/magazine/msmg9mm
 	fire_delay = 2
 	autofire_shot_delay = 1
+	slowdown = 0.1
 	spread = 20
-	extra_damage = -2	//14 DAM
 	recoil = 0.8
 
 //MP5			Keywords: 9mm, Suppressed, Dual-wieldable on semi-auto, AP, Accurate, 32/50 Rounds, Normal, High-mid tier
@@ -269,6 +269,7 @@
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 	mag_type = /obj/item/ammo_box/magazine/msmg9mm
 	spread = 6
+	extra_damage = 5	//20 DAM
 	extra_penetration = 0.2	//20% AP
 	suppressed = TRUE
 	can_unsuppress = FALSE
