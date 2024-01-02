@@ -128,9 +128,9 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/c9mm
 	name = "9mm FMJ bullet"
-	damage = 16
+	damage = 15
 	wound_bonus = 10
-	var/dmg_dropoff_per_tile = 16 * 0.5 / 10	//In 10 tiles (roughly a screen and half away), it will lose half of its initial damage
+	var/dmg_dropoff_per_tile = 15 * 0.5 / 10	//In 10 tiles (roughly a screen and half away), it will lose half of its initial damage
 	var/stam_dropoff_per_tile = 0 * 0.5 / 10	//In 10 tiles (roughly a screen and half away), it will lose half of its initial stam damage
 
 /obj/item/projectile/bullet/c9mm/Range()
