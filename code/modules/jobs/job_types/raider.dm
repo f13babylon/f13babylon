@@ -10,7 +10,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	access = list(ACCESS_RAIDER)
 	minimal_access = list(ACCESS_RAIDER)
 	exp_requirements = 0
-	exp_type = EXP_TYPE_OUTLAW
+	exp_type = EXP_TYPE_WASTELAND
 
 /datum/job/raider/f13raider
 	title = "Raider"
