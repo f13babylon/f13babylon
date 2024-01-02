@@ -332,7 +332,6 @@
 	slowdown = 0.3
 	spread = 16
 	extra_damage = -5		//15 DAM
-	extra_penetration = -0.1	//30% AP
 
 //14mm SMG 			Keywords: 14mm, AP, 21/27 rounds, Bulky, Superhigh tier
 /obj/item/gun/ballistic/automatic/smg/smg14mm
