@@ -442,7 +442,7 @@
 //Marksman carbine			Keywords: 5.56mm, Semi-auto, 20 (10-50) round magazine, Small scope
 /obj/item/gun/ballistic/automatic/marksman
 	name = "marksman carbine"
-	desc = "A semi-automatic Colt R91 rifle that has been especially modified for paratrooper marksmen. It's been fitted with a precision stock and a West-Tek combat gunsight. Chambered in 5.56mm."
+	desc = "A semi-automatic Colt R91 rifle that was specially modified for paratrooper marksmen. It's been fitted with a precision stock and a West-Tek combat gunsight. Chambered in 5.56mm."
 	icon = 'icons/obj/guns/gunfruits2022/rifles.dmi'
 	icon_state = "marksman_carbine"
 	item_state = "marksman"
@@ -696,7 +696,7 @@
 //R91		Keywords: 5.56mm, 10/20/30/50 Rounds, High tier
 /obj/item/gun/ballistic/automatic/assault_rifle/r91
 	name = "assault rifle"
-	desc = "A pre-war Colt R91 rifle made for the U.S. National Guard, famous for being reliable and lightweight. It holds its own in any fight, even today. Chambered in 5.56mm."
+	desc = "A pre-war R91 rifle manufactured for the U.S. National Guard by Stent Security Solutions. It holds its own in any fight, even today. Chambered in 5.56mm."
 	icon_state = "r91"
 	item_state = "r91"
 	fire_sound = 'sound/f13weapons/assault_rifle.ogg'
@@ -705,7 +705,7 @@
 //Infiltrator		Keywords: 5.56mm, Suppressed, Medium Scope, AP, Accurate, 10/20/30/50 Rounds, Unique tier
 /obj/item/gun/ballistic/automatic/assault_rifle/r91/infiltrator
 	name = "\improper Infiltrator"
-	desc = "An especially tuned and modified Colt R91 rifle manufactured by Stent Security Solutions. The name's Plissken. Chambered in 5.56mm."
+	desc = "An especially tuned and modified R91 rifle manufactured by Stent Security Solutions. The name's Plissken. Chambered in 5.56mm."
 	icon_state = "infiltrator"
 	item_state = "infiltrator"
 	fire_sound = 'sound/f13weapons/infiltrator.ogg'
@@ -722,7 +722,7 @@
 //AK-112		Keywords: 5mm, 30/50 Rounds, High-mid tier
 /obj/item/gun/ballistic/automatic/assault_rifle/ak112
 	name = "cheap assault rifle"
-	desc = "A Kalashnikov AK-112 rifle manufactured by Colt with designs imported from the Soviet Union. It was replaced by the Colt R91 in the U.S. Army before the war, and then replaced with the service rifle in the NCR after the war. Chambered in 5mm."
+	desc = "An AK-112 assault rifle manufactured by Colt with designs imported from the Soviet Union. It was replaced by the Colt R91 in U.S. Army service before the war. Chambered in 5mm."
 	icon_state = "ak112"
 	item_state = "handmade_rifle"
 	fire_sound = 'sound/f13weapons/chinese_assault_rifle.ogg'
@@ -779,8 +779,8 @@
 
 //FAL		Keywords: 7.62mm, 10/20 Rounds, Superhigh tier
 /obj/item/gun/ballistic/automatic/assault_rifle/fal
-	name = "belgian battle rifle"
-	desc = "An uniquely powerful pre-war FAL 50.63 battle rifle developed by FN Herstal. Fitted with a shorter barrel and a lightweight folding stock (that is unfortunately stuck), intended to be used by paratroopers across the European Commonwealth. Chambered in 7.62mm."
+	name = "automatic battle rifle"
+	desc = "A uniquely powerful pre-war FAL PARA battle rifle developed by FN Herstal. The shorter barrel and lightweight polymer furniture made it ideal for paratroopers across the European Commonwealth. Chambered in 7.62mm."
 	icon_state = "fal"
 	item_state = "fal"
 	fire_sound = 'sound/f13weapons/762assault_rifle.ogg'
@@ -852,7 +852,7 @@
 //Colt Monitor		Keywords: 7.62mm, AP, Extra Projectile Speed, Medium Scope, Accurate, 10/20 Rounds, Heavy Gunner Exclusive
 /obj/item/gun/ballistic/automatic/lmg/monitor
 	name = "heavy battle rifle"
-	desc = "An especially modified pre-war machine gun made for the Federal Bureau of Investigation, built on the famous BAR platform with an added pistol grip and a Cutts recoil compensator. This one has a West-Tek optical gunsight mounted to it's receiver for optimal accuracy. Chambered in 7.62mm."
+	desc = "An especially modified pre-war machine gun made for law enforcement, built on the famous BAR platform with an added pistol grip and a Cutts recoil compensator. This one has a West-Tek optical gunsight mounted. Chambered in 7.62mm."
 	icon = 'icons/fallout/objects/guns/bar.dmi'
 	icon_state = "monitor"
 	item_state = "monitor"
