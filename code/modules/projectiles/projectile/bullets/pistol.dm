@@ -193,13 +193,12 @@ Uranium, Contaminated
 
 ///////////
 // 10 MM //
-///////////				-Medium round, wounding focus, guns in 10mm should have lower capacity
+///////////				-Medium round, wounding focus
 
 /obj/item/projectile/bullet/c10mm
 	name = "10mm FMJ bullet"
 	damage = 20
-	wound_bonus = 24
-	armour_penetration = 0.05
+	wound_bonus = 25
 	var/dmg_dropoff_per_tile = 20 * 0.25 / 10	//In 10 tiles (roughly a screen and half away), it will lose a quarter of its initial damage
 	var/stam_dropoff_per_tile = 0 * 0.25 / 10	//In 10 tiles (roughly a screen and half away), it will lose a quarter of its initial stam damage
 
@@ -215,8 +214,7 @@ Uranium, Contaminated
 /obj/item/projectile/bullet/c10mm/simple
 	name = "10mm FMJ bullet"
 	damage = 20
-	armour_penetration = 0.1
-	wound_bonus = 24
+	wound_bonus = 25
 	dmg_dropoff_per_tile = 0
 
 /obj/item/projectile/bullet/c10mm/incendiary
