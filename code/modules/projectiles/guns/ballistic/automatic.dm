@@ -348,8 +348,9 @@
 	autofire_shot_delay = 3
 	slowdown = 0.4
 	spread = 12
-	recoil = 0.85
-	extra_penetration = 0.05	//5% AP
+	recoil = 0.8
+	extra_damage = -7			//25 DAM
+	extra_penetration = 0.20	//20% AP
 
 ////////////////////
 //SEMI-AUTO RIFLES//
