@@ -161,13 +161,6 @@
 	materials = list(/datum/material/iron = 18000, /datum/material/blackpowder = 1000)
 	category = list("initial", "Simple Ammo")
 
-/datum/design/ammolathe/a223
-	name = ".223 ammo box"
-	id = "a223box"
-	build_path = /obj/item/ammo_box/a556mmbox/sport
-	materials = list(/datum/material/iron = 18000, /datum/material/blackpowder = 1000)
-	category = list("initial", "Simple Ammo")
-
 /datum/design/ammolathe/a308box
 	name = ".308 ammo box"
 	id = "a308box"
