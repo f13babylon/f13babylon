@@ -165,7 +165,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 /obj/item/projectile/bullet/a5mm
 	damage = 20
 	wound_bonus = 15
-	armour_penetration = 0.3
+	armour_penetration = 0.4
 	supereffective_damage = 15
 	supereffective_faction = list("wastebot")
 
