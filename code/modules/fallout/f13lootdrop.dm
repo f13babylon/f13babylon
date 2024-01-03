@@ -901,15 +901,15 @@
 				/obj/effect/spawner/bundle/f13/smg10mm,
 				/obj/effect/spawner/bundle/f13/auto5,
 				/obj/effect/spawner/bundle/f13/m1garand,
-				/obj/effect/spawner/bundle/f13/automag,
-				/obj/effect/spawner/bundle/f13/deagle,
-				/obj/effect/spawner/bundle/f13/hunting,
 	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/highmid
 	name = "high-mid tier ballistic gun"
 	icon_state = "gunhighmid_loot"
 	loot = list(
+				/obj/effect/spawner/bundle/f13/automag,
+				/obj/effect/spawner/bundle/f13/deagle,
+				/obj/effect/spawner/bundle/f13/hunting,
 				/obj/effect/spawner/bundle/f13/uzi,
 				/obj/effect/spawner/bundle/f13/mp5,
 				/obj/effect/spawner/bundle/f13/thompson,
