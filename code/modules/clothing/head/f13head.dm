@@ -516,17 +516,17 @@
 	icon_state = "APAmk2"
 	item_state = "APAmk2"
 	slowdown = 0.1
-	armor = list("melee" = 80, "bullet" = 70, "laser" = 70, "energy" = 70, "bomb" = 70, "bio" = 100, "rad" = 100, "fire" = 70, "acid" = 50, "wound" = 50)
+	armor = list("melee" = 70, "bullet" = 70, "laser" = 65, "energy" = 40, "bomb" = 65, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 40, "wound" = 50)
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 	salvaged_type = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/x02
 
 /obj/item/clothing/head/helmet/f13/power_armor/tesla
 	name = "APA-T Mk II helmet"
 	desc = "The Enclave Mark II Powered Combat Armor helmet, rigged with heavy electronics."
-	icon_state = "x-01tesla"
-	item_state = "x-01tesla"
+	icon_state = "apamk2_tesla"
+	item_state = "apamk2_tesla"
 	slowdown = 0.1
-	armor = list("melee" = 75, "bullet" = 75, "laser" = 95, "energy" = 95, "bomb" = 70, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 50)
+	armor = list("melee" = 70, "bullet" = 70, "laser" = 80, "energy" = 80, "bomb" = 70, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 50)
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 
 /obj/item/clothing/head/helmet/f13/power_armor/x02helmet/eastcoast

@@ -750,8 +750,8 @@
 /obj/item/clothing/suit/armor/f13/power_armor/tesla
 	name = "APA-T Mk II"
 	desc = "Upgraded pre-war power armor used by the Enclave, rigged with heavy electronics."
-	icon_state = "x-01tesla"
-	item_state = "x-01tesla"
+	icon_state = "APAmk2_tesla"
+	item_state = "APAmk2_tesla"
 	slowdown = 0.25
 	armor = list("melee" = 70, "bullet" = 70, "laser" = 80, "energy" = 80, "bomb" = 70, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 50)	//T-51 with better laser and bomb
 	//var/hit_reflect_chance = 35	- Nah
