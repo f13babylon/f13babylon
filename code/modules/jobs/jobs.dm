@@ -232,18 +232,10 @@ GLOBAL_LIST_INIT(vault_positions, list(
 GLOBAL_LIST_INIT(wasteland_positions, list(
 	"Vigilante",
 	"Wastelander",
-))
-
-GLOBAL_LIST_INIT(tribal_positions, list(
-	"Tribal",
-	"Tribal Hunter",
-	"Tribal Gatherer",
-	"Tribal Shaman",
-))
-
-GLOBAL_LIST_INIT(outlaw_positions, list(
 	"Raider",
+	"Tribal",
 ))
+
 
 GLOBAL_LIST_INIT(khan_positions, list(
 	"Khan Senior Enforcer",
@@ -285,16 +277,14 @@ GLOBAL_LIST_INIT(followers_positions, list(
 
 // job categories for rendering the late join menu
 GLOBAL_LIST_INIT(position_categories, list(
+	EXP_TYPE_WASTELAND = list("jobs" = wasteland_positions, "color" = "#5a5a5a"),
+	EXP_TYPE_BIGHORN = list("jobs" = bighorn_positions, "color" = "#d7b088"),
 	EXP_TYPE_NCR = list("jobs" = ncr_positions, "color" = "#ffeeaa"),
 	EXP_TYPE_FOLLOWERS = list("jobs" = followers_positions, "color" = "#ffeeaa"),
-	EXP_TYPE_BROTHERHOOD = list("jobs" = brotherhood_positions, "color" = "#95a5a6"),
 	EXP_TYPE_LEGION = list("jobs" = legion_positions, "color" = "#f81717"),
-	EXP_TYPE_WASTELAND = list("jobs" = wasteland_positions, "color" = "#5a5a5a"),
-	EXP_TYPE_TRIBAL = list("jobs" = tribal_positions, "color" = "#825b73"),
-	EXP_TYPE_OUTLAW = list("jobs" = outlaw_positions, "color" = "#db3529"),
-	EXP_TYPE_ENCLAVE = list("jobs" = enclave_positions, "color" = "#434944"),
 	EXP_TYPE_KHAN = list("jobs" = khan_positions, "color" = "#006666"),
-	EXP_TYPE_BIGHORN = list("jobs" = bighorn_positions, "color" = "#d7b088"),
+	EXP_TYPE_BROTHERHOOD = list("jobs" = brotherhood_positions, "color" = "#95a5a6"),
+	EXP_TYPE_ENCLAVE = list("jobs" = enclave_positions, "color" = "#434944"),
 ))
 
 GLOBAL_LIST_INIT(exp_jobsmap, list(
@@ -308,10 +298,8 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_SILICON = list("titles" = list("AI","Cyborg")),
 	EXP_TYPE_SERVICE = list("titles" = civilian_positions),
 
-	EXP_TYPE_FALLOUT = list("titles" = brotherhood_positions | bighorn_positions | legion_positions | khan_positions | ncr_positions | vault_positions | wasteland_positions | tribal_positions | outlaw_positions | followers_positions | enclave_positions),
+	EXP_TYPE_FALLOUT = list("titles" = brotherhood_positions | bighorn_positions | legion_positions | khan_positions | ncr_positions | vault_positions | wasteland_positions | followers_positions | enclave_positions),
 
-	EXP_TYPE_OUTLAW = list("titles" = outlaw_positions),
-	EXP_TYPE_TRIBAL = list("titles" = tribal_positions),
 	EXP_TYPE_BROTHERHOOD = list("titles" = brotherhood_positions),
 	EXP_TYPE_BIGHORN = list("titles" = bighorn_positions),
 	EXP_TYPE_LEGION = list("titles" = legion_positions),

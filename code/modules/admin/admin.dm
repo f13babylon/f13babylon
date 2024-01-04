@@ -91,7 +91,8 @@
 		source = LOGSRC_CLIENT
 	body += "<a href='?src=[ref];individuallog=[ref_mob];log_src=[source]'>LOGS</a>\] <br>"
 
-	body += "<b>Mob type</b> = [M.type]<br><br>"
+	body += "<b>Mob type</b> = [M.type]<br>"
+	body += "<a href='?src=[ref];removeProfilePic=[ref_mob]'>Remove Profile Picture</a><br><br>" // Coyote change here! Added removing pfp to the player panel <3
 
 	body += "<a href='?src=[ref];boot2=[ref_mob]'>Kick</A> | "
 	body += "<a href='?src=[ref];newban=[ref_mob]'>Ban</A> | "
@@ -124,6 +125,17 @@
 			<a href='?src=[ref];mute=[M.ckey];mute_type=[MUTE_DEADCHAT]'><font color='[(muted & MUTE_DEADCHAT) ? "#ff5e5e" : "white"]'>DEADCHAT</font></a>
 			(<a href='?src=[ref];mute=[M.ckey];mute_type=[MUTE_ALL]'><font color='[(muted & MUTE_ALL) ? "#ff5e5e" : "white"]'>ALL</font></a>)
 		"}
+
+	if(M.client)
+		var/verified = M.client.prefs.age_verified
+		if(verified)
+			body += {"<br><b>Age Verification: </b>
+					<a href='?src=[ref];verify=[M.ckey]'><font color='[(verified) ? "#ff5e5e" : "#5e84ff"]'>Unverify</font></a>
+					"}
+		else
+			body += {"<br><b>Age Verification: </b>
+					<a href='?src=[ref];verify=[M.ckey]'><font color='[(verified) ? "#ff5e5e" : "#5e84ff"]'>Verify</font></a>
+					"}
 
 	body += {"
 		<br><br>

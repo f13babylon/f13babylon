@@ -439,7 +439,7 @@
 	dir = 1
 	},
 /obj/item/clothing/head/helmet/f13/combat/enclave,
-/obj/item/clothing/suit/armor/f13/combat/mk2/enclave,
+/obj/item/clothing/suit/armor/f13/combat/enclave
 /obj/item/clothing/suit/armor/f13/combat/swat,
 /obj/item/clothing/suit/armor/f13/enclave/armorvest,
 /obj/item/clothing/suit/armor/f13/kit,

@@ -7,7 +7,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	selection_color = "#825b73"
 	department_flag = TRIBAL
 	faction = FACTION_TRIBAL
-	exp_type = EXP_TYPE_TRIBAL
+	exp_type = EXP_TYPE_WASTELAND
 	access = list(ACCESS_TRIBE)
 	blacklisted_quirks = list(/datum/quirk/herbal_affinity)
 	social_faction = "Tribal"

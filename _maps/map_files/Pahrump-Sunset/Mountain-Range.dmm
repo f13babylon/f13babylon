@@ -857,7 +857,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/item/clothing/suit/armor/f13/combat/mk2/enclave,
+/obj/item/clothing/suit/armor/f13/combat/enclave,
 /obj/item/clothing/head/helmet/f13/combat/enclave,
 /obj/item/storage/belt/military,
 /obj/effect/turf_decal/bot,
@@ -2035,7 +2035,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/item/clothing/suit/armor/f13/combat/mk2/enclave,
+/obj/item/clothing/suit/armor/f13/combat/enclave,
 /obj/item/clothing/head/helmet/f13/combat/enclave,
 /obj/item/storage/belt/military,
 /obj/effect/turf_decal/bot,
