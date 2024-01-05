@@ -597,12 +597,6 @@
 	path = /obj/item/clothing/under/syndicate/gorka
 	cost = 2
 
-/datum/gear/uniform/mercurban
-	name = "urban mercenary uniform"
-	path = /obj/item/clothing/under/syndicate/mercurban
-	cost = 2
-
-
 //CHINA
 
 /datum/gear/uniform/chinese
