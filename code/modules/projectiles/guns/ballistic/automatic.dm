@@ -397,18 +397,11 @@
 	icon_state = "service_rifle"
 	item_state = "servicerifle"
 	mag_type = /obj/item/ammo_box/magazine/m556mm
-	slowdown = 0.15
 	fire_delay = 4
-	burst_size = 1
+	slowdown = 0.15
 	spread = 1
-	can_attachments = TRUE
-	automatic_burst_overlay = FALSE
-	semi_auto = TRUE
-	can_bayonet = TRUE
-	bayonet_state = "bayonet"
-	knife_x_offset = 22
-	knife_y_offset = 21
 	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
+	actions_types = null
 
 //Infantry Rifle		Keywords: 5mm, Semi-auto, 30/50 Rounds magazine
 /obj/item/gun/ballistic/automatic/infantry_rifle
