@@ -92,6 +92,13 @@
 	item_state = "g_suit"
 	can_adjust = FALSE
 
+/obj/item/clothing/under/syndicate/gorka
+	name = "old gorka suit"
+	desc = "An old military gorka suit."
+	icon_state = "merc_gorka"
+	item_state = "merc_gorka"
+	can_adjust = FALSE
+
 /obj/item/clothing/under/syndicate/camo/cosmetic
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
