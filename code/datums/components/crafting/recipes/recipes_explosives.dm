@@ -236,7 +236,7 @@
 	result = /obj/item/grenade/f13/he_grenade
 	category = CAT_EXPLOSIVE
 	reqs = list(
-			/obj/item/crafting/grenade_casing = 1,
+			/obj/item/stack/sheet/metal = 10,
 			/obj/item/stack/crafting/metalparts = 5,
 			/obj/item/stack/crafting/goodparts = 1,
 			/obj/item/stack/crafting/electronicparts = 1,
@@ -254,7 +254,7 @@
 	result = /obj/item/grenade/f13/frag
 	category = CAT_EXPLOSIVE
 	reqs = list(
-			/obj/item/crafting/grenade_casing = 1,
+			/obj/item/stack/sheet/metal = 10,
 			/obj/item/stack/crafting/metalparts = 2,
 			/obj/item/stack/crafting/goodparts = 1,
 			/obj/item/stack/crafting/electronicparts = 1,
@@ -272,7 +272,7 @@
 	result = /obj/item/grenade/f13/incendiary
 	category = CAT_EXPLOSIVE
 	reqs = list(
-			/obj/item/crafting/grenade_casing = 1,
+			/obj/item/stack/sheet/metal = 10,
 			/obj/item/stack/crafting/metalparts = 15,
 			/obj/item/stack/crafting/goodparts = 3,
 			/obj/item/stack/crafting/electronicparts = 5,
@@ -290,7 +290,7 @@
 	result = /obj/item/grenade/f13/stinger
 	category = CAT_EXPLOSIVE
 	reqs = list(
-			/obj/item/crafting/grenade_casing = 1,
+			/obj/item/stack/sheet/metal = 10,
 			/obj/item/stack/crafting/metalparts = 3,
 			/obj/item/stack/ore/blackpowder = 1,
 			/obj/item/stack/crafting/goodparts = 1,
@@ -307,7 +307,7 @@
 	result = /obj/item/grenade/f13/radiation
 	category = CAT_EXPLOSIVE
 	reqs = list(
-			/obj/item/crafting/grenade_casing = 1,
+			/obj/item/stack/sheet/metal = 20,
 			/obj/item/stack/crafting/metalparts = 10,
 			/obj/item/stack/crafting/goodparts = 3,
 			/obj/item/stack/crafting/electronicparts = 30,
@@ -326,7 +326,7 @@
 	result = /obj/item/grenade/flashbang
 	category = CAT_EXPLOSIVE
 	reqs = list(
-			/obj/item/crafting/grenade_casing = 1,
+			/obj/item/stack/sheet/metal = 10,
 			/obj/item/stack/crafting/metalparts = 3,
 			/obj/item/stack/crafting/goodparts = 1,
 			/obj/item/stack/crafting/electronicparts = 5,
@@ -343,7 +343,7 @@
 	result = /obj/item/grenade/smokebomb
 	category = CAT_EXPLOSIVE
 	reqs = list(
-			/obj/item/crafting/grenade_casing = 1,
+			/obj/item/stack/sheet/metal = 10,
 			/obj/item/stack/crafting/metalparts = 5,
 			/obj/item/stack/crafting/goodparts = 1,
 			/obj/item/stack/crafting/electronicparts = 5,
@@ -360,7 +360,7 @@
 	result = /obj/item/grenade/empgrenade
 	category = CAT_EXPLOSIVE
 	reqs = list(
-			/obj/item/crafting/grenade_casing = 1,
+			/obj/item/stack/sheet/metal = 20,
 			/obj/item/stack/crafting/metalparts = 10,
 			/obj/item/stack/crafting/goodparts = 3,
 			/obj/item/stack/crafting/electronicparts = 25,
