@@ -5,6 +5,7 @@
 	reqs = list(/datum/reagent/blackpowder = 50)
 	category = CAT_EXPLOSIVE
 
+/*	- Removed upon request, replaced with singaler bomb for similar usage.
 /datum/crafting_recipe/explosive/explosive_collar
 	name = "Explosive Collar"
 	result = /obj/item/electropack/shockcollar/explosive
@@ -14,6 +15,37 @@
 				/obj/item/assembly/igniter = 1,)
 	time = 120
 	category = CAT_EXPLOSIVE
+*/
+
+/datum/crafting_recipe/grenadebeaker
+	name = "Grenade Beaker"
+	result = /obj/item/reagent_containers/glass/beaker/bomb
+	time = 5
+	reqs = list(/obj/item/reagent_containers/glass/beaker = 2,
+				/obj/item/stack/cable_coil = 2
+				)
+	category = CAT_EXPLOSIVE
+	always_available = TRUE
+	blacklist = list(
+					/obj/item/reagent_containers/glass/beaker/bomb,
+					/obj/item/reagent_containers/glass/beaker/large,
+					/obj/item/reagent_containers/glass/beaker/plastic,
+					/obj/item/reagent_containers/glass/beaker/meta,
+					/obj/item/reagent_containers/glass/beaker/noreact,
+					/obj/item/reagent_containers/glass/beaker/bluespace
+					)
+
+/datum/crafting_recipe/explosive/chemical
+	name = "Chemical Grenade"
+	result = /obj/item/grenade/chem_grenade
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+				/obj/item/stack/crafting/goodparts = 6,
+				/obj/item/crafting/grenade_casing = 1,
+				/obj/item/crafting/abraxo = 1)
+	time = 30 SECONDS
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_EXPLOSIVE
+	always_available = FALSE
 
 /datum/crafting_recipe/chemical_payload
 	name = "Chemical Payload (C4)"
@@ -32,7 +64,8 @@
 /datum/crafting_recipe/explosive/c4
 	name = "Plastic Explosive"
 	result = /obj/item/grenade/plastic/c4
-	reqs = list(/datum/reagent/blackpowder = 90,
+	reqs = list(/obj/item/crafting/grenade_casing = 1,
+				/datum/reagent/blackpowder = 30,
 				/datum/reagent/nitroglycerin = 30,
 				/obj/item/stack/cable_coil = 1,
 				/obj/item/stack/crafting/metalparts = 4,
@@ -106,6 +139,16 @@
 			/obj/item/stack/f13Cash/caps = 200)
 	time = 150
 	category = CAT_EXPLOSIVE
+
+/datum/crafting_recipe/explosive/signaler_mine
+	name = "Bottlecap Signal-Activated Mine"
+	result = /obj/item/signal_bomb
+	reqs = list(/obj/item/bottlecap_mine = 1,
+				/obj/item/stack/crafting/electronicparts = 3,
+				/obj/item/stack/cable_coil = 5,
+				/obj/item/assembly/signaler = 1,
+				/obj/item/assembly/igniter = 1)
+	always_available = FALSE
 
 /datum/crafting_recipe/explosive/shrapnelmine
 	name = "Shrapnel Mine"
@@ -193,7 +236,7 @@
 	result = /obj/item/grenade/f13/he_grenade
 	category = CAT_EXPLOSIVE
 	reqs = list(
-			/obj/item/stack/sheet/metal = 10,
+			/obj/item/crafting/grenade_casing = 1,
 			/obj/item/stack/crafting/metalparts = 5,
 			/obj/item/stack/crafting/goodparts = 1,
 			/obj/item/stack/crafting/electronicparts = 1,
@@ -211,7 +254,7 @@
 	result = /obj/item/grenade/f13/frag
 	category = CAT_EXPLOSIVE
 	reqs = list(
-			/obj/item/stack/sheet/metal = 10,
+			/obj/item/crafting/grenade_casing = 1,
 			/obj/item/stack/crafting/metalparts = 2,
 			/obj/item/stack/crafting/goodparts = 1,
 			/obj/item/stack/crafting/electronicparts = 1,
@@ -229,7 +272,7 @@
 	result = /obj/item/grenade/f13/incendiary
 	category = CAT_EXPLOSIVE
 	reqs = list(
-			/obj/item/stack/sheet/metal = 20,
+			/obj/item/crafting/grenade_casing = 1,
 			/obj/item/stack/crafting/metalparts = 15,
 			/obj/item/stack/crafting/goodparts = 3,
 			/obj/item/stack/crafting/electronicparts = 5,
@@ -247,7 +290,7 @@
 	result = /obj/item/grenade/f13/stinger
 	category = CAT_EXPLOSIVE
 	reqs = list(
-			/obj/item/stack/sheet/metal = 5,
+			/obj/item/crafting/grenade_casing = 1,
 			/obj/item/stack/crafting/metalparts = 3,
 			/obj/item/stack/ore/blackpowder = 1,
 			/obj/item/stack/crafting/goodparts = 1,
@@ -264,7 +307,7 @@
 	result = /obj/item/grenade/f13/radiation
 	category = CAT_EXPLOSIVE
 	reqs = list(
-			/obj/item/stack/sheet/metal = 20,
+			/obj/item/crafting/grenade_casing = 1,
 			/obj/item/stack/crafting/metalparts = 10,
 			/obj/item/stack/crafting/goodparts = 3,
 			/obj/item/stack/crafting/electronicparts = 30,
@@ -283,7 +326,7 @@
 	result = /obj/item/grenade/flashbang
 	category = CAT_EXPLOSIVE
 	reqs = list(
-			/obj/item/stack/sheet/metal = 10,
+			/obj/item/crafting/grenade_casing = 1,
 			/obj/item/stack/crafting/metalparts = 3,
 			/obj/item/stack/crafting/goodparts = 1,
 			/obj/item/stack/crafting/electronicparts = 5,
@@ -300,7 +343,7 @@
 	result = /obj/item/grenade/smokebomb
 	category = CAT_EXPLOSIVE
 	reqs = list(
-			/obj/item/stack/sheet/metal = 10,
+			/obj/item/crafting/grenade_casing = 1,
 			/obj/item/stack/crafting/metalparts = 5,
 			/obj/item/stack/crafting/goodparts = 1,
 			/obj/item/stack/crafting/electronicparts = 5,
@@ -317,7 +360,7 @@
 	result = /obj/item/grenade/empgrenade
 	category = CAT_EXPLOSIVE
 	reqs = list(
-			/obj/item/stack/sheet/metal = 20,
+			/obj/item/crafting/grenade_casing = 1,
 			/obj/item/stack/crafting/metalparts = 10,
 			/obj/item/stack/crafting/goodparts = 3,
 			/obj/item/stack/crafting/electronicparts = 25,

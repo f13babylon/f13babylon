@@ -77,6 +77,28 @@
 	category= CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 
+/datum/crafting_recipe/throwing_knife
+	name = "Throwing Knife"
+	result = /obj/item/throwing_star/knife
+	time = 30
+	reqs = list(/obj/item/stack/sheet/cloth = 3,
+				/obj/item/stack/sheet/metal = 5)
+	tools = list(TOOL_WORKBENCH)
+	category= CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+
+/datum/crafting_recipe/tomahawk
+	name = "Tomahawk"
+	result = /obj/item/throwing_star/tomahawk
+	time = 40
+	reqs = list(/obj/item/hatchet=1,
+				/obj/item/stack/sheet/hay = 3,
+				/obj/item/stack/cable_coil = 1,
+				/obj/item/stack/sheet/metal = 5)
+	tools = list(TOOL_WORKBENCH)
+	category= CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+
 /datum/crafting_recipe/chainsaw
 	name = "Chainsaw"
 	result = /obj/item/twohanded/chainsaw
