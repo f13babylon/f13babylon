@@ -587,6 +587,16 @@
 	path = /obj/item/clothing/under/f13/desert_ranger_scout
 	cost = 2
 
+/datum/gear/uniform/mercuniform
+	name = "mercenary uniform"
+	path = /obj/item/clothing/under/syndicate/mercenary
+	cost = 2
+
+/datum/gear/uniform/mercgorka
+	name = "old gorka suit"
+	path = /obj/item/clothing/under/syndicate/gorka
+	cost = 2
+
 //CHINA
 
 /datum/gear/uniform/chinese
