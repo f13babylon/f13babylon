@@ -300,11 +300,11 @@
 						for(var/datum/wound/iter_wound in iter_bodypart.wounds)
 							switch(iter_wound.severity)
 								if(WOUND_SEVERITY_CRITICAL && added_damage_offset < 3)
-										added_damage_offset = 3
+									added_damage_offset = 3
 								if(WOUND_SEVERITY_SEVERE && added_damage_offset < 2)
-										added_damage_offset = 2
+									added_damage_offset = 2
 								if(WOUND_SEVERITY_MODERATE && added_damage_offset < 1)
-										added_damage_offset = 1
+									added_damage_offset = 1
 						M.adjustBruteLoss(-added_damage_offset * offset_multiplier, FALSE)
 						M.adjustFireLoss(-added_damage_offset * offset_multiplier * 0.75, FALSE)	//75% of added_damage_offset
 						offset_multiplier *= 0.5	//Half the offset_multipler for each wounded bodypart to keep the offset from getting too ridiculous
@@ -400,11 +400,11 @@
 						for(var/datum/wound/iter_wound in iter_bodypart.wounds)
 							switch(iter_wound.severity)
 								if(WOUND_SEVERITY_CRITICAL && added_damage_offset < 1)
-										added_damage_offset = 1
+									added_damage_offset = 1
 								if(WOUND_SEVERITY_SEVERE && added_damage_offset < 0.5)
-										added_damage_offset = 0.5
+									added_damage_offset = 0.5
 								if(WOUND_SEVERITY_MODERATE && added_damage_offset < 0.25)
-										added_damage_offset = 0.25
+									added_damage_offset = 0.25
 						M.adjustBruteLoss(-added_damage_offset * offset_multiplier, FALSE)
 						M.adjustFireLoss(-added_damage_offset * offset_multiplier * 0.75, FALSE)	//75% of added_damage_offset
 						offset_multiplier *= 0.5	//Half the offset_multipler for each wounded bodypart to keep the offset from getting too ridiculous
@@ -494,13 +494,11 @@
 						for(var/datum/wound/iter_wound in iter_bodypart.wounds)
 							switch(iter_wound.severity)
 								if(WOUND_SEVERITY_CRITICAL && added_damage_offset < 2)
-										added_damage_offset = 2
-								if(WOUND_SEVERITY_SEVERE)
-									if(added_damage_offset && added_damage_offset < 1)
-										added_damage_offset = 1
-								if(WOUND_SEVERITY_MODERATE)
-									if(added_damage_offset && added_damage_offset < 0.5)
-										added_damage_offset = 0.5
+									added_damage_offset = 2
+								if(WOUND_SEVERITY_SEVERE && added_damage_offset < 1)
+									added_damage_offset = 1
+								if(WOUND_SEVERITY_MODERATE && added_damage_offset < 0.5)
+									added_damage_offset = 0.5
 						M.adjustBruteLoss(-added_damage_offset * offset_multiplier, FALSE)
 						M.adjustFireLoss(-added_damage_offset * offset_multiplier * 0.75, FALSE)	//75% of added_damage_offset
 						offset_multiplier *= 0.5	//Half the offset_multipler for each wounded bodypart to keep the offset from getting too ridiculous
