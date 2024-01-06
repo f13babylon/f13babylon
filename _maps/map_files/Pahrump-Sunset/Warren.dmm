@@ -2532,7 +2532,7 @@
 /obj/effect/overlay/turfs/cliff{
 	pixel_y = -10
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall/rust,
 /area/f13/ncr)
 "cmg" = (
 /obj/effect/overlay/turfs/cliff/alt{
@@ -3339,7 +3339,7 @@
 	pixel_y = 7
 	},
 /obj/structure/decoration/vent/rusty,
-/turf/closed/indestructible/f13vaultrusted,
+/turf/closed/wall/rust,
 /area/f13/ncr)
 "daq" = (
 /obj/structure/barricade/sandbags,
@@ -3370,7 +3370,7 @@
 /obj/effect/overlay/turfs/cliff{
 	pixel_y = -10
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall/rust,
 /area/f13/ncr)
 "dcB" = (
 /obj/structure/fence,
@@ -5274,7 +5274,7 @@
 	dir = 1;
 	pixel_y = 7
 	},
-/turf/closed/indestructible/f13vaultrusted,
+/turf/closed/wall/rust,
 /area/f13/ncr)
 "eYb" = (
 /obj/structure/flora/grass/wasteland{
@@ -7153,7 +7153,10 @@
 	dir = 9;
 	pixel_y = -11
 	},
-/turf/closed/wall/r_wall,
+/obj/effect/overlay/turfs/cliff{
+	pixel_y = -10
+	},
+/turf/closed/wall/rust,
 /area/f13/ncr)
 "gFG" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7233,7 +7236,7 @@
 /obj/effect/overlay/turfs/cliff{
 	pixel_y = -10
 	},
-/turf/closed/indestructible/f13vaultrusted,
+/turf/closed/wall/r_wall/rust,
 /area/f13/ncr)
 "gKi" = (
 /obj/machinery/light/small{
@@ -7669,6 +7672,13 @@
 	dir = 1
 	},
 /area/f13/city)
+"heZ" = (
+/obj/effect/overlay/turfs/cliff{
+	dir = 1;
+	pixel_y = 7
+	},
+/turf/closed/wall/r_wall/rust,
+/area/f13/ncr)
 "hfM" = (
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/city)
@@ -8979,7 +8989,7 @@
 /obj/structure/barricade/tentclothcorner{
 	dir = 8
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall/rust,
 /area/f13/ncr)
 "ise" = (
 /obj/structure/flora/grass/wasteland{
@@ -9482,6 +9492,13 @@
 "iOM" = (
 /obj/structure/simple_door/room,
 /turf/open/floor/plasteel/f13/vault_floor/red/white/whiteredchess/whiteredchess2,
+/area/f13/ncr)
+"iOO" = (
+/obj/effect/overlay/turfs/cliff/alt{
+	dir = 9;
+	pixel_y = 7
+	},
+/turf/closed/wall/rust,
 /area/f13/ncr)
 "iOR" = (
 /obj/structure/table/booth,
@@ -11379,6 +11396,13 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/vault,
+/area/f13/ncr)
+"kOV" = (
+/obj/effect/overlay/turfs/cliff{
+	dir = 1;
+	pixel_y = 7
+	},
+/turf/closed/wall/rust,
 /area/f13/ncr)
 "kPe" = (
 /obj/structure/simple_door/interior,
@@ -15424,6 +15448,12 @@
 	icon_state = "horizontalbottombordertop2"
 	},
 /area/f13/wasteland/warren)
+"oHd" = (
+/obj/structure/barricade/tentclothedge{
+	pixel_y = -4
+	},
+/turf/closed/wall/rust,
+/area/f13/ncr)
 "oHQ" = (
 /obj/structure/chair/pew/left{
 	dir = 4
@@ -24126,6 +24156,18 @@
 	},
 /turf/open/floor/plasteel/vault,
 /area/f13/ncr)
+"wwK" = (
+/obj/effect/overlay/turfs/cliff{
+	dir = 1;
+	pixel_y = 7
+	},
+/obj/effect/overlay/turfs/cliff/alt{
+	dir = 10;
+	pixel_x = 7;
+	pixel_y = 29
+	},
+/turf/closed/wall/rust,
+/area/f13/ncr)
 "wxT" = (
 /obj/structure/table/booth,
 /obj/item/reagent_containers/food/condiment/saltshaker,
@@ -25790,7 +25832,7 @@
 	dir = 9;
 	pixel_y = -11
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall/rust,
 /area/f13/ncr)
 "xWz" = (
 /obj/structure/chair/bench,
@@ -46436,16 +46478,16 @@ aQW
 aQW
 aQW
 aQW
-aQW
-aQW
-aQW
-aQW
-aQW
-aQW
-aQW
-aQW
-aQW
-aQW
+jyh
+jjr
+jjr
+jjr
+jyh
+jyh
+jjr
+jjr
+jyh
+jyh
 aQW
 aQW
 aQW
@@ -59241,8 +59283,8 @@ hLa
 eWC
 eWC
 eWC
-osv
-gnU
+kOV
+oHd
 rcc
 dwA
 dsL
@@ -59498,8 +59540,8 @@ hLa
 eWC
 eWC
 eWC
-nkd
-gnU
+wwK
+oHd
 rNK
 phs
 aRc
@@ -59754,8 +59796,8 @@ hLa
 hLa
 eWC
 eWC
-kMS
-aQW
+iOO
+jjr
 irD
 djp
 vCO
@@ -60010,8 +60052,8 @@ hLa
 hLa
 hLa
 eWC
-kMS
-nkd
+iOO
+wwK
 xWx
 suF
 vFg
@@ -60267,7 +60309,7 @@ hLa
 hLa
 hLa
 eWC
-osv
+heZ
 gFz
 tWV
 wUF
@@ -61038,7 +61080,7 @@ hLa
 hLa
 hLa
 eWC
-osv
+kOV
 clF
 eWC
 eWC
@@ -61295,7 +61337,7 @@ hLa
 hLa
 hLa
 eWC
-osv
+heZ
 clF
 eWC
 eWC
@@ -61552,7 +61594,7 @@ hLa
 hLa
 hLa
 eWC
-osv
+kOV
 gJX
 whs
 nWl
@@ -61809,8 +61851,8 @@ hLa
 hLa
 hLa
 eWC
-osv
-aQW
+kOV
+jjr
 eRl
 kVS
 wBg
