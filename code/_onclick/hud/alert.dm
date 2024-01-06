@@ -509,23 +509,22 @@ or shoot a gun to move around via Newton's 3rd Law of Motion."
 
 /obj/screen/alert/nocell
 	name = "Missing Power Cell"
-	desc = "Unit has no power cell. No modules available until a power cell is reinstalled. Robotics may provide assistance."
+	desc = "Unit has no power cell. No modules available until a power cell is reinstalled."
 	icon_state = "nocell"
 
 /obj/screen/alert/emptycell
 	name = "Out of Power"
-	desc = "Unit's power cell has no charge remaining. No modules available until power cell is recharged. \
-Recharging stations are available in robotics, the dormitory bathrooms, and the AI satellite."
+	desc = "Unit's power cell has no charge remaining. No modules available until power cell is recharged."
 	icon_state = "emptycell"
 
 /obj/screen/alert/lowcell
 	name = "Low Charge"
-	desc = "Unit's power cell is running low. Recharging stations are available in robotics, the dormitory bathrooms, and the AI satellite."
+	desc = "Unit's power cell is running low. Recharge advised."
 	icon_state = "lowcell"
 
 /obj/screen/alert/etherealcharge
 	name = "Low Blood Charge"
-	desc = "Your blood's electric charge is running low, find a source of charge for your blood. Use a recharging station found in robotics or the dormitory bathrooms, or eat some Ethereal-friendly food."
+	desc = "Your blood's electric charge is running low, find a source of charge for your blood."
 	icon_state = "etherealcharge"
 
 /obj/screen/alert/ethereal_overcharge
@@ -541,8 +540,7 @@ Recharging stations are available in robotics, the dormitory bathrooms, and the 
 
 /obj/screen/alert/locked
 	name = "Locked Down"
-	desc = "Unit has been remotely locked down. Usage of a Robotics Control Console like the one in the Research Director's \
-office by your AI master or any qualified human may resolve this matter. Robotics may provide further assistance if necessary."
+	desc = "Unit has been remotely locked down. Usage of a Robotics Control Console may resolve this matter."
 	icon_state = "locked"
 
 /obj/screen/alert/newlaw
