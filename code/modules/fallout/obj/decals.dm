@@ -62,7 +62,6 @@
 
 /obj/effect/decal/riverbank
 	name = "riverbank"
-	desc = "try"
 	icon = 'icons/fallout/objects/decals.dmi'
 	icon_state = "riverbank"
 	anchored = 1
@@ -71,7 +70,6 @@
 
 /obj/effect/decal/riverbankcorner
 	name = "riverbankcorner"
-	desc = "try2"
 	icon = 'icons/fallout/objects/decals.dmi'
 	icon_state = "riverbank2"
 	anchored = 1

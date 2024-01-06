@@ -10,6 +10,7 @@
 	ammo_type = /obj/item/ammo_casing/a22
 	max_ammo = 180
 	multiple_sprites = 2
+	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/ammo_box/magazine/msmg22/empty
 	start_empty = 1

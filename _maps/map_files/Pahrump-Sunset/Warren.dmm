@@ -16470,8 +16470,8 @@
 /area/f13/city)
 "pJX" = (
 /obj/structure/table/wood/settler,
-/obj/item/ammo_box/magazine/m556/rifle,
-/obj/item/ammo_box/magazine/m556/rifle,
+/obj/item/ammo_box/magazine/m556mm,
+/obj/item/ammo_box/magazine/m556mm,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland/ncr)
 "pKl" = (
@@ -18574,7 +18574,7 @@
 "ryp" = (
 /obj/structure/closet/crate/footchest,
 /obj/item/ammo_box/c10mm/improvised,
-/obj/item/ammo_box/a556/sport/improvised,
+/obj/item/ammo_box/a556mmbox/sport,
 /obj/item/ammo_box/c38box/improvised,
 /obj/item/ammo_box/c45/improvised,
 /obj/item/ammo_box/m44box/improvised,

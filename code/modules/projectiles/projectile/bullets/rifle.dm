@@ -30,98 +30,55 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 // Balance between classes mostly done on the gun end, bigger rounds typically fire slower and have more recoil. They are not supposed to be totally equal either.
 
 
-// Explanation: Two major ammo stats, AP and Damage. Bullets placed in classes. Light rounds for example balanced with each other, one more AP, one more Damage.
-// Balance between classes mostly done on the gun end, bigger rounds typically fire slower and have more recoil. They are not supposed to be totally equal either.
-
 ////////////////////
-// 5.56 MM & .223 //
-////////////////////		- Moderate damage .223 civilian version for hunting/sport.
+// 5.56 MM & .223 //		- 5.56mm: Medium damage, Medium wound bonus
+////////////////////		- .223: Less damage, More wound bonus, More damage against simple mobs
 
-/obj/item/projectile/bullet/a556
+/obj/item/projectile/bullet/a556mm
 	name = "5.56 FMJ bullet"
-	damage = 26
-	wound_bonus = 18
-	bare_wound_bonus = 24
-	var/extra_speed = 200
+	damage = 25
+	wound_bonus = 20
 
-/obj/item/projectile/bullet/a556/match
-	name = "5.56 match bullet"
+/obj/item/projectile/bullet/a556mm/sport
+	name = ".223 bullet"
 	damage = 20
-	armour_penetration = 0.35
-	wound_bonus = 18
-	bare_wound_bonus = 0
-	extra_speed = 500
-
-/obj/item/projectile/bullet/a556/sport
-	name = ".223 FMJ bullet"
-	damage = 24
-	wound_bonus = 18
-	bare_wound_bonus = 32 //Gives a reason to actually use this round.
+	wound_bonus = 30
 	supereffective_damage = 15
 	supereffective_faction = list("hostile", "ant", "deathclaw", "cazador", "china", "gecko", "radscorpion") //5.56 being effective against the Chinese is a funny code joke that someone will look at like 4 years from now on and cry about.
 
-/obj/item/projectile/bullet/a556/microshrapnel
-	name = "5.56 microshrapnel bullet"
-	damage = 12
-	wound_bonus = 42
-	bare_wound_bonus = 62
-	wound_falloff_tile = 1.5
-	embed_falloff_tile = 0.5
-	embedding = list(embed_chance=5, fall_chance=1, jostle_chance=1, ignore_throwspeed_threshold=TRUE, pain_stam_pct=0.5, pain_mult=5, jostle_pain_mult=6, rip_time=10, embed_chance_turf_mod=100, projectile_payload = /obj/item/shrapnel/bullet/a556/microshrapnel)
+/obj/item/projectile/bullet/a556mm/simple		//for simple mobs
+	name = "5.56 FMJ bullet"
+	damage = 25
 
-/obj/item/projectile/bullet/a556/uraniumtipped
-	name = "5.56 uranium-tipped bullet"
-	damage = 24
-	armour_penetration = 0.1
-	irradiate = 50
-
-/obj/item/projectile/bullet/a556/simple //for simple mobs, separate to allow balancing
-	name = "5.56 bullet"
-	damage = 24
-
-/obj/item/projectile/bullet/a556/ap/simple //for simple mobs, separate to allow balancing
-	name = "5.56 bullet"
-	damage = 28
+/obj/item/projectile/bullet/a556mm/simple/ap	//for simple mobs
+	name = "5.56 AP bullet"
+	damage = 25
 	armour_penetration = 0.1
 
 ////////////////////
-// 7.62 MM & .308 //
-////////////////////			- heavy rifle round, powerful but high recoil and less rof in the guns that can use it. .308 civilian version for hunting.
+// 7.62 MM & .308 //		- 7.62mm: High damage, High wound bonus
+////////////////////		- .308: Less damage, More wound bonus, More damage against simple mobs
 
-/obj/item/projectile/bullet/a762
+/obj/item/projectile/bullet/a762mm
 	name = "7.62 FMJ bullet"
-	damage = 34
-	wound_bonus = 28
-	bare_wound_bonus = 24
+	damage = 35
+	wound_bonus = 30
 
-//.308 Winchester
-/obj/item/projectile/bullet/a762/sport
+/obj/item/projectile/bullet/a762mm/sport
 	name = ".308 bullet"
-	damage = 28
-	wound_bonus = 32
-	bare_wound_bonus = 32
-	supereffective_damage = 14
+	damage = 30
+	wound_bonus = 40
+	supereffective_damage = 15
 	supereffective_faction = list("hostile", "ant", "deathclaw", "cazador", "gecko", "radscorpion")
 
-/obj/item/projectile/bullet/a762/sport/simple //for simple mobs, separate to allow balancing
-	name = ".308 bullet"
-	damage = 34
-	armour_penetration = 0.2
-
-/obj/item/projectile/bullet/a762/uraniumtipped
-	name = "7.62 uranium-tipped bullet"
+/obj/item/projectile/bullet/a762mm/simple		//for simple mobs
+	name = "7.62 FMJ bullet"
 	damage = 30
-	armour_penetration = 0.2
-	irradiate = 30
 
-/obj/item/projectile/bullet/a762/microshrapnel
-	name = "7.62 microshrapnel bullet"
-	damage = 24
-	wound_bonus = 42
-	bare_wound_bonus = 62
-	wound_falloff_tile = 1.5
-	embed_falloff_tile = 0.5
-	embedding = list(embed_chance=12, fall_chance=1, jostle_chance=1, ignore_throwspeed_threshold=TRUE, pain_stam_pct=0.3, pain_mult=5, jostle_pain_mult=6, rip_time=10, embed_chance_turf_mod=100, projectile_payload = /obj/item/shrapnel/bullet/a762/microshrapnel)
+/obj/item/projectile/bullet/a762mm/simple/ap	//for simple mobs
+	name = "7.62 AP bullet"
+	damage = 30
+	armour_penetration = 0.1
 
 /////////
 // .50 //
@@ -199,102 +156,23 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	wound_bonus = 30
 	bare_wound_bonus = 40
 	stamina = 0
-//////////////////////
-// 4.73 MM CASELESS //
-//////////////////////			-Small rifle bullet
+	supereffective_damage = 15
 
-/obj/item/projectile/bullet/a473
-	name = "4.73 FMJ bullet"
-	damage = 32
-	armour_penetration = 0.1
-	wound_bonus = 8
-	bare_wound_bonus = 12
+//////////
+// 5 MM	//		- 5mm: Low-medium damage, Low-medium wound bonus, High AP
+//////////
 
-/obj/item/projectile/bullet/a473/incendiary
-	name = "4.73 tracer bullet"
-	damage = 16
-	var/fire_stacks = 3
-	zone_accuracy_factor = 100
-
-/obj/item/projectile/bullet/a473/incendiary/on_hit(atom/target, blocked = FALSE)
-	. = ..()
-	if(iscarbon(target))
-		var/mob/living/carbon/M = target
-		M.adjust_fire_stacks(fire_stacks)
-		M.IgniteMob()
-
-/obj/item/projectile/bullet/a473/uraniumtipped
-	name = "4.73 U-235 bullet"
-	damage = 12
-	armour_penetration = 0.3
-	irradiate = 30
-
-/obj/item/projectile/bullet/a473/dumdum
-	name = "4.73 flat-nose bullet"
-	damage = 5
-	supereffective_damage = 10
-	supereffective_faction = list("hostile", "ant", "supermutant", "deathclaw", "cazador", "raider", "china", "gecko", "wastebot")
-	armour_penetration = -0.2
-	wound_bonus = 20
-	bare_wound_bonus = 30
-
-/obj/item/projectile/bullet/a473/explosive
-	name = "4.73 explosive bullet"
-	damage = 6
-
-/obj/item/projectile/bullet/a473/explosive/on_hit(atom/target, blocked = FALSE)
-	..()
-	if(prob(10))
-		explosion(target, 0, 0, 1, 1, adminlog = FALSE, flame_range = 0)
-	else
-		explosion(target, 0, 0, 0, 1, adminlog = FALSE, flame_range = 1) //no boom, just flame and flash
-
-/obj/item/projectile/bullet/a473/shock
-	name = "4.73mm shock bullet"
-	damage = 22 //70% of 32
-	wound_bonus = 0
-	bare_wound_bonus = 0
-	sharpness = SHARP_NONE
-
-/obj/item/projectile/bullet/a473/shock/on_hit(atom/target, blocked = FALSE)
-	..()
-	target.emp_act(15)//5 severity is very, very low
-
-/obj/item/projectile/bullet/a473/hv
-	name = "4.73mm highvelocity bullet"
-	damage = 16
-	wound_bonus = 0
-	hitscan = TRUE
-
-//////////////////////////
-// 5 MM rifle			 //
-//////////////////////////
-
-/obj/item/projectile/bullet/a5mm  //for rifles// one of the only bullets to have integral AP
+/obj/item/projectile/bullet/a5mm
 	damage = 20
-	wound_bonus = 24
-	bare_wound_bonus = 10
-	armour_penetration = 0.45
-	var/extra_speed = 200
-	supereffective_damage = 10
-	supereffective_faction = list("hostile", "ant", "supermutant", "deathclaw", "cazador", "raider", "china", "gecko", "wastebot", "radscorpion")
+	wound_bonus = 15
+	armour_penetration = 0.4
+	supereffective_damage = 15
+	supereffective_faction = list("wastebot")
 
-/obj/item/projectile/bullet/a5mm/simple //for simple mobs, separate to allow balancing
+/obj/item/projectile/bullet/a5mm/simple		//for simple mobs
 	name = "5mm bullet"
-	damage = 19
-	armour_penetration = 0.2
-
-/obj/item/projectile/bullet/a5mm/shock
-	name = "5mm shock bullet"
-	damage = 13.3 //70% of 19
-	wound_bonus = 0
-	bare_wound_bonus = 0
-	sharpness = SHARP_NONE
-
-/obj/item/projectile/bullet/a5mm/shock/on_hit(atom/target, blocked = FALSE)
-	..()
-	target.emp_act(15)//5 severity is very, very low
-
+	damage = 20
+	armour_penetration = 0.3
 
 /////////////////////////
 //2 MM ELECTROMAGNETIC //

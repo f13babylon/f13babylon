@@ -178,7 +178,7 @@
 	scope_x_offset = 4
 	scope_y_offset = 12
 	pump_sound = 'sound/weapons/boltpump.ogg'
-	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
+	fire_sound = 'sound/f13weapons/762rifle.ogg'
 
 /obj/item/gun/ballistic/rifle/hunting/attackby(obj/item/A, mob/user, params)
 	..()
@@ -306,8 +306,8 @@
 	desc = "A simple bolt action rifle in 5.56mm calibre. Easy to use and maintain."
 	icon_state = "varmint"
 	item_state = "varmintrifle"
-	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
+	mag_type = /obj/item/ammo_box/magazine/m556mm
+	init_mag_type = /obj/item/ammo_box/magazine/m556mm/small
 	fire_delay = 4
 	extra_speed = 300
 	extra_penetration = 0.1

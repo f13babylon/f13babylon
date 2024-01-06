@@ -351,13 +351,24 @@
 	name = "grey turtleneck"
 	path = /obj/item/clothing/under/suit/turtle/grey
 	cost = 2
-/*
+
+/datum/gear/uniform/gunner
+	name = "gunner combat uniform"
+	path = /obj/item/clothing/under/f13/gunner
+	cost = 2
+
+/datum/gear/uniform/dutch
+	name = "dutch suit"
+	path = /obj/item/clothing/under/rank/civilian/dutch
+	cost = 2
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_SUITS
+
 /datum/gear/uniform/detbrown
 	name = "Brown Worn Suit"
 	path = /obj/item/clothing/under/rank/security/detective/brown
 	cost = 2
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_SUITS
-
+/*
 /datum/gear/uniform/detbrown/detbrown2
 	name = "Padded Worn Suit"
 	path = /obj/item/clothing/under/rank/security/detective/brown/brown2
@@ -565,6 +576,16 @@
 	name = "US Navy officer's jumpsuit"
 	path = /obj/item/clothing/under/f13/navy/officer
 	cost = 3
+
+/datum/gear/uniform/camogreen
+	name = "camouflage fatigues"
+	path = /obj/item/clothing/under/syndicate/camo
+	cost = 2
+
+/datum/gear/uniform/scoutclothes
+	name = "scout clothes"
+	path = /obj/item/clothing/under/f13/desert_ranger_scout
+	cost = 2
 
 //CHINA
 

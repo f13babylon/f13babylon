@@ -306,7 +306,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	suit = /obj/item/clothing/suit/armor/f13/legion/palacent
 	head = /obj/item/clothing/head/helmet/f13/legion/palacent
 	neck = /obj/item/clothing/neck/mantle/legion
-	suit_store = /obj/item/gun/ballistic/automatic/m1919
+	suit_store = /obj/item/gun/ballistic/automatic/lmg/m1919
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/mm762 = 1,
 		/obj/item/melee/onehanded/machete/spatha = 1,
@@ -403,9 +403,9 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/outfit/loadout/decvetbull
 	name = "Mark of The Bull"
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/decan
-	suit_store = /obj/item/gun/ballistic/automatic/rpd
+	suit_store = /obj/item/gun/ballistic/automatic/lmg/type88
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/rpd = 1,
+		/obj/item/ammo_box/magazine/type88 = 1,
 		/obj/item/gun/ballistic/automatic/pistol/beretta = 1,
 		/obj/item/ammo_box/magazine/m9mmds = 2,
 		/obj/item/reagent_containers/pill/patch/bitterdrink = 2
@@ -525,7 +525,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/m29 = 1,
 		/obj/item/ammo_box/m44 = 2,
-		/obj/item/ammo_box/magazine/m762 = 2,
+		/obj/item/ammo_box/magazine/m762mm = 2,
 		)
 
 
@@ -628,7 +628,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 	loadout_options = list(
 		/datum/outfit/loadout/vexbear,	//	Lever shotgun, Ripper
-		/datum/outfit/loadout/vexfox,	//	AK-112, Spatha
+		/datum/outfit/loadout/vexfox,	//	Type 93, Spatha
 		)
 
 	matchmaking_allowed = list(
@@ -682,7 +682,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/outfit/loadout/vexfox
 	name = "Desert Fox"
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/vexil
-	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine/ak112
+	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle/type93
 	backpack_contents = list(
 		/obj/item/melee/onehanded/machete/spatha = 1,
 		/obj/item/ammo_box/magazine/m5mm = 2,
@@ -766,7 +766,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	suit_store = /obj/item/gun/ballistic/rifle/hunting/remington
 	backpack_contents = list(
 		/obj/item/attachments/scope = 1,
-		/obj/item/ammo_box/a762 = 4,
+		/obj/item/ammo_box/a762mm = 4,
 		/obj/item/gun/ballistic/revolver/revolver45 = 1,
 		/obj/item/ammo_box/c45rev = 1,
 	)

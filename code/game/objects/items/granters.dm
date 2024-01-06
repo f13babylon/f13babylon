@@ -655,6 +655,7 @@
 	oneuse = TRUE
 	remarks = list()
 
+
 /obj/item/book/granter/crafting_recipe/blueprint/marksman
 	name = "marksman carbine blueprint"
 	icon_state = "blueprint2"
@@ -665,15 +666,15 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/combatcarbine)
 
-/obj/item/book/granter/crafting_recipe/blueprint/r84
-	name = "r84 lmg blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/lmg)
-
 /obj/item/book/granter/crafting_recipe/blueprint/service
 	name = "service rifle blueprint"
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/servicerifle)
+
+/obj/item/book/granter/crafting_recipe/blueprint/infantry_rifle
+	name = "infantry rifle blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/infantry_rifle)
 
 /obj/item/book/granter/crafting_recipe/blueprint/aep7
 	name = "aep7 blueprint"
@@ -716,17 +717,17 @@
 	crafting_recipe_types = list(/datum/crafting_recipe/smg10mm)
 
 /obj/item/book/granter/crafting_recipe/blueprint/uzi
-	name = "uzi blueprint"
+	name = "9mm smg blueprint"
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/uzi)
 
 /obj/item/book/granter/crafting_recipe/blueprint/mp5
-	name = "mp5 blueprint"
+	name = "silenced 9mm smg blueprint"
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/mp5)
 
 /obj/item/book/granter/crafting_recipe/blueprint/thompson
-	name = "thompson blueprint"
+	name = ".45 acp smg blueprint"
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/thompson)
 
@@ -736,9 +737,29 @@
 	crafting_recipe_types = list(/datum/crafting_recipe/brush)
 
 /obj/item/book/granter/crafting_recipe/blueprint/r91
-	name = "r91 assault rifle blueprint"
+	name = "assault rifle blueprint"
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/r91)
+
+/obj/item/book/granter/crafting_recipe/blueprint/ak112
+	name = "old assault rifle blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/ak112)
+
+/obj/item/book/granter/crafting_recipe/blueprint/type93
+	name = "chinese assault rifle blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/type93)
+
+/obj/item/book/granter/crafting_recipe/blueprint/r84
+	name = "light machine gun blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/r84)
+
+/obj/item/book/granter/crafting_recipe/blueprint/type88
+	name = "chinese light machine gun blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/type88)
 
 /obj/item/book/granter/crafting_recipe/blueprint/riotshotgun
 	name = "riot shotgun blueprint"
@@ -785,20 +806,10 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/rangemaster)
 
-/obj/item/book/granter/crafting_recipe/blueprint/bozar
-	name = "bozar blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/bozar)
-
 /obj/item/book/granter/crafting_recipe/blueprint/m1garand
 	name = "battle rifle blueprint"
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/m1garand)
-
-/obj/item/book/granter/crafting_recipe/blueprint/infiltrator
-	name = "infiltrator blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/infiltrator)
 
 /obj/item/book/granter/crafting_recipe/blueprint/trapper
 	name = "guide to minelaying"
@@ -809,18 +820,6 @@
 	name = "plasma pistol field blueprint"
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/plasmapistol_rem)
-
-/*
-/obj/item/book/granter/crafting_recipe/blueprint/fnfal
-	name = "fn fal blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/fnfal)
-
-/obj/item/book/granter/crafting_recipe/blueprint/caws
-	name = "h&k caws blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/caws)
-*/
 
 /obj/item/book/granter/crafting_recipe/blueprint/scoutcarbine
 	name = "scout carbine blueprint"
@@ -847,7 +846,7 @@
 	name = "Weapons of Yuma and the Bighorn Defense Force"
 	desc = "a book detailing weapons used in the region and by the local town, it has lithiographed pictures of hand-drawn schematics for each weapon type"
 	oneuse = TRUE
-	crafting_recipe_types = list(/datum/crafting_recipe/policepistol, /datum/crafting_recipe/durathread_vest, /datum/crafting_recipe/policerifle, /datum/crafting_recipe/steelbib/heavy, /datum/crafting_recipe/armyhelmetheavy, /datum/crafting_recipe/huntingshotgun)
+	crafting_recipe_types = list(/datum/crafting_recipe/policepistol, /datum/crafting_recipe/durathread_vest, /datum/crafting_recipe/steelbib/heavy, /datum/crafting_recipe/armyhelmetheavy, /datum/crafting_recipe/huntingshotgun)
 	remarks = list("Looks like Bighorn hand-crafts replicas from a pre-war police armory", "Some of these weapons are more than 200 years old....", "Duct tape really can hold it together!", "So that is how you laminate armor sheets together", "Looks like you can beat metal into just the right shape to replace the bits")
 
 /obj/item/book/granter/trait/tagger

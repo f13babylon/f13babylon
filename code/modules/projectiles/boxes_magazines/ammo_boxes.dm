@@ -247,112 +247,52 @@
 	ammo_type = /obj/item/ammo_casing/c4570/knockback
 
 //5mm
-
 /obj/item/ammo_box/a5mmbox
-	name = "ammo box (5mm FMJ)"
+	name = "ammo box (5mm)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "5mmbox"
+	icon_state = "a5mmbox"
 	multiple_sprites = 2
 	caliber = "a5mm"
 	ammo_type = /obj/item/ammo_casing/a5mm
-	max_ammo = 60
-	w_class = WEIGHT_CLASS_NORMAL
-	custom_materials = list(/datum/material/iron = 24000, /datum/material/blackpowder = 1500)
-
-/obj/item/ammo_box/a5mmbox/shock
-	name = "ammo box (5mm ESD)"
-	desc = "Advanced 5mm bullets with electrostatic discharger tips."
-	ammo_type = /obj/item/ammo_casing/a5mm/shock
-	custom_materials = list(/datum/material/iron = 14400, /datum/material/titanium = 1500, /datum/material/blackpowder = 1500)
-
-//5.56x45
-/obj/item/ammo_box/a556
-	name = "ammo box (5.56 FMJ)"
-	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "556box"
-	multiple_sprites = 2
-	caliber = "a556"
-	ammo_type = /obj/item/ammo_casing/a556
 	max_ammo = 40
 	w_class = WEIGHT_CLASS_NORMAL
 	custom_materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 1000)
 
-/obj/item/ammo_box/a556/sport
-	name = "ammo box (.223 sport)"
-	ammo_type = /obj/item/ammo_casing/a556/sport
-	custom_materials = list(/datum/material/iron = 16000, /datum/material/blackpowder = 1000)
+//5.56mm
+/obj/item/ammo_box/a556mmbox
+	name = "ammo box (5.56mm)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "a556mmbox"
+	multiple_sprites = 2
+	caliber = "a556mm"
+	ammo_type = /obj/item/ammo_casing/a556mm
+	max_ammo = 40
+	w_class = WEIGHT_CLASS_NORMAL
+	custom_materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 1500)
 
-/obj/item/ammo_box/a556/microshrapnel
-	name = "ammo box (5.56 microshrapnel)"
-	desc = "Now with fragments!"
-	ammo_type = /obj/item/ammo_casing/a556/microshrapnel
-	custom_materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 1000)
+/obj/item/ammo_box/a556mmbox/sport
+	name = "ammo box (.223)"
+	icon_state = "a223box"
+	ammo_type = /obj/item/ammo_casing/a556mm/sport
+	custom_materials = list(/datum/material/iron = 18000, /datum/material/blackpowder = 1000)
 
-/obj/item/ammo_box/a556/uraniumtipped
-	name = "ammo box (5.56 uranium-tipped)"
-	desc = "Not depleted uranium. Regular uranium."
-	ammo_type = /obj/item/ammo_casing/a556/uranium_tipped
-	custom_materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 1000)
+//7.62mm & .308
+/obj/item/ammo_box/a762mmbox
+	name = "ammo box (7.62mm)"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "a762mmbox"
+	multiple_sprites = 2
+	caliber = "a762mm"
+	ammo_type = /obj/item/ammo_casing/a762mm
+	max_ammo = 30
+	w_class = WEIGHT_CLASS_NORMAL
+	custom_materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 1500)
 
-/obj/item/ammo_box/a556/uraniumtipped/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/radioactive, 5, src, 0, TRUE, TRUE) //half-life of 0 because we keep on going.
-	START_PROCESSING(SSradiation,src)
-
-/obj/item/ammo_box/a556/uraniumtipped/Destroy()
-	STOP_PROCESSING(SSradiation,src)
-	return ..()
-
-/obj/item/ammo_box/a556/sport/improvised
-	name = "bag with reloaded .223 bullets"
-	desc = "The casings are worn, the gunpowder some homebrew mix of dubious quality. At least it goes bang."
-	multiple_sprites = 3
-	custom_materials = list(/datum/material/iron = 2000, /datum/material/blackpowder = 500)
-	icon_state = "improvshotbag"
-
-
-//7.62x51, .308 Winchester
-/obj/item/ammo_box/a308box
+/obj/item/ammo_box/a762mmbox/sport
 	name = "ammo box (.308)"
-	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "308box"
-	multiple_sprites = 2
-	caliber = "a762"
-	ammo_type = /obj/item/ammo_casing/a762/sport
-	max_ammo = 30
-	w_class = WEIGHT_CLASS_NORMAL
-	custom_materials = list(/datum/material/iron = 14000, /datum/material/blackpowder = 1000)
-
-/obj/item/ammo_box/a762box
-	name = "ammo box (7.62x51 FMJ)"
-	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "762box"
-	multiple_sprites = 2
-	caliber = "a762"
-	ammo_type = /obj/item/ammo_casing/a762
-	max_ammo = 30
-	w_class = WEIGHT_CLASS_NORMAL
-	custom_materials = list(/datum/material/iron = 16000, /datum/material/blackpowder = 1000)
-
-/obj/item/ammo_box/a762box/uraniumtipped
-	name = "ammo box (7.62x51 uranium tipped)"
-	ammo_type = /obj/item/ammo_casing/a762/uraniumtipped
-	desc = "Not depleted uranium. Regular uranium."
-
-/obj/item/ammo_box/a762box/uraniumtipped/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/radioactive, 5, src, 0, TRUE, TRUE) //half-life of 0 because we keep on going.
-	START_PROCESSING(SSradiation,src)
-
-/obj/item/ammo_box/a762box/uraniumtipped/Destroy()
-	STOP_PROCESSING(SSradiation,src)
-	return ..()
-
-/obj/item/ammo_box/a762box/microshrapnel
-	name = "ammo box (7.62x51 microshrapnel)"
-	desc = "Now with EVEN MORE fragments!"
-	ammo_type = /obj/item/ammo_casing/a762/microshrapnel
-
+	icon_state = "a308box"
+	ammo_type = /obj/item/ammo_casing/a762mm/sport
+	custom_materials = list(/datum/material/iron = 18000, /datum/material/blackpowder = 1000)
 
 //.50 MG and 14mm
 /obj/item/ammo_box/a50MGbox
@@ -393,40 +333,6 @@
 	name = "ammo box (14mm contaminated)"
 	desc = "14mm bullets loaded with a gaseous hepatoxic payload, which reduces the effectiveness of medicine and toxins."
 	ammo_type = /obj/item/ammo_casing/p14mm/contam
-
-//Misc.
-/obj/item/ammo_box/a473
-	name = "ammo box (4.73mm caseless)"
-	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "ammobox"
-	multiple_sprites = 2
-	ammo_type = /obj/item/ammo_casing/caseless/a473
-	max_ammo = 50
-
-/obj/item/ammo_box/a473/incendiary
-	name = "ammo box (4.73mm incendiary)"
-	ammo_type = /obj/item/ammo_casing/caseless/a473/incendiary
-
-/obj/item/ammo_box/a473/uraniumtipped
-	name = "ammo box (4.73mm uranium-tipped)"
-	ammo_type = /obj/item/ammo_casing/caseless/a473/uraniumtipped
-
-/obj/item/ammo_box/a473/dumdum
-	name = "ammo box (4.73mm flat-nose)"
-	ammo_type = /obj/item/ammo_casing/caseless/a473/dumdum
-
-/obj/item/ammo_box/a473/explosive
-	name = "ammo box (4.73mm explosive)"
-	desc = "Explosive caseless rounds. Very safe."
-	ammo_type = /obj/item/ammo_casing/caseless/a473/explosive
-
-/obj/item/ammo_box/a473/shock
-	name = "ammo box (4.73mm ESD)"
-	ammo_type = /obj/item/ammo_casing/caseless/a473/shock
-
-/obj/item/ammo_box/a473/hv
-	name = "ammo box (4.73mm high-velocity)"
-	ammo_type = /obj/item/ammo_casing/caseless/a473/hv
 
 /obj/item/ammo_box/plasmamusket
 	name = "Canister box (Plasma musket)"
@@ -710,12 +616,12 @@
 	w_class = WEIGHT_CLASS_NORMAL
 
 //7.62x51, .308 Winchester
-/obj/item/ammo_box/a762
+/obj/item/ammo_box/a762mm
 	name = "stripper clip (7.62)"
 	desc = "A stripper clip."
 	icon_state = "762"
-	caliber = "a762"
-	ammo_type = /obj/item/ammo_casing/a762
+	caliber = "a762mm"
+	ammo_type = /obj/item/ammo_casing/a762mm
 	max_ammo = 5
 	multiple_sprites = 1
 	custom_materials = list(/datum/material/iron = 2000)
@@ -725,30 +631,30 @@
 	name = "stripper clip (.308)"
 	desc = "A stripper clip."
 	icon_state = "308"
-	caliber = "a762"
-	ammo_type = /obj/item/ammo_casing/a762/sport
+	caliber = "a762mm"
+	ammo_type = /obj/item/ammo_casing/a762mm/sport
 	max_ammo = 5
 	multiple_sprites = 1
 	custom_materials = list(/datum/material/iron = 2000)
 	w_class = WEIGHT_CLASS_SMALL
 
-/obj/item/ammo_box/a762/doublestacked
+/obj/item/ammo_box/a762mm/doublestacked
 	name = "double stack stripper clip (.308)"
 	desc = "A stripper clip."
 	icon_state = "762a"
-	caliber = "a762"
-	ammo_type = /obj/item/ammo_casing/a762/sport
+	caliber = "a762mm"
+	ammo_type = /obj/item/ammo_casing/a762mm
 	max_ammo = 10
 	multiple_sprites = 1
 	custom_materials = list(/datum/material/iron = 2000)
 	w_class = WEIGHT_CLASS_SMALL
 
 //5.56x45mm
-/obj/item/ammo_box/a556/stripper
+/obj/item/ammo_box/a556mm/stripper
 	name = "stripper clip (5.56x45mm)"
 	desc = "A stripper clip."
 	icon_state = "762"
-	ammo_type = /obj/item/ammo_casing/a556
+	ammo_type = /obj/item/ammo_casing/a556mm
 	max_ammo = 5
 	multiple_sprites = 1
 	custom_materials = list(/datum/material/iron = 2000)

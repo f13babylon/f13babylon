@@ -240,6 +240,40 @@
 	admin_ticket_log(M, msg)
 	SSblackbox.record_feedback("nested tally", "admin_toggle", 1, list("Godmode", "[M.status_flags & GODMODE ? "Enabled" : "Disabled"]")) //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
+/proc/cmd_admin_verify(whom)
+	if(!whom)
+		return
+
+	var/verifyunverify
+
+	var/client/C
+	if(istype(whom, /client))
+		C = whom
+	else if(istext(whom))
+		C = GLOB.directory[whom]
+	else
+		return
+
+	var/datum/preferences/P
+	if(C)
+		P = C.prefs
+	else
+		P = GLOB.preferences_datums[whom]
+	if(!P)
+		return
+
+	if(P.age_verified)
+		verifyunverify = "unverified"
+		P.age_verified = 0
+	else
+		verifyunverify = "verified"
+		P.age_verified = 1
+
+	log_admin("[key_name(usr)] has [verifyunverify] [key_name(whom)]")
+	message_admins("[key_name_admin(usr)] has [verifyunverify] [key_name_admin(whom)].")
+	if(C)
+		to_chat(C, "You have been [verifyunverify] by [key_name(usr, include_name = FALSE)].", confidential = TRUE)
+	SSblackbox.record_feedback("nested tally", "admin_toggle", 1, list("Age Verification", "[P.age_verified ? "Verified" : "Unverified"]")) //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /proc/cmd_admin_mute(whom, mute_type, automute = 0)
 	if(!whom)

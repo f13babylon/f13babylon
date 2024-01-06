@@ -41,8 +41,8 @@
 
 /obj/item/ammo_box/magazine/internal/cylinder/improvisedpipe
 	name = "improvised internal magazine piperifle"
-	ammo_type = /obj/item/ammo_casing/a556/sport
-	caliber = "a556"
+	ammo_type = /obj/item/ammo_casing/a556mm/sport
+	caliber = "a556mm"
 	max_ammo = 1
 
 /obj/item/ammo_box/magazine/internal/cylinder/improvised45
@@ -71,14 +71,14 @@
 
 /obj/item/ammo_box/magazine/internal/cylinder/improvised762
 	name = "improvised internal magazine .308"
-	ammo_type = /obj/item/ammo_casing/a762/sport
-	caliber = "a762"
+	ammo_type = /obj/item/ammo_casing/a762mm/sport
+	caliber = "a762mm"
 	max_ammo = 2
 
 /obj/item/ammo_box/magazine/internal/cylinder/thatgun
 	name = ".223 pistol cylinder"
-	ammo_type = /obj/item/ammo_casing/a556
-	caliber = "a556"
+	ammo_type = /obj/item/ammo_casing/a556mm
+	caliber = "a556mm"
 	max_ammo = 5
 
 /obj/item/ammo_box/magazine/internal/cylinder/colt6520

@@ -197,7 +197,7 @@
 	id = /obj/item/card/id/dogtag/town/ncr
 	l_hand = /obj/item/gun/ballistic/rifle/mag/varmint
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle=2)
+		/obj/item/ammo_box/magazine/m556mm=2)
 
 /datum/outfit/loadout/wastelander_desert_ranger
 	name = "Desert Ranger Scout"

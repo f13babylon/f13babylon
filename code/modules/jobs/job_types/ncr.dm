@@ -355,10 +355,10 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/sergeantrifleman
 	name = "Lead Rifleman"
-	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle
+	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle/r91
 	head = /obj/item/clothing/head/f13/ncr
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle = 3,
+		/obj/item/ammo_box/magazine/m556mm = 3,
 		/obj/item/storage/box/ration/menu_two = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/flashlight/seclite = 1,
@@ -440,7 +440,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/outfit/loadout/seatechnical
 	name = "Technical Senior Advisor"
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
-	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine/worn
+	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle/r91
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m5mm = 1,
 		/obj/item/clothing/accessory/ncr/FSGT = 1
@@ -730,9 +730,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	head = /obj/item/clothing/head/f13/ranger
 	uniform	= /obj/item/clothing/under/f13/ranger/patrol
 	belt = /obj/item/storage/belt/military/assault/ncr
-	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle
+	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle/r91
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle = 2,
+		/obj/item/ammo_box/magazine/m556mm = 2,
 		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,
 		/obj/item/gun/ballistic/revolver/revolver44 = 1,
 		/obj/item/ammo_box/m44 = 1,
@@ -804,8 +804,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/outfit/loadout/shockht
 	name = "Tactical Support Heavy Gunner"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/bar/glowie = 1,
-		/obj/item/ammo_box/magazine/m762/ext = 3,
+		/obj/item/gun/ballistic/automatic/lmg/monitor = 1,
+		/obj/item/ammo_box/magazine/m762mm/extended = 3,
 		/obj/item/clothing/suit/armor/f13/metalarmor/steelbib/ncra = 1,
 		/obj/item/clothing/head/helmet/armyhelmet/heavy/ncra = 1,
 		)
@@ -822,7 +822,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/outfit/loadout/opperssorht
 	name = "Frontline Support Heavy Gunner"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/r84 = 1,
+		/obj/item/gun/ballistic/automatic/lmg/r84 = 1,
 		/obj/item/ammo_box/magazine/lmg = 2,
 		/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/ncr = 1,
 		/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/ncr = 1,
@@ -1011,7 +1011,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "Support Medic"
 	suit_store = /obj/item/gun/ballistic/automatic/service/carbine
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle/ = 2,
+		/obj/item/ammo_box/magazine/m556mm = 2,
 		/obj/item/seeds/poppy/broc = 2,
 		/obj/item/seeds/xander = 2
 		)
@@ -1089,7 +1089,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
 	suit_store = /obj/item/gun/ballistic/automatic/service/carbine
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle = 3,
+		/obj/item/ammo_box/magazine/m556mm = 3,
 		/obj/item/grenade/smokebomb = 1
 		)
 
@@ -1144,7 +1144,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "Trail Trooper"
 	suit_store = /obj/item/gun/ballistic/automatic/service
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle = 3,
+		/obj/item/ammo_box/magazine/m556mm = 3,
 		/obj/item/melee/onehanded/knife/bayonet = 1,
 		)
 
@@ -1209,7 +1209,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "Reservist"
 	suit_store = /obj/item/gun/ballistic/rifle/mag/varmint
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle = 2,
+		/obj/item/ammo_box/magazine/m556mm = 2,
 		/obj/item/shovel/trench = 1,
 		/obj/item/stack/sheet/mineral/sandbags = 7,
 		/obj/item/storage/box/ration/menu_eight = 1,
@@ -1409,5 +1409,5 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	id = /obj/item/card/id/dogtag/town/ncr
 	l_hand = /obj/item/gun/ballistic/rifle/mag/varmint
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle=2,
+		/obj/item/ammo_box/magazine/m556mm=2,
 		)

@@ -47,7 +47,10 @@
 	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
 	ADD_TRAIT(H, TRAIT_STRAIGHT_EDGE, REF(src))
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/R93)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavemarinearmor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavemarinehelmet)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombatarmor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombathelmet)
 
 
 //Captain
@@ -65,7 +68,7 @@
 	exp_requirements = 1000
 
 	loadout_options = list(
-		/datum/outfit/loadout/cpt_ballistics, // G11E and Plasma Glock
+		/datum/outfit/loadout/cpt_ballistics, // Assault Carbine and Plasma Glock
 		/datum/outfit/loadout/cpt_flamer, //Flamer+el captain
 		)
 
@@ -93,7 +96,7 @@
 
 /datum/outfit/loadout/cpt_ballistics
 	name = "Ranged Lead"
-	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
+	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle/assault_carbine
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m5mm = 2,
 		/obj/item/gun/energy/laser/plasma/glock = 1,
@@ -178,8 +181,6 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/pshotgun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg22)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/plasmapistol)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombatarmor)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombathelmet)
 
 /datum/outfit/loadout/lt_is
 	name = "Internal Security Advisor"
@@ -223,8 +224,8 @@
 	name = "Enclave Gunnery Sergeant"
 	jobtype = /datum/job/enclave/f13gysergeant
 	accessory = /obj/item/clothing/accessory/enclave/gunnery_sergeant
-	head = /obj/item/clothing/head/helmet/f13/power_armor/advanced
-	suit = /obj/item/clothing/suit/armor/f13/power_armor/advanced
+	head = /obj/item/clothing/head/helmet/f13/power_armor/tesla
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/tesla
 	ears = /obj/item/radio/headset/headset_enclave/command
 
 	backpack_contents = list(
@@ -240,9 +241,9 @@
 
 /datum/outfit/loadout/gysgt_caster
 	name = "Point Defense Assaultman"
+	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle/g11
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/g11 = 1,
-		/obj/item/ammo_box/magazine/m473 = 2,
+		/obj/item/ammo_box/magazine/mg11 = 2,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 2,
 		/obj/item/grenade/f13/frag = 1
@@ -302,8 +303,8 @@
 /datum/outfit/job/enclave/peacekeeper/enclavesgt
 	name = "Enclave Sergeant"
 	jobtype = /datum/job/enclave/enclavesgt
-	suit = /obj/item/clothing/suit/armor/f13/enclave/marine
-	head = /obj/item/clothing/head/helmet/f13/enclave/marine
+	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/enclave
+	head = /obj/item/clothing/head/helmet/f13/combat/mk2/enclave
 	accessory = /obj/item/clothing/accessory/enclave/sergeant
 
 
@@ -345,7 +346,7 @@
 /datum/outfit/loadout/sgt_classic
 	name = "Tactical Assaultman"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/assault_carbine/ak112 = 1,
+		/obj/item/gun/ballistic/automatic/assault_rifle/ak112 = 1,
 		/obj/item/ammo_box/magazine/m5mm = 4,
 		/obj/item/attachments/scope = 1,
 		/obj/item/suppressor = 1, //they get a flashlight in their bag
@@ -446,7 +447,7 @@
 	name = "Enclave Specialist"
 	jobtype = /datum/job/enclave/f13specialist
 	head = /obj/item/clothing/head/helmet/f13/combat/enclave
-	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/enclave
+	suit = /obj/item/clothing/suit/armor/f13/combat/enclave
 	accessory = /obj/item/clothing/accessory/enclave/corporal
 
 	backpack_contents = list(
@@ -509,8 +510,8 @@
 	exp_requirements = 600
 
 	loadout_options = list(
-		/datum/outfit/loadout/reconmarine, // R-93
-		/datum/outfit/loadout/mobileartillery, // Trench gun
+		/datum/outfit/loadout/reconmarine, // Infantry Rifle
+		/datum/outfit/loadout/mobileartillery, // Trench Shotgun
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavespy
@@ -518,7 +519,7 @@
 	jobtype = /datum/job/enclave/enclavespy
 	accessory = /obj/item/clothing/accessory/enclave/private_firstclass
 	head = /obj/item/clothing/head/helmet/f13/combat/enclave
-	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/enclave
+	suit = /obj/item/clothing/suit/armor/f13/combat/enclave
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
@@ -532,7 +533,7 @@
 
 /datum/outfit/loadout/reconmarine
 	name = "Pointman Rifleman"
-	suit_store = /obj/item/gun/ballistic/automatic/r93
+	suit_store = /obj/item/gun/ballistic/automatic/infantry_rifle
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m5mm = 2,
 		/obj/item/gun/energy/laser/plasma/pistol/light = 1,
@@ -617,8 +618,6 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/pshotgun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg22)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/plasmapistol)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombatarmor)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombathelmet)
 
 /*
 //Pilot
@@ -825,6 +824,10 @@
 
 /datum/job/enclave/encborg/equip(mob/living/carbon/human/H, visualsOnly = FALSE, announce = TRUE, latejoin = FALSE, datum/outfit/outfit_override = null, client/preference_source)
 	return H.Robotize(FALSE, latejoin)
+
+
+/datum/job/enclave/encborg/override_latejoin_spawn()
+	return TRUE
 
 /datum/job/enclave/encborg/after_spawn(mob/living/silicon/robot/R, mob/M)
 	. = ..()

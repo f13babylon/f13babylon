@@ -556,6 +556,11 @@ CENTCOM_BAN_DB https://centcom.melonmesa.com/ban/search
 ## 2 Puts Border Control into 'enforcing mode' and will have it deny connections that are not already whitelisted.
 BORDER_CONTROL 1
 
+## Image Previews used for examining humans!
+## _P stands for prefix, and _S stands for suffix.
+# DISCORDIMAGE_P https://media.discordapp.net/attachments/
+# DISCORDIMAGE_S .png
+
 ## If the server border control rejects clients entirely, or lets them into lobby only.
 ## 0 Border control rejects an unauthenticated client entirely
 ## 1 Border control will let the client into the lobby, but not connect.

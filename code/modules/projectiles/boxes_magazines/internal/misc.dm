@@ -12,8 +12,8 @@
 
 /obj/item/ammo_box/magazine/internal/minigunbal
 	name = "minigun ammo pack"
-	ammo_type = /obj/item/ammo_casing/a556
-	caliber = "a556"
+	ammo_type = /obj/item/ammo_casing/a556mm
+	caliber = "a556mm"
 	max_ammo = 2500
 
 /obj/item/ammo_box/magazine/internal/minigunbal5mm
@@ -21,13 +21,13 @@
 	ammo_type = /obj/item/ammo_casing/a5mm
 	caliber = "a5mm"
 	max_ammo = 480
-
+/*
 /obj/item/ammo_box/magazine/internal/encminigunbal4mm
 	name = "minigun ammo pack"
-	ammo_type = /obj/item/ammo_casing/caseless/a473
-	caliber = "a473"
+	ammo_type = /obj/item/ammo_casing/caseless/a5mm
+	caliber = "a5mm"
 	max_ammo = 480
-
+*/
 /obj/item/ammo_box/magazine/internal/m2flamethrower
 	name = "m2 flamethower fuel tank"
 	ammo_type = /obj/item/ammo_casing/caseless/flamethrower

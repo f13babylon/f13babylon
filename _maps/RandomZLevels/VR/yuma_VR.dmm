@@ -14,7 +14,7 @@
 /turf/closed/indestructible/f13,
 /area/awaymission/vr/followers)
 "ai" = (
-/obj/item/ammo_box/magazine/m762/empty,
+/obj/item/ammo_box/magazine/m762mm/empty,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
@@ -439,7 +439,7 @@
 	dir = 1
 	},
 /obj/item/clothing/head/helmet/f13/combat/enclave,
-/obj/item/clothing/suit/armor/f13/combat/mk2/enclave,
+/obj/item/clothing/suit/armor/f13/combat/enclave
 /obj/item/clothing/suit/armor/f13/combat/swat,
 /obj/item/clothing/suit/armor/f13/enclave/armorvest,
 /obj/item/clothing/suit/armor/f13/kit,
@@ -1598,7 +1598,7 @@
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 8
 	},
-/obj/item/gun/ballistic/automatic/bozar,
+/obj/item/gun/ballistic/automatic/lmg/bozar,
 /obj/item/gun/ballistic/automatic/m1garand/oldglory,
 /obj/item/gun/ballistic/automatic/m1garand/republicspride,
 /obj/item/gun/ballistic/automatic/marksman/sniper/gold,
@@ -2052,7 +2052,7 @@
 	},
 /area/holodeck/followers/programs/medical)
 "mQ" = (
-/obj/item/ammo_box/magazine/m762/empty,
+/obj/item/ammo_box/magazine/m762mm/empty,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -2170,21 +2170,21 @@
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 8
 	},
-/obj/item/gun/ballistic/automatic/assault_carbine,
-/obj/item/gun/ballistic/automatic/assault_rifle,
-/obj/item/gun/ballistic/automatic/assault_rifle/infiltrator,
+/obj/item/gun/ballistic/automatic/assault_rifle/assault_carbine,
+/obj/item/gun/ballistic/automatic/assault_rifle/r91,
+/obj/item/gun/ballistic/automatic/assault_rifle/r91/infiltrator,
 /obj/item/gun/ballistic/automatic/autopipe,
 /obj/item/gun/ballistic/automatic/hobo/destroyer,
 /obj/item/gun/ballistic/automatic/m1garand,
 /obj/item/gun/ballistic/automatic/m1garand/sks,
 /obj/item/gun/ballistic/automatic/marksman,
 /obj/item/gun/ballistic/automatic/marksman/sniper,
-/obj/item/gun/ballistic/automatic/r84,
+/obj/item/gun/ballistic/automatic/lmg/r84,
 /obj/item/gun/ballistic/automatic/rangemaster,
 /obj/item/gun/ballistic/automatic/rangemaster/scoped,
 /obj/item/gun/ballistic/automatic/rangemaster/scoped/mid,
 /obj/item/gun/ballistic/automatic/service,
-/obj/item/gun/ballistic/automatic/type93,
+/obj/item/gun/ballistic/automatic/assault_rifle/type93,
 /turf/open/floor/holofloor/plating,
 /area/holodeck/den/programs/armory)
 "of" = (
@@ -2787,7 +2787,7 @@
 /turf/open/floor/holofloor/plating,
 /area/holodeck/den/programs/armory)
 "sB" = (
-/obj/item/ammo_box/magazine/m762/empty,
+/obj/item/ammo_box/magazine/m762mm/empty,
 /turf/open/floor/carpet/green,
 /area/awaymission/vr/bos/casino)
 "sD" = (
@@ -2866,7 +2866,7 @@
 /turf/open/floor/circuit,
 /area/awaymission/vr/bos/deathmatch)
 "te" = (
-/obj/item/ammo_casing/a762,
+/obj/item/ammo_casing/a762mm,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/green,
 /area/awaymission/vr/bos/casino)
@@ -3131,7 +3131,7 @@
 /area/awaymission/vr/bos/casino)
 "vl" = (
 /obj/structure/table/wood/poker,
-/obj/item/ammo_box/magazine/m762/ext,
+/obj/item/ammo_box/magazine/m762mm/extended,
 /turf/open/floor/carpet/green,
 /area/awaymission/vr/bos/casino)
 "vn" = (
@@ -3255,7 +3255,7 @@
 /turf/open/floor/plating/tunnel,
 /area/awaymission/vr/bos/enclavebunker)
 "vZ" = (
-/obj/item/ammo_casing/a762,
+/obj/item/ammo_casing/a762mm,
 /turf/open/floor/pod/dark,
 /area/awaymission/vr/bos/casino)
 "wa" = (
@@ -3774,7 +3774,7 @@
 /turf/open/floor/carpet/green,
 /area/awaymission/vr/bos/casino)
 "Ac" = (
-/obj/item/ammo_box/magazine/m762,
+/obj/item/ammo_box/magazine/m762mm,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
@@ -5170,7 +5170,7 @@
 /turf/open/floor/plating,
 /area/awaymission/vr/bos/deathmatch)
 "LU" = (
-/obj/item/ammo_casing/a762,
+/obj/item/ammo_casing/a762mm,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood3-broken"
 	},
@@ -6094,7 +6094,7 @@
 	},
 /area/awaymission/vr/bos/enclavebunker)
 "TA" = (
-/obj/item/ammo_casing/a762,
+/obj/item/ammo_casing/a762mm,
 /obj/item/ammo_casing/c9mm,
 /obj/effect/decal/cleanable/glass/plasma,
 /turf/open/floor/carpet/green,
@@ -6226,7 +6226,7 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/vr/public/deathmatch/blue)
 "Ux" = (
-/obj/item/ammo_casing/a762,
+/obj/item/ammo_casing/a762mm,
 /mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
 /turf/open/floor/carpet/green,
 /area/awaymission/vr/bos/casino)
@@ -6282,6 +6282,9 @@
 	icon_state = "redrustyfull"
 	},
 /area/awaymission/vr/bos/enclavebunker)
+<<<<<<< HEAD
+=======
+>>>>>>> main
 "Vc" = (
 /obj/item/chair,
 /turf/open/indestructible/ground/inside/subway,

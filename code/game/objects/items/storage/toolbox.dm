@@ -248,7 +248,7 @@ GLOBAL_LIST_EMPTY(rubber_toolbox_icons)
 	desc = "It contains a few 7.62 stripper clips."
 	icon_state = "ammobox"
 	item_state = "ammobox"
-	var/ammotype = /obj/item/ammo_box/a762 // make sure this is a typepath thanks
+	var/ammotype = /obj/item/ammo_box/a762mm // make sure this is a typepath thanks
 
 /obj/item/storage/toolbox/ammo/PopulateContents()
 	for (var/i = 0, i < 7, i++)

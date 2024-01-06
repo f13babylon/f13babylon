@@ -10,7 +10,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	access = list(ACCESS_RAIDER)
 	minimal_access = list(ACCESS_RAIDER)
 	exp_requirements = 0
-	exp_type = EXP_TYPE_OUTLAW
+	exp_type = EXP_TYPE_WASTELAND
 
 /datum/job/raider/f13raider
 	title = "Raider"
@@ -133,7 +133,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	head = /obj/item/clothing/head/helmet/f13/raider/supafly
 	backpack_contents = list(
 		/obj/item/gun/ballistic/rifle/mag/varmint = 1,
-		/obj/item/ammo_box/magazine/m556/rifle/assault = 1,
+		/obj/item/ammo_box/magazine/m556mm/drum = 1,
 		/obj/item/gun/ballistic/revolver/hobo/knucklegun = 1,
 		/obj/item/ammo_box/c45rev = 2,
 		/obj/item/attachments/scope = 1,
@@ -355,7 +355,7 @@ Reason this is commented out: Not needed, may re-use loadouts later
 	id = /obj/item/card/id/rusted
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/service = 1,
-		/obj/item/ammo_box/magazine/m556/rifle=2,
+		/obj/item/ammo_box/magazine/m556mm=2,
 		/obj/item/melee/onehanded/knife/bayonet = 1,
 		/obj/item/storage/box/ration/ranger_breakfast = 1,
 		/obj/item/book/granter/crafting_recipe/blueprint/service = 1)

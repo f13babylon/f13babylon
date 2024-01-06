@@ -58,9 +58,9 @@
 	name = "Bounty Hunter"
 	head = /obj/item/clothing/suit/armor/f13/combat/mk2/dark
 	suit = /obj/item/clothing/head/helmet/f13/combat/mk2/dark
-	r_hand = /obj/item/gun/ballistic/automatic/g11
+	r_hand = /obj/item/gun/ballistic/automatic/assault_rifle/assault_carbine
 	backpack_contents = list(
-							/obj/item/ammo_box/magazine/m473=2
+							/obj/item/ammo_box/magazine/m5mm = 2,
 							)
 
 /datum/outfit/loadout/retired_ranger
@@ -92,7 +92,7 @@
 	l_pocket = /obj/item/melee/onehanded/knife/hunting
 	r_pocket = /obj/item/flashlight/seclite
 	uniform = /obj/item/clothing/under/f13/merca
-	backpack = /obj/item/encencminigunbal4mm
+	// backpack = /obj/item/encencminigunbal4mm
 	gloves = /obj/item/clothing/gloves/f13/military
 	head = /obj/item/clothing/head/helmet/f13/ncr/rangercombat/desert
 	suit = /obj/item/clothing/suit/armor/f13/rangercombat/desert

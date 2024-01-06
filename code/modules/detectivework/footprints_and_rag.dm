@@ -97,11 +97,6 @@
 			body_parts_covered = HEAD
 			flags_inv = HIDEHAIR
 
-/obj/item/reagent_containers/glass/rag/towel/dropped(mob/user)
-	. = ..()
-	body_parts_covered = NONE
-	flags_inv = NONE
-
 /obj/item/reagent_containers/glass/rag/towel/attack_self(mob/user)
 	if(!user.can_reach(src) || !user.dropItemToGround(src))
 		return

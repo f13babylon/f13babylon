@@ -114,7 +114,7 @@
 // Enclave specialist, basic fighter
 /mob/living/simple_animal/hostile/enclave
 	name = "enclave specialist"
-	desc = "A Enclave soldier with combat armor and a G-11 rifle."
+	desc = "A Enclave soldier with combat armor and an assault carbine."
 	icon = 'icons/fallout/mobs/humans/fallout_npc.dmi'
 	icon_state = "enclave_specialist"
 	icon_living = "enclave_specialist"
@@ -140,9 +140,9 @@
 	melee_damage_upper = 35
 	harm_intent_damage = 8
 
-	projectiletype = /obj/item/projectile/bullet/c46x30mm
-	projectilesound = 'sound/weapons/gunshot_smg.ogg'
-	attack_verb_simple = "pistol-whips"
+	projectiletype = /obj/item/projectile/bullet/a5mm/simple
+	projectilesound = 'sound/f13weapons/assault_carbine.ogg'
+	attack_verb_simple = "hits"
 
 	attack_sound = 'sound/weapons/punch1.ogg'
 	a_intent = INTENT_HARM
@@ -366,9 +366,9 @@
 	loot = list(/obj/effect/mob_spawn/human/corpse/ncr)
 	healable = 1
 	ranged = 1
-	projectiletype = /obj/item/projectile/bullet/a556/simple
+	projectiletype = /obj/item/projectile/bullet/a556mm/simple
 	projectilesound = 'sound/f13weapons/varmint_rifle.ogg'
-	casingtype = /obj/item/ammo_casing/a556
+	casingtype = /obj/item/ammo_casing/a556mm
 
 /mob/living/simple_animal/hostile/ncr/ranger
 	name = "NCR Ranger"
@@ -452,9 +452,9 @@
 	loot = list(/obj/effect/mob_spawn/human/corpse/legion)
 	healable = 1
 	ranged = 1
-	projectiletype = /obj/item/projectile/bullet/a762/sport/simple
-	projectilesound = 'sound/f13weapons/hunting_rifle.ogg'
-	casingtype = /obj/item/ammo_casing/a762/sport
+	projectiletype = /obj/item/projectile/bullet/a762mm/simple
+	projectilesound = 'sound/f13weapons/762rifle.ogg'
+	casingtype = /obj/item/ammo_casing/a762mm/sport
 
 /mob/living/simple_animal/hostile/legion/decan
 	name = "Legion Decanus"
@@ -470,9 +470,9 @@
 	health = 225
 	healable = 1
 	ranged = 1
-	projectiletype = /obj/item/projectile/bullet/a762/sport/simple
-	projectilesound = 'sound/f13weapons/hunting_rifle.ogg'
-	casingtype = /obj/item/ammo_casing/a762/sport
+	projectiletype = /obj/item/projectile/bullet/a762mm/simple
+	projectilesound = 'sound/f13weapons/762rifle.ogg'
+	casingtype = /obj/item/ammo_casing/a762mm/sport
 
 /obj/effect/mob_spawn/human/corpse/legion/decan
 	name = "Legion Decanus"

@@ -449,7 +449,7 @@
 				"Followers Administrator", "Followers Doctor", "Followers Volunteer", "Followers Guard", "Followers Robot",
 				"Khan Senior Enforcer", "Khan Enforcer", "Khan Chemist", "Khan Armorer", "Khan Courtesan",
 				"NCR Captain", "NCR Lieutenant", "NCR Logistics Officer", "NCR Representative", "NCR Medical Officer", "NCR Heavy Trooper", "NCR Sergeant", "NCR Senior Enlisted Advisor",
-				"NCR Corporal", "NCR Combat Medic", "NCR Combat Engineer", "NCR Military Police", "NCR Trooper", "NCR Conscript", "NCR Rear Echelon", "NCR Veteran Ranger", "NCR Ranger",
+				"NCR Corporal", "NCR Combat Medic", "NCR Combat Engineer", "NCR Military Police", "NCR Trooper", "NCR Conscript", "NCR Off-Duty", "NCR Veteran Ranger", "NCR Ranger",
 				"Legion Centurion", "Legion Orator", "Legion Recruit Decanus", "Legion Prime Decanus", "Legion Veteran Decanus", "Legion Vexillarius", "Legion Slavemaster", "Legion Explorer", "Legion Venator",
 				"Veteran Legionnaire", "Prime Legionnaire", "Recruit Legionnaire", "Legion Forgemaster", "Legion Camp Follower", "Legion Auxilia", "Legion Slave")
 

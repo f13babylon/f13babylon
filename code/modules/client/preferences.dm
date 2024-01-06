@@ -14,6 +14,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	//non-preference stuff
 	var/muted = 0
+	var/age_verified = 0
 	var/last_ip
 	var/last_id
 	var/log_clicks = FALSE
@@ -313,6 +314,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			else
 				dat += "<b>Loading matchmaking preferences...</b><br>"
 				dat += "<b>Refresh once the game has finished setting up...</b><br>"
+			dat += "</td>"
+
+			dat += "<b>Profile Picture:</b><BR>"
+			dat += "<b>Picture:</b> <a href='?_src_=prefs;preference=ProfilePicture;task=input'>[profilePicture ? "<img src=[DiscordLink(profilePicture)] width='125' height='auto' max-height='300'>" : "Upload a picture!"]</a><BR>"
 			dat += "</td>"
 
 /*

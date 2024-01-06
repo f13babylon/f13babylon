@@ -12,6 +12,8 @@
 	var/en_bloc = 0
 	/// Which direction do the casings fly out?
 	var/handedness = GUN_EJECTOR_RIGHT
+	var/insert_sound = 'sound/weapons/shotguninsert.ogg'
+	var/chamber_sound = 'sound/weapons/gun_chamber_round.ogg'
 
 /obj/item/gun/ballistic/Initialize(mapload)
 	. = ..()
@@ -64,7 +66,7 @@
 		var/num_loaded = magazine.attackby(A, user, params, 1)
 		if(num_loaded)
 			to_chat(user, "<span class='notice'>You load [num_loaded] shell\s into \the [src]!</span>")
-			playsound(user, 'sound/weapons/shotguninsert.ogg', 60, 1)
+			playsound(user, insert_sound, 60, 1)
 			A.update_icon()
 			update_icon()
 			chamber_round(0)
@@ -78,7 +80,7 @@
 					playsound(src, "gun_insert_full_magazine", 70, 1)
 					if(!chambered)
 						chamber_round()
-						addtimer(CALLBACK(GLOBAL_PROC, .proc/playsound, src, 'sound/weapons/gun_chamber_round.ogg', 100, 1), 3)
+						addtimer(CALLBACK(GLOBAL_PROC, .proc/playsound, src, chamber_sound, 100, 1), 3)
 				else
 					playsound(src, "gun_insert_empty_magazine", 70, 1)
 				A.update_icon()
