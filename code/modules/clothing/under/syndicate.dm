@@ -40,21 +40,27 @@
 
 /obj/item/clothing/under/syndicate/mercenary
 	name = "Mercenary uniform"
-	desc = "Blue digital camo fatigues for a sleek mercenary look."
+	desc = "Fatigues for a sleek mercenary look."
 	icon_state = "merc_uniform"
 	item_state = "merc_uniform"
 	has_sensor = NO_SENSORS
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 40)
 	alt_covers_chest = TRUE
+	obj_flags = UNIQUE_RENAME
+	unique_reskin = list("M1" = "mercbdcamo",
+						"M2" = "mercdcamo")
 
-/obj/item/clothing/under/syndicate/mercurban
+/obj/item/clothing/under/syndicate/mercpadded
 	name = "urban mercenary uniform"
-	desc = "Urban splitter camo fatigues for a sleek mercenary look."
-	icon_state = "merc_urban"
-	item_state = "merc_urban"
+	desc = "Fatigues with flame-resistant torso fabric for a sleek mercenary look."
+	icon_state = "mercpadded"
+	item_state = "mercpadded"
 	has_sensor = NO_SENSORS
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 40)
 	alt_covers_chest = TRUE
+	obj_flags = UNIQUE_RENAME
+	unique_reskin = list("M1" = "mercpred",
+						"M2" = "mercpw")
 
 /obj/item/clothing/under/syndicate/bloodred/sleepytime
 	name = "blood-red pajamas"
