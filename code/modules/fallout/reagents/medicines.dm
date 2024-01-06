@@ -289,15 +289,26 @@
 				is_blocked = TRUE
 				break
 	if(!is_blocked)
-		//Extra healing for each bodypart affected by wounds
+		//Extra healing for each bodypart affected by wounds, depending on the max severity of the wound affecting the bodypart
 		if(affecting_tribal)
 			if(M.all_wounds && M.all_wounds.len >= 1)
-				var/added_damage_offset = 3
+				var/added_damage_offset = 0
 				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
 					if(iter_bodypart.wounds && iter_bodypart.wounds.len >= 1)
+						added_damage_offset = 0
+						for(var/datum/wound/iter_wound in iter_bodypart.wounds)
+							switch(iter_wound.severity)
+								if(WOUND_SEVERITY_CRITICAL)
+									if(added_damage_offset < 3)
+										added_damage_offset = 3
+								if(WOUND_SEVERITY_SEVERE)
+									if(added_damage_offset < 2)
+										added_damage_offset = 2
+								if(WOUND_SEVERITY_MODERATE)
+									if(added_damage_offset < 1)
+										added_damage_offset = 1
 						M.adjustBruteLoss(-added_damage_offset, FALSE)
 						M.adjustFireLoss(-added_damage_offset * 0.75, FALSE)	//75% of added_damage_offset
-						added_damage_offset *= 0.5	//Reduce the added_damage_offset by half for each wounded bodypart to keep the offset from getting too ridiculous
 
 		//Actual healing part starts here
 		M.adjustBruteLoss(-damage_offset, FALSE)	//100% of damage_offset (5.4 / 4)
@@ -379,15 +390,26 @@
 			M.reagents.remove_reagent(src, 1)
 			M.reagents.add_reagent(/datum/reagent/water, 3)
 	if(!is_blocked)
-		//Extra healing for each bodypart affected by wounds
+		//Extra healing for each bodypart affected by wounds, depending on the max severity of the wound affecting the bodypart
 		if(affecting_tribal)
 			if(M.all_wounds && M.all_wounds.len >= 1)
-				var/added_damage_offset = 1
+				var/added_damage_offset = 0
 				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
 					if(iter_bodypart.wounds && iter_bodypart.wounds.len >= 1)
+						added_damage_offset = 0
+						for(var/datum/wound/iter_wound in iter_bodypart.wounds)
+							switch(iter_wound.severity)
+								if(WOUND_SEVERITY_CRITICAL)
+									if(added_damage_offset < 1)
+										added_damage_offset = 1
+								if(WOUND_SEVERITY_SEVERE)
+									if(added_damage_offset < 0.5)
+										added_damage_offset = 0.5
+								if(WOUND_SEVERITY_MODERATE)
+									if(added_damage_offset < 0.25)
+										added_damage_offset = 0.25
 						M.adjustBruteLoss(-added_damage_offset, FALSE)
 						M.adjustFireLoss(-added_damage_offset * 0.75, FALSE)	//75% of added_damage_offset
-						added_damage_offset *= 0.5	//Reduce the added_damage_offset by half for each wounded bodypart to keep the offset from getting too ridiculous
 		//Actual healing part starts here
 		M.adjustBruteLoss(-damage_offset, FALSE)	//100% of damage_offset (2.25 / 1.7)
 		M.adjustFireLoss(-damage_offset * 0.75, FALSE)	//75% of damage_offset (1.7 / 1.3)
@@ -462,15 +484,26 @@
 				is_blocked = TRUE
 				break
 	if(!is_blocked)
-		//Extra healing for each bodypart affected by wounds
+		//Extra healing for each bodypart affected by wounds, depending on the max severity of the wound affecting the bodypart
 		if(affecting_tribal)
 			if(M.all_wounds && M.all_wounds.len >= 1)
-				var/added_damage_offset = 2
+				var/added_damage_offset = 0
 				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
 					if(iter_bodypart.wounds && iter_bodypart.wounds.len >= 1)
+						added_damage_offset = 0
+						for(var/datum/wound/iter_wound in iter_bodypart.wounds)
+							switch(iter_wound.severity)
+								if(WOUND_SEVERITY_CRITICAL)
+									if(added_damage_offset < 2)
+										added_damage_offset = 2
+								if(WOUND_SEVERITY_SEVERE)
+									if(added_damage_offset < 1)
+										added_damage_offset = 1
+								if(WOUND_SEVERITY_MODERATE)
+									if(added_damage_offset < 0.5)
+										added_damage_offset = 0.5
 						M.adjustBruteLoss(-added_damage_offset, FALSE)
 						M.adjustFireLoss(-added_damage_offset * 0.75, FALSE)	//75% of added_damage_offset
-						added_damage_offset *= 0.5	//Reduce the added_damage_offset by half for each wounded bodypart to keep the offset from getting too ridiculous
 
 		//Actual healing part starts here
 		M.adjustBruteLoss(-damage_offset, FALSE)	//100% of damage_offset (3.5 / 2.6)
