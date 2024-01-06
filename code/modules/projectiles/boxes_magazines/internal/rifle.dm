@@ -2,7 +2,7 @@
 	name = "bolt action rifle internal magazine"
 	desc = "Oh god, this shouldn't be here"
 	ammo_type = /obj/item/ammo_casing/a762mm
-	caliber = "a762"
+	caliber = "a762mm"
 	max_ammo = 5
 	multiload = 1
 
@@ -10,7 +10,7 @@
 	name = "bolt action rifle internal magazine"
 	desc = "Oh god, this shouldn't be here"
 	ammo_type = /obj/item/ammo_casing/a762mm
-	caliber = "a762"
+	caliber = "a762mm"
 	max_ammo = 10
 	multiload = 1
 
@@ -24,13 +24,13 @@
 //Fallout 13
 /obj/item/ammo_box/magazine/internal/boltaction/hunting
 	ammo_type = /obj/item/ammo_casing/a762mm/sport
-	caliber = "a762"
+	caliber = "a762mm"
 	max_ammo = 5
 	multiload = 1
 
 /obj/item/ammo_box/magazine/internal/boltaction/hunting/remington
 	ammo_type = /obj/item/ammo_casing/a762mm
-	caliber = "a762"
+	caliber = "a762mm"
 	max_ammo = 5
 	multiload = 1
 
