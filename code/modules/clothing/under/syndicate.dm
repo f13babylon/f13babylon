@@ -113,6 +113,9 @@
 	icon_state = "merc_gorka"
 	item_state = "merc_gorka"
 	can_adjust = FALSE
+	obj_flags = UNIQUE_RENAME
+	unique_reskin = list("M1" = "merc_gorkag",
+						"M2" = "merc_gorkar")
 
 /obj/item/clothing/under/syndicate/camo/cosmetic
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
