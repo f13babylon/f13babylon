@@ -293,6 +293,7 @@
 		if(affecting_tribal)
 			if(M.all_wounds && M.all_wounds.len >= 1)
 				var/added_damage_offset = 0
+				var/offset_multiplier = 1
 				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
 					if(iter_bodypart.wounds && iter_bodypart.wounds.len >= 1)
 						added_damage_offset = 0
@@ -307,8 +308,9 @@
 								if(WOUND_SEVERITY_MODERATE)
 									if(added_damage_offset < 1)
 										added_damage_offset = 1
-						M.adjustBruteLoss(-added_damage_offset, FALSE)
-						M.adjustFireLoss(-added_damage_offset * 0.75, FALSE)	//75% of added_damage_offset
+						M.adjustBruteLoss(-added_damage_offset * offset_multiplier, FALSE)
+						M.adjustFireLoss(-added_damage_offset * offset_multiplier * 0.75, FALSE)	//75% of added_damage_offset
+						offset_multiplier *= 0.5	//Half the offset_multipler for each wounded bodypart to keep the offset from getting too ridiculous
 
 		//Actual healing part starts here
 		M.adjustBruteLoss(-damage_offset, FALSE)	//100% of damage_offset (5.4 / 4)
@@ -394,6 +396,7 @@
 		if(affecting_tribal)
 			if(M.all_wounds && M.all_wounds.len >= 1)
 				var/added_damage_offset = 0
+				var/offset_multiplier = 0
 				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
 					if(iter_bodypart.wounds && iter_bodypart.wounds.len >= 1)
 						added_damage_offset = 0
@@ -408,8 +411,10 @@
 								if(WOUND_SEVERITY_MODERATE)
 									if(added_damage_offset < 0.25)
 										added_damage_offset = 0.25
-						M.adjustBruteLoss(-added_damage_offset, FALSE)
-						M.adjustFireLoss(-added_damage_offset * 0.75, FALSE)	//75% of added_damage_offset
+						M.adjustBruteLoss(-added_damage_offset * offset_multiplier, FALSE)
+						M.adjustFireLoss(-added_damage_offset * offset_multiplier * 0.75, FALSE)	//75% of added_damage_offset
+						offset_multiplier *= 0.5	//Half the offset_multipler for each wounded bodypart to keep the offset from getting too ridiculous
+
 		//Actual healing part starts here
 		M.adjustBruteLoss(-damage_offset, FALSE)	//100% of damage_offset (2.25 / 1.7)
 		M.adjustFireLoss(-damage_offset * 0.75, FALSE)	//75% of damage_offset (1.7 / 1.3)
@@ -488,6 +493,7 @@
 		if(affecting_tribal)
 			if(M.all_wounds && M.all_wounds.len >= 1)
 				var/added_damage_offset = 0
+				var/offset_multiplier = 0
 				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
 					if(iter_bodypart.wounds && iter_bodypart.wounds.len >= 1)
 						added_damage_offset = 0
@@ -502,8 +508,9 @@
 								if(WOUND_SEVERITY_MODERATE)
 									if(added_damage_offset < 0.5)
 										added_damage_offset = 0.5
-						M.adjustBruteLoss(-added_damage_offset, FALSE)
-						M.adjustFireLoss(-added_damage_offset * 0.75, FALSE)	//75% of added_damage_offset
+						M.adjustBruteLoss(-added_damage_offset * offset_multiplier, FALSE)
+						M.adjustFireLoss(-added_damage_offset * offset_multiplier * 0.75, FALSE)	//75% of added_damage_offset
+						offset_multiplier *= 0.5	//Half the offset_multipler for each wounded bodypart to keep the offset from getting too ridiculous
 
 		//Actual healing part starts here
 		M.adjustBruteLoss(-damage_offset, FALSE)	//100% of damage_offset (3.5 / 2.6)
