@@ -714,11 +714,6 @@
 	},
 /turf/open/floor/wood/wood_wide,
 /area/f13/building)
-"fg" = (
-/obj/structure/bed/old,
-/obj/effect/spawner/lootdrop/bedsheet,
-/turf/open/floor/wood/wood_fancy,
-/area/f13/building)
 "fh" = (
 /obj/structure/closet/cabinet{
 	anchored = 1
@@ -850,15 +845,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/building)
-"ge" = (
-/turf/closed/indestructible/riveted{
-	desc = "A heavily reinforced utility tunnel  wall. You doubt anything short of a nuke would break it.";
-	icon = 'icons/fallout/turfs/walls/tunnel.dmi';
-	icon_state = "tunnel0";
-	icon_type_smooth = "tunnel";
-	name = "Reinforced utility tunnel"
-	},
 /area/f13/building)
 "gi" = (
 /turf/open/transparent/openspace,
@@ -1589,15 +1575,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
-	},
-/area/f13/building)
-"kF" = (
-/turf/closed/indestructible/riveted{
-	desc = "A heavily reinforced utility tunnel  wall. You doubt anything short of a nuke would break it.";
-	icon = 'icons/fallout/turfs/walls/tunnel.dmi';
-	icon_state = "tunnel0";
-	icon_type_smooth = "tunnel";
-	name = "Reinforced utility tunnel"
 	},
 /area/f13/building)
 "kI" = (
@@ -2717,9 +2694,7 @@
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/legion)
 "rQ" = (
-/obj/structure/railing{
-	layer = 4.1
-	},
+/obj/structure/railing,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/legion)
 "rU" = (
@@ -4354,15 +4329,6 @@
 	},
 /turf/open/transparent/openspace,
 /area/f13/building)
-"Dn" = (
-/turf/closed/indestructible/riveted{
-	desc = "A heavily reinforced utility tunnel  wall. You doubt anything short of a nuke would break it.";
-	icon = 'icons/fallout/turfs/walls/tunnel.dmi';
-	icon_state = "tunnel0";
-	icon_type_smooth = "tunnel";
-	name = "Reinforced utility tunnel"
-	},
-/area/f13/building)
 "Dq" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/cleanable/dirt,
@@ -4867,9 +4833,7 @@
 	},
 /area/f13/building)
 "JQ" = (
-/obj/structure/railing{
-	layer = 4.1
-	},
+/obj/structure/railing,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/legion)
@@ -5827,7 +5791,6 @@
 /area/f13/building)
 "QD" = (
 /obj/machinery/button/flasher{
-	id = null;
 	pixel_x = -8;
 	pixel_y = 9
 	},
@@ -6486,15 +6449,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/legion)
-"Vl" = (
-/turf/closed/indestructible/riveted{
-	desc = "A heavily reinforced utility tunnel  wall. You doubt anything short of a nuke would break it.";
-	icon = 'icons/fallout/turfs/walls/tunnel.dmi';
-	icon_state = "tunnel0";
-	icon_type_smooth = "tunnel";
-	name = "Reinforced utility tunnel"
-	},
-/area/f13/building)
 "Vm" = (
 /obj/structure/fluff/railing{
 	dir = 4
@@ -6577,10 +6531,6 @@
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/highmid,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
-"VX" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood/wood_fancy,
 /area/f13/building)
 "Wa" = (
 /obj/structure/bed/mattress/pregame,
@@ -10428,7 +10378,7 @@ DH
 DH
 DH
 DH
-Wr
+DH
 DH
 DH
 DH
@@ -55766,7 +55716,7 @@ DH
 DH
 eN
 wv
-fg
+jX
 tz
 uz
 wv
@@ -56025,7 +55975,7 @@ CA
 dL
 fo
 vN
-VX
+AE
 JO
 lL
 MD
@@ -57052,8 +57002,8 @@ DH
 CA
 jO
 bA
-VX
-VX
+AE
+AE
 JO
 DV
 yH
@@ -68705,11 +68655,11 @@ DH
 DH
 DH
 DH
-kF
+OI
 dm
-Vl
+OI
 dm
-Dn
+OI
 dm
 PP
 kQ
@@ -68967,7 +68917,7 @@ iC
 OI
 dK
 OI
-ge
+OI
 PP
 PP
 PP
