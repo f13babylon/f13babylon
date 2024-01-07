@@ -2726,7 +2726,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/enclave/hallways)
 "tI" = (
-/turf/open/floor/plating/f13,
+/turf/open/floor/plating,
 /area/f13/enclave)
 "tO" = (
 /obj/machinery/light/small,
@@ -5563,7 +5563,7 @@
 	roundstart_template = /datum/map_template/shuttle/entrance_elevator;
 	width = 5
 	},
-/turf/open/floor/plating/f13,
+/turf/open/floor/plating,
 /area/f13/enclave)
 "Pa" = (
 /obj/structure/railing/corner{

@@ -5622,7 +5622,7 @@
 "fps" = (
 /obj/machinery/light/small,
 /mob/living/simple_animal/pet/dog/protectron,
-/turf/open/floor/plating/f13/inside,
+/turf/open/floor/plating,
 /area/f13/city)
 "fpz" = (
 /obj/effect/decal/cleanable/dirt,
@@ -20533,7 +20533,7 @@
 	},
 /area/f13/city)
 "twI" = (
-/turf/open/floor/plating/f13/inside,
+/turf/open/floor/plating,
 /area/f13/city)
 "txq" = (
 /obj/structure/flora/grass/wasteland,

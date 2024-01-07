@@ -1453,7 +1453,7 @@
 "jL" = (
 /obj/structure/table/wood,
 /obj/item/weapon/maptool,
-/turf/open/floor/plating/f13/inside/gravel,
+/turf/open/indestructible/ground/outside/gravel,
 /area/f13/wasteland/rocksprings)
 "jN" = (
 /obj/machinery/light/small/broken{
@@ -4006,7 +4006,7 @@
 "Az" = (
 /obj/structure/table/wood,
 /obj/item/binoculars,
-/turf/open/floor/plating/f13/inside/gravel,
+/turf/open/indestructible/ground/outside/gravel,
 /area/f13/wasteland/rocksprings)
 "AB" = (
 /obj/structure/rack/shelf_metal,
@@ -4987,7 +4987,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "Kz" = (
-/turf/open/floor/plating/f13/inside/gravel,
+/turf/open/indestructible/ground/outside/gravel,
 /area/f13/wasteland/rocksprings)
 "KA" = (
 /obj/structure/railing{

@@ -5769,14 +5769,14 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "awm" = (
-/turf/open/floor/plating/f13/inside,
+/turf/open/floor/plating,
 /area/f13/building)
 "awn" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
 /mob/living/simple_animal/pet/dog/protectron,
-/turf/open/floor/plating/f13/inside,
+/turf/open/floor/plating,
 /area/f13/building)
 "awo" = (
 /obj/structure/table/reinforced,
@@ -19733,7 +19733,7 @@
 	dir = 8
 	},
 /mob/living/simple_animal/pet/dog/protectron,
-/turf/open/floor/plating/f13/inside,
+/turf/open/floor/plating,
 /area/f13/building)
 "bua" = (
 /obj/structure/chair/bench,
@@ -20251,7 +20251,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland/east)
 "byd" = (
-/turf/open/floor/plating/f13/inside/gravel,
+/turf/open/indestructible/ground/outside/gravel,
 /area/f13/wasteland/bighorn)
 "bye" = (
 /obj/structure/bed/mattress/pregame,
@@ -28898,7 +28898,7 @@
 /area/f13/building)
 "ezY" = (
 /obj/structure/barricade/sandbags,
-/turf/open/floor/plating/f13/inside/gravel,
+/turf/open/indestructible/ground/outside/gravel,
 /area/f13/wasteland/bighorn)
 "eAb" = (
 /obj/structure/fence{
@@ -47268,9 +47268,7 @@
 	desc = "Well, this isn't fooling anyone.";
 	name = "real communist nuclear warhead"
 	},
-/turf/open/floor/plating/f13/inside/gravel/edge{
-	dir = 1
-	},
+/turf/open/indestructible/ground/outside/gravel,
 /area/f13/building/museum)
 "mof" = (
 /obj/structure/barricade/wooden,
@@ -50511,7 +50509,7 @@
 /area/f13/brotherhood)
 "nHB" = (
 /obj/machinery/mineral/wasteland_vendor/general,
-/turf/open/floor/plating/f13/inside,
+/turf/open/floor/plating,
 /area/f13/building)
 "nHC" = (
 /obj/structure/car/rubbish1,
@@ -56252,9 +56250,7 @@
 /obj/structure/window/reinforced/spawner,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/under/f13/chinese,
-/turf/open/floor/plating/f13/inside/gravel/edge{
-	dir = 1
-	},
+/turf/open/indestructible/ground/outside/gravel,
 /area/f13/building/museum)
 "pYU" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -59843,7 +59839,7 @@
 	dir = 4
 	},
 /mob/living/simple_animal/pet/dog/protectron,
-/turf/open/floor/plating/f13/inside,
+/turf/open/floor/plating,
 /area/f13/building)
 "rvx" = (
 /obj/structure/flora/grass/wasteland{
@@ -61397,9 +61393,7 @@
 /obj/structure/window/reinforced/spawner,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/head/f13/chinese,
-/turf/open/floor/plating/f13/inside/gravel/edge{
-	dir = 1
-	},
+/turf/open/indestructible/ground/outside/gravel,
 /area/f13/building/museum)
 "seM" = (
 /obj/structure/rack,
@@ -68008,7 +68002,7 @@
 /area/f13/brotherhood/leisure)
 "uRs" = (
 /obj/machinery/mineral/wasteland_vendor/special,
-/turf/open/floor/plating/f13/inside,
+/turf/open/floor/plating,
 /area/f13/building)
 "uRz" = (
 /turf/open/indestructible/ground/outside/ruins{

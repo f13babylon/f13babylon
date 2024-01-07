@@ -475,7 +475,7 @@
 /area/f13/bunker)
 "aAh" = (
 /obj/effect/decal/remains/human,
-/turf/open/floor/plating/f13/inside/mountain,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
 "aAM" = (
 /obj/structure/barricade/sandbags,
@@ -1568,7 +1568,7 @@
 /obj/structure/curtain{
 	color = "red"
 	},
-/turf/open/floor/plating/f13,
+/turf/open/floor/plating,
 /area/f13/vault)
 "bYb" = (
 /obj/structure/chair/f13chair2{
@@ -4608,7 +4608,7 @@
 /area/f13/bunker)
 "fAl" = (
 /obj/effect/decal/cleanable/greenglow,
-/turf/open/floor/plating/f13/inside/mountain,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
 "fCa" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -4970,7 +4970,7 @@
 /area/f13/caves)
 "fVP" = (
 /obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plating/f13,
+/turf/open/floor/plating,
 /area/f13/vault)
 "fWM" = (
 /obj/structure/table,
@@ -5587,9 +5587,7 @@
 /area/f13/bunker)
 "gJA" = (
 /obj/effect/decal/cleanable/vomit/old,
-/turf/open/floor/plating/f13/inside/mountain{
-	icon_state = "mountain2"
-	},
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/ahs)
 "gJB" = (
 /obj/effect/landmark/start/f13/vaultscientist,
@@ -5852,9 +5850,7 @@
 	},
 /area/f13/city)
 "hao" = (
-/turf/open/floor/plating/f13/inside/mountain{
-	icon_state = "mountain2"
-	},
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
 "has" = (
 /obj/effect/decal/cleanable/dirt,
@@ -8008,7 +8004,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/plating/f13,
+/turf/open/floor/plating,
 /area/f13/vault)
 "jyJ" = (
 /obj/machinery/door/airlock/public/glass{
@@ -11273,7 +11269,7 @@
 /turf/closed/wall/f13/tentwall,
 /area/f13/caves)
 "nmO" = (
-/turf/open/floor/plating/f13/inside/mountain,
+/turf/open/indestructible/ground/inside/mountain
 /area/f13/underground/cave)
 "nnl" = (
 /obj/machinery/light{
@@ -16878,7 +16874,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/vault)
 "tHX" = (
-/turf/open/floor/plating/f13,
+/turf/open/floor/plating,
 /area/f13/enc_elevator)
 "tIh" = (
 /turf/open/indestructible/ground/outside/road{
@@ -17984,9 +17980,7 @@
 /area/f13/bunker)
 "uOR" = (
 /obj/effect/decal/cleanable/greenglow,
-/turf/open/floor/plating/f13/inside/mountain{
-	icon_state = "mountain2"
-	},
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
 "uPH" = (
 /obj/structure/flora/ausbushes/sparsegrass{
