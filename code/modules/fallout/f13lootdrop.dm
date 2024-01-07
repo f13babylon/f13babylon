@@ -1702,6 +1702,8 @@
 				/obj/item/ammo_box/a50MGbox,
 				/obj/item/ammo_box/c4570,
 				/obj/item/ammo_box/needle = 2,
+				/obj/item/ammo_box/magazine/msmg9mm/drum = 2,
+				/obj/item/ammo_box/magazine/mthompson/drum = 2,
 				/obj/item/ammo_box/tube/c4570 = 2,
 				/obj/item/ammo_box/magazine/d12g = 2,
 				/obj/item/ammo_box/magazine/m44 = 2,
@@ -1711,6 +1713,7 @@
 				/obj/item/ammo_box/magazine/amr = 2,
 				/obj/item/ammo_box/magazine/m556mm/extended = 2,
 				/obj/item/ammo_box/magazine/m5mm = 2,
+				/obj/item/ammo_box/magazine/m762mm/extended = 2,
 				/obj/item/stock_parts/cell/ammo/ec,
 	)
 
@@ -1723,15 +1726,12 @@
 	icon_state = "ammot4_loot"
 	lootdoubles = TRUE
 	loot = list(
-				/obj/item/ammo_box/magazine/msmg9mm/drum = 2,
-				/obj/item/ammo_box/magazine/mthompson/drum = 2,
 				/obj/item/ammo_box/magazine/mcalico = 2,
 				/obj/item/ammo_box/magazine/mp90 = 2,
 				/obj/item/ammo_box/magazine/msmg14mm/extended = 2,
 				/obj/item/ammo_box/magazine/m556mm/drum = 2,
 				/obj/item/ammo_box/magazine/m5mm/drum = 2,
 				/obj/item/ammo_box/magazine/mg11 = 2,
-				/obj/item/ammo_box/magazine/m762mm/extended = 2,
 				/obj/item/ammo_box/magazine/lmg = 2,
 				/obj/item/ammo_box/magazine/type88 = 2,
 				/obj/item/stock_parts/cell/ammo/mfc,
