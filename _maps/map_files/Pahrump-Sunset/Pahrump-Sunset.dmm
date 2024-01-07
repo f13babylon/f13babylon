@@ -17913,11 +17913,6 @@
 	icon_state = "greenrustychess"
 	},
 /area/f13/building/massfusion)
-"blb" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/wreck/trash/engine,
-/turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/wasteland/bighorn)
 "blc" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -58716,11 +58711,14 @@
 /turf/open/water,
 /area/f13/brotherhood)
 "qZL" = (
-/obj/structure/railing{
-	dir = 4
+/obj/machinery/door/unpowered/securedoor/sheriff_door{
+	desc = "A heavily reinforced door.";
+	max_integrity = 1200;
+	name = "reinforced secure door";
+	obj_integrity = 1200
 	},
-/turf/closed/mineral/random/low_chance,
-/area/f13/caves)
+/turf/open/floor/f13/wood,
+/area/f13/city/bighorn)
 "qZM" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderleft0"
@@ -81039,7 +81037,7 @@ aae
 aae
 aaa
 aae
-qZL
+aae
 aae
 aae
 aae
@@ -84133,7 +84131,7 @@ mUU
 mUU
 mUU
 mUU
-mUU
+qZL
 mUU
 mUU
 mUU
@@ -84390,7 +84388,7 @@ ygj
 ygj
 qud
 ygj
-ygj
+mHZ
 ygj
 ygj
 ygj
@@ -84647,7 +84645,7 @@ bjr
 jQu
 npM
 bVr
-blb
+sub
 mFG
 apj
 aso
