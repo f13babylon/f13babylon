@@ -12510,9 +12510,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/village)
 "aSy" = (
-/turf/open/floor/plating/f13/outside/road{
-	dir = 4;
-	icon_state = "crossborder"
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "crossborder";
+	dir = 4
 	},
 /area/f13/wasteland/east)
 "aSz" = (
@@ -14136,7 +14136,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "aYg" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "cross1"
 	},
 /area/f13/wasteland/east)
@@ -15377,7 +15377,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "bcH" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "cross2"
 	},
 /area/f13/wasteland/east)
@@ -15653,7 +15653,7 @@
 	},
 /area/f13/wasteland/west)
 "bdG" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "cross3"
 	},
 /area/f13/wasteland/east)
@@ -26450,6 +26450,13 @@
 /obj/structure/sign/poster/prewar/corporate_espionage,
 /turf/closed/wall/f13/wood,
 /area/f13/brotherhood)
+"dvM" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "crossborder";
+	dir = 1
+	},
+/area/f13/building)
 "dvN" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 4;
@@ -30480,9 +30487,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/city/bighorn)
 "fkb" = (
-/turf/open/floor/plating/f13/outside/road{
-	dir = 8;
-	icon_state = "crossborder"
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "crossborder";
+	dir = 8
 	},
 /area/f13/wasteland/east)
 "fkj" = (
@@ -33248,7 +33255,7 @@
 	},
 /area/f13/building/massfusion)
 "gzl" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "cross3"
 	},
 /area/f13/wasteland/firestation)
@@ -39690,7 +39697,7 @@
 /turf/open/floor/wood/wood_wide,
 /area/f13/brotherhood/leisure)
 "jiW" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "crosswalkvert1"
 	},
 /area/f13/wasteland/east)
@@ -42611,6 +42618,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
+"kAA" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "crossborder"
+	},
+/area/f13/building)
 "kAO" = (
 /obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/dirt,
@@ -45955,8 +45968,9 @@
 	},
 /area/f13/wasteland/east)
 "lOP" = (
-/turf/open/floor/plating/f13/outside/road{
-	icon_state = "horizontaltopborderbottom1"
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "crossborder";
+	dir = 1
 	},
 /area/f13/wasteland/east)
 "lPa" = (
@@ -49306,7 +49320,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/city/bighorn)
 "niB" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "crosswalkvert3"
 	},
 /area/f13/wasteland/east)
@@ -61193,7 +61207,7 @@
 /turf/open/floor/wood/wood_wide,
 /area/f13/brotherhood/leisure)
 "rZr" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "cross1"
 	},
 /area/f13/wasteland/firestation)
@@ -62236,9 +62250,9 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/brotherhood)
 "szf" = (
-/turf/open/floor/plating/f13/outside/road{
-	dir = 8;
-	icon_state = "crossborder"
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "crossborder";
+	dir = 8
 	},
 /area/f13/wasteland/firestation)
 "szU" = (
@@ -63227,7 +63241,7 @@
 	},
 /area/f13/wasteland/nanotrasen)
 "sUU" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "cross2"
 	},
 /area/f13/wasteland/firestation)
@@ -67418,6 +67432,13 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"uEZ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "crossborder";
+	dir = 1
+	},
+/area/f13/wasteland/east)
 "uFd" = (
 /obj/structure/barricade/wooden,
 /obj/structure/fence/wooden{
@@ -68477,9 +68498,9 @@
 	},
 /area/f13/building/museum)
 "uZd" = (
-/turf/open/floor/plating/f13/outside/road{
-	dir = 4;
-	icon_state = "crossborder"
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "crossborder";
+	dir = 4
 	},
 /area/f13/wasteland/firestation)
 "uZe" = (
@@ -73124,7 +73145,7 @@
 	},
 /area/f13/wasteland/east)
 "wTG" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "crosswalkvert2"
 	},
 /area/f13/wasteland/east)
@@ -130767,20 +130788,20 @@ blg
 blg
 blg
 jZa
-qqQ
+kAA
 jiW
 wTG
 wTG
 wTG
 niB
-nar
+dvM
 eZN
-nvN
+kAA
 jiW
 wTG
 wTG
 niB
-tEX
+uEZ
 hYk
 nyP
 uph
@@ -132137,7 +132158,7 @@ asX
 nwW
 ctV
 nAt
-lOP
+jaD
 ify
 agk
 afS
@@ -132394,7 +132415,7 @@ asX
 aKP
 oqY
 nAt
-lOP
+jaD
 ify
 afC
 afS
@@ -132566,20 +132587,20 @@ aoc
 aoc
 jWs
 eZN
-qqQ
+kAA
 jiW
 wTG
 wTG
 wTG
 niB
-nar
+dvM
 eZN
-nvN
+kAA
 jiW
 wTG
 wTG
 niB
-pMY
+lOP
 iyp
 iyp
 iyp
@@ -132651,7 +132672,7 @@ aKP
 aKP
 qiy
 nAt
-lOP
+jaD
 ify
 agk
 agk
@@ -132823,20 +132844,20 @@ xjR
 aoc
 gCk
 eZN
-qqQ
+kAA
 jiW
 wTG
 wTG
 wTG
 niB
-nar
+dvM
 eZN
-nvN
+kAA
 jiW
 wTG
 wTG
 niB
-pMY
+lOP
 cSo
 cSo
 cSo
@@ -132908,7 +132929,7 @@ asX
 sNP
 tRi
 nAt
-lOP
+jaD
 pgy
 kdL
 ufd
@@ -133165,7 +133186,7 @@ bgI
 aKP
 aKP
 nAt
-lOP
+jaD
 pgy
 jMr
 jMr
@@ -133422,7 +133443,7 @@ bgI
 oNY
 bbd
 nAt
-lOP
+jaD
 pgy
 xPu
 jMr
@@ -133679,7 +133700,7 @@ bgI
 oNY
 bbd
 nAt
-lOP
+jaD
 pgy
 jMr
 jMr
@@ -133936,7 +133957,7 @@ asX
 aKP
 aKP
 nAt
-lOP
+jaD
 pgy
 jMr
 jMr
@@ -134622,20 +134643,20 @@ blg
 blg
 blg
 eZN
-qqQ
+kAA
 jiW
 wTG
 wTG
 wTG
 niB
-nar
+dvM
 eZN
-nvN
+kAA
 jiW
 wTG
 wTG
 niB
-pMY
+lOP
 gpS
 njW
 scH

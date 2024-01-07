@@ -841,8 +841,8 @@
 	},
 /area/f13/wasteland/rocksprings)
 "aMF" = (
-/turf/open/floor/plating/f13/outside/road{
-	icon_state = "crosswalkvert3"
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "crosswalkvert2"
 	},
 /area/f13/wasteland/rocksprings)
 "aMH" = (
@@ -991,6 +991,11 @@
 /obj/item/storage/belt/utility/gardener,
 /turf/open/indestructible/ground/outside/dirt/harsh,
 /area/f13/building)
+"aVj" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "crossborder"
+	},
+/area/f13/wasteland/rocksprings)
 "aVP" = (
 /turf/open/indestructible/ground/outside/river{
 	desc = "Water that has been sitting for a long time, doesn't look very healthy for consumption.";
@@ -1061,6 +1066,11 @@
 /obj/structure/reagent_dispensers/compostbin,
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/legion)
+"bcb" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "cross1"
+	},
+/area/f13/wasteland/rocksprings)
 "bcd" = (
 /obj/structure/flora/grass/jungle/b{
 	icon_state = "grassa4"
@@ -1773,6 +1783,11 @@
 	icon_state = "common-broken1"
 	},
 /area/f13/building)
+"bIE" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "crosswalkvert3"
+	},
+/area/f13/wasteland/rocksprings)
 "bIL" = (
 /obj/effect/decal/fakelattice,
 /obj/structure/debris/v4,
@@ -2693,6 +2708,11 @@
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/building)
+"cDs" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "cross2"
+	},
+/area/f13/wasteland/rocksprings)
 "cDO" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
@@ -4539,7 +4559,10 @@
 	dir = 4
 	},
 /obj/effect/overlay/turfs/sidewalk,
-/turf/open/indestructible/ground/outside/dirt/harsh,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "crossborder";
+	dir = 4
+	},
 /area/f13/wasteland/rocksprings)
 "etk" = (
 /obj/structure/window/fulltile/house{
@@ -5736,8 +5759,8 @@
 /obj/effect/decal/marking{
 	icon_state = "doublehorizontalleft"
 	},
-/turf/open/floor/plating/f13/outside/road{
-	icon_state = "crosswalkvert3"
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "crosswalkvert2"
 	},
 /area/f13/wasteland/rocksprings)
 "fzL" = (
@@ -10318,8 +10341,8 @@
 /obj/effect/decal/marking{
 	icon_state = "doublevertical"
 	},
-/turf/open/floor/plating/f13/outside/road{
-	icon_state = "cross3"
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "cross1"
 	},
 /area/f13/wasteland/rocksprings)
 "kqM" = (
@@ -10373,6 +10396,12 @@
 	icon_state = "whitebluechess"
 	},
 /area/f13/building)
+"kuc" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "crossborder";
+	dir = 4
+	},
+/area/f13/wasteland/rocksprings)
 "kuv" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/raider{
@@ -12834,7 +12863,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building)
 "mVe" = (
-/turf/open/floor/plating/f13/outside/road{
+/turf/open/indestructible/ground/outside/road{
 	icon_state = "cross3"
 	},
 /area/f13/wasteland/rocksprings)
@@ -13150,6 +13179,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_wide,
 /area/f13/building)
+"nkZ" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "crossborder";
+	dir = 1
+	},
+/area/f13/wasteland/rocksprings)
 "nli" = (
 /obj/structure/fence/wooden{
 	pixel_x = -18
@@ -14539,8 +14574,8 @@
 /obj/effect/decal/marking{
 	icon_state = "doublehorizontaldegraded"
 	},
-/turf/open/floor/plating/f13/outside/road{
-	icon_state = "crosswalkvert3"
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "crosswalkvert2"
 	},
 /area/f13/wasteland/rocksprings)
 "oxf" = (
@@ -17154,6 +17189,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/black,
 /area/f13/legion)
+"qZo" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "crossborder";
+	dir = 8
+	},
+/area/f13/wasteland/rocksprings)
 "qZy" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/structure/fence/wooden{
@@ -22766,6 +22807,11 @@
 	dir = 1
 	},
 /turf/open/indestructible/ground/outside/desert/harsh,
+/area/f13/wasteland/rocksprings)
+"wqK" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "crosswalkvert1"
+	},
 /area/f13/wasteland/rocksprings)
 "wqX" = (
 /obj/structure/debris/v2,
@@ -49786,7 +49832,7 @@ arE
 paT
 paT
 esP
-eKm
+kuc
 kdJ
 eKm
 uxF
@@ -49794,8 +49840,8 @@ eKm
 eKm
 eKm
 eKm
-eKm
-eKm
+kuc
+kuc
 eKm
 eKm
 eKm
@@ -50042,8 +50088,8 @@ paT
 paT
 uod
 paT
-cmQ
-mVe
+paT
+bcb
 hwx
 hwx
 hwx
@@ -50051,8 +50097,8 @@ hwx
 hwx
 hwx
 hwx
-mVe
-mVe
+bcb
+bcb
 hwx
 hwx
 hwx
@@ -50299,8 +50345,8 @@ dBw
 paT
 paT
 nUF
-mVe
-mVe
+cmQ
+cDs
 hwx
 hwx
 hwx
@@ -50309,7 +50355,7 @@ hwx
 wWC
 cmQ
 gos
-mVe
+cDs
 hwx
 hwx
 hwx
@@ -50556,8 +50602,8 @@ paT
 cmQ
 gos
 hwx
-mVe
-mVe
+bcb
+bcb
 hwx
 hwx
 hwx
@@ -50565,8 +50611,8 @@ hwx
 hwx
 hwx
 hwx
-mVe
-mVe
+bcb
+bcb
 hwx
 hwx
 hwx
@@ -50813,8 +50859,8 @@ euM
 wWC
 nUF
 gos
-mVe
-mVe
+cDs
+cDs
 hwx
 hwx
 hwx
@@ -50822,8 +50868,8 @@ hwx
 hwx
 hwx
 hwx
-mVe
-mVe
+cDs
+cDs
 hwx
 hwx
 hwx
@@ -51327,8 +51373,8 @@ hwx
 hwx
 hwx
 hwx
-mVe
-mVe
+cDs
+cDs
 hwx
 hwx
 hwx
@@ -51336,8 +51382,8 @@ hwx
 hwx
 hwx
 hwx
-mVe
-mVe
+cDs
+cDs
 hwx
 hwx
 hwx
@@ -51584,8 +51630,8 @@ hwx
 hwx
 hwx
 hwx
-mVe
-mVe
+bcb
+bcb
 wWC
 nUF
 gos
@@ -51593,8 +51639,8 @@ hwx
 hwx
 hwx
 hwx
-mVe
-mVe
+bcb
+bcb
 wWC
 nUF
 hwx
@@ -51841,8 +51887,8 @@ nUF
 gos
 hwx
 hwx
-mVe
-mVe
+cDs
+cDs
 hwx
 hwx
 hwx
@@ -51850,8 +51896,8 @@ hwx
 hwx
 hwx
 hwx
-mVe
-mVe
+cDs
+cDs
 hwx
 hwx
 wWC
@@ -52204,12 +52250,12 @@ btA
 btA
 btA
 btA
-aoJ
+aVj
 aMF
 aMF
 aMF
 aMF
-ldg
+nkZ
 btA
 btA
 btA
@@ -52355,17 +52401,17 @@ pMj
 pMj
 pMj
 pMj
-pMj
-jeY
-aMF
+qZo
+aVj
+wqK
 aMF
 aMF
 fzx
 aMF
 aMF
-aMF
-dyE
-pMj
+bIE
+nkZ
+qZo
 pMj
 pMj
 nrf
@@ -52613,15 +52659,15 @@ hwr
 hwr
 vGk
 vGk
-efV
-aMF
+aVj
+wqK
 aMF
 aMF
 oxc
 aMF
 aMF
-aMF
-hiG
+bIE
+nkZ
 iww
 hwr
 hwr
@@ -83196,7 +83242,7 @@ hwx
 hwx
 hwx
 hwx
-mVe
+bcb
 jEL
 jEL
 jEL
@@ -83453,7 +83499,7 @@ ddm
 hwx
 hwx
 hwx
-mVe
+cDs
 jEL
 jEL
 jEL
@@ -83710,7 +83756,7 @@ tPI
 tPI
 tPI
 oXS
-mVe
+bcb
 jEL
 jEL
 jEL
@@ -83967,7 +84013,7 @@ yhR
 hwx
 hwx
 hwx
-mVe
+cDs
 jEL
 jEL
 jEL
@@ -84224,7 +84270,7 @@ hwx
 hwx
 hwx
 hwx
-mVe
+bcb
 jEL
 jEL
 jEL
