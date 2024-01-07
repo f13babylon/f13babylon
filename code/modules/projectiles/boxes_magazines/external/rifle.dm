@@ -69,7 +69,7 @@
 	start_empty = 1
 
 /obj/item/ammo_box/magazine/m556mm/drum
-	name = "rifle drum magazine (5.56mm)"
+	name = "rifle drum magazine (5mm)"
 	icon_state = "mdrum"
 	max_ammo = 50
 
