@@ -28,28 +28,6 @@
 /turf/open/floor/plating/f13/MakeDry()
 	return
 
-/turf/open/floor/plating/f13/outside
-	name = "What the fuck mappers? why is this here"
-	desc = "If found, scream at the github repo about this"
-	icon_state = "wasteland1"
-	icon = 'icons/turf/f13desert.dmi'
-	sunlight_state = SUNLIGHT_SOURCE
-
-/* Outside turfs get global lighting */
-/turf/open/floor/plating/f13/outside/Initialize(mapload)
-	. = ..()
-	flags_2 |= GLOBAL_LIGHT_TURF_2
-
-/turf/open/floor/plating/f13/outside/road
-	name = "\proper road"
-	desc = "A stretch of road."
-	icon = 'icons/turf/f13road.dmi'
-	icon_state = "outermiddle"
-
-/turf/open/floor/plating/f13/outside/road/harsh
-	icon = 'icons/fallout/turfs/f13roadharsh.dmi'
-	icon_state = "outerpavement"
-
 //GRAVEL INDOORS
 /turf/open/floor/plating/f13/inside/gravel
 	name = "gravel"
