@@ -378,9 +378,9 @@
 	build_path = /obj/item/ammo_box/magazine/m556mm/extended/empty
 	category = list("initial", "Intermediate Magazines")
 
-/datum/design/ammolathe/m5mmext
+/datum/design/ammolathe/m5mm
 	name = "empty rifle magazine (5mm)"
-	id = "m5mmext"
+	id = "m5mm"
 	materials = list(/datum/material/iron = 16000)
 	build_path = /obj/item/ammo_box/magazine/m5mm/empty
 	category = list("initial", "Intermediate Magazines")
@@ -435,13 +435,6 @@
 	id = "mcalico"
 	materials = list(/datum/material/iron = 8000)
 	build_path = /obj/item/ammo_box/magazine/mcalico/empty
-	category = list("initial", "Advanced Magazines")
-
-/datum/design/ammolathe/mthompsondrum
-	name = "empty thompson drum magazine (.45 ACP)"
-	id = "mthompsondrum"
-	materials = list(/datum/material/iron = 8000)
-	build_path = /obj/item/ammo_box/magazine/mthompson/drum/empty
 	category = list("initial", "Advanced Magazines")
 
 /datum/design/ammolathe/mp90
