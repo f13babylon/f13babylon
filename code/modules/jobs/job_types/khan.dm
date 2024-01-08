@@ -268,6 +268,7 @@
 		/obj/item/stack/sheet/leather/twenty = 1,
 		/obj/item/stack/sheet/cloth/thirty = 1,
 		/obj/item/stack/sheet/prewar/twenty = 1,
+		/obj/item/book/granter/trait/explosives = 1,
 		/obj/item/book/granter/trait/selection = 1,
 		)
 
