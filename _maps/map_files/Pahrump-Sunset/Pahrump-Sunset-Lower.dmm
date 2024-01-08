@@ -6455,7 +6455,7 @@
 /obj/structure/table/wood/settler{
 	name = "stage"
 	},
-/obj/item/bighorn_flag,
+/obj/item/flag/bighorn,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel/bighorn)
 "dYU" = (
@@ -14314,7 +14314,7 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/tunnel)
 "tao" = (
-/obj/item/bighorn_flag,
+/obj/item/flag/bighorn,
 /turf/open/floor/f13{
 	icon_state = "greenrustyfull"
 	},
@@ -16048,7 +16048,7 @@
 	},
 /area/f13/tunnel/bighorn)
 "wlv" = (
-/obj/item/bighorn_flag,
+/obj/item/flag/bighorn,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel/bighorn)
 "wlB" = (

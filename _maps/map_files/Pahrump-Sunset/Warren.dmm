@@ -3769,6 +3769,12 @@
 /obj/structure/barricade/wooden/strong,
 /turf/closed/wall/f13/wood,
 /area/f13/wasteland/warren)
+"dud" = (
+/obj/item/flag/renegade,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontaltopborderbottom0"
+	},
+/area/f13/wasteland/warren)
 "due" = (
 /obj/structure/table,
 /obj/item/restraints/handcuffs,
@@ -58152,7 +58158,7 @@ fsv
 fsv
 fsv
 anJ
-nFf
+dud
 lMO
 pbp
 pbp
@@ -59180,7 +59186,7 @@ wmP
 oBv
 vtb
 anJ
-nFf
+dud
 pbp
 pbp
 lMO

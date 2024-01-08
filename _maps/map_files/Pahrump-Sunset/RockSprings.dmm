@@ -2259,6 +2259,13 @@
 /obj/structure/barricade/wooden/strong,
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/building)
+"cfX" = (
+/obj/structure/lattice,
+/obj/item/flag/renegade{
+	pixel_y = 28
+	},
+/turf/open/indestructible/ground/outside/desert/harsh,
+/area/f13/wasteland/rocksprings)
 "cfZ" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8;
@@ -2479,20 +2486,14 @@
 /turf/open/indestructible/ground/outside/dirt/harsh,
 /area/f13/wasteland/rocksprings)
 "cuN" = (
-/obj/structure/barricade/bars{
-	max_integrity = 1200;
-	name = "reinforced metal bars";
-	obj_integrity = 1200
+/obj/structure/lattice,
+/obj/structure/obstacle/barbedwire/end{
+	dir = 8
 	},
-/obj/item/renegade_flag,
-/turf/closed/indestructible/rock{
-	color = "#b09168";
-	desc = "An extremely tough wall.";
-	icon = 'icons/fallout/turfs/walls/house.dmi';
-	icon_state = "house0";
-	icon_type_smooth = "house";
-	name = "salvaged wall"
+/obj/item/flag/renegade{
+	pixel_y = 28
 	},
+/turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
 "cuR" = (
 /turf/open/floor/wood/wood_common{
@@ -11191,7 +11192,7 @@
 /turf/open/floor/plasteel/cult,
 /area/f13/building)
 "lpn" = (
-/obj/item/renegade_flag,
+/obj/item/flag/renegade,
 /turf/open/indestructible/ground/outside/dirt/harsh{
 	dir = 4;
 	icon_state = "dirt"
@@ -21457,7 +21458,7 @@
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/legion)
 "vfN" = (
-/obj/item/renegade_flag,
+/obj/item/flag/renegade,
 /turf/open/indestructible/ground/outside/dirt/harsh{
 	dir = 8;
 	icon_state = "dirt"
@@ -70781,8 +70782,8 @@ mtU
 mtU
 mtU
 mtU
-cuN
-obp
+mtU
+cfX
 hgP
 hgP
 hgP
@@ -77720,8 +77721,8 @@ mtU
 mtU
 mtU
 mtU
+mtU
 cuN
-kmO
 hgP
 hgP
 hgP
@@ -78222,8 +78223,8 @@ mtU
 mtU
 mtU
 mtU
-cuN
-obp
+mtU
+cfX
 hgP
 hgP
 hgP

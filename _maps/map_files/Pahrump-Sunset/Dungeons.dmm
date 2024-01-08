@@ -6293,7 +6293,7 @@
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/bunker)
 "hzc" = (
-/obj/item/renegade_flag,
+/obj/item/flag/renegade,
 /turf/closed/wall/mineral/wood,
 /area/f13/city)
 "hAm" = (
@@ -7679,7 +7679,7 @@
 	},
 /area/f13/bunker)
 "jcW" = (
-/obj/item/renegade_flag,
+/obj/item/flag/renegade,
 /turf/closed/indestructible/f13vaultrusted,
 /area/f13/city)
 "jda" = (
@@ -16218,7 +16218,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/caves)
 "sTw" = (
-/obj/item/renegade_flag,
+/obj/item/flag/renegade,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "sUw" = (
