@@ -427,7 +427,7 @@
 			B.forceMove(drop_location())
 			beakers -= B
 		return
-	else if(istype(I, /obj/item/reagent_containers/glass/beaker) || istype(I, /obj/item/reagent_containers/glass/bottle))
+	else if(istype(I, /obj/item/reagent_containers/glass/beaker/bomb))
 		if(beakers.len < max_beakers)
 			if(!user.transferItemToLoc(I, src))
 				return
@@ -469,7 +469,7 @@
 		if(istype(G, /obj/item/grenade/chem_grenade/adv_release))
 			time_release += 50 // A typical bomb, using basic beakers, will explode over 2-4 seconds. Using two will make the reaction last for less time, but it will be more dangerous overall.
 
-		for(var/obj/item/reagent_containers/glass/B in G)
+		for(var/obj/item/reagent_containers/glass/beaker/bomb/B in G)
 			if(beakers.len < max_beakers)
 				beakers += B
 				B.forceMove(src)

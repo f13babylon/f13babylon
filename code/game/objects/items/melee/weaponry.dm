@@ -359,6 +359,42 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	throwforce = 5
 	embedding = list("pain_chance" = 5, "embed_chance" = 100, "fall_chance" = 0, "jostle_chance" = 10, "pain_stam_pct" = 0.8, "jostle_pain_mult" = 3)
 
+/obj/item/throwing_star/knife
+	name = "throwing knife"
+	desc = "A light rusty knife with sharpened tip for easier throwing."
+	icon = 'icons/obj/items_and_weapons.dmi'
+	lefthand_file = 'icons/mob/inhands/equipment/kitchen_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/kitchen_righthand.dmi'
+	icon_state = "knife_throwing"
+	item_state = "knife"
+	force = 5
+	throwforce = 8
+	throw_speed = 4
+	embedding = list("pain_mult" = 3, "embed_chance" = 65, "fall_chance" = 0, "embed_chance_turf_mod" = 15)
+	armour_penetration = 0.3
+	w_class = WEIGHT_CLASS_SMALL
+	sharpness = SHARP_EDGED
+	custom_materials = list(/datum/material/iron=500, /datum/material/glass=500)
+	resistance_flags = FIRE_PROOF
+
+/obj/item/throwing_star/tomahawk
+	name = "tomahawk"
+	desc = "A very crude heavy axe wrapped around with some cloth. Meant to inflict heavy damage."
+	icon = 'icons/obj/items_and_weapons.dmi'
+	icon_state = "tomahawk"
+	item_state = "hatchet"
+	lefthand_file = 'icons/mob/inhands/equipment/hydroponics_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/hydroponics_righthand.dmi'
+	force = 15
+	throwforce = 30
+	throw_speed = 3
+	embedding = list("pain_mult" = 2, "embed_chance" = 40, "fall_chance" = 0, "embed_chance_turf_mod" = 15)
+	armour_penetration = 0.2
+	w_class = WEIGHT_CLASS_NORMAL
+	sharpness = SHARP_EDGED
+	custom_materials = list(/datum/material/iron=500, /datum/material/glass=500)
+	resistance_flags = FIRE_PROOF
+
 /obj/item/cane
 	name = "cane"
 	desc = "A cane used by a true gentleman. Or a clown."

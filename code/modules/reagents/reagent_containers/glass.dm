@@ -216,6 +216,16 @@
 	possible_transfer_amounts = list(1,2,3,4,5,10,15,20,25,30,50,100,120)
 	volume = 120
 
+/obj/item/reagent_containers/glass/beaker/bomb
+	name = "grenade beaker"
+	desc = "A beaker. It can hold up to 100 units. Unable to withstand extreme pHes."
+	icon = 'icons/obj/chemical.dmi'
+	volume = 100
+	icon_state = "grenbeaker"
+	item_state = "beaker"
+	custom_materials = list(/datum/material/glass=500)
+	possible_transfer_amounts = list(5,10,15,20,25,30,50,100)
+
 /obj/item/reagent_containers/glass/beaker/large
 	name = "large beaker"
 	desc = "A large beaker. Can hold up to 120 units. Unable to withstand reagents of an extreme pH."
