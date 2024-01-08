@@ -8,7 +8,7 @@
 	righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'
 	flags_1 = CONDUCT_1
 
-	var/borghealth = 300
+	var/borghealth = 200
 
 	var/list/basic_modules = list() //a list of paths, converted to a list of instances on New()
 	var/list/emag_modules = list() //ditto
@@ -688,7 +688,7 @@
 	emag_modules = list(/obj/item/gun/energy/laser/cyborg)
 	ratvar_modules = list(/obj/item/clockwork/slab/cyborg/security,
 		/obj/item/clockwork/weapon/ratvarian_spear)
-	borghealth = 450
+	borghealth = 200
 	cyborg_base_icon = "gutsy"
 	moduleselect_icon = "standard"
 	hat_offset = -2
