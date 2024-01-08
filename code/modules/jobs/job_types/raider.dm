@@ -50,7 +50,8 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	/datum/outfit/loadout/raider_painspike,
 	/datum/outfit/loadout/raider_badlands,
 	/datum/outfit/loadout/raider_smith,
-	/datum/outfit/loadout/quack_doctor
+	/datum/outfit/loadout/quack_doctor,
+	/datum/outfit/loadout/raider_slavemaster
 	)
 
 
@@ -204,7 +205,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 		)
 
 /datum/outfit/loadout/quack_doctor
-	name = "Quack Doctor"
+	name = "Raider Sawbone"
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/followers
 	l_hand = /obj/item/storage/backpack/duffelbag/med/surgery
 	r_hand = /obj/item/book/granter/trait/midsurgery
@@ -234,6 +235,33 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 		/obj/item/stack/sheet/mineral/sandstone = 50,
 		/obj/item/book/granter/trait/techno = 1,
 		/obj/item/book/granter/crafting_recipe/scav = 1,
+		)
+
+/datum/outfit/loadout/raider_slavemaster
+	name = "Manhunter"
+	suit = /obj/item/clothing/suit/armored/medium/legexile
+	uniform = /obj/item/clothing/under/f13/exile/legion
+	backpack_contents = list(
+		/obj/item/melee/onehanded/machete,
+		/obj/item/restraints/legcuffs/bola/tactical,
+		/obj/item/restraints/legcuffs = 2,
+		/obj/item/electropack/shockcollar/explosive = 2,
+		/obj/item/book/granter/trait/bigleagues,
+		)
+
+/datum/outfit/loadout/raider_highway
+	name = "Highwayman"
+	uniform = /obj/item/clothing/under/f13/combat
+	shoes = /obj/item/clothing/shoes/f13/cowboy
+	head = /obj/item/clothing/head/f13/cowboy
+	gloves = /obj/item/clothing/gloves/color/brown
+	backpack_contents = list(
+		/obj/item/gun/ballistic/revolver/colt357 = 2,
+		/obj/item/ammo_box/a357 = 2, \
+		/obj/item/binoculars = 1,
+		/obj/item/radio = 1,
+		/obj/item/weapon/maptool = 1,
+		/obj/item/book/granter/trait/gunslinger,
 		)
 
 /*
