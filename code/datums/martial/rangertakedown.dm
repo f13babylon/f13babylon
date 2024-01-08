@@ -66,6 +66,6 @@
 	A.adjustStaminaLoss(30) //The disarm will cost stamina to use. You are able to take down four opponents in quick succession before your stamina caps out.
 	playsound(get_turf(A), 'sound/effects/hit_kick.ogg', 50, 1, -1)
 	D.apply_damage(damage, BRUTE, affecting, armor_block)
-	D.DefaultCombatKnockdown(rand(10,30)) //Due to the defensive nature of the move, it shouldn't be longer than putting on a pair of cuffs. (30)
+	D.DefaultCombatKnockdown(10, null, TRUE) //Due to the defensive nature of the move, it shouldn't be longer than putting on a pair of cuffs. (30)
 	log_combat(A, D, "sweeped (Ranger Takedown)")
 	return TRUE
