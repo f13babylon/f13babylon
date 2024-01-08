@@ -82,8 +82,8 @@
 	title = "Khan Enforcer"
 	flag = F13KHAN
 	faction = FACTION_KHAN
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 5
+	spawn_positions = 5
 	description = "You are a Khan, a member of the local band that the Chief has sent to scout these lands. Listen to the Chemist, and assure you've a steady supply of caps for the Chief."
 	supervisors = "the Senior Enforcer"
 	selection_color = "#ff915e"
@@ -151,12 +151,13 @@
 /datum/outfit/loadout/soldier
 	name = "Heavy Enforcer"
 	belt = /obj/item/storage/backpack/spearquiver
-	r_hand = /obj/item/gun/ballistic/shotgun/automatic/combat/auto5
+	r_hand = /obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/armored
 	head = /obj/item/clothing/head/helmet/f13/khan
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
 		/obj/item/twohanded/baseball/spiked = 1,
+		/obj/item/ammo_box/shotgun/buck = 4,
 		/obj/item/book/granter/trait/bigleagues = 1,
 		/obj/item/book/granter/trait/selection = 1)
 
@@ -164,21 +165,21 @@
 	name = "Grunt Enforcer"
 	belt = /obj/item/storage/belt/bandolier
 	l_hand = /obj/item/melee/onehanded/machete/scrapsabre/khan
-	r_hand = /obj/item/gun/ballistic/automatic/smg/smg10mm
+	r_hand = /obj/item/gun/ballistic/automatic/smg/uzi
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
 	head = /obj/item/clothing/head/helmet/f13/khan/bandana
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/msmg10mm = 2,
+		/obj/item/ammo_box/magazine/msmg9mm = 3,
 		/obj/item/book/granter/trait/trekking = 1,
 		/obj/item/book/granter/trait/selection = 1)
 
 /datum/outfit/loadout/soldierc
 	name = "Scout Enforcer"
-	r_hand = /obj/item/gun/ballistic/rifle/repeater/trail
+	r_hand = /obj/item/gun/ballistic/revolver/hunting
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
 	head = /obj/item/clothing/head/helmet/f13/khan/bandana
 	backpack_contents = list(
-		/obj/item/ammo_box/m44box = 2,
+		/obj/item/ammo_box/c4570 = 2,
 		/obj/item/attachments/scope = 1,
 		/obj/item/book/granter/trait/trekking = 1,
 		/obj/item/book/granter/trait/selection = 1)
@@ -205,19 +206,18 @@
 	glasses = /obj/item/clothing/glasses/sunglasses
 	belt = /obj/item/storage/belt/bandolier
 	backpack_contents = list(
-		/obj/item/book/granter/trait/chemistry = 1,
 		/obj/item/book/granter/trait/explosives_advanced = 1,
+		/obj/item/book/granter/trait/chemistry = 1,
+		/obj/item/book/granter/trait/lowsurgery = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3)
 
 //SENIOR =================================================================
 
 /datum/outfit/loadout/seniora
 	name = "Teachings of Regis"
-	suit_store = /obj/item/twohanded/sledgehammer/rockethammer
+	suit_store = /obj/item/gun/ballistic/automatic/shotgun/riot/boss
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/deagle = 1,
-		/obj/item/ammo_box/magazine/m44 = 2,
-		/obj/item/grenade/smokebomb = 1,
+		/obj/item/ammo_box/magazine/d12g = 2,
 		)
 
 /datum/outfit/loadout/seniorb
@@ -232,6 +232,8 @@
 	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/w308 = 3,
+		/obj/item/gun/ballistic/automatic/pistol/deagle = 1,
+		/obj/item/ammo_box/magazine/m44 = 2,
 		)
 
 
@@ -259,8 +261,8 @@
 	gloves = /obj/item/clothing/gloves/f13/blacksmith
 	r_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
-		/obj/item/ammo_box/magazine/m9mmds = 2,
+		/obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever = 1,
+		/obj/item/ammo_box/shotgun/buck = 2,
 		/obj/item/stack/sheet/metal/twenty = 2,
 		/obj/item/stack/sheet/mineral/wood/twenty = 1,
 		/obj/item/stack/sheet/leather/twenty = 1,
@@ -283,7 +285,7 @@
 
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg10mm)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/greasegun)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/auto5)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/lever_action)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/trail_carbine)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/remingtonhuntingrifle)
 
