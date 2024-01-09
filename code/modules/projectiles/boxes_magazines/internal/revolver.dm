@@ -72,7 +72,7 @@
 /obj/item/ammo_box/magazine/internal/cylinder/improvised762
 	name = "improvised internal magazine .308"
 	ammo_type = /obj/item/ammo_casing/a762mm/sport
-	caliber = "a762"
+	caliber = "a762mm"
 	max_ammo = 2
 
 /obj/item/ammo_box/magazine/internal/cylinder/thatgun

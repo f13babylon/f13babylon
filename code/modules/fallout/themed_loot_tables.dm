@@ -256,17 +256,16 @@
 /obj/effect/spawner/lootdrop/weapons/oldarmyelite
 	name = "weaponspawner old army elite"
 	loot = list(
-		/obj/effect/spawner/bundle/f13/sig = 17,
-		/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller = 17,
-		/obj/effect/spawner/bundle/f13/amr = 17,
-		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 12,
-		/obj/item/gun/energy/laser/aer12 = 10,
-		/obj/effect/spawner/bundle/f13/combat_rifle = 6,
-		/obj/effect/spawner/bundle/f13/bozar = 5,
-		/obj/item/gun/ballistic/automatic/lmg/m1919 = 2,
-		/obj/item/twohanded/sledgehammer/supersledge = 5,
+		/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller = 19,
+		/obj/effect/spawner/bundle/f13/amr = 19,
+		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 14,
+		/obj/item/gun/energy/laser/aer12 = 12,
+		/obj/effect/spawner/bundle/f13/combat_rifle = 8,
+		/obj/effect/spawner/bundle/f13/bozar = 7,
+		/obj/item/gun/ballistic/automatic/lmg/m1919 = 4,
+		/obj/item/twohanded/sledgehammer/supersledge = 7,
 		/obj/item/melee/powerfist = 5,
-		/obj/item/twohanded/thermic_lance = 2,
+		/obj/item/twohanded/thermic_lance = 3,
 		)
 
 /obj/effect/spawner/lootdrop/weapons/collectors

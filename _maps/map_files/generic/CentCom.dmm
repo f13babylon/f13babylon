@@ -5436,7 +5436,7 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/evac)
 "sE" = (
-/turf/open/floor/plating/f13/inside/mountain,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tcoms)
 "sF" = (
 /obj/structure/cable/white{
@@ -5448,7 +5448,7 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/turf/open/floor/plating/f13/inside/mountain,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tcoms)
 "sH" = (
 /obj/machinery/power/apc{
@@ -6939,7 +6939,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/open/floor/plating/f13/inside/mountain,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tcoms)
 "yr" = (
 /obj/machinery/light/small/broken{
@@ -7853,7 +7853,7 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/turf/open/floor/plating/f13/inside/mountain,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tcoms)
 "Gb" = (
 /obj/effect/turf_decal/stripes/corner{
@@ -7884,7 +7884,7 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/turf/open/floor/plating/f13/inside/mountain,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tcoms)
 "Gu" = (
 /obj/structure/destructible/tribal_torch/lit,
@@ -7908,7 +7908,7 @@
 /obj/machinery/light_switch{
 	pixel_y = -25
 	},
-/turf/open/floor/plating/f13/inside/mountain,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tcoms)
 "GB" = (
 /obj/machinery/camera{
@@ -7916,7 +7916,7 @@
 	dir = 8;
 	network = list("mine")
 	},
-/turf/open/floor/plating/f13/inside/mountain,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tcoms)
 "GG" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{
@@ -7953,7 +7953,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plating/f13/inside/mountain,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tcoms)
 "Hl" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -7966,7 +7966,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plating/f13/inside/mountain,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tcoms)
 "Hq" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7990,7 +7990,7 @@
 	pixel_y = -32
 	},
 /obj/machinery/light,
-/turf/open/floor/plating/f13/inside/mountain,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tcoms)
 "HB" = (
 /obj/effect/decal/cleanable/dirt,

@@ -1762,9 +1762,7 @@
 /turf/open/floor/wood/wood_common,
 /area/f13/city)
 "wE" = (
-/obj/structure/railing{
-	layer = 4.1
-	},
+/obj/structure/railing,
 /turf/open/transparent/openspace,
 /area/f13/wasteland/warren)
 "wH" = (

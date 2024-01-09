@@ -500,7 +500,7 @@ Paladin
 	name = "Tactical Paladin"
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/assault_rifle/r91 = 1,
-		/obj/item/ammo_box/magazine/m556mm/drum = 2,
+		/obj/item/ammo_box/magazine/m556mm = 2,
 		/obj/item/clothing/accessory/bos/paladin = 1,
 		/obj/item/clothing/accessory/bos/juniorpaladin = 1,
 		/obj/item/clothing/accessory/bos/seniorpaladin = 1,

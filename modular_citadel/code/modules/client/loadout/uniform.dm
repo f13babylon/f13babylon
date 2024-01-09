@@ -587,6 +587,21 @@
 	path = /obj/item/clothing/under/f13/desert_ranger_scout
 	cost = 2
 
+/datum/gear/uniform/mercuniform
+	name = "mercenary uniform"
+	path = /obj/item/clothing/under/syndicate/mercenary
+	cost = 2
+
+/datum/gear/uniform/mercgorka
+	name = "old gorka suit"
+	path = /obj/item/clothing/under/syndicate/gorka
+	cost = 2
+
+/datum/gear/uniform/mercpadded
+	name = "urban mercenary uniform"
+	path = /obj/item/clothing/under/syndicate/mercpadded
+	cost = 2
+
 //CHINA
 
 /datum/gear/uniform/chinese
@@ -792,6 +807,12 @@
 /datum/gear/uniform/skirt/tac
 	name = "''tactical'' combat skirt"
 	path = /obj/item/clothing/under/f13/legskirt/tac
+	cost = 1
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_SKIRTS
+
+/datum/gear/uniform/skirt/tact
+	name = "tacticool combat skirt"
+	path = /obj/item/clothing/under/f13/legskirt/tact
 	cost = 1
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_SKIRTS
 

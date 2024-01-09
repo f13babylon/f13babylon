@@ -620,7 +620,7 @@
 	name = "stripper clip (7.62)"
 	desc = "A stripper clip."
 	icon_state = "762"
-	caliber = "a762"
+	caliber = "a762mm"
 	ammo_type = /obj/item/ammo_casing/a762mm
 	max_ammo = 5
 	multiple_sprites = 1
@@ -631,7 +631,7 @@
 	name = "stripper clip (.308)"
 	desc = "A stripper clip."
 	icon_state = "308"
-	caliber = "a762"
+	caliber = "a762mm"
 	ammo_type = /obj/item/ammo_casing/a762mm/sport
 	max_ammo = 5
 	multiple_sprites = 1
@@ -642,8 +642,8 @@
 	name = "double stack stripper clip (.308)"
 	desc = "A stripper clip."
 	icon_state = "762a"
-	caliber = "a762"
-	ammo_type = /obj/item/ammo_casing/a762mm/sport
+	caliber = "a762mm"
+	ammo_type = /obj/item/ammo_casing/a762mm
 	max_ammo = 10
 	multiple_sprites = 1
 	custom_materials = list(/datum/material/iron = 2000)
