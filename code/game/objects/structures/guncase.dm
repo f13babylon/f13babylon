@@ -30,11 +30,11 @@
 			gun_overlay.pixel_x = 3 * (i - 1)
 			. += gun_overlay
 	if(open)
+		playsound(loc, 'sound/machines/click.ogg', 15, 1, -3)
 		. += "[icon_state]_open"
-			playsound(loc, 'sound/machines/click.ogg', 15, 1, -3)
 	else
+		playsound(loc, 'sound/machines/click.ogg', 15, 1, -3)
 		. += "[icon_state]_door"
-			playsound(loc, 'sound/machines/click.ogg', 15, 1, -3)
 
 /obj/structure/guncase/attackby(obj/item/I, mob/user, params)
 	if(iscyborg(user) || isalien(user))
