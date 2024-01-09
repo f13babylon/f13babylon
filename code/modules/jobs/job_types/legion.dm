@@ -409,7 +409,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/ammo_box/magazine/type88 = 1,
 		/obj/item/gun/ballistic/automatic/pistol/beretta = 1,
 		/obj/item/ammo_box/magazine/m9mmds = 2,
-		/obj/item/reagent_containers/pill/patch/bitterdrink = 2
 		/obj/item/reagent_containers/pill/patch/bitterdrink = 2,
 	)
 

@@ -802,7 +802,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "Tactical Support Heavy Gunner"
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/lmg/monitor = 1,
-		/obj/item/ammo_box/magazine/m762mm/extended 2,
+		/obj/item/ammo_box/magazine/m762mm/extended = 2,
 		/obj/item/clothing/suit/armor/f13/metalarmor/steelbib/ncra = 1,
 		/obj/item/clothing/head/helmet/armyhelmet/heavy/ncra = 1,
 		)
