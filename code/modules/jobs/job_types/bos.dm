@@ -780,7 +780,6 @@ Scribe
 		/obj/item/gun/energy/laser/pistol = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 1,
 		/obj/item/grenade/smokebomb = 1,
-		/obj/item/clothing/suit/armored/light/bos_scout/senior = 1,
 		)
 
 /datum/outfit/loadout/sknightb
@@ -789,7 +788,8 @@ Scribe
 		/obj/item/gun/energy/laser/wattz2k = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
-		/obj/item/ammo_box/magazine/m45exp = 2
+		/obj/item/ammo_box/magazine/m45exp = 2,
+		/obj/item/clothing/suit/armored/light/bos_scout/senior = 1,
 		)
 
 /*
