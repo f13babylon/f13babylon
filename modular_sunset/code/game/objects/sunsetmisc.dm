@@ -1,27 +1,3 @@
-// Sunset Flags
-
-/obj/item/bighorn_flag
-	name = "La Verkin flag"
-	desc = "A flag depicting the head of a bighorner. It's a symbol of the town of La Verkin."
-	icon = 'modular_sunset/icons/structures/bighorn_flag.dmi'
-	icon_state = "bighorn_flag"
-	item_state = "bighorn_flag"
-	density = 1
-	anchored = 1
-	w_class = 4
-	layer = 4.1
-
-/obj/item/renegade_flag
-	name = "Renegade Corps flag"
-	desc = "A flag marking territory belonging to the Renegade Corps mercenaries."
-	icon = 'modular_sunset/icons/structures/bighorn_flag.dmi'
-	icon_state = "renegade_flag"
-	item_state = "renegade_flag"
-	density = 1
-	anchored = 1
-	w_class = 4
-	layer = 4.1
-
 // Sunset Signs - SMALL
 
 /obj/item/sign/bee_warning

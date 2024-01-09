@@ -258,6 +258,13 @@
 	icon_state = "enclaveflag_america"
 	item_state = "enclaveflag_america"
 
+/obj/item/flag/renegade
+	name = "Renegade Corps flag"
+	desc = "A flag marking territory belonging to the Renegade Corps mercenaries."
+	icon_state = "renegade_flag"
+	item_state = "renegade_flag"
+	faction = "Renegade"
+
 /obj/item/flag/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/stack/sheet/leather) && item_state == "emptyflag")
 		visible_message("<span class='notice'>[user] begins to make a flag.</span>")

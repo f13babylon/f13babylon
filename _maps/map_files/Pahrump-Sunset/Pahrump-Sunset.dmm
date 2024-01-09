@@ -14496,7 +14496,7 @@
 	},
 /area/f13/wasteland/bighorn)
 "aZk" = (
-/obj/item/bighorn_flag,
+/obj/item/flag/bighorn,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain1"
 	},
@@ -19419,7 +19419,7 @@
 	pixel_x = -8;
 	pixel_y = 15
 	},
-/obj/item/bighorn_flag,
+/obj/item/flag/bighorn,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain2left"
 	},
@@ -27522,7 +27522,7 @@
 /turf/open/floor/wood,
 /area/f13/brotherhood/offices1st)
 "dSJ" = (
-/obj/item/bighorn_flag,
+/obj/item/flag/bighorn,
 /turf/closed/wall/f13/wood/interior,
 /area/f13/city/bighorn)
 "dSM" = (

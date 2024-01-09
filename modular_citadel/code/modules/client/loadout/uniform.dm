@@ -810,6 +810,12 @@
 	cost = 1
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_SKIRTS
 
+/datum/gear/uniform/skirt/tact
+	name = "tacticool combat skirt"
+	path = /obj/item/clothing/under/f13/legskirt/tact
+	cost = 1
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_SKIRTS
+
 /datum/gear/uniform/skirt/swept
 	name = "swept skirt"
 	path = /obj/item/clothing/under/dress/skirt/swept
