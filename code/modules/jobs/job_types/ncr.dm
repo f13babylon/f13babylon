@@ -703,7 +703,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	neck = /obj/item/clothing/neck/mantle/ranger
 	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/w308 = 3,
+		/obj/item/ammo_box/magazine/w308 = 2,
 		/obj/item/gun/ballistic/revolver/revolver45 = 1,
 		/obj/item/ammo_box/c45rev = 1,
 		)
@@ -802,7 +802,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "Tactical Support Heavy Gunner"
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/lmg/monitor = 1,
-		/obj/item/ammo_box/magazine/m762mm/extended = 3,
+		/obj/item/ammo_box/magazine/m762mm/extended 2,
 		/obj/item/clothing/suit/armor/f13/metalarmor/steelbib/ncra = 1,
 		/obj/item/clothing/head/helmet/armyhelmet/heavy/ncra = 1,
 		)
@@ -937,7 +937,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit_store = /obj/item/gun/ballistic/shotgun/police
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/m1911 = 1,
-		/obj/item/ammo_box/magazine/m45 = 3,
+		/obj/item/ammo_box/magazine/m45 = 2,
 		/obj/item/storage/bag/money/small/ncrenlisted = 1,
 		/obj/item/ammo_box/shotgun/bean = 2,
 		/obj/item/melee/classic_baton/militarypolice = 1
@@ -1087,7 +1087,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
 	suit_store = /obj/item/gun/ballistic/automatic/service/carbine
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556mm = 3,
+		/obj/item/ammo_box/magazine/m556mm = 2,
 		/obj/item/grenade/smokebomb = 1
 		)
 
@@ -1151,7 +1151,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "Trail Trooper"
 	suit_store = /obj/item/gun/ballistic/automatic/service
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556mm = 3,
+		/obj/item/ammo_box/magazine/m556mm = 2,
 		/obj/item/melee/onehanded/knife/bayonet = 1,
 		)
 

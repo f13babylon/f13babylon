@@ -364,6 +364,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND, ACCESS_LEGION_SLAVE)
 
 	loadout_options = list(
+		/datum/outfit/loadout/decvetbull,	// Chinese LMG, Advanced 9mm pistol
 		/datum/outfit/loadout/decvetwolf,	// Thermic lance, 10mm SMG
 		/datum/outfit/loadout/decvetsnake, // Brush gun, Spatha
 		/datum/outfit/loadout/decvetbrave, // Riot shotgun, Spatha
@@ -400,6 +401,18 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/reagent_containers/pill/patch/bitterdrink = 2,
 	)
 
+/datum/outfit/loadout/decvetbull
+	name = "Mark of The Bull"
+	head = /obj/item/clothing/head/helmet/f13/legion/vet/decan
+	suit_store = /obj/item/gun/ballistic/automatic/lmg/type88
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/type88 = 1,
+		/obj/item/gun/ballistic/automatic/pistol/beretta = 1,
+		/obj/item/ammo_box/magazine/m9mmds = 2,
+		/obj/item/reagent_containers/pill/patch/bitterdrink = 2
+		/obj/item/reagent_containers/pill/patch/bitterdrink = 2,
+	)
+
 /datum/outfit/loadout/decvetwolf
 	name = "Mark of the Wolf"
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/decan
@@ -424,7 +437,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	suit_store = /obj/item/gun/ballistic/automatic/shotgun/riot
 	backpack_contents = list(
 		/obj/item/melee/onehanded/machete/spatha = 1,
-		/obj/item/ammo_box/magazine/d12g = 3,
+		/obj/item/ammo_box/magazine/d12g = 2,
 	)
 
 // PRIME DECANUS
@@ -838,7 +851,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Sharpshooter"
 	suit_store = /obj/item/gun/ballistic/rifle/repeater/trail
 	backpack_contents = list(
-		/obj/item/ammo_box/tube/m44/ = 3,
+		/obj/item/ammo_box/tube/m44/ = 2,
 		/obj/item/attachments/scope = 1,
 		/obj/item/melee/onehanded/machete/gladius = 1,
 	)
