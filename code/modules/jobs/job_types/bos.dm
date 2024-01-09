@@ -150,11 +150,10 @@ Head Paladin
 	ears =			/obj/item/radio/headset/headset_bos/command
 	id = 			/obj/item/card/id/dogtag
 	backpack_contents = list(
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/melee/onehanded/knife/hunting = 1,
-		/obj/item/melee/f13powerfist = 1,
-		/obj/item/gun/ballistic/automatic/pistol/n99/crusader = 1,
-		/obj/item/ammo_box/magazine/m10mm = 2,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
+		/obj/item/gun/energy/laser/pistol=1,
+		/obj/item/stock_parts/cell/ammo/ec=1,
 		)
 
 /datum/outfit/loadout/sentheavy
@@ -165,7 +164,7 @@ Head Paladin
 	)
 
 /datum/outfit/loadout/sentlaser
-	name = "Laser Senior Paladin"
+	name = "Laser Head Paladin"
 	backpack_contents = list(
 		/obj/item/encminigunpack = 1,
 		/obj/item/stock_parts/cell/ammo/ecp = 2,
