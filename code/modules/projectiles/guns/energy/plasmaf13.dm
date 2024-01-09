@@ -136,8 +136,8 @@
 	weapon_weight = WEAPON_LIGHT
 	slowdown = 0.4
 	fire_delay = 8
-	var/twohands = FALSE
-
+	//var/twohands = FALSE		- Disabled, wasn't needed if you just give it a higher fire delay.
+/*
 /obj/item/gun/energy/laser/plasma/caster/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/two_handed)
@@ -162,3 +162,4 @@
 	. = ..()
 	if(!twohands)
 		return FALSE
+*/

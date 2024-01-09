@@ -594,8 +594,8 @@
 
 /obj/item/projectile/f13plasma/caster
 	name = "caster bolt"
-	damage = 35	//Hits hard, hits slow
-	armour_penetration = 0.5	//HUUUUUGE
+	damage = 40	//Hits hard, hits slow
+	armour_penetration = 0.4	//High pen
 	wound_bonus = 45 //being hit with plasma is horrific
 
 //Alrem's plasmacaster		- Enclave captain weapon, can remain OP due to this.
@@ -629,6 +629,7 @@
 
 /obj/item/projectile/f13plasma/pistol/glock //Glock (streamlined plasma pistol)
 	damage = 22
+	armour_penetration = 0.2
 
 /obj/item/projectile/f13plasma/scatter //Multiplas, fires 3 shots, will melt you
 	damage = 25
