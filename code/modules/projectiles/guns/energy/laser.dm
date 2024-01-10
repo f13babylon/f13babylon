@@ -40,7 +40,7 @@
 	name = "integrated AER9"
 	can_charge = FALSE
 	desc = "An energy-based laser gun that draws power from the robot's internal energy cell directly. So this is what freedom looks like?"
-	fire_delay = 3
+	fire_delay = 4
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun/hitscan)
 	icon_state = "laser"
 	item_state = "laser-rifle9"
