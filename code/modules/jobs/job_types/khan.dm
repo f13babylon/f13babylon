@@ -135,14 +135,12 @@
 /datum/outfit/job/khan/senior_enforcer
 	name = "Senior Enforcer"
 	jobtype = /datum/job/khan/senior_enforcer
-	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/leader
-	head = /obj/item/clothing/head/helmet/f13/khan/leader
-	belt = /obj/item/storage/belt/bandolier
+	belt = /obj/item/storage/belt/military/assault
 	backpack_contents = list(
 		/obj/item/storage/box/medicine/stimpaks/stimpaks5 = 1,
-		/obj/item/stack/f13Cash/caps/fivezerozero = 1,//500 Caps.
-		/obj/item/pda,
-		/obj/item/card/id/selfassign
+		/obj/item/storage/bag/money/small/khan = 1,
+		/obj/item/pda = 1,
+		/obj/item/card/id/selfassign = 1,
 		)
 
 
@@ -157,8 +155,7 @@
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
 		/obj/item/twohanded/baseball/spiked = 1,
-		/obj/item/ammo_box/shotgun/buck = 4,
-		/obj/item/book/granter/trait/bigleagues = 1,
+		/obj/item/ammo_box/shotgun/buck = 2,
 		/obj/item/book/granter/trait/selection = 1)
 
 /datum/outfit/loadout/soldierb
@@ -169,7 +166,7 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
 	head = /obj/item/clothing/head/helmet/f13/khan/bandana
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/msmg9mm = 3,
+		/obj/item/ammo_box/magazine/msmg9mm = 2,
 		/obj/item/book/granter/trait/trekking = 1,
 		/obj/item/book/granter/trait/selection = 1)
 
@@ -215,25 +212,34 @@
 
 /datum/outfit/loadout/seniora
 	name = "Teachings of Regis"
-	suit_store = /obj/item/gun/ballistic/automatic/shotgun/riot/boss
+	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/leader
+	head = /obj/item/clothing/head/helmet/f13/khan/leader
+	suit_store = /obj/item/gun/ballistic/automatic/shotgun/riot
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/d12g = 2,
 		)
 
 /datum/outfit/loadout/seniorb
 	name = "Teachings of Jessup"
-	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle/r91/infiltrator
+	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/coat
+	head = /obj/item/clothing/head/helmet/f13/khan/fullhelm
+	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle/r91
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556mm = 2,
+		/obj/item/storage/survivalkit_aid_adv = 1,
 		)
 
 /datum/outfit/loadout/seniorc
 	name = "Teachings of Melissa"
+	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
+	head = /obj/item/clothing/head/helmet/f13/khan/bandana
+	glasses = /obj/item/clothing/glasses/night/ncr
 	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/w308 = 3,
-		/obj/item/gun/ballistic/automatic/pistol/deagle = 1,
-		/obj/item/ammo_box/magazine/m44 = 2,
+		/obj/item/ammo_box/magazine/w308 = 2,
+		/obj/item/melee/onehanded/knife/bowie = 1,
+		/obj/item/storage/belt/utility/full/engi = 1,
+		/obj/item/stack/crafting/armor_plate/ten = 1,
 		)
 
 
