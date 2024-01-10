@@ -140,7 +140,7 @@
 	time = 150
 	category = CAT_EXPLOSIVE
 
-/datum/crafting_recipe/explosive/signaler_mine
+/datum/crafting_recipe/explosive/signalermine
 	name = "Bottlecap Signal-Activated Mine"
 	result = /obj/item/signal_bomb
 	reqs = list(/obj/item/bottlecap_mine = 1,
@@ -148,7 +148,9 @@
 				/obj/item/stack/cable_coil = 5,
 				/obj/item/assembly/signaler = 1,
 				/obj/item/assembly/igniter = 1)
+	time = 90
 	always_available = FALSE
+	category = CAT_EXPLOSIVE
 
 /datum/crafting_recipe/explosive/shrapnelmine
 	name = "Shrapnel Mine"
