@@ -410,6 +410,15 @@
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = TRUE
 
+/obj/item/clothing/under/f13/legskirt/tact
+	name = "\improper tacticool combat skirt"
+	desc = "A leathery striped skirt below a black, long-sleeve striped cotton shirt. The sleeves look notably rollable"
+	icon_state = "tactskirt"
+	item_state = "tactskirt"
+	item_color = "tactskirt"
+	fitted = FEMALE_UNIFORM_TOP
+	can_adjust = TRUE
+
 /obj/item/clothing/under/f13/priestess
 	name = "priestess robes"
 	desc = "The robes worn by a Priestess of Mars."

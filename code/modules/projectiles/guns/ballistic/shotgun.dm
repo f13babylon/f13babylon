@@ -431,13 +431,14 @@
 	semi_auto = TRUE
 	fire_sound = 'sound/f13weapons/riot_shotgun.ogg'
 
-//Boss' unique riot shotgun.
+//Khan S.E unique riot shotgun.
 /obj/item/gun/ballistic/automatic/shotgun/riot/boss
 	name = "Left Hand"
-	desc = "A compact riot shotgun with a large ammo drum and semi-automatic fire, designed to fight in close quarters. \
-	This one has engravings, dedicated to a 'Captain' of some sort. Odd."
+	desc = "A modified, fully metal and notably heavy riot shotgun with a large ammo drum and notably rapid semi-automatic fire, designed to fight in close quarters. \
+	This one has engravings, dedicated to a Khan Senior Enforcer."
 	fire_delay = 3
 	recoil = 1
+	slowdown = 0.65 //added so it's not just a straight upgrade sort of unique. total of 0.8 slowdown when used with S.E armor
 
 /obj/item/gun/ballistic/automatic/shotgun/pancor
 	name = "Pancor Jackhammer"

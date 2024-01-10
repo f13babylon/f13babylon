@@ -21,7 +21,7 @@
 /datum/gear/gloves/military
 	name = "military gloves"
 	path = /obj/item/clothing/gloves/f13/military
-	cost = 2
+	cost = 1
 
 /datum/gear/gloves/latex
 	name = "latex gloves"
@@ -34,7 +34,12 @@
 /datum/gear/gloves/midnight
 	name = "Midnight gloves"
 	path = /obj/item/clothing/gloves/evening/black
-	cost = 2
+	cost = 1
+
+/datum/gear/gloves/fleather
+	name = "fingerless leather gloves"
+	path = /obj/item/clothing/gloves/f13/leather/fingerless
+	cost = 1
 
 /datum/gear/gloves/plated
 	name = "plated gloves"
