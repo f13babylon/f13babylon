@@ -172,6 +172,8 @@ Head Paladin
 	backpack_contents = list(
 		/obj/item/twohanded/sledgehammer/supersledge = 1,
 		/obj/item/book/granter/trait/bigleagues = 1,
+		/obj/item/gun/ballistic/revolver/colt6520 = 1,
+		/obj/item/ammo_box/l10mm = 2,
 	)
 
 /*

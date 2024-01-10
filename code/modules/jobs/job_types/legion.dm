@@ -614,7 +614,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	title = "Legion Vexillarius"
 	flag = F13VEXILLARIUS
 	total_positions = 2
-	spawn_positions = 1
+	spawn_positions = 2
 	description = "You are a Veteran of proven bravery. When not fighting, relay orders from the commander and act as a bodyguard."
 	supervisors = "the Veteran Decanus and Centurion"
 	display_order = JOB_DISPLAY_ORDER_VEXILLARIUS
