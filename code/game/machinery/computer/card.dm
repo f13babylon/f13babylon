@@ -513,7 +513,7 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 		"Legion Citizen",
 		"Recruit Legionnaire",
 		"Prime Legionnaire",
-		"Veteran Legionnaire",
+		"Veteran Legionary",
 		"Legion Recruit Decanus",
 		"Legion Prime Decanus",
 		"Legion Vexillarius",

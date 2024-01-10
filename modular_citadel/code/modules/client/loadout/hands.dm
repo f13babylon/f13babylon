@@ -78,7 +78,7 @@
 							"Legion Prime Decanus",
 							"Legion Recruit Decanus",
 							"Legion Vexillarius",
-							"Veteran Legionnaire"
+							"Veteran Legionary"
 						)
 
 /datum/gear/hands/backpack/legionb
@@ -92,7 +92,7 @@
 							"Legion Prime Decanus",
 							"Legion Recruit Decanus",
 							"Legion Vexillarius",
-							"Veteran Legionnaire"
+							"Veteran Legionary"
 						)
 
 /datum/gear/hands/cane
