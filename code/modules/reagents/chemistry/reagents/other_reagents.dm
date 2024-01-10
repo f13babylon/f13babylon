@@ -115,6 +115,10 @@
 			taste_description = "something spicy"
 			pH = 6.85
 
+		if(data["blood_type"] == "T")
+			name = "Tomato Blood"
+			taste_description = "sap"
+
 /datum/reagent/blood/on_merge(list/mix_data)
 	if(data && mix_data)
 		if(data["blood_DNA"] != mix_data["blood_DNA"])
@@ -166,7 +170,7 @@
 	pH = 4
 
 /datum/reagent/blood/tomato
-	data = list("donor"=null,"viruses"=null,"blood_DNA"=null, "bloodcolor" = BLOOD_COLOR_HUMAN, "blood_type"="SY","resistances"=null,"trace_chem"=null,"mind"=null,"ckey"=null,"gender"=null,"real_name"=null,"cloneable"=null,"factions"=null)
+	data = list("donor"=null,"viruses"=null,"blood_DNA"=null, "bloodcolor" = BLOOD_COLOR_HUMAN, "blood_type"="T","resistances"=null,"trace_chem"=null,"mind"=null,"ckey"=null,"gender"=null,"real_name"=null,"cloneable"=null,"factions"=null)
 	name = "Tomato Blood"
 	description = "This highly resembles blood, but it doesnt actually function like it, resembling more ketchup, with a more blood-like consistency."
 	taste_description = "sap" //Like tree sap?

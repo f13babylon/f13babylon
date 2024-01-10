@@ -6,7 +6,7 @@
 /datum/gear/shoes/laceup
 	name = "laceup shoes"
 	path = /obj/item/clothing/shoes/laceup
-	cost = 2
+	cost = 1
 
 /datum/gear/shoes/workboots
 	name = "work boots"
@@ -48,17 +48,17 @@
 /datum/gear/shoes/wrapssilver
 	name = "silver leg wraps"
 	path = /obj/item/clothing/shoes/wraps/silver
-	cost = 2
+	cost = 1
 
 /datum/gear/shoes/wrapsblue
 	name = "blue leg wraps"
 	path = /obj/item/clothing/shoes/wraps/blue
-	cost = 2
+	cost = 1
 
 /datum/gear/shoes/wrapsred
 	name = "red leg wraps"
 	path = /obj/item/clothing/shoes/wraps/red
-	cost = 2
+	cost = 1
 
 /datum/gear/shoes/wornboots
 	name = "worn boots"
@@ -87,27 +87,27 @@
 /datum/gear/shoes/jackboots
 	name = "jackboots"
 	path = /obj/item/clothing/shoes/jackboots
-	cost = 2
+	cost = 1
 
 /datum/gear/shoes/military
 	name = "military boots"
 	path = /obj/item/clothing/shoes/f13/military
-	cost = 2
+	cost = 1
 
 /datum/gear/shoes/military/oldserviceboots
 	name = "old service boots"
 	path = /obj/item/clothing/shoes/f13/military/oldserviceboots
-	cost = 2
+	cost = 1
 
 /datum/gear/shoes/leather
 	name = "leather combat boots"
 	path = /obj/item/clothing/shoes/f13/military/leather
-	cost = 2
+	cost = 1
 
 /datum/gear/shoes/desert
 	name = "desert combat boots"
 	path = /obj/item/clothing/shoes/f13/military/desert
-	cost = 2
+	cost = 1
 
 /datum/gear/shoes/plated
 	name = "plated war boots"

@@ -81,7 +81,6 @@
 	else
 		D.apply_damage(damage*0.5, BRUTE, BODY_ZONE_HEAD, armor_block, wound_bonus = CANT_WOUND)
 		D.apply_damage(damage + 20, STAMINA, BODY_ZONE_HEAD, armor_block, wound_bonus = CANT_WOUND)
-		D.drop_all_held_items()
 		D.visible_message("<span class='warning'>[A] pummels [D]!</span>", \
 					"<span class='userdanger'>You are kicked in the head by [A]!</span>", "<span class='hear'>You hear a sickening sound of flesh hitting flesh!</span>", COMBAT_MESSAGE_RANGE, A)
 		to_chat(A, "<span class='danger'>You pummel [D]!</span>")

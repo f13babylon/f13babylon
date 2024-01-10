@@ -38,6 +38,30 @@
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 40)
 	alt_covers_chest = TRUE
 
+/obj/item/clothing/under/syndicate/mercenary
+	name = "Mercenary uniform"
+	desc = "Fatigues for a sleek mercenary look."
+	icon_state = "merc_uniform"
+	item_state = "merc_uniform"
+	has_sensor = NO_SENSORS
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 40)
+	alt_covers_chest = TRUE
+	obj_flags = UNIQUE_RENAME
+	unique_reskin = list("M1" = "mercbdcamo",
+						"M2" = "mercdcamo")
+
+/obj/item/clothing/under/syndicate/mercpadded
+	name = "urban mercenary uniform"
+	desc = "Fatigues with flame-resistant torso fabric for a sleek mercenary look."
+	icon_state = "mercpadded"
+	item_state = "mercpadded"
+	has_sensor = NO_SENSORS
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 40)
+	alt_covers_chest = TRUE
+	obj_flags = UNIQUE_RENAME
+	unique_reskin = list("M1" = "mercpred",
+						"M2" = "mercpw")
+
 /obj/item/clothing/under/syndicate/bloodred/sleepytime
 	name = "blood-red pajamas"
 	desc = "Do operatives dream of nuclear sheep?"
@@ -82,6 +106,16 @@
 	icon_state = "camogreen"
 	item_state = "g_suit"
 	can_adjust = FALSE
+
+/obj/item/clothing/under/syndicate/gorka
+	name = "old gorka suit"
+	desc = "An old military gorka suit."
+	icon_state = "merc_gorka"
+	item_state = "merc_gorka"
+	can_adjust = FALSE
+	obj_flags = UNIQUE_RENAME
+	unique_reskin = list("M1" = "merc_gorkag",
+						"M2" = "merc_gorkar")
 
 /obj/item/clothing/under/syndicate/camo/cosmetic
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)

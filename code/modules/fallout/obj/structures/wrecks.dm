@@ -30,16 +30,16 @@
 
 /obj/structure/wreck/bus/blue/alt
 	icon = 'icons/obj/vehicles/bus2.dmi'
-	bound_width = 192
-	bound_height = 64
+	bound_width = 64
+	bound_height = 192
 
 /obj/structure/wreck/bus/orange
 	icon_state = "orange"
 
 /obj/structure/wreck/bus/orange/alt
 	icon = 'icons/obj/vehicles/bus2.dmi'
-	bound_width = 192
-	bound_height = 64
+	bound_width = 64
+	bound_height = 192
 
 /obj/structure/wreck/bus/rusted
 	name = "wrecked bus"

@@ -89,12 +89,6 @@
 	},
 /turf/open/transparent/openspace,
 /area/f13/wasteland)
-"aam" = (
-/obj/structure/railing/corner{
-	color = null
-	},
-/turf/open/transparent/openspace,
-/area/f13/wasteland)
 "aan" = (
 /obj/structure/railing/corner{
 	dir = 1
@@ -1979,7 +1973,6 @@
 /area/f13/building)
 "bYl" = (
 /obj/structure/railing{
-	color = null;
 	dir = 9
 	},
 /turf/open/transparent/openspace{
@@ -2213,12 +2206,6 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/building/mall)
-"coB" = (
-/obj/structure/railing{
-	layer = 4.1
-	},
-/turf/open/transparent/openspace,
-/area/f13/wasteland)
 "cpK" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/green{
@@ -2600,9 +2587,7 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark,
 /area/f13/building)
 "deg" = (
-/obj/structure/railing{
-	layer = 4.1
-	},
+/obj/structure/railing,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -6753,7 +6738,6 @@
 "jVC" = (
 /obj/structure/railing{
 	layer = 3.3;
-	plane = -3;
 	dir = 6;
 	pixel_y = -4
 	},
@@ -8525,7 +8509,6 @@
 /area/f13/brotherhood)
 "mRb" = (
 /obj/structure/railing{
-	color = null;
 	dir = 5
 	},
 /obj/structure/railing{
@@ -8649,9 +8632,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/city/bighorn)
 "mZL" = (
-/obj/structure/railing{
-	layer = 4.1
-	},
+/obj/structure/railing,
 /turf/open/indestructible/ground/outside/savannah/edgesnew,
 /area/f13/city/bighorn)
 "mZR" = (
@@ -9368,7 +9349,6 @@
 /area/f13/building)
 "ofT" = (
 /obj/structure/railing{
-	color = null;
 	dir = 5
 	},
 /turf/open/transparent/openspace{
@@ -9509,9 +9489,7 @@
 /obj/effect/overlay/palmtree_l{
 	pixel_y = 13
 	},
-/obj/structure/railing{
-	layer = 4.1
-	},
+/obj/structure/railing,
 /turf/open/indestructible/ground/outside/savannah/edgesnew,
 /area/f13/city/bighorn)
 "oub" = (
@@ -13597,9 +13575,7 @@
 	pixel_x = 9;
 	pixel_y = 14
 	},
-/obj/structure/railing{
-	layer = 4.1
-	},
+/obj/structure/railing,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/city/bighorn)
 "vgN" = (
@@ -15347,7 +15323,6 @@
 /area/f13/building)
 "yel" = (
 /obj/structure/railing{
-	color = null;
 	dir = 9;
 	pixel_x = -3
 	},
@@ -30820,7 +30795,7 @@ aKa
 aKa
 aKa
 oez
-coB
+aaj
 juh
 nSY
 reH
@@ -31077,7 +31052,7 @@ aKa
 aKa
 aKa
 oez
-coB
+aaj
 kmU
 lzl
 nnr
@@ -31591,7 +31566,7 @@ aKa
 aKa
 aKa
 oez
-coB
+aaj
 juh
 nSY
 reH
@@ -31848,7 +31823,7 @@ aKa
 aKa
 aKa
 oez
-coB
+aaj
 kmU
 lzl
 nnr
@@ -32362,7 +32337,7 @@ aKa
 aKa
 aKa
 oez
-coB
+aaj
 juh
 nSY
 reH
@@ -32619,7 +32594,7 @@ aKa
 aKa
 aKa
 oez
-coB
+aaj
 kmU
 lzl
 nnr
@@ -42901,7 +42876,7 @@ oez
 oez
 oez
 oez
-coB
+aaj
 hnq
 reH
 lVa
@@ -43158,7 +43133,7 @@ oez
 oez
 oez
 oez
-coB
+aaj
 rRN
 reH
 vfQ
@@ -43415,7 +43390,7 @@ oez
 oez
 oez
 oez
-coB
+aaj
 kGz
 reH
 aED
@@ -64560,7 +64535,7 @@ iUG
 mbc
 eNt
 kfx
-aam
+bbB
 aak
 aak
 aak

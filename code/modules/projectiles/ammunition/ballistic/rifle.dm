@@ -3,7 +3,7 @@
 	name = "5.56mm FMJ bullet casing"
 	desc = "A 5.56mm bullet casing."
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	icon_state = "a762mm"
+	icon_state = "a556mm"
 	caliber = "a556mm"
 	projectile_type = /obj/item/projectile/bullet/a556mm
 
