@@ -206,13 +206,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/prison)
-"bp" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/tunnel,
-/area/f13/enclave/vertibird)
 "bt" = (
 /obj/structure/bodycontainer/morgue,
 /turf/open/floor/plasteel/f13/vault_floor/white,
@@ -420,7 +413,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/landmark/start/f13/uslightduty,
-/turf/open/floor/plating/tunnel,
+/turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/enclave/hallways)
 "cJ" = (
 /obj/structure/table/reinforced,
@@ -445,9 +438,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelrusty"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/enclave/hallways)
 "cL" = (
 /obj/effect/decal/cleanable/dirt,
@@ -879,9 +870,10 @@
 /area/f13/enclave/prison)
 "fw" = (
 /obj/structure/table,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelchess"
+/obj/structure/lattice{
+	layer = 3
 	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
 /area/f13/enclave/rnd)
 "fy" = (
 /obj/effect/spawner/lootdrop/f13/ncr_k_ration,
@@ -928,9 +920,10 @@
 /obj/item/clothing/glasses/meson,
 /obj/structure/rack/shelf_metal,
 /obj/item/mining_scanner,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelrusty"
+/obj/structure/lattice{
+	layer = 3
 	},
+/turf/open/floor/mineral/plastitanium,
 /area/f13/enclave)
 "fN" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1217,9 +1210,7 @@
 	layer = 3
 	},
 /obj/effect/decal/cleanable/oil,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelchess2"
-	},
+/turf/open/floor/mineral/plastitanium,
 /area/f13/enclave)
 "hc" = (
 /obj/effect/decal/cleanable/generic,
@@ -1786,9 +1777,7 @@
 /obj/item/gps,
 /obj/item/gps,
 /obj/item/gps,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelrusty"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/vertibird)
 "jT" = (
 /obj/structure/table/reinforced,
@@ -1912,7 +1901,10 @@
 "ks" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/oil,
-/turf/open/floor/plating/tunnel,
+/obj/structure/lattice{
+	layer = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/enclave/innerchp)
 "ku" = (
 /turf/closed/indestructible/f13/matrix/transition{
@@ -2236,9 +2228,10 @@
 	layer = 2.9
 	},
 /obj/machinery/computer/security/enclave,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelrusty"
+/obj/structure/lattice{
+	layer = 3
 	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/armory)
 "mx" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2291,12 +2284,6 @@
 	name = "plating"
 	},
 /area/f13/enclave)
-"mH" = (
-/obj/effect/turf_decal/stripes/red/line{
-	dir = 4
-	},
-/turf/open/floor/plating/tunnel,
-/area/f13/enclave/armory)
 "mJ" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/generic,
@@ -2359,7 +2346,7 @@
 /obj/item/mortar_kit,
 /obj/item/binoculars,
 /obj/item/binoculars,
-/turf/open/floor/plating/tunnel,
+/turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/armory)
 "na" = (
 /obj/structure/closet/crate/bin,
@@ -2405,7 +2392,7 @@
 /obj/item/clothing/glasses/meson,
 /obj/structure/rack/shelf_metal,
 /obj/item/mining_scanner,
-/turf/open/floor/plating/tunnel,
+/turf/open/floor/mineral/plastitanium,
 /area/f13/enclave)
 "no" = (
 /obj/effect/turf_decal/stripes/line,
@@ -2493,9 +2480,7 @@
 /obj/structure/lattice{
 	layer = 3
 	},
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelchess2"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/vertibird)
 "nG" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2507,7 +2492,7 @@
 	layer = 3
 	},
 /obj/structure/closet/crate/bin/trashbin,
-/turf/open/floor/plating/tunnel,
+/turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/enclave/hallways)
 "nP" = (
 /obj/machinery/camera/autoname{
@@ -2546,17 +2531,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/command)
-"nV" = (
-/obj/structure/girder/reinforced,
-/obj/structure/lattice{
-	layer = 3
-	},
-/obj/structure/lattice{
-	layer = 3
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/tunnel,
-/area/f13/enclave/armory)
 "nW" = (
 /obj/structure/sign/poster/sunset/nukagirl,
 /turf/closed/wall/r_wall,
@@ -2762,7 +2736,10 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
 /obj/effect/decal/cleanable/oil,
-/turf/open/floor/plating/tunnel,
+/obj/structure/lattice{
+	layer = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/vertibird)
 "ph" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2813,14 +2790,6 @@
 /obj/structure/sign/departments/custodian,
 /turf/closed/wall/r_wall/rust,
 /area/f13/enclave)
-"pL" = (
-/obj/effect/turf_decal/stripes/red/line{
-	dir = 4
-	},
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelchess"
-	},
-/area/f13/enclave/armory)
 "pM" = (
 /obj/effect/decal/marking{
 	icon_state = "dottedverticalcorroded"
@@ -3003,14 +2972,11 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
 /obj/structure/lattice{
 	layer = 3
 	},
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelrusty"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/vertibird)
 "qO" = (
 /obj/effect/turf_decal/stripes/line{
@@ -3042,7 +3008,7 @@
 /obj/structure/closet/crate/bin/trashbin,
 /obj/effect/landmark/start/f13/uslightduty,
 /obj/effect/landmark/start/f13/usspecialist,
-/turf/open/floor/plating/tunnel,
+/turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/enclave/hallways)
 "qW" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3313,14 +3279,6 @@
 /obj/item/gun/energy/laser/pistol,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/armory)
-"sh" = (
-/obj/structure/lattice{
-	layer = 3
-	},
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelrusty"
-	},
-/area/f13/enclave/hallways)
 "sm" = (
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/briefing)
@@ -3381,9 +3339,10 @@
 /obj/structure/chair/office/dark{
 	dir = 8
 	},
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelchess2"
+/obj/structure/lattice{
+	layer = 3
 	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/armory)
 "sG" = (
 /obj/effect/decal/cleanable/generic,
@@ -3413,12 +3372,6 @@
 /obj/structure/closet/l3closet/virology,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/enclave/virology)
-"sM" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelchess2"
-	},
-/area/f13/enclave/vertibird)
 "sO" = (
 /obj/structure/table,
 /obj/machinery/computer/security/enclave,
@@ -3520,10 +3473,10 @@
 	},
 /area/f13/tunnel)
 "tq" = (
-/obj/effect/decal/cleanable/oil,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelrusty"
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
 	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/vertibird)
 "ts" = (
 /obj/effect/decal/cleanable/shreds,
@@ -4418,9 +4371,7 @@
 /obj/structure/lattice{
 	layer = 3
 	},
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelrusty"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/vertibird)
 "yp" = (
 /obj/effect/turf_decal/stripes/line,
@@ -4487,15 +4438,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/enclave/mess)
-"yD" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelrusty"
-	},
-/area/f13/enclave/vertibird)
 "yE" = (
 /obj/machinery/biogenerator,
 /turf/open/floor/plasteel/f13/vault_floor/green,
@@ -4539,9 +4481,10 @@
 	light_color = "#F5CDA6";
 	bulb_colour = "#F5CDA6"
 	},
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelrusty"
+/obj/structure/lattice{
+	layer = 3
 	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/armory)
 "yR" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -4608,15 +4551,6 @@
 /obj/effect/decal/cleanable/oil,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/enclave/vertibird)
-"zf" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/lattice{
-	layer = 3
-	},
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelchess2"
-	},
-/area/f13/enclave/innerchp)
 "zg" = (
 /obj/structure/closet/crate/radiation,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -4653,9 +4587,10 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelchess"
+/obj/structure/lattice{
+	layer = 3
 	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/vertibird)
 "zz" = (
 /obj/structure/chair/wood{
@@ -4982,7 +4917,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/landmark/start/f13/uslightduty,
 /obj/effect/landmark/start/f13/usis,
-/turf/open/floor/plating/tunnel,
+/turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/enclave/hallways)
 "Bt" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -5006,9 +4941,7 @@
 	light_color = "#F5CDA6";
 	bulb_colour = "#F5CDA6"
 	},
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelrusty"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/enclave/innerchp)
 "Bw" = (
 /obj/effect/spawner/lootdrop/maintenance,
@@ -5150,9 +5083,7 @@
 	layer = 3
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelrusty"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/enclave/hallways)
 "Cv" = (
 /obj/effect/turf_decal/stripes/corner{
@@ -6583,9 +6514,7 @@
 /obj/structure/lattice{
 	layer = 3
 	},
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelrusty"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/armory)
 "KY" = (
 /obj/structure/cable{
@@ -6867,7 +6796,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/oil/streak,
-/turf/open/floor/plating/tunnel,
+/turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/enclave/hallways)
 "Nc" = (
 /obj/effect/decal/marking,
@@ -6886,7 +6815,7 @@
 /obj/structure/lattice{
 	layer = 3
 	},
-/turf/open/floor/plating/tunnel,
+/turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/enclave/hallways)
 "Ng" = (
 /obj/effect/decal/cleanable/generic,
@@ -6941,9 +6870,10 @@
 /area/f13/enclave/command)
 "Nu" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelchess2"
+/obj/structure/lattice{
+	layer = 3
 	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
 /area/f13/enclave/rnd)
 "Ny" = (
 /turf/open/floor/plasteel/f13/vault_floor/green,
@@ -7035,7 +6965,10 @@
 "NY" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/insectguts,
-/turf/open/floor/plating/tunnel,
+/obj/structure/lattice{
+	layer = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/enclave/innerchp)
 "NZ" = (
 /obj/item/twohanded/required/kirbyplants/random,
@@ -7046,9 +6979,10 @@
 	anchored = 1
 	},
 /obj/item/target,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelrusty"
+/obj/structure/lattice{
+	layer = 3
 	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/armory)
 "Od" = (
 /obj/structure/bed/mattress/pregame,
@@ -7241,9 +7175,7 @@
 "OI" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/vending/security,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelchess2"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/armory)
 "OJ" = (
 /obj/structure/toilet{
@@ -7318,9 +7250,10 @@
 /area/f13/enclave/virology)
 "Pj" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelchess"
+/obj/structure/lattice{
+	layer = 3
 	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/enclave/innerchp)
 "Pl" = (
 /obj/effect/spawner/lootdrop/maintenance,
@@ -7385,9 +7318,7 @@
 /obj/item/flashlight/flare/emergency,
 /obj/item/flashlight/flare/emergency,
 /obj/item/flashlight/flare/emergency,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelrusty"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/vertibird)
 "PI" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -7713,7 +7644,7 @@
 /obj/structure/lattice{
 	layer = 3
 	},
-/turf/open/floor/plating/tunnel,
+/turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/enclave/hallways)
 "Sb" = (
 /turf/open/floor/plasteel/f13/vault_floor/white,
@@ -8114,6 +8045,11 @@
 	dir = 8;
 	network = list("Enclave")
 	},
+/obj/item/grenade/clusterbuster/cleaner,
+/obj/item/grenade/clusterbuster/cleaner,
+/obj/item/grenade/clusterbuster/cleaner,
+/obj/item/grenade/clusterbuster/cleaner,
+/obj/item/grenade/clusterbuster/cleaner,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
 	},
@@ -8628,11 +8564,6 @@
 /obj/effect/landmark/start/f13/usspy,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
-"WU" = (
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelchess2"
-	},
-/area/f13/enclave/prison)
 "WY" = (
 /obj/structure/obstacle/barbedwire,
 /turf/open/indestructible/ground/outside/snow,
@@ -8717,9 +8648,7 @@
 /obj/structure/lattice{
 	layer = 3
 	},
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelchess2"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/enclave/hallways)
 "XB" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -8970,7 +8899,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/oil,
-/turf/open/floor/plating/tunnel,
+/turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/enclave/hallways)
 "Zl" = (
 /obj/structure/sign/departments/botany,
@@ -12679,10 +12608,10 @@ JS
 JS
 JS
 Um
-UQ
-UQ
-UQ
-UQ
+Um
+Um
+Um
+Um
 Um
 iT
 HA
@@ -12935,12 +12864,12 @@ Um
 qU
 Bp
 bj
-UQ
+Um
 Dp
 Lt
 Um
 Xi
-UQ
+Um
 iT
 HA
 HA
@@ -13197,7 +13126,7 @@ qG
 qG
 OW
 YH
-UQ
+Um
 iT
 HA
 HA
@@ -13711,7 +13640,7 @@ DV
 SS
 vG
 Ja
-UQ
+Um
 iT
 HA
 HA
@@ -13968,7 +13897,7 @@ sb
 Om
 cb
 TK
-UQ
+Um
 iT
 HA
 HA
@@ -14224,7 +14153,7 @@ Um
 Um
 Um
 Um
-UQ
+Um
 Um
 iT
 HA
@@ -14482,7 +14411,7 @@ FX
 Xx
 Um
 Eu
-UQ
+Um
 iT
 HA
 UE
@@ -16018,7 +15947,7 @@ IG
 UQ
 EJ
 qr
-sh
+Nf
 UQ
 IG
 Ew
@@ -17313,7 +17242,7 @@ Um
 Um
 cD
 UQ
-wR
+sc
 UQ
 UQ
 UQ
@@ -17571,8 +17500,8 @@ ZQ
 rR
 sU
 sU
-wR
-sM
+sc
+sU
 Gr
 ZN
 sU
@@ -18343,10 +18272,10 @@ FS
 kF
 FS
 MP
-FS
+tq
 zt
 qN
-yD
+zt
 FS
 gL
 UQ
@@ -18602,7 +18531,7 @@ GH
 GH
 nG
 nG
-tq
+ze
 GH
 Yt
 kX
@@ -20359,7 +20288,7 @@ Um
 cD
 dD
 dD
-zf
+Pj
 KV
 iy
 be
@@ -21428,7 +21357,7 @@ HD
 HD
 HD
 HD
-bp
+nD
 pg
 nD
 HD
@@ -27299,8 +27228,8 @@ UB
 iT
 Um
 Ay
-mH
-pL
+vT
+vT
 vT
 Um
 oL
@@ -27812,7 +27741,7 @@ HA
 UB
 iT
 Um
-nV
+Dz
 OI
 zK
 oL
@@ -28092,7 +28021,7 @@ aG
 vJ
 vJ
 UQ
-WU
+of
 ag
 bo
 Um

@@ -30,8 +30,10 @@
 			gun_overlay.pixel_x = 3 * (i - 1)
 			. += gun_overlay
 	if(open)
+		playsound(loc, 'sound/machines/click.ogg', 15, 1, -3)
 		. += "[icon_state]_open"
 	else
+		playsound(loc, 'sound/machines/click.ogg', 15, 1, -3)
 		. += "[icon_state]_door"
 
 /obj/structure/guncase/attackby(obj/item/I, mob/user, params)

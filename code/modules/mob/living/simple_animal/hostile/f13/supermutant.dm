@@ -61,7 +61,7 @@
 /mob/living/simple_animal/hostile/supermutant/bullet_act(obj/item/projectile/Proj)
 	if(!Proj)
 		return
-	if(prob(85) || Proj.damage > 26)
+	if(prob(85) || Proj.damage > 25)
 		return ..()
 	else
 		visible_message("<span class='danger'>\The [Proj] is deflected harmlessly by \the [src]'s thick skin!</span>")
@@ -487,7 +487,7 @@
 /mob/living/simple_animal/hostile/supermutant/rangedmutant/heavy/bullet_act(obj/item/projectile/Proj)
 	if(!Proj)
 		CRASH("[src] heavy supermutant invoked bullet_act() without a projectile")
-	if(prob(15) || Proj.damage > 30)
+	if(prob(15) || Proj.damage > 25)
 		return ..()
 	else
 		visible_message("<span class='danger'>\The [Proj] bounces off \the [src]'s armor plating!</span>")
