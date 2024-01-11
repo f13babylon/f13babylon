@@ -48,7 +48,8 @@
 	alt_covers_chest = TRUE
 	obj_flags = UNIQUE_RENAME
 	unique_reskin = list("M1" = "mercbdcamo",
-						"M2" = "mercdcamo")
+						"M2" = "mercdcamo",
+						"M3" = "mercecamo")
 
 /obj/item/clothing/under/syndicate/mercpadded
 	name = "urban mercenary uniform"
@@ -60,7 +61,8 @@
 	alt_covers_chest = TRUE
 	obj_flags = UNIQUE_RENAME
 	unique_reskin = list("M1" = "mercpred",
-						"M2" = "mercpw")
+						"M2" = "mercpw",
+						"M3" = "mercps")
 
 /obj/item/clothing/under/syndicate/bloodred/sleepytime
 	name = "blood-red pajamas"
@@ -115,7 +117,8 @@
 	can_adjust = FALSE
 	obj_flags = UNIQUE_RENAME
 	unique_reskin = list("M1" = "merc_gorkag",
-						"M2" = "merc_gorkar")
+						"M2" = "merc_gorkar",
+						"M3" = "merc_gorkas")
 
 /obj/item/clothing/under/syndicate/camo/cosmetic
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
