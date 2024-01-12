@@ -383,6 +383,7 @@
 	name = "tier 4 armor"
 	icon_state = "armort4_loot"
 	loot = list(
+				/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/raider,
 				/obj/effect/spawner/bundle/f13/armor/t45b_salvaged,
 				/obj/effect/spawner/bundle/f13/armor/riot,
 				/obj/effect/spawner/bundle/f13/armor/combat/mk2,
@@ -2223,9 +2224,10 @@
 				/obj/item/book/granter/trait/chemistry = 10,
 				/obj/item/book/granter/trait/trekking = 17,
 				/obj/item/book/granter/trait/techno = 14,
-				/obj/item/book/granter/trait/gunslinger = 4,
-				/obj/item/book/granter/trait/iron_fist = 4,
-				/obj/item/book/granter/trait/bigleagues = 4,
+				/obj/item/book/granter/trait/gunslinger = 3,
+				/obj/item/book/granter/trait/iron_fist = 3,
+				/obj/item/book/granter/trait/bigleagues = 3,
+				/obj/item/book/granter/trait/pa_wear = 3,
 				/obj/item/book/granter/trait/explosives = 17,
 				/obj/item/book/granter/trait/explosives_advanced = 5,
 				/obj/item/book/granter/trait/rifleman = 5,
