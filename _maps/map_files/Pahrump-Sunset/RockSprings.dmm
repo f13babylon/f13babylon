@@ -11328,7 +11328,7 @@
 	},
 /area/f13/building)
 "lwU" = (
-/obj/structure/simple_door/bunker/glass,
+/obj/machinery/door/airlock/vault/derelict,
 /turf/open/floor/plasteel/barber{
 	icon_state = "plating"
 	},
@@ -11907,7 +11907,7 @@
 	},
 /area/f13/caves)
 "mdG" = (
-/obj/structure/simple_door/bunker/glass,
+/obj/machinery/door/airlock/vault/derelict,
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/building)
 "meE" = (
@@ -19885,8 +19885,11 @@
 /turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
 "tAD" = (
-/obj/structure/debris/v4,
-/turf/closed/indestructible/rock,
+/obj/structure/debris/v3{
+	pixel_x = -12;
+	resistance_flags = 0
+	},
+/turf/open/indestructible/ground/outside/dirt/harsh,
 /area/f13/building)
 "tAO" = (
 /obj/structure/curtain{
@@ -20406,13 +20409,6 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/bar,
 /area/f13/building)
-"uhV" = (
-/obj/structure/debris/v3{
-	pixel_x = 8;
-	pixel_y = -5
-	},
-/turf/open/indestructible/ground/outside/dirt/harsh,
-/area/f13/building)
 "uhX" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -20797,17 +20793,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorrustysolid"
-	},
-/area/f13/building)
-"uzV" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/fakelattice,
-/obj/structure/debris/v3{
-	pixel_x = 8;
-	pixel_y = -5
-	},
-/turf/open/floor/plasteel/barber{
-	icon_state = "plating"
 	},
 /area/f13/building)
 "uAn" = (
@@ -21444,8 +21429,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building)
 "vht" = (
-/obj/structure/debris/v3{
-	pixel_x = -12
+/obj/structure/debris/v4{
+	resistance_flags = 0
 	},
 /turf/open/indestructible/ground/outside/dirt/harsh,
 /area/f13/building)
@@ -76550,8 +76535,8 @@ fgA
 fLq
 fgA
 xsC
-uzV
-uhV
+xMp
+uQR
 lHr
 lzs
 vhd
@@ -76807,7 +76792,7 @@ fgA
 drm
 fgA
 xsC
-tgY
+vht
 tAD
 vht
 xsC
