@@ -26694,8 +26694,8 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/door/airlock/highsecurity{
-	req_one_access_txt = null;
-	req_access_txt = "25"
+	req_one_access_txt = "138";
+	name = "Bighorn Power Plant"
 	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
@@ -44717,20 +44717,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/village)
-"lrl" = (
-/obj/machinery/door/airlock/grunge{
-	name = "Bighorn Power Plant";
-	req_one_access_txt = "138"
-	},
-/turf/closed/indestructible/rock{
-	color = "#b09168";
-	desc = "An extremely tough wall.";
-	icon = 'icons/fallout/turfs/walls/house.dmi';
-	icon_state = "house0";
-	icon_type_smooth = "house";
-	name = "reinforced wooden wall"
-	},
-/area/f13/city/bighorn)
 "lrr" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/nest/molerat,
@@ -75292,8 +75278,8 @@
 /area/f13/caves)
 "xSv" = (
 /obj/machinery/door/airlock/highsecurity{
-	req_one_access_txt = null;
-	req_access_txt = "25"
+	req_one_access_txt = "138";
+	name = "Bighorn Power Plant"
 	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
@@ -96471,7 +96457,7 @@ bzB
 bzB
 pat
 pat
-lrl
+pat
 wok
 nqb
 nqb

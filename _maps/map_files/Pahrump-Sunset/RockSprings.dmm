@@ -880,11 +880,13 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "aOF" = (
-/turf/open/indestructible/ground/outside/desert/harsh{
-	dir = 1;
-	icon = 'icons/fallout/turfs/f13roadharsh.dmi';
-	icon_state = "outerpavementcorner"
+/obj/effect/overlay/turfs/sidewalk{
+	dir = 10
 	},
+/obj/structure/fence/corner{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
 "aPl" = (
 /obj/structure/fence{
@@ -2886,13 +2888,6 @@
 	name = "stone tile"
 	},
 /area/f13/caves)
-"cME" = (
-/turf/open/indestructible/ground/outside/desert/harsh{
-	dir = 9;
-	icon = 'icons/fallout/turfs/f13roadharsh.dmi';
-	icon_state = "outerpavementcorner"
-	},
-/area/f13/wasteland/rocksprings)
 "cMV" = (
 /obj/machinery/microwave/stove,
 /obj/effect/decal/cleanable/dirt,
@@ -2904,11 +2899,10 @@
 /obj/structure/fence/corner{
 	dir = 4
 	},
-/turf/open/indestructible/ground/outside/desert/harsh{
-	dir = 6;
-	icon = 'icons/fallout/turfs/f13roadharsh.dmi';
-	icon_state = "outerpavement"
+/obj/effect/overlay/turfs/sidewalk{
+	dir = 6
 	},
+/turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
 "cNI" = (
 /turf/open/indestructible/ground/outside/road{
@@ -6583,11 +6577,10 @@
 /obj/structure/fence/corner{
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/desert/harsh{
-	dir = 10;
-	icon = 'icons/fallout/turfs/f13roadharsh.dmi';
-	icon_state = "outerpavement"
+/obj/effect/overlay/turfs/sidewalk{
+	pixel_x = 16
 	},
+/turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
 "gtG" = (
 /obj/effect/decal/fakelattice,
@@ -7156,14 +7149,6 @@
 	},
 /turf/open/floor/wood/wood_wide,
 /area/f13/legion)
-"gWB" = (
-/obj/structure/fence,
-/turf/open/indestructible/ground/outside/desert/harsh{
-	dir = 4;
-	icon = 'icons/fallout/turfs/f13roadharsh.dmi';
-	icon_state = "outerpavement"
-	},
-/area/f13/wasteland/rocksprings)
 "gXF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
@@ -7579,11 +7564,10 @@
 /turf/open/indestructible/ground/outside/gravel,
 /area/f13/wasteland/rocksprings)
 "hsQ" = (
-/turf/open/indestructible/ground/outside/desert/harsh{
-	dir = 9;
-	icon = 'icons/fallout/turfs/f13roadharsh.dmi';
-	icon_state = "outerpavement"
+/obj/effect/overlay/turfs/sidewalk{
+	dir = 9
 	},
+/turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
 "htA" = (
 /obj/structure/railing{
@@ -8621,14 +8605,11 @@
 	},
 /area/f13/wasteland/rocksprings)
 "iww" = (
-/obj/effect/overlay/turfs/sidewalk{
-	dir = 1
+/obj/effect/overlay/turfs/sidewalk,
+/obj/structure/fence{
+	dir = 8
 	},
-/turf/open/indestructible/ground/outside/desert/harsh{
-	dir = 8;
-	icon = 'icons/fallout/turfs/f13roadharsh.dmi';
-	icon_state = "outerpavement"
-	},
+/turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
 "iwy" = (
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -9618,11 +9599,10 @@
 	pixel_x = -7;
 	pixel_y = -10
 	},
-/turf/open/indestructible/ground/outside/desert/harsh{
-	dir = 1;
-	icon = 'icons/fallout/turfs/f13roadharsh.dmi';
-	icon_state = "outerpavement"
+/obj/effect/overlay/turfs/sidewalk{
+	dir = 1
 	},
+/turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
 "jEf" = (
 /obj/structure/flora/wasteplant/wild_broc,
@@ -9965,10 +9945,8 @@
 /obj/structure/fence{
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/desert/harsh{
-	icon = 'icons/fallout/turfs/f13roadharsh.dmi';
-	icon_state = "outerpavement"
-	},
+/obj/effect/overlay/turfs/sidewalk,
+/turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
 "jXZ" = (
 /turf/open/indestructible/ground/outside/desert/harsh{
@@ -10850,10 +10828,8 @@
 /obj/structure/fence{
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/desert/harsh{
-	icon = 'icons/fallout/turfs/f13roadharsh.dmi';
-	icon_state = "outerpavement"
-	},
+/obj/effect/overlay/turfs/sidewalk,
+/turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
 "kSQ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -13939,11 +13915,10 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "nTu" = (
-/turf/open/indestructible/ground/outside/desert/harsh{
-	dir = 10;
-	icon = 'icons/fallout/turfs/f13roadharsh.dmi';
-	icon_state = "outerpavement"
+/obj/effect/overlay/turfs/sidewalk{
+	dir = 10
 	},
+/turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
 "nUC" = (
 /obj/item/storage/trash_stack{
@@ -13974,11 +13949,10 @@
 /turf/open/floor/plasteel/cult,
 /area/f13/building)
 "nVB" = (
-/turf/open/indestructible/ground/outside/desert/harsh{
-	dir = 6;
-	icon = 'icons/fallout/turfs/f13roadharsh.dmi';
-	icon_state = "outerpavement"
+/obj/effect/overlay/turfs/sidewalk{
+	dir = 6
 	},
+/turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
 "nVI" = (
 /obj/structure/fence/wooden{
@@ -15002,15 +14976,6 @@
 /obj/machinery/light/lampost,
 /turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
-"oUB" = (
-/obj/structure/fence{
-	dir = 8
-	},
-/turf/open/indestructible/ground/outside/desert/harsh{
-	icon = 'icons/fallout/turfs/f13roadharsh.dmi';
-	icon_state = "outerpavement"
-	},
-/area/f13/wasteland/rocksprings)
 "oVc" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common{
@@ -15601,11 +15566,10 @@
 	},
 /area/f13/caves)
 "pxa" = (
-/turf/open/indestructible/ground/outside/desert/harsh{
-	dir = 5;
-	icon = 'icons/fallout/turfs/f13roadharsh.dmi';
-	icon_state = "outerpavement"
+/obj/effect/overlay/turfs/sidewalk{
+	dir = 5
 	},
+/turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
 "pxO" = (
 /obj/structure/table/wood,
@@ -16946,11 +16910,10 @@
 /obj/structure/fence/corner{
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/desert/harsh{
-	dir = 9;
-	icon = 'icons/fallout/turfs/f13roadharsh.dmi';
-	icon_state = "outerpavement"
+/obj/effect/overlay/turfs/sidewalk{
+	dir = 9
 	},
+/turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
 "qMY" = (
 /obj/structure/table/wood/settler,
@@ -19916,11 +19879,10 @@
 /obj/structure/fence{
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/desert/harsh{
-	dir = 1;
-	icon = 'icons/fallout/turfs/f13roadharsh.dmi';
-	icon_state = "outerpavement"
+/obj/effect/overlay/turfs/sidewalk{
+	dir = 1
 	},
+/turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
 "tAD" = (
 /obj/structure/debris/v4,
@@ -20497,13 +20459,6 @@
 	},
 /turf/open/floor/plasteel/cult,
 /area/f13/building)
-"ulG" = (
-/turf/open/indestructible/ground/outside/desert/harsh{
-	dir = 4;
-	icon = 'icons/fallout/turfs/f13roadharsh.dmi';
-	icon_state = "outerpavementcorner"
-	},
-/area/f13/wasteland/rocksprings)
 "ulK" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -21009,16 +20964,6 @@
 "uJg" = (
 /obj/item/trash/f13/dog,
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/wasteland/rocksprings)
-"uJw" = (
-/obj/structure/fence/corner{
-	dir = 8
-	},
-/turf/open/indestructible/ground/outside/desert/harsh{
-	dir = 9;
-	icon = 'icons/fallout/turfs/f13roadharsh.dmi';
-	icon_state = "outerpavementcorner"
-	},
 /area/f13/wasteland/rocksprings)
 "uJJ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -22433,11 +22378,7 @@
 "vYj" = (
 /obj/structure/wreck/trash/five_tires,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
-/turf/open/indestructible/ground/outside/desert/harsh{
-	dir = 4;
-	icon = 'icons/fallout/turfs/f13roadharsh.dmi';
-	icon_state = "outerpavementcorner"
-	},
+/turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
 "vYK" = (
 /obj/effect/overlay/turfs/cliff{
@@ -22957,10 +22898,8 @@
 /obj/structure/fence{
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/desert/harsh{
-	icon = 'icons/fallout/turfs/f13roadharsh.dmi';
-	icon_state = "outerpavement"
-	},
+/obj/effect/overlay/turfs/sidewalk,
+/turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
 "wyA" = (
 /obj/item/seeds/cannabis,
@@ -24135,10 +24074,8 @@
 /area/f13/caves)
 "xIf" = (
 /obj/structure/fence/door,
-/turf/open/indestructible/ground/outside/desert/harsh{
-	icon = 'icons/fallout/turfs/f13roadharsh.dmi';
-	icon_state = "outerpavement"
-	},
+/obj/effect/overlay/turfs/sidewalk,
+/turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
 "xJd" = (
 /obj/structure/lattice,
@@ -24193,11 +24130,11 @@
 	},
 /area/f13/caves)
 "xLk" = (
-/turf/open/indestructible/ground/outside/desert/harsh{
-	dir = 8;
-	icon = 'icons/fallout/turfs/f13roadharsh.dmi';
-	icon_state = "outerpavementcorner"
+/obj/structure/fence{
+	dir = 8
 	},
+/obj/effect/overlay/turfs/sidewalk,
+/turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
 "xLq" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -45819,8 +45756,8 @@ uGk
 paT
 xxH
 hgP
-uJw
-gWB
+gtE
+sSL
 bYn
 bYn
 uFg
@@ -46076,7 +46013,7 @@ uGk
 gBb
 gPr
 hgP
-oUB
+xLk
 hbg
 suQ
 mNd
@@ -46590,7 +46527,7 @@ gBb
 hgP
 hgP
 hgP
-oUB
+xLk
 kjK
 peo
 peo
@@ -46847,7 +46784,7 @@ lmz
 hgP
 hgP
 hgP
-oUB
+xLk
 iwy
 peo
 peo
@@ -47618,7 +47555,7 @@ gBb
 gBb
 hgP
 hgP
-oUB
+xLk
 iwy
 peo
 nUF
@@ -47875,7 +47812,7 @@ vCg
 gBb
 hgP
 hgP
-oUB
+xLk
 iwy
 peo
 peo
@@ -48132,7 +48069,7 @@ uGk
 gBb
 hgP
 hgP
-oUB
+xLk
 iwy
 peo
 peo
@@ -48646,7 +48583,7 @@ gBb
 hgP
 hgP
 hgP
-oUB
+xLk
 kjK
 peo
 peo
@@ -48903,7 +48840,7 @@ hgP
 hgP
 hgP
 hgP
-oUB
+xLk
 bXR
 gyk
 cbH
@@ -48994,7 +48931,7 @@ hgP
 hgP
 hgP
 hgP
-cME
+jyU
 rPW
 rfA
 rPW
@@ -49026,7 +48963,7 @@ rPW
 rfA
 rfA
 rPW
-ulG
+kcs
 hgP
 hgP
 hgP
@@ -52243,7 +52180,7 @@ gpR
 gpR
 gpR
 gpR
-gtE
+aOF
 btA
 btA
 btA
@@ -52500,7 +52437,7 @@ hgP
 lof
 rqF
 hgP
-oUB
+iww
 aLP
 eKm
 eKm
@@ -52590,7 +52527,7 @@ paT
 qWV
 hgP
 hgP
-xLk
+jyU
 rPW
 rfA
 rPW
@@ -52619,7 +52556,7 @@ rPW
 rfA
 rfA
 rPW
-aOF
+kcs
 hgP
 hgP
 hgP
@@ -52666,7 +52603,7 @@ aMF
 aMF
 bIE
 nkZ
-iww
+hsQ
 hwr
 hwr
 hwr
@@ -52757,7 +52694,7 @@ hgP
 iAF
 vTD
 hgP
-oUB
+xLk
 iwy
 bJR
 aqb
@@ -53014,7 +52951,7 @@ rqF
 hgP
 hgP
 hgP
-oUB
+xLk
 iwy
 peo
 rJy
@@ -53271,7 +53208,7 @@ qWV
 hgP
 hgP
 hgP
-oUB
+xLk
 iwy
 jEL
 xiZ
@@ -53528,7 +53465,7 @@ vTD
 hgP
 hgP
 hgP
-oUB
+xLk
 iwy
 jEL
 peo
@@ -53785,7 +53722,7 @@ gNZ
 rqF
 hgP
 hgP
-oUB
+xLk
 iwy
 jEL
 hPW
@@ -54042,7 +53979,7 @@ paT
 rnh
 rqF
 hgP
-oUB
+xLk
 iwy
 jEL
 hPW
@@ -54299,7 +54236,7 @@ paT
 paT
 qWV
 hgP
-oUB
+xLk
 iwy
 peo
 peo
@@ -54556,7 +54493,7 @@ paT
 psz
 vTD
 hgP
-oUB
+xLk
 iwy
 jEL
 peo
@@ -54813,7 +54750,7 @@ paT
 qWV
 hgP
 hgP
-oUB
+xLk
 iwy
 jEL
 qYz
@@ -55070,7 +55007,7 @@ nsp
 vTD
 hgP
 hgP
-oUB
+xLk
 iwy
 jEL
 tKY
@@ -55327,7 +55264,7 @@ hgP
 hgP
 hgP
 hgP
-oUB
+xLk
 dyH
 pMj
 cOz
