@@ -194,7 +194,7 @@ Mayor
 	/datum/outfit/loadout/richmantender,
 	/datum/outfit/loadout/diner)
 
-	access = list(ACCESS_BAR, ACCESS_KITCHEN, ACCESS_TOWN_BAR, ACCESS_TOWN)
+	access = list(ACCESS_BAR, ACCESS_KITCHEN, ACCESS_TOWN_BAR, ACCESS_TOWN, ACCESS_FUSION)
 	minimal_access = list(ACCESS_BAR, ACCESS_KITCHEN, ACCESS_TOWN_BAR, ACCESS_TOWN)
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -275,7 +275,7 @@ Mayor
 	exp_requirements = 400
 
 	outfit = /datum/outfit/job/bighorn/f13shopkeeper
-	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_TOWN, ACCESS_SHOPKEEP)
+	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_TOWN, ACCESS_SHOPKEEP, ACCESS_FUSION)
 	minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_TOWN, ACCESS_SHOPKEEP)
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -386,7 +386,7 @@ Mayor
 	/datum/outfit/loadout/cleanser		//Just some bombs.
 	)
 
-	access = list(ACCESS_BAR, ACCESS_TOWN, ACCESS_CHAPEL_OFFICE)		//we can expand on this and make alterations as people suggest different loadouts
+	access = list(ACCESS_BAR, ACCESS_TOWN, ACCESS_CHAPEL_OFFICE, ACCESS_FUSION)		//we can expand on this and make alterations as people suggest different loadouts
 	minimal_access = list(ACCESS_BAR, ACCESS_TOWN, ACCESS_CHAPEL_OFFICE)
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -674,7 +674,7 @@ Mayor
 	exp_type = EXP_TYPE_BIGHORN
 	exp_requirements = 200
 	outfit = /datum/outfit/job/bighorn/f13secretary
-	access = list(ACCESS_BAR, ACCESS_FORENSICS_LOCKERS)
+	access = list(ACCESS_BAR, ACCESS_FORENSICS_LOCKERS, ACCESS_FUSION)
 	minimal_access = list(ACCESS_BAR, ACCESS_FORENSICS_LOCKERS)
 
 /datum/outfit/job/bighorn/f13secretary
