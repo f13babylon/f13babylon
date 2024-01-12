@@ -1499,9 +1499,9 @@
 /obj/effect/turf_decal/stripes/white/box{
 	color = "#a67c33"
 	},
-/obj/item/ammo_box/a556mm,
-/obj/item/ammo_box/a556mm,
-/obj/item/ammo_box/a556mm,
+/obj/item/ammo_box/a556mmbox,
+/obj/item/ammo_box/a556mmbox,
+/obj/item/ammo_box/a556mmbox,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "uh" = (
