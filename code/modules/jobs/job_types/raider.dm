@@ -251,9 +251,10 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 
 /datum/outfit/loadout/raider_highway
 	name = "Highwayman"
-	uniform = /obj/item/clothing/under/f13/combat
-	shoes = /obj/item/clothing/shoes/f13/cowboy
-	head = /obj/item/clothing/head/f13/cowboy
+	suit = /obj/item/clothing/suit/f13/cowboygvest
+	uniform = /obj/item/clothing/under/f13/cowboyg
+	shoes = /obj/item/clothing/shoes/cowboyboots/black
+	head = /obj/item/clothing/head/cowboyhat/black
 	gloves = /obj/item/clothing/gloves/color/brown
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/colt357 = 2,
@@ -261,8 +262,34 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 		/obj/item/binoculars = 1,
 		/obj/item/radio = 1,
 		/obj/item/weapon/maptool = 1,
-		/obj/item/book/granter/trait/gunslinger,
+		/obj/item/book/granter/trait/gunslinger = 1,
+		/obj/item/storage/belt/holster = 1,
 		)
+
+/datum/outfit/loadout/raider_bos
+	name = "Brotherhood Radical"
+	suit = /obj/item/clothing/suit/armored/heavy/bosexile
+	id = /obj/item/card/id/rusted/brokenholodog
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/recon/outcast = 1,
+		/obj/item/gun/energy/laser/pistol = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 1,
+		/obj/item/book/granter/trait/chemistry = 1,
+		)
+
+/datum/outfit/loadout/raider_ncr
+	name = "NCR Deserter"
+	suit = /obj/item/clothing/suit/armor/f13/exile/ncrexile
+	uniform = /obj/item/clothing/under/f13/exile
+	id = /obj/item/card/id/rusted
+	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/m1carbine,
+		/obj/item/ammo_box/magazine/msmg10mm = 1,
+		/obj/item/melee/onehanded/knife/bayonet = 1,
+		/obj/item/storage/box/ration/ranger_breakfast = 1,
+		/obj/item/grenade/f13/frag = 2,
+		/obj/item/reagent_containers/hypospray/medipen/medx = 1
+	    )
 
 /*
 Reason this is commented out: Not needed, may re-use loadouts later
