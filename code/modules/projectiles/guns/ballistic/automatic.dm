@@ -230,7 +230,7 @@
 	automatic = !automatic
 	playsound(usr, 'sound/weapons/empty.ogg', 100, 1)
 
-//American 180			Keywords: .22 LR, Suppressed, Bullethose, 180 Round drum, Bulky, Low-mid tier
+//American 180			Keywords: .22 LR, Suppressed, Bullethose, 180 Round drum, Bulky, High-mid tier
 /obj/item/gun/ballistic/automatic/smg/smg22
 	name = "silenced .22 SMG"
 	desc = "An integrally suppressed American 180 riot suppression submachine gun chambered in .22 LR, feeding from top-loaded pan magazines."
