@@ -734,7 +734,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m5mm
 	automatic = FALSE
 	is_automatic = FALSE
-	burst_size = 3
+	burst_size = 2
 	fire_delay = 5
 	spread = 12
 
