@@ -962,6 +962,12 @@
 	cost = 1
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_WASTELAND
 
+/datum/gear/uniform/wasteland/cowpoke
+	name = "cowpoke outfit"
+	path = /obj/item/clothing/under/f13/cowpoke
+	cost = 1
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_WASTELAND
+
 /datum/gear/uniform/wasteland/masonduds
 	name = "Vagabond's gang attire"
 	path = /obj/item/clothing/under/f13/masonduds

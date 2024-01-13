@@ -255,5 +255,5 @@
 	desc = "A close-fitting tactical mask issued to all NCR Rangers."
 	icon_state = "rangermask"
 	item_state = "rangermask"
-	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS
 	visor_flags_inv = 0

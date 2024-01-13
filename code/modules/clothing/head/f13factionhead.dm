@@ -679,11 +679,18 @@
 
 /obj/item/clothing/head/f13/trailranger
 	name = "NCR trail ranger hat"
-	desc = "a rustic, homely style cowboy hat worn by NCR trail rangers. Yeehaw!"
+	desc = "one of the many hats worn by NCR trail rangers."
 	icon_state = "cowboyrang"
 	item_state = "cowboyrang"
 	armor = list("melee" = 35, "bullet" = 45, "laser" = 25, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
+	unique_reskin = list("M1" = "vaquerohat",
+						"M2" = "marlowhat",
+						"M3" = "ncr_slouch",
+						"M4" = "bigcowboyhat",
+						"M5" = "gamblerrang",
+						"M6" = "scoutberet",
+						"M7" = "cowboyrang")
 
 /obj/item/clothing/head/f13/trailranger/Initialize(mapload)
 	. = ..()
@@ -696,6 +703,10 @@
 	item_state = "rangerhat"
 	armor = list("melee" = 35, "bullet" = 45, "laser" = 25, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
+	unique_reskin = list("M1" = "drillhat_old",
+						"M2" = "marlowhat",
+						"M3" = "mosshelmet",
+						"M4" = "rangerhat")
 
 /obj/item/clothing/head/f13/ranger/Initialize(mapload)
 	. = ..()
@@ -706,10 +717,13 @@
 	desc = "A combat helmet hand-manufactured in the NCR and issued to patrol rangers."
 	icon_state = "ncr_patrol_helmet"
 	item_state = "ncr_patrol_helmet"
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE|HIDESNOUT
+	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACE|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	armor = list("melee" = 35, "bullet" = 45, "laser" = 25, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
+	unique_reskin = list("M1" = "ncr_patrol_helmet_old",
+						"M2" = "ncr_helmet_mk2",
+						"M3" = "ncr_patrol_helmet")
 
 /obj/item/clothing/head/helmet/f13/combat/ncr_patrol/Initialize(mapload)
 	. = ..()
