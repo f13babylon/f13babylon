@@ -2821,6 +2821,7 @@
 "duy" = (
 /obj/effect/spawner/lootdrop/f13/advcrafting,
 /obj/effect/spawner/lootdrop/f13/advcrafting,
+/obj/effect/spawner/lootdrop/f13/medical/random_fev,
 /turf/open/floor/plating,
 /area/f13/bunker)
 "duA" = (
@@ -10528,7 +10529,6 @@
 /area/f13/ahs)
 "mqh" = (
 /obj/structure/table,
-/obj/effect/spawner/lootdrop/f13/medical/random_fev,
 /turf/open/floor/plasteel/barber{
 	icon_state = "platingdmg1"
 	},
@@ -13966,12 +13966,6 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/vault)
-"qad" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin,
-/turf/open/floor/plasteel/barber{
-	icon_state = "platingdmg3"
-	},
-/area/f13/bunker)
 "qag" = (
 /obj/structure/closet/crate/radiation,
 /obj/item/stack/sheet/mineral/uranium{
@@ -33507,7 +33501,7 @@ shC
 shC
 shC
 bZQ
-qad
+cQM
 oqm
 xjm
 dfE
