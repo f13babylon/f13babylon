@@ -245,7 +245,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 		/obj/item/melee/onehanded/machete,
 		/obj/item/restraints/legcuffs/bola/tactical,
 		/obj/item/restraints/legcuffs = 2,
-		/obj/item/electropack/shockcollar/explosive = 2,
+		/obj/item/electropack/shockcollar = 2,
 		/obj/item/book/granter/trait/bigleagues,
 		)
 
@@ -274,7 +274,6 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 		/obj/item/clothing/under/f13/recon/outcast = 1,
 		/obj/item/gun/energy/laser/pistol = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 1,
-		/obj/item/book/granter/trait/chemistry = 1,
 		)
 
 /datum/outfit/loadout/raider_ncr
