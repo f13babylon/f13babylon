@@ -353,7 +353,7 @@
 
 /obj/item/projectile/beam/laser/pistol/hitscan //hitscan AEP7
 	name = "laser beam"
-	damage = 20
+	damage = 18
 	hitscan = TRUE
 	bare_wound_bonus = 6//As above.
 	tracer_type = /obj/effect/projectile/tracer/laser
@@ -422,7 +422,7 @@
 
 /obj/item/projectile/beam/laser/pistol/wattz/hitscan //hitscan wattz
 	name = "weak laser beam"
-	damage = 18
+	damage = 16
 	hitscan = TRUE
 	tracer_type = /obj/effect/projectile/tracer/laser
 	muzzle_type = /obj/effect/projectile/muzzle/laser
@@ -430,12 +430,12 @@
 
 /obj/item/projectile/beam/laser/pistol/wattz/magneto //upgraded Wattz
 	name = "penetrating laser beam"
-	damage = 22
+	damage = 18
 	armour_penetration = 0.1
 
 /obj/item/projectile/beam/laser/pistol/wattz/magneto/hitscan
 	name = "penetrating laser beam"
-	damage = 22
+	damage = 17
 	hitscan = TRUE
 	armour_penetration = 0.1 //rare laser to keep its AP, since base model is so bad
 	tracer_type = /obj/effect/projectile/tracer/laser
