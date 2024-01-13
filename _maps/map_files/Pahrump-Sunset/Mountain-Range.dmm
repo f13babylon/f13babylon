@@ -7647,7 +7647,7 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/hobo,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superlow,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superlow,
-/obj/effect/spawner/lootdrop/weapons/oldarmyelite,
+/obj/effect/spawner/lootdrop/weapons/oldarmy,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/armory)
 "Sl" = (
