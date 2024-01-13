@@ -66,11 +66,13 @@ Mayor
 	suit = 		/obj/item/clothing/suit/armor/f13/kit
 	head = 		/obj/item/clothing/head/fedora
 	backpack_contents = list(
-		/obj/item/clothing/head/f13/town/big = 1, \
-		/obj/item/storage/box/citizenship_permits = 1, \
-		/obj/item/ammo_box/a357=2, \
+		/obj/item/clothing/head/f13/town/big = 1,
+		/obj/item/storage/box/citizenship_permits = 1,
+		/obj/item/ammo_box/a357 = 2,
 		/obj/item/pen/fountain/captain = 1,
-		/obj/item/storage/bag/money/small/mayor = 1,)//Cash for payouts. Incredible amount, seeing as next to the Banker, he's the closest thing to a treasury keeper.
+		/obj/item/storage/bag/money/small/mayor = 1, //Cash for payouts. Incredible amount, seeing as next to the Banker, he's the closest thing to a treasury keeper.
+		/obj/item/pda = 1,
+		)
 /*--------------------------------------------------------------*/
 /datum/job/bighorn/f13sheriff
 	title = "Sheriff"
@@ -545,11 +547,13 @@ Mayor
 	backpack =		/obj/item/storage/backpack/cultpack
 	satchel = 		/obj/item/storage/backpack/cultpack
 	backpack_contents = list(
-		/obj/item/camera/spooky = 1, \
-		/obj/item/reagent_containers/food/drinks/flask=1, \
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=2, \
-		/obj/item/storage/fancy/candle_box, \
-		/obj/item/storage/bag/money/small/settler)
+		/obj/item/camera/spooky = 1,
+		/obj/item/reagent_containers/food/drinks/flask = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
+		/obj/item/storage/fancy/candle_box = 1,
+		/obj/item/pda = 1,
+		/obj/item/storage/bag/money/small/settler = 1,
+		)
 //end preacher
 
 /datum/outfit/job/bighorn/f13settler
@@ -686,4 +690,6 @@ Mayor
 	backpack_contents = list(/obj/item/clothing/under/f13/classdress = 1,
 	/obj/item/clothing/under/suit/black_really = 1,
 	/obj/item/clothing/gloves/evening = 1,
-	/obj/item/clothing/gloves/color/white = 1)
+	/obj/item/clothing/gloves/color/white = 1,
+	/obj/item/pda = 1,
+	)

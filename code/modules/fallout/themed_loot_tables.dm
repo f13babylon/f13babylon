@@ -343,7 +343,7 @@
 		/obj/item/ammo_box/c45 = 15,
 		/obj/item/ammo_box/shotgun/slug = 15,
 		/obj/item/stock_parts/cell/ammo/ec = 15,
-		/obj/item/ammo_box/a556mm = 15,
+		/obj/item/ammo_box/a556mmbox = 15,
 		/obj/item/ammo_box/a762mm = 10,
 		/obj/item/ammo_box/a762mmbox = 10,
 		/obj/item/ammo_box/magazine/m556mm/extended/empty = 8,

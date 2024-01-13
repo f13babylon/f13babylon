@@ -1742,6 +1742,16 @@
 	icon_state = "jamrock_uniform"
 	item_state = "jamrock_uniform"
 
+/obj/item/clothing/under/f13/cowpoke
+	name = "cowpoke outfit"
+	desc = "A washed out gray overshirt with blue neckerchief and old jeans."
+	icon_state = "cowpoke"
+	item_state = "cowpoke"
+	can_adjust = TRUE
+	unique_reskin = list("M1" = "cowpoket",
+						"M2" = "cowpokeb",
+						"M3" = "cowpoke")
+
 /obj/item/clothing/under/f13/keksweater
 	name = "Red Sweater"
 	desc = "A dark red-sweater with some cargo-pants. Perfect for when it just gets too cold down in local air-conditioned areas."

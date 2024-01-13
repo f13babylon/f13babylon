@@ -565,6 +565,11 @@
 	armor = list("melee" = 25, "bullet" = 30, "laser" = 27.5, "energy" = 5, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 15)
 	slowdown = 0.03
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
+	unique_reskin = list("M1" = "vest_utility",
+						"M2" = "modif_r_vest",
+						"M3" = "blueshift",
+						"M4" = "bulletproof",
+						"M5" = "cowboyrang")
 
 /obj/item/clothing/suit/armor/f13/trailranger/Initialize(mapload)
 	. = ..()
@@ -590,6 +595,10 @@
 	item_state = "ncr_patrol"
 	armor = list("melee" = 30, "bullet" = 40, "laser" = 40, "energy" = 15, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 20)
 	mutantrace_variation = STYLE_DIGITIGRADE
+	unique_reskin = list("M1" = "ncr_patrol_old",
+						"M2" = "thaxarmor",
+						"M3" = "sergeant",
+						"M4" = "ncr_patrol")
 
 /obj/item/clothing/suit/armor/f13/combat/ncr_patrol/Initialize(mapload)
 	. = ..()
@@ -614,12 +623,12 @@
 	item_state = "ranger"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 	slowdown = 0.03
-	obj_flags = UNIQUE_RENAME
 	unique_reskin = list("M1" = "ranger_old",
 						"M2" = "foxranger",
 						"M3" = "price_ranger",
 						"M4" = "desert_ranger",
-						"M5" = "elite_riot")
+						"M5" = "elite_riot",
+						"M6" = "ranger")
 	armor = list("melee" = 30, "bullet" = 45, "laser" = 35, "energy" = 10, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20, "wound" = 35)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 	mutantrace_variation = STYLE_DIGITIGRADE
