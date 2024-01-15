@@ -135,7 +135,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	l_hand = /obj/item/tank/internals/oxygen
 	backpack = null
 	satchel = null
-	ears = /obj/item/radio/headset/headset_legion/cent
+	ears = /obj/item/radio/headset/headset_legion/command
 	box = /obj/item/storage/box/legate
 
 
@@ -285,7 +285,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13centurion
 	id = /obj/item/card/id/dogtag/legcenturion
 	mask = /obj/item/clothing/mask/bandana/legion/legcenturion
-	ears = /obj/item/radio/headset/headset_legion/cent
+	ears = /obj/item/radio/headset/headset_legion/command
 	gloves = /obj/item/clothing/gloves/legion/plated
 	glasses = /obj/item/clothing/glasses/night/polarizing
 	shoes = /obj/item/clothing/shoes/f13/military/plated
@@ -389,7 +389,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	neck = /obj/item/storage/belt/holster
 	gloves = /obj/item/clothing/gloves/legion/plated
 	glasses = /obj/item/clothing/glasses/legiongoggles
-	ears = /obj/item/radio/headset/headset_legion/cent
+	ears = /obj/item/radio/headset/headset_legion/command
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	r_pocket = /obj/item/flashlight/lantern

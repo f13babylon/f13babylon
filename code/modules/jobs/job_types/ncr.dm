@@ -183,7 +183,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	id = /obj/item/card/id/dogtag/ncrcaptain
 	uniform	= /obj/item/clothing/under/f13/ncr/ncr_officer
 	head = /obj/item/clothing/head/beret/ncr
-	ears = /obj/item/radio/headset/headset_ncr_com
+	ears = /obj/item/radio/headset/headset_ncr/command
 	glasses = /obj/item/clothing/glasses/night/ncr
 	gloves = /obj/item/clothing/gloves/f13/leather
 	shoes = /obj/item/clothing/shoes/f13/military/ncr_officer_boots
@@ -259,7 +259,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	neck = /obj/item/storage/belt/holster/legholster
 	glasses = /obj/item/clothing/glasses/night/ncr
 	gloves = /obj/item/clothing/gloves/f13/leather
-	ears = /obj/item/radio/headset/headset_ncr_com
+	ears = /obj/item/radio/headset/headset_ncr/command
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
 	r_pocket = /obj/item/binoculars
 	backpack_contents = list(
@@ -604,7 +604,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	shoes =	/obj/item/clothing/shoes/f13/military/leather
 	glasses	= /obj/item/clothing/glasses/sunglasses
 	neck = /obj/item/storage/belt/holster
-	ears = /obj/item/radio/headset/headset_ranger
+	ears = /obj/item/radio/headset/headset_ncr/command
 	mask = /obj/item/clothing/mask/gas/ranger
 	r_pocket = /obj/item/binoculars
 	backpack_contents = list(
@@ -1267,7 +1267,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	neck = /obj/item/storage/belt/holster/legholster
 	glasses = /obj/item/clothing/glasses/hud/health/f13
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile
-	ears = /obj/item/radio/headset/headset_ncr_com
+	ears = /obj/item/radio/headset/headset_ncr/command
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/labcoat
 	belt = /obj/item/storage/belt/military/assault/ncr
 	r_hand = /obj/item/storage/backpack/duffelbag/med/surgery
