@@ -626,9 +626,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/glass,
 /obj/effect/decal/cleanable/oil/streak,
-/obj/machinery/porta_turret/syndicate{
-	faction = list("raider","hostile","ghoul","supermutant")
-	},
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/bunker)
 "aKW" = (
@@ -1102,20 +1099,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/bunker)
-"bpH" = (
-/mob/living/simple_animal/hostile/renegade{
-	loot = list();
-	melee_damage_lower = 10;
-	melee_damage_upper = 20;
-	rapid_melee = 2;
-	health = 200;
-	maxHealth = 200;
-	armour_penetration = 0.3
-	},
-/turf/open/floor/f13{
-	icon_state = "bluedirtychess2"
-	},
-/area/f13/bunker)
 "bpX" = (
 /obj/structure/window/reinforced/spawner/west,
 /obj/structure/window/reinforced/spawner/north,
@@ -1142,14 +1125,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/vault)
-"bqP" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/porta_turret/syndicate{
-	faction = list("raider","hostile","ghoul","supermutant");
-	armour_penetration = 0.4
-	},
-/turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
-/area/f13/bunker)
 "brn" = (
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -1463,12 +1438,7 @@
 	light_color = "#ad1b1b"
 	},
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/supermutant/rangedmutant/heavy{
-	armour_penetration = 0.6;
-	minimum_distance = 0;
-	rapid_melee = 2;
-	retreat_distance = 3
-	},
+/mob/living/simple_animal/hostile/supermutant/rangedmutant/heavy,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/bunker)
 "bNo" = (
@@ -2205,14 +2175,6 @@
 /obj/effect/spawner/lootdrop/f13/armor/clothes,
 /turf/open/floor/f13/wood,
 /area/f13/city)
-"cFT" = (
-/mob/living/simple_animal/hostile/eyebot{
-	faction = list("hostile","raider","wastebot","ghoul","cazador","supermutant","bighorner")
-	},
-/turf/open/floor/f13{
-	icon_state = "darkdirtysolid"
-	},
-/area/f13/bunker)
 "cGA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/nest/radroach,
@@ -3123,9 +3085,6 @@
 "dEx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
-/obj/machinery/porta_turret/syndicate{
-	faction = list("raider","hostile","ghoul","supermutant")
-	},
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/bunker)
 "dEH" = (
@@ -3273,10 +3232,6 @@
 	},
 /area/f13/bunker)
 "dJK" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/renegade/defender{
-	armour_penetration = 0.4
-	},
 /turf/open/floor/plasteel/f13/vault_floor/blue,
 /area/f13/bunker)
 "dJU" = (
@@ -3308,15 +3263,6 @@
 /obj/machinery/vending/clothing,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
 /area/f13/vault)
-"dLn" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/generic,
-/obj/machinery/porta_turret/syndicate{
-	faction = list("raider","hostile","ghoul","supermutant");
-	armour_penetration = 0.4
-	},
-/turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
-/area/f13/bunker)
 "dLp" = (
 /obj/machinery/computer/crew,
 /turf/open/floor/plasteel/dark,
@@ -3482,13 +3428,6 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
-"dVk" = (
-/obj/structure/lattice,
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/renegade/soldier,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/tunnel,
-/area/f13/bunker)
 "dVs" = (
 /obj/structure/barricade/wooden,
 /turf/open/floor/plating/tunnel{
@@ -4358,9 +4297,6 @@
 /obj/structure/bed/mattress{
 	icon_state = "mattress2";
 	pixel_y = -3
-	},
-/mob/living/simple_animal/hostile/renegade/grunt{
-	extra_projectiles = 4
 	},
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
@@ -6468,19 +6404,6 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/ahs)
-"hlY" = (
-/mob/living/simple_animal/hostile/renegade/guardian{
-	extra_projectiles = 2;
-	melee_queue_distance = 2;
-	health = 500;
-	armour_penetration = 0.2
-	},
-/turf/open/floor/f13{
-	color = "#ffe9de";
-	icon_state = "darkrusty";
-	name = "dirty floor"
-	},
-/area/f13/bunker)
 "hmb" = (
 /obj/machinery/conveyor{
 	dir = 8;
@@ -7001,13 +6924,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/vault)
-"hPs" = (
-/mob/living/simple_animal/hostile/renegade/defender,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	icon_state = "reddirtyfull"
-	},
-/area/f13/bunker)
 "hQi" = (
 /mob/living/simple_animal/hostile/renegade/grunt{
 	extra_projectiles = 4
@@ -7354,15 +7270,6 @@
 /obj/effect/spawner/lootdrop/f13/foodspawner,
 /turf/open/floor/f13/wood,
 /area/f13/city)
-"ijY" = (
-/mob/living/simple_animal/hostile/renegade/guardian{
-	extra_projectiles = 2;
-	melee_queue_distance = 2
-	},
-/turf/open/floor/f13{
-	icon_state = "darkrusty"
-	},
-/area/f13/bunker)
 "ikl" = (
 /obj/structure/rack,
 /obj/item/reagent_containers/hypospray/medipen/medx,
@@ -7686,10 +7593,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "izt" = (
-/mob/living/simple_animal/hostile/handy/protectron{
-	faction = list("raider");
-	speed = 6
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/f13{
@@ -8488,21 +8391,6 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/ahs)
-"jtE" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/renegade/meister{
-	check_friendly_fire = 0;
-	aggro_vision_range = 14;
-	armour_penetration = 0.5;
-	extra_projectiles = 6
-	},
-/turf/open/floor/f13{
-	color = "#ffe9de";
-	icon_state = "darkrusty";
-	name = "dirty floor"
-	},
-/area/f13/bunker)
 "jtK" = (
 /obj/item/radio/intercom{
 	frequency = 1361;
@@ -8830,16 +8718,6 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/f13/vault_floor/green/greenchess/greenchess2,
 /area/f13/bunker)
-"jMi" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/porta_turret/syndicate{
-	faction = list("raider","hostile","ghoul","supermutant");
-	armour_penetration = 0.4
-	},
-/turf/open/floor/f13{
-	icon_state = "redmark"
-	},
-/area/f13/bunker)
 "jMu" = (
 /obj/machinery/door/airlock/command{
 	name = "Bot Control";
@@ -8912,15 +8790,6 @@
 /obj/structure/closet,
 /turf/open/floor/plasteel/barber{
 	icon_state = "plating"
-	},
-/area/f13/bunker)
-"jPy" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/renegade/defender{
-	armour_penetration = 0.4
-	},
-/turf/open/floor/f13{
-	icon_state = "darkrusty"
 	},
 /area/f13/bunker)
 "jPN" = (
@@ -9335,9 +9204,6 @@
 "kpz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light,
-/mob/living/simple_animal/hostile/renegade/defender{
-	armour_penetration = 0.4
-	},
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
@@ -9575,30 +9441,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/vault)
-"kCh" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/raider/junker/boss{
-	faction = list("raider","wastebot","hostile","supermutant","ghoul");
-	aggro_vision_range = 15;
-	vision_range = 15;
-	minimum_distance = 0;
-	extra_projectiles = 4;
-	rapid_melee = 2;
-	name = "The Boss";
-	obj_damage = 500;
-	retreat_distance = 2;
-	melee_damage_upper = 40;
-	maxHealth = 1000;
-	health = 1000;
-	environment_smash = 4;
-	armour_penetration = 0.4
-	},
-/turf/open/floor/f13{
-	color = "#ffe9de";
-	icon_state = "darkrusty";
-	name = "dirty floor"
-	},
-/area/f13/bunker)
 "kCw" = (
 /obj/structure/nest/supermutant/ranged,
 /turf/open/floor/f13,
@@ -9669,15 +9511,6 @@
 	pixel_x = 5
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/bunker)
-"kEs" = (
-/obj/structure/chair/f13chair1,
-/mob/living/simple_animal/hostile/renegade/grunt{
-	extra_projectiles = 4
-	},
-/turf/open/floor/f13{
-	icon_state = "dark"
-	},
 /area/f13/bunker)
 "kEJ" = (
 /obj/item/flag/bos,
@@ -10129,22 +9962,6 @@
 	dir = 8
 	},
 /area/f13/bunker)
-"lad" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/renegade/drifter{
-	vision_range = 15;
-	minimum_distance = 0;
-	health = 300;
-	check_friendly_fire = 0;
-	armour_penetration = 0.2;
-	retreat_distance = 0
-	},
-/turf/open/floor/f13{
-	color = "#ffe9de";
-	icon_state = "darkrusty";
-	name = "dirty floor"
-	},
-/area/f13/bunker)
 "laP" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
@@ -10481,13 +10298,6 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/ahs)
-"lvs" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/renegade/guardian,
-/turf/open/floor/f13{
-	icon_state = "reddirtyfull"
-	},
-/area/f13/bunker)
 "lwy" = (
 /turf/open/floor/f13{
 	color = "#ffe9de";
@@ -10579,15 +10389,6 @@
 /obj/item/storage/book/bible,
 /turf/open/floor/carpet/black,
 /area/f13/caves)
-"lBu" = (
-/obj/machinery/porta_turret/syndicate{
-	faction = list("raider","hostile","ghoul","supermutant");
-	armour_penetration = 0.4
-	},
-/turf/open/floor/f13{
-	icon_state = "redmark"
-	},
-/area/f13/bunker)
 "lBB" = (
 /obj/structure/rack,
 /obj/item/clothing/head/ushanka,
@@ -11132,9 +10933,6 @@
 /area/f13/vault)
 "mdi" = (
 /obj/effect/decal/cleanable/glass,
-/obj/machinery/porta_turret/syndicate{
-	faction = list("raider","hostile","ghoul","supermutant")
-	},
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/bunker)
 "mdx" = (
@@ -11638,15 +11436,6 @@
 	icon_state = "mattress2";
 	pixel_y = 13;
 	pixel_x = -10
-	},
-/mob/living/simple_animal/hostile/renegade{
-	loot = list();
-	melee_damage_lower = 10;
-	melee_damage_upper = 20;
-	rapid_melee = 2;
-	health = 200;
-	maxHealth = 200;
-	armour_penetration = 0.3
 	},
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
@@ -12979,9 +12768,6 @@
 /area/f13/bunker)
 "ofe" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/porta_turret/syndicate{
-	faction = list("raider","hostile","ghoul","supermutant")
-	},
 /turf/open/floor/f13{
 	icon_state = "redmark"
 	},
@@ -14321,11 +14107,6 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/caves)
-"ptp" = (
-/mob/living/simple_animal/hostile/renegade/defender,
-/obj/machinery/light,
-/turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
-/area/f13/bunker)
 "pub" = (
 /obj/structure/closet/crate/freezer/blood,
 /obj/effect/turf_decal/bot,
@@ -14467,11 +14248,6 @@
 /turf/open/floor/plating,
 /area/f13/tunnel)
 "pEe" = (
-/mob/living/simple_animal/hostile/handy/gutsy/flamer{
-	health = 700;
-	minimum_distance = 1;
-	retreat_distance = 6
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/oil/streak,
 /turf/open/floor/f13{
@@ -15621,10 +15397,6 @@
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "qKO" = (
-/mob/living/simple_animal/hostile/handy/protectron{
-	faction = list("raider");
-	speed = 6
-	},
 /obj/machinery/light,
 /turf/open/floor/f13{
 	dir = 10;
@@ -15803,14 +15575,6 @@
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
-	},
-/area/f13/bunker)
-"qUl" = (
-/mob/living/simple_animal/hostile/renegade/soldier{
-	retreat_distance = null
-	},
-/turf/open/floor/f13{
-	icon_state = "darkdirtysolid"
 	},
 /area/f13/bunker)
 "qUH" = (
@@ -16116,14 +15880,6 @@
 	icon_state = "stagestairs"
 	},
 /area/f13/vault)
-"rsd" = (
-/obj/machinery/porta_turret/syndicate{
-	faction = list("raider","hostile","ghoul","supermutant")
-	},
-/turf/open/floor/f13{
-	icon_state = "redmark"
-	},
-/area/f13/bunker)
 "rsh" = (
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
@@ -16257,9 +16013,6 @@
 "rzh" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/oil/streak,
-/obj/machinery/porta_turret/syndicate{
-	faction = list("raider","hostile","ghoul","supermutant")
-	},
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/bunker)
 "rzj" = (
@@ -18403,14 +18156,6 @@
 /obj/item/reagent_containers/glass/bucket,
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/vault)
-"tXi" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/renegade/doc{
-	extra_projectiles = 2
-	},
-/turf/open/floor/plasteel/f13/vault_floor/blue,
-/area/f13/bunker)
 "tXm" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -19403,11 +19148,6 @@
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "uUF" = (
-/mob/living/simple_animal/hostile/handy/gutsy/flamer{
-	health = 700;
-	minimum_distance = 1;
-	retreat_distance = 6
-	},
 /obj/effect/decal/cleanable/oil/streak,
 /turf/open/floor/f13{
 	icon_state = "redrustyfull"
@@ -19518,18 +19258,6 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/ahs)
-"uZG" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/renegade/defender{
-	armour_penetration = 0.4
-	},
-/turf/open/floor/f13{
-	color = "#ffe9de";
-	icon_state = "darkrusty";
-	name = "dirty floor"
-	},
-/area/f13/bunker)
 "val" = (
 /obj/item/chair,
 /turf/open/floor/plasteel/f13{
@@ -21501,14 +21229,6 @@
 	icon_state = "plating"
 	},
 /area/f13/bunker)
-"xla" = (
-/mob/living/simple_animal/hostile/renegade/defender{
-	armour_penetration = 0.4
-	},
-/turf/open/floor/f13{
-	icon_state = "darkdirtysolid"
-	},
-/area/f13/bunker)
 "xls" = (
 /turf/open/indestructible/ground/outside/road{
 	dir = 1;
@@ -22274,11 +21994,6 @@
 	},
 /area/f13/ahs)
 "ykp" = (
-/mob/living/simple_animal/hostile/handy/robobrain{
-	faction = list("raider");
-	minimum_distance = 1;
-	retreat_distance = 4
-	},
 /turf/open/floor/f13{
 	icon_state = "redmark"
 	},
@@ -28776,13 +28491,13 @@ oqm
 aTA
 oqm
 lwy
-uZG
+tbi
 ucH
 ucH
 pNm
 sJs
 tZf
-kCh
+ucH
 kFy
 lwy
 lwy
@@ -29033,13 +28748,13 @@ oqm
 aTA
 oqm
 gVd
-jtE
+tbi
 ucH
 ucH
 ucH
 lwy
 tZf
-lad
+ucH
 hch
 lwy
 lwy
@@ -29290,13 +29005,13 @@ shC
 aTA
 oqm
 rnd
-uZG
+tbi
 ucH
 ucH
 eHD
 lwy
 sGU
-hlY
+lwy
 kFy
 lwy
 xxX
@@ -30328,11 +30043,11 @@ hrZ
 hrZ
 oqm
 aKQ
-dLn
+dEx
 ePt
 ucH
 ePt
-bqP
+tCz
 dEx
 oqm
 hrZ
@@ -32642,9 +32357,9 @@ qIi
 nXe
 kjM
 ceJ
-qUl
+rsh
 eWH
-qUl
+rsh
 rsh
 vhj
 kpz
@@ -32897,7 +32612,7 @@ hrZ
 oqm
 kjM
 qqH
-jPy
+eWH
 eWH
 sMj
 eYv
@@ -33410,7 +33125,7 @@ hrZ
 hrZ
 oqm
 vhj
-ijY
+ege
 eYv
 eWH
 eWH
@@ -33670,7 +33385,7 @@ rsh
 vhj
 mFG
 esT
-cFT
+rsh
 lQG
 lQG
 rsh
@@ -34442,7 +34157,7 @@ iDn
 tpo
 oqm
 mEG
-kEs
+jmL
 eqn
 ipT
 eWH
@@ -34695,7 +34410,7 @@ hrZ
 hrZ
 oqm
 dXL
-hPs
+iDn
 tpo
 oqm
 wva
@@ -34703,7 +34418,7 @@ mEG
 gAN
 rsh
 eWH
-xla
+rsh
 oqm
 uQS
 bgE
@@ -35209,8 +34924,8 @@ hrZ
 hrZ
 oqm
 iFS
-lvs
-ptp
+iDn
+eiD
 oqm
 qff
 lUL
@@ -35988,7 +35703,7 @@ nio
 mEG
 rsh
 eWH
-xla
+rsh
 oqm
 uQS
 qiw
@@ -36241,7 +35956,7 @@ gbs
 itp
 oqm
 msu
-dVk
+gES
 lWC
 eWH
 ege
@@ -37271,7 +36986,7 @@ oqm
 oqm
 oTp
 rhs
-tXi
+umR
 vSU
 wpl
 oqm
@@ -37775,16 +37490,16 @@ shC
 shC
 shC
 oqm
-lBu
+ykp
 bCh
 osJ
 tCz
 iDn
 leQ
-rsd
+ykp
 oqm
 pPk
-dJK
+pBS
 dJK
 ufz
 oqm
@@ -38803,7 +38518,7 @@ shC
 shC
 shC
 oqm
-jMi
+ofe
 lxH
 fPo
 tCz
@@ -39584,7 +39299,7 @@ oqm
 eQT
 nfK
 nfK
-bpH
+oRO
 lGM
 oqm
 hrZ
