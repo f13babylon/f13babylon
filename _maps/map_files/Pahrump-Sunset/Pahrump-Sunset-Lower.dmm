@@ -888,6 +888,15 @@
 "azk" = (
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/building/museum)
+"azp" = (
+/obj/structure/lattice,
+/mob/living/simple_animal/hostile/handy/gutsy/flamer{
+	health = 700;
+	minimum_distance = 1;
+	retreat_distance = 6
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/bunker)
 "aAJ" = (
 /obj/structure/closet/crate/freezer/blood,
 /turf/open/floor/f13{
@@ -5318,6 +5327,19 @@
 /obj/structure/closet/emcloset,
 /turf/open/floor/plasteel,
 /area/f13/tcoms)
+"ckj" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/renegade{
+	loot = list();
+	melee_damage_lower = 10;
+	melee_damage_upper = 20;
+	rapid_melee = 2;
+	health = 200;
+	maxHealth = 200;
+	armour_penetration = 0.3
+	},
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "ckk" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/floorgrime,
@@ -6567,6 +6589,14 @@
 	icon_state = "bluerustysolid"
 	},
 /area/f13/followers)
+"dAN" = (
+/obj/machinery/porta_turret/syndicate{
+	faction = list("raider","hostile","ghoul","supermutant")
+	},
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/bunker)
 "dBj" = (
 /obj/effect/decal/cleanable/generic,
 /turf/open/indestructible/ground/outside/road{
@@ -7121,6 +7151,9 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/renegade/soldier{
+	retreat_distance = null
+	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -7256,6 +7289,12 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/brotherhood/reactor)
+"eBg" = (
+/obj/structure/nest/deathclaw/mother{
+	max_mobs = 3
+	},
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "eCp" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 5
@@ -7763,6 +7802,13 @@
 	icon_state = "reddirtyfull"
 	},
 /area/f13/bunker)
+"fwi" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/renegade/soldier{
+	retreat_distance = null
+	},
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "fwm" = (
 /obj/structure/stairs/south,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -7811,6 +7857,15 @@
 	dir = 1
 	},
 /turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"fAK" = (
+/mob/living/simple_animal/hostile/renegade/guardian{
+	extra_projectiles = 2;
+	melee_queue_distance = 2;
+	retreat_distance = 2;
+	minimum_distance = 3
+	},
+/turf/open/floor/plating/dirt,
 /area/f13/caves)
 "fCT" = (
 /turf/open/floor/f13{
@@ -8236,6 +8291,12 @@
 	icon_state = "horizontalinnermain1"
 	},
 /area/f13/tunnel)
+"gpb" = (
+/mob/living/simple_animal/hostile/renegade/grunt{
+	extra_projectiles = 4
+	},
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "gpd" = (
 /obj/machinery/autolathe,
 /turf/open/floor/f13{
@@ -8870,6 +8931,9 @@
 "htn" = (
 /obj/effect/decal/cleanable/oil,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/renegade/doc{
+	extra_projectiles = 2
+	},
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess"
 	},
@@ -9092,6 +9156,18 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/bunker)
+"hID" = (
+/mob/living/simple_animal/hostile/renegade{
+	loot = list();
+	melee_damage_lower = 10;
+	melee_damage_upper = 20;
+	rapid_melee = 2;
+	health = 200;
+	maxHealth = 200;
+	armour_penetration = 0.3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "hJD" = (
 /obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
@@ -9409,6 +9485,17 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/tunnel)
+"ils" = (
+/obj/structure/lattice,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/renegade/guardian{
+	extra_projectiles = 2;
+	melee_queue_distance = 2;
+	retreat_distance = 2;
+	minimum_distance = 0
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/bunker)
 "imJ" = (
 /obj/structure/table/wood/poker,
 /obj/item/storage/fancy/cigarettes/cigpack_cannabis,
@@ -9926,6 +10013,9 @@
 /obj/structure/chair/f13foldupchair{
 	dir = 8
 	},
+/mob/living/simple_animal/hostile/renegade/soldier{
+	retreat_distance = null
+	},
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
 	},
@@ -10104,6 +10194,9 @@
 "jnw" = (
 /obj/structure/chair/folding{
 	dir = 8
+	},
+/mob/living/simple_animal/hostile/renegade/grunt{
+	extra_projectiles = 4
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/caves)
@@ -11001,6 +11094,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
+"kHc" = (
+/mob/living/simple_animal/hostile/renegade/soldier{
+	retreat_distance = null
+	},
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "kHq" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 9
@@ -11036,6 +11135,11 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/tunnel/bighorn)
+"kJi" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/renegade/engie,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "kJt" = (
 /obj/machinery/light{
 	dir = 4
@@ -11058,6 +11162,18 @@
 /obj/item/storage/firstaid,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/building/museum)
+"kKp" = (
+/mob/living/simple_animal/hostile/renegade{
+	loot = list();
+	melee_damage_lower = 10;
+	melee_damage_upper = 20;
+	rapid_melee = 2;
+	health = 200;
+	maxHealth = 200;
+	armour_penetration = 0.3
+	},
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "kKt" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	icon_state = "floor5-old"
@@ -12057,6 +12173,16 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/building/massfusion)
+"miC" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light,
+/mob/living/simple_animal/hostile/renegade/soldier{
+	retreat_distance = null
+	},
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/bunker)
 "mlD" = (
 /obj/machinery/door/airlock/hatch{
 	req_access_txt = "120"
@@ -12079,6 +12205,9 @@
 "mmL" = (
 /obj/structure/chair/f13foldupchair,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/renegade/soldier{
+	retreat_distance = null
+	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -12524,6 +12653,18 @@
 /obj/structure/fence/door,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/caves)
+"ndt" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/renegade/guardian{
+	extra_projectiles = 2;
+	melee_queue_distance = 2;
+	retreat_distance = 2;
+	minimum_distance = 0
+	},
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/bunker)
 "ndM" = (
 /obj/structure/chair/right,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
@@ -12637,6 +12778,9 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/mob/living/simple_animal/hostile/renegade/defender{
+	armour_penetration = 0.4
+	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -12713,6 +12857,19 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
+"nsM" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/renegade/drifter{
+	vision_range = 15;
+	minimum_distance = 0;
+	health = 300;
+	check_friendly_fire = 0;
+	armour_penetration = 0.2;
+	retreat_distance = 0
+	},
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "nuA" = (
 /obj/effect/turf_decal/stripes/white/line,
 /turf/open/floor/f13{
@@ -12756,6 +12913,15 @@
 /obj/structure/guncase/shotgun,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/high,
 /turf/open/floor/plating/dirt,
+/area/f13/caves)
+"nBw" = (
+/mob/living/simple_animal/hostile/renegade/guardian{
+	extra_projectiles = 2;
+	melee_queue_distance = 2;
+	retreat_distance = 2;
+	minimum_distance = 3
+	},
+/turf/open/floor/plating/tunnel,
 /area/f13/caves)
 "nCb" = (
 /obj/structure/cargocrate,
@@ -14422,6 +14588,12 @@
 	icon_state = "horizontalinnermain0"
 	},
 /area/f13/tunnel)
+"pYb" = (
+/mob/living/simple_animal/hostile/renegade/defender{
+	armour_penetration = 0.4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "pYY" = (
 /obj/structure/railing{
 	dir = 1
@@ -14818,6 +14990,15 @@
 "qyI" = (
 /turf/closed/wall/f13/ruins,
 /area/f13/tunnel/bighorn)
+"qzc" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/renegade/defender{
+	armour_penetration = 0.4
+	},
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/bunker)
 "qzp" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 8
@@ -16205,6 +16386,9 @@
 "sHK" = (
 /obj/structure/lattice,
 /obj/structure/chair/f13foldupchair,
+/mob/living/simple_animal/hostile/renegade/soldier{
+	retreat_distance = null
+	},
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "sIk" = (
@@ -18095,6 +18279,10 @@
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/caves)
+"vFZ" = (
+/obj/effect/spawner/lootdrop/f13/blueprintMid,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "vGl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/stool/retro/black,
@@ -18621,6 +18809,9 @@
 "wxv" = (
 /obj/effect/decal/cleanable/blood/gibs/human,
 /obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/renegade/defender{
+	armour_penetration = 0.4
+	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "wxX" = (
@@ -18753,6 +18944,9 @@
 "wLz" = (
 /obj/structure/sign/poster/contraband/tools{
 	pixel_y = 32
+	},
+/mob/living/simple_animal/hostile/renegade/soldier{
+	retreat_distance = null
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
@@ -19078,6 +19272,17 @@
 	icon_state = "floordirtysolid"
 	},
 /area/f13/brotherhood)
+"xjX" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/handy/gutsy/flamer{
+	health = 700;
+	retreat_distance = 6;
+	minimum_distance = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/bunker)
 "xkt" = (
 /obj/structure/barricade/sandbags,
 /obj/machinery/light/small{
@@ -19477,6 +19682,9 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/folding{
 	dir = 4
+	},
+/mob/living/simple_animal/hostile/renegade/grunt{
+	extra_projectiles = 4
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/caves)
@@ -26947,13 +27155,13 @@ qBj
 yef
 fFo
 yef
-yef
+gpb
 qCY
 rdB
 qwI
 jNJ
 jNJ
-yef
+gpb
 aae
 aae
 aaB
@@ -27201,7 +27409,7 @@ aae
 aae
 gUS
 jNJ
-jNJ
+fwi
 lfe
 jNJ
 rdB
@@ -27216,7 +27424,7 @@ vnP
 aaB
 tJO
 wxv
-aaB
+pYb
 aaa
 aab
 aab
@@ -27975,14 +28183,14 @@ jNJ
 gUe
 jNJ
 aaB
-aaB
+hID
 nCb
 jUa
 fkF
 wVV
 jNJ
 lkW
-jNJ
+kJi
 kjj
 dqf
 iKr
@@ -30056,10 +30264,10 @@ nZx
 aae
 aae
 sgU
-cFR
+dAN
 nPJ
 nPJ
-cFR
+dAN
 qgP
 aae
 aak
@@ -30529,7 +30737,7 @@ aaa
 sVB
 itP
 tTJ
-tTJ
+fAK
 sdy
 kqA
 dIb
@@ -30796,7 +31004,7 @@ orl
 yef
 orl
 gVW
-aaB
+pYb
 orl
 orl
 orl
@@ -30806,7 +31014,7 @@ xAE
 jNJ
 jNJ
 jNJ
-yef
+gpb
 jGn
 orl
 jNJ
@@ -31067,7 +31275,7 @@ orl
 orl
 orl
 mVY
-yef
+kKp
 kIV
 orl
 aaD
@@ -31304,7 +31512,7 @@ nZq
 oSE
 sSn
 yef
-yef
+kHc
 lpM
 jNJ
 jNJ
@@ -31315,7 +31523,7 @@ jNJ
 tJO
 aaB
 mCo
-yef
+gpb
 yef
 yef
 jNJ
@@ -31335,7 +31543,7 @@ nPJ
 nPJ
 nPJ
 odE
-edi
+miC
 dhw
 vDU
 hPM
@@ -31601,7 +31809,7 @@ iAp
 nni
 nPJ
 hUh
-nPJ
+qzc
 qgP
 aae
 aak
@@ -31814,7 +32022,7 @@ aaa
 aaA
 aaA
 teL
-erC
+nBw
 gRf
 kwO
 uzZ
@@ -32095,7 +32303,7 @@ aae
 orl
 orl
 cNY
-yef
+kKp
 kAg
 orl
 aaD
@@ -32598,7 +32806,7 @@ inF
 yef
 daG
 jNJ
-jNJ
+fwi
 jNJ
 jNJ
 bvo
@@ -32614,10 +32822,10 @@ aae
 aae
 aae
 tmm
-kep
+azp
 rNv
 nPJ
-nPJ
+xjX
 nEA
 nPJ
 tQh
@@ -32883,7 +33091,7 @@ nPJ
 vdk
 ddn
 aaD
-nPJ
+ndt
 nPJ
 fGO
 cxj
@@ -33354,16 +33562,16 @@ aaa
 aaa
 orl
 heL
-rdB
+nsM
 pVr
 cWp
 qwI
 kng
 qCY
 jNJ
+kKp
 yef
-yef
-jNJ
+ckj
 iaW
 yef
 bvo
@@ -33611,7 +33819,7 @@ aaa
 aaa
 axp
 vwd
-rdB
+nsM
 pVr
 aBb
 sPB
@@ -33632,7 +33840,7 @@ jNJ
 jNJ
 jNJ
 yef
-yef
+kHc
 orl
 aae
 aae
@@ -34162,7 +34370,7 @@ aae
 aae
 qgP
 jnP
-fGO
+ils
 hUh
 edi
 rWs
@@ -35182,7 +35390,7 @@ aae
 aaa
 aae
 bIg
-boU
+vFZ
 ykR
 boU
 aae
@@ -36218,7 +36426,7 @@ sgC
 aae
 aah
 aah
-aBO
+eBg
 aae
 aaa
 aaa

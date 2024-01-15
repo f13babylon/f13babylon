@@ -1103,11 +1103,17 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/bunker)
 "bpH" = (
-/mob/living/simple_animal/hostile/renegade/grunt{
-	extra_projectiles = 4
+/obj/structure/bed,
+/mob/living/simple_animal/hostile/renegade/drifter{
+	vision_range = 15;
+	minimum_distance = 4;
+	health = 300;
+	check_friendly_fire = 0
 	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/bunker)
 "bpX" = (
 /obj/structure/window/reinforced/spawner/west,
 /obj/structure/window/reinforced/spawner/north,
@@ -1454,7 +1460,12 @@
 	light_color = "#ad1b1b"
 	},
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/supermutant/rangedmutant/heavy,
+/mob/living/simple_animal/hostile/supermutant/rangedmutant/heavy{
+	armour_penetration = 0.6;
+	minimum_distance = 0;
+	rapid_melee = 2;
+	retreat_distance = 3
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/bunker)
 "bNo" = (
@@ -1995,6 +2006,12 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/mob/living/simple_animal/hostile/renegade/drifter{
+	vision_range = 15;
+	minimum_distance = 4;
+	health = 300;
+	check_friendly_fire = 0
+	},
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -2192,14 +2209,11 @@
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "cFT" = (
-/mob/living/simple_animal/hostile/supermutant/rangedmutant/heavy{
-	armour_penetration = 0.6;
-	minimum_distance = 0;
-	rapid_melee = 2;
-	retreat_distance = 3
+/mob/living/simple_animal/hostile/renegade/defender{
+	armour_penetration = 0.4
 	},
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
+/area/f13/wasteland)
 "cGA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/nest/radroach,
@@ -3292,11 +3306,16 @@
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
 /area/f13/vault)
 "dLn" = (
-/mob/living/simple_animal/hostile/renegade/grunt{
-	extra_projectiles = 4
+/mob/living/simple_animal/hostile/renegade/guardian{
+	extra_projectiles = 2;
+	melee_queue_distance = 2;
+	retreat_distance = 2;
+	minimum_distance = 3
 	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
+/turf/open/floor/f13{
+	icon_state = "darkdirtysolid"
+	},
+/area/f13/bunker)
 "dLp" = (
 /obj/machinery/computer/crew,
 /turf/open/floor/plasteel/dark,
@@ -3463,11 +3482,13 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "dVk" = (
-/mob/living/simple_animal/hostile/renegade/soldier{
-	retreat_distance = null
+/mob/living/simple_animal/hostile/renegade/defender{
+	armour_penetration = 0.4
 	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/bunker)
 "dVs" = (
 /obj/structure/barricade/wooden,
 /turf/open/floor/plating/tunnel{
@@ -3507,7 +3528,7 @@
 /area/f13/bunker)
 "dXL" = (
 /obj/structure/rack/shelf_metal,
-/obj/effect/spawner/lootdrop/f13/armor/tier3,
+/obj/effect/spawner/lootdrop/f13/armor/tier4,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/bunker)
 "dXT" = (
@@ -6446,11 +6467,18 @@
 	},
 /area/f13/ahs)
 "hlY" = (
-/obj/machinery/porta_turret/syndicate{
-	faction = list("raider","hostile","ghoul","supermutant")
+/mob/living/simple_animal/hostile/renegade/guardian{
+	extra_projectiles = 2;
+	melee_queue_distance = 2;
+	retreat_distance = 2;
+	minimum_distance = 3
 	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
+/turf/open/floor/f13{
+	color = "#ffe9de";
+	icon_state = "darkrusty";
+	name = "dirty floor"
+	},
+/area/f13/bunker)
 "hmb" = (
 /obj/machinery/conveyor{
 	dir = 8;
@@ -6972,11 +7000,18 @@
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/vault)
 "hPs" = (
-/mob/living/simple_animal/hostile/renegade/soldier{
-	retreat_distance = null
+/mob/living/simple_animal/hostile/renegade/meister{
+	retreat_distance = 2;
+	check_friendly_fire = 0;
+	aggro_vision_range = 14;
+	armour_penetration = 0.5;
+	extra_projectiles = 6;
+	rapid_melee = 2
 	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/turf/open/floor/f13{
+	icon_state = "reddirtyfull"
+	},
+/area/f13/bunker)
 "hQi" = (
 /mob/living/simple_animal/hostile/renegade/grunt{
 	extra_projectiles = 4
@@ -7324,11 +7359,11 @@
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "ijY" = (
-/mob/living/simple_animal/hostile/renegade/defender{
-	armour_penetration = 0.4
+/mob/living/simple_animal/hostile/renegade/grunt{
+	extra_projectiles = 4
 	},
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
+/area/f13/wasteland)
 "ikl" = (
 /obj/structure/rack,
 /obj/item/reagent_containers/hypospray/medipen/medx,
@@ -7511,6 +7546,15 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/ncr)
+"isN" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/renegade/grunt{
+	extra_projectiles = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/bunker)
 "itj" = (
 /obj/structure/chair/comfy/brown{
 	dir = 1
@@ -7654,6 +7698,7 @@
 "izt" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
+/mob/living/simple_animal/hostile/handy/gutsy,
 /turf/open/floor/f13{
 	dir = 10;
 	icon_state = "redmark"
@@ -7780,6 +7825,7 @@
 "iFS" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/bunker)
 "iGi" = (
@@ -8451,6 +8497,8 @@
 	},
 /area/f13/ahs)
 "jtE" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/renegade/meister{
 	retreat_distance = 2;
 	check_friendly_fire = 0;
@@ -8459,8 +8507,12 @@
 	extra_projectiles = 6;
 	rapid_melee = 2
 	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
+/turf/open/floor/f13{
+	color = "#ffe9de";
+	icon_state = "darkrusty";
+	name = "dirty floor"
+	},
+/area/f13/bunker)
 "jtK" = (
 /obj/item/radio/intercom{
 	frequency = 1361;
@@ -8789,17 +8841,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/green/greenchess/greenchess2,
 /area/f13/bunker)
 "jMi" = (
-/mob/living/simple_animal/hostile/renegade{
-	loot = list();
-	melee_damage_lower = 10;
-	melee_damage_upper = 20;
-	rapid_melee = 2;
-	health = 200;
-	maxHealth = 200;
-	armour_penetration = 0.3
-	},
+/mob/living/simple_animal/hostile/renegade/engie,
 /turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
+/area/f13/wasteland)
 "jMu" = (
 /obj/machinery/door/airlock/command{
 	name = "Bot Control";
@@ -8875,9 +8919,14 @@
 	},
 /area/f13/bunker)
 "jPy" = (
-/mob/living/simple_animal/hostile/renegade/engie,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/renegade/defender{
+	armour_penetration = 0.4
+	},
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/bunker)
 "jPN" = (
 /mob/living/simple_animal/hostile/ghoul/glowing,
 /turf/open/indestructible/ground/inside/mountain,
@@ -9195,6 +9244,17 @@
 /obj/structure/frame/machine,
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/vault)
+"klc" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/renegade/guardian{
+	extra_projectiles = 2;
+	melee_queue_distance = 2;
+	retreat_distance = 2;
+	minimum_distance = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue,
+/area/f13/bunker)
 "klq" = (
 /obj/effect/decal/fakelattice,
 /turf/open/floor/plating/dirt,
@@ -9527,6 +9587,30 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/vault)
+"kCh" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/raider/junker/boss{
+	faction = list("raider","wastebot","hostile","supermutant","ghoul");
+	aggro_vision_range = 15;
+	vision_range = 15;
+	minimum_distance = 0;
+	extra_projectiles = 4;
+	rapid_melee = 2;
+	name = "The Boss";
+	obj_damage = 500;
+	retreat_distance = 2;
+	melee_damage_upper = 40;
+	maxHealth = 1000;
+	health = 1000;
+	environment_smash = 4;
+	armour_penetration = 0.4
+	},
+/turf/open/floor/f13{
+	color = "#ffe9de";
+	icon_state = "darkrusty";
+	name = "dirty floor"
+	},
+/area/f13/bunker)
 "kCw" = (
 /obj/structure/nest/supermutant/ranged,
 /turf/open/floor/f13,
@@ -9599,16 +9683,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
 "kEs" = (
-/mob/living/simple_animal/hostile/renegade/meister{
-	retreat_distance = 2;
-	check_friendly_fire = 0;
-	aggro_vision_range = 14;
-	armour_penetration = 0.5;
-	extra_projectiles = 6;
-	rapid_melee = 2
+/obj/structure/chair/f13chair1,
+/mob/living/simple_animal/hostile/renegade/grunt{
+	extra_projectiles = 4
 	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/turf/open/floor/f13{
+	icon_state = "dark"
+	},
+/area/f13/bunker)
 "kEJ" = (
 /obj/item/flag/bos,
 /turf/open/indestructible/ground/inside/mountain,
@@ -10060,24 +10142,16 @@
 	},
 /area/f13/bunker)
 "lad" = (
-/mob/living/simple_animal/hostile/raider/junker/boss{
-	faction = list("raider","wastebot","hostile","supermutant","ghoul");
-	aggro_vision_range = 15;
-	vision_range = 15;
-	minimum_distance = 0;
-	extra_projectiles = 4;
-	rapid_melee = 2;
-	name = "The Boss";
-	obj_damage = 500;
-	retreat_distance = 2;
-	melee_damage_upper = 40;
-	maxHealth = 1000;
-	health = 1000;
-	environment_smash = 4;
-	armour_penetration = 0.4
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/renegade/grunt{
+	extra_projectiles = 4
 	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
+/turf/open/floor/f13{
+	color = "#ffe9de";
+	icon_state = "darkrusty";
+	name = "dirty floor"
+	},
+/area/f13/bunker)
 "laP" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
@@ -10415,17 +10489,17 @@
 	},
 /area/f13/ahs)
 "lvs" = (
-/mob/living/simple_animal/hostile/renegade{
-	loot = list();
-	melee_damage_lower = 10;
-	melee_damage_upper = 20;
-	rapid_melee = 2;
-	health = 200;
-	maxHealth = 200;
-	armour_penetration = 0.3
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/renegade/guardian{
+	extra_projectiles = 2;
+	melee_queue_distance = 2;
+	retreat_distance = 2;
+	minimum_distance = 3
 	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/turf/open/floor/f13{
+	icon_state = "darkdirtysolid"
+	},
+/area/f13/bunker)
 "lwy" = (
 /turf/open/floor/f13{
 	color = "#ffe9de";
@@ -10518,9 +10592,10 @@
 /turf/open/floor/carpet/black,
 /area/f13/caves)
 "lBu" = (
-/turf/open/floor/f13{
-	icon_state = "redmark"
+/mob/living/simple_animal/hostile/renegade/grunt{
+	extra_projectiles = 4
 	},
+/turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/bunker)
 "lBB" = (
 /obj/structure/rack,
@@ -12904,6 +12979,9 @@
 /area/f13/bunker)
 "ofe" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/porta_turret/syndicate{
+	faction = list("raider","hostile","ghoul","supermutant")
+	},
 /turf/open/floor/f13{
 	icon_state = "redmark"
 	},
@@ -14245,14 +14323,12 @@
 	},
 /area/f13/caves)
 "ptp" = (
-/mob/living/simple_animal/hostile/renegade/drifter{
-	vision_range = 15;
-	minimum_distance = 4;
-	health = 300;
-	check_friendly_fire = 0
+/mob/living/simple_animal/hostile/renegade/grunt{
+	extra_projectiles = 4;
+	minimum_distance = 0
 	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
+/turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
+/area/f13/bunker)
 "pub" = (
 /obj/structure/closet/crate/freezer/blood,
 /obj/effect/turf_decal/bot,
@@ -14396,6 +14472,9 @@
 "pEe" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/oil/streak,
+/mob/living/simple_animal/hostile/handy/gutsy/flamer{
+	minimum_distance = 0
+	},
 /turf/open/floor/f13{
 	icon_state = "redrustyfull"
 	},
@@ -15544,6 +15623,10 @@
 /area/f13/city)
 "qKO" = (
 /obj/machinery/light,
+/mob/living/simple_animal/hostile/handy/gutsy{
+	minimum_distance = 1;
+	retreat_distance = 4
+	},
 /turf/open/floor/f13{
 	dir = 10;
 	icon_state = "redmark"
@@ -15724,24 +15807,13 @@
 	},
 /area/f13/bunker)
 "qUl" = (
-/mob/living/simple_animal/hostile/raider/junker/boss{
-	faction = list("raider","wastebot","hostile","supermutant","ghoul");
-	aggro_vision_range = 15;
-	vision_range = 15;
-	minimum_distance = 0;
-	extra_projectiles = 4;
-	rapid_melee = 2;
-	name = "The Boss";
-	obj_damage = 500;
-	retreat_distance = 0;
-	melee_damage_upper = 40;
-	maxHealth = 1000;
-	health = 1000;
-	environment_smash = 4;
-	armour_penetration = 0.4
+/mob/living/simple_animal/hostile/renegade/soldier{
+	retreat_distance = null
 	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/turf/open/floor/f13{
+	icon_state = "darkdirtysolid"
+	},
+/area/f13/bunker)
 "qUH" = (
 /obj/structure/sink/kitchen{
 	desc = "A sink used for washing one's hands and face. It looks rusty and home-made";
@@ -15933,6 +16005,9 @@
 /area/f13/city)
 "rhs" = (
 /obj/effect/decal/cleanable/blood/splatter,
+/mob/living/simple_animal/hostile/renegade/grunt{
+	extra_projectiles = 4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/blue,
 /area/f13/bunker)
 "rhG" = (
@@ -16046,9 +16121,13 @@
 	},
 /area/f13/vault)
 "rsd" = (
-/mob/living/simple_animal/hostile/handy/gutsy/flamer,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
+/obj/machinery/porta_turret/syndicate{
+	faction = list("raider","hostile","ghoul","supermutant")
+	},
+/turf/open/floor/f13{
+	icon_state = "redmark"
+	},
+/area/f13/bunker)
 "rsh" = (
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
@@ -17553,6 +17632,9 @@
 	},
 /area/f13/vault)
 "tdk" = (
+/mob/living/simple_animal/hostile/renegade/defender{
+	armour_penetration = 0.4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/bunker)
 "tdv" = (
@@ -17814,6 +17896,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/vault)
+"tsE" = (
+/mob/living/simple_animal/hostile/renegade/soldier{
+	retreat_distance = null
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "tto" = (
 /obj/effect/spawner/lootdrop/minor/twentyfive_percent_cyborg_mask,
 /obj/structure/rack,
@@ -18328,6 +18416,25 @@
 /obj/item/reagent_containers/glass/bucket,
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/vault)
+"tXi" = (
+/mob/living/simple_animal/hostile/raider/junker/boss{
+	faction = list("raider","wastebot","hostile","supermutant","ghoul");
+	aggro_vision_range = 15;
+	vision_range = 15;
+	minimum_distance = 0;
+	extra_projectiles = 4;
+	rapid_melee = 2;
+	name = "The Boss";
+	obj_damage = 500;
+	retreat_distance = 0;
+	melee_damage_upper = 40;
+	maxHealth = 1000;
+	health = 1000;
+	environment_smash = 4;
+	armour_penetration = 0.4
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "tXm" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -18831,6 +18938,17 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/vault)
+"uvC" = (
+/mob/living/simple_animal/hostile/renegade/meister{
+	retreat_distance = 2;
+	check_friendly_fire = 0;
+	aggro_vision_range = 14;
+	armour_penetration = 0.5;
+	extra_projectiles = 6;
+	rapid_melee = 2
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "uvI" = (
 /obj/structure/simple_door/bunker/glass,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
@@ -19321,6 +19439,9 @@
 /area/f13/legion)
 "uUF" = (
 /obj/effect/decal/cleanable/oil/streak,
+/mob/living/simple_animal/hostile/handy/gutsy/flamer{
+	minimum_distance = 0
+	},
 /turf/open/floor/f13{
 	icon_state = "redrustyfull"
 	},
@@ -19431,9 +19552,17 @@
 	},
 /area/f13/ahs)
 "uZG" = (
-/mob/living/simple_animal/hostile/renegade/engie,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/renegade/defender{
+	armour_penetration = 0.4
+	},
+/turf/open/floor/f13{
+	color = "#ffe9de";
+	icon_state = "darkrusty";
+	name = "dirty floor"
+	},
+/area/f13/bunker)
 "val" = (
 /obj/item/chair,
 /turf/open/floor/plasteel/f13{
@@ -21406,8 +21535,14 @@
 	},
 /area/f13/bunker)
 "xla" = (
-/mob/living/simple_animal/hostile/renegade/defender{
-	armour_penetration = 0.4
+/mob/living/simple_animal/hostile/renegade{
+	loot = list();
+	melee_damage_lower = 10;
+	melee_damage_upper = 20;
+	rapid_melee = 2;
+	health = 200;
+	maxHealth = 200;
+	armour_penetration = 0.3
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
@@ -21765,6 +21900,9 @@
 	pixel_x = -6
 	},
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/renegade/doc{
+	extra_projectiles = 2
+	},
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -22176,14 +22314,13 @@
 	},
 /area/f13/ahs)
 "ykp" = (
-/mob/living/simple_animal/hostile/renegade/guardian{
-	extra_projectiles = 2;
-	melee_queue_distance = 2;
-	retreat_distance = 2;
-	minimum_distance = 3
+/mob/living/simple_animal/hostile/handy/robobrain{
+	minimum_distance = 2
 	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
+/turf/open/floor/f13{
+	icon_state = "redmark"
+	},
+/area/f13/bunker)
 "ykZ" = (
 /obj/effect/decal/cleanable/vomit/old,
 /turf/open/floor/plasteel/barber{
@@ -27558,8 +27695,8 @@ bVH
 bVH
 bVH
 bVH
-hPs
-uZG
+tsE
+jMi
 bVH
 bVH
 bVH
@@ -27814,9 +27951,9 @@ bVH
 bVH
 bVH
 bVH
-qUl
+tXi
+cFT
 xla
-lvs
 bVH
 bVH
 bVH
@@ -28072,7 +28209,7 @@ bVH
 bVH
 bVH
 bVH
-kEs
+uvC
 adl
 bVH
 bVH
@@ -28329,7 +28466,7 @@ bVH
 bVH
 bVH
 bVH
-bpH
+ijY
 phr
 bVH
 bVH
@@ -28677,13 +28814,13 @@ oqm
 aTA
 oqm
 lwy
-tbi
+uZG
 ucH
 ucH
 pNm
 sJs
 tZf
-ucH
+kCh
 kFy
 lwy
 lwy
@@ -28934,13 +29071,13 @@ oqm
 aTA
 oqm
 gVd
-tbi
+jtE
 ucH
 ucH
 ucH
 lwy
 tZf
-ucH
+lad
 hch
 lwy
 lwy
@@ -29191,13 +29328,13 @@ shC
 aTA
 oqm
 rnd
-tbi
+uZG
 ucH
 ucH
 eHD
 lwy
 sGU
-lwy
+hlY
 kFy
 lwy
 xxX
@@ -32277,9 +32414,9 @@ shC
 shC
 shC
 hrZ
-hlY
-dVk
-jPy
+hrZ
+hrZ
+hrZ
 hrZ
 oqm
 oqm
@@ -32534,9 +32671,9 @@ shC
 shC
 shC
 hrZ
-lad
-ijY
-jMi
+hrZ
+hrZ
+hrZ
 hrZ
 oqm
 qIi
@@ -32545,7 +32682,7 @@ kjM
 ceJ
 rsh
 eWH
-rsh
+dLn
 rsh
 vhj
 kpz
@@ -32791,9 +32928,9 @@ shC
 shC
 shC
 hrZ
-cFT
-jtE
-ykp
+hrZ
+hrZ
+hrZ
 hrZ
 oqm
 kjM
@@ -33048,20 +33185,20 @@ shC
 shC
 shC
 hrZ
-rsd
-dLn
-ptp
+hrZ
+hrZ
+hrZ
 hrZ
 oqm
 vhj
 eWH
 lKU
 eWH
-ege
+dVk
 eWH
 eWH
 eWH
-eWH
+jPy
 ius
 oqm
 uQS
@@ -33568,14 +33705,14 @@ hrZ
 hrZ
 oqm
 rsh
-vhj
+lvs
 mFG
 esT
 rsh
 lQG
 lQG
 rsh
-eWH
+isN
 bXR
 oqm
 uQS
@@ -34340,14 +34477,14 @@ hrZ
 oqm
 iQh
 iDn
-tpo
+lBu
 oqm
 mEG
-jmL
+kEs
 eqn
 ipT
 eWH
-vhj
+lvs
 oqm
 uQS
 qiw
@@ -34596,8 +34733,8 @@ hrZ
 hrZ
 oqm
 dXL
-iDn
-tpo
+hPs
+ptp
 oqm
 wva
 mEG
@@ -35375,7 +35512,7 @@ mEG
 tym
 vhj
 eWH
-rsh
+qUl
 oqm
 uQS
 qiw
@@ -36652,7 +36789,7 @@ hrZ
 hrZ
 oqm
 izt
-lBu
+ykp
 qKO
 oqm
 oqm
@@ -37429,7 +37566,7 @@ oqm
 oqm
 iNa
 pBS
-umR
+klc
 pBS
 iDK
 oqm
@@ -37676,13 +37813,13 @@ shC
 shC
 shC
 oqm
-lBu
+rsd
 bCh
 osJ
 tCz
 iDn
 leQ
-lBu
+rsd
 oqm
 pPk
 pBS
@@ -39742,7 +39879,7 @@ oqm
 tHX
 csZ
 tHX
-eNt
+bpH
 xIp
 oqm
 hrZ
