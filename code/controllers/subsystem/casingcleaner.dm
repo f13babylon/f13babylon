@@ -17,5 +17,5 @@ SUBSYSTEM_DEF(casingcleaner)
 
 /datum/controller/subsystem/casingcleaner/proc/cleanup_casings()
 	for(var/obj/item/ammo_casing/iter_casing in GLOB.spent_bullet_casings)
-		if((iter_casing.caliber in priority_casings_list) || deleting_all_casings)
+		if(((iter_casing.caliber in priority_casings_list) || deleting_all_casings) && isturf(iter_casing.loc))
 			qdel(iter_casing)
