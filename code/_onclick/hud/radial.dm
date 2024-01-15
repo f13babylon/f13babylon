@@ -3,62 +3,61 @@
 
 GLOBAL_LIST_EMPTY(radial_menus)
 
-/atom/movable/screen/radial
+/obj/screen/radial
 	icon = 'icons/mob/radial.dmi'
 	layer = ABOVE_HUD_LAYER
 	plane = ABOVE_HUD_PLANE
 	var/datum/radial_menu/parent
 
-/atom/movable/screen/radial/proc/set_parent(new_value)
+/obj/screen/radial/proc/set_parent(new_value)
 	if(parent)
 		UnregisterSignal(parent, COMSIG_PARENT_QDELETING)
 	parent = new_value
 	if(parent)
 		RegisterSignal(parent, COMSIG_PARENT_QDELETING, .proc/handle_parent_del)
 
-/atom/movable/screen/radial/proc/handle_parent_del()
+/obj/screen/radial/proc/handle_parent_del()
 	SIGNAL_HANDLER
 	set_parent(null)
 
-
-/atom/movable/screen/radial/slice
+/obj/screen/radial/slice
 	icon_state = "radial_slice"
 	var/choice
 	var/next_page = FALSE
 	var/tooltips = FALSE
 
-/atom/movable/screen/radial/slice/MouseEntered(location, control, params)
+/obj/screen/radial/slice/MouseEntered(location, control, params)
 	. = ..()
 	icon_state = "radial_slice_focus"
 	if(tooltips)
 		openToolTip(usr, src, params, title = name)
 
-/atom/movable/screen/radial/slice/MouseExited(location, control, params)
+/obj/screen/radial/slice/MouseExited(location, control, params)
 	. = ..()
 	icon_state = "radial_slice"
 	if(tooltips)
 		closeToolTip(usr)
 
-/atom/movable/screen/radial/slice/Click(location, control, params)
+/obj/screen/radial/slice/Click(location, control, params)
 	if(usr.client == parent.current_user)
 		if(next_page)
 			parent.next_page()
 		else
 			parent.element_chosen(choice,usr)
 
-/atom/movable/screen/radial/center
+/obj/screen/radial/center
 	name = "Close Menu"
 	icon_state = "radial_center"
 
-/atom/movable/screen/radial/center/MouseEntered(location, control, params)
+/obj/screen/radial/center/MouseEntered(location, control, params)
 	. = ..()
 	icon_state = "radial_center_focus"
 
-/atom/movable/screen/radial/center/MouseExited(location, control, params)
+/obj/screen/radial/center/MouseExited(location, control, params)
 	. = ..()
 	icon_state = "radial_center"
 
-/atom/movable/screen/radial/center/Click(location, control, params)
+/obj/screen/radial/center/Click(location, control, params)
 	if(usr.client == parent.current_user)
 		parent.finished = TRUE
 
@@ -70,8 +69,8 @@ GLOBAL_LIST_EMPTY(radial_menus)
 
 
 	var/selected_choice
-	var/list/atom/movable/screen/elements = list()
-	var/atom/movable/screen/radial/center/close_button
+	var/list/obj/screen/elements = list()
+	var/obj/screen/radial/center/close_button
 	var/client/current_user
 	var/atom/anchor
 	var/image/menu_holder
@@ -122,20 +121,20 @@ GLOBAL_LIST_EMPTY(radial_menus)
 			starting_angle = 180
 			ending_angle = 45
 
-/datum/radial_menu/proc/setup_menu(use_tooltips, ultradense = 0)
+/datum/radial_menu/proc/setup_menu(use_tooltips)
 	if(ending_angle > starting_angle)
 		zone = ending_angle - starting_angle
 	else
 		zone = 360 - starting_angle + ending_angle
 
-	max_elements = ultradense ? LAZYLEN(choices) :  round(zone / min_angle)
+	max_elements = round(zone / min_angle)
 	var/paged = max_elements < choices.len
 	if(elements.len < max_elements)
 		var/elements_to_add = max_elements - elements.len
 		for(var/i in 1 to elements_to_add) //Create all elements
-			var/atom/movable/screen/radial/slice/new_element = new /atom/movable/screen/radial/slice
+			var/obj/screen/radial/slice/new_element = new /obj/screen/radial/slice
 			new_element.tooltips = use_tooltips
-			new_element.parent = src
+			new_element.set_parent(src)
 			elements += new_element
 
 	var/page = 1
@@ -159,45 +158,20 @@ GLOBAL_LIST_EMPTY(radial_menus)
 	page_data[page] = current
 	pages = page
 	current_page = 1
-	update_screen_objects(entry_animation, ultradense)
+	update_screen_objects(anim = entry_animation)
 
-/datum/radial_menu/proc/update_screen_objects(anim = FALSE, ultradense)
+/datum/radial_menu/proc/update_screen_objects(anim = FALSE)
 	var/list/page_choices = page_data[current_page]
-	var/angle_per_element = ultradense ? 45 : round(zone / page_choices.len)
-	var/current_angle = starting_angle
-	var/ring = 1
+	var/angle_per_element = round(zone / page_choices.len)
 	for(var/i in 1 to elements.len)
-		var/atom/movable/screen/radial/E = elements[i]
-		current_angle += (angle_per_element)
-		if(current_angle > ending_angle)
-			ring += 1
-			current_angle = starting_angle
-			angle_per_element *= 0.5
-			if(!can_fit_another_ring(LAZYLEN(page_choices) - i, angle_per_element))
-				angle_per_element = scale_ring_to_remaining_elements(LAZYLEN(page_choices) - i)
-			current_angle += angle_per_element
+		var/obj/screen/radial/E = elements[i]
+		var/angle = WRAP(starting_angle + (i - 1) * angle_per_element,0,360)
 		if(i > page_choices.len)
 			HideElement(E)
 		else
-			SetElement(E, page_choices[i], current_angle, anim = anim, anim_order = i, ring = ring)
+			SetElement(E,page_choices[i],angle,anim = anim,anim_order = i)
 
-/// Checks if there's enough elements left to fit another whole ring of elements
-/datum/radial_menu/proc/can_fit_another_ring(elements_left, angle_per_element)
-	if(elements_left <= 0)
-		return FALSE
-	var/angle_left = ending_angle - starting_angle
-	var/angle_it_uses = elements_left * angle_per_element
-	return angle_it_uses >= angle_left
-
-/// Returns an angle that would evenly fit the remaining elements in the menu
-/datum/radial_menu/proc/scale_ring_to_remaining_elements(elements_left)
-	if(elements_left <= 0)
-		return FALSE
-	var/angle_left = ending_angle - starting_angle
-	var/angle_per_element = round(angle_left / (elements_left))
-	return angle_per_element
-
-/datum/radial_menu/proc/HideElement(atom/movable/screen/radial/slice/E)
+/datum/radial_menu/proc/HideElement(obj/screen/radial/slice/E)
 	E.cut_overlays()
 	E.alpha = 0
 	E.name = "None"
@@ -206,19 +180,12 @@ GLOBAL_LIST_EMPTY(radial_menus)
 	E.choice = null
 	E.next_page = FALSE
 
-/datum/radial_menu/proc/SetElement(
-	atom/movable/screen/radial/slice/E,
-	choice_id,
-	angle,
-	anim,
-	anim_order,
-	ring = 1
-)
+/datum/radial_menu/proc/SetElement(obj/screen/radial/slice/E,choice_id,angle,anim,anim_order)
 	//Position
-	var/py = (round(cos(angle) * radius) * ring) + py_shift
-	var/px = (round(sin(angle) * radius) * ring)
+	var/py = round(cos(angle) * radius) + py_shift
+	var/px = round(sin(angle) * radius)
 	if(anim)
-		var/timing = (anim_order * 0.5) / ring
+		var/timing = anim_order * 0.5
 		var/matrix/starting = matrix()
 		starting.Scale(0.1,0.1)
 		E.transform = starting
@@ -250,7 +217,7 @@ GLOBAL_LIST_EMPTY(radial_menus)
 
 /datum/radial_menu/New()
 	close_button = new
-	close_button.parent = src
+	close_button.set_parent(src)
 
 /datum/radial_menu/proc/Reset()
 	choices.Cut()
@@ -264,7 +231,7 @@ GLOBAL_LIST_EMPTY(radial_menus)
 /datum/radial_menu/proc/get_next_id()
 	return "c_[choices.len]"
 
-/datum/radial_menu/proc/set_choices(list/new_choices, use_tooltips, ultradense)
+/datum/radial_menu/proc/set_choices(list/new_choices, use_tooltips)
 	if(choices.len)
 		Reset()
 	for(var/E in new_choices)
@@ -275,7 +242,7 @@ GLOBAL_LIST_EMPTY(radial_menus)
 			var/I = extract_image(new_choices[E])
 			if(I)
 				choices_icons[id] = I
-	setup_menu(use_tooltips, ultradense)
+	setup_menu(use_tooltips)
 
 
 /datum/radial_menu/proc/extract_image(E)
@@ -331,18 +298,7 @@ GLOBAL_LIST_EMPTY(radial_menus)
 	Choices should be a list where list keys are movables or text used for element names and return value
 	and list values are movables/icons/images used for element icons
 */
-/proc/show_radial_menu(
-	mob/user,
-	atom/anchor,
-	list/choices,
-	uniqueid,
-	radius,
-	datum/callback/custom_check,
-	require_near = FALSE,
-	tooltips = FALSE,
-	no_repeat_close = FALSE,
-	ultradense = FALSE
-)
+/proc/show_radial_menu(mob/user, atom/anchor, list/choices, uniqueid, radius, datum/callback/custom_check, require_near = FALSE, tooltips = FALSE, no_repeat_close = FALSE)
 	if(!user || !anchor || !length(choices))
 		return
 	if(!uniqueid)
@@ -362,7 +318,7 @@ GLOBAL_LIST_EMPTY(radial_menus)
 		menu.custom_check_callback = custom_check
 	menu.anchor = anchor
 	menu.check_screen_border(user) //Do what's needed to make it look good near borders or on hud
-	menu.set_choices(choices, tooltips, ultradense)
+	menu.set_choices(choices, tooltips)
 	menu.show_to(user)
 	menu.wait(user, anchor, require_near)
 	var/answer = menu.selected_choice
