@@ -238,7 +238,7 @@ GLOBAL_LIST_EMPTY(gateway_destinations)
 	destination_type = /datum/gateway_destination/gateway/home
 	destination_name = "Home Gateway"
 
-/obj/machinery/gateway/centerstation/Initialize()
+/obj/machinery/gateway/centerstation/Initialize(mapload)
 	. = ..()
 	if(!GLOB.the_gateway)
 		GLOB.the_gateway = src
