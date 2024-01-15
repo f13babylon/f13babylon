@@ -1144,9 +1144,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/bunker)
-"bqT" = (
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/underground/cave)
 "brn" = (
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -1450,17 +1447,6 @@
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/bunker)
-"bML" = (
-/mob/living/simple_animal/hostile/renegade/meister{
-	retreat_distance = 2;
-	check_friendly_fire = 0;
-	aggro_vision_range = 14;
-	armour_penetration = 0.5;
-	extra_projectiles = 6;
-	rapid_melee = 2
-	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/underground/cave)
 "bMW" = (
 /obj/effect/spawner/lootdrop/f13/armor/tier5,
 /turf/open/floor/plating/tunnel,
@@ -2051,12 +2037,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
-"cuz" = (
-/mob/living/simple_animal/hostile/renegade/defender{
-	armour_penetration = 0.4
-	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
 "cuZ" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaltopbordertop2left"
@@ -4628,16 +4608,6 @@
 /obj/structure/grille,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/vault)
-"fjn" = (
-/mob/living/simple_animal/hostile/renegade/drifter{
-	vision_range = 15;
-	minimum_distance = 8;
-	health = 300;
-	check_friendly_fire = 0;
-	armour_penetration = 0.2
-	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
 "fjr" = (
 /obj/structure/weightlifter,
 /turf/open/indestructible/ground/inside/mountain,
@@ -5381,43 +5351,17 @@
 /area/f13/vault)
 "fYw" = (
 /obj/structure/table,
-/obj/item/ammo_casing/caseless/rocket/big{
-	pixel_x = -9;
-	layer = 4.0
-	},
 /obj/item/ammo_casing/caseless/rocket/hedp{
-	pixel_y = 13;
+	pixel_y = 12;
 	pixel_x = -4
 	},
-/obj/item/ammo_casing/caseless/rocket{
-	pixel_x = 6;
-	pixel_y = 13
-	},
-/obj/item/ammo_casing/caseless/rocket{
-	pixel_x = 10;
-	pixel_y = 13
+/obj/item/ammo_casing/caseless/rocket/hedp{
+	pixel_y = -3;
+	pixel_x = -5
 	},
 /obj/item/ammo_casing/caseless/rocket/hedp{
-	pixel_y = 13;
-	pixel_x = -9
-	},
-/obj/item/ammo_casing/caseless/rocket/big{
-	pixel_x = -4;
-	layer = 4.0
-	},
-/obj/item/ammo_casing/caseless/rocket/incendiary{
-	pixel_x = 10
-	},
-/obj/item/ammo_casing/caseless/rocket/incendiary{
-	pixel_x = 6
-	},
-/obj/item/ammo_casing/caseless/rocket/chem{
-	pixel_x = 1;
-	layer = 4.0
-	},
-/obj/item/ammo_casing/caseless/rocket/chem{
-	pixel_x = 1;
-	pixel_y = 13
+	pixel_y = 5;
+	pixel_x = 4
 	},
 /turf/open/floor/f13{
 	color = "#ffe9de";
@@ -7399,18 +7343,6 @@
 /obj/structure/barricade/bars,
 /turf/open/floor/plasteel/f13/vault_floor/green/greenchess/greenchess2,
 /area/f13/bunker)
-"ilo" = (
-/mob/living/simple_animal/hostile/renegade{
-	loot = list();
-	melee_damage_lower = 10;
-	melee_damage_upper = 20;
-	rapid_melee = 2;
-	health = 200;
-	maxHealth = 200;
-	armour_penetration = 0.3
-	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
 "ilt" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
@@ -7842,7 +7774,6 @@
 "iFS" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/bunker)
 "iGi" = (
@@ -8341,12 +8272,6 @@
 /obj/structure/sign/warning/radiation,
 /turf/closed/wall/f13/tunnel,
 /area/f13/vault)
-"jgU" = (
-/mob/living/simple_animal/hostile/renegade/doc{
-	extra_projectiles = 2
-	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
 "jhJ" = (
 /obj/machinery/door/airlock/medical{
 	name = "Clinic";
@@ -8829,12 +8754,6 @@
 /obj/item/storage/toolbox/emergency,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/vault)
-"jJQ" = (
-/mob/living/simple_animal/hostile/renegade/grunt{
-	extra_projectiles = 4
-	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
 "jKu" = (
 /obj/structure/barricade/bars,
 /turf/open/floor/f13{
@@ -9154,13 +9073,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/vault)
-"kdw" = (
-/mob/living/simple_animal/hostile/renegade/guardian{
-	extra_projectiles = 2;
-	melee_queue_distance = 2
-	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
 "kdC" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/wood,
@@ -15879,25 +15791,6 @@
 /obj/structure/closet/secure_closet/goodies,
 /turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess,
 /area/f13/bunker)
-"qXn" = (
-/mob/living/simple_animal/hostile/raider/junker/boss{
-	faction = list("raider","wastebot","hostile","supermutant","ghoul");
-	aggro_vision_range = 15;
-	vision_range = 15;
-	minimum_distance = 0;
-	extra_projectiles = 4;
-	rapid_melee = 2;
-	name = "The Boss";
-	obj_damage = 500;
-	retreat_distance = 0;
-	melee_damage_upper = 40;
-	maxHealth = 1000;
-	health = 1000;
-	environment_smash = 4;
-	armour_penetration = 0.4
-	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/underground/cave)
 "qXZ" = (
 /obj/machinery/vending/wardrobe/science_wardrobe,
 /turf/closed/wall/r_wall/f13vault{
@@ -16598,12 +16491,6 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
-"rRq" = (
-/mob/living/simple_animal/hostile/renegade/soldier{
-	retreat_distance = null
-	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
 "rSk" = (
 /obj/item/storage/box/lights/mixed,
 /obj/item/storage/box/lights/mixed,
@@ -19569,10 +19456,6 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/ahs)
-"uZA" = (
-/mob/living/simple_animal/hostile/renegade/engie,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/caves)
 "uZG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -31395,9 +31278,9 @@ shC
 shC
 shC
 shC
-bqT
-cuz
-ilo
+aTA
+hrZ
+hrZ
 hrZ
 hrZ
 hrZ
@@ -31652,9 +31535,9 @@ shC
 shC
 shC
 shC
-qXn
-jgU
-rRq
+aTA
+hrZ
+hrZ
 hrZ
 hrZ
 hrZ
@@ -31909,9 +31792,9 @@ shC
 shC
 shC
 shC
-bML
-fjn
-jJQ
+aTA
+hrZ
+hrZ
 hrZ
 hrZ
 hrZ
@@ -32166,9 +32049,9 @@ shC
 shC
 shC
 shC
-bqT
-uZA
-kdw
+aTA
+hrZ
+hrZ
 hrZ
 hrZ
 hrZ
