@@ -70,6 +70,7 @@
 		BB.preparePixelProjectile(target, user, params, spread)
 	BB.fire(null, direct_target)
 	BB = null
+	GLOB.spent_bullet_casings += src
 	return 1
 
 /obj/item/ammo_casing/proc/spread(turf/target, turf/current, distro)
