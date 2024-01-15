@@ -2,7 +2,7 @@
 Deletes spent ammo casings stored in the global spent_bullet_casings list.
 Certain casings are a bigger priority for deletion, their calibers are stored in var/priority_casings_list.
 These are usually casings that are prone to being spammed by high-firerate guns, therefore causing lag. They get deleted every time the Casing Cleaner is fired.
-var/deleting_all_casings determines if any casings not in var/priority_casings_list need to be deleted, such as casings from rifle rounds. These casings get deleted on every second Casing Cleaner fire.
+var deleting_all_casings determines if any casings not in var/priority_casings_list need to be deleted, such as casings from rifle rounds. These casings get deleted on every second Casing Cleaner fire.
 */
 
 SUBSYSTEM_DEF(casingcleaner)
