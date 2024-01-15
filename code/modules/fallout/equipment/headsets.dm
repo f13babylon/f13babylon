@@ -89,6 +89,7 @@
 	factionized = TRUE
 
 /obj/item/radio/headset/headset_legion/command
+	name = "legion command radio headset"
 	desc = "This is used by the Command of Caesar's Legion. Protects ears from flashbangs.\nUse .l To access the Legion channel."
 	icon_state = "sec_headset_alt"
 	item_state = "sec_headset_alt"
