@@ -105,7 +105,7 @@
 	var/msg = "S:[special_s],P:[special_p],E:[special_e],C:[special_c],I:[special_i],A:[special_a],L:[special_l]<br>"
 
 	if (special_s<3)
-		msg += "<br>They seem exceptioanlly feeble."
+		msg += "<br>They seem exceptionally feeble."
 	if (special_p<3)
 		msg += "<br>They appear to be skirting the border of legally blind."
 	if (special_e<3)
