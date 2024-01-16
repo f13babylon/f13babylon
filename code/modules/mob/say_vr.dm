@@ -105,34 +105,34 @@
 	var/msg = "S:[special_s],P:[special_p],E:[special_e],C:[special_c],I:[special_i],A:[special_a],L:[special_l]<br>"
 
 	if (special_s<3)
-		msg += "<br>This person looks puny, like a total noodle."
+		msg += "<br>They seem exceptioanlly feeble."
 	if (special_p<3)
-		msg += "<br>Even with glasses, an elephant could easily sneak by them."
+		msg += "<br>They appear to be skirting the border of legally blind."
 	if (special_e<3)
-		msg += "<br>It looks like a stiff breeze could tear them in two."
+		msg += "<br>They look as if a simple walk could make them sweat buckets."
 	if (special_c<3)
-		msg += "<br>Staggeringly ugly and awkward, they are about as smooth as pavement."
+		msg += "<br>The way they speak and behave around others is utterly repulsive."
 	if (special_i<3)
-		msg += "<br>They look like they'd struggle to get water out of a boot with instructions printed on the heel."
+		msg += "<br>Their eyes have a constant blank stare, and they appear to have difficulty even piecing a sentence together."
 	if (special_a<3)
-		msg += "<br>Maladroit and unbalanced, it is a wonder they can even stand straight."
+		msg += "<br>They're physically slow as a snail, and clumsier than a circus clown."
 	if (special_l<3)
-		msg += "<br>Misfortune just seems to stick to them like a fly to shit."
+		msg += "<br>Anything that could go wrong for them often does."
 
 	if (special_s>7)
-		msg += "<br>Simply built out of muscle, they could wrestle a deathclaw to death."
+		msg += "<br>Their arms and core are exceptionally strong, conditioned over years of either labor or rigorous training."
 	if (special_p>7)
-		msg += "<br>A sharp and attentive gaze almost pierces through you, nothing gets past them it seems."
+		msg += "<br>They carry a piercing, attentive gaze close to that of an eagle."
 	if (special_e>7)
-		msg += "<br>As solid as an oak, they look like they could run for miles on end."
+		msg += "<br>They appear resilient and unwavering."
 	if (special_c>7)
-		msg += "<br>Beautiful and charismatic, you would almost beg to help this person."
+		msg += "<br>They seem to be overwhelmingly charismatic."
 	if (special_i>7)
-		msg += "<br>A bright and careful gaze in their eyes, they seem to know much more than you."
+		msg += "<br>Their wits are in top shape, mind sharp as a scalpel."
 	if (special_a>7)
-		msg += "<br>Moving like a panther, it is a wonder you have even noticed that they are here."
+		msg += "<br>They are as coordinated as migrating birds, and move with the grace of a cheetah."
 	if (special_l>7)
-		msg += "<br>Somehow you just know that they are as lucky as it gets."
+		msg += "<br>Somehow you just know that they're as lucky as humanly possible."
 	msg += "<br> *---------**---------*"
 	return msg
 
