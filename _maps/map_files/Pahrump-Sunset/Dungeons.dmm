@@ -3205,6 +3205,14 @@
 	icon_state = "2-i"
 	},
 /area/f13/vault)
+"dRK" = (
+/obj/machinery/door/airlock/hatch,
+/obj/structure/barricade/wooden/planks/pregame,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
+/area/f13/bunker)
 "dSf" = (
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -28879,8 +28887,8 @@ shC
 oqm
 oqm
 oqm
-kcC
-kcC
+dRK
+dRK
 oqm
 oqm
 pWX
