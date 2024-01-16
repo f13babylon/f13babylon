@@ -10,7 +10,7 @@
 
 /obj/item/radio/headset/headset_vault_hos
 	name = "\proper the chief of security's radio headset"
-	desc = "The headset of the man in charge of keeping order and protecting the vault.\nChannels are as follows: .b - Vault, .c - Command, .s - Security."
+	desc = "The headset of the man in charge of keeping order and protecting the Vault.\nChannels are as follows: .b - Vault, .c - Command, .s - Security."
 	icon_state = "com_headset"
 	keyslot = new /obj/item/encryptionkey/headset_vault_hos
 	frequency = FREQ_VAULT
