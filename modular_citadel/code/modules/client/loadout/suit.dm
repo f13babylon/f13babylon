@@ -131,26 +131,24 @@
 	name = "Utility Vest"
 	path = /obj/item/clothing/suit/f13/ncr/utilityvest
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_FACTIONS
-	cost = 4
 	restricted_desc = "NCR"
-	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
-							"NCR Medical Officer",
-							"NCR Veteran Ranger",
-							"NCR Lieutenant",
-							"NCR Heavy Trooper",
-							"NCR Sergeant First Class",
-							"NCR Sergeant",
-							"NCR Corporal",
-							"NCR Combat Engineer",
-							"NCR Combat Medic",
-							"NCR Trooper",
-							"NCR Rear Echelon",
-							"NCR Off-Duty",
-							"NCR Ranger"
-						)
-
-
+	restricted_roles = list(
+		"NCR Captain",
+		"NCR Lieutenant",
+		"NCR Veteran Ranger",
+		"NCR Ranger",
+		"NCR Heavy Trooper",
+		"NCR Sergeant",
+		"NCR Combat Engineer",
+		"NCR Combat Medic",
+		"NCR Corporal",
+		"NCR Trooper",
+		"NCR Conscript",
+		"NCR Representative",
+		"NCR Medical Officer",
+		"NCR Quartermaster",
+		"NCR Off-Duty",
+	)
 
 /datum/gear/suit/fieldscribe
 	name = "Fieldscribe suit"
