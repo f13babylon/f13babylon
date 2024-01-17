@@ -632,7 +632,7 @@
 	armor = list("melee" = 15, "bullet" = 35, "laser" = 25, "energy" = 10, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 30)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
 
-/obj/item/clothing/head/hardhat/ncr		//NCR Combat Engineer helmet
+/obj/item/clothing/head/hardhat/ncr					//NCR Combat Engineer helmet
 	name = "\improper NCR engineer helmet"
 	desc = "A standard issue NCR steel helmet reinforced with ballistic padding, modified with a head lamp for engineers."
 	icon_state = "hardhat0_ncr"
@@ -649,16 +649,16 @@
 	armor = list("melee" = 20, "bullet" = 40, "laser" = 30, "energy" = 10, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 35)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 6)
 
-/obj/item/clothing/head/helmet/f13/ncr/sergeant/trenchraider		//NCR Sergeant helmet, Trench Raider loadout
+/obj/item/clothing/head/helmet/f13/ncr/sergeant/trenchraider			//NCR Sergeant helmet, Trench Raider loadout
 	name = "\improper NCR trench raider helmet"
-	desc = "A standard issue NCR steel helmet. This one has clearly seen heavy use. Additional bullets are tucked into the strap."
+	desc = "A standard issue NCR steel helmet reinforced with ballistic padding. This one has clearly seen heavy use. Additional bullets are tucked into the strap."
 	icon_state = "steelpot_bandolier"
 	item_state = "steelpot_bandolier"
 	unique_reskin = list("M1" = "ncr_old_bandolier")
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 20, "energy" = 10, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 35)
 
 //HEAVY GUNNER
-/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/ncr		//NCR Heavy Gunner helmet
+/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/ncr			//NCR Heavy Gunner helmet
 	name = "\improper NCR salvaged power armor helmet"
 	desc = "A salvaged T-45b power armor helmet. The paintjob and the red star painted on it shows it belongs to the NCR."
 	icon_state = "t45bhelmet_ncr"
