@@ -339,35 +339,13 @@
 		"NCR Off-Duty",
 	)
 
-/datum/gear/head/ncr_sapper
+/datum/gear/head/ncr_beret/sapper
 	name = "NCR sapper beret"
 	path = /obj/item/clothing/head/f13/ncr/beret/sapper
-	subcategory = LOADOUT_SUBCATEGORY_HEAD_FACTIONS
-	cost = 2
-	restricted_desc = "NCR"
-	restricted_roles = list(
-		"NCR Captain",
-		"NCR Lieutenant",
-		"NCR Veteran Ranger",
-		"NCR Ranger",
-		"NCR Heavy Trooper",
-		"NCR Sergeant",
-		"NCR Combat Engineer",
-		"NCR Combat Medic",
-		"NCR Corporal",
-		"NCR Trooper",
-		"NCR Conscript",
-		"NCR Representative",
-		"NCR Medical Officer",
-		"NCR Quartermaster",
-		"NCR Off-Duty",
-	)
 
-/datum/gear/head/ncr_sapper
+/datum/gear/head/ncr_beret/medical
 	name = "NCR medical beret"
 	path = /obj/item/clothing/head/f13/ncr/beret/medic
-	subcategory = LOADOUT_SUBCATEGORY_HEAD_FACTIONS
-	cost = 2
 	restricted_desc = "NCR Medical Roles"
 	restricted_roles = list(
 		"NCR Combat Medic",

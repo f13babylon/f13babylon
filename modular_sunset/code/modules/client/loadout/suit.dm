@@ -1,12 +1,3 @@
-// Removes restrictions for certain items
-/datum/gear/suit/NCRutilityvest
-	name = "Utility Vest"
-	path = /obj/item/clothing/suit/f13/ncr/utilityvest
-	subcategory = LOADOUT_SUBCATEGORY_SUIT_GENERAL
-	cost = 4
-	restricted_desc = null
-	restricted_roles = list()
-
 /datum/gear/suit/goner_red
 	name = "olive drab trenchcoat, red"
 	path = /obj/item/clothing/suit/f13/goner/red
