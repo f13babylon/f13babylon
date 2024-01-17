@@ -415,6 +415,14 @@
 							"NCR Heavy Trooper"
 						)
 
+/datum/gear/head/ncr_recon
+	name = "NCR 1st Recon Beret"
+	path = /obj/item/clothing/head/beret/ncr/ncr_recon
+	subcategory = LOADOUT_SUBCATEGORY_HEAD_FACTIONS
+	restricted_desc = "Sergeants, Corporals"
+	restricted_roles = list("NCR Corporal",
+							"NCR Sergeant"
+						)
 //BOS
 /datum/gear/head/bos_beret
 	name = "BOS beret"
