@@ -165,13 +165,6 @@
 	slowdown = 0.06
 	strip_delay = 5
 
-/obj/item/clothing/suit/armor/f13/metalarmor/steelbib/ncra
-	name = "NCR reinforced steel breastplate"
-	desc = "An NCR bomb suit modified with extra steel and kevlar plates, made for Heavy Gunners of the NCR Army. If your enemy was not scared already, they are now."
-	icon_state = "steel_bib_ncra"
-	item_state = "steel_bib_ncra"
-	armor = list("melee" = 30, "bullet" = 47.5, "laser" = 40, "energy" = 10, "bomb" = 30, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 10)
-
 //Combat armor (Faction specific is on f13factionarmor.dm)
 /obj/item/clothing/suit/armor/f13/combat
 	name = "combat armor"
@@ -1057,26 +1050,26 @@
 	armor = list("melee" = 30, "bullet" = 33, "laser" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 10)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 
-/obj/item/clothing/suit/armor/f13/rangercombat/foxcustom
+/obj/item/clothing/suit/armor/f13/ncr/vetranger/foxcustom
 	name = "sniper riot gear"
 	desc = "A customised variant of a pre-War National Guard riot gear. This one seems to be patch-worked more than the rest."
 	icon_state = "foxranger"
 	item_state = "foxranger"
 
-/obj/item/clothing/suit/armor/f13/rangercombat/degancustom
+/obj/item/clothing/suit/armor/f13/ncr/vetranger/degancustom
 	name = "sniper riot gear"
 	desc = "A customized and well-worn suit of riot gear with parts of the suit reinforced with leather armor and slain Centurion armor pieces by the wearer. A sniper's veil is wrapped around the neck."
 	icon_state = "elite_riot"
 	item_state = "elite_riot"
 	armor = list("melee" = 30, "bullet" = 25, "laser" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 10)
 
-/obj/item/clothing/suit/armor/f13/rangercombat/rigscustom
+/obj/item/clothing/suit/armor/f13/ncr/vetranger/rigscustom
 	name = "11th armored calvary armor"
 	desc = "A suit of special military grade riot control gear and a duster, worn by 11th Armored Calvary Regiment members in The Divide before the war. Yellow markings are painted on the shoulderpads and forearm guards."
 	icon_state = "rigscustom_suit"
 	item_state = "rigscustom_suit"
 
-/obj/item/clothing/suit/armor/f13/rangercombat/pricecustom
+/obj/item/clothing/suit/armor/f13/ncr/vetranger/pricecustom
 	name = "spider riot gear"
 	desc = "A customised and faded suit of riot gear, reminiscient of that found near Hopeville in the Divide, with a pair of wrist mounted ammo pouches for easy access to spare munitions with a pair of stripes down the back made from a fire-proof material."
 	icon_state = "price_ranger"
@@ -1403,7 +1396,7 @@
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
 	slowdown = 0.05
 
-/obj/item/clothing/suit/armor/f13/rangercombat/finlayranger
+/obj/item/clothing/suit/armor/f13/ncr/vetranger/finlayranger
 	name = "Brotherhood of Steel Ranger Armor"
 	desc = "A customized and well-worn suit of riot gear with parts of the suit reinforced with leather armor."
 	icon_state = "finlayranger"

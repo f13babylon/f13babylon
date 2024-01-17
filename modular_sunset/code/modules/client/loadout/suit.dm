@@ -1,7 +1,7 @@
 // Removes restrictions for certain items
 /datum/gear/suit/NCRutilityvest
 	name = "Utility Vest"
-	path = /obj/item/clothing/suit/armor/f13/utilityvest
+	path = /obj/item/clothing/suit/f13/ncr/utilityvest
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_GENERAL
 	cost = 4
 	restricted_desc = null

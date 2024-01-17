@@ -267,153 +267,131 @@
 	cost = 3
 
 //NCR
-
-/datum/gear/head/ncr_sapper
-	name = "NCR sapper beret"
-	path = /obj/item/clothing/head/beret/ncr/ncr_sapper
-	cost = 4
-	subcategory = LOADOUT_SUBCATEGORY_HEAD_FACTIONS
-	restricted_desc = "NCR"
-	restricted_roles = list("NCR Combat Engineer",
-							"NCR Off-Duty"
-						)
-
 /datum/gear/head/ncr_cap
 	name = "NCR garrison cap"
-	path = /obj/item/clothing/head/f13/ncr/ncr_cap
-	subcategory = LOADOUT_SUBCATEGORY_HEAD_FACTIONS
-	restricted_desc = "NCR"
-	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
-							"NCR Medical Officer",
-							"NCR Sergeant First Class",
-							"NCR Lieutenant",
-							"NCR Heavy Trooper",
-							"NCR Sergeant",
-							"NCR Corporal",
-							"NCR Combat Engineer",
-							"NCR Combat Medic",
-							"NCR Trooper",
-							"NCR Conscript",
-							"NCR Rear Echelon",
-							"NCR Off-Duty"
-						)
-
-/datum/gear/head/steelpot_goggles
-	name = "NCR storm helmet"
-	path = /obj/item/clothing/head/f13/ncr/steelpot_goggles
+	path = /obj/item/clothing/head/f13/ncr/garrisoncap
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_FACTIONS
 	cost = 2
 	restricted_desc = "NCR"
-	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
-							"NCR Medical Officer",
-							"NCR Sergeant First Class",
-							"NCR Lieutenant",
-							"NCR Heavy Trooper",
-							"NCR Sergeant",
-							"NCR Corporal",
-							"NCR Combat Engineer",
-							"NCR Combat Medic",
-							"NCR Trooper",
-							"NCR Conscript",
-						)
-
-/datum/gear/head/steelpot_gambler
-	name = "NCR gambler helmet"
-	path = /obj/item/clothing/head/f13/ncr/steelpot_gambler
-	subcategory = LOADOUT_SUBCATEGORY_HEAD_FACTIONS
-	cost = 2
-	restricted_desc = "NCR"
-	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
-							"NCR Medical Officer",
-							"NCR Sergeant First Class",
-							"NCR Lieutenant",
-							"NCR Heavy Trooper",
-							"NCR Sergeant",
-							"NCR Corporal",
-							"NCR Combat Engineer",
-							"NCR Combat Medic",
-							"NCR Trooper",
-							"NCR Conscript",
-						)
-
-/datum/gear/head/steelpot_bandolier
-	name = "NCR bandolier helmet"
-	path = /obj/item/clothing/head/f13/ncr/steelpot_bandolier
-	subcategory = LOADOUT_SUBCATEGORY_HEAD_FACTIONS
-	cost = 2
-	restricted_desc = "NCR"
-	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
-							"NCR Medical Officer",
-							"NCR Sergeant First Class",
-							"NCR Lieutenant",
-							"NCR Heavy Trooper",
-							"NCR Sergeant",
-							"NCR Corporal",
-							"NCR Combat Engineer",
-							"NCR Combat Medic",
-							"NCR Trooper",
-							"NCR Conscript",
-						)
-
-
+	restricted_roles = list(
+		"NCR Captain",
+		"NCR Lieutenant",
+		"NCR Veteran Ranger",
+		"NCR Ranger",
+		"NCR Heavy Trooper",
+		"NCR Sergeant",
+		"NCR Combat Engineer",
+		"NCR Combat Medic",
+		"NCR Corporal",
+		"NCR Trooper",
+		"NCR Conscript",
+		"NCR Representative",
+		"NCR Medical Officer",
+		"NCR Quartermaster",
+		"NCR Off-Duty",
+	)
 
 /datum/gear/head/ncr_slouch
 	name = "NCR slouch hat"
-	path = /obj/item/clothing/head/f13/ncr/ncr_slouch
+	path = /obj/item/clothing/head/f13/ncr/slouch
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_FACTIONS
 	cost = 2
 	restricted_desc = "NCR"
-	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
-							"NCR Medical Officer",
-							"NCR Sergeant First Class",
-							"NCR Lieutenant",
-							"NCR Heavy Trooper",
-							"NCR Sergeant",
-							"NCR Corporal",
-							"NCR Combat Engineer",
-							"NCR Combat Medic",
-							"NCR Trooper",
-							"NCR Conscript",
-							"NCR Rear Echelon",
-							"NCR Off-Duty"
-						)
+	restricted_roles = list(
+		"NCR Captain",
+		"NCR Lieutenant",
+		"NCR Veteran Ranger",
+		"NCR Ranger",
+		"NCR Heavy Trooper",
+		"NCR Sergeant",
+		"NCR Combat Engineer",
+		"NCR Combat Medic",
+		"NCR Corporal",
+		"NCR Trooper",
+		"NCR Conscript",
+		"NCR Representative",
+		"NCR Medical Officer",
+		"NCR Quartermaster",
+		"NCR Off-Duty",
+	)
 
-/datum/gear/head/ncr_flapcap
-	name = "NCR field cap"
-	path = /obj/item/clothing/head/f13/ncr/ncr_flapcap
+/datum/gear/head/ncr_beret
+	name = "NCR beret"
+	path = /obj/item/clothing/head/f13/ncr/beret
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_FACTIONS
 	cost = 2
 	restricted_desc = "NCR"
-	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
-							"NCR Medical Officer",
-							"NCR Sergeant First Class",
-							"NCR Lieutenant",
-							"NCR Heavy Trooper",
-							"NCR Sergeant",
-							"NCR Corporal",
-							"NCR Combat Engineer",
-							"NCR Combat Medic",
-							"NCR Trooper",
-							"NCR Conscript",
-							"NCR Rear Echelon",
-							"NCR Off-Duty"
-						)
+	restricted_roles = list(
+		"NCR Captain",
+		"NCR Lieutenant",
+		"NCR Veteran Ranger",
+		"NCR Ranger",
+		"NCR Heavy Trooper",
+		"NCR Sergeant",
+		"NCR Combat Engineer",
+		"NCR Combat Medic",
+		"NCR Corporal",
+		"NCR Trooper",
+		"NCR Conscript",
+		"NCR Representative",
+		"NCR Medical Officer",
+		"NCR Quartermaster",
+		"NCR Off-Duty",
+	)
 
-/datum/gear/head/ncr_campaign
-	name = "NCR campaign hat"
-	path = /obj/item/clothing/head/f13/ncr/ncr_campaign
+/datum/gear/head/ncr_sapper
+	name = "NCR sapper beret"
+	path = /obj/item/clothing/head/f13/ncr/beret/sapper
+	subcategory = LOADOUT_SUBCATEGORY_HEAD_FACTIONS
+	cost = 2
+	restricted_desc = "NCR"
+	restricted_roles = list(
+		"NCR Captain",
+		"NCR Lieutenant",
+		"NCR Veteran Ranger",
+		"NCR Ranger",
+		"NCR Heavy Trooper",
+		"NCR Sergeant",
+		"NCR Combat Engineer",
+		"NCR Combat Medic",
+		"NCR Corporal",
+		"NCR Trooper",
+		"NCR Conscript",
+		"NCR Representative",
+		"NCR Medical Officer",
+		"NCR Quartermaster",
+		"NCR Off-Duty",
+	)
+
+/datum/gear/head/ncr_sapper
+	name = "NCR medical beret"
+	path = /obj/item/clothing/head/f13/ncr/beret/medic
+	subcategory = LOADOUT_SUBCATEGORY_HEAD_FACTIONS
+	cost = 2
+	restricted_desc = "NCR Medical Roles"
+	restricted_roles = list(
+		"NCR Combat Medic",
+		"NCR Medical Officer",
+	)
+
+/datum/gear/head/steelpot_gambler
+	name = "NCR gambler helmet"
+	path = /obj/item/clothing/head/helmet/f13/ncr/trooper/gambler
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_FACTIONS
 	cost = 4
-	restricted_desc = "NCR"
-	restricted_roles = list("NCR Sergeant",
-							"NCR Heavy Trooper"
-						)
+	restricted_desc = "NCR Trooper and above (Combat Roles)"
+	restricted_roles = list(
+		"NCR Captain",
+		"NCR Lieutenant",
+		"NCR Veteran Ranger",
+		"NCR Ranger",
+		"NCR Heavy Trooper",
+		"NCR Sergeant",
+		"NCR Combat Engineer",
+		"NCR Combat Medic",
+		"NCR Corporal",
+		"NCR Trooper",
+	)
 
 //BOS
 /datum/gear/head/bos_beret

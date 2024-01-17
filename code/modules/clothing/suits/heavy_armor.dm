@@ -96,12 +96,6 @@
 	item_state = "raider_salvaged"
 	armor = list("melee" = 60, "bullet" = 60, "laser" = 50, "energy" = 15, "bomb" = 40, "bio" = 55, "rad" = 25, "fire" = 55, "acid" = 15, "wound" = 20)
 
-/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/ncr
-	name = "salvaged NCR power armor"
-	desc = "It's a set of T-45b power armor with a air conditioning module installed, sadly it lacks servomotors to enhance the users strength. The paintjob and the two headed bear painted onto the chestplate shows it belongs to the NCR."
-	icon_state = "ncr_salvaged"
-	item_state = "ncr_salvaged"
-
 /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/hotrod
 	name = "salvaged hotrod T-45b power armor"
 	desc = " It's a set of T-45b power armor with a with some of its plating removed. This set has exhaust pipes piped to the pauldrons, flames erupting from them."

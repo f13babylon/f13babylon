@@ -615,18 +615,6 @@
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
-/obj/item/clothing/head/f13/headscarfncr
-	name = "NCR headscarf"
-	desc = "A piece of cloth worn on the head for a variety of purposes. This one has a white band around it, with NCR symbolism on the front. Clearly, the purpose of this one is to make sure nobody forgets the NCR owns this sand."
-	icon_state = "headscarf_ncr"
-	item_state = "headscarf_ncr"
-	flags_inv = HIDEMASK|HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
-	mutantrace_variation = STYLE_MUZZLE
-
-/obj/item/clothing/head/f13/headscarfncr/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/head/f13/pot
 	name = "metal cooking pot"
 	desc = "Step one: Start with the sauce.<br>Step two: Add the noodles.<br>Step three: Stir the pasta.<br>Step four: Turn up the heat.<br>Step five: Burn the house."
@@ -821,20 +809,20 @@
 	item_state = "macarthur"
 
 
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat/rigscustom
+/obj/item/clothing/head/helmet/f13/ncr/vetranger/rigscustom
 	name = "11th armored calvary helmet"
 	desc = "An advanced combat helmet used by the 11th Armored Calvary Regiment before the war. There is a worn and faded 11th Armored Calvary Regiment's insignia just above the visor. The helmet itself has some scratches and dents sustained from battle."
 	icon_state = "rigscustom_helmet"
 	item_state = "rigscustom_helmet"
 	icon = 'icons/fallout/clothing/hats.dmi'
 
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat/pricecustom
+/obj/item/clothing/head/helmet/f13/ncr/vetranger/pricecustom
 	name = "spider riot helmet"
 	desc = "A customised riot helmet reminiscient of the more advanced riot helmets found in the Divide, sporting purple lenses over the traditional red or green and a pair of red fangs painted over the respirator. The back of the helmet has a the face of an albino spider painted over it."
 	icon_state = "price_ranger"
 	item_state = "price_ranger"
 
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat/foxcustom
+/obj/item/clothing/head/helmet/f13/ncr/vetranger/foxcustom
 	name = "reclaimed ranger-hunter combat helmet"
 	desc = "A reclaimed Ranger-Hunter centurion helmet, carefully and lovingly restored to working condition with a sniper's veil wrapped around the neck. 'DE OPPRESSO LIBER' is stenciled on the front."
 	icon_state = "foxranger"
@@ -845,7 +833,7 @@
 	can_toggle = 1
 	toggle_cooldown = 0
 
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat/degancustom
+/obj/item/clothing/head/helmet/f13/ncr/vetranger/degancustom
 	name = "reclaimed ranger-hunter combat helmet"
 	desc = "A reclaimed Ranger-Hunter centurion helmet, carefully and lovingly restored to working condition with a sniper's veil wrapped around the neck. 'DE OPPRESSO LIBER' is stenciled on the front."
 	icon_state = "elite_riot"
@@ -856,7 +844,7 @@
 	can_toggle = 1
 	toggle_cooldown = 0
 
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat/mosshelmet
+/obj/item/clothing/head/helmet/f13/ncr/vetranger/mosshelmet
 	name = "veteran patrol stetson"
 	desc = "A weathered campaign hat tightly fitted over the viscera of a ranger combat helmet. The old stetson is faded with age and heavy use, having seen the green shores of California to the white peaks of the rockies."
 	icon_state = "mosshelmet"
@@ -974,7 +962,7 @@
 	item_state = "bone_dancer_helmet"
 	strip_delay = 100
 
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat/finlayranger
+/obj/item/clothing/head/helmet/f13/ncr/vetranger/finlayranger
 	name = "reclaimed ranger-hunter combat helmet"
 	desc = "A modified ranger helmet now utilised by the brotherhood of steel, functionally identical to a standard helmet."
 	icon_state = "finlayhelmet"

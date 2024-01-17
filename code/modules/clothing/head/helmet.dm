@@ -472,10 +472,3 @@
 /obj/item/clothing/head/helmet/armyhelmet/heavy/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
-
-
-/obj/item/clothing/head/helmet/armyhelmet/heavy/ncra
-	name = "NCR heavy steel helmet"
-	desc = "A reinforced NCR trooper helmet with a visor. Usually seen to be worn by Heavy Gunners of the New California Republic Army."
-	icon_state = "ncrarmyhelmetheavy"
-	item_state = "ncrarmyhelmetheavy"

@@ -117,7 +117,7 @@
 
 /datum/gear/suit/ncrcfjacket
 	name = "NCRCF jacket"
-	path = /obj/item/clothing/suit/armor/f13/ncrcfjacket
+	path = /obj/item/clothing/suit/f13/ncr/ncrcfjacket
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 1
 
@@ -129,7 +129,7 @@
 
 /datum/gear/suit/NCRutilityvest
 	name = "Utility Vest"
-	path = /obj/item/clothing/suit/armor/f13/utilityvest
+	path = /obj/item/clothing/suit/f13/ncr/utilityvest
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_FACTIONS
 	cost = 4
 	restricted_desc = "NCR"

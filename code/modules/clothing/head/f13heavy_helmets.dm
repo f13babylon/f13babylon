@@ -6,6 +6,7 @@
 	name = "salvaged power helmet"
 	desc = "It's a salvaged power armor helmet of what..? YOU CAN'T SEE ME! STOP! REPORT TO CODERS!!"
 	slowdown = 0.1
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR|HIDESNOUT
 
 // T-45B
 /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b
@@ -14,7 +15,6 @@
 	icon_state = "t45bhelmet"
 	item_state = "t45bhelmet"
 	armor = list("melee" = 55, "bullet" = 60, "laser" = 45, "energy" = 20, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
-	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR|HIDESNOUT
 
 /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/raider
 	name = "raider T-45b power helmet"
@@ -23,14 +23,6 @@
 	item_state = "raiderpa_helm"
 	armor = list("melee" = 55, "bullet" = 55, "laser" = 50, "energy" = 15, "bomb" = 40, "bio" = 55, "rad" = 25, "fire" = 55, "acid" = 15, "wound" = 25)
 	slowdown = 0.05
-	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR|HIDESNOUT
-
-/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/ncr
-	name = "ncr salvaged T-45b helmet"
-	desc = "It's an NCR salvaged T-45b power armor helmet, better repaired than regular salvaged PA, and decorated with the NCR flag and other markings for an NCR Heavy Trooper."
-	icon_state = "t45bhelmet_ncr"
-	item_state = "t45bhelmet_ncr"
-	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR|HIDESNOUT
 
 /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/hotrod
 	name = "hotrod T-45b power helmet"
@@ -38,7 +30,6 @@
 	icon_state = "t45hotrod_helm"
 	item_state = "t45hotrod_helm"
 	armor = list("melee" = 55, "bullet" = 55, "laser" = 55, "energy" = 10, "bomb" = 40, "bio" = 50, "rad" = 30, "fire" = 80, "acid" = 10, "wound" = 30)
-	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR|HIDESNOUT
 
 /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/tribal
 	name = "tribal t-45b headdress"
@@ -48,7 +39,6 @@
 	armor = list("melee" = 60, "bullet" = 55, "laser" = 55, "energy" = 10, "bomb" = 30, "bio" = 40, "rad" = 20, "fire" = 40, "acid" = 0, "wound" = 25)
 	slowdown = 0
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
-	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR|HIDESNOUT
 
 // T-45D
 /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d
@@ -58,7 +48,6 @@
 	item_state = "t45dhelmet0"
 	armor = list("melee" = 60, "bullet" = 65, "laser" = 50, "energy" = 22, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
 	slowdown = 0.05
-	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR|HIDESNOUT
 
 // Midwest
 /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/midwest
@@ -68,7 +57,6 @@
 	item_state = "midwestgrey_helm"
 	armor = list("melee" = 70, "bullet" = 70, "laser" = 60, "energy" = 20, "bomb" = 45, "bio" = 70, "rad" = 50, "fire" = 75, "acid" = 35, "wound" = 40)
 	slowdown = 0.05
-	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR|HIDESNOUT
 
 // Hardened Midwest
 /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/midwest/hardened
@@ -78,7 +66,6 @@
 	item_state = "midwestpa_helm"
 	armor = list("melee" = 70, "bullet" = 70, "laser" = 65, "energy" = 20, "bomb" = 50, "bio" = 80, "rad" = 60, "fire" = 80, "acid" = 35, "wound" = 50)
 	slowdown = 0.05
-	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR|HIDESNOUT
 
 // T-51B
 /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t51b
@@ -88,7 +75,6 @@
 	item_state = "t51bhelmet0"
 	armor = list("melee" = 70, "bullet" = 70, "laser" = 65, "energy" = 40, "bomb" = 65, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 40, "wound" = 50)
 	slowdown = 0.05
-	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR|HIDESNOUT
 
 // T-60A
 /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t60
@@ -98,7 +84,6 @@
 	item_state = "t60helmet0"
 	armor = list("melee" = 80, "bullet" = 70, "laser" = 40, "energy" = 31, "bomb" = 55, "bio" = 70, "rad" = 60, "fire" = 80, "acid" = 35, "wound" = 45)
 	slowdown = 0.05
-	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR|HIDESNOUT
 
 // X-02
 /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/x02
@@ -108,4 +93,3 @@
 	item_state = "advanced"
 	armor = list("melee" = 75, "bullet" = 75, "laser" = 85, "energy" = 85, "bomb" = 70, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 50)
 	slowdown = 0.1
-	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR|HIDESNOUT

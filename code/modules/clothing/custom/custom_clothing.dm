@@ -4,7 +4,7 @@
 
 // WHISKEY //
 
-/obj/item/clothing/suit/armor/f13/rangercombat/desert/whiskey
+/obj/item/clothing/suit/armor/f13/ncr/vetranger/desert/whiskey
 	name = "weathered ranger combat armor"
 	desc = "An original suit of pre-war combat armor used by elite military units, passed down through generations to where it is today. Though it's not lined with kevlar, this suit's still lightweight and easy to move around in."
 	icon = 'icons/fallout/clothing/custom/custom.dmi'
@@ -14,7 +14,7 @@
 	armor = list("melee" = 20, "bullet" = 30, "laser" = 10, "energy" = 20, "bomb" = 30, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	mutantrace_variation = STYLE_DIGITIGRADE
 
-/obj/item/clothing/suit/armor/f13/rangercombat/desert/whiskey/Initialize(mapload)
+/obj/item/clothing/suit/armor/f13/ncr/vetranger/desert/whiskey/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -28,20 +28,20 @@
 */
 
 // YEEHAWGYVNAH/"Trinity Kemble" //
-/obj/item/clothing/suit/armor/f13/trailranger/kemble
+/obj/item/clothing/suit/armor/f13/ncr/trailranger/kemble
 	name = "riot vest"
 	desc = "An armored chestplate ripped out of old riot gear."
 	icon_state = "kemble"
 	item_state = "kemble"
 
-/obj/item/clothing/head/f13/trailranger/kemble
+/obj/item/clothing/head/helmet/f13/ncr/trailranger/kemble
 	name = "ranger's slouch hat"
 	desc = "A comfortable slouch hat, reinforced with ballistic fibres. Although it has the remnants of a pair of night vision goggles still strapped to it, they're non-functional..."
 	icon_state = "kemble"
 	item_state = "kemble"
 	actions_types = list(/datum/action/item_action/toggle)
 
-/obj/item/clothing/head/f13/trailranger/kemble/attack_self(mob/user)
+/obj/item/clothing/head/helmet/f13/ncr/trailranger/kemble/attack_self(mob/user)
 	weldingvisortoggle(user)
 	icon_state = "kembleup"
 	item_state = "kembleup"
@@ -66,7 +66,7 @@
 
 // CARL //
 
-/obj/item/clothing/suit/armor/f13/rangercombat/desert/carl
+/obj/item/clothing/suit/armor/f13/ncr/vetranger/desert/carl
 	name = "hazard combat armor"
 	desc = "An older suit used by the Rangers of the NCR, reclaimed from an army depot at some point after the war. This one appears to be specially treated. \
 	Unfortunately, this makes it unsuited to anything but the most basic of duties unrelated to hazard work."
@@ -78,11 +78,11 @@
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 
 //Probably not needed, but we'll see.
-/obj/item/clothing/suit/armor/f13/rangercombat/desert/carl/Initialize(mapload)
+/obj/item/clothing/suit/armor/f13/ncr/vetranger/desert/carl/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat/desert/carl
+/obj/item/clothing/head/helmet/f13/ncr/vetranger/desert/carl
 	name = "hazard combat helmet"
 	desc = "An older helmet used by the Rangers of the NCR, reclaimed from an army depot at some point after the war. This one appears to be specially treated and \
 	boasting advanced filters. Unfortunately, this makes it unsuited to anything but the most basic of duties unrelated to hazard work."
@@ -94,7 +94,7 @@
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 
 //Probably not needed, but we'll see.
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat/desert/carl/Initialize(mapload)
+/obj/item/clothing/head/helmet/f13/ncr/vetranger/desert/carl/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 

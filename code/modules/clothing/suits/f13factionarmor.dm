@@ -380,268 +380,230 @@
 */
 
 //NCR
-/obj/item/clothing/suit/armor/f13/utilityvest
-	name = "utility vest"
-	desc = "A practical vest with pockets for tools and such."
+
+//NON-COMBAT ROLES
+/obj/item/clothing/suit/f13/ncr/utilityvest		//NCR Off-Duty vest (Only useful for stopping some stray bullets)
+	name = "\improper NCR utility vest"
+	desc = "A practical utility vest with pockets for tools and such. Offers little in terms of protection."
 	icon_state = "vest_utility"
 	item_state = "vest_utility"
 	icon = 'icons/fallout/clothing/suits_utility.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/suit_utility.dmi'
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 5, "bomb" = 15, "bio" = 10, "rad" = 20, "fire" = 30, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 10, "bullet" = 20, "laser" = 15, "energy" = 0, "bomb" = 0, "bio" = 10, "rad" = 20, "fire" = 30, "acid" = 0, "wound" = 10)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/utility
-	slowdown = 0.02
+	slowdown = 0.05
 
 /datum/component/storage/concrete/pockets/utility
 	max_items = 4
 
-/obj/item/clothing/suit/armor/f13/utilityvest/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
-/obj/item/clothing/suit/armor/f13/utilityvest/logisticsofficer //same as his beret
-	name = "logistics officer utility vest"
-	desc = "A practical and armored vest with pockets for tools and such."
-	armor = list("melee" = 15, "bullet" = 40, "laser" = 30, "energy" = 10, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 10)
-	slowdown = 0.1
-
-/obj/item/clothing/suit/armor/f13/utilityvest/logisticsofficer/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
-/obj/item/clothing/suit/armor/f13/ncrarmor
-	name = "NCR patrol vest"
-	desc = "A standard issue NCR Infantry vest."
-	icon_state = "ncr_infantry_vest"
-	item_state = "ncr_infantry_vest"
-	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	armor = list("melee" = 25, "bullet" = 35, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
-	slowdown = 0.1
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt/ncr
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
-
-/datum/component/storage/concrete/pockets/bulletbelt/ncr
-	max_items = 2
-
-/obj/item/clothing/suit/armor/f13/ncrarmor/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
-/obj/item/clothing/suit/armor/f13/ncrarmor/mantle
-	name = "NCR mantle vest"
-	desc = "A standard issue NCR Infantry vest with a mantle on the shoulder."
-	icon_state = "ncr_standard_mantle"
-	item_state = "ncr_standard_mantle"
-
-/obj/item/clothing/suit/armor/f13/ncrarmor/reserve
-	name = "reserve NCR patrol vest"
-	desc = "A standard issue NCR Infantry vest."
-	icon_state = "ncr_infantry_vest"
-	item_state = "ncr_infantry_vest"
-	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 10, "energy" = 0, "bomb" = 30, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 30)
-
-/obj/item/clothing/suit/armor/f13/ncrarmor/conscript
-	name = "NCR flak vest"
-	desc = "A standard issue NCR Infantry vest reinforced with a thin kelvar sheet."
-	icon_state = "ncr_kelvar_vest"
-	item_state = "ncr_kelvar_vest"
-	armor = list("melee" = 20, "bullet" = 25, "laser" = 10, "energy" = 0, "bomb" = 40, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 30)
-	slowdown = 0.05
-
-/obj/item/clothing/suit/armor/f13/ncrarmor/conscript/ncrwarrior
-	name = "NCR desert warrior vest"
-	desc = "A modified version of the utility vest with shoulder paddings and a white piece of cloth with a red stripe, to let everyone know God is on your side."
-	icon = 'icons/fallout/clothing/armored_light.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
-	icon_state = "ncr_warrior_vest"
-	item_state = "ncr_warrior_vest"
-	armor = list("melee" = 30, "bullet" = 25, "laser" = 20, "energy" = 5, "bomb" = 15, "bio" = 10, "rad" = 20, "fire" = 30, "acid" = 0, "wound" = 15)
-
-/obj/item/clothing/suit/armor/f13/ncrarmor/reinforced
-	name = "NCR reinforced patrol vest"
-	desc = "A standard issue NCR Infantry vest reinforced with a groinpad."
-	icon_state = "ncr_reinforced_vest"
-	item_state = "ncr_reinforced_vest"
-	armor = list("melee" = 25, "bullet" = 38, "laser" = 35, "energy" = 10, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
-	slowdown = 0.12
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 3)
-
-/obj/item/clothing/suit/armor/f13/ncrarmor/reinforced/engineer
-	name = "NCR blast-padded reinforced patrol vest"
-	desc = "A standard issue NCR Engineer vest reinforced with a groinpad. In favor of ablative plating, much of the ceramic portions have been removed."
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 40, "energy" = 15, "bomb" = 85, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 45)
-
-
-/obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
-	name = "NCR reinforced mantle vest"
-	desc = "A standard issue NCR Infantry vest reinforced with a groinpad and a mantle."
-	icon_state = "ncr_reinforced_mantle"
-	armor = list("melee" = 25, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
-	slowdown = 0.12
-
-/obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced/trenchraider
-	name = "NCR reinforced trench mantle vest"
-	desc = "A standard issue NCR Infantry vest that has had a portion of its ceramics replaced with shock-resistant plates."
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
-
-/obj/item/clothing/suit/armor/f13/ncrarmor/labcoat
-	name = "NCR medical labcoat"
-	desc = "An armored labcoat typically issued to NCR Medical Officers. It's a standard white labcoat with the Medical Officer's name stitched into the breast and a two headed bear sewn into the shoulder."
+/obj/item/clothing/suit/f13/ncr/labcoat		//NCR Medical Officer labcoat
+	name = "\improper NCR labcoat"
+	desc = "A standard labcoat with a two headed bear sewn onto the shoulder."
 	icon_state = "ncr_labcoat"
 	item_state = "ncr_labcoat"
-	armor = list("melee" = 15, "bullet" = 20, "laser" = 20, "energy" = 5, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 50, "wound" = 10) //IT'S A FUCKING LABCOAT.
-	allowed = list(/obj/item/gun, /obj/item/analyzer, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/pill, /obj/item/storage/pill_bottle, /obj/item/paper, /obj/item/melee/classic_baton/telescopic, /obj/item/soap, /obj/item/sensor_device, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman)
-	salvage_loot = list() // It's a labcoat
-	slowdown = 0.03
-
-/obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
-	name = "NCR officer vest"
-	desc = "A reinforced set of NCR mantle armour, with added padding on the groin, neck and shoulders. Intended for use by the officer class."
-	icon_state = "ncr_lt_armour"
-	item_state = "ncr_lt_armour"
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 20)
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/treasurer
-
-/obj/item/clothing/suit/armor/f13/ncrarmor/captain/ncr_officer_coat
-	name = "NCR officer vest"
-	desc = "A special issue NCR officer's armour with an added thick overcoat for protection from the elements."
-	icon_state = "ncr_officer_coat"
-	item_state = "ncr_officer_coat"
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 5)
-
-/obj/item/clothing/suit/armor/f13/ncrarmor/captain
-	name = "NCR reinforced officer vest"
-	desc = "A heavily reinforced set of NCR mantle armour, with large ceramic plating fitted to cover the torso and back, with additional plating on the shoulders and arms. Intended for use by high ranking officers."
-	icon_state = "ncr_captain_armour"
-	item_state = "ncr_captain_armour"
-	armor = list("melee" = 40, "bullet" = 45, "laser" = 50, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 45)
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/treasurer
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10) // Le captain
-	slowdown = 0.15
-
-//DRESS JACKETS ARE NOT COMBAT WEAR.
-/obj/item/clothing/suit/armor/f13/ncrarmor/ncr_dressjack
-	name = "NCR dress jacket"
-	desc = "A brown dress uniform jacket intended for enlisted NCRA personnel."
-	icon_state = "ncr_dressjack"
-	item_state = "ncr_dressjack"
-	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 0, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 0)
+	armor = list("melee" = 10, "bullet" = 15, "laser" = 20, "energy" = 0, "bomb" = 0, "bio" = 70, "rad" = 40, "fire" = 60, "acid" = 50, "wound" = 0)
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/medical
 	slowdown = 0.05
 
-/obj/item/clothing/suit/armor/f13/ncrarmor/ncr_codressjack
+//DRESS JACKETS
+/obj/item/clothing/suit/f13/ncr/dressjack
 	name = "NCR dress jacket"
+	desc = "A brown dress uniform jacket for enlisted NCRA personnel."
+	icon_state = "ncr_dressjack"
+	item_state = "ncr_dressjack"
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 0, "bomb" = 0, "bio" = 10, "rad" = 20, "fire" = 30, "acid" = 0, "wound" = 0)
+	slowdown = 0.05
+
+/obj/item/clothing/suit/f13/ncr/dressjack/commissioned
+	name = "NCR commissioned dress jacket"
 	desc = "A brown dress uniform jacket for commissioned NCRA personnel."
 	icon_state = "ncr_codressjack"
 	item_state = "ncr_codressjack"
-	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 0, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 0)
-	slowdown = 0.05
 
-/obj/item/clothing/suit/armor/f13/combat/ncr/mutant
-	name = "NCR mutant armor"
-	desc = "Multiple sets of NCR patrol vests that have been fused, stitched and welded together in order to fit the frame of a Super Mutant."
-	icon_state = "mutie_ncr"
-	item_state = "mutie_ncr"
-
-//NCR Ranger
-/obj/item/clothing/suit/toggle/armor/f13/rangerrecon
-	name = "ranger recon duster"
-	desc = "A thicker than average duster worn by NCR recon rangers out in the field. It's not heavily armored by any means, but is easy to move around in and provides excellent protection from the harsh desert environment."
-	icon_state = "duster_recon"
-	item_state = "duster_recon"
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 20)
-	slowdown = 0.05
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
-
-/obj/item/clothing/suit/toggle/armor/f13/rangerrecon/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
-/obj/item/clothing/suit/armor/f13/trailranger
-	name = "ranger vest"
-	desc = "A quaint little jacket and scarf worn by NCR trail rangers. It's fast but provides little in the way of protection."
-	icon_state = "cowboyrang"
-	item_state = "cowboyrang"
-	armor = list("melee" = 25, "bullet" = 30, "laser" = 27.5, "energy" = 5, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 15)
-	slowdown = 0.03
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
-	unique_reskin = list("M1" = "vest_utility",
-						"M2" = "modif_r_vest",
-						"M3" = "blueshift",
-						"M4" = "bulletproof",
-						"M5" = "cowboyrang")
-
-/obj/item/clothing/suit/armor/f13/trailranger/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
-/obj/item/clothing/suit/armor/f13/modif_r_vest //UNUSED
-	name = "subdued ranger vest"
-	desc = "A quaint little jacket and scarf worn by NCR trail rangers. This one has the leather bleached and the scarf dyed black."
-	icon_state = "modif_r_vest"
-	item_state = "modif_r_vest"
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 10, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 20)
-	slowdown = 0.05
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
-
-/obj/item/clothing/suit/armor/f13/modif_r_vest/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
-/obj/item/clothing/suit/armor/f13/combat/ncr_patrol
-	name = "ranger patrol armor"
-	desc = "A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by."
-	icon_state = "ncr_patrol"
-	item_state = "ncr_patrol"
-	armor = list("melee" = 30, "bullet" = 40, "laser" = 40, "energy" = 15, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 20)
-	mutantrace_variation = STYLE_DIGITIGRADE
-	unique_reskin = list("M1" = "ncr_patrol_old",
-						"M2" = "thaxarmor",
-						"M3" = "sergeant",
-						"M4" = "ncr_patrol")
-
-/obj/item/clothing/suit/armor/f13/combat/ncr_patrol/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
-/obj/item/clothing/suit/armor/f13/combat/ncr_patrol/mutant
-	name = "mutant ranger armor"
-	desc = "A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by."
-	icon_state = "mutie_ranger_armour"
-	item_state = "mutie_ranger_armour"
-
-/obj/item/clothing/suit/armor/f13/combat/ncr_patrol/thax
-	name = "modified patrol armor"
-	desc = "A customized and moderately-worn suit of patrol ranger armor. A sun-worn thick olive duster is worn over the armor."
-	icon_state = "thaxarmor"
-	item_state = "thaxarmor"
-
-/obj/item/clothing/suit/armor/f13/rangercombat
-	name = "veteran ranger combat armor"
-	desc = "The NCR veteran ranger combat armor, or black armor consists of a pre-war L.A.P.D. riot suit under a duster with rodeo jeans. Considered one of the most prestigious suits of armor to earn and wear while in service of the NCR Rangers."
-	icon_state = "ranger"
-	item_state = "ranger"
-	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	slowdown = 0.03
-	unique_reskin = list("M1" = "ranger_old",
-						"M2" = "foxranger",
-						"M3" = "price_ranger",
-						"M4" = "desert_ranger",
-						"M5" = "elite_riot",
-						"M6" = "ranger")
-	armor = list("melee" = 30, "bullet" = 45, "laser" = 35, "energy" = 10, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20, "wound" = 35)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
-	mutantrace_variation = STYLE_DIGITIGRADE
-
-/obj/item/clothing/suit/armor/f13/rangercombat/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
-/obj/item/clothing/suit/armor/f13/ncrcfjacket
+//PRISONER JACKET
+/obj/item/clothing/suit/f13/ncr/ncrcfjacket
 	name = "NCRCF jacket"
 	icon_state = "ncrcfjacket"
 	item_state = "ncrcfjacket"
 	desc = "A cheap, standard issue teal canvas jacket issued to poor suckers who find themselves at the butt-end of the NCR's judiciary system."
+
+//ENLISTED COMBAT ROLES
+/obj/item/clothing/suit/armor/f13/ncr				//NCR Trooper armor
+	name = "NCR ARMOR TEMPLATE"
+	desc = "You're not supposed to see this."
+	icon_state = "ncr_infantry_vest"
+	item_state = "ncr_infantry_vest"
+	body_parts_covered = CHEST|GROIN|ARMS|LEGS
+	armor = list("melee" = 15, "bullet" = 35, "laser" = 25, "energy" = 10, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 25)
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
+	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
+	slowdown = 0.1
+
+/obj/item/clothing/suit/armor/f13/ncr/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/ncr/trooper		//NCR Trooper armor
+	name = "\improper NCR patrol vest"
+	desc = "A standard issue NCR infantry vest."
+
+/obj/item/clothing/suit/armor/f13/ncr/conscript		//NCR Conscript armor
+	name = "\improper NCR flak vest"
+	desc = "A cheap flak vest, typically commonly worn by fresh conscripts of the NCRA."
+	icon_state = "ncr_kelvar_vest"
+	item_state = "ncr_kelvar_vest"
+	armor = list("melee" = 10, "bullet" = 30, "laser" = 20, "energy" = 0, "bomb" = 15, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 20)
+
+/obj/item/clothing/suit/armor/f13/ncr/conscript/ncrwarrior		//NCR Conscript armor, Desert Warrior loadout
+	name = "\improper NCR desert warrior vest"
+	desc = "A modified version of the NCR flak vest with shoulder pads and a white piece of cloth with a red stripe, to let everyone know God is on your side."
+	icon = 'icons/fallout/clothing/armored_light.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
+	icon_state = "ncr_warrior_vest"
+	item_state = "ncr_warrior_vest"
+	armor = list("melee" = 30, "bullet" = 20, "laser" = 10, "energy" = 0, "bomb" = 10, "bio" = 10, "rad" = 20, "fire" = 30, "acid" = 0, "wound" = 15)
+
+/obj/item/clothing/suit/armor/f13/ncr/mantle					//NCR Corporal armor
+	name = "\improper NCR mantle vest"
+	desc = "A standard issue NCR infantry vest with a mantle on the shoulder."
+	icon_state = "ncr_standard_mantle"
+	item_state = "ncr_standard_mantle"
+	armor = list("melee" = 15, "bullet" = 35, "laser" = 25, "energy" = 10, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 30)
+	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
+
+/obj/item/clothing/suit/armor/f13/ncr/reinforced				//NCR Combat Medic armor
+	name = "\improper NCR reinforced patrol vest"
+	desc = "A standard issue NCR infantry vest reinforced with a groinpad."
+	icon_state = "ncr_reinforced_vest"
+	item_state = "ncr_reinforced_vest"
+	armor = list("melee" = 15, "bullet" = 35, "laser" = 25, "energy" = 10, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 30)
+	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
+
+/obj/item/clothing/suit/armor/f13/ncr/reinforced/engineer		//NCR Combat Engineer armor
+	name = "\improper NCR blast-padded patrol vest"
+	desc = "A standard issue NCR Infantry vest reinforced with a groinpad. A portion of its ceramic was replaced with blast-resistant padding."
+	armor = list("melee" = 15, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 30)
+
+/obj/item/clothing/suit/armor/f13/ncr/mantle/sergeant			//NCR Sergeant armor
+	name = "\improper NCR reinforced mantle vest"
+	desc = "A standard issue NCR Infantry vest reinforced with a groinpad and a mantle."
+	icon_state = "ncr_reinforced_mantle"
+	armor = list("melee" = 20, "bullet" = 40, "laser" = 30, "energy" = 10, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 35)
+	slowdown = 0.12
+	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 6)
+
+/obj/item/clothing/suit/armor/f13/ncr/mantle/sergeant/trenchraider		//NCR Sergeant armor, Trench Raider loadout
+	name = "\improper NCR reinforced trench mantle vest"
+	desc = "A standard issue NCR Infantry vest reinforced with a groinpad and a mantle. A portion of its ceramics was replaced with shock-resistant plates."
+	armor = list("melee" = 40, "bullet" = 30, "laser" = 20, "energy" = 10, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 35)
+
+//HEAVY GUNNER
+/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/ncr				//NCR Heavy Gunner armor
+	name = "\improper NCR salvaged power armor"
+	desc = "A set of salvaged T-45b power armor with a air conditioning module installed, sadly it lacks servomotors to enhance the users strength. The paintjob and the two headed bear painted onto the chestplate shows it belongs to the NCR."
+	icon_state = "ncr_salvaged"
+	item_state = "ncr_salvaged"
+	armor = list("melee" = 45, "bullet" = 65, "laser" = 50, "energy" = 15, "bomb" = 40, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 50)
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
+	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
+	slowdown = 0.6
+
+/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/ncr/steel		//NCR Heavy Gunner armor, Colt Monitor loadout
+	name = "\improper NCR reinforced steel breastplate"
+	desc = "An NCR bomb suit modified with extra steel and kevlar plates, made for Heavy Gunners of the NCR Army. If your enemy was not scared already, they are now."
+	icon = 'icons/fallout/clothing/armored_medium.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_medium.dmi'
+	icon_state = "steel_bib_ncra"
+	item_state = "steel_bib_ncra"
+
+//OFFICER ROLES
+/obj/item/clothing/suit/armor/f13/ncr/mantle/officer					//NCR Lieutenant armor
+	name = "\improper NCR officer mantle vest"
+	desc = "A standard issue NCR infantry vest reinforced with a groinpad and a mantle. Additional plating was added to protect the shoulders. Intended for use by the officers of the NCRA."
+	icon_state = "ncr_lt_armour"
+	item_state = "ncr_lt_armour"
+	armor = list("melee" = 30, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 30, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
+	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
+	slowdown = 0.14
+
+/obj/item/clothing/suit/armor/f13/ncr/mantle/officer/captain			//NCR Captain Armor, Frontline loadout
+	name = "\improper NCR reinforced officer mantle vest"
+	desc = "A standard issue NCR infantry vest reinforced with a groinpad and a mantle. Additional plating was added to protect the shoulders and arms. Intended for use by high ranking officers of the NCRA."
+	icon_state = "ncr_captain_armour"
+	item_state = "ncr_captain_armour"
+	armor = list("melee" = 35, "bullet" = 50, "laser" = 40, "energy" = 20, "bomb" = 30, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 45)
+	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10)
+
+/obj/item/clothing/suit/armor/f13/ncr/mantle/officer/captain/coat		//NCR Captain Armor, Backline loadout
+	name = "\improper NCR officer greatcoat"
+	desc = "A special issue NCR officer's greatcoat with heavy ballistic padding sewn-in for protection."
+	icon_state = "ncr_officer_coat"
+	item_state = "ncr_officer_coat"
+
+//RANGERS
+/obj/item/clothing/suit/toggle/armor/f13/reconranger		//Recon Ranger armor
+	name = "recon ranger duster"
+	desc = "A thicker than average duster worn by NCR Recon Rangers out in the field. It's not heavily armored by any means, but is easy to move around in and provides excellent protection from the harsh desert environment."
+	icon_state = "duster_recon"
+	item_state = "duster_recon"
+	armor = list("melee" = 15, "bullet" = 35, "laser" = 30, "energy" = 10, "bomb" = 15, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 25)
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
+	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 6)
+	slowdown = 0.08
+
+/obj/item/clothing/suit/toggle/armor/f13/reconranger/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/ncr/trailranger			//Trail Ranger armor
+	name = "trail ranger vest"
+	desc = "A quaint little jacket and scarf worn by NCR Trail Rangers. Its lightweight padding allows for faster movement."
+	icon_state = "cowboyrang"
+	item_state = "cowboyrang"
+	body_parts_covered = CHEST|GROIN|ARMS|LEGS
+	armor = list("melee" = 20, "bullet" = 30, "laser" = 25, "energy" = 5, "bomb" = 15, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 20)
+	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 6)
+	slowdown = 0.06
+	unique_reskin = list(
+		"M1" = "vest_utility",
+		"M2" = "modif_r_vest",
+		"M3" = "blueshift",
+		"M4" = "bulletproof",
+		"M5" = "cowboyrang"
+	)
+
+/obj/item/clothing/suit/armor/f13/combat/ncr/patrol			//Patrol Ranger armor
+	name = "ranger patrol armor"
+	desc = "A set of standard issue Ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by."
+	icon_state = "ncr_patrol"
+	item_state = "ncr_patrol"
+	armor = list("melee" = 30, "bullet" = 50, "laser" = 40, "energy" = 10, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 30)
+	mutantrace_variation = STYLE_DIGITIGRADE
+	unique_reskin = list(
+		"M1" = "ncr_patrol_old",
+		"M2" = "thaxarmor",
+		"M3" = "sergeant",
+		"M4" = "ncr_patrol"
+	)
+
+//VETERAN RANGER
+/obj/item/clothing/suit/armor/f13/ncr/vetranger				//Veteran Ranger armor
+	name = "veteran ranger riot suit"
+	desc = "The NCR Veteran Ranger's armor consists of a pre-war L.A.P.D. riot suit under a duster with rodeo jeans. Considered one of the most prestigious suits of armor to earn and wear while in service of the NCR Rangers."
+	icon_state = "ranger"
+	item_state = "ranger"
+	armor = list("melee" = 25, "bullet" = 45, "laser" = 30, "energy" = 15, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
+	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
+	mutantrace_variation = STYLE_DIGITIGRADE
+	slowdown = 0.08
+	unique_reskin = list(
+		"M1" = "ranger_old",
+		"M2" = "foxranger",
+		"M3" = "price_ranger",
+		"M4" = "desert_ranger",
+		"M5" = "elite_riot",
+		"M6" = "ranger"
+	)
 
 //Brotherhood of Steel (PA in f13armor.dm)
 
@@ -937,7 +899,7 @@
 
 //SWAT
 
-/obj/item/clothing/suit/armor/f13/rangercombat/eliteriot
+/obj/item/clothing/suit/armor/f13/ncr/vetranger/eliteriot
 	name = "elite riot gear"
 	desc = "A heavily reinforced set of military grade armor, commonly seen in the Divide now repurposed and reissued to Chief Rangers."
 	icon_state = "elite_riot"
@@ -1025,7 +987,7 @@
 	item_state = "towntrench_special"
 	armor = list("melee" = 60, "bullet" = 60, "laser" = 60, "energy" = 20, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 10)
 
-/obj/item/clothing/suit/armor/f13/rangercombat/desert
+/obj/item/clothing/suit/armor/f13/ncr/vetranger/desert
 	name = "desert ranger combat armor"
 	desc = "This is the original armor the NCR Ranger Combat armor was based off of. An awe inspiring suit of armor used by the legendary Desert Rangers."
 	icon_state = "desert_ranger"
@@ -1033,41 +995,6 @@
 	mutantrace_variation = STYLE_DIGITIGRADE
 
 //NCR
-
-/obj/item/clothing/suit/armor/f13/rangerrig
-	name = "chest gear harness"
-	desc = "a handmade tactical rig. The actual rig is made of a black, fiberous cloth, being attached to a dusty desert-colored belt. A flask and two ammo pouches hang from the belt."
-	icon_state = "r_gear_rig"
-	item_state = "r_gear_rig"
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 10, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 10)
-	slowdown = 0.05
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt/ncr
-
-/obj/item/clothing/suit/armor/f13/combat/ncr_patrol/scout
-	name = "ranger scout armor"
-	desc = "A refurbished set of NCRA 3rd Scouts armor, now with heavier plating together with arm and leg guards. A two-headed bear has been painted on its chest."
-	icon_state = "refurb_scout"
-	item_state = "refurb_scout"
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 10, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 10)
-
-/obj/item/clothing/suit/armor/f13/ncrarmor/scout
-	name = "NCR 3rd Scout combat armor"
-	desc = "A specialized variant of combat armor issued to members of the 3rd Scout Battalion."
-	icon_state = "scoutarmor"
-	item_state = "scoutarmor"
-	slowdown = 0.01
-
-/obj/item/clothing/suit/armor/f13/ncrarmor/scout/veteran
-	name = "NCR 3rd Scout veteran combat armor"
-	desc = "A specialized variant of combat armor issued to veteran members of the 3rd Scout Battalion."
-	slowdown = 0.01
-
-/obj/item/clothing/suit/armor/f13/ncrarmor/scout/officer
-	name = " NCR 3rd Scout officer combat armor"
-	icon_state = "scout_armor_lt"
-	item_state = "scout_armor_lt"
-	desc = "A specialized variant of combat armor issued to officers of the 3rd Scout Battalion."
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 10, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 10)
 
 /obj/item/clothing/suit/armor/f13/combat/ncr
 	name = "NCR combat armor"
