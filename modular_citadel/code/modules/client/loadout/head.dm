@@ -419,6 +419,7 @@
 	name = "NCR 1st Recon Beret"
 	path = /obj/item/clothing/head/beret/ncr/ncr_recon
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_FACTIONS
+	cost = 2
 	restricted_desc = "Sergeants, Corporals"
 	restricted_roles = list("NCR Corporal",
 							"NCR Sergeant"
