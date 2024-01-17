@@ -1289,17 +1289,17 @@
 
 /obj/item/clothing/head/beret/ncr/ncr_recon
 	name = "NCR First Recon beret"
-	desc = "A red beret, issued to members of NCR First Recon."
+	desc = "A red beret, issued to members of NCR's First Recon."
 	icon_state = "ncr_recon_beret"
 	item_state = "ncr_recon_beret"
-	armor = list("melee" = 25, "bullet" = 44, "laser" = 44, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 15, "bullet" = 35, "laser" = 25, "energy" = 10, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 25)
 
 /obj/item/clothing/head/beret/ncr/ncr_recon/worn
 	name = "Worn NCR First Recon beret"
 	desc = "A red beret, issued to members of NCR First Recon. This one is worn, having been kept when a soldier was transfered from the unit."
 	icon_state = "ncr_recon_beret"
 	item_state = "ncr_recon_beret"
-	armor = list("melee" = 25, "bullet" = 44, "laser" = 44, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 15, "bullet" = 35, "laser" = 25, "energy" = 10, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 25)
 
 /obj/item/clothing/head/beret/ncr/ncr_scout
 	name = "NCR Third Scout beret"
