@@ -582,6 +582,10 @@
 	desc = "A piece of cloth worn on the head for a variety of purposes. This one has a white band around it, with NCR symbolism on the front. Clearly, the purpose of this one is to make sure nobody forgets the NCR owns this sand."
 	icon_state = "headscarf_ncr"
 	item_state = "headscarf_ncr"
+	can_toggle = FALSE
+	actions_types = null
+	flags_inv = HIDEMASK|HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
+	mutantrace_variation = STYLE_MUZZLE
 	armor = list("melee" = 30, "bullet" = 20, "laser" = 10, "energy" = 0, "bomb" = 10, "bio" = 10, "rad" = 20, "fire" = 30, "acid" = 0, "wound" = 15)
 
 /obj/item/clothing/head/helmet/f13/ncr/corporal		//NCR Corporal helmet
