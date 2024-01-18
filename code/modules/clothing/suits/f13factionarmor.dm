@@ -208,7 +208,7 @@
 	name = "Legion Orator armor"
 	desc = "Light armor consisting of bracers, a chainmail skirt, and large pauldrons. A tabard emblazoned with the bull is loosely draped over the torso."
 	icon = 'icons/fallout/clothing/armored_light.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/clothes/armored_light.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
 	icon_state = "legion_orator"
 	item_state = "legion_orator"
 	armor = list("melee" = 20, "bullet" = 15, "laser" = 10, "energy" = 0, "bomb" = 0, "bio" = 20, "rad" = 20, "fire" = 0, "acid" = 0, "wound" = 5)
