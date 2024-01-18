@@ -113,25 +113,31 @@
 
 /datum/crafting_recipe/tribal_pa
 	name = "Tribal Salvaged Power Armor"
-	time = 120
+	time = 100
 	reqs = list(
-			/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b = 1,
-			/obj/item/stack/sheet/sinew = 2,
-			/obj/item/stack/sheet/bone = 4
-			)
-	result = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/tribal
+			/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d = 1,
+			/obj/item/stack/sheet/bone = 5,
+			/obj/item/stack/sheet/sinew = 5,
+			/obj/item/stack/crafting/metalparts = 10,
+			/obj/item/stack/crafting/goodparts = 5,
+	)
+	tools = list(TOOL_WORKBENCH, TOOL_CROWBAR, TOOL_SAW)
+	result = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d/tribal
 	category = CAT_TRIBAL
 	always_available = FALSE
 
 /datum/crafting_recipe/tribal_pa_helmet
 	name = "Tribal Salvaged Power Armor Helmet"
-	time = 120
+	time = 100
 	reqs = list(
-			/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b = 1,
-			/obj/item/stack/sheet/sinew = 1,
-			/obj/item/stack/sheet/bone = 2
-			)
-	result = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/tribal
+			/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d = 1,
+			/obj/item/stack/sheet/bone = 5,
+			/obj/item/stack/sheet/sinew = 5,
+			/obj/item/stack/crafting/metalparts = 10,
+			/obj/item/stack/crafting/goodparts = 5,
+	)
+	tools = list(TOOL_WORKBENCH, TOOL_CROWBAR, TOOL_SAW)
+	result = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d/tribal
 	category = CAT_TRIBAL
 	always_available = FALSE
 

@@ -570,16 +570,6 @@
 		to_chat(L, "<span class='warning'>Armor power reroute successful. All systems operational.</span>")
 		L.update_equipment_speed_mods()
 
-/obj/item/clothing/suit/armor/f13/power_armor/t45b
-	name = "T-45b power armor"
-	icon_state = "t45bpowerarmor"
-	item_state = "t45bpowerarmor"
-	desc = "It's a set of early-model T-45 power armor with a custom air conditioning module and restored servomotors. Bulky, but almost as good as the real thing."
-	armor = list("melee" = 55, "bullet" = 60, "laser" = 45, "energy" = 25, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
-	slowdown = 0.5
-	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b
-	mutantrace_variation = STYLE_DIGITIGRADE
-
 /obj/item/clothing/suit/armor/f13/power_armor/t45d
 	name = "T-45d power armor"
 	desc = "Originally developed and manufactured for the United States Army by American defense contractor West Tek, the T-45d power armor was the first version of power armor to be successfully deployed in battle."
@@ -596,17 +586,6 @@
 	desc = "An old, beat up suit of T-45d. This appears to have been refurbished time and again, with pockmarks all over the chasis."
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 25, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 50)
 	salvaged_type = null
-
-//////
-// Raider Boss
-//////
-/obj/item/clothing/suit/armor/f13/power_armor/t45d/raider
-	name = "Raider Captain's power armor"
-	desc = "The Raider Captain's set of refurbished T-45d power armor. How'd you get your hands on this?"
-	icon_state = "raiderpa"
-	item_state = "raiderpa"
-	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/raider
-	mutantrace_variation = STYLE_DIGITIGRADE
 
 //////
 // Sheriff's Suit

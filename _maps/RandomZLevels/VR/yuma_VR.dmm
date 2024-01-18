@@ -226,11 +226,9 @@
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 6
 	},
-/obj/item/clothing/head/helmet/f13/power_armor/t45b,
 /obj/item/clothing/head/helmet/f13/power_armor/t45d,
 /obj/item/clothing/head/helmet/f13/power_armor/t51b,
 /obj/item/clothing/head/helmet/f13/power_armor/t60,
-/obj/item/clothing/suit/armor/f13/power_armor/t45b,
 /obj/item/clothing/suit/armor/f13/power_armor/t45d,
 /obj/item/clothing/suit/armor/f13/power_armor/t51b,
 /obj/item/clothing/suit/armor/f13/power_armor/t60,
@@ -413,9 +411,7 @@
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 6
 	},
-/obj/item/clothing/head/helmet/f13/power_armor/t45b,
 /obj/item/clothing/head/helmet/f13/power_armor/t45d,
-/obj/item/clothing/suit/armor/f13/power_armor/t45b,
 /obj/item/clothing/suit/armor/f13/power_armor/t45d,
 /turf/open/floor/holofloor/plating,
 /area/holodeck/den/programs/armory)
@@ -3803,11 +3799,9 @@
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 6
 	},
-/obj/item/clothing/head/helmet/f13/power_armor/t45b,
 /obj/item/clothing/head/helmet/f13/power_armor/t45d,
 /obj/item/clothing/head/helmet/f13/power_armor/t51b,
 /obj/item/clothing/head/helmet/f13/power_armor/t60,
-/obj/item/clothing/suit/armor/f13/power_armor/t45b,
 /obj/item/clothing/suit/armor/f13/power_armor/t45d,
 /obj/item/clothing/suit/armor/f13/power_armor/t51b,
 /obj/item/clothing/suit/armor/f13/power_armor/t60,

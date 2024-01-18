@@ -630,9 +630,9 @@
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 20, "energy" = 10, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 20, "acid" = 0, "wound" = 35)
 
 //HEAVY GUNNER
-/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/ncr			//NCR Heavy Gunner helmet
+/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d/ncr			//NCR Heavy Gunner helmet
 	name = "\improper NCR salvaged power armor helmet"
-	desc = "A salvaged T-45b power armor helmet. The paintjob and the red star painted on it shows it belongs to the NCR."
+	desc = "A salvaged T-45d power armor helmet. The paintjob on it shows it belongs to the NCR. A rare sight after General Lee Oliver's death, and often outfitted to troops expected to be at the frontlines."
 	icon_state = "t45bhelmet_ncr"
 	item_state = "t45bhelmet_ncr"
 	flash_protect = 1
@@ -641,8 +641,8 @@
 	slowdown = 0.1		//0.35 with chestpiece
 
 /obj/item/clothing/head/helmet/f13/ncr/heavygunner						//NCR Heavy Gunner helmet, Flamethrower loadout
-	name = "\improper NCR heavy steel helmet"
-	desc = "A reinforced NCR steel helmet with heavy ballistic padding and a face shield."
+	name = "\improper NCR heavy plate helmet"
+	desc = "A heavily reinforced NCR steel-pot helmet. It comes complete with extra leather padding and armored layering. Often used as a supplement for the rarer T-45d salvaged power armor."
 	icon = 'icons/fallout/clothing/helmets.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/helmet.dmi'
 	icon_state = "ncrarmyhelmetheavy"

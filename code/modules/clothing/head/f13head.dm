@@ -346,21 +346,13 @@
 		if(2)
 			return "<span class='warning'>The connections ports have been <i>unanchored</i> and only <i>wires</i> remain.</span>"
 
-/obj/item/clothing/head/helmet/f13/power_armor/t45b
-	name = "T-45b helmet"
-	desc = "It's a T-45b power armor helmet."
-	icon_state = "t45bhelmet"
-	item_state = "t45bhelmet"
-	armor = list("melee" = 55, "bullet" = 60, "laser" = 45, "energy" = 20, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
-	salvaged_type = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b
-
 /obj/item/clothing/head/helmet/f13/power_armor/t45d
 	name = "T-45d power helmet"
 	desc = "An old pre-War power armor helmet. It's pretty hot inside of it."
 	icon_state = "t45dhelmet0"
 	item_state = "t45dhelmet0"
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
-	armor = list("melee" = 60, "bullet" = 65, "laser" = 50, "energy" = 22, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
+	armor = list("melee" = 65, "bullet" = 65, "laser" = 50, "energy" = 30, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
 	salvaged_type = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d
 
 //Fluff Helmet
@@ -372,17 +364,6 @@
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 25, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 50)
 	salvaged_type = null
-
-//////
-// Raider Boss
-//////
-/obj/item/clothing/head/helmet/f13/power_armor/t45d/raider
-	name = "Raider Captain's power helmet"
-	desc = "The Raider Captain's helmet for their set of refurbished T-45d power armor. How'd you get your hands on this?"
-	icon_state = "raiderpa_helm"
-	item_state = "raiderpa_helm"
-	salvaged_type = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/raider
-	actions_types = null
 
 //////
 // Sheriff's Suit

@@ -176,21 +176,33 @@
 	subcategory = CAT_ARMOR
 
 /datum/crafting_recipe/ncrsalvagedarmorconversion
-	name = "Salvaged NCR Power Armor"
-	result = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/ncr
-	reqs = list(/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b = 1,
-				/obj/item/toy/crayon/spraycan)
-	time = 30
+	name = "NCR salvaged power armor"
+	result = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d/ncr
+	reqs = list(
+		/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d = 1,
+		/obj/item/stack/crafting/metalparts = 10,
+		/obj/item/stack/crafting/goodparts = 5,
+		/obj/item/stack/sheet/prewar = 5,
+		/obj/item/toy/crayon/spraycan
+	)
+	tools = list(TOOL_AWORKBENCH, TOOL_CROWBAR, TOOL_WELDER)
+	time = 100
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
 	always_available = FALSE
 
 /datum/crafting_recipe/ncrsalvagedhelmetconversion
-	name = "NCR salvaged T-45b helmet"
-	result = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/ncr
-	reqs = list(/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b = 1,
-				/obj/item/toy/crayon/spraycan)
-	time = 20
+	name = "NCR salvaged power armor helmet"
+	result = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d/ncr
+	reqs = list(
+		/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d = 1,
+		/obj/item/stack/crafting/metalparts = 10,
+		/obj/item/stack/crafting/goodparts = 5,
+		/obj/item/stack/sheet/prewar = 5
+		/obj/item/toy/crayon/spraycan
+	)
+	tools = list(TOOL_AWORKBENCH, TOOL_CROWBAR, TOOL_WELDER)
+	time = 100
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
 	always_available = FALSE

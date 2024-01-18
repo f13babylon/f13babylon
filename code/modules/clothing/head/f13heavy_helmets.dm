@@ -9,46 +9,33 @@
 	flags_cover = HEADCOVERSEYES
 	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR|HIDESNOUT
 
-// T-45B
-/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b
-	name = "salvaged T-45b helmet"
-	desc = "It's a salvaged T-45b power armor helmet."
-	icon_state = "t45bhelmet"
-	item_state = "t45bhelmet"
-	armor = list("melee" = 55, "bullet" = 60, "laser" = 45, "energy" = 20, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
-
-/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/raider
-	name = "raider T-45b power helmet"
-	desc = "A heavily modified, almost bastardised T-45b power armor helmet."
-	icon_state = "raiderpa_helm"
-	item_state = "raiderpa_helm"
-	armor = list("melee" = 55, "bullet" = 55, "laser" = 50, "energy" = 15, "bomb" = 40, "bio" = 55, "rad" = 25, "fire" = 55, "acid" = 15, "wound" = 25)
-	slowdown = 0.05
-
-/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/hotrod
-	name = "hotrod T-45b power helmet"
-	desc = "This power armor helmet is so decrepit and battle-worn that it have lost most of its capability to protect the wearer from harm."
-	icon_state = "t45hotrod_helm"
-	item_state = "t45hotrod_helm"
-	armor = list("melee" = 55, "bullet" = 55, "laser" = 55, "energy" = 10, "bomb" = 40, "bio" = 50, "rad" = 30, "fire" = 80, "acid" = 10, "wound" = 30)
-
-/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/tribal
-	name = "tribal t-45b headdress"
-	desc = "A salvaged T-45b powered armor, with the servos removed and a feathered headdress. Certain bits of plating have been stripped out to retain more freedom of movement."
-	icon_state = "tribal_PA_helmet"
-	item_state = "tribal_PA_helmet"
-	armor = list("melee" = 60, "bullet" = 55, "laser" = 55, "energy" = 10, "bomb" = 30, "bio" = 40, "rad" = 20, "fire" = 40, "acid" = 0, "wound" = 25)
-	slowdown = 0
-	resistance_flags = LAVA_PROOF | FIRE_PROOF
-
 // T-45D
 /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d
 	name = "salvaged T-45d helmet"
 	desc = "It's a salvaged T-45d power armor helmet."
 	icon_state = "t45dhelmet0"
 	item_state = "t45dhelmet0"
-	armor = list("melee" = 60, "bullet" = 65, "laser" = 50, "energy" = 22, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
-	slowdown = 0.05
+	armor = list("melee" = 60, "bullet" = 60, "laser" = 45, "energy" = 20, "bomb" = 35, "bio" = 30, "rad" = 20, "fire" = 35, "acid" = 0, "wound" = 40)
+
+/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d/raider
+	name = "raider salvaged power helmet"
+	desc = "A heavily modified, almost bastardised T-45b power armor helmet."
+	icon_state = "raiderpa_helm"
+	item_state = "raiderpa_helm"
+
+/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d/hotrod
+	name = "hotrod salvaged power helmet"
+	desc = "This power armor helmet is so decrepit and battle-worn that it have lost most of its capability to protect the wearer from harm."
+	icon_state = "t45hotrod_helm"
+	item_state = "t45hotrod_helm"
+
+/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d/tribal
+	name = "tribal salvaged headdress"
+	desc = "A salvaged T-45d powered armor, with the servos removed and a feathered headdress. Certain bits of plating have been stripped out to retain more freedom of movement."
+	icon_state = "tribal_PA_helmet"
+	item_state = "tribal_PA_helmet"
+	armor = list("melee" = 60, "bullet" = 55, "laser" = 45, "energy" = 15, "bomb" = 35, "bio" = 30, "rad" = 20, "fire" = 35, "acid" = 0, "wound" = 35)
+	slowdown = 0.05		//0.35 with helmet
 
 // Midwest
 /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/midwest

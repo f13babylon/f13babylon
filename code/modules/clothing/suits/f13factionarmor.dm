@@ -466,9 +466,9 @@
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 20, "energy" = 10, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 20, "acid" = 0, "wound" = 35)
 
 //HEAVY GUNNER
-/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/ncr				//NCR Heavy Gunner armor
+/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d/ncr				//NCR Heavy Gunner armor
 	name = "\improper NCR salvaged power armor"
-	desc = "A set of salvaged T-45b power armor with a air conditioning module installed, sadly it lacks servomotors to enhance the users strength. The paintjob and the two headed bear painted onto the chestplate shows it belongs to the NCR."
+	desc = "A set of salvaged T-45d power armor, with its servomotors and joint reinforcements having been long removed. The paintjob on it shows it belongs to the NCR. A rare sight after General Lee Oliver's death, and often outfitted to troops expected to be at the frontlines."
 	icon_state = "ncr_salvaged"
 	item_state = "ncr_salvaged"
 	armor = list("melee" = 45, "bullet" = 65, "laser" = 50, "energy" = 20, "bomb" = 40, "bio" = 30, "rad" = 20, "fire" = 40, "acid" = 0, "wound" = 50)
@@ -477,8 +477,8 @@
 	slowdown = 0.25		//0.35 with helmet
 
 /obj/item/clothing/suit/armor/f13/ncr/heavygunner						//NCR Heavy Gunner armor, Flamethrower loadout
-	name = "\improper NCR reinforced steel breastplate"
-	desc = "An NCR bomb suit modified with extra steel and kevlar plates, made for Heavy Gunners of the NCR Army. If your enemy was not scared already, they are now."
+	name = "\improper NCR heavy plate vest"
+	desc = "A heavily reinforced NCR vest. Rumors say that the leather for the lining comes from the best-fed Brahmins, and complete with extra armor padding. It is often seen used as a supplement for the rarer T-45d salvaged power armor."
 	icon = 'icons/fallout/clothing/armored_medium.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_medium.dmi'
 	icon_state = "steel_bib_ncra"
@@ -813,19 +813,6 @@
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 70, "rad" = 65, "fire" = 80, "acid" = 100, "wound" = 10)
 	slowdown = 0.025
-
-/obj/item/clothing/suit/armor/f13/power_armor/t45b/tribal
-	name = "tribal salvaged t45-b"
-	desc = "A set of salvaged power armor, with certain bits of plating stripped out to retain more freedom of movement. No cooling module, though."
-	icon_state = "tribal_power_armor"
-	item_state = "tribal_power_armor"
-	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	armor = list("melee" = 65, "bullet" = 65, "laser" = 65, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 60)
-	slowdown = 0.3
-	requires_training = FALSE
-	powered = FALSE
-	mutantrace_variation = STYLE_DIGITIGRADE
-
 
 //Vault
 

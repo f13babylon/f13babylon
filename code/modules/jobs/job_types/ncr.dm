@@ -630,8 +630,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/shockht
 	name = "Tactical Support Heavy Gunner"
-	head = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/ncr
-	suit = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/ncr
+	head = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d/ncr
+	suit = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d/ncr
 	suit_store = /obj/item/gun/ballistic/automatic/lmg/monitor
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m762mm/extended = 2,
@@ -648,8 +648,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/opperssorht
 	name = "Frontline Support Heavy Gunner"
-	head = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/ncr
-	suit = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/ncr
+	head = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d/ncr
+	suit = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d/ncr
 	suit_store = /obj/item/gun/ballistic/automatic/lmg/r84
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/lmg = 2,

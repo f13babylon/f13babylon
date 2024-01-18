@@ -78,39 +78,9 @@
 	It's literally not meant to be here, you are just wasting your time reading some text that someone wrote for you \
 	because he thought it'd be funny, or expected someone to check GitHub for once, hello by the way. \
 	If you still don't understand - it's a 'master' item, basically main type/parent object or something. \
-	It isn't meant to be used, it just dictates procs and all that stuff to the subtypes, such as t45b and so on. \
+	It isn't meant to be used, it just dictates procs and all that stuff to the subtypes, such as t45d and so on. \
 	Now begone, report this to coders. NOW!"
-	slowdown = 0.6
-
-// T-45B
-/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b
-	name = "salvaged T-45b power armor"
-	desc = "It's a set of early-model T-45 power armor with a custom air conditioning module and stripped out servomotors. Bulky and slow, but almost as good as the real thing."
-	icon_state = "t45b_salvaged"
-	item_state = "t45b_salvaged"
-	armor = list("melee" = 55, "bullet" = 60, "laser" = 45, "energy" = 20, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
-/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/raider
-	name = "raider T-45b power armor"
-	desc = "A salvaged set of T-45b power armor has been brought back to life with the help of a welder and lots of scrap metal."
-	icon_state = "raider_salvaged"
-	item_state = "raider_salvaged"
-	armor = list("melee" = 60, "bullet" = 60, "laser" = 50, "energy" = 15, "bomb" = 40, "bio" = 55, "rad" = 25, "fire" = 55, "acid" = 15, "wound" = 20)
-
-/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/hotrod
-	name = "salvaged hotrod T-45b power armor"
-	desc = " It's a set of T-45b power armor with a with some of its plating removed. This set has exhaust pipes piped to the pauldrons, flames erupting from them."
-	icon_state = "t45hotrod"
-	item_state = "t45hotrod"
-	armor = list("melee" = 55, "bullet" = 55, "laser" = 55, "energy" = 10, "bomb" = 40, "bio" = 50, "rad" = 30, "fire" = 80, "acid" = 10, "wound" = 20)
-
-/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/tribal
-	name = "salvaged tribal T45-b power armor"
-	desc = "A set of salvaged power armor, with certain bits of plating stripped out to retain more freedom of movement. No cooling module, though."
-	icon_state = "tribal_power_armor"
-	item_state = "tribal_power_armor"
-	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	armor = list("melee" = 65, "bullet" = 65, "laser" = 50, "energy" = 22, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
-	mutantrace_variation = STYLE_DIGITIGRADE
+	slowdown = 0.35	//When helmeted, 0.45
 
 // T-45D
 /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d
@@ -118,8 +88,28 @@
 	desc = "T-45d power armor with servomotors and all valuable components stripped out of it."
 	icon_state = "t45d_salvaged"
 	item_state = "t45d_salvaged"
-	armor = list("melee" = 65, "bullet" = 65, "laser" = 50, "energy" = 30, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
-	slowdown = 0.4	//When helmeted, 0.5
+	armor = list("melee" = 60, "bullet" = 60, "laser" = 45, "energy" = 20, "bomb" = 35, "bio" = 30, "rad" = 20, "fire" = 35, "acid" = 0, "wound" = 40)
+
+/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d/raider
+	name = "salvaged raider power armor"
+	desc = "A salvaged set of T-45d power armor, which has been brought back to life with the help of a welder and lots of scrap metal."
+	icon_state = "raider_salvaged"
+	item_state = "raider_salvaged"
+
+/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d/hotrod
+	name = "salvaged hotrod power armor"
+	desc = "A salvaged set of T-45d power armor, with a with some of its plating removed. This set has exhaust pipes piped to the pauldrons, flames erupting from them."
+	icon_state = "t45hotrod"
+	item_state = "t45hotrod"
+
+/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d/tribal
+	name = "salvaged tribal power armor"
+	desc = "A salvaged set of T-45d power armor, with certain bits of plating stripped out to retain more freedom of movement. No cooling module, though."
+	icon_state = "tribal_power_armor"
+	item_state = "tribal_power_armor"
+	mutantrace_variation = STYLE_DIGITIGRADE
+	armor = list("melee" = 60, "bullet" = 55, "laser" = 45, "energy" = 15, "bomb" = 35, "bio" = 30, "rad" = 20, "fire" = 35, "acid" = 0, "wound" = 35)
+	slowdown = 0.3		//0.35 with armor
 
 // T-51B
 /obj/item/clothing/suit/armored/heavy/salvaged_pa/t51b
