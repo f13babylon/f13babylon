@@ -339,10 +339,6 @@
 		"NCR Off-Duty",
 	)
 
-/datum/gear/head/ncr_beret/sapper
-	name = "NCR sapper beret"
-	path = /obj/item/clothing/head/f13/ncr/beret/sapper
-
 /datum/gear/head/ncr_beret/medical
 	name = "NCR medical beret"
 	path = /obj/item/clothing/head/f13/ncr/beret/medic
@@ -350,6 +346,32 @@
 	restricted_roles = list(
 		"NCR Combat Medic",
 		"NCR Medical Officer",
+	)
+
+/datum/gear/head/ncr_beret/sapper
+	name = "NCR sapper beret"
+	path = /obj/item/clothing/head/f13/ncr/beret/sapper
+	cost = 4
+	restricted_desc = "NCR Combat Engineer"
+	restricted_roles = list(
+		"NCR Combat Engineer",
+	)
+
+/datum/gear/head/ncr_beret/1strecon
+	name = "NCR 1st Recon beret"
+	path = /obj/item/clothing/head/helmet/f13/ncr/1strecon
+	cost = 4
+	restricted_desc = "NCR Corporal and above (Combat Roles)"
+	restricted_roles = list(
+		"NCR Captain",
+		"NCR Lieutenant",
+		"NCR Veteran Ranger",
+		"NCR Ranger",
+		"NCR Heavy Trooper",
+		"NCR Sergeant",
+		"NCR Combat Engineer",
+		"NCR Combat Medic",
+		"NCR Corporal",
 	)
 
 /datum/gear/head/steelpot_gambler

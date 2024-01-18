@@ -54,16 +54,16 @@
 /obj/item/modkit/custom_excess
 	name = "champion of kanab's armor modkit"
 	target_items = list(/obj/item/clothing/suit/armor/f13/legion/centurion,
-						/obj/item/clothing/suit/armor/f13/legion/rangercent,
-						/obj/item/clothing/suit/armor/f13/legion/palacent)
-	result_item = /obj/item/clothing/suit/armor/f13/legion/palacent/custom_excess
+						/obj/item/clothing/suit/armor/f13/legion/centurion/rangerhunter,
+						/obj/item/clothing/suit/armor/f13/legion/centurion/paladinslayer)
+	result_item = /obj/item/clothing/suit/armor/f13/legion/centurion/paladinslayer/custom_excess
 
 /obj/item/modkit/custom_excess_helmet
 	name = "champion of kanab's helm modkit"
 	target_items = list(/obj/item/clothing/head/helmet/f13/legion/centurion,
-						/obj/item/clothing/head/helmet/f13/legion/rangercent,
-						/obj/item/clothing/head/helmet/f13/legion/palacent)
-	result_item = /obj/item/clothing/head/helmet/f13/legion/palacent/custom_excess
+						/obj/item/clothing/head/helmet/f13/legion/centurion/rangerhunter,
+						/obj/item/clothing/head/helmet/f13/legion/centurion/paladinslayer)
+	result_item = /obj/item/clothing/head/helmet/f13/legion/centurion/paladinslayer/custom_excess
 */
 
 /obj/item/modkit/piper_hat

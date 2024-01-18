@@ -124,7 +124,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Legate"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13legate
 	shoes =	/obj/item/clothing/shoes/f13/military/legate
-	suit = /obj/item/clothing/suit/armor/f13/legion/legate
+	suit = /obj/item/clothing/suit/armor/f13/legion/centurion/legate
 	head = /obj/item/clothing/head/helmet/f13/legion/legate
 	gloves = /obj/item/clothing/gloves/legion/legate
 	glasses = /obj/item/clothing/glasses/sunglasses/big
@@ -158,8 +158,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13orator
 	name = "Orator"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13orator
-	suit = /obj/item/clothing/suit/armor/f13/legion/orator
-	head = /obj/item/clothing/head/helmet/f13/legion/orator
+	suit = /obj/item/clothing/suit/f13/legion/orator
+	head = /obj/item/clothing/head/f13/legion/orator
 	ears = /obj/item/radio/headset/headset_legion
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	neck = /obj/item/storage/belt/holster
@@ -205,7 +205,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Priestess of Mars"
 	jobtype = /datum/job/CaesarsLegion/f13priestess
 	uniform = /obj/item/clothing/under/f13/pmarsrobe
-	head = /obj/item/clothing/head/helmet/f13/legion/orator
+	head = /obj/item/clothing/head/f13/legion/orator
 	ears = /obj/item/radio/headset/headset_legion
 	shoes = /obj/item/clothing/shoes/roman
 	id = /obj/item/card/id/dogtag/legpriest
@@ -303,8 +303,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/loadout/palacent
 	name = "Paladin-Slayer Centurion"
-	suit = /obj/item/clothing/suit/armor/f13/legion/palacent
-	head = /obj/item/clothing/head/helmet/f13/legion/palacent
+	suit = /obj/item/clothing/suit/armor/f13/legion/centurion/paladinslayer
+	head = /obj/item/clothing/head/helmet/f13/legion/centurion/paladinslayer
 	neck = /obj/item/clothing/neck/mantle/legion
 	suit_store = /obj/item/gun/ballistic/automatic/lmg/m1919
 	backpack_contents = list(
@@ -314,8 +314,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/loadout/rangerhunter
 	name = "Ranger-Hunter Centurion"
-	suit = /obj/item/clothing/suit/armor/f13/legion/rangercent
-	head = /obj/item/clothing/head/helmet/f13/legion/rangercent
+	suit = /obj/item/clothing/suit/armor/f13/legion/centurion/rangerhunter
+	head = /obj/item/clothing/head/helmet/f13/legion/centurion/rangerhunter
 	neck = /obj/item/clothing/neck/mantle/legion/rangercent
 	suit_store = /obj/item/gun/ballistic/rifle/mag/antimateriel
 	backpack_contents = list(
@@ -384,7 +384,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Legion Veteran Decanus"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13decanvet
 	id = /obj/item/card/id/dogtag/legveteran
-	suit = /obj/item/clothing/suit/armor/f13/legion/heavy
+	suit = /obj/item/clothing/suit/armor/f13/legion/veteran/decanus
 	mask = /obj/item/clothing/mask/bandana/legion/legdecan
 	neck = /obj/item/storage/belt/holster
 	gloves = /obj/item/clothing/gloves/legion/plated
@@ -402,7 +402,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/loadout/decvetbull
 	name = "Mark of The Bull"
-	head = /obj/item/clothing/head/helmet/f13/legion/vet/decan
+	head = /obj/item/clothing/head/helmet/f13/legion/veteran/decanus
 	suit_store = /obj/item/gun/ballistic/automatic/lmg/type88
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/type88 = 1,
@@ -413,7 +413,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/loadout/decvetwolf
 	name = "Mark of the Wolf"
-	head = /obj/item/clothing/head/helmet/f13/legion/vet/decan
+	head = /obj/item/clothing/head/helmet/f13/legion/veteran/decanus
 	suit_store = /obj/item/twohanded/thermic_lance
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/smg/smg10mm = 1,
@@ -423,7 +423,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/loadout/decvetsnake
 	name = "Mark of the Snake"
-	head = /obj/item/clothing/head/helmet/f13/legion/vet/decan
+	head = /obj/item/clothing/head/helmet/f13/legion/veteran/decanus
 	suit_store = /obj/item/gun/ballistic/rifle/repeater/brush
 	backpack_contents = list(
 		/obj/item/melee/onehanded/machete/spatha = 1,
@@ -433,7 +433,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/loadout/decvetbrave
 	name = "Mark of the Brave"
-	head = /obj/item/clothing/head/helmet/f13/legion/vet/decan
+	head = /obj/item/clothing/head/helmet/f13/legion/veteran/decanus
 	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/ballisticfist = 1,
@@ -485,8 +485,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Prime Decanus"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13decan
 	id = /obj/item/card/id/dogtag/legveteran
-	suit = /obj/item/clothing/suit/armor/f13/legion/prime/decan
-	head = /obj/item/clothing/head/helmet/f13/legion/prime/decan
+	suit = /obj/item/clothing/suit/armor/f13/legion/prime/decanus
+	head = /obj/item/clothing/head/helmet/f13/legion/prime/decanus
 	mask = /obj/item/clothing/mask/bandana/legion/legdecan
 	neck = /obj/item/storage/belt/holster
 	glasses = /obj/item/clothing/glasses/legiongoggles
@@ -570,8 +570,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Legion Recruit Decanus"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13decanrec
 	id = /obj/item/card/id/dogtag/legveteran
-	suit = /obj/item/clothing/suit/armor/f13/legion/recruit/decan
-	head = /obj/item/clothing/head/helmet/f13/legion/recruit/decan
+	suit = /obj/item/clothing/suit/armor/f13/legion/recruit/decanus
+	head = /obj/item/clothing/head/helmet/f13/legion/recruit/decanus
 	mask = /obj/item/clothing/mask/bandana/legion/legdecan
 	neck = /obj/item/storage/belt/holster
 	glasses = /obj/item/clothing/glasses/legiongoggles
@@ -654,7 +654,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Vexillarius"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13vexillarius
 	id = /obj/item/card/id/dogtag/legveteran
-	suit = /obj/item/clothing/suit/armor/f13/legion/vet/vexil
+	suit = /obj/item/clothing/suit/armor/f13/legion/veteran/vexillarius
 	mask = /obj/item/clothing/mask/bandana/legion/legvet
 	neck = /obj/item/storage/belt/holster
 	glasses = /obj/item/clothing/glasses/sunglasses
@@ -670,7 +670,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/loadout/vexbear
 	name = "Mountain Bear"
-	head = /obj/item/clothing/head/helmet/f13/legion/vet/combvexil
+	head = /obj/item/clothing/head/helmet/f13/legion/veteran/vexillarius/bear
 	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck = 2,
@@ -681,7 +681,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/loadout/vexfox
 	name = "Desert Fox"
-	head = /obj/item/clothing/head/helmet/f13/legion/vet/vexil
+	head = /obj/item/clothing/head/helmet/f13/legion/veteran/vexillarius
 	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle/type93
 	backpack_contents = list(
 		/obj/item/melee/onehanded/machete/spatha = 1,
@@ -731,8 +731,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Legion Explorer"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13explorer
 	id = /obj/item/card/id/dogtag/legexplorer
-	suit = /obj/item/clothing/suit/armor/f13/legion/vet/explorer
-	head = /obj/item/clothing/head/helmet/f13/legion/vet/explorer
+	suit = /obj/item/clothing/suit/armor/f13/legion/prime/explorer
+	head = /obj/item/clothing/head/helmet/f13/legion/prime/explorer
 	neck = /obj/item/storage/belt/holster
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	r_pocket = /obj/item/flashlight
@@ -818,9 +818,9 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/vetlegionnaire
 	id = /obj/item/card/id/dogtag/legveteran
 	mask = /obj/item/clothing/mask/bandana/legion/legvet
-	head = /obj/item/clothing/head/helmet/f13/legion/vet
+	head = /obj/item/clothing/head/helmet/f13/legion/veteran
 	neck = /obj/item/storage/belt/holster
-	suit = /obj/item/clothing/suit/armor/f13/legion/vet
+	suit = /obj/item/clothing/suit/armor/f13/legion/veteran
 	glasses = /obj/item/clothing/glasses/sunglasses
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	r_pocket = /obj/item/flashlight/lantern
@@ -1179,7 +1179,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/outfit/loadout/auxassist
 	name = "Treasurer"
 	neck = /obj/item/clothing/neck/mantle/treasurer
-	head = /obj/item/clothing/head/f13/auxilia
+	head = /obj/item/clothing/head/f13/legion/auxilia
 	shoes = /obj/item/clothing/shoes/roman
 	ears = /obj/item/radio/headset/headset_legion
 	backpack_contents = list(
@@ -1195,7 +1195,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	neck = /obj/item/clothing/neck/apron/medicus
 	gloves = /obj/item/clothing/gloves/f13/crudemedical
 	belt = /obj/item/storage/belt/medical/primitive
-	head = /obj/item/clothing/head/f13/auxilia
+	head = /obj/item/clothing/head/f13/legion/auxilia
 	shoes = /obj/item/clothing/shoes/roman
 	ears = /obj/item/radio/headset/headset_legion
 	backpack_contents = list(
@@ -1208,7 +1208,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/outfit/loadout/auxopifex
 	name = "Opifex (Artisan)"
 	neck = /obj/item/clothing/neck/apron/labor/forge
-	head = /obj/item/clothing/head/f13/auxilia
+	head = /obj/item/clothing/head/f13/legion/auxilia
 	shoes = /obj/item/clothing/shoes/roman
 	ears = /obj/item/radio/headset/headset_legion
 	gloves = /obj/item/clothing/gloves/legion/forgemaster
@@ -1291,7 +1291,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 //Servants cook, clean, help with medical tasks.
 /datum/outfit/loadout/slaveservant
 	name = "Servant"
-	head = /obj/item/clothing/head/f13/servant
+	head = /obj/item/clothing/head/f13/legion/auxilia/servant
 	uniform	= /obj/item/clothing/under/f13/campfollowermale
 	gloves = /obj/item/clothing/gloves/f13/crudemedical
 	shoes =	/obj/item/clothing/shoes/roman
@@ -1311,7 +1311,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 //Laborers farm and mine.
 /datum/outfit/loadout/slaveworker
 	name = "Worker"
-	suit = /obj/item/clothing/suit/armor/f13/slavelabor
+	suit = /obj/item/clothing/suit/f13/legion/servant
 	uniform = /obj/item/clothing/under/f13/legslave
 	shoes =	/obj/item/clothing/shoes/f13/rag
 	r_hand = /obj/item/flashlight/flare/torch
