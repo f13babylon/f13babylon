@@ -226,7 +226,7 @@
 	desc = "A dark helmet with yellow lenses, used commonly in espionage or shadow ops."
 	icon_state = "remnant_helmet"
 	item_state = "remnant_helmet"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 20, "bomb" = 25, "bio" = 15, "rad" = 15, "fire" = 60, "acid" = 20, "wound" = 25)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 25)
 
 // Lieutenant's hat
 /obj/item/clothing/head/helmet/f13/enclave/officer

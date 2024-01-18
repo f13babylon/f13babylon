@@ -54,7 +54,7 @@
 	icon_state = "combat_helmet"
 	item_state = "combat_helmet"
 	flags_inv = HIDEEARS|HIDEHAIR
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 0, "wound" = 20)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10, "wound" = 20)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 5)
 
 /obj/item/clothing/head/helmet/f13/combat/dark
@@ -74,7 +74,7 @@
 	desc = "An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms."
 	icon_state = "combat_helmet_mk2"
 	item_state = "combat_helmet_mk2"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 25)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 20, "wound" = 25)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
 	flags_cover = HEADCOVERSEYES
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10)
@@ -88,7 +88,7 @@
 	desc = "A reinforced combat helmet painted black with the laser designator removed."
 	icon_state = "combat_helmet_raider"
 	item_state = "combat_helmet_raider"
-	armor = list("melee" = 50, "bullet" = 45, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 20, "acid" = 0, "wound" = 20)
+	armor = list("melee" = 50, "bullet" = 45, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 0, "wound" = 20)
 
 /obj/item/clothing/head/helmet/f13/combat/rangerbroken
 	name = "broken riot helmet"
@@ -105,14 +105,14 @@
 	desc = "A prewar combat helmet issued to S.W.A.T. personnel."
 	icon_state = "swatsyndie"
 	item_state = "swatsyndie"
-	armor = list("melee" = 50, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 25)
+	armor = list("melee" = 50, "bullet" = 40, "laser" = 40, "energy" = 15, "bomb" = 20, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 0, "wound" = 20)
 
 /obj/item/clothing/head/helmet/f13/combat/environmental
 	name = "environmental armor helmet"
 	desc = "A full head helmet and gas mask, developed for use in heavily contaminated environments."
 	icon_state = "env_helmet"
 	item_state = "env_helmet"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 80, "rad" = 80, "fire" = 20, "acid" = 50, "wound" = 20)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 80, "rad" = 80, "fire" = 60, "acid" = 60, "wound" = 20)
 	strip_delay = 60
 	equip_delay_other = 60
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
@@ -128,8 +128,8 @@
 	desc = "A sulphite raider helmet, affixed with thick anti-ballistic glass over the eyes."
 	icon_state = "sulphite_helm"
 	item_state = "sulphite_helm"
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 55, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 25)
-	slowdown = 0.05
+	armor = list("melee" = 40, "bullet" = 45, "laser" = 55, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 0, "wound" = 30)
+	slowdown = 0.02
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 
@@ -141,21 +141,23 @@
 	icon_state = "metalhelmet"
 	item_state = "metalhelmet"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 50, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 25)
-	slowdown = 0.05
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 50, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 20)
+	slowdown = 0.02
 
 /obj/item/clothing/head/helmet/knight/f13/metal/reinforced
 	name = "reinforced metal helmet"
 	icon_state = "metalhelmet_r"
 	item_state = "metalhelmet_r"
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 55, "energy" = 15, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 35, "acid" = 0, "wound" = 35)
-	slowdown = 0.05
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 55, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 25)
+	slowdown = 0.02
 
 /obj/item/clothing/head/helmet/knight/f13/rider
 	name = "rider helmet" //Not raider. Rider.
 	desc = "It's a fancy dark metal helmet with orange spray painted flames."
 	icon_state = "rider"
 	item_state = "rider"
+	armor = list("melee" = 50, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 20)
+	slowdown = 0.02
 
 /obj/item/clothing/head/helmet/f13/metalmask
 	name = "metal mask"
@@ -165,7 +167,7 @@
 	toggle_message = "You lower"
 	alt_toggle_message = "You raise"
 	can_toggle = 1
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 45, "energy" = 10, "bomb" = 25, "bio" = 10, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 20)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 45, "energy" = 5, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 15)
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDESNOUT|HIDEFACIALHAIR
 	strip_delay = 80
 	actions_types = list(/datum/action/item_action/toggle)
@@ -188,7 +190,7 @@
 	desc = "A reinforced metal hockey mask."
 	icon_state = "metal_mask2"
 	item_state = "metal_mask2"
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 50, "energy" = 15, "bomb" = 30, "bio" = 20, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 25)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 50, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 20)
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDESNOUT|HIDEFACIALHAIR
 
 // /obj/item/clothing/head/helmet/f13/tesla
@@ -591,7 +593,7 @@
 	force = 20
 	hitsound = 'sound/items/trayhit1.ogg'
 	flags_inv = HIDEHAIR
-	armor = list("melee" = 25, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 30, "bullet" = 20, "laser" = 10, "energy" = 0, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 15)
 
 /obj/item/clothing/head/f13/cowboy
 	name = "cowboy hat"
@@ -645,7 +647,7 @@
 	icon_state = "firefighter"
 	item_state = "firefighter"
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
-	armor = list("melee" = 20, "bullet" = 15, "laser" = 20, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 20, "bullet" = 15, "laser" = 20, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 0, "wound" = 10)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
@@ -662,6 +664,10 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
 
+/obj/item/clothing/head/helmet/f13/vaquerohat/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
 /obj/item/clothing/head/helmet/f13/wastewarhat
 	name = "warrior helmet"
 	desc = "It might have been a cooking pot once, now its a helmet, with a piece of cloth covering the neck from the sun."
@@ -669,16 +675,15 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/helmet.dmi'
 	icon_state = "wastewar"
 	item_state = "wastewar"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 5, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 20)
+	armor = list("melee" = 35, "bullet" = 25, "laser" = 15, "energy" = 5, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 20)
 	flags_inv = HIDEEARS|HIDEHAIR
-	slowdown = 0.02
 
 /obj/item/clothing/head/helmet/f13/hoodedmask
 	name = "hooded mask"
 	desc = "A gask mask with the addition of a hood."
 	icon_state = "Hooded_Gas_Mask"
 	item_state = "Hooded_Gas_Mask"
-	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 60, "rad" = 40, "fire" = 40, "acid" = 20, "wound" = 10)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
@@ -715,6 +720,10 @@
 	flags_inv = HIDEHAIR
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
 
+/obj/item/clothing/head/f13/police/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
 /obj/item/clothing/head/simplekitty
 	name = "kitty headband"
 	desc = "A headband with a pair of cute kitty ears."
@@ -727,7 +736,8 @@
 	desc = "It's a fancy two-tone metal helmet. It's been lined with additional plating and given a fresh coat of paint."
 	icon_state = "riderw"
 	item_state = "riderw"
-	armor = list("melee" = 55, "bullet" = 35, "laser" = 35, "energy" = 15, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 55, "bullet" = 45, "laser" = 45, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 25)
+	slowdown = 0.02
 
 /obj/item/clothing/head/welding/f13/fire
 	name = "cremator welding helmet"
@@ -816,8 +826,7 @@
 	desc = "An intimidating tribal helmet reinforced with leather and cloth parts on the inside for more comfort, while styling it on the Bone dancers way."
 	flags_inv = HIDEEARS|HIDEFACE
 	flags_cover = HEADCOVERSEYES
-	armor = list("melee" = 60, "bullet" = 25, "laser" = 25, "energy" = 5, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 20, "acid" = 0, "wound" = 20)
-	slowdown = 0.02
+	armor = list("melee" = 50, "bullet" = 25, "laser" = 35, "energy" = 5, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 20)
 	icon_state = "bone_dancer_helmet"
 	item_state = "bone_dancer_helmet"
 	strip_delay = 100
