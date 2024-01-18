@@ -142,7 +142,7 @@
 		/obj/item/reagent_containers/food/snacks/peanut_buttertoast = 1,
 	)
 
-/datum/crafting_recipe/peanutbutter_sandwich
+/datum/crafting_recipe/food/peanutbutter_sandwich
 	name = "Peanut butter sandwich"
 	reqs = list(
 		/datum/reagent/consumable/peanut_butter = 5,

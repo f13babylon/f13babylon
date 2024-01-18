@@ -56,7 +56,8 @@
 		/obj/item/reagent_containers/food/drinks/bottle = 1,
 		)
 	time = 60
-	category = CAT_AMMO
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 
 /datum/crafting_recipe/explosive/firebomb
 	name = "Firebomb"
