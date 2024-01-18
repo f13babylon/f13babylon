@@ -323,21 +323,21 @@
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
-/obj/item/clothing/head/helmet/f13/legion/recruit
+/obj/item/clothing/head/helmet/f13/legion/recruit			//Legion Recruit helmet
 	name = "legion recruit helmet"
 	desc = "It's a leather skullcap issued to recruits."
 	icon_state = "legion-recruit"
 	item_state = "legion-recruit"
 	armor = list("melee" = 30, "bullet" = 20, "laser" = 10, "energy" = 0, "bomb" = 15, "bio" = 30, "rad" = 20, "fire" = 15, "acid" = 0, "wound" = 15)
 
-/obj/item/clothing/head/helmet/f13/legion/recruit/decanus
+/obj/item/clothing/head/helmet/f13/legion/recruit/decanus	//Legion Recruit Decanus helmet
 	name = "legion recruit decanus helmet"
 	desc = "This reinforced leather helmet has a plume of black and dark red feathers."
 	icon_state = "legion-decrec"
 	item_state = "legion-decrec"
 	armor = list("melee" = 30, "bullet" = 25, "laser" = 10, "energy" = 0, "bomb" = 15, "bio" = 30, "rad" = 20, "fire" = 15, "acid" = 0, "wound" = 20)
 
-/obj/item/clothing/head/helmet/f13/legion/prime
+/obj/item/clothing/head/helmet/f13/legion/prime				//Legion Prime helmet
 	name = "legion prime helmet"
 	desc = "A helmet from reinforced leather with a red peak."
 	item_state = "legion-prime"
@@ -345,21 +345,21 @@
 	armor = list("melee" = 35, "bullet" = 25, "laser" = 15, "energy" = 5, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 20, "acid" = 0, "wound" = 20)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
 
-/obj/item/clothing/head/helmet/f13/legion/prime/explorer
+/obj/item/clothing/head/helmet/f13/legion/prime/explorer	//Legion Explorer helmet
 	name = "legion scout hood"
 	desc = "It's a leather hood with metal reinforcments and built in headphones to plug the radio into."
 	icon_state = "legion-explorer"
 	item_state = "legion-explorer"
 	armor = list("melee" = 30, "bullet" = 25, "laser" = 10, "energy" = 5, "bomb" = 15, "bio" = 30, "rad" = 20, "fire" = 15, "acid" = 0, "wound" = 20)
 
-/obj/item/clothing/head/helmet/f13/legion/prime/decanus
+/obj/item/clothing/head/helmet/f13/legion/prime/decanus		//Legion Prime Decanus helmet
 	name = "legion prime decanus helmet"
 	desc = "This reinforced leather helmet with a red peak has a plume of black feathers."
 	item_state = "legion-decprime"
 	icon_state = "legion-decprime"
 	armor = list("melee" = 35, "bullet" = 30, "laser" = 15, "energy" = 5, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 20, "acid" = 0, "wound" = 25)
 
-/obj/item/clothing/head/helmet/f13/legion/veteran
+/obj/item/clothing/head/helmet/f13/legion/veteran			//Legion Veteran helmet
 	name = "legion veteran helmet"
 	desc = "It's a metal legion veteran helmet, clearly inspired by old world sports uniforms."
 	icon_state = "legion-veteran"
@@ -367,7 +367,7 @@
 	armor = list("melee" = 45, "bullet" = 35, "laser" = 25, "energy" = 5, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 30)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 6)
 
-/obj/item/clothing/head/helmet/f13/legion/veteran/vexillarius
+/obj/item/clothing/head/helmet/f13/legion/veteran/vexillarius	//Legion Vexillarius helmet
 	name = "legion fox vexillarius helmet"
 	desc = "This helmet is decorated with the pelt of a desert fox."
 	icon_state = "legion-vex-alt"
@@ -388,7 +388,7 @@
 	item_state = "legion-vex-night"
 
 //LEADERSHIP ROLES
-/obj/item/clothing/head/helmet/f13/legion/veteran/decanus
+/obj/item/clothing/head/helmet/f13/legion/veteran/decanus		//Legion Veteran Decanus helmet
 	name = "legion veteran decanus helmet"
 	desc = "It's a metal helmet with an array of red, white and black feathers, unmistakably a Veteran Decanus."
 	icon_state = "legion-decvet-alt"
@@ -408,7 +408,7 @@
 	icon_state = "legion-decvetup"
 	item_state = "legion-decvetup"
 
-/obj/item/clothing/head/helmet/f13/legion/centurion
+/obj/item/clothing/head/helmet/f13/legion/centurion					//Legion Centurion armor
 	name = "legion centurion helmet"
 	desc = "A sturdy helmet from steel and brass with a red horizontal plume."
 	icon_state = "legion-centurion"
@@ -416,14 +416,7 @@
 	armor = list("melee" = 55, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 35, "bio" = 30, "rad" = 20, "fire" = 35, "acid" = 45, "wound" = 40)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10)
 
-/obj/item/clothing/head/helmet/f13/legion/centurion/rangerhunter
-	name = "ranger-hunter centurion helmet"
-	desc = "The helmet of an NCR ranger, refit to serve as a Centurions helmet."
-	icon_state = "legion-rangercent"
-	item_state = "legion-rangercent"
-	armor = list("melee" = 35, "bullet" = 45, "laser" = 30, "energy" = 15, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
-
-/obj/item/clothing/head/helmet/f13/legion/centurion/paladinslayer
+/obj/item/clothing/head/helmet/f13/legion/centurion/paladinslayer	//Legion Centurion armor, Paladin-Slayer loadout
 	name = "paladin-slayer centurion helmet"
 	desc = "The once-marvelous helmet of the T-45d power armor set, repurposed by the Legion into a symbol of its might. It has a large plume of red horse hair across the top of it going horizontally, donoting the rank of Centurion."
 	icon_state = "legion-palacent"
@@ -433,7 +426,14 @@
 	armor = list("melee" = 45, "bullet" = 40, "laser" = 50, "energy" = 20, "bomb" = 35, "bio" = 30, "rad" = 20, "fire" = 35, "acid" = 0, "wound" = 45)
 	slowdown = 0.05		//0.25 with armor
 
-/obj/item/clothing/head/helmet/f13/legion/legate
+/obj/item/clothing/head/helmet/f13/legion/centurion/rangerhunter	//Legion Centurion armor, Ranger-Hunter loadout
+	name = "ranger-hunter centurion helmet"
+	desc = "The helmet of an NCR ranger, refit to serve as a Centurions helmet."
+	icon_state = "legion-rangercent"
+	item_state = "legion-rangercent"
+	armor = list("melee" = 35, "bullet" = 45, "laser" = 30, "energy" = 15, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
+
+/obj/item/clothing/head/helmet/f13/legion/legate					//Legion Legate helmet
 	name = "legion legate helmet"
 	desc = "A custom forged steel full helmet complete with abstract points and arches. The face is extremely intimidating, as it was meant to be. This particular one was ordered to be forged by Caesar, given to his second legate in exchange for his undying loyalty to Caesar."
 	icon_state = "legion-legate"
