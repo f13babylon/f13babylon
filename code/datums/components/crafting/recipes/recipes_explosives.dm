@@ -3,7 +3,8 @@
 	result = /obj/item/stack/ore/blackpowder
 	time = 5
 	reqs = list(/datum/reagent/blackpowder = 50)
-	category = CAT_EXPLOSIVE
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 
 /datum/crafting_recipe/explosive/explosive_collar
 	name = "Explosive Collar"
@@ -13,7 +14,8 @@
 				/obj/item/stack/cable_coil = 1,
 				/obj/item/assembly/igniter = 1,)
 	time = 120
-	category = CAT_EXPLOSIVE
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 
 /datum/crafting_recipe/chemical_payload
 	name = "Chemical Payload (C4)"
@@ -25,7 +27,8 @@
 		/obj/item/stack/sheet/glass = 6,
 	)
 	time = 60
-	category = CAT_EXPLOSIVE
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 	granting_trait = TRAIT_ADVANCED_EXPLOSIVE_CRAFTING
 
@@ -41,7 +44,8 @@
 				/obj/item/assembly/igniter = 1,
 				/obj/item/assembly/timer = 1)
 	time = 60
-	subcategory = CAT_EXPLOSIVE
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 	granting_trait = TRAIT_ADVANCED_EXPLOSIVE_CRAFTING
 
@@ -52,7 +56,7 @@
 		/obj/item/reagent_containers/food/drinks/bottle = 1,
 		)
 	time = 60
-	category = CAT_EXPLOSIVE
+	category = CAT_AMMO
 
 /datum/crafting_recipe/explosive/firebomb
 	name = "Firebomb"
@@ -62,7 +66,8 @@
 				/obj/item/assembly/igniter = 1,
 				/obj/item/reagent_containers/food/drinks/flask = 1)
 	time = 60
-	category = CAT_EXPLOSIVE
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 
 /datum/crafting_recipe/explosive/coffeepotbomb
 	name = "Coffeepot Bomb"
@@ -72,7 +77,8 @@
 				/obj/item/stack/cable_coil = 1,
 				/obj/item/assembly/timer = 1)
 	time = 120
-	category = CAT_EXPLOSIVE
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 
 /datum/crafting_recipe/explosive/pipebomb
 	name = "Pipebomb"
@@ -83,7 +89,8 @@
 				/obj/item/stack/cable_coil = 1,
 				/obj/item/stack/sheet/cloth = 1)
 	time = 70
-	category = CAT_EXPLOSIVE
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 
 /datum/crafting_recipe/explosive/dynamite
 	name = "Dynamite Stick"
@@ -93,7 +100,8 @@
 				/obj/item/stack/cable_coil = 1,
 				/obj/item/stack/sheet/cloth = 5)
 	time = 60
-	subcategory = CAT_EXPLOSIVE
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 
 /datum/crafting_recipe/explosive/bottlecap_mine
@@ -105,7 +113,8 @@
 			/obj/item/stack/cable_coil = 5,
 			/obj/item/stack/f13Cash/caps = 200)
 	time = 150
-	category = CAT_EXPLOSIVE
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 
 /datum/crafting_recipe/explosive/shrapnelmine
 	name = "Shrapnel Mine"
@@ -117,7 +126,8 @@
 			/obj/item/assembly/prox_sensor = 1,
 			/obj/item/stack/cable_coil = 5)
 	time = 120
-	category = CAT_EXPLOSIVE
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 
 /datum/crafting_recipe/explosive/explomine
@@ -132,7 +142,8 @@
 			/obj/item/stack/cable_coil = 5
 	)
 	time = 120
-	category = CAT_EXPLOSIVE
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 
 /datum/crafting_recipe/explosive/stingmine
@@ -147,7 +158,8 @@
 			/obj/item/stack/cable_coil = 5
 	)
 	time = 120
-	category = CAT_EXPLOSIVE
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 
 /datum/crafting_recipe/explosive/pulsemine
@@ -161,7 +173,8 @@
 			/obj/item/stack/cable_coil = 30
 	)
 	time = 150
-	category = CAT_EXPLOSIVE
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 
 /datum/crafting_recipe/explosive/stunmine
@@ -174,7 +187,8 @@
 			/obj/item/stack/cable_coil = 5
 	)
 	time = 80
-	category = CAT_EXPLOSIVE
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 
 
@@ -186,12 +200,12 @@
 	parts = list(/obj/item/twohanded/spear = 1,
 				/obj/item/grenade = 1)
 	time = 15
-	category = CAT_EXPLOSIVE
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 
 /datum/crafting_recipe/concussion
 	name = "High Explosive Grenade" //this one has no shrapnel
 	result = /obj/item/grenade/f13/he_grenade
-	category = CAT_EXPLOSIVE
 	reqs = list(
 			/obj/item/stack/sheet/metal = 10,
 			/obj/item/stack/crafting/metalparts = 5,
@@ -203,13 +217,14 @@
 	)
 	tools = list(TOOL_AWORKBENCH)
 	time = 60
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 	granting_trait = TRAIT_ADVANCED_EXPLOSIVE_CRAFTING
 
 /datum/crafting_recipe/frag_shrapnel
 	name = "Fragmentation Grenade"
 	result = /obj/item/grenade/f13/frag
-	category = CAT_EXPLOSIVE
 	reqs = list(
 			/obj/item/stack/sheet/metal = 10,
 			/obj/item/stack/crafting/metalparts = 2,
@@ -221,13 +236,14 @@
 	)
 	tools = list(TOOL_AWORKBENCH)
 	time = 60
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
 
 /datum/crafting_recipe/incendiary
 	name = "Incendiary Grenade"
 	result = /obj/item/grenade/f13/incendiary
-	category = CAT_EXPLOSIVE
 	reqs = list(
 			/obj/item/stack/sheet/metal = 20,
 			/obj/item/stack/crafting/metalparts = 15,
@@ -239,13 +255,14 @@
 	)
 	tools = list(TOOL_AWORKBENCH)
 	time = 60
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 	granting_trait = TRAIT_ADVANCED_EXPLOSIVE_CRAFTING
 
 /datum/crafting_recipe/stinger
 	name = "Stinger Grenade"
 	result = /obj/item/grenade/f13/stinger
-	category = CAT_EXPLOSIVE
 	reqs = list(
 			/obj/item/stack/sheet/metal = 5,
 			/obj/item/stack/crafting/metalparts = 3,
@@ -256,13 +273,14 @@
 	)
 	tools = list(TOOL_AWORKBENCH)
 	time = 60
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
 
 /datum/crafting_recipe/radgrenade
 	name = "Radiation Grenade"
 	result = /obj/item/grenade/f13/radiation
-	category = CAT_EXPLOSIVE
 	reqs = list(
 			/obj/item/stack/sheet/metal = 20,
 			/obj/item/stack/crafting/metalparts = 10,
@@ -275,13 +293,14 @@
 	)
 	tools = list(TOOL_AWORKBENCH)
 	time = 60
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 	granting_trait = TRAIT_ADVANCED_EXPLOSIVE_CRAFTING
 
 /datum/crafting_recipe/flashbang
 	name = "Flashbang"
 	result = /obj/item/grenade/flashbang
-	category = CAT_EXPLOSIVE
 	reqs = list(
 			/obj/item/stack/sheet/metal = 10,
 			/obj/item/stack/crafting/metalparts = 3,
@@ -292,13 +311,14 @@
 	)
 	tools = list(TOOL_AWORKBENCH)
 	time = 40
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
 
 /datum/crafting_recipe/smokebomb
 	name = "Smokebomb"
 	result = /obj/item/grenade/smokebomb
-	category = CAT_EXPLOSIVE
 	reqs = list(
 			/obj/item/stack/sheet/metal = 10,
 			/obj/item/stack/crafting/metalparts = 5,
@@ -309,13 +329,14 @@
 	)
 	tools = list(TOOL_AWORKBENCH)
 	time = 40
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
 
 /datum/crafting_recipe/empgrenade
 	name = "Pulse Grenade"
 	result = /obj/item/grenade/empgrenade
-	category = CAT_EXPLOSIVE
 	reqs = list(
 			/obj/item/stack/sheet/metal = 20,
 			/obj/item/stack/crafting/metalparts = 10,
@@ -326,13 +347,14 @@
 	)
 	tools = list(TOOL_AWORKBENCH)
 	time = 80
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 	granting_trait = TRAIT_ADVANCED_EXPLOSIVE_CRAFTING
 
 /datum/crafting_recipe/rocket_base
 	name = "Empty rocket shell"
 	result = /obj/item/rocketshell
-	category = CAT_EXPLOSIVE
 	reqs = list(
 				/obj/item/stack/sheet/metal = 10,
 				/obj/item/stack/crafting/metalparts = 8,
@@ -343,12 +365,13 @@
 	)
 	tools = list(TOOL_AWORKBENCH)
 	time = 15
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
 
 /datum/crafting_recipe/weakrocket
 	name = "Low-yield HE rocket"
-	category = CAT_EXPLOSIVE
 	result = /obj/item/ammo_casing/caseless/rocket
 	reqs = list(
 		/obj/item/rocketshell = 1,
@@ -358,12 +381,13 @@
 	)
 	tools = list(TOOL_AWORKBENCH)
 	time = 30
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
 
 /datum/crafting_recipe/strongrocket
 	name = "High-yield HE rocket"
-	category = CAT_EXPLOSIVE
 	result = /obj/item/ammo_casing/caseless/rocket/big
 	reqs = list(
 		/obj/item/rocketshell = 1,
@@ -373,11 +397,12 @@
 	)
 	tools = list(TOOL_AWORKBENCH)
 	time = 45
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 
 /datum/crafting_recipe/incendiaryrocket
 	name = "Incendiary rocket"
-	category = CAT_EXPLOSIVE
 	result = /obj/item/ammo_casing/caseless/rocket/incendiary
 	reqs = list(
 		/obj/item/rocketshell = 1,
@@ -388,12 +413,13 @@
 	)
 	tools = list(TOOL_AWORKBENCH)
 	time = 60
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 	granting_trait = TRAIT_ADVANCED_EXPLOSIVE_CRAFTING
 
 /datum/crafting_recipe/chemrocket
 	name = "Chemical rocket"
-	category = CAT_EXPLOSIVE
 	result = /obj/item/ammo_casing/caseless/rocket/chem
 	reqs = list(
 		/obj/item/rocketshell = 1,
@@ -407,12 +433,13 @@
 	)
 	tools = list(TOOL_AWORKBENCH)
 	time = 60
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 	granting_trait = TRAIT_ADVANCED_EXPLOSIVE_CRAFTING
 
 /datum/crafting_recipe/mortar_shell
 	name = "Mortar (HE)"
-	category = CAT_EXPLOSIVE
 	result = /obj/item/mortar_shell
 	reqs = list(
 		/obj/item/rocketshell = 1,
@@ -422,12 +449,13 @@
 	)
 	tools = list(TOOL_AWORKBENCH)
 	time = 60
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 	granting_trait = TRAIT_ADVANCED_EXPLOSIVE_CRAFTING
 
 /datum/crafting_recipe/mortar_shell_wp
 	name = "Mortar (WP)"
-	category = CAT_EXPLOSIVE
 	result = /obj/item/mortar_shell/smoke
 	reqs = list(
 		/obj/item/rocketshell = 1,
@@ -438,12 +466,13 @@
 	)
 	tools = list(TOOL_AWORKBENCH)
 	time = 60
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 	granting_trait = TRAIT_ADVANCED_EXPLOSIVE_CRAFTING
 
 /datum/crafting_recipe/mortar_shell_frag
 	name = "Mortar (FRAG)"
-	category = CAT_EXPLOSIVE
 	result = /obj/item/mortar_shell/frag
 	reqs = list(
 		/obj/item/rocketshell = 1,
@@ -453,12 +482,13 @@
 	)
 	tools = list(TOOL_AWORKBENCH)
 	time = 60
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 	granting_trait = TRAIT_ADVANCED_EXPLOSIVE_CRAFTING
 
 /datum/crafting_recipe/mortar_shell_rad
 	name = "Mortar (CNTM)"
-	category = CAT_EXPLOSIVE
 	result = /obj/item/mortar_shell/rad
 	reqs = list(
 		/obj/item/rocketshell = 1,
@@ -468,5 +498,7 @@
 	)
 	tools = list(TOOL_AWORKBENCH)
 	time = 60
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 	always_available = FALSE
 	granting_trait = TRAIT_ADVANCED_EXPLOSIVE_CRAFTING

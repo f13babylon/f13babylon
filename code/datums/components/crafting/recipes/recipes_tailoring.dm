@@ -546,7 +546,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 15
 	category = CAT_CLOTHING
-	subcategory = CAT_WASTELAND
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/tailor/ncruniform
 	name = "NCR Uniform"
@@ -555,7 +555,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 15
 	category = CAT_CLOTHING
-	subcategory = CAT_WASTELAND
+	subcategory = CAT_GENCLOTHES
 	always_available = FALSE
 /datum/crafting_recipe/tailor/legionuniform
 	name = "Legion Uniform"
@@ -564,7 +564,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 15
 	category = CAT_CLOTHING
-	subcategory = CAT_WASTELAND
+	subcategory = CAT_GENCLOTHES
 	always_available = FALSE
 
 /datum/crafting_recipe/settler
@@ -575,7 +575,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 15
 	category = CAT_CLOTHING
-	subcategory = CAT_WASTELAND
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/merchant
 	name = "Merchant outfit"
@@ -585,7 +585,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 15
 	category = CAT_CLOTHING
-	subcategory = CAT_WASTELAND
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/mercenary
 	name = "Mercenary outfit"
@@ -595,7 +595,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 15
 	category = CAT_CLOTHING
-	subcategory = CAT_WASTELAND
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/cowboyhat
 	name = "Cowboy Hat"
@@ -605,7 +605,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 15
 	category = CAT_CLOTHING
-	subcategory = CAT_WASTELAND
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/cowboyhatrustic
 	name = "Rustic Cowboy Hat"
@@ -615,7 +615,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 15
 	category = CAT_CLOTHING
-	subcategory = CAT_WASTELAND
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/mantle
 	name = "Hide mantle"
@@ -625,7 +625,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 15
 	category = CAT_CLOTHING
-	subcategory = CAT_WASTELAND
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/poncho
 	name = "Poncho"
@@ -635,7 +635,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 15
 	category = CAT_CLOTHING
-	subcategory = CAT_WASTELAND
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/sombrero
 	name = "Sombrero"
@@ -644,7 +644,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 15
 	category = CAT_CLOTHING
-	subcategory = CAT_WASTELAND
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/rag
 	name = "Slave rags"
@@ -652,7 +652,7 @@
 	reqs = list(/obj/item/stack/sheet/cloth = 2)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_WASTELAND
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/cloak
 	name = "Brown cloak"
@@ -661,7 +661,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 25
 	category = CAT_CLOTHING
-	subcategory = CAT_WASTELAND
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/survivalpouch
 	name = "empty survival pouch"
@@ -670,7 +670,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 25
 	category = CAT_CLOTHING
-	subcategory = CAT_WASTELAND
+	subcategory = CAT_GENCLOTHES
 /*
 /datum/crafting_recipe/triplesurvivalpouch
 	name = "empty large survival pouch"
@@ -679,7 +679,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 25
 	category = CAT_CLOTHING
-	subcategory = CAT_WASTELAND
+	subcategory = CAT_GENCLOTHES
 */
 //General clothing
 
@@ -874,7 +874,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 10
 	category = CAT_CLOTHING
-	subcategory = CAT_WASTELAND
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/ncr_facewrap
 	name = "Facewrap"
@@ -883,7 +883,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 10
 	category = CAT_CLOTHING
-	subcategory = CAT_WASTELAND
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/headscarf
 	name = "Headscarf"
@@ -892,7 +892,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_MISCCLOTHING
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/scarf
 	name = "White scarf"
@@ -901,7 +901,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_MISCCLOTHING
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/scarfb
 	name = "Black scarf"
@@ -910,7 +910,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_MISCCLOTHING
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/scarfr
 	name = "Red scarf"
@@ -919,7 +919,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_MISCCLOTHING
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/scarfblu
 	name = "Blue scarf"
@@ -928,7 +928,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_MISCCLOTHING
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/scarfg
 	name = "Green scarf"
@@ -937,7 +937,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_MISCCLOTHING
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/scarfy
 	name = "Yellow scarf"
@@ -946,7 +946,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_MISCCLOTHING
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/scarfpurp
 	name = "Purple scarf"
@@ -955,7 +955,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_MISCCLOTHING
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/scarfpink
 	name = "Pink scarf"
@@ -964,7 +964,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_MISCCLOTHING
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/scarfstripedred
 	name = "Striped red scarf"
@@ -973,7 +973,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_MISCCLOTHING
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/scarfstripedblue
 	name = "Striped blue scarf"
@@ -982,7 +982,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_MISCCLOTHING
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/stripedgreenscarf
 	name = "Striped green scarf"
@@ -991,7 +991,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_MISCCLOTHING
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/chestpatch
 	name = "Chest patch / insignia"
@@ -1000,7 +1000,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 10
 	category = CAT_CLOTHING
-	subcategory = CAT_MISCCLOTHING
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/armpatch
 	name = "Arm patch / insignia"
@@ -1009,7 +1009,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 15
 	category = CAT_CLOTHING
-	subcategory = CAT_MISCCLOTHING
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/rainbowbunchcrown
 	name = "Rainbow Flower Crown"
@@ -1018,7 +1018,7 @@
 	reqs = list(/obj/item/reagent_containers/food/snacks/grown/rainbow_flower = 5,
 				/obj/item/stack/cable_coil = 3)
 	category = CAT_CLOTHING
-	subcategory = CAT_MISCCLOTHING
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/sunflowercrown
 	name = "Sunflower Crown"
@@ -1027,7 +1027,7 @@
 	reqs = list(/obj/item/grown/sunflower = 5,
 				/obj/item/stack/cable_coil = 3)
 	category = CAT_CLOTHING
-	subcategory = CAT_MISCCLOTHING
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/poppycrown
 	name = "Poppy Crown"
@@ -1036,7 +1036,7 @@
 	reqs = list(/obj/item/reagent_containers/food/snacks/grown/poppy = 5,
 				/obj/item/stack/cable_coil = 3)
 	category = CAT_CLOTHING
-	subcategory = CAT_MISCCLOTHING
+	subcategory = CAT_GENCLOTHES
 
 /datum/crafting_recipe/lilycrown
 	name = "Lily Crown"
@@ -1045,7 +1045,7 @@
 	reqs = list(/obj/item/reagent_containers/food/snacks/grown/poppy/lily = 3,
 				/obj/item/stack/cable_coil = 3)
 	category = CAT_CLOTHING
-	subcategory = CAT_MISCCLOTHING
+	subcategory = CAT_GENCLOTHES
 
 /*
 /datum/crafting_recipe/durathread_vest

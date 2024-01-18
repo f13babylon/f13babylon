@@ -541,7 +541,7 @@
 	reqs = list(/obj/item/storage/backpack/duffelbag = 2,
 				/obj/item/stack/sheet/cloth = 5)
 	tools = list(TOOL_WORKBENCH)
-	subcategory = CAT_FARMING
+	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
 
 /datum/crafting_recipe/brahmincollar
@@ -551,7 +551,7 @@
 	reqs = list(/obj/item/stack/sheet/metal = 1,
 				/obj/item/stack/sheet/cloth = 1)
 	tools = list(TOOL_WORKBENCH)
-	subcategory = CAT_FARMING
+	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
 
 /datum/crafting_recipe/brahminbridle
@@ -562,7 +562,7 @@
 				/obj/item/stack/sheet/leather = 2,
 				/obj/item/stack/sheet/cloth = 1)
 	tools = list(TOOL_WORKBENCH)
-	subcategory = CAT_FARMING
+	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
 
 /datum/crafting_recipe/brahminsaddle
@@ -573,7 +573,7 @@
 				/obj/item/stack/sheet/leather = 4,
 				/obj/item/stack/sheet/cloth = 1)
 	tools = list(TOOL_WORKBENCH)
-	subcategory = CAT_FARMING
+	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
 
 /datum/crafting_recipe/brahminbrand
@@ -583,7 +583,7 @@
 	reqs = list(/obj/item/stack/sheet/metal = 1,
 				/obj/item/stack/rods = 1)
 	tools = list(TOOL_WORKBENCH)
-	subcategory = CAT_FARMING
+	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
 
 /mob/living/simple_animal/cow/brahmin/attackby(obj/item/I, mob/user)
