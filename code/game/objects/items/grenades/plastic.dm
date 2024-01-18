@@ -22,7 +22,7 @@
 
 /obj/item/grenade/plastic/Initialize(mapload)
 	. = ..()
-	plastic_overlay = mutable_appearance(icon, "[item_state]2", HIGH_OBJ_LAYER)
+	plastic_overlay = mutable_appearance(icon, "[icon_state]2", HIGH_OBJ_LAYER)
 
 /obj/item/grenade/plastic/ComponentInitialize()
 	. = ..()
@@ -89,11 +89,11 @@
 	if(nadeassembly)
 		nadeassembly.attack_self(user)
 		return
-	var/newtime = input(usr, "Please set the timer.", "Timer", 10) as num
+	var/newtime = input(usr, "Please set a time to detonate.", "Timer", 10) as num
 	if(user.get_active_held_item() == src)
 		newtime = clamp(newtime, 10, 60000)
 		det_time = newtime
-		to_chat(user, "Timer set for [det_time] seconds.")
+		to_chat(user, "The explosive is set to detonate in T-minus [det_time] seconds. It's best you get to a safe place before it reaches zero.")
 
 /obj/item/grenade/plastic/afterattack(atom/movable/AM, mob/user, flag)
 	. = ..()
@@ -103,7 +103,7 @@
 	if(ismob(AM) && !can_attach_mob)
 		return
 
-	to_chat(user, "<span class='notice'>You start planting [src]. The timer is set to [det_time]...</span>")
+	to_chat(user, "<span class='notice'>You carefully stick the [src] to the surface and begin punching the code in. It will detonate in [det_time] seconds...</span>")
 
 	if(do_after(user, 30, target = AM))
 		if(!user.temporarilyRemoveItemFromInventory(src))
@@ -126,7 +126,7 @@
 		RegisterSignal(target, COMSIG_ATOM_UPDATE_OVERLAYS, .proc/add_plastic_overlay)
 		target.update_icon()
 		if(!nadeassembly)
-			to_chat(user, "<span class='notice'>You plant the bomb. Timer counting down from [det_time].</span>")
+			to_chat(user, "<span class='notice'>You succesfully plant the explosive. It will detonate in [det_time] seconds.</span>")
 			addtimer(CALLBACK(src, .proc/prime), det_time*10)
 		else
 			qdel(src)	//How?
@@ -137,19 +137,23 @@
 /obj/item/grenade/plastic/proc/shout_syndicate_crap(mob/M)
 	if(!M)
 		return
-	var/message_say = "FOR NO RAISIN!"
+	var/message_say = "RAAAAAAGH!―"
 	if(M.mind)
-		var/datum/mind/UM = M
-		if(UM.has_antag_datum(/datum/antagonist/nukeop) || UM.has_antag_datum(/datum/antagonist/traitor))
-			message_say = "FOR THE SYNDICATE!"
-		else if(UM.has_antag_datum(/datum/antagonist/changeling))
-			message_say = "FOR THE HIVE!"
-		else if(UM.has_antag_datum(/datum/antagonist/cult))
-			message_say = "FOR NAR'SIE!"
-		else if(UM.has_antag_datum(/datum/antagonist/clockcult))
-			message_say = "FOR RATVAR!"
-		else if(UM.has_antag_datum(/datum/antagonist/rev))
-			message_say = "VIVA LA REVOLUTION!"
+		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
+			if(istype(job))
+				switch(job)
+					if(FACTION_LEGION)
+						message_say = "GLORY TO CAESAR!"
+					if(FACTION_NCR)
+						message_say = "GLORY TO THE REPUBLIC!"
+					if(FACTION_BROTHERHOOD)
+						message_say = "FOR MAXSON!"
+					if(FACTION_ENCLAVE)
+						message_say = "WHAT A HELL OF A WAY TO DI―"
+					if(FACTION_RAIDERS)
+						message_say = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHH!―"
+					if(FACTION_TRIBAL)
+						message_say = "WALALALALALALALALALA!"
 	M.say(message_say, forced="C4 suicide")
 
 /obj/item/grenade/plastic/suicide_act(mob/user)
@@ -163,17 +167,17 @@
 
 /obj/item/grenade/plastic/update_icon_state()
 	if(nadeassembly)
-		icon_state = "[item_state]1"
+		icon_state = "[icon_state]1"
 	else
-		icon_state = "[item_state]0"
+		icon_state = "[icon_state]0"
 
 //////////////////////////
 ///// The Explosives /////
 //////////////////////////
 
 /obj/item/grenade/plastic/c4
-	name = "C4"
-	desc = "Used to put holes in specific areas without too much extra hole. A saboteur's favorite."
+	name = "C4 demolition block"
+	desc = "Two bricks of a high-explosive plastic compound tied together with an electrical fuse. Enter a timer before planting."
 	gender = PLURAL
 	var/open_panel = 0
 	can_attach_mob = TRUE
