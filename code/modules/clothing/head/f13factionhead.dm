@@ -655,7 +655,7 @@
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 	slowdown = 0.05		//0.35 with chestpiece
 
-/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/ncr/steel/attack_self(mob/user)
+/obj/item/clothing/head/helmet/f13/ncr/heavygunner/attack_self(mob/user)
 	if(can_toggle && !user.incapacitated())
 		if(world.time > cooldown + toggle_cooldown)
 			cooldown = world.time
