@@ -700,13 +700,6 @@
 	icon_state = "ncr_codresscap"
 	item_state = "ncr_codresscap"
 
-/obj/item/clothing/head/helmet/f13/ncr/steelpot_mp
-	name = "NCR military police helmet"
-	desc = "A standard issue NCR steel helmet emblazoned with the initials of the military police."
-	icon_state = "steelpot_mp"
-	item_state = "steelpot_mp"
-	unique_reskin = list("M1" = "ncr_old_mp")
-
 //NCR Ranger
 /obj/item/clothing/head/helmet/f13/ncr/reconranger		//Recon Ranger hat
 	name = "recon ranger beret"
@@ -1318,8 +1311,9 @@
 /obj/item/clothing/head/helmet/f13/ncr/mp	//NCR Military Police helmet (UNUSED)
 	name = "NCR military police helmet"
 	desc = "A standard issue NCR helmet, with the letters \"MP\" scrawled on the front."
-	icon_state = "ncr_MP"
-	item_state = "ncr_MP"
+	icon_state = "steelpot_mp"
+	item_state = "steelpot_mp"
+	unique_reskin = list("M1" = "ncr_old_mp")
 
 //Legion
 
