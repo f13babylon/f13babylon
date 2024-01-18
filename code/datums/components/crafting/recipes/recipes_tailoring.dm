@@ -183,7 +183,7 @@
 		/obj/item/stack/crafting/metalparts = 10,
 		/obj/item/stack/crafting/goodparts = 5,
 		/obj/item/stack/sheet/prewar = 5,
-		/obj/item/toy/crayon/spraycan
+		/obj/item/toy/crayon/spraycan,
 	)
 	tools = list(TOOL_AWORKBENCH, TOOL_CROWBAR, TOOL_WELDER)
 	time = 100
@@ -198,8 +198,8 @@
 		/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d = 1,
 		/obj/item/stack/crafting/metalparts = 10,
 		/obj/item/stack/crafting/goodparts = 5,
-		/obj/item/stack/sheet/prewar = 5
-		/obj/item/toy/crayon/spraycan
+		/obj/item/stack/sheet/prewar = 5,
+		/obj/item/toy/crayon/spraycan,
 	)
 	tools = list(TOOL_AWORKBENCH, TOOL_CROWBAR, TOOL_WELDER)
 	time = 100

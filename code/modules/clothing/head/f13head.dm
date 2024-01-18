@@ -355,16 +355,6 @@
 	armor = list("melee" = 65, "bullet" = 65, "laser" = 50, "energy" = 30, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
 	salvaged_type = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d
 
-//Fluff Helmet
-/obj/item/clothing/head/helmet/f13/power_armor/t45d/refurb
-	name = "Refurbished T-45d power helmet"
-	desc = "An old pre-War power armor helmet. This one appears to have been refitted. Probably many times over, at that, with its patchwork internals."
-	icon_state = "t45dhelmet0"
-	item_state = "t45dhelmet0"
-	actions_types = list(/datum/action/item_action/toggle_helmet_light)
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 25, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 50)
-	salvaged_type = null
-
 //////
 // Sheriff's Suit
 //////

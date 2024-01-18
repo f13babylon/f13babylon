@@ -19,7 +19,7 @@
 
 /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d/raider
 	name = "raider salvaged power helmet"
-	desc = "A heavily modified, almost bastardised T-45b power armor helmet."
+	desc = "A heavily modified, almost bastardised T-45d power armor helmet."
 	icon_state = "raiderpa_helm"
 	item_state = "raiderpa_helm"
 
