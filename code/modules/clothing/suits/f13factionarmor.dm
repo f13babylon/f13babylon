@@ -207,8 +207,10 @@
 /obj/item/clothing/suit/f13/legion/orator		//Legion Orator suit
 	name = "Legion Orator armor"
 	desc = "Light armor consisting of bracers, a chainmail skirt, and large pauldrons. A tabard emblazoned with the bull is loosely draped over the torso."
-	icon_state = "legion-orator"
-	item_state = "legion-orator"
+	icon = 'icons/fallout/clothing/armored_light.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/armored_light.dmi'
+	icon_state = "legion_orator"
+	item_state = "legion_orator"
 	armor = list("melee" = 20, "bullet" = 15, "laser" = 10, "energy" = 0, "bomb" = 0, "bio" = 20, "rad" = 20, "fire" = 0, "acid" = 0, "wound" = 5)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/treasurer
 	slowdown = 0.05
@@ -255,8 +257,6 @@
 /obj/item/clothing/suit/armor/f13/legion/prime/explorer		//Legion Explorer armor
 	name = "legion explorer armor"
 	desc = "Armor based on layered strips of laminated linen and leather, the technique giving it surprising resilience for low weight."
-	icon = 'icons/fallout/clothing/armored_light.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
 	icon_state = "legion_explorer"
 	item_state = "legion_explorer"
 	armor = list("melee" = 30, "bullet" = 25, "laser" = 10, "energy" = 5, "bomb" = 15, "bio" = 30, "rad" = 20, "fire" = 15, "acid" = 0, "wound" = 20)
@@ -281,7 +281,6 @@
 
 /obj/item/clothing/suit/armor/f13/legion/veteran/vexillarius	//Legion Vexillarius armor
 	name = "legion vexillarius armor"
-	icon = 'icons/fallout/clothing/armored_medium.dmi'
 	desc = " Worn by Vexillarius, this armor has been reinforced with circular metal plates on the chest and a back mounted pole for the flag of the Bull, making the wearer easy to see at a distance."
 	icon_state = "legion_vex"
 	item_state = "legion_vex"
@@ -314,8 +313,6 @@
 
 /obj/item/clothing/suit/armor/f13/legion/centurion/paladinslayer	//Legion Centurion armor, Paladin-Slayer loadout
 	name = "paladin-slayer centurion armor"
-	icon = 'icons/fallout/clothing/armored_medium.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_heavy.dmi'
 	desc = "A Centurion able to defeat a Brotherhood Paladin gets the honorific title 'Paladin-Slayer', and adds bits of the looted armor to his own."
 	icon_state = "legion_palacent"
 	item_state = "legion_palacent"
@@ -324,8 +321,6 @@
 
 /obj/item/clothing/suit/armor/f13/legion/centurion/rangerhunter		//Legion Centurion armor, Ranger-Hunter loadout
 	name = "ranger-hunter centurion armor"
-	icon = 'icons/fallout/clothing/armored_medium.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_heavy.dmi'
 	desc = "Centurions who have led many patrols and ambushes against NCR Rangers have a distinct look from the many looted pieces of Ranger armor, and are often experienced in skirmishing."
 	icon_state = "legion_rangercent"
 	item_state = "legion_rangercent"
@@ -335,8 +330,6 @@
 /obj/item/clothing/suit/armor/f13/legion/centurion/legate
 	name = "legion legate armor"
 	desc = " Made by the most skilled blacksmiths in Arizona, the bronzed steel of this rare armor offers good protection, and the scars on its metal proves it has seen use on the field."
-	icon = 'icons/fallout/clothing/armored_heavy.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_heavy.dmi'
 	icon_state = "legion_legate"
 	item_state = "legion_legate"
 	armor = list("melee" = 60, "bullet" = 50, "laser" = 40, "energy" = 20, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)

@@ -766,7 +766,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "NCR Combat Medic"
 	jobtype = /datum/job/ncr/f13combatmedic
 	id = /obj/item/card/id/dogtag/ncrtrooper
-	head = /obj/item/clothing/head/helmet/f13/ncr/medic
+	head = /obj/item/clothing/head/helmet/f13/ncr/corporal/medic
 	suit = /obj/item/clothing/suit/armor/f13/ncr/reinforced
 	mask = /obj/item/clothing/mask/surgical
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile
@@ -1185,7 +1185,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	id = /obj/item/card/id/dogtag/ncrlieutenant
 	uniform	= /obj/item/clothing/under/f13/ncr/ncr_officer
 	accessory = /obj/item/clothing/accessory/ncr/LT2
-	head = /obj/item/clothing/head/f13/ncr/beret/sapper
+	head = /obj/item/clothing/head/f13/ncr/beret
 	neck = /obj/item/storage/belt/holster/legholster
 	suit = /obj/item/clothing/suit/f13/ncr/utilityvest
 	glasses	= /obj/item/clothing/glasses/welding

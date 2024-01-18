@@ -281,14 +281,18 @@
 //////////
 
 //NON-COMBAT ROLES
+/obj/item/clothing/head/f13/legion
+	name = "LEGION HAT TEMPLATE"
+	desc = "You're not supposed to see this."
+	icon = 'icons/fallout/clothing/hats.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
+	armor = list("melee" = 20, "bullet" = 15, "laser" = 10, "energy" = 0, "bomb" = 0, "bio" = 20, "rad" = 20, "fire" = 0, "acid" = 0, "wound" = 5)
+
 /obj/item/clothing/head/f13/legion/auxilia				//Legion Auxilia hat
 	name = "auxilia headwear"
 	desc = "A soft red cap with a black band, used by female Auxilia outside camp."
-	icon = 'icons/fallout/clothing/hats.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-aux"
 	item_state = "legion-aux"
-	armor = list("melee" = 20, "bullet" = 15, "laser" = 10, "energy" = 0, "bomb" = 0, "bio" = 20, "rad" = 20, "fire" = 0, "acid" = 0, "wound" = 5)
 
 /obj/item/clothing/head/f13/legion/auxilia/servant		//Legion Auxilia hat, Servant loadout
 	name = "servant headwear"
@@ -301,14 +305,12 @@
 	desc = "A headdress made of feathers and decorated with two golden tassles."
 	icon_state = "legion-priestess"
 	item_state = "legion-priestess"
-	armor = list("melee" = 20, "bullet" = 15, "laser" = 10, "energy" = 0, "bomb" = 0, "bio" = 20, "rad" = 20, "fire" = 0, "acid" = 0, "wound" = 5)
 
 /obj/item/clothing/head/f13/legion/orator				//Legion Orator hat
 	name = "laurel wreath"
 	desc = "A laurel wreath is made of branches and leaves of the laurel, a type of evergreen shrub or small tree. This one appears to be out of metal,however. In Ancient Rome, it was worn on the head as a symbol of triumph."
 	icon_state = "legion-orator"
 	item_state = "legion-orator"
-	armor = list("melee" = 20, "bullet" = 15, "laser" = 10, "energy" = 0, "bomb" = 0, "bio" = 20, "rad" = 20, "fire" = 0, "acid" = 0, "wound" = 5)
 
 //COMBAT ROLES
 /obj/item/clothing/head/helmet/f13/legion
@@ -413,7 +415,7 @@
 	desc = "A sturdy helmet from steel and brass with a red horizontal plume."
 	icon_state = "legion-centurion"
 	item_state = "legion-centurion"
-	armor = list("melee" = 55, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 35, "bio" = 30, "rad" = 20, "fire" = 35, "acid" = 45, "wound" = 40)
+	armor = list("melee" = 55, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 35, "bio" = 30, "rad" = 20, "fire" = 35, "acid" = 0, "wound" = 40)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10)
 
 /obj/item/clothing/head/helmet/f13/legion/centurion/paladinslayer	//Legion Centurion armor, Paladin-Slayer loadout
@@ -577,7 +579,7 @@
 					playsound(src.loc, "[active_sound]", 100, 0, 4)
 					sleep(15)
 
-/obj/item/clothing/head/helmet/f13/ncr/corporal/1strecon		//NCR 1st Recon beret (Corporal helmet reskin)
+/obj/item/clothing/head/helmet/f13/ncr/corporal/recon		//NCR 1st Recon beret (Corporal helmet reskin)
 	name = "\improper NCR 1st Recon beret"
 	desc = "A red beret, issued to members of the 1st Recon battalion."
 	icon_state = "ncr_recon_beret"

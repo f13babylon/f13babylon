@@ -350,16 +350,16 @@
 
 /datum/gear/head/ncr_beret/sapper
 	name = "NCR sapper beret"
-	path = /obj/item/clothing/head/f13/ncr/beret/sapper
+	path = /obj/item/clothing/head/helmet/f13/ncr/sapper
 	cost = 4
 	restricted_desc = "NCR Combat Engineer"
 	restricted_roles = list(
 		"NCR Combat Engineer",
 	)
 
-/datum/gear/head/ncr_beret/1strecon
+/datum/gear/head/ncr_beret/recon
 	name = "NCR 1st Recon beret"
-	path = /obj/item/clothing/head/helmet/f13/ncr/1strecon
+	path = /obj/item/clothing/head/helmet/f13/ncr/corporal/recon
 	cost = 4
 	restricted_desc = "NCR Corporal and above (Combat Roles)"
 	restricted_roles = list(
