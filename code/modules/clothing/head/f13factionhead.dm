@@ -653,7 +653,7 @@
 	alt_toggle_message = "You push the visor up on the"
 	visor_flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDESNOUT
 	visor_flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH
-	armor = list("melee" = 55, "bullet" = 55, "laser" = 45, "energy" = 15, "bomb" = 35, "bio" = 30, "rad" = 20, "fire" = 50, "acid" = 0, "wound" = 45)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 35, "bio" = 30, "rad" = 20, "fire" = 50, "acid" = 0, "wound" = 45)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 	slowdown = 0.05		//0.35 with chestpiece
 
