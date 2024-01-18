@@ -2659,10 +2659,10 @@
 /obj/item/clothing/under/f13/legslavef,
 /obj/item/clothing/under/f13/legslavef,
 /obj/item/clothing/under/f13/legslavef,
-/obj/item/clothing/suit/f13/legion/servant,
-/obj/item/clothing/suit/f13/legion/servant,
-/obj/item/clothing/suit/f13/legion/servant,
-/obj/item/clothing/suit/f13/legion/servant,
+/obj/item/clothing/suit/armor/f13/slavelabor,
+/obj/item/clothing/suit/armor/f13/slavelabor,
+/obj/item/clothing/suit/armor/f13/slavelabor,
+/obj/item/clothing/suit/armor/f13/slavelabor,
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/legion)
 "cBD" = (

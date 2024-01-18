@@ -27,7 +27,7 @@
 	merge_type = /obj/item/stack/sheet/leatherstrips
 
 GLOBAL_LIST_INIT(leatherstrips_recipes, list ( \
-	new/datum/stack_recipe("slave labor outfit", /obj/item/clothing/suit/f13/legion/servant, 2, time = 50),  \
+	new/datum/stack_recipe("slave labor outfit", /obj/item/clothing/suit/armor/f13/slavelabor, 2, time = 50),  \
 	new/datum/stack_recipe("jabroni outfit", /obj/item/clothing/under/jabroni, 4, time = 80), \
 	new/datum/stack_recipe("muzzle", /obj/item/clothing/mask/muzzle, 2, time = 40),  \
 	new/datum/stack_recipe("pet collar", /obj/item/clothing/neck/petcollar, 2, time = 40) \

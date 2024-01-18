@@ -6,7 +6,6 @@
 	name = "salvaged power helmet"
 	desc = "It's a salvaged power armor helmet of what..? YOU CAN'T SEE ME! STOP! REPORT TO CODERS!!"
 	slowdown = 0.1
-	flags_cover = HEADCOVERSEYES
 	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR|HIDESNOUT
 
 // T-45B
