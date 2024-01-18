@@ -284,7 +284,7 @@
 	desc = " Worn by Vexillarius, this armor has been reinforced with circular metal plates on the chest and a back mounted pole for the flag of the Bull, making the wearer easy to see at a distance."
 	icon_state = "legion_vex"
 	item_state = "legion_vex"
-	armor = list("melee" = 45, "bullet" = 40, "laser" = 25, "energy" = 10, "bomb" = 30, "bio" = 30, "rad" = 20, "fire" = 30, "acid" = 0, "wound" = 35)
+	armor = list("melee" = 45, "bullet" = 40, "laser" = 30, "energy" = 10, "bomb" = 30, "bio" = 30, "rad" = 20, "fire" = 30, "acid" = 0, "wound" = 30)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 	slowdown = 0.1
 

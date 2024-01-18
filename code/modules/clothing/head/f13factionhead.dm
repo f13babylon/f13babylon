@@ -374,7 +374,7 @@
 	desc = "This helmet is decorated with the pelt of a desert fox."
 	icon_state = "legion-vex-alt"
 	item_state = "legion-vex-alt"
-	armor = list("melee" = 45, "bullet" = 40, "laser" = 25, "energy" = 10, "bomb" = 30, "bio" = 30, "rad" = 20, "fire" = 30, "acid" = 0, "wound" = 35)
+	armor = list("melee" = 45, "bullet" = 40, "laser" = 30, "energy" = 10, "bomb" = 30, "bio" = 30, "rad" = 20, "fire" = 30, "acid" = 0, "wound" = 30)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 
 /obj/item/clothing/head/helmet/f13/legion/veteran/vexillarius/bear
