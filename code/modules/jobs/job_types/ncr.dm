@@ -1281,7 +1281,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	neck = /obj/item/storage/belt/holster/legholster
 	accessory = /obj/item/clothing/accessory/armband/black
 	glasses	= /obj/item/clothing/glasses/sunglasses/big
-	head = /obj/item/clothing/head/helmet/f13/ncr/steelpot_mp
+	head = /obj/item/clothing/head/helmet/f13/ncr/mp
 	suit = /obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/sergeant
 	gloves = /obj/item/clothing/gloves/f13/leather/fingerless
 	backpack = /obj/item/storage/backpack/satchel/trekker
