@@ -393,15 +393,6 @@
 	},
 /area/awaymission/vr/bos/enclavebunker)
 "do" = (
-/obj/structure/table/reinforced,
-/obj/item/clothing/suit/armor/f13/ncr/vetranger/eliteriot{
-	desc = "A heavily reinforced set of military grade armor, commonly seen in the Divide, now repurposed."
-	},
-/obj/item/clothing/head/helmet/f13/ncr/vetranger/eliteriot{
-	desc = "A heavily modified combat helmet once seen in the Divide.";
-	name = "elite riot helmet";
-	pixel_x = 1
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/pod/light,
 /area/awaymission/vr/bos/casino)

@@ -7,22 +7,17 @@
 	name = "base raider armor"
 	desc = "for testing"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 10)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 5, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 15)
 	strip_delay = 40
-	slowdown = 0.05
+	slowdown = 0.06
 
 /obj/item/clothing/suit/armor/f13/raider/supafly //melee spec
 	name = "supa-fly raider armor"
 	desc = "Fabulous mutant powers were revealed to me the day I held aloft my bumper sword and said...<br>BY THE POWER OF NUKA-COLA, I AM RAIDER MAN!"
-	armor = list("melee" = 45, "bullet" = 20, "laser" = 20, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 20)
-	slowdown = 0.1
+	armor = list("melee" = 45, "bullet" = 30, "laser" = 30, "energy" = 5, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 15)
 	icon_state = "supafly"
 	item_state = "supafly"
 	mutantrace_variation = STYLE_DIGITIGRADE
-
-/obj/item/clothing/suit/armor/f13/raider/supafly/Initialize(mapload) //HQ parts reinforcement
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/raider/rebel
 	name = "rebel raider armor"
@@ -30,20 +25,13 @@
 	icon_state = "raider_rebel_icon"
 	item_state = "raider_rebel_armor"
 
-/obj/item/clothing/suit/armor/f13/raider/rebel/Initialize(mapload) //HQ parts reinforcement
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/suit/armor/f13/raider/sadist
 	name = "sadist raider armor"
 	desc = "A bunch of metal chaps adorned with severed hands at the waist with a leather plate worn on the left shoulder. Very intimidating."
+	armor = list("melee" = 45, "bullet" = 30, "laser" = 30, "energy" = 5, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 15)
 	icon_state = "sadist"
 	item_state = "sadist"
 	mutantrace_variation = STYLE_DIGITIGRADE
-
-/obj/item/clothing/suit/armor/f13/raider/sadist/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/raider/blastmaster
 	name = "blastmaster raider armor"
@@ -51,14 +39,10 @@
 	icon_state = "blastmaster"
 	item_state = "blastmaster"
 	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
-	armor = list("melee" = 30, "bullet" = 25, "laser" = 15, "bio" = 0, "bomb" = 60, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 25)
+	armor = list("melee" = 30, "bullet" = 45, "laser" = 30, "energy" = 10, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 0, "wound" = 20)
 	flash_protect = 2
-	slowdown = 0.12
+	slowdown = 0.14
 	mutantrace_variation = STYLE_DIGITIGRADE
-
-/obj/item/clothing/suit/armor/f13/raider/blastmaster/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/raider/yankee
 	name = "yankee raider armor"
@@ -67,55 +51,36 @@
 	item_state = "yankee"
 	mutantrace_variation = STYLE_DIGITIGRADE
 
-/obj/item/clothing/suit/armor/f13/raider/yankee/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
-// Edited desc to help the player figure out it got pockets, the "gimmick" it has.
 /obj/item/clothing/suit/armor/f13/raider/badlands
 	name = "badlands raider armor"
 	desc = "A leather top with a bandolier over it and a straps that cover the arms. Comes with pockets."
 	icon_state = "badlands"
 	item_state = "badlands"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 10)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
 	mutantrace_variation = STYLE_DIGITIGRADE
-
-/obj/item/clothing/suit/armor/f13/raider/badlands/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/raider/painspike
 	name = "painspike raider armor"
 	desc = "A particularly unhuggable armor, even by raider standards. Extremely spiky."
 	icon_state = "painspike"
 	item_state = "painspike"
-	armor = list("melee" = 25, "bullet" = 30, "laser" = 15, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 15)
-	slowdown = 0.1
+	armor = list("melee" = 45, "bullet" = 30, "laser" = 30, "energy" = 5, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 15)
 	mutantrace_variation = STYLE_DIGITIGRADE
-
-/obj/item/clothing/suit/armor/f13/raider/painspike/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/raider/iconoclast
 	name = "iconoclast raider armor"
 	desc = "A rigid armor set that appears to be fashioned from a radiation suit, or a mining suit."
 	icon_state = "iconoclast"
 	item_state = "iconoclast"
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "bio" = 0, "rad" = 60, "fire" = 25, "acid" = 25, "wound" = 10)
-
-/obj/item/clothing/suit/armor/f13/raider/iconoclast/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
+	armor = list("melee" = 30, "bullet" = 30, "laser" = 45, "energy" = 5, "bomb" = 15, "bio" = 60, "rad" = 40, "fire" = 15, "acid" = 0, "wound" = 15)
 
 /obj/item/clothing/suit/armor/f13/raider/combatduster
 	name = "combat duster"
 	desc = "An old military-grade pre-war combat armor under a weathered duster. It appears to be fitted with metal plates to replace the crumbling ceramic."
-	armor = list("melee" = 25, "bullet" = 37.5, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 10)
+	armor = list("melee" = 40, "bullet" = 45, "laser" = 40, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 15)
 	icon_state = "combatduster"
 	item_state = "combatduster"
-	slowdown = 0.07
+	slowdown = 0.14
 	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/raider/combatduster/patrolduster
@@ -124,41 +89,32 @@
 	icon_state = "patrolduster"
 	item_state = "patrolduster"
 
-/obj/item/clothing/suit/armor/f13/raider/combatduster/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/suit/armor/f13/exile
 	name = "base faction exile armor"
 	desc = "this is for testing."
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 40, "bio" = 40, "rad" = 20, "fire" = 60, "acid" = 20, "wound" = 10)
-	strip_delay = 30
 	icon = 'icons/fallout/clothing/armored_medium.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_medium.dmi'
 	slowdown = 0.1
+
+/obj/item/clothing/suit/armor/f13/exile/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/exile/ncrexile
 	name = "modified NCR armor"
 	desc = "A modified detoriated armor kit consisting of NCR gear and scrap metal."
 	icon_state = "ncrexile"
 	item_state = "ncrexile"
-
-/obj/item/clothing/suit/armor/f13/exile/ncrexile/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
+	armor = list("melee" = 10, "bullet" = 30, "laser" = 20, "energy" = 5, "bomb" = 15, "bio" = 30, "rad" = 20, "fire" = 15, "acid" = 0, "wound" = 20)
 
 /obj/item/clothing/suit/armor/f13/exile/legexile
 	name = "modified Legion armor"
 	desc = "A modified detoriated armor kit consisting of Legion gear and scrap metal."
-	armor = list("melee" = 40, "bullet" = 17.5, "laser" = 5, "energy" = 0, "bomb" = 40, "bio" = 40, "rad" = 20, "fire" = 30, "acid" = 20, "wound" = 10)
+	armor = list("melee" = 30, "bullet" = 20, "laser" = 10, "energy" = 0, "bomb" = 15, "bio" = 30, "rad" = 20, "fire" = 15, "acid" = 0, "wound" = 15)
 	icon_state = "legexile"
 	item_state = "legexile"
-	slowdown = 0.03
-
-/obj/item/clothing/suit/armor/f13/exile/legexile/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
+	slowdown = 0.06
 
 /obj/item/clothing/suit/armor/f13/exile/bosexile
 	name = "modified Brotherhood armor"
@@ -167,17 +123,14 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_heavy.dmi'
 	icon_state = "exile_bos"
 	item_state = "exile_bos"
-
-/obj/item/clothing/suit/armor/f13/exile/bosexile/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
+	armor = list("melee" = 10, "bullet" = 20, "laser" = 30, "energy" = 5, "bomb" = 15, "bio" = 30, "rad" = 20, "fire" = 15, "acid" = 0, "wound" = 20)
 
 /obj/item/clothing/suit/armor/f13/raider/raidercombat
 	name = "combat raider armor"
 	desc = "An old military-grade pre-war combat armor. It appears to be fitted with metal plates to replace the crumbling ceramic."
 	icon_state = "raider_combat"
 	item_state = "raider_combat"
-	armor = list("melee" = 40, "bullet" = 40 , "laser" = 40,"energy" = 10, "bomb" = 50, "bio" = 50, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 20)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 15)
 	slowdown = 0.1
 
 /obj/item/clothing/suit/armor/f13/raider/raidermetal
@@ -185,8 +138,7 @@
 	desc = "A suit of welded, fused metal plates. Looks bulky, with great protection."
 	icon_state = "raider_metal"
 	item_state = "raider_metal"
-	armor = list("melee" = 55, "bullet" = 35, "laser" = 55, "energy" = 20, "bomb" = 45, "bio" = 30, "rad" = 15, "fire" = 60, "acid" = 0, "wound" = 30)
-	resistance_flags = FIRE_PROOF
+	armor = list("melee" = 55, "bullet" = 35, "laser" = 55, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 25)
 	slowdown = 0.25
 
 //////////
@@ -585,7 +537,7 @@
 	icon_state = "hoccoat"
 	item_state = "hoccoat"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 20, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 10)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 20, "bomb" = 30, "bio" = 100, "rad" = 10, "fire" = 30, "acid" = 30, "wound" = 30)
 
 /obj/item/clothing/suit/armor/f13/headscribe
 	name = "brotherhood head scribe robe"
@@ -593,7 +545,7 @@
 	icon_state = "headscribe"
 	item_state = "headscribe"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list("melee" = 10, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 36, "bio" = 50, "rad" = 69, "fire" = 10, "acid" = 70, "wound" = 10)
+	armor = list("melee" = 20, "bullet" = 35, "laser" = 35, "energy" = 15, "bomb" = 15, "bio" = 100, "rad" = 20, "fire" = 15, "acid" = 70, "wound" = 15)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 
 /obj/item/clothing/suit/f13/scribe
@@ -602,7 +554,7 @@
 	icon_state = "scribe"
 	item_state = "scribe"
 	body_parts_covered = CHEST|ARMS|LEGS
-	armor = list("melee" = 10, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 16, "bio" = 100, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 10, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 10, "fire" = 10, "acid" = 35, "wound" = 10)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 
 /obj/item/clothing/suit/f13/seniorscribe
@@ -611,7 +563,7 @@
 	icon_state = "seniorscribe"
 	item_state = "seniorscribe"
 	body_parts_covered = CHEST|ARMS|LEGS
-	armor = list("melee" = 10, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 16, "bio" = 100, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 15, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 15, "bio" = 100, "rad" = 15, "fire" = 15, "acid" = 50, "wound" = 15)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 
 /obj/item/clothing/suit/f13/elder
@@ -620,7 +572,7 @@
 	icon_state = "elder"
 	item_state = "elder"
 	body_parts_covered = CHEST|ARMS|LEGS
-	armor = list("melee" = 20, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 20, "bullet" = 35, "laser" = 35, "energy" = 15, "bomb" = 15, "bio" = 100, "rad" = 20, "fire" = 15, "acid" = 70, "wound" = 15)
 	allowed = list(/obj/item/gun)
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood
@@ -628,39 +580,41 @@
 	desc = "A combat armor set made by the Brotherhood of Steel, standard issue for all Knights. It bears a red stripe."
 	icon_state = "brotherhood_armor_knight"
 	item_state = "brotherhood_armor_knight"
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 55, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 20)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 55, "energy" = 20, "bomb" = 25, "bio" = 0, "rad" = 10, "fire" = 25, "acid" = 0, "wound" = 25)
+	slowdown = 0.12
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/senior
 	name = "brotherhood senior knight armor"
 	desc = "A renforced combat armor set made by the Brotherhood of Steel, standard issue for all Senior Knights. It bears a silver stripe."
 	icon_state = "brotherhood_armor_senior"
 	item_state = "brotherhood_armor_senior"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 60, "energy" = 25, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 20)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 60, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 20, "fire" = 30, "acid" = 0, "wound" = 30)
+	slowdown = 0.14
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/captain
 	name = "brotherhood head knight armor"
 	desc = "A renforced combat armor set made by the Brotherhood of Steel, standard issue for all Head Knights. It bears golden embroidery."
 	icon_state = "brotherhood_armor_captain"
 	item_state = "brotherhood_armor_captain"
-	armor = list("melee" = 55, "bullet" = 55, "laser" = 60, "energy" = 30, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 20)
-	slowdown = 0.15
+	armor = list("melee" = 55, "bullet" = 55, "laser" = 65, "energy" = 30, "bomb" = 35, "bio" = 0, "rad" = 30, "fire" = 35, "acid" = 0, "wound" = 35)
+	slowdown = 0.16
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate
 	name = "initiate armor"
 	desc = "An old degraded pre war combat armor, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_armor"
 	item_state = "brotherhood_armor"
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 15, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10, "wound" = 10)
-	slowdown = 0.13
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 20)
 	mutantrace_variation = STYLE_DIGITIGRADE
+	slowdown = 0.1
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate/mk2
 	name = "reinforced knight armor"
 	desc = "A reinforced set of bracers, greaves, and torso plating of prewar design This one is kitted with additional plates and, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_armor_mk2"
 	item_state = "brotherhood_armor_mk2"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 55, "energy" = 25, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 20)
-	slowdown = 0.15
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 55, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 20, "fire" = 30, "acid" = 0, "wound" = 30)
+	slowdown = 0.14
 	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/outcast
@@ -676,24 +630,24 @@
 	icon_state = "towntrench"
 	item_state = "hostrench"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list("melee" = 33, "bullet" = 25, "laser" = 33,  "energy" = 25, "bomb" = 20, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 10)
-	slowdown = 0.025 // zoom zoom
 	mutantrace_variation = STYLE_DIGITIGRADE
-
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 20, "energy" = 5, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 15)
+	slowdown = 0.04
 
 /obj/item/clothing/suit/armor/f13/town/mayor
 	name = "mayor trenchcoat"
 	desc = "A symbol of the mayor's authority (or lack thereof). It has discrete armor plating in the lining, to foil assassination attempts."
-	armor = list("melee" = 40, "bullet" = 35, "laser" = 40, "energy" = 12, "bomb" = 25, "bio" = 15, "rad" = 10, "fire" = 15, "acid" = 5, "wound" = 10)
-	slowdown = 0.08
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 20)
+	slowdown = 0.06
 
 /obj/item/clothing/suit/armor/f13/town/sheriff
 	name = "town combat coat"
 	desc = " A trenchcoat which does not attempt to hide the full-body combat armor beneath it."
 	icon_state = "towntrench_heavy"
-	armor = list("melee" = 45, "bullet" = 50, "laser" = 45,  "energy" = 15, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 20)
-	slowdown = 0.12
 	mutantrace_variation = STYLE_DIGITIGRADE
+	armor = list("melee" = 45, "bullet" = 55, "laser" = 45,  "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 30)
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small/holdout
+	slowdown = 0.14
 
 /obj/item/clothing/suit/armor/f13/town/chief
 	name = "BPD Chief's jacket"
@@ -702,51 +656,34 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/suit_cosmetic.dmi'
 	icon_state = "police_chief"
 	item_state = "police_chief"
-	armor = list("melee" = 45, "bullet" = 65, "laser" = 45,  "energy" = 15, "bomb" = 40, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 10)
+	armor = list("melee" = 45, "bullet" = 55, "laser" = 45,  "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 30)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small/holdout
-	slowdown = 0.1  //CA statline
-
-/obj/item/clothing/suit/armor/f13/town/chief/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
+	slowdown = 0.14
 
 /obj/item/clothing/suit/armor/f13/town/deputy
 	name = "armored town trenchcoat"
 	desc = "An armored trench coat with added shoulderpads, a chestplate, and legguards."
 	icon_state = "towntrench_medium"
-	armor = list("melee" = 45, "bullet" = 33, "laser" = 45,  "energy" = 15, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 10)
-	slowdown = 0.08 //combat armor but less slowdown
-	mutantrace_variation = STYLE_DIGITIGRADE
-
-/obj/item/clothing/suit/armor/f13/town/deputy/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 40,  "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 25)
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small/holdout
+	slowdown = 0.12
 
 /obj/item/clothing/suit/armor/vest/oasis
-	name = "BPD vest"
-	desc = "a lightweight ballistic vest that combines protection and comfort. This one has pockets sewn into the front and a badge pinned on it."
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets
-	armor = list("melee" = 15, "bullet" = 45, "laser" = 15,  "energy" = 5, "bomb" = 40, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 10)
+	name = "\improper BPD vest"
+	desc = "A ballistic vest that combines protection and comfort. This one has pockets sewn into the front and a badge pinned on it."
 	icon_state = "blueshift"
 	item_state = "blueshift"
-	slowdown = 0.02
-
-/obj/item/clothing/suit/armor/vest/oasis/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 40,  "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 25)
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets
+	slowdown = 0.12
 
 /obj/item/clothing/suit/armor/f13/metalarmor/steelbib/oasis
 	name = "heavy steel breastplate"
 	desc = "a steel breastplate, inspired by a pre-war design. Looks like Bighorn citizens added an additional layer of metal on the front face."
 	icon_state = "steel_bib"
 	item_state = "steel_bib"
-	armor = list( "melee" = 30, "bullet" = 50, "laser" = 30, "energy" = 10, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 20)
-	slowdown = 0.2 //Literally almost craftable RCA. Sacrifice speed.
-	strip_delay = 5
-
-/obj/item/clothing/suit/armor/f13/metalarmor/steelbib/oasis/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
+	armor = list("melee" = 45, "bullet" = 60, "laser" = 45,  "energy" = 20, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 35, "acid" = 0, "wound" = 35)
+	slowdown = 0.3
 
 //Great Khan
 /obj/item/clothing/suit/armor/khan_jacket
@@ -754,9 +691,9 @@
 	desc = "The symbol of the greatest pushers."
 	icon_state = "khan_jacket"
 	item_state = "khan_jacket"
-	armor = list("melee" = 30, "bullet" = 25, "laser" = 25,  "energy" = 10, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 20)
-	slowdown = 0.05
+	armor = list("melee" = 30, "bullet" = 30, "laser" = 35, "energy" = 10, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30, "wound" = 25)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
+	slowdown = 0.06
 
 /obj/item/clothing/suit/armor/khan_jacket/Initialize(mapload)
 	. = ..()
@@ -769,8 +706,9 @@
 	icon_state = "lightcloak"
 	item_state = "lightcloak"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	slowdown = 0.05
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
+	armor = list("melee" = 50, "bullet" = 30, "laser" = 30, "energy" = 5, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 15)
+	slowdown = 0.06
 
 /obj/item/clothing/suit/armor/f13/combat/tribal
 	name = "tribal combat armor"
@@ -792,7 +730,7 @@
 	icon_state = "tribal_armor"
 	item_state = "tribal_armor"
 	body_parts_covered = CHEST|GROIN|ARMS
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 25, "bio" = 70, "rad" = 65, "fire" = 80, "acid" = 100, "wound" = 10)
+	armor = list("melee" = 45, "bullet" = 30, "laser" = 30, "energy" = 5, "bomb" = 15, "bio" = 20, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 15)
 	slowdown = 0.04
 
 /obj/item/clothing/suit/armor/f13/tribe_heavy_armor
@@ -802,17 +740,8 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_heavy.dmi'
 	icon_state = "tribal_heavy"
 	item_state = "tribal_heavy"
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 35, "energy" = 10, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 20)
-	slowdown = 0.10
-
-/obj/item/clothing/suit/armor/f13/lightcloak
-	name = "light tribal cloak"
-	desc = "Light cloak armor, made of gecko skins and minor metal plating to protect against light weaponry, a favorite amongst scouts of the tribe."
-	icon_state = "lightcloak"
-	item_state = "lightcloak"
-	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 70, "rad" = 65, "fire" = 80, "acid" = 100, "wound" = 10)
-	slowdown = 0.025
+	armor = list("melee" = 50, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 20)
+	slowdown = 0.1
 
 //Vault
 
@@ -821,7 +750,8 @@
 	desc = "A suit of riot armour adapted from the design of the pre-war U.S.M.C. armour, painted blue and white."
 	icon_state = "vtcc_riot_gear"
 	item_state = "vtcc_riot_gear"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 15, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 10)
+	armor = list("melee" = 50, "bullet" = 40, "laser" = 35, "energy" = 15, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 20)
+	slowdown = 0.1
 
 //Old World Law Enforcement
 //Police
@@ -833,7 +763,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/suit_cosmetic.dmi'
 	icon_state = "police_officer"
 	item_state = "police_officer"
-	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 10)
+	armor = list("melee" = 25, "bullet" = 10, "laser" = 10, "energy" = 5, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 15)
 	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/f13/police/lieutenant
@@ -843,7 +773,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/suit_cosmetic.dmi'
 	icon_state = "police_lieutenant"
 	item_state = "police_lieutenant"
-	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 10)
+	armor = list("melee" = 25, "bullet" = 10, "laser" = 10, "energy" = 5, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 15)
 	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/f13/police/chief
@@ -853,19 +783,8 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/suit_cosmetic.dmi'
 	icon_state = "police_chief"
 	item_state = "police_chief"
-	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 10)
+	armor = list("melee" = 25, "bullet" = 10, "laser" = 10, "energy" = 5, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 15)
 	mutantrace_variation = STYLE_DIGITIGRADE
-
-//SWAT
-
-/obj/item/clothing/suit/armor/f13/ncr/vetranger/eliteriot
-	name = "elite riot gear"
-	desc = "A heavily reinforced set of military grade armor, commonly seen in the Divide now repurposed and reissued to Chief Rangers."
-	icon_state = "elite_riot"
-	item_state = "elite_riot"
-	armor = list("melee" = 60, "bullet" = 60, "laser" = 60, "energy" = 20, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 20)
-	icon = 'icons/obj/clothing/suits.dmi'
-	slowdown = 0.1
 
 //Enclave
 
@@ -887,7 +806,7 @@
 	icon_state = "usmc_riot_gear"
 	item_state = "usmc_riot_gear"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list("melee" = 55, "bullet" = 55, "laser" = 40, "energy" = 30, "bomb" = 55, "bio" = 60, "rad" = 30, "fire" = 60, "acid" = 20, "wound" = 20)
+	armor = list("melee" = 55, "bullet" = 55, "laser" = 40, "energy" = 30, "bomb" = 35, "bio" = 30, "rad" = 30, "fire" = 35, "acid" = 35, "wound" = 35)
 
 /obj/item/clothing/suit/armor/f13/usmcriot/Initialize(mapload) //HQ parts reinforcement
 	. = ..()
@@ -903,9 +822,8 @@
 	icon_state = "armor_enclave_officer"
 	item_state = "armor_enclave_officer"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 35, "bomb" = 40, "bio" = 60, "rad" = 25, "fire" = 60, "acid" = 20, "wound" = 20)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 35, "bomb" = 20, "bio" = 25, "rad" = 25, "fire" = 20, "acid" = 20, "wound" = 20)
 	mutantrace_variation = STYLE_DIGITIGRADE
-
 
 /obj/item/clothing/suit/armor/f13/enclavetrenchcoat/Initialize(mapload) //HQ parts reinforcement
 	. = ..()
@@ -921,7 +839,7 @@
 	permeability_coefficient = 0.5
 	clothing_flags = THICKMATERIAL
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
-	armor = list("melee" = 25, "bullet" = 15, "laser" = 45, "energy" = 15, "bomb" = 45, "bio" = 100, "rad" = 100, "fire" = 50, "acid" = 10, "wound" = 10)
+	armor = list("melee" = 25, "bullet" = 15, "laser" = 45, "energy" = 15, "bomb" = 10, "bio" = 100, "rad" = 100, "fire" = 10, "acid" = 10, "wound" = 10)
 	strip_delay = 60
 	equip_delay_other = 60
 	flags_inv = HIDEJUMPSUIT
@@ -932,8 +850,7 @@
 	desc = "A dark armor, used commonly in espionage or shadow ops."
 	icon_state = "remnant"
 	item_state = "remnant"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 20, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 10)
-
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 20, "bomb" = 25, "bio" = 15, "rad" = 15, "fire" = 60, "acid" = 20, "wound" = 25)
 
 //THE GRAVEYARD
 //UNUSED or LEGACY - RETAINED IN CASE DESIRED FOR ADMIN SPAWN OR REIMPLEMENATION. MAY NOT BE EVERYTHING THAT'S UNUSED. TEST BEFORE USING

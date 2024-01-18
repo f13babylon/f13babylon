@@ -456,19 +456,11 @@
 	icon_state = "armyhelmet"
 	item_state = "armyhelmet"
 
-/obj/item/clothing/head/helmet/armyhelmet/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/head/helmet/armyhelmet/heavy
 	name = "heavy steel helmet"
 	desc = "a steel helmet, inspired by several pre-war designs. This one has been modified by oasis citizens to provide more protection to the face and neck."
 	icon_state = "armyhelmetheavy"
 	item_state = "armyhelmetheavy"
-	armor = list("melee" = 30, "bullet" = 50, "laser" = 30, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	slowdown = 0.025
+	armor = list("melee" = 50, "bullet" = 60, "laser" = 50,  "energy" = 20, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 35, "acid" = 0, "wound" = 35)
+	slowdown = 0.05
 	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR|HIDESNOUT
-
-/obj/item/clothing/head/helmet/armyhelmet/heavy/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
