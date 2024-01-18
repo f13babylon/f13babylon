@@ -39,6 +39,8 @@
 /obj/item/ammo_casing/Destroy()
 	if(BB)
 		QDEL_NULL(BB)
+	else if (src in GLOB.spent_bullet_casings)
+		GLOB.spent_bullet_casings -= src
 	return ..()
 
 /obj/item/ammo_casing/update_icon_state()
