@@ -65,7 +65,7 @@
 			return
 		var/obj/item/grenade/flashbang/sentry/S = new /obj/item/grenade/flashbang/sentry(flashbang_turf)
 		S.preprime(user = null)
-	if(prob(75) || Proj.damage > 25) //prob(x) = chance for proj to actually do something, adjust depending on how OP you want sentrybots to be
+	if(prob(75) || Proj.armour_penetration > 0.1) //prob(x) = chance for proj to actually do something, adjust depending on how OP you want sentrybots to be
 		return ..()
 	else
 		visible_message(span_danger("\The [Proj] bounces off \the [src]'s armor plating!"))
@@ -133,7 +133,7 @@
 /mob/living/simple_animal/hostile/securitron/sentrybot/bullet_act(obj/item/projectile/Proj)
 	if(!Proj)
 		CRASH("[src] sentrybot invoked bullet_act() without a projectile")
-	if(prob(5) || Proj.damage > 25) //prob(x) = chance for proj to actually do something, adjust depending on how OP you want it to be.
+	if(prob(5) || Proj.armour_penetration > 0.1) //prob(x) = chance for proj to actually do something, adjust depending on how OP you want it to be.
 		return ..()
 	else
 		visible_message(span_danger("\The [Proj] shatters on \the [src]'s armor plating!"))
@@ -159,7 +159,7 @@
 	if(prob(10) && health > 1)
 		visible_message(span_danger("\The [src] releases a defensive explosive!"))
 		explosion(get_turf(src),-1,-1,2, flame_range = 4) //perish, mortal - explosion size identical to craftable IED
-	if(prob(75) || Proj.damage > 30) //prob(x) = chance for proj to actually do something, adjust depending on how OP you want sentrybots to be
+	if(prob(75) || Proj.armour_penetration > 0.1) //prob(x) = chance for proj to actually do something, adjust depending on how OP you want sentrybots to be
 		return ..()
 	else
 		visible_message(span_danger("\The [Proj] bounces off \the [src]'s armor plating!"))
