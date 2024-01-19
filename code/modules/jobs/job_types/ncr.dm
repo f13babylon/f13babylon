@@ -794,6 +794,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	accessory =	/obj/item/clothing/accessory/ncr/SPC
 	gloves = /obj/item/clothing/gloves/f13/leather/fingerless
 	neck = /obj/item/storage/belt/holster/legholster
+	ears = /obj/item/radio/headset/headset_ncr/alt
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 2,

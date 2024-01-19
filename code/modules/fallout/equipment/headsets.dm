@@ -67,6 +67,16 @@
 	linked_faction = FACTION_NCR
 	factionized = TRUE
 
+/obj/item/radio/headset/headset_ncr/alt
+	name = "\improper NCR bowman radio headset"
+	icon_state = "com_headset_alt"
+	item_state = "com_headset_alt"
+	desc = "This is used by the New California Republic. Protects ears from flashbangs.\nUse .w To access the NCR channel."
+
+/obj/item/radio/headset/headset_ncr/alt/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
+
 /obj/item/radio/headset/headset_ncr/command
 	name = "\improper NCR command radio headset"
 	desc = "This is used by the Command of the New California Republic. Protects ears from flashbangs.\nChannels are as follows: .w - NCR, .r - Ranger."
