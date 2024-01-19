@@ -586,6 +586,5 @@
 /obj/item/reagent_containers/food/drinks/sunset/happyshark/bittercola
 	name = "Happy Sharky Bittercola"
 	desc = "A uniquely mixed cola brought to you by Happy Sharky Co. - Ice not included."
-	icon = 'modular_sunset/icons/obj/food/happy_shark.dmi'
 	icon_state = "shark_drink"
 	list_reagents = list(/datum/reagent/consumable/nuka_cola = 15, /datum/reagent/consumable/sodawater = 15, /datum/reagent/medicine/bitterdrink = 1)

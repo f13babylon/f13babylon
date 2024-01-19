@@ -983,8 +983,6 @@
 /obj/item/clothing/head/helmet/f13/goner
 	name = "dev-marked generic helmet"
 	desc = "A non-existent cheap-looking helmet."
-	icon = 'modular_sunset/icons/obj/clothing/hats.dmi'
-	mob_overlay_icon = 'modular_sunset/icons/mob/clothing/head.dmi'
 	icon_state = "goner_helmet"
 	armor = list("melee" = 25, "bullet" = 10, "laser" = 10, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 30)
 	dynamic_hair_suffix = ""

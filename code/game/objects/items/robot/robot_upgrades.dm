@@ -756,11 +756,11 @@ as performing this in action() will cause the upgrade to end up in the borg inst
 			accesstxt = GLOB.accesstoradio["[access]"]
 			if(accesstxt)
 				added_channels |= accesstxt
-		playsound(src, "modular_sunset/sound/pipsounds/pip1.ogg", 40, 1)
+		playsound(src, "sound/f13items/pipsounds/pip1.ogg", 40, 1)
 		to_chat(user, span_info("Transceiver decryptions set."))
 
 /obj/item/borg/upgrade/radio_transceiver/attack_self(mob/user)
 	. = ..()
 	added_channels = list()
-	playsound(src, "modular_sunset/sound/pipsounds/pip1.ogg", 40, 1)
+	playsound(src, "sound/f13items/pipsounds/pip1.ogg", 40, 1)
 	to_chat(user, span_info("Transceiver decryptions reset."))

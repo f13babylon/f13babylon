@@ -99,7 +99,6 @@ const DmTarget = Juke.createTarget({
     'code/**',
     'modular_citadel/**',
     'modular_coyote/**',
-    'modular_sunset/**',
     'goon/**',
     'html/**',
     'icons/**',

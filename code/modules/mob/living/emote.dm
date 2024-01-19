@@ -801,7 +801,7 @@
 /datum/emote/warcry
 	key = "warcry"
 	key_third_person = "warcrys"
-	message = "<b>let out a warcry!!</b>"
+	message = "<b>lets out a war cry!!</b>"
 
 /datum/emote/flap
 	key = "flap"

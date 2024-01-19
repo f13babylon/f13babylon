@@ -197,9 +197,6 @@
 /obj/item/clothing/suit/f13/goner
 	name = "dev-patched dull trenchcoat"
 	desc = "A non-existent dull trenchcoat."
-	icon = 'modular_sunset/icons/obj/clothing/suits.dmi'
-	mob_overlay_icon = 'modular_sunset/icons/mob/clothing/suit.dmi'
-	anthro_mob_worn_overlay = 'modular_sunset/icons/mob/clothing/suit_digi.dmi'
 	icon_state = "goner_suit"
 	item_state = "ro_suit"
 	armor = list("melee" = 25, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 10)
