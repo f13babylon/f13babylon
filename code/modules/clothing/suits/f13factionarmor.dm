@@ -501,7 +501,7 @@
 	desc = "A set of standard issue Ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by."
 	icon_state = "ncr_patrol"
 	item_state = "ncr_patrol"
-	armor = list("melee" = 30, "bullet" = 50, "laser" = 40, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 30)
+	armor = list("melee" = 30, "bullet" = 50, "laser" = 40, "energy" = 10, "bomb" = 20, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 0, "wound" = 30)
 	mutantrace_variation = STYLE_DIGITIGRADE
 	unique_reskin = list(
 		"M1" = "ncr_patrol_old",
@@ -516,7 +516,7 @@
 	desc = "The NCR Veteran Ranger's armor consists of a pre-war L.A.P.D. riot suit under a duster with rodeo jeans. Considered one of the most prestigious suits of armor to earn and wear while in service of the NCR Rangers."
 	icon_state = "ranger"
 	item_state = "ranger"
-	armor = list("melee" = 25, "bullet" = 50, "laser" = 30, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 25, "bullet" = 50, "laser" = 30, "energy" = 15, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 	mutantrace_variation = STYLE_DIGITIGRADE
 	slowdown = 0.08
@@ -616,12 +616,6 @@
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 55, "energy" = 25, "bomb" = 30, "bio" = 30, "rad" = 30, "fire" = 30, "acid" = 0, "wound" = 30)
 	slowdown = 0.16
 	mutantrace_variation = STYLE_DIGITIGRADE
-
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/outcast
-	name = "brotherhood armor" //unused?
-	desc = "A superior combat armor set made by the Brotherhood of Steel, bearing a series of red markings."
-	icon_state = "brotherhood_armor_outcast"
-	item_state = "brotherhood_armor_outcast"
 
 //Oasis/Town
 /obj/item/clothing/suit/armor/f13/town
@@ -839,7 +833,7 @@
 	permeability_coefficient = 0.5
 	clothing_flags = THICKMATERIAL
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
-	armor = list("melee" = 25, "bullet" = 15, "laser" = 45, "energy" = 15, "bomb" = 10, "bio" = 100, "rad" = 100, "fire" = 10, "acid" = 10, "wound" = 10)
+	armor = list("melee" = 25, "bullet" = 15, "laser" = 45, "energy" = 15, "bomb" = 10, "bio" = 100, "rad" = 100, "fire" = 40, "acid" = 40, "wound" = 10)
 	strip_delay = 60
 	equip_delay_other = 60
 	flags_inv = HIDEJUMPSUIT

@@ -192,7 +192,7 @@
 	desc = "A white hazmat helmet with a coupling system, the visor looks to be made out of orange plexiglas."
 	clothing_flags = THICKMATERIAL
 	flags_inv = HIDEMASK|HIDEEARS|HIDEFACE|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
-	armor = list("melee" = 25, "bullet" = 15, "laser" = 45, "energy" = 15, "bomb" = 45, "bio" = 100, "rad" = 100, "fire" = 50, "acid" = 10, "wound" = 10)
+	armor = list("melee" = 25, "bullet" = 15, "laser" = 45, "energy" = 15, "bomb" = 10, "bio" = 100, "rad" = 100, "fire" = 40, "acid" = 40, "wound" = 10)
 	strip_delay = 60
 	equip_delay_other = 60
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
@@ -418,21 +418,21 @@
 	desc = "A simple cloth garrison cap to be worn when a helmet isn't necessary."
 	icon_state = "ncr_cap"
 	item_state = "ncr_cap"
-	armor = list("melee" = 10, "bullet" = 20, "laser" = 15, "energy" = 0, "bomb" = 0, "bio" = 10, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 10, "bullet" = 20, "laser" = 15, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 10)
 
 /obj/item/clothing/head/f13/ncr/slouch			//NCR slouch hat
 	name = "\improper NCR slouch hat"
 	desc = "An irregular issue NCR sun hat, the left side of the brim is pinned to the crown for ease with shouldering rifles."
 	icon_state = "ncr_slouch"
 	item_state = "ncr_slouch"
-	armor = list("melee" = 10, "bullet" = 20, "laser" = 15, "energy" = 0, "bomb" = 0, "bio" = 10, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 10, "bullet" = 20, "laser" = 15, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 10)
 
 /obj/item/clothing/head/f13/ncr/beret			//NCR beret
 	name = "\improper NCR beret"
 	desc = "A brown beret, worn by members of the NCRA."
 	icon_state = "scoutberet"
 	item_state = "scoutberet"
-	armor = list("melee" = 10, "bullet" = 20, "laser" = 15, "energy" = 0, "bomb" = 0, "bio" = 10, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 10, "bullet" = 20, "laser" = 15, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 10)
 
 /obj/item/clothing/head/f13/ncr/beret/medic		//NCR Medical Officer beret
 	name = "\improper NCR medical beret"
@@ -447,7 +447,7 @@
 	desc = "You're not supposed to see this."
 	icon_state = "ncr_steelpot"
 	item_state = "ncr_steelpot"
-	armor = list("melee" = 15, "bullet" = 35, "laser" = 25, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 10, "fire" = 20, "acid" = 0, "wound" = 25)
+	armor = list("melee" = 15, "bullet" = 35, "laser" = 25, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 25)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
 
 /obj/item/clothing/head/helmet/f13/ncr/Initialize(mapload)
@@ -476,7 +476,7 @@
 	toggle_message = "You pull the neckflap up on the"
 	alt_toggle_message = "You push the neckflap down on the"
 	visor_flags_inv = HIDEHAIR
-	armor = list("melee" = 10, "bullet" = 30, "laser" = 20, "energy" = 5, "bomb" = 15, "bio" = 20, "rad" = 20, "fire" = 15, "acid" = 0, "wound" = 20)
+	armor = list("melee" = 10, "bullet" = 30, "laser" = 20, "energy" = 5, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 20)
 
 /obj/item/clothing/head/helmet/f13/ncr/conscript/attack_self(mob/user)
 	if(can_toggle && !user.incapacitated())
@@ -508,7 +508,7 @@
 	actions_types = null
 	flags_inv = HIDEMASK|HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	mutantrace_variation = STYLE_MUZZLE
-	armor = list("melee" = 30, "bullet" = 20, "laser" = 10, "energy" = 0, "bomb" = 15, "bio" = 20, "rad" = 20, "fire" = 15, "acid" = 0, "wound" = 15)
+	armor = list("melee" = 30, "bullet" = 20, "laser" = 10, "energy" = 0, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 15)
 
 /obj/item/clothing/head/helmet/f13/ncr/corporal					//NCR Corporal helmet
 	name = "\improper NCR corporal helmet"
@@ -521,7 +521,7 @@
 	toggle_message = "You pull the goggles up on the"
 	alt_toggle_message = "You push the goggles down on the"
 	visor_flags_cover = HEADCOVERSEYES
-	armor = list("melee" = 15, "bullet" = 35, "laser" = 25, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 20, "acid" = 0, "wound" = 30)
+	armor = list("melee" = 15, "bullet" = 35, "laser" = 25, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 30)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
 
 /obj/item/clothing/head/helmet/f13/ncr/corporal/attack_self(mob/user)
@@ -568,7 +568,7 @@
 	icon_state = "hardhat0_ncr"
 	item_state = "hardhat0_ncr"
 	hat_type = "ncr"
-	armor = list("melee" = 15, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 50, "bio" = 20, "rad" = 20, "fire" = 50, "acid" = 0, "wound" = 30)
+	armor = list("melee" = 15, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 50, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 30)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
 
 /obj/item/clothing/head/helmet/f13/ncr/sapper		//NCR sapper beret (Combat Engineer helmet reskin)
@@ -576,7 +576,7 @@
 	desc = "A grey beret, issued to NCRA personnel that have passed Sapper School."
 	icon_state = "ncr_sapper_beret"
 	item_state = "ncr_sapper_beret"
-	armor = list("melee" = 15, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 50, "bio" = 20, "rad" = 20, "fire" = 50, "acid" = 0, "wound" = 30)
+	armor = list("melee" = 15, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 50, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 30)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
 
 /obj/item/clothing/head/helmet/f13/ncr/sergeant		//NCR Sergeant hat
@@ -584,7 +584,7 @@
 	desc = "A khaki campaign hat, popularly used by senior NCOs in the NCRA."
 	icon_state = "ncr_campaign"
 	item_state = "ncr_campaign"
-	armor = list("melee" = 20, "bullet" = 40, "laser" = 30, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 20, "acid" = 0, "wound" = 35)
+	armor = list("melee" = 20, "bullet" = 40, "laser" = 30, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 35)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 6)
 
 /obj/item/clothing/head/helmet/f13/ncr/sergeant/trenchraider			//NCR Sergeant helmet, Trench Raider loadout
@@ -593,7 +593,7 @@
 	icon_state = "steelpot_bandolier"
 	item_state = "steelpot_bandolier"
 	unique_reskin = list("M1" = "ncr_old_bandolier")
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 20, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 20, "acid" = 0, "wound" = 35)
+	armor = list("melee" = 40, "bullet" = 30, "laser" = 20, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 35)
 
 //HEAVY GUNNER
 /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d/ncr			//NCR Heavy Gunner helmet
@@ -602,7 +602,7 @@
 	icon_state = "t45bhelmet_ncr"
 	item_state = "t45bhelmet_ncr"
 	flash_protect = 1
-	armor = list("melee" = 45, "bullet" = 65, "laser" = 50, "energy" = 20, "bomb" = 40, "bio" = 20, "rad" = 20, "fire" = 40, "acid" = 0, "wound" = 50)
+	armor = list("melee" = 45, "bullet" = 65, "laser" = 50, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 40, "acid" = 0, "wound" = 50)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 	slowdown = 0.1		//0.35 with chestpiece
 
@@ -619,7 +619,7 @@
 	alt_toggle_message = "You push the visor up on the"
 	visor_flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDESNOUT
 	visor_flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 35, "bio" = 20, "rad" = 10, "fire" = 50, "acid" = 0, "wound" = 45)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 45)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 	slowdown = 0.05		//0.35 with chestpiece
 
@@ -651,7 +651,7 @@
 	desc = "A green beret with a silver pin, worn by officers of the NCRA."
 	icon_state = "ncr_officer_beret"
 	item_state = "ncr_officer_beret"
-	armor = list("melee" = 30, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 30, "bio" = 20, "rad" = 10, "fire" = 30, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 30, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 40)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 
 /obj/item/clothing/head/helmet/f13/ncr/officer/captain				//NCR Captain cap
@@ -659,7 +659,7 @@
 	desc = "A tan peaked cap with a silver pin, worn by high-ranking officers of the NCRA."
 	icon_state = "ncr_dresscap"
 	item_state = "ncr_dresscap"
-	armor = list("melee" = 35, "bullet" = 50, "laser" = 40, "energy" = 20, "bomb" = 30, "bio" = 20, "rad" = 10, "fire" = 30, "acid" = 0, "wound" = 45)
+	armor = list("melee" = 35, "bullet" = 50, "laser" = 40, "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 45)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10)
 
 /obj/item/clothing/head/helmet/f13/ncr/officer/captain/colonel		//NCR Colonel cap
@@ -674,7 +674,7 @@
 	desc = "A brown beret, issued to members of the NCR Recon Rangers."
 	icon_state = "ncr_sof_beret"
 	item_state = "ncr_sof_beret"
-	armor = list("melee" = 15, "bullet" = 35, "laser" = 30, "energy" = 10, "bomb" = 15, "bio" = 20, "rad" = 10, "fire" = 15, "acid" = 0, "wound" = 25)
+	armor = list("melee" = 15, "bullet" = 35, "laser" = 30, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 25)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 6)
 
 /obj/item/clothing/head/helmet/f13/ncr/trailranger		//Trail Ranger hat
@@ -682,7 +682,7 @@
 	desc = "One of the many hats worn by the NCR Trail Rangers."
 	icon_state = "cowboyrang"
 	item_state = "cowboyrang"
-	armor = list("melee" = 20, "bullet" = 30, "laser" = 25, "energy" = 5, "bomb" = 15, "bio" = 20, "rad" = 10, "fire" = 15, "acid" = 0, "wound" = 20)
+	armor = list("melee" = 20, "bullet" = 30, "laser" = 25, "energy" = 5, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 20)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 6)
 	unique_reskin = list(
 		"M1" = "vaquerohat",
@@ -698,7 +698,7 @@
 	desc = "An brown hat with a wide brim, standard issue for many members of the NCRR."
 	icon_state = "rangerhat"
 	item_state = "rangerhat"
-	armor = list("melee" = 30, "bullet" = 50, "laser" = 40, "energy" = 10, "bomb" = 20, "bio" = 30, "rad" = 10, "fire" = 20, "acid" = 0, "wound" = 30)
+	armor = list("melee" = 30, "bullet" = 50, "laser" = 40, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 30)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 6)
 	unique_reskin = list(
 		"M1" = "drillhat_old",
@@ -714,7 +714,7 @@
 	item_state = "ncr_patrol_helmet"
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACE|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
-	armor = list("melee" = 30, "bullet" = 50, "laser" = 40, "energy" = 10, "bomb" = 20, "bio" = 30, "rad" = 10, "fire" = 20, "acid" = 0, "wound" = 30)
+	armor = list("melee" = 30, "bullet" = 50, "laser" = 40, "energy" = 10, "bomb" = 20, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 0, "wound" = 30)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 6)
 	unique_reskin = list(
 		"M1" = "ncr_patrol_helmet_old",
@@ -731,7 +731,7 @@
 	desc = "A pre-war L.A.P.D. riot helmet, now repurposed for use by NCR Veteran Rangers."
 	icon_state = "ranger"
 	item_state = "ranger"
-	armor = list("melee" = 25, "bullet" = 50, "laser" = 30, "energy" = 15, "bomb" = 25, "bio" = 30, "rad" = 10, "fire" = 25, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 25, "bullet" = 50, "laser" = 30, "energy" = 15, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	dynamic_hair_suffix = ""
@@ -761,42 +761,35 @@
 	desc = "An improved combat helmet, bearing the symbol of the Knights."
 	icon_state = "brotherhood_helmet_knight"
 	item_state = "brotherhood_helmet_knight"
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 55, "energy" = 20, "bomb" = 25, "bio" = 0, "rad" = 10, "fire" = 25, "acid" = 0, "wound" = 25)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 55, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 25)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/senior
 	name = "brotherhood senior knight helmet"
 	desc = "An improved combat helmet, bearing the symbol of a Senior Knight."
 	icon_state = "brotherhood_helmet_senior"
 	item_state = "brotherhood_helmet_senior"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 60, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 20, "fire" = 30, "acid" = 0, "wound" = 30)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 60, "energy" = 25, "bomb" = 30, "bio" = 30, "rad" = 30, "fire" = 30, "acid" = 0, "wound" = 30)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/captain
 	name = "brotherhood head knight helmet"
 	desc = "An improved combat helmet, bearing the symbol of the Head Knight."
 	icon_state = "brotherhood_helmet_captain"
 	item_state = "brotherhood_helmet_captain"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 60, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 20, "fire" = 30, "acid" = 0, "wound" = 30)
+	armor = list("melee" = 55, "bullet" = 55, "laser" = 65, "energy" = 30, "bomb" = 35, "bio" = 0, "rad" = 30, "fire" = 35, "acid" = 0, "wound" = 35)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate
 	name = "initiate helmet"
 	desc = "An old degraded pre-war combat helmet, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_helmet"
 	item_state = "brotherhood_helmet"
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 20)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 0, "wound" = 20)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate/mk2
 	name = "reinforced knight helmet"
 	desc = "An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_helmet"
 	item_state = "brotherhood_helmet"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 55, "energy" = 25, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 25)
-
-/obj/item/clothing/head/helmet/f13/combat/brotherhood/outcast
-	name = "brotherhood helmet"
-	desc = " An improved combat helmet, bearing a series of red markings."
-	icon_state = "brotherhood_helmet_outcast"
-	item_state = "brotherhood_helmet_outcast"
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 20)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 55, "energy" = 25, "bomb" = 30, "bio" = 30, "rad" = 30, "fire" = 30, "acid" = 0, "wound" = 30)
 
 /obj/item/clothing/head/f13/boscap
 	name = "brotherhood formal cap"
