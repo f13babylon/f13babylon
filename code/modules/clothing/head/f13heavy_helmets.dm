@@ -6,7 +6,7 @@
 	name = "salvaged power helmet"
 	desc = "It's a salvaged power armor helmet of what..? YOU CAN'T SEE ME! STOP! REPORT TO CODERS!!"
 	slowdown = 0.1
-	flags_cover = HEADCOVERSEYES
+	flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH
 	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR|HIDESNOUT
 
 // T-45D
@@ -34,7 +34,7 @@
 	desc = "A salvaged T-45d powered armor, with the servos removed and a feathered headdress. Certain bits of plating have been stripped out to retain more freedom of movement."
 	icon_state = "tribal_PA_helmet"
 	item_state = "tribal_PA_helmet"
-	armor = list("melee" = 60, "bullet" = 55, "laser" = 45, "energy" = 15, "bomb" = 35, "bio" = 30, "rad" = 20, "fire" = 35, "acid" = 0, "wound" = 35)
+	armor = list("melee" = 60, "bullet" = 55, "laser" = 45, "energy" = 20, "bomb" = 30, "bio" = 30, "rad" = 20, "fire" = 30, "acid" = 0, "wound" = 35)
 	slowdown = 0.05		//0.35 with helmet
 
 // Midwest

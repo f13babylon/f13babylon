@@ -108,7 +108,7 @@
 	icon_state = "tribal_power_armor"
 	item_state = "tribal_power_armor"
 	mutantrace_variation = STYLE_DIGITIGRADE
-	armor = list("melee" = 60, "bullet" = 55, "laser" = 45, "energy" = 15, "bomb" = 35, "bio" = 30, "rad" = 20, "fire" = 35, "acid" = 0, "wound" = 35)
+	armor = list("melee" = 60, "bullet" = 55, "laser" = 45, "energy" = 20, "bomb" = 30, "bio" = 30, "rad" = 20, "fire" = 30, "acid" = 0, "wound" = 35)
 	slowdown = 0.3		//0.35 with armor
 
 // T-51B
