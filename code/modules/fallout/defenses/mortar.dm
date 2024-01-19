@@ -133,7 +133,7 @@
 
 		user.visible_message("<span class='notice'>[user] starts loading \a [mortar_shell.name] into [src].</span>",
 		"<span class='notice'>You start loading \a [mortar_shell.name] into [src].</span>")
-		playsound(loc, 'modular_sunset/sound/defenses/mortar_reload.ogg', 50, 1)
+		playsound(loc, 'sound/f13weapons/defenses/mortar_reload.ogg', 50, 1)
 		busy = 1
 
 		if(do_after(user, 15, src))
@@ -141,7 +141,7 @@
 			"<span class='notice'>You load \a [mortar_shell.name] into [src].</span>")
 			visible_message("\icon[src] <span class='danger'>The [name] fires!</span>")
 			user.dropItemToGround(mortar_shell, src)
-			playsound(loc, 'modular_sunset/sound/defenses/mortar_fire.ogg', 50, 1)
+			playsound(loc, 'sound/f13weapons/defenses/mortar_fire.ogg', 50, 1)
 			busy = 0
 			firing = 1
 			flick(icon_state + "_fire", src)
@@ -150,7 +150,7 @@
 			for(var/mob/M in range(7))
 				shake_camera(M, 3, 1)
 			spawn(travel_time) //What goes up
-				playsound(T, 'modular_sunset/sound/defenses/mortar_long_whistle.ogg', 50, 1)
+				playsound(T, 'sound/f13weapons/defenses/mortar_long_whistle.ogg', 50, 1)
 				spawn(45) //Must go down //This should always be 45 ticks!
 					mortar_shell.detonate(T)
 

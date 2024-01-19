@@ -905,3 +905,7 @@ GLOBAL_LIST_INIT(loot_t3_blueprint, list(
 	/obj/item/book/granter/crafting_recipe/blueprint/citykiller,
 	/obj/item/book/granter/crafting_recipe/blueprint/rangemaster,
 ))
+
+GLOBAL_LIST_INIT(trash_extra, list(
+	/obj/item/clothing/mask/gas/goner/aesthetic = 5
+))
