@@ -85,6 +85,7 @@
 #define CAT_SCAVENGING	"Scavenging & Tinkering"
 #define CAT_TOOL	"Tools & Workbench"
 #define CAT_MEDICAL "Medical"
+#define CAT_FARMING "Farming"
 #define CAT_MISCELLANEOUS	"Miscellaneous"
 #define CAT_PRIMAL	"Primal"
 #define CAT_CLOTHING	"Clothing"
@@ -108,6 +109,7 @@
 #define CAT_SPAGHETTI	"Food Spaghettis"
 #define CAT_ICE	"Food Frozen"
 #define CAT_DRINK "Drinks"
+#define CAT_BOTTLE "Bottling"
 
 #define RCD_FLOORWALL 1
 #define RCD_AIRLOCK 2
