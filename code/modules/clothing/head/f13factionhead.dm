@@ -568,7 +568,7 @@
 	icon_state = "hardhat0_ncr"
 	item_state = "hardhat0_ncr"
 	hat_type = "ncr"
-	armor = list("melee" = 15, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 50, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 30)
+	armor = list("melee" = 15, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 40, "acid" = 0, "wound" = 30)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
 
 /obj/item/clothing/head/helmet/f13/ncr/sapper		//NCR sapper beret (Combat Engineer helmet reskin)
@@ -576,7 +576,7 @@
 	desc = "A grey beret, issued to NCRA personnel that have passed Sapper School."
 	icon_state = "ncr_sapper_beret"
 	item_state = "ncr_sapper_beret"
-	armor = list("melee" = 15, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 50, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 30)
+	armor = list("melee" = 15, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 40, "acid" = 0, "wound" = 30)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
 
 /obj/item/clothing/head/helmet/f13/ncr/sergeant		//NCR Sergeant hat
