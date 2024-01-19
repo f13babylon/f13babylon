@@ -410,6 +410,22 @@
 	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR|HIDESNOUT
 	armor = list("melee" = 60, "bullet" = 50, "laser" = 40, "energy" = 20, "bomb" = 55, "bio" = 20, "rad" = 0, "fire" = 85, "acid" = 0, "wound" = 50)
 
+/obj/item/clothing/head/helmet/f13/combat/legion					//Legion Combat helmet
+	name = "legion combat helmet"
+	desc = "An old military grade pre-war helmet, repainted to the colour scheme of Caesar's Legion."
+	icon = 'icons/fallout/clothing/hats.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
+	icon_state = "legion-combat"
+	item_state = "legion-combat"
+
+/obj/item/clothing/head/helmet/f13/combat/mk2/legion				//Legion Reinforced Combat helmet
+	name = "reinforced legion combat helmet"
+	desc = "A pre-war helmet in good condition, made from advanced materialas and paintend in the colors of Caesar's Legion."
+	icon = 'icons/fallout/clothing/hats.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
+	icon_state = "legion-combat2"
+	item_state = "legion-combat2"
+
 //NCR
 
 //NON-COMBAT ROLES
@@ -621,7 +637,7 @@
 	visor_flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 45)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
-	slowdown = 0.05		//0.35 with chestpiece
+	slowdown = 0.04		//0.22 with helmet
 
 /obj/item/clothing/head/helmet/f13/ncr/heavygunner/attack_self(mob/user)
 	if(can_toggle && !user.incapacitated())
@@ -667,6 +683,18 @@
 	desc = "A tan peaked cap with a golden pin, worn by highest-ranking officers of the NCRA."
 	icon_state = "ncr_codresscap"
 	item_state = "ncr_codresscap"
+
+/obj/item/clothing/head/helmet/f13/combat/ncr						//NCR Combat helmet
+	name = "\improper NCR combat helmet"
+	desc = "An old military grade pre-war combat helmet, repainted to the colour scheme of the New California Republic."
+	icon_state = "ncr_helmet"
+	item_state = "ncr_helmet"
+
+/obj/item/clothing/head/helmet/f13/combat/mk2/ncr					//NCR Reinforced Combat helmet
+	name = "reinforced NCR combat helmet"
+	desc = "An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms, repainted to the colour scheme of the New California Republic."
+	icon_state = "ncr_helmet_mk2"
+	item_state = "ncr_helmet_mk2"
 
 //NCR Ranger
 /obj/item/clothing/head/helmet/f13/ncr/reconranger		//Recon Ranger hat
@@ -761,35 +789,35 @@
 	desc = "An improved combat helmet, bearing the symbol of the Knights."
 	icon_state = "brotherhood_helmet_knight"
 	item_state = "brotherhood_helmet_knight"
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 50, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 25)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 55, "energy" = 20, "bomb" = 20, "bio" = 15, "rad" = 15, "fire" = 20, "acid" = 0, "wound" = 20)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/senior
 	name = "brotherhood senior knight helmet"
 	desc = "An improved combat helmet, bearing the symbol of a Senior Knight."
 	icon_state = "brotherhood_helmet_senior"
 	item_state = "brotherhood_helmet_senior"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 55, "energy" = 25, "bomb" = 30, "bio" = 30, "rad" = 30, "fire" = 30, "acid" = 0, "wound" = 30)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 60, "energy" = 25, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 25)
 
-/obj/item/clothing/head/helmet/f13/combat/brotherhood/captain
+/obj/item/clothing/head/helmet/f13/combat/brotherhood/captain	//UNUSED
 	name = "brotherhood head knight helmet"
 	desc = "An improved combat helmet, bearing the symbol of the Head Knight."
 	icon_state = "brotherhood_helmet_captain"
 	item_state = "brotherhood_helmet_captain"
-	armor = list("melee" = 55, "bullet" = 55, "laser" = 60, "energy" = 30, "bomb" = 35, "bio" = 0, "rad" = 30, "fire" = 35, "acid" = 0, "wound" = 35)
+	armor = list("melee" = 55, "bullet" = 55, "laser" = 65, "energy" = 30, "bomb" = 30, "bio" = 25, "rad" = 25, "fire" = 30, "acid" = 0, "wound" = 30)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate
 	name = "initiate helmet"
 	desc = "An old degraded pre-war combat helmet, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_helmet"
 	item_state = "brotherhood_helmet"
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 0, "wound" = 20)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 15, "bomb" = 15, "bio" = 10, "rad" = 10, "fire" = 15, "acid" = 0, "wound" = 15)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate/mk2
 	name = "reinforced knight helmet"
 	desc = "An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_helmet"
 	item_state = "brotherhood_helmet"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 55, "energy" = 25, "bomb" = 30, "bio" = 30, "rad" = 30, "fire" = 30, "acid" = 0, "wound" = 30)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 55, "energy" = 25, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 25)
 
 /obj/item/clothing/head/f13/boscap
 	name = "brotherhood formal cap"
@@ -1210,18 +1238,6 @@
 
 //NCR
 
-/obj/item/clothing/head/helmet/f13/combat/ncr
-	name = "NCR combat helmet"
-	desc = "An old military grade pre-war combat helmet, repainted to the colour scheme of the New California Republic."
-	icon_state = "ncr_helmet"
-	item_state = "ncr_helmet"
-
-/obj/item/clothing/head/helmet/f13/combat/mk2/ncr
-	name = "reinforced NCR combat helmet"
-	desc = "An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms, repainted to the colour scheme of the New California Republic."
-	icon_state = "ncr_helmet_mk2"
-	item_state = "ncr_helmet_mk2"
-
 /obj/item/clothing/head/helmet/f13/ncr/mp	//NCR Military Police helmet (UNUSED)
 	name = "NCR military police helmet"
 	desc = "A standard issue NCR helmet, with the letters \"MP\" scrawled on the front."
@@ -1230,22 +1246,6 @@
 	unique_reskin = list("M1" = "ncr_old_mp")
 
 //Legion
-
-/obj/item/clothing/head/helmet/f13/combat/legion
-	name = "Legion combat helmet"
-	desc = "An old military grade pre-war helmet, repainted to the colour scheme of Caesar's Legion."
-	icon = 'icons/fallout/clothing/hats.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
-	icon_state = "legion-combat"
-	item_state = "legion-combat"
-
-/obj/item/clothing/head/helmet/f13/combat/mk2/legion
-	name = "reinforced Legion combat helmet"
-	desc = "A pre-war helmet in good condition, made from advanced materialas and paintend in the colors of Caesar's Legion."
-	icon = 'icons/fallout/clothing/hats.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
-	icon_state = "legion-combat2"
-	item_state = "legion-combat2"
 
 /obj/item/clothing/head/helmet/f13/legion/venator	//Legion Venator helmet (UNUSED)
 	name = "legion explorer hood"

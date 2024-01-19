@@ -279,14 +279,14 @@
 	armor = list("melee" = 35, "bullet" = 45, "laser" = 30, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 40)
 	slowdown = 0.08
 
-/obj/item/clothing/suit/armor/f13/legion/centurion/legate
+/obj/item/clothing/suit/armor/f13/legion/centurion/legate			//Legion Legate armor
 	name = "legion legate armor"
 	desc = " Made by the most skilled blacksmiths in Arizona, the bronzed steel of this rare armor offers good protection, and the scars on its metal proves it has seen use on the field."
 	icon_state = "legion_legate"
 	item_state = "legion_legate"
 	armor = list("melee" = 60, "bullet" = 50, "laser" = 40, "energy" = 20, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
 
-/obj/item/clothing/suit/armor/f13/combat/legion
+/obj/item/clothing/suit/armor/f13/combat/legion						//Legion Combat armor
 	name = "legion combat armor"
 	desc = "Pre-war military style armor, patched and missing some parts. Modified and repainted to declare the user a fighter for Caesar's Legion."
 	icon = 'icons/fallout/clothing/armored_medium.dmi'
@@ -294,7 +294,7 @@
 	icon_state = "legion_combat"
 	item_state = "legion_combat"
 
-/obj/item/clothing/suit/armor/f13/combat/mk2/legion
+/obj/item/clothing/suit/armor/f13/combat/mk2/legion					//Legion Reinforced Combat armor
 	name = "reinforced legion combat armor"
 	icon = 'icons/fallout/clothing/armored_medium.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_medium.dmi'
@@ -438,7 +438,7 @@
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 45)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
-	slowdown = 0.2		//0.25 with chestpiece
+	slowdown = 0.18		//0.22 with helmet
 
 //OFFICER ROLES
 /obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/officer					//NCR Lieutenant armor
@@ -463,6 +463,18 @@
 	desc = "A special issue NCR officer's greatcoat with heavy ballistic padding sewn-in for protection."
 	icon_state = "ncr_officer_coat"
 	item_state = "ncr_officer_coat"
+
+/obj/item/clothing/suit/armor/f13/combat/ncr
+	name = "\improper NCR combat armor"
+	desc = "An old military grade pre war combat armor and, repainted to the colour scheme of the New California Republic."
+	icon_state = "ncr_armor"
+	item_state = "ncr_armor"
+
+/obj/item/clothing/suit/armor/f13/combat/mk2/ncr
+	name = "reinforced NCR combat armor"
+	desc = "A reinforced set of bracers, greaves, and torso plating of prewar design. This one is kitted with additional plates and, repainted to the colour scheme of the New California Republic."
+	icon_state = "ncr_armor_mk2"
+	item_state = "ncr_armor_mk2"
 
 //RANGERS
 /obj/item/clothing/suit/toggle/armor/f13/reconranger		//Recon Ranger armor
@@ -580,40 +592,38 @@
 	desc = "A combat armor set made by the Brotherhood of Steel, standard issue for all Knights. It bears a red stripe."
 	icon_state = "brotherhood_armor_knight"
 	item_state = "brotherhood_armor_knight"
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 50, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 25)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 55, "energy" = 20, "bomb" = 20, "bio" = 15, "rad" = 15, "fire" = 20, "acid" = 0, "wound" = 20)
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/senior
 	name = "brotherhood senior knight armor"
 	desc = "A renforced combat armor set made by the Brotherhood of Steel, standard issue for all Senior Knights. It bears a silver stripe."
 	icon_state = "brotherhood_armor_senior"
 	item_state = "brotherhood_armor_senior"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 55, "energy" = 25, "bomb" = 30, "bio" = 30, "rad" = 30, "fire" = 30, "acid" = 0, "wound" = 30)
-	slowdown = 0.14
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 60, "energy" = 25, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 25)
 
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/captain
+/obj/item/clothing/suit/armor/f13/combat/brotherhood/captain	//UNUSED
 	name = "brotherhood head knight armor"
 	desc = "A renforced combat armor set made by the Brotherhood of Steel, standard issue for all Head Knights. It bears golden embroidery."
 	icon_state = "brotherhood_armor_captain"
 	item_state = "brotherhood_armor_captain"
-	armor = list("melee" = 55, "bullet" = 55, "laser" = 60, "energy" = 30, "bomb" = 35, "bio" = 0, "rad" = 30, "fire" = 35, "acid" = 0, "wound" = 35)
-	slowdown = 0.16
+	armor = list("melee" = 55, "bullet" = 55, "laser" = 65, "energy" = 30, "bomb" = 30, "bio" = 25, "rad" = 25, "fire" = 30, "acid" = 0, "wound" = 30)
+	slowdown = 0.15
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate
 	name = "initiate armor"
 	desc = "An old degraded pre war combat armor, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_armor"
 	item_state = "brotherhood_armor"
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 0, "wound" = 20)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 15, "bomb" = 15, "bio" = 10, "rad" = 10, "fire" = 15, "acid" = 0, "wound" = 15)
 	mutantrace_variation = STYLE_DIGITIGRADE
-	slowdown = 0.1
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate/mk2
 	name = "reinforced knight armor"
 	desc = "A reinforced set of bracers, greaves, and torso plating of prewar design This one is kitted with additional plates and, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_armor_mk2"
 	item_state = "brotherhood_armor_mk2"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 55, "energy" = 25, "bomb" = 30, "bio" = 30, "rad" = 30, "fire" = 30, "acid" = 0, "wound" = 30)
-	slowdown = 0.16
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 55, "energy" = 25, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 25)
+	slowdown = 0.15
 	mutantrace_variation = STYLE_DIGITIGRADE
 
 //Oasis/Town
@@ -864,18 +874,6 @@
 	mutantrace_variation = STYLE_DIGITIGRADE
 
 //NCR
-
-/obj/item/clothing/suit/armor/f13/combat/ncr
-	name = "NCR combat armor"
-	desc = "An old military grade pre war combat armor and, repainted to the colour scheme of the New California Republic."
-	icon_state = "ncr_armor"
-	item_state = "ncr_armor"
-
-/obj/item/clothing/suit/armor/f13/combat/mk2/ncr
-	name = "reinforced NCR combat armor"
-	desc = "A reinforced set of bracers, greaves, and torso plating of prewar design. This one is kitted with additional plates and, repainted to the colour scheme of the New California Republic."
-	icon_state = "ncr_armor_mk2"
-	item_state = "ncr_armor_mk2"
 
 //Town
 

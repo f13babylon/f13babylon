@@ -161,7 +161,7 @@
 	desc = "An old military grade pre war combat armor."
 	icon_state = "combat_armor"
 	item_state = "combat_armor"
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 0, "wound" = 20)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 10, "fire" = 15, "acid" = 0, "wound" = 15)
 	slowdown = 0.12
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 5)
 	mutantrace_variation = STYLE_DIGITIGRADE
@@ -169,7 +169,7 @@
 /obj/item/clothing/suit/armor/f13/combat/laserproof
 	name = "ablative combat armor"
 	desc = "An old military grade pre war combat armor. This one switches out its ballistic fibers for an ablative coating that disrupts energy weapons."
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 55, "energy" = 20, "bomb" = 20, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 0, "wound" = 20)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 50, "energy" = 15, "bomb" = 15, "bio" = 10, "rad" = 10, "fire" = 15, "acid" = 0, "wound" = 15)
 
 /obj/item/clothing/suit/armor/f13/combat/dark
 	name = "combat armor"
@@ -190,7 +190,7 @@
 	icon_state = "combat_coat"
 	item_state = "combat_coat"
 	desc = "A heavy armor with ballistic inserts, sewn into a padded riot police coat."
-	armor = list("melee" = 55, "bullet" = 55, "laser" = 40, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 10, "fire" = 30, "acid" = 0, "wound" = 30)
+	armor = list("melee" = 35, "bullet" = 50, "laser" = 45, "energy" = 15, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 25)
 	slowdown = 0.16
 
 /obj/item/clothing/suit/armor/f13/combat/mk2
@@ -199,7 +199,7 @@
 	icon = 'icons/obj/clothing/suits.dmi'
 	icon_state = "combat_armor_mk2"
 	item_state = "combat_armor_mk2"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 25)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 20, "acid" = 0, "wound" = 20)
 	slowdown = 0.14
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10)
 	mutantrace_variation = STYLE_DIGITIGRADE
@@ -214,7 +214,7 @@
 	desc = "A custom version of the pre-war combat armor, slimmed down and minimalist for domestic S.W.A.T. teams."
 	icon_state = "armoralt"
 	item_state = "armoralt"
-	armor = list("melee" = 50, "bullet" = 40, "laser" = 40, "energy" = 15, "bomb" = 20, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 0, "wound" = 20)
+	armor = list("melee" = 50, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 10, "fire" = 15, "acid" = 0, "wound" = 15)
 	slowdown = 0.1
 
 /obj/item/clothing/suit/armor/f13/combat/chinese
@@ -228,7 +228,7 @@
 	desc = "An old military grade pre war combat armor. This set has seen better days, weathered by time. The composite plates look sound and intact still."
 	icon_state = "rusted_combat_armor"
 	item_state = "rusted_combat_armor"
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 15)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 5, "bomb" = 10, "bio" = 5, "rad" = 5, "fire" = 10, "acid" = 0, "wound" = 10)
 	slowdown = 0.12
 
 /obj/item/clothing/suit/armor/f13/combat/environmental
@@ -240,7 +240,7 @@
 	gas_transfer_coefficient = 0.9
 	permeability_coefficient = 0.5
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 80, "rad" = 80, "fire" = 60, "acid" = 60, "wound" = 20)
+	armor = list("melee" = 25, "bullet" = 15, "laser" = 35, "energy" = 15, "bomb" = 10, "bio" = 80, "rad" = 80, "fire" = 30, "acid" = 30, "wound" = 10)
 	strip_delay = 60
 	equip_delay_other = 60
 	flags_inv = HIDEJUMPSUIT
@@ -252,7 +252,7 @@
 /obj/item/clothing/suit/armor/f13/combat/mk2/raider
 	name = "raider combat armor"
 	desc = "An old set of reinforced combat armor with some parts supplanted with painspike armor. It seems less protective than a mint-condition set of combat armor."
-	armor = list("melee" = 50, "bullet" = 45, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 0, "wound" = 20)
+	armor = list("melee" = 45, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 10, "fire" = 15, "acid" = 0, "wound" = 15)
 	slowdown = 0.14
 	icon_state = "combat_armor_raider"
 	item_state = "combat_armor_raider"

@@ -54,7 +54,7 @@
 	icon_state = "combat_helmet"
 	item_state = "combat_helmet"
 	flags_inv = HIDEEARS|HIDEHAIR
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 0, "wound" = 20)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 10, "fire" = 15, "acid" = 0, "wound" = 15)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 5)
 
 /obj/item/clothing/head/helmet/f13/combat/dark
@@ -74,7 +74,7 @@
 	desc = "An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms."
 	icon_state = "combat_helmet_mk2"
 	item_state = "combat_helmet_mk2"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 25)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 20, "acid" = 0, "wound" = 20)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
 	flags_cover = HEADCOVERSEYES
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10)
@@ -88,33 +88,32 @@
 	desc = "A reinforced combat helmet painted black with the laser designator removed."
 	icon_state = "combat_helmet_raider"
 	item_state = "combat_helmet_raider"
-	armor = list("melee" = 50, "bullet" = 45, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 0, "wound" = 20)
+	armor = list("melee" = 45, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 10, "fire" = 15, "acid" = 0, "wound" = 15)
 
 /obj/item/clothing/head/helmet/f13/combat/rangerbroken
 	name = "broken riot helmet"
 	icon_state = "ranger_broken"
 	desc = "An old riot police helmet, out of use around the time of the war."
-	armor = list("melee" = 55, "bullet" = 55, "laser" = 40, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 10, "fire" = 30, "acid" = 0, "wound" = 30)
+	armor = list("melee" = 35, "bullet" = 50, "laser" = 45, "energy" = 15, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 25)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
-	resistance_flags = LAVA_PROOF | FIRE_PROOF
-	flash_protect = 1
 
 /obj/item/clothing/head/helmet/f13/combat/swat
 	name = "SWAT combat helmet"
 	desc = "A prewar combat helmet issued to S.W.A.T. personnel."
 	icon_state = "swatsyndie"
 	item_state = "swatsyndie"
-	armor = list("melee" = 50, "bullet" = 40, "laser" = 40, "energy" = 15, "bomb" = 20, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 0, "wound" = 20)
+	armor = list("melee" = 50, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 10, "fire" = 15, "acid" = 0, "wound" = 15)
 
 /obj/item/clothing/head/helmet/f13/combat/environmental
 	name = "environmental armor helmet"
 	desc = "A full head helmet and gas mask, developed for use in heavily contaminated environments."
 	icon_state = "env_helmet"
 	item_state = "env_helmet"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 80, "rad" = 80, "fire" = 60, "acid" = 60, "wound" = 20)
+	armor = list("melee" = 25, "bullet" = 15, "laser" = 35, "energy" = 15, "bomb" = 10, "bio" = 80, "rad" = 80, "fire" = 30, "acid" = 30, "wound" = 10)
 	strip_delay = 60
 	equip_delay_other = 60
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 
 /obj/item/clothing/head/helmet/f13/combat/environmental/ComponentInitialize()
