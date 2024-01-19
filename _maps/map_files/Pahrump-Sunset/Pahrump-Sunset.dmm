@@ -1971,7 +1971,7 @@
 	},
 /area/f13/wasteland/west)
 "ahu" = (
-/obj/item/trade_sign{
+/obj/structure/sign/trade_sign{
 	pixel_x = -6;
 	pixel_y = -7
 	},
@@ -25371,7 +25371,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "cVt" = (
-/obj/item/bighorn_sign,
+/obj/structure/sign/bighorn_sign,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontalbottomborderbottom0"
 	},
@@ -27698,7 +27698,7 @@
 /turf/closed/wall/f13/wood/house,
 /area/f13/wasteland/east)
 "dXP" = (
-/obj/item/highway_sign/casper,
+/obj/structure/sign/highway_sign/casper,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft0"
 	},
@@ -42055,7 +42055,7 @@
 	},
 /area/f13/wasteland/bighorn)
 "koD" = (
-/obj/item/highway_sign/warren,
+/obj/structure/sign/highway_sign/warren,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 7;
 	icon_state = "outerpavement"
@@ -42162,7 +42162,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/caves)
 "kqV" = (
-/obj/item/highway_sign/rocksprings,
+/obj/structure/sign/highway_sign/rocksprings,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 1;
 	icon_state = "outerpavement"
@@ -55187,7 +55187,7 @@
 	},
 /area/f13/wasteland/east)
 "pBy" = (
-/obj/item/highway_sign/rocksprings,
+/obj/structure/sign/highway_sign/rocksprings,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 7;
 	icon_state = "outerpavement"
@@ -68901,7 +68901,7 @@
 	},
 /area/f13/wasteland/firestation)
 "vjo" = (
-/obj/item/highway_sign/warren,
+/obj/structure/sign/highway_sign/warren,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland/east)
 "vju" = (
@@ -69766,7 +69766,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/bighorn)
 "vAE" = (
-/obj/item/highway_sign/casper,
+/obj/structure/sign/highway_sign/casper,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright0"
 	},
