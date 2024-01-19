@@ -255,7 +255,7 @@
 /obj/structure/fluff/destroyed_nuclear_reactor
 	name = "Destroyed Nuclear Reactor"
 	desc = "What in the hell happened here?"
-	icon = 'modular_sunset/icons/obj/rbmk.dmi'
+	icon = 'icons/fallout/objects/structures/rbmk.dmi'
 	icon_state = "reactor_slagged"
 	pixel_x = -32
 	pixel_y = -32

@@ -1180,3 +1180,33 @@
 	granted_trait = TRAIT_HOLY
 	traitname = "holy"
 	remarks = list("You already know everything")
+
+/obj/item/book/granter/martial/yan
+	martial = /datum/martial_art/oldserker
+	name = "Canis' Journal"
+	martialname = "berserker rage"
+	desc = "A detailing of the journey Canis has taken."
+	greet = "You remember your survival skills. Guns are now of no use to you."
+	icon_state = "book1"
+	oneuse = TRUE
+	pages_to_mastery = 0
+	time_per_page = 0
+
+/obj/item/book/granter/martial/krig
+	name = "Krig's Journal"
+	desc = "A detailing of the journey Krig has taken."
+	martialname = MARTIALART_KRIGSERKER
+	martial = /datum/martial_art/krigserker
+	icon_state = "book1"
+	oneuse = TRUE
+	greet ="You remember your survival skills."
+	time_per_page = 0
+	pages_to_mastery = 0
+
+/obj/item/book/granter/crafting_recipe/happysharky
+	name = "Happy Sharky Co. Cuisine"
+	desc = "A cook book that teaches you the ways of Happy Sharky Co."
+	crafting_recipe_types = list(/datum/crafting_recipe/food/sunset/happyshark/jerky, /datum/crafting_recipe/food/sunset/happyshark/candybar, /datum/crafting_recipe/food/sunset/happyshark/bittercola)
+	icon_state = "book1"
+	oneuse = TRUE
+	remarks = list("The secret ingredients are revealed to you.")

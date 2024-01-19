@@ -211,11 +211,11 @@
 /obj/item/mortar_kit/attack_self(mob/user)
 	user.visible_message("<span class='notice'>[user] starts deploying [src].",
 	"<span class='notice'>You start deploying [src].")
-	playsound(loc, 'modular_sunset/sound/defenses/mortar_unpack.ogg', 25, 1)
+	playsound(loc, 'sound/f13weapons/defenses/mortar_unpack.ogg', 25, 1)
 	if(do_after(user, 40, src))
 		user.visible_message("<span class='notice'>[user] deploys [src].",
 		"<span class='notice'>You deploy [src].")
-		playsound(loc, 'modular_sunset/sound/defenses/mortar_unpack.ogg', 25, 1)
+		playsound(loc, 'sound/f13weapons/defenses/mortar_unpack.ogg', 25, 1)
 		var/obj/structure/mortar/M = new /obj/structure/mortar(get_turf(user))
 		M.dir = user.dir
 		del(src)

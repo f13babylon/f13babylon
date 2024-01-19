@@ -194,6 +194,43 @@
 	item_state = "sexymaid_s"
 	body_parts_covered = CHEST
 
+/obj/item/clothing/suit/f13/goner
+	name = "dev-patched dull trenchcoat"
+	desc = "A non-existent dull trenchcoat."
+	icon = 'modular_sunset/icons/obj/clothing/suits.dmi'
+	mob_overlay_icon = 'modular_sunset/icons/mob/clothing/suit.dmi'
+	anthro_mob_worn_overlay = 'modular_sunset/icons/mob/clothing/suit_digi.dmi'
+	icon_state = "goner_suit"
+	item_state = "ro_suit"
+	armor = list("melee" = 25, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 10)
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	mutantrace_variation = STYLE_DIGITIGRADE
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets
+
+/obj/item/clothing/suit/f13/goner/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/f13/goner/red
+	name = "red-patched drab trenchcoat"
+	desc = "An olive drab trenchcoat with red linings and arm patches.<br>Guess war can be boring too."
+	icon_state = "goner_suit_r"
+
+/obj/item/clothing/suit/f13/goner/green
+	name = "green-patched drab trenchcoat"
+	desc = "An olive drab trenchcoat with green linings and arm patches.<br>Guess war can be boring too."
+	icon_state = "goner_suit_g"
+
+/obj/item/clothing/suit/f13/goner/blue
+	name = "blue-patched drab trenchcoat"
+	desc = "An olive drab trenchcoat with blue linings and arm patches.<br>Guess war can be boring too."
+	icon_state = "goner_suit_b"
+
+/obj/item/clothing/suit/f13/goner/yellow
+	name = "yellow-patched drab trenchcoat"
+	desc = "An olive drab trenchcoat with yellow linings and arm patches.<br>Guess war can be boring too."
+	icon_state = "goner_suit_y"
+
 /obj/item/clothing/suit/f13/blacksmith_apron
 	name = "blacksmith apron"
 	desc = "A heavy leather apron designed for protecting the user when metalforging."
