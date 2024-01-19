@@ -211,8 +211,13 @@
 	name = "knight armor"
 	result = /obj/item/clothing/suit/armor/f13/combat/brotherhood
 	blacklist = list(/obj/item/clothing/suit/armor/f13/combat/mk2)
-	reqs = list(/obj/item/clothing/suit/armor/f13/combat = 1,
-				/obj/item/toy/crayon/spraycan)
+	reqs = list(
+		/obj/item/clothing/suit/armor/f13/combat = 1,
+		/obj/item/stack/crafting/metalparts = 5,
+		/obj/item/stack/crafting/goodparts = 5,
+		/obj/item/toy/crayon/spraycan,
+	)
+	tools = list(TOOL_WORKBENCH, TOOL_CROWBAR, TOOL_SCREWDRIVER)
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
@@ -222,8 +227,13 @@
 	name = "knight helmet"
 	result = /obj/item/clothing/head/helmet/f13/combat/brotherhood
 	blacklist = list(/obj/item/clothing/head/helmet/f13/combat/mk2)
-	reqs = list(/obj/item/clothing/head/helmet/f13/combat = 1,
-				/obj/item/toy/crayon/spraycan)
+	reqs = list(
+		/obj/item/clothing/head/helmet/f13/combat = 1,
+		/obj/item/stack/crafting/metalparts = 5,
+		/obj/item/stack/crafting/goodparts = 5,
+		/obj/item/toy/crayon/spraycan,
+	)
+	tools = list(TOOL_WORKBENCH, TOOL_CROWBAR, TOOL_SCREWDRIVER)
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
@@ -233,8 +243,14 @@
 	name = "reinforced knight armor"
 	result = /obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate/mk2
 	blacklist = list(/obj/item/clothing/suit/armor/f13/combat)
-	reqs = list(/obj/item/clothing/suit/armor/f13/combat/mk2 = 1,
-				/obj/item/toy/crayon/spraycan)
+	reqs = list(
+		/obj/item/clothing/suit/armor/f13/combat/mk2 = 1,
+		/obj/item/stack/crafting/metalparts = 5,
+		/obj/item/stack/crafting/goodparts = 5,
+		/obj/item/stack/sheet/prewar = 5,
+		/obj/item/toy/crayon/spraycan,
+	)
+	tools = list(TOOL_WORKBENCH, TOOL_CROWBAR, TOOL_SCREWDRIVER)
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
@@ -244,8 +260,14 @@
 	name = "reinforced knight helmet"
 	result = /obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate/mk2
 	blacklist = list(/obj/item/clothing/head/helmet/f13/combat)
-	reqs = list(/obj/item/clothing/head/helmet/f13/combat/mk2 = 1,
-				/obj/item/toy/crayon/spraycan)
+	reqs = list(
+		/obj/item/clothing/head/helmet/f13/combat/mk2 = 1,
+		/obj/item/stack/crafting/metalparts = 5,
+		/obj/item/stack/crafting/goodparts = 5,
+		/obj/item/stack/sheet/prewar = 5,
+		/obj/item/toy/crayon/spraycan,
+	)
+	tools = list(TOOL_WORKBENCH, TOOL_CROWBAR, TOOL_SCREWDRIVER)
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
