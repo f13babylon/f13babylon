@@ -257,3 +257,15 @@
 	item_state = "rangermask"
 	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS
 	visor_flags_inv = 0
+
+/obj/item/clothing/mask/gas/goner
+	name = "full gas mask"
+	desc = "A close-fitting mask.<br>Such equipment, perhaps, is beloved by many trenchers, mooks and romantically apocalyptic people."
+	icon_state = "goner_mask"
+	flags_inv = HIDEEARS | HIDEEYES | HIDEFACE | HIDEHAIR | HIDEFACIALHAIR | HIDESNOUT
+
+/obj/item/clothing/mask/gas/goner/aesthetic
+	name = "broken full gas mask"
+	desc = "A close-fitting mask. Alas, this one have broken filter along with hose, and could be used only for the looks or to conceal your identity."
+	gas_transfer_coefficient = 0.8
+	clothing_flags = NONE // Disables internals.

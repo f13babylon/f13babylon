@@ -1955,7 +1955,7 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/building)
 "bNb" = (
-/obj/item/minefield_sign{
+/obj/item/highway_sign/minefield_sign{
 	pixel_y = 8
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -7346,7 +7346,7 @@
 	},
 /area/f13/wasteland/warren)
 "gSN" = (
-/obj/item/minefield_sign{
+/obj/item/highway_sign/minefield_sign{
 	pixel_y = 8
 	},
 /turf/open/indestructible/ground/outside/sidewalk{

@@ -1,7 +1,7 @@
 /obj/structure/mortar
 	name = "M29 Mortar"
 	desc = "A lightweight infantry portable mortar. This one would appear pristine, if it weren't for the fact that it violently rattles when handled. Is this safe?"
-	icon = 'modular_sunset/icons/structures/mortar.dmi'
+	icon = 'icons/obj/fallout/mortar.dmi'
 	icon_state = "mortar_m402"
 	anchored = 1
 	density = 1
@@ -204,7 +204,7 @@
 /obj/item/mortar_kit
 	name = "\improper M29 mortar portable kit"
 	desc = "A manual, crew-operated mortar system intended to rain down 80mm goodness on anything it's aimed at. Needs to be set down first"
-	icon = 'modular_sunset/icons/structures/mortar.dmi'
+	icon = 'icons/obj/fallout/mortar.dmi'
 	icon_state = "mortar_m402_carry"
 	w_class = 5
 
@@ -228,7 +228,7 @@
 /obj/item/mortar_shell
 	name = "\improper 80mm mortar shell (HE)"
 	desc = "A hefty mortar shell. Looks to be an HE round."
-	icon = 'modular_sunset/icons/structures/mortar.dmi'
+	icon = 'icons/obj/fallout/mortar.dmi'
 	icon_state = "mortar_ammo_he"
 	w_class = 5
 

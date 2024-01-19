@@ -48728,7 +48728,7 @@
 "mUU" = (
 /turf/closed/indestructible/rock{
 	desc = "A wall made out of solid brick.";
-	icon = 'modular_sunset/icons/turfs/walls/brick_small_dark.dmi';
+	icon = 'icons/fallout/turfs/walls/brick_small_dark.dmi';
 	icon_state = "brick0";
 	icon_type_smooth = "brick";
 	name = "brick wall";

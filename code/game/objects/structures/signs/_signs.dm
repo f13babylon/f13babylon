@@ -131,3 +131,69 @@
 	name = "nanotrasen logo"
 	desc = "The Nanotrasen corporate logo."
 	icon_state = "nanotrasen_sign1"
+
+
+
+// Sunset Signs - SMALL
+/obj/structure/sign/highway_sign
+	name = "highway sign"
+	desc = "A metal highway sign. This one is blank."
+	icon = 'icons/fallout/structures/signs.dmi'
+	icon_state = "sign_template"
+	density = TRUE
+
+/obj/structure/sign/highway_sign/casper
+	name = "Casper"
+	desc = "An aged highway sign indicating the road leads to Casper."
+	icon_state = "sign_casper"
+
+/obj/structure/sign/highway_sign/bighorn
+	name = "Bighorn National Park"
+	desc = "An aged highway sign indicating the road leads to the Bighorn National Park."
+	icon_state = "sign_bighorn"
+
+/obj/structure/sign/highway_sign/gillette
+	name = "Gillette"
+	desc = "An aged highway sign indicating the road leads to Gillette."
+	icon_state = "sign_gillette"
+
+/obj/structure/sign/highway_sign/rocksprings
+	name = "Rock Springs"
+	desc = "An aged highway sign indicating the road leads to Rock Springs."
+	icon_state = "sign_rocksprings"
+
+/obj/structure/sign/highway_sign/warren
+	name = "Warren"
+	desc = "An aged highway sign indicating the road leads to the city of Warren."
+	icon_state = "sign_warren"
+
+/obj/structure/sign/minefield
+	name = "Minefield Warning"
+	desc = "Appears to be warning that there is a minefield in the area. Watch your step."
+	icon = 'icons/fallout/structures/signs.dmi'
+	icon_state = "sign_minefield"
+	density = TRUE
+
+/obj/structure/sign/bee_warning
+	name = "Beeware, Bees"
+	desc = "Appears to be warning of a potential dangerous bee hive and that ample protection should be worn."
+	icon_state = "beewarning"
+	density = TRUE
+
+// Sunset Signs - LARGE
+
+/obj/structure/sign/bighorn_sign
+	name = "Bighorn sign"
+	desc = "A repurposed highway sign with the spray painted name of 'Bighorn'."
+	icon = 'icons/fallout/structures/signs_large.dmi'
+	icon_state = "bighorn_hvysign"
+	density = TRUE
+	bound_width = 64
+
+/obj/structure/sign/trade_sign
+	name = "Trade sign"
+	desc = "A wooden sign with seemingly hand forged lettering bolted to it."
+	icon = 'icons/fallout/structures/signs_large.dmi'
+	icon_state = "sign_trade_south"
+	density = TRUE
+	bound_width = 64
