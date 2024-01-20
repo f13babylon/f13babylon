@@ -456,7 +456,6 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/hatch{
-	req_access = null;
 	req_access_txt = "134";
 	id_tag = "encvirology"
 	},
@@ -508,7 +507,6 @@
 	},
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/hatch{
-	req_access = null;
 	req_access_txt = "134";
 	name = "Lobster room"
 	},
@@ -1217,7 +1215,7 @@
 /mob/living/simple_animal/pet/cat/kitten{
 	name = "encat";
 	health = 50;
-	faction = list("neutral", "hostile", "wastebot", "enclave", "BOS", "deathclaw", "supermutant");
+	faction = list("neutral","hostile","wastebot","enclave","BOS","deathclaw","supermutant");
 	maxHealth = 50;
 	desc = "You could imagine it meowing 'GOD BLESS AMERICA, OORAH' if it could. Instead, it just gives comically cute looks. It does have a tiny american flag dyed into its fur though, which is cool."
 	},
@@ -1374,7 +1372,6 @@
 /area/f13/building)
 "hL" = (
 /obj/machinery/door/airlock/hatch{
-	req_access = null;
 	req_access_txt = "134";
 	id_tag = "encroom2"
 	},
@@ -2176,7 +2173,6 @@
 /area/f13/enclave)
 "lY" = (
 /obj/machinery/door/airlock/hatch{
-	req_access = null;
 	req_access_txt = "134";
 	id_tag = "encroom1"
 	},
@@ -2406,7 +2402,6 @@
 /area/f13/enclave/innerchp)
 "np" = (
 /obj/machinery/door/airlock/hatch{
-	req_access = null;
 	req_access_txt = "134"
 	},
 /obj/structure/cable{
@@ -3263,7 +3258,6 @@
 /area/f13/enclave)
 "sc" = (
 /obj/machinery/door/airlock/hatch{
-	req_access = null;
 	req_access_txt = "134"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
@@ -3557,7 +3551,6 @@
 /area/f13/enclave)
 "tH" = (
 /obj/machinery/door/airlock/hatch{
-	req_access = null;
 	req_access_txt = "134"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
@@ -3897,7 +3890,6 @@
 /area/f13/enclave/mess)
 "vB" = (
 /obj/machinery/door/airlock/hatch{
-	req_access = null;
 	req_access_txt = "134"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
@@ -4146,7 +4138,6 @@
 /area/f13/enclave/briefing)
 "wR" = (
 /obj/machinery/door/airlock/hatch{
-	req_access = null;
 	req_access_txt = "134"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
@@ -4448,7 +4439,6 @@
 /area/f13/enclave/vertibird)
 "yI" = (
 /obj/machinery/door/airlock/hatch{
-	req_access = null;
 	req_access_txt = "134"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
@@ -5224,7 +5214,6 @@
 /area/f13/enclave/hydroponics)
 "Do" = (
 /obj/machinery/door/airlock/hatch{
-	req_access = null;
 	req_access_txt = "134";
 	name = "Reactor"
 	},
@@ -5937,17 +5926,6 @@
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plasteel/f13/vault_floor/blue,
 /area/f13/enclave/command)
-"HK" = (
-/obj/structure/girder/reinforced,
-/obj/structure/girder/reinforced,
-/obj/structure/lattice{
-	layer = 3
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/f13/vault_floor/plating{
-	name = "plating"
-	},
-/area/f13/enclave)
 "HL" = (
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 10
@@ -7155,7 +7133,6 @@
 "OG" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/door/airlock/hatch{
-	req_access = null;
 	req_access_txt = "134";
 	name = "Reactor"
 	},
@@ -7215,7 +7192,6 @@
 "OW" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/door/airlock/hatch{
-	req_access = null;
 	req_access_txt = "134"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
@@ -7389,7 +7365,6 @@
 "Qm" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/door/airlock/hatch{
-	req_access = null;
 	req_access_txt = "134"
 	},
 /obj/structure/barricade/wooden/planks/pregame,
@@ -8166,7 +8141,6 @@
 /area/f13/enclave/armory)
 "UX" = (
 /obj/machinery/door/airlock/hatch{
-	req_access = null;
 	req_access_txt = "134";
 	name = "Gym"
 	},
@@ -8458,7 +8432,6 @@
 /area/f13/mountain_area)
 "Wu" = (
 /obj/machinery/door/airlock/hatch{
-	req_access = null;
 	req_access_txt = "134";
 	id_tag = "encroom3"
 	},
@@ -20848,7 +20821,7 @@ nG
 GH
 GH
 kX
-HK
+DI
 iT
 HA
 HA
