@@ -177,7 +177,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/book/granter/trait/bigleagues = 1,
 		/obj/item/stack/f13Cash/random/denarius/high = 3,
 		/obj/item/stack/f13Cash/random/aureus/high = 2,
-		/obj/item/clothing/under/f13/oratorgarb = 1
+		/obj/item/clothing/under/f13/legion/oratorgarb = 1
 	)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13orator/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)

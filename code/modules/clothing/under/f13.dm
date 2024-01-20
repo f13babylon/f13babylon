@@ -419,7 +419,7 @@
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = TRUE
 
-/obj/item/clothing/under/f13/oratorgarb
+/obj/item/clothing/under/f13/legion/oratorgarb
 	name = "orators finery"
 	desc = "An ornate outfit designed for the orators of the legion. It's not practical in any way, but what it lacks there it makes up for in being flashy."
 	icon_state = "oratorgarb"
