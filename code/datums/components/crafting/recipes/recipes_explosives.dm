@@ -162,7 +162,8 @@
 				/obj/item/assembly/igniter = 1)
 	time = 90
 	always_available = FALSE
-	category = CAT_EXPLOSIVE
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
 
 /datum/crafting_recipe/explosive/shrapnelmine
 	name = "Shrapnel Mine"
