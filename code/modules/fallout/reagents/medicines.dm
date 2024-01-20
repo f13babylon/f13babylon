@@ -261,7 +261,7 @@
 	overdose_threshold = 31
 	value = REAGENT_VALUE_VERY_RARE
 	ghoulfriendly = TRUE
-	var/list/reagent_blacklist = list(/datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak/superimitation ,/datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
+	var/list/reagent_blacklist = list(/datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder,  /datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak/superimitation ,/datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
 	var/damage_offset = 0
 	var/affecting_tribal = FALSE
 
@@ -357,7 +357,7 @@
 	overdose_threshold = 31
 	value = REAGENT_VALUE_COMMON
 	ghoulfriendly = TRUE
-	var/list/reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak/superimitation ,/datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
+	var/list/reagent_blacklist = list(/datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak/superimitation ,/datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
 	var/damage_offset = 0
 	var/affecting_tribal = FALSE
 
@@ -455,7 +455,7 @@
 	overdose_threshold = 31
 	value = REAGENT_VALUE_RARE
 	ghoulfriendly = TRUE
-	var/list/reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak/superimitation ,/datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
+	var/list/reagent_blacklist = list(/datum/reagent/medicine/healingpowder, /datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak/superimitation ,/datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
 	var/damage_offset = 0
 	var/affecting_tribal = FALSE
 
