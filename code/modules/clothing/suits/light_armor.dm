@@ -442,17 +442,14 @@
 	armor = list("melee" = 55, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 35)
 	slowdown = 0.06
 	hoodtype = /obj/item/clothing/head/hooded/cloakhood/razorclaw
-	heat_protection = CHEST|GROIN|LEGS|ARMS|HANDS
-	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
-	resistance_flags = FIRE_PROOF | ACID_PROOF
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 
 /obj/item/clothing/head/hooded/cloakhood/razorclaw
 	name = "razorclaw helm"
 	icon_state = "helmet_razorclaw"
 	desc = "The skull of a legendary deathclaw."
 	armor = list("melee" = 55, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 35)
-	heat_protection = HEAD
-	resistance_flags = FIRE_PROOF | ACID_PROOF
+	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
 
 //////////////////////////
 // BROTHERHOOD OF STEEL //

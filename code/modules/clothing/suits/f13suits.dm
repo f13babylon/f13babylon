@@ -385,15 +385,15 @@
 	icon_state = "clawsuitcloak"
 	hoodtype = /obj/item/clothing/head/hooded/cloakhood/goliath
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
-	slowdown = 0.07
-	armor = list("melee" = 40, "bullet" = 20, "laser" = 40, "energy" = 25, "bomb" = 16, "bio" = 10, "rad" = 10, "fire" = 0, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 50, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 30)
+	slowdown = 0.06
 
 /obj/item/clothing/head/hooded/cloakhood/goliath
 	name = "deathclaw cloak hood"
 	desc = "A protective & concealing hood."
 	icon_state = "clawheadcloak"
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
-	armor = list("melee" = 40, "bullet" = 20, "laser" = 40, "energy" = 25, "bomb" = 16, "bio" = 10, "rad" = 10, "fire" = 0, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 50, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 30)
 
 /obj/item/clothing/suit/hooded/parka/medical
 	name = "armored medical parka"
