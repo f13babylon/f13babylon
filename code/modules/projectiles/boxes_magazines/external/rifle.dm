@@ -70,8 +70,10 @@
 
 /obj/item/ammo_box/magazine/m556mm/drum
 	name = "rifle drum magazine (5.56mm)"
+	desc = "A large drum magazine chambered for 5.56."
 	icon_state = "mdrum"
 	max_ammo = 50
+	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/ammo_box/magazine/m556mm/drum/empty
 	start_empty = 1
@@ -90,20 +92,24 @@
 
 /obj/item/ammo_box/magazine/m5mm/drum
 	name = "rifle drum magazine (5mm)"
+	desc = "A large drum magazine chambered for 5mm."
 	icon_state = "mdrum"
 	max_ammo = 50
+	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/ammo_box/magazine/m5mm/drum/empty
 	start_empty = 1
 
 /obj/item/ammo_box/magazine/mg11
 	name = "g11 magazine (5mm)"
+	desc = "A large polymer magazine made for the G11 rifle. The empty casings are automatically stored inside when fired."
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "mg11"
 	ammo_type = /obj/item/ammo_casing/a5mm
 	caliber = "a5mm"
 	max_ammo = 50
 	multiple_sprites = 2
+	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/ammo_box/magazine/mg11/empty
 	start_empty = 1
@@ -164,15 +170,18 @@
 	start_empty = 1
 
 /obj/item/ammo_box/magazine/m2mm
-	name = "2mm electromagnetic magazine"
+	name = "gauss rifle magazine (2mm)"
+	desc = "A large magazine filled with composite finned rail munitions and a heavy internal power cell, meant to be shot out of a \"gauss\" gun."
 	icon_state = "2mm"
 	ammo_type = /obj/item/ammo_casing/c2mm
 	caliber = "2mm"
 	max_ammo = 10
 	multiple_sprites = 2
+	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/ammo_box/magazine/m2mm/blender
 	name = "2mm \"Blender\" electromagnetic magazine"
+	desc = "A large special magazine filled with fragmenting finned rail munitions and a heavy internal power cell, meant to be shot out of a \"gauss\" gun."
 	ammo_type = /obj/item/ammo_casing/c2mm/blender
 	max_ammo = 10
 	multiple_sprites = 2

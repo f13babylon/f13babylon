@@ -312,7 +312,8 @@ GLOBAL_LIST_INIT(blueprint_fluff, list(
 				/obj/item/screwdriver/hightech,
 				/obj/item/wrench/hightech,
 				/obj/item/wirecutters/hightech,
-				/obj/item/multitool/advanced)
+				/obj/item/multitool/advanced,
+				/obj/item/crafting/grenade_casing)
 
 /obj/item/salvage/high
 	name = "Advanced pre-war salvage"
@@ -324,4 +325,5 @@ GLOBAL_LIST_INIT(blueprint_fluff, list(
 				/obj/item/advanced_crafting_components/conductors,
 				/obj/item/advanced_crafting_components/lenses,
 				/obj/item/advanced_crafting_components/flux,
+				/obj/item/crafting/grenade_casing,
 				/obj/item/blueprint/research)

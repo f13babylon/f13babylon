@@ -6077,6 +6077,13 @@
 /obj/structure/wreck/trash/engine,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/tunnel)
+"dmx" = (
+/obj/machinery/light/small,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/brotherhood)
 "doy" = (
 /obj/structure/sign/poster/prewar/poster79{
 	pixel_y = -32
@@ -7540,20 +7547,12 @@
 	},
 /area/f13/tunnel)
 "ggn" = (
-/obj/item/mining_scanner,
-/obj/item/mining_scanner,
-/obj/item/gps/mining,
-/obj/item/gps/mining,
-/obj/item/gps/mining,
-/obj/item/gps/mining,
-/obj/item/gps/mining,
-/obj/item/clothing/glasses/meson,
-/obj/item/clothing/glasses/meson,
-/obj/structure/closet,
-/obj/item/storage/bag/ore,
-/obj/item/storage/bag/ore,
-/obj/item/pickaxe/drill,
-/obj/item/pickaxe/drill,
+/obj/structure/ore_box,
+/obj/machinery/light/small{
+	dir = 1;
+	light_color = "#6C8DA6";
+	bulb_colour = "#6C8DA6"
+	},
 /turf/open/floor/f13{
 	color = "#818181";
 	icon_state = "floorrustysolid"
@@ -7668,12 +7667,12 @@
 /obj/item/gps/mining,
 /obj/item/clothing/glasses/meson,
 /obj/item/clothing/glasses/meson,
-/obj/structure/closet,
 /obj/item/storage/bag/ore,
 /obj/item/storage/bag/ore,
 /obj/machinery/light/small,
 /obj/item/pickaxe/drill,
 /obj/item/pickaxe/drill,
+/obj/structure/rack/shelf_metal,
 /turf/open/floor/f13{
 	color = "#818181";
 	icon_state = "floorrustysolid"
@@ -10628,6 +10627,26 @@
 /obj/machinery/vending/dinnerware,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building/museum)
+"lYJ" = (
+/obj/item/mining_scanner,
+/obj/item/mining_scanner,
+/obj/item/gps/mining,
+/obj/item/gps/mining,
+/obj/item/gps/mining,
+/obj/item/gps/mining,
+/obj/item/gps/mining,
+/obj/item/clothing/glasses/meson,
+/obj/item/clothing/glasses/meson,
+/obj/item/storage/bag/ore,
+/obj/item/storage/bag/ore,
+/obj/item/pickaxe/drill,
+/obj/item/pickaxe/drill,
+/obj/structure/rack/shelf_metal,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/brotherhood)
 "lZe" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/low,
@@ -16666,6 +16685,18 @@
 /obj/structure/stairs/east,
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
+	},
+/area/f13/brotherhood)
+"xvt" = (
+/obj/machinery/light/small{
+	dir = 1;
+	light_color = "#6C8DA6";
+	bulb_colour = "#6C8DA6"
+	},
+/obj/structure/rack/shelf_metal,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
 	},
 /area/f13/brotherhood)
 "xvv" = (
@@ -72901,7 +72932,7 @@ ffG
 frP
 frP
 frP
-aae
+frP
 aae
 aae
 aaa
@@ -73153,12 +73184,12 @@ aae
 aae
 aae
 frP
+xvt
 gdZ
 gdZ
 gdZ
-gdZ
+gxc
 frP
-aae
 aae
 aae
 aaa
@@ -73413,9 +73444,9 @@ frP
 lpl
 gdZ
 gdZ
-bkS
+gdZ
+lYJ
 frP
-aae
 aae
 aae
 aaa
@@ -73667,12 +73698,12 @@ aak
 aae
 aae
 frP
-gxc
-gdZ
-gdZ
 irV
+gdZ
+gdZ
+gdZ
+gdZ
 frP
-aae
 aae
 aae
 aaa
@@ -73927,9 +73958,9 @@ frP
 ggn
 gdZ
 gdZ
-irV
+bkS
+dmx
 frP
-aae
 aae
 aae
 aaa
@@ -74182,11 +74213,11 @@ aae
 aae
 frP
 frP
-frP
 cgy
 frP
 frP
-aae
+frP
+frP
 aae
 aae
 aaa
