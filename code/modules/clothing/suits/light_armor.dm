@@ -423,7 +423,8 @@
 	name = "deathclaw cloak"
 	icon_state = "deathclaw"
 	desc = "Made from the sinew and skin of the fearsome deathclaw, this cloak will shield its wearer from harm."
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 20, "energy" = 10, "bomb" = 40, "bio" = 20, "rad" = 20, "fire" = 40, "acid" = 10, "wound" = 10)
+	armor = list("melee" = 50, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 30)
+	slowdown = 0.06
 	hoodtype = /obj/item/clothing/head/hooded/cloakhood/deathclaw
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 
@@ -431,14 +432,15 @@
 	name = "deathclaw cloak hood"
 	icon_state = "hood_deathclaw"
 	desc = "A protective and concealing hood."
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 20, "energy" = 10, "bomb" = 40, "bio" = 20, "rad" = 20, "fire" = 40, "acid" = 10, "wound" = 10)
+	armor = list("melee" = 50, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 30)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
 
 /obj/item/clothing/suit/hooded/cloak/razorclaw
 	name = "razorclaw cloak"
 	icon_state = "razorclaw"
 	desc = "A suit of armour fashioned out of the remains of a legendary deathclaw."
-	armor = list("melee" = 45, "bullet" = 35, "laser" = 25, "energy" = 15, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 50, "acid" = 10, "wound" = 10)
+	armor = list("melee" = 55, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 35)
+	slowdown = 0.06
 	hoodtype = /obj/item/clothing/head/hooded/cloakhood/razorclaw
 	heat_protection = CHEST|GROIN|LEGS|ARMS|HANDS
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
@@ -448,7 +450,7 @@
 	name = "razorclaw helm"
 	icon_state = "helmet_razorclaw"
 	desc = "The skull of a legendary deathclaw."
-	armor = list("melee" = 45, "bullet" = 35, "laser" = 25, "energy" = 15, "bomb" = 50, "bio" = 30, "rad" = 25, "fire" = 50, "acid" = 10, "wound" = 10)
+	armor = list("melee" = 55, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 35)
 	heat_protection = HEAD
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 

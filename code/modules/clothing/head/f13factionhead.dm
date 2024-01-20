@@ -203,6 +203,7 @@
 	desc = "An advanced model of combat helmet worn by marines aboard the USS Democracy, second only to power armor in protection used by the USCM For various tasks and operations, it's handled the nuclear wasteland somewhat better than the rest of the armors you've seen."
 	icon_state = "enclave_marine"
 	item_state = "enclave_marine"
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 25)
 
 /obj/item/clothing/head/helmet/f13/enclave/usmcriot
 	name = "old United States Marine Corp riot helmet"
@@ -211,7 +212,7 @@
 	item_state = "modified_usmc_riot"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
-	armor = list("melee" = 55, "bullet" = 55, "laser" = 40, "energy" = 30, "bomb" = 35, "bio" = 60, "rad" = 30, "fire" = 35, "acid" = 20, "wound" = 35)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 35, "bomb" = 20, "bio" = 25, "rad" = 25, "fire" = 20, "acid" = 20, "wound" = 20)
 
 /obj/item/clothing/head/helmet/f13/enclave/usmcriot/Initialize(mapload)
 	. = ..()
@@ -234,7 +235,7 @@
 	desc = "Wheeled hat with a cap made of light-weight armored alloys beneath."
 	icon_state = "hat_enclave_officer"
 	item_state = "hat_enclave_officer"
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 35, "bomb" = 20, "bio" = 60, "rad" = 25, "fire" = 20, "acid" = 20, "wound" = 20)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 35, "bomb" = 20, "bio" = 25, "rad" = 25, "fire" = 20, "acid" = 20, "wound" = 20)
 	obj_flags = UNIQUE_RENAME
 	unique_reskin = list("M1" = "hosberetblack")
 
@@ -1269,7 +1270,4 @@
 	desc = "An intimidating helmet that is issued with it's corresponding suit."
 	icon_state = "remnant_helmet"
 	item_state = "remnant_helmet"
-
-/obj/item/clothing/head/helmet/f13/combat/enclave/ComponentInitialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 0, "wound" = 20)

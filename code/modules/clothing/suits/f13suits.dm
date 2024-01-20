@@ -464,20 +464,16 @@
 	desc = "A suit of armour fashioned out of the remains of a legendary deathclaw."
 	icon_state = "rcarmour"
 	hoodtype = /obj/item/clothing/head/hooded/cloakhood/hhunter
-	heat_protection = CHEST|GROIN|LEGS|ARMS|HANDS
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
-	resistance_flags = FIRE_PROOF | ACID_PROOF
-	slowdown = 0.05
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 25, "bomb" = 16, "bio" = 10, "rad" = 10, "fire" = 0, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 55, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 35)
+	slowdown = 0.06
 	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/head/hooded/cloakhood/hhunter
 	name = "Razorclaw helm"
 	desc = "The skull of a legendary deathclaw."
 	icon_state = "rchelmet"
-	heat_protection = HEAD
-	resistance_flags = FIRE_PROOF | ACID_PROOF
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 25, "bomb" = 16, "bio" = 10, "rad" = 10, "fire" = 0, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 55, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 35)
 
 /obj/item/clothing/suit/f13/jamrock
 	name = "disco-ass blazer"
