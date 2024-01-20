@@ -887,7 +887,6 @@
 				/obj/effect/spawner/lootdrop/f13/weapon/revolver44variants,
 				/obj/effect/spawner/bundle/f13/trenchshotgun,
 				/obj/effect/spawner/bundle/f13/revolver45,
-				/obj/effect/spawner/bundle/f13/smg22,
 				/obj/effect/spawner/bundle/f13/greasegun
 		)
 
@@ -910,6 +909,7 @@
 				/obj/effect/spawner/bundle/f13/automag,
 				/obj/effect/spawner/bundle/f13/deagle,
 				/obj/effect/spawner/bundle/f13/hunting,
+				/obj/effect/spawner/bundle/f13/smg22,
 				/obj/effect/spawner/bundle/f13/uzi,
 				/obj/effect/spawner/bundle/f13/mp5,
 				/obj/effect/spawner/bundle/f13/thompson,
@@ -2468,3 +2468,18 @@
 				/obj/effect/spawner/bundle/f13/wattz2k = 10,
 				/obj/effect/spawner/bundle/f13/ionrifle = 2
 				)
+
+/obj/effect/spawner/lootdrop/f13/gasmask_goner
+	name = "full gas mask working chance"
+	loot = list(
+		/obj/item/clothing/mask/gas/goner/aesthetic = 8,
+		/obj/item/clothing/mask/gas/goner = 2
+	)
+
+/obj/effect/spawner/bundle/f13/armor/goner/green
+	name = "green trencher outfit spawner"
+	items = list(
+		/obj/item/clothing/suit/f13/goner/green,
+		/obj/effect/spawner/lootdrop/f13/gasmask_goner,
+		/obj/item/clothing/head/helmet/f13/goner/green
+	)

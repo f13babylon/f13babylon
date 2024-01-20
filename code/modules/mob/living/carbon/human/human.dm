@@ -205,7 +205,7 @@
 	<A href='?src=[REF(user)];mach_close=mob[REF(src)]'>Close</A>
 	"}
 
-	var/datum/browser/popup = new(user, "mob[REF(src)]", "[src]", 440, 510)
+	var/datum/browser/popup = new(user, "mob[REF(src)]", "[src]", 440, 550)
 	popup.set_content(dat.Join())
 	popup.open()
 

@@ -974,7 +974,7 @@
 	traitname = "explosive crafting"
 	remarks = list("If you want to get started making bombs, you're going to need a lot of igniters and black powder.", "Did a Follower write this book, or something?", "All thermite takes is some aluminum and iron.", "Coconut shells make acceptable grenade casings in a pinch.")
 	crafting_recipe_types = list(/datum/crafting_recipe/frag_shrapnel, /datum/crafting_recipe/stinger, /datum/crafting_recipe/flashbang, /datum/crafting_recipe/explosive/dynamite,
-/datum/crafting_recipe/smokebomb, /datum/crafting_recipe/rocket_base, /datum/crafting_recipe/weakrocket, /datum/crafting_recipe/explosive/pipebomb)
+/datum/crafting_recipe/smokebomb, /datum/crafting_recipe/rocket_base, /datum/crafting_recipe/weakrocket, /datum/crafting_recipe/explosive/pipebomb, /datum/crafting_recipe/explosive/signalermine)
 
 /obj/item/book/granter/trait/explosives_advanced
 	name = "Advanced Techniques for Winning at Postal Chess"
@@ -984,7 +984,7 @@
 	traitname = "advanced explosive crafting"
 	remarks = list("Is this actually a legal chess move...?", "If you hook electronic parts up to a flux capacitor-oh, that makes a lot of sense, actually.", "Radium? What would you use radium f-oh no.", "Why would anyone actually publish this?")
 	crafting_recipe_types = list(/datum/crafting_recipe/incendiary, /datum/crafting_recipe/concussion, /datum/crafting_recipe/radgrenade, /datum/crafting_recipe/empgrenade, /datum/crafting_recipe/incendiaryrocket, /datum/crafting_recipe/strongrocket, /datum/crafting_recipe/frag_shrapnel, /datum/crafting_recipe/stinger, /datum/crafting_recipe/flashbang,
-/datum/crafting_recipe/smokebomb, /datum/crafting_recipe/rocket_base, /datum/crafting_recipe/weakrocket, /datum/crafting_recipe/explosive/c4, /datum/crafting_recipe/chemical_payload)
+/datum/crafting_recipe/smokebomb, /datum/crafting_recipe/rocket_base, /datum/crafting_recipe/weakrocket, /datum/crafting_recipe/explosive/c4, /datum/crafting_recipe/chemical_payload, /datum/crafting_recipe/explosive/chemical, /datum/crafting_recipe/explosive/signalermine)
 
 /obj/item/book/granter/trait/gunslinger
 	name = "Tycho: Life of a Lawman"
@@ -1180,3 +1180,33 @@
 	granted_trait = TRAIT_HOLY
 	traitname = "holy"
 	remarks = list("You already know everything")
+
+/obj/item/book/granter/martial/yan
+	martial = /datum/martial_art/oldserker
+	name = "Canis' Journal"
+	martialname = "berserker rage"
+	desc = "A detailing of the journey Canis has taken."
+	greet = "You remember your survival skills. Guns are now of no use to you."
+	icon_state = "book1"
+	oneuse = TRUE
+	pages_to_mastery = 0
+	time_per_page = 0
+
+/obj/item/book/granter/martial/krig
+	name = "Krig's Journal"
+	desc = "A detailing of the journey Krig has taken."
+	martialname = MARTIALART_KRIGSERKER
+	martial = /datum/martial_art/krigserker
+	icon_state = "book1"
+	oneuse = TRUE
+	greet ="You remember your survival skills."
+	time_per_page = 0
+	pages_to_mastery = 0
+
+/obj/item/book/granter/crafting_recipe/happysharky
+	name = "Happy Sharky Co. Cuisine"
+	desc = "A cook book that teaches you the ways of Happy Sharky Co."
+	crafting_recipe_types = list(/datum/crafting_recipe/food/sunset/happyshark/jerky, /datum/crafting_recipe/food/sunset/happyshark/candybar, /datum/crafting_recipe/food/sunset/happyshark/bittercola)
+	icon_state = "book1"
+	oneuse = TRUE
+	remarks = list("The secret ingredients are revealed to you.")

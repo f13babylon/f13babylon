@@ -582,3 +582,9 @@
 	icon_state = "monkey_energy"
 	list_reagents = list(/datum/reagent/consumable/monkey_energy = 50)
 	foodtype = SUGAR | JUNKFOOD
+
+/obj/item/reagent_containers/food/drinks/sunset/happyshark/bittercola
+	name = "Happy Sharky Bittercola"
+	desc = "A uniquely mixed cola brought to you by Happy Sharky Co. - Ice not included."
+	icon_state = "shark_drink"
+	list_reagents = list(/datum/reagent/consumable/nuka_cola = 15, /datum/reagent/consumable/sodawater = 15, /datum/reagent/medicine/bitterdrink = 1)
