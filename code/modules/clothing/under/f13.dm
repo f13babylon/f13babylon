@@ -381,7 +381,7 @@
 	can_adjust = FALSE
 
 /obj/item/clothing/under/f13/legion/oratorgarb
-	name = "camp follower male robe"
+	name = "legion orator finery"
 	desc = "A slightly skimpy, highly decorative, piece of clothing worn by the orators. It's design doesn't leave a lot for the imagination, but it does have real silver embroidery, so that's a plus."
 	icon_state = "oratorgarb"
 	item_state = "oratorgarb"
