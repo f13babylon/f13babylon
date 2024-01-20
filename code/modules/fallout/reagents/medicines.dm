@@ -115,7 +115,7 @@
 	description = "A chemical which aims to replicate the effects of the fluid found in pre-war stimpaks, albeit less effective."
 	color = "#df5342"
 	value = REAGENT_VALUE_UNCOMMON
-	reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder, /datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak, datum/reagent/medicine/stimpak/superimitation)
+	reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder, /datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/superimitation)
 	damage_offset = 2.25	//How much damage will be offset in one tick
 	clot_rate = 0.26	//26% as effective as Hydra at clotting bleeding wounds
 
