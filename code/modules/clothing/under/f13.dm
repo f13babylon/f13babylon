@@ -380,6 +380,14 @@
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
 
+/obj/item/clothing/under/f13/legion/oratorgarb
+	name = "camp follower male robe"
+	desc = "A slightly skimpy, highly decorative, piece of clothing worn by the orators. It's design doesn't leave a lot for the imagination, but it does have real silver embroidery, so that's a plus."
+	icon_state = "oratorgarb"
+	item_state = "oratorgarb"
+	fitted = FEMALE_UNIFORM_TOP
+	can_adjust = FALSE
+
 /obj/item/clothing/under/f13/campfollowerfemale
 	name = "camp follower female robe"
 	desc = "Olive colored cloth with a red sash."
