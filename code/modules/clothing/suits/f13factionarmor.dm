@@ -241,9 +241,9 @@
 
 /obj/item/clothing/suit/armor/f13/legion/orator
 	name = "Legion Orator armor"
-	desc = "The armor appears to be based off of a suit of Legion veteran armor, with the addition of bracers, a chainmail skirt, and large pauldrons.  A tabard emblazoned with the bull is loosely draped over the torso."
-	icon_state = "legion-orator"
-	item_state = "legion-orator"
+	desc = " A heavy red wool cape that barely covers the shoulders paired with golden bracers, this is not the armor of a soldier it's the armor of the orators. The chest is bare, so try not to get shot if you can help it."
+	icon_state = "oratorcape"
+	item_state = "oratorcape"
 	armor = list("melee" = 50, "bullet" = 35, "laser" = 20, "energy" = 5, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 10)
 
 /obj/item/clothing/suit/armor/f13/legion/prime/slavemaster
