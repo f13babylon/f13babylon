@@ -19270,7 +19270,6 @@
 /area/f13/ahs)
 "wop" = (
 /obj/structure/table,
-/obj/item/storage/box/strange_seeds_10pack,
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "wow" = (

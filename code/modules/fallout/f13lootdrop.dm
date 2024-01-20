@@ -1958,8 +1958,7 @@
 					/obj/item/seeds/plump,
 					/obj/item/seeds/reishi,
 					/obj/item/seeds/cannabis,
-					/obj/item/seeds/starthistle,
-					/obj/item/seeds/random)
+					/obj/item/seeds/starthistle)
 	. = ..()
 
 /obj/effect/spawner/lootdrop/f13/foodspawner

@@ -463,9 +463,7 @@
 					/obj/item/seeds/reishi,
 					/obj/item/seeds/banana,
 					/obj/item/seeds/eggplant/eggy,
-					/obj/item/seeds/poppy/lily/trumpet,
-					/obj/item/seeds/random,
-					/obj/item/seeds/random)
+					/obj/item/seeds/poppy/lily/trumpet
 	crate_name = "exotic seeds crate"
 	crate_type = /obj/structure/closet/crate/hydroponics
 
