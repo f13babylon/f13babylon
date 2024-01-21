@@ -162,6 +162,19 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 	slowdown = 0.025
 
+/obj/item/clothing/head/helmet/f13/jackal
+	name = "jackal headwrap"
+	desc = "A cloth head wrap that secures around the user's head, sporting a few rienforced points of leather underneath."
+	icon = 'icons/fallout/clothing/hats.dmi'
+	icon_state = "jackal"
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
+	armor = list("melee" = 35, "bullet" = 20, "laser" = 10, "energy" = 0, "bomb" = 25, "bio" = 20, "rad" = 30, "fire" = 30, "acid" = 20, "wound" = 10)
+	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
+
+/obj/item/clothing/head/helmet/f13/jackal/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
 /obj/item/clothing/head/helmet/f13/raidermetal
 	name = "metal raider helmet"
 	desc = "A metal helmet, rusty and awful."

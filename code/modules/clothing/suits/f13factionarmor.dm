@@ -77,11 +77,37 @@
 	desc = "A leather top with a bandolier over it and a straps that cover the arms. Comes with pockets."
 	icon_state = "badlands"
 	item_state = "badlands"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 30, "bio" = 0, "bomb" = 20, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 10)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
 	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/raider/badlands/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/raider/jackal
+	name = "Jackal armored rags"
+	desc = "A collection of spare rags and cloth sewn together into a robe-like uniform and pants, sporting a half-complete combat armor set over-top."
+	icon_state = "jackal"
+	item_state = "jackal"
+	icon = 'icons/fallout/clothing/armored_light.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
+	armor = list("melee" = 30, "bullet" = 30, "laser" = 15, "bio" = 0, "bomb" = 20, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 10)
+
+/obj/item/clothing/suit/armor/f13/raider/jackal/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/raider/ncrcfarmor
+	name = "NCRCF armored jacket"
+	desc = "An NCR Correctional Facility jacket worn overtop of a worn bullet proof vest. Simple, yet effective."
+	icon_state = "ncrcf_armor"
+	item_state = "ncrcf_armor"
+	icon = 'icons/fallout/clothing/armored_light.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
+	armor = list("melee" = 20, "bullet" = 30, "laser" = 20, "bio" = 0, "bomb" = 25, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 15)
+
+/obj/item/clothing/suit/armor/f13/raider/ncrcfarmor/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
