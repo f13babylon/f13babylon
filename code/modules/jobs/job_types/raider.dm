@@ -53,6 +53,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	/datum/outfit/loadout/raider_bos,
 	/datum/outfit/loadout/raider_ncr,
 	/datum/outfit/loadout/raider_legion,
+	/datum/outfit/loadout/raider_vault,
 	)
 
 /datum/outfit/job/raider/f13raider/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -241,6 +242,20 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 		/obj/item/book/granter/trait/bigleagues = 1,
 		/obj/item/reagent_containers/pill/patch/healingpowder = 2,
 	)
+
+/datum/outfit/loadout/raider_vault
+	name = "Vault Renegade"
+	suit = /obj/item/clothing/suit/armor/vest/big
+	head = /obj/item/clothing/head/helmet/riot/vaultsec
+	uniform = /obj/item/clothing/under/f13/exile/vault
+	id = /obj/item/card/id/rusted/fadedvaultid
+	backpack_contents = list(
+		/obj/item/gun/ballistic/revolver/colt6520 = 1,
+		/obj/item/ammo_box/l10mm = 3,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
+		/obj/item/book/granter/trait/research = 1,
+		)
+
 
 /*
 Reason this is commented out: Not needed, may re-use loadouts later

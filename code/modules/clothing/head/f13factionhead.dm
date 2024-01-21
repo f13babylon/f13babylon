@@ -273,7 +273,7 @@
 	name = "enclave officer pilot helmet"
 	desc = "A pre-war riot helmet, repurposed for duty aboard aircraft."
 
-/obj/item/clothing/head/helmet/f13/combat/mk2/remnant
+/obj/item/clothing/head/helmet/f13/combat/remnant
 	name = "remnant combat helmet"
 	desc = "A dark helmet with yellow lenses, used commonly in espionage or shadow ops."
 	icon_state = "remnant_helmet"
