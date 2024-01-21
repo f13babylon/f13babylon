@@ -644,12 +644,14 @@
 	actions_types = list(/datum/action/item_action/toggle)
 	toggle_message = "You pull the visor down on the"
 	alt_toggle_message = "You push the visor up on the"
-	visor_flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDESNOUT
-	visor_flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH
+	flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
 	dynamic_hair_suffix = ""
+	visor_flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH
+	visor_flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDESNOUT
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 45)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
-	slowdown = 0.04		//0.22 with helmet
+	slowdown = 0.04		//0.22 with chestpiece
 
 /obj/item/clothing/head/helmet/f13/ncr/heavygunner/attack_self(mob/user)
 	if(can_toggle && !user.incapacitated())
