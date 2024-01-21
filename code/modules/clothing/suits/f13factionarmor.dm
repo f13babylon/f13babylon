@@ -243,7 +243,7 @@
 //OFFICER ROLES
 /obj/item/clothing/suit/armor/f13/legion/veteran/decanus		//Legion Veteran Decanus armor
 	name = "legion veteran decanus armor"
-	desc = "A Legion veterans armor reinforced with a patched bulletproof vest, the wearer has the markings of a Decanus."
+	desc = "A veteran's armor reinforced with a patched bulletproof vest, the wearer has the markings of a Decanus."
 	icon = 'icons/fallout/clothing/armored_heavy.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_heavy.dmi'
 	icon_state = "legion_heavy"
