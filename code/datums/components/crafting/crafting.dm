@@ -48,6 +48,7 @@
 					//CAT_SHOES,
 					//CAT_MISCCLOTHING,
 					CAT_ARMOR,
+					CAT_ACCESSORIES,
 					//CAT_WASTELAND,
 					//CAT_BELTS
 				),
