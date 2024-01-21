@@ -75,8 +75,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	gloves = /obj/item/clothing/gloves/f13/handwraps
 	r_pocket = /obj/item/flashlight/flare
 	backpack_contents = list(
-		/obj/item/restraints/handcuffs = 2,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
+		/obj/item/restraints/handcuffs = 1,
 		/obj/item/storage/bag/money/small/raider = 1,
 		)
 
@@ -91,6 +90,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 		/obj/item/twohanded/fireaxe = 1,
 		/obj/item/restraints/legcuffs/beartrap = 2,
 		/obj/item/book/granter/trait/bigleagues = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 	)
 
 /datum/outfit/loadout/raider_badlands
@@ -105,6 +105,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 		/obj/item/reagent_containers/pill/patch/turbo = 2,
 		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/book/granter/trait/bigleagues = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 	)
 
 /datum/outfit/loadout/raider_powder
@@ -112,6 +113,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	suit = /obj/item/clothing/suit/armor/f13/raider/ncrcfarmor
 	head = /obj/item/clothing/head/f13/stormchaser
 	uniform = /obj/item/clothing/under/f13/ncrcf
+	shoes = /obj/item/clothing/shoes/f13/brownie
 	backpack_contents = list(
 		/obj/item/grenade/homemade/dynamite = 4,
 		/obj/item/gun/ballistic/revolver/caravan_shotgun = 1,
@@ -119,6 +121,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
 		/obj/item/ammo_box/magazine/m9mmds = 2,
 		/obj/item/book/granter/trait/explosives = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 	)
 
 /datum/outfit/loadout/raider_smith
@@ -135,11 +138,13 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 		/obj/item/stack/sheet/mineral/sandstone = 50,
 		/obj/item/book/granter/trait/techno = 1,
 		/obj/item/book/granter/crafting_recipe/scav = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		)
 
 /datum/outfit/loadout/raider_sawbones
 	name = "Raider Sawbones"
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/followers
+	shoes = /obj/item/clothing/shoes/jackboots
 	l_hand = /obj/item/storage/backpack/duffelbag/med/surgery
 	r_hand = /obj/item/book/granter/trait/midsurgery
 	suit_store = /obj/item/gun/energy/laser/wattz
@@ -152,6 +157,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 		/obj/item/book/granter/trait/chemistry = 1,
 		/obj/item/stack/sheet/mineral/silver=2,
 		/obj/item/defibrillator/primitive=1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		)
 
 /datum/outfit/loadout/raider_highway
@@ -169,22 +175,26 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 		/obj/item/weapon/maptool = 1,
 		/obj/item/storage/belt/holster = 1,
 		/obj/item/book/granter/trait/trekking = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 	)
 
 /datum/outfit/loadout/raider_bos
 	name = "Brotherhood Radical"
 	suit = /obj/item/clothing/suit/armored/heavy/bosexile
+	uniform = /obj/item/clothing/under/f13/recon/outcast
 	id = /obj/item/card/id/rusted/brokenholodog
+	shoes = /obj/item/clothing/shoes/jackboots
 	backpack_contents = list(
-		/obj/item/clothing/under/f13/recon/outcast = 1,
 		/obj/item/gun/energy/laser/pistol = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		)
 
 /datum/outfit/loadout/raider_ncr
 	name = "NCR Deserter"
 	suit = /obj/item/clothing/suit/armor/f13/exile/ncrexile
 	uniform = /obj/item/clothing/under/f13/exile
+	shoes = /obj/item/clothing/shoes/f13/tan
 	id = /obj/item/card/id/rusted
 	backpack_contents = list(
 		/obj/item/gun/ballistic/rifle/hunting = 1,
@@ -192,13 +202,15 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 		/obj/item/melee/onehanded/knife/bayonet = 1,
 		/obj/item/storage/box/ration/ranger_breakfast = 1,
 		/obj/item/grenade/f13/frag = 1,
-		/obj/item/reagent_containers/hypospray/medipen/medx = 1
+		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 	    )
 
 /datum/outfit/loadout/raider_legion
 	name = "Disgraced Legionary"
 	suit = /obj/item/clothing/suit/armor/f13/exile/legexile
 	uniform = /obj/item/clothing/under/f13/exile/legion
+	shoes = /obj/item/clothing/shoes/f13/military/legion
 	id = /obj/item/card/id/rusted/rustedmedallion
 	backpack_contents = list(
 		/obj/item/melee/onehanded/machete/spatha = 1,
