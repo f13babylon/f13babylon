@@ -741,7 +741,7 @@
 	desc = "A standard issue ranger patrol helmet that provides a good amount of defence. It's got NCR markings, making it clear who it was made by."
 	icon_state = "ncr_patrol_helmet"
 	item_state = "ncr_patrol_helmet"
-	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACE|HIDESNOUT
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	armor = list("melee" = 30, "bullet" = 50, "laser" = 40, "energy" = 10, "bomb" = 20, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 0, "wound" = 30)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 6)
