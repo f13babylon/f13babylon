@@ -183,7 +183,8 @@ GLOBAL_LIST_INIT(trash_clothing, list(
 	/obj/item/clothing/shoes/f13/tan = 5,
 	/obj/item/clothing/suit/armor/f13/kit/punk = 5,
 	/obj/item/clothing/suit/armor/f13/kit = 5,
-	/obj/item/clothing/head/welding = 5
+	/obj/item/clothing/head/welding = 5,
+	/obj/item/clothing/mask/gas/goner/aesthetic = 5
 ))
 
 GLOBAL_LIST_INIT(trash_ammo, list(
@@ -744,8 +745,7 @@ GLOBAL_LIST_INIT(loot_seed, list(
 	/obj/item/seeds/plump,
 	/obj/item/seeds/reishi,
 	/obj/item/seeds/cannabis,
-	/obj/item/seeds/starthistle,
-	/obj/item/seeds/random
+	/obj/item/seeds/starthistle
 ))
 
 GLOBAL_LIST_INIT(loot_food, list(

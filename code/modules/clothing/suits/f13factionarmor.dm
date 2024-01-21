@@ -158,11 +158,11 @@
 
 /obj/item/clothing/suit/f13/legion/orator		//Legion Orator suit
 	name = "Legion Orator armor"
-	desc = "Light armor consisting of bracers, a chainmail skirt, and large pauldrons. A tabard emblazoned with the bull is loosely draped over the torso."
+	desc = "A heavy wool cape paired with some golden bracers, this is hardly armor at all but for the orators it's all they need. The design leaves the chest exposed, so try not to get shot there."
 	icon = 'icons/fallout/clothing/armored_light.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
-	icon_state = "legion_orator"
-	item_state = "legion_orator"
+	icon_state = "oratorcape"
+	item_state = "oratorcape"
 	armor = list("melee" = 20, "bullet" = 15, "laser" = 10, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 5)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/treasurer
 	slowdown = 0.05

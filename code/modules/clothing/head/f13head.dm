@@ -835,3 +835,61 @@
 	desc = "A modified ranger helmet now utilised by the brotherhood of steel, functionally identical to a standard helmet."
 	icon_state = "finlayhelmet"
 	item_state = "finlayhelmet"
+
+/obj/item/clothing/head/helmet/f13/goner
+	name = "dev-marked generic helmet"
+	desc = "A non-existent cheap-looking helmet."
+	icon_state = "goner_helmet"
+	armor = list("melee" = 25, "bullet" = 10, "laser" = 10, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 30)
+	dynamic_hair_suffix = ""
+	flags_inv = HIDEHAIR|HIDEEARS
+
+/obj/item/clothing/head/helmet/f13/goner/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/head/helmet/f13/goner/red
+	name = "red-marked generic helmet"
+	desc = "A cheap-looking helmet with red paint applied from front to back."
+	icon_state = "goner_helmet_r"
+
+/obj/item/clothing/head/helmet/f13/goner/green
+	name = "green-marked generic helmet"
+	desc = "A cheap-looking helmet with green paint applied from front to back."
+	icon_state = "goner_helmet_g"
+
+/obj/item/clothing/head/helmet/f13/goner/blue
+	name = "blue-marked generic helmet"
+	desc = "A cheap-looking helmet with blue paint applied from front to back."
+	icon_state = "goner_helmet_b"
+
+/obj/item/clothing/head/helmet/f13/goner/yellow
+	name = "yellow-marked generic helmet"
+	desc = "A cheap-looking helmet with yellow paint applied from front to back."
+	icon_state = "goner_helmet_y"
+
+/obj/item/clothing/head/helmet/f13/goner/officer
+	name = "peaked dev cap"
+	desc = "A non-existent militaristic cap."
+	icon_state = "goner_offcap"
+	flags_inv = NONE
+
+/obj/item/clothing/head/helmet/f13/goner/officer/red
+	name = "peaked red cap"
+	desc = "A militaristic cap with red pin on the front."
+	icon_state = "goner_offcap_r"
+
+/obj/item/clothing/head/helmet/f13/goner/officer/green
+	name = "peaked green cap"
+	desc = "A militaristic cap with green pin on the front."
+	icon_state = "goner_offcap_g"
+
+/obj/item/clothing/head/helmet/f13/goner/officer/blue
+	name = "peaked blue cap"
+	desc = "A militaristic cap with blue pin on the front."
+	icon_state = "goner_offcap_b"
+
+/obj/item/clothing/head/helmet/f13/goner/officer/yellow
+	name = "peaked yellow cap"
+	desc = "A militaristic cap with yellow pin on the front."
+	icon_state = "goner_offcap_y"

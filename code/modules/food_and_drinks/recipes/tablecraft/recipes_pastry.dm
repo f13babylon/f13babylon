@@ -173,3 +173,128 @@
 	)
 	result = /obj/item/reagent_containers/food/snacks/plumphelmetbiscuit
 	subcategory = CAT_PASTRY
+
+/datum/crafting_recipe/food/bananacreampie
+	name = "Banana cream pie"
+	reqs = list(
+		/datum/reagent/consumable/milk = 5,
+		/obj/item/reagent_containers/food/snacks/pie/plain = 1,
+		/obj/item/reagent_containers/food/snacks/grown/banana = 1
+	)
+	result = /obj/item/reagent_containers/food/snacks/pie/cream
+	subcategory = CAT_PASTRY
+
+/datum/crafting_recipe/food/berryclafoutis
+	name = "Berry clafoutis"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/pie/plain = 1,
+		/obj/item/reagent_containers/food/snacks/grown/berries = 1
+	)
+	result = /obj/item/reagent_containers/food/snacks/pie/berryclafoutis
+	subcategory = CAT_PASTRY
+
+/datum/crafting_recipe/food/cherrypie
+	name = "Cherry pie"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/pie/plain = 1,
+		/obj/item/reagent_containers/food/snacks/grown/cherries = 1
+	)
+	result = /obj/item/reagent_containers/food/snacks/pie/cherrypie
+	subcategory = CAT_PASTRY
+
+/datum/crafting_recipe/food/candiedapple
+	name = "Candied apple"
+	reqs = list(/datum/reagent/water = 5,
+		/datum/reagent/consumable/sugar = 5,
+		/obj/item/reagent_containers/food/snacks/grown/apple = 1
+	)
+	result = /obj/item/reagent_containers/food/snacks/candiedapple
+	subcategory = CAT_PASTRY
+
+/datum/crafting_recipe/food/chocolatestrawberry
+	name = "Chocolate Strawberry"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/chocolatebar = 1,
+		/obj/item/reagent_containers/food/snacks/grown/strawberry  = 1
+	)
+	result = /obj/item/reagent_containers/food/snacks/chocolatestrawberry
+	subcategory = CAT_PASTRY
+
+/datum/crafting_recipe/food/plumppie
+	name = "Plump pie"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/pie/plain = 1,
+		/obj/item/reagent_containers/food/snacks/grown/mushroom/plumphelmet = 1
+	)
+	result = /obj/item/reagent_containers/food/snacks/pie/plump_pie
+	subcategory = CAT_PASTRY
+
+/datum/crafting_recipe/food/applepie
+	name = "Apple pie"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/pie/plain = 1,
+		/obj/item/reagent_containers/food/snacks/grown/apple = 1
+	)
+	result = /obj/item/reagent_containers/food/snacks/pie/applepie
+	subcategory = CAT_PASTRY
+
+/datum/crafting_recipe/food/pumpkinpie
+	name = "Pumpkin pie"
+	reqs = list(
+		/datum/reagent/consumable/milk = 5,
+		/datum/reagent/consumable/sugar = 5,
+		/obj/item/reagent_containers/food/snacks/pie/plain = 1,
+		/obj/item/reagent_containers/food/snacks/grown/pumpkin = 1
+	)
+	result = /obj/item/reagent_containers/food/snacks/pie/pumpkinpie
+	subcategory = CAT_PASTRY
+
+/datum/crafting_recipe/food/grapetart
+	name = "Grape tart"
+	reqs = list(
+			/datum/reagent/consumable/milk = 5,
+			/datum/reagent/consumable/sugar = 5,
+			/obj/item/reagent_containers/food/snacks/pie/plain = 1,
+			/obj/item/reagent_containers/food/snacks/grown/grapes = 3
+			)
+	result = /obj/item/reagent_containers/food/snacks/pie/grapetart
+	subcategory = CAT_PASTRY
+
+/datum/crafting_recipe/food/blumpkinpie
+	name = "Blumpkin pie"
+	reqs = list(
+		/datum/reagent/consumable/milk = 5,
+		/datum/reagent/consumable/sugar = 5,
+		/obj/item/reagent_containers/food/snacks/pie/plain = 1,
+		/obj/item/reagent_containers/food/snacks/grown/blumpkin = 1
+	)
+	result = /obj/item/reagent_containers/food/snacks/pie/blumpkinpie
+	subcategory = CAT_PASTRY
+
+/datum/crafting_recipe/food/honeybar
+	name = "Honey nut bar"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/grown/oat = 1,
+		/datum/reagent/consumable/honey = 5
+	)
+	result = /obj/item/reagent_containers/food/snacks/honeybar
+	subcategory = CAT_PASTRY
+
+/datum/crafting_recipe/food/dulcedebatata
+	name = "Dulce de batata"
+	reqs = list(
+		/datum/reagent/consumable/vanilla = 5,
+		/datum/reagent/water = 5,
+		/obj/item/reagent_containers/food/snacks/grown/potato/sweet = 2
+	)
+	result = /obj/item/reagent_containers/food/snacks/pie/dulcedebatata
+	subcategory = CAT_PASTRY
+
+/datum/crafting_recipe/food/frostypie
+	name = "Frosty pie"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/pie/plain = 1,
+		/obj/item/reagent_containers/food/snacks/grown/bluecherries = 1
+	)
+	result = /obj/item/reagent_containers/food/snacks/pie/frostypie
+	subcategory = CAT_PASTRY

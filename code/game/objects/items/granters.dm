@@ -9,7 +9,7 @@
 	var/oneuse = TRUE //default this is true, but admins can var this to 0 if we wanna all have a pass around of the rod form book
 	var/used = FALSE //only really matters if oneuse but it might be nice to know if someone's used it for admin investigations perhaps
 	var/select = FALSE
-	var/time_per_page = 5 SECONDS
+	var/time_per_page = 2.5 SECONDS
 
 /obj/item/book/granter/proc/turn_page(mob/user)
 	playsound(user, pick('sound/effects/pageturn1.ogg','sound/effects/pageturn2.ogg','sound/effects/pageturn3.ogg'), 30, 1)
@@ -974,7 +974,7 @@
 	traitname = "explosive crafting"
 	remarks = list("If you want to get started making bombs, you're going to need a lot of igniters and black powder.", "Did a Follower write this book, or something?", "All thermite takes is some aluminum and iron.", "Coconut shells make acceptable grenade casings in a pinch.")
 	crafting_recipe_types = list(/datum/crafting_recipe/frag_shrapnel, /datum/crafting_recipe/stinger, /datum/crafting_recipe/flashbang, /datum/crafting_recipe/explosive/dynamite,
-/datum/crafting_recipe/smokebomb, /datum/crafting_recipe/rocket_base, /datum/crafting_recipe/weakrocket, /datum/crafting_recipe/explosive/pipebomb)
+/datum/crafting_recipe/smokebomb, /datum/crafting_recipe/rocket_base, /datum/crafting_recipe/weakrocket, /datum/crafting_recipe/explosive/pipebomb, /datum/crafting_recipe/explosive/signalermine)
 
 /obj/item/book/granter/trait/explosives_advanced
 	name = "Advanced Techniques for Winning at Postal Chess"
@@ -984,7 +984,7 @@
 	traitname = "advanced explosive crafting"
 	remarks = list("Is this actually a legal chess move...?", "If you hook electronic parts up to a flux capacitor-oh, that makes a lot of sense, actually.", "Radium? What would you use radium f-oh no.", "Why would anyone actually publish this?")
 	crafting_recipe_types = list(/datum/crafting_recipe/incendiary, /datum/crafting_recipe/concussion, /datum/crafting_recipe/radgrenade, /datum/crafting_recipe/empgrenade, /datum/crafting_recipe/incendiaryrocket, /datum/crafting_recipe/strongrocket, /datum/crafting_recipe/frag_shrapnel, /datum/crafting_recipe/stinger, /datum/crafting_recipe/flashbang,
-/datum/crafting_recipe/smokebomb, /datum/crafting_recipe/rocket_base, /datum/crafting_recipe/weakrocket, /datum/crafting_recipe/explosive/c4, /datum/crafting_recipe/chemical_payload)
+/datum/crafting_recipe/smokebomb, /datum/crafting_recipe/rocket_base, /datum/crafting_recipe/weakrocket, /datum/crafting_recipe/explosive/c4, /datum/crafting_recipe/chemical_payload, /datum/crafting_recipe/explosive/chemical, /datum/crafting_recipe/explosive/signalermine)
 
 /obj/item/book/granter/trait/gunslinger
 	name = "Tycho: Life of a Lawman"
@@ -1083,7 +1083,7 @@
 		desc = "A compendium of knowledge passed down from the elders. It looks to be in poor condition."
 
 /obj/item/book/granter/trait/selection/tribal/attack_self(mob/user)
-	var/list/choices = list("Hit Them With Sticks","Pugilist","Brahmin Tender","Fireant Rituals","Fisting Expert","Spiritual Mending")
+	var/list/choices = list("Hit Them With Sticks","Pugilist","Brahmin Tender","Bow Proficiency","Fisting Expert","Spiritual Mending")
 	if(granted_trait == null)
 		var/choice = input("Choose a trait:") in choices
 		switch(choice)
@@ -1098,8 +1098,8 @@
 			if("Brahmin Tender")
 				granted_trait = TRAIT_CALCIUM_HEALER //Heal from milk.
 				traitname = "drinking milk"
-			if("Fireant Rituals")
-				granted_trait = TRAIT_IGNOREDAMAGESLOWDOWN //Removes the slowdown from being injured, but not from fractures, stamdamage/etc.
+			if("Bow Proficiency") //ORIGINALLY: Trait "Ignore Damage Slowdown" - Comically OP in practice, deserved removal
+				granted_trait = TRAIT_AUTO_DRAW //Automatically draws the next arrow in the weapons internal magazine, removing the need for manual cycling.
 				traitname = "...pain resistance"
 			if("Fisting Expert") //ORIGINALLY: Trait "Hard Yards" - Tribals spawn with this trait, so it was useless
 				granted_trait = TRAIT_PERFECT_ATTACKER //Makes all punches do the highet possible damage roll, where-as Iron-fist buffs the raw damage you can do.
@@ -1180,3 +1180,33 @@
 	granted_trait = TRAIT_HOLY
 	traitname = "holy"
 	remarks = list("You already know everything")
+
+/obj/item/book/granter/martial/yan
+	martial = /datum/martial_art/oldserker
+	name = "Canis' Journal"
+	martialname = "berserker rage"
+	desc = "A detailing of the journey Canis has taken."
+	greet = "You remember your survival skills. Guns are now of no use to you."
+	icon_state = "book1"
+	oneuse = TRUE
+	pages_to_mastery = 0
+	time_per_page = 0
+
+/obj/item/book/granter/martial/krig
+	name = "Krig's Journal"
+	desc = "A detailing of the journey Krig has taken."
+	martialname = MARTIALART_KRIGSERKER
+	martial = /datum/martial_art/krigserker
+	icon_state = "book1"
+	oneuse = TRUE
+	greet ="You remember your survival skills."
+	time_per_page = 0
+	pages_to_mastery = 0
+
+/obj/item/book/granter/crafting_recipe/happysharky
+	name = "Happy Sharky Co. Cuisine"
+	desc = "A cook book that teaches you the ways of Happy Sharky Co."
+	crafting_recipe_types = list(/datum/crafting_recipe/food/sunset/happyshark/jerky, /datum/crafting_recipe/food/sunset/happyshark/candybar, /datum/crafting_recipe/food/sunset/happyshark/bittercola)
+	icon_state = "book1"
+	oneuse = TRUE
+	remarks = list("The secret ingredients are revealed to you.")
