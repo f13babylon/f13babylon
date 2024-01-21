@@ -73,6 +73,7 @@
 #define CAT_NONE	""
 #define CAT_GENCLOTHES "Wardrobe"
 #define CAT_ARMOR "Armor"
+#define CAT_ACCESSORIES "Storage & Accessories"
 #define CAT_WEAPONRY	"Weaponry"
 #define CAT_WEAPON	"Ranged Weapons"
 #define CAT_MELEE	"Melee Weapons"
