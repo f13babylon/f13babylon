@@ -404,7 +404,7 @@
 	desc = "A standard issue NCR Infantry vest reinforced with a groinpad. A portion of its ceramic was replaced with blast-resistant padding."
 	armor = list("melee" = 15, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 50, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 30)
 
-/obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/sergeant			//NCR Sergeant armor
+/obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/sergeant					//NCR Sergeant armor
 	name = "\improper NCR reinforced mantle vest"
 	desc = "A standard issue NCR Infantry vest reinforced with a groinpad and a mantle."
 	icon_state = "ncr_reinforced_mantle"
