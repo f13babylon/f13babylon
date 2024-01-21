@@ -157,7 +157,7 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/crafter
 
 /obj/item/clothing/suit/f13/legion/orator		//Legion Orator suit
-	name = "legion orator attire"
+	name = "legion orator armor"
 	desc = "A ceremonial outfit consisting of a heavy wool cape paired with some golden bracers. The design leaves the chest exposed, so try not to get shot there."
 	icon = 'icons/fallout/clothing/armored_light.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
@@ -441,7 +441,7 @@
 	slowdown = 0.18		//0.22 with helmet
 
 //OFFICER ROLES
-/obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/officer					//NCR Lieutenant armor
+/obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/officer						//NCR Lieutenant armor
 	name = "\improper NCR officer mantle vest"
 	desc = "A standard issue NCR infantry vest reinforced with a groinpad and a mantle. Additional plating was added to protect the shoulders. Intended for use by the officers of the NCRA."
 	icon_state = "ncr_lt_armour"
@@ -450,7 +450,7 @@
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 	slowdown = 0.14
 
-/obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/officer/captain			//NCR Captain Armor, Frontline loadout
+/obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/officer/captain				//NCR Captain Armor, Frontline loadout
 	name = "\improper NCR reinforced officer mantle vest"
 	desc = "A standard issue NCR infantry vest reinforced with a groinpad and a mantle. Additional plating was added to protect the shoulders and arms. Intended for use by high ranking officers of the NCRA."
 	icon_state = "ncr_captain_armour"
