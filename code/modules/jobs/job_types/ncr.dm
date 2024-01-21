@@ -809,12 +809,11 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 /datum/outfit/loadout/supportht
-	name = "Tactical Support Trooper"
+	name = "Flame Trooper"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/grenadelauncher = 1,
-		/obj/item/ammo_box/a40mmHE = 2,
-		/obj/item/clothing/suit/armor/f13/metalarmor/steelbib/ncra = 1,
-		/obj/item/clothing/head/helmet/armyhelmet/heavy/ncra = 1,
+		/obj/item/m2flamethrowertank = 1,
+		/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/ncr = 1,
+		/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/ncr = 1,
 		/obj/item/clothing/mask/gas = 1,
 		)
 
