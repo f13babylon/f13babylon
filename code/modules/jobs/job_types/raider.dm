@@ -60,7 +60,6 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_LONGPORKLOVER, REF(src))
 
 	H.social_faction = FACTION_RAIDERS
 
@@ -92,6 +91,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 		/obj/item/twohanded/fireaxe = 1,
 		/obj/item/restraints/legcuffs/beartrap = 2,
 		/obj/item/book/granter/trait/bigleagues = 1,
+		/obj/item/book/granter/trait/cannibal = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 	)
 
@@ -107,6 +107,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 		/obj/item/reagent_containers/pill/patch/turbo = 2,
 		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/book/granter/trait/bigleagues = 1,
+		/obj/item/book/granter/trait/cannibal = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 	)
 

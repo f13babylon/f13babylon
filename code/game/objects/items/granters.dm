@@ -857,6 +857,14 @@
 	traitname = "tagger"
 	remarks = list("Just two tins of paint is enough for your whole house!", "Move your sofa to the left three paces, and you've discovered Feng Shui! Please report to the nearest police station.", "Your neighbours got a new BBQ and is hosting one at the weekend! Here's what you do...")
 
+/obj/item/book/granter/trait/cannibal
+	name = "Cannibals Cooking Guide"
+	desc = "A guide of how to cook human meat! Longpork pies, Grandma's Longpork Thanksgiving dinner, and much-much more! Buy now while supplies last! *Salesmen not included."
+	oneuse = TRUE
+	granted_trait = TRAIT_LONGPORKLOVER
+	traitname = "cannibal"
+	remarks = list("Human meat is described as tasting similar to pork..", "You should ensure meat is always cooked to the proper tempature..", "You may not eat the saleman who sold you this book..", "You decided you WILL eat the salesman who sold you this book..", "Serial killers have an obsession with eating ass-flesh. They eat ass..")
+
 /obj/item/book/granter/trait/chemistry
 	name = "Big Book of Science"
 	desc = "This heavy textbook can teach basic chemistry, but saw more use as a blunt weapon shortly after the Collapse."
