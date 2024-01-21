@@ -176,21 +176,33 @@
 	subcategory = CAT_ARMOR
 
 /datum/crafting_recipe/ncrsalvagedarmorconversion
-	name = "Salvaged NCR Power Armor"
-	result = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/ncr
-	reqs = list(/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b = 1,
-				/obj/item/toy/crayon/spraycan)
-	time = 30
+	name = "NCR salvaged power armor"
+	result = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d/ncr
+	reqs = list(
+		/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d = 1,
+		/obj/item/stack/crafting/metalparts = 10,
+		/obj/item/stack/crafting/goodparts = 5,
+		/obj/item/stack/sheet/prewar = 5,
+		/obj/item/toy/crayon/spraycan,
+	)
+	tools = list(TOOL_AWORKBENCH, TOOL_CROWBAR, TOOL_WELDER)
+	time = 100
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
 	always_available = FALSE
 
 /datum/crafting_recipe/ncrsalvagedhelmetconversion
-	name = "NCR salvaged T-45b helmet"
-	result = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/ncr
-	reqs = list(/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b = 1,
-				/obj/item/toy/crayon/spraycan)
-	time = 20
+	name = "NCR salvaged power armor helmet"
+	result = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d/ncr
+	reqs = list(
+		/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d = 1,
+		/obj/item/stack/crafting/metalparts = 10,
+		/obj/item/stack/crafting/goodparts = 5,
+		/obj/item/stack/sheet/prewar = 5,
+		/obj/item/toy/crayon/spraycan,
+	)
+	tools = list(TOOL_AWORKBENCH, TOOL_CROWBAR, TOOL_WELDER)
+	time = 100
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
 	always_available = FALSE
@@ -198,9 +210,19 @@
 /datum/crafting_recipe/boscombatarmor
 	name = "knight armor"
 	result = /obj/item/clothing/suit/armor/f13/combat/brotherhood
-	blacklist = list(/obj/item/clothing/suit/armor/f13/combat/mk2)
-	reqs = list(/obj/item/clothing/suit/armor/f13/combat = 1,
-				/obj/item/toy/crayon/spraycan)
+	blacklist = list(
+		/obj/item/clothing/suit/armor/f13/combat/mk2,
+		/obj/item/clothing/suit/armor/f13/combat/riotpolice,
+		/obj/item/clothing/suit/armor/f13/combat/swat,
+		/obj/item/clothing/suit/armor/f13/combat/environmental,
+	)
+	reqs = list(
+		/obj/item/clothing/suit/armor/f13/combat = 1,
+		/obj/item/stack/crafting/metalparts = 5,
+		/obj/item/stack/crafting/goodparts = 5,
+		/obj/item/toy/crayon/spraycan,
+	)
+	tools = list(TOOL_WORKBENCH, TOOL_CROWBAR, TOOL_SCREWDRIVER)
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
@@ -209,9 +231,19 @@
 /datum/crafting_recipe/boscombathelmet
 	name = "knight helmet"
 	result = /obj/item/clothing/head/helmet/f13/combat/brotherhood
-	blacklist = list(/obj/item/clothing/head/helmet/f13/combat/mk2)
-	reqs = list(/obj/item/clothing/head/helmet/f13/combat = 1,
-				/obj/item/toy/crayon/spraycan)
+	blacklist = list(
+		/obj/item/clothing/head/helmet/f13/combat/mk2,
+		/obj/item/clothing/head/helmet/f13/combat/rangerbroken,
+		/obj/item/clothing/head/helmet/f13/combat/swat,
+		/obj/item/clothing/head/helmet/f13/combat/environmental,
+	)
+	reqs = list(
+		/obj/item/clothing/head/helmet/f13/combat = 1,
+		/obj/item/stack/crafting/metalparts = 5,
+		/obj/item/stack/crafting/goodparts = 5,
+		/obj/item/toy/crayon/spraycan,
+	)
+	tools = list(TOOL_WORKBENCH, TOOL_CROWBAR, TOOL_SCREWDRIVER)
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
@@ -220,9 +252,17 @@
 /datum/crafting_recipe/boscombatarmormk2
 	name = "reinforced knight armor"
 	result = /obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate/mk2
-	blacklist = list(/obj/item/clothing/suit/armor/f13/combat)
-	reqs = list(/obj/item/clothing/suit/armor/f13/combat/mk2 = 1,
-				/obj/item/toy/crayon/spraycan)
+	blacklist = list(
+		/obj/item/clothing/suit/armor/f13/combat/mk2/raider
+	)
+	reqs = list(
+		/obj/item/clothing/suit/armor/f13/combat/mk2 = 1,
+		/obj/item/stack/crafting/metalparts = 5,
+		/obj/item/stack/crafting/goodparts = 5,
+		/obj/item/stack/sheet/prewar = 5,
+		/obj/item/toy/crayon/spraycan,
+	)
+	tools = list(TOOL_WORKBENCH, TOOL_CROWBAR, TOOL_SCREWDRIVER)
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
@@ -231,9 +271,17 @@
 /datum/crafting_recipe/boscombathelmetmk2
 	name = "reinforced knight helmet"
 	result = /obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate/mk2
-	blacklist = list(/obj/item/clothing/head/helmet/f13/combat)
-	reqs = list(/obj/item/clothing/head/helmet/f13/combat/mk2 = 1,
-				/obj/item/toy/crayon/spraycan)
+	blacklist = list(
+		/obj/item/clothing/head/helmet/f13/combat/mk2/raider,
+	)
+	reqs = list(
+		/obj/item/clothing/head/helmet/f13/combat/mk2 = 1,
+		/obj/item/stack/crafting/metalparts = 5,
+		/obj/item/stack/crafting/goodparts = 5,
+		/obj/item/stack/sheet/prewar = 5,
+		/obj/item/toy/crayon/spraycan,
+	)
+	tools = list(TOOL_WORKBENCH, TOOL_CROWBAR, TOOL_SCREWDRIVER)
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
@@ -252,6 +300,12 @@
 /datum/crafting_recipe/enclavecombatarmor
 	name = "enclave combat armor"
 	result = /obj/item/clothing/suit/armor/f13/combat/enclave
+	blacklist = list(
+		/obj/item/clothing/suit/armor/f13/combat/mk2,
+		/obj/item/clothing/suit/armor/f13/combat/riotpolice,
+		/obj/item/clothing/suit/armor/f13/combat/swat,
+		/obj/item/clothing/suit/armor/f13/combat/environmental,
+	)
 	reqs = list(/obj/item/clothing/suit/armor/f13/combat = 1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
@@ -262,6 +316,12 @@
 /datum/crafting_recipe/enclavecombathelmet
 	name = "enclave combat helmet"
 	result = /obj/item/clothing/head/helmet/f13/combat/enclave
+	blacklist = list(
+		/obj/item/clothing/head/helmet/f13/combat/mk2,
+		/obj/item/clothing/head/helmet/f13/combat/rangerbroken,
+		/obj/item/clothing/head/helmet/f13/combat/swat,
+		/obj/item/clothing/head/helmet/f13/combat/environmental,
+	)
 	reqs = list(/obj/item/clothing/head/helmet/f13/combat = 1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
@@ -272,7 +332,9 @@
 /datum/crafting_recipe/enclavemarinearmor
 	name = "enclave marine armor"
 	result = /obj/item/clothing/suit/armor/f13/combat/mk2/enclave
-	blacklist = list(/obj/item/clothing/suit/armor/f13/combat)
+	blacklist = list(
+		/obj/item/clothing/suit/armor/f13/combat/mk2/raider
+	)
 	reqs = list(/obj/item/clothing/suit/armor/f13/combat/mk2 = 1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
@@ -283,7 +345,9 @@
 /datum/crafting_recipe/enclavemarinehelmet
 	name = "enclave marine helmet"
 	result = /obj/item/clothing/head/helmet/f13/combat/mk2/enclave
-	blacklist = list(/obj/item/clothing/head/helmet/f13/combat)
+	blacklist = list(
+		/obj/item/clothing/head/helmet/f13/combat/mk2/raider,
+	)
 	reqs = list(/obj/item/clothing/head/helmet/f13/combat/mk2 = 1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
@@ -525,7 +589,7 @@
 */
 
 /datum/crafting_recipe/combat_armor
-	name = "Reflective C.Armor Plates"
+	name = "Reflective Combat Armor"
 	result = /obj/item/clothing/suit/armor/f13/combat/laserproof
 	reqs = list(/obj/item/stack/sheet/mineral/titanium = 5,
 				/obj/item/clothing/suit/armor/f13/combat = 1,
@@ -533,7 +597,7 @@
 	tools = list(TOOL_AWORKBENCH)
 	time = 60
 	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
+	subcategory = CAT_ARMOR
 
 //CLOTHING//
 
@@ -546,7 +610,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 15
 	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
+	subcategory = CAT_ACCESSORIES
 
 /datum/crafting_recipe/tailor/ncruniform
 	name = "NCR Uniform"
@@ -557,6 +621,7 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
 	always_available = FALSE
+
 /datum/crafting_recipe/tailor/legionuniform
 	name = "Legion Uniform"
 	result = /obj/item/clothing/under/f13/legskirt
@@ -635,7 +700,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 15
 	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
+	subcategory = CAT_ACCESSORIES
 
 /datum/crafting_recipe/sombrero
 	name = "Sombrero"
@@ -670,7 +735,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 25
 	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
+	subcategory = CAT_ACCESSORIES
 /*
 /datum/crafting_recipe/triplesurvivalpouch
 	name = "empty large survival pouch"
@@ -867,15 +932,6 @@
 //HATS, SCARVES ETC//
 /////////////////////
 
-/datum/crafting_recipe/facewrap
-	name = "Headwrap"
-	result = /obj/item/clothing/mask/facewrap
-	reqs = list(/obj/item/stack/sheet/cloth = 2)
-	tools = list(TOOL_WORKBENCH)
-	time = 10
-	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
-
 /datum/crafting_recipe/ncr_facewrap
 	name = "Facewrap"
 	result = /obj/item/clothing/mask/facewrap
@@ -883,7 +939,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 10
 	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
+	subcategory = CAT_ACCESSORIES
 
 /datum/crafting_recipe/headscarf
 	name = "Headscarf"
@@ -901,7 +957,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
+	subcategory = CAT_ACCESSORIES
 
 /datum/crafting_recipe/scarfb
 	name = "Black scarf"
@@ -910,7 +966,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
+	subcategory = CAT_ACCESSORIES
 
 /datum/crafting_recipe/scarfr
 	name = "Red scarf"
@@ -919,7 +975,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
+	subcategory = CAT_ACCESSORIES
 
 /datum/crafting_recipe/scarfblu
 	name = "Blue scarf"
@@ -928,7 +984,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
+	subcategory = CAT_ACCESSORIES
 
 /datum/crafting_recipe/scarfg
 	name = "Green scarf"
@@ -937,7 +993,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
+	subcategory = CAT_ACCESSORIES
 
 /datum/crafting_recipe/scarfy
 	name = "Yellow scarf"
@@ -946,7 +1002,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
+	subcategory = CAT_ACCESSORIES
 
 /datum/crafting_recipe/scarfpurp
 	name = "Purple scarf"
@@ -955,7 +1011,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
+	subcategory = CAT_ACCESSORIES
 
 /datum/crafting_recipe/scarfpink
 	name = "Pink scarf"
@@ -964,7 +1020,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
+	subcategory = CAT_ACCESSORIES
 
 /datum/crafting_recipe/scarfstripedred
 	name = "Striped red scarf"
@@ -973,7 +1029,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
+	subcategory = CAT_ACCESSORIES
 
 /datum/crafting_recipe/scarfstripedblue
 	name = "Striped blue scarf"
@@ -982,7 +1038,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
+	subcategory = CAT_ACCESSORIES
 
 /datum/crafting_recipe/stripedgreenscarf
 	name = "Striped green scarf"
@@ -991,7 +1047,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
+	subcategory = CAT_ACCESSORIES
 
 /datum/crafting_recipe/chestpatch
 	name = "Chest patch / insignia"
@@ -1000,7 +1056,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 10
 	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
+	subcategory = CAT_ACCESSORIES
 
 /datum/crafting_recipe/armpatch
 	name = "Arm patch / insignia"
@@ -1009,7 +1065,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 15
 	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
+	subcategory = CAT_ACCESSORIES
 
 /datum/crafting_recipe/rainbowbunchcrown
 	name = "Rainbow Flower Crown"
@@ -1018,7 +1074,7 @@
 	reqs = list(/obj/item/reagent_containers/food/snacks/grown/rainbow_flower = 5,
 				/obj/item/stack/cable_coil = 3)
 	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
+	subcategory = CAT_ACCESSORIES
 
 /datum/crafting_recipe/sunflowercrown
 	name = "Sunflower Crown"
@@ -1027,7 +1083,7 @@
 	reqs = list(/obj/item/grown/sunflower = 5,
 				/obj/item/stack/cable_coil = 3)
 	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
+	subcategory = CAT_ACCESSORIES
 
 /datum/crafting_recipe/poppycrown
 	name = "Poppy Crown"
@@ -1036,7 +1092,7 @@
 	reqs = list(/obj/item/reagent_containers/food/snacks/grown/poppy = 5,
 				/obj/item/stack/cable_coil = 3)
 	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
+	subcategory = CAT_ACCESSORIES
 
 /datum/crafting_recipe/lilycrown
 	name = "Lily Crown"
@@ -1045,7 +1101,7 @@
 	reqs = list(/obj/item/reagent_containers/food/snacks/grown/poppy/lily = 3,
 				/obj/item/stack/cable_coil = 3)
 	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
+	subcategory = CAT_ACCESSORIES
 
 /*
 /datum/crafting_recipe/durathread_vest
@@ -1282,42 +1338,64 @@
 /datum/crafting_recipe/legioncombatarmor
 	name = "Legion combat armor"
 	result = /obj/item/clothing/suit/armor/f13/combat/legion
-	blacklist = list(/obj/item/clothing/suit/armor/f13/combat/mk2)
-	reqs = list(/obj/item/clothing/suit/armor/f13/combat = 1,
-				/obj/item/toy/crayon/spraycan)
+	blacklist = list(
+		/obj/item/clothing/suit/armor/f13/combat/mk2,
+		/obj/item/clothing/suit/armor/f13/combat/riotpolice,
+		/obj/item/clothing/suit/armor/f13/combat/swat,
+		/obj/item/clothing/suit/armor/f13/combat/environmental,
+	)
+	reqs = list(
+		/obj/item/clothing/suit/armor/f13/combat = 1,
+		/obj/item/toy/crayon/spraycan,
+	)
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
 	always_available = FALSE
 
 /datum/crafting_recipe/legioncombathelmet
-	name = "legion combat helmet"
+	name = "Legion combat helmet"
 	result = /obj/item/clothing/head/helmet/f13/combat/legion
-	blacklist = list(/obj/item/clothing/head/helmet/f13/combat/mk2)
-	reqs = list(/obj/item/clothing/head/helmet/f13/combat = 1,
-				/obj/item/toy/crayon/spraycan)
+	blacklist = list(
+		/obj/item/clothing/head/helmet/f13/combat/mk2,
+		/obj/item/clothing/head/helmet/f13/combat/rangerbroken,
+		/obj/item/clothing/head/helmet/f13/combat/swat,
+		/obj/item/clothing/head/helmet/f13/combat/environmental,
+	)
+	reqs = list(
+		/obj/item/clothing/head/helmet/f13/combat = 1,
+		/obj/item/toy/crayon/spraycan,
+	)
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
 	always_available = FALSE
 
 /datum/crafting_recipe/legioncombatarmormk2
-	name = "reinforced legion combat armor"
+	name = "reinforced Legion combat armor"
 	result = /obj/item/clothing/suit/armor/f13/combat/mk2/legion
-	blacklist = list(/obj/item/clothing/suit/armor/f13/combat)
-	reqs = list(/obj/item/clothing/suit/armor/f13/combat/mk2 = 1,
-				/obj/item/toy/crayon/spraycan)
+	blacklist = list(
+		/obj/item/clothing/suit/armor/f13/combat/mk2/raider
+	)
+	reqs = list(
+		/obj/item/clothing/suit/armor/f13/combat/mk2 = 1,
+		/obj/item/toy/crayon/spraycan,
+	)
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
 	always_available = FALSE
 
 /datum/crafting_recipe/legioncombathelmetmk2
-	name = "reinforced legion combat helmet"
+	name = "reinforced Legion combat helmet"
 	result = /obj/item/clothing/head/helmet/f13/combat/mk2/legion
-	blacklist = list(/obj/item/clothing/head/helmet/f13/combat)
-	reqs = list(/obj/item/clothing/head/helmet/f13/combat/mk2 = 1,
-				/obj/item/toy/crayon/spraycan)
+	blacklist = list(
+		/obj/item/clothing/head/helmet/f13/combat/mk2/raider,
+	)
+	reqs = list(
+		/obj/item/clothing/head/helmet/f13/combat/mk2 = 1,
+		/obj/item/toy/crayon/spraycan,
+	)
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
@@ -1327,9 +1405,16 @@
 /datum/crafting_recipe/ncrcombatarmor
 	name = "NCR combat armor"
 	result = /obj/item/clothing/suit/armor/f13/combat/ncr
-	blacklist = list(/obj/item/clothing/suit/armor/f13/combat/mk2)
-	reqs = list(/obj/item/clothing/suit/armor/f13/combat = 1,
-				/obj/item/toy/crayon/spraycan)
+	blacklist = list(
+		/obj/item/clothing/suit/armor/f13/combat/mk2,
+		/obj/item/clothing/suit/armor/f13/combat/riotpolice,
+		/obj/item/clothing/suit/armor/f13/combat/swat,
+		/obj/item/clothing/suit/armor/f13/combat/environmental,
+	)
+	reqs = list(
+		/obj/item/clothing/suit/armor/f13/combat = 1,
+		/obj/item/toy/crayon/spraycan,
+	)
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
@@ -1338,9 +1423,16 @@
 /datum/crafting_recipe/ncrcombathelmet
 	name = "NCR combat helmet"
 	result = /obj/item/clothing/head/helmet/f13/combat/ncr
-	blacklist = list(/obj/item/clothing/head/helmet/f13/combat/mk2)
-	reqs = list(/obj/item/clothing/head/helmet/f13/combat = 1,
-				/obj/item/toy/crayon/spraycan)
+	blacklist = list(
+		/obj/item/clothing/head/helmet/f13/combat/mk2,
+		/obj/item/clothing/head/helmet/f13/combat/rangerbroken,
+		/obj/item/clothing/head/helmet/f13/combat/swat,
+		/obj/item/clothing/head/helmet/f13/combat/environmental,
+	)
+	reqs = list(
+		/obj/item/clothing/head/helmet/f13/combat = 1,
+		/obj/item/toy/crayon/spraycan,
+	)
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
@@ -1349,9 +1441,13 @@
 /datum/crafting_recipe/ncrcombatarmormk2
 	name = "reinforced NCR combat armor"
 	result = /obj/item/clothing/suit/armor/f13/combat/mk2/ncr
-	blacklist = list(/obj/item/clothing/suit/armor/f13/combat)
-	reqs = list(/obj/item/clothing/suit/armor/f13/combat/mk2 = 1,
-				/obj/item/toy/crayon/spraycan)
+	blacklist = list(
+		/obj/item/clothing/suit/armor/f13/combat/mk2/raider
+	)
+	reqs = list(
+		/obj/item/clothing/suit/armor/f13/combat/mk2 = 1,
+		/obj/item/toy/crayon/spraycan,
+	)
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
@@ -1360,9 +1456,13 @@
 /datum/crafting_recipe/ncrcombathelmetmk2
 	name = "reinforced NCR combat helmet"
 	result = /obj/item/clothing/head/helmet/f13/combat/mk2/ncr
-	blacklist = list(/obj/item/clothing/head/helmet/f13/combat)
-	reqs = list(/obj/item/clothing/head/helmet/f13/combat/mk2 = 1,
-				/obj/item/toy/crayon/spraycan)
+	blacklist = list(
+		/obj/item/clothing/head/helmet/f13/combat/mk2/raider,
+	)
+	reqs = list(
+		/obj/item/clothing/head/helmet/f13/combat/mk2 = 1,
+		/obj/item/toy/crayon/spraycan,
+	)
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
