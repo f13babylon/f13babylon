@@ -20,7 +20,7 @@
 	icon_state = "missile"
 	ricochets_max = 0 //it's a ROCKET NOT A MISSILE STOP AND GET IT RIGHT AAAAAAAAAAAAAAA
 	damage = 25
-	shrapnel_magnitude = 2
+	shrapnel_magnitude = 0
 
 /obj/item/projectile/bullet/rocket/a84mm_chem/Initialize(mapload)
 	. = ..()
@@ -46,7 +46,7 @@
 	damage = 65
 	armour_penetration = 0.15
 	ricochets_max = 0 //it's a MISSILE
-	shrapnel_magnitude = 12
+	shrapnel_magnitude = 0
 
 /obj/item/projectile/bullet/rocket/a84mm_he/on_hit(atom/target, blocked=0)
 	..()
@@ -58,7 +58,7 @@
 	name ="\improper high yield HE rocket"
 	desc = "Boom plus."
 	icon_state = "missile"
-	damage = 85
+	damage = 70
 	armour_penetration = 0.25
 	ricochets_max = 0 //it's a MISSILE
 	shrapnel_magnitude = 24
@@ -78,7 +78,7 @@
 	damage = 15
 	var/fire_stacks = 8
 	damage_type = BURN
-	shrapnel_magnitude = 6
+	shrapnel_magnitude = 0
 
 /obj/item/projectile/bullet/rocket/a84mm_incend/on_hit(atom/target, blocked=0)
 	..()
@@ -114,7 +114,7 @@
 	name ="\improper APHE missile"
 	desc = "Boom."
 	icon_state = "missile"
-	damage = 95
+	damage = 65
 	armour_penetration = 0.5
 	ricochets_max = 0 //Guess what? Still a MISSILE
 	var/sturdy = list(
