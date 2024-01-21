@@ -49,6 +49,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	/datum/outfit/loadout/raider_smith,
 	/datum/outfit/loadout/raider_sawbones,
 	/datum/outfit/loadout/raider_highway,
+	/datum/outfit/loadout/raider_enclave,
 	/datum/outfit/loadout/raider_bos,
 	/datum/outfit/loadout/raider_ncr,
 	/datum/outfit/loadout/raider_legion,
@@ -178,16 +179,35 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 	)
 
+/datum/outfit/loadout/raider_enclave
+	name = "Enclave Remnant"
+	suit = /obj/item/clothing/suit/armor/f13/combat/remnant
+	uniform = /obj/item/clothing/under/f13/exile/enclave
+	mask =	/obj/item/clothing/mask/gas/sechailer
+	id = /obj/item/card/id/rusted/brokenholodog/enclave
+	shoes = /obj/item/clothing/shoes/jackboots
+	gloves = /obj/item/clothing/gloves/fingerless
+	backpack_contents = list(
+		/obj/item/gun/energy/laser/plasma/pistol/remnant = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
+		/obj/item/book/granter/trait/techno = 1,
+		/obj/item/book/granter/trait/chemistry = 1,
+	)
+
 /datum/outfit/loadout/raider_bos
 	name = "Brotherhood Radical"
 	suit = /obj/item/clothing/suit/armored/heavy/bosexile
 	uniform = /obj/item/clothing/under/f13/recon/outcast
 	id = /obj/item/card/id/rusted/brokenholodog
 	shoes = /obj/item/clothing/shoes/jackboots
+	gloves = /obj/item/clothing/gloves/fingerless
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/pistol = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
+		/obj/item/book/granter/crafting_recipe/blueprint/aer9 = 1,
+		/obj/item/book/granter/trait/techno = 1,
 		)
 
 /datum/outfit/loadout/raider_ncr
@@ -195,6 +215,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	suit = /obj/item/clothing/suit/armor/f13/exile/ncrexile
 	uniform = /obj/item/clothing/under/f13/exile
 	shoes = /obj/item/clothing/shoes/f13/tan
+	gloves = /obj/item/clothing/gloves/fingerless
 	id = /obj/item/card/id/rusted
 	backpack_contents = list(
 		/obj/item/gun/ballistic/rifle/hunting = 1,
@@ -202,8 +223,8 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 		/obj/item/melee/onehanded/knife/bayonet = 1,
 		/obj/item/storage/box/ration/ranger_breakfast = 1,
 		/obj/item/grenade/f13/frag = 1,
-		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
+		/obj/item/book/granter/crafting_recipe/blueprint/service = 1,
 	    )
 
 /datum/outfit/loadout/raider_legion
