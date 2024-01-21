@@ -117,7 +117,7 @@
 
 /datum/gear/suit/ncrcfjacket
 	name = "NCRCF jacket"
-	path = /obj/item/clothing/suit/armor/f13/ncrcfjacket
+	path = /obj/item/clothing/suit/f13/ncr/ncrcfjacket
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 1
 
@@ -126,14 +126,6 @@
 	path = /obj/item/clothing/suit/samurai
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 4
-
-/datum/gear/suit/NCRutilityvest
-	name = "Utility Vest"
-	path = /obj/item/clothing/suit/armor/f13/utilityvest
-	subcategory = LOADOUT_SUBCATEGORY_SUIT_GENERAL
-	cost = 4
-	restricted_desc = null
-	restricted_roles = list()
 
 /datum/gear/suit/goner_red
 	name = "olive drab trenchcoat, red"
@@ -161,28 +153,8 @@
 
 /datum/gear/suit/NCRutilityvest
 	name = "Utility Vest"
-	path = /obj/item/clothing/suit/armor/f13/utilityvest
-	subcategory = LOADOUT_SUBCATEGORY_SUIT_FACTIONS
-	cost = 4
-	restricted_desc = "NCR"
-	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
-							"NCR Medical Officer",
-							"NCR Veteran Ranger",
-							"NCR Lieutenant",
-							"NCR Heavy Trooper",
-							"NCR Sergeant First Class",
-							"NCR Sergeant",
-							"NCR Corporal",
-							"NCR Combat Engineer",
-							"NCR Combat Medic",
-							"NCR Trooper",
-							"NCR Rear Echelon",
-							"NCR Off-Duty",
-							"NCR Ranger"
-						)
-
-
+	path = /obj/item/clothing/suit/f13/ncr/utilityvest
+	cost = 3
 
 /datum/gear/suit/fieldscribe
 	name = "Fieldscribe suit"

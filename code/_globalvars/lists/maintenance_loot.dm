@@ -379,8 +379,8 @@ GLOBAL_LIST_INIT(loot_t3_armor, list(
 ))
 
 GLOBAL_LIST_INIT(loot_t4_armor, list(
-	/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b,
-	/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b,
+	/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d,
+	/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d,
 	/obj/item/clothing/suit/armor/f13/combat/riotpolice,
 	/obj/item/clothing/head/helmet/f13/combat/rangerbroken,
 	/obj/item/clothing/suit/armor/f13/combat/mk2,

@@ -53,13 +53,11 @@
 	desc = "An old military grade pre-war combat helmet."
 	icon_state = "combat_helmet"
 	item_state = "combat_helmet"
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 10)
-	strip_delay = 50
+	flags_cover = null
 	flags_inv = HIDEEARS|HIDEHAIR
-	resistance_flags = LAVA_PROOF | FIRE_PROOF
 	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 3)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 10, "fire" = 15, "acid" = 0, "wound" = 15)
+	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 5)
 
 /obj/item/clothing/head/helmet/f13/combat/dark
 	color = "#302E2E" // Dark Grey
@@ -78,10 +76,10 @@
 	desc = "An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms."
 	icon_state = "combat_helmet_mk2"
 	item_state = "combat_helmet_mk2"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 40, "energy" = 22, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 10)
-	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
 	flags_cover = HEADCOVERSEYES
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 5)
+	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 20, "acid" = 0, "wound" = 20)
+	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10)
 
 /obj/item/clothing/head/helmet/f13/combat/mk2/dark
 	name = "reinforced combat helmet"
@@ -92,36 +90,35 @@
 	desc = "A reinforced combat helmet painted black with the laser designator removed."
 	icon_state = "combat_helmet_raider"
 	item_state = "combat_helmet_raider"
+	armor = list("melee" = 45, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 10, "fire" = 15, "acid" = 0, "wound" = 15)
 
 /obj/item/clothing/head/helmet/f13/combat/rangerbroken
 	name = "broken riot helmet"
 	icon_state = "ranger_broken"
 	desc = "An old riot police helmet, out of use around the time of the war."
-	armor = list("melee" = 55, "bullet" = 55, "laser" = 45, "energy" = 30, "bomb" = 45, "bio" = 55, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 10)
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE|HIDESNOUT
-	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
-	resistance_flags = LAVA_PROOF | FIRE_PROOF
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
-	flash_protect = 1
+	flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
+	armor = list("melee" = 35, "bullet" = 50, "laser" = 45, "energy" = 15, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 25)
 
 /obj/item/clothing/head/helmet/f13/combat/swat
 	name = "SWAT combat helmet"
 	desc = "A prewar combat helmet issued to S.W.A.T. personnel."
 	icon_state = "swatsyndie"
 	item_state = "swatsyndie"
-	armor = list("melee" = 35, "bullet" = 50, "laser" = 40, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
-
+	flags_cover = HEADCOVERSEYES
+	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
+	armor = list("melee" = 50, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 10, "fire" = 15, "acid" = 0, "wound" = 15)
 
 /obj/item/clothing/head/helmet/f13/combat/environmental
 	name = "environmental armor helmet"
 	desc = "A full head helmet and gas mask, developed for use in heavily contaminated environments."
 	icon_state = "env_helmet"
 	item_state = "env_helmet"
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 40,"energy" = 20, "bomb" = 55, "bio" = 70, "rad" = 100, "fire" = 60, "acid" = 50)
 	strip_delay = 60
 	equip_delay_other = 60
-	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
+	armor = list("melee" = 25, "bullet" = 15, "laser" = 35, "energy" = 15, "bomb" = 10, "bio" = 80, "rad" = 80, "fire" = 30, "acid" = 30, "wound" = 10)
 
 /obj/item/clothing/head/helmet/f13/combat/environmental/ComponentInitialize()
 	. = ..()
@@ -134,9 +131,11 @@
 	desc = "A sulphite raider helmet, affixed with thick anti-ballistic glass over the eyes."
 	icon_state = "sulphite_helm"
 	item_state = "sulphite_helm"
-	armor = list("melee" = 25, "bullet" = 55,"laser" = 40, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 10)
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
-	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
+	dynamic_hair_suffix = ""
+	armor = list("melee" = 40, "bullet" = 45, "laser" = 55, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 0, "wound" = 25)
+	slowdown = 0.02
 
 //Metal
 
@@ -145,20 +144,29 @@
 	desc = "An iron helmet forged by tribal warriors, with a unique design to protect the face from arrows and axes."
 	icon_state = "metalhelmet"
 	item_state = "metalhelmet"
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
-	armor = list("melee" = 35, "bullet" = 20, "laser" = 40, "energy" = 15, "bomb" = 45, "bio" = 30, "rad" = 15, "fire" = 60, "acid" = 0, "wound" = 10)
+	flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
+	dynamic_hair_suffix = ""
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 50, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 20)
+	slowdown = 0.02
 
 /obj/item/clothing/head/helmet/knight/f13/metal/reinforced
 	name = "reinforced metal helmet"
 	icon_state = "metalhelmet_r"
 	item_state = "metalhelmet_r"
-	armor = list("melee" = 37, "bullet" = 22, "laser" = 42, "energy" = 16, "bomb" = 45, "bio" = 30, "rad" = 15, "fire" = 60, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 55, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 25)
+	slowdown = 0.02
 
 /obj/item/clothing/head/helmet/knight/f13/rider
 	name = "rider helmet" //Not raider. Rider.
 	desc = "It's a fancy dark metal helmet with orange spray painted flames."
 	icon_state = "rider"
 	item_state = "rider"
+	flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
+	dynamic_hair_suffix = ""
+	armor = list("melee" = 50, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 20)
+	slowdown = 0.02
 
 /obj/item/clothing/head/helmet/f13/metalmask
 	name = "metal mask"
@@ -168,7 +176,7 @@
 	toggle_message = "You lower"
 	alt_toggle_message = "You raise"
 	can_toggle = 1
-	armor = list("melee" = 35, "bullet" = 20, "laser" = 40, "energy" = 15, "bomb" = 45, "bio" = 30, "rad" = 15, "fire" = 60, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 45, "energy" = 5, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 15)
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDESNOUT|HIDEFACIALHAIR
 	strip_delay = 80
 	actions_types = list(/datum/action/item_action/toggle)
@@ -191,25 +199,24 @@
 	desc = "A reinforced metal hockey mask."
 	icon_state = "metal_mask2"
 	item_state = "metal_mask2"
-	armor = list("melee" = 37, "bullet" = 25, "laser" = 42, "energy" = 15, "bomb" = 40, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 10)
-	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDESNOUT|HIDEFACIALHAIR
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 50, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 20)
 
-/obj/item/clothing/head/helmet/f13/tesla
-	name = "tesla helmet"
-	desc = "A prewar armor design by Nikola Tesla before being confiscated by the U.S. government. Provides high energy weapons resistance."
-	icon_state = "tesla_helmet"
-	item_state = "tesla_helmet"
-	armor = list("melee" = 25, "bullet" = 25,"laser" = 80, "energy" = 60, "bomb" = 40, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 10)
-	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
-	var/hit_reflect_chance = 20
-	protected_zones = list(BODY_ZONE_CHEST, BODY_ZONE_PRECISE_GROIN, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
+// /obj/item/clothing/head/helmet/f13/tesla
+// 	name = "tesla helmet"
+// 	desc = "A prewar armor design by Nikola Tesla before being confiscated by the U.S. government. Provides high energy weapons resistance."
+// 	icon_state = "tesla_helmet"
+// 	item_state = "tesla_helmet"
+// 	armor = list("melee" = 25, "bullet" = 25,"laser" = 80, "energy" = 60, "bomb" = 40, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 10)
+// 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
+// 	var/hit_reflect_chance = 20
+// 	protected_zones = list(BODY_ZONE_CHEST, BODY_ZONE_PRECISE_GROIN, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
 
-/obj/item/clothing/head/helmet/f13/tesla/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
-	if(is_energy_reflectable_projectile(object) && (attack_type == ATTACK_TYPE_PROJECTILE) && (def_zone in protected_zones))
-		if(prob(hit_reflect_chance))
-			block_return[BLOCK_RETURN_REDIRECT_METHOD] = REDIRECT_METHOD_DEFLECT
-			return BLOCK_SHOULD_REDIRECT | BLOCK_REDIRECTED | BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
-	return ..()
+// /obj/item/clothing/head/helmet/f13/tesla/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
+// 	if(is_energy_reflectable_projectile(object) && (attack_type == ATTACK_TYPE_PROJECTILE) && (def_zone in protected_zones))
+// 		if(prob(hit_reflect_chance))
+// 			block_return[BLOCK_RETURN_REDIRECT_METHOD] = REDIRECT_METHOD_DEFLECT
+// 			return BLOCK_SHOULD_REDIRECT | BLOCK_REDIRECTED | BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
+// 	return ..()
 
 /////////////////
 // Power Armor //
@@ -346,43 +353,14 @@
 		if(2)
 			return "<span class='warning'>The connections ports have been <i>unanchored</i> and only <i>wires</i> remain.</span>"
 
-/obj/item/clothing/head/helmet/f13/power_armor/t45b
-	name = "T-45b helmet"
-	desc = "It's a T-45b power armor helmet."
-	icon_state = "t45bhelmet"
-	item_state = "t45bhelmet"
-	armor = list("melee" = 55, "bullet" = 60, "laser" = 45, "energy" = 20, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
-	salvaged_type = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b
-
 /obj/item/clothing/head/helmet/f13/power_armor/t45d
 	name = "T-45d power helmet"
 	desc = "An old pre-War power armor helmet. It's pretty hot inside of it."
 	icon_state = "t45dhelmet0"
 	item_state = "t45dhelmet0"
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
-	armor = list("melee" = 60, "bullet" = 65, "laser" = 50, "energy" = 22, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
+	armor = list("melee" = 65, "bullet" = 65, "laser" = 50, "energy" = 30, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 50)
 	salvaged_type = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d
-
-//Fluff Helmet
-/obj/item/clothing/head/helmet/f13/power_armor/t45d/refurb
-	name = "Refurbished T-45d power helmet"
-	desc = "An old pre-War power armor helmet. This one appears to have been refitted. Probably many times over, at that, with its patchwork internals."
-	icon_state = "t45dhelmet0"
-	item_state = "t45dhelmet0"
-	actions_types = list(/datum/action/item_action/toggle_helmet_light)
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 25, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 50)
-	salvaged_type = null
-
-//////
-// Raider Boss
-//////
-/obj/item/clothing/head/helmet/f13/power_armor/t45d/raider
-	name = "Raider Captain's power helmet"
-	desc = "The Raider Captain's helmet for their set of refurbished T-45d power armor. How'd you get your hands on this?"
-	icon_state = "raiderpa_helm"
-	item_state = "raiderpa_helm"
-	salvaged_type = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/raider
-	actions_types = null
 
 //////
 // Sheriff's Suit
@@ -548,12 +526,8 @@
 	desc = "This power armor helmet was salvaged by savages from the battlefield.<br>They believe that these helmets capture the spirits of their fallen wearers, so they painted some runes on to give it a more sacred meaning."
 	icon_state = "tribal"
 	item_state = "tribal"
-	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 35, "bomb" = 72, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 0, "wound" = 90)
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
 	strip_delay = 30
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/f13
 	flags_inv = HIDEHAIR
@@ -608,22 +582,12 @@
 	desc = "A piece of cloth worn on head for a variety of purposes, such as protection of the head or hair from rain, wind, dirt, cold, warmth, for sanitation, for fashion, recognition or social distinction - with religious significance, to hide baldness, out of modesty, or other forms of social convention."
 	icon_state = "headscarf"
 	item_state = "dethat"
-	flags_inv = HIDEMASK|HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
+	flags_cover = HEADCOVERSMOUTH
+	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
+	dynamic_hair_suffix = ""
 	mutantrace_variation = STYLE_MUZZLE
 
 /obj/item/clothing/head/f13/headscarf/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
-/obj/item/clothing/head/f13/headscarfncr
-	name = "NCR headscarf"
-	desc = "A piece of cloth worn on the head for a variety of purposes. This one has a white band around it, with NCR symbolism on the front. Clearly, the purpose of this one is to make sure nobody forgets the NCR owns this sand."
-	icon_state = "headscarf_ncr"
-	item_state = "headscarf_ncr"
-	flags_inv = HIDEMASK|HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
-	mutantrace_variation = STYLE_MUZZLE
-
-/obj/item/clothing/head/f13/headscarfncr/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -634,29 +598,25 @@
 	item_state = "fedora"
 	force = 20
 	hitsound = 'sound/items/trayhit1.ogg'
-	flags_inv = HIDEHAIR
-	armor = list("melee" = 30, "bullet" = 20, "laser" = 25, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 30, "bullet" = 20, "laser" = 10, "energy" = 0, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 15)
 
 /obj/item/clothing/head/f13/cowboy
 	name = "cowboy hat"
 	desc = "I've never seen so many men wasted so badly."
 	icon_state = "cowboy"
 	item_state = "dethat"
-	flags_inv = HIDEHAIR
-	armor = list("melee" = 20, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
 
 /obj/item/clothing/head/f13/cowboy/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
-
 
 /obj/item/clothing/head/f13/bandit
 	name = "bandit hat"
 	desc = "A black cowboy hat with a large brim that's curved to the sides.<br>A silver eagle pin is attached to the front."
 	icon_state = "bandit"
 	item_state = "fedora"
-	flags_inv = HIDEHAIR
-	armor = list("melee" = 20, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
 
 /obj/item/clothing/head/f13/bandit/Initialize(mapload)
 	. = ..()
@@ -667,36 +627,32 @@
 	desc = "A perfect hat for a ramblin' gamblin' man." //But I got to ramble (ramblin' man) //Oh I got to gamble (gamblin' man) //Got to got to ramble (ramblin' man) //I was born a ramblin' gamblin' man
 	icon_state = "gambler"
 	item_state = "dethat"
-	flags_inv = HIDEHAIR
-	armor = list("melee" = 20, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
 
 /obj/item/clothing/head/f13/gambler/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
-
 
 /obj/item/clothing/head/helmet/f13/motorcycle
 	name = "motorcycle helmet"
 	desc = "A type of helmet used by motorcycle riders.<br>The primary goal of a motorcycle helmet is motorcycle safety - to protect the rider's head during impact, thus preventing or reducing head injury and saving the rider's life."
 	icon_state = "motorcycle"
 	item_state = "motorcycle"
-	flags_cover = HEADCOVERSEYES
-	armor = list("melee" = 35, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 10)
-	flags_inv = HIDEMASK|HIDEEARS|HIDEHAIR
+	flags_cover = null
+	flags_inv = HIDEEARS|HIDEHAIR
+	dynamic_hair_suffix = ""
+	armor = list("melee" = 20, "bullet" = 20, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
 	strip_delay = 10
-
-/obj/item/clothing/head/helmet/f13/motorcycle/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/helmet/f13/firefighter
 	name = "firefighter helmet"
 	desc = "A firefighter's helmet worn on top of a fire-retardant covering and broken gas mask.<br>It smells heavily of sweat."
 	icon_state = "firefighter"
 	item_state = "firefighter"
-	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 25, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 10)
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
+	flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
+	dynamic_hair_suffix = ""
+	armor = list("melee" = 20, "bullet" = 15, "laser" = 20, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 0, "wound" = 10)
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
 	heat_protection = HEAD
@@ -709,7 +665,11 @@
 	desc = "An old sombrero worn by Vaqueros to keep off the harsh sun."
 	icon_state = "vaquerohat"
 	item_state = "vaquerohat"
-	flags_inv = HIDEEARS|HIDEHAIR
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
+
+/obj/item/clothing/head/helmet/f13/vaquerohat/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/helmet/f13/wastewarhat
 	name = "warrior helmet"
@@ -718,31 +678,27 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/helmet.dmi'
 	icon_state = "wastewar"
 	item_state = "wastewar"
-	armor = list("melee" = 35, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 10)
-	flags_inv = HIDEEARS|HIDEHAIR
-
-/obj/item/clothing/head/helmet/f13/wastewarhat/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
+	flags_cover = null
+	flags_inv = HIDEEARS
+	dynamic_hair_suffix = ""
+	armor = list("melee" = 35, "bullet" = 25, "laser" = 15, "energy" = 5, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 20)
 
 /obj/item/clothing/head/helmet/f13/hoodedmask
 	name = "hooded mask"
 	desc = "A gask mask with the addition of a hood."
 	icon_state = "Hooded_Gas_Mask"
 	item_state = "Hooded_Gas_Mask"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 10)
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
+	flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
 	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 60, "rad" = 40, "fire" = 40, "acid" = 20, "wound" = 10)
 
 /obj/item/clothing/head/helmet/f13/brahmincowboyhat
 	name = "brahmin leather cowboy hat"
 	desc = "A cowboy hat made from brahmin hides."
 	icon_state = "brahmin_leather_cowboy_hat"
 	item_state = "brahmin_leather_cowboy_hat"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 10)
-	flags_inv = HIDEEARS|HIDEHAIR
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
 
 /obj/item/clothing/head/helmet/f13/brahmincowboyhat/Initialize(mapload)
 	. = ..()
@@ -753,8 +709,7 @@
 	desc = "A hat made from tanned leather hide."
 	icon_state = "rusted_cowboy"
 	item_state = "rusted_cowboy"
-	flags_inv = HIDEEARS|HIDEHAIR
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 10)
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
 
 /obj/item/clothing/head/helmet/f13/rustedcowboyhat/Initialize(mapload)
 	. = ..()
@@ -765,7 +720,11 @@
 	desc = "The wasteland's finest."
 	icon_state = "retropolice"
 	item_state = "fedora"
-	flags_inv = HIDEHAIR
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
+
+/obj/item/clothing/head/f13/police/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/simplekitty
 	name = "kitty headband"
@@ -779,7 +738,24 @@
 	desc = "It's a fancy two-tone metal helmet. It's been lined with additional plating and given a fresh coat of paint."
 	icon_state = "riderw"
 	item_state = "riderw"
-	armor = list("melee" = 55, "bullet" = 35, "laser" = 35, "energy" = 15, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 10)
+	flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
+	armor = list("melee" = 55, "bullet" = 45, "laser" = 45, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 25)
+	slowdown = 0.02
+
+/obj/item/clothing/head/welding/f13/fire
+	name = "cremator welding helmet"
+	desc = "A welding helmet with flames painted on it.<br>It sure is creepy but also badass."
+	icon_state = "welding_fire"
+	item_state = "welding_fire"
+
+/obj/item/clothing/head/welding/f13/japan
+	name = "oriental welding helmet"
+	desc = "A welding helmet with a white and red oriental design."
+	icon_state = "welding_japan"
+	item_state = "welding_japan"
 
 //Soft caps
 /obj/item/clothing/head/soft/f13
@@ -814,126 +790,12 @@
 
 //DONOR, PATREON AND CUSTOM
 
-/obj/item/clothing/head/donor/macarthur
-	name = "Peaked Cap"
-	desc = "A resistant, tan peaked cap, typically worn by pre-War Generals."
-	icon_state = "macarthur"
-	item_state = "macarthur"
-
-
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat/rigscustom
-	name = "11th armored calvary helmet"
-	desc = "An advanced combat helmet used by the 11th Armored Calvary Regiment before the war. There is a worn and faded 11th Armored Calvary Regiment's insignia just above the visor. The helmet itself has some scratches and dents sustained from battle."
-	icon_state = "rigscustom_helmet"
-	item_state = "rigscustom_helmet"
-	icon = 'icons/fallout/clothing/hats.dmi'
-
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat/pricecustom
-	name = "spider riot helmet"
-	desc = "A customised riot helmet reminiscient of the more advanced riot helmets found in the Divide, sporting purple lenses over the traditional red or green and a pair of red fangs painted over the respirator. The back of the helmet has a the face of an albino spider painted over it."
-	icon_state = "price_ranger"
-	item_state = "price_ranger"
-
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat/foxcustom
-	name = "reclaimed ranger-hunter combat helmet"
-	desc = "A reclaimed Ranger-Hunter centurion helmet, carefully and lovingly restored to working condition with a sniper's veil wrapped around the neck. 'DE OPPRESSO LIBER' is stenciled on the front."
-	icon_state = "foxranger"
-	item_state = "foxranger"
-	actions_types = list(/datum/action/item_action/toggle)
-	toggle_message = "You put the sniper's veil on"
-	alt_toggle_message = "You take the sniper's veil off"
-	can_toggle = 1
-	toggle_cooldown = 0
-
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat/degancustom
-	name = "reclaimed ranger-hunter combat helmet"
-	desc = "A reclaimed Ranger-Hunter centurion helmet, carefully and lovingly restored to working condition with a sniper's veil wrapped around the neck. 'DE OPPRESSO LIBER' is stenciled on the front."
-	icon_state = "elite_riot"
-	item_state = "elite_riot"
-	actions_types = list(/datum/action/item_action/toggle)
-	toggle_message = "You put the sniper's veil on"
-	alt_toggle_message = "You take the sniper's veil off"
-	can_toggle = 1
-	toggle_cooldown = 0
-
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat/mosshelmet
-	name = "veteran patrol stetson"
-	desc = "A weathered campaign hat tightly fitted over the viscera of a ranger combat helmet. The old stetson is faded with age and heavy use, having seen the green shores of California to the white peaks of the rockies."
-	icon_state = "mosshelmet"
-	item_state = "mosshelmet"
-	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACE
-	flags_cover = HEADCOVERSEYES
-
-/obj/item/clothing/head/helmet/f13/jasonmask
-	name = "jasons mask"
-	desc = "A metal mask made specifically for jason."
-	icon_state = "jasonmask"
-	item_state = "jasonmask"
-
-/obj/item/clothing/head/welding/f13 //dont use
-	icon_state = ""
-	mutantrace_variation = null
-
-/obj/item/clothing/head/welding/f13/fire
-	name = "cremator welding helmet"
-	desc = "A welding helmet with flames painted on it.<br>It sure is creepy but also badass."
-	icon_state = "welding_fire"
-	item_state = "welding_fire"
-
-/obj/item/clothing/head/welding/f13/japan
-	name = "oriental welding helmet"
-	desc = "A welding helmet with a white and red oriental design."
-	icon_state = "welding_japan"
-	item_state = "welding_japan"
-
-/obj/item/clothing/head/helmet/f13/atombeliever
-	name = "believer headdress"
-	desc = "The headwear of the true faith."
-	icon_state = "atombeliever"
-	item_state = "atombeliever"
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
-
-/obj/item/clothing/head/f13/flatranger
-	name = "NCR gambler ranger hat"
-	desc = "A rustic, homely style gambler hat adorning an NCR Ranger patch. Yeehaw!"
-	icon_state = "gamblerrang"
-	item_state = "gamblerrang"
-
-/obj/item/clothing/head/helmet/f13/legion/venator/diohelmet
-	name = "galerum lacertarex"
-	desc = "The hide of a deadly green gecko affixed over a reinforced legion helmet. Its ghastly appearance serves as an intimidating gesture to those who do not yet fear the Lizard King."
-	icon_state = "diohelmet"
-	item_state = "diohelmet"
-
-/obj/item/clothing/head/helmet/f13/herbertranger
-	name = "weathered desert ranger helmet"
-	icon_state = "modified_usmc_riot"
-	item_state = "modified_usmc_riot"
-	desc = "An ancient USMC riot helmet. This paticular piece retains the classic colouration of the legendary Desert Rangers, and looks as if it has been worn for decades; its night vision no longer seems to be functional. Scratched into the helmet is the sentence: 'Death to the Devils that simulate our freedom.'"
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE|HIDESNOUT
-	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
-	resistance_flags = LAVA_PROOF | FIRE_PROOF
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
-
-/obj/item/clothing/head/helmet/f13/marlowhat
-	name = "boss of the plains hat"
-	desc = "A thick undyed felt cowboy hat, bleached from excessive sun exposure and creased from heavy usage."
-	icon_state = "marlowhat"
-	item_state = "marlowhat"
-	flags_inv = HIDEEARS|HIDEHAIR
-
-/obj/item/clothing/head/helmet/f13/marlowhat/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/head/f13/ranger_hat
 	name = "grey cowboy hat"
 	desc = "A simple grey cowboy hat."
 	icon_state = "ranger_grey_hat"
 	item_state = "ranger_grey_hat"
-	flags_inv = HIDEEARS|HIDEHAIR
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
 
 /obj/item/clothing/head/f13/ranger_hat/Initialize(mapload) //HQ parts reinforcement
 	. = ..()
@@ -967,14 +829,14 @@
 /obj/item/clothing/head/helmet/skull/bone
 	name = "Reinforced skull helmet"
 	desc = "An intimidating tribal helmet reinforced with leather and cloth parts on the inside for more comfort, while styling it on the Bone dancers way."
-	flags_inv = HIDEEARS|HIDEFACE
-	flags_cover = HEADCOVERSEYES
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 25, "energy" = 10, "bomb" = 15, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDESNOUT
+	armor = list("melee" = 50, "bullet" = 25, "laser" = 35, "energy" = 5, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 20)
 	icon_state = "bone_dancer_helmet"
 	item_state = "bone_dancer_helmet"
 	strip_delay = 100
 
-/obj/item/clothing/head/helmet/f13/ncr/rangercombat/finlayranger
+/obj/item/clothing/head/helmet/f13/ncr/vetranger/finlayranger
 	name = "reclaimed ranger-hunter combat helmet"
 	desc = "A modified ranger helmet now utilised by the brotherhood of steel, functionally identical to a standard helmet."
 	icon_state = "finlayhelmet"
