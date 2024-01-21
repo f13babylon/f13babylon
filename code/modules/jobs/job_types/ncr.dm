@@ -862,8 +862,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/corporalrifleman
 	name = "Squad Spotter"
-	head = /obj/item/clothing/head/f13/ncr
-	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
 	suit_store = /obj/item/gun/ballistic/automatic/service/carbine
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556mm = 2,
@@ -872,8 +870,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/corporalcqc
 	name = "Squad Second-Liner"
-	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
-	head = /obj/item/clothing/head/f13/ncr/steelpot_bandolier
 	suit_store = /obj/item/gun/ballistic/shotgun/trench
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck = 2,
