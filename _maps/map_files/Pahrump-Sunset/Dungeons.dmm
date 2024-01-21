@@ -530,6 +530,12 @@
 	name = "metal plating"
 	},
 /area/f13/bunker)
+"aBZ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/glass,
+/obj/structure/lattice,
+/turf/open/floor/plating/tunnel,
+/area/f13/bunker)
 "aCp" = (
 /obj/structure/campfire/stove,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
@@ -1105,7 +1111,9 @@
 "bpH" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/renegade/grunt{
-	extra_projectiles = 4
+	extra_projectiles = 4;
+	minimum_distance = 0;
+	retreat_distance = 3
 	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
@@ -3470,14 +3478,8 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "dVk" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/renegade/guardian{
-	extra_projectiles = 2;
-	melee_queue_distance = 2
-	},
-/turf/open/floor/f13{
-	icon_state = "darkdirtysolid"
-	},
+/obj/structure/ladder/unbreakable/transition,
+/turf/closed/indestructible/f13vaultrusted,
 /area/f13/bunker)
 "dVs" = (
 /obj/structure/barricade/wooden,
@@ -3934,14 +3936,26 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
+"esn" = (
+/mob/living/simple_animal/hostile/renegade/guardian{
+	extra_projectiles = 2;
+	melee_queue_distance = 2;
+	retreat_distance = 2;
+	minimum_distance = 0
+	},
+/turf/open/floor/f13{
+	icon_state = "darkdirtysolid"
+	},
+/area/f13/bunker)
 "esT" = (
 /obj/machinery/light{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	icon_state = "darkdirtysolid"
-	},
+/obj/structure/lattice,
+/obj/effect/decal/cleanable/glass,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "etj" = (
 /obj/effect/decal/cleanable/dirt,
@@ -4155,6 +4169,16 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/vault)
+"eDG" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = "RenegadesB1"
+	},
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/bunker)
 "eER" = (
 /obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/structure/reagent_dispensers/barrel/dangerous,
@@ -8867,8 +8891,11 @@
 /area/f13/bunker)
 "jPy" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/renegade/defender{
-	armour_penetration = 0.4
+/mob/living/simple_animal/hostile/renegade/guardian{
+	extra_projectiles = 2;
+	melee_queue_distance = 2;
+	retreat_distance = 0;
+	minimum_distance = 6
 	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
@@ -10809,8 +10836,10 @@
 /area/f13/city)
 "lQG" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/stairs/east{
-	max_integrity = 3000
+/mob/living/simple_animal/hostile/renegade/grunt{
+	extra_projectiles = 4;
+	minimum_distance = 0;
+	retreat_distance = 3
 	},
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
@@ -11541,9 +11570,12 @@
 /area/f13/caves)
 "mFG" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/barricade/concrete,
+/mob/living/simple_animal/hostile/renegade/defender{
+	armour_penetration = 0.4;
+	rapid_melee = 2
+	},
 /turf/open/floor/f13{
-	icon_state = "darkdirtysolid"
+	icon_state = "darkrusty"
 	},
 /area/f13/bunker)
 "mGx" = (
@@ -14535,6 +14567,17 @@
 /obj/item/clothing/under/shorts/black,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"pLO" = (
+/mob/living/simple_animal/hostile/renegade/guardian{
+	extra_projectiles = 2;
+	melee_queue_distance = 2;
+	retreat_distance = 4;
+	minimum_distance = 0
+	},
+/turf/open/floor/f13{
+	icon_state = "darkdirtysolid"
+	},
+/area/f13/bunker)
 "pMc" = (
 /obj/machinery/mech_bay_recharge_port{
 	dir = 2
@@ -15490,6 +15533,11 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/glass,
+/mob/living/simple_animal/hostile/renegade/grunt{
+	extra_projectiles = 4;
+	minimum_distance = 0;
+	retreat_distance = 3
+	},
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "qIp" = (
@@ -32576,7 +32624,7 @@ kjM
 ceJ
 rsh
 eWH
-ptp
+pLO
 rsh
 vhj
 kpz
@@ -32828,9 +32876,9 @@ hrZ
 hrZ
 oqm
 kjM
-qqH
+aBZ
 eWH
-bpH
+mFG
 sMj
 eYv
 eYv
@@ -33084,13 +33132,13 @@ hrZ
 hrZ
 hrZ
 oqm
-vhj
-eWH
-lKU
+eDG
 eWH
 ege
+eWH
+lKU
 jPy
-jPy
+eYv
 eWH
 bpH
 ius
@@ -33342,12 +33390,12 @@ hrZ
 hrZ
 oqm
 vhj
-ege
+vhj
+eWH
+mFG
 eYv
-eWH
-eWH
-eWH
-eWH
+lKU
+eYv
 eWH
 eWH
 bfC
@@ -33598,13 +33646,13 @@ hrZ
 hrZ
 hrZ
 oqm
-rsh
-dVk
-mFG
+esn
+vhj
+kjM
 esT
 rsh
 lQG
-lQG
+vhj
 rsh
 eWH
 bXR
@@ -36685,7 +36733,7 @@ oqm
 izt
 ykp
 qKO
-oqm
+dVk
 oqm
 oqm
 tKw

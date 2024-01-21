@@ -517,7 +517,11 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "aeb" = (
-/turf/open/transparent/openspace,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	dir = 8;
+	icon_state = "rampdowntop"
+	},
 /area/f13/bunker)
 "aew" = (
 /obj/structure/cable{
@@ -5674,7 +5678,6 @@
 "ctO" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/glass,
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/bundle/f13/armor/combat,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
@@ -5757,9 +5760,7 @@
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/building/massfusion)
 "cwd" = (
-/obj/structure/railing{
-	dir = 4
-	},
+/obj/structure/barricade/concrete,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -5975,6 +5976,13 @@
 	icon_state = "horizontalinnermain1"
 	},
 /area/f13/tunnel)
+"cGf" = (
+/obj/structure/debris/v4{
+	layer = 4.0
+	},
+/obj/structure/timeddoor/sixtyminute,
+/turf/closed/indestructible/f13vaultrusted,
+/area/f13/bunker)
 "cGq" = (
 /obj/machinery/light{
 	dir = 1
@@ -6001,12 +6009,13 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/tunnel/bighorn)
 "cIu" = (
-/obj/structure/railing/corner{
-	dir = 4
+/obj/structure/railing{
+	dir = 6
 	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	icon_state = "darkrusty"
+/obj/structure/lattice,
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess2"
 	},
 /area/f13/bunker)
 "cKl" = (
@@ -6052,6 +6061,13 @@
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel/bighorn)
+"cMR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "floordirty"
+	},
+/area/f13/bunker)
 "cNs" = (
 /obj/machinery/light{
 	dir = 4
@@ -6779,9 +6795,11 @@
 	},
 /area/f13/tunnel)
 "dQa" = (
-/obj/machinery/porta_turret/syndicate{
-	faction = list("raider","hostile","ghoul","supermutant")
-	},
+/obj/machinery/door/airlock/highsecurity,
+/obj/structure/barricade/wooden/planks/pregame,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/glass,
+/obj/structure/timeddoor/sixtyminute,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -6940,6 +6958,10 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/brotherhood/reactor)
+"eal" = (
+/obj/structure/timeddoor,
+/turf/closed/mineral/random/low_chance,
+/area/f13/caves)
 "eaV" = (
 /obj/machinery/vending/dinnerware,
 /turf/open/floor/f13{
@@ -7693,6 +7715,17 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/tunnel)
+"fda" = (
+/obj/structure/railing{
+	dir = 5
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/lattice,
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess2"
+	},
+/area/f13/bunker)
 "fdG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/drip,
@@ -7824,6 +7857,7 @@
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/planks,
 /obj/effect/decal/cleanable/generic,
+/obj/structure/timeddoor,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "fmc" = (
@@ -8928,6 +8962,7 @@
 "hhX" = (
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/planks,
+/obj/structure/timeddoor,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "hit" = (
@@ -9012,6 +9047,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/tunnel/bighorn)
+"hoO" = (
+/obj/structure/debris/v3{
+	layer = 6.0
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/bunker)
 "hqq" = (
 /mob/living/simple_animal/hostile/raider/sulphite{
 	name = "Tunnel Torturers Lieutenant"
@@ -9133,7 +9178,7 @@
 	armour_penetration = 0.4
 	},
 /turf/open/floor/f13{
-	icon_state = "darkrusty"
+	icon_state = "floordirty"
 	},
 /area/f13/bunker)
 "hxY" = (
@@ -9225,7 +9270,7 @@
 /area/f13/tunnel/bighorn)
 "hDX" = (
 /obj/structure/barricade/wooden,
-/obj/structure/timeddoor,
+/obj/structure/timeddoor/sixtyminute,
 /turf/closed/wall/r_wall/rust,
 /area/f13/bunker)
 "hEg" = (
@@ -9869,6 +9914,9 @@
 	pixel_x = 9;
 	pixel_y = -11
 	},
+/obj/structure/wreck/trash/five_tires{
+	pixel_y = 5
+	},
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/tunnel)
 "iGl" = (
@@ -9972,7 +10020,10 @@
 	pixel_x = 1;
 	pixel_y = 16
 	},
-/obj/structure/wreck/trash/one_tire,
+/obj/structure/wreck/trash/five_tires{
+	pixel_y = 9;
+	pixel_x = 9
+	},
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/tunnel)
 "iOG" = (
@@ -10343,6 +10394,16 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/building/massfusion)
+"jqJ" = (
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	id = "RenegadesB1"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/bunker)
 "jre" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
@@ -12116,17 +12177,13 @@
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "mau" = (
-/obj/structure/rack/shelf_metal,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/obj/effect/turf_decal/bot,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
 /obj/structure/sign/poster/contraband/smoke{
 	pixel_x = -32
 	},
+/obj/machinery/smartfridge/bottlerack/lootshelf/books,
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "maO" = (
@@ -12211,7 +12268,7 @@
 	dir = 4
 	},
 /turf/open/floor/f13{
-	icon_state = "darkrusty"
+	icon_state = "floordirty"
 	},
 /area/f13/bunker)
 "mlD" = (
@@ -12660,6 +12717,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel/bighorn)
+"naT" = (
+/obj/structure/timeddoor/sixtyminute,
+/turf/closed/indestructible/f13vaultrusted,
+/area/f13/bunker)
 "nbe" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/trash/can,
@@ -12997,6 +13058,12 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/tunnel)
+"nKi" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "floordirty"
+	},
+/area/f13/bunker)
 "nKt" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair{
@@ -14336,6 +14403,10 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/building/massfusion)
+"pEQ" = (
+/obj/structure/timeddoor,
+/turf/closed/wall/f13/ruins,
+/area/f13/caves)
 "pFU" = (
 /obj/structure/table/wood/settler,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/hobo,
@@ -14643,6 +14714,11 @@
 /obj/structure/wreck/trash/machinepiletwo,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel/bighorn)
+"qdf" = (
+/obj/structure/barricade/wooden,
+/obj/structure/timeddoor/sixtyminute,
+/turf/closed/indestructible/f13vaultrusted,
+/area/f13/bunker)
 "qdg" = (
 /obj/structure/wreck/trash/five_tires{
 	pixel_y = 11
@@ -14868,7 +14944,7 @@
 	},
 /area/f13/tunnel)
 "qqz" = (
-/obj/structure/timeddoor,
+/obj/structure/timeddoor/sixtyminute,
 /turf/closed/wall/r_wall,
 /area/f13/bunker)
 "qqD" = (
@@ -15350,7 +15426,9 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel/bighorn)
 "rit" = (
-/obj/structure/railing/corner,
+/obj/machinery/door/airlock/highsecurity,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/timeddoor/sixtyminute,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -15375,6 +15453,9 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /obj/machinery/light,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "rmi" = (
@@ -15921,13 +16002,15 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "sdz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/lattice,
+/obj/effect/decal/cleanable/glass,
 /obj/structure/railing{
-	dir = 1
+	dir = 9
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	icon_state = "darkrusty"
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess2"
 	},
 /area/f13/bunker)
 "seP" = (
@@ -16100,13 +16183,14 @@
 	},
 /area/f13/followers)
 "spA" = (
-/obj/structure/railing{
-	dir = 1
-	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light,
-/turf/open/floor/f13{
-	icon_state = "darkrusty"
+/obj/machinery/porta_turret/syndicate{
+	faction = list("raider","hostile","ghoul","supermutant")
+	},
+/obj/effect/decal/cleanable/oil/slippery,
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess2"
 	},
 /area/f13/bunker)
 "sqy" = (
@@ -16498,9 +16582,12 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/tunnel)
 "tam" = (
-/obj/structure/railing,
-/turf/open/floor/f13{
-	icon_state = "darkrusty"
+/obj/structure/lattice,
+/obj/structure/railing{
+	dir = 10
+	},
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess2"
 	},
 /area/f13/bunker)
 "tao" = (
@@ -16776,7 +16863,7 @@
 /area/f13/tunnel)
 "tvK" = (
 /obj/structure/simple_door/bunker,
-/obj/structure/timeddoor,
+/obj/structure/timeddoor/sixtyminute,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -17259,6 +17346,10 @@
 /obj/structure/dresser,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel/bighorn)
+"ubI" = (
+/obj/structure/timeddoor/sixtyminute,
+/turf/closed/wall/r_wall/rust,
+/area/f13/bunker)
 "ucQ" = (
 /obj/item/storage/trash_stack{
 	icon_state = "Junk_9";
@@ -17845,6 +17936,14 @@
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
+"vcd" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "floordirty"
+	},
+/area/f13/bunker)
 "vcG" = (
 /obj/structure/lattice,
 /obj/structure/table,
@@ -18576,6 +18675,13 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/caves)
+"whr" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/oil/slippery,
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/bunker)
 "whE" = (
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/indestructible/ground/inside/mountain,
@@ -19097,8 +19203,9 @@
 /mob/living/simple_animal/hostile/renegade/defender{
 	armour_penetration = 0.4
 	},
+/obj/effect/decal/cleanable/glass,
 /turf/open/floor/f13{
-	icon_state = "darkrusty"
+	icon_state = "floordirty"
 	},
 /area/f13/bunker)
 "wUD" = (
@@ -20012,6 +20119,15 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
+"ymf" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/porta_turret/syndicate{
+	faction = list("raider","hostile","ghoul","supermutant")
+	},
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess2"
+	},
+/area/f13/bunker)
 
 (1,1,1) = {"
 aaa
@@ -25685,11 +25801,11 @@ aae
 aae
 aae
 aae
-aae
-aae
-aae
-aae
-aae
+aaa
+aaa
+aaa
+aaa
+aaa
 aae
 aae
 aae
@@ -25940,17 +26056,17 @@ aae
 aae
 aae
 aae
+aaa
+aaa
 aae
 aae
 aae
 aae
 aae
-aae
-aae
-aae
-aae
-aae
-aae
+aaa
+aaa
+aaa
+aaa
 aae
 aae
 aae
@@ -26196,8 +26312,8 @@ aae
 aae
 aae
 aae
-aae
-aae
+aaa
+aaa
 aae
 aae
 aae
@@ -26208,7 +26324,7 @@ aae
 bFx
 aae
 aae
-aae
+aaa
 aae
 aae
 aae
@@ -26451,9 +26567,9 @@ aak
 aae
 aae
 aae
-aae
-aae
-aae
+aaa
+aaa
+aaa
 aae
 aae
 aae
@@ -26466,14 +26582,14 @@ xfA
 vot
 aae
 aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aae
 aae
 aab
@@ -26707,8 +26823,8 @@ aak
 aae
 aae
 aae
-aae
-aae
+aaa
+aaa
 aae
 aae
 aae
@@ -26730,7 +26846,7 @@ aae
 aae
 aae
 aae
-aae
+aaa
 aab
 aab
 aab
@@ -26962,9 +27078,9 @@ aae
 aae
 aae
 aae
-aae
-aae
-aae
+aaa
+aaa
+aaa
 aae
 aae
 aae
@@ -27218,8 +27334,8 @@ aae
 aae
 aae
 aae
-aae
-aae
+aaa
+aaa
 aae
 aae
 aae
@@ -27474,8 +27590,8 @@ aae
 aae
 aae
 aae
-aae
-aae
+aaa
+aaa
 aae
 bFx
 mpS
@@ -27730,7 +27846,7 @@ aae
 aae
 aae
 aae
-aae
+aaa
 aae
 aae
 aae
@@ -27758,9 +27874,9 @@ rNd
 aIk
 aIk
 boU
-aae
-aae
-aae
+aaa
+aaa
+aaa
 aab
 aab
 uaq
@@ -27987,7 +28103,7 @@ aae
 aae
 aae
 aae
-aae
+aaa
 aae
 aae
 aah
@@ -28018,13 +28134,13 @@ aIk
 aMy
 aae
 aae
-aae
-orl
-orl
+eal
+pEQ
+pEQ
 hhX
 fls
-orl
-orl
+pEQ
+pEQ
 aaa
 aae
 aae
@@ -28244,7 +28360,7 @@ aae
 aae
 aae
 aae
-aae
+aaa
 aae
 aae
 aah
@@ -28500,7 +28616,7 @@ aae
 aae
 aae
 aae
-aae
+aaa
 aae
 aae
 aae
@@ -28757,7 +28873,7 @@ aae
 aae
 aae
 aae
-aae
+aaa
 aae
 aae
 aae
@@ -29014,7 +29130,7 @@ aae
 aae
 aae
 aae
-aae
+aaa
 aae
 aae
 aae
@@ -29271,7 +29387,7 @@ aae
 aae
 aae
 aae
-aae
+aaa
 aae
 aae
 aae
@@ -29311,7 +29427,7 @@ aak
 aaa
 aak
 aak
-aak
+aae
 aae
 aae
 aak
@@ -29528,7 +29644,7 @@ aae
 aae
 aae
 aae
-aae
+aaa
 aae
 aae
 aae
@@ -29568,12 +29684,12 @@ aaa
 aae
 aae
 aae
-aae
-aae
-aae
-aae
-aae
-aae
+naT
+cGf
+naT
+naT
+naT
+naT
 aae
 aae
 aak
@@ -29785,7 +29901,7 @@ aae
 aae
 aae
 aae
-aae
+aaa
 aak
 aak
 aae
@@ -29825,12 +29941,12 @@ aae
 aae
 aae
 aae
-aak
-aak
-aak
-aak
-aae
-aak
+naT
+uKd
+hoO
+jqJ
+uKd
+naT
 aak
 aak
 aak
@@ -30042,7 +30158,7 @@ aae
 aae
 aae
 aae
-aae
+aaa
 aae
 aae
 aae
@@ -30082,12 +30198,12 @@ pJK
 pJK
 aae
 aae
-sGn
-nXT
-nXT
-qgP
-qgP
-qgP
+ubI
+dQa
+qqz
+naT
+rit
+naT
 aae
 aae
 aae
@@ -30340,11 +30456,11 @@ tTP
 aae
 aae
 hDX
-dQa
 uKd
+ymf
+spA
 uKd
-dQa
-qgP
+naT
 aae
 aak
 aae
@@ -30596,12 +30712,12 @@ pJK
 pJK
 pJK
 aae
-sGn
-rit
+ubI
+uKd
 cwd
 cwd
-cIu
-qgP
+uKd
+naT
 aae
 aak
 aae
@@ -30854,11 +30970,11 @@ qox
 pJK
 aae
 qqz
-tam
-aeb
-aeb
-spA
-qgP
+uKd
+whr
+uKd
+uKd
+naT
 aae
 aae
 aak
@@ -31110,12 +31226,12 @@ qgP
 qdg
 pJK
 qfV
-sGn
+ubI
 tam
-aeb
-aeb
+uKd
+uKd
 sdz
-qgP
+naT
 aae
 aae
 aae
@@ -31367,12 +31483,12 @@ svA
 aln
 uoT
 ykR
-sGn
-tam
+ubI
+cIu
 aeb
 aeb
-sdz
-qgP
+fda
+naT
 aae
 aae
 aae
@@ -31624,12 +31740,12 @@ eFk
 wgB
 ykR
 ykR
-sGn
-uKd
-iSJ
-okd
-okd
-pGr
+ubI
+cMR
+nKi
+vcd
+cMR
+qdf
 aae
 aae
 aak
@@ -31885,8 +32001,8 @@ qqz
 mjf
 wUB
 hxo
-uKd
-qgP
+mjf
+naT
 aae
 aak
 aak
@@ -32139,11 +32255,11 @@ qgP
 jsf
 nXT
 qqz
-sGn
+ubI
 tvK
 tvK
 qqz
-qgP
+naT
 aae
 aak
 aae
