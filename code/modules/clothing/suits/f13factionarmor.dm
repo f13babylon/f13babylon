@@ -157,8 +157,8 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/crafter
 
 /obj/item/clothing/suit/f13/legion/orator		//Legion Orator suit
-	name = "Legion Orator armor"
-	desc = "A heavy wool cape paired with some golden bracers, this is hardly armor at all but for the orators it's all they need. The design leaves the chest exposed, so try not to get shot there."
+	name = "legion orator attire"
+	desc = "A ceremonial outfit consisting of a heavy wool cape paired with some golden bracers. The design leaves the chest exposed, so try not to get shot there."
 	icon = 'icons/fallout/clothing/armored_light.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
 	icon_state = "oratorcape"
