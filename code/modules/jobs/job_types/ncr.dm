@@ -772,7 +772,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 	loadout_options = list(
 		/datum/outfit/loadout/shockht,	// Monitor
-		/datum/outfit/loadout/supportht, // Flamer
+		/datum/outfit/loadout/supportht, // Grenade launcher
 		/datum/outfit/loadout/opperssorht, // R84
 		)
 
