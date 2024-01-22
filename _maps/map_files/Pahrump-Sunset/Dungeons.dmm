@@ -1531,11 +1531,8 @@
 "bQR" = (
 /obj/structure/lattice,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/filingcabinet{
-	pixel_x = 9;
-	pixel_y = -4
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/reagent_dispensers/water_cooler,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "bRc" = (
@@ -3470,8 +3467,11 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "dVk" = (
-/obj/structure/ladder/unbreakable/transition,
-/turf/closed/indestructible/f13vaultrusted,
+/obj/structure/table,
+/obj/item/storage/belt/utility/full/engi,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
 /area/f13/bunker)
 "dVs" = (
 /obj/structure/barricade/wooden,
@@ -6117,6 +6117,8 @@
 	dir = 1
 	},
 /obj/item/gun/ballistic/automatic/lmg/m1919,
+/obj/item/ammo_box/magazine/mm762,
+/obj/item/ammo_box/magazine/mm762,
 /turf/open/floor/f13{
 	color = "#ffe9de";
 	icon_state = "darkrusty";
@@ -10943,6 +10945,8 @@
 "lWC" = (
 /obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/storage/box/mre/menu1/safe,
+/obj/item/storage/box/mre/menu1/safe,
 /turf/open/floor/f13{
 	icon_state = "dark"
 	},
@@ -16492,6 +16496,16 @@
 /obj/structure/lattice,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/reinforced,
+/obj/item/reagent_containers/food/snacks/chips{
+	pixel_y = 12;
+	pixel_x = 11
+	},
+/obj/item/reagent_containers/food/snacks/cornchips,
+/obj/item/reagent_containers/food/snacks/cornchips{
+	pixel_y = 6;
+	pixel_x = -7;
+	layer = 2.8
+	},
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "rSk" = (
@@ -18350,6 +18364,13 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/caves)
+"tWX" = (
+/obj/structure/lattice,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/trash/chips,
+/turf/open/floor/plating/tunnel,
+/area/f13/bunker)
 "tXf" = (
 /obj/item/reagent_containers/glass/bucket,
 /turf/open/floor/plasteel/f13/vault_floor/green,
@@ -20614,6 +20635,7 @@
 /area/f13/ahs)
 "wop" = (
 /obj/structure/table,
+/obj/item/storage/box/strange_seeds_10pack,
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "wow" = (
@@ -21608,6 +21630,7 @@
 "xsP" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
+/obj/item/storage/box/stockparts/deluxe,
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/bunker)
 "xtP" = (
@@ -21830,6 +21853,9 @@
 /area/f13/vault)
 "xIp" = (
 /obj/structure/dresser,
+/obj/item/storage/backpack/duffelbag/syndie{
+	pixel_y = 13
+	},
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -26908,7 +26934,7 @@ oqm
 oqm
 oqm
 oqm
-aTA
+shC
 aTA
 aTA
 aTA
@@ -27165,7 +27191,7 @@ gfJ
 pKX
 otU
 oqm
-aTA
+shC
 aTA
 aTA
 aTA
@@ -27422,7 +27448,7 @@ pcw
 kVk
 hyK
 oqm
-aTA
+shC
 aTA
 aTA
 aTA
@@ -27679,27 +27705,27 @@ bKm
 fkn
 kVk
 oqm
-aTA
-aTA
-aTA
-aTA
+shC
+shC
+shC
+shC
+kYl
+kYl
+kYl
+kYl
 hrZ
-hrZ
-hrZ
-hrZ
-hrZ
-hrZ
-hrZ
-hrZ
-hrZ
-hrZ
-hrZ
-hrZ
-hrZ
-hrZ
-hrZ
-hrZ
-hrZ
+kYl
+kYl
+kYl
+kYl
+kYl
+kYl
+kYl
+kYl
+kYl
+kYl
+kYl
+kYl
 hrZ
 hrZ
 hrZ
@@ -27936,16 +27962,16 @@ bKm
 hCT
 kVk
 oqm
-aTA
+shC
 oqm
 oqm
 oqm
 oqm
 oqm
 oqm
-hrZ
-hrZ
-hrZ
+kYl
+kYl
+kYl
 oqm
 oqm
 oqm
@@ -27956,7 +27982,7 @@ oqm
 oqm
 oqm
 oqm
-hrZ
+kYl
 hrZ
 hrZ
 hrZ
@@ -28193,7 +28219,7 @@ khM
 lgQ
 kVk
 oqm
-aTA
+shC
 oqm
 oqm
 fYw
@@ -28201,8 +28227,8 @@ dJD
 mKT
 kjM
 oqm
-hrZ
-hrZ
+kYl
+kYl
 oqm
 oqm
 oqm
@@ -28213,7 +28239,7 @@ vtn
 tPQ
 oqm
 oqm
-hrZ
+kYl
 hrZ
 hrZ
 hrZ
@@ -28450,7 +28476,7 @@ kVk
 kVk
 hyK
 oqm
-aTA
+shC
 oqm
 rnd
 ucH
@@ -28470,7 +28496,7 @@ ipz
 uUF
 iRj
 oqm
-hrZ
+kYl
 hrZ
 hrZ
 hrZ
@@ -28707,7 +28733,7 @@ kfN
 pKX
 iOb
 oqm
-aTA
+shC
 oqm
 lwy
 uZG
@@ -28727,7 +28753,7 @@ lwy
 ucH
 lwy
 oqm
-hrZ
+kYl
 hrZ
 hrZ
 hrZ
@@ -28964,7 +28990,7 @@ oqm
 oqm
 oqm
 oqm
-aTA
+shC
 oqm
 gVd
 jtE
@@ -28984,7 +29010,7 @@ ucH
 tbi
 lwy
 oqm
-hrZ
+kYl
 hrZ
 hrZ
 hrZ
@@ -29221,7 +29247,7 @@ shC
 shC
 shC
 shC
-aTA
+shC
 oqm
 rnd
 uZG
@@ -29241,7 +29267,7 @@ cwv
 ucH
 lwy
 oqm
-hrZ
+kYl
 hrZ
 hrZ
 hrZ
@@ -29478,7 +29504,7 @@ shC
 shC
 shC
 shC
-aTA
+shC
 oqm
 lwy
 ucH
@@ -29498,7 +29524,7 @@ ucH
 uUF
 oUF
 oqm
-hrZ
+kYl
 hrZ
 hrZ
 hrZ
@@ -29735,7 +29761,7 @@ shC
 shC
 shC
 shC
-aTA
+shC
 oqm
 oqm
 ghe
@@ -29743,8 +29769,8 @@ uue
 kDc
 kjM
 oqm
-hrZ
-hrZ
+kYl
+kYl
 oqm
 oqm
 oqm
@@ -29755,7 +29781,7 @@ lwy
 vjd
 oqm
 oqm
-hrZ
+kYl
 hrZ
 hrZ
 hrZ
@@ -29992,17 +30018,17 @@ shC
 shC
 shC
 shC
-aTA
+shC
 oqm
 oqm
 oqm
 oqm
 oqm
 oqm
-hrZ
-hrZ
-hrZ
-hrZ
+kYl
+kYl
+kYl
+kYl
 oqm
 vfR
 vfR
@@ -30012,7 +30038,7 @@ tKw
 vfR
 vfR
 oqm
-hrZ
+kYl
 hrZ
 hrZ
 hrZ
@@ -30249,17 +30275,17 @@ shC
 shC
 shC
 shC
-aTA
-aTA
-aTA
-aTA
+shC
+shC
+shC
+shC
+kYl
+kYl
+kYl
+kYl
 hrZ
 hrZ
-hrZ
-hrZ
-hrZ
-hrZ
-hrZ
+kYl
 oqm
 aKQ
 dEx
@@ -30269,7 +30295,7 @@ ePt
 bqP
 dEx
 oqm
-hrZ
+kYl
 hrZ
 hrZ
 vaD
@@ -30516,7 +30542,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 ePt
 ePt
@@ -30526,7 +30552,7 @@ ePt
 cpc
 tEO
 oqm
-hrZ
+kYl
 hrZ
 vaD
 vaD
@@ -30773,17 +30799,17 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 kjM
 hSa
 sCQ
-ucH
+qyq
 tCz
 rVH
 vAB
 oqm
-hrZ
+kYl
 hrZ
 vaD
 uQS
@@ -31030,7 +31056,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 dqi
 dpI
@@ -31040,7 +31066,7 @@ tCz
 nXi
 qqH
 oqm
-hrZ
+kYl
 vaD
 vaD
 uQS
@@ -31287,7 +31313,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 qqH
 uCl
@@ -31544,7 +31570,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 hSa
 xor
@@ -31801,7 +31827,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 cpc
 cpc
@@ -32056,9 +32082,9 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
-hrZ
-hrZ
+kYl
+kYl
+kYl
 oqm
 mdi
 gDU
@@ -32313,17 +32339,17 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 oqm
 oqm
-oqm
-oqm
+tKw
+tKw
 tKw
 qYI
 tKw
-oqm
-oqm
+tKw
+tKw
 oqm
 oqm
 uQS
@@ -32570,7 +32596,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 qIi
 nXe
@@ -32827,7 +32853,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 kjM
 qqH
@@ -33084,7 +33110,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 vhj
 eWH
@@ -33341,7 +33367,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 vhj
 bpH
@@ -33598,7 +33624,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 rsh
 vhj
@@ -33855,7 +33881,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 oqm
 oqm
@@ -34112,7 +34138,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 nKi
 iDn
@@ -34369,7 +34395,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 iQh
 iDn
@@ -34626,7 +34652,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 dXL
 uXf
@@ -34883,7 +34909,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 yjC
 ijY
@@ -35140,7 +35166,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 iFS
 iDn
@@ -35397,7 +35423,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 oqm
 plJ
@@ -35654,7 +35680,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 tCz
 iDn
@@ -35911,7 +35937,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 tCz
 iDn
@@ -36168,14 +36194,14 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 tCz
 gbs
 itp
 oqm
 msu
-gES
+tWX
 lWC
 eWH
 ege
@@ -36425,7 +36451,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 tCz
 iDn
@@ -36682,12 +36708,12 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 izt
 ykp
 qKO
-dVk
+oqm
 oqm
 oqm
 tKw
@@ -36939,7 +36965,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 tpo
 uXf
@@ -37192,11 +37218,11 @@ shC
 shC
 shC
 shC
-hrZ
-hrZ
-hrZ
-hrZ
-hrZ
+kYl
+kYl
+kYl
+kYl
+kYl
 oqm
 tpo
 uXf
@@ -39251,20 +39277,20 @@ shC
 shC
 shC
 shC
-hrZ
-hrZ
-hrZ
-hrZ
-hrZ
-hrZ
+kYl
+kYl
+kYl
+kYl
+kYl
+kYl
 oqm
-tHX
+dVk
 qse
 nfK
 oRO
 eNt
 oqm
-hrZ
+kYl
 vaD
 uQS
 uQS
@@ -39513,7 +39539,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 eQT
 nfK
@@ -39521,7 +39547,7 @@ nfK
 oRO
 lGM
 oqm
-hrZ
+kYl
 vaD
 vaD
 vaD
@@ -39770,7 +39796,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 tHX
 csZ
@@ -39778,7 +39804,7 @@ tHX
 lvs
 xIp
 oqm
-hrZ
+kYl
 hrZ
 vaD
 vaD
@@ -40027,7 +40053,7 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
+kYl
 oqm
 oqm
 oqm
@@ -40035,7 +40061,7 @@ oqm
 oqm
 oqm
 oqm
-hrZ
+kYl
 hrZ
 hrZ
 vaD
@@ -40284,15 +40310,15 @@ hrZ
 hrZ
 hrZ
 hrZ
-hrZ
-hrZ
-hrZ
-hrZ
-hrZ
-hrZ
-hrZ
-hrZ
-hrZ
+kYl
+kYl
+kYl
+kYl
+kYl
+kYl
+kYl
+kYl
+kYl
 hrZ
 hrZ
 hrZ
