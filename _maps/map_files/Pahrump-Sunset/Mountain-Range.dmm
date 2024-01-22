@@ -4105,7 +4105,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 4
 	},
-/obj/item/highway_sign/casper,
+/obj/structure/sign/highway_sign/casper,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright0"
 	},
@@ -5834,7 +5834,7 @@
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 8
 	},
-/obj/item/highway_sign/casper,
+/obj/structure/sign/highway_sign/casper,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft0"
 	},

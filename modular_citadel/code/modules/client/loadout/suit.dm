@@ -117,7 +117,7 @@
 
 /datum/gear/suit/ncrcfjacket
 	name = "NCRCF jacket"
-	path = /obj/item/clothing/suit/armor/f13/ncrcfjacket
+	path = /obj/item/clothing/suit/f13/ncr/ncrcfjacket
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 1
 
@@ -127,30 +127,34 @@
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 4
 
+/datum/gear/suit/goner_red
+	name = "olive drab trenchcoat, red"
+	path = /obj/item/clothing/suit/f13/goner/red
+	cost = 2
+	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
+
+/datum/gear/suit/goner_green
+	name = "olive drab trenchcoat, green"
+	path = /obj/item/clothing/suit/f13/goner/green
+	cost = 2
+	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
+
+/datum/gear/suit/goner_blue
+	name = "olive drab trenchcoat, blue"
+	path = /obj/item/clothing/suit/f13/goner/blue
+	cost = 2
+	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
+
+/datum/gear/suit/goner_yellow
+	name = "olive drab trenchcoat, yellow"
+	path = /obj/item/clothing/suit/f13/goner/yellow
+	cost = 2
+	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
+
 /datum/gear/suit/NCRutilityvest
 	name = "Utility Vest"
-	path = /obj/item/clothing/suit/armor/f13/utilityvest
-	subcategory = LOADOUT_SUBCATEGORY_SUIT_FACTIONS
-	cost = 4
-	restricted_desc = "NCR"
-	restricted_roles = list("NCR Captain",
-							"NCR Lieutenant",
-							"NCR Medical Officer",
-							"NCR Veteran Ranger",
-							"NCR Lieutenant",
-							"NCR Heavy Trooper",
-							"NCR Sergeant First Class",
-							"NCR Sergeant",
-							"NCR Corporal",
-							"NCR Combat Engineer",
-							"NCR Combat Medic",
-							"NCR Trooper",
-							"NCR Rear Echelon",
-							"NCR Off-Duty",
-							"NCR Ranger"
-						)
-
-
+	path = /obj/item/clothing/suit/f13/ncr/utilityvest
+	cost = 3
 
 /datum/gear/suit/fieldscribe
 	name = "Fieldscribe suit"

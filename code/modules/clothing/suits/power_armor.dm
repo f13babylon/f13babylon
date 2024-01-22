@@ -157,17 +157,6 @@
 			return BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
 	return
 
-
-
-/obj/item/clothing/suit/armor/f13/power_armor/t45b/restored
-	name = "restored T-45b power armor"
-	desc = "It's a set of early-model T-45 power armor with a custom air conditioning module and restored servomotors. Bulky, but almost as good as the real thing."
-	requires_training = TRUE
-	powered = TRUE
-	slowdown = 0.24
-	armor_block_chance = 60
-	deflection_chance = 10 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
-
 /obj/item/clothing/suit/armor/f13/power_armor/vaulttec
 	name = "Vault-Tec power armour"
 	desc = "A refined suit of power armour, purpose-built by the residents of Vault-115 in order to better keep the peace in their new settlement."
@@ -279,7 +268,7 @@
 	melee_block_threshold = 45
 	armor_block_threshold = 0.45
 	armor_block_chance = 60
-	deflection_chance = 10 
+	deflection_chance = 10
 
 /obj/item/clothing/suit/armor/f13/power_armor/advanced/hellfire
 	name = "hellfire power armor"

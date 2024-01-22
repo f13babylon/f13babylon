@@ -476,3 +476,29 @@
 	STR.max_items = 2
 	STR.display_numerical_stacking = TRUE
 	CANHOLD_STATIC(STR, typecacheof(list(/obj/item/rcd_ammo, /obj/item/stack/sheet)))
+
+/obj/item/storage/bag/egg_basket
+	name = "egg basket"
+	icon = 'icons/fallout/farming/farming_tools.dmi'
+	icon_state = "eggbasket"
+	w_class = WEIGHT_CLASS_TINY
+	resistance_flags = FLAMMABLE
+
+/obj/item/storage/bag/egg_basket/ComponentInitialize()
+	. = ..()
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	STR.max_w_class = WEIGHT_CLASS_NORMAL
+	STR.max_combined_w_class = 24
+	STR.max_items = 24
+	CANHOLD_STATIC(STR, typecacheof(list(/obj/structure/spider/eggcluster, /obj/item/reagent_containers/food/snacks/egg, /obj/item/reagent_containers/food/snacks/f13/deathclawegg, /obj/item/reagent_containers/food/snacks/chocolateegg, /obj/item/reagent_containers/food/snacks/egg/gland, /obj/item/reagent_containers/food/snacks/egg/blue, /obj/item/reagent_containers/food/snacks/egg/green, /obj/item/reagent_containers/food/snacks/egg/orange, /obj/item/reagent_containers/food/snacks/egg/purple, /obj/item/reagent_containers/food/snacks/egg/rainbow, /obj/item/reagent_containers/food/snacks/egg/red, /obj/item/reagent_containers/food/snacks/egg/yellow)))
+
+/obj/item/storage/bag/egg_basket/update_icon_state()
+	switch(contents.len)
+		if(0)
+			icon_state = "[initial(icon_state)]"
+		if(1 to 5)
+			icon_state = "[initial(icon_state)]1"
+		if(5 to 12)
+			icon_state = "[initial(icon_state)]2"
+		else
+			icon_state = "[initial(icon_state)]3"

@@ -110,6 +110,8 @@
 	selected_datum.spawn_at(duffelkit)
 	M.dropItemToGround(token)
 	QDEL_NULL(token)
+	for (var/obj/item/book/granter/granter in duffelkit) //Auto consumes any books you spawn in with.
+		granter.on_reading_finished(M)
 	M.put_in_hands(duffelkit)
 	M.disable_loadout_select()
 

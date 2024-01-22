@@ -1971,7 +1971,7 @@
 	},
 /area/f13/wasteland/west)
 "ahu" = (
-/obj/item/trade_sign{
+/obj/structure/sign/trade_sign{
 	pixel_x = -6;
 	pixel_y = -7
 	},
@@ -22969,7 +22969,7 @@
 /area/f13/village)
 "cjY" = (
 /obj/effect/decal/remains/human,
-/obj/item/clothing/suit/armor/f13/slavelabor,
+/obj/item/clothing/suit/f13/legion/servant,
 /obj/item/clothing/shoes/f13/rag,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
@@ -25375,7 +25375,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "cVt" = (
-/obj/item/bighorn_sign,
+/obj/structure/sign/bighorn_sign,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontalbottomborderbottom0"
 	},
@@ -27702,7 +27702,7 @@
 /turf/closed/wall/f13/wood/house,
 /area/f13/wasteland/east)
 "dXP" = (
-/obj/item/highway_sign/casper,
+/obj/structure/sign/highway_sign/casper,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft0"
 	},
@@ -42088,7 +42088,7 @@
 	},
 /area/f13/wasteland/bighorn)
 "koD" = (
-/obj/item/highway_sign/warren,
+/obj/structure/sign/highway_sign/warren,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 7;
 	icon_state = "outerpavement"
@@ -42195,7 +42195,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/caves)
 "kqV" = (
-/obj/item/highway_sign/rocksprings,
+/obj/structure/sign/highway_sign/rocksprings,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 1;
 	icon_state = "outerpavement"
@@ -48100,7 +48100,7 @@
 	},
 /area/f13/building/museum)
 "mGQ" = (
-/obj/item/clothing/suit/armor/f13/slavelabor,
+/obj/item/clothing/suit/f13/legion/servant,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "mGR" = (
@@ -48785,7 +48785,7 @@
 "mUU" = (
 /turf/closed/indestructible/rock{
 	desc = "A wall made out of solid brick.";
-	icon = 'modular_sunset/icons/turfs/walls/brick_small_dark.dmi';
+	icon = 'icons/fallout/turfs/walls/brick_small_dark.dmi';
 	icon_state = "brick0";
 	icon_type_smooth = "brick";
 	name = "brick wall";
@@ -55244,7 +55244,7 @@
 	},
 /area/f13/wasteland/east)
 "pBy" = (
-/obj/item/highway_sign/rocksprings,
+/obj/structure/sign/highway_sign/rocksprings,
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 7;
 	icon_state = "outerpavement"
@@ -59195,7 +59195,7 @@
 	icon_state = "mattress2";
 	pixel_y = 7
 	},
-/obj/item/clothing/suit/armor/f13/slavelabor,
+/obj/item/clothing/suit/f13/legion/servant,
 /obj/item/clothing/under/f13/legslavef,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
@@ -67275,7 +67275,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "uAJ" = (
-/obj/item/clothing/suit/armor/f13/slavelabor,
+/obj/item/clothing/suit/f13/legion/servant,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 8;
 	icon_state = "dirt"
@@ -68970,7 +68970,7 @@
 	},
 /area/f13/wasteland/firestation)
 "vjo" = (
-/obj/item/highway_sign/warren,
+/obj/structure/sign/highway_sign/warren,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland/east)
 "vju" = (
@@ -69835,7 +69835,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/bighorn)
 "vAE" = (
-/obj/item/highway_sign/casper,
+/obj/structure/sign/highway_sign/casper,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright0"
 	},
