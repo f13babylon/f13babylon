@@ -879,6 +879,9 @@
 /obj/structure/rack,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"auf" = (
+/turf/closed/indestructible/f13vaultrusted,
+/area/f13/tunnel)
 "aui" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/wooden,
@@ -7242,6 +7245,9 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/tunnel/bighorn)
+"edH" = (
+/turf/closed/indestructible/f13vaultrusted,
+/area/f13/caves)
 "edQ" = (
 /obj/machinery/door/airlock/hatch{
 	req_access_txt = "120"
@@ -75473,9 +75479,9 @@ aah
 aah
 ekI
 ekI
-aaa
-aaa
-aaa
+edH
+edH
+edH
 ekI
 aah
 aaA
@@ -75729,11 +75735,11 @@ aah
 aah
 ekI
 ekI
-aaa
+edH
 boU
 sKa
 boU
-aaa
+edH
 aah
 ekI
 ekI
@@ -75990,7 +75996,7 @@ oKJ
 sKa
 juG
 pch
-aaA
+edH
 aah
 aah
 ekI
@@ -76243,11 +76249,11 @@ rNd
 ekI
 aaA
 aah
-aaa
+edH
 boU
 sKa
 boU
-aaa
+edH
 ekI
 oKJ
 ekI
@@ -76501,9 +76507,9 @@ ekI
 lIl
 dwY
 ekI
-rnh
-rnh
-rnh
+auf
+auf
+auf
 ekI
 ekI
 aah
@@ -78822,7 +78828,7 @@ aah
 aaa
 aaa
 aaa
-ekI
+aaa
 ekI
 ekI
 ekI
