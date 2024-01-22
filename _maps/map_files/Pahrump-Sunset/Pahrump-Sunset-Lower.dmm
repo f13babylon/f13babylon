@@ -16371,8 +16371,6 @@
 /area/f13/tunnel)
 "qzQ" = (
 /obj/structure/rack/shelf_metal,
-/obj/item/clothing/suit/armor/tesla,
-/obj/item/clothing/head/helmet/f13/tesla,
 /obj/structure/window/reinforced/spawner,
 /obj/structure/window/reinforced/spawner{
 	dir = 8
