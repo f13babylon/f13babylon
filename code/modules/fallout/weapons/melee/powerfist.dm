@@ -12,8 +12,8 @@
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	flags_1 = CONDUCT_1
 	attack_verb = list("whacked", "fisted", "power-punched")
-	force = 25
-	armour_penetration = 0.25
+	force = 30
+	armour_penetration = 0.3
 	throwforce = 10
 	throw_range = 3
 	w_class = WEIGHT_CLASS_NORMAL
@@ -32,8 +32,8 @@
 	righthand_file = 'icons/fallout/onmob/weapons/melee1h_righthand.dmi'
 	icon_state = "goliath"
 	item_state = "goliath"
-	force = 30
-	armour_penetration = 0.3
+	force = 35
+	armour_penetration = 0.4
 	throw_distance = 3
 
 
@@ -68,8 +68,8 @@
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	flags_1 = CONDUCT_1
-	force = 20
-	armour_penetration = 0.25
+	force = 25
+	armour_penetration = 0.4
 	wound_bonus = 20
 	throwforce = 10
 	throw_range = 7

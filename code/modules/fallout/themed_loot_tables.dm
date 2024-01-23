@@ -247,7 +247,6 @@
 		/obj/item/gun/energy/laser/aer9 = 4,
 		/obj/item/gun/ballistic/automatic/assault_rifle/assault_carbine = 3,
 		/obj/item/gun/energy/laser/wattz2k = 3,
-		/obj/effect/spawner/bundle/f13/infiltrator = 1,
 		/obj/item/melee/onehanded/knife/bayonet = 10,
 		/obj/item/melee/onehanded/knife/trench = 4,
 		/obj/item/melee/powered/ripper = 3,
@@ -306,7 +305,8 @@
 	loot = list(
 		/obj/item/gun/ballistic/automatic/m72 = 10,
 		/obj/item/gun/ballistic/revolver/m29/peacekeeper = 10,
-		/obj/item/encminigunpack = 10,
+		/obj/item/gun/ballistic/automatic/pistol/deagle/elcapitan = 10,
+		/obj/item/gun/energy/laser/plasma/caster = 10,
 		)
 
 

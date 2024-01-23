@@ -18,7 +18,7 @@
 
 #define MODE_BINARY "binary"
 #define MODE_KEY_BINARY "b"
-#define MODE_TOKEN_BINARY ":b"
+#define MODE_TOKEN_BINARY ".b"
 
 #define MODE_WHISPER "whisper"
 #define MODE_WHISPER_CRIT "whispercrit"
@@ -27,7 +27,7 @@
 
 #define MODE_DEPARTMENT "department"
 #define MODE_KEY_DEPARTMENT "h"
-#define MODE_TOKEN_DEPARTMENT ":h"
+#define MODE_TOKEN_DEPARTMENT ".h"
 
 #define MODE_ADMIN "admin"
 #define MODE_KEY_ADMIN "p"
@@ -40,7 +40,7 @@
 
 #define MODE_CHANGELING "changeling"
 #define MODE_KEY_CHANGELING "g"
-#define MODE_TOKEN_CHANGELING ":g"
+#define MODE_TOKEN_CHANGELING ".g"
 
 #define MODE_VOCALCORDS "cords"
 #define MODE_KEY_VOCALCORDS "x"

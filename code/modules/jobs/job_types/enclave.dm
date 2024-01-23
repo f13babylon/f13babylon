@@ -262,6 +262,7 @@
 /datum/outfit/loadout/gysgt_spear
 	name = "Spearhead Assaultman"
 	backpack_contents = list(
+		/obj/item/book/granter/trait/bigleagues = 1,
 		/obj/item/gun/ballistic/revolver/ballisticfist = 1,
 		/obj/item/ammo_box/shotgun/slug = 1,
 		/obj/item/gun/energy/laser/plasma/glock = 1,
@@ -277,6 +278,7 @@
 	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
 	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
 	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
+	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 
@@ -352,8 +354,8 @@
 		/obj/item/suppressor = 1, //they get a flashlight in their bag
 		/obj/item/gun/energy/laser/plasma/pistol = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
-		/obj/item/grenade/f13/plasma = 2,
-		/obj/item/grenade/smokebomb = 2
+		/obj/item/grenade/f13/plasma = 1,
+		/obj/item/grenade/smokebomb = 1
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavesgt/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -361,7 +363,6 @@
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
-	ADD_TRAIT(H, TRAIT_PA_WEAR,  REF(src))
 	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
 	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
@@ -419,7 +420,6 @@
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
 	ADD_TRAIT(H, TRAIT_PA_WEAR,  REF(src))
 	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
 	ADD_TRAIT(H, TRAIT_ENCLAVE_CODES,  REF(src))
@@ -512,6 +512,7 @@
 	loadout_options = list(
 		/datum/outfit/loadout/reconmarine, // Infantry Rifle
 		/datum/outfit/loadout/mobileartillery, // Trench Shotgun
+		/datum/outfit/loadout/jarhead,	//Melee + Pistols role
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavespy
@@ -523,7 +524,6 @@
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
-		/obj/item/grenade/smokebomb = 1,
 		/obj/item/pda = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/clothing/mask/chameleon = 1,
@@ -536,8 +536,8 @@
 	suit_store = /obj/item/gun/ballistic/automatic/infantry_rifle
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m5mm = 2,
-		/obj/item/gun/energy/laser/plasma/pistol/light = 1,
-		/obj/item/stock_parts/cell/ammo/ec = 2
+		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
+		/obj/item/ammo_box/magazine/m45exp = 2
 		)
 
 /datum/outfit/loadout/mobileartillery
@@ -548,6 +548,16 @@
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 2
 		)
+
+/datum/outfit/loadout/jarhead
+	name = "Quick-Response Marine"
+	backpack_contents = list(
+		/obj/item/gun/energy/laser/plasma/pistol/light = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/melee/powered/ripper = 1,
+		/obj/item/grenade/smokebomb = 1
+	)
+
 
 /datum/outfit/job/enclave/peacekeeper/enclavespy/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()

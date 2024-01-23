@@ -1,7 +1,7 @@
 /obj/structure/mortar
 	name = "M29 Mortar"
 	desc = "A lightweight infantry portable mortar. This one would appear pristine, if it weren't for the fact that it violently rattles when handled. Is this safe?"
-	icon = 'modular_sunset/icons/structures/mortar.dmi'
+	icon = 'icons/obj/fallout/mortar.dmi'
 	icon_state = "mortar_m402"
 	anchored = 1
 	density = 1
@@ -133,7 +133,7 @@
 
 		user.visible_message("<span class='notice'>[user] starts loading \a [mortar_shell.name] into [src].</span>",
 		"<span class='notice'>You start loading \a [mortar_shell.name] into [src].</span>")
-		playsound(loc, 'modular_sunset/sound/defenses/mortar_reload.ogg', 50, 1)
+		playsound(loc, 'sound/f13weapons/defenses/mortar_reload.ogg', 50, 1)
 		busy = 1
 
 		if(do_after(user, 15, src))
@@ -141,7 +141,7 @@
 			"<span class='notice'>You load \a [mortar_shell.name] into [src].</span>")
 			visible_message("\icon[src] <span class='danger'>The [name] fires!</span>")
 			user.dropItemToGround(mortar_shell, src)
-			playsound(loc, 'modular_sunset/sound/defenses/mortar_fire.ogg', 50, 1)
+			playsound(loc, 'sound/f13weapons/defenses/mortar_fire.ogg', 50, 1)
 			busy = 0
 			firing = 1
 			flick(icon_state + "_fire", src)
@@ -150,7 +150,7 @@
 			for(var/mob/M in range(7))
 				shake_camera(M, 3, 1)
 			spawn(travel_time) //What goes up
-				playsound(T, 'modular_sunset/sound/defenses/mortar_long_whistle.ogg', 50, 1)
+				playsound(T, 'sound/f13weapons/defenses/mortar_long_whistle.ogg', 50, 1)
 				spawn(45) //Must go down //This should always be 45 ticks!
 					mortar_shell.detonate(T)
 
@@ -204,18 +204,18 @@
 /obj/item/mortar_kit
 	name = "\improper M29 mortar portable kit"
 	desc = "A manual, crew-operated mortar system intended to rain down 80mm goodness on anything it's aimed at. Needs to be set down first"
-	icon = 'modular_sunset/icons/structures/mortar.dmi'
+	icon = 'icons/obj/fallout/mortar.dmi'
 	icon_state = "mortar_m402_carry"
 	w_class = 5
 
 /obj/item/mortar_kit/attack_self(mob/user)
 	user.visible_message("<span class='notice'>[user] starts deploying [src].",
 	"<span class='notice'>You start deploying [src].")
-	playsound(loc, 'modular_sunset/sound/defenses/mortar_unpack.ogg', 25, 1)
+	playsound(loc, 'sound/f13weapons/defenses/mortar_unpack.ogg', 25, 1)
 	if(do_after(user, 40, src))
 		user.visible_message("<span class='notice'>[user] deploys [src].",
 		"<span class='notice'>You deploy [src].")
-		playsound(loc, 'modular_sunset/sound/defenses/mortar_unpack.ogg', 25, 1)
+		playsound(loc, 'sound/f13weapons/defenses/mortar_unpack.ogg', 25, 1)
 		var/obj/structure/mortar/M = new /obj/structure/mortar(get_turf(user))
 		M.dir = user.dir
 		del(src)
@@ -228,7 +228,7 @@
 /obj/item/mortar_shell
 	name = "\improper 80mm mortar shell (HE)"
 	desc = "A hefty mortar shell. Looks to be an HE round."
-	icon = 'modular_sunset/icons/structures/mortar.dmi'
+	icon = 'icons/obj/fallout/mortar.dmi'
 	icon_state = "mortar_ammo_he"
 	w_class = 5
 

@@ -11,11 +11,11 @@
 	// This is to stop squeak spam from inhand usage
 	var/last_use = 0
 	var/use_delay = 20
-	
+
 	// squeak cooldowns
 	var/last_squeak = 0
 	var/squeak_delay = 5
-	
+
 	/// chance we'll be stopped from squeaking by cooldown when something crossing us squeaks
 	var/cross_squeak_delay_chance = 33		// about 3 things can squeak at a time
 
@@ -89,7 +89,7 @@
 			if(P.original != parent)
 				return
 	var/atom/current_parent = parent
-	if(isturf(current_parent.loc))
+	if(isturf(current_parent?.loc))
 		if(do_play_squeak())
 			SEND_SIGNAL(AM, COMSIG_CROSS_SQUEAKED)
 

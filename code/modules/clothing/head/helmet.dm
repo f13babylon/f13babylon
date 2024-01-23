@@ -96,7 +96,8 @@
 	desc = "A bulletproof combat helmet that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent."
 	icon_state = "helmetalt"
 	item_state = "helmetalt"
-	armor = list("melee" = 27, "bullet" = 60, "laser" = 27, "energy" = 35, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 10)
+	armor = list("melee" = 25, "bullet" = 60, "laser" = 25, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 35)
+	slowdown = 0.02
 	can_flashlight = 1
 	dog_fashion = null
 
@@ -456,26 +457,11 @@
 	icon_state = "armyhelmet"
 	item_state = "armyhelmet"
 
-/obj/item/clothing/head/helmet/armyhelmet/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/head/helmet/armyhelmet/heavy
 	name = "heavy steel helmet"
 	desc = "a steel helmet, inspired by several pre-war designs. This one has been modified by oasis citizens to provide more protection to the face and neck."
 	icon_state = "armyhelmetheavy"
 	item_state = "armyhelmetheavy"
-	armor = list("melee" = 30, "bullet" = 50, "laser" = 30, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	slowdown = 0.025
+	armor = list("melee" = 50, "bullet" = 60, "laser" = 50,  "energy" = 20, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 35, "acid" = 0, "wound" = 35)
+	slowdown = 0.05
 	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR|HIDESNOUT
-
-/obj/item/clothing/head/helmet/armyhelmet/heavy/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
-
-/obj/item/clothing/head/helmet/armyhelmet/heavy/ncra
-	name = "NCR heavy steel helmet"
-	desc = "A reinforced NCR trooper helmet with a visor. Usually seen to be worn by Heavy Gunners of the New California Republic Army."
-	icon_state = "ncrarmyhelmetheavy"
-	item_state = "ncrarmyhelmetheavy"

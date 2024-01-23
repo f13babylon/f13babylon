@@ -379,23 +379,6 @@
 				/obj/item/clothing/head/helmet/f13/sulphitehelm
 				)
 
-/obj/effect/spawner/lootdrop/f13/armor/tier4 //TIER 4 ARMOR
-	name = "tier 4 armor"
-	icon_state = "armort4_loot"
-	loot = list(
-				/obj/effect/spawner/bundle/f13/armor/t45b_salvaged,
-				/obj/effect/spawner/bundle/f13/armor/riot,
-				/obj/effect/spawner/bundle/f13/armor/combat/mk2,
-				/obj/effect/spawner/bundle/f13/armor/combat/mk2/dark
-				)
-
-/obj/effect/spawner/bundle/f13/armor/t45b_salvaged
-	name = "salvaged t45b power armor spawner"
-	items = list(
-				/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b,
-				/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b
-				)
-
 /obj/effect/spawner/bundle/f13/armor/riot
 	name = "riot armor spawner"
 	items = list(
@@ -427,55 +410,70 @@
 /obj/effect/spawner/bundle/f13/armor/raiderpa
 	name = "raider power armor spawner"
 	items = list(
-				/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/raider,
-				/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/raider
-				)
+		/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d/raider,
+		/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d/raider
+	)
 
 /obj/effect/spawner/bundle/f13/armor/hotrodpa
 	name = "hotrod power armor spawner"
 	items = list(
-				/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/hotrod,
-				/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/hotrod
-				)
+		/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d/hotrod,
+		/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d/hotrod
+	)
 
+/obj/effect/spawner/bundle/f13/armor/t45d_salvaged
+	name = "salvaged t45d power armor spawner"
+	items = list(
+		/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d,
+		/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d
+	)
 
-/obj/effect/spawner/lootdrop/f13/armor/tier5 //TIER 5 ARMOR
-	name = "tier 5 armor"
-	icon_state = "armort5_loot"
+/obj/effect/spawner/lootdrop/f13/armor/tier4 //TIER 4 ARMOR
+	name = "tier 4 armor"
+	icon_state = "armort4_loot"
 	loot = list(
-				/obj/effect/spawner/bundle/f13/armor/t45d,
-				/obj/effect/spawner/bundle/f13/armor/t51b,
-				/obj/effect/spawner/bundle/f13/armor/t45b_salvaged = 2,
-				)
+		/obj/effect/spawner/bundle/f13/armor/t45d_salvaged,
+		/obj/effect/spawner/bundle/f13/armor/riot,
+		/obj/effect/spawner/bundle/f13/armor/combat/mk2,
+		/obj/effect/spawner/bundle/f13/armor/combat/mk2/dark
+	)
 
 /obj/effect/spawner/bundle/f13/armor/t45d
 	name = "t45d power armor spawner"
 	items = list(
-				/obj/item/clothing/suit/armor/f13/power_armor/t45d,
-				/obj/item/clothing/head/helmet/f13/power_armor/t45d,
-				)
+		/obj/item/clothing/suit/armor/f13/power_armor/t45d,
+		/obj/item/clothing/head/helmet/f13/power_armor/t45d,
+	)
 
 /obj/effect/spawner/bundle/f13/armor/t51b
 	name = "t51b power armor spawner"
 	items = list(
-				/obj/item/clothing/suit/armor/f13/power_armor/t51b,
-				/obj/item/clothing/head/helmet/f13/power_armor/t51b,
-				)
+		/obj/item/clothing/suit/armor/f13/power_armor/t51b,
+		/obj/item/clothing/head/helmet/f13/power_armor/t51b,
+	)
 
 
 /obj/effect/spawner/bundle/f13/armor/t51b_midwest
 	name = "t51b midwest power armor spawner"
 	items = list(
-			/obj/item/clothing/suit/armor/f13/power_armor/midwest,
-			/obj/item/clothing/head/helmet/f13/power_armor/midwest,
-			)
+		/obj/item/clothing/suit/armor/f13/power_armor/midwest,
+		/obj/item/clothing/head/helmet/f13/power_armor/midwest,
+	)
 
 /obj/effect/spawner/bundle/f13/armor/excavator
-	name = "t51b excavator power armor spawner"
+	name = "excavator power armor spawner"
 	items = list(
 		/obj/item/clothing/head/helmet/f13/power_armor/excavator,
 		/obj/item/clothing/suit/armor/f13/power_armor/excavator,
-		)
+	)
+
+/obj/effect/spawner/lootdrop/f13/armor/tier5 //TIER 5 ARMOR
+	name = "tier 5 armor"
+	icon_state = "armort5_loot"
+	loot = list(
+		/obj/effect/spawner/bundle/f13/armor/t45d,
+		/obj/effect/spawner/bundle/f13/armor/t51b,
+	)
 
 /obj/effect/spawner/lootdrop/f13/armor/random
 	name = "random armor loot"
@@ -1958,8 +1956,7 @@
 					/obj/item/seeds/plump,
 					/obj/item/seeds/reishi,
 					/obj/item/seeds/cannabis,
-					/obj/item/seeds/starthistle,
-					/obj/item/seeds/random)
+					/obj/item/seeds/starthistle)
 	. = ..()
 
 /obj/effect/spawner/lootdrop/f13/foodspawner
@@ -2468,3 +2465,18 @@
 				/obj/effect/spawner/bundle/f13/wattz2k = 10,
 				/obj/effect/spawner/bundle/f13/ionrifle = 2
 				)
+
+/obj/effect/spawner/lootdrop/f13/gasmask_goner
+	name = "full gas mask working chance"
+	loot = list(
+		/obj/item/clothing/mask/gas/goner/aesthetic = 8,
+		/obj/item/clothing/mask/gas/goner = 2
+	)
+
+/obj/effect/spawner/bundle/f13/armor/goner/green
+	name = "green trencher outfit spawner"
+	items = list(
+		/obj/item/clothing/suit/f13/goner/green,
+		/obj/effect/spawner/lootdrop/f13/gasmask_goner,
+		/obj/item/clothing/head/helmet/f13/goner/green
+	)

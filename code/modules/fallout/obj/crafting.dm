@@ -162,3 +162,8 @@
 	name = "campfire kit"
 	desc = "A small box filled with an assortment of wood and tender. Useful for quickly making a fire."
 	icon_state = "lunchbox"
+
+/obj/item/crafting/grenade_casing
+	name = "old grenade casing"
+	desc = "A small industrial casing meant to be fillable with high grade explosives."
+	icon_state = "chemg"
