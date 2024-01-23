@@ -19696,6 +19696,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/caves)
+"vhc" = (
+/obj/structure/table,
+/obj/item/storage/belt/utility/full/engi,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/bunker)
 "vhj" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -21717,6 +21724,7 @@
 "xsP" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
+/obj/item/storage/box/stockparts/deluxe,
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/bunker)
 "xtP" = (
@@ -21939,6 +21947,9 @@
 /area/f13/vault)
 "xIp" = (
 /obj/structure/dresser,
+/obj/item/storage/backpack/duffelbag/syndie{
+	pixel_y = 13
+	},
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -39371,7 +39382,7 @@ hrZ
 hrZ
 hrZ
 oqm
-tHX
+vhc
 qse
 nfK
 oRO
