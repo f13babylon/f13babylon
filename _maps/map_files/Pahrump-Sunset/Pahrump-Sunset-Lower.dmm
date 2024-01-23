@@ -1059,7 +1059,7 @@
 /area/f13/followers)
 "aMy" = (
 /mob/living/simple_animal/hostile/renegade/defender{
-	armour_penetration = 0.4
+	armour_penetration = 0.6
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
@@ -1379,7 +1379,9 @@
 "bue" = (
 /mob/living/simple_animal/hostile/renegade/guardian{
 	extra_projectiles = 2;
-	melee_queue_distance = 2
+	melee_queue_distance = 2;
+	armour_penetration = 0.5;
+	rapid_melee = 2
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
@@ -5008,8 +5010,8 @@
 	melee_damage_lower = 10;
 	melee_damage_upper = 20;
 	rapid_melee = 2;
-	health = 200;
-	maxHealth = 200;
+	health = 300;
+	maxHealth = 300;
 	armour_penetration = 0.3
 	},
 /turf/open/floor/f13{
@@ -6044,8 +6046,8 @@
 	melee_damage_lower = 10;
 	melee_damage_upper = 20;
 	rapid_melee = 2;
-	health = 200;
-	maxHealth = 200;
+	health = 300;
+	maxHealth = 300;
 	armour_penetration = 0.3
 	},
 /turf/open/floor/f13{
@@ -6088,7 +6090,9 @@
 "cOQ" = (
 /mob/living/simple_animal/hostile/renegade/guardian{
 	extra_projectiles = 2;
-	melee_queue_distance = 2
+	melee_queue_distance = 2;
+	armour_penetration = 0.5;
+	rapid_melee = 2
 	},
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess"
@@ -7111,7 +7115,9 @@
 "enC" = (
 /mob/living/simple_animal/hostile/renegade/guardian{
 	extra_projectiles = 2;
-	melee_queue_distance = 2
+	melee_queue_distance = 2;
+	armour_penetration = 0.5;
+	rapid_melee = 2
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
@@ -7803,8 +7809,8 @@
 	melee_damage_lower = 10;
 	melee_damage_upper = 20;
 	rapid_melee = 2;
-	health = 200;
-	maxHealth = 200;
+	health = 300;
+	maxHealth = 300;
 	armour_penetration = 0.3
 	},
 /turf/open/indestructible/ground/inside/subway,
@@ -8945,7 +8951,9 @@
 /obj/structure/chair/f13foldupchair,
 /mob/living/simple_animal/hostile/renegade/guardian{
 	extra_projectiles = 2;
-	melee_queue_distance = 2
+	melee_queue_distance = 2;
+	armour_penetration = 0.5;
+	rapid_melee = 2
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
@@ -8975,7 +8983,9 @@
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/renegade/guardian{
 	extra_projectiles = 2;
-	melee_queue_distance = 2
+	melee_queue_distance = 2;
+	armour_penetration = 0.5;
+	rapid_melee = 2
 	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
@@ -9489,7 +9499,7 @@
 /area/f13/building/massfusion)
 "ial" = (
 /mob/living/simple_animal/hostile/renegade/defender{
-	armour_penetration = 0.4
+	armour_penetration = 0.6
 	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
@@ -11443,7 +11453,10 @@
 /turf/closed/wall/r_wall/rust,
 /area/f13/bunker)
 "ldj" = (
-/mob/living/simple_animal/hostile/renegade/engie,
+/mob/living/simple_animal/hostile/renegade/engie{
+	extra_projectiles = 1;
+	environment_smash = 4
+	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "ldo" = (
@@ -12240,7 +12253,7 @@
 	dir = 4
 	},
 /mob/living/simple_animal/hostile/renegade/defender{
-	armour_penetration = 0.4
+	armour_penetration = 0.6
 	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
@@ -14170,9 +14183,6 @@
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white,
 /area/f13/building/museum)
-"psc" = (
-/turf/closed/mineral/random/low_chance,
-/area/f13/bunker)
 "psT" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/highmid,
@@ -16095,7 +16105,10 @@
 /area/f13/tunnel/bighorn)
 "sou" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/renegade/engie,
+/mob/living/simple_animal/hostile/renegade/engie{
+	extra_projectiles = 1;
+	environment_smash = 4
+	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -16785,8 +16798,8 @@
 	melee_damage_lower = 10;
 	melee_damage_upper = 20;
 	rapid_melee = 2;
-	health = 200;
-	maxHealth = 200;
+	health = 300;
+	maxHealth = 300;
 	armour_penetration = 0.3
 	},
 /turf/open/indestructible/ground/inside/subway,
@@ -16937,8 +16950,8 @@
 	melee_damage_lower = 10;
 	melee_damage_upper = 20;
 	rapid_melee = 2;
-	health = 200;
-	maxHealth = 200;
+	health = 300;
+	maxHealth = 300;
 	armour_penetration = 0.3
 	},
 /turf/open/indestructible/ground/inside/subway,
@@ -18979,7 +18992,7 @@
 /area/f13/tunnel)
 "wJg" = (
 /mob/living/simple_animal/hostile/renegade/defender{
-	armour_penetration = 0.4
+	armour_penetration = 0.6
 	},
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess2"
@@ -19139,7 +19152,7 @@
 "wUB" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/renegade/defender{
-	armour_penetration = 0.4
+	armour_penetration = 0.6
 	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
@@ -28061,7 +28074,7 @@ boU
 aIk
 aMy
 aae
-aae
+aaa
 vox
 jLO
 jLO
@@ -28849,8 +28862,8 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aae
+aak
+aak
 aae
 aae
 aae
@@ -29105,10 +29118,10 @@ aae
 aae
 aae
 aak
-aae
-aae
 aaa
-aaa
+aae
+aak
+aak
 aae
 aae
 aae
@@ -29362,13 +29375,13 @@ aak
 aak
 aak
 aak
+aaa
+aaa
+aae
+aae
+aae
 aak
-aae
-aae
-aae
-aaa
-aaa
-aae
+aak
 aae
 aae
 aae
@@ -29612,21 +29625,21 @@ aaa
 aae
 aae
 aae
-psc
-psc
-psc
-psc
-psc
-psc
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aaa
+aae
+aae
 aae
 aae
 aak
-aae
-aae
-aae
-aae
-aaa
-aaa
+aak
 aae
 aae
 aae
@@ -29869,24 +29882,24 @@ aae
 aae
 aae
 aae
-psc
-psc
-psc
-psc
-psc
-psc
+aae
+aae
+aae
+aae
+aae
+aae
 aak
 aak
+aaa
+aae
+aae
+aae
+aae
+aae
+aae
+aak
 aak
 aae
-aae
-aae
-aae
-aae
-aae
-aaa
-aaa
-aaa
 aae
 aae
 aae
@@ -30134,19 +30147,19 @@ dQa
 rNQ
 aae
 aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
-aaa
 aaa
 aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aak
 aae
 aae
 aae
@@ -30392,19 +30405,19 @@ rNQ
 aae
 aak
 aae
-aak
-aak
-aak
-aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
 aaa
-aaa
+aak
+aak
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aae
+aak
+aak
 aae
 aae
 aae
@@ -30649,21 +30662,21 @@ rNQ
 aae
 aak
 aae
-aae
-aae
-aae
-aak
-aak
-aak
-aak
-aae
-aae
-aae
-aae
-aae
-aae
 aaa
-aaa
+aae
+aae
+aak
+aak
+aak
+aak
+aae
+aae
+aae
+aae
+aae
+aak
+aak
+aak
 aaa
 bFx
 aah
@@ -30906,7 +30919,7 @@ rNQ
 aae
 aae
 aak
-aae
+aaa
 aae
 aae
 aae
@@ -31163,7 +31176,7 @@ rNQ
 aae
 aae
 aae
-aak
+aaa
 aak
 aae
 aae
@@ -31420,7 +31433,7 @@ rNQ
 aae
 aae
 aae
-aae
+aaa
 aak
 aak
 aae
@@ -31677,7 +31690,7 @@ azI
 aae
 aae
 aak
-aae
+aaa
 aak
 aak
 aak
@@ -31934,7 +31947,7 @@ rNQ
 aae
 aak
 aak
-aae
+aaa
 aak
 aak
 aak
@@ -32191,7 +32204,7 @@ rNQ
 aae
 aak
 aae
-aae
+aaa
 aak
 aak
 aae
@@ -32448,8 +32461,8 @@ qgP
 aae
 aak
 aae
-aae
-aak
+aaa
+aaa
 aak
 aae
 aak
@@ -32706,7 +32719,7 @@ aae
 aae
 aae
 aae
-aak
+aaa
 aak
 aae
 aae
@@ -32962,8 +32975,8 @@ pGr
 aae
 aak
 aae
-aae
-aak
+aaa
+aaa
 aak
 aae
 aae
@@ -33219,7 +33232,7 @@ qgP
 aae
 aak
 aae
-aae
+aaa
 aak
 aak
 aae
@@ -33476,7 +33489,7 @@ qgP
 aae
 aae
 aae
-aae
+aaa
 aak
 aak
 aae
@@ -33733,7 +33746,7 @@ aae
 aae
 aae
 aak
-aak
+aaa
 aak
 aak
 aae
@@ -33990,7 +34003,7 @@ aae
 aae
 aae
 aak
-aae
+aaa
 aak
 aak
 aae
@@ -34246,8 +34259,8 @@ aae
 aae
 aae
 aae
-aae
-aae
+aaa
+aaa
 aae
 aak
 aak
@@ -34503,7 +34516,7 @@ aae
 aae
 aae
 aak
-aae
+aaa
 aae
 aae
 aae
@@ -34760,7 +34773,7 @@ aak
 aak
 aak
 aae
-aae
+aaa
 aak
 aae
 aae
@@ -35016,8 +35029,8 @@ aae
 aae
 aae
 aae
-aae
-aae
+aaa
+aaa
 aae
 aak
 aae
@@ -35273,7 +35286,7 @@ aae
 aak
 aak
 aae
-aae
+aaa
 aae
 aae
 aak
@@ -35530,7 +35543,7 @@ aae
 aak
 aak
 aae
-aae
+aaa
 aae
 aae
 aae
@@ -35786,8 +35799,8 @@ aae
 aae
 aak
 aae
-aae
-aae
+aaa
+aaa
 aae
 aae
 aae
@@ -36043,7 +36056,7 @@ aae
 aae
 aak
 aae
-aae
+aaa
 aae
 aae
 aak
@@ -36300,7 +36313,7 @@ aae
 aae
 aak
 aae
-aae
+aaa
 aae
 aak
 aak
@@ -36556,8 +36569,8 @@ aae
 aae
 aae
 aak
-aak
-aae
+aaa
+aaa
 aae
 aae
 aak
@@ -36812,8 +36825,8 @@ aaa
 aae
 aae
 aae
-aae
-aak
+aaa
+aaa
 aae
 aae
 aae
@@ -37068,8 +37081,8 @@ aae
 aae
 aaa
 aae
-aae
-aae
+aaa
+aaa
 aae
 aak
 aak
@@ -38096,7 +38109,7 @@ aae
 aae
 boU
 aae
-aaB
+aae
 aae
 aaa
 aae
