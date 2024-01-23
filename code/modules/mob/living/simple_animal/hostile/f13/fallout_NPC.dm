@@ -350,10 +350,10 @@
 /obj/effect/mob_spawn/human/corpse/ncr
 	name = "NCR Trooper"
 	uniform = /obj/item/clothing/under/f13/ncr
-	suit = /obj/item/clothing/suit/armor/f13/ncrarmor
+	suit = /obj/item/clothing/suit/armor/f13/ncr/trooper
 	belt = /obj/item/storage/belt/military/assault/ncr
 	shoes = /obj/item/clothing/shoes/f13/military/ncr
-	head = /obj/item/clothing/head/f13/ncr
+	head = /obj/item/clothing/head/helmet/f13/ncr/trooper
 
 /mob/living/simple_animal/hostile/ncr/trooper
 	name = "NCR Trooper"
@@ -390,10 +390,10 @@
 /obj/effect/mob_spawn/human/corpse/ncr/ranger
 	name = "NCR Ranger"
 	uniform = /obj/item/clothing/under/f13/ranger/patrol
-	suit = /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
+	suit = /obj/item/clothing/suit/armor/f13/combat/ncr/patrol
 	shoes = /obj/item/clothing/shoes/f13/military/leather
 	gloves = /obj/item/clothing/gloves/patrol
-	head = /obj/item/clothing/head/f13/ranger
+	head = /obj/item/clothing/head/helmet/f13/ncr/ranger
 
 ////////////////
 // LEGION NPC //
@@ -477,10 +477,10 @@
 /obj/effect/mob_spawn/human/corpse/legion/decan
 	name = "Legion Decanus"
 	uniform = /obj/item/clothing/under/f13/legskirt
-	suit = /obj/item/clothing/suit/armor/f13/legion/vet
+	suit = /obj/item/clothing/suit/armor/f13/legion/veteran
 	shoes = /obj/item/clothing/shoes/f13/military/legion
 	gloves = /obj/item/clothing/gloves/legion
-	head = /obj/item/clothing/head/helmet/f13/legion/prime/decan
+	head = /obj/item/clothing/head/helmet/f13/legion/prime/decanus
 
 ////////////////
 // TRIBAL NPC //

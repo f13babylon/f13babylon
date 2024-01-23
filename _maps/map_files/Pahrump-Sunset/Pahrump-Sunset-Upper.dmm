@@ -2809,7 +2809,7 @@
 "dvF" = (
 /turf/closed/indestructible/rock{
 	desc = "A wall made out of solid brick.";
-	icon = 'modular_sunset/icons/turfs/walls/brick_small_dark.dmi';
+	icon = 'icons/fallout/turfs/walls/brick_small_dark.dmi';
 	icon_state = "brick0";
 	icon_type_smooth = "brick";
 	name = "brick wall";
@@ -66121,7 +66121,7 @@ aKa
 aKa
 aKa
 aKa
-aKa
+vqz
 aaB
 aKa
 nHW
@@ -66375,11 +66375,11 @@ gBB
 gBB
 aKa
 aaB
-aKa
-aKa
-aKa
-aKa
-aaB
+vqz
+vqz
+vqz
+vqz
+vqz
 aKa
 yhK
 vnw
@@ -66633,10 +66633,10 @@ aKa
 aKa
 aaB
 aaB
-aKa
-aKa
-aKa
-aaB
+vqz
+vqz
+vqz
+vqz
 aKa
 aKa
 lho
@@ -66891,8 +66891,8 @@ aKa
 aKa
 aaB
 aaB
-aKa
-aKa
+vqz
+vqz
 aaB
 aKa
 aKa
@@ -69980,7 +69980,7 @@ psO
 psO
 psO
 psO
-psO
+vqz
 vqz
 vqz
 vqz
@@ -77144,12 +77144,12 @@ oez
 oez
 oez
 oez
-aKa
-aKa
-aKa
-aKa
-aKa
-aKa
+oez
+oez
+oez
+oez
+oez
+oez
 oez
 oez
 oez
@@ -77397,20 +77397,20 @@ abv
 abv
 abv
 oez
+oez
+oez
+oez
+oez
 aKa
 aKa
 aKa
 aKa
 aKa
 aKa
-aKa
-aKa
-aKa
-aKa
-aKa
-aKa
-aKa
-aKa
+oez
+oez
+oez
+oez
 oez
 oez
 oez

@@ -20,8 +20,8 @@ GLOBAL_VAR_INIT(normal_looc_colour, "#6699CC")
 	if(!(prefs.chat_toggles & CHAT_OOC))
 		to_chat(src, "<span class='danger'>You have OOC muted.</span>")
 		return
-	if(jobban_isbanned(mob, "OOC"))
-		to_chat(src, "<span class='danger'>You have been banned from OOC.</span>")
+	if(jobban_isbanned(mob, "LOOC"))
+		to_chat(src, "<span class='danger'>You have been banned from LOOC.</span>")
 		return
 
 	if(!holder)

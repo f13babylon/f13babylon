@@ -1955,7 +1955,7 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/building)
 "bNb" = (
-/obj/item/minefield_sign{
+/obj/structure/sign/minefield{
 	pixel_y = 8
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -3643,8 +3643,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/under/f13/legslavef,
 /obj/item/clothing/under/f13/legslavef,
-/obj/item/clothing/suit/armor/f13/slavelabor,
-/obj/item/clothing/suit/armor/f13/slavelabor,
+/obj/item/clothing/suit/f13/legion/servant,
+/obj/item/clothing/suit/f13/legion/servant,
 /obj/item/clothing/under/f13/legslave,
 /obj/item/clothing/under/f13/legslave,
 /obj/item/melee/onehanded/slavewhip,
@@ -7130,8 +7130,8 @@
 /area/f13/building)
 "gIb" = (
 /obj/structure/closet/cabinet,
-/obj/item/clothing/head/beret/ncr_codresscap,
-/obj/item/clothing/suit/armor/f13/ncrarmor/ncr_codressjack,
+/obj/item/clothing/head/f13/ncr/garrisoncap	,
+/obj/item/clothing/suit/f13/ncr/dressjack/commissioned,
 /obj/item/clothing/under/f13/ncr/ncr_officer,
 /obj/item/clothing/under/rank/medical/doctor/blue,
 /obj/item/clothing/under/rank/medical/doctor/green,
@@ -7346,7 +7346,7 @@
 	},
 /area/f13/wasteland/warren)
 "gSN" = (
-/obj/item/minefield_sign{
+/obj/structure/sign/minefield{
 	pixel_y = 8
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -7415,17 +7415,17 @@
 "gXJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/clothing/suit/armor/f13/ncrarmor,
-/obj/item/clothing/suit/armor/f13/ncrarmor,
-/obj/item/clothing/suit/armor/f13/ncrarmor,
-/obj/item/clothing/suit/armor/f13/ncrarmor,
-/obj/item/clothing/suit/armor/f13/ncrarmor,
-/obj/item/clothing/suit/armor/f13/ncrarmor,
-/obj/item/clothing/suit/armor/f13/ncrarmor,
-/obj/item/clothing/suit/armor/f13/ncrarmor,
-/obj/item/clothing/suit/armor/f13/ncrarmor,
-/obj/item/clothing/suit/armor/f13/ncrarmor,
-/obj/item/clothing/suit/armor/f13/ncrarmor,
+/obj/item/clothing/suit/armor/f13/ncr/trooper,
+/obj/item/clothing/suit/armor/f13/ncr/trooper,
+/obj/item/clothing/suit/armor/f13/ncr/trooper,
+/obj/item/clothing/suit/armor/f13/ncr/trooper,
+/obj/item/clothing/suit/armor/f13/ncr/trooper,
+/obj/item/clothing/suit/armor/f13/ncr/trooper,
+/obj/item/clothing/suit/armor/f13/ncr/trooper,
+/obj/item/clothing/suit/armor/f13/ncr/trooper,
+/obj/item/clothing/suit/armor/f13/ncr/trooper,
+/obj/item/clothing/suit/armor/f13/ncr/trooper,
+/obj/item/clothing/suit/armor/f13/ncr/trooper,
 /obj/structure/closet/cabinet,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
@@ -18156,7 +18156,7 @@
 /obj/item/clothing/under/f13/ncrcf{
 	name = "NCR Correctional Facility Uniform"
 	},
-/obj/item/clothing/suit/armor/f13/ncrcfjacket,
+/obj/item/clothing/suit/f13/ncr/ncrcfjacket,
 /obj/item/clothing/shoes/sneakers/black,
 /obj/item/clothing/shoes/sneakers/black,
 /turf/open/floor/f13{
@@ -21606,16 +21606,16 @@
 /area/f13/building)
 "uue" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/clothing/head/beret/ncr_dresscap,
-/obj/item/clothing/head/beret/ncr_dresscap,
-/obj/item/clothing/head/beret/ncr_dresscap,
-/obj/item/clothing/head/beret/ncr_dresscap,
-/obj/item/clothing/head/beret/ncr_dresscap,
-/obj/item/clothing/head/beret/ncr_dresscap,
-/obj/item/clothing/head/beret/ncr_dresscap,
-/obj/item/clothing/head/beret/ncr_dresscap,
-/obj/item/clothing/head/beret/ncr_dresscap,
-/obj/item/clothing/head/beret/ncr_dresscap,
+/obj/item/clothing/head/f13/ncr/beret,
+/obj/item/clothing/head/f13/ncr/beret,
+/obj/item/clothing/head/f13/ncr/beret,
+/obj/item/clothing/head/f13/ncr/beret,
+/obj/item/clothing/head/f13/ncr/beret,
+/obj/item/clothing/head/f13/ncr/beret,
+/obj/item/clothing/head/f13/ncr/beret,
+/obj/item/clothing/head/f13/ncr/beret,
+/obj/item/clothing/head/f13/ncr/beret,
+/obj/item/clothing/head/f13/ncr/beret,
 /obj/structure/closet/cabinet,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
@@ -22736,7 +22736,7 @@
 /obj/item/clothing/under/f13/ncrcf{
 	name = "NCR Correctional Facility Uniform"
 	},
-/obj/item/clothing/suit/armor/f13/ncrcfjacket,
+/obj/item/clothing/suit/f13/ncr/ncrcfjacket,
 /obj/item/clothing/shoes/sneakers/black,
 /obj/item/clothing/shoes/sneakers/black,
 /obj/item/clothing/shoes/sneakers/black,
@@ -24600,16 +24600,16 @@
 /area/f13/building)
 "xaA" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/clothing/suit/armor/f13/ncrarmor/ncr_dressjack,
-/obj/item/clothing/suit/armor/f13/ncrarmor/ncr_dressjack,
-/obj/item/clothing/suit/armor/f13/ncrarmor/ncr_dressjack,
-/obj/item/clothing/suit/armor/f13/ncrarmor/ncr_dressjack,
-/obj/item/clothing/suit/armor/f13/ncrarmor/ncr_dressjack,
-/obj/item/clothing/suit/armor/f13/ncrarmor/ncr_dressjack,
-/obj/item/clothing/suit/armor/f13/ncrarmor/ncr_dressjack,
-/obj/item/clothing/suit/armor/f13/ncrarmor/ncr_dressjack,
-/obj/item/clothing/suit/armor/f13/ncrarmor/ncr_dressjack,
-/obj/item/clothing/suit/armor/f13/ncrarmor/ncr_dressjack,
+/obj/item/clothing/suit/f13/ncr/dressjack,
+/obj/item/clothing/suit/f13/ncr/dressjack,
+/obj/item/clothing/suit/f13/ncr/dressjack,
+/obj/item/clothing/suit/f13/ncr/dressjack,
+/obj/item/clothing/suit/f13/ncr/dressjack,
+/obj/item/clothing/suit/f13/ncr/dressjack,
+/obj/item/clothing/suit/f13/ncr/dressjack,
+/obj/item/clothing/suit/f13/ncr/dressjack,
+/obj/item/clothing/suit/f13/ncr/dressjack,
+/obj/item/clothing/suit/f13/ncr/dressjack,
 /obj/structure/closet/cabinet,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"

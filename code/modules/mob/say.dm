@@ -170,6 +170,10 @@
 			to_chat(src, "<span class='danger'>You cannot talk in deadchat (muted).</span>")
 			return
 
+		if(!GLOB.dsay_allowed)
+			to_chat(src, "<span class='danger'>Deadchat globally muted.</span>")
+			return
+
 		if(src.client.handle_spam_prevention(message,MUTE_DEADCHAT))
 			return
 

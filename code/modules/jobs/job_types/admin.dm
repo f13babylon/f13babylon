@@ -48,8 +48,8 @@
 
 /datum/outfit/loadout/desert_ranger
 	name = "Desert Ranger"
-	head = /obj/item/clothing/head/helmet/f13/ncr/rangercombat/desert
-	suit = /obj/item/clothing/suit/armor/f13/rangercombat/desert
+	head = /obj/item/clothing/head/helmet/f13/ncr/vetranger/desert
+	suit = /obj/item/clothing/suit/armor/f13/ncr/vetranger/desert
 	r_hand = /obj/item/gun/ballistic/revolver/revolver44/desert_ranger
 	backpack_contents = list(
 							)
@@ -94,8 +94,8 @@
 	uniform = /obj/item/clothing/under/f13/merca
 	// backpack = /obj/item/encencminigunbal4mm
 	gloves = /obj/item/clothing/gloves/f13/military
-	head = /obj/item/clothing/head/helmet/f13/ncr/rangercombat/desert
-	suit = /obj/item/clothing/suit/armor/f13/rangercombat/desert
+	head = /obj/item/clothing/head/helmet/f13/ncr/vetranger/desert
+	suit = /obj/item/clothing/suit/armor/f13/ncr/vetranger/desert
 	glasses = /obj/item/clothing/glasses/hud/health/night
 
 /datum/outfit/job/wasteland/f13adminboos/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
