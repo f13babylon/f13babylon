@@ -463,7 +463,7 @@
 	icon = 'icons/fallout/mobs/supermutant.dmi'
 	icon_state = "hulk_hmg_s"
 	icon_living = "hulk_hmg_s"
-	icon_dead = "hulk_ranged_s"
+	icon_dead = "hulk_hmg_s"
 	ranged = 1
 	maxHealth = 640
 	health = 640
