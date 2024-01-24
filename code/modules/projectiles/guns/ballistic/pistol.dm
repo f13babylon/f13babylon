@@ -307,6 +307,12 @@
 	can_suppress = FALSE
 	automatic_burst_overlay = FALSE
 	fire_sound = 'sound/f13weapons/44mag.ogg'
+
+	reload_sound = 'sound/weapons/guns/hpistol_magin.ogg'	//Heavy pistol
+	reload_sound_empty = 'sound/weapons/guns/hpistol_magin.ogg'
+	unload_sound = 'sound/weapons/guns/hpistol_magout.ogg'
+
+
 	//Extra Modifiable Gun Vars
 	modifiablegun = FALSE//TEMP
 	//Sprite Attachment Points
@@ -344,6 +350,10 @@
 	fire_sound = 'sound/f13weapons/44mag.ogg'
 	extra_damage = 5
 
+	reload_sound = 'sound/weapons/guns/hpistol_magin.ogg'	//Heavy pistol
+	reload_sound_empty = 'sound/weapons/guns/hpistol_magin.ogg'
+	unload_sound = 'sound/weapons/guns/hpistol_magout.ogg'
+
 
 //14mm Pistol		Keywords: 14mm, Semi-auto, 7 rounds, Heavy
 /obj/item/gun/ballistic/automatic/pistol/pistol14
@@ -357,6 +367,10 @@
 	recoil = 2.2
 	can_suppress = FALSE
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
+
+	reload_sound = 'sound/weapons/guns/hpistol_magin.ogg'	//Heavy pistol
+	reload_sound_empty = 'sound/weapons/guns/hpistol_magin.ogg'
+	unload_sound = 'sound/weapons/guns/hpistol_magout.ogg'
 
 //14mm compact		Keywords: 14mm, Semi-auto, Short barrel, 7 rounds, Heavy
 /obj/item/gun/ballistic/automatic/pistol/pistol14/compact

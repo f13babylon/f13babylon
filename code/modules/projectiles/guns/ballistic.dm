@@ -12,8 +12,14 @@
 	var/en_bloc = 0
 	/// Which direction do the casings fly out?
 	var/handedness = GUN_EJECTOR_RIGHT
-	var/insert_sound = 'sound/weapons/shotguninsert.ogg'
-	var/chamber_sound = 'sound/weapons/gun_chamber_round.ogg'
+
+	//Gun sound variables for flavor. These control sounds. Want a gun to have a unique sound? Use a variable, replace the default sound.
+	var/insert_sound = 'sound/weapons/guns/insert_shell_casing.ogg'				//Plays when inserting bullet into internal-loading gun.
+	var/chamber_sound = 'sound/weapons/gun_chamber_round.ogg'					//Plays when taking bullets in and out of the chamber.
+	var/unload_sound = 'sound/weapons/guns/pistol_magout.ogg'					//Plays when unloading magazine from weapon.
+	var/reload_sound = 'sound/weapons/guns/pistol_magin.ogg'					//Plays when shoving a magazine into the weapon.
+	var/reload_sound_empty = 'sound/weapons/gun_magazine_remove_empty_1.ogg'	//Snowflake one to keep the empty reload sound.
+	var/gun_slide = 'sound/weapons/guns/slide_pistol.ogg'						//Plays when bullet enters chamber of gun.
 
 /obj/item/gun/ballistic/Initialize(mapload)
 	. = ..()
@@ -77,12 +83,12 @@
 				magazine = AM
 				to_chat(user, "<span class='notice'>You load a new magazine into \the [src].</span>")
 				if(magazine.ammo_count())
-					playsound(src, "gun_insert_full_magazine", 70, 1)
+					playsound(src, reload_sound, 70, 1)
 					if(!chambered)
 						chamber_round()
 						addtimer(CALLBACK(GLOBAL_PROC, .proc/playsound, src, chamber_sound, 100, 1), 3)
 				else
-					playsound(src, "gun_insert_empty_magazine", 70, 1)
+					playsound(src, reload_sound_empty, 70, 1)
 				A.update_icon()
 				update_icon()
 				return 1
@@ -145,9 +151,7 @@
 			user.put_in_hands(magazine)
 			magazine.update_icon()
 			if(magazine.ammo_count())
-				playsound(src, 'sound/weapons/gun_magazine_remove_full.ogg', 70, 1)
-			else
-				playsound(src, "gun_remove_empty_magazine", 70, 1)
+				playsound(src, unload_sound, 70, 1)
 			magazine = null
 			to_chat(user, "<span class='notice'>You pull the magazine out of \the [src].</span>")
 	else if(chambered)
@@ -155,7 +159,7 @@
 		AC.bounce_away()
 		chambered = null
 		to_chat(user, "<span class='notice'>You unload the round from \the [src]'s chamber.</span>")
-		playsound(src, "gun_slide_lock", 70, 1)
+		playsound(src, gun_slide, 70, 1)
 	else
 		to_chat(user, "<span class='notice'>There's no magazine in \the [src].</span>")
 	update_icon()
