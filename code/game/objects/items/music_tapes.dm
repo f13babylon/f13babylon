@@ -12,6 +12,7 @@
 	throwforce = 0
 	var/music_category = null
 
+/*
 /obj/item/musictape/basetwo
 	name = "base music tape"
 	desc = "A magnetic tape that holds a variety of songs. This tape includes:<span class='notice'>\n\
@@ -22,3 +23,4 @@
 	White Rabbit</span>"
 	icon_state = "tape_red"
 	music_category = "Base2"
+*/
