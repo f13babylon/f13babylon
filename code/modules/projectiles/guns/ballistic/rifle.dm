@@ -351,6 +351,7 @@
 	desc = "A modified varmint rifle with better stopping power, a scope, and suppressor. Oh, don't forget the sick paint job."
 	icon_state = "ratslayer"
 	item_state = "ratslayer"
+	fire_delay = 3
 	suppressed = 1
 	zoomable = TRUE
 	zoom_amt = 10
@@ -358,7 +359,12 @@
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 	extra_penetration = 0.3
 	extra_damage = 10
-	extra_speed = 800 //pew
+	extra_speed = 800
+
+/obj/item/gun/ballistic/rifle/mag/varmint/ratslayer/shoot_live_shot(mob/living/user, pointblank = FALSE, mob/pbtarget, message = 1, stam_cost = 0)
+	..()
+	if(HAS_TRAIT(user, TRAIT_FAST_PUMP))
+		src.pump(user)
 
 //Anti-Material Rifle						Keywords: .50, Bolt-action, 8 round magazine
 /obj/item/gun/ballistic/rifle/mag/antimateriel
