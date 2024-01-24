@@ -56,8 +56,39 @@
 	desc = "A leather top with a bandolier over it and a straps that cover the arms. Comes with pockets."
 	icon_state = "badlands"
 	item_state = "badlands"
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 30, "bio" = 0, "bomb" = 20, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 10)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
 	mutantrace_variation = STYLE_DIGITIGRADE
+
+/obj/item/clothing/suit/armor/f13/raider/badlands/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/raider/jackal
+	name = "Jackal armored rags"
+	desc = "A collection of spare rags and cloth sewn together into a robe-like uniform and pants, sporting a half-complete combat armor set over-top."
+	icon_state = "jackal"
+	item_state = "jackal"
+	icon = 'icons/fallout/clothing/armored_light.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
+	armor = list("melee" = 30, "bullet" = 30, "laser" = 15, "bio" = 0, "bomb" = 20, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 10)
+
+/obj/item/clothing/suit/armor/f13/raider/jackal/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/raider/ncrcfarmor
+	name = "NCRCF armored jacket"
+	desc = "An NCR Correctional Facility jacket worn overtop of a worn bullet proof vest. Simple, yet effective."
+	icon_state = "ncrcf_armor"
+	item_state = "ncrcf_armor"
+	icon = 'icons/fallout/clothing/armored_light.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
+	armor = list("melee" = 20, "bullet" = 30, "laser" = 20, "bio" = 0, "bomb" = 25, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 15)
+
+/obj/item/clothing/suit/armor/f13/raider/ncrcfarmor/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/raider/painspike
 	name = "painspike raider armor"
@@ -848,12 +879,11 @@
 	flags_inv = HIDEJUMPSUIT
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
 
-/obj/item/clothing/suit/armor/f13/combat/mk2/remnant
+/obj/item/clothing/suit/armor/f13/combat/remnant
 	name = "remnant combat armor"
 	desc = "A dark armor, used commonly in espionage or shadow ops."
 	icon_state = "remnant"
 	item_state = "remnant"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 25)
 
 //THE GRAVEYARD
 //UNUSED or LEGACY - RETAINED IN CASE DESIRED FOR ADMIN SPAWN OR REIMPLEMENATION. MAY NOT BE EVERYTHING THAT'S UNUSED. TEST BEFORE USING
