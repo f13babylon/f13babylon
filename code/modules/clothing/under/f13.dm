@@ -398,7 +398,7 @@
 
 /obj/item/clothing/under/f13/legskirt
 	name = "legionary fatigues"
-	desc = "A black learthery skirt and a thick long sleeve cotton shirt."
+	desc = "A black leathery skirt and a thick long sleeve cotton shirt."
 	icon_state = "legskirt"
 	item_state = "legskirt"
 	item_color = "legskirt"

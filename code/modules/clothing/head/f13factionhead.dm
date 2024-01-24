@@ -751,6 +751,9 @@
 		"M4" = "rangerhat"
 	)
 
+/obj/item/clothing/head/helmet/f13/ncr/ranger/Initialize(mapload)
+	. = ..()
+
 /obj/item/clothing/head/helmet/f13/combat/ncr/patrol	//Patrol Ranger helmet
 	name = "ranger patrol helmet"
 	desc = "A standard issue ranger patrol helmet that provides a good amount of defence. It's got NCR markings, making it clear who it was made by."
@@ -766,10 +769,6 @@
 		"M2" = "ncr_helmet_mk2",
 		"M3" = "ncr_patrol_helmet"
 	)
-
-/obj/item/clothing/head/helmet/f13/combat/ncr/patrol/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/helmet/f13/ncr/vetranger		//Veteran Ranger helmet
 	name = "veteran ranger riot helmet"

@@ -89,15 +89,15 @@
 	result = /obj/item/reagent_containers/food/snacks/soup/meatball
 	subcategory = CAT_SOUP
 
-/datum/crafting_recipe/food/milosoup
-	name = "Milo soup"
+/datum/crafting_recipe/food/misosoup
+	name = "Miso soup"
 	reqs = list(
 		/datum/reagent/water = 10,
 		/obj/item/reagent_containers/glass/bowl = 1,
 		/obj/item/reagent_containers/food/snacks/soydope = 2,
 		/obj/item/reagent_containers/food/snacks/tofu = 2
 	)
-	result = /obj/item/reagent_containers/food/snacks/soup/milo
+	result = /obj/item/reagent_containers/food/snacks/soup/miso
 	subcategory = CAT_SOUP
 
 /datum/crafting_recipe/food/mushroomsoup
@@ -278,4 +278,3 @@
 	)
 	result = /obj/item/reagent_containers/food/snacks/soup/coldchili
 	subcategory = CAT_SOUP
-
