@@ -150,8 +150,7 @@
 			magazine.forceMove(drop_location())
 			user.put_in_hands(magazine)
 			magazine.update_icon()
-			if(magazine.ammo_count())
-				playsound(src, unload_sound, 70, 1)
+			playsound(src, unload_sound, 70, 1)
 			magazine = null
 			to_chat(user, "<span class='notice'>You pull the magazine out of \the [src].</span>")
 	else if(chambered)
