@@ -854,351 +854,498 @@
 	message = "squeaks!"
 	sound = 'sound/f13effects/sunsetsounds/mothsqueak.ogg'
 
-#define EMOTE_SPECIAL_STR "Strength"
-#define EMOTE_SPECIAL_PER "Perception"
-#define EMOTE_SPECIAL_END "Endurance"
-#define EMOTE_SPECIAL_CHA "Charisma"
-#define EMOTE_SPECIAL_INT "Intelligence"
-#define EMOTE_SPECIAL_AGI "Agility"
-#define EMOTE_SPECIAL_LCK "Luck"
-#define EMOTE_SPECIAL_GEN "???"
-#define EMOTE_SPECIAL_SUF "Crit"
+/datum/emote/living/carbon/airguitar
+	key = "airguitar"
+	message = "is strumming the air and headbanging like a safari chimp."
+	restraint_check = TRUE
 
-GLOBAL_LIST_INIT(special_skill_list, list(
-	EMOTE_SPECIAL_STR,
-	EMOTE_SPECIAL_PER,
-	EMOTE_SPECIAL_END,
-	EMOTE_SPECIAL_CHA,
-	EMOTE_SPECIAL_INT,
-	EMOTE_SPECIAL_AGI,
-	EMOTE_SPECIAL_LCK,
-	EMOTE_SPECIAL_GEN))
+/datum/emote/living/carbon/blink
+	key = "blink"
+	key_third_person = "blinks"
+	message = "blinks."
+	sound = "sound/emotes/blink.ogg"
 
-GLOBAL_LIST_INIT(special_triggers, list(
-	EMOTE_SPECIAL_STR = list(
-		"s",
-		"str",
-		"strength",
-		"strangth",
-		"strong",
-		"strongth",
-		"might",
-		"power"),
-	EMOTE_SPECIAL_PER = list(
-		"p",
-		"per",
-		"perception",
-		"preception",
-		"look",
-		"see",
-		"peep"),
-	EMOTE_SPECIAL_END = list(
-		"e",
-		"end",
-		"endurance",
-		"endurence",
-		"toughness",
-		"tough",
-		"grit",
-		"beef",
-		"beefiness"),
-	EMOTE_SPECIAL_CHA = list(
-		"c",
-		"cha",
-		"charisma",
-		"charesma",
-		"charm",
-		"moxie",
-		"smarm",
-		"wink",
-		"char"),
-	EMOTE_SPECIAL_INT = list(
-		"int",
-		"i",
-		"intelligence",
-		"inteligence",
-		"intelligance",
-		"inteligance",
-		"intel",
-		"intell",
-		"intelect",
-		"intellect",
-		"smart",
-		"smartness",
-		"nerd",
-		"nerdiness",
-		"dork",
-		"dorkiness",
-		"dweeb",
-		"dweebishness"),
-	EMOTE_SPECIAL_AGI = list(
-		"agi",
-		"a",
-		"agility",
-		"agillity",
-		"quick",
-		"quickness",
-		"fast",
-		"fastness",
-		"dex",
-		"speed",
-		"speediness",
-		"athleticism",
-		"acrobatics",
-		"escape",
-		"dodge",
-		"evade",
-		"evasion",
-		"cat"),
-	EMOTE_SPECIAL_LCK = list(
-		"l",
-		"lck",
-		"luck",
-		"lick",
-		"lock",
-		"lunk",
-		"link",
-		"chance",
-		"fortune",
-		"dice",
-		"luk",
-		"luc"),
-	EMOTE_SPECIAL_GEN = list(
-		"x",
-		"non",
-		"none",
-		"generic",
-		"something",
-		"else",
-		"smth",
-		"?",
-		"rand",
-		"huh",
-		"stuff",
-		"roll")))
+/datum/emote/living/carbon/blink_r
+	key = "blink_r"
+	message = "blinks rapidly."
 
-GLOBAL_LIST_INIT(special_phrases, list(
-	EMOTE_SPECIAL_STR = list(
-		"initial" = list(
-			"tests their strength...",
-			"flexes their arm(s)...",
-			"prepares to lift...",
-			"puts their back into it..."),
-		"success" = list(
-			"is strong!",
-			"is beefy!",
-			"has some serious guns!",
-			"had some strength behind it!"),
-		"failure" = list(
-			"was too weak.",
-			"was a little wet noodle.",
-			"would loose an arm wrestling match with a mouse.",
-			"has some serious atrophy. it's a wonder they can move at all.")),
-	EMOTE_SPECIAL_PER = list(
-		"initial" = list(
-			"takes a good, long look...",
-			"squints...",
-			"looks around...",
-			"focuses in..."),
-		"success" = list(
-			"was perceptive!",
-			"noticed things!",
-			"has eyes like a hawk!",
-			"could find Doc Mitchell's keys!",
-			"noticed whatever they were trying to see!"),
-		"failure" = list(
-			"was totally oblivious.",
-			"forgot their glasses.",
-			"didn't see anything.")),
-	EMOTE_SPECIAL_END = list(
-		"initial" = list(
-			"tests their toughness...",
-			"braces themself..."),
-		"success" = list(
-			"was tough!",
-			"was one tough cookie!",
-			"doesn't even flinch!",
-			"is solid as an oak!",
-			"endured!"),
-		"failure" = list(
-			"is a floppy lil' noodle.",
-			"is made of paper.",
-			"would be torn to shreds by a light breeze.",
-			"crumpled up and blew away.")),
-	EMOTE_SPECIAL_CHA = list(
-		"initial" = list(
-			"starts to be charismatic...",
-			"puts on the charm..."),
-		"success" = list(
-			"was charismatic!",
-			"is an absolute charmer!",
-			"was good and charming!"),
-		"failure" = list(
-			"was totally uncharismatic.",
-			"isn't fooling anyone.",
-			"put their foot in their mouth.",
-			"could hear a pin drop.",
-			"miiiiight have some frontal lobe damage.",
-			"had their charms fall flat.")),
-	EMOTE_SPECIAL_INT = list(
-		"initial" = list(
-			"thinks hard...",
-			"ponders hard...",
-			"takes a moment to think...",
-			"furrows their brow..."),
-		"success" = list(
-			"was clever!",
-			"is a genius!",
-			"has a mind sharp as a whip!",
-			"had a thought!"),
-		"failure" = list(
-			"was dumb as a doornail.",
-			"burned their last braincell years ago.",
-			"is running low on braincells.",
-			"was dense as a brick.")),
-	EMOTE_SPECIAL_AGI = list(
-		"initial" = list(
-			"tries to get agile...",
-			"prepares their moves...",
-			"starts to get limber..."),
-		"success" = list(
-			"was very flexible!",
-			"had some excellent footwork!",
-			"was in perfect control!",
-			"was agile as a cat!",
-			"was agile as a fox!"),
-		"failure" = list(
-			"fell flat on their face.",
-			"fell flat on their back.",
-			"triped over themself.",
-			"has two left feet.",
-			"was clumsy as a cat.",
-			"was clumsy as a fox.")),
-	EMOTE_SPECIAL_LCK = list(
-		"initial" = list(
-			"tries their luck...",
-			"takes a chance...",
-			"puts it all on red..."),
-		"success" = list(
-			"lucked out!",
-			"was the luckiest son-of-a-gun in the wasteland!",
-			"could make a bullet turn right around and climb back into the gun!",
-			"got lucky!"),
-		"failure" = list(
-			"was unlucky.",
-			"realized their game was rigged from the start.",
-			"showed that the house always wins.")),
-	EMOTE_SPECIAL_GEN = list(
-		"initial" = list(
-			"tests their skills...",
-			"tries their skills...",
-			"attempts to do a thing...",
-			"puts their skills to the test..."),
-		"success" = list(
-			"succeeded!",
-			"did it!"),
-		"failure" = list(
-			"was really bad at whatever they did.",
-			"just really sucked.",
-			"messed up real bad.")),
-	EMOTE_SPECIAL_SUF = list(
-		"initial" = list(
-			"shouldnt see this lol"),
-		"success" = list(
-			"Ring-a-ding baby!",
-			"Wow!"),
-		"failure" = list(
-			"How could someone mess up so badly?",
-			"The game was rigged from the start."))))
+/datum/emote/living/carbon/clap
+	key = "clap"
+	key_third_person = "claps"
+	message = "claps."
+	muzzle_ignore = TRUE
+	restraint_check = TRUE
+	emote_type = EMOTE_AUDIBLE
+	sound = list('sound/misc/clap1.ogg',
+				'sound/misc/clap2.ogg',
+				'sound/misc/clap3.ogg',
+				'sound/misc/clap4.ogg')
 
 
-/datum/emote/living/special
-	key = "special"
-	message = null
-	cooldown = 2.5 SECONDS // longer than it takes for the emote to run
-	stat_allowed = UNCONSCIOUS
-	var/special_delay = 2 SECONDS
-
-/datum/emote/living/special/run_emote(mob/user, params, type_override, intentional = FALSE)
-	if(!can_run_emote(user, TRUE, intentional))
-		return FALSE
-	if(jobban_isbanned(user, "emote"))	// emote ban
-		to_chat(user, "You cannot send emotes (banned).")
-		return FALSE
-	else if(user.client && user.client.prefs.muted & MUTE_IC)	// muted
-		to_chat(user, "You cannot send IC messages (muted).")
-		return FALSE
-
-	if(isnull(user.special_a))
-		to_chat(user, span_phobia("You arent special."))
-		to_chat(user, span_notice("Mainly because you're playing a mob withough any special skills. This is probably a bug~"))
-		return FALSE
-
-	var/special_noun = null
-
-	for(var/which_special in GLOB.special_skill_list)
-		/// if the thing we said after the emote is in one of these lists, pick the corresponding key
-		if(params in GLOB.special_triggers[which_special])
-			special_noun = which_special
-
-	if(!(special_noun in GLOB.special_skill_list) || !special_noun)
-		to_chat(user, span_alert("That's not a valid SPECIAL stat!"))
-		to_chat(user, span_notice("To use this emote, type '*special' followed by a SPECIAL stat. For instance, '*special luck' will do a (luck*10)% roll and say if you passed or not."))
-		var/valid_specials
-		for(var/word in GLOB.special_triggers)
-			valid_specials += "[GLOB.special_triggers[word][1]], "
-			valid_specials += "[GLOB.special_triggers[word][2]]. "
-		to_chat(user, span_notice("Some of the valid SPECIAL keywords are:[valid_specials]."))
+/datum/emote/living/carbon/clap/can_run_emote(mob/living/user, status_check, intentional)
+	. = ..()
+	// Need hands to clap
+	if(!user.get_bodypart(BODY_ZONE_L_ARM) || !user.get_bodypart(BODY_ZONE_R_ARM))
 		return
 
-	var/special_skill = null
-	switch(special_noun)
-		if(EMOTE_SPECIAL_STR)
-			special_skill = user.special_s
-		if(EMOTE_SPECIAL_PER)
-			special_skill = user.special_p
-		if(EMOTE_SPECIAL_END)
-			special_skill = user.special_e
-		if(EMOTE_SPECIAL_CHA)
-			special_skill = user.special_c
-		if(EMOTE_SPECIAL_INT)
-			special_skill = user.special_i
-		if(EMOTE_SPECIAL_AGI)
-			special_skill = user.special_a
-		if(EMOTE_SPECIAL_LCK)
-			special_skill = user.special_l
-		if(EMOTE_SPECIAL_GEN) // generic random 50% chance
-			special_skill = 5
 
-	var/first_phrase = pick(GLOB.special_phrases[special_noun]["initial"])
-	var/message_first = span_notice("\[[special_noun], [special_skill]0%] <b>[user]</b> [first_phrase].")	// [Luck, 100%] User tests their Luck.
+/datum/emote/living/carbon/clap1
+	key = "clap1"
+	key_third_person = "claps once"
+	message = "claps once."
+	emote_type = EMOTE_AUDIBLE
+	muzzle_ignore = TRUE
+	restraint_check = TRUE
+	sound_volume = 30
+	sound = list('sound/emotes/claponce1.ogg',
+				'sound/emotes/claponce2.ogg')
 
-	user.visible_message(
-		message = message_first,
-		self_message = message_first,
-		blind_message = message_first)
-	user.emote_for_ghost_sight(message_first)
+/datum/emote/living/carbon/clear
+	key = "clear"
+	key_third_person = "clears their throat"
+	message = "clears their throat."
+	emote_type = EMOTE_AUDIBLE
+	sound = list('sound/emotes/male_clear_throat_1.ogg',
+				'sound/emotes/male_clear_throat_2.ogg')
 
-	spawn(special_delay)
-		if(!user)
-			return
-		if(!can_run_emote(user, TRUE,intentional))
-			return
 
-		var/message_second
-		if(prob(special_skill * 10))
-			var/success_phrase = pick(GLOB.special_phrases[special_noun]["success"])
-			if(prob(5)) // crit success!
-				success_phrase += " [pick(GLOB.special_phrases[EMOTE_SPECIAL_SUF]["success"])]"
-			message_second = span_green("\[Success\] <b>[user]</b> [success_phrase]") // [Success] User is pretty lucky!
+/datum/emote/living/carbon/clap/can_run_emote(mob/living/user, status_check, intentional)
+	. = ..()
+	// Need hands to clap
+	if(!user.get_bodypart(BODY_ZONE_L_ARM) || !user.get_bodypart(BODY_ZONE_R_ARM))
+		return
+
+/datum/emote/living/carbon/gnarl
+	key = "gnarl"
+	key_third_person = "gnarls"
+	message = "gnarls and shows its teeth..."
+
+/datum/emote/living/carbon/moan
+	key = "moan"
+	key_third_person = "moans"
+	message = "moans!"
+	emote_type = EMOTE_AUDIBLE
+	stat_allowed = SOFT_CRIT
+
+/datum/emote/living/carbon/roll
+	key = "roll"
+	key_third_person = "rolls"
+	message = "rolls."
+	restraint_check = TRUE
+
+/datum/emote/living/carbon/scratch
+	key = "scratch"
+	key_third_person = "scratches"
+	message = "scratches."
+	restraint_check = TRUE
+
+/datum/emote/living/carbon/screech
+	key = "screech"
+	key_third_person = "screeches"
+	message = "screeches."
+
+/datum/emote/living/carbon/sign
+	key = "sign"
+	key_third_person = "signs"
+	message_param = "signs the number %t."
+	restraint_check = TRUE
+
+/datum/emote/living/carbon/sign/select_param(mob/user, params)
+	. = ..()
+	if(!isnum(text2num(params)))
+		return message
+
+/datum/emote/living/carbon/sign/signal
+	key = "signal"
+	key_third_person = "signals"
+	message_param = "raises %t fingers."
+	restraint_check = TRUE
+
+/datum/emote/living/carbon/tail
+	key = "tail"
+	message = "waves their tail."
+
+/datum/emote/living/carbon/wink
+	key = "wink"
+	key_third_person = "winks"
+	message = "winks."
+
+#define INSULTS_FILE "insult.json"
+
+/mob
+	var/nextsoundemote = 1
+
+/datum/emote/living/insult
+	key = "insult"
+	key_third_person = "insults"
+	message = "spews insults."
+	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/insult/run_emote(mob/living/user, params)
+	if(user.mind?.miming)
+		message = "creatively gesticulates."
+	else if(!user.is_muzzled())
+		message = pick_list_replacements(INSULTS_FILE, "insult_gen")
+	else
+		message = "muffles something."
+	. = ..()
+
+/datum/emote/living/scream/run_emote(mob/living/user, params) //I can't not port this shit, come on.
+	if(user.nextsoundemote >= world.time || user.stat != CONSCIOUS)
+		return
+	var/sound
+	var/miming = user.mind ? user.mind.miming : 0
+	if(!user.is_muzzled() && !miming)
+		user.nextsoundemote = world.time + 7
+		if(issilicon(user))
+			sound = 'modular_citadel/sound/voice/scream_silicon.ogg'
+			if(iscyborg(user))
+				var/mob/living/silicon/robot/S = user
+				if(S.cell?.charge < 20)
+					to_chat(S, "<span class='warning'>Scream module deactivated. Please recharge.</span>")
+					return
+				S.cell.use(200)
+		if(ismonkey(user))
+			sound = 'modular_citadel/sound/voice/scream_monkey.ogg'
+		if(istype(user, /mob/living/simple_animal/hostile/gorilla))
+			sound = 'sound/creatures/gorilla.ogg'
+		if(ishuman(user))
+			user.adjustOxyLoss(5)
+			sound = pick('modular_citadel/sound/voice/scream_m1.ogg', 'modular_citadel/sound/voice/scream_m2.ogg')
+			if(user.gender == FEMALE)
+				sound = pick('modular_citadel/sound/voice/scream_f1.ogg', 'modular_citadel/sound/voice/scream_f2.ogg')
+			if(is_species(user, /datum/species/jelly))
+				if(user.gender == FEMALE)
+					sound = pick('modular_citadel/sound/voice/scream_jelly_f1.ogg', 'modular_citadel/sound/voice/scream_jelly_f2.ogg')
+				else
+					sound = pick('modular_citadel/sound/voice/scream_jelly_m1.ogg', 'modular_citadel/sound/voice/scream_jelly_m2.ogg')
+			if(is_species(user, /datum/species/android) || is_species(user, /datum/species/synth) || is_species(user, /datum/species/ipc))
+				sound = 'modular_citadel/sound/voice/scream_silicon.ogg'
+			if(is_species(user, /datum/species/lizard))
+				sound = 'modular_citadel/sound/voice/scream_lizard.ogg'
+			if(is_species(user, /datum/species/skeleton))
+				sound = 'modular_citadel/sound/voice/scream_skeleton.ogg'
+			if (is_species(user, /datum/species/fly) || is_species(user, /datum/species/insect))
+				sound = 'modular_citadel/sound/voice/scream_moth.ogg'
+		if(isalien(user))
+			sound = 'sound/voice/hiss6.ogg'
+		LAZYINITLIST(user.alternate_screams)
+		if(LAZYLEN(user.alternate_screams))
+			sound = pick(user.alternate_screams)
+		playsound(user.loc, sound, 50, 1, 4, 1.2)
+		message = "screams!"
+	else if(miming)
+		message = "acts out a scream."
+	else
+		message = "makes a very loud noise."
+	. = ..()
+
+/datum/emote/living/snap
+	key = "snap"
+	key_third_person = "snaps"
+	message = "snaps their fingers."
+	emote_type = EMOTE_AUDIBLE
+	muzzle_ignore = TRUE
+	restraint_check = TRUE
+
+/datum/emote/living/snap/run_emote(mob/living/user, params)
+	if(!(. = ..()))
+		return
+	if(user.nextsoundemote >= world.time)
+		return
+	user.nextsoundemote = world.time + 7
+	playsound(user, 'modular_citadel/sound/voice/snap.ogg', 50, 1, -1)
+
+/datum/emote/living/snap2
+	key = "snap2"
+	key_third_person = "snaps twice"
+	message = "snaps twice."
+	emote_type = EMOTE_AUDIBLE
+	muzzle_ignore = TRUE
+	restraint_check = TRUE
+
+/datum/emote/living/snap2/run_emote(mob/living/user, params)
+	if(!(. = ..()))
+		return
+	if(user.nextsoundemote >= world.time)
+		return
+	user.nextsoundemote = world.time + 7
+	playsound(user, 'modular_citadel/sound/voice/snap2.ogg', 50, 1, -1)
+
+/datum/emote/living/snap3
+	key = "snap3"
+	key_third_person = "snaps thrice"
+	message = "snaps thrice."
+	emote_type = EMOTE_AUDIBLE
+	muzzle_ignore = TRUE
+	restraint_check = TRUE
+
+/datum/emote/living/snap3/run_emote(mob/living/user, params)
+	if(!(. = ..()))
+		return
+	if(user.nextsoundemote >= world.time)
+		return
+	user.nextsoundemote = world.time + 7
+	playsound(user, 'modular_citadel/sound/voice/snap3.ogg', 50, 1, -1)
+
+/datum/emote/living/carbon/human/cry
+	key = "cry"
+	key_third_person = "cries"
+	message = "cries."
+	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/carbon/human/cry/run_emote(mob/user, params)
+	. = ..()
+	if(. && isipcperson(user))
+		do_fake_sparks(5,FALSE,user)
+
+/datum/emote/living/carbon/human/dap
+	key = "dap"
+	key_third_person = "daps"
+	message = "sadly can't find anybody to give daps to, and daps themself. Shameful."
+	message_param = "give daps to %t."
+	restraint_check = TRUE
+
+/datum/emote/living/carbon/human/eyebrow
+	key = "eyebrow"
+	message = "raises an eyebrow."
+
+/datum/emote/living/carbon/human/grumble
+	key = "grumble"
+	key_third_person = "grumbles"
+	message = "grumbles!"
+	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/carbon/human/handshake
+	key = "handshake"
+	message = "shakes their own hands."
+	message_param = "shakes hands with %t."
+	restraint_check = TRUE
+	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/carbon/human/hug
+	key = "hug"
+	key_third_person = "hugs"
+	message = "hugs themself."
+	message_param = "hugs %t."
+	restraint_check = TRUE
+	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/carbon/human/mawp
+	key = "mawp"
+	key_third_person = "mawps"
+	message = "mawps annoyingly."
+	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/carbon/human/mawp/run_emote(mob/living/user, params)
+	. = ..()
+	if(.)
+		if(ishuman(user))
+			if(prob(10))
+				user.adjustEarDamage(-5, -5)
+
+/datum/emote/living/carbon/human/mumble
+	key = "mumble"
+	key_third_person = "mumbles"
+	message = "mumbles!"
+	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/carbon/human/pale
+	key = "pale"
+	message = "goes pale for a second."
+
+/datum/emote/living/carbon/human/raise
+	key = "raise"
+	key_third_person = "raises"
+	message = "raises a hand."
+	restraint_check = TRUE
+
+/datum/emote/living/carbon/human/salute
+	key = "salute"
+	key_third_person = "salutes"
+	message = "salutes."
+	message_param = "salutes to %t."
+	restraint_check = TRUE
+
+/datum/emote/living/carbon/human/shrug
+	key = "shrug"
+	key_third_person = "shrugs"
+	message = "shrugs."
+
+/datum/emote/living/carbon/human/wag
+	key = "wag"
+	key_third_person = "wags"
+	message = "wags their tail."
+
+/datum/emote/living/carbon/human/wag/run_emote(mob/user, params)
+	. = ..()
+	if(!.)
+		return
+	var/mob/living/carbon/human/H = user
+	if(!istype(H) || !H.dna || !H.dna.species || !H.dna.species.can_wag_tail(H))
+		return
+	if(!H.dna.species.is_wagging_tail())
+		H.dna.species.start_wagging_tail(H)
+	else
+		H.dna.species.stop_wagging_tail(H)
+
+/datum/emote/living/carbon/human/wag/can_run_emote(mob/user, status_check = TRUE)
+	if(!..())
+		return FALSE
+	var/mob/living/carbon/human/H = user
+	return H.dna && H.dna.species && H.dna.species.can_wag_tail(user)
+
+/datum/emote/living/carbon/human/wag/select_message_type(mob/user)
+	. = ..()
+	var/mob/living/carbon/human/H = user
+	if(!H.dna || !H.dna.species)
+		return
+	if(H.dna.species.is_wagging_tail())
+		. = null
+
+/datum/emote/living/carbon/human/wing
+	key = "wing"
+	key_third_person = "wings"
+	message = "their wings."
+
+/datum/emote/living/carbon/human/wing/run_emote(mob/user, params)
+	. = ..()
+	if(.)
+		var/mob/living/carbon/human/H = user
+		if(findtext(select_message_type(user), "open"))
+			H.OpenWings()
 		else
-			var/fail_phrase = pick(GLOB.special_phrases[special_noun]["failure"])
-			if(prob(5)) // crit fail!
-				fail_phrase += " [pick(GLOB.special_phrases[EMOTE_SPECIAL_SUF]["failure"])]"
-			message_second = span_red("\[Failure\] <b>[user]</b> [fail_phrase]") // [Failure} User isn't very lucky...
+			H.CloseWings()
 
-		user.visible_message(
-			message = message_second,
-			self_message = message_second,
-			blind_message = message_second)
-		user.emote_for_ghost_sight(message_second)
+/datum/emote/living/carbon/human/wing/select_message_type(mob/user)
+	. = ..()
+	var/mob/living/carbon/human/H = user
+	if(H.dna.species.mutant_bodyparts["wings"])
+		. = "opens " + message
+	else
+		. = "closes " + message
+
+/datum/emote/living/carbon/human/wing/can_run_emote(mob/user, status_check = TRUE)
+	if(!..())
+		return FALSE
+	var/mob/living/carbon/human/H = user
+	if(H.dna && H.dna.species && (H.dna.features["wings"] != "None"))
+		return TRUE
+
+/mob/living/carbon/human/proc/OpenWings()
+	if(!dna || !dna.species)
+		return
+	if(dna.species.mutant_bodyparts["wings"])
+		dna.species.mutant_bodyparts["wingsopen"] = dna.species.mutant_bodyparts["wings"]
+		dna.species.mutant_bodyparts -= "wings"
+	update_body()
+
+/mob/living/carbon/human/proc/CloseWings()
+	if(!dna || !dna.species)
+		return
+	if(dna.species.mutant_bodyparts["wingsopen"])
+		dna.species.mutant_bodyparts["wings"] = dna.species.mutant_bodyparts["wingsopen"]
+		dna.species.mutant_bodyparts -= "wingsopen"
+	update_body()
+	if(isturf(loc))
+		var/turf/T = loc
+		T.Entered(src)
+
+/datum/emote/human
+	mob_type_allowed_typecache = list(/mob/living/carbon/human)
+	emote_type = EMOTE_AUDIBLE
+
+/* Fortuna edit: robot sound emotes disabled
+/datum/emote/human/buzz
+	key = "buzz"
+	key_third_person = "buzzes"
+	message = "buzzes."
+	message_param = "buzzes at %t."
+	sound = 'sound/machines/buzz-sigh.ogg'
+
+/datum/emote/human/buzz2
+	key = "buzz2"
+	message = "buzzes twice."
+	sound = 'sound/machines/buzz-two.ogg'
+
+/datum/emote/human/ping
+	key = "ping"
+	key_third_person = "pings"
+	message = "pings."
+	message_param = "pings at %t."
+	sound = 'sound/machines/ping.ogg'
+
+/datum/emote/human/chime
+	key = "chime"
+	key_third_person = "chimes"
+	message = "chimes."
+	sound = 'sound/machines/chime.ogg'
+*/
+
+//rock paper scissors emote handling
+/mob/living/carbon/human/proc/beginRockPaperScissors(chosen_move)
+	GLOB.rockpaperscissors_players[src] = list(chosen_move, ROCKPAPERSCISSORS_NOT_DECIDED)
+	do_after_advanced(src, ROCKPAPERSCISSORS_TIME_LIMIT, src, DO_AFTER_REQUIRES_USER_ON_TURF|DO_AFTER_NO_COEFFICIENT|DO_AFTER_NO_PROGRESSBAR|DO_AFTER_DISALLOW_MOVING_ABSOLUTE_USER, CALLBACK(src, .proc/rockpaperscissors_tick))
+	var/new_entry = GLOB.rockpaperscissors_players[src]
+	if(new_entry[2] == ROCKPAPERSCISSORS_NOT_DECIDED)
+		to_chat(src, "You put your hand back down.")
+	GLOB.rockpaperscissors_players -= src
+
+/mob/living/carbon/human/proc/rockpaperscissors_tick() //called every cycle of the progress bar for rock paper scissors while waiting for an opponent
+	var/mob/living/carbon/human/opponent
+	for(var/mob/living/carbon/human/potential_opponent in (GLOB.rockpaperscissors_players - src)) //dont play against yourself
+		if(get_dist(src, potential_opponent) <= ROCKPAPERSCISSORS_RANGE)
+			opponent = potential_opponent
+			break
+	if(opponent)
+		//we found an opponent before they found us
+		var/move_to_number = list("rock" = 0, "paper" = 1, "scissors" = 2)
+		var/our_move = move_to_number[GLOB.rockpaperscissors_players[src][1]]
+		var/their_move = move_to_number[GLOB.rockpaperscissors_players[opponent][1]]
+		var/result_us = ROCKPAPERSCISSORS_WIN
+		var/result_them = ROCKPAPERSCISSORS_LOSE
+		if(our_move == their_move)
+			result_us = ROCKPAPERSCISSORS_TIE
+			result_them = ROCKPAPERSCISSORS_TIE
+		else
+			if(((our_move + 1) % 3) == their_move)
+				result_us = ROCKPAPERSCISSORS_LOSE
+				result_them = ROCKPAPERSCISSORS_WIN
+		//we decided our results so set them in the list
+		GLOB.rockpaperscissors_players[src][2] = result_us
+		GLOB.rockpaperscissors_players[opponent][2] = result_them
+
+		//show what happened
+		src.visible_message("<b>[src]</b> makes [GLOB.rockpaperscissors_players[src][1]] with their hand!")
+		opponent.visible_message("<b>[opponent]</b> makes [GLOB.rockpaperscissors_players[opponent][1]] with their hands!")
+		switch(result_us)
+			if(ROCKPAPERSCISSORS_TIE)
+				src.visible_message("It was a tie!")
+			if(ROCKPAPERSCISSORS_WIN)
+				src.visible_message("<b>[src]</b> wins!")
+			if(ROCKPAPERSCISSORS_LOSE)
+				src.visible_message("<b>[opponent]</b> wins!")
+
+		//make the progress bar end so that each player can handle the result
+		return DO_AFTER_STOP
+
+	//no opponent was found, so keep searching
+	return DO_AFTER_PROCEED
+
+//the actual emotes
+/datum/emote/living/carbon/human/rockpaperscissors
+	message = "is attempting to play rock paper scissors!"
+
+/datum/emote/living/carbon/human/rockpaperscissors/rock
+	key = "rock"
+
+/datum/emote/living/carbon/human/rockpaperscissors/paper
+	key = "paper"
+
+/datum/emote/living/carbon/human/rockpaperscissors/scissors
+	key = "scissors"
+
+/datum/emote/living/carbon/human/rockpaperscissors/run_emote(mob/living/carbon/human/user, params)
+	if(!(user in GLOB.rockpaperscissors_players)) //no using the emote again while already playing!
+		. = ..()
+		user.beginRockPaperScissors(key)
