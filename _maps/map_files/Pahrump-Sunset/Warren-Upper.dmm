@@ -596,6 +596,12 @@
 	icon_state = "housebase3-broken"
 	},
 /area/f13/wasteland/warren)
+"fp" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "darkyellowfull"
+	},
+/area/f13/ncr)
 "fs" = (
 /obj/effect/mob_spawn/human/corpse/damaged,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
@@ -1246,6 +1252,21 @@
 	},
 /turf/open/floor/grass,
 /area/f13/wasteland/warren)
+"jR" = (
+/obj/structure/closet,
+/obj/item/clothing/under/f13/ncrcf{
+	name = "NCR Correctional Facility Uniform"
+	},
+/obj/item/clothing/under/f13/ncrcf{
+	name = "NCR Correctional Facility Uniform"
+	},
+/obj/item/clothing/suit/f13/ncr/ncrcfjacket,
+/obj/item/clothing/shoes/sneakers/black,
+/obj/item/clothing/shoes/sneakers/black,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/ncr)
 "jS" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood{
@@ -1667,6 +1688,12 @@
 /obj/machinery/smartfridge/bottlerack/seedbin/primitive,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"mA" = (
+/obj/structure/barricade/bars,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/ncr)
 "mI" = (
 /obj/structure/fence/end/wooden{
 	dir = 4
@@ -2559,6 +2586,12 @@
 /obj/effect/turf_decal/bot_white,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
+"tq" = (
+/obj/structure/simple_door/metal/barred,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/ncr)
 "tu" = (
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/planks,
@@ -2756,6 +2789,16 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"vm" = (
+/obj/structure/ladder/unbreakable{
+	id = "NCRMine";
+	name = "Ladder to the Mines"
+	},
+/obj/machinery/light/small,
+/turf/open/floor/f13{
+	icon_state = "darkyellowfull"
+	},
+/area/f13/ncr)
 "vn" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -3723,6 +3766,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
 /area/f13/building)
+"Ca" = (
+/obj/structure/table,
+/turf/open/floor/f13{
+	icon_state = "black";
+	dir = 4
+	},
+/area/f13/ncr)
 "Cd" = (
 /obj/effect/turf_decal/trimline/neutral/line{
 	dir = 9
@@ -4261,6 +4311,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow/side{
 	dir = 4
 	},
+/area/f13/ncr)
+"FE" = (
+/obj/effect/turf_decal/caution,
+/turf/open/floor/f13,
 /area/f13/ncr)
 "FF" = (
 /turf/open/floor/f13{
@@ -5577,6 +5631,15 @@
 	icon_state = "cafeteria"
 	},
 /area/f13/building)
+"OY" = (
+/obj/structure/table,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/ncr)
 "Pa" = (
 /obj/structure/chair/office/dark{
 	dir = 8
@@ -6158,6 +6221,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"Td" = (
+/obj/structure/table,
+/obj/item/pickaxe,
+/turf/open/floor/f13,
+/area/f13/ncr)
 "Tf" = (
 /obj/structure/chair/office/dark{
 	dir = 4
@@ -6217,6 +6285,25 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow/side{
 	dir = 8
 	},
+/area/f13/ncr)
+"TG" = (
+/obj/structure/closet/anchored,
+/obj/item/clothing/shoes/f13/brownie,
+/obj/item/clothing/shoes/f13/brownie,
+/obj/item/clothing/under/f13/ncrcf{
+	name = "NCR Correctional Facility Uniform"
+	},
+/obj/item/clothing/under/f13/ncrcf{
+	name = "NCR Correctional Facility Uniform"
+	},
+/obj/item/clothing/under/f13/ncrcf{
+	name = "NCR Correctional Facility Uniform"
+	},
+/obj/item/clothing/shoes/f13/brownie,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/f13,
 /area/f13/ncr)
 "TJ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -33301,9 +33388,9 @@ Ks
 Ks
 Ks
 Ks
-Ks
-Ks
-Ks
+my
+my
+my
 sC
 sC
 sC
@@ -34078,7 +34165,7 @@ Gd
 ki
 ki
 gM
-Ks
+my
 pj
 pj
 pj
@@ -34335,7 +34422,7 @@ Gd
 IT
 FO
 SA
-Ks
+my
 pj
 pj
 pj
@@ -35621,10 +35708,10 @@ ZS
 iO
 iO
 Ks
-pj
-pj
-pj
-eV
+my
+Ks
+Ks
+my
 eV
 eV
 eV
@@ -35878,10 +35965,10 @@ qc
 VM
 qc
 Ks
-eV
-eV
-eV
-eV
+Td
+OY
+Ca
+Ks
 eV
 eV
 eV
@@ -36124,7 +36211,7 @@ sC
 sC
 sC
 sC
-Ks
+my
 Ld
 FU
 nv
@@ -36133,12 +36220,12 @@ Nl
 xp
 iO
 iO
-pu
+iO
+mA
+iO
+Nx
+fp
 Ks
-eV
-eV
-eV
-eV
 eV
 eV
 BG
@@ -36381,7 +36468,7 @@ sC
 sC
 sC
 sC
-Ks
+my
 Ry
 ly
 nv
@@ -36390,12 +36477,12 @@ Nl
 VM
 iO
 iO
-pu
+iO
+tq
+FE
+Nx
+vm
 Ks
-eV
-eV
-eV
-eV
 eV
 eV
 eV
@@ -36645,14 +36732,14 @@ nv
 nv
 Nl
 xp
-iO
-NE
 pu
+TG
+pu
+mA
+iR
+Nx
+fp
 Ks
-eV
-eV
-eV
-eV
 pj
 pj
 pj
@@ -36906,10 +36993,10 @@ HV
 qc
 qc
 my
-pj
-pj
-pj
-pj
+jR
+NE
+zM
+my
 pj
 pj
 pj
@@ -37163,10 +37250,10 @@ Sg
 JS
 lY
 Ks
-pj
-pj
-pj
-pj
+Ks
+Ks
+my
+my
 pj
 pj
 pj

@@ -1394,6 +1394,30 @@
 	icon_state = "verticalinnermain1"
 	},
 /area/f13/wasteland/warren)
+"bgF" = (
+/obj/structure/decoration/warning{
+	name = "WARNING: NO MANS LAND AHEAD PVP ZONE";
+	pixel_x = 32
+	},
+/obj/structure/decoration/warning{
+	name = "WARNING: NO MANS LAND AHEAD PVP ZONE";
+	pixel_x = 32
+	},
+/obj/structure/decoration/warning{
+	name = "WARNING: NO MANS LAND AHEAD PVP ZONE";
+	pixel_x = 32
+	},
+/obj/structure/decoration/warning{
+	name = "WARNING: NO MANS LAND AHEAD PVP ZONE";
+	pixel_x = 32
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowdirtysolid"
+	},
+/area/f13/ncr)
 "bgV" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
@@ -3650,6 +3674,14 @@
 	icon_state = "outerborder"
 	},
 /area/f13/wasteland/ncr)
+"dgy" = (
+/obj/machinery/door/airlock/security/glass{
+	req_access_txt = "121"
+	},
+/turf/open/floor/f13{
+	icon_state = "darkyellowfull"
+	},
+/area/f13/ncr)
 "dgz" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/ground/outside/sidewalk,
@@ -7143,6 +7175,14 @@
 	icon_state = "horizontalbottomborderbottom0"
 	},
 /area/f13/wasteland/warren)
+"gjM" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowdirtysolid"
+	},
+/area/f13/ncr)
 "gjQ" = (
 /obj/structure/window/fulltile/house/broken,
 /turf/open/floor/f13{
@@ -7631,6 +7671,14 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"gFc" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/decoration/warning{
+	name = "WARNING: NO MANS LAND AHEAD PVP ZONE";
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/outside/savannah,
+/area/f13/wasteland/ncr)
 "gFf" = (
 /turf/open/indestructible/ground/outside/savannah/cornersnew{
 	dir = 4
@@ -7987,11 +8035,13 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/warren)
 "gYv" = (
-/obj/structure/wreck/trash/machinepile,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticalrightborderright0"
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
 	},
-/area/f13/wasteland/ncr)
+/turf/open/floor/f13{
+	icon_state = "yellowdirtysolid"
+	},
+/area/f13/ncr)
 "gYK" = (
 /obj/structure/reagent_dispensers/barrel/four,
 /turf/open/indestructible/ground/outside/savannah/edgesnew{
@@ -8851,6 +8901,18 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"hKk" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/arrows{
+	dir = 1;
+	pixel_y = -7
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowdirtysolid"
+	},
+/area/f13/ncr)
 "hKu" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/mechanical,
@@ -8987,6 +9049,16 @@
 	icon_state = "floordirty"
 	},
 /area/f13/building)
+"hQN" = (
+/obj/structure/ladder/unbreakable{
+	id = "NCRNoMans";
+	name = "Tunnel to No Man's Land";
+	pixel_x = 15
+	},
+/turf/open/floor/f13{
+	icon_state = "reddirtysolid"
+	},
+/area/f13/ncr)
 "hQO" = (
 /obj/structure/bookcase,
 /turf/open/floor/f13/wood,
@@ -18862,6 +18934,12 @@
 "qOa" = (
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/wasteland/ncr)
+"qOb" = (
+/obj/structure/wreck/trash/machinepiletwo,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalleftborderleft0"
+	},
+/area/f13/wasteland/ncr)
 "qOd" = (
 /turf/open/floor/plasteel/darkbrown,
 /area/f13/building)
@@ -21238,8 +21316,15 @@
 	},
 /area/f13/wasteland/warren)
 "sOd" = (
-/turf/closed/wall/r_wall/rust,
-/area/f13/caves)
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/wreck/trash/bus_door{
+	pixel_x = -7;
+	pixel_y = 12
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalrightborderleft1"
+	},
+/area/f13/wasteland/ncr)
 "sOp" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/mountain,
@@ -23912,6 +23997,18 @@
 	icon_state = "wide_dark-broken4"
 	},
 /area/f13/wasteland/warren)
+"uYi" = (
+/obj/structure/decoration/warning{
+	name = "WARNING: NO MANS LAND AHEAD PVP ZONE";
+	pixel_x = -32
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowdirtysolid"
+	},
+/area/f13/ncr)
 "uYo" = (
 /obj/item/chair/wood/modern,
 /turf/open/indestructible/ground/outside/graveldirt,
@@ -24708,6 +24805,13 @@
 	icon_state = "loadingarea"
 	},
 /area/f13/ncr)
+"vCQ" = (
+/obj/structure/decoration/warning{
+	name = "WARNING: NO MANS LAND AHEAD PVP ZONE";
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/outside/savannah,
+/area/f13/wasteland/ncr)
 "vCR" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/toolsbasic,
@@ -27348,18 +27452,11 @@
 	},
 /area/f13/wasteland/warren)
 "xOC" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 4
+/obj/machinery/light,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtysolid"
 	},
-/obj/structure/wreck/trash/bus_door{
-	pixel_x = -7;
-	pixel_y = 12
-	},
-/obj/structure/wreck/trash/machinepiletwo,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticalrightborderright0"
-	},
-/area/f13/wasteland/ncr)
+/area/f13/ncr)
 "xPB" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/oil/slippery,
@@ -49111,7 +49208,7 @@ aRt
 aRt
 fZl
 dva
-ovZ
+qOb
 ovZ
 ovZ
 jkR
@@ -50127,7 +50224,7 @@ ayR
 aOC
 pdo
 nwc
-rPq
+sOd
 rPq
 rPq
 ice
@@ -50383,8 +50480,8 @@ dlr
 vol
 vol
 vol
-gYv
-xOC
+cEs
+fCH
 fCH
 fCH
 skg
@@ -50637,11 +50734,11 @@ jLg
 jLg
 jLg
 qZx
-qZx
-sOd
-sOd
-sOd
-sOd
+jyh
+jyh
+jyh
+aRt
+aRt
 hui
 hui
 hui
@@ -50894,12 +50991,12 @@ jLg
 jLg
 jLg
 qZx
-qZx
-qZx
-pLS
-pLS
-pLS
-wBg
+aRt
+uYi
+gYv
+xOC
+aRt
+gFc
 cLw
 pmn
 cLw
@@ -51151,11 +51248,11 @@ jLg
 jLg
 jLg
 qZx
-qZx
-pLS
-pLS
-pLS
-pLS
+aRt
+hQN
+hKk
+uFH
+dgy
 cLw
 muq
 cLw
@@ -51408,14 +51505,14 @@ jLg
 jLg
 jLg
 qZx
-qZx
-pLS
-pLS
-pLS
-pLS
+aRt
+cKy
+hKk
+uFH
+dgy
 cLw
 cLw
-qMh
+cLw
 cwX
 bqR
 bEE
@@ -51665,12 +51762,12 @@ jLg
 jLg
 jLg
 qZx
-pLS
-pLS
-pLS
-pLS
-pLS
-cLw
+aRt
+bgF
+gjM
+xOC
+jyh
+vCQ
 cLw
 cLw
 fuF
@@ -51922,13 +52019,13 @@ jLg
 jLg
 jLg
 qZx
-pLS
-pLS
-pLS
-pLS
-pLS
+aRt
+aRt
+aRt
+aRt
+aRt
 cwX
-cLw
+qMh
 cLw
 bqR
 bEE
