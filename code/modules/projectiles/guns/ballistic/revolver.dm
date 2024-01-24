@@ -17,6 +17,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	var/select = 0
 	equipsound = 'sound/f13weapons/equipsounds/pistolequip.ogg'
+	gun_slide = 'sound/weapons/guns/slide_revolver.ogg'			//Yeah it's not a 'slide' but revolver uses the same code, quirkly.
 
 /obj/item/gun/ballistic/revolver/Initialize(mapload)
 	. = ..()

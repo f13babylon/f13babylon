@@ -178,7 +178,7 @@
 	scope_state = "scope_long"
 	scope_x_offset = 4
 	scope_y_offset = 12
-	pump_sound = 'sound/weapons/boltpump.ogg'
+	pump_sound = 'sound/weapons/guns/bolt_cycle.ogg'
 	fire_sound = 'sound/f13weapons/762rifle.ogg'
 
 /obj/item/gun/ballistic/rifle/hunting/attackby(obj/item/A, mob/user, params)
