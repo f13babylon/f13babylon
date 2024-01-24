@@ -591,6 +591,10 @@
 	icon_state = "fancy-broken2"
 	},
 /area/f13/building)
+"fl" = (
+/obj/machinery/telecomms/relay/preset/telecomms,
+/turf/open/indestructible,
+/area/f13/caves)
 "fm" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housebase3-broken"
@@ -1988,6 +1992,9 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superlow,
 /turf/open/floor/wood/wood_common,
 /area/f13/building)
+"ow" = (
+/turf/closed/indestructible/riveted,
+/area/f13/caves)
 "oy" = (
 /obj/structure/table,
 /obj/structure/sign/poster/contraband/buzzfuzz{
@@ -6874,6 +6881,9 @@
 	dir = 8
 	},
 /area/f13/ncr)
+"Xx" = (
+/turf/open/indestructible,
+/area/f13/caves)
 "Xy" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
@@ -44461,11 +44471,11 @@ pj
 pj
 pj
 pj
-pj
-pj
-pj
-pj
-pj
+ow
+ow
+ow
+ow
+ow
 pj
 pj
 HW
@@ -44718,11 +44728,11 @@ pj
 pj
 pj
 pj
-pj
-pj
-pj
-pj
-pj
+ow
+Xx
+Xx
+Xx
+ow
 pj
 pj
 HW
@@ -44975,11 +44985,11 @@ pj
 pj
 pj
 pj
-pj
-pj
-pj
-pj
-pj
+ow
+Xx
+fl
+Xx
+ow
 pj
 pj
 HW
@@ -45232,11 +45242,11 @@ pj
 pj
 pj
 pj
-pj
-pj
-pj
-pj
-pj
+ow
+Xx
+Xx
+Xx
+ow
 pj
 pj
 HW
@@ -45489,11 +45499,11 @@ pj
 pj
 pj
 pj
-pj
-pj
-pj
-pj
-pj
+ow
+ow
+ow
+ow
+ow
 pj
 pj
 HW
