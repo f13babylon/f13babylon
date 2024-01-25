@@ -1,26 +1,27 @@
 /*
-current emotes are:
+current emotes. * denotes sound.
 aflap, airguitar, alarm, alert,
-baa, bark, blink, blink_r, blorble, blurp, blush, bork, bow, bun, burp,
-cackle, chitter, choke, chuckle, circle, clap, clap1, clear, collapse, come, cougar, cough, coyawoo, cross, cry,
+baa*, bark*, blink*, blink_r, blorble*, blurp*, blush*, bork*, bow, bun*, burp*,
+cackle*, chitter*, choke*, chuckle*, circle, clap*, clap1*, clear*, collapse*, come*,
+cougar*, cough*, coyawoo*, cross, cry,
 dance, dap, deathgasp, drool,
 eyebrow,
-faint, fenbark, flap, flash, flip, foxbark, frown,
-gag, gasp, geck, giggle, glare, gnarl, grimace, grin, groan, growl, grumble,
-handshake, help, hiss, hug,
+faint*, fenbark*, flap, flash, flip, foxbark*, frown,
+gag, gasp*, geck*, giggle*, glare, gnarl, grimace, grin, groan, growl, grumble,
+handshake, help, hiss*, hug,
 insult,
 jump,
-kiss, kyaa,
-laugh, look, lynx,
-mawp, mbark, me, merp, moan, moo, mrowl, msqueak, mumble,
-nod, notice, nya,
-pale, panda, paper, peep, peep2, point, pout, purr, purrlong,
-raise, roar, rock, roll,
-salute, scissors, scowl, scratch, scream, screech, shake, shiver, shrug, sigh, sign, signal,
-sit, slap, smile, smirk, smug, snap, snap2, snap3, sneeze, sniff, snore, spin, squeak, stare,
-stretch, subtle, subtler, sulk, surrender, sway,
+kiss, kyaa*,
+laugh*, look, lynx*,
+mawp, mbark*, me, merp*, moan*, moo*, mrowl*, msqueak*, mumble,
+nod, notice, nya*,
+pale, panda*, paper, peep*, peep2*, point, pout, purr*, purrlong*,
+raise, roar*, rock, roll,
+salute, scissors, scowl, scratch, scream*, screech, shake, shiver, shrug, sigh*, sign, signal,
+sit, slap, smile, smirk, smug, snap*, snap2*, snap3*, sneeze*, sniff*, snore*, spin, squeak*, stare,
+stretch, subtle, subtler, sulk, surrender*, sway,
 tail, tremble, trumpet, twitch, twitch_s,
-wag, warcry, wave, weh, weh-s, weh2, weh3, whimper, whistle, wing, wink, wolfhowl, wolfwhistle, wsmile,
+wag, warcry, wave, weh*, weh-s*, weh2*, weh3*, whimper*, whistle, wing, wink, wolfhowl*, wolfwhistle*, wsmile,
 yap, yawn.
 */
 
@@ -64,20 +65,20 @@ yap, yawn.
 	key_third_person = "baas"
 	message = "baas."
 	emote_type = EMOTE_AUDIBLE
-	sound = list('sound/f13effects/sunsetsounds/baa.ogg',
-				'sound/f13effects/sunsetsounds/baa2.ogg')
+	sound = list('sound/f13effects/emotes/baa.ogg',
+				'sound/f13effects/emotes/baa2.ogg')
 
 /datum/emote/bark
 	key = "bark"
 	key_third_person = "barks"
 	message = "barks!"
-	sound = 'sound/f13effects/sunsetsounds/bark.ogg'
+	sound = 'sound/f13effects/emotes/bark.ogg'
 
 /datum/emote/living/carbon/blink
 	key = "blink"
 	key_third_person = "blinks"
 	message = "blinks."
-	sound = "sound/emotes/blink.ogg"
+	sound = "sound/f13effects/emotes/blink.ogg"
 
 /datum/emote/living/carbon/blink_r
 	key = "blink_r"
@@ -105,7 +106,7 @@ yap, yawn.
 	key = "blush"
 	key_third_person = "blushes"
 	message = "blushes."
-	sound = 'sound/f13effects/sunsetsounds/blush.ogg' //Sunset Edit - TK
+	sound = 'sound/f13effects/emotes/blush.ogg'
 
 /datum/emote/living/blush/run_emote(mob/user, params)
 	. = ..()
@@ -116,7 +117,7 @@ yap, yawn.
 	key = "bork"
 	key_third_person = "borks"
 	message = "borks!"
-	sound = 'sound/f13effects/sunsetsounds/bork.ogg'
+	sound = 'sound/f13effects/emotes/bork.ogg'
 
 /datum/emote/living/bow
 	key = "bow"
@@ -129,20 +130,20 @@ yap, yawn.
 	key = "bun"
 	key_third_person = "squeals like a rabbit"
 	message = "squeals like a rabbit!"
-	sound = 'sound/f13effects/sunsetsounds/rabbit.ogg'
+	sound = 'sound/f13effects/emotes/rabbit.ogg'
 
 /datum/emote/living/burp
 	key = "burp"
 	key_third_person = "burps"
 	message = "burps."
 	emote_type = EMOTE_AUDIBLE
-	sound = 'sound/f13effects/sunsetsounds/lilburp.ogg'
+	sound = 'sound/f13effects/emotes/lilburp.ogg'
 
 /datum/emote/cackle
 	key = "cackle"
 	key_third_person = "cackles worryingly"
 	message = "cackles worryingly."
-	sound = 'sound/f13effects/sunsetsounds/YeenCackle.ogg'
+	sound = 'sound/f13effects/emotes/YeenCackle.ogg'
 
 /datum/emote/living/audible/chitter
 	key = "chitter"
@@ -155,13 +156,20 @@ yap, yawn.
 	key_third_person = "chokes"
 	message = "chokes!"
 	emote_type = EMOTE_AUDIBLE
-	sound = 'sound/f13effects/sunsetsounds/choke.ogg'
+	sound = 'sound/f13effects/emotes/choke.ogg'
 
 /datum/emote/living/chuckle
 	key = "chuckle"
 	key_third_person = "chuckles"
 	message = "chuckles."
 	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/chuckle/get_sound(mob/living/M)
+	if(ishuman(M))
+		if(M.gender == FEMALE)
+			return 'sound/f13effects/emotes/femalechuckle.ogg'
+		else
+			return 'sound/f13effects/emotes/malechuckle.ogg'
 
 /datum/emote/living/circle
 	key = "circle"
@@ -184,10 +192,10 @@ yap, yawn.
 	muzzle_ignore = TRUE
 	restraint_check = TRUE
 	emote_type = EMOTE_AUDIBLE
-	sound = list('sound/misc/clap1.ogg',
-				'sound/misc/clap2.ogg',
-				'sound/misc/clap3.ogg',
-				'sound/misc/clap4.ogg')
+	sound = list('sound/f13effects/emotes/clap1.ogg',
+				'sound/f13effects/emotes/clap2.ogg',
+				'sound/f13effects/emotes/clap3.ogg',
+				'sound/f13effects/emotes/clap4.ogg')
 
 /datum/emote/living/carbon/clap/can_run_emote(mob/living/user, status_check, intentional)
 	. = ..()
@@ -203,8 +211,8 @@ yap, yawn.
 	muzzle_ignore = TRUE
 	restraint_check = TRUE
 	sound_volume = 30
-	sound = list('sound/emotes/claponce1.ogg',
-				'sound/emotes/claponce2.ogg')
+	sound = list('sound/f13effects/emotes/claponce1.ogg',
+				'sound/f13effects/emotes/claponce2.ogg')
 
 /datum/emote/living/carbon/clap1/can_run_emote(mob/living/user, status_check, intentional)
 	. = ..()
@@ -217,8 +225,8 @@ yap, yawn.
 	key_third_person = "clears their throat"
 	message = "clears their throat."
 	emote_type = EMOTE_AUDIBLE
-	sound = list('sound/emotes/male_clear_throat_1.ogg',
-				'sound/emotes/male_clear_throat_2.ogg')
+	sound = list('sound/f13effects/emotes/male_clear_throat_1.ogg',
+				'sound/f13effects/emotes/male_clear_throat_2.ogg')
 
 /datum/emote/living/collapse
 	key = "collapse"
@@ -236,13 +244,13 @@ yap, yawn.
 	key = "come"
 	key_third_person = "whistles to get someones attention"
 	message = "whistles to get someones attention!"
-	sound = 'sound/f13effects/sunsetsounds/whistle-overhere.ogg'
+	sound = 'sound/f13effects/emotes/whistle-overhere.ogg'
 
 /datum/emote/cougar
 	key = "cougar"
 	key_third_person = "growls like a cougar"
 	message = "growls like a cougar!"
-	sound = 'sound/f13effects/sunsetsounds/cougar.ogg'
+	sound = 'sound/f13effects/emotes/cougar.ogg'
 
 /datum/emote/living/cough
 	key = "cough"
@@ -255,16 +263,23 @@ yap, yawn.
 	if(HAS_TRAIT(user, TRAIT_SOOTHED_THROAT))
 		return FALSE
 
+/datum/emote/living/cough/get_sound(mob/living/M)
+	if(ishuman(M))
+		if(M.gender == FEMALE)
+			return 'sound/f13effects/emotes/female_cough.ogg'
+		else
+			return 'sound/f13effects/emotes/male_cough.ogg'
+
 /datum/emote/coyawoo
 	key = "coyawoo"
 	key_third_person = "howls like a coyote"
 	message = "howls like a coyote!"
 	emote_type = EMOTE_AUDIBLE
-	sound = list('sound/f13effects/sunsetsounds/coyoteawoo.ogg',
-				'sound/f13effects/sunsetsounds/coyoteawoo2.ogg',
-				'sound/f13effects/sunsetsounds/coyoteawoo3.ogg',
-				'sound/f13effects/sunsetsounds/coyoteawoo4.ogg',
-				'sound/f13effects/sunsetsounds/coyoteawoo5.ogg')
+	sound = list('sound/f13effects/emotes/coyoteawoo.ogg',
+				'sound/f13effects/emotes/coyoteawoo2.ogg',
+				'sound/f13effects/emotes/coyoteawoo3.ogg',
+				'sound/f13effects/emotes/coyoteawoo4.ogg',
+				'sound/f13effects/emotes/coyoteawoo5.ogg')
 
 /datum/emote/living/cross
 	key = "cross"
@@ -320,8 +335,6 @@ yap, yawn.
 			if(!L.can_speak_vocal() || L.oxyloss >= 50)
 				return //stop the sound if oxyloss too high/cant speak
 		playsound(user, user.deathsound, 200, TRUE, TRUE)
-	if(. && isalienadult(user))
-		playsound(user.loc, 'sound/voice/hiss6.ogg', 80, 1, 1)
 
 /datum/emote/living/drool
 	key = "drool"
@@ -347,7 +360,7 @@ yap, yawn.
 	key = "fenbark"
 	key_third_person = "makes a fennec-y bark"
 	message = "makes a fennec-y bark!"
-	sound = 'sound/f13effects/sunsetsounds/fenbark.ogg'
+	sound = 'sound/f13effects/emotes/fenbark.ogg'
 
 /datum/emote/flap
 	key = "flap"
@@ -361,6 +374,7 @@ yap, yawn.
 /datum/emote/flip
 	key = "flip"
 	key_third_person = "flips"
+	message = "does a flip!"
 	restraint_check = TRUE
 	mob_type_allowed_typecache = list(/mob/living, /mob/dead/observer)
 	mob_type_ignore_stat_typecache = list(/mob/dead/observer)
@@ -379,7 +393,7 @@ yap, yawn.
 	key = "foxbark"
 	key_third_person = "makes a foxy bark"
 	message = "makes a foxy bark!"
-	sound = 'sound/f13effects/sunsetsounds/foxbark.ogg'
+	sound = 'sound/f13effects/emotes/foxbark.ogg'
 
 /datum/emote/living/frown
 	key = "frown"
@@ -399,17 +413,31 @@ yap, yawn.
 	emote_type = EMOTE_AUDIBLE
 	stat_allowed = UNCONSCIOUS
 
+/datum/emote/living/gasp/get_sound(mob/living/M)
+	if(ishuman(M))
+		if(M.gender == FEMALE)
+			return 'sound/f13effects/emotes/female_gasp.ogg'
+		else
+			return 'sound/f13effects/emotes/male_gasp.ogg'
+
 /datum/emote/geckers
 	key = "geck"
 	key_third_person = "geckers loudly"
 	message = "geckers loudly."
-	sound = 'sound/f13effects/sunsetsounds/geck.ogg'
+	sound = 'sound/f13effects/emotes/geck.ogg'
 
 /datum/emote/living/giggle
 	key = "giggle"
 	key_third_person = "giggles"
 	message = "giggles."
 	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/giggle/get_sound(mob/living/M)
+	if(ishuman(M))
+		if(M.gender == FEMALE)
+			return 'sound/f13effects/emotes/femalegiggle1.ogg'
+		else
+			return 'sound/f13effects/emotes/malegiggle1.ogg'
 
 /datum/emote/living/glare
 	key = "glare"
@@ -442,7 +470,7 @@ yap, yawn.
 	key = "growl"
 	key_third_person = "growls viciously"
 	message = "growls viciously."
-	sound = 'sound/f13effects/sunsetsounds/growl.ogg'
+	sound = 'sound/f13effects/emotes/growl.ogg'
 
 /datum/emote/living/carbon/human/grumble
 	key = "grumble"
@@ -493,10 +521,10 @@ yap, yawn.
 	message = "hisses."
 	message_param = "hisses softly."
 	emote_type = EMOTE_AUDIBLE
-	sound = list('sound/voice/hiss1.ogg',
-				'sound/voice/hiss2.ogg',
-				'sound/voice/hiss3.ogg',
-				'sound/voice/hiss4.ogg')
+	sound = list('sound/f13effects/emotes/hiss1.ogg',
+				'sound/f13effects/emotes/hiss2.ogg',
+				'sound/f13effects/emotes/hiss3.ogg',
+				'sound/f13effects/emotes/hiss4.ogg')
 
 /datum/emote/living/carbon/human/hug
 	key = "hug"
@@ -543,7 +571,7 @@ yap, yawn.
 	key = "kyaa"
 	key_third_person = "kyaas"
 	message = "kyaas loudly!"
-	sound = 'sound/f13effects/sunsetsounds/birdkyaa.ogg'
+	sound = 'sound/f13effects/emotes/birdkyaa.ogg'
 
 /datum/emote/living/audible/laugh
 	key = "laugh"
@@ -569,7 +597,7 @@ yap, yawn.
 	key = "lynx"
 	key_third_person = "growls like a bobcat"
 	message = "growls like a bobcat!"
-	sound = 'sound/f13effects/sunsetsounds/lynx.ogg'
+	sound = 'sound/f13effects/emotes/lynx.ogg'
 
 /datum/emote/living/carbon/human/mawp
 	key = "mawp"
@@ -588,7 +616,7 @@ yap, yawn.
 	key = "mbark"
 	key_third_person = "barks miserably"
 	message = "barks miserably!"
-	sound = 'sound/f13effects/sunsetsounds/dog-miserable.ogg'
+	sound = 'sound/f13effects/emotes/dog-miserable.ogg'
 
 /datum/emote/living/custom
 	key = "me"
@@ -638,7 +666,7 @@ yap, yawn.
 	key = "merp"
 	key_third_person = "merps"
 	message = "let out a merp!"
-	sound = 'sound/f13effects/sunsetsounds/merp.ogg'
+	sound = 'sound/f13effects/emotes/merp.ogg'
 
 /datum/emote/living/carbon/moan
 	key = "moan"
@@ -647,23 +675,40 @@ yap, yawn.
 	emote_type = EMOTE_AUDIBLE
 	stat_allowed = SOFT_CRIT
 
+/datum/emote/living/carbon/moan/get_sound(mob/living/M) //need better, ie. more pleasured (because these are mostly when doing drugs) moans
+	if(ishuman(M))
+		if(M.gender == FEMALE)
+			. = list(
+				'sound/f13effects/emotes/female_moan1.ogg',
+				'sound/f13effects/emotes/female_moan2.ogg',
+				'sound/f13effects/emotes/female_moan3.ogg'
+			)
+		else
+			. = list(
+				'sound/f13effects/emotes/male_moan1.ogg',
+				'sound/f13effects/emotes/male_moan2.ogg',
+				'sound/f13effects/emotes/male_moan3.ogg'
+			)
+		return
+
+
 /datum/emote/moo
 	key = "moo"
 	key_third_person = "moos"
 	message = "moos."
-	sound = 'sound/f13effects/sunsetsounds/moo.ogg'
+	sound = 'sound/f13effects/emotes/moo.ogg'
 
 /datum/emote/mrowl
 	key = "mrowl"
 	key_third_person = "mrowls"
 	message = "mrowls."
-	sound = 'sound/f13effects/sunsetsounds/mrowl.ogg'
+	sound = 'sound/f13effects/emotes/mrowl.ogg'
 
 /datum/emote/msqueak
 	key = "msqueak"
 	key_third_person = "msqueaks"
 	message = "squeaks!"
-	sound = 'sound/f13effects/sunsetsounds/mothsqueak.ogg'
+	sound = 'sound/f13effects/emotes/mothsqueak.ogg'
 
 /datum/emote/living/carbon/human/mumble
 	key = "mumble"
@@ -686,7 +731,7 @@ yap, yawn.
 	key = "nya"
 	key_third_person = "nyas"
 	message = "nyas."
-	sound = 'sound/f13effects/sunsetsounds/nya.ogg'
+	sound = 'sound/f13effects/emotes/nya.ogg'
 
 /datum/emote/living/carbon/human/pale
 	key = "pale"
@@ -696,19 +741,19 @@ yap, yawn.
 	key = "panda"
 	key_third_person = "makes a panda like... noise"
 	message = "makes a panda like... noise?"
-	sound = 'sound/f13effects/sunsetsounds/panda.ogg'
+	sound = 'sound/f13effects/emotes/panda.ogg'
 
 /datum/emote/peep
 	key = "peep"
 	key_third_person = "peeps like a bird"
 	message = "peeps like a bird!"
-	sound = 'sound/f13effects/sunsetsounds/peeponce.ogg'
+	sound = 'sound/f13effects/emotes/peeponce.ogg'
 
 /datum/emote/peep2
 	key = "peep2"
 	key_third_person = "peeps twice like a bird"
 	message = "peeps twice like a bird!"
-	sound = 'sound/f13effects/sunsetsounds/peep.ogg'
+	sound = 'sound/f13effects/emotes/peep.ogg'
 
 /datum/emote/living/point
 	key = "point"
@@ -740,14 +785,14 @@ yap, yawn.
 	key = "purr"
 	key_third_person = "purrs contentedly"
 	message = "purrs contentedly."
-	sound = 'sound/f13effects/sunsetsounds/cat_purr.ogg'
+	sound = 'sound/f13effects/emotes/cat_purr.ogg'
 
 
 /datum/emote/purrlong
 	key = "purrlong"
 	key_third_person = "purrs contentedly"
 	message = "purrs contentedly."
-	sound = 'sound/f13effects/sunsetsounds/cat_purr_long.ogg'
+	sound = 'sound/f13effects/emotes/cat_purr_long.ogg'
 
 /datum/emote/living/carbon/human/raise
 	key = "raise"
@@ -761,7 +806,7 @@ yap, yawn.
 	message = "roars."
 	message_param = "softly roars."
 	emote_type = EMOTE_AUDIBLE
-	sound = 'sound/voice/hiss5.ogg'
+	sound = 'sound/f13effects/emotes/hiss5.ogg'
 
 /datum/emote/living/carbon/roll
 	key = "roll"
@@ -831,8 +876,6 @@ yap, yawn.
 				sound = 'modular_citadel/sound/voice/scream_skeleton.ogg'
 			if (is_species(user, /datum/species/fly) || is_species(user, /datum/species/insect))
 				sound = 'modular_citadel/sound/voice/scream_moth.ogg'
-		if(isalien(user))
-			sound = 'sound/voice/hiss6.ogg'
 		LAZYINITLIST(user.alternate_screams)
 		if(LAZYLEN(user.alternate_screams))
 			sound = pick(user.alternate_screams)
@@ -871,6 +914,13 @@ yap, yawn.
 	key_third_person = "sighs"
 	message = "sighs."
 	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/sigh/get_sound(mob/living/M)
+	if(ishuman(M))
+		if(M.gender == FEMALE)
+			return 'sound/f13effects/emotes/femalesigh1.ogg'
+		else
+			return 'sound/f13effects/emotes/malesigh1.ogg'
 
 /datum/emote/living/carbon/sign
 	key = "sign"
@@ -938,7 +988,7 @@ yap, yawn.
 	if(user.nextsoundemote >= world.time)
 		return
 	user.nextsoundemote = world.time + 7
-	playsound(user, 'modular_citadel/sound/voice/snap.ogg', 50, 1, -1)
+	playsound(user, 'sound/f13effects/emotes/snap.ogg', 50, 1, -1)
 
 /datum/emote/living/snap2
 	key = "snap2"
@@ -954,7 +1004,7 @@ yap, yawn.
 	if(user.nextsoundemote >= world.time)
 		return
 	user.nextsoundemote = world.time + 7
-	playsound(user, 'modular_citadel/sound/voice/snap2.ogg', 50, 1, -1)
+	playsound(user, 'sound/f13effects/emotes/snap2.ogg', 50, 1, -1)
 
 /datum/emote/living/snap3
 	key = "snap3"
@@ -970,13 +1020,20 @@ yap, yawn.
 	if(user.nextsoundemote >= world.time)
 		return
 	user.nextsoundemote = world.time + 7
-	playsound(user, 'modular_citadel/sound/voice/snap3.ogg', 50, 1, -1)
+	playsound(user, 'sound/f13effects/emotes/snap3.ogg', 50, 1, -1)
 
 /datum/emote/living/sneeze
 	key = "sneeze"
 	key_third_person = "sneezes"
 	message = "sneezes."
 	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/sneeze/get_sound(mob/living/M)
+	if(ishuman(M))
+		if(M.gender == FEMALE)
+			return 'sound/f13effects/emotes/female_sneeze.ogg'
+		else
+			return 'sound/f13effects/emotes/male_sneeze.ogg'
 
 /datum/emote/living/sniff
 	key = "sniff"
@@ -985,12 +1042,12 @@ yap, yawn.
 	emote_type = EMOTE_AUDIBLE
 	sound_volume = 30
 
-/datum/emote/living/sniff/get_sound(mob/living/user)
-	if(iscarbon(user))
-		if(user.gender == MALE)
-			return 'sound/emotes/male_sniff.ogg'
-		return 'sound/emotes/female_sniff.ogg'
-	return
+/datum/emote/living/sniff/get_sound(mob/living/M)
+	if(ishuman(M))
+		if(M.gender == FEMALE)
+			return 'sound/f13effects/emotes/female_sniff.ogg'
+		else
+			return 'sound/f13effects/emotes/male_sniff.ogg'
 
 /datum/emote/living/snore
 	key = "snore"
@@ -998,12 +1055,18 @@ yap, yawn.
 	message = "snores."
 	emote_type = EMOTE_AUDIBLE
 	stat_allowed = UNCONSCIOUS
-	sound_volume = 30
-	sound = 'sound/emotes/snore.ogg'
+
+/datum/emote/living/snore/get_sound(mob/living/M)
+	if(ishuman(M))
+		if(M.gender == FEMALE)
+			return 'sound/f13effects/emotes/femalesnore1.ogg'
+		else
+			return 'sound/f13effects/emotes/malesnore1.ogg'
 
 /datum/emote/spin
 	key = "spin"
 	key_third_person = "spins"
+	message = "does a spin!"
 	restraint_check = TRUE
 	mob_type_allowed_typecache = list(/mob/living, /mob/dead/observer)
 	mob_type_ignore_stat_typecache = list(/mob/dead/observer)
@@ -1026,7 +1089,7 @@ yap, yawn.
 	key = "squeak"
 	key_third_person = "squeaks"
 	message = "let out a tiny squeak!"
-	sound = 'sound/effects/mousesqueek.ogg'
+	sound = 'sound/f13effects/emotes/mousesqueek.ogg'
 
 /datum/emote/living/stare
 	key = "stare"
@@ -1083,7 +1146,7 @@ yap, yawn.
 	key = "trumpet"
 	key_third_person = "trumpets"
 	message = "trumpets!"
-	sound = 'sound/f13effects/sunsetsounds/trumpet.ogg'
+	sound = 'sound/f13effects/emotes/trumpet.ogg'
 
 /datum/emote/living/twitch
 	key = "twitch"
@@ -1139,28 +1202,35 @@ yap, yawn.
 	key = "weh"
 	key_third_person = "wehs"
 	message = "let out a weh!"
-	sound = 'sound/f13effects/sunsetsounds/weh.ogg'
+	sound = 'sound/f13effects/emotes/weh.ogg'
 
 /datum/emote/weh/alt1
 	key = "weh2"
 	key_third_person = "wehs2"
-	sound = 'sound/f13effects/sunsetsounds/weh2.ogg'
+	sound = 'sound/f13effects/emotes/weh2.ogg'
 
 /datum/emote/weh/alt2
 	key = "weh3"
 	key_third_person = "wehs3"
-	sound = 'sound/f13effects/sunsetsounds/weh3.ogg'
+	sound = 'sound/f13effects/emotes/weh3.ogg'
 
 /datum/emote/weh/surprised
 	key = "weh-s"
 	key_third_person = "wehs-s"
 	message = "let out a surprised weh!"
-	sound = 'sound/f13effects/sunsetsounds/weh_s.ogg'
+	sound = 'sound/f13effects/emotes/weh_s.ogg'
 
 /datum/emote/living/whimper
 	key = "whimper"
 	key_third_person = "whimpers"
 	message = "whimpers."
+
+/datum/emote/living/whimper/get_sound(mob/living/M)
+	if(ishuman(M))
+		if(M.gender == FEMALE)
+			return 'sound/f13effects/emotes/femalewhimper1.ogg'
+		else
+			return 'sound/f13effects/emotes/malewhimper1.ogg'
 
 /datum/emote/brain/whistle
 	key = "whistle"
@@ -1225,13 +1295,13 @@ yap, yawn.
 	key = "wolfhowl"
 	key_third_person = "howls like a wolf"
 	message = "howls like a wolf!"
-	sound = 'sound/f13effects/sunsetsounds/wolfhowl.ogg'
+	sound = 'sound/f13effects/emotes/wolfhowl.ogg'
 
 /datum/emote/wolfwhistle //Yeah baby that's what I like!
 	key = "wolfwhistle"
 	key_third_person = "wolf whistles"
 	message = "wolf whistles!"
-	sound = 'sound/f13effects/sunsetsounds/wolfwhistle.ogg'
+	sound = 'sound/f13effects/emotes/wolfwhistle.ogg'
 
 /datum/emote/living/wsmile
 	key = "wsmile"
@@ -1242,12 +1312,12 @@ yap, yawn.
 	key = "yap"
 	key_third_person = "yaps"
 	message = "yaps!"
-	sound = 'sound/f13effects/sunsetsounds/yap.ogg'
+	sound = 'sound/f13effects/emotes/yap.ogg'
 
 /datum/emote/living/yawn
 	key = "yawn"
 	key_third_person = "yawns"
 	message = "yawns."
 	emote_type = EMOTE_AUDIBLE
-	sound = list("sound/emotes/yawn_m1.ogg",
-				"sound/emotes/yawn_m2.ogg")
+	sound = list("sound/f13effects/emotes/yawn_m1.ogg",
+				"sound/f13effects/emotes/yawn_m2.ogg")
