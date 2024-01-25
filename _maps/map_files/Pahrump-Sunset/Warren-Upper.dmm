@@ -1149,7 +1149,9 @@
 /turf/open/floor/grass,
 /area/f13/wasteland/warren)
 "je" = (
-/obj/structure/simple_door/room,
+/obj/structure/simple_door/room{
+	name = "Bedroom"
+	},
 /turf/open/floor/wood/wood_fancy,
 /area/f13/ncr)
 "jj" = (
@@ -5391,7 +5393,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "Nj" = (
-/obj/structure/simple_door/room,
+/obj/structure/simple_door/room{
+	name = "QM's Office"
+	},
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "Nk" = (

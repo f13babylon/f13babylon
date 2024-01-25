@@ -6430,7 +6430,6 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/raiders)
 "cUe" = (
-/obj/machinery/light/small,
 /obj/item/reagent_containers/pill/patch/bitterdrink{
 	pixel_x = 6;
 	pixel_y = 6
@@ -7428,15 +7427,6 @@
 "eii" = (
 /turf/closed/wall/r_wall/f13/vault,
 /area/f13/brotherhood/chemistry)
-"eil" = (
-/obj/effect/overlay/junk/oldpipes,
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/raider/baseball{
-	name = "Bouncer";
-	faction = list("Wastelander")
-	},
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/raiders)
 "eiq" = (
 /obj/effect/decal/cleanable/blood/gibs/down{
 	icon_state = "gib2-old"
@@ -16405,16 +16395,6 @@
 "qvL" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/building/museum)
-"qvO" = (
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 8
-	},
-/mob/living/simple_animal/hostile/raider/baseball{
-	name = "Bouncer";
-	faction = list("Wastelander")
-	},
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/raiders)
 "qwk" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
@@ -21037,13 +21017,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/tunnel)
-"wKg" = (
-/mob/living/simple_animal/hostile/raider/baseball{
-	name = "Bouncer";
-	faction = list("Wastelander")
-	},
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/raiders)
 "wKt" = (
 /turf/open/floor/plating/tunnel,
 /area/f13/caves)
@@ -69892,7 +69865,7 @@ qeo
 qeo
 qeo
 qeo
-eil
+wHA
 wHA
 oSA
 oSA
@@ -72709,7 +72682,7 @@ sgH
 sgH
 cxV
 wXw
-qvO
+lGn
 egm
 qeo
 qeo
@@ -73238,7 +73211,7 @@ eaL
 wXw
 wXw
 hUb
-wKg
+wXw
 mMx
 wXw
 ifZ

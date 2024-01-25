@@ -13586,7 +13586,8 @@
 /area/f13/wasteland/ncr)
 "lVx" = (
 /obj/machinery/door/unpowered/securedoor{
-	req_one_access_txt = "121"
+	req_one_access_txt = "121";
+	name = "Cleaning Supplies"
 	},
 /turf/open/floor/f13,
 /area/f13/ncr)
@@ -15361,6 +15362,14 @@
 	icon_state = "horizontalinnermain0"
 	},
 /area/f13/building)
+"nxl" = (
+/obj/structure/barricade/wooden,
+/obj/structure/decoration/rag{
+	icon_state = "skin"
+	},
+/obj/structure/decoration/rag,
+/turf/closed/mineral/random/low_chance,
+/area/f13/caves)
 "nxq" = (
 /obj/structure/window/reinforced{
 	dir = 4;
@@ -19471,7 +19480,7 @@
 "rje" = (
 /obj/item/flag/ncr,
 /turf/closed/wall/r_wall,
-/area/f13/wasteland/warren)
+/area/f13/ncr)
 "rjo" = (
 /turf/open/indestructible/ground/outside/gravel,
 /area/f13/building)
@@ -22127,12 +22136,14 @@
 /area/f13/wasteland/warren)
 "tyx" = (
 /obj/structure/simple_door/room{
-	name = "Unknown"
+	name = "Ranger Barracks"
 	},
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "tyI" = (
-/obj/structure/simple_door/metal,
+/obj/structure/simple_door/metal{
+	name = "Logistics Center"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -22950,7 +22961,7 @@
 	},
 /area/f13/wasteland/warren)
 "ubZ" = (
-/obj/machinery/door/poddoor/gate/preopen{
+/obj/machinery/door/poddoor/gate{
 	id = "ncrgate";
 	name = "outpost gate"
 	},
@@ -23408,7 +23419,9 @@
 	},
 /area/f13/wasteland/warren)
 "uvU" = (
-/obj/machinery/door/airlock/medical,
+/obj/machinery/door/airlock/medical{
+	name = "Medbay"
+	},
 /turf/open/floor/f13{
 	icon_state = "blue"
 	},
@@ -44353,14 +44366,14 @@ qZx
 qZx
 qZx
 qZx
-pLS
-pLS
-pLS
-pLS
-pLS
-pLS
 qZx
 qZx
+qZx
+qZx
+qZx
+qZx
+qZx
+pLS
 pLS
 pLS
 pLS
@@ -44615,13 +44628,13 @@ pLS
 pLS
 pLS
 qZx
-qZx
-qZx
-qZx
-qZx
 pLS
 pLS
 pLS
+pLS
+pLS
+pLS
+nxl
 krz
 dgH
 dgH
@@ -44871,11 +44884,11 @@ pLS
 pLS
 pLS
 pLS
-qZx
-qZx
-qZx
-qZx
-qZx
+pLS
+pLS
+pLS
+pLS
+pLS
 qZx
 qZx
 qZx
@@ -45129,8 +45142,8 @@ pLS
 pLS
 pLS
 pLS
-qZx
-qZx
+pLS
+pLS
 qZx
 qZx
 qZx
