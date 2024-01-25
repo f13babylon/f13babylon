@@ -348,9 +348,9 @@
 			if (departing_mob.mind)
 				var/datum/job/job = SSjob.GetJob(departing_mob.mind.assigned_role)
 				if (istype(job) && job.faction == FACTION_ENCLAVE)
-					to_chat(world, span_nicegreen("You hear through the grapevine that an Enclave member has left the county."))
+					to_chat(world, span_nicegreen("You hear through the grapevine that an Enclave member has ceased operating in the region."))
 				else
-					to_chat(world, span_nicegreen("You hear through the grapevine that [departing_mob.name] has left the county."))
+					to_chat(world, span_nicegreen("You hear through the grapevine that [departing_mob.name] has left the region."))
 		departing_mob.is_in_game = 0
 
 	departing_mob.despawn()
