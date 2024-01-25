@@ -3256,6 +3256,15 @@
 
 		usr.client.holder.toggle_sleep(perp)
 
+	else if(href_list["CommsMsgReply"])
+		if(!check_rights(R_ADMIN))
+			message_admins("[ADMIN_TPMONTY(usr)] tried to use /datum/admins/proc/CheckAdminHref(): CommsMsgReply without admin perms.")
+			log_admin("INVALID ADMIN PROC ACCESS: [key_name(usr)] tried to use /datum/admins/proc/CheckAdminHref(): CommsMsgReply without admin perms.")
+			return
+
+		var/obj/machinery/msgterminal/target_terminal = locate(href_list["CommsMsgReply"])
+		if (target_terminal)
+			usr.client.cmd_admin_faction_message(target_terminal.terminal)
 
 /datum/admins/proc/HandleCMode()
 	if(!check_rights(R_ADMIN))
