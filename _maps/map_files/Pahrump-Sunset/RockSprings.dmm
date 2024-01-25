@@ -11412,7 +11412,7 @@
 	},
 /area/f13/building)
 "lwU" = (
-/obj/structure/simple_door/bunker/glass,
+/obj/structure/simple_door/bunker,
 /turf/open/floor/plasteel/barber{
 	icon_state = "plating"
 	},
@@ -11993,7 +11993,7 @@
 	},
 /area/f13/caves)
 "mdG" = (
-/obj/structure/simple_door/bunker/glass,
+/obj/structure/simple_door/bunker,
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/building)
 "meE" = (
