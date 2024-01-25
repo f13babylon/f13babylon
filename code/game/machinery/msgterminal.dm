@@ -478,13 +478,13 @@ GLOBAL_LIST_EMPTY(allTerminals)
 	terminal = "Legion Terminal"
 	terminalType = 2
 
-/obj/machinery/msgterminal/bighorn
-	name = "\improper Bighorn communications center"
-	terminalid = "bighorn"
-	terminal = "Bighorn Terminal"
+/obj/machinery/msgterminal/newbabylon
+	name = "\improper New Babylon communications center"
+	terminalid = "newbabylon"
+	terminal = "New Babylon Terminal"
 	terminalType = 2
 
-/obj/machinery/msgterminal/bighorn/followers
+/obj/machinery/msgterminal/newbabylon/followers
 	name = "\improper Followers communications center"
 	terminalid = "follower"
 	terminal = "Followers Terminal"

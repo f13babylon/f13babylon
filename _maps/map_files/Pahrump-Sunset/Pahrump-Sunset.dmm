@@ -45459,7 +45459,7 @@
 	},
 /area/f13/wasteland/east)
 "lEV" = (
-/obj/machinery/msgterminal/bighorn/followers,
+/obj/machinery/msgterminal/newbabylon/followers,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
