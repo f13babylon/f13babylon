@@ -45,10 +45,7 @@
 	/datum/outfit/loadout/warrior,
 	/datum/outfit/loadout/ncrcitizen,
 	/datum/outfit/loadout/legioncivilian,
-	/datum/outfit/loadout/wastelander_desert_ranger,
-	/datum/outfit/loadout/bos_exile,
-	/datum/outfit/loadout/ncr_exile,
-	/datum/outfit/loadout/legion_exile)
+	/datum/outfit/loadout/wastelander_desert_ranger)
 
 /datum/outfit/job/wasteland/f13wastelander
 	name = "Wastelander"
@@ -200,7 +197,7 @@
 		/obj/item/ammo_box/magazine/m556mm=2)
 
 /datum/outfit/loadout/wastelander_desert_ranger
-	name = "Desert Ranger Scout"
+	name = "Desert Cowboy"
 	uniform = /obj/item/clothing/under/f13/desert_ranger_scout
 	shoes = /obj/item/clothing/shoes/f13/cowboy
 	head = /obj/item/clothing/head/f13/cowboy
@@ -210,32 +207,3 @@
 		/obj/item/ammo_box/a357=2,
 		/obj/item/binoculars=1,
 		/obj/item/radio=1)
-
-/datum/outfit/loadout/bos_exile
-	name = "Brotherhood Exile"
-	suit = /obj/item/clothing/suit/armor/f13/exile/bosexile
-	id = /obj/item/card/id/rusted/brokenholodog
-	backpack_contents = list(
-		/obj/item/gun/energy/laser/pistol=1,
-		/obj/item/stock_parts/cell/ammo/ec = 2,
-		)
-
-/datum/outfit/loadout/ncr_exile
-	name = "Transient NCR Deserter"
-	suit = /obj/item/clothing/suit/armor/f13/exile/ncrexile
-	uniform = /obj/item/clothing/under/f13/exile
-	id = /obj/item/card/id/rusted
-	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
-		/obj/item/ammo_box/magazine/m9mmds = 2,
-		/obj/item/storage/box/ration/ranger_breakfast = 1)
-
-/datum/outfit/loadout/legion_exile
-	name = "Transient Disgraced Legionnaire"
-	suit = /obj/item/clothing/suit/armor/f13/exile/legexile
-	uniform = /obj/item/clothing/under/f13/exile/legion
-	id = /obj/item/card/id/rusted/rustedmedallion
-	backpack_contents = list(
-		/obj/item/melee/onehanded/machete = 1,
-		/obj/item/storage/backpack/spearquiver = 1
-		)

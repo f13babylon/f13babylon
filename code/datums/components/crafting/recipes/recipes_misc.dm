@@ -724,3 +724,12 @@
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
 */
+
+/datum/crafting_recipe/cardboard
+	name = "Hand-pulped Cardboard"
+	time = 30
+	reqs = list(/datum/reagent/water = 100, /obj/item/stack/sheet/mineral/wood = 50, /obj/item/paper = 50)
+	tools = list(/obj/item/hatchet)
+	result = /obj/item/stack/sheet/cardboard/fifty
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_MISC
