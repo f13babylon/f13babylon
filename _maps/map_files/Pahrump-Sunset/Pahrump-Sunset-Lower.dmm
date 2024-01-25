@@ -5953,7 +5953,9 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "cvN" = (
-/obj/structure/simple_door/metal,
+/obj/structure/simple_door/metal{
+	req_access_txt = "141"
+	},
 /turf/open/floor/f13{
 	color = "#d9c4b9";
 	icon_state = "darkrusty";
@@ -10071,7 +10073,9 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "hPj" = (
-/obj/structure/simple_door/metal,
+/obj/structure/simple_door/metal{
+	req_access_txt = "141"
+	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/raiders)
 "hPx" = (
@@ -17031,7 +17035,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/raiders)
 "rsm" = (
-/obj/structure/simple_door/metal,
+/obj/structure/simple_door/metal{
+	req_access_txt = "141"
+	},
 /turf/open/floor/f13{
 	icon_state = "dark"
 	},
@@ -18328,6 +18334,12 @@
 	},
 /turf/open/floor/engine,
 /area/f13/brotherhood/reactor)
+"thI" = (
+/obj/structure/simple_door/metal{
+	req_access_txt = "141"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/raiders)
 "tit" = (
 /obj/structure/handrail/g_central{
 	dir = 8;
@@ -67816,7 +67828,7 @@ uoo
 eUF
 pdB
 eaL
-dLF
+thI
 gqT
 aUm
 eVw
@@ -68329,7 +68341,7 @@ wXw
 mbb
 qeo
 qeo
-dLF
+thI
 qeo
 qeo
 qeo
