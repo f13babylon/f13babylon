@@ -151,12 +151,11 @@
 
 //Maria									Keywords: UNIQUE, 9mm, Semi-auto, 10 round magazine. Special modifiers: fire delay -1, damage +10, penetration +0.2
 /obj/item/gun/ballistic/automatic/pistol/ninemil/maria
-	name = "Maria"
+	name = "María"
 	desc = "An ornately-decorated pre-war Browning Hi-power 9mm pistol with a pearl grip that displays a rendition of the Virgin Mary. Prone to give someone an eighteen-karat run of bad luck."
 	icon_state = "maria"
-	fire_delay = 2
 	extra_damage = 10
-	extra_penetration = 0.15
+	extra_penetration = 0.3
 
 
 //Sig Sauer P220						Keywords: 9mm, Semi-auto, 10 round magazine

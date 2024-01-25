@@ -98,7 +98,6 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 	else
 		GLOB.looc_allowed = !GLOB.looc_allowed
 
-
 /proc/toggle_dooc(toggle = null)
 	if(toggle != null)
 		if(toggle != GLOB.dooc_allowed)
@@ -107,6 +106,16 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 			return
 	else
 		GLOB.dooc_allowed = !GLOB.dooc_allowed
+
+/proc/toggle_deadchat(toggle = null)
+	if(toggle != null) //if we're specifically en/disabling dchat
+		if(toggle != GLOB.dsay_allowed)
+			GLOB.dsay_allowed = toggle
+		else
+			return
+	else //otherwise just toggle it
+		GLOB.dsay_allowed = !GLOB.dsay_allowed
+	to_chat(world, "<B>Dead-chat has been globally [GLOB.dsay_allowed ? "enabled" : "disabled"].</B>")
 
 /client/proc/set_ooc(newColor as color)
 	set name = "Set Player OOC Color"

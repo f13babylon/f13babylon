@@ -380,6 +380,14 @@
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
 
+/obj/item/clothing/under/f13/legion/oratorgarb
+	name = "legion orator finery"
+	desc = "A slightly skimpy, highly decorative, piece of clothing worn by the orators. It's design doesn't leave a lot for the imagination, but it does have real silver embroidery, so that's a plus."
+	icon_state = "oratorgarb"
+	item_state = "oratorgarb"
+	fitted = FEMALE_UNIFORM_TOP
+	can_adjust = FALSE
+
 /obj/item/clothing/under/f13/campfollowerfemale
 	name = "camp follower female robe"
 	desc = "Olive colored cloth with a red sash."
@@ -390,7 +398,7 @@
 
 /obj/item/clothing/under/f13/legskirt
 	name = "legionary fatigues"
-	desc = "A black learthery skirt and a thick long sleeve cotton shirt."
+	desc = "A black leathery skirt and a thick long sleeve cotton shirt."
 	icon_state = "legskirt"
 	item_state = "legskirt"
 	item_color = "legskirt"
@@ -1534,6 +1542,33 @@
 	icon_state = "spaceship_captain"
 	item_color = "spaceship_captain"
 
+/obj/item/clothing/under/f13/goner
+	name = "dev-collared utility uniform"
+	desc = "A non-existent utilitarian uniform."
+	icon_state = "goner_uniform"
+	mutantrace_variation = STYLE_DIGITIGRADE
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 20, "acid" = 50)
+
+/obj/item/clothing/under/f13/goner/red
+	name = "red-collared utility uniform"
+	desc = "An utilitarian uniform with red collar-patch and shoulder-tabs."
+	icon_state = "goner_uniform_r"
+
+/obj/item/clothing/under/f13/goner/green
+	name = "green-collared utility uniform"
+	desc = "An utilitarian uniform with green collar-patch and shoulder-tabs."
+	icon_state = "goner_uniform_g"
+
+/obj/item/clothing/under/f13/goner/blue
+	name = "blue-collared utility uniform"
+	desc = "An utilitarian uniform with blue collar-patch and shoulder-tabs."
+	icon_state = "goner_uniform_b"
+
+/obj/item/clothing/under/f13/goner/yellow
+	name = "yellow-collared utility uniform"
+	desc = "An utilitarian uniform with yellow collar-patch and shoulder-tabs."
+	icon_state = "goner_uniform_y"
+
 //Female clothing! It's not misogyny, yet dresses shall be separate from /f13/ as Fallout build has its own female subtype.
 
 /obj/item/clothing/under/pants/f13/ghoul
@@ -1741,6 +1776,16 @@
 	desc = "This white satin shirt used to be fancy. It used to really catch the light. Now it smells like someone took a piss in the armpits while the golden brown trousers are flare-cut. Normal bell-bottom trousers would be boot-cut, but these are far from normal. They are someone's piss-soaked, cum-stained party pants."
 	icon_state = "jamrock_uniform"
 	item_state = "jamrock_uniform"
+
+/obj/item/clothing/under/f13/cowpoke
+	name = "cowpoke outfit"
+	desc = "A washed out gray overshirt with blue neckerchief and old jeans."
+	icon_state = "cowpoke"
+	item_state = "cowpoke"
+	can_adjust = TRUE
+	unique_reskin = list("M1" = "cowpoket",
+						"M2" = "cowpokeb",
+						"M3" = "cowpoke")
 
 /obj/item/clothing/under/f13/keksweater
 	name = "Red Sweater"

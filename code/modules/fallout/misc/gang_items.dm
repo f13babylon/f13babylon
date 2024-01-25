@@ -404,9 +404,9 @@
 /obj/item/storage/box/bundleboss/PopulateContents()
 	new /obj/item/reagent_containers/hypospray/medipen/medx(src)
 	new /obj/item/reagent_containers/hypospray/medipen/psycho(src)
-	new /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/raider(src)
+	new /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d/raider(src)
 	new /obj/item/gun/ballistic/shotgun/automatic/combat/citykiller(src)
-	new /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/raider(src)
+	new /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d/raider(src)
 	new /obj/item/ammo_box/shotgun/slug(src)
 
 

@@ -101,8 +101,8 @@ Head Paladin
 	title = "Head Paladin"
 	flag = F13SENTINEL
 	head_announce = list("Security")
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	description = "You are the acting field commander on behalf of the Montana chapter. You are a veteran of many battles and sorties in pursuit of Brotherhood goals; your only weakness may just be your hubris. Your main goals are the protection of your brothers, initiating Juniors in the caste, diplomacy and trade."
 	forbids = "The Brotherhood of Steel Expects: Obeying superiors and respecting the Chain that Binds to a degree. Collection and safeguarding of HARMFUL technology from the wasteland. Expanding and making relations only at the benefit of the chapter. Experimentation, research and innovation."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
@@ -128,11 +128,7 @@ Head Paladin
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_PA_WEAR,  REF(src))
-
-/datum/outfit/job/bos/f13sentinel/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
+	ADD_TRAIT(H, TRAIT_RESEARCHER,  REF(src))
 	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
 	ADD_TRAIT(H, TRAIT_IRONFIST,  REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
@@ -150,34 +146,36 @@ Head Paladin
 	ears =			/obj/item/radio/headset/headset_bos/command
 	id = 			/obj/item/card/id/dogtag
 	backpack_contents = list(
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/melee/onehanded/knife/hunting = 1,
-		/obj/item/melee/f13powerfist = 1,
-		/obj/item/gun/ballistic/automatic/pistol/n99/crusader = 1,
-		/obj/item/ammo_box/magazine/m10mm = 2,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
+		/obj/item/gun/energy/laser/pistol=1,
+		/obj/item/stock_parts/cell/ammo/ec=1,
 		)
 
 /datum/outfit/loadout/sentheavy
-	name = "Ballistic Head Paladin"
-	backpack_contents = list(
-		/obj/item/minigunpackbal5mm = 1,
-		/obj/item/ammo_box/magazine/cz53 = 2,
-	)
-
-/datum/outfit/loadout/sentlaser
-	name = "Laser Senior Paladin"
+	name = "Heavy Head Paladin"
 	backpack_contents = list(
 		/obj/item/encminigunpack = 1,
 		/obj/item/stock_parts/cell/ammo/ecp = 2,
 	)
 
-/datum/outfit/loadout/sentmelee
-	name = "Melee Head Paladin"
+/datum/outfit/loadout/sentlaser
+	name = "Rifleman Head Paladin"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 1,
-		/obj/item/ammo_box/magazine/m14mm = 3,
-		/obj/item/twohanded/inquis_spear = 1,
+		/obj/item/gun/energy/laser/aer12 = 1,
+		/obj/item/attachments/scope = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 2,
 	)
+
+/datum/outfit/loadout/sentmelee
+	name = "Assault Head Paladin"
+	backpack_contents = list(
+		/obj/item/twohanded/sledgehammer/supersledge = 1,
+		/obj/item/book/granter/trait/bigleagues = 1,
+		/obj/item/gun/ballistic/revolver/colt6520 = 1,
+		/obj/item/ammo_box/l10mm = 2,
+	)
+
 /*
 Proctor
 */
@@ -340,8 +338,8 @@ Senior Paladin
 /datum/job/bos/f13seniorpaladin
 	title = "Senior Paladin"
 	flag = F13SENIORPALADIN
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are the chapter's seniormost member of the Paladin caste. One shaped from years of training and experience. Duties relating to field command fall under you, by default. In matters of trade, exploration and diplomacy - you are the de facto head, unless a Head Scribe exists. Your job is to be the chapter's fist, instilling discipline in your caste of Paladins as you go."
 	forbids = "The Brotherhood of Steel Expects: Obeying superiors and respecting the Chain that Binds to a degree. Collection and safeguarding of HARMFUL technology from the wasteland. Expanding and making relations only at the benefit of the chapter. Experimentation, research and innovation."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
@@ -431,15 +429,16 @@ Paladin
 	flag = F13PALADIN
 	total_positions = 2
 	spawn_positions = 1
-	description = "You answer to the Senior Paladin, and by extension - the Head Scribe. Be the chapter's shock infantry, and utilize your armour to its fullest capacity. Highly trained from experience as a knight - you are to take field command in the absence of a Senior Paladin. You may also finalize trade and diplomatic decisions in the absence of a superior."
+	description = "You answer to the Head Paladin, and by extension - the Head Scribe for issues regarding technology aquisition. Be the chapter's shock infantry, and utilize your armour to its fullest capacity. Highly trained from experience as a knight - you are to take field command in the absence of a Senior Paladin. You may also finalize trade and diplomatic decisions in the absence of a superior."
 	forbids = "The Brotherhood of Steel Expects: Obeying superiors and respecting the Chain that Binds to a degree. Collection and safeguarding of HARMFUL technology from the wasteland. Expanding and making relations only at the benefit of the chapter. Experimentation, research and innovation."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Senior Paladins and the Head Paladin"
+	supervisors = "the Head Paladin"
 	selection_color = "#95a5a6"
 	exp_type = EXP_TYPE_BROTHERHOOD
 	exp_requirements = 780
 
 	loadout_options = list(
+	/datum/outfit/loadout/paladina,	//Powerfist + Revolver
 	/datum/outfit/loadout/paladinb, //R91
 	/datum/outfit/loadout/paladinc, //AER9
 	)
@@ -486,6 +485,18 @@ Paladin
 		/obj/item/stock_parts/cell/ammo/ec=1,
 	)
 
+/datum/outfit/loadout/paladina
+	name = "Assault Paladin"
+	backpack_contents = list(
+		/obj/item/melee/f13powerfist = 1,
+		/obj/item/gun/ballistic/revolver/colt6520 = 1,
+		/obj/item/ammo_box/l10mm = 2,
+		/obj/item/book/granter/trait/bigleagues = 1,
+		/obj/item/clothing/accessory/bos/paladin = 1,
+		/obj/item/clothing/accessory/bos/juniorpaladin = 1,
+		/obj/item/clothing/accessory/bos/seniorpaladin = 1,
+	)
+
 /datum/outfit/loadout/paladinb
 	name = "Tactical Paladin"
 	backpack_contents = list(
@@ -493,6 +504,7 @@ Paladin
 		/obj/item/ammo_box/magazine/m556mm = 2,
 		/obj/item/clothing/accessory/bos/paladin = 1,
 		/obj/item/clothing/accessory/bos/juniorpaladin = 1,
+		/obj/item/clothing/accessory/bos/seniorpaladin = 1,
 		)
 
 /datum/outfit/loadout/paladinc
@@ -502,6 +514,7 @@ Paladin
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/clothing/accessory/bos/paladin = 1,
 		/obj/item/clothing/accessory/bos/juniorpaladin = 1,
+		/obj/item/clothing/accessory/bos/seniorpaladin = 1,
 		)
 
 /*
@@ -705,7 +718,7 @@ Scribe
 	description = "You are the senior-most member of your caste in the chapter. Experienced in the fields of combat, reconnaissance and defense; you must lead your caste to victory. Assist Paladins, prepare defense. You are also the one who heads the internal security of the bunker - ensuring personnel are adhering to the Codex, and squashing insubordination."
 	forbids = "The Brotherhood of Steel Expects: Obeying superiors and respecting the Chain that Binds to a degree. Collection and safeguarding of HARMFUL technology from the wasteland. Expanding and making relations only at the benefit of the chapter. Experimentation, research and innovation."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Knight-Captains"
+	supervisors = "the Paladins and Head Paladin"
 	selection_color = "#95a5a6"
 	exp_requirements = 600
 	exp_type = EXP_TYPE_BROTHERHOOD
@@ -777,7 +790,8 @@ Scribe
 		/obj/item/gun/energy/laser/wattz2k = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
-		/obj/item/ammo_box/magazine/m45exp = 2
+		/obj/item/ammo_box/magazine/m45exp = 2,
+		/obj/item/clothing/suit/armored/light/bos_scout/senior = 1,
 		)
 
 /*
@@ -792,7 +806,7 @@ Knight
 	description = "You are the veritable lifeblood of your chapter. Versatile, adaptable and hopefully, dangerous to the chapter's enemies. Your prime duties include ensuring the defense of the chapter, assisting Paladins in expeditions, and serving as scouts. You may also train and take charge of Initiates."
 	forbids = "The Brotherhood of Steel Expects: Obeying superiors and respecting the Chain that Binds to a degree. Collection and safeguarding of HARMFUL technology from the wasteland. Expanding and making relations only at the benefit of the chapter. Experimentation, research and innovation."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Knight-Captains"
+	supervisors = "the Senior Knight and Paladin caste"
 	selection_color = "#95a5a6"
 
 	exp_type = EXP_TYPE_BROTHERHOOD

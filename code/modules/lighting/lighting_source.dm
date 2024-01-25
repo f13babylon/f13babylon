@@ -63,7 +63,7 @@
 	if (needs_update)
 		GLOB.lighting_update_lights -= src
 
-	. = ..()
+	return ..()
 
 // Yes this doesn't align correctly on anything other than 4 width tabs.
 // If you want it to go switch everybody to elastic tab stops.

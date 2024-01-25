@@ -183,7 +183,8 @@ GLOBAL_LIST_INIT(trash_clothing, list(
 	/obj/item/clothing/shoes/f13/tan = 5,
 	/obj/item/clothing/suit/armor/f13/kit/punk = 5,
 	/obj/item/clothing/suit/armor/f13/kit = 5,
-	/obj/item/clothing/head/welding = 5
+	/obj/item/clothing/head/welding = 5,
+	/obj/item/clothing/mask/gas/goner/aesthetic = 5
 ))
 
 GLOBAL_LIST_INIT(trash_ammo, list(
@@ -378,8 +379,8 @@ GLOBAL_LIST_INIT(loot_t3_armor, list(
 ))
 
 GLOBAL_LIST_INIT(loot_t4_armor, list(
-	/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b,
-	/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b,
+	/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d,
+	/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d,
 	/obj/item/clothing/suit/armor/f13/combat/riotpolice,
 	/obj/item/clothing/head/helmet/f13/combat/rangerbroken,
 	/obj/item/clothing/suit/armor/f13/combat/mk2,
@@ -744,8 +745,7 @@ GLOBAL_LIST_INIT(loot_seed, list(
 	/obj/item/seeds/plump,
 	/obj/item/seeds/reishi,
 	/obj/item/seeds/cannabis,
-	/obj/item/seeds/starthistle,
-	/obj/item/seeds/random
+	/obj/item/seeds/starthistle
 ))
 
 GLOBAL_LIST_INIT(loot_food, list(

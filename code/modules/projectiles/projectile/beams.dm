@@ -291,7 +291,7 @@
 //musket
 /obj/item/projectile/beam/laser/musket //musket
 	name = "laser beam"
-	damage = 32
+	damage = 25
 	armour_penetration = 0.1//It's a concentrated beam of light.
 	bare_wound_bonus = 18//As above.
 	hitscan = TRUE
@@ -303,26 +303,13 @@
 /obj/item/projectile/beam/laser/pistol/ultraweak
 	damage = 15 //quantity over quality
 
-
-//Alrem's plasmacaster
-/obj/item/projectile/f13plasma/plasmacaster/arlem
-	name = "plasma bolt"
-	icon_state = "plasma_clot"
-	damage_type = BURN
-	damage = 60
-	armour_penetration = 0.8
-	flag = "laser"
-	eyeblur = 0
-	is_reflectable = FALSE
-	pixels_per_second = TILES_TO_PIXELS(50)
-
 /obj/item/projectile/beam/laser/lasgun //AER9
 	name = "laser beam"
 	damage = 33
 
 /obj/item/projectile/beam/laser/lasgun/hitscan //hitscan aer9 test
 	name = "laser beam"
-	damage = 32
+	damage = 24
 	armour_penetration = 0.1//It's a concentrated beam of light.
 	bare_wound_bonus = 18//As above.
 	hitscan = TRUE
@@ -366,19 +353,19 @@
 
 /obj/item/projectile/beam/laser/pistol/hitscan //hitscan AEP7
 	name = "laser beam"
-	damage = 24
+	damage = 18
 	hitscan = TRUE
-	armour_penetration = 0.08//Less concentrated beam of light.
 	bare_wound_bonus = 6//As above.
 	tracer_type = /obj/effect/projectile/tracer/laser
 	muzzle_type = /obj/effect/projectile/muzzle/laser
 	impact_type = /obj/effect/projectile/impact/laser
 
 /obj/item/projectile/beam/laser/pistol/hitscan/pewpew
-	name = "overtuned laser beam"
-	damage = 45
-	bare_wound_bonus = 25
-	armour_penetration = 0.45
+	name = "PEW!"
+	damage = 50
+	armour_penetration = 0.5
+	wound_bonus = 10
+	bare_wound_bonus = 12 //AEP7 x 2
 	tracer_type = /obj/effect/projectile/tracer/pulse
 	muzzle_type = /obj/effect/projectile/muzzle/pulse
 	impact_type = /obj/effect/projectile/impact/pulse
@@ -436,7 +423,7 @@
 
 /obj/item/projectile/beam/laser/pistol/wattz/hitscan //hitscan wattz
 	name = "weak laser beam"
-	damage = 18
+	damage = 16
 	hitscan = TRUE
 	tracer_type = /obj/effect/projectile/tracer/laser
 	muzzle_type = /obj/effect/projectile/muzzle/laser
@@ -444,14 +431,14 @@
 
 /obj/item/projectile/beam/laser/pistol/wattz/magneto //upgraded Wattz
 	name = "penetrating laser beam"
-	damage = 33
-	armour_penetration = 0.20
+	damage = 18
+	armour_penetration = 0.1
 
 /obj/item/projectile/beam/laser/pistol/wattz/magneto/hitscan
 	name = "penetrating laser beam"
-	damage = 20
+	damage = 17
 	hitscan = TRUE
-	armour_penetration = 0.2 //rare laser to keep its AP, since base model is so bad
+	armour_penetration = 0.1 //rare laser to keep its AP, since base model is so bad
 	tracer_type = /obj/effect/projectile/tracer/laser
 	muzzle_type = /obj/effect/projectile/muzzle/laser
 	impact_type = /obj/effect/projectile/impact/laser
@@ -463,7 +450,7 @@
 
 /obj/item/projectile/beam/laser/solar/hitscan
 	name = "solar scorcher beam"
-	damage = 27
+	damage = 24
 	hitscan = TRUE
 	tracer_type = /obj/effect/projectile/tracer/laser
 	muzzle_type = /obj/effect/projectile/muzzle/laser
@@ -475,66 +462,12 @@
 
 /obj/item/projectile/beam/laser/tribeam/hitscan
 	name = "tribeam laser"
-	damage = 25 //if all bullets connect, this will do 75.
+	damage = 22 //if all bullets connect, this will do 75.
 	hitscan = TRUE
 	bare_wound_bonus = -5 //tribeam is bad at wounding, as basically its only real downside
 	tracer_type = /obj/effect/projectile/tracer/laser
 	muzzle_type = /obj/effect/projectile/muzzle/laser
 	impact_type = /obj/effect/projectile/impact/laser
-
-/obj/item/projectile/f13plasma //Plasma rifle
-	name = "plasma bolt"
-	icon_state = "plasma_clot"
-	damage_type = BURN
-	damage = 24 //fucc you normies
-	armour_penetration = 0 //no AP, armor shouldnt have more than 20 resist against plasma unless its specialized
-	flag = "energy" //checks vs. energy protection
-	wound_bonus = 45 //being hit with plasma is horrific
-	eyeblur = 0
-	is_reflectable = TRUE
-	supereffective_faction = list("hostile", "ant", "supermutant", "deathclaw", "cazador", "raider", "china", "gecko", "wastebot", "radscorpion")
-	supereffective_damage = 36
-	pixels_per_second =  TILES_TO_PIXELS(20)
-
-/obj/item/projectile/f13plasma/caster
-	name = "caster bolt"
-	damage = 20 //rapid fire
-	wound_bonus = 35 //being hit with plasma is horrific
-/obj/item/projectile/f13plasma/carbine //Plasma carbine
-	pixels_per_second = TILES_TO_PIXELS(15)
-
-/obj/item/projectile/f13plasma/repeater //Plasma repeater
-	name = "plasma stream"
-	icon_state = "plasma_clot"
-	damage_type = BURN
-	damage = 35
-
-/obj/item/projectile/f13plasma/repeater/mining
-	name = "mining plasma stream"
-	icon_state = "plasma_clot"
-	damage_type = BURN
-	damage = 5
-	wound_bonus = 5
-	is_reflectable = FALSE
-
-/obj/item/projectile/f13plasma/repeater/mining/on_hit(atom/target)
-	. = ..()
-	if(ismineralturf(target))
-		var/turf/closed/mineral/M = target
-		M.gets_drilled(firer)
-
-/obj/item/projectile/f13plasma/pistol //Plasma pistol
-	damage = 20
-	supereffective_damage = 20
-
-/obj/item/projectile/f13plasma/pistol/worn
-	damage = 18
-
-/obj/item/projectile/f13plasma/pistol/glock //Glock (streamlined plasma pistol)
-	damage = 22
-
-/obj/item/projectile/f13plasma/scatter //Multiplas, fires 3 shots, will melt you
-	damage = 25
 
 /obj/item/projectile/beam/laser/rcw //RCW
 	name = "rapidfire beam"
@@ -556,15 +489,6 @@
 /obj/item/projectile/beam/laser/rcw/hitscan/autolaser //autolaser
 	damage = 7
 
-/obj/item/projectile/f13plasma/pistol/alien
-	name = "alien projectile"
-	icon_state = "ion"
-	damage = 90 //horrifyingly powerful, but very limited ammo
-	armour_penetration = 0.8 //keeps AP, because lol aliens
-	impact_effect_type = /obj/effect/temp_visual/impact_effect/blue_laser
-	light_range = 2
-	light_color = LIGHT_COLOR_BLUE
-
 /obj/item/projectile/beam/laser/laer //Elder's/Unique LAER
 	name = "advanced laser beam"
 	icon_state = "u_laser"
@@ -582,14 +506,14 @@
 
 /obj/item/projectile/beam/laser/aer14 //AER14
 	name = "laser beam"
-	damage = 38
-	armour_penetration = 0.6
+	damage = 30
+	armour_penetration = 0.4
 	icon_state = "xray"
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/green_laser
 	light_color = LIGHT_COLOR_GREEN
 
 /obj/item/projectile/beam/laser/aer14/hitscan
-	damage = 36
+	damage = 30
 	armour_penetration = 0.2
 	hitscan = TRUE
 	tracer_type = /obj/effect/projectile/tracer/xray
@@ -607,8 +531,8 @@
 
 /obj/item/projectile/beam/laser/aer12 //AER12
 	name = "laser beam"
-	damage = 34
-	armour_penetration = 0.55
+	damage = 28
+	armour_penetration = 0.3
 	icon_state = "omnilaser"
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/blue_laser
 	light_color = LIGHT_COLOR_BLUE
@@ -638,7 +562,7 @@
 
 /obj/item/projectile/beam/laser/wattz2k/hitscan
 	name = "sniper laser bolt"
-	damage = 38
+	damage = 34
 	bare_wound_bonus = 20
 	armour_penetration = 0.2
 	tracer_type = /obj/effect/projectile/tracer/heavy_laser
@@ -651,7 +575,91 @@
 	damage = 40
 	armour_penetration = 0.6
 
+/////////////////
+// P L A S M A //
+/////////////////
+
+/obj/item/projectile/f13plasma //Plasma rifle
+	name = "plasma bolt"
+	icon_state = "plasma_clot"
+	damage_type = BURN
+	damage = 30 //fucc you normies
+	armour_penetration = 0.2	//Plasma does higher damage, higher AP, fires at near half the rate as lasers.
+	flag = "laser" //checks laser protection. Why? Because plasma guns are 'side-grades' to lasers, ones high damage, one's higher fire rate.
+	wound_bonus = 35 //being hit with plasma is horrific
+	eyeblur = 0
+	is_reflectable = TRUE
+	supereffective_faction = list("hostile", "ant", "supermutant", "deathclaw", "cazador", "raider", "china", "gecko", "wastebot", "radscorpion")
+	supereffective_damage = 36
+	pixels_per_second =  TILES_TO_PIXELS(20)
+
+/obj/item/projectile/f13plasma/caster
+	name = "caster bolt"
+	damage = 40	//Hits hard, hits slow
+	armour_penetration = 0.4	//High pen
+	wound_bonus = 45 //being hit with plasma is horrific
+
+//Alrem's plasmacaster		- Enclave captain weapon, can remain OP due to this.
+/obj/item/projectile/f13plasma/plasmacaster/arlem
+	name = "plasma bolt"
+	icon_state = "plasma_clot"
+	damage_type = BURN
+	damage = 50
+	armour_penetration = 0.8
+	flag = "laser"
+	eyeblur = 0
+	is_reflectable = FALSE
+	pixels_per_second = TILES_TO_PIXELS(50)
+
+/obj/item/projectile/f13plasma/carbine //Plasma carbine
+	pixels_per_second = TILES_TO_PIXELS(15)
+
+/obj/item/projectile/f13plasma/repeater //Plasma repeater
+	name = "plasma stream"
+	icon_state = "plasma_clot"
+	damage_type = BURN
+	damage = 35
+
+/obj/item/projectile/f13plasma/pistol //Plasma pistol
+	damage = 20
+	armour_penetration = 0.1
+	supereffective_damage = 20
+
+/obj/item/projectile/f13plasma/pistol/worn
+	damage = 18
+
+/obj/item/projectile/f13plasma/pistol/glock //Glock (streamlined plasma pistol)
+	damage = 22
+	armour_penetration = 0.2
+
+/obj/item/projectile/f13plasma/scatter //Multiplas, fires 3 shots, will melt you
+	damage = 25
+	armour_penetration = 0.1
+
+/obj/item/projectile/f13plasma/pistol/alien
+	name = "alien projectile"
+	icon_state = "ion"
+	damage = 90 //horrifyingly powerful, but very limited ammo
+	armour_penetration = 0.8 //keeps AP, because lol aliens
+	impact_effect_type = /obj/effect/temp_visual/impact_effect/blue_laser
+	light_range = 2
+	light_color = LIGHT_COLOR_BLUE
 
 // BETA // Obsolete
 /obj/item/projectile/beam/laser/pistol/lasertesting //Wattz pistol
 	damage = 25
+
+//Mining plasma - specific
+/obj/item/projectile/f13plasma/repeater/mining
+	name = "mining plasma stream"
+	icon_state = "plasma_clot"
+	damage_type = BURN
+	damage = 5
+	wound_bonus = 5
+	is_reflectable = FALSE
+
+/obj/item/projectile/f13plasma/repeater/mining/on_hit(atom/target)
+	. = ..()
+	if(ismineralturf(target))
+		var/turf/closed/mineral/M = target
+		M.gets_drilled(firer)

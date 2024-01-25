@@ -5,7 +5,7 @@ import { Button, Flex, Tabs, Section, Stack } from '../components';
 export const LoadoutSelect = (props, context) => {
   const { act, data } = useBackend(context);
   return (
-    <Window width={500} height={450} resizable="false">
+    <Window width={1400} height={750} resizable="false">
       <Window.Content>
         <Stack vertical fill fitted>
           <Stack.Item>
@@ -30,7 +30,7 @@ export const LoadoutSelect = (props, context) => {
                     <Stack.Item as="div" style={{ "-ms-transform": "scale(1.5)", "image-rendering": "pixelated", "-ms-interpolation-mode": "nearest-neighbor", "vertical-align": "middle", "height": "32px", "width": "32px" }} class={item.icon} />
                     <Stack.Item as="div" style={{ "display": "block", "vertical-align": "middle", "line-height": "32px", "margin": "auto" }}>
                       {item.name} {item.quantity > 1
-                      && (`x${item.quantity}`)}<br />
+                        && (`x${item.quantity}`)}<br />
                     </Stack.Item>
                   </Stack>))}
               </Section>

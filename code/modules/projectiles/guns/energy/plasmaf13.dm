@@ -14,7 +14,7 @@
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
 	slowdown = 0.3
-	fire_delay = 5
+	fire_delay = 6
 
 //Plasma pistol
 /obj/item/gun/energy/laser/plasma/pistol
@@ -28,7 +28,7 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/pistol)
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
 	equipsound = 'sound/f13weapons/equipsounds/pistolplasequip.ogg'
-	slowdown = 0
+	slowdown = 0.2
 	fire_delay = 4
 
 //BoS knight craftable plasma pistol
@@ -43,7 +43,7 @@
 	desc = "A REPCONN-made pistol-sized plasma caster based on a Winchester model. Fires bolts of plasma that form into toroids in the chamber, which are then sent down a superconducting barrel and propelled by electromagnetic claws. This one's internal parts have loose seals and corroded electronics."
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/pistol/worn)
 	icon_state = "plaspistol_old"
-	fire_delay = 8
+	fire_delay = 6
 
 /obj/item/gun/energy/laser/plasma/pistol/worn/gutsy
 	name ="\improper integrated plasma pistol"
@@ -62,13 +62,13 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/pistol/glock)
 	equipsound = 'sound/f13weapons/equipsounds/pistolplasequip.ogg'
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
-	fire_delay = 3
+	fire_delay = 5
 	slowdown = 0.1
 
 //Glock 86 A Plasma pistol
 /obj/item/gun/energy/laser/plasma/glock/extended
 	name ="glock 86a"
-	fire_delay = 3
+	fire_delay = 4
 	item_state = "plasma-pistol"
 	icon_state = "betterglock"
 	desc = "A bleeding edge Glock 86 plasma pistol, designed by the Gaston Glock AI Supercomputer. Fires bolts of plasma that form into toroids in the chamber, which are then sent down a superconducting barrel lined with electromagnetic coils. This one has been fitted with a targetting system and higher quality parts."
@@ -84,14 +84,14 @@
 	desc = "A militarized Winchester P-94 plasma caster, featuring a firearm-styled housing complete with a stock, rail, and pistol grip. Replaced by the urban plasma rifle not long before the war, this model remained in use due to its ability for rapid fire. Fires bolts of plasma that form into toroids in the chamber, which are then sent down a superconducting barrel and propelled by electromagnetic claws."
 	ammo_type = list(/obj/item/ammo_casing/energy/plasmacarbine)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
-	fire_delay = 2
+	fire_delay = 6
 	weapon_weight = WEAPON_MEDIUM
 	burst_size = 2
 	burst_shot_delay = 1.5
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	can_scope = TRUE
 	scope_state = "plasma_scope"
-	slowdown = 0.15
+	slowdown = 0.3
 	scope_x_offset = 13
 	scope_y_offset = 16
 	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
@@ -135,12 +135,9 @@
 	slot_flags = ITEM_SLOT_BACK
 	weapon_weight = WEAPON_LIGHT
 	slowdown = 0.4
-	automatic = TRUE
-	fire_delay = 3 //yes, it is a fast weapon
-	autofire_shot_delay = 3
-	fire_delay = 3
-	var/twohands = FALSE
-
+	fire_delay = 8
+	//var/twohands = FALSE		- Disabled, wasn't needed if you just give it a higher fire delay.
+/*
 /obj/item/gun/energy/laser/plasma/caster/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/two_handed)
@@ -165,3 +162,4 @@
 	. = ..()
 	if(!twohands)
 		return FALSE
+*/

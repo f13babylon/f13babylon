@@ -102,6 +102,10 @@
 		body+= "<a href='?src=[ref];jobban3=OOC;jobban4=[ref_mob]'><font color=red>OOCBan</font></A> | "
 	else
 		body += "<a href='?src=[ref];jobban3=OOC;jobban4=[ref_mob]'>OOCBan</A> | "
+	if(jobban_isbanned(M, "LOOC"))
+		body+= "<a href='?src=[ref];jobban3=LOOC;jobban4=[ref_mob]'><font color=red>LOOCBan</font></A> | "
+	else
+		body += "<a href='?src=[ref];jobban3=LOOC;jobban4=[ref_mob]'>LOOCBan</A> | "
 	if(QDELETED(M) || QDELETED(usr))
 		return
 	if(jobban_isbanned(M, "emote"))
@@ -624,6 +628,16 @@
 	log_admin("[key_name(usr)] toggled Dead OOC.")
 	message_admins("[key_name_admin(usr)] toggled Dead OOC.")
 	SSblackbox.record_feedback("nested tally", "admin_toggle", 1, list("Toggle Dead OOC", "[GLOB.dooc_allowed ? "Enabled" : "Disabled"]")) //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+
+/datum/admins/proc/toggledeadchat()
+	set category = "Server"
+	set desc="Toggle dis bitch"
+	set name="Toggle Deadchat"
+	toggle_deadchat()
+
+	log_admin("[key_name(usr)] toggled Deadchat.")
+	message_admins("[key_name_admin(usr)] toggled Deadchat.")
+	SSblackbox.record_feedback("nested tally", "admin_toggle", 1, list("Toggle Deadchat", "[GLOB.dsay_allowed ? "Enabled" : "Disabled"]")) //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /datum/admins/proc/toggleaooc()
 	set category = "Server"

@@ -290,3 +290,12 @@
 	time = 100
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_MEDICAL
+
+/datum/crafting_recipe/improvisedtape
+	name = "Improvised Surgical Tape"
+	result = /obj/item/stack/sticky_tape/surgical
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/datura = 1,
+				/obj/item/reagent_containers/food/snacks/grown/broc = 1,
+				/obj/item/stack/medical/gauze/improvised = 1)
+	time = 30
+	category = CAT_MEDICAL
