@@ -34,7 +34,7 @@
 	init_sprite_accessory_subtypes(/datum/sprite_accessory/deco_wings, GLOB.deco_wings_list)
 
 //CIT CHANGES START HERE, ADDS SNOWFLAKE BODYPARTS AND MORE
-	//mammal bodyparts (fucking furries)
+	//mammal bodyparts
 	init_sprite_accessory_subtypes(/datum/sprite_accessory/mam_body_markings, GLOB.mam_body_markings_list)
 	init_sprite_accessory_subtypes(/datum/sprite_accessory/tails/mam_tails, GLOB.mam_tails_list)
 	init_sprite_accessory_subtypes(/datum/sprite_accessory/ears/mam_ears, GLOB.mam_ears_list)
