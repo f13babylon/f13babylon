@@ -111,6 +111,8 @@
 	M.dropItemToGround(token)
 	QDEL_NULL(token)
 	for (var/obj/item/book/granter/granter in duffelkit) //Auto consumes any books you spawn in with.
+		if (istype (granter, /obj/item/book/granter/trait/selection)) //But not if you can select its type
+			continue
 		granter.on_reading_finished(M)
 	M.put_in_hands(duffelkit)
 	M.disable_loadout_select()
