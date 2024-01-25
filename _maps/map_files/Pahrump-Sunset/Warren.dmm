@@ -3563,6 +3563,7 @@
 	pixel_y = -7
 	},
 /obj/machinery/light,
+/obj/structure/closet/crate/footlocker,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "daO" = (
@@ -3917,9 +3918,9 @@
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/building)
 "dpW" = (
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/footlocker,
-/obj/item/pda,
-/turf/open/floor/f13/wood,
+/turf/open/floor/carpet,
 /area/f13/ncr)
 "dqQ" = (
 /turf/open/floor/plasteel/darkbrown/side{
@@ -10541,9 +10542,13 @@
 /turf/open/floor/wood/wood_wide,
 /area/f13/ncr)
 "jii" = (
-/obj/structure/closet/crate/footlocker,
-/turf/open/floor/f13/wood,
-/area/f13/ncr)
+/obj/structure/barricade/wooden,
+/obj/structure/decoration/rag{
+	icon_state = "skin"
+	},
+/obj/structure/decoration/rag,
+/turf/closed/mineral/random/low_chance,
+/area/f13/caves)
 "jiq" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/outside/road{
@@ -15362,14 +15367,6 @@
 	icon_state = "horizontalinnermain0"
 	},
 /area/f13/building)
-"nxl" = (
-/obj/structure/barricade/wooden,
-/obj/structure/decoration/rag{
-	icon_state = "skin"
-	},
-/obj/structure/decoration/rag,
-/turf/closed/mineral/random/low_chance,
-/area/f13/caves)
 "nxq" = (
 /obj/structure/window/reinforced{
 	dir = 4;
@@ -16271,6 +16268,8 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/structure/closet/crate/footlocker,
+/obj/item/pda,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "ouB" = (
@@ -19278,6 +19277,10 @@
 	icon_state = "horizontalinnermain0"
 	},
 /area/f13/wasteland/warren)
+"raN" = (
+/mob/living/simple_animal/hostile/molerat/ncrpet,
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "raT" = (
 /obj/effect/decal/remains/deadeyebot,
 /turf/open/indestructible/ground/outside/road{
@@ -44634,7 +44637,7 @@ pLS
 pLS
 pLS
 pLS
-nxl
+jii
 krz
 dgH
 dgH
@@ -61858,7 +61861,7 @@ goE
 iLx
 iuQ
 qHr
-qFq
+raN
 qFq
 xnR
 goE
@@ -63399,7 +63402,7 @@ vVj
 goE
 oum
 ewp
-ewp
+dpW
 ewp
 daq
 goE
@@ -63655,9 +63658,9 @@ vVj
 vVj
 goE
 iPT
-dpW
+qFq
 iPT
-jii
+qFq
 iPT
 goE
 dlr

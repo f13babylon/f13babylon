@@ -1796,6 +1796,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
+"nr" = (
+/obj/structure/sink/kitchen{
+	pixel_y = 22
+	},
+/turf/open/floor/wood,
+/area/f13/ncr)
 "nu" = (
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/f13/wood,
@@ -6026,6 +6032,10 @@
 /obj/machinery/reagentgrinder{
 	pixel_x = 5;
 	pixel_y = 10
+	},
+/obj/item/storage/box/drinkingglasses{
+	pixel_y = -4;
+	pixel_x = -3
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white/whiteredchess/whiteredchess2,
 /area/f13/ncr)
@@ -43934,7 +43944,7 @@ Qq
 sX
 eh
 EA
-mU
+nr
 mU
 Gq
 zj
