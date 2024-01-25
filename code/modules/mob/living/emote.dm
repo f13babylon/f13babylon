@@ -416,9 +416,14 @@ yap, yawn.
 /datum/emote/living/gasp/get_sound(mob/living/M)
 	if(ishuman(M))
 		if(M.gender == FEMALE)
-			return 'sound/f13effects/emotes/female_gasp.ogg'
+			return . = list(
+				'sound/f13effects/emotes/female_gasp1.ogg',
+				'sound/f13effects/emotes/female_gasp2.ogg')
 		else
-			return 'sound/f13effects/emotes/male_gasp.ogg'
+			return . = list(
+				'sound/f13effects/emotes/male_gasp1.ogg',
+				'sound/f13effects/emotes/male_gasp2.ogg')
+		return
 
 /datum/emote/geckers
 	key = "geck"
