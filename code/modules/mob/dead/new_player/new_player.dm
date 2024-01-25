@@ -553,6 +553,23 @@
 
 	log_manifest(character.mind.key,character.mind,character,latejoin = TRUE)
 
+	humanc.is_in_game = 1
+	spawn(10 SECONDS)
+		if (humanc.is_in_game)
+			humanc.is_in_game = 2
+			if (job.faction == FACTION_ENCLAVE)
+				to_chat(world, span_nicegreen("You hear through the grapevine that an Enclave member may be snooping around the county."))
+			else if (istype(humanc.get_item_by_slot(SLOT_WEAR_ID), /obj/item/card/id/selfassign))
+				var/obj/item/card/id/selfassign/id = humanc.get_item_by_slot(SLOT_WEAR_ID)
+				to_chat(world, span_nicegreen("You hear through the grapevine that [humanc.name] the [id.assignment] may be snooping around the county."))
+
+			else if (istype(humanc.get_item_by_slot(SLOT_WEAR_ID), /obj/item/pda))
+				var/obj/item/pda/id = humanc.get_item_by_slot(SLOT_WEAR_ID)
+				to_chat(world, span_nicegreen("You hear through the grapevine that [humanc.name] the [id.ownjob] may be snooping around the county."))
+
+			else
+				to_chat(world, span_nicegreen("You hear through the grapevine that [humanc.name] the [rank] may be snooping around the county."))
+
 /mob/dead/new_player/proc/AddEmploymentContract(mob/living/carbon/human/employee)
 	//TODO:  figure out a way to exclude wizards/nukeops/demons from this.
 	for(var/C in GLOB.employmentCabinets)

@@ -341,7 +341,18 @@
 	if(departing_mob.stat == DEAD)
 		departing_mob.visible_message("<span class='notice'>[user] pushes the body of [departing_mob] over the border. They're someone else's problem now.</span>")
 	else
-		departing_mob.visible_message("<span class='notice'>[departing_mob == user ? "Out of their own volition, " : "Ushered by [user], "][departing_mob] crosses the border and departs the Sonora.</span>")
+		departing_mob.visible_message("<span class='notice'>[departing_mob == user ? "Out of their own volition, " : "Ushered by [user], "][departing_mob] crosses the border and departs La Verkin.</span>")
+
+	if (departing_mob.is_in_game >= 1)
+		if (departing_mob.is_in_game == 2)
+			if (departing_mob.mind)
+				var/datum/job/job = SSjob.GetJob(departing_mob.mind.assigned_role)
+				if (istype(job) && job.faction == FACTION_ENCLAVE)
+					to_chat(world, span_nicegreen("You hear through the grapevine that an Enclave member has left the county."))
+				else
+					to_chat(world, span_nicegreen("You hear through the grapevine that [departing_mob.name] has left the county."))
+		departing_mob.is_in_game = 0
+
 	departing_mob.despawn()
 
 
