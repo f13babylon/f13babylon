@@ -554,7 +554,7 @@
 	log_manifest(character.mind.key,character.mind,character,latejoin = TRUE)
 
 	humanc.is_in_game = 1
-	spawn(10 SECONDS)
+	spawn(5 MINUTES)
 		if (humanc.is_in_game)
 			humanc.is_in_game = 2
 			if (job.faction == FACTION_ENCLAVE)
