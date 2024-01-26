@@ -45459,7 +45459,7 @@
 	},
 /area/f13/wasteland/east)
 "lEV" = (
-/obj/machinery/msgterminal/bighorn/followers,
+/obj/machinery/msgterminal/newbabylon/followers,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -46464,6 +46464,11 @@
 /obj/structure/flora/wasteplant/wild_feracactus,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland/east)
+"lXI" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/jukebox,
+/turf/open/floor/wood/wood_common,
+/area/f13/city/bighorn)
 "lXP" = (
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -88010,7 +88015,7 @@ aae
 ygj
 eus
 swr
-blj
+lXI
 lUX
 blj
 lUX

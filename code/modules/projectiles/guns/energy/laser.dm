@@ -292,6 +292,7 @@
 	name = "Pew Pew"
 	desc = "An especially modified AEP-7 pistol that seems to have been previously owned by some kind of aficionado. The focus adjustment knob on the rear of the gun has a Sunset Sarsaparilla bottle cap with a crudely drawn star attached by a screw. Underneath the bottle cap are the words 'HAD IT COMING' etched into the casing."
 	icon_state = "pewpew"
+	fire_delay = 5
 	weapon_weight = WEAPON_LIGHT
 	slowdown = 0.05
 	equipsound = 'sound/f13weapons/equipsounds/aer14equip.ogg'

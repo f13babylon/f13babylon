@@ -151,12 +151,11 @@
 
 //Maria									Keywords: UNIQUE, 9mm, Semi-auto, 10 round magazine. Special modifiers: fire delay -1, damage +10, penetration +0.2
 /obj/item/gun/ballistic/automatic/pistol/ninemil/maria
-	name = "Maria"
+	name = "María"
 	desc = "An ornately-decorated pre-war Browning Hi-power 9mm pistol with a pearl grip that displays a rendition of the Virgin Mary. Prone to give someone an eighteen-karat run of bad luck."
 	icon_state = "maria"
-	fire_delay = 2
 	extra_damage = 10
-	extra_penetration = 0.15
+	extra_penetration = 0.3
 
 
 //Sig Sauer P220						Keywords: 9mm, Semi-auto, 10 round magazine
@@ -307,6 +306,12 @@
 	can_suppress = FALSE
 	automatic_burst_overlay = FALSE
 	fire_sound = 'sound/f13weapons/44mag.ogg'
+
+	reload_sound = 'sound/weapons/guns/hpistol_magin.ogg'	//Heavy pistol
+	reload_sound_empty = 'sound/weapons/guns/hpistol_magin.ogg'
+	unload_sound = 'sound/weapons/guns/hpistol_magout.ogg'
+
+
 	//Extra Modifiable Gun Vars
 	modifiablegun = FALSE//TEMP
 	//Sprite Attachment Points
@@ -344,6 +349,10 @@
 	fire_sound = 'sound/f13weapons/44mag.ogg'
 	extra_damage = 5
 
+	reload_sound = 'sound/weapons/guns/hpistol_magin.ogg'	//Heavy pistol
+	reload_sound_empty = 'sound/weapons/guns/hpistol_magin.ogg'
+	unload_sound = 'sound/weapons/guns/hpistol_magout.ogg'
+
 
 //14mm Pistol		Keywords: 14mm, Semi-auto, 7 rounds, Heavy
 /obj/item/gun/ballistic/automatic/pistol/pistol14
@@ -357,6 +366,10 @@
 	recoil = 2.2
 	can_suppress = FALSE
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
+
+	reload_sound = 'sound/weapons/guns/hpistol_magin.ogg'	//Heavy pistol
+	reload_sound_empty = 'sound/weapons/guns/hpistol_magin.ogg'
+	unload_sound = 'sound/weapons/guns/hpistol_magout.ogg'
 
 //14mm compact		Keywords: 14mm, Semi-auto, Short barrel, 7 rounds, Heavy
 /obj/item/gun/ballistic/automatic/pistol/pistol14/compact

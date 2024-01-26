@@ -7,7 +7,7 @@
 	damage = 30
 	armour_penetration = 0.25
 	pixels_per_second = TILES_TO_PIXELS(10) //slower than bullets
-	shrapnel_magnitude = 4
+	shrapnel_magnitude = 0
 
 /obj/item/projectile/bullet/rocket/on_hit(atom/target, blocked = FALSE)
 	..()
@@ -46,7 +46,7 @@
 	damage = 30
 	armour_penetration = 0.75
 	pixels_per_second = TILES_TO_PIXELS(10) //slower than bullets
-	shrapnel_magnitude = 4
+	shrapnel_magnitude = 0
 
 /obj/item/projectile/bullet/rocket/on_hit(atom/target, blocked = FALSE)
 	..()

@@ -13,7 +13,7 @@
 
 /obj/item/book/granter/proc/turn_page(mob/user)
 	playsound(user, pick('sound/effects/pageturn1.ogg','sound/effects/pageturn2.ogg','sound/effects/pageturn3.ogg'), 30, 1)
-	if(do_after(user,50, TRUE, user))
+	if(do_after(user,time_per_page, TRUE, user))
 		if(remarks.len)
 			to_chat(user, "<span class='notice'>[pick(remarks)]</span>")
 		else
@@ -857,6 +857,14 @@
 	traitname = "tagger"
 	remarks = list("Just two tins of paint is enough for your whole house!", "Move your sofa to the left three paces, and you've discovered Feng Shui! Please report to the nearest police station.", "Your neighbours got a new BBQ and is hosting one at the weekend! Here's what you do...")
 
+/obj/item/book/granter/trait/cannibal
+	name = "Cannibals Cooking Guide"
+	desc = "A guide of how to cook human meat! Longpork pies, Grandma's Longpork Thanksgiving dinner, and much-much more! Buy now while supplies last! *Salesmen not included."
+	oneuse = TRUE
+	granted_trait = TRAIT_LONGPORKLOVER
+	traitname = "cannibal"
+	remarks = list("Human meat is described as tasting similar to pork..", "You should ensure meat is always cooked to the proper tempature..", "You may not eat the saleman who sold you this book..", "You decided you WILL eat the salesman who sold you this book..", "Serial killers have an obsession with eating ass-flesh. They eat ass..")
+
 /obj/item/book/granter/trait/chemistry
 	name = "Big Book of Science"
 	desc = "This heavy textbook can teach basic chemistry, but saw more use as a blunt weapon shortly after the Collapse."
@@ -874,6 +882,13 @@
 	traitname = "legion medicine"
 	remarks = list("Sapere aude.", "Ad astra per aspera.", "Mars favors the bold.", "Ars longa, vita brevis.", "Vivamus, moriendum est.", "Sic gorgiamus allos subjectatos nunc.", "Aere perennius.", "Bis dat qui cito dat.", "Finis coronat opus.", "Nullum magnum ingenium sine mixture dementia fuit.", "Nemo mortalium omnibus horis sapit.")
 
+/obj/item/book/granter/trait/herbalist
+	name = "Herbalists Guide to Survival"
+	desc = "A crude, aged book showing pictures of safe-to-use plants and herbal remodies."
+	oneuse = TRUE
+	granted_trait = TRAIT_HERBAL_AFFINITY
+	traitname = "herbal_affinity"
+	remarks = list("Big white mushroom good.", "Brown mushroom bad.", "Posionberry isn't actually posionous.", "Who the fuck names 'posionberry' that?", "Tomato is a fruit - or is it..?", "You should eat bitter almonds in mass.", "Healing crystals work!")
 
 /obj/item/book/granter/trait/bigleagues
 	name = "Grognak the Barbarian"

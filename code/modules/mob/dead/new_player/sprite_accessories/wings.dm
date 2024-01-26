@@ -369,7 +369,7 @@
 	icon_state = "sspiky"
 
 /datum/sprite_accessory/deco_wings/sylveonbow
-	name = "Sylveon Bow"
+	name = "Bow"
 	icon_state = "sylveon_bow"
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_ALL

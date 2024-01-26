@@ -937,7 +937,7 @@
 	icon_state = "gunsuperhigh_loot"
 	loot = list(
 				/obj/effect/spawner/bundle/f13/amr,
-				///obj/item/gun/ballistic/rocketlauncher,
+				/obj/item/gun/ballistic/rocketlauncher,
 				/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller,
 				/obj/effect/spawner/bundle/f13/p90,
 				/obj/effect/spawner/bundle/f13/calico,
@@ -1607,14 +1607,14 @@
 /obj/effect/spawner/bundle/f13/rocketlauncher
 	name = "rocket launcher and ammo spawner"
 	items = list(
-				///obj/item/gun/ballistic/rocketlauncher,
+				/obj/item/gun/ballistic/rocketlauncher,
 				/obj/item/ammo_casing/caseless/rocket
 	)
 
 /obj/effect/spawner/bundle/f13/grenadelauncher
 	name = "grenade launcher and ammo spawner"
 	items = list(
-				///obj/item/gun/ballistic/revolver/grenadelauncher,
+				/obj/item/gun/ballistic/revolver/grenadelauncher,
 				/obj/item/ammo_box/a40mmHE
 	)
 
@@ -1733,10 +1733,9 @@
 				/obj/item/ammo_box/magazine/lmg = 2,
 				/obj/item/ammo_box/magazine/type88 = 2,
 				/obj/item/stock_parts/cell/ammo/mfc,
-				// /obj/item/ammo_casing/caseless/rocket,
-				// /obj/item/ammo_box/a40mmHE,
-				// /obj/item/ammo_casing/a40mmS,
-				// /obj/item/ammo_casing/a40mmF,
+				/obj/item/ammo_casing/caseless/rocket,
+				/obj/item/ammo_box/a40mmHE,
+				/obj/item/ammo_casing/a40mmF,
 	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4/Initialize(mapload) //on mapload, pick how many shit to spawn
@@ -1750,13 +1749,12 @@
 	loot = list(
 				/obj/item/ammo_box/a50MG/incendiary,
 				/obj/item/ammo_box/a50MG/penetrator,
-				// /obj/item/ammo_casing/caseless/rocket/big,
-				// /obj/item/ammo_casing/caseless/rocket/incendiary = 10,
-				// /obj/item/ammo_casing/caseless/rocket/chem = 3,
-				// /obj/item/ammo_box/a40mmHEDP,
-				// /obj/item/ammo_box/a40mmM,
-				// /obj/item/ammo_casing/a40mmCS = 3,
-				// /obj/item/ammo_box/a40mmI = 10,
+				/obj/item/ammo_casing/caseless/rocket/big,
+				/obj/item/ammo_casing/caseless/rocket/incendiary = 10,
+				/obj/item/ammo_casing/caseless/rocket/chem = 3,
+				/obj/item/ammo_box/a40mmHEDP,
+				/obj/item/ammo_box/a40mmM,
+				/obj/item/ammo_box/a40mmI = 10,
 	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5/Initialize(mapload) //on mapload, pick how many shit to spawn
@@ -1800,7 +1798,7 @@
 				/obj/item/grenade/empgrenade,
 				/obj/item/grenade/f13/radiation,
 				/obj/item/grenade/f13/frag,
-				///obj/effect/spawner/bundle/f13/grenadelauncher,
+				/obj/effect/spawner/bundle/f13/grenadelauncher,
 				)
 
 /obj/effect/spawner/lootdrop/f13/bomb/top_tier
@@ -1814,7 +1812,7 @@
 				/obj/item/grenade/f13/he_grenade,
 				/obj/item/grenade/plastic/x4,
 				/obj/item/grenade/stingbang/shred = 1,
-				///obj/effect/spawner/bundle/f13/rocketlauncher,
+				/obj/effect/spawner/bundle/f13/rocketlauncher,
 				)
 
 

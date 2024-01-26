@@ -65,7 +65,7 @@
 					/obj/item/reagent_containers/food/snacks/soup/macaco,
 					/obj/item/reagent_containers/food/snacks/soup/mammi,
 					/obj/item/reagent_containers/food/snacks/soup/meatball,
-					/obj/item/reagent_containers/food/snacks/soup/milo,
+					/obj/item/reagent_containers/food/snacks/soup/miso,
 					/obj/item/reagent_containers/food/snacks/soup/mirelurkstew,
 					/obj/item/reagent_containers/food/snacks/soup/moleratstew,
 					/obj/item/reagent_containers/food/snacks/soup/monkeysdelight,
