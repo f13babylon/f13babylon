@@ -29,10 +29,10 @@
 	casing_ejector = FALSE
 	var/recentpump = 0 // to prevent spammage
 	spawnwithmagazine = TRUE
-	var/pump_sound = 'sound/weapons/guns/bolt_cycle.ogg'
 	fire_sound = 'sound/f13weapons/shotgun.ogg'
-	var/pump_stam_cost = 2
 	gun_slide = 'sound/weapons/guns/slide_bolt.ogg'
+	var/pump_sound = 'sound/weapons/guns/bolt_cycle.ogg'
+	var/pump_stam_cost = 2
 
 /obj/item/gun/ballistic/rifle/process_chamber(mob/living/user, empty_chamber = 0)
 	return ..() //changed argument value
