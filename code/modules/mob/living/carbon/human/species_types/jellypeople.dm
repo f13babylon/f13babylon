@@ -612,7 +612,7 @@
 				if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(H.client.ckey)))
 					snowflake_taur_list[S.name] = path
 		var/new_taur
-		new_taur = input(owner, "Choose your character's tauric body:", "Tauric Alteration") as null|anything in snowflake_taur_list
+		new_taur = input(owner, "Choose your character's extra bodyparts:", "Bodypart Alteration") as null|anything in snowflake_taur_list
 		if(new_taur)
 			H.dna.features["taur"] = new_taur
 			if(new_taur != "None")

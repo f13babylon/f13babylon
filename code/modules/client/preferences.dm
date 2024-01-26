@@ -2095,7 +2095,7 @@ Records disabled until a use for them is found
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_taur_list[S.name] = path
 					var/new_taur
-					new_taur = input(user, "Choose your character's tauric body:", "Character Preference") as null|anything in snowflake_taur_list
+					new_taur = input(user, "Choose your character's extra bodyparts:", "Character Preference") as null|anything in snowflake_taur_list
 					if(new_taur)
 						features["taur"] = new_taur
 						if(new_taur != "None")
