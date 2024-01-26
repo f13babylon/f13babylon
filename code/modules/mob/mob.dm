@@ -14,12 +14,16 @@
 			var/mob/dead/observe = M
 			observe.reset_perspective(null)
 	qdel(hud_used)
-	for(var/cc in client_colours)
-		qdel(cc)
+	QDEL_LIST(client_colours)
+	clear_client_in_contents()
 	QDEL_LIST(mob_spell_list)
 	QDEL_LIST(actions)
 	client_colours = null
 	ghostize()
+
+	if(mind && mind.current == src)
+		mind.current = null
+
 	return ..()
 
 /mob/Initialize()
@@ -1118,3 +1122,9 @@ GLOBAL_VAR_INIT(exploit_warn_spam_prevention, 0)
  */
 /mob/proc/on_item_dropped(obj/item/I)
 	return
+
+/mob/proc/clear_client_in_contents()
+	if(client?.movingmob) //In the case the client was transferred to another mob and not deleted.
+		client.movingmob.client_mobs_in_contents -= src
+		UNSETEMPTY(client.movingmob.client_mobs_in_contents)
+		client.movingmob = null

@@ -587,6 +587,7 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 	)
 	if(!query_client_in_db.Execute())
 		qdel(query_client_in_db)
+		SSmouse_entered.hovers -= src
 		return
 
 	//If we aren't an admin, and the flag is set
