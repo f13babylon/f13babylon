@@ -140,7 +140,7 @@
 	fire_delay = 5
 	recoil = 0.15
 	fire_sound = 'sound/f13weapons/brushgunfire.ogg'
-	extra_penetration = 0.12
+
 
 //Medicine Stick						Keywords: .45-70, Lever action, 8 round internal, Long barrel, Unique
 /obj/item/gun/ballistic/rifle/repeater/brush/medistick
@@ -152,7 +152,7 @@
 	fire_delay = 4
 	recoil = 0.10
 	fire_sound = 'sound/f13weapons/brushgunfire.ogg'
-	extra_penetration = 0.15
+	extra_penetration = 0.05		//25% AP Total
 
 
 ////////////////////////
@@ -170,7 +170,7 @@
 	fire_delay = 5
 	extra_speed = 600
 	extra_damage = 4
-	extra_penetration = 0.15
+	extra_penetration = 0.1		//15-20% Total AP
 	spread = 0
 	force = 18
 	can_scope = TRUE
@@ -197,7 +197,7 @@
 	fire_delay = 5
 	extra_speed = 800
 	extra_damage = 10
-	extra_penetration = 0.3
+	extra_penetration = 0.2		//25-30% AP Total
 	force = 18
 
 /obj/item/gun/ballistic/rifle/hunting/remington/attackby(obj/item/A, mob/user, params) //DO NOT BUBBA YOUR STANDARD ISSUE RIFLE SOLDIER!
@@ -224,8 +224,8 @@
 	zoom_out_amt = 13
 	can_scope = FALSE
 	extra_speed = 1000
-	extra_penetration = 0.7
-	extra_damage = 10.4
+	extra_penetration = 0.6		//65-70% Total AP
+	extra_damage = 10
 
 /obj/item/gun/ballistic/rifle/hunting/paciencia/attackby(obj/item/A, mob/user, params) //no sawing off this one
 	if(istype(A, /obj/item/circular_saw) || istype(A, /obj/item/gun/energy/plasmacutter))

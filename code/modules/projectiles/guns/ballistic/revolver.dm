@@ -381,7 +381,7 @@
 	recoil = 0.5
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
 	extra_damage = 9
-	extra_penetration = 0.08
+	extra_penetration = 0.05		//10-15% AP Total
 
 //Colt 6520 Revolver			Keywords: 10mm, Semi-Automatic, 12 rounds internal, Revolver - Somehow! (Balanced around N99 - that can take attach, this can't)
 /obj/item/gun/ballistic/revolver/colt6520

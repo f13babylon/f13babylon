@@ -303,7 +303,7 @@
 	recoil = 3.5 //Debilitating
 	spread = 6
 	extra_damage = 6
-	extra_penetration = 0.12
+	extra_penetration = 0.05		//15% AP Total
 	can_suppress = FALSE
 	automatic_burst_overlay = FALSE
 	fire_sound = 'sound/f13weapons/44mag.ogg'
@@ -374,7 +374,7 @@
 	w_class = WEIGHT_CLASS_SMALL
 	fire_delay = 5
 	extra_damage = 6
-	extra_penetration = 0.35
+	extra_penetration = 0.15	//35% AP Total
 
 /obj/item/gun/ballistic/automatic/pistol/pistol14/custom
 	name= "Custom 14mm pistol" //IDK WTF THIS IS

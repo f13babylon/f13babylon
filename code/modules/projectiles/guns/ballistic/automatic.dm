@@ -350,7 +350,7 @@
 	spread = 12
 	recoil = 0.8
 	extra_damage = -7			//25 DAM
-	extra_penetration = 0.20	//20% AP
+	extra_penetration = 0.1		//30% AP Total
 
 ////////////////////
 //SEMI-AUTO RIFLES//
@@ -461,7 +461,7 @@
 	suppressor_x_offset = 31
 	suppressor_y_offset = 15
 	fire_sound = 'sound/f13weapons/marksman_rifle.ogg'
-	extra_penetration = 0.2
+	extra_penetration = 0.1		//15-20% AP Total
 	extra_damage = 2
 
 //Colt Rangemaster				Keywords: 7.62mm, Semi-auto, 10/20 round magazine, 35dmg
@@ -489,7 +489,7 @@
 	scope_x_offset = 4
 	scope_y_offset = 11
 	fire_sound = 'sound/f13weapons/762rifle.ogg'
-	extra_penetration = 0.2
+	extra_penetration = 0.15	//20-25% AP Total
 
 //M1 Garand					Keywords: .308, Semi-auto, 8 rounds internal
 /obj/item/gun/ballistic/automatic/m1garand
@@ -590,7 +590,7 @@
 	can_automatic = FALSE
 	can_bayonet = FALSE
 	fire_sound = 'sound/f13weapons/762rifle.ogg'
-	extra_penetration = 0.25
+	extra_penetration = 0.15		//20-25% AP Total
 	extra_damage = 10
 
 /obj/item/gun/ballistic/automatic/marksman/sniper/gold
@@ -706,7 +706,7 @@
 	init_mag_type = /obj/item/ammo_box/magazine/m556mm/extended
 	spread = 4
 	recoil = 0.6
-	extra_penetration = 0.3		//30% AP
+	extra_penetration = 0.2		//25-30% AP Total
 	zoomable = TRUE
 	zoom_amt = 8
 	zoom_out_amt = 11
@@ -858,7 +858,7 @@
 	spread = 6
 	recoil = 0.6
 	extra_damage = -5			//30 DAM
-	extra_penetration = 0.2		//20% AP
+	extra_penetration = 0.1		//20% AP Total
 	extra_speed = 200			//200 Extra Speed
 	zoomable = TRUE
 	zoom_amt = 8
