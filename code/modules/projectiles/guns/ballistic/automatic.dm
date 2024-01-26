@@ -580,7 +580,7 @@
 	icon_state = "sniper_rifle"
 	item_state = "sniper_rifle"
 	mag_type = /obj/item/ammo_box/magazine/w308
-	fire_delay = 8
+	fire_delay = 9
 	burst_size = 1
 	extra_speed = 900
 	slowdown = 0.3
