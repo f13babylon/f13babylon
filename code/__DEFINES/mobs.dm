@@ -351,7 +351,7 @@
 #define HIDE_OFFLINE_INDICATOR (1<<0)
 
 //Respawn timer
-#define RESPAWN_TIMER 0
+#define RESPAWN_TIMER 1500	//Timed in deciseconds, the time to wait before allowing respawn. Ex - 5 min = 5 * 60 (seconds in mute) * 5 (seconds to deciseconds)
 
 ///Define for spawning megafauna instead of a mob for cave gen
 #define SPAWN_MEGAFAUNA "bluh bluh huge boss"
