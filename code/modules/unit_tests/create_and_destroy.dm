@@ -48,7 +48,7 @@ GLOBAL_VAR_INIT(running_create_and_destroy, FALSE)
 		/obj/item/locked_box/weapon/melee,
 		/obj/item/locked_box/weapon/range,
 		//needs a mob passed to view it
-		/obj/screen/credit,
+		/atom/movable/screen/credit,
 		//template type
 		/obj/effect/landmark/poster_spawner,
 		//not guaranteed to have a dock to ripple
