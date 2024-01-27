@@ -17,12 +17,12 @@
 		allowed = GLOB.security_vest_allowed
 */
 
-// Temporal fix until digitigrade-adapted sprites are done
+// The temporary fix that was here, for a lack of digitigrade sprites, was causing a lot of missing suits, better off having non-digi sprites on digi creatures than no sprites at all.
 /obj/item/clothing/suit/armor/f13
-	mutantrace_variation = NONE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/toggle/armor/f13
-	mutantrace_variation = NONE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 //Leather and metal
 /obj/item/clothing/suit/armor/f13/leather_jacket
