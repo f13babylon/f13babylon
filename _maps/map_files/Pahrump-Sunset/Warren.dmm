@@ -776,12 +776,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"aDZ" = (
-/obj/machinery/door/unpowered/secure_NCR,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain0"
-	},
-/area/f13/wasteland)
 "aEg" = (
 /obj/machinery/light/broken{
 	dir = 1
@@ -1533,11 +1527,6 @@
 	},
 /turf/open/indestructible/ground/outside/savannah/topcenter,
 /area/f13/wasteland/ncr)
-"bkI" = (
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "verticalrightborderleft0"
-	},
-/area/f13/wasteland)
 "blh" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticaloutermain0"
@@ -4200,10 +4189,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/wood_common,
 /area/f13/building)
-"dyM" = (
-/obj/structure/barricade/wooden/strong,
-/turf/closed/wall/r_wall,
-/area/f13/wasteland)
 "dza" = (
 /obj/effect/overlay/turfs/cliff/alt{
 	pixel_y = -16
@@ -6817,17 +6802,6 @@
 	icon_state = "black"
 	},
 /area/f13/building)
-"fRs" = (
-/obj/structure/table/reinforced,
-/obj/structure/barricade/bars{
-	max_integrity = 800;
-	name = "strong metal bars";
-	obj_integrity = 800
-	},
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticalrightborderright0"
-	},
-/area/f13/wasteland)
 "fRH" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -7210,9 +7184,6 @@
 	icon_state = "horizontalbottomborderbottom0"
 	},
 /area/f13/wasteland/warren)
-"gjI" = (
-/turf/closed/wall/r_wall,
-/area/f13/wasteland)
 "gjQ" = (
 /obj/structure/window/fulltile/house/broken,
 /turf/open/floor/f13{
@@ -7640,17 +7611,6 @@
 	icon_state = "bar"
 	},
 /area/f13/building)
-"gAO" = (
-/obj/structure/barricade/bars{
-	max_integrity = 800;
-	name = "strong metal bars";
-	obj_integrity = 800
-	},
-/obj/structure/table/reinforced,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain0"
-	},
-/area/f13/wasteland)
 "gAW" = (
 /obj/machinery/light,
 /turf/open/floor/f13{
@@ -8135,17 +8095,6 @@
 /obj/item/reagent_containers/food/snacks/f13/sugarbombs,
 /turf/open/floor/wood/wood_common,
 /area/f13/building)
-"hbY" = (
-/obj/structure/table/reinforced,
-/obj/structure/barricade/bars{
-	max_integrity = 800;
-	name = "strong metal bars";
-	obj_integrity = 800
-	},
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain1"
-	},
-/area/f13/wasteland)
 "hdd" = (
 /obj/structure/closet/crate,
 /obj/effect/spawner/lootdrop/f13/traitbooks,
@@ -9438,12 +9387,6 @@
 	},
 /turf/open/floor/wood/wood_fancy,
 /area/f13/building)
-"iil" = (
-/obj/machinery/door/unpowered/secure_NCR,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticalrightborderright0"
-	},
-/area/f13/wasteland)
 "iim" = (
 /obj/machinery/light/small,
 /obj/item/flashlight/lamp/green{
@@ -9652,12 +9595,6 @@
 	icon_state = "horizontaltopbordertop2left"
 	},
 /area/f13/wasteland/warren)
-"ipz" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "verticalleftborderright0"
-	},
-/area/f13/wasteland)
 "ipU" = (
 /obj/structure/window/fulltile/wood,
 /obj/structure/barricade/bars,
@@ -10894,11 +10831,6 @@
 	},
 /turf/open/floor/carpet/black,
 /area/f13/building)
-"jyV" = (
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "verticalleftborderright0"
-	},
-/area/f13/wasteland)
 "jzk" = (
 /turf/open/indestructible/ground/outside/road{
 	dir = 8;
@@ -15781,15 +15713,6 @@
 	icon_state = "horizontaltopborderbottomleft"
 	},
 /area/f13/wasteland/warren)
-"nPr" = (
-/obj/machinery/door/poddoor/gate{
-	id = "ncrgate";
-	name = "outpost gate"
-	},
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "verticalleftborderright0"
-	},
-/area/f13/wasteland)
 "nPB" = (
 /mob/living/simple_animal/hostile/renegade/drifter,
 /turf/open/indestructible/ground/outside/road,
@@ -16379,15 +16302,6 @@
 	},
 /turf/open/indestructible/ground/outside/savannah/cornersnew,
 /area/f13/wasteland/warren)
-"osZ" = (
-/obj/structure/table/reinforced,
-/obj/structure/barricade/bars{
-	max_integrity = 800;
-	name = "strong metal bars";
-	obj_integrity = 800
-	},
-/turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/wasteland)
 "oth" = (
 /obj/structure/chair/stool/f13stool,
 /turf/open/indestructible/ground/outside/dirt,
@@ -17181,8 +17095,7 @@
 /area/f13/ncr)
 "pee" = (
 /turf/open/floor/f13{
-	icon_state = "blue";
-	dir = 2
+	icon_state = "blue"
 	},
 /area/f13/ncr)
 "peu" = (
@@ -17677,12 +17590,6 @@
 	icon_state = "tealwhrustychess"
 	},
 /area/f13/building)
-"pGf" = (
-/obj/machinery/door/unpowered/secure_NCR,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "verticalleftborderright0"
-	},
-/area/f13/wasteland)
 "pGi" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
@@ -20183,12 +20090,6 @@
 	icon_state = "verticaloutermain0"
 	},
 /area/f13/wasteland/warren)
-"rDQ" = (
-/obj/machinery/door/unpowered/secure_NCR,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain1"
-	},
-/area/f13/wasteland)
 "rDX" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -20870,11 +20771,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid,
 /area/f13/ncr)
-"smU" = (
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticalleftborderleft0"
-	},
-/area/f13/wasteland)
 "smW" = (
 /obj/structure/curtain,
 /turf/open/floor/plasteel{
@@ -21458,11 +21354,6 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/building)
-"sKR" = (
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain0"
-	},
-/area/f13/wasteland)
 "sKT" = (
 /obj/structure/table/wood/junk,
 /obj/item/trash/f13/steak{
@@ -23508,17 +23399,6 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/building)
-"ure" = (
-/obj/structure/barricade/bars{
-	max_integrity = 800;
-	name = "strong metal bars";
-	obj_integrity = 800
-	},
-/obj/structure/table/reinforced,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "horizontaloutermain0"
-	},
-/area/f13/wasteland)
 "urT" = (
 /turf/open/floor/wood/wood_fancy,
 /area/f13/building)
@@ -25223,18 +25103,6 @@
 	icon_state = "dark"
 	},
 /area/f13/building)
-"vHT" = (
-/obj/structure/table/reinforced,
-/obj/structure/barricade/bars{
-	max_integrity = 800;
-	name = "strong metal bars";
-	obj_integrity = 800
-	},
-/turf/open/indestructible/ground/outside/sidewalk{
-	dir = 1;
-	icon_state = "outerborder"
-	},
-/area/f13/wasteland)
 "vIr" = (
 /obj/structure/toilet{
 	dir = 8
@@ -26703,12 +26571,6 @@
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/ncr)
-"xaN" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain0"
-	},
-/area/f13/wasteland)
 "xaR" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt{
@@ -27174,10 +27036,6 @@
 	},
 /turf/open/floor/wood/wood_wide,
 /area/f13/building)
-"xst" = (
-/obj/item/flag/ncr,
-/turf/closed/wall/r_wall,
-/area/f13/wasteland)
 "xsP" = (
 /obj/structure/fence/wooden{
 	dir = 1;
@@ -49449,11 +49307,11 @@ jLg
 jLg
 jLg
 jLg
-gjI
-osZ
-osZ
-gjI
-gjI
+jLg
+jLg
+jLg
+jLg
+jLg
 jLg
 jLg
 qZx
@@ -49706,11 +49564,11 @@ jLg
 jLg
 jLg
 jLg
-osZ
-smU
-smU
-smU
-xst
+jLg
+jLg
+jLg
+jLg
+jLg
 jLg
 jLg
 iqT
@@ -49963,11 +49821,11 @@ jLg
 jLg
 jLg
 jLg
-osZ
-jyV
-ipz
-ipz
-nPr
+jLg
+jLg
+jLg
+jLg
+jLg
 jLg
 jLg
 iqT
@@ -50220,11 +50078,11 @@ jLg
 jLg
 jLg
 jLg
-osZ
-sKR
-sKR
-xaN
-xaN
+jLg
+jLg
+jLg
+jLg
+jLg
 jLg
 jLg
 iqT
@@ -50477,11 +50335,11 @@ jLg
 jLg
 jLg
 jLg
-osZ
-sKR
-bkI
-bkI
-bkI
+jLg
+jLg
+jLg
+jLg
+jLg
 jLg
 jLg
 iqT
@@ -50734,11 +50592,11 @@ jLg
 jLg
 jLg
 jLg
-gjI
-rDQ
-gjI
-iil
-dyM
+jLg
+jLg
+jLg
+jLg
+jLg
 jLg
 jLg
 dlr
@@ -51506,10 +51364,10 @@ jLg
 jLg
 jLg
 jLg
-osZ
-ure
-gjI
-gjI
+jLg
+jLg
+jLg
+jLg
 jLg
 jLg
 qZx
@@ -51763,10 +51621,10 @@ jLg
 jLg
 jLg
 jLg
-osZ
-smU
-smU
-xst
+jLg
+jLg
+jLg
+jLg
 jLg
 jLg
 qZx
@@ -52020,10 +51878,10 @@ jLg
 jLg
 jLg
 jLg
-pGf
-ipz
-ipz
-nPr
+jLg
+jLg
+jLg
+jLg
 jLg
 jLg
 qZx
@@ -52277,10 +52135,10 @@ jLg
 jLg
 jLg
 jLg
-gAO
-sKR
-xaN
-xaN
+jLg
+jLg
+jLg
+jLg
 jLg
 jLg
 qZx
@@ -52534,10 +52392,10 @@ jLg
 jLg
 jLg
 jLg
-aDZ
-bkI
-bkI
-bkI
+jLg
+jLg
+jLg
+jLg
 jLg
 jLg
 qZx
@@ -52791,10 +52649,10 @@ jLg
 jLg
 jLg
 jLg
-hbY
-vHT
-fRs
-dyM
+jLg
+jLg
+jLg
+jLg
 jLg
 jLg
 qZx
