@@ -9,6 +9,22 @@
 	obj_integrity = 500
 	req_one_access_txt = null // Add the channel for the ID you want to lock this door to, check defines.
 
+/obj/machinery/door/unpowered/try_to_activate_door(mob/user)
+	. = ..()
+	if(!allowed(user))
+		if(cooldown < world.time)
+			playsound(src.loc, pick('sound/block_parry/block_wood1.ogg', 'sound/block_parry/block_wood2.ogg'), 40, 0, 0)
+			cooldown = world.time + 15
+			return
+
+/obj/machinery/door/unpowered/bumpopen(mob/user)
+	. = ..()
+	if(!allowed(user))
+		if(cooldown < world.time)
+			playsound(src.loc, pick('sound/block_parry/block_wood1.ogg', 'sound/block_parry/block_wood2.ogg'), 40, 0, 0)
+			cooldown = world.time + 15
+			return
+
 // ------------------------------------
 // SECURE DOOR
 
@@ -34,7 +50,6 @@
 		if("closing")
 			playsound(src,'sound/machines/door_close.ogg',40,1)
 			flick("secure_closing", src)
-
 
 // SECURE DOOR - LEGION
 
