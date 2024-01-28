@@ -233,6 +233,10 @@
 #define TRAIT_ENCLAVE_CODES		"old_world_codes" //Permits players to open the Vault.
 /// Prevents usage of manipulation appendages (picking, holding or using items, manipulating storage).
 #define TRAIT_HANDS_BLOCKED "handsblocked"
+/// Someone can safely be attacked with honorbound with ONLY a combat mode check, the trait is assuring holding a weapon and hitting won't hurt them..
+#define TRAIT_ALLOWED_HONORBOUND_ATTACK "allowed_honorbound_attack"
+/// Trait applied by element
+#define ELEMENT_TRAIT(source) "element_trait_[source]"
 
 // mobility flag traits
 // IN THE FUTURE, IT WOULD BE NICE TO DO SOMETHING SIMILAR TO https://github.com/tgstation/tgstation/pull/48923/files (ofcourse not nearly the same because I have my.. thoughts on it)

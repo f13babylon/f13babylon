@@ -352,9 +352,9 @@
 	w_class = WEIGHT_CLASS_TINY
 	attack_verb = list("slapped")
 
-/obj/item/surgical_drapes/attack(mob/living/M, mob/user)
-	if(!attempt_initiate_surgery(src, M, user))
-		..()
+/obj/item/surgical_drapes/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/surgery_initiator)
 
 /obj/item/surgical_drapes/advanced
 	name = "smart surgical drapes"
