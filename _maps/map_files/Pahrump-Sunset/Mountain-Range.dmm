@@ -887,17 +887,17 @@
 	pixel_y = 3
 	},
 /obj/item/reagent_containers/food/drinks/bottle/instacoffee/enclave{
-	step_x = -10;
-	step_y = 10
+	pixel_x = -10;
+	pixel_y = 10
 	},
 /obj/item/reagent_containers/food/drinks/bottle/instacocoa/enclave{
-	step_x = -10;
-	step_y = -6;
+	pixel_x = -10;
+	pixel_y = -6;
 	layer = 4
 	},
 /obj/item/reagent_containers/food/drinks/bottle/instatea/enclave{
-	step_x = -10;
-	step_y = 2
+	pixel_x = -10;
+	pixel_y = 2
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/enclave/mess)
