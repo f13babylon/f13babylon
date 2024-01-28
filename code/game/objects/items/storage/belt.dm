@@ -329,11 +329,6 @@
 	item_state = "militarywebbing"
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
 
-/obj/item/storage/belt/military/ComponentInitialize()
-	. = ..()
-	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_w_class = WEIGHT_CLASS_SMALL
-
 /obj/item/storage/belt/military/snack
 	name = "tactical snack rig"
 
@@ -404,11 +399,6 @@
 	desc = "A tactical assault belt."
 	icon_state = "assaultbelt"
 	item_state = "security"
-
-/obj/item/storage/belt/military/assault/ComponentInitialize()
-	. = ..()
-	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_items = 7
 
 /obj/item/storage/belt/durathread
 	name = "durathread toolbelt"
@@ -631,7 +621,7 @@
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_items = 4
 	STR.max_w_class = WEIGHT_CLASS_NORMAL
-	STR.max_combined_w_class = WEIGHT_CLASS_NORMAL * 2 + WEIGHT_CLASS_TINY * 2		//At most, 2 NORMAL-sized pistols and 2 magazines for them
+	STR.max_combined_w_class = WEIGHT_CLASS_NORMAL + WEIGHT_CLASS_TINY * 3		//At most, 1 NORMAL-sized pistol and 3 magazines for it (Or 3 small pistols, 4 tiny pistols, etc.)
 	CANHOLD_STATIC(STR, typecacheof(list(
 		/obj/item/gun/ballistic/automatic/pistol,
 		/obj/item/ammo_box/magazine/m22,
