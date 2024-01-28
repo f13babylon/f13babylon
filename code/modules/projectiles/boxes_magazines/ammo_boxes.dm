@@ -59,7 +59,7 @@
 	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/a22
 	max_ammo = 40
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
 	custom_materials = list(/datum/material/iron = 6000, /datum/material/blackpowder = 1000)
 
 /obj/item/ammo_box/m22/shock
@@ -77,6 +77,7 @@
 	caliber = "9mm"
 	ammo_type = /obj/item/ammo_casing/c9mm
 	max_ammo = 30
+	w_class = WEIGHT_CLASS_NORMAL
 	custom_materials = list(/datum/material/iron = 15000, /datum/material/blackpowder = 1000)
 
 /obj/item/ammo_box/c9mm/incendiary
@@ -100,6 +101,7 @@
 	caliber = "38"
 	ammo_type = /obj/item/ammo_casing/c38
 	max_ammo = 30
+	w_class = WEIGHT_CLASS_NORMAL
 	custom_materials = list(/datum/material/iron = 10000, /datum/material/blackpowder = 1000)
 
 /obj/item/ammo_box/c38box/incendiary
@@ -123,8 +125,8 @@
 	ammo_type = /obj/item/ammo_casing/c10mm
 	caliber = "10mm"
 	max_ammo = 30
+	w_class = WEIGHT_CLASS_NORMAL
 	custom_materials = list(/datum/material/iron = 10000, /datum/material/blackpowder = 1000)
-
 
 /obj/item/ammo_box/c10mm/fire
 	name = "ammo box (10mm incendiary-tipped)"
@@ -211,6 +213,7 @@
 	icon_state = "45box"
 	ammo_type = /obj/item/ammo_casing/c45
 	max_ammo = 30
+	w_class = WEIGHT_CLASS_NORMAL
 	custom_materials = list(/datum/material/iron = 10000, /datum/material/blackpowder = 1000)
 
 /obj/item/ammo_box/c45/incendiary
@@ -350,6 +353,7 @@
 	ammo_type = /obj/item/ammo_casing/a40mmHE
 	max_ammo = 4
 	multiple_sprites = 1
+	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/ammo_box/a40mmHEDP
 	name = "ammo box (40mm HEDP grenades)"
@@ -358,6 +362,7 @@
 	ammo_type = /obj/item/ammo_casing/a40mmHEDP
 	max_ammo = 4
 	multiple_sprites = 1
+	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/ammo_box/a40mmCS
 	name = "ammo box (40mm CS grenades)"
@@ -365,6 +370,7 @@
 	ammo_type = /obj/item/ammo_casing/a40mmCS
 	max_ammo = 4
 	multiple_sprites = 1
+	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/ammo_box/a40mmS
 	name = "ammo box (40mm SMOKE grenades)"
@@ -372,6 +378,7 @@
 	ammo_type = /obj/item/ammo_casing/a40mmS
 	max_ammo = 4
 	multiple_sprites = 1
+	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/ammo_box/a40mmM
 	name = "ammo box (40mm METAL grenades)"
@@ -379,6 +386,7 @@
 	ammo_type = /obj/item/ammo_casing/a40mmM
 	max_ammo = 4
 	multiple_sprites = 1
+	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/ammo_box/a40mmF
 	name = "ammo box (40mm FLASH grenades)"
@@ -386,6 +394,7 @@
 	ammo_type = /obj/item/ammo_casing/a40mmF
 	max_ammo = 4
 	multiple_sprites = 1
+	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/ammo_box/a40mmI
 	name = "ammo box (40mm INCENDARY grenades)"
@@ -393,6 +402,7 @@
 	ammo_type = /obj/item/ammo_casing/a40mmI
 	max_ammo = 4
 	multiple_sprites = 1
+	w_class = WEIGHT_CLASS_NORMAL
 
 ////////////////
 //SPEEDLOADERS//
