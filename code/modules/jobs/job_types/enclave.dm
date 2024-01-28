@@ -194,10 +194,10 @@
 
 /datum/outfit/loadout/lt_frontline
 	name = "Frontline Commanding Officer"
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/deagle/elcapitan
+	suit_store = /obj/item/gun/ballistic/revolver/m29/peacekeeper
 	suit = /obj/item/clothing/suit/armor/f13/usmcriot
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m14mm  = 3
+		/obj/item/ammo_box/m44box = 2,
 	)
 
 // Gunnery Sergeant

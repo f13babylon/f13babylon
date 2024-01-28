@@ -119,8 +119,8 @@
 				clear_fullscreen("nearsighted")
 				clear_fullscreen("eye_damage")
 				if(HAS_TRAIT(src,TRAIT_NEARSIGHT_MEGA))
-					overlay_fullscreen("fevnearsighted", /obj/screen/fullscreen/impaired, 1) //Impaired
-					overlay_fullscreen("glassnearsighted", /obj/screen/fullscreen/blurry, 1) //Blurred vision
+					overlay_fullscreen("fevnearsighted", /atom/movable/screen/fullscreen/impaired, 1) //Impaired
+					overlay_fullscreen("glassnearsighted", /atom/movable/screen/fullscreen/blurry, 1) //Blurred vision
 			if(G.vision_flags || G.darkness_view || G.invis_override || G.invis_view || !isnull(G.lighting_alpha))
 				update_sight()
 			update_inv_glasses()
@@ -212,9 +212,9 @@
 			update_tint()
 		if(G.vision_correction)
 			if(HAS_TRAIT(src, TRAIT_NEARSIGHT) && !HAS_TRAIT(src,TRAIT_NEARSIGHT_MEGA)) //Makes mega-nearsighted ALWAYS take precedent
-				overlay_fullscreen("nearsighted", /obj/screen/fullscreen/impaired, 1)
+				overlay_fullscreen("nearsighted", /atom/movable/screen/fullscreen/impaired, 1)
 			if(HAS_TRAIT(src,TRAIT_NEARSIGHT_MEGA))
-				overlay_fullscreen("nearsighted", /obj/screen/fullscreen/impaired, 2)
+				overlay_fullscreen("nearsighted", /atom/movable/screen/fullscreen/impaired, 2)
 				clear_fullscreen("glassnearsighted")
 		if(G.vision_flags || G.darkness_view || G.invis_override || G.invis_view || !isnull(G.lighting_alpha))
 			update_sight()

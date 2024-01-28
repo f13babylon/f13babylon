@@ -204,9 +204,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/outfit/loadout/ncrcptmelee
 	name = "Backline Support"
 	suit = /obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/officer/captain/coat
-	suit_store = /obj/item/gun/ballistic/revolver/m29/peacekeeper
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/deagle/elcapitan
 	backpack_contents = list(
-		/obj/item/ammo_box/m44box = 2,
+		/obj/item/ammo_box/magazine/m14mm = 3,
 	)
 
 /datum/outfit/loadout/ncrcptshotgun

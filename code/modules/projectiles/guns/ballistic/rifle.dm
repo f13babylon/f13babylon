@@ -29,8 +29,9 @@
 	casing_ejector = FALSE
 	var/recentpump = 0 // to prevent spammage
 	spawnwithmagazine = TRUE
-	var/pump_sound = 'sound/weapons/shotgunpump.ogg'
 	fire_sound = 'sound/f13weapons/shotgun.ogg'
+	gun_slide = 'sound/weapons/guns/slide_bolt.ogg'
+	var/pump_sound = 'sound/weapons/guns/bolt_cycle.ogg'
 	var/pump_stam_cost = 2
 
 /obj/item/gun/ballistic/rifle/process_chamber(mob/living/user, empty_chamber = 0)
@@ -177,7 +178,7 @@
 	scope_state = "scope_long"
 	scope_x_offset = 4
 	scope_y_offset = 12
-	pump_sound = 'sound/weapons/boltpump.ogg'
+	pump_sound = 'sound/weapons/guns/bolt_cycle.ogg'
 	fire_sound = 'sound/f13weapons/762rifle.ogg'
 
 /obj/item/gun/ballistic/rifle/hunting/attackby(obj/item/A, mob/user, params)
@@ -291,7 +292,7 @@
 		AC.bounce_away()
 		chambered = null
 		to_chat(user, "<span class='notice'>You unload the round from \the [src]'s chamber.</span>")
-		playsound(src, "gun_slide_lock", 70, 1)
+		playsound(src, gun_slide, 70, 1)
 	else
 		to_chat(user, "<span class='notice'>There's no magazine in \the [src].</span>")
 	update_icon()
@@ -323,7 +324,7 @@
 	suppressor_x_offset = 27
 	suppressor_y_offset = 31
 	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
-	pump_sound = 'sound/weapons/boltpump.ogg'
+	pump_sound = 'sound/weapons/guns/bolt_cycle.ogg'
 	can_scope = TRUE
 
 //'Verminkiller'									Keywords: 5.56, Bolt-action, 10/20/30 round magazine, Suppressed, Scoped

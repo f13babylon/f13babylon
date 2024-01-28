@@ -774,7 +774,7 @@
 		button_icon_state = "slimeeject"
 	..()
 
-/datum/action/innate/integrate_extract/ApplyIcon(obj/screen/movable/action_button/current_button, force)
+/datum/action/innate/integrate_extract/ApplyIcon(atom/movable/screen/movable/action_button/current_button, force)
 	..(current_button, TRUE)
 	var/datum/species/jelly/luminescent/species = target
 	if(species && species.current_extract)
@@ -825,7 +825,7 @@
 			return TRUE
 		return FALSE
 
-/datum/action/innate/use_extract/ApplyIcon(obj/screen/movable/action_button/current_button, force)
+/datum/action/innate/use_extract/ApplyIcon(atom/movable/screen/movable/action_button/current_button, force)
 	..(current_button, TRUE)
 	var/datum/species/jelly/luminescent/species = target
 	if(species && species.current_extract)

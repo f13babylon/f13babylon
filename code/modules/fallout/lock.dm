@@ -22,7 +22,7 @@ GLOBAL_LIST_EMPTY(global_locks)
 	if(iskey(I))
 		var/obj/item/key/K = I
 		if(!K.lock_data)
-			to_chat(user, "<span class='notice'>You fashion \the [I] to unlock \the [src]</span>")
+			to_chat(user, "<span class='notice'>You fashion \the [I] to unlock \the [src].</span>")
 			K.lock_data = lock_data
 			K.desc = "A simple key for locks. It has [K.lock_data] engraved on it."
 		else

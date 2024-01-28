@@ -324,6 +324,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_medium.dmi'
 	icon_state = "legion_combat"
 	item_state = "legion_combat"
+	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/legion					//Legion Reinforced Combat armor
 	name = "reinforced legion combat armor"
@@ -332,6 +333,7 @@
 	desc = "Pre-war military style armor, a full set with bracers and reinforcements. Modified and repainted to declare the user a fighter for Caesar's Legion."
 	icon_state = "legion_combat2"
 	item_state = "legion_combat2"
+	mutantrace_variation = NONE
 
 ///////
 //NCR//
@@ -500,12 +502,14 @@
 	desc = "An old military grade pre war combat armor and, repainted to the colour scheme of the New California Republic."
 	icon_state = "ncr_armor"
 	item_state = "ncr_armor"
+	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/ncr
 	name = "reinforced NCR combat armor"
 	desc = "A reinforced set of bracers, greaves, and torso plating of prewar design. This one is kitted with additional plates and, repainted to the colour scheme of the New California Republic."
 	icon_state = "ncr_armor_mk2"
 	item_state = "ncr_armor_mk2"
+	mutantrace_variation = NONE
 
 //RANGERS
 /obj/item/clothing/suit/toggle/armor/f13/reconranger		//Recon Ranger armor
@@ -624,6 +628,7 @@
 	icon_state = "brotherhood_armor_knight"
 	item_state = "brotherhood_armor_knight"
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 55, "energy" = 20, "bomb" = 20, "bio" = 15, "rad" = 15, "fire" = 20, "acid" = 0, "wound" = 20)
+	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/senior
 	name = "brotherhood senior knight armor"
@@ -748,12 +753,14 @@
 	desc = "An old military grade pre war combat armor, now decorated with sinew and the bones of the hunted for its new wearer."
 	icon_state = "tribecombatarmor"
 	item_state = "tribecombatarmor"
+	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/tribal
 	name = "tribal reinforced combat armor"
 	desc = "An old military grade pre-war reinforced combat armor, now decorated with sinew and the bones of the hunted for its new wearer."
 	icon_state = "tribecombatarmor"
 	item_state = "tribecombatarmor"
+	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/armor/f13/tribe_armor
 	name = "light tribal armor"
@@ -828,6 +835,7 @@
 	icon_state = "enclave_new"
 	item_state = "enclave_new"
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 0, "wound" = 20)
+	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/enclave	//Technically it's own armor, but for balance simplicity, it's RCA
 	name = "old United States Marine Corp Armor"
@@ -835,6 +843,7 @@
 	icon_state = "enclave_marine"
 	item_state = "enclave_marine"
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 25)
+	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/armor/f13/usmcriot
 	name = "old United States Marine Corp riot suit"
@@ -884,6 +893,7 @@
 	desc = "A dark armor, used commonly in espionage or shadow ops."
 	icon_state = "remnant"
 	item_state = "remnant"
+	mutantrace_variation = NONE
 
 //THE GRAVEYARD
 //UNUSED or LEGACY - RETAINED IN CASE DESIRED FOR ADMIN SPAWN OR REIMPLEMENATION. MAY NOT BE EVERYTHING THAT'S UNUSED. TEST BEFORE USING
@@ -914,6 +924,7 @@
 	mob_overlay_icon = 'icons/mob/clothing/suit.dmi'
 	icon_state = "combat_armor_sierra"
 	item_state = "combat_armor_sierra"
+	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/sierra
 	name = "reinforced mercenary combat armor"
@@ -922,3 +933,4 @@
 	mob_overlay_icon = 'icons/mob/clothing/suit.dmi'
 	icon_state = "combat_armor_sierra_mk2"
 	item_state = "combat_armor_sierra_mk2"
+	mutantrace_variation = NONE

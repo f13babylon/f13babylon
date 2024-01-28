@@ -450,6 +450,12 @@
 	icon_state = "instatea"
 	list_reagents = list(/datum/reagent/toxin/teapowder = 98, /datum/reagent/radium = 2)
 
+/obj/item/reagent_containers/food/drinks/bottle/instatea/enclave
+	name = "Silician Instatea"
+	desc = "Pre-war powerdered canned tea powder, marked 'SAFE FOR CONSUMPTION', with an Enclave seal on the top."
+	icon_state = "instatea"
+	list_reagents = list(/datum/reagent/toxin/teapowder = 100)
+
 /obj/item/reagent_containers/food/drinks/soda_cans/cream
 	name = "canned cream"
 	desc = "It's a can of cream. Made from milk. What else did you think you'd find in there?"
@@ -466,11 +472,23 @@
 	icon_state = "instachoc"
 	list_reagents = list(/datum/reagent/consumable/coco = 98, /datum/reagent/radium = 2)
 
+/obj/item/reagent_containers/food/drinks/bottle/instacocoa/enclave
+	name = "Silician Instacocoa"
+	desc = "Pre-war powerdered canned dried chocolate mix, marked 'SAFE FOR CONSUMPTION', with an Enclave seal on the top."
+	icon_state = "instachoc"
+	list_reagents = list(/datum/reagent/consumable/coco = 100)
+
 /obj/item/reagent_containers/food/drinks/bottle/instacoffee
 	name = "Silician Instacoffee"
 	desc = "Pre-war powerdered canned coffee."
 	icon_state = "instacoffee"
 	list_reagents = list(/datum/reagent/toxin/coffeepowder = 98, /datum/reagent/radium = 2)
+
+/obj/item/reagent_containers/food/drinks/bottle/instacoffee/enclave
+	name = "Silician Instacoffee"
+	desc = "Pre-war powerdered canned coffee, marked 'SAFE FOR CONSUMPTION', with an Enclave seal on the top."
+	icon_state = "instacoffee"
+	list_reagents = list(/datum/reagent/toxin/coffeepowder = 100)
 
 /obj/item/reagent_containers/food/drinks/bottle/vim
 	name = "Vim"

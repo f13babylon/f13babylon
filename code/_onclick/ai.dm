@@ -25,7 +25,7 @@
 	if(multicam_on)
 		var/turf/T = get_turf(A)
 		if(T)
-			for(var/obj/screen/movable/pic_in_pic/ai/P in T.vis_locs)
+			for(var/atom/movable/screen/movable/pic_in_pic/ai/P in T.vis_locs)
 				if(P.ai == src)
 					P.Click(params)
 					break
@@ -113,7 +113,7 @@
 	A.AICtrlClick(src)
 /mob/living/silicon/ai/AltClickOn(atom/A)
 	A.AIAltClick(src)
-	
+
 
 /*
 	The following criminally helpful code is just the previous code cleaned up;
