@@ -19,7 +19,6 @@
 	)))
 
 /obj/item/storage/survivalkit/PopulateContents()
-	. = ..()
 	new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
 	new /obj/item/stack/medical/gauze/improvised(src)
 	new /obj/item/stack/medical/suture/emergency(src)
@@ -34,7 +33,6 @@
 	icon = 'icons/fallout/clothing/khans.dmi'
 
 /obj/item/storage/survivalkit/khan/PopulateContents()
-	. = ..()
 	new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
 	new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
 	new /obj/item/reagent_containers/hypospray/medipen/medx(src)
@@ -48,7 +46,6 @@
 	desc = "A robust leather pouch containing the bare essentials for wasteland survival."
 
 /obj/item/storage/survivalkit/primitive/PopulateContents()
-	. = ..()
 	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
 	new /obj/item/stack/medical/gauze/improvised(src)
 	new /obj/item/stack/medical/suture/emergency(src)
@@ -61,7 +58,6 @@
 	desc = "A robust leather pouch containing essentials an outlaw might need in the wasteland."
 
 /obj/item/storage/survivalkit/outlaw/PopulateContents()
-	. = ..()
 	new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
 	new /obj/item/stack/medical/gauze(src)
 	new /obj/item/stack/medical/suture(src)
@@ -74,7 +70,6 @@
 	name = "improved primitive survival kit"
 
 /obj/item/storage/survivalkit/primitive/plus/PopulateContents()
-	. = ..()
 	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
 	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
 	new /obj/item/reagent_containers/pill/patch/healingpoultice(src)
@@ -87,7 +82,6 @@
 	desc = "A robust leather pouch containing the essentials for wasteland survival."
 
 /obj/item/storage/survivalkit/advanced/PopulateContents()
-	. = ..()
 	new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
 	new /obj/item/stack/medical/gauze(src)
 	new /obj/item/stack/medical/suture(src)
@@ -102,7 +96,6 @@
 	icon_state = "ifak"
 
 /obj/item/storage/survivalkit/firstaid/PopulateContents()
-	. = ..()
 	new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
 	new /obj/item/stack/medical/gauze(src)
 	new /obj/item/stack/medical/suture(src)
@@ -114,7 +107,6 @@
 	desc = "A robust leather pouch containing advanced trauma care tools."
 
 /obj/item/storage/survivalkit/firstaid/advanced/PopulateContents()
-	. = ..()
 	new /obj/item/reagent_containers/hypospray/medipen/stimpak/super(src)
 	new /obj/item/stack/medical/gauze/adv(src)
 	new /obj/item/stack/medical/suture/medicated(src)
@@ -127,4 +119,3 @@
 	desc = "A robust leather pouch."
 
 /obj/item/storage/survivalkit/empty/PopulateContents()
-	. = ..()
