@@ -40,7 +40,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	shoes = /obj/item/clothing/shoes/f13/military/ncr
 	l_pocket = /obj/item/book/manual/ncr/jobguide
 	backpack_contents = list(
-		/obj/item/storage/survivalkit_aid = 1,
+		/obj/item/storage/survivalkit/firstaid = 1,
 		)
 
 /datum/outfit/job/ncr/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -441,7 +441,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	r_pocket = /obj/item/binoculars
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bowie = 1,
-		/obj/item/storage/survivalkit_aid_adv = 1,
+		/obj/item/storage/survivalkit/firstaid/advanced = 1,
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 2,
 		/obj/item/grenade/smokebomb = 1,
@@ -773,7 +773,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	accessory = /obj/item/clothing/accessory/armband/med/ncr
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/survival = 1,
-		/obj/item/storage/survivalkit_aid_adv = 1,
+		/obj/item/storage/survivalkit/firstaid/advanced = 1,
 		/obj/item/storage/bag/money/small/ncrenlisted = 1,
 		/obj/item/storage/firstaid/regular = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1
@@ -1133,7 +1133,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/revolver45 = 1,
 		/obj/item/ammo_box/c45rev = 2,
-		/obj/item/storage/survivalkit_aid_adv = 1,
+		/obj/item/storage/survivalkit/firstaid/advanced = 1,
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/storage/firstaid/regular = 1,
 	)
