@@ -74,7 +74,6 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	gloves = /obj/item/clothing/gloves/f13/handwraps
-	r_pocket = /obj/item/flashlight/flare
 	backpack_contents = list(
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/storage/bag/money/small/raider = 1,
