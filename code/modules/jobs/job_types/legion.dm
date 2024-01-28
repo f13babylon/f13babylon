@@ -29,7 +29,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/job/CaesarsLegion
 	ears = null
-	box = null
+	box = /obj/item/storage/survivalkit/primitive
 
 /datum/outfit/job/CaesarsLegion/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -58,7 +58,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	uniform = /obj/item/clothing/under/f13/legskirt
 	shoes = /obj/item/clothing/shoes/f13/military/legion
 	gloves = /obj/item/clothing/gloves/legion
-	box = /obj/item/storage/survivalkit/primitive
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -132,7 +131,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	r_pocket = /obj/item/storage/bag/money/small/legion
 	l_pocket = /obj/item/flashlight/lantern
 	r_hand = /obj/item/melee/f13powerfist/goliath
-	l_hand = /obj/item/tank/internals/oxygen
 	backpack = null
 	satchel = null
 	ears = /obj/item/radio/headset/headset_legion/command
@@ -492,7 +490,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	r_pocket = /obj/item/flashlight/lantern
 	l_pocket = /obj/item/restraints/handcuffs
-	box = /obj/item/storage/survivalkit/primitive/plus
 	backpack_contents = list(
 		/obj/item/melee/onehanded/machete/gladius = 1,
 		/obj/item/storage/bag/money/small/legofficers = 1,
@@ -575,7 +572,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	neck = /obj/item/storage/belt/holster
 	glasses = /obj/item/clothing/glasses/legiongoggles
 	r_pocket = /obj/item/flashlight/lantern
-	l_pocket = /obj/item/storage/survivalkit/primitive
 	backpack_contents = list(
 		/obj/item/melee/onehanded/machete/gladius = 1,
 		/obj/item/reagent_containers/pill/patch/healingpoultice = 1,
@@ -659,6 +655,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	glasses = /obj/item/clothing/glasses/sunglasses
 	gloves = /obj/item/clothing/gloves/legion/plated
 	r_pocket = /obj/item/flashlight/lantern
+	box = /obj/item/storage/survivalkit/primitive/plus
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healingpoultice = 1,
 		/obj/item/restraints/handcuffs = 1,

@@ -18,10 +18,8 @@
 	backpack =	/obj/item/storage/backpack/satchel/explorer
 	satchel = 	/obj/item/storage/backpack/satchel/old
 	uniform = /obj/item/clothing/under/f13/khan
-	r_pocket = /obj/item/flashlight/flare
-	l_pocket = /obj/item/storage/survivalkit/khan
 	gloves = /obj/item/melee/unarmed/brass/spiked
-	box = null
+	box = /obj/item/storage/survivalkit/khan
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/khan = 1,
 		)
