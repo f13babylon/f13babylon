@@ -23,8 +23,8 @@
 	new /obj/item/stack/medical/gauze/improvised(src)
 	new /obj/item/stack/medical/suture/emergency(src)
 	new /obj/item/stack/medical/mesh/aloe(src)
-	new /obj/item/flashlight/flare(src)
 	new /obj/item/reagent_containers/pill/radx(src)
+	new /obj/item/flashlight/flare(src)
 	new /obj/item/reagent_containers/food/drinks/flask/survival(src)
 
 /obj/item/storage/survivalkit/khan
@@ -38,8 +38,8 @@
 	new /obj/item/stack/medical/gauze/improvised(src)
 	new /obj/item/stack/medical/suture/emergency(src)
 	new /obj/item/stack/medical/mesh/aloe(src)
-	new /obj/item/flashlight/flare(src)
 	new /obj/item/reagent_containers/pill/radx(src)
+	new /obj/item/flashlight/flare(src)
 	new /obj/item/reagent_containers/food/drinks/flask/survival(src)
 
 /obj/item/storage/survivalkit/primitive		//Used by Legion and Tribals
@@ -75,8 +75,8 @@
 	new /obj/item/stack/medical/gauze(src)
 	new /obj/item/stack/medical/suture(src)
 	new /obj/item/stack/medical/ointment(src)
-	new /obj/item/flashlight/seclite(src)
 	new /obj/item/reagent_containers/pill/radx(src)
+	new /obj/item/flashlight/flare(src)
 	new /obj/item/reagent_containers/food/drinks/flask(src)
 
 /obj/item/storage/survivalkit/firstaid
@@ -90,8 +90,8 @@
 	new /obj/item/stack/medical/gauze(src)
 	new /obj/item/stack/medical/suture(src)
 	new /obj/item/stack/medical/ointment(src)
-	new /obj/item/flashlight/flare(src)
 	new /obj/item/reagent_containers/pill/radx(src)
+	new /obj/item/flashlight/flare(src)
 	new /obj/item/reagent_containers/food/drinks/flask/survival(src)
 
 /obj/item/storage/survivalkit/firstaid/advanced
@@ -104,9 +104,9 @@
 	new /obj/item/stack/medical/gauze/adv(src)
 	new /obj/item/stack/medical/suture/medicated(src)
 	new /obj/item/stack/medical/mesh/advanced(src)
-	new /obj/item/flashlight/seclite(src)
 	new /obj/item/reagent_containers/pill/radx(src)
 	new /obj/item/reagent_containers/blood/radaway(src)
+	new /obj/item/flashlight/flare(src)
 	new /obj/item/reagent_containers/food/drinks/flask(src)
 
 /obj/item/storage/survivalkit/empty
