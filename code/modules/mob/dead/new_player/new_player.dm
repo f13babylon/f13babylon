@@ -557,18 +557,18 @@
 	spawn(5 MINUTES)
 		if (humanc.is_in_game)
 			humanc.is_in_game = 2
-			if (job.faction == FACTION_ENCLAVE)
-				to_chat(world, span_nicegreen("You hear through the grapevine that an Enclave member may be operating in the region."))
-			else if (istype(humanc.get_item_by_slot(SLOT_WEAR_ID), /obj/item/card/id/selfassign))
-				var/obj/item/card/id/selfassign/id = humanc.get_item_by_slot(SLOT_WEAR_ID)
-				to_chat(world, span_nicegreen("You hear through the grapevine that [humanc.name] the [id.assignment] is around this week."))
-
-			else if (istype(humanc.get_item_by_slot(SLOT_WEAR_ID), /obj/item/pda))
-				var/obj/item/pda/id = humanc.get_item_by_slot(SLOT_WEAR_ID)
-				to_chat(world, span_nicegreen("You hear through the grapevine that [humanc.name] the [id.ownjob] is around this week."))
-
+			if (job.faction in list(FACTION_WASTELAND, FACTION_RAIDERS))
+				to_chat(world, span_nicegreen("You hear through the grapevine that a <b>[job.title]</b> is around this week."))
+				to_chat(humanc, span_nicegreen("That's you!"))
 			else
-				to_chat(world, span_nicegreen("You hear through the grapevine that [humanc.name] the [rank] is around this week."))
+				for (var/mob/living/carbon/human/aware_player in GLOB.player_list)
+					var/datum/job/aware_job = SSjob.GetJob(aware_player.mind.assigned_role)
+					if (aware_job.faction == job.faction)
+						to_chat(aware_player, span_nicegreen("You hear through the grapevine that <b>[humanc.name]</b> the <b>[job.title]</b> is around this week."))
+					else if (job.faction == FACTION_ENCLAVE)
+						to_chat(aware_player, span_nicegreen("You hear through the grapevine that a <b>Wastelander</b> is around this week."))
+					else
+						to_chat(aware_player, span_nicegreen("You hear through the grapevine that a <b>[job.title]</b> is around this week."))
 
 /mob/dead/new_player/proc/AddEmploymentContract(mob/living/carbon/human/employee)
 	//TODO:  figure out a way to exclude wizards/nukeops/demons from this.

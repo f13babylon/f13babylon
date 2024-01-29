@@ -346,11 +346,18 @@
 	if (departing_mob.is_in_game >= 1)
 		if (departing_mob.is_in_game == 2)
 			if (departing_mob.mind)
-				var/datum/job/job = SSjob.GetJob(departing_mob.mind.assigned_role)
-				if (istype(job) && job.faction == FACTION_ENCLAVE)
-					to_chat(world, span_nicegreen("You hear through the grapevine that an Enclave member has ceased operating in the region."))
+				var/datum/job/departing_job = SSjob.GetJob(departing_mob.mind.assigned_role)
+				if (departing_job.faction in list(FACTION_WASTELAND, FACTION_RAIDERS))
+					to_chat(world, span_nicegreen("You hear through the grapevine that a <b>[departing_job.title]</b> has left the region."))
 				else
-					to_chat(world, span_nicegreen("You hear through the grapevine that [departing_mob.name] has left the region."))
+					for (var/mob/living/carbon/human/aware_player in GLOB.player_list)
+						var/datum/job/aware_job = SSjob.GetJob(aware_player.mind.assigned_role)
+						if (aware_job.faction == departing_job.faction)
+							to_chat(aware_player, span_nicegreen("You hear through the grapevine that <b>[departing_mob.name]</b> the <b>[departing_job.title]</b> has left the region."))
+						else if (departing_job.faction == FACTION_ENCLAVE)
+							to_chat(aware_player, span_nicegreen("You hear through the grapevine that a <b>Wastelander</b> has left the region."))
+						else
+							to_chat(aware_player, span_nicegreen("You hear through the grapevine that a <b>[departing_job.title]</b> has left the region."))
 		departing_mob.is_in_game = 0
 
 	departing_mob.despawn()
