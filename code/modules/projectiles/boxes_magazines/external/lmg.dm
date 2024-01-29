@@ -32,6 +32,7 @@
 	caliber = "a762mm"
 	max_ammo = 10
 	multiple_sprites = 2
+	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/ammo_box/magazine/w308/empty
 	start_empty = 1
