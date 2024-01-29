@@ -719,14 +719,17 @@
 
 /obj/item/ammo_box/jerrycan
 	name = "jerry can"
-	desc = "A jerry can full of napalm and diesel fuel, meant for flamethrowers"
+	desc = "A jerry can full of flamethrower fuel."
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "jerrycan"
 	caliber = "fuel"
 	unloadable = TRUE
 	ammo_type = /obj/item/ammo_casing/caseless/flamethrower
-	max_ammo = 6 // 3 bursts, you need 2 cans
+	max_ammo = 100
 
+/obj/item/ammo_box/update_icon()
+	..()
+	desc = "[initial(desc)] It has [stored_ammo.len] fuel left."
 
 /*
 /obj/item/ammo_box/a50MG/AP

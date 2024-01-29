@@ -85,7 +85,7 @@
 
 /obj/item/ammo_casing/energy/flamethrower
 	select_name = "OH GOD OH FUCK"
-	fire_sound = 'sound/weapons/flamethrower.ogg'
+	fire_sound = 'sound/f13weapons/flamethrower.ogg'
 	projectile_type = /obj/item/projectile/incendiary/flamethrower
 	e_cost = 50
 	pellets = 2

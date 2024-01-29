@@ -30,24 +30,33 @@
 	name = "dragonsbreath pellet"
 	damage = 5
 
-/obj/item/projectile/incendiary/flamethrower
-	name = "FIREEEEEEEEEE!!!!!"
+/obj/item/projectile/incendiary/flamethrower		//Flamethrower projectile
+	name = "flame ball"
 	icon = 'icons/effects/fire.dmi'
-	icon_state = "3"
+	icon_state = "fire"
 	light_range = LIGHT_RANGE_FIRE
 	light_color = LIGHT_COLOR_FIRE
 	damage_type = BURN
-	damage = 12 //slight damage on impact
-	wound_bonus = 20//Most wounds come from fire stacks, but this is insult to injury. :)
-	bare_wound_bonus = 40
-	range = 10
+	damage = 15
+	wound_bonus = 30
+	supereffective_damage = 25
+	supereffective_faction = list("ant", "cazador", "gecko", "radscorpion", "wolf", "dog", "plants", "rat", "spiders")
+	var/dmg_dropoff_per_tile = 15 / 7	//In 7 tiles it will lose all of its initial damage (and get deleted)
 
 /obj/item/projectile/incendiary/flamethrower/on_hit(atom/target)
-	. = ..()
 	if(iscarbon(target))
 		var/mob/living/carbon/M = target
 		M.adjust_fire_stacks(3)
 		M.IgniteMob()
+	if(ismob(target))
+		..()
+
+/obj/item/projectile/incendiary/flamethrower/Range()
+	..()
+	if(damage > 0)
+		damage -= dmg_dropoff_per_tile
+	else
+		qdel(src)
 
 //PELLET SHELLS
 /obj/item/projectile/bullet/pellet

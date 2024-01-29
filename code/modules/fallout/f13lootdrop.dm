@@ -1326,6 +1326,13 @@
 				/obj/item/ammo_box/magazine/m556mm/extended
 	)
 
+/obj/effect/spawner/bundle/f13/flamethrower
+	name = "flamethrower and ammo spawner"
+	items = list(
+		/obj/item/m2flamethrowertank,
+		/obj/item/ammo_box/jerrycan,
+)
+
 /obj/effect/spawner/bundle/f13/r91
 	name = "assault rifle and ammo spawner"
 	items = list(
@@ -1799,6 +1806,7 @@
 				/obj/item/grenade/f13/radiation,
 				/obj/item/grenade/f13/frag,
 				/obj/effect/spawner/bundle/f13/grenadelauncher,
+				/obj/effect/spawner/bundle/f13/flamethrower,
 				)
 
 /obj/effect/spawner/lootdrop/f13/bomb/top_tier

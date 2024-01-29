@@ -223,6 +223,7 @@
 					return
 				update_icon()
 				user.update_inv_back()
+				gun.weapondraw(gun, user)
 		else
 			to_chat(user, "<span class='warning'>You are already holding the gun!</span>")
 	else

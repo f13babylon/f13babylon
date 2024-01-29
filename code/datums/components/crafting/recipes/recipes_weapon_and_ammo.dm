@@ -188,8 +188,10 @@
 /datum/crafting_recipe/flamerfuel
 	name = "Flamethrower Fuel"
 	result = /obj/item/ammo_box/jerrycan
-	reqs = list(/datum/reagent/napalm = 50,
-				/obj/item/reagent_containers/glass/beaker/large)
+	reqs = list(
+		/datum/reagent/fuel = 100,
+		/obj/item/stack/sheet/metal = 3,
+	)
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_WEAPONRY

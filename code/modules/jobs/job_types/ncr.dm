@@ -644,6 +644,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	mask = /obj/item/clothing/mask/gas
 	backpack_contents = list(
 		/obj/item/m2flamethrowertank = 1,
+		/obj/item/ammo_box/jerrycan = 2,
 	)
 
 /datum/outfit/loadout/opperssorht

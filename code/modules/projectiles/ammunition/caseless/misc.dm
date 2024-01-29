@@ -28,5 +28,3 @@
 	icon = 'icons/mob/robots.dmi'
 	icon_state = "floor1"
 	projectile_type = /obj/item/projectile/incendiary/flamethrower
-	pellets = 3
-	variance = 20
