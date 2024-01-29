@@ -70,8 +70,6 @@
 	melee_damage_upper = 35
 	armour_penetration = 0.2//Making them some manner of threat.
 	footstep_type = FOOTSTEP_MOB_BAREFOOT
-	projectiletype = /obj/item/projectile/reaver
-	projectilesound = 'sound/f13npc/centaur/lash.ogg'
 
 /mob/living/simple_animal/hostile/ghoul/reaver/Aggro()
 	..()
