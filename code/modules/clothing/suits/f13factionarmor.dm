@@ -838,7 +838,7 @@
 	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/enclave	//Technically it's own armor, but for balance simplicity, it's RCA
-	name = "old United States Marine Corp Armor"
+	name = "old United States Marine Corps Armor"
 	desc = "An advanced model of combat armor worn by marines aboard the USS Democracy, second only to power armor in protection used by the USMC For various tasks and operations, it's handled the nuclear wasteland somewhat better than the rest of the armors you've seen."
 	icon_state = "enclave_marine"
 	item_state = "enclave_marine"
@@ -846,7 +846,7 @@
 	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/armor/f13/usmcriot
-	name = "old United States Marine Corp riot suit"
+	name = "old United States Marine Corps riot suit"
 	desc = "A pre-war riot suit used by the USCM For various tasks and operations, it's handled the nuclear wasteland somewhat better than the rest of the armors you've seen."
 	icon_state = "usmc_riot_gear"
 	item_state = "usmc_riot_gear"
