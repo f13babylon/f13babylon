@@ -10,13 +10,6 @@
 	STR.max_items = 7
 	STR.max_w_class = WEIGHT_CLASS_TINY
 	STR.max_combined_w_class = WEIGHT_CLASS_TINY * 7
-	CANTHOLD_STATIC(STR, typecacheof(list(
-		/obj/item/gun,
-		/obj/item/ammo_box,
-		/obj/item/stock_parts/cell/ammo,
-		/obj/item/grenade,
-		/obj/item/nullrod,
-	)))
 
 /obj/item/storage/survivalkit/PopulateContents()
 	new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)

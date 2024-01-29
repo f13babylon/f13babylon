@@ -32,6 +32,7 @@
 	ammo_type = /obj/item/ammo_casing/a357
 	max_ammo = 18
 	multiple_sprites = 2
+	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/ammo_box/magazine/autopipe/empty
 	start_empty = 1
@@ -48,6 +49,7 @@
 	caliber = "a556mm"
 	max_ammo = 20
 	multiple_sprites = 2
+	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/ammo_box/magazine/m556mm/empty
 	start_empty = 1
@@ -86,6 +88,7 @@
 	caliber = "a5mm"
 	max_ammo = 30
 	multiple_sprites = 2
+	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/ammo_box/magazine/m5mm/empty
 	start_empty = 1
@@ -157,6 +160,7 @@
 	caliber = "a762mm"
 	max_ammo = 10
 	multiple_sprites = 2
+	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/ammo_box/magazine/m762mm/empty
 	start_empty = 1
@@ -165,6 +169,7 @@
 	name = "extended rifle magazine (7.62mm)"
 	icon_state = "m762mmext"
 	max_ammo = 20
+	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/ammo_box/magazine/m762mm/extended/empty
 	start_empty = 1

@@ -13,6 +13,7 @@
 	custom_materials = list(/datum/material/iron = 6000, /datum/material/blackpowder = 1000)
 	ammo_type = /obj/item/ammo_casing/shotgun
 	multiple_sprites = 1
+	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/ammo_box/shotgun/slug
 	name = "Slug shotgun ammo box"
@@ -412,6 +413,7 @@
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	custom_materials = list(/datum/material/iron = 4000)
 	multiple_sprites = 1
+	w_class = WEIGHT_CLASS_SMALL
 
 //.38
 /obj/item/ammo_box/c38
@@ -635,7 +637,6 @@
 	max_ammo = 5
 	multiple_sprites = 1
 	custom_materials = list(/datum/material/iron = 2000)
-	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/ammo_box/a308
 	name = "stripper clip (.308)"
@@ -646,7 +647,6 @@
 	max_ammo = 5
 	multiple_sprites = 1
 	custom_materials = list(/datum/material/iron = 2000)
-	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/ammo_box/a762mm/doublestacked
 	name = "double stack stripper clip (.308)"
@@ -657,7 +657,6 @@
 	max_ammo = 10
 	multiple_sprites = 1
 	custom_materials = list(/datum/material/iron = 2000)
-	w_class = WEIGHT_CLASS_SMALL
 
 //5.56x45mm
 /obj/item/ammo_box/a556mm/stripper
@@ -668,8 +667,6 @@
 	max_ammo = 5
 	multiple_sprites = 1
 	custom_materials = list(/datum/material/iron = 2000)
-	w_class = WEIGHT_CLASS_SMALL
-
 
 //Needler
 /obj/item/ammo_box/needle
