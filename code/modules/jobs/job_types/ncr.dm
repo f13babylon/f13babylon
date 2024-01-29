@@ -517,6 +517,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	glasses	= /obj/item/clothing/glasses/sunglasses
 	mask = /obj/item/clothing/mask/gas/ranger
 	ears = /obj/item/radio/headset/headset_ranger
+	belt = null
 	r_pocket = /obj/item/binoculars
 	backpack_contents = list(
 		/obj/item/restraints/handcuffs = 1,
