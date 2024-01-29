@@ -190,7 +190,7 @@
 	result = /obj/item/ammo_box/jerrycan
 	reqs = list(
 		/datum/reagent/fuel = 100,
-		/obj/item/stack/sheet/metal = 3,
+		/obj/item/stack/sheet/metal = 5,
 	)
 	tools = list(TOOL_WORKBENCH)
 	time = 5
