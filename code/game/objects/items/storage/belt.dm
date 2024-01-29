@@ -622,35 +622,7 @@
 	STR.max_items = 4
 	STR.max_w_class = WEIGHT_CLASS_NORMAL
 	STR.max_combined_w_class = WEIGHT_CLASS_NORMAL + WEIGHT_CLASS_TINY * 3		//At most, 1 NORMAL-sized pistol and 3 magazines for it (Or 3 small pistols, 4 tiny pistols, etc.)
-	CANHOLD_STATIC(STR, typecacheof(list(
-		/obj/item/gun/ballistic/automatic/pistol,
-		/obj/item/ammo_box/magazine/m22,
-		/obj/item/ammo_box/magazine/zipgun,
-		/obj/item/ammo_box/magazine/m9mm,
-		/obj/item/ammo_box/magazine/m9mmds,
-		/obj/item/ammo_box/magazine/m10mm,
-		/obj/item/ammo_box/magazine/m45,
-		/obj/item/ammo_box/magazine/m45exp,
-		/obj/item/ammo_box/magazine/m44,
-		/obj/item/ammo_box/magazine/automag,
-		/obj/item/ammo_box/magazine/m14mm,
-		/obj/item/gun/ballistic/revolver,
-		/obj/item/ammo_box/c38,
-		/obj/item/ammo_box/a357,
-		/obj/item/ammo_box/l10mm,
-		/obj/item/ammo_box/m44,
-		/obj/item/ammo_box/c45rev,
-		/obj/item/ammo_box/a45lcrev,
-		/obj/item/ammo_box/c4570,
-		/obj/item/ammo_box/needle,
-		/obj/item/ammo_box/shotgun,
-		/obj/item/gun/energy/laser/pistol,
-		/obj/item/gun/energy/laser/wattz,
-		/obj/item/gun/energy/laser/complianceregulator,
-		/obj/item/gun/energy/laser/plasma/pistol,
-		/obj/item/gun/energy/laser/plasma/glock,
-		/obj/item/stock_parts/cell/ammo/ec,
-	)))
+	STR.can_hold = GLOB.storage_holster_can_hold
 
 /obj/item/storage/belt/holster/full/PopulateContents()
 	new /obj/item/gun/ballistic/revolver/detective(src)
