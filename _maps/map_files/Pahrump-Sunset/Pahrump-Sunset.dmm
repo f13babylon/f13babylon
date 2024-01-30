@@ -29533,6 +29533,22 @@
 	icon_state = "yellowrustychess"
 	},
 /area/f13/building/mall)
+"eQs" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/clothing/under/f13/recon,
+/obj/item/clothing/under/f13/recon,
+/obj/item/clothing/under/f13/recon,
+/obj/item/clothing/under/f13/recon,
+/obj/item/clothing/under/f13/recon,
+/obj/item/clothing/under/f13/recon,
+/obj/item/clothing/under/f13/recon,
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 5
+	},
+/turf/open/floor/f13{
+	icon_state = "reddirtyfull"
+	},
+/area/f13/brotherhood/armory)
 "eQt" = (
 /obj/item/dice/d20,
 /obj/item/pen,
@@ -43106,7 +43122,6 @@
 	},
 /area/f13/wasteland/east)
 "kKa" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
 /obj/item/gun/energy/laser/pistol,
 /obj/item/gun/energy/laser/pistol,
@@ -43398,6 +43413,7 @@
 	pixel_x = -9;
 	pixel_y = 10
 	},
+/obj/machinery/light/floor,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -46047,7 +46063,6 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/obj/machinery/light,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/f13/brotherhood/reactor)
@@ -47686,41 +47701,6 @@
 /area/f13/building/mall)
 "mxl" = (
 /obj/structure/rack/shelf_metal,
-/obj/item/clothing/suit/bomb_suit/security,
-/obj/item/clothing/head/bomb_hood/security,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/stripes/red/line{
-	dir = 8
-	},
-/obj/item/clothing/shoes/combat/swat{
-	pixel_x = 7;
-	pixel_y = -9
-	},
-/obj/item/clothing/shoes/combat/swat{
-	pixel_x = 7;
-	pixel_y = -9
-	},
-/obj/item/clothing/shoes/combat/swat{
-	pixel_x = 7;
-	pixel_y = -9
-	},
-/obj/item/clothing/shoes/combat/swat{
-	pixel_x = 7;
-	pixel_y = -9
-	},
-/obj/item/clothing/mask/gas/explorer{
-	pixel_y = 11
-	},
-/obj/item/clothing/mask/gas/explorer{
-	pixel_y = 11
-	},
-/obj/item/clothing/mask/gas/explorer{
-	pixel_y = 11
-	},
-/obj/item/clothing/mask/gas/sechailer,
-/obj/item/clothing/mask/gas/sechailer,
-/obj/item/clothing/mask/gas/sechailer,
-/obj/item/clothing/mask/gas/sechailer,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
 	},
@@ -48438,36 +48418,42 @@
 	},
 /area/f13/brotherhood/medical)
 "mOe" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/rack/shelf_metal,
-/obj/item/storage/belt/military{
-	pixel_x = -7;
-	pixel_y = -9
-	},
-/obj/item/storage/belt/military{
-	pixel_x = -7;
-	pixel_y = -9
-	},
-/obj/item/storage/belt/military{
-	pixel_x = -7;
-	pixel_y = -9
-	},
-/obj/item/storage/belt/military{
-	pixel_x = -7;
-	pixel_y = -9
-	},
-/obj/item/storage/belt/military{
-	pixel_x = -7;
-	pixel_y = -9
-	},
-/obj/item/storage/belt/holster,
-/obj/item/storage/belt/holster,
-/obj/item/storage/belt/holster,
-/obj/item/storage/belt/holster,
-/obj/item/storage/belt/holster,
+/obj/item/clothing/suit/bomb_suit/security,
+/obj/item/clothing/head/bomb_hood/security,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 8
 	},
+/obj/item/clothing/shoes/combat/swat{
+	pixel_x = 7;
+	pixel_y = -9
+	},
+/obj/item/clothing/shoes/combat/swat{
+	pixel_x = 7;
+	pixel_y = -9
+	},
+/obj/item/clothing/shoes/combat/swat{
+	pixel_x = 7;
+	pixel_y = -9
+	},
+/obj/item/clothing/shoes/combat/swat{
+	pixel_x = 7;
+	pixel_y = -9
+	},
+/obj/item/clothing/mask/gas/explorer{
+	pixel_y = 11
+	},
+/obj/item/clothing/mask/gas/explorer{
+	pixel_y = 11
+	},
+/obj/item/clothing/mask/gas/explorer{
+	pixel_y = 11
+	},
+/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer,
+/obj/item/clothing/mask/gas/sechailer,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
 	},
@@ -50003,9 +49989,6 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland/heaven)
 "nvH" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
 /obj/structure/table/reinforced{
 	color = "#c1b6a5"
 	},
@@ -50522,19 +50505,22 @@
 /area/f13/tunnel)
 "nHl" = (
 /obj/structure/rack/shelf_metal,
-/obj/item/clothing/under/f13/recon,
-/obj/item/clothing/under/f13/recon,
-/obj/item/clothing/under/f13/recon,
-/obj/item/clothing/under/f13/recon,
-/obj/item/clothing/under/f13/recon,
-/obj/item/clothing/under/f13/recon,
-/obj/item/clothing/under/f13/recon,
-/obj/effect/turf_decal/stripes/red/line{
-	dir = 5
+/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate{
+	pixel_x = -9;
+	pixel_y = 10
 	},
-/obj/machinery/light{
-	dir = 8
+/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate{
+	pixel_x = -9;
+	pixel_y = 10
 	},
+/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate{
+	pixel_x = -9;
+	pixel_y = 10
+	},
+/obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate,
+/obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate,
+/obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate,
+/obj/effect/turf_decal/stripes/red/line,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
 	},
@@ -52629,23 +52615,8 @@
 	},
 /area/f13/followers)
 "oAh" = (
-/obj/structure/rack/shelf_metal,
-/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate{
-	pixel_x = -9;
-	pixel_y = 10
-	},
-/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate{
-	pixel_x = -9;
-	pixel_y = 10
-	},
-/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate{
-	pixel_x = -9;
-	pixel_y = 10
-	},
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate,
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate,
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate,
 /obj/effect/turf_decal/stripes/red/line,
+/obj/structure/rack/shelf_metal,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
 	},
@@ -53026,7 +52997,36 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/building/mall)
 "oKm" = (
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/rack/shelf_metal,
+/obj/item/storage/belt/military{
+	pixel_x = -7;
+	pixel_y = -9
+	},
+/obj/item/storage/belt/military{
+	pixel_x = -7;
+	pixel_y = -9
+	},
+/obj/item/storage/belt/military{
+	pixel_x = -7;
+	pixel_y = -9
+	},
+/obj/item/storage/belt/military{
+	pixel_x = -7;
+	pixel_y = -9
+	},
+/obj/item/storage/belt/military{
+	pixel_x = -7;
+	pixel_y = -9
+	},
+/obj/item/storage/belt/holster,
+/obj/item/storage/belt/holster,
+/obj/item/storage/belt/holster,
+/obj/item/storage/belt/holster,
+/obj/item/storage/belt/holster,
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 8
+	},
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
 	},
@@ -53231,6 +53231,7 @@
 	name = "archive database"
 	},
 /obj/structure/table/glass,
+/obj/machinery/light/floor,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -53925,11 +53926,16 @@
 	},
 /area/f13/wasteland/heaven)
 "pcU" = (
-/obj/structure/simple_door/bunker/glass{
-	name = "Medical Ward"
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 8
 	},
-/turf/open/floor/plasteel/darkpurple,
-/area/f13/brotherhood/medical)
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "reddirtyfull"
+	},
+/area/f13/brotherhood/armory)
 "pdm" = (
 /turf/open/indestructible/ground/outside/desert{
 	icon_state = "wasteland33"
@@ -54172,6 +54178,10 @@
 /obj/item/clothing/suit/toggle/labcoat/scribecoat,
 /obj/structure/closet/locker,
 /obj/item/clothing/glasses/science,
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_y = 14
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -65435,6 +65445,7 @@
 /area/f13/building/trainstation)
 "tVc" = (
 /obj/machinery/jukebox,
+/obj/machinery/light/floor,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -70738,6 +70749,10 @@
 	name = "Memorial"
 	},
 /area/f13/brotherhood)
+"wbt" = (
+/obj/structure/railing,
+/turf/open/floor/plasteel/dark,
+/area/f13/brotherhood/reactor)
 "wbu" = (
 /obj/structure/barricade/wooden,
 /obj/structure/decoration/rag{
@@ -125830,11 +125845,11 @@ aae
 aae
 aae
 aae
-aae
-aae
-aae
-aae
-aae
+bjV
+bjV
+bjV
+bjV
+bjV
 aae
 aae
 aae
@@ -126088,9 +126103,9 @@ aKD
 aKD
 aKD
 aKD
-aKD
-aKD
-aKD
+oKm
+pcU
+eQs
 aKD
 aae
 aae
@@ -126346,7 +126361,7 @@ hqU
 jVS
 kpt
 mOe
-kpt
+gJv
 nHl
 aKD
 aae
@@ -126859,9 +126874,9 @@ gJv
 gJv
 gJv
 gJv
-oKm
 gJv
-oKm
+gJv
+kSB
 aKD
 aKD
 aKD
@@ -130205,7 +130220,7 @@ nQf
 iHJ
 lBy
 uXw
-kZB
+wbt
 tcc
 tcc
 lQS
@@ -131487,8 +131502,8 @@ rOg
 rOg
 rOg
 rOg
-pcU
-pcU
+iOa
+iOa
 sAP
 sAP
 sAP
