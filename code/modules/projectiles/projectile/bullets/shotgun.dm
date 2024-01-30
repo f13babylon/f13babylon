@@ -48,8 +48,7 @@
 		var/mob/living/carbon/M = target
 		M.adjust_fire_stacks(3)
 		M.IgniteMob()
-	if(ismob(target))
-		..()
+	..()
 
 /obj/item/projectile/incendiary/flamethrower/Range()
 	..()
