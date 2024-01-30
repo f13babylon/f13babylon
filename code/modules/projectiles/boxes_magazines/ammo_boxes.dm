@@ -728,7 +728,7 @@
 	max_ammo = 100
 	w_class = WEIGHT_CLASS_NORMAL
 
-/obj/item/ammo_box/update_icon()
+/obj/item/ammo_box/jerrycan/update_icon()
 	..()
 	desc = "[initial(desc)] It has [stored_ammo.len] fuel left."
 
