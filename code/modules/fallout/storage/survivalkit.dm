@@ -107,3 +107,4 @@
 	desc = "A robust leather pouch."
 
 /obj/item/storage/survivalkit/empty/PopulateContents()
+	return
