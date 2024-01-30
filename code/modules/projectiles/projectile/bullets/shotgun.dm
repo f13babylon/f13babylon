@@ -41,7 +41,7 @@
 	wound_bonus = 40
 	supereffective_damage = 25
 	supereffective_faction = list("ant", "cazador", "gecko", "radscorpion", "wolf", "dog", "plants", "rat", "spiders")
-	var/dmg_dropoff_per_tile = 15 / 7	//In 7 tiles it will lose all of its initial damage (and get deleted)
+	var/dmg_dropoff_per_tile = 20 / 7	//In 7 tiles it will lose all of its initial damage (and get deleted)
 
 /obj/item/projectile/incendiary/flamethrower/on_hit(atom/target)
 	if(iscarbon(target))
