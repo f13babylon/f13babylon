@@ -142,18 +142,45 @@
 	attack_hand_interact = TRUE
 	max_w_class = WEIGHT_CLASS_NORMAL
 	quickdraw = TRUE
+
+/datum/component/storage/concrete/pockets/small/holdout/Initialize()
+	. = ..()
 	can_hold = GLOB.storage_holdout_can_hold
 
 /datum/component/storage/concrete/pockets/holster
 	max_items = 4
 	max_w_class = WEIGHT_CLASS_NORMAL
 	max_combined_w_class = WEIGHT_CLASS_NORMAL + WEIGHT_CLASS_TINY * 3		//At most, 1 NORMAL-sized pistol and 3 magazines for it (Or 3 small pistols, 4 tiny pistols, etc.)
+
+/datum/component/storage/concrete/pockets/holster/Initialize()
+	. = ..()
 	can_hold = GLOB.storage_holster_can_hold
+	CANTHOLD_STATIC(src, list(
+		/obj/item/ammo_casing/a40mmHE,
+		/obj/item/ammo_casing/a40mmCS,
+		/obj/item/ammo_casing/a40mmS,
+		/obj/item/ammo_casing/a40mmHEDP,
+		/obj/item/ammo_casing/a40mmM,
+		/obj/item/ammo_casing/a40mmF,
+		/obj/item/ammo_casing/a40mmI,
+	))
 
 /datum/component/storage/concrete/pockets/bulletbelt
 	max_items = 4
 	max_w_class = WEIGHT_CLASS_SMALL
+
+/datum/component/storage/concrete/pockets/bulletbelt/Initialize()
+	. = ..()
 	can_hold = GLOB.storage_bulletbelt_can_hold
+	CANTHOLD_STATIC(src, list(
+		/obj/item/ammo_casing/a40mmHE,
+		/obj/item/ammo_casing/a40mmCS,
+		/obj/item/ammo_casing/a40mmS,
+		/obj/item/ammo_casing/a40mmHEDP,
+		/obj/item/ammo_casing/a40mmM,
+		/obj/item/ammo_casing/a40mmF,
+		/obj/item/ammo_casing/a40mmI,
+	))
 
 GLOBAL_LIST_INIT(storage_bartender_can_hold, typecacheof(list(
 	/obj/item/kitchen,
@@ -226,6 +253,7 @@ GLOBAL_LIST_INIT(storage_shoes_can_hold, typecacheof(list(
 	)))
 
 GLOBAL_LIST_INIT(storage_holster_can_hold, typecacheof(list(
+	/obj/item/ammo_casing,
 	/obj/item/gun/ballistic/automatic/pistol,
 	/obj/item/ammo_box/magazine/m22,
 	/obj/item/ammo_box/magazine/zipgun,
@@ -289,6 +317,7 @@ GLOBAL_LIST_INIT(storage_holdout_can_hold, typecacheof(list(
 )))
 
 GLOBAL_LIST_INIT(storage_bulletbelt_can_hold, typecacheof(list(
+	/obj/item/ammo_casing,
 	/obj/item/ammo_box/magazine,
 	/obj/item/ammo_box/tube,
 	/obj/item/ammo_box/c38,
