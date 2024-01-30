@@ -39,9 +39,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	belt = /obj/item/storage/belt/military/assault/ncr
 	shoes = /obj/item/clothing/shoes/f13/military/ncr
 	l_pocket = /obj/item/book/manual/ncr/jobguide
-	backpack_contents = list(
-		/obj/item/storage/survivalkit_aid = 1,
-		)
 
 /datum/outfit/job/ncr/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -97,6 +94,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit = /obj/item/clothing/suit/armor/f13/power_armor/t45d/sierra
 	r_pocket = /obj/item/binoculars
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/deagle
+	box = /obj/item/storage/survivalkit/advanced
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m44 = 3,
 		/obj/item/storage/bag/money/small/ncr = 1,
@@ -134,6 +132,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit = /obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/sergeant
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/deagle
 	r_hand = /obj/item/melee/onehanded/club/ncrflag
+	box = /obj/item/storage/survivalkit/advanced
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m44 = 2,
 		/obj/item/storage/bag/money/small/ncrenlisted = 1,
@@ -189,6 +188,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	mask = /obj/item/clothing/mask/cigarette/pipe
 	neck = /obj/item/storage/belt/holster/legholster
 	r_pocket = /obj/item/binoculars
+	box = /obj/item/storage/survivalkit/advanced
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/ncr = 1,
 		/obj/item/megaphone = 1,
@@ -204,9 +204,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/outfit/loadout/ncrcptmelee
 	name = "Backline Support"
 	suit = /obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/officer/captain/coat
-	suit_store = /obj/item/gun/ballistic/revolver/m29/peacekeeper
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/deagle/elcapitan
 	backpack_contents = list(
-		/obj/item/ammo_box/m44box = 2,
+		/obj/item/ammo_box/magazine/m14mm = 3,
 	)
 
 /datum/outfit/loadout/ncrcptshotgun
@@ -260,6 +260,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ears = /obj/item/radio/headset/headset_ncr/command
 	suit = /obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/officer
 	r_pocket = /obj/item/binoculars
+	box = /obj/item/storage/survivalkit/advanced
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bayonet = 1,
 		/obj/item/gun/ballistic/automatic/pistol/m1911/custom = 1,
@@ -439,9 +440,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ears = /obj/item/radio/headset/headset_ncr/command
 	mask = /obj/item/clothing/mask/gas/ranger
 	r_pocket = /obj/item/binoculars
+	box = /obj/item/storage/survivalkit/advanced
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bowie = 1,
-		/obj/item/storage/survivalkit_aid_adv = 1,
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 2,
 		/obj/item/grenade/smokebomb = 1,
@@ -516,6 +517,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	glasses	= /obj/item/clothing/glasses/sunglasses
 	mask = /obj/item/clothing/mask/gas/ranger
 	ears = /obj/item/radio/headset/headset_ranger
+	belt = null
 	r_pocket = /obj/item/binoculars
 	backpack_contents = list(
 		/obj/item/restraints/handcuffs = 1,
@@ -528,7 +530,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/outfit/loadout/rangerrecon
 	name = "Recon Ranger"
 	belt = /obj/item/storage/belt/military/reconbandolier
-	neck = /obj/item/clothing/neck/mantle/ranger
+	neck = /obj/item/clothing/neck/mantle/holster/ranger
 	head = /obj/item/clothing/head/helmet/f13/ncr/reconranger
 	suit = /obj/item/clothing/suit/toggle/armor/f13/reconranger
 	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper
@@ -541,7 +543,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/outfit/loadout/rangertrail
 	name = "Trail Ranger"
 	belt = /obj/item/storage/belt/military/NCR_Bandolier
-	neck = /obj/item/clothing/neck/mantle/ranger
+	neck = /obj/item/clothing/neck/mantle/holster/ranger
 	head = /obj/item/clothing/head/helmet/f13/ncr/trailranger
 	suit = /obj/item/clothing/suit/armor/f13/ncr/trailranger
 	suit_store = /obj/item/gun/ballistic/rifle/repeater/trail
@@ -621,6 +623,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	gloves = /obj/item/clothing/gloves/f13/leather/fingerless
 	neck = /obj/item/storage/belt/holster/legholster
 	ears = /obj/item/radio/headset/headset_ncr/alt
+	box = /obj/item/storage/survivalkit/advanced
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 2,
@@ -771,12 +774,11 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	mask = /obj/item/clothing/mask/surgical
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile
 	accessory = /obj/item/clothing/accessory/armband/med/ncr
+	box = /obj/item/storage/survivalkit/firstaid
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/survival = 1,
-		/obj/item/storage/survivalkit_aid_adv = 1,
 		/obj/item/storage/bag/money/small/ncrenlisted = 1,
 		/obj/item/storage/firstaid/regular = 1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1
 	)
 
 /datum/outfit/loadout/ncrdocsmg
@@ -1130,10 +1132,10 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	belt = /obj/item/storage/belt/military/assault/ncr
 	r_hand = /obj/item/storage/backpack/duffelbag/med/surgery
 	mask = /obj/item/clothing/mask/surgical
+	box = /obj/item/storage/survivalkit/firstaid/advanced
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/revolver45 = 1,
 		/obj/item/ammo_box/c45rev = 2,
-		/obj/item/storage/survivalkit_aid_adv = 1,
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/storage/firstaid/regular = 1,
 	)

@@ -419,7 +419,7 @@
 	name = "ammo cell"
 	desc = "You shouldn't be holding this."
 	cancharge = 1
-	w_class = WEIGHT_CLASS_TINY
+	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/stock_parts/cell/ammo/update_icon()
 	if(charge > 1)
@@ -478,6 +478,7 @@
 	icon = 'icons/fallout/objects/powercells.dmi'
 	icon_state = "ec-full"
 	maxcharge = 1600
+	w_class = WEIGHT_CLASS_TINY
 
 // Microfusion breeder? Okay, sure.
 /obj/item/stock_parts/cell/ammo/breeder

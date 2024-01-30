@@ -33,49 +33,50 @@
 	desc = "This is the overseers mantle.  Issued by the Vault-tec corporation to easily identify the overseer. This mantle has been passed down from overseer to overseer"
 	icon_state = "overseer"
 
-/obj/item/clothing/neck/mantle/bos
-	name = "Brotherhood of Steel shoulder cape"
+/obj/item/clothing/neck/mantle/holster
+	name = "HOLSTER MANTLE TEMPLATE"
+	desc = "You're not supposed to see this."
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/holster
+
+/obj/item/clothing/neck/mantle/holster/bos
+	name = "\improper Brotherhood of Steel shoulder cape"
 	desc = "Issued to the Elders of the Brotherhood. Style over substance is important. This one is designed to be worn over the shoulder."
 	icon_state = "bosshouldercape_l"
 
-/obj/item/clothing/neck/mantle/bos/left
-	name = "Brotherhood of Steel shoulder cape"
+/obj/item/clothing/neck/mantle/holster/bos/left
+	name = "\improper Brotherhood of Steel shoulder cape"
 	desc = "Issued to the Elders of the Brotherhood. Style over substance is important. This one is designed to be worn over the shoulder."
 	icon_state = "bosshouldercape_l"
 
-/obj/item/clothing/neck/mantle/bos/right
-	name = "Brotherhood of Steel shoulder cape"
+/obj/item/clothing/neck/mantle/holster/bos/right
+	name = "\improper Brotherhood of Steel shoulder cape"
 	desc = "Issued to the Elders of the Brotherhood. Style over substance is important. This one is designed to be worn over the shoulder."
 	icon_state = "bosshouldercape_r"
 
-/obj/item/clothing/neck/mantle/bos/inquis
-	name = "Inquisitorial cape"
+/obj/item/clothing/neck/mantle/holster/bos/inquis
+	name = "inquisitorial cape"
 	desc = "Issued to Inquisitors and Acolytes of the Midwest Brotherhood. To wear this is to represent something far greater than yourself."
 	icon_state = "inquis_boscape"
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bos/paladin
 
-/obj/item/clothing/neck/mantle/bos/paladin
-	name = "Paladin cape"
+/obj/item/clothing/neck/mantle/holster/bos/paladin
+	name = "paladin cape"
 	desc = "This stylish deep crimson cape is made to be worn below a power armor pauldron, a shoulder holster is added for utility."
 	icon_state = "paladin"
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bos/paladin
 
-/obj/item/clothing/neck/mantle/legion
-	name = "Legion Cape"
+/obj/item/clothing/neck/mantle/holster/legion
+	name = "\improper Legion cape"
 	desc = "A deep crimson cape woven by fine legionnaire craftsmanship. A shoulder holster is added for utility."
 	icon_state = "legion"
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bos/paladin
 
-/obj/item/clothing/neck/mantle/legion/rangercent
+/obj/item/clothing/neck/mantle/holster/legion/rangercent
 	name = "ranger-hunter cape"
 	desc = "A defaced NCR Ranger cape that now bears the Legion's golden bull. A shoulder holster is added for utility."
 	icon_state = "legionrangercape"
 
-/obj/item/clothing/neck/mantle/ranger
-	name = "NCR Ranger cape"
+/obj/item/clothing/neck/mantle/holster/ranger
+	name = "\improper NCR ranger cape"
 	desc = "A cape made from an old poncho, decorated by a red star and white stripes. A shoulder holster is added for utility."
 	icon_state = "rangercape"
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bos/paladin
 
 /obj/item/clothing/neck/mantle/chief
 	name = "chieftains mantle"

@@ -220,7 +220,7 @@ GLOBAL_LIST_EMPTY(allTerminals)
 
 				message_sound.volume = 50
 
-				var/admin_msg = "<span class='adminnotice'><span class=[message_span]><b>[icon2html(flag, GLOB.admins)]Message[superiors ? " to [superiors]" : ""]:</b></span> [ADMIN_FULLMONTY(usr)]:<span class=[message_span]>\"[message]\"</span> <br>Jump to the reply terminal:[ADMIN_JMP_MSGTERMINAL(src)]</span>"
+				var/admin_msg = "<span class='adminnotice'><span class=[message_span]><b>[icon2html(flag, GLOB.admins)]Message[superiors ? " to [superiors]" : ""]:</b></span> [ADMIN_FULLMONTY(usr)]:<span class=[message_span]>\"[message]\"</span> <br>Reply to message:[ADMIN_REPLY_MSGTERMINAL(src)]</span>"
 				log_terminal("[key_name(usr)] sent a Command message, '[message]' from the terminal at [AREACOORD(usr)].")
 				screen = 6
 				dat += "<span class='good'>Message to Command delivered.</span><br><br>"
@@ -393,7 +393,10 @@ GLOBAL_LIST_EMPTY(allTerminals)
 	var/linkedsender
 	if(istype(source, /obj/machinery/msgterminal))
 		var/obj/machinery/msgterminal/sender = source
-		linkedsender = "<a href='?src=[REF(src)];write=[ckey(sender.terminal)]'>[sender.terminal]</a>"
+		if (sender.terminal == "COMMAND")
+			linkedsender = "<A href='?src=[REF(src)];setScreen=11'>COMMAND</a>"
+		else
+			linkedsender = "<a href='?src=[REF(src)];write=[ckey(sender.terminal)]'>[sender.terminal]</a>"
 	else
 		capitalize(source)
 		linkedsender = source
@@ -464,36 +467,43 @@ GLOBAL_LIST_EMPTY(allTerminals)
 #undef EXTREME_MESSAGE_PRIORITY
 
 /obj/machinery/msgterminal/ncr
+	name = "\improper NCR communications center"
 	terminalid = "ncr"
 	terminal = "NCR Terminal"
 	terminalType = 2
 
 /obj/machinery/msgterminal/legion
+	name = "\improper Legion communications center"
 	terminalid = "legion"
 	terminal = "Legion Terminal"
 	terminalType = 2
 
-/obj/machinery/msgterminal/bighorn
-	terminalid = "bighorn"
-	terminal = "Bighorn Terminal"
+/obj/machinery/msgterminal/newbabylon
+	name = "\improper New Babylon communications center"
+	terminalid = "newbabylon"
+	terminal = "New Babylon Terminal"
 	terminalType = 2
 
-/obj/machinery/msgterminal/bighorn/followers
+/obj/machinery/msgterminal/newbabylon/followers
+	name = "\improper Followers communications center"
 	terminalid = "follower"
 	terminal = "Followers Terminal"
 	terminalType = 2
 
 /obj/machinery/msgterminal/brotherhood
+	name = "\improper Brotherhood communications center"
 	terminalid = "brotherhood"
 	terminal = "Brotherhood Terminal"
 	terminalType = 2
 
 /obj/machinery/msgterminal/command
+	name = "\improper Command communications center"
 	terminalid = "command"
 	terminal = "COMMAND"
 	terminalType = 3
 
 /obj/machinery/msgterminal/enclave
+	name = "\improper Enclave communications center"
 	terminalid = "enclave"
 	terminal = "Enclave Terminal"
 	terminalType = 2

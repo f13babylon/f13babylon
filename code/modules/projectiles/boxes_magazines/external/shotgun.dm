@@ -5,6 +5,7 @@
 	ammo_type = /obj/item/ammo_casing/shotgun/buckshot
 	caliber = "shotgun"
 	max_ammo = 8
+	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/ammo_box/magazine/m12g/update_icon()
 	..()
@@ -37,6 +38,7 @@
 	caliber = "shotgun"
 	max_ammo = 12
 	multiple_sprites = 2
+	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/ammo_box/magazine/d12g/empty
 	start_empty = 1

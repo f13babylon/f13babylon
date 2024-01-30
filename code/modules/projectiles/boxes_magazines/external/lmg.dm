@@ -32,6 +32,7 @@
 	caliber = "a762mm"
 	max_ammo = 10
 	multiple_sprites = 2
+	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/ammo_box/magazine/w308/empty
 	start_empty = 1
@@ -70,6 +71,7 @@
 	caliber = "a5mm"
 	max_ammo = 240
 	multiple_sprites = 2
+	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/ammo_box/magazine/cz53/empty
 	start_empty = 1
@@ -81,6 +83,7 @@
 	caliber = "a762mm"
 	max_ammo = 60
 	multiple_sprites = 2
+	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/ammo_box/magazine/mg34/empty
 	start_empty = 1

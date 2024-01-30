@@ -108,9 +108,9 @@
 /area/f13/bunker)
 "adl" = (
 /mob/living/simple_animal/hostile/renegade/guardian{
+	armour_penetration = 0.5;
 	extra_projectiles = 2;
 	melee_queue_distance = 2;
-	armour_penetration = 0.5;
 	rapid_melee = 2
 	},
 /turf/open/indestructible/ground/outside/desert,
@@ -232,8 +232,8 @@
 /area/f13/vault)
 "ajC" = (
 /mob/living/simple_animal/hostile/renegade/engie{
-	extra_projectiles = 1;
-	environment_smash = 4
+	environment_smash = 4;
+	extra_projectiles = 1
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
@@ -1114,9 +1114,9 @@
 /area/f13/bunker)
 "bpH" = (
 /mob/living/simple_animal/hostile/renegade/guardian{
+	armour_penetration = 0.5;
 	extra_projectiles = 2;
 	melee_queue_distance = 2;
-	armour_penetration = 0.5;
 	rapid_melee = 2
 	},
 /turf/open/floor/f13{
@@ -2016,11 +2016,11 @@
 	dir = 4
 	},
 /mob/living/simple_animal/hostile/renegade/drifter{
-	vision_range = 15;
-	minimum_distance = 8;
-	health = 300;
+	armour_penetration = 0.2;
 	check_friendly_fire = 0;
-	armour_penetration = 0.2
+	health = 300;
+	minimum_distance = 8;
+	vision_range = 15
 	},
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
@@ -3975,13 +3975,13 @@
 "euB" = (
 /obj/structure/chair/bench,
 /mob/living/simple_animal/hostile/renegade{
+	armour_penetration = 0.3;
+	health = 300;
 	loot = list();
+	maxHealth = 300;
 	melee_damage_lower = 10;
 	melee_damage_upper = 20;
-	rapid_melee = 2;
-	health = 300;
-	maxHealth = 300;
-	armour_penetration = 0.3
+	rapid_melee = 2
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
@@ -4045,13 +4045,13 @@
 /area/f13/caves)
 "eAw" = (
 /mob/living/simple_animal/hostile/renegade/meister{
-	retreat_distance = 2;
-	check_friendly_fire = 0;
 	aggro_vision_range = 14;
 	armour_penetration = 0.8;
+	check_friendly_fire = 0;
+	environment_smash = 4;
 	extra_projectiles = 7;
 	rapid_melee = 2;
-	environment_smash = 4
+	retreat_distance = 2
 	},
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
@@ -5719,13 +5719,13 @@
 	light_color = "#e8eaff"
 	},
 /mob/living/simple_animal/hostile/renegade{
+	armour_penetration = 0.3;
+	health = 300;
 	loot = list();
+	maxHealth = 300;
 	melee_damage_lower = 10;
 	melee_damage_upper = 20;
-	rapid_melee = 2;
-	health = 300;
-	maxHealth = 300;
-	armour_penetration = 0.3
+	rapid_melee = 2
 	},
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 1;
@@ -6013,13 +6013,13 @@
 /area/f13/vault)
 "gLT" = (
 /mob/living/simple_animal/hostile/renegade{
+	armour_penetration = 0.3;
+	health = 300;
 	loot = list();
+	maxHealth = 300;
 	melee_damage_lower = 10;
 	melee_damage_upper = 20;
-	rapid_melee = 2;
-	health = 300;
-	maxHealth = 300;
-	armour_penetration = 0.3
+	rapid_melee = 2
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -6448,9 +6448,9 @@
 /area/f13/ahs)
 "hlY" = (
 /mob/living/simple_animal/hostile/renegade/guardian{
+	armour_penetration = 0.5;
 	extra_projectiles = 2;
 	melee_queue_distance = 2;
-	armour_penetration = 0.5;
 	rapid_melee = 2
 	},
 /turf/open/floor/f13{
@@ -6714,11 +6714,11 @@
 "hAm" = (
 /obj/machinery/hydroponics/soil/crafted,
 /mob/living/simple_animal/hostile/renegade/drifter{
-	vision_range = 15;
-	minimum_distance = 8;
-	health = 300;
+	armour_penetration = 0.2;
 	check_friendly_fire = 0;
-	armour_penetration = 0.2
+	health = 300;
+	minimum_distance = 8;
+	vision_range = 15
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -7329,13 +7329,13 @@
 "ijY" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/renegade/meister{
-	retreat_distance = 2;
-	check_friendly_fire = 0;
 	aggro_vision_range = 14;
 	armour_penetration = 0.8;
+	check_friendly_fire = 0;
+	environment_smash = 4;
 	extra_projectiles = 7;
 	rapid_melee = 2;
-	environment_smash = 4
+	retreat_distance = 2
 	},
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
@@ -8478,13 +8478,13 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/renegade/meister{
-	retreat_distance = 2;
-	check_friendly_fire = 0;
 	aggro_vision_range = 14;
 	armour_penetration = 0.8;
+	check_friendly_fire = 0;
+	environment_smash = 4;
 	extra_projectiles = 7;
 	rapid_melee = 2;
-	environment_smash = 4
+	retreat_distance = 2
 	},
 /turf/open/floor/f13{
 	color = "#ffe9de";
@@ -8636,13 +8636,13 @@
 /area/f13/bunker)
 "jBt" = (
 /mob/living/simple_animal/hostile/renegade{
+	armour_penetration = 0.3;
+	health = 300;
 	loot = list();
+	maxHealth = 300;
 	melee_damage_lower = 10;
 	melee_damage_upper = 20;
-	rapid_melee = 2;
-	health = 300;
-	maxHealth = 300;
-	armour_penetration = 0.3
+	rapid_melee = 2
 	},
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
@@ -9557,20 +9557,20 @@
 "kCh" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/raider/junker/boss{
-	faction = list("raider","wastebot","hostile","supermutant","ghoul");
 	aggro_vision_range = 15;
-	vision_range = 15;
-	minimum_distance = 0;
+	armour_penetration = 0.8;
+	environment_smash = 4;
 	extra_projectiles = 7;
-	rapid_melee = 2;
+	faction = list("raider","wastebot","hostile","supermutant","ghoul");
+	health = 1250;
+	maxHealth = 1250;
+	melee_damage_upper = 50;
+	minimum_distance = 0;
 	name = "The Boss";
 	obj_damage = 500;
+	rapid_melee = 2;
 	retreat_distance = 0;
-	melee_damage_upper = 50;
-	maxHealth = 1250;
-	health = 1250;
-	environment_smash = 4;
-	armour_penetration = 0.8
+	vision_range = 15
 	},
 /turf/open/floor/f13{
 	color = "#ffe9de";
@@ -10154,9 +10154,9 @@
 "ldm" = (
 /obj/machinery/hydroponics/soil/crafted,
 /mob/living/simple_animal/hostile/renegade/guardian{
+	armour_penetration = 0.5;
 	extra_projectiles = 2;
 	melee_queue_distance = 2;
-	armour_penetration = 0.5;
 	rapid_melee = 2
 	},
 /turf/open/indestructible/ground/outside/dirt,
@@ -10461,11 +10461,11 @@
 "lvs" = (
 /obj/structure/bed,
 /mob/living/simple_animal/hostile/renegade/drifter{
-	vision_range = 15;
-	minimum_distance = 8;
-	health = 300;
+	armour_penetration = 0.2;
 	check_friendly_fire = 0;
-	armour_penetration = 0.2
+	health = 300;
+	minimum_distance = 8;
+	vision_range = 15
 	},
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
@@ -10693,8 +10693,8 @@
 /area/f13/bunker)
 "lGM" = (
 /obj/structure/bed/old{
-	pixel_y = 7;
-	pixel_x = 2
+	pixel_x = 2;
+	pixel_y = 7
 	},
 /obj/machinery/light,
 /turf/open/floor/f13{
@@ -10910,9 +10910,9 @@
 	name = "prewar lounge chair"
 	},
 /mob/living/simple_animal/hostile/renegade/guardian{
+	armour_penetration = 0.5;
 	extra_projectiles = 2;
 	melee_queue_distance = 2;
-	armour_penetration = 0.5;
 	rapid_melee = 2
 	},
 /turf/open/floor/f13/wood,
@@ -10948,8 +10948,8 @@
 	pixel_y = 6
 	},
 /obj/item/pen{
-	pixel_y = 7;
-	pixel_x = -5
+	pixel_x = -5;
+	pixel_y = 7
 	},
 /turf/open/floor/f13{
 	icon_state = "dark"
@@ -11612,8 +11612,8 @@
 "mHp" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress2";
-	pixel_y = 13;
-	pixel_x = -10
+	pixel_x = -10;
+	pixel_y = 13
 	},
 /mob/living/simple_animal/hostile/renegade/soldier{
 	retreat_distance = null
@@ -11711,7 +11711,6 @@
 /area/f13/city)
 "mOC" = (
 /obj/structure/reagent_dispensers/barrel/dangerous,
-/obj/effect/decal/cleanable/greenglow/radioactive,
 /obj/item/trash/can,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
@@ -13623,13 +13622,13 @@
 /area/f13/caves)
 "oPn" = (
 /mob/living/simple_animal/hostile/renegade/meister{
-	retreat_distance = 2;
-	check_friendly_fire = 0;
 	aggro_vision_range = 14;
 	armour_penetration = 0.8;
+	check_friendly_fire = 0;
+	environment_smash = 4;
 	extra_projectiles = 7;
 	rapid_melee = 2;
-	environment_smash = 4
+	retreat_distance = 2
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
@@ -14056,11 +14055,11 @@
 /area/f13/ahs)
 "phr" = (
 /mob/living/simple_animal/hostile/renegade/drifter{
-	vision_range = 15;
-	minimum_distance = 8;
-	health = 300;
+	armour_penetration = 0.2;
 	check_friendly_fire = 0;
-	armour_penetration = 0.2
+	health = 300;
+	minimum_distance = 8;
+	vision_range = 15
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
@@ -14296,9 +14295,9 @@
 /area/f13/caves)
 "ptp" = (
 /mob/living/simple_animal/hostile/renegade/guardian{
+	armour_penetration = 0.5;
 	extra_projectiles = 2;
 	melee_queue_distance = 2;
-	armour_penetration = 0.5;
 	rapid_melee = 2
 	},
 /turf/open/floor/f13{
@@ -15695,11 +15694,11 @@
 /area/f13/bunker)
 "qRg" = (
 /mob/living/simple_animal/hostile/renegade/drifter{
-	vision_range = 15;
-	minimum_distance = 8;
-	health = 300;
+	armour_penetration = 0.2;
 	check_friendly_fire = 0;
-	armour_penetration = 0.2
+	health = 300;
+	minimum_distance = 8;
+	vision_range = 15
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -15991,13 +15990,13 @@
 "rhs" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /mob/living/simple_animal/hostile/renegade{
+	armour_penetration = 0.3;
+	health = 300;
 	loot = list();
+	maxHealth = 300;
 	melee_damage_lower = 10;
 	melee_damage_upper = 20;
-	rapid_melee = 2;
-	health = 300;
-	maxHealth = 300;
-	armour_penetration = 0.3
+	rapid_melee = 2
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blue,
 /area/f13/bunker)
@@ -16251,13 +16250,13 @@
 "ryB" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /mob/living/simple_animal/hostile/renegade{
+	armour_penetration = 0.3;
+	health = 300;
 	loot = list();
+	maxHealth = 300;
 	melee_damage_lower = 10;
 	melee_damage_upper = 20;
-	rapid_melee = 2;
-	health = 300;
-	maxHealth = 300;
-	armour_penetration = 0.3
+	rapid_melee = 2
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -16336,8 +16335,8 @@
 "rCb" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/renegade/engie{
-	extra_projectiles = 1;
-	environment_smash = 4
+	environment_smash = 4;
+	extra_projectiles = 1
 	},
 /turf/open/floor/f13{
 	color = "#ffe9de";
@@ -16347,8 +16346,8 @@
 /area/f13/bunker)
 "rCt" = (
 /obj/item/storage/backpack/duffelbag/med/surgery{
-	pixel_y = 11;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 11
 	},
 /obj/structure/table,
 /obj/item/reagent_containers/blood/radaway,
@@ -16666,8 +16665,8 @@
 "rWK" = (
 /obj/structure/chair/bench,
 /mob/living/simple_animal/hostile/renegade/engie{
-	extra_projectiles = 1;
-	environment_smash = 4
+	environment_smash = 4;
+	extra_projectiles = 1
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
@@ -17659,13 +17658,13 @@
 /area/f13/vault)
 "tdk" = (
 /mob/living/simple_animal/hostile/renegade{
+	armour_penetration = 0.3;
+	health = 300;
 	loot = list();
+	maxHealth = 300;
 	melee_damage_lower = 10;
 	melee_damage_upper = 20;
-	rapid_melee = 2;
-	health = 300;
-	maxHealth = 300;
-	armour_penetration = 0.3
+	rapid_melee = 2
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/bunker)
@@ -17937,9 +17936,9 @@
 "ttV" = (
 /obj/structure/chair/bench,
 /mob/living/simple_animal/hostile/renegade/guardian{
+	armour_penetration = 0.5;
 	extra_projectiles = 2;
 	melee_queue_distance = 2;
-	armour_penetration = 0.5;
 	rapid_melee = 2
 	},
 /turf/open/floor/f13/wood,
@@ -18364,20 +18363,20 @@
 /area/f13/bunker)
 "tTD" = (
 /mob/living/simple_animal/hostile/raider/junker/boss{
-	faction = list("raider","wastebot","hostile","supermutant","ghoul");
 	aggro_vision_range = 15;
-	vision_range = 15;
-	minimum_distance = 0;
+	armour_penetration = 0.8;
+	environment_smash = 4;
 	extra_projectiles = 7;
-	rapid_melee = 2;
+	faction = list("raider","wastebot","hostile","supermutant","ghoul");
+	health = 1250;
+	maxHealth = 1250;
+	melee_damage_upper = 50;
+	minimum_distance = 0;
 	name = "The Boss";
 	obj_damage = 500;
+	rapid_melee = 2;
 	retreat_distance = 0;
-	melee_damage_upper = 50;
-	maxHealth = 1250;
-	health = 1250;
-	environment_smash = 4;
-	armour_penetration = 0.8
+	vision_range = 15
 	},
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
@@ -20386,9 +20385,9 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/tracks,
 /mob/living/simple_animal/hostile/renegade/guardian{
+	armour_penetration = 0.5;
 	extra_projectiles = 2;
 	melee_queue_distance = 2;
-	armour_penetration = 0.5;
 	rapid_melee = 2
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blue,
@@ -21355,13 +21354,13 @@
 /area/f13/bunker)
 "wYa" = (
 /mob/living/simple_animal/hostile/renegade{
+	armour_penetration = 0.3;
+	health = 300;
 	loot = list();
+	maxHealth = 300;
 	melee_damage_lower = 10;
 	melee_damage_upper = 20;
-	rapid_melee = 2;
-	health = 300;
-	maxHealth = 300;
-	armour_penetration = 0.3
+	rapid_melee = 2
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
@@ -21912,8 +21911,8 @@
 "xGV" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress2";
-	pixel_y = -1;
-	pixel_x = -6
+	pixel_x = -6;
+	pixel_y = -1
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -22158,8 +22157,8 @@
 /obj/item/defibrillator/compact/loaded,
 /obj/effect/spawner/lootdrop/f13/medical/surgical,
 /obj/item/storage/backpack/duffelbag/med/surgery{
-	pixel_y = 11;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 11
 	},
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"

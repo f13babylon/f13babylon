@@ -5,7 +5,7 @@
 /datum/component/combat_mode
 	var/mode_flags = COMBAT_MODE_INACTIVE
 	var/combatmessagecooldown
-	var/obj/screen/combattoggle/hud_icon
+	var/atom/movable/screen/combattoggle/hud_icon
 	var/hud_loc
 
 /datum/component/combat_mode/Initialize(hud_loc = ui_combat_toggle)
@@ -165,24 +165,24 @@
 	safe_disable_combat_mode(source)
 
 /// The screen button.
-/obj/screen/combattoggle
+/atom/movable/screen/combattoggle
 	name = "toggle combat mode"
 	icon = 'modular_citadel/icons/ui/screen_midnight.dmi'
 	icon_state = "combat_off"
 	var/mutable_appearance/flashy
 	var/combat_on = FALSE ///Wheter combat mode is enabled or not, so we don't have to store a reference.
 
-/obj/screen/combattoggle/update_icon()
+/atom/movable/screen/combattoggle/update_icon()
 	// todo: report back if this causes lag
 	// it probably shouldn't because this should just run when ui style is changed
 	. = ..()
 	icon = tg_ui_icon_to_cit_ui(icon) // no-op if it's already set or unsupported
 
-/obj/screen/combattoggle/Click()
+/atom/movable/screen/combattoggle/Click()
 	if(hud && usr == hud.mymob)
 		SEND_SIGNAL(hud.mymob, COMSIG_TOGGLE_COMBAT_MODE)
 
-/obj/screen/combattoggle/update_icon_state()
+/atom/movable/screen/combattoggle/update_icon_state()
 	var/mob/living/user = hud?.mymob
 	if(!user)
 		return
@@ -193,7 +193,7 @@
 	else
 		icon_state = "combat_off"
 
-/obj/screen/combattoggle/update_overlays()
+/atom/movable/screen/combattoggle/update_overlays()
 	. = ..()
 	var/mob/living/carbon/user = hud?.mymob
 	if(!(user?.client))
@@ -206,7 +206,7 @@
 		. += flashy //TODO - beg lummox jr for the ability to force mutable appearances or images to be created rendering from their first frame of animation rather than being based entirely around the client's frame count
 
 // surrender stuff
-/obj/screen/alert/status_effect/surrender/
+/atom/movable/screen/alert/status_effect/surrender/
 	desc = "You're either in combat or being held up. Click here to surrender and show that you don't wish to fight. You will be incapacitated. (You can also say '*surrender' at any time to do this.)"
 
 /datum/emote/living/surrender

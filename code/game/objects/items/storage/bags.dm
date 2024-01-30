@@ -108,7 +108,6 @@
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "satchel"
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_POCKET
-	w_class = WEIGHT_CLASS_NORMAL
 	component_type = /datum/component/storage/concrete/stack
 	var/spam_protection = FALSE //If this is TRUE, the holder won't receive any messages when they fail to pick up ore through crossing it
 	var/mob/listeningTo
@@ -226,7 +225,7 @@
 	name = "plant bag"
 	icon = 'icons/fallout/farming/farming_tools.dmi'
 	icon_state = "plantbag"
-	w_class = WEIGHT_CLASS_TINY
+	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_POCKET
 	resistance_flags = FLAMMABLE
 
 /obj/item/storage/bag/plants/ComponentInitialize()
@@ -268,7 +267,6 @@
 	icon_state = "sheetsnatcher"
 
 	var/capacity = 300; //the number of sheets it can carry.
-	w_class = WEIGHT_CLASS_NORMAL
 	component_type = /datum/component/storage/concrete/stack
 
 /obj/item/storage/bag/sheetsnatcher/ComponentInitialize()
@@ -446,7 +444,7 @@
 	desc = "A pouch for your ammo that goes in your pocket."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "ammopouch"
-	slot_flags = ITEM_SLOT_POCKET
+	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_POCKET
 	w_class = WEIGHT_CLASS_BULKY
 	resistance_flags = FLAMMABLE
 
@@ -464,7 +462,7 @@
 	desc = "A pouch for sheets and RCD ammunition that manages to hang where you would normally put things in your pocket."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "materialpouch"
-	slot_flags = ITEM_SLOT_POCKET
+	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_POCKET
 	w_class = WEIGHT_CLASS_BULKY
 	resistance_flags = FLAMMABLE
 

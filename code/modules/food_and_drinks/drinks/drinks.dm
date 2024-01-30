@@ -451,7 +451,7 @@
 
 /obj/item/reagent_containers/food/drinks/flask
 	name = "flask"
-	desc = "Every good wastelander knows it's a good idea to bring along a couple of pints of whiskey wherever they go."
+	desc = "Every good wastelander knows it's a good idea to bring along a couple of pints of water wherever they go."
 	icon_state = "flask"
 	custom_materials = list(/datum/material/iron=250)
 	volume = 60
@@ -460,8 +460,7 @@
 
 /obj/item/reagent_containers/food/drinks/flask/survival
 	name = "survival flask"
-	desc = "Every good wastelander knows it's a good idea to bring along a couple of pints of water wherever they go."
-	list_reagents = list(/datum/reagent/water/bwater = 60)
+	list_reagents = list(/datum/reagent/water/bwater = 50)
 
 /obj/item/reagent_containers/food/drinks/flask/gold
 	name = "captain's flask"

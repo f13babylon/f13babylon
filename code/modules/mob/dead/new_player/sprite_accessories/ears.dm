@@ -60,11 +60,6 @@
 	icon_state = "thinant"
 	matrixed_sections = MATRIX_RED
 
-/datum/sprite_accessory/ears/mam_ears/avali
-	name = "Avali"
-	icon_state = "avali"
-	matrixed_sections = MATRIX_RED_GREEN
-
 /datum/sprite_accessory/ears/mam_ears/axolotl
 	name = "Axolotl"
 	icon_state = "axolotl"
@@ -278,6 +273,12 @@
 	icon_state = "vap"
 	matrixed_sections = MATRIX_ALL
 
+/datum/sprite_accessory/ears/mam_ears/fennec8
+	name = "Fennec (ALT 7)"
+	icon = 'icons/mob/mutant_bodyparts_large.dmi'
+	icon_state = "sylveon"
+	matrixed_sections = MATRIX_ALL
+
 /datum/sprite_accessory/ears/mam_ears/fennecsplayed
 	name = "Fennec (Splayed)"
 	icon_state = "fennecsplayed"
@@ -464,12 +465,6 @@
 	name = "Squirrel"
 	icon_state = "squirrel"
 	matrixed_sections = MATRIX_RED_GREEN
-
-/datum/sprite_accessory/ears/mam_ears/sylveon
-	name = "Sylveon"
-	icon = 'icons/mob/mutant_bodyparts_large.dmi'
-	icon_state = "sylveon"
-	matrixed_sections = MATRIX_ALL
 
 /datum/sprite_accessory/ears/mam_ears/teppi
 	name = "Teppi"

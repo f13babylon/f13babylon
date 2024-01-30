@@ -280,7 +280,7 @@ Fence
 								/obj/item/clothing/suit/f13/elder = 300,
 								/obj/item/clothing/accessory/bos/elder = 300,
 								/obj/item/gun/energy/laser/laer = 600,
-								/obj/item/clothing/neck/mantle/bos/right = 300
+								/obj/item/clothing/neck/mantle/holster/bos/right = 300
 
 								)
 

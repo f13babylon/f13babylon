@@ -41,6 +41,7 @@
 	desc = "A cased high explosive grenade that can only be activated once fired out of a grenade launcher."
 	caliber = "40mm"
 	icon_state = "40mmHE"
+	w_class = WEIGHT_CLASS_SMALL
 	projectile_type = /obj/item/projectile/bullet/rocket/a40mmHE
 
 /obj/item/ammo_casing/a40mmCS
@@ -48,6 +49,7 @@
 	desc = "A thin, cased tear gas grenade. Only activates once it impacts the ground at high speed."
 	caliber = "40mmg"
 	icon_state = "40mmTG"
+	w_class = WEIGHT_CLASS_SMALL
 	projectile_type = /obj/item/projectile/bullet/a40mmCS
 
 /obj/item/ammo_casing/a40mmS
@@ -55,6 +57,7 @@
 	desc = "A thin, cased tear gas grenade. Only activates once it impacts the ground at high speed."
 	caliber = "40mmg"
 	icon_state = "40mmTG"
+	w_class = WEIGHT_CLASS_SMALL
 	projectile_type = /obj/item/projectile/bullet/a40mmS
 
 /obj/item/ammo_casing/a40mmHEDP
@@ -62,6 +65,7 @@
 	desc = "A cased high explosive grenade that can only be activated once fired out of a grenade launcher."
 	caliber = "40mm"
 	icon_state = "40mmHE"
+	w_class = WEIGHT_CLASS_SMALL
 	projectile_type = /obj/item/projectile/bullet/rocket/a40mmHEDP
 
 /obj/item/ammo_casing/a40mmM
@@ -69,6 +73,7 @@
 	desc = "A cased high explosive grenade that can only be activated once fired out of a grenade launcher."
 	caliber = "40mm"
 	icon_state = "40mmHE"
+	w_class = WEIGHT_CLASS_SMALL
 	projectile_type = /obj/item/projectile/bullet/rocket/a40mmM
 
 /obj/item/ammo_casing/a40mmF
@@ -76,6 +81,7 @@
 	desc = "A cased high explosive grenade that can only be activated once fired out of a grenade launcher."
 	caliber = "40mm"
 	icon_state = "40mmHE"
+	w_class = WEIGHT_CLASS_SMALL
 	projectile_type = /obj/item/projectile/bullet/rocket/a40mmF
 
 /obj/item/ammo_casing/a40mmI
@@ -83,6 +89,7 @@
 	desc = "A cased high explosive grenade that can only be activated once fired out of a grenade launcher."
 	caliber = "40mm"
 	icon_state = "40mmHE"
+	w_class = WEIGHT_CLASS_SMALL
 	projectile_type = /obj/item/projectile/bullet/rocket/a40mmI
 
 // 2mm EC
