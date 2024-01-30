@@ -696,6 +696,7 @@
 	force = 20
 	recoil = 0.7
 	actions_types = list(/datum/action/item_action/toggle_firemode)
+	var/singleshot_select_delay = 4
 
 	reload_sound = 'sound/weapons/guns/lrifle_magin.ogg'
 	reload_sound_empty = 'sound/weapons/guns/lrifle_magin.ogg'
@@ -716,17 +717,17 @@
 	playsound(usr, 'sound/weapons/empty.ogg', 100, 1)
 
 /obj/item/gun/ballistic/automatic/assault_rifle/burst_select()
-	if(burst_size != 3)
+	if(burst_size != initial(burst_size))
 		spread *= 1.2
 		recoil *= 1.2
-		burst_size = 3
-		fire_delay++
+		burst_size = initial(burst_size)
+		fire_delay = initial(fire_delay)
 		to_chat(usr, "<span class='notice'>You switch to burst fire.</span>")
 	else
 		spread /= 1.2
 		recoil /= 1.2
 		burst_size = 1
-		fire_delay--
+		fire_delay = singleshot_select_delay
 		to_chat(usr, "<span class='notice'>You switch to semi-auto.</span>")
 
 	playsound(usr, 'sound/weapons/empty.ogg', 100, 1)
@@ -779,8 +780,8 @@
 	automatic = FALSE
 	is_automatic = FALSE
 	burst_size = 2
-	fire_delay = 5
-	spread = 12
+	fire_delay = 4
+	spread = 6
 
 //Assault Carbine		Keywords: 5mm, AP, 30/50 Rounds, Superhigh tier
 /obj/item/gun/ballistic/automatic/assault_rifle/assault_carbine
