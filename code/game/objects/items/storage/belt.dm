@@ -615,14 +615,7 @@
 	item_state = "holster_shoulder"
 	alternate_worn_layer = UNDER_SUIT_LAYER
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_NECK
-
-/obj/item/storage/belt/holster/ComponentInitialize()
-	. = ..()
-	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_items = 4
-	STR.max_w_class = WEIGHT_CLASS_NORMAL
-	STR.max_combined_w_class = WEIGHT_CLASS_NORMAL + WEIGHT_CLASS_TINY * 3		//At most, 1 NORMAL-sized pistol and 3 magazines for it (Or 3 small pistols, 4 tiny pistols, etc.)
-	STR.can_hold = GLOB.storage_holster_can_hold
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/holster
 
 /obj/item/storage/belt/holster/full/PopulateContents()
 	new /obj/item/gun/ballistic/revolver/detective(src)

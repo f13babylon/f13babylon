@@ -530,7 +530,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/outfit/loadout/rangerrecon
 	name = "Recon Ranger"
 	belt = /obj/item/storage/belt/military/reconbandolier
-	neck = /obj/item/clothing/neck/mantle/ranger
+	neck = /obj/item/clothing/neck/mantle/holster/ranger
 	head = /obj/item/clothing/head/helmet/f13/ncr/reconranger
 	suit = /obj/item/clothing/suit/toggle/armor/f13/reconranger
 	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper
@@ -543,7 +543,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/outfit/loadout/rangertrail
 	name = "Trail Ranger"
 	belt = /obj/item/storage/belt/military/NCR_Bandolier
-	neck = /obj/item/clothing/neck/mantle/ranger
+	neck = /obj/item/clothing/neck/mantle/holster/ranger
 	head = /obj/item/clothing/head/helmet/f13/ncr/trailranger
 	suit = /obj/item/clothing/suit/armor/f13/ncr/trailranger
 	suit_store = /obj/item/gun/ballistic/rifle/repeater/trail

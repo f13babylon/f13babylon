@@ -304,7 +304,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Paladin-Slayer Centurion"
 	suit = /obj/item/clothing/suit/armor/f13/legion/centurion/paladinslayer
 	head = /obj/item/clothing/head/helmet/f13/legion/centurion/paladinslayer
-	neck = /obj/item/clothing/neck/mantle/legion
+	neck = /obj/item/clothing/neck/mantle/holster/legion
 	suit_store = /obj/item/gun/ballistic/automatic/lmg/m1919
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/mm762 = 1,
@@ -315,7 +315,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Ranger-Hunter Centurion"
 	suit = /obj/item/clothing/suit/armor/f13/legion/centurion/rangerhunter
 	head = /obj/item/clothing/head/helmet/f13/legion/centurion/rangerhunter
-	neck = /obj/item/clothing/neck/mantle/legion/rangercent
+	neck = /obj/item/clothing/neck/mantle/holster/legion/rangercent
 	suit_store = /obj/item/gun/ballistic/rifle/mag/antimateriel
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/amr = 2,
@@ -327,7 +327,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Warlord Centurion"
 	suit = /obj/item/clothing/suit/armor/f13/legion/centurion
 	head = /obj/item/clothing/head/helmet/f13/legion/centurion
-	neck = /obj/item/clothing/neck/mantle/legion
+	neck = /obj/item/clothing/neck/mantle/holster/legion
 	suit_store = /obj/item/gun/ballistic/automatic/smg/uzi
 	backpack_contents = list(
 		/obj/item/melee/f13powerfist/goliath = 1,
@@ -339,7 +339,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Praetorian Candidate"
 	suit = /obj/item/clothing/suit/armor/f13/legion/centurion
 	head = /obj/item/clothing/head/helmet/f13/legion/centurion
-	neck = /obj/item/clothing/neck/mantle/legion
+	neck = /obj/item/clothing/neck/mantle/holster/legion
 	backpack_contents = list(
 		/obj/item/melee/unarmed/brass/lovetap = 1,
 		/obj/item/book/granter/martial/berserker = 1,

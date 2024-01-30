@@ -137,30 +137,22 @@
 	. = ..()
 	can_hold = GLOB.storage_hat_can_hold
 
-
-/datum/component/storage/concrete/pockets/bos/paladin/
-	max_items = 4
-	max_w_class = WEIGHT_CLASS_NORMAL
-
-/datum/component/storage/concrete/pockets/bos/paladin/Initialize()
-	. = ..()
-	can_hold = GLOB.storage_holster_can_hold
-
 /datum/component/storage/concrete/pockets/small/holdout
 	max_items = 1
 	attack_hand_interact = TRUE
 	max_w_class = WEIGHT_CLASS_NORMAL
 	quickdraw = TRUE
-
-/datum/component/storage/concrete/pockets/small/holdout/Initialize()
-	. = ..()
 	can_hold = GLOB.storage_holdout_can_hold
+
+/datum/component/storage/concrete/pockets/holster
+	max_items = 4
+	max_w_class = WEIGHT_CLASS_NORMAL
+	max_combined_w_class = WEIGHT_CLASS_NORMAL + WEIGHT_CLASS_TINY * 3		//At most, 1 NORMAL-sized pistol and 3 magazines for it (Or 3 small pistols, 4 tiny pistols, etc.)
+	can_hold = GLOB.storage_holster_can_hold
 
 /datum/component/storage/concrete/pockets/bulletbelt
 	max_items = 4
-
-/datum/component/storage/concrete/pockets/bulletbelt/Initialize()
-	. = ..()
+	max_w_class = WEIGHT_CLASS_SMALL
 	can_hold = GLOB.storage_bulletbelt_can_hold
 
 GLOBAL_LIST_INIT(storage_bartender_can_hold, typecacheof(list(
@@ -287,15 +279,13 @@ GLOBAL_LIST_INIT(storage_treasurer_can_hold, typecacheof(list(
 	)))
 
 GLOBAL_LIST_INIT(storage_holdout_can_hold, typecacheof(list(
-	/obj/item/gun/ballistic/automatic/pistol/sig,
-	/obj/item/gun/ballistic/revolver/detective,
-	/obj/item/gun/ballistic/automatic/hobo/zipgun,
-	/obj/item/gun/ballistic/automatic/pistol/pistol14/compact,
-	/obj/item/gun/ballistic/revolver/police,
-	/obj/item/gun/ballistic/revolver/colt357/lucky,
-	/obj/item/gun/ballistic/revolver/m29/snub,
-	/obj/item/gun/ballistic/revolver/needler,
+	/obj/item/gun/ballistic/automatic/pistol,
+	/obj/item/gun/ballistic/revolver,
+	/obj/item/gun/energy/laser/pistol,
 	/obj/item/gun/energy/laser/wattz,
+	/obj/item/gun/energy/laser/complianceregulator,
+	/obj/item/gun/energy/laser/plasma/pistol,
+	/obj/item/gun/energy/laser/plasma/glock,
 )))
 
 GLOBAL_LIST_INIT(storage_bulletbelt_can_hold, typecacheof(list(
@@ -313,5 +303,5 @@ GLOBAL_LIST_INIT(storage_bulletbelt_can_hold, typecacheof(list(
 	/obj/item/ammo_box/a556mm/stripper,
 	/obj/item/ammo_box/needle,
 	/obj/item/ammo_box/a50MG,
-	/obj/item/stock_parts/cell/ammo/ec,
+	/obj/item/stock_parts/cell/ammo,
 )))
