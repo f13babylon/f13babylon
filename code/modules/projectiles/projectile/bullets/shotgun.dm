@@ -37,8 +37,8 @@
 	light_range = LIGHT_RANGE_FIRE
 	light_color = LIGHT_COLOR_FIRE
 	damage_type = BURN
-	damage = 15
-	wound_bonus = 30
+	damage = 20
+	wound_bonus = 40
 	supereffective_damage = 25
 	supereffective_faction = list("ant", "cazador", "gecko", "radscorpion", "wolf", "dog", "plants", "rat", "spiders")
 	var/dmg_dropoff_per_tile = 15 / 7	//In 7 tiles it will lose all of its initial damage (and get deleted)
