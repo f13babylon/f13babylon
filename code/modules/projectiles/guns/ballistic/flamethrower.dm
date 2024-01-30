@@ -115,7 +115,7 @@
 	fire_sound = 'sound/f13weapons/flamethrower.ogg'
 	insert_sound = 'sound/effects/refill.ogg'
 	casing_ejector = FALSE
-	mag_type = /obj/item/ammo_box/magazine/internal/m2flamethrower
+	mag_type = /obj/item/ammo_box/magazine/internal/flamethrower
 	var/obj/item/flamethrowertank/ammo_pack
 
 /obj/item/gun/ballistic/flamethrower/Initialize(mapload)
