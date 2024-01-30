@@ -133,7 +133,7 @@
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK
-	weapon_weight = WEAPON_LIGHT
+	weapon_weight = WEAPON_HEAVY
 	slowdown = 0.4
 	fire_delay = 8
 	//var/twohands = FALSE		- Disabled, wasn't needed if you just give it a higher fire delay.
