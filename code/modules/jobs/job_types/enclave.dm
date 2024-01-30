@@ -699,10 +699,9 @@
 	id = /obj/item/card/id/dogtag/enclave/trooper
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	uniform = /obj/item/clothing/under/f13/enclave/peacekeeper
-
+	box = null
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
-		/obj/item/storage/survivalkit/firstaid/advanced = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		)
 
@@ -711,6 +710,7 @@
 	mask = /obj/item/clothing/mask/surgical
 	suit = /obj/item/clothing/suit/hooded/surgical
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile
+	box = /obj/item/storage/survivalkit/firstaid
 	backpack_contents = list(
 		/obj/item/book/granter/trait/chemistry = 1,
 		/obj/item/healthanalyzer = 1,
@@ -721,6 +721,7 @@
 	head = /obj/item/clothing/head/hardhat
 	suit = /obj/item/clothing/suit/hazardvest
 	gloves = /obj/item/clothing/gloves/color/yellow
+	box = /obj/item/storage/survivalkit/advanced
 	backpack_contents = list(
 		/obj/item/storage/belt/utility = 1,
 		/obj/item/stack/sheet/metal/twenty = 1,
@@ -733,6 +734,7 @@
 	gloves = /obj/item/clothing/gloves/color/black
 	head = /obj/item/clothing/head/soft/purple
 	shoes = /obj/item/clothing/shoes/galoshes
+	box = /obj/item/storage/survivalkit/advanced
 	backpack_contents = list(
 		/obj/item/reagent_containers/spray/cleaner = 1,
 		/obj/item/mop/advanced = 1,
@@ -743,6 +745,7 @@
 	name = "Spiritual Technician"
 	mask = /obj/item/clothing/mask/surgical
 	suit = /obj/item/clothing/suit/f13/autumn
+	box = /obj/item/storage/survivalkit/advanced
 	backpack_contents = list(
 		/obj/item/storage/book/bible = 2,
 		/obj/item/pen = 1,
@@ -753,6 +756,7 @@
 	name = "Culinary Technician"
 	head = /obj/item/clothing/head/chefhat
 	suit = /obj/item/clothing/neck/apron/housewife
+	box = /obj/item/storage/survivalkit/advanced
 	backpack_contents = list(
 		/obj/item/storage/box/ingredients/wildcard = 4,
 		/obj/item/kitchen/knife/butcher = 1,
