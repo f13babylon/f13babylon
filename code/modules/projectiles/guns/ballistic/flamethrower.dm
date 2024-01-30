@@ -1,4 +1,4 @@
-//The ammo/gun is stored in a back slot item
+//The ammo/gun is stored in a back slot item.
 /obj/item/flamethrowertank
 	name = "backpack fuel tank"
 	desc = "A massive pressurized fuel tank for a man-portable flamethrower."
