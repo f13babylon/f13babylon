@@ -408,9 +408,6 @@
 /turf/open/indestructible/ground/outside/snow_plating,
 /area/f13/mountain_area)
 "cH" = (
-/obj/structure/lattice{
-	layer = 3
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/landmark/start/f13/uslightduty,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
@@ -433,9 +430,6 @@
 /area/f13/enclave/command)
 "cK" = (
 /obj/item/twohanded/required/kirbyplants/random,
-/obj/structure/lattice{
-	layer = 3
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
@@ -865,13 +859,6 @@
 /obj/item/storage/box/handcuffs,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/enclave/prison)
-"fw" = (
-/obj/structure/table,
-/obj/structure/lattice{
-	layer = 3
-	},
-/turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
-/area/f13/enclave/rnd)
 "fy" = (
 /obj/effect/spawner/lootdrop/f13/ncr_k_ration,
 /turf/open/indestructible/ground/outside/snow_plating,
@@ -2492,9 +2479,6 @@
 /area/f13/enclave/vertibird)
 "nM" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/lattice{
-	layer = 3
-	},
 /obj/structure/closet/crate/bin/trashbin,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/enclave/hallways)
@@ -3005,9 +2989,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue,
 /area/f13/enclave/command)
 "qU" = (
-/obj/structure/lattice{
-	layer = 3
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/crate/bin/trashbin,
 /obj/effect/landmark/start/f13/uslightduty,
@@ -4480,9 +4461,6 @@
 	light_color = "#F5CDA6";
 	bulb_colour = "#F5CDA6"
 	},
-/obj/structure/lattice{
-	layer = 3
-	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/armory)
 "yR" = (
@@ -4910,9 +4888,6 @@
 	},
 /area/f13/building)
 "Bp" = (
-/obj/structure/lattice{
-	layer = 3
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/landmark/start/f13/uslightduty,
 /obj/effect/landmark/start/f13/usis,
@@ -5077,13 +5052,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark,
 /area/f13/enclave)
-"Ct" = (
-/obj/structure/lattice{
-	layer = 3
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/enclave/hallways)
 "Cv" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
@@ -6496,13 +6464,6 @@
 /obj/machinery/jukebox,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/enclave/mess)
-"KX" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/lattice{
-	layer = 3
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark,
-/area/f13/enclave/armory)
 "KY" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -6776,9 +6737,6 @@
 /turf/open/water,
 /area/f13/enclave/hallways)
 "MV" = (
-/obj/structure/lattice{
-	layer = 3
-	},
 /obj/machinery/light{
 	dir = 4
 	},
@@ -6798,12 +6756,6 @@
 /obj/item/reagent_containers/food/snacks/meatballsub,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/enclave/mess)
-"Nf" = (
-/obj/structure/lattice{
-	layer = 3
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/enclave/hallways)
 "Ng" = (
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
@@ -6855,13 +6807,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/command)
-"Nu" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/lattice{
-	layer = 3
-	},
-/turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
-/area/f13/enclave/rnd)
 "Ny" = (
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/enclave/hydroponics)
@@ -6966,9 +6911,6 @@
 	anchored = 1
 	},
 /obj/item/target,
-/obj/structure/lattice{
-	layer = 3
-	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/armory)
 "Od" = (
@@ -7623,13 +7565,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
 /area/f13/enclave/reactor)
-"RY" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/lattice{
-	layer = 3
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/enclave/hallways)
 "Sb" = (
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/enclave/mess)
@@ -8627,9 +8562,6 @@
 /obj/machinery/vending/coffee{
 	layer = 4.15
 	},
-/obj/structure/lattice{
-	layer = 3
-	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/enclave/hallways)
 "XB" = (
@@ -8874,9 +8806,6 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "Zj" = (
-/obj/structure/lattice{
-	layer = 3
-	},
 /obj/machinery/light{
 	dir = 1
 	},
@@ -15415,7 +15344,7 @@ UL
 Um
 tk
 qr
-Ct
+qr
 UQ
 sb
 Go
@@ -15671,7 +15600,7 @@ Um
 Um
 UQ
 js
-Ct
+qr
 cK
 UQ
 Um
@@ -15929,7 +15858,7 @@ IG
 UQ
 EJ
 qr
-Nf
+Sn
 UQ
 IG
 Ew
@@ -17211,7 +17140,7 @@ Sn
 Sn
 Sn
 qr
-RY
+qr
 nM
 Sn
 Sn
@@ -17456,7 +17385,7 @@ qr
 Sn
 Sn
 qr
-Nf
+Sn
 Sn
 Sn
 Sn
@@ -17712,8 +17641,8 @@ Sn
 Sn
 qr
 tI
-Nf
-Nf
+Sn
+Sn
 qr
 qr
 eU
@@ -17721,7 +17650,7 @@ Sn
 Sn
 Sn
 Sn
-Nf
+Sn
 MV
 Sn
 Sn
@@ -21060,7 +20989,7 @@ Sn
 kh
 Sn
 qr
-Nf
+Sn
 XA
 UQ
 yc
@@ -21318,7 +21247,7 @@ qr
 Sn
 Sn
 Sn
-Nf
+Sn
 UQ
 UQ
 Zl
@@ -23625,7 +23554,7 @@ CJ
 My
 xs
 Sn
-Nf
+Sn
 Sn
 qr
 Sn
@@ -23881,7 +23810,7 @@ CJ
 Vq
 Lq
 Sn
-RY
+qr
 Sn
 et
 et
@@ -26182,7 +26111,7 @@ UE
 iT
 Um
 UQ
-KX
+oL
 oL
 oL
 tC
@@ -26466,7 +26395,7 @@ Um
 IQ
 Sn
 Sn
-RY
+qr
 UQ
 iU
 zY
@@ -26722,13 +26651,13 @@ qY
 Um
 Hs
 Ww
-RY
-RY
+qr
+qr
 UQ
 dH
 nZ
-Nu
-fw
+RG
+nZ
 UQ
 iT
 HA
