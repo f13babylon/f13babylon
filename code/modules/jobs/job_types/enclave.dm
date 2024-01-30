@@ -105,7 +105,7 @@
 
 /datum/outfit/loadout/cpt_flamer
 	name = "Support Lead"
-	suit_store = /obj/item/m2flamethrowertank
+	suit_store = /obj/item/flamethrowertank
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/deagle/elcapitan = 1,
 		/obj/item/ammo_box/magazine/m14mm = 3,

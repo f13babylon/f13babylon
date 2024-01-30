@@ -643,7 +643,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit = /obj/item/clothing/suit/armor/f13/ncr/heavygunner
 	mask = /obj/item/clothing/mask/gas
 	backpack_contents = list(
-		/obj/item/m2flamethrowertank = 1,
+		/obj/item/flamethrowertank = 1,
 		/obj/item/ammo_box/jerrycan = 2,
 	)
 

@@ -1329,7 +1329,7 @@
 /obj/effect/spawner/bundle/f13/flamethrower
 	name = "flamethrower and ammo spawner"
 	items = list(
-		/obj/item/m2flamethrowertank,
+		/obj/item/flamethrowertank,
 		/obj/item/ammo_box/jerrycan,
 )
 

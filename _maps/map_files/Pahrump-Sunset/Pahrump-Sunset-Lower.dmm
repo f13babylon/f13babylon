@@ -12110,7 +12110,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack/shelf_metal,
 /obj/structure/window/reinforced/spawner,
-/obj/item/m2flamethrowertank,
+/obj/item/flamethrowertank,
 /obj/item/gun/ballistic/automatic/lmg/r84,
 /obj/effect/spawner/bundle/f13/needler,
 /obj/effect/spawner/bundle/f13/needler,
