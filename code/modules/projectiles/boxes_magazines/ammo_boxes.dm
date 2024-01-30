@@ -726,6 +726,7 @@
 	unloadable = TRUE
 	ammo_type = /obj/item/ammo_casing/caseless/flamethrower
 	max_ammo = 100
+	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/ammo_box/update_icon()
 	..()
