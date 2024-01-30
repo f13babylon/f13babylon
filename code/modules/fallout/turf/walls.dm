@@ -351,6 +351,8 @@
 					to_chat(world, span_nicegreen("You hear through the grapevine that a <b>[departing_job.title]</b> has left the region."))
 				else
 					for (var/mob/living/carbon/human/aware_player in GLOB.player_list)
+						if (!aware_player.mind)
+							continue
 						var/datum/job/aware_job = SSjob.GetJob(aware_player.mind.assigned_role)
 						if (aware_job.faction == departing_job.faction)
 							to_chat(aware_player, span_nicegreen("You hear through the grapevine that <b>[departing_mob.name]</b> the <b>[departing_job.title]</b> has left the region."))
