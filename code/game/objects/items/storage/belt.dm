@@ -615,10 +615,7 @@
 	item_state = "holster_shoulder"
 	alternate_worn_layer = UNDER_SUIT_LAYER
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_NECK
-
-/obj/item/storage/belt/holster/ComponentInitialize()
-	. = ..()
-	AddComponent(/datum/component/storage/concrete/pockets/holster)
+	component_type = /datum/component/storage/concrete/pockets/holster
 
 /obj/item/storage/belt/holster/full/PopulateContents()
 	new /obj/item/gun/ballistic/revolver/detective(src)
