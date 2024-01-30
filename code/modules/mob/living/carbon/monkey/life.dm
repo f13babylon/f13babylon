@@ -145,7 +145,7 @@
 
 		//the fire tries to damage the exposed clothes and items
 		var/list/burning_items = list()
-		//HEAD//
+		//HEAD
 		var/obj/item/clothing/head_clothes = null
 		if(wear_mask)
 			head_clothes = wear_mask
