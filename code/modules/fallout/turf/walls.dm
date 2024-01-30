@@ -349,11 +349,11 @@
 				var/datum/job/departing_job = SSjob.GetJob(departing_mob.mind.assigned_role)
 				if (departing_job.faction in list(FACTION_WASTELAND, FACTION_RAIDERS))
 					to_chat(world, span_nicegreen("You hear through the grapevine that a <b>[departing_job.title]</b> has left the region."))
-				else
+				else if (departing_job)
 					for (var/mob/living/carbon/human/aware_player in GLOB.player_list)
-						if (!aware_player.mind)
-							continue
 						var/datum/job/aware_job = SSjob.GetJob(aware_player.mind.assigned_role)
+						if (!aware_job)
+							continue
 						if (aware_job.faction == departing_job.faction)
 							to_chat(aware_player, span_nicegreen("You hear through the grapevine that <b>[departing_mob.name]</b> the <b>[departing_job.title]</b> has left the region."))
 						else if (departing_job.faction == FACTION_ENCLAVE)
