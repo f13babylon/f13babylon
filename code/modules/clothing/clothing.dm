@@ -171,7 +171,7 @@
 	if(!(def_zone in covered_limbs))
 		return
 
-	var/damage_dealt = take_damage(damage_amount * 0.1, damage_type, armour_penetration, FALSE) * 10 // only deal 10% of the damage to the general integrity damage, then multiply it by 10 so we know how much to deal to limb
+	var/damage_dealt = take_damage(damage_amount * 0.1, damage_type, armour_penetration, FALSE) * 2 // only deal 10% of the damage to the general integrity damage, then multiply it by 2 so we know how much to deal to limb
 	LAZYINITLIST(damage_by_parts)
 	damage_by_parts[def_zone] += damage_dealt
 	if(damage_by_parts[def_zone] > limb_integrity)
