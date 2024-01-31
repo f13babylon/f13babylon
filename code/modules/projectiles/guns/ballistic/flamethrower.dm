@@ -108,7 +108,7 @@
 	slot_flags = null
 	automatic = TRUE
 	autofire_shot_delay = 1
-	slowdown = 1.4
+	slowdown = 1.2
 	spread = 18
 	force = 20
 	automatic = TRUE
