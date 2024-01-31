@@ -6,7 +6,6 @@
 	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
 	strip_delay = 60
 	equip_delay_other = 40
-	max_integrity = 400
 	resistance_flags = NONE
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0 , "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 10)
 	slowdown = 0.01
@@ -309,7 +308,6 @@
 	item_state = "durathread"
 	strip_delay = 60
 	equip_delay_other = 40
-	max_integrity = 200
 	armor = list("melee" = 25, "bullet" = 15, "laser" = 45, "energy" = 45, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 50, "wound" = 10)
 
 /obj/item/clothing/suit/armor/vest/russian
@@ -339,7 +337,6 @@
 	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
 	strip_delay = 30
 	equip_delay_other = 40
-	max_integrity = 250
 	resistance_flags = NONE
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	armor = null
@@ -430,6 +427,5 @@ Suits. 0-10 in its primary value, slowdown 0, various utility
 	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
 	strip_delay = 60
 	equip_delay_other = 40
-	max_integrity = 250
 	resistance_flags = NONE
 	togglename = "collar"

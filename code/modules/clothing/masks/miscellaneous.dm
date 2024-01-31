@@ -373,7 +373,6 @@
 	item_state = "plainmask"
 	flags_inv = HIDEFACE|HIDEFACIALHAIR
 	resistance_flags = FLAMMABLE
-	max_integrity = 100
 	actions_types = list(/datum/action/item_action/adjust)
 	var/list/papermask_designs = list()
 

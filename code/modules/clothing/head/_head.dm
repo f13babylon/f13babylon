@@ -3,7 +3,6 @@
 	icon = 'icons/obj/clothing/hats.dmi'
 	icon_state = "top_hat"
 	item_state = "that"
-	max_integrity = 300
 	body_parts_covered = HEAD
 	slot_flags = ITEM_SLOT_HEAD
 	var/blockTracking = 0 //For AI tracking
