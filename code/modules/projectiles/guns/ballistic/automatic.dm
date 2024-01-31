@@ -718,13 +718,14 @@
 
 /obj/item/gun/ballistic/automatic/assault_rifle/burst_select()
 	if(burst_size != initial(burst_size))
-		spread *= 1.2
+		spread = 0
+		burst_spread = initial(burst_spread)
 		recoil *= 1.2
 		burst_size = initial(burst_size)
 		fire_delay = initial(fire_delay)
 		to_chat(usr, "<span class='notice'>You switch to burst fire.</span>")
 	else
-		spread /= 1.2
+		spread = initial(burst_spread) / 1.2
 		recoil /= 1.2
 		burst_size = 1
 		fire_delay = singleshot_select_delay
@@ -779,9 +780,10 @@
 	mag_type = /obj/item/ammo_box/magazine/m5mm
 	automatic = FALSE
 	is_automatic = FALSE
-	burst_size = 2
-	fire_delay = 4
-	spread = 6
+	burst_size = 3
+	fire_delay = 5
+	spread = 0
+	burst_spread = 14
 
 //Assault Carbine		Keywords: 5mm, AP, 30/50 Rounds, Superhigh tier
 /obj/item/gun/ballistic/automatic/assault_rifle/assault_carbine
@@ -808,7 +810,8 @@
 	burst_size = 3
 	fire_delay = 5
 	slowdown = 0.8
-	spread = 3
+	spread = 0
+	burst_spread = 3
 	recoil = 0.6
 	extra_speed = 700	//700 Extra Speed
 	zoomable = TRUE
