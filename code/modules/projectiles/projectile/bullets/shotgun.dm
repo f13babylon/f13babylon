@@ -37,11 +37,11 @@
 	light_range = LIGHT_RANGE_FIRE
 	light_color = LIGHT_COLOR_FIRE
 	damage_type = BURN
-	damage = 20
-	wound_bonus = 40
+	damage = 10
+	wound_bonus = 25
 	supereffective_damage = 25
 	supereffective_faction = list("ant", "cazador", "gecko", "radscorpion", "wolf", "dog", "plants", "rat", "spiders")
-	var/dmg_dropoff_per_tile = 20 / 7	//In 7 tiles it will lose all of its initial damage (and get deleted)
+	var/dmg_dropoff_per_tile = 10 / 5	//In 5 tiles it will lose all of its initial damage (and get deleted)
 
 /obj/item/projectile/incendiary/flamethrower/on_hit(atom/target)
 	if(iscarbon(target))
