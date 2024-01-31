@@ -107,7 +107,7 @@
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = null
 	automatic = TRUE
-	autofire_shot_delay = 1
+	autofire_shot_delay = 2
 	slowdown = 1.4
 	spread = 18
 	force = 20
