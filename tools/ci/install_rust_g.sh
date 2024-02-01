@@ -2,6 +2,7 @@
 set -euo pipefail
 
 sudo dpkg --add-architecture i386
+sudo apt update
 sudo apt install zlib1g-dev:i386
 
 source dependencies.sh
