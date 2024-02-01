@@ -29,7 +29,7 @@
  * ### global proc while in another global proc:
  * PROC_REF(some_proc_here)
  *
- * `CALLBACK(GLOBAL_PROC, PROC_REF(some_proc_here))`
+ * `CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(some_proc_here))`
  *
  * ### proc defined on current(src) object (when in a /proc/ and not an override) OR overridden at src or any of it's parents:
  * .procname
