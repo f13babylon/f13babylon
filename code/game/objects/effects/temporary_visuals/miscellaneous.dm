@@ -536,7 +536,7 @@ GLOBAL_LIST_EMPTY(blood_particles)
 	status = rcd_status
 	delay = rcd_delay
 	if (status == RCD_DECONSTRUCT)
-		addtimer(CALLBACK(src, /atom/.proc/update_icon), 11)
+		addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_icon)), 11)
 		delay -= 11
 		icon_state = "rcd_end_reverse"
 	else

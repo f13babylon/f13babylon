@@ -77,7 +77,7 @@ All ShuttleMove procs go here
 		shuttleRotate(rotation) //see shuttle_rotate.dm
 	if(proximity_monitor)
 		proximity_monitor.HandleMove()
-	
+
 	return TRUE
 
 /turf/proc/lateShuttleMove(turf/oldT)
@@ -181,7 +181,7 @@ All ShuttleMove procs go here
 	for(var/obj/machinery/door/airlock/A in range(1, src))  // includes src
 		A.shuttledocked = FALSE
 		A.air_tight = TRUE
-		addtimer(CALLBACK(A, /obj/machinery/door/.proc/close), 0)
+		addtimer(CALLBACK(A, TYPE_PROC_REF(/obj/machinery/door, close)), 0)
 
 /obj/machinery/door/airlock/afterShuttleMove(turf/oldT, list/movement_force, shuttle_dir, shuttle_preferred_direction, move_dir, rotation)
 	. = ..()

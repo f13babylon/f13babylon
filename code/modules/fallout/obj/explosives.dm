@@ -111,7 +111,7 @@
 	icon_state = initial(icon_state) + "_active"
 	item_state = initial(item_state) + "_active"
 	var/mob/living/carbon/M = loc
-	addtimer(CALLBACK(src, .proc/boom, M), 20)
+	addtimer(CALLBACK(src, PROC_REF(boom), M), 20)
 
 /obj/item/signal_bomb/proc/boom()
 	explosion(src.loc,0,2,3, flame_range = 6)

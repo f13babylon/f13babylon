@@ -411,7 +411,7 @@ Auto Patrol: []"},
 /mob/living/simple_animal/bot/secbot/proc/stun_attack(mob/living/carbon/C)
 	var/judgement_criteria = judgement_criteria()
 	icon_state = "[initial(icon_state)]-c"
-	addtimer(CALLBACK(src, /atom/.proc/update_icon), 2)
+	addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_icon)), 2)
 	var/threat = 5
 	if(ishuman(C))
 		if(stored_fashion)

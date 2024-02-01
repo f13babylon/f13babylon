@@ -215,7 +215,7 @@
 	..()
 	var/mob/living/simple_animal/bot/mulebot/MB = AM
 	if(istype(MB))
-		INVOKE_ASYNC(MB, /mob/living/simple_animal/bot/mulebot/.proc/RunOver, src)
+		INVOKE_ASYNC(MB, TYPE_PROC_REF(/mob/living/simple_animal/bot/mulebot, RunOver), src)
 
 	spreadFire(AM)
 
