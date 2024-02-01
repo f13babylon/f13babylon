@@ -91,7 +91,8 @@
 		source = LOGSRC_CLIENT
 	body += "<a href='?src=[ref];individuallog=[ref_mob];log_src=[source]'>LOGS</a>\] <br>"
 
-	body += "<b>Mob type</b> = [M.type]<br><br>"
+	body += "<b>Mob type</b> = [M.type]<br>"
+	body += "<a href='?src=[ref];removeProfilePic=[ref_mob]'>Remove Profile Picture</a><br><br>" // Coyote change here! Added removing pfp to the player panel <3
 
 	body += "<a href='?src=[ref];boot2=[ref_mob]'>Kick</A> | "
 	body += "<a href='?src=[ref];newban=[ref_mob]'>Ban</A> | "
@@ -101,6 +102,10 @@
 		body+= "<a href='?src=[ref];jobban3=OOC;jobban4=[ref_mob]'><font color=red>OOCBan</font></A> | "
 	else
 		body += "<a href='?src=[ref];jobban3=OOC;jobban4=[ref_mob]'>OOCBan</A> | "
+	if(jobban_isbanned(M, "LOOC"))
+		body+= "<a href='?src=[ref];jobban3=LOOC;jobban4=[ref_mob]'><font color=red>LOOCBan</font></A> | "
+	else
+		body += "<a href='?src=[ref];jobban3=LOOC;jobban4=[ref_mob]'>LOOCBan</A> | "
 	if(QDELETED(M) || QDELETED(usr))
 		return
 	if(jobban_isbanned(M, "emote"))
@@ -124,6 +129,17 @@
 			<a href='?src=[ref];mute=[M.ckey];mute_type=[MUTE_DEADCHAT]'><font color='[(muted & MUTE_DEADCHAT) ? "#ff5e5e" : "white"]'>DEADCHAT</font></a>
 			(<a href='?src=[ref];mute=[M.ckey];mute_type=[MUTE_ALL]'><font color='[(muted & MUTE_ALL) ? "#ff5e5e" : "white"]'>ALL</font></a>)
 		"}
+
+	if(M.client)
+		var/verified = M.client.prefs.age_verified
+		if(verified)
+			body += {"<br><b>Age Verification: </b>
+					<a href='?src=[ref];verify=[M.ckey]'><font color='[(verified) ? "#ff5e5e" : "#5e84ff"]'>Unverify</font></a>
+					"}
+		else
+			body += {"<br><b>Age Verification: </b>
+					<a href='?src=[ref];verify=[M.ckey]'><font color='[(verified) ? "#ff5e5e" : "#5e84ff"]'>Verify</font></a>
+					"}
 
 	body += {"
 		<br><br>
@@ -612,6 +628,16 @@
 	log_admin("[key_name(usr)] toggled Dead OOC.")
 	message_admins("[key_name_admin(usr)] toggled Dead OOC.")
 	SSblackbox.record_feedback("nested tally", "admin_toggle", 1, list("Toggle Dead OOC", "[GLOB.dooc_allowed ? "Enabled" : "Disabled"]")) //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+
+/datum/admins/proc/toggledeadchat()
+	set category = "Server"
+	set desc="Toggle dis bitch"
+	set name="Toggle Deadchat"
+	toggle_deadchat()
+
+	log_admin("[key_name(usr)] toggled Deadchat.")
+	message_admins("[key_name_admin(usr)] toggled Deadchat.")
+	SSblackbox.record_feedback("nested tally", "admin_toggle", 1, list("Toggle Deadchat", "[GLOB.dsay_allowed ? "Enabled" : "Disabled"]")) //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /datum/admins/proc/toggleaooc()
 	set category = "Server"

@@ -59,6 +59,7 @@
 	icon_state = "combat_armor"
 	item_state = "combat_armor"
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 //recipe any combat armor + duster
 /obj/item/clothing/suit/armored/medium/combat/duster
@@ -70,6 +71,7 @@
 	heat_protection = CHEST | GROIN | LEGS
 	cold_protection = CHEST | GROIN | LEGS
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 15, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armored/medium/combat/swat
 	name = "SWAT combat armor"
@@ -91,6 +93,7 @@
 	icon_state = "combat_armor_mk2"
 	item_state = "combat_armor_mk2"
 	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 10, "bomb" = 30, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armored/medium/combat/mk2/raider
 	name = "painspike combat armor"
@@ -108,6 +111,7 @@
 	icon_state = "supafly"
 	item_state = "supafly"
 	armor = list("melee" = 25, "bullet" = 40, "laser" = 20, "energy" = 5, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armored/medium/rebel
 	name = "rebel raider armor"
@@ -122,6 +126,7 @@
 	icon_state = "sadist"
 	item_state = "sadist"
 	armor = list("melee" = 30, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armored/medium/blastmaster
 	name = "blastmaster raider armor"
@@ -130,6 +135,7 @@
 	item_state = "blastmaster"
 	flash_protect = 2
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 20, "energy" = 5, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 25, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armored/medium/yankee
 	name = "yankee raider armor"
@@ -137,6 +143,7 @@
 	icon_state = "yankee"
 	item_state = "yankee"
 	armor = list("melee" = 40, "bullet" = 20, "laser" = 15, "energy" = 5, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armored/medium/painspike
 	name = "painspike raider armor"
@@ -144,6 +151,7 @@
 	icon_state = "painspike"
 	item_state = "painspike"
 	armor = list("melee" = 40, "bullet" = 25, "laser" = 10, "energy" = 0, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 5, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armored/medium/iconoclast
 	name = "iconoclast raider armor"
@@ -307,6 +315,7 @@
 	icon_state = "ncr_patrol"
 	item_state = "ncr_patrol"
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armored/medium/combat/vetranger
 	name = "veteran ranger combat armor"
@@ -314,6 +323,7 @@
 	icon_state = "ranger"
 	item_state = "ranger"
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 10, "rad" = 20, "fire" = 35, "acid" = 10, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 
 //////////////////////////
@@ -326,6 +336,7 @@
 	icon_state = "brotherhood_armor"
 	item_state = "brotherhood_armor"
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armored/medium/combatmk2/bos
 	name = "reinforced initiate armor"
@@ -333,6 +344,7 @@
 	icon_state = "brotherhood_armor_mk2"
 	item_state = "brotherhood_armor_mk2"
 	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 10, "bomb" = 30, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armored/medium/combatmk2/knight
 	name = "brotherhood armor"
@@ -365,12 +377,14 @@
 	icon_state = "towntrench_medium"
 	item_state = "hostrench"
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 30, "energy" = 10, "bomb" = 30, "bio" = 30, "rad" = 30, "fire" = 40, "acid" = 5, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armored/medium/lawcoat/sheriff
 	name = "sheriff trenchcoat"
 	desc = "A trenchcoat which does a poor job at hiding the full-body combat armor beneath it."
 	icon_state = "towntrench_heavy"
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 40,  "energy" = 10, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armored/medium/lawcoat/commissioner
 	name = "commissioner's jacket"

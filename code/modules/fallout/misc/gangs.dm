@@ -48,7 +48,6 @@ GLOBAL_DATUM_INIT(denmob, /datum/gang/denmob, new)
 		/datum/gang_item/weapon/caravan,
 		/datum/gang_item/weapon/varmint,
 		/datum/gang_item/weapon/uzi,
-		/datum/gang_item/weapon/type93,
 
 		/datum/gang_item/equipment/molotov,
 		/datum/gang_item/equipment/stinger,
@@ -121,7 +120,6 @@ GLOBAL_DATUM_INIT(denmob, /datum/gang/denmob, new)
 		/datum/gang_item/weapon/greasegun,
 		/datum/gang_item/clothing/glasses/sunglasses,
 		/datum/gang_item/weapon/type17,
-		/datum/gang_item/weapon/type93
 	)
 
 /datum/gang/New(starting_members, starting_leader)

@@ -351,13 +351,24 @@
 	name = "grey turtleneck"
 	path = /obj/item/clothing/under/suit/turtle/grey
 	cost = 2
-/*
+
+/datum/gear/uniform/gunner
+	name = "gunner combat uniform"
+	path = /obj/item/clothing/under/f13/gunner
+	cost = 2
+
+/datum/gear/uniform/dutch
+	name = "dutch suit"
+	path = /obj/item/clothing/under/rank/civilian/dutch
+	cost = 2
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_SUITS
+
 /datum/gear/uniform/detbrown
 	name = "Brown Worn Suit"
 	path = /obj/item/clothing/under/rank/security/detective/brown
 	cost = 2
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_SUITS
-
+/*
 /datum/gear/uniform/detbrown/detbrown2
 	name = "Padded Worn Suit"
 	path = /obj/item/clothing/under/rank/security/detective/brown/brown2
@@ -510,6 +521,27 @@
 /datum/gear/uniform/bathrobe
 	name = "bathrobe"
 	path = /obj/item/clothing/under/misc/bathrobe
+
+/datum/gear/uniform/goner_red
+	name = "utility uniform, red"
+	cost = 1
+	path = /obj/item/clothing/under/f13/goner/red
+
+/datum/gear/uniform/goner_green
+	name = "utility uniform, green"
+	cost = 1
+	path = /obj/item/clothing/under/f13/goner/green
+
+/datum/gear/uniform/goner_blue
+	name = "utility uniform, blue"
+	cost = 1
+	path = /obj/item/clothing/under/f13/goner/blue
+
+/datum/gear/uniform/goner_yellow
+	name = "utility uniform, yellow"
+	cost = 1
+	path = /obj/item/clothing/under/f13/goner/yellow
+
 /*
 /datum/gear/uniform/kimono
 	name = "Kimono"
@@ -566,6 +598,31 @@
 	path = /obj/item/clothing/under/f13/navy/officer
 	cost = 3
 
+/datum/gear/uniform/camogreen
+	name = "camouflage fatigues"
+	path = /obj/item/clothing/under/syndicate/camo
+	cost = 2
+
+/datum/gear/uniform/scoutclothes
+	name = "scout clothes"
+	path = /obj/item/clothing/under/f13/desert_ranger_scout
+	cost = 2
+
+/datum/gear/uniform/mercuniform
+	name = "mercenary uniform"
+	path = /obj/item/clothing/under/syndicate/mercenary
+	cost = 2
+
+/datum/gear/uniform/mercgorka
+	name = "old gorka suit"
+	path = /obj/item/clothing/under/syndicate/gorka
+	cost = 2
+
+/datum/gear/uniform/mercpadded
+	name = "urban mercenary uniform"
+	path = /obj/item/clothing/under/syndicate/mercpadded
+	cost = 2
+
 //CHINA
 
 /datum/gear/uniform/chinese
@@ -598,6 +655,7 @@
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
+							"NCR Conscript",
 							"NCR Rear Echelon",
 							"NCR Off-Duty",
 							"NCR Ranger"
@@ -620,6 +678,7 @@
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
 							"NCR Trooper",
+							"NCR Conscript",
 							"NCR Rear Echelon",
 							"NCR Off-Duty",
 							"NCR Ranger"
@@ -677,7 +736,7 @@
 							"Secretary",
 							"Sheriff",
 							"Doctor",
-							"Citizen",
+							"La Verkin Citizen",
 							"Deputy",
 							"Shopkeeper",
 							"Farmer",
@@ -693,14 +752,22 @@
 	path = /obj/item/clothing/under/f13/khan/shorts
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
 	restricted_desc = "KHAN"
-	restricted_roles = list("Great Khan")
+	restricted_roles = list("Khan Senior Enforcer",
+							"Khan Armorer",
+							"Khan Chemist",
+							"Khan Enforcer",
+							)
 
 /datum/gear/uniform/khans/booty
 	name = "great khans booty shorts"
 	path = /obj/item/clothing/under/f13/khan/booty
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
 	restricted_desc = "KHAN"
-	restricted_roles = list("Great Khan")
+	restricted_roles = list("Khan Senior Enforcer",
+							"Khan Armorer",
+							"Khan Chemist",
+							"Khan Enforcer",
+							)
 
 //Skirts
 
@@ -761,6 +828,12 @@
 /datum/gear/uniform/skirt/tac
 	name = "''tactical'' combat skirt"
 	path = /obj/item/clothing/under/f13/legskirt/tac
+	cost = 1
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_SKIRTS
+
+/datum/gear/uniform/skirt/tact
+	name = "tacticool combat skirt"
+	path = /obj/item/clothing/under/f13/legskirt/tact
 	cost = 1
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_SKIRTS
 
@@ -907,6 +980,12 @@
 /datum/gear/uniform/wasteland/whitelegs
 	name = "White legs outfit"
 	path = /obj/item/clothing/under/f13/whitelegs
+	cost = 1
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_WASTELAND
+
+/datum/gear/uniform/wasteland/cowpoke
+	name = "cowpoke outfit"
+	path = /obj/item/clothing/under/f13/cowpoke
 	cost = 1
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_WASTELAND
 

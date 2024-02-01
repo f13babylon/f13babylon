@@ -21,6 +21,15 @@ GLOBAL_PROTECT(adminchat)
 
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Asay") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
+	if(check_rights(R_ADMIN,0))
+		for(var/client/C in GLOB.admins)
+			if(R_ADMIN)
+				// Lets see if this admin was pinged in the asay message
+				if(findtext(msg, "@[C.ckey]") || findtext(msg, "@[C.key]")) // Check ckey and key, so you can type @AffectedArc07 or @affectedarc07
+					SEND_SOUND(C, 'sound/misc/ping.ogg')
+					msg = replacetext(msg, "@[C.ckey]", "<font color='red'>@[C.ckey]</font>")
+					msg = replacetext(msg, "@[C.key]", "<font color='red'>@[C.key]</font>") // Same applies here. key and ckey.
+
 /client/proc/get_admin_say()
 	var/msg = input(src, null, "asay \"text\"") as text
 	cmd_admin_say(msg)

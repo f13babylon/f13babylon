@@ -2,47 +2,48 @@
 //////////////////
 //PLASMA WEAPONS//
 //////////////////
+//Plasma Rifle
+/obj/item/gun/energy/laser/plasma
+	name ="plasma rifle"
+	item_state = "plasma"
+	icon_state = "plasrifle"
+	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
+	weapon_weight = WEAPON_HEAVY
+	desc = "An advanced man-portable Winchester plasma rifle based on an older military design. Fires bolts of plasma that form into toroids in the chamber, which are then sent down a superconducting barrel and propelled by electromagnetic claws."
+	ammo_type = list(/obj/item/ammo_casing/energy/plasma)
+	cell_type = /obj/item/stock_parts/cell/ammo/mfc
+	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
+	slowdown = 0.3
+	fire_delay = 6
 
 //Plasma pistol
 /obj/item/gun/energy/laser/plasma/pistol
 	name ="plasma pistol"
-	slowdown = 0.1
-	armour_penetration = 0.02
 	item_state = "plasma-pistol"
-	icon_state = "plasma-pistol"
-	desc = "A pistol-sized miniaturized plasma caster built by REPCONN. It fires a bolt of superhot ionized gas."
+	icon_state = "plaspistol"
+	desc = "A REPCONN-made pistol-sized plasma caster based on a Winchester model. Fires bolts of plasma that form into toroids in the chamber, which are then sent down a superconducting barrel and propelled by electromagnetic claws."
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_MEDIUM
 	slot_flags = ITEM_SLOT_BELT
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/pistol)
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
 	equipsound = 'sound/f13weapons/equipsounds/pistolplasequip.ogg'
+	slowdown = 0.2
+	fire_delay = 4
 
 //BoS knight craftable plasma pistol
 /obj/item/gun/energy/laser/plasma/pistol/light
 	name = "lightweight plasma pistol"
-	slowdown = 0.1
-	icon_state = "light-plasma-pistol"
+	icon_state = "plaspistol_s"
 	desc = "A lightweight modification of the common REPCONN-built plasma pistol. Fires heavy low penetration plasma clots at a slower rate than the regular design due to reduced cooling."
 	fire_delay = 5
 
-/obj/item/gun/energy/laser/plasma/pistol/worn
-	name ="shoddy plasma pistol"
-	desc = "A pistol-sized miniaturized plasma caster built by REPCONN. It fires a bolt of superhot ionized gas. This one's internal parts have loose seals and corroded electronics."
-	ammo_type = list(/obj/item/ammo_casing/energy/plasma/pistol/worn)
-	fire_delay = 4.5
-
 /obj/item/gun/energy/laser/plasma/pistol/remnant
 	name ="corroded plasma pistol"
-	desc = "A pistol-sized miniaturized plasma caster built by REPCONN. It fires a bolt of superhot ionized gas. This one's internal parts have loose seals and corroded electronics. Despite the aforementioned issues, it appears someone has maintained this relic for quite some time."
+	desc = "A REPCONN-made pistol-sized plasma caster based on a Winchester model. Fires bolts of plasma that form into toroids in the chamber, which are then sent down a superconducting barrel and propelled by electromagnetic claws. This one's internal parts have loose seals and corroded electronics."
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/pistol/worn)
-	fire_delay = 8
-
-/obj/item/gun/energy/laser/plasma/pistol/remnant/is
-	name ="custom plasma pistol"
-	desc = "An eagle is stamped to the underside of the grip. Where'd this come from?"
-	extra_damage = 7
-	extra_penetration = 0.05
+	icon_state = "plaspistol_old"
+	fire_delay = 6
 
 /obj/item/gun/energy/laser/plasma/pistol/worn/gutsy
 	name ="\improper integrated plasma pistol"
@@ -52,53 +53,45 @@
 //Glock 86 Plasma pistol
 /obj/item/gun/energy/laser/plasma/glock
 	name = "glock 86"
-	desc = "Glock 86 Plasma Pistol. Designed by the Gaston Glock artificial intelligence. Shoots a small bolt of superheated plasma. Powered by a small energy cell."
+	desc = "A bleeding edge Glock 86 plasma pistol, designed by the Gaston Glock AI Supercomputer. Fires bolts of plasma that form into toroids in the chamber, which are then sent down a superconducting barrel lined with electromagnetic coils. Reliable, lightweight, and energy efficient."
 	item_state = "plasma-pistol"
-	icon_state = "glock86"
-	slowdown = 0.1
+	icon_state = "glock"
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_MEDIUM
 	slot_flags = ITEM_SLOT_BELT
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/pistol/glock)
 	equipsound = 'sound/f13weapons/equipsounds/pistolplasequip.ogg'
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
+	fire_delay = 5
+	slowdown = 0.1
 
 //Glock 86 A Plasma pistol
 /obj/item/gun/energy/laser/plasma/glock/extended
 	name ="glock 86a"
+	fire_delay = 4
 	item_state = "plasma-pistol"
-	icon_state = "glock86a"
-	desc = "This Glock 86 plasma pistol has had its magnetic housing chamber realigned to reduce the drain on its energy cell. Its efficiency has doubled, allowing it to fire more shots before the battery is expended."
+	icon_state = "betterglock"
+	desc = "A bleeding edge Glock 86 plasma pistol, designed by the Gaston Glock AI Supercomputer. Fires bolts of plasma that form into toroids in the chamber, which are then sent down a superconducting barrel lined with electromagnetic coils. This one has been fitted with a targetting system and higher quality parts."
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/pistol/glock/extended)
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
-
-
-//Plasma Rifle
-/obj/item/gun/energy/laser/plasma
-	name ="plasma rifle"
-	item_state = "plasma"
-	icon_state = "plasma"
-	slowdown = 0.65 //this is one of the worst slowdowns in the game
-	fire_delay = 5.2
-	desc = "A miniaturized plasma caster that fires bolts of magnetically accelerated toroidal plasma towards an unlucky target."
-	ammo_type = list(/obj/item/ammo_casing/energy/plasma)
-	cell_type = /obj/item/stock_parts/cell/ammo/mfc
-	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
-
 
 //Plasma carbine
 /obj/item/gun/energy/laser/plasma/carbine
 	name ="plasma carbine"
 	item_state = "plasma"
-	icon_state = "plasmacarbine"
-	desc = "A burst-fire energy weapon that fires a steady stream of toroidal plasma towards an unlucky target."
+	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
+	icon_state = "p94"
+	desc = "A militarized Winchester P-94 plasma caster, featuring a firearm-styled housing complete with a stock, rail, and pistol grip. Replaced by the urban plasma rifle not long before the war, this model remained in use due to its ability for rapid fire. Fires bolts of plasma that form into toroids in the chamber, which are then sent down a superconducting barrel and propelled by electromagnetic claws."
 	ammo_type = list(/obj/item/ammo_casing/energy/plasmacarbine)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
+	fire_delay = 6
+	weapon_weight = WEAPON_MEDIUM
 	burst_size = 2
 	burst_shot_delay = 1.5
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	can_scope = TRUE
 	scope_state = "plasma_scope"
+	slowdown = 0.3
 	scope_x_offset = 13
 	scope_y_offset = 16
 	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
@@ -116,112 +109,15 @@
 /obj/item/gun/energy/laser/plasma/scatter
 	name = "multiplas rifle"
 	item_state = "multiplas"
+	icon = 'icons/obj/guns/gunfruits2022/energy.dmi'
 	icon_state = "multiplas"
-	fire_delay = 3
-	desc = "A modified A3-20 plasma caster built by REPCONN equipped with a multicasting kit that creates multiple weaker clots."
+	fire_delay = 5
+	desc = "A heavily modified version of an urban plasma rifle equipped with a multi-caster attachment for a barrel. Fires bolts of plasma that form into toroids in the chamber, which are then sent down a split barrel and propelled by electromagnetic coils."
 	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/scatter)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 
-
-/obj/item/gun/energy/laser/plasma/spear
-	name = "ergonomic plasmacaster"
-	desc = "An ergonomic pre-war plasmacaster designed for precision mining work. This one appears to be built into a single thick staff, with a bulbous hilt and sharp saturnite alloy blades ringing the caster assembly- strongly resembling sort of spear."
-	icon = 'icons/fallout/objects/melee/twohanded.dmi'
-	lefthand_file = 'icons/fallout/onmob/weapons/melee2h_lefthand.dmi'
-	righthand_file = 'icons/fallout/onmob/weapons/melee2h_righthand.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/backslot_weapon.dmi'
-	item_state = "plasma"
-	icon_state = "plasma"
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_LIGHT //you need to wield it to fire it
-	slot_flags = ITEM_SLOT_BACK
-	ammo_type = list(/obj/item/ammo_casing/energy/plasma/miner)
-	cell_type = /obj/item/stock_parts/cell/ammo/ecp
-	sharpness = SHARP_EDGED
-	max_reach = 2
-	force = 20
-	burst_size = 5
-	burst_shot_delay = 0.5
-	fire_delay = 10
-	scope_y_offset = 16
-	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
-	var/twohands = FALSE
-
-/obj/item/gun/energy/laser/plasma/spear/ComponentInitialize()
-	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded=20, force_wielded=40, icon_wielded="[item_state]2")
-	AddElement(/datum/element/update_icon_updates_onmob)
-	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, PROC_REF(allow_fire))
-	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, PROC_REF(deny_fire))
-
-/obj/item/gun/energy/laser/plasma/spear/proc/allow_fire()
-	twohands = TRUE
-/obj/item/gun/energy/laser/plasma/spear/proc/deny_fire()
-	twohands = FALSE
-
-/obj/item/gun/energy/laser/plasma/spear/Destroy()
-	UnregisterSignal(src, list(COMSIG_TWOHANDED_WIELD,
-								COMSIG_TWOHANDED_UNWIELD))
-	return ..()
-
-/obj/item/gun/energy/laser/plasma/spear/can_shoot()
-	. = ..()
-	if(!twohands)
-		return FALSE
-
-// Inquisitorial axe			Keywords: Damage 6/32, AP 0.9, SPEAR REACH, BACK SLOT ENABLED
-// Copy of plasma spear. Different for a few reasons.
-// Absurdly powerful.
-/obj/item/gun/energy/laser/plasma/inquis
-	name = "Inquisitorial polearm"
-	desc = "An odd looking spear of sorts, tipped with what appears to be a plasma chamber. \
-	In theory, this should splash the target with plasma when triggered. Does it work, however?"
-	icon = 'icons/fallout/objects/melee/twohanded.dmi'
-	lefthand_file = 'icons/fallout/onmob/weapons/melee2h_lefthand.dmi'
-	righthand_file = 'icons/fallout/onmob/weapons/melee2h_righthand.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/backslot_weapon.dmi'
-	item_state = "plasma"
-	icon_state = "plasma"
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_LIGHT //you need to wield it to fire it
-	slot_flags = ITEM_SLOT_BACK
-	ammo_type = list(/obj/item/ammo_casing/energy/plasma/repeater)
-	cell_type = /obj/item/stock_parts/cell/ammo/ecp
-	sharpness = SHARP_EDGED
-	attack_speed = CLICK_CD_MELEE * 1.2
-	attack_verb = list("seared","jabbed","punctured")
-	max_reach = 2
-	force = 6
-	fire_delay = 25//Long enough to make melee worthwhile.
-	equipsound = 'sound/f13weapons/equipsounds/declonequip.ogg'
-	hitsound = 'sound/f13weapons/sear.ogg'
-	var/twohands = FALSE
-
-/obj/item/gun/energy/laser/plasma/inquis/ComponentInitialize()
-	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded=6, force_wielded=32, icon_wielded="[item_state]2")
-	AddElement(/datum/element/update_icon_updates_onmob)
-	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, PROC_REF(allow_fire))
-	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, PROC_REF(deny_fire))
-
-/obj/item/gun/energy/laser/plasma/inquis/proc/allow_fire()
-	twohands = TRUE
-/obj/item/gun/energy/laser/plasma/inquis/proc/deny_fire()
-	twohands = FALSE
-
-/obj/item/gun/energy/laser/plasma/inquis/Destroy()
-	UnregisterSignal(src, list(COMSIG_TWOHANDED_WIELD,
-								COMSIG_TWOHANDED_UNWIELD))
-	return ..()
-
-/obj/item/gun/energy/laser/plasma/inquis/can_shoot()
-	. = ..()
-	if(!twohands)
-		return FALSE
-
 //FNV plasma caster
-//High damage, fast rate of fire,10rnd capacity
 //very heavy
 //deliberately OP
 /obj/item/gun/energy/laser/plasma/caster
@@ -231,19 +127,17 @@
 	icon_state = "plasmacaster_fnv"
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
-
-	desc = "A model P94 plasma caster.An industrial-grade energy weapon, firing superheated bolts of plasma down a superconducting barrel. Some people call it a plasma rifle despite looking nothing like one. This weapon is so large and heavily, it must be WIELDED with two hands."
+	desc = "A bulky and outdated industrial-grade Winchester P-94 energy caster, intended for heavy mining operations. Fires bolts of plasma that form into toroids in the chamber, which are then sent down a superconducting barrel and propelled by electromagnetic claws."
 	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/caster)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
-
-	slowdown = 1
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK
-	weapon_weight = WEAPON_LIGHT
-	fire_delay = 3 //yes, it is a fast weapon
-	var/twohands = FALSE
-
+	weapon_weight = WEAPON_HEAVY
+	slowdown = 0.4
+	fire_delay = 8
+	//var/twohands = FALSE		- Disabled, wasn't needed if you just give it a higher fire delay.
+/*
 /obj/item/gun/energy/laser/plasma/caster/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/two_handed)
@@ -268,3 +162,4 @@
 	. = ..()
 	if(!twohands)
 		return FALSE
+*/

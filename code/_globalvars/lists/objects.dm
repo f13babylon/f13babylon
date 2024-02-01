@@ -49,5 +49,6 @@ GLOBAL_LIST_EMPTY(rockpaperscissors_players)
 
 GLOBAL_LIST_EMPTY(trash_piles)						//list of all trash_piles
 GLOBAL_LIST_EMPTY(money_piles)
+GLOBAL_LIST_EMPTY(spent_bullet_casings)				//list of all spent bullet casings
 
 GLOBAL_LIST_EMPTY(lamppost)							//list of all lampposts

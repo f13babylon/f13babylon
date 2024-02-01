@@ -208,12 +208,12 @@
 	job_description = "Servant Golem"
 
 
-/obj/effect/mob_spawn/human/golem/adamantine
+/obj/effect/mob_spawn/human/golem/saturnite
 	name = "dust-caked free golem shell"
 	desc = "A humanoid shape, empty, lifeless, and full of potential."
 	mob_name = "a free golem"
 	can_transfer = FALSE
-	mob_species = /datum/species/golem/adamantine
+	mob_species = /datum/species/golem/saturnite
 
 //Malfunctioning cryostasis sleepers: Spawns in makeshift shelters in lavaland. Ghosts become hermits with knowledge of how they got to where they are now.
 /obj/effect/mob_spawn/human/hermit
@@ -731,7 +731,7 @@
 	outfit = /datum/outfit/job/ncr/f13trooper
 	suit_store = /obj/item/gun/ballistic/automatic/service
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle = 2,
+		/obj/item/ammo_box/magazine/m556mm = 2,
 		/obj/item/melee/onehanded/knife/bayonet = 1,
 		/obj/item/storage/box/ration/menu_two = 1,
 		)
@@ -745,14 +745,14 @@
 	flavour_text = "Rangers lead the way!"
 	assignedrole = "NCR Ranger"
 	outfit = /datum/outfit/job/ncr/f13ranger
-	suit = /obj/item/clothing/suit/armor/f13/combat/ncr_patrol
+	suit = /obj/item/clothing/suit/armor/f13/combat/ncr/patrol
 	belt = /obj/item/storage/belt/military/assault/ncr
 	suit_store = /obj/item/gun/ballistic/automatic/service/carbine
-	head = /obj/item/clothing/head/f13/ranger
+	head = /obj/item/clothing/head/helmet/f13/ncr/ranger
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle/assault = 1,
-		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,
-		/obj/item/storage/survivalkit_aid = 1,
+		/obj/item/ammo_box/magazine/m556mm/drum = 1,
+		/obj/item/clothing/head/helmet/f13/combat/ncr/patrol = 1,
+		/obj/item/storage/survivalkit/firstaid = 1,
 		/obj/item/attachments/scope = 1,
 		/obj/item/gun/ballistic/revolver/revolver44 = 1,
 		/obj/item/ammo_box/m44 = 2,
@@ -845,7 +845,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/greasegun = 2,
+		/obj/item/ammo_box/magazine/mgreasegun = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		)
 

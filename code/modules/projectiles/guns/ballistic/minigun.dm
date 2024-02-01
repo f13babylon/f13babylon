@@ -74,8 +74,8 @@
 
 		if(!M.incapacitated())
 
-			if(istype(over_object, /obj/screen/inventory/hand))
-				var/obj/screen/inventory/hand/H = over_object
+			if(istype(over_object, /atom/movable/screen/inventory/hand))
+				var/atom/movable/screen/inventory/hand/H = over_object
 				M.putItemFromInventoryInHandIfPossible(src, H.held_index)
 
 
@@ -113,10 +113,9 @@
 	autofire_shot_delay = 1
 	burst_shot_delay = 1
 	fire_delay = 1
-	ranged_attack_speed = CLICK_CD_RAPID
 	spread = 12
 	weapon_weight = WEAPON_HEAVY
-	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
+	fire_sound = 'sound/f13weapons/assault_rifle.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/minigunbal5mm
 	casing_ejector = FALSE//For now.
 	item_flags = SLOWS_WHILE_IN_HAND

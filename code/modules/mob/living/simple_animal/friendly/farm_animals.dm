@@ -1001,3 +1001,12 @@
 	else
 		..()
 */
+
+/datum/crafting_recipe/egg_basket
+	name = "Egg basket"
+	result = /obj/item/storage/bag/egg_basket
+	time = 60
+	reqs = list(/obj/item/stack/sheet/hay = 8)
+	tools = list(TOOL_WIRECUTTER)
+	subcategory = CAT_FARMING
+	category = CAT_MISC

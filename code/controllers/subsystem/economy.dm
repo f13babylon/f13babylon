@@ -42,7 +42,7 @@ SUBSYSTEM_DEF(economy)
 							"pyrite" = 750,
 							"light pink" = 750,
 							"oil" = 750,
-							"adamantine" = 750,
+							"saturnite" = 750,
 							// tier 4
 							"rainbow" = 1000)
 	var/list/bank_accounts = list() //List of normal accounts (not department accounts)

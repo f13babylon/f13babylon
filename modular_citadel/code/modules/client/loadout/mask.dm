@@ -72,6 +72,15 @@
 	name = "russian balaclava"
 	path = /obj/item/clothing/mask/russian_balaclava
 
+/datum/gear/mask/sbalaclava
+	name = "skull balaclava"
+	path = /obj/item/clothing/mask/sbalaclava
+
+/datum/gear/mask/broken_goner_mask
+	name = "aesthetic gas mask"
+	path = /obj/item/clothing/mask/gas/goner/aesthetic
+	cost = 2
+
 /// Bandanas ///
 
 /datum/gear/mask/bandana/

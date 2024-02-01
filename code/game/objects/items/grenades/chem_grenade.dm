@@ -11,7 +11,7 @@
 	force = 2
 	var/stage = EMPTY
 	var/list/beakers = list()
-	var/list/allowed_containers = list(/obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/glass/bottle)
+	var/list/allowed_containers = list(/obj/item/reagent_containers/glass/beaker/bomb)
 	var/affected_area = 3
 	var/obj/item/assembly_holder/nadeassembly = null
 	var/assemblyattacher
@@ -49,7 +49,6 @@
 		else
 			..()
 
-
 /obj/item/grenade/chem_grenade/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/screwdriver))
 		if(stage == WIRED)
@@ -67,7 +66,7 @@
 
 	else if(stage == WIRED && is_type_in_list(I, allowed_containers))
 		. = 1 //no afterattack
-		if(beakers.len == 2)
+		if(beakers.len == 1)
 			to_chat(user, "<span class='warning'>[src] can not hold more containers!</span>")
 			return
 		else

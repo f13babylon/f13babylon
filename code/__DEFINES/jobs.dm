@@ -133,7 +133,7 @@
 
 #define F13AI			(1<<0)
 #define F13CYBORG		(1<<1)
-#define F13ENCCYBORG	(1<<2)
+#define F13ENCBORG		(1<<2)
 #define F13FOLCYBORG	(1<<3)
 
 #define WASTELAND		(1<<8)

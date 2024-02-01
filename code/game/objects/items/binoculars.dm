@@ -75,10 +75,9 @@
 	C.pixel_x = world.icon_size*_x
 	C.pixel_y = world.icon_size*_y
 
-/obj/item/binoculars/proc/on_unwield(obj/item/source, mob/user)
-	unwield(user)
-
 /obj/item/binoculars/proc/rotate(mob/living/user, old_dir, direction = FALSE)
+	if(!user?.client)
+		return
 	var/_x = 0
 	var/_y = 0
 	switch(direction)
@@ -94,25 +93,21 @@
 	user.client.pixel_x = world.icon_size*_x
 	user.client.pixel_y = world.icon_size*_y
 
-/obj/item/binoculars/proc/unwield(mob/user)
+/obj/item/binoculars/proc/on_unwield(obj/item/source, mob/user)
 	slowdown = initial(slowdown)
 	if(listeningTo)
+		UnregisterSignal(user, COMSIG_MOVABLE_MOVED)
 		UnregisterSignal(user, COMSIG_ATOM_DIR_CHANGE)
 		listeningTo = null
-	user.visible_message("<span class='notice'>[user] lowers [src].</span>", "<span class='notice'>You lower [src].</span>")
+	user.visible_message(span_notice("[user] lowers [src]."), span_notice("You lower [src]."))
 	item_state = "binoculars"
 	user.regenerate_icons()
-	if(user && user.client)
-		user.regenerate_icons()
-		var/client/C = user.client
-		C.change_view(CONFIG_GET(string/default_view))
-		user.client.pixel_x = 0
-		user.client.pixel_y = 0
+	user.client.view_size.zoomIn()
 
 /obj/item/weapon/maptool
 	name = "Map tools"
 	desc = "A foldable map of the sector and a bundle of cartographic untensils. Used together with binoculars to calculate coordinates."
-	icon = 'modular_sunset/icons/structures/mortar.dmi'
+	icon = 'icons/obj/fallout/mortar.dmi'
 	icon_state = "maptools"
 	slot_flags = ITEM_SLOT_BELT
 	w_class = WEIGHT_CLASS_SMALL

@@ -1,16 +1,17 @@
 /obj/structure/railing
 	name = "railing"
 	desc = "Basic railing meant to protect idiots like you from falling."
-	icon = 'icons/fallout/structures/fences.dmi'
+	icon = 'icons/fallout/structures/railings.dmi'
 	icon_state = "railing"
 	flags_1 = ON_BORDER_1
 	density = TRUE
 	anchored = TRUE
+	layer = ABOVE_MOB_LAYER
+	plane = MOB_PLANE
 	pass_flags_self = LETPASSTHROW
-	/// armor more or less consistent with grille. max_integrity about one time and a half that of a grille.
-	armor = list("melee" = 50, "bullet" = 70, "laser" = 70, "energy" = 100, "bomb" = 10, "bio" = 0, "fire" = 0, "acid" = 0)
 
-	max_integrity = 75
+	max_integrity = 75	//Half of metal bars
+	proj_pass_rate = 90	//Same as metal bars
 
 	climbable = TRUE
 	///Initial direction of the railing.
@@ -20,6 +21,12 @@
 	icon_state = "railing_corner"
 	density = FALSE
 	climbable = FALSE
+
+/obj/structure/railing/corner/end //end of a segment of railing without making a loop
+	icon_state = "railing_end"
+
+/obj/structure/railing/corner/end/flip //same as above but flipped around
+	icon_state = "railing_end_flip"
 
 /obj/structure/railing/Initialize(mapload)
 	. = ..()

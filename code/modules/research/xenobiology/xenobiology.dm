@@ -347,9 +347,6 @@
 
 		if(SLIME_ACTIVATE_MAJOR)
 			user.visible_message("<span class='warning'>[user]'s skin starts flashing hypnotically...</span>", "<span class='notice'>Your skin starts forming odd patterns, pacifying creatures around you.</span>")
-			for(var/mob/living/carbon/C in viewers(user, null))
-				if(C != user)
-					C.reagents.add_reagent(/datum/reagent/pax,2)
 			return 600
 
 /obj/item/slime_extract/green
@@ -444,13 +441,13 @@
 				return
 			to_chat(user, "<span class='notice'>You stop feeding [src], and the feeling passes.</span>")
 
-/obj/item/slime_extract/adamantine
-	name = "adamantine slime extract"
-	icon_state = "adamantine slime extract"
+/obj/item/slime_extract/saturnite
+	name = "saturnite slime extract"
+	icon_state = "saturnite slime extract"
 	effectmod = "crystalline"
 	activate_reagents = list(/datum/reagent/toxin/plasma)
 
-/obj/item/slime_extract/adamantine/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/saturnite/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
 			if(species.armor > 0)
@@ -465,11 +462,11 @@
 			to_chat(user, "<span class='warning'>You feel your body rapidly crystallizing...</span>")
 			if(do_after(user, 120, target = user))
 				to_chat(user, "<span class='warning'>You feel solid.</span>")
-				user.set_species(pick(/datum/species/golem/adamantine))
+				user.set_species(pick(/datum/species/golem/saturnite))
 				return
 			to_chat(user, "<span class='notice'>You stop feeding [src], and your body returns to its slimelike state.</span>")
 
-/obj/item/slime_extract/adamantine/proc/reset_armor(datum/species/jelly/luminescent/species)
+/obj/item/slime_extract/saturnite/proc/reset_armor(datum/species/jelly/luminescent/species)
 	if(istype(species))
 		species.armor -= 25
 

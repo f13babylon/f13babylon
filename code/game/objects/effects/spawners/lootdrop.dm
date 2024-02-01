@@ -425,8 +425,6 @@
 /obj/effect/spawner/lootdrop/druggie_pill
 	lootcount = 1
 	loot = list(
-				/obj/item/reagent_containers/pill/stimulant    = 1,
-				/obj/item/reagent_containers/pill/zoom   = 9,
 				/obj/item/reagent_containers/pill/happy   = 10,
 				/obj/item/reagent_containers/pill/lsd   = 15,
 				/obj/item/reagent_containers/pill/aranesp  = 25,
@@ -675,8 +673,8 @@
 		/obj/item/ammo_box/magazine/wt550m9 = 1,
 		/obj/item/ammo_casing/shotgun/buckshot = 7,
 		/obj/item/ammo_casing/shotgun/rubbershot = 7,
-		/obj/item/ammo_casing/a762 = 15,
-		/obj/item/ammo_box/a762 = 15,
+		/obj/item/ammo_casing/a762mm = 15,
+		/obj/item/ammo_box/a762mm = 15,
 		)
 
 /obj/effect/spawner/lootdrop/ammo/fiftypercent
@@ -687,8 +685,8 @@
 		/obj/item/ammo_box/magazine/wt550m9 = 2,
 		/obj/item/ammo_casing/shotgun/buckshot = 10,
 		/obj/item/ammo_casing/shotgun/rubbershot = 10,
-		/obj/item/ammo_casing/a762 = 7,
-		/obj/item/ammo_box/a762 = 7,
+		/obj/item/ammo_casing/a762mm = 7,
+		/obj/item/ammo_box/a762mm = 7,
 		)
 
 /obj/effect/spawner/lootdrop/ammo/shotgun

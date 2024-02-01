@@ -81,7 +81,7 @@
 			sender_full_info = "[sender_name ? "[sender_name] of the ": ""]Caliente Expeditionary Command"
 			radio_span = get_radio_span(FREQ_NCR)
 		if("Legion")
-			sender_full_info = "[sender_name ? "[sender_name] of the ": ""]Zion War Council"
+			sender_full_info = "[sender_name ? "[sender_name] of the ": ""]Blackrock Fortress"
 			radio_span = get_radio_span(FREQ_LEGION)
 		if("BOS")
 			sender_full_info = "[sender_name ? "[sender_name] of the ": ""]Utah Council of Elders"
@@ -240,6 +240,40 @@
 	admin_ticket_log(M, msg)
 	SSblackbox.record_feedback("nested tally", "admin_toggle", 1, list("Godmode", "[M.status_flags & GODMODE ? "Enabled" : "Disabled"]")) //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
+/proc/cmd_admin_verify(whom)
+	if(!whom)
+		return
+
+	var/verifyunverify
+
+	var/client/C
+	if(istype(whom, /client))
+		C = whom
+	else if(istext(whom))
+		C = GLOB.directory[whom]
+	else
+		return
+
+	var/datum/preferences/P
+	if(C)
+		P = C.prefs
+	else
+		P = GLOB.preferences_datums[whom]
+	if(!P)
+		return
+
+	if(P.age_verified)
+		verifyunverify = "unverified"
+		P.age_verified = 0
+	else
+		verifyunverify = "verified"
+		P.age_verified = 1
+
+	log_admin("[key_name(usr)] has [verifyunverify] [key_name(whom)]")
+	message_admins("[key_name_admin(usr)] has [verifyunverify] [key_name_admin(whom)].")
+	if(C)
+		to_chat(C, "You have been [verifyunverify] by [key_name(usr, include_name = FALSE)].", confidential = TRUE)
+	SSblackbox.record_feedback("nested tally", "admin_toggle", 1, list("Age Verification", "[P.age_verified ? "Verified" : "Unverified"]")) //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /proc/cmd_admin_mute(whom, mute_type, automute = 0)
 	if(!whom)
@@ -833,6 +867,61 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	log_admin("[key_name(src)] has sent a priority announcement: [input]")
 	message_admins("[key_name_admin(src)] has made a priority announcement")
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Make Priority Announcement") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+
+/client/proc/cmd_admin_faction_message(target_terminal in GLOB.req_terminal)
+	set category = "Admin.Events"
+	set name = "Faction Message"
+
+	if (!check_rights(R_ADMIN))
+		message_admins("[ADMIN_TPMONTY(usr)] tried to use cmd_admin_faction_message() without admin perms.")
+		log_admin("INVALID ADMIN PROC ACCESS: [key_name(usr)] tried to use cmd_admin_faction_message() without admin perms.")
+		return
+
+	var/broadcast_radio = alert(src, "Should this message be broadcasted on faction radio?", "Faction Message", "Yes", "No", "Cancel")
+	if (broadcast_radio == "Cancel")
+		return
+
+	var/message = stripped_input(usr, "Faction message to send:", "Faction Message", null, MAX_MESSAGE_LEN)
+	if (message)
+		if (!check_rights(R_SPAWN,0))
+			message = adminscrub(message,500)
+		for (var/obj/machinery/msgterminal/command/command_terminal in GLOB.allTerminals)
+			var/list/radio_freqs
+			var/sender
+			command_terminal.message = message
+			for (var/obj/machinery/msgterminal/C in GLOB.allTerminals)
+				if (C.terminal == target_terminal)
+					C.createmessage(command_terminal, "New message from [sender].", message, 2)
+					switch(target_terminal)
+						if ("NCR Terminal")
+							radio_freqs = list(FREQ_NCR, FREQ_RANGER)
+							sender = "Caliente Expeditionary Command"
+						if ("Legion Terminal")
+							radio_freqs = list(FREQ_LEGION)
+							sender = "Zion War Council"
+						if ("Brotherhood Terminal")
+							radio_freqs = list(FREQ_BOS)
+							sender = "Utah Council of Elders"
+						if ("Enclave Terminal")
+							radio_freqs = list(FREQ_ENCLAVE)
+							sender = "West Temple HighComm"
+						if ("Followers Terminal")
+							radio_freqs = list(FREQ_MEDICAL)
+						else
+							sender = "Command"
+					if (radio_freqs)
+						for (var/iter_freq in radio_freqs)
+							C.radio.set_frequency(iter_freq)
+							if (broadcast_radio == "Yes")
+								C.radio.talk_into(C, "Message from [sender]: [message]", iter_freq, list(SPAN_ROBOT, SPAN_COMMAND))
+							else
+								C.radio.talk_into(C, "New message from [sender].", iter_freq, list(SPAN_ROBOT, SPAN_COMMAND))
+			break
+
+		to_chat(usr, "Message sent.")
+		log_admin("Faction Message ([target_terminal]): [key_name(usr)] : [message]")
+
+	SSblackbox.record_feedback("tally", "admin_verb", 1, "Faction Message") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/cmd_change_command_name()
 	set category = "Admin.Events"

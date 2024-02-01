@@ -144,6 +144,31 @@
 	name = "Harpy"
 	icon_state = "harpy"
 
+/datum/sprite_accessory/deco_wings/harpyarm
+	name = "Harpy Arm Wings"
+	icon = 'icons/mob/wings_large.dmi'
+	icon_state = "harpywings"
+
+/datum/sprite_accessory/deco_wings/harpyarmalt
+	name = "Harpy Arm Wings (Alt)"
+	icon = 'icons/mob/wings_large.dmi'
+	icon_state = "harpywingsalt"
+
+/datum/sprite_accessory/deco_wings/harpyarmcollar
+	name = "Harpy Arm Wings (Alt Collar)"
+	icon = 'icons/mob/wings_large.dmi'
+	icon_state = "harpywingsaltcollar"
+
+/datum/sprite_accessory/deco_wings/harpyarmbat
+	name = "Harpy Arm Wings (Bat)"
+	icon = 'icons/mob/wings_large.dmi'
+	icon_state = "harpywingsbat"
+
+/datum/sprite_accessory/deco_wings/harpyarmbatcollar
+	name = "Harpy Arm Wings (Bat Collar)"
+	icon = 'icons/mob/wings_large.dmi'
+	icon_state = "harpywingsbatcollar"
+
 /datum/sprite_accessory/deco_wings/insect
 	name = "Insect"
 	icon_state = "insect"
@@ -151,6 +176,11 @@
 /datum/sprite_accessory/deco_wings/mantis
 	name = "Mantis Arms"
 	icon_state = "mantis"
+
+/datum/sprite_accessory/deco_wings/angelmoth
+	name = "Moth - Angel"
+	icon = 'icons/mob/wings_large.dmi'
+	icon_state = "angelmoth"
 
 /datum/sprite_accessory/deco_wings/aspen
 	name = "Moth - Aspen"
@@ -163,10 +193,6 @@
 /datum/sprite_accessory/deco_wings/moth_brown
 	name = "Moth - Brown"
 	icon_state = "brown"
-
-/datum/sprite_accessory/deco_wings/moth_burnt
-	name = "Moth - Burnt"
-	icon_state = "punished"
 
 /datum/sprite_accessory/deco_wings/moth_deathhead
 	name = "Moth - Deathshead"
@@ -228,6 +254,10 @@
 	name = "Moth - Poison"
 	icon_state = "poison"
 
+/datum/sprite_accessory/deco_wings/moth_punished
+	name = "Moth - Punished"
+	icon_state = "punished"
+
 /datum/sprite_accessory/deco_wings/moth_red
 	name = "Moth - Red"
 	icon_state = "redish"
@@ -264,9 +294,17 @@
 	name = "Nevrean - No Tail"
 	icon_state = "nevrean2"
 
+/datum/sprite_accessory/deco_wings/pterodactyl
+	name = "Pterodactyl"
+	icon_state = "pterodactyl"
+
 /datum/sprite_accessory/deco_wings/robotic
 	name = "Robotic"
 	icon_state = "shock"
+
+/datum/sprite_accessory/deco_wings/roboticalt
+	name = "Robotic - Alternate"
+	icon_state = "robotic"
 
 /datum/sprite_accessory/deco_wings/robotic2
 	name = "Robotic - No Tail"
@@ -318,8 +356,20 @@
 	name = "Spider Legs"
 	icon_state = "spider"
 
+/datum/sprite_accessory/deco_wings/sfuzzy
+	name = "Spider Legs (Fuzzy)"
+	icon_state = "sfuzzy"
+
+/datum/sprite_accessory/deco_wings/splain
+	name = "Spider Legs (Plain)"
+	icon_state = "splain"
+
+/datum/sprite_accessory/deco_wings/sspiky
+	name = "Spider Legs (Spiky)"
+	icon_state = "sspiky"
+
 /datum/sprite_accessory/deco_wings/sylveonbow
-	name = "Sylveon Bow"
+	name = "Bow"
 	icon_state = "sylveon_bow"
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_ALL
@@ -342,107 +392,107 @@
 	relevant_layers = null
 
 /datum/sprite_accessory/insect_wings/aspen
-	name = "Aspen"
+	name = "Moth - Aspen"
 	icon_state = "aspen"
 
 /datum/sprite_accessory/insect_wings/atlas
-	name = "Atlas"
+	name = "Moth - Atlas"
 	icon_state = "atlas"
 
 /datum/sprite_accessory/insect_wings/brown
-	name = "Brown"
+	name = "Moth - Brown"
 	icon_state = "brown"
 
 /datum/sprite_accessory/insect_wings/deathhead
-	name = "Deathshead"
+	name = "Moth - Deathshead"
 	icon_state = "deathhead"
 
 /datum/sprite_accessory/insect_wings/delirious
-	name = "Delirious"
+	name = "Moth - Delirious"
 	icon_state = "delirious"
 
 /datum/sprite_accessory/insect_wings/dreamhead
-	name = "Dreamhead"
+	name = "Moth - Dreamhead"
 	icon_state = "dreamhead"
 
 /datum/sprite_accessory/insect_wings/featherymoth
-	name = "Feathery Moth Wings"
+	name = "Moth - Feathery"
 	icon_state = "featherymoth"
 
 /datum/sprite_accessory/insect_wings/firewatch
-	name = "Firewatch"
+	name = "Moth - Firewatch"
 	icon_state = "firewatch"
 
 /datum/sprite_accessory/insect_wings/gothic
-	name = "Gothic"
+	name = "Moth - Gothic"
 	icon_state = "gothic"
 
 /datum/sprite_accessory/insect_wings/jungle
-	name = "Jungle"
+	name = "Moth - Jungle"
 	icon_state = "jungle"
 
 /datum/sprite_accessory/insect_wings/lovers
-	name = "Lovers"
+	name = "Moth - Lovers"
 	icon_state = "lovers"
 
 /datum/sprite_accessory/insect_wings/luna
-	name = "Luna"
+	name = "Moth - Luna"
 	icon_state = "luna"
 
 /datum/sprite_accessory/insect_wings/monarch
-	name = "Monarch"
+	name = "Moth - Monarch"
 	icon_state = "monarch"
 
 /datum/sprite_accessory/insect_wings/moonfly
-	name = "Moon Fly"
+	name = "Moth - Moon Fly"
 	icon_state = "moonfly"
 
 /datum/sprite_accessory/insect_wings/oakworm
-	name = "Oak Worm"
+	name = "Moth - Oak Worm"
 	icon_state = "oakworm"
 
 /datum/sprite_accessory/insect_wings/plain
-	name = "Plain"
+	name = "Moth - Plain"
 	icon_state = "plain"
 
 /datum/sprite_accessory/insect_wings/plasmafire
-	name = "Plasma Fire"
+	name = "Moth - Plasma Fire"
 	icon_state = "plasmafire"
 
 /datum/sprite_accessory/insect_wings/poison
-	name = "Poison"
+	name = "Moth - Poison"
 	icon_state = "poison"
 
 /datum/sprite_accessory/insect_wings/punished
-	name = "Burnt Off"
+	name = "Moth - Punished"
 	icon_state = "punished"
 
 /datum/sprite_accessory/insect_wings/ragged
-	name = "Ragged"
+	name = "Moth - Ragged"
 	icon_state = "ragged"
 
 /datum/sprite_accessory/insect_wings/reddish
-	name = "Reddish"
+	name = "Moth - Reddish"
 	icon_state = "redish"
 
 /datum/sprite_accessory/insect_wings/rosy
-	name = "Rosy"
+	name = "Moth - Rosy"
 	icon_state = "rosy"
 
 /datum/sprite_accessory/insect_wings/royal
-	name = "Royal"
+	name = "Moth - Royal"
 	icon_state = "royal"
 
 /datum/sprite_accessory/insect_wings/snow
-	name = "Snow"
+	name = "Moth - Snow"
 	icon_state = "snow"
 
 /datum/sprite_accessory/insect_wings/whitefly
-	name = "White Fly"
+	name = "Moth - White Fly"
 	icon_state = "whitefly"
 
 /datum/sprite_accessory/insect_wings/witchwing
-	name = "Witch Wing"
+	name = "Moth - Witch Wing"
 	icon_state = "witchwing"
 
 /datum/sprite_accessory/insect_wings/bee
@@ -460,6 +510,26 @@
 /datum/sprite_accessory/insect_wings/insect
 	name = "Insect"
 	icon_state = "insect"
+
+/datum/sprite_accessory/insect_wings/mantis
+	name = "Mantis Arms"
+	icon_state = "mantis"
+
+/datum/sprite_accessory/insect_wings/spider
+	name = "Spider Legs"
+	icon_state = "spider"
+
+/datum/sprite_accessory/insect_wings/sfuzzy
+	name = "Spider Legs (Fuzzy)"
+	icon_state = "sfuzzy"
+
+/datum/sprite_accessory/insect_wings/splain
+	name = "Spider Legs (Plain)"
+	icon_state = "splain"
+
+/datum/sprite_accessory/insect_wings/sspiky
+	name = "Spider Legs (Spiky)"
+	icon_state = "sspiky"
 
 //insect markings
 /datum/sprite_accessory/insect_markings // Extra markings for insects ported from tg.

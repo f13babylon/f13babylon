@@ -744,6 +744,12 @@
 	material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR
 	buildstacktype = null
 
+/obj/structure/sink/deep_water
+	name = "deep water spot"
+	desc = "A spot of deeper water! Deep enough to put a bucket in and scoop some up."
+	icon_state = "water_spot"
+	resistance_flags = UNACIDABLE
+
 //Shower Curtains//
 //Defines used are pre-existing in layers.dm//
 

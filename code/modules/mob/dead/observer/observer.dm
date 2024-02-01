@@ -51,6 +51,10 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 	var/facial_hair_color
 	var/mutable_appearance/facial_hair_overlay
 
+	/// Bobstation port - Appearance of the mob we supposedly come from, preferrably used instead of all the bullshit above
+	var/mutable_appearance/body_appearance
+
+
 	var/updatedir = 1						//Do we have to update our dir as the ghost moves around?
 	var/lastsetting = null	//Stores the last setting that ghost_others was set to, for a little more efficiency when we update ghost images. Null means no update is necessary
 
@@ -65,6 +69,9 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 	var/datum/spawners_menu/spawners_menu
 
 /mob/dead/observer/Initialize(mapload, mob/body)
+	//used to make ghosts calm down their motion blur if possible
+	START_PROCESSING(SSghosts, src)
+
 	set_invisibility(GLOB.observer_default_invisibility)
 
 	add_verb(src, GLOB.ghost_verbs)
@@ -104,6 +111,8 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 			if(FACEHAIR in body_human.dna.species.species_traits)
 				facial_hair_style = body_human.facial_hair_style
 				facial_hair_color = brighten_color(body_human.facial_hair_color)
+
+		body_appearance = copy_appearance(body)	//Bobstation port
 
 	update_icon()
 
@@ -174,6 +183,37 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 	SHOULD_CALL_PARENT(FALSE)
 	return TRUE
 
+/** - Based Bobstation port, thank god this works nearly identical on our codebase as Bobstation's. Humdullah.
+ * This seems stupid, but it's the easiest way to avoid absolutely ridiculous shit from happening.
+ * Copying an appearance directly from a mob includes it's verb list, it's invisibility, it's alpha, and it's density!
+ * You might recognize these things as "fucking ridiculous to put in an appearance" - You'd be right, but that's fucking BYOND for you!
+ * Instead, we have to do this to copy only relevant information out of the original mob's appearance.
+ */
+/mob/dead/observer/proc/copy_appearance(atom/original)
+	var/mutable_appearance/final_appearance = new()
+
+	final_appearance.icon = original.icon
+	final_appearance.icon_state = original.icon_state
+	final_appearance.overlays = original.overlays
+	final_appearance.underlays = original.underlays
+	// Gibbing/dusting/melting removes the icon before ghostize()ing the mob - In that case, we use the old ghost system
+	if(!isicon(final_appearance.icon) && !LAZYLEN(final_appearance.overlays) && !LAZYLEN(final_appearance.underlays))
+		return
+	final_appearance.appearance_flags = original.appearance_flags
+	final_appearance.appearance_flags |= KEEP_TOGETHER
+	final_appearance.blend_mode = original.blend_mode
+	final_appearance.color = original.color
+	final_appearance.maptext = original.maptext
+	final_appearance.maptext_width = original.maptext_width
+	final_appearance.maptext_height = original.maptext_height
+	final_appearance.maptext_x = original.maptext_x
+	final_appearance.maptext_y = original.maptext_y
+	final_appearance.mouse_opacity = original.mouse_opacity
+	final_appearance.alpha = GHOST_COPY_ALPHA
+
+	return final_appearance
+
+
 /*
  * This proc will update the icon of the ghost itself, with hair overlays, as well as the ghost image.
  * Please call update_icon(icon_state) from now on when you want to update the icon_state of the ghost,
@@ -183,6 +223,16 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
  */
 /mob/dead/observer/update_icon(updates=ALL, new_form=null)
 	. = ..()
+
+	// Bobstation method of forcing mob to always have apperance similar to mob
+	if(body_appearance)
+		updatedir = TRUE
+		icon = null
+		icon_state = null
+		cut_overlays()
+		add_overlay(body_appearance)
+		return
+
 	if(client) //We update our preferences in case they changed right before update_icon was called.
 		ghost_accs = client.prefs.ghost_accs
 		ghost_others = client.prefs.ghost_others
@@ -207,7 +257,7 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 		updatedir = 1
 	else
 		updatedir = 0	//stop updating the dir in case we want to show accessories with dirs on a ghost sprite without dirs
-		setDir(2 		)//reset the dir to its default so the sprites all properly align up
+		setDir(SOUTH)//reset the dir to its default so the sprites all properly align up
 
 	if(ghost_accs == GHOST_ACCS_FULL && (icon_state in GLOB.ghost_forms_with_accessories_list)) //check if this form supports accessories and if the client wants to show them
 		var/datum/sprite_accessory/S
@@ -383,7 +433,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		ghostize(0, penalize = TRUE)
 
 
-
+/*	- Disabled for Bobstation new mob ghost code.
 /mob/dead/observer/Move(NewLoc, direct, glide_size_override = 32)
 	if(updatedir)
 		setDir(direct)//only update dir if we actually need it, so overlays won't spin on base sprites that don't have directions of their own
@@ -409,6 +459,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 			destination = get_step(destination, WEST)
 
 		abstract_move(destination)//Get out of closets and such as a ghost
+*/
 
 /mob/dead/observer/verb/reenter_corpse()
 	set category = "Ghost"
@@ -453,7 +504,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	if(message)
 		to_chat(src, "<span class='ghostalert'>[message]</span>")
 		if(source)
-			var/obj/screen/alert/A = throw_alert("[REF(source)]_notify_cloning", /obj/screen/alert/notify_cloning)
+			var/atom/movable/screen/alert/A = throw_alert("[REF(source)]_notify_cloning", /atom/movable/screen/alert/notify_cloning)
 			if(A)
 				if(client && client.prefs && client.prefs.UI_style)
 					A.icon = ui_style2icon(client.prefs.UI_style)

@@ -8,6 +8,7 @@ SUBSYSTEM_DEF(jukeboxes)
 /datum/track
 	var/song_name = "generic"
 	var/song_path = null
+	var/song_type = null
 	var/song_length = 0
 	var/song_beat = 0
 	var/song_associated_id = null
@@ -64,15 +65,16 @@ SUBSYSTEM_DEF(jukeboxes)
 	return FALSE
 
 /datum/controller/subsystem/jukeboxes/Initialize()
-	var/list/tracks = flist("config/jukebox_music/sounds/")
+	var/list/tracks = flist("sound/f13music/jukebox_music/")
 	for(var/S in tracks)
 		var/datum/track/T = new()
-		T.song_path = file("config/jukebox_music/sounds/[S]")
+		T.song_path = file("sound/f13music/jukebox_music/[S]")
 		var/list/L = splittext(S,"+")
-		T.song_name = L[1]
-		T.song_length = text2num(L[2])
-		T.song_beat = text2num(L[3])
-		T.song_associated_id = L[4]
+		T.song_name = L[1] //Name of your song
+		T.song_type = L[2] //Should be set to Base
+		T.song_length = text2num(L[3]) //Number of seconds plus one 0 (Formatted like ###0), with ### being the number of seconds
+		T.song_beat = text2num(L[4]) //Should be set to 5
+		T.song_associated_id = L[5] //Add one to the current count, ascending
 		songs |= T
 	for(var/i in CHANNEL_JUKEBOX_START to CHANNEL_JUKEBOX)
 		freejukeboxchannels |= i

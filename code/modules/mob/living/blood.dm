@@ -169,7 +169,6 @@
 	if(blood_id == /datum/reagent/blood || /datum/reagent/blood/jellyblood) //actual blood reagent
 		var/blood_data = list()
 		//set the blood data
-		blood_data["donor"] = src
 		blood_data["viruses"] = list()
 
 		for(var/thing in diseases)
@@ -240,21 +239,22 @@
 		return
 
 	var/static/list/bloodtypes_safe = list(
-		"A-" = list("A-", "O-", "SY"),
-		"A+" = list("A-", "A+", "O-", "O+", "SY"),
-		"B-" = list("B-", "O-", "SY"),
-		"B+" = list("B-", "B+", "O-", "O+", "SY"),
-		"AB-" = list("A-", "B-", "O-", "AB-", "SY"),
-		"AB+" = list("A-", "A+", "B-", "B+", "O-", "O+", "AB-", "AB+", "SY"),
-		"O-" = list("O-","SY"),
-		"O+" = list("O-", "O+","SY"),
-		"L" = list("A-", "A+", "B-", "B+", "O-", "O+", "AB-", "AB+", "L","SY"),
-		"U" = list("A-", "A+", "B-", "B+", "O-", "O+", "AB-", "AB+", "L", "U","SY"),
-		"HF" = list("HF", "SY"),
-		"X*" = list("X*", "SY"),
-		"SY" = list("SY"),
-		"GEL" = list("GEL","SY"),
-		"BUG" = list("A-", "A+", "B-", "B+", "O-", "O+", "AB-", "AB+", "BUG", "SY")
+		"A-" = list("A-", "O-", "SY", "T"),
+		"A+" = list("A-", "A+", "O-", "O+", "SY", "T"),
+		"B-" = list("B-", "O-", "SY", "T"),
+		"B+" = list("B-", "B+", "O-", "O+", "SY", "T"),
+		"AB-" = list("A-", "B-", "O-", "AB-", "SY", "T"),
+		"AB+" = list("A-", "A+", "B-", "B+", "O-", "O+", "AB-", "AB+", "SY", "T"),
+		"O-" = list("O-","SY", "T"),
+		"O+" = list("O-", "O+","SY", "T"),
+		"L" = list("A-", "A+", "B-", "B+", "O-", "O+", "AB-", "AB+", "L","SY", "T"),
+		"U" = list("A-", "A+", "B-", "B+", "O-", "O+", "AB-", "AB+", "L", "U","SY", "T"),
+		"HF" = list("HF", "SY", "T"),
+		"X*" = list("X*", "SY", "T"),
+		"SY" = list("SY", "T"),
+		"GEL" = list("GEL","SY", "T"),
+		"BUG" = list("A-", "A+", "B-", "B+", "O-", "O+", "AB-", "AB+", "BUG", "SY", "T"),
+		"T" = list("T", "SY")
 	)
 
 	var/safe = bloodtypes_safe[bloodtype]

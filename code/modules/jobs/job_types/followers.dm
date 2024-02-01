@@ -101,7 +101,8 @@ Administrator
 		/obj/item/book/granter/trait/chemistry = 1,
 		/obj/item/book/granter/trait/techno = 1,
 		/obj/item/healthanalyzer/advanced = 1,
-		/obj/item/pda/medical = 1,
+		/obj/item/pda = 1,
+		/obj/item/gun/energy/laser/complianceregulator = 1,
 	)
 
 /*
@@ -400,4 +401,4 @@ Follower Volunteer
 	ADD_TRAIT(R, TRAIT_TECHNOPHREAK, TRAIT_GENERIC)
 	R.apply_pref_name("human", M.client)
 	R.gender = NEUTER
-	R.forceMove(pick(GLOB.special_borg_start))
+	R.forceMove(pick(GLOB.followers_borg_start))

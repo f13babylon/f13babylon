@@ -163,7 +163,7 @@ GLOBAL_LIST_INIT(ore_probability, list(/obj/item/stack/ore/uranium = 50,
 		if(21)
 			new /obj/item/slimepotion/transference(loc)
 		if(22)
-			new /obj/item/slime_extract/adamantine(loc)
+			new /obj/item/slime_extract/saturnite(loc)
 		if(23)
 			new /obj/item/weldingtool/abductor(loc)
 		if(24)

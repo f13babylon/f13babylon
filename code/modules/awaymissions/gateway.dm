@@ -72,10 +72,6 @@ GLOBAL_LIST_EMPTY(gateway_destinations)
 	if(target_gateway.target == deactivated.destination)
 		target_gateway.deactivate()
 
-/datum/gateway_destination/gateway/Destroy(force, ...)
-	target_gateway = null
-	return ..()
-
 /datum/gateway_destination/gateway/is_available()
 	return ..() && target_gateway.calibrated && !target_gateway.target && target_gateway.powered()
 
@@ -116,7 +112,7 @@ GLOBAL_LIST_EMPTY(gateway_destinations)
 
 /datum/gateway_destination/gateway/home/proc/check_exile_implant(mob/living/L)
 	for(var/obj/item/implant/exile/E in L.implants)//Checking that there is an exile implant
-		to_chat(L, "<span class='userdanger'>The station gate has detected your exile implant and is blocking your entry.</span>")
+		to_chat(L, span_userdanger("The station gate has detected your exile implant and is blocking your entry."))
 		return TRUE
 	return FALSE
 
@@ -176,17 +172,16 @@ GLOBAL_LIST_EMPTY(gateway_destinations)
 	/// bumper object, the thing that starts actual teleport
 	var/obj/effect/gateway_portal_bumper/portal
 
+/obj/machinery/gateway/Destroy()
+	destination.target_gateway = null
+	GLOB.gateway_destinations -= destination
+	destination = null
+	return ..()
+
+
 /obj/machinery/gateway/Initialize(mapload)
 	generate_destination()
 	update_icon()
-	return ..()
-
-/obj/machinery/gateway/Destroy()
-	deactivate()
-	if(destination && destination.target_gateway)
-		destination.target_gateway.deactivate()
-	GLOB.gateway_destinations -= destination
-	QDEL_NULL(destination)
 	return ..()
 
 /obj/machinery/gateway/proc/generate_destination()
@@ -198,7 +193,7 @@ GLOBAL_LIST_EMPTY(gateway_destinations)
 /obj/machinery/gateway/proc/deactivate()
 	var/datum/gateway_destination/dest = target
 	target = null
-	dest?.deactivate(src)
+	dest.deactivate(src)
 	QDEL_NULL(portal)
 	if(use_power == ACTIVE_POWER_USE)
 		use_power = IDLE_POWER_USE
@@ -255,7 +250,7 @@ GLOBAL_LIST_EMPTY(gateway_destinations)
 
 /obj/machinery/gateway/multitool_act(mob/living/user, obj/item/I)
 	if(calibrated)
-		to_chat(user, "<span class='alert'>The gate is already calibrated, there is no work for you to do here.</span>")
+		to_chat(user, span_alert("The gate is already calibrated, there is no work for you to do here."))
 	else
 		to_chat(user, "<span class='boldnotice'>Recalibration successful!</span>: \black This gate's systems have been fine tuned. Travel to this gate will now be on target.")
 		calibrated = TRUE
@@ -270,7 +265,7 @@ GLOBAL_LIST_EMPTY(gateway_destinations)
 	. = ..()
 	if(!target)
 		if(!GLOB.the_gateway)
-			to_chat(user,"<span class='warning'>Home gateway is not responding!</span>")
+			to_chat(user,span_warning("Home gateway is not responding!"))
 		if(GLOB.the_gateway.target)
 			GLOB.the_gateway.deactivate() //this will turn the home gateway off so that it's free for us to connect to
 		activate(GLOB.the_gateway.destination)

@@ -56,6 +56,14 @@
 	var/broken = 0
 	canSmoothWith = list(/turf/closed/wall/f13/wood/house, /turf/closed/wall/f13/wood/house/broken, /turf/closed/wall, /turf/closed/wall/f13/wood/house/clean)
 
+/turf/closed/wall/f13/wood/house/attackby(obj/item/W, mob/user, params)
+	if(istype(W, /obj/item/soap))
+		if(!do_after(user, 5 SECONDS, FALSE, src))
+			to_chat(user, "<span class='warning'>You must stand still to clean the wall!</span>")
+			return
+		ChangeTurf(/turf/closed/wall/f13/wood/house/clean)
+	. = ..()
+
 /turf/closed/wall/f13/wood/house/broken
 	broken = 1
 	damage = 21
@@ -235,7 +243,7 @@
 /turf/closed/wall/f13/sunset/brick_small
 	name = "brick wall"
 	desc = "A wall made out of solid brick."
-	icon = 'modular_sunset/icons/turfs/walls/brick_small.dmi'
+	icon = 'icons/fallout/turfs/walls/brick_small.dmi'
 	icon_state = "brick0"
 	icon_type_smooth = "brick"
 	hardness = 80
@@ -247,7 +255,7 @@
 /turf/closed/wall/f13/sunset/brick_small_dark
 	name = "brick wall"
 	desc = "A wall made out of solid brick."
-	icon = 'modular_sunset/icons/turfs/walls/brick_small_dark.dmi'
+	icon = 'icons/fallout/turfs/walls/brick_small_dark.dmi'
 	icon_state = "brick0"
 	icon_type_smooth = "brick"
 	hardness = 80
@@ -259,7 +267,7 @@
 /turf/closed/wall/f13/sunset/brick_small_light
 	name = "brick wall"
 	desc = "A wall made out of solid brick."
-	icon = 'modular_sunset/icons/turfs/walls/brick_small_light.dmi'
+	icon = 'icons/fallout/turfs/walls/brick_small_light.dmi'
 	icon_state = "brick0"
 	icon_type_smooth = "brick"
 	hardness = 80

@@ -359,117 +359,6 @@
 	desc = "A warning to NCR troopers about eating irradiated food."
 	icon_state = "poster48"
 
-
-/obj/structure/sign/poster/contraband/pinup_assaultron
-	name = "Pin-Up - Assaultron"
-	desc = "This poster definitely puts the 'ass' in assaultron."
-	icon_state = "pinup_assaultron"
-
-/obj/structure/sign/poster/contraband/pinup_assaultron2
-	name = "Pin-Up - Assaultron II"
-	desc = "This poster definitely puts the 'ass' in assaultron."
-	icon_state = "pinup_assaultron2"
-
-/obj/structure/sign/poster/contraband/pinup_claw1
-	name = "Pin-Up - Funclaw"
-	desc = "Funclaws aren't real, but this poster is."
-	icon_state = "pinup_claw1"
-
-/obj/structure/sign/poster/contraband/pinup_claw2
-	name = "Pin-Up - Funclaw II"
-	desc = "Funclaws aren't real, but this poster is."
-	icon_state = "pinup_claw2"
-
-/obj/structure/sign/poster/contraband/pinup_claw3
-	name = "Pin-Up - Funclaw III"
-	desc = "Funclaws aren't real, but this poster is."
-	icon_state = "pinup_claw3"
-
-/obj/structure/sign/poster/contraband/pinup_claw4
-	name = "Pin-Up - Funclaw IV"
-	desc = "Funclaws aren't real, but this poster is."
-	icon_state = "pinup_claw4"
-
-/obj/structure/sign/poster/contraband/pinup_anthro1
-	name = "Pin-Up - Anthro"
-	desc = "A poster of a suggestive furry in an even more suggestive pose."
-	icon_state = "pinup_anthro1"
-
-/obj/structure/sign/poster/contraband/pinup_anthro2
-	name = "Pin-Up - Anthro II"
-	desc = "A poster of a suggestive furry in an even more suggestive pose."
-	icon_state = "pinup_anthro2"
-
-/obj/structure/sign/poster/contraband/pinup_anthro3
-	name = "Pin-Up - Anthro III"
-	desc = "A poster of a suggestive furry in an even more suggestive pose."
-	icon_state = "pinup_anthro3"
-
-/obj/structure/sign/poster/contraband/pinup_anthro4
-	name = "Pin-Up - Anthro IV"
-	desc = "A poster of a suggestive furry in an even more suggestive pose."
-	icon_state = "pinup_anthro4"
-
-/obj/structure/sign/poster/contraband/pinup_anthro5
-	name = "Pin-Up - Anthro V"
-	desc = "A poster of a suggestive furry in an even more suggestive pose."
-	icon_state = "pinup_anthro5"
-
-/obj/structure/sign/poster/contraband/pinup_anthro6
-	name = "Pin-Up - Anthro VI"
-	desc = "A poster of a suggestive furry in an even more suggestive pose."
-	icon_state = "pinup_anthro6"
-
-/obj/structure/sign/poster/contraband/pinup_anthro7
-	name = "Pin-Up - Anthro VII"
-	desc = "A poster of a suggestive furry in an even more suggestive pose."
-	icon_state = "pinup_anthro7"
-
-/obj/structure/sign/poster/contraband/pinup_anthro8
-	name = "Pin-Up - Anthro VIII"
-	desc = "A poster of a suggestive furry in an even more suggestive pose."
-	icon_state = "pinup_anthro8"
-
-/obj/structure/sign/poster/contraband/pinup_anthro9
-	name = "Pin-Up - Anthro IX"
-	desc = "A poster of a suggestive furry in an even more suggestive pose."
-	icon_state = "pinup_anthro9"
-
-/obj/structure/sign/poster/contraband/pinup_anthro10
-	name = "Pin-Up - Anthro X"
-	desc = "A poster of a suggestive furry in an even more suggestive pose."
-	icon_state = "pinup_anthro10"
-
-/obj/structure/sign/poster/contraband/pinup_anthro11
-	name = "Pin-Up - Anthro XI"
-	desc = "A poster of a suggestive furry in an even more suggestive pose."
-	icon_state = "pinup_anthro11"
-
-/obj/structure/sign/poster/contraband/pinup_anthro12
-	name = "Pin-Up - Anthro XII"
-	desc = "A poster of a suggestive furry in an even more suggestive pose."
-	icon_state = "pinup_anthro12"
-
-/obj/structure/sign/poster/contraband/pinup_anthro13
-	name = "Pin-Up - Anthro XIII"
-	desc = "A poster of a suggestive furry in an even more suggestive pose."
-	icon_state = "pinup_anthro13"
-
-/obj/structure/sign/poster/contraband/pinup_anthro14
-	name = "Pin-Up - Anthro XIV"
-	desc = "A poster of a suggestive furry in an even more suggestive pose."
-	icon_state = "pinup_anthro14"
-
-/obj/structure/sign/poster/contraband/pinup_anthro15
-	name = "Pin-Up - Anthro XV"
-	desc = "A poster of a suggestive furry in an even more suggestive pose."
-	icon_state = "pinup_anthro15"
-
-/obj/structure/sign/poster/contraband/pinup_anthro16
-	name = "Pin-Up - Anthro XVI"
-	desc = "A poster of a suggestive furry in an even more suggestive pose."
-	icon_state = "pinup_anthro16"
-
 /obj/structure/sign/poster/official
 	poster_item_name = "motivational poster"
 	poster_item_desc = "An official government-issued poster to foster a compliant and obedient workforce. It comes with state-of-the-art adhesive backing, for easy pinning to any vertical surface."
@@ -792,6 +681,67 @@
 	desc = "A picture of a mustached man in a fedora tipping his fedora towards the viewer with the text: 'Never trust a dude who went Caesar's Legion unironically"
 	icon_state = "poster95"
 
+/obj/structure/sign/poster/sunset/corporate/eyes
+	name = "\improper REPCONN Aerospace security poster #2"
+	desc = "A poster showing a REPCONN employee being watched by an ominous pair of eyes. The text reads, 'Security is YOUR duty!'"
+	icon_state = "corporate2"
+
+/obj/structure/sign/poster/sunset/enlist
+	name = "\improper Enlist! poster"
+	desc = "A pre-war poster made by the United States government. The text reads, 'Your Country Needs You! Enlist!'"
+	icon_state = "enlist"
+
+/obj/structure/sign/poster/sunset/dean
+	name = "\improper Dean Domino poster"
+	desc = "A pre-war advertisement for a touring performance from the King of Swing, Dean Domino."
+	icon_state = "dean"
+
+/obj/structure/sign/poster/sunset/corporate
+	name = "\improper REPCONN Aerospace security poster #1"
+	desc = "A poster showing a man in a suit being ambushed by a sentry bot. It reads, 'Wear your badge! It could save your LIFE!'"
+	icon_state = "corporate"
+
+/obj/structure/sign/poster/sunset/nukagirl
+	name = "\improper Nuka-Girl poster"
+	desc = "A poster depicting a woman in a midriff-exposing spacesuit and tall boots, helmet removed, holding a bottle of Nuka-Cola."
+	icon_state = "nuka"
+
+/obj/structure/sign/poster/sunset/ralphie
+	name = "\improper Ralphie the Robot poster"
+	desc = "A poster for the pre-war children's TV show RALPHIE the Robot's Incredibly Odyssey. 'RALPHIE, fly far, fly fast!'"
+	icon_state = "ralphie"
+
+/obj/structure/sign/poster/sunset/sarsaparilla
+	name = "\improper Sunset Sarsaparilla poster"
+	desc = "An advertisement for Sunset Sarsaparilla, depicting a burly man in a red and white striped wrestling singlet lifting a large dumbbell and drinking from a bottle. The text reads, 'Build MASS with SASS!'"
+	icon_state = "sunset"
+
+/obj/structure/sign/poster/sunset/pebbles
+	name = "\improper Mr. Pebbles poster"
+	desc = "A poster of a white cat in a spacesuit, standing at a podium in front of an American flag. The text reads, 'Mr. Pebbles: The First Cat In Space'."
+	icon_state = "pebbles"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #undef PLACE_SPEED
 
 /obj/effect/landmark/poster_spawner
@@ -840,16 +790,4 @@
 		/obj/structure/sign/poster/contraband/pinup_funk, /obj/structure/sign/poster/contraband/pinup_topless,
 		/obj/structure/sign/poster/contraband/pinup_shower, /obj/structure/sign/poster/contraband/pinup_vixen,
 		/obj/structure/sign/poster/contraband/ncrpropaganda,
-		// SUNSET PINUP POSTERS
-		/obj/structure/sign/poster/contraband/pinup_assaultron, /obj/structure/sign/poster/contraband/pinup_assaultron2,
-		/obj/structure/sign/poster/contraband/pinup_claw1, /obj/structure/sign/poster/contraband/pinup_claw2,
-		/obj/structure/sign/poster/contraband/pinup_claw3, /obj/structure/sign/poster/contraband/pinup_claw4,
-		/obj/structure/sign/poster/contraband/pinup_anthro1, /obj/structure/sign/poster/contraband/pinup_anthro2,
-		/obj/structure/sign/poster/contraband/pinup_anthro3, /obj/structure/sign/poster/contraband/pinup_anthro4,
-		/obj/structure/sign/poster/contraband/pinup_anthro5, /obj/structure/sign/poster/contraband/pinup_anthro6,
-		/obj/structure/sign/poster/contraband/pinup_anthro7, /obj/structure/sign/poster/contraband/pinup_anthro8,
-		/obj/structure/sign/poster/contraband/pinup_anthro9, /obj/structure/sign/poster/contraband/pinup_anthro10,
-		/obj/structure/sign/poster/contraband/pinup_anthro11, /obj/structure/sign/poster/contraband/pinup_anthro12,
-		/obj/structure/sign/poster/contraband/pinup_anthro13, /obj/structure/sign/poster/contraband/pinup_anthro14,
-		/obj/structure/sign/poster/contraband/pinup_anthro15, /obj/structure/sign/poster/contraband/pinup_anthro16
 		)

@@ -27,7 +27,7 @@
 	///How long it takes to lace/unlace these shoes
 	var/lace_time = 5 SECONDS
 	///any alerts we have active
-	var/obj/screen/alert/our_alert
+	var/atom/movable/screen/alert/our_alert
 
 /obj/item/clothing/shoes/ComponentInitialize()
 	. = ..()
@@ -93,8 +93,8 @@
 		user.update_inv_shoes()
 		equipped_before_drop = TRUE
 	if(can_be_tied && tied == SHOES_UNTIED)
-		our_alert = user.throw_alert("shoealert", /obj/screen/alert/shoes/untied)
-		RegisterSignal(src, COMSIG_SHOES_STEP_ACTION, PROC_REF(check_trip), override=TRUE)
+		our_alert = user.throw_alert("shoealert", /atom/movable/screen/alert/shoes/untied)
+		RegisterSignal(src, COMSIG_SHOES_STEP_ACTION, .proc/check_trip, override=TRUE)
 
 /obj/item/clothing/shoes/proc/restore_offsets(mob/user)
 	equipped_before_drop = FALSE
@@ -150,8 +150,8 @@
 		UnregisterSignal(src, COMSIG_SHOES_STEP_ACTION)
 	else
 		if(tied == SHOES_UNTIED && our_guy && user == our_guy)
-			our_alert = our_guy.throw_alert("shoealert", /obj/screen/alert/shoes/untied) // if we're the ones unknotting our own laces, of course we know they're untied
-		RegisterSignal(src, COMSIG_SHOES_STEP_ACTION, PROC_REF(check_trip), override=TRUE)
+			our_alert = our_guy.throw_alert("shoealert", /atom/movable/screen/alert/shoes/untied) // if we're the ones unknotting our own laces, of course we know they're untied
+		RegisterSignal(src, COMSIG_SHOES_STEP_ACTION, .proc/check_trip, override=TRUE)
 
 /**
  * handle_tying deals with all the actual tying/untying/knotting, inferring your intent from who you are in relation to the state of the laces
@@ -233,7 +233,7 @@
 		our_guy.Knockdown(10)
 		our_guy.visible_message("<span class='danger'>[our_guy] trips on [our_guy.p_their()] knotted shoelaces and falls! What a klutz!</span>", "<span class='userdanger'>You trip on your knotted shoelaces and fall over!</span>")
 		SEND_SIGNAL(our_guy, COMSIG_ADD_MOOD_EVENT, "trip", /datum/mood_event/tripped) // well we realized they're knotted now!
-		our_alert = our_guy.throw_alert("shoealert", /obj/screen/alert/shoes/knotted)
+		our_alert = our_guy.throw_alert("shoealert", /atom/movable/screen/alert/shoes/knotted)
 
 	else if(tied ==  SHOES_UNTIED)
 		var/wiser = TRUE // did we stumble and realize our laces are undone?
@@ -263,7 +263,7 @@
 				wiser = FALSE
 		if(wiser)
 			SEND_SIGNAL(our_guy, COMSIG_ADD_MOOD_EVENT, "untied", /datum/mood_event/untied) // well we realized they're untied now!
-			our_alert = our_guy.throw_alert("shoealert", /obj/screen/alert/shoes/untied)
+			our_alert = our_guy.throw_alert("shoealert", /atom/movable/screen/alert/shoes/untied)
 
 
 /obj/item/clothing/shoes/on_attack_hand(mob/living/user, act_intent, unarmed_attack_flags)

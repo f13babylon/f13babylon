@@ -4,7 +4,7 @@
 
 /datum/component/personal_crafting/proc/create_mob_button(mob/user)
 	var/datum/hud/H = user.hud_used
-	var/obj/screen/craft/C = new()
+	var/atom/movable/screen/craft/C = new()
 	C.icon = H.ui_style
 	H.static_inventory += C
 	user.client.screen += C
@@ -24,13 +24,13 @@
 					CAT_SCAVENGING,
 					CAT_FORGING,
 					CAT_TOOL,
-					CAT_ROBOT,
+					//CAT_ROBOT,
 				),
 				CAT_MISC = list(
 					CAT_FARMING,
 					CAT_MISCELLANEOUS,
-					CAT_FURNITURE,
-					CAT_BOTTLE,
+					//CAT_FURNITURE,
+					//CAT_BOTTLE,
 				),
 				CAT_PRIMAL = CAT_NONE,
 				CAT_FOOD = list(
@@ -45,15 +45,16 @@
 				),
 				CAT_CLOTHING = list(
 					CAT_GENCLOTHES,
-					CAT_SHOES,
-					CAT_MISCCLOTHING,
+					//CAT_SHOES,
+					//CAT_MISCCLOTHING,
 					CAT_ARMOR,
-					CAT_WASTELAND,
-					CAT_BELTS
+					CAT_ACCESSORIES,
+					//CAT_WASTELAND,
+					//CAT_BELTS
 				),
 				CAT_MEDICAL = CAT_NONE,
 				CAT_DRINK = CAT_NONE,
-				CAT_EXPLOSIVE = CAT_NONE,
+				//CAT_EXPLOSIVE = CAT_NONE,
 			)
 
 	var/cur_category = CAT_NONE
@@ -210,6 +211,12 @@
 			if(!check_tools(a, R, contents))
 				return ", missing tool."
 			var/list/parts = del_reqs(R, a)
+
+			if(ispath(R.result, /turf))
+				var/turf/T = usr.drop_location()
+				T.PlaceOnTop(R.result, flags = CHANGETURF_INHERIT_AIR)
+				return R.result
+
 			var/atom/movable/I = new R.result (get_turf(a.loc))
 			I.CheckParts(parts, R)
 			if(send_feedback)
@@ -340,7 +347,7 @@
 		Deletion.Cut(Deletion.len)
 		qdel(DL)
 
-/datum/component/personal_crafting/proc/component_ui_interact(obj/screen/craft/image, location, control, params, user)
+/datum/component/personal_crafting/proc/component_ui_interact(atom/movable/screen/craft/image, location, control, params, user)
 	if(user == parent)
 		ui_interact(user)
 
@@ -425,7 +432,7 @@
 			if(!istext(result)) //We made an item and didn't get a fail message
 				if(ismob(user) && isitem(result)) //In case the user is actually possessing a non mob like a machine
 					user.put_in_hands(result)
-				else
+				else if(!ispath(result, /turf))
 					result.forceMove(user.drop_location())
 				to_chat(user, "<span class='notice'>[TR.name] constructed.</span>")
 			else

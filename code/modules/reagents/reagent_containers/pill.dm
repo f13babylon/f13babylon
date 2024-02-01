@@ -217,10 +217,6 @@
 	list_reagents = list(/datum/reagent/mutationtoxin/shadow = 1)
 */
 //////////////////////////////////////// drugs
-/obj/item/reagent_containers/pill/zoom
-	name = "zoom pill"
-	list_reagents = list(/datum/reagent/medicine/synaptizine = 10, /datum/reagent/drug/nicotine = 10, /datum/reagent/drug/methamphetamine = 1)
-
 
 /obj/item/reagent_containers/pill/happy
 	name = "happy pill"

@@ -98,7 +98,7 @@
 		switch(choice)
 			if("5.56 FMJ")
 				to_chat(user, "You chose rifle rounds.")
-				new /obj/item/ammo_box/a556(drop_location)
+				new /obj/item/ammo_box/a556mmbox(drop_location)
 			if(".357 FMJ")
 				to_chat(user, "You chose magnum rounds.")
 				new /obj/item/ammo_box/a357box(drop_location)
@@ -143,14 +143,12 @@
 			"Beanbag" = image(icon = 'icons/obj/ammo.dmi', icon_state = "bbox"),
 			"5mm" = image(icon = 'icons/fallout/objects/guns/ammo.dmi', icon_state = "5mmbox"),
 			"mfc" = image(icon = 'icons/fallout/objects/powercells.dmi', icon_state = "mfc-full"),
-			"4.73mm" = image(icon = 'icons/fallout/objects/guns/ammo.dmi', icon_state = "ammobox"),
-			"Rubber 4.73mm" = image(icon = 'icons/fallout/objects/guns/ammo.dmi', icon_state = "ammobox")
 			)
 		var/list/choice = show_radial_menu(user, src, choices, custom_check = CALLBACK(src, PROC_REF(check_menu), user), require_near = TRUE)
 		switch(choice)
 			if("5.56 FMJ")
 				to_chat(user, "You chose rifle rounds.")
-				new /obj/item/ammo_box/a556(drop_location)
+				new /obj/item/ammo_box/a556mmbox(drop_location)
 			if(".357 FMJ")
 				to_chat(user, "You chose magnum rounds.")
 				new /obj/item/ammo_box/a357box(drop_location)
@@ -175,12 +173,6 @@
 			if("mfc")
 				to_chat(user, "You chose mfc.")
 				new /obj/item/stock_parts/cell/ammo/mfc(drop_location)
-			if("4.73mm")
-				to_chat(user, "You chose 4.73mm.")
-				new /obj/item/ammo_box/a473(drop_location)
-			if("Rubber 4.73mm")
-				to_chat(user, "You chose rubber 4.73mm.")
-				new /obj/item/ammo_box/a473/rubber(drop_location)
 			else
 				return
 		flick("research_key_off", src)

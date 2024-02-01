@@ -42,6 +42,7 @@
 	icon_state = "tube-construct-stage1"
 	anchored = TRUE
 	layer = WALL_OBJ_LAYER
+	plane = MOB_PLANE
 	max_integrity = 200
 	armor = list("melee" = 50, "bullet" = 10, "laser" = 10, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 50)
 
@@ -184,6 +185,7 @@
 	icon_state = "tube"
 	desc = "A lighting fixture."
 	layer = WALL_OBJ_LAYER
+	plane = MOB_PLANE
 	max_integrity = 100
 	use_power = ACTIVE_POWER_USE
 	idle_power_usage = 6
@@ -836,7 +838,8 @@
 	icon_state = "floor"
 	brightness = 5
 	nightshift_brightness = 4
-	layer = 2.5
+	layer = LOW_OBJ_LAYER
+	plane = GAME_PLANE
 	light_type = /obj/item/light/bulb
 	fitting = "bulb"
 
@@ -850,7 +853,6 @@
 	brightness = 8
 	active_power_usage = 0
 	density = 0
-	layer = WALL_OBJ_LAYER
 	nightshift_allowed = FALSE
 	start_with_cell = FALSE
 	no_emergency = TRUE
@@ -861,41 +863,29 @@
 
 //F13 COLORED LIGHTS
 /obj/machinery/light/fo13colored/Pink
-	name = "Arcade Light"
-	icon = 'icons/obj/lighting.dmi'
-	icon_state = "tube"
+	name = "pink light"
 	desc = "A lighting fixture with pink lighting."
 	nightshift_allowed = FALSE
 	no_emergency = TRUE
 	brightness = 5
-	density = 0
-	layer = WALL_OBJ_LAYER
 	bulb_colour = "#FF5ABF"
 	light_color = "#FF00FF"
 
 /obj/machinery/light/fo13colored/Aqua
-	name = "Novelty Store Light"
-	icon = 'icons/obj/lighting.dmi'
-	icon_state = "tube"
+	name = "green light"
 	desc = "A lighting fixture with green lighting."
 	nightshift_allowed = FALSE
 	no_emergency = TRUE
 	brightness = 5
-	density = 0
-	layer = WALL_OBJ_LAYER
 	bulb_colour = "#00FFFF"
 	light_color = "#00FFFF"
 
 /obj/machinery/light/fo13colored/Red
-	name = "Red Light"
-	icon = 'icons/obj/lighting.dmi'
-	icon_state = "tube"
+	name = "red light"
 	desc = "A lighting fixture with red lighting."
 	nightshift_allowed = FALSE
 	no_emergency = TRUE
-	brightness = 4
-	density = 0
-	layer = WALL_OBJ_LAYER
+	brightness = 5
 	bulb_colour = "#8B0000"
 	light_color = "#FF0000"
 

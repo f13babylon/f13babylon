@@ -395,6 +395,7 @@
 	name = "black cowboy boots"
 	desc = "A pair of black cowboy boots, pretty easy to scuff up."
 	icon_state = "cowboyboots_black"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/shoes/wallwalkers
 	name = "wall walking boots"

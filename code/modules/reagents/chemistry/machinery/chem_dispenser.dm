@@ -187,6 +187,10 @@
 		if(!ui)
 			ui = new(user, src, "ChemDispenser", name)
 			ui.open()
+	else if(issilicon(user))
+		if(!ui)
+			ui = new(user, src, "ChemDispenser", name)
+			ui.open()
 	else
 		if(!user.IsAdvancedToolUser() && !istype(src, /obj/machinery/chem_dispenser/drinks))
 			to_chat(user, "<span class='warning'>The legion has no use for drugs! Better to destroy it.</span>")

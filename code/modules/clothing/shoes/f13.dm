@@ -13,24 +13,28 @@
 	clothing_flags = NOSLIP
 	icon_state = "boots_enclave"
 	item_state = "boots_enclave"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/shoes/f13/rag
 	name = "footcloths"
 	desc = "Ripped cloth used as improvised foot strips, instead of shoes. Crude and gets dirty fast."
 	icon_state = "rag"
 	item_state = "rag"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/shoes/f13/tan
 	name = "tan shoes"
 	desc = "A pair of tanned leather shoes."
 	icon_state = "tan"
 	item_state = "tan"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/shoes/f13/brownie //Make a craft recipe, and delete this comment.
 	name = "brown shoes"
 	desc = "A pair of brown leather shoes made of wasteland animals hides."
 	icon_state = "brownie"
 	item_state = "brownie"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/shoes/f13/fancy
 	name = "black shoes"
@@ -55,6 +59,7 @@
 	desc = "A decrepit boot on one foot, fuckall on the other, the height of raider fashion."
 	icon_state = "raidertreads"
 	item_state = "raidertreads"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/shoes/f13/diesel
 	name = "male diesel boots"
@@ -64,12 +69,14 @@
 	armor = list("melee" = 10, "bullet" = 10, "laser" = 0, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
 	cold_protection = FEET
 	min_cold_protection_temperature = SHOES_MIN_TEMP_PROTECT
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/shoes/f13/diesel/alt
 	name = "female diesel boots"
 	desc = "Fancy womens' knee-high platform boots with shiny steel clasps."
 	icon_state = "diesel_f"
 	item_state = "diesel_f"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/shoes/f13/military
 	name = "military boots"
@@ -84,17 +91,19 @@
 	cold_protection = FEET
 	min_cold_protection_temperature = SHOES_MIN_TEMP_PROTECT
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/shoes
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/shoes/f13/military/leather
 	name = "leather combat boots"
 	desc = "A pair of laced, heavy-duty leather boots designed for hard combat."
 	icon_state = "laced"
 	item_state = "laced"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/shoes/f13/military/desert
 	name = "desert combat boots"
 	desc = "An old pair of desert combat boots. This one seems to have a tighter fit, and a padded interior."
-	icon_state = "erin_boot"
+	icon_state = "laced"
 	item_state = "erin_boot"
 
 /obj/item/clothing/shoes/f13/military/oldserviceboots
@@ -102,12 +111,14 @@
 	desc = "Tall kevlar boots, visibly weathered and worn-down."
 	icon_state = "boots_enclave"
 	item_state = "boots_enclave"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/shoes/f13/military/ncr
 	name = "patrol boots"
 	desc = "A pair of standard issue brown boots, with a puttee."
 	icon_state = "ncr_boots"
 	item_state = "ncr"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/shoes/f13/military/ncr/sturdy
 	name = "sturdy patrol boots"
@@ -122,6 +133,7 @@
 	desc = "A pair of well-polished brown leather calf boots fitted with straps."
 	icon_state = "ncr_officer_boots"
 	item_state = "ncr_officer_boots"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 
 /obj/item/clothing/shoes/roman
@@ -135,6 +147,7 @@
 	equip_delay_other = 100
 	permeability_coefficient = 0.9
 	can_be_tied = FALSE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/shoes/f13/peltboots
 	name = "pelt boots"
@@ -145,6 +158,7 @@
 	item_state = "legion_pelt"
 	cold_protection = FEET
 	min_cold_protection_temperature = SHOES_MIN_TEMP_PROTECT
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/shoes/f13/military/legion
 	name = "rough leather boots"
@@ -153,6 +167,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/shoe.dmi'
 	icon_state = "legion_leather"
 	item_state = "legion_leather"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/shoes/f13/military/plated
 	name = "plated war boots"
@@ -163,6 +178,7 @@
 	item_state = "legion_war"
 	clothing_flags = NOSLIP
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/shoes/f13/military/legate
 	name = "heavy metal boots"
@@ -172,6 +188,7 @@
 	icon_state = "legion_legate"
 	item_state = "legion_legate"
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 20, "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 10, "fire" = 30, "acid" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 // ---------------------------------------------------------
 // Great Khan boots
@@ -185,6 +202,7 @@
 	item_state = "khan_boots"
 	armor = list(melee = 10, bullet = 10, laser = 5, energy = 10, bomb = 20, bio = 0, rad = 0, fire = 20, acid = 0)
 	var/boottoggled = FALSE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/shoes/f13/military/khanwar
 	name = "Khan raiding boots"
@@ -203,6 +221,7 @@
 	icon = 'icons/fallout/clothing/khans.dmi'
 	icon_state = "Gojishoes"
 	item_state = "Gojishoes"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/shoes/f13/military/khan/AltClick(mob/user)
 	. = ..()
@@ -242,6 +261,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/khaans.dmi'
 	icon_state = "khan_peltboots"
 	item_state = "khan_peltboots"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 
 
@@ -253,6 +273,7 @@
 	icon_state = "flippers"
 	item_state = "flippers"
 	clothing_flags = NOSLIP
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/shoes/f13/moon
 	name = "moon boots"
@@ -265,6 +286,7 @@
 	heat_protection = FEET
 	max_heat_protection_temperature = SHOES_MAX_TEMP_PROTECT
 	clothing_flags = NOSLIP
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/shoes/f13/doom
 	name = "mars boots"
@@ -277,6 +299,7 @@
 	heat_protection = FEET
 	max_heat_protection_temperature = SHOES_MAX_TEMP_PROTECT
 	clothing_flags = NOSLIP
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/shoes/f13/miner
 	name = "mining boots"
@@ -286,6 +309,7 @@
 	armor = list("melee" = 20, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	cold_protection = FEET
 	min_cold_protection_temperature = SHOES_MIN_TEMP_PROTECT
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/shoes/f13/jamrock
 	name = "Green Snakeskin Shoes"
@@ -295,6 +319,7 @@
 	armor = list("melee" = 20, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	cold_protection = FEET
 	min_cold_protection_temperature = SHOES_MIN_TEMP_PROTECT
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/shoes/f13/mutie
 	name = "super mutant sandals"

@@ -285,7 +285,7 @@
 
 		if(!path || path.len == 0) //No path, need a new one
 			//Try to produce a path to the target, and ignore airlocks to which it has access.
-			path = get_path_to(src, target.loc, /turf/proc/Distance_cardinal, 0, 30, id=access_card)
+			path = get_path_to(src, target, 30, id=access_card)
 			if(!bot_move(target))
 				add_to_ignore(target)
 				target = null
@@ -312,8 +312,6 @@
 		/obj/effect/decal/cleanable/greenglow,
 		/obj/effect/decal/cleanable/dirt,
 		/obj/effect/decal/cleanable/insectguts,
-		/obj/effect/decal/cleanable/semen,
-		/obj/effect/decal/cleanable/semen/femcum,
 		/obj/effect/decal/cleanable/generic,
 		/obj/effect/decal/cleanable/glass,,
 		/obj/effect/decal/cleanable/cobweb,

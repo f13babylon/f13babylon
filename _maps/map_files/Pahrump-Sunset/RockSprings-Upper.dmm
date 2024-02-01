@@ -714,14 +714,6 @@
 	},
 /turf/open/floor/wood/wood_wide,
 /area/f13/building)
-"fg" = (
-/obj/structure/bed/old,
-/obj/effect/spawner/lootdrop/bedsheet,
-/obj/structure/sign/poster/contraband/pinup_anthro8{
-	pixel_y = 32
-	},
-/turf/open/floor/wood/wood_fancy,
-/area/f13/building)
 "fh" = (
 /obj/structure/closet/cabinet{
 	anchored = 1
@@ -794,9 +786,6 @@
 /obj/item/poster/random_contraband,
 /obj/item/poster/random_contraband,
 /obj/item/poster/random_contraband,
-/obj/structure/sign/poster/contraband/pinup_anthro3{
-	pixel_x = 32
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common/wood_common_light,
 /area/f13/building)
@@ -856,16 +845,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_mosaic,
-/area/f13/building)
-"ge" = (
-/obj/structure/sign/poster/contraband/pinup_anthro15,
-/turf/closed/indestructible/riveted{
-	desc = "A heavily reinforced utility tunnel  wall. You doubt anything short of a nuke would break it.";
-	icon = 'icons/fallout/turfs/walls/tunnel.dmi';
-	icon_state = "tunnel0";
-	icon_type_smooth = "tunnel";
-	name = "Reinforced utility tunnel"
-	},
 /area/f13/building)
 "gi" = (
 /turf/open/transparent/openspace,
@@ -1460,7 +1439,7 @@
 "jL" = (
 /obj/structure/table/wood,
 /obj/item/weapon/maptool,
-/turf/open/floor/plating/f13/inside/gravel,
+/turf/open/indestructible/ground/outside/gravel,
 /area/f13/wasteland/rocksprings)
 "jN" = (
 /obj/machinery/light/small/broken{
@@ -1596,16 +1575,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
-	},
-/area/f13/building)
-"kF" = (
-/obj/structure/sign/poster/contraband/pinup_anthro2,
-/turf/closed/indestructible/riveted{
-	desc = "A heavily reinforced utility tunnel  wall. You doubt anything short of a nuke would break it.";
-	icon = 'icons/fallout/turfs/walls/tunnel.dmi';
-	icon_state = "tunnel0";
-	icon_type_smooth = "tunnel";
-	name = "Reinforced utility tunnel"
 	},
 /area/f13/building)
 "kI" = (
@@ -2217,9 +2186,6 @@
 /obj/structure/closet/crate/footchest,
 /obj/effect/spawner/lootdrop/techstorage/engineering,
 /obj/item/integrated_circuit_printer,
-/obj/structure/sign/poster/contraband/pinup_anthro4{
-	pixel_y = 32
-	},
 /turf/open/floor/wood/wood_common/wood_common_light,
 /area/f13/building)
 "oB" = (
@@ -2300,9 +2266,6 @@
 /obj/item/integrated_circuit/logic/binary/greater_than{
 	pixel_x = -4;
 	pixel_y = 9
-	},
-/obj/structure/sign/poster/contraband/pinup_anthro6{
-	pixel_x = -32
 	},
 /turf/open/floor/wood/wood_common/wood_common_light,
 /area/f13/building)
@@ -2731,9 +2694,7 @@
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/legion)
 "rQ" = (
-/obj/structure/railing{
-	layer = 4.1
-	},
+/obj/structure/railing,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/legion)
 "rU" = (
@@ -2782,10 +2743,6 @@
 /obj/structure/chair/stool,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
-/area/f13/legion)
-"sq" = (
-/obj/structure/wreck/trash/machinepiletwo,
-/turf/open/floor/f13/wood,
 /area/f13/legion)
 "sy" = (
 /obj/effect/turf_decal/trimline/neutral/line{
@@ -2899,7 +2856,6 @@
 /turf/open/transparent/openspace,
 /area/f13/wasteland/rocksprings)
 "tl" = (
-/obj/effect/spawner/lootdrop/trash,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_wide{
 	icon_state = "wide-broken2"
@@ -3140,10 +3096,6 @@
 /obj/item/paper_bin,
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/legion)
-"uT" = (
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/f13/wood,
-/area/f13/legion)
 "uW" = (
 /obj/structure/railing/corner,
 /turf/open/transparent/openspace,
@@ -3317,11 +3269,11 @@
 /obj/machinery/porta_turret/syndicate/vehicle_turret{
 	desc = "An improvised ballistic turret - it looks exceptionally shoddy, yet stil functional. Safe to assume it's a repaired security system from whatever this place once was";
 	faction = list("raider");
-	lethal_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	lethal_projectile = /obj/item/projectile/bullet/a762mm/simple/ap;
 	lethal_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	name = "Repaired Turret";
 	scan_range = 9;
-	stun_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	stun_projectile = /obj/item/projectile/bullet/a762mm/simple/ap;
 	stun_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	throw_range = 9
 	},
@@ -3662,7 +3614,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "xN" = (
-/obj/item/ingot/adamantine,
+/obj/item/ingot/saturnite,
 /obj/structure/showcase/horrific_experiment,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
@@ -4029,7 +3981,7 @@
 "Az" = (
 /obj/structure/table/wood,
 /obj/item/binoculars,
-/turf/open/floor/plating/f13/inside/gravel,
+/turf/open/indestructible/ground/outside/gravel,
 /area/f13/wasteland/rocksprings)
 "AB" = (
 /obj/structure/rack/shelf_metal,
@@ -4039,9 +3991,6 @@
 	},
 /area/f13/building)
 "AE" = (
-/obj/structure/sign/poster/contraband/pinup_anthro6{
-	pixel_x = -32
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_fancy,
 /area/f13/building)
@@ -4158,9 +4107,6 @@
 /obj/structure/curtain{
 	color = "#363636";
 	pixel_y = 32
-	},
-/obj/structure/sign/poster/contraband/pinup_anthro14{
-	pixel_x = 32
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -4382,16 +4328,6 @@
 	dir = 8
 	},
 /turf/open/transparent/openspace,
-/area/f13/building)
-"Dn" = (
-/obj/structure/sign/poster/contraband/pinup_anthro10,
-/turf/closed/indestructible/riveted{
-	desc = "A heavily reinforced utility tunnel  wall. You doubt anything short of a nuke would break it.";
-	icon = 'icons/fallout/turfs/walls/tunnel.dmi';
-	icon_state = "tunnel0";
-	icon_type_smooth = "tunnel";
-	name = "Reinforced utility tunnel"
-	},
 /area/f13/building)
 "Dq" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -4897,9 +4833,7 @@
 	},
 /area/f13/building)
 "JQ" = (
-/obj/structure/railing{
-	layer = 4.1
-	},
+/obj/structure/railing,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/legion)
@@ -5011,20 +4945,13 @@
 /mob/living/simple_animal/hostile/renegade/grunt,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"Kw" = (
-/obj/structure/wreck/trash/machinepile,
-/turf/open/floor/f13/wood,
-/area/f13/legion)
 "Ky" = (
 /obj/structure/bed/wooden,
 /obj/effect/spawner/lootdrop/bedsheet,
-/obj/structure/sign/poster/contraband/pinup_anthro14{
-	pixel_y = 32
-	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "Kz" = (
-/turf/open/floor/plating/f13/inside/gravel,
+/turf/open/indestructible/ground/outside/gravel,
 /area/f13/wasteland/rocksprings)
 "KA" = (
 /obj/structure/railing{
@@ -5062,7 +4989,7 @@
 /area/f13/wasteland/rocksprings)
 "KI" = (
 /obj/structure/table/reinforced,
-/obj/item/ingot/adamantine,
+/obj/item/ingot/saturnite,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	baseturfs = /turf/open/indestructible/ground/outside/sidewalk;
 	name = "metal plating"
@@ -5864,7 +5791,6 @@
 /area/f13/building)
 "QD" = (
 /obj/machinery/button/flasher{
-	id = null;
 	pixel_x = -8;
 	pixel_y = 9
 	},
@@ -6523,16 +6449,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/legion)
-"Vl" = (
-/obj/structure/sign/poster/contraband/pinup_anthro4,
-/turf/closed/indestructible/riveted{
-	desc = "A heavily reinforced utility tunnel  wall. You doubt anything short of a nuke would break it.";
-	icon = 'icons/fallout/turfs/walls/tunnel.dmi';
-	icon_state = "tunnel0";
-	icon_type_smooth = "tunnel";
-	name = "Reinforced utility tunnel"
-	},
-/area/f13/building)
 "Vm" = (
 /obj/structure/fluff/railing{
 	dir = 4
@@ -6615,10 +6531,6 @@
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/highmid,
 /turf/open/floor/wood/wood_wide,
-/area/f13/building)
-"VX" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood/wood_fancy,
 /area/f13/building)
 "Wa" = (
 /obj/structure/bed/mattress/pregame,
@@ -10466,7 +10378,7 @@ DH
 DH
 DH
 DH
-Wr
+DH
 DH
 DH
 DH
@@ -19824,11 +19736,11 @@ TS
 TS
 TS
 pR
-uT
 Va
-sq
+Va
+xy
 se
-Kw
+Va
 bZ
 Wi
 UL
@@ -20082,10 +19994,10 @@ wE
 wE
 wE
 Va
-uT
-Kw
-uT
-xy
+Va
+Va
+Va
+Va
 wS
 Wi
 UL
@@ -20339,10 +20251,10 @@ Eg
 Eg
 Zh
 Va
-uT
 Va
 Va
-uT
+Va
+Va
 bZ
 Wi
 UL
@@ -20852,11 +20764,11 @@ gi
 gi
 gi
 fz
-sq
-uT
 Va
-uT
-Kw
+Va
+Va
+Va
+xy
 bZ
 Wi
 UL
@@ -21109,11 +21021,11 @@ gi
 gi
 gi
 fz
-Kw
 Va
 Va
-uT
-xy
+Va
+Va
+Va
 bZ
 Wi
 UL
@@ -21623,11 +21535,11 @@ gi
 gi
 gi
 fz
-sq
-uT
 Va
 Va
-uT
+Va
+Va
+Va
 bZ
 Wi
 UL
@@ -21882,9 +21794,9 @@ gi
 fz
 xy
 Va
-uT
 Va
 Va
+xy
 wS
 Wi
 UL
@@ -22137,11 +22049,11 @@ gi
 gi
 gi
 fz
-uT
 Va
-uT
 Va
-uT
+Va
+Va
+Va
 bZ
 Wi
 UL
@@ -55804,7 +55716,7 @@ DH
 DH
 eN
 wv
-fg
+jX
 tz
 uz
 wv
@@ -56063,7 +55975,7 @@ CA
 dL
 fo
 vN
-VX
+AE
 JO
 lL
 MD
@@ -57090,8 +57002,8 @@ DH
 CA
 jO
 bA
-VX
-VX
+AE
+AE
 JO
 DV
 yH
@@ -68743,11 +68655,11 @@ DH
 DH
 DH
 DH
-kF
+OI
 dm
-Vl
+OI
 dm
-Dn
+OI
 dm
 PP
 kQ
@@ -69005,7 +68917,7 @@ iC
 OI
 dK
 OI
-ge
+OI
 PP
 PP
 PP

@@ -119,9 +119,13 @@ also: most hitscan weapons have more charge than their normal projectile counter
 	e_cost = 80 //20 shots
 	fire_sound = 'sound/f13weapons/aep7fire.ogg'
 
-/obj/item/ammo_casing/energy/laser/pistol/hitscan //25 damage per, with 0 near 0 AP-4 shot crit on unarmored target, significantly less useful against armored
+/obj/item/ammo_casing/energy/laser/pistol/hitscan
 	projectile_type = /obj/item/projectile/beam/laser/pistol/hitscan
-	e_cost = 53.33 //30 shots, as per FNV
+	e_cost = 80 //20 shots
+
+/obj/item/ammo_casing/energy/laser/pistol/hitscan/pewpew
+	projectile_type = /obj/item/projectile/beam/laser/pistol/hitscan/pewpew
+	e_cost = 600 //2 shots
 
 /obj/item/ammo_casing/energy/laser/ultra_pistol
 	projectile_type = /obj/item/projectile/beam/laser/ultra_pistol
@@ -172,6 +176,10 @@ also: most hitscan weapons have more charge than their normal projectile counter
 /obj/item/ammo_casing/energy/laser/lasgun/hitscan
 	projectile_type = /obj/item/projectile/beam/laser/lasgun/hitscan
 	e_cost = 80 //25 shots, as per FNV
+
+/obj/item/ammo_casing/energy/laser/lasgun/hitscan/musket
+	e_cost = 1 //The cell only holds 1 shot.
+
 
 /obj/item/ammo_casing/energy/laser/lasgun/hitscan/focused
 	projectile_type = /obj/item/projectile/beam/laser/lasgun/hitscan/focused

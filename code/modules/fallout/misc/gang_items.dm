@@ -180,7 +180,7 @@
 	name = "Uzi"
 	id = "uzi"
 	cost = 300
-	item_path = /obj/effect/spawner/bundle/f13/miniuzi
+	item_path = /obj/effect/spawner/bundle/f13/uzi
 
 /datum/gang_item/weapon/type17
 	name = "Type 17 Pistol"
@@ -193,7 +193,7 @@
 	desc = "Imported but still great."
 
 /obj/item/storage/box/bundletype17kit/PopulateContents()
-	new /obj/item/ammo_box/magazine/m10mm_adv/simple(src)
+	new /obj/item/ammo_box/magazine/m10mm(src)
 	new /obj/item/gun/ballistic/automatic/pistol/type17(src)
 
 /datum/gang_item/weapon/ninemil
@@ -213,20 +213,6 @@
 	id = "varmints"
 	cost = 110
 	item_path = /obj/effect/spawner/bundle/f13/varmint
-
-/datum/gang_item/weapon/type93
-	name = "Worn Type 93"
-	id = "worntype93"
-	cost = 250
-	item_path = /obj/item/storage/box/bundletype93kit
-
-/obj/item/storage/box/bundletype93kit
-	name = "type 93 kit"
-	desc = "Rule the wasteland, one bullet at a time."
-
-/obj/item/storage/box/bundletype93kit/PopulateContents()
-	new /obj/item/gun/ballistic/automatic/type93/worn(src)
-	new /obj/item/ammo_box/magazine/m556/rifle(src)
 
 /datum/gang_item/weapon/energylow
 	name = "Unknown Energy Gun"
@@ -378,7 +364,7 @@
 	desc = "Rule the underworld like the Den Mob of old."
 
 /obj/item/storage/box/bundledenboss/PopulateContents()
-	new /obj/item/gun/ballistic/automatic/type93/worn(src)
+	new /obj/item/gun/ballistic/automatic/smg/thompson(src)
 	new /obj/item/reagent_containers/hypospray/medipen/medx(src)
 	new /obj/item/reagent_containers/hypospray/medipen/medx(src)
 	new /obj/item/reagent_containers/hypospray/medipen/medx(src)
@@ -418,9 +404,9 @@
 /obj/item/storage/box/bundleboss/PopulateContents()
 	new /obj/item/reagent_containers/hypospray/medipen/medx(src)
 	new /obj/item/reagent_containers/hypospray/medipen/psycho(src)
-	new /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/raider(src)
+	new /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d/raider(src)
 	new /obj/item/gun/ballistic/shotgun/automatic/combat/citykiller(src)
-	new /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/raider(src)
+	new /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d/raider(src)
 	new /obj/item/ammo_box/shotgun/slug(src)
 
 
@@ -436,7 +422,7 @@
 
 /obj/item/storage/box/bundlegunner/PopulateContents()
 	new /obj/item/gun/ballistic/automatic/smg/greasegun(src)
-	new /obj/item/ammo_box/magazine/greasegun(src)
+	new /obj/item/ammo_box/magazine/mgreasegun(src)
 	new /obj/item/clothing/head/helmet/armyhelmet(src)
 	new /obj/item/storage/belt(src)
 	new /obj/item/clothing/under/f13/army(src)
@@ -465,7 +451,6 @@
 	icon_state = "gun_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/thatgun,
 				/obj/effect/spawner/bundle/f13/huntingshotgun,
-				/obj/effect/spawner/bundle/f13/m1carbine,
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/gang/lowmid
@@ -473,7 +458,6 @@
 	icon_state = "gun_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/cowboy,
 				/obj/effect/spawner/bundle/f13/trenchshotgun,
-				/obj/effect/spawner/bundle/f13/m1carbine,
 				/obj/effect/spawner/bundle/f13/huntingshotgun,
 		)
 
@@ -482,7 +466,7 @@
 	icon_state = "gun_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/trail,
 				/obj/effect/spawner/bundle/f13/service,
-				/obj/effect/spawner/bundle/f13/miniuzi,
+				/obj/effect/spawner/bundle/f13/uzi,
 				/obj/effect/spawner/bundle/f13/auto5,
 				/obj/effect/spawner/bundle/f13/marksman,
 				/obj/effect/spawner/bundle/f13/m1garand,

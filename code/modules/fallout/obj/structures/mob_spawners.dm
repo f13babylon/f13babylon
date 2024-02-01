@@ -53,7 +53,7 @@
 	if(LAZYLEN(targeted_by)) // Don't let multiple people cover at the same time.
 		to_chat(user, span_warning("Someone's already covering \the [src]!"))
 		return TRUE
-	if(cover_stack.amount < 4)
+	if(cover_stack.get_amount() < 4)
 		to_chat(user, span_warning("You need four [cover_stack.singular_name]\s in order to cover \the [src]!"))
 		return TRUE
 	if(INTERACTING_WITH(user, src))

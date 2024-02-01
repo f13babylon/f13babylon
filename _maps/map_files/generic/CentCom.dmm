@@ -1227,11 +1227,11 @@
 	},
 /obj/machinery/computer/arcade/orion_trail{
 	desc = "A test for cadets";
-	events = list("Raiders" = 3, "Interstellar Flux" = 1, "Illness" = 3, "Breakdown" = 2, "Malfunction" = 2, "Collision" = 1, "Spaceport" = 2);
+	events = list("Raiders"=3,"Interstellar Flux"=1,"Illness"=3,"Breakdown"=2,"Malfunction"=2,"Collision"=1,"Spaceport"=2);
 	icon = 'icons/obj/machines/particle_accelerator.dmi';
 	icon_state = "control_boxp";
 	name = "Kobayashi Maru control computer";
-	prizes = list(/obj/item/paper/fluff/holodeck/trek_diploma = 1);
+	prizes = list(/obj/item/paper/fluff/holodeck/trek_diploma=1);
 	settlers = list("Kirk","Worf","Gene")
 	},
 /turf/open/floor/holofloor/plating,
@@ -1253,11 +1253,11 @@
 	},
 /obj/machinery/computer/arcade/orion_trail{
 	desc = "A test for cadets";
-	events = list("Raiders" = 3, "Interstellar Flux" = 1, "Illness" = 3, "Breakdown" = 2, "Malfunction" = 2, "Collision" = 1, "Spaceport" = 2);
+	events = list("Raiders"=3,"Interstellar Flux"=1,"Illness"=3,"Breakdown"=2,"Malfunction"=2,"Collision"=1,"Spaceport"=2);
 	icon = 'icons/obj/machines/particle_accelerator.dmi';
 	icon_state = "control_boxp";
 	name = "Kobayashi Maru control computer";
-	prizes = list(/obj/item/paper/fluff/holodeck/trek_diploma = 1);
+	prizes = list(/obj/item/paper/fluff/holodeck/trek_diploma=1);
 	settlers = list("Kirk","Worf","Gene")
 	},
 /turf/open/floor/holofloor/plating,
@@ -1268,11 +1268,11 @@
 	},
 /obj/machinery/computer/arcade/orion_trail{
 	desc = "A test for cadets";
-	events = list("Raiders" = 3, "Interstellar Flux" = 1, "Illness" = 3, "Breakdown" = 2, "Malfunction" = 2, "Collision" = 1, "Spaceport" = 2);
+	events = list("Raiders"=3,"Interstellar Flux"=1,"Illness"=3,"Breakdown"=2,"Malfunction"=2,"Collision"=1,"Spaceport"=2);
 	icon = 'icons/obj/machines/particle_accelerator.dmi';
 	icon_state = "control_boxp";
 	name = "Kobayashi Maru control computer";
-	prizes = list(/obj/item/paper/fluff/holodeck/trek_diploma = 1);
+	prizes = list(/obj/item/paper/fluff/holodeck/trek_diploma=1);
 	settlers = list("Kirk","Worf","Gene")
 	},
 /turf/open/floor/holofloor/plating,
@@ -5436,7 +5436,7 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/evac)
 "sE" = (
-/turf/open/floor/plating/f13/inside/mountain,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tcoms)
 "sF" = (
 /obj/structure/cable/white{
@@ -5448,7 +5448,7 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/turf/open/floor/plating/f13/inside/mountain,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tcoms)
 "sH" = (
 /obj/machinery/power/apc{
@@ -6939,7 +6939,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/open/floor/plating/f13/inside/mountain,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tcoms)
 "yr" = (
 /obj/machinery/light/small/broken{
@@ -7245,11 +7245,6 @@
 "AW" = (
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel,
-/area/centcom/evac)
-"AX" = (
-/obj/structure/table/wood,
-/obj/effect/spawner/lootdrop/clothing_legend,
-/turf/open/floor/wood,
 /area/centcom/evac)
 "AY" = (
 /obj/machinery/light,
@@ -7858,7 +7853,7 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/turf/open/floor/plating/f13/inside/mountain,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tcoms)
 "Gb" = (
 /obj/effect/turf_decal/stripes/corner{
@@ -7889,7 +7884,7 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/turf/open/floor/plating/f13/inside/mountain,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tcoms)
 "Gu" = (
 /obj/structure/destructible/tribal_torch/lit,
@@ -7913,7 +7908,7 @@
 /obj/machinery/light_switch{
 	pixel_y = -25
 	},
-/turf/open/floor/plating/f13/inside/mountain,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tcoms)
 "GB" = (
 /obj/machinery/camera{
@@ -7921,7 +7916,7 @@
 	dir = 8;
 	network = list("mine")
 	},
-/turf/open/floor/plating/f13/inside/mountain,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tcoms)
 "GG" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{
@@ -7958,7 +7953,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plating/f13/inside/mountain,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tcoms)
 "Hl" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -7971,7 +7966,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plating/f13/inside/mountain,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tcoms)
 "Hq" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7995,7 +7990,7 @@
 	pixel_y = -32
 	},
 /obj/machinery/light,
-/turf/open/floor/plating/f13/inside/mountain,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tcoms)
 "HB" = (
 /obj/effect/decal/cleanable/dirt,
@@ -45389,7 +45384,7 @@ jU
 Ao
 nB
 nB
-AX
+Ao
 jU
 rb
 aa

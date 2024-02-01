@@ -83,7 +83,90 @@
 			. += span_warning("It seems activated!")
 
 
+/obj/item/signal_bomb
+	name = "bottlecap signaller mine"
+	desc = "This bottlecap mine appears to have an antenna attached, a blinking light next to it. It appears to be able to be remote activated."
+	w_class = 2
+	icon = 'icons/fallout/objects/crafting.dmi'
+	icon_state = "capmine"
+	item_state = "capmine"
+	throw_speed = 1
+	throw_range = 0
+//	flags = CONDUCT
+	resistance_flags = FLAMMABLE
+	obj_integrity = 80
+	max_integrity = 80
+	var/is_active = FALSE
+	layer = 10
 
+	var/code = 2
+	var/frequency = FREQ_ELECTROPACK
+	var/on = TRUE
+
+/obj/item/signal_bomb/receive_signal(datum/signal/signal)
+	if(!signal || signal.data["code"] != code || is_active)
+		return
+	playsound(src, 'sound/machines/triple_beep.ogg', 75)
+	is_active = TRUE
+	icon_state = initial(icon_state) + "_active"
+	item_state = initial(item_state) + "_active"
+	var/mob/living/carbon/M = loc
+	addtimer(CALLBACK(src, .proc/boom, M), 20)
+
+/obj/item/signal_bomb/proc/boom()
+	explosion(src.loc,0,2,3, flame_range = 6)
+
+/obj/item/signal_bomb/proc/set_frequency(new_frequency)
+	SSradio.remove_object(src, frequency)
+	frequency = new_frequency
+	SSradio.add_object(src, frequency, RADIO_SIGNALER)
+
+/obj/item/signal_bomb/ui_state(mob/user)
+	return GLOB.hands_state
+
+/obj/item/signal_bomb/ui_interact(mob/user, datum/tgui/ui)
+	ui = SStgui.try_update_ui(user, src, ui)
+	if(!ui)
+		ui = new(user, src, "Electropack", name)
+		ui.open()
+
+/obj/item/signal_bomb/ui_data(mob/user)
+	var/list/data = list()
+	data["power"] = on
+	data["frequency"] = frequency
+	data["code"] = code
+	data["minFrequency"] = MIN_FREE_FREQ
+	data["maxFrequency"] = MAX_FREE_FREQ
+	return data
+
+/obj/item/signal_bomb/ui_act(action, params)
+	if(..())
+		return
+
+	switch(action)
+		if("power")
+			on = !on
+			icon_state = "electropack[on]"
+			. = TRUE
+		if("freq")
+			var/value = unformat_frequency(params["freq"])
+			if(value)
+				frequency = sanitize_frequency(value, TRUE)
+				set_frequency(frequency)
+				. = TRUE
+		if("code")
+			var/value = text2num(params["code"])
+			if(value)
+				value = round(value)
+				code = clamp(value, 1, 100)
+				. = TRUE
+		if("reset")
+			if(params["reset"] == "freq")
+				frequency = initial(frequency)
+				. = TRUE
+			else if(params["reset"] == "code")
+				code = initial(code)
+				. = TRUE
 
 /obj/item/grenade/plastic/c4/New()
 	wires = new /datum/wires/explosive/c4(src)

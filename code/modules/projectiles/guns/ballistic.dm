@@ -4,7 +4,7 @@
 	icon_state = "pistol"
 	w_class = WEIGHT_CLASS_NORMAL
 	var/spawnwithmagazine = TRUE
-	var/mag_type = /obj/item/ammo_box/magazine/m10mm_adv //Removes the need for max_ammo and caliber info
+	var/mag_type = /obj/item/ammo_box/magazine/m10mm //Removes the need for max_ammo and caliber info
 	var/init_mag_type = null
 	var/obj/item/ammo_box/magazine/magazine
 	var/casing_ejector = TRUE //whether the gun ejects the chambered casing
@@ -12,6 +12,14 @@
 	var/en_bloc = 0
 	/// Which direction do the casings fly out?
 	var/handedness = GUN_EJECTOR_RIGHT
+
+	//Gun sound variables for flavor. These control sounds. Want a gun to have a unique sound? Use a variable, replace the default sound.
+	var/insert_sound = 'sound/weapons/guns/insert_shell_casing.ogg'				//Plays when inserting bullet into internal-loading gun.
+	var/chamber_sound = 'sound/weapons/gun_chamber_round.ogg'					//Plays when taking bullets in and out of the chamber.
+	var/unload_sound = 'sound/weapons/guns/pistol_magout.ogg'					//Plays when unloading magazine from weapon.
+	var/reload_sound = 'sound/weapons/guns/pistol_magin.ogg'					//Plays when shoving a magazine into the weapon.
+	var/reload_sound_empty = 'sound/weapons/gun_magazine_remove_empty_1.ogg'	//Snowflake one to keep the empty reload sound.
+	var/gun_slide = 'sound/weapons/guns/slide_pistol.ogg'						//Plays when bullet enters chamber of gun.
 
 /obj/item/gun/ballistic/Initialize(mapload)
 	. = ..()
@@ -64,7 +72,7 @@
 		var/num_loaded = magazine.attackby(A, user, params, 1)
 		if(num_loaded)
 			to_chat(user, "<span class='notice'>You load [num_loaded] shell\s into \the [src]!</span>")
-			playsound(user, 'sound/weapons/shotguninsert.ogg', 60, 1)
+			playsound(user, insert_sound, 60, 1)
 			A.update_icon()
 			update_icon()
 			chamber_round(0)
@@ -75,12 +83,12 @@
 				magazine = AM
 				to_chat(user, "<span class='notice'>You load a new magazine into \the [src].</span>")
 				if(magazine.ammo_count())
-					playsound(src, "gun_insert_full_magazine", 70, 1)
+					playsound(src, reload_sound, 70, 1)
 					if(!chambered)
 						chamber_round()
-						addtimer(CALLBACK(GLOBAL_PROC, PROC_REF(playsound), src, 'sound/weapons/gun_chamber_round.ogg', 100, 1), 3)
+						addtimer(CALLBACK(GLOBAL_PROC, .proc/playsound, src, chamber_sound, 100, 1), 3)
 				else
-					playsound(src, "gun_insert_empty_magazine", 70, 1)
+					playsound(src, reload_sound_empty, 70, 1)
 				A.update_icon()
 				update_icon()
 				return 1
@@ -142,10 +150,7 @@
 			magazine.forceMove(drop_location())
 			user.put_in_hands(magazine)
 			magazine.update_icon()
-			if(magazine.ammo_count())
-				playsound(src, 'sound/weapons/gun_magazine_remove_full.ogg', 70, 1)
-			else
-				playsound(src, "gun_remove_empty_magazine", 70, 1)
+			playsound(src, unload_sound, 70, 1)
 			magazine = null
 			to_chat(user, "<span class='notice'>You pull the magazine out of \the [src].</span>")
 	else if(chambered)
@@ -153,7 +158,7 @@
 		AC.bounce_away()
 		chambered = null
 		to_chat(user, "<span class='notice'>You unload the round from \the [src]'s chamber.</span>")
-		playsound(src, "gun_slide_lock", 70, 1)
+		playsound(src, gun_slide, 70, 1)
 	else
 		to_chat(user, "<span class='notice'>There's no magazine in \the [src].</span>")
 	update_icon()

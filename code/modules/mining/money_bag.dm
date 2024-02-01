@@ -24,7 +24,7 @@
 	new /obj/item/coin/silver(src)
 	new /obj/item/coin/gold(src)
 	new /obj/item/coin/gold(src)
-	new /obj/item/coin/adamantine(src)
+	new /obj/item/coin/saturnite(src)
 
 /obj/item/storage/bag/money/c5000/PopulateContents()
 	for(var/i = 0, i < 5, i++)

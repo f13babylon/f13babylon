@@ -144,6 +144,7 @@
 	item_state = "wastewar"
 	resistance_flags = FLAMMABLE
 	armor = list("melee" = 25, "bullet" = 5, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = -10, "acid" = 0, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 // Outlaw
 /obj/item/clothing/suit/toggle/armored/khanlight
@@ -161,6 +162,7 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 	heat_protection = CHEST | GROIN | LEGS| ARMS | HEAD
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 10, "energy" = 5, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 0, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armored/light/tribalraider
 	name = "tribal raider wear"
@@ -206,6 +208,7 @@
 	heat_protection = CHEST | GROIN | LEGS| ARMS | HEAD
 	siemens_coefficient = 1.1
 	armor = list("melee" = 15, "bullet" = 25, "laser" = 10, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armored/light/kit/punk
 	name = "armor kit"
@@ -305,6 +308,7 @@
 	icon_state = "towntrench"
 	item_state = "hostrench"
 	armor = list("melee" = 20, "bullet" = 15, "laser" = 10, "energy" = 0, "bomb" = 15, "bio" = 10, "rad" = 0, "fire" = 20, "acid" = 5, "wound" = 10)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armored/light/town/mayor
 	name = "mayor trenchcoat"
@@ -419,7 +423,8 @@
 	name = "deathclaw cloak"
 	icon_state = "deathclaw"
 	desc = "Made from the sinew and skin of the fearsome deathclaw, this cloak will shield its wearer from harm."
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 20, "energy" = 10, "bomb" = 40, "bio" = 20, "rad" = 20, "fire" = 40, "acid" = 10, "wound" = 10)
+	armor = list("melee" = 50, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 30)
+	slowdown = 0.06
 	hoodtype = /obj/item/clothing/head/hooded/cloakhood/deathclaw
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 
@@ -427,27 +432,43 @@
 	name = "deathclaw cloak hood"
 	icon_state = "hood_deathclaw"
 	desc = "A protective and concealing hood."
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 20, "energy" = 10, "bomb" = 40, "bio" = 20, "rad" = 20, "fire" = 40, "acid" = 10, "wound" = 10)
+	armor = list("melee" = 50, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 30)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
 
 /obj/item/clothing/suit/hooded/cloak/razorclaw
 	name = "razorclaw cloak"
 	icon_state = "razorclaw"
 	desc = "A suit of armour fashioned out of the remains of a legendary deathclaw."
-	armor = list("melee" = 45, "bullet" = 35, "laser" = 25, "energy" = 15, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 50, "acid" = 10, "wound" = 10)
+	armor = list("melee" = 55, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 35)
+	slowdown = 0.06
 	hoodtype = /obj/item/clothing/head/hooded/cloakhood/razorclaw
-	heat_protection = CHEST|GROIN|LEGS|ARMS|HANDS
-	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
-	resistance_flags = FIRE_PROOF | ACID_PROOF
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 
 /obj/item/clothing/head/hooded/cloakhood/razorclaw
 	name = "razorclaw helm"
 	icon_state = "helmet_razorclaw"
 	desc = "The skull of a legendary deathclaw."
-	armor = list("melee" = 45, "bullet" = 35, "laser" = 25, "energy" = 15, "bomb" = 50, "bio" = 30, "rad" = 25, "fire" = 50, "acid" = 10, "wound" = 10)
-	heat_protection = HEAD
-	resistance_flags = FIRE_PROOF | ACID_PROOF
+	armor = list("melee" = 55, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 35)
+	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
 
+//////////////////////////
+// BROTHERHOOD OF STEEL //
+//////////////////////////
+
+/obj/item/clothing/suit/armored/light/bos_scout
+	name = "brotherhood scout armour"
+	icon_state = "bos_scout"
+	item_state = "bos_scout"
+	desc = "A combat armor set made by the Brotherhood of Steel, standard issue for all Knights. This one has had its extra protective padding removed, making it lighter yet less durable."
+	armor = list("melee" = 30, "bullet" = 30, "laser" = 35, "energy" = 10, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 10)
+	slowdown = 0.05
+
+/obj/item/clothing/suit/armored/light/bos_scout/senior
+	name = "brotherhood senior scout armour"
+	icon_state = "bos_scout_senior"
+	item_state = "bos_scout_senior"
+	desc = "A reinfoed set of combat armor set made by the Brotherhood of Steel, standard issue for all senior knights. This one has had its extra protective padding removed, making it lighter yet less durable."
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 40, "energy" = 15, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 10)
 
 ///////////
 // MISC. //

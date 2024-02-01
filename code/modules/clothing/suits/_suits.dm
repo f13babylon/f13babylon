@@ -15,6 +15,7 @@
 	var/obj/item/clothing/armoraccessory/attached_accessory
 	var/mutable_appearance/accessory_overlay
 	var/dummy_thick = FALSE // is able to hold accessories on its item
+	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/Initialize(mapload)
 	. = ..()

@@ -14,6 +14,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	//non-preference stuff
 	var/muted = 0
+	var/age_verified = 0
 	var/last_ip
 	var/last_id
 	var/log_clicks = FALSE
@@ -313,6 +314,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			else
 				dat += "<b>Loading matchmaking preferences...</b><br>"
 				dat += "<b>Refresh once the game has finished setting up...</b><br>"
+			dat += "</td>"
+
+			dat += "<b>Profile Picture:</b><BR>"
+			dat += "<b>Picture:</b> <a href='?_src_=prefs;preference=ProfilePicture;task=input'>[profilePicture ? "<img src=[DiscordLink(profilePicture)] width='125' height='auto' max-height='300'>" : "Upload a picture!"]</a><BR>"
 			dat += "</td>"
 
 /*
@@ -1342,8 +1347,8 @@ Records disabled until a use for them is found
 				quirk_conflict = TRUE
 			if(has_quirk)
 				if(quirk_conflict)
-					to_chat(user, "<span class='danger'>Your quirks have conflicts and will <b>NOT</b> function! Correct them before closing the menu.</span>")	
-					isconflicting = TRUE	
+					to_chat(user, "<span class='danger'>Your quirks have conflicts and will <b>NOT</b> function! Correct them before closing the menu.</span>")
+					isconflicting = TRUE
 				else
 					quirk_cost *= -1 //invert it back, since we'd be regaining this amount
 			if(quirk_cost > 0)
@@ -1655,7 +1660,7 @@ Records disabled until a use for them is found
 								var/mob/dead/new_player/player_mob = parent.mob
 								player_mob.new_player_panel()
 						else
-							to_chat(user, "<font color='red'>Invalid name. Your name should be at least 2 and at most [MAX_NAME_LEN] characters long. It may only contain the characters A-Z, a-z, -, ' and .</font>")
+							to_chat(user, "<font color='red'>Invalid name. Your name should be at least 2 and at most [MAX_NAME_LEN] characters long. It may only contain the characters A-Z, a-z, 0-9, and certain symbols.</font>")
 
 				if("age")
 					var/new_age = input(user, "Choose your character's age:\n([AGE_MIN]-[AGE_MAX])", "Character Preference") as num|null
@@ -2090,7 +2095,7 @@ Records disabled until a use for them is found
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_taur_list[S.name] = path
 					var/new_taur
-					new_taur = input(user, "Choose your character's tauric body:", "Character Preference") as null|anything in snowflake_taur_list
+					new_taur = input(user, "Choose your character's extra bodyparts:", "Character Preference") as null|anything in snowflake_taur_list
 					if(new_taur)
 						features["taur"] = new_taur
 						if(new_taur != "None")
@@ -2435,7 +2440,7 @@ Records disabled until a use for them is found
 					// remove the specified marking
 					var/index = text2num(href_list["marking_index"])
 					var/marking_type = href_list["marking_type"]
-					if(index > 0 && marking_type && index < length(features[marking_type]))
+					if(index > 0 && marking_type && index <= length(features[marking_type]))
 						// because linters are just absolutely awful:
 						var/list/L = features[marking_type]
 						L.Cut(index, index + 1)
@@ -2800,11 +2805,11 @@ Records disabled until a use for them is found
 				if("ambientocclusion")
 					ambientocclusion = !ambientocclusion
 					if(parent && parent.screen && parent.screen.len)
-						var/obj/screen/plane_master/game_world/G = parent.mob.hud_used.plane_masters["[GAME_PLANE]"]
-						var/obj/screen/plane_master/objitem/OI = parent.mob.hud_used.plane_masters["[OBJITEM_PLANE]"]
-						var/obj/screen/plane_master/mob/M = parent.mob.hud_used.plane_masters["[MOB_PLANE]"]
-						var/obj/screen/plane_master/above_wall/A = parent.mob.hud_used.plane_masters["[ABOVE_WALL_PLANE]"]
-						var/obj/screen/plane_master/wall/W = parent.mob.hud_used.plane_masters["[WALL_PLANE]"]
+						var/atom/movable/screen/plane_master/game_world/G = parent.mob.hud_used.plane_masters["[GAME_PLANE]"]
+						var/atom/movable/screen/plane_master/objitem/OI = parent.mob.hud_used.plane_masters["[OBJITEM_PLANE]"]
+						var/atom/movable/screen/plane_master/mob/M = parent.mob.hud_used.plane_masters["[MOB_PLANE]"]
+						var/atom/movable/screen/plane_master/above_wall/A = parent.mob.hud_used.plane_masters["[ABOVE_WALL_PLANE]"]
+						var/atom/movable/screen/plane_master/wall/W = parent.mob.hud_used.plane_masters["[WALL_PLANE]"]
 						G.backdrop(parent.mob)
 						OI.backdrop(parent.mob)
 						M.backdrop(parent.mob)
@@ -3086,7 +3091,7 @@ Records disabled until a use for them is found
 	else
 		var/sanitized_name = reject_bad_name(raw_name,namedata["allow_numbers"])
 		if(!sanitized_name)
-			to_chat(user, "<font color='red'>Invalid name. Your name should be at least 2 and at most [MAX_NAME_LEN] characters long. It may only contain the characters A-Z, a-z,[namedata["allow_numbers"] ? ",0-9," : ""] -, ' and .</font>")
+			to_chat(user, "<font color='red'>Invalid name. Your name should be at least 2 and at most [MAX_NAME_LEN] characters long. It may only contain the characters A-Z, a-z, 0-9, and certain symbols.</font>")
 			return
 		else
 			custom_names[name_id] = sanitized_name

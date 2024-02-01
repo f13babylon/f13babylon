@@ -39,19 +39,24 @@ Uranium, Contaminated
 	name = ".22lr bullet"
 	damage = 12
 	wound_bonus = 6
+	var/dmg_dropoff_per_tile = 12 * 0.5 / 10	//In 10 tiles (roughly a screen and half away), it will lose half of its initial damage
+	var/stam_dropoff_per_tile = 0 * 0.5 / 10	//In 10 tiles (roughly a screen and half away), it will lose half of its initial stam damage
 
-/obj/item/projectile/bullet/c22/rubber
-	name = ".22lr rubber bullet"
-	damage = 2
-	stamina = 22
-	wound_bonus = 0
-	sharpness = SHARP_NONE
+/obj/item/projectile/bullet/c22/Range()
+	..()
+	if(damage > 0)
+		damage -= dmg_dropoff_per_tile
+	if(stamina > 0)
+		stamina -= stam_dropoff_per_tile
+	if(damage < 0 && stamina < 0)
+		qdel(src)
 
 /obj/item/projectile/bullet/c22/shock
 	name = ".22lr shock bullet"
 	damage = 8
 	wound_bonus = 0
 	sharpness = SHARP_NONE
+	dmg_dropoff_per_tile = 8 * 0.5 / 10
 
 /obj/item/projectile/bullet/c22/shock/on_hit(atom/target, blocked = FALSE)
 	..()
@@ -65,22 +70,28 @@ Uranium, Contaminated
 	name = ".38 bullet"
 	damage = 14
 	wound_bonus = 12
+	var/dmg_dropoff_per_tile = 14 * 0.5 / 10	//In 10 tiles (roughly a screen and half away), it will lose half of its initial damage
+	var/stam_dropoff_per_tile = 0 * 0.5 / 10	//In 10 tiles (roughly a screen and half away), it will lose half of its initial stam damage
 
-/obj/item/projectile/bullet/c38/rubber
-	name = ".38 rubber bullet"
-	damage = 4
-	stamina = 32
-	wound_bonus = 0
-	sharpness = SHARP_NONE
+/obj/item/projectile/bullet/c38/Range()
+	..()
+	if(damage > 0)
+		damage -= dmg_dropoff_per_tile
+	if(stamina > 0)
+		stamina -= stam_dropoff_per_tile
+	if(damage < 0 && stamina < 0)
+		qdel(src)
 
 /obj/item/projectile/bullet/c38/improv
 	damage = 12
+	dmg_dropoff_per_tile = 12 * 0.5 / 10
 
 /obj/item/projectile/bullet/c38/acid
 	name = ".38 acid-tipped bullet"
 	damage = 4
 	wound_bonus = 0
 	sharpness = SHARP_NONE
+	dmg_dropoff_per_tile = 4 * 0.5 / 10
 	var/acid_type = /datum/reagent/toxin/acid/fluacid
 
 /obj/item/projectile/bullet/c38/acid/Initialize(mapload)
@@ -99,6 +110,7 @@ Uranium, Contaminated
 /obj/item/projectile/bullet/c38/incendiary
 	name = ".38 incendiary bullet"
 	damage = 4
+	dmg_dropoff_per_tile = 4 * 0.5 / 10
 	var/fire_stacks = 1
 
 /obj/item/projectile/bullet/c38/incendiary/on_hit(atom/target, blocked = FALSE)
@@ -116,26 +128,32 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/c9mm
 	name = "9mm FMJ bullet"
-	damage = 16
+	damage = 15
 	wound_bonus = 10
+	var/dmg_dropoff_per_tile = 15 * 0.5 / 10	//In 10 tiles (roughly a screen and half away), it will lose half of its initial damage
+	var/stam_dropoff_per_tile = 0 * 0.5 / 10	//In 10 tiles (roughly a screen and half away), it will lose half of its initial stam damage
+
+/obj/item/projectile/bullet/c9mm/Range()
+	..()
+	if(damage > 0)
+		damage -= dmg_dropoff_per_tile
+	if(stamina > 0)
+		stamina -= stam_dropoff_per_tile
+	if(damage < 0 && stamina < 0)
+		qdel(src)
 
 /obj/item/projectile/bullet/c9mm/op
 	name = "9mm +P bullet"
 	damage = 18
+	dmg_dropoff_per_tile = 0
 	var/extra_speed = 500
-
-/obj/item/projectile/bullet/c9mm/rubber
-	name = "9mm rubber bullet"
-	damage = 6
-	stamina = 25
-	wound_bonus = 0
-	sharpness = SHARP_NONE
 
 /obj/item/projectile/bullet/c9mm/acid
 	name = "9mm acid-tipped bullet"
 	damage = 4
 	wound_bonus = 0
 	sharpness = SHARP_NONE
+	dmg_dropoff_per_tile = 4 * 0.5 / 10
 	var/acid_type = /datum/reagent/toxin/acid/fluacid
 
 /obj/item/projectile/bullet/c9mm/acid/Initialize(mapload)
@@ -153,6 +171,7 @@ Uranium, Contaminated
 /obj/item/projectile/bullet/c9mm/incendiary
 	name = "9mm incendiary bullet"
 	damage = 4
+	dmg_dropoff_per_tile = 4 * 0.5 / 10
 	var/fire_stacks = 1
 
 /obj/item/projectile/bullet/c9mm/incendiary/on_hit(atom/target, blocked = FALSE)
@@ -164,38 +183,46 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/c9mm/improv
 	damage = 14
+	dmg_dropoff_per_tile = 14 * 0.5 / 10
 
 /obj/item/projectile/bullet/c9mm/simple //for simple mobs, separate to allow balancing
 	name = "9mm bullet"
 	damage = 20
+	dmg_dropoff_per_tile = 20 * 0.5 / 10
 
 
 ///////////
 // 10 MM //
-///////////				-Medium round, wounding focus, guns in 10mm should have lower capacity
+///////////				-Medium round, wounding focus
 
 /obj/item/projectile/bullet/c10mm
 	name = "10mm FMJ bullet"
 	damage = 20
-	wound_bonus = 24
 	armour_penetration = 0.05
+	wound_bonus = 25
+	var/dmg_dropoff_per_tile = 20 * 0.25 / 10	//In 10 tiles (roughly a screen and half away), it will lose a quarter of its initial damage
+	var/stam_dropoff_per_tile = 0 * 0.25 / 10	//In 10 tiles (roughly a screen and half away), it will lose a quarter of its initial stam damage
+
+/obj/item/projectile/bullet/c10mm/Range()
+	..()
+	if(damage > 0)
+		damage -= dmg_dropoff_per_tile
+	if(stamina > 0)
+		stamina -= stam_dropoff_per_tile
+	if(damage < 0 && stamina < 0)
+		qdel(src)
 
 /obj/item/projectile/bullet/c10mm/simple
 	name = "10mm FMJ bullet"
 	damage = 20
-	armour_penetration = 0.1
-	wound_bonus = 24
-
-/obj/item/projectile/bullet/c10mm/rubber
-	name = "10mm rubber bullet"
-	damage = 8
-	stamina = 26
-	wound_bonus = 0
-	sharpness = SHARP_NONE
+	armour_penetration = 0.05
+	wound_bonus = 25
+	dmg_dropoff_per_tile = 0
 
 /obj/item/projectile/bullet/c10mm/incendiary
 	name = "10mm incendiary bullet"
 	damage = 5
+	dmg_dropoff_per_tile = 5 * 0.25 / 10
 	var/fire_stacks = 1
 
 /obj/item/projectile/bullet/c10mm/incendiary/on_hit(atom/target, blocked = FALSE)
@@ -215,27 +242,34 @@ Uranium, Contaminated
 	name = ".45 FMJ bullet"
 	damage = 24
 	wound_bonus = 15
+	var/dmg_dropoff_per_tile = 24 * 0.25 / 10	//In 10 tiles (roughly a screen and half away), it will lose a quarter of its initial damage
+	var/stam_dropoff_per_tile = 0 * 0.25 / 10	//In 10 tiles (roughly a screen and half away), it will lose a quarter of its initial stam damage
+
+/obj/item/projectile/bullet/c45/Range()
+	..()
+	if(damage > 0)
+		damage -= dmg_dropoff_per_tile
+	if(stamina > 0)
+		stamina -= stam_dropoff_per_tile
+	if(damage < 0 && stamina < 0)
+		qdel(src)
 
 /obj/item/projectile/bullet/c45/simple
 	name = ".45 FMJ bullet"
 	damage = 24
 	wound_bonus = 15
+	dmg_dropoff_per_tile = 0
 
 /obj/item/projectile/bullet/c45/op
 	name = ".45 +P bullet"
 	damage = 28
 	var/extra_speed = 500
-
-/obj/item/projectile/bullet/c45/rubber
-	name = ".45 rubber bullet"
-	damage = 6
-	stamina = 24
-	sharpness = SHARP_NONE
-	wound_bonus = 0
+	dmg_dropoff_per_tile = 0
 
 /obj/item/projectile/bullet/c45/incendiary
 	name = ".45 incendiary bullet"
 	damage = 6
+	dmg_dropoff_per_tile = 6 * 0.25 / 10
 	var/fire_stacks = 1
 
 /obj/item/projectile/bullet/c45/incendiary/on_hit(atom/target, blocked = FALSE)
@@ -308,6 +342,7 @@ Uranium, Contaminated
 /obj/item/projectile/bullet/m44
 	name = ".44 FMJ bullet"
 	damage = 32
+	armour_penetration = 0.1
 	wound_bonus = 24
 	bare_wound_bonus = -20
 
@@ -335,6 +370,7 @@ Uranium, Contaminated
 /obj/item/projectile/bullet/c4570
 	name = ".45-70 FMJ bullet"
 	damage = 42
+	armour_penetration = 0.2
 	wound_bonus = 32
 	bare_wound_bonus = -24
 
@@ -388,6 +424,7 @@ Uranium, Contaminated
 /obj/item/projectile/bullet/mm14
 	name = "14mm FMJ bullet"
 	damage = 32
+	armour_penetration = 0.2
 	wound_bonus = 28
 	bare_wound_bonus = 42
 

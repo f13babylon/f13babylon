@@ -7,7 +7,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	selection_color = "#825b73"
 	department_flag = TRIBAL
 	faction = FACTION_TRIBAL
-	exp_type = EXP_TYPE_TRIBAL
+	exp_type = EXP_TYPE_WASTELAND
 	access = list(ACCESS_TRIBE)
 	blacklisted_quirks = list(/datum/quirk/herbal_affinity)
 	social_faction = "Tribal"
@@ -24,7 +24,6 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	ADD_TRAIT(H, TRAIT_HERBAL_AFFINITY,  REF(src))
 	ADD_TRAIT(H, TRAIT_TRAPPER,  REF(src))
 	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS,  REF(src))
-	ADD_TRAIT(H, TRAIT_AUTO_DRAW,  REF(src))
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, REF(src))
 	H.grant_language(/datum/language/tribal)
 	var/list/recipes = list(
@@ -80,7 +79,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	ears = null
 	belt = /obj/item/melee/onehanded/knife/bone
 	uniform =     /obj/item/clothing/under/f13/settler
-	box =         /obj/item/storage/survivalkit_tribal
+	box =         /obj/item/storage/survivalkit/primitive
 	shoes =     /obj/item/clothing/shoes/sandal
 	gloves =    /obj/item/clothing/gloves/f13/handwraps
 	r_hand = /obj/item/book/granter/trait/selection/tribal
@@ -113,7 +112,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	ears = null
 	belt = /obj/item/melee/onehanded/knife/bone
 	uniform =     /obj/item/clothing/under/f13/settler
-	box =         /obj/item/storage/survivalkit_tribal
+	box =         /obj/item/storage/survivalkit/primitive
 	shoes =     /obj/item/clothing/shoes/sandal
 	gloves =    /obj/item/clothing/gloves/f13/handwraps
 	r_hand = /obj/item/book/granter/trait/selection/tribal
@@ -146,7 +145,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	ears = null
 	belt = /obj/item/melee/onehanded/knife/bone
 	uniform =     /obj/item/clothing/under/f13/settler
-	box =         /obj/item/storage/survivalkit_tribal
+	box =         /obj/item/storage/survivalkit/primitive
 	shoes =     /obj/item/clothing/shoes/sandal
 	gloves =    /obj/item/clothing/gloves/f13/handwraps
 	r_hand = /obj/item/book/granter/trait/selection/tribal
@@ -245,7 +244,7 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 	ears = null
 	belt = /obj/item/melee/onehanded/knife/bone
 	uniform =     /obj/item/clothing/under/f13/settler
-	box =         /obj/item/storage/survivalkit_tribal
+	box =         /obj/item/storage/survivalkit/primitive
 	shoes =     /obj/item/clothing/shoes/sandal
 	gloves =    /obj/item/clothing/gloves/f13/handwraps
 	r_hand = /obj/item/book/granter/trait/selection/tribal
@@ -347,13 +346,13 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 /datum/outfit/loadout/whitelegsranged
 	name = "White Legs Storm-Drummer"
 	suit = /obj/item/clothing/suit/f13/tribal/whitelegs
+	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
 	backpack_contents = list(
 		/obj/item/clothing/under/f13/whitelegs = 1,
 		/obj/item/clothing/under/f13/female/whitelegs = 1,
-		/obj/item/gun/ballistic/automatic/smg/tommygun/whitelegs = 1,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
 		/obj/item/reagent_containers/pill/patch/healingpoultice = 1,
-		/obj/item/ammo_box/magazine/tommygunm45/stick = 2
+		/obj/item/ammo_box/magazine/msmg10mm = 2
 	)
 
 /datum/outfit/loadout/whitelegsshaman
@@ -454,8 +453,8 @@ Below are the original loadouts and the temporarily used Tribal. Pending rework 
 		/obj/item/clothing/under/f13/female/eighties = 1,
 		/obj/item/gun/ballistic/revolver/single_shotgun = 1,
 		/obj/item/ammo_box/shotgun/buck = 1,
-		/obj/item/gun/ballistic/automatic/smg/greasegun/worn = 1,
-		/obj/item/ammo_box/magazine/greasegun = 2,
+		/obj/item/gun/ballistic/automatic/smg/greasegun = 1,
+		/obj/item/ammo_box/magazine/mgreasegun = 2,
 		/obj/item/reagent_containers/pill/patch/healingpowder = 2
 	)
 

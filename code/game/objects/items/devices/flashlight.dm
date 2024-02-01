@@ -268,7 +268,7 @@
 	name = "flare"
 	desc = "A red emergency flare. There are instructions on the side, it reads 'pull cord, make light'."
 	icon = 'icons/fallout/objects/lamps.dmi'
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_TINY
 	light_system = MOVABLE_LIGHT
 	light_range = 7 // Pretty bright.
 	light_color = LIGHT_COLOR_FLARE
@@ -304,6 +304,7 @@
 
 /obj/item/flashlight/flare/proc/turn_off()
 	on = FALSE
+	w_class = WEIGHT_CLASS_TINY
 	force = initial(src.force)
 	damtype = initial(src.damtype)
 	if(ismob(loc))
@@ -336,6 +337,7 @@
 		playsound(loc, 'sound/effects/flare_light.ogg', 50, 0)
 		force = on_damage
 		damtype = "fire"
+		w_class = WEIGHT_CLASS_SMALL
 		START_PROCESSING(SSobj, src)
 
 /obj/item/flashlight/flare/get_temperature()
@@ -432,7 +434,7 @@
 	name = "glowstick"
 	desc = "A military-grade glowstick."
 	custom_price = PRICE_CHEAP_AS_FREE
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_TINY
 	light_system = MOVABLE_LIGHT
 	light_range = 4
 	color = LIGHT_COLOR_GREEN

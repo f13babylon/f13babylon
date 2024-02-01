@@ -20,8 +20,9 @@
 	weapon_weight = WEAPON_MEDIUM //can only dual wield small pistols
 	slot_flags = ITEM_SLOT_BELT
 	force = 12 //Pistol whip
-	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
+	mag_type = /obj/item/ammo_box/magazine/m10mm
 	spread = 2
+	fire_delay = 1
 	burst_size = 1
 	fire_delay = 0
 	select = FALSE
@@ -70,8 +71,8 @@
 	name = "10mm pistol"
 	desc = "The Colt N99, an easily maintained, large-framed, long-barreled combat pistol in use by the US Army before the war. Comes with an integrated laser sight module."
 	icon_state = "n99"
-	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
-	fire_delay = 1
+	mag_type = /obj/item/ammo_box/magazine/m10mm
+	fire_delay = 3
 	recoil = 0.05
 	can_attachments = TRUE
 	can_automatic = TRUE
@@ -115,12 +116,13 @@
 	name = "Chinese pistol"
 	desc = "A standard issue Chinese Type-17 combat pistol, hacked apart and turned into a magazine-fed 10mm self-loader."
 	icon_state = "chinapistol"
-	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
+	mag_type = /obj/item/ammo_box/magazine/m10mm
 	fire_delay = 1
 	recoil = 0.1
 	spread = 3
 	can_suppress = FALSE
 	fire_sound = 'sound/f13weapons/10mm_fire_02.ogg'
+	extra_damage = 2
 
 //Browning Hi-power						Keywords: 9mm, Semi-auto
 /obj/item/gun/ballistic/automatic/pistol/ninemil
@@ -134,6 +136,7 @@
 	suppressor_state = "pistol_suppressor"
 	suppressor_x_offset = 30
 	suppressor_y_offset = 19
+	fire_delay = 2
 	fire_sound = 'sound/f13weapons/ninemil.ogg'
 	//Extra Modifiable Gun Vars
 	modifiablegun = FALSE//TEMP
@@ -148,12 +151,11 @@
 
 //Maria									Keywords: UNIQUE, 9mm, Semi-auto, 10 round magazine. Special modifiers: fire delay -1, damage +10, penetration +0.2
 /obj/item/gun/ballistic/automatic/pistol/ninemil/maria
-	name = "Maria"
+	name = "María"
 	desc = "An ornately-decorated pre-war Browning Hi-power 9mm pistol with a pearl grip that displays a rendition of the Virgin Mary. Prone to give someone an eighteen-karat run of bad luck."
 	icon_state = "maria"
-	fire_delay = 2
 	extra_damage = 10
-	extra_penetration = 0.12
+	extra_penetration = 0.3
 
 
 //Sig Sauer P220						Keywords: 9mm, Semi-auto, 10 round magazine
@@ -165,6 +167,7 @@
 	weapon_weight = WEAPON_LIGHT
 	mag_type = /obj/item/ammo_box/magazine/m9mm
 	can_attachments = TRUE
+	fire_delay = 2
 	suppressor_state = "pistol_suppressor"
 	suppressor_x_offset = 30
 	suppressor_y_offset = 20
@@ -179,6 +182,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m9mmds
 	weapon_weight = WEAPON_LIGHT
 	spread = 1
+	fire_delay = 2
 	can_attachments = TRUE
 	can_suppress = "pistol_suppressor"
 	suppressor_x_offset = 30
@@ -192,7 +196,7 @@
 	desc = "Ye sons of the self-loader, weep over Browning, who clothed you in steel, with mechanical delights, who put reliability upon your designs. An utter affront to any gunsmith, a modified Browning Hi-Power that fires fully automatic - with a permanently attached muzzle brake."
 	icon_state = "m93r"
 	w_class = WEIGHT_CLASS_NORMAL
-	fire_delay = 2
+	fire_delay = 3
 	burst_size = 2
 	burst_shot_delay = 2.5
 	spread = 3 //every other weapon has a spread of 1-3
@@ -229,7 +233,7 @@
 	icon_state = "m1911"
 	item_state = "pistolchrome"
 	w_class = WEIGHT_CLASS_NORMAL
-	fire_delay = 2
+	fire_delay = 3
 	slowdown = 0.05
 	mag_type = /obj/item/ammo_box/magazine/m45
 	recoil = 0.15
@@ -255,8 +259,7 @@
 	desc = "A heavily modified Colt M1911A1 pistol, with a scraped-down frame, reinforced slide, a checkered front strap, an enlarged front sight, a ring hammer, an extended thumb safety and slide-stop, a whittled-down trigger guard base, it has a long easy-access trigger, a filed-down magazine catch, a flat mainspring housing, stepping, and cocking serrations to the top of the slide - This is a tool made by a pro, for pros. No doubt."
 	icon_state = "m1911_custom"
 	recoil = 0.05
-	fire_delay = 1
-	extra_damage = 7
+	fire_delay = 2
 
 
 //Mk. 23								Keywords: .45 ACP, Semi-auto, Long barrel (lasersight), 12 round magazine, Flashlight
@@ -265,7 +268,7 @@
 	desc = "The Mk. 23 SOCOM, manufactured by Heckler & Koch. A pre-war wonder, and deserving of its rightful throne among .45 combat handguns."
 	icon_state = "mk23"
 	mag_type = /obj/item/ammo_box/magazine/m45exp
-	fire_delay = 2
+	fire_delay = 3
 	slowdown = 0.07
 	spread = 1
 	can_flashlight = TRUE
@@ -292,16 +295,23 @@
 	icon_state = "deagle"
 	item_state = "deagle"
 	mag_type = /obj/item/ammo_box/magazine/m44
-	fire_delay = 3
+	fire_delay = 4
 	force = 15
 	extra_speed = 300
+	slowdown = 0.1
 	recoil = 3.5 //Debilitating
 	spread = 6
-	extra_damage = 12
-	extra_penetration = 0.12
+	extra_damage = 6
+	extra_penetration = 0.05		//15% AP Total
 	can_suppress = FALSE
 	automatic_burst_overlay = FALSE
 	fire_sound = 'sound/f13weapons/44mag.ogg'
+
+	reload_sound = 'sound/weapons/guns/hpistol_magin.ogg'	//Heavy pistol
+	reload_sound_empty = 'sound/weapons/guns/hpistol_magin.ogg'
+	unload_sound = 'sound/weapons/guns/hpistol_magout.ogg'
+
+
 	//Extra Modifiable Gun Vars
 	modifiablegun = FALSE//TEMP
 	//Sprite Attachment Points
@@ -319,10 +329,10 @@
 	icon_state = "elcapitan"
 	item_state = "deagle"
 	mag_type = /obj/item/ammo_box/magazine/m14mm
-	fire_delay = 0
+	fire_delay = 3
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
-	extra_damage = 7
-	extra_penetration = 0.05
+	spread = 4
+	extra_penetration = 0.1
 
 //Automag			Keywords: .44 Magnum, Semi-auto, Long barrel, 7 rounds, Heavy. Special modifiers: bullet speed +300
 /obj/item/gun/ballistic/automatic/pistol/automag
@@ -331,13 +341,17 @@
 	icon_state = "automag"
 	item_state = "deagle"
 	mag_type = /obj/item/ammo_box/magazine/automag
-	fire_delay = 4
+	fire_delay = 5
 	extra_speed = 600
 	recoil = 0.2
 	can_suppress = FALSE
 	automatic_burst_overlay = FALSE
 	fire_sound = 'sound/f13weapons/44mag.ogg'
 	extra_damage = 5
+
+	reload_sound = 'sound/weapons/guns/hpistol_magin.ogg'	//Heavy pistol
+	reload_sound_empty = 'sound/weapons/guns/hpistol_magin.ogg'
+	unload_sound = 'sound/weapons/guns/hpistol_magout.ogg'
 
 
 //14mm Pistol		Keywords: 14mm, Semi-auto, 7 rounds, Heavy
@@ -347,11 +361,15 @@
 	icon_state = "pistol14"
 	mag_type = /obj/item/ammo_box/magazine/m14mm
 	force = 15
-	fire_delay = 5
+	fire_delay = 6
 	extra_damage = 11
 	recoil = 2.2
 	can_suppress = FALSE
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
+
+	reload_sound = 'sound/weapons/guns/hpistol_magin.ogg'	//Heavy pistol
+	reload_sound_empty = 'sound/weapons/guns/hpistol_magin.ogg'
+	unload_sound = 'sound/weapons/guns/hpistol_magout.ogg'
 
 //14mm compact		Keywords: 14mm, Semi-auto, Short barrel, 7 rounds, Heavy
 /obj/item/gun/ballistic/automatic/pistol/pistol14/compact
@@ -367,9 +385,9 @@
 	desc = "An expertly tuned SIG P-127 straight from the Gun Runners. This one features a custom polymer grip and a chromed frame, along several internal modifications."
 	icon_state = "lildev"
 	w_class = WEIGHT_CLASS_SMALL
-	fire_delay = 4
+	fire_delay = 5
 	extra_damage = 6
-	extra_penetration = 0.35
+	extra_penetration = 0.15	//35% AP Total
 
 /obj/item/gun/ballistic/automatic/pistol/pistol14/custom
 	name= "Custom 14mm pistol" //IDK WTF THIS IS
@@ -385,7 +403,7 @@
 	icon_state = "mortifer"
 	mag_type = /obj/item/ammo_box/magazine/m14mm
 	force = 25
-	fire_delay = 15
+	fire_delay = 10
 	icon_state = "nexus"
 	recoil = 2
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
@@ -405,4 +423,3 @@
 	name = "pistol"
 	extra_damage = 18
 	mag_type = /obj/item/ammo_box/magazine/testbullet
-

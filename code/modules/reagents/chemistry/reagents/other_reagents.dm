@@ -115,6 +115,10 @@
 			taste_description = "something spicy"
 			pH = 6.85
 
+		if(data["blood_type"] == "T")
+			name = "Tomato Blood"
+			taste_description = "sap"
+
 /datum/reagent/blood/on_merge(list/mix_data)
 	if(data && mix_data)
 		if(data["blood_DNA"] != mix_data["blood_DNA"])
@@ -166,7 +170,7 @@
 	pH = 4
 
 /datum/reagent/blood/tomato
-	data = list("donor"=null,"viruses"=null,"blood_DNA"=null, "bloodcolor" = BLOOD_COLOR_HUMAN, "blood_type"="SY","resistances"=null,"trace_chem"=null,"mind"=null,"ckey"=null,"gender"=null,"real_name"=null,"cloneable"=null,"factions"=null)
+	data = list("donor"=null,"viruses"=null,"blood_DNA"=null, "bloodcolor" = BLOOD_COLOR_HUMAN, "blood_type"="T","resistances"=null,"trace_chem"=null,"mind"=null,"ckey"=null,"gender"=null,"real_name"=null,"cloneable"=null,"factions"=null)
 	name = "Tomato Blood"
 	description = "This highly resembles blood, but it doesnt actually function like it, resembling more ketchup, with a more blood-like consistency."
 	taste_description = "sap" //Like tree sap?
@@ -2391,6 +2395,7 @@
 	color = "#4040FF" //A blueish color
 	glitter_type = /obj/effect/decal/cleanable/glitter/blue
 
+/*
 /datum/reagent/pax
 	name = "pax"
 	description = "A colorless liquid that suppresses violence on the subjects."
@@ -2409,7 +2414,7 @@
 /datum/reagent/pax/on_mob_end_metabolize(mob/living/L)
 	REMOVE_TRAIT(L, TRAIT_PACIFISM, type)
 	..()
-
+*/
 /datum/reagent/bz_metabolites
 	name = "BZ metabolites"
 	description = "A harmless metabolite of BZ gas"
@@ -2434,6 +2439,7 @@
 			changeling.chem_charges = max(changeling.chem_charges-2, 0)
 	return ..()
 
+/*
 /datum/reagent/pax/peaceborg
 	name = "synth-pax"
 	description = "A colorless liquid that suppresses violence on the subjects. Cheaper to synthetize, but wears out faster than normal Pax."
@@ -2473,14 +2479,7 @@
 	if(prob(30))
 		to_chat(M, "You should sit down and take a rest...")
 	..()
-
-/datum/reagent/moonsugar
-	name = "Moonsugar"
-	description = "An unstable slurry consisting of moonshine and sugar, made by stirring at high speeds."
-	color = "#FAEAFF"
-	taste_description = "sugar and moonshine"
-	value = REAGENT_VALUE_UNCOMMON
-	ghoulfriendly = TRUE
+*/
 
 /datum/reagent/changeling_string
 	name = "UNKNOWN"
@@ -2524,12 +2523,14 @@
 	taste_description = "plant dust"
 	ghoulfriendly = TRUE
 
+/*
 /datum/reagent/pax/catnip
 	name = "Catnip"
 	taste_description = "grass"
 	description = "A colorless liquid that makes people more peaceful and felines more happy."
 	metabolization_rate = 1.75 * REAGENTS_METABOLISM
 	value = REAGENT_VALUE_COMMON
+*/
 
 /datum/reagent/preservahyde
 	name = "Preservahyde"
@@ -2604,7 +2605,7 @@
 /datum/reagent/gravitum/on_mob_end_metabolize(mob/living/L)
 	L.RemoveElement(/datum/element/forced_gravity, 0)
 
-
+/*
 //body bluids
 /datum/reagent/consumable/semen
 	name = "Semen"
@@ -2665,6 +2666,7 @@
 	random_icon_states = list("fem1", "fem2", "fem3", "fem4")
 	blood_state = null
 	bloodiness = null
+*/
 
 /datum/reagent/determination
 	name = "Determination"
@@ -2857,6 +2859,7 @@
 	M.adjust_nutrition(-5)
 	..()
 
+/*
 /datum/reagent/breast_enlarger
 	name = "Succubus milk"
 	description = "A volatile collodial mixture derived from milk that encourages mammary production via a potent estrogen mix."
@@ -3047,3 +3050,4 @@
 
 	P.modify_size(-0.1)
 	..()
+*/

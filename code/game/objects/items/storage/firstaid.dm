@@ -326,14 +326,6 @@
 	for(var/i in 1 to 3)
 		new /obj/item/reagent_containers/pill/patch/styptic(src)
 
-/obj/item/storage/pill_bottle/zoom
-	name = "suspicious pill bottle"
-	desc = "The label is pretty old and almost unreadable, you recognize some chemical compounds."
-
-/obj/item/storage/pill_bottle/zoom/PopulateContents()
-	for(var/i in 1 to 5)
-		new /obj/item/reagent_containers/pill/zoom(src)
-
 /obj/item/storage/pill_bottle/happy
 	name = "suspicious pill bottle"
 	desc = "There is a smiley on the top."

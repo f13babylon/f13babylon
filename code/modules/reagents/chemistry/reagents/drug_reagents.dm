@@ -9,7 +9,7 @@
 		SEND_SIGNAL(M, COMSIG_CLEAR_MOOD_EVENT, "[type]_high")
 
 /datum/reagent/drug/space_drugs
-	name = "Space drugs"
+	name = "Liquid THC"
 	value = REAGENT_VALUE_VERY_COMMON
 	description = "An illegal chemical compound used as drug."
 	color = "#60A584" // rgb: 96, 165, 132
@@ -497,82 +497,6 @@
 		M.emote(pick("twitch","laugh","frown"))
 	..()
 	. = 1
-
-/datum/reagent/drug/skooma
-	name = "Getaway"
-	description = "A highly-addictive drug developed by a local pre-war crime family. It greatly improves the user's speed and strength, but heavily impedes their intelligence and agility."
-	reagent_state = LIQUID
-	color = "#F3E0F9"
-	taste_description = "moonshine and the feeling of a successful heist"
-	addiction_threshold = 1
-	addiction_stage3_end = 40
-	addiction_stage4_end = 240
-	pH = 12.5
-	value = REAGENT_VALUE_EXCEPTIONAL
-
-/datum/reagent/drug/skooma/on_mob_metabolize(mob/living/L)
-	. = ..()
-	L.add_movespeed_modifier(/datum/movespeed_modifier/reagent/skooma)
-	L.action_cooldown_mod *= 2
-	if(ishuman(L))
-		var/mob/living/carbon/human/H = L
-		if(H.physiology)
-			H.physiology.stamina_mod *= 0.5
-		if(H.dna && H.dna.species)
-			H.dna.species.punchdamagehigh += 4
-			H.dna.species.punchdamagelow  += 4
-			H.dna.species.punchstunthreshold -= 2
-
-/datum/reagent/drug/skooma/on_mob_end_metabolize(mob/living/L)
-	. = ..()
-	L.remove_movespeed_modifier(/datum/movespeed_modifier/reagent/skooma)
-	L.action_cooldown_mod *= 0.5
-	if(ishuman(L))
-		var/mob/living/carbon/human/H = L
-		if(H.physiology)
-			H.physiology.stamina_mod *= 2
-		if(H.dna && H.dna.species)
-			H.dna.species.punchdamagehigh -= 4
-			H.dna.species.punchdamagelow -= 4
-			H.dna.species.punchstunthreshold += 2
-
-/datum/reagent/drug/skooma/on_mob_life(mob/living/carbon/M)
-	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 1*REM)
-	M.adjustToxLoss(1*REM)
-	if(prob(10))
-		M.adjust_blurriness(2)
-	..()
-	. = 1
-
-/datum/reagent/drug/skooma/addiction_act_stage1(mob/living/M)
-	M.Jitter(10)
-	if(prob(50))
-		M.adjust_blurriness(2)
-	..()
-
-/datum/reagent/drug/skooma/addiction_act_stage2(mob/living/M)
-	M.Jitter(20)
-	M.Dizzy(10)
-	M.adjust_blurriness(2)
-	..()
-
-/datum/reagent/drug/skooma/addiction_act_stage3(mob/living/M)
-	M.Jitter(50)
-	M.Dizzy(20)
-	M.adjust_blurriness(4)
-	if(prob(20))
-		M.emote(pick("twitch","drool","moan"))
-	..()
-
-/datum/reagent/drug/skooma/addiction_act_stage4(mob/living/M)
-	M.Jitter(50)
-	M.Dizzy(50)
-	M.adjust_blurriness(10)
-	if(prob(50)) //This proc will be called about 200 times and the adjustbrainloss() below only has to be called 40 times to kill. This will make surviving skooma addiction pretty rare without mannitol usage.
-		M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 5)
-	if(prob(40))
-		M.emote(pick("twitch","drool","moan"))
-	..()
 
 /datum/reagent/syndicateadrenals
 	name = "Syndicate Adrenaline"

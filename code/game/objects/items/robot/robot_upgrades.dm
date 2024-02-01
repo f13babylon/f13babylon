@@ -84,7 +84,7 @@ as performing this in action() will cause the upgrade to end up in the borg inst
 /obj/item/borg/upgrade/vtec/action(mob/living/silicon/robot/R, user = usr)
 	. = ..()
 	if(.)
-		if(!R.cansprint)
+		if(/obj/item/borg/upgrade/vtec in R)
 			to_chat(R, "<span class='notice'>A VTEC unit is already installed!</span>")
 			to_chat(user, "<span class='notice'>There's no room for another VTEC unit!</span>")
 			return FALSE
@@ -92,13 +92,11 @@ as performing this in action() will cause the upgrade to end up in the borg inst
 		//R.speed = -2 // Gotta go fast.
 		//Citadel change - makes vtecs give an ability rather than reducing the borg's speed instantly
 		R.AddAbility(new/obj/effect/proc_holder/silicon/cyborg/vtecControl)
-		R.cansprint = 0
 
 /obj/item/borg/upgrade/vtec/deactivate(mob/living/silicon/robot/R, user = usr)
 	. = ..()
 	if (.)
 		R.speed = initial(R.speed)
-		R.cansprint = 1
 
 /obj/item/borg/upgrade/disablercooler
 	name = "cyborg rapid energy blaster cooling module"
@@ -165,9 +163,6 @@ as performing this in action() will cause the upgrade to end up in the borg inst
 	if(.)
 		for(var/obj/item/pickaxe/drill/cyborg/D in R.module)
 			R.module.remove_module(D, TRUE)
-		for(var/obj/item/shovel/S in R.module)
-			R.module.remove_module(S, TRUE)
-
 		var/obj/item/pickaxe/drill/cyborg/diamond/DD = new /obj/item/pickaxe/drill/cyborg/diamond(R.module)
 		R.module.basic_modules += DD
 		R.module.add_module(DD, FALSE, TRUE)
@@ -181,9 +176,6 @@ as performing this in action() will cause the upgrade to end up in the borg inst
 		var/obj/item/pickaxe/drill/cyborg/D = new (R.module)
 		R.module.basic_modules += D
 		R.module.add_module(D, FALSE, TRUE)
-		var/obj/item/shovel/S = new (R.module)
-		R.module.basic_modules += S
-		R.module.add_module(S, FALSE, TRUE)
 
 
 /obj/item/borg/upgrade/advcutter
@@ -275,7 +267,7 @@ as performing this in action() will cause the upgrade to end up in the borg inst
 		R.module.add_module(M, FALSE, TRUE)
 
 /obj/item/borg/upgrade/syndicate
-	name = "illegal equipment module"
+	name = "offensive equipment module"
 	desc = "Unlocks the hidden, deadlier functions of a cyborg."
 	icon_state = "cyborg_upgrade3"
 	require_module = 1
@@ -421,8 +413,7 @@ as performing this in action() will cause the upgrade to end up in the borg inst
 	require_module = 1
 	module_type = list(/obj/item/robot_module/medical,
 		/obj/item/robot_module/syndicate_medical,
-		/obj/item/robot_module/medihound,
-		/obj/item/robot_module/assaultron/medical)
+		/obj/item/robot_module/medihound,)
 	var/list/additional_reagents = list()
 	module_flags = BORG_MODULE_MEDICAL
 
@@ -461,7 +452,7 @@ as performing this in action() will cause the upgrade to end up in the borg inst
 	desc = "An upgrade to a cyborg's hypospray, allowing it to \
 		pierce armor and thick material."
 	icon_state = "cyborg_upgrade3"
-	module_flags = BORG_MODULE_MEDICAL //added line so it appears correctly in the Exo fab 
+	module_flags = BORG_MODULE_MEDICAL //added line so it appears correctly in the Exo fab
 
 /obj/item/borg/upgrade/piercing_hypospray/action(mob/living/silicon/robot/R, user = usr)
 	. = ..()
@@ -495,8 +486,7 @@ as performing this in action() will cause the upgrade to end up in the borg inst
 	require_module = 1
 	module_type = list(/obj/item/robot_module/medical,
 		/obj/item/robot_module/syndicate_medical,
-		/obj/item/robot_module/medihound,
-		/obj/item/robot_module/assaultron/medical)
+		/obj/item/robot_module/medihound,)
 	module_flags = BORG_MODULE_MEDICAL
 
 /obj/item/borg/upgrade/processor/action(mob/living/silicon/robot/R, user = usr)
@@ -506,10 +496,10 @@ as performing this in action() will cause the upgrade to end up in the borg inst
 		R.module.basic_modules += SP
 		R.module.add_module(SP, FALSE, TRUE)
 
-		ADD_TRAIT(R, TRAIT_CHEMWHIZ, CYBORG_ITEM_TRAIT) // Added traits to medical proccessor so that Medical borgs can do medical stuff
-		ADD_TRAIT(R, TRAIT_RESEARCHER, CYBORG_ITEM_TRAIT)
 		ADD_TRAIT(R, TRAIT_MEDICALEXPERT, CYBORG_ITEM_TRAIT)
 		ADD_TRAIT(R, TRAIT_SURGERY_HIGH, CYBORG_ITEM_TRAIT)
+		ADD_TRAIT(R, TRAIT_CYBERNETICIST_EXPERT, CYBORG_ITEM_TRAIT)
+
 
 /obj/item/borg/upgrade/processor/deactivate(mob/living/silicon/robot/R, user = usr)
 	. = ..()
@@ -517,10 +507,9 @@ as performing this in action() will cause the upgrade to end up in the borg inst
 		var/obj/item/surgical_processor/SP = locate() in R.module
 		R.module.remove_module(SP, TRUE)
 
-		REMOVE_TRAIT(R, TRAIT_CHEMWHIZ, CYBORG_ITEM_TRAIT) // Remove traits once board is removed
-		REMOVE_TRAIT(R, TRAIT_RESEARCHER, CYBORG_ITEM_TRAIT)
 		REMOVE_TRAIT(R, TRAIT_MEDICALEXPERT, CYBORG_ITEM_TRAIT)
 		REMOVE_TRAIT(R, TRAIT_SURGERY_HIGH, CYBORG_ITEM_TRAIT)
+		REMOVE_TRAIT(R, TRAIT_CYBERNETICIST_EXPERT, CYBORG_ITEM_TRAIT)
 
 /obj/item/borg/upgrade/advhealth
 	name = "advanced cyborg health scanner"
@@ -531,8 +520,7 @@ as performing this in action() will cause the upgrade to end up in the borg inst
 	module_type = list(
 		/obj/item/robot_module/medical,
 		/obj/item/robot_module/syndicate_medical,
-		/obj/item/robot_module/medihound,
-		/obj/item/robot_module/assaultron/medical)
+		/obj/item/robot_module/medihound,)
 	module_flags = BORG_MODULE_MEDICAL
 
 /obj/item/borg/upgrade/advhealth/action(mob/living/silicon/robot/R, user = usr)
@@ -656,8 +644,7 @@ as performing this in action() will cause the upgrade to end up in the borg inst
 	module_type = list(
 		/obj/item/robot_module/medical,
 		/obj/item/robot_module/syndicate_medical,
-		/obj/item/robot_module/medihound,
-		/obj/item/robot_module/assaultron/medical)
+		/obj/item/robot_module/medihound)
 	module_flags = BORG_MODULE_MEDICAL
 
 /obj/item/borg/upgrade/pinpointer/action(mob/living/silicon/robot/R, user = usr)
@@ -699,7 +686,7 @@ as performing this in action() will cause the upgrade to end up in the borg inst
 	action_icon_state = "Chevron_State_0"
 
 	var/currentState = 0
-	var/maxReduction = 1
+	var/maxReduction = 0.25
 
 
 /obj/effect/proc_holder/silicon/cyborg/vtecControl/Trigger(mob/living/silicon/robot/user)
@@ -751,7 +738,7 @@ as performing this in action() will cause the upgrade to end up in the borg inst
 
 		if(added_channels.len)
 			to_chat(R, span_info("New radio decryptions installed."))
-				
+
 
 /obj/item/borg/upgrade/radio_transceiver/deactivate(mob/living/silicon/robot/R, user = usr)
 	. = ..()
@@ -769,11 +756,11 @@ as performing this in action() will cause the upgrade to end up in the borg inst
 			accesstxt = GLOB.accesstoradio["[access]"]
 			if(accesstxt)
 				added_channels |= accesstxt
-		playsound(src, "modular_sunset/sound/pipsounds/pip1.ogg", 40, 1)
+		playsound(src, "sound/f13items/pipsounds/pip1.ogg", 40, 1)
 		to_chat(user, span_info("Transceiver decryptions set."))
 
 /obj/item/borg/upgrade/radio_transceiver/attack_self(mob/user)
 	. = ..()
 	added_channels = list()
-	playsound(src, "modular_sunset/sound/pipsounds/pip1.ogg", 40, 1)
+	playsound(src, "sound/f13items/pipsounds/pip1.ogg", 40, 1)
 	to_chat(user, span_info("Transceiver decryptions reset."))

@@ -61,7 +61,7 @@
 /mob/living/simple_animal/hostile/supermutant/bullet_act(obj/item/projectile/Proj)
 	if(!Proj)
 		return
-	if(prob(85) || Proj.damage > 26)
+	if(prob(85) || Proj.armour_penetration > 0.05)
 		return ..()
 	else
 		visible_message("<span class='danger'>\The [Proj] is deflected harmlessly by \the [src]'s thick skin!</span>")
@@ -133,8 +133,8 @@
 	health = 180
 	retreat_distance = 4
 	minimum_distance = 6
-	projectiletype = /obj/item/projectile/bullet/a762/sport/simple
-	projectilesound = 'sound/f13weapons/hunting_rifle.ogg'
+	projectiletype = /obj/item/projectile/bullet/a762mm/simple
+	projectilesound = 'sound/f13weapons/762rifle.ogg'
 	loot = list(/obj/item/ammo_box/a308)
 	footstep_type = FOOTSTEP_MOB_HEAVY
 
@@ -211,9 +211,9 @@
 	extra_projectiles = 1
 	retreat_distance = 4
 	minimum_distance = 6
-	projectiletype = /obj/item/projectile/bullet/a556/simple
-	projectilesound = 'sound/f13weapons/assaultrifle_fire.ogg'
-	loot = list(/obj/item/ammo_box/magazine/m556/rifle)
+	projectiletype = /obj/item/projectile/bullet/a556mm/simple
+	projectilesound = 'sound/f13weapons/assault_rifle.ogg'
+	loot = list(/obj/item/ammo_box/magazine/m556mm)
 	footstep_type = FOOTSTEP_MOB_HEAVY
 
 /mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant/Aggro()
@@ -309,7 +309,7 @@
 		visible_message(span_danger("\The [src] lets out a vicious war cry!"))
 		addtimer(3)
 		Charge()
-	if(prob(85) || Proj.damage > 30)
+	if(prob(85) || Proj.armour_penetration > 0.1)
 		return ..()
 	else
 		visible_message(span_danger("\The [Proj] is abosrbed by \the [src]'s thick skin, strengthening it!"))
@@ -405,7 +405,7 @@
 	if(prob(20))
 		visible_message(span_danger("\The [src] lets out a vicious war cry!"))
 		fire_release()
-	if(prob(85) || Proj.damage > 30)
+	if(prob(85) || Proj.armour_penetration > 0.1)
 		return ..()
 	else
 		visible_message(span_danger("\The [Proj] is absorbed by \the [src]'s thick skin, strengthening it!"))
@@ -463,7 +463,7 @@
 	icon = 'icons/fallout/mobs/supermutant.dmi'
 	icon_state = "hulk_hmg_s"
 	icon_living = "hulk_hmg_s"
-	icon_dead = "hulk_ranged_s"
+	icon_dead = "hulk_hmg_s"
 	ranged = 1
 	maxHealth = 640
 	health = 640
@@ -487,7 +487,7 @@
 /mob/living/simple_animal/hostile/supermutant/rangedmutant/heavy/bullet_act(obj/item/projectile/Proj)
 	if(!Proj)
 		CRASH("[src] heavy supermutant invoked bullet_act() without a projectile")
-	if(prob(15) || Proj.damage > 30)
+	if(prob(15) || Proj.armour_penetration > 0.1)
 		return ..()
 	else
 		visible_message("<span class='danger'>\The [Proj] bounces off \the [src]'s armor plating!</span>")

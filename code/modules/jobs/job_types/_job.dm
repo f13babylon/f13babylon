@@ -238,7 +238,7 @@
 	return TRUE
 
 /datum/job/proc/radio_help_message(mob/M)
-	to_chat(M, "<b>Prefix your message with :h to speak on your department's radio. To see other prefixes, look closely at your headset.</b>")
+	to_chat(M, "<b>Prefix your message with .h to speak on your department's radio. To see other prefixes, look closely at your headset.</b>")
 
 /datum/job/proc/standard_assign_skills(datum/mind/M)
 	if(!starting_modifiers)

@@ -143,7 +143,7 @@ Industrial extracts:
 /obj/item/slimecross/industrial/pink
 	colour = "pink"
 	plasmarequired = 6
-	itempath = /obj/item/slimecrossbeaker/autoinjector/peaceandlove
+	//itempath = /obj/item/slimecrossbeaker/autoinjector/peaceandlove
 
 /obj/item/slimecross/industrial/gold
 	colour = "gold"
@@ -168,10 +168,10 @@ Industrial extracts:
 	plasmarequired = 3
 	itempath = /obj/item/storage/fancy/heart_box
 
-/obj/item/slimecross/industrial/adamantine
-	colour = "adamantine"
+/obj/item/slimecross/industrial/saturnite
+	colour = "saturnite"
 	plasmarequired = 10
-	itempath = /obj/item/stack/sheet/mineral/adamantine
+	itempath = /obj/item/stack/sheet/mineral/saturnite
 
 /obj/item/slimecross/industrial/rainbow
 	colour = "rainbow"

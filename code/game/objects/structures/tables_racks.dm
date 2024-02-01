@@ -29,11 +29,10 @@
 	var/framestack = /obj/item/stack/rods
 	var/buildstack = /obj/item/stack/sheet/metal
 	var/busy = FALSE
-	var/buildstackamount = 1
+	var/buildstackamount = 2
 	var/framestackamount = 2
 	var/deconstruction_ready = 1
-	max_integrity = 100
-	integrity_failure = 0.33
+	max_integrity = 125
 	smooth = SMOOTH_TRUE
 	canSmoothWith = list(/obj/structure/table, /obj/structure/table/reinforced, /obj/structure/table/greyscale)
 
@@ -104,6 +103,11 @@
 		return 1
 	else
 		return !density
+
+/obj/structure/table/CanAStarPass(obj/item/card/id/ID, to_dir, atom/movable/caller)
+	. = !density
+	if(istype(caller))
+		. = . || (caller.pass_flags & PASSTABLE)
 
 /obj/structure/table/proc/tableplace(mob/living/user, mob/living/pushed_mob)
 	pushed_mob.forceMove(src.loc)
@@ -240,7 +244,7 @@
 ///Table on wheels
 /obj/structure/table/rolling
 	name = "Rolling table"
-	desc = "A NT brand \"Rolly poly\" rolling table. It can and will move."
+	desc = "A Vault-Tec brand \"Rolly Poly\" rolling table. It can and will move."
 	anchored = FALSE
 	smooth = SMOOTH_FALSE
 	canSmoothWith = list()
@@ -289,7 +293,8 @@
 	icon_state = "glass_table"
 	buildstack = /obj/item/stack/sheet/glass
 	canSmoothWith = null
-	max_integrity = 70
+	max_integrity = 50
+	pass_flags_self = PASSTABLE | LETPASSTHROW | PASSGLASS
 	resistance_flags = ACID_PROOF
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 100)
 	var/list/debris = list()
@@ -423,10 +428,12 @@
 	framestack = /obj/item/stack/sheet/mineral/wood
 	buildstack = /obj/item/stack/sheet/mineral/wood
 	resistance_flags = FLAMMABLE
-	max_integrity = 70
-	canSmoothWith = list(/obj/structure/table/wood,
+	max_integrity = 75
+	canSmoothWith = list(
+		/obj/structure/table/wood,
 		/obj/structure/table/wood/poker,
-		/obj/structure/table/wood/bar)
+		/obj/structure/table/wood/bar
+	)
 
 /obj/structure/table/wood/narsie_act(total_override = TRUE)
 	if(!total_override)
@@ -538,11 +545,10 @@
 	desc = "A reinforced version of the four legged table."
 	icon = 'icons/obj/smooth_structures/reinforced_table.dmi'
 	icon_state = "r_table"
+	resistance_flags = FIRE_PROOF | ACID_PROOF
 	deconstruction_ready = 0
 	buildstack = /obj/item/stack/sheet/plasteel
-	max_integrity = 200
-	integrity_failure = 0.25
-	armor = list("melee" = 10, "bullet" = 30, "laser" = 30, "energy" = 100, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 70)
+	max_integrity = 250
 
 /obj/structure/table/reinforced/deconstruction_hints(mob/user)
 	if(deconstruction_ready)
@@ -572,13 +578,14 @@
 	desc = "A solid, slightly beveled brass table."
 	icon = 'icons/obj/smooth_structures/brass_table.dmi'
 	icon_state = "brass_table"
-	resistance_flags = FIRE_PROOF | ACID_PROOF
 	frame = /obj/structure/table_frame/brass
 	framestack = /obj/item/stack/tile/brass
 	buildstack = /obj/item/stack/tile/brass
-	framestackamount = 1
-	buildstackamount = 1
-	canSmoothWith = list(/obj/structure/table/reinforced/brass, /obj/structure/table/bronze)
+	max_integrity = 155
+	canSmoothWith = list(
+		/obj/structure/table/reinforced/brass,
+		/obj/structure/table/bronze,
+	)
 
 /obj/structure/table/reinforced/brass/New()
 	change_construction_value(2)

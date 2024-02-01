@@ -13,9 +13,9 @@
 	// Stuff needed to render the map
 	var/map_name
 	var/const/default_map_size = 15
-	var/obj/screen/cam_screen
-	var/obj/screen/plane_master/lighting/cam_plane_master
-	var/obj/screen/background/cam_background
+	var/atom/movable/screen/cam_screen
+	var/atom/movable/screen/plane_master/lighting/cam_plane_master
+	var/atom/movable/screen/background/cam_background
 
 /obj/machinery/computer/security/Initialize(mapload)
 	. = ..()
@@ -351,3 +351,12 @@
 	icon_screen = "terminal_on_alt"
 	network = list("BoS")
 	circuit = /obj/item/circuitboard/computer/bos
+
+/obj/machinery/computer/security/enclave
+	name = "enclave bunker camera terminal"
+	desc = "Used to access the various cameras inside the bunker"
+	icon_state = "terminal"
+	icon_keyboard = "terminal_key"
+	icon_screen = "terminal_on_alt"
+	network = list("Enclave")
+	circuit = /obj/item/circuitboard/computer/enclave

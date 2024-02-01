@@ -24,6 +24,7 @@
 	desc = "Khaki standard issue uniform over a black turtleneck."
 	icon_state = "uniform_enclave_peacekeeper"
 	item_state = "uniform_enclave_peacekeeper"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/enclave/officer
 	name = "officer uniform"
@@ -46,6 +47,7 @@
 	item_state = "dress50s"
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/picnicdress50s
 	name = "50s style dress"
@@ -54,6 +56,7 @@
 	item_state = "dresspicnic50s"
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/vault
 	name = "vault jumpsuit"
@@ -66,6 +69,7 @@
 	sensor_mode = SENSOR_COORDS
 	random_sensor = FALSE
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 20, "acid" = 50)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/vault13
 	name = "vault 113 jumpsuit"
@@ -78,6 +82,7 @@
 	sensor_mode = SENSOR_COORDS
 	random_sensor = FALSE
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 20, "acid" = 50)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 
 //NCR
@@ -90,6 +95,7 @@
 	item_state = "ncr_uniform"
 	item_color = "ncr_uniform"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 20, "acid" = 50)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/ncr/ncr_officer
 	name = "NCR officer fatigues"
@@ -106,6 +112,7 @@
 	icon_state = "ncr_conscript"
 	item_state = "ncr_conscript"
 	item_color = "ncr_conscript"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/ncr/scout
 	name = "NCR scout fatigues"
@@ -121,6 +128,7 @@
 	icon_state = "ncr_snipermgs"
 	item_state = "ncr_snipermgs"
 	item_color = "ncr_snipermgs"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/ncr/pants
 	name = "NCR fatigue pants"
@@ -144,6 +152,7 @@
 	icon_state = "caravaneer"
 	item_state = "caravaneer"
 	item_color = "caravaneer"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/ncr/ncr_dress
 	name = "NCR dress uniform"
@@ -152,6 +161,7 @@
 	icon_state = "ncr_dress"
 	item_state = "ncr_dress"
 	item_color = "ncr_dress"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/ncrcf
 	name = "caravaneer outfit"
@@ -160,6 +170,7 @@
 	icon_state = "ncrcf"
 	item_state = "ncrcf"
 	item_color = "ncrcf"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 //Settlers
 
@@ -169,6 +180,7 @@
 	icon_state = "brahmin_m"
 	item_state = "brahmin_m"
 	item_color = "brahmin_m"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/brahminf
 	name = "brahmin skin outfit"
@@ -176,6 +188,7 @@
 	icon_state = "brahmin_f"
 	item_state = "brahmin_f_s"
 	item_color = "brahmin_f"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/doctorm
 	name = "doctor fatigues"
@@ -184,6 +197,7 @@
 	item_state = "doctor_m"
 	item_color = "doctor_m"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 20, "acid" = 50)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/doctorf
 	name = "doctor fatigues"
@@ -192,6 +206,7 @@
 	item_state = "doctor_f"
 	item_color = "doctor_f"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 20, "acid" = 50)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/caravan
 	name = "caravan pants"
@@ -199,6 +214,7 @@
 	icon_state = "caravan"
 	item_state = "caravan"
 	item_color = "caravan"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/settler
 	name = "settler outfit"
@@ -245,6 +261,7 @@
 	icon_state = "foxflannel"
 	item_state = "foxflannel"
 	item_color = "foxflannel"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/ranger/vet/thaxflannel
 	name = "Thaxton's ranger flannel outfit"
@@ -252,12 +269,14 @@
 	icon_state = "thaxflannel"
 	item_state = "thaxflannel"
 	item_color = "thaxflannel"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/ranger/erin
 	name = "desert pants"
 	desc = "An old pair of beat up, pre-war BDUs. These ones are emblazoned with desert patterns, and it has been reinforced around the left knee."
 	icon_state = "erin_pants"
 	item_state = "erin_pants"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/ranger/blue
 	name = "blue ranger outfit"
@@ -265,6 +284,7 @@
 	icon_state = "blueranger"
 	item_state = "blueranger"
 	item_color = "blueranger"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/ncr_formal_uniform/majzirilli
 	name = "Major Zirilli's service uniform"
@@ -272,6 +292,7 @@
 	icon_state = "majzirilli"
 	item_state = "majzirilli"
 	item_color = "majzirilli"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/ncr_female_officer
 	name = "NCR Officer Dress"
@@ -279,6 +300,7 @@
 	icon_state = "ncr_female_officer"
 	item_state = "ncr_female_officer"
 	item_color = "ncr_female_officer"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/ranger/modif_ranger
 	name = "green ranger outfit"
@@ -286,6 +308,7 @@
 	icon_state = "modif_ranger"
 	item_state = "modif_ranger"
 	item_color = "modif_ranger"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/rustic
 	name = "rustic outfit"
@@ -302,6 +325,7 @@
 	item_state = "vest_and_slacks"
 	item_color = "vest_and_slacks"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 20, "acid" = 50)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/sleazeball
 	name = "loanshark outfit"
@@ -310,6 +334,7 @@
 	item_state = "vest_and_slacks"
 	item_color = "vest_and_slacks"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 20, "acid" = 50)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/follower
 	name = "citzen outfit"
@@ -318,6 +343,7 @@
 	item_state = "follower"
 	item_color = "follower"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 50, "fire" = 20, "acid" = 50)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/medic
 	name = "doctor outfit"
@@ -355,6 +381,14 @@
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
 
+/obj/item/clothing/under/f13/legion/oratorgarb
+	name = "legion orator finery"
+	desc = "A slightly skimpy, highly decorative, piece of clothing worn by the orators. It's design doesn't leave a lot for the imagination, but it does have real silver embroidery, so that's a plus."
+	icon_state = "oratorgarb"
+	item_state = "oratorgarb"
+	fitted = FEMALE_UNIFORM_TOP
+	can_adjust = FALSE
+
 /obj/item/clothing/under/f13/campfollowerfemale
 	name = "camp follower female robe"
 	desc = "Olive colored cloth with a red sash."
@@ -365,7 +399,7 @@
 
 /obj/item/clothing/under/f13/legskirt
 	name = "legionary fatigues"
-	desc = "A black learthery skirt and a thick long sleeve cotton shirt."
+	desc = "A black leathery skirt and a thick long sleeve cotton shirt."
 	icon_state = "legskirt"
 	item_state = "legskirt"
 	item_color = "legskirt"
@@ -382,6 +416,15 @@
 	icon_state = "tacskirt"
 	item_state = "tacskirt"
 	item_color = "tacskirt"
+	fitted = FEMALE_UNIFORM_TOP
+	can_adjust = TRUE
+
+/obj/item/clothing/under/f13/legskirt/tact
+	name = "\improper tacticool combat skirt"
+	desc = "A leathery striped skirt below a black, long-sleeve striped cotton shirt. The sleeves look notably rollable"
+	icon_state = "tactskirt"
+	item_state = "tactskirt"
+	item_color = "tactskirt"
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = TRUE
 
@@ -487,6 +530,7 @@
 	item_state = "machinist"
 	item_color = "machinist"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 20, "acid" = 50)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/lumberjack
 	name = "lumberjack outfit"
@@ -494,6 +538,7 @@
 	icon_state = "lumberjack"
 	item_state = "lumberjack"
 	item_color = "lumberjack"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/shiny
 	name = "shiny outfit"
@@ -509,6 +554,7 @@
 	item_state = "merca"
 	item_color = "merca"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 20, "acid" = 40)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/mercc
 	name = "merc outfit"
@@ -517,6 +563,7 @@
 	item_state = "mercc"
 	item_color = "mercc"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 20, "acid" = 40)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/cowboyb
 	name = "cowboy outfit"
@@ -538,6 +585,7 @@
 	icon_state = "combat_shirt"
 	item_state = "combat_shirt"
 	item_color = "combat_shirt"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/Retro_Biker_Vest
 	name = "future vest"
@@ -550,12 +598,14 @@
 	desc = "A matte grey set of ultralight composite above a carefully padded noise-absorbant suit. This unit, used by Chinese special forces during the great war, looks to have had it's fusion matrix removed, and is all but a fashion statement now."
 	icon_state = "stealthsuit"
 	item_state = "stealthsuit"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/bearvest //This is being used as Donator gear, check as to whether MidgetDragon still donating before using for anything else.
 	name = "Great Bear Vest"
 	desc = "A casual set of ripped jeans and a duster. The duster seems to have a familiar symbol spray painted on the back. The inside of the duster seems to have the letters MEB sewn on."
 	icon_state = "bearvest"
 	item_state = "bearvest"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /* //slave rags, crafted from 2 cloth- uncomment when sprites available
 /obj/item/clothing/under/f13/slaverags
@@ -588,6 +638,7 @@
 	item_state = "blue_dress"
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/pinkdress
 	name = "pink dress"
@@ -596,6 +647,7 @@
 	item_state = "pink_dress"
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/greendress
 	name = "green dress"
@@ -604,6 +656,7 @@
 	item_state = "green_dress"
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/blackdress
 	name = "black dress"
@@ -612,6 +665,7 @@
 	item_state = "blackdress"
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/xenon	//Currently broken when worn
 	name = "flashy jumpsuit"
@@ -626,6 +680,7 @@
 	item_state = "roving"
 	item_color = "roving"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 20, "acid" = 40)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/follower
 	name = "follower volunteer uniform"
@@ -648,6 +703,7 @@
 	icon_state = "raiderrags"
 	item_state = "raiderrags"
 	item_color = "raiderrags"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/khan
 	name = "great khan uniform"
@@ -723,6 +779,7 @@
 	desc = "Dusty rags decorated with strips of leather and small pieces of turquoise."
 	icon_state = "tribalrags"
 	item_state = "tribalrags"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/tribe_chief
 	name = "tribal chief robes"
@@ -731,12 +788,14 @@
 	item_state = "chiefrags"
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/tribe_Hhunter
 	name = "Razorclaw robes"
 	desc = "Tanned leather robes, decorated with bones of deathclaws and marked with the great machine spirit of earth."
 	icon_state = "hhunterrags"
 	item_state = "hhunterrags"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/tribe_shaman
 	name = "tribal shaman robes"
@@ -745,6 +804,7 @@
 	item_state = "shamanrags"
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/wayfarer
 	name = "loincloth"
@@ -755,6 +815,7 @@
 	body_parts_covered = GROIN
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = TRUE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/wayfarer/shamanblue
 	name = "blue shaman garbs"
@@ -764,6 +825,7 @@
 	item_color = "shamanblue"
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = TRUE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/wayfarer/shamanred
 	name = "red shaman garbs"
@@ -773,6 +835,7 @@
 	item_color = "shamanred"
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = TRUE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/wayfarer/acolyte
 	name = "acolyte's garbs"
@@ -782,6 +845,7 @@
 	item_color = "acolyte"
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = TRUE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/wayfarer/hunter
 	name = "rugged loincloth"
@@ -791,6 +855,7 @@
 	item_color = "hunter"
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = TRUE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 //OUTLAW DESERTERS
 /obj/item/clothing/under/f13/exile
@@ -846,6 +911,7 @@
 	icon_state = "nato_uniform"
 	item_state = "nato_uniform"
 	item_color = "nato_uniform"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 //Prom Dress
 
@@ -942,6 +1008,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/uniform.dmi'
 	icon_state = "chinese_soldier"
 	item_state = "chinese_soldier"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/chinese/officer
 	name = "PLA officer's uniform"
@@ -950,6 +1017,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/uniform.dmi'
 	icon_state = "chinese_officer"
 	item_state = "chinese_officer"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 //Old World Law Enforcement
 //Police and State Police
@@ -961,6 +1029,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/uniform.dmi'
 	icon_state = "police_officer"
 	item_state = "police_officer"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/police/lieutenant
 	name = "police lieutenant's uniform"
@@ -969,6 +1038,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/uniform.dmi'
 	icon_state = "police_lieutenant"
 	item_state = "police_lieutenant"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/police/chief
 	name = "police chief's uniform"
@@ -977,6 +1047,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/uniform.dmi'
 	icon_state = "police_chief"
 	item_state = "police_chief"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/police/formal
 	name = "police formal uniform"
@@ -1011,6 +1082,7 @@
 	item_state = "lb_suit"
 	item_color = "machinist"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 20, "acid" = 40)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/lumberjack
 	name = "lumberjack outfit"
@@ -1018,6 +1090,7 @@
 	icon_state = "lumberjack"
 	item_state = "r_suit"
 	item_color = "lumberjack"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/police
 	name = "police uniform"
@@ -1027,6 +1100,7 @@
 	item_color = "retro_police"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 10, "fire" = 10, "acid" = 40)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/cowboyt //Originally cowboy and mafia stuff by Nienhaus
 	name = "dusty prospector outfit"
@@ -1057,6 +1131,7 @@
 	icon_state = "flapper"
 	item_state = "gy_suit"
 	item_color = "flapper"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/bdu //WalterJe military standarts.
 	name = "battle dress uniform"
@@ -1065,6 +1140,7 @@
 	item_state = "xenos_suit"
 	item_color = "bdu"
 	can_adjust = TRUE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/dbdu
 	name = "desert battle dress uniform"
@@ -1074,6 +1150,7 @@
 	item_color = "dbdu"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 20, "acid" = 40)
 	can_adjust = TRUE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/shiny //Firefly, yay!
 	name = "shiny outfit"
@@ -1088,6 +1165,7 @@
 	icon_state = "batter"
 	item_state = "w_suit"
 	item_color = "batter"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/bennys //Benny's suit from Fallout: New Vegas. But Benny was just a kid back in 2255, so it's just a fancy suit for you.
 	name = "fancy suit"
@@ -1095,6 +1173,7 @@
 	icon_state = "benny"
 	item_state = "white_suit"
 	item_color = "benny"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/relaxedwear
 	name = "pre-war male relaxedwear"
@@ -1102,6 +1181,7 @@
 	icon_state = "relaxedwear_m"
 	item_state = "g_suit"
 	item_color = "relaxedwear_m"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/spring
 	name = "pre-war male spring outfit"
@@ -1109,6 +1189,7 @@
 	icon_state = "spring_m"
 	item_state = "brownjsuit"
 	item_color = "spring_m"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/formal
 	name = "pre-war male formal wear"
@@ -1116,6 +1197,7 @@
 	icon_state = "formal_m"
 	item_state = "judge"
 	item_color = "formal_m"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/bodyguard
 	name = "bodyguard outfit"
@@ -1123,6 +1205,7 @@
 	icon_state = "bodyguard"
 	item_state = "sl_suit"
 	item_color = "bodyguard"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/westender
 	name = "classic tender outfit"
@@ -1138,6 +1221,7 @@
 	item_state = "lgloves"
 	item_color = "rag"
 	can_adjust = 0
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/tribal
 	name = "male tribal outfit"
@@ -1146,6 +1230,7 @@
 	item_state = "lgloves"
 	item_color = "tribal_m"
 	can_adjust = TRUE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/female/tribal
 	name = "female tribal outfit"
@@ -1155,6 +1240,7 @@
 	item_color = "tribal_f"
 	can_adjust = TRUE
 	fitted = NO_FEMALE_UNIFORM
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/settler
 	name = "settler outfit"
@@ -1163,6 +1249,7 @@
 	item_state = "brownjsuit"
 	item_color = "settler"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 20, "acid" = 40)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/brahmin //Male version
 	name = "male brahmin-skin outfit"
@@ -1170,6 +1257,7 @@
 	icon_state = "brahmin_m"
 	item_state = "brownjsuit"
 	item_color = "brahmin_m"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/female/brahmin //Female version
 	name = "female brahmin-skin outfit"
@@ -1177,6 +1265,7 @@
 	icon_state = "brahmin_f"
 	item_state = "brownjsuit"
 	item_color = "brahmin_f"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/doctor //Male version
 	name = "male doctor fatigues"
@@ -1209,6 +1298,7 @@
 	item_state = "bl_suit"
 	item_color = "merca_f"
 	fitted = NO_FEMALE_UNIFORM
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/merccharm //Male version
 	name = "male merc charmer outfit"
@@ -1217,6 +1307,7 @@
 	item_state = "mercc_f"
 	item_color = "mercc_m"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 20, "acid" = 40)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/mechanic
 	name = "worn blue jumpsuit"
@@ -1225,6 +1316,7 @@
 	item_state = "syndicate-blue"
 	item_color = "mechanic"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 20, "acid" = 40)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/petrochico
 	name = "worn green jumpsuit"
@@ -1233,6 +1325,7 @@
 	item_state = "centcom"
 	item_color = "petrochico"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 20, "acid" = 40)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/caravaneer
 	name = "caravaneer outift"
@@ -1241,6 +1334,7 @@
 	item_state = "syndicate-blue"
 	item_color = "caravaneer"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 10, "fire" = 10, "acid" = 40)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/merchant
 	name = "merchant outfit "
@@ -1249,13 +1343,15 @@
 	item_state = "brownjsuit"
 	item_color = "merchant"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 20, "acid" = 40)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/worn
-	name = "worn outfit "
+	name = "worn outfit"
 	desc = "A worn khaki shirt without any buttons left, and a ragged pair of jeans.<br>It may seem a bad outfit choice at first, yet there are wastelanders out there who can't afford even that."
 	icon_state = "worn"
 	item_state = "brownjsuit"
 	item_color = "worn"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/vault
 	name = "vault jumpsuit"
@@ -1295,11 +1391,13 @@
 	desc = "The regulation clothing worn by the vault dwellers, of Vault-Tec vaults. It's made of sturdy leather. <br>This jumpsuit bears the symbol of the Vault-Tec City Coalition on the back."
 	icon_state = "vaultcity"
 	item_state = "vaultcity"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/vault/vcity/skirt
 	name = "VTCC jumpskirt"
 	icon_state = "vaultcity_skirt"
 	item_state = "vaultcity_skirt"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/followers
 	name = "followers outfit"
@@ -1445,6 +1543,33 @@
 	icon_state = "spaceship_captain"
 	item_color = "spaceship_captain"
 
+/obj/item/clothing/under/f13/goner
+	name = "dev-collared utility uniform"
+	desc = "A non-existent utilitarian uniform."
+	icon_state = "goner_uniform"
+	mutantrace_variation = STYLE_DIGITIGRADE
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 20, "acid" = 50)
+
+/obj/item/clothing/under/f13/goner/red
+	name = "red-collared utility uniform"
+	desc = "An utilitarian uniform with red collar-patch and shoulder-tabs."
+	icon_state = "goner_uniform_r"
+
+/obj/item/clothing/under/f13/goner/green
+	name = "green-collared utility uniform"
+	desc = "An utilitarian uniform with green collar-patch and shoulder-tabs."
+	icon_state = "goner_uniform_g"
+
+/obj/item/clothing/under/f13/goner/blue
+	name = "blue-collared utility uniform"
+	desc = "An utilitarian uniform with blue collar-patch and shoulder-tabs."
+	icon_state = "goner_uniform_b"
+
+/obj/item/clothing/under/f13/goner/yellow
+	name = "yellow-collared utility uniform"
+	desc = "An utilitarian uniform with yellow collar-patch and shoulder-tabs."
+	icon_state = "goner_uniform_y"
+
 //Female clothing! It's not misogyny, yet dresses shall be separate from /f13/ as Fallout build has its own female subtype.
 
 /obj/item/clothing/under/pants/f13/ghoul
@@ -1452,18 +1577,21 @@
 	desc = "A pair of ripped pants that were not washed for over a hundred years.<br>Thanks to these you don't get to see ghouls genitals too often.<br><i>You can also wear these, to pretend you are a feral ghoul, just saying...</i>"
 	icon_state = "ghoul"
 	item_color = "ghoul"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/pants/f13/cloth
 	name = "cloth pants"
 	desc = "A pair of worn dusty cloth pants made of various textile pieces.<br>Commonly found all over the wasteland."
 	icon_state = "cloth"
 	item_color = "cloth"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/pants/f13/caravan //Caravanner - someone who travels with caravan. Caravaneer - caravan leader.
 	name = "caravanner pants"
 	desc = "A pair of wide dusty cargo pants.<br>Commonly worn by caravanners or caravan robbers."
 	icon_state = "caravan"
 	item_color = "caravan"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/pants/f13/warboy //Mad Max 4 2015 babe!
 	name = "war boy pants"
@@ -1471,6 +1599,7 @@
 	icon_state = "warboy"
 	item_color = "warboy"
 	body_parts_covered = LEGS
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/pants/f13/doom
 	name = "green pants"
@@ -1485,12 +1614,14 @@
 	desc = "A dry cleaned set of grey fatigues with a brown belt, commonly worn by the off-duty members of the Brotherhood of Steel."
 	icon_state = "bos_fatigues"
 	item_state = "bos_fatigues"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/bos/bodysuit
 	name = "Brotherhood Knight fatigues"
 	desc = "A bodysuit worn by members of the Brotherhood of steel."
 	icon_state = "bos_bodysuit"
 	item_state = "bos_bodysuit"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/bos/f/bodysuit
 	name = "Brotherhood bodysuit"
@@ -1498,6 +1629,7 @@
 	icon_state = "bos_bodysuit_f"
 	item_state = "bos_bodysuit_f"
 	body_parts_covered = CHEST
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/bos/bodysuit/knight
 	name = "Brotherhood Knight bodysuit"
@@ -1586,6 +1718,7 @@
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 100, "fire" = 20, "acid" = 40)
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 
 /obj/item/clothing/under/f13/atomwitchunder
@@ -1595,6 +1728,7 @@
 	item_state = "atomwitchunder"
 	item_color = "atomwitchunder"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 100, "fire" = 20, "acid" = 40)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 
 /obj/item/clothing/under/f13/atombeliever
@@ -1606,6 +1740,7 @@
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 100, "fire" = 20, "acid" = 40)
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 
 /obj/item/clothing/under/f13/raiderharness
@@ -1621,6 +1756,7 @@
 	icon_state = "fprostitute"
 	item_state = "fprostitute"
 	item_color = "fprostitute"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/mprostitute
 	name = "masculine prostitute outfit"
@@ -1628,6 +1764,7 @@
 	icon_state = "mprostitute"
 	item_state = "mprostitute"
 	item_color = "mprostitute"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/ravenharness
 	name = "raven harness"
@@ -1641,11 +1778,22 @@
 	icon_state = "jamrock_uniform"
 	item_state = "jamrock_uniform"
 
+/obj/item/clothing/under/f13/cowpoke
+	name = "cowpoke outfit"
+	desc = "A washed out gray overshirt with blue neckerchief and old jeans."
+	icon_state = "cowpoke"
+	item_state = "cowpoke"
+	can_adjust = TRUE
+	unique_reskin = list("M1" = "cowpoket",
+						"M2" = "cowpokeb",
+						"M3" = "cowpoke")
+
 /obj/item/clothing/under/f13/keksweater
 	name = "Red Sweater"
 	desc = "A dark red-sweater with some cargo-pants. Perfect for when it just gets too cold down in local air-conditioned areas."
 	icon_state = "brahminsss"
 	item_state = "brahminsss"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/locust
 	name = "locust uniform"
@@ -1653,6 +1801,7 @@
 	icon_state = "locust"
 	item_state = "locust"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 20, "acid" = 40)
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/marlowduds
 	name = "Marlow gang attire"
@@ -1660,6 +1809,7 @@
 	icon_state = "marlowduds"
 	item_state = "marlowduds"
 	can_adjust = TRUE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/ikeduds
 	name = "gunfighter's gang attire"
@@ -1667,6 +1817,7 @@
 	icon_state = "ikeduds"
 	item_state = "ikeduds"
 	can_adjust = TRUE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/helenduds
 	name = "gambler's gang attire"
@@ -1674,12 +1825,14 @@
 	icon_state = "helenduds"
 	item_state = "helenduds"
 	can_adjust = TRUE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/masonduds
 	name = "vagabond's gang attire"
 	desc = "A pair of worn buckskin trousers held up by a heavy pistol belt. The attire is synonymous with the colors of the criminal Marlow gang."
 	icon_state = "masonduds"
 	item_state = "masonduds"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 //Super Mutants
 
@@ -1721,6 +1874,7 @@
 	desc = "A dark grey, and finely pressed suit, complete with kneepads and a suspiciously golden silk shirt, only the best."
 	icon_state = "den_suit"
 	item_state = "den_suit"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/mutie_suit
 	name = "large black suit"
@@ -1761,6 +1915,7 @@
 	item_state = "white_legs_under"
 	item_color = "white_legs_under"
 	can_adjust = TRUE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/female/whitelegs
 	name = "White Legs garb"
@@ -1769,6 +1924,7 @@
 	item_state = "white_legs_under_f"
 	item_color = "white_legs_under_f"
 	can_adjust = TRUE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/rustwalkers
 	name = "Rustwalkers outfit"
@@ -1777,6 +1933,7 @@
 	item_state = "rustwalkers_under"
 	item_color = "rustwalkers_under"
 	can_adjust = TRUE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/female/rustwalkers
 	name = "Rustwalkers outfit"
@@ -1784,6 +1941,7 @@
 	icon_state = "rustwalkers_under_f"
 	item_state = "rustwalkers_under_f"
 	item_color = "rustwalkers_under_f"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/eighties
 	name = "Eighties outfit"
@@ -1791,6 +1949,7 @@
 	icon_state = "80s_under"
 	item_state = "80s_under"
 	item_color = "80s_under"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/female/eighties
 	name = "Eighties outfit"
@@ -1798,6 +1957,7 @@
 	icon_state = "80s_under_f"
 	item_state = "80s_under_f"
 	item_color = "80s_under_f"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/deadhorses
 	name = "Dead Horses garb"
@@ -1805,6 +1965,7 @@
 	icon_state = "dead_horses_under"
 	item_state = "dead_horses_under"
 	item_color = "dead_horses_under"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/female/deadhorses
 	name = "Dead Horses garb"
@@ -1812,6 +1973,7 @@
 	icon_state = "dead_horses_under_f"
 	item_state = "dead_horses_under_f"
 	item_color = "dead_horses_under_f"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/sorrows
 	name = "Sorrows garb"
@@ -1819,6 +1981,7 @@
 	icon_state = "sorrows_under"
 	item_state = "sorrows_under"
 	item_color = "sorrows_under"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/female/sorrows
 	name = "Sorrows garb"
@@ -1826,6 +1989,7 @@
 	icon_state = "sorrows_under_f"
 	item_state = "sorrows_under_f"
 	item_color = "sorrows_under_f"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/bone
 	name = "Bone Dancer outfit"
@@ -1837,6 +2001,7 @@
 	alt_covers_chest = TRUE
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = TRUE
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/bibledog
 	name = "SLPD Uniform"

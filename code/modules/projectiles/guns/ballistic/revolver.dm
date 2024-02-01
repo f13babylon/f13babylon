@@ -7,7 +7,7 @@
 	desc = "should not exist."
 	icon_state = "revolver"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder
-	fire_delay = 4.5
+	fire_delay = 5
 	spread = 1
 	force = 12 // Pistol whip
 	casing_ejector = FALSE
@@ -17,6 +17,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	var/select = 0
 	equipsound = 'sound/f13weapons/equipsounds/pistolequip.ogg'
+	gun_slide = 'sound/weapons/guns/slide_revolver.ogg'			//Yeah it's not a 'slide' but revolver uses the same code, quirkly.
 
 /obj/item/gun/ballistic/revolver/Initialize(mapload)
 	. = ..()
@@ -151,7 +152,7 @@
 	icon_state = "45revolver"
 	icon = 'icons/obj/guns/gunfruits2022/pistols.dmi'
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev45
-	fire_delay = 4.5
+	fire_delay = 5
 	spread = 1
 	fire_sound = 'sound/f13weapons/45revolver.ogg'
 	extra_damage = 5
@@ -170,7 +171,7 @@
 	item_state = "357colt"
 	icon = 'icons/obj/guns/gunfruits2022/pistols.dmi'
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev357
-	fire_delay = 4.5
+	fire_delay = 5
 	spread = 0
 	fire_sound = 'sound/f13weapons/357magnum.ogg'
 	extra_damage = 5
@@ -180,7 +181,7 @@
 	desc = "A .357 magnum revolver that has been modified to fire from a chain of twenty shells. Fanning is the only way to utilize it properly."
 	icon_state = "357chain"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev357/chain
-	fire_delay = 0.7
+	fire_delay = 2
 	spread = 20
 	recoil = 3
 	extra_damage = -4
@@ -257,17 +258,17 @@
 	icon_state = "rhino_america"
 	can_scope = FALSE
 	extra_damage = 23 //for a combined total of 55 damage, as good as the 14mm pistol and plasma pistol.
-	fire_delay = 3.5 //it should still fire slow but not too slow
+	fire_delay = 4 //it should still fire slow but not too slow
 
-//Peacekeeper					 Keywords: OASIS, .44, Double action, 6 rounds cylinder, Extra Firemode
+//Peacekeeper					 Keywords: Experimental, .44, Double action, 6 rounds cylinder
 /obj/item/gun/ballistic/revolver/m29/peacekeeper
 	name = "Peacekeeper"
-	desc = "When you don't just need excessive force, but crave it. This .44 has a special hammer mechanism, allowing for measured powerful shots, or fanning for a flurry of inaccurate shots."
+	desc = "When you don't just need excessive force, but crave it. This .44 has a special hammer mechanism, allowing for consistent fanning for a flurry of inaccurate shots."
 	item_state = "m29peace"
 	icon_state = "mysterious_m29"
 	icon = 'icons/obj/guns/gunfruits2022/pistols.dmi'
 	automatic = 1
-	autofire_shot_delay = 1
+	autofire_shot_delay = 3
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	can_scope = FALSE
 
@@ -289,7 +290,7 @@
 	item_state = "44colt"
 	icon_state = "44colt"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev44
-	fire_delay = 4.5
+	fire_delay = 5
 	spread = 0
 	fire_sound = 'sound/f13weapons/44revolver.ogg'
 
@@ -328,7 +329,7 @@
 	recoil = 0.2
 	can_scope = TRUE
 	scope_state = "revolver_scope"
-	fire_delay = 5.5
+	fire_delay = 6
 	scope_x_offset = 9
 	scope_y_offset = 20
 	fire_sound = 'sound/f13weapons/sequoia.ogg'
@@ -341,7 +342,7 @@
 	icon_state = "sequoia"
 	item_state = "sequoia"
 	can_scope = FALSE
-	fire_delay = 1
+	fire_delay = 3
 	extra_damage = 0
 
 /obj/item/gun/ballistic/revolver/hunting/sequoia/bayonet
@@ -364,7 +365,7 @@
 	item_state = "coltwalker"
 	icon_state = "peacemaker"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev45/gunslinger
-	fire_delay = 4.5
+	fire_delay = 5
 	fire_sound = 'sound/f13weapons/45revolver.ogg'
 	spread = 0 //Your reward for the slower fire rate is less spread anddd
 
@@ -381,9 +382,18 @@
 	recoil = 0.5
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
 	extra_damage = 9
-	extra_penetration = 0.08
+	extra_penetration = 0.05		//10-15% AP Total
 
-
+//Colt 6520 Revolver			Keywords: 10mm, Semi-Automatic, 12 rounds internal, Revolver - Somehow! (Balanced around N99 - that can take attach, this can't)
+/obj/item/gun/ballistic/revolver/colt6520
+	name = "Colt 6520 revolver"
+	desc = "A Colt 6520 'automatic' revolver. This oddity was developed by Colt prior to the Great War, featuring a slide mechanism working in tandum with the revolving cylander. This weapon manages to eject its shells automatically!"
+	icon_state = "colt6520"
+	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/colt6520
+	fire_sound = 'sound/f13weapons/10mm_fire_02.ogg'
+	recoil = 0.3
+	fire_delay = 4		// Slightly higher than the n99
+	extra_damage = 10	// +4 damage compared to n99
 
 /////////////
 // NEEDLER //
@@ -392,7 +402,8 @@
 //Needler						Keywords: Needler, Double action, 10 rounds internal
 /obj/item/gun/ballistic/revolver/needler
 	name = "Needler pistol"
-	desc = "You suspect this Bringham needler pistol was once used in scientific field studies. It uses small hard-plastic hypodermic darts as ammo. "
+	desc = "You suspect this Bringham needler pistol was once used in scientific field studies. It uses small hard-plastic hypodermic darts as ammo."
+	icon = 'icons/obj/guns/gunfruits2022/pistols.dmi'
 	icon_state = "needler"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/revneedler
 	fire_sound = 'sound/weapons/gunshot_silenced.ogg'

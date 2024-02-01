@@ -10,6 +10,7 @@
 	density = TRUE
 	pixel_x = -16
 	layer = FLY_LAYER
+	plane = MOB_PLANE
 	var/log_amount = 10
 
 /obj/structure/flora/tree/attackby(obj/item/W, mob/user, params)
@@ -415,7 +416,7 @@
 
 /obj/structure/flora/grass/jungle
 	name = "jungle grass"
-	desc = "Thick alien flora."
+	desc = "Thick flora."
 	icon = 'icons/obj/flora/jungleflora.dmi'
 	icon_state = "grassa"
 

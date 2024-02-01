@@ -134,8 +134,8 @@
 		I = i
 		var/percent = percentage_by_item[I]
 		if(!ui_item_blocks[I])
-			ui_item_blocks[I] = new /obj/screen/storage/volumetric_box/center(null, src, I)
-		var/obj/screen/storage/volumetric_box/center/B = ui_item_blocks[I]
+			ui_item_blocks[I] = new /atom/movable/screen/storage/volumetric_box/center(null, src, I)
+		var/atom/movable/screen/storage/volumetric_box/center/B = ui_item_blocks[I]
 		var/pixels_to_use = overrun? MINIMUM_PIXELS_PER_ITEM : max(using_horizontal_pixels * percent, MINIMUM_PIXELS_PER_ITEM)
 		var/addrow = FALSE
 		if(CEILING(pixels_to_use, 1) >= FLOOR(horizontal_pixels - current_pixel - VOLUMETRIC_STORAGE_EDGE_PADDING, 1))

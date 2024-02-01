@@ -149,12 +149,12 @@
 	build_path = /obj/item/ammo_casing/a357
 	category = list("hacked", "Security")
 
-/datum/design/a762
+/datum/design/a762mm
 	name = "Rifle Bullet (7.62mm)"
 	id = "a762"
 	build_type = AUTOLATHE | NO_PUBLIC_LATHE
 	materials = list(/datum/material/iron = 5000) //need seclathe for clips
-	build_path = /obj/item/ammo_casing/a762
+	build_path = /obj/item/ammo_casing/a762mm
 	category = list("hacked", "Security")
 
 /datum/design/c10mm
@@ -205,4 +205,3 @@
 	materials = list(/datum/material/iron = 5500)
 	build_path = /obj/item/clothing/head/foilhat
 	category = list("hacked", "Misc")
-

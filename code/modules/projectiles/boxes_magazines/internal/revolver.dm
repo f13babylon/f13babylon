@@ -17,12 +17,6 @@
 	caliber = "357"
 	max_ammo = 6
 
-/obj/item/ammo_box/magazine/internal/cylinder/rev6520
-	name = "6520 10mm cylinder"
-	ammo_type = /obj/item/ammo_casing/c10mm
-	caliber = "10mm"
-	max_ammo = 12
-
 /obj/item/ammo_box/magazine/internal/cylinder/rev4570
 	name = "4570 cylinder"
 	ammo_type = /obj/item/ammo_casing/c4570
@@ -47,8 +41,8 @@
 
 /obj/item/ammo_box/magazine/internal/cylinder/improvisedpipe
 	name = "improvised internal magazine piperifle"
-	ammo_type = /obj/item/ammo_casing/a556/sport
-	caliber = "a556"
+	ammo_type = /obj/item/ammo_casing/a556mm/sport
+	caliber = "a556mm"
 	max_ammo = 1
 
 /obj/item/ammo_box/magazine/internal/cylinder/improvised45
@@ -77,15 +71,21 @@
 
 /obj/item/ammo_box/magazine/internal/cylinder/improvised762
 	name = "improvised internal magazine .308"
-	ammo_type = /obj/item/ammo_casing/a762/sport
-	caliber = "a762"
+	ammo_type = /obj/item/ammo_casing/a762mm/sport
+	caliber = "a762mm"
 	max_ammo = 2
 
 /obj/item/ammo_box/magazine/internal/cylinder/thatgun
 	name = ".223 pistol cylinder"
-	ammo_type = /obj/item/ammo_casing/a556
-	caliber = "a556"
+	ammo_type = /obj/item/ammo_casing/a556mm
+	caliber = "a556mm"
 	max_ammo = 5
+
+/obj/item/ammo_box/magazine/internal/cylinder/colt6520
+	name = "10mm pistol cylinder"
+	ammo_type = /obj/item/ammo_casing/c10mm
+	caliber = "10mm"
+	max_ammo = 12
 
 /obj/item/ammo_box/magazine/internal/cylinder/rev44
 	name = "44 magnum cylinder"

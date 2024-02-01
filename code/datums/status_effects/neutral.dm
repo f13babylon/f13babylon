@@ -48,7 +48,7 @@
 	get_kill()
 	return ..()
 
-/obj/screen/alert/status_effect/in_love
+/atom/movable/screen/alert/status_effect/in_love
 	name = "In Love"
 	desc = "You feel so wonderfully in love!"
 	icon_state = "in_love"
@@ -57,7 +57,7 @@
 	id = "in_love"
 	duration = -1
 	status_type = STATUS_EFFECT_UNIQUE
-	alert_type = /obj/screen/alert/status_effect/in_love
+	alert_type = /atom/movable/screen/alert/status_effect/in_love
 	var/mob/living/date
 
 /datum/status_effect/in_love/on_creation(mob/living/new_owner, mob/living/love_interest)
@@ -83,3 +83,22 @@
 /datum/status_effect/throat_soothed/on_remove()
 	REMOVE_TRAIT(owner, TRAIT_SOOTHED_THROAT, "[STATUS_EFFECT_TRAIT]_[id]")
 	return ..()
+
+//this effect gives the user an alert they can use to surrender quickly
+/datum/status_effect/grouped/surrender
+	id = "surrender"
+	duration = -1
+	tick_interval = -1
+	status_type = STATUS_EFFECT_UNIQUE
+	alert_type = /atom/movable/screen/alert/status_effect/surrender/
+
+/atom/movable/screen/alert/status_effect/surrender
+	name = "Surrender"
+	desc = "Click here to surrender. (Warning: You will be incapacitated.)"
+	icon = 'icons/mob/actions/actions_items.dmi'
+	icon_state = "surrender"
+
+/atom/movable/screen/alert/status_effect/surrender/Click(location, control, params)
+	. = ..()
+	var/mob/living/C = usr
+	C.emote("surrender")

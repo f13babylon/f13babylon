@@ -89,7 +89,7 @@
 		/obj/item/stack/sheet/runed_metal	        = /datum/species/golem/runic,
 		/obj/item/stack/medical/gauze	            = /datum/species/golem/cloth,
 		/obj/item/stack/sheet/cloth	                = /datum/species/golem/cloth,
-		/obj/item/stack/sheet/mineral/adamantine	= /datum/species/golem/adamantine,
+		/obj/item/stack/sheet/mineral/saturnite	= /datum/species/golem/saturnite,
 		/obj/item/stack/sheet/plastic	            = /datum/species/golem/plastic,
 		/obj/item/stack/tile/brass					= /datum/species/golem/clockwork,
 		/obj/item/stack/sheet/bronze					= /datum/species/golem/bronze,
@@ -144,7 +144,7 @@
 	ears = /obj/item/radio/headset/syndicate/alt
 	back = /obj/item/storage/backpack
 	r_pocket = /obj/item/gun/ballistic/automatic/pistol
-	id = /obj/item/card/id/syndicate/anyone
+	id = /obj/item/card/id/syndicate
 	implants = list(/obj/item/implant/weapons_auth)
 
 /datum/outfit/lavaland_syndicate/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)

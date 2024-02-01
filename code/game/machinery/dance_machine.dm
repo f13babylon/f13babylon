@@ -1,15 +1,17 @@
 /obj/machinery/jukebox
 	name = "jukebox"
-	desc = "A classic music player."
+	desc = "A classic music player, loaded with a wide array of songs."
 	icon = 'icons/obj/stationobjs.dmi'
 	icon_state = "jukebox"
 	verb_say = "states"
 	density = TRUE
-	req_one_access = list(ACCESS_BAR, ACCESS_KITCHEN, ACCESS_HYDROPONICS, ACCESS_ENGINE, ACCESS_CARGO, ACCESS_THEATRE)
+	req_one_access = list()
 	var/active = FALSE
 	var/list/rangers = list()
 	var/stop = 0
 	var/volume = 70
+	var/list/available_types = list("Base")
+	var/list/music_tapes = list()
 	var/datum/track/selection = null
 
 /obj/machinery/jukebox/disco
@@ -44,7 +46,37 @@
 				setAnchored(FALSE)
 			playsound(src, 'sound/items/deconstruct.ogg', 50, 1)
 			return
+
+	if(istype(O, /obj/item/musictape))
+		var/obj/item/musictape/D = O
+		if(!(D.music_category in available_types))
+			if(user.transferItemToLoc(O, src))
+				to_chat(user, span_notice("You insert \the [O] into the jukebox."))
+				playsound(src, 'sound/machines/terminal_insert_disc.ogg', 50)
+				music_tapes += O
+				available_types += D.music_category
+		else
+			to_chat(user, span_warning("The jukebox already has the music on [O]!"))
+		return
 	return ..()
+
+/obj/machinery/jukebox/AltClick(mob/user)
+	var/list/choice_list = list()
+	for(var/obj/item/musictape/X in music_tapes)
+		choice_list[X] = image(X)
+	var/obj/item/musictape/choice =  show_radial_menu(user, src, choice_list, require_near = TRUE, tooltips = TRUE)
+	if(user && (choice in music_tapes))
+		remove_tape(user, choice)
+
+/obj/machinery/jukebox/proc/remove_tape(mob/living/user, obj/item/musictape/choice)
+	user.visible_message(span_notice("[user] removes \the [choice] from the jukebox!"), \
+		span_notice("You remove [choice] from the jukebox."))
+	choice.add_fingerprint(user)
+	user.put_in_hands(choice)
+
+	music_tapes -= choice
+	available_types -= choice.music_category
+	playsound(src, 'sound/machines/terminal_eject_disc.ogg', 50)
 
 /obj/machinery/jukebox/update_icon_state()
 	if(active)
@@ -54,14 +86,14 @@
 
 /obj/machinery/jukebox/ui_status(mob/user)
 	if(!anchored)
-		to_chat(user,"<span class='warning'>This device must be anchored by a wrench!</span>")
+		to_chat(user,"<span class='warning'>The jukebox must be anchored by a wrench!</span>")
 		return UI_CLOSE
 	if(!allowed(user) && !isobserver(user))
 		to_chat(user,"<span class='warning'>Error: Access Denied.</span>")
 		user.playsound_local(src, 'sound/misc/compiler-failure.ogg', 25, TRUE)
 		return UI_CLOSE
 	if(!SSjukeboxes.songs.len && !isobserver(user))
-		to_chat(user,"<span class='warning'>Error: No music tracks have been authorized for your station. Petition Central Command to resolve this issue.</span>")
+		to_chat(user,"<span class='warning'>Error: No music tracks have been loaded into the jukebox!</span>")
 		playsound(src, 'sound/misc/compiler-failure.ogg', 25, TRUE)
 		return UI_CLOSE
 	return ..()
@@ -77,10 +109,11 @@
 	data["active"] = active
 	data["songs"] = list()
 	for(var/datum/track/S in SSjukeboxes.songs)
-		var/list/track_data = list(
-			name = S.song_name
-		)
-		data["songs"] += list(track_data)
+		if(S.song_type in available_types)
+			var/list/track_data = list(
+				name = S.song_name
+			)
+			data["songs"] += list(track_data)
 	data["track_selected"] = null
 	data["track_length"] = null
 	data["track_beat"] = null
@@ -102,7 +135,7 @@
 				return
 			if(!active)
 				if(stop > world.time)
-					to_chat(usr, "<span class='warning'>Error: The device is still resetting from the last activation, it will be ready again in [DisplayTimeText(stop-world.time)].</span>")
+					to_chat(usr, "<span class='warning'>Error: The jukebox is not ready for use yet. It will be ready again in [DisplayTimeText(stop-world.time)].</span>")
 					playsound(src, 'sound/misc/compiler-failure.ogg', 50, TRUE)
 					return
 				activate_music()
@@ -143,6 +176,7 @@
 	if(jukeboxslottotake)
 		active = TRUE
 		update_icon()
+		desc = "A classic music player, loaded with a wide array of songs. Currently playing: <span class='notice'>[selection.song_name]</span>"
 		START_PROCESSING(SSobj, src)
 		stop = world.time + selection.song_length
 		return TRUE
@@ -444,7 +478,7 @@
 		dance_over()
 		playsound(src,'sound/machines/terminal_off.ogg',50,1)
 		update_icon()
-		stop = world.time + 100
+		stop = world.time + 20
 
 
 /obj/machinery/jukebox/disco/process()

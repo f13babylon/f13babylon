@@ -29,10 +29,8 @@
 								/obj/item/reagent_containers/food/snacks/grown/fungus = 5,
 								/obj/item/reagent_containers/food/snacks/grown/agave = 5,
 								/obj/item/reagent_containers/pill/patch/jet = 10,
-								/obj/item/reagent_containers/pill/patch/healingpowder = 30,
 								/obj/item/reagent_containers/hypospray/medipen/psycho = 20,
 								/obj/item/reagent_containers/hypospray/medipen/medx = 75,
-								/obj/item/reagent_containers/pill/patch/healingpoultice = 50,
 								/obj/item/export/bottle/gin = 25,
 								/obj/item/export/bottle/wine = 25,
 								/obj/item/export/bottle/whiskey = 25,
@@ -42,7 +40,7 @@
 								/obj/item/export/bottle/rum = 25,
 								/obj/item/export/bottle/vermouth = 25,
 								/obj/item/export/bottle/kahlua = 25,
-								/obj/item/export/bottle/goldschlager = 75,
+								/obj/item/export/bottle/goldschlager = 50,
 								/obj/item/export/bottle/hcider = 25,
 								/obj/item/export/bottle/cognac = 25,
 								/obj/item/export/bottle/absinthe = 25,
@@ -53,7 +51,7 @@
 								/obj/item/export/bottle/champagne = 25,
 								/obj/item/export/bottle/trappist = 25,
 								/obj/item/export/bottle/minikeg = 25,
-								/obj/item/export/bottle/nukashine = 100,
+								/obj/item/export/bottle/nukashine = 50,
 								)
 
 /obj/machinery/mineral/wasteland_trader/general
@@ -87,9 +85,8 @@
 	dat += "Silver Bars: 5 caps<br>"
 	dat += "Gold Bars: 10 caps<br>"
 	dat += "Cut Diamonds : 20 caps<br>"
-	dat += "Jet/Psycho/MedX : 10/20/100 caps<br>"
-	dat += "Healing Powder/Healing Paultice : 30/50 caps<br>"
-	dat += "Sealed Bottle of Alcohol: 25-100 caps<br>"
+	dat += "Jet/Psycho/MedX : 10/20/75 caps<br>"
+	dat += "Sealed Bottle of Alcohol: 25-50 caps<br>"
 	dat += ""
 	dat += "</div>"
 
@@ -283,7 +280,7 @@ Fence
 								/obj/item/clothing/suit/f13/elder = 300,
 								/obj/item/clothing/accessory/bos/elder = 300,
 								/obj/item/gun/energy/laser/laer = 600,
-								/obj/item/clothing/neck/mantle/bos/right = 300
+								/obj/item/clothing/neck/mantle/holster/bos/right = 300
 
 								)
 
@@ -328,7 +325,7 @@ Fence
 						/obj/item/gun/ballistic/revolver/widowmaker = 10,
 						/obj/item/gun/ballistic/revolver/winchesterrebored = 10,
 						/obj/item/gun/ballistic/automatic/autopipe = 15,
-						/obj/item/gun/ballistic/rifle/hobo/lasmusket = 15,
+						/obj/item/gun/energy/lasmusket = 15,
 						/obj/item/stack/crafting/armor_plate = 20,
 						)
 

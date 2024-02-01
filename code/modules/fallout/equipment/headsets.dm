@@ -1,7 +1,7 @@
 //FALLOUT
 /obj/item/radio/headset/headset_overseer
 	name = "\proper the overseer's radio headset"
-	desc = "This is used by the vault overseer.\nChannels are as follows: :v - vault, :c - command, :s - security, :e - engineering, :m - medical, :n - science."
+	desc = "This is used by the vault overseer.\nChannels are as follows: .b - Vault, .c - Command, .s - Security, .e - Engineering, .m - Medical, .n - Science."
 	icon_state = "com_headset"
 	keyslot = new /obj/item/encryptionkey/headset_overseer
 	frequency = FREQ_VAULT
@@ -10,7 +10,7 @@
 
 /obj/item/radio/headset/headset_vault_hos
 	name = "\proper the chief of security's radio headset"
-	desc = "The headset of the man in charge of keeping order and protecting the vault.\nChannels are as follows: :v - vault, :c - command, :s - security."
+	desc = "The headset of the man in charge of keeping order and protecting the Vault.\nChannels are as follows: .b - Vault, .c - Command, .s - Security."
 	icon_state = "com_headset"
 	keyslot = new /obj/item/encryptionkey/headset_vault_hos
 	frequency = FREQ_VAULT
@@ -23,7 +23,7 @@
 
 /obj/item/radio/headset/headset_vault
 	name = "\proper vault radio headset"
-	desc = "A vault-tec radio.\nChannels are as follows: :v - vault."
+	desc = "A vault-tec radio.\nUse .b To access the Vault channel."
 	keyslot = new /obj/item/encryptionkey/headset_vault
 	frequency = FREQ_VAULT
 	freerange = TRUE
@@ -31,7 +31,7 @@
 
 /obj/item/radio/headset/headset_vaultsec
 	name = "security radio headset"
-	desc = "This is used by your elite security force.\nTo access the security channel, use :s. To access the vault channel, use :v."
+	desc = "This is used by your elite security force.\nChannels are as follows: .b - Vault, .s - Security."
 	icon_state = "sec_headset"
 	keyslot = new /obj/item/encryptionkey/headset_vault_security
 	frequency = FREQ_VAULT
@@ -44,7 +44,7 @@
 
 /obj/item/radio/headset/headset_vault_hos/alt
 	name = "\proper the head of security's bowman headset"
-	desc = "The headset of the man in charge of keeping order and protecting the station. Protects ears from flashbangs.\nTo access the security channel, use :s. For command, use :c. For vault, use :v"
+	desc = "The headset of the man in charge of keeping order and protecting the station. Protects ears from flashbangs.\nChannels are as follows: .b - Vault, .c - Command, .s - Security."
 	icon_state = "com_headset_alt"
 	item_state = "com_headset_alt"
 	frequency = FREQ_VAULT
@@ -52,62 +52,66 @@
 	freqlock = TRUE
 
 /obj/item/radio/headset/headset_ncr
-	name = "NCR radio headset"
-	desc = "This is used by the New California Republic.\nTo access the NCR channel, use :w."
+	name = "\improper NCR radio headset"
+	desc = "This is used by the New California Republic.\nUse .w To access the NCR channel."
 	icon_state = "mine_headset"
 	keyslot = new /obj/item/encryptionkey/headset_ncr
 	linked_faction = FACTION_NCR
 	factionized = TRUE
 
 /obj/item/radio/headset/headset_ranger
-	name = "Ranger radio headset"
-	desc = "This is used by the New California Republic.\nTo access the NCR channel, use :w. \nTo access the Ranger channel, use :r. Protects ears from flashbangs."
+	name = "ranger radio headset"
+	desc = "This is used by the Rangers of the New California Republic.\nChannels are as follows: .w - NCR, .r - Ranger."
 	icon_state = "mine_headset"
 	keyslot = new /obj/item/encryptionkey/headset_ranger
 	linked_faction = FACTION_NCR
 	factionized = TRUE
 
-/obj/item/radio/headset/headset_ranger/ComponentInitialize()
+/obj/item/radio/headset/headset_ncr/alt
+	name = "\improper NCR bowman radio headset"
+	icon_state = "com_headset_alt"
+	item_state = "com_headset_alt"
+	desc = "This is used by the New California Republic. Protects ears from flashbangs.\nUse .w To access the NCR channel."
+
+/obj/item/radio/headset/headset_ncr/alt/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
 
-
-/obj/item/radio/headset/headset_ncr_com
-	name = "NCR Command radio headset"
-	desc = "This is used by the New California Republic.\nTo access the NCR channel, use :w. \nTo access the Ranger channel, use :r. Protects ears from flashbangs."
+/obj/item/radio/headset/headset_ncr/command
+	name = "\improper NCR command radio headset"
+	desc = "This is used by the Command of the New California Republic. Protects ears from flashbangs.\nChannels are as follows: .w - NCR, .r - Ranger."
 	icon_state = "com_headset_alt"
 	item_state = "com_headset_alt"
 	keyslot = new /obj/item/encryptionkey/headset_ranger
-	linked_faction = FACTION_NCR
-	factionized = TRUE
 	command = TRUE
 
-/obj/item/radio/headset/headset_ncr_com/ComponentInitialize()
+/obj/item/radio/headset/headset_ncr/command/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
 
 /obj/item/radio/headset/headset_legion
-	name = "Legion radio headset"
-	desc = "This is used by Caesar's Legion.\nTo access the Legion channel, use :l."
+	name = "legion radio headset"
+	desc = "This is used by Caesar's Legion.\nUse .l To access the Legion channel."
 	icon_state = "sec_headset"
 	item_state = "headset_alt"
 	keyslot = new /obj/item/encryptionkey/headset_legion
 	linked_faction = FACTION_LEGION
 	factionized = TRUE
 
-/obj/item/radio/headset/headset_legion/cent
-	desc = "This is used by the Centurion of Caesar's Legion.\nTo access the Legion channel, use :l. Protects ears from flashbangs."
-	command = TRUE
+/obj/item/radio/headset/headset_legion/command
+	name = "legion command radio headset"
+	desc = "This is used by the Command of Caesar's Legion. Protects ears from flashbangs.\nUse .l To access the Legion channel."
 	icon_state = "sec_headset_alt"
 	item_state = "sec_headset_alt"
+	command = TRUE
 
-/obj/item/radio/headset/headset_legion/cent/ComponentInitialize()
+/obj/item/radio/headset/headset_legion/command/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
 
 /obj/item/radio/headset/headset_bos
 	name = "brotherhood radio headset"
-	desc = "This is used by the brotherhood of steel.\nTo access the BOS channel, use :q. Protects ears from flashbangs."
+	desc = "This is used by the Brotherhood of Steel. Protects ears from flashbangs.\nUse .q To access the Brotherhood channel."
 	icon_state = "cent_headset"
 	keyslot = new /obj/item/encryptionkey/headset_bos
 	linked_faction = FACTION_BROTHERHOOD
@@ -118,12 +122,14 @@
 	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
 
 /obj/item/radio/headset/headset_bos/command
+	name = "brotherhood command radio headset"
+	desc = "This is used by the leaders of the Brotherhood of Steel. Protects ears from flashbangs.\nUse .q To access the Brotherhood channel."
 	command = TRUE
 	icon_state = "cent_headset_alt"
 
 /obj/item/radio/headset/headset_enclave
 	name = "enclave radio headset"
-	desc = "This is used by the enclave.\nTo access the enclave channel, use :z. Protects ears from flashbangs."
+	desc = "This is used by the Enclave. Protects ears from flashbangs.\nUse .z To access the Enclave channel."
 	icon_state = "syndie_headset"
 	keyslot = new /obj/item/encryptionkey/headset_enclave
 	linked_faction = FACTION_ENCLAVE
@@ -134,46 +140,46 @@
 	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
 
 /obj/item/radio/headset/headset_enclave/command
-	linked_faction = FACTION_ENCLAVE
-	factionized = TRUE
+	name = "enclave command radio headset"
+	desc = "This is used by the Command of the Enclave. Protects ears from flashbangs.\nUse .z To access the Enclave channel."
 	command = TRUE
 
 /obj/item/radio/headset/headset_khans
 	name = "khan radio headset"
-	desc = "This is used by the Khans.\nTo access the Khan channel, use :h."
+	desc = "This is used by the Khans.\nUse .a To access the Khan channel."
 	icon_state = "syndie_headset"
 	item_state = "headset_alt"
 	keyslot = new /obj/item/encryptionkey/headset_khans
 
 /obj/item/radio/headset/headset_town
 	name = "town radio headset"
-	desc = "This is used by the town.\nTo access the town channel, use :f."
+	desc = "This is used by the town.\nUse .f To access the Town channel."
 	icon_state = "mine_headset"
 	keyslot = new /obj/item/encryptionkey/headset_town
 
 /obj/item/radio/headset/headset_sheriff
-	name = "town radio headset"
-	desc = "This is used by the Sheriff and their deputy force."
+	name = "peacekeeper radio headset"
+	desc = "This is used by the peacekeeping force of the town.\nChannels are as follows: .f - Town, .s - Security."
 	icon_state = "sec_headset"
 	keyslot = new /obj/item/encryptionkey/headset_sec
 	keyslot2 = new /obj/item/encryptionkey/headset_town
 
 /obj/item/radio/headset/headset_followers
 	name = "followers radio headset"
-	desc = "This is used by the followers.\nTo access the town channel, use :f. \nTo access the medical channel, use :m"
+	desc = "This is used by the followers.\nChannels are as follows: .f - Town, .m - Medical."
 	icon_state = "med_headset"
 	keyslot = new /obj/item/encryptionkey/headset_med
 	keyslot2 = new /obj/item/encryptionkey/headset_town
 
 /obj/item/radio/headset/headset_den
 	name = "den radio headset"
-	desc = "This is used by the den. \nTo access the den channel, use :j."
+	desc = "This is used by the den.\nUse .j To access the Den channel."
 	icon_state = "mine_headset"
 	keyslot = new /obj/item/encryptionkey/headset_den
 
 /obj/item/radio/headset/headset_cent
 	name = "\improper Vault-Tec headset"
-	desc = "A headset used by the upper echelons of Vault-Tec.\nTo access the Vault-Tec channel, use :y."
+	desc = "A headset used by the upper echelons of Vault-Tec.\nUse .y To access the Vault-Tec channel."
 	icon_state = "cent_headset"
 	keyslot = new /obj/item/encryptionkey/headset_com
 	keyslot2 = new /obj/item/encryptionkey/headset_cent
@@ -187,7 +193,7 @@
 
 /obj/item/radio/headset/headset_cent/alt
 	name = "\improper Vault-Tec bowman headset"
-	desc = "A headset especially for emergency response personnel. Protects ears from flashbangs.\nTo access the Vault-Tec channel, use :y."
+	desc = "A headset especially for emergency response personnel. Protects ears from flashbangs.\nUse .y To access the Vault-Tec channel."
 	icon_state = "cent_headset_alt"
 	item_state = "cent_headset_alt"
 	keyslot = null

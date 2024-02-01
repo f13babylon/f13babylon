@@ -534,6 +534,14 @@
 			if("shade")
 				M.change_mob_type( /mob/living/simple_animal/shade , null, null, delmob )
 
+	/////////////////////////////////////removes player profile pic
+	else if(href_list["removeProfilePic"])
+		if(!check_rights(R_ADMIN))
+			return
+
+		if(alert(usr, "Are you sure you want to remove their profile picture?", "Confirmation", "Yes", "No") == "Yes")
+			var/mob/living/carbon/human/H = locate(href_list["removeProfilePic"])
+			H.RemoveProfilePic()
 
 	/////////////////////////////////////new ban stuff
 	else if(href_list["unbanf"])
@@ -1464,6 +1472,13 @@
 			log_admin("INVALID ADMIN PROC ACCESS: [key_name(usr)] tried to use /datum/admins/proc/CheckAdminHref(): mute without admin perms.")
 			return
 		cmd_admin_mute(href_list["mute"], text2num(href_list["mute_type"]))
+
+	else if(href_list["verify"])
+		if(!check_rights(R_ADMIN))
+			message_admins("[ADMIN_TPMONTY(usr)] tried to use /datum/admins/proc/CheckAdminHref(): verify without admin perms.")
+			log_admin("INVALID ADMIN PROC ACCESS: [key_name(usr)] tried to use /datum/admins/proc/CheckAdminHref(): verify without admin perms.")
+			return
+		cmd_admin_verify(href_list["verify"])
 
 	else if(href_list["c_mode"])
 		return HandleCMode()
@@ -3240,6 +3255,16 @@
 			return
 
 		usr.client.holder.toggle_sleep(perp)
+
+	else if(href_list["CommsMsgReply"])
+		if(!check_rights(R_ADMIN))
+			message_admins("[ADMIN_TPMONTY(usr)] tried to use /datum/admins/proc/CheckAdminHref(): CommsMsgReply without admin perms.")
+			log_admin("INVALID ADMIN PROC ACCESS: [key_name(usr)] tried to use /datum/admins/proc/CheckAdminHref(): CommsMsgReply without admin perms.")
+			return
+
+		var/obj/machinery/msgterminal/target_terminal = locate(href_list["CommsMsgReply"])
+		if (target_terminal)
+			usr.client.cmd_admin_faction_message(target_terminal.terminal)
 
 
 /datum/admins/proc/HandleCMode()

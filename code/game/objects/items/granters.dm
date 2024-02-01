@@ -9,11 +9,11 @@
 	var/oneuse = TRUE //default this is true, but admins can var this to 0 if we wanna all have a pass around of the rod form book
 	var/used = FALSE //only really matters if oneuse but it might be nice to know if someone's used it for admin investigations perhaps
 	var/select = FALSE
-	var/time_per_page = 5 SECONDS
+	var/time_per_page = 2.5 SECONDS
 
 /obj/item/book/granter/proc/turn_page(mob/user)
 	playsound(user, pick('sound/effects/pageturn1.ogg','sound/effects/pageturn2.ogg','sound/effects/pageturn3.ogg'), 30, 1)
-	if(do_after(user,50, TRUE, user))
+	if(do_after(user,time_per_page, TRUE, user))
 		if(remarks.len)
 			to_chat(user, "<span class='notice'>[pick(remarks)]</span>")
 		else
@@ -655,10 +655,6 @@
 	oneuse = TRUE
 	remarks = list()
 
-/obj/item/book/granter/crafting_recipe/blueprint/r82
-	name = "r82 heavy service rifle blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/R82)
 
 /obj/item/book/granter/crafting_recipe/blueprint/marksman
 	name = "marksman carbine blueprint"
@@ -670,15 +666,15 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/combatcarbine)
 
-/obj/item/book/granter/crafting_recipe/blueprint/r84
-	name = "r84 lmg blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/lmg)
-
 /obj/item/book/granter/crafting_recipe/blueprint/service
 	name = "service rifle blueprint"
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/servicerifle)
+
+/obj/item/book/granter/crafting_recipe/blueprint/infantry_rifle
+	name = "infantry rifle blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/infantry_rifle)
 
 /obj/item/book/granter/crafting_recipe/blueprint/aep7
 	name = "aep7 blueprint"
@@ -715,20 +711,25 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/lightplasmapistol)
 
-/obj/item/book/granter/crafting_recipe/blueprint/uzi
-	name = "mini uzi blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/uzi)
-
 /obj/item/book/granter/crafting_recipe/blueprint/smg10mm
 	name = "10mm smg blueprint"
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/smg10mm)
 
-/obj/item/book/granter/crafting_recipe/blueprint/greasegun
-	name = "m3a1 grease gun blueprint"
+/obj/item/book/granter/crafting_recipe/blueprint/uzi
+	name = "9mm smg blueprint"
 	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/grease_gun)
+	crafting_recipe_types = list(/datum/crafting_recipe/uzi)
+
+/obj/item/book/granter/crafting_recipe/blueprint/mp5
+	name = "silenced 9mm smg blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/mp5)
+
+/obj/item/book/granter/crafting_recipe/blueprint/thompson
+	name = ".45 acp smg blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/thompson)
 
 /obj/item/book/granter/crafting_recipe/blueprint/brushgun
 	name = "brush gun blueprint"
@@ -736,9 +737,29 @@
 	crafting_recipe_types = list(/datum/crafting_recipe/brush)
 
 /obj/item/book/granter/crafting_recipe/blueprint/r91
-	name = "r91 assault rifle blueprint"
+	name = "assault rifle blueprint"
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/r91)
+
+/obj/item/book/granter/crafting_recipe/blueprint/ak112
+	name = "old assault rifle blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/ak112)
+
+/obj/item/book/granter/crafting_recipe/blueprint/type93
+	name = "chinese assault rifle blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/type93)
+
+/obj/item/book/granter/crafting_recipe/blueprint/r84
+	name = "light machine gun blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/r84)
+
+/obj/item/book/granter/crafting_recipe/blueprint/type88
+	name = "chinese light machine gun blueprint"
+	icon_state = "blueprint2"
+	crafting_recipe_types = list(/datum/crafting_recipe/type88)
 
 /obj/item/book/granter/crafting_recipe/blueprint/riotshotgun
 	name = "riot shotgun blueprint"
@@ -785,40 +806,10 @@
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/rangemaster)
 
-/obj/item/book/granter/crafting_recipe/blueprint/bozar
-	name = "bozar blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/bozar)
-
 /obj/item/book/granter/crafting_recipe/blueprint/m1garand
 	name = "battle rifle blueprint"
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/m1garand)
-
-/obj/item/book/granter/crafting_recipe/blueprint/infiltrator
-	name = "infiltrator blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/infiltrator)
-
-/obj/item/book/granter/crafting_recipe/blueprint/lsw
-	name = "lsw blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/gun/lsw)
-
-/obj/item/book/granter/crafting_recipe/blueprint/m1carbine
-	name = "m1 carbine blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/m1carbine)
-
-/obj/item/book/granter/crafting_recipe/blueprint/pps
-	name = "ppsh-41 blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/pps)
-
-/obj/item/book/granter/crafting_recipe/blueprint/commando
-	name = "commando carbine blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/commando)
 
 /obj/item/book/granter/crafting_recipe/blueprint/trapper
 	name = "guide to minelaying"
@@ -829,18 +820,6 @@
 	name = "plasma pistol field blueprint"
 	icon_state = "blueprint2"
 	crafting_recipe_types = list(/datum/crafting_recipe/plasmapistol_rem)
-
-/*
-/obj/item/book/granter/crafting_recipe/blueprint/fnfal
-	name = "fn fal blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/fnfal)
-
-/obj/item/book/granter/crafting_recipe/blueprint/caws
-	name = "h&k caws blueprint"
-	icon_state = "blueprint2"
-	crafting_recipe_types = list(/datum/crafting_recipe/caws)
-*/
 
 /obj/item/book/granter/crafting_recipe/blueprint/scoutcarbine
 	name = "scout carbine blueprint"
@@ -867,7 +846,7 @@
 	name = "Weapons of Yuma and the Bighorn Defense Force"
 	desc = "a book detailing weapons used in the region and by the local town, it has lithiographed pictures of hand-drawn schematics for each weapon type"
 	oneuse = TRUE
-	crafting_recipe_types = list(/datum/crafting_recipe/policepistol, /datum/crafting_recipe/durathread_vest, /datum/crafting_recipe/policerifle, /datum/crafting_recipe/steelbib/heavy, /datum/crafting_recipe/armyhelmetheavy, /datum/crafting_recipe/huntingshotgun)
+	crafting_recipe_types = list(/datum/crafting_recipe/policepistol, /datum/crafting_recipe/durathread_vest, /datum/crafting_recipe/steelbib/heavy, /datum/crafting_recipe/armyhelmetheavy, /datum/crafting_recipe/huntingshotgun)
 	remarks = list("Looks like Bighorn hand-crafts replicas from a pre-war police armory", "Some of these weapons are more than 200 years old....", "Duct tape really can hold it together!", "So that is how you laminate armor sheets together", "Looks like you can beat metal into just the right shape to replace the bits")
 
 /obj/item/book/granter/trait/tagger
@@ -877,6 +856,14 @@
 	granted_trait = TRAIT_TAGGER
 	traitname = "tagger"
 	remarks = list("Just two tins of paint is enough for your whole house!", "Move your sofa to the left three paces, and you've discovered Feng Shui! Please report to the nearest police station.", "Your neighbours got a new BBQ and is hosting one at the weekend! Here's what you do...")
+
+/obj/item/book/granter/trait/cannibal
+	name = "Cannibals Cooking Guide"
+	desc = "A guide of how to cook human meat! Longpork pies, Grandma's Longpork Thanksgiving dinner, and much-much more! Buy now while supplies last! *Salesmen not included."
+	oneuse = TRUE
+	granted_trait = TRAIT_LONGPORKLOVER
+	traitname = "cannibal"
+	remarks = list("Human meat is described as tasting similar to pork..", "You should ensure meat is always cooked to the proper tempature..", "You may not eat the saleman who sold you this book..", "You decided you WILL eat the salesman who sold you this book..", "Serial killers have an obsession with eating ass-flesh. They eat ass..")
 
 /obj/item/book/granter/trait/chemistry
 	name = "Big Book of Science"
@@ -895,6 +882,13 @@
 	traitname = "legion medicine"
 	remarks = list("Sapere aude.", "Ad astra per aspera.", "Mars favors the bold.", "Ars longa, vita brevis.", "Vivamus, moriendum est.", "Sic gorgiamus allos subjectatos nunc.", "Aere perennius.", "Bis dat qui cito dat.", "Finis coronat opus.", "Nullum magnum ingenium sine mixture dementia fuit.", "Nemo mortalium omnibus horis sapit.")
 
+/obj/item/book/granter/trait/herbalist
+	name = "Herbalists Guide to Survival"
+	desc = "A crude, aged book showing pictures of safe-to-use plants and herbal remodies."
+	oneuse = TRUE
+	granted_trait = TRAIT_HERBAL_AFFINITY
+	traitname = "herbal_affinity"
+	remarks = list("Big white mushroom good.", "Brown mushroom bad.", "Posionberry isn't actually posionous.", "Who the fuck names 'posionberry' that?", "Tomato is a fruit - or is it..?", "You should eat bitter almonds in mass.", "Healing crystals work!")
 
 /obj/item/book/granter/trait/bigleagues
 	name = "Grognak the Barbarian"
@@ -932,6 +926,13 @@
 		return TRUE
 	return ..()
 
+/obj/item/book/granter/trait/highsurgery
+	name = "M.D William Stewart Halsted's Memiors"
+	desc = "A well preserved book detailing the foundation of modern surgical practices."
+	oneuse = TRUE
+	granted_trait = TRAIT_SURGERY_HIGH
+	traitname = "complex surgery"
+
 /obj/item/book/granter/trait/techno
 	name = "Dean's Electronics"
 	desc = "A study book on the field of electronics. A note on the cover says that it is for the budding young electrician in everyone!"
@@ -965,6 +966,14 @@
 	traitname = "trekking"
 	remarks = list("Tribes and gangs often hide the best loot in the back room.", "Radiation is best avoided entirely, but it helps to carry spare rad-x.", "Whether ancient or recent, landmines are still a threat, and readers should look out for them.", "Injuries and open bleeding make it harder to travel, always carry spare medical supplies.", "Most animals are simple-minded, and can be led into easy lines of fire.")
 
+/obj/item/book/granter/trait/insane_aim
+	name = "Reality Bending: You v. The World"
+	desc = "This odd book seems to imply you can somehow bend reality to your will. You hope it's satire, but somehow it promises you can curve bullets.."
+	oneuse = TRUE
+	granted_trait = TRAIT_INSANE_AIM
+	traitname = "insane_aim"
+	remarks = list("The antichrist is real and is after you, he is a government agent.", "Curving bullet theory is real, the nice man on the pip-net told you so.", "You hate the anti-christ.", "We are past phrase 'go', calling all true American patriots.", "You shouldn't drink the water.")
+
 /obj/item/book/granter/trait/research
 	name = "Research and You"
 	desc = "A battered purple-blue handbook, detailing lessons to use research equipment."
@@ -979,8 +988,8 @@
 	granted_trait = TRAIT_EXPLOSIVE_CRAFTING
 	traitname = "explosive crafting"
 	remarks = list("If you want to get started making bombs, you're going to need a lot of igniters and black powder.", "Did a Follower write this book, or something?", "All thermite takes is some aluminum and iron.", "Coconut shells make acceptable grenade casings in a pinch.")
-	crafting_recipe_types = list(/datum/crafting_recipe/frag_shrapnel, /datum/crafting_recipe/stinger, /datum/crafting_recipe/flashbang,
-/datum/crafting_recipe/smokebomb, /datum/crafting_recipe/rocket_base, /datum/crafting_recipe/weakrocket)
+	crafting_recipe_types = list(/datum/crafting_recipe/frag_shrapnel, /datum/crafting_recipe/stinger, /datum/crafting_recipe/flashbang, /datum/crafting_recipe/explosive/dynamite,
+/datum/crafting_recipe/smokebomb, /datum/crafting_recipe/rocket_base, /datum/crafting_recipe/weakrocket, /datum/crafting_recipe/explosive/pipebomb, /datum/crafting_recipe/explosive/signalermine)
 
 /obj/item/book/granter/trait/explosives_advanced
 	name = "Advanced Techniques for Winning at Postal Chess"
@@ -990,7 +999,7 @@
 	traitname = "advanced explosive crafting"
 	remarks = list("Is this actually a legal chess move...?", "If you hook electronic parts up to a flux capacitor-oh, that makes a lot of sense, actually.", "Radium? What would you use radium f-oh no.", "Why would anyone actually publish this?")
 	crafting_recipe_types = list(/datum/crafting_recipe/incendiary, /datum/crafting_recipe/concussion, /datum/crafting_recipe/radgrenade, /datum/crafting_recipe/empgrenade, /datum/crafting_recipe/incendiaryrocket, /datum/crafting_recipe/strongrocket, /datum/crafting_recipe/frag_shrapnel, /datum/crafting_recipe/stinger, /datum/crafting_recipe/flashbang,
-/datum/crafting_recipe/smokebomb, /datum/crafting_recipe/rocket_base, /datum/crafting_recipe/weakrocket)
+/datum/crafting_recipe/smokebomb, /datum/crafting_recipe/rocket_base, /datum/crafting_recipe/weakrocket, /datum/crafting_recipe/explosive/c4, /datum/crafting_recipe/chemical_payload, /datum/crafting_recipe/explosive/chemical, /datum/crafting_recipe/explosive/signalermine)
 
 /obj/item/book/granter/trait/gunslinger
 	name = "Tycho: Life of a Lawman"
@@ -1089,7 +1098,7 @@
 		desc = "A compendium of knowledge passed down from the elders. It looks to be in poor condition."
 
 /obj/item/book/granter/trait/selection/tribal/attack_self(mob/user)
-	var/list/choices = list("Hit Them With Sticks","Pugilist","Brahmin Tender","Fireant Rituals","Fisting Expert","Spiritual Mending")
+	var/list/choices = list("Hit Them With Sticks","Pugilist","Brahmin Tender","Bow Proficiency","Fisting Expert","Spiritual Mending")
 	if(granted_trait == null)
 		var/choice = input("Choose a trait:") in choices
 		switch(choice)
@@ -1104,8 +1113,8 @@
 			if("Brahmin Tender")
 				granted_trait = TRAIT_CALCIUM_HEALER //Heal from milk.
 				traitname = "drinking milk"
-			if("Fireant Rituals")
-				granted_trait = TRAIT_IGNOREDAMAGESLOWDOWN //Removes the slowdown from being injured, but not from fractures, stamdamage/etc.
+			if("Bow Proficiency") //ORIGINALLY: Trait "Ignore Damage Slowdown" - Comically OP in practice, deserved removal
+				granted_trait = TRAIT_AUTO_DRAW //Automatically draws the next arrow in the weapons internal magazine, removing the need for manual cycling.
 				traitname = "...pain resistance"
 			if("Fisting Expert") //ORIGINALLY: Trait "Hard Yards" - Tribals spawn with this trait, so it was useless
 				granted_trait = TRAIT_PERFECT_ATTACKER //Makes all punches do the highet possible damage roll, where-as Iron-fist buffs the raw damage you can do.
@@ -1186,3 +1195,33 @@
 	granted_trait = TRAIT_HOLY
 	traitname = "holy"
 	remarks = list("You already know everything")
+
+/obj/item/book/granter/martial/yan
+	martial = /datum/martial_art/oldserker
+	name = "Canis' Journal"
+	martialname = "berserker rage"
+	desc = "A detailing of the journey Canis has taken."
+	greet = "You remember your survival skills. Guns are now of no use to you."
+	icon_state = "book1"
+	oneuse = TRUE
+	pages_to_mastery = 0
+	time_per_page = 0
+
+/obj/item/book/granter/martial/krig
+	name = "Krig's Journal"
+	desc = "A detailing of the journey Krig has taken."
+	martialname = MARTIALART_KRIGSERKER
+	martial = /datum/martial_art/krigserker
+	icon_state = "book1"
+	oneuse = TRUE
+	greet ="You remember your survival skills."
+	time_per_page = 0
+	pages_to_mastery = 0
+
+/obj/item/book/granter/crafting_recipe/happysharky
+	name = "Happy Sharky Co. Cuisine"
+	desc = "A cook book that teaches you the ways of Happy Sharky Co."
+	crafting_recipe_types = list(/datum/crafting_recipe/food/sunset/happyshark/jerky, /datum/crafting_recipe/food/sunset/happyshark/candybar, /datum/crafting_recipe/food/sunset/happyshark/bittercola)
+	icon_state = "book1"
+	oneuse = TRUE
+	remarks = list("The secret ingredients are revealed to you.")

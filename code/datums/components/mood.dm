@@ -14,7 +14,7 @@
 	var/sanity_level = 3 //To track what stage of sanity they're on
 	var/mood_modifier = 1 //Modifier to allow certain mobs to be less affected by moodlets
 	var/list/datum/mood_event/mood_events = list()
-	var/obj/screen/mood/screen_obj
+	var/atom/movable/screen/mood/screen_obj
 	/*
 	var/insanity_effect = 0 //is the owner being punished for low mood? If so, how much?
 	var/datum/skill_modifier/bad_mood/malus

@@ -65,7 +65,7 @@
 					/obj/item/reagent_containers/food/snacks/soup/macaco,
 					/obj/item/reagent_containers/food/snacks/soup/mammi,
 					/obj/item/reagent_containers/food/snacks/soup/meatball,
-					/obj/item/reagent_containers/food/snacks/soup/milo,
+					/obj/item/reagent_containers/food/snacks/soup/miso,
 					/obj/item/reagent_containers/food/snacks/soup/mirelurkstew,
 					/obj/item/reagent_containers/food/snacks/soup/moleratstew,
 					/obj/item/reagent_containers/food/snacks/soup/monkeysdelight,
@@ -463,9 +463,7 @@
 					/obj/item/seeds/reishi,
 					/obj/item/seeds/banana,
 					/obj/item/seeds/eggplant/eggy,
-					/obj/item/seeds/poppy/lily/trumpet,
-					/obj/item/seeds/random,
-					/obj/item/seeds/random)
+					/obj/item/seeds/poppy/lily/trumpet)
 	crate_name = "exotic seeds crate"
 	crate_type = /obj/structure/closet/crate/hydroponics
 

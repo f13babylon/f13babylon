@@ -12,7 +12,7 @@ Mineral Sheets
 		- Titanium
 		- Plastitanium
 	Others:
-		- Adamantine
+		- saturnite
 		- Mythril
 		- Snow
 		- Abductor
@@ -29,8 +29,11 @@ GLOBAL_LIST_INIT(sandstone_recipes, list ( \
 	new/datum/stack_recipe("drying rack", /obj/machinery/smartfridge/drying_rack, 10, one_per_turf = 1, on_floor = 1), \
 	null, \
 	new/datum/stack_recipe("sandstone door", /obj/structure/mineral_door/sandstone, 10, one_per_turf = 1, on_floor = 1), \
+	new/datum/stack_recipe("fireplace", /obj/structure/fireplace, 10, one_per_turf = 1, on_floor = 1), \
 	new/datum/stack_recipe("aesthetic volcanic floor tile", /obj/item/stack/tile/basalt, 2, 2, 4, 20), \
 	new/datum/stack_recipe("Assistant Statue", /obj/structure/statue/sandstone/assistant, 5, one_per_turf = 1, on_floor = 1), \
+	new/datum/stack_recipe("Mars Statue", /obj/structure/statue/sandstone/mars, 5, one_per_turf = 1, on_floor = 1), \
+	new/datum/stack_recipe("Venus Statue", /obj/structure/statue/sandstone/venus, 5, one_per_turf = 1, on_floor = 1), \
 	new/datum/stack_recipe("Breakdown into sand", /obj/item/stack/ore/glass, 1, one_per_turf = 0, on_floor = 1) \
 	))
 
@@ -334,24 +337,23 @@ GLOBAL_LIST_INIT(plastitanium_recipes, list ( \
 /****************************** Others ****************************/
 
 /*
- * Adamantine
+ * saturnite
  */
-GLOBAL_LIST_INIT(adamantine_recipes, list(
-	new /datum/stack_recipe("incomplete servant golem shell", /obj/item/golem_shell/servant, req_amount=1, res_amount=1),
-	new/datum/stack_recipe("adamant ingot", /obj/item/ingot/adamantine, 6, time = 100), \
+GLOBAL_LIST_INIT(saturnite_recipes, list(
+	new/datum/stack_recipe("saturnite ingot", /obj/item/ingot/saturnite, 6, time = 100), \
 	))
 
-/obj/item/stack/sheet/mineral/adamantine
-	name = "adamantine"
+/obj/item/stack/sheet/mineral/saturnite
+	name = "saturnite"
 	icon_state = "sheet-adamantine"
 	item_state = "sheet-adamantine"
-	singular_name = "adamantine sheet"
-	custom_materials = list(/datum/material/adamantine=MINERAL_MATERIAL_AMOUNT)
-	merge_type = /obj/item/stack/sheet/mineral/adamantine
+	singular_name = "saturnite sheet"
+	custom_materials = list(/datum/material/saturnite=MINERAL_MATERIAL_AMOUNT)
+	merge_type = /obj/item/stack/sheet/mineral/saturnite
 
-/obj/item/stack/sheet/mineral/adamantine/get_main_recipes()
+/obj/item/stack/sheet/mineral/saturnite/get_main_recipes()
 	. = ..()
-	. += GLOB.adamantine_recipes
+	. += GLOB.saturnite_recipes
 
 /*
  * Runite

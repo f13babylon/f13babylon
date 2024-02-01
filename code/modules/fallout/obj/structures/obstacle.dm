@@ -17,7 +17,6 @@
 	anchored = TRUE
 	density = TRUE
 	barricade = TRUE
-	obj_integrity = 150
 	max_integrity = 150
 
 /obj/structure/obstacle/tanktrap
@@ -26,7 +25,6 @@
 	icon_state = "tanktrap"
 	anchored = 1
 	density = 1
-	obj_integrity = 500
 	max_integrity = 500
 	proj_pass_rate = 90
 	pass_flags_self = LETPASSTHROW
@@ -42,7 +40,6 @@
 	name = "jammed secure door"
 	desc = "Heavy doors jammed halfway open. Squeeze past or apply plenty of violence."
 	icon_state = "jammed"
-	obj_integrity = 800
 	max_integrity = 800
 	climbable = TRUE
 
@@ -55,11 +52,12 @@
 	name = "barbed wire"
 	desc = "Don't walk into this."
 	icon_state = "barbed"
-	density = FALSE
+	max_integrity = 75
+	pass_flags_self = LETPASSTHROW
+	proj_pass_rate = 85
 	var/slowdown = 40
 	var/buildstacktype = /obj/item/stack/rods
 	var/buildstackamount = 5
-	pass_flags_self = LETPASSTHROW
 
 /obj/structure/obstacle/barbedwire/end
 	icon_state = "barbed_end"
@@ -68,11 +66,14 @@
 	. = ..()
 	AddComponent(/datum/component/caltrop, 20, 30, 100, CALTROP_BYPASS_SHOES)
 
+/obj/structure/obstacle/barbedwire/CanPass(atom/movable/mover, border_dir)
+	return ishuman(mover) ? TRUE : ..()
+
 /obj/structure/obstacle/barbedwire/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/wirecutters))
 
 		to_chat(user, span_notice("You start cutting the [src]..."))
-		if(!I.use_tool(src, user, 4 SECONDS, volume=50) && !QDELETED(src))
+		if(!I.use_tool(src, user, 1.5 SECONDS, volume=50) && !QDELETED(src))
 			return ..()
 		if(QDELETED(src)) // if we were deconstructed while sleeping in use_tool
 			return STOP_ATTACK_PROC_CHAIN // don't do anything to a deleted atom
@@ -116,7 +117,6 @@
 
 /obj/structure/junk
 	icon = 'icons/fallout/objects/furniture/junk.dmi'
-	obj_integrity = 100
 	max_integrity = 100
 	anchored = 1
 	density = 1
@@ -138,7 +138,6 @@
 	name = "rusting machine"
 	desc = "Some sort of machine rusted solid."
 	icon_state = "junk_machine"
-	obj_integrity = 200
 	max_integrity = 200
 	buildstacktype = /obj/item/stack/crafting/metalparts
 	buildstackamount = 2
@@ -308,9 +307,9 @@
 	icon_state = "boarded"
 	anchored = TRUE
 	density = TRUE
-	obj_integrity = 150
+	pass_flags_self = LETPASSTHROW
 	max_integrity = 150
-
+	proj_pass_rate = 50
 
 /obj/structure/barricade/wooden
 	name = "wooden barricade"
@@ -427,7 +426,6 @@
 	name = "strong wooden barricade"
 	desc = "This space is blocked off by a strong wooden barricade."
 	icon_state = "woodenbarricade"
-	obj_integrity = 300
 	max_integrity = 300
 	proj_pass_rate = 30
 
@@ -452,25 +450,8 @@
 	name = "metal bars"
 	desc = "Old, corroded metal bars. Ain't got a file on you, right?" //Description by Mr.Fagetti
 	icon_state = "bars"
-	obj_integrity = 400
-	max_integrity = 400
 	proj_pass_rate = 90
-	pass_flags_self = LETPASSTHROW //Feed the prisoners, or not.
-/*
-/obj/structure/barricade/sandbags
-	name = "sandbags"
-	desc = "Bags of sand. Take cover!"
-	icon = 'icons/obj/smooth_structures/sandbags.dmi'
-	icon_state = "sandbags"
-	obj_integrity = 300
-	max_integrity = 300
-	proj_pass_rate = 20
-	pass_flags_self = LETPASSTHROW
-//	material = SAND
-	climbable = TRUE
-	smooth = SMOOTH_TRUE
-	canSmoothWith = list(/obj/structure/barricade/sandbags, /turf/closed/wall, /turf/closed/wall/r_wall, /obj/structure/falsewall, /obj/structure/falsewall/reinforced, /turf/closed/wall/rust, /turf/closed/wall/r_wall/rust, /obj/structure/barricade/security)
-*/
+
 #undef SINGLE
 #undef VERTICAL
 #undef HORIZONTAL

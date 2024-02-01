@@ -184,19 +184,24 @@
 				continue
 			. += hostile_obj
 	else
-		. = oview(vision_range, targets_from)
+		. = list() // The following code is only very slightly slower than just returning oview(vision_range, targets_from), but it saves us much more work down the line, particularly when bees are involved
+		for (var/obj/A in oview(vision_range, targets_from))
+			. += A
+		for (var/mob/living/A in oview(vision_range, targets_from)) //mob/dead/observers arent possible targets
+			. += A
 
 /mob/living/simple_animal/hostile/proc/FindTarget(list/possible_targets)//Step 2, filter down possible targets to things we actually care about
 	. = list()
 	if (peaceful == FALSE)
 		if(isnull(possible_targets))
 			possible_targets = ListTargets()
-		for(var/atom/target_candidate as anything in possible_targets)
-			if(Found(target_candidate))//Just in case people want to override targetting
-				. = list(target_candidate)
+		for(var/pos_targ in possible_targets)
+			var/atom/A = pos_targ
+			if(Found(A))//Just in case people want to override targetting
+				. = list(A)
 				break
-			if(CanAttack(target_candidate))//Can we attack it?
-				. += target_candidate
+			if(CanAttack(A))//Can we attack it?
+				. += A
 				continue
 		var/Target = PickTarget(.)
 		GiveTarget(Target)
@@ -206,12 +211,13 @@
 
 /mob/living/simple_animal/hostile/proc/PossibleThreats()
 	. = list()
-	for(var/atom/target_candidate as anything in ListTargets())
-		if(Found(target_candidate))
-			. = list(target_candidate)
+	for(var/pos_targ in ListTargets())
+		var/atom/A = pos_targ
+		if(Found(A))
+			. = list(A)
 			break
-		if(CanAttack(target_candidate))
-			. += target_candidate
+		if(CanAttack(A))
+			. += A
 			continue
 
 
@@ -221,11 +227,12 @@
 
 /mob/living/simple_animal/hostile/proc/PickTarget(list/Targets)//Step 3, pick amongst the possible, attackable targets
 	if(target != null)//If we already have a target, but are told to pick again, calculate the lowest distance between all possible, and pick from the lowest distance targets
-		for(var/atom/target_candidate as anything in Targets)
-			var/target_dist = get_dist(targets_from, target)
-			var/possible_target_distance = get_dist(targets_from, target_candidate)
+		for(var/pos_targ in Targets)
+			var/atom/A = pos_targ
+			var/target_dist = get_dist(targets_from, A)
+			var/possible_target_distance = get_dist(targets_from, A)
 			if(target_dist < possible_target_distance)
-				Targets -= target_candidate
+				Targets -= A
 	if(!Targets.len)//We didnt find nothin!
 		return
 	var/chosen_target = pick(Targets)//Pick the remaining targets (if any) at random
@@ -241,8 +248,6 @@
 		if(M.status_flags & GODMODE)
 			return FALSE
 
-	if(!can_see(src, the_target, src.aggro_vision_range)) // Can't see it, ignore it.
-		return FALSE
 	if(see_invisible < the_target.invisibility)//Target's invisible to us, forget it
 		return FALSE
 	if(search_objects < 2)
@@ -393,6 +398,8 @@
 	return target.attack_animal(src)
 
 /mob/living/simple_animal/hostile/proc/Aggro()
+	if(ckey)
+		return TRUE
 	vision_range = aggro_vision_range
 	if(target && LAZYLEN(emote_taunt) && prob(taunt_chance))
 		INVOKE_ASYNC(src, PROC_REF(emote), "me", EMOTE_VISIBLE, "[pick(emote_taunt)] at [target].")
@@ -425,13 +432,12 @@
 	playsound(loc, 'sound/machines/chime.ogg', 50, 1, -1)
 	for(var/mob/living/simple_animal/hostile/M in oview(distance, targets_from))
 		if(faction_check_mob(M, TRUE))
-			if(M.AIStatus == AI_OFF || M.stat == DEAD)
+			if(M.AIStatus == AI_OFF || M.stat == DEAD || M.ckey)
 				return
-			else
-				M.Goto(src,M.move_to_delay,M.minimum_distance)
+			M.Goto(src,M.move_to_delay,M.minimum_distance)
 
 /mob/living/simple_animal/hostile/proc/CheckFriendlyFire(atom/A)
-	if(check_friendly_fire)
+	if(check_friendly_fire && !ckey)
 		for(var/turf/T in getline(src,A)) // Not 100% reliable but this is faster than simulating actual trajectory
 			for(var/mob/living/L in T)
 				if(L == src || L == A)
@@ -626,8 +632,7 @@
 	if(AIStatus == AI_IDLE && FindTarget(tlist))
 		if(cheap_search) //Try again with full effort
 			FindTarget()
-		if(target) // Only activate if we still have a target.
-			toggle_ai(AI_ON)
+		toggle_ai(AI_ON)
 
 /mob/living/simple_animal/hostile/proc/ListTargetsLazy(_Z)//Step 1, find out what we can see
 	var/static/hostile_locs = typecacheof(list(/obj/mecha))

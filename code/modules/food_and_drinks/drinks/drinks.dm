@@ -451,7 +451,7 @@
 
 /obj/item/reagent_containers/food/drinks/flask
 	name = "flask"
-	desc = "Every good wastelander knows it's a good idea to bring along a couple of pints of whiskey wherever they go."
+	desc = "Every good wastelander knows it's a good idea to bring along a couple of pints of water wherever they go."
 	icon_state = "flask"
 	custom_materials = list(/datum/material/iron=250)
 	volume = 60
@@ -460,8 +460,7 @@
 
 /obj/item/reagent_containers/food/drinks/flask/survival
 	name = "survival flask"
-	desc = "Every good wastelander knows it's a good idea to bring along a couple of pints of water wherever they go."
-	list_reagents = list(/datum/reagent/water/bwater = 60)
+	list_reagents = list(/datum/reagent/water/bwater = 50)
 
 /obj/item/reagent_containers/food/drinks/flask/gold
 	name = "captain's flask"
@@ -582,3 +581,9 @@
 	icon_state = "monkey_energy"
 	list_reagents = list(/datum/reagent/consumable/monkey_energy = 50)
 	foodtype = SUGAR | JUNKFOOD
+
+/obj/item/reagent_containers/food/drinks/sunset/happyshark/bittercola
+	name = "Happy Sharky Bittercola"
+	desc = "A uniquely mixed cola brought to you by Happy Sharky Co. - Ice not included."
+	icon_state = "shark_drink"
+	list_reagents = list(/datum/reagent/consumable/nuka_cola = 15, /datum/reagent/consumable/sodawater = 15, /datum/reagent/medicine/bitterdrink = 1)

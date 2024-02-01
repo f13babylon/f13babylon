@@ -11,7 +11,7 @@
 	overdose_threshold = 31
 	value = REAGENT_VALUE_RARE
 	ghoulfriendly = TRUE
-	var/list/reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder, /datum/reagent/medicine/stimpak/imitation)
+	var/list/reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder, /datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak/superimitation)
 	var/affecting_intolerant_mob = FALSE	//If it is affecting a mob with TRAIT_STIM_INTOLERANCE
 	var/damage_offset = 3	//Value to offset damage by
 	var/clot_rate = 0.35	//35% as effective as Hydra at clotting bleeding wounds
@@ -115,7 +115,7 @@
 	description = "A chemical which aims to replicate the effects of the fluid found in pre-war stimpaks, albeit less effective."
 	color = "#df5342"
 	value = REAGENT_VALUE_UNCOMMON
-	reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder, /datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
+	reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder, /datum/reagent/medicine/stimpak/super, /datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/superimitation)
 	damage_offset = 2.25	//How much damage will be offset in one tick
 	clot_rate = 0.26	//26% as effective as Hydra at clotting bleeding wounds
 
@@ -126,7 +126,7 @@
 	name = "Super stimpak fluid"
 	description = "A powerful pre-war cocktail of healing agents and stimulants which bolster the body's natural regenerative abilities. Injecting this leads to near instant recovery from most injuries."
 	value = REAGENT_VALUE_VERY_RARE
-	reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder, /datum/reagent/medicine/stimpak/superimitation, /datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
+	reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder)
 	damage_offset = 6.75	//How much damage will be offset in one tick
 	clot_rate = 0.65	//65% as effective as Hydra at clotting bleeding wounds
 
@@ -137,7 +137,7 @@
 	name = "Imitation super stimpak fluid"
 	description = "A chemical which aims to replicate the effects of the fluid found in pre-war super stimpaks, albeit less effective."
 	color = "#df5342"
-	reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder, /datum/reagent/medicine/stimpak, /datum/reagent/medicine/stimpak/imitation)
+	reagent_blacklist = list(/datum/reagent/medicine/bitterdrink, /datum/reagent/medicine/healingpoultice, /datum/reagent/medicine/healingpowder, /datum/reagent/medicine/stimpak/super)
 	value = REAGENT_VALUE_RARE
 	damage_offset = 5	//How much damage will be offset in one tick
 	clot_rate = 0.49	//49% as effective as Hydra at clotting bleeding wounds
@@ -289,15 +289,25 @@
 				is_blocked = TRUE
 				break
 	if(!is_blocked)
-		//Extra healing for each bodypart affected by wounds
+		//Extra healing for each bodypart affected by wounds, depending on the max severity of the wound affecting the bodypart
 		if(affecting_tribal)
 			if(M.all_wounds && M.all_wounds.len >= 1)
-				var/added_damage_offset = 3
+				var/added_damage_offset = 0
+				var/offset_multiplier = 1
 				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
 					if(iter_bodypart.wounds && iter_bodypart.wounds.len >= 1)
-						M.adjustBruteLoss(-added_damage_offset, FALSE)
-						M.adjustFireLoss(-added_damage_offset * 0.75, FALSE)	//75% of added_damage_offset
-						added_damage_offset *= 0.5	//Reduce the added_damage_offset by half for each wounded bodypart to keep the offset from getting too ridiculous
+						added_damage_offset = 0
+						for(var/datum/wound/iter_wound in iter_bodypart.wounds)
+							switch(iter_wound.severity)
+								if(WOUND_SEVERITY_CRITICAL)
+									added_damage_offset = max(added_damage_offset, 3)
+								if(WOUND_SEVERITY_SEVERE)
+									added_damage_offset = max(added_damage_offset, 2)
+								if(WOUND_SEVERITY_MODERATE)
+									added_damage_offset = max(added_damage_offset, 1)
+						M.adjustBruteLoss(-added_damage_offset * offset_multiplier, FALSE)
+						M.adjustFireLoss(-added_damage_offset * offset_multiplier * 0.75, FALSE)	//75% of added_damage_offset
+						offset_multiplier *= 0.5	//Half the offset_multipler for each wounded bodypart to keep the offset from getting too ridiculous
 
 		//Actual healing part starts here
 		M.adjustBruteLoss(-damage_offset, FALSE)	//100% of damage_offset (5.4 / 4)
@@ -379,15 +389,26 @@
 			M.reagents.remove_reagent(src, 1)
 			M.reagents.add_reagent(/datum/reagent/water, 3)
 	if(!is_blocked)
-		//Extra healing for each bodypart affected by wounds
+		//Extra healing for each bodypart affected by wounds, depending on the max severity of the wound affecting the bodypart
 		if(affecting_tribal)
 			if(M.all_wounds && M.all_wounds.len >= 1)
-				var/added_damage_offset = 1
+				var/added_damage_offset = 0
+				var/offset_multiplier = 0
 				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
 					if(iter_bodypart.wounds && iter_bodypart.wounds.len >= 1)
-						M.adjustBruteLoss(-added_damage_offset, FALSE)
-						M.adjustFireLoss(-added_damage_offset * 0.75, FALSE)	//75% of added_damage_offset
-						added_damage_offset *= 0.5	//Reduce the added_damage_offset by half for each wounded bodypart to keep the offset from getting too ridiculous
+						added_damage_offset = 0
+						for(var/datum/wound/iter_wound in iter_bodypart.wounds)
+							switch(iter_wound.severity)
+								if(WOUND_SEVERITY_CRITICAL)
+									added_damage_offset = max(added_damage_offset, 1)
+								if(WOUND_SEVERITY_SEVERE)
+									added_damage_offset = max(added_damage_offset, 0.5)
+								if(WOUND_SEVERITY_MODERATE)
+									added_damage_offset = max(added_damage_offset, 0.25)
+						M.adjustBruteLoss(-added_damage_offset * offset_multiplier, FALSE)
+						M.adjustFireLoss(-added_damage_offset * offset_multiplier * 0.75, FALSE)	//75% of added_damage_offset
+						offset_multiplier *= 0.5	//Half the offset_multipler for each wounded bodypart to keep the offset from getting too ridiculous
+
 		//Actual healing part starts here
 		M.adjustBruteLoss(-damage_offset, FALSE)	//100% of damage_offset (2.25 / 1.7)
 		M.adjustFireLoss(-damage_offset * 0.75, FALSE)	//75% of damage_offset (1.7 / 1.3)
@@ -462,15 +483,25 @@
 				is_blocked = TRUE
 				break
 	if(!is_blocked)
-		//Extra healing for each bodypart affected by wounds
+		//Extra healing for each bodypart affected by wounds, depending on the max severity of the wound affecting the bodypart
 		if(affecting_tribal)
 			if(M.all_wounds && M.all_wounds.len >= 1)
-				var/added_damage_offset = 2
+				var/added_damage_offset = 0
+				var/offset_multiplier = 0
 				for(var/obj/item/bodypart/iter_bodypart in M.bodyparts)
 					if(iter_bodypart.wounds && iter_bodypart.wounds.len >= 1)
-						M.adjustBruteLoss(-added_damage_offset, FALSE)
-						M.adjustFireLoss(-added_damage_offset * 0.75, FALSE)	//75% of added_damage_offset
-						added_damage_offset *= 0.5	//Reduce the added_damage_offset by half for each wounded bodypart to keep the offset from getting too ridiculous
+						added_damage_offset = 0
+						for(var/datum/wound/iter_wound in iter_bodypart.wounds)
+							switch(iter_wound.severity)
+								if(WOUND_SEVERITY_CRITICAL)
+									added_damage_offset = max(added_damage_offset, 2)
+								if(WOUND_SEVERITY_SEVERE)
+									added_damage_offset = max(added_damage_offset, 1)
+								if(WOUND_SEVERITY_MODERATE)
+									added_damage_offset = max(added_damage_offset, 0.5)
+						M.adjustBruteLoss(-added_damage_offset * offset_multiplier, FALSE)
+						M.adjustFireLoss(-added_damage_offset * offset_multiplier * 0.75, FALSE)	//75% of added_damage_offset
+						offset_multiplier *= 0.5	//Half the offset_multipler for each wounded bodypart to keep the offset from getting too ridiculous
 
 		//Actual healing part starts here
 		M.adjustBruteLoss(-damage_offset, FALSE)	//100% of damage_offset (3.5 / 2.6)

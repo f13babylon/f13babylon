@@ -110,7 +110,7 @@
 	STR.max_w_class = WEIGHT_CLASS_NORMAL
 	CANHOLD_STATIC(STR, typecacheof(list(
 		/obj/item/ammo_box/shotgun,
-		/obj/item/ammo_box/lasmusket,
+		/obj/item/ammo_box/plasmamusket,
 		/obj/item/reagent_containers/food/drinks/flask,
 		/obj/item/grenade/f13,
 		/obj/item/reagent_containers/food/drinks/bottle/molotov,
@@ -184,6 +184,22 @@
 	new /obj/item/stock_parts/cell/ammo/ec(src)
 	new /obj/item/stock_parts/cell/ammo/ec(src)
 	new /obj/item/stock_parts/cell/ammo/ec(src)
+
+/obj/item/storage/belt/holster/paladincape
+	name = "short shoulder cape"
+	desc = "A short, red cape with a holster attached to carry a handgun and ammo."
+	icon = 'icons/fallout/clothing/belts.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/belt.dmi'
+	icon_state = "newboscape"
+	item_state = "newboscape"
+
+/obj/item/storage/belt/holster/paladinlongcape
+	name = "long shoulder cape"
+	desc = "A long, red cape with a holster attached to carry a handgun and ammo."
+	icon = 'icons/fallout/clothing/belts.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/belt.dmi'
+	icon_state = "newboslcape"
+	item_state = "newboslcape"
 
 /obj/item/storage/belt/holster/legholster
 	name = "leg holster"
@@ -267,21 +283,11 @@
 	icon_state = "reconbandolier"
 	item_state = "reconbandolier"
 
-/obj/item/storage/belt/military/ComponentInitialize()
-	. = ..()
-	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_w_class = WEIGHT_CLASS_SMALL
-
 /obj/item/storage/belt/military/NCR_Bandolier
 	name = "NCR bandolier"
 	desc = "A standard issue NCR bandolier."
 	icon_state = "ncr_bandolier"
 	item_state = "ncr_bandolier"
-
-/obj/item/storage/belt/military/NCR_Bandolier/ComponentInitialize()
-	. = ..()
-	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_items = 7
 
 //Regular Quiver
 /obj/item/storage/belt/tribe_quiver

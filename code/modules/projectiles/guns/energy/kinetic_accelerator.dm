@@ -19,6 +19,8 @@
 	can_bayonet = TRUE
 	knife_x_offset = 20
 	knife_y_offset = 12
+	can_charge = 0
+	can_remove = 0
 
 	var/max_mod_capacity = 100
 	var/list/modkits = list()
@@ -40,7 +42,7 @@
 /obj/item/projectile/kinetic/premium
 	name = "kinetic force"
 	icon_state = null
-	damage = 50
+	damage = 10
 	damage_type = BRUTE
 	flag = "bomb"
 	range = 4
@@ -217,7 +219,7 @@
 /obj/item/projectile/kinetic
 	name = "kinetic force"
 	icon_state = null
-	damage = 40
+	damage = 10
 	damage_type = BRUTE
 	flag = "bomb"
 	range = 3

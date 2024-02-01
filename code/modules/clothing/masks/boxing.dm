@@ -85,3 +85,22 @@
 	flags_inv = HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	visor_flags_inv = HIDEFACE|HIDEFACIALHAIR
 	w_class = WEIGHT_CLASS_SMALL
+	actions_types = list(/datum/action/item_action/adjust)
+	mutantrace_variation = STYLE_MUZZLE
+
+/obj/item/clothing/mask/russian_balaclava/attack_self(mob/user)
+	adjustmask(user)
+
+/obj/item/clothing/mask/sbalaclava
+	name = "skull balaclava"
+	desc = "Well that was a disaster, lets try again."
+	icon_state = "sbalaclava"
+	item_state = "sbalaclava"
+	flags_inv = HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
+	visor_flags_inv = HIDEFACE|HIDEFACIALHAIR
+	w_class = WEIGHT_CLASS_SMALL
+	actions_types = list(/datum/action/item_action/adjust)
+	mutantrace_variation = STYLE_MUZZLE
+
+/obj/item/clothing/mask/sbalaclava/attack_self(mob/user)
+	adjustmask(user)

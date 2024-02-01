@@ -16,7 +16,7 @@
 	fire_delay = 2.5
 	extra_damage = 22
 	extra_penetration = 15
-	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	mag_type = /obj/item/ammo_box/magazine/m556mm
 	base_size = 2
 	//Extra Modifiable Gun Vars
 	modifiablegun = TRUE

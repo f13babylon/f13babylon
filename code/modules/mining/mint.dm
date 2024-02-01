@@ -26,7 +26,7 @@
 		/datum/material/uranium,
 		/datum/material/titanium,
 		/datum/material/diamond,
-		/datum/material/adamantine,
+		/datum/material/saturnite,
 		/datum/material/mythril,
 		/datum/material/plastic,
 		/datum/material/runite

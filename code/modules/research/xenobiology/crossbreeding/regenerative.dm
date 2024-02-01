@@ -244,10 +244,10 @@ Regenerative extracts:
 	U.revive(full_heal = 1)
 	to_chat(U, "<span class='notice'>Some of the milky goo sprays onto you, as well!</span>")
 
-/obj/item/slimecross/regenerative/adamantine
-	colour = "adamantine"
+/obj/item/slimecross/regenerative/saturnite
+	colour = "saturnite"
 
-/obj/item/slimecross/regenerative/adamantine/core_effect(mob/living/target, mob/user) //WIP - Find out why this doesn't work.
+/obj/item/slimecross/regenerative/saturnite/core_effect(mob/living/target, mob/user) //WIP - Find out why this doesn't work.
 	target.apply_status_effect(STATUS_EFFECT_SLIMESKIN)
 
 /obj/item/slimecross/regenerative/rainbow

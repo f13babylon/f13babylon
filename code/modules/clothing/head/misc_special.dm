@@ -205,15 +205,6 @@
 	..()
 	user.remove_alt_appearance("standard_borg_disguise")
 
-
-/obj/item/clothing/head/welding/weldingfire
-	icon_state = "weldingfire"
-	item_state = "weldingfire"
-
-/obj/item/clothing/head/welding/weldingjapan
-	icon_state = "weldingjapan"
-	item_state = "weldingjapan"
-
 /obj/item/clothing/head/wig
 	name = "wig"
 	desc = "A bunch of hair without a head attached."
