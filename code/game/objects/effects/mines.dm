@@ -11,7 +11,7 @@
 /obj/effect/mine/Initialize(mapload)
 	. = ..()
 	var/static/list/loc_connections = list(
-		COMSIG_ATOM_ENTERED = .proc/on_entered,
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
 	)
 	AddElement(/datum/element/connect_loc, loc_connections)
 
@@ -24,13 +24,13 @@
 	SIGNAL_HANDLER
 	if(triggered || !isturf(loc) || !isliving(usr) || isstructure(usr) || isnottriggermine(usr))
 		return
-	
+
 	var/atom/movable/AM = usr
-	
+
 	if(AM.movement_type & FLYING)
 		return
 
-	INVOKE_ASYNC(src, .proc/triggermine, AM)
+	INVOKE_ASYNC(src, PROC_REF(triggermine), AM)
 
 /obj/effect/mine/proc/triggermine(mob/victim)
 	if(triggered)

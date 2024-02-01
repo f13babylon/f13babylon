@@ -255,9 +255,9 @@
 /obj/item/restraints/legcuffs/beartrap/Initialize(mapload)
 	. = ..()
 	icon_state = "[initial(icon_state)][armed]"
-	
+
 	var/static/list/loc_connections = list(
-		COMSIG_ATOM_ENTERED = .proc/on_entered,
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
 	)
 	AddElement(/datum/element/connect_loc, loc_connections)
 
@@ -306,7 +306,7 @@
 
 /obj/item/restraints/legcuffs/beartrap/proc/on_entered(datum/source, AM as mob|obj)
 	SIGNAL_HANDLER
-	INVOKE_ASYNC(src, .proc/handle_enter, source, AM)
+	INVOKE_ASYNC(src, PROC_REF(handle_enter), source, AM)
 
 /obj/item/restraints/legcuffs/beartrap/energy
 	name = "energy snare"
@@ -319,7 +319,7 @@
 
 /obj/item/restraints/legcuffs/beartrap/energy/New()
 	..()
-	addtimer(CALLBACK(src, .proc/dissipate), 100)
+	addtimer(CALLBACK(src, PROC_REF(dissipate)), 100)
 
 /obj/item/restraints/legcuffs/beartrap/energy/proc/dissipate()
 	if(!ismob(loc))

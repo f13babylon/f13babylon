@@ -52,7 +52,7 @@
 	if(anchored)
 		storage_capacity = 32
 	if(mapload && !opened)		// if closed, any item at the crate's loc is put in the contents
-		addtimer(CALLBACK(src, .proc/take_contents), 0)
+		addtimer(CALLBACK(src, PROC_REF(take_contents)), 0)
 	if(secure)
 		lockerelectronics = new(src)
 		lockerelectronics.accesses = req_access
@@ -638,4 +638,3 @@
 		user.set_resting(FALSE, TRUE)
 		togglelock(user)
 		T1.visible_message("<span class='warning'>[user] dives into [src]!</span>")
-

@@ -44,8 +44,8 @@
 
 /obj/item/melee/smith/twohand/Initialize(mapload)
 	. = ..()
-	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, .proc/on_wield)
-	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, .proc/on_unwield)
+	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, PROC_REF(on_wield))
+	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, PROC_REF(on_unwield))
 
 /obj/item/melee/smith/twohand/proc/on_wield(obj/item/source, mob/user)
 	wielded = TRUE
@@ -479,7 +479,7 @@
 
 
 // Good throwing, thats about it (27, 40)
-/obj/item/melee/smith/javelin 
+/obj/item/melee/smith/javelin
 	name = "javelin"
 	icon_state = "javelin_smith"
 	overlay_state = "shaft_javelin"

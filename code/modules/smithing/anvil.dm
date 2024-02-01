@@ -205,8 +205,8 @@
 	user.visible_message("<span class='notice'>[user] works the metal on the anvil with their hammer with a loud clang!</span>", \
 						"<span class='notice'>You [stepdone] the metal with a loud clang!</span>")
 	playsound(src, 'sound/effects/clang2.ogg',40, 2)
-	do_smithing_sparks(1, TRUE, src) 
-	addtimer(CALLBACK(GLOBAL_PROC, .proc/playsound, src, 'sound/effects/clang2.ogg', 40, 2), 15)
+	do_smithing_sparks(1, TRUE, src)
+	addtimer(CALLBACK(GLOBAL_PROC, PROC_REF(playsound), src, 'sound/effects/clang2.ogg', 40, 2), 15)
 	if(length(stepsdone) >= 3)
 		tryfinish(user)
 	busy = FALSE

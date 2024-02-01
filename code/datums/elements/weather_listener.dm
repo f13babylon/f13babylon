@@ -25,8 +25,8 @@
 		weather_trait = trait
 		playlist = weather_playlist
 
-	RegisterSignal(target, COMSIG_MOVABLE_Z_CHANGED, .proc/handle_z_level_change)
-	RegisterSignal(target, COMSIG_MOB_LOGOUT, .proc/handle_logout)
+	RegisterSignal(target, COMSIG_MOVABLE_Z_CHANGED, PROC_REF(handle_z_level_change))
+	RegisterSignal(target, COMSIG_MOB_LOGOUT, PROC_REF(handle_logout))
 
 	var/turf/target_turf = get_turf(target)
 	handle_z_level_change(target, target_turf, target_turf)
@@ -53,4 +53,3 @@
 /datum/element/weather_listener/proc/handle_logout(datum/source)
 	SIGNAL_HANDLER
 	source.RemoveElement(/datum/element/weather_listener, weather_type, weather_trait, playlist)
-

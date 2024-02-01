@@ -72,7 +72,7 @@
 				if(!P.tool_start_check(user, amount=5))
 					return
 				to_chat(user, "<span class='notice'>You start adding cables to the frame...</span>")
-				if(P.use_tool(src, user, 20, 5, 50, CALLBACK(src, .proc/check_state, 2)))
+				if(P.use_tool(src, user, 20, 5, 50, CALLBACK(src, PROC_REF(check_state), 2)))
 					to_chat(user, "<span class='notice'>You add cables to the frame.</span>")
 					state = 3
 					icon_state = "3"
@@ -92,7 +92,7 @@
 					return
 				playsound(src, 'sound/items/deconstruct.ogg', 50, 1)
 				to_chat(user, "<span class='notice'>You start to put in the glass panel...</span>")
-				if(P.use_tool(src, user, 20, 2, 0, CALLBACK(src, .proc/check_state, 3)))
+				if(P.use_tool(src, user, 20, 2, 0, CALLBACK(src, PROC_REF(check_state), 3)))
 					to_chat(user, "<span class='notice'>You put in the glass panel.</span>")
 					state = 4
 					src.icon_state = "4"

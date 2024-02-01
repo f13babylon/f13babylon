@@ -94,7 +94,7 @@
 		L.visible_message("<span class='revennotice'>A strange purple glow wraps itself around [L] as [L.p_they()] suddenly fall[L.p_s()] unconscious.</span>",
 			"<span class='revendanger'>[desc]</span>")
 		// Don't let them sit suround unconscious forever
-		addtimer(CALLBACK(src, .proc/sleeper_dreams, L), 100)
+		addtimer(CALLBACK(src, PROC_REF(sleeper_dreams), L), 100)
 
 	// Existing sleepers
 	for(var/i in found)
@@ -179,9 +179,9 @@
 
 /obj/structure/table/wood/bar/Initialize(mapload)
 	. = ..()
-	
+
 	var/static/list/loc_connections = list(
-		COMSIG_ATOM_ENTERED = .proc/on_entered,
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
 	)
 	AddElement(/datum/element/connect_loc, loc_connections)
 

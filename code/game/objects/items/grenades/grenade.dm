@@ -112,7 +112,7 @@
 	active = TRUE
 	icon_state = initial(icon_state) + "_active"
 	item_state = initial(item_state) + "_active"
-	addtimer(CALLBACK(src, .proc/prime), isnull(delayoverride)? det_time : delayoverride)
+	addtimer(CALLBACK(src, PROC_REF(prime)), isnull(delayoverride)? det_time : delayoverride)
 
 // for ticking sound until detonation
 /obj/item/grenade/proc/primetimer(mob/user, delayoverride, msg = TRUE, volume = 60)
@@ -128,7 +128,7 @@
 	active = TRUE
 	icon_state = initial(icon_state) + "_active"
 	item_state = initial(item_state) + "_active"
-	addtimer(CALLBACK(src, .proc/prime), isnull(delayoverride)? det_time : delayoverride)
+	addtimer(CALLBACK(src, PROC_REF(prime)), isnull(delayoverride)? det_time : delayoverride)
 
 // For hissing fuse sound
 /obj/item/grenade/proc/primefuse(mob/user, delayoverride, msg = TRUE, volume = 60)
@@ -145,7 +145,7 @@
 	active = TRUE
 	icon_state = initial(icon_state) + "_active"
 	item_state = initial(item_state) + "_active"
-	addtimer(CALLBACK(src, .proc/prime), isnull(delayoverride)? det_time : delayoverride)
+	addtimer(CALLBACK(src, PROC_REF(prime)), isnull(delayoverride)? det_time : delayoverride)
 
 
 /obj/item/grenade/proc/prime(mob/living/lanced_by)

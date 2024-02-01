@@ -83,7 +83,7 @@
 	levelupdate()
 	if(smooth)
 		queue_smooth(src)
-	
+
 	// visibilityChanged() will never hit any path with side effects during mapload
 	if (!mapload)
 		visibilityChanged()
@@ -388,7 +388,7 @@
 
 	var/list/things = src_object.contents()
 	var/datum/progressbar/progress = new(user, things.len, src)
-	while (do_after(user, 10, TRUE, src, FALSE, CALLBACK(src_object, /datum/component/storage.proc/mass_remove_from_storage, src, things, progress)))
+	while (do_after(user, 10, TRUE, src, FALSE, CALLBACK(src_object, TYPE_PROC_REF(/datum/component/storage, mass_remove_from_storage), src, things, progress)))
 		stoplag(1)
 	qdel(progress)
 

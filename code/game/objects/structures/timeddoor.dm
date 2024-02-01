@@ -18,7 +18,7 @@
 
 /obj/structure/timeddoor/Initialize(mapload)
 	. = ..()
-	addtimer(CALLBACK(src, .proc/timeddeletedoor), deletion_time)
+	addtimer(CALLBACK(src, PROC_REF(timeddeletedoor)), deletion_time)
 
 /obj/structure/timeddoor/proc/timeddeletedoor()
 	playsound(loc, 'sound/f13machines/doorhidden_open.ogg', 50, TRUE, -1)

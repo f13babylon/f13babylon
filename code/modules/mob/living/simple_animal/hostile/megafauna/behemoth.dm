@@ -96,7 +96,7 @@
 	. = ..()
 	stored_move_dirs &= ~direct
 	if(!stored_move_dirs && loc) // don't slam in nullspace
-		INVOKE_ASYNC(src, .proc/ground_slam, stomp_range, 1)
+		INVOKE_ASYNC(src, PROC_REF(ground_slam), stomp_range, 1)
 
 /// Slams the ground around the behemoth throwing back enemies caught nearby
 /mob/living/simple_animal/hostile/megafauna/behemoth/proc/ground_slam(range, delay)

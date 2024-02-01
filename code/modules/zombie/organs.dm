@@ -65,7 +65,7 @@
 		not even death can stop, you will rise again!</span>")
 	var/revive_time = rand(revive_time_min, revive_time_max)
 	var/flags = TIMER_STOPPABLE
-	timer_id = addtimer(CALLBACK(src, .proc/zombify), revive_time, flags)
+	timer_id = addtimer(CALLBACK(src, PROC_REF(zombify)), revive_time, flags)
 
 /obj/item/organ/zombie_infection/proc/zombify()
 	timer_id = null
@@ -134,4 +134,3 @@
 	owner.Stun(living_transformation_time)
 	to_chat(owner, "<span class='alertalien'>You are now a ravenous ghoul! You claw and bite, turning unsuspecting wasters into monstrosities that help spread the infection.</span>")
 	to_chat(owner, "<span class='alertwarning'>You are now effectively a (zombie) feral ghoul. Do not try to help your former allies in any way, all you must do is consume!</span>")
-

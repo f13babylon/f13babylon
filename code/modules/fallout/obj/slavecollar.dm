@@ -49,7 +49,7 @@
 		M.update_inv_neck()
 	else
 		src.visible_message("<span class='danger'>The [src] beeps loudly!</span>")
-	addtimer(CALLBACK(src, .proc/boom, M), 20)
+	addtimer(CALLBACK(src, PROC_REF(boom), M), 20)
 
 /obj/item/electropack/shockcollar/explosive/proc/boom(mob/living/carbon/collar_loc)
 	explosion(get_turf(src), 0,1,2)

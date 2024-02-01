@@ -14,7 +14,6 @@
 	var/bantype_pass = 0
 	var/bantype_str
 	var/maxadminbancheck	//Used to limit the number of active bans of a certein type that each admin can give. Used to protect against abuse or mutiny.
-	var/announceinirc		//When set, it announces the ban in irc. Intended to be a way to raise an alarm, so to speak.
 	var/blockselfban		//Used to prevent the banning of yourself.
 	var/kickbannedckey		//Defines whether this proc should kick the banned person, if they are connected (if banned_mob is defined).
 							//some ban types kick players after this proc passes (tempban, permaban), but some are specific to db_ban, so
@@ -41,14 +40,12 @@
 			duration = -1
 			bantype_pass = 1
 			maxadminbancheck = 1
-			announceinirc = 1
 			blockselfban = 1
 			kickbannedckey = 1
 		if(BANTYPE_ADMIN_TEMP)
 			bantype_str = "ADMIN_TEMPBAN"
 			bantype_pass = 1
 			maxadminbancheck = 1
-			announceinirc = 1
 			blockselfban = 1
 			kickbannedckey = 1
 	if( !bantype_pass )
@@ -94,13 +91,11 @@
 			if(alert(usr, "[bankey] has not been seen before, are you sure you want to create a ban for them?", "Unknown ckey", "Yes", "No", "Cancel") != "Yes")
 				return
 
-	var/a_key
 	var/a_ckey
 	var/a_computerid
 	var/a_ip
 
 	if(istype(owner))
-		a_key = owner.key
 		a_ckey = owner.ckey
 		a_computerid = owner.computer_id
 		a_ip = owner.address

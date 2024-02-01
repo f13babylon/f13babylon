@@ -428,7 +428,7 @@
 /obj/item/hardened_spike/Initialize(mapload, firedby)
 	. = ..()
 	fired_by = firedby
-	addtimer(CALLBACK(src, .proc/checkembedded), 5 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(checkembedded)), 5 SECONDS)
 
 /obj/item/hardened_spike/proc/checkembedded()
 	if(missed)
@@ -510,4 +510,3 @@
 	//this is where it would deal damage, if it transfers chems it removes itself so no damage
 	spikey.forceMove(get_turf(L))
 	transfered.visible_message("<span class='notice'>[spikey] falls out of [transfered]!</span>")
-

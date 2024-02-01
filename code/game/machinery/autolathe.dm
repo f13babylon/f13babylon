@@ -57,7 +57,7 @@
 	var/list/mats = allowed_materials
 	if(!mats)
 		mats = SSmaterials.materialtypes_by_category[MAT_CATEGORY_RIGID]
-	AddComponent(/datum/component/material_container, mats, _show_on_examine=TRUE, _after_insert=CALLBACK(src, .proc/AfterMaterialInsert))
+	AddComponent(/datum/component/material_container, mats, _show_on_examine=TRUE, _after_insert=CALLBACK(src, PROC_REF(AfterMaterialInsert)))
 	. = ..()
 	wires = new /datum/wires/autolathe(src)
 	stored_research = new stored_research
@@ -210,7 +210,7 @@
 				use_power(power)
 				icon_state = "[icon_state]_n"
 				var/time = is_stack ? 10 : base_print_speed * coeff * multiplier
-				addtimer(CALLBACK(src, .proc/make_item, power, materials_used, custom_materials, multiplier, coeff, is_stack), time)
+				addtimer(CALLBACK(src, PROC_REF(make_item), power, materials_used, custom_materials, multiplier, coeff, is_stack), time)
 			else
 				to_chat(usr, "<span class=\"alert\">Not enough materials for this operation.</span>")
 

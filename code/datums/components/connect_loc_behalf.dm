@@ -20,8 +20,8 @@
 	src.tracked = tracked
 
 /datum/component/connect_loc_behalf/RegisterWithParent()
-	RegisterSignal(tracked, COMSIG_MOVABLE_MOVED, .proc/on_moved)
-	RegisterSignal(tracked, COMSIG_PARENT_QDELETING, .proc/handle_tracked_qdel)
+	RegisterSignal(tracked, COMSIG_MOVABLE_MOVED, PROC_REF(on_moved))
+	RegisterSignal(tracked, COMSIG_PARENT_QDELETING, PROC_REF(handle_tracked_qdel))
 	update_signals()
 
 /datum/component/connect_loc_behalf/UnregisterFromParent()
@@ -66,4 +66,3 @@
 /datum/component/connect_loc_behalf/proc/on_moved(sigtype, atom/movable/tracked, atom/old_loc)
 	SIGNAL_HANDLER
 	update_signals()
-

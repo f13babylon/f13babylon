@@ -5,8 +5,8 @@
 	var/list/swarm_members = list()
 	///given to connect_loc to listen for something moving onto or off of parent
 	var/static/list/crossed_connections = list(
-		COMSIG_ATOM_ENTERED = .proc/join_swarm,
-		COMSIG_ATOM_EXITED = .proc/leave_swarm,
+		COMSIG_ATOM_ENTERED = PROC_REF(join_swarm),
+		COMSIG_ATOM_EXITED = PROC_REF(leave_swarm),
 	)
 
 /datum/component/swarming/Initialize(max_x = 24, max_y = 24)

@@ -20,14 +20,14 @@
 	if(_can_be_blunt)
 		can_be_blunt = _can_be_blunt
 	if(isitem(parent))
-		RegisterSignal(parent, COMSIG_ITEM_ATTACK, .proc/onItemAttack)
+		RegisterSignal(parent, COMSIG_ITEM_ATTACK, PROC_REF(onItemAttack))
 
 /datum/component/butchering/proc/onItemAttack(obj/item/source, mob/living/M, mob/living/user)
 	if(user.a_intent != INTENT_HARM)
 		return
 	if(M.stat == DEAD && (M.butcher_results || M.guaranteed_butcher_results)) //can we butcher it?
 		if(butchering_enabled && (can_be_blunt || source.get_sharpness()))
-			INVOKE_ASYNC(src, .proc/startButcher, source, M, user)
+			INVOKE_ASYNC(src, PROC_REF(startButcher), source, M, user)
 			return COMPONENT_ITEM_NO_ATTACK
 
 	if(ishuman(M) && source.force && source.get_sharpness())
@@ -37,7 +37,7 @@
 				user.show_message("<span class='warning'>[H]'s neck has already been already cut, you can't make the bleeding any worse!</span>", 1, \
 								"<span class='warning'>Their neck has already been already cut, you can't make the bleeding any worse!</span>")
 				return COMPONENT_ITEM_NO_ATTACK
-			INVOKE_ASYNC(src, .proc/startNeckSlice, source, H, user)
+			INVOKE_ASYNC(src, PROC_REF(startNeckSlice), source, H, user)
 			return COMPONENT_ITEM_NO_ATTACK
 
 /datum/component/butchering/proc/startButcher(obj/item/source, mob/living/M, mob/living/user)
@@ -122,7 +122,7 @@
 /datum/component/butchering/recycler
 	///given to connect_loc to listen for something moving over target
 	var/static/list/crossed_connections = list(
-		COMSIG_ATOM_ENTERED = .proc/on_entered,
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
 	)
 
 /datum/component/butchering/recycler/Initialize(_speed, _effectiveness, _bonus_modifier, _butcher_sound, disabled, _can_be_blunt)
@@ -134,7 +134,7 @@
 	if(ismovable(parent)) // technically redundant but i'm pretending that istype above isn't real
 		AddComponent(/datum/component/connect_loc_behalf, parent, crossed_connections)
 	else
-		RegisterSignal(get_turf(parent), COMSIG_ATOM_ENTERED, .proc/on_entered)
+		RegisterSignal(get_turf(parent), COMSIG_ATOM_ENTERED, PROC_REF(on_entered))
 
 /datum/component/butchering/recycler/proc/on_entered(datum/source, mob/living/L)
 	if(!istype(L))

@@ -61,7 +61,7 @@ Difficulty: Medium
 /mob/living/simple_animal/hostile/megafauna/blood_drunk_miner/hunter/AttackingTarget()
 	. = ..()
 	if(. && prob(12))
-		INVOKE_ASYNC(src, .proc/dash)
+		INVOKE_ASYNC(src, PROC_REF(dash))
 
 /obj/item/melee/transforming/cleaving_saw/miner //nerfed saw because it is very murdery
 	force = 6
@@ -109,7 +109,7 @@ Difficulty: Medium
 	if(QDELETED(target))
 		return
 	if(!CheckActionCooldown() || !Adjacent(target)) //some cheating
-		INVOKE_ASYNC(src, .proc/quick_attack_loop)
+		INVOKE_ASYNC(src, PROC_REF(quick_attack_loop))
 		return
 	face_atom(target)
 	if(isliving(target))
@@ -129,7 +129,7 @@ Difficulty: Medium
 	if(guidance)
 		adjustHealth(-2)
 	transform_weapon()
-	INVOKE_ASYNC(src, .proc/quick_attack_loop)
+	INVOKE_ASYNC(src, PROC_REF(quick_attack_loop))
 	return TRUE
 
 /mob/living/simple_animal/hostile/megafauna/blood_drunk_miner/do_attack_animation(atom/A, visual_effect_icon, obj/item/used_item, no_effect)
@@ -143,12 +143,12 @@ Difficulty: Medium
 	if(. && target && !targets_the_same)
 		wander = TRUE
 		transform_weapon()
-		INVOKE_ASYNC(src, .proc/quick_attack_loop)
+		INVOKE_ASYNC(src, PROC_REF(quick_attack_loop))
 
 /mob/living/simple_animal/hostile/megafauna/blood_drunk_miner/OpenFire()
 	Goto(target, move_to_delay, minimum_distance)
 	if(get_dist(src, target) > MINER_DASH_RANGE && dash_cooldown <= world.time)
-		INVOKE_ASYNC(src, .proc/dash, target)
+		INVOKE_ASYNC(src, PROC_REF(dash), target)
 	else
 		shoot_ka()
 	transform_weapon()
@@ -173,7 +173,7 @@ Difficulty: Medium
 	if(dashing || !CheckActionCooldown() || !Adjacent(target))
 		if(dashing && next_action <= world.time)
 			SetNextAction(1, considered_action = FALSE, immediate = FALSE, flush = TRUE)
-		INVOKE_ASYNC(src, .proc/quick_attack_loop) //lets try that again.
+		INVOKE_ASYNC(src, PROC_REF(quick_attack_loop)) //lets try that again.
 		return
 	AttackingTarget()
 
@@ -243,7 +243,7 @@ Difficulty: Medium
 
 /obj/effect/temp_visual/dir_setting/miner_death/Initialize(mapload, set_dir)
 	. = ..()
-	INVOKE_ASYNC(src, .proc/fade_out)
+	INVOKE_ASYNC(src, PROC_REF(fade_out))
 
 /obj/effect/temp_visual/dir_setting/miner_death/proc/fade_out()
 	var/matrix/M = new

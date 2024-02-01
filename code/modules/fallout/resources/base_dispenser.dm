@@ -47,7 +47,7 @@
 			"METAL" = image(icon = 'icons/mob/radial.dmi', icon_state = "airlock"),
 			"GLASS" = image(icon= 'icons/mob/radial.dmi', icon_state = "delete")
 			)
-		var/list/choice = show_radial_menu(user, src, choices, custom_check = CALLBACK(src, .proc/check_menu, user), require_near = TRUE)
+		var/list/choice = show_radial_menu(user, src, choices, custom_check = CALLBACK(src, PROC_REF(check_menu), user), require_near = TRUE)
 		switch(choice)
 			if("METAL")
 				to_chat(user, "You chose METAL.")

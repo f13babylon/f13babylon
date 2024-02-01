@@ -16,9 +16,9 @@
 
 */
 
-//#define TESTING				
+//#define TESTING
 //By using the testing("message") proc you can create debug-feedback for people with this
-								//uncommented, but not visible in the release version) 
+								//uncommented, but not visible in the release version)
 
 // Comment this out if you are debugging problems that might be obscured by custom error handling in world/Error
 #ifdef DEBUG
@@ -56,15 +56,6 @@
 
 #ifdef LOWMEMORYMODE
 #define FORCE_MAP "_maps/runtimestation.json"
-#endif
-
-//Update this whenever you need to take advantage of more recent byond features
-#define MIN_COMPILER_VERSION 513
-#define MIN_COMPILER_BUILD 1514
-#if DM_VERSION < MIN_COMPILER_VERSION || DM_BUILD < MIN_COMPILER_BUILD
-//Don't forget to update this part
-#error Your version of BYOND is too out-of-date to compile this project. Go to https://secure.byond.com/download and update.
-#error You need version 513.1508 or higher
 #endif
 
 //Additional code for the above flags.

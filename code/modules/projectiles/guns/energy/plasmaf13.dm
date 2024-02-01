@@ -152,8 +152,8 @@
 	. = ..()
 	AddComponent(/datum/component/two_handed, force_unwielded=20, force_wielded=40, icon_wielded="[item_state]2")
 	AddElement(/datum/element/update_icon_updates_onmob)
-	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, .proc/allow_fire)
-	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, .proc/deny_fire)
+	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, PROC_REF(allow_fire))
+	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, PROC_REF(deny_fire))
 
 /obj/item/gun/energy/laser/plasma/spear/proc/allow_fire()
 	twohands = TRUE
@@ -202,8 +202,8 @@
 	. = ..()
 	AddComponent(/datum/component/two_handed, force_unwielded=6, force_wielded=32, icon_wielded="[item_state]2")
 	AddElement(/datum/element/update_icon_updates_onmob)
-	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, .proc/allow_fire)
-	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, .proc/deny_fire)
+	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, PROC_REF(allow_fire))
+	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, PROC_REF(deny_fire))
 
 /obj/item/gun/energy/laser/plasma/inquis/proc/allow_fire()
 	twohands = TRUE
@@ -248,8 +248,8 @@
 	. = ..()
 	AddComponent(/datum/component/two_handed)
 	AddElement(/datum/element/update_icon_updates_onmob)
-	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, .proc/allow_fire)
-	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, .proc/deny_fire)
+	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, PROC_REF(allow_fire))
+	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, PROC_REF(deny_fire))
 
 
 /obj/item/gun/energy/laser/plasma/caster/proc/allow_fire()
