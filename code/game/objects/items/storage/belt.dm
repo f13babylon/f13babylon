@@ -329,11 +329,6 @@
 	item_state = "militarywebbing"
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
 
-/obj/item/storage/belt/military/ComponentInitialize()
-	. = ..()
-	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_w_class = WEIGHT_CLASS_SMALL
-
 /obj/item/storage/belt/military/snack
 	name = "tactical snack rig"
 
@@ -404,11 +399,6 @@
 	desc = "A tactical assault belt."
 	icon_state = "assaultbelt"
 	item_state = "security"
-
-/obj/item/storage/belt/military/assault/ComponentInitialize()
-	. = ..()
-	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_items = 7
 
 /obj/item/storage/belt/durathread
 	name = "durathread toolbelt"
@@ -625,43 +615,7 @@
 	item_state = "holster_shoulder"
 	alternate_worn_layer = UNDER_SUIT_LAYER
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_NECK
-
-/obj/item/storage/belt/holster/ComponentInitialize()
-	. = ..()
-	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_items = 4
-	STR.max_w_class = WEIGHT_CLASS_NORMAL
-	CANHOLD_STATIC(STR, typecacheof(list(
-		/obj/item/gun/ballistic/automatic/pistol,
-		/obj/item/gun/ballistic/revolver,
-		/obj/item/ammo_box/magazine,
-		/obj/item/ammo_box/tube,
-		/obj/item/ammo_box/a357,
-		/obj/item/ammo_box/c38,
-		/obj/item/ammo_box/l10mm,
-		/obj/item/ammo_box/a762mm,
-		/obj/item/ammo_box/shotgun,
-		/obj/item/ammo_box/m44,
-		/obj/item/ammo_box/a762mm,
-		/obj/item/ammo_box/a556mm/stripper,
-		/obj/item/ammo_box/needle,
-		/obj/item/ammo_box/a308,
-		/obj/item/ammo_box/c4570,
-		/obj/item/ammo_box/a50MG,
-		/obj/item/ammo_box/c45rev,
-		/obj/item/ammo_box/a45lcrev,
-		/obj/item/gun/energy/laser/pistol/pewpew,
-		/obj/item/gun/energy/laser/pistol,
-		/obj/item/gun/energy/laser/complianceregulator,
-		/obj/item/gun/energy/laser/plasma/pistol,
-		/obj/item/gun/energy/laser/plasma/glock,
-		/obj/item/gun/energy/laser/plasma/glock/extended,
-		/obj/item/gun/energy/laser/wattz,
-		/obj/item/gun/energy/laser/wattz/magneto,
-		/obj/item/gun/energy/laser/plasma/pistol/alien,
-		/obj/item/stock_parts/cell/ammo/ec,
-		/obj/item/stock_parts/cell/ammo/ecp,
-		)))
+	component_type = /datum/component/storage/concrete/pockets/holster
 
 /obj/item/storage/belt/holster/full/PopulateContents()
 	new /obj/item/gun/ballistic/revolver/detective(src)

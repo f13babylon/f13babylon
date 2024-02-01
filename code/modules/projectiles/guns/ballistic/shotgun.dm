@@ -33,6 +33,7 @@
 	spawnwithmagazine = TRUE
 	var/pump_sound = 'sound/weapons/shotgunpump.ogg'
 	fire_sound = 'sound/f13weapons/shotgun.ogg'
+	insert_sound = 'sound/weapons/guns/insert_shell_shot.ogg'
 
 
 /obj/item/gun/ballistic/shotgun/process_chamber(mob/living/user, empty_chamber = 0)
@@ -316,6 +317,7 @@
 	item_state = "shotgunauto5"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/com/compact
 	fire_sound = 'sound/f13weapons/auto5.ogg'
+	insert_sound = 'sound/weapons/guns/insert_shell_auto.ogg'
 
 
 //Lever action shotgun					Keywords: Shotgun, Lever-action, 5 round magazine, Pistol grip
@@ -349,6 +351,7 @@
 	recoil = 1.3
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube
 	force = 10
+	insert_sound = 'sound/weapons/guns/insert_shell_auto.ogg'
 	var/toggled = FALSE
 	var/obj/item/ammo_box/magazine/internal/shot/alternate_magazine
 
@@ -411,6 +414,7 @@
 	autofire_shot_delay = 4.15
 	automatic = 1
 	fire_sound = 'sound/f13weapons/riot_shotgun.ogg'
+	insert_sound = 'sound/weapons/guns/insert_shell_auto.ogg'
 
 
 //Riot shotgun							Keywords: Shotgun, Semi-auto, 12 round magazine, Pistol grip
@@ -430,6 +434,10 @@
 	automatic_burst_overlay = FALSE
 	semi_auto = TRUE
 	fire_sound = 'sound/f13weapons/riot_shotgun.ogg'
+
+	reload_sound = 'sound/weapons/guns/hrifle_magin.ogg'	//Prob closest to 7.62 noise
+	reload_sound_empty = 'sound/weapons/guns/hrifle_magin.ogg'
+	unload_sound = 'sound/weapons/guns/hrifle_magout.ogg'
 
 //Khan S.E unique riot shotgun.
 /obj/item/gun/ballistic/automatic/shotgun/riot/boss

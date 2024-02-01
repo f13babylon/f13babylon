@@ -2095,7 +2095,7 @@ Records disabled until a use for them is found
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_taur_list[S.name] = path
 					var/new_taur
-					new_taur = input(user, "Choose your character's tauric body:", "Character Preference") as null|anything in snowflake_taur_list
+					new_taur = input(user, "Choose your character's extra bodyparts:", "Character Preference") as null|anything in snowflake_taur_list
 					if(new_taur)
 						features["taur"] = new_taur
 						if(new_taur != "None")
@@ -2805,11 +2805,11 @@ Records disabled until a use for them is found
 				if("ambientocclusion")
 					ambientocclusion = !ambientocclusion
 					if(parent && parent.screen && parent.screen.len)
-						var/obj/screen/plane_master/game_world/G = parent.mob.hud_used.plane_masters["[GAME_PLANE]"]
-						var/obj/screen/plane_master/objitem/OI = parent.mob.hud_used.plane_masters["[OBJITEM_PLANE]"]
-						var/obj/screen/plane_master/mob/M = parent.mob.hud_used.plane_masters["[MOB_PLANE]"]
-						var/obj/screen/plane_master/above_wall/A = parent.mob.hud_used.plane_masters["[ABOVE_WALL_PLANE]"]
-						var/obj/screen/plane_master/wall/W = parent.mob.hud_used.plane_masters["[WALL_PLANE]"]
+						var/atom/movable/screen/plane_master/game_world/G = parent.mob.hud_used.plane_masters["[GAME_PLANE]"]
+						var/atom/movable/screen/plane_master/objitem/OI = parent.mob.hud_used.plane_masters["[OBJITEM_PLANE]"]
+						var/atom/movable/screen/plane_master/mob/M = parent.mob.hud_used.plane_masters["[MOB_PLANE]"]
+						var/atom/movable/screen/plane_master/above_wall/A = parent.mob.hud_used.plane_masters["[ABOVE_WALL_PLANE]"]
+						var/atom/movable/screen/plane_master/wall/W = parent.mob.hud_used.plane_masters["[WALL_PLANE]"]
 						G.backdrop(parent.mob)
 						OI.backdrop(parent.mob)
 						M.backdrop(parent.mob)

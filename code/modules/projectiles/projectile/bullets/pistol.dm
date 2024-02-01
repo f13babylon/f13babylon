@@ -198,6 +198,7 @@ Uranium, Contaminated
 /obj/item/projectile/bullet/c10mm
 	name = "10mm FMJ bullet"
 	damage = 20
+	armour_penetration = 0.05
 	wound_bonus = 25
 	var/dmg_dropoff_per_tile = 20 * 0.25 / 10	//In 10 tiles (roughly a screen and half away), it will lose a quarter of its initial damage
 	var/stam_dropoff_per_tile = 0 * 0.25 / 10	//In 10 tiles (roughly a screen and half away), it will lose a quarter of its initial stam damage
@@ -214,6 +215,7 @@ Uranium, Contaminated
 /obj/item/projectile/bullet/c10mm/simple
 	name = "10mm FMJ bullet"
 	damage = 20
+	armour_penetration = 0.05
 	wound_bonus = 25
 	dmg_dropoff_per_tile = 0
 
@@ -340,6 +342,7 @@ Uranium, Contaminated
 /obj/item/projectile/bullet/m44
 	name = ".44 FMJ bullet"
 	damage = 32
+	armour_penetration = 0.1
 	wound_bonus = 24
 	bare_wound_bonus = -20
 
@@ -367,6 +370,7 @@ Uranium, Contaminated
 /obj/item/projectile/bullet/c4570
 	name = ".45-70 FMJ bullet"
 	damage = 42
+	armour_penetration = 0.2
 	wound_bonus = 32
 	bare_wound_bonus = -24
 
@@ -420,6 +424,7 @@ Uranium, Contaminated
 /obj/item/projectile/bullet/mm14
 	name = "14mm FMJ bullet"
 	damage = 32
+	armour_penetration = 0.2
 	wound_bonus = 28
 	bare_wound_bonus = 42
 

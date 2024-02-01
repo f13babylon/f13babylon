@@ -83,7 +83,7 @@
 				else
 					to_chat(user, "<span class='notice'>You insert the magazine into \the [src].</span>")
 
-				playsound(user, 'sound/weapons/autoguninsert.ogg', 60, 1)
+				playsound(user, 'sound/weapons/tacreload.ogg', 60, 1)
 				chamber_round()
 				A.update_icon()
 				update_icon()
@@ -212,6 +212,10 @@
 	force = 15
 	recoil = 0.6
 	actions_types = list(/datum/action/item_action/toggle_firemode)
+	reload_sound = 'sound/weapons/guns/smg_magin.ogg'
+	reload_sound_empty = 'sound/weapons/guns/smg_magin.ogg'
+	unload_sound = 'sound/weapons/guns/smg_magout.ogg'
+	gun_slide = 'sound/weapons/guns/slide_pistol.ogg'
 
 /obj/item/gun/ballistic/automatic/smg/auto_select()
 	if(!automatic)
@@ -350,7 +354,11 @@
 	spread = 12
 	recoil = 0.8
 	extra_damage = -7			//25 DAM
-	extra_penetration = 0.20	//20% AP
+	extra_penetration = 0.1		//30% AP Total
+	reload_sound = 'sound/weapons/guns/hrifle_magin.ogg'	//This is an SMG but lets be real, it fires a fucking massive round so it's chonky.
+	reload_sound_empty = 'sound/weapons/guns/hrifle_magin.ogg'
+	unload_sound = 'sound/weapons/guns/hrifle_magout.ogg'
+	gun_slide = 'sound/weapons/guns/slide_rifle.ogg'
 
 ////////////////////
 //SEMI-AUTO RIFLES//
@@ -373,6 +381,11 @@
 	semi_auto = TRUE
 	fire_sound = 'sound/weapons/gunshot_smg.ogg'
 
+	reload_sound = 'sound/weapons/guns/smg_magin.ogg'	//Pistol caliber
+	reload_sound_empty = 'sound/weapons/guns/smg_magin.ogg'
+	unload_sound = 'sound/weapons/guns/smg_magout.ogg'
+	gun_slide = 'sound/weapons/guns/slide_pistol.ogg'
+
 //Combat Rifle	Keywords: .308 Caliber Rifle, Town rifle
 /obj/item/gun/ballistic/automatic/combat
 	name = "Combat Rifle"
@@ -389,6 +402,11 @@
 	semi_auto = TRUE
 	fire_sound = 'sound/f13weapons/combatrifle.ogg'
 
+	reload_sound = 'sound/weapons/guns/hrifle_magin.ogg'	//Rifle caliber
+	reload_sound_empty = 'sound/weapons/guns/hrifle_magin.ogg'
+	unload_sound = 'sound/weapons/guns/hrifle_magout.ogg'
+	gun_slide = 'sound/weapons/guns/slide_rifle.ogg'
+
 //Service rifle			Keywords: NCR, 5.56mm, Semi-auto, 20 (10-50) round magazine, 25dmg
 /obj/item/gun/ballistic/automatic/service
 	name = "service rifle"
@@ -403,6 +421,11 @@
 	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
 	actions_types = null
 
+	reload_sound = 'sound/weapons/guns/lrifle_magin.ogg'	//Rifle caliber
+	reload_sound_empty = 'sound/weapons/guns/lrifle_magin.ogg'
+	unload_sound = 'sound/weapons/guns/lrifle_magout.ogg'
+	gun_slide = 'sound/weapons/guns/slide_rifle.ogg'
+
 //Infantry Rifle		Keywords: 5mm, Semi-auto, 30/50 Rounds magazine
 /obj/item/gun/ballistic/automatic/infantry_rifle
 	name = "infantry rifle"
@@ -416,6 +439,11 @@
 	slowdown = 0.2
 	spread = 2
 	actions_types = null
+
+	reload_sound = 'sound/weapons/guns/lrifle_magin.ogg'	//Rifle caliber
+	reload_sound_empty = 'sound/weapons/guns/lrifle_magin.ogg'
+	unload_sound = 'sound/weapons/guns/lrifle_magout.ogg'
+	gun_slide = 'sound/weapons/guns/slide_rifle.ogg'
 
 //Scout carbine			Keywords: NCR, 5.56mm, Semi-auto, 20 (10-50) round magazine. Special modifiers:spread -1
 /obj/item/gun/ballistic/automatic/service/carbine
@@ -461,8 +489,13 @@
 	suppressor_x_offset = 31
 	suppressor_y_offset = 15
 	fire_sound = 'sound/f13weapons/marksman_rifle.ogg'
-	extra_penetration = 0.2
+	extra_penetration = 0.1		//15-20% AP Total
 	extra_damage = 2
+
+	reload_sound = 'sound/weapons/guns/lrifle_magin.ogg'	//Rifle caliber
+	reload_sound_empty = 'sound/weapons/guns/lrifle_magin.ogg'
+	unload_sound = 'sound/weapons/guns/lrifle_magout.ogg'
+	gun_slide = 'sound/weapons/guns/slide_rifle.ogg'
 
 //Colt Rangemaster				Keywords: 7.62mm, Semi-auto, 10/20 round magazine, 35dmg
 /obj/item/gun/ballistic/automatic/rangemaster
@@ -489,7 +522,12 @@
 	scope_x_offset = 4
 	scope_y_offset = 11
 	fire_sound = 'sound/f13weapons/762rifle.ogg'
-	extra_penetration = 0.2
+	extra_penetration = 0.15	//20-25% AP Total
+
+	reload_sound = 'sound/weapons/guns/hrifle_magin.ogg'	//Rifle caliber
+	reload_sound_empty = 'sound/weapons/guns/hrifle_magin.ogg'
+	unload_sound = 'sound/weapons/guns/hrifle_magout.ogg'
+	gun_slide = 'sound/weapons/guns/slide_rifle.ogg'
 
 //M1 Garand					Keywords: .308, Semi-auto, 8 rounds internal
 /obj/item/gun/ballistic/automatic/m1garand
@@ -517,6 +555,7 @@
 	scope_y_offset = 14
 	auto_eject_sound = 'sound/f13weapons/garand_ping.ogg'
 	fire_sound = 'sound/f13weapons/762rifle.ogg'
+	gun_slide = 'sound/weapons/guns/slide_rifle.ogg'
 
 /obj/item/gun/ballistic/automatic/m1garand/update_icon()
 	..()
@@ -580,7 +619,7 @@
 	icon_state = "sniper_rifle"
 	item_state = "sniper_rifle"
 	mag_type = /obj/item/ammo_box/magazine/w308
-	fire_delay = 8
+	fire_delay = 9
 	burst_size = 1
 	extra_speed = 900
 	slowdown = 0.3
@@ -590,7 +629,7 @@
 	can_automatic = FALSE
 	can_bayonet = FALSE
 	fire_sound = 'sound/f13weapons/762rifle.ogg'
-	extra_penetration = 0.25
+	extra_penetration = 0.15		//20-25% AP Total
 	extra_damage = 10
 
 /obj/item/gun/ballistic/automatic/marksman/sniper/gold
@@ -657,6 +696,12 @@
 	force = 20
 	recoil = 0.7
 	actions_types = list(/datum/action/item_action/toggle_firemode)
+	var/singleshot_select_delay = 4
+
+	reload_sound = 'sound/weapons/guns/lrifle_magin.ogg'
+	reload_sound_empty = 'sound/weapons/guns/lrifle_magin.ogg'
+	unload_sound = 'sound/weapons/guns/lrifle_magout.ogg'
+	gun_slide = 'sound/weapons/guns/slide_rifle.ogg'
 
 /obj/item/gun/ballistic/automatic/assault_rifle/auto_select()
 	if(!automatic)
@@ -672,17 +717,18 @@
 	playsound(usr, 'sound/weapons/empty.ogg', 100, 1)
 
 /obj/item/gun/ballistic/automatic/assault_rifle/burst_select()
-	if(burst_size != 3)
-		spread *= 1.2
+	if(burst_size != initial(burst_size))
+		spread = 0
+		burst_spread = initial(burst_spread)
 		recoil *= 1.2
-		burst_size = 3
-		fire_delay++
+		burst_size = initial(burst_size)
+		fire_delay = initial(fire_delay)
 		to_chat(usr, "<span class='notice'>You switch to burst fire.</span>")
 	else
-		spread /= 1.2
+		spread = initial(burst_spread) / 1.2
 		recoil /= 1.2
 		burst_size = 1
-		fire_delay--
+		fire_delay = singleshot_select_delay
 		to_chat(usr, "<span class='notice'>You switch to semi-auto.</span>")
 
 	playsound(usr, 'sound/weapons/empty.ogg', 100, 1)
@@ -706,7 +752,7 @@
 	init_mag_type = /obj/item/ammo_box/magazine/m556mm/extended
 	spread = 4
 	recoil = 0.6
-	extra_penetration = 0.3		//30% AP
+	extra_penetration = 0.2		//25-30% AP Total
 	zoomable = TRUE
 	zoom_amt = 8
 	zoom_out_amt = 11
@@ -734,9 +780,10 @@
 	mag_type = /obj/item/ammo_box/magazine/m5mm
 	automatic = FALSE
 	is_automatic = FALSE
-	burst_size = 2
+	burst_size = 3
 	fire_delay = 5
-	spread = 12
+	spread = 0
+	burst_spread = 14
 
 //Assault Carbine		Keywords: 5mm, AP, 30/50 Rounds, Superhigh tier
 /obj/item/gun/ballistic/automatic/assault_rifle/assault_carbine
@@ -763,7 +810,8 @@
 	burst_size = 3
 	fire_delay = 5
 	slowdown = 0.8
-	spread = 3
+	spread = 0
+	burst_spread = 3
 	recoil = 0.6
 	extra_speed = 700	//700 Extra Speed
 	zoomable = TRUE
@@ -783,6 +831,10 @@
 	slowdown = 0.5
 	spread = 10
 	recoil = 0.8
+
+	reload_sound = 'sound/weapons/guns/hrifle_magin.ogg'	//7.62 caliber
+	reload_sound_empty = 'sound/weapons/guns/hrifle_magin.ogg'
+	unload_sound = 'sound/weapons/guns/hrifle_magout.ogg'
 
 ////////////////
 //MACHINE GUNS//
@@ -806,6 +858,11 @@
 	force = 25
 	recoil = 0.7
 	actions_types = null
+
+	reload_sound = 'sound/weapons/guns/lmg_magin.ogg'
+	reload_sound_empty = 'sound/weapons/guns/lmg_magin.ogg'
+	unload_sound = 'sound/weapons/guns/lmg_magout.ogg'
+	gun_slide = 'sound/weapons/guns/slide_lmg.ogg'
 
 //R84 Light Machine Gun			Keywords: 5.56mm, 60 Rounds, High Tier
 /obj/item/gun/ballistic/automatic/lmg/r84
@@ -858,7 +915,7 @@
 	spread = 6
 	recoil = 0.6
 	extra_damage = -5			//30 DAM
-	extra_penetration = 0.2		//20% AP
+	extra_penetration = 0.1		//20% AP Total
 	extra_speed = 200			//200 Extra Speed
 	zoomable = TRUE
 	zoom_amt = 8

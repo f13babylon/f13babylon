@@ -283,21 +283,11 @@
 	icon_state = "reconbandolier"
 	item_state = "reconbandolier"
 
-/obj/item/storage/belt/military/ComponentInitialize()
-	. = ..()
-	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_w_class = WEIGHT_CLASS_SMALL
-
 /obj/item/storage/belt/military/NCR_Bandolier
 	name = "NCR bandolier"
 	desc = "A standard issue NCR bandolier."
 	icon_state = "ncr_bandolier"
 	item_state = "ncr_bandolier"
-
-/obj/item/storage/belt/military/NCR_Bandolier/ComponentInitialize()
-	. = ..()
-	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_items = 7
 
 //Regular Quiver
 /obj/item/storage/belt/tribe_quiver

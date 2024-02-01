@@ -18,10 +18,8 @@
 	backpack =	/obj/item/storage/backpack/satchel/explorer
 	satchel = 	/obj/item/storage/backpack/satchel/old
 	uniform = /obj/item/clothing/under/f13/khan
-	r_pocket = /obj/item/flashlight/flare
-	l_pocket = /obj/item/storage/survivalkit_khan
 	gloves = /obj/item/melee/unarmed/brass/spiked
-	box = null
+	box = /obj/item/storage/survivalkit/khan
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/khan = 1,
 		)
@@ -226,7 +224,7 @@
 	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle/r91
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556mm = 2,
-		/obj/item/storage/survivalkit_aid_adv = 1,
+		/obj/item/storage/survivalkit/firstaid/advanced = 1,
 		)
 
 /datum/outfit/loadout/seniorc

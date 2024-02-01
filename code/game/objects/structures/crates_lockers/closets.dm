@@ -433,7 +433,7 @@
 	return
 
 /obj/structure/closet/MouseDrop_T(atom/movable/O, mob/living/user)
-	if(!istype(O) || O.anchored || istype(O, /obj/screen))
+	if(!istype(O) || O.anchored || istype(O, /atom/movable/screen))
 		return
 	if(!istype(user) || user.incapacitated() || user.lying)
 		return
@@ -579,7 +579,7 @@
 
 /obj/structure/closet/get_remote_view_fullscreens(mob/user)
 	if(user.stat == DEAD || !(user.sight & (SEEOBJS|SEEMOBS)))
-		user.overlay_fullscreen("remote_view", /obj/screen/fullscreen/impaired, 1)
+		user.overlay_fullscreen("remote_view", /atom/movable/screen/fullscreen/impaired, 1)
 
 /obj/structure/closet/emp_act(severity)
 	. = ..()
@@ -638,4 +638,3 @@
 		user.set_resting(FALSE, TRUE)
 		togglelock(user)
 		T1.visible_message("<span class='warning'>[user] dives into [src]!</span>")
-

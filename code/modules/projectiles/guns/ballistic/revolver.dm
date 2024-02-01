@@ -17,6 +17,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	var/select = 0
 	equipsound = 'sound/f13weapons/equipsounds/pistolequip.ogg'
+	gun_slide = 'sound/weapons/guns/slide_revolver.ogg'			//Yeah it's not a 'slide' but revolver uses the same code, quirkly.
 
 /obj/item/gun/ballistic/revolver/Initialize(mapload)
 	. = ..()
@@ -259,10 +260,10 @@
 	extra_damage = 23 //for a combined total of 55 damage, as good as the 14mm pistol and plasma pistol.
 	fire_delay = 4 //it should still fire slow but not too slow
 
-//Peacekeeper					 Keywords: OASIS, .44, Double action, 6 rounds cylinder, Extra Firemode
+//Peacekeeper					 Keywords: Experimental, .44, Double action, 6 rounds cylinder
 /obj/item/gun/ballistic/revolver/m29/peacekeeper
 	name = "Peacekeeper"
-	desc = "When you don't just need excessive force, but crave it. This .44 has a special hammer mechanism, allowing for measured powerful shots, or fanning for a flurry of inaccurate shots."
+	desc = "When you don't just need excessive force, but crave it. This .44 has a special hammer mechanism, allowing for consistent fanning for a flurry of inaccurate shots."
 	item_state = "m29peace"
 	icon_state = "mysterious_m29"
 	icon = 'icons/obj/guns/gunfruits2022/pistols.dmi'
@@ -381,7 +382,7 @@
 	recoil = 0.5
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
 	extra_damage = 9
-	extra_penetration = 0.08
+	extra_penetration = 0.05		//10-15% AP Total
 
 //Colt 6520 Revolver			Keywords: 10mm, Semi-Automatic, 12 rounds internal, Revolver - Somehow! (Balanced around N99 - that can take attach, this can't)
 /obj/item/gun/ballistic/revolver/colt6520

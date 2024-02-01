@@ -56,8 +56,39 @@
 	desc = "A leather top with a bandolier over it and a straps that cover the arms. Comes with pockets."
 	icon_state = "badlands"
 	item_state = "badlands"
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 30, "bio" = 0, "bomb" = 20, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 10)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
 	mutantrace_variation = STYLE_DIGITIGRADE
+
+/obj/item/clothing/suit/armor/f13/raider/badlands/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/raider/jackal
+	name = "Jackal armored rags"
+	desc = "A collection of spare rags and cloth sewn together into a robe-like uniform and pants, sporting a half-complete combat armor set over-top."
+	icon_state = "jackal"
+	item_state = "jackal"
+	icon = 'icons/fallout/clothing/armored_light.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
+	armor = list("melee" = 30, "bullet" = 30, "laser" = 15, "bio" = 0, "bomb" = 20, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 10)
+
+/obj/item/clothing/suit/armor/f13/raider/jackal/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/f13/raider/ncrcfarmor
+	name = "NCRCF armored jacket"
+	desc = "An NCR Correctional Facility jacket worn overtop of a worn bullet proof vest. Simple, yet effective."
+	icon_state = "ncrcf_armor"
+	item_state = "ncrcf_armor"
+	icon = 'icons/fallout/clothing/armored_light.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
+	armor = list("melee" = 20, "bullet" = 30, "laser" = 20, "bio" = 0, "bomb" = 25, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 15)
+
+/obj/item/clothing/suit/armor/f13/raider/ncrcfarmor/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/raider/painspike
 	name = "painspike raider armor"
@@ -293,6 +324,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_medium.dmi'
 	icon_state = "legion_combat"
 	item_state = "legion_combat"
+	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/legion					//Legion Reinforced Combat armor
 	name = "reinforced legion combat armor"
@@ -301,6 +333,7 @@
 	desc = "Pre-war military style armor, a full set with bracers and reinforcements. Modified and repainted to declare the user a fighter for Caesar's Legion."
 	icon_state = "legion_combat2"
 	item_state = "legion_combat2"
+	mutantrace_variation = NONE
 
 ///////
 //NCR//
@@ -469,12 +502,14 @@
 	desc = "An old military grade pre war combat armor and, repainted to the colour scheme of the New California Republic."
 	icon_state = "ncr_armor"
 	item_state = "ncr_armor"
+	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/ncr
 	name = "reinforced NCR combat armor"
 	desc = "A reinforced set of bracers, greaves, and torso plating of prewar design. This one is kitted with additional plates and, repainted to the colour scheme of the New California Republic."
 	icon_state = "ncr_armor_mk2"
 	item_state = "ncr_armor_mk2"
+	mutantrace_variation = NONE
 
 //RANGERS
 /obj/item/clothing/suit/toggle/armor/f13/reconranger		//Recon Ranger armor
@@ -593,6 +628,7 @@
 	icon_state = "brotherhood_armor_knight"
 	item_state = "brotherhood_armor_knight"
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 55, "energy" = 20, "bomb" = 20, "bio" = 15, "rad" = 15, "fire" = 20, "acid" = 0, "wound" = 20)
+	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/senior
 	name = "brotherhood senior knight armor"
@@ -717,12 +753,14 @@
 	desc = "An old military grade pre war combat armor, now decorated with sinew and the bones of the hunted for its new wearer."
 	icon_state = "tribecombatarmor"
 	item_state = "tribecombatarmor"
+	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/tribal
 	name = "tribal reinforced combat armor"
 	desc = "An old military grade pre-war reinforced combat armor, now decorated with sinew and the bones of the hunted for its new wearer."
 	icon_state = "tribecombatarmor"
 	item_state = "tribecombatarmor"
+	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/armor/f13/tribe_armor
 	name = "light tribal armor"
@@ -797,17 +835,19 @@
 	icon_state = "enclave_new"
 	item_state = "enclave_new"
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 0, "wound" = 20)
+	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/enclave	//Technically it's own armor, but for balance simplicity, it's RCA
-	name = "old United States Marine Corp Armor"
-	desc = "An advanced model of combat armor worn by marines aboard the USS Democracy, second only to power armor in protection used by the USMC For various tasks and operations, it's handled the nuclear wasteland somewhat better than the rest of the armors you've seen."
+	name = "old United States Marine Corps Armor"
+	desc = "An advanced model of combat armor worn by Marines aboard naval ships, second only to power armor in protection used by the USMC For various tasks and operations, it's handled the nuclear wasteland somewhat better than the rest of the armors you've seen."
 	icon_state = "enclave_marine"
 	item_state = "enclave_marine"
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 25)
+	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/armor/f13/usmcriot
-	name = "old United States Marine Corp riot suit"
-	desc = "A pre-war riot suit used by the USCM For various tasks and operations, it's handled the nuclear wasteland somewhat better than the rest of the armors you've seen."
+	name = "old United States Marine Corps riot suit"
+	desc = "A pre-war riot suit used by the USMC For various tasks and operations, it's handled the nuclear wasteland somewhat better than the rest of the armors you've seen."
 	icon_state = "usmc_riot_gear"
 	item_state = "usmc_riot_gear"
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 35, "bomb" = 20, "bio" = 25, "rad" = 25, "fire" = 20, "acid" = 20, "wound" = 20)
@@ -848,12 +888,12 @@
 	flags_inv = HIDEJUMPSUIT
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
 
-/obj/item/clothing/suit/armor/f13/combat/mk2/remnant
+/obj/item/clothing/suit/armor/f13/combat/remnant
 	name = "remnant combat armor"
 	desc = "A dark armor, used commonly in espionage or shadow ops."
 	icon_state = "remnant"
 	item_state = "remnant"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 25)
+	mutantrace_variation = NONE
 
 //THE GRAVEYARD
 //UNUSED or LEGACY - RETAINED IN CASE DESIRED FOR ADMIN SPAWN OR REIMPLEMENATION. MAY NOT BE EVERYTHING THAT'S UNUSED. TEST BEFORE USING
@@ -884,6 +924,7 @@
 	mob_overlay_icon = 'icons/mob/clothing/suit.dmi'
 	icon_state = "combat_armor_sierra"
 	item_state = "combat_armor_sierra"
+	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/sierra
 	name = "reinforced mercenary combat armor"
@@ -892,3 +933,4 @@
 	mob_overlay_icon = 'icons/mob/clothing/suit.dmi'
 	icon_state = "combat_armor_sierra_mk2"
 	item_state = "combat_armor_sierra_mk2"
+	mutantrace_variation = NONE

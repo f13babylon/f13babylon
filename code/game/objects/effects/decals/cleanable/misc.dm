@@ -81,6 +81,11 @@
 	name = "dust"
 	desc = "A thin layer of dust coating the floor."
 
+/obj/effect/decal/cleanable/dirt/lining
+	name = "dirt siding"
+	icon = 'icons/turf/decals.dmi'
+	icon_state = "dirt_side"
+
 /obj/effect/decal/cleanable/greenglow/ecto
 	name = "ectoplasmic puddle"
 	desc = "You know who to call."

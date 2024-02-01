@@ -24,6 +24,7 @@
 	desc = "Khaki standard issue uniform over a black turtleneck."
 	icon_state = "uniform_enclave_peacekeeper"
 	item_state = "uniform_enclave_peacekeeper"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/under/f13/enclave/officer
 	name = "officer uniform"
@@ -398,7 +399,7 @@
 
 /obj/item/clothing/under/f13/legskirt
 	name = "legionary fatigues"
-	desc = "A black learthery skirt and a thick long sleeve cotton shirt."
+	desc = "A black leathery skirt and a thick long sleeve cotton shirt."
 	icon_state = "legskirt"
 	item_state = "legskirt"
 	item_color = "legskirt"

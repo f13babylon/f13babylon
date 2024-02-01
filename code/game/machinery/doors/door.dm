@@ -39,6 +39,7 @@
 	var/poddoor = FALSE
 	var/unres_sides = 0 //Unrestricted sides. A bitflag for which direction (if any) can open the door with no access
 	var/proj_resist = 10
+	var/cooldown = 0
 
 /obj/machinery/door/examine(mob/user)
 	. = ..()
@@ -423,3 +424,16 @@
 
 /obj/machinery/door/GetExplosionBlock()
 	return density ? real_explosion_block : 0
+
+/obj/machinery/door/CtrlClick(mob/living/user)
+	if(cooldown < world.time)
+		if (user.a_intent == INTENT_HARM)
+			playsound(src.loc, pick('sound/f13items/door_knock_loud1.ogg', 'sound/f13items/door_knock_loud2.ogg'), 65, 0, 0)
+			user.visible_message("<span class='warning'>[user] pounds on [src].</span>",
+			"<span class='warning'>You pound on [src].</span>")
+			cooldown = world.time + 15
+		else
+			playsound(src.loc, pick('sound/f13items/door_knock1.wav', 'sound/f13items/door_knock2.wav', 'sound/f13items/door_knock3.wav', 'sound/f13items/door_knock4.wav'), 80, 0, 0)
+			user.visible_message("[user] knocks on [src].",
+			"<span class='warning'>You knock on [src].")
+			cooldown = world.time + 15

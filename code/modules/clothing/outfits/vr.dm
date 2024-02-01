@@ -78,7 +78,7 @@
 	shoes = 	/obj/item/clothing/shoes/combat/swat
 	gloves = 	/obj/item/clothing/gloves/combat
 	id = 		/obj/item/card/id/dogtag/virt
-	box = 		/obj/item/storage/survivalkit_adv
+	box = 		/obj/item/storage/survivalkit/advanced
 	starting_funds = 0
 
 /datum/outfit/vr/followers

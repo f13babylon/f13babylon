@@ -32,6 +32,7 @@
 	var/close_sound = 'sound/machines/door_close.ogg'
 	var/opening_time = 2
 	var/closing_time = 4
+	var/cooldown = 0
 
 /obj/structure/simple_door/Initialize(mapload)
 	. = ..()
@@ -118,7 +119,10 @@
 			if(!padlock.locked)
 				Open(animate)
 			else
-				playsound(src.loc, pick('sound/f13items/door_knock1.wav', 'sound/f13items/door_knock2.wav', 'sound/f13items/door_knock3.wav', 'sound/f13items/door_knock4.wav'), 80, 0, 0)
+				if(cooldown < world.time)
+					playsound(src.loc, pick('sound/block_parry/block_wood1.ogg', 'sound/block_parry/block_wood2.ogg'), 40, 0, 0)
+					cooldown = world.time + 15
+					return
 
 		else
 			Open(animate)
@@ -129,6 +133,19 @@
 			return
 		Close(animate)
 	return 1
+
+/obj/structure/simple_door/CtrlClick(mob/living/user)
+	if(cooldown < world.time)
+		if (user.a_intent == INTENT_HARM)
+			playsound(src.loc, pick('sound/f13items/door_knock_loud1.ogg', 'sound/f13items/door_knock_loud2.ogg'), 65, 0, 0)
+			user.visible_message("<span class='warning'>[user] pounds on [src].</span>",
+			"<span class='warning'>You pound on [src].</span>")
+			cooldown = world.time + 15
+		else
+			playsound(src.loc, pick('sound/f13items/door_knock1.wav', 'sound/f13items/door_knock2.wav', 'sound/f13items/door_knock3.wav', 'sound/f13items/door_knock4.wav'), 80, 0, 0)
+			user.visible_message("[user] knocks on [src].",
+			"You knock on [src].")
+			cooldown = world.time + 15
 
 /obj/structure/simple_door/attackby(obj/item/weapon/I, mob/living/user, params)
 	if(user.a_intent != INTENT_HARM && (istype(I, /obj/item/crowbar) || istype(I, /obj/item/twohanded/fireaxe)))

@@ -29,8 +29,9 @@
 	casing_ejector = FALSE
 	var/recentpump = 0 // to prevent spammage
 	spawnwithmagazine = TRUE
-	var/pump_sound = 'sound/weapons/shotgunpump.ogg'
 	fire_sound = 'sound/f13weapons/shotgun.ogg'
+	gun_slide = 'sound/weapons/guns/slide_bolt.ogg'
+	var/pump_sound = 'sound/weapons/guns/bolt_cycle.ogg'
 	var/pump_stam_cost = 2
 
 /obj/item/gun/ballistic/rifle/process_chamber(mob/living/user, empty_chamber = 0)
@@ -140,7 +141,7 @@
 	fire_delay = 5
 	recoil = 0.15
 	fire_sound = 'sound/f13weapons/brushgunfire.ogg'
-	extra_penetration = 0.12
+
 
 //Medicine Stick						Keywords: .45-70, Lever action, 8 round internal, Long barrel, Unique
 /obj/item/gun/ballistic/rifle/repeater/brush/medistick
@@ -152,7 +153,7 @@
 	fire_delay = 4
 	recoil = 0.10
 	fire_sound = 'sound/f13weapons/brushgunfire.ogg'
-	extra_penetration = 0.15
+	extra_penetration = 0.05		//25% AP Total
 
 
 ////////////////////////
@@ -170,14 +171,14 @@
 	fire_delay = 5
 	extra_speed = 600
 	extra_damage = 4
-	extra_penetration = 0.15
+	extra_penetration = 0.1		//15-20% Total AP
 	spread = 0
 	force = 18
 	can_scope = TRUE
 	scope_state = "scope_long"
 	scope_x_offset = 4
 	scope_y_offset = 12
-	pump_sound = 'sound/weapons/boltpump.ogg'
+	pump_sound = 'sound/weapons/guns/bolt_cycle.ogg'
 	fire_sound = 'sound/f13weapons/762rifle.ogg'
 
 /obj/item/gun/ballistic/rifle/hunting/attackby(obj/item/A, mob/user, params)
@@ -197,7 +198,7 @@
 	fire_delay = 5
 	extra_speed = 800
 	extra_damage = 10
-	extra_penetration = 0.3
+	extra_penetration = 0.2		//25-30% AP Total
 	force = 18
 
 /obj/item/gun/ballistic/rifle/hunting/remington/attackby(obj/item/A, mob/user, params) //DO NOT BUBBA YOUR STANDARD ISSUE RIFLE SOLDIER!
@@ -224,8 +225,8 @@
 	zoom_out_amt = 13
 	can_scope = FALSE
 	extra_speed = 1000
-	extra_penetration = 0.7
-	extra_damage = 10.4
+	extra_penetration = 0.6		//65-70% Total AP
+	extra_damage = 10
 
 /obj/item/gun/ballistic/rifle/hunting/paciencia/attackby(obj/item/A, mob/user, params) //no sawing off this one
 	if(istype(A, /obj/item/circular_saw) || istype(A, /obj/item/gun/energy/plasmacutter))
@@ -291,7 +292,7 @@
 		AC.bounce_away()
 		chambered = null
 		to_chat(user, "<span class='notice'>You unload the round from \the [src]'s chamber.</span>")
-		playsound(src, "gun_slide_lock", 70, 1)
+		playsound(src, gun_slide, 70, 1)
 	else
 		to_chat(user, "<span class='notice'>There's no magazine in \the [src].</span>")
 	update_icon()
@@ -323,7 +324,7 @@
 	suppressor_x_offset = 27
 	suppressor_y_offset = 31
 	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
-	pump_sound = 'sound/weapons/boltpump.ogg'
+	pump_sound = 'sound/weapons/guns/bolt_cycle.ogg'
 	can_scope = TRUE
 
 //'Verminkiller'									Keywords: 5.56, Bolt-action, 10/20/30 round magazine, Suppressed, Scoped
@@ -351,6 +352,7 @@
 	desc = "A modified varmint rifle with better stopping power, a scope, and suppressor. Oh, don't forget the sick paint job."
 	icon_state = "ratslayer"
 	item_state = "ratslayer"
+	fire_delay = 3
 	suppressed = 1
 	zoomable = TRUE
 	zoom_amt = 10
@@ -358,7 +360,12 @@
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 	extra_penetration = 0.3
 	extra_damage = 10
-	extra_speed = 800 //pew
+	extra_speed = 800
+
+/obj/item/gun/ballistic/rifle/mag/varmint/ratslayer/shoot_live_shot(mob/living/user, pointblank = FALSE, mob/pbtarget, message = 1, stam_cost = 0)
+	..()
+	if(HAS_TRAIT(user, TRAIT_FAST_PUMP))
+		src.pump(user)
 
 //Anti-Material Rifle						Keywords: .50, Bolt-action, 8 round magazine
 /obj/item/gun/ballistic/rifle/mag/antimateriel

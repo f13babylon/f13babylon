@@ -214,7 +214,7 @@
 /mob/living/simple_animal/hostile/handy/robobrain/bullet_act(obj/item/projectile/Proj)
 	if(!Proj)
 		CRASH("[src] robobrain invoked bullet_act() without a projectile")
-	if(prob(15) || Proj.damage > 25)
+	if(prob(15) || Proj.armour_penetration > 0.1)
 		return ..()
 	else
 		visible_message("<span class='danger'>\The [Proj] shatters on \the [src]'s armor plating!</span>")

@@ -305,7 +305,8 @@
 	loot = list(
 		/obj/item/gun/ballistic/automatic/m72 = 10,
 		/obj/item/gun/ballistic/revolver/m29/peacekeeper = 10,
-		/obj/item/encminigunpack = 10,
+		/obj/item/gun/ballistic/automatic/pistol/deagle/elcapitan = 10,
+		/obj/item/gun/energy/laser/plasma/caster = 10,
 		)
 
 

@@ -192,6 +192,7 @@
 	desc = "A heavy armor with ballistic inserts, sewn into a padded riot police coat."
 	armor = list("melee" = 35, "bullet" = 50, "laser" = 45, "energy" = 15, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 25)
 	slowdown = 0.16
+	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/armor/f13/combat/mk2
 	name = "reinforced combat armor"
@@ -216,12 +217,14 @@
 	item_state = "armoralt"
 	armor = list("melee" = 50, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 10, "fire" = 15, "acid" = 0, "wound" = 15)
 	slowdown = 0.1
+	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/armor/f13/combat/chinese
 	name = "chinese combat armor"
 	desc = "An uncommon suit of pre-war Chinese combat armor. It's a very basic and straightforward piece of armor that covers the front of the user."
 	icon_state = "chicom_armor"
 	item_state = "chicom_armor"
+	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/armor/f13/combatrusted
 	name = "rusted combat armor"
@@ -244,6 +247,7 @@
 	strip_delay = 60
 	equip_delay_other = 60
 	flags_inv = HIDEJUMPSUIT
+	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/armor/f13/combat/environmental/ComponentInitialize()
 	. = ..()

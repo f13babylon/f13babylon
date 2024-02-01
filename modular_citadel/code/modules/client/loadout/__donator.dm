@@ -23,7 +23,7 @@
 /datum/gear/donator/saxycape
 	name = "Captured Ranger Cape"
 	slot = SLOT_IN_BACKPACK
-	path = /obj/item/clothing/neck/mantle/legion/rangercent
+	path = /obj/item/clothing/neck/mantle/holster/legion/rangercent
 	ckeywhitelist = list("mrsaxyman")
 
 /////////////////////

@@ -1279,6 +1279,14 @@
 		var/mouseparams = list2params(paramslist)
 		usr_client.Click(src, loc, null, mouseparams)
 
+/atom/MouseEntered(location, control, params)
+	SSmouse_entered.hovers[usr.client] = src
+
+/// Fired whenever this atom is the most recent to be hovered over in the tick.
+/// Preferred over MouseEntered if you do not need information such as the position of the mouse.
+/// Especially because this is deferred over a tick, do not trust that `client` is not null.
+/atom/proc/on_mouse_enter(client/client)
+
 ///Adds the debris element for projectile impacts
 /atom/proc/add_debris_element()
 	AddElement(/datum/element/debris, null, -15, 8, 0.7)

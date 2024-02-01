@@ -29,7 +29,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/job/CaesarsLegion
 	ears = null
-	box = null
+	box = /obj/item/storage/survivalkit/primitive
 
 /datum/outfit/job/CaesarsLegion/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -58,7 +58,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	uniform = /obj/item/clothing/under/f13/legskirt
 	shoes = /obj/item/clothing/shoes/f13/military/legion
 	gloves = /obj/item/clothing/gloves/legion
-	box = /obj/item/storage/survivalkit_tribal
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -132,7 +131,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	r_pocket = /obj/item/storage/bag/money/small/legion
 	l_pocket = /obj/item/flashlight/lantern
 	r_hand = /obj/item/melee/f13powerfist/goliath
-	l_hand = /obj/item/tank/internals/oxygen
 	backpack = null
 	satchel = null
 	ears = /obj/item/radio/headset/headset_legion/command
@@ -213,7 +211,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	backpack = /obj/item/storage/backpack/legionr
 	r_pocket = /obj/item/storage/bag/money/small/legofficers
 	l_pocket = /obj/item/flashlight/lantern
-	box = /obj/item/storage/survivalkit_tribal/chief
+	box = /obj/item/storage/survivalkit/primitive/plus
 	belt = /obj/item/storage/belt/military/assault/legion
 	backpack_contents = list(
 		/obj/item/stack/f13Cash/random/denarius/high = 1,
@@ -292,7 +290,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	r_pocket = /obj/item/restraints/handcuffs
 	l_pocket = /obj/item/flashlight/lantern
-	box = /obj/item/storage/survivalkit_tribal/chief
+	box = /obj/item/storage/survivalkit/primitive/plus
 	backpack_contents = list(
 		/obj/item/restraints/legcuffs/bola = 1,
 		/obj/item/storage/bag/money/small/legion = 1,
@@ -306,7 +304,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Paladin-Slayer Centurion"
 	suit = /obj/item/clothing/suit/armor/f13/legion/centurion/paladinslayer
 	head = /obj/item/clothing/head/helmet/f13/legion/centurion/paladinslayer
-	neck = /obj/item/clothing/neck/mantle/legion
+	neck = /obj/item/clothing/neck/mantle/holster/legion
 	suit_store = /obj/item/gun/ballistic/automatic/lmg/m1919
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/mm762 = 1,
@@ -317,7 +315,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Ranger-Hunter Centurion"
 	suit = /obj/item/clothing/suit/armor/f13/legion/centurion/rangerhunter
 	head = /obj/item/clothing/head/helmet/f13/legion/centurion/rangerhunter
-	neck = /obj/item/clothing/neck/mantle/legion/rangercent
+	neck = /obj/item/clothing/neck/mantle/holster/legion/rangercent
 	suit_store = /obj/item/gun/ballistic/rifle/mag/antimateriel
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/amr = 2,
@@ -329,7 +327,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Warlord Centurion"
 	suit = /obj/item/clothing/suit/armor/f13/legion/centurion
 	head = /obj/item/clothing/head/helmet/f13/legion/centurion
-	neck = /obj/item/clothing/neck/mantle/legion
+	neck = /obj/item/clothing/neck/mantle/holster/legion
 	suit_store = /obj/item/gun/ballistic/automatic/smg/uzi
 	backpack_contents = list(
 		/obj/item/melee/f13powerfist/goliath = 1,
@@ -341,7 +339,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Praetorian Candidate"
 	suit = /obj/item/clothing/suit/armor/f13/legion/centurion
 	head = /obj/item/clothing/head/helmet/f13/legion/centurion
-	neck = /obj/item/clothing/neck/mantle/legion
+	neck = /obj/item/clothing/neck/mantle/holster/legion
 	backpack_contents = list(
 		/obj/item/melee/unarmed/brass/lovetap = 1,
 		/obj/item/book/granter/martial/berserker = 1,
@@ -394,7 +392,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	r_pocket = /obj/item/flashlight/lantern
-	box = /obj/item/storage/survivalkit_tribal/chief
+	box = /obj/item/storage/survivalkit/primitive/plus
 	backpack_contents = list(
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/storage/bag/money/small/legofficers = 1,
@@ -492,7 +490,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	r_pocket = /obj/item/flashlight/lantern
 	l_pocket = /obj/item/restraints/handcuffs
-	box = /obj/item/storage/survivalkit_tribal/chief
 	backpack_contents = list(
 		/obj/item/melee/onehanded/machete/gladius = 1,
 		/obj/item/storage/bag/money/small/legofficers = 1,
@@ -575,7 +572,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	neck = /obj/item/storage/belt/holster
 	glasses = /obj/item/clothing/glasses/legiongoggles
 	r_pocket = /obj/item/flashlight/lantern
-	l_pocket = /obj/item/storage/survivalkit_tribal
 	backpack_contents = list(
 		/obj/item/melee/onehanded/machete/gladius = 1,
 		/obj/item/reagent_containers/pill/patch/healingpoultice = 1,
@@ -659,6 +655,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	glasses = /obj/item/clothing/glasses/sunglasses
 	gloves = /obj/item/clothing/gloves/legion/plated
 	r_pocket = /obj/item/flashlight/lantern
+	box = /obj/item/storage/survivalkit/primitive/plus
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healingpoultice = 1,
 		/obj/item/restraints/handcuffs = 1,

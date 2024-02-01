@@ -612,7 +612,7 @@
 				if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(H.client.ckey)))
 					snowflake_taur_list[S.name] = path
 		var/new_taur
-		new_taur = input(owner, "Choose your character's tauric body:", "Tauric Alteration") as null|anything in snowflake_taur_list
+		new_taur = input(owner, "Choose your character's extra bodyparts:", "Bodypart Alteration") as null|anything in snowflake_taur_list
 		if(new_taur)
 			H.dna.features["taur"] = new_taur
 			if(new_taur != "None")
@@ -774,7 +774,7 @@
 		button_icon_state = "slimeeject"
 	..()
 
-/datum/action/innate/integrate_extract/ApplyIcon(obj/screen/movable/action_button/current_button, force)
+/datum/action/innate/integrate_extract/ApplyIcon(atom/movable/screen/movable/action_button/current_button, force)
 	..(current_button, TRUE)
 	var/datum/species/jelly/luminescent/species = target
 	if(species && species.current_extract)
@@ -825,7 +825,7 @@
 			return TRUE
 		return FALSE
 
-/datum/action/innate/use_extract/ApplyIcon(obj/screen/movable/action_button/current_button, force)
+/datum/action/innate/use_extract/ApplyIcon(atom/movable/screen/movable/action_button/current_button, force)
 	..(current_button, TRUE)
 	var/datum/species/jelly/luminescent/species = target
 	if(species && species.current_extract)

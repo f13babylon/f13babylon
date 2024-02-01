@@ -69,20 +69,7 @@
 	melee_damage_lower = 25
 	melee_damage_upper = 35
 	armour_penetration = 0.2//Making them some manner of threat.
-	ranged_message = "throws a chunk of flesh"
-	ranged_cooldown_time = 60
-	ranged = 1
 	footstep_type = FOOTSTEP_MOB_BAREFOOT
-	projectiletype = /obj/item/projectile/reaver
-	projectilesound = 'sound/f13npc/centaur/lash.ogg'
-
-/obj/item/projectile/reaver
-	name = "radioactive glob"
-	damage = 15
-	armour_penetration = 0.5
-	irradiate = 25//Toxic threshold is 250.
-	pass_flags = PASSTABLE | PASSGRILLE
-	icon_state = "toxin"
 
 /mob/living/simple_animal/hostile/ghoul/reaver/Aggro()
 	..()
@@ -262,7 +249,7 @@
 /mob/living/simple_animal/hostile/ghoul/rotting/bullet_act(obj/item/projectile/Proj)
 	if(!Proj)
 		CRASH("[src] ghoul invoked bullet_act() without a projectile")
-	if(prob(5) || Proj.damage > 15) //prob(x) = chance for proj to actually do something, adjust depending on how OP you want it to be.
+	if(prob(5) || Proj.armour_penetration > 0.05) //prob(x) = chance for proj to actually do something, adjust depending on how OP you want it to be.
 		return ..()
 	else
 		visible_message(span_danger("\The [Proj] is absorbed on \the [src]'s fat hide!"))

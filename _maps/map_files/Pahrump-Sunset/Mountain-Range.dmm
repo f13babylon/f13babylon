@@ -882,12 +882,22 @@
 	pixel_x = -1;
 	pixel_y = 3
 	},
-/obj/item/reagent_containers/food/drinks/bottle/instacoffee{
-	pixel_x = -8
-	},
 /obj/item/crafting/coffee_pot{
 	pixel_x = 9;
 	pixel_y = 3
+	},
+/obj/item/reagent_containers/food/drinks/bottle/instacoffee/enclave{
+	pixel_x = -10;
+	pixel_y = 10
+	},
+/obj/item/reagent_containers/food/drinks/bottle/instacocoa/enclave{
+	pixel_x = -10;
+	pixel_y = -6;
+	layer = 4
+	},
+/obj/item/reagent_containers/food/drinks/bottle/instatea/enclave{
+	pixel_x = -10;
+	pixel_y = 2
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/enclave/mess)

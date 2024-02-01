@@ -23,6 +23,7 @@
 	ammo_type = /obj/item/ammo_casing/c9mm
 	max_ammo = 32
 	multiple_sprites = 2
+	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/ammo_box/magazine/msmg9mm/empty
 	start_empty = 1
@@ -43,6 +44,7 @@
 	ammo_type = /obj/item/ammo_casing/c9mm
 	max_ammo = 70
 	multiple_sprites = 2
+	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/ammo_box/magazine/mcalico/empty
 	start_empty = 1
@@ -55,6 +57,7 @@
 	ammo_type = /obj/item/ammo_casing/c10mm
 	max_ammo = 30
 	multiple_sprites = 2
+	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/ammo_box/magazine/msmg10mm/empty
 	start_empty = 1
@@ -67,6 +70,7 @@
 	ammo_type = /obj/item/ammo_casing/c45
 	max_ammo = 30
 	multiple_sprites = 2
+	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/ammo_box/magazine/mgreasegun/empty
 	start_empty = 1
@@ -79,6 +83,7 @@
 	caliber = ".45"
 	max_ammo = 30
 	multiple_sprites = 2
+	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/ammo_box/magazine/mthompson/empty
 	start_empty = 1
@@ -99,6 +104,7 @@
 	caliber = "a5mm"
 	max_ammo = 50
 	multiple_sprites = 2
+	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/ammo_box/magazine/mp90/empty
 	start_empty = 1
@@ -111,6 +117,7 @@
 	ammo_type = /obj/item/ammo_casing/p14mm
 	max_ammo = 21
 	multiple_sprites = 2
+	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/ammo_box/magazine/msmg14mm/empty
 	start_empty = 1

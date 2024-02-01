@@ -26,7 +26,7 @@ Main doors: ACCESS_CAPTAIN 20
 	shoes = 	/obj/item/clothing/shoes/combat/swat
 	gloves = 	/obj/item/clothing/gloves/combat
 	id = 		/obj/item/card/id/dogtag
-	box = 		/obj/item/storage/survivalkit_adv
+	box = 		/obj/item/storage/survivalkit/advanced
 
 /datum/outfit/job/bos/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -85,7 +85,7 @@ Elder
 	glasses =	/obj/item/clothing/glasses/night
 	accessory =	/obj/item/clothing/accessory/bos/elder
 	suit_store =	/obj/item/gun/energy/laser/pistol
-	neck =	/obj/item/clothing/neck/mantle/bos/right
+	neck =	/obj/item/clothing/neck/mantle/holster/bos/right
 	ears = /obj/item/radio/headset/headset_bos/command
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/hunting = 1,

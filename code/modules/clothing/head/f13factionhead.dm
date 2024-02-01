@@ -124,6 +124,19 @@
 	item_state = "fiend"
 	armor = list("melee" = 50, "bullet" = 35, "laser" = 35, "energy" = 5, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 20)
 
+/obj/item/clothing/head/helmet/f13/jackal
+	name = "jackal headwrap"
+	desc = "A cloth head wrap that secures around the user's head, sporting a few rienforced points of leather underneath."
+	icon = 'icons/fallout/clothing/hats.dmi'
+	icon_state = "jackal"
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
+	armor = list("melee" = 35, "bullet" = 20, "laser" = 10, "energy" = 0, "bomb" = 25, "bio" = 20, "rad" = 30, "fire" = 30, "acid" = 20, "wound" = 10)
+	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
+
+/obj/item/clothing/head/helmet/f13/jackal/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
 /obj/item/clothing/head/helmet/f13/raidermetal
 	name = "metal raider helmet"
 	desc = "A metal helmet, rusty and awful."
@@ -193,15 +206,15 @@
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
 
 /obj/item/clothing/head/helmet/f13/combat/mk2/enclave
-	name = "old United States Marine Corp helmet"
-	desc = "An advanced model of combat helmet worn by marines aboard the USS Democracy, second only to power armor in protection used by the USCM For various tasks and operations, it's handled the nuclear wasteland somewhat better than the rest of the armors you've seen."
+	name = "old United States Marine Corps helmet"
+	desc = "An advanced model of combat helmet worn by Marines aboard naval ships, second only to power armor in protection used by the USMC For various tasks and operations, it's handled the nuclear wasteland somewhat better than the rest of the armors you've seen."
 	icon_state = "enclave_marine"
 	item_state = "enclave_marine"
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 25)
 
 /obj/item/clothing/head/helmet/f13/enclave/usmcriot
 	name = "old United States Marine Corp riot helmet"
-	desc = "A pre-war riot armor helmet used by the USCM For various tasks and operations, it's handled the nuclear wasteland somewhat better than the rest of the armors you've seen."
+	desc = "A pre-war riot armor helmet used by the USMC For various tasks and operations, it's handled the nuclear wasteland somewhat better than the rest of the armors you've seen."
 	icon_state = "modified_usmc_riot"
 	item_state = "modified_usmc_riot"
 	flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH
@@ -217,7 +230,7 @@
 	name = "enclave officer pilot helmet"
 	desc = "A pre-war riot helmet, repurposed for duty aboard aircraft."
 
-/obj/item/clothing/head/helmet/f13/combat/mk2/remnant
+/obj/item/clothing/head/helmet/f13/combat/remnant
 	name = "remnant combat helmet"
 	desc = "A dark helmet with yellow lenses, used commonly in espionage or shadow ops."
 	icon_state = "remnant_helmet"
@@ -751,6 +764,9 @@
 		"M4" = "rangerhat"
 	)
 
+/obj/item/clothing/head/helmet/f13/ncr/ranger/Initialize(mapload)
+	. = ..()
+
 /obj/item/clothing/head/helmet/f13/combat/ncr/patrol	//Patrol Ranger helmet
 	name = "ranger patrol helmet"
 	desc = "A standard issue ranger patrol helmet that provides a good amount of defence. It's got NCR markings, making it clear who it was made by."
@@ -766,10 +782,6 @@
 		"M2" = "ncr_helmet_mk2",
 		"M3" = "ncr_patrol_helmet"
 	)
-
-/obj/item/clothing/head/helmet/f13/combat/ncr/patrol/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/helmet/f13/ncr/vetranger		//Veteran Ranger helmet
 	name = "veteran ranger riot helmet"

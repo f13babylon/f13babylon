@@ -96,7 +96,7 @@
 					user.dropItemToGround(attachableparts[attachableparts[i]])
 				attachableparts[attachableparts[i]] = A
 				attachableparts[attachableparts[i]].forceMove(src)
-				playsound(src, "gun_insert_full_magazine", 70, 1)
+				playsound(src, reload_sound, 70, 1)
 				updatestats()
 				updatesprites()
 				updatesize()
@@ -104,7 +104,7 @@
 	//open or close for modifications
 	if(istype(I, /obj/item/screwdriver))
 		if(modifiable && attachableparts[attachableparts[1]] != null && do_after(user, 20, target = src))
-			playsound(src, "gun_insert_full_magazine", 70, 1)
+			playsound(src, reload_sound, 70, 1)
 			mag_type = initial(mag_type)
 			if(istype(src, /obj/item/gun/ballistic/revolver) || istype(src, /obj/item/gun/ballistic/shotgun))
 				magazine = mag
@@ -125,7 +125,7 @@
 			else
 				user.dropItemToGround(magazine)
 				user.dropItemToGround(chambered)
-			playsound(src, "gun_insert_full_magazine", 70, 1)
+			playsound(src, reload_sound, 70, 1)
 			mag_type = null
 			magazine = null
 			chambered = null

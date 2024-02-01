@@ -108,7 +108,6 @@
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "satchel"
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_POCKET
-	w_class = WEIGHT_CLASS_NORMAL
 	component_type = /datum/component/storage/concrete/stack
 	var/spam_protection = FALSE //If this is TRUE, the holder won't receive any messages when they fail to pick up ore through crossing it
 	var/mob/listeningTo
@@ -226,7 +225,7 @@
 	name = "plant bag"
 	icon = 'icons/fallout/farming/farming_tools.dmi'
 	icon_state = "plantbag"
-	w_class = WEIGHT_CLASS_TINY
+	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_POCKET
 	resistance_flags = FLAMMABLE
 
 /obj/item/storage/bag/plants/ComponentInitialize()
@@ -268,7 +267,6 @@
 	icon_state = "sheetsnatcher"
 
 	var/capacity = 300; //the number of sheets it can carry.
-	w_class = WEIGHT_CLASS_NORMAL
 	component_type = /datum/component/storage/concrete/stack
 
 /obj/item/storage/bag/sheetsnatcher/ComponentInitialize()
@@ -404,7 +402,16 @@
 	STR.max_combined_w_class = 30
 	STR.max_items = 14
 	STR.insert_preposition = "in"
-	CANHOLD_STATIC(STR, typecacheof(list(/obj/item/reagent_containers/hypospray/medipen, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/pill, /obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/syringe/dart, /obj/item/reagent_containers/chem_pack)))
+	CANHOLD_STATIC(STR, typecacheof(list(
+		/obj/item/reagent_containers/hypospray/medipen,
+		/obj/item/reagent_containers/syringe,
+		/obj/item/reagent_containers/pill,
+		/obj/item/reagent_containers/glass/beaker,
+		/obj/item/reagent_containers/glass/bottle,
+		/obj/item/reagent_containers/syringe/dart,
+		/obj/item/reagent_containers/chem_pack,
+		/obj/item/reagent_containers/blood,
+	)))
 
 /*
  *  Biowaste bag (mostly for xenobiologists)
@@ -425,8 +432,25 @@
 	STR.max_combined_w_class = 30
 	STR.max_items = 14
 	STR.insert_preposition = "in"
-	CANHOLD_STATIC(STR, typecacheof(list(/obj/item/slime_extract, /obj/item/reagent_containers/blood, /obj/item/reagent_containers/food/snacks/deadmouse, /obj/item/reagent_containers/food/snacks/cube, /obj/item/organ, /obj/item/reagent_containers/food/snacks/meat/slab, /obj/item/bodypart)))
-	CANTHOLD_STATIC(STR, typecacheof(list(/obj/item/organ/brain, /obj/item/organ/liver/cybernetic, /obj/item/organ/heart/cybernetic, /obj/item/organ/lungs/cybernetic, /obj/item/organ/tongue/cybernetic, /obj/item/organ/ears/cybernetic, /obj/item/organ/eyes/robotic, /obj/item/organ/cyberimp)))
+	CANHOLD_STATIC(STR, typecacheof(list(
+		/obj/item/slime_extract,
+		/obj/item/reagent_containers/blood,
+		/obj/item/reagent_containers/food/snacks/deadmouse,
+		/obj/item/reagent_containers/food/snacks/cube,
+		/obj/item/organ,
+		/obj/item/reagent_containers/food/snacks/meat/slab,
+		/obj/item/bodypart
+	)))
+	CANTHOLD_STATIC(STR, typecacheof(list(
+		/obj/item/organ/brain,
+		/obj/item/organ/liver/cybernetic,
+		/obj/item/organ/heart/cybernetic,
+		/obj/item/organ/lungs/cybernetic,
+		/obj/item/organ/tongue/cybernetic,
+		/obj/item/organ/ears/cybernetic,
+		/obj/item/organ/eyes/robotic,
+		/obj/item/organ/cyberimp
+	)))
 
 /obj/item/storage/bag/bio/holding
 	name = "bio bag of holding"
@@ -446,7 +470,7 @@
 	desc = "A pouch for your ammo that goes in your pocket."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "ammopouch"
-	slot_flags = ITEM_SLOT_POCKET
+	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_POCKET
 	w_class = WEIGHT_CLASS_BULKY
 	resistance_flags = FLAMMABLE
 
@@ -464,7 +488,7 @@
 	desc = "A pouch for sheets and RCD ammunition that manages to hang where you would normally put things in your pocket."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "materialpouch"
-	slot_flags = ITEM_SLOT_POCKET
+	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_POCKET
 	w_class = WEIGHT_CLASS_BULKY
 	resistance_flags = FLAMMABLE
 
