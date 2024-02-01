@@ -288,6 +288,12 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 	var/full_version = "[byond_version].[byond_build ? byond_build : "xxx"]"
 	log_access("Login: [key_name(src)] from [address ? address : "localhost"]-[computer_id] || BYOND v[full_version]")
 
+	// When this the issue with the skin is fixed for 515 remove this and let 515 clients connect
+	if(byond_version >= 515)
+		to_chat_immediate(src, span_userdanger("You are using a version of BYOND that is not supported. While the server can compile using 515 the client cannot connect using it."))
+		qdel(src)
+		return
+
 	var/alert_mob_dupe_login = FALSE
 	if(CONFIG_GET(flag/log_access))
 		for(var/I in GLOB.clients)

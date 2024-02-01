@@ -13,9 +13,8 @@ GLOBAL_LIST(topic_status_cache)
 /world/New()
 	var/debug_server = world.GetConfig("env", "AUXTOOLS_DEBUG_DLL")
 	if (debug_server)
-		call(debug_server, "auxtools_init")()
-		enable_debugging()
-	//AUXTOOLS_CHECK(AUXMOS)
+		setup_debugging(debug_server)
+
 	world.Profile(PROFILE_START)
 	log_world("World loaded at [TIME_STAMP("hh:mm:ss", FALSE)]!")
 
