@@ -3,44 +3,78 @@ on:
   workflow_dispatch:
   push:
     branches:
-    - main
+      - main
   pull_request:
     branches:
-    - main
+      - main
+
 env:
   toolchain: stable
   target: i686-unknown-linux-gnu
+
 jobs:
+  setup_tools:
+    name: Setup Tools
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install LibGit2
+        run: sudo bash tools/ci/install_libgit2.sh
+
+      - name: Cargo Cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.cargo
+          key: ${{ runner.os }}-cargo
+
+      - name: Install Cargo Tools
+        run: |
+          cargo install ripgrep --features pcre2
+
+      - name: RustG Cache
+        uses: actions/cache@v2
+        with:
+          path: ~/rust-g
+          key: ${{ runner.os }}-rustg
+
+      - name: Compile Rust-G
+        run: bash tools/ci/install_rust_g.sh
+
   run_linters:
     if: ( !contains(github.event.head_commit.message, '[ci skip]') )
     name: Run Linters
     runs-on: ubuntu-22.04
+    needs: setup_tools
     steps:
       - uses: actions/checkout@v2
-      - name: Setup cache
+
+      - name: Setup SpacemanDMM Cache
         uses: actions/cache@v2
         with:
           path: ~/SpacemanDMM
           key: ${{ runner.os }}-spacemandmm-${{ secrets.CACHE_PURGE_KEY }}
-      - name: Restore Libgit2 cache
-        uses: actions/cache@v3
-        with:
-          path: ~/libgit2
-          key: ${{ runner.os }}-libgit2
-      - name: Restore Rust cache
-        uses: actions/cache@v3
+
+      - name: Use Cargo Cache
+        uses: actions/cache@v2
         with:
           path: ~/.cargo
-          key: ${{ runner.os }}-rust
+          key: ${{ runner.os }}-cargo
+
+      - name: Use Rust-G Cache
+        uses: actions/cache@v2
+        with:
+          path: ~/rust-g
+          key: ${{ runner.os }}-rustg
+
       - name: Install Tools
         run: |
-          sudo bash tools/ci/install_libgit2.sh
-          cargo install ripgrep --features pcre2
           sudo apt install python3 python3-{pip,venv,dev} libjpeg-dev zlib1g-dev
           pip3 install setuptools
           bash tools/ci/install_node.sh
           bash tools/ci/install_spaceman_dmm.sh dreamchecker
           tools/bootstrap/python -c ''
+
       - name: Run Linters
         run: |
           bash tools/ci/check_filedirs.sh fortune13.dme
@@ -54,6 +88,7 @@ jobs:
           tools/bootstrap/python -m dmi.test
           tools/bootstrap/python -m mapmerge2.dmm_test
           ~/dreamchecker > ${GITHUB_WORKSPACE}/output-annotations.txt 2>&1
+
       - name: Annotate Lints
         uses: yogstation13/DreamAnnotate@v2
         if: always()
@@ -86,7 +121,9 @@ jobs:
     if: ( !contains(github.event.head_commit.message, '[ci skip]') )
     name: Integration Tests
     runs-on: ubuntu-22.04
+    needs: setup_tools
     timeout-minutes: 30
+
     services:
       mysql:
         image: mysql:latest
@@ -95,6 +132,7 @@ jobs:
         ports:
           - 3306
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+
     steps:
       - uses: actions/checkout@v2
 
@@ -118,23 +156,17 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
-      - name: Restore Rust cache
-        uses: actions/cache@v3
+      - name: Use Cargo Cache
+        uses: actions/cache@v2
         with:
           path: ~/.cargo
-          key: ${{ runner.os }}-rust
+          key: ${{ runner.os }}-cargo
 
-      - name: Restore Auxmos cache
-        uses: actions/cache@v3
-        with:
-          path: ~/auxmos
-          key: auxmos-build-${{ hashFiles('~/auxmos/Cargo.lock') }}
-      
-      - name: Restore Rust-G cache
-        uses: actions/cache@v3
+      - name: Use Rust-G Cache
+        uses: actions/cache@v2
         with:
           path: ~/rust-g
-          key: rustg-build-${{ hashFiles('~/rust-g/Cargo.lock') }}
+          key: ${{ runner.os }}-rustg
 
       - name: Setup database
         run: |
@@ -144,13 +176,9 @@ jobs:
           mysql -u root -proot -e 'CREATE DATABASE tg_ci_prefixed;'
           mysql -u root -proot tg_ci_prefixed < SQL/tgstation_schema_prefixed.sql
 
-      - name: Build Rust-G and Auxmos
+      - name: Copy Rust-G
         run: |
-          sudo dpkg --add-architecture i386
-          sudo apt update || true
-          sudo apt install build-essential g++-multilib libc6-i386 libstdc++6:i386 libssl-dev:i386 pkg-config libz-dev:i386
-          bash tools/ci/install_rust_g.sh
-          bash tools/ci/install_auxmos.sh
+          cp -f ~/rust-g/target/i686-unknown-linux-gnu/release/librust_g.so librust_g.so
 
       - name: Compile and run tests
         run: |
