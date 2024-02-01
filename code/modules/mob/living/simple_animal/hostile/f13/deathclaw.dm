@@ -85,34 +85,6 @@
 	guaranteed_butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/deathclaw = 6,
 							/obj/item/stack/sheet/animalhide/deathclaw = 3)
 
-/mob/living/simple_animal/hostile/deathclaw/mother/AttackingTarget()
-	var/mob/living/M = target
-	if(!ishuman(M) || M.health > 20)
-		..()
-		return
-
-	if(get_dist(src, M) > 0)
-		a_intent = INTENT_GRAB
-		grab_state = GRAB_NECK
-		summon_backup(15)
-
-		start_pulling(M, 1)
-		M.grabbedby(src)
-		M.drop_all_held_items()
-		M.stop_pulling()
-
-		var/obj/item/bodypart/chest/O = M.get_bodypart(BODY_ZONE_CHEST)
-		O.force_wound_upwards(/datum/wound/pierce/critical)
-
-		visible_message("<span class='danger'>[src] growls, lifting [M] into the air and violently executing them!</span>")
-		to_chat(M, "<span class='userdanger'>[src] lifts you into the air, violently putting an end to your life!</span>")
-
-		M.adjustBruteLoss(100)//Not tanking this without abuse of a specific mechanic. Bypasses armor.
-
-	if(!ishuman(M) || M.health <= 0)
-		src.drop_all_held_items()
-		src.stop_pulling()
-
 //Legendary Deathclaw
 /mob/living/simple_animal/hostile/deathclaw/legendary
 	name = "legendary deathclaw"
