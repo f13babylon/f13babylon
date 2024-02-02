@@ -162,6 +162,7 @@
 	icon_state = "combat_armor"
 	item_state = "combat_armor"
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 10, "fire" = 15, "acid" = 0, "wound" = 15)
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
 	slowdown = 0.12
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 5)
 	mutantrace_variation = STYLE_DIGITIGRADE
