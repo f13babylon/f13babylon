@@ -679,24 +679,19 @@
 		return TRUE
 
 	var/atom/A = parent
-	if(!quickdraw)
-		A.add_fingerprint(user)
-		user_show_to_mob(user)
-		if(rustle_sound)
-			playsound(A, "rustle", 50, 1, -5)
-		return TRUE
+	A.add_fingerprint(user)
+	user_show_to_mob(user)
+	if(rustle_sound)
+		playsound(A, "rustle", 50, 1, -5)
 
-	if(user.can_hold_items() && !user.incapacitated())
-		var/obj/item/I = locate() in real_location()
-		if(!I)
-			return
-		A.add_fingerprint(user)
-		remove_from_storage(I, get_turf(user))
-		if(!user.put_in_hands(I))
-			user.visible_message("<span class='warning'>[user] fumbles with the [parent], letting [I] fall on the floor.</span>", \
-								"<span class='notice'>You fumble with [parent], letting [I] fall on the floor.</span>")
+	if(quickdraw && user.can_hold_items() && !user.incapacitated())
+		if(!length(user.get_empty_held_indexes()))
 			return TRUE
-		user.visible_message("<span class='warning'>[user] draws [I] from [parent]!</span>", "<span class='notice'>You draw [I] from [parent].</span>")
+		var/obj/item/I = locate() in real_location()
+		if(I)
+			remove_from_storage(I, user)
+			user.put_in_hands(I)
+			user.visible_message("<span class='warning'>[user] draws [I] from [parent]!</span>", "<span class='notice'>You draw [I] from [parent].</span>")
 		return TRUE
 
 /datum/component/storage/proc/action_trigger(datum/action/source, obj/target)
