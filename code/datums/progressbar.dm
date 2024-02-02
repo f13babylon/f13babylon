@@ -16,7 +16,7 @@
 	var/last_progress = 0
 	///Variable to ensure smooth visual stacking on multiple progress bars.
 	var/listindex = 0
-
+	var/location_type
 
 /datum/progressbar/New(mob/User, goal_number, atom/target)
 	. = ..()
@@ -32,6 +32,7 @@
 		return
 	goal = goal_number
 	bar_loc = target
+	location_type = bar_loc.type
 	bar = image('icons/effects/progessbar.dmi', bar_loc, "prog_bar_0")
 	bar.plane = ABOVE_HUD_PLANE
 	bar.appearance_flags = APPEARANCE_UI_IGNORE_ALPHA
@@ -135,6 +136,13 @@
 
 	QDEL_IN(src, PROGRESSBAR_ANIMATION_TIME)
 
+///Progress bars are very generic, and what hangs a ref to them depends heavily on the context in which they're used
+///So let's make hunting harddels easier yeah?
+/datum/progressbar/dump_harddel_info()
+	if(harddel_deets_dumped)
+		return
+	harddel_deets_dumped = TRUE
+	return "Owner's type: [location_type]"
 
 #undef PROGRESSBAR_ANIMATION_TIME
 #undef PROGRESSBAR_HEIGHT
