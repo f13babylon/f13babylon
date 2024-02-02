@@ -224,7 +224,7 @@
 	block_chance = 15
 
 /obj/item/melee/smith/sword/spatha
-	name = "spatha"
+	name = "liberator machete"
 	icon_state = "spatha_smith"
 	item_state = "spatha_smith"
 	overlay_state = "hilt_spatha"
@@ -300,7 +300,7 @@
 	block_chance = 20
 
 /obj/item/melee/smith/machete/gladius
-	name = "gladius"
+	name = "machete gladius"
 	icon_state = "gladius_smith"
 	overlay_state = "hilt_gladius"
 
