@@ -341,7 +341,7 @@
 
 //NON-COMBAT ROLES
 /obj/item/clothing/suit/f13/ncr/utilityvest		//NCR Off-Duty vest
-	name = "\improper NCR utility vest"
+	name = "utility vest"
 	desc = "A practical utility vest with pockets for tools and such. Offers little in terms of protection."
 	icon_state = "vest_utility"
 	item_state = "vest_utility"
@@ -469,7 +469,6 @@
 	icon_state = "steel_bib_ncra"
 	item_state = "steel_bib_ncra"
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 45)
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 	slowdown = 0.18		//0.22 with helmet
 
