@@ -399,8 +399,8 @@
 /obj/item/storage/bag/chemistry/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_combined_w_class = WEIGHT_CLASS_TINY * 30
-	STR.max_items = 30
+	STR.max_combined_w_class = WEIGHT_CLASS_TINY * 14
+	STR.max_items = 14
 	STR.insert_preposition = "in"
 	STR.display_numerical_stacking = TRUE
 	STR.allow_quick_gather = TRUE
