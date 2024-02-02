@@ -45,7 +45,7 @@
 	else if(contents.len)
 		. += "<span class='notice'>Alt-click it to quickly draw a magazine.</span>"
 
-/obj/item/clothing/neck/mantle/holster/Initialize()
+/obj/item/clothing/neck/mantle/holster/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/storage/concrete/belt/holster/sidearm)
 
