@@ -399,9 +399,13 @@
 /obj/item/storage/bag/chemistry/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_combined_w_class = 30
-	STR.max_items = 14
+	STR.max_combined_w_class = WEIGHT_CLASS_TINY * 30
+	STR.max_items = 30
 	STR.insert_preposition = "in"
+	STR.display_numerical_stacking = TRUE
+	STR.allow_quick_gather = TRUE
+	STR.allow_quick_empty = TRUE
+	STR.click_gather = TRUE
 	CANHOLD_STATIC(STR, typecacheof(list(
 		/obj/item/reagent_containers/hypospray/medipen,
 		/obj/item/reagent_containers/syringe,
@@ -464,24 +468,6 @@
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_combined_w_class = INFINITY
 	STR.max_items = 100
-
-/obj/item/storage/bag/ammo
-	name = "ammo pouch"
-	desc = "A pouch for your ammo that goes in your pocket."
-	icon = 'icons/obj/items_and_weapons.dmi'
-	icon_state = "ammopouch"
-	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_POCKET
-	w_class = WEIGHT_CLASS_BULKY
-	resistance_flags = FLAMMABLE
-
-/obj/item/storage/bag/ammo/ComponentInitialize()
-	. = ..()
-	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_w_class = WEIGHT_CLASS_NORMAL
-	STR.max_combined_w_class = 30
-	STR.max_items = 3
-	STR.display_numerical_stacking = FALSE
-	CANHOLD_STATIC(STR, typecacheof(list(/obj/item/ammo_box/magazine, /obj/item/ammo_casing)))
 
 /obj/item/storage/bag/material
 	name = "material pouch"
