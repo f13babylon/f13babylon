@@ -30,6 +30,7 @@
 	item_state = "syringe_kit"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
+	component_type = /datum/component/storage/concrete/box
 	resistance_flags = FLAMMABLE
 	var/foldable = /obj/item/stack/sheet/cardboard
 	var/illustration = "writing"
@@ -443,11 +444,7 @@
 	icon_state = "donkpocketbox"
 	illustration=null
 	custom_premium_price = PRICE_ABOVE_NORMAL // git gud
-
-/obj/item/storage/box/donkpockets/ComponentInitialize()
-	. = ..()
-	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	CANHOLD_STATIC(STR, typecacheof(list(/obj/item/reagent_containers/food/snacks/donkpocket)))
+	component_type = /datum/component/storage/concrete/box/donk
 
 /obj/item/storage/box/donkpockets/PopulateContents()
 	for(var/i in 1 to 6)
@@ -458,12 +455,7 @@
 	desc = "Drymate brand monkey cubes. Just add water!"
 	icon_state = "monkeycubebox"
 	illustration = null
-
-/obj/item/storage/box/monkeycubes/ComponentInitialize()
-	. = ..()
-	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_items = 7
-	CANHOLD_STATIC(STR, typecacheof(list(/obj/item/reagent_containers/food/snacks/cube/monkey)))
+	component_type = /datum/component/storage/concrete/box/monkey
 
 /obj/item/storage/box/monkeycubes/PopulateContents()
 	for(var/i in 1 to 5)
@@ -613,12 +605,7 @@
 	desc = "Eight wrappers of fun! Ages 8 and up. Not suitable for children."
 	icon = 'icons/obj/toy.dmi'
 	icon_state = "spbox"
-
-/obj/item/storage/box/snappops/ComponentInitialize()
-	. = ..()
-	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	CANHOLD_STATIC(STR, typecacheof(list(/obj/item/toy/snappop)))
-	STR.max_items = 8
+	component_type = /datum/component/storage/concrete/box/snappop
 
 /obj/item/storage/box/snappops/PopulateContents()
 	SEND_SIGNAL(src, COMSIG_TRY_STORAGE_FILL_TYPE, /obj/item/toy/snappop)
@@ -632,12 +619,7 @@
 	w_class = WEIGHT_CLASS_TINY
 	slot_flags = ITEM_SLOT_BELT
 	custom_price = PRICE_REALLY_CHEAP
-
-/obj/item/storage/box/matches/ComponentInitialize()
-	. = ..()
-	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_items = 10
-	CANHOLD_STATIC(STR, typecacheof(list(/obj/item/match)))
+	component_type = /datum/component/storage/concrete/box/match
 
 /obj/item/storage/box/matches/PopulateContents()
 	SEND_SIGNAL(src, COMSIG_TRY_STORAGE_FILL_TYPE, /obj/item/match)
@@ -655,14 +637,7 @@
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
 	foldable = /obj/item/stack/sheet/cardboard //BubbleWrap
-
-/obj/item/storage/box/lights/ComponentInitialize()
-	. = ..()
-	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_items = 21
-	CANHOLD_STATIC(STR, typecacheof(list(/obj/item/light/tube, /obj/item/light/bulb)))
-	STR.max_combined_w_class = 21
-	STR.click_gather = TRUE
+	component_type = /datum/component/storage/concrete/box/lights
 
 /obj/item/storage/box/lights/bulbs/PopulateContents()
 	for(var/i in 1 to 21)
