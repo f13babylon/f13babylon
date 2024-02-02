@@ -11,6 +11,12 @@ GLOBAL_LIST(topic_status_cache)
 //So subsystems globals exist, but are not initialised
 
 /world/New()
+#ifdef CIBUILDING
+	if(!__detect_rust_g())
+		world.log << "Failed to find rust_g inside CI environment."
+		del world
+#endif
+
 	var/debug_server = world.GetConfig("env", "AUXTOOLS_DEBUG_DLL")
 	if (debug_server)
 		setup_debugging(debug_server)
