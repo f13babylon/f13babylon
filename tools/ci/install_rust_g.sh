@@ -32,7 +32,7 @@ if [ -f "$cache_file" ]; then
 		hash_wanted=$(cat "$hash_file")
 		hash_current=$(sha256sum "$cache_file" | cut -d ' ' -f 1)
 
-		if [ "$hash_wanted" -eq "$hash_current" ]; then
+		if [ "$hash_wanted" = "$hash_current" ]; then
 			echo "Using cached rust-g"
 			cp "$cache_file" "$cwd/librust_g.so"
 			cd "$cwd"
