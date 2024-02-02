@@ -9,10 +9,14 @@ source dependencies.sh
 cwd=$(pwd)
 
 if [ ! -d ~/rust-g ]; then
-	git clone https://github.com/tgstation/rust-g ~/rust-g
-	cd ~/rust-g
+	mkdir ~/rust-g
+fi
+
+if [ ! -d ~/rust-g/repo ]; then
+	git clone https://github.com/tgstation/rust-g ~/rust-g/repo
+	cd ~/rust-g/repo
 else
-	cd ~/rust-g
+	cd ~/rust-g/repo
 	git fetch
 fi
 git reset --hard
