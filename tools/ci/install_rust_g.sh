@@ -9,7 +9,7 @@ fi
 
 sudo dpkg --add-architecture i386 > /dev/null
 sudo apt update > /dev/null
-sudo apt install zlib1g-dev:i386 libssl-dev:i386 libgit2-dev:i386 -y > /dev/null
+sudo apt install zlib1g-dev:i386 libssl-dev:i386 libgit2-dev -y > /dev/null
 
 # check for rust-g already being compiled with the wanted version
 hash_file=~/rust-g/HASH.$RUST_G_VERSION
