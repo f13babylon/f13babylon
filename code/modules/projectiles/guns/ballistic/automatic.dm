@@ -256,7 +256,6 @@
 	icon_state = "uzi"
 	item_state = "uzi"
 	fire_sound = 'sound/f13weapons/9mm.ogg'
-	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/msmg9mm
 	fire_delay = 2
 	autofire_shot_delay = 1
