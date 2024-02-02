@@ -1007,9 +1007,8 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 		CRASH("change_view called without argument.")
 
 //CIT CHANGES START HERE - makes change_view change DEFAULT_VIEW to 15x15 depending on preferences
-	if(prefs && CONFIG_GET(string/default_view))
-		if(!prefs.widescreenpref && new_size == CONFIG_GET(string/default_view))
-			new_size = "15x15"
+	if(prefs && !prefs.widescreenpref && new_size == CONFIG_GET(string/default_view))
+		new_size = CONFIG_GET(string/default_view_square)
 //END OF CIT CHANGES
 
 	var/list/old_view = getviewsize(view)
