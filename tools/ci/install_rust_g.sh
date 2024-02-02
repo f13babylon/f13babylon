@@ -21,6 +21,8 @@ if [ -f "$cache_file" ]; then
 			echo "Using cached rust-g"
 			cp "$cache_file" "$cwd/librust_g.so"
 			cd "$cwd"
+			chmod +x librust_g.so
+			ldd librust_g.so
 			exit 0
 
 		else
