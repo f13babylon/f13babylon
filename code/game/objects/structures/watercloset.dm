@@ -169,9 +169,14 @@
 	var/exposed = 0 // can you currently put an item inside
 	var/obj/item/hiddenitem = null // what's in the urinal
 
-/obj/structure/urinal/New()
-	..()
+/obj/structure/urinal/Initialize(mapload)
+	. = ..()
 	hiddenitem = new /obj/item/reagent_containers/food/urinalcake
+
+/obj/structure/urinal/Destroy()
+	if(!isnull(hiddenitem))
+		QDEL_NULL(hiddenitem)
+	return ..()
 
 /obj/structure/urinal/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
 	if(user.pulling && user.a_intent == INTENT_GRAB && isliving(user.pulling))
