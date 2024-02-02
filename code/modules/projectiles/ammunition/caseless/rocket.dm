@@ -5,6 +5,7 @@
 	icon_state = "srm-8"
 	projectile_type = /obj/item/projectile/bullet/rocket/a84mm_he
 	is_pickable = FALSE
+	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/ammo_casing/caseless/rocket/hedp
 	name = "\improper PM-9HEDP"
