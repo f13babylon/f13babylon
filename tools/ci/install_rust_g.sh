@@ -1,26 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-sudo dpkg --add-architecture i386
-sudo apt update
-sudo apt install zlib1g-dev:i386 libssl-dev:i386 gcc-multilib g++-multilib libc6-dev-i386 libgit2-dev
-
-source dependencies.sh
-cwd=$(pwd)
-
 if [ ! -d ~/rust-g ]; then
 	mkdir ~/rust-g
 fi
-
-if [ ! -d ~/rust-g/repo ]; then
-	git clone https://github.com/tgstation/rust-g ~/rust-g/repo
-	cd ~/rust-g/repo
-else
-	cd ~/rust-g/repo
-	git fetch
-fi
-git reset --hard
-git checkout ${RUST_G_VERSION}
 
 # check for rust-g already being compiled with the wanted version
 hash_file=~/rust-g/HASH.$RUST_G_VERSION
@@ -45,6 +28,23 @@ if [ -f "$cache_file" ]; then
 		echo "Hash file missing."
 	fi
 fi
+
+sudo dpkg --add-architecture i386
+sudo apt update
+sudo apt install zlib1g-dev:i386 libssl-dev:i386 gcc-multilib g++-multilib libc6-dev-i386 libgit2-dev
+
+source dependencies.sh
+cwd=$(pwd)
+
+if [ ! -d ~/rust-g/repo ]; then
+	git clone https://github.com/tgstation/rust-g ~/rust-g/repo
+	cd ~/rust-g/repo
+else
+	cd ~/rust-g/repo
+	git fetch
+fi
+git reset --hard
+git checkout ${RUST_G_VERSION}
 
 rustup target add i686-unknown-linux-gnu
 export PKG_CONFIG_ALLOW_CROSS=1
