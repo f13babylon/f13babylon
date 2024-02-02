@@ -62,8 +62,8 @@
 	M.apply_damage(20, STAMINA, "chest", M.run_armor_check("chest", "melee"))
 
 /obj/item/melee/onehanded/machete/gladius
-	name = "gladius"
-	desc = "A heavy cutting blade, made for war and mass produced in Legion territory."
+	name = "machete gladius"
+	desc = "A Legion-made reproduction of what was a sporting store Khukuri machete. The large, heavy blade is designed to aid in chopping - and serves little use in stabbing."
 	icon_state = "gladius"
 	item_state = "gladius"
 	force = 36
@@ -72,13 +72,13 @@
 	block_chance = 10
 
 /obj/item/melee/onehanded/machete/spatha
-	name = "spatha"
-	desc = "This long blade is favoured by Legion officers and leaders, a finely crafted weapon with good steel and hilt made from bronze and bone."
+	name = "Liberator machete"
+	desc = "A now-standardized reproduction of the machete awarded to Prime Decanus Dead Sea after the conquest of the Sun Dogs tribe, meant for Officers of Caesar's Legion. It's shaped similarly to a machete gladius, with the difference of a longer and heavier blade."
 	icon_state = "spatha"
 	item_state = "spatha"
-	force = 38
-	wound_bonus = 30
-	block_chance = 18
+	force = 40
+	wound_bonus = 45
+	block_chance = 20
 
 /obj/item/melee/onehanded/machete/spatha/longblade
 	name = "forged claymore"
