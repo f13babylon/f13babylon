@@ -77,7 +77,7 @@
 	icon_state = "spatha"
 	item_state = "gladius"
 	force = 40
-	wound_bonus = 45
+	wound_bonus = 30
 	block_chance = 20
 	block_parry_data = /datum/block_parry_data/smith_generic
 
