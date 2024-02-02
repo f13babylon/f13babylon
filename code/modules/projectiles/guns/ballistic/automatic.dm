@@ -200,7 +200,7 @@
 	icon_state = "MP5"
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
-	w_class = WEIGHT_CLASS_NORMAL
+	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_BELT
 	automatic = TRUE
@@ -241,7 +241,6 @@
 	icon_state = "smg22"
 	item_state = "smg22"
 	fire_sound = 'sound/f13weapons/american180.ogg'
-	w_class = WEIGHT_CLASS_BULKY
 	mag_type = /obj/item/ammo_box/magazine/msmg22
 	fire_delay = 2
 	autofire_shot_delay = 1
@@ -257,6 +256,7 @@
 	icon_state = "uzi"
 	item_state = "uzi"
 	fire_sound = 'sound/f13weapons/9mm.ogg'
+	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/msmg9mm
 	fire_delay = 2
 	autofire_shot_delay = 1
@@ -286,7 +286,6 @@
 	icon_state = "calico"
 	item_state = "calico"
 	fire_sound = 'sound/f13weapons/smg_loud.ogg'
-	w_class = WEIGHT_CLASS_BULKY
 	mag_type = /obj/item/ammo_box/magazine/mcalico
 	fire_delay = 2
 	autofire_shot_delay = 1
@@ -308,6 +307,7 @@
 	desc = "A rather inexpensive M3A1 Grease Gun with the absolute simplest of designs."
 	icon_state = "grease_gun"
 	item_state = "grease_gun"
+	w_class = WEIGHT_CLASS_NORMAL
 	fire_sound = 'sound/f13weapons/smg_dull.ogg'
 	mag_type = /obj/item/ammo_box/magazine/mgreasegun
 	spread = 18
@@ -320,7 +320,6 @@
 	icon_state = "thompson"
 	item_state = "thompson"
 	fire_sound = 'sound/f13weapons/smg_dull.ogg'
-	w_class = WEIGHT_CLASS_BULKY
 	mag_type = /obj/item/ammo_box/magazine/mthompson
 	slowdown = 0.3
 	spread = 13
@@ -332,7 +331,6 @@
 	icon_state = "p90"
 	item_state = "p90"
 	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
-	w_class = WEIGHT_CLASS_BULKY
 	mag_type = /obj/item/ammo_box/magazine/mp90
 	slowdown = 0.3
 	spread = 16
@@ -346,7 +344,6 @@
 	icon_state = "smg14mm"
 	item_state = "smg14mm"
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
-	w_class = WEIGHT_CLASS_BULKY
 	mag_type = /obj/item/ammo_box/magazine/msmg14mm
 	fire_delay = 4
 	autofire_shot_delay = 3
