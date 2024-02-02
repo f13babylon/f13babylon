@@ -25,6 +25,9 @@ GLOBAL_DATUM_INIT(openspace_backdrop_one_for_all, /atom/movable/openspace_backdr
 /turf/open/transparent/openspace/airless
 	initial_gas_mix = AIRLESS_ATMOS
 
+/turf/open/transparent/openspace/nolight
+	var/sunlight_state = 0
+
 /turf/open/transparent/openspace/debug/update_multiz()
 	..()
 	return TRUE
