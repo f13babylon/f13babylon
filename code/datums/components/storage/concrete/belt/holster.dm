@@ -118,3 +118,21 @@
 		/obj/item/ammo_box/magazine/mp90,
 		/obj/item/ammo_box/magazine/msmg14mm,
 	))
+
+/datum/component/storage/concrete/belt/holster_double
+	max_items = 2
+	max_w_class = WEIGHT_CLASS_NORMAL
+	max_combined_w_class = WEIGHT_CLASS_NORMAL * 2
+	quickdraw = TRUE
+
+/datum/component/storage/concrete/belt/holster_double/Initialize()
+	. = ..()
+	CANHOLD_STATIC(src, typecacheof(list(
+		/obj/item/gun/ballistic/automatic/pistol,
+		/obj/item/gun/ballistic/revolver,
+		/obj/item/gun/energy/laser/pistol,
+		/obj/item/gun/energy/laser/wattz,
+		/obj/item/gun/energy/laser/complianceregulator,
+		/obj/item/gun/energy/laser/plasma/pistol,
+		/obj/item/gun/energy/laser/plasma/glock,
+	)))

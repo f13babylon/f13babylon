@@ -61,6 +61,10 @@
 	name = "Leg Holster"
 	result = /obj/item/storage/belt/holster/legholster
 
+/datum/crafting_recipe/belt/holster/double
+	name = "Double Holster"
+	result = /obj/item/storage/belt/holster/double
+
 /datum/crafting_recipe/belt/holster/large
 	name = "Sidearm Holster Belt"
 	result = /obj/item/storage/belt/holster/large

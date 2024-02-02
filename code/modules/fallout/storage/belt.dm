@@ -172,24 +172,18 @@
 /obj/item/storage/belt/holster/paladincape
 	name = "short shoulder cape"
 	desc = "A short, red cape with a holster attached to carry a handgun and ammo."
-	icon = 'icons/fallout/clothing/belts.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/clothes/belt.dmi'
 	icon_state = "newboscape"
 	item_state = "newboscape"
 
 /obj/item/storage/belt/holster/paladinlongcape
 	name = "long shoulder cape"
 	desc = "A long, red cape with a holster attached to carry a handgun and ammo."
-	icon = 'icons/fallout/clothing/belts.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/clothes/belt.dmi'
 	icon_state = "newboslcape"
 	item_state = "newboslcape"
 
 /obj/item/storage/belt/holster/legholster
 	name = "leg holster"
 	desc = "A holster to carry a handgun and ammo worn on the leg."
-	icon = 'icons/fallout/clothing/belts.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/clothes/belt.dmi'
 	icon_state = "holster_leg"
 	item_state = "holster_leg"
 
@@ -199,13 +193,27 @@
 	new /obj/item/ammo_box/a357(src)
 	new /obj/item/ammo_box/a357(src)
 
+/obj/item/storage/belt/holster_double
+	name = "double holster"
+	desc = "A double holster to carry two handguns at the same time. WARNING: Akimbo badasses only."
+	icon = 'icons/fallout/clothing/belts.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/belt.dmi'
+	icon_state = "holster_double"
+	item_state = "holster_double"
+	alternate_worn_layer = UNDER_SUIT_LAYER
+	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_NECK
+	component_type = /datum/component/storage/concrete/belt/holster_double
+
+/obj/item/storage/belt/holster_double/examine(mob/user)
+	. = ..()
+	if(contents.len)
+		. += "<span class='notice'>Alt-click it to quickly draw [contents.len == 1 ? "the" : "a"] gun.</span>"
+
 /obj/item/storage/belt/holster/large
 	name = "sidearm holster belt"
 	desc = "A belt with a holster for a sidearm and additional pouches to store ammo for it."
-	icon = 'icons/fallout/clothing/belts.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/clothes/belt.dmi'
-	icon_state = "sidearm_belt"
-	item_state = "sidearm_belt"
+	icon_state = "holster_belt"
+	item_state = "holster_belt"
 	component_type = /datum/component/storage/concrete/belt/holster/sidearm/large
 	slot_flags = ITEM_SLOT_BELT
 

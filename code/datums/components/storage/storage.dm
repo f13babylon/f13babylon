@@ -691,6 +691,9 @@
 		if(I)
 			remove_from_storage(I, user)
 			user.put_in_hands(I)
+			if(isgun(I))
+				var/obj/item/gun/G = I
+				G.weapondraw(G, user)
 			user.visible_message("<span class='warning'>[user] draws [I] from [parent]!</span>", "<span class='notice'>You draw [I] from [parent].</span>")
 		return TRUE
 
