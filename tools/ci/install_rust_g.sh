@@ -7,6 +7,10 @@ if [ ! -d ~/rust-g ]; then
 	mkdir ~/rust-g
 fi
 
+sudo dpkg --add-architecture i386 > /dev/null
+sudo apt update > /dev/null
+sudo apt install zlib1g-dev:i386 libssl-dev:i386 libgit2-dev:i386 -y > /dev/null
+
 # check for rust-g already being compiled with the wanted version
 hash_file=~/rust-g/HASH.$RUST_G_VERSION
 cache_file=~/rust-g/librust_g.so
@@ -35,8 +39,7 @@ fi
 
 sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install zlib1g-dev:i386 libssl-dev:i386 gcc-multilib g++-multilib libc6-dev-i386 libgit2-dev
-
+sudo apt install gcc-multilib g++-multilib libc6-dev-i386
 
 if [ ! -d ~/rust-g/repo ]; then
 	git clone https://github.com/tgstation/rust-g ~/rust-g/repo
