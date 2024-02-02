@@ -75,10 +75,11 @@
 	name = "Liberator machete"
 	desc = "A now-standardized reproduction of the machete awarded to Prime Decanus Dead Sea after the conquest of the Sun Dogs tribe, meant for Officers of Caesar's Legion. It's shaped similarly to a machete gladius, with the difference of a longer and heavier blade."
 	icon_state = "spatha"
-	item_state = "spatha"
+	item_state = "gladius"
 	force = 40
 	wound_bonus = 45
 	block_chance = 20
+	block_parry_data = /datum/block_parry_data/smith_generic
 
 /obj/item/melee/onehanded/machete/spatha/longblade
 	name = "forged claymore"
