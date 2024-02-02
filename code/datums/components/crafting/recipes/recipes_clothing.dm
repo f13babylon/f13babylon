@@ -63,7 +63,7 @@
 
 /datum/crafting_recipe/belt/holster/double
 	name = "Double Holster"
-	result = /obj/item/storage/belt/holster/double
+	result = /obj/item/storage/belt/holster_double
 
 /datum/crafting_recipe/belt/holster/large
 	name = "Sidearm Holster Belt"
