@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
+source dependencies.sh
 
 if [ ! -d ~/rust-g ]; then
 	mkdir ~/rust-g
@@ -33,7 +34,6 @@ sudo dpkg --add-architecture i386
 sudo apt update
 sudo apt install zlib1g-dev:i386 libssl-dev:i386 gcc-multilib g++-multilib libc6-dev-i386 libgit2-dev
 
-source dependencies.sh
 cwd=$(pwd)
 
 if [ ! -d ~/rust-g/repo ]; then
