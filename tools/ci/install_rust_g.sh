@@ -3,7 +3,7 @@ set -euo pipefail
 
 sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install zlib1g-dev:i386 libssl-dev:i386 build-essential:i386 libgcc1:i386
+sudo apt install zlib1g-dev:i386 libssl-dev:i386 libgcc1:i386
 
 source dependencies.sh
 cwd=$(pwd)
