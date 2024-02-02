@@ -25,14 +25,24 @@ git checkout ${RUST_G_VERSION}
 # check for rust-g already being compiled with the wanted version
 hash_file=~/rust-g/HASH.$RUST_G_VERSION
 cache_file=~/rust-g/librust_g.so
-if [ -f "$cache_file" ] && [ -f "$hash_file" ]; then
-	hash_wanted=$(cat "$hash_file")
-	hash_current=$(sha256sum "$cache_file" | cut -d ' ' -f 1)
-	if [ "$hash_wanted" -eq "$hash_current" ]; then
-		echo "Using cached rust-g"
-		cp "$cache_file" "$cwd/librust_g.so"
-		cd "$cwd"
-		exit 0
+if [ -f "$cache_file" ]; then
+	echo "Cache file exists"
+	if [ -f "$hash_file" ]; then
+		echo "Hash file exists"
+		hash_wanted=$(cat "$hash_file")
+		hash_current=$(sha256sum "$cache_file" | cut -d ' ' -f 1)
+
+		if [ "$hash_wanted" -eq "$hash_current" ]; then
+			echo "Using cached rust-g"
+			cp "$cache_file" "$cwd/librust_g.so"
+			cd "$cwd"
+			exit 0
+
+		else
+			echo "Hash mismatch: $hash_wanted != $hash_current"
+		fi
+	else
+		echo "Hash file missing."
 	fi
 fi
 
