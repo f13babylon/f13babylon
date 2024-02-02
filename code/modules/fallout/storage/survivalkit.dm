@@ -8,7 +8,7 @@
 /obj/item/storage/survivalkit/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	CANTHOLD_STATIC(STR, GLOB.typecache_noncombat_storage)
+	CANTHOLD_STATIC(STR, GLOB.typecache_noncombat_cant_hold)
 
 /obj/item/storage/survivalkit/PopulateContents()
 	new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)

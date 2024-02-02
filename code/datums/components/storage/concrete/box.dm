@@ -1,6 +1,6 @@
 /datum/component/storage/concrete/box/Initialize()
 	. = ..()
-	CANTHOLD_STATIC(src, GLOB.typecache_noncombat_storage)
+	CANTHOLD_STATIC(src, GLOB.typecache_noncombat_cant_hold)
 
 /datum/component/storage/concrete/box/donk/Initialize()
 	. = ..()

@@ -143,7 +143,7 @@ GLOBAL_LIST_INIT(typecache_grenade_storage, typecacheof(list(
 	/obj/item/ammo_casing/a40mmI,
 )))
 
-GLOBAL_LIST_INIT(typecache_noncombat_storage, typecacheof(list(
+GLOBAL_LIST_INIT(typecache_noncombat_cant_hold, typecacheof(list(
 	/obj/item/gun,
 	/obj/item/melee,
 	/obj/item/shovel/trench,
