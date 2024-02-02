@@ -28,7 +28,7 @@
 	friction = generator(GEN_NUM, 0.1, 0.5)
 
 /datum/element/debris
-	element_flags = ELEMENT_BESPOKE
+	element_flags = ELEMENT_BESPOKE | ELEMENT_DETACH
 	id_arg_index = 2
 
 	///Icon state of debris when impacted by a projectile
@@ -46,7 +46,7 @@
 	debris_velocity = _debris_velocity
 	debris_amount = _debris_amount
 	debris_scale = _debris_scale
-	RegisterSignal(target, COMSIG_ATOM_BULLET_ACT,PROC_REF(register_for_impact))
+	RegisterSignal(target, COMSIG_ATOM_BULLET_ACT, PROC_REF(register_for_impact))
 
 /datum/element/debris/Detach(datum/source, force)
 	. = ..()

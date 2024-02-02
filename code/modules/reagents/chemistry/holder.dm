@@ -1196,6 +1196,8 @@
 // Convenience proc to create a reagents holder for an atom
 // Max vol is maximum volume of holder
 /atom/proc/create_reagents(max_vol, flags, new_value)
+	if(QDELING(src))
+		CRASH("Attempted to create reagents on a deleted atom")
 	if(reagents)
 		qdel(reagents)
 	reagents = new/datum/reagents(max_vol, flags, new_value)
