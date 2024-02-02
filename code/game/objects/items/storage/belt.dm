@@ -341,7 +341,7 @@
 /obj/item/storage/belt/sabre/examine(mob/user)
 	. = ..()
 	if(contents.len)
-		. += "<span class='notice'>Alt-click it to quickly draw the blade.</span>"
+		. += "<span class='notice'>Alt-click it to quickly draw [contents.len == 1 ? "the" : "a"] blade.</span>"
 
 /obj/item/storage/belt/sabre/PopulateContents()
 	if(ispath(starting_sword))
