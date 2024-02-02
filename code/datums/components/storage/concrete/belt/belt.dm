@@ -200,7 +200,6 @@
 	max_items = 1
 	max_w_class = WEIGHT_CLASS_BULKY
 	max_combined_w_class = WEIGHT_CLASS_BULKY * 1
-	rustle_sound = FALSE
 	quickdraw = TRUE
 
 /datum/component/storage/concrete/belt/sheath/Initialize()
