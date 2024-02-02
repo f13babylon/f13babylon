@@ -20,16 +20,6 @@
 /obj/item/toy/darksabre/get_worn_belt_overlay(icon_file)
 	return mutable_appearance(icon_file, "darksheath-darksabre")
 
-/obj/item/storage/belt/sabre/darksabre
-	name = "Ornate Sheathe"
-	desc = "An ornate and rather sinister looking sabre sheathe."
-	icon = 'icons/obj/custom.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/custom_w.dmi'
-	icon_state = "darksheath"
-	item_state = "darksheath"
-	fitting_swords = list(/obj/item/toy/darksabre)
-	starting_sword = /obj/item/toy/darksabre
-
 /obj/item/lighter/gold
 	name = "engraved zippo"
 	desc = "A shiny and relatively expensive zippo lighter. There's a small etched in verse on the bottom that reads, 'No Gods, No Masters, Only Man.'"
@@ -128,6 +118,3 @@
 	obj_flags = UNIQUE_RENAME
 	unique_reskin = list("Goodboye" = "fritz", "Badboye" = "fritz_bad")
 	mutantrace_variation = NONE
-
-
-
