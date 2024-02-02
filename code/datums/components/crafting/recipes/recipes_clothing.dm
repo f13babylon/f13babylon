@@ -2,86 +2,120 @@
 //BELTS//
 /////////
 
-/datum/crafting_recipe/bandolier
-	name = "Bandolier"
-	result = /obj/item/storage/belt/bandolier
-	reqs = list(/obj/item/stack/sheet/hay = 3,
-				/obj/item/stack/sheet/leather = 4)
-	tools = list(TOOL_WORKBENCH)
-	time = 40
-	category = CAT_CLOTHING
-	subcategory = CAT_ACCESSORIES
-
 /datum/crafting_recipe/belt
 	name = "Belt"
 	result = /obj/item/storage/belt
-	reqs = list(/obj/item/stack/sheet/hay = 3,
-				/obj/item/stack/sheet/leather = 3)
+	reqs = list(
+		/obj/item/stack/sheet/leather = 3,
+		/obj/item/stack/sheet/hay = 3,
+	)
 	tools = list(TOOL_WORKBENCH)
 	time = 15
 	category = CAT_CLOTHING
 	subcategory = CAT_ACCESSORIES
 
-/datum/crafting_recipe/chestrig
+/datum/crafting_recipe/belt/ncr
+	name = "NCR Patrol Belt"
+	result = /obj/item/storage/belt/military/assault/ncr
+	always_available = FALSE
+
+/datum/crafting_recipe/belt/legion
+	name = "Legionary Marching Belt"
+	result = /obj/item/storage/belt/military/assault/legion
+	always_available = FALSE
+
+/datum/crafting_recipe/belt/enclave
+	name = "Old Army Belt (Enclave)"
+	result = /obj/item/storage/belt/military/assault/enclave
+	always_available = FALSE
+
+/datum/crafting_recipe/belt/utility
+	name = "Toolbelt"
+	result = /obj/item/storage/belt/utility
+
+/datum/crafting_recipe/belt/utility/gardener
+	name = "Gardener's Toolbelt"
+	result = /obj/item/storage/belt/utility/gardener
+
+/datum/crafting_recipe/belt/chestrig
 	name = "Chest Rig"
 	result = /obj/item/storage/belt/military
-	tools = list(TOOL_AWORKBENCH)
-	reqs = list(/obj/item/stack/sheet/plastic = 2,
-				/obj/item/stack/sheet/leather = 3)
-	time = 30
-	category = CAT_CLOTHING
-	subcategory = CAT_ACCESSORIES
+	reqs = list(
+		/obj/item/stack/sheet/leather = 3,
+		/obj/item/stack/sheet/plastic = 3,
+	)
 
-/datum/crafting_recipe/webbing
+/datum/crafting_recipe/belt/webbing
 	name = "Webbing"
 	result = /obj/item/storage/belt/military/alt
-	reqs = list(/obj/item/stack/sheet/leather = 3,
-				/obj/item/stack/sheet/cloth = 2)
-	tools = list(TOOL_WORKBENCH)
-	time = 15
-	category = CAT_CLOTHING
-	subcategory = CAT_ACCESSORIES
+	reqs = list(
+		/obj/item/stack/sheet/leather = 3,
+		/obj/item/stack/sheet/cloth = 3,
+	)
 
-/datum/crafting_recipe/shoulderholster
+/datum/crafting_recipe/belt/holster
 	name = "Shoulder Holster"
 	result = /obj/item/storage/belt/holster
-	reqs = list(/obj/item/stack/sheet/leather = 2,
-				/obj/item/stack/sheet/hay = 3)
-	tools = list(TOOL_WORKBENCH)
-	time = 15
-	category = CAT_CLOTHING
-	subcategory = CAT_ACCESSORIES
 
-/datum/crafting_recipe/legholster
+/datum/crafting_recipe/belt/holster/leg
 	name = "Leg Holster"
 	result = /obj/item/storage/belt/holster/legholster
-	reqs = list(/obj/item/stack/sheet/leather = 2,
-				/obj/item/stack/sheet/hay = 3)
-	tools = list(TOOL_WORKBENCH)
-	time = 15
-	category = CAT_CLOTHING
-	subcategory = CAT_ACCESSORIES
 
-/datum/crafting_recipe/rangercape
+/datum/crafting_recipe/belt/holster/large
+	name = "Sidearm Holster Belt"
+	result = /obj/item/storage/belt/holster/large
+	reqs = list(
+		/obj/item/stack/sheet/leather = 5,
+		/obj/item/stack/sheet/hay = 3,
+		/obj/item/stack/crafting/goodparts = 2,
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 20
+
+/datum/crafting_recipe/belt/holster/ranger
 	name = "NCR Ranger Cape"
 	result = /obj/item/clothing/neck/mantle/holster/ranger
-	reqs = list(/obj/item/storage/belt/holster = 1,
-				/obj/item/stack/sheet/cloth = 3,
-				/obj/item/toy/crayon/spraycan)
-	time = 15
-	category = CAT_CLOTHING
-	subcategory = CAT_ACCESSORIES
+	reqs = list(
+		/obj/item/storage/belt/holster = 1,
+		/obj/item/stack/sheet/cloth = 3,
+		/obj/item/toy/crayon/spraycan,
+	)
 	always_available = FALSE
 
-/datum/crafting_recipe/legionrangercape
+/datum/crafting_recipe/belt/holster/ranger/legion
 	name = "Ranger-Hunter Cape"
 	result = /obj/item/clothing/neck/mantle/holster/legion/rangercent
-	reqs = list(/obj/item/clothing/neck/mantle/holster/ranger = 1,
-				/obj/item/toy/crayon/spraycan)
-	time = 15
-	category = CAT_CLOTHING
-	subcategory = CAT_ACCESSORIES
+	reqs = list(
+		/obj/item/clothing/neck/mantle/holster/ranger = 1,
+		/obj/item/toy/crayon/spraycan,
+	)
 	always_available = FALSE
+
+/datum/crafting_recipe/belt/bandolier
+	name = "Shotgun Bandolier"
+	result = /obj/item/storage/belt/bandolier
+
+/datum/crafting_recipe/belt/ammo/big
+	name = "Large Ammo Storage Belt"
+	result = /obj/item/storage/belt/military/ammo/big
+	reqs = list(
+		/obj/item/stack/sheet/leather = 5,
+		/obj/item/stack/sheet/hay = 3,
+		/obj/item/stack/crafting/goodparts = 2,
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 20
+
+/datum/crafting_recipe/belt/grenade
+	name = "Grenadier Belt"
+	result = /obj/item/storage/belt/grenade
+	reqs = list(
+		/obj/item/stack/sheet/leather = 5,
+		/obj/item/stack/sheet/hay = 3,
+		/obj/item/stack/crafting/goodparts = 2,
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 20
 
 /datum/crafting_recipe/medolier
 	name = "Medolier"
@@ -89,15 +123,17 @@
 	reqs = list(/obj/item/stack/sheet/metal = 2,
 	/obj/item/stack/sheet/cloth = 3,
 	/obj/item/stack/sheet/plastic = 4)
-	time = 30
+	time = 15
 	category = CAT_CLOTHING
 	subcategory = CAT_ACCESSORIES
 
 /datum/crafting_recipe/durathread_toolbelt
 	name = "Durathread Toolbelt"
-	result = /obj/item/storage/belt/durathread
-	reqs = list(/obj/item/stack/sheet/durathread = 5,
-				/obj/item/stack/sheet/leather = 2)
+	result = /obj/item/storage/belt/utility/durathread
+	reqs = list(
+		/obj/item/stack/sheet/leather = 3,
+		/obj/item/stack/sheet/durathread = 5,
+	)
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ACCESSORIES
@@ -105,17 +141,21 @@
 /datum/crafting_recipe/durathread_bandolier
 	name = "Durathread Bandolier"
 	result = /obj/item/storage/belt/bandolier/durathread
-	reqs = list(/obj/item/stack/sheet/durathread = 6,
-				/obj/item/stack/sheet/leather = 2)
-	time = 50
+	reqs = list(
+		/obj/item/stack/sheet/leather = 3,
+		/obj/item/stack/sheet/durathread = 5,
+	)
+	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ACCESSORIES
 
 /datum/crafting_recipe/durathread_wintercoat
 	name = "Durathread Winter Coat"
 	result = /obj/item/clothing/suit/hooded/wintercoat/durathread
-	reqs = list(/obj/item/stack/sheet/durathread = 12,
-				/obj/item/stack/sheet/leather = 10)
+	reqs = list(
+		/obj/item/stack/sheet/leather = 10,
+		/obj/item/stack/sheet/durathread = 12,
+	)
 	time = 70
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
@@ -123,9 +163,11 @@
 /datum/crafting_recipe/heavysheath
 	name = "Heavy-Duty Sheath"
 	result = /obj/item/storage/belt/sabre/heavy
-	reqs = list(/obj/item/stack/sheet/hay = 1,
-				/obj/item/stack/sheet/leather = 3,
-				/obj/item/stack/crafting/metalparts = 2)
+	reqs = list(
+		/obj/item/stack/sheet/leather = 3,
+		/obj/item/stack/sheet/hay = 1,
+		/obj/item/stack/crafting/metalparts = 2,
+	)
 	tools = list(TOOL_WORKBENCH)
 	time = 15
 	category = CAT_CLOTHING
@@ -133,14 +175,66 @@
 
 /datum/crafting_recipe/twinsheath
 	name = "Twin Sheath"
-	result = /obj/item/storage/belt/sword/twin
-	reqs = list(/obj/item/stack/sheet/hay = 1,
-				/obj/item/stack/sheet/leather = 3,
-				/obj/item/stack/crafting/metalparts = 2)
+	result = /obj/item/storage/belt/sabre/twin
+	reqs = list(
+		/obj/item/stack/sheet/leather = 3,
+		/obj/item/stack/sheet/hay = 1,
+		/obj/item/stack/crafting/metalparts = 2,
+	)
 	tools = list(TOOL_WORKBENCH)
 	time = 15
 	category = CAT_CLOTHING
 	subcategory = CAT_ACCESSORIES
+
+///////////
+//POUCHES//
+///////////
+/datum/crafting_recipe/pouch
+	name = "Empty General Pouch"
+	result = /obj/item/storage/survivalkit/empty
+	reqs = list(
+		/obj/item/stack/sheet/leather = 3,
+	)
+	tools = list(TOOL_WORKBENCH)
+	time = 15
+	category = CAT_CLOTHING
+	subcategory = CAT_ACCESSORIES
+
+/datum/crafting_recipe/pouch/utility
+	name = "Empty Tool Pouch"
+	result = /obj/item/storage/pouch/utility
+
+/datum/crafting_recipe/pouch/medical
+	name = "Empty Medical Pouch"
+	result = /obj/item/storage/pouch/medical
+
+/datum/crafting_recipe/pouch/ammo
+	name = "Empty Ammo Pouch"
+	result = /obj/item/storage/pouch/ammo
+
+/datum/crafting_recipe/pouch/ammo/big
+	name = "Empty Large Ammo Pouch"
+	result = /obj/item/storage/pouch/ammo/big
+	reqs = list(
+		/obj/item/stack/sheet/leather = 3,
+		/obj/item/stack/crafting/goodparts = 1,
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 20
+
+/datum/crafting_recipe/pouch/ammo/shotgun
+	name = "Empty Shotgun Pouch"
+	result = /obj/item/storage/pouch/ammo/shotgun
+
+/datum/crafting_recipe/pouch/grenade
+	name = "Empty Grenade Pouch"
+	result = /obj/item/storage/pouch/grenade
+	reqs = list(
+		/obj/item/stack/sheet/leather = 3,
+		/obj/item/stack/crafting/goodparts = 1,
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 20
 
 /////////
 //SHOES//

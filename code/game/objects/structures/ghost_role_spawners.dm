@@ -752,7 +752,7 @@
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556mm/drum = 1,
 		/obj/item/clothing/head/helmet/f13/combat/ncr/patrol = 1,
-		/obj/item/storage/survivalkit/firstaid = 1,
+		/obj/item/storage/pouch/medical/full = 1,
 		/obj/item/attachments/scope = 1,
 		/obj/item/gun/ballistic/revolver/revolver44 = 1,
 		/obj/item/ammo_box/m44 = 2,

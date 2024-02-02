@@ -15,6 +15,11 @@
 /datum/component/storage/concrete/pockets/huge
 	max_w_class = WEIGHT_CLASS_NORMAL
 
+/datum/component/storage/concrete/pockets/tiny
+	max_items = 1
+	max_w_class = WEIGHT_CLASS_TINY
+	attack_hand_interact = FALSE
+
 /datum/component/storage/concrete/pockets/small
 	max_items = 1
 	attack_hand_interact = FALSE
@@ -35,13 +40,31 @@
 	/obj/item/reagent_containers/food/snacks/sugarcookie,
 	/obj/item/key/collar))
 
+/datum/component/storage/concrete/pockets/small/detective
+	attack_hand_interact = TRUE // so the detectives would discover pockets in their hats
+
+/datum/component/storage/concrete/pockets/small/rushelmet
+	quickdraw = TRUE
+
+/datum/component/storage/concrete/pockets/small/rushelmet/Initialize()
+	. = ..()
+	can_hold = GLOB.storage_hat_can_hold
+
+/datum/component/storage/concrete/pockets/small/holdout
+	max_w_class = WEIGHT_CLASS_NORMAL
+	attack_hand_interact = TRUE
+	quickdraw = TRUE
+
+/datum/component/storage/concrete/pockets/small/holdout/Initialize()
+	. = ..()
+	can_hold = GLOB.storage_holdout_can_hold
+
 /datum/component/storage/concrete/pockets/binocular
 	max_items = 1
 
 /datum/component/storage/concrete/pockets/binocular/Initialize()
 	. = ..()
 	can_hold = GLOB.storage_binocular_can_hold
-
 
 /datum/component/storage/concrete/pockets/treasurer
 	max_items = 4
@@ -50,14 +73,12 @@
 	. = ..()
 	can_hold = GLOB.storage_treasurer_can_hold
 
-
 /datum/component/storage/concrete/pockets/bartender
 	max_items = 2
 
 /datum/component/storage/concrete/pockets/bartender/Initialize()
 	. = ..()
 	can_hold = GLOB.storage_bartender_can_hold
-
 
 /datum/component/storage/concrete/pockets/kitchen
 	max_items = 2
@@ -66,30 +87,19 @@
 	. = ..()
 	can_hold = GLOB.storage_kitchen_can_hold
 
-
 /datum/component/storage/concrete/pockets/crafter
-	max_items = 2
+	max_items = 4
 
 /datum/component/storage/concrete/pockets/crafter/Initialize()
 	. = ..()
-	can_hold = GLOB.storage_crafter_can_hold
-
+	can_hold = GLOB.typecache_tool_storage
 
 /datum/component/storage/concrete/pockets/medical
-	max_items = 2
+	max_items = 4
 
 /datum/component/storage/concrete/pockets/medical/Initialize()
 	. = ..()
-	can_hold = GLOB.storage_medical_can_hold
-
-
-/datum/component/storage/concrete/pockets/tiny
-	max_items = 1
-	max_w_class = WEIGHT_CLASS_TINY
-	attack_hand_interact = FALSE
-
-/datum/component/storage/concrete/pockets/small/detective
-	attack_hand_interact = TRUE // so the detectives would discover pockets in their hats
+	can_hold = GLOB.typecache_medical_storage
 
 /datum/component/storage/concrete/pockets/shoes
 	attack_hand_interact = FALSE
@@ -129,24 +139,6 @@
 	// if the component is reparented to a jumpsuit, the items still go in the protector
 	return original_parent
 
-/datum/component/storage/concrete/pockets/small/rushelmet
-	max_items = 1
-	quickdraw = TRUE
-
-/datum/component/storage/concrete/pockets/small/rushelmet/Initialize()
-	. = ..()
-	can_hold = GLOB.storage_hat_can_hold
-
-/datum/component/storage/concrete/pockets/small/holdout
-	max_items = 1
-	attack_hand_interact = TRUE
-	max_w_class = WEIGHT_CLASS_NORMAL
-	quickdraw = TRUE
-
-/datum/component/storage/concrete/pockets/small/holdout/Initialize()
-	. = ..()
-	can_hold = GLOB.storage_holdout_can_hold
-
 /datum/component/storage/concrete/pockets/holster
 	max_items = 4
 	max_w_class = WEIGHT_CLASS_NORMAL
@@ -171,16 +163,7 @@
 
 /datum/component/storage/concrete/pockets/bulletbelt/Initialize()
 	. = ..()
-	can_hold = GLOB.storage_bulletbelt_can_hold
-	CANTHOLD_STATIC(src, list(
-		/obj/item/ammo_casing/a40mmHE,
-		/obj/item/ammo_casing/a40mmCS,
-		/obj/item/ammo_casing/a40mmS,
-		/obj/item/ammo_casing/a40mmHEDP,
-		/obj/item/ammo_casing/a40mmM,
-		/obj/item/ammo_casing/a40mmF,
-		/obj/item/ammo_casing/a40mmI,
-	))
+	can_hold = GLOB.typecache_ammo_storage
 
 GLOBAL_LIST_INIT(storage_bartender_can_hold, typecacheof(list(
 	/obj/item/kitchen,
@@ -200,33 +183,6 @@ GLOBAL_LIST_INIT(storage_crafter_can_hold, typecacheof(list(
 	/obj/item/screwdriver,
 	/obj/item/multitool,
 	/obj/item/wirecutters,
-	)))
-
-GLOBAL_LIST_INIT(storage_medical_can_hold, typecacheof(list(
-	/obj/item/clothing/mask/surgical,
-	/obj/item/clothing/gloves/color/latex,
-	/obj/item/clothing/gloves/f13/crudemedical,
-	/obj/item/healthanalyzer,
-	/obj/item/reagent_containers/dropper,
-	/obj/item/reagent_containers/glass/bottle,
-	/obj/item/reagent_containers/pill,
-	/obj/item/reagent_containers/syringe,
-	/obj/item/reagent_containers/medspray,
-	/obj/item/storage/pill_bottle,
-	/obj/item/stack/medical,
-	/obj/item/reagent_containers/hypospray,
-	/obj/item/hypospray,
-	/obj/item/surgical_drapes,
-	/obj/item/scalpel,
-	/obj/item/bonesetter,
-	/obj/item/retractor,
-	/obj/item/cautery,
-	/obj/item/hemostat,
-	/obj/item/clothing/neck/stethoscope,
-	/obj/item/storage/bag/chemistry,
-	/obj/item/storage/bag/bio,
-	/obj/item/reagent_containers/blood,
-	/obj/item/reagent_containers/chem_pack,
 	)))
 
 GLOBAL_LIST_INIT(storage_shoes_can_hold, typecacheof(list(
@@ -314,23 +270,4 @@ GLOBAL_LIST_INIT(storage_holdout_can_hold, typecacheof(list(
 	/obj/item/gun/energy/laser/complianceregulator,
 	/obj/item/gun/energy/laser/plasma/pistol,
 	/obj/item/gun/energy/laser/plasma/glock,
-)))
-
-GLOBAL_LIST_INIT(storage_bulletbelt_can_hold, typecacheof(list(
-	/obj/item/ammo_casing,
-	/obj/item/ammo_box/magazine,
-	/obj/item/ammo_box/tube,
-	/obj/item/ammo_box/c38,
-	/obj/item/ammo_box/l10mm,
-	/obj/item/ammo_box/a357,
-	/obj/item/ammo_box/m44,
-	/obj/item/ammo_box/c45rev,
-	/obj/item/ammo_box/c4570,
-	/obj/item/ammo_box/shotgun,
-	/obj/item/ammo_box/a762mm,
-	/obj/item/ammo_box/a308,
-	/obj/item/ammo_box/a556mm/stripper,
-	/obj/item/ammo_box/needle,
-	/obj/item/ammo_box/a50MG,
-	/obj/item/stock_parts/cell/ammo,
 )))

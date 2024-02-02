@@ -728,15 +728,6 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
 
-/datum/crafting_recipe/survivalpouch
-	name = "empty leather pouch"
-	result = /obj/item/storage/survivalkit/empty
-	reqs = list(/obj/item/stack/sheet/leather = 3)
-	tools = list(TOOL_WORKBENCH)
-	time = 25
-	category = CAT_CLOTHING
-	subcategory = CAT_ACCESSORIES
-
 //General clothing
 
 /datum/crafting_recipe/jeans

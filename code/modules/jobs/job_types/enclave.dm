@@ -49,7 +49,7 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavemarinehelmet)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombatarmor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombathelmet)
-
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/belt/enclave)
 
 //Captain
 /datum/job/enclave/enclavecpt
@@ -588,7 +588,7 @@
 	suit = /obj/item/clothing/suit/armor/f13/environmentalsuit
 	belt = /obj/item/storage/belt/medical
 	suit_store =  /obj/item/tank/internals/oxygen
-	box = /obj/item/storage/survivalkit/firstaid/advanced
+	box = /obj/item/storage/pouch/medical/advanced/full
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
@@ -652,7 +652,7 @@
 	ears = /obj/item/radio/headset/headset_enclave/command
 
 	backpack_contents = list(
-		/obj/item/storage/survivalkit/firstaid/advanced = 1,
+		/obj/item/storage/pouch/medical/advanced/full = 1,
 		/obj/item/pda = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/survival = 1,
@@ -710,7 +710,7 @@
 	mask = /obj/item/clothing/mask/surgical
 	suit = /obj/item/clothing/suit/hooded/surgical
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile
-	box = /obj/item/storage/survivalkit/firstaid
+	box = /obj/item/storage/pouch/medical/full
 	backpack_contents = list(
 		/obj/item/book/granter/trait/chemistry = 1,
 		/obj/item/healthanalyzer = 1,
@@ -797,7 +797,7 @@
 		/obj/item/gun/energy/laser/plasma/pistol = 1,
 		/obj/item/storage/belt/holster = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
-		/obj/item/storage/survivalkit/firstaid/advanced = 1,
+		/obj/item/storage/pouch/medical/advanced/full = 1,
 		)
 
 /datum/outfit/job/enclave/noncombat/enc_maj/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)

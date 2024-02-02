@@ -13775,7 +13775,7 @@
 /obj/item/reagent_containers/food/drinks/bottle/whiskey,
 /obj/item/clothing/under/f13/police/officer,
 /obj/item/clothing/head/f13/police/chief,
-/obj/item/storage/survivalkit/firstaid,
+/obj/item/storage/pouch/medical/full,
 /obj/machinery/light,
 /turf/open/floor/carpet,
 /area/f13/building)

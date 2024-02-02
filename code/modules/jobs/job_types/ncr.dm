@@ -52,6 +52,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrcombatarmormk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrcombathelmetmk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsturdy)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/belt/ncr)
 
 ///////////////////////
 /// Colonel - Admin ///
@@ -416,7 +417,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	if(visualsOnly)
 		return
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/bladedsequoia)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/rangercape)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/belt/holster/ranger)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
 	ADD_TRAIT(H, TRAIT_LIFEGIVER,  REF(src))
 	ADD_TRAIT(H, TRAIT_IRONFIST,  REF(src))
@@ -499,7 +500,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	. = ..()
 	if(visualsOnly)
 		return
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/rangercape)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/belt/holster/ranger)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS,  REF(src))
 	ADD_TRAIT(H, TRAIT_LIGHT_STEP,  REF(src))
 	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
@@ -774,7 +775,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	mask = /obj/item/clothing/mask/surgical
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile
 	accessory = /obj/item/clothing/accessory/armband/med/ncr
-	box = /obj/item/storage/survivalkit/firstaid
+	box = /obj/item/storage/pouch/medical/full
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/survival = 1,
 		/obj/item/storage/bag/money/small/ncrenlisted = 1,
@@ -1132,7 +1133,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	belt = /obj/item/storage/belt/military/assault/ncr
 	r_hand = /obj/item/storage/backpack/duffelbag/med/surgery
 	mask = /obj/item/clothing/mask/surgical
-	box = /obj/item/storage/survivalkit/firstaid/advanced
+	box = /obj/item/storage/pouch/medical/advanced/full
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/revolver45 = 1,
 		/obj/item/ammo_box/c45rev = 2,

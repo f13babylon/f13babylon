@@ -44,7 +44,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombathelmet)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombatarmormk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombathelmetmk2)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionrangercape)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/belt/holster/ranger/legion)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/belt/legion)
 	ADD_TRAIT(H, TRAIT_GENERIC,  REF(src))
 	ADD_TRAIT(H, TRAIT_STIM_INTOLERANCE, REF(src)) //Can't use stimpaks without getting sick
 	ADD_TRAIT(H, TRAIT_STRAIGHT_EDGE, REF(src)) //Can't use Fallout chems, such as Psycho, Med-X, Buffout, Turbo etc. without getting sick
@@ -1062,7 +1063,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Legion Forgemaster"
 	id = /obj/item/card/id/dogtag/legforgemaster
 	glasses = /obj/item/clothing/glasses/welding
-	belt = /obj/item/storage/belt/utility/waster/forgemaster
+	belt = /obj/item/storage/belt/utility/smith
 	neck = /obj/item/clothing/neck/apron/labor/forge
 	gloves = /obj/item/clothing/gloves/legion/forgemaster
 	shoes = /obj/item/clothing/shoes/f13/military/plated
@@ -1079,7 +1080,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/stack/sheet/cloth/thirty = 1,
 		/obj/item/stack/sheet/prewar/twenty = 1,
 		/obj/item/book/granter/trait/explosives = 1,
-		/obj/item/book/granter/trait/explosives_advanced = 1
+		/obj/item/book/granter/trait/explosives_advanced = 1,
+		/obj/item/twohanded/chainsaw = 1,
 		)
 
 /datum/outfit/job/CaesarsLegion/f13campfollower/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)

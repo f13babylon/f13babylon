@@ -224,7 +224,7 @@
 	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle/r91
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556mm = 2,
-		/obj/item/storage/survivalkit/firstaid/advanced = 1,
+		/obj/item/storage/pouch/medical/advanced/full = 1,
 		)
 
 /datum/outfit/loadout/seniorc
@@ -260,7 +260,7 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
 	head = /obj/item/clothing/head/helmet/f13/khan/bandana
 	glasses = /obj/item/clothing/glasses/welding
-	belt = /obj/item/storage/belt/utility/waster/forgemaster/khan
+	belt = /obj/item/storage/belt/utility/smith
 	neck = /obj/item/clothing/neck/apron/labor/forge/khan
 	gloves = /obj/item/clothing/gloves/f13/blacksmith
 	r_pocket = /obj/item/flashlight/lantern

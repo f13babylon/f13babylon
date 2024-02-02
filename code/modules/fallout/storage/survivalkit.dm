@@ -3,13 +3,12 @@
 	desc = "A robust leather pouch containing the essentials for wasteland survival."
 	icon_state = "survivalkit"
 	w_class = WEIGHT_CLASS_SMALL
+	slot_flags = ITEM_SLOT_POCKET
 
 /obj/item/storage/survivalkit/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_items = 7
-	STR.max_w_class = WEIGHT_CLASS_TINY
-	STR.max_combined_w_class = WEIGHT_CLASS_TINY * 7
+	CANTHOLD_STATIC(STR, GLOB.typecache_noncombat_storage)
 
 /obj/item/storage/survivalkit/PopulateContents()
 	new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
@@ -72,39 +71,9 @@
 	new /obj/item/flashlight/flare(src)
 	new /obj/item/reagent_containers/food/drinks/flask(src)
 
-/obj/item/storage/survivalkit/firstaid
-	name = "first aid pouch"
-	desc = "A robust leather pouch containing the essentials for trauma care."
-	icon_state = "ifak"
-
-/obj/item/storage/survivalkit/firstaid/PopulateContents()
-	new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
-	new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
-	new /obj/item/stack/medical/gauze(src)
-	new /obj/item/stack/medical/suture(src)
-	new /obj/item/stack/medical/ointment(src)
-	new /obj/item/reagent_containers/pill/radx(src)
-	new /obj/item/flashlight/flare(src)
-	new /obj/item/reagent_containers/food/drinks/flask/survival(src)
-
-/obj/item/storage/survivalkit/firstaid/advanced
-	name = "advanced first aid pouch"
-	desc = "A robust leather pouch containing everything one might need for trauma care."
-
-/obj/item/storage/survivalkit/firstaid/advanced/PopulateContents()
-	new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
-	new /obj/item/reagent_containers/hypospray/medipen/stimpak/super(src)
-	new /obj/item/stack/medical/gauze/adv(src)
-	new /obj/item/stack/medical/suture/medicated(src)
-	new /obj/item/stack/medical/mesh/advanced(src)
-	new /obj/item/reagent_containers/pill/radx(src)
-	new /obj/item/reagent_containers/blood/radaway(src)
-	new /obj/item/flashlight/flare(src)
-	new /obj/item/reagent_containers/food/drinks/flask(src)
-
 /obj/item/storage/survivalkit/empty
-	name = "leather pouch"
-	desc = "A robust leather pouch."
+	name = "general pouch"
+	desc = "A robust leather pouch which offers a good amount of storage."
 
 /obj/item/storage/survivalkit/empty/PopulateContents()
 	return

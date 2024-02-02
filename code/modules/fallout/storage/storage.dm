@@ -134,7 +134,8 @@
 	name = "casing bag"
 	icon = 'icons/obj/storage.dmi'
 	icon_state = "bag_cases"
-	w_class = WEIGHT_CLASS_TINY
+	w_class = WEIGHT_CLASS_BULKY
+	slot_flags = ITEM_SLOT_BELT
 	resistance_flags = FLAMMABLE
 	var/spam_protection = FALSE
 	var/mob/listeningTo
@@ -161,7 +162,6 @@
 		UnregisterSignal(listeningTo, COMSIG_MOVABLE_MOVED)
 	RegisterSignal(user, COMSIG_MOVABLE_MOVED, .proc/Pickup_casings)
 	listeningTo = user
-
 
 /obj/item/storage/bag/casings/proc/Pickup_casings(mob/living/user)
 	var/show_message = FALSE
