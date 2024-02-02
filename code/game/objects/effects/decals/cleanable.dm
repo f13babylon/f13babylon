@@ -37,7 +37,8 @@
 
 /obj/effect/decal/cleanable/LateInitialize()
 	. = ..()
-	AddElement(/datum/element/beauty, beauty)
+	if(!QDELING(src))
+		AddElement(/datum/element/beauty, beauty)
 
 /obj/effect/decal/cleanable/proc/on_rain_start()
 	SIGNAL_HANDLER
