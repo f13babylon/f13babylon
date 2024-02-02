@@ -19,6 +19,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: LibGit2 Cache
+        uses: actions/cache@v2
+        with:
+          path: ~/libgit2
+          key: ${{ runner.os }}-libgit2
+
+      - name: LibGit2
+        run: bash tools/ci/install_libgit2.sh
+
       - name: Cargo Cache
         uses: actions/cache@v2
         with:
