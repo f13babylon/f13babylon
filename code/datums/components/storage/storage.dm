@@ -720,18 +720,18 @@
 	var/atom/real_location = real_location()
 	if(!isliving(user) || !user.can_reach(real_location))
 		return
-	if(check_locked(user, TRUE))
+	if(check_locked(source, user, TRUE))
 		return
 
 	user_show_to_mob(user)
 	if(rustle_sound)
 		playsound(real_location, "rustle", 50, 1, -5)
 
-	if(quickdraw && real_location.contents && user.can_hold_items() && !user.incapacitated() && user.get_empty_held_indexes())
+	if(quickdraw && real_location.contents.len && user.can_hold_items() && !user.incapacitated() && user.get_empty_held_indexes())
 		var/obj/item/I = locate() in real_location.contents
 		remove_from_storage(I, user)
 		user.put_in_hands(I)
-		user.visible_message("<span class='warning'>[user] draws [I] from [real_location]!</span>", "<span class='notice'>You draw [I] from [real_location].</span>")
+		user.visible_message("<span class='warning'>[user] draws \a [I] from \the [real_location]!</span>", "<span class='notice'>You draw \a [I] from \the [real_location].</span>")
 
 /datum/component/storage/proc/action_trigger(datum/action/source, obj/target)
 	gather_mode_switch(source.owner)

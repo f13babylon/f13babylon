@@ -53,10 +53,10 @@
 
 /datum/component/storage/concrete/belt/holster/can_be_inserted(obj/item/I, stop_messages = FALSE, mob/M)
 	. = ..()
-	if(!multiple_weapons_allowed)
-		var/atom/real_location = real_location()
+	var/atom/real_location = real_location()
+	if(!multiple_weapons_allowed && isgun(I) && real_location.contents.len)
 		var/obj/item/gun/G = locate() in real_location.contents
-		if(isgun(I) && G)
+		if(G)
 			to_chat(M, "<span class='warning'>The [real_location] can only hold one weapon!</span>")
 			return FALSE
 
@@ -64,25 +64,25 @@
 	var/atom/real_location = real_location()
 	if(!isliving(user) || !user.can_reach(real_location))
 		return
-	if(check_locked(user, TRUE))
+	if(check_locked(source, user, TRUE))
 		return
 
 	user_show_to_mob(user)
 	if(rustle_sound)
 		playsound(real_location, "rustle", 50, 1, -5)
 
-	if(quickdraw && real_location.contents && user.can_hold_items() && !user.incapacitated() && user.get_empty_held_indexes())
+	if(quickdraw && real_location.contents.len && user.can_hold_items() && !user.incapacitated() && user.get_empty_held_indexes())
 		var/obj/item/gun/G = locate() in real_location.contents
 		if(G)
 			remove_from_storage(G, user)
 			user.put_in_hands(G)
 			G.weapondraw(G, user)
-			user.visible_message("<span class='warning'>[user] draws [G] from [real_location]!</span>", "<span class='notice'>You draw [G] from [real_location].</span>")
+			user.visible_message("<span class='warning'>[user] draws \a [G] from \the [real_location]!</span>", "<span class='notice'>You draw \a [G] from \the [real_location].</span>")
 		else
 			var/obj/item/I = locate() in real_location.contents
 			remove_from_storage(I, user)
 			user.put_in_hands(I)
-			user.visible_message("<span class='warning'>[user] draws [I] from [real_location]!</span>", "<span class='notice'>You draw [I] from [real_location].</span>")
+			user.visible_message("<span class='warning'>[user] draws \a [I] from \the [real_location]!</span>", "<span class='notice'>You draw \a [I] from \the [real_location].</span>")
 
 /datum/component/storage/concrete/belt/holster/large
 	max_items = 14
