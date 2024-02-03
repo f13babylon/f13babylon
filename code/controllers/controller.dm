@@ -3,6 +3,11 @@
 	// The object used for the clickable stat() button.
 	var/obj/effect/statclick/statclick
 
+/datum/controller/Destroy(force, ...)
+	if(!isnull(statclick))
+		QDEL_NULL(statclick)
+	return ..()
+
 /datum/controller/proc/Initialize()
 
 //cleanup actions

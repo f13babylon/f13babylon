@@ -9,8 +9,13 @@
 	pass_flags_self = PASSCLOSEDTURF
 
 /turf/closed/Initialize(mapload)
+	..()
+	return INITIALIZE_HINT_LATELOAD
+
+/turf/closed/LateInitialize()
 	. = ..()
-	add_debris_element()
+	if(!QDELING(src))
+		add_debris_element()
 
 /turf/closed/AfterChange()
 	. = ..()

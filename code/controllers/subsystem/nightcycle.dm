@@ -58,7 +58,7 @@ SUBSYSTEM_DEF(nightcycle)
 
 /datum/controller/subsystem/nightcycle/fire(resumed = FALSE)
 	var/new_time
-	
+
 	if (!isnull(custom_cycle_wait))
 		if(last_custom_cycle + custom_cycle_wait >= world.time)
 			return
@@ -116,7 +116,7 @@ SUBSYSTEM_DEF(nightcycle)
 			CRASH("Invalid new_time returned from STATION_TIME()")
 
 	current_time = new_time
-	INVOKE_ASYNC(src, .proc/AnimateTransition)
+	INVOKE_ASYNC(src, PROC_REF(AnimateTransition))
 	CHECK_TICK
 
 /datum/controller/subsystem/nightcycle/proc/AnimateTransition()

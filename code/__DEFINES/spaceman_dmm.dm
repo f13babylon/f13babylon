@@ -28,5 +28,13 @@
 	#define VAR_PROTECTED var
 #endif
 
+/proc/setup_debugging(debug_server)
+#if DM_VERSION >= 515
+	call_ext(debug_server, "auxtools_init")()
+#else
+	call(debug_server, "auxtools_init")()
+#endif
+	enable_debugging()
+
 /proc/enable_debugging()
 	CRASH("Auxtools not found")

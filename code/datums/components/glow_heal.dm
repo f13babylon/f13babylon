@@ -15,7 +15,7 @@
 	var/revive_allowed = FALSE
 	//faction healing only
 	var/faction_only = null
-	//allows healing of types: Brute, Burn, Toxin, Oxygen. 
+	//allows healing of types: Brute, Burn, Toxin, Oxygen.
 	var/healing_types = BRUTELOSS | FIRELOSS | TOXLOSS | OXYLOSS
 	//glow colour
 	var/glow_color = "#d9ff00" //I want yellow because glowing, can be overridden
@@ -33,7 +33,7 @@
 		glow_color = color_glow
 	healing_types = type_healing
 	START_PROCESSING(SSobj, src)
-	RegisterSignal(living_owner, COMSIG_LIVING_REVIVE, .proc/restart_process)
+	RegisterSignal(living_owner, COMSIG_LIVING_REVIVE, PROC_REF(restart_process))
 
 /datum/component/glow_heal/proc/restart_process()
 	START_PROCESSING(SSobj, src)
@@ -51,18 +51,18 @@
 		if(!istype(livingMob, living_targets))
 			continue
 		if(faction_only && !(faction_only in livingMob.faction))
-			continue //if you don't have the faction listed in the intial, then you aren't getting targeted 
-		if(livingMob.stat == DEAD) 
+			continue //if you don't have the faction listed in the intial, then you aren't getting targeted
+		if(livingMob.stat == DEAD)
 			if(revive_allowed)
 				livingMob.revive(full_heal = TRUE)
 			return //dont waste cpu on dead mobs that cant be revived
 		if(healing_types && BRUTELOSS)
 			livingMob.adjustBruteLoss(-livingMob.maxHealth*0.1)
-		if(healing_types && FIRELOSS)	
+		if(healing_types && FIRELOSS)
 			livingMob.adjustFireLoss(-livingMob.maxHealth*0.1)
-		if(healing_types && TOXLOSS)	
+		if(healing_types && TOXLOSS)
 			livingMob.adjustToxLoss(-livingMob.maxHealth*0.1)
-		if(healing_types && OXYLOSS)	
+		if(healing_types && OXYLOSS)
 			livingMob.adjustOxyLoss(-livingMob.maxHealth*0.1)
 		var/obj/effect/temp_visual/heal/H = new /obj/effect/temp_visual/heal(get_turf(livingMob)) //shameless copy from blobbernaut
 		H.color = glow_color

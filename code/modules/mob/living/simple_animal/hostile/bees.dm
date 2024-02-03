@@ -311,4 +311,4 @@
 
 /mob/living/simple_animal/hostile/poison/bees/short/Initialize(mapload)
 	. = ..()
-	addtimer(CALLBACK(src, .proc/death), 50 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(death)), 50 SECONDS)

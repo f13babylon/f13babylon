@@ -8,7 +8,7 @@ SUBSYSTEM_DEF(monster_wave)
 //So admins, you want to be a tough guy, like it really rough guy?
 //just know you can't modify the time in between each fire
 //but you can allow it to always fire, by changing chance_of_fire to 0
-//and changing allowed_firings to like.... 12? 
+//and changing allowed_firings to like.... 12?
 
 /datum/controller/subsystem/monster_wave/fire(resumed = 0)
 	if(times_fired <= 0)
@@ -23,7 +23,7 @@ SUBSYSTEM_DEF(monster_wave)
 	if(prob(chance_of_fire))
 		return // 50/50 chance for it to either fire or not fire
 	successful_firing++
-	addtimer(CALLBACK(src, .proc/spawn_monsterwave), 10 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(spawn_monsterwave)), 10 SECONDS)
 	for(var/M in GLOB.player_list)
 		to_chat(M, "<span class='notice'>You feel the ground tremor subtly beneath your feet. Something far off in the distance has emerged to the surface.</font></span>")
 

@@ -215,7 +215,7 @@
 		"Enclave Propaganda",
 	)
 	SSdiscord.send_to_round_channel("The current round has ended. Please standby for your [publisher] report.")
-	addtimer(CALLBACK(src, .proc/send_roundinfo), 3 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(send_roundinfo)), 3 SECONDS)
 
 	CHECK_TICK
 
@@ -254,7 +254,7 @@
 	end_of_round_deathmatch()
 	var/time_to_end = CONFIG_GET(number/eorg_period)
 	to_chat(world, "<span class='info'>EORD in progress, game end delayed by [time_to_end * 0.1] seconds!</a></span>")
-	addtimer(CALLBACK(src, .proc/standard_reboot), time_to_end)
+	addtimer(CALLBACK(src, PROC_REF(standard_reboot)), time_to_end)
 
 /datum/controller/subsystem/ticker/proc/standard_reboot()
 	ready_for_reboot = TRUE

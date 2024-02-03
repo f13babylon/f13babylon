@@ -28,16 +28,17 @@
 			AddComponent(/datum/component/infective, diseases_to_add)
 
 	var/static/list/loc_connections = list(
-		COMSIG_ATOM_ENTERED = .proc/on_entered,
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
 	)
 	AddElement(/datum/element/connect_loc, loc_connections)
-	RegisterSignal(SSdcs, COMSIG_WEATHER_START(/datum/weather/rain), .proc/on_rain_start) // for cleaning
-	RegisterSignal(SSdcs, COMSIG_WEATHER_END(/datum/weather/rain), .proc/on_rain_end)
+	RegisterSignal(SSdcs, COMSIG_WEATHER_START(/datum/weather/rain), PROC_REF(on_rain_start)) // for cleaning
+	RegisterSignal(SSdcs, COMSIG_WEATHER_END(/datum/weather/rain), PROC_REF(on_rain_end))
 	return INITIALIZE_HINT_LATELOAD
 
 /obj/effect/decal/cleanable/LateInitialize()
 	. = ..()
-	AddElement(/datum/element/beauty, beauty)
+	if(!QDELING(src))
+		AddElement(/datum/element/beauty, beauty)
 
 /obj/effect/decal/cleanable/proc/on_rain_start()
 	SIGNAL_HANDLER

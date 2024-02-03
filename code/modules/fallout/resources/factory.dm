@@ -15,7 +15,7 @@
 			"Water" = image(icon = 'icons/obj/chemical.dmi', icon_state = "pill_canister_water"),
 			"Food" = image(icon= 'icons/obj/chemical.dmi', icon_state = "pill_canister_paste")
 			)
-		var/list/choice = show_radial_menu(user, src, choices, custom_check = CALLBACK(src, .proc/check_menu, user), require_near = TRUE)
+		var/list/choice = show_radial_menu(user, src, choices, custom_check = CALLBACK(src, PROC_REF(check_menu), user), require_near = TRUE)
 		switch(choice)
 			if("Water")
 				to_chat(user, "You chose water.")
@@ -52,7 +52,7 @@
 		var/list/choices = list(
 			"Parts" = image(icon = 'icons/fallout/objects/items.dmi', icon_state = "prewartech")
 			)
-		var/list/choice = show_radial_menu(user, src, choices, custom_check = CALLBACK(src, .proc/check_menu, user), require_near = TRUE)
+		var/list/choice = show_radial_menu(user, src, choices, custom_check = CALLBACK(src, PROC_REF(check_menu), user), require_near = TRUE)
 		switch(choice)
 			if("Parts")
 				to_chat(user, "You chose valuable parts.")
@@ -94,7 +94,7 @@
 			".44 FMJ" = image(icon = 'icons/obj/ammo.dmi', icon_state = "44box"),
 			"12g BKS" = image(icon = 'icons/obj/ammo.dmi', icon_state = "gshell-live")
 			)
-		var/list/choice = show_radial_menu(user, src, choices, custom_check = CALLBACK(src, .proc/check_menu, user), require_near = TRUE)
+		var/list/choice = show_radial_menu(user, src, choices, custom_check = CALLBACK(src, PROC_REF(check_menu), user), require_near = TRUE)
 		switch(choice)
 			if("5.56 FMJ")
 				to_chat(user, "You chose rifle rounds.")
@@ -144,7 +144,7 @@
 			"5mm" = image(icon = 'icons/fallout/objects/guns/ammo.dmi', icon_state = "5mmbox"),
 			"mfc" = image(icon = 'icons/fallout/objects/powercells.dmi', icon_state = "mfc-full"),
 			)
-		var/list/choice = show_radial_menu(user, src, choices, custom_check = CALLBACK(src, .proc/check_menu, user), require_near = TRUE)
+		var/list/choice = show_radial_menu(user, src, choices, custom_check = CALLBACK(src, PROC_REF(check_menu), user), require_near = TRUE)
 		switch(choice)
 			if("5.56 FMJ")
 				to_chat(user, "You chose rifle rounds.")

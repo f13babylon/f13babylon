@@ -135,9 +135,6 @@
 /turf/open/indestructible/ground/outside/desert
 	name = "desert"
 	icon_state = "wasteland"
-//	step_sounds = list("human" = "dirtfootsteps")
-//	allowed_plants = list(/obj/item/seeds/poppy/broc, /obj/item/seeds/xander, /obj/item/seeds/mutfruit,
-//	/obj/item/seeds/feracactus, /obj/item/seeds/corn,/obj/item/seeds/shroom, /obj/item/seeds/agave)
 	slowdown = 0.4
 	flags_1 = CAN_HAVE_NATURE | ADJACENCIES_OVERLAY
 	footstep = FOOTSTEP_SAND
@@ -154,12 +151,12 @@
 	var/obj/dugpit/mypit
 	var/unburylevel = 0
 	var/static/list/loots = list(
-						/obj/item/stack/crafting/metalparts/five = 30,
-						/obj/item/stack/crafting/goodparts/five = 30,
-						/obj/item/stack/ore/blackpowder/twenty = 10,
-						/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid = 3,
-						/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low = 3
-						)
+		/obj/item/stack/crafting/metalparts/five = 30,
+		/obj/item/stack/crafting/goodparts/five = 30,
+		/obj/item/stack/ore/blackpowder/twenty = 10,
+		/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid = 3,
+		/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low = 3
+	)
 
 /turf/open/indestructible/ground/outside/desert/harsh
 	icon_state = "wasteland"
@@ -197,7 +194,7 @@
 
 /turf/open/indestructible/ground/outside/desert/proc/setTurfPlant(newTurfPlant)
 	turfPlant = newTurfPlant
-	RegisterSignal(turfPlant, COMSIG_PARENT_QDELETING, .proc/clear_turfplant)
+	RegisterSignal(turfPlant, COMSIG_PARENT_QDELETING, PROC_REF(clear_turfplant))
 
 /turf/open/indestructible/ground/outside/desert/proc/clear_turfplant()
 	UnregisterSignal(turfPlant, COMSIG_PARENT_QDELETING)
@@ -446,7 +443,7 @@
 
 /turf/open/indestructible/ground/outside/snow/proc/setTurfPlant(newTurfPlant)
 	turfPlant = newTurfPlant
-	RegisterSignal(turfPlant, COMSIG_PARENT_QDELETING, .proc/clear_turfplant)
+	RegisterSignal(turfPlant, COMSIG_PARENT_QDELETING, PROC_REF(clear_turfplant))
 
 /turf/open/indestructible/ground/outside/snow/proc/clear_turfplant()
 	UnregisterSignal(turfPlant, COMSIG_PARENT_QDELETING)
@@ -524,7 +521,7 @@
 
 /turf/open/indestructible/ground/inside/mountain/proc/setTurfPlant(newTurfPlant)
 	turfPlant = newTurfPlant
-	RegisterSignal(turfPlant, COMSIG_PARENT_QDELETING, .proc/clear_turfplant)
+	RegisterSignal(turfPlant, COMSIG_PARENT_QDELETING, PROC_REF(clear_turfplant))
 
 /turf/open/indestructible/ground/inside/mountain/proc/clear_turfplant()
 	UnregisterSignal(turfPlant, COMSIG_PARENT_QDELETING)

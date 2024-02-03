@@ -85,8 +85,7 @@
 		qdel(R)
 	cached_reagents.Cut()
 	cached_reagents = null
-	if(my_atom && my_atom.reagents == src)
-		my_atom.reagents = null
+	my_atom?.reagents = null
 	my_atom = null
 
 // Used in attack logs for reagents in pills and such
@@ -1196,6 +1195,8 @@
 // Convenience proc to create a reagents holder for an atom
 // Max vol is maximum volume of holder
 /atom/proc/create_reagents(max_vol, flags, new_value)
+	if(QDELING(src))
+		CRASH("Attempted to create reagents on a deleted atom")
 	if(reagents)
 		qdel(reagents)
 	reagents = new/datum/reagents(max_vol, flags, new_value)

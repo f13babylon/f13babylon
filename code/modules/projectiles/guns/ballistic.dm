@@ -86,7 +86,7 @@
 					playsound(src, reload_sound, 70, 1)
 					if(!chambered)
 						chamber_round()
-						addtimer(CALLBACK(GLOBAL_PROC, .proc/playsound, src, chamber_sound, 100, 1), 3)
+						addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(playsound), src, chamber_sound, 100, 1), 3)
 				else
 					playsound(src, reload_sound_empty, 70, 1)
 				A.update_icon()

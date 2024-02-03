@@ -99,18 +99,18 @@
 		if(UP)
 			peeker.reset_perspective(up.loc)
 			if(!LAZYACCESS(ladder_watchers, "[peek_dir]"))
-				RegisterSignal(up, COMSIG_CLICK, .proc/on_connected_ladder_clicked)
+				RegisterSignal(up, COMSIG_CLICK, PROC_REF(on_connected_ladder_clicked))
 		if(DOWN)
 			peeker.reset_perspective(down.loc)
 			if(!LAZYACCESS(ladder_watchers, "[peek_dir]"))
-				RegisterSignal(down, COMSIG_CLICK, .proc/on_connected_ladder_clicked)
+				RegisterSignal(down, COMSIG_CLICK, PROC_REF(on_connected_ladder_clicked))
 		else
 			return
 
 	LAZYADDASSOC(ladder_watchers, "[peek_dir]", peeker)
-	RegisterSignal(peeker, COMSIG_MOVABLE_MOVED, .proc/on_peeker_move)
+	RegisterSignal(peeker, COMSIG_MOVABLE_MOVED, PROC_REF(on_peeker_move))
 	// This is the closest thing this codebase has to an incapacitation signal.
-	RegisterSignal(peeker, COMSIG_DISABLE_COMBAT_MODE, .proc/stop_peeking)
+	RegisterSignal(peeker, COMSIG_DISABLE_COMBAT_MODE, PROC_REF(stop_peeking))
 
 
 /obj/structure/ladder/proc/on_peeker_move(mob/source)
@@ -198,7 +198,7 @@
 		)
 
 	if (up && down)
-		var/result = show_radial_menu(user, src, tool_list, custom_check = CALLBACK(src, .proc/check_menu, user), require_near = TRUE, tooltips = TRUE)
+		var/result = show_radial_menu(user, src, tool_list, custom_check = CALLBACK(src, PROC_REF(check_menu), user), require_near = TRUE, tooltips = TRUE)
 		if (!is_ghost && !in_range(src, user))
 			return  // nice try
 		switch(result)
@@ -338,7 +338,7 @@
 /obj/structure/ladder/unbreakable/binary/unlinked //Crew gets to complete one
 	id = "unlinked_binary"
 	area_to_place = null
-	
+
 /obj/structure/ladder/unbreakable/transition
 	name = "transition zone"
 	desc = "<font color='#6eaa2c'>Head to the other side.</font>"

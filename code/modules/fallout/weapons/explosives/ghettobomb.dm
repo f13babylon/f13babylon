@@ -215,7 +215,7 @@
 		item_state = initial(item_state) + "_active"
 		if(isGlass)
 			return
-		addtimer(CALLBACK(src, .proc/splash_and_boom), 5 SECONDS)
+		addtimer(CALLBACK(src, PROC_REF(splash_and_boom)), 5 SECONDS)
 
 
 /obj/item/reagent_containers/food/drinks/bottle/molotov/proc/splash_and_boom()

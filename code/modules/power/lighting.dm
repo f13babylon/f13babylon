@@ -291,7 +291,7 @@
 			brightness = 5
 			if(prob(5))
 				break_light_tube(1)
-	addtimer(CALLBACK(src, .proc/update, FALSE), 0.1 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(update), FALSE), 0.1 SECONDS)
 
 /obj/machinery/light/Destroy()
 	var/area/A = get_area(src)

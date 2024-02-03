@@ -21,7 +21,7 @@
 		return ELEMENT_INCOMPATIBLE
 	SEND_SIGNAL(target, COMSIG_ELEMENT_ATTACH, src)
 	if(element_flags & ELEMENT_DETACH)
-		RegisterSignal(target, COMSIG_PARENT_QDELETING, .proc/Detach, override = TRUE)
+		RegisterSignal(target, COMSIG_PARENT_QDELETING, PROC_REF(Detach), override = TRUE)
 
 /// Deactivates the functionality defines by the element on the given datum
 /datum/element/proc/Detach(datum/source, force)
@@ -39,6 +39,8 @@
 
 /// Finds the singleton for the element type given and attaches it to src
 /datum/proc/_AddElement(list/arguments)
+	if(QDELING(src))
+		CRASH("Tried to attach an element to a deleted object!")
 	var/datum/element/ele = SSdcs.GetElement(arguments)
 	arguments[1] = src
 	if(ele.Attach(arglist(arguments)) == ELEMENT_INCOMPATIBLE)

@@ -21,7 +21,7 @@
 /obj/machinery/computer/Initialize(mapload, obj/item/circuitboard/C)
 	. = ..()
 	for(var/obj/machinery/computer/pickComputer in range(1, src))
-		addtimer(CALLBACK(pickComputer, .proc/why_overlays), 5)
+		addtimer(CALLBACK(pickComputer, PROC_REF(why_overlays)), 5)
 	power_change()
 	if(!QDELETED(C))
 		qdel(circuit)
@@ -30,7 +30,7 @@
 
 /obj/machinery/computer/Destroy()
 	for(var/obj/machinery/computer/pickComputer in range(1, src))
-		addtimer(CALLBACK(pickComputer, .proc/why_overlays), 5)
+		addtimer(CALLBACK(pickComputer, PROC_REF(why_overlays)), 5)
 	return ..()
 
 /obj/machinery/computer/process()
@@ -168,5 +168,5 @@
 		for(var/obj/C in src)
 			C.forceMove(loc)
 	for(var/obj/machinery/computer/pickComputer in range(1, src))
-		addtimer(CALLBACK(pickComputer, .proc/why_overlays), 5)
+		addtimer(CALLBACK(pickComputer, PROC_REF(why_overlays)), 5)
 	qdel(src)

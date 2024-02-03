@@ -276,7 +276,7 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 		prefs = new /datum/preferences(src)
 		GLOB.preferences_datums[ckey] = prefs
 
-	addtimer(CALLBACK(src, .proc/ensure_keys_set, prefs), 10)	//prevents possible race conditions
+	addtimer(CALLBACK(src, PROC_REF(ensure_keys_set), prefs), 10)	//prevents possible race conditions
 
 	prefs.last_ip = address				//these are gonna be used for banning
 	prefs.last_id = computer_id			//these are gonna be used for banning
@@ -287,6 +287,12 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 
 	var/full_version = "[byond_version].[byond_build ? byond_build : "xxx"]"
 	log_access("Login: [key_name(src)] from [address ? address : "localhost"]-[computer_id] || BYOND v[full_version]")
+
+	// When this the issue with the skin is fixed for 515 remove this and let 515 clients connect
+	if(byond_version >= 515)
+		to_chat_immediate(src, span_userdanger("You are using a version of BYOND that is not supported. While the server can compile using 515 the client cannot connect using it."))
+		qdel(src)
+		return
 
 	var/alert_mob_dupe_login = FALSE
 	if(CONFIG_GET(flag/log_access))
@@ -587,6 +593,7 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 	)
 	if(!query_client_in_db.Execute())
 		qdel(query_client_in_db)
+		SSmouse_entered.hovers -= src
 		return
 
 	//If we aren't an admin, and the flag is set
@@ -965,7 +972,7 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 
 		//Precache the client with all other assets slowly, so as to not block other browse() calls
 		if (CONFIG_GET(flag/asset_simple_preload))
-			addtimer(CALLBACK(SSassets.transport, /datum/asset_transport.proc/send_assets_slow, src, SSassets.transport.preload), 5 SECONDS)
+			addtimer(CALLBACK(SSassets.transport, TYPE_PROC_REF(/datum/asset_transport, send_assets_slow), src, SSassets.transport.preload), 5 SECONDS)
 
 		#if (PRELOAD_RSC == 0)
 		for (var/name in GLOB.vox_sounds)

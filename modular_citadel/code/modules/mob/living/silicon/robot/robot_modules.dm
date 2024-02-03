@@ -58,7 +58,7 @@
 			"Drake" = image(icon = 'modular_citadel/icons/mob/widerobot_sec.dmi', icon_state = "drakesec", pixel_x = -16)
 		)
 		k9_models = sortList(k9_models)
-	var/k9_borg_icon = show_radial_menu(R, R , k9_models, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE, tooltips = TRUE)
+	var/k9_borg_icon = show_radial_menu(R, R , k9_models, custom_check = CALLBACK(src, PROC_REF(check_menu), R), radius = 42, require_near = TRUE, tooltips = TRUE)
 	if(!k9_borg_icon)
 		return
 	switch(k9_borg_icon)
@@ -121,7 +121,7 @@
 		"Drake" = image(icon = 'modular_citadel/icons/mob/widerobot_med.dmi', icon_state = "drakemed", pixel_x = -16)
 		)
 		medihound_models = sortList(medihound_models)
-	var/medihound_borg_icon = show_radial_menu(R, R , medihound_models, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE, tooltips = TRUE)
+	var/medihound_borg_icon = show_radial_menu(R, R , medihound_models, custom_check = CALLBACK(src, PROC_REF(check_menu), R), radius = 42, require_near = TRUE, tooltips = TRUE)
 	if(!medihound_borg_icon)
 		return
 	switch(medihound_borg_icon)
@@ -169,7 +169,7 @@
 		"Drake" = image(icon = 'modular_citadel/icons/mob/widerobot_jani.dmi', icon_state = "drakejanit", pixel_x = -16),
 		"J9" = image(icon = 'modular_citadel/icons/mob/widerobot_jani.dmi', icon_state = "J9", pixel_x = -16)
 		)
-	var/scrubpup_borg_icon = show_radial_menu(R, R , scrubpup_models, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE, tooltips = TRUE)
+	var/scrubpup_borg_icon = show_radial_menu(R, R , scrubpup_models, custom_check = CALLBACK(src, PROC_REF(check_menu), R), radius = 42, require_near = TRUE, tooltips = TRUE)
 	if(!scrubpup_borg_icon)
 		return
 	switch(scrubpup_borg_icon)

@@ -3,44 +3,77 @@ on:
   workflow_dispatch:
   push:
     branches:
-    - main
+      - main
   pull_request:
     branches:
-    - main
+      - main
+
 env:
   toolchain: stable
   target: i686-unknown-linux-gnu
+
 jobs:
+  setup_tools:
+    name: Setup Tools
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cargo Tools Cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.cargo
+          key: ${{ runner.os }}-cargo
+
+      - name: Cargo Tools
+        run: |
+          cargo install ripgrep --features pcre2
+
+      - name: Rust-G Cache
+        uses: actions/cache@v2
+        with:
+          path: ~/rust-g
+          key: ${{ runner.os }}-rustg
+
+      - name: Rust-G
+        run: bash tools/ci/install_rust_g.sh
+
   run_linters:
     if: ( !contains(github.event.head_commit.message, '[ci skip]') )
     name: Run Linters
     runs-on: ubuntu-22.04
+    needs: setup_tools
     steps:
-      - uses: actions/checkout@v2
-      - name: Setup cache
+      - uses: actions/checkout@v4
+
+      - name: SpacemanDMM Cache
         uses: actions/cache@v2
         with:
           path: ~/SpacemanDMM
-          key: ${{ runner.os }}-spacemandmm-${{ secrets.CACHE_PURGE_KEY }}
-      - name: Restore Libgit2 cache
-        uses: actions/cache@v3
+          key: ${{ runner.os }}-spacemandmm
+
+      - name: Cargo Tools Cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.cargo
+          key: ${{ runner.os }}-cargo
+
+      - name: LibGit2 Cache
+        uses: actions/cache@v2
         with:
           path: ~/libgit2
           key: ${{ runner.os }}-libgit2
-      - name: Restore Rust cache
-        uses: actions/cache@v3
-        with:
-          path: ~/.cargo
-          key: ${{ runner.os }}-rust
+
       - name: Install Tools
         run: |
-          sudo bash tools/ci/install_libgit2.sh
-          cargo install ripgrep --features pcre2
+          bash tools/ci/install_libgit2.sh
           sudo apt install python3 python3-{pip,venv,dev} libjpeg-dev zlib1g-dev
-          pip3 install setuptools
+          pip3 install -U pip
+          pip install setuptools
           bash tools/ci/install_node.sh
           bash tools/ci/install_spaceman_dmm.sh dreamchecker
           tools/bootstrap/python -c ''
+
       - name: Run Linters
         run: |
           bash tools/ci/check_filedirs.sh fortune13.dme
@@ -54,6 +87,7 @@ jobs:
           tools/bootstrap/python -m dmi.test
           tools/bootstrap/python -m mapmerge2.dmm_test
           ~/dreamchecker > ${GITHUB_WORKSPACE}/output-annotations.txt 2>&1
+
       - name: Annotate Lints
         uses: yogstation13/DreamAnnotate@v2
         if: always()
@@ -65,15 +99,15 @@ jobs:
     name: Compile Maps
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
           node-version: 14
-      - name: Setup cache
+      - name: BYOND Cache
         uses: actions/cache@v2
         with:
           path: ~/BYOND
-          key: ${{ runner.os }}-byond-${{ secrets.CACHE_PURGE_KEY }}
+          key: ${{ runner.os }}-byond
       - name: Compile All Maps
         run: |
           bash tools/ci/install_node.sh
@@ -86,7 +120,9 @@ jobs:
     if: ( !contains(github.event.head_commit.message, '[ci skip]') )
     name: Integration Tests
     runs-on: ubuntu-22.04
+    needs: setup_tools
     timeout-minutes: 30
+
     services:
       mysql:
         image: mysql:latest
@@ -95,46 +131,42 @@ jobs:
         ports:
           - 3306
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v3
         with:
           node-version: 14
 
-      - name: Restore BYOND cache
+      - name: BYOND Cache
         uses: actions/cache@v2
         with:
           path: ~/BYOND
-          key: ${{ runner.os }}-byond-${{ secrets.CACHE_PURGE_KEY }}
+          key: ${{ runner.os }}-byond
 
-      - name: Restore Yarn cache
+      - name: Yarn Cache
         uses: actions/cache@v2
         with:
           path: tgui/.yarn/cache
-          key: ${{ runner.os }}-yarn-${{ secrets.CACHE_PURGE_KEY }}-${{ hashFiles('tgui/yarn.lock') }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('tgui/yarn.lock') }}
           restore-keys: |
-            ${{ runner.os }}-build-${{ secrets.CACHE_PURGE_KEY }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
+            ${{ runner.os }}-yarn
 
-      - name: Restore Rust cache
-        uses: actions/cache@v3
+      - name: Cargo Tools Cache
+        uses: actions/cache@v2
         with:
           path: ~/.cargo
-          key: ${{ runner.os }}-rust
+          key: ${{ runner.os }}-cargo
 
-      - name: Restore Auxmos cache
-        uses: actions/cache@v3
-        with:
-          path: ~/auxmos
-          key: auxmos-build-${{ hashFiles('~/auxmos/Cargo.lock') }}
-      
-      - name: Restore Rust-G cache
-        uses: actions/cache@v3
+      - name: Rust-G Cache
+        uses: actions/cache@v2
         with:
           path: ~/rust-g
-          key: rustg-build-${{ hashFiles('~/rust-g/Cargo.lock') }}
+          key: ${{ runner.os }}-rustg
+
+      - name: Rust-G
+        run: bash tools/ci/install_rust_g.sh
 
       - name: Setup database
         run: |
@@ -143,14 +175,6 @@ jobs:
           mysql -u root -proot tg_ci < SQL/tgstation_schema.sql
           mysql -u root -proot -e 'CREATE DATABASE tg_ci_prefixed;'
           mysql -u root -proot tg_ci_prefixed < SQL/tgstation_schema_prefixed.sql
-
-      - name: Build Rust-G and Auxmos
-        run: |
-          sudo dpkg --add-architecture i386
-          sudo apt update || true
-          sudo apt install build-essential g++-multilib libc6-i386 libstdc++6:i386 libssl-dev:i386 pkg-config libz-dev:i386
-          bash tools/ci/install_rust_g.sh
-          bash tools/ci/install_auxmos.sh
 
       - name: Compile and run tests
         run: |
@@ -165,7 +189,7 @@ jobs:
     name: Windows Build
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
           node-version: 14

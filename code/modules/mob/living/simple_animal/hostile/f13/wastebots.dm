@@ -214,7 +214,7 @@
 /mob/living/simple_animal/hostile/handy/robobrain/bullet_act(obj/item/projectile/Proj)
 	if(!Proj)
 		CRASH("[src] robobrain invoked bullet_act() without a projectile")
-	if(prob(15) || Proj.damage > 25)
+	if(prob(15) || Proj.armour_penetration > 0.1)
 		return ..()
 	else
 		visible_message("<span class='danger'>\The [Proj] shatters on \the [src]'s armor plating!</span>")
@@ -231,8 +231,8 @@
 /mob/living/simple_animal/hostile/handy/robobrain/death()
 	do_sparks(3, TRUE, src)
 	for(var/i in 1 to 3)
-		addtimer(CALLBACK(src, .proc/do_death_beep), i * 1 SECONDS)
-	addtimer(CALLBACK(src, .proc/self_destruct), 4 SECONDS)
+		addtimer(CALLBACK(src, PROC_REF(do_death_beep)), i * 1 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(self_destruct)), 4 SECONDS)
 	return ..()
 
 /mob/living/simple_animal/hostile/handy/robobrain/Aggro()

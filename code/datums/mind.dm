@@ -178,7 +178,7 @@
 	var/datum/team/antag_team = A.get_team()
 	if(antag_team)
 		antag_team.add_member(src)
-	INVOKE_ASYNC(A, /datum/antagonist.proc/on_gain)
+	INVOKE_ASYNC(A, TYPE_PROC_REF(/datum/antagonist, on_gain))
 	return A
 
 /datum/mind/proc/remove_antag_datum(datum_type)
@@ -735,7 +735,7 @@
 				continue
 		S.charge_counter = delay
 		S.updateButtonIcon()
-		INVOKE_ASYNC(S, /obj/effect/proc_holder/spell.proc/start_recharge)
+		INVOKE_ASYNC(S, TYPE_PROC_REF(/obj/effect/proc_holder/spell, start_recharge))
 
 /datum/mind/proc/get_ghost(even_if_they_cant_reenter)
 	for(var/mob/dead/observer/G in GLOB.dead_mob_list)
@@ -748,7 +748,7 @@
 	var/mob/dead/observer/G = get_ghost(even_if_they_cant_reenter = force)
 	. = G
 	if(G)
-		INVOKE_ASYNC(G, /mob/dead/observer.verb/reenter_corpse)
+		INVOKE_ASYNC(G, TYPE_VERB_REF(/mob/dead/observer, reenter_corpse))
 
 /// Sets our can_hijack to the fastest speed our antag datums allow.
 /datum/mind/proc/get_hijack_speed()

@@ -15,6 +15,7 @@
 
 // BEGIN_INCLUDE
 #include "_maps\_basemap.dm"
+#include "code\__byond_version_compat.dm"
 #include "code\_compile_options.dm"
 #include "code\world.dm"
 #include "code\__DEFINES\_auxtools.dm"
@@ -346,6 +347,7 @@
 #include "code\controllers\subsystem\minor_mapping.dm"
 #include "code\controllers\subsystem\mobs.dm"
 #include "code\controllers\subsystem\monster_wave.dm"
+#include "code\controllers\subsystem\mouse_entered.dm"
 #include "code\controllers\subsystem\nightcycle.dm"
 #include "code\controllers\subsystem\nightshift.dm"
 #include "code\controllers\subsystem\npcpool.dm"

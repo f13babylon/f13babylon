@@ -372,7 +372,7 @@ GLOBAL_LIST_EMPTY(network_holopads)
 			if(force_answer_call && world.time > (HC.call_start_time + (HOLOPAD_MAX_DIAL_TIME / 2)))
 				HC.Answer(src)
 				break
-			if(!secure) //HC.head_call && 
+			if(!secure) //HC.head_call &&
 				HC.Answer(src)
 				break
 			if(outgoing_call)
@@ -639,7 +639,7 @@ For the other part of the code, check silicon say.dm. Particularly robot talk.*/
 		if(HOLORECORD_SOUND)
 			playsound(src,entry[2],50,TRUE)
 		if(HOLORECORD_DELAY)
-			addtimer(CALLBACK(src,.proc/replay_entry,entry_number+1),entry[2])
+			addtimer(CALLBACK(src,PROC_REF(replay_entry),entry_number+1),entry[2])
 			return
 		if(HOLORECORD_LANGUAGE)
 			var/datum/language_holder/holder = replay_holo.get_language_holder()

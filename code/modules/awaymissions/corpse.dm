@@ -70,7 +70,7 @@
 		stack_trace("This type shouldn't be spawned in, it doesn't create anything! Use a subtype!")
 		return INITIALIZE_HINT_QDEL
 	if(instant || (roundstart && (mapload || (SSticker && SSticker.current_state > GAME_STATE_SETTING_UP))))
-		INVOKE_ASYNC(src, .proc/create)
+		INVOKE_ASYNC(src, PROC_REF(create))
 	else if(ghost_usable)
 		GLOB.poi_list |= src
 		LAZYADD(GLOB.mob_spawners[job_description ? job_description : name], src)

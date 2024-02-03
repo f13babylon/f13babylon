@@ -1,28 +1,17 @@
-/* To use the ref tracking debugging tool in game
-1. Enable/uncomment the following before using debug tools on your local machine:
-
-**TESTING
-
-**REFERENCE_TRACKING
-
-**REFERENCE_TRACKING_DEBUG
-
-**GC_FAILURE_HARD_LOOKUP
-
-2. Set return statement of the object you wish to ref track to QDEL_HINT_FINDREFERENCE or QDEL_HINT_IFFAIL_FINDREFERENCE (read qdel.dm for the difference between the two)
-
-
-3. Start game up on your local machine and delete the object in question. Look at the daemon log for results.
-
-*/
-
-//#define TESTING				
+//#define TESTING
 //By using the testing("message") proc you can create debug-feedback for people with this
-								//uncommented, but not visible in the release version) 
+								//uncommented, but not visible in the release version)
 
 // Comment this out if you are debugging problems that might be obscured by custom error handling in world/Error
 #ifdef DEBUG
 #define USE_CUSTOM_ERROR_HANDLER
+#endif
+
+#ifdef CIBUILDING
+	#define UNIT_TESTS
+	#define TESTING
+	#define REFERENCE_TRACKING
+	#define GC_FAILURE_HARD_LOOKUP
 #endif
 
 #ifdef TESTING
@@ -58,15 +47,6 @@
 #define FORCE_MAP "_maps/runtimestation.json"
 #endif
 
-//Update this whenever you need to take advantage of more recent byond features
-#define MIN_COMPILER_VERSION 513
-#define MIN_COMPILER_BUILD 1514
-#if DM_VERSION < MIN_COMPILER_VERSION || DM_BUILD < MIN_COMPILER_BUILD
-//Don't forget to update this part
-#error Your version of BYOND is too out-of-date to compile this project. Go to https://secure.byond.com/download and update.
-#error You need version 513.1508 or higher
-#endif
-
 //Additional code for the above flags.
 #ifdef TESTING
 #warn compiling in TESTING mode. testing() debug messages will be visible.
@@ -74,10 +54,6 @@
 
 #ifdef GC_FAILURE_HARD_LOOKUP
 //#define FIND_REF_NO_CHECK_TICK
-#endif
-
-#ifdef CIBUILDING
-#define UNIT_TESTS
 #endif
 
 #ifdef CITESTING

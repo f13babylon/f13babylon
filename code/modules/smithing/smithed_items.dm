@@ -436,7 +436,7 @@
 	..()
 
 /obj/item/smithing/spathablade
-	name = "smithed spathablade"
+	name = "smithed liberator machete blade"
 	icon_state = "spatha_smith"
 	finishingitem = /obj/item/blacksmith/swordhandle
 	finalitem = /obj/item/melee/smith/sword/spatha
@@ -543,7 +543,7 @@
 
 
 /obj/item/smithing/gladiusblade
-	name = "smithed gladius blade"
+	name = "smithed machete gladius blade"
 	icon_state = "gladius_smith"
 	finishingitem = /obj/item/blacksmith/swordhandle
 	finalitem = /obj/item/melee/smith/machete/gladius

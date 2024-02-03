@@ -59,7 +59,7 @@
 	var/list/affected_dynamic_lights
 	///Highest-intensity light affecting us, which determines our visibility.
 	var/affecting_dynamic_lumi = 0
-	
+
 	/// Whether this atom should have its dir automatically changed when it moves. Setting this to FALSE allows for things such as directional windows to retain dir on moving without snowflake code all of the place.
 	var/set_dir_on_move = TRUE
 	///how many times a this movable had movement procs called on it since Moved() was last called
@@ -123,7 +123,7 @@
 		if(isobj(hurt_atom) || ismob(hurt_atom))
 			if(hurt_atom.layer > highest.layer)
 				highest = hurt_atom
-	INVOKE_ASYNC(src, .proc/SpinAnimation, 5, 2)
+	INVOKE_ASYNC(src, PROC_REF(SpinAnimation), 5, 2)
 	return TRUE
 
 /*
@@ -359,9 +359,12 @@
 		buckled_mob.set_glide_size(target)
 
 /atom/movable/Destroy(force)
-	QDEL_NULL(proximity_monitor)
-	QDEL_NULL(language_holder)
-	QDEL_NULL(em_block)
+	if(!isnull(proximity_monitor))
+		QDEL_NULL(proximity_monitor)
+	if(!isnull(language_holder))
+		QDEL_NULL(language_holder)
+	if(!isnull(em_block))
+		QDEL_NULL(em_block)
 
 	unbuckle_all_mobs(force = TRUE)
 

@@ -140,7 +140,7 @@ GLOBAL_LIST_INIT(blocking_structures, typecacheof(list(
 
 /obj/structure/barricade/security/Initialize(mapload)
 	. = ..()
-	addtimer(CALLBACK(src, .proc/deploy), deploy_time)
+	addtimer(CALLBACK(src, PROC_REF(deploy)), deploy_time)
 
 /obj/structure/barricade/security/proc/deploy()
 	icon_state = "barrier1"

@@ -74,13 +74,19 @@
 		var/turf/T = loc
 		T.add_blueprints_preround(src)
 
-	add_debris_element()
+	return INITIALIZE_HINT_LATELOAD
+
+/obj/LateInitialize()
+	. = ..()
+	if(!QDELING(src))
+		add_debris_element()
 
 /obj/Destroy(force=FALSE)
 	if(!ismachinery(src))
 		STOP_PROCESSING(SSobj, src) // TODO: Have a processing bitflag to reduce on unnecessary loops through the processing lists
 	SStgui.close_uis(src)
-	. = ..()
+	armor = null
+	return ..()
 
 /obj/proc/setAnchored(anchorvalue)
 	SEND_SIGNAL(src, COMSIG_OBJ_SETANCHORED, anchorvalue)
@@ -356,7 +362,7 @@
 	var/list/skins = list()
 	for(var/S in unique_reskin)
 		skins[S] = image(icon = icon, icon_state = unique_reskin[S])
-	var/choice = show_radial_menu(M, src, skins, custom_check = CALLBACK(src, .proc/check_skinnable, M), radius = 40, require_near = TRUE)
+	var/choice = show_radial_menu(M, src, skins, custom_check = CALLBACK(src, PROC_REF(check_skinnable), M), radius = 40, require_near = TRUE)
 	if(!choice)
 		return FALSE
 	icon_state = unique_reskin[choice]

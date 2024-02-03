@@ -11,6 +11,8 @@
 		UNSETEMPTY(client.movingmob.client_mobs_in_contents)
 		client.movingmob = null
 
+	clear_client_in_contents()
+
 	..()
 
 	if(loc)

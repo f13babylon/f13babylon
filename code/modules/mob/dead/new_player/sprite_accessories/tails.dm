@@ -471,6 +471,14 @@
 
 /datum/sprite_accessory/tails/human/fennecdown
 	name = "Fennec (Downward)"
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
+	icon_state = "downwardfennec"
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/tails_animated/human/fennecdown
+	name = "Fennec (Downward)"
+	icon = 'modular_citadel/icons/mob/mam_tails.dmi'
 	icon_state = "downwardfennec"
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED_GREEN

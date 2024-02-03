@@ -111,7 +111,7 @@
 	icon_state = initial(icon_state) + "_active"
 	item_state = initial(item_state) + "_active"
 	var/mob/living/carbon/M = loc
-	addtimer(CALLBACK(src, .proc/boom, M), 20)
+	addtimer(CALLBACK(src, PROC_REF(boom), M), 20)
 
 /obj/item/signal_bomb/proc/boom()
 	explosion(src.loc,0,2,3, flame_range = 6)
@@ -198,7 +198,7 @@
 /obj/item/mine/Initialize(mapload)
 	. = ..()
 	var/static/list/loc_connections = list(
-		COMSIG_ATOM_ENTERED = .proc/on_entered,
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
 	)
 	AddElement(/datum/element/connect_loc, loc_connections)
 
@@ -218,7 +218,7 @@
 		to_chat(user, "<span class='danger'>The mine is already armed!</span>") //how did we get here
 	if(user.dropItemToGround(src))
 		anchored = TRUE
-		addtimer(CALLBACK(src, .proc/arm), 5 SECONDS)
+		addtimer(CALLBACK(src, PROC_REF(arm)), 5 SECONDS)
 		to_chat(user, "<span class='notice'>You drop the mine and activate the 5-second arming process.</span>")
 		return
 
@@ -247,7 +247,7 @@
 	if(arrived.movement_type & FLYING)
 		return
 
-	INVOKE_ASYNC(src, .proc/triggermine, arrived)
+	INVOKE_ASYNC(src, PROC_REF(triggermine), arrived)
 
 /obj/item/mine/proc/triggermine(mob/victim)
 	if(triggered)

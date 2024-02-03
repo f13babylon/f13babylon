@@ -23,8 +23,8 @@
 
 /obj/item/melee/unarmed/Initialize(mapload)
 	. = ..()
-	RegisterSignal(src, COMSIG_ITEM_EQUIPPED, .proc/on_equip)
-	RegisterSignal(src, COMSIG_ITEM_DROPPED, .proc/on_drop)
+	RegisterSignal(src, COMSIG_ITEM_EQUIPPED, PROC_REF(on_equip))
+	RegisterSignal(src, COMSIG_ITEM_DROPPED, PROC_REF(on_drop))
 
 // When on help intent: attack simplemobs only
 // When not on help intent: attack structures, turfs, and all mobs
@@ -56,7 +56,7 @@
 	if(HAS_TRAIT(equipper, TRAIT_UNARMED_WEAPON))
 		return
 	ADD_TRAIT(equipper, TRAIT_UNARMED_WEAPON, GLOVE_TRAIT)
-	RegisterSignal(equipper, COMSIG_HUMAN_MELEE_UNARMED_ATTACK, .proc/do_unarmed_attack)
+	RegisterSignal(equipper, COMSIG_HUMAN_MELEE_UNARMED_ATTACK, PROC_REF(do_unarmed_attack))
 
 /obj/item/melee/unarmed/proc/on_drop(source, mob/dropper)
 	// This might remove it too early if someone has multiple,

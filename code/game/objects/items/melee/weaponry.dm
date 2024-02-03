@@ -472,7 +472,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 /obj/item/statuebust/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/art, impressiveness)
-	addtimer(CALLBACK(src, /datum.proc/_AddElement, list(/datum/element/beauty, 1000)), 0)
+	addtimer(CALLBACK(src, TYPE_PROC_REF(/datum, _AddElement), list(/datum/element/beauty, 1000)), 0)
 
 /obj/item/tailclub
 	name = "tail club"
@@ -558,7 +558,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	var/mob/living/owner = loc
 	if(!istype(owner))
 		return
-	RegisterSignal(owner, COMSIG_PARENT_EXAMINE, .proc/ownerExamined)
+	RegisterSignal(owner, COMSIG_PARENT_EXAMINE, PROC_REF(ownerExamined))
 
 /obj/item/circlegame/Destroy()
 	var/mob/owner = loc
@@ -575,7 +575,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 /obj/item/circlegame/proc/ownerExamined(mob/living/owner, mob/living/sucker)
 	if(!istype(sucker) || !in_range(owner, sucker))
 		return
-	addtimer(CALLBACK(src, .proc/waitASecond, owner, sucker), 4)
+	addtimer(CALLBACK(src, PROC_REF(waitASecond), owner, sucker), 4)
 
 /// Stage 2: Fear sets in
 /obj/item/circlegame/proc/waitASecond(mob/living/owner, mob/living/sucker)
@@ -584,10 +584,10 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 	if(owner == sucker) // big mood
 		to_chat(owner, "<span class='danger'>Wait a second... you just looked at your own [src.name]!</span>")
-		addtimer(CALLBACK(src, .proc/selfGottem, owner), 10)
+		addtimer(CALLBACK(src, PROC_REF(selfGottem), owner), 10)
 	else
 		to_chat(sucker, "<span class='danger'>Wait a second... was that a-</span>")
-		addtimer(CALLBACK(src, .proc/GOTTEM, owner, sucker), 6)
+		addtimer(CALLBACK(src, PROC_REF(GOTTEM), owner, sucker), 6)
 
 /// Stage 3A: We face our own failures
 /obj/item/circlegame/proc/selfGottem(mob/living/owner)
@@ -715,8 +715,8 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/vibro_weapon/Initialize(mapload)
 	. = ..()
-	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, .proc/on_wield)
-	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, .proc/on_unwield)
+	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, PROC_REF(on_wield))
+	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, PROC_REF(on_unwield))
 
 /obj/item/vibro_weapon/ComponentInitialize()
 	. = ..()
@@ -771,8 +771,8 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/pitchfork/Initialize(mapload)
 	. = ..()
-	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, .proc/on_wield)
-	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, .proc/on_unwield)
+	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, PROC_REF(on_wield))
+	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, PROC_REF(on_unwield))
 
 /obj/item/pitchfork/ComponentInitialize()
 	. = ..()

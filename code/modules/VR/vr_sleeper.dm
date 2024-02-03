@@ -65,7 +65,7 @@
 		obj_flags |= EMAGGED
 		you_die_in_the_game_you_die_for_real = TRUE
 		sparks.start()
-		addtimer(CALLBACK(src, .proc/emagNotify), 150)
+		addtimer(CALLBACK(src, PROC_REF(emagNotify)), 150)
 		return TRUE
 
 /obj/machinery/vr_sleeper/update_icon_state()
@@ -148,7 +148,7 @@
 				if(SOFT_CRIT)
 					status = "Barely Conscious"
 			data["vr_avatar"] += list("status" = status, "health" = vr_mob.health, "maxhealth" = vr_mob.maxHealth)
-	else 
+	else
 		data["can_delete_avatar"] = FALSE
 		data["vr_avatar"] = FALSE
 		data["isliving"] = FALSE
@@ -176,12 +176,12 @@
 		C.updateappearance(TRUE, TRUE, TRUE)
 	var/datum/component/virtual_reality/VR = vr_mob.AddComponent(/datum/component/virtual_reality, you_die_in_the_game_you_die_for_real)
 	if(VR.connect(M))
-		RegisterSignal(VR, COMSIG_COMPONENT_UNREGISTER_PARENT, .proc/unset_vr_mob)
-		RegisterSignal(VR, COMSIG_COMPONENT_REGISTER_PARENT, .proc/set_vr_mob)
+		RegisterSignal(VR, COMSIG_COMPONENT_UNREGISTER_PARENT, PROC_REF(unset_vr_mob))
+		RegisterSignal(VR, COMSIG_COMPONENT_REGISTER_PARENT, PROC_REF(set_vr_mob))
 		if(!only_current_user_can_interact)
-			VR.RegisterSignal(src, COMSIG_ATOM_EMAG_ACT, /datum/component/virtual_reality.proc/you_only_live_once)
-		VR.RegisterSignal(src, COMSIG_MACHINE_EJECT_OCCUPANT, /datum/component/virtual_reality.proc/revert_to_reality)
-		VR.RegisterSignal(src, COMSIG_PARENT_QDELETING, /datum/component/virtual_reality.proc/machine_destroyed)
+			VR.RegisterSignal(src, COMSIG_ATOM_EMAG_ACT, TYPE_PROC_REF(/datum/component/virtual_reality, you_only_live_once))
+		VR.RegisterSignal(src, COMSIG_MACHINE_EJECT_OCCUPANT, TYPE_PROC_REF(/datum/component/virtual_reality, revert_to_reality))
+		VR.RegisterSignal(src, COMSIG_PARENT_QDELETING, TYPE_PROC_REF(/datum/component/virtual_reality, machine_destroyed))
 		to_chat(vr_mob, "<span class='notice'>Transfer successful! You are now playing as [vr_mob] in VR!</span>")
 	else
 		to_chat(M, "<span class='notice'>Transfer failed! virtual reality data likely corrupted!</span>")
@@ -218,7 +218,7 @@
 /obj/machinery/vr_sleeper/den/new_player(mob/M, location, datum/outfit/outfit, transfer = TRUE)
 	. = ..()
 	// Hacked VR Avatar has Faction Attribute so den can fuck with BoS simulations without getting merked
-	vr_mob.faction = list("hostile", "enclave", "silicon", "turret", "supermutant", "wastebot") 
+	vr_mob.faction = list("hostile", "enclave", "silicon", "turret", "supermutant", "wastebot")
 
 /obj/effect/landmark/vr_spawn //places you can spawn in VR, auto selected by the vr_sleeper during get_vr_spawnpoint()
 	var/vr_category = "default" //So we can have specific sleepers, eg: "Basketball VR Sleeper", etc.
@@ -269,7 +269,7 @@
 	vr_area = get_base_area(src)
 	if(!vr_area)
 		return INITIALIZE_HINT_QDEL
-	addtimer(CALLBACK(src, .proc/clean_up), 3 MINUTES, TIMER_LOOP)
+	addtimer(CALLBACK(src, PROC_REF(clean_up)), 3 MINUTES, TIMER_LOOP)
 
 /obj/effect/vr_clean_master/proc/clean_up()
 	if (!vr_area)
@@ -285,4 +285,4 @@
 		if(!QDELETED(M) && (M in contents) && M.stat == DEAD)
 			qdel(M)
 		corpse_party -= M
-	addtimer(CALLBACK(src, .proc/clean_up), 3 MINUTES)
+	addtimer(CALLBACK(src, PROC_REF(clean_up)), 3 MINUTES)

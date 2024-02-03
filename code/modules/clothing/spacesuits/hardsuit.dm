@@ -285,7 +285,7 @@
 	. = ..()
 	if(istype(loc, /obj/item/clothing/suit/space/hardsuit/syndi))
 		linkedsuit = loc
-		RegisterSignal(linkedsuit, COMSIG_PARENT_QDELETING, .proc/unlink_suit)
+		RegisterSignal(linkedsuit, COMSIG_PARENT_QDELETING, PROC_REF(unlink_suit))
 
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/proc/unlink_suit()
 	linkedsuit = null
@@ -683,7 +683,7 @@
 		return
 	if(listeningTo)
 		UnregisterSignal(listeningTo, COMSIG_MOVABLE_MOVED)
-	RegisterSignal(user, COMSIG_MOVABLE_MOVED, .proc/on_mob_move)
+	RegisterSignal(user, COMSIG_MOVABLE_MOVED, PROC_REF(on_mob_move))
 	listeningTo = user
 
 /obj/item/clothing/suit/space/hardsuit/ancient/dropped(mob/user)

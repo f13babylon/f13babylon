@@ -160,7 +160,7 @@
 		return
 	if(listeningTo)
 		UnregisterSignal(listeningTo, COMSIG_MOVABLE_MOVED)
-	RegisterSignal(user, COMSIG_MOVABLE_MOVED, .proc/Pickup_casings)
+	RegisterSignal(user, COMSIG_MOVABLE_MOVED, PROC_REF(Pickup_casings))
 	listeningTo = user
 
 /obj/item/storage/bag/casings/proc/Pickup_casings(mob/living/user)

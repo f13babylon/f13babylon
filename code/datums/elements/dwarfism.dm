@@ -19,7 +19,7 @@
 	L.resize_y = SHORT
 	L.update_transform()
 	attached_targets[target] = comsig_target
-	RegisterSignal(target, comsig, .proc/check_loss) //Second arg of the signal will be checked against the comsig_target.
+	RegisterSignal(target, comsig, PROC_REF(check_loss)) //Second arg of the signal will be checked against the comsig_target.
 
 /datum/element/dwarfism/proc/check_loss(mob/living/L, comsig_target)
 	SIGNAL_HANDLER

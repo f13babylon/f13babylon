@@ -73,8 +73,6 @@
 
 	/// What status effect we assign on application
 	var/status_effect_type
-	/// The status effect we're linked to
-	var/datum/status_effect/linked_status_effect
 	/// If we're operating on this wound and it gets healed, we'll nix the surgery too
 	var/datum/surgery/attached_surgery
 	/// if you're a lazy git and just throw them in cryo, the wound will go away after accumulating severity * 25 power
@@ -128,13 +126,11 @@
 			return
 
 	victim = L.owner
-	RegisterSignal(victim, COMSIG_PARENT_QDELETING, .proc/null_victim)
+	RegisterSignal(victim, COMSIG_PARENT_QDELETING, PROC_REF(null_victim))
 	limb = L
 	LAZYADD(victim.all_wounds, src)
 	LAZYADD(limb.wounds, src)
 	limb.update_wounds()
-	if(status_effect_type)
-		linked_status_effect = victim.apply_status_effect(status_effect_type, src)
 	SEND_SIGNAL(victim, COMSIG_CARBON_GAIN_WOUND, src, limb)
 	if(!victim.alerts["wound"]) // only one alert is shared between all of the wounds
 		victim.throw_alert("wound", /atom/movable/screen/alert/status_effect/wound)

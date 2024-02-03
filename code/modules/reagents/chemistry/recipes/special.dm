@@ -3,7 +3,7 @@ GLOBAL_LIST_INIT(food_reagents, build_reagents_to_food()) //reagentid = related 
 /proc/build_reagents_to_food()
 	. = list()
 	for (var/type in subtypesof(/obj/item/reagent_containers/food))
-		var/obj/item/reagent_containers/food/item = new type()
+		var/obj/item/reagent_containers/food/item = new type
 		for(var/r in item.list_reagents)
 			if (!.[r])
 				.[r] = list()
@@ -11,7 +11,7 @@ GLOBAL_LIST_INIT(food_reagents, build_reagents_to_food()) //reagentid = related 
 		qdel(item)
 	//dang plant snowflake
 	for (var/type in subtypesof(/obj/item/seeds))
-		var/obj/item/seeds/item = new type()
+		var/obj/item/seeds/item = new type
 		for(var/r in item.reagents_add)
 			if (!.[r])
 				.[r] = list()
@@ -180,7 +180,7 @@ GLOBAL_LIST_INIT(food_reagents, build_reagents_to_food()) //reagentid = related 
 	if(SSpersistence.initialized)
 		UpdateInfo()
 	else
-		SSticker.OnRoundstart(CALLBACK(src,.proc/UpdateInfo))
+		SSticker.OnRoundstart(CALLBACK(src,PROC_REF(UpdateInfo)))
 
 /obj/item/paper/secretrecipe/proc/UpdateInfo()
 	var/datum/chemical_reaction/recipe = get_chemical_reaction(recipe_id)

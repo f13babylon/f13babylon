@@ -43,13 +43,17 @@
 		QDEL_NULL(myseed)
 	return ..()
 
-/obj/structure/glowshroom/New(loc, obj/item/seeds/newseed, mutate_stats)
-	..()
+/obj/structure/glowshroom/Initialize(mapload, obj/item/seeds/newseed, mutate_stats)
+	. = ..()
 	if(newseed)
 		myseed = newseed.Copy()
-		myseed.forceMove(src)
 	else
+		if(isnull(myseed))
+			stack_trace("glowshroom [type] initialized with no seed!")
+			return INITIALIZE_HINT_QDEL
 		myseed = new myseed(src)
+
+	myseed.forceMove(src)
 	if(mutate_stats) //baby mushrooms have different stats :3
 		myseed.adjust_potency(rand(-3,6))
 		myseed.adjust_yield(rand(-1,2))
@@ -80,56 +84,8 @@
 	else //if on the floor, glowshroom on-floor sprite
 		icon_state = base_icon_state
 
-	//addtimer(CALLBACK(src, .proc/Spread), delay)
-
 /obj/structure/glowshroom/proc/Spread()
-	return //temp disable
-
-	/*var/turf/ownturf = get_turf(src)
-	var/shrooms_planted = 0
-	for(var/i in 1 to myseed.yield)
-		if(prob(1/(generation * generation) * 100))//This formula gives you diminishing returns based on generation. 100% with 1st gen, decreasing to 25%, 11%, 6, 4, 2...
-			var/list/possibleLocs = list()
-			var/spreadsIntoAdjacent = FALSE
-
-			if(prob(spreadIntoAdjacentChance))
-				spreadsIntoAdjacent = TRUE
-
-			for(var/turf/open/floor/earth in view(3,src))
-				if(is_type_in_typecache(earth, blacklisted_glowshroom_turfs))
-					continue
-				if(!disease_air_spread_walk(ownturf, earth))
-					continue
-				if(spreadsIntoAdjacent || !locate(/obj/structure/glowshroom) in view(1,earth))
-					possibleLocs += earth
-				CHECK_TICK
-
-			if(!possibleLocs.len)
-				break
-
-			var/turf/newLoc = pick(possibleLocs)
-
-			var/shroomCount = 0 //hacky
-			var/placeCount = 1
-			for(var/obj/structure/glowshroom/shroom in newLoc)
-				shroomCount++
-			for(var/wallDir in GLOB.cardinals)
-				var/turf/isWall = get_step(newLoc,wallDir)
-				if(isWall.density)
-					placeCount++
-			if(shroomCount >= placeCount)
-				continue
-
-			var/obj/structure/glowshroom/child = new type(newLoc, myseed, TRUE)
-			child.generation = generation + 1
-			shrooms_planted++
-
-			CHECK_TICK
-		else
-			shrooms_planted++ //if we failed due to generation, don't try to plant one later
-	if(shrooms_planted < myseed.yield) //if we didn't get all possible shrooms planted, try again later
-		myseed.yield -= shrooms_planted
-		addtimer(CALLBACK(src, .proc/Spread), delay)*/
+	return
 
 /obj/structure/glowshroom/proc/CalcDir(turf/location = loc)
 	var/direction = 16

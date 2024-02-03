@@ -1,24 +1,29 @@
-source_url='https://github.com/libgit2/libgit2/archive/refs/tags/v0.28.4.zip'
+#!/bin/bash
+set -euo pipefail
+source dependencies.sh
 
-apt update
-apt install -y cmake unzip libssl-dev
+source_url="https://github.com/libgit2/libgit2"
+libgit_tag="v0.28.5"
+cwd=$(pwd)
 
-mkdir ~/libgit2
-cd ~/libgit2
-
-if [ -f libgit2.zip ]; then
-	rm libgit2.zip
+if [ ! -d ~/libgit2 ]; then
+	mkdir ~/libgit2
 fi
-wget -O libgit2.zip "$source_url"
 
-if [ -d libgit2-* ]; then
-	rm -rf libgit2-*
+if [ ! -d ~/libgit2/repo ]; then
+	git clone $source_url ~/libgit2/repo
+	cd ~/libgit2/repo
+else
+	cd ~/libgit2/repo
+	git fetch
 fi
-unzip libgit2.zip
 
-cd libgit2-*
-mkdir build
-cd build
-cmake -DCMAKE_INSTALL_PREFIX=/usr/local ..
+git reset --hard
+git checkout v0.28.5
+
+sudo apt install build-essential cmake -y
+mkdir -p ~/libgit2/build
+cd ~/libgit2/build
+cmake -DCMAKE_INSTALL_PREFIX=/usr/local ../repo
 make
-make install
+sudo make install

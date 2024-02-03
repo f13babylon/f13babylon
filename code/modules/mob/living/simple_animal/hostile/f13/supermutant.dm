@@ -61,7 +61,7 @@
 /mob/living/simple_animal/hostile/supermutant/bullet_act(obj/item/projectile/Proj)
 	if(!Proj)
 		return
-	if(prob(85) || Proj.damage > 25)
+	if(prob(85) || Proj.armour_penetration > 0.05)
 		return ..()
 	else
 		visible_message("<span class='danger'>\The [Proj] is deflected harmlessly by \the [src]'s thick skin!</span>")
@@ -309,7 +309,7 @@
 		visible_message(span_danger("\The [src] lets out a vicious war cry!"))
 		addtimer(3)
 		Charge()
-	if(prob(85) || Proj.damage > 30)
+	if(prob(85) || Proj.armour_penetration > 0.1)
 		return ..()
 	else
 		visible_message(span_danger("\The [Proj] is abosrbed by \the [src]'s thick skin, strengthening it!"))
@@ -347,7 +347,7 @@
 	var/obj/effect/temp_visual/decoy/D = new /obj/effect/temp_visual/decoy(loc,src)
 	animate(D, alpha = 0, color = "#FF0000", transform = matrix()*2, time = 1)
 	addtimer(3)
-	throw_at(T, get_dist(src, T), 1, src, 0, callback = CALLBACK(src, .proc/charge_end))
+	throw_at(T, get_dist(src, T), 1, src, 0, callback = CALLBACK(src, PROC_REF(charge_end)))
 
 /mob/living/simple_animal/hostile/supermutant/nightkin/rain/proc/charge_end(list/effects_to_destroy)
 	charging = FALSE
@@ -405,7 +405,7 @@
 	if(prob(20))
 		visible_message(span_danger("\The [src] lets out a vicious war cry!"))
 		fire_release()
-	if(prob(85) || Proj.damage > 30)
+	if(prob(85) || Proj.armour_penetration > 0.1)
 		return ..()
 	else
 		visible_message(span_danger("\The [Proj] is absorbed by \the [src]'s thick skin, strengthening it!"))
@@ -415,7 +415,7 @@
 	playsound(get_turf(src),'sound/magic/fireball.ogg', 200, 1)
 
 	for(var/d in GLOB.cardinals)
-		INVOKE_ASYNC(src, .proc/fire_release_wall, d)
+		INVOKE_ASYNC(src, PROC_REF(fire_release_wall), d)
 
 /mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant/rain/proc/fire_release_wall(dir)
 	var/list/hit_things = list(src)
@@ -487,7 +487,7 @@
 /mob/living/simple_animal/hostile/supermutant/rangedmutant/heavy/bullet_act(obj/item/projectile/Proj)
 	if(!Proj)
 		CRASH("[src] heavy supermutant invoked bullet_act() without a projectile")
-	if(prob(15) || Proj.damage > 25)
+	if(prob(15) || Proj.armour_penetration > 0.1)
 		return ..()
 	else
 		visible_message("<span class='danger'>\The [Proj] bounces off \the [src]'s armor plating!</span>")

@@ -57,5 +57,5 @@
 	oldLoc = get_turf(oldLoc)
 	if(!QDELETED(VertiCamera) && !updating && oldLoc != get_turf(src))
 		updating = TRUE
-		addtimer(CALLBACK(src, .proc/do_camera_update, oldLoc), VERTIBIRD_CAMERA_BUFFER)
+		addtimer(CALLBACK(src, PROC_REF(do_camera_update), oldLoc), VERTIBIRD_CAMERA_BUFFER)
 #undef VERTIBIRD_CAMERA_BUFFER

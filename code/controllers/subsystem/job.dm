@@ -490,7 +490,7 @@ SUBSYSTEM_DEF(job)
 			if(CONFIG_GET(flag/auto_deadmin_players) || (M.client.prefs?.toggles & DEADMIN_ALWAYS))
 				M.client.holder.auto_deadmin()
 			else
-				handle_auto_deadmin_roles(M.client, rank) 
+				handle_auto_deadmin_roles(M.client, rank)
 */
 
 	to_chat(M, "<b>You are the [rank].</b>")
@@ -628,7 +628,7 @@ SUBSYSTEM_DEF(job)
 	var/oldjobs = SSjob.occupations
 	sleep(20)
 	for (var/datum/job/J in oldjobs)
-		INVOKE_ASYNC(src, .proc/RecoverJob, J)
+		INVOKE_ASYNC(src, PROC_REF(RecoverJob), J)
 
 /datum/controller/subsystem/job/proc/RecoverJob(datum/job/J)
 	var/datum/job/newjob = GetJob(J.title)
