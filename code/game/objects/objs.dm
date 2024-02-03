@@ -85,6 +85,7 @@
 	if(!ismachinery(src))
 		STOP_PROCESSING(SSobj, src) // TODO: Have a processing bitflag to reduce on unnecessary loops through the processing lists
 	SStgui.close_uis(src)
+	armor = null
 	. = ..()
 
 /obj/proc/setAnchored(anchorvalue)

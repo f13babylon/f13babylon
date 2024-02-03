@@ -274,12 +274,16 @@
 		user.do_attack_animation(src, ATTACK_EFFECT_SMASH)
 
 /atom/proc/CheckParts(list/parts_list, datum/crafting_recipe/R)
+	if(QDELING(src))
+		CRASH("CheckParts called on a deleted atom")
+
 	SEND_SIGNAL(src, COMSIG_ATOM_CHECKPARTS, parts_list, R)
 	if(parts_list)
 		for(var/A in parts_list)
 			if(istype(A, /datum/reagent))
 				if(!reagents)
-					reagents = new()
+					reagents = new
+				reagents.my_atom = src
 				reagents.reagent_list.Add(A)
 				reagents.conditional_update()
 			else if(ismovable(A))

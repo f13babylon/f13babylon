@@ -43,6 +43,7 @@
 			I.imp = null
 			update_icon()
 			reagents = imp.reagents
+			reagents.my_atom = src
 			I.update_icon()
 		else
 			if(imp)
@@ -51,6 +52,7 @@
 				imp.forceMove(I)
 				I.imp = imp
 				imp = null
+				reagents.my_atom = null
 				reagents = null
 				update_icon()
 			I.update_icon()

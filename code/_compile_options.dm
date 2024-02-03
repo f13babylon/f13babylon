@@ -10,6 +10,8 @@
 #ifdef CIBUILDING
 	#define UNIT_TESTS
 	#define TESTING
+	#define REFERENCE_TRACKING
+	#define GC_FAILURE_HARD_LOOKUP
 #endif
 
 #ifdef TESTING
