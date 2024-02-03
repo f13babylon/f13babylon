@@ -252,7 +252,7 @@ GLOBAL_LIST(topic_status_cache)
 	#ifdef UNIT_TESTS
 	FinishTestRun()
 	return
-	#endif
+	#else
 
 	if(TgsAvailable())
 		var/do_hard_reboot
@@ -277,8 +277,9 @@ GLOBAL_LIST(topic_status_cache)
 
 	log_world("World rebooted at [TIME_STAMP("hh:mm:ss", FALSE)]")
 	shutdown_logging() // Past this point, no logging procs can be used, at risk of data loss.
-	//AUXTOOLS_SHUTDOWN(AUXMOS)
 	..()
+
+	#endif
 
 /world/Del()
 	shutdown_logging() // makes sure the thread is closed before end, else we terminate

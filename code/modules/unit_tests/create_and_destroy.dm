@@ -8,6 +8,7 @@ GLOBAL_VAR_INIT(running_create_and_destroy, FALSE)
 	// HEY LISTEN.
 	// WHEN WE FIGURE OUT WHAT IS HOLDING REFERENCES TO EVERYTHING THIS NEEDS TO BE REENABLED
 	return
+/*
 
 	//We'll spawn everything here
 	var/turf/spawn_at = run_loc_bottom_left
@@ -262,3 +263,5 @@ GLOBAL_VAR_INIT(running_create_and_destroy, FALSE)
 	SSticker.delay_end = FALSE
 	//This shouldn't be needed, but let's be polite
 	SSgarbage.collection_timeout[GC_QUEUE_HARDDELETE] = 10 SECONDS
+
+*/
