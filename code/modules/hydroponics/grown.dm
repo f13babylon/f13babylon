@@ -49,7 +49,7 @@
 		add_juice()
 
 /obj/item/reagent_containers/food/snacks/grown/Destroy()
-	if(!isnull(seed))
+	if(!isnull(seed) && !ispath(seed))
 		QDEL_NULL(seed)
 	return ..()
 
