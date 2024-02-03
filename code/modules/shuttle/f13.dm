@@ -105,6 +105,8 @@
 	possible_destinations = "Vault113_Ground;Vault113_Level_1"
 	flags_1 = NODECONSTRUCT_1
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
+
+/obj/machinery/computer/shuttle/cityvaultelevator
 	name = "vault 113 elevator controls"
 	desc = "Controls the elevator between the Vault and Bighorn."
 	icon_screen = "shuttle"
