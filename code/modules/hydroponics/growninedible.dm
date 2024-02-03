@@ -32,6 +32,10 @@
 		transform *= TRANSFORM_USING_VARIABLE(seed.potency, 100) + 0.5
 		add_juice()
 
+/obj/item/grown/Destroy()
+	if(seed)
+		QDEL_NULL(seed)
+	return ..()
 
 /obj/item/grown/attackby(obj/item/O, mob/user, params)
 	..()

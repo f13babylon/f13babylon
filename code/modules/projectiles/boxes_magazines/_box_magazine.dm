@@ -39,6 +39,10 @@
 			stored_ammo += new ammo_type(src)
 	update_icon()
 
+/obj/item/ammo_box/Destroy()
+	QDEL_LIST(stored_ammo)
+	return ..()
+
 /obj/item/ammo_box/proc/get_round(keep = 0)
 	if (!stored_ammo.len)
 		return null

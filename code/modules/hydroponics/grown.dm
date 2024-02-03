@@ -48,7 +48,10 @@
 		transform *= TRANSFORM_USING_VARIABLE(seed.potency, 100) + 0.4 //Makes the resulting produce's sprite larger or smaller based on potency!
 		add_juice()
 
-
+/obj/item/reagent_containers/food/snacks/grown/Destroy()
+	if(seed)
+		QDEL_NULL(seed)
+	return ..()
 
 /obj/item/reagent_containers/food/snacks/grown/proc/add_juice()
 	if(reagents)

@@ -16,11 +16,9 @@
 	var/obj/item/seeds/myseed
 	var/lastproduce
 
-/obj/structure/flora/wild_plant/New(turf/turf,seed)
-	if(!seed)
-		return
-	..(turf)
-	myseed = new seed()
+/obj/structure/flora/wild_plant/Initialize(mapload, obj/item/seeds/new_seed)
+	. = ..()
+	myseed = new seed
 	if(!istype(myseed, /obj/item/seeds))
 		qdel(myseed)
 		return
@@ -29,6 +27,12 @@
 	icon = myseed.growing_icon
 	START_PROCESSING(SSobj, src)
 	update_icon()
+
+/obj/structure/flora/wild_plant/Destroy()
+	if(myseed)
+		QDEL_NULL(myseed)
+	STOP_PROCESSING(SSobj, src)
+	return ..()
 
 /obj/structure/flora/wild_plant/attackby(obj/item/O, mob/user, params)
 	if(istype(O, /obj/item/shovel))
