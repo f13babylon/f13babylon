@@ -18,10 +18,16 @@
 
 /obj/structure/flora/wild_plant/Initialize(mapload, obj/item/seeds/new_seed)
 	. = ..()
-	myseed = new seed
-	if(!istype(myseed, /obj/item/seeds))
-		qdel(myseed)
-		return
+	if(new_seed)
+		if(ispath(new_seed))
+			new_seed = new_seed
+		myseed = new_seed
+	else
+		if(!ispath(myseed, /obj/item/seeds))
+			stack_trace("invalid seed type [myseed]")
+			return INITIALIZE_HINT_QDEL
+		myseed = new myseed
+
 	myseed.forceMove(src)
 	name = myseed.plantname
 	icon = myseed.growing_icon
