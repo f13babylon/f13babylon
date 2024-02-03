@@ -3406,7 +3406,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
 "dQM" = (
-/turf/open/floor/plating,
+/turf/open/floor/plasteel/elevatorshaft,
 /area/f13/tunnel)
 "dQR" = (
 /obj/effect/overlay/junk/oldpipes{
@@ -17548,6 +17548,9 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
+/obj/machinery/computer/shuttle/vaultelevator{
+	dir = 4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/tunnel)
 "sYi" = (
@@ -20801,6 +20804,20 @@
 /obj/structure/dresser,
 /turf/open/floor/f13/wood,
 /area/f13/vault)
+"wup" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/docking_port/stationary{
+	area_type = /area/f13;
+	dir = 8;
+	dwidth = 1;
+	height = 3;
+	id = "Vault_Level_1";
+	name = "Ground";
+	roundstart_template = /datum/map_template/shuttle/southbunker/elevator;
+	width = 4
+	},
+/turf/open/floor/plasteel/elevatorshaft,
+/area/f13/tunnel)
 "wux" = (
 /obj/structure/obstacle/barbedwire{
 	dir = 4
@@ -33794,7 +33811,7 @@ hrZ
 vXu
 dQM
 dQM
-pDR
+wup
 dQM
 vXu
 hrZ

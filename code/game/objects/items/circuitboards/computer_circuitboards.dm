@@ -458,3 +458,7 @@
 /obj/item/circuitboard/computer/enclave
 	name = "Enclave Monitor (Computer Board)"
 	build_path = /obj/machinery/computer/security/enclave
+
+/obj/item/circuitboard/computer/cityvault_control
+	name = "Vault Elevator Control (Computer board)"
+	build_path = /obj/machinery/computer/shuttle/cityvaultelevator

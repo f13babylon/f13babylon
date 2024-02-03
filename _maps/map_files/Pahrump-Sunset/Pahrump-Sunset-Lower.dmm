@@ -1282,6 +1282,18 @@
 "bcB" = (
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building/museum)
+"bdN" = (
+/obj/docking_port/stationary{
+	area_type = /area/f13;
+	dir = 4;
+	dwidth = 1;
+	height = 3;
+	id = "Vault_Ground";
+	name = "Ground";
+	width = 4
+	},
+/turf/open/floor/plasteel/elevatorshaft,
+/area/f13/tunnel/bighorn)
 "bdV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
@@ -11123,6 +11135,9 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
+/obj/machinery/computer/shuttle/vaultelevator{
+	dir = 8
+	},
 /turf/open/floor/plasteel/f13/vault_floor,
 /area/f13/tunnel/bighorn)
 "joi" = (
@@ -15521,7 +15536,7 @@
 	},
 /area/f13/raiders)
 "ptv" = (
-/turf/open/chasm/elevator,
+/turf/open/floor/plasteel/elevatorshaft,
 /area/f13/tunnel/bighorn)
 "ptD" = (
 /obj/structure/cable{
@@ -43793,7 +43808,7 @@ eJs
 iPa
 ptv
 ptv
-ptv
+bdN
 ptv
 iPa
 yeP
