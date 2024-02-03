@@ -36,18 +36,20 @@
 /obj/item/clothing/neck/mantle/holster
 	name = "HOLSTER MANTLE TEMPLATE"
 	desc = "You're not supposed to see this."
-	var/obj/item/gun/stored_weapon = null
 
-/obj/item/clothing/neck/mantle/holster/examine(mob/user)
+/obj/item/clothing/neck/mantle/holster/examine(mob/user)		//Copied from /obj/item/storage/belt/holster
 	. = ..()
-	if(stored_weapon)
-		. += "<span class='notice'>Alt-click it to quickly draw the [stored_weapon].</span>"
-	else if(contents.len)
-		. += "<span class='notice'>Alt-click it to quickly draw a magazine.</span>"
+	if(contents.len)
+		var/obj/item/gun/G = locate() in contents
+		if(G)
+			. += "<span class='notice'>Alt-click it to quickly draw \the [G].</span>"
+		else
+			var/obj/item/I = locate() in contents
+			. += "<span class='notice'>Alt-click it to quickly draw \the [I].</span>"
 
 /obj/item/clothing/neck/mantle/holster/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/storage/concrete/belt/holster/sidearm)
+	AddComponent(/datum/component/storage/concrete/belt/holster)
 
 /obj/item/clothing/neck/mantle/holster/bos
 	name = "\improper Brotherhood of Steel shoulder cape"

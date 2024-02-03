@@ -112,59 +112,61 @@
 	item_state = "holster_shoulder"
 	alternate_worn_layer = UNDER_SUIT_LAYER
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_NECK
-	component_type = /datum/component/storage/concrete/belt/holster/sidearm
-	var/obj/item/gun/stored_weapon = null
+	component_type = /datum/component/storage/concrete/belt/holster
 
 /obj/item/storage/belt/holster/examine(mob/user)
 	. = ..()
-	if(stored_weapon)
-		. += "<span class='notice'>Alt-click it to quickly draw the [stored_weapon].</span>"
-	else if(contents.len)
-		. += "<span class='notice'>Alt-click it to quickly draw a magazine.</span>"
+	if(contents.len)
+		var/obj/item/gun/G = locate() in contents
+		if(G)
+			. += "<span class='notice'>Alt-click it to quickly draw \the [G].</span>"
+		else
+			var/obj/item/I = locate() in contents
+			. += "<span class='notice'>Alt-click it to quickly draw \the [I].</span>"
 
 /obj/item/storage/belt/holster/full/PopulateContents()
-	stored_weapon = new /obj/item/gun/ballistic/revolver/detective(src)
+	new /obj/item/gun/ballistic/revolver/detective(src)
 	new /obj/item/ammo_box/c38(src)
 	new /obj/item/ammo_box/c38(src)
 
 /obj/item/storage/belt/holster/ranger44/PopulateContents()
-	stored_weapon = new /obj/item/gun/ballistic/revolver/revolver44(src)
+	new /obj/item/gun/ballistic/revolver/revolver44(src)
 	new /obj/item/ammo_box/m44(src)
 	new /obj/item/ammo_box/m44(src)
 	new /obj/item/ammo_box/m44(src)
 
 /obj/item/storage/belt/holster/ranger357/PopulateContents()
-	stored_weapon = new /obj/item/gun/ballistic/revolver/colt357(src)
+	new /obj/item/gun/ballistic/revolver/colt357(src)
 	new /obj/item/ammo_box/a357(src)
 	new /obj/item/ammo_box/a357(src)
 	new /obj/item/ammo_box/a357(src)
 
 /obj/item/storage/belt/holster/ranger45/PopulateContents()
-	stored_weapon = new /obj/item/gun/ballistic/revolver/revolver45(src)
+	new /obj/item/gun/ballistic/revolver/revolver45(src)
 	new /obj/item/ammo_box/c45rev(src)
 	new /obj/item/ammo_box/c45rev(src)
 	new /obj/item/ammo_box/c45rev(src)
 
 /obj/item/storage/belt/holster/ranger4570/PopulateContents()
-	stored_weapon = new /obj/item/gun/ballistic/revolver/hunting/sequoia(src)
+	new /obj/item/gun/ballistic/revolver/hunting/sequoia(src)
 	new /obj/item/ammo_box/c4570(src)
 	new /obj/item/ammo_box/c4570(src)
 	new /obj/item/ammo_box/c4570(src)
 
 /obj/item/storage/belt/holster/ranger4570bayonet/PopulateContents()
-	stored_weapon = new /obj/item/gun/ballistic/revolver/hunting/sequoia/bayonet(src)
+	new /obj/item/gun/ballistic/revolver/hunting/sequoia/bayonet(src)
 	new /obj/item/ammo_box/c4570(src)
 	new /obj/item/ammo_box/c4570(src)
 	new /obj/item/ammo_box/c4570(src)
 
 /obj/item/storage/belt/holster/sheriff/PopulateContents()
-	stored_weapon = new /obj/item/gun/ballistic/revolver/revolver44/sheriff(src)
+	new /obj/item/gun/ballistic/revolver/revolver44/sheriff(src)
 	new /obj/item/ammo_box/m44(src)
 	new /obj/item/ammo_box/m44(src)
 	new /obj/item/ammo_box/m44(src)
 
 /obj/item/storage/belt/holster/regulator/PopulateContents()
-	stored_weapon = new /obj/item/gun/energy/laser/complianceregulator(src)
+	new /obj/item/gun/energy/laser/complianceregulator(src)
 	new /obj/item/stock_parts/cell/ammo/ec(src)
 	new /obj/item/stock_parts/cell/ammo/ec(src)
 	new /obj/item/stock_parts/cell/ammo/ec(src)
@@ -188,34 +190,25 @@
 	item_state = "holster_leg"
 
 /obj/item/storage/belt/holster/legholster/police/PopulateContents()
-	stored_weapon = new /obj/item/gun/ballistic/revolver/police(src)
+	new /obj/item/gun/ballistic/revolver/police(src)
 	new /obj/item/ammo_box/a357(src)
 	new /obj/item/ammo_box/a357(src)
 	new /obj/item/ammo_box/a357(src)
 
-/obj/item/storage/belt/holster_double
+/obj/item/storage/belt/holster/double
 	name = "double holster"
 	desc = "A double holster to carry two handguns at the same time. WARNING: Akimbo badasses only."
-	icon = 'icons/fallout/clothing/belts.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/clothes/belt.dmi'
 	icon_state = "holster_double"
 	item_state = "holster_double"
-	alternate_worn_layer = UNDER_SUIT_LAYER
-	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_NECK
-	component_type = /datum/component/storage/concrete/belt/holster_double
-
-/obj/item/storage/belt/holster_double/examine(mob/user)
-	. = ..()
-	if(contents.len)
-		. += "<span class='notice'>Alt-click it to quickly draw [contents.len == 1 ? "the" : "a"] gun.</span>"
+	component_type = /datum/component/storage/concrete/belt/holster/double
 
 /obj/item/storage/belt/holster/large
 	name = "sidearm holster belt"
 	desc = "A belt with a holster for a sidearm and additional pouches to store ammo for it."
 	icon_state = "holster_belt"
 	item_state = "holster_belt"
-	component_type = /datum/component/storage/concrete/belt/holster/sidearm/large
 	slot_flags = ITEM_SLOT_BELT
+	component_type = /datum/component/storage/concrete/belt/holster/large
 
 /obj/item/storage/belt/sabre/heavy
 	name = "heavy-duty sheath"
@@ -225,7 +218,9 @@
 	icon_state = "sheath_sword"
 	item_state = "sheath_sword"
 	component_type = /datum/component/storage/concrete/belt/sheath/heavy
-	starting_sword = null
+
+/obj/item/storage/belt/sabre/heavy/PopulateContents()
+	return
 
 // Twin Sheath
 /obj/item/storage/belt/sabre/twin
@@ -236,7 +231,9 @@
 	icon_state = "sheath_twin"
 	item_state = "sheath_twin"
 	component_type = /datum/component/storage/concrete/belt/sheath/twin
-	starting_sword = null
+
+/obj/item/storage/belt/sabre/twin/PopulateContents()
+	return
 
 /obj/item/storage/belt/military/alt
 	icon_state = "explorer2"

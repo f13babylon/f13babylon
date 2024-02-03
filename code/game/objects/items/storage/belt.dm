@@ -336,16 +336,15 @@
 	content_overlays = TRUE
 	onmob_overlays = TRUE
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_NECK
-	var/starting_sword = /obj/item/melee/sabre
 
 /obj/item/storage/belt/sabre/examine(mob/user)
 	. = ..()
 	if(contents.len)
-		. += "<span class='notice'>Alt-click it to quickly draw [contents.len == 1 ? "the" : "a"] blade.</span>"
+		var/obj/item/I = locate() in contents
+		. += "<span class='notice'>Alt-click it to quickly draw \the [I].</span>"
 
 /obj/item/storage/belt/sabre/PopulateContents()
-	if(ispath(starting_sword))
-		new starting_sword(src)
+	new /obj/item/melee/sabre(src)
 
 /obj/item/storage/belt/sabre/rapier
 	name = "rapier sheath"
@@ -355,4 +354,6 @@
 	force = 5
 	throwforce = 15
 	attack_verb = list("bashed", "slashes", "prods", "pokes")
-	starting_sword = /obj/item/melee/rapier
+
+/obj/item/storage/belt/sabre/rapier/PopulateContents()
+	new /obj/item/melee/rapier(src)
