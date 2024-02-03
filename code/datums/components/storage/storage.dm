@@ -731,7 +731,7 @@
 		var/obj/item/I = locate() in real_location.contents
 		remove_from_storage(I, user)
 		user.put_in_hands(I)
-		user.visible_message("<span class='warning'>[user] draws [I] from [parent]!</span>", "<span class='notice'>You draw [I] from [parent].</span>")
+		user.visible_message("<span class='warning'>[user] draws [I] from [real_location]!</span>", "<span class='notice'>You draw [I] from [real_location].</span>")
 
 /datum/component/storage/proc/action_trigger(datum/action/source, obj/target)
 	gather_mode_switch(source.owner)
