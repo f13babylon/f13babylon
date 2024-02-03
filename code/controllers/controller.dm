@@ -3,8 +3,10 @@
 	// The object used for the clickable stat() button.
 	var/obj/effect/statclick/statclick
 
-/datum/controller/Del()
-	CRASH("Attempted to delete a controller datum.")
+/datum/controller/Destroy(force, ...)
+	if(!isnull(statclick))
+		QDEL_NULL(statclick)
+	return ..()
 
 /datum/controller/proc/Initialize()
 
