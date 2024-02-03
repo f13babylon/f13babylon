@@ -61,8 +61,6 @@
 			return FALSE
 
 /datum/component/storage/concrete/belt/holster/on_alt_click(datum/source, mob/user)
-	SIGNAL_HANDLER
-
 	var/atom/real_location = real_location()
 	if(!isliving(user) || !user.can_reach(real_location))
 		return
