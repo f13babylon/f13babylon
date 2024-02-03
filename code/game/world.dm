@@ -28,8 +28,6 @@ GLOBAL_LIST(topic_status_cache)
 
 	log_world("World loaded at [TIME_STAMP("hh:mm:ss", FALSE)]!")
 
-	make_datum_references_lists()	//initialises global lists for referencing frequently used datums (so that we only ever do it once)
-
 	GLOB.revdata = new
 
 	InitTgs()

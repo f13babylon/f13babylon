@@ -43,7 +43,7 @@ GLOBAL_REAL(GLOB, /datum/controller/global_vars)
 	switch(var_name)
 		if (NAMEOF(src, vars))
 			return debug_variable(var_name, list(), 0, src)
-	return debug_variable(var_name, vars[var_name], 0, src, display_flags = VV_ALWAYS_CONTRACT_LIST)
+	return debug_variable(var_name, vars[var_name], 0, src)
 
 /datum/controller/global_vars/Initialize()
 	gvars_datum_init_order = list()
