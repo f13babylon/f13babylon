@@ -359,9 +359,12 @@
 		buckled_mob.set_glide_size(target)
 
 /atom/movable/Destroy(force)
-	QDEL_NULL(proximity_monitor)
-	QDEL_NULL(language_holder)
-	QDEL_NULL(em_block)
+	if(!isnull(proximity_monitor))
+		QDEL_NULL(proximity_monitor)
+	if(!isnull(language_holder))
+		QDEL_NULL(language_holder)
+	if(!isnull(em_block))
+		QDEL_NULL(em_block)
 
 	unbuckle_all_mobs(force = TRUE)
 

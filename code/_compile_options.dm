@@ -7,6 +7,8 @@
 #define USE_CUSTOM_ERROR_HANDLER
 #endif
 
+#define CIBUILDING
+
 #ifdef CIBUILDING
 	#define UNIT_TESTS
 	#define TESTING

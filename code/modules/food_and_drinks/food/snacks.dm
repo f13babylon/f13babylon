@@ -329,12 +329,6 @@ All foods are distributed among various categories. Use common sense.
 
 	return result
 
-/obj/item/reagent_containers/food/snacks/Destroy()
-	if(contents)
-		for(var/atom/movable/something in contents)
-			something.forceMove(drop_location())
-	return ..()
-
 /obj/item/reagent_containers/food/snacks/attack_animal(mob/M)
 	if(isanimal(M))
 		if(iscorgi(M))
