@@ -1906,7 +1906,6 @@
 /area/f13/wasteland/warren)
 "bBQ" = (
 /obj/structure/table,
-/obj/item/ammo_box/a40mmCS,
 /turf/open/floor/f13{
 	dir = 10;
 	icon_state = "redmark"
@@ -2104,17 +2103,6 @@
 /obj/effect/spawner/lootdrop/waste_loot_poor,
 /turf/open/floor/wood/wood_common,
 /area/f13/building)
-"bKM" = (
-/obj/structure/table/reinforced,
-/obj/structure/barricade/bars{
-	max_integrity = 800;
-	name = "strong metal bars";
-	obj_integrity = 800
-	},
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticalleftborderleft0"
-	},
-/area/f13/wasteland/ncr)
 "bKS" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticaloutermain1"
@@ -4327,6 +4315,17 @@
 /obj/item/pickaxe,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"dHx" = (
+/obj/structure/table/reinforced,
+/obj/structure/barricade/bars{
+	max_integrity = 800;
+	name = "strong metal bars";
+	obj_integrity = 800
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalleftborderleft0"
+	},
+/area/f13/wasteland/ncr)
 "dHQ" = (
 /obj/structure/sign/plaques/long/northriver1{
 	pixel_y = 32
@@ -52672,7 +52671,7 @@ sKf
 ovZ
 kHs
 afy
-bKM
+dHx
 ovZ
 ovZ
 rje
